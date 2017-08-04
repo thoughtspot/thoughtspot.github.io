@@ -1,6 +1,9 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+title: Getting started with ThoughtSpot
+keywords: sample homepage
+tags: [getting_started]
+sidebar: mydoc_sidebar
+summary: These brief instructions ...
 ---
+
+## Getting started with ThoughtSpot
