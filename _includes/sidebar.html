@@ -3,35 +3,51 @@
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
 {% for entry in sidebar %}
-  {% for folder in entry.folders %}
-    {% if folder.output contains "web" %}
+  {% for section in entry.sections %}
+    {% if section.output contains "web" %}
      <li>
-       <a href="#">{{ folder.title }}</a>
+       <a href="#">{{ section.title }}</a>
      <ul>
-          {% for folderitem in folder.folderitems %}
-            {% if folderitem.url and folderitem.output contains "web" %}
-              {% if folderitem.external_url %}
-                <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-                {% elsif page.url == folderitem.url %}
-                  <li class="active"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+          {% for sectionitem in section.sectionitems %}
+            {% if sectionitem.url and sectionitem.output contains "web" %}
+              {% if sectionitem.external_url %}
+                <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
+                {% elsif page.url == sectionitem.url %}
+                  <li class="active"><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
                 {% else %}
-                  <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                  <li><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
               {% endif %}
-            {% elsif folder.output contains "web" %}
-              {% for subfolders in folderitem.subfolders %}
-                {% if subfolders.output contains "web" %}
-                  <li class="subfolders">
-                      <a href="#">{{ subfolders.title }}</a>
+            {% elsif section.output contains "web" %}
+              {% for levelTwo in sectionitem.levelTwo %}
+                {% if levelTwo.output contains "web" %}
+                  <li class="levelTwo">
+                      <a href="#">{{ levelTwo.title }}</a>
                       <ul>
-                          {% for subfolderitem in subfolders.subfolderitems %}
-                            {% if subfolderitem.output contains "web" %}
-                              {% if subfolderitem.external_url %}
-                                <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
-                              {% elsif page.url == subfolderitem.url %}
-                                <li class="active"><a href="{{subfolderitem.url }}">{{subfolderitem.title}}</a></li>
+                          {% for levelTwoitem in levelTwo.levelTwoItems %}
+                            {% if levelTwoitem.url and levelTwoitem.output contains "web" %}
+                              {% if levelTwoitem.external_url %}
+                                <li><a href="{{levelTwoitem.external_url}}" target="_blank">{{levelTwoitem.title}}</a></li>
+                              {% elsif page.url == levelTwoitem.url %}
+                                <li class="active"><a href="{{levelTwoitem.url }}">{{levelTwoitem.title}}</a></li>
                               {% else %}
-                                <li><a href="{{subfolderitem.url }}">{{subfolderitem.title}}</a></li>
+                                <li><a href="{{levelTwoitem.url }}">{{levelTwoitem.title}}</a></li>
                               {% endif %}
+                            {% else %}
+                               <li class="levelThree">
+                                 <a href="#">{{ levelTwoitem.title }}</a>
+                               <ul>
+                                 {% for pageItem in levelTwoitem.levelThree %}
+                                   {% if pageItem.output contains "web" %}
+                                     {% if pageItem.external_url %}
+                                       <li><a href="{{pageItem.external_url}}" target="_blank">{{pageItem.title}}</a></li>
+                                     {% elsif page.url == pageItem.url %}
+                                       <li class="active"><a href="{{pageItem.url }}">{{pageItem.title}}</a></li>
+                                     {% else %}
+                                       <li><a href="{{pageItem.url }}">{{pageItem.title}}</a></li>
+                                     {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                              </ul>
                             {% endif %}
                           {% endfor %}
                       </ul>

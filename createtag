@@ -31,7 +31,7 @@ search: exclude
 permalink: tag_${tag}.html
 sidebar: mydoc_sidebar
 hide_sidebar: true
-folder: tags
+section: tags
 ---
 
 {% include taglogic.html %}

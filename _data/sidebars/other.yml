@@ -3,10 +3,10 @@
 
 entries:
 - title: other
-  folders:
+  sections:
 
   - title: Other Links
-    folderitems:
+    sectionitems:
 
     - title: Automated links bookmark
       url: /mydoc_hyperlinks.html#automatedlinks

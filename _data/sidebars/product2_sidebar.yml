@@ -4,12 +4,12 @@ entries:
 - title: Product2
   product: Product2
   version: 1.0
-  folders:
+  sections:
 
   - title:
     output: pdf
     type: frontmatter
-    folderitems:
+    sectionitems:
     - title:
       url: /titlepage
       output: pdf
@@ -21,7 +21,7 @@ entries:
 
   - title: Introduction
     output: web, pdf
-    folderitems:
+    sectionitems:
 
     - title: Overview
       url: /p2_landing_page.html
@@ -29,7 +29,7 @@ entries:
 
   - title: Simple Workflow
     output: web, pdf
-    folderitems:
+    sectionitems:
 
     - title: Sample 1
       url: /p2_sample1.html
@@ -53,7 +53,7 @@ entries:
 
   - title: Complex Workflow
     output: web, pdf
-    folderitems:
+    sectionitems:
 
     - title: Sample 6
       url: /p2_sample6.html

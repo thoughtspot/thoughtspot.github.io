@@ -3,11 +3,11 @@
 entries:
 - title: Sidebar
   levels: one
-  folders:
+  sections:
 
   - title: Products
     output: web
-    folderitems:
+    sectionitems:
     - title: News
       url: /news.html
       output: web

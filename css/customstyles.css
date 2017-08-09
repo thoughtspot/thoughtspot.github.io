@@ -334,6 +334,10 @@ a.accordion-toggle, a.accordion-collapsed {
     margin: 2px 0;
 }
 
+.nav li.levelTwo > ul > li {
+    margin-left: -18px;
+}
+
 .nav a {
     color: #333;
     display: block;
@@ -1007,7 +1011,7 @@ span.label.label-primary {
 .col-lg-12 .nav li a {background-color: white}
 
 
-.nav li.active > a.subfoldersTitle {
+.nav li.active > a.levelTwosTitle {
     background-color: whitesmoke;
     font-weight: bold;
     color: black;

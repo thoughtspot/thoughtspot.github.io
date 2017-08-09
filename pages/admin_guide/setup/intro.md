@@ -5,7 +5,7 @@ keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: "blerg"
 sidebar: mydoc_sidebar
-folder: admin_guide/setup
+section: admin_guide/setup
 ---
 # Installation and setup
 

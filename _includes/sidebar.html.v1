@@ -2,21 +2,21 @@
 <ul id="mysidebar" class="nav">
   {% for entry in sidebar %}
   <li class="bookTitle">{{sidebar[0].book}}</li>
-    {% for folder in entry.folders %}
-      {% if folder.output contains "web" %}
-      <li><a href="#">{{ folder.title }}</a>
+    {% for section in entry.sections %}
+      {% if section.output contains "web" %}
+      <li><a href="#">{{ section.title }}</a>
           <ul>
-              {% for folderitem in folder.folderitems %}
-                {% if folderitem and folderitem.output contains "web"%}
-                  {% if folderitem.external_url %}
-                    <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-                    {% elsif page.url == folderitem.url %}
-                      <li class="active"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+              {% for sectionitem in section.sectionitems %}
+                {% if sectionitem and sectionitem.output contains "web"%}
+                  {% if sectionitem.external_url %}
+                    <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
+                    {% elsif page.url == sectionitem.url %}
+                      <li class="active"><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
                     {% else %}
-                      <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                      <li><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
                   {% endif %}
                 {% endif %}
-                {% if folderitem.subfolders %}
+                {% if sectionitem.levelTwos %}
                     <li>Zebra</li>
                 {% endif %}
               {% endfor %}

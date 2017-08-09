@@ -12,20 +12,20 @@ permalink: /tocpage/
 
     <ul id="mysidebar" class="nav">
         {% for entry in sidebar_pdf %}
-        {% for folder in entry.folders %}
-        {% if folder.output contains "pdf" and folder.type != "frontmatter" %}
-        <li class="sectionHead">{{ folder.title }}
+        {% for section in entry.sections %}
+        {% if section.output contains "pdf" and section.type != "frontmatter" %}
+        <li class="sectionHead">{{ section.title }}
             <ul>
-                {% for folderitem in folder.folderitems %}
-                {% if folderitem.output contains "pdf" and folderitem.type != "frontmatter"%}
-                <li><a href="{{folderitem.url | prepend: site.baseurl}}">{{folderitem.title}}</a>
-                    {% for subfolders in folderitem.subfolders %}
-                    {% if subfolders.output contains "pdf" and subfolders.type != "frontmatter" %}
-                <li class="sectionHead">{{ subfolders.title }}
+                {% for sectionitem in section.sectionitems %}
+                {% if sectionitem.output contains "pdf" and sectionitem.type != "frontmatter"%}
+                <li><a href="{{sectionitem.url | prepend: site.baseurl}}">{{sectionitem.title}}</a>
+                    {% for levelTwos in sectionitem.levelTwos %}
+                    {% if levelTwos.output contains "pdf" and levelTwos.type != "frontmatter" %}
+                <li class="sectionHead">{{ levelTwos.title }}
                     <ul>
-                        {% for subfolderitem in subfolders.subfolderitems%}
-                        {% if subfolderitem.output contains "pdf" and subfolderitem.type != "frontmatter"%}
-                        <li><a href="{{subfolderitem.url | prepend: site.baseurl}}">{{subfolderitem.title}}</a></li>
+                        {% for levelTwoitem in levelTwos.levelTwoitems%}
+                        {% if levelTwoitem.output contains "pdf" and levelTwoitem.type != "frontmatter"%}
+                        <li><a href="{{levelTwoitem.url | prepend: site.baseurl}}">{{levelTwoitem.title}}</a></li>
                         {% endif %}
                         {% endfor %}
                     </ul>

@@ -2,16 +2,16 @@
 
 {% for sidebar in site.sidebars %}
 {% for entry in site.data.sidebars[sidebar].entries %}
-{% for folder in entry.folders %}
-{% for folderitem in folder.folderitems %}
-{% if folderitem.url contains "html#" %}
-[{{folderitem.url | remove: "/" }}]: {{folderitem.url | remove: "/"}}
+{% for section in entry.sections %}
+{% for sectionitem in section.sectionitems %}
+{% if sectionitem.url contains "html#" %}
+[{{sectionitem.url | remove: "/" }}]: {{sectionitem.url | remove: "/"}}
 {% else %}
-[{{folderitem.url | remove: "/"  | remove: ".html"}}]: {{folderitem.url | remove: "/"}}
+[{{sectionitem.url | remove: "/"  | remove: ".html"}}]: {{sectionitem.url | remove: "/"}}
 {% endif %}
-{% for subfolders in folderitem.subfolders %}
-{% for subfolderitem in subfolders.subfolderitems %}
-[{{subfolderitem.url | remove: "/"  | remove: ".html"}}]: {{subfolderitem.url | remove: "/"}}
+{% for levelTwos in sectionitem.levelTwos %}
+{% for levelTwoitem in levelTwos.levelTwoitems %}
+[{{levelTwoitem.url | remove: "/"  | remove: ".html"}}]: {{levelTwoitem.url | remove: "/"}}
 {% endfor %}
 {% endfor %}
 {% endfor %}
@@ -33,10 +33,10 @@
 {% comment %}Get links from topnav dropdowns {% endcomment %}
 
 {% for entry in site.data.topnav.topnav_dropdowns %}
-{% for folder in entry.folders %}
-{% for folderitem in folder.folderitems %}
-{% if folderitem.external_url == null %}
-[{{folderitem.url | remove: "/"  | remove: ".html"}}]: {{folderitem.url | remove: "/"}}
+{% for section in entry.sections %}
+{% for sectionitem in section.sectionitems %}
+{% if sectionitem.external_url == null %}
+[{{sectionitem.url | remove: "/"  | remove: ".html"}}]: {{sectionitem.url | remove: "/"}}
 {% endif %}
 {% endfor %}
 {% endfor %}

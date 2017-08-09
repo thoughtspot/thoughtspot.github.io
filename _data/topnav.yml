@@ -11,9 +11,9 @@ topnav:
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
-  folders:
+  sections:
     - title: Jekyll Help
-      folderitems:
+      sectionitems:
         - title: Jekyll Talk
           external_url: https://talk.jekyllrb.com
         - title: Jekyll documentation
@@ -23,7 +23,7 @@ topnav_dropdowns:
         - title: Jekyll on my blog
           external_url: http://idratherbewriting.com/category-jekyll/
     - title: Products
-      folderitems:
+      sectionitems:
         - title: Jekyll Documentation Theme
           url: /mydoc_introduction.html
         - title: Product 1
