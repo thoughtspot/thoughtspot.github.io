@@ -1,8 +1,8 @@
 ---
-title: Getting started with ThoughtSpot
+title: Coming Soon
 keywords: sample homepage
-tags: [getting_started]
+tags: [Coming Soon]
 sidebar: mydoc_sidebar
 ---
 
-## Getting started with ThoughtSpot
+## Coming Soon
