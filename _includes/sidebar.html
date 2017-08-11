@@ -2,71 +2,71 @@
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
-{% for entry in sidebar %}
-  {% for section in entry.sections %}
-    {% if section.output contains "web" %}
-     <li>
-       <a href="#">{{ section.title }}</a>
-     <ul>
-          {% for sectionitem in section.sectionitems %}
-            {% if sectionitem.url and sectionitem.output contains "web" %}
-              {% if sectionitem.external_url %}
-                <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
+  {% for entry in sidebar %}
+    {% for section in entry.sections %}
+      {% if section.output contains "web" %}
+       <li class="section">
+         <a href="#">{{ section.sectiontitle }}</a>
+       <ul>
+            {% for sectionitem in section.sectionitems %}
+              {% if sectionitem.title and sectionitem.output contains "web" %}
+                {% if sectionitem.external_url %}
+                 <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
                 {% elsif page.url == sectionitem.url %}
                   <li class="active"><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
                 {% else %}
                   <li><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
-              {% endif %}
-            {% elsif section.output contains "web" %}
-              {% for levelTwo in sectionitem.levelTwo %}
-                {% if levelTwo.output contains "web" %}
-                  <li class="levelTwo">
-                      <a href="#">{{ levelTwo.title }}</a>
-                      <ul>
-                          {% for levelTwoitem in levelTwo.levelTwoItems %}
-                            {% if levelTwoitem.url and levelTwoitem.output contains "web" %}
-                              {% if levelTwoitem.external_url %}
-                                <li><a href="{{levelTwoitem.external_url}}" target="_blank">{{levelTwoitem.title}}</a></li>
-                              {% elsif page.url == levelTwoitem.url %}
-                                <li class="active"><a href="{{levelTwoitem.url }}">{{levelTwoitem.title}}</a></li>
-                              {% else %}
-                                <li><a href="{{levelTwoitem.url }}">{{levelTwoitem.title}}</a></li>
-                              {% endif %}
-                            {% else %}
-                               <li class="levelThree">
-                                 <a href="#">{{ levelTwoitem.title }}</a>
-                               <ul>
-                                 {% for pageItem in levelTwoitem.levelThree %}
-                                   {% if pageItem.output contains "web" %}
-                                     {% if pageItem.external_url %}
-                                       <li><a href="{{pageItem.external_url}}" target="_blank">{{pageItem.title}}</a></li>
-                                     {% elsif page.url == pageItem.url %}
-                                       <li class="active"><a href="{{pageItem.url }}">{{pageItem.title}}</a></li>
-                                     {% else %}
-                                       <li><a href="{{pageItem.url }}">{{pageItem.title}}</a></li>
-                                     {% endif %}
-                                    {% endif %}
-                                {% endfor %}
-                              </ul>
-                            {% endif %}
-                          {% endfor %}
-                      </ul>
-                  </li>
                 {% endif %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-      </ul>
-   </li>
+              {% elsif sectionitem.levelTwoTitle and sectionitem.output contains "web" %}
+              <li class="levelTwo">
+                  <a href="#">{{ sectionitem.levelTwoTitle }}</a>
+                  <ul>
+                {% for level2item in sectionitem.levelTwoItems %}
+                  {% if level2item.title and level2item.output contains "web" %}
+                      {% if level2item.external_url %}
+                          <li><a href="{{level2item.external_url}}" target="_blank">{{level2item.title}}</a></li>
+                      {% elsif page.url == level2item.url %}
+                          <li class="active"><a href="{{level2item.url }}">{{level2item.title}}</a></li>
+                      {% else %}
+                          <li><a href="{{level2item.url }}">{{level2item.title}}</a></li>
+                      {% endif %}
+                   {% elsif level2item.levelThreeTitle and level2item.output contains "web" %}
+                   <li class="levelThree">
+                       <a href="#">{{ level2item.levelThreeTitle }}</a>
+                       <ul>
+                        {% for level3item in level2item.levelThreeItems %}
+                          {% if level3item.title and level3item.output contains "web" %}
+                              {% if level3item.external_url %}
+                                  <li><a href="{{level3item.external_url}}" target="_blank">{{level3item.title}}</a></li>
+                              {% elsif page.url == level3item.url %}
+                                  <li class="active"><a href="{{level3item.url }}">{{level3item.title}}</a></li>
+                              {% else %}
+                                  <li><a href="{{level3item.url }}">{{level3item.title}}</a></li>
+                              {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </li>
+                   {% endif %}
+                {% endfor %}
+                    </ul>
+                  </li>
+              {% endif %}
+            {% endfor %}
+        </ul>
+     </li>
      {% endif %}
+    {% endfor %}
+  </ul>
+</li>
   {% endfor %}
-{% endfor %}
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
          -->
 </ul>
+
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>

@@ -334,10 +334,6 @@ a.accordion-toggle, a.accordion-collapsed {
     margin: 2px 0;
 }
 
-.nav li.levelTwo > ul > li {
-    margin-left: -18px;
-}
-
 .nav a {
     color: #333;
     display: block;

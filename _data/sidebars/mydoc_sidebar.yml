@@ -5,7 +5,7 @@ entries:
   product: Version
   version: 4.4
   sections:
-  - title: Administrators Guide
+  - sectiontitle: Administrators Guide
     output: web
     sectionitems:
     - title: pageItem1
@@ -14,80 +14,77 @@ entries:
     - title: pageItem2
       url: index.html
       output: web
-    - title: sectionlevelTwo1
+    - levelTwoTitle: levelTwoTitle-0
       output: web
-      levelTwo:
-      - title: sectionlevelTwo1
-        output: web
-        levelTwoItems:
+      levelTwoItems:
         - title: pageItem3
           url: index.html
           output: web
-        - title: levelTwo1
+        - title: pageItem4
+          url: index.html
           output: web
-          levelThree:
-          - title: Add the SSL certificate for LDAP
-            url: /pages/admin_guide/setup/add_SSL_for_LDAP.html
-            output: web
+        - levelThreeTitle: levelThreeTitle-1
+          output: web
+          levelThreeItems:
+            - title: 2_pageItem3
+              url: index.html
+              output: web
         - title: pageItem5
           url: index.html
           output: web
-    - title: pageItem6
-      url: index.html
-      output: web
-    - title: pageItem7
-      url: index.html
-      output: web
-    - output: web
-      levelTwo:
-      - title: sectionlevelTwo2
-        output: web
-        levelTwoItems:
-        - title: pageItem8
+        - title: 2_pageItem4
           url: index.html
           output: web
-        - title: pageItem9
-          url: index.html
+        - levelThreeTitle: 2.levelThreeTitle-1
           output: web
-  - title: Users Guide
+          levelThreeItems:
+          - title: Add the SSL certificate for LDAP
+            url: /pages/admin_guide/setup/add_SSL_for_LDAP.html
+            output: web
+    - title: pageItem1
+      url: index.html
+      output: web
+    - levelTwoTitle: levelTwoTitle-2
+      output: web
+  - sectiontitle: Users Guide
     output: web
     sectionitems:
     - title: pageItem1
       url: index.html
       output: web
-  - title: Data Connect Guide
-    output: web
-    sectionitems:
-    - title: pageItem1
-      url: index.html
-      output: web
-  - title: Applicatin Integration Guide
-    output: web
-    sectionitems:
-    - title: pageItem1
-      url: index.html
-      output: web
-  - title: Disaster Recover Guide
-    output: web
-    sectionitems:
-    - title: pageItem1
-      url: index.html
-      output: web
-  - title: Error Codes Guide
-    output: web
-    sectionitems:
-    - title: Analytic Search Appliance
-      url: index.html
-      output: web
-  - title: QuickStart
-    output: web
-    sectionitems:
-    - title: Analytic Search Appliance
-      url: index.html
-      output: web
-    - title: AWS Appliance
-      url: index.html
-      output: web
-    - title: VMWare
-      url: index.html
-      output: web
+  # - sectiontitle: Data Connect Guide
+  #   output: web
+  #   sectionitems:
+  #   - title: pageItem1
+  #     url: index.html
+  #     output: web
+  # - sectiontitle: Applicatin Integration Guide
+  #   output: web
+  #   sectionitems:
+  #   - title: pageItem1
+  #     url: index.html
+  #     output: web
+  # - sectiontitle: Disaster Recover Guide
+  #   output: web
+  #   sectionitems:
+  #   - title: pageItem1
+  #     url: index.html
+  #     output: web
+  # - sectiontitle: Error Codes Guide
+  #   output: web
+  #   sectionitems:
+  #   - title: Analytic Search Appliance
+  #     url: index.html
+  #     output: web
+  # - sectiontitle: QuickStart
+  #   output: web
+  #   sectionitems:
+  #   - title: Analytic Search Appliance
+  #     url: index.html
+  #     output: web
+  #   - title: AWS Appliance
+  #     url: index.html
+  #     output: web
+  #   - title: VMWare
+  #     url: index.html
+  #     output: web
