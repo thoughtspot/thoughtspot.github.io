@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Manage jobs
 
 The Jobs Management page found on the Admin section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Delete a data source from the browser
 
 You can delete data sources from the browser, as long as they were not created by an administrator through tsload or Data Connect.

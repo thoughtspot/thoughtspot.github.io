@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Link tables using relationships
 
 You can link tables by creating relationships between their columns. Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.

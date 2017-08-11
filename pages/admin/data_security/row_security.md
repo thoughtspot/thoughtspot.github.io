@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Define Legacy Row Level Security
 
 Edit the security file to add row level security to tables.

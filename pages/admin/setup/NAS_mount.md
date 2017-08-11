@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Mount a NAS file system
 
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.

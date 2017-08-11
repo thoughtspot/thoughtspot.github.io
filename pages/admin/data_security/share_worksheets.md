@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Share worksheets
 
 You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it.

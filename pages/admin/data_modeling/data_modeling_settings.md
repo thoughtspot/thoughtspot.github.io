@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Data modeling settings
 
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.

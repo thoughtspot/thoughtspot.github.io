@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Change settings in the model file
 
 After downloading the model file, you'll make changes to the settings using this procedure. Then you will upload the file again to apply your changes.

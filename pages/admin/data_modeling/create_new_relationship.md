@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Create a relationship
 
 You can quickly create a relationship \(or link\) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain \(e.g. employee ID or product key\).

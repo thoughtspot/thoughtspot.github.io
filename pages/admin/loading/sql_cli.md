@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About TQL, the SQL command line interface
 
 ThoughtSpot provides the ThoughtSpot SQL Command Line \(TQL\) for creating, viewing, and managing a schema using SQL. You can run TQL in interactive command line mode, or you can write a script and use TQL to run it.

@@ -1,5 +1,8 @@
 repository: thoughtspot/jekyll
 
+# Should always leave this blank
+baseurl:
+
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
@@ -12,7 +15,7 @@ site_title: ThoughtSpot Documentation
 company_name: ThoughtSpot
 # this appears in the footer
 
-# github_editme_path: tomjohnson1492/documentation-theme-jekyll/blob/gh-pages/
+github_editme_path: thoughtspot/thoughtspot.github.io/blob/master
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #disqus_shortname: idrbwjekyll
@@ -39,7 +42,7 @@ timezone: America/Tijuana
 #feedback_email: tomjohnson1492@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
@@ -61,8 +64,9 @@ kramdown:
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
 collections:
-  admin_guide:
+  admin:
     output: true
+
 # collections are declared here. this renders the content in _admin_guide and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:

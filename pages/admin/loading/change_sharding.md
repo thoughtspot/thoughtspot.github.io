@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Change sharding on a table
 
 You can change the sharding on a table or remove it altogether \(creating a replicated table\) using this procedure. This procedure preserves the data within the table.

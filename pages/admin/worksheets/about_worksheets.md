@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Simplify searching with worksheets
 
 After modeling the data, create worksheets to make searching easier. A worksheet groups multiple related tables together in a logical way.

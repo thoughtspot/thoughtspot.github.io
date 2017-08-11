@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About LDAP integration
 
 Some companies use LDAP \(Lightweight Directory Access Protocol\) to manage user authentication. Using LDAP provides security and makes user management more centralized.

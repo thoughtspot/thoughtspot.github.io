@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Set the search suggestions priority for a column
 
 You can change the priority that determines which columns are shown in search suggestions and the order in which they appear.

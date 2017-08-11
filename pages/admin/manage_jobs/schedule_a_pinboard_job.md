@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Schedule a pinboard job
 
 You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Load and manage data
 
 There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Date and time formats reference
 
 This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or tsload.

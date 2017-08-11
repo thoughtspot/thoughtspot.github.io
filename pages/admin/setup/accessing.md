@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Log in to ThoughtSpot from a browser
 
 To set up and explore your data, access ThoughtSpot from a standard Web browser using a username and password.

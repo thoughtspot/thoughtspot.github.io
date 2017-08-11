@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Backup and restore
 
 ThoughtSpot provides a full set of backup and restore features to protect your data from disasters and human error. You can use these for disaster recovery, for migrating a cluster, or for recreating a cluster on another appliance or virtual appliance.

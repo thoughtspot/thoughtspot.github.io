@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Disable data value suggestions
 
 When you set Rule-Based Row Level Security, you need to first turn off search suggestions on data values.

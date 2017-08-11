@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Set the recommended TLS version
 
 There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS \(Transport Layer Security\). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.

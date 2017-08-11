@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Manage users, groups, and privileges
 
 Before people can log in and use ThoughtSpot, you need to create a username, a password, and a membership in one or more groups for them. Creating groups and assigning users to them makes privilege management easier.

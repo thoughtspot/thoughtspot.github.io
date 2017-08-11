@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Create a manual backup
 
 Use this procedure when you want to manually create a backup. If you would like to restore from a backup, contact ThoughtSpot Support.

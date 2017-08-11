@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Apply a sticker
 
 Apply a sticker whenever you want to tag a data source, worksheet, or pinboard to make it easier to find.

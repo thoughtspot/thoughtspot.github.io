@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Contact ThoughtSpot
 
 You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket.

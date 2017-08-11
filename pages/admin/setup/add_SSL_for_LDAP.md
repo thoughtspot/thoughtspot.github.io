@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Add the SSL certificate for LDAP
 
 When you set up LDAP, you specified whether or not to use SSL for LDAP \(LDAPS\). If using SSL, you must install the LDAP SSL certificate.

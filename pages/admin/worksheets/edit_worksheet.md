@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Edit a worksheet
 
 As long as you have permissions to edit a worksheet, you can always go into it and make changes, such as adding sources and columns, adding or editing formulas, and changing column names.

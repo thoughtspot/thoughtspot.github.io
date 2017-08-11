@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Understand the backup strategies
 
 This section discusses three strategies for backing up your ThoughtSpot cluster.

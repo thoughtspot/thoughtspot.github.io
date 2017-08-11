@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About Legacy Row Level Security
 
 Legacy Row Level Security is no longer used. This documentation is retained to support implementations that are already using this method.

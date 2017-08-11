@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Change the additive setting for a column
 
 Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** \(such as age\). You can allow aggregations on the values by changing the value of the **Additive** setting.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About Rule-Based Row Level Security
 
  Rule-Based Row Level Security is the preferred way to protect your data so that users see only those rows they are allowed to see based on their group membership.

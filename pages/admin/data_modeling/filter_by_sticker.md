@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Filter by a sticker
 
 Whenever you are selecting objects from a list, you can filter by sticker to find what you're looking for.

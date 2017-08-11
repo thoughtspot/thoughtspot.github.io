@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About case configuration
 
 You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display.

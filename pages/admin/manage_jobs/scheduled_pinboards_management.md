@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Scheduled pinboards management
 
 You can manage all scheduled pinboards on the Jobs Management page under Admin.

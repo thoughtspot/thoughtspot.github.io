@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # System monitoring
 
 System monitoring tools in ThoughtSpot include the Control Center, system log files and out-of-the-box system monitoring pinboards.

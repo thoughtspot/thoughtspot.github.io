@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Check dependencies in the browser
 
 You can see all of the dependencies for any data source \(worksheet or table\) on the **Manage Data** page.

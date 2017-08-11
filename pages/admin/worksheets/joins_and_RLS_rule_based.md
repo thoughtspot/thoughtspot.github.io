@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About the worksheet join rule with Rule-Based Row Level Security
 
 When working with worksheets and row level security, you need to understand how joins are applied. This is especially important if your schema includes any chasm traps.

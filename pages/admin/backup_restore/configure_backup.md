@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Configure periodic backups
 
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods \(first-in-first-out\), and output location for a periodic backup.

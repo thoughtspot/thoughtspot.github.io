@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Configure SSL for web traffic
 
 This procedure shows how to add SSL \(secure socket layers\) to enable secure HTTP \(HTTPS\) in ThoughtSpot.

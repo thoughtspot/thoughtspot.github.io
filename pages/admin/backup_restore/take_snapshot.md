@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Create a manual snapshot
 
 You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. If you would like to restore from a snapshot instead, contact ThoughtSpot Support.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Schema creation examples
 
 These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line \(TQL\). After the schema is created, you can load data into it with ThoughtSpot Loader.

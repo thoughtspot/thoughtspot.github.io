@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Append data from a web browser
 
 You can append data to your existing system tables through the ThoughtSpot application, even if the tables were initially loaded using Data Connect or tsload.

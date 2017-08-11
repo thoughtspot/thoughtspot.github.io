@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Use a script to load data
 
 If you need to load data from multiple CSV files, create a script to automate the process. You can also use a similar script to automate recurring data feeds.

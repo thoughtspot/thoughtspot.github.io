@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Search results contain too many blanks
 
 If you find that your search results contain too many blanks when your data source is a worksheet, there is a simple adjustment you can make to fix this.

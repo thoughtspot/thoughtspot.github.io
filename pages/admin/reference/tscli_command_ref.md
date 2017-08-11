@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # tscli --advcommand reference
 
 The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots \(backups\) of data, apply updates, stop and start the services, and view information about the system.

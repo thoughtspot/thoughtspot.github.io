@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Add a user
 
 You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. This procedure shows how to creating a user manually.

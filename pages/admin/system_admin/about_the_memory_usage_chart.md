@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About the Space Utilization chart
 
 The Space Utilization chart is one of the available charts for you to use when checking the cluster overview.

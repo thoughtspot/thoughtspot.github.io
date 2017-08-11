@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Delete or change a table in TQL
 
 Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line \(TQL\) that modify or delete tables warns of dependencies.

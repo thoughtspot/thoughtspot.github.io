@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Delete a worksheet or table
 
 When you try to delete a worksheet or table, you'll see a message listing any dependent objects that must be removed first.

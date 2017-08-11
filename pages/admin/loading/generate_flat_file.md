@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Generate CSV files with the data to be loaded
 
 The first step in loading data is to obtain or create one or more flat files that contain the data to be loaded into ThoughtSpot.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Revoke access \(unshare\)
 
 You may need to revoke access to an object \(table, worksheet, or pinboard\) that you have previously shared. Unsharing an object is very similar to sharing it.

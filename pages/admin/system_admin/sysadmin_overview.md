@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # System administration
 
 System administration includes applying upgrades, backing up and restoring the cluster, snapshotting, and adding or removing nodes.

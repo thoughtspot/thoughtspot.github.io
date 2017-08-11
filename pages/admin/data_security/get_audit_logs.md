@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Get audit logs
 
 You can access an audit log of cluster events through tscli. You can also access information on cluster updates, configurations, data loading and metadata events.

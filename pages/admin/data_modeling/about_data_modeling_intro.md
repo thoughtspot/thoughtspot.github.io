@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Model, link, and tag your data for searching
 
 Modeling, tagging, and adding links between your data sources can make the data even easier to search.

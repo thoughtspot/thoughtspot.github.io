@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Upload the edited model file
 
 After you have made changes to the modeling file, you must upload it back to ThoughtSpot before the changes will take effect.

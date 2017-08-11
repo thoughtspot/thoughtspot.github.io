@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Generate and send a log bundle
 
 Use theses steps to generate a log bundle, which you can then send to ThoughtSpot Support.

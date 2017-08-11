@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Network connectivity issues
 
 If network connectivity to and from ThoughtSpot is not working, try using these steps to find and correct the issue.

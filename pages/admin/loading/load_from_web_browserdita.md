@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Load data from a web browser
 
 The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically.

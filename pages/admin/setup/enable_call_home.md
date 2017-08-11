@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Enable the call home capability
 
 The optional "call home" capability sends usage statistics to ThoughtSpot Support once a day via a secure file server.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Plan the schema
 
 Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface \(TQL\).

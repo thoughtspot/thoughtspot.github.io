@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Set up monitoring
 
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.

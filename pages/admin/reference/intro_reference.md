@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Reference
 
 This Reference section contains the commands and their syntax for all the command line tools in ThoughtSpot.

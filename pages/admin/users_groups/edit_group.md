@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Edit or delete a group
 
 After adding a group, you can always go in and change its settings to add or revoke privileges. The new settings will apply to all the group members.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Sync users and groups from LDAP
 
 Use this procedure to synchronize your ThoughtSpot system with an LDAP server.

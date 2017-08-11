@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Configure OpenLDAP
 
 Use this procedure to set up integration with LDAP using OpenLDAP.

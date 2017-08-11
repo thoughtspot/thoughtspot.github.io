@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Locale-based number formatting
 
 Number formatting is set by default based on your browser locale setting. This has been set in order to accommodate users in various geographical locations, primarily in the US and Europe regions.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Change the inclusion or join rule for a worksheet
 
 As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule.

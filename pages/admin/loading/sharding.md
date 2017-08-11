@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Sharding
 
 For the best performance, you should split \(or shard\) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Create the schema in TQL
 
 Having examined the structure of the data to be loaded and become familiar with the ThoughtSpot SQL Command Line \(TQL\), you are now ready to create the schema.

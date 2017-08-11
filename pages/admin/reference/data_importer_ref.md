@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # ThoughtSpot Loader flag reference
 
 For recurring data loads and for scripting loads, use the ThoughtSpot Loader \(tsload\). This reference section lists all the flags that can be used to modify the behavior of tsload.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Change the primary key for a table
 
 Use this procedure to change the primary key for a table. But use it with caution, particularly if you are changing to a primary key for which values are not unique.

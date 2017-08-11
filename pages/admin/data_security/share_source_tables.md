@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Share tables and columns
 
 Administrators and owners can share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.

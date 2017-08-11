@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Edit or delete a user
 
 After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password.

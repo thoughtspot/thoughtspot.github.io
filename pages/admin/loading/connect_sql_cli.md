@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Connect to the database with the ThoughtSpot SQL Command Line \(TQL\)
 
 To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line \(TQL\). TQL supports many, but not all, common SQL commands.

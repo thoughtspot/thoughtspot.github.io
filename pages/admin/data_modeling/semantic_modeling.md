@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Model the data for searching
 
 After loading data, you will create the semantic data model that makes the data easy to search. You can make these settings either through the Web interface or by using the model file.

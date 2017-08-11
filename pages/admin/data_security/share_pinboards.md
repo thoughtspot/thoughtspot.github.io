@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Share a pinboard
 
 You do not have to be an administrator or the owner to share saved pinboards. Any user can share them, based on the access levels the user has.

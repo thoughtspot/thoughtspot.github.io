@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Set your ThoughtSpot locale
 
 In addition to American English, ThoughtSpot also supports German and Japanese.

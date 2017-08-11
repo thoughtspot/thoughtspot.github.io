@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Import CSV files with ThoughtSpot Loader
 
 Use ThoughtSpot Loader \(tsload\) to load data from a CSV text file into an existing table in ThoughtSpot. tsload accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.

@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # About privileges
 
 You can assign privileges at the group level. Then you create users and assign them to groups. This is how you grant users access to different capabilities in ThoughtSpot.

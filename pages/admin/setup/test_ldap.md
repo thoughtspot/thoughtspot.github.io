@@ -1,3 +1,11 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
 # Test the LDAP configuration
 
 After configuring LDAP, you can test to make sure it is working by issuing a command.
