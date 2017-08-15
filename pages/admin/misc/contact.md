@@ -1,13 +1,10 @@
 ---
-title: [elephant]
+title: [Contact ThoughtSpot]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Contact ThoughtSpot
-
 You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket.
 
 ## File a support ticket
@@ -42,4 +39,3 @@ Palo Alto, CA 94306
 |For sales inquiries.|sales@thoughtspot.com|
 |For customer support and software update inquiries.|support@thoughtspot.com|
 |For other inquiries.|hello@thoughtspot.com|
-
