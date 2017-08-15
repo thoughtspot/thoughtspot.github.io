@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About scheduled pinboards]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About scheduled pinboards
-
 You can get pinboards emailed to you on a regular basis and do analysis offline. This introduces an additional format for you to consume and share pinboards with others, including those who don’t have a ThoughtSpot account.
 
 Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
@@ -48,4 +46,3 @@ You can schedule a pinboard job for any pinboard by using the Add a schedule pro
 You can manage all scheduled pinboards on the Jobs Management page under Admin.
 
 **Parent topic:** [Manage jobs](../../admin/manage_jobs/manage_jobs.html)
-

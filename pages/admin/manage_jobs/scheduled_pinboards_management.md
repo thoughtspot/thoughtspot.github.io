@@ -1,18 +1,16 @@
 ---
-title: [elephant]
+title: [Scheduled pinboards management]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Scheduled pinboards management
-
 You can manage all scheduled pinboards on the Jobs Management page under Admin.
 
 Users who are not admins, but have can schedule pinboard privilege, can only view pinboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. Contact ThoughtSpot Support if you'd like to increase this limit.
 
- ![](../../images/jobs_management.png "View Jobs Management page") 
+ ![](../../images/jobs_management.png "View Jobs Management page")
 
 ## Bulk actions
 
@@ -22,9 +20,9 @@ Select the scheduled pinboards and use the **Delete**, **Resume**, and **Pause**
 
 Clicking on the row of a job will open a detailed view of every generated update of that job. You can see the start and end times of the job, as well as the status. Clicking on a job will show more information about the status updates.
 
- ![](../../images/success_pinboard_schedule.png "Success status updates") 
+ ![](../../images/success_pinboard_schedule.png "Success status updates")
 
- ![](../../images/failed_pinboard_schedule.png "Failed status updates") 
+ ![](../../images/failed_pinboard_schedule.png "Failed status updates")
 
 ## Pinboard links
 
@@ -33,4 +31,3 @@ Click the scheduled pinboard name link to jump to a Edit schedule page, where yo
 You can also click on the pinboard link provided in the scheduled pinboard emails to jump to the pinboard in ThoughtSpot. In order to have the link direct you to the correct URL, you must first configure front end host and port access. Contact ThoughtSpot Support to configure these settings.
 
 **Parent topic:** [About scheduled pinboards](../../admin/manage_jobs/about_scheduled_pinboards.html)
-
