@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Data modeling settings]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Data modeling settings
-
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
 
 ## Modeling settings
@@ -84,4 +82,3 @@ The **Attribution Dimension** setting applies only to tables that are related th
 
 
 [Model the data for searching](semantic_modeling.html#)
-

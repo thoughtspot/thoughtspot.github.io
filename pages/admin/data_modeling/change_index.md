@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Change the index type for a column]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change the index type for a column
-
 ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search.
 
 You can change the way a column is indexed by modifying its **Index** value in the modeling file, to influence the suggestions that will appear for that column. The default behavior of indexing is as follows:
@@ -31,7 +29,7 @@ You can override the default behavior by editing the modeling file to change the
 |PREFIX\_AND\_WORD\_SUBSTRING|Allows indexing such that only prefix search works for each word of a multi-word string, for the column values.|
 
 1.   Find the column whose index type you want to modify, and set its **Index Type**. If you are using the model file, double click in the **Index** cell, and type in the index type you want to use.
-2.   Save your changes. 
+2.   Save your changes.
 
 Consider a column in which there are four values “ThoughtSpot”, “Thought”, “Spot” and “Thought Spot”. If you search for “sp”, depending on the setting for indexing, the column value search result suggestions will vary:
 
@@ -49,4 +47,3 @@ Consider a column in which there are four values “ThoughtSpot”, “Thought�
 
 
 [Model the data for searching](semantic_modeling.html#)
-

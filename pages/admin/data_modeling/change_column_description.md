@@ -1,12 +1,12 @@
 ---
-title: [elephant]
+title: [Add a column description]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Add a column description
+#
 
 You can provide a description for a specific column, to provide additional information for users about the data it contains.
 
@@ -14,10 +14,10 @@ You can provide a description for a specific column, to provide additional infor
 
 To create a column description:
 
-1.   Find the column you want to add a description for, and select its **Description**. 
-2.   Type in the column description, as you want it to appear in ThoughtSpot. 
-3.   Repeat for all columns where you want to add a description. 
-4.   Save your changes. 
+1.   Find the column you want to add a description for, and select its **Description**.
+2.   Type in the column description, as you want it to appear in ThoughtSpot.
+3.   Repeat for all columns where you want to add a description.
+4.   Save your changes.
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
@@ -25,4 +25,3 @@ To create a column description:
 
 
 [Model the data for searching](semantic_modeling.html#)
-

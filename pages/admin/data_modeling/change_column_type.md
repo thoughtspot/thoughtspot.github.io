@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Change the column type \(ATTRIBUTE or MEASURE\)]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change the column type \(ATTRIBUTE or MEASURE\)
-
 Columns have a **Column Type** based on the kind of data they store. This is set automatically upon defining the table, but in some cases, you may want to change the type.
 
 There are two types of columns:
@@ -28,8 +26,8 @@ Usually the default setting for column type works fine. But occasionally you'll 
 You can change the column type by modifying the **Column Type** setting.
 
 1.   Find the **Column Type** for the column whose type you want to change. If you are editing the model file, use the setting **Type**.
-2.   Change it to either **MEASURE** or **ATTRIBUTE**. 
-3.   Save your changes. 
+2.   Change it to either **MEASURE** or **ATTRIBUTE**.
+3.   Save your changes.
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
@@ -37,4 +35,3 @@ You can change the column type by modifying the **Column Type** setting.
 
 
 [Model the data for searching](semantic_modeling.html#)
-

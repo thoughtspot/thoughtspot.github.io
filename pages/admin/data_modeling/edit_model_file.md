@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Model data in bulk in the modeling file]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Model data in bulk in the modeling file
-
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
 
 If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model_data_in_UI.html#) instead.
@@ -40,4 +38,3 @@ After you have made changes to the modeling file, you must upload it back to Tho
 [Data modeling settings](data_modeling_settings.html#)
 
 [Model data in the ThoughtSpot application](model_data_in_UI.html)
-

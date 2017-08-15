@@ -1,12 +1,12 @@
 ---
-title: [elephant]
+title: [Model, link, and tag your data for searching]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Model, link, and tag your data for searching
+#
 
 Modeling, tagging, and adding links between your data sources can make the data even easier to search.
 
@@ -18,4 +18,3 @@ After loading data, you will create the semantic data model that makes the data 
 You can link tables by creating relationships between their columns. Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
 -   **[About stickers](../../admin/data_modeling/stickers_concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.
-

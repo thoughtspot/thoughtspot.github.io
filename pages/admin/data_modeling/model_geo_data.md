@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Add a geographical data setting for a column]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Add a geographical data setting for a column
-
 Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.
 
 You can designate a column as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
@@ -20,8 +18,8 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
 -   [Set Additive to NO](change_column_additive.html#).
 -   [Set Aggregation Type to NONE](change_aggreg_type.html#).
 
-1.   Find the **GeoType** for the column that contains the geographical data. 
-2.   Change the value to the appropriate GeoType, depending on the kind of data the column contains. 
+1.   Find the **GeoType** for the column that contains the geographical data.
+2.   Change the value to the appropriate GeoType, depending on the kind of data the column contains.
 
     |GeoType|Description|Type: Example|
     |-------|-----------|-------------|
@@ -62,10 +60,10 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
     -   west midlands
  |
 
-3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type \(DOUBLE\), make these changes for those columns: 
-    1.   Change the **Type** or **ColumnType** to ATTRIBUTE. 
-    2.   Change **Additive** to NO/FALSE. 
-4.   Save your changes. 
+3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type \(DOUBLE\), make these changes for those columns:
+    1.   Change the **Type** or **ColumnType** to ATTRIBUTE.
+    2.   Change **Additive** to NO/FALSE.
+4.   Save your changes.
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
@@ -73,4 +71,3 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
 
 
 [Model the data for searching](semantic_modeling.html#)
-

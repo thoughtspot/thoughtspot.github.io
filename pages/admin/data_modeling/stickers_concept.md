@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About stickers]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About stickers
-
 You can create stickers to make it easier for people to find data sources and pinboards.
 
 ## About stickers
@@ -28,4 +26,3 @@ Apply a sticker whenever you want to tag a data source, worksheet, or pinboard t
 Whenever you are selecting objects from a list, you can filter by sticker to find what you're looking for.
 
 **Parent topic:** [Model, link, and tag your data for searching](../../admin/data_modeling/about_data_modeling_intro.html)
-

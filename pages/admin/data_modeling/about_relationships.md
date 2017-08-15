@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Link tables using relationships]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Link tables using relationships
-
 You can link tables by creating relationships between their columns. Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
 
 There are two ways to create relationships between tables:
@@ -29,4 +27,3 @@ You can quickly create a relationship \(or link\) between tables that allows you
 If you created a relationship \(link\) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
 
 **Parent topic:** [Model, link, and tag your data for searching](../../admin/data_modeling/about_data_modeling_intro.html)
-

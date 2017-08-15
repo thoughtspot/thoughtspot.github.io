@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Model the data for searching]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Model the data for searching
-
 After loading data, you will create the semantic data model that makes the data easy to search. You can make these settings either through the Web interface or by using the model file.
 
 ## About data modeling
@@ -31,4 +29,3 @@ Properties of your data such as Column Names, Column Visibility, Column and Data
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
 
 **Parent topic:** [Model, link, and tag your data for searching](../../admin/data_modeling/about_data_modeling_intro.html)
-

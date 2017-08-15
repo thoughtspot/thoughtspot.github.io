@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Change the additive setting for a column]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change the additive setting for a column
-
 Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** \(such as age\). You can allow aggregations on the values by changing the value of the **Additive** setting.
 
 The setting **Additive** only applies to columns that have both:
@@ -37,11 +35,11 @@ If you want aggregates to be added to the options for these columns, you need to
 
 To change the **Additive** setting:
 
-1.   Find the column whose additive setting you want to change and select its **Additive** value. 
-2.   Change the value to one of these: 
+1.   Find the column whose additive setting you want to change and select its **Additive** value.
+2.   Change the value to one of these:
     -   **YES** or **NO**, if using the Web interface.
     -   **TRUE** or **FALSE**, if using the model file.
-3.   Save your changes. 
+3.   Save your changes.
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
@@ -49,4 +47,3 @@ To change the **Additive** setting:
 
 
 [Model the data for searching](semantic_modeling.html#)
-

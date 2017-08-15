@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Upload the edited model file]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Upload the edited model file
-
 After you have made changes to the modeling file, you must upload it back to ThoughtSpot before the changes will take effect.
 
 Save the model file in the same format as it was when you downloaded it. If you are using Microsoft Excel to edit the file, you will see a warning when attempting to save it. Click **Yes** and save the file.
@@ -16,13 +14,13 @@ Save the model file in the same format as it was when you downloaded it. If you 
 
 To upload the model file:
 
-1.   [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as an Administrator user. 
-2.   Click on the **Admin** icon, on the top navigation bar. 
+1.   [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as an Administrator user.
+2.   Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
 
-3.   Click on **Business Data Model**. 
-4.   Click **BROWSE YOUR FILES** to upload the model.xls file, or drag and drop it in the zone. 
+3.   Click on **Business Data Model**.
+4.   Click **BROWSE YOUR FILES** to upload the model.xls file, or drag and drop it in the zone.
 
     ![](../../images/upload_model.png)
 
@@ -32,4 +30,3 @@ To upload the model file:
 
 
 **Parent topic:** [Model data in bulk in the modeling file](../../admin/data_modeling/edit_model_file.html)
-
