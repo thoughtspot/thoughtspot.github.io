@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule.
 
-If you find that the charts and tables built on a worksheet contain a large number of null values \(which display as \{blank\} in the web browser\), you can fix this by changing the [inclusion rule](about_inclusion_rule.html#) for the worksheet.
+If you find that the charts and tables built on a worksheet contain a large number of null values (which display as \{blank\} in the web browser), you can fix this by changing the [inclusion rule](about_inclusion_rule.html#) for the worksheet.
 
 To change the inclusion or join rule of a worksheet:
 

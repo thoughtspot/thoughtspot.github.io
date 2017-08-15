@@ -10,11 +10,11 @@ Using a SQL script to create your schema is a recommended best practice. This ma
 
 The schema creation script is a text file that contains all the SQL commands to create your schema. Comments should be enclosed in the comment tags /\* and \*/.
 
-It is recommended to enclose all object names \(schema, table, and column\) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters \(any character other than alphanumeric or \_ \), must be surrounded by double quotes. If you see the error message "Error parsing SQL. Check SQL input.", you should check for object names without double quotes in your script.
+It is recommended to enclose all object names (schema, table, and column) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters (any character other than alphanumeric or \_ ), must be surrounded by double quotes. If you see the error message "Error parsing SQL. Check SQL input.", you should check for object names without double quotes in your script.
 
 If you are working in a schema other than the default schema, object names must be fully qualified, as in `"<schema\_name>"."<object\_name>"`.
 
-If your schema includes constraints to define relationships between tables \(foreign key, or the RELATIONSHIP syntax\), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the ADD CONSTRAINT syntax. This makes it easier to troubleshoot the script and make changes.
+If your schema includes constraints to define relationships between tables (foreign key, or the RELATIONSHIP syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the ADD CONSTRAINT syntax. This makes it easier to troubleshoot the script and make changes.
 
 If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are afffected, run it using this flag, for example:
 
@@ -36,12 +36,12 @@ cat safest_script_ever.sql | tql --allow_unsafe
     ```
 
 4.   Type in the command to create the schema, if you don't want to use the default schema:
-5.   Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification \(if any\).
+5.   Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification (if any).
 6.   At the end of your script, optionally type in the ALTER TABLE statements to add foreign keys to use in joining the tables.
 7.   Save the file.
 8.   Run the script using one of these methods:
 
-    -   [Import a schema \(use the SQL editor\)](upload_sql_script.html#).
+    -   [Import a schema (use the SQL editor)](upload_sql_script.html#).
     -   [Log in to the shell](../setup/login_console.html#), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
     ```
     $ cat create_schema.sql | tql

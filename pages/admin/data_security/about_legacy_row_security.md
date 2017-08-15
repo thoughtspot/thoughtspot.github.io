@@ -26,19 +26,19 @@ You define the rules for row level security by editing the security file in Exce
 |Operation|Operation|Supply one of these operators:-   BEGINS\_WITH
 -   ENDS\_WITH
 -   CONTAINS
--   EQ \(equals\)
--   NE \(not equals\)
--   GE \(greater than or equal to\)
--   GT \(greater than\)
--   LE \(less than or equal to\)
--   LT \(less than\)
--   BW \(between\)
--   BW\_INC \(between with both boundaries included\)
--   BW\_INC\_MIN \(between with the lower boundary included\)
--   BW\_INC\_MAX \(between with upper boundary included\)
+-   EQ (equals)
+-   NE (not equals)
+-   GE (greater than or equal to)
+-   GT (greater than)
+-   LE (less than or equal to)
+-   LT (less than)
+-   BW (between)
+-   BW\_INC (between with both boundaries included)
+-   BW\_INC\_MIN (between with the lower boundary included)
+-   BW\_INC\_MAX (between with upper boundary included)
 
 |
-|Column value\(s\)|Value|Column value\(s\) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe \(|\) character.|
+|Column value(s)|Value|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|
 
 ## Best practices for using Legacy Row Level Security
 
@@ -46,7 +46,7 @@ Use these best practices when using Legacy Row Level Security:
 
 1.  Give users access to worksheets instead of tables.
 
-    For each table that uses row level security, you should create a worksheet and share it, so that users can search it instead of the underlying table. The worksheet must include the column\(s\) where the security rule\(s\) are defined. Then remove access to the table where you applied the row level security. This is the safest way to ensure that users never see any data from rows they shouldn't see.
+    For each table that uses row level security, you should create a worksheet and share it, so that users can search it instead of the underlying table. The worksheet must include the column(s) where the security rule(s) are defined. Then remove access to the table where you applied the row level security. This is the safest way to ensure that users never see any data from rows they shouldn't see.
 
     Row level security only applies in searches that include the column on which the security rule is defined. So if a user has access to the tables directly, they could do a search that omits the column that has the security rules applied, and then see the data in the other columns. But a worksheet that includes the column with the row level security definition will always hide all values from rows that don't satisfy the row level security condition.
 
@@ -56,10 +56,10 @@ Use these best practices when using Legacy Row Level Security:
 
     As soon as you create a row level security definition on a table for one group, all other groups are then blocked from seeing any rows in the table. You have to specifically grant other groups access in order for them to see any rows.
 
-    If you want to ensure that a group can always see all rows in a table, grant them NE \(not equals\) privileges on a dummy value that does not appear in that row. For example, these settings would enable users in the group Managers to see all rows in the Sales table:
+    If you want to ensure that a group can always see all rows in a table, grant them NE (not equals) privileges on a dummy value that does not appear in that row. For example, these settings would enable users in the group Managers to see all rows in the Sales table:
 
     -   Managers Sales Region NE xxx
-3.  The operations GE \(greater than or equal to\), GT \(greater than\), LE \(less than or equal to\), and LT \(less than\) are meant to be used with measures \(numeric values\) and not with attributes. Though they technically can be used with attributes, they would be applied based on alphabetical order, which could return confusing results.
+3.  The operations GE (greater than or equal to), GT (greater than), LE (less than or equal to), and LT (less than) are meant to be used with measures (numeric values) and not with attributes. Though they technically can be used with attributes, they would be applied based on alphabetical order, which could return confusing results.
 
 ## Row level security with multiple conditions
 

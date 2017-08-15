@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-For recurring data loads and for scripting loads, use the ThoughtSpot Loader \(tsload\). This reference section lists all the flags that can be used to modify the behavior of tsload.
+For recurring data loads and for scripting loads, use the ThoughtSpot Loader (tsload). This reference section lists all the flags that can be used to modify the behavior of tsload.
 
 ## General tsload flags
 
@@ -46,7 +46,7 @@ The following flags are used when loading data from an input file:
 
 |
 |`--has_header_row`|Indicates that the input file contains a header row.|If supplied, the first row of the file is ignored. If not supplied, the first row of the file is loaded as data.|
-|`--escape_character "<character>"`|Specifies the escape character used in the input file.|If no value is specified, the default is "\(double quotes\).|
+|`--escape_character "<character>"`|Specifies the escape character used in the input file.|If no value is specified, the default is "(double quotes).|
 |`--enclosing_character "<character>"`| Specifies the enclosing character used in the input file.
 
  |If the enclosing character is double quotes, you need to escape it, as in this example: `--enclosing_character "\""`|

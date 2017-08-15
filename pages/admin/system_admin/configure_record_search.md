@@ -20,7 +20,7 @@ To record a search replay using ThoughtSpot:
 
      ![](../../images/record_search_replay_0.png "Record Replay button")
 
-3.   A message will display, showing a URL and a domain or an IP address. Make note of both of these items. Open a new browser tab and go to the URL shown in the message \( for example, "about:config"\). Depending on which browser and version you are using, you may need to access the browser configurations through a menu or by typing in a different URL. Check your own browser help section for information on how to access the browser configuration settings, if necessary.
+3.   A message will display, showing a URL and a domain or an IP address. Make note of both of these items. Open a new browser tab and go to the URL shown in the message ( for example, "about:config"). Depending on which browser and version you are using, you may need to access the browser configurations through a menu or by typing in a different URL. Check your own browser help section for information on how to access the browser configuration settings, if necessary.
 
      ![](../../images/record_search_replay_1.png "Record Search message")
 

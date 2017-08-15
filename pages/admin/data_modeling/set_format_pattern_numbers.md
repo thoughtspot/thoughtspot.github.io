@@ -12,8 +12,8 @@ You can use any of the supported number formats for delimiters and number of dig
 
 The default values are:
 
--   \#,\#\#\# for integer data types \(INT, BIGINT\).
--   \#,\#\#\#.00 for decimal data types \(DOUBLE and FLOAT\).
+-   \#,\#\#\# for integer data types (INT, BIGINT).
+-   \#,\#\#\#.00 for decimal data types (DOUBLE and FLOAT).
 
 These are some examples of formats you can use:
 

@@ -22,7 +22,7 @@ When referring to objects using fully qualified object names, the syntax is:
 "database"."schema"."table"
 ```
 
-As a best practice, you should enclose object names \(database, schema, table, and column\) in double quotes, and column values in single quotes.
+As a best practice, you should enclose object names (database, schema, table, and column) in double quotes, and column values in single quotes.
 
 |Syntax|Description|Examples|
 |------|-----------|--------|
@@ -51,7 +51,7 @@ TQL> SHOW DATABASES;
 USE <database>
 ```
 
- |Switches the context to the specified database. This is required if queries do not use fully qualified names \(database.schema.table\) for specifying tables.| ```
+ |Switches the context to the specified database. This is required if queries do not use fully qualified names (database.schema.table) for specifying tables.| ```
 TQL> USE "fruit_database";
 ```
 
@@ -226,7 +226,7 @@ CREATE TABLE <table>
 
  |Creates a table with the specified column definitions and constraints.Use PARTITION BY HASH to shard a table across all nodes. If no KEY is specified, the table will be randomly sharded.
 
-Note that you can specify relationship constraints \(FOREIGN KEY or RELATIONSHIP\) in the CREATE TABLE statement. But it is recommended to define these using ALTER TABLE statements at the end of your TQL script, after creating your tables. This works better in scripts, because it guarantees that tables are created before they are referenced in the constraint definitions.
+Note that you can specify relationship constraints (FOREIGN KEY or RELATIONSHIP) in the CREATE TABLE statement. But it is recommended to define these using ALTER TABLE statements at the end of your TQL script, after creating your tables. This works better in scripts, because it guarantees that tables are created before they are referenced in the constraint definitions.
 
 | ```
 TQL> CREATE TABLE "vendor"
@@ -309,7 +309,7 @@ TRUNCATE TABLE
    <table>
 ```
 
- |Removes all data from a table, but preserves its metadata, including all GUIDs, relationships, etc. This can be used to force a new schema for a table without losing the metadata. However, this operation removes all existing data from the table and must be used with caution. You must reload the data following a TRUNCATE, or all dependent objects \(worksheets and pinboards\) in ThoughtSpot will become invalid.
+ |Removes all data from a table, but preserves its metadata, including all GUIDs, relationships, etc. This can be used to force a new schema for a table without losing the metadata. However, this operation removes all existing data from the table and must be used with caution. You must reload the data following a TRUNCATE, or all dependent objects (worksheets and pinboards) in ThoughtSpot will become invalid.
 
 | ```
 TQL> TRUNCATE TABLE
@@ -414,7 +414,7 @@ ALTER TABLE <table>
 
  To change the partitioning on a table, or to change a dimension table to a sharded table, use ALTER TABLE...SET FACT PARTITION BY HASH...;
 
- To make a sharded table into a dimension table \(replicated on every node\), use ALTER TABLE...SET DIMENSION;
+ To make a sharded table into a dimension table (replicated on every node), use ALTER TABLE...SET DIMENSION;
 
  | ```
 TQL> ALTER TABLE
@@ -494,7 +494,7 @@ TQL> DELETE FROM "vendor"
 
 ## Constraints and relationships
 
-Constraints and relationships in ThoughtSpot are used to define the relationships between tables \(i.e. how they can be joined\). However, constraints are not enforced, as they would be in a transactional database. You can define the following constraints when creating a table with CREATE TABLE, or add them to an existing table using the ADD CONSTRAINT syntax:
+Constraints and relationships in ThoughtSpot are used to define the relationships between tables (i.e. how they can be joined). However, constraints are not enforced, as they would be in a transactional database. You can define the following constraints when creating a table with CREATE TABLE, or add them to an existing table using the ADD CONSTRAINT syntax:
 
 |Constraint|Description|Example|
 |----------|-----------|-------|
@@ -521,7 +521,7 @@ TQL> ALTER TABLE "cart"
 ```
 
  |
-|FOREIGN KEY|Defines a relationship where the value\(s\) in the table are used to join to a second table. Uses an equality operator. The foreign key must match the primary key of the table that is referenced in number, column type, and order of columns.When creating a foreign key, give it a name. You can reference the foreign key name later, if you want to remove it.
+|FOREIGN KEY|Defines a relationship where the value(s) in the table are used to join to a second table. Uses an equality operator. The foreign key must match the primary key of the table that is referenced in number, column type, and order of columns.When creating a foreign key, give it a name. You can reference the foreign key name later, if you want to remove it.
 
 | ```
 TQL> ALTER TABLE "batting"
@@ -548,7 +548,7 @@ TQL> ALTER TABLE "shipment"
 ```
 
  |
-|RELATIONSHIP|Defines a relationship where the value\(s\) in the table can be used to join to a second table, using an equality condition \(required\) and one or more range conditions \(optional\). These conditions act like a WHERE clause when the two tables are joined. They are applied using AND logic, such that all conditions must be met for a row to be included.You may add multiple relationships between tables.
+|RELATIONSHIP|Defines a relationship where the value(s) in the table can be used to join to a second table, using an equality condition (required) and one or more range conditions (optional). These conditions act like a WHERE clause when the two tables are joined. They are applied using AND logic, such that all conditions must be met for a row to be included.You may add multiple relationships between tables.
 
 When creating a relationship, give it a name. You can reference the relationship name later, if you want to remove it.
 
@@ -587,9 +587,9 @@ ThoughtSpot supports a simplified list of data types:
 
 |Kind of data|Supported data types|Details|
 |------------|--------------------|-------|
-|Character|-   VARCHAR\(*n*\)
+|Character|-   VARCHAR(*n*)
 
-|Specify the maximum number of characters, as in VARCHAR\(255\). The size limit is 1GB for VARCHAR values.|
+|Specify the maximum number of characters, as in VARCHAR(255). The size limit is 1GB for VARCHAR values.|
 |Floating point|-   DOUBLE
 -   FLOAT
 

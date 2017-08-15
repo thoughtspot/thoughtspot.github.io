@@ -16,7 +16,7 @@ To tag an object with a sticker:
 
      ![](../../images/choose_data_answers_pinboards.png "Choose Answers, Pinboards, or Data")
 
-2.   Find the item\(s\) you want to tag in the list, and check the box next to its name.
+2.   Find the item(s) you want to tag in the list, and check the box next to its name.
 3.   Click the apply sticker icon and choose one from the list. You can apply as many stickers as you like to an object.
 
      ![](../../images/apply_sticker.png "Choose a sticker to apply")

@@ -19,7 +19,7 @@ Use this procedure to change the primary key for a table. But use it with cautio
 -   **[Change a relationship between tables](../../admin/loading/change_relationships_tql.html)**  
 Use this procedure to remove a relationship between tables or define a new one. This operation works for both kinds of relationships: foreign key or generic relationship.
 -   **[Change sharding on a table](../../admin/loading/change_sharding.html)**  
-You can change the sharding on a table or remove it altogether \(creating a replicated table\) using this procedure. This procedure preserves the data within the table.
+You can change the sharding on a table or remove it altogether (creating a replicated table) using this procedure. This procedure preserves the data within the table.
 -   **[About data type conversion](../../admin/loading/about_data_type_conversion.html)**  
 You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.
 

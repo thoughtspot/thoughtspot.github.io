@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots \(backups\) of data, apply updates, stop and start the services, and view information about the system.
+The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system.
 
 ## Internal only
 
@@ -183,7 +183,7 @@ tscli backup
    [--mode {full|light|dataless}]
 ```
 
- |Enables or updates a periodic full backup configuration where: -   `<hour1, hour2, ...>` is the list of times at which to take backups daily. Comma separated string of hour of day specified as HH using a 24 hour clock \(e.g. 01, 13, 23\).
+ |Enables or updates a periodic full backup configuration where: -   `<hour1, hour2, ...>` is the list of times at which to take backups daily. Comma separated string of hour of day specified as HH using a 24 hour clock (e.g. 01, 13, 23).
 -   `<directory>` is the directory where backups are to be written.
 -   `<num\_backups>` is the number of backups to keep archived.
 
@@ -197,7 +197,7 @@ tscli backup
    <cluster\_name> <cluster\_id>
 ```
 
- |Starts a mirror cluster which will continuously pull backups generated from a primary cluster where:-   `<directory>` is the directory where backups from the primary cluster are written \(usually a SAN or NFS mounted drive\).
+ |Starts a mirror cluster which will continuously pull backups generated from a primary cluster where:-   `<directory>` is the directory where backups from the primary cluster are written (usually a SAN or NFS mounted drive).
 -   `<node1, node2, ...>` is a comma separated list of IP addresses of the nodes in the mirror cluster.
 -   `<cluster\_name>` is the cluster name of the mirror cluster.
 -   `<cluster\_id>` is the ID of the mirror cluster.
@@ -361,7 +361,7 @@ tscli cluster status
 tscli cluster stop
 ```
 
- |Pauses the cluster \(but does not stop storage services\).|
+ |Pauses the cluster (but does not stop storage services).|
 | ```
 tscli --adv cluster tsinhouse
 ```
@@ -441,7 +441,7 @@ tscli etl enable-lw
 -   `--admin_username <admin\_user>` specifies the Administrator username for ThoughtSpot.
 -   `--username <Informatica\_user>` specifies the username for the Informatica Cloud.
 -   `--thoughtspot_url <URL>` specifies the URL for ThoughtSpot
--   `--org_id <informatica\_org\_id>` specifies the Informatica id of the organization \(company\). For ThoughtSpot, this is 001ZFA.NOTE: org\_id shouldn't include the prefix "Org". For example, if on Informatica cloud, the orgid is Org003XYZ, then use only 003XYZ.
+-   `--org_id <informatica\_org\_id>` specifies the Informatica id of the organization (company). For ThoughtSpot, this is 001ZFA.NOTE: org\_id shouldn't include the prefix "Org". For example, if on Informatica cloud, the orgid is Org003XYZ, then use only 003XYZ.
 
 Optional parameters are:-   `--groupname <groupname>` specifies the name of the secure agent group to use.
 -   `--pin_to <IP\_address>` specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky to the Informatica agent, and will always be used. Defaults to the public IP address of the localhost where this command was run.
@@ -475,11 +475,11 @@ tscli event list
 -   `--detail` returns the events in a detail format rather than a tabular summary, which is the default.
 -   `--summary_contains <'string1'| 'string2' ...>` specifies a string to check for in the event summary. Enclose strings in single quotes, and separate multiple strings with |. Events that match all specified strings will be returned.
 -   `--detail_contains <'string1'| 'string2' ...>` specifies a string to check for in the detail. Enclose strings in single quotes, and separate multiple strings with |. Events that match all specified strings will be returned.
--   `--attributes <key1='value1'| key2='value2' ...>` specifies attributes to match as key=value pairs. Separate multiple attributes with |. Events that match all specified key/value pairs will be returned. Put single quotes around the value\(s\).
+-   `--attributes <key1='value1'| key2='value2' ...>` specifies attributes to match as key=value pairs. Separate multiple attributes with |. Events that match all specified key/value pairs will be returned. Put single quotes around the value(s).
 
 And a time window made up of either:
 
--   `--since <hours,minutes,days>` is a time in the past for where the event audit begins, ending at the present time. Specify a human readable duration string, e.g. 4h \(4 hours\), 30m \(30 minutes\), 1d \(1 day\).
+-   `--since <hours,minutes,days>` is a time in the past for where the event audit begins, ending at the present time. Specify a human readable duration string, e.g. 4h (4 hours), 30m (30 minutes), 1d (1 day).
 
 Or both:
 
@@ -506,7 +506,7 @@ tscli fileserver
    --password <password>]
 ```
 
- |Downloads the specified release file and its checksum. Specify the release by number, to the second decimal point \(e.g. 3.1.0, 3.0.5, etc.\). You may optionally specify the `--user` and `--password` to bypass the credentials that were specified when configuring the file server connection with `tscli fileserver configure`. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
+ |Downloads the specified release file and its checksum. Specify the release by number, to the second decimal point (e.g. 3.1.0, 3.0.5, etc.). You may optionally specify the `--user` and `--password` to bypass the credentials that were specified when configuring the file server connection with `tscli fileserver configure`. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
 
 |
 | ```
@@ -549,7 +549,7 @@ tscli firewall enable
 tscli firewall open-ports <ports>
 ```
 
- |Opens given ports through firewall on all nodes. Takes a list of ports to open, comma separated. Ignores ports which are already open. Some essential ports are always kept open \(e.g. ssh\), they are not affected by this command or by "close-ports".|
+ |Opens given ports through firewall on all nodes. Takes a list of ports to open, comma separated. Ignores ports which are already open. Some essential ports are always kept open (e.g. ssh), they are not affected by this command or by "close-ports".|
 | ```
 tscli firewall status
 ```
@@ -607,7 +607,7 @@ tscli ldap configure
 tscli ldap purge-configuration
 ```
 
- |Purges \(removes\) any existing LDAP configuration.|
+ |Purges (removes) any existing LDAP configuration.|
 | ```
 tscli --adv ldap remove-cert
 ```
@@ -627,11 +627,11 @@ tscli logs collect
 
  |Extracts logs from the cluster. Does not include any logs that have been deleted due to log rotation.Required parameters are:
 
--    `--include <selector | glob>` is a comma separated list of logs to include. Each entry is either a selector \(one of all, orion, system, or ts\) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`. Other entries are ignored. TIP: put single quotes around the parameter value to prevent undesired glob expansion.
+-    `--include <selector | glob>` is a comma separated list of logs to include. Each entry is either a selector (one of all, orion, system, or ts) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`. Other entries are ignored. TIP: put single quotes around the parameter value to prevent undesired glob expansion.
 
 And a time window made up of either:
 
--   `--since <hours,minutes,days>` is a time in the past for where log collection begins, ending at the present time. Specify a human readable duration string, e.g. 4h \(4 hours\), 30m \(30 minutes\), 1d \(1 day\).
+-   `--since <hours,minutes,days>` is a time in the past for where log collection begins, ending at the present time. Specify a human readable duration string, e.g. 4h (4 hours), 30m (30 minutes), 1d (1 day).
 
 Or both:
 
@@ -640,7 +640,7 @@ Or both:
 
 Optional parameters are:
 
--   `--exclude <selector | glob>` is a comma separated list of logs to exclude. Each entry is either a selector \(one of orion, system, or ts\) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`.
+-   `--exclude <selector | glob>` is a comma separated list of logs to exclude. Each entry is either a selector (one of orion, system, or ts) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`.
 -   `--out <path>` is the location where log tarball is written. If not specified, the tarball will be written in /tmp.
 -   `--maxsize` is the maximum size to allow. Only fetches logs if the total size is smaller that this value. Can be specified in megabytes or gigabytes, e.g. 100MB, 10GB.
 -   `--sizeonly` means do not collect logs. Just report the size.
@@ -665,11 +665,11 @@ tscli logs runcmd --cmd command>
     1.  A logfile and its corresponding result file can be referenced using the keywords SRCFILE and DSTFILE. E.g. 'cp SRCFILE DSTFILE'
     2.  If there is no reference to DSTFILE in the command, '\> DSTFILE' will be appended to the command for output redirection. E.g. 'du -sch SRCFILE' gets automatically translated to 'du -sch SRCFILE \> DSTFILE'
     3.  If there is no reference to SRCFILE, the content of the log is streamed tot he command using a pipe. E.g. 'tail -n100 | grep ERROR' gets automatically translated to 'cat SRCFILE | tail -n100 | grep ERROR \> DSTFILE'
--   `--include <selector | glob>` is a comma separated list of logs to include. Each entry is either a selector \(one of all, orion, system, or ts\) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`. Other entries are ignored. TIP: put single quotes around the parameter value to prevent undesired glob expansion.
+-   `--include <selector | glob>` is a comma separated list of logs to include. Each entry is either a selector (one of all, orion, system, or ts) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`. Other entries are ignored. TIP: put single quotes around the parameter value to prevent undesired glob expansion.
 
 And a time window made up of either:
 
--   `--since <hours,minutes,days>` is a time in the past for where log collection begins, ending at the present time. Specify a human readable duration string, e.g. 4h \(4 hours\), 30m \(30 minutes\), 1d \(1 day\).
+-   `--since <hours,minutes,days>` is a time in the past for where log collection begins, ending at the present time. Specify a human readable duration string, e.g. 4h (4 hours), 30m (30 minutes), 1d (1 day).
 
 Or both:
 
@@ -678,14 +678,14 @@ Or both:
 
 Optional parameters are:
 
--   `--exclude <selector | glob>` is a comma separated list of logs to exclude. Each entry is either a selector \(one of orion, system, or ts\) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`.
+-   `--exclude <selector | glob>` is a comma separated list of logs to exclude. Each entry is either a selector (one of orion, system, or ts) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`.
 -   `--outfile <path>` is the file path for printing all the results. By default, results get printed to stdout.
 
 -   `--outdir <directory\_path>` is the directory path for dumping results from each node, with their original directory structure. This may be used as an alternative to printing output to outfile/stdout.
 
--   `--cmd_infmt [C | U]` specifies if the input file should be compressed \(C\) or uncompressed \(U\) before running the command. Don't use this flag if the command works on both.
+-   `--cmd_infmt [C | U]` specifies if the input file should be compressed (C) or uncompressed (U) before running the command. Don't use this flag if the command works on both.
 
--   `--cmd_outfmt [C | U]` specifies if the output file generated by the command will be compressed \(C\) or uncompressed \(U\). Don't use this flag if the output file will be of the same format as the input file.
+-   `--cmd_outfmt [C | U]` specifies if the output file generated by the command will be compressed (C) or uncompressed (U). Don't use this flag if the output file will be of the same format as the input file.
 
 
 |
@@ -728,7 +728,7 @@ tscli monitoring set-config
 
  |Sets the monitoring configuration. Parameters are:
 
--   `--email <email>` is a comma separated list \(no spaces\) of email addresses where the cluster will send monitoring information.
+-   `--email <email>` is a comma separated list (no spaces) of email addresses where the cluster will send monitoring information.
 
 -   `--clear_email` disables emails by clearing the email configuration.
 
@@ -761,8 +761,8 @@ tscli nas mount-cifs
  |Mounts a CIFS device on all nodes.Parameters are:
 
 -   `--server <server\_CIFS\_address>` is the device address.
--   `--path_on_server <path>` is the path on the server to mount \(source\).
--   `--mount_point <target>` is the location where the CIFS device should be mounted \(target\).
+-   `--path_on_server <path>` is the path on the server to mount (source).
+-   `--mount_point <target>` is the location where the CIFS device should be mounted (target).
 -   `--username <user>` is the username with which to connect to the CIFS device.
 -   `--password <password>` is the CIFS password.
 -   `--uid <uid>` is the uid that will own all files or directories on the mounted filesystem, when the server does not provide ownership information. See the man page for mount.cifs for more details.
@@ -779,8 +779,8 @@ tscli nas mount-nfs
  |Mounts a NFS device on all nodes.Parameters are:
 
 -   `--server <server\_NFS\_address>` is the device address.
--   `--path_on_server <path>` is the path on server to mount \(source\).
--   `--mount_point <target>` is the location where the NFS device should be mounted \(target\).
+-   `--path_on_server <path>` is the path on server to mount (source).
+-   `--mount_point <target>` is the location where the NFS device should be mounted (target).
 
 |
 | ```
@@ -963,7 +963,7 @@ tscli --adv service add-gflag
    max_scheduled_jobs <jobs>
 ```
 
- |Sets the max scheduled jobs \(both pinboard and Data Connect\) for a cluster where:-   `<jobs>` is the max number of allowed jobs. 50 is the default.
+ |Sets the max scheduled jobs (both pinboard and Data Connect) for a cluster where:-   `<jobs>` is the max number of allowed jobs. 50 is the default.
 
 |
 | ```
@@ -1210,7 +1210,7 @@ tscli --adv service disable
 tscli --adv service enable
 ```
 
- |Enables service, does not start it \(use "tscli service start" for that\).|
+ |Enables service, does not start it (use "tscli service start" for that).|
 | ```
 tscli --adv service get-config
 ```
@@ -1255,7 +1255,7 @@ tscli --adv service set-pack
 tscli --adv service set-service-override
 ```
 
- |Sets override for service config \(read from stdin\).|
+ |Sets override for service config (read from stdin).|
 | ```
 tscli --adv service show-pin
 ```
@@ -1321,7 +1321,7 @@ tscli smtp
    set-relayhost <IP\_address>
 ```
 
- |Sets the relayhost for SMTP \(email\) sent from the cluster.|
+ |Sets the relayhost for SMTP (email) sent from the cluster.|
 | ```
 tscli smtp show-canonical-mapping
 ```
@@ -1341,7 +1341,7 @@ tscli smtp show-mailname
 tscli smtp show-relayhost
 ```
 
- |Shows the relayhost for SMTP \(email\) sent from the cluster. If there is no relayhost configured, the command shows "NOT FOUND".|
+ |Shows the relayhost for SMTP (email) sent from the cluster. If there is no relayhost configured, the command shows "NOT FOUND".|
 | ```
 tscli snapshot backup
    [--mode {full|light|dataless}]
@@ -1361,7 +1361,7 @@ tscli snapshot
    create <name> <reason>
 ```
 
- |Creates a new snapshot with the name and reason provided. This command does not accept periods \(.\), but does accept dashes \(-\).|
+ |Creates a new snapshot with the name and reason provided. This command does not accept periods (.), but does accept dashes (-).|
 | ```
 tscli snapshot delete <name>
 ```
@@ -1487,7 +1487,7 @@ tscli support
    set-admin-phone <phone\_number>
 ```
 
- |Sets the phone number for contacting the customer administrator. Specify a phone number using any value \(e.g. +1 800-508-7008 Ext. 1\). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone ' '`.|
+ |Sets the phone number for contacting the customer administrator. Specify a phone number using any value (e.g. +1 800-508-7008 Ext. 1). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone ' '`.|
 | ```
 tscli support set-remote
    --addr <support\_address>
@@ -1540,7 +1540,7 @@ tscli --adv zoo fix-local-datadir
 |`--yes`|Same as `--autoconfig`. Automatically configure properties of the cluster when possible. User may still be prompted for certain inputs.|
 |`--cluster <cluster\_name>`|Optional. Used to designate the cluster to operate on by name, if it is not detected automatically.|
 |`--zoo <zookeeper\_servers>`|Optional. Used to provide a comma-separated list of Zookeeper servers, when a cluster is not detected automatically.|
-|`--username <username>` |Username for machine access \(default: admin\)|
-|`--identity_file <identity\_file>`|SSH identity file for SSH access to machines. If not specified, assumes passwordless SSH is available. \(default: None\)|
+|`--username <username>` |Username for machine access (default: admin)|
+|`--identity_file <identity\_file>`|SSH identity file for SSH access to machines. If not specified, assumes passwordless SSH is available. (default: None)|
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)

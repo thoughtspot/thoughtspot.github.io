@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-If you created a relationship \(link\) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
+If you created a relationship (link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
 
 You must have either administration privilege or modify access permission to the columns to delete a relationship.
 

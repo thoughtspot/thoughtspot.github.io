@@ -22,7 +22,7 @@ Use tscli to set up monitoring. This is a one time operation.
 
     The parameters are:
 
-    -   `--email <email>` is a comma separated list \(no spaces\) of email addresses where the cluster will send monitoring information.
+    -   `--email <email>` is a comma separated list (no spaces) of email addresses where the cluster will send monitoring information.
 
     -   `--heartbeat_interval <heartbeat\_interval>` is the heartbeat email generation interval in seconds. Must be greater than 0.
 

@@ -13,8 +13,8 @@ You can change the way a column is indexed by modifying its **Index** value in t
 -   All column names are indexed using their **ColumnName** value.
 -   Values for columns with the column type of **MEASURE** are not indexed.
 -   Values for columns with the data type of **DATE** are not indexed.
--   Columns that contain a large amount of free-form text \(i.e. the number of characters in more than a few of the fields is more than 50\) are indexed as PREFIX\_ONLY by default.
--   Short strings \(like a firstname column\) are indexed using PREFIX\_AND\_SUBSTRING by default, which indexes both prefix and substrings.
+-   Columns that contain a large amount of free-form text (i.e. the number of characters in more than a few of the fields is more than 50) are indexed as PREFIX\_ONLY by default.
+-   Short strings (like a firstname column) are indexed using PREFIX\_AND\_SUBSTRING by default, which indexes both prefix and substrings.
 
 It is not recommended to change the indexing for columns with very large free text values. These should not to be indexed, because indexing on these values is not useful and may generate confusing suggestions.
 

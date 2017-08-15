@@ -26,7 +26,7 @@ ALTER TABLE products
 
 Also note that changing data type has implications on the primary key and sharding enforcement. For example, changing the data type of a column that is part of the sharding key would lead to a redistribution of data. Then imagine that the sharding key column contained the text values "00100", "0100", and "100", which all map to same integer value. If this type of a column is changed from a VARCHAR to an INT, then it would be subject to the upsert behavior on primary keys. So in this example, only one of the three rows would be preserved.
 
-Be aware that data type conversion will preserve the data in the underlying database table, but there is no guarantee that any objects built on top of it \(worksheets or pinboards\) will be preserved. This is because you might make a data type change that makes a chart built on top of the table invalid \(for example a growth chart would be invalidated if the date column it depends on were changed to a varchar column\).
+Be aware that data type conversion will preserve the data in the underlying database table, but there is no guarantee that any objects built on top of it (worksheets or pinboards) will be preserved. This is because you might make a data type change that makes a chart built on top of the table invalid (for example a growth chart would be invalidated if the date column it depends on were changed to a varchar column).
 
 ## Supported data type conversions
 

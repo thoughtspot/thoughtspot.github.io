@@ -14,9 +14,9 @@ The tables you create to receive the data must have the same number of columns a
 
 |Kind of data|Supported data types|Details|
 |------------|--------------------|-------|
-|Character|-   VARCHAR\(*n*\)
+|Character|-   VARCHAR(*n*)
 
-|Specify the maximum number of characters, as in VARCHAR\(255\). The size limit is 1GB for VARCHAR values.|
+|Specify the maximum number of characters, as in VARCHAR(255). The size limit is 1GB for VARCHAR values.|
 |Floating point|-   DOUBLE
 -   FLOAT
 
@@ -43,7 +43,7 @@ The tables you create to receive the data must have the same number of columns a
 
 ## Geographical data types
 
-For geographical data types, use VARCHAR. For latitude and longitude, you can use either VARCHAR or DOUBLE. After loading the data, designate it as a geographical data type when you [Model data in bulk in the modeling file](../data_modeling/edit_model_file.html#). Wherever abbreviations or codes are used, they are the same as what the USPS \(United States Postal Service\) recognizes.
+For geographical data types, use VARCHAR. For latitude and longitude, you can use either VARCHAR or DOUBLE. After loading the data, designate it as a geographical data type when you [Model data in bulk in the modeling file](../data_modeling/edit_model_file.html#). Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.
 
 These types of data can be designated as geographical data, which enables them to be visualized using the Geo chart types:
 

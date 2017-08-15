@@ -29,7 +29,7 @@ To add the sources to the worksheet:
     1.   To add all of the columns from a table, click on the table name and click **+ Add Columns**.
     2.   To add a single column, double click on its name.
     3.   To add multiple columns, Ctl+click on each column you want to add and click **+ Add Columns**.
-    Note that once you add a column, non-related tables \(i.e. those without a primary/foreign key relationship\) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them](../data_modeling/about_relationships.html#).
+    Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them](../data_modeling/about_relationships.html#).
 
 8.   Click on the worksheet title to name it, and then **Save** it.
 9.   Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.

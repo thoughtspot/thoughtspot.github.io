@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-This procedure shows how to add SSL \(secure socket layers\) to enable secure HTTP \(HTTPS\) in ThoughtSpot.
+This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot.
 
 To set up SSL, you will need:
 
@@ -40,4 +40,4 @@ To install the SSL certificate:
     You should see that the URL begins with `https://`.
 
 
-**Parent topic:** [About SSL \(secure socket layers\)](../../admin/setup/about_SSL.html)
+**Parent topic:** [About SSL (secure socket layers)](../../admin/setup/about_SSL.html)

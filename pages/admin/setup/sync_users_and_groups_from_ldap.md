@@ -20,14 +20,14 @@ Before synchronizing users and groups, you will need this information:
 
     An example username would be `moo_100@ldap.thoughtspot.com`
 
--   Distinguished Name \(DN\) for the base to start searching for users in the LDAP system.
+-   Distinguished Name (DN) for the base to start searching for users in the LDAP system.
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
 
 There are two ways for you to fetch users and groups from LDAP and populate them into your ThoughtSpot system:
 
--   Run the synchronization script in interactive mode, which will walk you through the process \(shown here\).
+-   Run the synchronization script in interactive mode, which will walk you through the process (shown here).
 -   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, contact ThoughtSpot Support. If you choose this method, you can run the script periodically using a cron job.
 
 To run the LDAP sync script in interactive mode:

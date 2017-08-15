@@ -10,12 +10,12 @@ Use this procedure to remove a relationship between tables or define a new one. 
 
 You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
 
-To change a relationship between two tables, first remove any existing relationship, and then define the new relationship \(if any\). You do not need to truncate the tables to do this operation. Any dependent objects \(pinboards or worksheets\) will remain intact.
+To change a relationship between two tables, first remove any existing relationship, and then define the new relationship (if any). You do not need to truncate the tables to do this operation. Any dependent objects (pinboards or worksheets) will remain intact.
 
 To change the relationship between tables:
 
 1.   [Create a manual snapshot](../backup_restore/take_snapshot.html).
-2.   [Connect to the database with the ThoughtSpot SQL Command Line \(TQL\)](connect_sql_cli.html#).
+2.   [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
 3.   Issue the command to drop the existing relationship, by issuing a command like one of these examples:
     -   Drop a foreign key by name, if it was given a name when it was defined:
 
@@ -51,7 +51,7 @@ To change the relationship between tables:
         ```
 
 4.   Define a new relationship, if you want to, using ALTER TABLE...ADD CONSTRAINT...
-5.   Test that any dependent objects \(pinboards, worksheets, etc.\) are still working correctly.
+5.   Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
 6.   Delete the snapshot you created earlier using the command:
 
     ```

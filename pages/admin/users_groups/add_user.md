@@ -27,12 +27,12 @@ When you create a user, you can assign group memberships. The group's privileges
 
      ![](../../images/new_user_dialogue_3.2.png "Create a user manually")
 
-    1.   **Name**: A unique name for the user \(usually their first and last name\).
+    1.   **Name**: A unique name for the user (usually their first and last name).
     2.   **Username**: A login name for the user.
 
         **Note:** Usernames must be unique and lowercase.
 
-        If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually \(i.e. they are not created automatically in ThoughtSpot upon authentication\), the username you specify has to be domain qualified \(e.g. username@ldap.thoughtspot.com\), and you must enter a dummy password.
+        If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. username@ldap.thoughtspot.com), and you must enter a dummy password.
 
     3.   **Password** and **Confirm Password**: A temporary password.
     4.   **E-mail Address**: The user's email address. This is used for notification when another user shares something with them.

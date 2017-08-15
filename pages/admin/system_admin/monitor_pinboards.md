@@ -100,7 +100,7 @@ Here is a list of the system monitoring pinboards:
 -   Database
 -   Search
 -   Host
--   Aggregate \(all\)
+-   Aggregate (all)
 
 | -   CPU usage per component over time
 -   Memory usage per component over time

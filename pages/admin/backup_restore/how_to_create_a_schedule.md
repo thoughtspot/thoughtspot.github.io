@@ -42,7 +42,7 @@ The `schedule` has the following components:
  |
 | `retention_policy`
 
- | Specifies retention intervals. Retention is on a first-in-first-out \(FIFO\) basis. So, the oldest result is always discarded. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`.
+ | Specifies retention intervals. Retention is on a first-in-first-out (FIFO) basis. So, the oldest result is always discarded. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`.
 
  You can specify multiple retention buckets and they can have different retention policies.
 
@@ -85,7 +85,7 @@ schedule {
 
 ```
 
-Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the `period` of 1 \(one\) hour with the midnight offset of 0 \(zero\).
+Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the `period` of 1 (one) hour with the midnight offset of 0 (zero).
 
 ```
 

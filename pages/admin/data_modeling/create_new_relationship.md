@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-You can quickly create a relationship \(or link\) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain \(e.g. employee ID or product key\).
+You can quickly create a relationship (or link) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain (e.g. employee ID or product key).
 
 You must have either administration privilege or modify access permission to the columns to create a relationship.
 

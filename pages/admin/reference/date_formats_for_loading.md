@@ -33,7 +33,7 @@ These date and time formats are supported in an Excel or CSV file when uploading
 -   2014-01-30 10:32:22.000 AM
 -   1/9/2014
 -   30-Jan-14
--   01-Mar-02 \(assumes 2002\)
+-   01-Mar-02 (assumes 2002)
 -   3/1/2002 10:32 AM
 -   3/1/2002 14:52
 -   3/1/2002 10:32:22

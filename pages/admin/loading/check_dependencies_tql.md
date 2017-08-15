@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line \(TQL\) that modify or delete tables warns of dependencies.
+Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line (TQL) that modify or delete tables warns of dependencies.
 
 When you enter a TQL statement, you will be warned of possible dependency consequences with a prompt asking if you’d like to proceed. This should make you feel safe issuing TQL commands, even commands like dropping a table.
 

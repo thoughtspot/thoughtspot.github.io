@@ -21,7 +21,7 @@ Note that ThoughtSpot does not check for primary key violations across different
 
 ## Foreign key relationships
 
-Foreign key relationships help ThoughtSpot with default schema modeling by indicating a connection between two tables. These relationships are used for joining the tables, and not for referential integrity constraint checking. The foreign key relationship is defined on the fact table and references the primary key\(s\) in the dimension table.
+Foreign key relationships help ThoughtSpot with default schema modeling by indicating a connection between two tables. These relationships are used for joining the tables, and not for referential integrity constraint checking. The foreign key relationship is defined on the fact table and references the primary key(s) in the dimension table.
 
 If you use primary and foreign keys, when users search the data from the search bar, tables are automatically joined. For example, assume there are two tables:
 
@@ -32,13 +32,13 @@ There is a foreign key on the fact table on regionid which points to the id in t
 
 Foreign keys have to match the primary key of the target table they refer to. So if there are multiple columns that make up the primary key in the target table, the foreign key must include all of them, and in the same order.
 
-## Generic relationships \(many-to-many\)
+## Generic relationships (many-to-many)
 
 You may have a schema where there is a fact table that you want to join with another fact table. If there isn't a primary key/foreign key relationship between the tables, you can use many-to-many to enable this. You can do this by using the RELATIONSHIP syntax to add a link between them, that works similarly to the WHERE clause in a SQL join clause.
 
 This is a special kind of relationship, that applies to specific data models and use cases. For example, suppose you have a table that shows wholesale purchases of fruits, and another table that shows retail fruit sales made, but no inventory information. In this case, it would be of some use to see the wholesale purchases that led to sales, but you don't have the data to track a single apple from wholesale purchase through to sale to a customer.
 
-In a many-to-many relationship, the value\(s\) in a table can be used to join to a second table, using an equality condition \(required\) and one or more range conditions \(optional\). These conditions act like the WHERE clause in a SQL JOIN clause. They are applied using AND logic, such that all conditions must be met for a row to be included.
+In a many-to-many relationship, the value(s) in a table can be used to join to a second table, using an equality condition (required) and one or more range conditions (optional). These conditions act like the WHERE clause in a SQL JOIN clause. They are applied using AND logic, such that all conditions must be met for a row to be included.
 
 To use a many-to-many relationship, you need to follow a few rules:
 

@@ -21,7 +21,7 @@ You can edit the data modeling file using Microsoft Excel, vi/vim, or a compatib
 Remember these important guidelines when editing the model file:
 
 -   Do not modify any value in a column which contains **DoNotModify** in the field under the column heading.
--   Make sure to keep the file in the same format as it had when you downloaded it \(CSV text file\).
+-   Make sure to keep the file in the same format as it had when you downloaded it (CSV text file).
 
 -   **[Download the model file](../../admin/data_modeling/get_model_file.html)**  
 Before you can make changes to the model file, you need to download it. Then you can edit it using Microsoft Excel, vi/vim, or a similar text editing tool.

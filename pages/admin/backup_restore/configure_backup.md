@@ -6,9 +6,9 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods \(first-in-first-out\), and output location for a periodic backup.
+You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS \(network attached storage\) file system](../setup/NAS_mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system](../setup/NAS_mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
 
 The format for a policy includes the following:
 
@@ -48,7 +48,7 @@ Before creating a policy, make sure you have read [Understand backup/snapshot sc
 
 Backups cannot start when another backup is still running. So, choose a reasonable frequency for the mode in you policy. For example, a `FULL` backup takes longer than a `DATALESS` backup. Consider the load on the system when configuring. Do not backup up when the system would experience a heavy load. For example, you may want to take `FULL` backups late in the evening or on weekends.
 
-The rentention system deletes the oldest stored backup and the corresponding snapshot on a first-in first-out basis \(FIFO\). The deletion takes places *before* the backup that replaces it. This means that if you set a bucket retention of 1 the system stores a single backup at any one time. And, more importantly, the only backup would be deleted before the next is taken. For this reason, you should always set the number of backups to be greater than 2 \(two\), to ensure you have at least one backup available in the case of a failure while taking a backup.
+The rentention system deletes the oldest stored backup and the corresponding snapshot on a first-in first-out basis (FIFO). The deletion takes places *before* the backup that replaces it. This means that if you set a bucket retention of 1 the system stores a single backup at any one time. And, more importantly, the only backup would be deleted before the next is taken. For this reason, you should always set the number of backups to be greater than 2 (two), to ensure you have at least one backup available in the case of a failure while taking a backup.
 
 To configure periodic backups:
 

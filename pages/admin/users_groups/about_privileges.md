@@ -25,7 +25,7 @@ Privileges are additive, meaning that if a user belongs to more than one group, 
 
 If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about_row_security.html#) does not apply to them.
 
-There is a default group called **All**, which includes every user in ThoughtSpot. When you create a new user, they will be added to the **All** group automatically. You cannot delete the **All** group or remove members from it. If you have a common set of privileges you want every user to have \(typically **Can upload user data** and/or **Can download data**\), add those privileges to the **All** group.
+There is a default group called **All**, which includes every user in ThoughtSpot. When you create a new user, they will be added to the **All** group automatically. You cannot delete the **All** group or remove members from it. If you have a common set of privileges you want every user to have (typically **Can upload user data** and/or **Can download data**), add those privileges to the **All** group.
 
 Permissions to see and edit tables, worksheets, and pinboards are set when you share them with users and groups, as described in the topic [Data security](../data_security/sharing_security_overview.html#).
 

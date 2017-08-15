@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-You can designate a support contact \(email and phone number\) at your organization for first level technical support. That person can answer questions about data and searching, and submit any system and software-related questions to ThoughtSpot Support.
+You can designate a support contact (email and phone number) at your organization for first level technical support. That person can answer questions about data and searching, and submit any system and software-related questions to ThoughtSpot Support.
 
 After you set the custom support contact information, here's where your users will see it:
 
@@ -34,7 +34,7 @@ To designate the custom support contact:
     $ tscli support set-admin-phone <phone_number>
     ```
 
-4.   If you need to reset both of these to the default \(ThoughtSpot Support\), issue:
+4.   If you need to reset both of these to the default (ThoughtSpot Support), issue:
 
     ```
     $ tscli support rm-admin-email

@@ -10,7 +10,7 @@ After loading data, you will create the semantic data model that makes the data 
 
 ## About data modeling
 
-Data modeling is a very lightweight process compared to what you may have experienced in other tools. It enables you to change some of the settings \(or properties\) of the data so that it becomes more searchable.
+Data modeling is a very lightweight process compared to what you may have experienced in other tools. It enables you to change some of the settings (or properties) of the data so that it becomes more searchable.
 
 You can change these settings in two ways, both of which have the same effect:
 

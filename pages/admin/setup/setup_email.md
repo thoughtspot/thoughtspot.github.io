@@ -27,4 +27,4 @@ To verify that the send email function is working correctly:
 
 3.   If you receive the email at the address you supplied, email is working correctly.
 
-**Parent topic:** [Set the relay host for SMTP \(email\)](../../admin/setup/set_up_relay_host.html)
+**Parent topic:** [Set the relay host for SMTP (email)](../../admin/setup/set_up_relay_host.html)

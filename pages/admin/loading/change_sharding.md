@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-You can change the sharding on a table or remove it altogether \(creating a replicated table\) using this procedure. This procedure preserves the data within the table.
+You can change the sharding on a table or remove it altogether (creating a replicated table) using this procedure. This procedure preserves the data within the table.
 
 You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
 
@@ -21,7 +21,7 @@ You can use these steps to do any of these operations:
 To change the sharding on a table:
 
 1.   [Create a manual snapshot](../backup_restore/take_snapshot.html).
-2.   [Connect to the database with the ThoughtSpot SQL Command Line \(TQL\)](connect_sql_cli.html#).
+2.   [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
 3.  Issue the command to change the sharding using this syntax:
 
     ```
@@ -34,14 +34,14 @@ To change the sharding on a table:
 
     For example:
 
-    -   To make a sharded table into a dimension table \(replicated on every node\), use:
+    -   To make a sharded table into a dimension table (replicated on every node), use:
 
         ```
         ALTER TABLE "products"
            SET DIMENSION;
         ```
 
-    -   To make a dimension table into a sharded \(fact\) table or change the number of shards, use:
+    -   To make a dimension table into a sharded (fact) table or change the number of shards, use:
 
 ```
 ALTER TABLE "sales"
@@ -49,7 +49,7 @@ ALTER TABLE "sales"
    KEY ("productID");
 ```
 
-4.   Test that any dependent objects \(pinboards, worksheets, etc.\) are still working correctly.
+4.   Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
 5.   Delete the snapshot you created earlier using the command:
 
     ```

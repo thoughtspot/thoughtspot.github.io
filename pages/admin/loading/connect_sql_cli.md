@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line \(TQL\). TQL supports many, but not all, common SQL commands.
+To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.
 
 Before connecting with TQL, you will need:
 
@@ -24,6 +24,6 @@ To connect to TQL:
     TQL>
     ```
 
-3.   Enter your SQL command, followed by a semicolon \(;\).
+3.   Enter your SQL command, followed by a semicolon (;).
 
 **Parent topic:** [Build the schema](../../admin/loading/create_schema.html)

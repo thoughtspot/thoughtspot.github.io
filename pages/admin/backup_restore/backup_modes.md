@@ -18,7 +18,7 @@ Before creating a manual backup or configuring automated backups, make sure ther
 
 Lightweight backups contain everything that makes up a cluster so they contain the following:
 
--   Cluster configuration \(SSH, LDAP, etc.\)
+-   Cluster configuration (SSH, LDAP, etc.)
 
 -   In-memory data cache
 
@@ -30,16 +30,16 @@ Lightweight backups contain everything that makes up a cluster so they contain t
 
 -   Users, groups and permissions
 
--   Objects created by users \(pinboards, worksheets, and formulas\) with their shares and permissions.
+-   Objects created by users (pinboards, worksheets, and formulas) with their shares and permissions.
 
 -   Data model and row-level security rules.
 
 
-Data loaded through ThoughtSpot Loader \(tsload\), ODBC/JDBC drivers, and Data Connect is excluded. The expectation is that data loaded via tsload is from external sources and so can be re-loaded after the cluster is restored. An exception is if these mechanisms were used to load data into tables that were first created through CSV import \(that is, a user first loaded the tables via the GUI\). In this case, the data, like the tables they were loaded into, are saved.
+Data loaded through ThoughtSpot Loader (tsload), ODBC/JDBC drivers, and Data Connect is excluded. The expectation is that data loaded via tsload is from external sources and so can be re-loaded after the cluster is restored. An exception is if these mechanisms were used to load data into tables that were first created through CSV import (that is, a user first loaded the tables via the GUI). In this case, the data, like the tables they were loaded into, are saved.
 
 ## Dataless backups
 
-A dataless backup saves a backup of the schema \(metadata\), with no data. Dataless backups allow you to send a copy of your cluster metadata to ThoughtSpot Support for troubleshooting without compromising data security and privacy. The size of a dataless backup is usually within 10's of megabytes provided you do not have customized binaries.
+A dataless backup saves a backup of the schema (metadata), with no data. Dataless backups allow you to send a copy of your cluster metadata to ThoughtSpot Support for troubleshooting without compromising data security and privacy. The size of a dataless backup is usually within 10's of megabytes provided you do not have customized binaries.
 
 When restoring from a dataless backup, you must supply the correct release tarball, since this type of backup does not include the software release.
 

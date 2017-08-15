@@ -6,11 +6,11 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line \(TQL\). After the schema is created, you can load data into it with ThoughtSpot Loader.
+These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line (TQL). After the schema is created, you can load data into it with ThoughtSpot Loader.
 
 ## Simple schema creation example
 
-The example creates a database \(`tpch`\) with two tables \(`customer`, `transaction`\). The example does not create a schema explicitly. So it will use the default schema \(falcon\_default\_schema\).
+The example creates a database (`tpch`) with two tables (`customer`, `transaction`). The example does not create a schema explicitly. So it will use the default schema (falcon\_default\_schema).
 
 In this example:
 

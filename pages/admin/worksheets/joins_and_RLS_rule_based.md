@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 When working with worksheets and row level security, you need to understand how joins are applied. This is especially important if your schema includes any chasm traps.
 
-This section applies only to the newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#). If you are using the older, [Legacy Row Level Security](../data_security/about_legacy_row_security.html#) \(not recommended\), see [About the worksheet join rule with Legacy Row Level Security](joins_and_row_level_security.html#).
+This section applies only to the newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#). If you are using the older, [Legacy Row Level Security](../data_security/about_legacy_row_security.html#) (not recommended), see [About the worksheet join rule with Legacy Row Level Security](joins_and_row_level_security.html#).
 
 ## Rule-Based Row Level Security with worksheets
 
@@ -20,7 +20,7 @@ Imagine you have a worksheet that contains a "Sales" fact table, and "Customer" 
 
 ## Chasm Trap
 
-This is particularly important with chasm trap schemas. For chasm trap schemas, if row level security is only set on one of the tables, people could see data they should not see if the scope of their search does not include that table. \(this protects the from having people see the wrong things if they have chasm trap\).
+This is particularly important with chasm trap schemas. For chasm trap schemas, if row level security is only set on one of the tables, people could see data they should not see if the scope of their search does not include that table. (this protects the from having people see the wrong things if they have chasm trap).
 
 For any worksheets that include a chasm trap, you need to use the new Rule-Based Row Level Security. In fact, starting in release 3.3, if you have existing Legacy Row Level Security built on a chasm trap schema, you'll need to migrate to the new row level security before you can use them anymore. If you were still using Legacy Row Level Security, after upgrading to 3.3.x, you would not be able to access any of those worksheets. You’d see a message advising you to migrate to the newer Rule-Based Row Level Security.
 

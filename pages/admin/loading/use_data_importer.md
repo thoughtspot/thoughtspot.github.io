@@ -6,13 +6,13 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-Use ThoughtSpot Loader \(tsload\) to load data from a CSV text file into an existing table in ThoughtSpot. tsload accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.
+Use ThoughtSpot Loader (tsload) to load data from a CSV text file into an existing table in ThoughtSpot. tsload accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.
 
 Before importing data, you need to [Build the schema](create_schema.html#).
 
 To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference](../reference/data_importer_ref.html#) or by issuing `tsload -help`.
 
-tsload supports both full and incremental data loads. For incremental loads, an upsert \(insert or update\) is performed. If an incoming row has the same primary key as an existing row, it updates the existing row with the new values.
+tsload supports both full and incremental data loads. For incremental loads, an upsert (insert or update) is performed. If an incoming row has the same primary key as an existing row, it updates the existing row with the new values.
 
 You can integrate tsload into your ETL environment for more automated data loads. Most ETL tools provide the ability to write target data into files and support scripted post-transformation actions that can include loading data into ThoughtSpot. This procedure describes manually loading data, but the tsload commands could be saved as a script:
 

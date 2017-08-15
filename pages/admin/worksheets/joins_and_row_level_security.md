@@ -8,11 +8,11 @@ sidebar: mydoc_sidebar
 ---
 When working with worksheets and Legacy Row Level Security, you need to understand how joins are applied. This section gives some examples to explain the interaction between these two concepts.
 
-This section applies only to the older [Legacy Row Level Security](../data_security/about_legacy_row_security.html#). If you are using the newer, [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) \(recommended\), see [About the worksheet join rule with Rule-Based Row Level Security](joins_and_RLS_rule_based.html#). If your schema includes any [chasm traps](../loading/chasm_trap.html#), you must use the newer Rule-Based Row Level Security.
+This section applies only to the older [Legacy Row Level Security](../data_security/about_legacy_row_security.html#). If you are using the newer, [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) (recommended), see [About the worksheet join rule with Rule-Based Row Level Security](joins_and_RLS_rule_based.html#). If your schema includes any [chasm traps](../loading/chasm_trap.html#), you must use the newer Rule-Based Row Level Security.
 
 ## Worksheet schemas and the root table
 
-To understand how the worksheet join rule is applied, you first need to understand worksheet schemas and the concept of root tables. When you create a worksheet, you're effectively creating a self-contained schema made up of the tables in the worksheet and the relationships \(joins\) between the tables. The joins \(represented by arrows in the diagram\) reflect the primary key/foreign key relationships between the tables in the underlying database schema. The concept of the "root" table in the worksheet schema becomes important for understanding how the joins are applied when searching. In this context, the root table is specific to the schema structure defined for that worksheet.
+To understand how the worksheet join rule is applied, you first need to understand worksheet schemas and the concept of root tables. When you create a worksheet, you're effectively creating a self-contained schema made up of the tables in the worksheet and the relationships (joins) between the tables. The joins (represented by arrows in the diagram) reflect the primary key/foreign key relationships between the tables in the underlying database schema. The concept of the "root" table in the worksheet schema becomes important for understanding how the joins are applied when searching. In this context, the root table is specific to the schema structure defined for that worksheet.
 
 Suppose you created a worksheet with a schema like the example in the diagram:
 
@@ -30,7 +30,7 @@ What if you choose **Apply joins progressively** when creating a worksheet, and 
 
 ## Example 1: Progressive join with tables from one branch
 
-Joins are applied from the root table of the worksheet down to the lowest leaf table involved in the search. If the worksheet includes all of the tables in the diagram, but when doing a search we choose only columns from Products and Departments, the joins get applied starting at the root table and moving down to all of the tables included in the search. That is, joins from Sales to Products to Departments \(Join 1 and Join 2\) will be used.
+Joins are applied from the root table of the worksheet down to the lowest leaf table involved in the search. If the worksheet includes all of the tables in the diagram, but when doing a search we choose only columns from Products and Departments, the joins get applied starting at the root table and moving down to all of the tables included in the search. That is, joins from Sales to Products to Departments (Join 1 and Join 2) will be used.
 
 ## Example 2: Progressive join with tables from different branches
 
@@ -46,7 +46,7 @@ Joins are applied from the root table of the worksheet, moving down each branch,
 If any of the tables in ThoughtSpot have level security applied to them, the joins used in your worksheet will be affected like this:
 
 -   If the row level security is applied only outside the scope of the worksheet schema, the join behavior is the same as when there is no row level security in the system.
--   If the worksheet contains even a single table with row level security, non-progressive joins \(**Apply all joins**\) will be used if the join path includes the table with row level security. Remember that the join path begins at the root table and moves down to each of the leaf tables included in the search. So a table with row level security may occur in the join path even if its columns are not included in the search.
+-   If the worksheet contains even a single table with row level security, non-progressive joins (**Apply all joins**) will be used if the join path includes the table with row level security. Remember that the join path begins at the root table and moves down to each of the leaf tables included in the search. So a table with row level security may occur in the join path even if its columns are not included in the search.
 
 ## Example 3: Progressive joins when a table outside of the join path has row level security
 

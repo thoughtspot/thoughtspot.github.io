@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
  Rule-Based Row Level Security is the preferred way to protect your data so that users see only those rows they are allowed to see based on their group membership.
 
-Beginning in ThoughtSpot version 3.3, you can set row level security directly in the ThoughtSpot application. In past versions, you had to use the security file \(see [About Legacy Row Level Security](about_legacy_row_security.html#)\). If you are setting up row level security for the first time, use the method shown in this section.
+Beginning in ThoughtSpot version 3.3, you can set row level security directly in the ThoughtSpot application. In past versions, you had to use the security file (see [About Legacy Row Level Security](about_legacy_row_security.html#)). If you are setting up row level security for the first time, use the method shown in this section.
 
 ## How Rule-Based Row Level Security works
 
@@ -16,7 +16,7 @@ Row level security works at the group level, not the individual user level.
 
 By default, all groups can see all rows for any table they can view. You can limit the rows a group can see by setting rules based on the data values contained in one or more columns. The row level security rules you define on a table also apply to any worksheets and pinboards based on that table.
 
-For each data source \(table or imported data\), you will define one or more rules that govern which groups can see which data. The rules take the form of an expression which is evaluated for each row and group combination, to decide if that group can see that row. If the expression evaluates to "true", for a particular group, they will be able to see that row.
+For each data source (table or imported data), you will define one or more rules that govern which groups can see which data. The rules take the form of an expression which is evaluated for each row and group combination, to decide if that group can see that row. If the expression evaluates to "true", for a particular group, they will be able to see that row.
 
 ## Row level security operators and functions
 

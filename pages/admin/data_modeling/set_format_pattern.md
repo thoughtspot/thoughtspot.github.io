@@ -12,7 +12,7 @@ You can use any of the supported date formats listed in the [Date and time forma
 
 -   MM/dd/yyyy
 
--   MMM \(for abbreviated month format\)
+-   MMM (for abbreviated month format)
 -   DD/mm/yyyy
 
 -   MM/dd/yyyy HH:mm

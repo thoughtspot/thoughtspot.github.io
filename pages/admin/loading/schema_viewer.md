@@ -25,7 +25,7 @@ You can use the Schema Viewer to find out information like:
 -   What is the relationship between two tables?
 -   What tables make up this worksheet, and how are they joined?
 
-The schema viewer shows joins between tables, join directionality, and join type \(whether they are Foreign Key \> Primary Key, relationship joins, or joins defined by users through the web interface\). Use the **Table** list to find a specific table or worksheet.
+The schema viewer shows joins between tables, join directionality, and join type (whether they are Foreign Key \> Primary Key, relationship joins, or joins defined by users through the web interface). Use the **Table** list to find a specific table or worksheet.
 
 ## Worksheet view
 

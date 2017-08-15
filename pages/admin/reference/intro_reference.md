@@ -20,9 +20,9 @@ Included in this guide are:
 -   **[TQL reference](../../admin/reference/sql_cli_commands.html)**  
 TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.
 -   **[ThoughtSpot Loader flag reference](../../admin/reference/data_importer_ref.html)**  
-For recurring data loads and for scripting loads, use the ThoughtSpot Loader \(tsload\). This reference section lists all the flags that can be used to modify the behavior of tsload.
+For recurring data loads and for scripting loads, use the ThoughtSpot Loader (tsload). This reference section lists all the flags that can be used to modify the behavior of tsload.
 -   **[tscli --adv command reference](../../admin/reference/tscli_command_ref.html)**  
-The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots \(backups\) of data, apply updates, stop and start the services, and view information about the system.
+The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system.
 -   **[Formula reference](../../admin/reference/formula_reference.html)**  
 ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.
 -   **[Date and time formats reference](../../admin/reference/date_formats_for_loading.html)**  

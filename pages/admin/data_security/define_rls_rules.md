@@ -24,6 +24,6 @@ To define a row level security rule:
 4.   Use the suggestions to build a valid expression. When the expression is valid, you'll see a green indicator at the bottom of the Rule Builder. As you type, you'll see suggestions for formula syntax, variables, and column names. Using these suggestions can make defining an expression easier, particularly when it comes to specific syntax, like enclosing parameters in parenthesis. And if you can't remember the exact column name or variable you want to use, the suggestions can help.
 5.   Click **Save**.
 6.   The rule you created will be shown in the list of rules. Click on its name to view or edit the rule. You can also add more rules by clicking **+ Add**.
-7.   To test your rule, create a search that includes the column\(s\) you used in your expression, save it to a pinboard, and share it with all users. Log in as users in different groups, and make sure they are seeing the appropriate rows in the pinboard you created.
+7.   To test your rule, create a search that includes the column(s) you used in your expression, save it to a pinboard, and share it with all users. Log in as users in different groups, and make sure they are seeing the appropriate rows in the pinboard you created.
 
 **Parent topic:** [About Rule-Based Row Level Security](../../admin/data_security/new_row_level_security.html)

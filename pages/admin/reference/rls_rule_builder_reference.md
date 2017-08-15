@@ -18,7 +18,7 @@ These functions can be used to convert data from one data type to another. Conve
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|to\_bool|Returns the input as a boolean \(true or false\).| -   `to_bool (0) = false`
+|to\_bool|Returns the input as a boolean (true or false).| -   `to_bool (0) = false`
 
  |
 |to\_double|Returns the input as a double.| -   `to_double ('3.14') = 3.14`
@@ -43,15 +43,15 @@ These functions can be used to convert data from one data type to another. Conve
 |date|Returns the date portion of a given date.| -   `date (home visit)`
 
  |
-|day|Returns the number \(1-31\) of the day for the given date.| -   `day (01/15/2014) = 15`
+|day|Returns the number (1-31) of the day for the given date.| -   `day (01/15/2014) = 15`
 -   `day (date ordered)`
 
  |
-|day\_number\_of\_week|Returns the number \(1-7\) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
+|day\_number\_of\_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
 -   `day_number_of_week (shipped)`
 
  |
-|day\_number\_of\_year|Returns the number \(1-366\) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
+|day\_number\_of\_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
 -   `day_number_of_year (invoiced)`
 
  |
@@ -78,7 +78,7 @@ These functions can be used to convert data from one data type to another. Conve
 -   `month (date ordered)`
 
  |
-|month\_number|Returns the number \(1-12\) of the month for the given date.| -   `month_number (09/20/2014) = 9`
+|month\_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
 -   `month_number (purchased)`
 
  |
@@ -169,7 +169,7 @@ These functions can be used with text and numeric data types.
 -   `acos (cos-satellite-angle)`
 
  |
-|asin|Returns the inverse sine \(specified in degrees\).| -   `asin (0.5) = 30`
+|asin|Returns the inverse sine (specified in degrees).| -   `asin (0.5) = 30`
 -   `asin (sin-satellite-angle)`
 
  |
@@ -189,7 +189,7 @@ These functions can be used with text and numeric data types.
 -   `ceil (growth rate)`
 
  |
-|cos|Returns the cosine of an angle \(specified in degrees\).| -   `cos (63) = 0.45`
+|cos|Returns the cosine of an angle (specified in degrees).| -   `cos (63) = 0.45`
 -   `cos (beam angle)`
 
  |
@@ -197,7 +197,7 @@ These functions can be used with text and numeric data types.
 -   `cube (length)`
 
  |
-|exp|Returns Euler's number \(~2.718\) raised to a power.| -   `exp (2) = 7.38905609893`
+|exp|Returns Euler's number (~2.718) raised to a power.| -   `exp (2) = 7.38905609893`
 -   `exp (growth)`
 
  |
@@ -225,7 +225,7 @@ These functions can be used with text and numeric data types.
 -   `log10 (volume)`
 
  |
-|log2|Returns the logarithm with base 2 \(binary logarithm\).| -   `log2 (32) = 5`
+|log2|Returns the logarithm with base 2 (binary logarithm).| -   `log2 (32) = 5`
 -   `log2 (volume)`
 
  |
@@ -241,7 +241,7 @@ These functions can be used with text and numeric data types.
 -   `random ( )`
 
  |
-|round|Returns the first number rounded to the second number \(the default is 1\).| -   `round (35.65, 10) = 40`
+|round|Returns the first number rounded to the second number (the default is 1).| -   `round (35.65, 10) = 40`
 -   `round (battingavg, 100)`
 
  |
@@ -249,7 +249,7 @@ These functions can be used with text and numeric data types.
 -   `sign (growth rate)`
 
  |
-|sin|Returns the sine of an angle \(specified in degrees\).| -   `sin (35) = 0.57`
+|sin|Returns the sine of an angle (specified in degrees).| -   `sin (35) = 0.57`
 -   `sin (beam angle)`
 
  |
@@ -265,7 +265,7 @@ These functions can be used with text and numeric data types.
 -   `sqrt (area)`
 
  |
-|tan|Returns the tangent of an angle \(specified in degrees\).| -   `tan (35) = 0.7`
+|tan|Returns the tangent of an angle (specified in degrees).| -   `tan (35) = 0.7`
 -   `tan (beam angle)`
 
  |
@@ -308,10 +308,10 @@ These functions can be used with text and numeric data types.
 |strlen|Returns the length of the text.| -   `strlen ('smith') = 5`
 
  |
-|strpos|Returns the numeric position \(starting from 0\) of the first occurrence of the second string in the first string, or -1 if not found.| -   `strpos ('haystack_with_needles', 'needle') = 14`
+|strpos|Returns the numeric position (starting from 0) of the first occurrence of the second string in the first string, or -1 if not found.| -   `strpos ('haystack_with_needles', 'needle') = 14`
 
  |
-|substr|Returns the portion of the given string, beginning at the location specified \(starting from 0\), and of the given length.| -   `substr ('persnickety', 3, 7) = 'snicket'`
+|substr|Returns the portion of the given string, beginning at the location specified (starting from 0), and of the given length.| -   `substr ('persnickety', 3, 7) = 'snicket'`
 
  |
 

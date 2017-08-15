@@ -51,10 +51,10 @@ If you want to change any of the settings that cannot be modified in a worksheet
 You can change the text that is shown for the column names in ThoughtSpot to make the names more meaningful to users. The column name is what they will type to add that column to their search.
 -   **[Add a column description](../../admin/data_modeling/change_column_description.html)**  
 You can provide a description for a specific column, to provide additional information for users about the data it contains.
--   **[Change the column type \(ATTRIBUTE or MEASURE\)](../../admin/data_modeling/change_column_type.html)**  
+-   **[Change the column type (ATTRIBUTE or MEASURE)](../../admin/data_modeling/change_column_type.html)**  
 Columns have a **Column Type** based on the kind of data they store. This is set automatically upon defining the table, but in some cases, you may want to change the type.
 -   **[Change the additive setting for a column](../../admin/data_modeling/change_column_additive.html)**  
-Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** \(such as age\). You can allow aggregations on the values by changing the value of the **Additive** setting.
+Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** (such as age). You can allow aggregations on the values by changing the value of the **Additive** setting.
 -   **[Change the aggregation setting for a column](../../admin/data_modeling/change_aggreg_type.html)**  
 All types of aggregations can be performed on **MEASURE** columns, and some aggregations can be done on **ATTRIBUTE** columns. You can change the default aggregation type to make combining data more intuitive and faster.
 -   **[Hide a column](../../admin/data_modeling/change_column_visibility.html)**  

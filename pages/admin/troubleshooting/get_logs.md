@@ -36,7 +36,7 @@ There are two ways to get logs:
 
     -   `all` collects all of the logs listed from the system and the ThoughtSpot application.
     -   `system` collects all system logs, e.g. syslog, upstart, mail logs, etc.
-    -   `ts` collects all logs from the ThoughtSpot application. This includes falcon, sage, orion core \(cluster management\), etc.
+    -   `ts` collects all logs from the ThoughtSpot application. This includes falcon, sage, orion core (cluster management), etc.
     -   `orion` collects all orion logs including cluster management, hdfs, zookeeper, etc.
     Detailed syntax and options are listed in the [tscli command reference](../reference/tscli_command_ref.html#).
 
@@ -45,7 +45,7 @@ There are two ways to get logs:
 
 Here are some examples of usage for the command `tscli logs collect`:
 
-To collect all logs from the past day to the default location \(`/tmp/logs.tar.gz`\):
+To collect all logs from the past day to the default location (`/tmp/logs.tar.gz`):
 
 ```
 $ tscli logs collect --include all --since 1d
@@ -71,13 +71,13 @@ This command collects logs from a specific time window:
 $ tscli logs collect --include system,orion --from 20150520-12:00:00 --to 20150522-12:30:00
 ```
 
-Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find\(1\) command. Pass all the entries in `--include` starting with `/` to find\(1\), and all entries in `--exclude` which are not selectors to find\(1\) using the `-not -path` flag.
+Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag.
 
 ```
 $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --since 2h
 ```
 
-The above command collects all system and all orion logs, but excludes hadoop \(hdfs\) and zookeeper logs.
+The above command collects all system and all orion logs, but excludes hadoop (hdfs) and zookeeper logs.
 
 -   **[Upload logs to ThoughtSpot Support](../../admin/troubleshooting/upload_logs_egnyte.html)**  
 ThoughtSpot Support uses a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.

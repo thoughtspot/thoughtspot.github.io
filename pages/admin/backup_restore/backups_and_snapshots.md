@@ -14,7 +14,7 @@ CAUTION:
 
 You should never disable the periodic snapshot system as backups rely on it. For example, if you have disabled the periodic snapshots system and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together.
 
-Backups are usually stored on a [NAS \(network attached storage\) file system](../setup/NAS_mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 5 GB of extra space beyond the backup itself. So, make sure you have enough disk space before backing up.
+Backups are usually stored on a [NAS (network attached storage) file system](../setup/NAS_mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 5 GB of extra space beyond the backup itself. So, make sure you have enough disk space before backing up.
 
 ## Validate your backup system
 
@@ -25,6 +25,6 @@ You can create a backup using one of three modes, full, lightweight or dataless.
 -   **[Create a manual backup](../../admin/backup_restore/take_backup.html)**  
 Use this procedure when you want to manually create a backup. If you would like to restore from a backup, contact ThoughtSpot Support.
 -   **[Configure periodic backups](../../admin/backup_restore/configure_backup.html)**  
-You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods \(first-in-first-out\), and output location for a periodic backup.
+You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
 **Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)

@@ -10,7 +10,7 @@ After downloading the model file, you'll make changes to the settings using this
 
 You can edit any of the values in the model file, except for those where the words **DoNotModify** appear below the column header. To make changes in the model file:
 
-1.   Open the model file you downloaded \(model.xls\) in Excel, vi/vim, or a text editor.
+1.   Open the model file you downloaded (model.xls) in Excel, vi/vim, or a text editor.
     -   If you are using Excel, you may see a warning message. Click **Yes** to proceed.
 
          ![](../../images/warning_open_model_excel.png)

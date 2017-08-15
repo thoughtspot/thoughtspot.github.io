@@ -12,9 +12,9 @@ A load balancer is needed in front of a server group in order to direct traffic 
 
 The load balancer is an appliance in your infrastructure that routes traffic automatically to nodes to provide failover. You can also place a load balancer or proxy in front of the ThoughtSpot appliance if you'd like external network users to access the system.
 
-The best way to load balance across all ThoughtSpot nodes in a cluster is to map one domain name \(FQDN\) to all the IPs in the cluster in a round robin fashion.
+The best way to load balance across all ThoughtSpot nodes in a cluster is to map one domain name (FQDN) to all the IPs in the cluster in a round robin fashion.
 
-For example, if you want to use a DNS server based load balancing, then you can define multiple "A" resource records \(RR\) for the same name.
+For example, if you want to use a DNS server based load balancing, then you can define multiple "A" resource records (RR) for the same name.
 
 Below is an example of how you could set that up
 
@@ -31,7 +31,7 @@ The example indicates that IP addresses for the domain thoughtspot.customer.com 
 
 Session Affinity refers to directing requests to the same application server for the time it takes to complete a task.
 
-In order for session affinity to work on ThoughtSpot, HTTPS \(an SSL certificate\) has to be installed on the load balancer level. If it is installed outside of the load balancer, session affinity may not occur and the ThoughtSpot system will fail.
+In order for session affinity to work on ThoughtSpot, HTTPS (an SSL certificate) has to be installed on the load balancer level. If it is installed outside of the load balancer, session affinity may not occur and the ThoughtSpot system will fail.
 
 ## Web proxies
 

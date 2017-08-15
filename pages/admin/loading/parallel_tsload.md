@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 If you have a very large data file that takes a long time to load, you can reduce the load time by splitting it up into multiple files and loading them in parallel using multiple invocations of tsload.
 
-If the size of any of your data files is greater than 50 million rows, running tsload in parallel can reduce the load time significantly. First, you'll split up your large data file into multiple smaller files. Then [create a script to load the files](load_with_script.html#). You will make your script multi-threaded by invoking multiple loader threads \(between 1 and 5 are recommended\).
+If the size of any of your data files is greater than 50 million rows, running tsload in parallel can reduce the load time significantly. First, you'll split up your large data file into multiple smaller files. Then [create a script to load the files](load_with_script.html#). You will make your script multi-threaded by invoking multiple loader threads (between 1 and 5 are recommended).
 
 Stage the data files in a location accessible to the node on which you'll run the script. Usually you'll use an [NAS mounted file system](../setup/NAS_mount.html#). Then run the script to load the files.
 

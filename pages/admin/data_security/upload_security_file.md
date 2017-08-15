@@ -20,7 +20,7 @@ To upload the security file:
 
     ![](../../images/security_fie_upload.png)
 
-    If you receive an error message upon uploading the file, check that it does not include any multi-byte characters \(i.e. Japanese or other multi-byte language characters\). If it does, you'll need to download the file again and make your edits using vi or vim.
+    If you receive an error message upon uploading the file, check that it does not include any multi-byte characters (i.e. Japanese or other multi-byte language characters). If it does, you'll need to download the file again and make your edits using vi or vim.
 
     After the file is uploaded, ThoughtSpot is updated and the row level security changes are applied.
 

@@ -10,7 +10,7 @@ Certain attribute columns that contain location data can be used to create GeoMa
 
 You can designate a column as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
 
-Columns that can be designated as "Geo" columns need to contain text \(VARCHAR\) data unless they contain latitude/longitude data. Latitude and longitude columns can contain numeric data \(DOUBLE\) or text.
+Columns that can be designated as "Geo" columns need to contain text (VARCHAR) data unless they contain latitude/longitude data. Latitude and longitude columns can contain numeric data (DOUBLE) or text.
 
 If you are using a column with the data type DOUBLE for latitude and longitude, you will also need to change the following settings for those columns:
 
@@ -60,7 +60,7 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
     -   west midlands
  |
 
-3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type \(DOUBLE\), make these changes for those columns:
+3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
     1.   Change the **Type** or **ColumnType** to ATTRIBUTE.
     2.   Change **Additive** to NO/FALSE.
 4.   Save your changes.

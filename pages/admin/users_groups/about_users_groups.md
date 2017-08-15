@@ -20,9 +20,9 @@ There is a default group called **All**, which includes every user in ThoughtSpo
 
 Privileges determine what kinds of actions users are allowed to do. Plan your groups so that you can use them to assign a common set of privileges to multiple users. Privileges are set at the group level. For more information on the privileges you can assign and how to assign them, see [About privileges](about_privileges.html#).
 
-## Nested groups \(groups within groups\)
+## Nested groups (groups within groups)
 
-You can also have a hierarchy of groups. That is, groups can belong to \(i.e. be children of\) other groups. When using group hierarchies, permissions are inherited from the parent group. So if you're a member of a sub-group, you would automatically have the privileges of the parent group.
+You can also have a hierarchy of groups. That is, groups can belong to (i.e. be children of) other groups. When using group hierarchies, permissions are inherited from the parent group. So if you're a member of a sub-group, you would automatically have the privileges of the parent group.
 
 -   **[About privileges](../../admin/users_groups/about_privileges.html)**  
 You can assign privileges at the group level. Then you create users and assign them to groups. This is how you grant users access to different capabilities in ThoughtSpot.

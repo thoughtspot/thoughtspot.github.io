@@ -6,11 +6,11 @@ last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** \(such as age\). You can allow aggregations on the values by changing the value of the **Additive** setting.
+Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** (such as age). You can allow aggregations on the values by changing the value of the **Additive** setting.
 
 The setting **Additive** only applies to columns that have both:
 
--   A numeric data type \(FLOAT, DOUBLE or INTEGER\) or a date data type \(DATE, DATETIME, TIMESTAMP, or TIME\).
+-   A numeric data type (FLOAT, DOUBLE or INTEGER) or a date data type (DATE, DATETIME, TIMESTAMP, or TIME).
 -   The type **ATTRIBUTE** in the modeling file.
 
 When an result is returned from a search, you also get a list of options for each column on the left side of the screen. For numeric columns with the **Additive** setting of **NO**, the count listing includes:

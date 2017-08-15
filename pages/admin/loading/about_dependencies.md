@@ -18,6 +18,6 @@ You can also [Check dependencies in the browser](check_dependency_ux.html#) befo
 -   **[Delete a data source from the browser](../../admin/loading/delete_data_source_UX.html)**  
 You can delete data sources from the browser, as long as they were not created by an administrator through tsload or Data Connect.
 -   **[Delete or change a table in TQL](../../admin/loading/check_dependencies_tql.html)**  
-Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line \(TQL\) that modify or delete tables warns of dependencies.
+Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line (TQL) that modify or delete tables warns of dependencies.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)

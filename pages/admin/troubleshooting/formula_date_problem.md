@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 When working with formulas, keep in mind the data types they return. You may occasionally see unexpected results, or even be unable to open a saved answer, due to problems with data types and formulas.
 
-In this scenario, "data type" refers the data type as defined in the column definition when creating the schema \(INT, TIMESTAMP, VARCHAR, etc.\).
+In this scenario, "data type" refers the data type as defined in the column definition when creating the schema (INT, TIMESTAMP, VARCHAR, etc.).
 
 When you define a formula, both the data type it returns is set automatically. This can lead to problems, if you build another formula that uses the output of the first formula as input. This can be hard to understand, so an example will be helpful.
 
@@ -18,7 +18,7 @@ Suppose you have created a worksheet that contains a formula called "weekday" de
 day_of_week(date)
 ```
 
-The output of that formula is the day of the week \(Monday, Tuesday, etc.\) returned as a text string \(VARCHAR, ATTRIBUTE\).
+The output of that formula is the day of the week (Monday, Tuesday, etc.) returned as a text string (VARCHAR, ATTRIBUTE).
 
 Then suppose you create an answer using the worksheet as a source. And in the answer, you create another formula on top of the formula column in the worksheet. This formula is supposed to return the day of the week that is two days after the given day of the week:
 
