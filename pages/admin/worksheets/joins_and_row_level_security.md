@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About the worksheet join rule with Legacy Row Level Security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About the worksheet join rule with Legacy Row Level Security
-
 When working with worksheets and Legacy Row Level Security, you need to understand how joins are applied. This section gives some examples to explain the interaction between these two concepts.
 
 This section applies only to the older [Legacy Row Level Security](../data_security/about_legacy_row_security.html#). If you are using the newer, [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) \(recommended\), see [About the worksheet join rule with Rule-Based Row Level Security](joins_and_RLS_rule_based.html#). If your schema includes any [chasm traps](../loading/chasm_trap.html#), you must use the newer Rule-Based Row Level Security.
@@ -18,7 +16,7 @@ To understand how the worksheet join rule is applied, you first need to understa
 
 Suppose you created a worksheet with a schema like the example in the diagram:
 
- ![](../../images/joins_and_row_level_security.png "Example of a worksheet data schema") 
+ ![](../../images/joins_and_row_level_security.png "Example of a worksheet data schema")
 
 Imagine your schema as a tree, with a root, branches, and leaves. In this diagram, the root table is the fact table Sales. The root table is typically a fact table. It is the table that does not have a foreign key pointing to it. So if you draw out the schema like the diagram, the tables at the bottom can be referred to as the "leaves" in the schema. If the worksheet only included the tables Products, Departments, and Suppliers, then the root table would be the Products table. Similarly, if the worksheet only included Inventory and Warehouses, the root table would be Inventory.
 
@@ -63,4 +61,3 @@ Assume now that the table Products has row level security applied, so that buyer
 If you have a worksheet that includes a [chasm trap](../loading/chasm_trap.html#), you cannot use the Legacy Row Level Security. You must migrate your row level security settings to use [Rule-Based Row Level Security](../data_security/new_row_level_security.html#).
 
 **Parent topic:** [How the worksheet join rule works](../../admin/worksheets/progressive_joins.html)
-

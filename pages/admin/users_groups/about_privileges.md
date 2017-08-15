@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About privileges]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About privileges
-
 You can assign privileges at the group level. Then you create users and assign them to groups. This is how you grant users access to different capabilities in ThoughtSpot.
 
 Each group includes a set of privileges for its users. Good planning when creating groups and assigning privileges will pay off in ease of administration and a better search experience. The privileges a group has determine the actions that its members are allowed to do. If a user belongs to more than one group, they will have the highest level of the privileges from all the groups they belong to.
@@ -32,4 +30,3 @@ There is a default group called **All**, which includes every user in ThoughtSpo
 Permissions to see and edit tables, worksheets, and pinboards are set when you share them with users and groups, as described in the topic [Data security](../data_security/sharing_security_overview.html#).
 
 **Parent topic:** [Manage users, groups, and privileges](../../admin/users_groups/about_users_groups.html)
-

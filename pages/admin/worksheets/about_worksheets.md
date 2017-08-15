@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Simplify searching with worksheets]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Simplify searching with worksheets
-
 After modeling the data, create worksheets to make searching easier. A worksheet groups multiple related tables together in a logical way.
 
 Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. You might use a worksheet for these reasons:
@@ -45,4 +43,3 @@ Create a worksheet to make the data easy for users to search. This process inclu
 As long as you have permissions to edit a worksheet, you can always go into it and make changes, such as adding sources and columns, adding or editing formulas, and changing column names.
 -   **[Delete a worksheet or table](../../admin/worksheets/delete_worksheet.html)**  
 When you try to delete a worksheet or table, you'll see a message listing any dependent objects that must be removed first.
-

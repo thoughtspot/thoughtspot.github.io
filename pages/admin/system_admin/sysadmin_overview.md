@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [System administration]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# System administration
-
 System administration includes applying upgrades, backing up and restoring the cluster, snapshotting, and adding or removing nodes.
 
 ## Administration tools
@@ -26,4 +24,3 @@ Use theses steps to generate a log bundle, which you can then send to ThoughtSpo
 Alternately, you can easily send log files directly to your administrator with a single click.
 -   **[Set up recording for Replay Search](../../admin/system_admin/configure_record_search.html)**  
 Only administrator users can record the **Replay Search** using the ThoughtSpot application. You can use the recording to create training for your users on how to search your own data.
-

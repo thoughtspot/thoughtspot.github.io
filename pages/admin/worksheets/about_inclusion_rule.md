@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [How the inclusion rule works]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# How the inclusion rule works
-
 Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition.
 
 In the case where some of the rows in the fact table do not have a match in one of the dimension tables, the inclusion rule determines whether or not they will be shown. Because of this, the inclusion rule can affect the number of rows the worksheet will contain. Setting the inclusion rule differently will affect the number of rows in the worksheet if some of the values in a table are empty \(or NULL\) or if some primary key column values in a fact table do not have a match to a foreign key in the dimension table.
@@ -32,4 +30,3 @@ A typical sales fact table contains a column with the employee ID of the person 
 Sometimes a sale has been made directly or through a reseller, without involving a sales person. In this case, the employee ID value for the sale will be empty in the fact table. If you wanted the worksheet to include all sales, regardless of whether or not they were associated with a sales person, you would choose **Include all rows \(Left Outer Join\)**. If you only want the worksheet to contain sales made by employees, you would choose **Exclude empty rows \(Inner Join\)**.
 
 **Parent topic:** [Create a new worksheet](../../admin/worksheets/worksheet_create.html)
-

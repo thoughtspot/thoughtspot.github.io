@@ -1,22 +1,20 @@
 ---
-title: [elephant]
+title: [Create a new worksheet]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Create a new worksheet
-
 Create a worksheet to make the data easy for users to search. This process includes adding a new worksheet, after which you will choose the data sources to include in it.
 
 To create a new worksheet:
 
-1.   Click on **Data**, on the top navigation bar. 
+1.   Click on **Data**, on the top navigation bar.
 
-     ![](../../shared/conrefs/../../images/data_icon.png "Data") 
+     ![](../../shared/conrefs/../../images/data_icon.png "Data")
 
-2.   Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**. 
+2.   Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**.
 
     ![](../../shared/conrefs/../../images/worksheet_create_icon.png)
 
@@ -31,4 +29,3 @@ Use the worksheet join rule to specify when to apply joins when a search is done
 You can define formulas and use them to create derived columns in worksheets. You create formulas by combining standard functions and operators, column names, and constant values.
 
 **Parent topic:** [Simplify searching with worksheets](../../admin/worksheets/about_worksheets.html)
-

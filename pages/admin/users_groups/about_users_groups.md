@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Manage users, groups, and privileges]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Manage users, groups, and privileges
-
 Before people can log in and use ThoughtSpot, you need to create a username, a password, and a membership in one or more groups for them. Creating groups and assigning users to them makes privilege management easier.
 
 ## Ways of managing users and groups
@@ -40,4 +38,3 @@ You can add multiple users to a group using one button.
 After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password.
 -   **[Forgotten password](../../admin/users_groups/forgot_password.html)**  
 If a user forgets their password, you can reset it by editing the user.
-

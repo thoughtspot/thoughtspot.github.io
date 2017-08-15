@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About the worksheet join rule with Rule-Based Row Level Security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About the worksheet join rule with Rule-Based Row Level Security
-
 When working with worksheets and row level security, you need to understand how joins are applied. This is especially important if your schema includes any chasm traps.
 
 This section applies only to the newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#). If you are using the older, [Legacy Row Level Security](../data_security/about_legacy_row_security.html#) \(not recommended\), see [About the worksheet join rule with Legacy Row Level Security](joins_and_row_level_security.html#).
@@ -29,4 +27,3 @@ For any worksheets that include a chasm trap, you need to use the new Rule-Based
 Note also that for chasm trap worksheets, progressive and non-progressive joins do not apply. There is an entirely different methodology for how worksheet joins on a chasm trap schema work with row level security. So you can safely ignore that setting.
 
 **Parent topic:** [How the worksheet join rule works](../../admin/worksheets/progressive_joins.html)
-

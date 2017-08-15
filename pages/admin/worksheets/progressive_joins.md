@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [ How the worksheet join rule works]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# How the worksheet join rule works
-
 Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added \(recommended\), or apply all joins to every search.
 
 Often, a worksheet includes several dimension tables and a fact table. With progressive joins, if your search only includes terms from the fact table, you'll see all of the rows that satisfy your search. But as you add terms from dimension tables, the total number of rows shown may be reduced, as the joins to each dimension table are applied.
@@ -27,4 +25,3 @@ When working with worksheets and Legacy Row Level Security, you need to understa
 You have the ability to join an aggregated worksheet with a table.
 
 **Parent topic:** [Create a new worksheet](../../admin/worksheets/worksheet_create.html)
-

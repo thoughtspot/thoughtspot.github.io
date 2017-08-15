@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Clear the browser cache]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Clear the browser cache
-
 You might occasionally see unexpected behavior that is due to the Web browser caching information from ThoughtSpot. In this case, clearing the browser cache and reloading the page should resolve the problem.
 
 You can usually resolve these situations by clearing the browser cache:
@@ -23,14 +21,13 @@ To resolve any of these situations, clear the browser cache:
     chrome://settings/clearBrowserData
     ```
 
-     ![](../../images/chrome_clear_cache.png "Clear the browser cache") 
+     ![](../../images/chrome_clear_cache.png "Clear the browser cache")
 
-2.   Click **Clear browsing data**. This is the name of the button on Chrome. The name may vary slightly on other browsers. 
+2.   Click **Clear browsing data**. This is the name of the button on Chrome. The name may vary slightly on other browsers.
 3.   Reload the page. For example, on Chrome you would click the **Reload** icon:
 
-     ![](../../images/browser_reload.png "Reload the page") 
+     ![](../../images/browser_reload.png "Reload the page")
 
-4.   Now the problem should be fixed, and the page will appear as expected. 
+4.   Now the problem should be fixed, and the page will appear as expected.
 
 **Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)
-

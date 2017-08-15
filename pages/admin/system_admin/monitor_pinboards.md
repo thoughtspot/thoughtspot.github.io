@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [System monitoring]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# System monitoring
-
 System monitoring tools in ThoughtSpot include the Control Center, system log files and out-of-the-box system monitoring pinboards.
 
 ## System monitoring notifications
@@ -18,14 +16,14 @@ You can configure ThoughtSpot to send emails to addresses you specify with monit
 
 The ThoughtSpot application includes a System Health Center, for easy monitoring of usage and cluster health, including alerts. You can view the System Health Center by clicking on the **Admin** icon and then clicking **System Health**.
 
- ![](../../images/control_center_show.png "Getting to the System Health Center") 
+ ![](../../images/control_center_show.png "Getting to the System Health Center")
 
 The System Health Center shows the following information:
 
 The **Overview** section shows a summary of overall cluster status, usage and capacity information, configuration changes, and critical alerts.
 
  ![](../../images/control_center_overview.png "Partial view of the
-       System Health Center: Overview") 
+       System Health Center: Overview")
 
 The **Data** section shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, etc.
 
@@ -54,7 +52,7 @@ The status columns have these possible values and meanings:
 | |CREATING INDEX|The index is being created.|
 | |UPDATING INDEX|A change has been made to indexing or the data, and the index is being updated to reflect it.|
 
- ![](../../images/control_center_data.png "Partial view of the System Health Center: Data") 
+ ![](../../images/control_center_data.png "Partial view of the System Health Center: Data")
 
 The **Cluster Manager** section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.
 
@@ -62,13 +60,13 @@ The **Cluster Manager** section show detailed information about a cluster includ
 
 The **Events and Alerts** section shows notifications, alerts, and an audit trail of cluster configuration changes..
 
- ![](../../images/contro_center_configuration_events.png "Partial view of the System Health Center: Events and Alerts") 
+ ![](../../images/contro_center_configuration_events.png "Partial view of the System Health Center: Events and Alerts")
 
 ## System monitoring pinboards
 
 There are several system monitoring pinboards in ThoughtSpot that include information about the system status and resource usage. The information in these pinboard is updated hourly from an internal database that collects monitoring statistics.
 
- ![](../../images/resource_usage_pinboard.png "Example of a system monitoring pinboard") 
+ ![](../../images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
 The monitoring pinboards can only be viewed by users with the administrator privilege. They are based on worksheets, which administrators can view, but not modify. The underlying tables are protected system tables that cannot be accessed directly. However, you can create new monitoring reports from the worksheets.
 
@@ -123,4 +121,3 @@ Many of the administration commands output logging information to log files. The
 The Space Utilization chart is one of the available charts for you to use when checking the cluster overview.
 
 **Parent topic:** [System administration](../../admin/system_admin/sysadmin_overview.html)
-

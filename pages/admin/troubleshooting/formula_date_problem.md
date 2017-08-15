@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Cannot open a saved answer that contains a formula]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Cannot open a saved answer that contains a formula
-
 When working with formulas, keep in mind the data types they return. You may occasionally see unexpected results, or even be unable to open a saved answer, due to problems with data types and formulas.
 
 In this scenario, "data type" refers the data type as defined in the column definition when creating the schema \(INT, TIMESTAMP, VARCHAR, etc.\).
@@ -36,18 +34,17 @@ You must change the underlying worksheet column to use day\_number\_of\_week ins
 
 Here are the steps to resolve an issue like this:
 
-1.   Open the underlying worksheet that contains the formula whose output data type you need to change. 
-2.   Click on the formula name to edit the formula. 
+1.   Open the underlying worksheet that contains the formula whose output data type you need to change.
+2.   Click on the formula name to edit the formula.
 
-     ![](../../images/edit_formula.png "Edit the formula") 
+     ![](../../images/edit_formula.png "Edit the formula")
 
-3.   In the Formula Builder, modify the formula, so that it returns the expected data type. There are data type conversion formulas available to make this easier. To view them and their syntax, open the **Formula Assistant**, and expand the section called **Conversion**. 
+3.   In the Formula Builder, modify the formula, so that it returns the expected data type. There are data type conversion formulas available to make this easier. To view them and their syntax, open the **Formula Assistant**, and expand the section called **Conversion**.
 
-     ![](../../images/modify_formula.png "Changing the formula to return a different data type") 
+     ![](../../images/modify_formula.png "Changing the formula to return a different data type")
 
-4.   Make your changes, and saving the formula by clicking **Save**. 
-5.   Save the worksheet by clicking **Save**. 
-6.   Now you will be able to open the answer that was created on top of the worksheet. 
+4.   Make your changes, and saving the formula by clicking **Save**.
+5.   Save the worksheet by clicking **Save**.
+6.   Now you will be able to open the answer that was created on top of the worksheet.
 
 **Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)
-

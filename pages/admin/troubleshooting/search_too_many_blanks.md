@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Search results contain too many blanks]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Search results contain too many blanks
-
 If you find that your search results contain too many blanks when your data source is a worksheet, there is a simple adjustment you can make to fix this.
 
 If you find that the charts and tables built on a worksheet contain a large number of null values \(which display as \{blank\} in the web browser\), you can fix this by changing the [inclusion rule](../worksheets/about_inclusion_rule.html#) for the worksheet.
@@ -25,4 +23,3 @@ When creating the worksheet, suppose you choose **Include Empty Rows \(Left Oute
 However, in may cases, including all the \{blank\} values could confuse end users. So if you encounter this problem, you can [edit the worksheet, and change the inclusion rule](../worksheets/change_inclusion_rule.html#) to **Exclude Empty Rows \(Inner Join\)**. Now when searching for "store name" and "product name" on the worksheet, users will not be overwhelmed by null values. They'll only see the rows where a particular product has been sold in a particular store.
 
 **Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)
-

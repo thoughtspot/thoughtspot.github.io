@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About troubleshooting]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About troubleshooting
-
 The information here provides very basic troubleshooting.
 
 For more detailed troubleshooting, [Contact ThoughtSpot](../misc/contact.html#).
@@ -30,4 +28,3 @@ You might occasionally see unexpected behavior that is due to the Web browser ca
 Some tables may take an unusually long time to load due to a high data version issue. This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.
 -   **[Search results contain too many blanks](../../admin/troubleshooting/search_too_many_blanks.html)**  
 If you find that your search results contain too many blanks when your data source is a worksheet, there is a simple adjustment you can make to fix this.
-
