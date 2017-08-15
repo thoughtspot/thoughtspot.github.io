@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Schema creation examples]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Schema creation examples
-
 These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line \(TQL\). After the schema is created, you can load data into it with ThoughtSpot Loader.
 
 ## Simple schema creation example
@@ -29,7 +27,7 @@ TQL> CREATE DATABASE tpch;
 
 
 TQL> USE tpch;
- 
+
 
 TQL> CREATE TABLE customer (
 
@@ -72,7 +70,7 @@ The example uses a custom schema called sample\_schema to hold the tables. Becau
 ```
 $ tql
 
- 
+
 TQL> CREATE DATABASE "sample_db";
 
 TQL> USE "sample_db";
@@ -157,4 +155,3 @@ TQL> CREATE TABLE "sample_schema"."lineorder" (
 ```
 
 **Parent topic:** [Build the schema](../../admin/loading/create_schema.html)
-

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Build the schema]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Build the schema
-
 Before you can load data into ThoughtSpot, you must build a database schema to receive it. You will do this by writing a SQL script, which creates the objects in your schema.
 
 Your SQL script can use any SQL statements that are supported in ThoughtSpot SQL Command Line \(TQL\). The TQL syntax is similar to the SQL used in other relational databases, but with some important differences. You'll use DDL \(data definition language\) to create the schema into which you'll load the data. You'll probably want to put all your DDL statements into a text file, which you'll use as a script for creating the schema.
@@ -44,4 +42,3 @@ These examples demonstrate the steps involved in creating a schema using the Tho
 You can run a SQL script to create your database schema through the browser, without having to log in to the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)
-

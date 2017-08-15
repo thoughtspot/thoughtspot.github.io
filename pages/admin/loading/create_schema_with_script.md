@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Write a SQL script to create the schema]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Write a SQL script to create the schema
-
 Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed.
 
 The schema creation script is a text file that contains all the SQL commands to create your schema. Comments should be enclosed in the comment tags /\* and \*/.
@@ -24,24 +22,24 @@ If TQL is run using the flag `--allow_unsafe`, your statements will always execu
 cat safest_script_ever.sql | tql --allow_unsafe
 ```
 
-1.   Open a new file in a text editor. 
-2.   Type in the command to create the database, if it does not already exist: 
+1.   Open a new file in a text editor.
+2.   Type in the command to create the database, if it does not already exist:
 
     ```
     CREATE database <db\_name>;
     ```
 
-3.   Type in the command to specify the database to use: 
+3.   Type in the command to specify the database to use:
 
     ```
     USE database <db\_name>;
     ```
 
-4.   Type in the command to create the schema, if you don't want to use the default schema: 
-5.   Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification \(if any\). 
-6.   At the end of your script, optionally type in the ALTER TABLE statements to add foreign keys to use in joining the tables. 
-7.   Save the file. 
-8.   Run the script using one of these methods: 
+4.   Type in the command to create the schema, if you don't want to use the default schema:
+5.   Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification \(if any\).
+6.   At the end of your script, optionally type in the ALTER TABLE statements to add foreign keys to use in joining the tables.
+7.   Save the file.
+8.   Run the script using one of these methods:
 
     -   [Import a schema \(use the SQL editor\)](upload_sql_script.html#).
     -   [Log in to the shell](../setup/login_console.html#), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
@@ -51,4 +49,3 @@ cat safest_script_ever.sql | tql --allow_unsafe
 
 
 **Parent topic:** [Build the schema](../../admin/loading/create_schema.html)
-

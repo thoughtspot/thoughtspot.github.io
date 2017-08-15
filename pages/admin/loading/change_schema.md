@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Change the schema]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change the schema
-
 After you've created a schema and loaded data, you may find yourself wishing you'd set things up a little differently. You can make changes to the schema, such as changing the primary key, relationships to other tables, and sharding.
 
 Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don't lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them:
@@ -26,4 +24,3 @@ You can change the sharding on a table or remove it altogether \(creating a repl
 You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)
-

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Delete a data source]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Delete a data source
-
 When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
 
 There are two separate ways to delete a data source. Both of these methods will check for dependencies and warn if any are found:
@@ -23,4 +21,3 @@ You can delete data sources from the browser, as long as they were not created b
 Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line \(TQL\) that modify or delete tables warns of dependencies.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)
-

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Sharding]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Sharding
-
 For the best performance, you should split \(or shard\) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.
 
 ## Sharding a fact table
@@ -109,4 +107,3 @@ PARTITION BY HASH (96) KEY ("product_id")
 You can also join two sharded fact tables with different shard keys, otherwise know as non co-sharded tables. It may take a while to join two tables sharded on different keys since a lot of data redistribution is required. Therefore, ThoughtSpot recommends that you use a common shard key for two fact tables.
 
 **Parent topic:** [Plan the schema](../../admin/loading/plan_schema.html)
-

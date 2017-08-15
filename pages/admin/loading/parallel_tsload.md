@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Bulk load files in parallel]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Bulk load files in parallel
-
 If you have a very large data file that takes a long time to load, you can reduce the load time by splitting it up into multiple files and loading them in parallel using multiple invocations of tsload.
 
 If the size of any of your data files is greater than 50 million rows, running tsload in parallel can reduce the load time significantly. First, you'll split up your large data file into multiple smaller files. Then [create a script to load the files](load_with_script.html#). You will make your script multi-threaded by invoking multiple loader threads \(between 1 and 5 are recommended\).
@@ -31,46 +29,46 @@ Here is a sample script you could use the load the data files in parallel:
 pidlist=""
 
 cat day1.csv day2.csv day3.csv day4.csv day5.csv day6.csv | tsload  
---target_database sales --target_table SALES_FACT --max_ignored_rows 10 
---bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d 
---date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited 
---field_separator "|" --null_value "" --enclosing_character "\"" 
+--target_database sales --target_table SALES_FACT --max_ignored_rows 10
+--bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d
+--date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited
+--field_separator "|" --null_value "" --enclosing_character "\""
 --boolean_representation 1_0 &
 
 pidlist="$pidlist $!" &
 
 cat day7.csv day8.csv day9.csv day10.csv day11.csv day12.csv | tsload  
---target_database sales --target_table SALES_FACT --max_ignored_rows 10 
---bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d 
---date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited 
---field_separator "|" --null_value "" --enclosing_character "\"" 
+--target_database sales --target_table SALES_FACT --max_ignored_rows 10
+--bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d
+--date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited
+--field_separator "|" --null_value "" --enclosing_character "\""
 --boolean_representation 1_0 &
 
 pidlist="$pidlist $!" &
 
 cat day13.csv day14.csv day15.csv day16.csv day17.csv day18.csv | tsload  
---target_database sales --target_table SALES_FACT --max_ignored_rows 10 
---bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d 
---date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited 
---field_separator "|" --null_value "" --enclosing_character "\"" 
+--target_database sales --target_table SALES_FACT --max_ignored_rows 10
+--bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d
+--date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited
+--field_separator "|" --null_value "" --enclosing_character "\""
 --boolean_representation 1_0 &
 
 pidlist="$pidlist $!" &
 
 cat day19.csv day20.csv day21.csv day22.csv day23.csv day24.csv | tsload  
---target_database sales --target_table SALES_FACT --max_ignored_rows 10 
---bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d 
---date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited 
---field_separator "|" --null_value "" --enclosing_character "\"" 
+--target_database sales --target_table SALES_FACT --max_ignored_rows 10
+--bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d
+--date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited
+--field_separator "|" --null_value "" --enclosing_character "\""
 --boolean_representation 1_0 &
 
 pidlist="$pidlist $!" &
 
 cat day25.csv day26.csv day27.csv day28.csv day29.csv day30.csv | tsload  
---target_database sales --target_table SALES_FACT --max_ignored_rows 10 
---bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d 
---date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited 
---field_separator "|" --null_value "" --enclosing_character "\"" 
+--target_database sales --target_table SALES_FACT --max_ignored_rows 10
+--bad_records_file ./SALES_FACT.bad --date_format %Y-%m-%d
+--date_time_format "%Y-%m-%d %H:%M:%S" --source_data_format delimited
+--field_separator "|" --null_value "" --enclosing_character "\""
 --boolean_representation 1_0 &
 
 pidlist="$pidlist $!" &
@@ -89,4 +87,3 @@ tail -f master_log.txt
 Constructing your script in this way will execute all the commands in the background, and output to the file `master_log.txt`. You'll see a running status as the commands in the script execute. After the script completes, you can check the log file for detailed information, such as the number of rows that loaded successfully.
 
 **Parent topic:** [Load data with ThoughtSpot Loader](../../admin/loading/load_with_data_importer.html)
-

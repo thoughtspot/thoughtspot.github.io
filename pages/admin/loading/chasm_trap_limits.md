@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Chasm trap limitations]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Chasm trap limitations
-
 If your database schema contains any chasm traps, you may encounter these limitations.
 
 ## Operations that produce an error for chasm traps
@@ -31,4 +29,3 @@ The following behavior is different for chasm traps than for schemas that do not
 In some cases, there is a workaround of saving an answer as a worksheet \(Aggregated Worksheet\). See the ThoughtSpot User Guide for details on how to do this. If you save a chasm trap search as a worksheet, it becomes a materialized view of the answer. Effectively, it is then just a regular table \(no chasm trap\). As such, most of the issues above will not affect searches on the saved worksheet.
 
 **Parent topic:** [Plan the schema](../../admin/loading/plan_schema.html)
-

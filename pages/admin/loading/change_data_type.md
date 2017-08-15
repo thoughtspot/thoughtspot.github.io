@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Change the Data Type of a Column]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change the Data Type of a Column
-
 When you issue the TQL command to convert a column from one data type to another, the conversion is handled automatically. However, you'll need to ensure that any visualizations built on top of the table display correctly.
 
 You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
@@ -16,8 +14,8 @@ When changing a data type in an existing table, be aware that answers and pinboa
 
 To change the data type of a column:
 
-1.   [Connect to the database with the ThoughtSpot SQL Command Line \(TQL\)](connect_sql_cli.html#). 
-2.   Issue the command to change the data type using this syntax: 
+1.   [Connect to the database with the ThoughtSpot SQL Command Line \(TQL\)](connect_sql_cli.html#).
+2.   Issue the command to change the data type using this syntax:
 
     ```
     TQL> ALTER TABLE <table>
@@ -33,4 +31,3 @@ To change the data type of a column:
 
 
 **Parent topic:** [About data type conversion](../../admin/loading/about_data_type_conversion.html)
-

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Constraints]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Constraints
-
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
 
 ## Primary keys
@@ -56,7 +54,7 @@ TQL> CREATE TABLE "wholesale_buys" (
   "order_number" VARCHAR(255),
 
   "date_ordered" DATE,
-  
+
   "expiration_date" DATE,
 
   "supplier" VARCHAR(255),
@@ -64,28 +62,28 @@ TQL> CREATE TABLE "wholesale_buys" (
   "fruit" VARCHAR(255),
 
   "quantity" VARCHAR(255),
-  
+
   "unit_price" DOUBLE
 
   )  PARTITION BY HASH (96) KEY ("fruit");
 
-  
+
 TQL> CREATE TABLE "retail_sales" (
 
   "date_sold" DATE,
 
   "location" VARCHAR(255),
-  
+
   "vendor" VARCHAR(255),
 
   "fruit" VARCHAR(255),
 
   "quantity" VARCHAR(255),
-  
+
   "sell_price" DOUBLE
 
   )  PARTITION BY HASH (96) KEY ("fruit");
-  
+
 
 TQL> ALTER TABLE "wholesale_buys" ADD RELATIONSHIP WITH "retail_sales" AS "wholesale_buys"."fruit" = "retail_sales"."fruit" and ("wholesale_buys"."date_ordered" < "retail_sales"."date_sold" and "retail_sales"."date_sold" < "wholesale_buys"."expiration_date");
 ```
@@ -93,4 +91,3 @@ TQL> ALTER TABLE "wholesale_buys" ADD RELATIONSHIP WITH "retail_sales" AS "whole
 Note that this many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows.
 
 **Parent topic:** [Plan the schema](../../admin/loading/plan_schema.html)
-

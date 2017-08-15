@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About case configuration]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About case configuration
-
 You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display.
 
 Before you load your data, you should consider the type of casing you would like your data to reflect. The case sensitivity for source data strings is preserved in the display. So, the visual display of results is identical to the input case that is loaded.
@@ -19,4 +17,3 @@ It is important to note that string casings aren’t applied globally, but by co
 To take advantage of case configuration, you need to have ThoughtSpot Support enable it on your cluster for you. In addition, title casing should be disabled for string casing to properly work.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)
-

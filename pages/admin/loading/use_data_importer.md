@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Import CSV files with ThoughtSpot Loader]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Import CSV files with ThoughtSpot Loader
-
 Use ThoughtSpot Loader \(tsload\) to load data from a CSV text file into an existing table in ThoughtSpot. tsload accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.
 
 Before importing data, you need to [Build the schema](create_schema.html#).
@@ -18,25 +16,25 @@ tsload supports both full and incremental data loads. For incremental loads, an 
 
 You can integrate tsload into your ETL environment for more automated data loads. Most ETL tools provide the ability to write target data into files and support scripted post-transformation actions that can include loading data into ThoughtSpot. This procedure describes manually loading data, but the tsload commands could be saved as a script:
 
-1.   [Log in to the Linux shell using SSH](../setup/login_console.html#). 
-2.   Change to the directory where your CSV files are staged. 
-3.   Invoke tsload, specifying the appropriate flags and your data source file: 
+1.   [Log in to the Linux shell using SSH](../setup/login_console.html#).
+2.   Change to the directory where your CSV files are staged.
+3.   Invoke tsload, specifying the appropriate flags and your data source file:
 
     ```
-    $ tsload --target_database my\_database 
-           --target_table my\_table --alsologtostderr 
-           --empty_target --source_file my\_file.csv --v 1 
+    $ tsload --target_database my\_database
+           --target_table my\_table --alsologtostderr
+           --empty_target --source_file my\_file.csv --v 1
            --field_separator "separator\_char"
     ```
 
-4.   Repeat the data load for each of your CSV files. 
+4.   Repeat the data load for each of your CSV files.
 
 This example imports the CSV file "ssbm\_customer.csv" into the table CUSTOMER:
 
 ```
-$ tsload --target_database SAMPLE_DB 
+$ tsload --target_database SAMPLE_DB
        --target_table CUSTOMER --alsologtostderr
-       --empty_target --source_file ssbm_customer.csv 
+       --empty_target --source_file ssbm_customer.csv
        --v 1 --field_separator "|"
 ```
 
@@ -46,4 +44,3 @@ $ tsload --target_database SAMPLE_DB
 
 
 [ThoughtSpot Loader flag reference](../reference/data_importer_ref.html#)
-

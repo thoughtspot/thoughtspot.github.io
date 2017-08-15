@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Data types]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Data types
-
 ThoughtSpot supports the common data types. Compare these with the data types you want to load, and do any necessary conversion ahead of loading the data.
 
 ## Supported data types
@@ -98,4 +96,3 @@ These types of data can be designated as geographical data, which enables them t
 **Note:** You cannot upload your own custom boundaries.
 
 **Parent topic:** [Plan the schema](../../admin/loading/plan_schema.html)
-

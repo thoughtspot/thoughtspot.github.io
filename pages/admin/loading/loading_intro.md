@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Load and manage data]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Load and manage data
-
 There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others.
 
 The fastest and easiest way to load a new table is by importing it using the Web browser. This is best for one time data loads of small tables which do not have complex relationships to other tables. This method is limited to tables that are under 50 MB \(megabytes\) in size.
@@ -60,4 +58,3 @@ ThoughtSpot Loader \(tsload\) is a common way to import data. When using tsload,
 When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
 -   **[About the Schema Viewer](../../admin/loading/schema_viewer.html)**  
 There is a schema viewer in ThoughtSpot which lets you see your database schema in the web browser. You can see tables and worksheets and their relationships. The Schema Viewer is interactive, so you can configure it to show just what you want to see.
-
