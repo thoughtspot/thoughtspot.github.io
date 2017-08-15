@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [System security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# System security
-
 ThoughtSpot includes a number of management tools, monitoring applications, and automated processes to support system security. System security includes managing access and privileges, audit logs, security policies, and Linux OS installed package updates.
 
 ## Audit logs
@@ -27,4 +25,3 @@ You can access an audit log of cluster events through tscli. You can also access
 ThoughtSpot has security policies in place to ensure a secure product with each release.
 
 **Parent topic:** [About security](../../admin/data_security/about_security.html)
-

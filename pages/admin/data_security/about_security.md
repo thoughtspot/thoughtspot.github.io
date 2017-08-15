@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About security
-
 This section is an overview of security in ThoughtSpot. There are several aspects of security, including access and permissions, data security and privacy, and security from an IT perspective.
 
 [System Security](audit_logs.html#)
@@ -40,4 +38,3 @@ ThoughtSpot includes a number of management tools, monitoring applications, and 
 Sharing and security settings govern what data a user can access and what they can do with the data. Admins can use these settings to regulate access to information and provide a personalized user experience.
 -   **[Network security](../../admin/data_security/network_security.html)**  
 This section discusses setting up network security, both for external traffic and traffic within the cluster.
-

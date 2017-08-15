@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About Rule-Based Row Level Security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About Rule-Based Row Level Security
-
  Rule-Based Row Level Security is the preferred way to protect your data so that users see only those rows they are allowed to see based on their group membership.
 
 Beginning in ThoughtSpot version 3.3, you can set row level security directly in the ThoughtSpot application. In past versions, you had to use the security file \(see [About Legacy Row Level Security](about_legacy_row_security.html#)\). If you are setting up row level security for the first time, use the method shown in this section.
@@ -70,4 +68,3 @@ To set up rule-based row level security, you first need to access the Rule Build
 You define row level security by creating an expression that gets evaluated for every row and group combination. This powerful feature can be used with up to thousands of groups.
 
 **Parent topic:** [Row level security](../../admin/data_security/about_row_security.html)
-

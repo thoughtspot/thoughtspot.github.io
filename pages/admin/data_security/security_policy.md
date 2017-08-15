@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Security policies]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Security policies
-
 ThoughtSpot has security policies in place to ensure a secure product with each release.
 
 When a release is in development, each build is tested using Qualys Network Security and Vulnerability Management Suite. Issues and vulnerabilities are fixed proactively, based on the results.
@@ -20,4 +18,3 @@ Whenever a CVE is identified, and an OS package needs to be updated, the next pa
 You can view installed Linux packages at any time, along with the version numbers of the installed packages.
 
 **Parent topic:** [System security](../../admin/data_security/audit_logs.html)
-

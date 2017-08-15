@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Data security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Data security
-
 Sharing and security settings govern what data a user can access and what they can do with the data. Admins can use these settings to regulate access to information and provide a personalized user experience.
 
 ## Users, groups, and privileges
@@ -45,4 +43,3 @@ You may need to revoke access to an object \(table, worksheet, or pinboard\) tha
 Row level security allows you to define which groups can see individual rows in a table, based on the values in one of its columns. Using row level security, you can effectively customize search results and pinboards for each group that views them.
 
 **Parent topic:** [About security](../../admin/data_security/about_security.html)
-

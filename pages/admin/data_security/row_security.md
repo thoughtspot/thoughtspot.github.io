@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Define Legacy Row Level Security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Define Legacy Row Level Security
-
 Edit the security file to add row level security to tables.
 
 Before you can add row level security:
@@ -18,8 +16,8 @@ Before you can add row level security:
 
 You can edit the security file using Microsoft Excel or a compatible tool. You will need to copy and paste some of the required information from the model file.
 
-1.   In the model file, find the table for which you want to add row level security. Then find the entry for the column you will use to define visibility criteria. You will copy some of the values from this entry into the security file. 
-2.   Enter the appropriate values into the security file in the first empty row. 
+1.   In the model file, find the table for which you want to add row level security. Then find the entry for the column you will use to define visibility criteria. You will copy some of the values from this entry into the security file.
+2.   Enter the appropriate values into the security file in the first empty row.
 
     |Value|Security file heading|Details|
     |-----|---------------------|-------|
@@ -46,11 +44,10 @@ You can edit the security file using Microsoft Excel or a compatible tool. You w
 
     If the condition made up of the column, operator, and value combination for a particular row is true, that row will be visible to the members of the designated group.
 
-3.   Repeat this for each group, column, and condition you want to define. 
-4.   Save the security file in the same format as it was when you downloaded it \(as a Microsoft Excel file with the name security.xls\). You will see a warning when attempting to save the file. Click "Yes" and save the file. 
+3.   Repeat this for each group, column, and condition you want to define.
+4.   Save the security file in the same format as it was when you downloaded it \(as a Microsoft Excel file with the name security.xls\). You will see a warning when attempting to save the file. Click "Yes" and save the file.
 
     ![](../../images/warning_save_security_excel.png)
 
 
 **Parent topic:** [About Legacy Row Level Security](../../admin/data_security/about_legacy_row_security.html)
-

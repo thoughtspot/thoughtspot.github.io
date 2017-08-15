@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Row level security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Row level security
-
 Row level security allows you to define which groups can see individual rows in a table, based on the values in one of its columns. Using row level security, you can effectively customize search results and pinboards for each group that views them.
 
 ## How row level security works
@@ -47,4 +45,3 @@ If a user is a member of a group that has the privilege **Has administration pri
 Legacy Row Level Security is no longer used. This documentation is retained to support implementations that are already using this method.
 
 **Parent topic:** [Data security](../../admin/data_security/sharing_security_overview.html)
-

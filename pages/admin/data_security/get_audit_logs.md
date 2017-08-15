@@ -1,27 +1,25 @@
 ---
-title: [elephant]
+title: [Get audit logs]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Get audit logs
-
 You can access an audit log of cluster events through tscli. You can also access information on cluster updates, configurations, data loading and metadata events.
 
 Use the `tscli event list` command to return an audit list of events from the cluster. The syntax is:
 
 ```
-tscli event list 
-   [--include <all|config|notification>] 
+tscli event list
+   [--include <all|config|notification>]
    [--since <hours,minutes,days>
-   | --from <yyyymmdd-HH:MM> 
-   --to <yyyymmdd-HH:MM>] 
-   [--detail] 
+   | --from <yyyymmdd-HH:MM>
+   --to <yyyymmdd-HH:MM>]
+   [--detail]
    [--summary_contains
    <'string1'| 'string2' ...>]
-   [--detail_contains 
+   [--detail_contains
    <'string1'| 'string2' ...>]
    [--attributes
    <key1='value1'|
@@ -47,8 +45,8 @@ Or both:
 
 To get audit logs:
 
-1.   [Log in to the Linux shell using SSH](../setup/login_console.html#). 
-2.   Issue the `tscli event list` command, with the desired parameters, for example: 
+1.   [Log in to the Linux shell using SSH](../setup/login_console.html#).
+2.   Issue the `tscli event list` command, with the desired parameters, for example:
 
     ```
     $ tscli event list
@@ -58,4 +56,3 @@ To get audit logs:
 
 
 **Parent topic:** [System security](../../admin/data_security/audit_logs.html)
-

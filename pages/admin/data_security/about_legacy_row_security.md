@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About Legacy Row Level Security]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About Legacy Row Level Security
-
 Legacy Row Level Security is no longer used. This documentation is retained to support implementations that are already using this method.
 
 If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](new_row_level_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
@@ -69,7 +67,7 @@ When multiple row level security rules apply, the permissions are additive. That
 
 In this example, the group Analysts has two separate security entries for the Region column in the Customer table. One entry allows Analysts to see rows where the Region is equal to West. The other allows them to see rows where the Region is equal to East. So users in the Analysts group will be able to see all the rows in either Region.
 
- ![](../../images/row_level_security_example_one.png "Multiple equality conditions in security file") 
+ ![](../../images/row_level_security_example_one.png "Multiple equality conditions in security file")
 
 In this example, a user is a member of two groups: Analysts and Sales. The security file lists different permissions for each group based on the column Category. Analysts can see rows where Category is equal to Consumer and Sales can see rows where Category is equal to Enterprise. So the user who is a member of both groups will be able to see all the rows where the Category is equal to either Consumer or Enterprise.
 
@@ -93,4 +91,3 @@ Edit the security file to add row level security to tables.
 After you have made changes to the security file, you must upload it back to ThoughtSpot before the changes will take effect.
 
 **Parent topic:** [Row level security](../../admin/data_security/about_row_security.html)
-
