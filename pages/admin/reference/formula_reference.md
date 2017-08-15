@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Formula reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Formula reference
-
 ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.
 
 You can also see this list of operators and examples from within the Formula Builder by selecting **Formula Assistant**.
@@ -436,4 +434,3 @@ These functions can be used with text and numeric data types.
  |
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)
-

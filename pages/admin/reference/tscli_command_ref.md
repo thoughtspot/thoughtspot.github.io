@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [tscli --advcommand reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# tscli --advcommand reference
-
 The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots \(backups\) of data, apply updates, stop and start the services, and view information about the system.
 
 ## Internal only
@@ -231,7 +229,7 @@ tscli backup-policy enable <name>
 
  |Enables the policy <name\>.|
 | ```
-tscli backup-policy ls 
+tscli backup-policy ls
 ```
 
  |List backup policies.|
@@ -456,15 +454,15 @@ tscli etl show-lw
 
  |Shows the status of ThoughtSpot Data Connect. It also returns the Informatica username and OrgId.|
 | ```
-tscli event list 
-   [--include <all|config|notification>] 
+tscli event list
+   [--include <all|config|notification>]
    [--since <hours,minutes,days>
-   | --from <yyyymmdd-HH:MM> 
-   --to <yyyymmdd-HH:MM>] 
-   [--detail] 
+   | --from <yyyymmdd-HH:MM>
+   --to <yyyymmdd-HH:MM>]
+   [--detail]
    [--summary_contains
    <'string1'| 'string2' ...>]
-   [--detail_contains 
+   [--detail_contains
    <'string1'| 'string2' ...>]
    [--attributes
    <key1='value1'|
@@ -616,12 +614,12 @@ tscli --adv ldap remove-cert
 
  |Removes the installed LDAP related SSL certificate.|
 | ```
-tscli logs collect 
-  --include <selector | glob> 
-  [--exclude <selector | glob>] 
-  [--since <hours,minutes,days> 
-  | --from <yyyymmdd-HH:MM> 
-  --to <yyyymmdd-HH:MM>] 
+tscli logs collect
+  --include <selector | glob>
+  [--exclude <selector | glob>]
+  [--since <hours,minutes,days>
+  | --from <yyyymmdd-HH:MM>
+  --to <yyyymmdd-HH:MM>]
   [--out <path>]
   [--maxsize <size\_in\_MB\_or\_GB>]
   [--sizeonly]
@@ -1234,7 +1232,7 @@ tscli --adv service ls
 
  |Lists all services.|
 | ```
-tscli --adv service pin 
+tscli --adv service pin
 ```
 
  |Pin service to given nodes.|
@@ -1289,7 +1287,7 @@ tscli --adv service stop-all
 
  |Stops all service.|
 | ```
-tscli --adv service unpin 
+tscli --adv service unpin
 ```
 
  |Unpin service from a fixed set of nodes, allowing it to be scheduled anywhere in the cluster.|
@@ -1442,7 +1440,7 @@ tscli storage gc
 
  Garbage collects unused storage. Accepts these optional flags:
 
-  `--log_age <*hours*>` 
+  `--log_age <*hours*>`
 
  Specifies the number of elapsed hours after which logs will be deleted. Default is 24 hours.
 
@@ -1546,4 +1544,3 @@ tscli --adv zoo fix-local-datadir
 |`--identity_file <identity\_file>`|SSH identity file for SSH access to machines. If not specified, assumes passwordless SSH is available. \(default: None\)|
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)
-

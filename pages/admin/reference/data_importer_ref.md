@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [ThoughtSpot Loader flag reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# ThoughtSpot Loader flag reference
-
 For recurring data loads and for scripting loads, use the ThoughtSpot Loader \(tsload\). This reference section lists all the flags that can be used to modify the behavior of tsload.
 
 ## General tsload flags
@@ -57,4 +55,3 @@ The following flags are used when loading data from an input file:
  |
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)
-

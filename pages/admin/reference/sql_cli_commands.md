@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [TQL reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# TQL reference
-
 TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.
 
 ## TQL commands
@@ -81,7 +79,7 @@ SHOW TABLE <table>
 ```
 
  |Lists all the columns for a table.| ```
-TQL> SHOW TABLE 
+TQL> SHOW TABLE
      "locations";
 ```
 
@@ -105,12 +103,12 @@ TQL> SCRIPT SERVER;
 
  |
 | ```
-SCRIPT DATABASE 
+SCRIPT DATABASE
    <database>
 ```
 
  |Generates the TQL schema for all tables in a database.| ```
-TQL> SCRIPT DATABASE 
+TQL> SCRIPT DATABASE
      "fruit_database";
 ```
 
@@ -120,17 +118,17 @@ SCRIPT TABLE <table>
 ```
 
  |Generates the TQL schema for a table.| ```
-TQL> SCRIPT TABLE 
+TQL> SCRIPT TABLE
      "vendor";
 ```
 
  |
 | ```
-SELECT 
-   <cols\_or\_expr> 
-   FROM <table\_list> 
+SELECT
+   <cols\_or\_expr>
+   FROM <table\_list>
    [WHERE <predicates>]
-   [GROUP BY <expr>] 
+   [GROUP BY <expr>]
    [ORDER BY <expr>]
 ```
 
@@ -161,32 +159,32 @@ You can use the following date functions:
 -   time
 
 | ```LINE_BREAK
-TQL> SELECT 
-     TOP 10 "quantity" 
+TQL> SELECT
+     TOP 10 "quantity"
      FROM "sales_fact";
 
 TQL> SELECT COUNT(*)
      FROM "vendor";
 
-TQL> SELECT "vendor", 
-     SUM("quantity") 
+TQL> SELECT "vendor",
+     SUM("quantity")
      FROM "sales_fact"
      GROUP BY "vendor";
 
-TQL> SELECT "vendor", 
+TQL> SELECT "vendor",
      SUM("amount")
-     FROM "vendor", 
+     FROM "vendor",
      "sales_fact"
-     WHERE 
-     "sales_fact"."vendorid" 
-     = "vendor"."vendorid" 
+     WHERE
+     "sales_fact"."vendorid"
+     = "vendor"."vendorid"
      AND "amount" > 100
      GROUP BY "vendor"
      ORDER BY "amount" DESC;
 
-TQL> SELECT "vendor", 
-     SUM("quantity") 
-     FROM "sales_fact" 
+TQL> SELECT "vendor",
+     SUM("quantity")
+     FROM "sales_fact"
      GROUP BY "vendor"
      LIMIT 10;
 ```
@@ -196,23 +194,23 @@ TQL> SELECT "vendor",
 |Syntax|Description|Examples|
 |------|-----------|--------|
 | ```
-CREATE DATABASE 
+CREATE DATABASE
    <database>
 ```
 
  |Creates a database.| ```
-TQL> CREATE DATABASE 
+TQL> CREATE DATABASE
      "fruit_database";
 ```
 
  |
 | ```
-CREATE SCHEMA 
+CREATE SCHEMA
    <schema>
 ```
 
  |Creates a schema within the current database.| ```
-TQL> CREATE SCHEMA 
+TQL> CREATE SCHEMA
      "fruit_schema";
 ```
 
@@ -221,7 +219,7 @@ TQL> CREATE SCHEMA
 CREATE TABLE <table>
    (<column\_definitions>
    [<constraints>])
-   [PARTITION BY HASH 
+   [PARTITION BY HASH
    (<number>)
    [KEY ("<column>")]])
 ```
@@ -232,19 +230,19 @@ Note that you can specify relationship constraints \(FOREIGN KEY or RELATIONSHIP
 
 | ```
 TQL> CREATE TABLE "vendor"
-     ("vendorid" int, 
-     "name" varchar(255)); 
+     ("vendorid" int,
+     "name" varchar(255));
 
 TQL> CREATE TABLE "sales_fact"
-     ("saleid" int, 
-     "locationid" int, 
-     "vendorid" int, 
-     "quantity" int, 
-     "sale_amount" double, 
+     ("saleid" int,
+     "locationid" int,
+     "vendorid" int,
+     "quantity" int,
+     "sale_amount" double,
      "fruitid" int,
-     CONSTRAINT 
+     CONSTRAINT
      PRIMARY KEY("saleid"))
-     PARTITION BY HASH(96) 
+     PARTITION BY HASH(96)
      KEY ("saleid");
 ```
 
@@ -253,23 +251,23 @@ TQL> CREATE TABLE "sales_fact"
 |Syntax|Description|Examples|
 |------|-----------|--------|
 | ```
-DROP DATABASE 
+DROP DATABASE
    <database>
 ```
 
  |Drops a database and all of its schemas and tables.| ```
-TQL> DROP DATABASE 
+TQL> DROP DATABASE
      "fruit_database";
 ```
 
  |
 | ```
-DROP SCHEMA 
+DROP SCHEMA
    <schema>
 ```
 
  |Drops a schema within the current database, and drops all of the tables in the schema.| ```
-TQL> DROP SCHEMA 
+TQL> DROP SCHEMA
      "fruit_schema";
 ```
 
@@ -284,37 +282,37 @@ TQL> DROP TABLE "location";
 
  |
 | ```
-ALTER TABLE <table> 
-   ADD|DROP|RENAME 
+ALTER TABLE <table>
+   ADD|DROP|RENAME
    COLUMN <column>
 ```
 
  |Alters a table to add, drop, or rename a column. When you add a column to an existing table, you must provide a default value to use for existing rows.
 
 | ```
-TQL> ALTER TABLE "cart" 
-     ADD COLUMN 
-     "nickname" varchar(255) 
+TQL> ALTER TABLE "cart"
+     ADD COLUMN
+     "nickname" varchar(255)
      DEFAULT 'no nickname';
 
-TQL> ALTER TABLE "cart" 
+TQL> ALTER TABLE "cart"
      DROP COLUMN "nickname";
 
 TQL> ALTER TABLE "cart"
-     RENAME COLUMN "nickname" 
+     RENAME COLUMN "nickname"
      TO "shortname";
 ```
 
  |
 | ```
-TRUNCATE TABLE 
+TRUNCATE TABLE
    <table>
 ```
 
  |Removes all data from a table, but preserves its metadata, including all GUIDs, relationships, etc. This can be used to force a new schema for a table without losing the metadata. However, this operation removes all existing data from the table and must be used with caution. You must reload the data following a TRUNCATE, or all dependent objects \(worksheets and pinboards\) in ThoughtSpot will become invalid.
 
 | ```
-TQL> TRUNCATE TABLE 
+TQL> TRUNCATE TABLE
      "location";
 ```
 
@@ -329,7 +327,7 @@ ALTER TABLE <table>
 
 | ```
 TQL> ALTER TABLE "sales"
-     DROP CONSTRAINT 
+     DROP CONSTRAINT
      PRIMARY KEY;
 
 TQL> ALTER TABLE "sales"
@@ -346,8 +344,8 @@ ALTER TABLE <table>
 ```
 
  |Drops the named foreign key or relationship between two tables.| ```
-TQL> ALTER TABLE 
-     "sales_fact" 
+TQL> ALTER TABLE
+     "sales_fact"
      DROP FOREIGN KEY
      "FK_PO_number";
 
@@ -358,7 +356,7 @@ TQL> ALTER TABLE "fruit_dim"
  |
 | ```
 ALTER TABLE <table>
-   DROP [CONSTRAINT 
+   DROP [CONSTRAINT
    FOREIGN KEY
    [<table\_name>]
    | RELATIONSHIP [WITH
@@ -373,27 +371,27 @@ ALTER TABLE <table>
 If you drop a foreign key without specifying the referenced table, all foreign keys from the table you are altering will be dropped.
 
 | ```
-TQL> ALTER TABLE "shipments" 
-     DROP CONSTRAINT 
+TQL> ALTER TABLE "shipments"
+     DROP CONSTRAINT
      FOREIGN KEY "orders";
 
-TQL> ALTER TABLE "wholesale_buys" 
-     DROP RELATIONSHIP 
+TQL> ALTER TABLE "wholesale_buys"
+     DROP RELATIONSHIP
      WITH "retail_sales";
 
-/*   Drops all relationships 
-     that have wholesale_buys 
+/*   Drops all relationships
+     that have wholesale_buys
      as a source.
 */
 
-TQL> ALTER TABLE "wholesale_buys" 
+TQL> ALTER TABLE "wholesale_buys"
      DROP RELATIONSHIP;
 
-/*   Drops all foreign keys 
+/*   Drops all foreign keys
      from wholesale_buys.
 */
 
-TQL> ALTER TABLE "wholesale_buys" 
+TQL> ALTER TABLE "wholesale_buys"
      DROP CONSTRAINT
      FOREIGN KEY;
 ```
@@ -401,9 +399,9 @@ TQL> ALTER TABLE "wholesale_buys"
  |
 | ```
 ALTER TABLE <table>
-   [SET DIMENSION | 
-   SET FACT 
-   [PARTITION BY HASH 
+   [SET DIMENSION |
+   SET FACT
+   [PARTITION BY HASH
    [(<shards>)]
    [KEY(<column>)]]]
 ```
@@ -419,10 +417,10 @@ ALTER TABLE <table>
  To make a sharded table into a dimension table \(replicated on every node\), use ALTER TABLE...SET DIMENSION;
 
  | ```
-TQL> ALTER TABLE 
-     "sales_fact" 
+TQL> ALTER TABLE
+     "sales_fact"
      SET FACT
-     PARTITION BY HASH (96) 
+     PARTITION BY HASH (96)
      KEY ("PO_number");
 
 TQL> ALTER TABLE "fruit_dim"
@@ -448,8 +446,8 @@ TQL> ALTER TABLE fact100
 |Syntax|Description|Examples|
 |------|-----------|--------|
 | ```
-INSERT INTO 
-   <table> 
+INSERT INTO
+   <table>
    VALUES ...
 ```
 
@@ -463,32 +461,32 @@ TQL> INSERT INTO "vendor"
 
  |
 | ```
-UPDATE <table> 
+UPDATE <table>
    ... SET ...
    [WHERE ...]
 ```
 
  |Updates rows in a table that match optionally provided predicates. Predicates have the form column = value connected by the AND keyword. Sets the column values to the specified values.| ```
 TQL> UPDATE "location"
-     SET "borough" = 
-     'staten island', 
+     SET "borough" =
+     'staten island',
      "city" = 'new york'
-     WHERE "borough" = 
-     'staten isl' 
+     WHERE "borough" =
+     'staten isl'
      AND city = 'NY';
 ```
 
  |
 | ```
-DELETE FROM 
+DELETE FROM
    <table> [WHERE...]
 ```
 
  |Deletes rows from a table that match optionally provided predicates. Predicates have the form column = value connected by the AND keyword.| ```
-TQL> DELETE FROM "vendor" 
-     WHERE 
-     "name" = 'Joey Smith' 
-     AND 
+TQL> DELETE FROM "vendor"
+     WHERE
+     "name" = 'Joey Smith'
+     AND
      "vendorid" = '19463';
 ```
 
@@ -509,16 +507,16 @@ CREATE TABLE "schools" (
      "schoolCity" varchar(55),
      "schoolState" varchar(55),
      "schoolNick" varchar(55),
-     CONSTRAINT 
+     CONSTRAINT
      PRIMARY KEY ("schoolID")
      ) ;
 
 TQL> ALTER TABLE "cart"
-     ADD CONSTRAINT 
+     ADD CONSTRAINT
      PRIMARY KEY ("cart_id");
 
 TQL> ALTER TABLE "cart"
-     DROP CONSTRAINT 
+     DROP CONSTRAINT
      PRIMARY KEY "cart_id";
 ```
 
@@ -526,26 +524,26 @@ TQL> ALTER TABLE "cart"
 |FOREIGN KEY|Defines a relationship where the value\(s\) in the table are used to join to a second table. Uses an equality operator. The foreign key must match the primary key of the table that is referenced in number, column type, and order of columns.When creating a foreign key, give it a name. You can reference the foreign key name later, if you want to remove it.
 
 | ```
-TQL> ALTER TABLE "batting" 
+TQL> ALTER TABLE "batting"
      ADD CONSTRAINT "FK_player"
-     FOREIGN KEY ("playerID") 
+     FOREIGN KEY ("playerID")
      REFERENCES "players" ("playerID");
 
-TQL> ALTER TABLE "batting" 
+TQL> ALTER TABLE "batting"
      ADD CONSTRAINT "FK_lg_team"
-     FOREIGN KEY ("lgID" ,"teamID") 
-     REFERENCES "teams" 
+     FOREIGN KEY ("lgID" ,"teamID")
+     REFERENCES "teams"
      ("lgID" ,"teamID");
 
-TQL> ALTER TABLE "shipment" 
-     ADD CONSTRAINT 
+TQL> ALTER TABLE "shipment"
+     ADD CONSTRAINT
      "FK_PO_vendor"
-     FOREIGN KEY ("po_number", 
+     FOREIGN KEY ("po_number",
      "vendor")
-     REFERENCES "orders" 
+     REFERENCES "orders"
      ("po_number", "vendor");
 
-TQL> ALTER TABLE "shipment" 
+TQL> ALTER TABLE "shipment"
      DROP CONSTRAINT "FK_PO_vendor";
 ```
 
@@ -555,19 +553,19 @@ TQL> ALTER TABLE "shipment"
 When creating a relationship, give it a name. You can reference the relationship name later, if you want to remove it.
 
 | ```
-TQL> ALTER TABLE "wholesale_buys" 
+TQL> ALTER TABLE "wholesale_buys"
      ADD RELATIONSHIP "REL_fruit"
      WITH "retail_sales"
-     AS "wholesale_buys"."fruit" 
-     = "retail_sales"."fruit" 
-     AND 
+     AS "wholesale_buys"."fruit"
+     = "retail_sales"."fruit"
+     AND
      ("wholesale_buys"."date_order"
-     < "retail_sales"."date_sold" 
+     < "retail_sales"."date_sold"
      AND
      "retail_sales"."date_sold" <
      "wholesale_buys"."expire_date");
 
-TQL> ALTER TABLE "wholesale_buys" 
+TQL> ALTER TABLE "wholesale_buys"
      DROP RELATIONSHIP "REL_fruit";
 ```
 
@@ -577,7 +575,7 @@ TQL> ALTER TABLE "wholesale_buys"
 
 The following flag can be used with TQL:
 
-`--query_results_apply_top_row_count <number>` 
+`--query_results_apply_top_row_count <number>`
 
 limits to the number of result rows returned by a query.
 
@@ -615,4 +613,3 @@ ThoughtSpot supports a simplified list of data types:
 |
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)
-

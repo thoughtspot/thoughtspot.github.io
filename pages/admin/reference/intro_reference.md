@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Reference
-
 This Reference section contains the commands and their syntax for all the command line tools in ThoughtSpot.
 
 Included in this guide are:
@@ -31,4 +29,3 @@ ThoughtSpot allows you to create derived columns in worksheets using formulas. T
 This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or tsload.
 -   **[Row level security rules reference](../../admin/reference/rls_rule_builder_reference.html)**  
 ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to "true" for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.
-

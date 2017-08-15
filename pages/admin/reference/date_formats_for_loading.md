@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Date and time formats reference]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Date and time formats reference
-
 This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or tsload.
 
 ## Using ThoughtSpot Loader
@@ -70,4 +68,3 @@ These date and time formats are supported in an Excel or CSV file when uploading
 -   10:32:22.000 AM
 
 **Parent topic:** [Reference](../../admin/reference/intro_reference.html)
-
