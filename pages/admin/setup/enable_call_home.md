@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Enable the call home capability]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Enable the call home capability
-
 The optional "call home" capability sends usage statistics to ThoughtSpot Support once a day via a secure file server.
 
 Before you can enable the call home feature:
@@ -21,14 +19,14 @@ This can be helpful when troubleshooting problems with ThoughtSpot Support, beca
 
 To set up the call home feature:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#). 
-2.   Enable the call home feature by issuing: 
+1.   [Log in to the Linux shell using SSH](login_console.html#).
+2.   Enable the call home feature by issuing:
 
     ```
     $ tscli callhome enable --customer_name <customer\_name>
     ```
 
-3.   If you want to disable call home in the future, you can do so by issuing: 
+3.   If you want to disable call home in the future, you can do so by issuing:
 
     ```
     $ tscli callhome disable
@@ -36,4 +34,3 @@ To set up the call home feature:
 
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

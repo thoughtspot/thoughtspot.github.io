@@ -1,23 +1,21 @@
 ---
-title: [elephant]
+title: [Set up monitoring]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Set up monitoring
-
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.
 
 Use tscli to set up monitoring. This is a one time operation.
 
-1.   [Log in to the Linux shell using SSH](login_console.html#). 
-2.   Issue the tscli command to set up monitoring: 
+1.   [Log in to the Linux shell using SSH](login_console.html#).
+2.   Issue the tscli command to set up monitoring:
 
     ```
-    tscli monitoring set-config 
-       --email <email> 
+    tscli monitoring set-config
+       --email <email>
        --heartbeat_interval <heartbeat\_interval>
        --report_interval <report\_interval>
     ```
@@ -30,7 +28,7 @@ Use tscli to set up monitoring. This is a one time operation.
 
     -   `--report_interval <report\_interval>` sets the cluster report email generation interval in seconds. Must be greater than 0.
 
-3.   To view your settings and verify that they have been applied, issue: 
+3.   To view your settings and verify that they have been applied, issue:
 
     ```
     tscli monitoring show-config
@@ -39,17 +37,16 @@ Use tscli to set up monitoring. This is a one time operation.
     You should see information like:
 
     ```
-    Monitoring Configuration: 
-    
+    Monitoring Configuration:
+
       Alert Email: dev-alerts@thoughtspot.com
-    
+
       Heartbeat Interval: 900 sec
-    
+
       Report Interval: 21600 sec
     ```
 
-4.   After the heartbeat interval has passed, check your email to verify that emails are being delivered. 
-5.   If you don't receive any emails, [Verify that email is working](setup_email.html#). 
+4.   After the heartbeat interval has passed, check your email to verify that emails are being delivered.
+5.   If you don't receive any emails, [Verify that email is working](setup_email.html#).
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Mount a NAS file system]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Mount a NAS file system
-
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.
 
 This procedure shows you how to mount a NAS file system for storing or accessing large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found.
@@ -18,8 +16,8 @@ Note that backups are written by the Linux user "admin". If that user does not h
 
 Do not send the periodic backups or stage files on /export/sdb1 since it is a name node. It is used internally by Hadoop Distributed File System \(HDFS\) and if this drive fills up, it can cause serious problems. Do not allow backups or data files to accumulate on ThoughtSpot. If disk space becomes limited, the system will not function normally.
 
-1.   [Log in to the Linux shell using SSH](login_console.html#). 
-2.   Mount the directory to the file system, by issuing the appropriate command: 
+1.   [Log in to the Linux shell using SSH](login_console.html#).
+2.   Mount the directory to the file system, by issuing the appropriate command:
     -   For an NFS \(Network File System\) directory:
 
         ```
@@ -42,8 +40,8 @@ Do not send the periodic backups or stage files on /export/sdb1 since it is a na
            --gid <gid>
         ```
 
-3.   Use the mounted file system as you wish, specifying it by referring to its mount point. 
-4.   When you are finished with it, you may optionally unmount the NAS file system: 
+3.   Use the mounted file system as you wish, specifying it by referring to its mount point.
+4.   When you are finished with it, you may optionally unmount the NAS file system:
 
     ```
     tscli nas unmount --dir <directory>
@@ -51,4 +49,3 @@ Do not send the periodic backups or stage files on /export/sdb1 since it is a na
 
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

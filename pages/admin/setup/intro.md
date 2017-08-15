@@ -6,7 +6,6 @@ last_updated: July 3, 2016
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-
 The installation and setup walks you through the basic steps required to set up and configure ThoughtSpot. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot.
 
 -   **[Login credentials for administration](../../admin/setup/logins.html)**  

@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Network ports]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Network ports
-
 For regular operations and for debugging, there are some ports you will need to keep open to network traffic from end users. Another, larger list of ports must be kept open for network traffic between the nodes in the cluster.
 
 ## Required ports for operations and debugging
@@ -115,4 +113,3 @@ ThoughtSpot uses static ports for out-of-band IPMI communications between the cl
 
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
-

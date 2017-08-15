@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Configure SAML]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Configure SAML
-
 ThoughtSpot can use Security Assertion Markup Language \(SAML\) to authenticate users. You can set up SAML through the shell on ThoughtSpot using a tscli based configurator.
 
 Before configuring SAML, you will need this information:
@@ -26,14 +24,13 @@ Before configuring SAML, you will need this information:
 Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration persists across software updates, so you do not need to reapply it if you update to a newer release of ThoughtSpot.
 
 1.  [Log in to the Linux shell using SSH](../../shared/conrefs/../../admin/setup/login_console.html).
-2.   Execute the command to launch the interactive SAML configuration: 
+2.   Execute the command to launch the interactive SAML configuration:
 
     ```
     tscli saml configure
     ```
 
-3.   Complete the configurator prompts with the information you gathered above. 
-4.   When the configuration is complete, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option. 
+3.   Complete the configurator prompts with the information you gathered above.
+4.   When the configuration is complete, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option.
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

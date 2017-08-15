@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About SSL (secure socket layers)]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About SSL \(secure socket layers\)
-
 You should use SSL \(secure socket layers\) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 
 Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain, so if you want to use SSL for both HTTP and LDAP, you will need two separate certificates - one for the HTTP domain and one for the LDAP domain.
@@ -35,4 +33,3 @@ There are a couple of security vulnerabilities due to SSL certificates supportin
 [Configure SSL for web traffic](configure_SSL.html#)
 
 [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#)
-

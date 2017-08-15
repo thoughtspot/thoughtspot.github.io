@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Login credentials for administration]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Login credentials for administration
-
 You will need administrative permissions to perform the actions discussed in this guide. You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
 
 There are two separate default administrator users, an operating system user that you type in at the Linux shell prompt, and an application user for access through a browser. Make sure you use the correct login and password for the method you are using to log in. Passwords are case sensitive.
@@ -18,4 +16,3 @@ There are two separate default administrator users, an operating system user tha
 |Application user|tsadmin|[Access through a Web browser.](accessing.html#)|Contact ThoughtSpot to obtain the default password.|
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

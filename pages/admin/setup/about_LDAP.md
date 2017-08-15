@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About LDAP integration]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About LDAP integration
-
 Some companies use LDAP \(Lightweight Directory Access Protocol\) to manage user authentication. Using LDAP provides security and makes user management more centralized.
 
 ThoughtSpot can be configured to authenticate users against an LDAP server. You can choose to authenticate users against an LDAP server, against ThoughtSpot, or both.
@@ -33,4 +31,3 @@ After configuring LDAP, you can test to make sure it is working by issuing a com
 Use this procedure to synchronize your ThoughtSpot system with an LDAP server.
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

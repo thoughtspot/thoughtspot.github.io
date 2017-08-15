@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [About load balancing and proxies]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About load balancing and proxies
-
 A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency. Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.
 
 ## Load balance across ThoughtSpot nodes
@@ -46,4 +44,3 @@ Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot
 ![](../../images/network_architectural_diagram.png)
 
 **Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-

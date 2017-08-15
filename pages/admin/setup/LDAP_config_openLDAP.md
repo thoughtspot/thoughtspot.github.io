@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Configure OpenLDAP]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Configure OpenLDAP
-
 Use this procedure to set up integration with LDAP using OpenLDAP.
 
 Before configuring OpenLDAP, you will need this information:
@@ -33,35 +31,35 @@ Before configuring OpenLDAP, you will need this information:
 
 You do not need to create a user called tsadmin on your LDAP server. Internal authentication can be used for tsadmin. To configure LDAP for OpenLDAP:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#). 
-2.   Run the command to configure LDAP: 
+1.   [Log in to the Linux shell using SSH](login_console.html#).
+2.   Run the command to configure LDAP:
 
     ```
     $ tscli ldap configure
     ```
 
-3.   Answer the prompts using the information you collected. For example: 
+3.   Answer the prompts using the information you collected. For example:
 
     ```
     Choose the LDAP protocol:
     [1]  Active Directory
     [2]  OpenLDAP
     Option number: 2
-    
+
     Configuring Open LDAP
-    
-    
+
+
     URL to connect to OpenLDAP (Example: ldap://192.168.2.100:389): ldap://192.168.2.48:389
-    
+
     Distinguished name template (Example: cn={0},ou=users,dc=thoughtspot,dc=com): cn={0},ou=users,dc=thoughtspot,dc=com
-    
+
     Automatically add LDAP users in ThoughtSpot (y/n): n
-    
+
     Also use ThoughtSpot internal authentication (y/n): y
     ```
 
-4.   If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#). 
-5.   If you want to remove the LDAP configuration, issue: 
+4.   If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
+5.   If you want to remove the LDAP configuration, issue:
 
     ```
     $ tscli ldap purge-configuration
@@ -69,4 +67,3 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
 
 
 **Parent topic:** [About LDAP integration](../../admin/setup/about_LDAP.html)
-
