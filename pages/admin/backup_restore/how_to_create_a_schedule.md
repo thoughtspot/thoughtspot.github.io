@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Understand backup/snapshot schedules]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Understand backup/snapshot schedules
-
 You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic backup policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section useful for understanding how to understand existing schedules and how to configure new schedules.
 
 ## Configuration format
@@ -32,7 +30,7 @@ schedule {
     }
     offset_minutes_from_sunday_midnight: integer
 }
-            
+
 ```
 
 The `schedule` has the following components:
@@ -84,7 +82,7 @@ schedule {
     }
     offset_minutes_from_sunday_midnight: 0
 }               
-            
+
 ```
 
 Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the `period` of 1 \(one\) hour with the midnight offset of 0 \(zero\).
@@ -125,7 +123,7 @@ retention_policy {
     }     
     ...
  }
-            
+
 ```
 
 When the fourth hour comes along, the snapshot from first hour is discarded as per FIFO behavior. So in the 4th hour, you'll have the snapshots from hours 2, 3, and 4 in this retention bucket.
@@ -166,4 +164,3 @@ What if you changed the `period` frequncy to every 2 hours? What would you have 
 As you can see, when defining a policy it can be helpful to graphically represent the frequency you configure. Then, determine which time blocks are important to retain before determining your retention bucket.
 
 **Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)
-

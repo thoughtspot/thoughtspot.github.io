@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Work with backups]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Work with backups
-
 A backup is a procedure that stores a snapshot outside of a ThoughtSpot cluster. You can use a backup to restore a cluster to a prior state, a differently configured appliance, or move it to from an appliance to a virtual cluster or vice versa. Other advanced administrative operations also use backups.
 
 You can create a manual backup or configure an automated, periodic backup A backup stores snapshot outside of a ThoughtSpot cluster. For manual backups, the system creates a backup using the named snapshot you specify. For periodic backups, the system uses the most recent snapshot to create the backup.
@@ -30,4 +28,3 @@ Use this procedure when you want to manually create a backup. If you would like 
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods \(first-in-first-out\), and output location for a periodic backup.
 
 **Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)
-

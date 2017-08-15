@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Understand backup modes]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Understand backup modes
-
 You can create a backup using one of three modes, full, lightweight or dataless.
 
 ## Full backups
@@ -46,4 +44,3 @@ A dataless backup saves a backup of the schema \(metadata\), with no data. Datal
 When restoring from a dataless backup, you must supply the correct release tarball, since this type of backup does not include the software release.
 
 **Parent topic:** [Work with backups](../../admin/backup_restore/backups_and_snapshots.html)
-

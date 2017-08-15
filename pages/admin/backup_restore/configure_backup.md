@@ -1,13 +1,11 @@
 ---
-title: [elephant]
+title: [Configure periodic backups]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Configure periodic backups
-
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods \(first-in-first-out\), and output location for a periodic backup.
 
 A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS \(network attached storage\) file system](../setup/NAS_mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
@@ -17,7 +15,7 @@ The format for a policy includes the following:
 ```
 name: "name_for_backup"
 param {
-    mode: FULL | DATALESS | LIGHTWEIGHT 
+    mode: FULL | DATALESS | LIGHTWEIGHT
     type: STANDALONE
 }
 schedule {
@@ -35,7 +33,7 @@ schedule {
   }
   offset_minutes_from_sunday_midnight: integer
 }
-directory: "NAME" 
+directory: "NAME"
 storage_type: NAS | LOCAL  
 ```
 
@@ -54,11 +52,11 @@ The rentention system deletes the oldest stored backup and the corresponding sna
 
 To configure periodic backups:
 
-1.   [Log in to the Linux shell using SSH](../setup/login_console.html#). 
+1.   [Log in to the Linux shell using SSH](../setup/login_console.html#).
 2.   Find a directory with enough disk space to support the `retention_policy number` you configure. Hint: You can use df -h to see free disk space and tscli snapshot ls to view existing snapshots and their size on disk.
 3.   Use the tscli backup-policy create command. The command opens a `vi` editor for you to configure the backup policy.
 4.   Write and save the file to store your configuration. By default, newly created policies are automatically enabled. To disable a policy, use the tscli backup-policy disable command.
-5.   Verify the policy using the `tscli backup periodic-config <name>` command. 
+5.   Verify the policy using the `tscli backup periodic-config <name>` command.
 
 The following table lists some additional backup commands you can use.
 
@@ -73,4 +71,3 @@ The following table lists some additional backup commands you can use.
 Finally, you can time a `crontab` job with your periodic backup configuration to move a backup to longer term storage. Simply create a `crontab` job that moves the backup to a location outside of the `directory` defined in the periodic schedule.
 
 **Parent topic:** [Work with backups](../../admin/backup_restore/backups_and_snapshots.html)
-
