@@ -8,20 +8,35 @@ entries:
   - sectiontitle: Administrators Guide
     output: web
     sectionitems:
-    - title: pageItem1
-      url: index.html
+    - title: Introduction
+      url: /pages/admin/intro.html
       output: web
-    - title: pageItem2
-      url: index.html
-      output: web
-    - levelTwoTitle: levelTwoTitle-0
+    - levelTwoTitle: Installation and setup
       output: web
       levelTwoItems:
-        - title: pageItem3
-          url: index.html
+        - title: Introduction
+          url: /pages/admin/setup/intro.html
           output: web
-        - title: pageItem4
-          url: index.html
+        - title: Login credentials for administration
+          url: /pages/admin/setup/logins.html
+          output: web
+        - title: SSH into the Linux shell
+          url: /pages/admin/setup/login_console.html
+          output: web
+        - title: Log in from a browser
+          url: /pages/admin/setup/accessing.html
+          output: web
+        - title: Set your locale
+          url: /pages/admin/setup/set_your_thoughtspot_locale.html
+          output: web
+        - title: Software updates
+          url: /pages/admin/setup/upgrades.html
+          output: web
+        - title: Test connectivity between nodes
+          url: /pages/admin/setup/test_network.html
+          output: web
+        - title: Set the relay host for SMTP
+          url: /pages/admin/setup/set_up_relay_host.html
           output: web
         - levelThreeTitle: levelThreeTitle-1
           output: web
