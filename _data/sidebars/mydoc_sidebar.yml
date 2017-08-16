@@ -38,6 +38,9 @@ entries:
         - title: Set the relay host for SMTP
           url: /pages/admin/setup/set_up_relay_host.html
           output: web
+        - title: Set up a fiscal calendar year
+          url: /pages/admin/setup/set_custom_calendar.html
+          output: web
         - levelThreeTitle: levelThreeTitle-1
           output: web
           levelThreeItems:
