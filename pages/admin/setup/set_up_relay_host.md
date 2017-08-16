@@ -3,10 +3,12 @@ title: [Set the relay host for SMTP (email)]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "To enable alert emails, you'll need to set up a relay host for SMTP traffic."
 sidebar: mydoc_sidebar
 ---
-To enable alert emails, you'll need to set up a relay host for SMTP traffic from ThoughtSpot. This routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
+A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
+
+## Set up the relay Host
 
 To set up a relay host:
 
@@ -25,7 +27,26 @@ To set up a relay host:
 
 4.   [Verify that email is working](setup_email.html#).
 
--   **[Verify that email is working](../../admin/setup/setup_email.html)**  
+
+## Verify the settings are working properly
+
  Check if the email settings are working properly by using this procedure. ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support.
 
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)
+ ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts will be sent. But you can add an email to receive alerts by issuing:
+
+ ```
+ $ tscli monitoring set-config --email <your\_email>
+ ```
+
+ You can add a list of email addresses separated by commas, with no spaces.
+
+ To verify that the send email function is working correctly:
+
+ 1.   [Log in to the Linux shell using SSH](login_console.html#).
+ 2.   Try sending an email to yourself by issuing:
+
+     ```
+     $ echo | mail -s Hello <your\_email>
+     ```
+
+ 3.   If you receive the email at the address you supplied, email is working correctly.
