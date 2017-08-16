@@ -53,20 +53,56 @@ entries:
             - title: Set the recommended TLS version
               url: /pages/admin/setup/set_the_recommended_tls_version.html
               output: web
-        - title: pageItem5
-          url: index.html
+        - title: Configure SAML
+          url: /pages/admin/setup/configure_SAML_with_tscli.html
           output: web
-        - title: 2_pageItem4
-          url: index.html
-          output: web
-        - levelThreeTitle: 2.levelThreeTitle-1
+        - levelThreeTitle: Integrate LDAP
           output: web
           levelThreeItems:
-          - title: Add the SSL certificate for LDAP
-            url: /pages/admin_guide/setup/add_SSL_for_LDAP.html
+          - title: About LDAP integration
+            url: /pages/admin/setup/about_LDAP.html
             output: web
-    - title: pageItem1
-      url: index.html
+          - title: Configure OpenLDAP
+            url: /pages/admin/setup/LDAP_config_openLDAP.html
+            output: web
+          - title: Configure LDAP for Active Directory
+            url: /pages/admin/setup/LDAP_config_AD.html
+            output: web
+          - title: Add the SSL certificate for LDAP
+            url: /pages/admin/setup/add_SSL_for_LDAP.html
+            output: web
+          - title: Test the LDAP configuration
+            url: /pages/admin/setup/test_ldap.html
+            output: web
+          - title: Sync users and groups from LDAP
+            url: /pages/admin/setup/sync_users_and_groups_from_ldap.html
+            output: web
+        - title: Mount a NAS file system
+          url: /pages/admin/setup/NAS_mount.html
+          output: web
+        - title: Add a custom support contact
+          url: /pages/admin/setup/set_custom_support_contact.html
+          output: web
+        - title: Set up monitoring
+          url: /pages/admin/setup/set_up_monitoring.html
+          output: web
+        - title: Connect to the ThoughtSpot Support file server
+          url: /pages/admin/setup/configure_secure_file_server_connection.html
+          output: web
+        - title: Set up remote support access
+          url: /pages/admin/setup/set_up_remote_support.html
+          output: web
+        - title: Enable the call home capability
+          url: /pages/admin/setup/enable_call_home.html
+          output: web
+        - title: Network ports
+          url: /pages/admin/setup/firewall_ports.html
+          output: web
+        - title: About load balancing and proxies
+          url: /pages/admin/setup/about_load_balancer_configuration.html
+          output: web
+        - title: pageItem1
+          url: index.html
       output: web
     - levelTwoTitle: levelTwoTitle-2
       output: web
