@@ -1,0 +1,46 @@
+---
+title: [elephant]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
+# About worksheets from searches
+
+If you want to do an advanced search that involves what is essentially a search on top of another search, try saving your search as a worksheet. Then you can use the saved worksheet as a data source for a new search.
+
+## Introduction to worksheets from searches
+
+Although a worksheet created from a search is effectively the same as any worksheet, we'll call it an "aggregated worksheet" here to avoid confusion. When you do a search on a data source, ThoughtSpot is only able to aggregate one column by one other column. Because of this, you may come across searches you can't do in one pass, because they are essentially nested queries. But you can create the equivalent of nested queries using an aggregated worksheet, which is essentially an answer that you save as a worksheet. Then you can use that worksheet just like any other data source. You can even link it to other sources by defining a relationship. When you save an answer as a worksheet, and then use it as a source in a new search, it is similar to doing a nested query in SQL, only much easier to create.
+
+In order to create a worksheet from a search, you must belong to a group that has the privilege **Has administration privileges** or **Can Manage Data**. If you are not able to create aggregated worksheets, contact your administrator and request the **Can Manage Data** privilege.
+
+## Aggregated worksheet workflow
+
+Suppose you have created a search on the sales fact table that shows the top ten Sales Reps by revenue for the first quarter. Then you want to do some further investigations on that set of data, like ranking them by how much they discounted a specific product using data from the orders fact table. Unless you save your first answer as a worksheet, certain explorations like this won't be possible. If you want to do this, here are the steps at a high level:
+
+1.  Create the first search, and [save it as an aggregated worksheet](create_aggregated_worksheet.html#).
+2.  Link your worksheet to any other data sources you'll need.
+3.  Create a new search that includes your aggregated worksheet and the other sources you linked with it.
+4.  You may want to create a new worksheet that includes these data sources. This will make it easy for people to search using the same group of aggregated worksheet and tables that you created.
+
+## Best practices for using aggregated worksheets
+
+Aggregated worksheets can be used in a variety of ways. But keep in mind these details about how they work:
+
+-   Only users with administrative privileges are able to create aggregated worksheets and link them.
+-   You can't link an aggregated worksheet with a sharded table. If you do this and try to search on it, you will get an error.
+-   Joins are directional, meaning that the order of the objects being linked matters. The table/aggregated worksheet with the foreign key needs to occur in the first (left) position. The one with the primary key needs to go in the second (right) position.
+
+-   **[Save a search as a worksheet](../../pages/complex_searches/create_aggregated_worksheet.html)**  
+This procedure walks you through creating a worksheet from a search.
+-   **[Create a search from a search saved as a worksheet](../../pages/complex_searches/do_query_on_query.html)**  
+After creating a worksheet from a search (also called an aggregated worksheet) and linking it to related data, you're ready to create your new search.
+-   **[Worksheet from a search example scenarios](../../pages/complex_searches/more_example_scenarios.html)**  
+Here are three common examples of when you would need to use aggregated worksheets.
+
+**Parent topic:** [About search](../../pages/end_user_guide/end_user_search/search.html)
+
+**Parent topic:** [Advanced searches topics](../../pages/complex_searches/advanced_searches_intro.html)
+

@@ -39,10 +39,3 @@ The pinboard visualizations are attached to the scheduled email as CSV or PDF fi
 The size of each email is limited to 25 MB, which matches most email services size limitations.
 
 And the total number of recipients for a scheduled pinboard job cannot exceed the default of 1000.
-
--   **[Schedule a pinboard job](../../admin/manage_jobs/schedule_a_pinboard_job.html)**  
-You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page.
--   **[Scheduled pinboards management](../../admin/manage_jobs/scheduled_pinboards_management.html)**  
-You can manage all scheduled pinboards on the Jobs Management page under Admin.
-
-**Parent topic:** [Manage jobs](../../admin/manage_jobs/manage_jobs.html)
