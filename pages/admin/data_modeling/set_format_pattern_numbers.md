@@ -10,6 +10,8 @@ You can set a format for how numbers are displayed in tables and charts. For exa
 
 You can use any of the supported number formats for delimiters and number of digits to show using [Java Decimal Notation](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html). Currency symbols are not supported.
 
+## Default formats
+
 The default values are:
 
 -   \#,\#\#\# for integer data types (INT, BIGINT).
@@ -33,10 +35,11 @@ To change the date format used to display a column's values:
 2.   Change it to the format you want to use.
 3.   Save your changes.
 
--   **[Locale-based number formatting](../../admin/data_modeling/locale_based_number_formatting.html)**  
+## Locale-based number formatting
+
 Number formatting is set by default based on your browser locale setting. This has been set in order to accommodate users in various geographical locations, primarily in the US and Europe regions.
 
-**Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
+For example, if you are using ThoughtSpot in the US, the number formatting should look like this: xxx,xxx.xx. And in Europe, it should look like this: xxx.xxx,xx.
 
 **Related information**  
 

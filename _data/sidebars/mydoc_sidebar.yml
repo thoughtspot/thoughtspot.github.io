@@ -103,15 +103,519 @@ entries:
           output: web
         - title: pageItem1
           url: index.html
+          output: web
+    - levelTwoTitle: Load and manage data
       output: web
-    - levelTwoTitle: levelTwoTitle-2
+      levelTwoItems:
+      - title: Introduction to data management
+        url: /pages/admin/loading/loading_intro.html
+        output: web
+      - title: About case configuration
+        url: /pages/admin/loading/about_case_configuration.html
+        output: web
+      - title: Generate CSV files with the data to be loaded
+        url: /pages/admin/loading/generate_flat_file.html
+        output: web
+      - title: Load data from a web browser
+        url: /pages/admin/loading/load_from_web_browserdita.html
+        output: web
+      - title: How to view a data schema
+        url: /pages/admin/loading/schema_viewer.html
+        output: web
+      - levelThreeTitle: Plan the schema
+        output: web
+        levelThreeItems:
+        - title: About schema planning
+          url: /pages/admin/loading/plan_schema.html
+          output: web
+        - title: Data types
+          url: /pages/admin/loading/datatypes.html
+          output: web
+        - title: Constraints
+          url: /pages/admin/loading/constraints.html
+          output: web
+        - title: Sharding
+          url: /pages/admin/loading/sharding.html
+          output: web
+        - title: Chasm traps
+          url: /pages/admin/loading/chasm_trap.html
+          output: web
+        - title: Chasm trap limitations
+          url: /pages/admin/loading/chasm_trap_limits.html
+          output: web
+      - levelThreeTitle: Build the schema
+        output: web
+        levelThreeItems:
+        - title: About schema building
+          url: /pages/admin/loading/create_schema.html
+          output: web
+        - title: About TQL, the SQL command line interface
+          url: /pages/admin/loading/sql_cli.html
+          output: web
+        - title: Connect to the database with the ThoughtSpot SQL Command Line \(TQL\
+          url: /pages/admin/loading/connect_sql_cli.html
+          output: web
+        - title: Create the schema in TQL
+          url: /pages/admin/loading/prep_schema_for_load.html
+          output: web
+        - title: Write a SQL script to create the schema
+          url: /pages/admin/loading/create_schema_with_script.html
+          output: web
+        - title: Schema creation examples
+          url: /pages/admin/loading/create_schema_example.html
+          output: web
+        - title: Import a schema \(use the SQL editor\
+          url: /pages/admin/loading/upload_sql_script.html
+          output: web
+      - levelThreeTitle: Change the schema
+        output: web
+        levelThreeItems:
+        - title: About changing a schema
+          url: /pages/admin/loading/change_schema.html
+          output: web
+        - title: Change the primary key for a table
+          url: /pages/admin/loading/change_primary_key.html
+          output: web
+        - title: Change a relationship between tables
+          url: /pages/admin/loading/change_relationships_tql.html
+          output: web
+        - title: Change sharding on a table
+          url: /pages/admin/loading/change_sharding.html
+          output: web
+        - title: Change the Data Type of a Column
+          url: /pages/admin/loading/about_data_type_conversion.html
+          output: web
+      - levelThreeTitle: Load data
+        output: web
+        levelThreeItems:
+        - title: About the Loader
+          url: /pages/admin/loading/load_with_data_importer.html
+          output: web
+        - title: Import CSV files with ThoughtSpot Loader
+          url: /pages/admin/loading/use_data_importer.html
+          output: web
+        - title: Use a script to load data
+          url: /pages/admin/loading/load_with_script.html
+          output: web
+        - title: Bulk load files in parallel
+          url: /pages/admin/loading/parallel_tsload.html
+          output: web
+      - levelThreeTitle: Delete a data source
+        output: web
+        levelThreeItems:
+        - title: About deleting data sources
+          url: /pages/admin/loading/about_dependencies.html
+          output: web
+        - title: Check dependencies in the browser
+          url: /pages/admin/loading/check_dependency_ux.html
+          output: web
+        - title: Delete a data source from the browser
+          url: /pages/admin/loading/delete_data_source_UX.html
+          output: web
+        - title: Delete or change a table in TQL
+          url: /pages/admin/loading/check_dependencies_tql.html
+          output: web
+    - levelTwoTitle: Improve search with modeling
       output: web
+      levelTwoItems:
+      - title: About data modeling
+        url: /pages/admin/data_modeling/about_data_modeling_intro.html
+        output: web
+      - title: Interfaces for modeling data
+        url: /pages/admin/data_modeling/model_data_in_UI.html
+        output: web
+      - levelThreeTitle: Bulk data modeling
+        output: web
+        levelThreeItems:
+        - title: About the data modeling file
+          url: /pages/admin/data_modeling/edit_model_file.html
+          output: web
+        - title: Download the model file
+          url: /pages/admin/data_modeling/get_model_file.html
+          output: web
+        - title: Change the file settings
+          url: /pages/admin/data_modeling/change_setting_model_file.html
+          output: web
+        - title: Upload the edited file
+          url: /pages/admin/data_modeling/upload_model_file.html
+          output: web
+      - levelThreeTitle: Data modeling settings
+        output: web
+        levelThreeItems:
+        - title: About the settings
+          url: /pages/admin/data_modeling/data_modeling_settings.html
+          output: web
+        - title: Change the column name
+          url: /pages/admin/data_modeling/change_column_names.html
+          output: web
+        - title: Add a column description
+          url: /pages/admin/data_modeling/change_column_description.html
+          output: web
+        - title: Change the column type (ATTRIBUTE or MEASURE)
+          url: /pages/admin/data_modeling/change_column_type.html
+          output: web
+        - title: Change the additive setting for a column
+          url: /pages/admin/data_modeling/change_column_additive.html
+          output: web
+        - title: Change the aggregation setting for a column
+          url: /pages/admin/data_modeling/change_aggreg_type.html
+          output: web
+        - title: Hide a column
+          url: /pages/admin/data_modeling/change_column_visibility.html
+          output: web
+        - title: Create synonyms for a column
+          url: /pages/admin/data_modeling/create_synonyms.html
+          output: web
+        - title: Change the index type for a column
+          url: /pages/admin/data_modeling/change_index.html
+          output: web
+        - title: Add a geographical data setting for a column
+          url: /pages/admin/data_modeling/model_geo_data.html
+          output: web
+        - title: Set the search suggestions priority for a column
+          url: /pages/admin/data_modeling/change_column_priority.html
+          output: web
+        - title: Set the format to use when showing numbers
+          url: /pages/admin/data_modeling/set_format_pattern_numbers.html
+          output: web
+        - title: Set the format to use when showing dates
+          url: /pages/admin/data_modeling/set_format_pattern.html
+          output: web
+        - title: Set the format to use when showing currencies
+          url: /pages/admin/data_modeling/set_the_format_to_use_when_showing_currencies.html
+          output: web
+        - title: Change the Attribution Dimension setting of a column
+          url: /pages/admin/data_modeling/attributable_dimension.html
+          output: web
+      - levelThreeTitle: Link tables using relationships
+        output: web
+        levelThreeItems:
+        - title: Link tables using relationships
+          url: /pages/admin/data_modeling/about_relationships.html
+          output: web
+        - title: Create a relationship
+          url: /pages/admin/data_modeling/create_new_relationship.html
+          output: web
+        - title: Delete a relationship
+          url: /pages/admin/data_modeling/delete_relationship.html
+          output: web
+      - levelThreeTitle: Use stickers
+        output: web
+        levelThreeItems:
+        - title: About stickers
+          url: /pages/admin/data_modeling/stickers_concept.html
+          output: web
+        - title: Create stickers
+          url: /pages/admin/data_modeling/create_stickers.html
+          output: web
+        - title: Apply a sticker
+          url: /pages/admin/data_modeling/apply_stickers.html
+          output: web
+        - title: Filter by a sticker
+          url: /pages/admin/data_modeling/filter_by_sticker.html
+          output: web
+    - levelTwoTitle: Simplify search with worksheets
+      output: web
+      levelTwoItems:
+      - title: About worksheets
+        url: /pages/admin/worksheets/about_worksheets.html
+        output: web
+      - levelThreeTitle: Create new worksheet
+        output: web
+        levelThreeItems:
+        - title: Create a new worksheet
+          url: /pages/admin/worksheets/worksheet_create.html
+          output: web
+        - title: Add sources and columns to a worksheet
+          url: /pages/admin/worksheets/worksheet_add_tables.html
+          output: web
+      - title: How the inclusion rule works
+        url: /pages/admin/worksheets/about_inclusion_rule.html
+        output: web
+      - levelThreeTitle: Join rules
+        output: web
+        levelThreeItems:
+        - title: How the worksheet join rule works
+          url: /pages/admin/worksheets/progressive_joins.html
+          output: web
+        - title: The join rule with Rule-Based Row Level Security
+          url: /pages/admin/worksheets/joins_and_RLS_rule_based.html
+          output: web
+        - title: The join rule with Legacy Row Level Security
+          url: /pages/admin/worksheets/joins_and_row_level_security.html
+          output: web
+        - title: Using table joins with the aggregated worksheet
+          url: /pages/admin/poc_features/about_aggregated_ws_and_table_joins.html
+          output: web
+      - levelThreeTitle: Formulas in worksheets
+        output: web
+        levelThreeItems:
+        - title: About formulas in worksheets
+          url: /pages/admin/worksheets/about_formulas.html
+          output: web
+        - title: Create a formula in a worksheet
+          url: /pages/admin/worksheets/create_formula.html
+          output: web
+      - levelThreeTitle: Edit a worksheet
+        output: web
+        levelThreeItems:
+        - title: Overview worksheet editing
+          url: /pages/admin/worksheets/edit_worksheet.html
+          output: web
+        - title: Rename a worksheet or table
+          url: /pages/admin/worksheets/change_a_logical_table_name.html
+          output: web
+        - title: Change the inclusion or join rule for a worksheet
+          url: /pages/admin/worksheets/change_inclusion_rule.html
+          output: web
+      - title: Delete a worksheet or table
+        url: /pages/admin/worksheets/delete_worksheet.html
+        output: web
+    - levelTwoTitle: Manage users and groups
+      output: web
+      levelTwoItems:
+      - title: About users and groups
+        url: /pages/admin/users_groups/about_users_groups.html
+        output: web
+      - title: About privileges
+        url: /pages/admin/users_groups/about_privileges.html
+        output: web
+      - title: Add a group and set security privileges
+        url: /pages/admin/users_groups/add_group.html
+        output: web
+      - title: Edit or delete a group
+        url: /pages/admin/users_groups/edit_group.html
+        output: web
+      - title: Add a user
+        url: /pages/admin/users_groups/add_user.html
+        output: web
+      - title: Add multiple users to a group
+        url: /pages/admin/users_groups/add_multiple_users_to_a_group.html
+        output: web
+      - title: Edit or delete a user
+        url: /pages/admin/users_groups/edit_user.html
+        output: web
+      - title: Forgotten password
+        url: /pages/admin/users_groups/forgot_password.html
+        output: web
+    - levelTwoTitle: Manage jobs
+      output: web
+      levelTwoItems:
+      - title: About job management
+        url: /pages/admin/manage_jobs/manage_jobs.html
+        output: web
+      - title: Understand scheduled pinboards
+        url: /pages/admin/manage_jobs/about_scheduled_pinboards.html
+        output: web
+      - title: Schedule a pinboard job
+        url: /pages/admin/manage_jobs/schedule_a_pinboard_job.html
+        output: web
+      - title: Scheduled pinboards management
+        url: /pages/admin/manage_jobs/scheduled_pinboards_management.html
+        output: web
+    - levelTwoTitle: Security
+      output: web
+      levelTwoItems:
+      - title: About security
+        url: /pages/admin/data_security/about_security.html
+        output: web
+      - levelThreeTitle: System security
+        output: web
+        levelThreeItems:
+        - title: About System security
+          url: /pages/admin/data_security/audit_logs.html
+          output: web
+        - title: Get audit logs
+          url: /pages/admin/data_security/get_audit_logs.html
+          output: web
+        - title: Security policies
+          url: /pages/admin/data_security/security_policy.html
+          output: web
+        - title: View installed packages
+          url: /pages/admin/data_security/view_installed_packages.html
+          output: web
+      - levelThreeTitle: Data security
+        output: web
+        levelThreeItems:
+        - title: Data security
+          url: /pages/admin/data_security/sharing_security_overview.html
+          output: web
+        - title: Share tables and columns
+          url: /pages/admin/data_security/share_source_tables.html
+          output: web
+        - title: Share worksheets
+          url: /pages/admin/data_security/share_worksheets.html
+          output: web
+        - title: Share a pinboard
+          url: /pages/admin/data_security/share_pinboards.html
+          output: web
+        - title: Revoke access \(unshare\)
+          url: /pages/admin/data_security/unshare.html
+          output: web
+      - levelThreeTitle: Row level security (RLS)
+        output: web
+        levelThreeItems:
+        - title: About RLS
+          url: /pages/admin/data_security/about_row_security.html
+          output: web
+        - title: About Rule-Based RLS
+          url: /pages/admin/data_security/new_row_level_security.html
+          output: web
+        - title: Disable data value suggestions
+          url: /pages/admin/data_security/disable_suggestions.html
+          output: web
+        - title: Access the Rule Builder
+          url: /pages/admin/data_security/access_rule_builder.html
+          output: web
+        - title: Define Rule-Based RLS rules
+          url: /pages/admin/data_security/define_rls_rules.html
+          output: web
+        - title: About Legacy RLS
+          url: /pages/admin/data_security/about_legacy_row_security.html
+          output: web
+        - title: Obtain the security file
+          url: /pages/admin/data_security/get_security_file.html
+          output: web
+        - title: Define Legacy RLS
+          url: /pages/admin/data_security/row_security.html
+          output: web
+        - title: Upload the edited security file
+          url: /pages/admin/data_security/upload_security_file.html
+          output: web
+      - title: Network security
+        url: /pages/admin/data_security/network_security.html
+        output: web
+    - levelTwoTitle: System administration
+      output: web
+      levelTwoItems:
+      - title: Overview of System administration
+        url: /pages/admin/system_admin/sysadmin_overview.html
+        output: web
+      - title: System monitoring
+        url: /pages/admin/system_admin/monitor_pinboards.html
+        output: web
+      - title: Using the Space Utilization chart
+        url: /pages/admin/system_admin/about_the_memory_usage_chart.html
+        output: web
+      - title: Generate and send a log bundle
+        url: /pages/admin/system_admin/generate_log_bundle.html
+        output: web
+      - title: Send logs to the administrator
+        url: /pages/admin/system_admin/send_logs_to_administrator.html
+        output: web
+      - title: Set up recording for Replay Search
+        url: /pages/admin/system_admin/configure_record_search.html
+        output: web
+    - levelTwoTitle: Backup and restore
+      output: web
+      levelTwoItems:
+      - title: Overview of backup and restore
+        url: /pages/admin/backup_restore/intro_backup_restore.html
+        output: web
+      - title: Understand the backup strategies
+        url: /pages/admin/backup_restore/choose_strategy.html
+        output: web
+      - title: Understand backup/snapshot schedules
+        url: /pages/admin/backup_restore/how_to_create_a_schedule.html
+        output: web
+      - levelThreeTitle: Work with snapshots
+        output: web
+        levelThreeItems:
+        - title: Overview of snapshots
+          url: /pages/admin/backup_restore/overview_snapshot.html
+          output: web
+        - title: Create a manual snapshot
+          url: /pages/admin/backup_restore/take_snapshot.html
+          output: web
+        - title: Manage periodic snapshots
+          url: /pages/admin/backup_restore/configure_periodic_snapshots.html
+          output: web
+      - levelThreeTitle: Work with backups
+        output: web
+        levelThreeItems:
+        - title: About snapshots and backups
+          url: /pages/admin/backup_restore/backups_and_snapshots.html
+          output: web
+        - title: Understand backup modes
+          url: /pages/admin/backup_restore/backup_modes.html
+          output: web
+        - title: Create a manual backup
+          url: /pages/admin/backup_restore/take_backup.html
+          output: web
+        - title: Configure periodic backups
+          url: /pages/admin/backup_restore/configure_backup.html
+          output: web
+        - title: About restore operations
+          url: /pages/admin/backup_restore/restore.html
+          output: web
+    - levelTwoTitle: Troubleshooting
+      output: web
+      levelTwoItems:
+      - title: About troubleshooting
+        url: /pages/admin/troubleshooting/troubleshooting_intro.html
+        output: web
+      - title: Get logs
+        url: /pages/admin/troubleshooting/get_logs.html
+        output: web
+      - title: Upload logs to ThoughtSpot Support
+        url: /pages/admin/troubleshooting/upload_logs_egnyte.html
+        output: web
+      - title: Network connectivity issues
+        url: /pages/admin/troubleshooting/check_connectivity.html
+        output: web
+      - title: Change the timezone
+        url: /pages/admin/troubleshooting/set_timezone.html
+        output: web
+      - title: Browser untrusted connection error
+        url: /pages/admin/troubleshooting/certificate_warning.html
+        output: web
+      - title: Characters not displaying correctly
+        url: /pages/admin/loading/char_encoding.html
+        output: web
+      - title: Clear the browser cache
+        url: /pages/admin/troubleshooting/clear_browser_cache.html
+        output: web
+      - title: Cannot open a saved answer that contains a formula
+        url: /pages/admin/troubleshooting/formula_date_problem.html
+        output: web
+      - title: Data loading too slowly
+        url: /pages/admin/troubleshooting/data_loading_too_slowly.html
+        output: web
+      - title: Search results contain too many blanks
+        url: /pages/admin/troubleshooting/search_too_many_blanks.html
+        output: web
+    - levelTwoTitle: Reference
+      output: web
+      levelTwoItems:
+      - title: Introduction to reference
+        url: /pages/admin/reference/intro_reference.html
+        output: web
+      - title: TQL reference
+        url: /pages/admin/reference/sql_cli_commands.html
+        output: web
+      - title: ThoughtSpot Loader flag reference
+        url: /pages/admin/reference/data_importer_ref.html
+        output: web
+      - title: tscli --adv command reference
+        url: /pages/admin/reference/tscli_command_ref.html
+        output: web
+      - title: Formula reference
+        url: /pages/admin/reference/formula_reference.html
+        output: web
+      - title: Date and time formats reference
+        url: /pages/admin/reference/date_formats_for_loading.html
+        output: web
+      - title: Row level security rules reference
+        url: /pages/admin/reference/rls_rule_builder_reference.html
+        output: web
   - sectiontitle: Users Guide
     output: web
     sectionitems:
     - title: pageItem1
       url: index.html
       output: web
+  #
+  #
   # - sectiontitle: Data Connect Guide
   #   output: web
   #   sectionitems:
