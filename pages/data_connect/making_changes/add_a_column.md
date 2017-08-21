@@ -1,9 +1,9 @@
 ---
-title: [elephant]
+title: [Add a column to an existing data source]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Add a column to an existing data source."
 sidebar: mydoc_sidebar
 ---
 # Add a column to an existing data source
@@ -24,8 +24,8 @@ The procedure to make this change to an existing data source has two main parts:
 -   Alter the table definition in the target table using TQL.
 -   Create a new data source, and edit the DDL to match the target table exactly.
 
-1.   [Log in to the Linux shell using SSH](../../../admin/setup/login_console.html#). 
-2.   Launch TQL. 
+1.   [Log in to the Linux shell using SSH](../../../admin/setup/login_console.html#).
+2.   Launch TQL.
 
     ```
     $ tql
@@ -41,7 +41,7 @@ The procedure to make this change to an existing data source has two main parts:
 
     To see the current sharding on the table, use `SCRIPT TABLE <table\_name>;`
 
-5.   Issue the command to change the data type of a column using this syntax: 
+5.   Issue the command to change the data type of a column using this syntax:
 
     ```
     TQL> ALTER TABLE <schema>.<table>
@@ -67,7 +67,6 @@ The procedure to make this change to an existing data source has two main parts:
 
 7.  [Create a new data source.](../../../shared/conrefs/../../data_connect/data_connect/setup/adding_data_source.html#)Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the `SCRIPT TABLE` command.
 8.  Run the data load and verify that everything is working as it should be.
-9.   If the old data source was running as a recurring load, [stop it from running](../../../shared/conrefs/../../data_connect/data_connect/making_changes/stop_scheduled_job.html#). 
+9.   If the old data source was running as a recurring load, [stop it from running](../../../shared/conrefs/../../data_connect/data_connect/making_changes/stop_scheduled_job.html#).
 
 **Parent topic:** [About making changes to Data Connect setup](../../../data_connect/data_connect/making_changes/about_changing_etl_jobs.html)
-

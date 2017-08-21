@@ -1,9 +1,9 @@
 ---
-title: [elephant]
+title: [About making changes to Data Connect setup]
 tags: [formatting]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can change to the scheduling, data sources, or even the schema."
 sidebar: mydoc_sidebar
 ---
 # About making changes to Data Connect setup
