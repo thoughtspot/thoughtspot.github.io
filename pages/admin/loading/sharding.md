@@ -102,7 +102,7 @@ PARTITION BY HASH (96) KEY ("product_id")
 ;
 ```
 
-## Sharded (distributed) face tables
+## Sharded (distributed) fact tables
 
 You can also join two sharded fact tables with different shard keys, otherwise know as non co-sharded tables. It may take a while to join two tables sharded on different keys since a lot of data redistribution is required. Therefore, ThoughtSpot recommends that you use a common shard key for two fact tables.
 
