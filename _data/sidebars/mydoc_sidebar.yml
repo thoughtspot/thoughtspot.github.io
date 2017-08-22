@@ -1081,6 +1081,9 @@ entries:
     - title: Date and time formats reference
       url: /pages/reference/date_formats_for_loading.html
       output: web
+    - title: Error code reference
+      url: /pages/error_code/error_codes_reference.html
+      output: web
   - sectiontitle: Data Connect Guide
     output: web
     sectionitems:
@@ -1451,24 +1454,67 @@ entries:
         output: web
       - title: Introduction
         url: /pages/aws/introduction/introduction.html
-        output: web
+        output: pdf
       - title: About AWS
         url: /pages/aws/introduction/about_aws.html
         output: web
       - title: Configuration
         url: /pages/aws/configuration/about_configuration.html
+        output: pdf
+      - title: Configuration options
+        url: /pages/aws/configuration/configuration_options.html
         output: web
-#     -   [Configuration options](aws/configuration/configuration_options.html)
-      - title: Installation and setup
-        url: aws/setup/installation_and_setup.html
+      - levelTwoTitle: Installation using an AMI
         output: web
-#     -   [About the AMI](aws/setup/about_the_ami.html)
-#     -   [Launch an instance](aws/setup/launch_an_instance.html)
-# -   [ThoughtSpot on AWS reference](aws/reference/thoughtspot_on_aws_reference.html)
-#     -   [Network ports](admin/setup/firewall_ports.html)
+        levelTwoItems:
+        - title: Introduction
+          url: /pages/aws/setup/installation_and_setup.html
+          output: pdf
+        - title: About the AMI
+          url: /pages/aws/setup/about_the_ami.html
+          output: web
+        - title: Launch an instance
+          url: /pages/aws/setup/launch_an_instance.html
+          output: web
+        - title: ThoughtSpot on AWS reference
+          url: /pages/aws/reference/thoughtspot_on_aws_reference.html
+          output: pdf
+      - title: Network ports
+        url: /pages/admin/setup/firewall_ports.html
+        output: web
   - sectiontitle: Error Codes Guide
+    output: pdf
+    sectionitems:
+    - title: About error codes
+      url: /pages/error_code/about_error_codes.html
+      output: pdf
+    - title: Error code reference
+      url: /pages/error_code/error_codes_reference.html
+      output: pdf
+  - sectiontitle: Disaster Recovery Guide
     output: web
     sectionitems:
-  - sectiontitle: Disaster Recover Guide
-    output: web
-    sectionitems:
+    - title: About disaster recovery
+      url: /pages/disaster_recovery/about_disaster_recovery.html
+      output: web
+    - title: Disk failure
+      url: /pages/disaster_recovery/disk_failure.html
+      output: web
+    - title: Node failure
+      url: /pages/disaster_recovery/node_failure.html
+      output: web
+    - levelTwoTitle: Cluster replacement
+      output: web
+      levelTwoItems:
+      - title: Overview of cluster replacement
+        url: /pages/disaster_recovery/cluster_replacement.html
+        output: web
+      - title: Mount a NAS file system
+        url: /pages/admin/setup/NAS_mount.html
+        output: web
+      - title: Set up a disaster recovery configuration
+        url: /pages/disaster_recovery/set_up_DR_config.html
+        output: web
+      - title: Recover a cluster from a disaster
+        url: /pages/disaster_recovery/recover_cluster.html
+        output: web
