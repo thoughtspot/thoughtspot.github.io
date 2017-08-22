@@ -1285,27 +1285,190 @@ entries:
     - title: API Reference
       url: /pages/application_integration/reference/public_api_reference.html
       output: web
-  # - sectiontitle: Disaster Recover Guide
-  #   output: web
-  #   sectionitems:
-  #   - title: pageItem1
-  #     url: index.html
-  #     output: web
-  # - sectiontitle: Error Codes Guide
-  #   output: web
-  #   sectionitems:
-  #   - title: Analytic Search Appliance
-  #     url: index.html
-  #     output: web
-  # - sectiontitle: QuickStart
-  #   output: web
-  #   sectionitems:
-  #   - title: Analytic Search Appliance
-  #     url: index.html
-  #     output: web
-  #   - title: AWS Appliance
-  #     url: index.html
-  #     output: web
-  #   - title: VMWare
-  #     url: index.html
-  #     output: web
+  - sectiontitle: Data Integration Guide
+    output: web
+    sectionitems:
+    - title: Introduction
+      url: /pages/data_integration/introduction/introduction_data_integration.html
+      output: web
+    - levelTwoTitle: Getting connected
+      output: web
+      levelTwoItems:
+      - title: Login credentials for administration
+        url: /pages/data_integration/introduction/logins.html
+        output: web
+      - title: Log in to the Linux shell using SSH
+        url: /pages/data_integration/introduction/login_console.html
+        output: web
+      - title: Log in to ThoughtSpot from a browser
+        url: /pages/data_integration/introduction/accessing.html
+        output: web
+    - title: ThoughtSpot Clients
+      url: /pages/data_integration/clients/about_clients.html
+      output: web
+    - levelTwoTitle: Use the ODBC Client
+      output: web
+      levelTwoItems:
+       - title: About the ODBC Driver
+         url: /pages/data_integration/clients/about_odbc.html
+         output: web
+       - levelThreeTitle: Install on Windows
+         output: web
+         levelThreeItems:
+         - title: Windows Installation Overview
+           url: /pages/data_integration/clients/install_odbc_windows.html
+           output: web
+         - title: Change the ODBC Configuration on Windows
+           url: /pages/data_integration/clients/change_odbc_windows.html
+           output: web
+         - title: Add a New Data Source to ODBC on Windows
+           url: /pages/data_integration/clients/add_new_ODBC_source_windows.html
+           output: web
+       - title: Install the ODBC Driver on Linux
+         url: /pages/data_integration/clients/install_odbc_linux.html
+         output: web
+       - title: Install the ODBC Driver on Solaris
+         url: /pages/data_integration/clients/install_odbc_solaris.html
+         output: web
+       - title: Best Practices for Using ODBC
+         url: /pages/data_integration/clients/odbc_best_practices.html
+         output: web
+    - levelTwoTitle: JDBC Driver Client
+      output: web
+      levelTwoItems:
+      - title: About the JDBC Driver
+        url: /pages/data_integration/clients/about_jdbc_driver.html
+        output: web
+      - title: Use the JDBC Driver
+        url: /pages/data_integration/clients/use_jdbc_driver.html
+        output: web
+    - title: About Informatica Connector
+      url: /pages/data_integration/clients/about_informatica.html
+      output: web
+    - levelTwoTitle: Microsoft SSIS client
+      output: web
+      levelTwoItems:
+      - title: About Microsoft SSIS
+        url: /pages/data_integration/ssis/about_ssis.html)
+      - title: ODBC Data Source Administrator
+        url: /pages/data_integration/ssis/odbc_data_source_administrator.html
+        output: web
+      - title: Set up the ODBC Driver for SSIS
+        url: /pages/data_integration/ssis/set_up_the_odbc_driver_using_ssis.html
+        output: web
+    - levelTwoTitle: Pentaho client
+      output: web
+      levelTwoItems:
+      - title: About Pentaho
+        url: /pages/data_integration/pentaho/about_pentaho.html
+        output: web
+      - title: Set up the JDBC Driver for Pentaho
+        url: /pages/data_integration/pentaho/set_up_the_jdbc_driver_for_pentaho.html
+        output: web
+    - levelTwoTitle: Troubleshooting
+      output: web
+      levelTwoItems:
+      - title: Troubleshooting Data Integrations
+        url: /pages/data_integration/troubleshooting/troubleshooting_intro.html
+        output: web
+      - title: Enabling ODBC Logs on Windows
+        url: /pages/data_integration/troubleshooting/troubleshooting_ODBC.html
+        output: web
+      - title: Enabling ODBC Logs on Linux or Solaris
+        url: /pages/data_integration/troubleshooting/enable_ODBC_log_linux.html
+        output: web
+      - title: Enabling JDBC Logs
+        url: /pages/data_integration/troubleshooting/JDBC_logging.html
+        output: web
+      - title: Schema not found error
+        url: /pages/data_integration/troubleshooting/schema_not_found.html
+        output: web
+      - title: How to improve throughput of the load
+        url: /pages/data_integration/troubleshooting/how_to_improve_throughput_of_the_load.html
+        output: web
+    - levelTwoTitle: Reference
+      output: web
+      levelTwoItems:
+      - title: Reference
+        url: /pages/data_integration/reference/intro_reference.html
+        output: pdf
+      - title: ODBC supported SQL commands
+        url: /pages/data_integration/reference/odbc_commands.html
+        output: web
+      - title: ODBC and JDBC configuration properties
+        url: /pages/data_integration/reference/simba_settings.html
+        output: web
+  - sectiontitle: Appliance Quick Start Guide
+    output: web
+    sectionitems:
+    - title: Welcome to ThoughtSpot
+      url: /pages/appliance/welcome/welcome_intro.html
+      output: web
+    - title: Contact ThoughtSpot
+      url: /pages/appliance/welcome/contact.html
+      output: pdf
+    - levelTwoTitle: Hardware and deployment
+      output: web
+      levelTwoItems:
+      - title: Hardware and deployment
+        url: /pages/appliance/physical/hardware_and_deployment.html
+        output: web
+      - title: About the hardware
+        url: /pages/appliance/physical/about_the_ivy_bridge_platform.html
+        output: web
+      - title: Hardware front and rear view diagrams
+        url: /pages/appliance/physical/hardware_front_and_rear_view_diagrams.html
+        output: web
+      - title: Hardware provided by ThoughtSpot
+        url: /pages/appliance/physical/inthebox.html
+        output: web
+      - title: Additional hardware requirements
+        url: /pages/appliance/physical/additional_hardware_requirements.html
+        output: web
+      - title: Typical physical deployment
+        url: /pages/appliance/physical/rack.html
+        output: web
+      - title: Network connection
+        url: /pages/appliance/physical/network_connection.html
+        output: web
+    - levelTwoTitle: Cabling
+      output: web
+      levelTwoItems:
+      - title: Cable networking and installation
+        url: /pages/appliance/setup/overview.html
+        output: pdf
+      - title: Cable networking
+        url: /pages/appliance/setup/cable_networking.html
+        output: web
+      - title: Install and start the appliance
+        url: /pages/appliance/setup/appliance_setup.html
+        output: web
+  - sectiontitle: AWS Quick Start Guide
+    output: web
+    sectionitems:
+      - title: Welcome to ThoughtSpot
+        url: /pages/aws/welcome/welcome_to_thoughtspot.html
+        output: web
+      - title: Introduction
+        url: /pages/aws/introduction/introduction.html
+        output: web
+      - title: About AWS
+        url: /pages/aws/introduction/about_aws.html
+        output: web
+      - title: Configuration
+        url: /pages/aws/configuration/about_configuration.html
+        output: web
+#     -   [Configuration options](aws/configuration/configuration_options.html)
+      - title: Installation and setup
+        url: aws/setup/installation_and_setup.html
+        output: web
+#     -   [About the AMI](aws/setup/about_the_ami.html)
+#     -   [Launch an instance](aws/setup/launch_an_instance.html)
+# -   [ThoughtSpot on AWS reference](aws/reference/thoughtspot_on_aws_reference.html)
+#     -   [Network ports](admin/setup/firewall_ports.html)
+  - sectiontitle: Error Codes Guide
+    output: web
+    sectionitems:
+  - sectiontitle: Disaster Recover Guide
+    output: web
+    sectionitems:

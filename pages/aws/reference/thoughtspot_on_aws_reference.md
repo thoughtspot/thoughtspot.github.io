@@ -1,0 +1,24 @@
+---
+title: [elephants]
+tags: [formatting]
+keywords: tbd
+last_updated: tbd
+summary: "blerg"
+sidebar: mydoc_sidebar
+---
+# ThoughtSpot on AWS reference
+
+This section contains a reference for ThoughtSpot on Amazon Web Services (AWS).
+
+## Network ports
+
+This reference lists the potential ports to open when setting up your security group.
+
+-   **[Network ports](../../admin/setup/firewall_ports.html)**  
+For regular operations and for debugging, there are some ports you will need to keep open to network traffic from end users. Another, larger list of ports must be kept open for network traffic between the nodes in the cluster.
+
+**Related information**  
+
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
+
