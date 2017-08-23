@@ -8,10 +8,14 @@ body {
 #navig a[href] {color: #595959 !important;}
 table .table {max-width:650px;}
 
-#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; }
+#navig li.sectionHead {font-weight: bold; font-size: 12px; color: #595959 !important; }
+#navig li.sectionHead2 {padding-left:14px; font-weight: bold; font-size: 12px; color: #595959 !important; }
 #navig li {font-weight: normal; }
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
+
+#navig ul.indent2 { padding-left:4px;}
+#navig li.indent3 { padding-left:14px;}
 
 a[href]::after {
     content: " (page " target-counter(attr(href), page) ")"
@@ -48,7 +52,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .printSubtitle {
     font-size: 19pt;
     color: #cccccc !important;
-    front-family: "Grotesque MT Light";
+    font-family: "Grotesque MT Light";
     line-height: 22pt;
     letter-spacing: -.5px;
     margin-bottom:20px;

@@ -5,13 +5,13 @@
   {% for entry in sidebar %}
     {% for section in entry.sections %}
       {% if section.output contains "web" %}
-       <li class="section">
+       <li >
          <a href="#">{{ section.sectiontitle }}</a>
-       <ul>
+       <ul class="section">
             {% for sectionitem in section.sectionitems %}
               {% if sectionitem.title and sectionitem.output contains "web" %}
                 {% if sectionitem.external_url %}
-                 <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
+                 <li ><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
                 {% elsif page.url == sectionitem.url %}
                   <li class="active"><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
                 {% else %}
