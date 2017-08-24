@@ -1,12 +1,12 @@
 ---
 title: [About load balancing and proxies]
-tags: 
-keywords: tbd
+tags:
+keywords: "load balancing, performance"
 last_updated: tbd
-summary: "blerg"
+summary: "A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency. "
 sidebar: mydoc_sidebar
 ---
-A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency. Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.
+Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.
 
 ## Load balance across ThoughtSpot nodes
 

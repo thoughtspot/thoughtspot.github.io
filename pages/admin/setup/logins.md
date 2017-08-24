@@ -1,6 +1,6 @@
 ---
-title: [How to get administrator access]
-tags: 
+title: [ Login credentials for administration]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "You need administrative access to perform the actions discussed in this guide. "

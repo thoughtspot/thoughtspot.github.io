@@ -1,9 +1,9 @@
 ---
 title: [Network ports]
-tags: 
-keywords: tbd
+tags:
+keywords: network, ports
 last_updated: tbd
-summary: "blerg"
+summary: "Lists the required and optional ports for an installation."
 sidebar: mydoc_sidebar
 ---
 For regular operations and for debugging, there are some ports you will need to keep open to network traffic from end users. Another, larger list of ports must be kept open for network traffic between the nodes in the cluster.
@@ -18,9 +18,6 @@ The following ports need to be opened up to requests from your user population. 
 |80|HTTP|HTTP|bidirectional|All users IP addresses|All nodes|Hypertext Transfer Protocol for website traffic.|
 |443|HTTPS|HTTPS|bidirectional|All users IP addresses|All nodes|Secure HTTP.|
 |12345|TCP|Simba|bidirectional|Administrators IP addresses|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
-
-|Port|Protocol|Service Name|Direction|Source|Destination|Description|
-|----|--------|------------|---------|------|-----------|-----------|
 |2201|HTTP|Orion master HTTP|bidirectional|Administrator IP addresses|All nodes|Port used to debug the cluster manager.|
 |2101|HTTP|Oreo HTTP|bidirectional|Administrator IP addresses|All nodes|Port used to debug the node daemon.|
 |4001|HTTP|Falcon worker HTTP|bidirectional|Administrator IP addresses|All nodes|Port used to debug the data cache.|
@@ -73,9 +70,7 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |8080|HTTP|Tomcat|bidirectional|All nodes|All nodes|BI engine communication with clients|
 |8787|HTTP|Periscope (UI) service HTTP port|bidirectional|All nodes|All nodes|Administration UI back end|
 |8888|HTTP|HTTP proxy server (tinyproxy)|bidirectional|All nodes|All nodes|Reverse SSH tunnel|
-|11211|Mem-cached
-
-|Memcached server port|bidirectional|All nodes|All nodes|BI engine cache|
+|11211|Mem-cached |Memcached server port|bidirectional|All nodes|All nodes|BI engine cache|
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
@@ -93,9 +88,7 @@ ThoughtSpot uses static ports for inbound and outbound access to a cluster.
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|
-|443|HTTPS|HTTPS|outbound|All nodes|208.83.110.20
-
-|For transferring files to thoughtspot.egnyte.com (IP address 208.83.110.20).|
+|443|HTTPS|HTTPS|outbound|All nodes|208.83.110.20|For transferring files to thoughtspot.egnyte.com (IP address 208.83.110.20).|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
@@ -107,9 +100,8 @@ ThoughtSpot uses static ports for out-of-band IPMI communications between the cl
 |----|--------|------------|---------|------|-----|-----------|
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
 
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)
-
-**Related information**  
 
 
-[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
+## Related information  
+
+[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)

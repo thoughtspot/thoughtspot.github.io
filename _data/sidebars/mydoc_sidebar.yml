@@ -94,10 +94,10 @@ entries:
       - title: Introduction to data management
         url: /pages/admin/loading/loading_intro.html
         output: web, pdf
-      - title: About case configuration
+      - title: Configure casing
         url: /pages/admin/loading/about_case_configuration.html
         output: web, pdf
-      - title: Generate CSV files with the data to be loaded
+      - title: Use CSV files to load data
         url: /pages/admin/loading/generate_flat_file.html
         output: web, pdf
       - title: Load data from a web browser
