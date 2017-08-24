@@ -1,6 +1,6 @@
 ---
 title: [About making changes to Data Connect setup]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "You can change to the scheduling, data sources, or even the schema."

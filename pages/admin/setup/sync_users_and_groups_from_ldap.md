@@ -1,13 +1,11 @@
 ---
 title: [Sync users and groups from LDAP]
-tags: [formatting]
+tags: [Security_SAML_LDAP_AD]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar
 ---
-Use this procedure to synchronize your ThoughtSpot system with an LDAP server.
-
 Before synchronizing users and groups, you will need this information:
 
 -   IP address and port of the server where your ThoughtSpot instance is running. This hostport is needed in the following format `http(s)://<host>:<port>` or `http(s)://<domain>`.
@@ -32,14 +30,14 @@ There are two ways for you to fetch users and groups from LDAP and populate them
 
 To run the LDAP sync script in interactive mode:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Run the command to start the script:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Run the command to start the script:
 
     ```
     python syncUsersAndGroups.py interactive
     ```
 
-3.   Answer the prompts using the information you collected above. For example:
+3. Answer the prompts using the information you collected above. For example:
 
     ```
     Complete URL of TS server in format "http(s)://<host>:<port>": http://10.77.145.24:8088
@@ -70,18 +68,19 @@ To run the LDAP sync script in interactive mode:
 
     This prompt is asking if you would like to include group members even if they do not belong to the current sub tree that is being synced.
 
-4.   Alternatively, to input your own shorthand script commands:
+4. Alternatively, to input your own shorthand script commands:
 
-    1.  Issue the Python script commands, supplying all of the above information, following this format example:
+    Issue the Python script commands, supplying all of the above information, following this format example:
+
     ```
     python syncUsersAndGroups.py script \
-    –-ts_hostport <ts\_hostport> \
+    –-ts_hostport <ts_hostport> \
     --disable_ssl \
-    --ts_uname <ts\_username> \
-    --ts_pass <ts\_password> \
-    --ldap_hostport '<ldap\_hostport>' \
-    --ldap_uname '<ldap\_username>' \
-    --ldap_pass '<ldap\_password>' \
+    --ts_uname <ts_username> \
+    --ts_pass <ts_password> \
+    --ldap_hostport '<ldap_hostport>' \
+    --ldap_uname '<ldap_username>' \
+    --ldap_pass '<ldap_password>' \
     --sync \
     --purge \
     --basedn 'DC=ldap,DC=thoughtspot,DC=com' \
@@ -90,6 +89,3 @@ To run the LDAP sync script in interactive mode:
     ```
 
     The bottom half of the above command example targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
-
-
-**Parent topic:** [About LDAP integration](../../admin/setup/about_LDAP.html)

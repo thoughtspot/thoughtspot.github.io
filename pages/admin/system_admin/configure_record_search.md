@@ -1,6 +1,6 @@
 ---
 title: [Set up recording for Replay Search]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -28,7 +28,7 @@ To record a search replay using ThoughtSpot:
 
      ![](../../images/record_search_replay_2.png "Browser warning message")
 
-5.   Find the setting for **media.getusermedia.screensharing.allowed\_domains**, and add the domain used by ThoughtSpot. This domain will be the same one you made note of from the **Cannot record screen** message.
+5.   Find the setting for **media.getusermedia.screensharing.allowed_domains**, and add the domain used by ThoughtSpot. This domain will be the same one you made note of from the **Cannot record screen** message.
 
      ![](../../images/record_search_replay_3.png "Set the domain for screensharing")
 

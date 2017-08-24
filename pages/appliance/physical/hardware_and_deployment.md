@@ -1,6 +1,6 @@
 ---
 title: [Hardware and deployment]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Required and provided installation hardware."

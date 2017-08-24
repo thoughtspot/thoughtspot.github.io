@@ -1,6 +1,6 @@
 ---
 title: [About Rule-Based Row Level Security]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -44,7 +44,7 @@ Use these best practices for Rule-Based Row Level Security:
 
     If you want to ensure that a group can always see all rows in a table, use a rule that always evaluates to "true" for that group. For example:
 
-    -   if ts\_groups = supergroup then 'true'
+    -   if ts_groups = supergroup then 'true'
 
 ## Row level security with multiple conditions
 

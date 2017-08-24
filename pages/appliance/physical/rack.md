@@ -1,6 +1,6 @@
 ---
 title: [Typical physical deployment]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Physical appliance configuration."

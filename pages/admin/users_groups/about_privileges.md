@@ -1,6 +1,6 @@
 ---
 title: [About privileges]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

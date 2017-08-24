@@ -1,6 +1,6 @@
 ---
 title: [About Legacy Row Level Security]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -23,8 +23,8 @@ You define the rules for row level security by editing the security file in Exce
 |Table identifier|LogicalTableGUID|TableGUID from the model file.|
 |Column|ColumnName|ColumnName from the model file.|
 |Column identifier|ColumnGUID|ColumnGUID from the model file.|
-|Operation|Operation|Supply one of these operators:-   BEGINS\_WITH
--   ENDS\_WITH
+|Operation|Operation|Supply one of these operators:-   BEGINS_WITH
+-   ENDS_WITH
 -   CONTAINS
 -   EQ (equals)
 -   NE (not equals)
@@ -33,9 +33,9 @@ You define the rules for row level security by editing the security file in Exce
 -   LE (less than or equal to)
 -   LT (less than)
 -   BW (between)
--   BW\_INC (between with both boundaries included)
--   BW\_INC\_MIN (between with the lower boundary included)
--   BW\_INC\_MAX (between with upper boundary included)
+-   BW_INC (between with both boundaries included)
+-   BW_INC_MIN (between with the lower boundary included)
+-   BW_INC_MAX (between with upper boundary included)
 
 |
 |Column value(s)|Value|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|

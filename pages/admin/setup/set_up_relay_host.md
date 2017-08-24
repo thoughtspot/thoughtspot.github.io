@@ -1,52 +1,51 @@
 ---
 title: [Set the relay host for SMTP (email)]
-tags: [formatting]
-keywords: tbd
+tags: [SysAdm_tscli_Config]
+keywords: email,SMTP,notification,"relay host"
 last_updated: tbd
 summary: "To enable alert emails, you'll need to set up a relay host for SMTP traffic."
 sidebar: mydoc_sidebar
 ---
-A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
+ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
 
 ## Set up the relay Host
 
 To set up a relay host:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Issue the setup command, providing the IP address of the relay host:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Issue the setup command, providing the IP address of the relay host:
 
-    ```
-    $ tscli smtp set-relayhost <IP\_address>
-    ```
+      ```
+      $ tscli smtp set-relayhost <IP_address>
+      ```
 
-3.   Verify your settings:
+3. Verify your settings:
 
-    ```
-    $ tscli smtp show-relayhost
-    ```
+      ```
+      $ tscli smtp show-relayhost
+      ```
 
-4.   [Verify that email is working](setup_email.html#).
+4. Verify that email is working.
 
+## Configure an email to receive alerts
 
-## Verify the settings are working properly
+ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts are sent. You should add an email to receive alerts by issuing:
 
- Check if the email settings are working properly by using this procedure. ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support.
+```
+$ tscli monitoring set-config --email <your_email>
+```
 
- ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts will be sent. But you can add an email to receive alerts by issuing:
+To send to multiple emails, provide a comma-separated list with no spaces.
 
- ```
- $ tscli monitoring set-config --email <your\_email>
- ```
+## Verify the relay with an email
 
- You can add a list of email addresses separated by commas, with no spaces.
+Check if the email settings are working properly by using this procedure.
 
- To verify that the send email function is working correctly:
+ 1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+ 2. Try sending an email to yourself by issuing:
 
- 1.   [Log in to the Linux shell using SSH](login_console.html#).
- 2.   Try sending an email to yourself by issuing:
+       ```
+       $ echo | mail -s Hello <your_email>
+       ```
 
-     ```
-     $ echo | mail -s Hello <your\_email>
-     ```
-
- 3.   If you receive the email at the address you supplied, email is working correctly.
+ 3. If you receive the email at the address(es) you supplied, email is working correctly.

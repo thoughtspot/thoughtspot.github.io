@@ -1,6 +1,6 @@
 ---
 title: [Change the primary key for a table]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

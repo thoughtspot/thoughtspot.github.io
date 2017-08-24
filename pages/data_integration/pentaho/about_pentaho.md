@@ -1,6 +1,6 @@
 ---
 title: [About Pentaho]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "You can use the Pentaho Data Integration (PDI to create a JDBC connection."

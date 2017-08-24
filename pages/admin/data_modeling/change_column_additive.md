@@ -1,6 +1,6 @@
 ---
 title: [Change the additive setting for a column]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

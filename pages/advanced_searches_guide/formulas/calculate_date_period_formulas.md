@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -17,7 +17,7 @@ Here are some examples of using date formulas:
 The following example shows you how to create formulas that you can use to compare data from this week to last week.
 
 1.  The formula for this week is week ( today () ) - week (date).
-2.  The formula for last week is diff\_days ( week ( today ) ) , week ( date ) ).
+2.  The formula for last week is diff_days ( week ( today ) ) , week ( date ) ).
 
 ## Example 2
 

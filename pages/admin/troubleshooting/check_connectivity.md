@@ -1,6 +1,6 @@
 ---
 title: [Network connectivity issues]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

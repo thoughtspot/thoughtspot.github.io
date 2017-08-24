@@ -1,6 +1,6 @@
 ---
 title: [Enabling JDBC Logs]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Configure logging parameter strings."

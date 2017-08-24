@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -21,10 +21,10 @@ Both of these types of values are represented as **\{blank\}**, but if you filte
 
 ## To show NULL and blank values differently
 
-If you need to differentiate between NULL and blank values, you can [Add a formula](how_to_add_formula.html#) to make them appear differently in charts and tables. In this example, we'll use `<text\_column>` to refer to the text column which contains both NULL and blank values:
+If you need to differentiate between NULL and blank values, you can [Add a formula](how_to_add_formula.html#) to make them appear differently in charts and tables. In this example, we'll use `<text_column>` to refer to the text column which contains both NULL and blank values:
 
 ```
-if ( strlen ( <text\_column> ) = 0 ) then if ( isnull ( <text\_column> ) ) then 'null' else 'empty' else <text\_column> 
+if ( strlen ( <text_column> ) = 0 ) then if ( isnull ( <text_column> ) ) then 'null' else 'empty' else <text_column> 
 ```
 
 This formula will show "null" where the value contained in the column is actually NULL. When the value is blank or empty, it will show up as "empty".
@@ -34,7 +34,7 @@ This formula will show "null" where the value contained in the column is actuall
 If you want to keep the same display format for NULL and blank values, but be able to filter on both using "\{blank\}", your [formula](how_to_add_formula.html#) will be slightly different. You can use a formula like:
 
 ```
-if ( strlen ( <text\_column> ) = 0 ) then null else <text\_column> 
+if ( strlen ( <text_column> ) = 0 ) then null else <text_column> 
 ```
 
 Use the filter you created instead of the original text column in your search to get the result you desire.

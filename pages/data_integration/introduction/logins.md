@@ -1,6 +1,6 @@
 ---
 title: [Login credentials for administration]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Getting administrative permissions."

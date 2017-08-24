@@ -21,7 +21,7 @@
   url: /pages/admin_guide/setup/set_custom_calendar.html
   output: web,pdf
 - title:About SSL (secure socket layers)
-  url: /pages/admin_guide/setup/about_SSL.html
+  url: /pages/admin_guide/setup/SSL_config.html
   output: web,pdf
 - title: Configure SSL for web traffic
   url: /pages/admin_guide/setup/configure_SSL.html

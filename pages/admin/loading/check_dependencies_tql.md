@@ -1,6 +1,6 @@
 ---
 title: [Delete or change a table in TQL]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

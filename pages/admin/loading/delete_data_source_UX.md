@@ -1,6 +1,6 @@
 ---
 title: [Delete a data source from the browser]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

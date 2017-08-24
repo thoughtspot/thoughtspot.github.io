@@ -1,6 +1,6 @@
 ---
 title: [About load balancing and proxies]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -42,5 +42,3 @@ Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot
 ## Network architectural diagram
 
 ![](../../images/network_architectural_diagram.png)
-
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)

@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -10,7 +10,7 @@ sidebar: mydoc_sidebar
 
 You can use the cumulative function in a search to measure from the start of your data to the current point.
 
-This example will demonstrate using the cumulative\_sum formula, also known as a running total. To use the cumulative function in a search:
+This example will demonstrate using the cumulative_sum formula, also known as a running total. To use the cumulative function in a search:
 
 1.   Start a new search. 
 
@@ -20,7 +20,7 @@ This example will demonstrate using the cumulative\_sum formula, also known as a
 
      ![](../../images/create_formula_in_answer.png "Create a new formula in an answer") 
 
-3.   Enter the cumulative\_sum formula, providing a measure and one or more attributes. The example will return the sum of revenue, accumulated by the commit date. 
+3.   Enter the cumulative_sum formula, providing a measure and one or more attributes. The example will return the sum of revenue, accumulated by the commit date. 
 
      ![](../../images/cumulative_sum_formula.png "Cumulative Sum Formula") 
 

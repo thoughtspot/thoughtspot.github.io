@@ -1,6 +1,6 @@
 ---
 title: [Set up the JDBC Driver for Pentaho]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "JDBC to connect to the Falcon Simba server from Pentaho."
@@ -10,12 +10,12 @@ sidebar: mydoc_sidebar
 
 Use JDBC to connect to the Falcon Simba server from Pentaho. The connection will be made between a new Falcon Table Input and Output objects.
 
-Before starting the Pentaho Data Integration (PDI) client and creating the connection, ensure that the Simba JDBC client libraries are present in the Pentaho client/server machines. This will ensure that they can be picked up at runtime. Please copy the SimbaJDBCClient4.jar file or the thoughtspot\_jdbc4.jar file to the following directories:
+Before starting the Pentaho Data Integration (PDI) client and creating the connection, ensure that the Simba JDBC client libraries are present in the Pentaho client/server machines. This will ensure that they can be picked up at runtime. Please copy the SimbaJDBCClient4.jar file or the thoughtspot_jdbc4.jar file to the following directories:
 
--   <Pentaho\_install\_dir\>/server/data-integration-server/tomcat/webapps/pentaho-di/WED-INF/lib/
--   <Pentaho\_install\_dir\>/design-tools/data-integration/lib/
--   <Pentaho\_install\_dir\>/server/data-integration-server/tomcat/lib/
--   <Pentaho\_install\_dir\>/design-tools/data-integration/plugins/spoon/agile-bi/lib/
+-   <Pentaho_install_dir\>/server/data-integration-server/tomcat/webapps/pentaho-di/WED-INF/lib/
+-   <Pentaho_install_dir\>/design-tools/data-integration/lib/
+-   <Pentaho_install_dir\>/server/data-integration-server/tomcat/lib/
+-   <Pentaho_install_dir\>/design-tools/data-integration/plugins/spoon/agile-bi/lib/
 
 You can download these files from the Help Center.
 
@@ -75,9 +75,9 @@ To set up the JDBC driver using Pentaho:
     -   Connection Name
     -   Connection Type: Generic database
     -   Access: Native (JDBC)
-    -   Custom Connection URL: jdbc:simba://<server\_ip\>:12345;Database=<database\_name or schema\_name\>
+    -   Custom Connection URL: jdbc:simba://<server_ip\>:12345;Database=<database_name or schema_name\>
 
-        <server\_ip\> is the IP of your Falcon cluster. <database\_name\> is the name of the database you want to connect to. Use TQL to create a database name if needed.
+        <server_ip\> is the IP of your Falcon cluster. <database_name\> is the name of the database you want to connect to. Use TQL to create a database name if needed.
 
     -   Custom Driver Class Name: com.simba.client.core.jdbc4.JDBC4Driver
 

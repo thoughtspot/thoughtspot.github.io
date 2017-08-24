@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -43,13 +43,13 @@ Use this procedure to construct the URL you will use to call the REST API:
 5.   Construct the URL as follows: For a pinboard, the URL takes the form:
 
     ```
-    https://<thoughtspot\_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard\_id>
+    https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>
     ```
 
     For a visualization, the URL takes the form:
 
     ```
-    https://<thoughtspot\_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard\_id>&vizid=%5B<visualization\_id>%5D 
+    https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>&vizid=%5B<visualization_id>%5D 
     ```
 
 6.   If you want to apply any filters to the data that will be returned, apply [Runtime Filters](../runtime_filters/about_runtime_filters.html#). 

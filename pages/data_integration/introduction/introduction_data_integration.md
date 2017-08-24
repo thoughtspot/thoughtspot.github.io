@@ -1,6 +1,6 @@
 ---
 title: [Introduction to Data Integration]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

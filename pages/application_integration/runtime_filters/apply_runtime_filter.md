@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -22,35 +22,35 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
     -   For Embedding a pinboard:
 
         ```
-        http://<thoughtspot\_server>:<port>/
-        ?**col1=<column\_name\>&op1=<operator\>&val1=<value\>**
-        #/pinboard/<pinboard\_id>
+        http://<thoughtspot_server>:<port>/
+        ?**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        #/pinboard/<pinboard_id>
         ```
 
     -   For Embedding a visualization:
 
         ```
-        http://<thoughtspot\_server>:<port>/
-        ?**col1=<column\_name\>&op1=<operator\>&val1=<value\>**
-        #/pinboard/<pinboard\_id>/<visualization\_id>
+        http://<thoughtspot_server>:<port>/
+        ?**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        #/pinboard/<pinboard_id>/<visualization_id>
         ```
 
     -   For the REST API with a pinboard:
 
         ```
-        http://<thoughtspot\_server>:<port>
+        http://<thoughtspot_server>:<port>
         /callosum/v1/tspublic/v1/pinboarddata
-        ?id=<pinboard\_id>
-        &**col1=<column\_name\>&op1=<operator\>&val1=<value\>**
+        ?id=<pinboard_id>
+        &**col1=<column_name\>&op1=<operator\>&val1=<value\>**
         ```
 
     -   For the REST API with a visualization:
 
         ```
-        http://<thoughtspot\_server>:<port>
+        http://<thoughtspot_server>:<port>
         /callosum/v1/tspublic/v1/pinboarddata
-        ?id=<pinboard\_id>&vizid=%5B<visualization\_id>%5D
-        &**col1=<column\_name\>&op1=<operator\>&val1=<value\>**
+        ?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
+        &**col1=<column_name\>&op1=<operator\>&val1=<value\>**
         ```
 
 3.   If you want to add additional filters on a particular column, you can specify multiple values by separating them with "&" as in the example: 
@@ -62,14 +62,14 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
     You can also use the IN operator for multiple values, as shown in this example:
 
     ```
-    col1=<column\_name>&op1=IN&val1=<value>&val1=<value>
+    col1=<column_name>&op1=IN&val1=<value>&val1=<value>
     ```
 
 4.   Add additional filters by incrementing the number at the end of each parameter in the Runtime Filter for each filter you want to add, e.g. col2, op2, val2 and so on. This example passes multiple variables to a single column as well as multiple columns. It shows that data values are returned as epoch.
 
     ```
     col1=region&op1=IN&val1=midwest&val1=south&val1=northeast
-    &col2=date&op2=BET&val2=<epoch\_start>&val2=<epoch\_end>
+    &col2=date&op2=BET&val2=<epoch_start>&val2=<epoch_end>
     ```
 
 

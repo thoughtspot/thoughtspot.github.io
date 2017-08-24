@@ -1,6 +1,6 @@
 ---
 title: [How the inclusion rule works]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

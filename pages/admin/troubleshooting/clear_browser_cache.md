@@ -1,6 +1,6 @@
 ---
 title: [Clear the browser cache]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

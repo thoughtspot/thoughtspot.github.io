@@ -1,6 +1,6 @@
 ---
 title: [View installed packages]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

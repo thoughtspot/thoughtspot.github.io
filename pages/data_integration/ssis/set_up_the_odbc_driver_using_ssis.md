@@ -1,6 +1,6 @@
 ---
 title: [Set up the ODBC Driver for SSIS]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use SSIS to set up the ODBC Driver."
@@ -49,7 +49,7 @@ To set up the ODBC driver using SSIS:
 
      ![](../../images/ssis_table_column.png "OLE DB Table column")
 
-13.  The ODBC Data Source Administrator has to be set up to connect to ThoughtSpot and bring the table in. To do so, search for and open your **ODBC Data Sources (32-bit)** program. Click the **System DSN** tab and select **ThoughtSpot\_32**. Then click **Configure**.
+13.  The ODBC Data Source Administrator has to be set up to connect to ThoughtSpot and bring the table in. To do so, search for and open your **ODBC Data Sources (32-bit)** program. Click the **System DSN** tab and select **ThoughtSpot_32**. Then click **Configure**.
 
      ![](../../images/ssis_system_dsn.png "ODBC Data Source Administrator: Configure")
 

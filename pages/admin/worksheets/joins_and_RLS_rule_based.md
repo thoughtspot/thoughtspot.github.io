@@ -1,6 +1,6 @@
 ---
 title: [About the worksheet join rule with Rule-Based Row Level Security]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

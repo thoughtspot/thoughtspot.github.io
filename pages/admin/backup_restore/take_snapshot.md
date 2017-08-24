@@ -1,6 +1,6 @@
 ---
 title: [Create a manual snapshot]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -14,7 +14,7 @@ Taking a snapshot is fast, about 20 seconds. It happens invisibly in the backgro
 2.   Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less. You can have up to 20 manual snapshots at a time, after which, you have to clear one before you are able to create another.
 
     ```
-    $ tscli snapshot create <snapshot\_name> <reason>
+    $ tscli snapshot create <snapshot_name> <reason>
     ```
 
 3.   Check that the snapshot was created:

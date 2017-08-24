@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -254,10 +254,10 @@ Response Headers
 
     -   principalTypeEnum\*: The value of this field should be one of the following:
 
-        -   LOCAL\_USER: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.
+        -   LOCAL_USER: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.
 
-        -   LOCAL\_GROUP: Groups created in the ThoughtSpot system.
-    -   password: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL\_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.
+        -   LOCAL_GROUP: Groups created in the ThoughtSpot system.
+    -   password: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.
 
     -   groupNames: List of group names that a principal belongs to directly. Groups and users can belong to other groups.
 

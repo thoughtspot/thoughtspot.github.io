@@ -1,6 +1,6 @@
 ---
 title: [Change the inclusion or join rule for a worksheet]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

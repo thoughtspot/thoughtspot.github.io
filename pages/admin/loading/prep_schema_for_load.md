@@ -1,6 +1,6 @@
 ---
 title: [Create the schema in TQL]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -16,19 +16,19 @@ To create the schema directly in TQL:
 2.   If the database you will be using does not exist, create it now:
 
     ```
-    TQL> CREATE DATABASE my\_database;
+    TQL> CREATE DATABASE my_database;
     ```
 
 3.   Connect to the database:
 
     ```
-    TQL> USE my\_database;
+    TQL> USE my_database;
     ```
 
 4.   If you wish to use a schema other than the default one, create it now:
 
     ```
-    TQL> CREATE SCHEMA my\_schema;
+    TQL> CREATE SCHEMA my_schema;
     ```
 
 5.   Issue a CREATE TABLE command for each table you will create, using the information in [Plan the schema](plan_schema.html#).

@@ -31,14 +31,11 @@ entries:
     - levelTwoTitle: Installation and setup
       output: web, pdf
       levelTwoItems:
-        - title: Introduction
+        - title: About installation and upgrades
           url: /pages/admin/setup/intro.html
           output: web, pdf
         - title: Set your locale
           url: /pages/admin/setup/set_your_thoughtspot_locale.html
-          output: web, pdf
-        - title: Software updates
-          url: /pages/admin/setup/upgrades.html
           output: web, pdf
         - title: Test connectivity between nodes
           url: /pages/admin/setup/test_network.html
@@ -49,18 +46,9 @@ entries:
         - title: Set up a fiscal calendar year
           url: /pages/admin/setup/set_custom_calendar.html
           output: web, pdf
-        - levelThreeTitle: Configure SSL
+        - title: Configure SSL
+          url: /pages/admin/setup/SSL_config.html
           output: web, pdf
-          levelThreeItems:
-            - title: About SSL
-              url: /pages/admin/setup/about_SSL.html
-              output: web, pdf
-            - title: Configure SSL for web traffic
-              url: /pages/admin/setup/configure_SSL.html
-              output: web, pdf
-            - title: Set the recommended TLS version
-              url: /pages/admin/setup/set_the_recommended_tls_version.html
-              output: web, pdf
         - title: Configure SAML
           url: /pages/admin/setup/configure_SAML_with_tscli.html
           output: web, pdf

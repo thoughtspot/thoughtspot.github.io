@@ -1,6 +1,6 @@
 ---
 title: [Upload logs to ThoughtSpot Support]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -13,7 +13,7 @@ Before you can upload a file to the secure file server:
 1.  [Configure the connection to the file server](../setup/configure_secure_file_server_connection.html#).
 2.  Obtain the directory path on the file server.
 
-The server directory path for uploading a file is formatted like this example: `/Shared/support/<customer\_name>`. If you do not know the customer name, [contact ThoughtSpot Support](../misc/contact.html#).
+The server directory path for uploading a file is formatted like this example: `/Shared/support/<customer_name>`. If you do not know the customer name, [contact ThoughtSpot Support](../misc/contact.html#).
 
 You can upload files directly to the file server using this procedure:
 

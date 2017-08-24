@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -17,7 +17,7 @@ Here is a list of all of the source connectors, and their connection credentials
 -   Secret Key: Enter the secret access key used to access the Amazon account resources. This value is associated with the access key and uniquely identifies the account. You must specify this value if you specify the access key ID.
 -   Folder Path\*: Enter the complete path to the Amazon S3 objects. You must include the bucket name and any folder name. For example, `<bucket name>/<my folder name>`.
 -   Master Symmetric Key: Provide a 256-bit AES encryption key in the Base64 format when you enable client-side encryption. You can generate a key using a third-party tool.
--   Code Page\*: Choose either MS\_1252 or UTF\_8 from the dropdown menu. The code page should be compatible with the Amazon S3 source.
+-   Code Page\*: Choose either MS_1252 or UTF_8 from the dropdown menu. The code page should be compatible with the Amazon S3 source.
 -   Region Name\*: Make a selection from the dropdown menu, which includes US East \(N. Virginia\), US West \(N. California\), and US West \(Oregon\). This is where the Amazon S3 bucket is available.
 
  |
@@ -58,7 +58,7 @@ You must enter a schema name to fetch metadata if the JDBC connection URL does n
 |Jira| -   Connection name\*: Enter a new JIRA connection name.
 -   Username\*: Enter the JIRA account username.
 -   Password\*: Enter the JIRA account password.
--   URL\*: Enter the base JIRA URL of the JIRA instance you want to connect to. For example, `https://<your\_company\_name>.atlassian.net/`.
+-   URL\*: Enter the base JIRA URL of the JIRA instance you want to connect to. For example, `https://<your_company_name>.atlassian.net/`.
 
  |
 |MySQL| -   Connection name\*: Enter a new MySQL connection name.
@@ -67,7 +67,7 @@ You must enter a schema name to fetch metadata if the JDBC connection URL does n
 -   Host\*: Enter the host number. For example, `192.156.3.123`.
 -   Port\*: Enter the port number. For example, `3305`.
 -   Database Name\*: Enter the database name you want to connect to.
--   Code Page\*: Choose either MS\_1252 or UTF\_8 from the dropdown menu. The code page should be compatible with the MySQL source.
+-   Code Page\*: Choose either MS_1252 or UTF_8 from the dropdown menu. The code page should be compatible with the MySQL source.
 
  |
 |ODBC| -   Connection name\*: Enter a new ODBC connection name.
@@ -89,7 +89,7 @@ You must enter a schema name to fetch metadata if the JDBC connection URL does n
 -   Port\*: Enter the port number. For example, `3305`.
 -   Service Name\*: Enter the service name. You can find the service name by connecting to the server as "system" using SID, then executing the query: `select value from v$parameter where name like '%service_name%';`.
 -   Schema\*: Enter the schema you want to connect to.
--   Code Page\*: Choose either MS\_1252 or UTF\_8 from the dropdown menu. The code page should be compatible with the Oracle source.
+-   Code Page\*: Choose either MS_1252 or UTF_8 from the dropdown menu. The code page should be compatible with the Oracle source.
 
  |
 |REST| -   Connection name\*: Enter a new REST API connection name.
@@ -100,7 +100,7 @@ You must enter a schema name to fetch metadata if the JDBC connection URL does n
 -   Header Request Parameters: Enter the request that is header query parameters.
 -   Media Type\*: Choose your media type from the dropdown menu. This is the data that you're receiving.
 -   Request Type\*: Choose your request type from the dropdown menu. Currently, only GET is supported, even though other types are listed.
--   Authentication Type\*: Choose your authentication type from the dropdown menu. If you choose CUSTOM\_AUTH, please contact ThoughtSpot Support to help you create the authentication.
+-   Authentication Type\*: Choose your authentication type from the dropdown menu. If you choose CUSTOM_AUTH, please contact ThoughtSpot Support to help you create the authentication.
 -   OAuth Consumer Key: Provide the consumer key for OAuth authentication.
 -   OAuth Consumer Secret: Provide the consumer secret for OAuth authentication.
 -   OAuth Token: Mention the token key for OAuth authentication.
@@ -131,7 +131,7 @@ You must enter a schema name to fetch metadata if the JDBC connection URL does n
 -   Instance Name: Enter the instance name.
 -   Database Name\*: Enter the database name you want to connect to.
 -   Schema: Enter the schema you want to connect to.
--   Code Page\*: Choose either MS\_1252 or UTF\_8 from the dropdown menu. The code page should be compatible with the SQL Server source.
+-   Code Page\*: Choose either MS_1252 or UTF_8 from the dropdown menu. The code page should be compatible with the SQL Server source.
 
  |
 |Teradata| -   Connection name\*: Enter a new Teradata connection name.

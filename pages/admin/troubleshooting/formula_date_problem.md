@@ -1,6 +1,6 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -30,7 +30,7 @@ In this case, you have effectively created a formula on top of another formula. 
 
 If you encounter this issue, you will need to open the worksheet and edit its formula so that it returns the type expected by the formula that was built on top of it. In this case, a numeric data type.
 
-You must change the underlying worksheet column to use day\_number\_of\_week instead of day\_of\_week. This is because day\_number\_of\_week returns a numeric data type.
+You must change the underlying worksheet column to use day_number_of_week instead of day_of_week. This is because day_number_of_week returns a numeric data type.
 
 Here are the steps to resolve an issue like this:
 

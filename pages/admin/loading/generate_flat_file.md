@@ -1,6 +1,6 @@
 ---
 title: [Generate CSV files with the data to be loaded]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -23,7 +23,7 @@ Use these guidelines when creating the CSV file:
 -   When a field contains a double quote, it must be escaped with the character specified in the escape character argument in tsload.
 -   When a field contains the delimiter, the field must be enclosed in double quotes.
 
-    For more information about CSV files and the rules for creating them, check [http://en.wikipedia.org/wiki/Comma-separated\_values](http://en.wikipedia.org/wiki/Comma-separated_values).
+    For more information about CSV files and the rules for creating them, check [http://en.wikipedia.org/wiki/Comma-separated_values](http://en.wikipedia.org/wiki/Comma-separated_values).
 
 
 1.   If your source is another database:

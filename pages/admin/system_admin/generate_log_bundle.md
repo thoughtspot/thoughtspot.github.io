@@ -1,6 +1,6 @@
 ---
 title: [Generate and send a log bundle]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -17,7 +17,7 @@ To generate a log bundle:
 
     ```
     tscli callhome generate-bundle
-       --d <directory> --since <num\_of\_daysd>
+       --d <directory> --since <num_of_daysd>
     ```
 
     **Note:** Don't forget to include `d` after your specified number of days. For example, `30d`.

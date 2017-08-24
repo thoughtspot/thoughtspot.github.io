@@ -1,6 +1,6 @@
 ---
 title: [Import CSV files with ThoughtSpot Loader]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -21,15 +21,15 @@ You can integrate tsload into your ETL environment for more automated data loads
 3.   Invoke tsload, specifying the appropriate flags and your data source file:
 
     ```
-    $ tsload --target_database my\_database
-           --target_table my\_table --alsologtostderr
-           --empty_target --source_file my\_file.csv --v 1
-           --field_separator "separator\_char"
+    $ tsload --target_database my_database
+           --target_table my_table --alsologtostderr
+           --empty_target --source_file my_file.csv --v 1
+           --field_separator "separator_char"
     ```
 
 4.   Repeat the data load for each of your CSV files.
 
-This example imports the CSV file "ssbm\_customer.csv" into the table CUSTOMER:
+This example imports the CSV file "ssbm_customer.csv" into the table CUSTOMER:
 
 ```
 $ tsload --target_database SAMPLE_DB

@@ -1,6 +1,6 @@
 ---
 title: [Model data in bulk in the modeling file]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

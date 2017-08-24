@@ -1,6 +1,6 @@
 ---
 title: [Create a manual backup]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -47,7 +47,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
     $ tscli backup create [-h]
         [--mode {full|light|dataless}]
         [--type {full}]
-        [--base snapshot\_name>]
+        [--base snapshot_name>]
         [--storage_type {local|nas}][--remote]
          <name> <directory>
     ```

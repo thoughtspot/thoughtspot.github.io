@@ -1,6 +1,6 @@
 ---
 title: [Schema creation examples]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -10,11 +10,11 @@ These examples demonstrate the steps involved in creating a schema using the Tho
 
 ## Simple schema creation example
 
-The example creates a database (`tpch`) with two tables (`customer`, `transaction`). The example does not create a schema explicitly. So it will use the default schema (falcon\_default\_schema).
+The example creates a database (`tpch`) with two tables (`customer`, `transaction`). The example does not create a schema explicitly. So it will use the default schema (falcon_default_schema).
 
 In this example:
 
--   The table `customer` has a primary key called customer\_id. The table `customer_transactions` has a primary key called transaction\_id.
+-   The table `customer` has a primary key called customer_id. The table `customer_transactions` has a primary key called transaction_id.
 -   The `customer` table is unsharded.
 -   The `customer_transactions` table is sharded into 96 shards using the `transaction_id` column.
 -   Both tables have referential integrity on `customer_id`.
@@ -65,7 +65,7 @@ TQL> CREATE TABLE customer_transactions (
 
 ## More complex schema creation example
 
-The example uses a custom schema called sample\_schema to hold the tables. Because of this, every table reference has to be schema qualified.
+The example uses a custom schema called sample_schema to hold the tables. Because of this, every table reference has to be schema qualified.
 
 ```
 $ tql

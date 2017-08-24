@@ -1,6 +1,6 @@
 ---
 title: [Data modeling settings]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

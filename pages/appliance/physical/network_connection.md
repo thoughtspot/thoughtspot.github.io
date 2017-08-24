@@ -1,6 +1,6 @@
 ---
 title: [Network connection]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Creating a network connection."

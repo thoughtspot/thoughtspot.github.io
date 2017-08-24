@@ -1,6 +1,6 @@
 ---
 title: [Set the format to use when showing numbers]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

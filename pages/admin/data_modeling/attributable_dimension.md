@@ -1,6 +1,6 @@
 ---
 title: [Change the Attribution Dimension setting of a column]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

@@ -18,7 +18,7 @@ sidebar: mydoc_sidebar
     -   [Set the relay host for SMTP email)](admin_guide/setup/set_up_relay_host.html)
         -   [Verify that email is working](admin_guide/setup/setup_email.html)
     -   [Set up a fiscal calendar year](admin_guide/setup/set_custom_calendar.html)
-    -   [About SSL secure socket layers)](admin_guide/setup/about_SSL.html)
+    -   [About SSL secure socket layers)](admin_guide/setup/SSL_config.html)
         -   [Configure SSL for web traffic](admin_guide/setup/configure_SSL.html)
         -   [Set the recommended TLS version](admin_guide/setup/set_the_recommended_tls_version.html)
     -   [Configure SAML](admin_guide/setup/configure_SAML_with_tscli.html)

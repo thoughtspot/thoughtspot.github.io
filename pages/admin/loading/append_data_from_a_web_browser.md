@@ -1,6 +1,6 @@
 ---
 title: [Append data from a web browser]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

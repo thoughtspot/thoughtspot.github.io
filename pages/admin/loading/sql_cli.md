@@ -1,6 +1,6 @@
 ---
 title: [About TQL, the SQL command line interface]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

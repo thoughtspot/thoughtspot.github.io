@@ -1,6 +1,6 @@
 ---
 title: [Contact ThoughtSpot]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

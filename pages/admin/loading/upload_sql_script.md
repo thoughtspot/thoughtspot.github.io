@@ -1,6 +1,6 @@
 ---
 title: [Import a schema (use the SQL editor)]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

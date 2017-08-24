@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -31,21 +31,21 @@ To change the data type of an existing data source:
 3.  Designate the database you'll be working in:
 
     ```
-    TQL> use <database\_name>;
+    TQL> use <database_name>;
     ```
 
 4.  Find the name of the table you want to change.You can use the TQL command `SHOW TABLES;` to see a list of tables.
 
-    To see the current sharding on the table, use `SCRIPT TABLE <table\_name>;`
+    To see the current sharding on the table, use `SCRIPT TABLE <table_name>;`
 
 5.   Issue the command to change the data type of a column using this syntax: 
 
     ```
     TQL> ALTER TABLE <schema>.<table>
-         MODIFY COLUMN <column> <new\_data\_type>;
+         MODIFY COLUMN <column> <new_data_type>;
     ```
 
-    For example, to change "account\_id" with data type INT to data type VARCHAR:
+    For example, to change "account_id" with data type INT to data type VARCHAR:
 
     ```
     TQL> ALTER TABLE foodmart.account

@@ -1,6 +1,6 @@
 ---
 title: [ODBC and JDBC configuration properties]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Lists the properties you can set for ODBC or JDBC connections"
@@ -41,7 +41,7 @@ The following tables summarize the configuration properties.
 |--------|----|-----------|
 |`Description`|DSN|A brief, human-readable description of the DSN. This describes the DSN to users who are deciding which DSN to use.|
 |`Driver`|DSN or Driver|In the driver configuration location, Driver should contain the path to the driver binary. In the DSN configuration location, Driver could contain the path to the driver binary, or it could contain the driver entry in the registry.|
-|`Idle Timeout`|DSN|The time to wait for a response from the server, in seconds. This property is optional, but SimbaClient will wait indefinitely for SimbaServer to respond to a request made to the server unless you specify a timeout period. IdleTimeout specifies how many seconds that SimbaClient will wait before aborting the attempt and returning to the application with an error. This timeout corresponds to ODBC’s CONNECTION\_TIMEOUT property and is only used when more specific timeouts, such as QUERY\_TIMEOUT or LOGIN\_TIMEOUT aren’t applicable.|
+|`Idle Timeout`|DSN|The time to wait for a response from the server, in seconds. This property is optional, but SimbaClient will wait indefinitely for SimbaServer to respond to a request made to the server unless you specify a timeout period. IdleTimeout specifies how many seconds that SimbaClient will wait before aborting the attempt and returning to the application with an error. This timeout corresponds to ODBC’s CONNECTION_TIMEOUT property and is only used when more specific timeouts, such as QUERY_TIMEOUT or LOGIN_TIMEOUT aren’t applicable.|
 |`Locale`|DSN|The connection locale. If this value is set, it overrides the driver-wide locale. For example, the driver-wide locale could be en-US. If the client would prefer fr-CA, it can set the connection locale to fr-CA. Values are composed of a 2-letter language code (in lower case), and an optional 2-letter country code (in upper case). If the country code is specified, it must be separated from the language code by a hyphen (-).
 
 |
@@ -53,13 +53,13 @@ The following tables summarize the configuration properties.
 |--------|----|-----------|
 |`LogLevel`|SimbaSetting Reader|Controls the granularity of the messages and events that are logged.With this keyword, you can control the amount of log output by controlling the kinds of events that are logged. Possible values (case sensitive):
 
--   0 or LOG\_OFF: no logging occurs
--   1 or LOG\_FATAL: only log fatal errors
--   2 or LOG\_ERROR: log all errors
--   3 or LOG\_WARNING: log all errors and warnings
--   4 or LOG\_INFO: log all errors, warnings, and informational messages
--   5 or LOG\_DEBUG: log method entry and exit points and parameter values for debugging
--   6 or LOG\_TRACE: log all method entry points
+-   0 or LOG_OFF: no logging occurs
+-   1 or LOG_FATAL: only log fatal errors
+-   2 or LOG_ERROR: log all errors
+-   3 or LOG_WARNING: log all errors and warnings
+-   4 or LOG_INFO: log all errors, warnings, and informational messages
+-   5 or LOG_DEBUG: log method entry and exit points and parameter values for debugging
+-   6 or LOG_TRACE: log all method entry points
 
 |
 |`LogPath`|SimbaSetting Reader|Specifies the directory where the log files are created. For example:```

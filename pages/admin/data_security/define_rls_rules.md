@@ -1,6 +1,6 @@
 ---
 title: [Define Rule-Based Row Level Security rules]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -11,7 +11,7 @@ You define row level security by creating an expression that gets evaluated for 
 To define a row level security rule:
 
 1.   [Access the Rule Builder](access_rule_builder.html#).
-2.   Use the Rule Builder window to enter a row security rule. You'll type in an expression, which gets evaluated for every row and group combination. If the rule evaluates to true for a particular row and group, that group will be able to see that row. Use the variable **ts\_groups** to refer to the group name. For example, the expression ts\_groups = location would allow users to only see rows where the value in the location column was the same as their group name.
+2.   Use the Rule Builder window to enter a row security rule. You'll type in an expression, which gets evaluated for every row and group combination. If the rule evaluates to true for a particular row and group, that group will be able to see that row. Use the variable **ts_groups** to refer to the group name. For example, the expression ts_groups = location would allow users to only see rows where the value in the location column was the same as their group name.
 
     Notice how this type of security rule is self-maintaining. If you were to later add additional locations, the rule will still work, as long as users are placed in the group that matches their location.
 

@@ -1,6 +1,6 @@
 ---
 title: [About data type conversion]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -10,7 +10,7 @@ You can convert the data in a column from one data type to another by issuing a 
 
 ## Data type conversion behavior
 
-When converting from one data type to another, any values that can not be converted will be set to NULL. If errors occur during data type conversion, the operation is aborted. However, you may choose to force the conversion despite the errors. You can start TQL in allow\_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:
+When converting from one data type to another, any values that can not be converted will be set to NULL. If errors occur during data type conversion, the operation is aborted. However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:
 
 ```
 tql --allow_unsafe
@@ -132,7 +132,7 @@ To change the data type of a column:
 
     ```
     TQL> ALTER TABLE <table>
-         MODIFY COLUMN <column> <new\_data\_type>;
+         MODIFY COLUMN <column> <new_data_type>;
     ```
 
     For example:

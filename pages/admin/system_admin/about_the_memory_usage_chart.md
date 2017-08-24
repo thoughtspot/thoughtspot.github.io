@@ -1,6 +1,6 @@
 ---
 title: [About the Space Utilization chart]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

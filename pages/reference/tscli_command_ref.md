@@ -1,6 +1,6 @@
 ---
 title: [tscli --advcommand reference]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -19,7 +19,7 @@ Usage for tscli is:
 ```
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
-           [--zoo <zookeeper>] \[--username username\] \[--identity\_file identity\_file\]
+           [--zoo <zookeeper>] \[--username username\] \[--identity_file identity_file\]
            {alert, backup, callhome, cgroups, cluster, command, config, disk,
            etl, event, feature, fileserver, firewall,
            graphite-metrics, hdfs, ldap, logs,
@@ -69,20 +69,20 @@ tscli alert on
 
  |Enables alerts from the cluster.|
 | ```
-tscli alert silence --name <alert\_name>
+tscli alert silence --name <alert_name>
 ```
 
- |Silences the alert with `<alert\_name>`. For example, DISK\_ERROR. Silenced alerts are still recorded in postgres, however emails are not sent out.|
+ |Silences the alert with `<alert_name>`. For example, DISK_ERROR. Silenced alerts are still recorded in postgres, however emails are not sent out.|
 | ```
 tscli alert status
 ```
 
  |Shows the status of cluster alerts.|
 | ```
-tscli alert unsilence-name <alert\_name>
+tscli alert unsilence-name <alert_name>
 ```
 
- |Unsilences the alert with `<alert\_name>`. For example, DISK\_ERROR.|
+ |Unsilences the alert with `<alert_name>`. For example, DISK_ERROR.|
 | ```
 tscli backup create
    [--mode {full|light|dataless}]
@@ -179,13 +179,13 @@ tscli backup
    set-periodic
    --at <hour1, hour2, ...>
    --directory <directory>
-   [--num_backups <num\_backups>]
+   [--num_backups <num_backups>]
    [--mode {full|light|dataless}]
 ```
 
  |Enables or updates a periodic full backup configuration where: -   `<hour1, hour2, ...>` is the list of times at which to take backups daily. Comma separated string of hour of day specified as HH using a 24 hour clock (e.g. 01, 13, 23).
 -   `<directory>` is the directory where backups are to be written.
--   `<num\_backups>` is the number of backups to keep archived.
+-   `<num_backups>` is the number of backups to keep archived.
 
 Use `--mode` to specify the [type of backup](../backup_restore/backups_and_snapshots.html#).
 
@@ -194,13 +194,13 @@ Use `--mode` to specify the [type of backup](../backup_restore/backups_and_snaps
 tscli backup
    start-mirror <directory>
    <node1, node2, ...>
-   <cluster\_name> <cluster\_id>
+   <cluster_name> <cluster_id>
 ```
 
  |Starts a mirror cluster which will continuously pull backups generated from a primary cluster where:-   `<directory>` is the directory where backups from the primary cluster are written (usually a SAN or NFS mounted drive).
 -   `<node1, node2, ...>` is a comma separated list of IP addresses of the nodes in the mirror cluster.
--   `<cluster\_name>` is the cluster name of the mirror cluster.
--   `<cluster\_id>` is the ID of the mirror cluster.
+-   `<cluster_name>` is the cluster name of the mirror cluster.
+-   `<cluster_id>` is the ID of the mirror cluster.
 
 Used only in systems specifically architected for disaster recovery.|
 | ```
@@ -255,20 +255,20 @@ tscli callhome disable
  |Turns off the periodic call home feature.|
 | ```
 tscli callhome enable
-   --customer_name <customer\_name>
+   --customer_name <customer_name>
 ```
 
  |Enables the "call home" feature, which sends usage statistics to ThoughtSpot Support every six hours via the secure file server. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
 
-The parameter `<customer\_name\>` takes the form `Shared/<customer\_name>/stats`.
+The parameter `<customer_name\>` takes the form `Shared/<customer_name>/stats`.
 
 [Contact ThoughtSpot](../misc/contact.html#) if you do not know the customer name to specify.|
 | ```
 tscli callhome generate-bundle
-   --d <directory> --since <num\_of\_daysd>
+   --d <directory> --since <num_of_daysd>
 ```
 
- |Generates a tar file of the cluster metrics and writes it to the specified directory where:-   `<num\_of\_daysd>` is how far back you'd like to generate the tar file from in days. For example, `<30d>`. If this parameter is not specified, the command will collect stats from the last 15 days by default. Once the stats are collected, the data gets backfilled in dogfood for all the missing dates.
+ |Generates a tar file of the cluster metrics and writes it to the specified directory where:-   `<num_of_daysd>` is how far back you'd like to generate the tar file from in days. For example, `<30d>`. If this parameter is not specified, the command will collect stats from the last 15 days by default. Once the stats are collected, the data gets backfilled in dogfood for all the missing dates.
 
 |
 | ```
@@ -322,7 +322,7 @@ tscli --adv cluster report
  |Generates the cluster report.|
 | ```
 tscli cluster restore
-   --release <release\_tarball>
+   --release <release_tarball>
    <backupdir>
 ```
 
@@ -404,14 +404,14 @@ tscli --adv disk replace
  |Restores the HDFS after the disk replacement.|
 | ```
 tscli etl change-password
-  --admin_username <admin\_user>
-  --username <Informatica\_user>
+  --admin_username <admin_user>
+  --username <Informatica_user>
 ```
 
  |Changes the Informatica Cloud account password used by ThoughtSpot Data Connect.Required parameters are:
 
--   `--admin_username <admin\_user>` specifies the Administrator username for ThoughtSpot.
--   `--username <Informatica\_user>` specifies the username for the Informatica Cloud.
+-   `--admin_username <admin_user>` specifies the Administrator username for ThoughtSpot.
+-   `--username <Informatica_user>` specifies the username for the Informatica Cloud.
 
 |
 | ```
@@ -426,26 +426,26 @@ tscli etl download-agent
  |Downloads the ThoughtSpot Data Connect agent to the cluster.|
 | ```
 tscli etl enable-lw
-  --admin_username <admin\_user>
-  --username <Informatica\_user>
+  --admin_username <admin_user>
+  --username <Informatica_user>
   --thoughtspot_url <URL>
-  \[--org\_id <informatica\_org\_id\>\]
+  \[--org_id <informatica_org_id\>\]
   \[--groupname <groupname\>\]
-  [--pin_to <IP\_address>]
-  [--proxy_host <proxy\_server\_hostname>]
-  [--proxy_port <proxy\_server\_port>]
+  [--pin_to <IP_address>]
+  [--proxy_host <proxy_server_hostname>]
+  [--proxy_port <proxy_server_port>]
 ```
 
  |Enables ThoughtSpot Data Connect. Some parameters are given below, but you should contact ThoughtSpot Support for assistance in setting this up.Required parameters are:
 
--   `--admin_username <admin\_user>` specifies the Administrator username for ThoughtSpot.
--   `--username <Informatica\_user>` specifies the username for the Informatica Cloud.
+-   `--admin_username <admin_user>` specifies the Administrator username for ThoughtSpot.
+-   `--username <Informatica_user>` specifies the username for the Informatica Cloud.
 -   `--thoughtspot_url <URL>` specifies the URL for ThoughtSpot
--   `--org_id <informatica\_org\_id>` specifies the Informatica id of the organization (company). For ThoughtSpot, this is 001ZFA.NOTE: org\_id shouldn't include the prefix "Org". For example, if on Informatica cloud, the orgid is Org003XYZ, then use only 003XYZ.
+-   `--org_id <informatica_org_id>` specifies the Informatica id of the organization (company). For ThoughtSpot, this is 001ZFA.NOTE: org_id shouldn't include the prefix "Org". For example, if on Informatica cloud, the orgid is Org003XYZ, then use only 003XYZ.
 
 Optional parameters are:-   `--groupname <groupname>` specifies the name of the secure agent group to use.
--   `--pin_to <IP\_address>` specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky to the Informatica agent, and will always be used. Defaults to the public IP address of the localhost where this command was run.
--   `--proxy_host <proxy\_server\_hostname>` and `--proxy_port <proxy\_server\_port>` specifies the proxy details.
+-   `--pin_to <IP_address>` specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky to the Informatica agent, and will always be used. Defaults to the public IP address of the localhost where this command was run.
+-   `--proxy_host <proxy_server_hostname>` and `--proxy_port <proxy_server_port>` specifies the proxy details.
 
 |
 | ```
@@ -494,7 +494,7 @@ tscli feature get-all-config
  |Gets the configured features in a cluster. The command will return a list of features, such as custom branding, Data Connect, and call home, and tell you whether they are enabled or disabled.|
 | ```
 tscli fileserver configure
-   --user <user\_name>
+   --user <user_name>
    [--password <password>]
 ```
 
@@ -527,7 +527,7 @@ tscli fileserver upload
    --password <password>]
 ```
 
- |Uploads the file specified to the directory specified on the secure file server. The `<path>` parameter specifies the directory to which you want to upload the file. It is based on your customer name, and takes the form `/Shared/support/<customer\_name>`. If you don't know the path to specify, [Contact ThoughtSpot](../misc/contact.html#). You may optionally specify the `--user` and `--password` to bypass the credentials that were specified when configuring the file server connection with `tscli fileserver configure`. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
+ |Uploads the file specified to the directory specified on the secure file server. The `<path>` parameter specifies the directory to which you want to upload the file. It is based on your customer name, and takes the form `/Shared/support/<customer_name>`. If you don't know the path to specify, [Contact ThoughtSpot](../misc/contact.html#). You may optionally specify the `--user` and `--password` to bypass the credentials that were specified when configuring the file server connection with `tscli fileserver configure`. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
 
 |
 | ```
@@ -621,7 +621,7 @@ tscli logs collect
   | --from <yyyymmdd-HH:MM>
   --to <yyyymmdd-HH:MM>]
   [--out <path>]
-  [--maxsize <size\_in\_MB\_or\_GB>]
+  [--maxsize <size_in_MB_or_GB>]
   [--sizeonly]
 ```
 
@@ -654,7 +654,7 @@ tscli logs runcmd --cmd command>
    | --from yyyymmdd-HH:MM>
    --to yyyymmdd-HH:MM>]
    [--outfile <path>]
-   [--outdir <directory\_path>]
+   [--outdir <directory_path>]
    [--cmd_infmt [C | U]]
    [--cmd_outfmt [C | U]]
 ```
@@ -681,7 +681,7 @@ Optional parameters are:
 -   `--exclude <selector | glob>` is a comma separated list of logs to exclude. Each entry is either a selector (one of orion, system, or ts) or a glob for matching files. Anything starting with `/` is assumed to be a glob pattern and interpreted via `find(1)`.
 -   `--outfile <path>` is the file path for printing all the results. By default, results get printed to stdout.
 
--   `--outdir <directory\_path>` is the directory path for dumping results from each node, with their original directory structure. This may be used as an alternative to printing output to outfile/stdout.
+-   `--outdir <directory_path>` is the directory path for dumping results from each node, with their original directory structure. This may be used as an alternative to printing output to outfile/stdout.
 
 -   `--cmd_infmt [C | U]` specifies if the input file should be compressed (C) or uncompressed (U) before running the command. Don't use this flag if the command works on both.
 
@@ -693,7 +693,7 @@ Optional parameters are:
 tscli map-tiles enable
 ```
 
- |Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the tscli command `--offline --<tar\_file> --md5 <md5\_file>`, where `<tar\_file>` and `<md5\_file>` are the locations of the two files.|
+ |Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the tscli command `--offline --<tar_file> --md5 <md5_file>`, where `<tar_file>` and `<md5_file>` are the locations of the two files.|
 | ```
 tscli --adv metrics flush
 ```
@@ -719,10 +719,10 @@ tscli monitoring set-config
    --email <email>
    --clear_email
    --heartbeat_interval
-   <heartbeat\_interval>
+   <heartbeat_interval>
    --heartbeat_disable
    --report_interval
-   <report\_interval>
+   <report_interval>
    --report_disable
 ```
 
@@ -732,11 +732,11 @@ tscli monitoring set-config
 
 -   `--clear_email` disables emails by clearing the email configuration.
 
--   `--heartbeat_interval <heartbeat\_interval>` is the heartbeat email generation interval in seconds. Must be greater than 0.
+-   `--heartbeat_interval <heartbeat_interval>` is the heartbeat email generation interval in seconds. Must be greater than 0.
 
 -   `--heartbeat_disable` disables heartbeat email generation.
 
--   `--report_interval <report\_interval>` sets the cluster report email generation interval in seconds. Must be greater than 0.
+-   `--report_interval <report_interval>` sets the cluster report email generation interval in seconds. Must be greater than 0.
 
 -   `--report_disable` disables cluster report email generation.
 
@@ -749,7 +749,7 @@ tscli monitoring show-config
  |Shows the monitoring configuration.|
 | ```
 tscli nas mount-cifs
-   --server <server\_CIFS\_address>
+   --server <server_CIFS_address>
    --path_on_server <path>
    --mount_point <target>
    --username <user>
@@ -760,7 +760,7 @@ tscli nas mount-cifs
 
  |Mounts a CIFS device on all nodes.Parameters are:
 
--   `--server <server\_CIFS\_address>` is the device address.
+-   `--server <server_CIFS_address>` is the device address.
 -   `--path_on_server <path>` is the path on the server to mount (source).
 -   `--mount_point <target>` is the location where the CIFS device should be mounted (target).
 -   `--username <user>` is the username with which to connect to the CIFS device.
@@ -771,14 +771,14 @@ tscli nas mount-cifs
 |
 | ```
 tscli nas mount-nfs
-   --server <server\_NFS\_address>
+   --server <server_NFS_address>
    --path_on_server <path>
    --mount_point <target>
 ```
 
  |Mounts a NFS device on all nodes.Parameters are:
 
--   `--server <server\_NFS\_address>` is the device address.
+-   `--server <server_NFS_address>` is the device address.
 -   `--path_on_server <path>` is the path on server to mount (source).
 -   `--mount_point <target>` is the location where the NFS device should be mounted (target).
 
@@ -818,10 +818,10 @@ tscli --adv node restart-services
  |Restarts all services on the localhost.|
 | ```
 tscli os find-package
-   <package\_name>
+   <package_name>
 ```
 
- |Lists all packages and versions included in the product image whose name contains `<package\_name>`. Package names you can specify are:-   alert
+ |Lists all packages and versions included in the product image whose name contains `<package_name>`. Package names you can specify are:-   alert
 -   backup
 -   callhome
 -   cluster
@@ -926,10 +926,10 @@ tscli --adv service add-gflag falcon_manager
 | ```
 tscli --adv service add-gflag
    infaagent.infaagent
-   agent_max_memory <max\_memory>
+   agent_max_memory <max_memory>
 ```
 
- |Sets the max memory for the Agent JVM for ThoughtSpot Data Connect where:-   `<max\_memory>` is the max memory allowed. 4g is the default value.
+ |Sets the max memory for the Agent JVM for ThoughtSpot Data Connect where:-   `<max_memory>` is the max memory allowed. 4g is the default value.
 
 |
 | ```
@@ -942,19 +942,19 @@ tscli --adv service add-gflag
 | ```
 tscli --adv service add-gflag
    infaagent.infaagent
-   max_concurrent_loads <max\_loads>
+   max_concurrent_loads <max_loads>
 ```
 
- |Sets the max number of loads to run concurrently for ThoughtSpot Data Connect where:-   `<max\_loads>` is the max number of concurrent loads allowed. 4 is the default value.
+ |Sets the max number of loads to run concurrently for ThoughtSpot Data Connect where:-   `<max_loads>` is the max number of concurrent loads allowed. 4 is the default value.
 
 |
 | ```
 tscli --adv service add-gflag
    infaagent.infaagent
-   max_memory <max\_memory>
+   max_memory <max_memory>
 ```
 
- |Sets the max memory for the load task for ThoughtSpot Data Connect where:-   `<max\_memory>` is the max memory allowed. 50g is the default.
+ |Sets the max memory for the load task for ThoughtSpot Data Connect where:-   `<max_memory>` is the max memory allowed. 50g is the default.
 
 |
 | ```
@@ -999,10 +999,10 @@ tscli --adv service add-javaopt
 tscli --adv service add-javaopt
    tomcat.tomcat D
    orion.defaultQuarterStartMonth
-   <month\_number>
+   <month_number>
 ```
 
- |Sets a custom fiscal month value on a cluster where:-   `<month\_number>` is the calendar number of the month. For example, if it's February, enter 2.
+ |Sets a custom fiscal month value on a cluster where:-   `<month_number>` is the calendar number of the month. For example, if it's February, enter 2.
 
 |
 | ```
@@ -1300,13 +1300,13 @@ tscli smtp
 | ```
 tscli smtp
    set-canonical-mapping
-   <new\_key> <new\_value>
+   <new_key> <new_value>
 ```
 
  |Sets a new postmap mapping.|
 | ```
 tscli smtp set-mailfromname
-   <email\_address>
+   <email_address>
 ```
 
  |Sets the mailname, from which email alerts are sent, for the cluster.|
@@ -1318,7 +1318,7 @@ tscli smtp set-mailname
  |Sets the mailname, where email alerts are sent, for the cluster.|
 | ```
 tscli smtp
-   set-relayhost <IP\_address>
+   set-relayhost <IP_address>
 ```
 
  |Sets the relayhost for SMTP (email) sent from the cluster.|
@@ -1484,17 +1484,17 @@ tscli support
  |Sets the email address for contacting the customer administrator. If you would like to display a blank email address, issue the command `tscli support set-admin-email ' '`.|
 | ```
 tscli support
-   set-admin-phone <phone\_number>
+   set-admin-phone <phone_number>
 ```
 
  |Sets the phone number for contacting the customer administrator. Specify a phone number using any value (e.g. +1 800-508-7008 Ext. 1). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone ' '`.|
 | ```
 tscli support set-remote
-   --addr <support\_address>
-   --user <support\_user>
+   --addr <support_address>
+   --user <support_user>
 ```
 
- |Configures the cluster for remote support through SSH tunneling, where `<support\_address>` is the address of support, e.g. tunnel.thoughtspot.com, and `<support\_user>` is the support username.|
+ |Configures the cluster for remote support through SSH tunneling, where `<support_address>` is the address of support, e.g. tunnel.thoughtspot.com, and `<support_user>` is the support username.|
 | ```
 tscli support
    show-admin-email
@@ -1538,9 +1538,9 @@ tscli --adv zoo fix-local-datadir
 |`--noautoconfig`|Will prompt for a `y` or `n` for each configuration question.|
 |`--autoconfig`|Automatically configure properties of the cluster when possible. User may still be prompted for certain inputs.|
 |`--yes`|Same as `--autoconfig`. Automatically configure properties of the cluster when possible. User may still be prompted for certain inputs.|
-|`--cluster <cluster\_name>`|Optional. Used to designate the cluster to operate on by name, if it is not detected automatically.|
-|`--zoo <zookeeper\_servers>`|Optional. Used to provide a comma-separated list of Zookeeper servers, when a cluster is not detected automatically.|
+|`--cluster <cluster_name>`|Optional. Used to designate the cluster to operate on by name, if it is not detected automatically.|
+|`--zoo <zookeeper_servers>`|Optional. Used to provide a comma-separated list of Zookeeper servers, when a cluster is not detected automatically.|
 |`--username <username>` |Username for machine access (default: admin)|
-|`--identity_file <identity\_file>`|SSH identity file for SSH access to machines. If not specified, assumes passwordless SSH is available. (default: None)|
+|`--identity_file <identity_file>`|SSH identity file for SSH access to machines. If not specified, assumes passwordless SSH is available. (default: None)|
 
 **Parent topic:** [Reference](../../reference/intro_reference.html)

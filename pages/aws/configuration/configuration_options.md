@@ -1,6 +1,6 @@
 ---
 title: [Configuration options]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -17,7 +17,7 @@ Replacement of a bad disk should be initiated through ThoughtSpot Support in thi
 You should suspect disk failure if you observe these symptoms:
 
 -   Performance degrades significantly.
--   You receive alert emails beginning with WARNING or CRITICAL that contain DISK\_ERROR in the subject.
+-   You receive alert emails beginning with WARNING or CRITICAL that contain DISK_ERROR in the subject.
 
 If you notice these symptoms, contact ThoughtSpot Support.
 

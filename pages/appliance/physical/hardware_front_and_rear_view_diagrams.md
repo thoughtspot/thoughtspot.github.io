@@ -1,6 +1,6 @@
 ---
 title: [Hardware front and rear view diagrams]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "The front and rear chassis views."

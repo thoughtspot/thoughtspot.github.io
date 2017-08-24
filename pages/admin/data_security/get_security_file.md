@@ -1,6 +1,6 @@
 ---
 title: [Obtain the security file]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

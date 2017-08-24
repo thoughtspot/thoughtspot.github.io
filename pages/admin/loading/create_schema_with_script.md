@@ -1,6 +1,6 @@
 ---
 title: [Write a SQL script to create the schema]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -10,9 +10,9 @@ Using a SQL script to create your schema is a recommended best practice. This ma
 
 The schema creation script is a text file that contains all the SQL commands to create your schema. Comments should be enclosed in the comment tags /\* and \*/.
 
-It is recommended to enclose all object names (schema, table, and column) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters (any character other than alphanumeric or \_ ), must be surrounded by double quotes. If you see the error message "Error parsing SQL. Check SQL input.", you should check for object names without double quotes in your script.
+It is recommended to enclose all object names (schema, table, and column) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters (any character other than alphanumeric or _ ), must be surrounded by double quotes. If you see the error message "Error parsing SQL. Check SQL input.", you should check for object names without double quotes in your script.
 
-If you are working in a schema other than the default schema, object names must be fully qualified, as in `"<schema\_name>"."<object\_name>"`.
+If you are working in a schema other than the default schema, object names must be fully qualified, as in `"<schema_name>"."<object_name>"`.
 
 If your schema includes constraints to define relationships between tables (foreign key, or the RELATIONSHIP syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the ADD CONSTRAINT syntax. This makes it easier to troubleshoot the script and make changes.
 
@@ -26,13 +26,13 @@ cat safest_script_ever.sql | tql --allow_unsafe
 2.   Type in the command to create the database, if it does not already exist:
 
     ```
-    CREATE database <db\_name>;
+    CREATE database <db_name>;
     ```
 
 3.   Type in the command to specify the database to use:
 
     ```
-    USE database <db\_name>;
+    USE database <db_name>;
     ```
 
 4.   Type in the command to create the schema, if you don't want to use the default schema:

@@ -1,6 +1,6 @@
 ---
 title: [About the ODBC Driver]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."

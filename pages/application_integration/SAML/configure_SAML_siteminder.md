@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -23,7 +23,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Entity ID|Any \(Relevant ID\)|
     |Entity Name|Any \(Relevant name\)|
     |Description|Any \(Relevant description\)|
-    |Base URL|https://<FWS\_FQDN\> where FWS\_FQDN is the fully-qualified domain name for the host serving SiteMinder Federation Web Services|
+    |Base URL|https://<FWS_FQDN\> where FWS_FQDN is the fully-qualified domain name for the host serving SiteMinder Federation Web Services|
     |Signing Private Key Alias|Select the correct private key alias or import one if not done already|
     |Signed Authentication Requests Required|No|
     |Supported NameID format|Optional|

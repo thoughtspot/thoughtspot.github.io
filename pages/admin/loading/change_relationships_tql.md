@@ -1,6 +1,6 @@
 ---
 title: [Change a relationship between tables]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

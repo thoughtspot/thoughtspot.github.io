@@ -1,6 +1,6 @@
 ---
 title: [Additional hardware requirements]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Additional required hardware you must provide."

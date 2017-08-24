@@ -1,6 +1,6 @@
 ---
 title: [Rename a worksheet or table]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

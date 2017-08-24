@@ -1,6 +1,6 @@
 ---
 title: [Characters not displaying correctly]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -24,7 +24,7 @@ To encode your data as UTF-8:
 2.   On Linux or MacOS, issue a command like:
 
     ```
-    $ iconv -f -t UTF-8 <in\_file>.csv > <out\_file>.csv
+    $ iconv -f -t UTF-8 <in_file>.csv > <out_file>.csv
     ```
 
 3.   Reload the data.

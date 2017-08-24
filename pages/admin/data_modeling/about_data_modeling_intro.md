@@ -1,6 +1,6 @@
 ---
 title: [About data modeling]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."

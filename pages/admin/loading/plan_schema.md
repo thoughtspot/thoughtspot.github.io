@@ -1,6 +1,6 @@
 ---
 title: [Plan the schema]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -18,9 +18,9 @@ ThoughtSpot organizes objects in a hierarchical namespace. Databases contain sch
 
  ![](../../images/namespace.png "Namespace diagram")
 
-ThoughtSpot can contain one or more databases, and each database can have multiple schemas. If you do not specify a schema, the default schema (falcon\_default\_schema) is used automatically. This makes it easier to add tables to the database without the need to explicitly create a schema.
+ThoughtSpot can contain one or more databases, and each database can have multiple schemas. If you do not specify a schema, the default schema (falcon_default_schema) is used automatically. This makes it easier to add tables to the database without the need to explicitly create a schema.
 
-If you do create an additional schema, you must refer to its objects using the syntax <schemaname\>.<objectname\>. If you do not qualify the schema when referencing its objects, the default schema (falcon\_default\_schema) will always be assumed.
+If you do create an additional schema, you must refer to its objects using the syntax <schemaname\>.<objectname\>. If you do not qualify the schema when referencing its objects, the default schema (falcon_default_schema) will always be assumed.
 
 By default, ThoughtSpot creates an internal database to host tables corresponding to data that is imported by users from a Web browser.
 

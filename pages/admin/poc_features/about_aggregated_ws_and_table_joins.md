@@ -1,6 +1,6 @@
 ---
 title: [About aggregated worksheet and table joins]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

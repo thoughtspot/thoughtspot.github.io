@@ -1,6 +1,6 @@
 ---
 title: [About error codes]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Error codes and messages can appear in the application and in logs"

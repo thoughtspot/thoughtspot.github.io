@@ -1,6 +1,6 @@
 ---
 title: [Edit or delete a user]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

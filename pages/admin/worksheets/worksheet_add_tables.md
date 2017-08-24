@@ -1,6 +1,6 @@
 ---
 title: [Add sources and columns to a worksheet]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

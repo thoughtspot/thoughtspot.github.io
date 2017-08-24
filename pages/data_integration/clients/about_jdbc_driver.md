@@ -1,6 +1,6 @@
 ---
 title: [About the JDBC Driver]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use JDBC to interact with databases in a standard manner."

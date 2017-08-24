@@ -1,6 +1,6 @@
 ---
 title: [About the hardware]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Supported hardware platforms."

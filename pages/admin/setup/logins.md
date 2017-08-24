@@ -1,6 +1,6 @@
 ---
 title: [How to get administrator access]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "You need administrative access to perform the actions discussed in this guide. "
@@ -21,14 +21,14 @@ There are two separate default administrator users, an operating system user tha
 
 To perform basic administration such as checking network connectivity, starting and stopping services, and setting up email, log in remotely as the Linux administrator user "admin". To log in with SSH from any machine, you can use the command shell or a utility like Putty.
 
-In the following procedure, replace `<hostname\_or\_IP>` with the hostname or IP address of a node in ThoughtSpot. The default SSH port (22) will be used.
+In the following procedure, replace `<hostname_or_IP>` with the hostname or IP address of a node in ThoughtSpot. The default SSH port (22) will be used.
 
-1.   Log in to a client machine and open a command prompt.
-2.   Issue the SSH command, specifying the IP address or hostname of the ThoughtSpot instance:
+1. Log in to a client machine and open a command prompt.
+2. Issue the SSH command, specifying the IP address or hostname of the ThoughtSpot instance:
   ```
-  ssh admin@<hostname\_or\_IP>
+  ssh admin@<hostname_or_IP>
   ```
-3.   Enter the password for the admin user.
+3. Enter the password for the admin user.
 
 ## Log in to the ThoughtSpot application
 
@@ -52,5 +52,5 @@ Before accessing ThoughtSpot, you need:
 
 To log in to ThoughtSpot from a browser:
 
-1.   Open the browser and type in the Web address for ThoughtSpot: `http://<hostname\_or\_IP>`
-2.   Enter your username and password and click **Enter Now**.
+1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>`
+2. Enter your username and password and click **Enter Now**.

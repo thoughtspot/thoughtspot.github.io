@@ -1,6 +1,6 @@
 ---
 title: [Hardware provided by ThoughtSpot]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "What is in the box."

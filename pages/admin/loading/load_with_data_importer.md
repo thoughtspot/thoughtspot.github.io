@@ -1,6 +1,6 @@
 ---
 title: [Load data with ThoughtSpot Loader]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

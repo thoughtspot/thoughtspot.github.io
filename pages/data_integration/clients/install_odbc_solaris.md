@@ -1,6 +1,6 @@
 ---
 title: [Install the ODBC Driver on Solaris]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Solaris ODBC driver and install it."
@@ -39,7 +39,7 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
         tar -xvf ThoughtSpot_solaris_sparc_odbc_<version>.tar
         ```
 
-3.   Copy the library files from the Lib directory to a safe location on your Solaris machine. Add the corresponding path to the LD\_LIBRARY\_PATH environment variable. For 32-bit users, the library files are located in the directory:
+3.   Copy the library files from the Lib directory to a safe location on your Solaris machine. Add the corresponding path to the LD_LIBRARY_PATH environment variable. For 32-bit users, the library files are located in the directory:
 
     ```
     /solaris_sparc/Lib/Solaris_sparc_gcc
@@ -55,7 +55,7 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
 5.   Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`. Then find the line below it that begins with `ServerList`, and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as 12345. The syntax for `ServerList` is:
 
     ```
-    ServerList = <node1\_IP> 12345, <node2\_IP> 12345 [, <node3\_IP> 12345, ...]
+    ServerList = <node1_IP> 12345, <node2_IP> 12345 [, <node3_IP> 12345, ...]
     ```
 
     For example, for the 64-bit ODBC driver:
@@ -85,7 +85,7 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
     APILevel            = 1
     ConnectFunctions    = YYY
     Description         = ThoughtSpot 64bit ODBC driver
-    **Driver              = /usr/local/scaligent/toolchain/local/simba/odbc/solaris\_sparc/Lib/Solaris\_sparc64\_gcc/libSimbaClient.so
+    **Driver              = /usr/local/scaligent/toolchain/local/simba/odbc/solaris_sparc/Lib/Solaris_sparc64_gcc/libSimbaClient.so
     **DriverODBCVer       = 03.52
     SQLLevel            = 1
     ```

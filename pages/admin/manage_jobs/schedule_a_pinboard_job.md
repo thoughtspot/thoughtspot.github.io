@@ -1,6 +1,6 @@
 ---
 title: [Schedule a pinboard job]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

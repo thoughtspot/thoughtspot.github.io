@@ -1,41 +1,36 @@
 ---
 title: [Add the SSL certificate for LDAP]
-tags: [formatting]
+tags: [Security_SAML_LDAP_AD, SysAdm_tscli_Config]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Install the certificate to support LDAPS"
 sidebar: mydoc_sidebar
 ---
-When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate.
-
-Before you can add the SSL certificate, you must LDAP using one of these procedures:
+When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must LDAP using one of these procedures:
 
 -   [Configure OpenLDAP](LDAP_config_openLDAP.html#)
 -   [Configure LDAP for Active Directory](LDAP_config_AD.html#)
 
-You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [About SSL (secure socket layers)](about_SSL.html#).
+You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [About SSL (secure socket layers)](SSL_config.html#).
 
 To add the SSL certificate for LDAP:
 
-1.   Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
-2.   Copy the certificate to ThoughtSpot:
+1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
+2. Copy the certificate to ThoughtSpot:
 
     ```
-    $ scp <certificate> admin@<IP\_address>:<path>
+    $ scp <certificate> admin@<IP_address>:<path>
     ```
 
-3.   [Log in to the Linux shell using SSH](login_console.html#).
-4.   Change directories to where you copied the certificate:
+3. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+4. Change directories to where you copied the certificate:
 
     ```
     $ cd <path>
     ```
 
-5.   Run the command to configure SSL for LDAP, designating an alias for this certificate using the `<name>` parameter:
+5. Run the command to configure SSL for LDAP, designating an alias for this certificate using the `<name>` parameter:
 
     ```
     $ tscli ldap add-cert <name> <certificate>
     ```
-
-
-**Parent topic:** [About LDAP integration](../../admin/setup/about_LDAP.html)

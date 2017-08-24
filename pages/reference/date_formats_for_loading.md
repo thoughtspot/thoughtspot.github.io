@@ -1,6 +1,6 @@
 ---
 title: [Date and time formats reference]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

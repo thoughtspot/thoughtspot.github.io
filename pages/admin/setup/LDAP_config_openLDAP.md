@@ -1,13 +1,11 @@
 ---
 title: [Configure OpenLDAP]
-tags: [formatting]
+tags: [Security_SAML_LDAP_AD, SysAdm_tscli_Config]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Use this procedure to set up integration with LDAP using OpenLDAP."
 sidebar: mydoc_sidebar
 ---
-Use this procedure to set up integration with LDAP using OpenLDAP.
-
 Before configuring OpenLDAP, you will need this information:
 
 -   URL to connect to OpenLDAP
@@ -29,16 +27,16 @@ Before configuring OpenLDAP, you will need this information:
     If you choose 'yes' for this, when a user logs in, ThoughtSpot will first attempt to authenticate the user against LDAP. If that attempt fails, it will then attempt to authenticate the user against ThoughtSpot. If either of these succeed, then the user is successfully logged in. This option is useful in scenarios where some users are not in LDAP and are created only in ThoughtSpot.
 
 
-You do not need to create a user called tsadmin on your LDAP server. Internal authentication can be used for tsadmin. To configure LDAP for OpenLDAP:
+You do not need to create a user called `tsadmin` on your LDAP server. Internal authentication can be used for `tsadmin`. To configure LDAP for OpenLDAP:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Run the command to configure LDAP:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Run the command to configure LDAP:
 
     ```
     $ tscli ldap configure
     ```
 
-3.   Answer the prompts using the information you collected. For example:
+3. Answer the prompts using the information you collected. For example:
 
     ```
     Choose the LDAP protocol:
@@ -47,7 +45,6 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     Option number: 2
 
     Configuring Open LDAP
-
 
     URL to connect to OpenLDAP (Example: ldap://192.168.2.100:389): ldap://192.168.2.48:389
 
@@ -58,12 +55,9 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     Also use ThoughtSpot internal authentication (y/n): y
     ```
 
-4.   If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
-5.   If you want to remove the LDAP configuration, issue:
+4. If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
+5. If you want to remove the LDAP configuration, issue:
 
     ```
     $ tscli ldap purge-configuration
     ```
-
-
-**Parent topic:** [About LDAP integration](../../admin/setup/about_LDAP.html)

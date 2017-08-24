@@ -1,6 +1,6 @@
 ---
 title: [Share tables and columns]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

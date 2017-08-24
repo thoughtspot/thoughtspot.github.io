@@ -1,6 +1,6 @@
 ---
 title: [Use a script to load data]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

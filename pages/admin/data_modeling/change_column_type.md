@@ -1,6 +1,6 @@
 ---
 title: [Change the column type (ATTRIBUTE or MEASURE)]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

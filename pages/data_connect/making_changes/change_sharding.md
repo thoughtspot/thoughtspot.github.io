@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -28,12 +28,12 @@ To change the sharding on a Data Source:
 3.  Designate the database you'll be working in:
 
     ```
-    TQL> use <database\_name>;
+    TQL> use <database_name>;
     ```
 
 4.  Find the name of the table you want to change.You can use the TQL command `SHOW TABLES;` to see a list of tables.
 
-    To see the current sharding on the table, use `SCRIPT TABLE <table\_name>;`
+    To see the current sharding on the table, use `SCRIPT TABLE <table_name>;`
 
 5.  Issue the command to change the sharding using this syntax:
 

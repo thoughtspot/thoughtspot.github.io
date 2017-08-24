@@ -1,6 +1,6 @@
 ---
 title: [Add a custom support contact]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -21,20 +21,20 @@ After you set the custom support contact information, here's where your users wi
 
 To designate the custom support contact:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Issue the tscli command to set the email address:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Issue the tscli command to set the email address:
 
     ```
     $ tscli support set-admin-email <email_address>
     ```
 
-3.   Issue the tscli command to set the phone number:
+3. Issue the tscli command to set the phone number:
 
     ```
     $ tscli support set-admin-phone <phone_number>
     ```
 
-4.   If you need to reset both of these to the default (ThoughtSpot Support), issue:
+4. If you need to reset both of these to the default (ThoughtSpot Support), issue:
 
     ```
     $ tscli support rm-admin-email

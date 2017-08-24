@@ -1,6 +1,6 @@
 ---
 title: [Backup and restore]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Clients]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Clients help you to load data easily from your ETL tool or another database."

@@ -1,6 +1,6 @@
 ---
 title: [Add multiple users to a group]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

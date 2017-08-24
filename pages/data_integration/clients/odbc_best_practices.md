@@ -1,6 +1,6 @@
 ---
 title: [Best Practices for Using ODBC]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "To successfully use ODBC, following these best practices is recommended."

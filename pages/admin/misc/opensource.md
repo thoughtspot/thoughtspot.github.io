@@ -1,6 +1,6 @@
 ---
 title: [Open source software]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

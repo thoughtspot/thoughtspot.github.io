@@ -1,6 +1,6 @@
 ---
 title: [Connect to the database with the ThoughtSpot SQL Command Line (TQL)]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

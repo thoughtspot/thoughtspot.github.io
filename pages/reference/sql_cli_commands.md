@@ -1,6 +1,6 @@
 ---
 title: [TQL reference]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -125,8 +125,8 @@ TQL> SCRIPT TABLE
  |
 | ```
 SELECT
-   <cols\_or\_expr>
-   FROM <table\_list>
+   <cols_or_expr>
+   FROM <table_list>
    [WHERE <predicates>]
    [GROUP BY <expr>]
    [ORDER BY <expr>]
@@ -217,7 +217,7 @@ TQL> CREATE SCHEMA
  |
 | ```
 CREATE TABLE <table>
-   (<column\_definitions>
+   (<column_definitions>
    [<constraints>])
    [PARTITION BY HASH
    (<number>)
@@ -358,9 +358,9 @@ TQL> ALTER TABLE "fruit_dim"
 ALTER TABLE <table>
    DROP [CONSTRAINT
    FOREIGN KEY
-   [<table\_name>]
+   [<table_name>]
    | RELATIONSHIP [WITH
-   <table\_name>];
+   <table_name>];
 ```
 
  |You must use this syntax when dropping relationships between tables created before ThoughtSpot version 3.2. This is because relationships could not be named in older versions.Drops the foreign key or relationship between two tables where you cannot reference it by relationship name. If the relationship was created without a name, use:
@@ -431,7 +431,7 @@ TQL> ALTER TABLE "fruit_dim"
 | ```
 ALTER TABLE <table>
    MODIFY COLUMN <column>
-   <new\_data\_type>;
+   <new_data_type>;
 ```
 
  | Changes the data type of a column. This can have implications on sharding and primary key behavior. See [About data type conversion](../loading/about_data_type_conversion.html#).

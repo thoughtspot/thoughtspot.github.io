@@ -1,6 +1,6 @@
 ---
 title: [Schema not found error]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Correct schema not found errors."
@@ -12,9 +12,9 @@ When connecting with ODBC, you need to specify both the database and schema to c
 
 When connecting with ODBC, remember to specify the schema. Note that you can add a default schema to use by supplying the parameter "SCHEMA" (Linux and Solaris) or the key "SCHEMA" (Windows).
 
-Even if you do not use schema names in ThoughtSpot, you still have to specify a schema when connecting with ODBC. The default schema name in ThoughtSpot is "falcon\_default\_schema". This default schema is always assumed when you don't specify a schema name. However, with ODBC, you will need to specify it explicitly. To do this:
+Even if you do not use schema names in ThoughtSpot, you still have to specify a schema when connecting with ODBC. The default schema name in ThoughtSpot is "falcon_default_schema". This default schema is always assumed when you don't specify a schema name. However, with ODBC, you will need to specify it explicitly. To do this:
 
--   On Windows, [change your ODBC configuration](../clients/change_odbc_windows.html#) by adding a custom property with the key "SCHEMA" and the value "falcon\_default\_schema".
+-   On Windows, [change your ODBC configuration](../clients/change_odbc_windows.html#) by adding a custom property with the key "SCHEMA" and the value "falcon_default_schema".
 
      ![](../../images/ODBC_add_schema.png "Edit a custom property on Windows")
 

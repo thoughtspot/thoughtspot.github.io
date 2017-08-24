@@ -1,6 +1,6 @@
 ---
 title: [Upload the edited security file]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

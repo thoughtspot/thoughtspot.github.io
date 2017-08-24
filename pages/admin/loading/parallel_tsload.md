@@ -1,6 +1,6 @@
 ---
 title: [Bulk load files in parallel]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

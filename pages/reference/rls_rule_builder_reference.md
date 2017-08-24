@@ -1,6 +1,6 @@
 ---
 title: [Row level security rules reference]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to "true" for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.
 
-For information on how to use the row level security functions and operators, see [About Rule-Based Row Level Security](../data_security/new_row_level_security.html#). There is a special variable called ts\_groups, which you can use when creating row level security rules. It fetches a list of the groups that the currently logged in user belongs to. For each row, f the expression in the rule evaluates to 'true' for any one of these groups, that row will be shown to the user.
+For information on how to use the row level security functions and operators, see [About Rule-Based Row Level Security](../data_security/new_row_level_security.html#). There is a special variable called ts_groups, which you can use when creating row level security rules. It fetches a list of the groups that the currently logged in user belongs to. For each row, f the expression in the rule evaluates to 'true' for any one of these groups, that row will be shown to the user.
 
 You can also see this list of operators and examples from within the Rule Builder by selecting **Rule Assistant**.
 
@@ -18,16 +18,16 @@ These functions can be used to convert data from one data type to another. Conve
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|to\_bool|Returns the input as a boolean (true or false).| -   `to_bool (0) = false`
+|to_bool|Returns the input as a boolean (true or false).| -   `to_bool (0) = false`
 
  |
-|to\_double|Returns the input as a double.| -   `to_double ('3.14') = 3.14`
+|to_double|Returns the input as a double.| -   `to_double ('3.14') = 3.14`
 
  |
-|to\_integer|Returns the input as an integer.| -   `to_integer ('45') + 1 = 46`
+|to_integer|Returns the input as an integer.| -   `to_integer ('45') + 1 = 46`
 
  |
-|to\_string|Returns the input as a text string.| -   `to_string (45 + 1) = '46'`
+|to_string|Returns the input as a text string.| -   `to_string (45 + 1) = '46'`
 -   `to_string (revenue - cost)`
 
  |
@@ -36,7 +36,7 @@ These functions can be used to convert data from one data type to another. Conve
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|add\_days|Returns the result of adding the specified number of days to the given date.| -   `add_days (01/30/2015, 5) = 02/04/2015`
+|add_days|Returns the result of adding the specified number of days to the given date.| -   `add_days (01/30/2015, 5) = 02/04/2015`
 -   `add_days (invoiced, 30)`
 
  |
@@ -47,30 +47,30 @@ These functions can be used to convert data from one data type to another. Conve
 -   `day (date ordered)`
 
  |
-|day\_number\_of\_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
+|day_number_of_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
 -   `day_number_of_week (shipped)`
 
  |
-|day\_number\_of\_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
+|day_number_of_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
 -   `day_number_of_year (invoiced)`
 
  |
-|day\_of\_week|Returns the day of the week for the given date.| -   `day_of week (01/30/2015) = Friday`
+|day_of_week|Returns the day of the week for the given date.| -   `day_of week (01/30/2015) = Friday`
 -   `day_of_week (serviced)`
 
  |
-|diff\_days|Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.| -   `diff_days (01/15/2014, 01/17/2014) = -2`
+|diff_days|Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.| -   `diff_days (01/15/2014, 01/17/2014) = -2`
 -   `diff_days (purchased, shipped)`
 
  |
-|diff\_time|Subtracts the second date from the first date and returns the result in number of seconds.| -   `diff_time (01/01/2014, 01/01/2014) = -86,400`
+|diff_time|Subtracts the second date from the first date and returns the result in number of seconds.| -   `diff_time (01/01/2014, 01/01/2014) = -86,400`
 -   `diff_time (clicked, submitted)`
 
  |
-|hour\_of\_day|Returns the hour of the day for the given date.| -   `hour_of_day (received)`
+|hour_of_day|Returns the hour of the day for the given date.| -   `hour_of_day (received)`
 
  |
-|is\_weekend|Returns true if the given date falls on a Saturday or Sunday.| -   `is_weekend (01/31/2015) = true`
+|is_weekend|Returns true if the given date falls on a Saturday or Sunday.| -   `is_weekend (01/31/2015) = true`
 -   `is_weekend (emailed)`
 
  |
@@ -78,26 +78,26 @@ These functions can be used to convert data from one data type to another. Conve
 -   `month (date ordered)`
 
  |
-|month\_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
+|month_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
 -   `month_number (purchased)`
 
  |
 |now|Returns the current timestamp.| -   `now ()`
 
  |
-|start\_of\_month|Returns the epoch for the first day of the month for the given date.| -   `start_of_month (01/31/2015) =1420099200`
+|start_of_month|Returns the epoch for the first day of the month for the given date.| -   `start_of_month (01/31/2015) =1420099200`
 -   `start_of_month (shipped)`
 
  |
-|start\_of\_quarter|Returns the epoch for the first day of the quarter for the given date.| -   `start_of_quarter (09/18/2015) = 1441090800`
+|start_of_quarter|Returns the epoch for the first day of the quarter for the given date.| -   `start_of_quarter (09/18/2015) = 1441090800`
 -   `start_of_quarter (sold)`
 
  |
-|start\_of\_week|Returns the epoch for the first day of the week for the given date.| -   `start_of_week (05/30/2015) = 1432450800`
+|start_of_week|Returns the epoch for the first day of the week for the given date.| -   `start_of_week (05/30/2015) = 1432450800`
 -   `start_of_week (paid)`
 
  |
-|start\_of\_year|Returns the epoch for the first day of the fiscal year for the given date.| -   `start_of_year (02/15/2015) = 1420099200`
+|start_of_year|Returns the epoch for the first day of the fiscal year for the given date.| -   `start_of_year (02/15/2015) = 1420099200`
 -   `start_of_year (joined)`
 
  |
@@ -253,7 +253,7 @@ These functions can be used with text and numeric data types.
 -   `sin (beam angle)`
 
  |
-|spherical\_distance|Returns the distance in km between two points on Earth.| -   `spherical_distance (37.465191, -122.153617, 37.421962, -122.142174) = 4,961.96`
+|spherical_distance|Returns the distance in km between two points on Earth.| -   `spherical_distance (37.465191, -122.153617, 37.421962, -122.142174) = 4,961.96`
 -   `spherical_distance (start_latitude, start_longitude, start_latitude, start_longitude)`
 
  |
@@ -321,7 +321,7 @@ These variables can be used in your expressions.
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|ts\_groups|Returns the list all the groups the current logged in user belongs to. For any row, if the expression evaluates to true for any of the groups, the user can see that row.| -   `ts_groups = east`
+|ts_groups|Returns the list all the groups the current logged in user belongs to. For any row, if the expression evaluates to true for any of the groups, the user can see that row.| -   `ts_groups = east`
 
  |
 

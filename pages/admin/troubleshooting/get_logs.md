@@ -1,6 +1,6 @@
 ---
 title: [Get logs]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -28,7 +28,7 @@ There are two ways to get logs:
       | --from <yyyymmdd-HH:MM>
       --to <yyyymmdd-HH:MM>]
       [--out <path>]
-      [--maxsize <size\_in\_MB\_or\_GB>]
+      [--maxsize <size_in_MB_or_GB>]
       [--sizeonly]
     ```
 

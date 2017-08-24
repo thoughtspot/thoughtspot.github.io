@@ -1,6 +1,6 @@
 ---
 title: [Connect to the ThoughtSpot Support file server]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -14,11 +14,11 @@ Configuring the connection to the file server is a one time operation. You do no
 
 To configure the connection to the secure file server:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Issue the command to configure the file server:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Issue the command to configure the file server:
 
     ```
-    $ tscli fileserver configure --user <user\_name> [--password <password>]
+    $ tscli fileserver configure --user <user_name> [--password <password>]
     ```
 
     Note that if you do not use the optional `--password` parameter, you will be prompted to enter the password.

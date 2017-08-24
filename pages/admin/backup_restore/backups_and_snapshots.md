@@ -1,6 +1,6 @@
 ---
 title: [Work with backups]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

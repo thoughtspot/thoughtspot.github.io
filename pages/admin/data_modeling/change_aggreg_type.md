@@ -1,6 +1,6 @@
 ---
 title: [Change the aggregation setting for a column]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -17,10 +17,10 @@ To aggregate a column without having to enter the aggregation type explicitly in
 |**AVERAGE**|Calculates the average of all the values.|
 |**MIN** |Calculates the minimum value.|
 |**MAX**|Calculates the maximum value.|
-|**STD\_DEVIATION**|Calculates the standard deviation of all the values.|
+|**STD_DEVIATION**|Calculates the standard deviation of all the values.|
 |**VARIANCE**|Calculates the variance of all the values.|
 |**COUNT**|Calculates the total number of values.|
-|**COUNT\_DISTINCT**|Calculates the total number of distinct values.|
+|**COUNT_DISTINCT**|Calculates the total number of distinct values.|
 
 1.   Find the column whose default aggregation type you want to change, and select its **Aggregation**. If using the modeling file, use the **AggregationType** setting.
 2.   Select the new default aggregation type.

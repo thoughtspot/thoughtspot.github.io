@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -16,16 +16,16 @@ The cumulative formulas include:
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|cumulative\_average|Takes a measure and one or more attributes. Returns the average of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_average (revenue, order date, state)`
+|cumulative_average|Takes a measure and one or more attributes. Returns the average of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_average (revenue, order date, state)`
 
  |
-|cumulative\_max|Takes a measure and one or more attributes. Returns the maximum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_max (revenue, state)`
+|cumulative_max|Takes a measure and one or more attributes. Returns the maximum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_max (revenue, state)`
 
  |
-|cumulative\_min|Takes a measure and one or more attributes. Returns the minimum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_min (revenue, campaign)`
+|cumulative_min|Takes a measure and one or more attributes. Returns the minimum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_min (revenue, campaign)`
 
  |
-|cumulative\_sum|Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_sum (revenue, order date)`
+|cumulative_sum|Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_sum (revenue, order date)`
 
  |
 

@@ -1,6 +1,6 @@
 ---
 title: [Troubleshooting Data Integrations]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Learn how to fix connection issues."

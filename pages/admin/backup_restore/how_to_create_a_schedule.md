@@ -1,6 +1,6 @@
 ---
 title: [Understand backup/snapshot schedules]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

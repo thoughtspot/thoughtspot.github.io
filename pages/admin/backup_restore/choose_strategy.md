@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -61,5 +61,3 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
  |
 
 You should never restore from a snapshot or backup yourself, instead contact ThoughtSpot Support for help.
-
-**Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)

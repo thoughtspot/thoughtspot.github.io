@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -15,13 +15,13 @@ To call the REST API, you'll specify a URL using the POST method, passing the ID
 For a pinboard, you'll append the ID of your pinboard as a parameter, like this example:
 
 ```
-https://<thoughtspot\_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3 
+https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3 
 ```
 
 To retrieve data from a specific visualization within a pinboard, you would append the ID number of the visualization using the vizid parameter:
 
 ```
-https://<thoughtspot\_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D 
+https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D 
 ```
 
 **Remember:** You must add brackets around the vizid parameter. The URL encoding for open bracket is `%5B`, and the URL encoding for close bracket is `%5D`.

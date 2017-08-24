@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -19,11 +19,11 @@ This list contains all the filter operators you can use with Runtime Filters.
 |GT|greater than|1|
 |GE|greater than or equal to|1|
 |CONTAINS|contains|1|
-|BEGINS\_WITH|begins with|1|
-|ENDS\_WITH|ends with|1|
-|BW\_INC\_MAX|between inclusive of the higher value|2|
-|BW\_INC\_MIN|between inclusive of the lower value|2|
-|BW\_INC|between inclusive|2|
+|BEGINS_WITH|begins with|1|
+|ENDS_WITH|ends with|1|
+|BW_INC_MAX|between inclusive of the higher value|2|
+|BW_INC_MIN|between inclusive of the lower value|2|
+|BW_INC|between inclusive|2|
 |BW|between non-inclusive|2|
 |IN|is included in this list of values|multiple|
 

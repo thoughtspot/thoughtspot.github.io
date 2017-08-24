@@ -1,7 +1,7 @@
 ---
 
 title: [Change the ODBC Configuration on Windows]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC Administrator to change the ODBC configuration."
@@ -11,7 +11,7 @@ sidebar: mydoc_sidebar
 
 Once installation is complete, you can use the ODBC Administrator to change the ODBC configuration. For example, you may want to add a default schema or change the server IP address or the default database.
 
-It is recommended to add a default schema. If you don't specify a default schema, you will need to supply it every time you use the ODBC driver. If you aren't using schemas in ThoughtSpot, you should specify the default schema, which is "falcon\_default\_schema". If you don't supply a default schema, and you don't specify a schema when using the ODBC driver, you will see an error that says the schema could not be found.
+It is recommended to add a default schema. If you don't specify a default schema, you will need to supply it every time you use the ODBC driver. If you aren't using schemas in ThoughtSpot, you should specify the default schema, which is "falcon_default_schema". If you don't supply a default schema, and you don't specify a schema when using the ODBC driver, you will see an error that says the schema could not be found.
 
 To make changes to the ODBC settings on Windows:
 
@@ -32,7 +32,7 @@ To make changes to the ODBC settings on Windows:
 
      ![](../../images/ODBC_options.png "Edit a custom property")
 
-6.   Type in the key (if needed) and add the value and click **OK**. You can add a default schema to use by adding a new custom property with the key "SCHEMA". If you don't use custom schema names in ThoughtSpot, use the value "falcon\_default\_schema". If you add a default schema, that will save you from having to supply the schema every time you use the ODBC connection.
+6.   Type in the key (if needed) and add the value and click **OK**. You can add a default schema to use by adding a new custom property with the key "SCHEMA". If you don't use custom schema names in ThoughtSpot, use the value "falcon_default_schema". If you add a default schema, that will save you from having to supply the schema every time you use the ODBC connection.
 
      ![](../../images/ODBC_add_schema.png "Edit a custom property")
 

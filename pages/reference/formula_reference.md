@@ -1,6 +1,6 @@
 ---
 title: [Formula reference]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -22,40 +22,40 @@ These functions can be used to aggregate data.
 |count|Returns the number of rows in the table containing the column.| -   `count (product)`
 
  |
-|cumulative\_average|Takes a measure and one or more attributes. Returns the average of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_average (revenue, order date, state)`
+|cumulative_average|Takes a measure and one or more attributes. Returns the average of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_average (revenue, order date, state)`
 
  |
-|cumulative\_max|Takes a measure and one or more attributes. Returns the maximum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_max (revenue, state)`
+|cumulative_max|Takes a measure and one or more attributes. Returns the maximum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_max (revenue, state)`
 
  |
-|cumulative\_min|Takes a measure and one or more attributes. Returns the minimum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_min (revenue, campaign)`
+|cumulative_min|Takes a measure and one or more attributes. Returns the minimum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_min (revenue, campaign)`
 
  |
-|cumulative\_sum|Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_sum (revenue, order date)`
+|cumulative_sum|Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.| -   `cumulative_sum (revenue, order date)`
 
  |
-|group\_average|Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).| -   `group_average (revenue, customer region, state)`
+|group_average|Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).| -   `group_average (revenue, customer region, state)`
 
  |
-|group\_count|Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).| -   `group_count (revenue, customer region)`
+|group_count|Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).| -   `group_count (revenue, customer region)`
 
  |
-|group\_max|Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).| -   `group_max (revenue, customer region)`
+|group_max|Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).| -   `group_max (revenue, customer region)`
 
  |
-|group\_min|Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).| -   `group_min (revenue, customer region)`
+|group_min|Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).| -   `group_min (revenue, customer region)`
 
  |
-|group\_stddev|Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).| -   `group_stddev (revenue, customer region)`
+|group_stddev|Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).| -   `group_stddev (revenue, customer region)`
 
  |
-|group\_sum|Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).| -   `group_sum (revenue, customer region)`
+|group_sum|Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).| -   `group_sum (revenue, customer region)`
 
  |
-|group\_unique\_count|Takes a measure and one or more attributes. Returns the unique count of the measure grouped by the attribute(s).| -   `group_unique_count (product , supplier)`
+|group_unique_count|Takes a measure and one or more attributes. Returns the unique count of the measure grouped by the attribute(s).| -   `group_unique_count (product , supplier)`
 
  |
-|group\_variance|Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).| -   `group_variance (revenue, customer region)`
+|group_variance|Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).| -   `group_variance (revenue, customer region)`
 
  |
 |max|Returns the maximum value of a column.| -   `max (sales)`
@@ -64,16 +64,16 @@ These functions can be used to aggregate data.
 |min|Returns the minimum value of a column.| -   `min (revenue)`
 
  |
-|moving\_average|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the average of the measure over the given window. The attributes are the ordering columns used to compute the moving average.| -   `moving_average (revenue, 2, 1, customer region)`
+|moving_average|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the average of the measure over the given window. The attributes are the ordering columns used to compute the moving average.| -   `moving_average (revenue, 2, 1, customer region)`
 
  |
-|moving\_max|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the maximum of the measure over the given window. The attributes are the ordering columns used to compute the moving maximum.| -   `moving_max (complaints, 1, 2, store name)`
+|moving_max|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the maximum of the measure over the given window. The attributes are the ordering columns used to compute the moving maximum.| -   `moving_max (complaints, 1, 2, store name)`
 
  |
-|moving\_min|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the minimum of the measure over the given window. The attributes are the ordering columns used to compute the moving minimum.| -   `moving_min (defects, 3, 1, product)`
+|moving_min|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the minimum of the measure over the given window. The attributes are the ordering columns used to compute the moving minimum.| -   `moving_min (defects, 3, 1, product)`
 
  |
-|moving\_sum|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.| -   `moving_sum (revenue, 1, 1, order date)`
+|moving_sum|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.| -   `moving_sum (revenue, 1, 1, order date)`
 
  |
 |stddev|Returns the standard deviation of all values of a column.| -   `stddev (revenue)`
@@ -95,22 +95,22 @@ These functions can be used to convert data from one data type to another. Conve
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|to\_bool|Returns the input as a boolean (true or false).| -   `to_bool (0) = false`
+|to_bool|Returns the input as a boolean (true or false).| -   `to_bool (0) = false`
 -   `to_bool (married)`
 
  |
-|to\_date|Accepts a date represented as an integer or text string, and a second string parameter that can include strptime date formatting elements. Replaces all the valid strptime date formatting elements with their string counterparts and returns the result. Does not accept epoch formatted dates as input.| -   `to_date (date_sold, '%Y-%m-%d')`
+|to_date|Accepts a date represented as an integer or text string, and a second string parameter that can include strptime date formatting elements. Replaces all the valid strptime date formatting elements with their string counterparts and returns the result. Does not accept epoch formatted dates as input.| -   `to_date (date_sold, '%Y-%m-%d')`
 
  |
-|to\_double|Returns the input as a double.| -   `to_double ('3.14') = 3.14`
+|to_double|Returns the input as a double.| -   `to_double ('3.14') = 3.14`
 -   `to_double (revenue * .01)`
 
  |
-|to\_integer|Returns the input as an integer.| -   `to_integer ('45') + 1 = 46`
+|to_integer|Returns the input as an integer.| -   `to_integer ('45') + 1 = 46`
 -   `to_integer (price + tax - cost)`
 
  |
-|to\_string|Returns the input as a text string.| -   `to_string (45 + 1) = '46'`
+|to_string|Returns the input as a text string.| -   `to_string (45 + 1) = '46'`
 -   `to_string (revenue - cost)`
 
  |
@@ -119,7 +119,7 @@ These functions can be used to convert data from one data type to another. Conve
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|add\_days|Returns the result of adding the specified number of days to the given date.| -   `add_days (01/30/2015, 5) = 02/04/2015`
+|add_days|Returns the result of adding the specified number of days to the given date.| -   `add_days (01/30/2015, 5) = 02/04/2015`
 -   `add_days (invoiced, 30)`
 
  |
@@ -130,30 +130,30 @@ These functions can be used to convert data from one data type to another. Conve
 -   `day (date ordered)`
 
  |
-|day\_number\_of\_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
+|day_number_of_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
 -   `day_number_of_week (shipped)`
 
  |
-|day\_number\_of\_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
+|day_number_of_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
 -   `day_number_of_year (invoiced)`
 
  |
-|day\_of\_week|Returns the day of the week for the given date.| -   `day_of week (01/30/2015) = Friday`
+|day_of_week|Returns the day of the week for the given date.| -   `day_of week (01/30/2015) = Friday`
 -   `day_of_week (serviced)`
 
  |
-|diff\_days|Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.| -   `diff_days (01/15/2014, 01/17/2014) = -2`
+|diff_days|Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.| -   `diff_days (01/15/2014, 01/17/2014) = -2`
 -   `diff_days (purchased, shipped)`
 
  |
-|diff\_time|Subtracts the second date from the first date and returns the result in number of seconds.| -   `diff_time (01/01/2014, 01/01/2014) = -86,400`
+|diff_time|Subtracts the second date from the first date and returns the result in number of seconds.| -   `diff_time (01/01/2014, 01/01/2014) = -86,400`
 -   `diff_time (clicked, submitted)`
 
  |
-|hour\_of\_day|Returns the hour of the day for the given date.| -   `hour_of_day (received)`
+|hour_of_day|Returns the hour of the day for the given date.| -   `hour_of_day (received)`
 
  |
-|is\_weekend|Returns true if the given date falls on a Saturday or Sunday.| -   `is_weekend (01/31/2015) = true`
+|is_weekend|Returns true if the given date falls on a Saturday or Sunday.| -   `is_weekend (01/31/2015) = true`
 -   `is_weekend (emailed)`
 
  |
@@ -161,26 +161,26 @@ These functions can be used to convert data from one data type to another. Conve
 -   `month (date ordered)`
 
  |
-|month\_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
+|month_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
 -   `month_number (purchased)`
 
  |
 |now|Returns the current timestamp.| -   `now ()`
 
  |
-|start\_of\_month|Returns the date for the first day of the month for the given date.| -   `start_of_month ( 01/31/2015 ) = Jan FY 2015`
+|start_of_month|Returns the date for the first day of the month for the given date.| -   `start_of_month ( 01/31/2015 ) = Jan FY 2015`
 -   `start_of_month (shipped)`
 
  |
-|start\_of\_quarter|Returns the date for the first day of the quarter for the given date.| -   `start_of_quarter ( 09/18/2015 ) = Q3 FY 2015`
+|start_of_quarter|Returns the date for the first day of the quarter for the given date.| -   `start_of_quarter ( 09/18/2015 ) = Q3 FY 2015`
 -   `start_of_quarter (sold)`
 
  |
-|start\_of\_week|Returns the date for the first day of the week for the given date.| -   `start_of_week ( 06/01/2015 ) = 05/30/2015 Week`
+|start_of_week|Returns the date for the first day of the week for the given date.| -   `start_of_week ( 06/01/2015 ) = 05/30/2015 Week`
 -   `start_of_week (emailed)`
 
  |
-|start\_of\_year|Returns the date for the first day of the year for the given date.| -   `start_of_year ( 02/15/2015 ) = FY 2015`
+|start_of_year|Returns the date for the first day of the year for the given date.| -   `start_of_year ( 02/15/2015 ) = FY 2015`
 -   `start_of_year (joined)`
 
  |
@@ -332,7 +332,7 @@ These functions can be used with text and numeric data types.
 -   `round (battingavg, 100)`
 
  |
-|safe\_divide|Returns the result of dividing the first number by the second. If the second number is 0, returns 0 ​instead of NaN (not a number).| -   `safe_divide (12, 0) = 0`
+|safe_divide|Returns the result of dividing the first number by the second. If the second number is 0, returns 0 ​instead of NaN (not a number).| -   `safe_divide (12, 0) = 0`
 -   `safe_divide (total_cost, units)`
 
  |
@@ -344,7 +344,7 @@ These functions can be used with text and numeric data types.
 -   `sin (beam angle)`
 
  |
-|spherical\_distance|Returns the distance in km between two points on Earth.| -   `spherical_distance (37.465191, -122.153617, 37.421962, -122.142174) = 4,961.96`
+|spherical_distance|Returns the distance in km between two points on Earth.| -   `spherical_distance (37.465191, -122.153617, 37.421962, -122.142174) = 4,961.96`
 -   `spherical_distance (start_latitude, start_longitude, start_latitude, start_longitude)`
 
  |
@@ -400,15 +400,15 @@ These functions can be used with text and numeric data types.
 -   `contains (product, 'trial version')`
 
  |
-|edit\_distance|Accepts two text strings. Returns the edit distance (minimum number of operations required to transform one string into the other) as an integer. Works with strings under 1023 characters.| -   `edit_distance ('attorney', 'atty') = 4`
+|edit_distance|Accepts two text strings. Returns the edit distance (minimum number of operations required to transform one string into the other) as an integer. Works with strings under 1023 characters.| -   `edit_distance ('attorney', 'atty') = 4`
 -   `edit_distance (color, 'red')`
 
  |
-|edit\_distance\_with\_cap|Accepts two text strings and an integer to specify the upper limit cap for the edit distance (minimum number of operations required to transform one string into the other). If the edit distance is less than or equal to the specified cap, returns the edit distance. If it is higher than the cap, returns the cap plus 1. Works with strings under 1023 characters.| -   `edit_distance_with_cap ('pokemon go', 'minecraft pixelmon', 3) = 4`
+|edit_distance_with_cap|Accepts two text strings and an integer to specify the upper limit cap for the edit distance (minimum number of operations required to transform one string into the other). If the edit distance is less than or equal to the specified cap, returns the edit distance. If it is higher than the cap, returns the cap plus 1. Works with strings under 1023 characters.| -   `edit_distance_with_cap ('pokemon go', 'minecraft pixelmon', 3) = 4`
 -   `edit_distance_with_cap (event, 'burning man', 3)`
 
  |
-|similar\_to|Accepts a document text string and a search text string. Returns true if relevance score (0-100) of the search string with respect to the document is greater than or equal to 20. Relevance is based on edit distance, number of words in the query, and length of words in the query which are present in the document.| -   `similar_to ('hello world', 'hello swirl') = true`
+|similar_to|Accepts a document text string and a search text string. Returns true if relevance score (0-100) of the search string with respect to the document is greater than or equal to 20. Relevance is based on edit distance, number of words in the query, and length of words in the query which are present in the document.| -   `similar_to ('hello world', 'hello swirl') = true`
 -   `similar_to (current team, drafted by)`
 
  |
@@ -416,7 +416,7 @@ These functions can be used with text and numeric data types.
 -   `similarity (tweet1, tweet2)`
 
  |
-|spells\_like|Accepts two text strings. Returns true if they are spelled similarly and false if they are not. Works with strings under 1023 characters.| -   `spells_like ('thouhgtspot', 'thoughtspot') = true`
+|spells_like|Accepts two text strings. Returns true if they are spelled similarly and false if they are not. Works with strings under 1023 characters.| -   `spells_like ('thouhgtspot', 'thoughtspot') = true`
 -   `spells_like (studio, distributor)`
 
  |

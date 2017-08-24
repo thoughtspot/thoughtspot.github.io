@@ -1,6 +1,6 @@
 ---
 title: [Search results contain too many blanks]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

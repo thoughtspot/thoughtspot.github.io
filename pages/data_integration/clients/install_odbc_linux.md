@@ -1,6 +1,6 @@
 ---
 title: [Install the ODBC Driver on Linux]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Linux ODBC driver and install it."
@@ -37,7 +37,7 @@ It is important to note the following about the ODBC login information:
         tar -xvf ThoughtSpot_linux_odbc_<version>.tar
         ```
 
-3.   Copy the library files from the Lib directory to a safe location on your Linux machine. Add the corresponding path to the LD\_LIBRARY\_PATH environment variable. For 32-bit users, the library files are located in the directory:
+3.   Copy the library files from the Lib directory to a safe location on your Linux machine. Add the corresponding path to the LD_LIBRARY_PATH environment variable. For 32-bit users, the library files are located in the directory:
 
     ```
     /linux/Lib/Linux_x86
@@ -53,7 +53,7 @@ It is important to note the following about the ODBC login information:
 5.   Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`. Then find the line below it that begins with `ServerList`, and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as 12345. The syntax for `ServerList` is:
 
     ```
-    ServerList = <node1\_IP> 12345, <node2\_IP> 12345 [, <node3\_IP> 12345, ...]
+    ServerList = <node1_IP> 12345, <node2_IP> 12345 [, <node3_IP> 12345, ...]
     ```
 
     For example, for the 64-bit ODBC driver:
@@ -83,7 +83,7 @@ It is important to note the following about the ODBC login information:
     APILevel            = 1
     ConnectFunctions    = YYY
     Description         = ThoughtSpot 64bit ODBC driver
-    **Driver              = /usr/local/scaligent/toolchain/local/simba/odbc/linux/Bin/Linux\_x8664/libSimbaClient.so
+    **Driver              = /usr/local/scaligent/toolchain/local/simba/odbc/linux/Bin/Linux_x8664/libSimbaClient.so
     **DriverODBCVer       = 03.52
     SQLLevel            = 1
     ```

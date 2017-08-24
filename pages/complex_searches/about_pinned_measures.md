@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -16,28 +16,28 @@ The grouping formulas include:
 
 |Function|Description|Examples|
 |--------|-----------|--------|
-|group\_average|Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).| -   `group_average (revenue, customer region)`
+|group_average|Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).| -   `group_average (revenue, customer region)`
 
  |
-|group\_count|Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).| -   `group_count (revenue, customer region)`
+|group_count|Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).| -   `group_count (revenue, customer region)`
 
  |
-|group\_max|Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).| -   `group_max (revenue, customer region)`
+|group_max|Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).| -   `group_max (revenue, customer region)`
 
  |
-|group\_min|Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).| -   `group_min (revenue, customer region)`
+|group_min|Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).| -   `group_min (revenue, customer region)`
 
  |
-|group\_stddev|Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).| -   `group_stddev (revenue, customer region)`
+|group_stddev|Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).| -   `group_stddev (revenue, customer region)`
 
  |
-|group\_sum|Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).| -   `group_sum (revenue, customer region)`
+|group_sum|Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).| -   `group_sum (revenue, customer region)`
 
  |
-|group\_unique\_count|Takes a column name and one or more attributes. Returns the number of unique values in a column, grouped by the attribute(s).| -   `group_unique_count ( product, supplier)`
+|group_unique_count|Takes a column name and one or more attributes. Returns the number of unique values in a column, grouped by the attribute(s).| -   `group_unique_count ( product, supplier)`
 
  |
-|group\_variance|Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).| -   `group_variance (revenue, customer region)`
+|group_variance|Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).| -   `group_variance (revenue, customer region)`
 
  |
 

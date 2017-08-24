@@ -1,13 +1,11 @@
 ---
 title: [Configure LDAP for Active Directory]
-tags: [formatting]
-keywords: tbd
+tags: [Security_SAML_LDAP_AD, SysAdm_tscli_Config]
+keywords: LDAP, "Active Directory"
 last_updated: tbd
-summary: "blerg"
+summary: "Use this procedure to set up integration with LDAP using Active Directory."
 sidebar: mydoc_sidebar
 ---
-Use this procedure to set up integration with LDAP using Active Directory.
-
 Before you configure LDAP for Active Directory, collect this information:
 
 -   URL to connect to Active Directory.
@@ -39,14 +37,14 @@ Before you configure LDAP for Active Directory, collect this information:
 
 You do not need to create a user called tsadmin on your LDAP server. Internal authentication can be used for tsadmin. To configure LDAP for OpenLDAP:
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Run the command to configure LDAP:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Run the command to configure LDAP:
 
     ```
     $ tscli ldap configure
     ```
 
-3.   Answer the prompts using the information you collected. For example:
+3. Answer the prompts using the information you collected. For example:
 
     ```
     Choose the LDAP protocol:
@@ -55,7 +53,6 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     Option number: 1
 
     Configuring Active Directory
-
 
     URL to connect to Active Directory. (Example: ldap://192.168.2.100:389): ldap://192.168.2.100:389
 
@@ -70,12 +67,9 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     Also use ThoughtSpot internal authentication (y/n): y
     ```
 
-4.   If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
-5.   If you want to remove the LDAP configuration, issue:
+4. If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
+5. If you want to remove the LDAP configuration, issue:
 
     ```
     $ tscli ldap purge-configuration
     ```
-
-
-**Parent topic:** [About LDAP integration](../../admin/setup/about_LDAP.html)

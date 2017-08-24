@@ -1,6 +1,6 @@
 ---
 title: [Change settings in the model file]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

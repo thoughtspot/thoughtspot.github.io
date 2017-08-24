@@ -1,6 +1,6 @@
 ---
 title: [Build the schema]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

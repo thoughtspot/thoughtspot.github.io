@@ -1,9 +1,9 @@
 ---
 title: [Mount a NAS file system]
-tags: [formatting]
-keywords: tbd
+tags: [SysAdm_Backup,SysAdm_Restore]
+keywords: tscli, backup, restore
 last_updated: tbd
-summary: "blerg"
+summary: "You can use network attached storage to support backup/restor and data loading."
 sidebar: mydoc_sidebar
 ---
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system for these operations.
@@ -16,13 +16,13 @@ Note that backups are written by the Linux user "admin". If that user does not h
 
 Do not send the periodic backups or stage files on /export/sdb1 since it is a name node. It is used internally by Hadoop Distributed File System (HDFS) and if this drive fills up, it can cause serious problems. Do not allow backups or data files to accumulate on ThoughtSpot. If disk space becomes limited, the system will not function normally.
 
-1.   [Log in to the Linux shell using SSH](login_console.html#).
-2.   Mount the directory to the file system, by issuing the appropriate command:
+1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+2. Mount the directory to the file system, by issuing the appropriate command:
     -   For an NFS (Network File System) directory:
 
         ```
         tscli nas mount-nfs
-           --server <server\_NFS\_address>
+           --server <server_NFS_address>
            --path_on_server <path>
            --mount_point <target>
         ```
@@ -31,7 +31,7 @@ Do not send the periodic backups or stage files on /export/sdb1 since it is a na
 
         ```
         tscli nas mount-cifs
-           --server <server\_CIFS\_address>
+           --server <server_CIFS_address>
            --path_on_server <path>
            --mount_point <target>
            --username <user>
@@ -40,12 +40,9 @@ Do not send the periodic backups or stage files on /export/sdb1 since it is a na
            --gid <gid>
         ```
 
-3.   Use the mounted file system as you wish, specifying it by referring to its mount point.
-4.   When you are finished with it, you may optionally unmount the NAS file system:
+3. Use the mounted file system as you wish, specifying it by referring to its mount point.
+4. When you are finished with it, you may optionally unmount the NAS file system:
 
     ```
     tscli nas unmount --dir <directory>
     ```
-
-
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)

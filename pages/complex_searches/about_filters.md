@@ -1,6 +1,6 @@
 ---
 title: [Introduction to filters]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Filters narrow down the search result to only include the data you want to see."

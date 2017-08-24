@@ -1,6 +1,6 @@
 ---
 title: [Delete a relationship]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -44,10 +44,10 @@ You can use runtime filters on these data types:
 -   DOUBLE
 -   BOOLEAN
 -   DATE
--   DATE\_TIME
+-   DATE_TIME
 -   TIME
 
-Note that for DATE and DATE\_TIME values, you must specify the date in epoch time \(also known as POSIX or Unix time\).
+Note that for DATE and DATE_TIME values, you must specify the date in epoch time \(also known as POSIX or Unix time\).
 
 ## Example Uses
 

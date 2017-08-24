@@ -1,6 +1,6 @@
 ---
 title: [Simplify searching with worksheets]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

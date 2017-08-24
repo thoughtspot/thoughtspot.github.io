@@ -1,6 +1,6 @@
 ---
 title: [Create a formula in a worksheet]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

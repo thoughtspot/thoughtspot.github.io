@@ -1,6 +1,6 @@
 ---
 title: [Enabling ODBC Logs on Windows]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Using logs to aid in troulbeshooting."

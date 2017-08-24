@@ -1,6 +1,6 @@
 ---
-title: [Software updates]
-tags: [formatting]
+title: [DELETE ME]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

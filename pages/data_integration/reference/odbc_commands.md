@@ -1,6 +1,6 @@
 ---
 title: [ODBC supported SQL commands]
-tags: [formatting]
+tags: 
 keywords: tbd
 last_updated: tbd
 summary: "ODBC driver supports a limited set of SQL commands."
@@ -31,7 +31,7 @@ DELETE FROM country_dim;
 ```
 
  |
-|`SELECT <cols\_or\_expression> FROM <table\_list> [WHERE <predicates>] [GROUP BY <expressions>]``[ORDER BY <expressions>]`|Fetches the specified set of table data.| ```
+|`SELECT <cols_or_expression> FROM <table_list> [WHERE <predicates>] [GROUP BY <expressions>]``[ORDER BY <expressions>]`|Fetches the specified set of table data.| ```
 SELECT id_number, country FROM country_dim WHERE id_number > 200;
 ```
 
