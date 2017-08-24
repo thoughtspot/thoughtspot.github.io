@@ -8,12 +8,6 @@ sidebar: mydoc_sidebar
 ---
 The installation and setup walks you through the basic steps required to set up and configure ThoughtSpot. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot.
 
--   **[Login credentials for administration](../../admin/setup/logins.html)**  
-You will need administrative permissions to perform the actions discussed in this guide. You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
--   **[Log in to the Linux shell using SSH](../../admin/setup/login_console.html)**  
-To perform basic administration such as checking network connectivity, starting and stopping services, and setting up email, log in remotely as the Linux administrator user "admin". To log in with SSH from a client machine, you can use the command shell or a utility like Putty.
--   **[Log in to ThoughtSpot from a browser](../../admin/setup/accessing.html)**  
-To set up and explore your data, access ThoughtSpot from a standard Web browser using a username and password.
 -   **[Set your ThoughtSpot locale](../../admin/setup/set_your_thoughtspot_locale.html)**  
 In addition to American English, ThoughtSpot also supports German and Japanese.
 -   **[Software updates](../../admin/setup/upgrades.html)**  

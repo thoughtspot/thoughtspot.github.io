@@ -22,23 +22,17 @@ entries:
   - sectiontitle: Administrators Guide
     output: web, pdf
     sectionitems:
-    - title: Introduction
+    - title: Introduction to administration
       url: /pages/admin/intro.html
+      output: web, pdf
+    - title: Login credentials for administration
+      url: /pages/admin/setup/logins.html
       output: web, pdf
     - levelTwoTitle: Installation and setup
       output: web, pdf
       levelTwoItems:
         - title: Introduction
           url: /pages/admin/setup/intro.html
-          output: web, pdf
-        - title: Login credentials for administration
-          url: /pages/admin/setup/logins.html
-          output: web, pdf
-        - title: SSH into the Linux shell
-          url: /pages/admin/setup/login_console.html
-          output: web, pdf
-        - title: Log in from a browser
-          url: /pages/admin/setup/accessing.html
           output: web, pdf
         - title: Set your locale
           url: /pages/admin/setup/set_your_thoughtspot_locale.html
