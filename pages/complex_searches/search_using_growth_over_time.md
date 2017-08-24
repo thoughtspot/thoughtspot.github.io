@@ -31,7 +31,7 @@ To search using growth over time:
 
     This compares data between the same month from different years. For example, it will allow you to compare sales from June of this year to the sales from June of last year. Note that for the first year, values are labeled as "\{Blank\}" in the Data View since there are no previous data to compare them to.
 
-5.   Add an attribute to your search see the breakdown of how each grouping of the attribute contributed to the overall growth of your measure. Click **Configure Chart** and add your attribute to the Legend field. 
+5. Add an attribute to your search see the breakdown of how each grouping of the attribute contributed to the overall growth of your measure. Click **Configure Chart** and add your attribute to the Legend field. 
 
      ![](../../images/growth_of_attribute_breakdown.png "Growth of broken up by category") 
 

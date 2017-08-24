@@ -34,7 +34,7 @@ To set up the VMs and launch ThoughtSpot:
 
      ![](../../images/select_region.png "Select a region to launch your instance in") 
 
-5.   Create an instance by clicking **Launch Instance**. 
+5. Create an instance by clicking **Launch Instance**. 
 
      ![](../../images/launch_instance.png "Launch an instance") 
 
@@ -42,9 +42,9 @@ To set up the VMs and launch ThoughtSpot:
 
      ![](../../images/select_the%20ami.png "Select the AMI") 
 
-7.   Select r4.16xlarge as the instance type. Then click **Next: Configure Instance Details**. 
-8.   Configure the instances by choosing the number of EC2 instances you need based on your EC2 details. The instances need to be on the same VPC and subnetwork. Then click **Next: Add Storage**. 
-9.   The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned. Click **Next: Add Tags** when you are done modifying the storage size. 
+7. Select r4.16xlarge as the instance type. Then click **Next: Configure Instance Details**. 
+8. Configure the instances by choosing the number of EC2 instances you need based on your EC2 details. The instances need to be on the same VPC and subnetwork. Then click **Next: Add Storage**. 
+9. The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned. Click **Next: Add Tags** when you are done modifying the storage size. 
 10.  Set a name for tagging your instances. Then click **Next: Configure Security Group**. 
 11.  Select an existing security group to attach new security groups to such that it meets the security requirements for ThoughtSpot. 
 

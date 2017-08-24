@@ -27,7 +27,7 @@ When you share a worksheet, all of its columns are shared. Sharing a worksheet d
 4.   Configure the level of access by selecting from the dropdown list. You can select:
     -   **Can View** to provide read-only access. Enables viewing the worksheet and searching on it.
     -   **Can Edit** to allow modification. Enables renaming, modifying filters, or deleting the worksheet and adding or removing its columns. To add columns to a worksheet a user needs access to the underlying table.
-5.   Click **Add and Save**.
+5. Click **Add and Save**.
 6.   Click **Done**.
 
 **Parent topic:** [Data security](../../admin/data_security/sharing_security_overview.html)

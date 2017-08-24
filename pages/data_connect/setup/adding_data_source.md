@@ -23,12 +23,12 @@ Data sources can consist of relational database sources, like SQL Server or appl
 
      ![](../../../images/data_sources_tab.png "New data source") 
 
-5.   Select which type of connection you wish to use from the available list. 
+5. Select which type of connection you wish to use from the available list. 
 6.   Select a connection type and click **Next**. 
 
      ![](../../../images/lightweight_etl_select_connection.png "Select a connection type") 
 
-7.   To select a connection, choose one of these options: 
+7. To select a connection, choose one of these options: 
 
     -   Select a pre-defined connection type, by choosing it from the **Select Connection** list:
 
@@ -40,7 +40,7 @@ Data sources can consist of relational database sources, like SQL Server or appl
 
     Refer to the [Data Connect connectors reference](../reference/data_connect_connection_credentials.html#) for more information on each of the specific attributes you must enter into the dialog box.
 
-8.   Choose the tables you wish to load from the list of **Available Tables**. 
+8. Choose the tables you wish to load from the list of **Available Tables**. 
 
     **Restriction:** Only the first 200 objects that occur alphabetically will be listed per schema. If you want to access a table that falls below the first 200 objects alphabetically, you must use the object search bar.
 
@@ -62,7 +62,7 @@ Data sources can consist of relational database sources, like SQL Server or appl
     2.  Then use Data Connect to pull data and write the View to ThoughtSpot.
      ![](../../../images/lightweight_etl_select_columns.png "Selecting tables and columns") 
 
-9.   When all the columns are selected, click **\>** to move them to the **Selected Tables** box. Click **Next**. 
+9. When all the columns are selected, click **\>** to move them to the **Selected Tables** box. Click **Next**. 
 10.  You can optionally apply a filter to only import specific rows by clicking **New...** under **Data Filters**. 
     1.   Select a table to filter. 
     2.   Select a filter by specifying a column, operator, and value. 
@@ -79,7 +79,7 @@ Data sources can consist of relational database sources, like SQL Server or appl
          ![](../../../images/lightweight_etl_expression.png "Apply an Expression") 
 
     4.   Click **Add Column**. 
-    5.   Click **Validate** to validate your expression before creating the data source. 
+    5. Click **Validate** to validate your expression before creating the data source. 
     6.   You can create as many expressions as you need by clicking **+** and repeating these steps. 
 12.  Click **Next**. 
 13.  Provide a **Source Name** for the data source. 

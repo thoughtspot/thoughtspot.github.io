@@ -25,7 +25,7 @@ This example will demonstrate using the cumulative_sum formula, also known as a 
      ![](../../images/cumulative_sum_formula.png "Cumulative Sum Formula") 
 
 4.   Name the formula by clicking on its title and typing the new name. Click **Save**. 
-5.   The formula will appear in the search bar and in the table as its own column. 
+5. The formula will appear in the search bar and in the table as its own column. 
 
      ![](../../images/cumulative_sum_table.png "Cumulative Sum Table") 
 

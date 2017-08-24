@@ -23,7 +23,7 @@ To create a group and add privileges for the group:
 
      ![](../../images/add_group_3.2.png "Add a new Group")
 
-5.   Enter the details for the new group:
+5. Enter the details for the new group:
 
      ![](../../images/new_group_dialogue_3.2.png "Enter Group details")
 
@@ -34,7 +34,7 @@ To create a group and add privileges for the group:
         If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about_row_security.html#) does not apply to them.
 
     4.   Click the **Manage Groups** tab if you want to add sub-groups. Find the groups you want to add in the list, or search for them by name. Check the box next to each group you want to add to the group.
-    5.   Click the **Manage Users** tab if you want to add users. Find the users you want to add in the list, or search for them by name. Check the box next to each user you want to add to the group.
+    5. Click the **Manage Users** tab if you want to add users. Find the users you want to add in the list, or search for them by name. Check the box next to each user you want to add to the group.
 6.   Click **Create** to create the group.
 
 **Parent topic:** [Manage users, groups, and privileges](../../admin/users_groups/about_users_groups.html)

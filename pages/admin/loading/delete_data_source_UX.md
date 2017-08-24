@@ -29,7 +29,7 @@ ThoughtSpot checks for dependencies whenever you try to delete a table or worksh
      ![](../../images/dependency_warning_with_links.png "Warning message when trying to delete an object with
                                 dependencies")
 
-5.   Click on a dependent object to modify or delete it. If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
+5. Click on a dependent object to modify or delete it. If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
 6.   When all dependencies have been removed, you will be able to go back and delete the data source.
 
 -   **[Check dependencies in the browser](../../admin/loading/check_dependency_ux.html)**  

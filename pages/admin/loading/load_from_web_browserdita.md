@@ -40,11 +40,11 @@ To load the CSV or Excel file into ThoughtSpot:
 4.   Upload the CSV or Excel file by doing one of these options:
     -   Click on **Browse your files** and select the file.
     -   Drag and drop the file into the drop area.
-5.   Answer the question **Are the column names already defined in the file header?**
+5. Answer the question **Are the column names already defined in the file header?**
 6.   Answer the question **Are the fields separated by?** Click **Next**.
-7.   Click on the column header names to change them to more useful names, if you'd like. Click **Next**.
-8.   Review the automatically generated data types for each column, and make any changes you want. There are four data types: Text, Integer, Decimal, and Date.
-9.   Click **Import**.
+7. Click on the column header names to change them to more useful names, if you'd like. Click **Next**.
+8. Review the automatically generated data types for each column, and make any changes you want. There are four data types: Text, Integer, Decimal, and Date.
+9. Click **Import**.
 10.  Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet. Or click **Search** if you want to begin a new search.
 
 **Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)

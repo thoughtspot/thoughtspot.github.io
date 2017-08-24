@@ -40,7 +40,7 @@ Use this procedure to construct the URL you will use to call the REST API:
 
         ![](../../images/copy_link_viz_viz_part.png "The visualization ID")
 
-5.   Construct the URL as follows: For a pinboard, the URL takes the form:
+5. Construct the URL as follows: For a pinboard, the URL takes the form:
 
     ```
     https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>
@@ -53,8 +53,8 @@ Use this procedure to construct the URL you will use to call the REST API:
     ```
 
 6.   If you want to apply any filters to the data that will be returned, apply [Runtime Filters](../runtime_filters/about_runtime_filters.html#). 
-7.   Now your URL is complete, and you can use it to access the data directly via the HTTP POST method. 
-8.   The REST API returns the data formatted as JSON. Retrieve the data from the JSON and display it in your Web page, Web portal, or application. 
+7. Now your URL is complete, and you can use it to access the data directly via the HTTP POST method. 
+8. The REST API returns the data formatted as JSON. Retrieve the data from the JSON and display it in your Web page, Web portal, or application. 
 
 **Parent topic:** [About the REST API](../../application_integration/data_api/about_data_api.html)
 

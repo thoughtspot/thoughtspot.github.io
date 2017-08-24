@@ -31,7 +31,7 @@ To create the schema directly in TQL:
     TQL> CREATE SCHEMA my_schema;
     ```
 
-5.   Issue a CREATE TABLE command for each table you will create, using the information in [Plan the schema](plan_schema.html#).
+5. Issue a CREATE TABLE command for each table you will create, using the information in [Plan the schema](plan_schema.html#).
 
     **Note:** Foreign key declaration within a CREATE TABLE will show the table created even if there are problems with the foreign key. Therefore, it is good practice to also issue a separate `ALTER TABLE ADD CONSTRAINT FOREIGN KEY` command.
 

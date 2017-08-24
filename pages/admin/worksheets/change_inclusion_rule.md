@@ -22,7 +22,7 @@ To change the inclusion or join rule of a worksheet:
 
     ![](../../shared/conrefs/../../images/worksheet_add_sources_link.png)
 
-5.   Choose the [inclusion rule](about_inclusion_rule.html#) and/or the [worksheet join rule](progressive_joins.html#).
+5. Choose the [inclusion rule](about_inclusion_rule.html#) and/or the [worksheet join rule](progressive_joins.html#).
 
      ![](../../images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
 

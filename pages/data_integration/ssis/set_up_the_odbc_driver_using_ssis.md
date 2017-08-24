@@ -21,7 +21,7 @@ To set up the ODBC driver using SSIS:
     **Note:** You can add the UID and password by clicking on **Options**.
 
 4.   Click **File** and select **New**, then **Project**.
-5.   Select the **Integration Services** tab under Installed \> Templates \> Business Intelligence. Enter a name in the **Name** field and click **OK**.
+5. Select the **Integration Services** tab under Installed \> Templates \> Business Intelligence. Enter a name in the **Name** field and click **OK**.
 
      ![](../../images/ssis_integration_services.png "New Project: Integration Services")
 
@@ -29,12 +29,12 @@ To set up the ODBC driver using SSIS:
 
      ![](../../images/ssis_data_flow_task.png "Drag and drop Data Flow Task")
 
-7.   Double click the **Data Flow Task** icon when it appears in the center of the page.
+7. Double click the **Data Flow Task** icon when it appears in the center of the page.
 
      ![](../../images/ssis_data_flow_task_icon.png "Data Flow Task icon")
 
-8.   Navigate back to the **SSIS Toolbox** tab. You now want to create sources and destinations. Under **Other Sources**, find **OLE DB Source** and drag and drop it to the main window.
-9.   Double click the **OLE DB Source** icon when it appears in the center of the page to open the OLE DB Source Editor.
+8. Navigate back to the **SSIS Toolbox** tab. You now want to create sources and destinations. Under **Other Sources**, find **OLE DB Source** and drag and drop it to the main window.
+9. Double click the **OLE DB Source** icon when it appears in the center of the page to open the OLE DB Source Editor.
 10.  Select a new OLE DB connection manager by clicking **New**. In the Configure OLE DB Connection Manager window, select your **Data connection** and click **OK**.
 
      ![](../../images/ssis_ole_db_connection_manager.png "Configure OLE DB Connection Manager")

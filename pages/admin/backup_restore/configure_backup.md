@@ -56,7 +56,7 @@ To configure periodic backups:
 2.   Find a directory with enough disk space to support the `retention_policy number` you configure. Hint: You can use df -h to see free disk space and tscli snapshot ls to view existing snapshots and their size on disk.
 3.   Use the tscli backup-policy create command. The command opens a `vi` editor for you to configure the backup policy.
 4.   Write and save the file to store your configuration. By default, newly created policies are automatically enabled. To disable a policy, use the tscli backup-policy disable command.
-5.   Verify the policy using the `tscli backup periodic-config <name>` command.
+5. Verify the policy using the `tscli backup periodic-config <name>` command.
 
 The following table lists some additional backup commands you can use.
 

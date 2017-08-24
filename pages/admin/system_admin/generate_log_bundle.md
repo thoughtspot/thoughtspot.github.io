@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 Use theses steps to generate a log bundle, which you can then send to ThoughtSpot Support.
 
-Before you can send a log bundle to ThoughtSpot Support, you must [Connect to the ThoughtSpot Support file server](../setup/configure_secure_file_server_connection.html#). This is a one-time setup operation.
+Before you can send a log bundle to ThoughtSpot Support, you must [Connect to the ThoughtSpot Support file server](../setup/work-with-ts-support.html#). This is a one-time setup operation.
 
 To generate a log bundle:
 

@@ -20,7 +20,7 @@ To obtain the security file:
 
     ![](../../images/download_security_file.png)
 
-5.   Save it to your machine.
+5. Save it to your machine.
 6.   Open the security file in Excel or a text editor.
     -   If you are using Excel, you may see a warning message. Click "Yes" to proceed.
 

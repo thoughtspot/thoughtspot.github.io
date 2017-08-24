@@ -38,7 +38,7 @@ To create a formula in a search:
     -   Aggregation type
     ![](../../shared/conrefs/../../images/formula_advanced_settings.png "Advanced settings in the Formula Builder")
 
-7.   Name the formula by clicking on its title and typing the new name. Click **Save**. 
+7. Name the formula by clicking on its title and typing the new name. Click **Save**. 
 
 **Parent topic:** [About formulas in searches](../../pages/complex_searches/add_formula_to_search.html)
 

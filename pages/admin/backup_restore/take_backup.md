@@ -52,7 +52,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
          <name> <directory>
     ```
 
-5.   Check that the backup was created:
+5. Check that the backup was created:
 
     ```
     $ tscli backup ls

@@ -30,7 +30,7 @@ To enable ODBC logs on Windows:
      ![](../../images/odbc_logs_4.png "Windows ODBC Logging Setup")
 
 6.   Click **OK** to save your settings, and **OK** again, to dismiss the ODBC Data Source Administrator.
-7.   Run the ODBC load.
-8.   Locate the log file that was generated, and send it to ThoughtSpot Support with a description of the problem.
+7. Run the ODBC load.
+8. Locate the log file that was generated, and send it to ThoughtSpot Support with a description of the problem.
 
 **Parent topic:** [Troubleshooting Data Integrations](../../data_integration/troubleshooting/troubleshooting_intro.html)

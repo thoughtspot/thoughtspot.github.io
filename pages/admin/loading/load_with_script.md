@@ -37,7 +37,7 @@ The example script shown here uses the `cat` command to read the data file, and 
     ```
 
 4.   Save the file.
-5.   Run the script:
+5. Run the script:
 
     ```
     $ ./load_baseball_data.sh

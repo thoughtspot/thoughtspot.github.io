@@ -43,7 +43,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
 
 3.   You will now configure the Federation Partnership between CA SiteMinder \(the IDP\) and ThoughtSpot \(the Remote SP\) in CA SiteMinder. Log in to CA SiteMinder. 
 4.   Navigate to **Federation** -\> **Partnership Federation** -\> **Create Partnership** \(**SAML 2 IDP** -\> **SP**\). 
-5.   Click **Configure Partnership** and fill in the following values: 
+5. Click **Configure Partnership** and fill in the following values: 
 
     |Section|Entry|
     |-------|-----|
@@ -63,7 +63,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Name ID Type|User Attribute|
     |Value|Should be the name of the user attribute containing the email address or user identifier. For example, 'mail'|
 
-7.   Click **Configure SSO and SLO** and fill in the following values: 
+7. Click **Configure SSO and SLO** and fill in the following values: 
 
     |Section|Entry|
     |-------|-----|
@@ -73,7 +73,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Transaction Allowed|Optional|
     |Assertion Consumer Service URL|This should be pre-populated using the information from the SP entity|
 
-8.   Continue to **Partnership Activation** and select **Activate**. 
+8. Continue to **Partnership Activation** and select **Activate**. 
 
 **Parent topic:** [About SAML](../../application_integration/SAML/about_SAML_integrations.html)
 

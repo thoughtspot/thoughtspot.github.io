@@ -27,7 +27,7 @@ To edit a connection:
 
      ![](../../../images/new_data_source_created.png "New data source") 
 
-5.   Select the connection type of interest and click **Next**. 
+5. Select the connection type of interest and click **Next**. 
 
      ![](../../../images/lightweight_etl_select_connection.png "Select a connection type") 
 
@@ -36,7 +36,7 @@ To edit a connection:
     1.   Click **Edit connection** on the right of your selected connection to open the Edit connection dialog box. 
      ![](../../../images/edit_connection_sf.png "Edit a connection") 
 
-7.   Edit the connection details, then click **Test & Edit**. 
+7. Edit the connection details, then click **Test & Edit**. 
 
      ![](../../../images/edit_connection_box.png "Edit connection dialog box") 
 

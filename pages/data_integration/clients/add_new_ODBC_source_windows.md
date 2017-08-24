@@ -28,7 +28,7 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
      ![](../../images/ODBC_choose_new_data_source_to_add.png "Select the driver for your new data source")
 
-5.   In the **Client Configuration Dialog**, enter the details about your data source.
+5. In the **Client Configuration Dialog**, enter the details about your data source.
 
     -   **Data Source Name**: The name you want to call the data source.
     -   **Description**: A description of the data source.
@@ -40,18 +40,18 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
      ![](../../images/ODBC_config_dev_source_connect.png "Enter the data source details")
 
 6.   To configure custom properties, click **Options**.
-7.   Click **Add**, to add a new custom property.
+7. Click **Add**, to add a new custom property.
 
      ![](../../images/ODBC_add_custom_property.png "Add a custom property")
 
-8.   Add these properties using the key value pairs shown, clicking **OK** after each entry to save it. Note that the key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](../reference/simba_settings.html#).
+8. Add these properties using the key value pairs shown, clicking **OK** after each entry to save it. Note that the key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](../reference/simba_settings.html#).
 
     -   **DATABASE**: The default database to connect to.
     -   **SCHEMA**: Optional. The default schema to connect to.
     -   **CONNECTIONTIMEOUT**: Optional. Seconds before an idle connection times out.
      ![](../../images/ODBC_add_custom_property_new_data_source.png "Enter the custom property key and value")
 
-9.   When all the setting have been made, click **Test Connection**.
+9. When all the setting have been made, click **Test Connection**.
 10.  If everything is working, click **OK**, to save your settings. If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting_ODBC.html#).
 
 **Parent topic:** [Install the ODBC Driver on Windows](../../data_integration/clients/install_odbc_windows.html)

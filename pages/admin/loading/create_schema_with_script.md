@@ -36,10 +36,10 @@ cat safest_script_ever.sql | tql --allow_unsafe
     ```
 
 4.   Type in the command to create the schema, if you don't want to use the default schema:
-5.   Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification (if any).
+5. Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification (if any).
 6.   At the end of your script, optionally type in the ALTER TABLE statements to add foreign keys to use in joining the tables.
-7.   Save the file.
-8.   Run the script using one of these methods:
+7. Save the file.
+8. Run the script using one of these methods:
 
     -   [Import a schema (use the SQL editor)](upload_sql_script.html#).
     -   [Log in to the shell](../setup/login_console.html#), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:

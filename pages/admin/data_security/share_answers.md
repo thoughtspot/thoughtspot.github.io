@@ -14,11 +14,11 @@ Whenever you view an answer, you have the option of sharing it with others. It w
 
     ![](../../images/share_answer.png)
 
-5.   Configure the level of access by selecting from the dropdown list. You can select: 
+5. Configure the level of access by selecting from the dropdown list. You can select: 
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared answer.
     -   **Can Edit** to allow modification. Enables renaming or deleting the shared answer. If a user with edit privileges modifies a shared answer, their changes will be saved to it.
 6.   Click **Add and Save**. 
-7.   Click **Done**. 
+7. Click **Done**. 
 
 **Parent topic:** [About sharing](../../pages/end_user_guide/data_view/sharing_for_end_users.html)
 

@@ -1,9 +1,9 @@
 ---
-title: [Mount a NAS file system]
+title: [Configure NAS for backup storage]
 tags: [SysAdm_Backup,SysAdm_Restore]
 keywords: tscli, backup, restore
 last_updated: tbd
-summary: "You can use network attached storage to support backup/restor and data loading."
+summary: "You can use network attached storage to support backup/restore and data loading."
 sidebar: mydoc_sidebar
 ---
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system for these operations.

@@ -50,7 +50,7 @@ ALTER TABLE "sales"
 ```
 
 4.   Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
-5.   Delete the snapshot you created earlier using the command:
+5. Delete the snapshot you created earlier using the command:
 
     ```
     tscli snapshot delete <name>

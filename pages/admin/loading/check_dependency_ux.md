@@ -20,6 +20,6 @@ To view dependent objects for a data source:
      ![](../../images/dependents.png "List of dependent objects")
 
 4.   Click on a dependent object to modify or delete it. If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
-5.   When all dependencies have been removed, you will be able to go back and delete the data source.
+5. When all dependencies have been removed, you will be able to go back and delete the data source.
 
 **Parent topic:** [Delete a data source from the browser](../../admin/loading/delete_data_source_UX.html)

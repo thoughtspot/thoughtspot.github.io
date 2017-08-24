@@ -73,23 +73,14 @@ entries:
           - title: Sync users and groups from LDAP
             url: /pages/admin/setup/sync_users_and_groups_from_ldap.html
             output: web, pdf
-        - title: Mount a NAS file system
+        - title: Configure NAS for backup storage
           url: /pages/admin/setup/NAS_mount.html
-          output: web, pdf
-        - title: Add a custom support contact
-          url: /pages/admin/setup/set_custom_support_contact.html
           output: web, pdf
         - title: Set up monitoring
           url: /pages/admin/setup/set_up_monitoring.html
           output: web, pdf
-        - title: Connect to the ThoughtSpot Support file server
-          url: /pages/admin/setup/configure_secure_file_server_connection.html
-          output: web, pdf
-        - title: Set up remote support access
-          url: /pages/admin/setup/set_up_remote_support.html
-          output: web, pdf
-        - title: Enable the call home capability
-          url: /pages/admin/setup/enable_call_home.html
+        - title: Configure support services
+          url: /pages/admin/setup/work-with-ts-support.html
           output: web, pdf
         - title: Network ports
           url: /pages/admin/setup/firewall_ports.html

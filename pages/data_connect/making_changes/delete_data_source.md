@@ -26,14 +26,14 @@ To delete a data source:
     ![](../../../shared/conrefs/../../images/data_sources_tab_created.png "Data Sources tab")
 
 4.   Find the data source you want to delete, and click on its name. 
-5.   Click **Edit**. This will bring you to the setup screens for a new data source. Step through all the screens by clicking **Next**, until you reach the final page. 
+5. Click **Edit**. This will bring you to the setup screens for a new data source. Step through all the screens by clicking **Next**, until you reach the final page. 
 6.   Click the **Import** button. 
-7.   Click the **here** link to review the TQL script that created the target table in ThoughtSpot. 
+7. Click the **here** link to review the TQL script that created the target table in ThoughtSpot. 
 
      ![](../../../images/data_connect_edit_schema.png "Edit schema here link") 
 
-8.   Take a look at the table name and its schema. Decide if the table is one you want to keep in ThoughtSpot. 
-9.   Go back to the data sources listing, click the checkbox next to the data source, and delete it. 
+8. Take a look at the table name and its schema. Decide if the table is one you want to keep in ThoughtSpot. 
+9. Go back to the data sources listing, click the checkbox next to the data source, and delete it. 
 
      ![](../../../images/data_connect_delete_source.png "Delete a data source") 
 

@@ -19,7 +19,7 @@ You can edit any of the values in the model file, except for those where the wor
 2.   Find the column you want to modify. Descriptions of the meanings of the columns are listed in [Data modeling settings](data_modeling_settings.html#).
 3.   Select the value you want to change.
 4.   Type in the new value.
-5.   After making all your changes, save the model file.
+5. After making all your changes, save the model file.
     -   If you are using Excel, you will see a message. Click **Yes** to save the file.
 
          ![](../../images/warning_save_model_excel.png)

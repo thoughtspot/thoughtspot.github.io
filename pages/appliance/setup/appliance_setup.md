@@ -29,7 +29,7 @@ To install and start the appliance and connect to your network:
 
      ![](../images/node_diagram_internal.png "Haswell port to use for 10 GbE") 
 
-5.   Turn on the appliance by pressing and releasing the power button for each node and allow time for the nodes to boot up completely. 
+5. Turn on the appliance by pressing and releasing the power button for each node and allow time for the nodes to boot up completely. 
 
      ![](../images/rack_diagram4.png "Location of the power and UID buttons on the control panel") 
 
@@ -38,9 +38,9 @@ To install and start the appliance and connect to your network:
     There is also a UID button, which is used to turn on or off the blue light function of the LED. Once the blue light is activated, the unit can be easily located in very large racks and server banks. A blue LED is also illuminated on the corresponding node, visible from the rear of the chassis.
 
 6.   After the appliance has been turned on, verify that both LEDs \(IPMI and data NICs\) on each network card are lit. 
-7.   Connect a keyboard and monitor to each node in turn. You should see a login prompt on the screen. If you don't see one or the screen isn't responsive, press the key combination control, alt, and F2 on your keyboard, which should allow you to attempt to log in. 
-8.   Log in as username admin, using the default password. 
-9.   Once logged in, run the following commands and capture the output at every stage: 
+7. Connect a keyboard and monitor to each node in turn. You should see a login prompt on the screen. If you don't see one or the screen isn't responsive, press the key combination control, alt, and F2 on your keyboard, which should allow you to attempt to log in. 
+8. Log in as username admin, using the default password. 
+9. Once logged in, run the following commands and capture the output at every stage: 
 
     ```
     sudo ipmitool lan print 1

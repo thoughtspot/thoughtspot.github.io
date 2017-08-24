@@ -28,7 +28,7 @@ To initialize the IdP metadata on AD FS:
     ```
 
 4.   Replace the contents of the file `idp-meta.xml` with the metadata of the IdP that you downloaded. Do not change the name of the file. 
-5.   Restart Tomcat using these commands: 
+5. Restart Tomcat using these commands: 
 
     ```
     $ cd /usr/local/scaligent/release 

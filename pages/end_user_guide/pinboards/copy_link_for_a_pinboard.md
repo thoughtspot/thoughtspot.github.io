@@ -29,7 +29,7 @@ To copy the link for a pinboard:
 
      ![](../../../images/copy_link_pinboard.png "Copy pinboard link") 
 
-5.   To copy an individual visualization link, click **Copy link** under the dropdown menu of the visualization you would like to get a link for. 
+5. To copy an individual visualization link, click **Copy link** under the dropdown menu of the visualization you would like to get a link for. 
 
      ![](../../../images/copy_link_of_a_visualization.png "Copy visualization link option") 
 

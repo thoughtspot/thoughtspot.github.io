@@ -44,7 +44,7 @@ To install the SSL certificate:
       $ cd <path>
       ```
 
-5.   Issue the tscli command to install the certificate:
+5. Issue the tscli command to install the certificate:
 
       ```
       $ tscli ssl add-cert <key> <certificate>

@@ -20,7 +20,7 @@ To get to the Rule Builder:
 
      ![](../../images/add_row_security.png "Add row security")
 
-5.   The Rule Builder will appear, where you can [define row level security rules](define_rls_rules.html#).
+5. The Rule Builder will appear, where you can [define row level security rules](define_rls_rules.html#).
 
      ![](../../images/rls_rule_builder.png "The Rule Builder")
 

@@ -24,11 +24,11 @@ Importing a schema through the Web browser makes it possible to run your SQL scr
      ![](../../images/import_schema.png "Upload schema")
 
 4.   Drag and drop your SQL file into the browser, or choose **Browse Your Files** to locate it.
-5.   You're now in the SQL editor. Use it to view your script and make any changes.
+5. You're now in the SQL editor. Use it to view your script and make any changes.
 
      ![](../../images/SQL_editor.png "Import schema")
 
 6.   When ready, run your script by clicking the **Execute** button.
-7.   If there are any errors, correct them and run the script again.
+7. If there are any errors, correct them and run the script again.
 
 **Parent topic:** [Build the schema](../../admin/loading/create_schema.html)

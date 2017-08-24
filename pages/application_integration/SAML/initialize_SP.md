@@ -18,11 +18,11 @@ To initialize the Service Provider metadata on AD FS:
 2.   Select **Add Relying Party Trust**. 
 3.   Select **Import data about the relying party from a file**. 
 4.   Upload the metadata.xml file that you downloaded from ThoughtSpot earlier. 
-5.   Select **Next.** The wizard may complain that some of the content of the metadata is not supported. You can safely ignore this warning. 
+5. Select **Next.** The wizard may complain that some of the content of the metadata is not supported. You can safely ignore this warning. 
 6.   In the **Ready to Add Trust** section, make sure that the tab endpoints contains multiple endpoint values. If not, verify that your metadata was generated with the HTTPS protocol URLs. 
-7.   Leave the **Open the Edit Claim Rules dialog** checkbox checked. Click **Next**. 
-8.   Select **Add Rule**. 
-9.   Choose **Send LDAP Attributes as Claims** and click **Next.** 
+7. Leave the **Open the Edit Claim Rules dialog** checkbox checked. Click **Next**. 
+8. Select **Add Rule**. 
+9. Choose **Send LDAP Attributes as Claims** and click **Next.** 
 10.  For **NameID** enter "Claim rule name" 
 11.  For **Attribute store**, choose "Active Directory". 
 12.  For **LDAP Attribute** choose "SAM-Account-Name". 

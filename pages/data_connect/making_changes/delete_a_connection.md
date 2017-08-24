@@ -24,7 +24,7 @@ To delete a connection:
     ![](../../../shared/conrefs/../../images/data_sources_tab_created.png "Data Sources tab")
 
 4.   Delete any dependent data sources. To delete a data source, see [Delete a data source](delete_data_source.html#).
-5.   Select **+ New data source** on the upper right hand side of the panel. 
+5. Select **+ New data source** on the upper right hand side of the panel. 
 
      ![](../../../images/new_data_source_created.png "New data source") 
 
@@ -32,7 +32,7 @@ To delete a connection:
 
      ![](../../../images/lightweight_etl_select_connection.png "Select a connection type") 
 
-7.   In the **Select Tables** step, click the **Select a connection** dropdown and browse the list for the connection you wish to delete. 
+7. In the **Select Tables** step, click the **Select a connection** dropdown and browse the list for the connection you wish to delete. 
 
     1.   Click the **x** on the right of your selected connection to delete it. 
      ![](../../../images/delete_a_connection.png "Delete a connection") 

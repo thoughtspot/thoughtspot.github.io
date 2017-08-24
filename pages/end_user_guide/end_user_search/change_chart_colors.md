@@ -30,7 +30,7 @@ To change the chart colors:
 
      ![](../../../images/choose_legend_color.png "Legend color template") 
 
-5.   Click outside of the selector to apply your change. 
+5. Click outside of the selector to apply your change. 
 
 **Parent topic:** [Change the chart](../../../pages/end_user_guide/end_user_search/change_the_chart.html)
 

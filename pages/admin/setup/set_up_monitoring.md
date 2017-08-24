@@ -1,14 +1,12 @@
 ---
 title: [Set up monitoring]
-tags: 
+tags: [SysAdm_tscli_Config]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Setting up monitoring is a one time operation."
 sidebar: mydoc_sidebar
 ---
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.
-
-Use tscli to set up monitoring. This is a one time operation.
 
 1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
 2. Issue the tscli command to set up monitoring:
@@ -47,6 +45,4 @@ Use tscli to set up monitoring. This is a one time operation.
     ```
 
 4. After the heartbeat interval has passed, check your email to verify that emails are being delivered.
-5.   If you don't receive any emails, [Verify that email is working](setup_email.html#).
-
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)
+5. If you don't receive any emails, [verify that email is working](set_up_relay_host.html#verify-the-relay-with-an-email).

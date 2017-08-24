@@ -32,7 +32,7 @@ To obtain and install the ODBC driver for Windows:
     -   ThoughtSpotODBC (x86).msi for Windows 32-bit
     -   ThoughtSpotODBC (x64).msi for Windows 64-bit
 4.   Double click the .msi file you downloaded to start the installation.
-5.   You will see a security warning. Select **Yes** to continue.
+5. You will see a security warning. Select **Yes** to continue.
 
      ![](../../images/windows_ODBC_install.png "Allow the ODBC Installer to run")
 
@@ -40,12 +40,12 @@ To obtain and install the ODBC driver for Windows:
 
      ![](../../images/odbc_install_1.png "The ODBC Installer")
 
-7.   Accept the End User License Agreement (EULA), and click **Next**.
-8.   Specify the destination folder where the driver will be installed.
+7. Accept the End User License Agreement (EULA), and click **Next**.
+8. Specify the destination folder where the driver will be installed.
 
      ![](../../images/odbc_install_3.png "Enter the destination folder")
 
-9.   Enter the ThoughtSpot server details, and click **Next**.
+9. Enter the ThoughtSpot server details, and click **Next**.
 
     -   For **Server(s)**, provide a comma separated list of the IP addresses of each node on the ThoughtSpot instance.
 

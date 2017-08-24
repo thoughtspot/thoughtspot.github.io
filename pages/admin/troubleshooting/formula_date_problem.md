@@ -44,7 +44,7 @@ Here are the steps to resolve an issue like this:
      ![](../../images/modify_formula.png "Changing the formula to return a different data type")
 
 4.   Make your changes, and saving the formula by clicking **Save**.
-5.   Save the worksheet by clicking **Save**.
+5. Save the worksheet by clicking **Save**.
 6.   Now you will be able to open the answer that was created on top of the worksheet.
 
 **Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)

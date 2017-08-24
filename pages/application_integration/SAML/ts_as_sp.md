@@ -44,14 +44,14 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
         145 <property name="serverPort" **value="443"**/>
         ```
 
-    5.   Save the edited file. 
+    5. Save the edited file. 
 4.   Change directories to the callosum directory: 
 
     ```
     $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/
     ```
 
-5.   Open the file `callosumconfig_prod.json` in vi or another editor. 
+5. Open the file `callosumconfig_prod.json` in vi or another editor. 
     1.   Set up autocreation of users by adding the following line above "shiroConfig": 
 
         ```
@@ -84,9 +84,9 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
     $ tscli --adv service push tomcat /usr/local/scaligent/release/production/orion/tomcat/tomcat_prod.config
     ```
 
-7.   After restarting Tomcat, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option. 
-8.   Retrieve the metadata by navigating to `https://<your server IP>/callosum/v1/saml/metadata.` The SP metadata file will download. Save it as metadata.xml. You will need this file when configuring your SAML service provider. 
-9.   If you're using one of these SAML service providers, continue your configuration using these instructions: 
+7. After restarting Tomcat, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option. 
+8. Retrieve the metadata by navigating to `https://<your server IP>/callosum/v1/saml/metadata.` The SP metadata file will download. Save it as metadata.xml. You will need this file when configuring your SAML service provider. 
+9. If you're using one of these SAML service providers, continue your configuration using these instructions: 
 
     -   [Configure CA SiteMinder](configure_SAML_siteminder.html).
     -   [Configure Active Directory Federated Services](integrate_ADFS.html).

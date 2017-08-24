@@ -31,7 +31,7 @@ In the event that the production cluster is destroyed, monitoring and alerting w
     $ tscli backup set-periodic --at <hour1,hour2, ...> --directory <shared_backup_directory> [--num_backups <num_backups>]
     ```
 
-5.   Deploy a new mirror appliance when possible. 
+5. Deploy a new mirror appliance when possible. 
 
 **Parent topic:** [Cluster replacement](../../disaster_recovery/disaster_recovery/cluster_replacement.html)
 

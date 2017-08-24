@@ -25,7 +25,7 @@ To delete a worksheet or table:
 
      ![](../../images/dependency_warning_with_links.png "Dependent objects warning")
 
-5.   You can also click on the name of a worksheet or table and then click **Dependents**, to see a list of dependent objects with links. The **Dependents** list shows the names of the dependent objects (worksheets and pinboards), and the columns they use from that source. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click on a dependent object to modify or delete it.
+5. You can also click on the name of a worksheet or table and then click **Dependents**, to see a list of dependent objects with links. The **Dependents** list shows the names of the dependent objects (worksheets and pinboards), and the columns they use from that source. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click on a dependent object to modify or delete it.
 
      ![](../../images/dependents.png "Dependent objects message")
 

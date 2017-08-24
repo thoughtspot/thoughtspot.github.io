@@ -34,7 +34,7 @@ To change the primary key of a table:
          PRIMARY KEY ("owner_id");
     ```
 
-5.   Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
+5. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
 6.   Delete the snapshot you created earlier using the command:
 
     ```

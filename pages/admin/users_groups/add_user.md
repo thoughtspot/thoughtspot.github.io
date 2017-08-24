@@ -23,7 +23,7 @@ When you create a user, you can assign group memberships. The group's privileges
 
      ![](../../images/add_user_3.2.png "Add a new User")
 
-5.   Enter the details for the new user:
+5. Enter the details for the new user:
 
      ![](../../images/new_user_dialogue_3.2.png "Create a user manually")
 
@@ -36,7 +36,7 @@ When you create a user, you can assign group memberships. The group's privileges
 
     3.   **Password** and **Confirm Password**: A temporary password.
     4.   **E-mail Address**: The user's email address. This is used for notification when another user shares something with them.
-    5.   **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about_row_security.html#) does not apply to them.
+    5. **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about_row_security.html#) does not apply to them.
 6.   Click **Save** to create the user.
 
     When you create a new user, the groups they belong to define the user's:

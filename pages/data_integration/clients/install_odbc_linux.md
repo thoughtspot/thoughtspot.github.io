@@ -50,7 +50,7 @@ It is important to note the following about the ODBC login information:
     ```
 
 4.   Open the file `/linux/Setup/odbc.ini` in the editor of your choice.
-5.   Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`. Then find the line below it that begins with `ServerList`, and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as 12345. The syntax for `ServerList` is:
+5. Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`. Then find the line below it that begins with `ServerList`, and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as 12345. The syntax for `ServerList` is:
 
     ```
     ServerList = <node1_IP> 12345, <node2_IP> 12345 [, <node3_IP> 12345, ...]
@@ -76,7 +76,7 @@ It is important to note the following about the ODBC login information:
     If you need to obtain the IP addresses of the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
 
 6.   Open the file `/linux/Setup/odbcinst.ini` in the editor of your choice.
-7.   Update the the line that starts with `Driver` to have the path to the file `libSimbaClient.so` (Use the path where you copied the library files). For example, for the 64-bit ODBC driver:
+7. Update the the line that starts with `Driver` to have the path to the file `libSimbaClient.so` (Use the path where you copied the library files). For example, for the 64-bit ODBC driver:
 
     ```
     [ThoughtSpot(x64)]
@@ -88,6 +88,6 @@ It is important to note the following about the ODBC login information:
     SQLLevel            = 1
     ```
 
-8.   Save the file. Now you can test your ODBC connection.
+8. Save the file. Now you can test your ODBC connection.
 
 **Parent topic:** [About the ODBC Driver](../../data_integration/clients/about_odbc.html)

@@ -51,7 +51,7 @@ To change the relationship between tables:
         ```
 
 4.   Define a new relationship, if you want to, using ALTER TABLE...ADD CONSTRAINT...
-5.   Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
+5. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
 6.   Delete the snapshot you created earlier using the command:
 
     ```

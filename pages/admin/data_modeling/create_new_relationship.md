@@ -24,7 +24,7 @@ To create a relationship through the Web interface:
      ![](../../shared/conrefs/../../images/select_relationships.png "Select Relationships")
 
 4.   If there are already some existing relationships, scroll down and click **Add Relationship**. Otherwise, continue to the next step.
-5.   Click on **Source Column** and select the column you want to link in the source table.
+5. Click on **Source Column** and select the column you want to link in the source table.
 
      ![](../../images/create_relationship_2.png "Select a Source Column")
 
@@ -32,12 +32,12 @@ To create a relationship through the Web interface:
 
      ![](../../images/create_relationship_3.png "Find and select a Destination Table")
 
-7.   Click on **Destination Column** and select the column you want to link to in the destination table.
+7. Click on **Destination Column** and select the column you want to link to in the destination table.
 
      ![](../../images/create_relationship_4.png "Select the Destination Column")
 
-8.   Click **Add Key** to add the link.
-9.   Name your relationship and optionally give it a description.
+8. Click **Add Key** to add the link.
+9. Name your relationship and optionally give it a description.
 
      ![](../../images/create_relationship_5.png "Name the Relationship")
 

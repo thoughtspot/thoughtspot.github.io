@@ -33,7 +33,7 @@ To obtain and install the JDBC Driver:
     -   Click **JDBC Driver** to download the file `ThoughtSpot_jdbc_<version>.zip`.
 3.   Move the driver to the desired directory on your local machine.
 4.   Add the JDBC driver to your Java class path on the local machine.
-5.   Now write your Java application code. Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any other database. You need to provide the connection information, create a connection, execute statements, and close the connection.
+5. Now write your Java application code. Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any other database. You need to provide the connection information, create a connection, execute statements, and close the connection.
 
     Specify each of the nodes in the cluster in the connection string, as shown. This enables high availability for JDBC connections. To find out the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
 

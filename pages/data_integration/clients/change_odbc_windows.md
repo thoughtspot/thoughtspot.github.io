@@ -28,7 +28,7 @@ To make changes to the ODBC settings on Windows:
 
      ![](../../images/odbc_data_source_options.png "ODBC data source options")
 
-5.   To change a custom property, click **Edit Property**. To add a new custom property, click **Add**.
+5. To change a custom property, click **Edit Property**. To add a new custom property, click **Add**.
 
      ![](../../images/ODBC_options.png "Edit a custom property")
 
@@ -36,8 +36,8 @@ To make changes to the ODBC settings on Windows:
 
      ![](../../images/ODBC_add_schema.png "Edit a custom property")
 
-7.   Edit any other custom properties you need to change, and click **OK** again.
-8.   Test the settings by clicking **Test Connection**.
-9.   If everything is working, click **OK**, to save your settings. If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting_ODBC.html#).
+7. Edit any other custom properties you need to change, and click **OK** again.
+8. Test the settings by clicking **Test Connection**.
+9. If everything is working, click **OK**, to save your settings. If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting_ODBC.html#).
 
 **Parent topic:** [Install the ODBC Driver on Windows](../../data_integration/clients/install_odbc_windows.html)

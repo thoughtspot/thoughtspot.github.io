@@ -38,12 +38,12 @@ To set up the JDBC driver using Pentaho:
      ![](../../images/csv_file_input_pentaho.png "Input and CSV File Input")
 
 4.   Double click the **CSV File Input** icon to open the CSV Input dialog box.
-5.   Name the Step. Then click **Browse** next to the Filename field to provide the file you want to read from. Once you have selected the file, click **OK**.
+5. Name the Step. Then click **Browse** next to the Filename field to provide the file you want to read from. Once you have selected the file, click **OK**.
 
      ![](../../images/browse_filename_pentaho.png "Step name and browse for Filename")
 
 6.   In the CSV Input dialog box, click **Get Fields**.
-7.   Enter the number of lines you would like to sample in the Sample size dialog box. The default setting is 100. Click **OK** when you are ready.
+7. Enter the number of lines you would like to sample in the Sample size dialog box. The default setting is 100. Click **OK** when you are ready.
 
      ![](../../images/sample_size_fields_pentaho.png "Get Fields and Sample size")
 
@@ -51,8 +51,8 @@ To set up the JDBC driver using Pentaho:
 
      ![](../../images/scan_results_pentaho.png "Scan results")
 
-8.   Click **Preview** to preview the data.
-9.   Enter the number of rows to preview in the Preview size dialog box. The default setting is 1000. Click **OK** to start the transformation in preview.
+8. Click **Preview** to preview the data.
+9. Enter the number of rows to preview in the Preview size dialog box. The default setting is 1000. Click **OK** to start the transformation in preview.
 
      ![](../../images/preview_size_pentaho.png "Preview size")
 

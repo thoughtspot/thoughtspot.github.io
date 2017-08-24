@@ -25,7 +25,7 @@ In this example, we will cut and paste values to create a bulk filter. You could
 
      ![](../../images/bulk_filter_paste_values.png "Paste values into the bulk filter box") 
 
-5.   Click **Done**. 
+5. Click **Done**. 
 
 **Parent topic:** [About bulk filters](../../pages/complex_searches/about_bulk_filters.html)
 

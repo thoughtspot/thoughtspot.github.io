@@ -39,7 +39,7 @@ If you are confident in your knowledge of font visualizations, you can set your 
      ![](../../images/edit_font.png "Edit Chart Visualization Font") 
 
 4.   Make any changes to the details of the font in the edit menu and click **Save**. 
-5.   Click the custom font drop down to choose your custom font. 
+5. Click the custom font drop down to choose your custom font. 
 
      ![](../../images/choose_chart_custom_font.png "Choose custom chart font") 
 
@@ -47,11 +47,11 @@ If you are confident in your knowledge of font visualizations, you can set your 
 
      ![](../../images/choose_chart_font_label.png "Choose chart label") 
 
-7.   The same steps can be followed to set your **Table Visualization Fonts**. 
+7. The same steps can be followed to set your **Table Visualization Fonts**. 
 
      ![](../../images/table_visualization_fonts.png "Set Table Visualization Fonts") 
 
-8.   Click the**Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts. 
+8. Click the**Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts. 
 
 **Parent topic:** [Perform Style Customization](../../application_integration/custom_branding/perform_style_customization.html)
 

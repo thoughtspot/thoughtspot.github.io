@@ -23,6 +23,6 @@ To edit or delete an existing group:
 
     You can also delete a group from this page by clicking the **Delete** icon. Deleting a group does not delete its users.
 
-5.   Make your changes and click **Update**.
+5. Make your changes and click **Update**.
 
 **Parent topic:** [Manage users, groups, and privileges](../../admin/users_groups/about_users_groups.html)

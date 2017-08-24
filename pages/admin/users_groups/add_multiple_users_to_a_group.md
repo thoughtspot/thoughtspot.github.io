@@ -20,7 +20,7 @@ To add multiple users to a group:
      ![](../../shared/conrefs/../../images/manage_users_3.2.png "Manage Users")
 
 4.   Select the users you would like to add to the same group from the list.
-5.   Click the **Add Users to Groups** button on the top of the list of users.
+5. Click the **Add Users to Groups** button on the top of the list of users.
 
      ![](../../images/add_multiple_users_to_a_group.png "Add a new User")
 

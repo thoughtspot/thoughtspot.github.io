@@ -28,7 +28,7 @@ To record a search replay using ThoughtSpot:
 
      ![](../../images/record_search_replay_2.png "Browser warning message")
 
-5.   Find the setting for **media.getusermedia.screensharing.allowed_domains**, and add the domain used by ThoughtSpot. This domain will be the same one you made note of from the **Cannot record screen** message.
+5. Find the setting for **media.getusermedia.screensharing.allowed_domains**, and add the domain used by ThoughtSpot. This domain will be the same one you made note of from the **Cannot record screen** message.
 
      ![](../../images/record_search_replay_3.png "Set the domain for screensharing")
 
@@ -36,11 +36,11 @@ To record a search replay using ThoughtSpot:
 
      ![](../../images/record_search_replay_4.png "Select entire screen")
 
-7.   When the search replay has been recorded, you'll see a confirmation. Select **Download**.
+7. When the search replay has been recorded, you'll see a confirmation. Select **Download**.
 
      ![](../../images/record_search_replay_5.png "Download the recorded search")
 
-8.   Save the recording on your computer by selecting **Save File** and clicking **OK**.
+8. Save the recording on your computer by selecting **Save File** and clicking **OK**.
 
      ![](../../images/record_search_replay_6.png "Record Search save file")
 

@@ -32,7 +32,7 @@ Some operations, like backup/restore and data loading, require you to either rea
 You can designate a support contact (email and phone number) at your organization for first level technical support. That person can answer questions about data and searching, and submit any system and software-related questions to ThoughtSpot Support.
 -   **[Set up monitoring](../../admin/setup/set_up_monitoring.html)**  
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.
--   **[Connect to the ThoughtSpot Support file server](../../admin/setup/configure_secure_file_server_connection.html)**  
+-   **[Connect to the ThoughtSpot Support file server](../../admin/setup/work-with-ts-support.html)**  
 ThoughtSpot Support uses a secure file server to provide new releases and to receive logs and troubleshooting files that you upload. The secure server connection is also required if you want to enable the optional statistics collection using the call home feature.
 -   **[Set up remote support access](../../admin/setup/set_up_remote_support.html)**  
 You can set up a reverse tunnel to allow ThoughtSpot Support to get access to your ThoughtSpot instance, to perform support-related activities. This setup is a much simpler, more secure, and scalable than the alternative option of using a virtual meeting room.

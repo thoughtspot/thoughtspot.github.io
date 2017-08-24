@@ -40,7 +40,7 @@ This is the procedure for designating a primary and a mirror ThoughtSpot instanc
     $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.112,192.168.2.113 thoughtspot_mirror thoughtspot-mirror-29543
     ```
 
-5.   It may take some time for the cluster to begin acting as a mirror. Issue the command to verify that the cluster has started running in mirror mode: 
+5. It may take some time for the cluster to begin acting as a mirror. Issue the command to verify that the cluster has started running in mirror mode: 
 
     ```
     $ tscli backup mirror-status

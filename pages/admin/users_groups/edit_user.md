@@ -25,6 +25,6 @@ To edit an existing user:
 
     You can also delete a user from this page by clicking the **Delete** icon.
 
-5.   Make your changes and click **Save**.
+5. Make your changes and click **Save**.
 
 **Parent topic:** [Manage users, groups, and privileges](../../admin/users_groups/about_users_groups.html)

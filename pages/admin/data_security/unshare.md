@@ -23,6 +23,6 @@ To unshare one or more objects:
 
      ![](../../images/unshare.png "Click the X to unshare")
 
-5.   Click **Done**.
+5. Click **Done**.
 
 **Parent topic:** [Data security](../../admin/data_security/sharing_security_overview.html)

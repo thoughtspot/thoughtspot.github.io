@@ -22,7 +22,7 @@ Anyone who has edit privileges on an answer can also edit any formulas it contai
 
      ![](../../images/formula_edit_icon.png "The edit formula icon") 
 
-5.   Type your formula in the Formula Builder. 
+5. Type your formula in the Formula Builder. 
 
      ![](../../shared/conrefs/../../images/formula_builder.png "Use the Formula Builder") 
 

@@ -34,6 +34,6 @@ To enable ODBC logs:
     \#LogPath            = /usr/local/scaligent/toolchain/local/simba/odbc/linux/Logs  \# Set the debug log files path**
     ```
 
-5.   Run the ODBC load, and send the log file to ThoughtSpot Support.
+5. Run the ODBC load, and send the log file to ThoughtSpot Support.
 
 **Parent topic:** [Troubleshooting Data Integrations](../../data_integration/troubleshooting/troubleshooting_intro.html)

@@ -25,7 +25,7 @@ To apply conditional formatting to a table:
 
      ![](../../../images/conditional_formatting_table_3.png "Define the sets of values and color")
 
-5.   Click **Done** after defining all of your conditional formatting sets.
+5. Click **Done** after defining all of your conditional formatting sets.
 
      ![](../../../images/conditional_formatting_table_4.png "Table with conditional formatting")
 
@@ -50,4 +50,4 @@ To apply conditional formatting to a chart:
 
      ![](../../../images/conditional_formatting_chart.png "Chart with conditional formatting")
 
-5.   Note that if you change the chart type, you will need to apply conditional formatting again. It is tied to the specific visualization.
+5. Note that if you change the chart type, you will need to apply conditional formatting again. It is tied to the specific visualization.
