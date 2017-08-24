@@ -26,22 +26,15 @@ search: exclude
                         {% if level2item.levelThreeTitle %}
                           <li class="sectionHead2">{{ level2item.levelThreeTitle }}
                         {% else %}
-                           <li><a href="{{sectionitem.url | prepend: site.baseurl}}">{{level2item.title}}</a>
+                           <li><a href="{{level2item.url | prepend: site.baseurl}}">{{level2item.title}}</a>
                         {% endif %}
                         {% for level3item in level2item.levelThreeItems %}
-                        {% if level3item.output contains "pdf" and level3item.type != "frontmatter" %}
-                            <li class="indent3"><a href="{{sectionitem.url | prepend: site.baseurl}}">{{ level3item.title }}</a>
-                        <!-- <ul>
-                            {% for subfolderitem in subfolders.subfolderitems%}
-                            {% if subfolderitem.output contains "pdf" and subfolderitem.type != "frontmatter"%}
-                            <li><a href="{{subfolderitem.url | prepend: site.baseurl}}">{{subfolderitem.title}}</a></li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul> -->
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                    </li>
+                          {% if level3item.output contains "pdf" and level3item.type != "frontmatter" %}
+                              <li class="indent3"><a href="{{level3item.url | prepend: site.baseurl}}">{{ level3item.title }}</a>
+                          </li>
+                          {% endif %}
+                        {% endfor %}
+                        </li>
                     {% endif %}
                     {% endfor %}
                 </ul>
