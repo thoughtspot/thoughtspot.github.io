@@ -1,9 +1,9 @@
 ---
-title: [Plan the schema]
-tags: 
-keywords: tbd
+title: [Schema planning concepts]
+tags: [Modeling_Schema_Types]
+keywords: loader,TQL,DDL
 last_updated: tbd
-summary: "blerg"
+summary: "Considerations in creating a schema for the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
 ---
 Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface (TQL).
@@ -18,9 +18,9 @@ ThoughtSpot organizes objects in a hierarchical namespace. Databases contain sch
 
  ![](../../images/namespace.png "Namespace diagram")
 
-ThoughtSpot can contain one or more databases, and each database can have multiple schemas. If you do not specify a schema, the default schema (falcon_default_schema) is used automatically. This makes it easier to add tables to the database without the need to explicitly create a schema.
+ThoughtSpot can contain one or more databases, and each database can have multiple schemas. If you do not specify a schema, the default schema (`falcon_default_schema`) is used automatically. This makes it easier to add tables to the database without the need to explicitly create a schema.
 
-If you do create an additional schema, you must refer to its objects using the syntax <schemaname\>.<objectname\>. If you do not qualify the schema when referencing its objects, the default schema (falcon_default_schema) will always be assumed.
+If you do create an additional schema, you must refer to its objects using the syntax `<schemaname>.<objectname>`. If you do not qualify the schema when referencing its objects, the default schema (`falcon_default_schema`) will always be assumed.
 
 By default, ThoughtSpot creates an internal database to host tables corresponding to data that is imported by users from a Web browser.
 
@@ -38,26 +38,14 @@ Here's what you'll need to take into account in your TQL for creating each table
 
 |Table type|Table size|To be joined with|Schema recommendations|
 |----------|----------|-----------------|----------------------|
-|Fact|Any|Small dimension table(s)| -   Sharded.
--   Foreign key references the primary key in the dimension table.
+|Fact|Any|Small dimension table(s)| Sharded. Foreign key references the primary key in the dimension table.|
+|Fact|Any|Large dimension table(s)| Sharded on the same distribution key as the dimension table it will be joined with. Foreign key references the primary key in the dimension table.|
+|Fact|Any|Another fact table| Sharded on the same distribution key as the fact table it will join with. Many-to-many relationship defines how the tables will be joined.|
+|Dimension|under 50MB|Fact table(s)| Replicated (not sharded). Has a primary key.|
+|Dimension|over 50MB|Fact table(s)| Distributed dimension table, sharded on the same distribution key as the fact table it will be joined with. Primary key must be the same as the distribution key.|
 
- |
-|Fact|Any|Large dimension table(s)| -   Sharded on the same distribution key as the dimension table it will be joined with.
--   Foreign key references the primary key in the dimension table.
 
- |
-|Fact|Any|Another fact table| -   Sharded on the same distribution key as the fact table it will join with.
--   Many-to-many relationship defines how the tables will be joined.
-
- |
-|Dimension|under 50MB|Fact table(s)| -   Replicated (not sharded).
--   Has a primary key.
-
- |
-|Dimension|over 50MB|Fact table(s)| -   Distributed dimension table, sharded on the same distribution key as the fact table it will be joined with.
--   Primary key must be the same as the distribution key.
-
- |
+## Where to go next
 
 -   **[Data types](../../admin/loading/datatypes.html)**  
 ThoughtSpot supports the common data types. Compare these with the data types you want to load, and do any necessary conversion ahead of loading the data.
@@ -69,5 +57,3 @@ For the best performance, you should split (or shard) very large tables across n
 In a complex schema, you may have a fact table with no relationship to another fact table, except that each contains a foreign key to a shared dimension table. This is known as a chasm trap, and ThoughtSpot can handle it!
 -   **[Chasm trap limitations](../../admin/loading/chasm_trap_limits.html)**  
 If your database schema contains any chasm traps, you may encounter these limitations.
-
-**Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)

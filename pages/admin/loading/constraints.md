@@ -1,9 +1,9 @@
 ---
 title: [Constraints]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Constraints allow you to build relationships and join tables."
 sidebar: mydoc_sidebar
 ---
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
@@ -15,7 +15,7 @@ When a primary key is selected for a table, it impacts data loading behavior. Wh
 -   If another row already exists with same primary key, it is updated with the values in the new row.
 -   If a row with the same primary key does not exist already, the new row is inserted into the table.
 
-This behavior is referred to as “upsert” because it does an INSERT or an UPDATE, depending on whether a row with the same primary key already exists.
+This behavior is referred to as “upsert” because it does an `INSERT` or an `UPDATE`, depending on whether a row with the same primary key already exists.
 
 Note that ThoughtSpot does not check for primary key violations across different shards of the table. Therefore, you need to shard the table on the primary key columns if you require this “upsert” behavior.
 
@@ -28,7 +28,7 @@ If you use primary and foreign keys, when users search the data from the search 
 -   revenue, which is a fact table
 -   region, which is a dimension table
 
-There is a foreign key on the fact table on regionid which points to the id in the region dimension table. When a user types in "revenue by region", the two tables will be joined automatically.
+There is a foreign key on the fact table on `regionid` which points to the id in the region dimension table. When a user types in "revenue by region", the two tables will be joined automatically.
 
 Foreign keys have to match the primary key of the target table they refer to. So if there are multiple columns that make up the primary key in the target table, the foreign key must include all of them, and in the same order.
 
@@ -88,6 +88,4 @@ TQL> CREATE TABLE "retail_sales" (
 TQL> ALTER TABLE "wholesale_buys" ADD RELATIONSHIP WITH "retail_sales" AS "wholesale_buys"."fruit" = "retail_sales"."fruit" and ("wholesale_buys"."date_ordered" < "retail_sales"."date_sold" and "retail_sales"."date_sold" < "wholesale_buys"."expiration_date");
 ```
 
-Note that this many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows.
-
-**Parent topic:** [Plan the schema](../../admin/loading/plan_schema.html)
+{% include note.html content="A many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows." %}

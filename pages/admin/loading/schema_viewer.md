@@ -1,12 +1,12 @@
 ---
-title: [About the Schema Viewer]
-tags: 
-keywords: tbd
+title: [How to view a data schema]
+tags: [Modeling_Schema_Viewer]
+keywords: schema viewer, relationships, keys, worksheet
 last_updated: tbd
-summary: "blerg"
+summary: "Use the schema viewer to see tables and worksheets and their relationships. "
 sidebar: mydoc_sidebar
 ---
-There is a schema viewer in ThoughtSpot which lets you see your database schema in the web browser. You can see tables and worksheets and their relationships. The Schema Viewer is interactive, so you can configure it to show just what you want to see.
+There is a schema viewer in ThoughtSpot which lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see.
 
 ## Bringing up the Schema Viewer
 
@@ -18,14 +18,14 @@ When viewing the schema, you can filter the tables shown similarly to how you fi
 
  ![](../../images/schema_viewer.png "Schema Viewer filters")
 
-## How to use the Schema Viewer
+## Why to use the Schema Viewer
 
 You can use the Schema Viewer to find out information like:
 
 -   What is the relationship between two tables?
 -   What tables make up this worksheet, and how are they joined?
 
-The schema viewer shows joins between tables, join directionality, and join type (whether they are Foreign Key \> Primary Key, relationship joins, or joins defined by users through the web interface). Use the **Table** list to find a specific table or worksheet.
+The schema viewer shows joins between tables, join directionality, and join type (whether they are Foreign Key to Primary Key, relationship joins, or joins defined by users through the web interface). Use the **Table** list to find a specific table or worksheet.
 
 ## Worksheet view
 
@@ -44,5 +44,3 @@ For worksheets, you can also click on one to view the worksheet. The worksheet v
  ![](../../images/worksheet_viewer.png "Worksheet view example")
 
 The worksheet view does not work for aggregated worksheets, but does works for worksheets built on top of aggregated worksheets.
-
-**Parent topic:** [Load and manage data](../../admin/loading/loading_intro.html)

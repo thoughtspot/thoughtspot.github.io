@@ -1,9 +1,9 @@
 ---
 title: [Schema creation examples]
-tags: 
+tags: [Data_Integ_TQL]
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Simple examples that illustrate how to use the TQL and the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
 ---
 These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line (TQL). After the schema is created, you can load data into it with ThoughtSpot Loader.
@@ -153,5 +153,3 @@ TQL> CREATE TABLE "sample_schema"."lineorder" (
 
   )  PARTITION BY HASH (96) KEY (lo_orderkey);
 ```
-
-**Parent topic:** [Build the schema](../../admin/loading/create_schema.html)

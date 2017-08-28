@@ -1,12 +1,12 @@
 ---
-title: [About data type conversion]
-tags: 
-keywords: tbd
+title: [Convert column data type]
+tags: [Data_Integ_TQL]
+keywords: "TQL,SQL, data types"
 last_updated: tbd
-summary: "blerg"
+summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
 ---
-You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.
+There are some details you should be aware of when doing a data type conversion.
 
 ## Data type conversion behavior
 
@@ -127,8 +127,8 @@ When changing a data type in an existing table, be aware that answers and pinboa
 
 To change the data type of a column:
 
-1.   [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
-2.   Issue the command to change the data type using this syntax:
+1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
+2. Issue the command to change the data type using this syntax:
 
     ```
     TQL> ALTER TABLE <table>

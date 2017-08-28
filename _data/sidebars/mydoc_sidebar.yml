@@ -97,11 +97,8 @@ entries:
       - title: Configure casing
         url: /pages/admin/loading/about_case_configuration.html
         output: web, pdf
-      - title: Use CSV files to load data
-        url: /pages/admin/loading/generate_flat_file.html
-        output: web, pdf
-      - title: Load data from a web browser
-        url: /pages/admin/loading/load_from_web_browserdita.html
+      - title: Load CSV files from a web browser
+        url: /pages/admin/loading/load_from_web_browser.html
         output: web, pdf
       - title: How to view a data schema
         url: /pages/admin/loading/schema_viewer.html
@@ -124,49 +121,31 @@ entries:
         - title: Chasm traps
           url: /pages/admin/loading/chasm_trap.html
           output: web, pdf
-        - title: Chasm trap limitations
-          url: /pages/admin/loading/chasm_trap_limits.html
-          output: web, pdf
       - levelThreeTitle: Build the schema
         output: web, pdf
         levelThreeItems:
-        - title: About schema building
+        - title: Schema building overview
           url: /pages/admin/loading/create_schema.html
           output: web, pdf
-        - title: About TQL, the SQL command line interface
-          url: /pages/admin/loading/sql_cli.html
-          output: web, pdf
-        - title: Connect to the database with the ThoughtSpot SQL Command Line (TQL\
-          url: /pages/admin/loading/connect_sql_cli.html
-          output: web, pdf
-        - title: Create the schema in TQL
+        - title: Connect with TQL and create a schema
           url: /pages/admin/loading/prep_schema_for_load.html
           output: web, pdf
-        - title: Write a SQL script to create the schema
+        - title: How to write a SQL script
           url: /pages/admin/loading/create_schema_with_script.html
           output: web, pdf
         - title: Schema creation examples
           url: /pages/admin/loading/create_schema_example.html
           output: web, pdf
-        - title: Import a schema (use the SQL editor\
+        - title: Upload an SQL script
           url: /pages/admin/loading/upload_sql_script.html
           output: web, pdf
       - levelThreeTitle: Change the schema
         output: web, pdf
         levelThreeItems:
-        - title: About changing a schema
+        - title: How to change a schema
           url: /pages/admin/loading/change_schema.html
           output: web, pdf
-        - title: Change the primary key for a table
-          url: /pages/admin/loading/change_primary_key.html
-          output: web, pdf
-        - title: Change a relationship between tables
-          url: /pages/admin/loading/change_relationships_tql.html
-          output: web, pdf
-        - title: Change sharding on a table
-          url: /pages/admin/loading/change_sharding.html
-          output: web, pdf
-        - title: Change the Data Type of a Column
+        - title: Convert column data type
           url: /pages/admin/loading/about_data_type_conversion.html
           output: web, pdf
       - levelThreeTitle: Load data

@@ -24,7 +24,7 @@ Blank values in user uploaded CSV files are interpreted as NULL values. These in
 -   \\N
 -   NA
 -   N/A
--   \[space\]
+-   [space]
 
 To append data into ThoughtSpot:
 

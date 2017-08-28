@@ -24,7 +24,7 @@ These are the methods you can use to load data, along with the benefits of each 
 |Use the ODBC/JDBC driver to connect to ThoughtSpot|Use the ODBC or JDBC client with your ETL tool. For information, see the ThoughtSpot Data Integration Guide.|Make use of an established ETL process and tool(s).Connect to ThoughtSpot using third party tools like SSIS. You don't need to define a schema to accept the data load.|
 |Use the Informatica Connector|Use the Informatica Connector if you already use Informatica to connect to your other data sources. For information, see the ThoughtSpot Data Integration Guide.|Works with your established data migration processes in Informatica.|
 
-If you're uploading data through the Web interface, you can use a native Excel file. If you want to use a CSV (comma separated values) or delimited file, or you are loading using ThoughtSpot Loader, you'll need to [Generate CSV files with the data to be loaded](generate_flat_file.html#) first.
+If you're uploading data through the Web interface, you can use a native Excel file. If you want to use a CSV (comma separated values) or delimited file, or you are loading using ThoughtSpot Loader, you'll need to [Generate CSV files with the data to be loaded](load_from_web_browser.html#create-a-csv-file) first.
 
 **Note:** End users will almost always work with worksheets and data they upload.
 

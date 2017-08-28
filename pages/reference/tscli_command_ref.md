@@ -19,7 +19,7 @@ Usage for tscli is:
 ```
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
-           [--zoo <zookeeper>] \[--username username\] \[--identity_file identity_file\]
+           [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
            {alert, backup, callhome, cgroups, cluster, command, config, disk,
            etl, event, feature, fileserver, firewall,
            graphite-metrics, hdfs, ldap, logs,
@@ -429,8 +429,8 @@ tscli etl enable-lw
   --admin_username <admin_user>
   --username <Informatica_user>
   --thoughtspot_url <URL>
-  \[--org_id <informatica_org_id\>\]
-  \[--groupname <groupname\>\]
+  [--org_id <informatica_org_id\>]
+  [--groupname <groupname\>]
   [--pin_to <IP_address>]
   [--proxy_host <proxy_server_hostname>]
   [--proxy_port <proxy_server_port>]
@@ -1099,7 +1099,7 @@ tscli --adv service add-javaopt
    <value>
 ```
 
- |Sets remembered session idle timeout of a user. Defaults to forever \[-1\]. Use this command to set configurable session timeout.|
+ |Sets remembered session idle timeout of a user. Defaults to forever [-1]. Use this command to set configurable session timeout.|
 | ```
 tscli --adv service add-javaopt
    tomcat.tomcat D
