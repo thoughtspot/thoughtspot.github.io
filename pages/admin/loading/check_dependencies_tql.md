@@ -1,14 +1,12 @@
 ---
 title: [Delete or change a table in TQL]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can delete a data source in the web browser or using ThoughtSpot SQL Command Line (TQL)."
 sidebar: mydoc_sidebar
 ---
-Just as attempting to delete an object in the web browser warns of any dependencies, making changes using ThoughtSpot SQL Command Line (TQL) that modify or delete tables warns of dependencies.
-
-When you enter a TQL statement, you will be warned of possible dependency consequences with a prompt asking if you’d like to proceed. This should make you feel safe issuing TQL commands, even commands like dropping a table.
+When you enter a TQL statement, the system warns you of possible dependency consequences with a prompt asking if you’d like to proceed. This should make you feel safe issuing TQL commands, even commands like dropping a table.
 
 If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are afffected, run it using this flag, for example:
 
@@ -41,5 +39,3 @@ with table “sales”, which will break 34 user-visible visualizations and
 2 Worksheets. We recommend taking a snapshot before performing this operation.
 Do you wish to proceed? (yes/no).
 ```
-
-**Parent topic:** [Delete a data source](../../admin/loading/about_dependencies.html)

@@ -42,7 +42,7 @@ To create a formula in a search:
 
 **Parent topic:** [About formulas in searches](../../pages/complex_searches/add_formula_to_search.html)
 
-**Related information**  
+## Related information  
 
 
 [Formula reference](../reference/formula_reference.html#)

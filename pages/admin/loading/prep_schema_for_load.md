@@ -38,7 +38,7 @@ This method is a good way to get familiar with TQL and how to create database ob
 
 To create the schema directly in TQL:
 
-1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
+1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
 2. If the database you will be using does not exist, create it now:
 
     ```

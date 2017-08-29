@@ -56,7 +56,7 @@ The "near" and "farther than" keywords provide proximity searches. If your table
 
 **Parent topic:** [Advanced searches topics](../../pages/complex_searches/advanced_searches_intro.html)
 
-**Related information**  
+## Related information  
 
 
 [Keyword reference](../end_user_guide/end_user_reference/keyword_reference.html#)

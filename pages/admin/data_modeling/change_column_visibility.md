@@ -17,7 +17,7 @@ As the number of columns in the dataset increases, the search experience require
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

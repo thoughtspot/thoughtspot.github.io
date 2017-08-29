@@ -17,7 +17,7 @@ This reference lists the potential ports to open when setting up your security g
 -   **[Network ports](../../admin/setup/firewall_ports.html)**  
 For regular operations and for debugging, there are some ports you will need to keep open to network traffic from end users. Another, larger list of ports must be kept open for network traffic between the nodes in the cluster.
 
-**Related information**  
+## Related information  
 
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)

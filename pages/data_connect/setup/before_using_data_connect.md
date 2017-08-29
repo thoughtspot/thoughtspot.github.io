@@ -33,7 +33,7 @@ ThoughtSpot Data Connect is designed to configure and connect to any on-premise 
 
 **Parent topic:** [Get started with ThoughtSpot Data Connect](../../../data_connect/data_connect/setup/ETL.html)
 
-**Related information**  
+## Related information  
 
 
 [https://thoughtspot.egnyte.com/dl/fuxryvKclK](https://thoughtspot.egnyte.com/dl/fuxryvKclK)

@@ -38,7 +38,7 @@ To change the currency format used to display a column's values:
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

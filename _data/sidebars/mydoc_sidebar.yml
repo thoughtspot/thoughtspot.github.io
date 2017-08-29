@@ -151,28 +151,16 @@ entries:
       - levelThreeTitle: Load data
         output: web, pdf
         levelThreeItems:
-        - title: About the Loader
-          url: /pages/admin/loading/load_with_data_importer.html
-          output: web, pdf
-        - title: Import CSV files with ThoughtSpot Loader
+        - title: Import CSV files with tsload
           url: /pages/admin/loading/use_data_importer.html
           output: web, pdf
         - title: Use a script to load data
           url: /pages/admin/loading/load_with_script.html
           output: web, pdf
-        - title: Bulk load files in parallel
-          url: /pages/admin/loading/parallel_tsload.html
-          output: web, pdf
       - levelThreeTitle: Delete a data source
         output: web, pdf
         levelThreeItems:
-        - title: About deleting data sources
-          url: /pages/admin/loading/about_dependencies.html
-          output: web, pdf
-        - title: Check dependencies in the browser
-          url: /pages/admin/loading/check_dependency_ux.html
-          output: web, pdf
-        - title: Delete a data source from the browser
+        - title: Delete a data source (table)
           url: /pages/admin/loading/delete_data_source_UX.html
           output: web, pdf
         - title: Delete or change a table in TQL
@@ -184,23 +172,14 @@ entries:
       - title: About data modeling
         url: /pages/admin/data_modeling/about_data_modeling_intro.html
         output: web, pdf
-      - title: Interfaces for modeling data
-        url: /pages/admin/data_modeling/model_data_in_UI.html
-        output: web, pdf
-      - levelThreeTitle: Bulk data modeling
+      - levelThreeTitle: Modeling data
         output: web, pdf
         levelThreeItems:
-        - title: About the data modeling file
+        - title: Interfaces for modeling data
+          url: /pages/admin/data_modeling/model_data_in_UI.html
+          output: web, pdf
+        - title: Change model data in bulk
           url: /pages/admin/data_modeling/edit_model_file.html
-          output: web, pdf
-        - title: Download the model file
-          url: /pages/admin/data_modeling/get_model_file.html
-          output: web, pdf
-        - title: Change the file settings
-          url: /pages/admin/data_modeling/change_setting_model_file.html
-          output: web, pdf
-        - title: Upload the edited file
-          url: /pages/admin/data_modeling/upload_model_file.html
           output: web, pdf
       - levelThreeTitle: Data modeling settings
         output: web, pdf

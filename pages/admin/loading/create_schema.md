@@ -23,7 +23,7 @@ You can choose to run your SQL script within the Linux shell instead. You can ru
 
 The steps to build a schema using TQL include:
 
-1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](connect_sql_cli.html#).
+1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
 2. [Write a SQL script to create the schema](create_schema_with_script.html#).
 3. Type your SQL commands on the command line, terminating each command with a semicolon (;).
 

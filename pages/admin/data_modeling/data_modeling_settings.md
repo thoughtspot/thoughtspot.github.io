@@ -78,7 +78,7 @@ The **Attribution Dimension** setting applies only to tables that are related th
 
 **Parent topic:** [Model the data for searching](../../admin/data_modeling/semantic_modeling.html)
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

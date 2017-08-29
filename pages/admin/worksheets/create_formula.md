@@ -36,7 +36,7 @@ Use these steps to create a formula:
 
 **Parent topic:** [About formulas in worksheets](../../admin/worksheets/about_formulas.html)
 
-**Related information**  
+## Related information  
 
 
 [Formula reference](../reference/formula_reference.html#)

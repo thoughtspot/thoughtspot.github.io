@@ -41,7 +41,7 @@ Number formatting is set by default based on your browser locale setting. This h
 
 For example, if you are using ThoughtSpot in the US, the number formatting should look like this: xxx,xxx.xx. And in Europe, it should look like this: xxx.xxx,xx.
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

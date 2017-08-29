@@ -67,7 +67,7 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

@@ -1,12 +1,12 @@
 ---
-title: [Load data with ThoughtSpot Loader]
+title: [Delete me]
 tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-ThoughtSpot Loader (tsload) is a common way to import data. When using tsload, you can load larger datasets and make the loading process repeatable through scripting.
+ThoughtSpot Loader (`tsload`) is a common way to import data. When using `tsload`, you can load larger datasets and make the loading process repeatable through scripting.
 
 There are several steps to loading data using ThoughtSpot Loader:
 

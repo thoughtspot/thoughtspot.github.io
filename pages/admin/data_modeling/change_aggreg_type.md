@@ -30,7 +30,7 @@ Supposed there is a table containing data about athletes on a sports team. The d
 
 **Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
-**Related information**  
+## Related information  
 
 
 [Model the data for searching](semantic_modeling.html#)

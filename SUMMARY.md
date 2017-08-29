@@ -60,7 +60,7 @@ sidebar: mydoc_sidebar
         -   [Change sharding on a table](admin_guide/loading/change_sharding.html)
         -   [About data type conversion](admin_guide/loading/about_data_type_conversion.html)
             -   [Change the Data Type of a Column](admin_guide/loading/change_data_type.html)
-    -   [Load data with ThoughtSpot Loader](admin_guide/loading/load_with_data_importer.html)
+    -   [Load data with ThoughtSpot Loader](admin_guide/loading/use_data_importer.html)
         -   [Import CSV files with ThoughtSpot Loader](admin_guide/loading/use_data_importer.html)
         -   [Use a script to load data](admin_guide/loading/load_with_script.html)
         -   [Bulk load files in parallel](admin_guide/loading/parallel_tsload.html)
