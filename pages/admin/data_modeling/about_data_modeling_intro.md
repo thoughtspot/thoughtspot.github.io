@@ -1,6 +1,6 @@
 ---
 title: [About data modeling]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
@@ -25,7 +25,6 @@ Choose the model file method if you want to make many changes in one bulk operat
 ## Modeling topics
 
 Modeling the data allows you to give the columns more search friendly names or predefine how they can be explored and aggregated. When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users.
-
 
 -   **[Model data in the ThoughtSpot application](../../admin/data_modeling/model_data_in_UI.html)**  
 To make modeling settings for a table you've just loaded, or to make a quick change to existing settings, use the ThoughtSpot web interface. You can adjust the **Columns** settings from the data management listing.

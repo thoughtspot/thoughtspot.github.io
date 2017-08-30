@@ -172,61 +172,43 @@ entries:
       - title: About data modeling
         url: /pages/admin/data_modeling/about_data_modeling_intro.html
         output: web, pdf
-      - levelThreeTitle: Modeling data
+      - levelThreeTitle: Where to edit the model
         output: web, pdf
         levelThreeItems:
-        - title: Interfaces for modeling data
+        - title: Make a quick model change with the UI
           url: /pages/admin/data_modeling/model_data_in_UI.html
           output: web, pdf
-        - title: Change model data in bulk
+        - title: Make many modeling file edits
           url: /pages/admin/data_modeling/edit_model_file.html
           output: web, pdf
-      - levelThreeTitle: Data modeling settings
+      - levelThreeTitle: Data model settings
         output: web, pdf
         levelThreeItems:
-        - title: About the settings
+        - title: Overview of the settings
           url: /pages/admin/data_modeling/data_modeling_settings.html
           output: web, pdf
-        - title: Change the column name
-          url: /pages/admin/data_modeling/change_column_names.html
+        - title: Set column name, description, and type
+          url: /pages/admin/data_modeling/change_column_basics.html
           output: web, pdf
-        - title: Add a column description
-          url: /pages/admin/data_modeling/change_column_description.html
+        - title: Set additive and aggregate values
+          url: /pages/admin/data_modeling/change_aggreg_additive.html
           output: web, pdf
-        - title: Change the column type (ATTRIBUTE or MEASURE)
-          url: /pages/admin/data_modeling/change_column_type.html
+        - title: Hide a column or define a synonym
+          url: /pages/admin/data_modeling/change_visibility_synonym.html
           output: web, pdf
-        - title: Change the additive setting for a column
-          url: /pages/admin/data_modeling/change_column_additive.html
-          output: web, pdf
-        - title: Change the aggregation setting for a column
-          url: /pages/admin/data_modeling/change_aggreg_type.html
-          output: web, pdf
-        - title: Hide a column
-          url: /pages/admin/data_modeling/change_column_visibility.html
-          output: web, pdf
-        - title: Create synonyms for a column
-          url: /pages/admin/data_modeling/create_synonyms.html
-          output: web, pdf
-        - title: Change the index type for a column
+        - title: Change the index type
           url: /pages/admin/data_modeling/change_index.html
           output: web, pdf
-        - title: Add a geographical data setting for a column
+        - title: Add a geographical data setting
           url: /pages/admin/data_modeling/model_geo_data.html
           output: web, pdf
-        - title: Set the search suggestions priority for a column
+        - title: Set the search suggestions priority
           url: /pages/admin/data_modeling/change_column_priority.html
           output: web, pdf
-        - title: Set the format to use when showing numbers
+        - title: Set number, date, currency formats
           url: /pages/admin/data_modeling/set_format_pattern_numbers.html
           output: web, pdf
-        - title: Set the format to use when showing dates
-          url: /pages/admin/data_modeling/set_format_pattern.html
-          output: web, pdf
-        - title: Set the format to use when showing currencies
-          url: /pages/admin/data_modeling/set_the_format_to_use_when_showing_currencies.html
-          output: web, pdf
-        - title: Change the Attribution Dimension setting of a column
+        - title: Change the Attribution Dimension setting
           url: /pages/admin/data_modeling/attributable_dimension.html
           output: web, pdf
       - levelThreeTitle: Link tables using relationships
@@ -241,21 +223,9 @@ entries:
         - title: Delete a relationship
           url: /pages/admin/data_modeling/delete_relationship.html
           output: web, pdf
-      - levelThreeTitle: Use stickers
+      - title: Use stickers
+        url: /pages/admin/data_modeling/stickers_concept.html
         output: web, pdf
-        levelThreeItems:
-        - title: About stickers
-          url: /pages/admin/data_modeling/stickers_concept.html
-          output: web, pdf
-        - title: Create stickers
-          url: /pages/admin/data_modeling/create_stickers.html
-          output: web, pdf
-        - title: Apply a sticker
-          url: /pages/admin/data_modeling/apply_stickers.html
-          output: web, pdf
-        - title: Filter by a sticker
-          url: /pages/admin/data_modeling/filter_by_sticker.html
-          output: web, pdf
     - levelTwoTitle: Simplify search with worksheets
       output: web, pdf
       levelTwoItems:

@@ -1,21 +1,15 @@
 ---
-title: [Data modeling settings]
-tags: 
+title: [Overview of data modeling settings]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
+
+You can change these settings in two ways, both of which have change the model. If you want to make a few small changes, you should [make them in the ThoughtSpot application ](../../shared/conrefs/../../admin/data_modeling/model_data_in_UI.html) if you want to make many changes [you should edit the modelling file](../../shared/conrefs/../../admin/data_modeling/edit_model_file.html#). Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
 
 ## Modeling settings
-
-You can change these settings in two ways, both of which have the same effect:
-
-1.  [Model data in the Web interface.](../../shared/conrefs/../../admin/data_modeling/model_data_in_UI.html)
-2.  [Model data in bulk in the model file.](../../shared/conrefs/../../admin/data_modeling/edit_model_file.html#)
-
-Choose the model file method if you want to make many changes in one bulk operation.
 
 This index lists the editable data modeling settings:
 
@@ -54,7 +48,7 @@ You can provide a description for a specific column, to provide additional infor
 -   **[Change the column type (ATTRIBUTE or MEASURE)](../../admin/data_modeling/change_column_type.html)**  
 Columns have a **Column Type** based on the kind of data they store. This is set automatically upon defining the table, but in some cases, you may want to change the type.
 -   **[Change the additive setting for a column](../../admin/data_modeling/change_column_additive.html)**  
-Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** (such as age). You can allow aggregations on the values by changing the value of the **Additive** setting.
+Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** (such as age). You can allow aggregations on the values by changing the value of the **ADDITIVE** setting.
 -   **[Change the aggregation setting for a column](../../admin/data_modeling/change_aggreg_type.html)**  
 All types of aggregations can be performed on **MEASURE** columns, and some aggregations can be done on **ATTRIBUTE** columns. You can change the default aggregation type to make combining data more intuitive and faster.
 -   **[Hide a column](../../admin/data_modeling/change_column_visibility.html)**  
@@ -76,9 +70,7 @@ You can set a format for how currencies are displayed in tables and charts when 
 -   **[Change the Attribution Dimension setting of a column](../../admin/data_modeling/attributable_dimension.html)**  
 The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting.
 
-**Parent topic:** [Model the data for searching](../../admin/data_modeling/semantic_modeling.html)
 
 ## Related information  
-
 
 [Model the data for searching](semantic_modeling.html#)

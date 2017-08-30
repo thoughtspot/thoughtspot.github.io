@@ -1,5 +1,5 @@
 ---
-title: [Model data in the ThoughtSpot application]
+title: [Make a quick model change with the UI]
 tags: "data modeling, colums"
 keywords: tbd
 last_updated: tbd

@@ -1,14 +1,14 @@
 ---
-title: [Model data in bulk in the modeling file]
+title: [Make many model file edits]
 tags:
 keywords: tbd
 last_updated: tbd
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
 ---
-Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
+Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit many of these settings.
 
-If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model_data_in_UI.html#) instead.
+{% include tip.html content="If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model_data_in_UI.html#) instead." %}
 
 ## Overview of the modeling process
 

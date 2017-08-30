@@ -805,6 +805,7 @@ dd {margin-left:20px;}
 /*customization*/
 div#toc {
   float: right;
+  margin-left: 5px;
 }
 
 .alert {

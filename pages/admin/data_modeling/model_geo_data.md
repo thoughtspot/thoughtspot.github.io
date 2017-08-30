@@ -1,6 +1,6 @@
 ---
-title: [Add a geographical data setting for a column]
-tags: 
+title: [Add a geographical data setting]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -18,56 +18,52 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
 -   [Set Additive to NO](change_column_additive.html#).
 -   [Set Aggregation Type to NONE](change_aggreg_type.html#).
 
-1.   Find the **GeoType** for the column that contains the geographical data.
-2.   Change the value to the appropriate GeoType, depending on the kind of data the column contains.
+1. Find the **GeoType** for the column that contains the geographical data.
+2. Change the value to the appropriate GeoType, depending on the kind of data the column contains.
 
-    |GeoType|Description|Type: Example|
-    |-------|-----------|-------------|
-    |COUNTRY_REGION|Countries|    -   name: United States
-    -   long name: United States
-    -   name_sort: United States of America
-    -   abbreviation: U.S.A.
-    -   adm0_a3: USA
-    -   adm0_a3_is: USA
-    -   adm0_a3_us: USA
-    -   admin: United States of America
-    -   brk_a3: USA
-    -   brk_name: United States
-    -   formal_en: United States of America
-    -   iso_a2: US
-    -   iso_a3: USA
-    -   iso_n3: 840
-|
-    |COUNTY|Counties in the United States|     -   santa clara county
-    -   pike county, ohio
-    -   pike county, OH
- |
-    |STATE_PROVINCE|States in the United States|    -   name: California
-    -   US Postal Service abbreviation: CA
-|
-    |LATITUDE|Must be used with LONGITUDE|    -   37.421023
-    -   1.282911
-|
-    |LONGITUDE|Must be used with LATITUDE|    -   −122.142103
-    -   103.848865
-|
-    |ZIP_CODE|Zip codes and zip codes +4 in the United States|    -   po_name: MT MEADOWS AREA
-    -   ZIP: "00012"
-    -   zip2: 12
-|
-    |Other Sub-nation Regions|Administrative regions found in countries other than the United States|     -   bremen
-    -   normandy
-    -   west midlands
- |
+    * Countries, for example:
+      - United States
+        -   `long name`: United States
+        -   `name_sort`: United States of America
+        -   `abbreviation`: U.S.A.
+        -   `adm0_a3`: USA
+        -   `adm0_a3_is`: USA
+        -   `adm0_a3_us`: USA
+        -   `admin`: United States of America
+        -   `brk_a3`: USA
+        -   `brk_name`: United States
+        -   `formal_en`: United States of America
+        -   `iso_a2`: US
+        -   `iso_a3`: USA
+        -   `iso_n3`: 840
+    * `COUNTY` for counties in the United States, for example:
+      -   santa clara county
+      -   pike county, ohio
+      -   pike county, OH
+    * `STATE_PROVINCE` for states in the United States, for example:
+      -   `name`: California
+      -   `US Postal Service abbreviation`: CA
+    * `LATITUDE` which must be used with `LONGITUDE`, for example:
+      -   37.421023
+      -   1.282911
+    * `LONGITUDE` which must be used with `LATITUDE`
+      -   122.142103
+      -   103.848865
+    * `ZIP_CODE` for zip codes and zip codes +4 in the United States
+      -   `po_name`: MT MEADOWS AREA
+      -   `ZIP`: "00012"
+      -   `zip2`: 12
+    * Other Sub-nation Regions which are administrative regions found in countries other than the United States, for example:
+      -   bremen
+      -   normandy
+      -   west midlands
 
-3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
-    1.   Change the **Type** or **ColumnType** to ATTRIBUTE.
-    2.   Change **Additive** to NO/FALSE.
-4.   Save your changes.
+3. If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
+    1. Change the **Type** or **ColumnType** to ATTRIBUTE.
+    2. Change **ADDITIVE** to NO/FALSE.
+4. Save your changes.
 
-**Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
 
 ## Related information  
-
 
 [Model the data for searching](semantic_modeling.html#)

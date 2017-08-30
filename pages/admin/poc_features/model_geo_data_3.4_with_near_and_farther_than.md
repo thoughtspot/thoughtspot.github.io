@@ -77,7 +77,7 @@ These keywords allow you to search with spatial filters on data contained in a t
 
 3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns: 
     1.   Change the **Type** or **ColumnType** to ATTRIBUTE. 
-    2.   Change **Additive** to NO/FALSE. 
+    2.   Change **ADDITIVE** to NO/FALSE. 
 4.   Save your changes. 
 
 **Parent topic:** [About keyword searches](../../pages/complex_searches/about_keyword_searches.html)
