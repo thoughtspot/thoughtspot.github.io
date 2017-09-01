@@ -12,7 +12,7 @@ The geo area chart displays country, county, state and zipcode data on a geograp
 
 Geo area charts highlight the regions of interest. Point data (longitude/latitude) doesn't work on geo area charts. Also, only geo area charts display boundaries for counties.
 
- ![](../../../images/state_level_geo_area_chart.png "Geo area chart example") 
+ ![](/pages/images/state_level_geo_area_chart.png "Geo area chart example") 
 
 Your search needs one geographical column of granularity to be represented as a geo area chart.
 

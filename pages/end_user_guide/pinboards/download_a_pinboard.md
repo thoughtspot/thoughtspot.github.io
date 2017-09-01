@@ -16,7 +16,7 @@ To download a pinboard:
 
 1.   Click **Actions**, and select **Download as PDF**. 
 
-     ![](../../../images/download_a_pinboard.png "Download your pinboard") 
+     ![](/pages/images/download_a_pinboard.png "Download your pinboard") 
 
 
 **Parent topic:** [Other pinboard actions](../../../pages/end_user_guide/pinboards/pinboard_actions.html)

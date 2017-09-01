@@ -14,11 +14,11 @@ The replay feature shows how to create the chart or table you are viewing. Use i
 
 1.   When viewing a chart or table, click **Actions** and select **Replay search**​. 
 
-     ![](../../../images/replay_search_icon.png "The Replay search icon") 
+     ![](/pages/images/replay_search_icon.png "The Replay search icon") 
 
 2.   Then, select **Start Replay​** to view the video. 
 
-     ![](../../../images/start_replay_end_user.png "Start Replay") 
+     ![](/pages/images/start_replay_end_user.png "Start Replay") 
 
     The replay will start automatically. You can pause and resume it by clicking on it.
 

@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [Introduction to the User Guide]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Introduction
-
 This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot. It will assist you with starting new searches, managing your pinboards, and troubleshooting.
 
 ThoughtSpot enables you to view and analyze your data through a search-based user interface. You can create your searches on the fly by typing them into a search bar, like you do when using an internet search engine. ThoughtSpot makes it easy to see your data, get your questions answered, create interactive graphs, and customize pinboards. You do not need to understand how the data is stored, attend days of training, or know SQL to do these things. Collaboration and security features make it easy for to protect sensitive data and share information safely with others.
@@ -22,4 +19,3 @@ The user icon lets you view your profile or sign out of ThoughtSpot.
 The things you can do in ThoughtSpot are determined by the privileges you have. These are set at the group level.
 -   **[About stickers](../../../admin/data_modeling/stickers_concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.
-

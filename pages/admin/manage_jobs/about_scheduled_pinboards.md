@@ -1,14 +1,15 @@
 ---
-title: [About scheduled pinboards]
-tags: 
+title: ["Job management (scheduled pinboards)"]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "All jobs on your cluster will appear on the Jobs Management page. You can also view jobs for individual pinboards under the pinboard Actions dropdown."
 sidebar: mydoc_sidebar
 ---
-You can get pinboards emailed to you on a regular basis and do analysis offline. This introduces an additional format for you to consume and share pinboards with others, including those who don’t have a ThoughtSpot account.
 
-Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
+The **Jobs Management** page found on the **Admin** section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards. Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
+
+You can get pinboards emailed to you on a regular basis and do analysis offline. This introduces an additional format for you to consume and share pinboards with others, including those who don’t have a ThoughtSpot account.
 
 Contact ThoughtSpot Support if scheduled pinboards is not enabled on your cluster, or you can run the command `tscli scheduled-pinboards` to enable it yourself.
 
@@ -16,9 +17,7 @@ Contact ThoughtSpot Support if scheduled pinboards is not enabled on your cluste
 
 Administrators and users with can schedule pinboard privilege can schedule and manage pinboard jobs. These scheduled pinboard creators must have at least edit-only and view-only rights to the pinboard they want to share.
 
-CAUTION:
-
-It is recommended that admins carefully choose who to give can schedule pinboard privilege to, since there is a possible security hole where a user with limited access can get a pinboard email with all access data.
+{% include warning.html content="It is recommended that admins carefully choose who to give can schedule pinboard privilege to, since there is a possible security hole where a user with limited access can get a pinboard email with all access data." %}
 
 ## Row level security
 

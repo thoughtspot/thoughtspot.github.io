@@ -14,11 +14,11 @@ To drill down:
 
 1.   Right click on the visualization or table cell of interest, and select **Drill down**. 
 
-     ![](../../images/drill_down.png "Drill down option") 
+     ![](/pages/images/drill_down.png "Drill down option") 
 
 2.   Click on any of the listed data to recreate the search with that data included. 
 
-     ![](../../images/drill_down_list.png "Drill down list") 
+     ![](/pages/images/drill_down_list.png "Drill down list") 
 
 
 **Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)

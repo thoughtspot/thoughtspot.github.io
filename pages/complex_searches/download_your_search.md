@@ -16,11 +16,11 @@ To download your search:
 
 1.   Click **Actions**. For a table, choose between **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
 
-     ![](../../images/download_a_table.png "Download your table options") 
+     ![](/pages/images/download_a_table.png "Download your table options") 
 
      For a chart, select **Download**.
 
-     ![](../../images/download_a_chart.png "Download your chart option") 
+     ![](/pages/images/download_a_chart.png "Download your chart option") 
 
 
 **Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)

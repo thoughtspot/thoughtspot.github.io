@@ -12,7 +12,7 @@ Other pinboard actions include actions you normally perform on your search as we
 
 Most of these actions are found under the Actions button.
 
- ![](../../../images/pinboard_actions.png "Pinboard actions button") 
+ ![](/pages/images/pinboard_actions.png "Pinboard actions button") 
 
 -   **[Search actions within a pinboard](../../../pages/end_user_guide/pinboards/about_showing_underlying_data_from_within_a_pinboard.html)**  
 You can perform many of the same search actions on individual visualizations within a pinboard as you can within a search.

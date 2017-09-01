@@ -20,17 +20,17 @@ To show underlying data:
 
 1.   Right click on the visualization or table cell of interest, and select **Show underlying data**. 
 
-     ![](../../images/show_underlying_data.png "Show underlying data option") 
+     ![](/pages/images/show_underlying_data.png "Show underlying data option") 
 
     A new window will open, displaying a summary and the underlying data.
 
 2.   Click **Download** to download a CSV file of the data. 
 
-     ![](../../images/showing_underlying_data.png "Download underlying data") 
+     ![](/pages/images/showing_underlying_data.png "Download underlying data") 
 
 3.   Click **+ Add Column** to add more columns. After selecting columns to add, click **Confirm Changes**. 
 
-     ![](../../images/add_columns_underlying_data.png "Add columns to underlying data") 
+     ![](/pages/images/add_columns_underlying_data.png "Add columns to underlying data") 
 
 
 **Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)

@@ -16,11 +16,11 @@ To set the y-axis range:
 
 1.   While viewing your answer as a chart, click **Edit chart configuration** near the top right. 
 
-     ![](../../../images/edit_chart_configuration.png "Edit chart configuration icon") 
+     ![](/pages/images/edit_chart_configuration.png "Edit chart configuration icon") 
 
 2.   Under **Y-Axis Range** enter your preferred start and end values. 
 
-     ![](../../../images/y_axis_range.png "Y-Axis Range details") 
+     ![](/pages/images/y_axis_range.png "Y-Axis Range details") 
 
     Your chart will reorganize itself to reflect the new y-axis range.
 

@@ -1,22 +1,18 @@
 ---
-title: [elephant]
-tags: 
+title: [Search bar features]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "The search bar is designed to make it easy for you to identify your search terms. "
 sidebar: mydoc_sidebar
 ---
-# About the search bar
-
-The search bar is designed to make it easy for you to identify your search terms.
-
 A lot of work has gone into making ThoughtSpot's search bar intuitive and easy to use. However, it still helps to know some details of how the search bar works.
 
 ## Boxed search phrases
 
 The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. Search phrases have blue boxes, and [filters](../../complex_searches/about_filters.html#) have white boxes.
 
- ![](../../../images/search_bar_with_phrases_boxed.png "Search bar with boxed phrases") 
+ ![](/pages/images/search_bar_with_phrases_boxed.png "Search bar with boxed phrases")
 
 ## Removing search phrases
 
@@ -40,7 +36,4 @@ This frees you from having to know the exact term or column name used in a data 
 
 If you type an unrecognized search term, you will be offered tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.
 
- ![](../../../images/search_help.png "Search help box") 
-
-**Parent topic:** [About starting a new search](../../../pages/end_user_guide/end_user_search/about_starting_a_new_search.html)
-
+ ![](/pages/images/search_help.png "Search help box")

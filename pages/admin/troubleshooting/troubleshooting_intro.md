@@ -1,14 +1,12 @@
 ---
 title: [About troubleshooting]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-The information here provides very basic troubleshooting.
-
-For more detailed troubleshooting, [Contact ThoughtSpot](../misc/contact.html#).
+The information here provides very basic troubleshooting. For more detailed troubleshooting, [Contact ThoughtSpot](../misc/contact.html#).
 
 -   **[Get logs](../../admin/troubleshooting/get_logs.html)**  
 For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.

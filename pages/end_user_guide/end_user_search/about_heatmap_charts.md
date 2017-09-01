@@ -12,11 +12,11 @@ The heatmap chart displays individual data values in a matrix following a color 
 
 Heatmap charts are similar to treemap charts in that they both use a similar system of color-coding to represent data values. However, the heatmap does not use size to measure data, and instead requires an additional attribute.
 
- ![](../../../images/new_heatmap_look.png "Heatmap chart example") 
+ ![](/pages/images/new_heatmap_look.png "Heatmap chart example") 
 
 The value of each cell depends on the measure you choose under **Edit char configuration**.
 
- ![](../../../images/heatmap_value.png "Heatmap value dropdown") 
+ ![](/pages/images/heatmap_value.png "Heatmap value dropdown") 
 
 Your search needs at least two attributes and one measure to be represented as a heatmap chart.
 

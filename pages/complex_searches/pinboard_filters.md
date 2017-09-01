@@ -27,18 +27,18 @@ Here is an example that shows you how to add a single filter to a pinboard. To c
 
 1.   Click the **Actions** button, and click **Add filters**.
 
-     ![](../../images/add_pinboard_filters.png "Add filters under Actions")
+     ![](/pages/images/add_pinboard_filters.png "Add filters under Actions")
 
 2.   In the populated columns menu, click the **Add filter** icon next to the columns you would like to use as filters.
 
-     ![](../../images/add_filters_menu.png "Add filters menu")
+     ![](/pages/images/add_filters_menu.png "Add filters menu")
 
 3.   Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**. Then click **Done**.
 
-     ![](../../images/select_filters.png "Select Filter Values")
+     ![](/pages/images/select_filters.png "Select Filter Values")
 
 4.   Your applied filter will sit at the top of the pinboard, where you can either edit or delete it.
 
-     ![](../../images/filter_appears.png "Applied Pinboard Filter")
+     ![](/pages/images/filter_appears.png "Applied Pinboard Filter")
 
     When you apply a filter, the pinboard is not automatically saved with your filter applied to every object in the pinboard that was created from a worksheet. Pinboard filters do not apply to tables and charts built directly on top of base tables.

@@ -20,14 +20,14 @@ The Help Center provides the following resources:
 -   **Downloads** - You can download ThoughtSpot clients and API files from here, including ODBC and JDBC drivers and the Data API.
 -   **Support contact information** - If you still can't find what you're looking for, you can contact support.
 
-     ![](../../../images/help_center_support_contact.png "Contact support") 
+     ![](/pages/images/help_center_support_contact.png "Contact support") 
 
 -   Version information: The version number of the ThoughtSpot instance you are currently using can be found in the Help Center.
 
-     ![](../../../images/help_center_4.2_version.png "Version number") 
+     ![](/pages/images/help_center_4.2_version.png "Version number") 
 
 
- ![](../../../images/help_center.png "Help Center home page") 
+ ![](/pages/images/help_center.png "Help Center home page") 
 
 **Parent topic:** [About the Help Center](../../../pages/end_user_guide/help_center/about_the_help_center.html)
 

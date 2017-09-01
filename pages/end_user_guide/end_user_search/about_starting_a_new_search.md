@@ -1,20 +1,20 @@
 ---
-title: [elephant]
-tags: 
+title: ["What is a ThoughtSpot Search?"]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You use search answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 ---
-# About starting a new search
+Using ThoughtSpot's relational search is simple, so anyone can use it. In the search bar, type what you are interested in exploring, for example `revenue midwest sales rep`. ThoughtSpot will return an answer based on your searched terms.
 
-There are a few basic things you should understand before starting a new ThoughtSpot search.
+As you get better with ThoughtSpot's search, you will be able to get more out of your data by performing more complex searches.  There are a few basic things you should understand before starting a new ThoughtSpot search.
 
 ## How do I search data?
 
 You’ve probably seen one of these before:
 
- ![](../../../images/search_bar_blank.png "Search bar") 
+ ![](/pages/images/search_bar_blank.png "Search bar")
 
 Click in the box and start typing some letters. As soon as you begin typing, search suggestions appear. Type slowly and use the suggestions to find what you're looking for.
 
@@ -54,28 +54,18 @@ That’s how search works in ThoughtSpot. You can use some helping words like �
 
 ## What kinds of things can I type?
 
-Search is based on the tables that exist in your data. Tables are made of rows and columns, like spreadsheets.
-
-So you can search by typing in any of these words:
+Search is based on the tables that exist in your data. Tables are made of rows and columns, like spreadsheets. So you can search by typing in any of these words:
 
 -   The column name: like revenue, product name, or store
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
 -   One of the special [keywords](../end_user_reference/keyword_reference.html#) ThoughtSpot understands: like yesterday, \>, or contains
 
--   **[Start a new search](../../../pages/end_user_guide/end_user_search/start_a_new_search.html)**  
-Starting a new ThoughtSpot search is simple, like starting a new Google search.
--   **[About choosing sources](../../../pages/end_user_guide/end_user_search/about_choosing_sources.html)**  
-Before you start a new search, make sure you have chosen the right data sources.
--   **[About the search bar](../../../pages/end_user_guide/end_user_search/about_the_search_bar.html)**  
-The search bar is designed to make it easy for you to identify your search terms.
--   **[Search suggestions](../../../pages/end_user_guide/end_user_search/recent_searches.html)**  
-Search suggestions include complete recent searches that are similar to the search you are constructing. You can also search for saved objects, such as pinboards.
--   **[About attributes and measures](../../../pages/end_user_guide/end_user_search/about_attributes_and_measures.html)**  
-Searches in ThoughtSpot use columns that are defined as either attributes or measures.
--   **[What am I looking at?](../../../pages/end_user_guide/end_user_search/what_am_i_looking_at_.html)**  
-After, or while completing a search, you can see how ThoughtSpot came up with the answer.
--   **[Last data refresh time](../../../pages/end_user_guide/end_user_search/data_refresh_time.html)**  
-You can see the last time at which data was refreshed without having to visit the **Data** page.
 
-**Parent topic:** [About search](../../../pages/end_user_guide/end_user_search/search.html)
+## Related information
 
+-   [About choosing sources](../../../pages/end_user_guide/end_user_search/about_choosing_sources.html)  
+-   [About the search bar](../../../pages/end_user_guide/end_user_search/about_the_search_bar.html)  
+-   [Search suggestions](../../../pages/end_user_guide/end_user_search/recent_searches.html)  
+-   [About attributes and measures](../../../pages/end_user_guide/end_user_search/about_attributes_and_measures.html)  
+-   [What am I looking at?](../../../pages/end_user_guide/end_user_search/what_am_i_looking_at_.html)  
+-   [Last data refresh time](../../../pages/end_user_guide/end_user_search/data_refresh_time.html)  

@@ -12,7 +12,7 @@ The waterfall chart is used to show how an initial value is affected by a series
 
 Waterfall charts are good for visualizing positive and negative growth, and therefore work well with the growth over time keyword. The columns are color-coded to distinguish between positive and negative values.
 
- ![](../../../images/waterfall_chart_example.png "Waterfall chart example") 
+ ![](/pages/images/waterfall_chart_example.png "Waterfall chart example") 
 
 Your search needs at least one attribute and one measure to be represented as a waterfall chart.
 

@@ -1,16 +1,14 @@
 ---
-title: [elephant]
-tags: 
+title: [Search suggestions]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar
 ---
-# Search suggestions
-
 Search suggestions include complete recent searches that are similar to the search you are constructing. You can also search for saved objects, such as pinboards.
 
- ![](../../../images/search_history.png "Search suggestions example") 
+ ![](/pages/images/search_history.png "Search suggestions example")
 
 ## Usage-based ranking
 
@@ -24,7 +22,7 @@ As you type in the search bar, you are given search suggestions that include rec
 
 When there are more than one possible meaning for a search term, you can provide disambiguation by selecting from a list of choices. Now your choice is sticky. That means you won’t have to select it again, in the scope of the current search.
 
- ![](../../../images/disambiguation.png "Auto-disambiguation example") 
+ ![](/pages/images/disambiguation.png "Auto-disambiguation example")
 
 ## Out of scope columns
 
@@ -33,6 +31,3 @@ Search suggestions are not limited in scope to the columns that you select as th
 ## Object searches
 
 Search suggestions also include relevant pinboards that have already been created. This means that if a pinboard that is similar to the search you're trying to do already exists, it will appear in search suggestions.
-
-**Parent topic:** [About starting a new search](../../../pages/end_user_guide/end_user_search/about_starting_a_new_search.html)
-

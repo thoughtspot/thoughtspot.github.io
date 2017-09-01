@@ -16,21 +16,21 @@ Share uploaded data by following these steps:
 
 1.   Click on **Data**, on the top navigation bar. 
 
-     ![](../../../shared/conrefs/../../images/data_icon.png "Data") 
+     ![](/pages/shared/conrefs/../../images/data_icon.png "Data") 
 
 2.   Click on the name of the uploaded data you want to share. 
 3.   Click the **Share** icon. 
 
-    ![](../../../images/share_tables.png)
+    ![](/pages/images/share_tables.png)
 
 4.   Select **Entire Table** or **Specific Columns**. 
 
-    ![](../../../images/share_table.png)
+    ![](/pages/images/share_table.png)
 
 5. If you selected **Specific Columns**, select the column(s) to share. 
 6.   Click **+ Add users or groups** and select the users and groups that you want to share with. 
 
-    ![](../../../images/share_table_with_users.png) 
+    ![](/pages/images/share_table_with_users.png) 
 
 7. Configure the level of access by selecting from the dropdown list. You can select: 
     -   **Can View** to provide read-only access. This enables viewing the table data and defining worksheets on the table.

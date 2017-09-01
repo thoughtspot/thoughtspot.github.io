@@ -1,24 +1,22 @@
 ---
 title: [Schedule a pinboard job]
-tags: 
-keywords: tbd
+tags:
+keywords: "job,pinboard,schedule"
 last_updated: tbd
-summary: "blerg"
+summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 ---
-You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page.
-
 You can add multiple schedules with different configurations for a single pinboard. However, each job is limited to one pinboard schedule. In order to add a schedule, you must have administrator or can schedule pinboard privilege, and at least edit-only and view-only access to the pinboard.
 
 To schedule a pinboard:
 
-1.   Log in to ThoughtSpot from a browser.
-2.   Click on **Pinboards**, on the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
+2. Click on **Pinboards**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
 
-3.   Select the pinboard you would like to create a schedule for.
-4.   Click **Actions** and select **Manage schedules** to view all of the schedules set for the pinboard.
+3. Select the pinboard you would like to create a schedule for.
+4. Click **Actions** and select **Manage schedules** to view all of the schedules set for the pinboard.
 
      ![](../../images/view_schedules.png "View pinboard schedules")
 
@@ -26,7 +24,7 @@ To schedule a pinboard:
 
      ![](../../images/new_pinboard_schedule.png "Add a new pinboard schedule")
 
-6.   On the Add a schedule prompt page, set the times you would like to schedule the pinboard for.
+6. On the Add a schedule prompt page, set the times you would like to schedule the pinboard for.
 
      ![](../../images/scheduled_pinboards_1.png "Set the pinboard schedule")
 
@@ -45,5 +43,3 @@ To schedule a pinboard:
     You are limited to 1000 recipients per job.
 
 9. Click **Schedule** to save your scheduled pinboard.
-
-**Parent topic:** [About scheduled pinboards](../../admin/manage_jobs/about_scheduled_pinboards.html)

@@ -1,9 +1,8 @@
 ---
 title: [Configure periodic backups]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
@@ -52,10 +51,10 @@ The rentention system deletes the oldest stored backup and the corresponding sna
 
 To configure periodic backups:
 
-1.   [Log in to the Linux shell using SSH](../setup/login_console.html#).
-2.   Find a directory with enough disk space to support the `retention_policy number` you configure. Hint: You can use df -h to see free disk space and tscli snapshot ls to view existing snapshots and their size on disk.
-3.   Use the tscli backup-policy create command. The command opens a `vi` editor for you to configure the backup policy.
-4.   Write and save the file to store your configuration. By default, newly created policies are automatically enabled. To disable a policy, use the tscli backup-policy disable command.
+1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+2. Find a directory with enough disk space to support the `retention_policy number` you configure. Hint: You can use df -h to see free disk space and tscli snapshot ls to view existing snapshots and their size on disk.
+3. Use the tscli backup-policy create command. The command opens a `vi` editor for you to configure the backup policy.
+4. Write and save the file to store your configuration. By default, newly created policies are automatically enabled. To disable a policy, use the tscli backup-policy disable command.
 5. Verify the policy using the `tscli backup periodic-config <name>` command.
 
 The following table lists some additional backup commands you can use.
@@ -69,5 +68,3 @@ The following table lists some additional backup commands you can use.
 |Delete a polucy|`tscli backup-policy delete <name>`|
 
 Finally, you can time a `crontab` job with your periodic backup configuration to move a backup to longer term storage. Simply create a `crontab` job that moves the backup to a location outside of the `directory` defined in the periodic schedule.
-
-**Parent topic:** [Work with backups](../../admin/backup_restore/backups_and_snapshots.html)

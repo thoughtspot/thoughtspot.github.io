@@ -1,18 +1,16 @@
 ---
-title: [elephant]
-tags: 
+title: [Finding your way around]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+toc: false
+summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
 ---
-# Finding your way around
-
-ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar.
-
- ![](../../../images/top_navigation_bar.png "Menu bar") 
-
 These are the different sections in ThoughtSpot:
+
+![](/pages/images/top_navigation_bar.png "Menu bar")
+
 
 ## Home
 
@@ -24,7 +22,7 @@ Click the logo to go to the home page. The home page contains:
 
     To view the activity panel, click on the **activity icon** on the right side of the home page.
 
-     ![](../../../images/activity.png "Activity bar") 
+     ![](/pages/images/activity.png "Activity bar")
 
     You can even click on one of the object names to jump to its location.
 
@@ -65,12 +63,9 @@ The **user icon** allows you to either view your preferences or log out. You can
 
 To learn more about this section, visit [About the user profile](about_user.html).
 
--   **[Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html)**  
-To set up and explore your data, access ThoughtSpot from a standard Web browser using a username and password.
--   **[Log out of ThoughtSpot](../../../pages/end_user_guide/end_user_introduction/log_out_of_thoughtspot.html)**  
-Once you're done with your search session, you can optionally log out of ThoughtSpot.
--   **[Set your ThoughtSpot locale](../../../admin/setup/set_your_thoughtspot_locale.html)**  
-In addition to American English, ThoughtSpot also supports German and Japanese.
 
-**Parent topic:** [Introduction](../../../pages/end_user_guide/end_user_introduction/introduction.html)
+## Related information
 
+-   [Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html)  
+-   [Log out of ThoughtSpot](../../../pages/end_user_guide/end_user_introduction/log_out_of_thoughtspot.html)  
+-   [Set your ThoughtSpot locale](../../../admin/setup/set_your_thoughtspot_locale.html)  

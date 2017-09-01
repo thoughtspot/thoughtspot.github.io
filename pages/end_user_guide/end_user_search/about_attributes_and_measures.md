@@ -1,16 +1,12 @@
 ---
-title: [elephant]
-tags: 
+title: [Column types and search results]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Searches in ThoughtSpot use columns that are defined as either attributes or measures."
 sidebar: mydoc_sidebar
 ---
-# About attributes and measures
-
-Searches in ThoughtSpot use columns that are defined as either attributes or measures.
-
-ThoughtSpot identifies search columns as either attributes or measures. For several chart types, your search needs to contain a certain number of attributes and a certain number of measures.
+ThoughtSpot identifies search columns as either attributes or measures. The columns you choose impact your search results. That's because several chart types expect that your search contains a certain number of attributes and a certain number of measures.
 
 ## Attributes
 
@@ -20,5 +16,12 @@ Attribute are primarily text or date values. Attributes make up the x-axis of yo
 
 Measures are numeric values you can do math on, with meaningful results. You will most likely find your measures on the y-axis of your chart. Some examples of measures in terms of a person are age, height, and weight.
 
-**Parent topic:** [About starting a new search](../../../pages/end_user_guide/end_user_search/about_starting_a_new_search.html)
+# What am I looking at?
 
+After, or while completing a search, you can see how ThoughtSpot came up with the answer.
+
+Click the **question mark** on the right hand side of the search bar to open the “What am i looking at?” dialogue box.
+
+You’ll be shown what measures ThoughtSpot computed, for each combination of attributes. You’ll also see filters of the search, and how the tables were linked and used.
+
+![](/pages/images/what_am_i_looking_at.png "What am I looking at? example")

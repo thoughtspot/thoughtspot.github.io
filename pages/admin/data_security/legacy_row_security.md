@@ -1,16 +1,19 @@
 ---
-title: [About Legacy Row Level Security]
-tags: 
+title: [How to use legacy RLS]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Legacy Row Level Security is deprecated and no longer used. This documentation is retained to support implementations that are already using this method."
 sidebar: mydoc_sidebar
 ---
-Legacy Row Level Security is no longer used. This documentation is retained to support implementations that are already using this method.
-
 If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](new_row_level_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
 
-This legacy version of row level security allowed you to define which groups could see individual rows in a table, based on the values in a column.
+This legacy version of row level security allowed you to define which groups could see individual rows in a table, based on the values in a column. Setting row level security is a three steps process:
+
+1.  Obtain the security file
+2.  Define Legacy Row Level Security
+3.  Upload the edited security file
+
 
 ## Legacy Row Level Security settings
 
@@ -23,22 +26,25 @@ You define the rules for row level security by editing the security file in Exce
 |Table identifier|LogicalTableGUID|TableGUID from the model file.|
 |Column|ColumnName|ColumnName from the model file.|
 |Column identifier|ColumnGUID|ColumnGUID from the model file.|
-|Operation|Operation|Supply one of these operators:-   BEGINS_WITH
--   ENDS_WITH
--   CONTAINS
--   EQ (equals)
--   NE (not equals)
--   GE (greater than or equal to)
--   GT (greater than)
--   LE (less than or equal to)
--   LT (less than)
--   BW (between)
--   BW_INC (between with both boundaries included)
--   BW_INC_MIN (between with the lower boundary included)
--   BW_INC_MAX (between with upper boundary included)
-
-|
+|Operation|Operation|Supply a valid operator.|
 |Column value(s)|Value|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|
+
+Valid operators for `Operation` values are:
+
+-   `BEGINS_WITH`
+-   `ENDS_WITH`
+-   `CONTAINS`
+-   `EQ` (equals)
+-   `NE` (not equals)
+-   `GE` (greater than or equal to)
+-   `GT` (greater than)
+-   `LE` (less than or equal to)
+-   `LT` (less than)
+-   `BW` (between)
+-   `BW_INC` (between with both boundaries included)
+-   `BW_INC_MIN` (between with the lower boundary included)
+-   `BW_INC_MAX` (between with upper boundary included)
+
 
 ## Best practices for using Legacy Row Level Security
 
@@ -75,19 +81,89 @@ In this example, a user is a member of two groups: Analysts and Sales. The secur
 
 It works the same way with ranges and between operators as with equality. The user will be able to see any row that fulfills any of the conditions.
 
-## Workflow for setting Legacy Row Level Security
 
-Setting row level security is a three steps process:
+## Get the security filters
 
-1.  [Obtain the security file](get_security_file.html#).
-2.  [Define Legacy Row Level Security](row_security.html#).
-3.  [Upload the edited security file](upload_security_file.html#).
-
--   **[Obtain the security file](../../admin/data_security/get_security_file.html)**  
 Before you can make changes to the security file, you need to download it using the ThoughtSpot Web interface to access ThoughtSpot. Then you will be able to edit it using Microsoft Excel or a similar spreadsheet editing tool.
--   **[Define Legacy Row Level Security](../../admin/data_security/row_security.html)**  
+
+To obtain the security file:
+
+1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as the admin user.
+2. Click on the **Admin** icon, on the top navigation bar.
+
+    ![](../../shared/conrefs/../../images/admin_icon.png)
+
+3. Click on **Data Security**.
+4. Click **Download security.xls**.
+
+    ![](../../images/download_security_file.png)
+
+5. Save it to your machine.
+6. Open the security file in Excel or a text editor.
+    -   If you are using Excel, you may see a warning message. Click "Yes" to proceed.
+
+         ![](../../images/warning_open_security_excel.png)
+
+    -   If your security file includes multi-byte characters, edit the file using vi or vim. This is because security files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
+
+## Define RLS Security
+
 Edit the security file to add row level security to tables.
--   **[Upload the edited security file](../../admin/data_security/upload_security_file.html)**  
+
+Before you can add row level securit, create the appropriate groups within ThoughtSpot, if they don't already exist. You can create groups and add users to them by following the procedures in [Manage users, groups, and privileges](../users_groups/about_users_groups.html#).
+
+You can edit the security file using Microsoft Excel or a compatible tool. You will need to copy and paste some of the required information from the model file.
+
+1. In the model file, find the table for which you want to add row level security. Then find the entry for the column you will use to define visibility criteria. You will copy some of the values from this entry into the security file.
+2. Enter the appropriate values into the security file in the first empty row.
+
+    |Value|Security file heading|Details|
+    |-----|---------------------|-------|
+    |Group|GroupName|Group of users for which to apply this setting.|
+    |Table|LogicalTableName|TableName from the model file.|
+    |Table identifier|LogicalTableGUID|TableGUID from the model file.|
+    |Column|ColumnName|ColumnName from the model file.|
+    |Column identifier|ColumnGUID|ColumnGUID from the model file.|
+    |Operation|Operation|Supply one of these operators:    -   BEGINS_WITH
+    -   ENDS_WITH
+    -   CONTAINS
+    -   EQ (equals)
+    -   NE (not equals)
+    -   GE (greater than or equal to)
+    -   GT (greater than)
+    -   LE (less than or equal to)
+    -   LT (less than)
+    -   BW (between)
+    -   BW_INC (between with both boundaries included)
+    -   BW_INC_MIN (between with the lower boundary included)
+    -   BW_INC_MAX (between with upper boundary included)
+|
+    |Column value(s)|Value|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|
+
+    If the condition made up of the column, operator, and value combination for a particular row is true, that row will be visible to the members of the designated group.
+
+3. Repeat this for each group, column, and condition you want to define.
+4. Save the security file in the same format as it was when you downloaded it (as a Microsoft Excel file with the name security.xls). You will see a warning when attempting to save the file. Click "Yes" and save the file.
+
+    ![](../../images/warning_save_security_excel.png)
+
+
+## Upload the edited security filters
+
 After you have made changes to the security file, you must upload it back to ThoughtSpot before the changes will take effect.
 
-**Parent topic:** [Row level security](../../admin/data_security/about_row_security.html)
+To upload the security file:
+
+1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as the admin user.
+2. Click on the **Admin** icon, on the top navigation bar.
+
+    ![](../../shared/conrefs/../../images/admin_icon.png)
+
+3. Click on **Data Security**.
+4. Click **BROWSE YOUR FILES** to upload the security.xls file, or drag and drop it in the zone.
+
+    ![](../../images/security_fie_upload.png)
+
+    If you receive an error message upon uploading the file, check that it does not include any multi-byte characters (i.e. Japanese or other multi-byte language characters). If it does, you'll need to download the file again and make your edits using vi or vim.
+
+    After the file is uploaded, ThoughtSpot is updated and the row level security changes are applied.

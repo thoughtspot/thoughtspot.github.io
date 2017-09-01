@@ -229,18 +229,9 @@ entries:
     - levelTwoTitle: Simplify search with worksheets
       output: web, pdf
       levelTwoItems:
-      - title: About worksheets
+      - title: Create and use worksheets
         url: /pages/admin/worksheets/about_worksheets.html
         output: web, pdf
-      - levelThreeTitle: Create new worksheet
-        output: web, pdf
-        levelThreeItems:
-        - title: Create a new worksheet
-          url: /pages/admin/worksheets/worksheet_create.html
-          output: web, pdf
-        - title: Add sources and columns to a worksheet
-          url: /pages/admin/worksheets/worksheet_add_tables.html
-          output: web, pdf
       - title: How the inclusion rule works
         url: /pages/admin/worksheets/about_inclusion_rule.html
         output: web, pdf
@@ -250,73 +241,37 @@ entries:
         - title: How the worksheet join rule works
           url: /pages/admin/worksheets/progressive_joins.html
           output: web, pdf
-        - title: The join rule with Rule-Based Row Level Security
-          url: /pages/admin/worksheets/joins_and_RLS_rule_based.html
-          output: web, pdf
-        - title: The join rule with Legacy Row Level Security
+        - title: Legacy RLS with the join rule
           url: /pages/admin/worksheets/joins_and_row_level_security.html
           output: web, pdf
-        - title: Using table joins with the aggregated worksheet
-          url: /pages/admin/poc_features/about_aggregated_ws_and_table_joins.html
-          output: web, pdf
-      - levelThreeTitle: Formulas in worksheets
+      - title: Create a formula in a worksheet
+        url: /pages/admin/worksheets/create_formula.html
         output: web, pdf
-        levelThreeItems:
-        - title: About formulas in worksheets
-          url: /pages/admin/worksheets/about_formulas.html
-          output: web, pdf
-        - title: Create a formula in a worksheet
-          url: /pages/admin/worksheets/create_formula.html
-          output: web, pdf
-      - levelThreeTitle: Edit a worksheet
+      - title: Edit a worksheet
+        url: /pages/admin/worksheets/edit_worksheet.html
         output: web, pdf
-        levelThreeItems:
-        - title: Overview worksheet editing
-          url: /pages/admin/worksheets/edit_worksheet.html
-          output: web, pdf
-        - title: Rename a worksheet or table
-          url: /pages/admin/worksheets/change_a_logical_table_name.html
-          output: web, pdf
-        - title: Change the inclusion or join rule for a worksheet
-          url: /pages/admin/worksheets/change_inclusion_rule.html
-          output: web, pdf
+      - title: Change the inclusion or join rule for a worksheet
+        url: /pages/admin/worksheets/change_inclusion_rule.html
+        output: web, pdf
       - title: Delete a worksheet or table
         url: /pages/admin/worksheets/delete_worksheet.html
         output: web, pdf
     - levelTwoTitle: Manage users and groups
       output: web, pdf
       levelTwoItems:
-      - title: About users and groups
+      - title: Understand groups and privileges
         url: /pages/admin/users_groups/about_users_groups.html
         output: web, pdf
-      - title: About privileges
-        url: /pages/admin/users_groups/about_privileges.html
-        output: web, pdf
-      - title: Add a group and set security privileges
+      - title: Create, edit, or delete a group
         url: /pages/admin/users_groups/add_group.html
         output: web, pdf
-      - title: Edit or delete a group
-        url: /pages/admin/users_groups/edit_group.html
-        output: web, pdf
-      - title: Add a user
+      - title: Add, edit, or delete a user
         url: /pages/admin/users_groups/add_user.html
-        output: web, pdf
-      - title: Add multiple users to a group
-        url: /pages/admin/users_groups/add_multiple_users_to_a_group.html
-        output: web, pdf
-      - title: Edit or delete a user
-        url: /pages/admin/users_groups/edit_user.html
-        output: web, pdf
-      - title: Forgotten password
-        url: /pages/admin/users_groups/forgot_password.html
         output: web, pdf
     - levelTwoTitle: Manage jobs
       output: web, pdf
       levelTwoItems:
-      - title: About job management
-        url: /pages/admin/manage_jobs/manage_jobs.html
-        output: web, pdf
-      - title: Understand scheduled pinboards
+      - title: Job management (scheduled pinboards)
         url: /pages/admin/manage_jobs/about_scheduled_pinboards.html
         output: web, pdf
       - title: Schedule a pinboard job
@@ -328,24 +283,12 @@ entries:
     - levelTwoTitle: Security
       output: web, pdf
       levelTwoItems:
-      - title: About security
+      - title: Overview of security features
         url: /pages/admin/data_security/about_security.html
         output: web, pdf
-      - levelThreeTitle: System security
+      - title: System Security
+        url: /pages/admin/data_security/audit_logs.html
         output: web, pdf
-        levelThreeItems:
-        - title: About System security
-          url: /pages/admin/data_security/audit_logs.html
-          output: web, pdf
-        - title: Get audit logs
-          url: /pages/admin/data_security/get_audit_logs.html
-          output: web, pdf
-        - title: Security policies
-          url: /pages/admin/data_security/security_policy.html
-          output: web, pdf
-        - title: View installed packages
-          url: /pages/admin/data_security/view_installed_packages.html
-          output: web, pdf
       - levelThreeTitle: Data security
         output: web, pdf
         levelThreeItems:
@@ -370,33 +313,15 @@ entries:
         - title: About RLS
           url: /pages/admin/data_security/about_row_security.html
           output: web, pdf
-        - title: About Rule-Based RLS
-          url: /pages/admin/data_security/new_row_level_security.html
+        - title: How Rule-Based RLS works
+          url: /pages/admin/data_security/row_level_security.html
           output: web, pdf
-        - title: Disable data value suggestions
-          url: /pages/admin/data_security/disable_suggestions.html
+        - title: Set Rule-Based RLS
+          url: /pages/admin/data_security/set_rls.html
           output: web, pdf
-        - title: Access the Rule Builder
-          url: /pages/admin/data_security/access_rule_builder.html
+        - title: How to use legacy RLS
+          url: /pages/admin/data_security/legacy_row_security.html
           output: web, pdf
-        - title: Define Rule-Based RLS rules
-          url: /pages/admin/data_security/define_rls_rules.html
-          output: web, pdf
-        - title: About Legacy RLS
-          url: /pages/admin/data_security/about_legacy_row_security.html
-          output: web, pdf
-        - title: Obtain the security file
-          url: /pages/admin/data_security/get_security_file.html
-          output: web, pdf
-        - title: Define Legacy RLS
-          url: /pages/admin/data_security/row_security.html
-          output: web, pdf
-        - title: Upload the edited security file
-          url: /pages/admin/data_security/upload_security_file.html
-          output: web, pdf
-      - title: Network security
-        url: /pages/admin/data_security/network_security.html
-        output: web, pdf
     - levelTwoTitle: System administration
       output: web, pdf
       levelTwoItems:
@@ -409,10 +334,7 @@ entries:
       - title: Using the Space Utilization chart
         url: /pages/admin/system_admin/about_the_memory_usage_chart.html
         output: web, pdf
-      - title: Generate and send a log bundle
-        url: /pages/admin/system_admin/generate_log_bundle.html
-        output: web, pdf
-      - title: Send logs to the administrator
+      - title: Send logs when reporting problems
         url: /pages/admin/system_admin/send_logs_to_administrator.html
         output: web, pdf
       - title: Set up recording for Replay Search
@@ -421,33 +343,18 @@ entries:
     - levelTwoTitle: Backup and restore
       output: web, pdf
       levelTwoItems:
-      - title: Overview of backup and restore
-        url: /pages/admin/backup_restore/intro_backup_restore.html
-        output: web, pdf
       - title: Understand the backup strategies
         url: /pages/admin/backup_restore/choose_strategy.html
         output: web, pdf
       - title: Understand backup/snapshot schedules
         url: /pages/admin/backup_restore/how_to_create_a_schedule.html
         output: web, pdf
-      - levelThreeTitle: Work with snapshots
+      - title: Work with snapshots
+        url: /pages/admin/backup_restore/overview_snapshot.html
         output: web, pdf
-        levelThreeItems:
-        - title: Overview of snapshots
-          url: /pages/admin/backup_restore/overview_snapshot.html
-          output: web, pdf
-        - title: Create a manual snapshot
-          url: /pages/admin/backup_restore/take_snapshot.html
-          output: web, pdf
-        - title: Manage periodic snapshots
-          url: /pages/admin/backup_restore/configure_periodic_snapshots.html
-          output: web, pdf
       - levelThreeTitle: Work with backups
         output: web, pdf
         levelThreeItems:
-        - title: About snapshots and backups
-          url: /pages/admin/backup_restore/backups_and_snapshots.html
-          output: web, pdf
         - title: Understand backup modes
           url: /pages/admin/backup_restore/backup_modes.html
           output: web, pdf
@@ -465,7 +372,7 @@ entries:
       levelTwoItems:
       - title: About troubleshooting
         url: /pages/admin/troubleshooting/troubleshooting_intro.html
-        output: web, pdf
+        output: pdf
       - title: Get logs
         url: /pages/admin/troubleshooting/get_logs.html
         output: web, pdf
@@ -508,49 +415,34 @@ entries:
       - title: Finding your way around
         url: /pages/end_user_guide/end_user_introduction/about_navigating_thoughtspot.html
         output: web
-      - title: Log in from a browser
-        url: /pages/admin/setup/accessing.html
+      - title: Log in or out of ThoughtSpot
+        url: /pages/end_user_guide/accessing.html
         output: web
-      - title: Log out
-        url: /pages/end_user_guide/end_user_introduction/log_out_of_thoughtspot.html
+      - title: Set your display language (locale)
+        url: /pages/end_user_guide/locale.html
         output: web
-      - title: Set your locale
-        url: /pages/admin/setup/set_your_thoughtspot_locale.html
-        output: web
-      - title: About the user profile
+      - title: Your user profile
         url: /pages/end_user_guide/end_user_introduction/about_user.html
         output: web
       - title: Understanding privileges
         url: /pages/end_user_guide/end_user_introduction/about_privileges_end_user.html
         output: web
-      - levelThreeTitle: Using Stickers
+      - title: Use stickers to organize
+        url: /pages/end_user_guide/stickers.html
         output: web
-        levelThreeItems:
-        - title: About stickers
-          url: /pages/admin/data_modeling/stickers_concept.html
-          output: web
-        - title: Apply a sticker
-          url: /pages/admin/data_modeling/apply_stickers.html
-          output: web
-        - title: Filter by a sticker
-          url: /pages/admin/data_modeling/filter_by_sticker.html
-          output: web
     - levelTwoTitle: Using Search
       output: web
       levelTwoItems:
-      - title: About search
-        url: /pages/end_user_guide/end_user_search/search.html
+      - title: What is a ThoughtSpot Search?
+        url: /pages/end_user_guide/end_user_search/about_starting_a_new_search.html
         output: web
       - levelThreeTitle: Search basics
         output: web
         levelThreeItems:
-        - title: Understanding search
-          url: /pages/end_user_guide/end_user_search/about_starting_a_new_search.html
-          output: web
         - title: Start a new search
           url: /pages/end_user_guide/end_user_search/start_a_new_search.html
           output: web
-        - title: Choosing sources
+        - title: Choose a data source
           url: /pages/end_user_guide/end_user_search/about_choosing_sources.html
           output: web
         - title: Search bar features
@@ -559,37 +451,19 @@ entries:
         - title: Search suggestions
           url: /pages/end_user_guide/end_user_search/recent_searches.html
           output: web
-        - title: Attribute and measure columns
+        - title: Column types and search results
           url: /pages/end_user_guide/end_user_search/about_attributes_and_measures.html
-          output: web
-        - title: What am I looking at?
-          url: /pages/end_user_guide/end_user_search/what_am_i_looking_at_.html
           output: web
         - title: Last data refresh time
           url: /pages/end_user_guide/end_user_search/data_refresh_time.html
           output: web
-        - title: Narrowing search with keywords
-          url: /pages/complex_searches/about_keyword_searches.html
-          output: web
-      - levelThreeTitle: Work with tables
+      - title: Results that are tables
+        url: /pages/end_user_guide/end_user_search/about_tables.html
         output: web
-        levelThreeItems:
-        - title: Understand tables
-          url: /pages/end_user_guide/end_user_search/about_tables.html
-          output: web
-        - title: Rearrange column order
-          url: /pages/end_user_guide/end_user_search/rearrange_column_order.html
-          output: web
-        - title: Resize column widths
-          url: /pages/end_user_guide/end_user_search/resize_column_widths.html
-          output: web
-        - title: About headlines
-          url: /pages/end_user_guide/end_user_search/about_headlines.html
-          output: web
       - levelThreeTitle: Work with filters
         output: web
         levelThreeItems:
-        - title: Understad filters
+        - title: Understand filters
           url: /pages/complex_searches/about_filters.html
           output: web
         - title: Add a filter to a table
@@ -597,9 +471,6 @@ entries:
           output: web
         - title: Add a filter to a chart
           url: /pages/end_user_guide/end_user_search/filter_from_chart_axes.html
-          output: web
-        - title: Add a filter from the search bar
-          url: /pages/end_user_guide/end_user_search/add_filter_from_search.html
           output: web
         - title: Create a bulk filter
           url: /pages/complex_searches/create_bulk_filter.html
@@ -621,18 +492,6 @@ entries:
           output: web
         - title: Create a search from a worksheet
           url: /pages/complex_searches/do_query_on_query.html
-          output: web
-      - levelThreeTitle: Work with formulas
-        output: web
-        levelThreeItems:
-        - title: Understand formulas
-          url: /pages/complex_searches/add_formula_to_search.html
-          output: web
-        - title: Add a formula to a search
-          url: /pages/complex_searches/how_to_add_formula.html
-          output: web
-        - title: View or edit a formula in a search
-          url: /pages/complex_searches/edit_formula_in_answer.html
           output: web
       - levelThreeTitle: Other search actions
         output: web
@@ -766,6 +625,66 @@ entries:
         - title: oom into a chart
           url: /pages/end_user_guide/end_user_search/zoom_into_a_chart.html
           output: web
+    - levelTwoTitle: Work with formulas
+      output: web
+      levelTwoItems:
+      - title: Understand formulas
+        url: /pages/complex_searches/add_formula_to_search.html
+        output: web
+      - title: Add a formula to a search
+        url: /pages/complex_searches/how_to_add_formula.html
+        output: web
+      - title: View or edit a formula in a search
+        url: /pages/complex_searches/edit_formula_in_answer.html
+        output: web
+      - title: About formulas in searches
+        url: /pages/complex_searches/add_formula_to_search.html
+        output: web
+      - title: Add a formula to a search
+        url: /pages/complex_searches/how_to_add_formula.html
+        output: web
+      - title: View or edit a formula in a search
+        url: /pages/complex_searches/edit_formula_in_answer.html
+        output: web
+      - levelThreeTitle: Aggregate formulas
+        output: web
+        levelThreeItems:
+        - title: Overview of aggregate formulas
+          url: /pages/complex_searches/aggregation_formulas.html
+          output: web
+        - title: Aggregates over time
+          url: /pages/complex_searches/about_cumulative_formulas.html
+          output: web
+        - title: Calculate the cumulative sum
+          url: /pages/complex_searches/search_using_the_cumulative_function.html
+          output: web
+        - title: Grouping formulas
+          url: /pages/complex_searches/about_pinned_measures.html
+          output: web
+        - title: Moving formulas
+          url: /pages/complex_searches/about_moving_formulas.html
+          output: web
+        - title: Calculate a moving average
+          url: /pages/complex_searches/search_using_the_moving_function.html
+          output: web
+      - title: Conversion formulas
+        url: /pages/complex_searches/conversion_formulas.html
+        output: web
+      - title: Date formulas
+        url: /pages/advanced_searches_guide/formulas/date_formulas.html
+        output: web
+      - title: Percent (simple number) calculations
+        url: /pages/advanced_searches_guide/formulas/percent_calculations.html
+        output: web
+      - title: Conditional formulas (operators)
+        url: /pages/advanced_searches_guide/formulas/conditional_sum.html
+        output: web
+      - title: Nested formulas
+        url: /pages/complex_searches/about_nested_formulas.html
+        output: web
+      - title: Formulas for chasm traps
+        url: /pages/complex_searches/about_formula_support_for_chasm_trap_schemas.html
+        output: web
     - levelTwoTitle: Advanced keyword searches
       output: web
       levelTwoItems:
@@ -796,57 +715,7 @@ entries:
       - title: Create a search from a search saved as a worksheet
         url: /pages/complex_searches/do_query_on_query.html
         output: web
-    - levelTwoTitle: Advanced search formulas
-      output: web
-      levelTwoItems:
-        - title: About formulas in searches
-          url: /pages/complex_searches/add_formula_to_search.html
-          output: web
-        - title: Add a formula to a search
-          url: /pages/complex_searches/how_to_add_formula.html
-          output: web
-        - title: View or edit a formula in a search
-          url: /pages/complex_searches/edit_formula_in_answer.html
-          output: web
-        - levelThreeTitle: Aggregate formulas
-          output: web
-          levelThreeItems:
-          - title: Overview of aggregate formulas
-            url: /pages/complex_searches/aggregation_formulas.html
-            output: web
-          - title: Aggregates over time
-            url: /pages/complex_searches/about_cumulative_formulas.html
-            output: web
-          - title: Calculate the cumulative sum
-            url: /pages/complex_searches/search_using_the_cumulative_function.html
-            output: web
-          - title: Grouping formulas
-            url: /pages/complex_searches/about_pinned_measures.html
-            output: web
-          - title: Moving formulas
-            url: /pages/complex_searches/about_moving_formulas.html
-            output: web
-          - title: Calculate a moving average
-            url: /pages/complex_searches/search_using_the_moving_function.html
-            output: web
-        - title: Conversion formulas
-          url: /pages/complex_searches/conversion_formulas.html
-          output: web
-        - title: Date formulas
-          url: /pages/advanced_searches_guide/formulas/date_formulas.html
-          output: web
-        - title: Percent (simple number) calculations
-          url: /pages/advanced_searches_guide/formulas/percent_calculations.html
-          output: web
-        - title: Conditional formulas (operators)
-          url: /pages/advanced_searches_guide/formulas/conditional_sum.html
-          output: web
-        - title: Nested formulas
-          url: /pages/complex_searches/about_nested_formulas.html
-          output: web
-        - title: Formulas for chasm traps
-          url: /pages/complex_searches/about_formula_support_for_chasm_trap_schemas.html
-          output: web
+
     - levelTwoTitle: Advanced pinboards
       output: web
       levelTwoItems:

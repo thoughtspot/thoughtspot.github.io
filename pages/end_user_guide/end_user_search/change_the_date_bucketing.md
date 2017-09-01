@@ -16,7 +16,7 @@ To change the date bucketing:
 
 1.   Click the date bucket dropdown on the column header of your table or on the axis label of your chart. 
 
-     ![](../../../images/date_bucketing_dropdown.png "Date bucketing chooser") 
+     ![](/pages/images/date_bucketing_dropdown.png "Date bucketing chooser") 
 
 2.   Select a different date bucket. 
 

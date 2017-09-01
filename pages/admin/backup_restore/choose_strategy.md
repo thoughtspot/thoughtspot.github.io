@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -32,32 +32,76 @@ Details on this architecture and instructions on setting it up are available in 
 
 Depending on your situation and your goals, you can choose to use a snapshot or a backup. This table should help you decide:
 
-| |**Snapshot**|**Backup**|
-|**Used to**|To restore to a cluster to particular point in time.| -   Restore a cluster to a prior state.
--   Move a cluster to a different HW appliance.
--   Move a cluster to VM appliance.
--   Removal of a node.
--   Restoring to a cluster running a different release from the one where the backup was taken.
-
- |
-|**Stored**|In the cluster's HDFS|Outside the cluster on either local or NAS disk.|
-|**Advantages**| -   Can be taken on or restored to a running cluster
--   Creation and restore is fast
-
- | -   Very stable medium.
--   Can be used to recover from data loss or corruption, even if your cluster was destroyed.
--   Can be typed as full, lightweight, or dataless.
-
- |
-|**Limitations**| -   Includes all data, state, and metadata etc. created between snapshot creation and restore.
--   Are lost if the HDFS name node fails, you lose multiple disks at once, or the entire cluster is destroyed
--   Can only restored to the cluster they were taken from
-
- | -   Backups require deleting the existing cluster first.
--   You are resonsible for validating your backup configuration as viable for restoring a cluster.
--   Best practice recommends you to maintain multiple backups.
--   Are typically large in size.
-
- |
+<table>
+<colgroup>
+<col width="16%" />
+<col width="42%" />
+<col width="42%" />
+</colgroup>
+                <tr>
+                    <td/>
+                    <td><b>Snapshot</b></td>
+                    <td><b>Backup</b></td>
+                </tr>
+                <tr>
+                    <td><b>Used to</b></td>
+                    <td>To restore to a cluster to particular point in time.</td>
+                    <td>
+                        <ul id="ul_vbv_tlc_m1b">
+                            <li>Restore a cluster to a prior state.</li>
+                            <li>Move a cluster to a different HW appliance.</li>
+                            <li>Move a cluster to VM appliance.</li>
+                            <li>Removal of a node.</li>
+                            <li>Restoring to a cluster running a different release from the one
+                                where the backup was taken.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Stored</b></td>
+                    <td>In the cluster's HDFS</td>
+                    <td>Outside the cluster on either local or NAS disk.</td>
+                </tr>
+                <tr>
+                    <td><b>Advantages</b></td>
+                    <td>
+                        <ul id="ul_zxj_bmc_m1b">
+                            <li>Can be taken on or restored to a running cluster</li>
+                            <li>Creation and restore is fast</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Very stable medium.</li>
+                            <li>Can be used to recover from data loss or corruption, even if your
+                                cluster was destroyed.</li>
+                            <li>Can be typed as full, lightweight, or dataless.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Limitations</b></td>
+                    <td>
+                        <ul id="ul_c1v_mmc_m1b">
+                            <li>Includes  all data, state, and metadata etc. created between
+                                snapshot creation and restore.</li>
+                            <li>Are lost if the HDFS name node fails, you lose multiple disks at
+                                once, or the entire cluster is destroyed</li>
+                            <li>Can only restored to the cluster they were taken from</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="ul_lzn_tmc_m1b">
+                            <li>Backups require deleting the existing cluster first. <draft-comment
+                                    author="mary.anthony">Check with abishek if this is true in
+                                    4.3</draft-comment></li>
+                            <li>You are resonsible for validating your backup configuration as
+                                viable for restoring a cluster.</li>
+                            <li>Best practice recommends you to maintain multiple backups.</li>
+                            <li>Are typically large in size.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
 
 You should never restore from a snapshot or backup yourself, instead contact ThoughtSpot Support for help.

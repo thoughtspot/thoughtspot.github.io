@@ -140,7 +140,7 @@ sidebar: mydoc_sidebar
                 -   [Disable data value suggestions](admin_guide/data_security/disable_suggestions.html)
                 -   [Access the Rule Builder](admin_guide/data_security/access_rule_builder.html)
                 -   [Define Rule-Based Row Level Security rules](admin_guide/data_security/define_rls_rules.html)
-            -   [About Legacy Row Level Security](admin_guide/data_security/about_legacy_row_security.html)
+            -   [About Legacy Row Level Security](admin_guide/data_security/legacy_row_security.html)
                 -   [Obtain the security file](admin_guide/data_security/get_security_file.html)
                 -   [Define Legacy Row Level Security](admin_guide/data_security/row_security.html)
                 -   [Upload the edited security file](admin_guide/data_security/upload_security_file.html)

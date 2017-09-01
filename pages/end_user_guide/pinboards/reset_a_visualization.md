@@ -16,11 +16,11 @@ To reset a visualization:
 
 1.   On an altered visualization, click the reset icon. 
 
-     ![](../../../images/reset_a_visualization.png "Click to reset") 
+     ![](/pages/images/reset_a_visualization.png "Click to reset") 
 
 2.   Save your pinboard by clicking **Actions** and **Save**. 
 
-     ![](../../../shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard") 
+     ![](/pages/shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard") 
 
 
 **Parent topic:** [Other pinboard actions](../../../pages/end_user_guide/pinboards/pinboard_actions.html)

@@ -1,9 +1,8 @@
 ---
 title: [About restore operations]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 When restoring to a running cluster that where the ThoughtSpot software was not updated, you'll usually use a snapshot. But in the case where you've updated the cluster to a new release, the configuration has changed significantly, or you're restoring to a different cluster, you'll need to restore from a backup.
@@ -15,5 +14,3 @@ Restoring from backup require that you first delete the old cluster. Changes to 
 -   Restoring to a cluster running a different release from the one where the snapshot/backup was taken.
 
 You should never restore from a snapshot or backup yourself. To perform a restore from a snapshot or backup, contact ThoughtSpot Support.
-
-**Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)

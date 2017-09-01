@@ -1,9 +1,9 @@
 ---
 title: [Data security]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
 ---
 Sharing and security settings govern what data a user can access and what they can do with the data. Admins can use these settings to regulate access to information and provide a personalized user experience.
@@ -31,15 +31,10 @@ You can share with groups and with individual users. Sharing of tables can be de
 
 ThoughtSpot includes robust [row level security](about_row_security.html#), which allows you to filter all objects users see based on conditions you set at the level of row values in base data tables.
 
--   **[Share tables and columns](../../admin/data_security/share_source_tables.html)**  
-Administrators and owners can share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.
--   **[Share worksheets](../../admin/data_security/share_worksheets.html)**  
-You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it.
--   **[Share a pinboard](../../admin/data_security/share_pinboards.html)**  
-You do not have to be an administrator or the owner to share saved pinboards. Any user can share them, based on the access levels the user has.
--   **[Revoke access (unshare)](../../admin/data_security/unshare.html)**  
-You may need to revoke access to an object (table, worksheet, or pinboard) that you have previously shared. Unsharing an object is very similar to sharing it.
--   **[Row level security](../../admin/data_security/about_row_security.html)**  
-Row level security allows you to define which groups can see individual rows in a table, based on the values in one of its columns. Using row level security, you can effectively customize search results and pinboards for each group that views them.
+## Related information
 
-**Parent topic:** [About security](../../admin/data_security/about_security.html)
+-   [Share tables and columns](../../admin/data_security/share_source_tables.html)  
+-   [Share worksheets](../../admin/data_security/share_worksheets.html)  
+-   [Share a pinboard](../../admin/data_security/share_pinboards.html)  
+-   [Revoke access (unshare)](../../admin/data_security/unshare.html)  
+-   [Row level security](../../admin/data_security/about_row_security.html)  

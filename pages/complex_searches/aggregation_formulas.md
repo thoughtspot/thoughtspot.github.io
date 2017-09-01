@@ -21,7 +21,7 @@ Formulas can be broken down into two types:
 
 You can tell which formulas are aggregation formulas by looking at the **Formula Assistant**. Aggregation formulas have their own section.
 
- ![](../../images/formula_asst_aggregate.png "Aggregation formulas in the Formula Assistant")
+ ![](/pages/images/formula_asst_aggregate.png "Aggregation formulas in the Formula Assistant")
 
 ## Advanced aggregation formulas
 
@@ -60,7 +60,7 @@ profit / sales
 
 But if you use that as your formula, you won't get the expected calculation. Why? It's because the formula will be evaluated in this order: For each row, divide profit by sales and then total up all the results. As you can see, the results do not look like gross margin values, which should be between 0 and 1.
 
- ![](../../images/formula_gross_margin_no_sum.png "Aggregated search with a division formula")
+ ![](/pages/images/formula_gross_margin_no_sum.png "Aggregated search with a division formula")
 
 Instead, you'd need to use a formula that uses the order of operations you want:
 
@@ -70,7 +70,7 @@ sum (profit) / sum (sales)
 
 Now the result is as expected, because the formula totals the profits for all rows, and then divides that by the total of sales for all rows, returning an average gross margin:
 
- ![](../../images/formula_gross_margin_sum.png "Aggregated search with a corrected division formula")
+ ![](/pages/images/formula_gross_margin_sum.png "Aggregated search with a corrected division formula")
 
 -   **[About cumulative formulas](../../pages/complex_searches/about_cumulative_formulas.html)**  
 Cumulative formulas are aggregate formulas that allow you to calculate the average, max, min, or sum or your data over time, optionally grouped by an attribute (like region or department).

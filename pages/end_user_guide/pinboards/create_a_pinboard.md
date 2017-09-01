@@ -16,15 +16,15 @@ To create a pinboard:
 
 1.   Click on **Pinboards**, on the top navigation bar. 
 
-     ![](../../../shared/conrefs/../../images/click_pinboards_icon.png "Pinboards") 
+     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards") 
 
 2.   Click **+ New Pinboard** on the pinboards list page. 
 
-     ![](../../../images/add_new_pinboard.png "New Pinboard button") 
+     ![](/pages/images/add_new_pinboard.png "New Pinboard button") 
 
 3.   In the New Pinboard dialog box, give your pinboard a name and description. Then click **Create**. 
 
-     ![](../../../images/new_pinboard.png "New Pinboard menu") 
+     ![](/pages/images/new_pinboard.png "New Pinboard menu") 
 
 
 **Parent topic:** [About pinboards](../../../pages/end_user_guide/pinboards/about_pinboards.html)

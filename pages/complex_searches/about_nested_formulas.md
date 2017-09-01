@@ -16,7 +16,7 @@ In addition, these formulas have dependency awareness, which ensure that you do 
 
 **Note:** There is no limit to the number of nestings you can create.
 
- ![](../../images/nested_formulas_example.png "formula1 nested in formula2") 
+ ![](/pages/images/nested_formulas_example.png "formula1 nested in formula2") 
 
 **Parent topic:** [About formulas in searches](../../pages/complex_searches/add_formula_to_search.html)
 

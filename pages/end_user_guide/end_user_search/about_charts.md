@@ -24,7 +24,7 @@ You can choose from a large number of chart types in ThoughtSpot. Each chart typ
 
 You can change the chart type of your answer by clicking **Change Visualization**.
 
- ![](../../../images/chart_type_icons.png "ThoughtSpot chart types")
+ ![](/pages/images/chart_type_icons.png "ThoughtSpot chart types")
 
 **Note:** Some chart types may be unavailable for you to select depending on the columns of your search. For example, if your search does not contain at least one geographical column then you will not be able to select any of the geo chart types. Unavailable chart types are grayed out. Hovering over one will tell you what columns are needed before you can choose it.
 

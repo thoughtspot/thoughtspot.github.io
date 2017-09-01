@@ -1,9 +1,9 @@
 ---
 title: [Understand backup/snapshot schedules]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Explains how schedules and gives examples."
 sidebar: mydoc_sidebar
 ---
 You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic backup policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section useful for understanding how to understand existing schedules and how to configure new schedules.
@@ -35,23 +35,9 @@ schedule {
 
 The `schedule` has the following components:
 
-| `period`
-
- | Specifies the frequency in the choosen `unit`. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`.
-
- |
-| `retention_policy`
-
- | Specifies retention intervals. Retention is on a first-in-first-out (FIFO) basis. So, the oldest result is always discarded. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`.
-
- You can specify multiple retention buckets and they can have different retention policies.
-
- |
-| `offset_minutes_from_sunday_midnight`
-
- | Determines the minute within the hour you'd like execution to start. Setting this to zero is equivalent to midnight.
-
- |
+| `period` | Specifies the frequency in the choosen `unit`. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`.|
+| `retention_policy` | Specifies retention intervals. Retention is on a first-in-first-out (FIFO) basis. So, the oldest result is always discarded. You can specify the `unit` as `MINUTE`, `HOUR`, or `DAY`. You can specify multiple retention buckets and they can have different retention policies.|
+| `offset_minutes_from_sunday_midnight` | Determines the minute within the hour you'd like execution to start. Setting this to zero is equivalent to midnight. |
 
 ## Work through an example schedule
 
@@ -162,5 +148,3 @@ What if you changed the `period` frequncy to every 2 hours? What would you have 
 |1|...|12| |14| |16| |18R| |20R| |22R| |24R|
 
 As you can see, when defining a policy it can be helpful to graphically represent the frequency you configure. Then, determine which time blocks are important to retain before determining your retention bucket.
-
-**Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)

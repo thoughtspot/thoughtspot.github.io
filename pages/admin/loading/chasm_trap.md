@@ -37,7 +37,7 @@ The following limitations on chasm trap schemas will produce a red bar error in 
 
 -   **Show underlying data** does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
 -   When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--   [Legacy Row Level Security](../data_security/about_legacy_row_security.html#) does not work with chasm trap schemas. The newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) must be used.
+-   [Legacy Row Level Security](../data_security/legacy_row_security.html#) does not work with chasm trap schemas. The newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) must be used.
 
 ### Behavior
 

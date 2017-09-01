@@ -1,9 +1,8 @@
 ---
 title: [Get logs]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.
@@ -81,5 +80,3 @@ The above command collects all system and all orion logs, but excludes hadoop (h
 
 -   **[Upload logs to ThoughtSpot Support](../../admin/troubleshooting/upload_logs_egnyte.html)**  
 ThoughtSpot Support uses a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.
-
-**Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)

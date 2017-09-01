@@ -1,6 +1,6 @@
 ---
 title: [Data loading too slowly]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -12,24 +12,21 @@ The data version is the number of loads that have been historically applied to a
 
 There are a few steps you can take to check for a high data version issue and fix it. To improve data loading speed:
 
-1.   Run the following command to find the number of tables that are building and their names
+1. Run the following command to find the number of tables that are building and their names
 
     ```
     tscli cluster status --mode table
     ```
 
-2.   You may notice that a few small tables are taking up a lot of time to be built. However, this could simply be due to the deceivingly large size of the table. There is also the chance it could be due to a high data version issue. In order to determine if this is a high data version issue, check the size of the table by running the following command:
+2. You may notice that a few small tables are taking up a lot of time to be built. However, this could simply be due to the deceivingly large size of the table. There is also the chance it could be due to a high data version issue. In order to determine if this is a high data version issue, check the size of the table by running the following command:
 
     ```
     echo 'show statistics for server;' | tql
     ```
 
-3.   If there is a large number of rows in the table, proceed to shard the table.
-4.   If the table has a small number of rows, then the slow loading speed is caused by a high data version issue, and you do not have to shard the table. Use the compact table functionality to trim the table down to its actual size:
+3. If there is a large number of rows in the table, proceed to shard the table.
+4. If the table has a small number of rows, then the slow loading speed is caused by a high data version issue, and you do not have to shard the table. Use the compact table functionality to trim the table down to its actual size:
 
     ```
     tql> compact table <table name>;
     ```
-
-
-**Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)

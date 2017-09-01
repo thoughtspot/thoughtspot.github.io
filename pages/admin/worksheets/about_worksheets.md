@@ -1,13 +1,17 @@
 ---
-title: [Simplify searching with worksheets]
+title: [Simplify search with worksheets]
 tags:
 keywords: tbd
 last_updated: tbd
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
 ---
-A worksheet groups multiple related tables together in a logical way. After modeling the data, create worksheets to make searching easier.
-You might use a worksheet for these reasons:
+
+After modeling the data, create worksheets to make searching easier. For example, a sales executive might need to search for information about retail sales. The required data could be contained in several tables (sales, customers, products, stores, etc.), with foreign key relationships between them. An administrator who is familiar with the data model can create a retail sales worksheet, that combines all of the related fact and dimension tables into a single, easy-to-use view, and share it with the sales executive. This provides access to the data without requiring an understanding of how it is structured.
+
+## Guidelines for worksheets
+
+Users are often unfamiliar with tables and how they are related to one another. A worksheet groups multiple related tables together in a logical way.  You might use a worksheet for these reasons:
 
 -   To pre-join multiple tables together.
 -   To give a user or group access to only part of the underlying data.
@@ -15,9 +19,8 @@ You might use a worksheet for these reasons:
 -   To rename columns to make the data easier to search.
 -   To build in a specific filter or aggregation.
 
-Users are often unfamiliar with tables and how they are related to one another. For example, a sales executive might need to search for information about retail sales. The required data could be contained in several tables (sales, customers, products, stores, etc.), with foreign key relationships between them. An administrator who is familiar with the data model can create a retail sales worksheet, that combines all of the related fact and dimension tables into a single, easy-to-use view, and share it with the sales executive. This provides access to the data without requiring an understanding of how it is structured.
 
-You will typically create one worksheet for each set of fact and dimension tables. For example, you may have a sales fact table and an inventory fact table. Each of these fact tables shares common dimensions like date, region, and store. In this scenario, you would create two worksheets: sales and inventory. The following diagram depicts the workflow for creating the sales worksheet.
+Typically, you create one worksheet for each set of fact and dimension tables. For example, you may have a sales fact table and an inventory fact table. Each of these fact tables shares common dimensions like date, region, and store. In this scenario, you would create two worksheets: sales and inventory. The following diagram depicts the workflow for creating the sales worksheet.
 
 ![](../../images/workflow_create_worksheet.png)
 

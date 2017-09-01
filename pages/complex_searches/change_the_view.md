@@ -14,7 +14,7 @@ To change the view of your answer:
 
 1.   While viewing your answer, toggle between the two views by clicking **Change Visualization** and selecting either table or a chart type. 
 
-     ![](../../images/toggle_between_views.png "Toggle between the two views") 
+     ![](/pages/images/toggle_between_views.png "Toggle between the two views") 
 
 
 **Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)

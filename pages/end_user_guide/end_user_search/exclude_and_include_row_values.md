@@ -14,7 +14,7 @@ To exclude or include row values:
 
 1.   Right click on the visualization or table cell of interest, and select **Exclude "value"** or **Include "value"** if available. 
 
-     ![](../../../images/exclude.png "Exclude value option") 
+     ![](/pages/images/exclude.png "Exclude value option") 
 
 
 **Parent topic:** [Other search actions](../../../admin/complex_searches/search_actions.html)

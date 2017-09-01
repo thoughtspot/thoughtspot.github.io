@@ -16,11 +16,11 @@ To show data labels:
 
 1.   While viewing your answer as a chart, click **Edit chart configuration**. 
 
-     ![](../../../images/edit_chart_configuration_bar.png "Edit chart configuration icon") 
+     ![](/pages/images/edit_chart_configuration_bar.png "Edit chart configuration icon") 
 
 2.   Select **Show Data Labels**. 
 
-     ![](../../../images/show_data_labels.png "Toggle on Show Data Labels") 
+     ![](/pages/images/show_data_labels.png "Toggle on Show Data Labels") 
 
 
 **Parent topic:** [Change the chart](../../../pages/end_user_guide/end_user_search/change_the_chart.html)

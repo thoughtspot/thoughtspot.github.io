@@ -1,14 +1,18 @@
 ---
-title: [About the worksheet join rule with Legacy Row Level Security]
-tags: 
+title: [Legacy RLS with the join rule]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Legacy Row Level Security (RLS) is a deprecated feature. "
 sidebar: mydoc_sidebar
 ---
-When working with worksheets and Legacy Row Level Security, you need to understand how joins are applied. This section gives some examples to explain the interaction between these two concepts.
 
-This section applies only to the older [Legacy Row Level Security](../data_security/about_legacy_row_security.html#). If you are using the newer, [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) (recommended), see [About the worksheet join rule with Rule-Based Row Level Security](joins_and_RLS_rule_based.html#). If your schema includes any [chasm traps](../loading/chasm_trap.html#), you must use the newer Rule-Based Row Level Security.
+{% include note.html content="Starting in release 3.3, if you have existing legacy Row Level Security (RLS) built on a chasm trap schema, you'll need to migrate to the new row level security before you can use them anymore. If you were still using Legacy Row Level Security, after upgrading to 3.3.x, you cannot access any of those worksheets and a message advising you to migrate to the newer Rule-Based RLS displays.  
+<br>
+If you are using the newer, [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) (recommended), see [How the worksheet join rule works](progressive_joins.html#)." %}
+
+When working with worksheets and Legacy RLS, you need to understand how joins are applied. This section gives some examples to explain the interaction between these two concepts.
+
 
 ## Worksheet schemas and the root table
 
@@ -55,9 +59,3 @@ Assume the table Departments has row level security applied, so that department 
 ## Example 4: Progressive joins when a table in the join path has row level security
 
 Assume now that the table Products has row level security applied, so that buyers could only see the products they order. If we did a search on the tables Departments and Warehouses, **Apply all joins** would be used, so the Products row level security would apply. The join path would be Join 1, Join 2, Join 4, and Join 5. This join path takes us through the Products table, which explains why its row level security would affect the search results, even though no columns from the Products table are included in the search.
-
-## Chasm trap
-
-If you have a worksheet that includes a [chasm trap](../loading/chasm_trap.html#), you cannot use the Legacy Row Level Security. You must migrate your row level security settings to use [Rule-Based Row Level Security](../data_security/new_row_level_security.html#).
-
-**Parent topic:** [How the worksheet join rule works](../../admin/worksheets/progressive_joins.html)

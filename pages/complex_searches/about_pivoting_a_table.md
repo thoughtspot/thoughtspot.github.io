@@ -12,22 +12,22 @@ Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating
 
 Previously, ThoughtSpot used a pivot keyword to select which fields can be columns and which can be rows, thus moving columns to be rows and vice versa. Now, the pivot table is a chart type.
 
- ![](../../images/pivot_chart_example.png "Pivot table chart type") 
+ ![](/pages/images/pivot_chart_example.png "Pivot table chart type") 
 
 Choose **Pivot Table** under Select Chart Type to view your search as a pivot table. Add rows, measures, and columns to the search bar and restructure your table by moving these values under **Configure Chart**or by dragging and dropping them.
 
- ![](../../images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns") 
+ ![](/pages/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns") 
 
 Some additional details about pivot tables include:
 
 -   Pivot tables show the grand totals for columns and rows.
 -   You can toggle on the Heatmap mode found under Configuration Options to add color coordination to your data.
 
-     ![](../../images/pivot_table_heatmap_mode.png "Heatmap mode enabled") 
+     ![](/pages/images/pivot_table_heatmap_mode.png "Heatmap mode enabled") 
 
 -   Click a column or row to expand it. Additionally, you can expand or collapse all by right clicking the arrow on the top left of a cell.
 
-     ![](../../images/pivot_table_expand_collapse_all.png "Expand or collapse all option") 
+     ![](/pages/images/pivot_table_expand_collapse_all.png "Expand or collapse all option") 
 
 -   When you pin a pivot table to a pinboard, it will retain your expansion settings.
 

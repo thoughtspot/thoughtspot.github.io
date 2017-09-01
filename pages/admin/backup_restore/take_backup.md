@@ -1,17 +1,16 @@
 ---
 title: [Create a manual backup]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 Use this procedure when you want to manually create a backup. If you would like to restore from a backup, contact ThoughtSpot Support.
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
-1.   [Log in to the Linux shell using SSH](../setup/login_console.html#).
-2.   [Create a manual snapshot](take_snapshot.html) or find a snapshot you want to use. To find a snapshot you want to back up use the following command:
+1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+2. [Create a manual snapshot](take_snapshot.html) or find a snapshot you want to use. To find a snapshot you want to back up use the following command:
 
     ```
     $ tscli snapshot ls
@@ -31,7 +30,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
     ...
     ```
 
-3.   Make sure you have enough room on the target disk.
+3. Make sure you have enough room on the target disk.
 
     In addition to the size of the snapshot, you will need 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the `df` command to check disk size.
 
@@ -39,7 +38,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
     $ df -h
     ```
 
-4.   Create the backup, designating the [type of backup](backups_and_snapshots.html#), the snapshot name, and a directory:
+4. Create the backup, designating the [type of backup](backups_and_snapshots.html#), the snapshot name, and a directory:
 
     Choose the [mode of backup](backups_and_snapshots.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name
 
@@ -57,6 +56,3 @@ You create a manual backup from an existing snapshot. So, you must identify an e
     ```
     $ tscli backup ls
     ```
-
-
-**Parent topic:** [Work with backups](../../admin/backup_restore/backups_and_snapshots.html)

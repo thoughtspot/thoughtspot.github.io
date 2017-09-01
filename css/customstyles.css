@@ -130,7 +130,9 @@ table {
     max-width: 90%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
-    table-layout: fixed;
+    table-layout: auto;
+    column-width: 50px;
+    word-break: keep-all;
 }
 
 table > thead > tr > th,

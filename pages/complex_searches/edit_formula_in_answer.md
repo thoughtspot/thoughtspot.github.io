@@ -16,15 +16,15 @@ Anyone who has edit privileges on an answer can also edit any formulas it contai
 2.   Scroll down to the bottom of the **Columns** listing. You will see a data source called **Formulas**. 
 3.   Expand **Formulas**, and you'll see a list of all the formulas in this answer. 
 
-     ![](../../images/edit_formula_in_answer.png "Formulas section expanded to show formulas in the answer") 
+     ![](/pages/images/edit_formula_in_answer.png "Formulas section expanded to show formulas in the answer") 
 
 4.   Click the edit icon next to the formula name. 
 
-     ![](../../images/formula_edit_icon.png "The edit formula icon") 
+     ![](/pages/images/formula_edit_icon.png "The edit formula icon") 
 
 5. Type your formula in the Formula Builder. 
 
-     ![](../../shared/conrefs/../../images/formula_builder.png "Use the Formula Builder") 
+     ![](../../shared/conrefs//pages/images/formula_builder.png "Use the Formula Builder") 
 
     **Note:** Formulas elements are color coded by type and can include the formula operators and functions​ (blue), the names of columns (purple)​, and/or constants​ (black).
 

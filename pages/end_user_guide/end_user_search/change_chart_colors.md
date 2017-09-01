@@ -16,19 +16,19 @@ To change the chart colors:
 
 1.   While viewing your answer as a chart, click **Edit chart configuration** on the right. 
 
-     ![](../../../images/edit_chart_configuration_bar.png "Edit chart configuration icon") 
+     ![](/pages/images/edit_chart_configuration_bar.png "Edit chart configuration icon") 
 
 2.   Make sure you have a column in the **Legend** field. 
 
-     ![](../../../images/legend_field.png "Legend field") 
+     ![](/pages/images/legend_field.png "Legend field") 
 
 3.   On the chart, click the color icon of the legend value you would like to change the color of. 
 
-     ![](../../../images/legend.png "Legend values list") 
+     ![](/pages/images/legend.png "Legend values list") 
 
 4.   Use the color selector to choose a new color to represent that legend value. 
 
-     ![](../../../images/choose_legend_color.png "Legend color template") 
+     ![](/pages/images/choose_legend_color.png "Legend color template") 
 
 5. Click outside of the selector to apply your change. 
 

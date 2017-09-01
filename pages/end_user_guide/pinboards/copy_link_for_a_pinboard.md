@@ -18,24 +18,24 @@ To copy the link for a pinboard:
 
 1.   Click on **Pinboards**, on the top navigation bar. 
 
-     ![](../../../shared/conrefs/../../images/click_pinboards_icon.png "Pinboards") 
+     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards") 
 
 2.   On the pinboard list page, click the pinboard you would like to get a link for. 
 3.   Click **Actions** and select **Copy link**. 
 
-     ![](../../../images/copy_pinboard_link.png "Copy pinboard link option") 
+     ![](/pages/images/copy_pinboard_link.png "Copy pinboard link option") 
 
 4.   Copy the pinboard link. The highlighted portion is the pinboard ID. 
 
-     ![](../../../images/copy_link_pinboard.png "Copy pinboard link") 
+     ![](/pages/images/copy_link_pinboard.png "Copy pinboard link") 
 
 5. To copy an individual visualization link, click **Copy link** under the dropdown menu of the visualization you would like to get a link for. 
 
-     ![](../../../images/copy_link_of_a_visualization.png "Copy visualization link option") 
+     ![](/pages/images/copy_link_of_a_visualization.png "Copy visualization link option") 
 
 6.   Copy the visualization link. The highlighted portion is the visualization ID. 
 
-     ![](../../../images/copy_link_viz_pinboard_part.png "Copy visualization link") 
+     ![](/pages/images/copy_link_viz_pinboard_part.png "Copy visualization link") 
 
 
 **Parent topic:** [Other pinboard actions](../../../pages/end_user_guide/pinboards/pinboard_actions.html)

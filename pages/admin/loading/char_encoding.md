@@ -1,9 +1,8 @@
 ---
 title: [Characters not displaying correctly]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 Your CSV files are more likely to load smoothly if they are encoded with UTF-8. If you're having problems with some characters rendering incorrectly, you can convert the files to UTF-8 encoding before loading the data.
@@ -20,14 +19,12 @@ Instead of displaying correctly like this:
 
 To encode your data as UTF-8:
 
-1.   On Windows, open your CSV file in Notepad. Save the file as CSV with the Unicode option.
-2.   On Linux or MacOS, issue a command like:
+1. On Windows, open your CSV file in Notepad. Save the file as CSV with the Unicode option.
+2. On Linux or MacOS, issue a command like:
 
     ```
     $ iconv -f -t UTF-8 <in_file>.csv > <out_file>.csv
     ```
 
-3.   Reload the data.
-4.   Attempt to import it again.
-
-**Parent topic:** [About troubleshooting](../../admin/troubleshooting/troubleshooting_intro.html)
+3. Reload the data.
+4. Attempt to import it again.

@@ -14,16 +14,16 @@ Making a copy of an answer allows you to make your own edits without overwriting
 
 1.   Click on **Answers**, on the top navigation bar. 
 
-     ![](../../../images/answers_icon.png "Answers") 
+     ![](/pages/images/answers_icon.png "Answers") 
 
 2.   On the answer list page, click the answer you would like to copy. 
 3.   Click **Actions** and select **Make a copy**. 
 
-     ![](../../../images/copy_an_answer.png "Make a copy of the answer") 
+     ![](/pages/images/copy_an_answer.png "Make a copy of the answer") 
 
 4.   Give your answer a new name and description. Then click **Save**. 
 
-     ![](../../../images/name_your_pinboard_copy.png "Name and save your answer copy") 
+     ![](/pages/images/name_your_pinboard_copy.png "Name and save your answer copy") 
 
 
 **Parent topic:** [Other search actions](../../../admin/complex_searches/search_actions.html)

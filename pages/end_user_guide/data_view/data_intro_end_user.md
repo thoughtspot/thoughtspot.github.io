@@ -14,11 +14,11 @@ Use the filters at the top of the page to find the data you are interested in. C
 
 From the **Data** screen, you can also delete or apply stickers to tables and data sources in bulk by selecting them and clicking the appropriate action button.
 
- ![](../../../images/manage_data_page.png "Data page") 
+ ![](/pages/images/manage_data_page.png "Data page") 
 
 There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You will most likely only see worksheets and user uploaded sources. These are the most commonly used data sources for searching.
 
- ![](../../../images/types_of_data_sources_table.png "Types of Data Sources") 
+ ![](/pages/images/types_of_data_sources_table.png "Types of Data Sources") 
 
 -   **[Generate CSV files with the data to be loaded](../../../admin/loading/generate_flat_file.html)**  
 The first step in loading data is to obtain or create one or more flat files that contain the data to be loaded into ThoughtSpot.

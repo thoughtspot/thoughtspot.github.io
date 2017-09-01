@@ -12,7 +12,7 @@ The geo bubble chart displays country, county, point, state, and zipcode data on
 
 Geo bubble charts, like bubble charts, display the value of the measure by the size of the bubble. Zip code data makes the most sense for geo bubble charts.
 
- ![](../../../images/geo_bubble_chart_example.png "Geo bubble chart example") 
+ ![](/pages/images/geo_bubble_chart_example.png "Geo bubble chart example") 
 
 Your search needs one geographical column or a pair of latitude and longitude columns to be represented as a geo bubble chart.
 
