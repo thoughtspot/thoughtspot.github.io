@@ -1,16 +1,12 @@
 ---
-title: [elephant]
+title: [Search using growth over time]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can show growth over time by using the growth of keyword in your search. "
 sidebar: mydoc_sidebar
 ---
-# Search using growth over time
-
-You can show growth over time by using the "growth of" keyword in your search. This keyword compares the data from different date periods, and returns a percentage of growth.
-
-To search using growth over time:
+The `growth of` keyword compares the data from different date periods, and returns a percentage of growth. To search using growth over time:
 
 1. Type growth of into the search bar, and choose a measure you're interested in seeing the growth of.
 

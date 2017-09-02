@@ -1,20 +1,17 @@
 ---
-title: [elephant]
-tags: 
+title: [Refine a search with a worksheet]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "If you want to search on top of another search, try saving your search as a worksheet. Then, you can use the saved worksheet as a data source for a new search."
 sidebar: mydoc_sidebar
 ---
-# About worksheets from searches
 
-If you want to do an advanced search that involves what is essentially a search on top of another search, try saving your search as a worksheet. Then you can use the saved worksheet as a data source for a new search.
+Worksheets can be created from tables or from searching. You can also create a worksheet from a search. This is an advanced form of searching. A worksheet created from a search is called an _aggregated worksheet_. Aggregated worksheets are effectively the same as any worksheet.
 
-## Introduction to worksheets from searches
+When you do a search on a data source, ThoughtSpot is only able to aggregate one column by one other column. Because of this, you may come across searches you can't do in one pass, because they are essentially nested queries. But you can create the equivalent of nested queries using an aggregated worksheet, which is essentially an answer that you save as a worksheet. Then you can use that worksheet just like any other data source. You can even link it to other sources by defining a relationship. When you save an answer as a worksheet, and then use it as a source in a new search, it is similar to doing a nested query in SQL, only much easier to create.
 
-Although a worksheet created from a search is effectively the same as any worksheet, we'll call it an "aggregated worksheet" here to avoid confusion. When you do a search on a data source, ThoughtSpot is only able to aggregate one column by one other column. Because of this, you may come across searches you can't do in one pass, because they are essentially nested queries. But you can create the equivalent of nested queries using an aggregated worksheet, which is essentially an answer that you save as a worksheet. Then you can use that worksheet just like any other data source. You can even link it to other sources by defining a relationship. When you save an answer as a worksheet, and then use it as a source in a new search, it is similar to doing a nested query in SQL, only much easier to create.
-
-In order to create a worksheet from a search, you must belong to a group that has the privilege **Has administration privileges** or **Can Manage Data**. If you are not able to create aggregated worksheets, contact your administrator and request the **Can Manage Data** privilege.
+To create a worksheet from a search, you must belong to a group that has the privilege **Has administration privileges** or **Can Manage Data**. If you are not able to create aggregated worksheets, contact your administrator and request the **Can Manage Data** privilege.
 
 ## Aggregated worksheet workflow
 
@@ -39,8 +36,3 @@ This procedure walks you through creating a worksheet from a search.
 After creating a worksheet from a search (also called an aggregated worksheet) and linking it to related data, you're ready to create your new search.
 -   **[Worksheet from a search example scenarios](../../pages/complex_searches/more_example_scenarios.html)**  
 Here are three common examples of when you would need to use aggregated worksheets.
-
-**Parent topic:** [About search](../../pages/end_user_guide/end_user_search/search.html)
-
-**Parent topic:** [Advanced searches topics](../../pages/complex_searches/advanced_searches_intro.html)
-

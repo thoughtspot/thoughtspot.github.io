@@ -451,7 +451,7 @@ entries:
         - title: Search suggestions
           url: /pages/end_user_guide/end_user_search/recent_searches.html
           output: web
-        - title: Column types and search results
+        - title: Search results and column types
           url: /pages/end_user_guide/end_user_search/about_attributes_and_measures.html
           output: web
         - title: Last data refresh time
@@ -460,6 +460,18 @@ entries:
       - title: Results that are tables
         url: /pages/end_user_guide/end_user_search/about_tables.html
         output: web
+      - levelThreeTitle: Use keywords in search
+        output: web
+        levelThreeItems:
+        - title: Overview of keyword searchess
+          url: /pages/complex_searches/about_keyword_searches.html
+          output: web
+        - title: Search using growth over time
+          url: /pages/complex_searches/search_using_growth_over_time.html
+          output: web
+        - title: Proximity searches "near" and "farther than"
+          url: /pages/admin/features/proximity_search.html
+          output: web
       - levelThreeTitle: Work with filters
         output: web
         levelThreeItems:
@@ -478,20 +490,8 @@ entries:
         - title: Delete a filter
           url: /pages/end_user_guide/end_user_search/delete_a_filter.html
           output: web
-        - title: About filtering on null, blank, or empty values
+        - title: Filter on null, blank, or empty values
           url: /pages/complex_searches/about_filters_for_null.html
-          output: web
-      - levelThreeTitle: Work with workseets
-        output: web
-        levelThreeItems:
-        - title: Understand worksheets
-          url: /pages/complex_searches/about_query_on_query.html
-          output: web
-        - title: Save a search as a worksheet
-          url: /pages/complex_searches/create_aggregated_worksheet.html
-          output: web
-        - title: Create a search from a worksheet
-          url: /pages/complex_searches/do_query_on_query.html
           output: web
       - levelThreeTitle: Other search actions
         output: web
@@ -685,37 +685,21 @@ entries:
       - title: Formulas for chasm traps
         url: /pages/complex_searches/about_formula_support_for_chasm_trap_schemas.html
         output: web
-    - levelTwoTitle: Advanced keyword searches
+    - levelTwoTitle: Work with worksheets
       output: web
       levelTwoItems:
-      - title: About keyword searches
-        url: /pages/complex_searches/about_keyword_searches.html
-        output: web
-      - title: Search using top keyword
-        url: /pages/advanced_searches_guide/keywords/search_using_top_keyword.html
-        output: web
-      - title: Search using growth over time
-        url: /pages/complex_searches/search_using_growth_over_time.html
-        output: web
-      - title: Geographical proximity
-        url: /pages/poc_features/model_geo_data_3.4_with_near_and_farther_than.html
-        output: web
-    - levelTwoTitle: Advanced worksheets
-      output: web
-      levelTwoItems:
-      - title: About worksheets from searches
+      - title: Understand worksheets
         url: /pages/complex_searches/about_query_on_query.html
-        output: web
-      - title: Worksheet from a search example scenarios
-        url: /pages/complex_searches/more_example_scenarios.html
         output: web
       - title: Save a search as a worksheet
         url: /pages/complex_searches/create_aggregated_worksheet.html
         output: web
-      - title: Create a search from a search saved as a worksheet
+      - title: Create a search from a worksheet
         url: /pages/complex_searches/do_query_on_query.html
         output: web
-
+      - title: Worksheet from a search example scenarios
+        url: /pages/complex_searches/more_example_scenarios.html
+        output: web
     - levelTwoTitle: Advanced pinboards
       output: web
       levelTwoItems:

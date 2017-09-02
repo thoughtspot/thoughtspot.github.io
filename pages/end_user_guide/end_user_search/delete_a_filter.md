@@ -1,27 +1,16 @@
 ---
-title: [elephant]
-tags: 
+title: [Delete a filter]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can delete a filter from an answer to return to the original unfiltered search result.
+"
 sidebar: mydoc_sidebar
 ---
-# Delete a filter
+There are multiple ways to delete a filter. To delete a filter you can click the **x** on the filter term in the search bar.
 
-You can delete a filter from an answer to return to the original unfiltered search result.
+![](/pages/images/delete_filter_from%20search_bar.png "Delete the filter term from the search bar")
 
-There are multiple ways to delete a filter.
+You can also click the **x** on the filter bar above the answer.
 
-To delete a filter:
-
-1.   Click the **x** on the filter term in the search bar. 
-
-     ![](/pages/images/delete_filter_from%20search_bar.png "Delete the filter term from the search bar") 
-
-2.   You can also click the **x** on the filter bar above the answer. 
-
-     ![](/pages/images/delete_filter_from_filter_bar.png "Delete the filter term from the filter bar") 
-
-
-**Parent topic:** [About filters](../../../admin/complex_searches/about_filters.html)
-
+![](/pages/images/delete_filter_from_filter_bar.png "Delete the filter term from the filter bar")

@@ -60,6 +60,10 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
 -   One of the special [keywords](../end_user_reference/keyword_reference.html#) ThoughtSpot understands: like yesterday, \>, or contains
 
+## What does a search result in?
+
+Searches return a set of results in the form of a table or a chart. ThoughtSpot likes to call this set of results in response to a search an _answer_.
+An answer is the result of a single search. You can save an answer you want to work more on later, or just keep it for your personal use.  The **ANSWERS** tab is where you can view and then the your saved search results.  Answers are for you alone, but you can share them with others.
 
 ## Related information
 

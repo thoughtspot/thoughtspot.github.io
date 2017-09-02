@@ -1,13 +1,11 @@
 ---
-title: [elephant]
-tags: 
+title: ["Filter on null, blank, or empty values"]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Filtering on NULL and empty values is a special case. "
 sidebar: mydoc_sidebar
 ---
-# About filtering on null, blank, or empty values
-
 Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what's really going on with these types of values, and to get the filtering behavior you want.
 
 ## How NULL and blank values are displayed
@@ -24,7 +22,7 @@ Both of these types of values are represented as **\{blank\}**, but if you filte
 If you need to differentiate between NULL and blank values, you can [Add a formula](how_to_add_formula.html#) to make them appear differently in charts and tables. In this example, we'll use `<text_column>` to refer to the text column which contains both NULL and blank values:
 
 ```
-if ( strlen ( <text_column> ) = 0 ) then if ( isnull ( <text_column> ) ) then 'null' else 'empty' else <text_column> 
+if ( strlen ( <text_column> ) = 0 ) then if ( isnull ( <text_column> ) ) then 'null' else 'empty' else <text_column>
 ```
 
 This formula will show "null" where the value contained in the column is actually NULL. When the value is blank or empty, it will show up as "empty".
@@ -34,7 +32,7 @@ This formula will show "null" where the value contained in the column is actuall
 If you want to keep the same display format for NULL and blank values, but be able to filter on both using "\{blank\}", your [formula](how_to_add_formula.html#) will be slightly different. You can use a formula like:
 
 ```
-if ( strlen ( <text_column> ) = 0 ) then null else <text_column> 
+if ( strlen ( <text_column> ) = 0 ) then null else <text_column>
 ```
 
 Use the filter you created instead of the original text column in your search to get the result you desire.
@@ -43,7 +41,4 @@ Use the filter you created instead of the original text column in your search to
 
 After creating the above formula that fits what you want to do, you can filter on the formula column you created in the search bar by typing the value **\{blank\}**, which will act as a filter. Or you can filter by left clicking on a**\{blank\}** value in your search result table, then right clicking and selecting **Show only "\{Blank\}"**.
 
- ![](/pages/images/formula_null_empty_merge.png "Show only NULL and blank values") 
-
-**Parent topic:** [About filters](../../pages/complex_searches/about_filters.html)
-
+ ![](/pages/images/formula_null_empty_merge.png "Show only NULL and blank values")

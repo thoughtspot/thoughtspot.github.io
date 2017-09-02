@@ -106,7 +106,7 @@ sidebar: mydoc_sidebar
         -   [How the worksheet join rule works](admin_guide/worksheets/progressive_joins.html)
             -   [About the worksheet join rule with Rule-Based Row Level Security](admin_guide/worksheets/joins_and_RLS_rule_based.html)
             -   [About the worksheet join rule with Legacy Row Level Security](admin_guide/worksheets/joins_and_row_level_security.html)
-            -   [About aggregated worksheet and table joins](admin_guide/poc_features/about_aggregated_ws_and_table_joins.html)
+            -   [About aggregated worksheet and table joins](admin_guide/features/about_aggregated_ws_and_table_joins.html)
         -   [About formulas in worksheets](admin_guide/worksheets/about_formulas.html)
             -   [Create a formula in a worksheet](admin_guide/worksheets/create_formula.html)
     -   [Edit a worksheet](admin_guide/worksheets/edit_worksheet.html)

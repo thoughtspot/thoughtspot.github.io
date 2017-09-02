@@ -1,8 +1,12 @@
-# Geographical proximity keywords "near" and "farther than"
-
-The "near" and "farther than" keywords provide proximity searches. If your table contains Latitude and Longitude data, you can use these to do searches that find entities related to each other by location.
-
-First, you'll need to designate the longitude and latitude columns as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
+---
+title: [Proximity keywords near and farther than]
+tags:
+keywords: tbd
+last_updated: tbd
+summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
+sidebar: mydoc_sidebar
+---
+The "near" and "farther than" keywords provide proximity searches. First, you'll need to designate the longitude and latitude columns as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
 
 Columns that can be designated as "Geo" columns need to contain text (VARCHAR) data unless they contain latitude/longitude data. Latitude and longitude columns can contain numeric data (DOUBLE) or text.
 
@@ -24,7 +28,7 @@ the data source (worksheet or one of the tables) must contain a column of type l
 
 These keywords allow you to search with spatial filters on data contained in a table or worksheet which contains geo type columns with latitude/longitude data. This lets you search based on spherical distance. The distance is calculated as a straight-line distance (not road distance) radius using miles, kilometers, or meters from the central point. If not specified, the default is 10 km.
 
- ![](../../images/geospatial_search.png "Geospatial search on a geo area map") 
+ ![](../../images/geospatial_search.png "Geospatial search on a geo area map")
 
 **Note:** These keywords:
 
@@ -33,52 +37,13 @@ These keywords allow you to search with spatial filters on data contained in a t
 -   display a circle that represents your set distance on the geo charts when you filter on a GeoType column.
 -   are limited to 33 latitude/longitude pairs.
 
-1.   Find the **GeoType** for the column that contains the geographical data. 
-2.   Change the value to the appropriate GeoType, depending on the kind of data the column contains. 
+1. Find the **GeoType** for the column that contains the geographical data.
+2. Change the value to the appropriate GeoType, depending on the kind of data the column contains.
+3. If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
+    1. Change the **Type** or **ColumnType** to ATTRIBUTE.
+    2. Change **ADDITIVE** to NO/FALSE.
+4. Save your changes.
 
-    |GeoType|Description|Type: Example|
-    |-------|-----------|-------------|
-    |COUNTRY_REGION|Countries|    -   name: United States
-    -   long name: United States
-    -   name_sort: United States of America
-    -   abbreviation: U.S.A.
-    -   adm0_a3: USA
-    -   adm0_a3_is: USA
-    -   adm0_a3_us: USA
-    -   admin: United States of America
-    -   brk_a3: USA
-    -   brk_name: United States
-    -   formal_en: United States of America
-    -   iso_a2: US
-    -   iso_a3: USA
-    -   iso_n3: 840
-|
-    |COUNTY|Counties in the United States|     -   santa clara county
-    -   pike county, ohio
-    -   pike county, OH
- |
-    |STATE_PROVINCE|States in the United States|    -   name: California
-    -   US Postal Service abbreviation: CA
-|
-    |LATITUDE|Must be used with LONGITUDE|    -   37.421023
-    -   1.282911
-|
-    |LONGITUDE|Must be used with LATITUDE|    -   −122.142103
-    -   103.848865
-|
-    |ZIP_CODE|Zip codes and zip codes +4 in the United States|    -   po_name: MT MEADOWS AREA
-    -   ZIP: "00012"
-    -   zip2: 12
-|
-    |Other Sub-nation Regions|Administrative regions found in countries other than the United States|     -   bremen
-    -   normandy
-    -   west midlands
- |
+## List of geotypes
 
-3.   If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns: 
-    1.   Change the **Type** or **ColumnType** to ATTRIBUTE. 
-    2.   Change **ADDITIVE** to NO/FALSE. 
-4.   Save your changes. 
-
-**Parent topic:** [About keyword searches](../../pages/complex_searches/about_keyword_searches.html)
-
+{% include custom/geotypes.html %}

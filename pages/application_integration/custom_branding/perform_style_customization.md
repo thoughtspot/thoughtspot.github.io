@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -12,14 +12,14 @@ Make changes to the style of your ThoughtSpot interface in the **Style Customiza
 
 To re-brand the interface:
 
-1.   Log in to ThoughtSpot from a browser. 
-2.   Click on the **Admin** icon, on the top navigation bar. 
+1.   Log in to ThoughtSpot from a browser.
+2.   Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
 
-3.   In the **Admin** panel, click on **Style Customization**. 
+3.   In the **Admin** panel, click on **Style Customization**.
 
-     ![](../../images/style_customization.png "Style Customization menu") 
+     ![](../../images/style_customization.png "Style Customization menu")
 
     Once in the menu page, you can:
 
@@ -33,8 +33,6 @@ To re-brand the interface:
 
 -   **[Upload application logos](../../application_integration/custom_branding/upload_application_logos.html)**  
 You can replace the ThoughtSpot logo, wherever it appears in the ThoughtSpot web application, with your own company logo.
--   **[Set chart and table visualization fonts](../../application_integration/custom_branding/set_chart_and_table_visualization_fonts.html)**  
-You can add and edit fonts to customize the appearance of your charts and tables. Be careful though, since the interface may become unreadable depending on how you change the default font, font weight, or font style. It is therefore suggested that you use the default font settings.
 -   **[Choose a background color](../../application_integration/custom_branding/choose_background_color.html)**  
 You can change the background color to match with your company's theme. The custom background color is in effect when using the API to embed visualizations and pinboards.
 -   **[Select chart color palettes](../../application_integration/custom_branding/select_chart_color_palettes.html)**  
@@ -43,4 +41,3 @@ You can change the color palettes that are used to create your charts. Although 
 You can change the footer text to reflect your company's message.
 
 **Parent topic:** [About Style Customization](../../application_integration/custom_branding/about_style_customization.html)
-
