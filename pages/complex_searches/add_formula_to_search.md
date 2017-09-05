@@ -1,14 +1,12 @@
 ---
-title: [elephant]
-tags: 
+title: [Understand formulas in searches]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "To provide richer insights, you can add a formula to your search. "
 sidebar: mydoc_sidebar
 ---
-# About formulas in searches
-
-To provide richer insights, you can add a formula to your search. The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.
+The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.
 
 You can create a formula from directly within a search. If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet. Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.
 
@@ -32,7 +30,3 @@ Conditional formulas, or operators, allow you to apply if/then/else conditions i
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.
 -   **[About formula support for chasm trap schemas](../../pages/complex_searches/about_formula_support_for_chasm_trap_schemas.html)**  
 You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.
-
-**Parent topic:** [About search](../../pages/end_user_guide/end_user_search/search.html)
-
-**Parent topic:** [Advanced searches topics](../../pages/complex_searches/advanced_searches_intro.html)

@@ -498,30 +498,18 @@ entries:
         levelThreeItems:
         - title: Other search actions
           url: /pages/complex_searches/search_actions.html
-          output: web
-        - title: Change the view
+          output: pdf
+        - title: Change result display options
           url: /pages/complex_searches/change_the_view.html
-          output: web
-        - title: Sort your search
-          url: /pages/complex_searches/sort_your_search.html
-          output: web
-        - title: Change the date bucketing
-          url: /pages/end_user_guide/end_user_search/change_the_date_bucketing.html
           output: web
         - title: Show underlying data
           url: /pages/complex_searches/show_underlying_data.html
           output: web
-        - title: Drill down
+        - title: See the search behind a result
           url: /pages/complex_searches/drill_down.html
           output: web
-        - title: Exclude and include row values
-          url: /pages/end_user_guide/end_user_search/exclude_and_include_row_values.html
-          output: web
-        - title: Understand conditional formatting
-          url: /pages/end_user_guide/end_user_search/about_conditional_formatting.html
-          output: web
         - title: Apply conditional formatting to a table
-          url: /pages/end_user_guide/end_user_search/apply_conditional_formatting_in_tables.html
+          url: /pages/end_user_guide/end_user_search/apply_conditional_formatting.html
           output: web
         - title: Copy an answer
           url: /pages/end_user_guide/end_user_search/make_a_copy_of_an_answer.html
@@ -541,9 +529,6 @@ entries:
       - levelThreeTitle: Chart types
         output: web
         levelThreeItems:
-        - title: Introduction to chart types
-          url: /pages/end_user_guide/end_user_search/about_chart_types.html
-          output: web
         - title: Column charts
           url: /pages/end_user_guide/end_user_search/about_column_charts.html
           output: web
@@ -583,31 +568,19 @@ entries:
         - title: Funnel charts
           url: /pages/end_user_guide/end_user_search/about_funnel_charts.html
           output: web
-      - levelThreeTitle: Geo charts
-        output: web
-        levelThreeItems:
-        - title: About geo charts
+        - title: Geo charts
           url: /pages/end_user_guide/end_user_search/about_geo_charts.html
           output: web
-        - title: Geo area charts
-          url: /pages/end_user_guide/end_user_search/about_geo_area_charts.html
+        - title: Pivot table
+          url: /pages/complex_searches/about_pivoting_a_table.html
           output: web
-        - title: Geo bubble charts
-          url: /pages/end_user_guide/end_user_search/about_geo_bubble_charts.html
-          output: web
-        - title: Geo heatmap charts
-          url: /pages/end_user_guide/end_user_search/about_geo_heatmap_charts.html
-          output: web
-      - title: Pivoting a table
-        url: /pages/complex_searches/about_pivoting_a_table.html
-        output: web
       - levelThreeTitle: Changing a chart
         output: web
         levelThreeItems:
         - title: Change the chart
           url: /pages/end_user_guide/end_user_search/change_the_chart.html
-          output: web
-        - title: Reorder labels on the axis or legend
+          output: pdf
+        - title: Reorder the labels
           url: /pages/end_user_guide/end_user_search/reorder_values_on_the_x_axis.html
           output: web
         - title: Set the y-axis range
@@ -622,22 +595,13 @@ entries:
         - title: Show data labels
           url: /pages/end_user_guide/end_user_search/show_data_labels.html
           output: web
-        - title: oom into a chart
+        - title: Zoom into a chart
           url: /pages/end_user_guide/end_user_search/zoom_into_a_chart.html
           output: web
     - levelTwoTitle: Work with formulas
       output: web
       levelTwoItems:
       - title: Understand formulas
-        url: /pages/complex_searches/add_formula_to_search.html
-        output: web
-      - title: Add a formula to a search
-        url: /pages/complex_searches/how_to_add_formula.html
-        output: web
-      - title: View or edit a formula in a search
-        url: /pages/complex_searches/edit_formula_in_answer.html
-        output: web
-      - title: About formulas in searches
         url: /pages/complex_searches/add_formula_to_search.html
         output: web
       - title: Add a formula to a search

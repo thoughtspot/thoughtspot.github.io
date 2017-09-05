@@ -1,36 +1,27 @@
 ---
-title: [elephant]
-tags: 
+title: [About moving formulas]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
 ---
-# About moving formulas
-
-Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range.
-
 Each of the moving formulas accepts a measure, two integers to define the window, and one or more attributes. And each returns the aggregate of the measure over the given window. Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points.
 
 The moving formulas include:
 
-|Function|Description|Examples|
-|--------|-----------|--------|
-|moving_average|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the average of the measure over the given window. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(sales, 1, -1, date)".| -   `moving_average (revenue, 2, 1, customer region)`
+* `moving_average`, for example `moving_average (revenue, 2, 1, customer region)`
 
- |
-|moving_max|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the maximum of the measure over the given window. The attributes are the ordering columns used to compute the moving maximum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_max(sales, 1, -1, date)".| -   `moving_max (complaints, 1, 2, store name)`
+  Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the average of the measure over the given window. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, `1,1` will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_average(sales, 1, -1, date)`.
 
- |
-|moving_min|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the minimum of the measure over the given window. The attributes are the ordering columns used to compute the moving minimum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_min(sales, 1, -1, date)".| -   `moving_min (defects, 3, 1, product)`
+* `moving_max`, for example `moving_max (complaints, 1, 2, store name)`
 
- |
-|moving_sum|Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_sum(sales, 1, -1, date)".| -   `moving_sum (revenue, 1, 1, order date)`
+  Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the maximum of the measure over the given window. The attributes are the ordering columns used to compute the moving maximum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, `1,1` will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_max(sales, 1, -1, date)`.
 
- |
+* `moving_min`, for example `moving_min (defects, 3, 1, product)`
 
--   **[Calculate the moving average](../../pages/complex_searches/search_using_the_moving_function.html)**  
-You can use the moving formulas to compute a measure within a moving window of your data, usually defined by time.
+    Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the minimum of the measure over the given window. The attributes are the ordering columns used to compute the moving minimum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, `1,1` will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_min(sales, 1, -1, date)`.
 
-**Parent topic:** [About aggregate formulas](../../pages/complex_searches/aggregation_formulas.html)
+* `moving_sum`, for example `moving_sum (revenue, 1, 1, order date)`
 
+  Takes a measure, two integers to define the window to aggregate over, and one or more attributes. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, `1,1` will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_sum(sales, 1, -1, date)`.

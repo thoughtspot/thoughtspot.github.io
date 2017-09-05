@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 # Copy the link for a pinboard or visualization
 
-In pinboards, there is a copy link ​option that lets you copy the link to access the pinboard and visualizations directly.
+In pinboards, there is a copy link option that lets you copy the link to access the pinboard and visualizations directly.
 
 You can copy and paste the copied link to include in a presentation or spreadsheet, or email or Slack it to other people in your company. Note that when clicking the link, the person must be authenticated to ThoughtSpot to see the visualization (e.g. by logging in or LDAP).
 

@@ -1,16 +1,15 @@
 ---
-title: [elephant]
-tags: 
+title: [Line column charts]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "The line stacked column chart combines stacked column and line charts."
 sidebar: mydoc_sidebar
 ---
+The line column chart combines the column and line charts. Your search needs at least one attribute and two measures to be represented as a line column chart.
 
-The line column chart combines the column and line charts.
 
-
-## Line column charts
+## Understand line column charts
 
 Line column charts display one measure as a column chart and the other as a line chart. Each of these measures has its own y-axis.
 
@@ -20,11 +19,8 @@ You can choose to enable shared y-axis by clicking the link icon found under **E
 
  ![](/pages/images/lock_chart_y_axes.png "Enable shared y-axis")
 
-Your search needs at least one attribute and two measures to be represented as a line column chart.
 
 ## Line stacked column charts
-
-The line stacked column chart combines stacked column and line charts.
 
 This chart is similar to the line column chart, except that it divides its columns with an attribute in the legend. There are two y-axes, one for each measure.
 
@@ -33,5 +29,3 @@ This chart is similar to the line column chart, except that it divides its colum
 You can choose to enable shared y-axis by clicking the link icon found under **Edit chart configuration**.
 
  ![](/pages/images/lock_chart_y_axes.png "Enable shared y-axis")
-
-Your search needs at least two attributes and two measures to be represented as a line stacked column chart.

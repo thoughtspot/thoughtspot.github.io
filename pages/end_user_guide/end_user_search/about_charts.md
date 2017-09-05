@@ -1,18 +1,14 @@
 ---
 title: [Understand charts]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Charts display your search answer in a visual way."
 sidebar: mydoc_sidebar
 ---
-
-
-Charts display your search answer in a visual way.
-
 Your search needs at least [one attribute and one measure](about_attributes_and_measures.html#) to be presented as a chart. When you choose to display your answer as a chart, ThoughtSpot will assign it the best fit chart type.
 
-**Note:** Colors are maintained across searches within a session. For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type.
+{% include note.html content="Colors are maintained across searches within a session. For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type." %}
 
 You can choose from a large number of chart types in ThoughtSpot. Each chart type provides you with a different visualization for your answer.
 -   **[Change the chart](../../../pages/end_user_guide/end_user_search/change_the_chart.html)**  

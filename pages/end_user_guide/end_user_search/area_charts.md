@@ -1,6 +1,6 @@
 ---
 title: [Area Charts]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 The area chart is based on the line chart, but has filled in regions.
 
-## Area charts
+## Understand area charts
 
 Area charts display quantitative data graphically. The area between the x-axis and the line are colored in to help you compare different portions of the chart.
 
@@ -29,5 +29,3 @@ Stacked area charts plot the y-axis as a percentage by default. You can choose t
  ![](/pages/images/stacked_area_chart_on_example.png "Stacked area chart example: "Show Y-Axis as %" toggled on")
 
 Your search needs at least two attributes and one measure to be represented as a stacked area chart.
-
-**Parent topic:** [Area charts](../../../pages/end_user_guide/end_user_search/about_area_charts.html)

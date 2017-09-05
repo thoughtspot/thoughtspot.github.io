@@ -19,7 +19,7 @@ You can perform many of the same search actions on individual visualizations wit
 -   **[Copy a pinboard](../../../pages/end_user_guide/pinboards/copy_a_pinboard.html)**  
 You can make a copy of a pinboard if you would like to make edits without changing the original pinboard.
 -   **[Copy the link for a pinboard or visualization](../../../pages/end_user_guide/pinboards/copy_link_for_a_pinboard.html)**  
-In pinboards, there is a copy link ​option that lets you copy the link to access the pinboard and visualizations directly.
+In pinboards, there is a copy link option that lets you copy the link to access the pinboard and visualizations directly.
 -   **[Reset a visualization](../../../pages/end_user_guide/pinboards/reset_a_visualization.html)**  
 Resetting a visualization removes any changes you've made to its form.
 -   **[Reset the layout of a pinboard](../../../pages/end_user_guide/pinboards/reset_the_layout_of_a_pinboard.html)**  

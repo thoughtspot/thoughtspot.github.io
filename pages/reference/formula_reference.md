@@ -332,7 +332,7 @@ These functions can be used with text and numeric data types.
 -   `round (battingavg, 100)`
 
  |
-|safe_divide|Returns the result of dividing the first number by the second. If the second number is 0, returns 0 ​instead of NaN (not a number).| -   `safe_divide (12, 0) = 0`
+|safe_divide|Returns the result of dividing the first number by the second. If the second number is 0, returns 0 instead of NaN (not a number).| -   `safe_divide (12, 0) = 0`
 -   `safe_divide (total_cost, units)`
 
  |

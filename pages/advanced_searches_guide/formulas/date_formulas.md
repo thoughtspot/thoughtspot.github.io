@@ -1,95 +1,223 @@
 ---
-title: [elephant]
-tags: 
+title: [About date formulas]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Date formulas are useful when you want to compare data collected between two date periods."
 sidebar: mydoc_sidebar
 ---
-# About date formulas
+Date formulas allow you to apply date related functions to your formulas. The date functions include:
 
-Date formulas allow you to apply date related functions to your formulas.
-
-Date formulas are useful when you want to compare data collected between two date periods.
-
-The date functions include:
-
-|Function|Description|Examples|
-|--------|-----------|--------|
-|add_days|Returns the result of adding the specified number of days to the given date.| -   `add_days (01/30/2015, 5) = 02/04/2015`
--   `add_days (invoiced, 30)`
-
- |
-|date|Returns the date portion of a given date.| -   `date (home visit)`
-
- |
-|day|Returns the number (1-31) of the day for the given date.| -   `day (01/15/2014) = 15`
--   `day (date ordered)`
-
- |
-|day_number_of_week|Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.| -   `day_number_of_week (01/30/2015) = 6`
--   `day_number_of_week (shipped)`
-
- |
-|day_number_of_year|Returns the number (1-366) of the day in a year for the given date.| -   `day_number_of_year (01/30/2015) = 30`
--   `day_number_of_year (invoiced)`
-
- |
-|day_of_week|Returns the day of the week for the given date.| -   `day_of week (01/30/2015) = Friday`
--   `day_of_week (serviced)`
-
- |
-|diff_days|Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.| -   `diff_days (01/15/2014, 01/17/2014) = -2`
--   `diff_days (purchased, shipped)`
-
- |
-|diff_time|Subtracts the second date from the first date and returns the result in number of seconds.| -   `diff_time (01/01/2014, 01/01/2014) = -86,400`
--   `diff_time (clicked, submitted)`
-
- |
-|hour_of_day|Returns the hour of the day for the given date.| -   `hour_of_day (received)`
-
- |
-|is_weekend|Returns true if the given date falls on a Saturday or Sunday.| -   `is_weekend (01/31/2015) = true`
--   `is_weekend (emailed)`
-
- |
-|month|Returns the month from the given date.| -   `month (01/15/2014) = January`
--   `month (date ordered)`
-
- |
-|month_number|Returns the number (1-12) of the month for the given date.| -   `month_number (09/20/2014) = 9`
--   `month_number (purchased)`
-
- |
-|now|Returns the current timestamp.| -   `now ()`
-
- |
-|start_of_month|Returns the date for the first day of the month for the given date.| -   `start_of_month ( 01/31/2015 ) = Jan FY 2015`
--   `start_of_month (shipped)`
-
- |
-|start_of_quarter|Returns the date for the first day of the quarter for the given date.| -   `start_of_quarter ( 09/18/2015 ) = Q3 FY 2015`
--   `start_of_quarter (sold)`
-
- |
-|start_of_week|Returns the date for the first day of the week for the given date.| -   `start_of_week ( 06/01/2015 ) = 05/30/2015 Week`
--   `start_of_week (emailed)`
-
- |
-|start_of_year|Returns the date for the first day of the year for the given date.| -   `start_of_year ( 02/15/2015 ) = FY 2015`
--   `start_of_year (joined)`
-
- |
-|time|Returns the time portion of a given date.| -   `time (3/1/2002 10:32) = 10:32`
--   `time (call began)`
-
- |
-|year|Returns the year from the given date.| -   `year (01/15/2014) = 2014`
--   `year (date ordered)`
-
- |
-
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+   <caption xmlns="http://www.w3.org/1999/xhtml"><span class="tablecap"><span class="tablecap">Date functions for use in formulas</span></span></caption>
+   <colgroup>
+      <col style="width:25%"></col>
+      <col style="width:30%"></col>
+      <col style="width:30%"></col>
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr class="row">
+         <th>Function</th>
+         <th>Description</th>
+         <th>Examples</th>
+      </tr>
+   </thead>
+   <tbody class="tbody">
+      <tr class="row">
+         <td>add_days</td>
+         <td>Returns the result of adding the specified number of days to the given date.</td>
+         <td>
+            <ul>
+               <li><code>add_days (01/30/2015, 5) = 02/04/2015</code></li>
+               <li><code>add_days (invoiced, 30)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>date</td>
+         <td>Returns the date portion of a given date.</td>
+         <td>
+            <ul>
+               <li><code>date (home visit)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>day</td>
+         <td>Returns the number (1-31) of the day for the given date.</td>
+         <td>
+            <ul>
+               <li><code>day (01/15/2014) = 15</code></li>
+               <li><code>day (date ordered)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>day_number_of_week</td>
+         <td>Returns the number (1-7) of the day in a week for the given date with 1 being Monday
+            and 7 being Sunday.
+         </td>
+         <td>
+            <ul>
+               <li><code>day_number_of_week (01/30/2015) = 6</code></li>
+               <li><code>day_number_of_week (shipped)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>day_number_of_year</td>
+         <td>Returns the number (1-366) of the day in a year for the given date.</td>
+         <td>
+            <ul>
+               <li><code>day_number_of_year (01/30/2015) = 30</code></li>
+               <li><code>day_number_of_year (invoiced)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>day_of_week</td>
+         <td>Returns the day of the week for the given date.</td>
+         <td>
+            <ul>
+               <li><code>day_of week (01/30/2015) = Friday</code></li>
+               <li><code>day_of_week (serviced)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>diff_days</td>
+         <td>Subtracts the second date from the first date and returns the result in number of days,
+            rounded down if not exact.
+         </td>
+         <td>
+            <ul>
+               <li><code>diff_days (01/15/2014, 01/17/2014) = -2</code></li>
+               <li><code>diff_days (purchased, shipped)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>diff_time</td>
+         <td>Subtracts the second date from the first date and returns the result in number of
+            seconds.
+         </td>
+         <td>
+            <ul>
+               <li><code>diff_time (01/01/2014, 01/01/2014) = -86,400</code></li>
+               <li><code>diff_time (clicked, submitted)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>hour_of_day</td>
+         <td>Returns the hour of the day for the given date.</td>
+         <td>
+            <ul>
+               <li><code>hour_of_day (received)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>is_weekend</td>
+         <td>Returns true if the given date falls on a Saturday or Sunday.</td>
+         <td>
+            <ul>
+               <li><code>is_weekend (01/31/2015) = true</code></li>
+               <li><code>is_weekend (emailed)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>month</td>
+         <td>Returns the month from the given date.</td>
+         <td>
+            <ul>
+               <li><code>month (01/15/2014) = January</code></li>
+               <li><code>month (date ordered)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>month_number</td>
+         <td>Returns the number (1-12) of the month for the given date.</td>
+         <td>
+            <ul>
+               <li><code>month_number (09/20/2014) = 9</code></li>
+               <li><code>month_number (purchased)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>now</td>
+         <td>Returns the current timestamp.</td>
+         <td>
+            <ul>
+               <li><code>now ()</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>start_of_month</td>
+         <td>Returns the date for the first day of the month for the given date.</td>
+         <td>
+            <ul>
+               <li><code>start_of_month ( 01/31/2015 ) = Jan FY 2015</code></li>
+               <li><code>start_of_month (shipped)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>start_of_quarter</td>
+         <td>Returns the date for the first day of the quarter for the given date.</td>
+         <td>
+            <ul>
+               <li><code>start_of_quarter ( 09/18/2015 ) = Q3 FY 2015</code></li>
+               <li><code>start_of_quarter (sold)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>start_of_week</td>
+         <td>Returns the date for the first day of the week for the given date.</td>
+         <td>
+            <ul>
+               <li><code>start_of_week ( 06/01/2015 ) = 05/30/2015 Week</code></li>
+               <li><code>start_of_week (emailed)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>start_of_year</td>
+         <td>Returns the date for the first day of the year for the given date. </td>
+         <td>
+            <ul>
+               <li><code>start_of_year ( 02/15/2015 ) = FY 2015</code></li>
+               <li><code>start_of_year (joined)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td>time</td>
+         <td>Returns the time portion of a given date.</td>
+         <td>
+            <ul>
+               <li><code>time (3/1/2002 10:32) = 10:32</code></li>
+               <li><code>time (call began)</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr class="row">
+         <td class="entry row-nocellborder" headers="d14670e34 ">year</td>
+         <td class="entry row-nocellborder" headers="d14670e37 ">Returns the year from the given date.</td>
+         <td class="entry cellrowborder" headers="d14670e40 ">
+            <ul>
+               <li><code>year (01/15/2014) = 2014</code></li>
+               <li><code>year (date ordered)</code></li>
+            </ul>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  ## Calculate date formulas
 

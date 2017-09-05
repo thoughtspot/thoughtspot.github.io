@@ -1,25 +1,17 @@
 ---
-title: [elephant]
-tags: 
+title: [See the search behind a result]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can use your answer to learn more about the data used in your search."
 sidebar: mydoc_sidebar
 ---
-# Drill down
+Drilling down allows you to see more information about the columns used within your search. To drill down:
 
-Drilling down allows you to see more information about the columns used within your search.
+1. Right click on the visualization or table cell of interest, and select **Drill down**.
 
-To drill down:
+     ![](/pages/images/drill_down.png "Drill down option")
 
-1.   Right click on the visualization or table cell of interest, and select **Drill down**. 
+2. Click on any of the listed data to recreate the search with that data included.
 
-     ![](/pages/images/drill_down.png "Drill down option") 
-
-2.   Click on any of the listed data to recreate the search with that data included. 
-
-     ![](/pages/images/drill_down_list.png "Drill down list") 
-
-
-**Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)
-
+     ![](/pages/images/drill_down_list.png "Drill down list")

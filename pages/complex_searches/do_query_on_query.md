@@ -21,7 +21,7 @@ To do a search on the aggregated worksheet, along with any data sources you link
 4.   Once you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click the Data icon. 
 5. Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**. 
 
-    ![](../../shared/conrefs//pages/images/worksheet_create_icon.png)
+    ![](/pages/images/worksheet_create_icon.png)
 
 6.   Choose both views using **Choose Sources**. 
 7. You may need to rename some columns appropriately for searching. 

@@ -1,16 +1,12 @@
 ---
-title: [elephant]
-tags: 
+title: [Geo charts]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "There are three geo charts that let you visualize geographical data in ThoughtSpot."
 sidebar: mydoc_sidebar
 ---
-# About geo charts
-
-There are three geo charts that let you visualize geographical data in ThoughtSpot.
-
-These geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, which are:
+Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, which are:
 
 -   Country
 -   State
@@ -19,42 +15,45 @@ These geo charts show data on a map by location. They are geo area, geo bubble, 
 -   Point (latitude/longitude)
 -   Other sub-nation regions (for international countries)
 
-    **Note:** In addition to the United States, ThoughtSpot also supports maps for the United Kingdom, Germany, Sweden, South Africa, and France.
+    {% include note.html content="In addition to the United States, ThoughtSpot also supports maps for the United Kingdom, Germany, Sweden, South Africa, and France."%}
 
+## Geo data that can be displayed
 
 Here is a table that shows which GeoType data can be displayed using which geo chart type.
 
 |GeoType|Geo chart type|Notes|
 |-------|--------------|-----|
-|Country|Geo area (default), geo bubble, geo heatmap| -   Can also be regions.
+|Country|Geo area (default), geo bubble, geo heatmap| Can also be regions.|
+|County|Geo area (default), geo bubble, geo heatmap| Only for counties in the United States.|
+|Point|Geo bubble (default), geo heatmap| Must use both latitude and longitude columns.|
+|State|Geo area (default), geo bubble, geo heatmap| Only for states in the United States.|
+|Zipcode|Geo bubble (default), geo heatmap| Zip codes and zip codes +4 in the United States.|
+|Other sub-nation regions|Geo area (default), geo bubble, geo heatmap| The display will depend on the type of administrative region chosen.|
 
- |
-|County|Geo area (default), geo bubble, geo heatmap| -   Only for counties in the United States.
+For data to be displayed using geo charts, your administrator must configure it as geographical data. If you are expecting to be able to get a map visualization, but it isn't available, contact your administrator so they can make the configuration.
 
- |
-|Point|Geo bubble (default), geo heatmap| -   Must use both latitude and longitude columns.
+## Area charts
 
- |
-|State|Geo area (default), geo bubble, geo heatmap| -   Only for states in the United States.
+Geo area charts highlight the regions of interest. Point data (longitude/latitude) doesn't work on geo area charts. Also, only geo area charts display boundaries for counties.
 
- |
-|Zipcode|Geo bubble (default), geo heatmap| -   Zip codes and zip codes +4 in the United States.
+ ![](/pages/images/state_level_geo_area_chart.png "Geo area chart example")
 
- |
-|Other sub-nation regions|Geo area (default), geo bubble, geo heatmap| -   The display will depend on the type of administrative region chosen.
+Your search needs one geographical column of granularity to be represented as a geo area chart.
 
- |
+## Geo bubble charts
 
-In order for data to be displayed using geo charts, your administrator must configure it as geographical data. If you are expecting to be able to get a map visualization, but it isn't available, contact your administrator so they can make the configuration.
+Geo bubble charts, like bubble charts, display the value of the measure by the size of the bubble. Zip code data makes the most sense for geo bubble charts.
 
-**Restriction:** Only the first 5,000 data points will be shown on a geo chart. If you need to increase this limit, please contact ThoughtSpot Support.
+ ![](/pages/images/geo_bubble_chart_example.png "Geo bubble chart example")
 
--   **[Geo area charts](../../../pages/end_user_guide/end_user_search/about_geo_area_charts.html)**  
-The geo area chart displays country, county, state and zipcode data on a geographical chart.
--   **[Geo bubble charts](../../../pages/end_user_guide/end_user_search/about_geo_bubble_charts.html)**  
-The geo bubble chart displays country, county, point, state, and zipcode data on a geographical chart.
--   **[Geo heatmap charts](../../../pages/end_user_guide/end_user_search/about_geo_heatmap_charts.html)**  
-The geo heatmap chart displays country, county, point, state, and zipcode data on a geographical chart.
+Your search needs one geographical column or a pair of latitude and longitude columns to be represented as a geo bubble chart.
 
-**Parent topic:** [About chart types](../../../pages/end_user_guide/end_user_search/about_chart_types.html)
+## Heatmap charts
 
+Heatmap charts are similar to treemap charts in that they both use a similar system of color-coding to represent data values. However, the heatmap does not use size to measure data, and instead requires an additional attribute.
+
+ ![](/pages/images/new_heatmap_look.png "Heatmap chart example")
+
+The value of each cell depends on the measure you choose under **Edit char configuration**.
+
+ ![](/pages/images/heatmap_value.png "Heatmap value dropdown")

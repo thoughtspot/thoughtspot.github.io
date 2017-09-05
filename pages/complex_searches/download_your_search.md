@@ -1,27 +1,17 @@
 ---
-title: [elephant]
-tags: 
+title: [Download your search]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can download your search as either a table or chart."
 sidebar: mydoc_sidebar
 ---
-# Download your search
+You have the option to download your table as a CSV (comma separated values), PDF, or XLSX (Excel) file. When you download a chart, it will be a PNG file. To download your search:
 
-You can download your search as either a table or chart.
+* Click **Actions**. For a table, choose between **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
 
-You have the option to download your table as a CSV (comma separated values), PDF, or XLSX (Excel) file. When you download a chart, it will be a PNG file.
+     ![](/pages/images/download_a_table.png "Download your table options")
 
-To download your search:
+* For a chart, select **Download**.
 
-1.   Click **Actions**. For a table, choose between **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
-
-     ![](/pages/images/download_a_table.png "Download your table options") 
-
-     For a chart, select **Download**.
-
-     ![](/pages/images/download_a_chart.png "Download your chart option") 
-
-
-**Parent topic:** [Other search actions](../../pages/complex_searches/search_actions.html)
-
+     ![](/pages/images/download_a_chart.png "Download your chart option")

@@ -21,7 +21,7 @@ To view dependent objects for a data source:
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 
 2. Click the name of the data source whose dependencies you want to view.
-3. Click **Dependents​**. You will see a list of the names of the dependent objects (worksheets and pinboards), and the columns they use from that data source. You can use this information to determine the impact of changing the structure of the data source or to see how widely it is used.
+3. Click **Dependents**. You will see a list of the names of the dependent objects (worksheets and pinboards), and the columns they use from that data source. You can use this information to determine the impact of changing the structure of the data source or to see how widely it is used.
 
      ![](../../images/dependents.png "List of dependent objects")
 

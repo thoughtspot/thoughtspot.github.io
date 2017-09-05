@@ -1,18 +1,14 @@
 ---
-title: [elephant]
-tags: 
+title: [Change a chart]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "You can adjust the axes, labels, and view of the chart."
 sidebar: mydoc_sidebar
 ---
-# Change the chart
-
-You can adjust the axes, labels, and view of the chart.
-
 Every chart gives you the option to move columns between the x- and y-axes, hide or show data labels, and zoom.
 
- ![](/pages/images/configure_chart_icons.png "Configure chart icons") 
+ ![](/pages/images/configure_chart_icons.png "Configure chart icons")
 
 The configure chart option (the top icon which looks like a small bar chart) gives you the ability to edit the chart axes and legends. Click on the icon to view the chart axes, add a legend, lock axes, and more.
 
@@ -28,6 +24,3 @@ You can easily change the legend colors in a chart.
 You can configure charts to show the y-axis data values.
 -   **[Zoom into a chart](../../../pages/end_user_guide/end_user_search/zoom_into_a_chart.html)**  
 You can zoom into your chart by selecting an area with your mouse.
-
-**Parent topic:** [About charts](../../../pages/end_user_guide/end_user_search/about_charts.html)
-

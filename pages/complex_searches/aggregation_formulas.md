@@ -1,13 +1,10 @@
 ---
 title: [Overview of aggregate formulas]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About aggregate formulas
-
 When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.
 
 ## Regular and aggregation formulas
@@ -71,12 +68,3 @@ sum (profit) / sum (sales)
 Now the result is as expected, because the formula totals the profits for all rows, and then divides that by the total of sales for all rows, returning an average gross margin:
 
  ![](/pages/images/formula_gross_margin_sum.png "Aggregated search with a corrected division formula")
-
--   **[About cumulative formulas](../../pages/complex_searches/about_cumulative_formulas.html)**  
-Cumulative formulas are aggregate formulas that allow you to calculate the average, max, min, or sum or your data over time, optionally grouped by an attribute (like region or department).
--   **[About grouping formulas](../../pages/complex_searches/about_pinned_measures.html)**  
-What if you want to aggregate a value by a specific attribute (for example, show revenue by product)? This is known as a grouped aggregation, but some people call it a pinned measure or level-based measure.
--   **[About moving formulas](../../pages/complex_searches/about_moving_formulas.html)**  
-Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range.
-
-**Parent topic:** [About formulas in searches](../../pages/complex_searches/add_formula_to_search.html)
