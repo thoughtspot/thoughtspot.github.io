@@ -1,9 +1,9 @@
 ---
 title: [Pinboard filters]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+toc: false
 sidebar: mydoc_sidebar
 ---
 Filters, including bulk filters, can be applied to pinboards just as with tables and charts. These kinds of filters apply to an entire pinboard, making it easy to see only the data that you are interested in across the tables and charts within a pinboard.
@@ -16,29 +16,28 @@ When you apply a filter, the pinboard is not automatically saved with your filte
 
 Note that pinboard filters only apply to the tables and charts that are based on worksheets. If a pinboard also includes tables and charts that were created from underlying tables or on user uploaded data, the filters don’t apply to them.
 
--   **[Create a pinboard filter](../../pages/complex_searches/create_a_pinboard_filter.html)**  
-You can create a filter in the pinboard view for any pinboard. This allows you to easily manipulate the visualizations and view the modified presentation in one place.
-
 ## Create a pinboard filter
 
 You can create a filter in the pinboard view for any pinboard. This allows you to easily manipulate the visualizations and view the modified presentation in one place.
 
 Here is an example that shows you how to add a single filter to a pinboard. To create a pinboard filter:
 
-1.   Click the **Actions** button, and click **Add filters**.
+1. Click the **Actions** button, and click **Add filters**.
 
      ![](/pages/images/add_pinboard_filters.png "Add filters under Actions")
 
-2.   In the populated columns menu, click the **Add filter** icon next to the columns you would like to use as filters.
+2. In the populated columns menu, click the **Add filter** icon next to the columns you would like to use as filters.
 
      ![](/pages/images/add_filters_menu.png "Add filters menu")
 
-3.   Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**. Then click **Done**.
+3. Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**.
+4. Click **Done**.
 
      ![](/pages/images/select_filters.png "Select Filter Values")
 
-4.   Your applied filter will sit at the top of the pinboard, where you can either edit or delete it.
 
-     ![](/pages/images/filter_appears.png "Applied Pinboard Filter")
+Your applied filter will sit at the top of the pinboard, where you can either edit or delete it.
 
-    When you apply a filter, the pinboard is not automatically saved with your filter applied to every object in the pinboard that was created from a worksheet. Pinboard filters do not apply to tables and charts built directly on top of base tables.
+![](/pages/images/filter_appears.png "Applied Pinboard Filter")
+
+When you apply a filter, the pinboard is not automatically saved with your filter applied to every object in the pinboard that was created from a worksheet. Pinboard filters do not apply to tables and charts built directly on top of base tables.

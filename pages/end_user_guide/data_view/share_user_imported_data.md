@@ -14,7 +14,7 @@ Data that you uploaded from a Web browser is only visible to you and to the admi
 
 Share uploaded data by following these steps:
 
-1.   Click on **Data**, on the top navigation bar. 
+1.   Click on **DATA**, on the top navigation bar. 
 
      ![](/pages/shared/conrefs/../../images/data_icon.png "Data") 
 

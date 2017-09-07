@@ -44,7 +44,7 @@ Create a worksheet to make the data easy for users to search. This process inclu
 
 To create a new worksheet:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

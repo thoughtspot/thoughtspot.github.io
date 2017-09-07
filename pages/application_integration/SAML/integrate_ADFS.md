@@ -19,9 +19,9 @@ AD FS 2.0 supports SAML 2.0 in IdP \(Identity Provider\) mode and can be easily 
 
 After completing the prerequisites, use these procedures to configure AD FS for use with ThoughtSpot.
 
-1.   [Initialize IdP metadata.](initialize_IDP.html) 
-2.   [Initialize the Service Provider metadata.](initialize_SP.html) 
-3.   [Test your ADFS integration.](test_ADFS.html) 
+1. [Initialize IdP metadata.](initialize_IDP.html) 
+2. [Initialize the Service Provider metadata.](initialize_SP.html) 
+3. [Test your ADFS integration.](test_ADFS.html) 
 
 -   **[Initialize the Identity Provider Metadata](../../application_integration/SAML/initialize_IDP.html)**  
 This procedure shows how to initialize the Identity Provider \(IdP\) metadata for AD FS.

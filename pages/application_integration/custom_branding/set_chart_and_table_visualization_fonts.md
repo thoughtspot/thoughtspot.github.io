@@ -12,11 +12,11 @@ You can add and edit fonts to customize the appearance of your charts and tables
 
 If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following the steps below:
 
-1.   Click on the **Add New** button under **Chart Visualization Fonts**. 
+1. Click on the **Add New** button under **Chart Visualization Fonts**. 
 
      ![](../../images/add_font.png "Add New Chart Visualization Font") 
 
-2.   In the add new font menu, select the details for the font: 
+2. In the add new font menu, select the details for the font: 
     1.  Upload your custom font.
 
          ![](../../images/upload_custom_font.png "Upload custom font") 
@@ -34,16 +34,16 @@ If you are confident in your knowledge of font visualizations, you can set your 
         The font weight choices are normal, bold, and light. The style choices are normal, italic, and oblique.
 
     4.  Click **Save**.
-3.   Click on the **Edit Font** icon ![](../../images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font. 
+3. Click on the **Edit Font** icon ![](../../images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font. 
 
      ![](../../images/edit_font.png "Edit Chart Visualization Font") 
 
-4.   Make any changes to the details of the font in the edit menu and click **Save**. 
+4. Make any changes to the details of the font in the edit menu and click **Save**. 
 5. Click the custom font drop down to choose your custom font. 
 
      ![](../../images/choose_chart_custom_font.png "Choose custom chart font") 
 
-6.   Click the chart label drop down to choose where you would like to apply your custom font. 
+6. Click the chart label drop down to choose where you would like to apply your custom font. 
 
      ![](../../images/choose_chart_font_label.png "Choose chart label") 
 

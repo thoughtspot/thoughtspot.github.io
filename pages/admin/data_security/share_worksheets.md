@@ -10,7 +10,7 @@ When you share a worksheet, all of its columns are shared. Sharing a worksheet d
 
 To share a pinboard:
 
-1. Click on the **Data** icon on the top navigation bar and then on **Worksheets**.
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
     ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
 

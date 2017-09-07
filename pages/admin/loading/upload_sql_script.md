@@ -12,8 +12,8 @@ You can run a SQL script to create your database schema through the browser, wit
 -   Use the editor to type your SQL directly into the browser.
 -   Use the browser SQL interface as an interactive SQL editor, for example to test an existing script or make changes to an existing schema.
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#).
-2. Click on **Data**, on the top navigation bar.
+1. Log into ThoughtSpot from a browser.
+2. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

@@ -15,7 +15,7 @@ Data sources can consist of relational database sources, like SQL Server or appl
 1.  To add a data source:
 
 2.   [Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html#). 
-3.   Click on **Data**, on the top navigation bar. 
+3.   Click on **DATA**, on the top navigation bar. 
 
      ![](../../../shared/conrefs/../../images/data_icon.png "Data") 
 

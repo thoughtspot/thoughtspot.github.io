@@ -12,7 +12,7 @@ Yu can always go into a worksheet and make changes such as adding sources and co
 
 To edit a worksheet:
 
-1. Click on the **Data** icon on the top navigation bar and then on **Worksheets**.
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
     ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
 
@@ -31,7 +31,7 @@ You can change a worksheet or table name from the ThoughtSpot application.
 
 To change the name of a worksheet or table:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

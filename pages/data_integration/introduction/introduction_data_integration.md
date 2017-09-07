@@ -1,9 +1,8 @@
 ---
 title: [Introduction to Data Integration]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 # Introduction to Data Integration

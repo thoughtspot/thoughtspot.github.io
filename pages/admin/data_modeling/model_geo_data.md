@@ -31,7 +31,7 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change_aggreg_
 
 ## List of geotypes
 
-{% include custom/geotypes.html %}
+{% include content/geotypes.html %}
 
 ## Related information  
 

@@ -13,7 +13,7 @@ Before adding users, create the groups they will belong to. Each group includes 
 
 To create a group and add privileges for the group:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#).
+1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
@@ -45,7 +45,7 @@ To create a group and add privileges for the group:
 
 After adding a group, you can always go in and change its settings to add or revoke privileges. The new settings will apply to all the group members. To edit or delete an existing group:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#).
+1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 3. In the **Admin** panel, click on **User Management** and **Groups**.
 
@@ -62,7 +62,7 @@ After adding a group, you can always go in and change its settings to add or rev
 
 You can add multiple users to a group using one button. To add multiple users to a group:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#).
+1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 3.  In the **Admin** panel, click on **User Management** and **Users**.
 

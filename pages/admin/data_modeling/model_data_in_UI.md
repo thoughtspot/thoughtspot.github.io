@@ -10,7 +10,7 @@ To make modeling settings for a table you've just loaded, or to make a quick cha
 
 You can change all the same data model settings here as in the model file. This method is easier and faster, unless you need to make many settings in bulk. In that case, [using the model file](edit_model_file.html#) is recommended.
 
-1. Click on the **Data** icon, to get to the data management listing.
+1. Click on the **DATA** icon, to get to the data management listing.
 2. Click on the name of your data source.
 
    ![](../../images/data_management_select_data_source.png "Select a data source")

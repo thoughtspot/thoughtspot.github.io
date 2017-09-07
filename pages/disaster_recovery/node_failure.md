@@ -1,15 +1,12 @@
 ---
-title: [elephant]
-tags: 
+title: [Node failure]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
+"
 sidebar: mydoc_sidebar
 ---
-# Node failure
-
-ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
-
 To support high availability, your ThoughtSpot instance must have at least three nodes. In a three or more node system, if one node fails, its services will be distributed to the other nodes. The failover is automatic. However, when a node fails, you should contact ThoughtSpot Support about replacing the node when possible.
 
 A node is considered to have failed when one or more of these conditions occur:
@@ -32,6 +29,3 @@ If you notice these symptoms, contact ThoughtSpot Support.
 ## Node replacement
 
 Node replacement is done on site by ThoughtSpot Support. You will need to schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.
-
-**Parent topic:** [About disaster recovery](../../disaster_recovery/disaster_recovery/about_disaster_recovery.html)
-

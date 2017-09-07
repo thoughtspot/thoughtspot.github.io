@@ -17,7 +17,7 @@ Whenever you delete a data source, you also have the option to drop or retain th
 To delete a data source:
 
 1.   [Log in to ThoughtSpot from a browser.](../../../admin/setup/accessing.html#) 
-2.   Click on **Data**, on the top navigation bar. 
+2.   Click on **DATA**, on the top navigation bar. 
 
      ![](../../../shared/conrefs/../../images/data_icon.png "Data") 
 

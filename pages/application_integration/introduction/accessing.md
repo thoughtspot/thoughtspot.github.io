@@ -35,8 +35,8 @@ Before accessing ThoughtSpot, you need:
 
 To log in to ThoughtSpot from a browser:
 
-1.   Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>` 
-2.   Enter your username and password and click **Enter Now**. 
+1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>` 
+2. Enter your username and password and click **Enter Now**. 
 
 **Parent topic:** [Introduction](../../application_integration/introduction/introduction.html)
 

@@ -17,8 +17,8 @@ Before you can use runtime filter\(s\), you need to do these procedures:
 
 Now you are ready to add a runtime filter to your Data API call or Embedded object:
 
-1.   Obtain the URL you are using to embed the visualization or call the REST API, and paste it into a text editor. 
-2.   Append the runtime filter to the URL, using the [runtime filter operators](runtime_filter_operators.html#) to get the data you want. The format for the runtime filter is: 
+1. Obtain the URL you are using to embed the visualization or call the REST API, and paste it into a text editor. 
+2. Append the runtime filter to the URL, using the [runtime filter operators](runtime_filter_operators.html#) to get the data you want. The format for the runtime filter is: 
     -   For Embedding a pinboard:
 
         ```
@@ -53,7 +53,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
         &**col1=<column_name\>&op1=<operator\>&val1=<value\>**
         ```
 
-3.   If you want to add additional filters on a particular column, you can specify multiple values by separating them with "&" as in the example: 
+3. If you want to add additional filters on a particular column, you can specify multiple values by separating them with "&" as in the example: 
 
     ```
     val1=foo&val1=bar
@@ -65,7 +65,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
     col1=<column_name>&op1=IN&val1=<value>&val1=<value>
     ```
 
-4.   Add additional filters by incrementing the number at the end of each parameter in the Runtime Filter for each filter you want to add, e.g. col2, op2, val2 and so on. This example passes multiple variables to a single column as well as multiple columns. It shows that data values are returned as epoch.
+4. Add additional filters by incrementing the number at the end of each parameter in the Runtime Filter for each filter you want to add, e.g. col2, op2, val2 and so on. This example passes multiple variables to a single column as well as multiple columns. It shows that data values are returned as epoch.
 
     ```
     col1=region&op1=IN&val1=midwest&val1=south&val1=northeast

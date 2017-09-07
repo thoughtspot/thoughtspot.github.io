@@ -38,3 +38,7 @@ The pinboard visualizations are attached to the scheduled email as CSV or PDF fi
 The size of each email is limited to 25 MB, which matches most email services size limitations.
 
 And the total number of recipients for a scheduled pinboard job cannot exceed the default of 1000.
+
+## Related information
+
+For information on creating a pinboard, see the [Schedule a pinboard job](/pages/admin/manage_jobs/schedule_a_pinboard_job.html).

@@ -13,4 +13,4 @@ If you are trying to do something in ThoughtSpot, and cannot access the screens 
 
 Here are the privileges that the administrator sets, and the capabilities they enable:
 
-{% include custom/privileges.html %}
+{% include content/privileges.html %}

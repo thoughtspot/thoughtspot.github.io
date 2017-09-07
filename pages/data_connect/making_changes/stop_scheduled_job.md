@@ -21,7 +21,7 @@ There are a few conditions when it may be useful to stop or pause a scheduled jo
 To stop a scheduled job from running:
 
 1.   [Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html#). 
-2.   Click on **Data**, on the top navigation bar. 
+2.   Click on **DATA**, on the top navigation bar. 
 
      ![](../../../shared/conrefs/../../images/data_icon.png "Data") 
 

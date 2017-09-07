@@ -1,45 +1,77 @@
 ---
-title: [elephant]
-tags: 
+title: [Percent (simple number) calculations]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+toc: false
 sidebar: mydoc_sidebar
 ---
-## About percent (simple number) calculations
-
 You can use simple number functions to perform useful percent calculations.
 
 Simple number functions include addition, subtraction, multiplication, and division.
 
-|Function|Description|Examples|
-|--------|-----------|--------|
-|\*|Returns the result of multiplying both numbers.| -   `3 * 2 = 6`
--   `price * taxrate`
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+   <colgroup>
+      <col style="width:10%"/>
+      <col style="width:45%"/>
+      <col style="width:45%"/>
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Function</th>
+         <th>Description</th>
+         <th>Examples</th>
+      </tr>
+   </thead>
+   <tbody class="tbody">
+      <tr>
+         <td>&#42;</td>
+         <td>Returns the result of multiplying both numbers.</td>
+         <td>
+            <ul>
+               <li><code>3 * 2 = 6</code></li>
+               <li><code>price * taxrate</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>+</td>
+         <td>Returns the result of adding both numbers.</td>
+         <td>
+            <ul>
+               <li><code>1 + 2 = 3</code></li>
+               <li><code>price + shipping</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>-</td>
+         <td>Returns the result of subtracting the second number from the first.</td>
+         <td>
+            <ul>
+               <li><code>3 - 2 = 1</code></li>
+               <li><code>revenue - tax</code></li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td class="entry row-nocellborder" headers="d15914e33 ">/</td>
+         <td class="entry row-nocellborder" headers="d15914e36 ">Returns the result of dividing the first number by the second.</td>
+         <td class="entry cellrowborder" headers="d15914e39 ">
+            <ul>
+               <li><code>6 / 3 = 2</code></li>
+               <li><code>markup / retail price</code></li>
+            </ul>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
- |
-|+|Returns the result of adding both numbers.| -   `1 + 2 = 3`
--   `price + shipping`
+## Calculate percentages
 
- |
-|-|Returns the result of subtracting the second number from the first.| -   `3 - 2 = 1`
--   `revenue - tax`
+Calculating percentages is useful when you want to see, for example, the percentage revenue generated from each channel (online, stores, partner, etc.).
 
- |
-|/|Returns the result of dividing the first number by the second.| -   `6 / 3 = 2`
--   `markup / retail price`
+The following example shows you how to figure out the percentage revenue generated from each channel (online, stores, partners, etc.).
 
- |
-
- ## Calculate percentages
-
- Calculating percentages is useful when you want to see, for example, the percentage revenue generated from each channel (online, stores, partner, etc.).
-
- Here is a common percentage example:
-
- ### Example
-
- The following example shows you how to figure out the percentage revenue generated from each channel (online, stores, partners, etc.).
-
- 1.  Create the following formula in the Formula Builder, percent revenue = ( sum ( revenue ) / group sum ( revenue ) ) \* 100.
- 2.  Now you can search by each channel, using the percent revenue formula that you just created.
+1.  Create the following formula in the Formula Builder: ` percent revenue = ( sum ( revenue ) / group sum ( revenue ) ) \* 100`
+2.  Now you can search by each channel, using the percent revenue formula that you just created.

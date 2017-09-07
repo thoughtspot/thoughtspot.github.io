@@ -25,7 +25,7 @@ When Rule-Based Row Level Security is set, it protects users from seeing data th
 
 To set up rule-based row level security, you first need to access the Rule Builder. To get to the Rule Builder:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

@@ -1,5 +1,5 @@
 ---
-title: [Build the schema]
+title: [Overview of schema building]
 tags: [Modeling_Relationships,Data_Integ_TQL]
 keywords: "SQL,data schema,TQL"
 last_updated: tbd

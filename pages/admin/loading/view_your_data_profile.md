@@ -1,12 +1,13 @@
-# View your data profile
+---
+title: [View a data profile]
+tags:
+keywords: tbd
+last_updated: tbd
+sidebar: mydoc_sidebar
+---
 
-Basic column data profile information is available under **Profile** on the Data page.
+After you upload a CSV file, it is available as a table in ThoughtSpot. The **Profile** tab appears after you have selected a specific table from **DATA**.
 
-When data is first loaded into ThoughtSpot, it is often unfamiliar to users. This profile view should help you get a better sense of what’s there before asking questions on the data.
+![](/pages/images/data_profile.png)
 
- ![](../../images/data_profile.png)
-
-The data profile includes null values, min, max, average, and sum information for each column.
-
-**Parent topic:** [Working with data](../../pages/end_user_guide/data_view/data_intro_end_user.html)
-
+The data profile includes null values, min, max, average, and sum information for each table column. This **Profile** view should help you get a better sense of what’s there before searching on the data.

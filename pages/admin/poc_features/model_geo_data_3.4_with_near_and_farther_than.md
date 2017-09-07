@@ -46,4 +46,4 @@ These keywords allow you to search with spatial filters on data contained in a t
 
 ## List of geotypes
 
-{% include custom/geotypes.html %}
+{% include content/geotypes.html %}

@@ -14,7 +14,7 @@ When creating a link between the columns in two data sources, the columns being 
 
 To create a relationship through the Web interface:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

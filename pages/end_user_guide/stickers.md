@@ -7,4 +7,4 @@ summary: "Stickers enable you to create categories for classification of objects
 sidebar: mydoc_sidebar
 ---
 
-{% include custom/stickers.html %}
+{% include content/stickers.html %}

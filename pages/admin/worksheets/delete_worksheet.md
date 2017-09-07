@@ -10,7 +10,7 @@ ThoughtSpot checks for dependencies whenever you try to remove a table or worksh
 
 To delete a worksheet or table:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

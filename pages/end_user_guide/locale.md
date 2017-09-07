@@ -6,4 +6,4 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 ---
 
-{% include custom/set_locale.html %}
+{% include content/set_locale.html %}

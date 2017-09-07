@@ -97,7 +97,7 @@ entries:
       - title: Configure casing
         url: /pages/admin/loading/about_case_configuration.html
         output: web, pdf
-      - title: Load CSV files from a web browser
+      - title: Load CSV files with the UI
         url: /pages/admin/loading/load_from_web_browser.html
         output: web, pdf
       - title: How to view a data schema
@@ -148,7 +148,7 @@ entries:
         - title: Convert column data type
           url: /pages/admin/loading/about_data_type_conversion.html
           output: web, pdf
-      - levelThreeTitle: Load data
+      - levelThreeTitle: Load bulk data
         output: web, pdf
         levelThreeItems:
         - title: Import CSV files with tsload
@@ -273,9 +273,6 @@ entries:
       levelTwoItems:
       - title: Job management (scheduled pinboards)
         url: /pages/admin/manage_jobs/about_scheduled_pinboards.html
-        output: web, pdf
-      - title: Schedule a pinboard job
-        url: /pages/admin/manage_jobs/schedule_a_pinboard_job.html
         output: web, pdf
       - title: Scheduled pinboards management
         url: /pages/admin/manage_jobs/scheduled_pinboards_management.html
@@ -661,20 +658,14 @@ entries:
       - title: Create a search from a worksheet
         url: /pages/complex_searches/do_query_on_query.html
         output: web
-      - title: Worksheet from a search example scenarios
+      - title: Worksheet example scenarios
         url: /pages/complex_searches/more_example_scenarios.html
         output: web
-    - levelTwoTitle: Advanced pinboards
+    - levelTwoTitle: Use pinboards
       output: web
       levelTwoItems:
-        - title: About pinboards
+        - title: Basic pinboard usage
           url: /pages/end_user_guide/pinboards/about_pinboards.html
-          output: web
-        - title: Create a pinboard
-          url: /pages/end_user_guide/pinboards/create_a_pinboard.html
-          output: web
-        - title: Add an answer to a pinboard
-          url: /pages/end_user_guide/pinboards/add_an_answer_to_a_pinboard.html
           output: web
         - title: Edit the layout of a pinboard
           url: /pages/end_user_guide/pinboards/edit_the_layout_of_a_pinboard.html
@@ -682,87 +673,60 @@ entries:
         - title: Pinboard filters
           url: /pages/complex_searches/pinboard_filters.html
           output: web
-        - title: About scheduled pinboards
-          url: /pages/admin/manage_jobs/about_scheduled_pinboards.html
-          output: web
         - title: Schedule a pinboard job
           url: /pages/admin/manage_jobs/schedule_a_pinboard_job.html
           output: web
-        - levelThreeTitle: Other pinboard actions
+        - title: Search actions within a pinboard
+          url: /pages/end_user_guide/pinboards/about_showing_underlying_data_from_within_a_pinboard.html
           output: web
-          levelThreeItems:
-          - title: Other pinboard actions
-            url: /pages/end_user_guide/pinboards/pinboard_actions.html
-            output: web
-          - title: Search actions within a pinboard
-            url: /pages/end_user_guide/pinboards/about_showing_underlying_data_from_within_a_pinboard.html
-            output: web
-          - title: Copy a pinboard
-            url: /pages/end_user_guide/pinboards/copy_a_pinboard.html
-            output: web
-          - title: Copy the link for a pinboard or visualization
-            url: /pages/end_user_guide/pinboards/copy_link_for_a_pinboard.html
-            output: web
-          - title: Reset a visualization
-            url: /pages/end_user_guide/pinboards/reset_a_visualization.html
-            output: web
-          - title: Reset the layout of a pinboard
-            url: /pages/end_user_guide/pinboards/reset_the_layout_of_a_pinboard.html
-            output: web
-          - title: Download a pinboard
-            url: /pages/end_user_guide/pinboards/download_a_pinboard.html
-            output: web
-          - title: Start a slideshow
-            url: /pages/end_user_guide/pinboards/start_a_slideshow.html
-            output: web
-          - title: Delete a visualization
-            url: /pages/end_user_guide/pinboards/delete_a_visualization.html
-            output: web
-    - levelTwoTitle: Advanced data work
+        - title: Copy a pinboard
+          url: /pages/end_user_guide/pinboards/copy_a_pinboard.html
+          output: web
+        - title: Copy a pinboard or visualization link
+          url: /pages/end_user_guide/pinboards/copy_link_for_a_pinboard.html
+          output: web
+        - title: Reset a pinobard or visualization
+          url: /pages/end_user_guide/pinboards/reset_a_visualization.html
+          output: web
+        - title: Start a slideshow
+          url: /pages/end_user_guide/pinboards/start_a_slideshow.html
+          output: web
+    - levelTwoTitle: Work with data
       output: web
       levelTwoItems:
-        - title: Working with data
+        - title: "Understand data sources"
           url: /pages/end_user_guide/data_view/data_intro_end_user.html
           output: web
-        - title: Generate CSV files with the data to be loaded
-          url: admin/loading/generate_flat_file.html
+        - title: Create and load CSV Files
+          url: /pages/end_user_guide/data_view/generate_flat_file.html
           output: web
-        - title: Load data from a web browser
-          url: admin/loading/load_from_web_browserdita.html
+        - title: Append data through the UI
+          url: /pages/admin/loading/append_data_from_a_web_browser.html
           output: web
-        - title: Append data from a web browser
-          url: admin/loading/append_data_from_a_web_browser.html
+        - title: View a data profile
+          url: /pages/admin/loading/view_your_data_profile.html
           output: web
-        - title: View your data profile
-          url: admin/loading/view_your_data_profile.html
-          output: web
-        - levelThreeTitle: Sharing
+        - levelThreeTitle: Share your work
           output: web
           levelThreeItems:
           - title: About sharing
             url: /pages/end_user_guide/data_view/sharing_for_end_users.html
             output: web
           - title: Share a pinboard
-            url: admin/data_security/share_pinboards.html
+            url: /pages/end_user_guide/pinboards/share_pinboards.html
             output: web
           - title: Share answers
-            url: admin/data_security/share_answers.html
+            url: /pages/end_user_guide/pinboards/share_answers.html
             output: web
           - title: Share uploaded data
             url: /pages/end_user_guide/data_view/share_user_imported_data.html
             output: web
           - title: Revoke access (unshare)
-            url: admin/data_security/unshare.html
+            url: /pages/end_user_guide/pinboards/unshare.html
             output: web
-    - levelTwoTitle: Help Center
+    - title: Get help
+      url: /pages/end_user_guide/help_center/what_you_can_find_in_the_help_center.html
       output: web
-      levelTwoItems:
-        - title: About the Help Center
-          url: /pages/end_user_guide/help_center/about_the_help_center.html
-          output: web
-        - title: What you can find in the Help Center
-          url: /pages/end_user_guide/help_center/what_you_can_find_in_the_help_center.html
-          output: web
   - sectiontitle: Reference Guide
     output: web
     sectionitems:
@@ -886,26 +850,14 @@ entries:
     - title: Introduction
       url: /pages/application_integration/introduction/introduction.html
       output: web
-    - levelTwoTitle: Getting connected
+    - title: Log in credentials
+      url: /pages/application_integration/introduction/logins.html
       output: web
-      levelTwoItems:
-      - title: Login credentials for administration
-        url: /pages/application_integration/introduction/logins.html
-        output: web
-      - title: Log in to ThoughtSpot from a browser
-        url: /pages/application_integration/introduction/accessing.html
-        output: web
-      - title: Log in to the Linux shell using SSH
-        url: /pages/application_integration/introduction/login_console.html
-        output: web
     - levelTwoTitle: SAML
       output: web
       levelTwoItems:
       - title: About SAML
         url: /pages/application_integration/SAML/about_SAML_integrations.html
-        output: web
-      - title: Legacy configure SAML
-        url: /pages/application_integration/SAML/ts_as_sp.html
         output: web
       - title: Configure SAML
         url: /pages/application_integration/SAML/configure_SAML_with_tscli.html
@@ -928,6 +880,9 @@ entries:
         - title: Test the ADFS Integration
           url: /pages/application_integration/SAML/test_ADFS.html
           output: web
+      - title: Legacy configure SAML
+        url: /pages/application_integration/SAML/ts_as_sp.html
+        output: web
     - levelTwoTitle: JavaScript API
       output: web
       levelTwoItems:
@@ -1009,18 +964,9 @@ entries:
     - title: Introduction
       url: /pages/data_integration/introduction/introduction_data_integration.html
       output: web
-    - levelTwoTitle: Getting connected
+    - title: Login credentials for administration
+      url: /pages/data_integration/introduction/logins.html
       output: web
-      levelTwoItems:
-      - title: Login credentials for administration
-        url: /pages/data_integration/introduction/logins.html
-        output: web
-      - title: Log in to the Linux shell using SSH
-        url: /pages/data_integration/introduction/login_console.html
-        output: web
-      - title: Log in to ThoughtSpot from a browser
-        url: /pages/data_integration/introduction/accessing.html
-        output: web
     - title: ThoughtSpot Clients
       url: /pages/data_integration/clients/about_clients.html
       output: web
@@ -1036,7 +982,7 @@ entries:
          - title: Windows Installation Overview
            url: /pages/data_integration/clients/install_odbc_windows.html
            output: web
-         - title: Change the ODBC Configuration on Windows
+         - title: Change the Windows ODBC Configuration
            url: /pages/data_integration/clients/change_odbc_windows.html
            output: web
          - title: Add a New Data Source to ODBC on Windows
@@ -1121,91 +1067,49 @@ entries:
     sectionitems:
     - title: Welcome to ThoughtSpot
       url: /pages/appliance/welcome/welcome_intro.html
+      output: web,pdf
+    - title: Supported hardware
+      url: /pages/appliance/physical/hardware_and_deployment.html
       output: web, pdf
-    - title: Contact ThoughtSpot
+    - title: Typical physical deployment
+      url: /pages/appliance/physical/inthebox.html
+      output: web, pdf
+    - title: Cable networking
+      url: /pages/appliance/setup/cable_networking.html
+      output: web, pdf
+    - title: Install and start the appliance
+      url: /pages/appliance/setup/appliance_setup.html
+      output: web, pdf
+    - title: Contact Support
       url: /pages/appliance/welcome/contact.html
-      output: pdf
-    - levelTwoTitle: Hardware and deployment
-      output: web, pdf
-      levelTwoItems:
-      - title: Hardware and deployment
-        url: /pages/appliance/physical/hardware_and_deployment.html
-        output: web, pdf
-      - title: About the hardware
-        url: /pages/appliance/physical/about_the_ivy_bridge_platform.html
-        output: web, pdf
-      - title: Hardware front and rear view diagrams
-        url: /pages/appliance/physical/hardware_front_and_rear_view_diagrams.html
-        output: web, pdf
-      - title: Hardware provided by ThoughtSpot
-        url: /pages/appliance/physical/inthebox.html
-        output: web, pdf
-      - title: Additional hardware requirements
-        url: /pages/appliance/physical/additional_hardware_requirements.html
-        output: web, pdf
-      - title: Typical physical deployment
-        url: /pages/appliance/physical/rack.html
-        output: web, pdf
-      - title: Network connection
-        url: /pages/appliance/physical/network_connection.html
-        output: web, pdf
-    - levelTwoTitle: Cabling
-      output: web, pdf
-      levelTwoItems:
-      - title: Cable networking and installation
-        url: /pages/appliance/setup/overview.html
-        output: web, pdf
-      - title: Cable networking
-        url: /pages/appliance/setup/cable_networking.html
-        output: web, pdf
-      - title: Install and start the appliance
-        url: /pages/appliance/setup/appliance_setup.html
-        output: web, pdf
+      output: web,pdf
   - sectiontitle: AWS Quick Start Guide
     output: web
     sectionitems:
-      - title: Welcome to ThoughtSpot
-        url: /pages/aws/welcome/welcome_to_thoughtspot.html
-        output: web
-      - title: Introduction
-        url: /pages/aws/introduction/introduction.html
-        output: pdf
-      - title: About AWS
+      - title: About ThoughtSpot and AWS
         url: /pages/aws/introduction/about_aws.html
         output: web
-      - title: Configuration
-        url: /pages/aws/configuration/about_configuration.html
-        output: pdf
       - title: Configuration options
         url: /pages/aws/configuration/configuration_options.html
         output: web
-      - levelTwoTitle: Installation using an AMI
+      - title: Launch an instance
+        url: /pages/aws/setup/launch_an_instance.html
         output: web
-        levelTwoItems:
-        - title: Introduction
-          url: /pages/aws/setup/installation_and_setup.html
-          output: pdf
-        - title: About the AMI
-          url: /pages/aws/setup/about_the_ami.html
-          output: web
-        - title: Launch an instance
-          url: /pages/aws/setup/launch_an_instance.html
-          output: web
-        - title: ThoughtSpot on AWS reference
-          url: /pages/aws/reference/thoughtspot_on_aws_reference.html
-          output: pdf
       - title: Network ports
-        url: /pages/admin/setup/firewall_ports.html
+        url: /pages/aws/setup/firewall_ports.html
+        output: web
+      - title: Contact Support
+        url: /pages/aws/welcome/contact.html
         output: web
   - sectiontitle: Error Codes Guide
-    output: pdf
+    output: web
     sectionitems:
     - title: About error codes
       url: /pages/error_code/about_error_codes.html
-      output: pdf
+      output: web
     - title: Error code reference
       url: /pages/error_code/error_codes_reference.html
-      output: pdf
+      output: web
   - sectiontitle: Disaster Recovery Guide
     output: web
     sectionitems:
@@ -1225,7 +1129,7 @@ entries:
         url: /pages/disaster_recovery/cluster_replacement.html
         output: web
       - title: Mount a NAS file system
-        url: /pages/admin/setup/NAS_mount.html
+        url: /pages/disaster_recovery/NAS_mount.html
         output: web
       - title: Set up a disaster recovery configuration
         url: /pages/disaster_recovery/set_up_DR_config.html

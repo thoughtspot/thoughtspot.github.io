@@ -45,7 +45,7 @@ To learn more about pinboards, visit [About pinboards](../pinboards/about_pinboa
 
 ## Data
 
-**Data** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
+**DATA** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
 
 To learn more about this section, visit [Working with data](../data_view/data_intro_end_user.html#).
 

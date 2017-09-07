@@ -15,7 +15,7 @@ A connection is not tied to a task, and can therefore be called in multiple data
 To delete a connection:
 
 1.   [Log in to ThoughtSpot from a browser.](../../../admin/setup/accessing.html#) 
-2.   Click on **Data**, on the top navigation bar. 
+2.   Click on **DATA**, on the top navigation bar. 
 
      ![](../../../shared/conrefs/../../images/data_icon.png "Data") 
 

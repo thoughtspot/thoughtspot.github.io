@@ -1,13 +1,11 @@
 ---
 title: [About disaster recovery]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+toc: false
 sidebar: mydoc_sidebar
 ---
-# About disaster recovery
-
 Disaster recovery is the ability to recover from a hardware or software failure or a catastrophic event. ThoughtSpot protects you from data loss in the event of a hardware or software failure or a catastrophic event.
 
 ThoughtSpot takes snapshots of itself automatically at periodic intervals. These can be pulled out as backups at intervals or manually as needed. See the ThoughtSpot Administrator Guide for details on backups, snapshots and restore operations.
@@ -19,6 +17,8 @@ The information here addresses disaster recovery specifically. These are some po
 -   [Cluster replacement](cluster_replacement.html#)
 
 ThoughtSpot supports recovery from disk or node failure within each appliance. You can also architect your system to support loss of an entire appliance, which is the highest level of disaster recovery.
+
+## Where to go next
 
 -   **[Disk failure](../../disaster_recovery/disaster_recovery/disk_failure.html)**  
 ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.

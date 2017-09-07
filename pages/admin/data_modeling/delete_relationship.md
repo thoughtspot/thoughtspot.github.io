@@ -10,7 +10,7 @@ You must have either administration privilege or modify access permission to the
 
 To delete a relationship using [TQL](../reference/sql_cli_commands.html#), use an `ALTER TABLE...DROP FOREIGN KEY...` statement. To delete a relationship from the Web interface:
 
-1. Click on the **Data** icon on the top navigation bar and then on **Worksheets**.
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
     ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
 

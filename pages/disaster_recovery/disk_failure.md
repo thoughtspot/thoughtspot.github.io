@@ -1,15 +1,11 @@
 ---
-title: [elephant]
-tags: 
+title: [Disk failure]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate."
 sidebar: mydoc_sidebar
 ---
-# Disk failure
-
-ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
-
 Replacement of a bad disk should be initiated through ThoughtSpot Support in this event, at your earliest convenience.
 
 ## Symptoms
@@ -29,6 +25,3 @@ The guidelines for disk replacement are:
 -   Losing more than two disks: The cluster continues to operate, but the application may be inaccessible. Replace the disks to restore original operation.
 
 Disk replacement is done on site by ThoughtSpot Support. Disks can be replaced while ThoughtSpot is running. However the disk replacement procedure involves a node restart, so a disruption of up to five minutes can happen, depending on what services are running on that node.
-
-**Parent topic:** [About disaster recovery](../../disaster_recovery/disaster_recovery/about_disaster_recovery.html)
-

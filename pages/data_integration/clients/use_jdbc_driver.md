@@ -1,69 +1,64 @@
 ---
 title: [ Use the JDBC Driver]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "How to configure the JDBC drivr "
+summary: "How to configure the JDBC driver. "
 sidebar: mydoc_sidebar
 ---
-# Use the JDBC Driver
+To use the JDBC driver, include the JDBC library in your path, and provide the connection information. You need this information to configure the JDBC driver:
 
-To use the JDBC driver, include the JDBC library in your path, and provide the connection information.
+| Information | Description |
+|-------------|-------------|
+|Driver name | com.simba.client.core.jdbc4.SCJDBC4Driver |
+|Server IP address | The ThoughtSpot appliance URL or IP address. The IP address can be found by going to `http://<server-ip\>:2201/status/service?name=simba_server`|
+|Simba port | The simba port, which is 12345 by default.|
+|Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
+|Database username | The name of a ThoughtSpot user with administrator permissions.|
+|Database password | This is not the machine login password. The ThoughtSpot user password.|
 
-You need this information to configure the JDBC driver:
+## Install the driver
 
--   Driver name: com.simba.client.core.jdbc4.SCJDBC4Driver
--   Server IP address: The ThoughtSpot appliance URL or IP address. The IP address can be found by going to http://<server-ip\>:2201/status/service?name=simba_server
--   Simba port: The simba port, which is 12345 by default.
--   Database name: The ThoughtSpot Database name to connect to.
--   Database username: The name of a ThoughtSpot user with administrator permissions.
-
-    **Attention:** This is not the machine login username.
-
--   Database password: The ThoughtSpot user password.
-
-    **Attention:** This is not the machine login password.
+To obtain the JDBC driver:
 
 
-To obtain and install the JDBC Driver:
+1. Log in to the local machine where you want to install the JDBC driver.
+2. Click [**Here**](https://help.thoughtspot.com/help_center/3.5/Downloads) to download the JDBC driver.
+3. Click **JDBC Driver** to download the file `ThoughtSpot_jdbc_<version>.zip`.
+4. Move the driver to the desired directory on your local machine.
+5. Add the downloaded JDBC driver to your Java class path on the local machine.
 
-1.   Log in to the local machine where you want to install the JDBC driver.
-2.   To obtain the JDBC driver:
-    -   Click [**Here**](https://help.thoughtspot.com/help_center/3.5/Downloads) to download the JDBC driver.
-    -   Click **JDBC Driver** to download the file `ThoughtSpot_jdbc_<version>.zip`.
-3.   Move the driver to the desired directory on your local machine.
-4.   Add the JDBC driver to your Java class path on the local machine.
-5. Now write your Java application code. Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any other database. You need to provide the connection information, create a connection, execute statements, and close the connection.
+## Write your application
 
-    Specify each of the nodes in the cluster in the connection string, as shown. This enables high availability for JDBC connections. To find out the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
+Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any other database. You need to provide the connection information, create a connection, execute statements, and close the connection.
 
-    The format for the connection is:
+Specify each of the nodes in the cluster in the connection string, as shown. This enables high availability for JDBC connections. To find out the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
 
-    ```
-    jdbc:simba://<node1>:12345,<node2>:12345,<node3>:12345[,…];
-               LoginTimeout=<seconds>;DATABASE=<db>;SCHEMA=<schema>
-    ```
+The format for the connection is:
 
-    For example:
+```
+jdbc:simba://<node1>:12345,<node2>:12345,<node3>:12345[,…];
+           LoginTimeout=<seconds>;DATABASE=<db>;SCHEMA=<schema>
+```
 
-    ```
-    jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
-               LoginTimeout=5;DATABASE=test;SCHEMA=falcon_default_schema
-    ```
+For example:
 
-    **Note:** The `DATABASE` and `SCHEMA` parameters need to be in all caps.
+```
+jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
+           LoginTimeout=5;DATABASE=test;SCHEMA=falcon_default_schema
+```
 
-    **Note:** For the simba JDBC driver to work with Spark, the `DATABASE` and `SCHEMA` must be specified in the URL. They cannot be specified as a name/value pair as a map or property. For example:
+As shown, the `DATABASE` and `SCHEMA` parameters need to be in all caps. For the `simba` JDBC driver to work with Spark, the `DATABASE` and `SCHEMA` must be specified in the URL. They cannot be specified as a name/value pair as a map or property. For example:
 
-    ```
-    val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" ->
-    "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" ->
-    "com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -> "Movies", "user" ->
-    "tsadmin", "password" -> "admin")).load()
-    ```
+```
+val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" ->
+"jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" ->
+"com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -> "Movies", "user" ->
+"tsadmin", "password" -> "admin")).load()
+```
 
 
-This InsertData.java example shows how to use ThoughtSpot with JDBC. This is an example of a reference JDBC application:
+This `InsertData.java` example shows how to use ThoughtSpot with JDBC. This is an example of a reference JDBC application:
 
 ```
 import java.sql.DriverManager;
@@ -158,5 +153,3 @@ public class InsertData {
 }
 
 ```
-
-**Parent topic:** [About the JDBC Driver](../../data_integration/clients/about_jdbc_driver.html)

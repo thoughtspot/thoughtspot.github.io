@@ -1,6 +1,6 @@
 ---
-title: [elephant]
-tags: 
+title: [Delete Me]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -14,4 +14,3 @@ This section covers how to plug the cables in and install your ThoughtSpot appli
 This section reviews the types of cables needed for 10GbE networking and how to plug them in.
 -   **[Install and start the appliance](../../appliance/setup/appliance_setup.html)**  
 The ThoughtSpot appliance comes pre-installed with all the required software.
-

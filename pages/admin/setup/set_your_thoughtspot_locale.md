@@ -7,4 +7,4 @@ summary: "You can change the language displayed in the application."
 sidebar: mydoc_sidebar
 ---
 
-{% include custom/set_locale.html %}
+{% include content/set_locale.html %}

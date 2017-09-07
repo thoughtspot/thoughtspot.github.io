@@ -11,7 +11,7 @@ If you find that the charts and tables built on a worksheet contain a large numb
 
 To change the inclusion or join rule of a worksheet:
 
-1. Click on the **Data** icon on the top navigation bar and then on **Worksheets**.
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
     ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
 

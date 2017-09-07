@@ -16,7 +16,7 @@ You can see all of the dependencies for any data source (worksheet or table) on 
 
 To view dependent objects for a data source:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 
@@ -43,7 +43,7 @@ You can delete data sources from the browser if they were created from the brows
 
 ThoughtSpot checks for dependencies whenever you try to delete a table or worksheet.
 
-1. Click on **Data**, on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
      ![](../../shared/conrefs/../../images/data_icon.png "Data")
 

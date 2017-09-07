@@ -1,30 +1,21 @@
 ---
-title: [elephant]
-tags: 
+title: [Delete a visualization]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Delete a visualization
+You can remove a visualization from your pinboard. To delete a visualization:
 
-You can remove a visualization from your pinboard.
+1. Click on **Pinboards**, on the top navigation bar.
 
-To delete a visualization:
+     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
 
-1.   Click on **Pinboards**, on the top navigation bar. 
+2. On the pinboard list page, click the pinboard you would like to edit.
+3. Click **Delete** under the dropdown menu of the visualization you would like to delete.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards") 
+     ![](/pages/images/detele_a_pinboard_visualization.png "Delete a visualization")
 
-2.   On the pinboard list page, click the pinboard you would like to edit. 
-3.   Click **Delete** under the dropdown menu of the visualization you would like to delete. 
+4. Save your pinboard by clicking **Actions** and **Save**.
 
-     ![](/pages/images/detele_a_pinboard_visualization.png "Delete a visualization") 
-
-4.   Save your pinboard by clicking **Actions** and **Save**. 
-
-     ![](/pages/shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard") 
-
-
-**Parent topic:** [Other pinboard actions](../../../pages/end_user_guide/pinboards/pinboard_actions.html)
-
+     ![](/pages/shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard")

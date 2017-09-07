@@ -1,24 +1,20 @@
 ---
 title: [Enabling ODBC Logs on Linux or Solaris]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Learn how to troubleshoot ODBC connections."
 sidebar: mydoc_sidebar
 ---
-# Enabling ODBC Logs on Linux or Solaris
-
 If you need more information in order to troubleshoot ODBC connections, you can enable logging for ODBC. To do this on Linux or Solaris, follow these instructions.
 
 To enable ODBC logs:
 
-1.   Navigate to the directory where you installed ODBC.
-2.   Open the file `odbc.ini` in a text editor.
-3.   Find the settings `LogLevel` and `LogPath` in the file, and uncomment them by removing the "\#" at the beginning of each line.
-4.   Edit the value for each of the logging properties:
+1. Navigate to the directory where you installed ODBC.
+2. Open the file `odbc.ini` in a text editor.
+3. Find the settings `LogLevel` and `LogPath` in the file, and uncomment them by removing the "\#" at the beginning of each line.
+4. Edit the value for each of the logging properties:
 
-    -   For LogLevel, enter a number from 1 to 6 (with 6 being the most verbose).
-    -   For LogPath, enter the fully qualified path where you want the log to be written.
     Example for Linux 64-bit:
 
     ```
@@ -34,6 +30,6 @@ To enable ODBC logs:
     \#LogPath            = /usr/local/scaligent/toolchain/local/simba/odbc/linux/Logs  \# Set the debug log files path**
     ```
 
-5. Run the ODBC load, and send the log file to ThoughtSpot Support.
+    For `LogLevel`, enter a number from 1 to 6 (with 6 being the most verbose). For `LogPath`, enter the fully qualified path where you want the log to be written.
 
-**Parent topic:** [Troubleshooting Data Integrations](../../data_integration/troubleshooting/troubleshooting_intro.html)
+5. Run the ODBC load, and send the log file to ThoughtSpot Support.

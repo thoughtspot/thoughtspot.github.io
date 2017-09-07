@@ -14,7 +14,7 @@ Before configuring CA SiteMinder, you must [configure SAML in ThoughtSpot](ts_as
 
 Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
 
-1.   Configure the Local Identity Provider Entity as follows: 
+1. Configure the Local Identity Provider Entity as follows: 
 
     |Section|Entry|
     |-------|-----|
@@ -28,7 +28,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Signed Authentication Requests Required|No|
     |Supported NameID format|Optional|
 
-2.   Create the Remote SP Entity, either via a metadata import or manually. To configure the Remote SP entity manually, select **Create Entity**. Create ThoughtSpot as a Remote Entity with following details:
+2. Create the Remote SP Entity, either via a metadata import or manually. To configure the Remote SP entity manually, select **Create Entity**. Create ThoughtSpot as a Remote Entity with following details:
 
     |Section|Entry|
     |-------|-----|
@@ -41,8 +41,8 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Verification Certificate Alias|Select the correct certificate or import one if not done already. This is used to verify the signature in incoming requests|
     |Supported NameID Format|Optional|
 
-3.   You will now configure the Federation Partnership between CA SiteMinder \(the IDP\) and ThoughtSpot \(the Remote SP\) in CA SiteMinder. Log in to CA SiteMinder. 
-4.   Navigate to **Federation** -\> **Partnership Federation** -\> **Create Partnership** \(**SAML 2 IDP** -\> **SP**\). 
+3. You will now configure the Federation Partnership between CA SiteMinder \(the IDP\) and ThoughtSpot \(the Remote SP\) in CA SiteMinder. Log in to CA SiteMinder. 
+4. Navigate to **Federation** -\> **Partnership Federation** -\> **Create Partnership** \(**SAML 2 IDP** -\> **SP**\). 
 5. Click **Configure Partnership** and fill in the following values: 
 
     |Section|Entry|
@@ -55,7 +55,7 @@ Use this procedure to set up CA SiteMinder for use with ThoughtSpot:
     |Skew Time|Any per environment requirement|
     |User Directories and Search Order|Select required Directories in required search order|
 
-6.   Click **Configure Assertion** and fill in the following values: 
+6. Click **Configure Assertion** and fill in the following values: 
 
     |Section|Entry|
     |-------|-----|

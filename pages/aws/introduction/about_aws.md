@@ -1,12 +1,18 @@
 ---
-title: [About AWS]
-tags: 
+title: [About ThoughtSpot and AWS]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About AWS
+Congratulations on purchasing the ThoughtSpot instance. This guide will get you started with setting up the Amazon Web Services (AWS) virtual machine (VM) offering.
+
+We hope your experience with ThoughtSpot is excellent. Please let us know how it goes, and what we can do to make it better.
+
+You can [contact ThoughtSpot](/pages/aws/welcome/contact.html) by phone, mail, email, or by filing a support ticket.
+
+# A little bit about AWS
 
 AWS is a secure cloud services platform offered by Amazon. Using ThoughtSpot on AWS allows you to easily add instances as your dataset grows.
 
@@ -24,6 +30,4 @@ AWS can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 
 Your database capacity will determine the number of instances you'll need and the instance network/storage requirements. In addition, you can go with multiple VMs based on your dataset size.
 
-The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference](../../admin/setup/firewall_ports.html#).
-
-**Parent topic:** [Introduction](../../aws/introduction/introduction.html)
+The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference](/pages/aws/setup/firewall_ports.html#).

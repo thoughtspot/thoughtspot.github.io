@@ -1,6 +1,6 @@
 ---
-title: [elephants]
-tags: 
+title: [Delete Me]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -14,4 +14,3 @@ We hope your experience with ThoughtSpot is excellent. Please let us know how it
 
 -   **[Contact ThoughtSpot](../../admin/misc/contact.html)**  
 You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket.
-

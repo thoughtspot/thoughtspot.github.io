@@ -1,18 +1,19 @@
 ---
 title: [ThoughtSpot Clients]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
+toc: false
 summary: "Clients help you to load data easily from your ETL tool or another database."
 sidebar: mydoc_sidebar
 ---
-# ThoughtSpot Clients
-
 ThoughtSpot provides certified clients to help you load data easily from your ETL tool or another database. These include ODBC and JDBC drivers.
 
 You can obtain the ThoughtSpot client downloads from the Help Center. Always use the version of the ThoughtSpot clients that corresponds with the version of ThoughtSpot that you are running. When upgrading, make sure to upgrade your clients as well.
 
-**Important:** The ETL tool must add a data transformation step if the source column data type does not exactly match the target's, ThoughtSpot's, column data type. The driver does not do any implicit conversions.
+{% include important.html content="The ETL tool must add a data transformation step if the source column data type does not exactly match the target's, ThoughtSpot's, column data type. The driver does not do any implicit conversions." %}
+
+## Where to go next
 
 -   **[About the ODBC Driver](../../data_integration/clients/about_odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.

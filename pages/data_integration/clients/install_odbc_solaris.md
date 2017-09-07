@@ -1,37 +1,29 @@
 ---
 title: [Install the ODBC Driver on Solaris]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Solaris ODBC driver and install it."
 sidebar: mydoc_sidebar
 ---
-# Install the ODBC Driver on Solaris
+The Solaris ODBC driver is certified on Solaris Sparc 10. It is important to note the following about the ODBC login information:
 
-It is important to note the following about the ODBC login information:
+-   Database username: This is not the machine login username.This is the name of a ThoughtSpot user with administrator permissions.
+-   Database password: This is not the machine login password. This is the ThoughtSpot user password.
 
--   Database username: This is the name of a ThoughtSpot user with administrator permissions.
+When you are ready, do the following to install the driver:
 
-    **Attention:** This is not the machine login username.
-
--   Database password: This is the ThoughtSpot user password.
-
-    **Attention:** This is not the machine login password.
-
-
-The Solaris ODBC driver is certified on Solaris Sparc 10.
-
-1.   Create a file on your Solaris workstation called /etc/simbaclient.ini and add the following text to it:
+1. Create a file on your Solaris workstation called `/etc/simbaclient.ini` and add the following text to it:
 
     ```
     [Driver]
     ErrorMessagesPath=<path_to_error_messages_directory>
     ```
 
-2.   Obtain the ODBC driver:
-    1.   Navigate to the Downloads page in the Help Center to download the ODBC driver.
-    2.   Click **ODBC Driver for Solaris** to download the file `ThoughtSpot_solaris_sparc_odbc_<version>.tar.gz`.
-    3.   Unzip and untar the file:
+2. Obtain the ODBC driver:
+    1. Navigate to the Downloads page in the Help Center to download the ODBC driver.
+    2. Click **ODBC Driver for Solaris** to download the file `ThoughtSpot_solaris_sparc_odbc_<version>.tar.gz`.
+    3. Unzip and untar the file:
 
         ```
         gunzip ThoughtSpot_solaris_sparc_odbc_<version>.tar.gz
@@ -39,7 +31,10 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
         tar -xvf ThoughtSpot_solaris_sparc_odbc_<version>.tar
         ```
 
-3.   Copy the library files from the Lib directory to a safe location on your Solaris machine. Add the corresponding path to the LD_LIBRARY_PATH environment variable. For 32-bit users, the library files are located in the directory:
+3. Copy the library files from the Lib directory to a safe location on your Solaris machine.
+4. Add the corresponding path to the `LD_LIBRARY_PATH` environment variable.
+
+    For 32-bit users, the library files are located in the directory:
 
     ```
     /solaris_sparc/Lib/Solaris_sparc_gcc
@@ -51,8 +46,9 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
     /solaris_sparc/Lib/Solaris_sparc64_gcc
     ```
 
-4.   Open the file `/solaris_sparc/Setup/odbc.ini` in the editor of your choice.
-5. Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`. Then find the line below it that begins with `ServerList`, and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as 12345. The syntax for `ServerList` is:
+5. Open the file `/solaris_sparc/Setup/odbc.ini` in the editor of your choice.
+6. Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`.
+   Find the line below it that begins with `ServerList`, and replace `127.0.0.1` with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as `12345`. The syntax for `ServerList` is:
 
     ```
     ServerList = <node1_IP> 12345, <node2_IP> 12345 [, <node3_IP> 12345, ...]
@@ -77,8 +73,10 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
 
     If you need to obtain the IP addresses of the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
 
-6.   Open the file `/solaris_sparc/Setup/odbcinst.ini` in the editor of your choice.
-7. Update the the line that starts with `Driver` to have the path to the file `libSimbaClient.so` (Use the path where you copied the library files). For example, for the 64-bit ODBC driver:
+7. Open the file `/solaris_sparc/Setup/odbcinst.ini` in the editor of your choice.
+8. Update the the line that starts with `Driver` to have the path to the file `libSimbaClient.so`
+
+   Use the path where you copied the library files. For example, for the 64-bit ODBC driver:
 
     ```
     [ThoughtSpot(x64)]
@@ -90,6 +88,6 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
     SQLLevel            = 1
     ```
 
-8. Save the file. Now you can test your ODBC connection.
+8. Save the file.
 
-**Parent topic:** [About the ODBC Driver](../../data_integration/clients/about_odbc.html)
+Now you can test your ODBC connection.

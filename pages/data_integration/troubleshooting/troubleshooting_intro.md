@@ -1,13 +1,11 @@
 ---
 title: [Troubleshooting Data Integrations]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Learn how to fix connection issues."
 sidebar: mydoc_sidebar
 ---
-# Troubleshooting Data Integrations
-
 This section can help if you're having trouble creating a connection or need to find out more information about what is going on with ODBC or JDBC.
 
 The information contained here is very basic, and mostly about how to enable logs on the client side. If you need more detailed troubleshooting information or help, please contact ThoughtSpot Support.

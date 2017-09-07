@@ -1,18 +1,11 @@
 ---
-title: [elephant]
-tags: 
+title: [Delete Me]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Other pinboard actions
-
-Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard.
-
-Most of these actions are found under the Actions button.
-
- ![](/pages/images/pinboard_actions.png "Pinboard actions button") 
 
 -   **[Search actions within a pinboard](../../../pages/end_user_guide/pinboards/about_showing_underlying_data_from_within_a_pinboard.html)**  
 You can perform many of the same search actions on individual visualizations within a pinboard as you can within a search.
@@ -32,4 +25,3 @@ Displaying your pinboard as a slideshow is a good way to present its contents to
 You can remove a visualization from your pinboard.
 
 **Parent topic:** [About pinboards](../../../pages/end_user_guide/pinboards/about_pinboards.html)
-

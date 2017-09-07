@@ -6,4 +6,4 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 ---
 
-{% include custom/log_in_out.html %}
+{% include content/log_in_out.html %}

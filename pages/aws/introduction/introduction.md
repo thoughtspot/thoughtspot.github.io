@@ -1,6 +1,6 @@
 ---
-title: [Introduction]
-tags: 
+title: [Delete Me]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"

@@ -22,14 +22,14 @@ Note that `onAuthenticationExpiredCallback` is only available if you have at lea
 
 To enable the JS API:
 
-1.   Navigate to the Downloads page in the Help Center to download the ThoughtSpot JS API JavaScript file. 
-2.   Include the ThoughtSpot JS API JavaScript file into your web page using an HTML include script like this in the `<head>` section: 
+1. Navigate to the Downloads page in the Help Center to download the ThoughtSpot JS API JavaScript file. 
+2. Include the ThoughtSpot JS API JavaScript file into your web page using an HTML include script like this in the `<head>` section: 
 
     ```
     <script type=”text/javascript” src=”<protocol><your.thoughtspot.domain>/js/api/api.min.js”>
     ```
 
-3.   From your application code, authenticate to ThoughtSpot using a call to the JavaScript method `window.thoughtspot.initialize(onInitializationCallback, onAuthenticationExpiredCallback, <Hostname_or_IP>)` For example:
+3. From your application code, authenticate to ThoughtSpot using a call to the JavaScript method `window.thoughtspot.initialize(onInitializationCallback, onAuthenticationExpiredCallback, <Hostname_or_IP>)` For example:
 
     ```
     <script type=”text/javascript”>
@@ -59,9 +59,9 @@ To enable the JS API:
     </script>
     ```
 
-4.   Set up CORS \(Cross-Origin HTTP Request\) to control what domains are allowed to use this code to authorize users: 
-    1.   [Log in to the Linux shell using SSH](../introduction/login_console.html#). 
-    2.   Issue the command to set the domains that will be allowed to access ThoughtSpot using the JS API using this syntax: 
+4. Set up CORS \(Cross-Origin HTTP Request\) to control what domains are allowed to use this code to authorize users: 
+    1. [Log in to the Linux shell using SSH](../introduction/login_console.html#). 
+    2. Issue the command to set the domains that will be allowed to access ThoughtSpot using the JS API using this syntax: 
 
         ```
         echo "https?://(localhost|.*:443)" | tscli --adv config set
@@ -78,7 +78,7 @@ To enable the JS API:
         **Note:** By default this value is set to empty, to disallow any cross domain access. When this value is changed, the nginx service will be restarted automatically to reflect the change.
 
 5. Now you're ready to either [embed a visualization](../embedding_viz/embed_a_viz.html#) or [use the REST API to get data](../data_api/use_data_api_read.html#) from ThoughtSpot and display it within your Web page or application. 
-6.   Test your Web page or application. If your the page no longer works, check the JavaScript console on your Web browser. If you see this error message, it means that the CORS cross domain setting on nginix was not completed correctly: 
+6. Test your Web page or application. If your the page no longer works, check the JavaScript console on your Web browser. If you see this error message, it means that the CORS cross domain setting on nginix was not completed correctly: 
 
     ```
     No 'Access-Control-Allow-Origin' header is present on the requested resource.

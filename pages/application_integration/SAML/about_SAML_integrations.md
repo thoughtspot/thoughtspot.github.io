@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [About SAML]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About SAML
-
 ThoughtSpot can be set up with Security Assertion Markup Language \(SAML\) to enable Single Sign On \(SSO\). SAML can be configured in several ways, including with CA SiteMinder.
 
 For basic instructions on configuring SAML, use one of these procedures:
@@ -23,4 +20,3 @@ ThoughtSpot can use Security Assertion Markup Language \(SAML\) to authenticate 
 CA SiteMinder can be used as an Identity Provider for single sign on to ThoughtSpot.
 -   **[Configure Active Directory Federated Services](../../application_integration/SAML/integrate_ADFS.html)**  
 You can configure Active Directory Federated Services \(AD FS\) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS.
-

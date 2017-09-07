@@ -12,12 +12,12 @@ Make changes to the style of your ThoughtSpot interface in the **Style Customiza
 
 To re-brand the interface:
 
-1.   Log in to ThoughtSpot from a browser.
-2.   Click on the **Admin** icon, on the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
+2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
 
-3.   In the **Admin** panel, click on **Style Customization**.
+3. In the **Admin** panel, click on **Style Customization**.
 
      ![](../../images/style_customization.png "Style Customization menu")
 

@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 Before you load your data, you should consider the type of casing you would like your data to reflect. The case sensitivity for source data strings is preserved in the display. So, the visual display of results is identical to the input case that is loaded.
 
-**Note:** The casing will remain lowercase in other parts of the application, such as when you ask a question or filter.
+{% include note.html content="The casing will remain lowercase in other parts of the application, such as when you ask a question or filter." %}
 
 It is important to note that string casings aren’t applied globally, but by column. So datasets will have different string casings as long as they're in different columns. Tables that are already compacted will keep their lowercase format. In these cases, in order to get the specific string case that you want, you would have to truncate related tables and reload them.
 

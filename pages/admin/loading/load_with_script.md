@@ -46,7 +46,7 @@ The example script shown here uses the `cat` command to read the data file, and 
     ```
 
 
-## Loading data in bulk
+## Loading data efficiently
 
 If you have a very large data file that takes a long time to load, you can reduce the load time by splitting it up into multiple files and loading them in parallel using multiple invocations of `tsload`. If the size of any of your data files is greater than 50 million rows, running `tsload` in parallel can reduce the load time significantly.
 

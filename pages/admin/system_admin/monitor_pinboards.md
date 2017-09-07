@@ -23,7 +23,7 @@ The **Overview** tab shows a summary of overall cluster status, usage and capaci
 
 ### Data
 
-The **Data** section shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, etc.
+The **DATA** section shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, etc.
 
 The **Database** section has the following values:
 

@@ -1,6 +1,6 @@
 ---
 title: [About the ODBC Driver]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."
@@ -47,5 +47,3 @@ Use this procedure to obtain the Linux ODBC driver and install it.
 Use this procedure to obtain the Solaris ODBC driver and install it.
 -   **[Best Practices for Using ODBC](../../data_integration/clients/odbc_best_practices.html)**  
 To successfully use ODBC, following these best practices is recommended.
-
-**Parent topic:** [ThoughtSpot Clients](../../data_integration/clients/about_clients.html)

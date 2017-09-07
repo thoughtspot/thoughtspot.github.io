@@ -3,7 +3,7 @@ title: [Last data refresh time]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "You can see the last time at which data was refreshed without having to visit the **Data** page.
+summary: "You can see the last time at which data was refreshed without having to visit the **DATA** page.
 "
 sidebar: mydoc_sidebar
 ---
@@ -11,7 +11,7 @@ Hover over the data when choosing a data source to see the last time it was upda
 
  ![](/pages/images/data_refresh_time_source.png "Last updated in source selection")
 
-You can also hover over a column in the **Data** column to see when it was last refreshed. This popup will also show sample values from that column.
+You can also hover over a column in the **DATA** column to see when it was last refreshed. This popup will also show sample values from that column.
 
  ![](/pages/images/data_refresh_time_choose.png "Last updated in Data column")
 
