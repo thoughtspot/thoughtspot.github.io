@@ -17,7 +17,7 @@ tsload supports both full and incremental data loads. For incremental loads, an 
 
 You can integrate tsload into your ETL environment for more automated data loads. Most ETL tools provide the ability to write target data into files and support scripted post-transformation actions that can include loading data into ThoughtSpot. This procedure describes manually loading data, but the tsload commands could be saved as a script:
 
-1.  [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1.  Log in to the Linux shell using SSH.
 2.  Change to the directory where your CSV files are staged.
 3.  Invoke tsload, specifying the appropriate flags and your data source file:
 

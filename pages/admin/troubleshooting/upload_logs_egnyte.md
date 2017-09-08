@@ -16,7 +16,7 @@ The server directory path for uploading a file is formatted like this example: `
 
 You can upload files directly to the file server using this procedure:
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Navigate to the directory where the file to be uploaded is located.
 3. Issue the command to upload the file, specifying the file name and directory path:
 

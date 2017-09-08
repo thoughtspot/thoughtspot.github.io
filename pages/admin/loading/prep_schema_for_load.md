@@ -19,7 +19,7 @@ Before connecting with TQL, you will need:
 
 To connect to TQL:
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Invoke TQL:
 
     ```

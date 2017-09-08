@@ -22,7 +22,7 @@ To add the SSL certificate for LDAP:
     $ scp <certificate> admin@<IP_address>:<path>
     ```
 
-3. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+3. Log in to the Linux shell using SSH.
 4. Change directories to where you copied the certificate:
 
     ```

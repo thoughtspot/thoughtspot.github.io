@@ -1,22 +1,19 @@
 ---
-title: [elephant]
-tags: 
+title: [Public API reference]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Public API reference
-
 This is a list of all the public ThoughtSpot APIs. The descriptions are aimed to help you solve specific use cases, such as syncing users and groups, or fetching visualization headers.
 
 See [About the REST API](../data_api/about_data_api.html#) for information on how to call and use the REST APIs.
 
 ## Public name: pinboarddata
 
--   Public namespace: Data
--   Current URL path: /tspublic/v1/pinboarddata
--   Implementation notes: Gets the pinboard data from the ThoughtSpot system. Returns one object if you make a call to a specific visualization on a pinboard.
+- Public namespace: Data
+- Current URL path: /tspublic/v1/pinboarddata
+- Implementation notes: Gets the pinboard data from the ThoughtSpot system. Returns one object if you make a call to a specific visualization on a pinboard.
 
 |Parameter|Value|Description|Parameter Type|Data Type|
 |---------|-----|-----------|--------------|---------|
@@ -27,11 +24,11 @@ See [About the REST API](../data_api/about_data_api.html#) for information on ho
 |offset|-1|Offset|query|integer|
 |formattype|COMPACT|JSON format type. Values allowed are FULL and COMPACT.|query|string|
 
-|HTTP Status Code|Reason|Response Model|Headers|
-|----------------|------|--------------|-------|
-|200|Gets the data of a pinboard/visualization.| | |
-|400|Invalid pinboard id.| | |
-|default| | | |
+HTTP Status Codes
+
+* 200 Gets the data of a pinboard/visualization.
+* 400 Invalid pinboard id.
+
 
 Response example:
 
@@ -80,19 +77,19 @@ Response Headers
 
 ## Public name: pinboard/listvizheaders
 
--   Public namespace: Objects
--   Current URL path: /tspublic/v1/metadata/listvizheaders
--   Implementation notes: Gets the visualization headers from the ThoughtSpot system. The expected output includes a list of objects, each with information about the visualizations of the given pinboard.
+- Public namespace: Objects
+- Current URL path: /tspublic/v1/metadata/listvizheaders
+- Implementation notes: Gets the visualization headers from the ThoughtSpot system. The expected output includes a list of objects, each with information about the visualizations of the given pinboard.
 
 |Parameter|Value|Description|Parameter Type|Data Type|
 |---------|-----|-----------|--------------|---------|
 |id| |GUID of the reportbook|query|string|
 
-|HTTP Status Code|Reason|Response Model|Headers|
-|----------------|------|--------------|-------|
-|200|Gets the visualization headers.| | |
-|400|Invalid pinboard GUID.| | |
-|default| | | |
+HTTP Status Code
+
+* 200 Gets the visualization headers.
+* 400 Invalid pinboard GUID.
+
 
 Response example:
 
@@ -124,15 +121,15 @@ Response Headers
 
 Header of each visualization header object obtained will have these first class citizens:
 
-1.  id \(GUID\)
-2.  name \(String\)
-3.  author \(GUID\)
-4.  created \(Epoch\)
-5.  modified \(Epoch\)
-6.  modifiedBy \(GUID\)
-7.  owner \(GUID\)
-8.  vizType \(String : CHART, TABLE, etc.\)
-9.  title
+* id (GUID)
+* name (String)
+* author (GUID)
+* created (Epoch)
+* modified (Epoch)
+* modifiedBy (GUID)
+* owner (GUID)
+* vizType (String : CHART, TABLE, etc.)
+* title
 
 ```
 {
@@ -156,16 +153,16 @@ Header of each visualization header object obtained will have these first class 
 
 ## Public name: principal/sync
 
--   Public namespace: Configuration
--   Current URL path: /tspublic/v1/user/sync
--   Implementation notes: API to synchronize principal from external system with ThoughtSpot system. This API is for users and groups. It should help to keep ThoughtSpot users and groups automatically synchronized with your external database.
+- Public namespace: Configuration
+- Current URL path: /tspublic/v1/user/sync
+- Implementation notes: API to synchronize principal from external system with ThoughtSpot system. This API is for users and groups. It should help to keep ThoughtSpot users and groups automatically synchronized with your external database.
 
     Specifically, you will have to make a call to /tspublic/v1/user/sync containing all users and groups present in the external database. If the call succeeds, then it is guaranteed that the users and groups in ThoughtSpot match those specified in the list of objects passed to /tspublic/v1/user/sync. This means that:
 
-    -   Objects \(users or groups\) present in ThoughtSpot, but not present in the list passed to a sync call will be deleted.
-    -   Objects present in ThoughtSpot, and present in the list passed to a sync call will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
+    - Objects (users or groups) present in ThoughtSpot, but not present in the list passed to a sync call will be deleted.
+    - Objects present in ThoughtSpot, and present in the list passed to a sync call will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
 
-    -   Objects not present in ThoughtSpot, and present in the list will be created in ThoughtSpot.
+    - Objects not present in ThoughtSpot, and present in the list will be created in ThoughtSpot.
     The returned object represents the changes that were made in ThoughtSpot.
 
 
@@ -175,10 +172,9 @@ Header of each visualization header object obtained will have these first class 
 |applyChanges| |formData. Flag to indicate whether to sync the users and groups to the system, and apply the difference evaluated. The API can be used to just validate the difference before applying the changes.|boolean| |
 |defaultPassword| |formData. If set then all of the created users will have a password that is the same as the defaultPassword applied.|string| |
 
-|HTTP Status Code|Reason|Response Model|Headers|
-|----------------|------|--------------|-------|
-|200| | | |
-|default| | | |
+HTTP Status Code
+
+* 200
 
 Response example:
 
@@ -234,38 +230,38 @@ Response Headers
 
 ## Public name: principal/list
 
--   Public namespace: Configuration
--   Current URL path: /tspublic/v1/user/list
--   Implementation notes: API to get a list of all users, groups, and their inter-dependencies in the form of principal objects. This API is for users and groups.
+- Public namespace: Configuration
+- Current URL path: /tspublic/v1/user/list
+- Implementation notes: API to get a list of all users, groups, and their inter-dependencies in the form of principal objects. This API is for users and groups.
 
     Input Principal Object Format:
 
-    One principal object contains the following properties \(\* denotes required properties\):
+    One principal object contains the following properties (* denotes required properties):
 
-    -   name\*: String to represent the name of the principal.
+    - `name*`: String to represent the name of the principal.
 
-        **Note:** This field, in conjunction with whether the object is a user or group, is used to identify a user/group. Consequently, this field is required to be unique \(unique for users and groups separately. I.e. you can have user “x” and group “x”\).
+       This field, in conjunction with whether the object is a user or group, is used to identify a user/group. Consequently, this field is required to be unique (unique for users and groups separately. I.e. you can have user “x” and group “x”).
 
-    -   displayName\*: String to represent the display name of the principal.
+    - `displayName*`: String to represent the display name of the principal.
 
-    -   description: String to describe the principal.
+    - `description`: String to describe the principal.
 
-    -   mail: String to represent the email address of the user. This field should be populated only in case of user not group. It is ignored in the case of groups.
+    - `mail`: String to represent the email address of the user. This field should be populated only in case of user not group. It is ignored in the case of groups.
 
-    -   principalTypeEnum\*: The value of this field should be one of the following:
+    - `principalTypeEnum*`: The value of this field should be one of the following:
 
-        -   LOCAL_USER: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.
+        - `LOCAL_USER`: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.
 
-        -   LOCAL_GROUP: Groups created in the ThoughtSpot system.
-    -   password: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.
+        - `LOCAL_GROUP`: Groups created in the ThoughtSpot system.
+    - `password`: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.
 
-    -   groupNames: List of group names that a principal belongs to directly. Groups and users can belong to other groups.
+    - `groupNames`: List of group names that a principal belongs to directly. Groups and users can belong to other groups.
 
 
-|HTTP Status Code|Reason|Response Model|Headers|
-|----------------|------|--------------|-------|
-|200| | | |
-|default| | | |
+HTTP Status Code
+
+* 200
+
 
 Response example:
 
@@ -284,7 +280,7 @@ https://dogfood/callosum/v1/tspublic/v1/user/list
 Response Body format
 
 ```
-[ 
+[
   {
     "name": "Group 1",
     "displayName": "Group Display Name 1",
@@ -385,4 +381,3 @@ Response Headers
 ```
 
 **Parent topic:** [Reference guide](../../application_integration/reference/reference_guide.html)
-

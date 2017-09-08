@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [Change a column data type]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change a data type for a data source
-
 When a data type used in a data source has changed, or you decide that the data should come into ThoughtSpot with a different data type, you can change the data type, even if you've already loaded data into the target table.
 
 You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
@@ -21,24 +18,24 @@ The procedure to make this change to an existing data source has two main parts:
 
 To change the data type of an existing data source:
 
-1.   [Log in to the Linux shell using SSH](../../../admin/setup/login_console.html#). 
-2.   Launch TQL. 
+1. Log in to the Linux shell using SSH.
+2. Launch TQL.
 
     ```
     $ tql
     ```
 
-3.  Designate the database you'll be working in:
+3. Designate the database you'll be working in:
 
     ```
     TQL> use <database_name>;
     ```
 
-4.  Find the name of the table you want to change.You can use the TQL command `SHOW TABLES;` to see a list of tables.
+4. Find the name of the table you want to change.You can use the TQL command `SHOW TABLES;` to see a list of tables.
 
     To see the current sharding on the table, use `SCRIPT TABLE <table_name>;`
 
-5. Issue the command to change the data type of a column using this syntax: 
+5. Issue the command to change the data type of a column using this syntax:
 
     ```
     TQL> ALTER TABLE <schema>.<table>
@@ -54,7 +51,7 @@ To change the data type of an existing data source:
 
     You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.
 
-6.  Run the `SCRIPT TABLE` command to get the new DDL to create the table.
+6. Run the `SCRIPT TABLE` command to get the new DDL to create the table.
 
     ```
     TQL> SCRIPT TABLE <table>;
@@ -62,9 +59,6 @@ To change the data type of an existing data source:
 
     Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR\(<number\) column definitions with VARCHAR\(0\), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.
 
-7.  [Create a new data source.](../../../shared/conrefs/../../data_connect/data_connect/setup/adding_data_source.html#)Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the `SCRIPT TABLE` command.
-8.  Run the data load and verify that everything is working as it should be.
-9. If the old data source was running as a recurring load, [stop it from running](../../../shared/conrefs/../../data_connect/data_connect/making_changes/stop_scheduled_job.html#). 
-
-**Parent topic:** [About making changes to Data Connect setup](../../../data_connect/data_connect/making_changes/about_changing_etl_jobs.html)
-
+7. [Create a new data source.](/pages/data_connect/data_connect/setup/adding_data_source.html#)Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the `SCRIPT TABLE` command.
+8. Run the data load and verify that everything is working as it should be.
+9. If the old data source was running as a recurring load, [stop it from running](/pages/data_connect/data_connect/making_changes/stop_scheduled_job.html#).

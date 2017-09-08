@@ -29,7 +29,7 @@ Before configuring OpenLDAP, you will need this information:
 
 You do not need to create a user called `tsadmin` on your LDAP server. Internal authentication can be used for `tsadmin`. To configure LDAP for OpenLDAP:
 
-1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+1. Log in to the Linux shell using SSH.
 2. Run the command to configure LDAP:
 
     ```

@@ -1,15 +1,11 @@
 ---
-title: [elephant]
-tags: 
+title: [About full embed]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "Full embedding enhances our existing external sharing functionality. It allows you to create content in an embedded environment."
 sidebar: mydoc_sidebar
 ---
-# About full embed
-
-Full embedding enhances our existing external sharing functionality. It allows you to create content in an embedded environment.
-
 You can embed the full search experience into an iframe with different navigation views and toggle options. Before you can enable full embed, you need to [enable the JavaScript API \(JS API\)](../JS_API/enable_JS_API.html#) and authenticate to ThoughtSpot.
 
 Embedded content creation gives you the ability to:
@@ -79,12 +75,9 @@ The URL flag `embedApp=true` is used for the iframe source. The default value fo
 
 Here are some additional notes about the full embed feature:
 
--   You can call thoughtspot.<customerURL\>.com/\#/answer and use that to access the search functionality.
--   You can call thoughtspot.<customerURL\>.com/\#/pinboards and use that to access saved pinboards.
+-   You can call `thoughtspot.<customerURL>.com/#/answer` and use that to access the search functionality.
+-   You can call `thoughtspot.<customerURL>.com/#/pinboards` and use that to access saved pinboards.
 -   ThoughtSpot can disable error messages within the ThoughtSpot iFrame and provide APIs to you to access those messages, and display them in your UI appropriately. This is done by suppressing error messages in the UI, and passing their details along to window.postMessage function, which your parent app can listen to. Hidden messages can be viewed in the console logs. Contact ThoughtSpot Support if you would like to enable this feature.
 -   You can use SAML for authentication against ThoughtSpot within the iFrame.
 -   ThoughtSpot can hide the top navigation within the ThoughtSpot app. Contact ThoughtSpot Support to request this modification.
 -   ThoughtSpot can hide the expandable left panel that shows data sources and fields within the current data source. Contact ThoughtSpot Support to request this modification.
-
-**Parent topic:** [About Embedding](../../application_integration/embedding_viz/about_embedding_viz.html)
-

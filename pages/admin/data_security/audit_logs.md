@@ -57,7 +57,7 @@ Or both:
 
 To get audit logs:
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Issue the `tscli event list` command, with the desired parameters, for example:
 
     ```
@@ -77,7 +77,7 @@ Whenever a CVE is identified, and an OS package needs to be updated, the next pa
 
 Use the command `tscli os list-packages` to see installed packages and their version:
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Issue the `tscli os list-packages` command to list installed packages:
 
     ```

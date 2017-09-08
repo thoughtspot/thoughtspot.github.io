@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [Calling the REST API]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Calling the REST API
-
 To call the REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
 
 ## Specify the pinboard or visualization example
@@ -15,13 +12,13 @@ To call the REST API, you'll specify a URL using the POST method, passing the ID
 For a pinboard, you'll append the ID of your pinboard as a parameter, like this example:
 
 ```
-https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3 
+https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
 ```
 
 To retrieve data from a specific visualization within a pinboard, you would append the ID number of the visualization using the vizid parameter:
 
 ```
-https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D 
+https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D
 ```
 
 **Remember:** You must add brackets around the vizid parameter. The URL encoding for open bracket is `%5B`, and the URL encoding for close bracket is `%5D`.
@@ -30,14 +27,14 @@ https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db
 
 When you parse the returned JSON data you can see that there is one object for every viz on the pinboard. The objects are named according to the corresponding vizid.
 
- ![](../../images/parsed_json_data.png "Parsed JSON data") 
+ ![](../../images/parsed_json_data.png "Parsed JSON data")
 
 If you make a call to a specific viz on a pinboard, it will return just one object. The JSON object format for the data that is returned from ThoughtSpot is:
 
 ```
 {
 vizId1 : {
-         name: “Viz name”, 
+         name: “Viz name”,
          :[[2-d array of data values], [], [] …..[]],
          columnNames:[col1, col2, …. ],
          samplingRatio: n
@@ -57,7 +54,7 @@ Each object contains four components:
 
 The `columnNames` array contains a list of all column headers. And the `data` array contains a list of other arrays. Each sub array represents a new row of data.
 
- ![](../../images/columnnames_and_data_arrays.png "columnNames and data arrays") 
+ ![](../../images/columnnames_and_data_arrays.png "columnNames and data arrays")
 
 The REST API supports filtering the data returned via parameters that you pass within the URL. These are called [Runtime Filters](../runtime_filters/about_runtime_filters.html#).
 
@@ -66,48 +63,42 @@ The REST API supports filtering the data returned via parameters that you pass w
 The following example shows a JavaScript function that calls the REST API, gets the results back, and retrieves a single value from the JSON results:
 
 ```
-        /**
-         * Generates headline by making a data API call.
-         *
-         * @param void
-         * @return void
-         */
-        function generateHeadline(filters) {
-            var pinboardId = "0aa0839f-5d36-419d-b0db-10102131dc37";
-            var vizId = "67db30e8-06b0-4159-a748-680811d77ceb";
-            var myURL = "";
+/**
+ * Generates headline by making a data API call.
+ *
+ * @param void
+ * @return void
+ */
+function generateHeadline(filters) {
+    var pinboardId = "0aa0839f-5d36-419d-b0db-10102131dc37";
+    var vizId = "67db30e8-06b0-4159-a748-680811d77ceb";
+    var myURL = "";
 
-            if (filters === void 0) {
-                myURL = "http://192.168.2.55:443/callosum/v1/tspublic/v1/" +
-                        "pinboarddata?id=" + pinboardId + "&" +
-                        "vizid=%5B" + vizId + "%5D";
-            } else {
-                var query = getQueryString(filters);
-                myURL = "http://192.168.2.55:443/callosum/v1/tspublic/v1/" +
-                        "pinboarddata?id=" + pinboardId + "&" + +
-                        "vizid=%5B" + vizId + "%5D&" + query;
-            }
+    if (filters === void 0) {
+        myURL = "http://192.168.2.55:443/callosum/v1/tspublic/v1/" +
+                "pinboarddata?id=" + pinboardId + "&" +
+                "vizid=%5B" + vizId + "%5D";
+    } else {
+        var query = getQueryString(filters);
+        myURL = "http://192.168.2.55:443/callosum/v1/tspublic/v1/" +
+                "pinboarddata?id=" + pinboardId + "&" + +
+                "vizid=%5B" + vizId + "%5D&" + query;
+    }
 
-            var jsonData = null;
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", myURL, true);
-            xhr.withCredentials = true;
-            xhr.onreadystatechange = function() {
-                var headline = document.getElementById("embeded-headline");
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    jsonData = JSON.parse(xhr.responseText);
-                    headline.innerHTML = jsonData[vizId].data[0][0];
-                } else {
-                    headline.innerHTML = "Error in getting data !!!";
-                }
-            };
-            xhr.send();
-        } 
+    var jsonData = null;
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", myURL, true);
+    xhr.withCredentials = true;
+    xhr.onreadystatechange = function() {
+        var headline = document.getElementById("embeded-headline");
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            jsonData = JSON.parse(xhr.responseText);
+            headline.innerHTML = jsonData[vizId].data[0][0];
+        } else {
+            headline.innerHTML = "Error in getting data !!!";
+        }
+    };
+    xhr.send();
+}
 
 ```
-
--   **[REST API pagination](../../application_integration/data_api/response_pagination.html)**  
-You can paginate the JSON response that is called from the REST API. The order of the data is retained from page to page.
-
-**Parent topic:** [About the REST API](../../application_integration/data_api/about_data_api.html)
-

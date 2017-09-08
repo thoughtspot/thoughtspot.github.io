@@ -12,7 +12,7 @@ ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Suppor
 
 To set up a relay host:
 
-1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+1. Log in to the Linux shell using SSH.
 2. Issue the setup command, providing the IP address of the relay host:
 
       ```
@@ -41,7 +41,7 @@ To send to multiple emails, provide a comma-separated list with no spaces.
 
 Check if the email settings are working properly by using this procedure.
 
- 1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+ 1. Log in to the Linux shell using SSH.
  2. Try sending an email to yourself by issuing:
 
        ```

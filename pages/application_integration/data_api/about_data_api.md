@@ -1,16 +1,12 @@
 ---
-title: [elephant]
-tags: 
+title: [About the REST API]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
+summary: "The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
 sidebar: mydoc_sidebar
 ---
-# About the REST API
-
-The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application. When using the REST API, authentication is achieved through SAML.
-
-After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON \(JavaScript Object Notation\) representation of the data will be returned.
+When using the REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON \(JavaScript Object Notation\) representation of the data will be returned.
 
 ## Authentication
 
@@ -35,9 +31,3 @@ Remember that the data you retrieve from ThoughtSpot is live data, so whenever t
 ## Public API reference
 
 You can find more information on our public APIs in the [Reference guide](../reference/public_api_reference.html#).
-
--   **[Calling the REST API](../../application_integration/data_api/calling_rest_api.html)**  
-To call the REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
--   **[Use the REST API to get data](../../application_integration/data_api/use_data_api_read.html)**  
-This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application. The data will be returned as JSON \(JavaScript Object Notation\).
-

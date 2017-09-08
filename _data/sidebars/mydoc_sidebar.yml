@@ -811,7 +811,7 @@ entries:
       - title: Change sharding for a data source
         url: /pages/data_connect/making_changes/change_sharding.html
         output: web
-      - title: Change a data type for a data source
+      - title: Change a column data type
         url: /pages/data_connect/making_changes/change_data_type.html
         output: web
       - title: Add a column to an existing data source
@@ -829,14 +829,8 @@ entries:
       - title: Introduction
         url: /pages/data_connect/reference/reference_intro.html
         output: web
-      - title: Login credentials for administration
+      - title: Login for administration
         url: /pages/data_connect/reference/logins.html
-        output: web
-      - title: Log in to ThoughtSpot from a browser
-        url: /pages/data_connect/reference/accessing.html
-        output: web
-      - title: Log in to the Linux shell using SSH
-        url: /pages/data_connect/reference/login_console.html
         output: web
       - title: Best practices
         url: /pages/data_connect/reference/data_connect_insider_tips.html
@@ -934,10 +928,7 @@ entries:
     - levelTwoTitle: Style Customization
       output: web
       levelTwoItems:
-      - title: About Style Customization
-        url: /pages/application_integration/custom_branding/about_style_customization.html
-        output: web
-      - title: Perform Style Customization
+      - title: Make Style Customization
         url: /pages/application_integration/custom_branding/perform_style_customization.html
         output: web
       - title: Upload application logos

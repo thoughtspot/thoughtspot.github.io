@@ -13,7 +13,7 @@ Before you can send a log bundle to ThoughtSpot Support, you must [Connect to th
 
 To generate a log bundle:
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Issue the command to generate the log bundle:
 
     ```

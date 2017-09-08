@@ -30,7 +30,7 @@ There are two ways for you to fetch users and groups from LDAP and populate them
 
 To run the LDAP sync script in interactive mode:
 
-1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+1. Log in to the Linux shell using SSH.
 2. Run the command to start the script:
 
     ```

@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [About Runtime Filters]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# About Runtime Filters
-
 Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned. You can use them with the data API or with embedding of answers or pinboards.
 
 ## Capabilities of Runtime Filters
@@ -62,9 +59,3 @@ If the worksheet was created from an answer \(i.e. it is an aggregated worksheet
 Runtime Filters do not allow you to apply “having" filters using a URL.
 
 You cannot apply a Runtime Filter on a pinboard or visualization built on tables whose schema includes a chasm trap. See the ThoughtSpot Administrator Guide for details on chasm traps and how ThoughtSpot handles them.
-
--   **[Apply a Runtime Filter](../../application_integration/runtime_filters/apply_runtime_filter.html)**  
-Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. The filters are specified in the called URL as parameters.
--   **[Runtime Filter Operators](../../application_integration/runtime_filters/runtime_filter_operators.html)**  
-This list contains all the filter operators you can use with Runtime Filters.
-

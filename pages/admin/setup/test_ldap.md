@@ -9,7 +9,7 @@ sidebar: mydoc_sidebar
 ---
 After configuring LDAP, you can test to make sure it is working by issuing a command.
 
-1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+1. Log in to the Linux shell using SSH.
 2. Issue the LDAP testing command, supplying the information for the LDAP server you configured, as in this example:
 
     ```

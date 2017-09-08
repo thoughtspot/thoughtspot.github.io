@@ -31,7 +31,7 @@ Before you can make changes to the model file, you need to download it. Then you
 
 First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data_modeling_settings.html#). To obtain the model file:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as an Administrator user.
+1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
@@ -73,7 +73,7 @@ Save the model file in the same format as it was when you downloaded it. If you 
 
 To upload the model file:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as an Administrator user.
+1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)

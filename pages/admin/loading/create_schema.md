@@ -19,7 +19,7 @@ You can upload an your SQL script directly through the browser in the ThoughtSpo
 
 ##  Use TQL on the SQL command line
 
-You can choose to run your SQL script within the Linux shell instead. You can run TQL in interactive command line mode, or you can write a script and use TQL to run it. The SQL syntax in ThoughtSpot is called TQL for ThoughtSpot SQL. The ThoughtSpot SQL Command Line (TQL) runs in an interactive mode. To invoke TQL [Log in to the Linux shell using SSH](../setup/login_console.html#) and type `tql`. At the prompt, type `h` or `help` to see a list of supported commands.
+You can choose to run your SQL script within the Linux shell instead. You can run TQL in interactive command line mode, or you can write a script and use TQL to run it. The SQL syntax in ThoughtSpot is called TQL for ThoughtSpot SQL. The ThoughtSpot SQL Command Line (TQL) runs in an interactive mode. To invoke TQL Log in to the Linux shell using SSH and type `tql`. At the prompt, type `h` or `help` to see a list of supported commands.
 
 The steps to build a schema using TQL include:
 

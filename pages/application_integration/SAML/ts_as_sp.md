@@ -9,19 +9,19 @@ ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate us
 
 Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration does not persist across software updates, so you will need to reapply it if you update to a newer release of ThoughtSpot.
 
-1. [Log in to the Linux shell using SSH](../introduction/logins.html#).
 
 ## Edit the applicationContext-security.xml file
 
-1. Change to the SAML directory:
+1. Log in to the Linux shell using SSH.
+2. Change to the SAML directory:
 
     ```
     $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
     ```
 
-2. Open the file `applicationContext-security.xml` in vi or another editor.
-3. Find the section labeled “Entry point to initialize authentication, default values taken from properties file”.
-4. Edit the value for the property entityBaseURL to supply the IP address of the server you want to use.
+3. Open the file `applicationContext-security.xml` in vi or another editor.
+4. Find the section labeled “Entry point to initialize authentication, default values taken from properties file”.
+5. Edit the value for the property entityBaseURL to supply the IP address of the server you want to use.
 
    Only supply the port (e.g. :8080) if the IP address for your server includes it, otherwise omit it. Be sure to use either http: or https:, depending on how your server is configured:
 
@@ -32,15 +32,15 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
 
     The next line contains the `entityId` property. `urn:thoughtspot:callosum:saml` is the default value.
 
-5. Change "thoughtspot" to the name of your cluster:
+6. Change "thoughtspot" to the name of your cluster:
 
     ```
     89  <property name="entityId" value="urn:<your
         cluster>:callosum:saml"/>
     ```
 
-6. Find the section labeled “Provider of default SAML Context”.
-7. Edit the SAML context to change the IP address to your server's IP.
+7. Find the section labeled “Provider of default SAML Context”.
+8. Edit the SAML context to change the IP address to your server's IP.
 
   The default port is 80 for http, and 443 for https:
 
@@ -51,9 +51,11 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
     145 <property name="serverPort" **value="443"**/>
     ```
 
-8. Save the edited file.
+9. Save the edited file.
 
-## Edit the
+## Edit the callosumconfig_prod.json file
+
+If you are not already logged in to the Linux shell using SSH, log in, then do the following:
 
 1. Change directories to the `callosum` directory:
 
@@ -106,5 +108,5 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
 
     -   [Configure CA SiteMinder](configure_SAML_siteminder.html).
     -   [Configure Active Directory Federated Services](integrate_ADFS.html).
-    
+
     Otherwise, refer to your SAML service provider for instructions how to import the metadata.

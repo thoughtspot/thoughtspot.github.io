@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 This procedure tests the network connectivity between the ThoughtSpot nodes, and to the LAN. If you can perform these steps successfully, the network settings on ThoughtSpot are correct.
 
-1. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+1. Log in to the Linux shell using SSH.
 2. Ping each of the other nodes in the cluster.
 3. Ping another machine that exists outside of the cluster, for example, a machine that you will use to stage data to be loaded.
 

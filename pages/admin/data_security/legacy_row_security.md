@@ -88,7 +88,7 @@ Before you can make changes to the security file, you need to download it using 
 
 To obtain the security file:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as the admin user.
+1. Log in to ThoughtSpot from a browser as the admin user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)
@@ -154,7 +154,7 @@ After you have made changes to the security file, you must upload it back to Tho
 
 To upload the security file:
 
-1. [Log in to ThoughtSpot from a browser](../setup/accessing.html#) as the admin user.
+1. Log in to ThoughtSpot from a browser as the admin user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![](../../shared/conrefs/../../images/admin_icon.png)

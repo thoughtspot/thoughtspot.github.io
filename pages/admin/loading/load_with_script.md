@@ -14,7 +14,7 @@ The data loading script is a text file that contains all the calls to `tsload` f
 
 The example script shown here uses the `cat` command to read the data file, and pipes it to tsload. When creating and testing your script, you may wish to replace each `cat` with `cat -10`, to load only the first ten lines of each file. This allows you to quickly run a test of your script. When the test succeeds for all the data files, you can then remove each `-10`, so the complete files will load when you run the script again.
 
-1. [Log in to the Linux shell using SSH](../setup/login_console.html#).
+1. Log in to the Linux shell using SSH.
 2. Navigate to the directory that contains your CSV files and open a new file in a text editor.
 3. Type in the commands to load the data. This example shows commands to load three files:
 

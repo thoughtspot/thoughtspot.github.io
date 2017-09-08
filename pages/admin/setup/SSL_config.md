@@ -37,7 +37,7 @@ To install the SSL certificate:
       $ scp <key> <certificate> admin@<IP_address>:<path>
       ```
 
-3. [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance).
+3. Log in to the Linux shell using SSH.
 4. Change directories to where you copied the certificate:
 
       ```
@@ -63,7 +63,7 @@ The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standa
 ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
 
 1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
-2.  [Log in to the Linux shell using SSH](logins.html#ssh-to-the-appliance)..
+2.  Log in to the Linux shell using SSH..
 3.  Issue the following command:
 
     ```

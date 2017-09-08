@@ -1,13 +1,11 @@
 ---
-title: [elephant]
-tags: 
+title: [Data Connect reference]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Data Connect reference
-
 This section contains a reference for ThoughtSpot Data Connect.
 
 ## Login credentials
@@ -28,4 +26,3 @@ You will need administrative permissions to perform the actions discussed in thi
 This section includes some tips and best practices for using ThoughtSpot Data Connect.
 -   **[Data Connect connectors reference](../../../data_connect/data_connect/reference/data_connect_connection_credentials.html)**  
 Here is a list of all of the source connectors, and their connection credentials, that are supported in ThoughtSpot Data Connect. As you create a new connection, you will need specific connection information to enter into the create connection dialog box. You can find more detailed information below for each of the connection types ThoughtSpot Data Connect supports.
-

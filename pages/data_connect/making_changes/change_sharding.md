@@ -1,13 +1,10 @@
 ---
-title: [elephant]
-tags: 
+title: [Change sharding for a data source]
+tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
-# Change sharding for a data source
-
 Use this procedure to change the sharding on a data source after it has been set up and the load has run. You can still change the number of shards or make it a replicated table instead.
 
 You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
@@ -18,13 +15,11 @@ First, you'll modify the table sharding, using TQL. Note that this operation cha
 
 To change the sharding on a Data Source:
 
-1.   [Log in to the Linux shell using SSH](../../../admin/setup/login_console.html#). 
-2.   Launch TQL. 
-
+1. Log in to the Linux shell using SSH.
+2. Launch TQL.
     ```
     $ tql
     ```
-
 3.  Designate the database you'll be working in:
 
     ```
@@ -39,8 +34,8 @@ To change the sharding on a Data Source:
 
     ```
     TQL> ALTER TABLE <table>
-         [SET DIMENSION | SET FACT 
-         [PARTITION BY HASH 
+         [SET DIMENSION | SET FACT
+         [PARTITION BY HASH
          [(<shards>)]
          [KEY(<column>)]]]
     ```
@@ -56,13 +51,10 @@ To change the sharding on a Data Source:
 
     -   To make a dimension table into a sharded \(fact\) table or change the number of shards, use:
 
-```
-ALTER TABLE "sales"
-   SET FACT PARTITION BY HASH (96)
-   KEY ("productID");
-```
+        ```
+        ALTER TABLE "sales"
+           SET FACT PARTITION BY HASH (96)
+           KEY ("productID");
+        ```
 
-6.   The next time the data source load runs, it will use the new sharding automatically. 
-
-**Parent topic:** [About making changes to Data Connect setup](../../../data_connect/data_connect/making_changes/about_changing_etl_jobs.html)
-
+6. The next time the data source load runs, it will use the new sharding automatically.
