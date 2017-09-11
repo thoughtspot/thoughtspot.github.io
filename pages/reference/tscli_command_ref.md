@@ -833,7 +833,7 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
          <td>Purges (removes) any existing LDAP configuration.</td>
       </tr>
       <tr>
-         <td>
+         <td colspan="2">
             <code>tscli logs collect
             --include &lt;<var>selector</var> | <var>glob</var>&gt;
             [--exclude &lt;<var>selector</var> | <var>glob</var>&gt;]
@@ -842,9 +842,13 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
             --to &lt;<var>yyyymmdd-HH:MM</var>&gt;]
             [--out &lt;<var>path</var>&gt;]
             [--maxsize &lt;<var>size_in_MB_or_GB</var>&gt;]
-            [--sizeonly]</code>
+            [--sizeonly]
+            [--nodes NODES]
+            </code>
          </td>
-         <td>
+      </tr>
+      <tr>
+         <td colspan="2">
             Extracts logs from the cluster. Does not include any logs that have been
             deleted due to log rotation.
             <p>Required parameters are:</p>
@@ -901,6 +905,9 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
                <li class="li"><code>--sizeonly</code> means do not collect logs. Just report the
                   size.
                </li>
+               <li class="li"><code>--nodes NODES</code> Comma separated list of nodes from where to collect logs.
+                     Skip this to use all nodes. (default: None)
+               </li>
             </ul>
          </td>
       </tr>
@@ -915,7 +922,8 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
             [--outfile &lt;<var>path</var>&gt;]
             [--outdir &lt;<var>directory_path</var>&gt;]
             [--cmd_infmt [C | U]]
-            [--cmd_outfmt [C | U]]</code>
+            [--cmd_outfmt [C | U]]
+            [--nodes NODES]</code>
          </td>
          <td>
             Runs a Unix command on logs in the cluster matching the given constraints.
@@ -1009,6 +1017,9 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
                      use this flag if the output file will be of the same format as the input
                      file.
                   </p>
+               </li>
+               <li class="li"><p><code>--nodes NODES</code> Comma separated list of nodes from where to collect logs.
+                     Skip this to use all nodes. (default: None)</p>
                </li>
             </ul>
          </td>
