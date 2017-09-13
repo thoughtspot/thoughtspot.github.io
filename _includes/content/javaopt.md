@@ -1,0 +1,159 @@
+<table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
+ <colgroup>
+    <col style="width:15%" />
+    <col style="width:10%" />
+    <col style="width:25%" />
+    <col style="width:50%" />
+ </colgroup>
+ <tr>
+   <tr>
+      <th>Service Task Name</th>
+      <th>Java Opt Type</th>
+      <th>Key</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.authenticatedIdleTimeoutMs</td>
+      <td>Sets authenticated idle timeoutof a user. Defaults to 3 hours. Use this command to set configurable sessiontimeout.</td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.customBrandingEnabled</td>
+      <td>Enables Style Customization. </td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.customBrandingFont CustomizationEnabled</td>
+      <td>Enables Font Customization.</td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.defaultQuarterStartMonth</td>
+      <td>Sets a custom fiscal month value on a cluster. Specify the calendar number of the month. For example, if it's February, enter,`2`.</td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.enableAggrWsTableJoin</td>
+      <td>Allows you to join an aggregated worksheet with a base table. This facilitates,group aggregations with filters exposing aggregate data while securing,unaggregated data worksheets composed of aggregated worksheets and base tables</td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td>D</td>
+      <td>orion.enableWorksheetOverAggrWorksheet</td>
+      <td>Allows you to create a worksheet on top of an aggregated worksheet.</td>
+   </tr>
+   <tr>
+      <td>tomcat.tomcat</td>
+      <td></td>
+      <td>orion.frontendHost</td>
+      <td>Sets the host for front end access.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.frontendPort</td>
+      <td>Sets the port for front end access.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.frontendScheme</td>
+      <td>Sets the scheme for front end access. Scheme is either http or,https.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.FullEmbedConfiguration.alertBarHidden</td>
+      <td>Disables error messages for the ThoughtSpot full embed use case and propagates,them to the parent app. This allows the error messages to be displayed in the,customer's UI appropriately. The command is set to false by default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.FullEmbedConfiguration.alertBarHidden-primaryNavHidden</td>
+      <td>Hides the top navigation bar for the ThoughtSpot full embed use case. The,command is set to true by default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.FullEmbedConfiguration.powered FooterHidden</td>
+      <td>Adds the ThoughtSpot logo to the rendered iFrames in an embedded use case.,This is automatically turned on if the Style Customization flag, full embed,mode, or any embedded pinboard, chart, or table is enabled. Customers with an,Extended Enterprise license have the choice to turn this feature off. The,command is set to false by default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.geoMapConfig.dataBatchSize</td>
+      <td>This flag allows you to increase the number of data points of a visualization.,The default data points limit is 5,000 for geo charts, 10,000 for pivot,tables, and 1,000 for everything else.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.informaticaCloudConfig.use TimelyForScheduling</td>
+      <td>Enables pre/post script execution in Data Connect.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.rememberedSessionIdleTimeoutMs</td>
+      <td>Sets remembered session idle timeout of a user. Defaults to forever [-1]. Use,this command to set configurable session timeout.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReportingConfig.enabled</td>
+      <td>Enables scheduled pinboards, which is disabled in prod clusters by default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReporting Config.maxRecipientLimit</td>
+      <td>Sets the recipient limit on scheduled pinboard jobs. 1000 recipients is the default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReportingConfig.maxTotalAttachment SizeInMb</td>
+      <td>Sets the email attachment size limit for scheduled pinboards. 25 MB is the default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReportingConfig.tablePrintData BatchSize</td>
+      <td>Sets the table row limit in PDFs reports for scheduled pinboards. 100 rows is the,default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReportingConfig.thresholdSizeInMbToZip</td>
+      <td>Sets the max size limit before switch CSV attachments as zips. 25 MB is the default.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>orion.scheduledReportingConfig.whitelistedDomains</td>
+      <td>Sets the email whitelist for scheduled pinboard recipients. Specify the email,domains you would like to add, surrounded by single quotations, such as,thoughtspot.com,gmail.com.</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>

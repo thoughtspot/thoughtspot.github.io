@@ -742,8 +742,11 @@ entries:
     - title: ThoughtSpot Loader flag reference
       url: /pages/reference/data_importer_ref.html
       output: web
-    - title: tscli --adv command reference
+    - title: tscli command reference
       url: /pages/reference/tscli_command_ref.html
+      output: web
+    - title: internal command reference
+      url: /pages/reference/tscli-internal.html
       output: web
     - title: Formula reference
       url: /pages/reference/formula_reference.html
