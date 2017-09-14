@@ -3,7 +3,6 @@ title: [TQL reference]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.
@@ -12,7 +11,7 @@ TQL is the ThoughtSpot language for entering SQL commands. This reference lists 
 
 You can use TQL either [through the ThoughtSpot application's web interface](../loading/upload_sql_script.html#) or the [command line interface](../loading/sql_cli.html#) in the Linux shell.
 
-Note that the worksheets and pinboards in ThoughtSpot are dependent upon the data in the underlying tables. Use caution when modifying tables directly. If you change or remove a schema on which those objects rely, the objects could become invalid.
+{% include note.html content="Worksheets and pinboards in ThoughtSpot are dependent upon the data in the underlying tables. Use caution when modifying tables directly. If you change or remove a schema on which those objects rely, the objects could become invalid." %}
 
 You can use TQL to view and modify schemas and data in tables. Remember to add a semicolon after each command. Commands are not case sensitive but are capitalized here for readability.
 
