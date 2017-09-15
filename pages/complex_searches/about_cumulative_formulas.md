@@ -6,11 +6,23 @@ last_updated: tbd
 summary: "Cumulative formulas are aggregate formulas."
 sidebar: mydoc_sidebar
 ---
-Cumulative formulas that allow you to calculate the average, max, min, or sum or your data over time, optionally grouped by an attribute (like region or department).
+Cumulative formulas that allow you to calculate the average, max, min, or sum or
+your data over time. Although we usually talk about cumulative formulas over
+time, you can use them over any other sequential data. Each of the cumulative
+formulas accepts a measure and one or more optional grouping by an attribute
+(like region or department):
 
-Each of the cumulative formulas accepts a measure and one or more attributes. And each returns the aggregate of the measure accumulated by the attribute(s) in the order specified. Although we usually talk about cumulative formulas over time, you could use them over any other sequential data.
+```
+formula (measure, [attribute, attribute, ...])
+```
 
-The cumulative formulas include:
+Only the measure value is required. If you supply both a measure and attributes,
+the formula returns the aggregate of the measure accumulated by the attribute(s)
+in the order specified. You should experiment with only a measure and then with
+an attribute to see which output best meets your use case.
+
+
+The cumulative formulas are:
 
 |Function|Description|
 |--------|-----------|
