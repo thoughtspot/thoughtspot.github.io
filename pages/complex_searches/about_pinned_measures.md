@@ -5,11 +5,17 @@ keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 ---
-What if you want to aggregate a value by a specific attribute (for example, show revenue by product)? This is known as a grouped aggregation, but some people call it a pinned measure or level-based measure.
+What if you want to aggregate a value by a specific attribute (for example, show revenue by product)? This is known as a grouped aggregation, but some people call it a pinned measure or level-based measure. You can do this for any aggregation using the grouping formulas.
 
-You can do this for any aggregation using the grouping formulas. Each of the grouping formulas accepts a measure and one or more attributes. And each returns the aggregate of the measure grouped by the attribute(s).
+Each of the grouping formulas accepts a measure and one or more optional attributes:
 
-The grouping formulas include:
+```
+formula (measure, [attribute, attribute, ...])
+```
+
+Only the measure value is required. If you supply both a measure and an attribute, the formula returns the aggregate of the measure grouped by the attribute(s). You should experiment with only a measure and then with an attribute to see which output best meets your use case.
+
+The grouping formulas are the following:
 
 |Function|Description|Examples|
 |--------|-----------|--------|
