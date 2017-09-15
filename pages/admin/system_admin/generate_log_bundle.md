@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [System administration](../../admin/system_admin/sysadmin_overview.html)
+**Parent topic:** [System administration](/pages/admin/system_admin/sysadmin_overview.html)

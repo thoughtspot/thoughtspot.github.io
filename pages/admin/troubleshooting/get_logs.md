@@ -78,5 +78,5 @@ $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --sin
 
 The above command collects all system and all orion logs, but excludes hadoop (hdfs) and zookeeper logs.
 
--   **[Upload logs to ThoughtSpot Support](../../admin/troubleshooting/upload_logs_egnyte.html)**  
+-   **[Upload logs to ThoughtSpot Support](/pages/admin/troubleshooting/upload_logs_egnyte.html)**  
 ThoughtSpot Support uses a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.

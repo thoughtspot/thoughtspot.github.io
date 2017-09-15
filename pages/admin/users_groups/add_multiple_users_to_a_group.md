@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [Manage users, groups, and privileges](../../admin/users_groups/about_users_groups.html)
+**Parent topic:** [Manage users, groups, and privileges](/pages/admin/users_groups/about_users_groups.html)

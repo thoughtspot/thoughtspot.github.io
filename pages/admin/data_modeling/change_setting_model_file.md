@@ -7,4 +7,4 @@ summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 A
-**Parent topic:** [Model data in bulk in the modeling file](../../admin/data_modeling/edit_model_file.html)
+**Parent topic:** [Model data in bulk in the modeling file](/pages/admin/data_modeling/edit_model_file.html)

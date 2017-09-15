@@ -7,4 +7,4 @@ summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 
-**Parent topic:** [System security](../../admin/data_security/audit_logs.html)
+**Parent topic:** [System security](/pages/admin/data_security/audit_logs.html)

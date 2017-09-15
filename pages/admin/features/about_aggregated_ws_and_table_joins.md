@@ -7,4 +7,4 @@ summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 
-**Parent topic:** [How the worksheet join rule works](../../admin/worksheets/progressive_joins.html)
+**Parent topic:** [How the worksheet join rule works](/pages/admin/worksheets/progressive_joins.html)

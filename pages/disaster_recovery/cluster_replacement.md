@@ -17,7 +17,7 @@ In this configuration, the primary initiates periodic full backups of itself. It
 
  ![](../../images/Disaster_recovery.png "A ThoughtSpot disaster recovery configuration")
 
--   **[Mount a NAS file system](../../admin/setup/NAS_mount.html)**  
+-   **[Mount a NAS file system](/pages/admin/setup/NAS_mount.html)**  
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.
 -   **[Set up a disaster recovery configuration](../../disaster_recovery/disaster_recovery/set_up_DR_config.html)**  
 Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance.

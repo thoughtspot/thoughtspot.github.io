@@ -178,7 +178,7 @@ Many of the administration commands output logging information to log files. The
 -   `/export/logs/hadoop`
 -   `/export/logs/zookeeper`
 
--   **[About the Space Utilization chart](../../admin/system_admin/about_the_memory_usage_chart.html)**  
+-   **[About the Space Utilization chart](/pages/admin/system_admin/about_the_memory_usage_chart.html)**  
 The Space Utilization chart is one of the available charts for you to use when checking the cluster overview.
 
 

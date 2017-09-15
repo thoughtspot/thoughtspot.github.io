@@ -9,4 +9,4 @@ sidebar: mydoc_sidebar
 
 
 
-**Parent topic:** [Change the schema](../../admin/loading/change_schema.html)
+**Parent topic:** [Change the schema](/pages/admin/loading/change_schema.html)

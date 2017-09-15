@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [About security](../../admin/data_security/about_security.html)
+**Parent topic:** [About security](/pages/admin/data_security/about_security.html)

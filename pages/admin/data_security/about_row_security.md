@@ -33,5 +33,5 @@ If a user is a member of a group that has the privilege **Has administration pri
 
 ## Related information
 
--   [About Rule-Based Row Level Security](../../admin/data_security/new_row_level_security.html)  
--   [About Legacy Row Level Security](../../admin/data_security/legacy_row_security.html)  
+-   [About Rule-Based Row Level Security](/pages/admin/data_security/new_row_level_security.html)  
+-   [About Legacy Row Level Security](/pages/admin/data_security/legacy_row_security.html)  

@@ -33,8 +33,8 @@ ThoughtSpot includes robust [row level security](about_row_security.html#), whic
 
 ## Related information
 
--   [Share tables and columns](../../admin/data_security/share_source_tables.html)  
--   [Share worksheets](../../admin/data_security/share_worksheets.html)  
--   [Share a pinboard](../../admin/data_security/share_pinboards.html)  
--   [Revoke access (unshare)](../../admin/data_security/unshare.html)  
--   [Row level security](../../admin/data_security/about_row_security.html)  
+-   [Share tables and columns](/pages/admin/data_security/share_source_tables.html)  
+-   [Share worksheets](/pages/admin/data_security/share_worksheets.html)  
+-   [Share a pinboard](/pages/admin/data_security/share_pinboards.html)  
+-   [Revoke access (unshare)](/pages/admin/data_security/unshare.html)  
+-   [Row level security](/pages/admin/data_security/about_row_security.html)  

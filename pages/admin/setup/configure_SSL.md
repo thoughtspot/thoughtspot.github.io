@@ -9,4 +9,4 @@ sidebar: mydoc_sidebar
 
 
 
-**Parent topic:** [About SSL (secure socket layers)](../../admin/setup/SSL_config.html)
+**Parent topic:** [About SSL (secure socket layers)](/pages/admin/setup/SSL_config.html)

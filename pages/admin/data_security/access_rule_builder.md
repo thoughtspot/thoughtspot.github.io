@@ -9,4 +9,4 @@ sidebar: mydoc_sidebar
 
 
 
-**Parent topic:** [About Rule-Based Row Level Security](../../admin/data_security/new_row_level_security.html)
+**Parent topic:** [About Rule-Based Row Level Security](/pages/admin/data_security/new_row_level_security.html)

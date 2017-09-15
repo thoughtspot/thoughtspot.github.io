@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [Build the schema](../../admin/loading/create_schema.html)
+**Parent topic:** [Build the schema](/pages/admin/loading/create_schema.html)

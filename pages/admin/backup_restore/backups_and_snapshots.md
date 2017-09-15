@@ -20,11 +20,11 @@ Backups are usually stored on a [NAS (network attached storage) file system](../
 
 You are resonsible for validating your backup configuration as viable for restoring a cluster. This validation ensures the storage and backup format are at the level you required. Best practice is to maintain multiple backup images.
 
--   **[Understand backup modes](../../admin/backup_restore/backup_modes.html)**  
+-   **[Understand backup modes](/pages/admin/backup_restore/backup_modes.html)**  
 You can create a backup using one of three modes, full, lightweight or dataless.
--   **[Create a manual backup](../../admin/backup_restore/take_backup.html)**  
+-   **[Create a manual backup](/pages/admin/backup_restore/take_backup.html)**  
 Use this procedure when you want to manually create a backup. If you would like to restore from a backup, contact ThoughtSpot Support.
--   **[Configure periodic backups](../../admin/backup_restore/configure_backup.html)**  
+-   **[Configure periodic backups](/pages/admin/backup_restore/configure_backup.html)**  
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-**Parent topic:** [Backup and restore](../../admin/backup_restore/intro_backup_restore.html)
+**Parent topic:** [Backup and restore](/pages/admin/backup_restore/intro_backup_restore.html)

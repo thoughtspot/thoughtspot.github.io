@@ -31,13 +31,13 @@ The steps to build a schema using TQL include:
 
 ## Where to go next
 
--   **[Connect to the database with the ThoughtSpot SQL Command Line (TQL)](../../admin/loading/connect_sql_cli.html)**  
+-   **[Connect to the database with the ThoughtSpot SQL Command Line (TQL)](/pages/admin/loading/connect_sql_cli.html)**  
 To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.
--   **[Create the schema in TQL](../../admin/loading/prep_schema_for_load.html)**  
+-   **[Create the schema in TQL](/pages/admin/loading/prep_schema_for_load.html)**  
 Having examined the structure of the data to be loaded and become familiar with the ThoughtSpot SQL Command Line (TQL), you are now ready to create the schema.
--   **[Write a SQL script to create the schema](../../admin/loading/create_schema_with_script.html)**  
+-   **[Write a SQL script to create the schema](/pages/admin/loading/create_schema_with_script.html)**  
 Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed.
--   **[Schema creation examples](../../admin/loading/create_schema_example.html)**  
+-   **[Schema creation examples](/pages/admin/loading/create_schema_example.html)**  
 These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line (TQL). After the schema is created, you can load data into it with ThoughtSpot Loader.
--   **[Import a schema (use the SQL editor)](../../admin/loading/upload_sql_script.html)**  
+-   **[Import a schema (use the SQL editor)](/pages/admin/loading/upload_sql_script.html)**  
 You can run a SQL script to create your database schema through the browser, without having to log in to the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema.

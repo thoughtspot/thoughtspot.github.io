@@ -7,7 +7,7 @@ summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 
--   **[Create a formula in a worksheet](../../admin/worksheets/create_formula.html)**  
+-   **[Create a formula in a worksheet](/pages/admin/worksheets/create_formula.html)**  
 You can create a formula in a worksheet by using the Formula Builder. When you do this, the result of the formula gets added to the worksheet as a column.
 
-**Parent topic:** [Create a new worksheet](../../admin/worksheets/worksheet_create.html)
+**Parent topic:** [Create a new worksheet](/pages/admin/worksheets/worksheet_create.html)

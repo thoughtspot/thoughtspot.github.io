@@ -7,4 +7,4 @@ summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 
-**Parent topic:** [Load data with ThoughtSpot Loader](../../admin/loading/use_data_importer.html)
+**Parent topic:** [Load data with ThoughtSpot Loader](/pages/admin/loading/use_data_importer.html)

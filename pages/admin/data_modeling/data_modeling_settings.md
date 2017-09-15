@@ -41,33 +41,33 @@ For worksheets, only some of the settings can be modified, whether you are using
 
 If you want to change any of the settings that cannot be modified in a worksheet, you need to make your changes to the underlying table instead, and they will be reflected in all worksheets that use the table.
 
--   **[Change the column name](../../admin/data_modeling/change_column_names.html)**  
+-   **[Change the column name](/pages/admin/data_modeling/change_column_names.html)**  
 You can change the text that is shown for the column names in ThoughtSpot to make the names more meaningful to users. The column name is what they will type to add that column to their search.
--   **[Add a column description](../../admin/data_modeling/change_column_description.html)**  
+-   **[Add a column description](/pages/admin/data_modeling/change_column_description.html)**  
 You can provide a description for a specific column, to provide additional information for users about the data it contains.
--   **[Change the column type (ATTRIBUTE or MEASURE)](../../admin/data_modeling/change_column_type.html)**  
+-   **[Change the column type (ATTRIBUTE or MEASURE)](/pages/admin/data_modeling/change_column_type.html)**  
 Columns have a **Column Type** based on the kind of data they store. This is set automatically upon defining the table, but in some cases, you may want to change the type.
--   **[Change the additive setting for a column](../../admin/data_modeling/change_column_additive.html)**  
+-   **[Change the additive setting for a column](/pages/admin/data_modeling/change_column_additive.html)**  
 Your data may contain a column with a numeric data type that you have defined as an **ATTRIBUTE** rather than a **MEASURE** (such as age). You can allow aggregations on the values by changing the value of the **ADDITIVE** setting.
--   **[Change the aggregation setting for a column](../../admin/data_modeling/change_aggreg_type.html)**  
+-   **[Change the aggregation setting for a column](/pages/admin/data_modeling/change_aggreg_type.html)**  
 All types of aggregations can be performed on **MEASURE** columns, and some aggregations can be done on **ATTRIBUTE** columns. You can change the default aggregation type to make combining data more intuitive and faster.
--   **[Hide a column](../../admin/data_modeling/change_column_visibility.html)**  
+-   **[Hide a column](/pages/admin/data_modeling/change_column_visibility.html)**  
 You can hide columns from users in ThoughtSpot without dropping them from the database. This is common when the data contains identifier columns that are used to join tables, but which do not have any meaning to users.
--   **[Create synonyms for a column](../../admin/data_modeling/create_synonyms.html)**  
+-   **[Create synonyms for a column](/pages/admin/data_modeling/create_synonyms.html)**  
 If you want to allow searching using more than one name for a column, you can create synonyms for it. This is helpful when different departments refer to the data using different terminology, for example.
--   **[Change the index type for a column](../../admin/data_modeling/change_index.html)**  
+-   **[Change the index type for a column](/pages/admin/data_modeling/change_index.html)**  
 ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search.
--   **[Add a geographical data setting for a column](../../admin/data_modeling/model_geo_data.html)**  
+-   **[Add a geographical data setting for a column](/pages/admin/data_modeling/model_geo_data.html)**  
 Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.
--   **[Set the search suggestions priority for a column](../../admin/data_modeling/change_column_priority.html)**  
+-   **[Set the search suggestions priority for a column](/pages/admin/data_modeling/change_column_priority.html)**  
 You can change the priority that determines which columns are shown in search suggestions and the order in which they appear.
--   **[Set the format to use when showing numbers](../../admin/data_modeling/set_format_pattern_numbers.html)**  
+-   **[Set the format to use when showing numbers](/pages/admin/data_modeling/set_format_pattern_numbers.html)**  
 You can set a format for how numbers are displayed in tables and charts. For example, you can display numbers with a different number of digits after the decimal point, based on the data modeling setting **Format Pattern**.
--   **[Set the format to use when showing dates](../../admin/data_modeling/set_format_pattern.html)**  
+-   **[Set the format to use when showing dates](/pages/admin/data_modeling/set_format_pattern.html)**  
 You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**.
--   **[Set the format to use when showing currencies](../../admin/data_modeling/set_the_format_to_use_when_showing_currencies.html)**  
+-   **[Set the format to use when showing currencies](/pages/admin/data_modeling/set_the_format_to_use_when_showing_currencies.html)**  
 You can set a format for how currencies are displayed in tables and charts when using the ThoughtSpot Data API or Embedding. For example, you can display currencies in a standard European Euro or US Dollar format based on the data modeling setting **Currency Type**.
--   **[Change the Attribution Dimension setting of a column](../../admin/data_modeling/attributable_dimension.html)**  
+-   **[Change the Attribution Dimension setting of a column](/pages/admin/data_modeling/attributable_dimension.html)**  
 The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting.
 
 

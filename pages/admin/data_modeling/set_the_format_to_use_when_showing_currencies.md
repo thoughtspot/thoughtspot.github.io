@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [Data modeling settings](../../admin/data_modeling/data_modeling_settings.html)
+**Parent topic:** [Data modeling settings](/pages/admin/data_modeling/data_modeling_settings.html)
 
 ## Related information  
 

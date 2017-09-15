@@ -21,7 +21,7 @@ Relationships created through either method can be managed either via TQL or by 
 
 You may create relationships using a mixture of TQL and the web interface, but the relationships you create cannot form a circular relationship, or "cycle". If you attempt to create a relationship that would complete a cycle, you will see a message saying that the relationship could not be added because it conflicts with another existing relationship.
 
--   **[Create a relationship](../../admin/data_modeling/create_new_relationship.html)**  
+-   **[Create a relationship](/pages/admin/data_modeling/create_new_relationship.html)**  
 You can quickly create a relationship (or link) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain (e.g. employee ID or product key).
--   **[Delete a relationship](../../admin/data_modeling/delete_relationship.html)**  
+-   **[Delete a relationship](/pages/admin/data_modeling/delete_relationship.html)**  
 If you created a relationship (link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.

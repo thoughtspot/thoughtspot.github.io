@@ -38,9 +38,9 @@ Permissions to see and edit tables, worksheets, and pinboards are set when you s
 
 ## Related information
 
--   [Add a group and set security privileges](../../admin/users_groups/add_group.html)  
--   [Edit or delete a group](../../admin/users_groups/edit_group.html)  
--   [Add a user](../../admin/users_groups/add_user.html)  
--   [Add multiple users to a group](../../admin/users_groups/add_multiple_users_to_a_group.html)  
--   [Edit or delete a user](../../admin/users_groups/edit_user.html)  
--   [Forgotten password](../../admin/users_groups/forgot_password.html)  
+-   [Add a group and set security privileges](/pages/admin/users_groups/add_group.html)  
+-   [Edit or delete a group](/pages/admin/users_groups/edit_group.html)  
+-   [Add a user](/pages/admin/users_groups/add_user.html)  
+-   [Add multiple users to a group](/pages/admin/users_groups/add_multiple_users_to_a_group.html)  
+-   [Edit or delete a user](/pages/admin/users_groups/edit_user.html)  
+-   [Forgotten password](/pages/admin/users_groups/forgot_password.html)  

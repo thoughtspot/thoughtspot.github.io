@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [Edit a worksheet](../../admin/worksheets/edit_worksheet.html)
+**Parent topic:** [Edit a worksheet](/pages/admin/worksheets/edit_worksheet.html)

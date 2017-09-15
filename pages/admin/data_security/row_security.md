@@ -9,4 +9,4 @@ sidebar: mydoc_sidebar
 E
 
 
-**Parent topic:** [About Legacy Row Level Security](../../admin/data_security/legacy_row_security.html)
+**Parent topic:** [About Legacy Row Level Security](/pages/admin/data_security/legacy_row_security.html)

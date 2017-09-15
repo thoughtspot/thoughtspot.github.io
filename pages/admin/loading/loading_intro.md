@@ -29,10 +29,10 @@ If you're uploading data through the Web interface, you can use a native Excel f
 
 ## Related Information
 
--   [Load CSV files with the UI](../../admin/loading/generate_flat_file.html)  
--   [Load data through the web browser](../../admin/loading/load_from_web_browser.html)  
--   [Append data from a web browser](../../admin/loading/append_data_from_a_web_browser.html)  
--   [Schema planning concepts](../../admin/loading/plan_schema.html)  
--   [Schema building overview](../../admin/loading/create_schema.html)  
--   [Import CSV files with tsload](../../admin/loading/use_data_importer.html)  
--   [How to view a data schema](../../admin/loading/schema_viewer.html)  
+-   [Load CSV files with the UI](/pages/admin/loading/generate_flat_file.html)  
+-   [Load data through the web browser](/pages/admin/loading/load_from_web_browser.html)  
+-   [Append data from a web browser](/pages/admin/loading/append_data_from_a_web_browser.html)  
+-   [Schema planning concepts](/pages/admin/loading/plan_schema.html)  
+-   [Schema building overview](/pages/admin/loading/create_schema.html)  
+-   [Import CSV files with tsload](/pages/admin/loading/use_data_importer.html)  
+-   [How to view a data schema](/pages/admin/loading/schema_viewer.html)  

@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 ---
 
 
-**Parent topic:** [Installation and setup](../../admin/setup/intro.html)
+**Parent topic:** [Installation and setup](/pages/admin/setup/intro.html)

@@ -9,4 +9,4 @@ sidebar: mydoc_sidebar
 
 
 
-**Parent topic:** [About stickers](../../admin/data_modeling/stickers_concept.html)
+**Parent topic:** [About stickers](/pages/admin/data_modeling/stickers_concept.html)
