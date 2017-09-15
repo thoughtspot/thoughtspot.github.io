@@ -15,26 +15,26 @@ Use this procedure to construct the URL you will use to call the REST API:
 3. Find the ID number of the object you want to get the data from. If the object is:
     -   A pinboard, click **Actions** and select **Copy Link**.
 
-        ![](../../images/copy_pinboard_link.png "The Actions menu")
+        ![](/pages/images/copy_pinboard_link.png "The Actions menu")
 
     -   A visualization, click the **Copy Link** icon in the upper right corner of the table or chart.
 
-         ![](../../images/copy_link.png "Copy link")
+         ![](/pages/images/copy_link.png "Copy link")
 
 4. Copy the ID number from the link shown. Paste it somewhere so that you can use it later to construct the URL to use when calling the REST API.
 
     If the object is:
     -   A pinboard, copy the identifier that appears after "viz/". Omit the trailing "/".
 
-        ![](../../images/copy_link_pinboard.png "The pinboard ID")
+        ![](/pages/images/copy_link_pinboard.png "The pinboard ID")
 
     -   A visualization \(table or chart\), copy the identifier that appears after "viz/". This is the pinboard ID.
 
-        ![](../../images/copy_link_viz_pinboard_part.png "The pinboard ID")
+        ![](/pages/images/copy_link_viz_pinboard_part.png "The pinboard ID")
 
         Then skip the "/" and copy what follows it. This is the visualization ID.
 
-        ![](../../images/copy_link_viz_viz_part.png "The visualization ID")
+        ![](/pages/images/copy_link_viz_viz_part.png "The visualization ID")
 
 5. Construct the URL as follows: For a pinboard, the URL takes the form:
 

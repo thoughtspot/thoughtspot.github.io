@@ -73,7 +73,7 @@ entries:
           - title: Sync users and groups from LDAP
             url: /pages/admin/setup/sync_users_and_groups_from_ldap.html
             output: web, admBk
-        - title: Configure NAS for backup storage
+        - title: Configure NAS file system
           url: /pages/admin/setup/NAS_mount.html
           output: web, admBk
         - title: Set up monitoring

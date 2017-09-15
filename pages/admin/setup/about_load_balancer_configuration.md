@@ -10,7 +10,12 @@ Here are some of the best practices and guidelines for a typical implementation 
 
 ## Load balance across ThoughtSpot nodes
 
+The following shows a network architectural diagram which includes a load balancer for ThoughtSpot nodes.
+
+![](/pages/images/network_architectural_diagram.png)
+
 The load balancer is an appliance in your infrastructure that routes traffic automatically to nodes to provide failover. You can also place a load balancer or proxy in front of the ThoughtSpot appliance if you'd like external network users to access the system.
+
 
 The best way to load balance across all ThoughtSpot nodes in a cluster is to map one domain name (FQDN) to all the IPs in the cluster in a round robin fashion.
 
@@ -38,7 +43,3 @@ In order for session affinity to work on ThoughtSpot, HTTPS (an SSL certificate)
 You can access ThoughtSpot through any standard web proxy server. Web proxies are fairly universal regardless of the application they are proxying. However, ThoughtSpot doesn't use any new protocols, like SPDY or HTTP/2, which may have a dependency on the proxy. Instead, ThoughtSpot is commonly placed behind a web HTTP/HTTPS proxy.
 
 Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot backend. You can essentially use the web proxy as a load balancer. Therefore, your session will carry over if the proxy round robins between the ThoughtSpot backends as long as the URL doesn’t change.
-
-## Network architectural diagram
-
-![](../../images/network_architectural_diagram.png)

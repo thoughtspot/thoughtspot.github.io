@@ -16,7 +16,7 @@ Your data may contain a column with a numeric data type that you have defined as
 -   **UNIQUE COUNT OF**
 -   **TOTAL COUNT OF**
 
-![](../../images/model_additive_model_false_options.png)
+![](/pages/images/model_additive_model_false_options.png)
 
 To display extended aggregate view options, you must set **ADDITIVE** to **YES** on these **ATTRIBUTE** columns. This option is only possible on columns that have a numeric data type (FLOAT, DOUBLE or INTEGER) or a date data type (DATE, DATETIME, TIMESTAMP, or TIME). After you make this change, these additional view options area_charts offered:
 
@@ -29,7 +29,7 @@ To display extended aggregate view options, you must set **ADDITIVE** to **YES**
 -   **MIN OF**
 -   **MAX OF**
 
-![](../../images/model_additive_model_true_options.png)
+![](/pages/images/model_additive_model_true_options.png)
 
 To change this setting:
 

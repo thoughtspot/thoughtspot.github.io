@@ -11,11 +11,11 @@ You might see unexpected characters in your data, especially characters whose AS
 
 If this happens, your data will look like this:
 
- ![](../../images/bad_chars.png "Incorrectly displaying characters")
+ ![](/pages/images/bad_chars.png "Incorrectly displaying characters")
 
 Instead of displaying correctly like this:
 
-![](../../images/good_chars.png)
+![](/pages/images/good_chars.png)
 
 To encode your data as UTF-8:
 

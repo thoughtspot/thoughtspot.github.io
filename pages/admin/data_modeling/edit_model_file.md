@@ -34,12 +34,12 @@ First, you'll download the model file, and then make changes to the appropriate 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3. Click on **Business Data Model**.
 4. Click **Download model.xls**.
 
-    ![](../../images/download_model.png)
+    ![](/pages/images/download_model.png)
 
 ## Edit the file and change the settings
 
@@ -50,16 +50,17 @@ You can edit any of the values in the model file, except for those where the wor
 1. Open the model file you downloaded (model.xls) in Excel, vi/vim, or a text editor.
     -   If you are using Excel, you may see a warning message. Click **Yes** to proceed.
 
-         ![](../../images/warning_open_model_excel.png)
+         ![](/pages/images/warning_open_model_excel.png)
 
     -   If your model file includes multi-byte characters, edit the file using vi or vim. This is because model files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
-2. Find the column you want to modify. Descriptions of the meanings of the columns are listed in [Data modeling settings](data_modeling_settings.html#).
+2. Find the column you want to modify.
+   Descriptions of the meanings of the columns are listed in [Data modeling settings](data_modeling_settings.html#).
 3. Select the value you want to change.
 4. Type in the new value.
 5. After making all your changes, save the model file.
     -   If you are using Excel, you will see a message. Click **Yes** to save the file.
 
-         ![](../../images/warning_save_model_excel.png)
+         ![](/pages/images/warning_save_model_excel.png)
 
     -   If your model file includes multi-byte characters, edit the file using vi or vim. This is because model files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
 
@@ -69,19 +70,19 @@ After you have made changes to the modeling file, you must upload it back to Tho
 
 Save the model file in the same format as it was when you downloaded it. If you are using Microsoft Excel to edit the file, you will see a warning when attempting to save it. Click **Yes** and save the file.
 
- ![](../../images/warning_save_model_excel.png)
+ ![](/pages/images/warning_save_model_excel.png)
 
 To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3. Click on **Business Data Model**.
 4. Click **BROWSE YOUR FILES** to upload the model.xls file, or drag and drop it in the zone.
 
-    ![](../../images/upload_model.png)
+    ![](/pages/images/upload_model.png)
 
     If you receive an error message upon uploading the file, check that it does not include any multi-byte characters (i.e. Japanese or other multi-byte language characters). If it does, you'll need to download the file again and make your edits using vi or vim. Note that you may choose to remove all the rows you have not changed from the model file before uploading it. If you upload a model file that includes only the changed rows, you won't lose any of the pre-existing model file settings. This is a good option if your model file is causing an error on upload, but you aren't sure where in the model file the problem is.
 

@@ -27,7 +27,7 @@ https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db
 
 When you parse the returned JSON data you can see that there is one object for every viz on the pinboard. The objects are named according to the corresponding vizid.
 
- ![](../../images/parsed_json_data.png "Parsed JSON data")
+ ![](/pages/images/parsed_json_data.png "Parsed JSON data")
 
 If you make a call to a specific viz on a pinboard, it will return just one object. The JSON object format for the data that is returned from ThoughtSpot is:
 
@@ -54,7 +54,7 @@ Each object contains four components:
 
 The `columnNames` array contains a list of all column headers. And the `data` array contains a list of other arrays. Each sub array represents a new row of data.
 
- ![](../../images/columnnames_and_data_arrays.png "columnNames and data arrays")
+ ![](/pages/images/columnnames_and_data_arrays.png "columnNames and data arrays")
 
 The REST API supports filtering the data returned via parameters that you pass within the URL. These are called [Runtime Filters](../runtime_filters/about_runtime_filters.html#).
 

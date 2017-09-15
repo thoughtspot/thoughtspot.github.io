@@ -1,6 +1,6 @@
 ---
 title: [Link tables using relationships]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -20,8 +20,3 @@ Both types of relationships exist within the database. You can also generate a s
 Relationships created through either method can be managed either via TQL or by going to the **Relationships** page when viewing data in the **Date Modeling** section in the ThoughtSpot application. You can view, modify, or delete relationships in either place.
 
 You may create relationships using a mixture of TQL and the web interface, but the relationships you create cannot form a circular relationship, or "cycle". If you attempt to create a relationship that would complete a cycle, you will see a message saying that the relationship could not be added because it conflicts with another existing relationship.
-
--   **[Create a relationship](/pages/admin/data_modeling/create_new_relationship.html)**  
-You can quickly create a relationship (or link) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain (e.g. employee ID or product key).
--   **[Delete a relationship](/pages/admin/data_modeling/delete_relationship.html)**  
-If you created a relationship (link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.

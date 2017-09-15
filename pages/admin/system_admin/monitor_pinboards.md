@@ -11,14 +11,14 @@ System monitoring tools in ThoughtSpot include the Control Center, system log fi
 
 The ThoughtSpot application includes a System Health Center, for easy monitoring of usage and cluster health, including alerts. You can view the System Health Center by clicking on the **Admin** icon and then clicking **System Health**.
 
- ![](../../images/control_center_show.png "Getting to the System Health Center")
+ ![](/pages/images/control_center_show.png "Getting to the System Health Center")
 
 
 ### Overview
 
 The **Overview** tab shows a summary of overall cluster status, usage and capacity information, configuration changes, and critical alerts.
 
- ![](../../images/control_center_overview.png "Partial view of the
+ ![](/pages/images/control_center_overview.png "Partial view of the
        System Health Center: Overview")
 
 ### Data
@@ -109,25 +109,25 @@ The **Database** section has the following values:
        </tbody>
     </table>
 
- ![](../../images/control_center_data.png "Partial view of the System Health Center: Data")
+ ![](/pages/images/control_center_data.png "Partial view of the System Health Center: Data")
 
 ### Cluster Manager
 
 The **Cluster Manager** section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.
 
- ![](../../images/control_center_cluster_mgmt.png "Partial view of the System Health Center: Cluster Manager")
+ ![](/pages/images/control_center_cluster_mgmt.png "Partial view of the System Health Center: Cluster Manager")
 
 ### Events and Alerts
 
 The **Events and Alerts** section shows notifications, alerts, and an audit trail of cluster configuration changes..
 
- ![](../../images/contro_center_configuration_events.png "Partial view of the System Health Center: Events and Alerts")
+ ![](/pages/images/contro_center_configuration_events.png "Partial view of the System Health Center: Events and Alerts")
 
 ## System monitoring pinboards
 
 There are several system monitoring pinboards in ThoughtSpot that include information about the system status and resource usage. The information in these pinboard is updated hourly from an internal database that collects monitoring statistics.
 
- ![](../../images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
+ ![](/pages/images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
 The monitoring pinboards can only be viewed by users with the administrator privilege. They are based on worksheets, which administrators can view, but not modify. The underlying tables are protected system tables that cannot be accessed directly. However, you can create new monitoring reports from the worksheets.
 

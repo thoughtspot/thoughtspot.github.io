@@ -43,7 +43,7 @@ Number formatting is set by default based on your browser locale setting. This h
 
 ## Date format
 
-You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**. You can use any of the supported date formats listed in the [Date and time formats reference](../reference/date_formats_for_loading.html#). These are some examples of formats you can use:
+You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**. You can use any of the supported date formats listed in the [Date and time formats reference](/pages/reference/date_formats_for_loading.html#). These are some examples of formats you can use:
 
 -   `MM/dd/yyyy`
 -   `MMM` (for abbreviated month format)
@@ -70,7 +70,7 @@ To change the currency format used to display a column's values:
 1. Find the **Currency Type** for the column whose display format you want to change.
 2. Click on it to open the **Specify Currency Type** menu.
 
-     ![](../../images/specify_currency_type.png "Specify Currency Type")
+     ![](/pages/images/specify_currency_type.png "Specify Currency Type")
 
 3. Select one of the following ways you would like to change the format.
     -   **Infer From Browser**

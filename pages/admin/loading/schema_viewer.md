@@ -12,11 +12,11 @@ There is a schema viewer in ThoughtSpot which lets you see your database schema 
 
 You can access the Schema Viewer from the **Manage Data** screen by clicking **Actions**, and selecting **View Schema**.
 
- ![](../../images/access_schema_viewer.png "Access the Schema Viewer")
+ ![](/pages/images/access_schema_viewer.png "Access the Schema Viewer")
 
 When viewing the schema, you can filter the tables shown similarly to how you filter data sources. The list of tables, worksheets, and imported data on the left includes only those objects you want to see. Clicking on one of the objects brings it to the middle of the viewer and highlights it. You can drag the objects around in the viewer.
 
- ![](../../images/schema_viewer.png "Schema Viewer filters")
+ ![](/pages/images/schema_viewer.png "Schema Viewer filters")
 
 ## Why to use the Schema Viewer
 
@@ -41,6 +41,6 @@ For worksheets, you can also click on one to view the worksheet. The worksheet v
 -   Correct join paths for newly created chasm trap worksheets. Existing chasm trap worksheets will not show the correct join paths.
 
 
- ![](../../images/worksheet_viewer.png "Worksheet view example")
+ ![](/pages/images/worksheet_viewer.png "Worksheet view example")
 
 The worksheet view does not work for aggregated worksheets, but does works for worksheets built on top of aggregated worksheets.

@@ -18,11 +18,11 @@ To resolve any of these situations, clear the browser cache:
     chrome://settings/clearBrowserData
     ```
 
-     ![](../../images/chrome_clear_cache.png "Clear the browser cache")
+     ![](/pages/images/chrome_clear_cache.png "Clear the browser cache")
 
 2. Click **Clear browsing data**. This is the name of the button on Chrome. The name may vary slightly on other browsers.
 3. Reload the page. For example, on Chrome you would click the **Reload** icon:
 
-     ![](../../images/browser_reload.png "Reload the page")
+     ![](/pages/images/browser_reload.png "Reload the page")
 
 4. Now the problem should be fixed, and the page will appear as expected.

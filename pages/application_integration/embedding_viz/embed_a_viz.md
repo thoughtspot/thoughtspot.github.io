@@ -16,10 +16,10 @@ Use this procedure to construct the URL you will use to embed a visualization:
    If the object is:
     -   A pinboard, click **Actions** and select **Copy Link**.
 
-        ![](../../images/copy_pinboard_link.png "The Actions menu")
+        ![](/pages/images/copy_pinboard_link.png "The Actions menu")
 
     -   A visualization, click the **Copy Link** icon in the upper right corner of the table or chart.
 
-        ![](../../images/copy_link.png "Copy link")
+        ![](/pages/images/copy_link.png "Copy link")
 
 4. Copy the link shown, and paste it into the iframe in your Web page, Web portal, or application.

@@ -1,5 +1,5 @@
 ---
-title: [Configure NAS for backup storage]
+title: [Configure NAS file system]
 tags: [SysAdm_Backup,SysAdm_Restore]
 keywords: tscli, backup, restore
 last_updated: tbd

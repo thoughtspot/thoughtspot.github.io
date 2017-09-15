@@ -12,13 +12,13 @@ To record a search replay using ThoughtSpot:
 
 1. While viewing a chart or table in ThoughtSpot, click the **Replay Search** icon.
 
-     ![](../../images/replay_search_icon.png "The Replay Search icon")
+     ![](/pages/images/replay_search_icon.png "The Replay Search icon")
 
 2. Click the **Record Replay** button.
 
    If you do not see the button, you must log in as a user with administrator privileges.
 
-     ![](../../images/record_search_replay_0.png "Record Replay button")
+     ![](/pages/images/record_search_replay_0.png "Record Replay button")
 
    A message will display, showing a URL and a domain or an IP address.
 
@@ -28,28 +28,28 @@ To record a search replay using ThoughtSpot:
 
     Depending on which browser and version you are using, you may need to access the browser configurations through a menu or by typing in a different URL. Check your own browser help section for information on how to access the browser configuration settings, if necessary.
 
-     ![](../../images/record_search_replay_1.png "Record Search message")
+     ![](/pages/images/record_search_replay_1.png "Record Search message")
 
      You may see a message warning that you are about to override the browser settings.
 
 5. If you trust yourself, click "I'll be careful, I promise!".
 
-     ![](../../images/record_search_replay_2.png "Browser warning message")
+     ![](/pages/images/record_search_replay_2.png "Browser warning message")
 
 6. Find the setting for **media.getusermedia.screensharing.allowed_domains**, and add the domain used by ThoughtSpot.
 
     This domain will be the same one you made note of from the **Cannot record screen** message.
 
-     ![](../../images/record_search_replay_3.png "Set the domain for screensharing")
+     ![](/pages/images/record_search_replay_3.png "Set the domain for screensharing")
 
 7. If you see a message asking if you'd like to share your screen with the IP address or domain name of ThoughtSpot, select **Entire screen**.
 
-     ![](../../images/record_search_replay_4.png "Select entire screen")
+     ![](/pages/images/record_search_replay_4.png "Select entire screen")
 
 8. When the search replay has been recorded, you'll see a confirmation. Select **Download**.
 
-     ![](../../images/record_search_replay_5.png "Download the recorded search")
+     ![](/pages/images/record_search_replay_5.png "Download the recorded search")
 
 9. Save the recording on your computer by selecting **Save File** and clicking **OK**.
 
-     ![](../../images/record_search_replay_6.png "Record Search save file")
+     ![](/pages/images/record_search_replay_6.png "Record Search save file")

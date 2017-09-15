@@ -13,7 +13,7 @@ There are two ways to get logs:
 
 -   When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can click on **What Happened?** in the error message for more details. To download related logs, click **Download Trace**. Send the logs as an email attachment to the support contact that is provided. Clicking **Report Problem** will also send the logs as an email attachment to your administrator.
 
-     ![](../../images/trace_log.png "Download log trace")
+     ![](/pages/images/trace_log.png "Download log trace")
 
 -   You can generate a log bundle using the tscli command `tscli logs collect` if you are comfortable with Linux. The command lets you specify which logs to collect and from what time periods.
 

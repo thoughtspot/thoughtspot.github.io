@@ -28,7 +28,7 @@ the data source (worksheet or one of the tables) must contain a column of type l
 
 These keywords allow you to search with spatial filters on data contained in a table or worksheet which contains geo type columns with latitude/longitude data. This lets you search based on spherical distance. The distance is calculated as a straight-line distance (not road distance) radius using miles, kilometers, or meters from the central point. If not specified, the default is 10 km.
 
- ![](../../images/geospatial_search.png "Geospatial search on a geo area map")
+ ![](/pages/images/geospatial_search.png "Geospatial search on a geo area map")
 
 **Note:** These keywords:
 

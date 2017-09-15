@@ -22,7 +22,7 @@ Users are often unfamiliar with tables and how they are related to one another. 
 
 Typically, you create one worksheet for each set of fact and dimension tables. For example, you may have a sales fact table and an inventory fact table. Each of these fact tables shares common dimensions like date, region, and store. In this scenario, you would create two worksheets: sales and inventory. The following diagram depicts the workflow for creating the sales worksheet.
 
-![](../../images/workflow_create_worksheet.png)
+![](/pages/images/workflow_create_worksheet.png)
 
 The process for creating a worksheet is:
 
@@ -46,11 +46,11 @@ To create a new worksheet:
 
 1. Click on **DATA**, on the top navigation bar.
 
-     ![](../../shared/conrefs/../../images/data_icon.png "Data")
+     ![](/pages/images/data_icon.png "Data")
 
 2. Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**.
 
-    ![](../../shared/conrefs/../../images/worksheet_create_icon.png)
+    ![](/pages/images/worksheet_create_icon.png)
 
 
 ## Add sources and columns to a worksheet
@@ -61,13 +61,13 @@ To add the sources to the worksheet:
 
 1.  Click on the **Choose Sources** link.
 
-    ![](../../shared/conrefs/../../images/worksheet_add_sources_link.png)
+    ![](/pages/images/worksheet_add_sources_link.png)
 
 2. Check the box next to each of the sources you want to include in the worksheet.
 
     Note that the list of sources only shows the tables on which you have view privileges.
 
-    ![](../../images/worksheet_choose_sources_from_2.5.png)
+    ![](/pages/images/worksheet_choose_sources_from_2.5.png)
 
 3. If you want to see what the data inside the sources looks like, click **Explore all data**.
 4. Choose the [inclusion rule](about_inclusion_rule.html#).
@@ -84,21 +84,17 @@ To add the sources to the worksheet:
 9. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
 10.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
 
-     ![](../../images/worksheet_add_col_prefix.png "Add a prefix to column names")
+     ![](/pages/images/worksheet_add_col_prefix.png "Add a prefix to column names")
 
 11. Click **Actions** and select **Save**.
 
-    ![](../../shared/conrefs/../../images/action_save_worksheet.png "Save a worksheet")
+    ![](/pages/images/action_save_worksheet.png "Save a worksheet")
 
 12.  [Share your worksheet](../data_security/share_worksheets.html#), if you want other people to be able to use it.
 
 ## Where to go next
 
--   **[Add sources and columns to a worksheet](/pages/admin/worksheets/worksheet_add_tables.html)**  
-After creating a worksheet, you need to add the sources that contain the data. Sources is another name for tables. The sources you choose are typically related to one another by foreign keys.
 -   **[How the inclusion rule works](/pages/admin/worksheets/about_inclusion_rule.html)**  
 Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition.
 -   **[How the worksheet join rule works](/pages/admin/worksheets/progressive_joins.html)**  
 Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.
--   **[About formulas in worksheets](/pages/admin/worksheets/about_formulas.html)**  
-You can define formulas and use them to create derived columns in worksheets. You create formulas by combining standard functions and operators, column names, and constant values.

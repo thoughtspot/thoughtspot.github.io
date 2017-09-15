@@ -2,6 +2,7 @@
 title: [Change the Attribution Dimension]
 tags:
 keywords: tbd
+toc: false
 last_updated: tbd
 summary: "The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
@@ -13,11 +14,11 @@ In the classic chasm trap two fact tables are related through a shared dimension
 
 Here is an example of a column that is not an attribution dimension. Suppose you have two fact tables, Wholesale Purchases and Retail Sales, that share a common dimension Date. In this case, the date column in the Date dimension should not be used for attribution, since unrelated rows in both of the fact tables could share the same row in the Date table. If I bought oranges wholesale on April 25, 2005 and made a retail sale of apples on the same day, there is no logical relationship between those two events. Combining the two events using the date they share will not create any meaningful information.
 
- ![](../../images/NOT_attribution_dim.png "Example where a column is not an attribution dimension")
+ ![](/pages/images/NOT_attribution_dim.png "Example where a column is not an attribution dimension")
 
 If matching rows in two fact tables over a chasm trap depends on the values in a column contained in a dimension table, that column is known as an attribution dimension. In this example, the Product ID column in the Products dimension table is an attribution dimension. For rows where the Product ID in the Wholesale Purchases and in the Retail Sales tables is a match, those rows are logically related in a meaningful way. They can be combined in charts and reports to produce a logical, expected outcome.
 
- ![](../../images/IS_attribution_dim.png "Attribution dimension example")
+ ![](/pages/images/IS_attribution_dim.png "Attribution dimension example")
 
 To designate a column as not being an attribution dimension (i.e. not producing any meaningful attribution across a chasm trap):
 

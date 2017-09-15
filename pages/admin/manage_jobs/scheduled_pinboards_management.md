@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 ---
 Users who are not admins, but have can schedule pinboard privilege, can only view pinboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. Contact ThoughtSpot Support if you'd like to increase this limit.
 
- ![](../../images/jobs_management.png "View Jobs Management page")
+ ![](/pages/images/jobs_management.png "View Jobs Management page")
 
 ## Bulk actions
 
@@ -18,9 +18,9 @@ Select the scheduled pinboards and use the **Delete**, **Resume**, and **Pause**
 
 Clicking on the row of a job will open a detailed view of every generated update of that job. You can see the start and end times of the job, as well as the status. Clicking on a job will show more information about the status updates.
 
- ![](../../images/success_pinboard_schedule.png "Success status updates")
+ ![](/pages/images/success_pinboard_schedule.png "Success status updates")
 
- ![](../../images/failed_pinboard_schedule.png "Failed status updates")
+ ![](/pages/images/failed_pinboard_schedule.png "Failed status updates")
 
 ## Pinboard links
 

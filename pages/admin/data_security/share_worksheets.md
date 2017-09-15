@@ -12,15 +12,15 @@ To share a pinboard:
 
 1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
-    ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
+    ![](/pages/images/data_icon_and_worksheets.png)
 
 2. Select one or more worksheets to share, and click the **Share** icon.
 
-    ![](../../images/share_worksheets.png)
+    ![](/pages/images/share_worksheets.png)
 
 3. Click **+ Add users or groups** and select users or groups that you want to share with.
 
-    ![](../../images/share_worksheet.png)
+    ![](/pages/images/share_worksheet.png)
 
 4. Configure the level of access by selecting from the dropdown list. You can select:
     -   **Can View** to provide read-only access. Enables viewing the worksheet and searching on it.

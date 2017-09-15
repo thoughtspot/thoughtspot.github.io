@@ -13,19 +13,19 @@ To change the inclusion or join rule of a worksheet:
 
 1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
-    ![](../../shared/conrefs/../../images/data_icon_and_worksheets.png)
+    ![](/pages/images/data_icon_and_worksheets.png)
 
 2. Click on the name of the worksheet you want to edit from the list.
 3. Click the **Edit** button in the upper right hand side of the screen.
 4.  Click on the **Choose Sources** link.
 
-    ![](../../shared/conrefs/../../images/worksheet_add_sources_link.png)
+    ![](/pages/images/worksheet_add_sources_link.png)
 
 5. Choose the [inclusion rule](about_inclusion_rule.html#) and/or the [worksheet join rule](progressive_joins.html#).
 
-     ![](../../images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
+     ![](/pages/images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
 
 6. Click **Done**.
 7.  Click **Actions** and select **Save**.
 
-    ![](../../shared/conrefs/../../images/action_save_worksheet.png "Save a worksheet")
+    ![](/pages/images/action_save_worksheet.png "Save a worksheet")

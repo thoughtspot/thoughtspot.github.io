@@ -22,11 +22,11 @@ To re-brand the interface:
 1. Log in to ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3. In the **Admin** panel, click on **Style Customization**.
 
-     ![](../../images/style_customization.png "Style Customization menu")
+     ![](/pages/images/style_customization.png "Style Customization menu")
 
     Once in the menu page, you can:
 

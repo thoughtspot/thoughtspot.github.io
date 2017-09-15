@@ -36,13 +36,13 @@ Here are the steps to resolve an issue like this:
 1. Open the underlying worksheet that contains the formula whose output data type you need to change.
 2. Click on the formula name to edit the formula.
 
-     ![](../../images/edit_formula.png "Edit the formula")
+     ![](/pages/images/edit_formula.png "Edit the formula")
 
 3. In the Formula Builder, modify the formula, so that it returns the expected data type.
 
    There are data type conversion formulas available to make this easier. To view them and their syntax, open the **Formula Assistant**, and expand the section called **Conversion**.
 
-     ![](../../images/modify_formula.png "Changing the formula to return a different data type")
+     ![](/pages/images/modify_formula.png "Changing the formula to return a different data type")
 
 4. Make your changes, and saving the formula by clicking **Save**.
 5. Save the worksheet by clicking **Save**.

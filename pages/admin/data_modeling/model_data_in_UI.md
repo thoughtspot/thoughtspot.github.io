@@ -1,6 +1,5 @@
 ---
 title: [Make a quick model change with the UI]
-tags: "data modeling, colums"
 keywords: tbd
 last_updated: tbd
 summary: "You can adjust the data model for a newly loaded table."
@@ -13,7 +12,7 @@ You can change all the same data model settings here as in the model file. This 
 1. Click on the **DATA** icon, to get to the data management listing.
 2. Click on the name of your data source.
 
-   ![](../../images/data_management_select_data_source.png "Select a data source")
+   ![](/pages/images/data_management_select_data_source.png "Select a data source")
 
     This brings up the **Columns** screen, where you'll make your modeling settings.
 
@@ -22,7 +21,7 @@ You can change all the same data model settings here as in the model file. This 
 
    Descriptions of the different settings are listed in [Data modeling settings](data_modeling_settings.html#).
 
-   ![](../../images/modeling_columns_screen.png "Edit modeling settings in the Columns screen")
+   ![](/pages/images/modeling_columns_screen.png "Edit modeling settings in the Columns screen")
 
 
 ## Related information  

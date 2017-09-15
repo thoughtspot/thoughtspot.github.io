@@ -15,7 +15,7 @@ The two ThoughtSpot instances are called:
 
 In this configuration, the primary initiates periodic full backups of itself. It pushes the backups to a shared NAS \(network attached storage\). The mirror instance pulls the backups from the shared NAS at defined intervals. It uses each new backup to restore itself to match the production cluster.
 
- ![](../../images/Disaster_recovery.png "A ThoughtSpot disaster recovery configuration")
+ ![](/pages/images/Disaster_recovery.png "A ThoughtSpot disaster recovery configuration")
 
 -   **[Mount a NAS file system](/pages/admin/setup/NAS_mount.html)**  
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.

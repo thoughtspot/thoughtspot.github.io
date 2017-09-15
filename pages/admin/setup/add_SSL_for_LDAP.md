@@ -11,7 +11,7 @@ When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). 
 -   [Configure OpenLDAP](LDAP_config_openLDAP.html#)
 -   [Configure LDAP for Active Directory](LDAP_config_AD.html#)
 
-You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [About SSL (secure socket layers)](SSL_config.html#).
+You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [Configure SSL (secure socket layers)](SSL_config.html#).
 
 To add the SSL certificate for LDAP:
 

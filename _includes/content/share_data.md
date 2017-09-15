@@ -3,15 +3,15 @@ Share a table or imported data by following these steps:
 1. Click on the **Manage Data** icon in the top navigation bar.
 2. Click on **Tables**.
 
-    ![](../../images/data_icon_and_tables.png)
+    ![](/pages/images/data_icon_and_tables.png)
 
 3. Select one or more tables to share, and click the **Share** icon.
 
-    ![](../../images/share_tables.png)
+    ![](/pages/images/share_tables.png)
 
 4. Select **Entire Table** or **Specific Columns**.
 
-    ![](../../images/share_table.png)
+    ![](/pages/images/share_table.png)
 
 5. If you selected **Specific Columns**, select the column to share.
 6. Click **+** and select the users and groups that you want to share with.

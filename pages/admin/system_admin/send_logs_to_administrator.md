@@ -39,6 +39,6 @@ Alternately, you can easily send log files directly to your administrator with a
 
 1. Click **Report Problem** in the bottom right corner of the error message.
 
-     ![](../../images/trace_log.png "Report problem")
+     ![](/pages/images/trace_log.png "Report problem")
 
     The logs will be sent to your administrator as an email attachment from your email account. Your administrator then has the option to followup with ThoughtSpot, if necessary.

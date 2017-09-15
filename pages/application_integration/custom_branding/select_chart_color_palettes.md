@@ -11,17 +11,17 @@ To select the chart color palettes:
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
-     ![](../../images/chart_color_palettes.png "Chart Color Palettes section")
+     ![](/pages/images/chart_color_palettes.png "Chart Color Palettes section")
 
 2. Click on the color you would like to change in the primary color palette, and use the color menu to choose your new color.
 
-     ![](../../images/color_palettes_1.png "Primary color palette")
+     ![](/pages/images/color_palettes_1.png "Primary color palette")
 
     All of the colors in the primary color palette are used in a chart before any from the secondary palette are used. Therefore, the primary palette usually consists of primary colors.
 
 3. Click on the color you would like to change in the secondary color palette, and use the color menu to choose your new color.
 
-     ![](../../images/color_palettes_2.png "Secondary color palette")
+     ![](/pages/images/color_palettes_2.png "Secondary color palette")
 
     The colors from the secondary color palette are used once all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
 

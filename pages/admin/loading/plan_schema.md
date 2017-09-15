@@ -16,7 +16,7 @@ Before writing your TQL script, you need to understand some basic ThoughtSpot co
 
 ThoughtSpot organizes objects in a hierarchical namespace. Databases contain schemas, which contain tables.
 
- ![](../../images/namespace.png "Namespace diagram")
+ ![](/pages/images/namespace.png "Namespace diagram")
 
 ThoughtSpot can contain one or more databases, and each database can have multiple schemas. If you do not specify a schema, the default schema (`falcon_default_schema`) is used automatically. This makes it easier to add tables to the database without the need to explicitly create a schema.
 
@@ -55,5 +55,3 @@ Constraints include primary keys, foreign keys, and relationships. Relationships
 For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.
 -   **[Chasm traps](/pages/admin/loading/chasm_trap.html)**  
 In a complex schema, you may have a fact table with no relationship to another fact table, except that each contains a foreign key to a shared dimension table. This is known as a chasm trap, and ThoughtSpot can handle it!
--   **[Chasm trap limitations](/pages/admin/loading/chasm_trap_limits.html)**  
-If your database schema contains any chasm traps, you may encounter these limitations.

@@ -73,11 +73,11 @@ When multiple row level security rules apply, the permissions are additive. That
 
 In this example, the group Analysts has two separate security entries for the Region column in the Customer table. One entry allows Analysts to see rows where the Region is equal to West. The other allows them to see rows where the Region is equal to East. So users in the Analysts group will be able to see all the rows in either Region.
 
- ![](../../images/row_level_security_example_one.png "Multiple equality conditions in security file")
+ ![](/pages/images/row_level_security_example_one.png "Multiple equality conditions in security file")
 
 In this example, a user is a member of two groups: Analysts and Sales. The security file lists different permissions for each group based on the column Category. Analysts can see rows where Category is equal to Consumer and Sales can see rows where Category is equal to Enterprise. So the user who is a member of both groups will be able to see all the rows where the Category is equal to either Consumer or Enterprise.
 
- ![](../../images/row_level_security_example_two.png "Multiple group membership in security file")
+ ![](/pages/images/row_level_security_example_two.png "Multiple group membership in security file")
 
 It works the same way with ranges and between operators as with equality. The user will be able to see any row that fulfills any of the conditions.
 
@@ -91,18 +91,18 @@ To obtain the security file:
 1. Log in to ThoughtSpot from a browser as the admin user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3. Click on **Data Security**.
 4. Click **Download security.xls**.
 
-    ![](../../images/download_security_file.png)
+    ![](/pages/images/download_security_file.png)
 
 5. Save it to your machine.
 6. Open the security file in Excel or a text editor.
     -   If you are using Excel, you may see a warning message. Click "Yes" to proceed.
 
-         ![](../../images/warning_open_security_excel.png)
+         ![](/pages/images/warning_open_security_excel.png)
 
     -   If your security file includes multi-byte characters, edit the file using vi or vim. This is because security files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
 
@@ -145,7 +145,7 @@ You can edit the security file using Microsoft Excel or a compatible tool. You w
 3. Repeat this for each group, column, and condition you want to define.
 4. Save the security file in the same format as it was when you downloaded it (as a Microsoft Excel file with the name security.xls). You will see a warning when attempting to save the file. Click "Yes" and save the file.
 
-    ![](../../images/warning_save_security_excel.png)
+    ![](/pages/images/warning_save_security_excel.png)
 
 
 ## Upload the edited security filters
@@ -157,12 +157,12 @@ To upload the security file:
 1. Log in to ThoughtSpot from a browser as the admin user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3. Click on **Data Security**.
 4. Click **BROWSE YOUR FILES** to upload the security.xls file, or drag and drop it in the zone.
 
-    ![](../../images/security_fie_upload.png)
+    ![](/pages/images/security_fie_upload.png)
 
     If you receive an error message upon uploading the file, check that it does not include any multi-byte characters (i.e. Japanese or other multi-byte language characters). If it does, you'll need to download the file again and make your edits using vi or vim.
 

@@ -1,5 +1,5 @@
 ---
-title: [Upload an SQL script]
+title: [Upload and run a SQL script]
 tags:
 keywords: schema, import
 last_updated: tbd
@@ -15,16 +15,16 @@ You can run a SQL script to create your database schema through the browser, wit
 1. Log into ThoughtSpot from a browser.
 2. Click on **DATA**, on the top navigation bar.
 
-     ![](../../shared/conrefs/../../images/data_icon.png "Data")
+     ![](/pages/images/data_icon.png "Data")
 
 3. Click **Actions** and select **Upload schema**.
 
-     ![](../../images/import_schema.png "Upload schema")
+     ![](/pages/images/import_schema.png "Upload schema")
 
 4. Drag and drop your SQL file into the browser, or choose **Browse Your Files** to locate it.
 5. You're now in the SQL editor. Use it to view your script and make any changes.
 
-     ![](../../images/SQL_editor.png "Import schema")
+     ![](/pages/images/SQL_editor.png "Import schema")
 
 6. When ready, run your script by clicking the **Execute** button.
 7. If there are any errors, correct them and run the script again.

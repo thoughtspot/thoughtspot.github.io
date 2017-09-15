@@ -12,7 +12,7 @@ In a complex schema, you may have a fact table with no relationship to another f
 
 A chasm trap in a data schema can introduce problems of over counting if you join the two fact tables through their shared dimension table. This diagram shows a typical complex schema with several tables that are related over a chasm trap:
 
- ![](../../images/chasm_trap_complex.png "Complex schema with chasm traps")
+ ![](/pages/images/chasm_trap_complex.png "Complex schema with chasm traps")
 
 Examples of use cases where a chasm trap could occur are:
 

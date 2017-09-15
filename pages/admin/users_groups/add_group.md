@@ -16,23 +16,23 @@ To create a group and add privileges for the group:
 1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3.  In the **Admin** panel, click on **User Management** and **Groups**.
 
-    ![](../../shared/conrefs/../../images/manage_groups_3.2.png "Manage Groups")
+    ![](/pages/images/manage_groups_3.2.png "Manage Groups")
 
 4. Click the **+ Add Group** button on the upper right hand side of the list of groups.
 
-     ![](../../images/add_group_3.2.png "Add a new Group")
+     ![](/pages/images/add_group_3.2.png "Add a new Group")
 
 5. Enter the details for the new group:
 
-     ![](../../images/new_group_dialogue_3.2.png "Enter Group details")
+     ![](/pages/images/new_group_dialogue_3.2.png "Enter Group details")
 
     1. Enter a unique name for the group.
     2. Optionally enter a description.
-    3. Check the [privileges](about_privileges.html#) you want to grant to the group.
+    3. Check the [privileges](about_users_groups.html#list-of-privileges) you want to grant to the group.
 
         If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about_row_security.html#) does not apply to them.
 
@@ -49,9 +49,9 @@ After adding a group, you can always go in and change its settings to add or rev
 2. Click on the **Admin** icon, on the top navigation bar.
 3. In the **Admin** panel, click on **User Management** and **Groups**.
 
-    ![](../../shared/conrefs/../../images/manage_groups_3.2.png "Manage Groups")
+    ![](/pages/images/manage_groups_3.2.png "Manage Groups")
 
-4. Find the group you want to edit in the list and click its name, or the edit icon ![](../../images/edit_icon.png).
+4. Find the group you want to edit in the list and click its name, or the edit icon ![](/pages/images/edit_icon.png).
 
    If you don't see the name of the group, try searching for it. You can also delete a group from this page by clicking the **Delete** icon. Deleting a group does not delete its users.
 
@@ -66,9 +66,9 @@ You can add multiple users to a group using one button. To add multiple users to
 2. Click on the **Admin** icon, on the top navigation bar.
 3.  In the **Admin** panel, click on **User Management** and **Users**.
 
-     ![](../../shared/conrefs/../../images/manage_users_3.2.png "Manage Users")
+     ![](/pages/images/manage_users_3.2.png "Manage Users")
 
 4. Select the users you would like to add to the same group from the list.
 5. Click the **Add Users to Groups** button on the top of the list of users.
 
-     ![](../../images/add_multiple_users_to_a_group.png "Add a new User")
+     ![](/pages/images/add_multiple_users_to_a_group.png "Add a new User")

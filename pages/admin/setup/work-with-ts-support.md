@@ -137,8 +137,8 @@ After you set the custom support contact information, here's where your users wi
 
 -   In the Help Center, when they click **Contact Support**.
 
-     ![](../../images/help_center_support_contact.png "Help Center support contact")
+     ![](/pages/images/help_center_support_contact.png "Help Center support contact")
 
 -   In error messages, when they click **What Happened?**
 
-     ![](../../images/trace_log.png "Error message support contact")
+     ![](/pages/images/trace_log.png "Error message support contact")

@@ -19,19 +19,19 @@ This procedure shows how to creating a user manually. When you create a user, yo
 1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3.  In the **Admin** panel, click on **User Management** and **Users**.
 
-     ![](../../shared/conrefs/../../images/manage_users_3.2.png "Manage Users")
+     ![](/pages/images/manage_users_3.2.png "Manage Users")
 
 4. Click the **+ Add User** button on the upper right hand side of the list of groups.
 
-     ![](../../images/add_user_3.2.png "Add a new User")
+     ![](/pages/images/add_user_3.2.png "Add a new User")
 
 5. Enter the details for the new user:
 
-     ![](../../images/new_user_dialogue_3.2.png "Create a user manually")
+     ![](/pages/images/new_user_dialogue_3.2.png "Create a user manually")
 
     1. **Name**: A unique name for the user (usually their first and last name).
     2. **Username**: A login name for the user.
@@ -62,13 +62,13 @@ To edit an existing user:
 1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![](../../shared/conrefs/../../images/admin_icon.png)
+    ![](/pages/images/admin_icon.png)
 
 3.  In the **Admin** panel, click on **User Management** and **Users**.
 
-     ![](../../shared/conrefs/../../images/manage_users_3.2.png "Manage Users")
+     ![](/pages/images/manage_users_3.2.png "Manage Users")
 
-4. Find the user you want to edit in the list and click on its name or the edit icon ![](../../images/edit_icon.png). If you don't see the name of the user, try searching for it.
+4. Find the user you want to edit in the list and click on its name or the edit icon ![](/pages/images/edit_icon.png). If you don't see the name of the user, try searching for it.
 
     You can also delete a user from this page by clicking the **Delete** icon.
 
