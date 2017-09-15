@@ -12,5 +12,5 @@ Congratulations on purchasing the ThoughtSpot instance. This guide will get you 
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it goes, and what we can do to make it better.
 
--   **[Contact ThoughtSpot](../../admin/misc/contact.html)**  
+-   **[Contact ThoughtSpot](/pages/admin/misc/contact.html)**  
 You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket.
