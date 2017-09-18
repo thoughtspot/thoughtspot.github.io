@@ -76,7 +76,7 @@ Here is a list of all of the source connectors, and their connection credentials
 - Password: Required. Enter the ODBC account password.
 - Data Source Name: Required. Enter the system DSN.
 - Schema: Enter the schema used for the source or target.
-- Code Page: Required. Choose the code page type from the dropdown menu. This is the code page of the database server or flat file defined in the connection.
+- Code Page: Required. Choose the code page type from the dropdown menu. This is the code page of the database server.
 - odbcSubtype: Choose the odbcSubtype from the dropdown menu. This categorizes the type of the connection so that pushdown optimization support can be enabled. Default is Other.
 
 ## Oracle
@@ -92,25 +92,6 @@ Here is a list of all of the source connectors, and their connection credentials
 - Service Name: Required. Enter the service name. You can find the service name by connecting to the server as "system" using SID, then executing the query: `select value from v$parameter where name like '%service_name%';`.
 - Schema: Required. Enter the schema you want to connect to.
 - Code Page: Required. Choose either `MS_1252` or `UTF_8` from the dropdown menu. The code page should be compatible with the Oracle source.
-
-## REST
-
-- Connection name: Required. Enter a new REST API connection name.
-- Base Url: Required. Enter the REST endpoint URL, without the Query parameters, that you want to connect to.
-- Is BaseUrl Dynamic: Required. Choose either true or false from the dropdown menu. The base URL is dynamic if each request is different.
-- Url Request Parameters: Enter the request that is URL query parameters. Parameters should be separated by semicolons. The Property and value should be separated by 'equals' (=).
-- Form Request Parameters: Enter the request that is form query parameters.
-- Header Request Parameters: Enter the request that is header query parameters.
-- Media Type: Required. Choose your media type from the dropdown menu. This is the data that you're receiving.
-- Request Type: Required. Choose your request type from the dropdown menu. Currently, only GET is supported, even though other types are listed.
-- Authentication Type: Required. Choose your authentication type from the dropdown menu. If you choose CUSTOM_AUTH, please contact ThoughtSpot Support to help you create the authentication.
-- OAuth Consumer Key: Provide the consumer key for OAuth authentication.
-- OAuth Consumer Secret: Provide the consumer secret for OAuth authentication.
-- OAuth Token: Mention the token key for OAuth authentication.
-- OAuth Token Secret: Mention the token secret for OAuth authentication.
-- URL Input Parameters Config File Name: Mention the URL input parameter file name with the path. The file path should be entered for a dynamic base URL. The URLs are generated at run time with values that are fetched from the CSV file.
-- FORM Input Parameters Config File Name: Mention the form input parameter file name with the path.
-- HEADER Input Parameters Config File Name: Mention the header input parameter file name with the path.
 
 ## SalesForce
 

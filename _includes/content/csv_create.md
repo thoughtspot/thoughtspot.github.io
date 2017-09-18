@@ -1,4 +1,4 @@
-The first step in loading data is to obtain or create one or more flat files that contain the data to be loaded into ThoughtSpot.
+The first step in loading data is to obtain or create one or more CSV files that contain the data to be loaded into ThoughtSpot.
 CSV is a common format for transferring data between databases. ThoughtSpot requires this format.  
 
 Most applications such as Microsoft Excel or Google Sheets can output CSV formatted files. If your source is an Excel spreadsheet or Google Sheet:
