@@ -37,7 +37,7 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 -   Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Also for staging larger datasets (\> 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD gp2 provisioned.
 
 
-###  Contact support adn set your region
+###  Contact support and set your region
 
 1. Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 2. Provide ThoughtSpot Support with your AWS account ID and the region where the VMs will be hosted.

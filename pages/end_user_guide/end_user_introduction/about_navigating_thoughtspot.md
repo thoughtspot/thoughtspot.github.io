@@ -31,7 +31,7 @@ Click the logo to go to the home page. The home page contains:
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-To learn more about this section, visit [About search](../end_user_search/search.html#).
+To learn more about this section, visit [About search](/pages/end_user_search/search.html#).
 
 ## Answers
 
@@ -65,7 +65,5 @@ To learn more about this section, visit [About the user profile](about_user.html
 
 
 ## Related information
-
--   [Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html)  
--   [Log out of ThoughtSpot](../../../pages/end_user_guide/end_user_introduction/log_out_of_thoughtspot.html)  
--   [Set your ThoughtSpot locale](../../../admin/setup/set_your_thoughtspot_locale.html)  
+-   [Log in to or out of ThoughtSpot](/pages/end_user_guide/end_user_introduction/accessing.html)  
+-   [Set your ThoughtSpot locale](/pages/end_user_guide/locale.html)  

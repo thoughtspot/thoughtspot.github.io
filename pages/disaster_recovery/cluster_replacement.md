@@ -19,7 +19,7 @@ In this configuration, the primary initiates periodic full backups of itself. It
 
 -   **[Mount a NAS file system](/pages/admin/setup/NAS_mount.html)**  
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.
--   **[Set up a disaster recovery configuration](../../disaster_recovery/disaster_recovery/set_up_DR_config.html)**  
+-   **[Set up a disaster recovery configuration](/pages/disaster_recovery/disaster_recovery/set_up_DR_config.html)**  
 Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance.
--   **[Recover a cluster from a disaster](../../disaster_recovery/disaster_recovery/recover_cluster.html)**  
+-   **[Recover a cluster from a disaster](/pages/disaster_recovery/disaster_recovery/recover_cluster.html)**  
 If the primary cluster fails, the mirror cluster can take over its operations after a small manual intervention. The manual procedure makes the mirror instance into the primary.

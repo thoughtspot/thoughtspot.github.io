@@ -10,7 +10,8 @@ Use this procedure when you want to manually create a backup. If you would like 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
 1. Log in to the Linux shell using SSH.
-2. [Create a manual snapshot](take_snapshot.html) or find a snapshot you want to use. To find a snapshot you want to back up use the following command:
+2. Create a manual snapshot or find a snapshot you want to use.
+   To find a snapshot you want to back up use the following command:
 
     ```
     $ tscli snapshot ls

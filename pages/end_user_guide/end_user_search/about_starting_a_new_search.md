@@ -58,7 +58,7 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 
 -   The column name: like revenue, product name, or store
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
--   One of the special [keywords](../end_user_reference/keyword_reference.html#) ThoughtSpot understands: like yesterday, \>, or contains
+-   One of the special [keywords](/pages/reference/keyword_reference.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
 
 ## What does a search result in?
 
@@ -67,9 +67,7 @@ An answer is the result of a single search. You can save an answer you want to w
 
 ## Related information
 
--   [About choosing sources](../../../pages/end_user_guide/end_user_search/about_choosing_sources.html)  
--   [About the search bar](../../../pages/end_user_guide/end_user_search/about_the_search_bar.html)  
--   [Search suggestions](../../../pages/end_user_guide/end_user_search/recent_searches.html)  
--   [About attributes and measures](../../../pages/end_user_guide/end_user_search/about_attributes_and_measures.html)  
--   [What am I looking at?](../../../pages/end_user_guide/end_user_search/what_am_i_looking_at_.html)  
--   [Last data refresh time](../../../pages/end_user_guide/end_user_search/data_refresh_time.html)  
+-   [Choose a data source](/pages/end_user_guide/end_user_search/about_choosing_sources.html)  
+-   [Search bar features](/pages/end_user_guide/end_user_search/about_the_search_bar.html)  
+-   [Search suggestions](/pages/end_user_guide/end_user_search/recent_searches.html)  
+-   [Search results and column types](/pages/end_user_guide/end_user_search/about_attributes_and_measures.html)  

@@ -62,6 +62,5 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 ## Related information  
 
 - [Keyword reference](/pages/reference/keyword_reference.html#)
-- [Search using top keyword](/pages/advanced_searches_guide/keywords/search_using_top_keyword.html)  
 - [Search using growth over time](/pages/complex_searches/search_using_growth_over_time.html)  
 - [Geographical proximity keywords "near" and "farther than"](/pages/admin/features/proximity_search.html)  

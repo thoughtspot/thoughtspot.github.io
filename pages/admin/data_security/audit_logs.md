@@ -12,8 +12,8 @@ ThoughtSpot includes a number of management tools, monitoring applications, and 
 
 There are several ways you can view audit log information in ThoughtSpot. You can see recent events in the Control Center or view more detailed audit logs using tscli. Administrators can view audit logs of configuration changes users have made to ThoughtSpot in these ways:
 
--   View events from the [Control Center](../system_admin/monitor_pinboards.html#).
--   [Generate audit log reports](get_audit_logs.html#) through tscli.
+- Monitor events from the [Control Center](../system_admin/monitor_pinboards.html#).
+- Generate audit log reports through the `tscli` command.
 
 
 You can access an audit log of cluster events through tscli. You can also access information on cluster updates, configurations, data loading and metadata events.
@@ -71,7 +71,7 @@ To get audit logs:
 
 Security policies are the principles and processes ThoughtSpot uses in development to ensure a product that conforms to security standards. Security policies ensure a secure product with each release. When a release is in development, each build is tested using Qualys Network Security and Vulnerability Management Suite. Issues and vulnerabilities are fixed proactively, based on the results.
 
-The ThoughtSpot Engineering and ThoughtSpot Support teams are notified of Common Vulnerabilities and Exposures (CVEs), so they can patch OS packages proactively as well. You can [View installed packages](view_installed_packages.html#) along with their version numbers at any time, in order to see if you require an update to ThoughtSpot.
+The ThoughtSpot Engineering and ThoughtSpot Support teams are notified of Common Vulnerabilities and Exposures (CVEs), so they can patch OS packages proactively as well. You can view installed packages along with their version numbers at any time, in order to see if you require an update to ThoughtSpot.
 
 Whenever a CVE is identified, and an OS package needs to be updated, the next patch release will include the patch or update. You can view installed Linux packages at any time, along with the version numbers of the installed packages.
 

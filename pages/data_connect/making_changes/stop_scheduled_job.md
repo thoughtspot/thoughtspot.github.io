@@ -16,8 +16,8 @@ Use this procedure to pause or stop a job. There are a few conditions when it ma
 
 To stop a scheduled job from running:
 
-1. [Log in to ThoughtSpot from a browser](../../../admin/setup/accessing.html#). 
-2. Click on **DATA**, on the top navigation bar. 
+1. Log in to ThoughtSpot from a browser.
+2. Click on **DATA**, on the top navigation bar.
 
      ![](/pages/images/data_icon.png "Data")
 
@@ -25,12 +25,10 @@ To stop a scheduled job from running:
 
     ![](/pages/images/data_sources_tab_created.png "Data Sources tab")
 
-4. Click on the data source for the scheduled job you want to pause. 
+4. Click on the data source for the scheduled job you want to pause.
 5. Click **Schedule** to edit the schedule.
-6. Stop the job by selecting **Disable schedule**. 
+6. Stop the job by selecting **Disable schedule**.
 
      ![](/pages/images/disable_schedule.png "Stop a recurring data load")
 
 7. Click **OK**.
-
-**Parent topic:** [About making changes to Data Connect setup](../../../data_connect/data_connect/making_changes/about_changing_etl_jobs.html)

@@ -11,11 +11,11 @@ ThoughtSpot enables you to view and analyze your data through a search-based use
 
 ThoughtSpot gives administrators the ability to modify data properties to meet business needs, for example by providing search synonyms for common terms, boosting the importance of a column in search results, or formatting how the data appears. So if you are not getting the answers you expect when using ThoughtSpot, check with your ThoughtSpot administrator to see if some settings may need to be changed.
 
--   **[Finding your way around](../../../pages/end_user_guide/end_user_introduction/about_navigating_thoughtspot.html)**  
+-   **[Finding your way around](/pages/end_user_guide/end_user_introduction/about_navigating_thoughtspot.html)**  
 ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar.
--   **[About the user profile](../../../pages/end_user_guide/end_user_introduction/about_user.html)**  
+-   **[About the user profile](/pages/end_user_guide/end_user_introduction/about_user.html)**  
 The user icon lets you view your profile or sign out of ThoughtSpot.
--   **[Understanding privileges](../../../pages/end_user_guide/end_user_introduction/about_privileges_end_user.html)**  
+-   **[Understanding privileges](/pages/end_user_guide/end_user_introduction/about_privileges_end_user.html)**  
 The things you can do in ThoughtSpot are determined by the privileges you have. These are set at the group level.
--   **[About stickers](../../../admin/data_modeling/stickers_concept.html)**  
+-   **[About stickers](/pages/end_user_guide/stickers.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.

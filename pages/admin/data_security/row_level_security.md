@@ -10,7 +10,7 @@ Row level security works at the group level, not the individual user level. By d
 
 For each data source (table or imported data), you will define one or more rules that govern which groups can see which data. The rules take the form of an expression which is evaluated for each row and group combination, to decide if that group can see that row. If the expression evaluates to "true", for a particular group, they will be able to see that row.
 
-For a list of operators and functions you can use to build these expressions see [Row level security rules reference](../reference/rls_rule_builder_reference.html#).
+For a list of operators and functions you can use to build these expressions see [Row level security rules reference](/pages/reference/rls_rule_builder_reference.html#).
 
 ## Best practices for using Rule-Based Row Level Security
 

@@ -8,8 +8,12 @@ toc: false
 sidebar: mydoc_sidebar
 ---
 This section lists error codes that can appear in ThoughtSpot, with summary information and actions to take.
+Error codes and messages are shown in ThoughtSpot when something goes wrong. These messages can appear in the application and in logs.
 
-**Note:** Only the base code number is listed for each error. So keep this in mind when searching through this reference. For example, error code TS-00125 is simply listed as 125.
+When you see an error code, you will also see a message with a brief summary of what has happened. If there is a remediation action you can take, it will be listed in this references. If there is no action listed, please contact ThoughtSpot Support.
+
+
+{% include tip.html content="Only the base code number is listed for each error. So keep this in mind when searching through these codes. For example, error code `TS-00125` is simply listed as `125`." %}
 
 
 ## Metadata Errors (100 - 499)|

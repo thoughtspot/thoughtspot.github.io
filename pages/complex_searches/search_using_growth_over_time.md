@@ -32,6 +32,3 @@ The `growth of` keyword compares the data from different date periods, and retur
      ![](/pages/images/growth_of_attribute_breakdown.png "Growth of broken up by category")
 
     It looks like Q4, FY 15 was a much more productive period for a number of categories compared to a year ago.
-
-
-**Parent topic:** [About keyword searches](../../pages/complex_searches/about_keyword_searches.html)

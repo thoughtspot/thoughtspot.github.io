@@ -3,6 +3,7 @@ title: [Overview of sharing]
 tags:
 keywords: tbd
 last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 ---
 
@@ -14,11 +15,11 @@ This is a list of objects a regular, non-administrator user can share. Administr
 
 You can share with groups and with individual people. You can share several different types of objects:
 
-|Object type|Description|Default security model|Sharing procedure|
-|-----------|-----------|----------------------|-----------------|
-|Uploaded data|Data that was uploaded using a Web browser.|Only the user who uploaded the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other people or groups.|[Share uploaded data](share_user_imported_data.html#)|
-|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it.|[Share a pinboard](../../data_security/share_pinboards.html#)|
-|Answers|The result of a single search.|Anyone who can view an answer can share it.|[Share answers](../../data_security/share_answers.html#)|
+|Object type|Description|Default security model|
+|-----------|-----------|----------------------|
+|Uploaded data|Data that was uploaded using a Web browser.|Only the user who uploaded the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other people or groups. See [Share uploaded data](share_user_imported_data.html#)|
+|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [share a pinboard](/pages/end_user_guide/pinboards/share_pinboards.html#)|
+|Answers|The result of a single search.|Anyone who can view an answer can share it. See [share answers](/pages/end_user_guide/pinboards/share_answers.html)|
 
 ## Who can share and to whom
 

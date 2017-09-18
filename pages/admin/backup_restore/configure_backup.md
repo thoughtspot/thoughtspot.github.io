@@ -40,7 +40,7 @@ Before creating a policy, make sure you have read [Understand backup/snapshot sc
 
 |Element|Description|
 |-------|-----------|
-|`mode`|The backup mode. `FULL` backups are necessary for restoring a cluster. See [Work with backups](backups_and_snapshots.html) for details on each backup mode.|
+|`mode`|The backup mode. `FULL` backups are necessary for restoring a cluster. See [Work with backups](backup_modes.html) for details on each backup mode.|
 |`type`|Currently, only `STANDALONE` is supported.|
 |`directory`|The location on the disk to place the backup.|
 |`storage_type`|The type of storage you are using. `NAS` storage is recommended for `FULL` backups.|

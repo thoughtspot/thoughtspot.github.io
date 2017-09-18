@@ -32,6 +32,3 @@ To copy the link for a pinboard:
 6. Copy the visualization link. The highlighted portion is the visualization ID.
 
      ![](/pages/images/copy_link_viz_pinboard_part.png "Copy visualization link")
-
-
-**Parent topic:** [Other pinboard actions](../../../pages/end_user_guide/pinboards/pinboard_actions.html)

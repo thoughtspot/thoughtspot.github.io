@@ -35,7 +35,7 @@ To set up rule-based row level security, you first need to access the Rule Build
 
      ![](/pages/images/add_row_security.png "Add row security")
 
-5. The Rule Builder will appear, where you can [define row level security rules](define_rls_rules.html#).
+5. The Rule Builder will appear, where you can define row level security rules.
 
      ![](/pages/images/rls_rule_builder.png "The Rule Builder")
 
@@ -43,7 +43,7 @@ To set up rule-based row level security, you first need to access the Rule Build
 
 You define row level security by creating an expression that gets evaluated for every row and group combination. This powerful feature can be used with up to thousands of groups. To define a row level security rule:
 
-1. [Access the Rule Builder](access_rule_builder.html#).
+1. Open the Rule Builder.
 2. Use the Rule Builder window to enter a row security rule.
 
    You'll type in an expression, which gets evaluated for every row and group combination. If the rule evaluates to true for a particular row and group, that group will be able to see that row. Use the variable **ts_groups** to refer to the group name. For example, the expression ts_groups = location would allow users to only see rows where the value in the location column was the same as their group name.

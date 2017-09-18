@@ -3,7 +3,6 @@ title: [Understand the backup strategies]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 ---
 This section discusses three strategies for backing up your ThoughtSpot cluster.

@@ -1,7 +1,37 @@
+
+h1.indexTitle {
+  margin-bottom: 43px;
+  font-stretch: extra-expanded;
+  color: #98A0B0;
+}
+
+p.bookLink {
+  font-size: 105%;
+  font-family: sans-serif;
+  line-height: 80%;
+}
+
+img.indexImg {
+  margin-bottom: 27px;
+  align-self: center;
+}
+
+h4.tagLine {
+  align-self: center;
+  color: #EA603E;
+  margin-top: 3px !important;;
+}
+
+div.col-sm-4 {
+  margin-top: 20px;
+}
+
+
+/* ^^ material for home page*/
+
 body {
     font-size:15px;
 }
-
 
 .bs-callout {
     padding: 20px;

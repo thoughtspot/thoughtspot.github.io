@@ -178,10 +178,6 @@ Many of the administration commands output logging information to log files. The
 -   `/export/logs/hadoop`
 -   `/export/logs/zookeeper`
 
--   **[About the Space Utilization chart](/pages/admin/system_admin/about_the_memory_usage_chart.html)**  
-The Space Utilization chart is one of the available charts for you to use when checking the cluster overview.
-
-
 ## System monitoring notifications
 
 You can configure ThoughtSpot to send emails to addresses you specify with monitoring reports and a cluster heartbeat. Follow these steps to [Set up monitoring](../setup/set_up_monitoring.html#).

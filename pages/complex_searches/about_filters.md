@@ -12,12 +12,12 @@ When you add a value to your search, it becomes a filter. To add a filter from t
 
      ![](/pages/images/filter_from_the_search_bar.png "Filter from the search bar")
 
-    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](../end_user_reference/keyword_reference.html#).
+    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](/pages/reference/keyword_reference.html#).
 
 2. Click outside of the search bar or push enter to apply your filter.
 
 
-Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](about_pinboard_filters.html#).
+Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](/pages/complex_searches/pinboard_filters.html#).
 
 
 ## Where filters appear in ThoughtSpot
@@ -40,17 +40,10 @@ Simple filters can be applied to searches in a few different ways. You can use t
 
 When adding a filter from the **Change Configuration** menu, numeric columns and text columns provide you with a checkbox selector for values. If the column contains a date, you'll see a calendar selector when applying a filter. This is also where you'll go to apply bulk filters.
 
--   **[Add a filter to a table](../../pages/end_user_guide/end_user_search/filter_from_column_headers.html)**  
-You can add a simple filter from a column header while viewing your answer as a table.
--   **[Add a filter to a chart](../../pages/end_user_guide/end_user_search/filter_from_chart_axes.html)**  
-You can add a simple filter from a chart axis while viewing your answer as a chart.
--   **[Add a filter from the search bar](../../pages/end_user_guide/end_user_search/add_filter_from_search.html)**  
-You can add a simple filter from the search bar while creating your answer.
-
 ## Bulk filters
 
 If you have a large worksheet or table with thousands or millions of rows, you may want to create bulk filters. You can paste in a list of filter values, without having to click the box next to each value in the filter selector.
 
 Bulk filters can be very useful when you have a very large worksheet or table. You can use them to filter a large list of values easily. For example, this is useful if you want to only search on a list of products that your manager sent to you in an email. You can cut and paste those values into the bulk filter box to quickly generate a report or chart that includes only those items of interest.
 
-You can [create a bulk filter](../../pages/complex_searches/create_bulk_filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.
+You can [create a bulk filter](/pages/complex_searches/create_bulk_filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.

@@ -1,12 +1,11 @@
 ---
-title: [elephant]
+title: [Get help]
 tags:
 keywords: tbd
 last_updated: tbd
 summary: "The Help Center provides links to different resources that were created to help you use ThoughtSpot."
 sidebar: mydoc_sidebar
 ---
-
 The online Help Center serves as your first line of support for when you run into any questions while using ThoughtSpot.
 
 The Help Center can be accessed by clicking on **Help** on the top navigation bar. This opens a simple dialog box with links to How to search, Keywords, Release notes, Documentation, and Downloads. Click one of them to open a new tab containing your selected topic.
@@ -31,4 +30,4 @@ The Help Center provides the following resources:
 
 If you still can't find what you're looking for, you can contact support.
 
-     ![](/pages/images/help_center_support_contact.png "Contact support")
+![](/pages/images/help_center_support_contact.png "Contact support")

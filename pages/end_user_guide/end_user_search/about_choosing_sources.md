@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "Before you start a new search, make sure you have chosen the right data sources."
 sidebar: mydoc_sidebar
 ---
-To begin a new search, you must first select your data sources by clicking on the **Choose Sources** button. You will see a list of data sources that have been shared with you. The data sources are usually created by your administrator, though you can also [upload your own data](../../loading/load_from_web_browserdita.html#).
+To begin a new search, you must first select your data sources by clicking on the **Choose Sources** button. You will see a list of data sources that have been shared with you. The data sources are usually created by your administrator, though you can also [upload your own data](/pages/end_user_guide/data_view/generate_flat_file.html).
 
  ![](/pages/images/choose_sources.png "Choose sources")
 

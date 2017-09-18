@@ -379,5 +379,3 @@ Response Headers
   "x-ua-compatible": "IE=edge"
 }
 ```
-
-**Parent topic:** [Reference guide](../../application_integration/reference/reference_guide.html)

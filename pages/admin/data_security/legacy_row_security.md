@@ -6,7 +6,7 @@ last_updated: tbd
 summary: "Legacy Row Level Security is deprecated and no longer used. This documentation is retained to support implementations that are already using this method."
 sidebar: mydoc_sidebar
 ---
-If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](new_row_level_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
+If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](about_row_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
 
 This legacy version of row level security allowed you to define which groups could see individual rows in a table, based on the values in a column. Setting row level security is a three steps process:
 
@@ -119,26 +119,29 @@ You can edit the security file using Microsoft Excel or a compatible tool. You w
 
     |Value|Security file heading|Details|
     |-----|---------------------|-------|
-    |Group|GroupName|Group of users for which to apply this setting.|
-    |Table|LogicalTableName|TableName from the model file.|
-    |Table identifier|LogicalTableGUID|TableGUID from the model file.|
-    |Column|ColumnName|ColumnName from the model file.|
-    |Column identifier|ColumnGUID|ColumnGUID from the model file.|
-    |Operation|Operation|Supply one of these operators:    -   BEGINS_WITH
-    -   ENDS_WITH
-    -   CONTAINS
-    -   EQ (equals)
-    -   NE (not equals)
-    -   GE (greater than or equal to)
-    -   GT (greater than)
-    -   LE (less than or equal to)
-    -   LT (less than)
-    -   BW (between)
-    -   BW_INC (between with both boundaries included)
-    -   BW_INC_MIN (between with the lower boundary included)
-    -   BW_INC_MAX (between with upper boundary included)
-|
-    |Column value(s)|Value|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|
+    |Group|`GroupName`|Group of users for which to apply this setting.|
+    |Table|`LogicalTableName`|TableName from the model file.|
+    |Table identifier|`LogicalTableGUID`|TableGUID from the model file.|
+    |Column|`ColumnName`|ColumnName from the model file.|
+    |Column identifier|`ColumnGUID`|ColumnGUID from the model file.|
+    |Operation|`Operation`|Supply a valid operators.|
+    |Column value(s)|`Value`|Column value(s) to apply the operator to. If multiple values are used, as with the between operators, they are separated by a pipe (|) character.|
+
+    Valid operators are:
+
+    -   `BEGINS_WITH`
+    -   `ENDS_WITH`
+    -   `CONTAINS`
+    -   `EQ` (equals)
+    -   `NE` (not equals)
+    -   `GE` (greater than or equal to)
+    -   `GT` (greater than)
+    -   `LE` (less than or equal to)
+    -   `LT` (less than)
+    -   `BW` (between)
+    -   `BW_INC` (between with both boundaries included)
+    -   `BW_INC_MIN` (between with the lower boundary included)
+    -   `BW_INC_MAX` (between with upper boundary included)
 
     If the condition made up of the column, operator, and value combination for a particular row is true, that row will be visible to the members of the designated group.
 

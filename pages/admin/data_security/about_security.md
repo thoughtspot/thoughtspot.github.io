@@ -13,7 +13,7 @@ There are several aspects of security, including access and permissions, data se
 
 - [Data Security](sharing_security_overview.html#) refers to which users can see which data in the ThoughtSpot application, and includes:
   -   [Users and Groups](../users_groups/about_users_groups.html#)
-  -   [Privileges](../users_groups/about_privileges.html)
+  -   [Privileges](../users_groups/about_users_groups.html#privileges-and-groups)
   -   [Table and columns sharing](share_source_tables.html#)
   -   [Row level security](about_row_security.html#)
   -   [Worksheet sharing](share_worksheets.html#)
