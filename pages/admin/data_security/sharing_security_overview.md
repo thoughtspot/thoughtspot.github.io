@@ -6,13 +6,16 @@ last_updated: tbd
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
 ---
-Sharing and security settings govern what data a user can access and what they can do with the data. Admins can use these settings to regulate access to information and provide a personalized user experience.
+Sharing and security privileges govern what data a user can access and what they can do with the data. Admins can use privileges to regulate access to information and provide a personalized user experience.
 
 ## Users, groups, and privileges
 
-Data security applies to users and groups. Users can be managed [manually](../users_groups/about_users_groups.html#) or through [LDAP](../setup/about_LDAP.html#). Each user can have membership in one or more groups.
+Data security applies to users and groups. Users can be managed [manually](../users_groups/about_users_groups.html#) or through [LDAP](../setup/about_LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
 
-Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
+The following table shows the intersection of user privilege and ability:
+
+{% include content/matrix.md %}
+
 
 ## Security model for sharing objects
 
@@ -30,6 +33,7 @@ You can share with groups and with individual users. Sharing of tables can be de
 ## Row level security
 
 ThoughtSpot includes robust row level security, which allows you to filter all objects users see based on conditions you set at the level of row values in base data tables.
+
 
 ## Related information
 

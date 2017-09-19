@@ -35,6 +35,9 @@ If you add the privilege **Has administration privileges** to a group, note that
 
 Permissions to see and edit tables, worksheets, and pinboards are set when you share them with users and groups, as described in the topic [Data security](../data_security/sharing_security_overview.html#).
 
+The following table shows the intersection of user privilege and ability:
+
+{% include content/matrix.md %}
 
 ## Related information
 

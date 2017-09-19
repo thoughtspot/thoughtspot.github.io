@@ -1,13 +1,3 @@
----
-title: ["Understand groups and privileges"]
-tags:
-layout: page_print_horiz
-keywords: "user,group,privilege"
-last_updated: tbd
-summary: "Creating groups and assigning users to them makes privilege management easier."
-sidebar: mydoc_sidebar
----
-
 <table class="wide_table">
   <caption>Privilege and access matrix</caption>
    <colgroup>
