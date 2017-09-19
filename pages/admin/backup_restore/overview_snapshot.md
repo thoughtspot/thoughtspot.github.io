@@ -10,9 +10,11 @@ In this section, you learn how to work with the default snapshot configuration t
 
 ## Create a manual snapshot
 
-You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. If you would like to restore from a snapshot instead, contact ThoughtSpot Support.
+You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. ThoughtSpot limits you to 25 snapshots.
 
-Taking a snapshot is fast, about 20 seconds. It happens invisibly in the background of a running cluster. To create a snapshot:
+Taking a snapshot is fast, about 20 seconds. It happens invisibly in the background of a running cluster.  If you would like to restore from a snapshot instead, contact ThoughtSpot Support.
+
+To create a snapshot:
 
 1. Log in to the Linux shell using SSH.
 2. Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.
