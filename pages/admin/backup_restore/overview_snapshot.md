@@ -10,7 +10,7 @@ In this section, you learn how to work with the default snapshot configuration t
 
 ## Create a manual snapshot
 
-You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. ThoughtSpot limits you to 25 snapshots.
+You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. ThoughtSpot limits you to 25 snapshots. If you need to delete a snapshot, contact ThoughtSpot Support.
 
 Taking a snapshot is fast, about 20 seconds. It happens invisibly in the background of a running cluster.  If you would like to restore from a snapshot instead, contact ThoughtSpot Support.
 
