@@ -6,7 +6,7 @@ h1.indexTitle {
 }
 
 p.bookLink {
-  font-size: 105%;
+  font-size: 95%;
   font-family: sans-serif;
   line-height: 80%;
 }
@@ -19,16 +19,66 @@ img.indexImg {
 h4.tagLine {
   align-self: center;
   color: #EA603E;
-  margin-top: 3px !important;;
+  margin-top: 3px !important;
 }
 
 div.col-sm-4 {
   margin-top: 20px;
 }
 
+table.wide_table > caption {
+  font-size: larger;
+  margin-bottom: 2em;
+  border-bottom: #ccc;
+  border-bottom-style: double;
+}
 
-/* ^^ material for home page*/
+table.wide_table > tbody > tr > td {
+  border-right: 1px solid #ddd;
+}
 
+table.wide_table > thead > tr > th {
+  color: initial;
+  background-color: initial;
+}
+
+table.wide_table > thead > tbody {
+  border: 1px;
+}
+
+table.wide_table {
+   max-width: initial;
+   margin-bottom: initial;
+   table-layout: initial;
+   column-width: initial;
+   word-break: initial;
+   margin-top: 50px;
+   page: wide_table
+}
+
+th.rotate {
+  /* Something you can count on */
+  height: 90px;
+  white-space: nowrap;
+  font-size: small;
+}
+
+th.rotate > div {
+  transform:
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+
+
+/* Privileges Table ^^*/
 body {
     font-size:15px;
 }
@@ -145,26 +195,23 @@ margin-top: -40px
     color: gray;
 }
 
-table {
+/* Don't think we need this*/
+
+/*table {
     background-color: transparent;
-}
-caption {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #777;
-    text-align: left;
-}
-th {
-    text-align: left;
-}
-table {
     max-width: 90%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
     table-layout: auto;
     column-width: 50px;
     word-break: keep-all;
+}*/
+
+
+th {
+    text-align: left;
 }
+
 
 table > thead > tr > th,
 table > tbody > tr > th,
