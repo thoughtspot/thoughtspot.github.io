@@ -6,7 +6,15 @@ last_updated: tbd
 summary: "You can easily change the legend colors in a chart."
 sidebar: mydoc_sidebar
 ---
-To change the colors used in the legend of a chart, click on the square next to the attribute whose color you wish to change. To change the chart colors:
+To change the colors used in a chart, you can use the color picker from the chart. The color you set is used in:
+
+* legends on charts
+* tables for conditional formatting
+* tags and editing the colors
+
+To change the chart colors, you need at least one column in the chart's legend.
+
+## Add a column to the legend
 
 1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
 
@@ -16,12 +24,18 @@ To change the colors used in the legend of a chart, click on the square next to 
 
      ![](/pages/images/legend_field.png "Legend field")
 
-3. On the chart, click the color icon of the legend value you would like to change the color of.
+## Set a color through the legend
+
+1. On the chart, click the color icon of the legend value you would like to change the color of.
 
      ![](/pages/images/legend.png "Legend values list")
 
-4. Use the color selector to choose a new color to represent that legend value.
+2. Use the color picker to choose a new color to represent that legend value.
 
-     ![](/pages/images/choose_legend_color.png "Legend color template")
+   You can also enter a HEX value directly.
 
-5. Click outside of the selector to apply your change.
+     ![](/pages/images/color_picker.png "Legend color picker")
+
+3. Click outside of the picker to dismiss the picker.
+
+4. **Actions > Save** your changes.
