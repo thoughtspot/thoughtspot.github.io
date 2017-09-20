@@ -79,7 +79,7 @@
     </tr>
     <tr>
       <td>start_of_month</td>
-      <td>Returns the date for the first day of the month for the given date.</td>
+      <td>Returns `MMM yyyy` for the first day of the month. Your installation configuration can override this setting so that it returns a different format such as `MM/dd/yyyy`. Speak with your ThoughtSpot administrator if you .</td>
       <td><code class="highlighter-rouge">start_of_month ( 01/31/2015 ) = Jan FY 2015</code><br><code class="highlighter-rouge">start_of_month (shipped)</code></td>
     </tr>
     <tr>

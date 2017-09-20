@@ -20,11 +20,8 @@ entries:
       type: frontmatter
 # end PDF output defs
   - sectiontitle: Administration
-    output: web, admBk, pdf
+    output: web, admBk
     sectionitems:
-    - title: foobar
-      url: /pages/admin/users_groups/test.html
-      output: web, admBk, pdf
     - title: Introduction to administration
       url: /pages/admin/intro.html
       output: web, admBk
