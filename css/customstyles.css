@@ -223,6 +223,7 @@ table > tfoot > tr > td {
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 1px solid #ddd;
+    min-width: 100px;
 }
 table > thead > tr > th {
     vertical-align: bottom;
