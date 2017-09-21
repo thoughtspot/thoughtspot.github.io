@@ -3,8 +3,1113 @@
 entries:
 - title: sidebar
   product: Version
-  version: 4.4
+  version: 4.4 Guides
   sections:
-  - title: Coming Soon
+# Needed for PDF output only; no titles in this section
+  - sectiontitle:
+    output: admBk,ugBk
+    type: frontmatter
+    sectionitems:
+    - title:
+      url: /pdfconfigs/titlepage.html
+      output: admBk,ugBk
+      type: frontmatter
+    - title:
+      url: /pdfconfigs/tocpage.html
+      output: admBk
+      type: frontmatter
+# end PDF output defs
+  - sectiontitle: Administration
+    output: web, admBk
+    sectionitems:
+    - title: Introduction to administration
+      url: /pages/admin/intro.html
+      output: web, admBk
+    - title: Login credentials for administration
+      url: /pages/admin/setup/logins.html
+      output: web, admBk
+    - levelTwoTitle: Installation and setup
+      output: web, admBk
+      levelTwoItems:
+        - title: About installation and upgrades
+          url: /pages/admin/setup/intro.html
+          output: web, admBk
+        - title: Set your locale
+          url: /pages/admin/setup/set_your_thoughtspot_locale.html
+          output: web, admBk
+        - title: Test connectivity between nodes
+          url: /pages/admin/setup/test_network.html
+          output: web, admBk
+        - title: Set the relay host for SMTP
+          url: /pages/admin/setup/set_up_relay_host.html
+          output: web, admBk
+        - title: Set up a fiscal calendar year
+          url: /pages/admin/setup/set_custom_calendar.html
+          output: web, admBk
+        - title: Configure SSL
+          url: /pages/admin/setup/SSL_config.html
+          output: web, admBk
+        - title: Configure SAML
+          url: /pages/admin/setup/configure_SAML_with_tscli.html
+          output: web, admBk
+        - levelThreeTitle: Integrate LDAP
+          output: web, admBk
+          levelThreeItems:
+          - title: About LDAP integration
+            url: /pages/admin/setup/about_LDAP.html
+            output: web, admBk
+          - title: Configure OpenLDAP
+            url: /pages/admin/setup/LDAP_config_openLDAP.html
+            output: web, admBk
+          - title: Configure LDAP for Active Directory
+            url: /pages/admin/setup/LDAP_config_AD.html
+            output: web, admBk
+          - title: Add the SSL certificate for LDAP
+            url: /pages/admin/setup/add_SSL_for_LDAP.html
+            output: web, admBk
+          - title: Test the LDAP configuration
+            url: /pages/admin/setup/test_ldap.html
+            output: web, admBk
+          - title: Sync users and groups from LDAP
+            url: /pages/admin/setup/sync_users_and_groups_from_ldap.html
+            output: web, admBk
+        - title: Configure NAS file system
+          url: /pages/admin/setup/NAS_mount.html
+          output: web, admBk
+        - title: Set up monitoring
+          url: /pages/admin/setup/set_up_monitoring.html
+          output: web, admBk
+        - title: Configure support services
+          url: /pages/admin/setup/work-with-ts-support.html
+          output: web, admBk
+        - title: Network ports
+          url: /pages/admin/setup/firewall_ports.html
+          output: web, admBk
+        - title: About load balancing and proxies
+          url: /pages/admin/setup/about_load_balancer_configuration.html
+          output: web, admBk
+    - levelTwoTitle: Load and manage data
+      output: web, admBk
+      levelTwoItems:
+      - title: Introduction to data management
+        url: /pages/admin/loading/loading_intro.html
+        output: web, admBk
+      - title: Configure casing
+        url: /pages/admin/loading/about_case_configuration.html
+        output: web, admBk
+      - title: Load CSV files with the UI
+        url: /pages/admin/loading/load_from_web_browser.html
+        output: web, admBk
+      - title: How to view a data schema
+        url: /pages/admin/loading/schema_viewer.html
+        output: web, admBk
+      - levelThreeTitle: Plan the schema
+        output: web, admBk
+        levelThreeItems:
+        - title: About schema planning
+          url: /pages/admin/loading/plan_schema.html
+          output: web, admBk
+        - title: Data types
+          url: /pages/admin/loading/datatypes.html
+          output: web, admBk
+        - title: Constraints
+          url: /pages/admin/loading/constraints.html
+          output: web, admBk
+        - title: Sharding
+          url: /pages/admin/loading/sharding.html
+          output: web, admBk
+        - title: Chasm traps
+          url: /pages/admin/loading/chasm_trap.html
+          output: web, admBk
+      - levelThreeTitle: Build the schema
+        output: web, admBk
+        levelThreeItems:
+        - title: Schema building overview
+          url: /pages/admin/loading/create_schema.html
+          output: web, admBk
+        - title: Connect with TQL and create a schema
+          url: /pages/admin/loading/prep_schema_for_load.html
+          output: web, admBk
+        - title: How to write a SQL script
+          url: /pages/admin/loading/create_schema_with_script.html
+          output: web, admBk
+        - title: Schema creation examples
+          url: /pages/admin/loading/create_schema_example.html
+          output: web, admBk
+        - title: Upload an SQL script
+          url: /pages/admin/loading/upload_sql_script.html
+          output: web, admBk
+      - levelThreeTitle: Change the schema
+        output: web, admBk
+        levelThreeItems:
+        - title: How to change a schema
+          url: /pages/admin/loading/change_schema.html
+          output: web, admBk
+        - title: Convert column data type
+          url: /pages/admin/loading/about_data_type_conversion.html
+          output: web, admBk
+      - levelThreeTitle: Load bulk data
+        output: web, admBk
+        levelThreeItems:
+        - title: Import CSV files with tsload
+          url: /pages/admin/loading/use_data_importer.html
+          output: web, admBk
+        - title: Use a script to load data
+          url: /pages/admin/loading/load_with_script.html
+          output: web, admBk
+      - levelThreeTitle: Delete a data source
+        output: web, admBk
+        levelThreeItems:
+        - title: Delete a data source (table)
+          url: /pages/admin/loading/delete_data_source_UX.html
+          output: web, admBk
+        - title: Delete or change a table in TQL
+          url: /pages/admin/loading/check_dependencies_tql.html
+          output: web, admBk
+    - levelTwoTitle: Improve search with modeling
+      output: web, admBk
+      levelTwoItems:
+      - title: About data modeling
+        url: /pages/admin/data_modeling/about_data_modeling_intro.html
+        output: web, admBk
+      - levelThreeTitle: Where to edit the model
+        output: web, admBk
+        levelThreeItems:
+        - title: Make a quick model change with the UI
+          url: /pages/admin/data_modeling/model_data_in_UI.html
+          output: web, admBk
+        - title: Make many modeling file edits
+          url: /pages/admin/data_modeling/edit_model_file.html
+          output: web, admBk
+      - levelThreeTitle: Data model settings
+        output: web, admBk
+        levelThreeItems:
+        - title: Overview of the settings
+          url: /pages/admin/data_modeling/data_modeling_settings.html
+          output: web, admBk
+        - title: Set column name, description, and type
+          url: /pages/admin/data_modeling/change_column_basics.html
+          output: web, admBk
+        - title: Set additive and aggregate values
+          url: /pages/admin/data_modeling/change_aggreg_additive.html
+          output: web, admBk
+        - title: Hide a column or define a synonym
+          url: /pages/admin/data_modeling/change_visibility_synonym.html
+          output: web, admBk
+        - title: Change the index type
+          url: /pages/admin/data_modeling/change_index.html
+          output: web, admBk
+        - title: Add a geographical data setting
+          url: /pages/admin/data_modeling/model_geo_data.html
+          output: web, admBk
+        - title: Set the search suggestions priority
+          url: /pages/admin/data_modeling/change_column_priority.html
+          output: web, admBk
+        - title: Set number, date, currency formats
+          url: /pages/admin/data_modeling/set_format_pattern_numbers.html
+          output: web, admBk
+        - title: Change the Attribution Dimension setting
+          url: /pages/admin/data_modeling/attributable_dimension.html
+          output: web, admBk
+      - levelThreeTitle: Link tables using relationships
+        output: web, admBk
+        levelThreeItems:
+        - title: Link tables using relationships
+          url: /pages/admin/data_modeling/about_relationships.html
+          output: web, admBk
+        - title: Create a relationship
+          url: /pages/admin/data_modeling/create_new_relationship.html
+          output: web
+        - title: Delete a relationship
+          url: /pages/admin/data_modeling/delete_relationship.html
+          output: web, admBk
+      - title: Use stickers
+        url: /pages/admin/data_modeling/stickers_concept.html
+        output: web, admBk
+    - levelTwoTitle: Simplify search with worksheets
+      output: web, admBk
+      levelTwoItems:
+      - title: Create and use worksheets
+        url: /pages/admin/worksheets/about_worksheets.html
+        output: web, admBk
+      - title: How the inclusion rule works
+        url: /pages/admin/worksheets/about_inclusion_rule.html
+        output: web, admBk
+      - levelThreeTitle: Join rules
+        output: web, admBk
+        levelThreeItems:
+        - title: How the worksheet join rule works
+          url: /pages/admin/worksheets/progressive_joins.html
+          output: web, admBk
+        - title: Legacy RLS with the join rule
+          url: /pages/admin/worksheets/joins_and_row_level_security.html
+          output: web, admBk
+      - title: Create a formula in a worksheet
+        url: /pages/admin/worksheets/create_formula.html
+        output: web, admBk
+      - title: Edit a worksheet
+        url: /pages/admin/worksheets/edit_worksheet.html
+        output: web, admBk
+      - title: Change the inclusion or join rule for a worksheet
+        url: /pages/admin/worksheets/change_inclusion_rule.html
+        output: web, admBk
+      - title: Delete a worksheet or table
+        url: /pages/admin/worksheets/delete_worksheet.html
+        output: web, admBk
+    - levelTwoTitle: Manage users and groups
+      output: web, admBk
+      levelTwoItems:
+      - title: Understand groups and privileges
+        url: /pages/admin/users_groups/about_users_groups.html
+        output: web, admBk
+      - title: Create, edit, or delete a group
+        url: /pages/admin/users_groups/add_group.html
+        output: web, admBk
+      - title: Add, edit, or delete a user
+        url: /pages/admin/users_groups/add_user.html
+        output: web, admBk
+    - levelTwoTitle: Manage jobs
+      output: web, admBk
+      levelTwoItems:
+      - title: Job management (scheduled pinboards)
+        url: /pages/admin/manage_jobs/about_scheduled_pinboards.html
+        output: web, admBk
+      - title: Scheduled pinboards management
+        url: /pages/admin/manage_jobs/scheduled_pinboards_management.html
+        output: web, admBk
+    - levelTwoTitle: Security
+      output: web, admBk
+      levelTwoItems:
+      - title: Overview of security features
+        url: /pages/admin/data_security/about_security.html
+        output: web, admBk
+      - title: System Security
+        url: /pages/admin/data_security/audit_logs.html
+        output: web, admBk
+      - levelThreeTitle: Data security
+        output: web, admBk
+        levelThreeItems:
+        - title: Data security
+          url: /pages/admin/data_security/sharing_security_overview.html
+          output: web, admBk
+        - title: Share tables and columns
+          url: /pages/admin/data_security/share_source_tables.html
+          output: web, admBk
+        - title: Share worksheets
+          url: /pages/admin/data_security/share_worksheets.html
+          output: web, admBk
+        - title: Share a pinboard
+          url: /pages/admin/data_security/share_pinboards.html
+          output: web, admBk
+        - title: Revoke access (unshare)
+          url: /pages/admin/data_security/unshare.html
+          output: web, admBk
+      - levelThreeTitle: Row level security (RLS)
+        output: web, admBk
+        levelThreeItems:
+        - title: About RLS
+          url: /pages/admin/data_security/about_row_security.html
+          output: web, admBk
+        - title: How Rule-Based RLS works
+          url: /pages/admin/data_security/row_level_security.html
+          output: web, admBk
+        - title: Set Rule-Based RLS
+          url: /pages/admin/data_security/set_rls.html
+          output: web, admBk
+        - title: How to use legacy RLS
+          url: /pages/admin/data_security/legacy_row_security.html
+          output: web, admBk
+    - levelTwoTitle: System administration
+      output: web, admBk
+      levelTwoItems:
+      - title: Overview of System administration
+        url: /pages/admin/system_admin/sysadmin_overview.html
+        output: web, admBk
+      - title: System monitoring
+        url: /pages/admin/system_admin/monitor_pinboards.html
+        output: web, admBk
+      - title: Using the Space Utilization chart
+        url: /pages/admin/system_admin/about_the_memory_usage_chart.html
+        output: web, admBk
+      - title: Send logs when reporting problems
+        url: /pages/admin/system_admin/send_logs_to_administrator.html
+        output: web, admBk
+      - title: Set up recording for Replay Search
+        url: /pages/admin/system_admin/configure_record_search.html
+        output: web, admBk
+    - levelTwoTitle: Backup and restore
+      output: web, admBk
+      levelTwoItems:
+      - title: Understand the backup strategies
+        url: /pages/admin/backup_restore/choose_strategy.html
+        output: web, admBk
+      - title: Understand backup/snapshot schedules
+        url: /pages/admin/backup_restore/how_to_create_a_schedule.html
+        output: web, admBk
+      - title: Work with snapshots
+        url: /pages/admin/backup_restore/overview_snapshot.html
+        output: web, admBk
+      - levelThreeTitle: Work with backups
+        output: web, admBk
+        levelThreeItems:
+        - title: Understand backup modes
+          url: /pages/admin/backup_restore/backup_modes.html
+          output: web, admBk
+        - title: Create a manual backup
+          url: /pages/admin/backup_restore/take_backup.html
+          output: web, admBk
+        - title: Configure periodic backups
+          url: /pages/admin/backup_restore/configure_backup.html
+          output: web, admBk
+        - title: About restore operations
+          url: /pages/admin/backup_restore/restore.html
+          output: web, admBk
+    - levelTwoTitle: Troubleshooting
+      output: web, admBk
+      levelTwoItems:
+      - title: About troubleshooting
+        url: /pages/admin/troubleshooting/troubleshooting_intro.html
+        output: admBk
+      - title: Get logs
+        url: /pages/admin/troubleshooting/get_logs.html
+        output: web, admBk
+      - title: Upload logs to ThoughtSpot Support
+        url: /pages/admin/troubleshooting/upload_logs_egnyte.html
+        output: web, admBk
+      - title: Network connectivity issues
+        url: /pages/admin/troubleshooting/check_connectivity.html
+        output: web, admBk
+      - title: Change the timezone
+        url: /pages/admin/troubleshooting/set_timezone.html
+        output: web, admBk
+      - title: Browser untrusted connection error
+        url: /pages/admin/troubleshooting/certificate_warning.html
+        output: web, admBk
+      - title: Characters not displaying correctly
+        url: /pages/admin/loading/char_encoding.html
+        output: web, admBk
+      - title: Clear the browser cache
+        url: /pages/admin/troubleshooting/clear_browser_cache.html
+        output: web, admBk
+      - title: Cannot open a saved answer that contains a formula
+        url: /pages/admin/troubleshooting/formula_date_problem.html
+        output: web, admBk
+      - title: Data loading too slowly
+        url: /pages/admin/troubleshooting/data_loading_too_slowly.html
+        output: web, admBk
+      - title: Search results contain too many blanks
+        url: /pages/admin/troubleshooting/search_too_many_blanks.html
+        output: web, admBk
+  - sectiontitle: Users
+    output: web,ugBk
+    sectionitems:
+    - title: Introduction
+      url: /pages/end_user_guide/end_user_introduction/introduction.html
+      output: web,ugBk
+    - levelTwoTitle: Getting Started
+      output: web,ugBk
+      levelTwoItems:
+      - title: Finding your way around
+        url: /pages/end_user_guide/end_user_introduction/about_navigating_thoughtspot.html
+        output: web,ugBk
+      - title: Log in or out of ThoughtSpot
+        url: /pages/end_user_guide/accessing.html
+        output: web,ugBk
+      - title: Set your display language (locale)
+        url: /pages/end_user_guide/locale.html
+        output: web,ugBk
+      - title: Your user profile
+        url: /pages/end_user_guide/end_user_introduction/about_user.html
+        output: web,ugBk
+      - title: Understanding privileges
+        url: /pages/end_user_guide/end_user_introduction/about_privileges_end_user.html
+        output: web,ugBk
+      - title: Use stickers to organize
+        url: /pages/end_user_guide/stickers.html
+        output: web,ugBk
+    - levelTwoTitle: Using Search
+      output: web,ugBk
+      levelTwoItems:
+      - title: What is a ThoughtSpot Search?
+        url: /pages/end_user_guide/end_user_search/about_starting_a_new_search.html
+        output: web,ugBk
+      - levelThreeTitle: Search basics
+        output: web,ugBk
+        levelThreeItems:
+        - title: Start a new search
+          url: /pages/end_user_guide/end_user_search/start_a_new_search.html
+          output: web,ugBk
+        - title: Choose a data source
+          url: /pages/end_user_guide/end_user_search/about_choosing_sources.html
+          output: web,ugBk
+        - title: Search bar features
+          url: /pages/end_user_guide/end_user_search/about_the_search_bar.html
+          output: web,ugBk
+        - title: Search suggestions
+          url: /pages/end_user_guide/end_user_search/recent_searches.html
+          output: web,ugBk
+        - title: Search results and column types
+          url: /pages/end_user_guide/end_user_search/about_attributes_and_measures.html
+          output: web,ugBk
+        - title: Last data refresh time
+          url: /pages/end_user_guide/end_user_search/data_refresh_time.html
+          output: web,ugBk
+      - title: Results that are tables
+        url: /pages/end_user_guide/end_user_search/about_tables.html
+        output: web,ugBk
+      - levelThreeTitle: Use keywords in search
+        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of keyword searchess
+          url: /pages/complex_searches/about_keyword_searches.html
+          output: web,ugBk
+        - title: Search using growth over time
+          url: /pages/complex_searches/search_using_growth_over_time.html
+          output: web,ugBk
+        - title: Proximity searches "near" and "farther than"
+          url: /pages/admin/features/proximity_search.html
+          output: web,ugBk
+      - levelThreeTitle: Work with filters
+        output: web,ugBk
+        levelThreeItems:
+        - title: Understand filters
+          url: /pages/complex_searches/about_filters.html
+          output: web,ugBk
+        - title: Add a filter to a table
+          url: /pages/end_user_guide/end_user_search/filter_from_column_headers.html
+          output: web,ugBk
+        - title: Add a filter to a chart
+          url: /pages/end_user_guide/end_user_search/filter_from_chart_axes.html
+          output: web,ugBk
+        - title: Create a bulk filter
+          url: /pages/complex_searches/create_bulk_filter.html
+          output: web,ugBk
+        - title: Delete a filter
+          url: /pages/end_user_guide/end_user_search/delete_a_filter.html
+          output: web,ugBk
+        - title: Filter on null, blank, or empty values
+          url: /pages/complex_searches/about_filters_for_null.html
+          output: web,ugBk
+      - levelThreeTitle: Other search actions
+        output: web,ugBk
+        levelThreeItems:
+        - title: Other search actions
+          url: /pages/complex_searches/search_actions.html
+          output: pdf
+        - title: Change result display options
+          url: /pages/complex_searches/change_the_view.html
+          output: web,ugBk
+        - title: Show underlying data
+          url: /pages/complex_searches/show_underlying_data.html
+          output: web,ugBk
+        - title: See the search behind a result
+          url: /pages/complex_searches/drill_down.html
+          output: web,ugBk
+        - title: Apply conditional formatting to a table
+          url: /pages/end_user_guide/end_user_search/apply_conditional_formatting.html
+          output: web,ugBk
+        - title: Copy an answer
+          url: /pages/end_user_guide/end_user_search/make_a_copy_of_an_answer.html
+          output: web,ugBk
+        - title: Download your search
+          url: /pages/complex_searches/download_your_search.html
+          output: web,ugBk
+        - title: Replay search
+          url: /pages/end_user_guide/end_user_search/replay_search.html
+          output: web,ugBk
+    - levelTwoTitle: Work with charts
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand charts
+        url: /pages/end_user_guide/end_user_search/about_charts.html
+        output: web,ugBk
+      - levelThreeTitle: Chart types
+        output: web,ugBk
+        levelThreeItems:
+        - title: Column charts
+          url: /pages/end_user_guide/end_user_search/about_column_charts.html
+          output: web,ugBk
+        - title: Bar charts
+          url: /pages/end_user_guide/end_user_search/about_bar_charts.html
+          output: web,ugBk
+        - title: Line charts
+          url: /pages/end_user_guide/end_user_search/about_line_charts.html
+          output: web,ugBk
+        - title: Pie charts
+          url: /pages/end_user_guide/end_user_search/pie_charts.html
+          output: web,ugBk
+        - title: Area charts
+          url: /pages/end_user_guide/end_user_search/area_charts.html
+          output: web,ugBk
+        - title: Scatter charts
+          url: /pages/end_user_guide/end_user_search/about_scatter_charts.html
+          output: web,ugBk
+        - title: Bubble charts
+          url: /pages/end_user_guide/end_user_search/about_bubble_charts.html
+          output: web,ugBk
+        - title: Pareto charts
+          url: /pages/end_user_guide/end_user_search/about_pareto_charts.html
+          output: web,ugBk
+        - title: Waterfall charts
+          url: /pages/end_user_guide/end_user_search/about_waterfall_charts.html
+          output: web,ugBk
+        - title: Treemap charts
+          url: /pages/end_user_guide/end_user_search/about_treemap_charts.html
+          output: web,ugBk
+        - title: Heatmap charts
+          url: /pages/end_user_guide/end_user_search/about_heatmap_charts.html
+          output: web,ugBk
+        - title: Line column charts
+          url: /pages/end_user_guide/end_user_search/line_column_charts.html
+          output: web,ugBk
+        - title: Funnel charts
+          url: /pages/end_user_guide/end_user_search/about_funnel_charts.html
+          output: web,ugBk
+        - title: Geo charts
+          url: /pages/end_user_guide/end_user_search/about_geo_charts.html
+          output: web,ugBk
+        - title: Pivot table
+          url: /pages/complex_searches/about_pivoting_a_table.html
+          output: web,ugBk
+      - levelThreeTitle: Changing a chart
+        output: web,ugBk
+        levelThreeItems:
+        - title: Change the chart
+          url: /pages/end_user_guide/end_user_search/change_the_chart.html
+          output: pdf
+        - title: Reorder the labels
+          url: /pages/end_user_guide/end_user_search/reorder_values_on_the_x_axis.html
+          output: web,ugBk
+        - title: Set the y-axis range
+          url: /pages/end_user_guide/end_user_search/set_the_y_axis_scale.html
+          output: web,ugBk
+        - title: Hide and show values
+          url: /pages/end_user_guide/end_user_search/hide_and_show_values.html
+          output: web,ugBk
+        - title: Change chart colors
+          url: /pages/end_user_guide/end_user_search/change_chart_colors.html
+          output: web,ugBk
+        - title: Show data labels
+          url: /pages/end_user_guide/end_user_search/show_data_labels.html
+          output: web,ugBk
+        - title: Zoom into a chart
+          url: /pages/end_user_guide/end_user_search/zoom_into_a_chart.html
+          output: web,ugBk
+    - levelTwoTitle: Work with formulas
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand formulas
+        url: /pages/complex_searches/add_formula_to_search.html
+        output: web,ugBk
+      - title: Add a formula to a search
+        url: /pages/complex_searches/how_to_add_formula.html
+        output: web,ugBk
+      - title: View or edit a formula in a search
+        url: /pages/complex_searches/edit_formula_in_answer.html
+        output: web,ugBk
+      - levelThreeTitle: Aggregate formulas
+        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of aggregate formulas
+          url: /pages/complex_searches/aggregation_formulas.html
+          output: web,ugBk
+        - title: Aggregates over time
+          url: /pages/complex_searches/about_cumulative_formulas.html
+          output: web,ugBk
+        - title: Calculate the cumulative sum
+          url: /pages/complex_searches/search_using_the_cumulative_function.html
+          output: web,ugBk
+        - title: Grouping formulas
+          url: /pages/complex_searches/about_pinned_measures.html
+          output: web,ugBk
+        - title: Moving formulas
+          url: /pages/complex_searches/about_moving_formulas.html
+          output: web,ugBk
+        - title: Calculate a moving average
+          url: /pages/complex_searches/search_using_the_moving_function.html
+          output: web,ugBk
+      - title: Conversion formulas
+        url: /pages/complex_searches/conversion_formulas.html
+        output: web,ugBk
+      - title: Date formulas
+        url: /pages/advanced_searches_guide/formulas/date_formulas.html
+        output: web,ugBk
+      - title: Percent (simple number) calculations
+        url: /pages/advanced_searches_guide/formulas/percent_calculations.html
+        output: web,ugBk
+      - title: Conditional formulas (operators)
+        url: /pages/advanced_searches_guide/formulas/conditional_sum.html
+        output: web,ugBk
+      - title: Nested formulas
+        url: /pages/complex_searches/about_nested_formulas.html
+        output: web,ugBk
+      - title: Formulas for chasm traps
+        url: /pages/complex_searches/about_formula_support_for_chasm_trap_schemas.html
+        output: web,ugBk
+    - levelTwoTitle: Work with worksheets
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand worksheets
+        url: /pages/complex_searches/about_query_on_query.html
+        output: web,ugBk
+      - title: Save a search as a worksheet
+        url: /pages/complex_searches/create_aggregated_worksheet.html
+        output: web,ugBk
+      - title: Create a search from a worksheet
+        url: /pages/complex_searches/do_query_on_query.html
+        output: web,ugBk
+      - title: Worksheet example scenarios
+        url: /pages/complex_searches/more_example_scenarios.html
+        output: web,ugBk
+    - levelTwoTitle: Use pinboards
+      output: web,ugBk
+      levelTwoItems:
+        - title: Basic pinboard usage
+          url: /pages/end_user_guide/pinboards/about_pinboards.html
+          output: web,ugBk
+        - title: Edit the layout of a pinboard
+          url: /pages/end_user_guide/pinboards/edit_the_layout_of_a_pinboard.html
+          output: web,ugBk
+        - title: Pinboard filters
+          url: /pages/complex_searches/pinboard_filters.html
+          output: web,ugBk
+        - title: Schedule a pinboard job
+          url: /pages/admin/manage_jobs/schedule_a_pinboard_job.html
+          output: web,ugBk
+        - title: Search actions within a pinboard
+          url: /pages/end_user_guide/pinboards/about_showing_underlying_data_from_within_a_pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard
+          url: /pages/end_user_guide/pinboards/copy_a_pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard or visualization link
+          url: /pages/end_user_guide/pinboards/copy_link_for_a_pinboard.html
+          output: web,ugBk
+        - title: Reset a pinobard or visualization
+          url: /pages/end_user_guide/pinboards/reset_a_visualization.html
+          output: web,ugBk
+        - title: Start a slideshow
+          url: /pages/end_user_guide/pinboards/start_a_slideshow.html
+          output: web,ugBk
+    - levelTwoTitle: Work with data
+      output: web,ugBk
+      levelTwoItems:
+        - title: "Understand data sources"
+          url: /pages/end_user_guide/data_view/data_intro_end_user.html
+          output: web,ugBk
+        - title: Create and load CSV Files
+          url: /pages/end_user_guide/data_view/generate_flat_file.html
+          output: web,ugBk
+        - title: Append data through the UI
+          url: /pages/admin/loading/append_data_from_a_web_browser.html
+          output: web,ugBk
+        - title: View a data profile
+          url: /pages/admin/loading/view_your_data_profile.html
+          output: web,ugBk
+        - levelThreeTitle: Share your work
+          output: web,ugBk
+          levelThreeItems:
+          - title: About sharing
+            url: /pages/end_user_guide/data_view/sharing_for_end_users.html
+            output: web,ugBk
+          - title: Share a pinboard
+            url: /pages/end_user_guide/pinboards/share_pinboards.html
+            output: web,ugBk
+          - title: Share answers
+            url: /pages/end_user_guide/pinboards/share_answers.html
+            output: web,ugBk
+          - title: Share uploaded data
+            url: /pages/end_user_guide/data_view/share_user_imported_data.html
+            output: web,ugBk
+          - title: Revoke access (unshare)
+            url: /pages/end_user_guide/pinboards/unshare.html
+            output: web,ugBk
+    - title: Get help
+      url: /pages/end_user_guide/help_center/what_you_can_find_in_the_help_center.html
+      output: web,ugBk
+  - sectiontitle: Data Connect
+    output: web,cngBk
+    sectionitems:
+    - title: Introduction to Data Connect
+      url: /pages/data_connect/setup/ETL.html
+      output: web,cngBk
+    - title: Prerequisites and Architecture
+      url: /pages/data_connect/setup/before_using_data_connect.html
+      output: web,cngBk
+    - title: Set up ThoughtSpot Data Connect
+      url: /pages/data_connect/setup/settingup_etl.html
+      output: web,cngBk
+    - levelTwoTitle: Work with Data Data Sources
+      output: web,cngBk
+      levelTwoItems:
+      - title: Add a new data source
+        url: /pages/data_connect/setup/adding_data_source.html
+        output: web,cngBk
+      - title: About changing the schema (DDL)
+        url: /pages/data_connect/setup/about_changing_DDL.html
+        output: web,cngBk
+      - title: About incremental data loads
+        url: /pages/data_connect/setup/about_incremental.html
+        output: web,cngBk
+      - title: Data sources management
+        url: /pages/data_connect/setup/data_sources_management.html
+        output: web,cngBk
+    - levelTwoTitle: Changing the setup
+      output: web,cngBk
+      levelTwoItems:
+      - title: Overview of best practices
+        url: /pages/data_connect/making_changes/about_changing_etl_jobs.html
+        output: web,cngBk
+      - title: Edit a connection
+        url: /pages/data_connect/making_changes/edit_a_connection.html
+        output: web,cngBk
+      - title: Delete a connection
+        url: /pages/data_connect/making_changes/delete_a_connection.html
+        output: web,cngBk
+      - title: Delete a data source
+        url: /pages/data_connect/making_changes/delete_data_source.html
+        output: web,cngBk
+      - title: Stop a scheduled job from running
+        url: /pages/data_connect/making_changes/stop_scheduled_job.html
+        output: web,cngBk
+      - title: Change sharding for a data source
+        url: /pages/data_connect/making_changes/change_sharding.html
+        output: web,cngBk
+      - title: Change a column data type
+        url: /pages/data_connect/making_changes/change_data_type.html
+        output: web,cngBk
+      - title: Add a column to an existing data source
+        url: /pages/data_connect/making_changes/add_a_column.html
+        output: web,cngBk
+      - title: Remove a column from an existing data source
+        url: /pages/data_connect/making_changes/remove_column.html
+        output: web,cngBk
+      - title: Add/remove columns in a loaded table
+        url: /pages/data_connect/making_changes/add_remove_columns_in_a_loaded_table.html
+        output: web,cngBk
+    - levelTwoTitle: Reference
+      output: web,cngBk
+      levelTwoItems:
+      - title: Introduction
+        url: /pages/data_connect/reference/reference_intro.html
+        output: web,cngBk
+      - title: Login for administration
+        url: /pages/data_connect/reference/logins.html
+        output: web,cngBk
+      - title: Best practices
+        url: /pages/data_connect/reference/data_connect_insider_tips.html
+        output: web,cngBk
+      - title: Connectors reference
+        url: /pages/data_connect/reference/data_connect_connection_credentials.html
+        output: web,cngBk
+  - sectiontitle: Application Integration
+    output: web,apgBk
+    sectionitems:
+    - title: Introduction
+      url: /pages/application_integration/introduction/introduction.html
+      output: web,apgBk
+    - title: Log in credentials
+      url: /pages/application_integration/introduction/logins.html
+      output: web,apgBk
+    - levelTwoTitle: SAML
+      output: web,apgBk
+      levelTwoItems:
+      - title: About SAML
+        url: /pages/application_integration/SAML/about_SAML_integrations.html
+        output: web,apgBk
+      - title: Configure SAML
+        url: /pages/application_integration/SAML/configure_SAML_with_tscli.html
+        output: web,apgBk
+      - title: Configure CA SiteMinder
+        url: /pages/application_integration/SAML/configure_SAML_siteminder.html
+        output: web,apgBk
+      - levelThreeTitle: Active Directory
+        output: web,apgBk
+        levelThreeItems:
+        - title: Configure Active Directory Federated Services
+          url: /pages/application_integration/SAML/integrate_ADFS.html
+          output: web,apgBk
+        - title: Initialize the Identity Provider Metadata
+          url: /pages/application_integration/SAML/initialize_IDP.html
+          output: web,apgBk
+        - title: Initialize the Service Provider Metadata
+          url: /pages/application_integration/SAML/initialize_SP.html
+          output: web,apgBk
+        - title: Test the ADFS Integration
+          url: /pages/application_integration/SAML/test_ADFS.html
+          output: web,apgBk
+      - title: Legacy configure SAML
+        url: /pages/application_integration/SAML/ts_as_sp.html
+        output: web,apgBk
+    - levelTwoTitle: JavaScript API
+      output: web,apgBk
+      levelTwoItems:
+      - title: About the JavaScript API
+        url: /pages/application_integration/JS_API/about_JS_API.html
+        output: web,apgBk
+      - title: Enable the JavaScript API
+        url: /pages/application_integration/JS_API/enable_JS_API.html
+        output: web,apgBk
+    - levelTwoTitle: REST API
+      output: web,apgBk
+      levelTwoItems:
+      - title: About the REST API
+        url: /pages/application_integration/data_api/about_data_api.html
+        output: web,apgBk
+      - title: Calling the REST API
+        url: /pages/application_integration/data_api/calling_rest_api.html
+        output: web,apgBk
+      - title: REST API pagination
+        url: /pages/application_integration/data_api/response_pagination.html
+        output: web,apgBk
+      - title: Use the REST API to get data
+        url: /pages/application_integration/data_api/use_data_api_read.html
+        output: web,apgBk
+    - levelTwoTitle: Embedding
+      output: web,apgBk
+      levelTwoItems:
+      - title: About Embedding
+        url: /pages/application_integration/embedding_viz/about_embedding_viz.html
+        output: web,apgBk
+      - title: Embed a visualization
+        url: /pages/application_integration/embedding_viz/embed_a_viz.html
+        output: web,apgBk
+      - title: About full embed
+        url: /pages/application_integration/embedding_viz/about_full_embed.html
+        output: web,apgBk
+    - levelTwoTitle: Runtime Filters
+      output: web,apgBk
+      levelTwoItems:
+      - title: About Runtime Filters
+        url: /pages/application_integration/runtime_filters/about_runtime_filters.html
+        output: web,apgBk
+      - title: Apply a Runtime Filter
+        url: /pages/application_integration/runtime_filters/apply_runtime_filter.html
+        output: web,apgBk
+      - title: Runtime Filter Operators
+        url: /pages/application_integration/runtime_filters/runtime_filter_operators.html
+        output: web,apgBk
+    - levelTwoTitle: Style Customization
+      output: web,apgBk
+      levelTwoItems:
+      - title: Make Style Customization
+        url: /pages/application_integration/custom_branding/perform_style_customization.html
+        output: web,apgBk
+      - title: Upload application logos
+        url: /pages/application_integration/custom_branding/upload_application_logos.html
+        output: web,apgBk
+      - title: Set chart and table visualization fonts
+        url: /pages/application_integration/custom_branding/set_chart_and_table_visualization_fonts.html
+        output: web,apgBk
+      - title: Choose a background color
+        url: /pages/application_integration/custom_branding/choose_background_color.html
+        output: web,apgBk
+      - title: Select chart color palettes
+        url: /pages/application_integration/custom_branding/select_chart_color_palettes.html
+        output: web,apgBk
+      - title: Change the footer text
+        url: /pages/application_integration/custom_branding/change_the_footer_text.html
+        output: web,apgBk
+    - title: API Reference
+      url: /pages/application_integration/reference/public_api_reference.html
+      output: web,apgBk
+  - sectiontitle: Data Integration
+    output: web,digBk
+    sectionitems:
+    - title: Introduction
+      url: /pages/data_integration/introduction/introduction_data_integration.html
+      output: web,digBk
+    - title: Login credentials for administration
+      url: /pages/data_integration/introduction/logins.html
+      output: web,digBk
+    - title: ThoughtSpot Clients
+      url: /pages/data_integration/clients/about_clients.html
+      output: web,digBk
+    - levelTwoTitle: Use the ODBC Client
+      output: web,digBk
+      levelTwoItems:
+       - title: About the ODBC Driver
+         url: /pages/data_integration/clients/about_odbc.html
+         output: web,digBk
+       - levelThreeTitle: Install on Windows
+         output: web,digBk
+         levelThreeItems:
+         - title: Windows Installation Overview
+           url: /pages/data_integration/clients/install_odbc_windows.html
+           output: web,digBk
+         - title: Change the Windows ODBC Configuration
+           url: /pages/data_integration/clients/change_odbc_windows.html
+           output: web,digBk
+         - title: Add a New Data Source to ODBC on Windows
+           url: /pages/data_integration/clients/add_new_ODBC_source_windows.html
+           output: web,digBk
+       - title: Install the ODBC Driver on Linux
+         url: /pages/data_integration/clients/install_odbc_linux.html
+         output: web,digBk
+       - title: Install the ODBC Driver on Solaris
+         url: /pages/data_integration/clients/install_odbc_solaris.html
+         output: web,digBk
+       - title: Best Practices for Using ODBC
+         url: /pages/data_integration/clients/odbc_best_practices.html
+         output: web,digBk
+    - levelTwoTitle: JDBC Driver Client
+      output: web,digBk
+      levelTwoItems:
+      - title: About the JDBC Driver
+        url: /pages/data_integration/clients/about_jdbc_driver.html
+        output: web,digBk
+      - title: Use the JDBC Driver
+        url: /pages/data_integration/clients/use_jdbc_driver.html
+        output: web,digBk
+    - title: About Informatica Connector
+      url: /pages/data_integration/clients/about_informatica.html
+      output: web,digBk
+    - levelTwoTitle: Microsoft SSIS client
+      output: web,digBk
+      levelTwoItems:
+      - title: About Microsoft SSIS
+        url: /pages/data_integration/ssis/about_ssis.html)
+      - title: ODBC Data Source Administrator
+        url: /pages/data_integration/ssis/odbc_data_source_administrator.html
+        output: web,digBk
+      - title: Set up the ODBC Driver for SSIS
+        url: /pages/data_integration/ssis/set_up_the_odbc_driver_using_ssis.html
+        output: web,digBk
+    - levelTwoTitle: Pentaho client
+      output: web,digBk
+      levelTwoItems:
+      - title: About Pentaho
+        url: /pages/data_integration/pentaho/about_pentaho.html
+        output: web,digBk
+      - title: Set up the JDBC Driver for Pentaho
+        url: /pages/data_integration/pentaho/set_up_the_jdbc_driver_for_pentaho.html
+        output: web,digBk
+    - levelTwoTitle: Troubleshooting
+      output: web,digBk
+      levelTwoItems:
+      - title: Troubleshooting Data Integrations
+        url: /pages/data_integration/troubleshooting/troubleshooting_intro.html
+        output: web,digBk
+      - title: Enabling ODBC Logs on Windows
+        url: /pages/data_integration/troubleshooting/troubleshooting_ODBC.html
+        output: web,digBk
+      - title: Enabling ODBC Logs on Linux or Solaris
+        url: /pages/data_integration/troubleshooting/enable_ODBC_log_linux.html
+        output: web,digBk
+      - title: Enabling JDBC Logs
+        url: /pages/data_integration/troubleshooting/JDBC_logging.html
+        output: web,digBk
+      - title: Schema not found error
+        url: /pages/data_integration/troubleshooting/schema_not_found.html
+        output: web,digBk
+      - title: How to improve throughput of the load
+        url: /pages/data_integration/troubleshooting/how_to_improve_throughput_of_the_load.html
+        output: web,digBk
+    - levelTwoTitle: Reference
+      output: web,digBk
+      levelTwoItems:
+      # - title: Reference
+      #   url: /pages/data_integration/reference/intro_reference.html
+      #   output: pdf
+      - title: ODBC supported SQL commands
+        url: /pages/data_integration/reference/odbc_commands.html
+        output: web,digBk
+      - title: ODBC and JDBC configuration properties
+        url: /pages/data_integration/reference/simba_settings.html
+        output: web,digBk
+  - sectiontitle: Appliance Quick Start
+    output: web,appQs, pdf
+    sectionitems:
+    - title: Welcome to ThoughtSpot
+      url: /pages/appliance/welcome/welcome_intro.html
+      output: web,appQs,pdf
+    - title: Supported hardware
+      url: /pages/appliance/physical/hardware_and_deployment.html
+      output: web,appQs, pdf
+    - title: Typical physical deployment
+      url: /pages/appliance/physical/inthebox.html
+      output: web,appQs, pdf
+    - title: Cable networking
+      url: /pages/appliance/setup/cable_networking.html
+      output: web,appQs, pdf
+    - title: Install and start the appliance
+      url: /pages/appliance/setup/appliance_setup.html
+      output: web,appQs, pdf
+    - title: Contact Support
+      url: /pages/appliance/welcome/contact.html
+      output: web,appQs,pdf
+  - sectiontitle: AWS Quick Start
+    output: web,awsQs
+    sectionitems:
+      - title: About ThoughtSpot and AWS
+        url: /pages/aws/introduction/about_aws.html
+        output: web,awsQs
+      - title: Configuration options
+        url: /pages/aws/configuration/configuration_options.html
+        output: web,awsQs
+      - title: Launch an instance
+        url: /pages/aws/setup/launch_an_instance.html
+        output: web,awsQs
+      - title: Network ports
+        url: /pages/aws/setup/firewall_ports.html
+        output: web,awsQs
+      - title: Contact Support
+        url: /pages/aws/welcome/contact.html
+        output: web,awsQs
+  - sectiontitle: Disaster Recovery
+    output: web,drgBk
+    sectionitems:
+    - title: About disaster recovery
+      url: /pages/disaster_recovery/about_disaster_recovery.html
+      output: web,drgBk
+    - title: Disk failure
+      url: /pages/disaster_recovery/disk_failure.html
+      output: web,drgBk
+    - title: Node failure
+      url: /pages/disaster_recovery/node_failure.html
+      output: web,drgBk
+    - levelTwoTitle: Cluster replacement
+      output: web,drgBk
+      levelTwoItems:
+      - title: Overview of cluster replacement
+        url: /pages/disaster_recovery/cluster_replacement.html
+        output: web,drgBk
+      - title: Mount a NAS file system
+        url: /pages/disaster_recovery/NAS_mount.html
+        output: web,drgBk
+      - title: Set up a disaster recovery configuration
+        url: /pages/disaster_recovery/set_up_DR_config.html
+        output: web,drgBk
+      - title: Recover a cluster from a disaster
+        url: /pages/disaster_recovery/recover_cluster.html
+        output: web,drgBk
+  - sectiontitle: Reference
     output: web
-    url: index.html
+    sectionitems:
+    - title: About this reference
+      url: /pages/reference/intro_reference.html
+      output: web,admBk,ugBk
+    - title: Keyword reference
+      url: /pages/reference/keyword_reference.html
+      output: web,admBk,ugBk
+    - title: TQL reference
+      url: /pages/reference/sql_cli_commands.html
+      output: web,admBk,ugBk
+    - title: ThoughtSpot Loader flag reference
+      url: /pages/reference/data_importer_ref.html
+      output: web
+    - title: tscli command reference
+      url: /pages/reference/tscli_command_ref.html
+      output: web,admBk,ugBk
+    - title: Date and time formats reference
+      url: /pages/reference/date_formats_for_loading.html
+      output: web,admBk,ugBk
+    - title: Row level security rules reference
+      url: /pages/reference/rls_rule_builder_reference.html
+      output: web,admBk,ugBk
+    - title: Formula reference
+      url: /pages/reference/formula_reference.html
+      output: web,admBk,ugBk
+    - title: Error code reference
+      url: /pages/error_code/error_codes_reference.html
+      output: web,admBk,ugBk

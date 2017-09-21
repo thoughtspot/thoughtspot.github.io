@@ -1,3 +1,84 @@
+
+h1.indexTitle {
+  margin-bottom: 43px;
+  font-stretch: extra-expanded;
+  color: #98A0B0;
+}
+
+p.bookLink {
+  font-size: 95%;
+  font-family: sans-serif;
+  line-height: 80%;
+}
+
+img.indexImg {
+  margin-bottom: 27px;
+  align-self: center;
+}
+
+h4.tagLine {
+  align-self: center;
+  color: #EA603E;
+  margin-top: 3px !important;
+}
+
+div.col-sm-4 {
+  margin-top: 20px;
+}
+
+table.wide_table > caption {
+  font-size: larger;
+  margin-bottom: 2em;
+  border-bottom: #ccc;
+  border-bottom-style: double;
+}
+
+table.wide_table > tbody > tr > td {
+  border-right: 1px solid #ddd;
+}
+
+table.wide_table > thead > tr > th {
+  color: initial;
+  background-color: initial;
+}
+
+table.wide_table > thead > tbody {
+  border: 1px;
+}
+
+table.wide_table {
+   max-width: initial;
+   margin-bottom: initial;
+   table-layout: initial;
+   column-width: initial;
+   word-break: initial;
+   margin-top: 50px;
+   page: wide_table
+}
+
+th.rotate {
+  /* Something you can count on */
+  height: 90px;
+  white-space: nowrap;
+  font-size: small;
+}
+
+th.rotate > div {
+  transform:
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+
+
+/* Privileges Table ^^*/
 body {
     font-size:15px;
 }
@@ -114,23 +195,23 @@ margin-top: -40px
     color: gray;
 }
 
-table {
+/* Don't think we need this*/
+
+/*table {
     background-color: transparent;
-}
-caption {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #777;
-    text-align: left;
-}
-th {
-    text-align: left;
-}
-table {
     max-width: 90%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
+    table-layout: auto;
+    column-width: 50px;
+    word-break: keep-all;
+}*/
+
+
+th {
+    text-align: left;
 }
+
 
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -142,6 +223,7 @@ table > tfoot > tr > td {
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 1px solid #ddd;
+    min-width: 100px;
 }
 table > thead > tr > th {
     vertical-align: bottom;
@@ -206,7 +288,6 @@ p.post-meta {font-size: 80%; color: #777;}
     z-index: -1;
     width:223px;
     border-left: 1px solid #dedede;
-    box-shadow: 2px 3px 2px #dedede;
 }
 
 
@@ -264,7 +345,7 @@ div#toc ul li ul li::before {
 }
 
 div#toc >ul::before {
-    content: "Table of Contents";
+    content: "On this page";
     font-weight: 500;
     color: #555;
     text-align:center;
@@ -334,10 +415,6 @@ a.accordion-toggle, a.accordion-collapsed {
     margin: 2px 0;
 }
 
-.nav li.levelTwo > ul > li {
-    margin-left: -18px;
-}
-
 .nav a {
     color: #333;
     display: block;
@@ -388,21 +465,22 @@ ul#mysidebar {
     border-radius:0px;
 }
 
-.nav ul li ul li a {
+/*.nav ul li ul li a {
     padding-left:40px;
+}*/
+
+/*Level three list customization*/
+.nav ul li ul li ul li {
+  padding-left:15px;
+  background-color: #FAFAFA;
 }
 
-.nav li.thirdlevel > a {
-    color: #248EC2;
-    font-weight:bold;
-    padding-left:20px;
-    background-color: whitesmoke !important;
+/*Level two lists customization*/
+.nav ul li ul li {
+  background-color: #FAFAFA;
+  padding-left:5px;
 }
 
-
-.nav ul li a {
-    background-color: #FAFAFA;
-}
 
 .nav li a {
     padding-right:10px;
@@ -413,8 +491,12 @@ ul#mysidebar {
 }
 
 .nav ul li a {
+    background-color: #FAFAFA;
+}
+
+.nav ul li a {
     border-top:1px solid whitesmoke;
-    padding-left:10px;
+    /*padding-left:10px;*/
 }
 /* end sidebar */
 
@@ -555,7 +637,6 @@ hr.faded {
 hr.shaded {
     height: 12px;
     border: 0;
-    box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.5);
     margin-top: 70px;
     background: white;
     width: 100%;
@@ -802,6 +883,12 @@ dd {margin-left:20px;}
     padding: 0px;
 }
 
+/*customization*/
+div#toc {
+  float: right;
+  margin-left: 5px;
+}
+
 .alert {
     margin-bottom:10px;
     margin-top:10px;
@@ -908,7 +995,6 @@ span.soft {
 .videoThumbs img {
     float: left;
     margin:15px 15px 15px 0px;
-    box-shadow: 2px 2px 1px #f0f0f0;
     border: 1px solid #dedede;
 }
 
@@ -1010,13 +1096,6 @@ span.label.label-primary {
 }
 .col-lg-12 .nav li a {background-color: white}
 
-
-.nav li.active > a.levelTwosTitle {
-    background-color: whitesmoke;
-    font-weight: bold;
-    color: black;
-    }
-
 a code {
     color: #248EC2;
 }
@@ -1049,7 +1128,6 @@ table thead th code.highlighter-rouge {
 .box {
     padding: 10px;
     border: 1px solid #888;
-    box-shadow: 2px 2px 4px #dedede;
     width: 100px;
     height: 80px;
     background-color: #f5f5f5;
@@ -1183,7 +1261,6 @@ h4.panel-title {
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .navbar-fixed-top {
         top: 0;

@@ -1,17 +1,33 @@
 
 /*body.print .container {max-width: 650px;}*/
 
+@font-face {
+    font-family: sans-serif;
+    src: local("GothamRnd-Book")
+}
+
 body {
-    font-size:14px;
+    font-size:11px;
 }
 .nav ul li a {border-top:0px; background-color:transparent; color: #808080; }
-#navig a[href] {color: #595959 !important;}
+/* sectionTitles*/
+/*#navig a[href] {color: #595959 !important;}*/
+#navig a[href] {padding-left:14px; background-color: transparent; font-weight: bold; font-size: 12px; color: #595959 !important; }
 table .table {max-width:650px;}
 
-#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; }
+/* LeveltwoTitle*/
+#navig li.sectionitem {font-weight: bold; font-size: 12px; color: #595959 !important; }
+#navig li.levelTwoTitle {margin: 0px 0px 5px; padding-left:14px; margin: 0px 0px; font-weight: bold; font-size: 12px; color: #595959 !important; }
+#navig li.level2item {margin: 0px 0px 5px; padding-left:14px; font-weight: bold; font-size: 12px; color: #595959 !important; }
+#navig li.levelThreeTitle {font-weight: bold; font-size: 12px; color: #595959 !important; }
+#navig li.level3item {padding-left:14px; font-weight: bold; font-size: 12px; color: #595959 !important; }
 #navig li {font-weight: normal; }
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
+
+#navig ul.indent2 { padding-left:4px;}
+#navig li.indent3 { padding-left:14px;}
+
 
 a[href]::after {
     content: " (page " target-counter(attr(href), page) ")"
@@ -48,7 +64,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .printSubtitle {
     font-size: 19pt;
     color: #cccccc !important;
-    front-family: "Grotesque MT Light";
+    font-family: "Grotesque MT Light";
     line-height: 22pt;
     letter-spacing: -.5px;
     margin-bottom:20px;
