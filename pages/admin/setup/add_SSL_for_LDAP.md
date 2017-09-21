@@ -6,10 +6,7 @@ last_updated: tbd
 summary: "Install the certificate to support LDAPS"
 sidebar: mydoc_sidebar
 ---
-When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must LDAP using one of these procedures:
-
--   [Configure OpenLDAP](LDAP_config_openLDAP.html#)
--   [Configure LDAP for Active Directory](LDAP_config_AD.html#)
+When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must [Configure LDAP for Active Directory](LDAP_config_AD.html#).
 
 You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [Configure SSL (secure socket layers)](SSL_config.html#).
 

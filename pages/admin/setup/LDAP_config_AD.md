@@ -35,7 +35,7 @@ Before you configure LDAP for Active Directory, collect this information:
     If you choose 'yes' for this, when a user logs in, ThoughtSpot will first attempt to authenticate the user against LDAP. If that attempt fails, it will then attempt to authenticate the user against ThoughtSpot. If either of these succeed, then the user is successfully logged in. This option is useful in scenarios where some users are not in LDAP and are created only in ThoughtSpot.
 
 
-You do not need to create a user called tsadmin on your LDAP server. Internal authentication can be used for tsadmin. To configure LDAP for OpenLDAP:
+You do not need to create a user called tsadmin on your LDAP server. Internal authentication can be used for tsadmin. To configure LDAP:
 
 1. Log in to the Linux shell using SSH.
 2. Run the command to configure LDAP:
@@ -49,7 +49,6 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     ```
     Choose the LDAP protocol:
     [1] Active Directory
-    [2] OpenLDAP
     Option number: 1
 
     Configuring Active Directory
