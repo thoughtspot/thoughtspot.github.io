@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -12,14 +12,11 @@ To perform basic administration such as checking network connectivity, starting 
 
 In the following procedure, replace `<hostname_or_IP>` with the hostname or IP address of a node in ThoughtSpot. The default SSH port \(22\) will be used.
 
-1. Log in to a client machine and open a command prompt. 
-2. Issue the SSH command, specifying the IP address or hostname of the ThoughtSpot instance: 
+1. Log in to a client machine and open a command prompt.
+2. Issue the SSH command, specifying the IP address or hostname of the ThoughtSpot instance:
 
     ```
     ssh admin@<hostname_or_IP>
     ```
 
-3. Enter the password for the admin user. 
-
-**Parent topic:** [Introduction](../../application_integration/introduction/introduction.html)
-
+3. Enter the password for the admin user.

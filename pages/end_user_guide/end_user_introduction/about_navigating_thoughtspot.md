@@ -65,5 +65,5 @@ To learn more about this section, visit [About the user profile](about_user.html
 
 
 ## Related information
--   [Log in to or out of ThoughtSpot](/pages/end_user_guide/end_user_introduction/accessing.html)  
--   [Set your ThoughtSpot locale](/pages/end_user_guide/locale.html)  
+
+[Set your ThoughtSpot locale](/pages/end_user_guide/locale.html)  

@@ -29,5 +29,3 @@ In the event that the production cluster is destroyed, monitoring and alerting w
     ```
 
 5. Deploy a new mirror appliance when possible.
-
-**Parent topic:** [Cluster replacement](../../disaster_recovery/disaster_recovery/cluster_replacement.html)

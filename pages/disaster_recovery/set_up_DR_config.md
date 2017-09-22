@@ -43,6 +43,3 @@ This is the procedure for designating a primary and a mirror ThoughtSpot instanc
     ```
 
     You can use this command in the future to check whether the mirror cluster is up to date.
-
-
-**Parent topic:** [Cluster replacement](../../disaster_recovery/disaster_recovery/cluster_replacement.html)

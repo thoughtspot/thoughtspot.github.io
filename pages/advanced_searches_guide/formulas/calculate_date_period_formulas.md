@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -26,6 +26,3 @@ The following example shows you how to calculate the percent increase from the l
 1.  Create the formula, this week revenue = sum ( if ( this week ) then revenue else 0 ).
 2.  Then create the formula, last week revenue = sum ( if (last week ) then revenue else 0 ).
 3.  Now you can use [nested formulas](../../complex_searches/about_nested_formulas.html#) to calculate the percent increase by creating a parent formula, percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100.
-
-**Parent topic:** [About date formulas](../../../admin/advanced_searches_guide/formulas/about_date_formulas.html)
-

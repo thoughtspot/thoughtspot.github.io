@@ -22,9 +22,13 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change_aggreg_
 
 ## How to edit geographic columns
 
-1. Find the **GeoType** for the column that contains the geographical data.
-2. Change the value to the appropriate GeoType, depending on the kind of data the column contains.
-3. If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
+1. Find the **GEO CONFIG** for the column that contains the geographical data.
+2. Select the column to display the **Specify Geographic Configuration** dialog.
+
+    ![](/pages/images/set_geo_config.png "Configure geo data")
+
+3. Change the value to the appropriate **GEO CONFIG**, depending on the kind of geo data the column contains.
+    If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
     1. Change the **Type** or **ColumnType** to ATTRIBUTE.
     2. Change **ADDITIVE** to NO/FALSE.
 4. Save your changes.

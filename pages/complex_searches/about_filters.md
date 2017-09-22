@@ -8,14 +8,15 @@ sidebar: mydoc_sidebar
 ---
 When you add a value to your search, it becomes a filter. To add a filter from the search bar:
 
-1. Click in the search bar and type the values you want to include in the search. Typing a value in the search bar acts as a filter.
+1. Click in the search bar and type the values you want to include in the search.
 
-     ![](/pages/images/filter_from_the_search_bar.png "Filter from the search bar")
+    Typing a value in the search bar acts as a filter.
+
+    ![](/pages/images/filter_from_the_search_bar.png "Filter from the search bar")
 
     You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](/pages/reference/keyword_reference.html#).
 
 2. Click outside of the search bar or push enter to apply your filter.
-
 
 Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](/pages/complex_searches/pinboard_filters.html#).
 

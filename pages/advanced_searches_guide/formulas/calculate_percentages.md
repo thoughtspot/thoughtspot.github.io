@@ -1,6 +1,6 @@
 ---
 title: [elephant]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -18,6 +18,3 @@ The following example shows you how to figure out the percentage revenue generat
 
 1.  Create the following formula in the Formula Builder, percent revenue = ( sum ( revenue ) / group sum ( revenue ) ) \* 100.
 2.  Now you can search by each channel, using the percent revenue formula that you just created.
-
-**Parent topic:** [About percent (simple number) calculations](../../../admin/advanced_searches_guide/formulas/about_percent_calculations.html)
-

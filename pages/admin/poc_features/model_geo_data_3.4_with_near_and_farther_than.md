@@ -37,7 +37,7 @@ These keywords allow you to search with spatial filters on data contained in a t
 -   display a circle that represents your set distance on the geo charts when you filter on a GeoType column.
 -   are limited to 33 latitude/longitude pairs.
 
-1. Find the **GeoType** for the column that contains the geographical data.
+1. Find the **GEO CONFIG** for the column that contains the geographical data.
 2. Change the value to the appropriate GeoType, depending on the kind of data the column contains.
 3. If your data includes latitude and/or longitude columns that are stored as a numeric data type (DOUBLE), make these changes for those columns:
     1. Change the **Type** or **ColumnType** to ATTRIBUTE.

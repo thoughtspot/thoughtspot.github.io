@@ -47,5 +47,3 @@ There are no adapters for these cables. The 10GbE NIC \(Network Interface Card\)
 
 ![](/pages/images/cat_6a_cable.png "Category 6a
     cables")
-
-**Parent topic:** [Cable networking and installation](/pages//pages/appliance/setup/overview.html)

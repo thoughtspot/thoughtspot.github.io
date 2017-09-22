@@ -1,6 +1,6 @@
 ---
 title: [Model the data for searching]
-tags: 
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "blerg"
@@ -27,5 +27,3 @@ To make modeling settings for a table you've just loaded, or to make a quick cha
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
 -   **[Data modeling settings](/pages/admin/data_modeling/data_modeling_settings.html)**  
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
-
-**Parent topic:** [Model, link, and tag your data for searching](/pages/admin/data_modeling/about_data_modeling_intro.html)

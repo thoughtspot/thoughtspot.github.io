@@ -15,7 +15,7 @@ Geo charts show data on a map by location. They are geo area, geo bubble, and ge
 -   Point (latitude/longitude)
 -   Other sub-nation regions (for international countries)
 
-    {% include note.html content="In addition to the United States, ThoughtSpot also supports maps for the United Kingdom, Germany, Sweden, South Africa, and France."%}
+In addition to the United States, ThoughtSpot also supports maps for the United Kingdom, Germany, Sweden, South Africa, and France.
 
 ## Geo data that can be displayed
 
