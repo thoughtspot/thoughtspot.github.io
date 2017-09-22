@@ -13,7 +13,7 @@ Share uploaded data by following these steps:
 
 1. Click on **DATA**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/data_icon.png "Data")
+     ![](/pages/images/data_icon.png "Data")
 
 2. Click on the name of the uploaded data you want to share.
 3. Click the **Share** icon.

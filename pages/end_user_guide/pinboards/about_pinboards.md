@@ -19,7 +19,7 @@ To create a pinboard:
 
 1. Click on **Pinboards**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
+     ![](/pages/images/click_pinboards_icon.png "Pinboards")
 
 2. Click **+ New Pinboard** on the pinboards list page.
 

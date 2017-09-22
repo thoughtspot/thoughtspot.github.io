@@ -12,7 +12,7 @@ To start a slideshow:
 
 1. Click on **Pinboards**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
+     ![](/pages/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to present.
 3. Click **Present** under the dropdown menu of the visualization you would like to start the slideshow with.

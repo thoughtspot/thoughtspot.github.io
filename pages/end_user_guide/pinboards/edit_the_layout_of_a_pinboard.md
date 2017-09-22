@@ -14,7 +14,7 @@ In addition, the size picker at the bottom of a visualization dropdown lets you 
 
 1. Click on **Pinboards**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
+     ![](/pages/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to edit.
 3. Resize your visualizations by choosing between the predetermined sizes under the visualization dropdown menu.
@@ -25,7 +25,23 @@ In addition, the size picker at the bottom of a visualization dropdown lets you 
 5. If you are unhappy with your layout or you would like ThoughtSpot to configure your layout for you, go ahead and [reset your layout](reset_the_layout_of_a_pinboard.html#).
 6. Save your pinboard by clicking **Actions** and **Save**.
 
-     ![](/pages/shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard")
+     ![](/pages/images/save_a_pinboard.png "Save your pinboard")
+
+## Change the orientation of a chart or table
+
+You can change the size of a chart or table on a pinboard. To do this:
+
+1. Navigate to the chart or table.
+2. Select the menu.
+
+   The system displays the dropdown menu.
+
+   ![](/pages/images/size_pinboard_item.png "Resize an item")
+
+   The last item shows the possible orientation
+
+3. Select a new orientation.
+4. Choose **Actions > Save**.
 
 ## Remove a visualization from your pinboard.
 
@@ -33,7 +49,7 @@ To delete a visualization:
 
 1. Click on **Pinboards**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
+     ![](/pages/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to edit.
 3. Click **Delete** under the dropdown menu of the visualization you would like to delete.
@@ -42,4 +58,4 @@ To delete a visualization:
 
 4. Save your pinboard by clicking **Actions** and **Save**.
 
-     ![](/pages/shared/conrefs/../../images/save_a_pinboard.png "Save your pinboard")
+     ![](/pages/images/save_a_pinboard.png "Save your pinboard")

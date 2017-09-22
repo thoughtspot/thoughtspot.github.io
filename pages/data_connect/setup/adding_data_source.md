@@ -12,7 +12,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 1. Log in to ThoughtSpot from a browser.
 2. Click on **DATA**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/data_icon.png "Data")
+     ![](/pages/images/data_icon.png "Data")
 
 3. Click the **Data Sources** tab at the top of the page, and select **+ New data source** on the upper right hand side of the panel.
 

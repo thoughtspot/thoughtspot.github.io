@@ -14,7 +14,7 @@ To copy the link for a pinboard:
 
 1. Click on **Pinboards**, on the top navigation bar.
 
-     ![](/pages/shared/conrefs/../../images/click_pinboards_icon.png "Pinboards")
+     ![](/pages/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to get a link for.
 3. Click **Actions** and select **Copy link**.
