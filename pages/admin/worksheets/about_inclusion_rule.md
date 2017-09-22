@@ -6,16 +6,28 @@ last_updated: tbd
 summary: "Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition."
 sidebar: mydoc_sidebar
 ---
-In the case where some of the rows in a fact table do not have a match in any dimension tables, the inclusion rule determines whether or not the rows are shown. Because of this, the inclusion rule can affect the number of rows the worksheet will contain.  The inclusion rule is important if some table values are empty (or NULL) or if some primary key column values in a fact table do not have a match to a foreign key in the dimension table. In these cases, how you set an inclusion rule affects the number of rows in the worksheet.
+In the case where some of the rows in a fact table do not have a match in any
+dimension tables, the inclusion rule determines whether or not the rows are
+shown. Because of this, the inclusion rule can affect the number of rows the
+worksheet will contain.  The inclusion rule is important if some table values
+are empty (or NULL) or if some primary key column values in a fact table do not
+have a match to a foreign key in the dimension table. In these cases, how you
+set an inclusion rule affects the number of rows in the worksheet.
 
 Only rows in the fact table (also known as the LEFT table) are affected by the inclusion rule. It works like this:
 
--   If you choose **Apply full outer join (Full Outer Join)**, the results of both the left and right outer joins are combined, and all matched or unmatched rows from the tables on both sides are shown.
--   If you choose **Apply left outer join (Left Outer Join)**, all possible rows in the fact table are shown, regardless of whether they have a match in the dimension tables.
--   If you choose **Apply right outer join (Right Outer Join)**, all possible rows in the second table are shown, regardless of whether they have a match in the dimension tables.
--   If you choose **Exclude empty rows (Inner Join)**, any rows that do not have a match in one of the dimension tables, won't be shown in search results.
+| If you choose |  Then... |
+|---------------|------------|
+| **Apply full outer join (Full Outer Join)** | The results of both the left and right outer joins are combined, and all matched or unmatched rows from the tables on both sides are shown.|
+| **Apply left outer join (Left Outer Join)** | All possible rows in the fact table are shown, regardless of whether they have a match in the dimension tables.|
+|  **Apply right outer join (Right Outer Join)** | All possible rows in the second table are shown, regardless of whether they have a match in the dimension tables. |
+| **Exclude empty rows (Inner Join)** | Any rows that do not have a match in one of the dimension tables, won't be shown in search results.|
 
-When using **Exclude empty rows (Inner Join)**, the number of rows in the resulting worksheet can differ from the number of rows in the table when accessing it directly, because of the join condition. The worksheet acts like a materialized view. This means that it contains the results of a defined query in the form of a table.
+When using **Exclude empty rows (Inner Join)**, the number of rows in the
+resulting worksheet can differ from the number of rows in the table when
+accessing it directly, because of the join condition. The worksheet acts like a
+materialized view. This means that it contains the results of a defined query in
+the form of a table.
 
 If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by [changing the inclusion rule for the worksheet](change_inclusion_rule.html#).
 

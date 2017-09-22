@@ -7,7 +7,10 @@ summary: "As long as you have permissions to edit a worksheet, you can always go
 sidebar: mydoc_sidebar
 ---
 
-If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by changing the [inclusion rule](about_inclusion_rule.html#) for the worksheet.
+If you find that the charts and tables built on a worksheet contain a large
+number of null values (which display as `{blank}` in the web browser), you can
+fix this by changing the [inclusion rule](about_inclusion_rule.html#) for the
+worksheet.
 
 To change the inclusion or join rule of a worksheet:
 
@@ -17,7 +20,7 @@ To change the inclusion or join rule of a worksheet:
 
 2. Click on the name of the worksheet you want to edit from the list.
 3. Click the **Edit** button in the upper right hand side of the screen.
-4.  Click on the **Choose Sources** link.
+4. Click on the **Choose Sources** link.
 
     ![](/pages/images/worksheet_add_sources_link.png)
 
@@ -26,6 +29,6 @@ To change the inclusion or join rule of a worksheet:
      ![](/pages/images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
 
 6. Click **Done**.
-7.  Click **Actions** and select **Save**.
+7. Click **Actions** and select **Save**.
 
     ![](/pages/images/action_save_worksheet.png "Save a worksheet")

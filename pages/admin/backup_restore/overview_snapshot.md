@@ -1,18 +1,26 @@
 ---
 title: [Work with snapshots]
 tags:
-keywords: tbd
+keywords: backup,snapshot
 last_updated: tbd
 summary: "A snapshot is a point-in-time image of your running cluster you can use to restore the cluster back to a specific point in time. "
 sidebar: mydoc_sidebar
 ---
-In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own.
+In this section, you learn how to work with the default snapshot configuration
+that is enabled on ever cluster and how to take manual snapshots of your own.
 
 ## Create a manual snapshot
 
-You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. ThoughtSpot limits you to 25 snapshots. If you need to delete a snapshot, contact ThoughtSpot Support.
+You should create a snapshot before making any changes to the environment,
+loading a large amount of new data, or changing the structure of a table.
+ThoughtSpot limits you to 25 snapshots and 20 manual snapshots. If you need to
+delete a snapshot, contact ThoughtSpot Support.
 
-Taking a snapshot is fast, about 20 seconds. It happens invisibly in the background of a running cluster.  If you would like to restore from a snapshot instead, contact ThoughtSpot Support.
+{% include note.html content="When you upgrade, all existing snapshots from the previous version of ThoughtSpot will become manual snapshots." %}
+
+Taking a snapshot is fast, about 20 seconds. It happens invisibly in the
+background of a running cluster.  If you would like to restore from a snapshot
+instead, contact ThoughtSpot Support.
 
 To create a snapshot:
 

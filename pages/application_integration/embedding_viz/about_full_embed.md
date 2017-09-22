@@ -10,10 +10,10 @@ You can embed the full search experience into an iframe with different navigatio
 
 Embedded content creation gives you the ability to:
 
--   create answers and pinboards.
--   share objects with users.
--   upload data and refresh uploaded data.
--   relate uploaded data with existing worksheets.
+-   create answers and pinboards
+-   share objects with users
+-   upload data and refresh uploaded data
+-   relate uploaded data with existing worksheets
 
 You won't be able to:
 
@@ -71,7 +71,18 @@ window.thoughtspot.subscribeToAlerts("http://localhost:8000", onCallback);
 
 The function `updateIframeUrl(id)` reflects the logic to change the src URL of the iframe when you click on different navigation buttons.
 
-The URL flag `embedApp=true` is used for the iframe source. The default value for it is set to true.
+## Configure ThoughtSpot navigation bar
+
+To hide the primary navigation, configure this:
+
+* Make sure the app is in an `<iframe/>` .
+* Set the `embedApp` flag as true. This flag determines if the application is embedded.
+* Set the `primaryNavHidden` flag as true (the default). This flag determines navigation
+visibility.
+
+If either flag is `false`, the primary navigation will appear.
+
+## Additional notes
 
 Here are some additional notes about the full embed feature:
 

@@ -6,22 +6,28 @@ last_updated: tbd
 summary: "You can delete a data source in the web browser or using ThoughtSpot SQL Command Line (TQL)."
 sidebar: mydoc_sidebar
 ---
-When you enter a TQL statement, the system warns you of possible dependency consequences with a prompt asking if you’d like to proceed. This should make you feel safe issuing TQL commands, even commands like dropping a table.
+When you enter a TQL statement, the system warns you of possible dependency
+consequences with a prompt asking if you’d like to proceed. This should make you
+feel safe issuing TQL commands, even commands like dropping a table.
 
-If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are afffected, run it using this flag, for example:
+If TQL is run using the flag `--allow_unsafe`, your statements will always
+execute without this warning. Note that when running TQL from a script, you will
+need to decide what behavior you want if the script contains changes that affect
+dependent objects. If you want the script to run even if objects with
+dependencies are affected, run it using this flag, for example:
 
 ```
 cat safest_script_ever.sql | tql --allow_unsafe
 ```
 
-If you do not run the script using the flag, it will fail if any of its commands might cause problems with dependent objects.
+If you do not run the script using the flag, it will fail if any of its commands
+might cause problems with dependent objects.
 
 TQL actions with possible dependency consequences include:
 
 -   Change, add, or remove a primary key.
     -   When changing or adding a primary key, if the key in question is not unique in the data it may cause deletion of rows, because of upserts occurring when duplicate primary keys are found.
     -   When changing or removing a primary key, incoming foreign key relationships will be broken.
-
 -   Change a column datatype.
 -   Add a relationship or foreign key.
 -   Drop a relationship or foreign key constraint.

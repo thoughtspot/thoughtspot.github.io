@@ -17,8 +17,8 @@ See [About the REST API](../data_api/about_data_api.html#) for information on ho
 
 |Parameter|Value|Description|Parameter Type|Data Type|
 |---------|-----|-----------|--------------|---------|
-|id| |GUID id of the pinboard|query|string|
-|vizid| |Optional GUID ids of the visualizations|query|string|
+|id| |GUID id of the pinboard|query|string|
+|vizid| |Optional GUID ids of the visualizations|query|string|
 |batchsize|-1|Batch size|query|integer|
 |pagenumber|-1|PageNumber. Alternate way to set offset. This is `1-based indexingOffset = (pageNumber - 1) * batchSize`|query|integer|
 |offset|-1|Offset|query|integer|
@@ -83,7 +83,7 @@ Response Headers
 
 |Parameter|Value|Description|Parameter Type|Data Type|
 |---------|-----|-----------|--------------|---------|
-|id| |GUID of the reportbook|query|string|
+|id| |GUID of the reportbook|query|string|
 
 HTTP Status Code
 
@@ -168,9 +168,10 @@ Header of each visualization header object obtained will have these first class 
 
 |Parameter|Value|Description|Parameter Type|Data Type|
 |---------|-----|-----------|--------------|---------|
-|principals| |formData. List of principal objects.|string| |
-|applyChanges| |formData. Flag to indicate whether to sync the users and groups to the system, and apply the difference evaluated. The API can be used to just validate the difference before applying the changes.|boolean| |
-|defaultPassword| |formData. If set then all of the created users will have a password that is the same as the defaultPassword applied.|string| |
+|applyChanges| |formData. Flag to indicate whether to sync the users and groups to the system, and apply the difference evaluated. The API can be used to just validate the difference before applying the changes.|boolean| |
+|defaultPassword| |formData. If set then all of the created users will have a password that is the same as the defaultPassword applied.|string| |
+|principals| |formData. List of principal objects.|string| |
+|remoteDeleted| |This is boolean flag that indicates whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.|boolean| |
 
 HTTP Status Code
 

@@ -4,7 +4,7 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: Thoughtspot Doc
+print_title: ThoughtSpot Doc
 print_subtitle: Version 4.4
 output: pdf
 defaults:

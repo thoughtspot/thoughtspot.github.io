@@ -14,6 +14,10 @@ To change the colors used in a chart, you can use the color picker from the char
 
 To change the chart colors, you need at least one column in the chart's legend.
 
+Colors are maintained across searches within a session. For example, when doing a search on
+revenue by state, each state will keep its color assigned to it even if you change the search or
+chart type.
+
 ## Add a column to the legend
 
 1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
