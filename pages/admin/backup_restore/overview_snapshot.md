@@ -12,9 +12,10 @@ that is enabled on ever cluster and how to take manual snapshots of your own.
 ## Create a manual snapshot
 
 You should create a snapshot before making any changes to the environment,
-loading a large amount of new data, or changing the structure of a table.
-ThoughtSpot limits you to 25 snapshots and 20 manual snapshots. If you need to
-delete a snapshot, contact ThoughtSpot Support.
+loading a large amount of new data, or changing the structure of a table. You
+can have up to 20 manual snapshots at a time, after which, you have to clear one
+before you are able to create another. If you need to delete a snapshot, contact
+ThoughtSpot Support.
 
 {% include note.html content="When you upgrade, all existing snapshots from the previous version of ThoughtSpot will become manual snapshots." %}
 
@@ -26,7 +27,7 @@ To create a snapshot:
 
 1. Log in to the Linux shell using SSH.
 2. Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.
-   You can have up to 20 manual snapshots at a time, after which, you have to clear one before you are able to create another.
+
 
     ```
     $ tscli snapshot create <snapshot_name> <reason>
@@ -75,7 +76,7 @@ enabled: true
 
 ```
 
-This policy takes a snapshot every hour starting at midnight on Sudnay. It retains the snapshots from the last three hour intervals and two snapshots from two of the previous 4 hour intervals. For detailed information about understing the schedule, see [Understand backup/snapshot schedules](how_to_create_a_schedule.html).
+This policy takes a snapshot every hour starting at midnight on Sudnay. It retains the snapshots from the last three hour intervals and two snapshots from two of the previous 4 hour intervals. That means, there are 5 periodic snapshots retained overall. For detailed information about understanding the schedule, see [Understand backup/snapshot schedules](how_to_create_a_schedule.html).
 
 You shouldn't change this default policy unless instructed to by support. If you have to adjust it for some reason, you can use, `tscli snapshot-policy update` command. This opens the current policy in an editor. Your policy should never retain more than 20 snapshots at any point in time. Exceeding this number can impact cluster performance.
 
