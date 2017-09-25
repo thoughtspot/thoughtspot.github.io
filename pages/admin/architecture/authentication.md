@@ -13,8 +13,7 @@ SAML if possible since ThoughtSpot provides only basic authentication with no
 restrictions on passwords, timeouts, failed logins, etc.
 
 
-Figure 4 shows each of
-the options and the items to consider for each.
+The table below shows each of the options and the items to consider for each.
 
 
 <table>
