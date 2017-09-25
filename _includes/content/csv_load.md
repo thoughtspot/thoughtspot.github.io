@@ -3,11 +3,11 @@ Any user who belongs to a group that has the privilege **Has administration priv
 1. Log into ThoughtSpot from a browser.
 2. Click on **DATA**, on the top navigation bar.
 
-     ![](/pages/images/data_icon.png "Data")
+   ![](/pages/images/data_icon.png "Data")
 
 3. Click the **Actions** button in the upper right corner, and select **Upload Data**.
 
-     ![](/pages/images/new_imported_data.png "Upload data")
+   ![](/pages/images/new_imported_data.png "Upload data")
 
 4. Upload the CSV or Excel file by doing one of these options:
     1. Click on **Browse your files** and select the file.

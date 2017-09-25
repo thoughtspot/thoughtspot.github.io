@@ -7,9 +7,9 @@ Most applications such as Microsoft Excel or Google Sheets can output CSV format
    The exact procedure you use will depend on the source application.
 2. Review the file's format before uploading it to ThoughtSpot.
 
-Your source data may be in another database. If this is the case, your company's ETL (extract, transform, load) process will typically generate CSV files.  If your source is another database:
+    Your source data may be in another database. If this is the case, your company's ETL (extract, transform, load) process will typically generate CSV files. If your source is another database:
 
-1. Connect to the source database.
-2. Extract each table you wish to import into ThoughtSpot as a CSV file.
+3. Connect to the source database.
+4. Extract each table you wish to import into ThoughtSpot as a CSV file.
 
    The column delimiter should be a `,` (comma), `|` (pipe), or tab.
