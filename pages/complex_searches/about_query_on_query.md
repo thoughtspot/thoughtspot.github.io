@@ -46,8 +46,17 @@ possible. If you want to do this, here are the steps at a high level:
 
 ## Best practices for using aggregated worksheets
 
-Aggregated worksheets can be used in a variety of ways. But keep in mind these details about how they work:
+Only users with administrative privileges are able to create aggregated
+worksheets and link them. Users that create aggregated worksheets should keep in
+mind best practices for creating a worksheet and the boundaries around the final
+worksheet size.
 
--   Only users with administrative privileges are able to create aggregated worksheets and link them.
--   You can't link an aggregated worksheet with a sharded table. If you do this and try to search on it, you will get an error.
--   Joins are directional, meaning that the order of the objects being linked matters. The table/aggregated worksheet with the foreign key needs to occur in the first (left) position. The one with the primary key needs to go in the second (right) position.
+You can't link an aggregated worksheet with a sharded table. If you do this and
+try to search on it, you will get an error. The order of the objects being
+linked matters, this is because joins are directional. The table/aggregated
+worksheet with the foreign key needs to occur in the first (left) position. The
+table with the primary key should be in the second (right) position.
+
+For the best performance, the final aggregated worksheet should have 50 or fewer
+columns and no more than 10 million rows. Exceeding these boundaries can make
+your worksheet slow or error prone.
