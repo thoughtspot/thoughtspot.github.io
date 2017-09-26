@@ -18,10 +18,6 @@ data per node. Ways to reduce the total amount of data and rows of data include
 limiting the amount of data (number of years, etc.) or combining long, but
 narrow tables together.
 
-
-
-
-
 ## Data Boundaries
 
 Total rows in a result of a join can also have an impact. In general, it is
@@ -48,11 +44,14 @@ should keep in mind the following:
 You can use an ETL process to circumvent these limitations. Speak with
 ThoughtSpot Customer Support to learn more.
 
-To be able to join an aggregated worksheet with a base table, the aggregated
-worksheet cannot have more than 5 tables involved. Moreover, the number of rows
-in the final aggregated worksheet cannot be greater than 1000.
+### Aggregated worksheets
 
-## Chasm Trap Worksheet Boundaries
+To be able to join an aggregated worksheet with a base table, your installation
+must be configured to allow the behavior. The aggregated worksheet cannot have
+more than 5 tables involved. Moreover, the number of rows in the final
+aggregated worksheet cannot be greater than 1000.
+
+### Chasm Trap worksheets
 
 For chasm trap scenarios (two or more fact tables joined via a shared dimension)
 the following boundaries are recommended:

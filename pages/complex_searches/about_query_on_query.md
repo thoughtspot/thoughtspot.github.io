@@ -52,11 +52,21 @@ mind best practices for creating a worksheet and the boundaries around the final
 worksheet size.
 
 You can't link an aggregated worksheet with a sharded table. If you do this and
-try to search on it, you will get an error. The order of the objects being
-linked matters, this is because joins are directional. The table/aggregated
-worksheet with the foreign key needs to occur in the first (left) position. The
-table with the primary key should be in the second (right) position.
+try to search on it, you will get an error.
+
+To be able to join an aggregated worksheet with a base table, your installation
+must be configured to allow the behavior. The aggregated worksheet cannot have
+more than 5 tables involved. Moreover, the number of rows in the final
+aggregated worksheet cannot be greater than 1000.
+
+The order of the objects being linked (joined) matters, this is because joins are
+directional. The table/aggregated worksheet with the foreign key needs to occur
+in the first (left) position. The table with the primary key should be in the
+second (right) position.
 
 For the best performance, the final aggregated worksheet should have 50 or fewer
 columns and no more than 10 million rows. Exceeding these boundaries can make
-your worksheet slow or error prone.
+your worksheet creation slow or error prone.
+
+You can use an ETL (extract, transform, load) process to circumvent these
+limitations.
