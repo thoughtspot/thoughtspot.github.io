@@ -16,8 +16,7 @@ You can change the view of your answer so it appears as a table or a chart. To c
 2. Click **Change Visualization**.
 3. Select either table or a chart type.
 
-     ![](/pages/images/toggle_between_views.png "Toggle between the two views")
-
+   ![](/pages/images/toggle_between_views.png "Toggle between the two views")
 
 ## Sort your search
 
@@ -52,4 +51,4 @@ To exclude or include row values:
 1. Right click on the visualization or table cell of interest
 2. Select **Exclude "value"** or **Include "value"** if available.
 
-     ![](/pages/images/exclude.png "Exclude value option") 
+     ![](/pages/images/exclude.png "Exclude value option")

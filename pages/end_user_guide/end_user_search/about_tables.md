@@ -33,6 +33,14 @@ To resize the column widths:
 1. While viewing your answer as a table, hover over a column border in the column header row.
 2. Click and drag the border to create your preferred column width.
 
+## Sort columns
+
+You can sort a table by column values by clicking on the column title. If you
+hold down the SHIFT key you can click on multiple heads and sort on them in
+turn.
+
+{% include tip.html content="This same functionality is available on tables you see elsewhere in ThoughtSpot.
+For example, a table in the **DATA** page is also sortable in this manner."%}
 
 ## About headlines (summary information)
 
