@@ -18,5 +18,11 @@ Any user who belongs to a group that has the privilege **Has administration priv
 8. Review the automatically generated data types for each column, and make any changes you want.
    There are four data types: Text, Integer, Decimal, and Date.
 9. Click **Import**.
-10. Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
-    Or click **Search** if you want to begin a new search.
+
+    When an upload is complete, the system reports the results and offers you some further actions.
+
+     ![](/pages/images/spotiq-upload.png "Auto Analyse")
+
+    * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
+    * Click **Search** if you want to begin a new search.
+    * Click **Auto Analyse** if you want to use the SpotIQ feature to find insights in your new data.
