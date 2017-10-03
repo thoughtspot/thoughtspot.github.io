@@ -1,6 +1,6 @@
 # /bsh/sh
 
-for v in 4.4 4.1
+for v in 4.4 
   do
     # Checkout a versioned branch with the version name
     git checkout $v
