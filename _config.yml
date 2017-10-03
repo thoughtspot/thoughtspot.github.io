@@ -33,7 +33,6 @@ exclude:
   - pdf-product2.sh
   - update.sh
 
-
 # File Formatting
 # Markdown processor. Kramdown differs from github-flavored markdown in some subtle ways
 
@@ -74,6 +73,8 @@ collections:
   error-codes:
     output: true
   reference:
+    output: true
+  release:
     output: true
   spotiq:
     output: true

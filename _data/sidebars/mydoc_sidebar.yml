@@ -1140,3 +1140,15 @@ entries:
     - title: Error code reference
       url: /error-codes/error_codes_reference.html
       output: web,admBk,ugBk
+  - sectiontitle: About this Release
+    output: web
+    sectionitems:
+    - title: Help Center
+      url: /release/help-center.html
+      output: web
+    - title: Release notes
+      url: /release/notes.html
+      output: web
+    - title: Downloads
+      url: /release/downloads.html
+      output: web
