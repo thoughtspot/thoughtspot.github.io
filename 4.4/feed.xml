@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description>An example site and repo for controlling versions of a web site.</description>
+        <link>https://docs.thoughtspot.com/</link>
+        <atom:link href="https://docs.thoughtspot.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 03 Oct 2017 15:24:57 -0700</pubDate>
+        <lastBuildDate>Tue, 03 Oct 2017 15:24:57 -0700</lastBuildDate>
+        <generator>Jekyll v3.5.2</generator>
+        
+    </channel>
+</rss>

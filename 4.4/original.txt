@@ -1,0 +1,76 @@
+
+- title: Login credentials for administration
+  url: /pages/admin_guide/setup/login_console.html
+  output: web,pdf
+- title: Log in to ThoughtSpot from a browser
+  url: /pages/admin_guide/setup/accessing.html
+  output: web,pdf
+- title:Set your ThoughtSpot locale
+  url: /pages/admin_guide/setup/set_your_thoughtspot_locale.html
+  output: web,pdf
+- title:Software updates
+  url: /pages/admin_guide/setup/upgrades.html
+  output: web,pdf
+- title: Test network connectivity between nodes
+  url: /pages/admin_guide/setup/test_network.html
+  output: web,pdf
+- title:Set the relay host for SMTP (email)
+  url: /pages/admin_guide/setup/set_up_relay_host.html
+  output: web,pdf
+- title: Set up a fiscal calendar year
+  url: /pages/admin_guide/setup/set_custom_calendar.html
+  output: web,pdf
+- title:About SSL (secure socket layers)
+  url: /pages/admin_guide/setup/SSL_config.html
+  output: web,pdf
+- title: Configure SSL for web traffic
+  url: /pages/admin_guide/setup/configure_SSL.html
+  output: web,pdf
+- title: Set the recommended TLS version
+  url: /pages/admin_guide/setup/set_the_recommended_tls_version.html
+  output: web,pdf
+- title: Configure SAML
+  url: /pages/admin_guide/setup/configure_SAML_with_tscli.html
+  output: web,pdf
+- title: About LDAP integration
+  url: /pages/admin_guide/setup/about_LDAP.html
+  output: web,pdf
+- title: Configure OpenLDAP
+  url: /pages/admin_guide/setup/LDAP_config_openLDAP.html
+  output: web,pdf
+- title: Configure LDAP for Active Directory
+  url: /pages/admin_guide/setup/LDAP_config_AD.html
+  output: web,pdf
+- title: Add the SSL certificate for LDAP
+  url: /pages/admin_guide/setup/add_SSL_for_LDAP.html
+  output: web,pdf
+- title: Test the LDAP configuration
+  url: /pages/admin_guide/setup/test_ldap.html
+  output: web,pdf
+- title: Sync users and groups from LDAP
+  url: /pages/admin_guide/setup/sync_users_and_groups_from_ldap.html
+  output: web,pdf
+- title: Mount a NAS file system
+  url: /pages/admin_guide/setup/NAS_mount.html
+  output: web,pdf
+- title: Add a custom support contact
+  url: /pages/admin_guide/setup/set_custom_support_contact.html
+  output: web,pdf
+- title: Set up monitoring
+  url: /pages/admin_guide/setup/set_up_monitoring.html
+  output: web,pdf
+- title: Connect to the ThoughtSpot Support file server
+  url: /pages/admin_guide/setup/configure_secure_file_server_connection.html
+  output: web,pdf
+- title: Set up remote support access
+  url: /pages/admin_guide/setup/set_up_remote_support.html
+  output: web,pdf
+- title: Enable the call home capability
+  url: /pages/admin_guide/setup/enable_call_home.html
+  output: web,pdf
+- title: Network ports
+  url: /pages/admin_guide/setup/firewall_ports.html
+  output: web,pdf
+- title: About load balancing and proxies
+  url: /pages/admin_guide/setup/about_load_balancer_configuration.html
+  output: web,pdf
