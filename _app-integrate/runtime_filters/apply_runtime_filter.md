@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. The filters are specified in the called URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 

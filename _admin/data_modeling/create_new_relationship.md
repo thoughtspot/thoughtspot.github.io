@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Explains how to create a link between two data sources through a relationship."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can quickly create a relationship (or link) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain (e.g. employee ID or product key).
 

@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Some tables may take an unusually long time to load due to a high data version issue. This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.
 

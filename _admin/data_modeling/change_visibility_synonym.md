@@ -5,6 +5,7 @@ keywords: "data,synonym,hide"
 last_updated: tbd
 summary: "Hide a column from users or make it easier to find by assigning a synonym."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 You can hide columns from users in ThoughtSpot without dropping them from the database. This is common when the data contains identifier columns that are used to join tables, but which do not have any meaning to users. Alternatively, you can allow searching using more than one name for a column by creating synonyms for it. This is helpful, for example, when different departments refer to the data using different terminology.

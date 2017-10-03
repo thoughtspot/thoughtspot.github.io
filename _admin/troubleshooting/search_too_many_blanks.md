@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 If you find that your search results contain too many blanks when your data source is a worksheet, there is a simple adjustment you can make to fix this.
 

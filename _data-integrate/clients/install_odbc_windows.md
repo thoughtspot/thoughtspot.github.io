@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Microsoft Windows ODBC driver and install it."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 The ODBC driver for Windows requires Visual C++ Redistributable for Visual Studio 2013. You will be prompted to install it during installation of the driver if it isn't already installed. It is important to note the following about the ODBC login information:

@@ -5,6 +5,7 @@ keywords: schema, import
 last_updated: tbd
 summary: "Importing a schema through the Web browser makes it possible to run your SQL script without needing to have a Linux login."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can run a SQL script to create your database schema through the browser, without having to log in to the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema. You can use this capability in any of these ways:
 

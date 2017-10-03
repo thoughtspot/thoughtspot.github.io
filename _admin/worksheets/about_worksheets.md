@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 After modeling the data, create worksheets to make searching easier. For example, a sales executive might need to search for information about retail sales. The required data could be contained in several tables (sales, customers, products, stores, etc.), with foreign key relationships between them. An administrator who is familiar with the data model can create a retail sales worksheet, that combines all of the related fact and dimension tables into a single, easy-to-use view, and share it with the sales executive. This provides access to the data without requiring an understanding of how it is structured.
@@ -94,7 +95,7 @@ To add the sources to the worksheet:
 
 ## Where to go next
 
--   **[How the inclusion rule works](/pages/admin/worksheets/about_inclusion_rule.html)**  
+-   **[How the inclusion rule works](/admin/worksheets/about_inclusion_rule.html)**  
 Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition.
--   **[How the worksheet join rule works](/pages/admin/worksheets/progressive_joins.html)**  
+-   **[How the worksheet join rule works](/admin/worksheets/progressive_joins.html)**  
 Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.

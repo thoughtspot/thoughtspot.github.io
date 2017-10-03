@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or tsload.
 

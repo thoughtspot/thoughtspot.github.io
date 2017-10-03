@@ -5,6 +5,7 @@ keywords: "table,chart,visualization"
 last_updated: tbd
 summary: "You can change how your search results (answers) appear."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Your search answer (results) have various display options. You can change the visualization used to display your results, their sort oder, and how they are grouped or grouped.
 

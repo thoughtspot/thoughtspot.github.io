@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can share an entire table, or only some of its columns."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Data imported from a Web browser is visible to administrators and the user who uploaded it. Administrators and owners can share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.
 

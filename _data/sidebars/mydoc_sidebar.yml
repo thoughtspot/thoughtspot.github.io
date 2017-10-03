@@ -1114,28 +1114,28 @@ entries:
     output: web
     sectionitems:
     - title: About this reference
-      url: /pages/reference/intro_reference.html
+      url: /reference/intro_reference.html
       output: web,admBk,ugBk
     - title: Keyword reference
-      url: /pages/reference/keyword_reference.html
+      url: /reference/keyword_reference.html
       output: web,admBk,ugBk
     - title: TQL reference
-      url: /pages/reference/sql_cli_commands.html
+      url: /reference/sql_cli_commands.html
       output: web,admBk,ugBk
     - title: ThoughtSpot Loader flag reference
-      url: /pages/reference/data_importer_ref.html
+      url: /reference/data_importer_ref.html
       output: web
     - title: tscli command reference
-      url: /pages/reference/tscli_command_ref.html
+      url: /reference/tscli_command_ref.html
       output: web,admBk,ugBk
     - title: Date and time formats reference
-      url: /pages/reference/date_formats_for_loading.html
+      url: /reference/date_formats_for_loading.html
       output: web,admBk,ugBk
     - title: Row level security rules reference
-      url: /pages/reference/rls_rule_builder_reference.html
+      url: /reference/rls_rule_builder_reference.html
       output: web,admBk,ugBk
     - title: Formula reference
-      url: /pages/reference/formula_reference.html
+      url: /reference/formula_reference.html
       output: web,admBk,ugBk
     - title: Error code reference
       url: /error-codes/error_codes_reference.html

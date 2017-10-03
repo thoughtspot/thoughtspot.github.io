@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can always go back and view or edit a formula that was added to a search. Do this by clicking the edit icon next to its name in the **Columns** listing. Anyone who has edit privileges on an answer can also edit any formulas it contains. To view or edit an existing formula in an answer:
 

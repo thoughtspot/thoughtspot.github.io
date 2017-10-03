@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 

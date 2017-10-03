@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Disaster recovery is the ability to recover from a hardware or software failure or a catastrophic event. ThoughtSpot protects you from data loss in the event of a hardware or software failure or a catastrophic event.
 

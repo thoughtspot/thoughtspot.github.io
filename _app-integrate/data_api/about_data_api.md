@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 When using the REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON \(JavaScript Object Notation\) representation of the data will be returned.
 

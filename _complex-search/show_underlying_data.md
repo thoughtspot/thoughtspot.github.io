@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can see the most granular details of a given result set, i.e. it shows the un-aggregated view. This feature lets you understand what an answer consists of. For example, if you search for "customer region revenue", the answer shows the aggregate revenue value for each customer region. You can then click on any row and then on **Show underlying data**, to see each value that "revenue" constitutes of, for any given region.
 

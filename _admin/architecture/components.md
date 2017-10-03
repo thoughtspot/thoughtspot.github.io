@@ -5,6 +5,7 @@ keywords: Architecture,components,cluster,appliance
 last_updated: tbd
 summary: "To implement ThoughtSpot it is important to understand where it sits within your overall analytics architecture and how it provides data to end users. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot consists of a cluster of one or more nodes, acting together to
 provide analytic answers to business questions. As such, there are only a few

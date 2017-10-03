@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Using row level security, you can effectively customize search results and pinboards for each group that views them."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Row level security (RLS) allows you to define which groups can see individual rows in a table, based on the values in one of its columns.
 

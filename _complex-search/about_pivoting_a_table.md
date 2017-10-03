@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically. Pivot tables are a chart time typat use a drag-and-drop interface.  
 

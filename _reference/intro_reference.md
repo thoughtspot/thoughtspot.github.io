@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This Reference section contains the commands and their syntax for all the command line tools in ThoughtSpot.
 

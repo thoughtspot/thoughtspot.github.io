@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "ThoughtSpot does all analysis against data in memory to help achieve
 fast results across millions and billions of records of data."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot caches data as relational tables in memory. The tables can be
 sourced from different data sources and joined together. ThoughtSpot has four

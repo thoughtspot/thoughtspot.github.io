@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 If the primary cluster fails, the mirror cluster can take over its operations after a small manual intervention. The manual procedure makes the mirror instance into the primary.
 

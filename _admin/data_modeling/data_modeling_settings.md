@@ -5,9 +5,10 @@ keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
-You can change these settings in two ways, both of which have change the model. If you want to make a few small changes, you should [make them in the ThoughtSpot application ](/pages/admin/data_modeling/model_data_in_UI.html) if you want to make many changes [you should edit the modelling file](/pages/admin/data_modeling/edit_model_file.html#). Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
+You can change these settings in two ways, both of which have change the model. If you want to make a few small changes, you should [make them in the ThoughtSpot application ](/admin/data_modeling/model_data_in_UI.html) if you want to make many changes [you should edit the modelling file](/admin/data_modeling/edit_model_file.html#). Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.
 
 ## Modeling settings
 
@@ -44,5 +45,5 @@ If you want to change any of the settings that cannot be modified in a worksheet
 ## Related information  
 
 - [Model the data for searching](semantic_modeling.html#)
-- [Add a geographical data setting for a column](/pages/admin/data_modeling/model_geo_data.html)  
-- [Set the search suggestions priority for a column](/pages/admin/data_modeling/change_column_priority.html)  
+- [Add a geographical data setting for a column](/admin/data_modeling/model_geo_data.html)  
+- [Set the search suggestions priority for a column](/admin/data_modeling/change_column_priority.html)  

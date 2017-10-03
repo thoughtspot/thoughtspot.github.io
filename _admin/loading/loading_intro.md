@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others."
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The fastest and easiest way to load a new table is by importing it using the Web browser. This is best for one time data loads of small tables which do not have complex relationships to other tables. This method is limited to tables that are under 50 MB (megabytes) in size.
 
@@ -29,9 +30,9 @@ If you're uploading data through the Web interface, you can use a native Excel f
 
 ## Related Information
 
--   [Load CSV files with the UI](/pages/admin/loading/load_from_web_browser.html)  
--   [Append data through the UI](/pages/admin/loading/append_data_from_a_web_browser.html)  
--   [Schema planning concepts](/pages/admin/loading/plan_schema.html)  
--   [Overview of schema building](/pages/admin/loading/create_schema.html)  
--   [Import CSV files with tsload](/pages/admin/loading/use_data_importer.html)  
--   [How to view a data schema](/pages/admin/loading/schema_viewer.html)  
+-   [Load CSV files with the UI](/admin/loading/load_from_web_browser.html)  
+-   [Append data through the UI](/admin/loading/append_data_from_a_web_browser.html)  
+-   [Schema planning concepts](/admin/loading/plan_schema.html)  
+-   [Overview of schema building](/admin/loading/create_schema.html)  
+-   [Import CSV files with tsload](/admin/loading/use_data_importer.html)  
+-   [How to view a data schema](/admin/loading/schema_viewer.html)  

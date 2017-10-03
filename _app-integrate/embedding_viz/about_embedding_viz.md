@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Embedding allows you to display a pinboard from ThoughtSpot on your own Web page, Web portal, or application. You can also enable full embedding, which allows you to create content in an embedded environment. When using Embedding, authentication is achieved through SAML.
 

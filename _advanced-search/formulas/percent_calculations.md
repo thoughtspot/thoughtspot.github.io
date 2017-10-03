@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can use simple number functions to perform useful percent calculations.
 

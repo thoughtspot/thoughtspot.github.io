@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary:
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 There are several aspects of security, including access and permissions, data security and privacy, and security from an IT perspective.
 

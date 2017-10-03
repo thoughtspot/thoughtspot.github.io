@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas. You can leverage operators in your conditional formulas to have them return true, false, or a predetermined value. The operators include:
 

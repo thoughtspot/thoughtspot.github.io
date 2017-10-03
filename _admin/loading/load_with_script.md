@@ -5,6 +5,7 @@ keywords: "tsload,csv,script,load"
 last_updated: tbd
 summary: "Learn how to load one or files in bulk with a script."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 If you need to load data from multiple CSV files, create a script to automate the process. You can also use a similar script to automate recurring data feeds.
 

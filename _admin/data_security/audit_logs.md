@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "System security refers to audit logs and security policies."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot includes a number of management tools, monitoring applications, and automated processes to support system security. System security includes managing access and privileges, audit logs, security policies, and Linux OS installed package updates.
 

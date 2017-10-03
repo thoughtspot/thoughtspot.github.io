@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Legacy Row Level Security is deprecated and no longer used. This documentation is retained to support implementations that are already using this method."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](about_row_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
 

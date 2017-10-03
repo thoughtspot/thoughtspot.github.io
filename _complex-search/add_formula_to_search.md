@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "To provide richer insights, you can add a formula to your search. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.
 

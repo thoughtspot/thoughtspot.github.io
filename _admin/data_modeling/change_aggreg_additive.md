@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can allow aggregate on MEASURE columns and some ATTRIBUTE columns."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 Aggregation takes multiple input values and calculates an summary value from them. An example aggregation function would be average or minimum. You can control how aggregation works in your data.  

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Congratulations on purchasing the ThoughtSpot instance. This guide will get you started with setting up the Amazon Web Services (AWS) virtual machine (VM) offering.
 

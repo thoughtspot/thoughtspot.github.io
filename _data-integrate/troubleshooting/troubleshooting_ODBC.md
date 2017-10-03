@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Using logs to aid in troulbeshooting."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 If you need more information in order to troubleshoot ODBC connections, you can enable logging for ODBC. To do this on Windows, follow these instructions.
 

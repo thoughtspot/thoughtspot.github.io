@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can create a formula that involves aggregated measures coming from multiple
 fact tables of a chasm trap.

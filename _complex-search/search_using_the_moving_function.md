@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can use the moving formulas to compute a measure within a moving window of your data, usually defined by time."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This example  demonstrates using the `moving_average` formula. To use the moving function in a search:
 

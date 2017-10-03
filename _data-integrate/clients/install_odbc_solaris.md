@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Solaris ODBC driver and install it."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The Solaris ODBC driver is certified on Solaris Sparc 10. It is important to note the following about the ODBC login information:
 

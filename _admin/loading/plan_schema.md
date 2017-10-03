@@ -5,6 +5,7 @@ keywords: loader,TQL,DDL
 last_updated: tbd
 summary: "Considerations in creating a schema for the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface (TQL).
 
@@ -47,11 +48,11 @@ Here's what you'll need to take into account in your TQL for creating each table
 
 ## Where to go next
 
--   **[Data types](/pages/admin/loading/datatypes.html)**  
+-   **[Data types](/admin/loading/datatypes.html)**  
 ThoughtSpot supports the common data types. Compare these with the data types you want to load, and do any necessary conversion ahead of loading the data.
--   **[Constraints](/pages/admin/loading/constraints.html)**  
+-   **[Constraints](/admin/loading/constraints.html)**  
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
--   **[Sharding](/pages/admin/loading/sharding.html)**  
+-   **[Sharding](/admin/loading/sharding.html)**  
 For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.
--   **[Chasm traps](/pages/admin/loading/chasm_trap.html)**  
+-   **[Chasm traps](/admin/loading/chasm_trap.html)**  
 In a complex schema, you may have a fact table with no relationship to another fact table, except that each contains a foreign key to a shared dimension table. This is known as a chasm trap, and ThoughtSpot can handle it!

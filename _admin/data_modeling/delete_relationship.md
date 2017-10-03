@@ -5,6 +5,7 @@ keywords: "delete,relationship,table"
 last_updated: tbd
 summary: "You can delete relationship (link) between tables through the application or TQL."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You must have either administration privilege or modify access permission to the columns to delete a relationship. If you created a relationship (link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
 

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The disaster recovery setup uses periodic backups from the primary to a shared storage \(NFS mounted drive or NAS\). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.
 

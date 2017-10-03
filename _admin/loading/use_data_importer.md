@@ -5,13 +5,14 @@ keywords: tbd
 last_updated: tbd
 summary: "The tsload command is a common way to import data from a CSV file."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Use ThoughtSpot Loader (`tsload`) to load data from a CSV text file into an existing table in ThoughtSpot. ThoughtSpot Loader (`tsload`) is a common way to import data. When using `tsload`, you can load larger datasets and make the loading process repeatable through scripting.
 The `tsload` command accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.
 
 Before importing data, you need to [Build the schema](create_schema.html#).
 
-To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference](/pages/reference/data_importer_ref.html#) or by issuing `tsload -help`.
+To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference](/reference/data_importer_ref.html#) or by issuing `tsload -help`.
 
 tsload supports both full and incremental data loads. For incremental loads, an upsert (insert or update) is performed. If an incoming row has the same primary key as an existing row, it updates the existing row with the new values.
 

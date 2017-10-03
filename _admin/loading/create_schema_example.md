@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Simple examples that illustrate how to use the TQL and the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 These examples demonstrate the steps involved in creating a schema using the ThoughtSpot SQL Command Line (TQL). After the schema is created, you can load data into it with ThoughtSpot Loader.
 

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.
 

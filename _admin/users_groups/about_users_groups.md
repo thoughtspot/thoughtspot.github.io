@@ -5,6 +5,7 @@ keywords: "user,group,privilege"
 last_updated: tbd
 summary: "Creating groups and assigning users to them makes privilege management easier."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before people can log in and use ThoughtSpot, you need to create a username, a password, and a membership in one or more groups for them.
 
@@ -41,5 +42,5 @@ The following table shows the intersection of user privilege and ability:
 
 ## Related information
 
--   [Add a group and set security privileges](/pages/admin/users_groups/add_group.html)  
--   [Add a user](/pages/admin/users_groups/add_user.html)  
+-   [Add a group and set security privileges](/admin/users_groups/add_group.html)  
+-   [Add a user](/admin/users_groups/add_user.html)  

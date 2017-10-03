@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)](../JS_API/enable_JS_API.html#) and authenticate to ThoughtSpot.
 

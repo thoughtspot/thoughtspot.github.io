@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "All jobs on your cluster will appear on the Jobs Management page. You can also view jobs for individual pinboards under the pinboard Actions dropdown."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 The **Jobs Management** page found on the **Admin** section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards. Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
@@ -41,4 +42,4 @@ And the total number of recipients for a scheduled pinboard job cannot exceed th
 
 ## Related information
 
-For information on creating a pinboard, see the [Schedule a pinboard job](/pages/admin/manage_jobs/schedule_a_pinboard_job.html).
+For information on creating a pinboard, see the [Schedule a pinboard job](/admin/manage_jobs/schedule_a_pinboard_job.html).

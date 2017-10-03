@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Modeling includes setting basic information for a data column such as its name, description, and type."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 Basic information for a data column is its **NAME**, **DESCRIPTION**, and **TYPE**. All of these can influence how a user experiences your data. For example, the **DESCRIPTION** appears as a "tip" when a user hovers over a column. So it is the means for helping users understand where the data comes from.

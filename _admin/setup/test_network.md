@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Verify your network is properly configured for the application."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This procedure tests the network connectivity between the ThoughtSpot nodes, and to the LAN. If you can perform these steps successfully, the network settings on ThoughtSpot are correct.
 

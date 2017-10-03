@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use SSIS to set up the ODBC Driver."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination.
 

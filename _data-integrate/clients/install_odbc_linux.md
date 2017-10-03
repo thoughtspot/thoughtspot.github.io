@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Linux ODBC driver and install it."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 It is important to note the following about the ODBC login information:

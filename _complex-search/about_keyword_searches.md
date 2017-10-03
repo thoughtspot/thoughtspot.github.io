@@ -5,8 +5,9 @@ keywords: tbd
 last_updated: tbd
 summary: "Use keywords when asking a question to narrow and further define your search."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
-In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references](/pages/reference/keyword_reference.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
+In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references](/reference/keyword_reference.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
 
  ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
 
@@ -61,6 +62,6 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
 ## Related information  
 
-- [Keyword reference](/pages/reference/keyword_reference.html#)
+- [Keyword reference](/reference/keyword_reference.html#)
 - [Search using growth over time](/complex-search/search_using_growth_over_time.html)  
-- [Geographical proximity keywords "near" and "farther than"](/pages/admin/features/proximity_search.html)  
+- [Geographical proximity keywords "near" and "farther than"](/admin/features/proximity_search.html)  

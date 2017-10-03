@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can change the background color to match with your company's theme. The custom background color is in effect when using the API to embed visualizations and pinboards.
 

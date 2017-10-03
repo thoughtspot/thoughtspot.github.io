@@ -5,6 +5,7 @@ keywords: case,"data load",configure,lowercase,uppercase
 last_updated: tbd
 summary: "You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before you load your data, you should consider the type of casing you would like
 your data to reflect. The case sensitivity for source data strings is preserved

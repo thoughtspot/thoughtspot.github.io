@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "To successfully use ODBC, following these best practices is recommended."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 When developing tools that use the ODBC driver, use these best practices:

@@ -5,6 +5,7 @@ keywords: "inclusion rule, table, join"
 last_updated: tbd
 summary: "Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 In the case where some of the rows in a fact table do not have a match in any
 dimension tables, the inclusion rule determines whether or not the rows are

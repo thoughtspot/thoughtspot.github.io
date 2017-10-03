@@ -5,6 +5,7 @@ keywords: LDAP, "Active Directory"
 last_updated: tbd
 summary: "Use this procedure to set up integration with LDAP using Active Directory."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before you configure LDAP for Active Directory, collect this information:
 

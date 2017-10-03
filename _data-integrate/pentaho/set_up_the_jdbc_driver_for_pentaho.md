@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "JDBC to connect to the Falcon Simba server from Pentaho."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Use JDBC to connect to the Falcon Simba server from Pentaho. The connection will be made between a new Falcon Table Input and Output objects.
 

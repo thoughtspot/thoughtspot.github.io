@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You authenticate users against an LDAP server. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Some companies use LDAP (Lightweight Directory Access Protocol) to manage user authentication. Using LDAP provides security and makes user management more centralized. You can choose to authenticate users against an LDAP server, against ThoughtSpot, or both.
 

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Learn about SSIS a data warehousing tool can be used for data ETL."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 # About Microsoft SSIS
 

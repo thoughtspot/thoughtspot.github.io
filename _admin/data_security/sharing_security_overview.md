@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Sharing and security privileges govern what data a user can access and what they can do with the data. Admins can use privileges to regulate access to information and provide a personalized user experience.
 
@@ -37,5 +38,5 @@ ThoughtSpot includes robust row level security, which allows you to filter all o
 
 ## Related information
 
--   [Revoke access (unshare)](/pages/admin/data_security/unshare.html)  
--   [Row level security](/pages/admin/data_security/about_row_security.html)  
+-   [Revoke access (unshare)](/admin/data_security/unshare.html)  
+-   [Row level security](/admin/data_security/about_row_security.html)  

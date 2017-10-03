@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "When you try to delete a worksheet or table, you'll see a message listing any dependent objects that must be removed first."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot checks for dependencies whenever you try to remove a table or worksheet. A list of dependent objects is shown, and you can click on them to delete them or remove the dependency. Then you'll be able to remove the table or worksheet.
 

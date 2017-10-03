@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can show growth over time by using the growth of keyword in your search. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The `growth of` keyword compares the data from different date periods, and returns a percentage of growth. To search using growth over time:
 

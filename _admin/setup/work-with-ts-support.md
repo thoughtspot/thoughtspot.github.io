@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Set up and configure ThoughtSpot support services for your installation."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 There are several configurations you can set up in your installation to ensure your company's support from ThoughtSpot works smoothly.

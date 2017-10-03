@@ -5,6 +5,7 @@ keywords: search,worksheet,aggregated
 last_updated: tbd
 summary: "If you want to search on top of another search, try saving your search as a worksheet. Then, you can use the saved worksheet as a data source for a new search."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Worksheets can be created from tables or from searching. You can also create a
 worksheet from a search. This is an advanced form of searching. A worksheet

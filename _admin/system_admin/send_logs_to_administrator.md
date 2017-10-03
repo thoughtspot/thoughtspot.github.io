@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can generate a log bundle which you can then send to ThoughtSpot Support or you can send logs direct to your administrator.
 

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before synchronizing users and groups, you will need this information:
 

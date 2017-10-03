@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can configure Active Directory Federated Services \(AD FS\) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS.
 

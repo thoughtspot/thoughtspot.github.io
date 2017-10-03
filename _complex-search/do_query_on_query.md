@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 After creating a worksheet from a search (also called an aggregated worksheet) and linking it to related data, you're ready to create your new search. To do a search on the aggregated worksheet, along with any data sources you linked:
 

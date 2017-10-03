@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can use your answer to learn more about the data used in your search."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Drilling down allows you to see more information about the columns used within your search. To drill down:
 

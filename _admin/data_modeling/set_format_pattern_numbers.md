@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Explains how to set key formats for column values."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.
 
@@ -43,7 +44,7 @@ Number formatting is set by default based on your browser locale setting. This h
 
 ## Date format
 
-You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**. You can use any of the supported date formats listed in the [Date and time formats reference](/pages/reference/date_formats_for_loading.html#). These are some examples of formats you can use:
+You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**. You can use any of the supported date formats listed in the [Date and time formats reference](/reference/date_formats_for_loading.html#). These are some examples of formats you can use:
 
 -   `MM/dd/yyyy`
 -   `MMM` (for abbreviated month format)

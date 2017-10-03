@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Date formulas are useful when you want to compare data collected between two date periods. Date formulas allow you to apply date related functions to your formulas. The date functions include:
 

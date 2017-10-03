@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
 "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To support high availability, your ThoughtSpot instance must have at least three nodes. In a three or more node system, if one node fails, its services will be distributed to the other nodes. The failover is automatic. However, when a node fails, you should contact ThoughtSpot Support about replacing the node when possible.
 

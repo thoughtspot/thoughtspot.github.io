@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Cumulative formulas are aggregate formulas."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Cumulative formulas that allow you to calculate the average, max, min, or sum or
 your data over time. Although we usually talk about cumulative formulas over

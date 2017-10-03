@@ -5,6 +5,7 @@ keywords: data,cluster,memory,import,tsload
 last_updated: tbd
 summary: "Make sure you understand the performance considerations in your instalaltion."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot is configured and licensed by memory availability. However, there
 are other considerations that will impact the performance of your solution. It’s

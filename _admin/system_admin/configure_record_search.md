@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can use the recording to create training for your users on how to search your own data."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Recording a search replay requires administrator privileges and a Firefox browser. You must override some of your browser security settings in order to use the ThoughtSpot application to make the recording. This is a one time setup operation. If you do not wish to do this, you can replay the search and record it using QuickTime, Camtasia, or another screen cam recording tool.
 

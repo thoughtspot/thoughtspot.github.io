@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The schema creation script is a text file that contains all the SQL commands to create your schema. Comments should be enclosed in the comment tags /\* and \*/.
 
@@ -40,7 +41,7 @@ cat safest_script_ever.sql | tql --allow_unsafe
 8. Run the script using one of these methods:
 
     -   [Import a schema (use the SQL editor)](upload_sql_script.html#).
-    -   [Log in to the shell](/pages/admin/setup/logins.html#ssh-to-the-appliance), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
+    -   [Log in to the shell](/admin/setup/logins.html#ssh-to-the-appliance), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
     ```
     $ cat create_schema.sql | tql
     ```

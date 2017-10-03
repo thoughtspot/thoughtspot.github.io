@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The "near" and "farther than" keywords provide proximity searches. First, you'll need to designate the longitude and latitude columns as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
 

@@ -5,6 +5,7 @@ keywords: "ETL,data types, Administrative Regions"
 last_updated: tbd
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before you import data, compare the data types you want to load with these supported data types. Then, convert your data before loading it. Typically, you would export the data, transform it to meet these type rules, and then load the data. This is known as an extract-transform-load process.
 

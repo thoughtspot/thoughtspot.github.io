@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Correct schema not found errors."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 When connecting with ODBC, you need to specify both the database and schema to connect to. If no schema is supplied, you will get an error indicating that the schema could not be found.
 

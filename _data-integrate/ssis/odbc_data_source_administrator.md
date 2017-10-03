@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use ODBC to modify log in options and troubleshoot ODBC issues."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The ODBC Data Source Administrator can be used to modify log in options and troubleshoot ODBC issues.
 

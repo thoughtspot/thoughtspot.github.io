@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This procedure walks you through creating a worksheet from a search. To create a worksheet from a search (i.e. an aggregated worksheet):
 

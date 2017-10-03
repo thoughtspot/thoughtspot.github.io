@@ -5,6 +5,7 @@ keywords: "chasm trap,many-to-one,joins"
 last_updated: tbd
 summary: "A chasm trap occurs when two many-to-one joins converge on a single table."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 In a complex schema, you may have a fact table with no relationship to another fact table, except that each contains a foreign key to a shared dimension table. This is known as a chasm trap, and ThoughtSpot can handle it!
 

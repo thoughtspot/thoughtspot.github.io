@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "How to configure the JDBC driver. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To use the JDBC driver, include the JDBC library in your path, and provide the connection information. You need this information to configure the JDBC driver:
 

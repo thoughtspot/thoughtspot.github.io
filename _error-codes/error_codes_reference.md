@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "List of error codes and messages."
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This section lists error codes that can appear in ThoughtSpot, with summary information and actions to take.
 Error codes and messages are shown in ThoughtSpot when something goes wrong. These messages can appear in the application and in logs.

@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Required and provided installation hardware."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 This section lists all required hardware that is needed to successfully install your ThoughtSpot appliance in your data center. Some hardware will be provided with your appliance, while the rest must be provided on-site.

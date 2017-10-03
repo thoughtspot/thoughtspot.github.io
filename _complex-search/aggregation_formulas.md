@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.
 

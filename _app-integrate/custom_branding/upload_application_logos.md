@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can replace the ThoughtSpot logo, wherever it appears in the ThoughtSpot web application, with your own company logo."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To upload your own default and wide application logos:
 

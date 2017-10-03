@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can download your search as either a table or chart."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You have the option to download your table as a CSV (comma separated values), PDF, or XLSX (Excel) file. When you download a chart, it will be a PNG file. To download your search:
 

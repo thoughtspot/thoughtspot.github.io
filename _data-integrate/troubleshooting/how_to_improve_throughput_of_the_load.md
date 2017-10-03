@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Adjusting the transaction size may correct poor performance and low throughput."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The transaction/commit size value can improve the throughput of the load when setting up the ODBC Driver.
 

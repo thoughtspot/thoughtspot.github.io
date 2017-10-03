@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "What is in the box."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The ThoughtSpot appliance hardware will be installed in a rack in your data center. This section describes the typical physical configuration.
 

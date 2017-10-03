@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot uses open source libraries. You may request the machine-readable source code from ThoughtSpot and may use the source code subject to the terms and conditions of the applicable open source license.
 

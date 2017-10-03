@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Configure logging parameter strings."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To enable logging for JDBC, add the logging parameters to the connect string. Logs are stored on ThoughtSpot. Before enabling JDBC logging, you will need:
 

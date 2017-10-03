@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit many of these settings.
 

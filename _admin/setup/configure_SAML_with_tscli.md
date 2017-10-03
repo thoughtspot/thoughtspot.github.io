@@ -5,6 +5,7 @@ keywords: SAML, ldap, AD, security
 last_updated: tbd
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 You can set up SAML through the shell on ThoughtSpot using a `tscli` based configurator.

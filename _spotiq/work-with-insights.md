@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 At this point, you have done [the first set of SpotIQ tutorial tasks](), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
@@ -112,5 +113,5 @@ this, do the following:
 In this section, you explored some of the functionality of the **INSIGHTS**
 page. You learned how you can edit an insight to customize how it looks or even
 the **Search** syntax behind it.  In [the next
-section](/pages/spotiq/special-topics.html), you'll learn how to schedule SpotIQ
+section](/spotiq/special-topics.html), you'll learn how to schedule SpotIQ
 to deliver insights on a regular basis.

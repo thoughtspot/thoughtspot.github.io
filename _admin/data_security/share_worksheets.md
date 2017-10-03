@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 When you share a worksheet, all of its columns are shared. Sharing a worksheet does not share the underlying tables. If you want to share the underlying tables, see [Share tables and columns](share_source_tables.html#). A worksheet can be shared by the owner of the worksheet, or by an administrator. Users can start searching a worksheet as soon as the worksheet is shared with them.
 

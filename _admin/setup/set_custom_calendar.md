@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can customize your fiscal calendar to start in month other than January."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 By default, the application's fiscal calendar in January. If your company's calendar year starts in another month, setting a fiscal calendar quarter makes the ThoughtSpot date searches reflect your fiscal year.
 

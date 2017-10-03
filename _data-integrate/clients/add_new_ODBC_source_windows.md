@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can add multiple ODBC data sources."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can add multiple ThoughtSpot data sources to your ODBC configuration. This capability supports connecting to multiple ThoughtSpot instances.
 

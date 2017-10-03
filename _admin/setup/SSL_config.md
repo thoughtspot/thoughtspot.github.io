@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "SSL provides authentication and data security"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 

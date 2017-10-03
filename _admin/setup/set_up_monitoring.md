@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Setting up monitoring is a one time operation."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.
 

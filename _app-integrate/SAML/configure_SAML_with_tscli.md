@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot can use Security Assertion Markup Language \(SAML\) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a tscli based configurator.
 

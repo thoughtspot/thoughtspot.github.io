@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Moving formulas can be used to smooth out any irregularities in your data to
 easily recognize trends. The larger the interval you set, the more the peaks and

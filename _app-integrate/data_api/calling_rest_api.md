@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 To call the REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
 

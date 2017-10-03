@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Legacy Row Level Security (RLS) is a deprecated feature. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 {% include note.html content="Starting in release 3.3, if you have existing legacy Row Level Security (RLS) built on a chasm trap schema, you'll need to migrate to the new row level security before you can use them anymore. If you were still using Legacy Row Level Security, after upgrading to 3.3.x, you cannot access any of those worksheets and a message advising you to migrate to the newer Rule-Based RLS displays.  

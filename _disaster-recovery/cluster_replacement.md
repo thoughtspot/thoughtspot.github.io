@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Cluster replacement can be achieved using a mirrored system architecture. This allows you to recover an entire system very quickly without data loss."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You have the option of architecting your system for fast recovery from a disaster in which you lose an entire ThoughtSpot instance. This involves running two ThoughtSpot appliances in a mirrored configuration. This configuration is used in mission critical systems or for business processes in which ThoughtSpot data has been operationalized.
 
@@ -17,7 +18,7 @@ In this configuration, the primary initiates periodic full backups of itself. It
 
  ![]({{ site.baseurl }}/images/Disaster_recovery.png "A ThoughtSpot disaster recovery configuration")
 
--   **[Mount a NAS file system](/pages/admin/setup/NAS_mount.html)**  
+-   **[Mount a NAS file system](/admin/setup/NAS_mount.html)**  
 Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS \(network attached storage\) file system for these operations.
 -   **[Set up a disaster recovery configuration](/disaster-recovery/disaster_recovery/set_up_DR_config.html)**  
 Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance.

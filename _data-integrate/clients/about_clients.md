@@ -6,6 +6,7 @@ last_updated: tbd
 toc: false
 summary: "Clients help you to load data easily from your ETL tool or another database."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot provides certified clients to help you load data easily from your ETL tool or another database. These include ODBC and JDBC drivers.
 

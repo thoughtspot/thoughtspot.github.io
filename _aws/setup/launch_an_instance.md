@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "blerg"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 After you've determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot.

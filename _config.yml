@@ -52,36 +52,31 @@ kramdown:
 
 collections:
   admin:
-   output: true
+    output: true
   advanced-search:
-   output: true
+    output: true
   app-integrate:
-   output: true
+    output: true
   appliance:
-   output: true
+    output: true
   aws:
-   output: true
-  code-sample:
-   output: true
+    output: true
   complex-search:
-   output: true
-  data:
-   output: true
+    output: true
+  data-connect:
+    output: true
   data-integrate:
-   output: true
-  data_connect:
-   output: true
+    output: true
   disaster-recovery:
-   output: true
-  end_user:
-   output: true
+    output: true
+  end-user:
+    output: true
   error-codes:
-   output: true
+    output: true
   reference:
-   output: true
+    output: true
   spotiq:
-   output: true
-
+    output: true
 
 defaults:
   - values:
@@ -94,7 +89,9 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
+- home_sidebar
 - mydoc_sidebar
+- other
 
 
 # FEEDBACK Settings

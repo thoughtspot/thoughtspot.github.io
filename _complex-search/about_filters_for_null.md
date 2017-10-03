@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Filtering on NULL and empty values is a special case. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what's really going on with these types of values, and to get the filtering behavior you want.
 

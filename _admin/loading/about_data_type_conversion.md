@@ -5,6 +5,7 @@ keywords: "TQL,SQL, data types"
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 There are some details you should be aware of when doing a data type conversion.
 

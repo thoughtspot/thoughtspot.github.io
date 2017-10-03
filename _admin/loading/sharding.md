@@ -5,6 +5,7 @@ keywords: sharding,partitioning,distribution
 last_updated: tbd
 summary: "Sharding is a type of database partitioning that separates very large databases the into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 For the best performance, you should split (or shard) very large tables across
 nodes. If you have a large dimension table, you might choose to co-shard it with

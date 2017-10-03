@@ -4,6 +4,7 @@ tags:
 keywords: "user, delete, add, edit, manage"
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. If a user has access through LDAP, that user's information is managed via your LDAP installation.  If you create a user manually in ThoughtSpot, you manage that user in ThoughtSpot.

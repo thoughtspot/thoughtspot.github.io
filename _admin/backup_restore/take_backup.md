@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Use this procedure when you want to manually create a backup. If you would like to restore from a backup, contact ThoughtSpot Support.
 

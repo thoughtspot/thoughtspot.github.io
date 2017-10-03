@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "This procedure allows you to test the LDAP connection you created.
 "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 After configuring LDAP, you can test to make sure it is working by issuing a command.
 

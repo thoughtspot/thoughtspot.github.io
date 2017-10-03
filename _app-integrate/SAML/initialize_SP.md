@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "This procedure shows how to initialize the Service Provider (SP) metadata for AD FS."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This is the second part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the [overview](integrate_ADFS.html#) of the entire process of integrating with AD FS.
 

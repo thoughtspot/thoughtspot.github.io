@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can delete a data source in the web browser or using ThoughtSpot SQL Command Line (TQL)."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 When you enter a TQL statement, the system warns you of possible dependency
 consequences with a prompt asking if you’d like to proceed. This should make you

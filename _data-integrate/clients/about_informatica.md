@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use the ThoughtSpot Informatica Cloud connector to read and write data."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can use the ThoughtSpot Informatica Cloud connector to read and write data between ThoughtSpot and Informatica. The connector supports INSERT, UPSERT, and READ operations. Once the connecter is downloaded, you can enter your company's ThoughtSpot cluster information and conduct data transfers.
 

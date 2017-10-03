@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Explains the process for setting RLS rules."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Setting row level security is a three steps process:
 

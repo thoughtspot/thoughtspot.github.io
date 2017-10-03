@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can change the way a column is indexed by modifying its **Index** value in the modeling file, to influence the suggestions that will appear for that column. The default behavior of indexing is as follows:
 

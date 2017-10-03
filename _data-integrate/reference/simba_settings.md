@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Lists the properties you can set for ODBC or JDBC connections"
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This section lists the properties you can set for ODBC or JDBC connections.
 

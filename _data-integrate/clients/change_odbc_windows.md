@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC Administrator to change the ODBC configuration."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Once installation is complete, you can use the ODBC Administrator to change the ODBC configuration. For example, you may want to add a default schema or change the server IP address or the default database.
 

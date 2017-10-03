@@ -5,6 +5,7 @@ keywords: "worksheet, join, inclusion rule"
 last_updated: tbd
 summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 If you find that the charts and tables built on a worksheet contain a large

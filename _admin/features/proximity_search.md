@@ -5,6 +5,7 @@ keywords: within,near,"farther than",proximity,geo,search
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Proximity keywords allow you to search search and then show on map (via search)
 all instances of a measure near an attribute's associated lat/long coordinates

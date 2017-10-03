@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Nested formulas, or formula on formula, allow you to reference a formula within
 another formula. This graphic illustrates how you would define a formula and

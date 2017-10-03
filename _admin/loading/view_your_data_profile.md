@@ -4,6 +4,7 @@ tags:
 keywords: CSV,profile,data
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 After you upload a CSV file, it is available as a table in ThoughtSpot. The

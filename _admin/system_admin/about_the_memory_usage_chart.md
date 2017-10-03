@@ -4,6 +4,7 @@ tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The Space Utilization chart is one of the available charts for you to use when checking the cluster overview. You can find the chart in the **Overview** section of the System Health center. This line chart displays the total used space, which consists of raw uncompressed data, including replication.
 

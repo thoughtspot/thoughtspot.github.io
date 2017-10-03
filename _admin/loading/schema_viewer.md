@@ -5,6 +5,7 @@ keywords: schema viewer, relationships, keys, worksheet
 last_updated: tbd
 summary: "Use the schema viewer to see tables and worksheets and their relationships. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 There is a schema viewer in ThoughtSpot which lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see.
 

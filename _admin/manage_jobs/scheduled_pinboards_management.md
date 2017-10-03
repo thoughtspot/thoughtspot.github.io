@@ -5,6 +5,7 @@ keywords: "pinboard,schedule,management"
 last_updated: tbd
 summary: "You can manage all scheduled pinboards on the Jobs Management page under Admin."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Users who are not admins, but have can schedule pinboard privilege, can only view pinboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. Contact ThoughtSpot Support if you'd like to increase this limit.
 

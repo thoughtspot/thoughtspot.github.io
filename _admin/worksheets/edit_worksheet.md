@@ -5,6 +5,7 @@ keywords: "worksheet,edit"
 last_updated: tbd
 summary: "A worksheet can be edited by anyone with the proper permissions."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Yu can always go into a worksheet and make changes such as adding sources and columns, adding or editing formulas, and changing column names. You can also rename a worksheet.
 
@@ -46,4 +47,4 @@ To change the name of a worksheet or table:
 
 ## Related information
 
-[Change the inclusion or join rule for a worksheet](/pages/admin/worksheets/change_inclusion_rule.html)
+[Change the inclusion or join rule for a worksheet](/admin/worksheets/change_inclusion_rule.html)

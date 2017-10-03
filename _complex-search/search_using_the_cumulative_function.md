@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Use the cumulative function in a search to measure from the start of your data to the current point."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 This example demonstrates using the cumulative_sum formula, also known as a running total. To use the cumulative function in a search:
 

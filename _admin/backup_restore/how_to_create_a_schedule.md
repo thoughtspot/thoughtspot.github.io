@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Explains how schedules and gives examples."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic backup policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section useful for understanding how to understand existing schedules and how to configure new schedules.
 

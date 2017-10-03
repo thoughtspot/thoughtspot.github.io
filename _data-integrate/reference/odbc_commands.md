@@ -5,6 +5,7 @@ keywords: tbd
 last_updated: tbd
 summary: "ODBC driver supports a limited set of SQL commands."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 The ODBC driver supports a limited set of SQL commands. When developing software that uses the ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC driver.
 

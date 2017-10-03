@@ -6,6 +6,7 @@ last_updated: tbd
 summary: "ThoughtSpot does all analysis against data in memory to help achieve
 fast results across millions and billions of records of data."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and
 ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or

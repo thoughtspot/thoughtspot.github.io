@@ -6,6 +6,7 @@ toc: false
 last_updated: tbd
 summary: "The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 
 The **Attribution Dimension** setting only applies to tables that join over a [Chasm Trap](../loading/chasm_trap.html#). By default, the attribution dimension setting will be set to **Yes**, but you can override that by setting the column's attribution dimension property to **No**, as described here.

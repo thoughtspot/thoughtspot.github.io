@@ -5,12 +5,13 @@ keywords: tbd
 last_updated: tbd
 summary: "Use rule-based RLS to protect your data so that users see only those rows they are allowed to see based on their group membership."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Row level security works at the group level, not the individual user level. By default, all groups can see all rows for any table they can view. You can limit the rows a group can see by setting rules based on the data values contained in one or more columns. The row level security rules you define on a table also apply to any worksheets and pinboards based on that table.
 
 For each data source (table or imported data), you will define one or more rules that govern which groups can see which data. The rules take the form of an expression which is evaluated for each row and group combination, to decide if that group can see that row. If the expression evaluates to "true", for a particular group, they will be able to see that row.
 
-For a list of operators and functions you can use to build these expressions see [Row level security rules reference](/pages/reference/rls_rule_builder_reference.html#).
+For a list of operators and functions you can use to build these expressions see [Row level security rules reference](/reference/rls_rule_builder_reference.html#).
 
 ## Best practices for using Rule-Based Row Level Security
 

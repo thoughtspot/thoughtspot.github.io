@@ -5,6 +5,7 @@ keywords: "job,pinboard,schedule"
 last_updated: tbd
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You can add multiple schedules with different configurations for a single pinboard. However, each job is limited to one pinboard schedule. In order to add a schedule, you must have administrator or can schedule pinboard privilege, and at least edit-only and view-only access to the pinboard.
 

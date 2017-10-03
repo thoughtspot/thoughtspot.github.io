@@ -5,10 +5,11 @@ keywords: "formulas,worksheets"
 last_updated: tbd
 summary: "You can define formulas and use them to create derived columns in worksheets. "
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 You create formulas by combining standard functions and operators, column names, and constant values.
 
-Anyone who can create a worksheet can add a formula to it. Formulas are not reusable; the formula you create is associated only with the worksheet it belongs to. A complete list of available formulas and examples of each is available in the [Formula reference](/pages/reference/formula_reference.html#).
+Anyone who can create a worksheet can add a formula to it. Formulas are not reusable; the formula you create is associated only with the worksheet it belongs to. A complete list of available formulas and examples of each is available in the [Formula reference](/reference/formula_reference.html#).
 
 You can create a formula in a worksheet by using the Formula Builder. When you do this, the result of the formula gets added to the worksheet as a column. Use these steps to create a formula:
 

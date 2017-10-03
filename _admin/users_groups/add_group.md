@@ -5,6 +5,7 @@ keywords: "group,user,privileges"
 last_updated: tbd
 summary: "Good planning when creating groups and assigning privileges will pay off in ease of administration and a better search experience."
 sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
 ---
 Before adding users, create the groups they will belong to. Each group includes a set of privileges for its users.
 
