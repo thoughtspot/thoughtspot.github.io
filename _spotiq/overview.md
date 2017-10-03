@@ -23,7 +23,7 @@ You can use SpotIQ with any of the data in your system, not just CSV loaded data
 This tutorial uses a dataset containing a list of sales and movement data by
 item and department.
 
-1. Download the [Warehouse_and_Retail_Sales](/code-sample/Warehouse_and_Retail_Sales.csv) CSV file.
+1. Download the [Warehouse_and_Retail_Sales](/resources/Warehouse_and_Retail_Sales.csv) CSV file.
 2. Save or move the file to a place on your local drive..
 
 ## Upload the data

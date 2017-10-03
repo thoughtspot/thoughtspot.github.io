@@ -15,7 +15,7 @@ When you add a value to your search, it becomes a filter. To add a filter from t
 
     ![]({{ site.baseurl }}/images/filter_from_the_search_bar.png "Filter from the search bar")
 
-    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](/reference/keyword_reference.html#).
+    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](/reference/keywords.html#).
 
 2. Click outside of the search bar or push enter to apply your filter.
 

@@ -59,7 +59,7 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 
 -   The column name: like revenue, product name, or store
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
--   One of the special [keywords](/reference/keyword_reference.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
+-   One of the special [keywords](/reference/keywords.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
 
 ## What does a search result in?
 
