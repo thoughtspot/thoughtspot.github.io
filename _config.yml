@@ -33,6 +33,10 @@ exclude:
   - pdf-product2.sh
   - update.sh
 
+include:
+  - images
+  - index.html
+
 # File Formatting
 # Markdown processor. Kramdown differs from github-flavored markdown in some subtle ways
 
