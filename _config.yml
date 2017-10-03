@@ -1,7 +1,7 @@
 
 # Site Settings
 locale                   : "en"
-destination              : ./docs
+destination              : ./_site
 output                   : web # used for conditional content filtering
 description              : "An example site and repo for controlling versions of a web site."
 url                      : https://docs.thoughtspot.com # the base hostname & protocol for the site
@@ -51,12 +51,37 @@ kramdown:
 # Colleciton Settings
 
 collections:
+  admin:
+   output: true
+  advanced-search:
+   output: true
+  app-integrate:
+   output: true
+  appliance:
+   output: true
+  aws:
+   output: true
+  code-sample:
+   output: true
+  complex-search:
+   output: true
+  data:
+   output: true
+  data-integrate:
+   output: true
   data_connect:
-    output: true
-  error_code:
+   output: true
+  disaster-recovery:
+   output: true
+  end_user:
+   output: true
+  error-codes:
    output: true
   reference:
    output: true
+  spotiq:
+   output: true
+
 
 defaults:
   - values:

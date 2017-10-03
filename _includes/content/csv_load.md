@@ -3,11 +3,11 @@ Any user who belongs to a group that has the privilege **Has administration priv
 1. Log into ThoughtSpot from a browser.
 2. Click on **DATA**, on the top navigation bar.
 
-   ![](/pages/images/data_icon.png "Data")
+   ![]({{ site.baseurl }}/images/data_icon.png "Data")
 
 3. Click the **Actions** button in the upper right corner, and select **Upload Data**.
 
-   ![](/pages/images/new_imported_data.png "Upload data")
+   ![]({{ site.baseurl }}/images/new_imported_data.png "Upload data")
 
 4. Upload the CSV or Excel file by doing one of these options:
     1. Click on **Browse your files** and select the file.
@@ -21,7 +21,7 @@ Any user who belongs to a group that has the privilege **Has administration priv
 
     When an upload is complete, the system reports the results and offers you some further actions.
 
-     ![](/pages/images/spotiq-upload.png "Auto Analyse")
+     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto Analyse")
 
     * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Search** if you want to begin a new search.

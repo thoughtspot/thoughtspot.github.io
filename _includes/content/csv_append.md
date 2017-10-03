@@ -5,12 +5,12 @@ To append data into ThoughtSpot:
 1.   Log in to ThoughtSpot from a browser.
 2.   Click on **Data**, on the top navigation bar.
 
-     ![](/pages/images/data_icon.png "Data")
+     ![]({{ site.baseurl }}/images/data_icon.png "Data")
 
 3.   Click the on the table you would like to append data to.
 4.   Click the **Load data** button.
 
-     ![](/pages/images/load_data_icon.png "Load data")
+     ![]({{ site.baseurl }}/images/load_data_icon.png "Load data")
 
 5. Upload the CSV or Excel file by doing one of these options:
     -   Click on **Browse your files** and select the file.
