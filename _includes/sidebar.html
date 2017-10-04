@@ -13,9 +13,9 @@
                 {% if sectionitem.external_url %}
                  <li ><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
                 {% elsif page.url == sectionitem.url %}
-                  <li class="active"><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
+                  <li class="active"><a href="{{sectionitem.url | relative_url }}">{{sectionitem.title}}</a></li>
                 {% else %}
-                  <li><a href="{{sectionitem.url }}">{{sectionitem.title}}</a></li>
+                  <li><a href="{{sectionitem.url | relative_url }}">{{sectionitem.title}}</a></li>
                 {% endif %}
               {% elsif sectionitem.levelTwoTitle and sectionitem.output contains "web" %}
               <li class="levelTwo">
@@ -26,9 +26,9 @@
                       {% if level2item.external_url %}
                           <li><a href="{{level2item.external_url}}" target="_blank">{{level2item.title}}</a></li>
                       {% elsif page.url == level2item.url %}
-                          <li class="active"><a href="{{level2item.url }}">{{level2item.title}}</a></li>
+                          <li class="active"><a href="{{level2item.url | relative_url }}">{{level2item.title}}</a></li>
                       {% else %}
-                          <li><a href="{{level2item.url }}">{{level2item.title}}</a></li>
+                          <li><a href="{{level2item.url | relative_url }}">{{level2item.title}}</a></li>
                       {% endif %}
                    {% elsif level2item.levelThreeTitle and level2item.output contains "web" %}
                    <li class="levelThree">
@@ -39,9 +39,9 @@
                               {% if level3item.external_url %}
                                   <li><a href="{{level3item.external_url}}" target="_blank">{{level3item.title}}</a></li>
                               {% elsif page.url == level3item.url %}
-                                  <li class="active"><a href="{{level3item.url }}">{{level3item.title}}</a></li>
+                                  <li class="active"><a href="{{level3item.url | relative_url }}">{{level3item.title}}</a></li>
                               {% else %}
-                                  <li><a href="{{level3item.url }}">{{level3item.title}}</a></li>
+                                  <li><a href="{{level3item.url | relative_url }}">{{level3item.title}}</a></li>
                               {% endif %}
                             {% endif %}
                         {% endfor %}
