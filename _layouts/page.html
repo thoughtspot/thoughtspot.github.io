@@ -41,11 +41,13 @@ layout: default
   {{content}}
   <div class="tags">
     <div style="float:right;">
+      {% if site.baseurl %}
         {% if site.github_editme_path %}
 
-        <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.section}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/{{site.github_editme_path}}{{ site.baseurl }}/{% unless page.url contains "index.html" %}{% endunless %}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         {% endif %}
+      {% endif %}
     </div>
     <div >
         {% if page.tags != null %}
