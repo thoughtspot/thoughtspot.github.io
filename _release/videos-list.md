@@ -1,6 +1,7 @@
 ---
 title: ["More Videos"]
 keywords: tbd
+toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

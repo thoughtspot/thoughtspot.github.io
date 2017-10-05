@@ -1,7 +1,7 @@
 ---
 title: ["Downloads for ThoughtSpot"]
-tags:
-keywords: tbd
+toc: false
+keywords: downloads, source, install
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

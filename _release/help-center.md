@@ -1,6 +1,7 @@
 ---
 title: ["Help Center"]
-keywords: tbd
+keywords: help, center, thoughtspot
+toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
