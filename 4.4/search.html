@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="description" content="To provide richer insights, you can add a formula to your search. ">
-<meta name="keywords" content=" tbd">
-<title>Understand formulas in searches | ThoughtSpot Documentation</title>
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Search results | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -126,22 +126,14 @@
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
+                    <div id="search">
+                        <form style="margin-top: 15px;" action="/search.html" method="GET">
+                          <input class="input" name="q" placeholder="Search...">
+                        </form>
+                        <!-- <input type="text" id="search-input" place/holder="search..."> -->
+                        <!-- <ul id="results-container"></ul> -->
                     </div>
-                    <script src="https://docs.thoughtspot.com/4.4/js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'https://docs.thoughtspot.com/4.4/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="["Understand formulas in searches"]">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
+
                     <!--end search-->
                 </li>
             </ul>
@@ -2637,101 +2629,21 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <div class="post-header">
-   <h1 class="post-title-main">Understand formulas in searches</h1>
-</div>
+            <h2 id="search-results">Search results</h2>
 
-
-
-<div class="post-content">
-
-   
-    <div class="summary">To provide richer insights, you can add a formula to your search. </div>
-   
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
 <script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
+     (function() {
+       var cx = '009143652178737222860:o0t5z79dldy';
+       var gcse = document.createElement('script');
+       gcse.type = 'text/javascript';
+       gcse.async = true;
+       gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(gcse, s);
+     })();
+   </script>
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
-
-    
-
-  <p>The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.</p>
-
-<p>You can create a formula from directly within a search. If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet. Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.</p>
-
-<p>Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the <strong>Edit</strong> privilege, other people can see the formula results, too. In order to make edits to the formula, they also need to have the <strong>Edit</strong> privilege on the underlying data.</p>
-
-<ul>
-  <li><strong><a href="/complex-search/how_to_add_formula.html">Add a formula to a search</a></strong><br />
-You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add if…then…else logic.</li>
-  <li><strong><a href="/complex-search/edit_formula_in_answer.html">View or edit a formula in a search</a></strong><br />
-You can always go back and view or edit a formula that has been added to a search. Do this by clicking the edit icon next to its name in the <strong>Columns</strong> listing.</li>
-  <li><strong><a href="/complex-search/aggregation_formulas.html">About aggregate formulas</a></strong><br />
-When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.</li>
-  <li><strong><a href="/complex-search/conversion_formulas.html">About conversion formulas</a></strong><br />
-Some formulas require the input to be of a particular data type. If you find that you want to pass a value to the function, but it is of the wrong data type, you can convert it using a conversion formula.</li>
-  <li><strong><a href="/advanced-search/formulas/about_date_formulas.html">About date formulas</a></strong><br />
-Date formulas allow you to apply date related functions to your formulas.</li>
-  <li><strong><a href="/advanced-search/formulas/about_percent_calculations.html">About percent (simple number) calculations</a></strong><br />
-You can use simple number functions to perform useful percent calculations.</li>
-  <li><strong><a href="/advanced-search/formulas/conditional_sum.html">About conditional formulas (operators)</a></strong><br />
-Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas.</li>
-  <li><strong><a href="/complex-search/about_nested_formulas.html">About nested formulas</a></strong><br />
-Nested formulas, or formula on formula, allow you to reference a formula within another formula.</li>
-  <li><strong><a href="/complex-search/about_formula_support_for_chasm_trap_schemas.html">About formula support for chasm trap schemas</a></strong><br />
-You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.</li>
-</ul>
-
-  <div class="tags">
-    <div style="float:right;">
-      
-        
-
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/pages/complex_searches/add_formula_to_search.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-
-        
-      
-    </div>
-    <div >
-        
-    </div>
-</div>
-
-
-
-</div>
-
-<hr class="shaded"/>
-
-<footer>
-            <div class="row">
-                <div class="col-lg-12 footer">
-               &copy;2017 ThoughtSpot. All rights reserved. <br />
-<span>Page last updated:</span> tbd<br/> Site last generated: Oct 4, 2017 <br />
-<p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
-                </div>
-            </div>
-</footer>
-
+<gcse:searchresults-only></gcse:searchresults-only>
 
         </div>
     <!-- /.row -->

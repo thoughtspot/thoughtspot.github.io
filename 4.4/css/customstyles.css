@@ -1,3 +1,31 @@
+## search
+
+div.gsc-control-cse {
+    max-width: 100%;
+}
+
+## help center
+
+div.links{
+    width: 86%;
+    padding-left: 7%;
+    height: 500px;
+    white-space:nowrap;
+    align-self: stretch !important
+}
+.linksChild{
+    width: 150px;
+    height: 200px;
+    display:inline-block;
+    margin-left:4px;
+}
+
+.helpImg {
+    max-width: 75px !important;
+    padding-left: 7px;
+}
+
+## End: help center
 
 h1.indexTitle {
   margin-bottom: 43px;
@@ -164,17 +192,6 @@ padding-top: 60px;
 margin-top: -40px
 }
 
-.post-content img {
-    margin: 12px 0px 3px 0px;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.post-content ol li, .post-content ul li {
-    margin: 10px 0px;
-}
 
 .pageSummary {
     font-size:13px;
@@ -278,7 +295,7 @@ p.post-meta {font-size: 80%; color: #777;}
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
 /* search area */
-#search-demo-container ul#results-container {
+#search ul#results-container {
     list-style: none;
     font-size: 12px;
     background-color: white;
@@ -300,7 +317,7 @@ ul#results-container a:hover {
 }
 
 
-#search-demo-container a:hover {
+#search a:hover {
     color: black;
 }
 #search-input {
@@ -361,19 +378,9 @@ li.dropdownActive a {
     font-weight: bold;
 }
 
-
-.post-content a.fa-rss {
-    color: orange;
-}
-
-
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
-}
-
-.post-content .rssfeedLink {
-    color: #248EC2;
 }
 
 footer {

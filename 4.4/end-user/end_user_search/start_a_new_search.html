@@ -126,22 +126,14 @@
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
+                    <div id="search">
+                        <form style="margin-top: 15px;" action="/search.html" method="GET">
+                          <input class="input" name="q" placeholder="Search...">
+                        </form>
+                        <!-- <input type="text" id="search-input" place/holder="search..."> -->
+                        <!-- <ul id="results-container"></ul> -->
                     </div>
-                    <script src="https://docs.thoughtspot.com/4.4/js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'https://docs.thoughtspot.com/4.4/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="["Start a new search"]">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
+
                     <!--end search-->
                 </li>
             </ul>
@@ -2735,7 +2727,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 ThoughtSpot. All rights reserved. <br />
-<span>Page last updated:</span> tbd<br/> Site last generated: Oct 4, 2017 <br />
+<span>Page last updated:</span> tbd<br/> Site last generated: Oct 5, 2017 <br />
 <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

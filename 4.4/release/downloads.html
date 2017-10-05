@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="">
 <meta name="keywords" content=",  tbd">
-<title>Downloads | ThoughtSpot Documentation</title>
+<title>Downloads for ThoughtSpot | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -126,22 +126,14 @@
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
+                    <div id="search">
+                        <form style="margin-top: 15px;" action="/search.html" method="GET">
+                          <input class="input" name="q" placeholder="Search...">
+                        </form>
+                        <!-- <input type="text" id="search-input" place/holder="search..."> -->
+                        <!-- <ul id="results-container"></ul> -->
                     </div>
-                    <script src="https://docs.thoughtspot.com/4.4/js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'https://docs.thoughtspot.com/4.4/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="["Downloads"]">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
+
                     <!--end search-->
                 </li>
             </ul>
@@ -2638,7 +2630,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Downloads</h1>
+   <h1 class="post-title-main">Downloads for ThoughtSpot</h1>
 </div>
 
 
@@ -2672,7 +2664,52 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Coming soon</p>
+  <p>If you’re looking for ThoughtSpot clients or API files, you’ve come to the right place. Click the link to download the file you need:</p>
+
+<table cellpadding="1" cellspacing="1" class="mt-responsive-table mt-responsive-table" table="table">
+    <tbody>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading">&nbsp;</td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><strong>Windows</strong></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><strong>Linux</strong></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><strong>Solaris</strong></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>ODBC Driver</strong></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://f1.help.thoughtspot.com/@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip?revision=2">ODBC driver for Windows</a></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3123/ThoughtSpot_odbc_linux_3.4.tar.gz?revision=1">ODBC driver for Linux</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3642/ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz?revision=1">ODBC driver for Solaris&nbsp;Sparc</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>JDBC Driver</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_jdbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://f1.help.thoughtspot.com/@api/deki/files/4235/ThoughtSpot_jdbc_4.2.zip?revision=2">JDBC driver</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>Informatica<br />
+            Connector</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;">
+            <a target="_blank" title="http://www.informatica.com/products/cloud-integration/connectivity/connectors.html" href="http://www.informatica.com/products/cloud-integration/connectivity/connectors.html" rel="external nofollow" class="external">Informatica&nbsp;Cloud&nbsp;Connectors</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>JavaScript API</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="api.min.js" rel="internal" class="iconitext-16 ext-js" href="https://f1.help.thoughtspot.com/@api/deki/files/3120/api.min.js?revision=1">JavaScript API library</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>Application Integration Guide</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_Application_Integration_Guide_3.5.pdf" rel="internal" class="iconitext-16 ext-pdf" href="https://f1.help.thoughtspot.com/@api/deki/files/2555/ThoughtSpot_Application_Integration_Guide_3.5.pdf?revision=6">Application Integration Guide</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="installation-instructions">Installation Instructions</h2>
+
+<p>For documentation on installing and configuration, see the instructions for the client you want to use:&lt;/p&gt;</p>
+
+<ul>
+  <li><a href="/data-integrate/clients/install_odbc_windows.html">Install the ODBC driver on Windows</a></li>
+  <li><a href="/data-integrate/clients/install_odbc_linux.html">Install the ODBC driver on Linux</a></li>
+  <li><a href="/data-integrate/clients/install_odbc_solaris.html">Install the ODBC driver on Solaris Sparc</a></li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
@@ -2703,7 +2740,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 ThoughtSpot. All rights reserved. <br />
-<span>Page last updated:</span> tbd<br/> Site last generated: Oct 4, 2017 <br />
+<span>Page last updated:</span> tbd<br/> Site last generated: Oct 5, 2017 <br />
 <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
