@@ -56,22 +56,14 @@
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
-                        <ul id="results-container"></ul>
+                    <div id="search">
+                        <form style="margin-top: 15px;" action="/search.html" method="GET">
+                          <input class="input" name="q" placeholder="Search...">
+                        </form>
+                        <!-- <input type="text" id="search-input" place/holder="{{site.data.strings.search_placeholder_text}}"> -->
+                        <!-- <ul id="results-container"></ul> -->
                     </div>
-                    <script src="{{ "js/jekyll-search.js" | absolute_url }}" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: '{{ "search.json" | absolute_url }}',
-                                searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "\'", "\"}}">{title}</a></li>',
-                    noResultsText: '{{site.data.strings.search_no_results_text}}',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
+
                     <!--end search-->
                 </li>
             </ul>
