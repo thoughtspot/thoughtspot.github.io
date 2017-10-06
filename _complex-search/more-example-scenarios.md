@@ -24,7 +24,7 @@ To start a new search, select your two aggregated worksheets as data sources, se
 
 ## Example 3
 
-The third example involves creating a search to find customers who bought product A, but did not buy product B. This example can also be done using [conditional formulas](/advanced-search/formulas/conditional_sum.html#).
+The third example involves creating a search to find customers who bought product A, but did not buy product B. This example can also be done using [conditional formulas](/advanced-search/formulas/conditional-sum.html#).
 
 First, you would have to perform searches for total sales by customer for both A and B, and create aggregated worksheets for both. Then join these two aggregated worksheets back in an outer join looking for conditions where the A and B join values are null.
 

@@ -181,4 +181,4 @@ Many of the administration commands output logging information to log files. The
 
 ## System monitoring notifications
 
-You can configure ThoughtSpot to send emails to addresses you specify with monitoring reports and a cluster heartbeat. Follow these steps to [Set up monitoring](../setup/set_up_monitoring.html#).
+You can configure ThoughtSpot to send emails to addresses you specify with monitoring reports and a cluster heartbeat. Follow these steps to [Set up monitoring](../setup/set-up-monitoring.html#).

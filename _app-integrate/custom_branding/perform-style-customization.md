@@ -31,8 +31,8 @@ To re-brand the interface:
 
     Once in the menu page, you can:
 
-    -   [Upload application logos](upload_application_logos.html#)
-    -   [Set chart and table visualization fonts](set_chart_and_table_visualization_fonts.html#)
-    -   [Choose a background color](choose_background_color.html#)
-    -   [Select chart color palettes](select_chart_color_palettes.html#)
-    -   [Change the footer text](change_the_footer_text.html#).
+    -   [Upload application logos](upload-application-logos.html#)
+    -   [Set chart and table visualization fonts](set-chart-and-table-visualization-fonts.html#)
+    -   [Choose a background color](choose-background-color.html#)
+    -   [Select chart color palettes](select-chart-color-palettes.html#)
+    -   [Change the footer text](change-the-footer-text.html#).

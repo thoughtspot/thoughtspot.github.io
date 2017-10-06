@@ -37,7 +37,7 @@ discounted a specific product using data from the orders fact table. Unless you
 save your first answer as a worksheet, certain explorations like this won't be
 possible. If you want to do this, here are the steps at a high level:
 
-1. Create the first search, and [save it as an aggregated worksheet](create_aggregated_worksheet.html#).
+1. Create the first search, and [save it as an aggregated worksheet](create-aggregated-worksheet.html#).
 2. Link your worksheet to any other data sources you'll need.
 3. Create a new search that includes your aggregated worksheet and the other sources you linked with it.
 4. You may want to create a new worksheet that includes these data sources.

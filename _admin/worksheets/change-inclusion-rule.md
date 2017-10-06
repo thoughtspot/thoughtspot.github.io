@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 
 If you find that the charts and tables built on a worksheet contain a large
 number of null values (which display as `{blank}` in the web browser), you can
-fix this by changing the [inclusion rule](about_inclusion_rule.html#) for the
+fix this by changing the [inclusion rule](about-inclusion-rule.html#) for the
 worksheet.
 
 To change the inclusion or join rule of a worksheet:
@@ -25,7 +25,7 @@ To change the inclusion or join rule of a worksheet:
 
     ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
-5. Choose the [inclusion rule](about_inclusion_rule.html#) and/or the [worksheet join rule](progressive_joins.html#).
+5. Choose the [inclusion rule](about-inclusion-rule.html#) and/or the [worksheet join rule](progressive-joins.html#).
 
      ![]({{ site.baseurl }}/images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
 

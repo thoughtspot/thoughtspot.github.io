@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 You can add multiple ThoughtSpot data sources to your ODBC configuration. This capability supports connecting to multiple ThoughtSpot instances.
 
-ODBC for Windows needs to have been [installed successfully](install_odbc_windows.html#) before you can add another ODBC data source.
+ODBC for Windows needs to have been [installed successfully](install-odbc-windows.html#) before you can add another ODBC data source.
 
 The main reason for needing to set up multiple ThoughtSpot ODBC data sources is that you have a production cluster and a test or development cluster. The installation procedure for ODBC walks you through the setup of a single data source. Use this procedure if you want to add an additional data source after the installation is successful.
 
@@ -47,7 +47,7 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
 8. Add these properties using the key value pairs shown, clicking **OK** after each entry to save it.
 
-    The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](../reference/simba_settings.html#).
+    The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](../reference/simba-settings.html#).
 
     -   **DATABASE**: The default database to connect to.
     -   **SCHEMA**: Optional. The default schema to connect to.
@@ -57,4 +57,4 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
 9. When all the setting have been made, click **Test Connection**.
 10.  If everything is working, click **OK**, to save your settings.
-If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting_ODBC.html#).
+If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting-ODBC.html#).

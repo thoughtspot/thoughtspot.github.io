@@ -40,11 +40,11 @@ The ODBC driver supports these data types:
 
 **Important:** The ETL tool must add a data transformation step if the source column data type does not exactly match the target's, ThoughtSpot's, column data type. The driver does not do any implicit conversions.
 
--   **[Install the ODBC Driver on Windows](../../data_integration/clients/install_odbc_windows.html)**  
+-   **[Install the ODBC Driver on Windows](../../data_integration/clients/install-odbc-windows.html)**  
 Use this procedure to obtain the Microsoft Windows ODBC driver and install it.
--   **[Install the ODBC Driver on Linux](../../data_integration/clients/install_odbc_linux.html)**  
+-   **[Install the ODBC Driver on Linux](../../data_integration/clients/install-odbc-linux.html)**  
 Use this procedure to obtain the Linux ODBC driver and install it.
--   **[Install the ODBC Driver on Solaris](../../data_integration/clients/install_odbc_solaris.html)**  
+-   **[Install the ODBC Driver on Solaris](../../data_integration/clients/install-odbc-solaris.html)**  
 Use this procedure to obtain the Solaris ODBC driver and install it.
--   **[Best Practices for Using ODBC](../../data_integration/clients/odbc_best_practices.html)**  
+-   **[Best Practices for Using ODBC](../../data_integration/clients/odbc-best-practices.html)**  
 To successfully use ODBC, following these best practices is recommended.

@@ -7,7 +7,7 @@ summary: "This procedure shows how to initialize the Identity Provider (IdP) met
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This is one part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the [overview](integrate_ADFS.html#) of the entire process of integrating with AD FS.
+This is one part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the [overview](integrate-ADFS.html#) of the entire process of integrating with AD FS.
 
 To initialize the IdP metadata on AD FS:
 
@@ -34,4 +34,4 @@ To initialize the IdP metadata on AD FS:
     $ tscli --adv service push tomcat /usr/local/scaligent/release/production/orion/tomcat/tomcat_prod.config
     ```
 
-6. Next, [Initialize the Service Provider Metadata](initialize_SP.html).
+6. Next, [Initialize the Service Provider Metadata](initialize-SP.html).

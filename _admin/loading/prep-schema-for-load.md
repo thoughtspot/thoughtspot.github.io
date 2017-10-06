@@ -35,11 +35,11 @@ To connect to TQL:
 
 Having examined the structure of the data to be loaded and become familiar with the ThoughtSpot SQL Command Line (TQL), you are now ready to create the schema.
 
-This method is a good way to get familiar with TQL and how to create database objects, but when creating a schema in a production system, you will most likely [Write a SQL script to create the schema](create_schema_with_script.html#).
+This method is a good way to get familiar with TQL and how to create database objects, but when creating a schema in a production system, you will most likely [Write a SQL script to create the schema](create-schema_with_script.html#).
 
 To create the schema directly in TQL:
 
-1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
+1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
 2. If the database you will be using does not exist, create it now:
 
     ```
@@ -58,6 +58,6 @@ To create the schema directly in TQL:
     TQL> CREATE SCHEMA my_schema;
     ```
 
-5. Issue a `CREATE TABLE` command for each table you will create, using the information in [Plan the schema](plan_schema.html#).
+5. Issue a `CREATE TABLE` command for each table you will create, using the information in [Plan the schema](plan-schema.html#).
 
     {% include tip.html content="Foreign key declaration within a `CREATE TABLE` will show the table created even if there are problems with the foreign key. Therefore, it is good practice to also issue a separate `ALTER TABLE ADD CONSTRAINT FOREIGN KEY` command." %}

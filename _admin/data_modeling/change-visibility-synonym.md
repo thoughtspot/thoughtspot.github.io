@@ -49,4 +49,4 @@ To create a column description:
 
 ## Related information  
 
-[Model the data for searching](semantic_modeling.html#)
+[Model the data for searching](semantic-modeling.html#)

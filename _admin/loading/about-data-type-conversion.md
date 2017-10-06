@@ -128,7 +128,7 @@ When changing a data type in an existing table, be aware that answers and pinboa
 
 To change the data type of a column:
 
-1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
+1. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
 2. Issue the command to change the data type using this syntax:
 
     ```

@@ -25,10 +25,10 @@ You can tell which formulas are aggregation formulas by looking at the **Formula
 
 Some more advanced aggregation formulas are widely used in business intelligence, since they provide better insight into data. Some of the more advanced aggregation formulas are:
 
--   [Grouping formulas](about_pinned_measures.html#) apply a specific aggregate to a value, and group the results by an attribute in the data.
+-   [Grouping formulas](about-pinned-measures.html#) apply a specific aggregate to a value, and group the results by an attribute in the data.
 
--   [Cumulative formulas](about_cumulative_formulas.html#) measure from the start of your data to the current point. They're often applied on time-based data.
--   [Moving formulas](about_moving_formulas.html#) measure within a window (usually time-based) that you define.
+-   [Cumulative formulas](about-cumulative-formulas.html#) measure from the start of your data to the current point. They're often applied on time-based data.
+-   [Moving formulas](about-moving-formulas.html#) measure within a window (usually time-based) that you define.
 
 Data from any rows that are not included in the search result will not be incorporated, and you cannot create a filter on aggregated data.
 

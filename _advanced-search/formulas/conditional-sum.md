@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas. You can leverage operators in your conditional formulas to have them return true, false, or a predetermined value. The operators include:
 
-<table cellpadding="4" cellspacing="0" summary="" id="conditional_sum__table_mps_jqv_1z" class="table" frame="border" border="1" rules="all">
+<table cellpadding="4" cellspacing="0" summary="" id="conditional-sum__table_mps_jqv_1z" class="table" frame="border" border="1" rules="all">
    <colgroup>
       <col style="width:10%"/>
       <col style="width:45%"/>
@@ -120,7 +120,7 @@ The following example shows you how to figure out the number of customers who bo
 
     And this formula will provide you with the number of galaxys that were bought.
 
-3. Using [nested formulas](../../complex_searches/about_nested_formulas.html#), you can combine these two formulas.
+3. Using [nested formulas](../../complex_searches/about-nested-formulas.html#), you can combine these two formulas.
 
     For example: `f1 = ipadcount + galaxycount`
 

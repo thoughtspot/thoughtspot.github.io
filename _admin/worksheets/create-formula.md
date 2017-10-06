@@ -9,14 +9,14 @@ permalink: /:collection/:path.html
 ---
 You create formulas by combining standard functions and operators, column names, and constant values.
 
-Anyone who can create a worksheet can add a formula to it. Formulas are not reusable; the formula you create is associated only with the worksheet it belongs to. A complete list of available formulas and examples of each is available in the [Formula reference](/reference/formula_reference.html#).
+Anyone who can create a worksheet can add a formula to it. Formulas are not reusable; the formula you create is associated only with the worksheet it belongs to. A complete list of available formulas and examples of each is available in the [Formula reference](/reference/formula-reference.html#).
 
 You can create a formula in a worksheet by using the Formula Builder. When you do this, the result of the formula gets added to the worksheet as a column. Use these steps to create a formula:
 
 1. Create a new worksheet, or edit an existing one.
 2. Click the **+** button next to **Formulas**.
 
-     ![]({{ site.baseurl }}/images/create_formula.png "Create a new formula in a worksheet")
+     ![]({{ site.baseurl }}/images/create-formula.png "Create a new formula in a worksheet")
 
 3. Type your formula in the Formula Builder.
 

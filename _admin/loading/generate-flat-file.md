@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/csv_load.md %}
+{% include content/csv-load.md %}

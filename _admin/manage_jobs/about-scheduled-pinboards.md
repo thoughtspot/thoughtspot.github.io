@@ -42,4 +42,4 @@ And the total number of recipients for a scheduled pinboard job cannot exceed th
 
 ## Related information
 
-For information on creating a pinboard, see the [Schedule a pinboard job](/admin/manage_jobs/schedule_a_pinboard_job.html).
+For information on creating a pinboard, see the [Schedule a pinboard job](/admin/manage_jobs/schedule-a-pinboard-job.html).

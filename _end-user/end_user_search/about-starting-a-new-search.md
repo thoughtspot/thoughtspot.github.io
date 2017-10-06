@@ -68,7 +68,7 @@ An answer is the result of a single search. You can save an answer you want to w
 
 ## Related information
 
--   [Choose a data source](/end-user/end_user_search/about_choosing_sources.html)  
--   [Search bar features](/end-user/end_user_search/about_the_search_bar.html)  
--   [Search suggestions](/end-user/end_user_search/recent_searches.html)  
--   [Search results and column types](/end-user/end_user_search/about_attributes_and_measures.html)  
+-   [Choose a data source](/end-user/end_user_search/about-choosing-sources.html)  
+-   [Search bar features](/end-user/end_user_search/about-the-search-bar.html)  
+-   [Search suggestions](/end-user/end_user_search/recent-searches.html)  
+-   [Search results and column types](/end-user/end_user_search/about-attributes-and-measures.html)  

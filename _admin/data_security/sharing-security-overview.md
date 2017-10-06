@@ -11,7 +11,7 @@ Sharing and security privileges govern what data a user can access and what they
 
 ## Users, groups, and privileges
 
-Data security applies to users and groups. Users can be managed [manually](../users_groups/about_users_groups.html#) or through [LDAP](../setup/about_LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
+Data security applies to users and groups. Users can be managed [manually](../users_groups/about-users-groups.html#) or through [LDAP](../setup/about-LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
 
 The following table shows the intersection of user privilege and ability:
 
@@ -24,12 +24,12 @@ You can share with groups and with individual users. Sharing of tables can be de
 
 |Object type|Description|Default security model|
 |-----------|-----------|----------------------|
-|Tables|The source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share_source_tables.html#)|
-|Columns|The columns in the source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share_source_tables.html#)|
-|Rows|The rows in the source data tables that have been loaded using ThoughtSpot Loader.|All rows in the source tables are shared with all users by default. You can hide rows from groups based on the values they contain. See [Define Legacy Row Level Security](legacy_row_security.html#)|
-|Imported data|Data that was imported using a Web browser.|Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share_source_tables.html#)|
-|Worksheets|A worksheet created using a Web browser.|Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share_worksheets.html)|
-|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [Share a pinboard](share_pinboards.html)|
+|Tables|The source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share-source-tables.html#)|
+|Columns|The columns in the source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share-source-tables.html#)|
+|Rows|The rows in the source data tables that have been loaded using ThoughtSpot Loader.|All rows in the source tables are shared with all users by default. You can hide rows from groups based on the values they contain. See [Define Legacy Row Level Security](legacy-row-security.html#)|
+|Imported data|Data that was imported using a Web browser.|Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share-source-tables.html#)|
+|Worksheets|A worksheet created using a Web browser.|Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)|
+|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)|
 
 ## Row level security
 
@@ -39,4 +39,4 @@ ThoughtSpot includes robust row level security, which allows you to filter all o
 ## Related information
 
 -   [Revoke access (unshare)](/admin/data_security/unshare.html)  
--   [Row level security](/admin/data_security/about_row_security.html)  
+-   [Row level security](/admin/data_security/about-row-security.html)  

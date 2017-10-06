@@ -25,7 +25,7 @@ Here is an example that shows you how to add a single filter to a pinboard. To c
 
 1. Click the **Actions** button, and click **Add filters**.
 
-     ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
+     ![]({{ site.baseurl }}/images/add_pinboard-filters.png "Add filters under Actions")
 
 2. In the populated columns menu, click the **Add filter** icon next to the columns you would like to use as filters.
 

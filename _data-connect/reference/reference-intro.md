@@ -23,7 +23,7 @@ This section contains a list of Tier 1 and Tier 2 connectors supported by Though
 
 -   **[Login credentials for administration](/data-connect/data-connect/reference/logins.html)**  
 You will need administrative permissions to perform the actions discussed in this guide. You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
--   **[Data Connect best practices](/data-connect/data-connect/reference/data_connect_insider_tips.html)**  
+-   **[Data Connect best practices](/data-connect/data-connect/reference/data-connect-insider-tips.html)**  
 This section includes some tips and best practices for using ThoughtSpot Data Connect.
--   **[Data Connect connectors reference](/data-connect/data-connect/reference/data_connect_connection_credentials.html)**  
+-   **[Data Connect connectors reference](/data-connect/data-connect/reference/data-connect-connection-credentials.html)**  
 Here is a list of all of the source connectors, and their connection credentials, that are supported in ThoughtSpot Data Connect. As you create a new connection, you will need specific connection information to enter into the create connection dialog box. You can find more detailed information below for each of the connection types ThoughtSpot Data Connect supports.

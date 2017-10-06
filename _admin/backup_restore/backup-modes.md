@@ -14,7 +14,7 @@ You can create a manual backup or configure an automated, periodic backup A back
 
 {% include warning.html content="You should never disable the periodic snapshot system as backups rely on it. For example, if you have disabled the periodic snapshots system and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together." %}
 
-Backups are usually stored on a [NAS (network attached storage) file system](../setup/NAS_mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 5 GB of extra space beyond the backup itself. So, make sure you have enough disk space before backing up.
+Backups are usually stored on a [NAS (network attached storage) file system](../setup/NAS-mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 5 GB of extra space beyond the backup itself. So, make sure you have enough disk space before backing up.
 
 You can create a backup using one of three modes, full, lightweight or dataless.
 

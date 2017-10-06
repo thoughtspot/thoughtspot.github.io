@@ -42,13 +42,13 @@ Answers are the result of a single search. You can save an answer you want to wo
 
 Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. Once a pinboard has been saved, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click on one to view, edit, or share it.
 
-To learn more about pinboards, visit [About pinboards](../pinboards/about_pinboards.html).
+To learn more about pinboards, visit [About pinboards](../pinboards/about-pinboards.html).
 
 ## Data
 
 **DATA** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
 
-To learn more about this section, visit [Working with data](../data_view/data_intro_end_user.html#).
+To learn more about this section, visit [Working with data](../data_view/data-intro-end-user.html#).
 
 ## Admin
 
@@ -62,7 +62,7 @@ To learn more about this section, visit [Working with data](../data_view/data_in
 
 The **user icon** allows you to either view your preferences or log out. You can also change your icon here.
 
-To learn more about this section, visit [About the user profile](about_user.html).
+To learn more about this section, visit [About the user profile](about-user.html).
 
 
 ## Related information

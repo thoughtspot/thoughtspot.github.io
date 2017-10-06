@@ -19,7 +19,7 @@ To delete a connection:
 
     ![]({{ site.baseurl }}/images/data_sources_tab_created.png "Data Sources tab")
 
-4. Delete any dependent data sources. To delete a data source, see [Delete a data source](delete_data_source.html#).
+4. Delete any dependent data sources. To delete a data source, see [Delete a data source](delete-data-source.html#).
 5. Select **+ New data source** on the upper right hand side of the panel.
 
      ![]({{ site.baseurl }}/images/new_data_source_created.png "New data source")
@@ -31,4 +31,4 @@ To delete a connection:
 7. In the **Select Tables** step, click the **Select a connection** dropdown and browse the list for the connection you wish to delete.
 
 8. Click the **x** on the right of your selected connection to delete it.
-     ![]({{ site.baseurl }}/images/delete_a_connection.png "Delete a connection")
+     ![]({{ site.baseurl }}/images/delete-a-connection.png "Delete a connection")

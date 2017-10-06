@@ -10,7 +10,7 @@ You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
 
 ## Administrative access
 
-{% include content/admin_access.md %}
+{% include content/admin-access.md %}
 
 ## SSH to the appliance
 

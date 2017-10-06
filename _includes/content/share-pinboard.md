@@ -5,11 +5,11 @@ To share a pinboard:
 1. Configure the pinboard to look as you'll want it to appear when shared.
 2. Click the **Share** icon.
 
-    ![]({{ site.baseurl }}/images/share_pinboard_with.png)
+    ![]({{ site.baseurl }}/images/share-pinboard_with.png)
 
 3. Click **+ Add users or groups** and select users or groups that you want to share with.
 
-    ![]({{ site.baseurl }}/images/share_pinboard.png)
+    ![]({{ site.baseurl }}/images/share-pinboard.png)
 
 4. Configure the level of access by selecting from the dropdown list. You will only see options available, based on your own access level. For example, if you have only **View** access, you cannot share as **Edit**. You can select:
     -   **Can View** to provide read-only access. If the person doesn't have access to the underlying data, they can only view a shared pinboard. If they change anything on the pinboard, their changes are not saved. In order to persist the changes, the user would need to make a copy of the modified pinboard.

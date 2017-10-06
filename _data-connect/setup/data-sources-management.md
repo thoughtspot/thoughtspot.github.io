@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 You can manage your new data sources by clicking on the name of your source on the **Data Sources** page. You can have up to 50 scheduled jobs on your cluster at time. Contact ThoughtSpot Support if you'd like to increase this limit.
 
- ![]({{ site.baseurl }}/images/data_sources_management_view.png "Data sources management view")
+ ![]({{ site.baseurl }}/images/data-sources-management_view.png "Data sources management view")
 
 Once you have selected a data source, you have the option to perform a number of editing and maintenance tasks.
 
@@ -39,6 +39,6 @@ You can download the session logs for a data load run. Select a table row, and c
 
 You can delete a data source by selecting it in the **Data Sources** page, then clicking the **Delete** icon.
 
- ![]({{ site.baseurl }}/images/delete_data_source.png "Delete a data source")
+ ![]({{ site.baseurl }}/images/delete-data-source.png "Delete a data source")
 
 {% include note.html content="Do not delete the `Default` data source. It does not correspond to any connection in ThoughtSpot Data Connect. However, this source is assigned to default datasets." %}

@@ -8,27 +8,27 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/web_load_intro.md %}
+{% include content/web-load-intro.md %}
 
 ## Formatting the CSV
 
 Your ETL (extract, transform, load) process will typically generate CSV files. You can also create a CSV file from a Microsoft Excel spreadsheet by opening the spreadsheet in Excel, choosing **Save As** and selecting CSV.
 
-{% include content/csv_format.md %}
+{% include content/csv-format.md %}
 
 If you are loading a fact table that joins to dimension tables, you must load the fact table first, and then the dimension tables. The joining key must be a single column of unique values in the dimension table. `NULL` values in the fact table cannot be joined.
 
 ## Create a CSV file
 
-{% include content/csv_create.md %}
+{% include content/csv-create.md %}
 
 For general information about CSV files and the rules for creating them, see the [Comma-separated_values](http://en.wikipedia.org/wiki/Comma-separated_values) on Wikipedia.
 
 ## Load the CSV File
 
-{% include content/csv_load.md %}
+{% include content/csv-load.md %}
 
 
 ## Append to an existing table
 
-{% include content/csv_append.md %}
+{% include content/csv-append.md %}

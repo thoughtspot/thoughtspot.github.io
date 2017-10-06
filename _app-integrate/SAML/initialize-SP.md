@@ -7,7 +7,7 @@ summary: "This procedure shows how to initialize the Service Provider (SP) metad
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This is the second part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the [overview](integrate_ADFS.html#) of the entire process of integrating with AD FS.
+This is the second part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the [overview](integrate-ADFS.html#) of the entire process of integrating with AD FS.
 
 To initialize the Service Provider metadata on AD FS:
 
@@ -31,4 +31,4 @@ To initialize the Service Provider metadata on AD FS:
 15. Open the provider by double-clicking it.
 16. Select the **Advanced** tab and change **Secure hash algorithm** to "SHA-1".
 17. Your Service Provider is now registered.
-18. [Test the ADFS Integration](test_ADFS.html).
+18. [Test the ADFS Integration](test-ADFS.html).

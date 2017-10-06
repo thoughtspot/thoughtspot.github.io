@@ -48,6 +48,6 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
 
 For documentation on installing and configuration, see the instructions for the client you want to use:</p>
 
-* [Install the ODBC driver on Windows](/data-integrate/clients/install_odbc_windows.html)
-* [Install the ODBC driver on Linux](/data-integrate/clients/install_odbc_linux.html)
-* [Install the ODBC driver on Solaris Sparc](/data-integrate/clients/install_odbc_solaris.html)
+* [Install the ODBC driver on Windows](/data-integrate/clients/install-odbc-windows.html)
+* [Install the ODBC driver on Linux](/data-integrate/clients/install-odbc-linux.html)
+* [Install the ODBC driver on Solaris Sparc](/data-integrate/clients/install-odbc-solaris.html)

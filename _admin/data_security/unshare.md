@@ -8,4 +8,4 @@ permalink: /:collection/:path.html
 ---
 
 
-{% include content/revoke_access.md %}
+{% include content/revoke-access.md %}

@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 
 {% include note.html content="Starting in release 3.3, if you have existing legacy Row Level Security (RLS) built on a chasm trap schema, you'll need to migrate to the new row level security before you can use them anymore. If you were still using Legacy Row Level Security, after upgrading to 3.3.x, you cannot access any of those worksheets and a message advising you to migrate to the newer Rule-Based RLS displays.  
 <br>
-If you are using the newer, Rule-Based Row Level Security (recommended), see [How the worksheet join rule works](progressive_joins.html#)." %}
+If you are using the newer, Rule-Based Row Level Security (recommended), see [How the worksheet join rule works](progressive-joins.html#)." %}
 
 When working with worksheets and Legacy RLS, you need to understand how joins are applied. This section gives some examples to explain the interaction between these two concepts.
 
@@ -21,7 +21,7 @@ To understand how the worksheet join rule is applied, you first need to understa
 
 Suppose you created a worksheet with a schema like the example in the diagram:
 
- ![]({{ site.baseurl }}/images/joins_and_row_level_security.png "Example of a worksheet data schema")
+ ![]({{ site.baseurl }}/images/joins_and_row-level-security.png "Example of a worksheet data schema")
 
 Imagine your schema as a tree, with a root, branches, and leaves. In this diagram, the root table is the fact table Sales. The root table is typically a fact table. It is the table that does not have a foreign key pointing to it. So if you draw out the schema like the diagram, the tables at the bottom can be referred to as the "leaves" in the schema. If the worksheet only included the tables Products, Departments, and Suppliers, then the root table would be the Products table. Similarly, if the worksheet only included Inventory and Warehouses, the root table would be Inventory.
 

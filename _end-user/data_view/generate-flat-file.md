@@ -8,18 +8,18 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/web_load_intro.md %}
+{% include content/web-load-intro.md %}
 
 ## Create a CSV file
 
-{% include content/csv_create.md %}
+{% include content/csv-create.md %}
 
 Large organizations typically have a data administrator or department the builds ETL processes. If the data you want is in another system, speak with your ThoughtSpot administrator about getting CSV files extracted from this system.
 
 ## Formatting the CSV
 
-{% include content/csv_format.md %}
+{% include content/csv-format.md %}
 
 ## Load the CSV File
 
-{% include content/csv_load.md %}
+{% include content/csv-load.md %}

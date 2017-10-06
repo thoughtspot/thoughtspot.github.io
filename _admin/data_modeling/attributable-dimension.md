@@ -9,7 +9,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The **Attribution Dimension** setting only applies to tables that join over a [Chasm Trap](../loading/chasm_trap.html#). By default, the attribution dimension setting will be set to **Yes**, but you can override that by setting the column's attribution dimension property to **No**, as described here.
+The **Attribution Dimension** setting only applies to tables that join over a [Chasm Trap](../loading/chasm-trap.html#). By default, the attribution dimension setting will be set to **Yes**, but you can override that by setting the column's attribution dimension property to **No**, as described here.
 
 In the classic chasm trap two fact tables are related through a shared dimension table. When the two fact tables are joined, the shared column(s) in the dimension table are used to attribute rows in one fact table to match with rows in the other fact table. Usually, all goes well using this method. But sometimes an incorrect or illogical attribution can result, because the column chosen is not meaningful for performing this attribution. If you are seeing unexpected results in searches that include tables across a chasm trap, this setting is for you.
 
@@ -32,4 +32,4 @@ To designate a column as not being an attribution dimension (i.e. not producing 
 
 ## Related information  
 
-[Model the data for searching](semantic_modeling.html#)
+[Model the data for searching](semantic-modeling.html#)

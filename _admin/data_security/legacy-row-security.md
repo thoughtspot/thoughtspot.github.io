@@ -7,7 +7,7 @@ summary: "Legacy Row Level Security is deprecated and no longer used. This docum
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](about_row_security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
+If you're setting up row level security for the first time, see [About Rule-Based Row Level Security](about-row-security.html). That is the preferred method. It supports thousands of groups, and is easier to set up and maintain then Legacy Row Level Security.
 
 This legacy version of row level security allowed you to define which groups could see individual rows in a table, based on the values in a column. Setting row level security is a three steps process:
 
@@ -74,11 +74,11 @@ When multiple row level security rules apply, the permissions are additive. That
 
 In this example, the group Analysts has two separate security entries for the Region column in the Customer table. One entry allows Analysts to see rows where the Region is equal to West. The other allows them to see rows where the Region is equal to East. So users in the Analysts group will be able to see all the rows in either Region.
 
- ![]({{ site.baseurl }}/images/row_level_security_example_one.png "Multiple equality conditions in security file")
+ ![]({{ site.baseurl }}/images/row-level-security_example_one.png "Multiple equality conditions in security file")
 
 In this example, a user is a member of two groups: Analysts and Sales. The security file lists different permissions for each group based on the column Category. Analysts can see rows where Category is equal to Consumer and Sales can see rows where Category is equal to Enterprise. So the user who is a member of both groups will be able to see all the rows where the Category is equal to either Consumer or Enterprise.
 
- ![]({{ site.baseurl }}/images/row_level_security_example_two.png "Multiple group membership in security file")
+ ![]({{ site.baseurl }}/images/row-level-security_example_two.png "Multiple group membership in security file")
 
 It works the same way with ranges and between operators as with equality. The user will be able to see any row that fulfills any of the conditions.
 
@@ -111,7 +111,7 @@ To obtain the security file:
 
 Edit the security file to add row level security to tables.
 
-Before you can add row level securit, create the appropriate groups within ThoughtSpot, if they don't already exist. You can create groups and add users to them by following the procedures in [Manage users, groups, and privileges](../users_groups/about_users_groups.html#).
+Before you can add row level securit, create the appropriate groups within ThoughtSpot, if they don't already exist. You can create groups and add users to them by following the procedures in [Manage users, groups, and privileges](../users_groups/about-users-groups.html#).
 
 You can edit the security file using Microsoft Excel or a compatible tool. You will need to copy and paste some of the required information from the model file.
 

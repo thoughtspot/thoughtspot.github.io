@@ -11,11 +11,11 @@ For regular operations and for debugging, there are some ports you will need to 
 
 ## Required ports for operations and debugging
 
-{% include content/operations_ports.md %}
+{% include content/operations-ports.md %}
 
 ## Network Ports
 
-{% include content/ports_network.md %}
+{% include content/ports-network.md %}
 
 ## Related information  
 

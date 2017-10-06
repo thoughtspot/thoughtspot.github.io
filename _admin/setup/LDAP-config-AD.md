@@ -67,7 +67,7 @@ You do not need to create a user called tsadmin on your LDAP server. Internal au
     Also use ThoughtSpot internal authentication (y/n): y
     ```
 
-4. If you are using SSL, [Add the SSL certificate for LDAP](add_SSL_for_LDAP.html#).
+4. If you are using SSL, [Add the SSL certificate for LDAP](add-SSL-for-LDAP.html#).
 5. If you want to remove the LDAP configuration, issue:
 
     ```

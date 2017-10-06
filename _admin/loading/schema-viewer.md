@@ -13,11 +13,11 @@ There is a schema viewer in ThoughtSpot which lets you see your database schema 
 
 You can access the Schema Viewer from the **Manage Data** screen by clicking **Actions**, and selecting **View Schema**.
 
- ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema Viewer")
+ ![]({{ site.baseurl }}/images/access_schema-viewer.png "Access the Schema Viewer")
 
 When viewing the schema, you can filter the tables shown similarly to how you filter data sources. The list of tables, worksheets, and imported data on the left includes only those objects you want to see. Clicking on one of the objects brings it to the middle of the viewer and highlights it. You can drag the objects around in the viewer.
 
- ![]({{ site.baseurl }}/images/schema_viewer.png "Schema Viewer filters")
+ ![]({{ site.baseurl }}/images/schema-viewer.png "Schema Viewer filters")
 
 ## Why to use the Schema Viewer
 

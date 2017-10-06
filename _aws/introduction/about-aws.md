@@ -31,4 +31,4 @@ AWS can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 
 Your database capacity will determine the number of instances you'll need and the instance network/storage requirements. In addition, you can go with multiple VMs based on your dataset size.
 
-The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference](/aws/setup/firewall_ports.html#).
+The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference](/aws/setup/firewall-ports.html#).

@@ -63,5 +63,5 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 ## Related information  
 
 - [Keyword reference](/reference/keywords.html#)
-- [Search using growth over time](/complex-search/search_using_growth_over_time.html)  
-- [Geographical proximity keywords "near" and "farther than"](/admin/features/proximity_search.html)  
+- [Search using growth over time](/complex-search/search-using-growth-over-time.html)  
+- [Geographical proximity keywords "near" and "farther than"](/admin/features/proximity-search.html)  

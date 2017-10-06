@@ -11,7 +11,7 @@ The replay feature shows how to create the chart or table you are viewing. Use i
 
 1. When viewing a chart or table, click **Actions** and select **Replay search**.
 
-     ![]({{ site.baseurl }}/images/replay_search_icon.png "The Replay search icon")
+     ![]({{ site.baseurl }}/images/replay-search_icon.png "The Replay search icon")
 
 2. Then, select **Start Replay** to view the video.
 

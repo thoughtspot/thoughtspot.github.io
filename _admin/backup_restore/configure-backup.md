@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system](../setup/NAS_mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system](../setup/NAS-mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
 
 The format for a policy includes the following:
 
@@ -38,12 +38,12 @@ storage_type: NAS | LOCAL
 ```
 
 Before creating a policy, make sure you have read [Understand backup/snapshot
-schedules](how_to_create_a_schedule.html) for information on configuring a
+schedules](how-to-create-a-schedule.html) for information on configuring a
 `schedule` element. In addition, you must specify:
 
 |Element|Description|
 |-------|-----------|
-|`mode`|The backup mode. `FULL` backups are necessary for restoring a cluster. See [Work with backups](backup_modes.html) for details on each backup mode.|
+|`mode`|The backup mode. `FULL` backups are necessary for restoring a cluster. See [Work with backups](backup-modes.html) for details on each backup mode.|
 |`type`|Currently, only `STANDALONE` is supported.|
 |`directory`|The location on the disk to place the backup.|
 |`storage_type`|The type of storage you are using. `NAS` storage is recommended for `FULL` backups.|

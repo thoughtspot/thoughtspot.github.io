@@ -8,20 +8,20 @@ permalink: /:collection/:path.html
 ---
 There are other search actions you can perform by interacting directly with your answer. These actions can be performed in an ad hoc way, or you can pin your answer to a pinboard to save your configurations.
 
--   **[Change view optins](../../complex-search/change_the_view.html)**  
+-   **[Change view optins](../../complex-search/change-the-view.html)**  
 You can change the view of your answer so it appears as a table or a chart. Sorting your search allows you to order your answer, making it easier to read.
 You can change the date bucketing on tables and charts for columns with date values.
--   **[Show underlying data](../../complex-search/show_underlying_data.html)**  
+-   **[Show underlying data](../../complex-search/show-underlying-data.html)**  
 Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data.
--   **[Drill down](../../complex-search/drill_down.html)**  
+-   **[Drill down](../../complex-search/drill-down.html)**  
 Drilling down allows you to see more information about the columns used within your search.
 -   **[Exclude and include row values](../../end-user/end_user_search/exclude_and_include_row_values.html)**  
 You can include or exclude row values from your answer.
--   **[Apply conditional formatting](../../end-user/end_user_search/about_conditional_formatting.html)**  
+-   **[Apply conditional formatting](../../end-user/end_user_search/about-conditional-formatting.html)**  
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
--   **[Copy an answer](../../end-user/end_user_search/make_a_copy_of_an_answer.html)**  
+-   **[Copy an answer](../../end-user/end_user_search/make-a-copy-of-an-answer.html)**  
 You can make a copy of an answer if you would like to make edits without changing the original answer.
--   **[Download your search](../../complex-search/download_your_search.html)**  
+-   **[Download your search](../../complex-search/download-your-search.html)**  
 You can download your search as either a table or chart.
--   **[Replay search](../../end-user/end_user_search/replay_search.html)**  
+-   **[Replay search](../../end-user/end_user_search/replay-search.html)**  
 You can instantly generate a step-by-step replay showing the creation of a table or chart.

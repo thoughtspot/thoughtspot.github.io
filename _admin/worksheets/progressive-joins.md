@@ -20,7 +20,7 @@ When using **Apply joins progressively**, the number of rows in a search using t
 
 ## Rule-Based Row Level Security (RLS) with worksheets
 
-{% include note.html content="If you are using the deprecated [Legacy Row Level Security](../data_security/legacy_row_security.html#) (not recommended), skip this section and see [About the worksheet join rule with Legacy Row Level Security](joins_and_row_level_security.html#)." %}
+{% include note.html content="If you are using the deprecated [Legacy Row Level Security](../data_security/legacy-row-security.html#) (not recommended), skip this section and see [About the worksheet join rule with Legacy Row Level Security](joins_and_row-level-security.html#)." %}
 
 With Rule-Based RLS, you need to protect every table that contains any sensitive data. To do this, you'll grant access by creating explicit row level security rules on each of the underlying tables which contain data that row level security should apply to.
 

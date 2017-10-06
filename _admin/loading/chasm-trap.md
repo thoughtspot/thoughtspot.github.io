@@ -13,7 +13,7 @@ In a complex schema, you may have a fact table with no relationship to another f
 
 A chasm trap in a data schema can introduce problems of over counting if you join the two fact tables through their shared dimension table. This diagram shows a typical complex schema with several tables that are related over a chasm trap:
 
- ![]({{ site.baseurl }}/images/chasm_trap_complex.png "Complex schema with chasm traps")
+ ![]({{ site.baseurl }}/images/chasm-trap_complex.png "Complex schema with chasm traps")
 
 Examples of use cases where a chasm trap could occur are:
 
@@ -25,7 +25,7 @@ In many databases, joining tables across a chasm trap creates a Cartesian produc
 There are still just a few things to look out for when using a schema that contains chasm traps:
 
 -   The tables need to be joined to the dimension table via an equi-join (i.e. a primary key/foreign key relationship). They cannot be joined using a range of values.
--   Review the column setting called [Attribution Dimension](../data_modeling/attributable_dimension.html#). You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.
+-   Review the column setting called [Attribution Dimension](../data_modeling/attributable-dimension.html#). You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.
 -   Tables that will be joined across a chasm trap do not need to be co-sharded. They will be joined appropriately automatically in the most efficient way.
 
 ## Chasm trap limitations
@@ -38,7 +38,7 @@ The following limitations on chasm trap schemas will produce a red bar error in 
 
 -   **Show underlying data** does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
 -   When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--   [Legacy Row Level Security](../data_security/legacy_row_security.html#) does not work with chasm trap schemas. The newer [Rule-Based Row Level Security](../data_security/new_row_level_security.html#) must be used.
+-   [Legacy Row Level Security](../data_security/legacy-row-security.html#) does not work with chasm trap schemas. The newer [Rule-Based Row Level Security](../data_security/new_row-level-security.html#) must be used.
 
 ### Behavior
 

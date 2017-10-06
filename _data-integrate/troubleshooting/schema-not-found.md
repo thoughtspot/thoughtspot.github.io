@@ -13,8 +13,8 @@ When connecting with ODBC, remember to specify the schema. Note that you can add
 
 Even if you do not use schema names in ThoughtSpot, you still have to specify a schema when connecting with ODBC. The default schema name in ThoughtSpot is "falcon_default_schema". This default schema is always assumed when you don't specify a schema name. However, with ODBC, you will need to specify it explicitly. To do this:
 
-On Windows, [change your ODBC configuration](../clients/change_odbc_windows.html#) by adding a custom property with the key "SCHEMA" and the value "falcon_default_schema".
+On Windows, [change your ODBC configuration](../clients/change-odbc-windows.html#) by adding a custom property with the key "SCHEMA" and the value "falcon_default_schema".
 
 ![]({{ site.baseurl }}/images/ODBC_add_schema.png "Edit a custom property on Windows")
 
-On Linux or Solaris, you can modify the custom properties related to database and schema, if you want to provide defaults. For a list of those properties and how to change them, see [ODBC and JDBC configuration properties](../reference/simba_settings.html#).
+On Linux or Solaris, you can modify the custom properties related to database and schema, if you want to provide defaults. For a list of those properties and how to change them, see [ODBC and JDBC configuration properties](../reference/simba-settings.html#).

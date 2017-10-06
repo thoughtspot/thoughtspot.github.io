@@ -107,7 +107,7 @@ If you are not already logged in to the Linux shell using SSH, log in, then do t
    The SP metadata file will download. Save it as metadata.xml. You will need this file when configuring your SAML service provider.
 4. If you're using one of these SAML service providers, continue your configuration using these instructions:
 
-    -   [Configure CA SiteMinder](configure_SAML_siteminder.html).
-    -   [Configure Active Directory Federated Services](integrate_ADFS.html).
+    -   [Configure CA SiteMinder](configure-SAML-siteminder.html).
+    -   [Configure Active Directory Federated Services](integrate-ADFS.html).
 
     Otherwise, refer to your SAML service provider for instructions how to import the metadata.

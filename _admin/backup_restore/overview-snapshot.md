@@ -77,7 +77,7 @@ enabled: true
 
 ```
 
-This policy takes a snapshot every hour starting at midnight on Sudnay. It retains the snapshots from the last three hour intervals and two snapshots from two of the previous 4 hour intervals. That means, there are 5 periodic snapshots retained overall. For detailed information about understanding the schedule, see [Understand backup/snapshot schedules](how_to_create_a_schedule.html).
+This policy takes a snapshot every hour starting at midnight on Sudnay. It retains the snapshots from the last three hour intervals and two snapshots from two of the previous 4 hour intervals. That means, there are 5 periodic snapshots retained overall. For detailed information about understanding the schedule, see [Understand backup/snapshot schedules](how-to-create-a-schedule.html).
 
 You shouldn't change this default policy unless instructed to by support. If you have to adjust it for some reason, you can use, `tscli snapshot-policy update` command. This opens the current policy in an editor. Your policy should never retain more than 20 snapshots at any point in time. Exceeding this number can impact cluster performance.
 

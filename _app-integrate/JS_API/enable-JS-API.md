@@ -76,7 +76,7 @@ To enable the JS API:
         By default this value is set to empty, to disallow any cross domain access.
         When this value is changed, the nginx service will be restarted automatically to reflect the change.
 
-5. Now you're ready to either [embed a visualization](../embedding_viz/embed_a_viz.html#) or [use the REST API to get data](../data_api/use_data_api_read.html#) from ThoughtSpot and display it within your Web page or application.
+5. Now you're ready to either [embed a visualization](../embedding_viz/embed-a-viz.html#) or [use the REST API to get data](../data_api/use-data-api-read.html#) from ThoughtSpot and display it within your Web page or application.
 6. Test your Web page or application.
   If your the page no longer works, check the JavaScript console on your Web browser. If you see this error message, it means that the CORS cross domain setting on nginix was not completed correctly:
 

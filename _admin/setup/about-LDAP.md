@@ -13,4 +13,4 @@ ThoughtSpot supports both anonymous and non-anonymous LDAP integration. Non-anon
 
 If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please contact ThoughtSpot Support. They can assist you in migrating existing users to their LDAP equivalents.
 
-ThoughtSpot supports LDAP with [Active Directory](LDAP_config_AD.html#).
+ThoughtSpot supports LDAP with [Active Directory](LDAP-config-AD.html#).

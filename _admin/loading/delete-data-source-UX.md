@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-There are two separate ways to delete a data source, through the browser or [through TQL](check_dependencies_tql.html#) describes the dependency checking that occurs when deleting or changing a table using TQL. When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
+There are two separate ways to delete a data source, through the browser or [through TQL](check-dependencies-tql.html#) describes the dependency checking that occurs when deleting or changing a table using TQL. When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
 
 
 ## Check data source dependencies

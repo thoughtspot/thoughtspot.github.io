@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit many of these settings.
 
-{% include tip.html content="If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model_data_in_UI.html#) instead." %}
+{% include tip.html content="If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model-data-in-UI.html#) instead." %}
 
 ## Overview of the modeling process
 
@@ -30,7 +30,7 @@ Remember these important guidelines when editing the model file:
 
 Before you can make changes to the model file, you need to download it. Then you can edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 
-First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data_modeling_settings.html#). To obtain the model file:
+First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data-modeling-settings.html#). To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
@@ -55,7 +55,7 @@ You can edit any of the values in the model file, except for those where the wor
 
     -   If your model file includes multi-byte characters, edit the file using vi or vim. This is because model files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
 2. Find the column you want to modify.
-   Descriptions of the meanings of the columns are listed in [Data modeling settings](data_modeling_settings.html#).
+   Descriptions of the meanings of the columns are listed in [Data modeling settings](data-modeling-settings.html#).
 3. Select the value you want to change.
 4. Type in the new value.
 5. After making all your changes, save the model file.
@@ -92,6 +92,6 @@ To upload the model file:
 
 ## Related information  
 
-* [Data modeling settings](data_modeling_settings.html#)
+* [Data modeling settings](data-modeling-settings.html#)
 
-* [Model data in the ThoughtSpot application](model_data_in_UI.html)
+* [Model data in the ThoughtSpot application](model-data-in-UI.html)

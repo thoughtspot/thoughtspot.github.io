@@ -19,7 +19,7 @@ If you are using a column with the data type DOUBLE for latitude and longitude, 
 -   set Additive to NO
 -   set Aggregation Type to NONE
 
-For information these settings, see [Set ADDITIVE or AGGREGATION](change_aggreg_additive.html).
+For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-additive.html).
 
 ## How to edit geographic columns
 
@@ -40,4 +40,4 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change_aggreg_
 
 ## Related information  
 
-[Model the data for searching](semantic_modeling.html#)
+[Model the data for searching](semantic-modeling.html#)

@@ -43,4 +43,4 @@ Consider a column in which there are four values “ThoughtSpot”, “Thought�
 
 ## Related information  
 
-[Model the data for searching](semantic_modeling.html#)
+[Model the data for searching](semantic-modeling.html#)

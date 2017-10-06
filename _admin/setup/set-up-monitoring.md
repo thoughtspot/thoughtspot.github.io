@@ -46,4 +46,4 @@ To configure monitoring of your cluster, set up the frequency of heartbeat and m
     ```
 
 4. After the heartbeat interval has passed, check your email to verify that emails are being delivered.
-5. If you don't receive any emails, [verify that email is working](set_up_relay_host.html#verify-the-relay-with-an-email).
+5. If you don't receive any emails, [verify that email is working](set-up-relay-host.html#verify-the-relay-with-an-email).

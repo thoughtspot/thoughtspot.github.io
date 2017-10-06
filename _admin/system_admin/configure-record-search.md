@@ -13,7 +13,7 @@ To record a search replay using ThoughtSpot:
 
 1. While viewing a chart or table in ThoughtSpot, click the **Replay Search** icon.
 
-     ![]({{ site.baseurl }}/images/replay_search_icon.png "The Replay Search icon")
+     ![]({{ site.baseurl }}/images/replay-search_icon.png "The Replay Search icon")
 
 2. Click the **Record Replay** button.
 

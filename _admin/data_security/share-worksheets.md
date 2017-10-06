@@ -7,7 +7,7 @@ summary: "You can share worksheets with users or with groups. Sharing a workshee
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you share a worksheet, all of its columns are shared. Sharing a worksheet does not share the underlying tables. If you want to share the underlying tables, see [Share tables and columns](share_source_tables.html#). A worksheet can be shared by the owner of the worksheet, or by an administrator. Users can start searching a worksheet as soon as the worksheet is shared with them.
+When you share a worksheet, all of its columns are shared. Sharing a worksheet does not share the underlying tables. If you want to share the underlying tables, see [Share tables and columns](share-source-tables.html#). A worksheet can be shared by the owner of the worksheet, or by an administrator. Users can start searching a worksheet as soon as the worksheet is shared with them.
 
 To share a pinboard:
 
@@ -17,7 +17,7 @@ To share a pinboard:
 
 2. Select one or more worksheets to share, and click the **Share** icon.
 
-    ![]({{ site.baseurl }}/images/share_worksheets.png)
+    ![]({{ site.baseurl }}/images/share-worksheets.png)
 
 3. Click **+ Add users or groups** and select users or groups that you want to share with.
 

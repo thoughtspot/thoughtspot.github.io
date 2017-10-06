@@ -18,9 +18,9 @@ You can share with groups and with individual people. You can share several diff
 
 |Object type|Description|Default security model|
 |-----------|-----------|----------------------|
-|Uploaded data|Data that was uploaded using a Web browser.|Only the user who uploaded the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other people or groups. See [Share uploaded data](share_user_imported_data.html#)|
-|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [share a pinboard](/end-user/pinboards/share_pinboards.html#)|
-|Answers|The result of a single search.|Anyone who can view an answer can share it. See [share answers](/end-user/pinboards/share_answers.html)|
+|Uploaded data|Data that was uploaded using a Web browser.|Only the user who uploaded the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other people or groups. See [Share uploaded data](share-user-imported-data.html#)|
+|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [share a pinboard](/end-user/pinboards/share-pinboards.html#)|
+|Answers|The result of a single search.|Anyone who can view an answer can share it. See [share answers](/end-user/pinboards/share-answers.html)|
 
 ## Who can share and to whom
 

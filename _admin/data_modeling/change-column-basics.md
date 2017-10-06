@@ -62,5 +62,5 @@ You can change the column type by modifying the **Column Type** setting.
 
 ## Related information  
 
-- [Model the data for searching](semantic_modeling.html#)
-- [Hide column or define a column synonym](change_visibility_synonym.html#)
+- [Model the data for searching](semantic-modeling.html#)
+- [Hide column or define a column synonym](change-visibility-synonym.html#)

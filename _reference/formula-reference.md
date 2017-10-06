@@ -20,22 +20,22 @@ These functions can be used to aggregate data.
 
 These functions can be used to convert data from one data type to another. Conversion to or from date data types is not supported.
 
-{% include content/conversion_func.md %}
+{% include content/conversion-func.md %}
 
 ## Date functions
 
-{% include content/date_func.md %}
+{% include content/date-func.md %}
 
 ## Mixed functions
 
 These functions can be used with text and numeric data types.
 
-{% include content/mixed_func.md %}
+{% include content/mixed-func.md %}
 
 
 ## Number functions
 
-{% include content/number_func.md %}
+{% include content/number-func.md %}
 
 ## Operators
 
@@ -43,4 +43,4 @@ These functions can be used with text and numeric data types.
 
 ## Text functions
 
-{% include content/text_func.md %}
+{% include content/text-func.md %}

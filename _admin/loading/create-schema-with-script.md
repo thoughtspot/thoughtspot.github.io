@@ -40,8 +40,8 @@ cat safest_script_ever.sql | tql --allow_unsafe
 7. Save the file.
 8. Run the script using one of these methods:
 
-    -   [Import a schema (use the SQL editor)](upload_sql_script.html#).
+    -   [Import a schema (use the SQL editor)](upload-sql-script.html#).
     -   [Log in to the shell](/admin/setup/logins.html#ssh-to-the-appliance), copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
     ```
-    $ cat create_schema.sql | tql
+    $ cat create-schema.sql | tql
     ```

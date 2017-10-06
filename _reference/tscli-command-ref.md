@@ -83,7 +83,7 @@ Use this subcommand to do the following:
 
     * `--mode {full,light,dataless}`
 
-        Mode of backups. To understand these diffrent modes see [Understand backup modes](/admin/backup_restore/backup_modes.html).
+        Mode of backups. To understand these diffrent modes see [Understand backup modes](/admin/backup_restore/backup-modes.html).
 
     * `--type {full,incremental}`
         Type of backup.(Incremental `incremental` is not implemented yet) (default: full)
@@ -354,7 +354,7 @@ This subcommand has the following actions:
 
    Configures LDAP using an interactive script. You can see detailed
    instructions for setting up LDAP in <a class="xref"
-   href="/admin/setup/about_LDAP.html" title="Some companies use
+   href="/admin/setup/about-LDAP.html" title="Some companies use
    LDAP (Lightweight Directory Access Protocol) to manage user authentication.
    Using LDAP provides security and makes user management more
    centralized.">About LDAP integration</a>.
@@ -633,7 +633,7 @@ tscli saml [-h] {configure,purge-configuration}
 
 This subcommand has the following actions:
 
-* `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML](/admin/setup/configure_SAML_with_tscli.html).
+* `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML](/admin/setup/configure-SAML-with-tscli.html).
 * `tscli saml purge-configuration` Purges any existing SAML configuration.
 
 ### scheduled-pinboards
@@ -675,7 +675,7 @@ This subcommand takes supports the following actions:
 tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
 ```
 
-Learn more about snapshots and backups see the [Understand the backup strategies](/admin/backup_restore/choose_strategy.html) documentation.
+Learn more about snapshots and backups see the [Understand the backup strategies](/admin/backup_restore/choose-strategy.html) documentation.
 This subcommand supports the following actions:
 
 * `tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type

@@ -42,4 +42,4 @@ To make changes to the ODBC settings on Windows:
 8. Test the settings by clicking **Test Connection**.
 9. If everything is working, click **OK**, to save your settings.
 
-   If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting_ODBC.html#).
+   If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting-ODBC.html#).

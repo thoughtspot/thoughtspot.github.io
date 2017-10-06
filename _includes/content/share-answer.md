@@ -8,7 +8,7 @@ Whenever you view an answer, you have the option of sharing it with others. It w
 
 4. Click **+ Add users or groups** and select users or groups that you want to share with.
 
-    ![]({{ site.baseurl }}/images/share_answer.png)
+    ![]({{ site.baseurl }}/images/share-answer.png)
 
 5. Configure the level of access by selecting from the dropdown list. You can select:
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared answer.

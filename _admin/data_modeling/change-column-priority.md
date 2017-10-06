@@ -20,4 +20,4 @@ You should only use numbers between 1-100 in this field. It is recommended to as
 
 ## Related information  
 
-[Model the data for searching](semantic_modeling.html#)
+[Model the data for searching](semantic-modeling.html#)

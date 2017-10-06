@@ -10,5 +10,5 @@ ThoughtSpot can be set up with Security Assertion Markup Language \(SAML\) to en
 
 For basic instructions on configuring SAML, use one of these procedures:
 
--   [Configure SAML for SSO](ts_as_sp.html), for instructions to configure SAML in ThoughtSpot.
--   [Configure SAML with CA SiteMinder](configure_SAML_siteminder.html#), for configuring SAML specifically with CA SiteMinder.
+-   [Configure SAML for SSO](ts-as-sp.html), for instructions to configure SAML in ThoughtSpot.
+-   [Configure SAML with CA SiteMinder](configure-SAML-siteminder.html#), for configuring SAML specifically with CA SiteMinder.

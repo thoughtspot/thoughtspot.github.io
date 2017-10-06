@@ -8,4 +8,4 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/share_pinboard.md %}
+{% include content/share-pinboard.md %}

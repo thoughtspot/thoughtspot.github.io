@@ -30,7 +30,7 @@ accessing it directly, because of the join condition. The worksheet acts like a
 materialized view. This means that it contains the results of a defined query in
 the form of a table.
 
-If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by [changing the inclusion rule for the worksheet](change_inclusion_rule.html#).
+If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by [changing the inclusion rule for the worksheet](change-inclusion-rule.html#).
 
 The answer returned when searching using a worksheet as the source can be different from the answer you get when using the table directly as a source. When using a worksheet as a source, even if you were to select fields that come from only one table in your search, any underlying joins to other tables will still be active. When using the table directly as the source, you will see every value.
 

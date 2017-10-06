@@ -15,7 +15,7 @@ This example demonstrates using the cumulative_sum formula, also known as a runn
 
 2. In the upper right hand side of the table, click **Actions** and select **Add formula**.
 
-     ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
+     ![]({{ site.baseurl }}/images/create-formula_in_answer.png "Create a new formula in an answer")
 
 3. Enter the cumulative_sum formula, providing a measure and one or more attributes. The example will return the sum of revenue, accumulated by the commit date.
 

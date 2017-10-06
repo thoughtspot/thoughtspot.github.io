@@ -22,8 +22,8 @@ To change the primary key, first remove any existing primary key, and then defin
 
 To change the primary key of a table:
 
-1. [Create a manual snapshot](../backup_restore/overview_snapshot.html).
-2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
+1. [Create a manual snapshot](../backup_restore/overview-snapshot.html).
+2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
 3. Drop the existing primary key (if any), by issuing a command like this example:
 
     ```
@@ -55,8 +55,8 @@ To change a relationship between two tables, first remove any existing relations
 
 To change the relationship between tables:
 
-1. [Create a manual snapshot](../backup_restore/overview_snapshot.html).
-2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
+1. [Create a manual snapshot](../backup_restore/overview-snapshot.html).
+2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
 3. Issue the command to drop the existing relationship, by issuing a command like one of these examples:
     -   Drop a foreign key by name, if it was given a name when it was defined:
 
@@ -113,8 +113,8 @@ You can use these steps to do any of these operations:
 
 To change the sharding on a table:
 
-1. [Create a manual snapshot](../backup_restore/overview_snapshot.html).
-2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep_schema_for_load.html#connect-with-tql).
+1. [Create a manual snapshot](../backup_restore/overview-snapshot.html).
+2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
 3.  Issue the command to change the sharding using this syntax:
 
     ```

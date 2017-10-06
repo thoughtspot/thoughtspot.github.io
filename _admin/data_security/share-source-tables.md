@@ -11,4 +11,4 @@ By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it 
 
 Use caution when sharing tables, because any objects created from them will have dependencies on the tables and their underlying structure. Objects created from tables can include worksheets, answers, and pinboards. This means that if a user wants to drop or modify a table, any object that depends upon it must be edited or removed first, to remove the dependency. For this reason, it is a best practice to only grant the **Edit** permission on tables to a small number of users.
 
-{% include content/share_data.md %}
+{% include content/share-data.md %}

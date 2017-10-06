@@ -19,7 +19,7 @@ When you add a value to your search, it becomes a filter. To add a filter from t
 
 2. Click outside of the search bar or push enter to apply your filter.
 
-Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](/complex-search/pinboard_filters.html#).
+Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](/complex-search/pinboard-filters.html#).
 
 
 ## Where filters appear in ThoughtSpot
@@ -34,7 +34,7 @@ In an answer or a pinboard, filters appear just below the title. For pinboards, 
 
 If you ever find that your search or pinboard does not appear to contain all the data you want to see, check for any existing filters and remove them by clicking the **X** to see all the data.
 
-{% include note.html content="Filtering on NULL and empty values is a special case. You can find out more about how these values are represented and how to filter for them in [About filtering on null, blank, or empty values](about_filters_for_null.html#)." %}
+{% include note.html content="Filtering on NULL and empty values is a special case. You can find out more about how these values are represented and how to filter for them in [About filtering on null, blank, or empty values](about-filters_for_null.html#)." %}
 
 ## Simple filters
 
@@ -48,4 +48,4 @@ If you have a large worksheet or table with thousands or millions of rows, you m
 
 Bulk filters can be very useful when you have a very large worksheet or table. You can use them to filter a large list of values easily. For example, this is useful if you want to only search on a list of products that your manager sent to you in an email. You can cut and paste those values into the bulk filter box to quickly generate a report or chart that includes only those items of interest.
 
-You can [create a bulk filter](/complex-search/create_bulk_filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.
+You can [create a bulk filter](/complex-search/create-bulk-filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.
