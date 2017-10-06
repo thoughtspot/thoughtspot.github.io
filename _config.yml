@@ -15,6 +15,10 @@ timezone                 : America/Tijuana
 # google_analytics       : UA-00000000-0 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+
 # Files and directories that jekyll will exclude from the build output
 exclude:
   - .idea/

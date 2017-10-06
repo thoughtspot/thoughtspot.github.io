@@ -213,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 163)
+  jekyll-sitemap
 
 BUNDLED WITH
    1.15.3

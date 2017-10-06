@@ -76,9 +76,6 @@ entries:
         - title: About LDAP integration
           url: /admin/setup/about-LDAP.html
           output: web, admBk
-        - title: Configure OpenLDAP
-          url: /admin/setup/LDAP-config-openLDAP.html
-          output: web, admBk
         - title: Configure LDAP for Active Directory
           url: /admin/setup/LDAP-config-AD.html
           output: web, admBk
@@ -574,9 +571,6 @@ entries:
         - title: Treemap charts
           url: /end-user/search/about-treemap-charts.html
           output: web,ugBk
-        - title: Heatmap charts
-          url: /end-user/search/about-heatmap-charts.html
-          output: web,ugBk
         - title: Line column charts
           url: /end-user/search/line-column-charts.html
           output: web,ugBk
@@ -872,10 +866,10 @@ entries:
       output: web,apgBk
       levelTwoItems:
       - title: About the JavaScript API
-        url: /app-integrate/JSAPI/about-JSAPI.html
+        url: /app-integrate/JSAPI/about-JS-API.html
         output: web,apgBk
       - title: Enable the JavaScript API
-        url: /app-integrate/JSAPI/enable-JSAPI.html
+        url: /app-integrate/JSAPI/enable-JS-API.html
         output: web,apgBk
     - levelTwoTitle: REST API
       output: web,apgBk
@@ -1117,7 +1111,7 @@ entries:
       url: /reference/intro-reference.html
       output: web,admBk,ugBk
     - title: Keyword reference
-      url: /reference/keyword-reference.html
+      url: /reference/keywords.html
       output: web,admBk,ugBk
     - title: TQL reference
       url: /reference/sql-cli-commands.html
