@@ -42,14 +42,14 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
     3. **Password** and **Confirm Password**: A temporary password.
     4. **E-mail Address**: The user's email address. This is used for notification when another user shares something with them.
-    5. **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about-row-security.html#) does not apply to them.
+    5. **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data-security/about-row-security.html#) does not apply to them.
 
 6. Click **Save** to create the user.
 
     When you create a new user, the groups they belong to define the user's:
 
     -   Privileges - the actions they are allowed to do, which are defined when you [Add a group and set security privileges](add-group.html).
-    -   Permissions - the data they can access and view, which is defined when you [Data security](../data_security/sharing-security-overview.html#).
+    -   Permissions - the data they can access and view, which is defined when you [Data security](../data-security/sharing-security-overview.html#).
 
 ## Edit or delete a user
 

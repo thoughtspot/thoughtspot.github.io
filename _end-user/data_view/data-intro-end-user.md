@@ -24,5 +24,5 @@ Use the filters at the top of the page to find the data you are interested in. F
 
 -   [View your data profile](/admin/loading/view-your-data-profile.html)  
 Basic column data profile information is available under Profile on the Data page.
--   [About sharing](/end-user/data_view/sharing-for-end-users.html)  
+-   [About sharing](/end-user/data-view/sharing-for-end-users.html)  
 Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. This applies to searches, pinboards, and any data you upload.

@@ -7,7 +7,7 @@ summary: "Before you start a new search, make sure you have chosen the right dat
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To begin a new search, you must first select your data sources by clicking on the **Choose Sources** button. You will see a list of data sources that have been shared with you. The data sources are usually created by your administrator, though you can also [upload your own data](/end-user/data_view/generate-flat-file.html).
+To begin a new search, you must first select your data sources by clicking on the **Choose Sources** button. You will see a list of data sources that have been shared with you. The data sources are usually created by your administrator, though you can also [upload your own data](/end-user/data-view/generate-flat-file.html).
 
  ![]({{ site.baseurl }}/images/choose_sources.png "Choose sources")
 

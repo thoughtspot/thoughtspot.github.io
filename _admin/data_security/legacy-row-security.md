@@ -111,7 +111,7 @@ To obtain the security file:
 
 Edit the security file to add row level security to tables.
 
-Before you can add row level securit, create the appropriate groups within ThoughtSpot, if they don't already exist. You can create groups and add users to them by following the procedures in [Manage users, groups, and privileges](../users_groups/about-users-groups.html#).
+Before you can add row level securit, create the appropriate groups within ThoughtSpot, if they don't already exist. You can create groups and add users to them by following the procedures in [Manage users, groups, and privileges](../users-groups/about-users-groups.html#).
 
 You can edit the security file using Microsoft Excel or a compatible tool. You will need to copy and paste some of the required information from the model file.
 

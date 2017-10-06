@@ -138,7 +138,7 @@ After you set the custom support contact information, here's where your users wi
 
 -   In the Help Center, when they click **Contact Support**.
 
-     ![]({{ site.baseurl }}/images/help_center_support_contact.png "Help Center support contact")
+     ![]({{ site.baseurl }}/images/help-center_support_contact.png "Help Center support contact")
 
 -   In error messages, when they click **What Happened?**
 

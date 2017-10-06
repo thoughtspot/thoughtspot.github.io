@@ -32,9 +32,9 @@ Typically, the **ALL** group has a common set of privileges applies such as the 
 
 Privileges are additive, meaning that if a user belongs to more than one group, they will have the highest level of privileges from among the groups they are a member of. They are also inherited from the parent, so that a sub-group gets all the same privileges of its parent, all the way up the group hierarchy.
 
-If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data_security/about-row-security.html#) does not apply to them.
+If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security](../data-security/about-row-security.html#) does not apply to them.
 
-Permissions to see and edit tables, worksheets, and pinboards are set when you share them with users and groups, as described in the topic [Data security](../data_security/sharing-security-overview.html#).
+Permissions to see and edit tables, worksheets, and pinboards are set when you share them with users and groups, as described in the topic [Data security](../data-security/sharing-security-overview.html#).
 
 The following table shows the intersection of user privilege and ability:
 
@@ -42,5 +42,5 @@ The following table shows the intersection of user privilege and ability:
 
 ## Related information
 
--   [Add a group and set security privileges](/admin/users_groups/add-group.html)  
--   [Add a user](/admin/users_groups/add-user.html)  
+-   [Add a group and set security privileges](/admin/users-groups/add-group.html)  
+-   [Add a user](/admin/users-groups/add-user.html)  

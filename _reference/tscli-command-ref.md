@@ -83,7 +83,7 @@ Use this subcommand to do the following:
 
     * `--mode {full,light,dataless}`
 
-        Mode of backups. To understand these diffrent modes see [Understand backup modes](/admin/backup_restore/backup-modes.html).
+        Mode of backups. To understand these diffrent modes see [Understand backup modes](/admin/backup-restore/backup-modes.html).
 
     * `--type {full,incremental}`
         Type of backup.(Incremental `incremental` is not implemented yet) (default: full)
@@ -675,7 +675,7 @@ This subcommand takes supports the following actions:
 tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
 ```
 
-Learn more about snapshots and backups see the [Understand the backup strategies](/admin/backup_restore/choose-strategy.html) documentation.
+Learn more about snapshots and backups see the [Understand the backup strategies](/admin/backup-restore/choose-strategy.html) documentation.
 This subcommand supports the following actions:
 
 * `tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type

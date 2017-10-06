@@ -32,7 +32,7 @@ Click the logo to go to the home page. The home page contains:
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-To learn more about this section, visit [About search](/end_user_search/search.html#).
+To learn more about this section, visit [About search](/search/search.html#).
 
 ## Answers
 
@@ -48,7 +48,7 @@ To learn more about pinboards, visit [About pinboards](../pinboards/about-pinboa
 
 **DATA** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
 
-To learn more about this section, visit [Working with data](../data_view/data-intro-end-user.html#).
+To learn more about this section, visit [Working with data](../data-view/data-intro-end-user.html#).
 
 ## Admin
 

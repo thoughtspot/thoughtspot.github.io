@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references](/reference/keywords.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
 
- ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
+ ![]({{ site.baseurl }}/images/help-center_keywords.png "Help center keywords list")
 
  Within the help center, you’ll find videos and documentation that pertain to the current version of ThoughtSpot. Here is where you can also find a list of keywords. You can expand each section to see which keywords are available and examples on how to use them.
 
