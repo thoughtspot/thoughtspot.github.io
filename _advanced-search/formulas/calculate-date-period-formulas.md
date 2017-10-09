@@ -1,14 +1,11 @@
 ---
-title: [elephant]
+title: [Calculate date formulas]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-# Calculate date formulas
-
 Calculating date formulas is useful when you want to compare data from different date periods.
 
 Here are some examples of using date formulas:

@@ -811,9 +811,6 @@ entries:
     - levelTwoTitle: Reference
       output: web,cngBk
       levelTwoItems:
-      - title: Introduction
-        url: /data-connect/reference/reference-intro.html
-        output: web,cngBk
       - title: Login for administration
         url: /data-connect/reference/logins.html
         output: web,cngBk

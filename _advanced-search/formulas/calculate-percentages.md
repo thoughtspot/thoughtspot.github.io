@@ -1,14 +1,11 @@
 ---
-title: [elephant]
+title: [Calculate percentages]
 tags:
 keywords: tbd
 last_updated: tbd
-summary: "blerg"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-# Calculate percentages
-
 Calculating percentages is useful when you want to see, for example, the percentage revenue generated from each channel (online, stores, partner, etc.).
 
 Here is a common percentage example:
