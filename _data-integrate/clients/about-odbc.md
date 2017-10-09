@@ -38,13 +38,44 @@ The ODBC driver supports these data types:
 -   CHAR
 -   VARCHAR
 
-**Important:** The ETL tool must add a data transformation step if the source column data type does not exactly match the target's, ThoughtSpot's, column data type. The driver does not do any implicit conversions.
+## Source and target data compatibility
 
--   **[Install the ODBC Driver on Windows](../../data_integration/clients/install-odbc-windows.html)**  
-Use this procedure to obtain the Microsoft Windows ODBC driver and install it.
--   **[Install the ODBC Driver on Linux](../../data_integration/clients/install-odbc-linux.html)**  
-Use this procedure to obtain the Linux ODBC driver and install it.
--   **[Install the ODBC Driver on Solaris](../../data_integration/clients/install-odbc-solaris.html)**  
-Use this procedure to obtain the Solaris ODBC driver and install it.
--   **[Best Practices for Using ODBC](../../data_integration/clients/odbc-best-practices.html)**  
-To successfully use ODBC, following these best practices is recommended.
+By default, ThoughtSpot takes a permissive approach to datatype compatibility
+between source and target in ODBC. As much as possible ThoughtSpot automatically
+converts incoming "compatible" input data to the desired ThoughtSpot target
+datatype. At installation time, your customer support engineer can assist you in
+configuring a stricter behavior for ODBC.
+
+Following table describes the conversion matrix between SQL datatypes and
+ThoughtSpot datatypes.
+
+
+| Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE |TIME|DATETIME|
+|-------------------------------|----|---- |---- |---- |---- | ---- |---- | ----|----|
+|`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_SMALLINT`                 | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_INTEGER`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_BIGINT`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_CHAR`                     | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
+|`SQL_VARCHAR`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
+|`SQL_LONGVARCHAR`              | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
+|`SQL_BINARY`                   |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_VARBINARY`                |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_LONGVARBINARY`            |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_DOUBLE`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_REAL`                     | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_FLOAT`                    | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_NUMERIC`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+|`SQL_GUID`                     |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_INTERVAL_MINUTE_TO_SECOND`|     |      |      |       |      |  Y   |     |      |        |
+|`SQL_INTERVAL_HOUR_TO_SECOND`  |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_INTERVAL_HOUR_TO_MINUTE`  |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_INTERVAL_DAY_TO_SECOND`   |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_INTERVAL_DAY_TO_MINUTE`   |     |      |      |       |      |  Y   |     |      |        |
+
+
+If a conversion is not possible, an error is returned to the client to indicate
+conversion failure.  The ETL tool must add a data transformation step if the
+source column data type does not exactly match the target's, ThoughtSpot's,
+column data type. The driver does not do any implicit conversions. 
