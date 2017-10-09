@@ -84,7 +84,8 @@ The following table lists some additional backup commands you can use.
 
 |To|Command|
 |--|--------|
-|List present backup policies.|tscli backup-policy ls|
+|List present backup policies.|`tscli backup-policy ls`|
+|Show a backup policy.|`tscli backup-policy show <name>`|
 |Check the status of a policy.|`tscli backup-policy status <name>`|
 |Change an existing policy.|`tscli backup-policy update <name>`|
 |Disable or enable an existing policy.|`tscli backup-policy disable` or `enable`|
