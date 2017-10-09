@@ -90,7 +90,28 @@ Under this policy, a snapshot is taken every hour starting at midnight. You can 
 
 Using this frequency, a total of 24 snapshots are taken in a day.
 
-|1|2|3|4|5|6|7|8|9|10|11|12|13|14|...|24|
+<table class="scheduler">
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>…</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
 
 If you were to specify a `number` of 2, the frequency changes. The first execution would start at midnight but subsequent executions would happen every 2 hours as shown here:
 
