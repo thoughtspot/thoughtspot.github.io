@@ -49,6 +49,9 @@ Headlines display summary information of a table result. Headlines contain summa
 
  ![]({{ site.baseurl }}/images/headlines.png "Headlines at the bottom of a table")
 
+ThoughtSpot automatically creates up to 20 headlines for each table. Your
+ThoughtSpot configuration can be changed to accommodate more if needed.
+
 You can modify how you'd like the value to be displayed by clicking the dropdown on a headline and selecting a different type of aggregation. The usual available aggregations are total, average, standard deviation, variance, minimum, and maximum. There are also unique count and total count values available for the appropriate columns.
 
 To add a headline to a pinboard, hover over it and click the **Add to pinboard** icon.
