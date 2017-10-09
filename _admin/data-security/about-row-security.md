@@ -29,4 +29,6 @@ Prior to version 3.3, you had to use the security file which you edit in Excel t
 
 ## RLS and administrators
 
-If a user is a member of a group that has the privilege **Has administration privileges**, that user will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and no type of row level security applies to them.
+If your installation has enabled the **Can Adminsiter RLS** privilege, users groups with this privilege (directly or indirectly) can bypass row-level security (RLS) rules. This privilege can only be assigned by a user who already **Has administration privilege**.
+
+Users with **Has administration privilege** are administrators and can see can see all data sources, and no type of row level security applies to them. 
