@@ -13,15 +13,11 @@ Properties of your data such as Column Names, Column Visibility, Column and Data
 
 ## Overview of the modeling process
 
-Data modeling is a three steps process:
+The data formats you use in your system are controlled by the modeling file, an
+Excel file. Data modeling is a three steps process where you download the model
+file, edit it, and upload your changes back into the system.
 
-1.  Download the model file.
-2.  Change settings in the model file.
-3.  Upload the edited model file.
-
-You can edit the data modeling file using Microsoft Excel, vi/vim, or a compatible tool. In each row of the modeling file, all the data properties corresponding to a column from your data are listed. You can modify many of these properties by typing in the new value.
-
-Remember these important guidelines when editing the model file:
+You can edit the data modeling file using Microsoft Excel, vi/vim, or a compatible tool. In each row of the modeling file, all the data properties corresponding to a column from your data are listed. You can modify many of these properties by typing in the new value. Remember these important guidelines when editing the model file:
 
 -   Do not modify any value in a column which contains **DoNotModify** in the field under the column heading.
 -   Make sure to keep the file in the same format as it had when you downloaded it (CSV text file).
@@ -33,11 +29,11 @@ Before you can make changes to the model file, you need to download it. Then you
 First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data-modeling-settings.html#). To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click on the **admin** tab in the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Business Data Model**.
+3. Click on **Data Management**.
 4. Click **Download model.xls**.
 
     ![]({{ site.baseurl }}/images/download_model.png)
@@ -93,5 +89,4 @@ To upload the model file:
 ## Related information  
 
 * [Data modeling settings](data-modeling-settings.html#)
-
 * [Model data in the ThoughtSpot application](model-data-in-UI.html)

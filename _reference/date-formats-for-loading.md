@@ -6,17 +6,19 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or tsload.
+This is a list of all the date and time formats you can load into ThoughtSpot, whether using data upload from the browser or the `tsload` command.  
+
+These formats do not change how data is displayed in tables and charts. To change these, a user with administrative rights can change and upload the data modeling file. See the _Admin Guide_ for more information about data modeling settings.
 
 ## Using ThoughtSpot Loader
 
-For date data types, the default format is yearmonthday e.g. "Dec 30th, 2001" and is represented as 20011230. Use the date format specifications supported in the [strptime library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
+For date data types, the default format is `yearmonthday` , for example,  `Dec 30th, 2001` and is represented as `20011230`. Use the date format specifications supported in the [strptime library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
 
-For time and datetime data types, the default is yearmonthday hour:minute:second e.g. Dec 30th, 2001 1:15:12 and is represented as 20011230 01:15:12. Use the datetime format specifications supported in the [strptime library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
+For time and datetime data types, the default is `yearmonthday hour:minute:second`, for example,  `Dec 30th, 2001 1:15:12` and is represented as 20011230 01:15:12. Use the datetime format specifications supported in the [strptime library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
 
 ## Using data upload from a browser
 
-These date and time formats are supported in an Excel or CSV file when uploading via the browser:
+These date and time formats are supported in a source Excel or CSV file when uploading via the browser:
 
 -   1/30/2014
 -   2014-01-30
