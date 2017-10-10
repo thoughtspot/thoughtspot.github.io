@@ -73,7 +73,7 @@ To configure the connection to the secure file server:
     $ tscli fileserver configure --user <user_name> [--password <password>]
     ```
 
-    Note that if you do not use the optional `--password` parameter, you will be prompted to enter the password.
+    If you do not supply the `--password` parameter, you are prompted to enter it.
 
 
 ## Enable call home capability

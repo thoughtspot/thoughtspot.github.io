@@ -295,7 +295,7 @@ This subcommand has the following actions:
   Accepts these flags
 
   * `--user` *`USER`* Username of fileserver (default: None)
-  * `--password` *`PASSWORD`* Password of fileserver (default: None)
+  * `--password` *`PASSWORD`* Password of fileserver (default: None). This is required and the command prompts you for it if you do not supply it.
   * `--file_name` *`FILE_NAME`* Local file that needs to be uploaded (default: None)
   * `--server_dir_path` *`SERVER_DIR_PATH`* Directory path on fileserver. (default: None) The *`SERVER_DIR_PATH`* parameter specifies the directory to which you want
     to upload the file. It is based on your customer name, and takes the form `/Shared/support/*`customer_name`*`.
