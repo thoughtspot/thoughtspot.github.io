@@ -11,11 +11,11 @@ When using the REST API, authentication is achieved through SAML. After authenti
 
 ## Authentication
 
-Before you can use the REST API, you must authenticate to ThoughtSpot using SAML with the [JavaScript API](../JSAPI/about-JS-API.html#).
+Before you can use the REST API, you must authenticate to ThoughtSpot using SAML with the [JavaScript API](/app-integration/JSAPI/about-JS-API.html#).
 
 ## Cross Domain Verification
 
-You'll need to enable cross domain verification when using the REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API](../JSAPI/enable-JS-API.html#) includes information on how to enable this.
+You'll need to enable cross domain verification when using the REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API](/app-integration/JSAPI/enable-JS-API.html#) includes information on how to enable this.
 
 ## REST API Capabilities
 

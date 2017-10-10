@@ -14,16 +14,16 @@ Data modeling is a very lightweight process compared to what you may have experi
 
 You can change these settings in two ways, both of which have the same effect:
 
-1.  [Model data in the Web interface.](../../shared/conrefs/../../admin/data-modeling/model-data-in-UI.html)
-2.  [Model data in bulk in the model file.](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
+1.  [Model a data table.](../../shared/conrefs/../../admin/data-modeling/model-data-in-UI.html)
+2.  [Set the system-wide data model](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
 
 Choose the model file method if you want to make many changes in one bulk operation.
 
 Modeling the data allows you to give the columns more search friendly names or predefine how they can be explored and aggregated. When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users.
 
--   **[Model data in the ThoughtSpot application](/admin/data-modeling/model-data-in-UI.html)**  
+-   **[Change an table's data model](/admin/data-modeling/model-data-in-UI.html)**  
 To make modeling settings for a table you've just loaded, or to make a quick change to existing settings, use the ThoughtSpot web interface. You can adjust the **Columns** settings from the data management listing.
--   **[Model data in bulk in the modeling file](/admin/data-modeling/edit-model-file.html)**  
+-   **[Set the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
 -   **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.

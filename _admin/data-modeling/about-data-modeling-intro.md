@@ -7,32 +7,42 @@ summary: "Modeling, tagging, and adding links between your data sources can make
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After loading data, you will create the semantic data model that makes the data easy to search. You can make these settings either through the Web interface or by using the model file.
+Data modeling allows you to define metadata and other aspects of your data.  For
+example, you can give data columns search friendly names or predefine how they
+can be explored and aggregated.
 
-You can start searching your data without doing any modeling, creating relationships, or tagging. But putting some thought into these will make the data even easier and more intuitive to search for your end users.
+When you load data, ThoughtSpot has defaults for data modeling metadata. After
+loading data, you can start searching your data without doing any data modeling,
+creating relationships, or tagging. However, since you know your data best, you
+can customize the modeling settings. Putting some thought into these will make
+the data even easier and more intuitive to search for your end users.
 
 
 ## Where to model data
 
-Data modeling is a very lightweight process compared to what you may have experienced in other tools. It enables you to change some of the settings (or properties) of the data so that it becomes more searchable.
+Data modeling is a very lightweight process compared to what you may have
+experienced in other tools.  You can configure the model for an individual
+data table or you can configure the system-wide data model using the **ADMIN > Data
+Management** page.
 
-You can change these settings in two ways, both of which have the same effect:
+* [Model a data table](/admin/data-modeling/model-data-in-UI.html)
+* [Set the system-wide data model](/admin/data-modeling/edit-model-file.html#)
 
-* [Model data in the Web interface.](../../shared/conrefs/../../admin/data-modeling/model-data-in-UI.html)
-* [Model data in bulk in the model file.](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
-
-Choose the model file method if you want to make many changes in one bulk operation.
+Both of these methods, have the same effect, they improve search. Moreover,
+while they have different effects of scale, they use the same mechanisms to
+accomplish these effects.
 
 ## Modeling topics
 
-Modeling the data allows you to give the columns more search friendly names or predefine how they can be explored and aggregated. When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users.
+The following topics explain how to model your data:
 
--   **[Model data in the ThoughtSpot application](/admin/data-modeling/model-data-in-UI.html)**  
-To make modeling settings for a table you've just loaded, or to make a quick change to existing settings, use the ThoughtSpot web interface. You can adjust the **Columns** settings from the data management listing.
--   **[Model data in bulk in the modeling file](/admin/data-modeling/edit-model-file.html)**  
-Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
--   **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
-Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.-   **[Link tables using relationships](/admin/data-modeling/about-relationships.html)**  
-You can link tables by creating relationships between their columns. Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
--   **[About stickers](/admin/data-modeling/stickers-concept.html)**  
+- **[Change an table's data model](/admin/data-modeling/model-data-in-UI.html)**  
+Explains how to make modeling settings for a table you've just loaded, or to make a quick change to existing settings.
+- **[Set the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
+Explains how to define a default data model to use for data system-wide.
+- **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
+Explains the possible data model settings and their accepted values. These are the same for a table or the system.
+- **[Link tables using relationships](/admin/data-modeling/about-relationships.html)**  
+Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
+- **[About stickers](/admin/data-modeling/stickers-concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.

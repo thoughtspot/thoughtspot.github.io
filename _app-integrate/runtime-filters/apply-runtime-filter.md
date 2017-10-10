@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. The filters are specified in the called URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 
-1.  [Enable the JavaScript API \(JS API\)](../JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
+1.  [Enable the JavaScript API \(JS API\)](/app-integration/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
 2.  Use the [Data API](../data-api/use-data-api-read.html#) or [Visualization Embedding](../embedding-viz/embed-a-viz.html#) to retrieve the answer or pinboard you want to use.
 
 Now you are ready to add a runtime filter to your Data API call or Embedded object:

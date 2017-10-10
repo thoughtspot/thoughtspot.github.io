@@ -57,7 +57,7 @@ For recurring data loads and for scripting loads, use the ThoughtSpot Loader (ts
     <tr>
       <td><code class="highlighter-rouge">--date_format &lt;date_formatmask&gt;</code></td>
       <td>Specifies the format string for date values.</td>
-      <td>The default format is yearmonthday e.g. “Dec 30th, 2001” and is represented as 20011230. Use the date format specifications supported in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html">strptime library function</a>.</td>
+      <td>The default format is <code>yearmonthday</code> e.g. “Dec 30th, 2001” and is represented as <code>20011230</code>. Use the date format specifications supported in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html">strptime library function</a>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">--date_time_format &lt;date_formatmask&gt; &lt;time_formatmask&gt;</code></td>

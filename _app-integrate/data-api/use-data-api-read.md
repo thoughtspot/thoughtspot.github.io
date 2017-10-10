@@ -7,7 +7,7 @@ summary: "This procedure shows how to use the REST API to get data out of Though
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)](../JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
+Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)](/app-integration/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
 
 Use this procedure to construct the URL you will use to call the REST API:
 

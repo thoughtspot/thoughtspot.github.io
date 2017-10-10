@@ -7,24 +7,33 @@ summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit many of these settings.
 
-{% include tip.html content="If you just want to make one or two quick changes, it will be faster to [Model data in the ThoughtSpot application](model-data-in-UI.html#) instead." %}
+When you load data, ThoughtSpot has defaults for data modeling metadata. You
+change these defaults using the data modeling file if you have access to the
+**ADMIN > Data Management** page. Properties of your data such as **Column
+Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
+Rank**, etc. are defined in the modeling file.
+
+{% include tip.html content="If you just want to change a subset of your data, use the [Change an table's data model](model-data-in-UI.html#) instead." %}
 
 ## Overview of the modeling process
 
 The data formats you use in your system are controlled by the modeling file, an
-Excel file. Data modeling is a three steps process where you download the model
-file, edit it, and upload your changes back into the system.
+Excel file. To make these changes you download the model file, change the model,
+and upload your changes back into the system.
 
-You can edit the data modeling file using Microsoft Excel, vi/vim, or a compatible tool. In each row of the modeling file, all the data properties corresponding to a column from your data are listed. You can modify many of these properties by typing in the new value. Remember these important guidelines when editing the model file:
+In each row of the modeling file, all the data properties corresponding to a
+column from your data are listed. You can modify many of these properties by
+typing in the new value. Remember these important guidelines when editing the
+model file:
 
 -   Do not modify any value in a column which contains **DoNotModify** in the field under the column heading.
--   Make sure to keep the file in the same format as it had when you downloaded it (CSV text file).
+-   Make sure to keep the file in the same format as it had when you downloaded it.
 
 ## Download the model file
 
-Before you can make changes to the model file, you need to download it. Then you can edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
+Before you can make changes to the model file, you need to download it. Then,
+you  edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 
 First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data-modeling-settings.html#). To obtain the model file:
 
@@ -89,4 +98,4 @@ To upload the model file:
 ## Related information  
 
 * [Data modeling settings](data-modeling-settings.html#)
-* [Model data in the ThoughtSpot application](model-data-in-UI.html)
+* [Change an table's data model](model-data-in-UI.html)
