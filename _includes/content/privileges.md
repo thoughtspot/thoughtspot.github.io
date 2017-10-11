@@ -36,7 +36,7 @@
     </tr>
     <tr>
       <td><strong>Can Administer RLS</strong></td>
-      <td>Users in groups with this privilege (directly or indirectly) can bypass row-level security (RLS) rules. This privilege can only be assigned by a user who already <b>Has administration privilege</b>. Your installation configuration may enable or disable this feature.</td>
+      <td>Users in groups with this privilege (directly or indirectly) can bypass row-level security (RLS) rules. This privilege can only be assigned by a user who already <b>Has administration privilege</b>. Your installation configuration may enable or disable this feature. By default, it is enabled.</td>
     </tr>
   </tbody>
 </table>
