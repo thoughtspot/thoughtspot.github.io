@@ -120,7 +120,7 @@ The following example shows you how to figure out the number of customers who bo
 
     And this formula will provide you with the number of galaxys that were bought.
 
-3. Using [nested formulas](/admin/../complex_searches/about-nested-formulas.html#), you can combine these two formulas.
+3. Using [nested formulas](/complex_searches/about-nested-formulas.html#), you can combine these two formulas.
 
     For example: `f1 = ipadcount + galaxycount`
 

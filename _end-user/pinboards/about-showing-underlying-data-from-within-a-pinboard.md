@@ -12,4 +12,4 @@ You can perform many of the same search actions on individual visualizations wit
 
      ![]({{ site.baseurl }}/images/edit_a_pinboard_visualization.png "Edit a pinboard visualization")
 
-    You will be taken to an edit mode, where you can [view and change sources](/admin/search/about-choosing-sources.html#), [search different columns](/admin/search/about-the-search-bar.html#), [change the view](/admin/../complex_searches/change-the-view.html#), [save the answer as a worksheet](/admin/../complex_searches/about-query-on-query.html), [add a formula](/admin/../complex_searches/add-formula-to-search.html#), and [change the chart](/admin/search/change-the-chart.html#).
+    You will be taken to an edit mode, where you can [view and change sources](/admin/search/about-choosing-sources.html#), [search different columns](/admin/search/about-the-search-bar.html#), [change the view](/complex_searches/change-the-view.html#), [save the answer as a worksheet](/complex_searches/about-query-on-query.html), [add a formula](/complex_searches/add-formula-to-search.html#), and [change the chart](/admin/search/change-the-chart.html#).

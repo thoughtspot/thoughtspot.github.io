@@ -64,9 +64,7 @@ The **Database** section has the following values:
        <tr>
         <td/>
         <td>ERROR</td>
-        <td>The table is invalid. Call <ph
-          conref="../../shared/conrefs/company.dita#ReusableComponent_a5g_bmp_34/support_name"
-         />.</td>
+        <td>The table is invalid. Call Customer Support.</td>
        </tr>
        <tr>
         <td>Search</td>

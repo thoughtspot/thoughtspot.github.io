@@ -51,4 +51,4 @@ To obtain and install the ODBC driver for Windows:
 
      ![]({{ site.baseurl }}/images/odbc_install_6_install_completed.png "Installation was successful")
 
-If you need to make changes to the ODBC configuration later, you can [Change the ODBC Configuration on Windows](change-odbc-windows.html#). For example, you may want to add a default schema or change the server IP address or the default database. You can also [add a new ODBC data source](/admin/../data_integration/clients/add-new-ODBC-source-windows.html). This capability supports connecting to multiple ThoughtSpot instances.
+If you need to make changes to the ODBC configuration later, you can [Change the ODBC Configuration on Windows](change-odbc-windows.html#). For example, you may want to add a default schema or change the server IP address or the default database. You can also [add a new ODBC data source](/data_integration/clients/add-new-ODBC-source-windows.html). This capability supports connecting to multiple ThoughtSpot instances.
