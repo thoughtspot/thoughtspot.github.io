@@ -45,11 +45,15 @@ Editing the data model file requires that you have administrative privileges.
 
 ### Profile-based number formatting
 
-Number formatting is set by default based on your profile's locale setting. This
-can been set in order to accommodate users in various geographical locations,
-primarily in the US and Europe regions. For example, if you are using
-ThoughtSpot in the US, the number formatting should look like this:
-`xxx,xxx.xx`. And in Europe, it should look like this: `xxx.xxx,xx`.
+Number formatting is set by default based on your ThoughtSpot profile's
+**Preferred locale** setting. You can set this value to accommodate your geographic locations.
+
+![]({{ site.baseurl }}/images/profile-locale.png "Specify Profile locale")
+
+
+For example, if you are using ThoughtSpot in the US, the number formatting
+should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
+`xxx.xxx,xx`.
 
 ## Date formats
 
