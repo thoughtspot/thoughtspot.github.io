@@ -72,7 +72,7 @@ sidebar: mydoc_sidebar
 -   [Model, link, and tag your data for searching](admin_guide/data-modeling/about-data-modeling-intro.html)
     -   [Model the data for searching](admin_guide/data-modeling/semantic-modeling.html)
         -   [Change an table's data model](admin_guide/data-modeling/model-data-in-UI.html)
-        -   [Set the system-wide data model](admin_guide/data-modeling/edit-model-file.html)
+        -   [Edit the system-wide data model](admin_guide/data-modeling/edit-model-file.html)
             -   [Download the model file](admin_guide/data-modeling/get_model_file.html)
             -   [Change settings in the model file](admin_guide/data-modeling/change_setting_model_file.html)
             -   [Upload the edited model file](admin_guide/data-modeling/upload_model_file.html)

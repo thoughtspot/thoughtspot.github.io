@@ -190,7 +190,7 @@ entries:
       - title: Change an table's data model
         url: /admin/data-modeling/model-data-in-UI.html
         output: web, admBk
-      - title: Set the system-wide data model
+      - title: Edit the system-wide data model
         url: /admin/data-modeling/edit-model-file.html
         output: web, admBk
       - levelThreeTitle: Data model settings

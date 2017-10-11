@@ -1,5 +1,5 @@
 ---
-title: [Make many model file edits]
+title: [Edit the system-wide data model]
 tags:
 keywords: tbd
 last_updated: tbd
@@ -8,13 +8,15 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you load data, ThoughtSpot has defaults for data modeling metadata. You
+When you load data, ThoughtSpot uses defaults for data modeling metadata. You
 change these defaults using the data modeling file if you have access to the
-**ADMIN > Data Management** page. Properties of your data such as **Column
-Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
-Rank**, etc. are defined in the modeling file.
+**ADMIN > Data Management** page. This means editing this file allows you to
+navigate and edit all your system's data columns at once, in bulk. When you (or
+your users) add new data to your system, this file changes as it expands to
+accommodate new data columns.
 
-{% include tip.html content="If you just want to change a subset of your data, use the [Change an table's data model](model-data-in-UI.html#) instead." %}
+{% include tip.html content="If you just want to change a subset of your data,
+use the [Change an table's data model](model-data-in-UI.html#) instead." %}
 
 ## Overview of the modeling process
 
@@ -30,12 +32,21 @@ model file:
 -   Do not modify any value in a column which contains **DoNotModify** in the field under the column heading.
 -   Make sure to keep the file in the same format as it had when you downloaded it.
 
+The model file contains a row for each column in your data set. It isn't unusual
+to have tens of thousand of rows in this file. You can change all or a subset of
+rows. You can edit the file to leave the heading rows and only those rows you
+want to change. This can make the file more convenient to work with.
+
+The model file must be saved as UTF-8 encoded. If your model file includes
+multi-byte characters, make sure you save it in the correct format or you won't
+be able to upload it after making your changes.
+
 ## Download the model file
 
 Before you can make changes to the model file, you need to download it. Then,
-you  edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
+you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 
-First, you'll download the model file, and then make changes to the appropriate [Data modeling settings](data-modeling-settings.html#). To obtain the model file:
+To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **admin** tab in the top navigation bar.
@@ -49,51 +60,64 @@ First, you'll download the model file, and then make changes to the appropriate 
 
 ## Edit the file and change the settings
 
-fter downloading the model file, you'll make changes to the settings using this procedure. Then you will upload the file again to apply your changes.
+You'll make changes to the settings using this procedure. To see a list of the
+changes you can make, see [Data modeling settings](data-modeling-settings.html#). You can edit any of the values in the
+model file, except for those where the words **DoNotModify** appear below the
+column header. To make changes in the model file:
 
-You can edit any of the values in the model file, except for those where the words **DoNotModify** appear below the column header. To make changes in the model file:
+1. Open the model file you downloaded (`model.xls`) in Excel, vi/vim, or a text editor.
 
-1. Open the model file you downloaded (model.xls) in Excel, vi/vim, or a text editor.
-    -   If you are using Excel, you may see a warning message. Click **Yes** to proceed.
+    If you are using Excel, you may see a warning message.
 
          ![]({{ site.baseurl }}/images/warning_open_model_excel.png)
 
-    -   If your model file includes multi-byte characters, edit the file using vi or vim. This is because model files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
+    Click `YES` to proceed.
+
 2. Find the column you want to modify.
+
    Descriptions of the meanings of the columns are listed in [Data modeling settings](data-modeling-settings.html#).
+
 3. Select the value you want to change.
 4. Type in the new value.
 5. After making all your changes, save the model file.
-    -   If you are using Excel, you will see a message. Click **Yes** to save the file.
 
-         ![]({{ site.baseurl }}/images/warning_save_model_excel.png)
+    If you are using Excel, you will see a message. Click `YES` to save the file.
 
-    -   If your model file includes multi-byte characters, edit the file using vi or vim. This is because model files containing multi-byte characters must be saved as UTF-8 encoded. Otherwise you won't be able to upload them after making your edits.
+    ![]({{ site.baseurl }}/images/warning_save_model_excel.png)
+
+    The model file must be saved as UTF-8 encoded. If your model file includes
+    multi-byte characters, edit the file using vi or vim to ensure the file is
+    saved in the correct format. Otherwise, you won't be able to upload it after
+    making your edits.
 
 ## Upload the edited file
 
-After you have made changes to the modeling file, you must upload it back to ThoughtSpot before the changes will take effect.
-
-Save the model file in the same format as it was when you downloaded it. If you are using Microsoft Excel to edit the file, you will see a warning when attempting to save it. Click **Yes** and save the file.
-
- ![]({{ site.baseurl }}/images/warning_save_model_excel.png)
-
-To upload the model file:
+After you have made changes to the modeling file, you must upload it back to
+ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Business Data Model**.
-4. Click **BROWSE YOUR FILES** to upload the model.xls file, or drag and drop it in the zone.
+3. Click on **Data Management**.
+4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 
     ![]({{ site.baseurl }}/images/upload_model.png)
 
-    If you receive an error message upon uploading the file, check that it does not include any multi-byte characters (i.e. Japanese or other multi-byte language characters). If it does, you'll need to download the file again and make your edits using vi or vim. Note that you may choose to remove all the rows you have not changed from the model file before uploading it. If you upload a model file that includes only the changed rows, you won't lose any of the pre-existing model file settings. This is a good option if your model file is causing an error on upload, but you aren't sure where in the model file the problem is.
+    If you receive an error message upon uploading the file, check that it does
+    not include any multi-byte characters (for example, Japanese or other multi-byte
+    language characters). If it does, you'll need to download the file again and
+    make your edits using vi or vim.
 
-    As soon as the file is uploaded, ThoughtSpot performs any necessary re-indexing for you automatically. Your new settings will be reflected within a few minutes.
+    If you choose to remove all the rows you have not changed from
+    the model file before uploading it. If you upload a model file that includes
+    only the changed rows, you won't lose any of the pre-existing model file
+    settings. This is a good option if your model file is causing an error on
+    upload, but you aren't sure where in the model file the problem is.
 
+As soon as the file is uploaded, ThoughtSpot performs any necessary re-indexing
+for you automatically. Your new settings will be reflected within a few minutes.
 
 ## Related information  
 

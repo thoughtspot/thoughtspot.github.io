@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The ODBC driver for Windows requires Visual C++ Redistributable for Visual Studio 2013. You will be prompted to install it during installation of the driver if it isn't already installed. It is important to note the following about the ODBC login information:
+The ODBC driver for Windows requires Visual C++ Redistributable for Visual Studio 2014. You will be prompted to install it during installation of the driver if it isn't already installed. It is important to note the following about the ODBC login information:
 
 -   Database `username`: This is not the machine login username. This is the name of a ThoughtSpot user with administrator permissions.
 -   Database `password`: This is not the machine login username. This is the ThoughtSpot user password.
@@ -23,7 +23,7 @@ To obtain and install the ODBC driver for Windows:
     -   ThoughtSpotODBC (x64).msi for Windows 64-bit
 4. Double click the `.msi` file you downloaded to start the installation.
    You will see a security warning.
-5. Select **Yes** to continue.
+5. Select `YES` to continue.
 
      ![]({{ site.baseurl }}/images/windows_ODBC_install.png "Allow the ODBC Installer to run")
 

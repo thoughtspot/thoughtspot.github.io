@@ -15,7 +15,7 @@ Data modeling is a very lightweight process compared to what you may have experi
 You can change these settings in two ways, both of which have the same effect:
 
 1.  [Model a data table.](../../shared/conrefs/../../admin/data-modeling/model-data-in-UI.html)
-2.  [Set the system-wide data model](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
+2.  [Edit the system-wide data model](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
 
 Choose the model file method if you want to make many changes in one bulk operation.
 
@@ -23,7 +23,7 @@ Modeling the data allows you to give the columns more search friendly names or p
 
 -   **[Change an table's data model](/admin/data-modeling/model-data-in-UI.html)**  
 To make modeling settings for a table you've just loaded, or to make a quick change to existing settings, use the ThoughtSpot web interface. You can adjust the **Columns** settings from the data management listing.
--   **[Set the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
+-   **[Edit the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
 Properties of your data such as Column Names, Column Visibility, Column and Data Definition, Column Rank, etc. are defined in the modeling file. Use the model file when you want to edit these settings in bulk.
 -   **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
 Whether you are changing data modeling settings using the modeling file or the Web interface, the settings and their accepted values are the same.

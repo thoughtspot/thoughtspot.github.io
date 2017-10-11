@@ -9,7 +9,6 @@ permalink: /:collection/:path.html
 ---
 You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.
 
-
 ## Number formats
 
 You can set a format for how numbers are displayed in tables and charts. For example, you can display numbers with a different number of digits after the decimal point, based on the data modeling setting **Format Pattern**. You can use any of the supported number formats for delimiters and number of digits to show using [Java Decimal Notation](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html). Currency symbols are not supported.
@@ -31,6 +30,7 @@ These are some examples of formats you can use:
 |12345|`#,##0.##`|12,345|
 |12345|`#,##0.00`|12,345.00|
 
+&nbsp;
 
 You can change the date format used to display a column's values [for a single table](/admin/data-modeling/model-data-in-UI.html) or, by editing the data
 model, for [the entire ThoughtSpot instance](/admin/data-modeling/edit-model-file.html).
@@ -45,22 +45,28 @@ Editing the data model file requires that you have administrative privileges.
 
 ### Locale-based number formatting
 
-Number formatting is set by default based on your browser locale setting. This has been set in order to accommodate users in various geographical locations, primarily in the US and Europe regions. For example, if you are using ThoughtSpot in the US, the number formatting should look like this: `xxx,xxx.xx`. And in Europe, it should look like this: `xxx.xxx,xx`.
+Number formatting is set by default based on your browser locale setting. This
+has been set in order to accommodate users in various geographical locations,
+primarily in the US and Europe regions. For example, if you are using
+ThoughtSpot in the US, the number formatting should look like this:
+`xxx,xxx.xx`. And in Europe, it should look like this: `xxx.xxx,xx`.
 
+## Date formats
 
-## Date format
-
-You can set a format for how dates are displayed in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**. You can use any of the supported date formats listed in the [Date and time formats reference](/reference/date-formats-for-loading.html#). These are some examples of formats you can use:
+**Format Pattern** (UI)/ **Format Pattern** (model file) formats for how dates are
+displayed in tables and charts. For example, you can display dates in a standard
+European or US format based on the data modeling setting **Format Pattern**.
+These are some examples of formats you can use:
 
 -   `MM/dd/yyyy`
 -   `MMM` (for abbreviated month format)
--   `DD/mm/yyyy`
+-   `DD/MM/yyyy`
 -   `MM/dd/yyyy HH:mm`
--   `DD/mm/yyyy HH:mm`
+-   `DD/MM/yyyy HH:mm`
 
 To change the date format used to display a column's values [for a single table](/admin/data-modeling/model-data-in-UI.html) or, by editing the data
 model, for [the entire ThoughtSpot instance](/admin/data-modeling/edit-model-file.html).
-Editing the data model file requires that you have administrative privileges.
+
 
 1. Decide if the change is for a table or the entire instance.
 2. Find the **Format Pattern** for the column.

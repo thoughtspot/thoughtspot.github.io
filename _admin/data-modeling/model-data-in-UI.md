@@ -35,4 +35,4 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 ## Related information  
 
 * [Data modeling settings](data-modeling-settings.html#)
-* [Set the system-wide data model](edit-model-file.html#)
+* [Edit the system-wide data model](edit-model-file.html#)

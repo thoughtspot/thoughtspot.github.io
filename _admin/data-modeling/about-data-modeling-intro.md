@@ -9,7 +9,9 @@ permalink: /:collection/:path.html
 ---
 Data modeling allows you to define metadata and other aspects of your data.  For
 example, you can give data columns search friendly names or predefine how they
-can be explored and aggregated.
+can be explored and aggregated. Metadata include such information as **Column
+Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
+Rank** and so forth.
 
 When you load data, ThoughtSpot has defaults for data modeling metadata. After
 loading data, you can start searching your data without doing any data modeling,
@@ -18,15 +20,17 @@ can customize the modeling settings. Putting some thought into these will make
 the data even easier and more intuitive to search for your end users.
 
 
-## Where to model data
+## User interfaces for modeling data
 
 Data modeling is a very lightweight process compared to what you may have
-experienced in other tools.  You can configure the model for an individual
-data table or you can configure the system-wide data model using the **ADMIN > Data
-Management** page.
+experienced in other tools.  You can configure the model for an individual data
+table or you can view and configure all the system data using a modeling file.
+Editing the data model file requires that you have administrative privileges.
 
-* [Model a data table](/admin/data-modeling/model-data-in-UI.html)
-* [Set the system-wide data model](/admin/data-modeling/edit-model-file.html#)
+The model file contains a row for each column in your data set. It isn't unusual
+to have tens of thousand of rows in this file. This means editing this file is
+equivalent to editing all the tables at once. When you add new data to your
+system, this file expands to accommodate the new data columns you have added.
 
 Both of these methods, have the same effect, they improve search. Moreover,
 while they have different effects of scale, they use the same mechanisms to
@@ -38,7 +42,7 @@ The following topics explain how to model your data:
 
 - **[Change an table's data model](/admin/data-modeling/model-data-in-UI.html)**  
 Explains how to make modeling settings for a table you've just loaded, or to make a quick change to existing settings.
-- **[Set the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
+- **[Edit the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
 Explains how to define a default data model to use for data system-wide.
 - **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
 Explains the possible data model settings and their accepted values. These are the same for a table or the system.
