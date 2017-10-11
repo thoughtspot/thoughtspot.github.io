@@ -43,10 +43,10 @@ Editing the data model file requires that you have administrative privileges.
 4. Save your changes.
    If you are using a data-modeling file you'll need to upload the new file to your installation.
 
-### Locale-based number formatting
+### Profile-based number formatting
 
-Number formatting is set by default based on your browser locale setting. This
-has been set in order to accommodate users in various geographical locations,
+Number formatting is set by default based on your profile's locale setting. This
+can been set in order to accommodate users in various geographical locations,
 primarily in the US and Europe regions. For example, if you are using
 ThoughtSpot in the US, the number formatting should look like this:
 `xxx,xxx.xx`. And in Europe, it should look like this: `xxx.xxx,xx`.
