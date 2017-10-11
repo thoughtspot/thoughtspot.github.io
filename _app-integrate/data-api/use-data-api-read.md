@@ -49,7 +49,7 @@ Use this procedure to construct the URL you will use to call the REST API:
     https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
     ```
 
-6. If you want to apply any filters to the data that will be returned, apply [Runtime Filters](../runtime-filters/about-runtime-filters.html#).
+6. If you want to apply any filters to the data that will be returned, apply [Runtime Filters](/admin/runtime-filters/about-runtime-filters.html#).
 7. Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
   The REST API returns the data formatted as JSON.
 8. Retrieve the data from the JSON and display it in your Web page, Web portal, or application.

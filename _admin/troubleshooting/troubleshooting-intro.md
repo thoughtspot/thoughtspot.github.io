@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The information here provides very basic troubleshooting. For more detailed troubleshooting, [Contact ThoughtSpot](../misc/contact.html#).
+The information here provides very basic troubleshooting. For more detailed troubleshooting, [Contact ThoughtSpot](/admin/misc/contact.html#).
 
 -   **[Get logs](/admin/troubleshooting/get-logs.html)**  
 For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.

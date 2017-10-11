@@ -10,7 +10,7 @@ TQL is the ThoughtSpot language for entering SQL commands. This reference lists 
 
 ## TQL commands
 
-You can use TQL either [through the ThoughtSpot application's web interface](../loading/upload-sql-script.html#) or the [command line interface](../loading/sql_cli.html#) in the Linux shell.
+You can use TQL either [through the ThoughtSpot application's web interface](/admin/loading/upload-sql-script.html#) or the [command line interface](/admin/loading/sql_cli.html#) in the Linux shell.
 
 {% include note.html content="Worksheets and pinboards in ThoughtSpot are dependent upon the data in the underlying tables. Use caution when modifying tables directly. If you change or remove a schema on which those objects rely, the objects could become invalid." %}
 

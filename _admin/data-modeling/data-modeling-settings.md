@@ -17,7 +17,7 @@ This index lists the editable data modeling settings:
 |------------|-----------|-----------------------------|
 |[Column Name](change-column-basics.html#change-the-column-name#)|Sets the name of the column to be used in searches.|Yes|
 |[Description](change-column-basics.html#change-column-description)|Adds a text description of what the column contains.|Yes|
-|Data Type|Read only. Shows the column's [data type](../loading/datatypes.html#).| |
+|Data Type|Read only. Shows the column's [data type](/admin/loading/datatypes.html#).| |
 |[Column Type](change-column-basics.html#change-column-type)|Sets the type of column, either `ATTRIBUTE` or `MEASURE`.| |
 |[Additive](change-aggreg-additive.html#)|Controls the type of aggregations that will be available for a column.| |
 |[Aggregation](change-aggreg-additive.html#)|Sets the default aggregation type for `MEASURE` columns.| |
@@ -29,7 +29,7 @@ This index lists the editable data modeling settings:
 |[Number Format](set-format-pattern-numbers.html#)|Specifies the format to use when showing a numeric value in the column.| |
 |[Date Format](set-format-pattern-numbers.html#date-format)|Specifies the format to use when showing the dates in a column.| |
 |[Currency Format](set-format-pattern-numbers.html#set-currency-format)|Specifies the format to use when showing the currencies in a column.| |
-|[Attribution Dimension](attributable-dimension.html#)|Only applies to tables that join over a [Chasm Trap](../loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution.| |
+|[Attribution Dimension](attributable-dimension.html#)|Only applies to tables that join over a [Chasm Trap](/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution.| |
 
 ## Data modeling for worksheets
 

@@ -10,7 +10,7 @@ Your ThoughtSpot application software is already installed for you in a ThoughtS
 
 As administrator, you are responsible for setting up and configuring ThoughtSpot. This guide explains how. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot.
 
-To perform the set up and configuration, you must first learn how to [gain administrative access](./logins.html). If you haven't already done this, do this now.  Then, complete the following tasks as needed:
+To perform the set up and configuration, you must first learn how to [gain administrative access](/admin/logins.html). If you haven't already done this, do this now.  Then, complete the following tasks as needed:
 
 -   **[Set your ThoughtSpot locale](/admin/setup/set-your-thoughtspot-locale.html)**  
 In addition to American English, ThoughtSpot also supports German and Japanese.

@@ -13,4 +13,4 @@ This procedure tests the network connectivity between the ThoughtSpot nodes, and
 2. Ping each of the other nodes in the cluster.
 3. Ping another machine that exists outside of the cluster, for example, a machine that you will use to stage data to be loaded.
 
-If you cannot perform these tests successfully, there is a problem with the network setup. If the tests fail, check [Network connectivity issues](../troubleshooting/check-connectivity.html#).
+If you cannot perform these tests successfully, there is a problem with the network setup. If the tests fail, check [Network connectivity issues](/admin/troubleshooting/check-connectivity.html#).

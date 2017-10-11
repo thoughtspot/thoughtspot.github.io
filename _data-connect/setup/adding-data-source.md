@@ -34,7 +34,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 
          ![]({{ site.baseurl }}/images/lightweight_etl_create_new_connection.png "Create a connection")
 
-    Refer to the [Data Connect connectors reference](../reference/data-connect-connection-credentials.html#) for more information on each of the specific attributes you must enter into the dialog box.
+    Refer to the [Data Connect connectors reference](/admin/reference/data-connect-connection-credentials.html#) for more information on each of the specific attributes you must enter into the dialog box.
 
 7. Choose the tables you wish to load from the list of **Available Tables**.
 

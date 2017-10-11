@@ -31,4 +31,4 @@ Remember that the data you retrieve from ThoughtSpot is live data, so whenever t
 
 ## Public API reference
 
-You can find more information on our public APIs in the [Reference guide](../reference/public-api-reference.html#).
+You can find more information on our public APIs in the [Reference guide](/admin/reference/public-api-reference.html#).

@@ -21,9 +21,9 @@ ThoughtSpot supports recovery from disk or node failure within each appliance. Y
 
 ## Where to go next
 
--   **[Disk failure](../../disaster_recovery/disaster_recovery/disk-failure.html)**  
+-   **[Disk failure](/admin/../disaster_recovery/disaster_recovery/disk-failure.html)**  
 ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
--   **[Node failure](../../disaster_recovery/disaster_recovery/node-failure.html)**  
+-   **[Node failure](/admin/../disaster_recovery/disaster_recovery/node-failure.html)**  
 ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
--   **[Cluster replacement](../../disaster_recovery/disaster_recovery/cluster-replacement.html)**  
+-   **[Cluster replacement](/admin/../disaster_recovery/disaster_recovery/cluster-replacement.html)**  
 Cluster replacement can be achieved using a mirrored system architecture. This allows you to recover an entire system very quickly without data loss.

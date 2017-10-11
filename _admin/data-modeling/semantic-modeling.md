@@ -14,8 +14,8 @@ Data modeling is a very lightweight process compared to what you may have experi
 
 You can change these settings in two ways, both of which have the same effect:
 
-1.  [Model a data table.](../../shared/conrefs/../../admin/data-modeling/model-data-in-UI.html)
-2.  [Edit the system-wide data model](../../shared/conrefs/../../admin/data-modeling/edit-model-file.html#)
+1.  [Model a data table.](/admin/data-modeling/model-data-in-UI.html)
+2.  [Edit the system-wide data model](/admin/data-modeling/edit-model-file.html#)
 
 Choose the model file method if you want to make many changes in one bulk operation.
 

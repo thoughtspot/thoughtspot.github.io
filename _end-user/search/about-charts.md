@@ -12,8 +12,8 @@ Your search needs at least [one attribute and one measure](about-attributes-and-
 {% include note.html content="Colors are maintained across searches within a session. For example, when doing a search on revenue by state, each state will keep its color assigned to it even if you change the search or chart type." %}
 
 You can choose from a large number of chart types in ThoughtSpot. Each chart type provides you with a different visualization for your answer.
--   **[Change the chart](/end-user/search/change-the-chart.html)**  
-You can adjust the axes, labels, and view of the chart.
+
+You can also [adjust the axes, labels, and view of the chart](/end-user/search/change-the-chart.html).
 
 ## About chart types
 
@@ -31,9 +31,9 @@ The column chart is one of ThoughtSpot's simplest, yet most versatile chart type
 The bar chart is very similar to the column chart. The only difference is that it is oriented the other way.
 -   **[Line charts](/end-user/search/about-line-charts.html)**  
 Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not the line chart will be chosen as your default chart type.
--   **[Pie charts](/end-user/search/about_pie-charts.html)**  
+-   **[Pie charts](/end-user/search/pie-charts.html)**  
 The pie chart is a classic chart type that displays your search in a circle. The pie chart ThoughtSpot shows is in the shape of a doughnut.
--   **[Area charts](/end-user/search/about_area-charts.html)**  
+-   **[Area charts](/end-user/search/area-charts.html)**  
 The area chart is based on the line chart, but has filled in regions.
 -   **[Scatter charts](/end-user/search/about-scatter-charts.html)**  
 The scatter chart is useful for finding correlations or outliers in your data.
@@ -53,5 +53,5 @@ The line column chart combines the column and line charts.
 The funnel chart shows a process with progressively decreasing proportions amounting to 100 percent in total.
 -   **[About geo charts](/end-user/search/about-geo-charts.html)**  
 There are three geo charts that let you visualize geographical data in ThoughtSpot.
--   **[About pivot tables](../../../admin/complex_searches/about-pivoting-a-table.html)**  
+-   **[About pivot tables](/complex_searches/about-pivoting-a-table.html)**  
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.

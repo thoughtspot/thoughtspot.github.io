@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 ---
 
 The **Attribution Dimension** setting only applies to tables that join over a
-[Chasm Trap](../loading/chasm-trap.html#). By default, the attribution dimension
+[Chasm Trap](/admin/loading/chasm-trap.html#). By default, the attribution dimension
 setting will be set to `YES`, but you can override that by setting the column's
 attribution dimension property to `NO`, as described here.
 

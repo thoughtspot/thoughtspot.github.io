@@ -28,7 +28,7 @@ The steps to build a schema using TQL include:
 2. [Write a SQL script to create the schema](create-schema_with_script.html#).
 3. Type your SQL commands on the command line, terminating each command with a semicolon (;).
 
-    Commands can span multiple lines. ThoughtSpot supports a limited number of SQL commands, plus some custom SQL extensions. For example, you can specify the number of shards and the distribution key as part of the CREATE TABLE syntax. A full list of supported SQL in TQL is available in the [TQL reference](../reference/sql-cli-commands.html).
+    Commands can span multiple lines. ThoughtSpot supports a limited number of SQL commands, plus some custom SQL extensions. For example, you can specify the number of shards and the distribution key as part of the CREATE TABLE syntax. A full list of supported SQL in TQL is available in the [TQL reference](/admin/reference/sql-cli-commands.html).
 
 ## Where to go next
 

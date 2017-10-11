@@ -47,7 +47,7 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
 8. Add these properties using the key value pairs shown, clicking **OK** after each entry to save it.
 
-    The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](../reference/simba-settings.html#).
+    The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in [ODBC and JDBC configuration properties](/admin/reference/simba-settings.html#).
 
     -   **DATABASE**: The default database to connect to.
     -   **SCHEMA**: Optional. The default schema to connect to.
@@ -57,4 +57,4 @@ The main reason for needing to set up multiple ThoughtSpot ODBC data sources is 
 
 9. When all the setting have been made, click **Test Connection**.
 10.  If everything is working, click **OK**, to save your settings.
-If not, you may want to [enable ODBC logging](../troubleshooting/troubleshooting-ODBC.html#).
+If not, you may want to [enable ODBC logging](/admin/troubleshooting/troubleshooting-ODBC.html#).

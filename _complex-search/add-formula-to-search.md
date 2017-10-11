@@ -13,13 +13,13 @@ You can create a formula from directly within a search. If you have the privileg
 
 Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the **Edit** privilege, other people can see the formula results, too. In order to make edits to the formula, they also need to have the **Edit** privilege on the underlying data.
 
--   **[Add a formula to a search](../../complex-search/how-to-add-formula.html)**  
+-   **[Add a formula to a search](/admin/../complex-search/how-to-add-formula.html)**  
 You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add if...then...else logic.
--   **[View or edit a formula in a search](../../complex-search/edit-formula-in-answer.html)**  
+-   **[View or edit a formula in a search](/admin/../complex-search/edit-formula-in-answer.html)**  
 You can always go back and view or edit a formula that has been added to a search. Do this by clicking the edit icon next to its name in the **Columns** listing.
--   **[About aggregate formulas](../../complex-search/aggregation-formulas.html)**  
+-   **[About aggregate formulas](/admin/../complex-search/aggregation-formulas.html)**  
 When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.
--   **[About conversion formulas](../../complex-search/conversion-formulas.html)**  
+-   **[About conversion formulas](/admin/../complex-search/conversion-formulas.html)**  
 Some formulas require the input to be of a particular data type. If you find that you want to pass a value to the function, but it is of the wrong data type, you can convert it using a conversion formula.
 -   **[About date formulas](/advanced-search/formulas/about_date-formulas.html)**  
 Date formulas allow you to apply date related functions to your formulas.
@@ -27,7 +27,7 @@ Date formulas allow you to apply date related functions to your formulas.
 You can use simple number functions to perform useful percent calculations.
 -   **[About conditional formulas (operators)](/advanced-search/formulas/conditional-sum.html)**  
 Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas.
--   **[About nested formulas](../../complex-search/about-nested-formulas.html)**  
+-   **[About nested formulas](/admin/../complex-search/about-nested-formulas.html)**  
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.
--   **[About formula support for chasm trap schemas](../../complex-search/about_formula_support_for_chasm-trap_schemas.html)**  
+-   **[About formula support for chasm trap schemas](/admin/../complex-search/about_formula_support_for_chasm-trap_schemas.html)**  
 You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.

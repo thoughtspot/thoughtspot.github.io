@@ -20,7 +20,7 @@ Before you can do this procedure, your networking team needs to open port `22` i
 
 To enable remote support:
 
-1. [Contact ThoughtSpot](../misc/contact.html#) to open a support ticket for making the appropriate reverse tunnel settings on our end. Provide the cluster name of the cluster for which you want to enable remote support.
+1. [Contact ThoughtSpot](/admin/misc/contact.html#) to open a support ticket for making the appropriate reverse tunnel settings on our end. Provide the cluster name of the cluster for which you want to enable remote support.
 2. When the ticket has been completed, continue with the remaining steps in this procedure to make the settings on your side.
 3. Log in to the Linux shell using SSH.
 4. Issue the command to configure the destination for the remote tunnel. You only need to do this once, when you are enabling the tunnel for the very first time. After that, this setting persists when you start and stop the remote tunnel.
@@ -41,7 +41,7 @@ To enable remote support:
     $ tscli support start-remote
     ```
 
-7. [Contact ThoughtSpot](../misc/contact.html#) again, so you can test the setup with your ThoughtSpot Support contact.
+7. [Contact ThoughtSpot](/admin/misc/contact.html#) again, so you can test the setup with your ThoughtSpot Support contact.
 8. After your remote session with ThoughtSpot Support, you should turn the remote tunnel off, until you need to use it again:
 
     ```
@@ -85,7 +85,7 @@ Before you can enable the call home feature:
 1.  [Configure the connection to the file server](work-with-ts-support.html#).
 2.  Obtain the customer name as recognized by the file server.
 
-The customer name is formatted like this example: `Shared/<customer_name>/stats`. If you do not know the customer name, [contact ThoughtSpot Support](../misc/contact.html#).
+The customer name is formatted like this example: `Shared/<customer_name>/stats`. If you do not know the customer name, [contact ThoughtSpot Support](/admin/misc/contact.html#).
 
 This can be helpful when troubleshooting problems with ThoughtSpot Support, because they will be able to see basic usage information over time for your ThoughtSpot instance.
 
