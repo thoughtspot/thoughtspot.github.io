@@ -2718,13 +2718,16 @@ This is either a column in a single table or a column in the data modeling file.
 If you are using a data-modeling file you’ll need to upload the new file to your installation.</li>
 </ol>
 
-<h3 id="locale-based-number-formatting">Locale-based number formatting</h3>
+<h3 id="profile-based-number-formatting">Profile-based number formatting</h3>
 
-<p>Number formatting is set by default based on your browser locale setting. This
-has been set in order to accommodate users in various geographical locations,
-primarily in the US and Europe regions. For example, if you are using
-ThoughtSpot in the US, the number formatting should look like this:
-<code class="highlighter-rouge">xxx,xxx.xx</code>. And in Europe, it should look like this: <code class="highlighter-rouge">xxx.xxx,xx</code>.</p>
+<p>Number formatting is set by default based on your ThoughtSpot profile’s
+<strong>Preferred locale</strong> setting. You can set this value to accommodate your geographic locations.</p>
+
+<p><img src="/4.4/images/profile-locale.png" alt="" title="Specify Profile locale" /></p>
+
+<p>For example, if you are using ThoughtSpot in the US, the number formatting
+should look like this: <code class="highlighter-rouge">xxx,xxx.xx</code>. And in Europe, it should look like this:
+<code class="highlighter-rouge">xxx.xxx,xx</code>.</p>
 
 <h2 id="date-formats">Date formats</h2>
 
