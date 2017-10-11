@@ -15,8 +15,8 @@ When using this method, the visualization is rendered within an iframe on your W
 
 ## Authentication
 
-Before you can embed a visualization, you must authenticate to ThoughtSpot using SAML with the [JavaScript API](/app-integration/JSAPI/about-JS-API.html#).
+Before you can embed a visualization, you must authenticate to ThoughtSpot using SAML with the [JavaScript API]({{ site.baseurl }}/app-integration/JSAPI/about-JS-API.html#).
 
 ## Cross Domain Verification
 
-When using Embedding, you will use cross domain verification. This protects your data, so that another website cannot use the same URL to embed the visualization in its own Web pages. The procedure for [enabling the JavaScript API](/app-integration/JSAPI/enable-JS-API.html#) authentication includes information on how to enable this.
+When using Embedding, you will use cross domain verification. This protects your data, so that another website cannot use the same URL to embed the visualization in its own Web pages. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integration/JSAPI/enable-JS-API.html#) authentication includes information on how to enable this.

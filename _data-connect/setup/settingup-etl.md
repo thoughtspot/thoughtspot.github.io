@@ -13,7 +13,7 @@ Your purchase of ThoughtSpot Data Connect includes the necessary credentials for
 To set up ThoughtSpot Data Connect:
 
 1. Check with ThoughtSpot Support to ensure they have provisioned an account for you with the appropriate connectivity licenses.
-    A full list of supported connectivity licenses is available in the [Data Connect connectors reference](/admin/reference/data-connect-connection-credentials.html#).
+    A full list of supported connectivity licenses is available in the [Data Connect connectors reference]({{ site.baseurl }}/admin/reference/data-connect-connection-credentials.html#).
 2. Enable ThoughtSpot Data Connect by completing the following steps:
     1. Log in to the Linux shell using SSH.
     2. Invoke `tscli` to enable ThoughtSpot Data Connect, which will register with Informatica Cloud and start the `infaagent` service.

@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 This is a list of all the public ThoughtSpot APIs. The descriptions are aimed to help you solve specific use cases, such as syncing users and groups, or fetching visualization headers.
 
-See [About the REST API](/admin/data-api/about-data-api.html#) for information on how to call and use the REST APIs.
+See [About the REST API]({{ site.baseurl }}/admin/data-api/about-data-api.html#) for information on how to call and use the REST APIs.
 
 ## Public name: pinboarddata
 

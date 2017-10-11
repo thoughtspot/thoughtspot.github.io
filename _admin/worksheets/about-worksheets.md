@@ -35,9 +35,9 @@ The process for creating a worksheet is:
 6.  Select the columns to include.
 7.  Optionally [create formulas](create-formula.html#).
 8.  Save the worksheet.
-9.  [Share the worksheet with groups or users](/admin/data-security/share-worksheets.html#).
+9.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
-An alternative way to create a worksheet is to do a search and save it as a worksheet. See the [ThoughtSpot User Guide](/end-user/introduction/introduction.html#) for details on how to do this.
+An alternative way to create a worksheet is to do a search and save it as a worksheet. See the [ThoughtSpot User Guide]({{ site.baseurl }}/end-user/introduction/introduction.html#) for details on how to do this.
 
 ## Create a worksheet
 
@@ -79,7 +79,7 @@ To add the sources to the worksheet:
     1. To add all of the columns from a table, click on the table name and click **+ Add Columns**.
     2. To add a single column, double click on its name.
     3. To add multiple columns, Ctl+click on each column you want to add and click **+ Add Columns**.
-    Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them](/admin/data-modeling/about-relationships.html#).
+    Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
 8. Click on the worksheet title to name it, and then **Save** it.
 9. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
@@ -91,11 +91,11 @@ To add the sources to the worksheet:
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
-12.  [Share your worksheet](/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
+12.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
 
 ## Where to go next
 
--   **[How the inclusion rule works](/admin/worksheets/about-inclusion-rule.html)**  
+-   **[How the inclusion rule works]({{ site.baseurl }}/admin/worksheets/about-inclusion-rule.html)**  
 Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition.
--   **[How the worksheet join rule works](/admin/worksheets/progressive-joins.html)**  
+-   **[How the worksheet join rule works]({{ site.baseurl }}/admin/worksheets/progressive-joins.html)**  
 Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.

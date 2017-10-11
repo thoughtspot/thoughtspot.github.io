@@ -22,7 +22,7 @@ Use the filters at the top of the page to find the data you are interested in. F
 
 ## Related information
 
--   [View your data profile](/admin/loading/view-your-data-profile.html)  
+-   [View your data profile]({{ site.baseurl }}/admin/loading/view-your-data-profile.html)  
 Basic column data profile information is available under Profile on the Data page.
--   [About sharing](/end-user/data-view/sharing-for-end-users.html)  
+-   [About sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html)  
 Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. This applies to searches, pinboards, and any data you upload.

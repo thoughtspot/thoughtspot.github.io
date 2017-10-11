@@ -38,7 +38,7 @@ There are two ways to get logs:
     -   `system` collects all system logs, e.g. syslog, upstart, mail logs, etc.
     -   `ts` collects all logs from the ThoughtSpot application. This includes falcon, sage, orion core (cluster management), etc.
     -   `orion` collects all orion logs including cluster management, hdfs, zookeeper, etc.
-    Detailed syntax and options are listed in the [tscli command reference](/reference/tscli-command-ref.html#).
+    Detailed syntax and options are listed in the [tscli command reference]({{ site.baseurl }}/reference/tscli-command-ref.html#).
 
 
 ## Examples
@@ -77,4 +77,4 @@ Advanced usage alert! You can also use `--include` and `--exclude` to specify fi
 $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --since 2h
 ```
 
-The above command collects all system and all orion logs, but excludes hadoop (hdfs) and zookeeper logs. See [Upload logs to ThoughtSpot Support](/admin/troubleshooting/upload-logs-egnyte.html) about using a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.
+The above command collects all system and all orion logs, but excludes hadoop (hdfs) and zookeeper logs. See [Upload logs to ThoughtSpot Support]({{ site.baseurl }}/admin/troubleshooting/upload-logs-egnyte.html) about using a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.

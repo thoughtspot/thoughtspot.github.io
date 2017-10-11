@@ -83,7 +83,7 @@ Use this subcommand to do the following:
 
     * `--mode {full,light,dataless}`
 
-        Mode of backups. To understand these diffrent modes see [Understand backup modes](/admin/backup-restore/backup-modes.html).
+        Mode of backups. To understand these diffrent modes see [Understand backup modes]({{ site.baseurl }}/admin/backup-restore/backup-modes.html).
 
     * `--type {full,incremental}`
         Type of backup.(Incremental `incremental` is not implemented yet) (default: full)
@@ -633,7 +633,7 @@ tscli saml [-h] {configure,purge-configuration}
 
 This subcommand has the following actions:
 
-* `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML](/admin/setup/configure-SAML-with-tscli.html).
+* `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html).
 * `tscli saml purge-configuration` Purges any existing SAML configuration.
 
 ### scheduled-pinboards
@@ -675,7 +675,7 @@ This subcommand takes supports the following actions:
 tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
 ```
 
-Learn more about snapshots and backups see the [Understand the backup strategies](/admin/backup-restore/choose-strategy.html) documentation.
+Learn more about snapshots and backups see the [Understand the backup strategies]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html) documentation.
 This subcommand supports the following actions:
 
 * `tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type

@@ -15,7 +15,7 @@ The following are the default conversion formulas:
 -   `to_string`
 -   `to_float`
 
-Information on the usage for these formulas is in the [Formula reference](/admin/reference/formula-reference.html).
+Information on the usage for these formulas is in the [Formula reference]({{ site.baseurl }}/admin/reference/formula-reference.html).
 
 Booleans are interpreted in the following ways:
 

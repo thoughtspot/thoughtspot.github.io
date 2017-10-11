@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Embedding allows you to include a visualization \(table or chart\) or pinboard from ThoughtSpot in your own static Web page, Web portal, or application. Before you can embed a visualization, you need to [enable the JavaScript API \(JS API\)](/app-integration/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
+Embedding allows you to include a visualization \(table or chart\) or pinboard from ThoughtSpot in your own static Web page, Web portal, or application. Before you can embed a visualization, you need to [enable the JavaScript API \(JS API\)]({{ site.baseurl }}/app-integration/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
 
 Use this procedure to construct the URL you will use to embed a visualization:
 

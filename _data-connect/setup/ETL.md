@@ -18,11 +18,11 @@ ThoughtSpot Data Connect is a premium feature, which is available at an addition
 
 ## Where to go next
 
--   **[Before using ThoughtSpot Data Connect](/data-connect/data-connect/setup/before-using-data-connect.html)**  
+-   **[Before using ThoughtSpot Data Connect]({{ site.baseurl }}/data-connect/data-connect/setup/before-using-data-connect.html)**  
 There are a few prerequisites before using ThoughtSpot Data Connect. You need to have ThoughtSpot enable the connection to Informatica, and enter the data connection credentials.
--   **[Set up ThoughtSpot Data Connect](/data-connect/data-connect/setup/settingup-etl.html)**  
+-   **[Set up ThoughtSpot Data Connect]({{ site.baseurl }}/data-connect/data-connect/setup/settingup-etl.html)**  
 The ThoughtSpot team will assist you in the initial setup and configuration of ThoughtSpot Data Connect. You will need to provide the credentials for logging in to the various data sources you want to connect to.
--   **[Add a new data source](/data-connect/data-connect/setup/adding-data-source.html)**  
+-   **[Add a new data source]({{ site.baseurl }}/data-connect/data-connect/setup/adding-data-source.html)**  
 Now that you've enabled ThoughtSpot Data Connect, you will be able to add a new data source. Data sources are the source systems from which you want to import data and schedule repeat data loads.
--   **[Data sources management](/data-connect/data-connect/setup/data-sources-management.html)**  
+-   **[Data sources management]({{ site.baseurl }}/data-connect/data-connect/setup/data-sources-management.html)**  
 After you have successfully loaded your tables, you can check on the status of the load, make edits, and more.

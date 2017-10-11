@@ -40,13 +40,13 @@ accomplish these effects.
 
 The following topics explain how to model your data:
 
-- **[Change an table's data model](/admin/data-modeling/model-data-in-UI.html)**  
+- **[Change an table's data model]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html)**  
 Explains how to make modeling settings for a table you've just loaded, or to make a quick change to existing settings.
-- **[Edit the system-wide data model](/admin/data-modeling/edit-model-file.html)**  
+- **[Edit the system-wide data model]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html)**  
 Explains how to define a default data model to use for data system-wide.
-- **[Data modeling settings](/admin/data-modeling/data-modeling-settings.html)**  
+- **[Data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)**  
 Explains the possible data model settings and their accepted values. These are the same for a table or the system.
-- **[Link tables using relationships](/admin/data-modeling/about-relationships.html)**  
+- **[Link tables using relationships]({{ site.baseurl }}/admin/data-modeling/about-relationships.html)**  
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
-- **[About stickers](/admin/data-modeling/stickers-concept.html)**  
+- **[About stickers]({{ site.baseurl }}/admin/data-modeling/stickers-concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.

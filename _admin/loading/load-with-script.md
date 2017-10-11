@@ -53,7 +53,7 @@ If you have a very large data file that takes a long time to load, you can reduc
 
 * Split up your large data file into multiple smaller files.
 
-* Stage the data files in a location accessible to the node on which you'll run the script. Usually you'll use an [NAS mounted file system](/admin/setup/NAS-mount.html#).
+* Stage the data files in a location accessible to the node on which you'll run the script. Usually you'll use an [NAS mounted file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#).
 
 * Create a script to load the files (see example below).
 

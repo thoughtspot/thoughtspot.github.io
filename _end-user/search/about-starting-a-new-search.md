@@ -59,7 +59,7 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 
 -   The column name: like revenue, product name, or store
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
--   One of the special [keywords](/reference/keywords.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
+-   One of the special [keywords]({{ site.baseurl }}/reference/keywords.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
 
 ## What does a search result in?
 
@@ -68,7 +68,7 @@ An answer is the result of a single search. You can save an answer you want to w
 
 ## Related information
 
--   [Choose a data source](/end-user/search/about-choosing-sources.html)  
--   [Search bar features](/end-user/search/about-the-search-bar.html)  
--   [Search suggestions](/end-user/search/recent-searches.html)  
--   [Search results and column types](/end-user/search/about-attributes-and-measures.html)  
+-   [Choose a data source]({{ site.baseurl }}/end-user/search/about-choosing-sources.html)  
+-   [Search bar features]({{ site.baseurl }}/end-user/search/about-the-search-bar.html)  
+-   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
+-   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  

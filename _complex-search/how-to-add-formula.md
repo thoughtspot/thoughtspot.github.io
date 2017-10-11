@@ -41,4 +41,4 @@ To create a formula in a search:
 
 ## Related information  
 
-[Formula reference](/admin/reference/formula-reference.html#)
+[Formula reference]({{ site.baseurl }}/admin/reference/formula-reference.html#)

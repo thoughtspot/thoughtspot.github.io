@@ -29,4 +29,4 @@ To start a new search:
 
      ![]({{ site.baseurl }}/images/add_multiple_columns.png "Add multiple columns at once")
 
-Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented. You can [change the view](/complex_searches/change-the-view.html#) to fit your needs.
+Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented. You can [change the view]({{ site.baseurl }}/complex-searches/change-the-view.html#) to fit your needs.

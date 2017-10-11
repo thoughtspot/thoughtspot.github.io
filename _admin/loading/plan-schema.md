@@ -48,11 +48,11 @@ Here's what you'll need to take into account in your TQL for creating each table
 
 ## Where to go next
 
--   **[Data types](/admin/loading/datatypes.html)**  
+-   **[Data types]({{ site.baseurl }}/admin/loading/datatypes.html)**  
 ThoughtSpot supports the common data types. Compare these with the data types you want to load, and do any necessary conversion ahead of loading the data.
--   **[Constraints](/admin/loading/constraints.html)**  
+-   **[Constraints]({{ site.baseurl }}/admin/loading/constraints.html)**  
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
--   **[Sharding](/admin/loading/sharding.html)**  
+-   **[Sharding]({{ site.baseurl }}/admin/loading/sharding.html)**  
 For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.
--   **[Chasm traps](/admin/loading/chasm-trap.html)**  
+-   **[Chasm traps]({{ site.baseurl }}/admin/loading/chasm-trap.html)**  
 In a complex schema, you may have a fact table with no relationship to another fact table, except that each contains a foreign key to a shared dimension table. This is known as a chasm trap, and ThoughtSpot can handle it!

@@ -12,6 +12,6 @@ System administration includes applying upgrades, backing up and restoring the c
 
 Use these tools to perform administrative actions:
 
--   [tscli](/reference/tscli-command-ref.html#): an administrative command line interface.
--   [tsload](/reference/data-importer-ref.html#): a command for loading data directly into the database.
--   [TQL](/reference/sql-cli-commands.html#): a command line SQL interface to interact with databases.
+-   [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html#): an administrative command line interface.
+-   [tsload]({{ site.baseurl }}/reference/data-importer-ref.html#): a command for loading data directly into the database.
+-   [TQL]({{ site.baseurl }}/reference/sql-cli-commands.html#): a command line SQL interface to interact with databases.

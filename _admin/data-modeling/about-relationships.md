@@ -10,7 +10,7 @@ You can link tables by creating relationships between their columns. Linked tabl
 
 There are two ways to create relationships between tables:
 
-1.  [Create a constraint using TQL.](/admin/loading/constraints.html#)
+1.  [Create a constraint using TQL.]({{ site.baseurl }}/admin/loading/constraints.html#)
 2.  [Create a relationship through the web interface.](create-new-relationship.html#)
 
 The two methods create the same kind of relationship both from an end user perspective and an administrative perspective.

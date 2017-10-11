@@ -10,7 +10,7 @@ Congratulations on purchasing the ThoughtSpot instance. This guide will get you 
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it goes, and what we can do to make it better.
 
-You can [contact ThoughtSpot](/aws/welcome/contact.html) by phone, mail, email, or by filing a support ticket.
+You can [contact ThoughtSpot]({{ site.baseurl }}/aws/welcome/contact.html) by phone, mail, email, or by filing a support ticket.
 
 # A little bit about AWS
 
@@ -30,4 +30,4 @@ AWS can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 
 Your database capacity will determine the number of instances you'll need and the instance network/storage requirements. In addition, you can go with multiple VMs based on your dataset size.
 
-The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference](/aws/setup/firewall-ports.html#).
+The security group setting of your ThoughtSpot instance on AWS is up to you. You can find more information about which ports to open in the [network ports reference]({{ site.baseurl }}/aws/setup/firewall-ports.html#).

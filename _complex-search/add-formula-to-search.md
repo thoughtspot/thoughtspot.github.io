@@ -21,11 +21,11 @@ You can always go back and view or edit a formula that has been added to a searc
 When working with formulas, it is useful to understand the difference between regular (or row-wise) formulas and aggregation formulas.
 -   **[About conversion formulas]/complex-search/conversion-formulas.html)**  
 Some formulas require the input to be of a particular data type. If you find that you want to pass a value to the function, but it is of the wrong data type, you can convert it using a conversion formula.
--   **[About date formulas](/advanced-search/formulas/about_date-formulas.html)**  
+-   **[About date formulas]({{ site.baseurl }}/advanced-search/formulas/about_date-formulas.html)**  
 Date formulas allow you to apply date related functions to your formulas.
--   **[About percent (simple number) calculations](/advanced-search/formulas/about_percent-calculations.html)**  
+-   **[About percent (simple number) calculations]({{ site.baseurl }}/advanced-search/formulas/about_percent-calculations.html)**  
 You can use simple number functions to perform useful percent calculations.
--   **[About conditional formulas (operators)](/advanced-search/formulas/conditional-sum.html)**  
+-   **[About conditional formulas (operators)]({{ site.baseurl }}/advanced-search/formulas/conditional-sum.html)**  
 Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas.
 -   **[About nested formulas]/complex-search/about-nested-formulas.html)**  
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.

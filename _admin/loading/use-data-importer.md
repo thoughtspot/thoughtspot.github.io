@@ -12,7 +12,7 @@ The `tsload` command accepts flags that enable you to specify column and row sep
 
 Before importing data, you need to [Build the schema](create-schema.html#).
 
-To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference](/reference/data-importer-ref.html#) or by issuing `tsload -help`.
+To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference]({{ site.baseurl }}/reference/data-importer-ref.html#) or by issuing `tsload -help`.
 
 tsload supports both full and incremental data loads. For incremental loads, an upsert (insert or update) is performed. If an incoming row has the same primary key as an existing row, it updates the existing row with the new values.
 

@@ -10,10 +10,10 @@ ThoughtSpot Support uses a secure file sever to collect log files or other files
 
 Before you can upload a file to the secure file server:
 
-1.  [Configure the connection to the file server](/admin/setup/work-with-ts-support.html#).
+1.  [Configure the connection to the file server]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#).
 2.  Obtain the directory path on the file server.
 
-The server directory path for uploading a file is formatted like this example: `/Shared/support/<customer_name>`. If you do not know the customer name, [contact ThoughtSpot Support](/admin/misc/contact.html#).
+The server directory path for uploading a file is formatted like this example: `/Shared/support/<customer_name>`. If you do not know the customer name, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 You can upload files directly to the file server using this procedure:
 

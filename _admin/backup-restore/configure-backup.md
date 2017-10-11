@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system](/admin/setup/NAS-mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
 
 The format for a policy includes the following:
 

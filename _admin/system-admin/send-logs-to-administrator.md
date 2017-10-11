@@ -10,7 +10,7 @@ You can generate a log bundle which you can then send to ThoughtSpot Support or 
 
 ##  Generate log bundle
 
-Before you can send a log bundle to ThoughtSpot Support, you must [Connect to the ThoughtSpot Support file server](/admin/setup/work-with-ts-support.html#). This is a one-time setup operation.
+Before you can send a log bundle to ThoughtSpot Support, you must [Connect to the ThoughtSpot Support file server]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#). This is a one-time setup operation.
 
 To generate a log bundle:
 

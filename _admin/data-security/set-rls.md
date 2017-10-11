@@ -20,7 +20,7 @@ When you set Rule-Based Row Level Security, you need to first turn off search su
 
 When Rule-Based Row Level Security is set, it protects users from seeing data they shouldn't in worksheets and pinboards. However, the search suggestions are not filtered using Rule-Based Row Level Security, so it is possible someone could see a data value they should not in a search suggestion. Disabling suggestions on data values corrects this. Be sure and do this procedure before setting up Rule-Based Row Level Security.
 
-[Contact ThoughtSpot Support](/admin/misc/contact.html#), and tell them that you will be setting up Rule-Based Row Level Security. Ask them to disable data value suggestions for you. When this setting has been made, continue with the next procedure.
+[Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#), and tell them that you will be setting up Rule-Based Row Level Security. Ask them to disable data value suggestions for you. When this setting has been made, continue with the next procedure.
 
 ## Access the Rule Builder
 

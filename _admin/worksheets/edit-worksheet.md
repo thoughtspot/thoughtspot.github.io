@@ -47,4 +47,4 @@ To change the name of a worksheet or table:
 
 ## Related information
 
-[Change the inclusion or join rule for a worksheet](/admin/worksheets/change-inclusion-rule.html)
+[Change the inclusion or join rule for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html)

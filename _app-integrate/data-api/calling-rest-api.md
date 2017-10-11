@@ -57,7 +57,7 @@ The `columnNames` array contains a list of all column headers. And the `data` ar
 
  ![]({{ site.baseurl }}/images/columnnames_and_data_arrays.png "columnNames and data arrays")
 
-The REST API supports filtering the data returned via parameters that you pass within the URL. These are called [Runtime Filters](/admin/runtime-filters/about-runtime-filters.html#).
+The REST API supports filtering the data returned via parameters that you pass within the URL. These are called [Runtime Filters]({{ site.baseurl }}/admin/runtime-filters/about-runtime-filters.html#).
 
 ## Example
 

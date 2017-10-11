@@ -32,8 +32,8 @@ These are some examples of formats you can use:
 
 &nbsp;
 
-You can change the date format used to display a column's values [for a single table](/admin/data-modeling/model-data-in-UI.html) or, by editing the data
-model, for [the entire ThoughtSpot instance](/admin/data-modeling/edit-model-file.html).
+You can change the date format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by editing the data
+model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
 Editing the data model file requires that you have administrative privileges.
 
 1. Decide if the change is for a table or the entire instance.
@@ -68,8 +68,8 @@ These are some examples of formats you can use:
 -   `MM/dd/yyyy HH:mm`
 -   `DD/MM/yyyy HH:mm`
 
-To change the date format used to display a column's values [for a single table](/admin/data-modeling/model-data-in-UI.html) or, by editing the data
-model, for [the entire ThoughtSpot instance](/admin/data-modeling/edit-model-file.html).
+To change the date format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by editing the data
+model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
 
 
 1. Decide if the change is for a table or the entire instance.
@@ -83,7 +83,7 @@ model, for [the entire ThoughtSpot instance](/admin/data-modeling/edit-model-fil
 
 You can set a format for how currencies are displayed in tables and charts when using the ThoughtSpot Data API or embedding. For example, you can display currencies in a standard European Euro or US Dollar format based on the data modeling setting **Currency Type**.
 
-You can change the currency format used to display a column's values [for a single table](/admin/data-modeling/model-data-in-UI.html). When you specify the
+You can change the currency format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html). When you specify the
 currency type of your data on the **Manage Data** page, your currency data will
 only display the correct format and currency code in the embedded use case.
 Currency specific symbols are available in the non-embedded use case as well,

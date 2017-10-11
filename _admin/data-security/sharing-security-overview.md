@@ -11,7 +11,7 @@ Sharing and security privileges govern what data a user can access and what they
 
 ## Users, groups, and privileges
 
-Data security applies to users and groups. Users can be managed [manually](/admin/users-groups/about-users-groups.html#) or through [LDAP](/admin/setup/about-LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
+Data security applies to users and groups. Users can be managed [manually]({{ site.baseurl }}/admin/users-groups/about-users-groups.html#) or through [LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
 
 The following table shows the intersection of user privilege and ability:
 
@@ -38,5 +38,5 @@ ThoughtSpot includes robust row level security, which allows you to filter all o
 
 ## Related information
 
--   [Revoke access (unshare)](/admin/data-security/unshare.html)  
--   [Row level security](/admin/data-security/about-row-security.html)  
+-   [Revoke access (unshare)]({{ site.baseurl }}/admin/data-security/unshare.html)  
+-   [Row level security]({{ site.baseurl }}/admin/data-security/about-row-security.html)  

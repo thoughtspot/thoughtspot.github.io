@@ -7,7 +7,7 @@ summary: "Use keywords when asking a question to narrow and further define your 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references](/reference/keywords.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
+In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references]({{ site.baseurl }}/reference/keywords.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
 
  ![]({{ site.baseurl }}/images/help-center_keywords.png "Help center keywords list")
 
@@ -62,6 +62,6 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
 ## Related information  
 
-- [Keyword reference](/reference/keywords.html#)
-- [Search using growth over time](/complex-search/search-using-growth-over-time.html)  
-- [Geographical proximity keywords "near" and "farther than"](/admin/features/proximity-search.html)  
+- [Keyword reference]({{ site.baseurl }}/reference/keywords.html#)
+- [Search using growth over time]({{ site.baseurl }}/complex-search/search-using-growth-over-time.html)  
+- [Geographical proximity keywords "near" and "farther than"]({{ site.baseurl }}/admin/features/proximity-search.html)  

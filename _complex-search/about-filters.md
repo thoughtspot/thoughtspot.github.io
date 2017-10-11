@@ -15,11 +15,11 @@ When you add a value to your search, it becomes a filter. To add a filter from t
 
     ![]({{ site.baseurl }}/images/filter_from_the_search_bar.png "Filter from the search bar")
 
-    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference](/reference/keywords.html#).
+    You can also use filter keywords like yesterday, after, next month, 2016 to filter your search. To see more filter keywords, refer to the [keyword reference]({{ site.baseurl }}/reference/keywords.html#).
 
 2. Click outside of the search bar or push enter to apply your filter.
 
-Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section](/complex-search/pinboard-filters.html#).
+Simple filters can be applied to an answer, while pinboard filters can be applied to all visualizations of a pinboard. You can find out more about [pinboard filters in the pinboards section]({{ site.baseurl }}/complex-search/pinboard-filters.html#).
 
 
 ## Where filters appear in ThoughtSpot
@@ -48,4 +48,4 @@ If you have a large worksheet or table with thousands or millions of rows, you m
 
 Bulk filters can be very useful when you have a very large worksheet or table. You can use them to filter a large list of values easily. For example, this is useful if you want to only search on a list of products that your manager sent to you in an email. You can cut and paste those values into the bulk filter box to quickly generate a report or chart that includes only those items of interest.
 
-You can [create a bulk filter](/complex-search/create-bulk-filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.
+You can [create a bulk filter]({{ site.baseurl }}/complex-search/create-bulk-filter.html) by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.

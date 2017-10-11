@@ -113,5 +113,5 @@ this, do the following:
 In this section, you explored some of the functionality of the **INSIGHTS**
 page. You learned how you can edit an insight to customize how it looks or even
 the **Search** syntax behind it.  In [the next
-section](/spotiq/special-topics.html), you'll learn how to schedule SpotIQ
+section]({{ site.baseurl }}/spotiq/special-topics.html), you'll learn how to schedule SpotIQ
 to deliver insights on a regular basis.
