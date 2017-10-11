@@ -2662,7 +2662,7 @@ $('#toc').on('click', 'a', function() {
 
 <ul>
   <li>The tables need to be joined to the dimension table via an equi-join (i.e. a primary key/foreign key relationship). They cannot be joined using a range of values.</li>
-  <li>Review the column setting called <a href="../data-modeling/attributable-dimension.html#">Attribution Dimension</a>. You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.</li>
+  <li>Review the column setting called <a href="/4.4/admin/data-modeling/attributable-dimension.html#">Attribution Dimension</a>. You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.</li>
   <li>Tables that will be joined across a chasm trap do not need to be co-sharded. They will be joined appropriately automatically in the most efficient way.</li>
 </ul>
 
@@ -2677,7 +2677,7 @@ $('#toc').on('click', 'a', function() {
 <ul>
   <li><strong>Show underlying data</strong> does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.</li>
   <li>When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.</li>
-  <li><a href="../data-security/legacy-row-security.html#">Legacy Row Level Security</a> does not work with chasm trap schemas. The newer <a href="../data-security/new_row-level-security.html#">Rule-Based Row Level Security</a> must be used.</li>
+  <li>Use<a href="/4.4/admin/data-security/new_row-level-security.html#">Rule-Based Row Level Security</a>.</li>
 </ul>
 
 <h3 id="behavior">Behavior</h3>
@@ -2726,7 +2726,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 10, 2017 <br />
+        Generated: Oct 11, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

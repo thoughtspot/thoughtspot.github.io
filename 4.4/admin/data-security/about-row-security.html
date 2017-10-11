@@ -2641,7 +2641,10 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Row level security (RLS) allows you to define which groups can see individual rows in a table, based on the values in one of its columns.</p>
+  <p>Row level security (RLS) allows you to define which groups can see individual
+rows in a table, based on the values in one of its columns. This RLS feature can
+handle thousands of groups, and allows you to set up flexible rules that are
+self-maintaining.</p>
 
 <h2 id="how-rls-works">How RLS works</h2>
 
@@ -2671,12 +2674,6 @@ $('#toc').on('click', 'a', function() {
     </tr>
   </tbody>
 </table>
-
-<h2 id="rules-based-rls-vs-legacy-rls">Rules-based RLS vs. Legacy RLS</h2>
-
-<p>Beginning with ThoughtSpot version 3.3, you can set RLS directly in the ThoughtSpot application.  This RLS feature can handle thousands of groups, and allows you to set up flexible rules that are self-maintaining.</p>
-
-<p>Prior to version 3.3, you had to use the security file which you edit in Excel to set up rules for row level security. This method is limited to 65 groups. You should not use this method, if you are setting up row level security for the first time. In fact, if you are using legacy row level security, you should consider migrating to the improved rule-based row level security for its better scale, flexibility, and ease of maintenance.</p>
 
 <h2 id="rls-and-administrators">RLS and administrators</h2>
 
@@ -2712,7 +2709,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 10, 2017 <br />
+        Generated: Oct 11, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
