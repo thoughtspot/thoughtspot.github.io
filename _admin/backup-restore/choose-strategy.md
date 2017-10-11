@@ -92,9 +92,7 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
                     </td>
                     <td>
                         <ul id="ul_lzn_tmc_m1b">
-                            <li>Backups require deleting the existing cluster first. <draft-comment
-                                    author="mary.anthony">Check with abishek if this is true in
-                                    4.3</draft-comment></li>
+                            <li>Backups require deleting the existing cluster first. 
                             <li>You are resonsible for validating your backup configuration as
                                 viable for restoring a cluster.</li>
                             <li>Best practice recommends you to maintain multiple backups.</li>
