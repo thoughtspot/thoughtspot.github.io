@@ -598,7 +598,7 @@ entries:
         - title: Change chart colors
           url: /end-user/search/change-chart-colors.html
           output: web,ugBk
-        - title: Show data labels
+        - title: Additional chart options
           url: /end-user/search/show-data-labels.html
           output: web,ugBk
         - title: Zoom into a chart

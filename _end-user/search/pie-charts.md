@@ -10,7 +10,7 @@ The pie chart is a classic chart type that displays your search in a circle. The
 
 ## How pie charts divide data
 
-Pie charts divide your data into sectors that each represent a proportion of a whole circle. You can display the exact values of each slice, in addition to the percentage values by toggling on **Show Data Labels** found under Change chart configuration.
+Pie charts divide your data into sectors that each represent a proportion of a whole circle. You can display the exact values of each slice, in addition to the percentage values by toggling on **Additional chart options** found under Change chart configuration.
 
  ![]({{ site.baseurl }}/images/pie_chart_example.png "Pie chart example")
 

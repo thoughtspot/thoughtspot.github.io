@@ -7,7 +7,7 @@ summary: "You can adjust the axes, labels, and view of the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Every chart gives you the option to move columns between the x- and y-axes, hide or show data labels, and zoom.
+Every chart gives you the option to move columns between the x- and y-axes, hide or Additional chart options, and zoom.
 
  ![]({{ site.baseurl }}/images/configure_chart_icons.png "Configure chart icons")
 
@@ -21,7 +21,7 @@ You can manually set the y-axis range by using the **Edit chart configuration** 
 You can hide and show values on the chart using the legend.
 -   **[Change chart colors]({{ site.baseurl }}/end-user/search/change-chart-colors.html)**  
 You can easily change the legend colors in a chart.
--   **[Show data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html)**  
+-   **[Additional chart options]({{ site.baseurl }}/end-user/search/show-data-labels.html)**  
 You can configure charts to show the y-axis data values.
 -   **[Zoom into a chart]({{ site.baseurl }}/end-user/search/zoom-into-a-chart.html)**  
 You can zoom into your chart by selecting an area with your mouse.
