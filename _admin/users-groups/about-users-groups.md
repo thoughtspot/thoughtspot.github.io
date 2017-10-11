@@ -26,7 +26,9 @@ You can also have a hierarchy of groups. That is, groups can belong to (that is,
 
 Here are the different privileges, and the capabilities they enable:
 
-{% include content/privileges.html %}
+{% include content/privileges.md %}
+
+&nbsp;
 
 Typically, the **ALL** group has a common set of privileges applies such as the **Can upload user data** and/or **Can download data** privileges.
 

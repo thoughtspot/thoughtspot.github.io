@@ -70,6 +70,10 @@ table.wide_table > tbody > tr > td {
   border-right: 1px solid #ddd;
 }
 
+table.wide_table, th, td {
+  border: none !important;
+}
+
 table.wide_table > thead > tr > th {
   color: initial;
   background-color: initial;

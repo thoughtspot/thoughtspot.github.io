@@ -1,4 +1,4 @@
-<table class="wide_table">
+<table id="matrix" class="wide_table">
   <caption>Privilege and access matrix</caption>
    <colgroup>
       <col style="width:36%;">
