@@ -32,6 +32,8 @@ To change the primary key of a table:
          PRIMARY KEY;
     ```
 
+    Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the `--allow_unsafe` flag.
+
 4. Add a new primary key, if desired:
 
     ```
@@ -57,39 +59,44 @@ To change the relationship between tables:
 
 1. [Create a manual snapshot]({{ site.baseurl }}/admin/backup-restore/overview-snapshot.html).
 2. [Connect to the database with the ThoughtSpot SQL Command Line (TQL)](prep-schema-for-load.html#connect-with-tql).
-3. Issue the command to drop the existing relationship, by issuing a command like one of these examples:
-    -   Drop a foreign key by name, if it was given a name when it was defined:
+3. Issue the command to drop the existing relationship
 
-        ```
-        TQL> ALTER TABLE
-             "sales_fact"
-             DROP CONSTRAINT
-             "FK_PO_number";
-        ```
+   Before dropping a relationship TQL checks for and then warns of any dependent
+   objects. To continue with the drop any way, use the `--allow_unsafe` flag.
+   The following examples illustrate several different types of drop operations.
 
-    -   Drop a relationship by name, if it was given a name when it was defined:
+    Drop a foreign key by name, if it was given a name when it was defined:
 
-        ```
+    ```
+    TQL> ALTER TABLE
+         "sales_fact"
+         DROP CONSTRAINT
+         "FK_PO_number";
+    ```
 
-        TQL> ALTER TABLE "fruit_dim"
-             DROP RELATIONSHIP "REL_dates";
-        ```
+    Drop a relationship by name, if it was given a name when it was defined:
 
-    -   Drop the foreign key relationship explicitly, if it doesn't have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:
+    ```
 
-        ```
-        TQL> ALTER TABLE "shipments"
-             DROP CONSTRAINT
-             FOREIGN KEY "orders";
-        ```
+    TQL> ALTER TABLE "fruit_dim"
+         DROP RELATIONSHIP "REL_dates";
+    ```
 
-    -   Drop all generic relationships between two tables:
+    Drop the foreign key relationship explicitly, if it doesn't have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:
 
-        ```
-        TQL> ALTER TABLE "wholesale_buys"
-             DROP RELATIONSHIP
-             WITH "retail_sales";
-        ```
+    ```
+    TQL> ALTER TABLE "shipments"
+         DROP CONSTRAINT
+         FOREIGN KEY "orders";
+    ```
+
+    Drop all generic relationships between two tables:
+
+    ```
+    TQL> ALTER TABLE "wholesale_buys"
+         DROP RELATIONSHIP
+         WITH "retail_sales";
+    ```
 
 4. Define a new relationship, if you want to, using `ALTER TABLE...ADD CONSTRAINT...`
 5. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
