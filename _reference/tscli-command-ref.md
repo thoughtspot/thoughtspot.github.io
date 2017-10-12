@@ -162,6 +162,7 @@ Use this subcommand to do the following:
 
 * `tscli cluster diagnose`  Diagnose all nodes in the cluster.
 * `tscli cluster get-config` Get current cluster network and time configuration. Prints JSON configuration to stdout.
+if for some reason the system cannot be connected to all interfaces, the command returns an error but continues to function.
 * `tscli cluster load` Load state from given backup onto existing cluster
 * `tscli cluster reinstall-os ` Reinstall OS on all nodes of the cluster.
 * `tscli cluster report` Generate cluster report.
