@@ -59,3 +59,9 @@ You can download a pinboard as a PDF file, without having to download each visua
 Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard. Most of these actions are found under the **Actions** button.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
+
+Other actions are available on a pinboard display itself. Some actions are
+static others appear only when you over over specific locations of the pinboard.
+This diagram displays active action areas on a pinboard.
+
+![]({{ site.baseurl }}/images/pinboard-controls.png "Pinboard controls")
