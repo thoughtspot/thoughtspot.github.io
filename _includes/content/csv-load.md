@@ -21,8 +21,8 @@ Any user who belongs to a group that has the privilege **Has administration priv
 
     When an upload is complete, the system reports the results and offers you some further actions.
 
-     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto Analyse")
+     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto analyze")
 
     * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Search** if you want to begin a new search.
-    * Click **Auto Analyse** if you want to use the SpotIQ feature to find insights in your new data.
+    * Click **Auto analyze** if you want to use the SpotIQ feature to find insights in your new data.

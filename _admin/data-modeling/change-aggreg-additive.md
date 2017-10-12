@@ -7,9 +7,13 @@ summary: "You can allow aggregate on MEASURE columns and some ATTRIBUTE columns.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Aggregation takes multiple input values and calculates an summary value from
-them. An example aggregation function would be average or minimum. You can
-control how aggregation works in your data.  
+Aggregation is grouping many units or parts into a new value.  In data,
+aggregation gathers multiple input values and calculates an summary value from
+them. You then use this aggregated value to do an analysis.
+
+Every summary value results from a data aggregation function. An example aggregation
+function would be average or minimum. You can control how aggregation works in
+your data.  
 
 ## Making an ATTRIBUTE column ADDITIVE
 

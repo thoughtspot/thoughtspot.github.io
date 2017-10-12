@@ -718,7 +718,7 @@ entries:
         - levelThreeTitle: SpotIQ 101
           output: web,ugBk
           levelThreeItems:
-          - title: Load and analyse data
+          - title: Load and analyze data
             url: /spotiq/overview.html
             output: web,ugBk
           - title: Review insights

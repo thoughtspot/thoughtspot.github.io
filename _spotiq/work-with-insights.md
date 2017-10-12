@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 At this point, you have done [the first set of SpotIQ tutorial tasks](), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
 **INSIGHT** list and see when your analysis ran. This is important knowledge
-because data changes, you'll want to run multiple analyses on the same data.
+because data changes, you'll want to run multiple analyzes on the same data.
 
 In this section, you look at the results and see what insights SpotIQ discovered.
 

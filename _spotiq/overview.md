@@ -1,5 +1,5 @@
 ---
-title: ["SpotIQ 101: Load and analyse data"]
+title: ["SpotIQ 101: Load and analyze data"]
 tags:
 keywords: tbd
 last_updated: tbd
@@ -43,7 +43,7 @@ item and department.
 
     ![]({{ site.baseurl }}/images/spotiq-upload.png)
 
-9. Choose **Auto Analyse** to build SpotIQ insights.
+9. Choose **Auto analyze** to build SpotIQ insights.
 
     Building insights can take time. How long depends on the data you are
     analyzing. The ThoughtSpot application displays an informational message.
@@ -80,19 +80,19 @@ analysis generates new results.
    Not every SpotIQ analysis creates results. You can see information about each
    analysis as well as the results.
 
-4. Select the **Analyses** link at the top of the page.
+4. Select the **analyzes** link at the top of the page.
 
    Check the **STATUS** and also how long the **RESULT** took to generate. Since
    you go results, you can see that the analysis succeeded.
 
 5. Select the **Analysis for Warehouse_and_Retail_Sales** and choose **Delete**.
 
-   The information disappears from the **Analyses** list.
+   The information disappears from the **analyzes** list.
 
 6. Choose **Results**.
 
    You should still see the your **Warehouse_and_Retail_Sales** run. Deleting
-   information about an analyses run does not delete the actual results. You
+   information about an analyzes run does not delete the actual results. You
    must delete each individually.
 
 ## Where to go next
