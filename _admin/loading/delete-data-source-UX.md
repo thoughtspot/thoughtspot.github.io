@@ -13,7 +13,7 @@ There are two separate ways to delete a data source, through the browser or [thr
 
 ## Check data source dependencies
 
-You can see all of the dependencies for any data source (worksheet or table) on the **Manage Data** page.
+You can see all of the dependencies for any data source (worksheet or table) on the **DATA** page.
 
 To view dependent objects for a data source:
 

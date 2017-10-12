@@ -84,7 +84,7 @@ model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-model
 You can set a format for how currencies are displayed in tables and charts when using the ThoughtSpot Data API or embedding. For example, you can display currencies in a standard European Euro or US Dollar format based on the data modeling setting **Currency Type**.
 
 You can change the currency format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html). When you specify the
-currency type of your data on the **Manage Data** page, your currency data will
+currency type of your data on the **DATA** page, your currency data will
 only display the correct format and currency code in the embedded use case.
 Currency specific symbols are available in the non-embedded use case as well,
 but they are not localized.

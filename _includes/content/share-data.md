@@ -1,6 +1,6 @@
 Share a table or imported data by following these steps:
 
-1. Click on the **Manage Data** icon in the top navigation bar.
+1. Click on the **DATA** icon in the top navigation bar.
 2. Click on **Tables**.
 
     ![]({{ site.baseurl }}/images/data_icon_and_tables.png)
