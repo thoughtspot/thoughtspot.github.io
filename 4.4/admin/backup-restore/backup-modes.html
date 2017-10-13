@@ -1397,7 +1397,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Show data labels</a></li>
+                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Additional chart options</a></li>
                               
                             
                         
@@ -1655,7 +1655,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">Load and analyse data</a></li>
+                                  <li><a href="/4.4/spotiq/overview.html">Load and analyze data</a></li>
                               
                             
                         
@@ -2686,13 +2686,24 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ul>
 
-<p>Data loaded through ThoughtSpot Loader (tsload), ODBC/JDBC drivers, and Data Connect is excluded. The expectation is that data loaded via tsload is from external sources and so can be re-loaded after the cluster is restored. An exception is if these mechanisms were used to load data into tables that were first created through CSV import (that is, a user first loaded the tables via the GUI). In this case, the data, like the tables they were loaded into, are saved.</p>
+<p>Data loaded through ThoughtSpot Loader (<code class="highlighter-rouge">tsload</code>), ODBC/JDBC drivers, and Data
+Connect is excluded. The expectation is that data loaded via <code class="highlighter-rouge">tsload</code> is from
+external sources and so can be re-loaded after the cluster is restored. An
+exception is if these mechanisms were used to load data into tables that were
+first created through CSV import (that is, a user first loaded the tables via
+the GUI). In this case, the data, like the tables they were loaded into, are
+saved.</p>
 
 <h2 id="dataless-backups">Dataless backups</h2>
 
-<p>A dataless backup saves a backup of the schema (metadata), with no data. Dataless backups allow you to send a copy of your cluster metadata to ThoughtSpot Support for troubleshooting without compromising data security and privacy. The size of a dataless backup is usually within 10’s of megabytes provided you do not have customized binaries.</p>
+<p>A dataless backup saves a backup of the schema (metadata), with no data.
+Dataless backups allow you to send a copy of your cluster metadata to
+ThoughtSpot Support for troubleshooting without compromising data security and
+privacy. The size of a dataless backup is usually within 10’s of megabytes
+provided you do not have customized binaries.</p>
 
-<p>When restoring from a dataless backup, you must supply the correct release tarball, since this type of backup does not include the software release.</p>
+<p>When restoring from a dataless backup, you must supply the correct release
+tarball, since this type of backup does not include the software release.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -2722,7 +2733,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 11, 2017 <br />
+        Generated: Oct 13, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

@@ -1397,7 +1397,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Show data labels</a></li>
+                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Additional chart options</a></li>
                               
                             
                         
@@ -1655,7 +1655,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">Load and analyse data</a></li>
+                                  <li><a href="/4.4/spotiq/overview.html">Load and analyze data</a></li>
                               
                             
                         
@@ -2666,6 +2666,8 @@ $('#toc').on('click', 'a', function() {
       PRIMARY KEY;
 </code></pre>
     </div>
+
+    <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.</p>
   </li>
   <li>
     <p>Add a new primary key, if desired:</p>
@@ -2697,46 +2699,45 @@ $('#toc').on('click', 'a', function() {
 <ol>
   <li><a href="/4.4/admin/backup-restore/overview-snapshot.html">Create a manual snapshot</a>.</li>
   <li><a href="prep-schema-for-load.html#connect-with-tql">Connect to the database with the ThoughtSpot SQL Command Line (TQL)</a>.</li>
-  <li>Issue the command to drop the existing relationship, by issuing a command like one of these examples:
-    <ul>
-      <li>
-        <p>Drop a foreign key by name, if it was given a name when it was defined:</p>
+  <li>
+    <p>Issue the command to drop the existing relationship</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>TQL&gt; ALTER TABLE
-     "sales_fact"
-     DROP CONSTRAINT
-     "FK_PO_number";
-</code></pre>
-        </div>
-      </li>
-      <li>
-        <p>Drop a relationship by name, if it was given a name when it was defined:</p>
+    <p>Before dropping a relationship TQL checks for and then warns of any dependent
+objects. To continue with the drop any way, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.
+The following examples illustrate several different types of drop operations.</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>
-TQL&gt; ALTER TABLE "fruit_dim"
-     DROP RELATIONSHIP "REL_dates";
-</code></pre>
-        </div>
-      </li>
-      <li>
-        <p>Drop the foreign key relationship explicitly, if it doesn’t have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:</p>
+    <p>Drop a foreign key by name, if it was given a name when it was defined:</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>TQL&gt; ALTER TABLE "shipments"
-     DROP CONSTRAINT
-     FOREIGN KEY "orders";
+    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE
+      "sales_fact"
+      DROP CONSTRAINT
+      "FK_PO_number";
 </code></pre>
-        </div>
-      </li>
-      <li>
-        <p>Drop all generic relationships between two tables:</p>
+    </div>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>TQL&gt; ALTER TABLE "wholesale_buys"
-     DROP RELATIONSHIP
-     WITH "retail_sales";
+    <p>Drop a relationship by name, if it was given a name when it was defined:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>
+ TQL&gt; ALTER TABLE "fruit_dim"
+      DROP RELATIONSHIP "REL_dates";
 </code></pre>
-        </div>
-      </li>
-    </ul>
+    </div>
+
+    <p>Drop the foreign key relationship explicitly, if it doesn’t have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
+      DROP CONSTRAINT
+      FOREIGN KEY "orders";
+</code></pre>
+    </div>
+
+    <p>Drop all generic relationships between two tables:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
+      DROP RELATIONSHIP
+      WITH "retail_sales";
+</code></pre>
+    </div>
   </li>
   <li>Define a new relationship, if you want to, using <code class="highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
   <li>Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.</li>
@@ -2843,7 +2844,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 11, 2017 <br />
+        Generated: Oct 13, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

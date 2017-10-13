@@ -1397,7 +1397,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Show data labels</a></li>
+                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Additional chart options</a></li>
                               
                             
                         
@@ -1655,7 +1655,7 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">Load and analyse data</a></li>
+                                  <li><a href="/4.4/spotiq/overview.html">Load and analyze data</a></li>
                               
                             
                         
@@ -3150,6 +3150,91 @@ $('#toc').on('click', 'a', function() {
 </span></code></pre>
 </div>
 
+<h2 id="public-name-session">Public name: session</h2>
+
+<p>This object has two POST calls, one for <code class="highlighter-rouge">login</code> and one for <code class="highlighter-rouge">logout</code>.</p>
+
+<h3 id="post-tspublicv1sessionlogin">POST /tspublic/v1/session/login</h3>
+
+<p>This call takes a <code class="highlighter-rouge">APPLICATION_FORM_URLENCODED</code> payload containing a
+<code class="highlighter-rouge">username</code>, a <code class="highlighter-rouge">password</code>, and an optional <code class="highlighter-rouge">rememberme</code> flag. If you do not
+supply the optional flag, the system uses the default <code class="highlighter-rouge">false</code> value.</p>
+
+<p><strong>Inputs</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">username</code></td>
+      <td>Username of the user to log in as.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">password</code></td>
+      <td>Password of the user to log in as.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rememberme</code></td>
+      <td>A flag indicating if the user session needs to be remembered. Defaults to <code class="highlighter-rouge">false</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Returns</strong></p>
+
+<p>No object is returned.</p>
+
+<p><strong>Status Codes</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Code</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>On successful login.</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>On failure to login</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="post-tspublicv1sessionlogout">POST /tspublic/v1/session/logout</h3>
+
+<p>This call logs a user out of an existing session.</p>
+
+<p><strong>Returns</strong></p>
+
+<p>No object is returned.</p>
+
+<p><strong>Status Codes</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Code</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>On successful logout.</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>On failure or when unauthorized to call.</td>
+    </tr>
+  </tbody>
+</table>
+
   <div class="tags">
     <div style="float:right;">
       
@@ -3178,7 +3263,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 11, 2017 <br />
+        Generated: Oct 13, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
