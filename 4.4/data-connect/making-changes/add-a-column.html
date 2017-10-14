@@ -650,24 +650,9 @@
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Join rules</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/joins-and-row-level-security.html">Legacy RLS with the join rule</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
+                      
                    
                 
                   
@@ -822,12 +807,6 @@
                           
                               
                                   <li><a href="/4.4/admin/data-security/set-rls.html">Set Rule-Based RLS</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/data-security/legacy-row-security.html">How to use legacy RLS</a></li>
                               
                             
                         
@@ -2708,7 +2687,7 @@ $('#toc').on('click', 'a', function() {
 
     <p>Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR(&lt;number) column definitions with VARCHAR(0), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.</p>
   </li>
-  <li><a href="/4.4/data-connect/data-connect/setup/adding-data-source.html#">Create a new data source.</a>Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the <code class="highlighter-rouge">SCRIPT TABLE</code> command.</li>
+  <li><a href="/4.4/data-connect/setup/adding-data-source.html#">Create a new data source.</a>Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the <code class="highlighter-rouge">SCRIPT TABLE</code> command.</li>
   <li>Run the data load and verify that everything is working as it should be.</li>
   <li>If the old data source was running as a recurring load, <a href="stop-scheduled-job.html">stop it from running</a>.</li>
 </ol>

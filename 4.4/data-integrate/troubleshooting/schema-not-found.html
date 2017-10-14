@@ -650,24 +650,9 @@
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Join rules</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/joins-and-row-level-security.html">Legacy RLS with the join rule</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
+                      
                    
                 
                   
@@ -822,12 +807,6 @@
                           
                               
                                   <li><a href="/4.4/admin/data-security/set-rls.html">Set Rule-Based RLS</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/data-security/legacy-row-security.html">How to use legacy RLS</a></li>
                               
                             
                         
@@ -2647,11 +2626,11 @@ $('#toc').on('click', 'a', function() {
 
 <p>Even if you do not use schema names in ThoughtSpot, you still have to specify a schema when connecting with ODBC. The default schema name in ThoughtSpot is “falcon_default_schema”. This default schema is always assumed when you don’t specify a schema name. However, with ODBC, you will need to specify it explicitly. To do this:</p>
 
-<p>On Windows, <a href="/4.4/admin/clients/change-odbc-windows.html#">change your ODBC configuration</a> by adding a custom property with the key “SCHEMA” and the value “falcon_default_schema”.</p>
+<p>On Windows, <a href="/4.4/data-integrate/clients/change-odbc-windows.html#">change your ODBC configuration</a> by adding a custom property with the key “SCHEMA” and the value “falcon_default_schema”.</p>
 
 <p><img src="/4.4/images/ODBC_add_schema.png" alt="" title="Edit a custom property on Windows" /></p>
 
-<p>On Linux or Solaris, you can modify the custom properties related to database and schema, if you want to provide defaults. For a list of those properties and how to change them, see <a href="/4.4/admin/reference/simba-settings.html#">ODBC and JDBC configuration properties</a>.</p>
+<p>On Linux or Solaris, you can modify the custom properties related to database and schema, if you want to provide defaults. For a list of those properties and how to change them, see <a href="/4.4/data-integrate/reference/simba-settings.html#">ODBC and JDBC configuration properties</a>.</p>
 
   <div class="tags">
     <div style="float:right;">

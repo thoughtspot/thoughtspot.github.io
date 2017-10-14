@@ -650,24 +650,9 @@
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Join rules</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/worksheets/joins-and-row-level-security.html">Legacy RLS with the join rule</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
+                      
                    
                 
                   
@@ -822,12 +807,6 @@
                           
                               
                                   <li><a href="/4.4/admin/data-security/set-rls.html">Set Rule-Based RLS</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/data-security/legacy-row-security.html">How to use legacy RLS</a></li>
                               
                             
                         
@@ -2756,7 +2735,7 @@ join the two fact tables through their shared dimension table. This diagram
 shows a typical complex schema with several tables that are related over a chasm
 trap:</p>
 
-<p><img src="/4.4/images/chasm-trap_complex.png" alt="" title="Complex schema with chasm traps" /></p>
+<p><img src="/4.4/images/chasm_trap_complex.png" alt="" title="Complex schema with chasm traps" /></p>
 
 <p>Examples of use cases where a chasm trap could occur when attribution analysis
 compare campaign data with purchase data, where all they have in common is that
@@ -2790,7 +2769,7 @@ counting.</p>
 <ul>
   <li><strong>Show underlying data</strong> does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.</li>
   <li>When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.</li>
-  <li>Use<a href="/4.4/admin/data-security/new_row-level-security.html#">Rule-Based Row Level Security</a>.</li>
+  <li>Use<a href="/4.4/admin/data-security/row-level-security.html#">Rule-Based Row Level Security</a>.</li>
 </ul>
 
 <h3 id="behavior">Behavior</h3>
