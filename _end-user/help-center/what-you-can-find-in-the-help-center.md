@@ -16,7 +16,7 @@ The Help Center provides the following resources:
 -   **A search bar** - You can use the search bar to search through all of ThoughtSpot's documentation and videos.
 -   **Short training videos** - Each of these videos cover a popular topic or feature, especially those that have just been released.
 
-    ![]({{ site.baseurl }}/images/help-center.png "Help Center home page")
+    ![]({{ site.baseurl }}/images/help_center.png "Help Center home page")
 
 -   **Keyword reference**- This reference contains all of the keywords that you can use to improve your search experience. The keywords are categorized into sections, and each of them are accompanied by an example.
 -   **Release Notes** - A new Release Notes is made available with every major, minor, and patch release. It contains information on new features and bug fixes.
@@ -24,11 +24,11 @@ The Help Center provides the following resources:
 -   **Downloads** - You can download ThoughtSpot clients and API files from here, including ODBC and JDBC drivers and the Data API.
 -   **Version information** The version number of the ThoughtSpot instance you are currently using can be found in the Help Center.
 
-    ![]({{ site.baseurl }}/images/help-center_4.2_version.png "Version number")
+    ![]({{ site.baseurl }}/images/help_center_4.2_version.png "Version number")
 
 
 ## Support contact information
 
 If you still can't find what you're looking for, you can contact support.
 
-![]({{ site.baseurl }}/images/help-center_support_contact.png "Contact support")
+![]({{ site.baseurl }}/images/help_center_support_contact.png "Contact support")

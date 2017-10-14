@@ -11,9 +11,9 @@ This section lists the properties you can set for ODBC or JDBC connections.
 
 ## Setting Properties for ODBC
 
-The properties information here comes mostly from the document Configuring SimbaClient for ODBC, published by Simba Technologies. You can access it directly [here](http://cdn.simba.com/products/SEN/doc/SimbaEngine_SDK_SimbaClientServer_User_Guide.pdf). Not all the parameters Simba accepts are supported by the ThoughtSpot ODBC clients, and ThoughtSpot has added some properties, which are listed separately here. All configuration properties use the type String (text).
+The properties information here comes mostly from the document Configuring SimbaClient for ODBC, published by Simba Technologies. You can access it directly [here](https://goo.gl/ykZMSZ). Not all the parameters Simba accepts are supported by the ThoughtSpot ODBC clients, and ThoughtSpot has added some properties, which are listed separately here. All configuration properties use the type String (text).
 
-You can set these properties on Windows by using the [ODBC Administrator]({{ site.baseurl }}/admin/clients/change-odbc-windows.html#).
+You can set these properties on Windows by using the [ODBC Administrator]({{ site.baseurl }}/data-integrate/clients/change-odbc-windows.html#).
 
 For Linux and Solaris, the properties are located in three files, depending on their type:
 
@@ -25,7 +25,7 @@ For Linux and Solaris, the properties are located in three files, depending on t
 
 ## Setting Properties for JDBC
 
-For JDBC, these properties are passed as key value pairs in the connect string. For more information, see [Use the JDBC Driver]({{ site.baseurl }}/admin/clients/use-jdbc-driver.html#).
+For JDBC, these properties are passed as key value pairs in the connect string. For more information, see [Use the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/use-jdbc-driver.html#).
 
 ## Properties Reference
 

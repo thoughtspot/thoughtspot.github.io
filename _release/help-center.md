@@ -44,7 +44,7 @@ permalink: /:collection/:path.html
      <a class="linktext" href="videos-list.html">More videos</a>
    </div>
    <div class="linksChild">
-     <a class="helpLink"  href="/release/keywords.html">
+     <a class="helpLink"  href="/reference/keywords.html">
      <img class="helpImg" alt="keywords.png" src="{{ "/images/keywords.png" | prepend: site.baseurl }}"></a>
      <br>
      <a class="linktext" href="/reference/keywords.html">Keywords</a>

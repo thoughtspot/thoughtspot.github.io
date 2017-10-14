@@ -11,7 +11,7 @@ A lot of work has gone into making ThoughtSpot's search bar intuitive and easy t
 
 ## Boxed search phrases
 
-The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. Search phrases have blue boxes, and [filters]({{ site.baseurl }}/complex-searches/about-filters.html#) have white boxes.
+The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. Search phrases have blue boxes, and [filters]({{ site.baseurl }}/complex-search/about-filters.html#) have white boxes.
 
  ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with boxed phrases")
 

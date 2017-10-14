@@ -34,7 +34,7 @@ In an answer or a pinboard, filters appear just below the title. For pinboards, 
 
 If you ever find that your search or pinboard does not appear to contain all the data you want to see, check for any existing filters and remove them by clicking the **X** to see all the data.
 
-{% include note.html content="Filtering on NULL and empty values is a special case. You can find out more about how these values are represented and how to filter for them in [About filtering on null, blank, or empty values](about-filters_for_null.html#)." %}
+{% include note.html content="Filtering on NULL and empty values is a special case. You can find out more about how these values are represented and how to filter for them in [About filtering on null, blank, or empty values](about-filters-for-null.html#)." %}
 
 ## Simple filters
 

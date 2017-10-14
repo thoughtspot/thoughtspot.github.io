@@ -7,7 +7,7 @@ summary: "Full embedding enhances our existing external sharing functionality. I
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can embed the full search experience into an iframe with different navigation views and toggle options. Before you can enable full embed, you need to [enable the JavaScript API \(JS API\)]({{ site.baseurl }}/app-integration/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
+You can embed the full search experience into an iframe with different navigation views and toggle options. Before you can enable full embed, you need to [enable the JavaScript API \(JS API\)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
 
 Embedded content creation gives you the ability to:
 

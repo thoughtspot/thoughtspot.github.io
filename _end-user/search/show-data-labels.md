@@ -21,7 +21,7 @@ To show data labels:
 
 2. Select **Show Data Labels**.
 
-     ![]({{ site.baseurl }}/images/show-data-labels.png "Toggle on Show Data Labels")
+     ![]({{ site.baseurl }}/images/show_data_labels.png "Toggle on Show Data Labels")
 
 ## Add regression line
 

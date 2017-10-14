@@ -27,7 +27,7 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 4. Click the **+ Add User** button on the upper right hand side of the list of groups.
 
-     ![]({{ site.baseurl }}/images/add-user_3.2.png "Add a new User")
+     ![]({{ site.baseurl }}/images/add_user_3.2.png "Add a new User")
 
 5. Enter the details for the new user:
 

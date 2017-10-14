@@ -16,9 +16,9 @@ You can obtain the ThoughtSpot client downloads from the Help Center. Always use
 
 ## Where to go next
 
--   **[About the ODBC Driver]({{ site.baseurl }}/data_integration/clients/about-odbc.html)**  
+-   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
--   **[About the JDBC Driver]({{ site.baseurl }}/data_integration/clients/about-jdbc-driver.html)**  
+-   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  
  Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.
--   **[About Informatica Connector]({{ site.baseurl }}/data_integration/clients/about-informatica.html)**  
+-   **[About Informatica Connector]({{ site.baseurl }}/data-integrate/clients/about-informatica.html)**  
 You can use the ThoughtSpot Informatica Cloud connector to read and write data between ThoughtSpot and Informatica. The connector supports INSERT, UPSERT, and READ operations. Once the connecter is downloaded, you can enter your company's ThoughtSpot cluster information and conduct data transfers.

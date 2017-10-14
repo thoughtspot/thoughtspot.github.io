@@ -34,7 +34,7 @@ To connect to TQL:
 
 Having examined the structure of the data to be loaded and become familiar with the ThoughtSpot SQL Command Line (TQL), you are now ready to create the schema.
 
-This method is a good way to get familiar with TQL and how to create database objects, but when creating a schema in a production system, you will most likely [Write a SQL script to create the schema](create-schema_with_script.html#).
+This method is a good way to get familiar with TQL and how to create database objects, but when creating a schema in a production system, you will most likely [Write a SQL script to create the schema](create-schema-with-script.html#).
 
 To create the schema directly in TQL:
 

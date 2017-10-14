@@ -10,7 +10,7 @@ TQL is the ThoughtSpot language for entering SQL commands. This reference lists 
 
 ## TQL commands
 
-You can use TQL either [through the ThoughtSpot application's web interface]({{ site.baseurl }}/admin/loading/upload-sql-script.html#) or the [command line interface]({{ site.baseurl }}/admin/loading/sql_cli.html#) in the Linux shell.
+You can use TQL either [through the ThoughtSpot application's web interface]({{ site.baseurl }}/admin/loading/upload-sql-script.html#) or the [command line interface]({{ site.baseurl }}/reference/sql-cli-commands.html#) in the Linux shell.
 
 {% include note.html content="Worksheets and pinboards in ThoughtSpot are dependent upon the data in the underlying tables. Use caution when modifying tables directly. If you change or remove a schema on which those objects rely, the objects could become invalid." %}
 
@@ -547,7 +547,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
          </td>
          <td>
             <p>Changes the data type of a column. This can have implications on sharding and
-               primary key behavior. See <a class="xref" href="../loading/about-data-type-conversion.html#concept_u2t_clg_wv" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
+               primary key behavior. See <a class="xref" href="/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
             </p>
          </td>
          <td>

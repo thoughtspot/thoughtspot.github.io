@@ -11,7 +11,7 @@ To start a new search:
 
 1. Click **Search** on the top navigation bar. You can also click **Search your data** at the top of the home page.
 
-     ![]({{ site.baseurl }}/images/start-a-new-search.png "Start a new search")
+     ![]({{ site.baseurl }}/images/start_a_new_search.png "Start a new search")
 
 2. Choose your sources by clicking **Choose Sources**.
 
@@ -29,4 +29,4 @@ To start a new search:
 
      ![]({{ site.baseurl }}/images/add_multiple_columns.png "Add multiple columns at once")
 
-Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented. You can [change the view]({{ site.baseurl }}/complex-searches/change-the-view.html#) to fit your needs.
+Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented. You can [change the view]({{ site.baseurl }}/complex-search/change-the-view.html#) to fit your needs.

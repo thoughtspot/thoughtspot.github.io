@@ -47,7 +47,7 @@ join the two fact tables through their shared dimension table. This diagram
 shows a typical complex schema with several tables that are related over a chasm
 trap:
 
- ![]({{ site.baseurl }}/images/chasm-trap_complex.png "Complex schema with chasm traps")
+ ![]({{ site.baseurl }}/images/chasm_trap_complex.png "Complex schema with chasm traps")
 
 Examples of use cases where a chasm trap could occur when attribution analysis
 compare campaign data with purchase data, where all they have in common is that
@@ -78,7 +78,7 @@ The following limitations on chasm trap schemas will produce a red bar error in 
 
 -   **Show underlying data** does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
 -   When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--  Use[Rule-Based Row Level Security]({{ site.baseurl }}/admin/data-security/new_row-level-security.html#).
+-  Use[Rule-Based Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#).
 
 ### Behavior
 

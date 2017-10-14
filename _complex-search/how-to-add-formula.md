@@ -17,7 +17,7 @@ To create a formula in a search:
 
 3. In the upper right hand side of the table, click **Actions** and select **Add formula**.
 
-     ![]({{ site.baseurl }}/images/create-formula_in_answer.png "Create a new formula in an answer")
+     ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 
 4. Type your formula in the Formula Builder.
 
@@ -41,4 +41,4 @@ To create a formula in a search:
 
 ## Related information  
 
-[Formula reference]({{ site.baseurl }}/admin/reference/formula-reference.html#)
+[Formula reference]({{ site.baseurl }}/reference/formula-reference.html#)

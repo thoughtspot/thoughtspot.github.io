@@ -53,5 +53,5 @@ The line column chart combines the column and line charts.
 The funnel chart shows a process with progressively decreasing proportions amounting to 100 percent in total.
 -   **[About geo charts]({{ site.baseurl }}/end-user/search/about-geo-charts.html)**  
 There are three geo charts that let you visualize geographical data in ThoughtSpot.
--   **[About pivot tables]({{ site.baseurl }}/complex-searches/about-pivoting-a-table.html)**  
+-   **[About pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)**  
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.

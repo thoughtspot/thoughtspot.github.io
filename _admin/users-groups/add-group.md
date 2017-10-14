@@ -25,7 +25,7 @@ To create a group and add privileges for the group:
 
 4. Click the **+ Add Group** button on the upper right hand side of the list of groups.
 
-     ![]({{ site.baseurl }}/images/add-group_3.2.png "Add a new Group")
+     ![]({{ site.baseurl }}/images/add_group_3.2.png "Add a new Group")
 
 5. Enter the details for the new group:
 

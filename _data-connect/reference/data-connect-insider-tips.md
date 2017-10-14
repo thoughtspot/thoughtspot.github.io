@@ -64,7 +64,11 @@ It is not necessary to import a column that is mentioned in an expression. For e
 
 ## Internet connectivity
 
-The only internet access the needed for ThoughtSpot Data Connect to operate is outbound access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/) (port 443). Of course, it also needs any other internet connectivity required to access any cloud data sources, like Salesforce. No inbound access is needed.
+The only internet access the needed for ThoughtSpot Data Connect to operate is
+outbound access to `https://app.informaticaondemand.com` and
+`https://app2.informaticacloud.com` (port 443). Of course, it also needs any
+other internet connectivity required to access any cloud data sources, like
+Salesforce. No inbound access is needed.
 
 
 

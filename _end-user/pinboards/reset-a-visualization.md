@@ -38,7 +38,7 @@ To reset a visualization:
 
 1. On an altered visualization, click the reset icon.
 
-     ![]({{ site.baseurl }}/images/reset-a-visualization.png "Click to reset")
+     ![]({{ site.baseurl }}/images/reset_a_visualization.png "Click to reset")
 
 2. Save your pinboard by clicking **Actions** and **Save**.
 

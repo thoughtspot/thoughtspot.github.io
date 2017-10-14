@@ -10,7 +10,7 @@ Runtime filters allow you to filter an answer or pinboard through parameters you
 
 ## Capabilities of Runtime Filters
 
-Runtime Filters provide ability to filter data at the time of retrieval using [Embedding]({{ site.baseurl }}/admin/embedding-viz/about-embedding-viz.html#) or the [REST API]({{ site.baseurl }}/admin/data-api/about-data-api.html#). This is done by providing filter information through the URL query parameters.
+Runtime Filters provide ability to filter data at the time of retrieval using [Embedding]({{ site.baseurl }}/app-integrate/embedding-viz/about-embedding-viz.html#) or the [REST API]({{ site.baseurl }}/app-integrate/data-api/about-data-api.html#). This is done by providing filter information through the URL query parameters.
 
 This example shows the URL to access a pinboard with a filter. Here the Runtime Filter is operating on the column "Color" and will only return values that are equal \(EQ\) to "red".
 

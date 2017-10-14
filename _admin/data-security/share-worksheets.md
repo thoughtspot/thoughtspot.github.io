@@ -17,7 +17,7 @@ To share a pinboard:
 
 2. Select one or more worksheets to share, and click the **Share** icon.
 
-    ![]({{ site.baseurl }}/images/share-worksheets.png)
+    ![]({{ site.baseurl }}/images/share_worksheets.png)
 
 3. Click **+ Add users or groups** and select users or groups that you want to share with.
 

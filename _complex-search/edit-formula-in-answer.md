@@ -12,7 +12,7 @@ You can always go back and view or edit a formula that was added to a search. Do
 2. Scroll down to the bottom of the **Columns** listing. You will see a data source called **Formulas**.
 3. Expand **Formulas**, and you'll see a list of all the formulas in this answer.
 
-     ![]({{ site.baseurl }}/images/edit-formula-in-answer.png "Formulas section expanded to show formulas in the answer")
+     ![]({{ site.baseurl }}/images/edit_formula_in_answer.png "Formulas section expanded to show formulas in the answer")
 
 4. Click the edit icon next to the formula name.
 

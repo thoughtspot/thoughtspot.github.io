@@ -16,7 +16,7 @@ You can create a formula in a worksheet by using the Formula Builder. When you d
 1. Create a new worksheet, or edit an existing one.
 2. Click the **+** button next to **Formulas**.
 
-     ![]({{ site.baseurl }}/images/create-formula.png "Create a new formula in a worksheet")
+     ![]({{ site.baseurl }}/images/create_formula.png "Create a new formula in a worksheet")d
 
 3. Type your formula in the Formula Builder.
 

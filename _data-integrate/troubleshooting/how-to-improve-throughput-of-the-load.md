@@ -17,4 +17,4 @@ Adjusting the transaction size may correct poor performance and low throughput i
 
 This is where the transaction size field exists for SSIS. Clicking on the ODBC destination reveals the properties on the right hand side, where the **Transaction Size** can be found.
 
-See [Set up the ODBC Driver for SSIS]({{ site.baseurl }}/admin/ssis/set-up-the-odbc-driver-using-ssis.html#) for more details on setting the transaction size.
+See [Set up the ODBC Driver for SSIS]({{ site.baseurl }}/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html#) for more details on setting the transaction size.

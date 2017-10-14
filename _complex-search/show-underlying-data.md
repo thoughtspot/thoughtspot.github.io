@@ -18,7 +18,7 @@ To show underlying data:
 1. Right click on the visualization or table cell of interest
 2. Select **Show underlying data**.
 
-   ![]({{ site.baseurl }}/images/show-underlying-data.png "Show underlying data option")
+   ![]({{ site.baseurl }}/images/show_underlying_data.png "Show underlying data option")
 
     A new window opens that displays a summary and the underlying data.
 

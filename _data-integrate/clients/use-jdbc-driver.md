@@ -24,7 +24,7 @@ To obtain the JDBC driver:
 
 
 1. Log in to the local machine where you want to install the JDBC driver.
-2. Click [**Here**](https://help.thoughtspot.com/help-center/3.5/Downloads) to download the JDBC driver.
+2. Click [**Here**](https://help.thoughtspot.com/help-center/4.2/Downloads) to download the JDBC driver.
 3. Click **JDBC Driver** to download the file `ThoughtSpot_jdbc_<version>.zip`.
 4. Move the driver to the desired directory on your local machine.
 5. Add the downloaded JDBC driver to your Java class path on the local machine.
