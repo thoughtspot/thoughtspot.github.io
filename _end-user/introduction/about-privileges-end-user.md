@@ -15,3 +15,7 @@ If you are trying to do something in ThoughtSpot, and cannot access the screens 
 Here are the privileges that the administrator sets, and the capabilities they enable:
 
 {% include content/privileges.html %}
+
+The following table shows the intersection of user privilege and ability:
+
+{% include content/matrix.md %}
