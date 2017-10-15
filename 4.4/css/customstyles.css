@@ -1,4 +1,8 @@
-body { background-image: url(/images/draft-orig.png); }
+body { background-image: url(/images/draft-orig.png);
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
 
 table.scheduler, th, td {
    border: 1px solid black;
