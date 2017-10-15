@@ -16,9 +16,10 @@ layout: null
 		{% for post in site.error-codes %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.reference %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.release %}{% include single-post-sitemap.html %}{% endfor %}
-		{% for post in site.spotiq %}{% include single-post-sitemap.html %}{% endfor %}
-	<loc>{{ site.url | absolute_url }}</loc>
-	  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-	  <changefreq>monthly</changefreq>
-  <priority>1</priority>
+		{% for post in site.spotiq %}{% include single-post-sitemap.html %}{% endfor %}<url>
+		<loc>{{ site.url | absolute_url }}</loc>
+		 <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		 <changefreq>monthly</changefreq>
+	  <priority>1</priority>
+	</url>
 </urlset>

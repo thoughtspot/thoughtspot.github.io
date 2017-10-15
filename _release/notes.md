@@ -260,7 +260,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
 <td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
+<p>Previously setting both the browser and the ThoughtSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
