@@ -9,9 +9,9 @@ layout: null
 		{% for post in site.appliance %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.aws %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.complex-search %}{% include single-post-sitemap.html %}{% endfor %}
-		{% for post in site.data %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.data-connect %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.data-integrate %}{% include single-post-sitemap.html %}{% endfor %}
+		{% for post in site.disaster-recovery %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.end-user %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.error-codes %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.reference %}{% include single-post-sitemap.html %}{% endfor %}
