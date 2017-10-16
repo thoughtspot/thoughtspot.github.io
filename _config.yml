@@ -3,7 +3,7 @@
 locale                   : "en"
 destination              : ./_site
 output                   : web # used for conditional content filtering
-description              : "An example site and repo for controlling versions of a web site."
+description              : "Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily."
 twitter                  : thoughtspot
 url                      : https://docs.thoughtspot.com # the base hostname & protocol for the site
 repository               : thoughtspot/thoughtspot.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
