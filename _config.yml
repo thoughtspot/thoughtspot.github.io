@@ -4,6 +4,7 @@ locale                   : "en"
 destination              : ./_site
 output                   : web # used for conditional content filtering
 description              : "An example site and repo for controlling versions of a web site."
+twitter                  : thoughtspot
 url                      : https://docs.thoughtspot.com # the base hostname & protocol for the site
 repository               : thoughtspot/thoughtspot.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repo                     : thoughtspot.github.io
@@ -18,6 +19,8 @@ google_analytics         : UA-108077926-1 # if you have google-analytics ID, put
 # Plugins
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-seo-tag
 
 # Files and directories that jekyll will exclude from the build output
 exclude:

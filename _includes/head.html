@@ -3,9 +3,8 @@
 <!-- Original replaced with the next" https://getbootstrap.com/docs/3.3/css/ -->
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
-<link rel="canonical" href="{{ site.url }}{{ base.url }}{{ page.url | replace:'index.html',''}}">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+<!-- <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}"> -->
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 <title>{{ page.title }} | {{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ 'css/syntax.css' | absolute_url }}">
@@ -43,3 +42,5 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+<!-- SEO Tools -->
+{% seo %}
