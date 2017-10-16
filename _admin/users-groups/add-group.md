@@ -7,8 +7,8 @@ summary: "Good planning when creating groups and assigning privileges will pay o
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before adding users, create the groups they will belong to. Each group includes a set of privileges for its users.
-
+Before adding users, create the groups they will belong to. Each group includes
+a set of privileges for its users.
 
 ## Create a group
 
@@ -35,16 +35,36 @@ To create a group and add privileges for the group:
     2. Optionally enter a description.
     3. Check the [privileges](about-users-groups.html#list-of-privileges) you want to grant to the group.
 
-        If you add the privilege **Has administration privileges** to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security]({{ site.baseurl }}/admin/data-security/about-row-security.html#) does not apply to them.
+        If you add the privilege **Has administration privileges** to a group,
+        all users in that group can see all the data in ThoughtSpot.
+        Administrators can always see all data sources, and
+        [Row level security]({{ site.baseurl}}/admin/data-security/about-row-security.html#) does not apply to them.
 
-    4. Click the **Manage Groups** tab if you want to add sub-groups. Find the groups you want to add in the list, or search for them by name. Check the box next to each group you want to add to the group.
-    5. Click the **Manage Users** tab if you want to add users. Find the users you want to add in the list, or search for them by name. Check the box next to each user you want to add to the group.
+    4. Click the **Manage Groups** tab if you want to add sub-groups.
+
+       Find the groups you want to add in the list, or search for them by name.
+       Check the box next to each group you want to add to the group.
+
+    5. Click the **Manage Users** tab if you want to add users.
+
+        Find the users you want to add in the list, or search for them by name.
+        Check the box next to each user you want to add to the group.
 
 6. Click **Create** to create the group.
 
-## Edit or delete a group
+## Edit a group or delete a group
 
-After adding a group, you can always go in and change its settings to add or revoke privileges. The new settings will apply to all the group members. To edit or delete an existing group:
+After adding a group, you can always go in and edit its settings to add or
+revoke privileges. The new settings will apply to all the group members. When
+editing a group, keep in mind that only sub-groups appear in a group:
+
+![]({{ site.baseurl }}/images/group-in-group.png)
+
+The **No Groups in Group** only indicates there are no children in this group's
+hierarchy. There may be a parent. This group inherits all the privileges of any
+parent group it may have. Keep this in mind when adding users.
+
+To edit or delete an existing group:
 
 1. Log into ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.

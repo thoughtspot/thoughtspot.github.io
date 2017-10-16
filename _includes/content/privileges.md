@@ -31,7 +31,7 @@
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
     </tr>
     <tr>
-      <td><strong>Can auto analyze</strong></td>
+      <td><strong>Has Spot IQ privilege</strong></td>
       <td>User can use SpotIQ's auto analyze function.</td>
     </tr>
     <tr>

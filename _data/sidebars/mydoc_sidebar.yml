@@ -307,6 +307,9 @@ entries:
         - title: Share a pinboard
           url: /admin/data-security/share-pinboards.html
           output: web, admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
+          output: web, admBk
         - title: Revoke access (unshare)
           url: /admin/data-security/unshare.html
           output: web, admBk
@@ -706,13 +709,16 @@ entries:
         - title: View a data profile
           url: /admin/loading/view-your-data-profile.html
           output: web,ugBk
-        - levelThreeTitle: SpotIQ 101
+        - levelThreeTitle: SpotIQ
           output: web,ugBk
           levelThreeItems:
-          - title: Load and analyze data
+          - title: What is SpotIQ
+            url: /spotiq/whatisspotiq.html
+            output: web,ugBk
+          - title: "101: Load and analyze data"
             url: /spotiq/overview.html
             output: web,ugBk
-          - title: Review insights
+          - title: "101: Review insights"
             url: /spotiq/overview.html
             output: web,ugBk
         - levelThreeTitle: Share your work

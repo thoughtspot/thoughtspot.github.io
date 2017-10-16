@@ -6,19 +6,31 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This 101 walks you through a few simply SpotIQ workflows. When you have
-completed the walk through, you will be able to use the core features of SpotIQ
+This 101 walks you through a few simple, SpotIQ workflows. When you have
+completed the walk through you will be able to use the core features of SpotIQ
 in your ThoughtSpot installation.
+
+If you want a detailed overview over what SpotIQ does before you try it out,
+first [read the introduction to SpotIQ](whatisspotiq.md).
 
 ## Prerequisites
 
 Before you begin, make sure you can login into ThoughtSpot application. To
 complete this tutorial, you need the ability to Log in into ThoughtSpot Ability
-to upload a CSV file
+to upload a CSV file.  You also need the ability to use the SpotIQ application.
+These features require that your user account must have the following privileges:
+
+* **Can upload user data**
+* **Has Spot IQ privilege**
+
+Your ThoughtSpot administrator can give you these privileges. If you can see the
+SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ:
+
+ ![]({{ site.baseurl }}/images/spotiq-is-on.png)
 
 ## Get the sample data and some insights
 
-You can use SpotIQ with any of the data in your system, not just CSV loaded data.
+You can use SpotIQ with any of the data in your system.
 
 This tutorial uses a dataset containing a list of sales and movement data by
 item and department.
