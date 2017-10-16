@@ -213,6 +213,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 163)
+  jekyll-redirect-from
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH
