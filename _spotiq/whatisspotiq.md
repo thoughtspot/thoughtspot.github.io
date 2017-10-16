@@ -45,4 +45,4 @@ The menu items that use SpotIQ have a lozenge that indicates this:
 ## How do you use SpotIQ?
 
 The best way to learn how to use SpotIQ is to try it for your self.
-The [SpotIQ 101 tutorial](overview.md) walks you through a simple example.
+The [SpotIQ 101 tutorial](overview.html) walks you through a simple example.
