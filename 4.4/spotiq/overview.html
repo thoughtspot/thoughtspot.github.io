@@ -49,16 +49,16 @@
 <title>[“SpotIQ 101: Load and analyze data”]</title>
 <meta property="og:title" content="[“SpotIQ 101: Load and analyze data”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This 101 walks you through a few simply SpotIQ workflows. When you have completed the walk through, you will be able to use the core features of SpotIQ in your ThoughtSpot installation." />
-<meta property="og:description" content="This 101 walks you through a few simply SpotIQ workflows. When you have completed the walk through, you will be able to use the core features of SpotIQ in your ThoughtSpot installation." />
+<meta name="description" content="This 101 walks you through a few simple, SpotIQ workflows. When you have completed the walk through you will be able to use the core features of SpotIQ in your ThoughtSpot installation." />
+<meta property="og:description" content="This 101 walks you through a few simple, SpotIQ workflows. When you have completed the walk through you will be able to use the core features of SpotIQ in your ThoughtSpot installation." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/spotiq/overview.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/spotiq/overview.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-16T09:54:25-07:00" />
+<meta property="article:published_time" content="2017-10-16T13:53:05-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"This 101 walks you through a few simply SpotIQ workflows. When you have completed the walk through, you will be able to use the core features of SpotIQ in your ThoughtSpot installation.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/overview.html","publisher":null,"image":null,"headline":"[“SpotIQ 101: Load and analyze data”]","dateModified":"2017-10-16T09:54:25-07:00","datePublished":"2017-10-16T09:54:25-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/overview.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"This 101 walks you through a few simple, SpotIQ workflows. When you have completed the walk through you will be able to use the core features of SpotIQ in your ThoughtSpot installation.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/overview.html","publisher":null,"image":null,"headline":"[“SpotIQ 101: Load and analyze data”]","dateModified":"2017-10-16T13:53:05-07:00","datePublished":"2017-10-16T13:53:05-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/overview.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -791,6 +791,12 @@
                           
                               
                                   <li><a href="/4.4/admin/data-security/share-pinboards.html">Share a pinboard</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/admin/data-security/spotiq-admin.html">Security for SpotIQ functions</a></li>
                               
                             
                         
@@ -1646,18 +1652,24 @@
                 
                   
                    <li class="levelThree">
-                       <a href="#">SpotIQ 101</a>
+                       <a href="#">SpotIQ</a>
                        <ul>
                         
                           
                               
-                                  <li class="active"><a href="/4.4/spotiq/overview.html">Load and analyze data</a></li>
+                                  <li><a href="/4.4/spotiq/whatisspotiq.html">What is SpotIQ</a></li>
                               
                             
                         
                           
                               
-                                  <li class="active"><a href="/4.4/spotiq/overview.html">Review insights</a></li>
+                                  <li class="active"><a href="/4.4/spotiq/overview.html">101: Load and analyze data</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li class="active"><a href="/4.4/spotiq/overview.html">101: Review insights</a></li>
                               
                             
                         
@@ -2635,19 +2647,33 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This 101 walks you through a few simply SpotIQ workflows. When you have
-completed the walk through, you will be able to use the core features of SpotIQ
+  <p>This 101 walks you through a few simple, SpotIQ workflows. When you have
+completed the walk through you will be able to use the core features of SpotIQ
 in your ThoughtSpot installation.</p>
+
+<p>If you want a detailed overview over what SpotIQ does before you try it out,
+first <a href="whatisspotiq.md">read the introduction to SpotIQ</a>.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
 <p>Before you begin, make sure you can login into ThoughtSpot application. To
 complete this tutorial, you need the ability to Log in into ThoughtSpot Ability
-to upload a CSV file</p>
+to upload a CSV file.  You also need the ability to use the SpotIQ application.
+These features require that your user account must have the following privileges:</p>
+
+<ul>
+  <li><strong>Can upload user data</strong></li>
+  <li><strong>Has Spot IQ privilege</strong></li>
+</ul>
+
+<p>Your ThoughtSpot administrator can give you these privileges. If you can see the
+SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ:</p>
+
+<p><img src="/4.4/images/spotiq-is-on.png" alt="" /></p>
 
 <h2 id="get-the-sample-data-and-some-insights">Get the sample data and some insights</h2>
 
-<p>You can use SpotIQ with any of the data in your system, not just CSV loaded data.</p>
+<p>You can use SpotIQ with any of the data in your system.</p>
 
 <p>This tutorial uses a dataset containing a list of sales and movement data by
 item and department.</p>
