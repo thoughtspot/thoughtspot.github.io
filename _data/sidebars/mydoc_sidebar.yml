@@ -187,7 +187,7 @@ entries:
       - title: About data modeling
         url: /admin/data-modeling/about-data-modeling-intro.html
         output: web, admBk
-      - title:  Change a table's data model
+      - title:Change a table's data model
         url: /admin/data-modeling/model-data-in-UI.html
         output: web, admBk
       - title: Edit the system-wide data model

@@ -16,7 +16,7 @@ your users) add new data to your system, this file changes as it expands to
 accommodate new data columns.
 
 {% include tip.html content="If you just want to change a subset of your data,
-use the [ Change a table's data model](model-data-in-UI.html#) instead." %}
+use the [Change a table's data model](model-data-in-UI.html#) instead." %}
 
 ## Overview of the modeling process
 
@@ -122,4 +122,4 @@ for you automatically. Your new settings will be reflected within a few minutes.
 ## Related information  
 
 * [Data modeling settings](data-modeling-settings.html#)
-* [ Change a table's data model](model-data-in-UI.html)
+* [Change a table's data model](model-data-in-UI.html)
