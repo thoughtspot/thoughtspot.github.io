@@ -35,7 +35,7 @@ You can use SpotIQ with any of the data in your system.
 This tutorial uses a dataset containing a list of sales and movement data by
 item and department.
 
-1. Download the [Warehouse_and_Retail_Sales]({{ site.baseurl }}/downloads/Warehouse_and_Retail_Sales.csv) CSV file.
+1. Download the [FoodDollarDataReal]({{ site.baseurl }}/downloads/FoodDollarDataReal.csv) CSV file.
 2. Save or move the file to a place on your local drive..
 
 ## Upload the data
@@ -51,17 +51,18 @@ item and department.
 6. Click **Next** for the **Set column names** page.
 7. Set the **ITEM CODE** column to **TEXT** on the **Set column types** page.
 8. Click **Upload**.
+
    The system presents you with a few choices.
 
-    ![]({{ site.baseurl }}/images/spotiq-upload.png)
+   ![]({{ site.baseurl }}/images/spotiq-choice.png)
 
 9. Choose **SpotIQ Auto Analyze** to build SpotIQ insights.
 
-    Building insights can take time. How long depends on the data you are
-    analyzing. The ThoughtSpot application displays an informational message.
-    The message disappears after a moment.
+   Building insights can take time. How long depends on the data you are
+   analyzing. The ThoughtSpot application displays an informational message. The
+   message disappears after a moment.
 
-    ![]({{ site.baseurl }}/images/spotiq-processing.png)
+   ![]({{ site.baseurl }}/images/spotiq-processing.png)
 
 
 ## Work with the INSIGHTS list
@@ -71,16 +72,16 @@ keeps the results until the user that requested the analysis (or an admin),
 deletes them. You can run SpotIQ on the same object multiple times. Each
 analysis generates new results.
 
-1. To check for the results of your analysis, select the **INSIGHTS** page.
+1. To check for the results of your analysis, select the **SpotIQ** page.
 
-   The **INSIGHTS** page allows you to see all results with data you have
+   The **SpotIQ** page allows you to see all results with data you have
    permission for. So the results lists shows **All** results or just **Yours**.
 
 2. Select **Yours**.
 
    ![]({{ site.baseurl }}/images/spotiq-insights.png)
 
-3. Look for results from your **Warehouse_and_Retail_Sales** data.
+3. Look for results from your **FoodDollarDataReal** data.
 
     SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **STICKERS**,
     and **MODIFIED**. The **NAME** comes from the object that was analyzed which
@@ -95,9 +96,9 @@ analysis generates new results.
 4. Select the **analyzes** link at the top of the page.
 
    Check the **STATUS** and also how long the **RESULT** took to generate. Since
-   you go results, you can see that the analysis succeeded.
+   you got results, you can see that the analysis succeeded.
 
-5. Select the **Analysis for Warehouse_and_Retail_Sales** and choose **Delete**.
+5. Select the **Analysis for FoodDollarDataReal** and choose **Delete**.
 
    The information disappears from the **analyzes** list.
 

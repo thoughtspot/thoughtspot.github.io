@@ -718,8 +718,11 @@ entries:
           - title: "101: Load and analyze data"
             url: /spotiq/overview.html
             output: web,ugBk
-          - title: "101: Review insights"
-            url: /spotiq/overview.html
+          - title: "101: Review and save insights"
+            url: /spotiq/work-with-insights.html
+            output: web,ugBk
+          - title: "101: Do more with SpotIQ"
+            url: /spotiq/spotiq-customize.html
             output: web,ugBk
         - levelThreeTitle: Share your work
           output: web,ugBk

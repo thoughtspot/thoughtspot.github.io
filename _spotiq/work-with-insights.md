@@ -1,18 +1,18 @@
 ---
-title: ["SpotIQ 101: Review insights"]
+title: ["101: Do more with SpotIQ"]
 tags:
-keywords: tbd
+keywords: "trend line","cross-correlation",outlier
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-At this point, you have done [the first set of SpotIQ tutorial tasks](), you've uploaded some
+At this point, you have done [the first set of SpotIQ tutorial tasks](overview.md), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
 **INSIGHT** list and see when your analysis ran. This is important knowledge
 because data changes, you'll want to run multiple analyzes on the same data.
 
-In this section, you look at the results and see what insights SpotIQ discovered.
-
+In this section, you look at the results and see what insights SpotIQ
+discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
 ## View results of an analysis
 
@@ -39,79 +39,103 @@ In this section, you look at the results and see what insights SpotIQ discovered
 
    You can see that SpotIQ found the seven highest suppliers out of 317.
 
-## Modify an insight
+## Time and your insight data
 
-You can also modify the charts you see in your results.
+You'll notice that when you first look at an insight there is an expiration date
+in the upper right corner:
 
-1. Scroll down the page and locate the **Total MONTH by ITEM TYPE** pie chart.
+![]({{ site.baseurl }}/images/spotiq-expiration.png)
 
-   The pie chart is a bit difficult to read because of some small slices.
+If the expiration time elapses, ThoughtSpot automatically removes the reports.
 
-2. Click on the chart menu to display the options.
+Insights also take space in the ThoughtSpot installation. A lot of people
+creating insights can add up to a lot of data lying around. Just as water rising
+in a bath tub can overflow or just cause a problem you have to wade through, too
+much data can create a lot of old reports to sift through.
 
-    ![]({{ site.baseurl }}/images/spotiq-details.png)
+Another reason to expire an insight is time. Typically, business data is
+changing every day if not more frequently. Any particular set of insights are
+valid for data during a specific period of time. This doesn't mean old insights
+can't provide information you can use, just that you are unlikely to get the
+same insight twice.
 
-    You can see that there are several things you can do to this chart, you can
-    download the chart, edit it, or even run another SpotIQ analysis on it.
-    You'll learn more about this later.
+If a set of insights look good, you can **Save** them and they are not removed
+when they expire. Do this now, click **Actions > Save** from the menu:
 
-3. Choose **Edit**.
+![]({{ site.baseurl }}/images/spotiq-save.png)
 
-   The system displays a dialog with a layout familiar to any user that has run
-   a ThoughtSpot search or worked with a result. This is dialog reveals the
-   **Search** syntax used to generate the insight. You can use this dialog to do
-   all the things you would normally do with a search.
+Now your insights won't expire as you work with them!
 
-4. Select the chart icon and choose **Area** to change the chart display.
+## Data outliers
 
-   The chart display becomes an area.
+SpotIQ has three central insights it looks for, the first insight it looks for are
+data outliers. An outlier is a value that is "far away" or that differs from the
+other data.
 
-5. Change the chart to `sort by item type` either using the drop down in the
-table X axis or by typing the filter directly in the search bar.
+Outliers can result from measurement or recording errors or they
+could contain valuable information.  For example, one store might sell
+significantly more towels in one week out of the year because there was a flood
+that week.
 
-    The chart display becomes sorted.
+1. Scroll to the first carousel of data that SpotIQ created for you.  
+2. Count the number of items in the carousel.
 
-    ![]({{ site.baseurl }}/images/spotiq-chartalter.png)
+    You should see that SpotIQ found two outliers.
 
-    You can actually use this dialog to modify the search that produced the
-    insight just as you would any other search. You can also save the results as
-    an entirely new worksheet.
+    ![]({{ site.baseurl }}/images/spotiq-outliers.png)
 
-6. Choose **Actions > Update**.
-7. Dismiss the dialog by pressing the **X**.
+    In this case, SpotIQ is indicating that the **Total Imports** value is
+    significantly higher than the other values in your set.
 
-    The chart with your changes now appears in the **INSIGHTS** list.
+    Two facts about this outlier shouldn't surprise, you. The first fact is that a
+    total exceeds all the other items in the data.  That just makes sense so this
+    isn't a true outlier.
 
-## Presenting the INSIGHTS
+    The second fact is that SpotIQ insights are not always interesting. In this
+    case the data included totals in the row data which caused nonsense outliers.
+    You can use SpotIQ to fix this issue and go futher. More about this later in
+    the tutorial.
 
-You can present SpotIQ insights in several ways. You can present an individual
-result or all of them at once. You can package all the insights in a PDF. This
-is useful for passing a packet of results.
+## Looking for relationships (cross-correlation analysis)
 
-1. Locate the **Actions** menu on the corner of the **INSIGHTS** page.
-2. Choose **Actions > Download as PDF** from the menu.
+Cross-correlation looks for and measures relationships between two quantitive,
+continous information sets -- in our case two fields (columns) in our dataset.
+Usually, you'll see a cross-correlation in your insights if your data includes
+time or date data.
 
-   The system downloads a file containing all the insights. Keep in mind this is
-   file can be very large if there are a lot of insights found in your data.
+The result of a correlation analysis shows how strong and in what direction a
+relationship between two data sets moves. The range is -1 to 1, the closer the
+cross-correlation value is to 1, the more closely the information fields (data
+elements) are correlated.
 
-Groups of charts that appear in a carousel can be presented as a group. To do
-this, do the following:
+1. Scroll down your insight page, till you find the correlation results:
+2. Page through the correlation category to the third insight:
 
-1. Scroll down to the first carousel in the list.
-2. Roll over the right corner of the menu to reveal the menu.
+   ![]({{ site.baseurl }}/images/spotiq-correlations.png)
 
-   ![]({{ site.baseurl }}/images/spotiq-carousel.png)
+    You can see that the over all total and the total category number values
+    correlate very strongly. The correlation also looks for a _lag_ value.
 
-3. Choose **Present**  or **Copy link** item from the menu.
+      _In the business world the dependence of a variable Y (the dependent variable)
+      on another variable X (the explanatory variable) is rarely instantaneous.
+      Often, Y responds to X after a certain lapse of time. Such a lapse of time is
+      called a lag._ [Good Data Help](https://goo.gl/XW2Tk1).
 
 
- Each individual chart has a **Download**, **Present**, or **Copy link** action
- you can also take.
+## Trends over time
+
+A trend line is a straight or curved line that indicates the general pattern or
+direction of a time series data (information in sequence over time). This can
+help you to determine the general direction of a trend in  your data, such as
+sales are climbing or customers are declining.
+
+1. Scroll down to the **Insights from Trend Analysis** section.
+2. Look for the **Total imports by year** result.
+
+   ![]({{ site.baseurl }}/images/spotiq-trend.png)
+
 
 ## Where to go next
 
-In this section, you explored some of the functionality of the **INSIGHTS**
-page. You learned how you can edit an insight to customize how it looks or even
-the **Search** syntax behind it.  In [the next
-section]({{ site.baseurl }}/spotiq/special-topics.html), you'll learn how to schedule SpotIQ
-to deliver insights on a regular basis.
+In this section, you explored some of the functionality of the **SpotIQ**
+page.  In [the next section]({{ site.baseurl }}/spotiq/special-topics.html), you'll learn how to schedule SpotIQ to deliver insights on a regular basis.
