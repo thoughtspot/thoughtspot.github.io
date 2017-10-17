@@ -54,11 +54,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-16T14:39:06-07:00" />
+<meta property="article:published_time" content="2017-10-17T08:25:46-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"A backup is a procedure that stores a snapshot outside of a ThoughtSpot cluster. You can use a backup to restore a cluster to a prior state, a differently configured appliance, or move it to from an appliance to a virtual cluster or vice versa. Other advanced administrative operations also use backups.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html","publisher":null,"image":null,"headline":"[“Understand backup modes”]","dateModified":"2017-10-16T14:39:06-07:00","datePublished":"2017-10-16T14:39:06-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"A backup is a procedure that stores a snapshot outside of a ThoughtSpot cluster. You can use a backup to restore a cluster to a prior state, a differently configured appliance, or move it to from an appliance to a virtual cluster or vice versa. Other advanced administrative operations also use backups.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html","publisher":null,"image":null,"headline":"[“Understand backup modes”]","dateModified":"2017-10-17T08:25:46-07:00","datePublished":"2017-10-17T08:25:46-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/backup-restore/backup-modes.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -539,7 +539,7 @@
                 
                   
                       
-                          <li><a href="/4.4/admin/data-modeling/model-data-in-UI.html">Change an table's data model</a></li>
+                          <li><a href="/4.4/admin/data-modeling/model-data-in-UI.html">Change a table's data model</a></li>
                       
                    
                 
@@ -2653,13 +2653,13 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> You should never disable the periodic snapshot system as backups rely on it. For example, if you have disabled the periodic snapshots system and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together.</div>
 
-<p>Backups are usually stored on a <a href="/4.4/admin/setup/NAS-mount.html#">NAS (network attached storage) file system</a> but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 5 GB of extra space beyond the backup itself. So, make sure you have enough disk space before backing up.</p>
+<p>Backups are usually stored on a <a href="/4.4/admin/setup/NAS-mount.html#">NAS (network attached storage) file system</a> but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 10 GB of extra space beyond the backup itself. The final backup image is smaller because these extra files are removed after the backup completes successfully. So, make sure you have enough disk space both to <em>take</em> a backup and store the result.</p>
 
 <p>You can create a backup using one of three modes, full, lightweight or dataless.</p>
 
 <h2 id="full-backups">Full backups</h2>
 
-<p>Full backups are entire backups of the cluster with all data, whether loaded from the web interface or from <code class="highlighter-rouge">tsload</code>. This is the best mode for restoring a cluster and all your data. Once a <code class="highlighter-rouge">FULL</code> backup is created, you can move them between clusters, even if the cluster configuration is different. Full backups can be as large as 20 GB in addition to the 5 GB of additional files.</p>
+<p>Full backups are entire backups of the cluster with all data, whether loaded from the web interface or from <code class="highlighter-rouge">tsload</code>. This is the best mode for restoring a cluster and all your data. Once a <code class="highlighter-rouge">FULL</code> backup is created, you can move them between clusters, even if the cluster configuration is different. Full backups can be as large as 20 GB in addition to the 5 GB of additional files. Some installations can exceed these limits, this is why it is important to test your backup configuration.</p>
 
 <p>Before creating a manual backup or configuring automated backups, make sure there is enough disk space on the target disk. Consider an example, where you want to store three backups. If the backup itself takes 18GB, you need about 18 + 5 = 23 GB of free disk space. Don’t forget that the backup size can grow over time, so you should occasionally check to ensure you are not in dange of running out of disk space to store backups.</p>
 
@@ -2741,7 +2741,7 @@ tarball, since this type of backup does not include the software release.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 16, 2017 <br />
+        Generated: Oct 17, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
