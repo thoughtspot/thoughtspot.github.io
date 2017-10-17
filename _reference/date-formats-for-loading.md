@@ -20,8 +20,6 @@ Data loading formats do not change how data is displayed in tables and charts.
 The context where you _can control_ date and time formats is data modeling. Data
 modeling controls how data is displayed in search and their resulting answers.
 
-
-
 ## Data loading formats via tsload
 
 When loading via the `tsload` command you must specify `date` and `timestamp` formats using the format specifications defined in the [`strptime` library function](http://man7.org/linux/man-pages/man3/strptime.3.html).

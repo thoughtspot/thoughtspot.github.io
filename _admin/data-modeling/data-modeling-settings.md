@@ -20,7 +20,7 @@ This index lists the editable data modeling settings:
 |Data Type|Read only. Shows the column's [data type]({{ site.baseurl }}/admin/loading/datatypes.html#).| |
 |[Column Type](change-column-basics.html#change-column-type)|Sets the type of column, either `ATTRIBUTE` or `MEASURE`.| |
 |[Additive](change-aggreg-additive.html#)|Controls the type of aggregations that will be available for a column.| |
-|[Aggregation](change-aggreg-additive.html#)|Sets the default aggregation type for `MEASURE` columns.| |
+|[Aggregation](change-aggreg-additive.html#)|Sets the default aggregation type for a column.| |
 |[Hidden](change-visibility-synonym.html#)|Sets the visibility of a column.| |
 |[Synonyms](change-visibility-synonym.html#)|Adds synonyms that can be used in the search bar to refer to a column.|Yes|
 |[Index Type](change-index.html#)|Sets the type of index that will be created for a column.| |
