@@ -41,21 +41,21 @@ item and department.
 ## Upload the data
 
 1. If you haven't already, log into the ThoughtSpot application.
-2. Go to the **DATA** tab and choose **Actions > Upload Data**.
+2. Click the **DATA** tab and choose **Actions > Upload Data**.
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 4. Choose `YES` for the **Are the column names already defined in the file header** setting.
 5. Choose **Comma** for the **Are the files separated by?** setting.
 
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
-6. Press **Next** for the **Set column names** page.
+6. Click **Next** for the **Set column names** page.
 7. Set the **ITEM CODE** column to **TEXT** on the **Set column types** page.
-8. Press **Upload**.
+8. Click **Upload**.
    The system presents you with a few choices.
 
     ![]({{ site.baseurl }}/images/spotiq-upload.png)
 
-9. Choose **Auto analyze** to build SpotIQ insights.
+9. Choose **SpotIQ Auto Analyze** to build SpotIQ insights.
 
     Building insights can take time. How long depends on the data you are
     analyzing. The ThoughtSpot application displays an informational message.
