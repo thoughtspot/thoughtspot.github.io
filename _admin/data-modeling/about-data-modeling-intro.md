@@ -40,7 +40,7 @@ accomplish these effects.
 
 The following topics explain how to model your data:
 
-- **[Change an table's data model]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html)**  
+- **[ Change a table's data model]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html)**  
 Explains how to make modeling settings for a table you've just loaded, or to make a quick change to existing settings.
 - **[Edit the system-wide data model]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html)**  
 Explains how to define a default data model to use for data system-wide.
