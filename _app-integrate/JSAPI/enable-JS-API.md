@@ -32,22 +32,22 @@ To enable the JS API:
     ```
     <script type=”text/javascript”>
         thoughtspotHost = <hostname_or_ip_w/o_http>
-        function setUpThoughtspotAPI() {
+        function setUpThoughtSpotAPI() {
             window.thoughtspot.initialize(
-                function(isUserAuthenticatedToThoughtspot) {
-                       if (isUserAuthenticatedToThoughtspot) {
+                function(isUserAuthenticatedToThoughtSpot) {
+                       if (isUserAuthenticatedToThoughtSpot) {
                            // load an embedded ThoughtSpot visualization or
                            // make a ThoughtSpot data API call
                        } else {
                            // the current user into your system is not authenticated
                            // into your ThoughtSpot instance, case in any other way suitable
-                           // to your application logic. Do NOT call setUpThoughtspotAPI again
+                           // to your application logic. Do NOT call setUpThoughtSpotAPI again
                            // here as that could create an infinite cycle.
                        }
                 },
                 function() {
                     // the user got logged out from ThoughtSpot, possibly because
-                    // their session with ThoughtSpot expired, you can call setUpThoughtspotAPI()
+                    // their session with ThoughtSpot expired, you can call setUpThoughtSpotAPI()
                     // again to re-authenticate the user or handle this case in any other way
                     // suitable to your application logic.
                 },

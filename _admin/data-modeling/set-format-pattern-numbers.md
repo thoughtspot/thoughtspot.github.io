@@ -62,11 +62,7 @@ displayed in tables and charts. For example, you can display dates in a standard
 European or US format based on the data modeling setting **Format Pattern**.
 These are some examples of formats you can use:
 
--   `MM/dd/yyyy`
--   `MMM` (for abbreviated month format)
--   `DD/MM/yyyy`
--   `MM/dd/yyyy HH:mm`
--   `DD/MM/yyyy HH:mm`
+{% include content/data-modeling-strings.md %}
 
 To change the date format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by editing the data
 model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).

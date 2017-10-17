@@ -229,7 +229,7 @@ tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
 
    * `--username` *`USERNAME`* Username for Informatica Cloud (default: None)
    * `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL to reach thoughtspot. (default: None)
-   * `--admin_username` *`ADMIN_USERNAME`* Admin username for Thoughtspot (default: None)
+   * `--admin_username` *`ADMIN_USERNAME`* Admin username for ThoughtSpot (default: None)
    * `--groupname` *`GROUPNAME`*
    * `--org_id` *`ORG_ID`* specifies the Informatica `id` of the organization (company). For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only
    * `--pin_to` *`PIN_TO`* specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
