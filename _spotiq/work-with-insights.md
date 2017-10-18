@@ -1,7 +1,7 @@
 ---
 title: ["101: Do more with SpotIQ"]
 tags:
-keywords: "trend line","cross-correlation",outlier
+keywords:
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -138,4 +138,4 @@ sales are climbing or customers are declining.
 ## Where to go next
 
 In this section, you explored some of the functionality of the **SpotIQ**
-page.  In [the next section]({{ site.baseurl }}/spotiq/special-topics.html), you'll learn how to schedule SpotIQ to deliver insights on a regular basis.
+page.  In [the next section]({{ site.baseurl }}/spotiq/spotiq-customize.html), you'll learn how to schedule SpotIQ to deliver insights on a regular basis.
