@@ -14,7 +14,7 @@ the **Search** syntax behind it.
 ## Customize an analysis
 
 In the second part of the tutorial, you reviewed the first output from SpotIQ.
-The outlier insights wasn't really that useful. Let's try to dig deeper into that.
+The outlier insights weren't really that useful. Let's try to dig deeper into that.
 
 1. Scroll down to the outlier section.
 2. Select the first insight.
@@ -85,7 +85,7 @@ your results. Try this now.
 
 3. Edit the search bar and remove `table_num` from the search.
 
-   This isn't strictly necessary in the data.
+   The `table_num` isn't strictly necessary in the data.
 
    ![]({{ site.baseurl }}/images/spotiq-rm-tablenum.png)
 
@@ -153,7 +153,7 @@ business, data changes all the time.
 
 Keep in mind that SpotIQ jobs take resources in your system. So, you really
 don't want to leave casual jobs running in the system.  Go ahead and delete this
-latest job. Now that you know how to schedule a job, it isn't needed any more.
+latest job. Now that you know how to schedule a job, it isn't needed anymore.
 
 1. Check the job you just scheduled.
 2. Click **Delete** to remove it.

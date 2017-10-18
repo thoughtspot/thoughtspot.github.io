@@ -16,7 +16,7 @@ Meaning, how you interact with SpotIQ results helps to build better results.
 
 ## Who can use SpotIQ?
 
-The SpotIQ feature is made for users who are not data magicians; however
+The SpotIQ feature is made for users who are not data magicians; however,
 data magicians can use it to do power data magic. This means SpotIQ is for everyone.
 
 If you can see the **SpotIQ** on your ThoughtSpot dashboard, you have access

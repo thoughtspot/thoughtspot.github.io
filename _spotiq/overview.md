@@ -10,7 +10,7 @@ This 101 walks you through a few simple, SpotIQ workflows. When you have
 completed the walk through you will be able to use the core features of SpotIQ
 in your ThoughtSpot installation.
 
-If you want a detailed overview over what SpotIQ does before you try it out,
+If you want a detailed overview of what SpotIQ does before you try it out,
 first [read the introduction to SpotIQ](whatisspotiq.md).
 
 ## Prerequisites
@@ -40,7 +40,7 @@ item and department.
 
 ## Upload the data
 
-1. If you haven't already, log into the ThoughtSpot application.
+1. If you haven't, log into the ThoughtSpot application.
 2. Click the **DATA** tab and choose **Actions > Upload Data**.
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 4. Choose `YES` for the **Are the column names already defined in the file header** setting.
@@ -67,7 +67,7 @@ item and department.
 
 ## Work with the INSIGHTS list
 
-Each time SpotIQ does an analysis it generates a set of results. ThoughtSpots
+Each time SpotIQ does an analysis, it generates a set of results. ThoughtSpots
 keeps the results until the user that requested the analysis (or an admin),
 deletes them. You can run SpotIQ on the same object multiple times. Each
 analysis generates new results.
@@ -104,8 +104,8 @@ analysis generates new results.
 
 6. Choose **Results**.
 
-   You should still see the your **Warehouse_and_Retail_Sales** run. Deleting
-   information about an analyzes run does not delete the actual results. You
+   You should still see your **Warehouse_and_Retail_Sales** run. Deleting
+   information about an analysis run does not delete the actual results. You
    must delete each individually.
 
 ## Where to go next

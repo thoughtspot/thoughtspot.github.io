@@ -16,7 +16,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
 ## View results of an analysis
 
-1. If you haven't already, log into the ThoughtSpot application.
+1. If you haven't, log into the ThoughtSpot application.
 2. Select the **INSIGHTS > Results** page.
 3. Look for results from your **Warehouse_and_Retail_Sales** analysis and click on the **NAME**.
    The application opens the SpotIQ insights.
