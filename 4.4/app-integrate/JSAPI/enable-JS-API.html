@@ -54,11 +54,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T08:25:46-07:00" />
+<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"This procedure shows how to include the ThoughtSpot JavaScript API (JS API) in your web page, and then use it to authenticate to ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html","publisher":null,"image":null,"headline":"[“Enable the JavaScript API”]","dateModified":"2017-10-17T08:25:46-07:00","datePublished":"2017-10-17T08:25:46-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"This procedure shows how to include the ThoughtSpot JavaScript API (JS API) in your web page, and then use it to authenticate to ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html","publisher":null,"image":null,"headline":"[“Enable the JavaScript API”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/enable-JS-API.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1669,7 +1669,13 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">101: Review insights</a></li>
+                                  <li><a href="/4.4/spotiq/work-with-insights.html">101: Review and save insights</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/spotiq-customize.html">101: Do more with SpotIQ</a></li>
                               
                             
                         
@@ -2677,22 +2683,22 @@ $('#toc').on('click', 'a', function() {
 
     <div class="highlighter-rouge"><pre class="highlight"><code> &lt;script type=”text/javascript”&gt;
      thoughtspotHost = &lt;hostname_or_ip_w/o_http&gt;
-     function setUpThoughtspotAPI() {
+     function setUpThoughtSpotAPI() {
          window.thoughtspot.initialize(
-             function(isUserAuthenticatedToThoughtspot) {
-                    if (isUserAuthenticatedToThoughtspot) {
+             function(isUserAuthenticatedToThoughtSpot) {
+                    if (isUserAuthenticatedToThoughtSpot) {
                         // load an embedded ThoughtSpot visualization or
                         // make a ThoughtSpot data API call
                     } else {
                         // the current user into your system is not authenticated
                         // into your ThoughtSpot instance, case in any other way suitable
-                        // to your application logic. Do NOT call setUpThoughtspotAPI again
+                        // to your application logic. Do NOT call setUpThoughtSpotAPI again
                         // here as that could create an infinite cycle.
                     }
              },
              function() {
                  // the user got logged out from ThoughtSpot, possibly because
-                 // their session with ThoughtSpot expired, you can call setUpThoughtspotAPI()
+                 // their session with ThoughtSpot expired, you can call setUpThoughtSpotAPI()
                  // again to re-authenticate the user or handle this case in any other way
                  // suitable to your application logic.
              },

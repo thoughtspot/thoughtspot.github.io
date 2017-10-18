@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
-<title>SpotIQ 101: Review insights | ThoughtSpot Documentation</title>
+<meta name="keywords" content=",  ">
+<title>101: Do more with SpotIQ | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -46,19 +46,19 @@
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“SpotIQ 101: Review insights”]</title>
-<meta property="og:title" content="[“SpotIQ 101: Review insights”]" />
+<title>[“101: Do more with SpotIQ”]</title>
+<meta property="og:title" content="[“101: Do more with SpotIQ”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="At this point, you have done the first set of SpotIQ tutorial tasks, you’ve uploaded some data and run your first SpotIQ analysis. You should be able to look at the INSIGHT list and see when your analysis ran. This is important knowledge because data changes, you’ll want to run multiple analyzes on the same data." />
 <meta property="og:description" content="At this point, you have done the first set of SpotIQ tutorial tasks, you’ve uploaded some data and run your first SpotIQ analysis. You should be able to look at the INSIGHT list and see when your analysis ran. This is important knowledge because data changes, you’ll want to run multiple analyzes on the same data." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T08:25:46-07:00" />
+<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"At this point, you have done the first set of SpotIQ tutorial tasks, you’ve uploaded some data and run your first SpotIQ analysis. You should be able to look at the INSIGHT list and see when your analysis ran. This is important knowledge because data changes, you’ll want to run multiple analyzes on the same data.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html","publisher":null,"image":null,"headline":"[“SpotIQ 101: Review insights”]","dateModified":"2017-10-17T08:25:46-07:00","datePublished":"2017-10-17T08:25:46-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"At this point, you have done the first set of SpotIQ tutorial tasks, you’ve uploaded some data and run your first SpotIQ analysis. You should be able to look at the INSIGHT list and see when your analysis ran. This is important knowledge because data changes, you’ll want to run multiple analyzes on the same data.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html","publisher":null,"image":null,"headline":"[“101: Do more with SpotIQ”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/work-with-insights.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1669,7 +1669,13 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">101: Review insights</a></li>
+                                  <li class="active"><a href="/4.4/spotiq/work-with-insights.html">101: Review and save insights</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/spotiq-customize.html">101: Do more with SpotIQ</a></li>
                               
                             
                         
@@ -2611,7 +2617,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">SpotIQ 101: Review insights</h1>
+   <h1 class="post-title-main">101: Do more with SpotIQ</h1>
 </div>
 
 
@@ -2647,12 +2653,13 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>At this point, you have done <a href="">the first set of SpotIQ tutorial tasks</a>, you’ve uploaded some
+  <p>At this point, you have done <a href="overview.md">the first set of SpotIQ tutorial tasks</a>, you’ve uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
 <strong>INSIGHT</strong> list and see when your analysis ran. This is important knowledge
 because data changes, you’ll want to run multiple analyzes on the same data.</p>
 
-<p>In this section, you look at the results and see what insights SpotIQ discovered.</p>
+<p>In this section, you look at the results and see what insights SpotIQ
+discovered. You’ll learn about the basic types of analysis SpotIQ runs on data.</p>
 
 <h2 id="view-results-of-an-analysis">View results of an analysis</h2>
 
@@ -2685,97 +2692,116 @@ did yield some insights.</p>
   </li>
 </ol>
 
-<h2 id="modify-an-insight">Modify an insight</h2>
+<h2 id="time-and-your-insight-data">Time and your insight data</h2>
 
-<p>You can also modify the charts you see in your results.</p>
+<p>You’ll notice that when you first look at an insight there is an expiration date
+in the upper right corner:</p>
+
+<p><img src="/4.4/images/spotiq-expiration.png" alt="" /></p>
+
+<p>If the expiration time elapses, ThoughtSpot automatically removes the reports.</p>
+
+<p>Insights also take space in the ThoughtSpot installation. A lot of people
+creating insights can add up to a lot of data lying around. Just as water rising
+in a bath tub can overflow or just cause a problem you have to wade through, too
+much data can create a lot of old reports to sift through.</p>
+
+<p>Another reason to expire an insight is time. Typically, business data is
+changing every day if not more frequently. Any particular set of insights are
+valid for data during a specific period of time. This doesn’t mean old insights
+can’t provide information you can use, just that you are unlikely to get the
+same insight twice.</p>
+
+<p>If a set of insights look good, you can <strong>Save</strong> them and they are not removed
+when they expire. Do this now, click <strong>Actions &gt; Save</strong> from the menu:</p>
+
+<p><img src="/4.4/images/spotiq-save.png" alt="" /></p>
+
+<p>Now your insights won’t expire as you work with them!</p>
+
+<h2 id="data-outliers">Data outliers</h2>
+
+<p>SpotIQ has three central insights it looks for, the first insight it looks for are
+data outliers. An outlier is a value that is “far away” or that differs from the
+other data.</p>
+
+<p>Outliers can result from measurement or recording errors or they
+could contain valuable information.  For example, one store might sell
+significantly more towels in one week out of the year because there was a flood
+that week.</p>
 
 <ol>
+  <li>Scroll to the first carousel of data that SpotIQ created for you.</li>
   <li>
-    <p>Scroll down the page and locate the <strong>Total MONTH by ITEM TYPE</strong> pie chart.</p>
+    <p>Count the number of items in the carousel.</p>
 
-    <p>The pie chart is a bit difficult to read because of some small slices.</p>
-  </li>
-  <li>
-    <p>Click on the chart menu to display the options.</p>
+    <p>You should see that SpotIQ found two outliers.</p>
 
-    <p><img src="/4.4/images/spotiq-details.png" alt="" /></p>
+    <p><img src="/4.4/images/spotiq-outliers.png" alt="" /></p>
 
-    <p>You can see that there are several things you can do to this chart, you can
- download the chart, edit it, or even run another SpotIQ analysis on it.
- You’ll learn more about this later.</p>
-  </li>
-  <li>
-    <p>Choose <strong>Edit</strong>.</p>
+    <p>In this case, SpotIQ is indicating that the <strong>Total Imports</strong> value is
+ significantly higher than the other values in your set.</p>
 
-    <p>The system displays a dialog with a layout familiar to any user that has run
-a ThoughtSpot search or worked with a result. This is dialog reveals the
-<strong>Search</strong> syntax used to generate the insight. You can use this dialog to do
-all the things you would normally do with a search.</p>
-  </li>
-  <li>
-    <p>Select the chart icon and choose <strong>Area</strong> to change the chart display.</p>
+    <p>Two facts about this outlier shouldn’t surprise, you. The first fact is that a
+ total exceeds all the other items in the data.  That just makes sense so this
+ isn’t a true outlier.</p>
 
-    <p>The chart display becomes an area.</p>
-  </li>
-  <li>
-    <p>Change the chart to <code class="highlighter-rouge">sort by item type</code> either using the drop down in the
-table X axis or by typing the filter directly in the search bar.</p>
-
-    <p>The chart display becomes sorted.</p>
-
-    <p><img src="/4.4/images/spotiq-chartalter.png" alt="" /></p>
-
-    <p>You can actually use this dialog to modify the search that produced the
- insight just as you would any other search. You can also save the results as
- an entirely new worksheet.</p>
-  </li>
-  <li>Choose <strong>Actions &gt; Update</strong>.</li>
-  <li>
-    <p>Dismiss the dialog by pressing the <strong>X</strong>.</p>
-
-    <p>The chart with your changes now appears in the <strong>INSIGHTS</strong> list.</p>
+    <p>The second fact is that SpotIQ insights are not always interesting. In this
+ case the data included totals in the row data which caused nonsense outliers.
+ You can use SpotIQ to fix this issue and go futher. More about this later in
+ the tutorial.</p>
   </li>
 </ol>
 
-<h2 id="presenting-the-insights">Presenting the INSIGHTS</h2>
+<h2 id="looking-for-relationships-cross-correlation-analysis">Looking for relationships (cross-correlation analysis)</h2>
 
-<p>You can present SpotIQ insights in several ways. You can present an individual
-result or all of them at once. You can package all the insights in a PDF. This
-is useful for passing a packet of results.</p>
+<p>Cross-correlation looks for and measures relationships between two quantitive,
+continous information sets – in our case two fields (columns) in our dataset.
+Usually, you’ll see a cross-correlation in your insights if your data includes
+time or date data.</p>
+
+<p>The result of a correlation analysis shows how strong and in what direction a
+relationship between two data sets moves. The range is -1 to 1, the closer the
+cross-correlation value is to 1, the more closely the information fields (data
+elements) are correlated.</p>
 
 <ol>
-  <li>Locate the <strong>Actions</strong> menu on the corner of the <strong>INSIGHTS</strong> page.</li>
+  <li>Scroll down your insight page, till you find the correlation results:</li>
   <li>
-    <p>Choose <strong>Actions &gt; Download as PDF</strong> from the menu.</p>
+    <p>Page through the correlation category to the third insight:</p>
 
-    <p>The system downloads a file containing all the insights. Keep in mind this is
-file can be very large if there are a lot of insights found in your data.</p>
+    <p><img src="/4.4/images/spotiq-correlations.png" alt="" /></p>
+
+    <p>You can see that the over all total and the total category number values
+ correlate very strongly. The correlation also looks for a <em>lag</em> value.</p>
+
+    <p><em>In the business world the dependence of a variable Y (the dependent variable)
+   on another variable X (the explanatory variable) is rarely instantaneous.
+   Often, Y responds to X after a certain lapse of time. Such a lapse of time is
+   called a lag.</em> <a href="https://goo.gl/XW2Tk1">Good Data Help</a>.</p>
   </li>
 </ol>
 
-<p>Groups of charts that appear in a carousel can be presented as a group. To do
-this, do the following:</p>
+<h2 id="trends-over-time">Trends over time</h2>
+
+<p>A trend line is a straight or curved line that indicates the general pattern or
+direction of a time series data (information in sequence over time). This can
+help you to determine the general direction of a trend in  your data, such as
+sales are climbing or customers are declining.</p>
 
 <ol>
-  <li>Scroll down to the first carousel in the list.</li>
+  <li>Scroll down to the <strong>Insights from Trend Analysis</strong> section.</li>
   <li>
-    <p>Roll over the right corner of the menu to reveal the menu.</p>
+    <p>Look for the <strong>Total imports by year</strong> result.</p>
 
-    <p><img src="/4.4/images/spotiq-carousel.png" alt="" /></p>
+    <p><img src="/4.4/images/spotiq-trend.png" alt="" /></p>
   </li>
-  <li>Choose <strong>Present</strong>  or <strong>Copy link</strong> item from the menu.</li>
 </ol>
-
-<p>Each individual chart has a <strong>Download</strong>, <strong>Present</strong>, or <strong>Copy link</strong> action
- you can also take.</p>
 
 <h2 id="where-to-go-next">Where to go next</h2>
 
-<p>In this section, you explored some of the functionality of the <strong>INSIGHTS</strong>
-page. You learned how you can edit an insight to customize how it looks or even
-the <strong>Search</strong> syntax behind it.  In <a href="/4.4/spotiq/special-topics.html">the next
-section</a>, you’ll learn how to schedule SpotIQ
-to deliver insights on a regular basis.</p>
+<p>In this section, you explored some of the functionality of the <strong>SpotIQ</strong>
+page.  In <a href="/4.4/spotiq/spotiq-customize.html">the next section</a>, you’ll learn how to schedule SpotIQ to deliver insights on a regular basis.</p>
 
   <div class="tags">
     <div style="float:right;">

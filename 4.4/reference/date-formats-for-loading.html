@@ -49,16 +49,16 @@
 <title>[“Date and time formats reference”]</title>
 <meta property="og:title" content="[“Date and time formats reference”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a list of all the date and time formats you use with ThoughtSpot. You define data formats in two contexts, when loading data and when modeling data. Users load data:" />
-<meta property="og:description" content="This is a list of all the date and time formats you use with ThoughtSpot. You define data formats in two contexts, when loading data and when modeling data. Users load data:" />
+<meta name="description" content="This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
+<meta property="og:description" content="This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T08:25:46-07:00" />
+<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"This is a list of all the date and time formats you use with ThoughtSpot. You define data formats in two contexts, when loading data and when modeling data. Users load data:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html","publisher":null,"image":null,"headline":"[“Date and time formats reference”]","dateModified":"2017-10-17T08:25:46-07:00","datePublished":"2017-10-17T08:25:46-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html","publisher":null,"image":null,"headline":"[“Date and time formats reference”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/date-formats-for-loading.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1669,7 +1669,13 @@
                         
                           
                               
-                                  <li><a href="/4.4/spotiq/overview.html">101: Review insights</a></li>
+                                  <li><a href="/4.4/spotiq/work-with-insights.html">101: Review and save insights</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/spotiq-customize.html">101: Do more with SpotIQ</a></li>
                               
                             
                         
@@ -2647,44 +2653,37 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This is a list of all the date and time formats you use with ThoughtSpot. You
-define data formats in two contexts, when loading data and when modeling data.
-Users load data:</p>
+  <p>This is a references for the date and time contexts and formats you can use with
+ThoughtSpot. You define data formats in specific contexts and, depending on the
+context, your choices in data formatting differ. You must understand date  and
+time when you load data in these contexts:</p>
 
 <ul>
   <li>using data upload from the browser</li>
   <li>through <code class="highlighter-rouge">tsload</code> command</li>
-  <li>through data connect</li>
+  <li>through data connect or another extract, transform, load (ETL) tool</li>
 </ul>
 
-<p>Data loading formats do not change how data is displayed in tables and charts.
-Data modeling controls how data is displayed in search and their resulting
-answers.</p>
+<p>Data loading formats do not change how data is displayed in tables and charts.</p>
 
-<h2 id="data-loading-formats">Data loading formats</h2>
+<p>The context where you <em>can control</em> date and time formats is data modeling. Data
+modeling controls how data is displayed in search and their resulting answers.</p>
 
-<p>For date data types, the default format is <code class="highlighter-rouge">yearmonthday</code> , for example,  <code class="highlighter-rouge">Dec 30th, 2001</code> and is represented as <code class="highlighter-rouge">20011230</code>. Use the date format specifications supported in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html">strptime library function</a>.</p>
+<h2 id="data-loading-formats-via-tsload">Data loading formats via tsload</h2>
 
-<p>For time and datetime data types, the default is <code class="highlighter-rouge">yearmonthday hour:minute:second</code>, for example,  <code class="highlighter-rouge">Dec 30th, 2001 1:15:12</code> and is represented as 20011230 01:15:12. Use the datetime format specifications supported in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html">strptime library function</a>.</p>
+<p>When loading via the <code class="highlighter-rouge">tsload</code> command you must specify <code class="highlighter-rouge">date</code> and <code class="highlighter-rouge">timestamp</code> formats using the format specifications defined in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html"><code class="highlighter-rouge">strptime</code> library function</a>.</p>
 
-<h2 id="data-modeling-formats">Data modeling formats</h2>
+<p>For <code class="highlighter-rouge">date</code> data types, the default format is <code class="highlighter-rouge">%Y%m%d</code> which translates to
+<code class="highlighter-rouge">yearmonthday</code>  For example, <code class="highlighter-rouge">Dec 30th, 2001</code> is represented as <code class="highlighter-rouge">20011230</code>.  For
+<code class="highlighter-rouge">time</code> and <code class="highlighter-rouge">datetime</code> data types, the default is <code class="highlighter-rouge">%Y%m%d %H:%M:%S</code> which
+translates to <code class="highlighter-rouge">yearmonthday hour:minute:second</code>, for example, <code class="highlighter-rouge">Dec 30th, 2001
+1:15:12</code> is represented as <code class="highlighter-rouge">20011230 01:15:12</code>.</p>
 
-<p>A user with administrative rights can configure data modeling for data on one or
-all files. You can set number, date, and currency display formats. These formats
-define how these value types display in tables and charts. See the <em>Admin Guide</em>
-for more information about data modeling settings.</p>
+<h2 id="data-modeling-formats-for-browser-data-upload">Data modeling formats for browser data upload</h2>
 
-<p>Using data modeling, you can use string contains {2:substring}tructions such as the following:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">MM/dd/yyyy</code></li>
-  <li><code class="highlighter-rouge">MMM</code> (for abbreviated month format)</li>
-  <li><code class="highlighter-rouge">DD/MM/yyyy</code></li>
-  <li><code class="highlighter-rouge">MM/dd/yyyy HH:mm</code></li>
-  <li><code class="highlighter-rouge">DD/MM/yyyy HH:mm</code></li>
-</ul>
-
-<p>These constructions allow you to model dates with these possible formats:</p>
+<p>These date and time formats are supported in a CSV file when uploading via the
+browser. You cannot specify the date format; ThoughtSpot will pick the format
+that fits your data best:</p>
 
 <ul>
   <li>1/30/2014</li>
@@ -2735,6 +2734,132 @@ for more information about data modeling settings.</p>
   <li>10:32:22.000</li>
   <li>10:32:22.0 AM</li>
   <li>10:32:22.000 AM</li>
+</ul>
+
+<h2 id="data-loading-formats-via-data-connect-or-another-etl-tool">Data loading formats via data connect or another ETL tool</h2>
+
+<p>Data that is loaded via ETL arrives through ODBC or JDBC connection. After you
+extract the data from the source and before you load it into ThoughtSpot, you
+must transform any date or timestamp into a valid format for ThoughtSpot. Once
+transformed, no explicit data masking is required. See the data integration
+guide for more details of loading data via ODBC and JDBC.</p>
+
+<h2 id="data-modeling-formats">Data modeling formats</h2>
+
+<p>A user with administrative rights can configure data modeling for data on one or
+all files. You can set number, date, and currency display formats. These formats
+define how these value types display in tables and charts. See the Admin Guide
+for more information about data modeling settings. The following format strings
+are available for use:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format mask</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">YYYY</code> or <code class="highlighter-rouge">yyyy</code></td>
+      <td>four digit year such as <code class="highlighter-rouge">2017</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">YY</code> or <code class="highlighter-rouge">yy</code></td>
+      <td>last two digits of year such as <code class="highlighter-rouge">17</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">M</code></td>
+      <td>month with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">MM</code></td>
+      <td>Two digit month <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">MMM</code></td>
+      <td>Three letter month such as <code class="highlighter-rouge">Jan</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">D</code></td>
+      <td>Day of year without a leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">365</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">DD</code></td>
+      <td>Day of year with up to one leading zero <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">365</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">DDD</code></td>
+      <td>Day of year with up to two leading zeroes <code class="highlighter-rouge">001</code>-<code class="highlighter-rouge">365</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">d</code></td>
+      <td>Day of month with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">31</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">dd</code></td>
+      <td>Two digit day of month <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">31</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">HH</code></td>
+      <td>Two digit <code class="highlighter-rouge">24</code> hour representation of hour <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">23</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">hh</code></td>
+      <td>Two digit <code class="highlighter-rouge">12</code> hour representation of hour <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">H</code></td>
+      <td>24 hour representation of hour with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">23</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">h</code></td>
+      <td>12 hour representation of hour with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mm</code></td>
+      <td>Minutes <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">59</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">m</code></td>
+      <td>Minutes with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">59</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ss</code></td>
+      <td>Seconds <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">59</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">s</code></td>
+      <td>Seconds with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">59</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">a</code></td>
+      <td>AM/PM indicator</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Valid delimiters include most non-alphabet characters. This includes but is not
+limited to:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">\</code> (forward slash)</li>
+  <li><code class="highlighter-rouge">/</code> (backward slash)</li>
+  <li><code class="highlighter-rouge">|</code> (pipe symbol)</li>
+  <li><code class="highlighter-rouge">:</code> (colon)</li>
+  <li><code class="highlighter-rouge">-</code> (dash)</li>
+  <li><code class="highlighter-rouge">_</code> (underscore)</li>
+  <li><code class="highlighter-rouge">=</code> (equal sign)</li>
+</ul>
+
+<p>Examples of valid format masks you can produce for display are as follows:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">MM/dd/yyyy</code></li>
+  <li><code class="highlighter-rouge">MMM</code></li>
+  <li><code class="highlighter-rouge">DD/MM/yyyy</code></li>
+  <li><code class="highlighter-rouge">MM/dd/yyyy HH:mm</code></li>
+  <li><code class="highlighter-rouge">DD/MM/yyyy HH:mm</code></li>
 </ul>
 
 
