@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Set up a disaster recovery configuration”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html","publisher":null,"image":null,"headline":"[“Set up a disaster recovery configuration”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html","publisher":null,"image":null,"headline":"[“Set up a disaster recovery configuration”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2664,7 +2679,7 @@ $('#toc').on('click', 'a', function() {
   <li>Log in to the primary appliance, and set it up to take periodic backups and write them to the shared backup directory (in a SAN or shared NFS-mounted drive):</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
 $ tscli backup set-periodic --at &lt;hour1,hour2,...&gt; --directory &lt;shared_backup_directory&gt; [--num_backups &lt;num_backups&gt;]
 ```
 
@@ -2673,15 +2688,14 @@ For example:
 ```
 $ tscli backup set-periodic --at 01,17 --directory /mnt/thoughtspot_backups --num_backups 5
 ```
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>Run <code class="highlighter-rouge">tscli backup periodic-config</code> to check whether the periodic backup is set correctly.</li>
   <li>Designate the mirror appliance cluster to act as a mirror:</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
 $ tscli backup start-mirror &lt;shared_backup_directory&gt; &lt;mirror_node1_IP,mirror_node2_IP,...&gt; &lt;mirror_cluster_name&gt; &lt;mirror_cluster_id&gt;
 ```
 
@@ -2690,16 +2704,14 @@ For example:
 ```
 $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.112,192.168.2.113 thoughtspot_mirror thoughtspot-mirror-29543
 ```
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>
     <p>It may take some time for the cluster to begin acting as a mirror. Issue the command to verify that the cluster has started running in mirror mode:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ tscli backup mirror-status
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup mirror-status
+</code></pre></div>    </div>
 
     <p>You can use this command in the future to check whether the mirror cluster is up to date.</p>
   </li>
@@ -2733,7 +2745,7 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

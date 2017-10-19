@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“REST API pagination”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the REST API.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html","publisher":null,"image":null,"headline":"[“REST API pagination”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the REST API.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html","publisher":null,"image":null,"headline":"[“REST API pagination”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/response-pagination.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2636,57 +2651,53 @@
 
 <p><code class="highlighter-rouge">PageSize</code> determines the number of rows to be included.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pagesize"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">PageSize:</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">number</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">rows.</span><span class="s2">",
-    "</span><span class="err">defaultValue</span><span class="s2">": "</span><span class="mi">-1</span><span class="s2">",
-    "</span><span class="err">type</span><span class="s2">": "</span><span class="err">integer"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "name": "pagesize",
+    "description": PageSize: The number of rows.",
+    "defaultValue": "-1",
+    "type": "integer"
+}
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">Offset</code> determines the starting point.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"offset"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">Offset:</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">starting</span><span class="w"> </span><span class="err">point</span><span class="s2">",
-    "</span><span class="err">defaultValue</span><span class="s2">": "</span><span class="mi">-1</span><span class="s2">",
-    "</span><span class="err">type</span><span class="s2">": "</span><span class="err">integer"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "name": "offset",
+    "description": Offset: The starting point",
+    "defaultValue": "-1",
+    "type": "integer"
+}
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">PageNumber</code> is an alternate way to determine the offset. You must make a call with <code class="highlighter-rouge">pageNumber = 1</code> first. Then you can access any page. Calling with <code class="highlighter-rouge">pageNumber != 1</code> as the initial call will fail. <code class="highlighter-rouge">pageNumber = 0</code> is not a valid value.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pagenumber"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">PageNumber:</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">an</span><span class="w"> </span><span class="err">alternate</span><span class="w"> </span><span class="err">way</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">set</span><span class="w"> </span><span class="err">offset.</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="mi">1</span><span class="err">-based</span><span class="w">
-                   </span><span class="err">indexing.</span><span class="w"> </span><span class="err">Offset</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">(pageNumber</span><span class="w"> </span><span class="err">-</span><span class="w"> </span><span class="mi">1</span><span class="err">)</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="err">pageSize.</span><span class="w">
-    </span><span class="s2">"defaultValue"</span><span class="err">:</span><span class="w"> </span><span class="s2">"-1"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "name": "pagenumber",
+    "description": PageNumber: This is an alternate way to set offset. This is 1-based
+                   indexing. Offset = (pageNumber - 1) * pageSize.
+    "defaultValue": "-1",
+    "type": "integer"
+}
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">FormatType</code> is the JSON format type.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"formattype"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">FormatType:</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">sets</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">format</span><span class="w"> </span><span class="err">type.</span><span class="w"> </span><span class="err">Values</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="err">allowed</span><span class="w"> </span><span class="err">are</span><span class="w">
-                   </span><span class="err">FULL</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">COMPACT.</span><span class="w">
-    </span><span class="s2">"defaultValue"</span><span class="err">:</span><span class="w"> </span><span class="s2">"COMPACT"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "name": "formattype",
+    "description": FormatType: This sets the JSON format type. Values that are allowed are
+                   FULL and COMPACT.
+    "defaultValue": "COMPACT",
+    "type": "string"
+}
+</code></pre></div></div>
 
-<p><code class="highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="highlighter-rouge">FULL</code> is formatted like this: <code class="highlighter-rouge"><span class="p">{</span><span class="err">'col1':</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="err">'col2':</span><span class="w"> </span><span class="err">'a'</span><span class="p">}</span></code></p>
+<p><code class="highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="highlighter-rouge">FULL</code> is formatted like this: <code class="highlighter-rouge">{'col1': 1 'col2': 'a'}</code></p>
 
 <h2 id="example">Example</h2>
 
 <p>The following example shows ThoughtSpot data that is being populated in a table:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> /**
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
  * Sample response for Page-1.
  */
 {
@@ -2705,8 +2716,7 @@
         },
     ]
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
   <div class="tags">
     <div style="float:right;">
@@ -2736,7 +2746,7 @@
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

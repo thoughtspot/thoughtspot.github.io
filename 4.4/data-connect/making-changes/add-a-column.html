@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Add a column to an existing data source”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"You can add a column to an existing data source using this procedure. This will work even if the data load has already been run in the past.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html","publisher":null,"image":null,"headline":"[“Add a column to an existing data source”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"You can add a column to an existing data source using this procedure. This will work even if the data load has already been run in the past.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html","publisher":null,"image":null,"headline":"[“Add a column to an existing data source”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-connect/making-changes/add-a-column.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2680,16 +2695,14 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Launch TQL.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ tql
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Designate the database you’ll be working in:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; use &lt;database_name&gt;;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; use &lt;database_name&gt;;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Find the name of the table you want to change.You can use the TQL command <code class="highlighter-rouge">SHOW TABLES;</code> to see a list of tables.</p>
@@ -2699,26 +2712,23 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Issue the command to change the data type of a column using this syntax:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;schema&gt;.&lt;table&gt;
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;schema&gt;.&lt;table&gt;
       MODIFY COLUMN &lt;column&gt; &lt;new_data_type&gt;;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>For example, to change “account_id” with data type INT to data type VARCHAR:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE foodmart.account
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE foodmart.account
       ADD COLUMN account_id VARCHAR(10);
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.</p>
   </li>
   <li>
     <p>Run the <code class="highlighter-rouge">SCRIPT TABLE</code> command to get the new DDL to create the table.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; SCRIPT TABLE &lt;table&gt;;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; SCRIPT TABLE &lt;table&gt;;
+</code></pre></div>    </div>
 
     <p>Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR(&lt;number) column definitions with VARCHAR(0), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.</p>
   </li>
@@ -2755,7 +2765,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

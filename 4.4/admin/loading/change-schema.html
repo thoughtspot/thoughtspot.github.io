@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“How to change a schema”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don’t lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html","publisher":null,"image":null,"headline":"[“How to change a schema”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don’t lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html","publisher":null,"image":null,"headline":"[“How to change a schema”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/change-schema.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2675,30 +2690,27 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Drop the existing primary key (if any), by issuing a command like this example:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       DROP CONSTRAINT
       PRIMARY KEY;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.</p>
   </li>
   <li>
     <p>Add a new primary key, if desired:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       ADD CONSTRAINT
       PRIMARY KEY ("owner_id");
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.</li>
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -2722,45 +2734,40 @@ The following examples illustrate several different types of drop operations.</p
 
     <p>Drop a foreign key by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE
       "sales_fact"
       DROP CONSTRAINT
       "FK_PO_number";
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>Drop a relationship by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
  TQL&gt; ALTER TABLE "fruit_dim"
       DROP RELATIONSHIP "REL_dates";
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>Drop the foreign key relationship explicitly, if it doesn’t have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
       DROP CONSTRAINT
       FOREIGN KEY "orders";
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>Drop all generic relationships between two tables:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
       DROP RELATIONSHIP
       WITH "retail_sales";
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Define a new relationship, if you want to, using <code class="highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
   <li>Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.</li>
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -2786,13 +2793,12 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Issue the command to change the sharding using this syntax:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
      [SET DIMENSION | SET FACT
      [PARTITION BY HASH
      [(&lt;shards&gt;)]
      [KEY(&lt;column&gt;)]]]
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>For example:</p>
 
@@ -2800,19 +2806,17 @@ The following examples illustrate several different types of drop operations.</p
       <li>
         <p>To make a sharded table into a dimension table (replicated on every node), use:</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>ALTER TABLE "products"
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "products"
    SET DIMENSION;
-</code></pre>
-        </div>
+</code></pre></div>        </div>
       </li>
       <li>
         <p>To make a dimension table into a sharded (fact) table or change the number of shards, use:</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>ALTER TABLE "sales"
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "sales"
    SET FACT PARTITION BY HASH (96)
    KEY ("productID");
-</code></pre>
-        </div>
+</code></pre></div>        </div>
       </li>
     </ul>
   </li>
@@ -2820,9 +2824,8 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -2858,7 +2861,7 @@ The following examples illustrate several different types of drop operations.</p
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

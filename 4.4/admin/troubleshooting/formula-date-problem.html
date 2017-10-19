@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Cannot open a saved answer that contains a formula”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"When working with formulas, keep in mind the data types they return. You may occasionally see unexpected results, or even be unable to open a saved answer, due to problems with data types and formulas.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html","publisher":null,"image":null,"headline":"[“Cannot open a saved answer that contains a formula”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"When working with formulas, keep in mind the data types they return. You may occasionally see unexpected results, or even be unable to open a saved answer, due to problems with data types and formulas.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html","publisher":null,"image":null,"headline":"[“Cannot open a saved answer that contains a formula”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/troubleshooting/formula-date-problem.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2661,17 +2676,15 @@ $('#toc').on('click', 'a', function() {
 
 <p>Suppose you have created a worksheet that contains a formula called “weekday” defined as:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>day_of_week(date)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>day_of_week(date)
+</code></pre></div></div>
 
 <p>The output of that formula is the day of the week (Monday, Tuesday, etc.) returned as a text string (VARCHAR, ATTRIBUTE).</p>
 
 <p>Then suppose you create an answer using the worksheet as a source. And in the answer, you create another formula on top of the formula column in the worksheet. This formula is supposed to return the day of the week that is two days after the given day of the week:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>weekday + 2
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>weekday + 2
+</code></pre></div></div>
 
 <p>In this case, you have effectively created a formula on top of another formula. This works fine, so long as the data types in the worksheet formula can work in the answer formula. If not, you may not be able to save the answer, or open it once it has been saved. Here, the second formula you created does not work, because it is invalid. It is trying to subtract a number from a text string.</p>
 
@@ -2728,7 +2741,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

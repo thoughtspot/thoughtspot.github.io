@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Use the JDBC Driver”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"To use the JDBC driver, include the JDBC library in your path, and provide the connection information. You need this information to configure the JDBC driver:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html","publisher":null,"image":null,"headline":"[“Use the JDBC Driver”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"To use the JDBC driver, include the JDBC library in your path, and provide the connection information. You need this information to configure the JDBC driver:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html","publisher":null,"image":null,"headline":"[“Use the JDBC Driver”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-integrate/clients/use-jdbc-driver.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2712,30 +2727,27 @@ $('#toc').on('click', 'a', function() {
 
 <p>The format for the connection is:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>jdbc:simba://&lt;node1&gt;:12345,&lt;node2&gt;:12345,&lt;node3&gt;:12345[,…];
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://&lt;node1&gt;:12345,&lt;node2&gt;:12345,&lt;node3&gt;:12345[,…];
            LoginTimeout=&lt;seconds&gt;;DATABASE=&lt;db&gt;;SCHEMA=&lt;schema&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
            LoginTimeout=5;DATABASE=test;SCHEMA=falcon_default_schema
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>As shown, the <code class="highlighter-rouge">DATABASE</code> and <code class="highlighter-rouge">SCHEMA</code> parameters need to be in all caps. For the <code class="highlighter-rouge">simba</code> JDBC driver to work with Spark, the <code class="highlighter-rouge">DATABASE</code> and <code class="highlighter-rouge">SCHEMA</code> must be specified in the URL. They cannot be specified as a name/value pair as a map or property. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" -&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" -&gt;
 "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" -&gt;
 "com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -&gt; "Movies", "user" -&gt;
 "tsadmin", "password" -&gt; "admin")).load()
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This <code class="highlighter-rouge">InsertData.java</code> example shows how to use ThoughtSpot with JDBC. This is an example of a reference JDBC application:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>import java.sql.DriverManager;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -2826,8 +2838,7 @@ public class InsertData {
 
 }
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
   <div class="tags">
     <div style="float:right;">
@@ -2857,7 +2868,7 @@ public class InsertData {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

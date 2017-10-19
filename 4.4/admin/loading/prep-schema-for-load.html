@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Connect with TCL and create a schema”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html","publisher":null,"image":null,"headline":"[“Connect with TCL and create a schema”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html","publisher":null,"image":null,"headline":"[“Connect with TCL and create a schema”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/prep-schema-for-load.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2671,11 +2686,10 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Invoke TQL:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ tql
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
 
  TQL&gt;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Enter your SQL command, followed by a semicolon (<code class="highlighter-rouge">;</code>).</li>
 </ol>
@@ -2693,23 +2707,20 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>If the database you will be using does not exist, create it now:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; CREATE DATABASE my_database;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE DATABASE my_database;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Connect to the database:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; USE my_database;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; USE my_database;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>If you wish to use a schema other than the default one, create it now:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> TQL&gt; CREATE SCHEMA my_schema;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE SCHEMA my_schema;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Issue a <code class="highlighter-rouge">CREATE TABLE</code> command for each table you will create, using the information in <a href="plan-schema.html#">Plan the schema</a>.</p>
@@ -2746,7 +2757,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

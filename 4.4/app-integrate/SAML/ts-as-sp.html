@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Legacy configure SAML”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html","publisher":null,"image":null,"headline":"[“Legacy configure SAML”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html","publisher":null,"image":null,"headline":"[“Legacy configure SAML”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/ts-as-sp.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2664,9 +2679,8 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Change to the SAML directory:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
+</code></pre></div>    </div>
   </li>
   <li>Open the file <code class="highlighter-rouge">applicationContext-security.xml</code> in vi or another editor.</li>
   <li>Find the section labeled “Entry point to initialize authentication, default values taken from properties file”.</li>
@@ -2675,20 +2689,18 @@ $('#toc').on('click', 'a', function() {
 
     <p>Only supply the port (e.g. :8080) if the IP address for your server includes it, otherwise omit it. Be sure to use either http: or https:, depending on how your server is configured:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> 88  &lt;property name="entityBaseURL" value="https://&lt;your
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 88  &lt;property name="entityBaseURL" value="https://&lt;your
      server IP\&gt;:443/callosum/v1" /&gt;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>The next line contains the <code class="highlighter-rouge">entityId</code> property. <code class="highlighter-rouge">urn:thoughtspot:callosum:saml</code> is the default value.</p>
   </li>
   <li>
     <p>Change “thoughtspot” to the name of your cluster:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> 89  &lt;property name="entityId" value="urn:&lt;your
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 89  &lt;property name="entityId" value="urn:&lt;your
      cluster&gt;:callosum:saml"/&gt;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Find the section labeled “Provider of default SAML Context”.</li>
   <li>Edit the SAML context to change the IP address to your server’s IP.</li>
@@ -2696,14 +2708,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>The default port is 80 for http, and 443 for https:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
 142 &lt;property name="scheme" **value="https"**/&gt;
 143 &lt;property name="serverName" **value="&lt;your server IP\&gt;"**/&gt;
 144 &lt;!-- Replace the value 8080 of serverPort with port of the load balancer--&gt;
 145 &lt;property name="serverPort" **value="443"**/&gt;
 ```
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>Save the edited file.</li>
@@ -2717,38 +2728,34 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Change directories to the <code class="highlighter-rouge">callosum</code> directory:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/
+</code></pre></div>    </div>
   </li>
   <li>Open the file <code class="highlighter-rouge">callosumconfig_prod.json</code> in vi or another editor.</li>
   <li>
     <p>Set up autocreation of users by adding the following line above “shiroConfig”:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> 89 "shouldCacheLogicalModel": true,
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 89 "shouldCacheLogicalModel": true,
  90 **"autoCreateUserFromLDAP":true,**
  91 "shiroConfig": {
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Add the SAML realm as shown:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> 112 "adLdapRealm.domain": "ldap.thoughtspot.com",
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 112 "adLdapRealm.domain": "ldap.thoughtspot.com",
  113 "securityManager.realms": "$callosumRDBMSRealm**, $callosumSamlRealm**",
  114 "authcStrategy": "org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy",
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Enable SAML as shown:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> 144 "enableNotificationOnShare": true,
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 144 "enableNotificationOnShare": true,
  145 "samlConfiguration": {
  146 "enabled": **true**
  147 }
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Save and close the file.</li>
 </ol>
@@ -2759,10 +2766,9 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Restart Tomcat using these commands:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ cd /usr/local/scaligent/release
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release
  $ tscli --adv service push tomcat /usr/local/scaligent/release/production/orion/tomcat/tomcat_prod.config
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Open a Web browser and go to the ThoughtSpot login page.
 It should now show the Single Sign On option.</li>
@@ -2808,7 +2814,7 @@ The SP metadata file will download. Save it as metadata.xml. You will need this 
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

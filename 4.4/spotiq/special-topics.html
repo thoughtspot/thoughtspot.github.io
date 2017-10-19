@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
-<title>Overview of SpotIQ | ThoughtSpot Documentation</title>
+<meta name="keywords" content=",  SpotIQ,"best practices", invoke, search, measure, attribute, ranking">
+<title>Best SpotIQ Practices | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -44,22 +44,25 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“Overview of SpotIQ”]</title>
-<meta property="og:title" content="[“Overview of SpotIQ”]" />
+<title>[“Best SpotIQ Practices”]</title>
+<meta property="og:title" content="[“Best SpotIQ Practices”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Generate insights from a" />
-<meta property="og:description" content="Generate insights from a" />
+<meta name="description" content="The SpotIQ feature works without you having to do anything but pushing a button. However, like any other feature, there things you can do to optimize the feature. This page contains some best practices you can use to make SpotIQ more effective when you use it." />
+<meta property="og:description" content="The SpotIQ feature works without you having to do anything but pushing a button. However, like any other feature, there things you can do to optimize the feature. This page contains some best practices you can use to make SpotIQ more effective when you use it." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/spotiq/special-topics.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/spotiq/special-topics.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Generate insights from a","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/special-topics.html","publisher":null,"image":null,"headline":"[“Overview of SpotIQ”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/special-topics.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The SpotIQ feature works without you having to do anything but pushing a button. However, like any other feature, there things you can do to optimize the feature. This page contains some best practices you can use to make SpotIQ more effective when you use it.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/spotiq/special-topics.html","publisher":null,"image":null,"headline":"[“Best SpotIQ Practices”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/spotiq/special-topics.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li class="active"><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2617,7 +2632,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Overview of SpotIQ</h1>
+   <h1 class="post-title-main">Best SpotIQ Practices</h1>
 </div>
 
 
@@ -2653,13 +2668,62 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="generate-insights-from-a">Generate insights from a</h2>
+  <p>The SpotIQ feature works without you having to do anything but pushing a button.
+However, like any other feature, there things you can do to optimize the
+feature.  This page contains some best practices you can use to make SpotIQ more
+effective when you use it.</p>
 
-<h2 id="present-an-insight-or-download">Present an insight or download</h2>
+<h2 id="when-to-invoke-spotiq">When to invoke SpotIQ</h2>
 
-<h2 id="schedule-a-repeated-generation">Schedule a repeated generation</h2>
+<p>If you followed the tutorial, you know that right after uploading data is a good
+time to run <strong>Auto Analyze</strong>. SpotIQ can very quickly help you find insights in
+your data.</p>
 
-<h2 id="tweet-your-success">Tweet your success!</h2>
+<p>Start from a <strong>Search</strong>. Enter a single measure in the bar; one you want to
+explore of course! Then, choose <strong>Actions &gt; Auto Analyze</strong> on the results.
+Choosing the single measure focuses SpotIQ.</p>
+
+<p>Use <strong>Custom Analyze</strong> to focus or tweak the SpotIQ results. While you are
+tempted to keep all the columns, eliminating some can also result in a better
+analysis.</p>
+
+<h2 id="do-your-data-modeling">Do your data modeling</h2>
+
+<p>You can increase the SpotIQ’s effectiveness by ensuring you are practicing good
+data modeling. This is true if you are user uploading the occasional data file
+or a data management professional. Modeling data requires that you can:</p>
+
+<ol>
+  <li>Click on the <strong>DATA</strong> icon, to get to the data management listing.</li>
+  <li>Click on a data source you own or can edit.
+ This brings up the <strong>Columns</strong> screen, where you’ll make your modeling settings.</li>
+  <li>Modify one or more column settings.</li>
+  <li>
+    <p>Save your changes.</p>
+
+    <p>If you worked through the SpotIQ tutorial, you can try experiment on the
+ <strong>FoodDollarDataReal</strong> data you uploaded.</p>
+  </li>
+</ol>
+
+<p>Make sure you set the <a href="/4.4/admin/data-modeling/change-column-priority.html"><strong>INDEX PRIORITY</strong></a> for columns in your data source. Use a value between 8-10 for important columns to improve
+their search ranking. Use 1-3 for low priority columns. <strong>INDEX PRIORITY</strong> impacts user-based ranking which helps SpotIQ focus its analysis.</p>
+
+<p>SpotIQ uses measures for correlations.  For trendlines and outliers, if SpotIQ has
+a measure, it then drills by attributes in turn.</p>
+
+<p><img src="/4.4/images/atts-measurs.png" alt="" /></p>
+
+<p>You should also set <strong>AGGREGATION</strong> on your columns. SpotIQ applies the default
+aggregations from your data when it pulls measures for analysis.</p>
+
+<h2 id="situations-to-avoid">Situations to avoid</h2>
+
+<p>Like any AI, some situations SpotIQ is not yet equip to handle. You should know
+what these are so you can avoid them.  If your data contains a measure that uses
+a <code class="highlighter-rouge">MOVING_*</code> or <code class="highlighter-rouge">GROUP_*</code> formula, SpotIQ may return results that simply aren’t
+meaningful. When doing a correlation analysis, SpotIQ may not find meaningful
+data if you have a measure with anything other than <code class="highlighter-rouge">SUM</code>.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -2689,7 +2753,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

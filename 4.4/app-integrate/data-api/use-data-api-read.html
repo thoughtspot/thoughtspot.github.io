@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Use the REST API to get data”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)](/4.4/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html","publisher":null,"image":null,"headline":"[“Use the REST API to get data”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)](/4.4/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html","publisher":null,"image":null,"headline":"[“Use the REST API to get data”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/data-api/use-data-api-read.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2700,15 +2715,13 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Construct the URL as follows: For a pinboard, the URL takes the form:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=&lt;pinboard_id&gt;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=&lt;pinboard_id&gt;
+</code></pre></div>    </div>
 
     <p>For a visualization, the URL takes the form:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=&lt;pinboard_id&gt;&amp;vizid=%5B&lt;visualization_id&gt;%5D
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=&lt;pinboard_id&gt;&amp;vizid=%5B&lt;visualization_id&gt;%5D
+</code></pre></div>    </div>
   </li>
   <li>If you want to apply any filters to the data that will be returned, apply <a href="/4.4/app-integrate/runtime-filters/about-runtime-filters.html#">Runtime Filters</a>.</li>
   <li>Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
@@ -2744,7 +2757,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

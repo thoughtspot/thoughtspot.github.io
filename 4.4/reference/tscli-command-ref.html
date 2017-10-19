@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“tscli command reference”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html","publisher":null,"image":null,"headline":"[“tscli command reference”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html","publisher":null,"image":null,"headline":"[“tscli command reference”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2659,27 +2674,24 @@ $('#toc').on('click', 'a', function() {
 
 <p>The <code class="highlighter-rouge">tscli</code> command has the following syntax:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster &lt;cluster&gt;]
            [--zoo &lt;zookeeper&gt;] [--username username] [--identity_file identity_file]
            {alert,backup,backup-policy,callhome,cluster,command,dr-mirror,etl,event,
              feature,fileserver,firewall,hdfs,ldap,logs,map-tiles,monitoring,nas,node,
              os,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,
              support}
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The <code class="highlighter-rouge">tscli</code> command has several subcommands such as <code class="highlighter-rouge">alert</code>, <code class="highlighter-rouge">backup</code>, and so forth. You issue a subcommand using the following format:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli [subcommand ]
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand ]
+</code></pre></div></div>
 
 <p>Subcommands have their own additional options and actions such as <code class="highlighter-rouge">tscli backup create</code> or <code class="highlighter-rouge">tscli backup delete</code> for example.  To view help for a subcommand:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli [subcommand] -h
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand] -h
+</code></pre></div></div>
 
 <p>A subcommand itself may have several options.</p>
 
@@ -2689,9 +2701,8 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="alert-subcommand">alert subcommand</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
+</code></pre></div></div>
 
 <p>Use this subcommand to do the following:</p>
 
@@ -2717,9 +2728,8 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="backup-subcommand">backup subcommand</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,restore}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,restore}
+</code></pre></div></div>
 
 <p>Use this subcommand to do the following:</p>
 
@@ -2765,9 +2775,8 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="backup-policy">backup-policy</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
+</code></pre></div></div>
 
 <p>Use this subcommand to do the following:</p>
 
@@ -2784,9 +2793,8 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="callhome">callhome</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle}
+</code></pre></div></div>
 
 <p>Use this subcommand to do the following:</p>
 
@@ -2815,9 +2823,8 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="cluster">cluster</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os,report,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,show-resource-spec,start,status,stop,update,update-hadoop}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os,report,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,show-resource-spec,start,status,stop,update,update-hadoop}
+</code></pre></div></div>
 
 <p>Use this subcommand to do the following:</p>
 
@@ -2853,9 +2860,8 @@ If for some reason the system cannot be connected to all interfaces, the command
 
 <h3 id="command">command</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli command [-h] {run}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli command [-h] {run}
+</code></pre></div></div>
 
 <p>Command to run a command on all nodes.</p>
 
@@ -2871,9 +2877,8 @@ If for some reason the system cannot be connected to all interfaces, the command
 
 <h3 id="dr-mirror">dr-mirror</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli dr-mirror [-h] {start,status,stop}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror [-h] {start,status,stop}
+</code></pre></div></div>
 
 <ul>
   <li><code class="highlighter-rouge">tscli dr-mirror start</code> Starts a mirror cluster which will continuously recover from a primary cluster.</li>
@@ -2883,9 +2888,8 @@ If for some reason the system cannot be connected to all interfaces, the command
 
 <h3 id="etl">etl</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
+</code></pre></div></div>
 
 <ul>
   <li>
@@ -2925,9 +2929,8 @@ If for some reason the system cannot be connected to all interfaces, the command
 
 <h3 id="event">event</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli event [-h] {list}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli event [-h] {list}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -2947,18 +2950,16 @@ If for some reason the system cannot be connected to all interfaces, the command
 
 <h3 id="feature">feature</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli feature [-h] {get-all-config}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli feature [-h] {get-all-config}
+</code></pre></div></div>
 <p>This subcommand has the following actions:</p>
 
 <p><code class="highlighter-rouge">tscli feature get-all-config</code> Gets the configured features in a cluster. The command will return a list of features, such as custom branding, Data Connect, and call home, and tell you whether they are enabled or disabled.</p>
 
 <h3 id="fileserver">fileserver</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -2992,9 +2993,8 @@ to upload the file. It is based on your customer name, and takes the form <code 
 
 <h3 id="firewall">firewall</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
+</code></pre></div></div>
 
 <ul>
   <li>
@@ -3020,9 +3020,8 @@ or were already closed.</p>
 
 <h3 id="hdfs">hdfs</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli hdfs [-h] {leave-safemode}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli hdfs [-h] {leave-safemode}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3030,9 +3029,8 @@ or were already closed.</p>
 
 <h3 id="ldap">ldap</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli ldap [-h] {add-cert,configure,purge-configuration}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ldap [-h] {add-cert,configure,purge-configuration}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3057,9 +3055,8 @@ certificate you are installing.</p>
 
 <h3 id="logs">logs</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli logs [-h] {collect,runcmd}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli logs [-h] {collect,runcmd}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3185,9 +3182,8 @@ None)</p>
 
 <h3 id="map-tiles">map-tiles</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli map-tiles [-h] {disable,enable}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli map-tiles [-h] {disable,enable}
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3211,9 +3207,8 @@ None)</p>
 
 <h3 id="monitoring">monitoring</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli monitoring [-h] {set-config,show-config}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli monitoring [-h] {set-config,show-config}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3237,9 +3232,8 @@ None)</p>
 
 <h3 id="nas">nas</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3319,9 +3313,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="node">node</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli node [-h] {check,ls,reinstall-os,status}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli node [-h] {check,ls,reinstall-os,status}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3349,9 +3342,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="os">os</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli os [-h] {find-package,list-packages}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli os [-h] {find-package,list-packages}
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3390,9 +3382,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="saml">saml</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli saml [-h] {configure,purge-configuration}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli saml [-h] {configure,purge-configuration}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3403,9 +3394,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="scheduled-pinboards">scheduled-pinboards</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli scheduled-pinboards [-h] {disable,enable}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli scheduled-pinboards [-h] {disable,enable}
+</code></pre></div></div>
 
 <p>This subcommand has the following actions:</p>
 
@@ -3416,9 +3406,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="smtp">smtp</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli smtp [-h] {reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli smtp [-h] {reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
+</code></pre></div></div>
 
 <p>This subcommand takes supports the following actions:</p>
 
@@ -3442,9 +3431,8 @@ used for mounting. For example: <code class="highlighter-rouge">/mnt/external</c
 
 <h3 id="snapshot">snapshot</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
+</code></pre></div></div>
 
 <p>Learn more about snapshots and backups see the <a href="/4.4/admin/backup-restore/choose-strategy.html">Understand the backup strategies</a> documentation.
 This subcommand supports the following actions:</p>
@@ -3501,9 +3489,8 @@ override any <code class="highlighter-rouge">ttl</code> value. (default: False)<
 
 <h3 id="snapshot-policy">snapshot-policy</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli snapshot-policy [-h] {disable,enable,show,update}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot-policy [-h] {disable,enable,show,update}
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3522,9 +3509,8 @@ override any <code class="highlighter-rouge">ttl</code> value. (default: False)<
 
 <h3 id="spot">spot</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli spot [-h] {enable}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli spot [-h] {enable}
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3532,9 +3518,8 @@ override any <code class="highlighter-rouge">ttl</code> value. (default: False)<
 
 <h3 id="ssl">ssl</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+</code></pre></div></div>
 
 <p>status              Shows whether of SSL authentication is enabled or
                     disabled for the ThoughtSpot application.
@@ -3561,9 +3546,8 @@ tls-status          Prints the status of TLS support</p>
 
 <h3 id="storage">storage</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli storage [-h] {gc}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli storage [-h] {gc}
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3606,11 +3590,10 @@ only be run on a stopped cluster. (default: False)</p>
 
 <h3 id="support">support</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tscli support [-h]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli support [-h]
 {restart-remote,rm-admin-email,rm-admin-phone,set-admin-email,set-admin-phone,set-remote,show-admin-email,show-admin-phone,show-remote,start-remote,stop-remote}
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This subcommand supports the following actions:</p>
 
@@ -3656,7 +3639,7 @@ only be run on a stopped cluster. (default: False)</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

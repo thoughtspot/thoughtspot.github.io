@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Work with snapshots”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html","publisher":null,"image":null,"headline":"[“Work with snapshots”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html","publisher":null,"image":null,"headline":"[“Work with snapshots”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/backup-restore/overview-snapshot.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2679,16 +2694,14 @@ instead, contact ThoughtSpot Support.</p>
   <li>
     <p>Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ tscli snapshot create &lt;snapshot_name&gt; &lt;reason&gt;
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;snapshot_name&gt; &lt;reason&gt;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Check that the snapshot was created:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ tscli snapshot ls
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -2698,7 +2711,7 @@ instead, contact ThoughtSpot Support.</p>
 
 <p>The default snapshot policy is enabled for every cluster. You can use the <code class="highlighter-rouge">tscli snapshot-policy show</code> command to display the current policy for periodic snapshots.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 $ tscli snapshot-policy show
 schedule {
     period {
@@ -2725,8 +2738,7 @@ schedule {
 }
 enabled: true
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This policy takes a snapshot every hour starting at midnight on Sudnay. It retains the snapshots from the last three hour intervals and two snapshots from two of the previous 4 hour intervals. That means, there are 5 periodic snapshots retained overall. For detailed information about understanding the schedule, see <a href="how-to-create-a-schedule.html">Understand backup/snapshot schedules</a>.</p>
 
@@ -2771,7 +2783,7 @@ enabled: true
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

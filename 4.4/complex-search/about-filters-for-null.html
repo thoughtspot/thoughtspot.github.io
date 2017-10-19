@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Filter on null, blank, or empty values”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what’s really going on with these types of values, and to get the filtering behavior you want.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html","publisher":null,"image":null,"headline":"[“Filter on null, blank, or empty values”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what’s really going on with these types of values, and to get the filtering behavior you want.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html","publisher":null,"image":null,"headline":"[“Filter on null, blank, or empty values”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/about-filters-for-null.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2672,9 +2687,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you need to differentiate between NULL and blank values, you can <a href="how-to-add-formula.html#">Add a formula</a> to make them appear differently in charts and tables. In this example, we’ll use <code class="highlighter-rouge">&lt;text_column&gt;</code> to refer to the text column which contains both NULL and blank values:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then if ( isnull ( &lt;text_column&gt; ) ) then 'null' else 'empty' else &lt;text_column&gt;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then if ( isnull ( &lt;text_column&gt; ) ) then 'null' else 'empty' else &lt;text_column&gt;
+</code></pre></div></div>
 
 <p>This formula will show “null” where the value contained in the column is actually NULL. When the value is blank or empty, it will show up as “empty”.</p>
 
@@ -2682,9 +2696,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you want to keep the same display format for NULL and blank values, but be able to filter on both using “{blank}”, your <a href="how-to-add-formula.html#">formula</a> will be slightly different. You can use a formula like:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then null else &lt;text_column&gt;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then null else &lt;text_column&gt;
+</code></pre></div></div>
 
 <p>Use the filter you created instead of the original text column in your search to get the result you desire.</p>
 
@@ -2722,7 +2735,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

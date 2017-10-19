@@ -44,6 +44,8 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+
+
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>[“Initialize the Identity Provider Metadata”]</title>
@@ -54,12 +56,13 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-17T17:32:12-07:00" />
+<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"This is one part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the overview of the entire process of integrating with AD FS.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html","publisher":null,"image":null,"headline":"[“Initialize the Identity Provider Metadata”]","dateModified":"2017-10-17T17:32:12-07:00","datePublished":"2017-10-17T17:32:12-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"This is one part of the configuration procedure for setting up ThoughtSpot to work with AD FS for authentication. You should also refer to the overview of the entire process of integrating with AD FS.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html","publisher":null,"image":null,"headline":"[“Initialize the Identity Provider Metadata”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/SAML/initialize-IDP.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 
     <script>
@@ -1679,6 +1682,18 @@
                               
                             
                         
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -2664,27 +2679,24 @@ $('#toc').on('click', 'a', function() {
     <p>Download the AD FS 2.0 IdP metadata from the AD FS server.
 You can reference this file by its URL, which looks like:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> https://&lt;adfsserver&gt;/FederationMetadata/2007-06/FederationMetadata.xml
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://&lt;adfsserver&gt;/FederationMetadata/2007-06/FederationMetadata.xml
+</code></pre></div>    </div>
   </li>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Change directories to the SAML directory:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
+</code></pre></div>    </div>
   </li>
   <li>Replace the contents of the file <code class="highlighter-rouge">idp-meta.xml</code> with the metadata of the IdP that you downloaded.
 Do not change the name of the file.</li>
   <li>
     <p>Restart Tomcat using these commands:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ cd /usr/local/scaligent/release
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release
  $ tscli --adv service push tomcat /usr/local/scaligent/release/production/orion/tomcat/tomcat_prod.config
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Next, <a href="initialize-SP.html">Initialize the Service Provider Metadata</a>.</li>
 </ol>
@@ -2717,7 +2729,7 @@ Do not change the name of the file.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 17, 2017 <br />
+        Generated: Oct 19, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
