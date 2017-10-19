@@ -18,7 +18,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
 1. If you haven't, log into the ThoughtSpot application.
 2. Select the **INSIGHTS > Results** page.
-3. Look for results from your **Warehouse_and_Retail_Sales** analysis and click on the **NAME**.
+3. Look for results from your **FoodDollarDataReal** analysis and click on the **NAME**.
    The application opens the SpotIQ insights.
 
    ![]({{ site.baseurl }}/images/spotiq-in-sights.png)
@@ -30,14 +30,20 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
    ![]({{ site.baseurl }}/images/spotiq-details.png)
 
    You can tell that SpotIQ ran through 20 combinations and discovered 14
-   insights. The first looked for an insight in a combination of the `retail
-   transfers` and `item type` columns in the **Warehouse_and_Retail_Sales** data
-   and discovered nothing. The next to columns `retail transfers` and `supplier`
-   did yield some insights.
+   insights. The first looked for an insight in a combination of the `table_num`
+   and `year` columns in the **FoodDollarDataReal** data and discovered one
+   insight. The next to column combination `table_num` and `units` did not
+   reveal any insights.
 
 5. Close the details panel and look at the corresponding insight SpotIQ produced.
 
-   You can see that SpotIQ found the seven highest suppliers out of 317.
+   You can see that SpotIQ found three sets of insights:
+
+   * 2 insights for CATEGORY_DESC have significantly higher Total imports than the rest. Includes similar insights for Total value_added.
+   * Insights from Cross Correlation Analysis.
+   * Insights from Trend Analysis.
+
+   There is a reason there are three sets. You'll learn the answer to that later.
 
 ## Time and your insight data
 
@@ -68,16 +74,19 @@ Now your insights won't expire as you work with them!
 
 ## Data outliers
 
-SpotIQ has three central insights it looks for, the first insight it looks for are
-data outliers. An outlier is a value that is "far away" or that differs from the
-other data.
+SpotIQ attempts to look for three central insights. The first insight it looks
+for are data outliers. An outlier is a value that is "far away" or that differs
+from the other data.
 
-Outliers can result from measurement or recording errors or they
-could contain valuable information.  For example, one store might sell
-significantly more towels in one week out of the year because there was a flood
-that week.
+Outliers can result from measurement or recording errors or they could contain
+valuable information. For example, one store might sell significantly more
+towels in one week out of the year because there was a flood that week.
 
-1. Scroll to the first carousel of data that SpotIQ created for you.  
+1. Scroll to the first carousel of data that SpotIQ created for you.
+
+    A carousel groups a set of visualizations on a page. You can use the arrows
+    attached to a carousel to "page" through its contents.
+
 2. Count the number of items in the carousel.
 
     You should see that SpotIQ found two outliers.
@@ -88,16 +97,17 @@ that week.
     significantly higher than the other values in your set.
 
     Two facts about this outlier shouldn't surprise, you. The first fact is that a
-    total exceeds all the other items in the data.  That just makes sense so this
+    total exceeds all the other items in the data. That just makes sense so this
     isn't a true outlier.
 
     The second fact is that SpotIQ insights are not always interesting. In this
     case the data included totals in the row data which caused nonsense outliers.
-    You can use SpotIQ to fix this issue and go futher. More about this later in
+    You can use SpotIQ to fix this issue and go further. More about this later in
     the tutorial.
 
 ## Looking for relationships (cross-correlation analysis)
 
+The second category of insights SpotIQ attempts to find is cross-correlations.
 Cross-correlation looks for and measures relationships between two quantitive,
 continous information sets -- in our case two fields (columns) in our dataset.
 Usually, you'll see a cross-correlation in your insights if your data includes
@@ -124,18 +134,32 @@ elements) are correlated.
 
 ## Trends over time
 
-A trend line is a straight or curved line that indicates the general pattern or
-direction of a time series data (information in sequence over time). This can
-help you to determine the general direction of a trend in  your data, such as
-sales are climbing or customers are declining.
+The third set of insights SpotIQ looks for is a trendline. A trendline is a
+straight or curved line that indicates the general pattern or direction of a
+time series data (information in sequence over time). As you may have guessed,
+trendlines rely on your data having a date or time column.
+
+You can use a trendline to determine the general direction of a trend in your
+data. Are sales are climbing or are customers are declining over time?
 
 1. Scroll down to the **Insights from Trend Analysis** section.
 2. Look for the **Total imports by year** result.
 
    ![]({{ site.baseurl }}/images/spotiq-trend.png)
 
+  At this point, you may have noticed that SpotIQ grouped each type of insights.
+  Outliers, correlations, and this last one, trendlines. This grouping makes it
+  easier to locate and review similar types of insights.
 
 ## Where to go next
 
-In this section, you explored some of the functionality of the **SpotIQ**
-page.  In [the next section]({{ site.baseurl }}/spotiq/spotiq-customize.html), you'll learn how to schedule SpotIQ to deliver insights on a regular basis.
+In this section, you explored some of the functionality of the **SpotIQ** page.
+You learned that SpotIQ combines columns in your data to look for three
+categories of insights:
+
+* outliers
+* cross-correlations
+* trendlines
+
+In [the next section]({{ site.baseurl }}/spotiq/spotiq-customize.html), you'll
+learn how to schedule SpotIQ to deliver insights on a regular basis.

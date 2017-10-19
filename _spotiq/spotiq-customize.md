@@ -106,7 +106,9 @@ your results. Try this now.
 
 You can present SpotIQ insights in several ways. You can present an individual
 result or all of them at once. You can package all the insights in a PDF. This
-is useful for passing a packet of results.
+is useful for passing a packet of results. Because any insight an insight into
+data at a specific point in time, you should always consider saving the insight
+as a PDF.
 
 1. Locate the **Actions** menu on the corner of the **SpotIQ** page.
 2. Choose **Actions > Download as PDF** from the menu.
@@ -114,7 +116,7 @@ is useful for passing a packet of results.
    The system downloads a file containing all the insights. Keep in mind this is
    file can be very large if there are a lot of insights found in your data.
 
-Groups of charts that appear in a carousel can be presented as a group. To do
+You can use the **Present** action to view visualizations that appear in a carousel.  can be presented as a group. Present is the best way to To do
 this, do the following:
 
 1. Scroll down to your first carousel with your new charts.
@@ -122,10 +124,12 @@ this, do the following:
 
    ![]({{ site.baseurl }}/images/spotiq-carousel.png)
 
-3. Choose **Present** or **Copy link** item from the menu.
+3. Choose **Present** from the menu.
 
- Each individual chart has a **Download**, **Present**, or **Copy link** action
- you can also take.
+    <video src="{{ site.baseurl }}/images/spotiq-present.mp4" width="600" controls preload></video>
+
+    Each individual chart has a **Download**, **Present**, or **Copy link**
+    action you can also take.
 
 ## Schedule a recurring analysis
 

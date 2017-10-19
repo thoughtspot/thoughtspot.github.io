@@ -42,5 +42,11 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+
+{% if page.title == "Search results" %}
+<!-- Do not add the SEO and remove from indexing-->
+<meta name="robots" content="noindex" />
+{% else %}
 <!-- SEO Tools -->
 {% seo %}
+{% endif %}

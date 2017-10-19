@@ -724,6 +724,12 @@ entries:
           - title: "101: Do more with SpotIQ"
             url: /spotiq/spotiq-customize.html
             output: web,ugBk
+          - title: "Best SpotIQ Practices"
+            url: /spotiq/special-topics.html
+            output: web,ugBk
+          - title: "Custom SpotIQ analysis"
+            url: /spotiq/customization.html
+            output: web,ugBk
         - levelThreeTitle: Share your work
           output: web,ugBk
           levelThreeItems:
