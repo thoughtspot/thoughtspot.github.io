@@ -16,7 +16,7 @@ entries:
       type: frontmatter
     - title:
       url: /pdfconfigs/tocpage.html
-      output: admBk
+      output: admBk,ugBk
       type: frontmatter
 # end PDF output defs
   - sectiontitle: Administration
@@ -1039,26 +1039,26 @@ entries:
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
   - sectiontitle: Appliance Quick Start
-    output: web,appQs, pdf
+    output: web,appQs
     sectionitems:
     - title: Welcome to ThoughtSpot
       url: /appliance/welcome/welcome-intro.html
-      output: web,appQs,pdf
+      output: web,appQs
     - title: Supported hardware
       url: /appliance/physical/hardware-and-deployment.html
-      output: web,appQs, pdf
+      output: web,appQs
     - title: Typical physical deployment
       url: /appliance/physical/inthebox.html
-      output: web,appQs, pdf
+      output: web,appQs
     - title: Cable networking
       url: /appliance/setup/cable-networking.html
-      output: web,appQs, pdf
+      output: web,appQs
     - title: Install and start the appliance
       url: /appliance/setup/appliance-setup.html
-      output: web,appQs, pdf
+      output: web,appQs
     - title: Contact Support
       url: /appliance/welcome/contact.html
-      output: web,appQs,pdf
+      output: web,appQs
   - sectiontitle: AWS Quick Start
     output: web,awsQs
     sectionitems:
@@ -1142,7 +1142,7 @@ entries:
       output: web
     - title: Release notes
       url: /release/notes.html
-      output: web
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web

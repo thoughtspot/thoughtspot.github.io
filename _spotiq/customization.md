@@ -118,7 +118,7 @@ Your data may contain known outliers. For example, you are in the middle of a qu
   <tr>
     <td>
     <!-- next -->
-    <p>In the Search bar, add a filter <code><i>date</i>< last time period</code> to the search bar.  </td>
+    <p>In the Search bar, add a filter <code><i>date</i>< last time period</code> to the search bar.</p>  </td>
     <td>
     <!-- future -->
     Not applicable.
@@ -141,6 +141,7 @@ Your SpotIQ analysis may not provide you as many insights as you think it should
     <!-- next -->
     <p>Choose <b>Customize Analysis</b> and <b>Customize algorithms</b> Decrease the <b>Multiplier for Outlier Detection</b> to a value closer to zero.
 </p>
+</td>
     <td>
     <!-- future -->
     Not applicable.
