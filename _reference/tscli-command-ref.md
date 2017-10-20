@@ -156,11 +156,14 @@ tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os
 Use this subcommand to do the following:
 
 * `tscli cluster abort-reinstall-os` Abort in-progress reinstall.
+* `tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}` check the status nodes in the cluster.
+
+   You must specify a component to check.
+
 * `tscli cluster create` *`release`*
 
     Creates a new cluster from the release file specified by  `*`release`*`. This command is used by ThoughtSpot Support when installing a new cluster, for example, `tscli cluster create 2.0.4.tar.gz`
 
-* `tscli cluster diagnose`  Diagnose all nodes in the cluster.
 * `tscli cluster get-config` Get current cluster network and time configuration. Prints JSON configuration to stdout.
 If for some reason the system cannot be connected to all interfaces, the command returns an error but continues to function.
 * `tscli cluster load` Load state from given backup onto existing cluster

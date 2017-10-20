@@ -26,17 +26,17 @@ To ensure compatibility, always use the ODBC driver with the same version number
 
 The ODBC driver supports these data types:
 
--   INT
--   BIGINT
--   BOOLEAN
--   DOUBLE
--   FLOAT
--   DATE
--   TIME
--   TIMESTAMP
--   DATETIME
--   CHAR
--   VARCHAR
+-   `INT`
+-   `BIGINT`
+-   `BOOLEAN`
+-   `DOUBLE`
+-   `FLOAT`
+-   `DATE`
+-   `TIME`
+-   `TIMESTAMP`
+-   `DATETIME`
+-   `CHAR`
+-   `VARCHAR`
 
 ## Source and target data compatibility
 
@@ -76,6 +76,6 @@ ThoughtSpot datatypes.
 
 
 If a conversion is not possible, an error is returned to the client to indicate
-conversion failure.  The ETL tool must add a data transformation step if the
-source column data type does not exactly match the target's, ThoughtSpot's,
-column data type. The driver does not do any implicit conversions. 
+conversion failure. The ETL tool must add a data transformation step if the
+source column data type does not exactly match the target's ThoughtSpot
+column data type. The driver does not do any implicit conversions.
