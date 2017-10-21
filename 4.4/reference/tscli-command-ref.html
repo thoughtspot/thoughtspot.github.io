@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-19T15:05:29-07:00" />
+<meta property="article:published_time" content="2017-10-20T16:51:23-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html","publisher":null,"image":null,"headline":"[“tscli command reference”]","dateModified":"2017-10-19T15:05:29-07:00","datePublished":"2017-10-19T15:05:29-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html","publisher":null,"image":null,"headline":"[“tscli command reference”]","dateModified":"2017-10-20T16:51:23-07:00","datePublished":"2017-10-20T16:51:23-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/tscli-command-ref.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2831,11 +2831,15 @@ $('#toc').on('click', 'a', function() {
 <ul>
   <li><code class="highlighter-rouge">tscli cluster abort-reinstall-os</code> Abort in-progress reinstall.</li>
   <li>
+    <p><code class="highlighter-rouge">tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}</code> check the status nodes in the cluster.</p>
+
+    <p>You must specify a component to check.</p>
+  </li>
+  <li>
     <p><code class="highlighter-rouge">tscli cluster create</code> <em><code class="highlighter-rouge">release</code></em></p>
 
     <p>Creates a new cluster from the release file specified by  <code class="highlighter-rouge">*</code>release<code class="highlighter-rouge">*</code>. This command is used by ThoughtSpot Support when installing a new cluster, for example, <code class="highlighter-rouge">tscli cluster create 2.0.4.tar.gz</code></p>
   </li>
-  <li><code class="highlighter-rouge">tscli cluster diagnose</code>  Diagnose all nodes in the cluster.</li>
   <li><code class="highlighter-rouge">tscli cluster get-config</code> Get current cluster network and time configuration. Prints JSON configuration to stdout.
 If for some reason the system cannot be connected to all interfaces, the command returns an error but continues to function.</li>
   <li><code class="highlighter-rouge">tscli cluster load</code> Load state from given backup onto existing cluster</li>
@@ -3639,7 +3643,7 @@ only be run on a stopped cluster. (default: False)</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 19, 2017 <br />
+        Generated: Oct 20, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
