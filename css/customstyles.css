@@ -9,13 +9,13 @@ table.scheduler, th, td {
 }
 
 
-## search
+/*search*/
 
 div.gsc-control-cse {
     max-width: 100%;
 }
 
-## help center
+/*help center*/
 
 div.links{
     width: 86%;
