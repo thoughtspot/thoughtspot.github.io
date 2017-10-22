@@ -7,16 +7,16 @@ entries:
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
-    output: admBk,ugBk
+    output: admBk,ugBk,cngBk,apgBk,apgBk,digBk,appQs,awsQs,drgBk
     type: frontmatter
     sectionitems:
     - title:
       url: /pdfconfigs/titlepage.html
-      output: admBk,ugBk
+      output: admBk,ugBk,cngBk,apgBk,apgBk,digBk,appQs,awsQs,drgBk
       type: frontmatter
     - title:
       url: /pdfconfigs/tocpage.html
-      output: admBk,ugBk
+      output: admBk,ugBk,cngBk,apgBk,apgBk,digBk,appQs,awsQs,drgBk
       type: frontmatter
 # end PDF output defs
   - sectiontitle: Administration
@@ -1118,7 +1118,7 @@ entries:
       output: web,admBk,ugBk
     - title: ThoughtSpot Loader flag reference
       url: /reference/data-importer-ref.html
-      output: web
+      output: web,admBk,ugBk
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
       output: web,admBk,ugBk
