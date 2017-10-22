@@ -4,15 +4,44 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: ThoughtSpot Doc
+print_title: PrintBook_Name
 print_subtitle: Version 4.4
 output: pdf
 defaults:
   -
-    scope:
-      path: ""
-      type: "pages"
-    values:
+
+collections:
+  admin:
+    output: true
+  advanced-search:
+    output: true
+  app-integrate:
+    output: true
+  appliance:
+    output: true
+  aws:
+    output: true
+  complex-search:
+    output: true
+  data-connect:
+    output: true
+  data-integrate:
+    output: true
+  disaster-recovery:
+    output: true
+  end-user:
+    output: true
+  error-codes:
+    output: true
+  reference:
+    output: true
+  release:
+    output: true
+  spotiq:
+    output: true
+
+defaults:
+  - values:
       layout: "page_print"
       comments: true
       search: true
