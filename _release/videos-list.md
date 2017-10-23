@@ -1,14 +1,53 @@
 ---
-title: ["More Videos"]
+title: ["Videos"]
 keywords: tbd
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+The following videos are new in the 4.4 release cycle:
+
+<table cellpadding="1" cellspacing="1" style="width: 100%; table-layout: fixed;">
+   <tbody>
+      <tr>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/l4oqjszs35.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_l4oqjszs35 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">Search</p>
+         </td>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/yw6zaddkq8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_yw6zaddkq8 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">Charts & Pinboards</p>
+         </td>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/kuv86oqn6l.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_kuv86oqn6l popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">SpotIQ</p>
+         </td>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/vtt7618xjx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_vtt7618xjx popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">Learn feature</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## Videos from older releases
+
 In this section, you'll find some additional videos you may find helpful.
 
-<table border="1" cellpadding="1" cellspacing="1" style="width: 100%; table-layout: fixed;">
+<table cellpadding="1" cellspacing="1" style="width: 100%; table-layout: fixed;">
    <tbody>
       <tr>
          <td>
