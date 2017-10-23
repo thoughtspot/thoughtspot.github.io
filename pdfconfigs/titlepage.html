@@ -4,14 +4,15 @@ search: exclude
 permalink: pdfconfigs/titlepage.html
 ---
 <div class="printTitleArea">
-    <div class="printTitle">{{site.print_title}}</div>
-    <div class="printSubtitle">{{site.print_subtitle}}</div>
-    <div class="lastGeneratedDate">{{ site.time | date: '%B %d, %Y' }}</div>
-    <hr />
-
     <div class="printTitleImage">
         <img style="width:100px;" src="{{ "images/company_logo.png" | absolute_url }}" alt="Company Logo"/>
     </div>
+    <hr />
+    <div class="printTitle">{{site.print_title}}</div>
+    <!-- <div class="printSubtitle">{{site.print_subtitle}}</div> -->
+    <div class="lastGeneratedDate">{{site.print_subtitle}}, {{ site.time | date: '%B %d, %Y' }}</div>
+
+
 
     <div class="copyrightBoilerplate">
         <p>

@@ -5,7 +5,7 @@ kill -9 $(ps aux | grep '[j]ekyll' | awk '{print $2}')
 clear
 
 echo 'Deleting all old pdfs'
-rm -rf pdf/mydoc.pdf;
+rm pdf/$1.pdf;
 echo "done";
 
 echo "Building PDF-friendly HTML site for Mydoc ...";
@@ -13,8 +13,8 @@ bundle exec jekyll serve --detach --config _config.yml,pdfconfigs/config_mydoc_p
 echo "done";
 
 echo "Building the PDF ...";
-prince --javascript --input-list=_site/pdfconfigs/prince-list.txt -o pdf/mydoc.pdf;
+prince --javascript --input-list=_site/pdfconfigs/prince-list.txt -o pdf/$1.pdf;
 
 echo "Done. Look in the pdf directory to see if it printed successfully."
 
-open pdf/mydoc.pdf;
+open pdf/$1.pdf;

@@ -11,7 +11,7 @@ completed the walk through you will be able to use the core features of SpotIQ
 in your ThoughtSpot installation.
 
 If you want a detailed overview of what SpotIQ does before you try it out,
-first [read the introduction to SpotIQ](whatisspotiq.md).
+first [read the introduction to SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.html).
 
 ## Prerequisites
 

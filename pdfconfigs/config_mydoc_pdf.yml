@@ -4,7 +4,7 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: PrintBook_Name
+print_title: Application Integration Guide
 print_subtitle: Version 4.4
 output: pdf
 defaults:

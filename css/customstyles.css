@@ -1,7 +1,9 @@
-body { background-image: url(/images/draft-orig.png);
-  background-repeat: no-repeat;
+body {
+
+      /*background-image: url(/images/draft-orig.png);
+      background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position: center;
+      background-position: center;*/
     }
 
 table.scheduler, th, td {
@@ -55,7 +57,7 @@ img.indexImg {
   align-self: center;
 }
 
-h4.tagLine {
+h2.tagLine {
   align-self: center;
   color: #EA603E;
   margin-top: 3px !important;

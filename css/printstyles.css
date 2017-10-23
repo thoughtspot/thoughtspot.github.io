@@ -30,7 +30,7 @@ table .table {max-width:650px;}
 
 
 a[href]::after {
-    content: " (page " target-counter(attr(href), page) ")"
+    /*content: " (page " target-counter(attr(href), page) ")"*/
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
@@ -38,7 +38,7 @@ a[href^="http:"]::after, a[href^="https:"]::after {
 }
 
 a[href] {
-    color: blue !important;
+    color: #2c6da3 !important;
 }
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
@@ -77,7 +77,6 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 .printTitleImage {
     max-width:300px;
-    margin-bottom:200px;
 }
 
 
