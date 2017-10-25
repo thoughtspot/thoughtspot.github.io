@@ -1,5 +1,5 @@
-<table id="matrix" class="wide_table">
-  <caption>Privilege and access matrix</caption>
+<table id="matrix" class="wide_table" style="font-size:10px;">
+  <caption>The following table shows the intersection of user privilege and ability:</caption>
    <colgroup>
       <col style="width:36%;">
       <col style="width:4%;">
@@ -275,8 +275,8 @@
          <td>N</td>
       </tr>
       <tr>
-      <td colspan="17">
-        <h5>Table notes:</h5>
+      <td colspan="17" id="widefootnote" style="font-size: 6px;">
+        <p>Table notes:</p>
         <ol>
               <li>Applies to non-owners only.</li>
               <li>Any tables.</li>
