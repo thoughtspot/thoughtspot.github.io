@@ -1,7 +1,7 @@
 ---
 title: [Sync users and groups from LDAP]
 tags: [Security_SAML_LDAP_AD]
-keywords: tbd
+keywords: SAML,security,"active directory",authenticate
 last_updated: tbd
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar

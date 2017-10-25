@@ -1,7 +1,7 @@
 ---
 title: [About full embed]
 tags:
-keywords: tbd
+keywords: SAML,security,"active directory",authenticate
 last_updated: tbd
 summary: "Full embedding enhances our existing external sharing functionality. It allows you to create content in an embedded environment."
 sidebar: mydoc_sidebar

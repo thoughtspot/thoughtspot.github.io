@@ -1,7 +1,7 @@
 ---
 title: ["Understand groups and privileges"]
 tags:
-keywords: "user,group,privilege"
+keywords: user,group,privilege,SAML,authenticate,authentication
 last_updated: tbd
 summary: "Creating groups and assigning users to them makes privilege management easier."
 sidebar: mydoc_sidebar

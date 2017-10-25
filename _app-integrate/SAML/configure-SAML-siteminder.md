@@ -1,7 +1,7 @@
 ---
 title: [Configure CA SiteMinder]
 tags:
-keywords: tbd
+keywords: SAML,security,"active directory",authenticate,siteminder,certificate
 last_updated: tbd
 summary: "CA SiteMinder can be used as an Identity Provider for single sign on to ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -38,7 +38,7 @@ Before configuring CA SiteMinder, you must [configure SAML in ThoughtSpot](ts-as
     |Supported NameID Format|Optional|
 
 3. You will now configure the Federation Partnership between CA SiteMinder (the IDP) and ThoughtSpot (the Remote SP) in CA SiteMinder. Log in to CA SiteMinder.
-4. Navigate to **Federation** -> **Partnership Federation -> Create Partnership** (**SAML 2 IDP -> SP**). 
+4. Navigate to **Federation** -> **Partnership Federation -> Create Partnership** (**SAML 2 IDP -> SP**).
 5. Click **Configure Partnership** and fill in the following values:
 
     |Section|Entry|

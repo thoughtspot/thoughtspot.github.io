@@ -1,7 +1,7 @@
 ---
 title: [About Embedding]
 tags:
-keywords: tbd
+keywords: embedding,authentication,SAML
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

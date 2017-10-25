@@ -1,13 +1,12 @@
 ---
 title: [Configure SAML]
 tags:
-keywords: tbd
+keywords: SAML,security,"active directory",authenticate,configure,
 last_updated: tbd
-
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot can use Security Assertion Markup Language \(SAML\) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a tscli based configurator.
+ThoughtSpot can use Security Assertion Markup Language \(SAML\) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a `tscli` based configurator.
 
 Before configuring SAML, you will need this information:
 
@@ -33,4 +32,4 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
 
 3. Complete the configurator prompts with the information you gathered above.
 4. When the configuration is complete, open a Web browser and go to the ThoughtSpot login page.
-   It should now show the Single Sign On option. 
+   It should now show the Single Sign On option.
