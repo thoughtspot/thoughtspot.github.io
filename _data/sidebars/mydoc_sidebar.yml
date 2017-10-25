@@ -20,7 +20,7 @@ entries:
       type: frontmatter
 # end PDF output defs
   - sectiontitle: Administration
-    output: web,pdf
+    output: web,admBk
     sectionitems:
     - title: Introduction to administration
       url: /admin/intro.html
@@ -263,11 +263,11 @@ entries:
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
     - levelTwoTitle: Manage users and groups
-      output: web,pdf
+      output: web,admBk
       levelTwoItems:
       - title: Understand groups and privileges
         url: /admin/users-groups/about-users-groups.html
-        output: web,pdf
+        output: web,admBk
       - title: Create, edit, or delete a group
         url: /admin/users-groups/add-group.html
         output: web,admBk
