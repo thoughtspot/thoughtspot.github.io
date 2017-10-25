@@ -1,7 +1,7 @@
 ---
 title: [Calling the REST API]
 tags:
-keywords: tbd
+keywords: API,URL,calling,REST,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

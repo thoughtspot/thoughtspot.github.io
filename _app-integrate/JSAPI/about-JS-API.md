@@ -1,7 +1,7 @@
 ---
 title: [About the JavaScript API]
 tags:
-keywords: tbd
+keywords: REST,API,data,"REST API",javascript
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

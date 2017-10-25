@@ -1,7 +1,7 @@
 ---
 title: [Get started with ThoughtSpot Data Connect]
 tags:
-keywords: tbd
+keywords: Informatica,"REST API"
 last_updated: tbd
 toc: false
 summary: "ThoughtSpot has partnered with Informatica to bring you ThoughtSpot Data Connect, which is a self-service data integration tool that allows you to easily pull data into ThoughtSpot for analysis."

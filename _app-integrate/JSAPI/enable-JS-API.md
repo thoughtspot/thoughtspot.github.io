@@ -1,7 +1,7 @@
 ---
 title: [Enable the JavaScript API]
 tags:
-keywords: tbd
+keywords: API,javascript,enable,"JS API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
