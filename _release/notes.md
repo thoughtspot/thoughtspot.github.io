@@ -9,6 +9,9 @@ permalink: /:collection/:path.html
 
 <p>We are&nbsp;happy to inform you that the latest version 4.4 of ThoughtSpot is available. Below is the list features and issues that were part of this release.</p>
 
+{% include callout.html content="For detailed descriptions of new features and capabilities in this release, see the official release announcement on the ThoughtSpot blog <b> <a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>." type="success" %} </b>
+
+
 <h2>New&nbsp;Features and Functionality</h2>
 <table style="border-collapse: collapse; width: 100%; font-size: inherit; font-family: inherit;" border="0" cellspacing="0" cellpadding="0">
 <thead>
