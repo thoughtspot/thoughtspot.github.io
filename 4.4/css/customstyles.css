@@ -67,8 +67,10 @@ div.col-sm-4 {
   margin-top: 20px;
 }
 
+/* Privileges table in matrix.md*/
+
 table.wide_table > caption {
-  font-size: larger;
+  /*font-size: larger;*/
   margin-bottom: 2em;
   border-bottom: #ccc;
   border-bottom-style: double;
@@ -98,14 +100,15 @@ table.wide_table {
    column-width: initial;
    word-break: initial;
    margin-top: 50px;
-   page: wide_table
+   page: wide_table;
+   font-size: 10px;
 }
 
 th.rotate {
   /* Something you can count on */
   height: 90px;
   white-space: nowrap;
-  font-size: small;
+  /*font-size: x-small;*/
 }
 
 th.rotate > div {
@@ -114,16 +117,15 @@ th.rotate > div {
     translate(25px, 51px)
     /* 45 is really 360 - 45 */
     rotate(315deg);
-  width: 30px;
+    width: 30px;
 }
 th.rotate > div > span {
   border-bottom: 1px solid #ccc;
   padding: 5px 10px;
 }
 
+/* END: Privileges table in matrix.md*/
 
-
-/* Privileges Table ^^*/
 
 .bs-callout {
     padding: 20px;
