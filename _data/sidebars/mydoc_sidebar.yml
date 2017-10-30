@@ -730,6 +730,9 @@ entries:
           - title: "Custom SpotIQ analysis"
             url: /spotiq/customization.html
             output: web,ugBk
+          - title: "Advanced R Customizations"
+            url: /spotiq/adv-customize-withr.html
+            output: web,ugBk
         - levelThreeTitle: Share your work
           output: web,ugBk
           levelThreeItems:
