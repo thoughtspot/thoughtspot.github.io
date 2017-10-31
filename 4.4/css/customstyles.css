@@ -24,7 +24,6 @@ div.links{
     padding-left: 7%;
     height: 500px;
     white-space:nowrap;
-    align-self: stretch !important
 }
 .linksChild{
     width: 150px;
@@ -54,11 +53,9 @@ p.bookLink {
 
 img.indexImg {
   margin-bottom: 27px;
-  align-self: center;
 }
 
 h2.tagLine {
-  align-self: center;
   color: #EA603E;
   margin-top: 3px !important;
 }
