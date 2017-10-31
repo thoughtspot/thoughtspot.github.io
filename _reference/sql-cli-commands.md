@@ -119,15 +119,6 @@ As a best practice, you should enclose object names (database, schema, table, an
       </tr>
       <tr>
          <td>
-            <code>SHOW VIEWS</code>
-         </td>
-         <td>Lists all views within the current database by schema.</td>
-         <td>
-            <code>TQL&gt; SHOW VIEWS;</code>
-         </td>
-      </tr>
-      <tr>
-         <td>
             <code>SCRIPT SERVER</code>
          </td>
          <td>Generates the TQL schema for all tables in all databases on the
