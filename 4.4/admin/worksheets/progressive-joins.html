@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-01T09:50:51-07:00" />
+<meta property="article:published_time" content="2017-11-03T15:49:33-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html","publisher":null,"image":null,"headline":"[“How the worksheet join rule works”]","dateModified":"2017-11-01T09:50:51-07:00","datePublished":"2017-11-01T09:50:51-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html","publisher":null,"image":null,"headline":"[“How the worksheet join rule works”]","dateModified":"2017-11-03T15:49:33-07:00","datePublished":"2017-11-03T15:49:33-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2693,11 +2693,11 @@ $('#toc').on('click', 'a', function() {
 
 <p>When creating the row level security rules for a table that’s part of a worksheet, you aren’t limited to referencing only the columns in that table. You can specify columns from other tables in the worksheet as well, as long as the tables are joined to the table you’re creating the rule on. Then, when creating a worksheet on top of them, the behavior is consistent regardless of the worksheet join rule you choose. Users will never be able to see data they should not, regardless of what their search contains.</p>
 
-<p>Imagine you have a worksheet that contains a “Sales” fact table, and “Customer” and “Product”dimensions that are joined on “Customer SSN” and “Product Code” columns. In order to secure the “Sales” table, you can use “Customer Name” from the “Customer” column to create a row level security rule.</p>
+<p>Imagine you have a worksheet that contains a “Sales” fact table, and “Customer” and “Product” dimensions that are joined on “Customer SSN” and “Product Code” columns. In order to secure the “Sales” table, you can use “Customer Name” from the “Customer” column to create a row level security rule.</p>
 
 <h2 id="how-joins-are-applied-with-chasm-traps">How joins are applied with chasm traps</h2>
 
-<p>When working with worksheets and row level security, you need to understand how joins are applied. This is particularly important with chasm trap schemas. For chasm trap schemas, if row level security is only set on one of the tables, people could see data they should not see if the scope of their search does not include that table. (this protects the from having people see the wrong things if they have chasm trap).</p>
+<p>When working with worksheets and row level security, you need to understand how joins are applied. This is particularly important with chasm trap schemas. For chasm trap schemas, if row level security is only set on one of the tables, people could see data they should not see if the scope of their search does not include that table. (this protects them from having people see the wrong things if they have chasm trap).</p>
 
 <p>For chasm trap <em>worksheets</em>, progressive and non-progressive joins do not apply. There is an entirely different methodology for how worksheet joins on a chasm trap schema work with row level security. So you can safely ignore that setting.</p>
 
@@ -2733,7 +2733,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 1, 2017 <br />
+        Generated: Nov 3, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

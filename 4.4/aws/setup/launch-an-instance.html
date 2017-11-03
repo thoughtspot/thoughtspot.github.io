@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-01T09:50:51-07:00" />
+<meta property="article:published_time" content="2017-11-03T15:49:33-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"After you’ve determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html","publisher":null,"image":null,"headline":"[“Launch a ThoughtSpot instance”]","dateModified":"2017-11-01T09:50:51-07:00","datePublished":"2017-11-01T09:50:51-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"After you’ve determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html","publisher":null,"image":null,"headline":"[“Launch a ThoughtSpot instance”]","dateModified":"2017-11-03T15:49:33-07:00","datePublished":"2017-11-03T15:49:33-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/aws/setup/launch-an-instance.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2690,7 +2690,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Check with your ThoughtSpot contact to learn about the latest version of the ThoughtSpot AMI. Once you’ve provided your AWS account ID and region where the VMs will be hosted, ThoughtSpot will share the current ThoughtSpot base AMI with you.</p>
 
-<p>The ThoughtSpot AMI has specific applications on an Ubuntu 12.04 base image. The EBS volumes required for ThoughtSpot install in AWS comes as part of the AMI. When you launch an EC2 instance from this image, the EBS volumes automatically get sized and provisioned. The storage attached to the base AMI is 200 GB (xvda), 2X400 GB (xvdb), and SSD gp2. It contains the max disks so that it can take care of the full load of the VM.</p>
+<p>The ThoughtSpot AMI has specific applications on an CentOS base image. The EBS volumes required for ThoughtSpot install in AWS comes as part of the AMI. When you launch an EC2 instance from this image, the EBS volumes automatically get sized and provisioned. The storage attached to the base AMI is 200 GB (xvda), 2X400 GB (xvdb), and SSD gp2. It contains the max disks so that it can take care of the full load of the VM.</p>
 
 <h2 id="launch-an-instance">Launch an instance</h2>
 
@@ -2800,7 +2800,7 @@ The instances need to be on the same VPC and subnetwork.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 1, 2017 <br />
+        Generated: Nov 3, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
