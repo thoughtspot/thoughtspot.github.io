@@ -77,7 +77,7 @@ When you are ready, do the following to install the driver:
     If you need to obtain the IP addresses of the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
 
 6. Open the file `/linux/Setup/odbcinst.ini` in the editor of your choice.
-7. Update the the line that starts with `Driver` to have the path to the file `libSimbaClient.so`
+7. Update the line that starts with `Driver` to have the path to the file `libSimbaClient.so`
 
     Use the path where you copied the library files. For example, for the 64-bit ODBC driver:
 
