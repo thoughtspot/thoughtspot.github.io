@@ -50,29 +50,39 @@ Following table describes the conversion matrix between SQL datatypes and
 ThoughtSpot datatypes.
 
 
-| Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE |TIME|DATETIME|
-|-------------------------------|----|---- |---- |---- |---- | ---- |---- | ----|----|
-|`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_SMALLINT`                 | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_INTEGER`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_BIGINT`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
+| Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
+|-------------------------------|-----|------|------|-------|------|------|-----|------|--------|
+|`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_SMALLINT`                 | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_INTEGER`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_BIGINT`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
 |`SQL_CHAR`                     | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
 |`SQL_VARCHAR`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
 |`SQL_LONGVARCHAR`              | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | Y   |  Y   |   Y    |
-|`SQL_BINARY`                   |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_VARBINARY`                |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_LONGVARBINARY`            |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_DOUBLE`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_REAL`                     | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_FLOAT`                    | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_NUMERIC`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   |     |      |        |
-|`SQL_GUID`                     |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_INTERVAL_MINUTE_TO_SECOND`|     |      |      |       |      |  Y   |     |      |        |
-|`SQL_INTERVAL_HOUR_TO_SECOND`  |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_INTERVAL_HOUR_TO_MINUTE`  |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_INTERVAL_DAY_TO_SECOND`   |     |      |      |       |      |  Y   |     |      |        |
-|`SQL_INTERVAL_DAY_TO_MINUTE`   |     |      |      |       |      |  Y   |     |      |        |
+|`SQL_BINARY`                   | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_VARBINARY`                | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_LONGVARBINARY`            | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_DOUBLE`                   | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_REAL`                     | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_FLOAT`                    | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_NUMERIC`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
+|`SQL_GUID`                     | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_MINUTE_TO_SECOND`| --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_HOUR_TO_SECOND`  | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_HOUR_TO_MINUTE`  | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_DAY_TO_SECOND`   | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_DAY_TO_MINUTE`   | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_DAY_TO_HOUR`     | --  |  --  | -- | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_YEAR`            | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_MONTH`           | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_DAY`             | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_HOUR`            | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_MINUTE`          | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_INTERVAL_SECOND`          | --  |  Y   |  Y   | -- |  --  | Y   | --  |  --  | -- |
+|`SQL_TYPE_TIME`                | --  |  --  | -- | -- |  --  | Y   | --  |  Y   |   Y    |
+|`SQL_TYPE_DATE`                | --  |  --  | -- | -- |  --  | Y   | Y   |  --  |  Y    |
+|`SQL_TYPE_TIMESTAMP`           | --  |  --  | -- | -- |  --  | Y   | Y   |  Y   |   Y    |
 
 
 If a conversion is not possible, an error is returned to the client to indicate
