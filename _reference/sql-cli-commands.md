@@ -507,16 +507,17 @@ TQL&gt; ALTER TABLE "wholesale_buys"
             <div>
                Changes the partitioning on a table by doing one of:
                <ul class="ul" id="reference_cbc_fx4_j4__ul_egx_4jg_wv">
-                  <li>re-sharding a sharded table.</li>
-                  <li>changing a replicated table to a sharded table.</li>
-                  <li>changing a sharded table to a replicated table.</li>
+                  <li>re-sharding a sharded table</li>
+                  <li>changing a replicated table to a sharded table</li>
+                  <li>changing a sharded table to a replicated (unsharded) table</li>
                </ul>
+               <p>By default, ThoughtSpot does not shard dimension tables.</p>
             </div>
             <p>To change the partitioning on a table, or to change a dimension table to a
                sharded table, use ALTER TABLE...SET FACT PARTITION BY HASH...;
             </p>
             <p>To make a sharded table into a dimension table (replicated on every node),  use
-               ALTER TABLE...SET DIMENSION;
+               <code>ALTER TABLE...SET DIMENSION;</code> command.  
             </p>
          </td>
          <td>
