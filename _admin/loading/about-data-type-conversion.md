@@ -11,13 +11,20 @@ There are some details you should be aware of when doing a data type conversion.
 
 ## Data type conversion behavior
 
-When converting from one data type to another, any values that can not be converted will be set to NULL. If errors occur during data type conversion, the operation is aborted. However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:
+When converting from one data type to another, any values that can not be
+converted will be set to NULL. If errors occur during data type conversion, the
+operation is aborted. However, you may choose to force the conversion despite
+the errors. You can start TQL in allow_unsafe mode to continue with the data
+conversion, at your own risk, of course! To start TQL in unsafe mode, issue this
+command:
 
 ```
 tql --allow_unsafe
 ```
 
-Multiple columns of a single table can be converted using a single TQL command. The behavior is transactional. So for example, you would issue a command like this example:
+Multiple columns of a single table can be converted using a single TQL command.
+The behavior is transactional. So for example, you would issue a command like
+this example:
 
 ```
 ALTER TABLE products
@@ -25,9 +32,20 @@ ALTER TABLE products
    MODIFY COLUMN supplier VARCHAR(4);
 ```
 
-Also note that changing data type has implications on the primary key and sharding enforcement. For example, changing the data type of a column that is part of the sharding key would lead to a redistribution of data. Then imagine that the sharding key column contained the text values "00100", "0100", and "100", which all map to same integer value. If this type of a column is changed from a VARCHAR to an INT, then it would be subject to the upsert behavior on primary keys. So in this example, only one of the three rows would be preserved.
+Also note that changing data type has implications on the primary key and
+sharding enforcement. For example, changing the data type of a column that is
+part of the sharding key would lead to a redistribution of data. Then imagine
+that the sharding key column contained the text values "00100", "0100", and
+"100", which all map to same integer value. If this type of a column is changed
+from a VARCHAR to an INT, then it would be subject to the upsert behavior on
+primary keys. So, in this example, only one of the three rows would be preserved.
 
-Be aware that data type conversion will preserve the data in the underlying database table, but there is no guarantee that any objects built on top of it (worksheets or pinboards) will be preserved. This is because you might make a data type change that makes a chart built on top of the table invalid (for example a growth chart would be invalidated if the date column it depends on were changed to a varchar column).
+Be aware that data type conversion will preserve the data in the underlying
+database table, but there is no guarantee that any objects built on top of it
+(worksheets or pinboards) will be preserved. This is because you might make a
+data type change that makes a chart built on top of the table invalid (for
+example a growth chart would be invalidated if the date column it depends on
+were changed to a varchar column).
 
 ## Supported data type conversions
 
@@ -78,7 +96,8 @@ ALTER TABLE fruit_sales
 
 ## Boolean to string conversions
 
-Boolean to string conversions have format strings, too. You'll use parsinghint as you do for date and time conversions. You can choose among these approaches:
+Boolean to string conversions have format strings, too. You'll use `parsinghint`
+as you do for date and time conversions. You can choose among these approaches:
 
 -   Option 1: Specify string values for both true and false. Any non-matching values get converted to null. In this example, "100" gets converted to true, and "0" gets converted to false. "-1" gets converted to null.
 

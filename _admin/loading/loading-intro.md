@@ -8,11 +8,17 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The fastest and easiest way to load a new table is by importing it using the Web browser. This is best for one time data loads of small tables which do not have complex relationships to other tables. This method is limited to tables that are under 50 MB (megabytes) in size.
+The fastest and easiest way to load a new table is by importing it using the Web
+browser. This is best for one time data loads of small tables which do not have
+complex relationships to other tables. This method is limited to tables that are
+under 50 MB (megabytes) in size.
 
-Using ThoughtSpot Loader, you can script recurring loads and work with multi-table schemas.
+Using ThoughtSpot Loader, you can script recurring loads and work with
+multi-table schemas.
 
-If your data already exists in another database with the schema you want to use in ThoughtSpot, you can pull the schema and data in using the ODBC or JDBC driver.
+If your data already exists in another database with the schema you want to use
+in ThoughtSpot, you can pull the schema and data in using the ODBC or JDBC
+driver.
 
 These are the methods you can use to load data, along with the benefits of each method:
 
@@ -24,7 +30,10 @@ These are the methods you can use to load data, along with the benefits of each 
 |Use the ODBC/JDBC driver to connect to ThoughtSpot|Use the ODBC or JDBC client with your ETL tool. For information, see the ThoughtSpot Data Integration Guide.|Make use of an established ETL process and tool(s).Connect to ThoughtSpot using third party tools like SSIS. You don't need to define a schema to accept the data load.|
 |Use the Informatica Connector|Use the Informatica Connector if you already use Informatica to connect to your other data sources. For information, see the ThoughtSpot Data Integration Guide.|Works with your established data migration processes in Informatica.|
 
-If you're uploading data through the Web interface, you can use a native Excel file. If you want to use a CSV (comma separated values) or delimited file, or you are loading using ThoughtSpot Loader, you'll need to [create CSV files with the data to be loaded](load-from-web-browser.html#create-a-csv-file) first.
+If you're uploading data through the Web interface, you can use a native Excel
+file. If you want to use a CSV (comma separated values) or delimited file, or
+you are loading using ThoughtSpot Loader, you'll need to
+[create CSV files with the data to be loaded](load-from-web-browser.html#create-a-csv-file) first.
 
 {% include note.html content="End users will almost always work with worksheets and data they upload." %}
 

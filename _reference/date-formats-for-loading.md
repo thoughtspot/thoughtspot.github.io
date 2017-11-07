@@ -22,7 +22,9 @@ modeling controls how data is displayed in search and their resulting answers.
 
 ## Data loading formats via tsload
 
-When loading via the `tsload` command you must specify `date` and `timestamp` formats using the format specifications defined in the [`strptime` library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
+When loading via the `tsload` command you must specify `date` and `timestamp`
+formats using the format specifications defined in the [`strptime` library function](http://man7.org/linux/man-pages/man3/strptime.3.html). Data is
+imported based on the timezone of the node from which `tsload` is run.
 
 For `date` data types, the default format is `%Y%m%d` which translates to
 `yearmonthday`  For example, `Dec 30th, 2001` is represented as `20011230`.  For
