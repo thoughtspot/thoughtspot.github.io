@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-03T17:29:34-07:00" />
+<meta property="article:published_time" content="2017-11-09T10:30:36-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Although there is no native incremental load capability, incremental loads can be handled by adding a filter on the source data. This only works if the source has the capability of providing information on the last successful load. For example, if the source has a timestamp field that indicates when a particular source was modified, then the following filters could be used:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html","publisher":null,"image":null,"headline":"[“About incremental data loads”]","dateModified":"2017-11-03T17:29:34-07:00","datePublished":"2017-11-03T17:29:34-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Although there is no native incremental load capability, incremental loads can be handled by adding a filter on the source data. This only works if the source has the capability of providing information on the last successful load. For example, if the source has a timestamp field that indicates when a particular source was modified, then the following filters could be used:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html","publisher":null,"image":null,"headline":"[“About incremental data loads”]","dateModified":"2017-11-09T10:30:36-08:00","datePublished":"2017-11-09T10:30:36-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-connect/setup/about-incremental.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -227,7 +227,7 @@
                 
                   
                       
-                          <li><a href="/4.4/admin/architecture/performance.html">Performance considersations</a></li>
+                          <li><a href="/4.4/admin/architecture/performance.html">Performance considerations</a></li>
                       
                    
                 
@@ -2676,20 +2676,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Although there is no native incremental load capability, incremental loads can be handled by adding a filter on the source data. This only works if the source has the capability of providing information on the last successful load. For example, if the source has a timestamp field that indicates when a particular source was modified, then the following filters could be used:</p>
+  <p>Although there is no native incremental load capability, incremental loads can
+be handled by adding a filter on the source data. This only works if the source
+has the capability of providing information on the last successful load. For
+example, if the source has a timestamp field that indicates when a particular
+source was modified, then the following filters could be used:</p>
 
 <ul>
   <li><code class="highlighter-rouge">modifiedDate &gt; $LastRunDate</code></li>
   <li><code class="highlighter-rouge">modifiedTime &gt; $LastRunTime</code></li>
 </ul>
 
-<p>The <code class="highlighter-rouge">$LastRunDate</code> and <code class="highlighter-rouge">$LastRunTime</code> filters are correctly updated at runtime to reflect the date/time of the last successful job run.</p>
+<p>The <code class="highlighter-rouge">$LastRunDate</code> and <code class="highlighter-rouge">$LastRunTime</code> filters are correctly updated at runtime
+to reflect the date/time of the last successful job run.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Both <code class="highlighter-rouge">$LastRunDate</code> and $LastRunTime are in GMT, so the source column values must also be in GMT.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Both <code class="highlighter-rouge">$LastRunDate</code> and <code class="highlighter-rouge">$LastRunTime</code> are in GMT, so the source column values must also be in GMT.</div>
 
-<p>You can use filters on any other column of any datatype, if it provides a way to identify the modified rows. Even if the source does not have this capability, you may still be able to do an incremental load. As long as a primary key exists on the target ThoughtSpot table, the data will be loaded using an upsert. This means that for a given row being loaded, if the primary key already exists in the target table, that row will be updated with the data in the new row. If a row with that primary key does not exist, the new row will be inserted. This is how ThoughtSpot handles data loads into a table that already contains rows, and it is the equivalent to an incremental load. If you are relying on the upsert method, you’ll want to run a COMPACT TABLE command in ThoughtSpot SQL Command Line (TQL) to reduce the size of the table at intervals (usually weekly).</p>
+<p>You can use filters on any other column of any datatype, if it provides a way to
+identify the modified rows. Even if the source does not have this capability,
+you may still be able to do an incremental load. As long as a primary key exists
+on the target ThoughtSpot table, the data will be loaded using an <code class="highlighter-rouge">upsert</code>. This
+means that for a given row being loaded, if the primary key already exists in
+the target table, that row is updated with the data in the new row. If a
+row with that primary key does not exist, the new row will be inserted. This is how ThoughtSpot handles data loads into a table that already contains
+rows, and it is the equivalent to an incremental load.</p>
 
-<p>Another technique that can effectively free up space would be to run a post-job script that deletes data older than a particular date. This keeps the data fresh and ensures that old data, which may not be valuable, is not taking up memory.</p>
+<p>If you are relying on the <code class="highlighter-rouge">upsert</code> method, you’ll want to run a <code class="highlighter-rouge">COMPACT TABLE</code>
+command in ThoughtSpot SQL Command Line (TQL) to reduce the size of the table at
+intervals (usually weekly).</p>
+
+<p>Another technique that can effectively free up space would be to run a post-job
+script that deletes data older than a particular date. This keeps the data fresh
+and ensures that old data, which may not be valuable, is not taking up memory.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -2719,7 +2737,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 3, 2017 <br />
+        Generated: Nov 9, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

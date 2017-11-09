@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-03T17:29:34-07:00" />
+<meta property="article:published_time" content="2017-11-09T10:30:36-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"There are some details you should be aware of when doing a data type conversion.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html","publisher":null,"image":null,"headline":"[“Convert column data type”]","dateModified":"2017-11-03T17:29:34-07:00","datePublished":"2017-11-03T17:29:34-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"There are some details you should be aware of when doing a data type conversion.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html","publisher":null,"image":null,"headline":"[“Convert column data type”]","dateModified":"2017-11-09T10:30:36-08:00","datePublished":"2017-11-09T10:30:36-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/about-data-type-conversion.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -227,7 +227,7 @@
                 
                   
                       
-                          <li><a href="/4.4/admin/architecture/performance.html">Performance considersations</a></li>
+                          <li><a href="/4.4/admin/architecture/performance.html">Performance considerations</a></li>
                       
                    
                 
@@ -2680,21 +2680,39 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="data-type-conversion-behavior">Data type conversion behavior</h2>
 
-<p>When converting from one data type to another, any values that can not be converted will be set to NULL. If errors occur during data type conversion, the operation is aborted. However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:</p>
+<p>When converting from one data type to another, any values that can not be
+converted will be set to NULL. If errors occur during data type conversion, the
+operation is aborted. However, you may choose to force the conversion despite
+the errors. You can start TQL in allow_unsafe mode to continue with the data
+conversion, at your own risk, of course! To start TQL in unsafe mode, issue this
+command:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql --allow_unsafe
 </code></pre></div></div>
 
-<p>Multiple columns of a single table can be converted using a single TQL command. The behavior is transactional. So for example, you would issue a command like this example:</p>
+<p>Multiple columns of a single table can be converted using a single TQL command.
+The behavior is transactional. So for example, you would issue a command like
+this example:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE products
    MODIFY COLUMN product_id int,
    MODIFY COLUMN supplier VARCHAR(4);
 </code></pre></div></div>
 
-<p>Also note that changing data type has implications on the primary key and sharding enforcement. For example, changing the data type of a column that is part of the sharding key would lead to a redistribution of data. Then imagine that the sharding key column contained the text values “00100”, “0100”, and “100”, which all map to same integer value. If this type of a column is changed from a VARCHAR to an INT, then it would be subject to the upsert behavior on primary keys. So in this example, only one of the three rows would be preserved.</p>
+<p>Also note that changing data type has implications on the primary key and
+sharding enforcement. For example, changing the data type of a column that is
+part of the sharding key would lead to a redistribution of data. Then imagine
+that the sharding key column contained the text values “00100”, “0100”, and
+“100”, which all map to same integer value. If this type of a column is changed
+from a VARCHAR to an INT, then it would be subject to the upsert behavior on
+primary keys. So, in this example, only one of the three rows would be preserved.</p>
 
-<p>Be aware that data type conversion will preserve the data in the underlying database table, but there is no guarantee that any objects built on top of it (worksheets or pinboards) will be preserved. This is because you might make a data type change that makes a chart built on top of the table invalid (for example a growth chart would be invalidated if the date column it depends on were changed to a varchar column).</p>
+<p>Be aware that data type conversion will preserve the data in the underlying
+database table, but there is no guarantee that any objects built on top of it
+(worksheets or pinboards) will be preserved. This is because you might make a
+data type change that makes a chart built on top of the table invalid (for
+example a growth chart would be invalidated if the date column it depends on
+were changed to a varchar column).</p>
 
 <h2 id="supported-data-type-conversions">Supported data type conversions</h2>
 
@@ -2746,7 +2764,8 @@ INSERT INTO fruit_sales
 
 <h2 id="boolean-to-string-conversions">Boolean to string conversions</h2>
 
-<p>Boolean to string conversions have format strings, too. You’ll use parsinghint as you do for date and time conversions. You can choose among these approaches:</p>
+<p>Boolean to string conversions have format strings, too. You’ll use <code class="highlighter-rouge">parsinghint</code>
+as you do for date and time conversions. You can choose among these approaches:</p>
 
 <ul>
   <li>
@@ -2845,7 +2864,7 @@ INSERT INTO fruit_sales
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 3, 2017 <br />
+        Generated: Nov 9, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

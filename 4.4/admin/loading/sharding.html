@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Sharding is a type of database partitioning that separates very large databases into smaller, faster, more easily managed parts called data shards."> -->
-<meta name="keywords" content=",  sharding,partitioning,distribution">
+<!-- <meta name="description" content="Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."> -->
+<meta name="keywords" content=",  sharding,partitioning,distribution,dimension,split,table,shard,partition,performance">
 <title>Sharding | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
@@ -51,16 +51,16 @@
 <title>[“Sharding”]</title>
 <meta property="og:title" content="[“Sharding”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with." />
-<meta property="og:description" content="For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with." />
+<meta name="description" content="ThoughtSpot tables can be replicated or sharded. Replicated tables exist in their entirety, the complete data set, on each node. Sharded tables consist of a single data set divided into multiple tables or shards. The shards have identical schemas but different sets of data." />
+<meta property="og:description" content="ThoughtSpot tables can be replicated or sharded. Replicated tables exist in their entirety, the complete data set, on each node. Sharded tables consist of a single data set divided into multiple tables or shards. The shards have identical schemas but different sets of data." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/loading/sharding.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/loading/sharding.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-03T17:29:34-07:00" />
+<meta property="article:published_time" content="2017-11-09T10:30:36-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"For the best performance, you should split (or shard) very large tables across nodes. If you have a large dimension table, you might choose to co-shard it with the fact table it will be joined with.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/sharding.html","publisher":null,"image":null,"headline":"[“Sharding”]","dateModified":"2017-11-03T17:29:34-07:00","datePublished":"2017-11-03T17:29:34-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/sharding.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"ThoughtSpot tables can be replicated or sharded. Replicated tables exist in their entirety, the complete data set, on each node. Sharded tables consist of a single data set divided into multiple tables or shards. The shards have identical schemas but different sets of data.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/loading/sharding.html","publisher":null,"image":null,"headline":"[“Sharding”]","dateModified":"2017-11-09T10:30:36-08:00","datePublished":"2017-11-09T10:30:36-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/loading/sharding.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -227,7 +227,7 @@
                 
                   
                       
-                          <li><a href="/4.4/admin/architecture/performance.html">Performance considersations</a></li>
+                          <li><a href="/4.4/admin/architecture/performance.html">Performance considerations</a></li>
                       
                    
                 
@@ -2646,7 +2646,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Sharding is a type of database partitioning that separates very large databases into smaller, faster, more easily managed parts called data shards.</div>
+    <div class="summary">Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards.</div>
    
 
     
@@ -2676,21 +2676,42 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>For the best performance, you should split (or shard) very large tables across
-nodes. If you have a large dimension table, you might choose to co-shard it with
-the fact table it will be joined with.</p>
+  <p>ThoughtSpot tables can be replicated or sharded. Replicated tables exist in
+their entirety, the complete data set, on each node. Sharded tables consist of a
+single data set divided into multiple tables or shards. The shards have
+identical schemas but different sets of data.</p>
 
-<h2 id="sharding-a-fact-table">Sharding a fact table</h2>
+<p>By default, ThoughtSpot tables are replicated, you must explicitly shard tables.
+Sharding your tables impacts the total amount of memory used by the table as
+well as its performance.</p>
 
-<p>Use sharding to split large tables into parts for distribution across nodes.
-This is typically done with large fact tables, to provide optimal performance.</p>
+<p>For example, you might shard a large table of sales data. So, you could divide a
+single sales table into shards each of which contains only the data falling
+within a single year. These shards are then distributed across several nodes.
+Requests for sales data are dispersed both by the year and the location of the
+shard in the node cluster. No single table or node is overloaded, and so the
+performance of a query and the system load are both improved.</p>
 
-<p>When sharding, you’ll choose a column to be the distribution key. This column
-should contain a value that has a good distribution (roughly similar number of
-rows with each value in that column). This is typically the primary key, but it
-can be any single column or a set of columns.</p>
+<p>To optimize ThoughtSpot performance, you should <em>shard</em> very large fact tables
+whenever possible. If you have a large dimension table, you might choose to
+shard it along with the fact table it is joined with. Sharding both the fact and
+dimension table is known as <em>co-sharding</em>.</p>
 
-<p>The recommended number or shards depends upon the number of nodes in your cluster:</p>
+<h2 id="how-to-shard">How to shard</h2>
+
+<p>Sharding is a type partitioning and is sometimes called <em>Horizontal
+partitioning</em>. The term sharding is particular to situations where data is
+distributed not only among tables but across nodes in a system. To create a
+sharded table add the add <code class="highlighter-rouge">PARTITION BY HASH ( )</code> clause to your <code class="highlighter-rouge">CREATE TABLE</code>
+statement.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE ...
+...PARTITION BY HASH (96) KEY ("customer_id");
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">HASH</code> parameter determines the number of shards and the <code class="highlighter-rouge">KEY</code> parameter the
+sharding key. The recommended number of shards depends upon the number of nodes
+in your cluster:</p>
 
 <table>
   <thead>
@@ -2700,6 +2721,14 @@ can be any single column or a set of columns.</p>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>1</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>64</td>
+    </tr>
     <tr>
       <td>3</td>
       <td>96</td>
@@ -2731,76 +2760,129 @@ can be any single column or a set of columns.</p>
   </tbody>
 </table>
 
-<p>To specify the number of shards, add <code class="highlighter-rouge">PARTITION BY HASH ( )</code> to your <code class="highlighter-rouge">CREATE TABLE</code>
-statement, specifying the number of shards and the sharding key. For example:</p>
+<p>If you omit the <code class="highlighter-rouge">PARTION BY HASH</code> statement or if the <code class="highlighter-rouge">HASH</code> parameter is 1
+(one), the table is unsharded. This also means the table physically exists in
+its entirety on each node.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE ...
-
-...PARTITION BY HASH (96) KEY ("customer_id");
-</code></pre></div></div>
-
-<p>If no sharding is specified or the number of shards specified is one, the table
-is assumed to be unsharded (i.e. the table physically exists on each node).</p>
-
-<p>If no sharding key is specified, but the number of shards is greater than one,
-the table is assumed to be sharded randomly. The system does not use primary
-keys as sharding keys by default.</p>
-
-<p>If you want to use the primary key for sharding, you must specify that the table
-is to be partitioned by hash on the primary key, as in this example:</p>
+<p>If you want to use the primary key for sharding, specify that the table
+is to be partitioned by <code class="highlighter-rouge">HASH</code> on the primary key, as in this example:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE "supplier" (
-
   "s_suppkey" BIGINT,
-
   "s_name" VARCHAR(255),
-
   "s_address" VARCHAR(255),
-
   "s_city" VARCHAR(255),
-
   "s_phone" VARCHAR(255),
-
   CONSTRAINT PRIMARY KEY ("s_suppkey")
-
   )  PARTITION BY HASH (96) KEY ("s_suppkey");
 </code></pre></div></div>
 
-<h2 id="sharded-distributed-dimension-tables">Sharded (distributed) dimension tables</h2>
+<p>The system does not use primary keys as sharding keys by default. If you specify
+the <code class="highlighter-rouge">PARTION BY HASH</code> statement with a <code class="highlighter-rouge">HASH</code> greater than 1 (one) <em>but omit the
+<code class="highlighter-rouge">KEY</code> parameter</em> ThoughtSpot shards the table randomly. This is not recommended;
+avoid this by always ensuring you specify the <code class="highlighter-rouge">KEY</code> parameter with a HASH
+greater than 1 (one).</p>
 
-<p>In a typical schema, you’d have a sharded fact table with foreign keys to
-replicated dimension tables (which exist on every node). This works best where
-dimension tables are small (under 50MB). So if your dimension tables are small,
-you should shard the fact tables and not shard the dimension tables they will be
-joined with.</p>
+<h2 id="how-to-choose-a-shard-key">How to choose a shard key</h2>
 
-<p>If you have a large dimension table, you can distribute it the same way as the
-fact table it joins to. You might choose to use distributed dimension tables if:</p>
+<p>When you shard a large table, you select a <em>shard key</em> from the table. This key
+exists in every shard. You can use any data type that is valid for use as the
+primary key as the shard key. Choosing a shard key plays an important role in
+the number of shards and the size of any single shard.</p>
+
+<p>A shard key should contain a value that has a good distribution (roughly the
+number of rows with each value in that column). This value is typically part of
+the primary key, but it can include other columns. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE "sales_fact"
+  ("saleid" int,
+  "locationid" int,
+  "vendorid" int,
+  "quantity" int,
+  "sale_amount" double,
+  "fruitid" int,
+  CONSTRAINT
+PRIMARY KEY("saleid,vendorid"))
+PARTITION BY HASH(96)
+KEY ("saleid");
+</code></pre></div></div>
+
+<p>Notice the shard key contains the <code class="highlighter-rouge">saleid</code> value that is also part of the
+primary key. When creating a shard key use these guidelines.</p>
 
 <ul>
-  <li>The dimension table is large (over 50MB).</li>
-  <li>The tables are always joined using the same columns.</li>
+  <li>
+    <p>Include one or more values of the table’s primary key in the shard key.</p>
+
+    <p>This prevents scenarios where the data with the same primary key ends up in
+different shards and nodes because the shard key changed.</p>
+  </li>
+  <li>
+    <p>If you expect to join two tables that are both sharded, make sure both tables
+use the same shard key.</p>
+
+    <p>This guideline ensures better join performance. So, for example, if you have two tables
+and the primary keys are:</p>
+
+    <p><code class="highlighter-rouge">PRIMARY KEY("saleid,vendorid")</code> on A
+<code class="highlighter-rouge">PRIMARY KEY("saleid,custerid")</code> on B</p>
+
+    <p>You should use <code class="highlighter-rouge">saleid</code> for your shared key when you shard both table A and B.</p>
+  </li>
+  <li>
+    <p>Choose a shard key so that the data is distributed well across the keys.</p>
+
+    <p>For example, suppose the table you want to shard has a primary key made up of
+<code class="highlighter-rouge">saleid</code>,<code class="highlighter-rouge">custid</code>,and <code class="highlighter-rouge">locationid</code>. If you have 10K sales but 400 locations,
+and 2000 customers, you would not want to use the <code class="highlighter-rouge">locationid</code> in your shard
+key if 5k sales were concentrated in just 2 locations. The result would be
+data in fewer shards and degrade your performance. Instead, your shard
+key may be <code class="highlighter-rouge">custid</code>,and <code class="highlighter-rouge">locationid</code>.</p>
+  </li>
+  <li>
+    <p>Choose a shard key that results in a wide variety of keys.</p>
+
+    <p>For example, suppose the table you want to shard has a primary key made up of
+<code class="highlighter-rouge">saleid</code>,<code class="highlighter-rouge">productid</code>,and <code class="highlighter-rouge">locationid</code>. Suppose the table has  10K sales, 40
+locations, and 200 products. If the sales are evenly distributed across
+locations you would not want to use the <code class="highlighter-rouge">locationid</code> in your shard key.
+Instead, <code class="highlighter-rouge">saleid</code> and <code class="highlighter-rouge">productid</code> would be the better choice as it results in
+a wider variety of keys.</p>
+  </li>
 </ul>
 
-<p>If all of these requirements for the distributed dimension table are met, the
-tables are automatically co-sharded for you:</p>
+<p>as mentioned in the previous section, it is possible to simply use the primary
+key as a shard key.</p>
+
+<h2 id="sharded-dimension-tables">Sharded dimension tables</h2>
+
+<p>In a typical schema,
+you’d have a sharded fact table with foreign keys to small dimension tables.
+These small dimension tables are replicated in their entirety and distributed on
+every node. This works best where dimension tables under 50MB in size.</p>
+
+<p>If you have a large dimension table, replicating it and distributing it can
+impact the performance of your ThoughtSpot System. In this case, you want to
+shard the dimension tables and distribute it the same way as the fact table it
+joins to.</p>
+
+<p>When sharding both a fact and its dimension table (known as co-sharding) keep
+in mind the guidance for creating a shard key. Only shard dimension tables if
+the dimension table is large (over 50MB) and the join between the fact and
+dimension tables use the same columns. Specifically, the tables must:</p>
 
 <ul>
-  <li>The tables are related by a primary key and foreign key.</li>
-  <li>The tables are partitioned on the same primary key/foreign key.</li>
-  <li>The tables have the same number of regions (or shards).</li>
+  <li>be related by a primary key and foreign key</li>
+  <li>be sharded on the same primary key/foreign key</li>
+  <li>have the same number of regions (or shards)</li>
 </ul>
 
-<p>If the dimension table will be joined to multiple fact tables, all of the fact
-tables must be sharded in the same way as the dimension table. Self-joins are
-not supported.</p>
-
-<p>When a fact and its dimension table are co-sharded the two tables will always be
-joined on the sharding key. Data skew can develop if a very large proportion of
-the rows have the same sharding key.</p>
+<p>If these requirements are met, ThoughtSpot automatically co-shards the tables
+for you. Co-sharded tables are always joined on the sharding key. Data skew can
+develop if a very large proportion of the rows have the same sharding key.</p>
 
 <p>This example shows the <code class="highlighter-rouge">CREATE TABLE</code> statements that meet the criteria for
-co-sharding of a fact table and a distributed dimension table:</p>
+sharding both a fact table and its dimension table:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE products_dim (
   "id" int,
@@ -2821,10 +2903,14 @@ PARTITION BY HASH (96) KEY ("product_id")
 ;
 </code></pre></div></div>
 
-<h2 id="sharded-distributed-fact-tables">Sharded (distributed) fact tables</h2>
+<p>If a dimension table is joined to multiple fact tables, all of the fact tables
+must be sharded in the same way as the dimension table. Self-joins are not
+supported.</p>
 
-<p>You can also join two sharded fact tables with different shard keys, otherwise
-know as <em>non co-sharded</em> tables. It may take a while to join two tables sharded
+<h2 id="joining-two-sharded-fact-tables">Joining two sharded fact tables</h2>
+
+<p>You can also join two sharded fact tables with different shard keys, this is
+known as <em>non co-sharded</em> tables. It may take a while to join two tables sharded
 on different keys since a lot of data redistribution is required. Therefore,
 ThoughtSpot recommends that you use a common shard key for two fact tables.</p>
 
@@ -2858,7 +2944,7 @@ ThoughtSpot recommends that you use a common shard key for two fact tables.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 3, 2017 <br />
+        Generated: Nov 9, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
