@@ -25,7 +25,7 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>JDBC Driver</strong></td>
-            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_jdbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://f1.help.thoughtspot.com/@api/deki/files/4235/ThoughtSpot_jdbc_4.2.zip?revision=2">JDBC driver</a></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_jdbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://thoughtspot.egnyte.com/dl/zOSHXs8w1E">JDBC driver</a></td>
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>Informatica<br>
