@@ -7,98 +7,34 @@ summary: "Sharding partitions very large tables into smaller, faster, more easil
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has two different ways to store tables. Tables can be replicated
-meaning each table is stored in its entirety on each node. Alternatively, a
-table can be sharded. Sharding your tables impacts the total amount of memory
-used by the table as well as its performance.  ThoughtSpot recommend _sharding_
-whenever possible.
+ThoughtSpot tables can be replicated or sharded. Replicated tables exist in
+their entirety, the complete data set, on each node. Sharded tables consist of a
+single data set divided into multiple tables or shards. The shards have
+identical schemas but different sets of data.
 
-Sharding divides a single table into multiple tables that have the same schema
-but different sets of data. Sharding is a type partitioning and is sometimes
-called _Horizontal partitioning_. The term sharding is particular to situations
-where data is distributed not only across tables but across nodes in a system.
+By default, ThoughtSpot tables are replicated, you must explicitly shard tables.
+Sharding your tables impacts the total amount of memory used by the table as
+well as its performance.
 
 For example, you might shard a large table of sales data. So, you could divide a
 single sales table into shards each of which contains only the data falling
 within a single year. These shards are then distributed across several nodes.
 Requests for sales data are dispersed both by the year and the location of the
-shard in the node cluster. No single table or node is overloaded and so
-performance of a query and of the system load are both improved.
+shard in the node cluster. No single table or node is overloaded, and so the
+performance of a query and the system load are both improved.
 
-To optimize ThoughtSpot performance, you should _shard_ very large fact tables.
-If you have a large dimension table, you might choose to shard it along with the
-fact table it is joined with. Sharding both the fact and dimension table is
-known as _co-sharding_.
-
-## How to choose a shard key
-
-When you shard a large table, you must select a _shard key_ from the table. This
-key exists in every shard. You can use any data type that is valid for use as
-index columns as shard key. Choosing a shard key plays an important role in the
-number of shards and the size of any single shard.
-
-A shard key should contain a value that has a good distribution (roughly
-the number of rows with each value in that column). This value is typically the
-primary key, but it can be any single column or a set of columns. For example:
-
-```
-CREATE TABLE "sales_fact"
-  ("saleid" int,
-  "locationid" int,
-  "vendorid" int,
-  "quantity" int,
-  "sale_amount" double,
-  "fruitid" int,
-  CONSTRAINT
-PRIMARY KEY("saleid,vendorid"))
-PARTITION BY HASH(96)
-KEY ("saleid");
-```
-
-Notice the shard key contains the `saleid` value ths is also contained
-in the primary key. When creating a shard key use these guidelines.
-
-* Include one or more values of the original table's primary key in the shard key.
-
-  This prevents scenarios where the data with the same primary key ends up in
-  different shards and/or nodes because the shard key changed.
-
-* If you expect to join two tables that are both sharded, make sure both tables
-use the same shard key.
-
-  This guidelines ensures better join performance.  So, for example, if you have two tables
-  and the primary keys are:
-
-  `PRIMARY KEY("saleid,vendorid")` on A
-  `PRIMARY KEY("saleid,custerid")` on B
-
-   You should use `saleid` for your shared key when you shard both table A and B.
-
-* Choose a shard key so that the data is distributed well across the keys.  
-
-  For example, suppose the table you want to shard has a primary key made up of
-  `saleid`,`custid`,and `locationid`.  If you have 10K sales but 400 locations,
-  and 2000 customers, you would not want to use the `locationid` in your shard
-  key if 5k sales were concentrated in just 2 locations. The result would be
-  data in fewer shards and degrading of your performance. Instead, your shard
-  key may be `custid`,and `locationid`.
-
-* Choose a shard key that results in a wide variety of keys.  
-
-  For example, suppose the table you want to shard has a primary key made up of
-  `saleid`,`productid`,and `locationid`.  Suppose the table has  10K sales, 40
-  locations, and 200 products. If the sales are evenly distributed across
-  locations you would not want to use the `locationid` in your shard key.
-  Instead, `saleid` and `productid` would be the better choice as it results in
-  a wider variety of keys.
-
-Finally, it is possible to simply use the primary key as a shard key.
-
+To optimize ThoughtSpot performance, you should _shard_ very large fact tables
+whenever possible. If you have a large dimension table, you might choose to
+shard it along with the fact table it is joined with. Sharding both the fact and
+dimension table is known as _co-sharding_.
 
 ## How to shard
 
-To specify the number of shards, add `PARTITION BY HASH ( )` to your `CREATE
-TABLE` statement.
+Sharding is a type partitioning and is sometimes called _Horizontal
+partitioning_. The term sharding is particular to situations where data is
+distributed not only among tables but across nodes in a system. To create a
+sharded table add the add `PARTITION BY HASH ( )` clause to your `CREATE TABLE`
+statement.
 
 ```
 TQL> CREATE TABLE ...
@@ -111,6 +47,8 @@ in your cluster:
 
 |Number of Nodes|Number of Shards|
 |---------------|----------------|
+|1 | 32  |
+|2   | 64  |
 |3|96|
 |4-12|128|
 |13-24|256|
@@ -119,9 +57,9 @@ in your cluster:
 |49-60|640|
 |61-72|768|
 
-If you omit the `PARTION BY HASH` statement or if the `HASH` value is 1 (one), the
-table is unsharded. This also means the table physically exists in its entirety
-on each node.
+If you omit the `PARTION BY HASH` statement or if the `HASH` parameter is 1
+(one), the table is unsharded. This also means the table physically exists in
+its entirety on each node.
 
 If you want to use the primary key for sharding, specify that the table
 is to be partitioned by `HASH` on the primary key, as in this example:
@@ -143,10 +81,74 @@ the `PARTION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
 avoid this by always ensuring you specify the `KEY` parameter with a HASH
 greater than 1 (one).
 
+## How to choose a shard key
+
+When you shard a large table, you select a _shard key_ from the table. This key
+exists in every shard. You can use any data type that is valid for use as the
+primary key as the shard key. Choosing a shard key plays an important role in
+the number of shards and the size of any single shard.
+
+A shard key should contain a value that has a good distribution (roughly the
+number of rows with each value in that column). This value is typically part of
+the primary key, but it can include other columns. For example:
+
+```
+CREATE TABLE "sales_fact"
+  ("saleid" int,
+  "locationid" int,
+  "vendorid" int,
+  "quantity" int,
+  "sale_amount" double,
+  "fruitid" int,
+  CONSTRAINT
+PRIMARY KEY("saleid,vendorid"))
+PARTITION BY HASH(96)
+KEY ("saleid");
+```
+
+Notice the shard key contains the `saleid` value that is also part of the
+primary key. When creating a shard key use these guidelines.
+
+* Include one or more values of the table's primary key in the shard key.
+
+  This prevents scenarios where the data with the same primary key ends up in
+  different shards and nodes because the shard key changed.
+
+* If you expect to join two tables that are both sharded, make sure both tables
+use the same shard key.
+
+  This guideline ensures better join performance. So, for example, if you have two tables
+  and the primary keys are:
+
+  `PRIMARY KEY("saleid,vendorid")` on A
+  `PRIMARY KEY("saleid,custerid")` on B
+
+   You should use `saleid` for your shared key when you shard both table A and B.
+
+* Choose a shard key so that the data is distributed well across the keys.
+
+  For example, suppose the table you want to shard has a primary key made up of
+  `saleid`,`custid`,and `locationid`. If you have 10K sales but 400 locations,
+  and 2000 customers, you would not want to use the `locationid` in your shard
+  key if 5k sales were concentrated in just 2 locations. The result would be
+  data in fewer shards and degrade your performance. Instead, your shard
+  key may be `custid`,and `locationid`.
+
+* Choose a shard key that results in a wide variety of keys.
+
+  For example, suppose the table you want to shard has a primary key made up of
+  `saleid`,`productid`,and `locationid`. Suppose the table has  10K sales, 40
+  locations, and 200 products. If the sales are evenly distributed across
+  locations you would not want to use the `locationid` in your shard key.
+  Instead, `saleid` and `productid` would be the better choice as it results in
+  a wider variety of keys.
+
+as mentioned in the previous section, it is possible to simply use the primary
+key as a shard key.
 
 ## Sharded dimension tables
 
-By default, ThoughtSpot does not shard dimension tables. In a typical schema,
+ In a typical schema,
 you'd have a sharded fact table with foreign keys to small dimension tables.
 These small dimension tables are replicated in their entirety and distributed on
 every node. This works best where dimension tables under 50MB in size.
@@ -156,7 +158,7 @@ impact the performance of your ThoughtSpot System. In this case, you want to
 shard the dimension tables and distribute it the same way as the fact table it
 joins to.
 
-When sharding  both a fact and its dimension table (known as co-sharding) keep
+When sharding both a fact and its dimension table (known as co-sharding) keep
 in mind the guidance for creating a shard key. Only shard dimension tables if
 the dimension table is large (over 50MB) and the join between the fact and
 dimension tables use the same columns. Specifically, the tables must:
@@ -199,7 +201,7 @@ supported.
 ## Joining two sharded fact tables
 
 You can also join two sharded fact tables with different shard keys, this is
-know as _non co-sharded_ tables. It may take a while to join two tables sharded
+known as _non co-sharded_ tables. It may take a while to join two tables sharded
 on different keys since a lot of data redistribution is required. Therefore,
 ThoughtSpot recommends that you use a common shard key for two fact tables.
 

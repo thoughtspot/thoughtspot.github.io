@@ -43,7 +43,7 @@ entries:
       - title: Data and object security
         url: /admin/architecture/security.html
         output: web,admBk
-      - title: Performance considersations
+      - title: Performance considerations
         url: /admin/architecture/performance.html
         output: web,admBk
     - levelTwoTitle: Installation and setup
