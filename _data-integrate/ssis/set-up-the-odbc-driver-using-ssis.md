@@ -73,7 +73,7 @@ The ODBC Data Source Administrator has to be configured to connect to ThoughtSpo
 
 4.  In the Client Configuration Dialog, enter the **Server IP** and **Server Port**.
 
-      Any node IP that has Simba server running on it should work. You can specify multiple secondary servers and ThoughtSpot will resolve to the server Simba is running on. To provide  **Secondary Servers** dialog enter one server IP per line. The line return serves as a separator, commas separation is not supported.
+      Any node IP that has Simba server running on it should work. You can specify multiple secondary servers and ThoughtSpot will resolve to the server Simba is running on. To provide  **Secondary Servers** dialog enter one server IP per line. The line return serves as a separator, comma separation is not supported.
 
 5. Click **OK** twice to close the Client Configuration Dialog and the ODBC Data Source Administrator.
 
