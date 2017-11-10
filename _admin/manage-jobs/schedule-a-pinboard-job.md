@@ -7,7 +7,10 @@ summary: "You can schedule a pinboard job for any pinboard by using the Add a sc
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add multiple schedules with different configurations for a single pinboard. However, each job is limited to one pinboard schedule. In order to add a schedule, you must have administrator or can schedule pinboard privilege, and at least edit-only and view-only access to the pinboard.
+You can add multiple schedules with different configurations for a single
+pinboard. However, each job is limited to one pinboard schedule. To add
+a schedule, you must have administrator or can schedule pinboard privilege, and
+at least edit-only and view-only access to the pinboard.
 
 To schedule a pinboard:
 
@@ -21,26 +24,45 @@ To schedule a pinboard:
 
      ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
 
-5. Click **New schedule** to add a new pinboard schedule.
+5. Click **+ Schedule** to add a new schedule.
 
      ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
 
-6. On the Add a schedule prompt page, set the times you would like to schedule the pinboard for.
+     The system displays the **Add a schedule for _PINBORD_** page. On this page you configure both the schedule
 
-     ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
+6. Set the values for your schedule.
 
-    Scheduled pinboards can be set to repeat every n minutes, hourly, daily, weekly, or monthly. For some of these, you can also choose specific times of the day or days of the week. Make sure to note the Server time zone which is the timezone which will be used.
+    ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
 
-7. Enter the name and description of your schedule. Then select whether you'd like to send the pinboard as CSV or PDF attachments.
+    <table>
+     <tr>
+       <th>Field</th>
+       <th>Description</th>
+     </tr>
+     <tr>
+       <th>Repeats</th>
+       <td>You can rebuild a pinboard every <i>n</i> minutes, hourly, daily, weekly, or monthly. For some of these, you can also choose specific times of the day or days of the week. Make sure to note the <strong>Server time zone</strong> which is the timezone which will be used.</td>
+     </tr>
+     <tr>
+       <th>Name</th>
+       <td>Provide a short name for this schedule, <code>Monthly Report Source</code> is an example of a good name.</td>
+     </tr>
+     <tr>
+       <th>Description</th>
+       <td>Enter a description to remind yourself and to inform others. For example, if this is an important schedule for a meeting or a report, you should mention that.</td>
+     </tr>
+     <tr>
+       <th>Type</th>
+       <td>CSV files provide all data for tables, with one attachment per table. Use CSV files to perform further analysis offline. PDF files show all visualizations in the pinboard. Each chart takes up a whole page in the file, while only the first 100 rows of a table are included. Use PDF files to skim the data.</td>
+     </tr>
+     <tr>
+       <th>Gating condition</th>
+       <td>Write a statement that returns a boolean value. For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="/reference/formula-reference.html">Formula Reference</a>.</td>
+     </tr>
+     <tr>
+       <th>Recipients</th>
+       <td>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your Thoughtspot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</td>
+     </tr>
+   </table>
 
-     ![]({{ site.baseurl }}/images/scheduled_pinboards_2.png "Set the pinboard type")
-
-    CSV files provide all data for tables, with one attachment per table. Use CSV files to perform further analysis offline. PDF files show all visualizations in the pinboard. Each chart takes up a whole page in the file, while only the first 100 rows of a table are included. Use PDF files to skim the data.
-
-8. Add recipients by entering ThoughtSpot users or groups. Suggestions are shown as you type. Click **Add** to add the selected users or groups. You can also add recipients that are not ThoughtSpot users by entering their email addresses. To do so, you must first set the whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.
-
-     ![]({{ site.baseurl }}/images/scheduled_pinboards_3.png "Set the pinboard recipients")
-
-    You are limited to 1000 recipients per job.
-
-9. Click **Schedule** to save your scheduled pinboard.
+7. Click **Schedule** to save your schedule configuration.
