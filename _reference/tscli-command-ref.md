@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 The `tscli` command line interface is an administration interface for the ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.
 
+The command returns 0 upon success and a non-zero exit code upon failure. Because the `tscli` command is typically running a command on multiple codes, an error may be called at different points. As much as possible, the command attempts to save errors to the `stderr` directory as configured on a node.
+
 ## How to use the tscli command
 
 The `tscli` command has the following syntax:
