@@ -436,7 +436,7 @@ entries:
     - levelTwoTitle: Using Search
       output: web,ugBk
       levelTwoItems:
-      - title: What is a ThoughtSpot Search?
+      - title: What are searches and answers?
         url: /end-user/search/about-starting-a-new-search.html
         output: web,ugBk
       - levelThreeTitle: Search basics

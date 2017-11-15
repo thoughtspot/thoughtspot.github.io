@@ -50,7 +50,7 @@ layout: default
       {% endif %}
     </div>
     <div >
-        <!-- {% if page.tags != null %}
+        {% if page.tags != null %}
         <b>Tags: </b>
         {% assign projectTags = site.data.tags.allowed-tags %}
         {% for tag in page.tags %}
@@ -58,7 +58,7 @@ layout: default
         <a href="/tags/{{ "tag_" | append: tag | append: ".html"  | prepend: site.baseurl}}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
         {% endif %}
         {% endfor %}
-        {% endif %} -->
+        {% endif %}
     </div>
 </div>
 {% include disqus.html %}

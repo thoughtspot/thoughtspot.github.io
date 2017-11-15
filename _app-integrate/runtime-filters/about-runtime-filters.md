@@ -51,7 +51,7 @@ Note that for DATE and DATE_TIME values, you must specify the date in epoch time
 
 You can use Runtime Filters alongside the REST API and Embedding to create dynamic controls in your Web portal. For example, you could use the REST API to get a list of possible filters for a visualization. Then use that data to populate a select list on your Web portal. When a user makes a selection, you would then pass it as a Runtime Filter, and the result returned will apply the filter.
 
-## Limitations
+## Limitations of runtime filters
 
 Runtime Filters do not work directly on top of tables. You need to create a worksheet if you want to use Runtime Filters. This means that the pinboard or visualization on which you apply a runtime filter must be created on top of a worksheet.
 

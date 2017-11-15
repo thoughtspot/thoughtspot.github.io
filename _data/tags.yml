@@ -14,24 +14,8 @@ allowed-tags:
  - Filters_Answer
  - Filters_Pinboard
  - Ext_Integ_RT_Filters
- - Modeling_Agg_Wksht
- - Modeling_Data_Explorer
- - Modeling_Hierarchies
- - Modeling_List_Page
- - Modeling_Columns_Page
- - Modeling_Mult_Join_Path
- - Modeling_Relationships
- - Modeling_Schema_Types
- - Modeling_Schema_Viewer
- - Modeling_Wksht_CRUD
- - Modeling_Wksht_Formula
- - Pinboard_CRUD
- - Pinboard_Download
- - Pinboard_Layout
- - Pinboard_List_Page
- - Pinboard_Presentation
- - Pinboard_Scheduling
- - Pinboard_Title_Selection
+ - Modeling
+ - Pinboard
  - Search__Lang_and_Keywords
  - Search_Bar
  - Search_Inspector
