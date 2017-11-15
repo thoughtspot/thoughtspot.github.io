@@ -1,6 +1,5 @@
 ---
 title: [Set up the JDBC Driver for Pentaho]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "JDBC to connect to the Falcon Simba server from Pentaho."

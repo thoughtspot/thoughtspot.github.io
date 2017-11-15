@@ -1,6 +1,5 @@
 ---
 title: [Change the inclusion or join rule for a worksheet]
-tags:
 keywords: "worksheet, join, inclusion rule"
 last_updated: tbd
 summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule."

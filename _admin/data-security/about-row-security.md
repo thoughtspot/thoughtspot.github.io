@@ -1,6 +1,5 @@
 ---
 title: ["Row level security (RLS)"]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Using row level security, you can effectively customize search results and pinboards for each group that views them."

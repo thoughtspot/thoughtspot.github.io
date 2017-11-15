@@ -1,6 +1,5 @@
 ---
 title: [ Use the JDBC Driver]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "How to configure the JDBC driver. "

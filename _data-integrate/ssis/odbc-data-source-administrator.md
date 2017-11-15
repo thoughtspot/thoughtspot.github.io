@@ -1,6 +1,5 @@
 ---
 title: [ODBC Data Source Administrator]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use ODBC to modify log in options and troubleshoot ODBC issues."

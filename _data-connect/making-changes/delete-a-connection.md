@@ -1,6 +1,5 @@
 ---
 title: [Delete a connection]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

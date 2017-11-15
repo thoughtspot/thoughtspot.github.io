@@ -1,6 +1,5 @@
 ---
 title: [Scatter charts]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "The scatter chart is useful for finding correlations or outliers in your data."

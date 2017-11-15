@@ -1,6 +1,5 @@
 ---
 title: ["Job management (scheduled pinboards)"]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "All jobs on your cluster will appear on the Jobs Management page. You can also view jobs for individual pinboards under the pinboard Actions dropdown."

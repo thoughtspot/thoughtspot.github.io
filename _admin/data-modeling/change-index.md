@@ -1,6 +1,5 @@
 ---
 title: [Change the index type]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search."

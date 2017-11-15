@@ -1,9 +1,7 @@
 ---
-title: [elephant]
-tags:
+title: [Log in to ThoughtSpot from a browser]
 keywords: tbd
 last_updated: tbd
-
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

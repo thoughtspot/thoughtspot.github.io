@@ -1,6 +1,5 @@
 ---
 title: [Install and start the appliance]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

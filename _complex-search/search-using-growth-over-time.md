@@ -1,6 +1,6 @@
 ---
 title: [Search using growth over time]
-tags:
+tags: [keywords]
 keywords: tbd
 last_updated: tbd
 summary: "You can show growth over time by using the growth of keyword in your search. "

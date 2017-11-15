@@ -1,6 +1,5 @@
 ---
 title: [Test network connectivity between nodes]
-tags: 
 keywords: tbd
 last_updated: tbd
 summary: "Verify your network is properly configured for the application."

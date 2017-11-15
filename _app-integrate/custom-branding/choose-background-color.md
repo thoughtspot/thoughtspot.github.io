@@ -1,6 +1,5 @@
 ---
 title: [Choose a background color]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

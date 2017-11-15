@@ -1,6 +1,5 @@
 ---
 title: [Delete a data source]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "If you want to delete a data source, make sure and read this section so you don't inadvertently delete data in ThoughtSpot."

@@ -1,6 +1,6 @@
 ---
 title: [Set the relay host for SMTP (email)]
-tags: [SysAdm_tscli_Config]
+tags: [tscli]
 keywords: email,SMTP,notification,"relay host"
 last_updated: tbd
 summary: "To enable alert emails, you'll need to set up a relay host for SMTP traffic."

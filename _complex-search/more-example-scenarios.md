@@ -1,6 +1,5 @@
 ---
 title: [Worksheet example scenarios]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

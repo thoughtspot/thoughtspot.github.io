@@ -1,6 +1,6 @@
 ---
 title: [Data types]
-tags: [Data_Integ_TQL,i18n_Geomaps_Lat_Long]
+tags: [TQL,Geomaps]
 keywords: "ETL,data types, Administrative Regions"
 last_updated: tbd
 summary: "ThoughtSpot supports the common data types."

@@ -1,6 +1,5 @@
 ---
 title: [Set Rule-Based RLS]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Explains the process for setting RLS rules."

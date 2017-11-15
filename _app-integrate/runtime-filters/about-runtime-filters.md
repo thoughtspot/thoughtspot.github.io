@@ -1,6 +1,5 @@
 ---
 title: [About Runtime Filters]
-tags:
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar

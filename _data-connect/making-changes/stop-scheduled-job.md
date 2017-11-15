@@ -1,6 +1,5 @@
 ---
 title: [Stop a scheduled job from running]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You may want to stop a scheduled job from running for a time, or even permanently."

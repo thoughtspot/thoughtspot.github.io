@@ -1,6 +1,5 @@
 ---
 title: [Share worksheets]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it."

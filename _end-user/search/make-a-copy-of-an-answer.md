@@ -1,6 +1,5 @@
 ---
 title: [Copy an answer]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Making a copy of an answer allows you to make your own edits without overwriting the original. "

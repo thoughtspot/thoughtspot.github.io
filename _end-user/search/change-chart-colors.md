@@ -1,6 +1,5 @@
 ---
 title: [Change chart colors]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can easily change the legend colors in a chart."

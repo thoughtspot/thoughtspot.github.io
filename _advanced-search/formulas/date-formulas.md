@@ -1,6 +1,5 @@
 ---
 title: [About date formulas]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

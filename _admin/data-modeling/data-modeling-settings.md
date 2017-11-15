@@ -1,6 +1,5 @@
 ---
 title: [Overview of data modeling settings]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: ["About conditional formulas (operators)"]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

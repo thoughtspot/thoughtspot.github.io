@@ -1,6 +1,5 @@
 ---
 title: [Search bar features]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "The search bar is designed to make it easy for you to identify your search terms. "

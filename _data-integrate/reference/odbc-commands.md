@@ -1,6 +1,5 @@
 ---
 title: [ODBC supported SQL commands]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "ODBC driver supports a limited set of SQL commands."

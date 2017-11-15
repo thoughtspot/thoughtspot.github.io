@@ -1,6 +1,5 @@
 ---
 title: [REST API pagination]
-tags:
 keywords: REST,API,pagination,JSON,"REST API"
 last_updated: tbd
 summary: "You can paginate the JSON response that is called from the REST API. The order of the data is retained from page to page."

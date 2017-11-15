@@ -1,6 +1,5 @@
 ---
 title: [Prerequisites and Architecture]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

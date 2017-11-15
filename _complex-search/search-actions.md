@@ -1,6 +1,5 @@
 ---
 title: [Other search actions]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: [System security]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "System security refers to audit logs and security policies."

@@ -1,6 +1,5 @@
 ---
 title: [Overview of security features]
-tags:
 keywords: tbd
 last_updated: tbd
 summary:

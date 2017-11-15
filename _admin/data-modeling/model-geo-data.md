@@ -1,6 +1,5 @@
 ---
 title: [Add a geographical data setting]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -44,7 +43,7 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
     1. Change the **Type** to `ATTRIBUTE`.
     2. Change **ADDITIVE** to `NO`/`FALSE`.
-    
+
 4. Save your changes.
 
 ## List of geotypes

@@ -1,6 +1,5 @@
 ---
 title: [Additional chart options]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can configure charts to show the y-axis data values.

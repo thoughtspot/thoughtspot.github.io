@@ -1,6 +1,5 @@
 ---
 title: [Set up a fiscal calendar year]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can customize your fiscal calendar to start in month other than January."

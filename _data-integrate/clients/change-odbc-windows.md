@@ -1,6 +1,5 @@
 ---
 title: [Change the Windows ODBC Configuration]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC Administrator to change the ODBC configuration."

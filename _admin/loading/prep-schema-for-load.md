@@ -1,6 +1,5 @@
 ---
 title: [Connect with TCL and create a schema]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

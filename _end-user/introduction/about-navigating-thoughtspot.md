@@ -1,6 +1,5 @@
 ---
 title: [Finding your way around]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

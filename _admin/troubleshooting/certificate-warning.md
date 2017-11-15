@@ -1,6 +1,5 @@
 ---
 title: [Browser untrusted connection error]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

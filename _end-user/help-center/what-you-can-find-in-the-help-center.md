@@ -1,6 +1,6 @@
 ---
 title: [Get help]
-tags:
+tags: [keywords]
 keywords: tbd
 last_updated: tbd
 summary: "The Help Center provides links to different resources that were created to help you use ThoughtSpot."

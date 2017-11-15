@@ -1,6 +1,5 @@
 ---
 title: [Change result display options]
-tags:
 keywords: "table,chart,visualization"
 last_updated: tbd
 summary: "You can change how your search results (answers) appear."

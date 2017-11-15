@@ -1,6 +1,5 @@
 ---
 title: [Cable networking]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

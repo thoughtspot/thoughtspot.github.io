@@ -1,6 +1,5 @@
 ---
 title: [View a data profile]
-tags:
 keywords: CSV,profile,data
 last_updated: tbd
 sidebar: mydoc_sidebar

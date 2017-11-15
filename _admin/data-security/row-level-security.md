@@ -1,6 +1,6 @@
 ---
 title: [How rule-based RLS works]
-tags:
+tags: [bestpractices]
 keywords: tbd
 last_updated: tbd
 summary: "Use rule-based RLS to protect your data so that users see only those rows they are allowed to see based on their group membership."

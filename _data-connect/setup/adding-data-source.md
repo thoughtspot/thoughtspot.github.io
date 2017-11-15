@@ -1,6 +1,5 @@
 ---
 title: [Add a new data source]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

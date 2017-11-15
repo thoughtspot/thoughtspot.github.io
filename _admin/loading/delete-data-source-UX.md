@@ -1,6 +1,5 @@
 ---
 title: [Delete a data source]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "How to prepare for and delete a data source using the ThoughtSpot application."

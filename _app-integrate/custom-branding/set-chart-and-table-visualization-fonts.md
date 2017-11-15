@@ -1,6 +1,5 @@
 ---
 title: [Set chart and table visualization fonts]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -49,4 +48,4 @@ If you are confident in your knowledge of font visualizations, you can set your 
 
      ![]({{ site.baseurl }}/images/table_visualization_fonts.png "Set Table Visualization Fonts")
 
-8. Click the **Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts. 
+8. Click the **Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts.

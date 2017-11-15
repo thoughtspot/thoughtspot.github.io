@@ -1,6 +1,5 @@
 ---
 title: [Add a filter to a chart]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can add a simple filter from a chart axis while viewing your answer as a chart."
@@ -20,4 +19,4 @@ To add a filter from the chart axes:
 
 2. Select the values you would like to include in your answer. Then click **Done**.
 
-     ![]({{ site.baseurl }}/images/filter_menu_chart_axis.png "Axis filters value box") 
+     ![]({{ site.baseurl }}/images/filter_menu_chart_axis.png "Axis filters value box")

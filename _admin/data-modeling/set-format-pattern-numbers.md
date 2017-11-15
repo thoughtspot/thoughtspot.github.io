@@ -1,6 +1,5 @@
 ---
 title: [ "Set number, date, and currency formats" ]
-tags:
 keywords: REST,API,currency,formats,"REST API"
 last_updated: tbd
 summary: "Explains how to set key formats for column values."

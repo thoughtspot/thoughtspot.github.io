@@ -1,6 +1,5 @@
 ---
 title: [Cluster replacement]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Cluster replacement can be achieved using a mirrored system architecture. This allows you to recover an entire system very quickly without data loss."

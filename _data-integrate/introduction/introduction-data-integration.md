@@ -1,6 +1,5 @@
 ---
 title: [Introduction to Data Integration]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

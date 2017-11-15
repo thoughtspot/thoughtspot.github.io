@@ -1,6 +1,5 @@
 ---
 title: [Configure SAML]
-tags:
 keywords: SAML,security,"active directory",authenticate,configure,
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: [Show underlying data]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data."

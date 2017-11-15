@@ -1,6 +1,5 @@
 ---
 title: [Constraints]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Constraints allow you to build relationships and join tables."

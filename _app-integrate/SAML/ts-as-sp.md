@@ -1,6 +1,5 @@
 ---
 title: [ Legacy configure SAML]
-tags:
 keywords: SAML,security,"active directory",authenticate
 last_updated: tbd
 sidebar: mydoc_sidebar

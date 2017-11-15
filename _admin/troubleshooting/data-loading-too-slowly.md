@@ -1,6 +1,5 @@
 ---
 title: [Data loading too slowly]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

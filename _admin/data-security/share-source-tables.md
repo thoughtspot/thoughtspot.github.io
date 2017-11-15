@@ -1,6 +1,6 @@
 ---
 title: [Share tables and columns]
-tags:
+tags: [bestpractices]
 keywords: tbd
 last_updated: tbd
 summary: "You can share an entire table, or only some of its columns."

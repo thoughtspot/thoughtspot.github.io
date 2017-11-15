@@ -1,6 +1,5 @@
 ---
 title: [Create a bulk filter]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

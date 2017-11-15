@@ -1,6 +1,5 @@
 ---
 title: [Schedule a pinboard job]
-tags:
 keywords: "job,pinboard,schedule"
 last_updated: tbd
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."

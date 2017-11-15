@@ -1,6 +1,5 @@
 ---
 title: [Schema not found error]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Correct schema not found errors."

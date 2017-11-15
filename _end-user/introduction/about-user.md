@@ -1,6 +1,5 @@
 ---
 title: [About your user profile]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "The user icon lets you view your profile or sign out of ThoughtSpot."

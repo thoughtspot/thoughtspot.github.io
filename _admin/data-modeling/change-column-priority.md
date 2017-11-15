@@ -1,6 +1,5 @@
 ---
 title: [Set the search suggestions priority]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

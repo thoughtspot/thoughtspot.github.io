@@ -1,6 +1,5 @@
 ---
 title: [ODBC Reference]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "The commands and settings supported by the ThoughtSpot ODBC drivers."

@@ -1,6 +1,5 @@
 ---
 title: [Upload application logos]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can replace the ThoughtSpot logo, wherever it appears in the ThoughtSpot web application, with your own company logo."

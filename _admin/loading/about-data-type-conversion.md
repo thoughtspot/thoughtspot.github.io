@@ -1,6 +1,6 @@
 ---
 title: [Convert column data type]
-tags: [Data_Integ_TQL]
+tags: [TQL]
 keywords: "TQL,SQL, data types"
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "

@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-tags:
+tags: [bestpractices]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

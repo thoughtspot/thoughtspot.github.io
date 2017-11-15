@@ -1,6 +1,5 @@
 ---
 title: ["What are Searches and Answers?"]
-tags:
 keywords: search,answer,introduction,"search bar"
 last_updated: tbd
 summary: "You use search answer questions about your data without having to consult a data analyst."
@@ -71,4 +70,4 @@ An answer is the result of a single search. You can save an answer you want to w
 -   [Search bar features]({{ site.baseurl }}/end-user/search/about-the-search-bar.html)  
 -   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
 -   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  
--   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html) 
+-   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html)

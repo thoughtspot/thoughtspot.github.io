@@ -1,6 +1,5 @@
 ---
 title: [About disaster recovery]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

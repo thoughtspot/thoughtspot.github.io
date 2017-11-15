@@ -1,6 +1,5 @@
 ---
 title: [Apply conditional formatting]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use conditional formatting to make portiosn of your results stand  out"

@@ -1,6 +1,6 @@
 ---
 title: ["101: Do more with SpotIQ"]
-tags:
+tags: [spotiq]
 keywords:
 last_updated: tbd
 sidebar: mydoc_sidebar

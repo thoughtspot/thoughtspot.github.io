@@ -1,6 +1,5 @@
 ---
 title: [ODBC and JDBC configuration properties]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Lists the properties you can set for ODBC or JDBC connections"

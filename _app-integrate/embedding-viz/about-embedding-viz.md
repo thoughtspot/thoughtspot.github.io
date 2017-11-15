@@ -1,6 +1,5 @@
 ---
 title: [About Embedding]
-tags:
 keywords: embedding,authentication,SAML
 last_updated: tbd
 toc: false

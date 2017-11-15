@@ -1,6 +1,5 @@
 ---
 title: [Last data refresh time]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can see the last time at which data was refreshed without having to visit the **DATA** page.

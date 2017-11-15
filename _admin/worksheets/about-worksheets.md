@@ -1,6 +1,5 @@
 ---
 title: [Simplify search with worksheets]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "

@@ -1,6 +1,6 @@
 ---
 title: [Best SpotIQ Practices]
-tags:
+tags: [bestpractices]
 keywords: SpotIQ,"best practices", invoke, search, measure, attribute, ranking
 last_updated: tbd
 sidebar: mydoc_sidebar

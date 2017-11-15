@@ -1,6 +1,5 @@
 ---
 title: [How the worksheet join rule works]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

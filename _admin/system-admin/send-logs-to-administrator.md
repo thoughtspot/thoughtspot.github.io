@@ -1,6 +1,5 @@
 ---
 title: [Send logs when reporting problems]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: [Supported hardware]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Required and provided installation hardware."

@@ -1,6 +1,5 @@
 ---
 title: [Upload logs to ThoughtSpot Support]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

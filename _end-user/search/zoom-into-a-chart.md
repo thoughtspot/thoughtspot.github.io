@@ -1,6 +1,5 @@
 ---
 title: [Zoom into a chart]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -26,4 +25,4 @@ You can zoom into your chart by selecting an area with your mouse. To zoom into 
 
 4. If you would like to return to the original chart view, click **Reset zoom** under **Zoom options**.
 
-     ![]({{ site.baseurl }}/images/zoom%20out.png "Reset zoom option") 
+     ![]({{ site.baseurl }}/images/zoom%20out.png "Reset zoom option")

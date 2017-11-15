@@ -1,6 +1,5 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

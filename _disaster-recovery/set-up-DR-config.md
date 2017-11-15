@@ -1,6 +1,5 @@
 ---
 title: [Set up a disaster recovery configuration]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."

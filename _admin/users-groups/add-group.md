@@ -1,6 +1,5 @@
 ---
 title: ["Create, edit, or delete a group"]
-tags:
 keywords: "group,user,privileges"
 last_updated: tbd
 summary: "Good planning when creating groups and assigning privileges will pay off in ease of administration and a better search experience."

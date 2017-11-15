@@ -1,6 +1,5 @@
 ---
 title: [Select chart color palettes]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

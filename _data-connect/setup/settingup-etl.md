@@ -1,6 +1,5 @@
 ---
 title: [Set up ThoughtSpot Data Connect]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

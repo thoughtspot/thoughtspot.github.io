@@ -1,6 +1,5 @@
 ---
 title: [Recover a cluster from a disaster]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

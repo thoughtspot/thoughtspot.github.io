@@ -1,6 +1,5 @@
 ---
 title: [Edit the system-wide data model]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Edit the modeling file to edit your data settings."

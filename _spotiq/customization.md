@@ -1,6 +1,6 @@
 ---
 title: [Custom SpotIQ analysis]
-tags:
+tags: [spotiq]
 keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar

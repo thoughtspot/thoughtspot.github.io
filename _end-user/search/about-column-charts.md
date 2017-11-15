@@ -1,6 +1,5 @@
 ---
 title: [Column charts]
-tags: 
 keywords: tbd
 last_updated: tbd
 summary: "A column chart is the most versatile chart type"

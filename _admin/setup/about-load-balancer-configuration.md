@@ -1,6 +1,6 @@
 ---
 title: [About load balancing and proxies]
-tags:
+tags: [bestpractices]
 keywords: "load balancing, performance"
 last_updated: tbd
 summary: "A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency. "

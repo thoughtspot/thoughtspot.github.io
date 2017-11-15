@@ -1,6 +1,5 @@
 ---
 title: [Error code reference]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "List of error codes and messages."

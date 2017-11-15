@@ -1,6 +1,5 @@
 ---
 title: [Import CSV files with tsload]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "The tsload command is a common way to import data from a CSV file."

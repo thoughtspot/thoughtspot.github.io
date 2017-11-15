@@ -1,6 +1,5 @@
 ---
 title: [Performance considerations]
-tags:
 keywords: data,cluster,memory,import,tsload
 last_updated: tbd
 summary: "Make sure you understand the performance considerations in your installation."

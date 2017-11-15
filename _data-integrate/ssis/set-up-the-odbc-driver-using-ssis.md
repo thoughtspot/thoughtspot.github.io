@@ -1,6 +1,5 @@
 ---
 title: [Set up the ODBC Driver for SSIS]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use SSIS to set up the ODBC Driver."

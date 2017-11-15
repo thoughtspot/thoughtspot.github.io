@@ -1,6 +1,5 @@
 ---
 title: [Log in to the Linux shell using SSH]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

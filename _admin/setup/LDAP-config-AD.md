@@ -1,6 +1,6 @@
 ---
 title: [Configure LDAP for Active Directory]
-tags: [Security_SAML_LDAP_AD, SysAdm_tscli_Config]
+tags: [SAML_LDAP_AD, tscli]
 keywords: LDAP, "Active Directory"
 last_updated: tbd
 summary: "Use this procedure to set up integration with LDAP using Active Directory."

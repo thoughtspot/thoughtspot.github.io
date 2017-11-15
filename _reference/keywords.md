@@ -1,6 +1,6 @@
 ---
 title: [Keyword reference]
-tags:
+tags: [keywords]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: [Launch a ThoughtSpot instance]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

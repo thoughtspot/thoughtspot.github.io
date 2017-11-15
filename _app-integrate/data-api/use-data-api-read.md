@@ -1,6 +1,5 @@
 ---
 title: [Use the REST API to get data]
-tags:
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 summary: "This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application. "

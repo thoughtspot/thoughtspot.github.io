@@ -1,6 +1,5 @@
 ---
 title: [Apply a Runtime Filter]
-tags:
 keywords: filter,runtime,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar

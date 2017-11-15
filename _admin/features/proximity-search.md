@@ -1,6 +1,5 @@
 ---
 title: [Proximity searches "near" and "farther than"]
-tags:
 keywords: within,near,"farther than",proximity,geo,search
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
@@ -35,7 +34,7 @@ searches are:
 
  You can bracket your search only with actual values found in the data.  So
  "longitude between `-125.000000` and `-115.316670` worked for me, but not
- `longitude between -125 and -115`. 
+ `longitude between -125 and -115`.
 
 ### Proximity search configuration requirements
 

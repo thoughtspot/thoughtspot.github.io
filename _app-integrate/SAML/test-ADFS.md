@@ -1,6 +1,5 @@
 ---
 title: [Test the ADFS Integration]
-tags:
 keywords: SAML,AD,"active directory"
 last_updated: tbd
 sidebar: mydoc_sidebar

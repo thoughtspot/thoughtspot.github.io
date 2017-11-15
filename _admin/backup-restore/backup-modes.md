@@ -1,6 +1,5 @@
 ---
 title: [Understand backup modes]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

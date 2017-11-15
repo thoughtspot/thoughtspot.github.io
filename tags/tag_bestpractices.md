@@ -1,6 +1,6 @@
 ---
-title: "Visualization: Config"
-tagName: Visualization_Config
+title: "Best practices"
+tagName: bestpractices
 search: exclude
 sidebar: mydoc_sidebar
 ---

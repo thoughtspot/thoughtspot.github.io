@@ -1,6 +1,5 @@
 ---
 title: [Basic pinboard usage]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Create a new pinboard to group and manage related search results. Pinboards are the ThoughtSpot term for a dashboard."
