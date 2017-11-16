@@ -18,7 +18,7 @@ Drilling down allows you to see more information about the columns used within y
 You can include or exclude row values from your answer.
 -   **[Apply conditional formatting]({{ site.baseurl }}/end-user/search/about-conditional-formatting.html)**  
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
--   **[Copy an answer]({{ site.baseurl }}/end-user/search/make-a-copy-of-an-answer.html)**  
+-   **[Work with saved answers]({{ site.baseurl }}/end-user/search/work-with-answers.html)**  
 You can make a copy of an answer if you would like to make edits without changing the original answer.
 -   **[Download your search]({{ site.baseurl }}/complex-search/download-your-search.html)**  
 You can download your search as either a table or chart.

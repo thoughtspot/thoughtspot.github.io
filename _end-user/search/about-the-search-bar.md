@@ -1,5 +1,6 @@
 ---
 title: [Search bar features]
+tags: [tipsntricks,overview]
 keywords: tbd
 last_updated: tbd
 summary: "The search bar is designed to make it easy for you to identify your search terms. "
@@ -37,3 +38,7 @@ This frees you from having to know the exact term or column name used in a data 
 If you type an unrecognized search term, you will be offered tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.
 
  ![]({{ site.baseurl }}/images/search_help.png "Search help box")
+
+## Related searches
+
+At the end of the **Search** page is the system provides searches you might find useful. These are quick searches you can load into the search bar by simply click on the provided link.

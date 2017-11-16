@@ -460,6 +460,9 @@ entries:
         - title: Last data refresh time
           url: /end-user/search/data-refresh-time.html
           output: web,ugBk
+        - title: Work with Answers
+          url: /end-user/search/work-with-answers.html
+          output: web,ugBk
       - title: Results that are tables
         url: /end-user/search/about-tables.html
         output: web,ugBk
@@ -513,9 +516,6 @@ entries:
           output: web,ugBk
         - title: Apply conditional formatting to a table
           url: /end-user/search/apply-conditional-formatting.html
-          output: web,ugBk
-        - title: Copy an answer
-          url: /end-user/search/make-a-copy-of-an-answer.html
           output: web,ugBk
         - title: Download your search
           url: /complex-search/download-your-search.html
