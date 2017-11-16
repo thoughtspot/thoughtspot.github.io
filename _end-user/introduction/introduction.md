@@ -1,5 +1,6 @@
 ---
 title: [Introduction to the User Guide]
+tags: overview
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
