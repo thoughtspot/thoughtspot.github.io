@@ -20,7 +20,7 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 2. Select the first insight.
 3. Choose the menu and select **Auto Analyze**.
 
-   ![]({{ site.baseurl }}/images/spotiq-save.png)
+   ![]({{ site.baseurl }}/images/spotiq-auto-again.png)
 
    The system responds by starting a new insight run based on the single chart.
    Each time you request a change to the analysis settings, it starts another
@@ -66,6 +66,17 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 
     ![]({{ site.baseurl }}/images/spotiq-definite-outlier.png)
 
+The changes you make in this step persist on the underlying data for all your future analyses. You can unset these values by going back into the dialog and removing what you set.
+
+## A temporary customization for a single insight
+
+Finally, you might have noticed the thumbs at the bottom of each insight. Use the thumbs up to tell SpotIQ you like the data insight. Clicking thumb's down display an **Improve Analysis** dialog:
+
+![]({{ site.baseurl }}/images/spotiq-thumbs-down.png)
+
+You can exclude a value from this individual analysis and rerun the analysis. Unlike the **Customize Analysis** action, this action works only on this analysis and does not persist.
+
+Try this for yourself later at some point.
 
 ## Modify an insight search and visualization
 
