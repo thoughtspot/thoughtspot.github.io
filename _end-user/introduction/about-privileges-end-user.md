@@ -1,5 +1,6 @@
 ---
 title: [Understanding privileges]
+tags: [spotiq]
 keywords: tbd
 last_updated: tbd
 summary: "The things you can do in ThoughtSpot are determined by the privileges you have. These are set at the group level.

@@ -1,6 +1,6 @@
 ---
 title: ["SpotIQ 101: Review insights"]
-tags: [spotiq,customize]
+tags: [customize, spotiq]
 keywords: customize, SpotIQ, "data analysis"
 last_updated: tbd
 sidebar: mydoc_sidebar

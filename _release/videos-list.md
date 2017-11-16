@@ -1,5 +1,6 @@
 ---
 title: ["Videos"]
+tags: [spotiq]
 keywords: tbd
 toc: false
 last_updated: tbd

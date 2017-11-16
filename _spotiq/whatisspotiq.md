@@ -1,6 +1,6 @@
 ---
 title: ["What is SpotIQ?"]
-tags: [spotiq,overview]
+tags: [spotiq, overview]
 keywords: SpotIQ, "auto analyze", insights, generation
 last_updated: tbd
 sidebar: mydoc_sidebar

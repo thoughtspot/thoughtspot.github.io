@@ -1,6 +1,6 @@
 ---
 title: ["SpotIQ 101: Load and analyze data"]
-tags: [spotiq,tutorial]
+tags: [spotiq, tutorial]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
