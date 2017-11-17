@@ -12,7 +12,7 @@ You can create a manual backup or configure an automated, periodic backup A back
 
 {% include warning.html content="You should never disable the periodic snapshot system as backups rely on it. For example, if you have disabled the periodic snapshots system and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together." %}
 
-Backups are usually stored on a [NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 10 GB of extra space beyond the backup itself. The final backup image is smaller because these extra files are removed after the backup completes successfully. So, make sure you have enough disk space both to _take_ a backup and store the result.
+Backups are usually stored on a [NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 10 GB of extra space beyond the backup itself. The final backup image is smaller because these extra files are removed after the backup completes successfully. So, make sure you have enough disk space both to _take_ a backup and store the result. Use the `tscli storage df` command to identify the amount of space available.
 
 You can create a backup using one of three modes, full, lightweight or dataless.
 
@@ -21,6 +21,7 @@ You can create a backup using one of three modes, full, lightweight or dataless.
 Full backups are entire backups of the cluster with all data, whether loaded from the web interface or from `tsload`. This is the best mode for restoring a cluster and all your data. Once a `FULL` backup is created, you can move them between clusters, even if the cluster configuration is different. Full backups can be as large as 20 GB in addition to the 5 GB of additional files. Some installations can exceed these limits, this is why it is important to test your backup configuration.
 
 Before creating a manual backup or configuring automated backups, make sure there is enough disk space on the target disk. Consider an example, where you want to store three backups. If the backup itself takes 18GB, you need about 18 + 5 = 23 GB of free disk space. Don't forget that the backup size can grow over time, so you should occasionally check to ensure you are not in danger of running out of disk space to store backups.
+
 
 ## Lightweight backups
 
