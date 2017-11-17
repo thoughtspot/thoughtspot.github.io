@@ -596,40 +596,6 @@ This subcommand has the following actions:
   * `--cluster` Is the node part of a cluster (default: `False`)
 
 
-### os
-
-```
-tscli os [-h] {find-package,list-packages}
-```
-
-This subcommand supports the following actions:
-
-* `tscli os find-package [-h] ` *`name`*
-
-   Lists all packages and versions included in the product image whose name
-   contains *`name`*. Package names you can specify are:
-
-   - `alert`
-   - `backup`
-   - `callhome`
-   - `cluster`
-   - `event`
-   - `fileserver`
-   - `firewall`
-   - `ldap`
-   - `logs`
-   - `monitoring`
-   - `node`
-   - `os`
-   - `release`
-   - `smtp`
-   - `snapshot`
-   - `ssl`
-   - `storage`
-   - `support`
-
-* `tscli os list-packages [-h]` Lists all packages and versions included in the product image.
-
 ### saml
 
 ```
@@ -814,7 +780,7 @@ This subcommand supports the following actions:
 
 * `tscli storage df [--mode disk|hdfs]`
 
-   Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`. 
+   Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`.
 
 ### support
 
