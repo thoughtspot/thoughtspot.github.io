@@ -778,40 +778,43 @@ This subcommand supports the following actions:
 ### storage
 
 ```
-tscli storage [-h] {gc}
+tscli storage [-h] gc df
 ```
 
 This subcommand supports the following actions:
 
-`tscli storage gc [-h] [--log_age` *`LOG_AGE`* `] [--force] [--localhost_only]`
+* `tscli storage gc [-h] [--log_age` *`LOG_AGE`* `] [--force] [--localhost_only]`
 
-Garbage collect unused storage. Before issuing this command, you must stop the cluster using `tscli
-cluster stop`. After garbage collection has completed, you can restart
-the cluster with `tscli cluster start`.  The command frees space in these directories:
+    Garbage collect unused storage. Before issuing this command, you must stop the cluster using `tscli
+    cluster stop`. After garbage collection has completed, you can restart
+    the cluster with `tscli cluster start`.  The command frees space in these directories:
 
- * `/tmp`
- * `/usr/local/scaligent/logs/`
- * `/export/logs/orion`
- * `/export/logs/oreo`
- * `/export/logs/hadoop`
- * `/export/logs/zookeeper`
- * `cores`
+     * `/tmp`
+     * `/usr/local/scaligent/logs/`
+     * `/export/logs/orion`
+     * `/export/logs/oreo`
+     * `/export/logs/hadoop`
+     * `/export/logs/zookeeper`
+     * `cores`
 
-Accepts these optional flags:
+    Accepts these optional flags:
 
-* `--log_age` *`LOG_AGE`*
+    * `--log_age` *`LOG_AGE`*
 
-  Delete logs older than these many hours. Use a non-zero value ideally. A
-  zero value will cause all temporary files to be deleted, including say those
-  which are just temporarily closed while they are being passed from one
-  component to the next. (default: `4`)
+      Delete logs older than these many hours. Use a non-zero value ideally. A
+      zero value will cause all temporary files to be deleted, including say those
+      which are just temporarily closed while they are being passed from one
+      component to the next. (default: `4`)
 
-* `--force` Forces deletion of all logs and temporary files regardless of age. This must
-only be run on a stopped cluster. (default: False)
+    * `--force` Forces deletion of all logs and temporary files regardless of age. This must
+    only be run on a stopped cluster. (default: False)
 
-* `--localhost_only` If used, only the logs on the localhost will be removed. If not specified, the
-   command acts on the entire cluster.
+    * `--localhost_only` If used, only the logs on the localhost will be removed. If not specified, the
+       command acts on the entire cluster.
 
+* `tscli storage df [--mode disk|hdfs]`
+
+   Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`. 
 
 ### support
 
