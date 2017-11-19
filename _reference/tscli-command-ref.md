@@ -551,8 +551,7 @@ This subcommand has the following actions:
 
   * `--options` *`OPTIONS`* Other command-line options to forward to `mount.cifs` command (default: `noexec`)
 
-
-* `tscli nas mount-nfs [-h] --server SERVER [--path_on_server PATH_ON_SERVER]
+* `tscli nas mount-nfs [-h] --server SERVER [--protocol PROTO --path_on_server PATH_ON_SERVER]
   --mount_point MOUNT_POINT [--options OPTIONS]`
 
   Mounts a NFS device on all nodes. Parameters are:
@@ -567,6 +566,7 @@ This subcommand has the following actions:
     used for mounting. For example: `/mnt/external` (default: None)
 
   * `--options` `OPTIONS` Command-line options to forward to mount command (default: `noexec`).
+  * `--protocol PROTO` One of `nfs` or `nfs4`. The default is `nfs`.
 
 * `tscli nas unmount [-h] --dir` *`DIR`*
 
