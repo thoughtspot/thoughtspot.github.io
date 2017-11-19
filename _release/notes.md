@@ -1,15 +1,21 @@
 ---
 title: ["Release Notes"]
 toc: false
-keywords: "release notes", "4.4", "4.4.1"
+keywords: "release notes"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
 <p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.4.1 version. Below is the list features and issues that were part of the 4.4.X release cycle.</p>
 
-{% include callout.html content="For detailed descriptions of new features and capabilities in this release, see the official release announcement on the ThoughtSpot blog <b><a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>.</b>" type="success" %}
+<ul>
+<li><a href="#4-4-1-new-features-and-functionality">4.4.1 New Features and Functionality</a></li>
+<li><a href="notes.html#4-4-1-fixed-bugs">4.4.1 Fixed bugs</a></li>
+<li><a href="#4-4-new-features-and-functionality">4.4 New Features and Functionality</a></li>
+<li><a href="notes.html#4-4-fixed-bugs">4.4 Fixed bugs</a></li>
+</ul>
+
+{% include callout.html content="For detailed descriptions of new features and capabilities in the 4.4 release, see the official release announcement on the ThoughtSpot blog <b><a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>.</b>" type="success" %}
 
 <h2><br />4.4.1 New&nbsp;Features and Functionality</h2>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
@@ -232,7 +238,7 @@ permalink: /:collection/:path.html
 </tr>
 </tbody>
 </table>
-<h2>4.4 New&nbsp;Features and Functionality</h2>
+<h2>4.4 New Features and Functionality</h2>
 <table style="border-collapse: collapse; width: 100%; font-size: inherit; font-family: inherit;" border="0" cellspacing="0" cellpadding="0">
 <thead>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
