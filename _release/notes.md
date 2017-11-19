@@ -1,18 +1,238 @@
 ---
 title: ["Release Notes"]
 toc: false
-keywords: "release notes"
+keywords: "release notes", "4.4", "4.4.1"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-<p>We are&nbsp;happy to inform you that the latest version 4.4 of ThoughtSpot is available. Below is the list features and issues that were part of this release.</p>
+<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.4.1 version. Below is the list features and issues that were part of the 4.4.X release cycle.</p>
 
 {% include callout.html content="For detailed descriptions of new features and capabilities in this release, see the official release announcement on the ThoughtSpot blog <b><a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>.</b>" type="success" %}
 
-
-<h2>New&nbsp;Features and Functionality</h2>
+<h2><br />4.4.1 New&nbsp;Features and Functionality</h2>
+<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr style="width: 100%;">
+<th style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; font-weight: bold;" title="Description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="ExpandedAnswerspagefeatures"></a>Expanded Answers page features</h4>
+<p>This release includes an expanded information layout available with each answer. This expansion includes the following features;</p>
+<ul>
+<li>A subsection detailing related insight cards you can fire.</li>
+<li>Responsive layout for all tiles</li>
+<li>Related queries that detail additional queries you may use.</li>
+</ul>
+<p><span class="image-wrap"><a id="55284_thumb" title="image-2017-11-13-17-20-07-383.png" href="https://thoughtspot.atlassian.net/secure/attachment/55284/55284_image-2017-11-13-17-20-07-383.png"><img style="border: 0px solid black;" src="https://thoughtspot.atlassian.net/secure/thumbnail/55284/image-2017-11-13-17-20-07-383.png" data-attachment-name="image-2017-11-13-17-20-07-383.png" data-attachment-type="thumbnail" data-media-services-id="e9e23e74-547e-4583-9df8-73676bd1850e" data-media-services-type="file" /></a></span></p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="Removalofthetscliospackagecommand"></a>Removal of the tscli os package command</h4>
+<p>Beginning with this release, the <tt>tscli os package</tt> command is no longer available. You should use the platform specific commands to list the packages on your system. For example, you can use the <tt>dpkg -l | rpm -qa</tt> command.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="Visualizationandpinboardinteractionautosavessomechanges"></a>Visualization and pinboard interaction auto-saves some changes</h4>
+<p>This release includes changes to user interactions on pinboards and visualizations. Previously, visual changes to the colors or column order required you to explicitly save your change. This is no longer the case, these changes on visualizations, pinboards, and pinboard tiles now save automatically.</p>
+<p>Some pinboard changes are applied but require a user to explicitly save the change to complete the edit. These changes are:</p>
+<ul>
+<li>filter changes</li>
+<li>reording tiles</li>
+<li>resizing tiles</li>
+<li>deletion of a tile</li>
+</ul>
+<p>If a user attempts to navigate away from an object with a pending change of this type, the system prompts the user to save the change.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="SupportforNFS4protocol"></a>Support for NFS4 protocol</h4>
+<p>This release includes support for the NFS4 protocol.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="Designatesharingornonsharing"></a>Designate sharing or non-sharing</h4>
+<p>A new feature in this release allows you to designate whether information <em>can be shared</em> with a user or group.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>4.4.1 Fixed Bugs</h2>
+<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr style="width: 100%;">
+<th style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; font-weight: bold;" title="Description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>A problem was resolved with NFS4 mounts by adding support for NFS4 mounts to the system.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>An upgrade issue was resolved where the system was using an incorrect interface.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Fixed an issue with the <tt>tscli backup create</tt> command which was miscalculating the ETA of backups.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>A problem was resolved that prevented users from seeing the underlying data in a shared worksheet.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Previously, <tt>tql update</tt> statements that referred to unknown columns could cause the backend system to fail. This issue was resolved in this release. The system returns errors for <tt>update</tt> statements that reference unknown columns.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release includes the addition of the <tt>tscli storage df</tt> command. You can use this command to detect the amount of space left on your disks in your ThoughtSpot cluster.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>An intermittent upgrade issue was resolved where a pinboards that involved date-related keywords failed to load.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Fixed a problem where the round function was ignored when using a pivot table.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Customers reported a Double Fetch Denial of Service Vulnerability in the Linux Kernel shipped with a previous version of the product. This release includes a patch to the Linux kernel packages as shipped with Red Hat Enterprise Linux 6, 7 and Red Hat Enterprise MRG 2.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release patches a reported security vulnerability in CentOS Security Update for sudo.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for libsoup (CESA-2017:2459) to prevent reported security vulnerabilities in the source software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for git (CESA-2017:2484 <strong>and</strong> CESA-2017:2004) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release patches a reported vulnerability in CentOS Security Update for samba (CESA-2017:1950).</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release includes a patch for the CentOS Security Update for python (CESA-2017:1868) security vulnerability.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release patches the CentOS Security Update for openssh (CESA-2017:2029) security vulnerability.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release patches the system to CentOS Security Update for openldap (CESA-2017:1852).</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for mariadb (CESA-2017:2192) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for libtasn1 (CESA-2017:1860) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies the following patches:</p>
+<ul>
+<li>CentOS Security Update for kernel (CESA-2017:1842)</li>
+<li>CentOS Security Update for kernel (CESA-2017:2473)</li>
+<li>CentOS Security Update for kernel (CESA-2017:1615)</li>
+<li>CentOS Security Update for Kernel (CESA-2017:1484) (Stack Clash)</li>
+</ul>
+<p>These patches are proactive prevent for reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for gnutls (CESA-2017:2292) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for glibc (CESA-2017:1916) and CentOS Security Update for glibc (CESA-2017:1481) (Stack Clash) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for ghostscript (CESA-2017:2180) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This release resolves a reported security vulnerability with a CentOS Security Update for tigervnc.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for curl Security Update (CESA-2017:2016) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for bash Security Update (CESA-2017:1931) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for graphite2 (CESA-2017:1793) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>This upgrade applies patch CentOS Security Update for bind (CESA-2017:1680) to prevent reported security vulnerabilities in the patched software.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Previously, upgrades did not preserve a user's custom color preferences. This was fixed in this release.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>Previously, users received an error when removing columns from a broken relationship. These errors were caused by underlying formulas in the relationship configuration. This is no longer the case. The system now handles removal of columns where underlying formulas are involved.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>An issue was resolved where a change in the underlying system where the system did not properly recover space after a crash. This is no longer an issue, the system properly recovers HDFS space after a crash.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>4.4 New&nbsp;Features and Functionality</h2>
 <table style="border-collapse: collapse; width: 100%; font-size: inherit; font-family: inherit;" border="0" cellspacing="0" cellpadding="0">
 <thead>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
@@ -236,7 +456,7 @@ permalink: /:collection/:path.html
 </tr>
 </tbody>
 </table>
-<h2>Fixed Bugs</h2>
+<h2>4.4 Fixed Bugs</h2>
 <table style="border-collapse: collapse; width: 100%; font-size: inherit; font-family: inherit;" border="0" cellspacing="0" cellpadding="0">
 <thead>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
