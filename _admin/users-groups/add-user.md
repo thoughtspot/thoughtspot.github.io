@@ -52,7 +52,7 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 ## Edit or delete a user
 
-After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password.
+After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password. You can also change their name as long as it remains unique
 
 As an administrator, you can edit a user and change the groups the user belongs to. You can also edit a user to reset a user’s password by entering and confirming the new password. This is useful if a user has forgotten their password, or to effectively disable an account.
 
