@@ -127,10 +127,9 @@ full backup. Do the following to configure and mount the shared volume.
     ```    
 
 
-## Configure the backup and star the mirror
+## Configure the backup and start the mirror
 
 1. If you haven't already done so, SSH into the primary server.
-
 2. Use the `tscli backup-policy create` command.
 
    The command opens a `vi` editor for you to configure the backup policy. Make
@@ -176,25 +175,24 @@ instance into the primary.
 {% include warning.html content="You should perform this procedure under the supervision of ThoughtSpot customer support." %}
 
 1. Contact ThoughtSpot customer support.
-
 2. If the primary ThoughtSpot cluster is still running, stop it and disconnect it from the network.
 3. SSH into the secondary cluster.
-3. Stop the mirror cluster.
+4. Stop the mirror cluster.
 
    ```
    tscli dr-mirror stop
    ```
 
-4. Verify the mirror has stopped.
+5. Verify the mirror has stopped.
 
    ```
    tscli dr-mirror status
    ```
 
-5. Start the new primary cluster.
+6. Start the new primary cluster.
 
    ```
    tscli cluster start
    ```
-6. Deploy a new mirror.
-7. Set up a backup policy on your new primary cluster.
+7. Deploy a new mirror.
+8. Set up a backup policy on your new primary cluster.
