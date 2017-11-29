@@ -96,14 +96,12 @@ Do the following to configure and mount the shared volume.
     </table>
 
 8. Log into the target machine.
-
 9. Ensure that the target machine is not running a ThoughtSpot cluster.
 
    If a cluster is running on the target machine, contact please contact
    ThoughtSpot Support to delete the cluster.
 
 10. Ensure you have the `tscli` command on the target appliance.
-
 11. Repeat steps 3-5 on the target machine.
 
     The target machine and the primary machine should both be accessing the
@@ -113,13 +111,13 @@ Do the following to configure and mount the shared volume.
 12. Test the configuration by creating a file as the `admin` user.
 
     ```
-    touch <_mount_point_>/testfile
+    touch <mount_point>/testfile
     ```
 
 13. Return to the primary server and make sure you can edit the file.
 
     ```
-    touch <_mount_point_>/testfile
+    touch <mount_point>/testfile
     ```    
 
 
