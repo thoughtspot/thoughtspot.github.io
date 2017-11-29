@@ -421,10 +421,7 @@ entries:
       - title: Log in or out of ThoughtSpot
         url: /end-user/accessing.html
         output: web,ugBk
-      - title: Set your display language (locale)
-        url: /end-user/locale.html
-        output: web,ugBk
-      - title: Your user profile
+      - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk
       - title: Understanding privileges
@@ -708,6 +705,9 @@ entries:
           output: web,ugBk
         - title: View a data profile
           url: /admin/loading/view-your-data-profile.html
+          output: web,ugBk
+        - title: Date and currency format settings
+          url: /end-user/locale.html
           output: web,ugBk
         - levelThreeTitle: SpotIQ
           output: web,ugBk

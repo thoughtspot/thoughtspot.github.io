@@ -7,4 +7,4 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/set_locale.html %}
+{% include content/set_locale.md %}

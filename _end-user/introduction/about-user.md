@@ -11,19 +11,19 @@ To view the user actions, click on your user icon on the top right corner of the
  ![]({{ site.baseurl }}/images/user_icon.png "User icon")
 
 Click **Profile** to go to your profile preference page, where you can change
-your icon, email, and locale preferences.  The locale preferences control the
-language and data formats by geographic locations.
+your icon, email, and locale preferences.  
 
-![]({{ site.baseurl }}/images/profile-locale.png "Specify Profile locale")
+## Language and data format settings
 
+{% include content/set_locale.md %}
 
-For example, if you are using ThoughtSpot in the US, the number formatting
-should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
-`xxx.xxx,xx`.
+## How other users see you
 
 You can change your picture by clicking **Upload Picture**. The system accepts PNG or JPEG files that are under 4MB.
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
+
+## Get email notifications
 
 You can change your email notifications preferences by checking or unchecking **Email me sharing notifications** and clicking **Update Preferences**.
 
