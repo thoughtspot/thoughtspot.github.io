@@ -21,10 +21,16 @@ restore.
 
 ## Prerequisite
 
-You can use an NAS or Samba volume for your share. If you choose NAS, keep in
-mind that too slow a volume potentially break backups or significantly slow
-restore performance.
+Both primary and secondary appliances must use a shared storage volume. You can
+use an NAS or Samba volume for your share. If you choose NAS, keep in mind that
+too slow a volume potentially break backups or significantly slow restore
+performance. The following are good guidelines for choosing storage:
 
+* Provision dedicated a storage volume for periodic backups.
+* Do not use the backup volume for loading data or any other purposes. If backups fill up this storage, other components will suffer.
+* To ensure better supportability and continuity in case local hard disks go bad, the shared storage volume should be network based.
+
+Thoughtspot supports shared storage by mounting NFS or CIFS/Samba based volumes.
 Before you begin, make sure you know if the shared volume is Samba or NAS
 volume. To find out, use the `telnet` command.
 
@@ -121,7 +127,7 @@ full backup. Do the following to configure and mount the shared volume.
     ```    
 
 
-## Configure the periodic backup policy
+## Configure the backup and star the mirror
 
 1. If you haven't already done so, SSH into the primary server.
 
@@ -146,13 +152,49 @@ full backup. Do the following to configure and mount the shared volume.
 
    Use the `<name>` from the policy you created in the previous step.
 
+8. SSH into the secondary recovery appliance.
+9. Use the `tscli dr-mirror` subcommand to start the mirror cluster.
+
+   ```
+   tscli dr-mirror start
+   ```
+
+10. Verify that the cluster has started running in mirror mode
+
+   ```
+   tscli dr-mirror status
+   ```
+
+   It may take some time for the cluster to begin acting as a mirror.
 
 ## Recovery operations
 
 If the primary cluster fails, the secondary cluster can take over its operations
 after a small manual intervention. The manual procedure makes the secondary
-instance into the primary.  
+instance into the primary.
 
-Restoring from the primary backup requires that you first stop the old cluster.
-You should never restore from a snapshot or backup yourself. To perform a
-restore, contact ThoughtSpot Support.
+{% include warning.html content="You should perform this procedure under the supervision of ThoughtSpot customer support." %}
+
+1. Contact ThoughtSpot customer support.
+
+2. If the primary ThoughtSpot cluster is still running, stop it and disconnect it from the network.
+3. SSH into the secondary cluster.
+3. Stop the mirror cluster.
+
+   ```
+   tscli dr-mirror stop
+   ```
+
+4. Verify the mirror has stopped.
+
+   ```
+   tscli dr-mirror status
+   ```
+
+5. Start the new primary cluster.
+
+   ```
+   tscli cluster start
+   ```
+6. Deploy a new mirror.
+7. Set up a backup policy on your new primary cluster.
