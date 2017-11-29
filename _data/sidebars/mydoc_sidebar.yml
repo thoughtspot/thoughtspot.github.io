@@ -1101,7 +1101,7 @@ entries:
       - title: Mount a NAS file system
         url: /disaster-recovery/NAS-mount.html
         output: web,drgBk
-      - title: Understand and configure disaster recovery
+      - title: Configure disaster recovery
         url: /disaster-recovery/set-up-DR-config.html
         output: web,drgBk
   - sectiontitle: Reference
