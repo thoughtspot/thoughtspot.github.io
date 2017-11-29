@@ -9,7 +9,7 @@ Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtS
 
 ## JavaScript API Capabilities
 
-The ThoughtSpot JavaScript API \(JS API\) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:
+The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:
 
 -   Authenticate to ThoughtSpot.
 -   Embed visualizations from ThoughtSpot in your Web page using iframes.

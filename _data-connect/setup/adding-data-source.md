@@ -67,7 +67,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
     3. Click **OK**.
     4. You can create as many filters as you need by clicking **+** and repeating these steps.
 10. You can optionally apply data transformations and write the result to a new column by clicking **New...** under **Expressions**.
-    1. Give the new column an alphanumeric name \(underscores are okay).
+    1. Give the new column an alphanumeric name (underscores are okay).
       You can rename it later in the ThoughtSpot application.
     2. Select the table and column the data will come from.
     3. Type in an expression. You can see a list of expressions by clicking the **Expression assistant**.
@@ -92,7 +92,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 16. You can add a pre-script that will run your TQL script before the datasource uploads.
     Additionally, you can add a post-script that will run your TQL script after the data uploads. This feature is not available if Informatica Cloud Services is still in use.
 17. Click **Import**.
-18. If you want to view or change the SQL DDL \(data definition language) that will create the target table, click **here**.
+18. If you want to view or change the SQL DDL (data definition language) that will create the target table, click **here**.
 
      ![]({{ site.baseurl }}/images/data_connect_edit_schema.png "Edit schema here")
 

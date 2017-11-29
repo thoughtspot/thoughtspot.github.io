@@ -6,7 +6,7 @@ summary: "If you want to delete a data source, make sure and read this section s
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Whenever you delete a data source, you also have the option to drop or retain the table it loads into in the target system \(ThoughtSpot\). This is useful when you make changes to a table and create a new data source that loads into the table. So, you can safely delete any data source that references a target table that you don't want to lose.
+Whenever you delete a data source, you also have the option to drop or retain the table it loads into in the target system (ThoughtSpot). This is useful when you make changes to a table and create a new data source that loads into the table. So, you can safely delete any data source that references a target table that you don't want to lose.
 
 Before you begin, if there are any recurring data load jobs for the data source you are deleting, follow the steps in [Stop a scheduled job from running](stop-scheduled-job.html). Then, do the following to delete a data source:
 

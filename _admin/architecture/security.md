@@ -88,5 +88,4 @@ they upload or download data or share with all users. These privileges are
 defined on a group level and inherit downwards. So, if Group A had child groups
 Group B and Group C, then any privilege given to Group A is also available to
 Group B and Group C. What this often means is that separate sets of groups are
-required to manage privileges. Non-shareable groups (planned for version 4.4)
-should eliminate this potential issue.
+required to manage privileges. 

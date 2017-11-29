@@ -42,14 +42,14 @@ To change the sharding on a Data Source:
 
     For example:
 
-    -   To make a sharded table into a dimension table \(replicated on every node\), use:
+    -   To make a sharded table into a dimension table (replicated on every node), use:
 
         ```
         ALTER TABLE "products"
            SET DIMENSION;
         ```
 
-    -   To make a dimension table into a sharded \(fact\) table or change the number of shards, use:
+    -   To make a dimension table into a sharded (fact) table or change the number of shards, use:
 
         ```
         ALTER TABLE "sales"

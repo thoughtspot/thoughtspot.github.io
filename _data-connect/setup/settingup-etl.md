@@ -31,7 +31,7 @@ To set up ThoughtSpot Data Connect:
 
         If you want to use HTTPS with your URL, you will need to use a signed certificate.
 
-        The parameter `org_id` specifies the Informatica id of the organization \(company\). `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only `003XYZ`
+        The parameter `org_id` specifies the Informatica id of the organization (company). `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only `003XYZ`
 
         The command `--pin_to` is optional. If you specify an IP to pin to, that node becomes sticky to the Informatica agent, and will always be used. This defaults to the public IP address of the localhost where this command was run.
 

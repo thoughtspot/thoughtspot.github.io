@@ -22,7 +22,7 @@ In the event that the production cluster is destroyed, monitoring and alerting w
     $ tscli backup mirror-status
     ```
 
-4. Start up the periodic backups on the mirror \(which is now the new primary\):
+4. Start up the periodic backups on the mirror (which is now the new primary):
 
     ```
     $ tscli backup set-periodic --at <hour1,hour2, ...> --directory <shared_backup_directory> [--num_backups <num_backups>]

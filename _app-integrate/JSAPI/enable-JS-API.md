@@ -9,7 +9,7 @@ This procedure shows how to include the ThoughtSpot JavaScript API (JS API) in y
 
 Your web page needs to authenticate by calling `window.thoughtspot.initialize` and waiting for the `onInitializationCallback` to be called before embedding any ThoughtSpot visualizations or making any ThoughtSpot REST API calls.
 
-If your ThoughtSpot system is configured for Single Sign On \(SSO\), the JS API call `window.thoughtspot.initialize` can cause the entire Web page to be re-directed to your Identity Provider \(IDP\). This implies that you may not execute any of your application logic before `window.thoughtspot.initialize` has called your callback, because any possible redirection could interfere with your application logic. The recommended way of achieving this is to:
+If your ThoughtSpot system is configured for Single Sign On (SSO), the JS API call `window.thoughtspot.initialize` can cause the entire Web page to be re-directed to your Identity Provider (IDP). This implies that you may not execute any of your application logic before `window.thoughtspot.initialize` has called your callback, because any possible redirection could interfere with your application logic. The recommended way of achieving this is to:
 
 1. Place the JS API in the `<head>` section of the HTML on your Web page.
 2. Ensure that the JS API script tag is the first script to be loaded in the page.
@@ -56,7 +56,7 @@ To enable the JS API:
     </script>
     ```
 
-4. Set up CORS \(Cross-Origin HTTP Request\) to control what domains are allowed to use this code to authorize users:
+4. Set up CORS (Cross-Origin HTTP Request) to control what domains are allowed to use this code to authorize users:
     1. Log in to the Linux shell using SSH.
     2. Issue the command to set the domains that will be allowed to access ThoughtSpot using the JS API using this syntax:
 
@@ -65,7 +65,7 @@ To enable the JS API:
              --key "/config/nginx/corshosts"
         ```
 
-        When supplying an IP address, you have to escape the dots with a triple backslash \(\\\) as shown in this example:
+        When supplying an IP address, you have to escape the dots with a triple backslash (`\\\`) as shown in this example:
 
         ```
         $ echo "https?://(localhost|10\\\.77\\\.20\\\.87:443)"

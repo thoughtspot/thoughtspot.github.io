@@ -21,7 +21,7 @@ If you notice these symptoms, contact ThoughtSpot Support.
 
 The guidelines for disk replacement are:
 
--   Losing one or two disks: The cluster continues to operate, but you should replace the disk\(s\) at the earliest convenience.
+-   Losing one or two disks: The cluster continues to operate, but you should replace the disk(s) at the earliest convenience.
 -   Losing more than two disks: The cluster continues to operate, but the application may be inaccessible. Replace the disks to restore original operation.
 
 Disk replacement is done on site by ThoughtSpot Support. Disks can be replaced while ThoughtSpot is running. However the disk replacement procedure involves a node restart, so a disruption of up to five minutes can happen, depending on what services are running on that node.

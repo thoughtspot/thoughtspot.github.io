@@ -11,7 +11,7 @@ To set up and explore your data, access ThoughtSpot from a standard Web browser 
 
 Before accessing ThoughtSpot, you need:
 
--   The Web address \(IP address or server name\) for ThoughtSpot.
+-   The Web address (IP address or server name) for ThoughtSpot.
 -   A network connection.
 -   A Web browser.
 -   A username and password for ThoughtSpot.
