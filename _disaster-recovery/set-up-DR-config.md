@@ -6,14 +6,18 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Disaster recovery setup configures periodic backups from the primary to a
-shared, mirrored storage (NFS mounted drive or NAS). When choosing times and
-frequencies for periodic backups, you should choose a reasonable frequency. Do
-not schedule backups too close together, since a backup cannot start when
-another backup is still running. Avoid backing up when the system is
-experiencing a heavy load, such as peak usage or a large data load.
+shared, mirrored storage volume. Your shared volume should have a minimum of
+15GB free and at least 20GB for a full backup.
 
-Your shared volume should have a minimum of 15GB free and at least 20GB for a full
-backup.
+When choosing times and frequencies for periodic backups, you should choose a
+reasonable frequency. Do not schedule backups too close together, since a backup
+cannot start when another backup is still running. Avoid backing up when the
+system is experiencing a heavy load, such as peak usage or a large data load.
+
+This system makes it possible for you to restore the last the last backed up
+state from the primary to the secondary sever. If you configure daily backups,
+any metadata or data loaded/created after the last backup is not included in
+restore.
 
 ## Prerequisite
 
