@@ -2,6 +2,7 @@
 title: [Configure periodic backups]
 keywords: tbd
 last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -78,6 +79,8 @@ To configure periodic backups:
    By default, newly created policies are automatically enabled. To disable a policy, use the `tscli backup-policy disable` command.
 
 5. Verify the policy using the `tscli backup periodic-config <name>` command.
+
+## Doing more with backup
 
 The following table lists some additional backup commands you can use.
 
