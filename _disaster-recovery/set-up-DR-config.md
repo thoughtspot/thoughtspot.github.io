@@ -99,8 +99,8 @@ Do the following to configure and mount the shared volume.
 
 9. Ensure that the target machine is not running a ThoughtSpot cluster.
 
-  If a cluster is running on the target machine, contact please contact
-  ThoughtSpot Support to delete the cluster.
+   If a cluster is running on the target machine, contact please contact
+   ThoughtSpot Support to delete the cluster.
 
 10. Ensure you have the `tscli` command on the target appliance.
 
