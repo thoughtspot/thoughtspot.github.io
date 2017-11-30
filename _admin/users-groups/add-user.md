@@ -30,25 +30,61 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 5. Enter the details for the new user:
 
-     ![]({{ site.baseurl }}/images/new_user_dialogue_3.2.png "Create a user manually")
+     ![]({{ site.baseurl }}/images/new_user_dialogue.png "Create a user manually")
 
-    1. **Name**: A unique name for the user (usually their first and last name).
-    2. **Username**: A login name for the user.
 
-        **Note:** Usernames must be unique and lowercase.
+     <table>
+     <colgroup>
+     <col width="20%" />
+     <col width="80%" />
+     </colgroup>
+      <tr>
+        <th>Field</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <th>Username</th>
+        <td><p>A login name for the user. Usernames must be unique and lowercase.</p>
+        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+      </tr>
+      <tr>
+        <th>Display name</th>
+        <td>A unique name for the user (usually their first and last name).</td>
+      </tr>
+      <tr>
+        <th>Sharing visibility</th>
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
+        this user is an option in the <b>Share</b> dialog.</td>
+      </tr>
+      <tr>
+        <th>Change password</th>
+        <td>A password.</td>
+      </tr>
+      <tr>
+        <th>Confirm password</th>
+        <td>Enter the password again.</td>
+      </tr>   
+      <tr>
+        <th>Email address</th>
+        <td>The user's email address. This is used for notification when another user shares something with them.</td>
+      </tr>         
+      <tr>
+        <th>Manage groups</th>
+        <td><p>Select all the groups the user will belong to. If you add the user to a group that has the privilege <b>Has administration privileges</b>, note that they will be able to see all the data in ThoughtSpot. </p>
+        <p>
+        When you create a new user, the groups they belong to define the user's:
+        <ul>
+        <li>Privileges, the actions they are allowed to do, which are defined when you <a href="add-group.html">Add a group and set security privileges</a>.</li>
+        <li>Permissions, the data they can access and view, which is defined when you <a href="/admin/data-security/sharing-security-overview.html#">Data security</a>.</li>
+      </ul>
+        </p>
+        <p>Administrators can see all data sources, and <a href="/admin/data-security/about-row-security.html#">Row level security</a> does not apply to them.</p></td>
+      </tr>
+     </table>
 
-        If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. username@ldap.thoughtspot.com), and you must enter a dummy password.
+6. Click **Add** to create the user.
 
-    3. **Password** and **Confirm Password**: A temporary password.
-    4. **E-mail Address**: The user's email address. This is used for notification when another user shares something with them.
-    5. **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security]({{ site.baseurl }}/admin/data-security/about-row-security.html#) does not apply to them.
 
-6. Click **Save** to create the user.
-
-    When you create a new user, the groups they belong to define the user's:
-
-    -   Privileges - the actions they are allowed to do, which are defined when you [Add a group and set security privileges](add-group.html).
-    -   Permissions - the data they can access and view, which is defined when you [Data security]({{ site.baseurl }}/admin/data-security/sharing-security-overview.html#).
 
 ## Edit or delete a user
 

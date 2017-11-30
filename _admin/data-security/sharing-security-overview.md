@@ -6,11 +6,17 @@ summary: "Data security refers to which users can see which data in the ThoughtS
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Sharing and security privileges govern what data a user can access and what they can do with the data. Admins can use privileges to regulate access to information and provide a personalized user experience.
+Sharing and security privileges govern what data a user can access and what they
+can do with the data. Admins can use privileges to regulate access to
+information and provide a personalized user experience.
 
 ## Users, groups, and privileges
 
-Data security applies to users and groups. Users can be managed [manually]({{ site.baseurl }}/admin/users-groups/about-users-groups.html#) or through [LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html#). Each user can have membership in one or more groups. Admins can make security settings that determine what users are allowed to do in ThoughtSpot. These settings are applied at the group level.
+Data security applies to users and groups. Users can be managed [manually]({{site.baseurl }}/admin/users-groups/about-users-groups.html#) or through
+[LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html#). Each user can have
+membership in one or more groups. Admins can make security settings that
+determine what users are allowed to do in ThoughtSpot. These settings are
+applied at the group level.
 
 The following table shows the intersection of user privilege and ability:
 
@@ -19,7 +25,11 @@ The following table shows the intersection of user privilege and ability:
 
 ## Security model for sharing objects
 
-You can share with groups and with individual users. Sharing of tables can be defined at the table, column, or row level. This provides flexibility in modeling your data security policy. Security and sharing settings apply to several different types of objects, each of which has its own security default settings and rules.
+You can share with groups and with individual users. Sharing of tables can be
+defined at the table, column, or row level. This provides flexibility in
+modeling your data security policy. Security and sharing settings apply to
+several different types of objects, each of which has its own security default
+settings and rules.
 
 |Object type|Description|Default security model|
 |-----------|-----------|----------------------|
@@ -32,7 +42,9 @@ You can share with groups and with individual users. Sharing of tables can be de
 
 ## Row level security
 
-ThoughtSpot includes robust row level security, which allows you to filter all objects users see based on conditions you set at the level of row values in base data tables.
+ThoughtSpot includes robust row level security, which allows you to filter all
+objects users see based on conditions you set at the level of row values in base
+data tables.
 
 
 ## Related information
