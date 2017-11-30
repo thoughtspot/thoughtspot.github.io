@@ -50,7 +50,7 @@ In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.
 
-![]({{ site.baseurl }}/images/share_venn.png "")
+![]({{ site.baseurl }}/images/share_venn.png)
 
 Only users in the **Administrators** group can share with groups marked as **NOT
 SHAREABLE**.
@@ -62,7 +62,7 @@ objects users see based on conditions you set at the level of row values in base
 data tables.
 
 You may find it useful to create groups for RLS. To prevent these groups from
-appearing in the **Share** dialog, create a NOT SHAREABLE group with a single
+appearing in the **Share** dialog, create a **NOT SHAREABLE** group with a single
 user and an RLS group with another single user (1-to-1).
 
 ## Related information
