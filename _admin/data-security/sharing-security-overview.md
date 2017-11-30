@@ -40,12 +40,30 @@ settings and rules.
 |Worksheets|A worksheet created using a Web browser.|Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)|
 |Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)|
 
+When you share an object, only the users and groups that have **SHAREABLE** set
+for the **Sharing visibility** option appear on the dialog.
+
+![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
+
+User in groups marked **NOT SHAREABLE** cannot share objects among themselves.
+In multi-tenant scenarios, admins can create groups that bring together portions
+of two non-share groups so that they can share. For example, the members of
+group C can share even if they belong to other groups that cannot.
+
+![]({{ site.baseurl }}/images/share_venn.png "")
+
+Only users in the **Administrators** group can share with groups marked as **NOT
+SHAREABLE**.
+
 ## Row level security
 
 ThoughtSpot includes robust row level security, which allows you to filter all
 objects users see based on conditions you set at the level of row values in base
 data tables.
 
+You may find it useful to create groups for RLS. To prevent these groups from
+appearing in the **Share** dialog, create a NOT SHAREABLE group with a single
+user and an RLS group with another single user (1-to-1).
 
 ## Related information
 

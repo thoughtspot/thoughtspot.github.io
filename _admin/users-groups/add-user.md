@@ -32,7 +32,6 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
      ![]({{ site.baseurl }}/images/new_user_dialogue.png "Create a user manually")
 
-
      <table>
      <colgroup>
      <col width="20%" />
