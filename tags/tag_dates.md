@@ -1,6 +1,6 @@
 ---
-title: "Keywords"
-tagName: keywords
+title: "Dates"
+tagName: dates
 search: exclude
 sidebar: mydoc_sidebar
 ---

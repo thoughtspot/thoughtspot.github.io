@@ -19,6 +19,357 @@ entries:
       output: pdf
       type: frontmatter
 # end PDF output defs
+  - sectiontitle: Users
+    output: web,ugBk
+    sectionitems:
+    - title: Introduction
+      url: /end-user/introduction/introduction.html
+      output: web,ugBk
+    - levelTwoTitle: Getting Started
+      output: web,ugBk
+      levelTwoItems:
+      - title: Finding your way around
+        url: /end-user/introduction/about-navigating-thoughtspot.html
+        output: web,ugBk
+      - title: Log in or out of ThoughtSpot
+        url: /end-user/accessing.html
+        output: web,ugBk
+      - title: Your user preferences
+        url: /end-user/introduction/about-user.html
+        output: web,ugBk
+      - title: Understanding privileges
+        url: /end-user/introduction/about-privileges-end-user.html
+        output: web,ugBk
+      - title: Use stickers to organize
+        url: /end-user/stickers.html
+        output: web,ugBk
+    - levelTwoTitle: Use Search
+      output: web,ugBk
+      levelTwoItems:
+      - title: What are searches and answers?
+        url: /end-user/search/about-starting-a-new-search.html
+        output: web,ugBk
+      - levelThreeTitle: Search basics
+        output: web,ugBk
+        levelThreeItems:
+        - title: Start a new search
+          url: /end-user/search/start-a-new-search.html
+          output: web,ugBk
+        - title: Choose a data source
+          url: /end-user/search/about-choosing-sources.html
+          output: web,ugBk
+        - title: Search bar features
+          url: /end-user/search/about-the-search-bar.html
+          output: web,ugBk
+        - title: Search suggestions
+          url: /end-user/search/recent-searches.html
+          output: web,ugBk
+        - title: Search results and column types
+          url: /end-user/search/about-attributes-and-measures.html
+          output: web,ugBk
+        - title: Last data refresh time
+          url: /end-user/search/data-refresh-time.html
+          output: web,ugBk
+        - title: Work with Answers
+          url: /end-user/search/work-with-answers.html
+          output: web,ugBk
+      - title: Results that are tables
+        url: /end-user/search/about-tables.html
+        output: web,ugBk
+      - levelThreeTitle: Use keywords in search
+        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of keyword searchess
+          url: /complex-search/about-keyword-searches.html
+          output: web,ugBk
+        - title: Search using growth over time
+          url: /complex-search/search-using-growth-over-time.html
+          output: web,ugBk
+        - title: Proximity searches "near" and "farther than"
+          url: /admin/features/proximity-search.html
+          output: web,ugBk
+        - title: Time series analysis
+          url: /complex-search/period-searches.html
+          output: web,ugBk
+      - levelThreeTitle: Work with filters
+        output: web,ugBk
+        levelThreeItems:
+        - title: Understand filters
+          url: /complex-search/about-filters.html
+          output: web,ugBk
+        - title: Add a filter to a table
+          url: /end-user/search/filter-from-column-headers.html
+          output: web,ugBk
+        - title: Add a filter to a chart
+          url: /end-user/search/filter-from-chart-axes.html
+          output: web,ugBk
+        - title: Create a bulk filter
+          url: /complex-search/create-bulk-filter.html
+          output: web,ugBk
+        - title: Delete a filter
+          url: /end-user/search/delete-a-filter.html
+          output: web,ugBk
+        - title: Filter on null, blank, or empty values
+          url: /complex-search/about-filters-for-null.html
+          output: web,ugBk
+      - levelThreeTitle: Other search actions
+        output: web,ugBk
+        levelThreeItems:
+        - title: Other search actions
+          url: /complex-search/search-actions.html
+          output: pdf
+        - title: Change result display options
+          url: /complex-search/change-the-view.html
+          output: web,ugBk
+        - title: Show underlying data
+          url: /complex-search/show-underlying-data.html
+          output: web,ugBk
+        - title: See the search behind a result
+          url: /complex-search/drill-down.html
+          output: web,ugBk
+        - title: Apply conditional formatting to a table
+          url: /end-user/search/apply-conditional-formatting.html
+          output: web,ugBk
+        - title: Download your search
+          url: /complex-search/download-your-search.html
+          output: web,ugBk
+        - title: Replay search
+          url: /end-user/search/replay-search.html
+          output: web,ugBk
+    - levelTwoTitle: Work with charts
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand charts
+        url: /end-user/search/about-charts.html
+        output: web,ugBk
+      - levelThreeTitle: Chart types
+        output: web,ugBk
+        levelThreeItems:
+        - title: Column charts
+          url: /end-user/search/about-column-charts.html
+          output: web,ugBk
+        - title: Bar charts
+          url: /end-user/search/about-bar-charts.html
+          output: web,ugBk
+        - title: Line charts
+          url: /end-user/search/about-line-charts.html
+          output: web,ugBk
+        - title: Pie charts
+          url: /end-user/search/pie-charts.html
+          output: web,ugBk
+        - title: Area charts
+          url: /end-user/search/area-charts.html
+          output: web,ugBk
+        - title: Scatter charts
+          url: /end-user/search/about-scatter-charts.html
+          output: web,ugBk
+        - title: Bubble charts
+          url: /end-user/search/about-bubble-charts.html
+          output: web,ugBk
+        - title: Pareto charts
+          url: /end-user/search/about-pareto-charts.html
+          output: web,ugBk
+        - title: Waterfall charts
+          url: /end-user/search/about-waterfall-charts.html
+          output: web,ugBk
+        - title: Treemap charts
+          url: /end-user/search/about-treemap-charts.html
+          output: web,ugBk
+        - title: Line column charts
+          url: /end-user/search/line-column-charts.html
+          output: web,ugBk
+        - title: Funnel charts
+          url: /end-user/search/about-funnel-charts.html
+          output: web,ugBk
+        - title: Geo charts
+          url: /end-user/search/about-geo-charts.html
+          output: web,ugBk
+        - title: Pivot table
+          url: /complex-search/about-pivoting-a-table.html
+          output: web,ugBk
+      - levelThreeTitle: Changing a chart
+        output: web,ugBk
+        levelThreeItems:
+        - title: Change the chart
+          url: /end-user/search/change-the-chart.html
+          output: pdf
+        - title: Reorder the labels
+          url: /end-user/search/reorder-values-on-the-x-axis.html
+          output: web,ugBk
+        - title: Set the y-axis range
+          url: /end-user/search/set-the-y-axis-scale.html
+          output: web,ugBk
+        - title: Hide and show values
+          url: /end-user/search/hide-and-show-values.html
+          output: web,ugBk
+        - title: Change chart colors
+          url: /end-user/search/change-chart-colors.html
+          output: web,ugBk
+        - title: Additional chart options
+          url: /end-user/search/show-data-labels.html
+          output: web,ugBk
+        - title: Zoom into a chart
+          url: /end-user/search/zoom-into-a-chart.html
+          output: web,ugBk
+    - levelTwoTitle: Work with formulas
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand formulas
+        url: /complex-search/add-formula-to-search.html
+        output: web,ugBk
+      - title: Add a formula to a search
+        url: /complex-search/how-to-add-formula.html
+        output: web,ugBk
+      - title: View or edit a formula in a search
+        url: /complex-search/edit-formula-in-answer.html
+        output: web,ugBk
+      - levelThreeTitle: Aggregate formulas
+        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of aggregate formulas
+          url: /complex-search/aggregation-formulas.html
+          output: web,ugBk
+        - title: Aggregates over time
+          url: /complex-search/about-cumulative-formulas.html
+          output: web,ugBk
+        - title: Calculate the cumulative sum
+          url: /complex-search/search-using-the-cumulative-function.html
+          output: web,ugBk
+        - title: Grouping formulas
+          url: /complex-search/about-pinned-measures.html
+          output: web,ugBk
+        - title: Moving formulas
+          url: /complex-search/about-moving-formulas.html
+          output: web,ugBk
+        - title: Calculate a moving average
+          url: /complex-search/search-using-the-moving-function.html
+          output: web,ugBk
+      - title: Conversion formulas
+        url: /complex-search/conversion-formulas.html
+        output: web,ugBk
+      - title: Date formulas
+        url: /advanced-search/formulas/date-formulas.html
+        output: web,ugBk
+      - title: Percent (simple number) calculations
+        url: /advanced-search/formulas/percent-calculations.html
+        output: web,ugBk
+      - title: Conditional formulas (operators)
+        url: /advanced-search/formulas/conditional-sum.html
+        output: web,ugBk
+      - title: Nested formulas
+        url: /complex-search/about-nested-formulas.html
+        output: web,ugBk
+      - title: Formulas for chasm traps
+        url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
+        output: web,ugBk
+    - levelTwoTitle: Work with worksheets
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand worksheets
+        url: /complex-search/about-query-on-query.html
+        output: web,ugBk
+      - title: Save a search as a worksheet
+        url: /complex-search/create-aggregated-worksheet.html
+        output: web,ugBk
+      - title: Create a search from a worksheet
+        url: /complex-search/do-query-on-query.html
+        output: web,ugBk
+      - title: Worksheet example scenarios
+        url: /complex-search/more-example-scenarios.html
+        output: web,ugBk
+    - levelTwoTitle: Use pinboards
+      output: web,ugBk
+      levelTwoItems:
+        - title: Basic pinboard usage
+          url: /end-user/pinboards/about-pinboards.html
+          output: web,ugBk
+        - title: Edit the layout of a pinboard
+          url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
+          output: web,ugBk
+        - title: Pinboard filters
+          url: /complex-search/pinboard-filters.html
+          output: web,ugBk
+        - title: Schedule a pinboard job
+          url: /admin/manage-jobs/schedule-a-pinboard-job.html
+          output: web,ugBk
+        - title: Search actions within a pinboard
+          url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard
+          url: /end-user/pinboards/copy-a-pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard or visualization link
+          url: /end-user/pinboards/copy-link-for-a-pinboard.html
+          output: web,ugBk
+        - title: Reset a pinobard or visualization
+          url: /end-user/pinboards/reset-a-visualization.html
+          output: web,ugBk
+        - title: Start a slideshow
+          url: /end-user/pinboards/start-a-slideshow.html
+          output: web,ugBk
+    - levelTwoTitle: Work with data
+      output: web,ugBk
+      levelTwoItems:
+        - title: "Understand data sources"
+          url: /end-user/data-view/data-intro-end-user.html
+          output: web,ugBk
+        - title: Create and load CSV Files
+          url: /end-user/data-view/generate-flat-file.html
+          output: web,ugBk
+        - title: Append data through the UI
+          url: /admin/loading/append-data-from-a-web-browser.html
+          output: web,ugBk
+        - title: View a data profile
+          url: /admin/loading/view-your-data-profile.html
+          output: web,ugBk
+        - title: Date and currency format settings
+          url: /end-user/locale.html
+          output: web,ugBk
+        - levelThreeTitle: SpotIQ
+          output: web,ugBk
+          levelThreeItems:
+          - title: What is SpotIQ
+            url: /spotiq/whatisspotiq.html
+            output: web,ugBk
+          - title: "101: Load and analyze data"
+            url: /spotiq/overview.html
+            output: web,ugBk
+          - title: "101: Review and save insights"
+            url: /spotiq/work-with-insights.html
+            output: web,ugBk
+          - title: "101: Do more with SpotIQ"
+            url: /spotiq/spotiq-customize.html
+            output: web,ugBk
+          - title: "Best SpotIQ Practices"
+            url: /spotiq/special-topics.html
+            output: web,ugBk
+          - title: "Custom SpotIQ analysis"
+            url: /spotiq/customization.html
+            output: web,ugBk
+          - title: "Advanced R Customizations"
+            url: /spotiq/adv-customize-withr.html
+            output: web,ugBk
+        - levelThreeTitle: Share your work
+          output: web,ugBk
+          levelThreeItems:
+          - title: About sharing
+            url: /end-user/data-view/sharing-for-end-users.html
+            output: web,ugBk
+          - title: Share a pinboard
+            url: /end-user/pinboards/share-pinboards.html
+            output: web,ugBk
+          - title: Share answers
+            url: /end-user/pinboards/share-answers.html
+            output: web,ugBk
+          - title: Share uploaded data
+            url: /end-user/data-view/share-user-imported-data.html
+            output: web,ugBk
+          - title: Revoke access (unshare)
+            url: /end-user/pinboards/unshare.html
+            output: web,ugBk
+    - title: Get help
+      url: /end-user/help-center/what-you-can-find-in-the-help-center.html
+      output: web,ugBk
   - sectiontitle: Administration
     output: web,admBk
     sectionitems:
@@ -406,354 +757,6 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
-  - sectiontitle: Users
-    output: web,ugBk
-    sectionitems:
-    - title: Introduction
-      url: /end-user/introduction/introduction.html
-      output: web,ugBk
-    - levelTwoTitle: Getting Started
-      output: web,ugBk
-      levelTwoItems:
-      - title: Finding your way around
-        url: /end-user/introduction/about-navigating-thoughtspot.html
-        output: web,ugBk
-      - title: Log in or out of ThoughtSpot
-        url: /end-user/accessing.html
-        output: web,ugBk
-      - title: Your user preferences
-        url: /end-user/introduction/about-user.html
-        output: web,ugBk
-      - title: Understanding privileges
-        url: /end-user/introduction/about-privileges-end-user.html
-        output: web,ugBk
-      - title: Use stickers to organize
-        url: /end-user/stickers.html
-        output: web,ugBk
-    - levelTwoTitle: Using Search
-      output: web,ugBk
-      levelTwoItems:
-      - title: What are searches and answers?
-        url: /end-user/search/about-starting-a-new-search.html
-        output: web,ugBk
-      - levelThreeTitle: Search basics
-        output: web,ugBk
-        levelThreeItems:
-        - title: Start a new search
-          url: /end-user/search/start-a-new-search.html
-          output: web,ugBk
-        - title: Choose a data source
-          url: /end-user/search/about-choosing-sources.html
-          output: web,ugBk
-        - title: Search bar features
-          url: /end-user/search/about-the-search-bar.html
-          output: web,ugBk
-        - title: Search suggestions
-          url: /end-user/search/recent-searches.html
-          output: web,ugBk
-        - title: Search results and column types
-          url: /end-user/search/about-attributes-and-measures.html
-          output: web,ugBk
-        - title: Last data refresh time
-          url: /end-user/search/data-refresh-time.html
-          output: web,ugBk
-        - title: Work with Answers
-          url: /end-user/search/work-with-answers.html
-          output: web,ugBk
-      - title: Results that are tables
-        url: /end-user/search/about-tables.html
-        output: web,ugBk
-      - levelThreeTitle: Use keywords in search
-        output: web,ugBk
-        levelThreeItems:
-        - title: Overview of keyword searchess
-          url: /complex-search/about-keyword-searches.html
-          output: web,ugBk
-        - title: Search using growth over time
-          url: /complex-search/search-using-growth-over-time.html
-          output: web,ugBk
-        - title: Proximity searches "near" and "farther than"
-          url: /admin/features/proximity-search.html
-          output: web,ugBk
-      - levelThreeTitle: Work with filters
-        output: web,ugBk
-        levelThreeItems:
-        - title: Understand filters
-          url: /complex-search/about-filters.html
-          output: web,ugBk
-        - title: Add a filter to a table
-          url: /end-user/search/filter-from-column-headers.html
-          output: web,ugBk
-        - title: Add a filter to a chart
-          url: /end-user/search/filter-from-chart-axes.html
-          output: web,ugBk
-        - title: Create a bulk filter
-          url: /complex-search/create-bulk-filter.html
-          output: web,ugBk
-        - title: Delete a filter
-          url: /end-user/search/delete-a-filter.html
-          output: web,ugBk
-        - title: Filter on null, blank, or empty values
-          url: /complex-search/about-filters-for-null.html
-          output: web,ugBk
-      - levelThreeTitle: Other search actions
-        output: web,ugBk
-        levelThreeItems:
-        - title: Other search actions
-          url: /complex-search/search-actions.html
-          output: pdf
-        - title: Change result display options
-          url: /complex-search/change-the-view.html
-          output: web,ugBk
-        - title: Show underlying data
-          url: /complex-search/show-underlying-data.html
-          output: web,ugBk
-        - title: See the search behind a result
-          url: /complex-search/drill-down.html
-          output: web,ugBk
-        - title: Apply conditional formatting to a table
-          url: /end-user/search/apply-conditional-formatting.html
-          output: web,ugBk
-        - title: Download your search
-          url: /complex-search/download-your-search.html
-          output: web,ugBk
-        - title: Replay search
-          url: /end-user/search/replay-search.html
-          output: web,ugBk
-    - levelTwoTitle: Work with charts
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand charts
-        url: /end-user/search/about-charts.html
-        output: web,ugBk
-      - levelThreeTitle: Chart types
-        output: web,ugBk
-        levelThreeItems:
-        - title: Column charts
-          url: /end-user/search/about-column-charts.html
-          output: web,ugBk
-        - title: Bar charts
-          url: /end-user/search/about-bar-charts.html
-          output: web,ugBk
-        - title: Line charts
-          url: /end-user/search/about-line-charts.html
-          output: web,ugBk
-        - title: Pie charts
-          url: /end-user/search/pie-charts.html
-          output: web,ugBk
-        - title: Area charts
-          url: /end-user/search/area-charts.html
-          output: web,ugBk
-        - title: Scatter charts
-          url: /end-user/search/about-scatter-charts.html
-          output: web,ugBk
-        - title: Bubble charts
-          url: /end-user/search/about-bubble-charts.html
-          output: web,ugBk
-        - title: Pareto charts
-          url: /end-user/search/about-pareto-charts.html
-          output: web,ugBk
-        - title: Waterfall charts
-          url: /end-user/search/about-waterfall-charts.html
-          output: web,ugBk
-        - title: Treemap charts
-          url: /end-user/search/about-treemap-charts.html
-          output: web,ugBk
-        - title: Line column charts
-          url: /end-user/search/line-column-charts.html
-          output: web,ugBk
-        - title: Funnel charts
-          url: /end-user/search/about-funnel-charts.html
-          output: web,ugBk
-        - title: Geo charts
-          url: /end-user/search/about-geo-charts.html
-          output: web,ugBk
-        - title: Pivot table
-          url: /complex-search/about-pivoting-a-table.html
-          output: web,ugBk
-      - levelThreeTitle: Changing a chart
-        output: web,ugBk
-        levelThreeItems:
-        - title: Change the chart
-          url: /end-user/search/change-the-chart.html
-          output: pdf
-        - title: Reorder the labels
-          url: /end-user/search/reorder-values-on-the-x-axis.html
-          output: web,ugBk
-        - title: Set the y-axis range
-          url: /end-user/search/set-the-y-axis-scale.html
-          output: web,ugBk
-        - title: Hide and show values
-          url: /end-user/search/hide-and-show-values.html
-          output: web,ugBk
-        - title: Change chart colors
-          url: /end-user/search/change-chart-colors.html
-          output: web,ugBk
-        - title: Additional chart options
-          url: /end-user/search/show-data-labels.html
-          output: web,ugBk
-        - title: Zoom into a chart
-          url: /end-user/search/zoom-into-a-chart.html
-          output: web,ugBk
-    - levelTwoTitle: Work with formulas
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand formulas
-        url: /complex-search/add-formula-to-search.html
-        output: web,ugBk
-      - title: Add a formula to a search
-        url: /complex-search/how-to-add-formula.html
-        output: web,ugBk
-      - title: View or edit a formula in a search
-        url: /complex-search/edit-formula-in-answer.html
-        output: web,ugBk
-      - levelThreeTitle: Aggregate formulas
-        output: web,ugBk
-        levelThreeItems:
-        - title: Overview of aggregate formulas
-          url: /complex-search/aggregation-formulas.html
-          output: web,ugBk
-        - title: Aggregates over time
-          url: /complex-search/about-cumulative-formulas.html
-          output: web,ugBk
-        - title: Calculate the cumulative sum
-          url: /complex-search/search-using-the-cumulative-function.html
-          output: web,ugBk
-        - title: Grouping formulas
-          url: /complex-search/about-pinned-measures.html
-          output: web,ugBk
-        - title: Moving formulas
-          url: /complex-search/about-moving-formulas.html
-          output: web,ugBk
-        - title: Calculate a moving average
-          url: /complex-search/search-using-the-moving-function.html
-          output: web,ugBk
-      - title: Conversion formulas
-        url: /complex-search/conversion-formulas.html
-        output: web,ugBk
-      - title: Date formulas
-        url: /advanced-search/formulas/date-formulas.html
-        output: web,ugBk
-      - title: Percent (simple number) calculations
-        url: /advanced-search/formulas/percent-calculations.html
-        output: web,ugBk
-      - title: Conditional formulas (operators)
-        url: /advanced-search/formulas/conditional-sum.html
-        output: web,ugBk
-      - title: Nested formulas
-        url: /complex-search/about-nested-formulas.html
-        output: web,ugBk
-      - title: Formulas for chasm traps
-        url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
-        output: web,ugBk
-    - levelTwoTitle: Work with worksheets
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand worksheets
-        url: /complex-search/about-query-on-query.html
-        output: web,ugBk
-      - title: Save a search as a worksheet
-        url: /complex-search/create-aggregated-worksheet.html
-        output: web,ugBk
-      - title: Create a search from a worksheet
-        url: /complex-search/do-query-on-query.html
-        output: web,ugBk
-      - title: Worksheet example scenarios
-        url: /complex-search/more-example-scenarios.html
-        output: web,ugBk
-    - levelTwoTitle: Use pinboards
-      output: web,ugBk
-      levelTwoItems:
-        - title: Basic pinboard usage
-          url: /end-user/pinboards/about-pinboards.html
-          output: web,ugBk
-        - title: Edit the layout of a pinboard
-          url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
-          output: web,ugBk
-        - title: Pinboard filters
-          url: /complex-search/pinboard-filters.html
-          output: web,ugBk
-        - title: Schedule a pinboard job
-          url: /admin/manage-jobs/schedule-a-pinboard-job.html
-          output: web,ugBk
-        - title: Search actions within a pinboard
-          url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
-          output: web,ugBk
-        - title: Copy a pinboard
-          url: /end-user/pinboards/copy-a-pinboard.html
-          output: web,ugBk
-        - title: Copy a pinboard or visualization link
-          url: /end-user/pinboards/copy-link-for-a-pinboard.html
-          output: web,ugBk
-        - title: Reset a pinobard or visualization
-          url: /end-user/pinboards/reset-a-visualization.html
-          output: web,ugBk
-        - title: Start a slideshow
-          url: /end-user/pinboards/start-a-slideshow.html
-          output: web,ugBk
-    - levelTwoTitle: Work with data
-      output: web,ugBk
-      levelTwoItems:
-        - title: "Understand data sources"
-          url: /end-user/data-view/data-intro-end-user.html
-          output: web,ugBk
-        - title: Create and load CSV Files
-          url: /end-user/data-view/generate-flat-file.html
-          output: web,ugBk
-        - title: Append data through the UI
-          url: /admin/loading/append-data-from-a-web-browser.html
-          output: web,ugBk
-        - title: View a data profile
-          url: /admin/loading/view-your-data-profile.html
-          output: web,ugBk
-        - title: Date and currency format settings
-          url: /end-user/locale.html
-          output: web,ugBk
-        - levelThreeTitle: SpotIQ
-          output: web,ugBk
-          levelThreeItems:
-          - title: What is SpotIQ
-            url: /spotiq/whatisspotiq.html
-            output: web,ugBk
-          - title: "101: Load and analyze data"
-            url: /spotiq/overview.html
-            output: web,ugBk
-          - title: "101: Review and save insights"
-            url: /spotiq/work-with-insights.html
-            output: web,ugBk
-          - title: "101: Do more with SpotIQ"
-            url: /spotiq/spotiq-customize.html
-            output: web,ugBk
-          - title: "Best SpotIQ Practices"
-            url: /spotiq/special-topics.html
-            output: web,ugBk
-          - title: "Custom SpotIQ analysis"
-            url: /spotiq/customization.html
-            output: web,ugBk
-          - title: "Advanced R Customizations"
-            url: /spotiq/adv-customize-withr.html
-            output: web,ugBk
-        - levelThreeTitle: Share your work
-          output: web,ugBk
-          levelThreeItems:
-          - title: About sharing
-            url: /end-user/data-view/sharing-for-end-users.html
-            output: web,ugBk
-          - title: Share a pinboard
-            url: /end-user/pinboards/share-pinboards.html
-            output: web,ugBk
-          - title: Share answers
-            url: /end-user/pinboards/share-answers.html
-            output: web,ugBk
-          - title: Share uploaded data
-            url: /end-user/data-view/share-user-imported-data.html
-            output: web,ugBk
-          - title: Revoke access (unshare)
-            url: /end-user/pinboards/unshare.html
-            output: web,ugBk
-    - title: Get help
-      url: /end-user/help-center/what-you-can-find-in-the-help-center.html
-      output: web,ugBk
   - sectiontitle: Data Connect
     output: web,cngBk
     sectionitems:
