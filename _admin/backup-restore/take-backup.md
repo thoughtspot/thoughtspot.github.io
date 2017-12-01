@@ -40,9 +40,9 @@ You create a manual backup from an existing snapshot. So, you must identify an e
     $ df -h
     ```
 
-4. Create the backup, designating the [type of backup](/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
+4. Create the backup, designating the [type of backup](4.4/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup](/admin/backup-restore/backup-modes.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name
+    Choose the [mode of backup](4.4/admin/backup-restore/backup-modes.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name
 
     ```
     $ tscli backup create [-h]
