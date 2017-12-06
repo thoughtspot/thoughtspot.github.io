@@ -28,28 +28,57 @@ To create a group and add privileges for the group:
 
 5. Enter the details for the new group:
 
-     ![]({{ site.baseurl }}/images/new_group_dialogue_3.2.png "Enter Group details")
+     ![]({{ site.baseurl }}/images/new_group_dialogue.png "Enter Group details")
 
-    1. Enter a unique name for the group.
-    2. Optionally enter a description.
-    3. Check the [privileges](about-users-groups.html#list-of-privileges) you want to grant to the group.
+    <table>
+    <colgroup>
+    <col width="20%" />
+    <col width="80%" />
+    </colgroup>
+     <tr>
+       <th>Field</th>
+       <th>Description</th>
+     </tr>
+     <tr>
+       <th>Group name</th>
+       <td>Enter a unique name for the group.</td>
+     </tr>
+     <tr>
+       <th>Display name</th>
+       <td></td>
+     </tr>
+     <tr>
+       <th>Sharing visibility</th>
+       <td>Indicate whether objects can be shared with this group. When set to <b>SHAREABLE</b>,
+       this group is an option in the <b>Share</b> dialog.</td>
+     </tr>
+     <tr>
+       <th>Description</th>
+       <td>Optionally enter a description.</td>
+     </tr>
+     <tr>
+       <th>Privileges</th>
+       <td><p>Check the <a href="about-users-groups.html#list-of-privileges">privileges</a>
+       you want to grant to the group. If you add the privilege <b>Has
+       administration privileges</b> to a group, all users in that group can see
+       all the data in ThoughtSpot. Administrators can always see all data
+       sources, and <a href="/admin/data-security/about-row-security.html#">Row level security</a> does not
+       apply to them.</p>
+       </td>
+     </tr>
+    </table>
 
-        If you add the privilege **Has administration privileges** to a group,
-        all users in that group can see all the data in ThoughtSpot.
-        Administrators can always see all data sources, and
-        [Row level security]({{ site.baseurl}}/admin/data-security/about-row-security.html#) does not apply to them.
+4. Click the **Manage Groups** tab if you want to add sub-groups.
 
-    4. Click the **Manage Groups** tab if you want to add sub-groups.
+   Find the groups you want to add in the list, or search for them by name.
+   Check the box next to each group you want to add to the group.
 
-       Find the groups you want to add in the list, or search for them by name.
-       Check the box next to each group you want to add to the group.
+5. Click the **Manage Users** tab if you want to add users.
 
-    5. Click the **Manage Users** tab if you want to add users.
+    Find the users you want to add in the list, or search for them by name.
+    Check the box next to each user you want to add to the group.
 
-        Find the users you want to add in the list, or search for them by name.
-        Check the box next to each user you want to add to the group.
-
-6. Click **Create** to create the group.
+6. Click **Add** to create the group.
 
 ## Edit a group or delete a group
 

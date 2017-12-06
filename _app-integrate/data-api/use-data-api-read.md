@@ -28,7 +28,7 @@ Use this procedure to construct the URL you will use to call the REST API:
 
         ![]({{ site.baseurl }}/images/copy_link_pinboard.png "The pinboard ID")
 
-    -   A visualization \(table or chart\), copy the identifier that appears after "viz/". This is the pinboard ID.
+    -   A visualization (table or chart), copy the identifier that appears after "viz/". This is the pinboard ID.
 
         ![]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png "The pinboard ID")
 

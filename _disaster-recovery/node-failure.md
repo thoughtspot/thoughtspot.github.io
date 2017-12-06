@@ -14,7 +14,7 @@ A node is considered to have failed when one or more of these conditions occur:
 -   Two or more disks have failed.
 -   SSD has failed.
 -   Memory failure.
--   Another hardware component has failed \(networking, motherboard, power supplies\).
+-   Another hardware component has failed (networking, motherboard, power supplies).
 
 ## Symptoms
 

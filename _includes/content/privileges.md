@@ -1,4 +1,8 @@
 <table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
   <thead>
     <tr>
       <th>Privilege</th>

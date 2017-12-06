@@ -42,9 +42,13 @@ To create a snapshot:
 
 ## Configure periodic snapshots
 
-By default, each ThoughtSpot cluster is configured to take automatic, periodic snapshots of your cluster. This section explains how to learn more about the periodic snapshots in your cluster.
+By default, each ThoughtSpot cluster is configured to take automatic, periodic
+snapshots of your cluster. This section explains how to learn more about the
+periodic snapshots in your cluster.
 
-The default snapshot policy is enabled for every cluster. You can use the `tscli snapshot-policy show` command to display the current policy for periodic snapshots.
+The default snapshot policy is enabled for every cluster. You can use the `tscli
+snapshot-policy show` command to display the current policy for periodic
+snapshots.
 
 ```
 

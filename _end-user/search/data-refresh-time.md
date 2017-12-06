@@ -1,13 +1,14 @@
 ---
 title: [Last data refresh time]
 keywords: tbd
-last_updated: tbd
+tags: [tipsntricks]
 summary: "You can see the last time at which data was refreshed without having to visit the **DATA** page.
 "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Hover over the data when choosing a data source to see the last time it was updated. You will also see when it was created and by whom.
+Hover over the data when choosing a data source to see the last time it was
+updated. You will also see when it was created and by whom.
 
  ![]({{ site.baseurl }}/images/data_refresh_time_source.png "Last updated in source selection")
 

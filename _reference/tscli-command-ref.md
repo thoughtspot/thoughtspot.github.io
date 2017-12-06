@@ -5,9 +5,15 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The `tscli` command line interface is an administration interface for the ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.
+The `tscli` command line interface is an administration interface for the
+ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply
+updates, stop and start the services, and view information about the system.
+This reference defines each subcommand and what you can accomplish with it.
 
-The command returns 0 upon success and a non-zero exit code upon failure. Because the `tscli` command is typically running a command on multiple codes, an error may be called at different points. As much as possible, the command attempts to save errors to the `stderr` directory as configured on a node.
+The command returns 0 upon success and a non-zero exit code upon failure.
+Because the `tscli` command is typically running a command on multiple codes, an
+error may be called at different points. As much as possible, the command
+attempts to save errors to the `stderr` directory as configured on a node.
 
 ## How to use the tscli command
 
@@ -30,7 +36,8 @@ The `tscli` command has several subcommands such as `alert`, `backup`, and so fo
 tscli [subcommand ]
 ```
 
-Subcommands have their own additional options and actions such as `tscli backup create` or `tscli backup delete` for example.  To view help for a subcommand:
+Subcommands have their own additional options and actions such as `tscli backup
+create` or `tscli backup delete` for example.  To view help for a subcommand:
 
 ```
 tscli [subcommand] -h
@@ -136,7 +143,10 @@ Use this subcommand to do the following:
 * `tscli callhome disable` Turns off the periodic call home feature.
 * `tscli callhome enable --customer_name` *`customer_name`*`
 
-    Enables the "call home" feature, which sends usage statistics to ThoughtSpot Support every six hours via the secure file server. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
+    Enables the "call home" feature, which sends usage statistics to ThoughtSpot
+    Support every six hours via the secure file server. Before using this
+    command for the first time, you need to set up the file server connection
+    using `tscli fileserver configure`.
 
     The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
 
@@ -145,7 +155,13 @@ Use this subcommand to do the following:
    * `--d D` Dest folder where tar file will be created. (default: None)
    * ` --since`  *`DAYS`*
 
-      Grab callhome data from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None) Generates a tar file of the cluster metrics and writes it to the specified directory where  *`DAYS`* is how far back you'd like to generate the tar file from in days. For example, `30`. If this parameter is not specified, the command will collect stats from the last 15 days by default.
+      Grab callhome data from this time window in the past. Should be a human
+      readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1
+      day). (default: None) Generates a tar file of the cluster metrics and
+      writes it to the specified directory where  *`DAYS`* is how far back you'd
+      like to generate the tar file from in days. For example, `30`. If this
+      parameter is not specified, the command will collect the stats from the
+      last `7` days by default.
 
 
 ### cluster
@@ -211,6 +227,20 @@ tscli dr-mirror [-h] {start,status,stop}
 * `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
 * `tscli dr-mirror stop` Stops mirroring on the local cluster.
 
+### entity
+```
+tscli entity [-h] {pack} ...
+```
+Creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
+pinboard, or aggregated/unaggregated worksheet objects.
+
+* `tscli entity pack [-h] --id ID [--outdir FULLPATHNAME]`  Packs object metadata and schema into a file. Packed filenames have the format XXX.YYY where XXX is ### ?
+optional arguments:
+
+    * `--id ID` The required `ID` of the object to pack. IDs are found in thne URL of an answer,
+    pinboard, or aggregated/unaggregated worksheet. For example, the ID for a pinboard
+    				`http://thoughtspot.com:8088/#/pinboard/061457a2-27bc-43a9-9754-0cd873691bf0/` is `061457a2-27bc-43a9-9754-0cd873691bf0`.
+    * `--outdir FULLPATHNAME` Directory where the command places the packed object.
 
 ### etl
 
@@ -594,7 +624,6 @@ This subcommand has the following actions:
 
   * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
   * `--cluster` Is the node part of a cluster (default: `False`)
-
 
 ### saml
 

@@ -39,14 +39,49 @@ The ODBC driver supports these data types:
 
 ## Source and target data compatibility
 
-By default, ThoughtSpot takes a permissive approach to datatype compatibility
+By default, ThoughtSpot takes a "most likely" approach to datatype compatibility
 between source and target in ODBC. As much as possible ThoughtSpot automatically
-converts incoming "compatible" input data to the desired ThoughtSpot target
-datatype. At installation time, your customer support engineer can assist you in
-configuring a stricter behavior for ODBC.
+infers the incoming "compatible" input data  and converts it to the most likely
+ThoughtSpot target datatype.
 
-Following table describes the conversion matrix between SQL datatypes and
-ThoughtSpot datatypes.
+Alternatively, you can require that ThoughtSpot match the source data type
+exactly and, if it can't find a match, it returns an error and the data load
+fails. By mixing both types, you can configure along a scale of behavior between
+the permissiveness of the automatic approach and the strictness of "must match"
+approach.
+
+<table>
+  <tr style="background-color:white;">
+    <th colspan="2" rowspan="2"></th>
+    <th colspan="2" style="background-color:white;">Strictness</th>
+  </tr>
+  <tr style="background-color:white;border-bottom:1pt solid black;">
+    <td>true</td>
+    <td>false</td>
+  </tr>
+  <tr style="background-color:white;">
+    <th rowspan="2" style="valign:middle;background-color:white;"><div class="vert">Permissiveness</div></th>
+    <td>true</td>
+    <td>Data types are inferred and automatically converted. ThoughtSpot returns an error in cases where the data conversion is not possible. Data load fails in its entirety if any data contains mismatches. You must correct the problem in the source data and try the load again.</td>
+    <td>Data types are inferred and automatically converted. No error is thrown even if source and target data types don’t match. Data load continues even when the source and target data types don’t match. This means your data load may contain data types that you do not intend or that are not helpful.  You are responsible for checking and validating the data in this case.</td>
+  </tr>
+  <tr>
+    <td>false</td>
+    <td>The source and target data types must match. If any data contains mismatches, ThoughtSpot returns an error to the client a data load fails in its entirety. You must correct the problem in the source data and try the load again.<br><br>This is the strictest configuration.</td>
+    <td>No data types are inferred and conversion does not check for matches. This is the most permissive configuration.</td>
+  </tr>
+</table>
+
+<p>Your customer support engineer who can assist you in configuring the ODBC
+behavior that suits you best. Regardless of which configuration you choose, you
+should validate that the results of data loading _as they appear in_ ThoughSpot
+are what you desire.</p>
+
+
+## Data type conversion matrix
+
+<p>Following table describes the conversion matrix between SQL datatypes and
+ThoughtSpot datatypes.</p>
 
 
 | Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|

@@ -14,7 +14,7 @@ The following prequisites and considerstions apply to the data connect feature:
 
 - Your Informatica account will be provisioned by ThoughtSpot.
 - If you want to use HTTPS with your URL, you will need to provide a signed certificate when enabling ThoughtSpot Data Connect.
-- You will need outbound HTTPS \(port 443 for infaagent\) internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/).
+- You will need outbound HTTPS (port 443 for infaagent) internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/).
 
     If outbound HTTPS internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/) is not possible, you can instead whitelist the Informatica Cloud IP address ranges `206.80.52.0/24`, `206.80.61.0/24`, `209.34.91.0/24`, and `209.34.80.0/24`.
 

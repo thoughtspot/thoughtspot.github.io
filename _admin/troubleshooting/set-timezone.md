@@ -1,7 +1,7 @@
 ---
 title: [Change the timezone]
 keywords: tbd
-last_updated: tbd
+tags: [time]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

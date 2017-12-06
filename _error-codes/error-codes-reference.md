@@ -22,10 +22,10 @@ When you see an error code, you will also see a message with a brief summary of 
 |-----|--------|-------|-------|------|
 |TS-100|INFO|Success. {1} has been added to {2}. \# {1} – name of visualization \# {2} – {name/link to pinboard}|None|None|
 |TS-101|ERROR|Failure adding {1} to {2}|Visualization could not be added to {2} \# {1} – name of visualization \# {2} – name/link to pinboard|None|
-|TS-102|ERROR|Failure adding {1} to {2} due to corruption|{1} could not be added to {2} as the pinboard has one or more invalid visualizations|Please try again after removing the invalid visualization(s\) from {2} \# {1} – name of visualization \# {2} – name/link to pinboard|
+|TS-102|ERROR|Failure adding {1} to {2} due to corruption|{1} could not be added to {2} as the pinboard has one or more invalid visualizations|Please try again after removing the invalid visualization(s) from {2} \# {1} – name of visualization \# {2} – name/link to pinboard|
 |TS-103|INFO|Success. Visualization has been deleted from {1}. 1 – name/link to pinboard|None|None|
 |TS-104|ERROR|Failure deleting visual from {1}|Visualization could not be deleted from the pinboard. 1 – name/link to pinboard|None|
-|TS-105|ERROR|Failure deleting visual from {1} due to corruption|Visualization could not be deleted from {1} as the pinboard has one or more invalid visualizations. 1 – name/link to pinboard|Please try again after removing the invalid visualization(s\) from the pinboard|
+|TS-105|ERROR|Failure deleting visual from {1} due to corruption|Visualization could not be deleted from {1} as the pinboard has one or more invalid visualizations. 1 – name/link to pinboard|Please try again after removing the invalid visualization(s) from the pinboard|
 |TS-106|INFO|Success. {1} created successfully. 1 – name/link to pinboard|None|None|
 |TS-107|ERROR|Failure creating {1}. 1 – name/link to pinboard|Uh oh. We’re not sure what happened. Please email the trace file to {adminEmail}.|None|
 |TS-108|INFO|Sticker created successfully.|None|None|
@@ -307,7 +307,7 @@ When you see an error code, you will also see a message with a brief summary of 
 |TS-1815|ERROR|Sorry! Unable to export objects at this moment!|What happened? {1}.|None|
 |TS-1816|INFO|Successfully imported objects|None|None|
 |TS-1817|ERROR|Sorry! Unable to import objects at this moment!|What happened? {1}.|None|
-|TS-1818|INFO|Successfully deleted data source object(s\).|None|None|
+|TS-1818|INFO|Successfully deleted data source object(s).|None|None|
 
 ## Callosum API Errors (9000 - 9199)
 
@@ -427,7 +427,7 @@ When you see an error code, you will also see a message with a brief summary of 
 
 |Code|Severity|Summary|Details|Action|
 |-----|--------|-------|-------|------|
-|TS-30000|ERROR|Table is not ready (data loading in progress\).|None|None|
+|TS-30000|ERROR|Table is not ready (data loading in progress).|None|None|
 
 
 ## Timely Errors (60000 - 64999)

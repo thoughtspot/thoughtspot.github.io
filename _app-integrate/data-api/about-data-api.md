@@ -6,7 +6,7 @@ summary: "The purpose of the REST API is to get data out of ThoughtSpot so you c
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When using the REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON \(JavaScript Object Notation\) representation of the data will be returned.
+When using the REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON (JavaScript Object Notation) representation of the data will be returned.
 
 ## Authentication
 
@@ -26,7 +26,7 @@ You can use the REST API to do things like:
 -   Display a single value.
 -   Retrieve the data to populate a visualization drawn by your own renderer.
 
-Remember that the data you retrieve from ThoughtSpot is live data, so whenever the Web page is rendered, the current value\(s\) will be shown.
+Remember that the data you retrieve from ThoughtSpot is live data, so whenever the Web page is rendered, the current value(s) will be shown.
 
 ## Public API reference
 

@@ -1,15 +1,21 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
 keywords: tbd
-last_updated: tbd
+tags: [dates]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When working with formulas, keep in mind the data types they return. You may occasionally see unexpected results, or even be unable to open a saved answer, due to problems with data types and formulas.
+When working with formulas, keep in mind the data types they return. You may
+occasionally see unexpected results, or even be unable to open a saved answer,
+due to problems with data types and formulas.
 
-In this scenario, "data type" refers the data type as defined in the column definition when creating the schema (INT, TIMESTAMP, VARCHAR, etc.).
+In this scenario, "data type" refers the data type as defined in the column
+definition when creating the schema (INT, TIMESTAMP, VARCHAR, etc.).
 
-When you define a formula, both the data type it returns is set automatically. This can lead to problems, if you build another formula that uses the output of the first formula as input. This can be hard to understand, so an example will be helpful.
+When you define a formula, both the data type it returns is set automatically.
+This can lead to problems, if you build another formula that uses the output of
+the first formula as input. This can be hard to understand, so an example will
+be helpful.
 
 Suppose you have created a worksheet that contains a formula called "weekday" defined as:
 
@@ -17,15 +23,23 @@ Suppose you have created a worksheet that contains a formula called "weekday" de
 day_of_week(date)
 ```
 
-The output of that formula is the day of the week (Monday, Tuesday, etc.) returned as a text string (VARCHAR, ATTRIBUTE).
+The output of that formula is the day of the week (Monday, Tuesday, etc.)
+returned as a text string (VARCHAR, ATTRIBUTE).
 
-Then suppose you create an answer using the worksheet as a source. And in the answer, you create another formula on top of the formula column in the worksheet. This formula is supposed to return the day of the week that is two days after the given day of the week:
+Then suppose you create an answer using the worksheet as a source. And in the
+answer, you create another formula on top of the formula column in the
+worksheet. This formula is supposed to return the day of the week that is two
+days after the given day of the week:
 
 ```
 weekday + 2
 ```
 
-In this case, you have effectively created a formula on top of another formula. This works fine, so long as the data types in the worksheet formula can work in the answer formula. If not, you may not be able to save the answer, or open it once it has been saved. Here, the second formula you created does not work, because it is invalid. It is trying to subtract a number from a text string.
+In this case, you have effectively created a formula on top of another formula.
+This works fine, so long as the data types in the worksheet formula can work in
+the answer formula. If not, you may not be able to save the answer, or open it
+once it has been saved. Here, the second formula you created does not work,
+because it is invalid. It is trying to subtract a number from a text string.
 
 If you encounter this issue, you will need to open the worksheet and edit its formula so that it returns the type expected by the formula that was built on top of it. In this case, a numeric data type.
 
