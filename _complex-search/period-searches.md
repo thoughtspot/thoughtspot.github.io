@@ -9,15 +9,15 @@ permalink: /:collection/:path.html
 ---
 A _time series_ is a set of data points ordered by time. For example, within the
 same week a sale on Tuesday comes before a sale on Wednesday in such a data set.
-You can use ThxoughtSpot's _time series analysis_ feature to search for answers
+You can use ThoughtSpot's _time series analysis_ feature to search for answers
 about series data.
 
 ![]({{ site.baseurl }}/images/period-drop.png "Period Analysis")
 
 You might use this feature to compare a time period across other time periods.
 For examples sales for each month across several years.  You may also want to
-calculate an aspect such as growth over the same time period across of other
-periods. You can also do relative analysis such as sales for the last 3 month of
+calculate an aspect such as growth over the same time period across other
+periods. You can also do relative analysis such as sales for the last 3 months of
 each year across years.
 
 You can use one or more of the following period keywords to create this type of
