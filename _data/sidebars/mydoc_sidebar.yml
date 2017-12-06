@@ -607,7 +607,7 @@ entries:
       - title: Edit a worksheet
         url: /admin/worksheets/edit-worksheet.html
         output: web,admBk
-      - title: Change the inclusion or join rule for a worksheet
+      - title: "Change inclusion, join, or RLS for a worksheet"
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
       - title: Delete a worksheet or table

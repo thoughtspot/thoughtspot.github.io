@@ -26,6 +26,9 @@ There are several reasons you might want to use row level security:
 
 ## RLS and administrators
 
-If your installation has enabled the **Can Administer RLS** privilege, user groups with this privilege (directly or indirectly) can bypass row-level security (RLS) rules. This privilege can only be assigned by a user who already **Has administration privilege**.
+If your installation has enabled the **Can Administer RLS** privilege, user
+groups with this privilege (directly or indirectly) can bypass row-level
+security (RLS) rules on worksheets. This privilege can only be assigned by a
+user who already **Has administration privilege**. See ["Change inclusion, join, or RLS for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) for more information on how to do this.
 
 Users with **Has administration privilege** are administrators and can see can see all data sources, and no type of row level security applies to them.
