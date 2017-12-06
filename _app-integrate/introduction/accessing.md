@@ -31,6 +31,10 @@ Before accessing ThoughtSpot, you need:
     |Internet Explorer|11|     -   Windows 7 or greater
  |
 
+ {% include tip.html content="While Internet Explorer is supported, using it is
+ not recommended. Depending on your environment, you can experience performance
+ or UI issues when using IE." %}
+
 
 To log in to ThoughtSpot from a browser:
 
