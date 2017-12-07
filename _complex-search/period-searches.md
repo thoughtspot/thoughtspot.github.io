@@ -23,7 +23,7 @@ each year across years.
 You can use one or more of the following period keywords to create this type of
 analysis:
 
-<h2>Period keywords</h2>
+## Period keywords
 
 <table cellpadding="4" cellspacing="0" summary="" id="keyword_reference__table_ynp_tvj_tw" class="table" frame="border" border="1" rules="all">
    <colgroup>
@@ -80,5 +80,36 @@ All of these keywords sort the data using datetime semantics, that is
 chronologically in a time sequence. By default, the **Search** bar suggests
 these keywords less frequently than others.
 
+You can use these new keywords in combination with the existing data keywords which are:
+
+* `Detailed`
+* `Hourly`
+* `Daily`
+* `Weekly`
+* `Monthly`
+* `Quarterly`
+* `Yearly`
+
+##  Examples of time series analysis
+
 Typically, when you search for answers about series data, the visualizations
-that answer your questions are line charts.
+that answer your questions are line charts. These charts frequently but not
+always include a stack to indicate a period.
+
+![]({{ site.baseurl }}/images/time-example1.png "Period Analysis Example")
+
+When you search for an aspect of data of time series, a typical response is a
+line chart showing the aspect as it rises and falls over time.
+
+![]({{ site.baseurl }}/images/time-example2.png "Period Analysis Example")
+
+You can also add a relative date filter for example,
+
+```
+total revenue quarterly yearly by year month(commit date) >= 01/01/1995
+month(commit date) before 01/01/1998
+```
+
+This type of query also yields a stacked line chart:
+
+![]({{ site.baseurl }}/images/time-example3.png "Period Analysis Example")

@@ -82,14 +82,14 @@ entries:
         - title: Overview of keyword searchess
           url: /complex-search/about-keyword-searches.html
           output: web,ugBk
+        - title: Time series analysis
+          url: /complex-search/period-searches.html
+          output: web,ugBk
         - title: Search using growth over time
           url: /complex-search/search-using-growth-over-time.html
           output: web,ugBk
         - title: Proximity searches "near" and "farther than"
           url: /admin/features/proximity-search.html
-          output: web,ugBk
-        - title: Time series analysis
-          url: /complex-search/period-searches.html
           output: web,ugBk
       - levelThreeTitle: Work with filters
         output: web,ugBk
@@ -229,6 +229,9 @@ entries:
         - title: Overview of aggregate formulas
           url: /complex-search/aggregation-formulas.html
           output: web,ugBk
+        - title: Filtered aggregation
+          url: /complex-search/filtered-agg-forms.html
+          output: web,ugBk
         - title: Aggregates over time
           url: /complex-search/about-cumulative-formulas.html
           output: web,ugBk
@@ -244,6 +247,7 @@ entries:
         - title: Calculate a moving average
           url: /complex-search/search-using-the-moving-function.html
           output: web,ugBk
+
       - title: Conversion formulas
         url: /complex-search/conversion-formulas.html
         output: web,ugBk
