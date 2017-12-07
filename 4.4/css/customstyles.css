@@ -123,6 +123,28 @@ th.rotate > div > span {
 
 /* END: Privileges table in matrix.md*/
 
+/*https://css-tricks.com/rotated-table-column-headers/*/
+
+div.vert {
+    padding-top: 20px;
+    padding-right: 5px;
+    height: 100px;
+
+    /* Rotate div */
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+table.classic {
+  border: "1px";
+  cellpadding: "0";
+  cellspacing: "0";
+  background-color: yellow;
+}
+/* END */
+
+
 
 .bs-callout {
     padding: 20px;
@@ -254,6 +276,7 @@ table > tfoot > tr > td {
     vertical-align: top;
     border-top: 1px solid #ddd;
 }
+
 table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd;
