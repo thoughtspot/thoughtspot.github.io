@@ -101,9 +101,7 @@ pinboard, or aggregated/unaggregated worksheet objects.</p>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h4><a name="NewSSHaccountprovided"></a>New SSH account provided</h4>
-<blockquote>
 <p>This release includes a <code>thoughtspot</code> OS user. This user has the ability to execute <code>tscli</code> commands that do not require <code>sudo</code> or that do no impact <code>rootfs</code> resources. An example of a typical command this user can execute is the <code>tscli cluster status</code> command. If the user cannot execute a command, the system returns an informative error message.</p>
-</blockquote>
 </td>
 </tr>
 </tbody>
