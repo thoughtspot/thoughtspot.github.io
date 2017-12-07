@@ -34,6 +34,12 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="FillAgg"></a>Filtered aggregations in search bar</h4>
+<p>You can now use a set of filtered aggregation functions in the Formula Editor rather than crafting a lengthy `if then else` formula to achieve that today.  Filters are useful for queries where the results should reflect a new, filtered vale. For example, a query that compares total review with the cost of the `west` region. In this example, you filter the region column to values in the `west` only.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h4><a name="ExpandedAnswerspagefeatures"></a>Expanded Answers page features</h4>
 <p>This release includes an expanded information layout available with each answer. This expansion includes the following features;</p>
 <ul>

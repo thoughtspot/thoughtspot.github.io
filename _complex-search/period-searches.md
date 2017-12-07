@@ -90,8 +90,6 @@ You can use these new keywords in combination with the existing data keywords wh
 * `Quarterly`
 * `Yearly`
 
-
-
 ##  Examples of time series analysis
 
 Typically, when you search for answers about series data, the visualizations
