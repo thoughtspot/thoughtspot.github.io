@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."> -->
-<meta name="keywords" content=",  tbd">
-<title>Set up a disaster recovery configuration | ThoughtSpot Documentation</title>
+<meta name="keywords" content=",  recovery, disaster">
+<title>Configure disaster recovery | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,19 +48,19 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“Set up a disaster recovery configuration”]</title>
-<meta property="og:title" content="[“Set up a disaster recovery configuration”]" />
+<title>[“Configure disaster recovery”]</title>
+<meta property="og:title" content="[“Configure disaster recovery”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load." />
-<meta property="og:description" content="The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load." />
+<meta name="description" content="Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention." />
+<meta property="og:description" content="Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-11-10T14:06:15-08:00" />
+<meta property="article:published_time" content="2017-12-06T21:19:57-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html","publisher":null,"image":null,"headline":"[“Set up a disaster recovery configuration”]","dateModified":"2017-11-10T14:06:15-08:00","datePublished":"2017-11-10T14:06:15-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html","publisher":null,"image":null,"headline":"[“Configure disaster recovery”]","dateModified":"2017-12-06T21:19:57-08:00","datePublished":"2017-12-06T21:19:57-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/disaster-recovery/set-up-DR-config.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -178,6 +178,757 @@
   
     
       
+    
+      
+       <li >
+         <a href="#">Users</a>
+       <ul class="section">
+            
+              
+                
+                  <li><a href="/4.4/end-user/introduction/introduction.html">Introduction</a></li>
+                
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Getting Started</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/introduction/about-navigating-thoughtspot.html">Finding your way around</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/accessing.html">Log in or out of ThoughtSpot</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/introduction/about-user.html">Your user preferences</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/introduction/about-privileges-end-user.html">Understanding privileges</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/stickers.html">Use stickers to organize</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Use Search</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/search/about-starting-a-new-search.html">What are searches and answers?</a></li>
+                      
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Search basics</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/start-a-new-search.html">Start a new search</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-choosing-sources.html">Choose a data source</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-the-search-bar.html">Search bar features</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/recent-searches.html">Search suggestions</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-attributes-and-measures.html">Search results and column types</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/data-refresh-time.html">Last data refresh time</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/work-with-answers.html">Work with Answers</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/search/about-tables.html">Results that are tables</a></li>
+                      
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Use keywords in search</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-keyword-searches.html">Overview of keyword searchess</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/period-searches.html">Time series analysis</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/search-using-growth-over-time.html">Search using growth over time</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/admin/features/proximity-search.html">Proximity searches "near" and "farther than"</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Work with filters</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-filters.html">Understand filters</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/filter-from-column-headers.html">Add a filter to a table</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/filter-from-chart-axes.html">Add a filter to a chart</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/create-bulk-filter.html">Create a bulk filter</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/delete-a-filter.html">Delete a filter</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-filters-for-null.html">Filter on null, blank, or empty values</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Other search actions</a>
+                       <ul>
+                        
+                          
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/change-the-view.html">Change result display options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/show-underlying-data.html">Show underlying data</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/drill-down.html">See the search behind a result</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/apply-conditional-formatting.html">Apply conditional formatting to a table</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/download-your-search.html">Download your search</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/replay-search.html">Replay search</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Work with charts</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/search/about-charts.html">Understand charts</a></li>
+                      
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Chart types</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-column-charts.html">Column charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-bar-charts.html">Bar charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-line-charts.html">Line charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/pie-charts.html">Pie charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/area-charts.html">Area charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-scatter-charts.html">Scatter charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-bubble-charts.html">Bubble charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-pareto-charts.html">Pareto charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-waterfall-charts.html">Waterfall charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-treemap-charts.html">Treemap charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/line-column-charts.html">Line column charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-funnel-charts.html">Funnel charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/about-geo-charts.html">Geo charts</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-pivoting-a-table.html">Pivot table</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Changing a chart</a>
+                       <ul>
+                        
+                          
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/reorder-values-on-the-x-axis.html">Reorder the labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/set-the-y-axis-scale.html">Set the y-axis range</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/hide-and-show-values.html">Hide and show values</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/change-chart-colors.html">Change chart colors</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/search/zoom-into-a-chart.html">Zoom into a chart</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Work with formulas</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/add-formula-to-search.html">Understand formulas</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/how-to-add-formula.html">Add a formula to a search</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/edit-formula-in-answer.html">View or edit a formula in a search</a></li>
+                      
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Aggregate formulas</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/aggregation-formulas.html">Overview of aggregate formulas</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/filtered-agg-forms.html">Filtered aggregation</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-cumulative-formulas.html">Aggregates over time</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/search-using-the-cumulative-function.html">Calculate the cumulative sum</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-pinned-measures.html">Grouping formulas</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/about-moving-formulas.html">Moving formulas</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/complex-search/search-using-the-moving-function.html">Calculate a moving average</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/conversion-formulas.html">Conversion formulas</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/advanced-search/formulas/date-formulas.html">Date formulas</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/advanced-search/formulas/percent-calculations.html">Percent (simple number) calculations</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/advanced-search/formulas/conditional-sum.html">Conditional formulas (operators)</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/about-nested-formulas.html">Nested formulas</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Work with worksheets</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/about-query-on-query.html">Understand worksheets</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/create-aggregated-worksheet.html">Save a search as a worksheet</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/do-query-on-query.html">Create a search from a worksheet</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/more-example-scenarios.html">Worksheet example scenarios</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Use pinboards</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/about-pinboards.html">Basic pinboard usage</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/edit-the-layout-of-a-pinboard.html">Edit the layout of a pinboard</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/complex-search/pinboard-filters.html">Pinboard filters</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/copy-a-pinboard.html">Copy a pinboard</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/reset-a-visualization.html">Reset a pinobard or visualization</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/pinboards/start-a-slideshow.html">Start a slideshow</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Work with data</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/data-view/data-intro-end-user.html">Understand data sources</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/data-view/generate-flat-file.html">Create and load CSV Files</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/admin/loading/append-data-from-a-web-browser.html">Append data through the UI</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/admin/loading/view-your-data-profile.html">View a data profile</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/end-user/locale.html">Date and currency format settings</a></li>
+                      
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">SpotIQ</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/whatisspotiq.html">What is SpotIQ</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/overview.html">101: Load and analyze data</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/work-with-insights.html">101: Review and save insights</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/spotiq-customize.html">101: Do more with SpotIQ</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/spotiq/adv-customize-withr.html">Advanced R Customizations</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Share your work</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/data-view/sharing-for-end-users.html">About sharing</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/pinboards/share-pinboards.html">Share a pinboard</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/pinboards/share-answers.html">Share answers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/data-view/share-user-imported-data.html">Share uploaded data</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.4/end-user/pinboards/unshare.html">Revoke access (unshare)</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+                
+                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">Get help</a></li>
+                
+              
+            
+        </ul>
+     </li>
+     
     
       
        <li >
@@ -689,7 +1440,7 @@
                 
                   
                       
-                          <li><a href="/4.4/admin/worksheets/change-inclusion-rule.html">Change the inclusion or join rule for a worksheet</a></li>
+                          <li><a href="/4.4/admin/worksheets/change-inclusion-rule.html">Change inclusion, join, or RLS for a worksheet</a></li>
                       
                    
                 
@@ -1012,745 +1763,6 @@
                 
                     </ul>
                   </li>
-              
-            
-        </ul>
-     </li>
-     
-    
-      
-       <li >
-         <a href="#">Users</a>
-       <ul class="section">
-            
-              
-                
-                  <li><a href="/4.4/end-user/introduction/introduction.html">Introduction</a></li>
-                
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Getting Started</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/introduction/about-navigating-thoughtspot.html">Finding your way around</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/accessing.html">Log in or out of ThoughtSpot</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/locale.html">Set your display language (locale)</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/introduction/about-user.html">Your user profile</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/introduction/about-privileges-end-user.html">Understanding privileges</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/stickers.html">Use stickers to organize</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Using Search</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/search/about-starting-a-new-search.html">What is a ThoughtSpot Search?</a></li>
-                      
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Search basics</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/start-a-new-search.html">Start a new search</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-choosing-sources.html">Choose a data source</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-the-search-bar.html">Search bar features</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/recent-searches.html">Search suggestions</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-attributes-and-measures.html">Search results and column types</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/data-refresh-time.html">Last data refresh time</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/search/about-tables.html">Results that are tables</a></li>
-                      
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Use keywords in search</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-keyword-searches.html">Overview of keyword searchess</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/search-using-growth-over-time.html">Search using growth over time</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/features/proximity-search.html">Proximity searches "near" and "farther than"</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Work with filters</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-filters.html">Understand filters</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/filter-from-column-headers.html">Add a filter to a table</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/filter-from-chart-axes.html">Add a filter to a chart</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/create-bulk-filter.html">Create a bulk filter</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/delete-a-filter.html">Delete a filter</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-filters-for-null.html">Filter on null, blank, or empty values</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Other search actions</a>
-                       <ul>
-                        
-                          
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/change-the-view.html">Change result display options</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/show-underlying-data.html">Show underlying data</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/drill-down.html">See the search behind a result</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/apply-conditional-formatting.html">Apply conditional formatting to a table</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/make-a-copy-of-an-answer.html">Copy an answer</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/download-your-search.html">Download your search</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/replay-search.html">Replay search</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Work with charts</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/search/about-charts.html">Understand charts</a></li>
-                      
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Chart types</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-column-charts.html">Column charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-bar-charts.html">Bar charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-line-charts.html">Line charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/pie-charts.html">Pie charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/area-charts.html">Area charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-scatter-charts.html">Scatter charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-bubble-charts.html">Bubble charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-pareto-charts.html">Pareto charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-waterfall-charts.html">Waterfall charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-treemap-charts.html">Treemap charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/line-column-charts.html">Line column charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-funnel-charts.html">Funnel charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/about-geo-charts.html">Geo charts</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-pivoting-a-table.html">Pivot table</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Changing a chart</a>
-                       <ul>
-                        
-                          
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/reorder-values-on-the-x-axis.html">Reorder the labels</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/set-the-y-axis-scale.html">Set the y-axis range</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/hide-and-show-values.html">Hide and show values</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/change-chart-colors.html">Change chart colors</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/show-data-labels.html">Additional chart options</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/search/zoom-into-a-chart.html">Zoom into a chart</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Work with formulas</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/add-formula-to-search.html">Understand formulas</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/how-to-add-formula.html">Add a formula to a search</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/edit-formula-in-answer.html">View or edit a formula in a search</a></li>
-                      
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Aggregate formulas</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/aggregation-formulas.html">Overview of aggregate formulas</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-cumulative-formulas.html">Aggregates over time</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/search-using-the-cumulative-function.html">Calculate the cumulative sum</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-pinned-measures.html">Grouping formulas</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/about-moving-formulas.html">Moving formulas</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/complex-search/search-using-the-moving-function.html">Calculate a moving average</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/conversion-formulas.html">Conversion formulas</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/advanced-search/formulas/date-formulas.html">Date formulas</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/advanced-search/formulas/percent-calculations.html">Percent (simple number) calculations</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/advanced-search/formulas/conditional-sum.html">Conditional formulas (operators)</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/about-nested-formulas.html">Nested formulas</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/about-formula-support-for-chasm-trap-schemas.html">Formulas for chasm traps</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Work with worksheets</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/about-query-on-query.html">Understand worksheets</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/create-aggregated-worksheet.html">Save a search as a worksheet</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/do-query-on-query.html">Create a search from a worksheet</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/more-example-scenarios.html">Worksheet example scenarios</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Use pinboards</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/about-pinboards.html">Basic pinboard usage</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/edit-the-layout-of-a-pinboard.html">Edit the layout of a pinboard</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/complex-search/pinboard-filters.html">Pinboard filters</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html">Search actions within a pinboard</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/copy-a-pinboard.html">Copy a pinboard</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/copy-link-for-a-pinboard.html">Copy a pinboard or visualization link</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/reset-a-visualization.html">Reset a pinobard or visualization</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/pinboards/start-a-slideshow.html">Start a slideshow</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Work with data</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/data-view/data-intro-end-user.html">Understand data sources</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/end-user/data-view/generate-flat-file.html">Create and load CSV Files</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/admin/loading/append-data-from-a-web-browser.html">Append data through the UI</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/admin/loading/view-your-data-profile.html">View a data profile</a></li>
-                      
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">SpotIQ</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/whatisspotiq.html">What is SpotIQ</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/overview.html">101: Load and analyze data</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/work-with-insights.html">101: Review and save insights</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/spotiq-customize.html">101: Do more with SpotIQ</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/special-topics.html">Best SpotIQ Practices</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/customization.html">Custom SpotIQ analysis</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/spotiq/adv-customize-withr.html">Advanced R Customizations</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                  
-                   <li class="levelThree">
-                       <a href="#">Share your work</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/data-view/sharing-for-end-users.html">About sharing</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/pinboards/share-pinboards.html">Share a pinboard</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/pinboards/share-answers.html">Share answers</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/data-view/share-user-imported-data.html">Share uploaded data</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/end-user/pinboards/unshare.html">Revoke access (unshare)</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-                
-                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">Get help</a></li>
-                
               
             
         </ul>
@@ -2509,13 +2521,7 @@
                 
                   
                       
-                          <li class="active"><a href="/4.4/disaster-recovery/set-up-DR-config.html">Set up a disaster recovery configuration</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/disaster-recovery/recover-cluster.html">Recover a cluster from a disaster</a></li>
+                          <li class="active"><a href="/4.4/disaster-recovery/set-up-DR-config.html">Configure disaster recovery</a></li>
                       
                    
                 
@@ -2638,7 +2644,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Set up a disaster recovery configuration</h1>
+   <h1 class="post-title-main">Configure disaster recovery</h1>
 </div>
 
 
@@ -2676,51 +2682,212 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The disaster recovery setup uses periodic backups from the primary to a shared storage (NFS mounted drive or NAS). Note, if you do not use the tscli command to mount NAS, please make sure the NAS is mounted on all nodes of both clusters. When choosing times and frequencies for periodic backups, you should choose a reasonable frequency. Do not schedule backups too close together, since a backup cannot start when another backup is still running. Avoid backing up when the system is experiencing a heavy load, such as peak usage or a large data load.</p>
+  <p>Disaster recovery setup configures periodic backups from the primary to a
+shared, mirrored storage volume. If the primary cluster fails, then a secondary
+cluster can take over its operations after a small manual intervention.</p>
 
-<p>This is the procedure for designating a primary and a mirror ThoughtSpot instance.</p>
+<p>Should the production cluster be destroyed, monitoring and alerting notifies the
+administrator. The administrator can then make the secondary appliance into the
+new primary, by starting it and recovering from  backups generated by the
+primary.</p>
 
-<ol>
-  <li>Ensure you have tscli on the target appliance. If not, please contact ThoughtSpot Support. In addition, the appliance should not be running a cluster, so if one exists, please contact ThoughtSpot Support to delete the cluster. A ThoughtSpot cluster should be up and running on the source appliance.</li>
-  <li>Log in to the primary appliance, and set it up to take periodic backups and write them to the shared backup directory (in a SAN or shared NFS-mounted drive):</li>
-</ol>
+<p>This system makes it possible for you to restore the last the last backed up
+state from the primary to the secondary sever. If you configure daily backups,
+any metadata or data loaded/created after the last backup is not included in
+restore.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-$ tscli backup set-periodic --at &lt;hour1,hour2,...&gt; --directory &lt;shared_backup_directory&gt; [--num_backups &lt;num_backups&gt;]
-```
+<h2 id="prerequisite">Prerequisite</h2>
 
-For example:
+<p>Both primary and secondary appliances must use a shared storage volume. You can
+use an NAS or Samba volume for your share. If you choose NAS, keep in mind that
+too slow a volume potentially break backups or significantly slow restore
+performance. The following are good guidelines for choosing storage:</p>
 
-```
-$ tscli backup set-periodic --at 01,17 --directory /mnt/thoughtspot_backups --num_backups 5
-```
-</code></pre></div></div>
+<ul>
+  <li>Provision dedicated a storage volume for periodic backups.</li>
+  <li>Do not use the backup volume for loading data or any other purposes. If backups fill up this storage, other components will suffer.</li>
+  <li>To ensure better supportability and continuity in case local hard disks go bad, the shared storage volume should be network based.</li>
+</ul>
 
-<ol>
-  <li>Run <code class="highlighter-rouge">tscli backup periodic-config</code> to check whether the periodic backup is set correctly.</li>
-  <li>Designate the mirror appliance cluster to act as a mirror:</li>
-</ol>
+<p>Thoughtspot supports shared storage by mounting NFS or CIFS/Samba based volumes.
+Before you begin, make sure you know if the shared volume is Samba or NAS
+volume. To find out, use the <code class="highlighter-rouge">telnet</code> command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-$ tscli backup start-mirror &lt;shared_backup_directory&gt; &lt;mirror_node1_IP,mirror_node2_IP,...&gt; &lt;mirror_cluster_name&gt; &lt;mirror_cluster_id&gt;
-```
+<table>
+  <tr>
+    <td>Telnet confirms NFS</td>
+    <td>Telnet confirms  Samba</td>
+  </tr>
+  <tr>
+    <td>
+    <pre>$ telnet,2049
+    Trying 192.168.2.216...
+    Connected to 192.168.2.216.
+    Escape character is '^]'.</pre>
+    </td>
+    <td>
+    <pre>$ telnet,445
+    Trying 192.168.2.216...
+    Connected to 192.168.2.216.
+    Escape character is '^]'</pre>.
+    </td>
+  </tr>
+</table>
 
-For example:
+<h2 id="configure-and-test-your-shared-volume">Configure and test your shared volume</h2>
 
-```
-$ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.112,192.168.2.113 thoughtspot_mirror thoughtspot-mirror-29543
-```
-</code></pre></div></div>
+<p>Your shared volume should have a minimum of 15GB free and at least 20GB for a
+full backup. Do the following to configure and mount the shared volume.</p>
 
 <ol>
   <li>
-    <p>It may take some time for the cluster to begin acting as a mirror. Issue the command to verify that the cluster has started running in mirror mode:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup mirror-status
-</code></pre></div>    </div>
-
-    <p>You can use this command in the future to check whether the mirror cluster is up to date.</p>
+    <p>SSH into the primary appliance.</p>
   </li>
+  <li>
+    <p>Ensure that the primary appliance has a ThoughtSpot cluster up and running.</p>
+
+    <p>The primary appliance contains the cluster you are protecting with the
+recovery plan.</p>
+  </li>
+  <li>
+    <p>Create a directory to act as your  _<mount_point>_.</mount_point></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Set the directory owner to <code class="highlighter-rouge">admin</code>.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R admin:admin &lt;mount_point&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">tscli nas</code> subcommand to create a NAS is mount on all of the cluster nodes.</p>
+
+    <p>Use the command-line help or the documentation to view all the <a href="/4.4/reference/tscli-command-ref.html#nas">nas subcommand</a> options. Below are some samples to help you:</p>
+
+    <table>
+<tr>
+<th colspan="2">Example invocations</th>
+</tr>
+<tr>
+<th>Samba share:</th>
+<td><code>tscli nas mount-cifs --server 192.168.4.216 --path_on_server /bigstore_share --mount_point /mnt --username admin --password sambashare --uid 1001 --gid 1001</code></td>
+</tr>
+<tr>
+<th>Samba share with Windows AD authentication</th>
+<td><code>tscli nas mount-cifs --server 172.27.1.75 --path_on_server /elc --mount_point /home/admin/etl/external_datadir --username COMPANYCO/thoughtspot_svc --password 'ts123PDI!' --uid 1001 --gid 1001</code></td>
+</tr>
+<tr>
+<th>NFS</th>
+<td><code>tscli nas mount-nfs --server 192.168.4.132 --path_on_server /data/toolchain --mount_point /mnt</code></td>
+</tr>
+</table>
+  </li>
+  <li>Log into the target machine.</li>
+  <li>
+    <p>Ensure that the target machine is not running a ThoughtSpot cluster.</p>
+
+    <p>If a cluster is running on the target machine, contact please contact
+ThoughtSpot Support to delete the cluster.</p>
+  </li>
+  <li>Ensure you have the <code class="highlighter-rouge">tscli</code> command on the target appliance.</li>
+  <li>
+    <p>Repeat steps 3-5 on the target machine.</p>
+
+    <p>The target machine and the primary machine should both be accessing the
+shared volume. The configuration of the mount point should be identical on
+both machines.</p>
+  </li>
+  <li>
+    <p>Test the configuration by creating a file as the <code class="highlighter-rouge">admin</code> user.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Return to the primary server and make sure you can edit the file.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="configure-the-backup-and-start-the-mirror">Configure the backup and start the mirror</h2>
+
+<ol>
+  <li>If you haven’t already done so, SSH into the primary server.</li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">tscli backup-policy create</code> command.</p>
+
+    <p>The command opens a <code class="highlighter-rouge">vi</code> editor for you to configure the backup policy. Make
+sure your policy points to the NAS mount in the primary appliance.</p>
+
+    <p>When choosing times and frequencies for periodic backups, you should choose a
+reasonable frequency. Do not schedule backups too close together, since a backup
+cannot start when another backup is still running. Avoid backing up when the
+system is experiencing a heavy load, such as peak usage or a large data load.</p>
+
+    <p>If you are unfamiliar with the policy format,
+see <a href="/4.4/admin/backup-restore/configure-backup.html">Configure periodic backups</a>.</p>
+  </li>
+  <li>
+    <p>Write and save the file to store your configuration.</p>
+
+    <p>By default, newly created policies are automatically enabled.</p>
+  </li>
+  <li>
+    <p>Verify the policy using the <code class="highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</p>
+
+    <p>Use the <code class="highlighter-rouge">&lt;name&gt;</code> from the policy you created in the previous step.</p>
+  </li>
+  <li>SSH into the secondary recovery appliance.</li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror start
+</code></pre></div>    </div>
+  </li>
+  <li>Verify that the cluster has started running in mirror mode</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli dr-mirror status
+</code></pre></div></div>
+
+<p>It may take some time for the cluster to begin acting as a mirror.</p>
+
+<h2 id="recovery-operations">Recovery operations</h2>
+
+<p>If the primary cluster fails, the secondary cluster can take over its operations
+after a small manual intervention. The manual procedure makes the secondary
+instance into the primary.</p>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> You should perform this procedure under the supervision of ThoughtSpot customer support.</div>
+
+<ol>
+  <li>Contact ThoughtSpot customer support.</li>
+  <li>If the primary ThoughtSpot cluster is still running, stop it and disconnect it from the network.</li>
+  <li>SSH into the secondary cluster.</li>
+  <li>
+    <p>Stop the mirror cluster.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror stop
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Verify the mirror has stopped.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror status
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Start the new primary cluster.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster start
+</code></pre></div>    </div>
+  </li>
+  <li>Deploy a new mirror.</li>
+  <li>Set up a backup policy on your new primary cluster.</li>
 </ol>
 
   <div class="tags">
@@ -2734,11 +2901,7 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
       
     </div>
     <div >
-        <!-- 
-        <b>Tags: </b>
         
-        
-         -->
     </div>
 </div>
 
@@ -2751,9 +2914,9 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 10, 2017 <br />
+        Generated: Dec 6, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
