@@ -389,7 +389,7 @@ This subcommand has the following actions:
 
    Configures LDAP using an interactive script. You can see detailed
    instructions for setting up LDAP in <a class="xref"
-   href="/admin/setup/about-LDAP.html" title="Some companies use
+   href="{{"/admin/setup/about-LDAP.html" | prepend: site.baseurl }}" title="Some companies use
    LDAP (Lightweight Directory Access Protocol) to manage user authentication.
    Using LDAP provides security and makes user management more
    centralized.">About LDAP integration</a>.

@@ -539,7 +539,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
          </td>
          <td>
             <p>Changes the data type of a column. This can have implications on sharding and
-               primary key behavior. See <a class="xref" href="/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
+               primary key behavior. See <a class="xref" href="{{"/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv" | prepend: site.baseurl}}" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
             </p>
          </td>
          <td>

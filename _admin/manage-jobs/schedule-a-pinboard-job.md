@@ -55,8 +55,10 @@ To schedule a pinboard:
        <td>CSV files provide all data for tables, with one attachment per table. Use CSV files to perform further analysis offline. PDF files show all visualizations in the pinboard. Each chart takes up a whole page in the file, while only the first 100 rows of a table are included. Use PDF files to skim the data.</td>
      </tr>
      <tr>
-       <th>Gating condition</th>
-       <td>Write a statement that returns a boolean value. For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="/reference/formula-reference.html">Formula Reference</a>.</td>
+
+     <th>Gating condition</th>
+     <td>Write a statement that returns a boolean value. For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula Reference</a>.</td>
+
      </tr>
      <tr>
        <th>Recipients</th>
