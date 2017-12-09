@@ -74,10 +74,10 @@ This procedure shows how to creating a user manually. When you create a user, yo
         When you create a new user, the groups they belong to define the user's:
         <ul>
         <li>Privileges, the actions they are allowed to do, which are defined when you <a href="add-group.html">Add a group and set security privileges</a>.</li>
-        <li>Permissions, the data they can access and view, which is defined when you <a href="/admin/data-security/sharing-security-overview.html#">Data security</a>.</li>
+        <li>Permissions, the data they can access and view, which is defined when you <a href="{{"/admin/data-security/sharing-security-overview.html#" | prepend: site.baseurl }}">Data security</a>.</li>
       </ul>
         </p>
-        <p>Administrators can see all data sources, and <a href="/admin/data-security/about-row-security.html#">Row level security</a> does not apply to them.</p></td>
+        <p>Administrators can see all data sources, and <a href="{{"/admin/data-security/about-row-security.html#" | prepend: site.baseurl }}">Row level security</a> does not apply to them.</p></td>
       </tr>
      </table>
 

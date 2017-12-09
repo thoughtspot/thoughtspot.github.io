@@ -69,7 +69,7 @@ permalink: /:collection/:path.html
 pinboard, or aggregated/unaggregated worksheet objects.</p>
 <p>Now, the <code>tscli callhome</code> bundle defaults to the inclusion of 100 alerts collected for the last 7 days.</p>
 <p>Beginning with this release, the <code>tscli os package</code> command is no longer available. You should use the platform specific commands to list the packages on your system. For example, you can use the <code>dpkg -l | rpm -qa</code> command.</p>
-<p>See the documentation for the <a href="/reference/tscli-command-ref.html">tscli</a> command for more information.</p>
+<p>See the documentation for the <a href="{{"/reference/tscli-command-ref.html" | prepend: site.baseurl}}">tscli</a> command for more information.</p>
 </td>
 </tr>
 <tr style="width: 100%;">

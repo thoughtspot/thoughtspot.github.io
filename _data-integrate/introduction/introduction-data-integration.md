@@ -38,24 +38,24 @@ Here are the options, with information on where to find the documentation for ea
       <td>Users can upload a spreadsheet through the web interface with User Data Import. This is useful for giving everyone easy access to loading small amounts of their own data. See the ThoughtSpot Administrator Guide for details.</td>
     </tr>
     <tr>
-      <td><a href="/data-integrate/clients/about-odbc.html">ODBC</a></td>
+      <td><a href="{{"/data-integrate/clients/about-odbc.html" | prepend: site.baseurl }}">ODBC</a></td>
       <td>ThoughtSpot provides an ODBC (Open Database Connectivity) driver to enable transferring data from your ETL tool into ThoughtSpot.</td>
     </tr>
     <tr>
-      <td><a href="/data-integrate/clients/about-jdbc-driver.html">JDBC</a></td>
+      <td><a href="{{"/data-integrate/clients/about-jdbc-driver.html" | prepend: site.baseurl }}">JDBC</a></td>
       <td>ThoughtSpot provides a JDBC (Java Database Connectivity) driver to enable transferring data from your ETL tool into ThoughtSpot.</td>
     </tr>
     <tr>
-      <td><a href="/data-integrate/ssis/about-ssis.html">Connect to SSIS</a></td>
+      <td><a href="{{"/data-integrate/ssis/about-ssis.html" | prepend: site.baseurl }}">Connect to SSIS</a></td>
       <td>You can use the ODBC driver to connect to SSIS and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
     <tr>
-      <td><a href="/data-integrate/pentaho/about-pentaho.html">Connect to Pentaho</a></td>
+      <td><a href="{{"/data-integrate/pentaho/about-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
       <td>You can use the JDBC driver to connect to Pentaho and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
     <tr>
-      <td><a href="/data-integrate/clients/about-informatica.html">Informatica Connector</a></td>
-      <td>If your company uses Informatica, you can take advantage of the <a href="/data-integrate/clients/about-informatica.html">Informatica Connector</a>. This allows ThoughtSpot to become a target database, into which you can load data.</td>
+      <td><a href="{{"/data-integrate/clients/about-informatica.html" | prepend: site.baseurl }}">Informatica Connector</a></td>
+      <td>If your company uses Informatica, you can take advantage of the <a href="{{"/data-integrate/clients/about-informatica.html" | prepend: site.baseurl }}">Informatica Connector</a>. This allows ThoughtSpot to become a target database, into which you can load data.</td>
     </tr>
   </tbody>
 </table>
