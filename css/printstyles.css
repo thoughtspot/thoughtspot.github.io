@@ -39,7 +39,7 @@ table.wide_table {
 
 
 a[href]::after {
-    content: " (page " target-counter(attr(href), page) ")"
+    /*content: " (page " target-counter(attr(href), page) ")"*/
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
