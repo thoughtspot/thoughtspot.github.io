@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-At this point, you have done [the first set of SpotIQ tutorial tasks](overview.md), you've uploaded some
+At this point, you have done [the first set of SpotIQ tutorial tasks](overview.html), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
 **INSIGHT** list and see when your analysis ran. This is important knowledge
 because data changes, you'll want to run multiple analyzes on the same data.
