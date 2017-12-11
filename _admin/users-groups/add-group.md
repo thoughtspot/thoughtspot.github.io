@@ -58,7 +58,7 @@ To create a group and add privileges for the group:
      </tr>
      <tr>
        <th>Privileges</th>
-       <td><p>Check the <a href="{{"/about-users-groups.html#list-of-privileges" | prepend: site.baseurl }}">privileges</a>
+       <td><p>Check the <a href="{{"/admin/users-groups/about-users-groups.html#list-of-privileges" | prepend: site.baseurl }}">privileges</a>
        you want to grant to the group. If you add the privilege <b>Has
        administration privileges</b> to a group, all users in that group can see
        all the data in ThoughtSpot. Administrators can always see all data
