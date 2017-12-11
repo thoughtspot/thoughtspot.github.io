@@ -59,7 +59,7 @@ permalink: /:collection/:path.html
    <a class="helpLink"  href="{{"/release/downloads.html" | prepend: site.baseurl }}">
      <img class="helpImg" alt="download.png" src="{{ "/images/download.png" | prepend: site.baseurl }}"></a>
      <br>
-     <a class="linktext link-https" href="Downloads">Downloads</a>
+     <a class="helpLink"  href="{{"/release/downloads.html" | prepend: site.baseurl }}">Downloads</a>
    </div>
    <div class="linksChild">
      &nbsp;

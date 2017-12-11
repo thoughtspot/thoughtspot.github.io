@@ -47,7 +47,7 @@ permalink: /:collection/:path.html
 <li>Responsive layout for all tiles</li>
 <li>Related queries that detail additional queries you may use.</li>
 </ul>
-<p><span class="image-wrap"><img style="border: 0px solid black;" src="/images/notes/image-2017-11-13-17-20-07-383.png"/></span></p>
+<p><span class="image-wrap"><img style="border: 0px solid black;" src="{{"/images/notes/image-2017-11-13-17-20-07-383.png" | prepend: site.baseurl }}"/></span></p>
 </td>
 </tr>
 <tr style="width: 100%;">

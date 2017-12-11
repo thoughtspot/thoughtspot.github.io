@@ -1106,7 +1106,7 @@ entries:
         url: /disaster-recovery/cluster-replacement.html
         output: web,drgBk
       - title: Mount a NAS file system
-        url: /disaster-recovery/NAS-mount.html
+        url: /disaster-recovery/nas-mount.html
         output: web,drgBk
       - title: Configure disaster recovery
         url: /disaster-recovery/set-up-DR-config.html
