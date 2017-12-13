@@ -14,8 +14,10 @@ To change the colors used in a chart, you can use the color picker from the char
 
 To change the chart colors, you need at least one column in the chart's legend.
 If the chart does not have a legend (not all do) and it is a single-measure
-chart, you can set a conditional format to change the color. This type of
-conditional formatting does not work with Line charts.
+chart, you can [{{ site.baseurl
+}}/end-user/search/apply-conditional-formatting.html](apply a conditional
+format) to change the color. This type of conditional formatting does not work
+with Line charts.
 
 Colors are maintained across searches within a session. For example, when doing a search on
 revenue by state, each state will keep its color assigned to it even if you change the search or
