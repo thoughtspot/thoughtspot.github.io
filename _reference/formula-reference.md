@@ -1,5 +1,5 @@
 ---
-title: [Formula reference]
+title: [Worksheet formula reference]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

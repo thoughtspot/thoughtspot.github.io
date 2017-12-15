@@ -1123,7 +1123,7 @@ entries:
     - title: TQL reference
       url: /reference/sql-cli-commands.html
       output: web,refGd
-    - title: ThoughtSpot Loader flag reference
+    - title: tsload flag reference
       url: /reference/data-importer-ref.html
       output: web,refGd
     - title: tscli command reference
@@ -1135,7 +1135,7 @@ entries:
     - title: Row level security rules reference
       url: /reference/rls-rule-builder-reference.html
       output: web,refGd
-    - title: Formula reference
+    - title: Worksheet formula reference
       url: /reference/formula-reference.html
       output: web,refGd
     - title: Error code reference
