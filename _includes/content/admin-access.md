@@ -4,9 +4,9 @@ the password for each user.  The default users are:
 
 <table>
 <colgroup>
-  <col width="25%">
-  <col width="25%">
-    <col width="50%">
+  <col width="15%">
+  <col width="15%">
+    <col width="70%">
 </colgroup>
   <tr>
     <th>Type</th>
