@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  tbd">
-<title>Formula reference | ThoughtSpot Documentation</title>
+<title>Worksheet formula reference | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,19 +48,19 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“Formula reference”]</title>
-<meta property="og:title" content="[“Formula reference”]" />
+<title>[“Worksheet formula reference”]</title>
+<meta property="og:title" content="[“Worksheet formula reference”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas." />
 <meta property="og:description" content="ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/reference/formula-reference.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/reference/formula-reference.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-12-13T18:08:48-08:00" />
+<meta property="article:published_time" content="2017-12-18T14:28:04-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/formula-reference.html","publisher":null,"image":null,"headline":"[“Formula reference”]","dateModified":"2017-12-13T18:08:48-08:00","datePublished":"2017-12-13T18:08:48-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/formula-reference.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/reference/formula-reference.html","publisher":null,"image":null,"headline":"[“Worksheet formula reference”]","dateModified":"2017-12-18T14:28:04-08:00","datePublished":"2017-12-18T14:28:04-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/formula-reference.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2635,7 +2635,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.4/reference/data-importer-ref.html">ThoughtSpot Loader flag reference</a></li>
+                  <li><a href="/4.4/reference/data-importer-ref.html">tsload flag reference</a></li>
                 
               
             
@@ -2659,7 +2659,7 @@ var ss360Config = {
             
               
                 
-                  <li class="active"><a href="/4.4/reference/formula-reference.html">Formula reference</a></li>
+                  <li class="active"><a href="/4.4/reference/formula-reference.html">Worksheet formula reference</a></li>
                 
               
             
@@ -2721,7 +2721,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Formula reference</h1>
+   <h1 class="post-title-main">Worksheet formula reference</h1>
 </div>
 
 
@@ -2780,122 +2780,122 @@ $('#toc').on('click', 'a', function() {
   </thead>
   <tbody>
     <tr>
-      <td>average</td>
+      <td><code>average</code></td>
       <td>Returns the average of all the values of a column.</td>
       <td><code class="highlighter-rouge">average (revenue)</code></td>
     </tr>
     <tr>
-      <td>count</td>
+      <td><code>count</code></td>
       <td>Returns the number of rows in the table containing the column.</td>
       <td><code class="highlighter-rouge">count (product)</code></td>
     </tr>
     <tr>
-      <td>cumulative_average</td>
+      <td><code>cumulative_average</code></td>
       <td>Takes a measure and one or more attributes. Returns the average of the measure, accumulated by the attribute(s) in the order specified.</td>
       <td><code class="highlighter-rouge">cumulative_average (revenue, order date, state)</code></td>
     </tr>
     <tr>
-      <td>cumulative_max</td>
+      <td><code>cumulative_max</code></td>
       <td>Takes a measure and one or more attributes. Returns the maximum of the measure, accumulated by the attribute(s) in the order specified.</td>
       <td><code class="highlighter-rouge">cumulative_max (revenue, state)</code></td>
     </tr>
     <tr>
-      <td>cumulative_min</td>
+      <td><code>cumulative_min</code></td>
       <td>Takes a measure and one or more attributes. Returns the minimum of the measure, accumulated by the attribute(s) in the order specified.</td>
       <td><code class="highlighter-rouge">cumulative_min (revenue, campaign)</code></td>
     </tr>
     <tr>
-      <td>cumulative_sum</td>
+      <td><code>cumulative_sum</code></td>
       <td>Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.</td>
       <td><code class="highlighter-rouge">cumulative_sum (revenue, order date)</code></td>
     </tr>
     <tr>
-      <td>group_average</td>
+      <td><code>group_average</code></td>
       <td>Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_average (revenue, customer region, state)</code></td>
     </tr>
     <tr>
-      <td>group_count</td>
+      <td><code>group_count</code></td>
       <td>Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_count (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>group_max</td>
+      <td><code>group_max</code></td>
       <td>Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_max (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>group_min</td>
+      <td><code>group_min</code></td>
       <td>Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_min (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>group_stddev</td>
+      <td><code>group_stddev</code></td>
       <td>Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_stddev (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>group_sum</td>
+      <td><code>group_sum</code></td>
       <td>Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_sum (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>group_unique_count</td>
+      <td><code>group_unique_count</code></td>
       <td>Takes a measure and one or more attributes. Returns the unique count of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_unique_count (product , supplier)</code></td>
     </tr>
     <tr>
-      <td>group_variance</td>
+      <td><code>group_variance</code></td>
       <td>Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).</td>
       <td><code class="highlighter-rouge">group_variance (revenue, customer region)</code></td>
     </tr>
     <tr>
-      <td>max</td>
+      <td><code>max</code></td>
       <td>Returns the maximum value of a column.</td>
       <td><code class="highlighter-rouge">max (sales)</code></td>
     </tr>
     <tr>
-      <td>min</td>
+      <td><code>min</code></td>
       <td>Returns the minimum value of a column.</td>
       <td><code class="highlighter-rouge">min (revenue)</code></td>
     </tr>
     <tr>
-      <td>moving_average</td>
+      <td><code>moving_average</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the average of the measure over the given window. The attributes are the ordering columns used to compute the moving average.</td>
       <td><code class="highlighter-rouge">moving_average (revenue, 2, 1, customer region)</code></td>
     </tr>
     <tr>
-      <td>moving_max</td>
+      <td><code>moving_max</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the maximum of the measure over the given window. The attributes are the ordering columns used to compute the moving maximum.</td>
       <td><code class="highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></td>
     </tr>
     <tr>
-      <td>moving_min</td>
+      <td><code>moving_min</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the minimum of the measure over the given window. The attributes are the ordering columns used to compute the moving minimum.</td>
       <td><code class="highlighter-rouge">moving_min (defects, 3, 1, product)</code></td>
     </tr>
     <tr>
-      <td>moving_sum</td>
+      <td><code>moving_sum</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.</td>
       <td><code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></td>
     </tr>
     <tr>
-      <td>stddev</td>
+      <td><code>stddev</code></td>
       <td>Returns the standard deviation of all values of a column.</td>
       <td><code class="highlighter-rouge">stddev (revenue)</code></td>
     </tr>
     <tr>
-      <td>sum</td>
+      <td><code>sum</code></td>
       <td>Returns the sum of all the values of a column.</td>
       <td><code class="highlighter-rouge">sum (revenue)</code></td>
     </tr>
     <tr>
-      <td>unique count</td>
+      <td><code>unique count</code></td>
       <td>Returns the number of unique values of a column.</td>
       <td><code class="highlighter-rouge">unique count (customer)</code></td>
     </tr>
     <tr>
-      <td>variance</td>
+      <td><code>variance</code></td>
       <td>Returns the variance of all the values of a column.</td>
       <td><code class="highlighter-rouge">variance (revenue)</code></td>
     </tr>
@@ -3365,53 +3365,53 @@ $('#toc').on('click', 'a', function() {
   </thead>
   <tbody>
     <tr>
-      <td>concat</td>
+      <td><code>concat</code></td>
       <td>Returns the one or more values as a concatenated text string. Be sure to use single quotes instead of double quotes around each of the strings.
 </td>
       <td><code class="highlighter-rouge">concat ( 'hay' , 'stack' ) = 'haystack'</code><br /><code class="highlighter-rouge">concat (last_name , first_name</code>)</td>
     </tr>
     <tr>
-      <td>contains</td>
+      <td><code>contains</code></td>
       <td>Returns true if the first string contains the second string, otherwise returns false.</td>
       <td><code class="highlighter-rouge">contains ('broomstick', 'room') = true</code><br /><code class="highlighter-rouge">contains (product, 'trial version')</code></td>
     </tr>
     <tr>
-      <td>edit_distance</td>
+      <td><code>edit_distance</code></td>
       <td>Accepts two text strings. Returns the edit distance (minimum number of operations required to transform one string into the other) as an integer. Works with strings under 1023 characters.</td>
       <td><code class="highlighter-rouge">edit_distance ('attorney', 'atty') = 4</code><br /><code class="highlighter-rouge">edit_distance (color, 'red')</code></td>
     </tr>
     <tr>
-      <td>edit_distance_with_cap</td>
+      <td><code>edit_distance_with_cap</code></td>
       <td>Accepts two text strings and an integer to specify the upper limit cap for the edit distance (minimum number of operations required to transform one string into the other). If the edit distance is less than or equal to the specified cap, returns the edit distance. If it is higher than the cap, returns the cap plus 1. Works with strings under 1023 characters.</td>
       <td><code class="highlighter-rouge">edit_distance_with_cap ('pokemon go', 'minecraft pixelmon', 3) = 4</code><br /><code class="highlighter-rouge">edit_distance_with_cap (event, 'burning man', 3)</code></td>
     </tr>
     <tr>
-      <td>similar_to</td>
+      <td><code>similar_to</code></td>
       <td>Accepts a document text string and a search text string. Returns true if relevance score (0-100) of the search string with respect to the document is greater than or equal to 20. Relevance is based on edit distance, number of words in the query, and length of words in the query which are present in the document.</td>
       <td><code class="highlighter-rouge">similar_to ('hello world', 'hello swirl') = true</code><br /><code class="highlighter-rouge">similar_to (current team, drafted by)</code></td>
     </tr>
     <tr>
-      <td>similarity</td>
+      <td><code>similarity</code></td>
       <td>Accepts a document text string and a search text string. Returns the relevance score (0-100) of the search string with respect to the document. Relevance is based on edit distance, number of words in the query, and length of words in the query which are present in the document. If the two strings are an exact match, returns 100.</td>
       <td><code class="highlighter-rouge">similarity ('where is the burning man concert', 'burning man') = 46</code><br /><code class="highlighter-rouge">similarity (tweet1, tweet2)</code></td>
     </tr>
     <tr>
-      <td>spells_like</td>
+      <td><code>spells_like</code></td>
       <td>Accepts two text strings. Returns true if they are spelled similarly and false if they are not. Works with strings under 1023 characters.</td>
       <td><code class="highlighter-rouge">spells_like ('thouhgtspot', 'thoughtspot') = true</code><br /><code class="highlighter-rouge">spells_like (studio, distributor)</code></td>
     </tr>
     <tr>
-      <td>strlen</td>
+      <td><code>strlen</code></td>
       <td>Returns the length of the text.</td>
       <td><code class="highlighter-rouge">strlen ('smith') = 5</code><br /><code class="highlighter-rouge">strlen (lastname)</code></td>
     </tr>
     <tr>
-      <td>strpos</td>
+      <td><code>strpos</code></td>
       <td>Returns the numeric position (starting from 0) of the first occurrence of the second string in the first string, or -1 if not found.</td>
       <td><code class="highlighter-rouge">strpos ('haystack_with_needles', 'needle') = 14</code><br /><code class="highlighter-rouge">strpos (complaint, 'lawyer')</code></td>
     </tr>
     <tr>
-      <td>substr</td>
+      <td><code>substr</code></td>
       <td>Returns the portion of the given string, beginning at the location specified (starting from 0), and of the given length.</td>
       <td><code class="highlighter-rouge">substr ('persnickety', 3, 7) = snicket</code><br /><code class="highlighter-rouge">substr (lastname, 0, 5)</code></td>
     </tr>
@@ -3443,7 +3443,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Dec 13, 2017 <br />
+        Generated: Dec 18, 2017 <br />
          &copy;2017 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
