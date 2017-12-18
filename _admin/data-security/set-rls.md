@@ -48,11 +48,15 @@ Builder. To get to the Rule Builder:
 3. Click **Row security** at the top right side of the page.
 4. Click the **+ Add row security** button.
 
-     ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
+  ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
 
-5. The Rule Builder will appear, where you can define row level security rules.
+   The system displays the Rule Builder.
 
-     ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
+   ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
+
+5. Enter row level security rules.
+6. Save your rules.
+
 
 ## Define Rule-Based Row Level Security rules
 

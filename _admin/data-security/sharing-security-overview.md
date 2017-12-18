@@ -43,7 +43,7 @@ settings and rules.
 When you share an object, only the users and groups that have **SHAREABLE** set
 for the **Sharing visibility** option appear on the dialog.
 
-![]({{ site.baseurl }}/images/share-dialog.png "Share an object")
+![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
 
 User in groups marked **NOT SHAREABLE** cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions

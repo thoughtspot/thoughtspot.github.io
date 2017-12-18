@@ -25,7 +25,7 @@ analysis:
 
 ## Period keywords
 
-<table cellpadding="4" cellspacing="0" summary="" id="keyword_reference__table_ynp_tvj_tw" class="table" frame="border" border="1" rules="all">
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
    <colgroup>
       <col style="width:25%" />
       <col style="width:50%" />

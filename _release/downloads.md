@@ -19,9 +19,9 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>ODBC Driver</strong></td>
-            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://f1.help.thoughtspot.com/@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip?revision=2">ODBC driver for Windows</a></td>
-            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3123/ThoughtSpot_odbc_linux_3.4.tar.gz?revision=1">ODBC driver for Linux</a></td>
-            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3642/ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz?revision=1">ODBC driver for Solaris&nbsp;Sparc</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://thoughtspot.egnyte.com/dl/MrljBtxjri">ODBC driver for Windows</a></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/hFbkjmVbDZ">ODBC driver for Linux</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/xyKZdKw6P3">ODBC driver for Solaris&nbsp;Sparc</a></td>
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>JDBC Driver</strong></td>
@@ -35,18 +35,18 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>JavaScript API</strong></td>
-            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="api.min.js" rel="internal" class="iconitext-16 ext-js" href="https://f1.help.thoughtspot.com/@api/deki/files/3120/api.min.js?revision=1">JavaScript API library</a></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="api.min.js" rel="internal" class="iconitext-16 ext-js" href="https://thoughtspot.egnyte.com/dl/D8tbICaVbR">JavaScript API library</a></td>
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>Application Integration Guide</strong></td>
-            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_Application_Integration_Guide_3.5.pdf" rel="internal" class="iconitext-16 ext-pdf" href="https://f1.help.thoughtspot.com/@api/deki/files/2555/ThoughtSpot_Application_Integration_Guide_3.5.pdf?revision=6">Application Integration Guide</a></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_Application_Integration_Guide_3.5.pdf" rel="internal" class="iconitext-16 ext-pdf" href="{{"/app-integrate/introduction/introduction.html" | prepend: site.baseurl }}">Application Integration Guide</a></td>
         </tr>
     </tbody>
 </table>
 
 ## Installation Instructions
 
-For documentation on installing and configuration, see the instructions for the client you want to use:</p>
+For documentation on installing and configuration, see the instructions for the client you want to use:
 
 * [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
 * [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)

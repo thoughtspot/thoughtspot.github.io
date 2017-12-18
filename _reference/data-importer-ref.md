@@ -1,11 +1,11 @@
 ---
-title: [ThoughtSpot loader flag reference]
+title: [tsload flag reference]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For recurring data loads and for scripting loads, use the ThoughtSpot Loader (tsload). This reference section lists all the flags that can be used to modify the behavior of tsload.
+For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot Loader). This reference section lists all the flags that can be used to modify the behavior of `tsload`.
 
 ## General tsload flags
 

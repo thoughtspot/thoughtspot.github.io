@@ -31,7 +31,7 @@ Click the logo to go to the home page. The home page contains:
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-To learn more about this section, visit [About search]({{ site.baseurl }}/search/searchabout-starting-a-new-search.html#).
+To learn more about this section, visit [About search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html#).
 
 ## Answers
 
