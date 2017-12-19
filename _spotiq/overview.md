@@ -49,7 +49,10 @@ item and department.
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
 6. Click **Next** for the **Set column names** page.
-7. Set the **ITEM CODE** column to **TEXT** on the **Set column types** page.
+7. Set the **category_num** column to **TEXT** on the **Set column types** page.
+
+   ![]({{ site.baseurl }}/images/spotiq-set-column-types.png)
+
 8. Click **Upload**.
 
    The system presents you with a few choices.
@@ -104,7 +107,7 @@ analysis generates new results.
 
 6. Choose **Results**.
 
-   You should still see your **Warehouse_and_Retail_Sales** run. Deleting
+   You should still see the results for your **FoodDollarDataReal** run. Deleting
    information about an analysis run does not delete the actual results. You
    must delete each individually.
 
