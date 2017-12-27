@@ -66,7 +66,9 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 
     ![]({{ site.baseurl }}/images/spotiq-definite-outlier.png)
 
-The changes you make in this step persist on the underlying data for all your future analyses. You can unset these values by going back into the dialog and removing what you set.
+The changes you make in this step persist on the underlying data for all your
+future analyses. You can unset these values by going back into the dialog and
+removing what you set.
 
 ## A temporary customization for a single insight
 
