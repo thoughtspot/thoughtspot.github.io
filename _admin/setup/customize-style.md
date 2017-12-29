@@ -1,14 +1,16 @@
 ---
-title: [Customize style]
+title: [Customize look and feel]
 tags: [customize,style,palette,color,brand]
-keywords: network, ports
+keywords: customize
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can customize the look and feel of the ThoughtSpot application for your
-company. You must configure your cluster to enable this functionality. Contact
+company. Configuring these settings set system-wide defaults for all your users.
+
+You must configure your cluster to enable this functionality. Contact
 <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
 about enabling this feature.
 
@@ -58,7 +60,7 @@ The table below lists the style customizations you can configure.
   </tr>
   <tr>
     <th>Chart Color Palettes</th>
-    <td>Set the default palette for all charts. To set a value, however over a color value and enter a HEX value or select one from the chart.</td>
+    <td>Set the default palette for all charts. To set a value, however over a color value and enter a HEX value or select one from the chart. Individual users can still customize their own chart colors. They can use the **Reset colors** option on a chart to clear their changes. </td>
   </tr>
   <tr>
     <th>Footer text</th>
