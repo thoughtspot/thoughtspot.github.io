@@ -443,21 +443,24 @@ entries:
         - title: Sync users and groups from LDAP
           url: /admin/setup/sync-users-and-groups-from-ldap.html
           output: web,admBk
-        - title: Configure NAS file system
-          url: /admin/setup/NAS-mount.html
-          output: web,admBk
-        - title: Set up monitoring
-          url: /admin/setup/set-up-monitoring.html
-          output: web,admBk
-        - title: Configure support services
-          url: /admin/setup/work-with-ts-support.html
-          output: web,admBk
-        - title: Network ports
-          url: /admin/setup/firewall-ports.html
-          output: web,admBk
-        - title: About load balancing and proxies
-          url: /admin/setup/about-load-balancer-configuration.html
-          output: web,admBk
+      - title: Configure NAS file system
+        url: /admin/setup/NAS-mount.html
+        output: web,admBk
+      - title: Set up monitoring
+        url: /admin/setup/set-up-monitoring.html
+        output: web,admBk
+      - title: Configure support services
+        url: /admin/setup/work-with-ts-support.html
+        output: web,admBk
+      - title: Network ports
+        url: /admin/setup/firewall-ports.html
+        output: web,admBk
+      - title: About load balancing and proxies
+        url: /admin/setup/about-load-balancer-configuration.html
+        output: web,admBk
+      - title: Customize UI style
+        url: /admin/setup/customize-style.html
+        output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
       levelTwoItems:
