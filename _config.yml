@@ -29,6 +29,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
 
+
 # Files and directories that jekyll will exclude from the build output
 exclude:
   - .idea/
