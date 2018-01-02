@@ -108,9 +108,12 @@ To edit or delete an existing group:
 
 ## List the group members
 
+The system shows you the first 15 users in your group. To identify if other
+users are present, you must search for the specific user name.
+
 1. Click **Admin** from the top navigation bar.
 
-   The system dispalsy the **Admin** panel.
+   The system displays the **Admin** panel.
 
 2. Select **User Management**.
 3. Click on a group to edit it.
@@ -121,7 +124,8 @@ To edit or delete an existing group:
 
 4. Choose **Manage Users**.
 
-   Users which are in the group are checked.
+   The first 15 users which are in the group are listed. The group could
+   maintain more, you have to search for a specific user to find others.
 
 
 ## Add multiple users to a group
