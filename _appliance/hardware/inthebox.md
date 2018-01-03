@@ -1,12 +1,13 @@
 ---
-title: [Deployment configuration]
-keywords: tbd
+title: [Hardware appliance overview]
+keywords: appliance,hardware,box
 last_updated: tbd
 summary: "What is in the box."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot appliance hardware will be installed in a rack in your data center. This section describes the typical physical configuration.
+The ThoughtSpot appliance hardware will be installed in a rack in your data
+center. This section describes the typical physical configuration.
 
 ## Hardware provided by ThoughtSpot
 

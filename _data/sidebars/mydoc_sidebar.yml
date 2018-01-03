@@ -1051,45 +1051,54 @@ entries:
       - title: ODBC and JDBC configuration properties
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
-  - sectiontitle: Appliance Quick Start
+  - sectiontitle: Node setup
     output: web,appQs
     sectionitems:
-    - title: Welcome to ThoughtSpot
-      url: /appliance/welcome/welcome-intro.html
+    - title: Overview
+      url: /appliance/welcome-intro.html
       output: web,appQs
-    - title: Supported hardware
-      url: /appliance/physical/hardware-and-deployment.html
+    - levelTwoTitle: Hardware appliance
       output: web,appQs
-    - title: Typical physical deployment
-      url: /appliance/physical/inthebox.html
+      levelTwoItems:
+      - title: Hardware appliance overview
+        url: /appliance/hardware/inthebox.html
+        output: web,appQs
+      - title: Supported hardware
+        url: /appliance/hardware/hardware-and-deployment.html
+        output: web,appQs
+      - title: Cable networking
+        url: /appliance/hardware/cable-networking.html
+        output: web,appQs
+      - title: Setup and start the appliance
+        url: /appliance/hardware/appliance-setup.html
+        output: web,appQs
+    - levelTwoTitle: AWS node
+      output: web,awsQs
+      levelTwoItems:
+        - title: AWS cluster overview
+          url: /appliance/aws/about-aws.html
+          output: web,appQs
+        - title: Configuration options
+          url: /appliance/aws/configuration-options.html
+          output: web,appQs
+        - title: Launch ThoughtSpot on AWS
+          url: /appliance/aws/launch-an-instance.html
+          output: web,appQs
+    - levelTwoTitle: VMWare node
       output: web,appQs
-    - title: Cable networking
-      url: /appliance/setup/cable-networking.html
+      levelTwoItems:
+        - title: Configuration overview
+          url: /appliance/vmware/vmware-intro.html
+          output: web,appQs
+        - title: Launch ThoughtSpot on VMWare
+          url: /appliance/vmware/vmware-setup.html
+          output: web,appQs
+    - title: Network ports
+      url: /appliance/firewall-ports.html
       output: web,appQs
-    - title: Install and start the appliance
-      url: /appliance/setup/appliance-setup.html
+    - title: Contact support
+      url: /appliance/contact.html
       output: web,appQs
-    - title: Contact Support
-      url: /appliance/welcome/contact.html
-      output: web,appQs
-  - sectiontitle: AWS Quick Start
-    output: web,awsQs
-    sectionitems:
-      - title: About ThoughtSpot and AWS
-        url: /aws/introduction/about-aws.html
-        output: web,awsQs
-      - title: Configuration options
-        url: /aws/configuration/configuration-options.html
-        output: web,awsQs
-      - title: Launch an instance
-        url: /aws/setup/launch-an-instance.html
-        output: web,awsQs
-      - title: Network ports
-        url: /aws/setup/firewall-ports.html
-        output: web,awsQs
-      - title: Contact Support
-        url: /aws/welcome/contact.html
-        output: web,awsQs
   - sectiontitle: Disaster Recovery
     output: web,drgBk
     sectionitems:

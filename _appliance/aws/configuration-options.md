@@ -1,5 +1,5 @@
 ---
-title: [Configuration options]
+title: [AWS configuration options]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

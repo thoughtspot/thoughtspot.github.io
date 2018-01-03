@@ -1,5 +1,5 @@
 ---
-title: [Contact ThoughtSpot]
+title: [Contact support]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

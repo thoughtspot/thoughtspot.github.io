@@ -29,6 +29,6 @@ Palo Alto, CA 94306
 
 |Reason for contacting|Email|
 |---------------------|-----|
-|For sales inquiries.|sales@thoughtspot.com|
-|For customer support and software update inquiries.|support@thoughtspot.com|
-|For other inquiries.|hello@thoughtspot.com|
+|For sales inquiries.|<a href="mailto:sales@thoughtspot.com">sales@thoughtspot.com</a>|
+|For customer support and software update inquiries.|<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>|
+|For other inquiries.|<a href="mailto:hello@thoughtspot.com">hello@thoughtspot.com</a>|

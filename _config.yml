@@ -97,6 +97,8 @@ collections:
     output: true
   spotiq:
     output: true
+  vmware:
+    output: true
 
 defaults:
   - values:

@@ -15,7 +15,3 @@ For regular operations and for debugging, there are some ports you will need to 
 ## Network Ports
 
 {% include content/ports-network.md %}
-
-## Related information  
-
-[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
