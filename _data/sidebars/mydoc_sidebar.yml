@@ -1051,7 +1051,7 @@ entries:
       - title: ODBC and JDBC configuration properties
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
-  - sectiontitle: Node setup
+  - sectiontitle: Node Setup
     output: web,appQs
     sectionitems:
     - title: Overview

@@ -4,7 +4,7 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: Application Integration Guide
+print_title: Node Setup Guide
 print_subtitle: Version 4.4
 output: pdf
 defaults:
@@ -18,8 +18,6 @@ collections:
   app-integrate:
     output: true
   appliance:
-    output: true
-  aws:
     output: true
   complex-search:
     output: true
@@ -38,8 +36,6 @@ collections:
   release:
     output: true
   spotiq:
-    output: true
-  vmware:
     output: true
 
 defaults:
