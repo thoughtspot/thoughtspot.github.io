@@ -1073,7 +1073,7 @@ entries:
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs
     - levelTwoTitle: AWS node
-      output: web,awsQs
+      output: web,appQs
       levelTwoItems:
         - title: AWS cluster overview
           url: /appliance/aws/about-aws.html
