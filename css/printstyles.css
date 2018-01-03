@@ -9,11 +9,7 @@
 body {
     font-size:11px;
 }
-.nav ul li a {border-top:0px; background-color:transparent; color: #808080; }
-/* sectionTitles*/
-/*#navig a[href] {color: #595959 !important;}*/
-#navig a[href] {padding-left:14px; background-color: transparent; font-weight: bold; font-size: 12px; color: #595959 !important; }
-/*table .table {max-width:650px;}*/
+
 
 @page big_table {
     prince-rotate-body: landscape;
@@ -24,13 +20,19 @@ table.wide_table {
     page: big_table;
 }
 
-/* LeveltwoTitle*/
-#navig li.sectionitem {font-weight: bold; font-size: 12px; color: #595959 !important; }
-#navig li.levelTwoTitle {margin: 0px 0px 5px; padding-left:14px; margin: 0px 0px; font-weight: bold; font-size: 12px; color: #595959 !important; }
-#navig li.level2item {margin: 0px 0px 5px; padding-left:14px; font-weight: bold; font-size: 12px; color: #595959 !important; }
-#navig li.levelThreeTitle {font-weight: bold; font-size: 12px; color: #595959 !important; }
-#navig li.level3item {padding-left:14px; font-weight: bold; font-size: 12px; color: #595959 !important; }
-#navig li {font-weight: normal; }
+
+.nav ul li a {border-top:0px; background-color:transparent; }
+#navig a[href] {background-color: transparent; font-weight: bold; font-size: 12px;  }
+
+.sectionHead {
+  padding-left: 10px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.sectionHead2 {
+  padding-left: 12px;
+}
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
 
