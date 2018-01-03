@@ -64,3 +64,7 @@ static others appear only when you over over specific locations of the pinboard.
 This diagram displays active action areas on a pinboard.
 
 ![]({{ site.baseurl }}/images/pinboard-controls.png "Pinboard controls")
+
+If you make a change to a pinboard, the system recognizes this and puts a **Save
+changes** button up in the header to alert you.  Simply press this button to
+make your changes permanent.
