@@ -77,8 +77,6 @@ collections:
     output: true
   appliance:
     output: true
-  aws:
-    output: true
   complex-search:
     output: true
   data-connect:

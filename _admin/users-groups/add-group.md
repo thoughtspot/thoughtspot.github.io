@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a group"]
-keywords: "group,user,privileges"
+keywords: "group,user,privileges,members"
 last_updated: tbd
 summary: "Good planning when creating groups and assigning privileges will pay off in ease of administration and a better search experience."
 sidebar: mydoc_sidebar
@@ -105,6 +105,27 @@ To edit or delete an existing group:
    If you don't see the name of the group, try searching for it. You can also delete a group from this page by clicking the **Delete** icon. Deleting a group does not delete its users.
 
 5. Make your changes and click **Update**.
+
+## List the group members
+
+The system shows you the first 15 users in your group. To identify if other
+users are present, you must search for the specific user name.
+
+1. Click **Admin** from the top navigation bar.
+
+   The system displays the **Admin** panel.
+
+2. Select **User Management**.
+3. Click on a group to edit it.
+
+   The system displays the **Edit group** dialog.
+
+   ![]({{ site.baseurl }}/images/edit-group.png "Manage Users")
+
+4. Choose **Manage Users**.
+
+   The first 15 users which are in the group are listed. The group could
+   maintain more, you have to search for a specific user to find others.
 
 
 ## Add multiple users to a group
