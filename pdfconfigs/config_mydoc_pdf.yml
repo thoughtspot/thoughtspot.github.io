@@ -1,3 +1,13 @@
+# ThoughtSpot_Administration_Guide_x.x
+# ThoughtSpot_Data_Integration_Guide_x.x
+# ThoughtSpot_Release_Notes_x.x
+# ThoughtSpot_Application_Integration_Guide_x.x
+# ThoughtSpot_Disaster_Recovery_Guide_x.x
+# ThoughtSpot_User_Guide_x.x
+# ThoughtSpot_Data_Connect_Guide_x.x
+# ThoughtSpot_Reference_Guide_x.x
+#
+#
 destination: _site/
 url: "http://127.0.0.1:4010"
 baseurl: ""
@@ -5,7 +15,7 @@ port: 4010
 output: pdf
 product: mydoc
 print_title: Node Setup Guide
-print_subtitle: Version 4.4
+print_subtitle: Version x.x
 output: pdf
 defaults:
   -
