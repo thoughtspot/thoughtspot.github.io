@@ -371,7 +371,7 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
-    - title: Get help
+    - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
   - sectiontitle: Administration

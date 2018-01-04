@@ -1,30 +1,84 @@
 ---
-title: [Get help]
+title: [More help and support]
 tags: [keywords]
 keywords: tbd
 last_updated: tbd
-summary: "The Help Center provides links to different resources that were created to help you use ThoughtSpot."
+summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The online Help Center serves as your first line of support for when you run into any questions while using ThoughtSpot.
+There are multiple locations inside and outside the ThoughtSpot application
+where you can get more help. This page describes some of the ways to get more
+help inside or outside of the application interface.
 
-The Help Center can be accessed by clicking on **Help** on the top navigation bar. This opens a simple dialog box with links to How to search, Keywords, Release notes, Documentation, and Downloads. Click one of them to open a new tab containing your selected topic.
+Each version of ThoughtSpot has its own documentation set. ThoughtSpot releases
+new documentation sets for every major release version (`x.y`) of ThoughtSpot.
+Documentation features added with minor versions (`x.y.z`) are added to the
+corresponding major release.  This means, for example, that new documentation
+for 4.4.1 minor release version appears in the 4.4 major version documentation.
 
-The Help Center provides the following resources:
+{% include tip.html content="ThoughtSpot supplies release notes for every major
+release and every minor release version (`x.y.z`). " %}
 
--   **A search bar** - You can use the search bar to search through all of ThoughtSpot's documentation and videos.
--   **Short training videos** - Each of these videos cover a popular topic or feature, especially those that have just been released.
+## Help menu
 
-    ![]({{ site.baseurl }}/images/help_center.png "Help Center home page")
+You can navigate directly to this site on the web by entering
+[docs.thoughtSpot.com](https://docs.thoughtspot.com) in your browser's address
+bar. By default, the latest version (4.4) is presented first. ThoughtSpot
+versions prior to `4.4` have documentation located at
+[help.thoughtSpot.com](https://help.thoughtspot.com).
 
--   **Keyword reference**- This reference contains all of the keywords that you can use to improve your search experience. The keywords are categorized into sections, and each of them are accompanied by an example.
--   **Release Notes** - A new Release Notes is made available with every major, minor, and patch release. It contains information on new features and bug fixes.
--   **Documentation** - The Documentation section includes links to various documentation guides and topics.
--   **Downloads** - You can download ThoughtSpot clients and API files from here, including ODBC and JDBC drivers and the Data API.
--   **Version information** The version number of the ThoughtSpot instance you are currently using can be found in the Help Center.
+You can navigate to this documentation from inside the ThoughtSpot application
+as well. In this case, the application links directly to the documentation
+version that matches your product version.
 
-    ![]({{ site.baseurl }}/images/help_center_4.2_version.png "Version number")
+![]({{ site.baseurl }}/images/help-menu.png "Help Menu")
+
+This dialog has links to the following:
+
+<table>
+<colgroup>
+   <col style="width:25%">
+   <col style="width:75%">
+</colgroup>
+  <tr>
+    <th>Link </th>
+    <th>Takes you to</th>
+  </tr>
+  <tr>
+    <th>How search works</th>
+    <td>a short video that explains how to use the <strong>Search</strong> bar</td>
+  </tr>
+  <tr>
+    <th>Keywords</th>
+    <td>a product keyword reference</td>
+  </tr>
+  <tr>
+    <th>Release notes</th>
+    <td>The notes for the ThoughtSpot version.</td>
+  </tr>
+  <tr>
+    <th>Documentation</th>
+    <td>this documentation set</td>
+  </tr>
+  <tr>
+    <th>Downloads</th>
+    <td>a list of software downloads such as connectors</td>
+  </tr>
+</table>
+
+## Search the help in search bar
+
+You can search the help directly from the search bar with the `how to` and `help` keywords.
+
+{% include content/keywords-help.md %}
+
+
+## Learn center
+
+
+## Training videos
+
 
 
 ## Support contact information
