@@ -1,5 +1,5 @@
 ---
-title: [Launch ThoughtSpot on AWS]
+title: [Set up AWS for ThoughtSpot]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

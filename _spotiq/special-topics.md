@@ -40,8 +40,11 @@ or a data management professional. Modeling data requires that you can:
     If you worked through the SpotIQ tutorial, you can try experiment on the
     **FoodDollarDataReal** data you uploaded.
 
-Make sure you set the [**INDEX PRIORITY**]({{ site.baseurl }}/admin/data-modeling/change-column-priority.html) for columns in your data source. Use a value between 8-10 for important columns to improve
-their search ranking. Use 1-3 for low priority columns. **INDEX PRIORITY** impacts user-based ranking which helps SpotIQ focus its analysis.
+Make sure you set the [**INDEX PRIORITY**]({{ site.baseurl
+}}/admin/data-modeling/change-column-priority.html) for columns in your data
+source. Use a value between 8-10 for important columns to improve their search
+ranking. Use 1-3 for low priority columns. **INDEX PRIORITY** impacts user-based
+ranking which helps SpotIQ focus its analysis.
 
 SpotIQ uses measures for correlations.  For trendlines and outliers, if SpotIQ has
 a measure, it then drills by attributes in turn.  

@@ -38,6 +38,13 @@ You can make a copy of an answer if you would like to make edits without changin
 
 ## Other features
 
-At the bottom of the **Answers** page, you can find two additional areas, **SpotIQ Insights** and **Related Searches**. These areas are derived from your original answer and you can select them to deepen your search.
+At the bottom of the **Answers** page, you can find two additional areas,
+**SpotIQ Insights** and **Related Searches**. These areas are derived from your
+original answer and you can select them to deepen your search.
 
 ![]({{ site.baseurl }}/images/other-answers.png "Features of Answers")
+
+The **SpotIQ Insights** section is only visible to users with the **Has SpotIQ**
+privilege. Once you expand an insight on this list, an **Edit** button allows
+you modify the insight and make it your own. Your installation configuration
+determines how many insights can appear in this section. The default is 6.

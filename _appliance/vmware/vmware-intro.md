@@ -12,10 +12,13 @@ ThoughtSpot.
 ## About ThoughtSpot on VMWare
 
 VMWare can provide lots of memory and CPU for your ThoughtSpot instance, and it
-can be easily updated from development instances. The following diagram shows a
-generic view of the components of a VMWare and ThoughtSpot architecture:
+can be easily updated from development instances. The following diagram shows
+the components of a VMWare and ThoughtSpot architecture:d
 
- ![]({{ site.baseurl }}/images/vmware-components.png "VMWare components")
+![]({{ site.baseurl }}/images/vmware-components.png)
+
+{% include note.html content="This is a generic representation; Only CentOS
+hosts are supported with ThoughtSpot." %}
 
 Your database capacity will determine the number of instances you'll need and
 the instance network/storage requirements. In addition, you can go with multiple
@@ -32,15 +35,17 @@ reliability. Your individual host machines meet following requirements:
 * 3X 2T Hard disks (6T in total in hard disk space)
 * 40 Cores
 
-ThoughtSpot provides a VMWare template (OVF) for you to configure your VMs. OVF
-is a platform-independent, efficient, extensible, and open packaging and
-distribution format for virtual machines. The ThoughtSpot OVF format has a
-configuration for:
-
-* thin provisioning
-* reserved memory for the VM
-
 All nodes should have VMWare VSphere Hypervisor (ESXi) 6.5 installed.
+
+ThoughtSpot provides a VMWare template (OVF) together with a VMDK (Virtual
+Machine Disk) file for configuring a VM. VMDK is a file format that describes
+containers for virtual hard disk drives to be used in virtual machines like
+VMware Workstation or VirtualBox. OVF is a platform-independent, efficient,
+extensible, and open packaging and distribution format for virtual machines.
+
+The ThoughtSpot VM configuration uses thin provisioning and sets the recommended
+reserved memory, among other important specifications. You can obtain these
+files from your ThoughtSpot Customer Success Engineer.
 
 ## Questions or comments?
 
