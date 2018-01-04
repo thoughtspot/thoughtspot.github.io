@@ -25,7 +25,7 @@ to SpotIQ:
 ![]({{ site.baseurl }}/images/spotiq-is-on.png)
 
 If you can't see this option, ask your ThoughtSpot Administrator to give you the
-**Has Spot IQ** privileges.
+**Has Spot IQ** privilege.
 
 ## Where to find SpotIQ actions
 
