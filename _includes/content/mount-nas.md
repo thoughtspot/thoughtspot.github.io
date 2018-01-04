@@ -10,7 +10,7 @@ in the cluster automatically. When any node is restarted, the file system will
 be mounted again automatically, if it can be found.
 
 When supplying a directory for writing or reading a backup, you can specify the
-mountpoint as the directory to use. Likewise, you can stage data there for
+`mount` point as the directory to use. Likewise, you can stage data there for
 loading.
 
 Backups are written by the Linux user `admin`. If that user does not have
