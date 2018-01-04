@@ -1,5 +1,5 @@
 ---
-title: [Setup VMWare for ThoughtSpot]
+title: [Set up VMWare for ThoughtSpot]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -26,7 +26,6 @@ for a sandbox environment but is insufficient for a production environment.
    cores (for a physical host with n cores) to fully take advantage of computing
    power of the physical host.
 
-2. Assign a static IP to the VM.
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
 ## Use the OVF to Create a VM
@@ -86,6 +85,10 @@ for a sandbox environment but is insufficient for a production environment.
 4. Set the options as follows:
 
     <table>
+    <colgroup>
+    <col width="25%" />
+    <col width="60%" />
+    </colgroup>
     <tr>
      <th>Setting</th>
      <th>Value</th>

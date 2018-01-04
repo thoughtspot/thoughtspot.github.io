@@ -1069,7 +1069,7 @@ entries:
       - title: Cable networking
         url: /appliance/hardware/cable-networking.html
         output: web,appQs
-      - title: Setup and start the appliance
+      - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs
     - levelTwoTitle: AWS node
@@ -1081,7 +1081,7 @@ entries:
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs
-        - title: Launch ThoughtSpot on AWS
+        - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
     - levelTwoTitle: VMWare node
@@ -1090,7 +1090,7 @@ entries:
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs
-        - title: Launch ThoughtSpot on VMWare
+        - title: Set up VMWware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs
     - title: Network ports
