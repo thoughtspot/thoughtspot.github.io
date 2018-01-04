@@ -8,6 +8,9 @@ permalink: /:collection/:path.html
 This page explains how to install a ThoughtSpot cluster in a VMWare VSphere
 Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
 
+* Complete the prerequisites
+* Use the OVF to create a VM
+* Add hard disks to the VM
 
 
 ## Prerequisites
