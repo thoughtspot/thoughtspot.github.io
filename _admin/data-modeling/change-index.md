@@ -1,65 +1,181 @@
 ---
-title: [Change the index type]
-keywords: tbd
+title: ["Manage suggestion indexing"]
+keywords: search,suggestions,indexing,priority,index,ubr
+tags: [performance,indexing]
 last_updated: tbd
-summary: "ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search."
+summary: " ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
-toc: false
+toc: true
 permalink: /:collection/:path.html
 ---
-A column's index influences the suggestions that appear for that column in
-search. You can modify a specific column's **INDEX TYPE** in the **DATA > Tables >
-Columns** page or to set a system-wide **Index** value in the modeling file.
+When a user searches in the **Search** bar, ThoughtSpot supplies the user with
+suggestions for column names and their column values. The **COLUMN NAME**
+and any **SYNONYMS** appear in **Search** suggestions. A column's **INDEX TYPE**
+controls whether and how ThoughtSpot suggests column values.
 
-{% include warning.html content="If a column has a very large free text values, ThoughtSpot does not recommended
-to changing the column indexing. These should not to be indexed, because
-indexing on these values is not useful and may generate confusing suggestions." %}
+Additionally, ThoughtSpot uses a column's **INDEX PRIORITY** value to determine where
+to rank a column's name and values in the search suggestions. These values
+impact the dynamically calculated _usage based ranking (UBR)_,
 
-## Default indexing
+## Example of Search suggestion behavior
 
-The default behavior of indexing is as follows:
+The example below illustrates how searching for `promotion_last_name t` causes the system to suggest several ways of completing the `t` in the search:
 
--   All column names are indexed using their **ColumnName** value.
--   Values for columns with the column type of `MEASURE` are not indexed.
--   Values for columns with the data type of **DATE** are not indexed.
--   Columns that contain a large amount of free-form text (i.e. the number of characters in more than a few of the fields is more than 50) are indexed as `PREFIX_ONLY` by default.
--   Short strings (like a `firstname` column) are indexed using `PREFIX_AND_SUBSTRING` by default, which indexes both prefix and substrings.
+![]({{ site.baseurl }}/images/index-type.png "Suggestions")
 
-You can override the default behavior by editing the modeling file to change the
-**Index** value for any columns that should be indexed differently. There are
-several different supported index types:
+The system is suggesting the column `type` synonym (A) for a column in the
+`Promotion` table.  It is also suggesting a `Promotion_Last Name` column value
+of `theil` (B). If you look in the **Data > Tables** page, you'll see that the
+`Promotion_Type` column has a `type` synonym and is using default indexng.
 
-|Index type|Description|
-|----------|-----------|
-|`DEFAULT`|This is the default value. The default indexing behavior will apply to the column values, depending on their type. `PREFIX_AND_SUBSTRING` for short values and `PREFIX_ONLY` for long values and free-form text.|
-|`DONT_INDEX`|Prevents indexing on the column values.|
-|`PREFIX_AND_SUBSTRING`|Allows full indexing such that prefix and sub-string search both work for the column values.|
-|`PREFIX_ONLY`|Allows indexing such that only prefix search works for the column values.|
-|`PREFIX_AND_WORD_SUBSTRING`|Allows indexing such that only prefix search works for each word of a multi-word string, for the column values.|
+![]({{ site.baseurl }}/images/index-row.png "Table Row")
+
+Managing search suggestions through **INDEX TYPE** and **INDEX PRIORITY** is
+important. Properly configured suggestions can decrease "noise" in the
+suggestion list. Increasing the visibility of important columns is helpful
+for new or intermittent ThoughtSpot users.
+
+## Understand the default indexing behavior
+
+ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions.
+This system default is configured on your cluster and applies to all worksheets
+and tables. You can override this default behavior on a per-column basis.
+
+The system default behavior of indexing is as follows:
+
+- With two exceptions, the system indexes all columns using their **COLUMN NAME**
+value. The exceptions are columns with **COLUMN TYPE** of `MEASURE` and columns
+with **DATA TYPE** of `DATE`.
+
+- Columns that contain data values with large amount of free-form strings, that is,
+a length is greater than 50 words, are indexed as `PREFIX_ONLY` by default.
+
+  {% include warning.html content="If a column has a very large free text
+  values, ThoughtSpot recommends you keep `DEFAULT` or set `DONT_INDEX`. Other
+  settings indexing on these values may generate confusing suggestions." %}
+
+- Short strings (like a `firstname` column) are indexed using
+`PREFIX_AND_SUBSTRING` by default, which indexes both prefix and substrings.
+
+- If a column has a _cardinality_ &ndash; the number of unique column values &ndash;  greater
+  than 10 million, it is not indexed.
+
+If the column's cardinality if it is greater than 30 million and you change the
+**INDEX TYPE** to something other than `DEFAULT` indexing, ThoughtSpot ignores
+this new value and does not index the column.
+
+### High cardinality and performance
+
+A column's cardinality can impact indexing. If you have a column with a very
+high cardinality and a very high number of rows, indexing these values can
+impact your ThoughtSpot performance. ThoughtSpot Support recommends you turn off
+indexing of primary key columns on extremely large tables (> 10 million rows) in
+your cluster.
+
+High cardinality is relative to other considerations. In some cases, columns
+with fewer than 10 million rows but with columns containing long strings can
+cause performance problems with memory. If you have concerns or questions, your
+ThoughtSpot Customer Success Engineer can help you determine appropriate
+cardinality thresholds for your ThoughtSpot installation.
+
+### Configure your own cluster defaults
+
+If you need to, you can work with ThoughtSpot Support or your Customer Success
+Engineer to configure new cluster defaults.
+
+## Override the system default on a column
+
+You can change a column's **INDEX TYPE** in the **Data > Tables > Columns** page
+or in the **Index** value in the modeling file.  
+
+The values you can set for **INDEX TYPE** are:
+
+<table>
+<colgroup>
+    <col style="width:30%">
+    <col style="width:70%">
+ </colgroup>
+  <tbody>
+  <tr>
+    <th>Index type</th>
+    <th>Description</th>
+  </tr>
+    <tr>
+      <td><code class="highlighter-rouge">DEFAULT</code></td>
+      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">DONT_INDEX</code></td>
+      <td>Prevents indexing on the column values. The column doesn’t appear in search suggestions.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
+      <td>Allows full indexing such that prefix and sub-string search both work for the column values.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
+      <td>Allows indexing such that only prefix search works for each word of a multi-word string, for the column values.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
+      <td>Allows indexing such that only prefix search works for the column values.</td>
+    </tr>
+  </tbody>
+</table>
+
+Consider a column in which there are four values 'ThoughtSpot', 'Thought',
+'Spot' and 'Thought Spot'. If you search for 'sp', depending on the setting for
+indexing, the column value search result suggestions will vary:
+
+|Index field value|Search bar suggestions|
+|---------------------|----------------------|
+|`DEFAULT`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
+|`DONT_INDEX`|No suggestions.|
+|`PREFIX_AND_SUBSTRING`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
+|`PREFIX_ONLY`|'Spot'|
+|`PREFIX_AND_WORD_SUBSTRING`|'Spot' and 'Thought Spot'|
+
+To change a value in the application UI:
+
+1. Open a worksheet or table from the **Data** page.
+2. Find the column whose index type you want to modify.
+3. Set its **INDEX TYPE**.
+4. Save your changes.
 
 
-## Make a change
+If you are using the model file, locate the **Index** cell, and enter the priority you
+want to use.
 
-1. Find the column whose index type you want to modify
-2. Set its **Index Type**.
+## Change a column's suggestion priority
 
-   If you are using the model file, double click in the **Index** cell, and type
-   in the index type you want to use.  Consider a column in which there are four
-   values 'ThoughtSpot', 'Thought', 'Spot' and 'Thought Spot'. If you search for
-   'sp', depending on the setting for indexing, the column value search result
-   suggestions will vary:
+A column's **INDEX PRIORITY** determines the order or rank in which it and its
+values appear in the search dropdown.
 
-   |Index field value|Search bar suggestions|
-   |---------------------|----------------------|
-   |`DEFAULT`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
-   |`DONT_INDEX`|No suggestions.|
-   |`PREFIX_AND_SUBSTRING`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
-   |`PREFIX_ONLY`|'Spot'|
-   |`PREFIX_AND_WORD_SUBSTRING`|'Spot' and 'Thought Spot'|
+![]({{ site.baseurl }}/images/priority-effect.png)
 
-3. Save your changes.
+By default, the **INDEX PRIORITY** value is set to `1` for all columns. You can
+push a column up in the order (increase the rank) by increasing its **INDEX
+PRIORITY** value. A higher value (like `2`) will cause the corresponding column
+and its values to appear higher up in the search dropdown than columns with
+lower value (like `1`).
 
+![]({{ site.baseurl }}/images/set-priority.png)
+
+You should only use numbers between 1-10 in the **INDEX PRIORITY** field.Use a
+value between `8-10` for important columns to improve their search ranking. Use
+`1-3` for low priority columns.  
+
+ To change a value in the application UI:
+
+1. Open a worksheet or table from the **Data** page.
+2. Find the column whose index type you want to modify.
+3. Change the **INDEX PRIORITY** to a number between 1 and 10.
+4. Save your changes.
+
+If you are using the model file, locate the **Index** cell, and enter the
+priority you want to use.
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching](semantic-modeling.html#)
+- [Usage based rankings (UBR)]({{ site.baseurl}}/end-user/search/recent-searches.html#usage-based-ranking).

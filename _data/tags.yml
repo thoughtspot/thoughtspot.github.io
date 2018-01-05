@@ -18,3 +18,5 @@ allowed-tags:
  - dates
  - time
  - keywords
+ - performance
+ - indexing

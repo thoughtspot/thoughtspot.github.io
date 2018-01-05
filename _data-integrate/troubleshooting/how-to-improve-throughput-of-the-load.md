@@ -1,6 +1,7 @@
 ---
 title: [How to improve throughput of the load]
-keywords: tbd
+keywords: performance
+tags: [performance]
 last_updated: tbd
 summary: "Adjusting the transaction size may correct poor performance and low throughput."
 sidebar: mydoc_sidebar
