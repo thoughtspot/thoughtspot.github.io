@@ -566,14 +566,11 @@ entries:
         - title: Hide a column or define a synonym
           url: /admin/data-modeling/change-visibility-synonym.html
           output: web,admBk
-        - title: Change the index type
+        - title: Manage suggestion indexing
           url: /admin/data-modeling/change-index.html
           output: web,admBk
         - title: Add a geographical data setting
           url: /admin/data-modeling/model-geo-data.html
-          output: web,admBk
-        - title: Set the search suggestions priority
-          url: /admin/data-modeling/change-column-priority.html
           output: web,admBk
         - title: Set number, date, currency formats
           url: /admin/data-modeling/set-format-pattern-numbers.html

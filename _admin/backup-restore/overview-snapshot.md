@@ -1,6 +1,7 @@
 ---
 title: [Work with snapshots]
 keywords: backup,snapshot
+tags: [performance]
 last_updated: tbd
 summary: "A snapshot is a point-in-time image of your running cluster you can use to restore the cluster back to a specific point in time. "
 sidebar: mydoc_sidebar
