@@ -34,7 +34,7 @@ version that matches your product version.
 
 ![]({{ site.baseurl }}/images/help-menu.png "Help Menu")
 
-This dialog has links to the following:
+From this dialog you can get to the following:
 
 <table>
 <colgroup>
@@ -43,7 +43,7 @@ This dialog has links to the following:
 </colgroup>
   <tr>
     <th>Link </th>
-    <th>Takes you to</th>
+    <th>Takes you to ...</th>
   </tr>
   <tr>
     <th>How search works</th>
@@ -67,12 +67,16 @@ This dialog has links to the following:
   </tr>
 </table>
 
+Along the bottom of the **Help** dialog you'll see a link to contact Support as
+well as the version of ThoughtSpot you are using.
+
 ## Search the help in search bar
 
 You can search the help directly from the search bar with the `how to` and `help` keywords.
 
 {% include content/keywords-help.md %}
 
+The `help` keyword locates information in the documentation only. The `how to`
 
 ## Learn center
 
