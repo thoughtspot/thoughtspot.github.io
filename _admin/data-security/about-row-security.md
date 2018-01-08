@@ -3,11 +3,13 @@ title: ["Row level security (RLS)"]
 tags: [groups]
 keywords: tbd
 last_updated: tbd
-summary: "Using row level security, you can effectively customize search results and pinboards for each group that views them."
+summary: "Using row level security, you can restrict data that appears in search results and pinboards by group."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Row level security (RLS) allows you to define which groups can see individual
+Row level security (RLS) allows you to restrict a group's access to table row data. You do this by creating a _rule_ that associates a column filter with a group. ThoughtSpot evaluates this rule against each row and, if the filter rule prevents group members from viewing data in rows that contain a co
+
+ which groups can see individual
 rows in a table, based on the values in one of its columns. This RLS feature can
 handle thousands of groups, and allows you to set up flexible rules that are
 self-maintaining.
@@ -23,6 +25,9 @@ There are several reasons you might want to use row level security:
 |Hide sensitive data from groups who should not see it.|In a report with customer details, hide potential customers (those who have not yet completed their purchase) from everyone except the sales group.|
 |Filter tables to reduce their size, so that only the relevant data is visible.|Reduce the number of rows that appear in a very large table of baseball players, so that players who are no longer active are not shown except to historians.|
 |Enable creation of a single pinboard or visualization, which can display different data depending on the group who is accessing it.|Create one sales pinboard that shows only the sales in the region of the person who views it. This effectively creates a personalized pinboard, depending on the viewer's region.|
+
+
+If there is RLS on a table, any join coming out of it is effectively a left-outer join.
 
 ## RLS and administrators
 
