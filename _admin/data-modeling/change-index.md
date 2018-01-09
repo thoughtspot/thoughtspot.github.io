@@ -123,17 +123,17 @@ The values you can set for **INDEX TYPE** are:
   </tbody>
 </table>
 
-Consider a column in which there are four values 'ThoughtSpot', 'Thought',
-'Spot' and 'Thought Spot'. If you search for 'sp', depending on the setting for
+Consider a column in which there are four values `ThoughtSpot`, `Thought`,
+`Spot` and `Thought Spot`. If you search for `sp`, depending on the setting for
 indexing, the column value search result suggestions will vary:
 
 |Index field value|Search bar suggestions|
 |---------------------|----------------------|
-|`DEFAULT`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
+|`DEFAULT`|`ThoughtSpot`, `Spot` and `Thought Spot`|
 |`DONT_INDEX`|No suggestions.|
-|`PREFIX_AND_SUBSTRING`|'ThoughtSpot', 'Spot' and 'Thought Spot'|
-|`PREFIX_ONLY`|'Spot'|
-|`PREFIX_AND_WORD_SUBSTRING`|'Spot' and 'Thought Spot'|
+|`PREFIX_AND_SUBSTRING`|`ThoughtSpot`, `Spot` and `Thought Spot`|
+|`PREFIX_ONLY`|`Spot`|
+|`PREFIX_AND_WORD_SUBSTRING`|`Spot` and `Thought Spot`|
 
 To change a value in the application UI:
 

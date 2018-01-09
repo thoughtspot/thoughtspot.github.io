@@ -253,15 +253,10 @@ margin-top: -40px
 
 /* Don't think we need this*/
 
-/*table {
-    background-color: transparent;
-    max-width: 90%;
+table {
+
     margin-bottom: 20px;
-    border: 1px solid #dedede;
-    table-layout: auto;
-    column-width: 50px;
-    word-break: keep-all;
-}*/
+}
 
 
 th {

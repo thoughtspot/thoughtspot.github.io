@@ -13,10 +13,9 @@ number of null values (which display as `{blank}` in the web browser), you can
 fix this by changing the [inclusion rule](about-inclusion-rule.html#) for the
 worksheet.  
 
-if you have the **Can Administer RLS** privilege, or belong to a group who does,
-you can create a worksheet that bypasses the RLS rules underlying a worksheet's
-data. When by pass is set the underlying RLS allows users, that would not
-otherwise be unable, to see an aggregate/market view of a tables data.
+If you are an administrator or have **Has administration privileges**, you can
+also edit any worksheet and change its RLS or other key settings.
+
 
 ## Change/configure a worksheet
 
