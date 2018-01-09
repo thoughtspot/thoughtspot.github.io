@@ -1,6 +1,6 @@
 ---
 title: ["Row level security (RLS)"]
-tags: [groups]
+tags: [rls,groups]
 keywords: tbd
 last_updated: tbd
 summary: "Using row level security, you can restrict data that appears in search results and pinboards by group."
@@ -20,9 +20,9 @@ they are a member of.  The rules restrict the visible data when users:
 
 * view a table
 * view a worksheet derived from the table
-* search for data
-* view answers they've created or that were shared with them
-* interact with pinboards they've created or that were shared with them
+* search for data in the worksheet or table
+* view answers from restricted data &endash; either that they've created or that were shared with them
+* interact with pinboards from restricted data &endash; either that they've created or that were shared with them
 
 Search suggestions also fall under row-level security. If a user would not have
 access to the row data, then values from the row do not appear in **Search**
@@ -53,17 +53,6 @@ might want to use row level security:
   </tr>
 </table>
 
-
-## Which roles can set or bypass RLS?
-
-Administrators or users with **Has administration privilege** can see all data
-sources. No type of row level security applies to them. If your installation has
-enabled the **Can Administer RLS** privilege, these administrative users can
-grant **Can Administer RLS** to groups.
-
-Members of groups with **Can Administer RLS** are exempt from row-level security
-(RLS) rules.  This is true regardless of whether the group membership is direct
-or indirect (through a group hierarchy).
 
 ## Related information
 

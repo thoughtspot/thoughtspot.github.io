@@ -2,6 +2,7 @@
 title: ["Change inclusion, join, or RLS for a worksheet"]
 keywords: "worksheet, join, inclusion rule"
 last_updated: tbd
+tags: [rls]
 summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule."
 toc: false
 sidebar: mydoc_sidebar
