@@ -3,18 +3,18 @@ title: [How rule-based RLS works]
 tags: [bestpractices,groups,performance,SysAdmin]
 keywords: tbd
 last_updated: tbd
-summary: "Use rule-based RLS to a group's access to data. Users see only accessible row data."
+summary: "Use rule-based RLS to restrict a group's access to data. Users see only accessible row data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Row level security works at the group level and applies to tables. A table's RLS
-rules also apply to any objects with data from that table. So, searches,
-answers, worksheets, and pinboards that rely on a table's data fall under RLS
-rules.
+Row level security works at the group level and is configured on tables. A
+table's RLS rules also apply to any objects with data from that table. So,
+searches, answers, worksheets, and pinboards that rely on a table's data fall
+under RLS rules.
 
-You cannot set RLS rules on worksheets, but administrators can disable existing
-rules on individual worksheets. In this case, users with access to the worksheet
-can see all its data.
+You cannot set RLS rules on worksheets, only on tables. However, administrators
+can disable RLS on worksheets that are derived from tables with RLS rules. Once
+RLS rules are disabled, users with access to the worksheet can see all its data.
 
 
 ## Privileges that allow users to set, or be exempt from, RLS
@@ -34,19 +34,29 @@ indirect (through a group hierarchy).
 
 ## Examples of RLS rules
 
-An RLS rule evaluates against the `tsgroups` system variable. This variable
-returns all the groups for the currently authenticated (logged in) user.
-ThoughtSpot filters a table's rows by evaluating a rule against the
-authenticated user. If the rule evaluates to true, a user can see that row. An
-RLS rule has the format:
+An RLS rule evaluates against the `ts_groups` system variable. This variable
+returns all the groups the currently authenticated (logged in) user belongs to
+directly and indirectly through groups in groups. ThoughtSpot filters a table's
+rows by evaluating a rule against the authenticated user.
 
-`COLUMN_FILTER` **= tsgroups**
+A rule is an expression that returns a boolean, `TRUE` or `FALSE`. If the rule
+evaluates to `TRUE`, a user can see that row. If the rule evaluates to `FALSE`
+for the user, then the user cannot view the data and instead they see the
+message `No data to display`.
 
-So, if a table row contains column data that matches a filter (`true`), the user
-can see that row's data. If the rule evalutes to `false`, the user does not have
-access, they see the message `No data to display`.
+Rule expression can be implicit or explicit. And rules may or may not contain
+logic. A simple implicit RLS rule has the format:
 
-Consider a simple example. Your company has `vendor-purchase` table such as:
+`COLUMN_FILTER` **= ts_groups**
+
+An example of an explicit rule that contains logic would be:
+
+`if ( COLUMN_FILTER ) then true else false`
+
+Rules can also reference tables other than the table you are securing.
+
+Consider a simple RLS rule example. Your company has `vendor-purchase` table
+such as:
 
  ![]({{ site.baseurl }}/images/rls-example0.png "Simple table")
 
@@ -56,7 +66,7 @@ self-titled vendor groups. So, all users from the Starbucks vendor are in the
 `Starbucks` group and all users from `round table` are in the `Round Table` group.
 Then, you set a **Row security** on the `vendor-purchase` table as follows:
 
- `VENDOR = tsgroups`
+ `VENDOR = ts_groups`
 
 Only users in `Starbucks` group see `starbucks` data and so forth. Rules ignore
 case inconsistencies and spaces are evaluated so `round table` in the data
@@ -71,6 +81,10 @@ to see all the vendor data:
 This rule continues to work as you add data from new vendor or team members to
 `Accounts Payable`. In this way, a well-written rule is _self maintaining_,
 meaning you don't have to revisit the rule as your system changes.
+
+You can also create rules that reference tables other than the table you are
+securing. For example, if you have a `sales` table and `store` dimension table, you
+can use attributes from the `store` table to secure the `sales` table.
 
 ## Multiple rules and multiple group membership
 
