@@ -1,34 +1,65 @@
 ---
 title: ["Row level security (RLS)"]
-tags: [groups]
+tags: [rls,groups]
 keywords: tbd
 last_updated: tbd
-summary: "Using row level security, you can effectively customize search results and pinboards for each group that views them."
+summary: "Using row level security, you can restrict data that appears in search results and pinboards by group."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Row level security (RLS) allows you to define which groups can see individual
-rows in a table, based on the values in one of its columns. This RLS feature can
-handle thousands of groups, and allows you to set up flexible rules that are
-self-maintaining.
+Row level security (RLS) allows you to restrict a group's access to table row
+data. You do this by creating a _rule_ that associates a filter with a group.
+When a group member searches, views an answer, or otherwise works with data,
+ThoughtSpot evaluates the rules and prevents the display of the restricted data.
+Users see only the data they are permitted to see.
 
-## How RLS works
+## How does RLS impact user interactions?
 
-RLS works at the group level, not the individual user level. By default, all groups can see all rows for any table they can view. You can limit the rows a group can see by setting conditions on column values. The row level security rules you define on a table also apply to any worksheets and pinboards based on that table.
+The security rules apply to objects shared with users individually or via groups
+they are a member of.  The rules restrict the visible data when users:
 
-There are several reasons you might want to use row level security:
+* view a table
+* view a worksheet derived from the table
+* search for data in the worksheet or table
+* view answers from restricted data &endash; either that they've created or that were shared with them
+* interact with pinboards from restricted data &endash; either that they've created or that were shared with them
 
-|Reason|Example|
-|------|-------|
-|Hide sensitive data from groups who should not see it.|In a report with customer details, hide potential customers (those who have not yet completed their purchase) from everyone except the sales group.|
-|Filter tables to reduce their size, so that only the relevant data is visible.|Reduce the number of rows that appear in a very large table of baseball players, so that players who are no longer active are not shown except to historians.|
-|Enable creation of a single pinboard or visualization, which can display different data depending on the group who is accessing it.|Create one sales pinboard that shows only the sales in the region of the person who views it. This effectively creates a personalized pinboard, depending on the viewer's region.|
+Search suggestions also fall under row-level security. If a user would not have
+access to the row data, then values from the row do not appear in **Search**
+suggestions.
 
-## RLS and administrators
+## Why use RLS?
 
-If your installation has enabled the **Can Administer RLS** privilege, user
-groups with this privilege (directly or indirectly) can bypass row-level
-security (RLS) rules on worksheets. This privilege can only be assigned by a
-user who already **Has administration privilege**. See ["Change inclusion, join, or RLS for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) for more information on how to do this.
+RLS allows you to set up flexible rules that are self-maintaining. An RLS
+configuration can handle thousands of groups. There are several reasons you
+might want to use row level security:
 
-Users with **Has administration privilege** are administrators and can see can see all data sources, and no type of row level security applies to them.
+<table>
+  <tr>
+    <th>Reason </th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Hide sensitive data from groups who should not see it.</td>
+    <td>In a report with customer details, hide potential customers (those who have not yet completed their purchase) from everyone except the sales group.</td>
+  </tr>
+  <tr>
+    <td>Filter tables to reduce their size, so that only the relevant data is visible.</td>
+    <td>Reduce the number of rows that appear in a very large table of baseball players, so that players who are no longer active are not shown except to historians.</td>
+  </tr>
+  <tr>
+    <td>Enable creation of a single pinboard or visualization, which can display different data depending on the group who is accessing it.</td>
+    <td>Create one sales pinboard that shows only the sales in the region of the person who views it. This effectively creates a personalized pinboard, depending on the viewer's region.</td>
+  </tr>
+</table>
+
+
+## Related information
+
+* To continue learning about RLS, see [How rule-based RLS works]({{ site.baseurl
+}}/admin/data-security/row-level-security.html#).
+
+* **Search** suggestions relies on compile indices to present suggestions to users
+from your data. See [Manage suggestion indexing]({{ site.baseurl
+}}/admin/data-modeling/change-index.html#) to learn how to configure
+suggestions.

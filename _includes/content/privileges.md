@@ -40,7 +40,7 @@
     </tr>
     <tr>
       <td><strong>Can Administer RLS</strong></td>
-      <td>Users in groups with this privilege (directly or indirectly) can bypass row-level security (RLS) rules. This privilege can only be assigned by a user who already <b>Has administration privilege</b>. Your installation configuration may enable or disable this feature. By default, it is enabled.</td>
+      <td>Users in groups with this privilege (directly or indirectly) are exempt rom row-level security (RLS) rules. Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the  <b>Has administration privilege</b> can grant this privilege. </td>
     </tr>
   </tbody>
 </table>

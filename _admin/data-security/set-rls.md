@@ -1,113 +1,73 @@
 ---
-title: [Set Rule-Based RLS]
+title: [Set row level security rules]
 keywords: tbd
 last_updated: tbd
+tags: [groups]
 summary: "Explains the process for setting RLS rules."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Setting row level security is a three steps process:
+When rule-based row level security (RLS) is set, it prevents users from seeing
+data they shouldn't in tables and the objects derived from them. You must have
+administrative rights on ThoughtSpot to set RLS rules.
 
-1. Disable data value suggestions
-2. Access the Rule Builder.
-3. Define Rule-Based Row Level Security rules.
+Before you create a rule, make sure you have read [How rule-based RLS works]({{ site.baseurl
+}}/admin/data-security/row-level-security.html#).
 
+## Create a rule on a table
 
-## Disable data value suggestions
+You can only set RLS rules on tables. To set up rule-based row level security, do the following:
 
-When you set Rule-Based Row Level Security, you need to first turn off search
-suggestions on data values.
+1. Navigate to the **Data** page and edit by clicking on it.
+2. Click **Row security** at the top right side of the page.
+3. Click the **+ Add row security** button.
 
-When Rule-Based Row Level Security is set, it protects users from seeing data
-they shouldn't in worksheets and pinboards. However, the search suggestions are
-not filtered using Rule-Based Row Level Security, so it is possible someone
-could see a data value they should not in a search suggestion. Disabling
-suggestions on data values corrects this. Be sure and do this procedure before
-setting up Rule-Based Row Level Security.
+    ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
 
-[Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#), and
-tell them that you will be setting up Rule-Based Row Level Security. Ask them to
-disable data value suggestions for you. When this setting has been made,
-continue with the next procedure.
+    The system displays the Rule Builder.
 
-## Access the Rule Builder
+    ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
 
-To set up rule-based row level security, you first need to access the Rule
-Builder. To get to the Rule Builder:
+    You define row level security by creating an expression that gets evaluated for every row and group combination. This powerful feature can be used with up to thousands of groups. To define a row level security rule:
 
-1. Click on **DATA**, on the top navigation bar.
+4. Open the Rule Builder.
+5. Give your rule a name.
+6. Enter an expression for your rule.
 
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+   The rule gets evaluated against an authenticated user for every row and group
+   combination. If the rule evaluates to true, the user can't see that row's
+   data. Use the variable **ts_groups** to refer to the group name.
 
-2. Select a table from the list by clicking on it.
-
-   Row level security can only be set on tables and imported data, not on
-   worksheets. The settings you make to the tables automatically apply to
-   any worksheets or pinboards created on top of them.
-
-3. Click **Row security** at the top right side of the page.
-4. Click the **+ Add row security** button.
-
-  ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
-
-   The system displays the Rule Builder.
-
-   ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
-
-5. Enter row level security rules.
-6. Save your rules.
-
-
-## Define Rule-Based Row Level Security rules
-
-You define row level security by creating an expression that gets evaluated for every row and group combination. This powerful feature can be used with up to thousands of groups. To define a row level security rule:
-
-1. Open the Rule Builder.
-2. Use the Rule Builder window to enter a row security rule.
-
-   You'll type in an expression, which gets e<p></p>valuated for every row and
-   group combination. If the rule evaluates to true for a particular row and
-   group, that group will be able to see that row. Use the variable
-   **ts_groups** to refer to the group name. For example, the expression
-   `ts_groups = location` would allow users to only see rows where the value in
-   the location column was the same as their group name.
-
-   Notice how this type of security rule is self-maintaining. If you were to
-   later add additional locations, the rule will still work, as long as users
-   are placed in the group that matches their location.
-
-     ![]({{ site.baseurl }}/images/rls_enter_expression.png "Enter an expression")
-
-3. Use formulas if you want to define more complex expressions.
+   ![]({{ site.baseurl }}/images/rls_enter_expression.png "Enter an expression")
 
     You can see a list of available operators by clicking on **Rule Assistant**.
 
-     ![]({{ site.baseurl }}/images/rls_rule_assistant.png "The Rule Assistant")
+    ![]({{ site.baseurl }}/images/rls_rule_assistant.png "The Rule Assistant")
 
-4. Use the suggestions to build a valid expression.
+    As you type, ThoughtSpot suggests formula syntax, variables, and column
+    names. If you can't remember the exact column name or variable you want to
+    use, the suggestions can help.
 
-    When the expression is valid, you'll see a green indicator at the bottom of
-    the Rule Builder. As you type, you'll see suggestions for formula syntax,
-    variables, and column names. Using these suggestions can make defining an
-    expression easier, particularly when it comes to specific syntax, like
-    enclosing parameters in parenthesis. And if you can't remember the exact
-    column name or variable you want to use, the suggestions can help.
+    When your expression is valid, a green indicator appears at the bottom of
+    the Rule Builder.
 
-5. Click **Save**.
+7. Click **Save**.
 
-   The rule you created will be shown in the list of rules.
-6. Click on its name to view or edit the rule.
-    You can also add more rules by clicking **+ Add**.
+The rule you created is listed in the rules. You can edit the rule or add more rules by clicking **+ Add**.
 
+## Test your rule with restricted and unrestricted users
 
-To test your rule, create a search that includes the column(s) you used in your
-expression, save it to a pinboard, and share it with all users. Log in as users
-in different groups, and make sure they are seeing the appropriate rows in the
-pinboard you created.
+To test your rule, log in as users in different groups. Search within the table
+for data both that you test user can and can't access. Make sure your test users
+are seeing the appropriate rows.
 
-## Bypass RLS on a worksheet
+## Related information
 
-Administrators can bypass the RLS rules set on a the table at the worksheet
-level. Bypassing the underlying RLS rules allows users, that would not otherwise be
-unable, to see an aggregate/market view of a tables data. See how to ["Change inclusion, join, or RLS for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) in
-this documentation for more information.
+* Administrators can bypass the RLS rules set on a the table at the worksheet
+level. See how to ["Change inclusion, join, or RLS for a worksheet]({{
+site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) in this
+documentation for more information.
+
+* For a list of operators and functions you can use to build RLS rules see
+[Row level security rules reference]({{ site.baseurl
+}}/reference/rls-rule-builder-reference.html#).
