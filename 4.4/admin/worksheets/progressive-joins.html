@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content="rls,  tbd">
 <title>How the worksheet join rule works | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-03T18:53:55-08:00" />
+<meta property="article:published_time" content="2018-01-10T13:20:44-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html","publisher":null,"image":null,"headline":"[“How the worksheet join rule works”]","dateModified":"2018-01-03T18:53:55-08:00","datePublished":"2018-01-03T18:53:55-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html","publisher":null,"image":null,"headline":"[“How the worksheet join rule works”]","dateModified":"2018-01-10T13:20:44-08:00","datePublished":"2018-01-10T13:20:44-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/worksheets/progressive-joins.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -999,7 +999,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">Get help</a></li>
+                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a></li>
                 
               
             
@@ -1417,19 +1417,13 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/4.4/admin/data-modeling/change-index.html">Change the index type</a></li>
+                                  <li><a href="/4.4/admin/data-modeling/change-index.html">Manage suggestion indexing</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/4.4/admin/data-modeling/model-geo-data.html">Add a geographical data setting</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/data-modeling/change-column-priority.html">Set the search suggestions priority</a></li>
                               
                             
                         
@@ -1499,13 +1493,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/worksheets/about-inclusion-rule.html">How the inclusion rule works</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li class="active"><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
+                          <li><a href="/4.4/admin/worksheets/edit-worksheet.html">Edit a worksheet</a></li>
                       
                    
                 
@@ -1517,7 +1505,13 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/worksheets/edit-worksheet.html">Edit a worksheet</a></li>
+                          <li><a href="/4.4/admin/worksheets/about-inclusion-rule.html">How the inclusion rule works</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li class="active"><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
                       
                    
                 
@@ -2787,36 +2781,70 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.</p>
+  <p>Use the worksheet join rule to specify when to apply joins when a search is done
+on a worksheet. You can either apply joins progressively, as each search term is
+added (recommended), or apply all joins to every search.</p>
 
 <h2 id="understand-progressive-joins">Understand progressive joins</h2>
 
-<p>Often, a worksheet includes several dimension tables and a fact table. With progressive joins, if your search only includes terms from the fact table, you’ll see all of the rows that satisfy your search. But as you add terms from dimension tables, the total number of rows shown may be reduced, as the joins to each dimension table are applied. It works like this:</p>
+<p>Often, a worksheet includes several dimension tables and a fact table. With
+progressive joins, if your search only includes terms from the fact table,
+you’ll see all of the rows that satisfy your search. But as you add terms from
+dimension tables, the total number of rows shown may be reduced, as the joins to
+each dimension table are applied. It works like this:</p>
 
 <ul>
   <li>If you choose <strong>Apply joins progressively (recommended for most cases)</strong>, joins are only applied for tables whose columns are included in the search.</li>
   <li>If you choose <strong>Apply all joins</strong>, all possible joins are applied, regardless of which tables are included in the search.</li>
 </ul>
 
-<p>When using <strong>Apply joins progressively</strong>, the number of rows in a search using the worksheet depends on which tables are part of the search. The worksheet acts like a materialized view. This means that it contains the results of a defined query in the form of a table. So if a particular dimension table is left out of the search, its joins are not applied.</p>
+<p>When using <strong>Apply joins progressively</strong>, the number of rows in a search using
+the worksheet depends on which tables are part of the search. The worksheet acts
+like a materialized view. This means that it contains the results of a defined
+query in the form of a table. So if a particular dimension table is left out of
+the search, its joins are not applied.</p>
 
 <h2 id="rule-based-row-level-security-rls-with-worksheets">Rule-Based Row Level Security (RLS) with worksheets</h2>
 
-<p>With Rule-Based RLS, you need to protect every table that contains any sensitive data. To do this, you’ll grant access by creating explicit row level security rules on each of the underlying tables which contain data that row level security should apply to.</p>
+<p>With Rule-Based RLS, you need to protect every table that contains any sensitive
+data. To do this, you’ll grant access by creating explicit row level security
+rules on each of the underlying tables which contain data that row level
+security should apply to.</p>
 
-<p>When creating the row level security rules for a table that’s part of a worksheet, you aren’t limited to referencing only the columns in that table. You can specify columns from other tables in the worksheet as well, as long as the tables are joined to the table you’re creating the rule on. Then, when creating a worksheet on top of them, the behavior is consistent regardless of the worksheet join rule you choose. Users will never be able to see data they should not, regardless of what their search contains.</p>
+<p>When creating the row level security rules for a table that’s part of a
+worksheet, you aren’t limited to referencing only the columns in that table. You
+can specify columns from other tables in the worksheet as well, as long as the
+tables are joined to the table you’re creating the rule on. Then, when creating
+a worksheet on top of them, the behavior is consistent regardless of the
+worksheet join rule you choose. Users will never be able to see data they should
+not, regardless of what their search contains.</p>
 
-<p>Imagine you have a worksheet that contains a “Sales” fact table, and “Customer” and “Product” dimensions that are joined on “Customer SSN” and “Product Code” columns. In order to secure the “Sales” table, you can use “Customer Name” from the “Customer” column to create a row level security rule.</p>
+<p>Imagine you have a worksheet that contains a <code class="highlighter-rouge">Sales</code> fact table, and <code class="highlighter-rouge">Customer</code>
+and <code class="highlighter-rouge">Product</code> dimensions that are joined on <code class="highlighter-rouge">Customer SSN</code> and <code class="highlighter-rouge">Product Code</code>
+columns. In order to secure the <code class="highlighter-rouge">Sales</code> table, you can use <code class="highlighter-rouge">Customer Name</code> from
+the <code class="highlighter-rouge">Customer</code> column to create a row level security rule.</p>
 
 <h2 id="how-joins-are-applied-with-chasm-traps">How joins are applied with chasm traps</h2>
 
-<p>When working with worksheets and row level security, you need to understand how joins are applied. This is particularly important with chasm trap schemas. For chasm trap schemas, if row level security is only set on one of the tables, people could see data they should not see if the scope of their search does not include that table. (this protects them from having people see the wrong things if they have chasm trap).</p>
+<p>When working with worksheets and row level security, you need to understand how
+joins are applied. This is particularly important with chasm trap schemas. For
+chasm trap schemas, if row level security is only set on one of the tables,
+people could see data they should not see if the scope of their search does not
+include that table. (this protects them from having people see the wrong things
+if they have chasm trap).</p>
 
-<p>For chasm trap <em>worksheets</em>, progressive and non-progressive joins do not apply. There is an entirely different methodology for how worksheet joins on a chasm trap schema work with row level security. So you can safely ignore that setting.</p>
+<p>For chasm trap <em>worksheets</em>, progressive and non-progressive joins do not apply.
+There is an entirely different methodology for how worksheet joins on a chasm
+trap schema work with row level security. So you can safely ignore that setting.</p>
 
 <h2 id="joins-and-aggregated-worksheets">Joins and aggregated worksheets</h2>
 
-<p>You have the ability to join an aggregated worksheet with a table. You can join an aggregated worksheet with a system table by creating a relationship. This means aggregated worksheets behave similar to tables, and they can be used in the same way as a table, excluding any TQL manipulation. You also have the capability to create a worksheet on top of an aggregated worksheet. So aggregated worksheets can be included as tables in regular worksheets.</p>
+<p>You have the ability to join an aggregated worksheet with a table. You can join
+an aggregated worksheet with a system table by creating a relationship. This
+means aggregated worksheets behave similar to tables, and they can be used in
+the same way as a table, excluding any TQL manipulation. You also have the
+capability to create a worksheet on top of an aggregated worksheet. So
+aggregated worksheets can be included as tables in regular worksheets.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -2830,6 +2858,13 @@ $('#toc').on('click', 'a', function() {
     </div>
     <div >
         
+        
+        
+        
+        <a href="/4.4/tags/tag_rls.html" class="btn btn-default navbar-btn cursorNorm" role="button">rls</a>
+        
+        
+        
     </div>
 </div>
 
@@ -2842,7 +2877,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 3, 2018 <br />
+        Generated: Jan 10, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
