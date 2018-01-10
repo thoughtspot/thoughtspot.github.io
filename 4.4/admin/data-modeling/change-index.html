@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search."> -->
-<meta name="keywords" content=",  tbd">
-<title>Change the index type | ThoughtSpot Documentation</title>
+<!-- <meta name="description" content=" ThoughtSpot dynamically indexes Search bar suggestions for column names and values."> -->
+<meta name="keywords" content="performanceindexing,  search,suggestions,indexing,priority,index,ubr">
+<title>Manage suggestion indexing | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,19 +48,19 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“Change the index type”]</title>
-<meta property="og:title" content="[“Change the index type”]" />
+<title>[“Manage suggestion indexing”]</title>
+<meta property="og:title" content="[“Manage suggestion indexing”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A column’s index influences the suggestions that appear for that column in search. You can modify a specific column’s INDEX TYPE in the DATA &gt; Tables &gt; Columns page or to set a system-wide Index value in the modeling file." />
-<meta property="og:description" content="A column’s index influences the suggestions that appear for that column in search. You can modify a specific column’s INDEX TYPE in the DATA &gt; Tables &gt; Columns page or to set a system-wide Index value in the modeling file." />
+<meta name="description" content="When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values." />
+<meta property="og:description" content="When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-03T18:53:55-08:00" />
+<meta property="article:published_time" content="2018-01-10T13:20:44-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"A column’s index influences the suggestions that appear for that column in search. You can modify a specific column’s INDEX TYPE in the DATA &gt; Tables &gt; Columns page or to set a system-wide Index value in the modeling file.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html","publisher":null,"image":null,"headline":"[“Change the index type”]","dateModified":"2018-01-03T18:53:55-08:00","datePublished":"2018-01-03T18:53:55-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html","publisher":null,"image":null,"headline":"[“Manage suggestion indexing”]","dateModified":"2018-01-10T13:20:44-08:00","datePublished":"2018-01-10T13:20:44-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/data-modeling/change-index.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -999,7 +999,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">Get help</a></li>
+                  <li><a href="/4.4/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a></li>
                 
               
             
@@ -1417,19 +1417,13 @@ var ss360Config = {
                         
                           
                               
-                                  <li class="active"><a href="/4.4/admin/data-modeling/change-index.html">Change the index type</a></li>
+                                  <li class="active"><a href="/4.4/admin/data-modeling/change-index.html">Manage suggestion indexing</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/4.4/admin/data-modeling/model-geo-data.html">Add a geographical data setting</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/4.4/admin/data-modeling/change-column-priority.html">Set the search suggestions priority</a></li>
                               
                             
                         
@@ -1499,13 +1493,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/worksheets/about-inclusion-rule.html">How the inclusion rule works</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
+                          <li><a href="/4.4/admin/worksheets/edit-worksheet.html">Edit a worksheet</a></li>
                       
                    
                 
@@ -1517,7 +1505,13 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/worksheets/edit-worksheet.html">Edit a worksheet</a></li>
+                          <li><a href="/4.4/admin/worksheets/about-inclusion-rule.html">How the inclusion rule works</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/admin/worksheets/progressive-joins.html">How the worksheet join rule works</a></li>
                       
                    
                 
@@ -2751,7 +2745,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Change the index type</h1>
+   <h1 class="post-title-main">Manage suggestion indexing</h1>
 </div>
 
 
@@ -2759,116 +2753,243 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">ThoughtSpot indexes column names and unique column values. The indexes are used to dynamically generate suggestions in the search bar when typing a search.</div>
+    <div class="summary"> ThoughtSpot dynamically indexes Search bar suggestions for column names and values.</div>
    
 
     
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the
+on-page minitoc. if you use html tags, you must supply an ID for the heading
+element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
 
-  <p>A column’s index influences the suggestions that appear for that column in
-search. You can modify a specific column’s <strong>INDEX TYPE</strong> in the <strong>DATA &gt; Tables &gt;
-Columns</strong> page or to set a system-wide <strong>Index</strong> value in the modeling file.</p>
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If a column has a very large free text values, ThoughtSpot does not recommended
-to changing the column indexing. These should not to be indexed, because
-indexing on these values is not useful and may generate confusing suggestions.</div>
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
 
-<h2 id="default-indexing">Default indexing</h2>
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
 
-<p>The default behavior of indexing is as follows:</p>
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <p>When a user searches in the <strong>Search</strong> bar, ThoughtSpot supplies the user with
+suggestions for column names and their column values. The <strong>COLUMN NAME</strong>
+and any <strong>SYNONYMS</strong> appear in <strong>Search</strong> suggestions. A column’s <strong>INDEX TYPE</strong>
+controls whether and how ThoughtSpot suggests column values.</p>
+
+<p>Additionally, ThoughtSpot uses a column’s <strong>INDEX PRIORITY</strong> value to determine where
+to rank a column’s name and values in the search suggestions. These values
+impact the dynamically calculated <em>usage based ranking (UBR)</em>,</p>
+
+<h2 id="example-of-search-suggestion-behavior">Example of Search suggestion behavior</h2>
+
+<p>The example below illustrates how searching for <code class="highlighter-rouge">promotion_last_name t</code> causes
+the system to suggest several ways of completing the <code class="highlighter-rouge">t</code> in the search:</p>
+
+<p><img src="/4.4/images/index-type.png" alt="" title="Suggestions" /></p>
+
+<p>The system is suggesting the synonym <code class="highlighter-rouge">type</code> (callout A) for a column in the
+<code class="highlighter-rouge">Promotion</code> table.  It is also suggesting a value of <code class="highlighter-rouge">theil</code> (callout B) for the
+<code class="highlighter-rouge">Promotion_Last Name</code> column. If you look in the <strong>Data &gt; Tables</strong> page, you’ll
+see there is a <code class="highlighter-rouge">type</code> synonym for the <code class="highlighter-rouge">Promotion_Type</code> column which is using
+default indexing.</p>
+
+<p><img src="/4.4/images/index-row.png" alt="" title="Table Row" /></p>
+
+<p>Managing search suggestions through <strong>INDEX TYPE</strong> and <strong>INDEX PRIORITY</strong> is
+important. Properly configured suggestions can decrease “noise” in the
+suggestion list. Increasing the visibility of important columns is helpful
+for new or intermittent ThoughtSpot users.</p>
+
+<h2 id="understand-the-default-indexing-behavior">Understand the default indexing behavior</h2>
+
+<p>ThoughtSpot has a system default <strong>INDEX TYPE</strong> behavior for search suggestions.
+This system default is configured on your cluster and applies to all worksheets
+and tables. You can override this default behavior on a per-column basis.</p>
+
+<p>The system behavior when the <strong>INDEX TYPE</strong> is <strong>DEFAULT</strong> is as follows:</p>
 
 <ul>
-  <li>All column names are indexed using their <strong>ColumnName</strong> value.</li>
-  <li>Values for columns with the column type of <code class="highlighter-rouge">MEASURE</code> are not indexed.</li>
-  <li>Values for columns with the data type of <strong>DATE</strong> are not indexed.</li>
-  <li>Columns that contain a large amount of free-form text (i.e. the number of characters in more than a few of the fields is more than 50) are indexed as <code class="highlighter-rouge">PREFIX_ONLY</code> by default.</li>
-  <li>Short strings (like a <code class="highlighter-rouge">firstname</code> column) are indexed using <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> by default, which indexes both prefix and substrings.</li>
+  <li>
+    <p>With two exceptions, the system indexes all columns using their <strong>COLUMN NAME</strong>
+value. The exceptions are columns with <strong>COLUMN TYPE</strong> of <code class="highlighter-rouge">MEASURE</code> and columns
+with <strong>DATA TYPE</strong> of <code class="highlighter-rouge">DATE</code>.</p>
+  </li>
+  <li>
+    <p>Columns that contain data values with large amount of free-form strings, that is,
+a length is greater than 50 words, are indexed as <code class="highlighter-rouge">PREFIX_ONLY</code> by default.</p>
+
+    <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If a column has a very large free text
+values, ThoughtSpot recommends you keep <code class="highlighter-rouge">DEFAULT</code> or set <code class="highlighter-rouge">DONT_INDEX</code>. Other
+settings indexing on these values may generate confusing suggestions.</div>
+  </li>
+  <li>
+    <p>Short strings (like a <code class="highlighter-rouge">firstname</code> column) are indexed using
+<code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> by default, which indexes both prefix and substrings.</p>
+  </li>
+  <li>
+    <p>If a column is using has a <em>cardinality</em> – the number of unique column values –  greater
+than 10 million, it is not indexed.</p>
+  </li>
 </ul>
 
-<p>You can override the default behavior by editing the modeling file to change the
-<strong>Index</strong> value for any columns that should be indexed differently. There are
-several different supported index types:</p>
+<p>If a column’s <strong>INDEX TYPE</strong> is <em>not</em> <strong>DEFAULT</strong> and the column’s cardinality is
+greater than 30 million, ThoughtSpot does not index the column.</p>
+
+<h3 id="high-cardinality-and-performance">High cardinality and performance</h3>
+
+<p>A column’s cardinality can impact indexing. If you have a column with a very
+high cardinality and a very high number of rows, indexing these values can
+impact your ThoughtSpot performance. ThoughtSpot Support recommends you turn off
+indexing of primary key columns on extremely large tables (&gt; 10 million rows) in
+your cluster.</p>
+
+<p>High cardinality is relative to other considerations. In some cases, columns
+with fewer than 10 million rows but with columns containing long strings can
+cause performance problems with memory. If you have concerns or questions, your
+ThoughtSpot Customer Success Engineer can help you determine appropriate
+cardinality thresholds for your ThoughtSpot installation.</p>
+
+<h3 id="configure-your-own-cluster-defaults">Configure your own cluster defaults</h3>
+
+<p>If you need to, you can work with ThoughtSpot Support or your Customer Success
+Engineer to configure new cluster defaults.</p>
+
+<h2 id="override-the-system-default-on-a-column">Override the system default on a column</h2>
+
+<p>You can change a column’s <strong>INDEX TYPE</strong> in the <strong>Data &gt; Tables &gt; Columns</strong> page
+or in the <strong>Index</strong> value in the modeling file.</p>
+
+<p>The values you can set for <strong>INDEX TYPE</strong> are:</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Index type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
+<colgroup>
+    <col style="width:30%" />
+    <col style="width:70%" />
+ </colgroup>
   <tbody>
+  <tr>
+    <th>Index type</th>
+    <th>Description</th>
+  </tr>
     <tr>
       <td><code class="highlighter-rouge">DEFAULT</code></td>
-      <td>This is the default value. The default indexing behavior will apply to the column values, depending on their type. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
+      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">DONT_INDEX</code></td>
-      <td>Prevents indexing on the column values.</td>
+      <td>Prevents indexing on the column values. The column doesn’t appear in search suggestions.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
       <td>Allows full indexing such that prefix and sub-string search both work for the column values.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
-      <td>Allows indexing such that only prefix search works for the column values.</td>
-    </tr>
-    <tr>
       <td><code class="highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
       <td>Allows indexing such that only prefix search works for each word of a multi-word string, for the column values.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
+      <td>Allows indexing such that only prefix search works for the column values.</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="make-a-change">Make a change</h2>
+<p>Consider a column in which there are four values <code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Thought</code>,
+<code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code>. If you search for <code class="highlighter-rouge">sp</code>, depending on the setting for
+indexing, the column value search result suggestions will vary:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index field value</th>
+      <th>Search bar suggestions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">DEFAULT</code></td>
+      <td><code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">DONT_INDEX</code></td>
+      <td>No suggestions.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
+      <td><code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
+      <td><code class="highlighter-rouge">Spot</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
+      <td><code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To change a value in the application UI:</p>
 
 <ol>
-  <li>Find the column whose index type you want to modify</li>
-  <li>
-    <p>Set its <strong>Index Type</strong>.</p>
-
-    <p>If you are using the model file, double click in the <strong>Index</strong> cell, and type
-in the index type you want to use.  Consider a column in which there are four
-values ‘ThoughtSpot’, ‘Thought’, ‘Spot’ and ‘Thought Spot’. If you search for
-‘sp’, depending on the setting for indexing, the column value search result
-suggestions will vary:</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Index field value</th>
-          <th>Search bar suggestions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code class="highlighter-rouge">DEFAULT</code></td>
-          <td>‘ThoughtSpot’, ‘Spot’ and ‘Thought Spot’</td>
-        </tr>
-        <tr>
-          <td><code class="highlighter-rouge">DONT_INDEX</code></td>
-          <td>No suggestions.</td>
-        </tr>
-        <tr>
-          <td><code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
-          <td>‘ThoughtSpot’, ‘Spot’ and ‘Thought Spot’</td>
-        </tr>
-        <tr>
-          <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
-          <td>‘Spot’</td>
-        </tr>
-        <tr>
-          <td><code class="highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
-          <td>‘Spot’ and ‘Thought Spot’</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li>Open a worksheet or table from the <strong>Data</strong> page.</li>
+  <li>Find the column whose index type you want to modify.</li>
+  <li>Set its <strong>INDEX TYPE</strong>.</li>
   <li>Save your changes.</li>
 </ol>
 
+<p>If you are using the model file, locate the <strong>Index</strong> cell, and enter the <strong>INDEX TYPE</strong> you
+want to use.</p>
+
+<h2 id="change-a-columns-suggestion-priority">Change a column’s suggestion priority</h2>
+
+<p>A column’s <strong>INDEX PRIORITY</strong> determines the order or rank in which it and its
+values appear in the search dropdown.</p>
+
+<p><img src="/4.4/images/priority-effect.png" alt="" /></p>
+
+<p>By default, the <strong>INDEX PRIORITY</strong> value is set to <code class="highlighter-rouge">1</code> for all columns. You can
+push a column up in the order (increase the rank) by increasing its <strong>INDEX
+PRIORITY</strong> value. A higher value (like <code class="highlighter-rouge">2</code>) will cause the corresponding column
+and its values to appear higher up in the search dropdown than columns with
+lower value (like <code class="highlighter-rouge">1</code>).</p>
+
+<p><img src="/4.4/images/set-priority.png" alt="" /></p>
+
+<p>You should only use numbers between 1-10 in the <strong>INDEX PRIORITY</strong> field.Use a
+value between <code class="highlighter-rouge">8-10</code> for important columns to improve their search ranking. Use
+<code class="highlighter-rouge">1-3</code> for low priority columns.</p>
+
+<p>To change a value in the application UI:</p>
+
+<ol>
+  <li>Open a worksheet or table from the <strong>Data</strong> page.</li>
+  <li>Find the column whose index type you want to modify.</li>
+  <li>Change the <strong>INDEX PRIORITY</strong> to a number between 1 and 10.</li>
+  <li>Save your changes.</li>
+</ol>
+
+<p>If you are using the model file, locate the <strong>Index</strong> cell, and enter the
+priority you want to use.</p>
+
 <h2 id="related-information">Related information</h2>
 
-<p><a href="semantic-modeling.html#">Model the data for searching</a></p>
+<ul>
+  <li><a href="semantic-modeling.html#">Model the data for searching</a></li>
+  <li><a href="/4.4/end-user/search/recent-searches.html#usage-based-ranking">Usage based rankings (UBR)</a>.</li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
@@ -2882,6 +3003,17 @@ suggestions will vary:</p>
     </div>
     <div >
         
+        
+        
+        
+        <a href="/4.4/tags/tag_performance.html" class="btn btn-default navbar-btn cursorNorm" role="button">performance</a>
+        
+        
+        
+        <a href="/4.4/tags/tag_indexing.html" class="btn btn-default navbar-btn cursorNorm" role="button">indexing</a>
+        
+        
+        
     </div>
 </div>
 
@@ -2894,7 +3026,7 @@ suggestions will vary:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 3, 2018 <br />
+        Generated: Jan 10, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
