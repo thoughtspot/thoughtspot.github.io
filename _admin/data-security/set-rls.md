@@ -11,12 +11,13 @@ When rule-based row level security (RLS) is set, it prevents users from seeing
 data they shouldn't in tables and the objects derived from them. You must have
 administrative rights on ThoughtSpot to set RLS rules.
 
-Before you create a rule, make sure you have read [How rule-based RLS works]({{ site.baseurl
-}}/admin/data-security/row-level-security.html#).
+Before you create a rule, make sure you have read [How rule-based RLS works]({{
+site.baseurl }}/admin/data-security/row-level-security.html#).
 
 ## Create a rule on a table
 
-You can only set RLS rules on tables. To set up rule-based row level security, do the following:
+You can set RLS rules _only_ on tables. To set up rule-based row level security,
+do the following:
 
 1. Navigate to the **Data** page and edit by clicking on it.
 2. Click **Row security** at the top right side of the page.
@@ -28,7 +29,9 @@ You can only set RLS rules on tables. To set up rule-based row level security, d
 
     ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
 
-    You define row level security by creating an expression that gets evaluated for every row and group combination. This powerful feature can be used with up to thousands of groups. To define a row level security rule:
+    You define row level security by creating an expression that gets evaluated
+    for every row and group combination. This powerful feature can be used with
+    up to thousands of groups.
 
 4. Open the Rule Builder.
 5. Give your rule a name.
@@ -53,7 +56,8 @@ You can only set RLS rules on tables. To set up rule-based row level security, d
 
 7. Click **Save**.
 
-The rule you created is listed in the rules. You can edit the rule or add more rules by clicking **+ Add**.
+The rule you created is listed in the rules. You can edit the rule or add more
+rules by clicking **+ Add**.
 
 ## Test your rule with restricted and unrestricted users
 
