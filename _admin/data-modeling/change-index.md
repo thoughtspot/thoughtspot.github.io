@@ -19,14 +19,16 @@ impact the dynamically calculated _usage based ranking (UBR)_,
 
 ## Example of Search suggestion behavior
 
-The example below illustrates how searching for `promotion_last_name t` causes the system to suggest several ways of completing the `t` in the search:
+The example below illustrates how searching for `promotion_last_name t` causes
+the system to suggest several ways of completing the `t` in the search:
 
 ![]({{ site.baseurl }}/images/index-type.png "Suggestions")
 
-The system is suggesting the column `type` synonym (A) for a column in the
-`Promotion` table.  It is also suggesting a `Promotion_Last Name` column value
-of `theil` (B). If you look in the **Data > Tables** page, you'll see that the
-`Promotion_Type` column has a `type` synonym and is using default indexng.
+The system is suggesting the synonym `type` (callout A) for a column in the
+`Promotion` table.  It is also suggesting a value of `theil` (callout B) for the
+`Promotion_Last Name` column. If you look in the **Data > Tables** page, you'll
+see there is a `type` synonym for the `Promotion_Type` column which is using
+default indexing.
 
 ![]({{ site.baseurl }}/images/index-row.png "Table Row")
 
@@ -41,7 +43,7 @@ ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions.
 This system default is configured on your cluster and applies to all worksheets
 and tables. You can override this default behavior on a per-column basis.
 
-The system default behavior of indexing is as follows:
+The system behavior when the **INDEX TYPE** is **DEFAULT** is as follows:
 
 - With two exceptions, the system indexes all columns using their **COLUMN NAME**
 value. The exceptions are columns with **COLUMN TYPE** of `MEASURE` and columns
@@ -57,12 +59,11 @@ a length is greater than 50 words, are indexed as `PREFIX_ONLY` by default.
 - Short strings (like a `firstname` column) are indexed using
 `PREFIX_AND_SUBSTRING` by default, which indexes both prefix and substrings.
 
-- If a column has a _cardinality_ &ndash; the number of unique column values &ndash;  greater
+- If a column is using has a _cardinality_ &ndash; the number of unique column values &ndash;  greater
   than 10 million, it is not indexed.
 
-If the column's cardinality if it is greater than 30 million and you change the
-**INDEX TYPE** to something other than `DEFAULT` indexing, ThoughtSpot ignores
-this new value and does not index the column.
+If a column's **INDEX TYPE** is _not_ **DEFAULT** and the column's cardinality is
+greater than 30 million, ThoughtSpot does not index the column.
 
 ### High cardinality and performance
 
@@ -142,8 +143,7 @@ To change a value in the application UI:
 3. Set its **INDEX TYPE**.
 4. Save your changes.
 
-
-If you are using the model file, locate the **Index** cell, and enter the priority you
+If you are using the model file, locate the **Index** cell, and enter the **INDEX TYPE** you
 want to use.
 
 ## Change a column's suggestion priority
