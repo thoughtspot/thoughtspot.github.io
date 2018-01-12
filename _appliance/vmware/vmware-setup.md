@@ -119,9 +119,7 @@ for a sandbox environment but is insufficient for a production environment.
 6. Repeat steps 1-5 for the remaining hard disks.
 7. Reboot the VM.
 
-## ThoughtSpot guided installation
+## Next steps
 
-Once you've configured your nodes, you contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> or your
-on-site ThoughtSpot Customer Success Engineer for help installing the
-ThoughtSpot software.
+There is no network at this point on your VMs. To make the VM node accessible
+from any terminal within local network, you must set up a network.

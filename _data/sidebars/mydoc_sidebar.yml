@@ -1090,6 +1090,9 @@ entries:
         - title: Set up VMWware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs
+        - title: Set up node network
+          url: /appliance/vmware/network-setup.html
+          output: web,appQs
     - title: Network ports
       url: /appliance/firewall-ports.html
       output: web,appQs
