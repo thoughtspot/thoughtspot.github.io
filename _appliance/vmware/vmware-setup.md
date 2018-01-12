@@ -122,4 +122,5 @@ for a sandbox environment but is insufficient for a production environment.
 ## Next steps
 
 There is no network at this point on your VMs. To make the VM node accessible
-from any terminal within local network, you must set up a network.
+from any terminal within local network, [you must set up a network on the node]({{
+site.baseurl }}/appliance/vmware/network-setup.html).
