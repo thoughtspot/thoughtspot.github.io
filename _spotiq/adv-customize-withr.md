@@ -103,7 +103,7 @@ column and a zip code column.
     df <- data.frame(.param0, .param1)
     cluster <- kmeans(df[1:2], 3, nstart = 20)
     cluster$cluster <- as.factor(cluster$cluster)
-    png(file=#output_png#,width=400,height=350,res=72)
+    png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
     ####COLUMN BINDINGS (ONE PER LINE)####
     Sales
