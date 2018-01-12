@@ -1,3 +1,11 @@
+
+/* This would block the H2 heading */
+/*
+div#toc ul li ul li {
+  display: none;
+}
+*/
+
 div#unibox-suggest-box {
   padding: 0px !important;
 }
