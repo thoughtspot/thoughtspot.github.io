@@ -17,6 +17,17 @@ permalink: /:collection/:path.html
 
 {% include callout.html content="For detailed descriptions of new features and capabilities in the 4.4 release, see the official release announcement on the ThoughtSpot blog <b><a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>.</b>" type="success" %}
 
+<h2>Supported upgrade paths</h2>
+
+<p>If you are running one of the following releases, you can upgrade to this release directly.
+
+<ul>
+<li>4.2.3, 4.3, 4.4 and any hotfixes or customer patches on these branches</li>
+</ul>
+
+<p>If you are running a different version, you need to do a multiple pass
+upgrade. First, upgrade to one of the above versions, and then to this release.</p>
+
 <h2>4.4.1 New&nbsp;Features and Functionality&nbsp;</h2>
 
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
