@@ -1,5 +1,5 @@
 ---
-title: [About load balancing and proxies]
+title: [Configure load balancing and proxies]
 tags: [bestpractices]
 keywords: "load balancing, performance"
 last_updated: tbd

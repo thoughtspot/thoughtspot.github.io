@@ -21,3 +21,6 @@ allowed-tags:
  - performance
  - indexing
  - rls
+ - bestpractices
+ - limitations
+ 

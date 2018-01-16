@@ -464,7 +464,7 @@ entries:
       - title: Network ports
         url: /admin/setup/firewall-ports.html
         output: web,admBk
-      - title: About load balancing and proxies
+      - title: Configure load balancing and proxies
         url: /admin/setup/about-load-balancer-configuration.html
         output: web,admBk
       - title: Customize look and feel
