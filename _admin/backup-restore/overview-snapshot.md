@@ -31,7 +31,7 @@ To create a snapshot:
 
 
     ```
-    $ tscli snapshot create <snapshot_name> <reason>
+    $ tscli snapshot create <snapshot_name> <reason> <ttl>
     ```
 
 3. Check that the snapshot was created:
