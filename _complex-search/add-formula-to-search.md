@@ -10,7 +10,7 @@ The Formula Builder includes many types of operators, such as logical (if, then,
 
 You can create a formula from directly within a search. If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet. Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.
 
-Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the **Edit** privilege, other people can see the formula results, too. In order to make edits to the formula, they also need to have the **Edit** privilege on the underlying data.
+Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the **Edit** privilege, other people can see the formula results, too. To make edits to the formula, they also need to have the **Edit** privilege on the underlying data.
 
 -   **[Add a formula to a search]({{ site.baseurl }}/complex-search/how-to-add-formula.html)**  
 You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add if...then...else logic.
@@ -25,7 +25,7 @@ Date formulas allow you to apply date related functions to your formulas.
 -   **[About percent (simple number) calculations]({{ site.baseurl }}/advanced-search/formulas/percent-calculations.html)**  
 You can use simple number functions to perform useful percent calculations.
 -   **[About conditional formulas (operators)]({{ site.baseurl }}/advanced-search/formulas/conditional-sum.html)**  
-Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas.
+Conditional formulas, or operators, allow you to apply `if`/`then`/`else` conditions in your formulas.
 -   **[About nested formulas]({{ site.baseurl }}/complex-search/about-nested-formulas.html)**  
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.
 -   **[About formula support for chasm trap schemas]({{ site.baseurl }}/complex-search/about-formula-support-for-chasm-trap-schemas.html)**  

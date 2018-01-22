@@ -908,17 +908,20 @@ entries:
       - title: Use the REST API to get data
         url: /app-integrate/data-api/use-data-api-read.html
         output: web,apgBk
-    - levelTwoTitle: Embedding
+    - levelTwoTitle: Embed ThoughtSpot
       output: web,apgBk
       levelTwoItems:
-      - title: About Embedding
+      - title: Understand embedding
         url: /app-integrate/embedding-viz/about-embedding-viz.html
         output: web,apgBk
-      - title: Embed a visualization
+      - title: Visualization embedding
         url: /app-integrate/embedding-viz/embed-a-viz.html
         output: web,apgBk
-      - title: About full embed
+      - title: Application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
+        output: web,apgBk
+      - title: Configured trusted authentication
+        url: /app-integrate/embedding-viz/trusted-authentication.html
         output: web,apgBk
     - levelTwoTitle: Runtime Filters
       output: web,apgBk
