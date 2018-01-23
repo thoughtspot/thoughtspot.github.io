@@ -9,6 +9,10 @@ permalink: /:collection/:path.html
 Embedding allows you to embed all or part of ThoughtSpot in another application.
 
 <table>
+<colgroup>
+   <col style="width:25%">
+   <col style="width:75%">
+</colgroup>
   <tr>
     <th>Type</th>
     <th>Description</th>
@@ -23,7 +27,7 @@ Embedding allows you to embed all or part of ThoughtSpot in another application.
   </tr>
   <tr>
     <td>Object-level</td>
-    <td>Embedd a single visualization in your application. Content is created in ThoughtSpot and then that content is embedded. The content is rendered within an iframe. This returns a JSON object that includes the underlying data.</td>
+    <td>Embed a single visualization in your application. Content is created in ThoughtSpot and then that content is embedded. The content is rendered within an <code>iframe</code>. This returns a JSON object that includes the underlying data.</td>
   </tr>
 </table>
 
@@ -33,7 +37,7 @@ You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
 
 When using embedding, authentication is achieved through SAML. After
 authentication, a URL is provided to call the desired visualization and populate
-it into an iframe.
+it into an `iframe`.
 
 Before you can embed all or part of ThoughtSpot, you must authenticate to
 ThoughtSpot using SAML with the [JavaScript API]({{ site.baseurl
