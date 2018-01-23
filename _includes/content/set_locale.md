@@ -8,8 +8,9 @@ ThoughtSpot supports:
 * Canadian English (*en-CA*)
 * United Kingdom English (*en-GB*)
 
-So, if you set Japanese as your default locale in your profile settings, then
-the interface will update to reflect that after you refresh your page.
+Date and number formats change to reflect your locale. So, if you set Japanese
+as your default locale in your profile settings, then the interface will update
+to reflect that after you refresh your page. 
 
 Keywords, operators, and error messages are included in the translated material.
 Formulas, however, are _not translated_. Also, all metadata remains as user
