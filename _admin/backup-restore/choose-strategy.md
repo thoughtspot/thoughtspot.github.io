@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-tags: [bestpractices]
+tags: [bestpractices,limitations]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -93,7 +93,7 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
                     <td>
                         <ul id="ul_lzn_tmc_m1b">
                             <li>Backups require deleting the existing cluster first.
-                            <li>You are resonsible for validating your backup configuration as
+                            <li>You are responsible for validating your backup configuration as
                                 viable for restoring a cluster.</li>
                             <li>Best practice recommends you to maintain multiple backups.</li>
                             <li>Are typically large in size.</li>

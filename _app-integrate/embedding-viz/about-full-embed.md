@@ -21,7 +21,9 @@ You won't be able to:
 -   modify profiles.
 -   view the Help Center.
 
-## Demo code for sample full embed app (thoughtspot/blink/app/embed.html)
+## Demo code
+
+The following sample code shows how you might full embed app (thoughtspot/blink/app/embed.html)
 
 ```
 <!doctype html>

@@ -832,3 +832,12 @@ This subcommand supports the following actions:
 * `tscli support show-remote` Shows the status and configuration of remote support.
 * `tscli support start-remote` Starts remote support.
 * `tscli support stop-remote` Stops remote support.
+
+### tokenauthentication
+
+```
+tscli cli tokenauthentication [-h] {disable,enable}
+```
+
+* `tscli cli tokenauthentication enable` Generates a token.
+* `tscli cli tokenauthentication disable` Purges token login configuration.

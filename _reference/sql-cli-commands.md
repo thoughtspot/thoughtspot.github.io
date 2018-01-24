@@ -550,7 +550,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
    </tbody>
 </table>
 
-## Modify Schema
+## Modify data
 
 <table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
    <colgroup>

@@ -1,5 +1,6 @@
 ---
 title: [Pivot table]
+tags: [limitations]
 keywords: tbd
 last_updated: tbd
 summary: "A pivot table is a chart type."
@@ -27,10 +28,13 @@ Some additional details about pivot tables include:
 
 -   When you pin a pivot table to a pinboard, it will retain your expansion settings.
 
+## Pivot table limitations
+
 The pivot table chart type has these limitations:
 
--   Only the first 10,000 data values will be used. If you would like to increase this limit, please contact ThoughtSpot Support.
--   Pivot table is not available if the dataset contains more than 100,000 rows.
--   Columns with cardinality beyond 100 are grouped into \{Other\}.
--   Show underlying data menu is unavailable.
--   Conditional formatting is not functional.
+- Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.
+- Pivot table is not available if the dataset contains more than 100,000 rows.
+- Cardinality is not configurable.
+- Columns with cardinality beyond 100 are grouped into \{Other\}.
+- Show underlying data menu is unavailable.
+- Conditional formatting is not functional.

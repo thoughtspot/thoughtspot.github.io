@@ -21,7 +21,7 @@ the password for each user.  The default users are:
   <tr>
     <td>Shell user</td>
     <td><code>thoughtspot</code></td>
-    <td>Used for command line work that does not require sudo or root privileges. For example, these users can use <code>tsload</code>, <code>tql</code>, and check the cluster status. Does not exist for application login.  Logs for this user are found under <code>/tmp</code>.</td>
+    <td>Used for command line work that does not require sudo or root privileges. For example, these users can use <code>tsload</code>, <code>tql</code>, and check the cluster status. This user cannot login to the application.  Logs for this user are found under <code>/tmp</code>.</td>
   </tr>
   <tr>
     <td>Application user</td>
