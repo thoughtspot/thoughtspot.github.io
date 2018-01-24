@@ -32,7 +32,8 @@ You need to edit the page in your application or web page where you want to
 display the visualization. ThoughtSpot uses the Bootstrap grid framework to
 display visualization. You need to reference Bootstrap from the page where you plan to display a visualization.
 
-1. Download the JS.
+1. <a href="{{ “release/downloads.html” | prepend: site.baseurl }}" target="_blank">Download</a> the ThoughtSpot JavaScript library.
+2.
 
 1. Decide how to reference Boostrap.
 
