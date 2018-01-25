@@ -11,7 +11,10 @@ you can embed a visualization, you need to [enable the JavaScript API (JS
 API)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and
 authenticate to ThoughtSpot.
 
-Use this procedure to construct the URL you will use to embed a visualization:
+The content on this page walks you through the process of creating an HTML page
+with an embedded visualization. To build this sample, you need to have access to
+a text editor and a ThoughtSpot instance with a visualization. You should also
+have some experience working with Javascript.
 
 ## Get the link for a pinboard or visualization
 
@@ -19,54 +22,31 @@ This procedure assumes the pinboard or visualization you want already exists. If
 it doesn't, create it now before continuing.
 
 1. Log in to ThoughtSpot from a browser.
-2. Navigate to a pinboard or visualization.
-3. Get the object's link.
+2. Navigate to a visualization on the **Answers** tab.
+3. Copy the URL for the visualization or pinboard you want to embedd.
 
-   If the object is a pinboard, click **Actions** and select **Copy Link**. For an individual answer, use the URL of the answer itself, for example: `https://THOUGHTSPOT_INSTANCE/#/saved-answer/b42128d4-ddef-4336-bb6d-59dd3887a447`
+   If the object is a pinboard, click **Actions** and select **Copy Link**. For
+   an individual answer, use the URL of the answer itself, for example:
+   `https://THOUGHTSPOT_INSTANCE/#/saved-answer/b42128d4-ddef-4336-bb6d-59dd3887a447`.
 
-5. Paste the link into the iframe in your Web page, Web portal, or application.
+4. Locate the visualizations ID (identifier).
 
-## Edit the html
+   In this example, the `b42128d4-ddef-4336-bb6d-59dd3887a447` is the visualizations ID (identifier)
+
+You'll use this identifier in the next part.
+
+## Edit the index.html
 
 You need to edit the page in your application or web page where you want to
-display the visualization. ThoughtSpot uses the Bootstrap grid framework to
-display visualization. You need to reference Bootstrap from the page where you plan to display a visualization.
+embed a ThoughtSpot pinboard or visualization. For this example, you'll edit an
+`index.html` file.
 
-1. <a href="{{ “release/downloads.html” | prepend: site.baseurl }}" target="_blank">Download</a> the ThoughtSpot JavaScript library.
-2.
+1. Create an empty directory called `test`.
+2. Save the `index.html` file to the `test` directory.
+3. Download <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">Download</a> the ThoughtSpot JavaScript library.
+4. Place the Javascript library in an `api` directory co-located with the `index.html` file.
+5. Edit the `index.html` file in your favorite editor.
 
-1. Decide how to reference Boostrap.
-
-  Depending on where you are embedding, you may or may not have access to
-  Bootstrap.  Your application or web pages may already be using it. If you
-  aren't sure, ask the developer.  You can also refer to the [Bootstrap documentation](https://getbootstrap.com/docs/3.3/getting-started/).
-
-  In this example, you reference Bootstrap through a CDN.
-
-2.
-The following example uses a simple web page to illustrate.
-
-
-
-```
-<div class="row">
-<div class="col-lg-6">
-<div class="portlet"><!-- /primary heading -->
-<div class="portlet-heading">
-<h3 class="portlet-title text-dark text-uppercase">
-Product Sales
-</h3>
-<div class="clearfix"></div>
-</div>
-<div id="portlet1" class="panel-collapse collapse in">
-<div class="portlet-body">
-<div id="sales-chart" style="height: 420px;"></div>
-</div>
-</div>
-</div> <!-- /Portlet -->
-
-</div> <!-- end col -->
-</div> <!-- end row -->
-```
-
-1.
+   ```HTML
+   ```
+6.
