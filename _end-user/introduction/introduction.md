@@ -12,6 +12,8 @@ ThoughtSpot enables you to view and analyze your data through a search-based use
 
 ThoughtSpot gives administrators the ability to modify data properties to meet business needs, for example by providing search synonyms for common terms, boosting the importance of a column in search results, or formatting how the data appears. So if you are not getting the answers you expect when using ThoughtSpot, check with your ThoughtSpot administrator to see if some settings may need to be changed.
 
+Make a change
+
 -   **[Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html)**  
 ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar.
 -   **[About the user profile]({{ site.baseurl }}/end-user/introduction/about-user.html)**  
