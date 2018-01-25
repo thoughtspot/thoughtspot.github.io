@@ -50,7 +50,8 @@ The procedure to make this change to an existing data source has two main parts:
 
     ```
     TQL> ALTER TABLE foodmart.account
-         ADD COLUMN account_id VARCHAR(10);
+         ADD COLUMN account_id VARCHAR(10)
+         DEFAULT '';
     ```
 
     You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.
