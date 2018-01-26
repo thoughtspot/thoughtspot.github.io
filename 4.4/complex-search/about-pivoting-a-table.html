@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="A pivot table is a chart type."> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content="limitations,  tbd">
 <title>Pivot table | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-12T15:03:34-08:00" />
+<meta property="article:published_time" content="2018-01-26T13:50:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically. Pivot tables are a chart time typat use a drag-and-drop interface.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html","publisher":null,"image":null,"headline":"[“Pivot table”]","dateModified":"2018-01-12T15:03:34-08:00","datePublished":"2018-01-12T15:03:34-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically. Pivot tables are a chart time typat use a drag-and-drop interface.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html","publisher":null,"image":null,"headline":"[“Pivot table”]","dateModified":"2018-01-26T13:50:09-08:00","datePublished":"2018-01-26T13:50:09-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/about-pivoting-a-table.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1196,7 +1196,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></li>
+                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></li>
                       
                    
                 
@@ -1807,7 +1807,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get logs</a></li>
+                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get your configuration and logs</a></li>
                       
                    
                 
@@ -2047,6 +2047,12 @@ var ss360Config = {
               
             
               
+                
+                  <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">SAML</a>
                   <ul>
@@ -2104,28 +2110,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy configure SAML</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">JavaScript API</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">About the JavaScript API</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Enable the JavaScript API</a></li>
+                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy SAML configuration</a></li>
                       
                    
                 
@@ -2168,24 +2153,36 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">Embedding</a>
+                  <a href="#">Embed ThoughtSpot</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">About Embedding</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed a visualization</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed pinboard or visualization</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">About full embed</a></li>
+                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Authentication flow with embed</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">Full application embedding</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
                       
                    
                 
@@ -2841,11 +2838,14 @@ $('#toc').on('click', 'a', function() {
   <li>When you pin a pivot table to a pinboard, it will retain your expansion settings.</li>
 </ul>
 
+<h2 id="pivot-table-limitations">Pivot table limitations</h2>
+
 <p>The pivot table chart type has these limitations:</p>
 
 <ul>
-  <li>Only the first 10,000 data values will be used. If you would like to increase this limit, please contact ThoughtSpot Support.</li>
+  <li>Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.</li>
   <li>Pivot table is not available if the dataset contains more than 100,000 rows.</li>
+  <li>Cardinality is not configurable.</li>
   <li>Columns with cardinality beyond 100 are grouped into {Other}.</li>
   <li>Show underlying data menu is unavailable.</li>
   <li>Conditional formatting is not functional.</li>
@@ -2863,6 +2863,13 @@ $('#toc').on('click', 'a', function() {
     </div>
     <div >
         
+        
+        
+        
+        <a href="/4.4/tags/tag_limitations.html" class="btn btn-default navbar-btn cursorNorm" role="button">limitations</a>
+        
+        
+        
     </div>
 </div>
 
@@ -2875,7 +2882,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 12, 2018 <br />
+        Generated: Jan 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
