@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-12T15:03:34-08:00" />
+<meta property="article:published_time" content="2018-01-26T13:50:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html","publisher":null,"image":null,"headline":"[“Understand formulas in searches”]","dateModified":"2018-01-12T15:03:34-08:00","datePublished":"2018-01-12T15:03:34-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html","publisher":null,"image":null,"headline":"[“Understand formulas in searches”]","dateModified":"2018-01-26T13:50:09-08:00","datePublished":"2018-01-26T13:50:09-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/complex-search/add-formula-to-search.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1196,7 +1196,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></li>
+                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></li>
                       
                    
                 
@@ -1807,7 +1807,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get logs</a></li>
+                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get your configuration and logs</a></li>
                       
                    
                 
@@ -2047,6 +2047,12 @@ var ss360Config = {
               
             
               
+                
+                  <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">SAML</a>
                   <ul>
@@ -2104,28 +2110,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy configure SAML</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">JavaScript API</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">About the JavaScript API</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Enable the JavaScript API</a></li>
+                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy SAML configuration</a></li>
                       
                    
                 
@@ -2168,24 +2153,36 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">Embedding</a>
+                  <a href="#">Embed ThoughtSpot</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">About Embedding</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed a visualization</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed pinboard or visualization</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">About full embed</a></li>
+                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Authentication flow with embed</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">Full application embedding</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
                       
                    
                 
@@ -2820,7 +2817,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>You can create a formula from directly within a search. If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet. Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.</p>
 
-<p>Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the <strong>Edit</strong> privilege, other people can see the formula results, too. In order to make edits to the formula, they also need to have the <strong>Edit</strong> privilege on the underlying data.</p>
+<p>Adding a formula within a search works much the same way as adding a formula to a worksheet. However, you will be able to edit the formula directly from within the answer. If you add the answer to a pinboard and share it with the <strong>Edit</strong> privilege, other people can see the formula results, too. To make edits to the formula, they also need to have the <strong>Edit</strong> privilege on the underlying data.</p>
 
 <ul>
   <li><strong><a href="/4.4/complex-search/how-to-add-formula.html">Add a formula to a search</a></strong><br />
@@ -2836,7 +2833,7 @@ Date formulas allow you to apply date related functions to your formulas.</li>
   <li><strong><a href="/4.4/advanced-search/formulas/percent-calculations.html">About percent (simple number) calculations</a></strong><br />
 You can use simple number functions to perform useful percent calculations.</li>
   <li><strong><a href="/4.4/advanced-search/formulas/conditional-sum.html">About conditional formulas (operators)</a></strong><br />
-Conditional formulas, or operators, allow you to apply if/then/else conditions in your formulas.</li>
+Conditional formulas, or operators, allow you to apply <code class="highlighter-rouge">if</code>/<code class="highlighter-rouge">then</code>/<code class="highlighter-rouge">else</code> conditions in your formulas.</li>
   <li><strong><a href="/4.4/complex-search/about-nested-formulas.html">About nested formulas</a></strong><br />
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.</li>
   <li><strong><a href="/4.4/complex-search/about-formula-support-for-chasm-trap-schemas.html">About formula support for chasm trap schemas</a></strong><br />
@@ -2867,7 +2864,7 @@ You can create a formula that involves aggregated measures coming from multiple 
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 12, 2018 <br />
+        Generated: Jan 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

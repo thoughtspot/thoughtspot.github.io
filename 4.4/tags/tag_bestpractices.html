@@ -1194,7 +1194,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></li>
+                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></li>
                       
                    
                 
@@ -1805,7 +1805,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get logs</a></li>
+                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get your configuration and logs</a></li>
                       
                    
                 
@@ -2045,6 +2045,12 @@ var ss360Config = {
               
             
               
+                
+                  <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">SAML</a>
                   <ul>
@@ -2102,28 +2108,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy configure SAML</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">JavaScript API</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">About the JavaScript API</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Enable the JavaScript API</a></li>
+                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy SAML configuration</a></li>
                       
                    
                 
@@ -2166,24 +2151,36 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">Embedding</a>
+                  <a href="#">Embed ThoughtSpot</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">About Embedding</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed a visualization</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed pinboard or visualization</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">About full embed</a></li>
+                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Authentication flow with embed</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">Full application embedding</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
                       
                    
                 
@@ -2851,8 +2848,10 @@ $('#toc').on('click', 'a', function() {
       
       <tr>
          <td><a href="/4.4/admin/backup-restore/choose-strategy.html">Understand the backup strategies</a></td>
-         <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a enabled by default a snapshot configuration. This configuration instructs... </td>
+         <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs... </td>
       </tr>
+      
+      
       
       
       
@@ -2949,6 +2948,8 @@ $('#toc').on('click', 'a', function() {
          <td><a href="/4.4/admin/data-security/share-source-tables.html">Share tables and columns</a></td>
          <td> You can share an entire table, or only some of its columns. </td>
       </tr>
+      
+      
       
       
       
@@ -3102,7 +3103,7 @@ $('#toc').on('click', 'a', function() {
       
       
       <tr>
-         <td><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></td>
+         <td><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></td>
          <td> A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency.  </td>
       </tr>
       
@@ -3138,6 +3139,14 @@ $('#toc').on('click', 'a', function() {
          <td><a href="/4.4/admin/setup/firewall-ports.html">Network ports</a></td>
          <td> Lists the required and optional ports for an installation. </td>
       </tr>
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -3461,6 +3470,8 @@ $('#toc').on('click', 'a', function() {
          <td><a href="/4.4/data-connect/reference/data-connect-insider-tips.html">Data Connect best practices</a></td>
          <td> This section includes some tips and best practices for using ThoughtSpot Data Connect. Data sources Unless you’re trying to bring in relationships between tables with a data source, the recommendation is to create one data source load job per table. Doing this makes your data sources more flexible for... </td>
       </tr>
+      
+      
       
       
       
@@ -3868,6 +3879,8 @@ $('#toc').on('click', 'a', function() {
       
       
       
+      
+      
        -->
 
       <!-- 
@@ -3895,8 +3908,10 @@ $('#toc').on('click', 'a', function() {
               
               <tr>
                  <td><a href="/4.4/admin/backup-restore/choose-strategy.html">Understand the backup strategies</a></td>
-                 <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a enabled by default a snapshot configuration. This configuration instructs... </td>
+                 <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs... </td>
               </tr>
+              
+            
               
             
           
@@ -4035,6 +4050,8 @@ $('#toc').on('click', 'a', function() {
             
               
             
+              
+            
           
             
           
@@ -4146,7 +4163,7 @@ $('#toc').on('click', 'a', function() {
             
               
               <tr>
-                 <td><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></td>
+                 <td><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></td>
                  <td> A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency.  </td>
               </tr>
               
@@ -4354,6 +4371,10 @@ $('#toc').on('click', 'a', function() {
             
           
             
+              
+            
+          
+            
           
             
           
@@ -4411,6 +4432,8 @@ $('#toc').on('click', 'a', function() {
           
             
           
+            
+              
             
           
             
@@ -4531,6 +4554,8 @@ $('#toc').on('click', 'a', function() {
           
             
           
+            
+              
             
           
             
@@ -4904,8 +4929,10 @@ $('#toc').on('click', 'a', function() {
             
             <tr>
                <td><a href="/4.4/tags/tag_bestpractices.html">Understand the backup strategies</a></td>
-               <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a enabled by default a snapshot configuration. This configuration instructs... </td>
+               <td> This section discusses three strategies for backing up your ThoughtSpot cluster. Snapshots A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs... </td>
             </tr>
+            
+        
             
         
       
@@ -4948,7 +4975,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 12, 2018 <br />
+        Generated: Jan 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  REST,API,data,"REST API",javascript">
-<title>About the JavaScript API | ThoughtSpot Documentation</title>
+<meta name="keywords" content=",  REST,API,data,"REST API",javascript,library,cors">
+<title>Using the JavaScript API | ThoughtSpot Documentation</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,19 +48,19 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>[“About the JavaScript API”]</title>
-<meta property="og:title" content="[“About the JavaScript API”]" />
+<title>[“Using the JavaScript API”]</title>
+<meta property="og:title" content="[“Using the JavaScript API”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtSpot in your own Web portal, application, or page." />
-<meta property="og:description" content="Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtSpot in your own Web portal, application, or page." />
+<meta name="description" content="The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:" />
+<meta property="og:description" content="The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-12T15:03:34-08:00" />
+<meta property="article:published_time" content="2018-01-26T13:50:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtSpot in your own Web portal, application, or page.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html","publisher":null,"image":null,"headline":"[“About the JavaScript API”]","dateModified":"2018-01-12T15:03:34-08:00","datePublished":"2018-01-12T15:03:34-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html","publisher":null,"image":null,"headline":"[“Using the JavaScript API”]","dateModified":"2018-01-26T13:50:09-08:00","datePublished":"2018-01-26T13:50:09-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/app-integrate/JSAPI/about-JS-API.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1196,7 +1196,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></li>
+                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></li>
                       
                    
                 
@@ -1807,7 +1807,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get logs</a></li>
+                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get your configuration and logs</a></li>
                       
                    
                 
@@ -2047,6 +2047,12 @@ var ss360Config = {
               
             
               
+                
+                  <li class="active"><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">SAML</a>
                   <ul>
@@ -2104,28 +2110,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy configure SAML</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">JavaScript API</a>
-                  <ul>
-                
-                  
-                      
-                          <li class="active"><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">About the JavaScript API</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Enable the JavaScript API</a></li>
+                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy SAML configuration</a></li>
                       
                    
                 
@@ -2168,24 +2153,36 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">Embedding</a>
+                  <a href="#">Embed ThoughtSpot</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">About Embedding</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed a visualization</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed pinboard or visualization</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">About full embed</a></li>
+                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Authentication flow with embed</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">Full application embedding</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
                       
                    
                 
@@ -2778,7 +2775,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">About the JavaScript API</h1>
+   <h1 class="post-title-main">Using the JavaScript API</h1>
 </div>
 
 
@@ -2814,11 +2811,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtSpot in your own Web portal, application, or page.</p>
-
-<h2 id="javascript-api-capabilities">JavaScript API Capabilities</h2>
-
-<p>The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:</p>
+  <p>The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot
+instance within your own Web application. The JS API has methods that allow you
+to:</p>
 
 <ul>
   <li>Authenticate to ThoughtSpot.</li>
@@ -2826,7 +2821,10 @@ $('#toc').on('click', 'a', function() {
   <li>Use the ThoughtSpot REST API to get data from ThoughtSpot and use it in your Web page.</li>
 </ul>
 
-<p>To use the JS API in your Web page, you must have the access and permissions to update the code of the Web page.</p>
+<p>You can <a href="/4.4/release/downloads.html" target="_blank">download the ThoughtSpot JavaScript library</a> from our Egnyte server.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To use the JS API in your Web page, you must have the access and permissions to
+update the code of the web page or application.</div>
 
 <h2 id="browser-support">Browser Support</h2>
 
@@ -2861,24 +2859,55 @@ $('#toc').on('click', 'a', function() {
 
 <p><strong>Internet Explorer 10</strong></p>
 
-<p>Microsoft introduced a compatibility mode in Internet Explorer 10, which displays your page using the version of Internet Explorer that is most compatible with the current page. Since we do not support any version below 11, this feature can sometimes break the code. There are two ways to force the emulation of Internet Explorer to the most up to date version:</p>
+<p>Microsoft introduced a compatibility mode in Internet Explorer 10, which
+displays your page using the version of Internet Explorer that is most
+compatible with the current page. Since we do not support any version below 11,
+this feature can sometimes break the code. There are two ways to force the
+emulation of Internet Explorer to the most up to date version:</p>
 
 <ul>
   <li>
     <p>Add a Custom Response Header</p>
 
-    <p>This is the recommended approach since it is more robust, offers more control, and has a lower risk of introducing a bug to your code. The header name should be set to “X-UA-Compatible” and the value should be set to “IE=Edge”. The response header should be based on the server it is set on and the technology being used.</p>
+    <p>This is the recommended approach since it is more robust, offers more
+control, and has a lower risk of introducing a bug to your code. The header
+name should be set to “X-UA-Compatible” and the value should be set to
+“IE=Edge”. The response header should be based on the server it is set on
+and the technology being used.</p>
   </li>
   <li>
     <p>Add a Meta Tag</p>
 
-    <p>The following meta tag should be added to your header: <code class="highlighter-rouge">&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge" \&gt;</code>. This tag must be the first tag in the header section of the page.</p>
+    <p>The following meta tag should be added to your header: <code class="highlighter-rouge">&lt;meta
+http-equiv="X-UA-Compatible" content="IE=Edge" \&gt;</code>. This tag must be the
+first tag in the header section of the page.</p>
   </li>
 </ul>
 
-<h2 id="cross-origin-http-requests">Cross-Origin HTTP Requests</h2>
+<h2 id="cross-origin-http-requests-cors">Cross-Origin HTTP Requests (CORS)</h2>
 
-<p>Because you’ll be making a call from your own Web page, portal, or application to ThoughtSpot, which has a different domain, you’ll need to enable cross-origin HTTP requests. This controls what domains are allowed to use this code to authorize users and prevents other people from copying your code and running it on their site. For example, if your Web site is hosted on the domain example.com, you would need to set the following origin for your client ID: http://example.com. If you want to test your code locally, you’ll also need to add the origin for your local server as well, for example: http://localhost:8080.</p>
+<p>Collecting user credentials from one application (domain) and sending them to
+another (such as ThoughtSpot) can present security vulnerabilities such as a
+phishing attack. Cross-origin or cross-domain verification closes this vulnerability.</p>
+
+<p>When you use the JavaScript API, your client makes a call from your own Web
+page, portal, or application to ThoughtSpot. The domains of your client and
+ThoughtSpot will be different. So, you’ll need to enable cross-origin HTTP
+requests from your client application to the ThoughtSpot application. This
+protects your data, so that another actor cannot use the same URL to embed the
+visualization in its own Web pages.</p>
+
+<p>Your cluster’s CORS configuration controls which domains are allowed to use your
+client code to authorize users. It also prevents other people from copying your
+code and running it on their site.  For example, if your Web site is hosted on
+the domain <code class="highlighter-rouge">example.com</code>, you would enable CORS for that domain. Similarly, if
+you want to test your code locally, you’ll also need to add the origin for your
+local server as well, for example: <code class="highlighter-rouge">http://localhost:8080.</code> Though, it is a good
+idea to disable the <code class="highlighter-rouge">localhost</code> access after your testing is complete.</p>
+
+<p>To enable CORS between your client applications and your ThoughtSpot instance. ,
+you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
+Support</a>.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -2904,7 +2933,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 12, 2018 <br />
+        Generated: Jan 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

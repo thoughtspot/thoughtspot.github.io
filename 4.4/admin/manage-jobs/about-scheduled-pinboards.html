@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-12T15:03:34-08:00" />
+<meta property="article:published_time" content="2018-01-26T13:50:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"The Jobs Management page found on the Admin section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards. Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html","publisher":null,"image":null,"headline":"[“Job management (scheduled pinboards)”]","dateModified":"2018-01-12T15:03:34-08:00","datePublished":"2018-01-12T15:03:34-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"The Jobs Management page found on the Admin section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards. Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html","publisher":null,"image":null,"headline":"[“Job management (scheduled pinboards)”]","dateModified":"2018-01-26T13:50:09-08:00","datePublished":"2018-01-26T13:50:09-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/admin/manage-jobs/about-scheduled-pinboards.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1196,7 +1196,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">About load balancing and proxies</a></li>
+                          <li><a href="/4.4/admin/setup/about-load-balancer-configuration.html">Configure load balancing and proxies</a></li>
                       
                    
                 
@@ -1807,7 +1807,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get logs</a></li>
+                          <li><a href="/4.4/admin/troubleshooting/get-logs.html">Get your configuration and logs</a></li>
                       
                    
                 
@@ -2047,6 +2047,12 @@ var ss360Config = {
               
             
               
+                
+                  <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">SAML</a>
                   <ul>
@@ -2104,28 +2110,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy configure SAML</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">JavaScript API</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/about-JS-API.html">About the JavaScript API</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Enable the JavaScript API</a></li>
+                          <li><a href="/4.4/app-integrate/SAML/ts-as-sp.html">Legacy SAML configuration</a></li>
                       
                    
                 
@@ -2168,24 +2153,36 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">Embedding</a>
+                  <a href="#">Embed ThoughtSpot</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">About Embedding</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed a visualization</a></li>
+                          <li><a href="/4.4/app-integrate/embedding-viz/embed-a-viz.html">Embed pinboard or visualization</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">About full embed</a></li>
+                          <li><a href="/4.4/app-integrate/JSAPI/enable-JS-API.html">Authentication flow with embed</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/about-full-embed.html">Full application embedding</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/4.4/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
                       
                    
                 
@@ -2816,25 +2813,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The <strong>Jobs Management</strong> page found on the <strong>Admin</strong> section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled pinboards. Scheduled pinboards should help with preparing for recurrent meetings, when reviewing the same pinboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.</p>
+  <p>The <strong>Jobs Management</strong> page found on the <strong>Admin</strong> section in the ThoughtSpot
+web application allows you to create and manage jobs, namely scheduled
+pinboards. Scheduled pinboards should help with preparing for recurrent
+meetings, when reviewing the same pinboard is necessary. They should also be
+useful when you have metrics you want to monitor at a consistent interval, like
+daily or monthly sales targets.</p>
 
-<p>You can get pinboards emailed to you on a regular basis and do analysis offline. This introduces an additional format for you to consume and share pinboards with others, including those who don’t have a ThoughtSpot account.</p>
+<p>You can get pinboards emailed to you on a regular basis and do analysis offline.
+This introduces an additional format for you to consume and share pinboards with
+others, including those who don’t have a ThoughtSpot account.</p>
 
-<p>Contact ThoughtSpot Support if scheduled pinboards is not enabled on your cluster, or you can run the command <code class="highlighter-rouge">tscli scheduled-pinboards</code> to enable it yourself.</p>
+<p>Contact ThoughtSpot Support if scheduled pinboards is not enabled on your
+cluster, or you can run the command <code class="highlighter-rouge">tscli scheduled-pinboards</code> to enable it
+yourself.</p>
 
 <h2 id="scheduled-pinboard-creators">Scheduled pinboard creators</h2>
 
-<p>Administrators and users with can schedule pinboard privilege can schedule and manage pinboard jobs. These scheduled pinboard creators must have at least edit-only and view-only rights to the pinboard they want to share.</p>
+<p>Administrators and users with can schedule pinboard privilege can schedule and
+manage pinboard jobs. These scheduled pinboard creators must have at least
+edit-only and view-only rights to the pinboard they want to share.</p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> It is recommended that admins carefully choose who to give can schedule pinboard privilege to, since there is a possible security hole where a user with limited access can get a pinboard email with all access data.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> It is recommended that admins carefully choose
+who to give can schedule pinboard privilege to, since there is a possible
+security hole where a user with limited access can get a pinboard email with all
+access data.</div>
 
 <h2 id="row-level-security">Row level security</h2>
 
-<p>The scheduled pinboards respect row level security rules. This means if the recipients are users in ThoughtSpot, then they can only see data based on their own access to the pinboard. If the user does not have at least view-only access to the pinboard, then they will not see anything in the email. However, if the recipients are from outside of the cluster, then they will have access to the dataset of the pinboard based on the sender’s permissions.</p>
+<p>The scheduled pinboards respect row level security rules. This means if the
+recipients are users in ThoughtSpot, then they can only see data based on their
+own access to the pinboard. If the user does not have at least view-only access
+to the pinboard, then they will not see anything in the email. However, if the
+recipients are from outside of the cluster, then they will have access to the
+dataset of the pinboard based on the sender’s permissions.</p>
 
 <h2 id="scheduled-pinboard-formats">Scheduled pinboard formats</h2>
 
-<p>The pinboard visualizations are attached to the scheduled email as CSV or PDF files. Saved configurations such as pinboard filters are applied to the attachments. Refer to the table to see how the pinboard data is represented in each file format.</p>
+<p>The pinboard visualizations are attached to the scheduled email as CSV or PDF
+files. Saved configurations such as pinboard filters are applied to the
+attachments. Refer to the table to see how the pinboard data is represented in
+each file format.</p>
 
 <table>
   <thead>
@@ -2867,9 +2886,11 @@ $('#toc').on('click', 'a', function() {
   </tbody>
 </table>
 
-<p>The size of each email is limited to 25 MB, which matches most email services size limitations.</p>
+<p>The size of each email is limited to 25 MB, which matches most email services
+size limitations.</p>
 
-<p>And the total number of recipients for a scheduled pinboard job cannot exceed the default of 1000.</p>
+<p>And the total number of recipients for a scheduled pinboard job cannot exceed
+the default of 1000.</p>
 
 <h2 id="related-information">Related information</h2>
 
@@ -2899,7 +2920,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 12, 2018 <br />
+        Generated: Jan 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
