@@ -2,7 +2,7 @@
 title: [About Embedding]
 keywords: embedding,authentication,SAML
 last_updated: tbd
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,27 +35,26 @@ You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
 
 ## Authentication
 
-When using embedding, authentication is achieved through SAML. After
-authentication, a URL is provided to call the desired visualization and populate
-it into an `iframe`.
+You can control what type of authentication you use between your client
+application and ThoughtSpot.
+
+### No Authentication
+
+You can simply not set up authentication. This would require the user to
+_already be logged into ThoughtSpot_ before interacting with the embed. This is only useful when testing your client. You would not use this in production.
+
+### SAML
 
 Before you can embed all or part of ThoughtSpot, you must authenticate to
-ThoughtSpot using SAML with the [JavaScript API]({{ site.baseurl
-}}/app-integrate/JSAPI/about-JS-API.html#).
+ThoughtSpot using SAML with the the public REST API call. After authentication,
+a URL is provided to call the desired visualization and populate it into an
+`iframe`.
 
-## Cross Domain Verification
+You must [configure SAML]({{
+site.baseurl}}/admin/setup/configure-SAML-with-tscli.html) on your ThoughtSpot
+instance before using this method.
 
-Collecting user credentials from one application (domain) and sending them to
-another (such as ThoughtSpot) can present security vulnerabilities such as a
-phishing attack. Cross-domain verification closes this vulnerability.
-
-When embedding, you will use cross domain verification. This protects your
-data, so that another website cannot use the same URL to embed the visualization
-in its own Web pages. The procedure for [enabling the JavaScript API]({{
-site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) authentication includes
-information on how to enable this.
-
-## Trusted authentication service
+### Trusted authentication service
 
 A ThoughtSpot installation can enable support for token-based authentication
 service. This allows an installation to use a central authentication service
@@ -80,3 +79,14 @@ point which causes the following processes:
 4. The authenticator returns the user token to the client.
 5. The client forwards the user token to ThoughtSpot.
 6. ThoughtSpot validates the token and returns information commensurate with that authenticated user's authorization.
+
+
+## Cross-Origin HTTP Requests (CORS)
+
+Collecting user credentials from one application (domain) and sending them to
+another (such as ThoughtSpot) can present security vulnerabilities such as a
+phishing attack. Cross-origin or cross-domain verification closes this vulnerability.
+
+When embedding, you must enable CORS between your client application domain and
+the ThoughtSpot domain. This protects your data, so that another actor cannot
+use the same URL to embed the visualization in its own Web pages.

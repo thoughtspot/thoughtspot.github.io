@@ -5,17 +5,26 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This procedure shows how to include the ThoughtSpot JavaScript API (JS API) in your web page, and then use it to authenticate to ThoughtSpot.
+You can include the ThoughtSpot JavaScript API (JS API) in your web page and
+then use it to authenticate to ThoughtSpot.
 
-Your web page needs to authenticate by calling `window.thoughtspot.initialize` and waiting for the `onInitializationCallback` to be called before embedding any ThoughtSpot visualizations or making any ThoughtSpot REST API calls.
+Your web page needs to authenticate by calling `window.thoughtspot.initialize`
+and waiting for the `onInitializationCallback` to be called before embedding any
+ThoughtSpot visualizations or making any ThoughtSpot REST API calls.
 
-If your ThoughtSpot system is configured for Single Sign On (SSO), the JS API call `window.thoughtspot.initialize` can cause the entire Web page to be re-directed to your Identity Provider (IDP). This implies that you may not execute any of your application logic before `window.thoughtspot.initialize` has called your callback, because any possible redirection could interfere with your application logic. The recommended way of achieving this is to:
+If your ThoughtSpot system is configured for Security Assertion Markup Language
+(SAML) to enable Single Sign On (SSO)., the JS API call
+`window.thoughtspot.initialize` can cause the entire Web page to be re-directed
+to your Identity Provider (IDP). This implies that you may not execute any of
+your application logic before `window.thoughtspot.initialize` has called your
+callback, because any possible redirection could interfere with your application
+logic. The recommended way of achieving this is to:
 
-1. Place the JS API in the `<head>` section of the HTML on your Web page.
-2. Ensure that the JS API script tag is the first script to be loaded in the page.
-3. Ensure that you don’t embed any static ThoughtSpot visualizations in your HTML. In other words, you should generate the ThoughtSpot visualizations dynamically after `window.thoughtspot.initialize` has called your callback.
+* Place the JS API in the `<head>` section of the HTML on your Web page.
+* Ensure that the JS API script tag is the first script to be loaded in the page.
+* Ensure that you don’t embed any static ThoughtSpot visualizations in your HTML. In other words, you should generate the ThoughtSpot visualizations dynamically after `window.thoughtspot.initialize` has called your callback.
 
-Note that `onAuthenticationExpiredCallback` is only available if you have at least one ThoughtSpot visualization iframe in your web page.
+The `onAuthExpiration` is only available if you have at least one ThoughtSpot visualization iframe in your web page.
 
 To enable the JS API:
 
