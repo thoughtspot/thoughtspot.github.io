@@ -1,12 +1,30 @@
 ---
-title: [About Embedding]
-keywords: embedding,authentication,SAML
+title: [Understand embedding]
+keywords: embedding,authentication,SAML,embed
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Embedding allows you to embed all or part of ThoughtSpot in another application.
+Embedding allows you to embed all or part of ThoughtSpot in another client
+application. This page provides an explanation of what you must
+consider when embedding ThoughtSpot
+
+## Decide what to embed and where
+
+The type of embedding your company requires can help you determine what type of
+embedding to use. For example, you may simply need a single chart displayed as a
+wallboard or you may want your customers to access reports on their own data.
+The first example could require modifying a single HTML page while the later
+example may require working with a development team and several different
+workflows in a browser application.
+
+Regardless of the simplicity or complexity of your clieant application, its
+infrastructure must allow for loading and calling the ThoughtSpot JS library.
+This library allows you to authenticate to ThoughtSpot and load specific
+objects.
+
+There are different methods for embedding ThoughtSpot into a client application:
 
 <table>
 <colgroup>
@@ -33,15 +51,17 @@ Embedding allows you to embed all or part of ThoughtSpot in another application.
 
 You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
 
-## Authentication
+## Choose an authentication methodology
 
-You can control what type of authentication you use between your client
+You can control which type of authentication you use between your client
 application and ThoughtSpot.
 
 ### No Authentication
 
 You can simply not set up authentication. This would require the user to
-_already be logged into ThoughtSpot_ before interacting with the embed. This is only useful when testing your client. You would not use this in production.
+_already be logged into ThoughtSpot_ before interacting with your client
+application. This is typically only useful when testing your client. You would
+not use this in your production environment.
 
 ### SAML
 
@@ -81,7 +101,7 @@ point which causes the following processes:
 6. ThoughtSpot validates the token and returns information commensurate with that authenticated user's authorization.
 
 
-## Cross-Origin HTTP Requests (CORS)
+## Plan for Cross-Origin HTTP Requests (CORS)
 
 Collecting user credentials from one application (domain) and sending them to
 another (such as ThoughtSpot) can present security vulnerabilities such as a

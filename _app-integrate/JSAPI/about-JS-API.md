@@ -13,10 +13,10 @@ to:
 -   Embed visualizations from ThoughtSpot in your Web page using iframes.
 -   Use the ThoughtSpot REST API to get data from ThoughtSpot and use it in your Web page.
 
-To use the JS API in your Web page, you must have the access and permissions to
-update the code of the web page or application.
-
 You can <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">download the ThoughtSpot JavaScript library</a> from our Egnyte server.
+
+{% include note.html content="To use the JS API in your Web page, you must have the access and permissions to
+update the code of the web page or application." %}
 
 ## Browser Support
 
@@ -61,16 +61,18 @@ phishing attack. Cross-origin or cross-domain verification closes this vulnerabi
 When you use the JavaScript API, your client makes a call from your own Web
 page, portal, or application to ThoughtSpot. The domains of your client and
 ThoughtSpot will be different. So, you'll need to enable cross-origin HTTP
-requests. This protects your data, so that another actor cannot
-use the same URL to embed the visualization in its own Web pages.
+requests from your client application to the ThoughtSpot application. This
+protects your data, so that another actor cannot use the same URL to embed the
+visualization in its own Web pages.
 
-CORS controls which domains are allowed to use your client code to authorize
-users. It also prevents other people from copying your code and running it on
-their site.  For example, if your Web site is hosted on the domain
-`example.com`, you would enable CORS for that domain. Similarly, if you want to
-test your code locally, you'll also need to add the origin for your local server
-as well, for example: `http://localhost:8080.`
+Your cluster's CORS configuration controls which domains are allowed to use your
+client code to authorize users. It also prevents other people from copying your
+code and running it on their site.  For example, if your Web site is hosted on
+the domain `example.com`, you would enable CORS for that domain. Similarly, if
+you want to test your code locally, you'll also need to add the origin for your
+local server as well, for example: `http://localhost:8080.` Though, it is a good
+idea to disable the `localhost` access after your testing is complete.
 
-To enable CORS for one or more domains, you must work with <a
-href="mailto:support@thoughtspot.com">ThoughtSpot Support</a> to enable CORS
-between your client applications and your ThoughtSpot instance.
+To enable CORS between your client applications and your ThoughtSpot instance. ,
+you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
+Support</a>.
