@@ -1,11 +1,34 @@
 ---
-title: [Get logs]
+title: [Get your configuration and logs]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.
+For troubleshooting on specific incidents or cluster problems, two things are important. Understanding your current configuration and getting a log bundle.
+
+## Check your configuration
+
+1. Log into the ThoughtSpot cluster as the `admin` user.
+2. Use the `tscli feature` subcommand to display your current configuration.
+
+    ```
+    $ tscli feature get-all-config
+    +---------------------------------+----------+---------------+
+    |              NAME               |  STATUS  | CONFIGURATION |
+    +---------------------------------+----------+---------------+
+    | Firewall                        | Disabled |               |
+    | Saml                            | Disabled |               |
+    | Ldap                            | Disabled |               |
+    | CustomBranding                  | Disabled |               |
+    | CustomBrandingFontCustomization | Disabled |               |
+    | DataConnect                     | Disabled |               |
+    | RLS                             | Enabled  |               |
+    | Callhome                        | Enabled  |               |
+    | SSHTunnel                       | Enabled  |               |
+    | Fileserver                      | Disabled |               |
+    +---------------------------------+----------+---------------+
+    ```
 
 ## How to get logs
 

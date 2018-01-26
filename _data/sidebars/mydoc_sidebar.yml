@@ -743,7 +743,7 @@ entries:
       - title: About troubleshooting
         url: /admin/troubleshooting/troubleshooting-intro.html
         output: pdf
-      - title: Get logs
+      - title: Get your configuration and logs
         url: /admin/troubleshooting/get-logs.html
         output: web,admBk
       - title: Upload logs to ThoughtSpot Support
@@ -854,6 +854,9 @@ entries:
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
       output: web,apgBk
+    - title: Get the JavaScript API
+      url: /app-integrate/JSAPI/about-JS-API.html
+      output: web,apgBk
     - levelTwoTitle: SAML
       output: web,apgBk
       levelTwoItems:
@@ -881,17 +884,8 @@ entries:
         - title: Test the ADFS Integration
           url: /app-integrate/SAML/test-ADFS.html
           output: web,apgBk
-      - title: Legacy configure SAML
+      - title: Legacy SAML configuration
         url: /app-integrate/SAML/ts-as-sp.html
-        output: web,apgBk
-    - levelTwoTitle: JavaScript API
-      output: web,apgBk
-      levelTwoItems:
-      - title: About the JavaScript API
-        url: /app-integrate/JSAPI/about-JS-API.html
-        output: web,apgBk
-      - title: Enable the JavaScript API
-        url: /app-integrate/JSAPI/enable-JS-API.html
         output: web,apgBk
     - levelTwoTitle: REST API
       output: web,apgBk
@@ -914,10 +908,13 @@ entries:
       - title: Understand embedding
         url: /app-integrate/embedding-viz/about-embedding-viz.html
         output: web,apgBk
-      - title: Visualization embedding
+      - title: Embed pinboard or visualization
         url: /app-integrate/embedding-viz/embed-a-viz.html
         output: web,apgBk
-      - title: Application embedding
+      - title: Authentication flow with embed
+        url: /app-integrate/JSAPI/enable-JS-API.html
+        output: web,apgBk
+      - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
         output: web,apgBk
       - title: Configured trusted authentication
