@@ -68,7 +68,7 @@ ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.
 3.  Issue the following command:
 
     ```
-    tscli security set-min-version 1.2
+    tscli ssl set-min-version 1.2
     ```
 
     This will block all usage of older versions.
