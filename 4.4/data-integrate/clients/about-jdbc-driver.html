@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="Use JDBC to interact with databases in a standard manner."> -->
 <meta name="keywords" content="performance,  tbd">
-<title>About the JDBC Driver | ThoughtSpot Documentation</title>
+<title>About the JDBC Driver | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -56,11 +56,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-01-26T13:50:09-08:00" />
+<meta property="article:published_time" content="2018-01-30T14:35:33-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"name":null,"description":"Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html","publisher":null,"image":null,"headline":"[“About the JDBC Driver”]","dateModified":"2018-01-26T13:50:09-08:00","datePublished":"2018-01-26T13:50:09-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.","author":null,"@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html","publisher":null,"image":null,"headline":"[“About the JDBC Driver”]","dateModified":"2018-01-30T14:35:33-08:00","datePublished":"2018-01-30T14:35:33-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/data-integrate/clients/about-jdbc-driver.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -818,7 +818,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.4/end-user/pinboards/edit-the-layout-of-a-pinboard.html">Edit the layout of a pinboard</a></li>
+                          <li><a href="/4.4/end-user/pinboards/edit-the-layout-of-a-pinboard.html">Edit a pinboard</a></li>
                       
                    
                 
@@ -2813,15 +2813,32 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.</p>
+  <p>Java Database Connectivity (JDBC) is a Java standard API that allows
+applications to interact with databases in a standard manner. ThoughtSpot has
+JDBC support via a JDBC driver we provide.</p>
+
+<h2 id="connector-type">Connector type</h2>
+
+<p>There are different types of JDBC connectors. Driver types categorize the
+technology used to connect to the database. The ThoughtSpot JDBC drive is a type
+4 connector. It uses Java to implement a networking protocol for communicating
+with ThoughtSpot.</p>
+
+<p>This driver is Java driver. There is no client installation or configuration.</p>
 
 <h2 id="when-to-use-jdbc">When to use JDBC</h2>
 
-<p>JDBC can be used whenever you want to connect to ThoughtSpot to insert data programmatically from a Java program or application. You should begin by using the ThoughtSpot Loader for initial data loads and then use JDBC for incremental loads. This is because the ThoughtSpot Loader is generally faster than JDBC. Information on using the ThoughtSpot Loader is available in the ThoughtSpot Administrator Guide.</p>
+<p>JDBC can be used whenever you want to connect to ThoughtSpot to insert data
+programmatically from a Java program or application. You should begin by using
+the ThoughtSpot Loader for initial data loads and then use JDBC for incremental
+loads. This is because the ThoughtSpot Loader is generally faster than JDBC.
+Information on using the ThoughtSpot Loader is available in the ThoughtSpot
+Administrator Guide.</p>
 
 <h2 id="version-compatibility">Version Compatibility</h2>
 
-<p>To ensure compatibility, always use the JDBC driver with the same version number as the ThoughtSpot instance to which you are connecting.</p>
+<p>To ensure compatibility, always use the JDBC driver with the same version number
+as the ThoughtSpot instance to which you are connecting.</p>
 
 <h2 id="performance-considerations">Performance Considerations</h2>
 
@@ -2832,7 +2849,10 @@ $('#toc').on('click', 'a', function() {
   <li>If you need to upload a lot of data, consider running multiple connections with batch inserts in parallel.</li>
 </ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The ETL tool must add a data transformation step if the source column data type does not exactly match the target’s, ThoughtSpot’s, column data type. The driver does not do any implicit conversions.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The ETL tool must add a data transformation step
+if the source column data type does not exactly match the target’s,
+ThoughtSpot’s, column data type. The driver does not do any implicit
+conversions.</div>
 
 
   <div class="tags">
@@ -2866,7 +2886,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 26, 2018 <br />
+        Generated: Jan 30, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
