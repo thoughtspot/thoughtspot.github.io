@@ -15,13 +15,10 @@ JDBC support via a JDBC driver we provide.
 
 There are different types of JDBC connectors. Driver types categorize the
 technology used to connect to the database. The ThoughtSpot JDBC drive is a type
-2. It uses a native API to communicate with a database system. These Java native
-methods invoke the API functions that perform database operations.
+4 connector. It uses Java to implement a networking protocol for communicating
+with ThoughtSpot.  
 
-Type 2 drivers need native binary code installed and configured to work. A Type
-2 driver also uses the JNI. You cannot use a Type 2 driver in an applet since
-applets cannot load native code.
-
+This driver is Java driver. There is no client installation or configuration.
 
 ## When to use JDBC
 
