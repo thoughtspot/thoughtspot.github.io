@@ -31,25 +31,26 @@
                 {% endfor %}
                 {% endfor %}
                 <!-- entries with drop-downs appear here -->
-                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
                 {% for entry in topnav_dropdowns %}
                 {% for section in entry.sections %}
-                <li class="dropdown">
+                <li id="version" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section.title }}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for sectionitem in section.sectionitems %}
                         {% if sectionitem.external_url %}
                           <li><a href="{{sectionitem.external_url}}" target="_blank">{{sectionitem.title}}</a></li>
                         {% elsif page.url contains sectionitem.url %}
-                          <li class="dropdownActive"><a href="{{sectionitem.url |  remove: "/"}}">{{sectionitem.title}}</a></li>
+                          <li class="dropdownActive"><a href="{{sectionitem.url}}">{{sectionitem.title}}</a></li>
                         {% else %}
-                          <li><a href="{{sectionitem.url | remove: "/"}}">{{sectionitem.title}}</a></li>
+                          <li><a href="{{sectionitem.url}}">{{sectionitem.title}}</a></li>
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </li>
                 {% endfor %}
                 {% endfor %}
+
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
             			{% include feedback.html %}
             		{% endif %}
