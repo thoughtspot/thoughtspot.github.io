@@ -17,10 +17,9 @@ clients, and ThoughtSpot has added some properties, which are listed separately
 here. All configuration properties use the type String (text).
 
 You can set these properties on Windows by using the [ODBC Administrator]({{
-site.baseurl }}/data-integrate/clients/change-odbc-windows.html#).
-
-For Linux and Solaris, the properties are located in three files, depending on
-their type:
+site.baseurl }}/data-integrate/clients/change-odbc-windows.html#) client. For
+Linux and Solaris, the properties are located in three files, depending on the
+property  type:
 
 |Property Type|Location|
 |-------------|--------|
