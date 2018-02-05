@@ -10,11 +10,17 @@ This section lists the properties you can set for ODBC or JDBC connections.
 
 ## Setting Properties for ODBC
 
-The properties information here comes mostly from the document Configuring SimbaClient for ODBC, published by Simba Technologies. You can access it directly [here](https://goo.gl/ykZMSZ). Not all the parameters Simba accepts are supported by the ThoughtSpot ODBC clients, and ThoughtSpot has added some properties, which are listed separately here. All configuration properties use the type String (text).
+The properties information here comes mostly from the document [Configuring
+SimbaClient for ODBC](https://goo.gl/ykZMSZ), published by Simba Technologies.
+Not all the parameters Simba accepts are supported by the ThoughtSpot ODBC
+clients, and ThoughtSpot has added some properties, which are listed separately
+here. All configuration properties use the type String (text).
 
-You can set these properties on Windows by using the [ODBC Administrator]({{ site.baseurl }}/data-integrate/clients/change-odbc-windows.html#).
+You can set these properties on Windows by using the [ODBC Administrator]({{
+site.baseurl }}/data-integrate/clients/change-odbc-windows.html#).
 
-For Linux and Solaris, the properties are located in three files, depending on their type:
+For Linux and Solaris, the properties are located in three files, depending on
+their type:
 
 |Property Type|Location|
 |-------------|--------|
@@ -24,7 +30,9 @@ For Linux and Solaris, the properties are located in three files, depending on t
 
 ## Setting Properties for JDBC
 
-For JDBC, these properties are passed as key value pairs in the connect string. For more information, see [Use the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/use-jdbc-driver.html#).
+For JDBC, these properties are passed as key value pairs in the connect string.
+For more information, see [Use the JDBC Driver]({{ site.baseurl
+}}/data-integrate/clients/use-jdbc-driver.html#).
 
 ## Properties Reference
 
@@ -70,15 +78,15 @@ The following tables summarize the configuration properties.
          </td>
       </tr>
       <tr>
-         <td><code>Idle Timeout</code></td>
+         <td><code>IdleTimeout</code></td>
          <td>DSN</td>
          <td>The time to wait for a response from the server, in seconds. This property is
             optional, but SimbaClient will wait indefinitely for SimbaServer to respond to a
-            request made to the server unless you specify a timeout period. IdleTimeout
+            request made to the server unless you specify a timeout period. <code>IdleTimeout</code>
             specifies how many seconds that SimbaClient will wait before aborting the attempt
             and returning to the application with an error. This timeout corresponds to ODBC’s
-            CONNECTION_TIMEOUT property and is only used when more specific timeouts, such as
-            QUERY_TIMEOUT or LOGIN_TIMEOUT aren’t applicable.
+            <code>CONNECTION_TIMEOUT</code> property and is only used when more specific timeouts, such as
+            <code>QUERY_TIMEOUT</code> or <code>LOGIN_TIMEOUT</code> aren’t applicable.
          </td>
       </tr>
       <tr>
@@ -86,8 +94,8 @@ The following tables summarize the configuration properties.
          <td>DSN</td>
          <td>
             The connection locale. If this value is set, it overrides the driver-wide
-            locale. For example, the driver-wide locale could be en-US. If the client would
-            prefer fr-CA, it can set the connection locale to fr-CA.
+            locale. For example, the driver-wide locale could be <code>en-US</code>. If the client would
+            prefer <code>fr-CA</code>, it can set the connection locale to <code>fr-CA</code>.
             <p class="p">Values are composed of a
                2-letter language code (in lower case), and an optional 2-letter country code (in
                upper case). If the country code is specified, it must be separated from the
@@ -103,7 +111,7 @@ The following tables summarize the configuration properties.
          </td>
       </tr>
       <tr>
-         <td><code>Query Timeout</code></td>
+         <td><code>QueryTimeout</code></td>
          <td>DSN</td>
          <td>The timeout, in seconds, to wait for a response from the server during Prepare,
             Execute, and ExecuteDirect. A value of 0 means no timeout. The default value is
@@ -128,15 +136,15 @@ The following tables summarize the configuration properties.
                With this keyword, you can control the amount of log output by
                controlling the kinds of events that are logged. Possible values (case sensitive):
                <ul class="ul" id="reference_h2b_cwk_vw__ul_hlw_gq4_vw">
-                  <li class="li">0 or LOG_OFF: no logging occurs</li>
-                  <li class="li">1 or LOG_FATAL: only log fatal errors</li>
-                  <li class="li">2 or LOG_ERROR: log all errors</li>
-                  <li class="li">3 or LOG_WARNING: log all errors and warnings</li>
-                  <li class="li">4 or LOG_INFO: log all errors, warnings, and informational messages</li>
-                  <li class="li">5 or LOG_DEBUG: log method entry and exit points and parameter values for
+                  <li class="li">0 or <code>LOG_OFF</code>: no logging occurs</li>
+                  <li class="li">1 or <code>LOG_FATAL</code>: only log fatal errors</li>
+                  <li class="li">2 or <code>LOG_ERROR</code>: log all errors</li>
+                  <li class="li">3 or <code>LOG_WARNING</code>: log all errors and warnings</li>
+                  <li class="li">4 or <code>LOG_INFO</code>: log all errors, warnings, and informational messages</li>
+                  <li class="li">5 or <code>LOG_DEBUG</code>: log method entry and exit points and parameter values for
                      debugging
                   </li>
-                  <li class="li">6 or LOG_TRACE: log all method entry points</li>
+                  <li class="li">6 or <code>LOG_TRACE</code>: log all method entry points</li>
                </ul>
             </div>
          </td>
