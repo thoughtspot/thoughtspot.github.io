@@ -93,6 +93,8 @@ collections:
     output: true
   spotiq:
     output: true
+  tooltips:
+    output: true
 
 defaults:
   - values:

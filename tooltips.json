@@ -3,17 +3,15 @@ layout: null
 search: exclude
 ---
 
-{
-"entries":
-[
-{% for page in site.tooltips %}
-{
-"doc_id": "{{ page.doc_id }}",
-"body": "{{ page.content | strip_newlines | replace: '\', '\\\\' | replace: '"', '\\"' }}"
-} {% unless forloop.last %},{% endunless %}
+{% comment %}
+    Loops though every collection you defined in _config.yml and grabs the pages they contain; outputting title and full text with good basic html semantics.
+    Use page.excerpt instead of page.content to grab the first paragraph, blog list style. Markdownify is optional, depends how you authored content in your collections; I typically use Markdown.
+{%  endcomment %}
+
+{% for collection in site.collections %}
+    {% if collection.label == 'tooltips' %}
+      {% for document in collection.docs%}
+        {{document.doc_id}}
+      {% endfor %}
+    {% endif %}
 {% endfor %}
-]
-}
-
-
-
