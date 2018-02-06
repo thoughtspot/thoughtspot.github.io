@@ -10,8 +10,6 @@ This section lists the properties you can set for ODBC or JDBC connections.
 
 ## Setting Properties for ODBC
 
-The properties information here comes mostly from the document [Configuring
-SimbaClient for ODBC](https://goo.gl/ykZMSZ), published by Simba Technologies.
 Not all the parameters Simba accepts are supported by the ThoughtSpot ODBC
 clients, and ThoughtSpot has added some properties, which are listed separately
 here. All configuration properties use the type String (text).
