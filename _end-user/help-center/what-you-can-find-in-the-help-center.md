@@ -78,13 +78,13 @@ You can search the help directly from the search bar with the `how to` and `help
 
 The `how to` keyword takes you into the documentation only. The `help` keyword
 allows you to jump directly into a product workflow.
-
+<!-- 
 ## Learn center
 
 
 ## Training videos
 
-
+ -->
 
 ## Support contact information
 

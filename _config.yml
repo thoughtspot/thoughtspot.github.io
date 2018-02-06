@@ -75,6 +75,8 @@ collections:
     output: true
   app-integrate:
     output: true
+  appliance:
+    output: true
   complex-search:
     output: true
   data-connect:
@@ -93,6 +95,8 @@ collections:
     output: true
   spotiq:
     output: true
+  tooltips:
+    output: false
 
 defaults:
   - values:
