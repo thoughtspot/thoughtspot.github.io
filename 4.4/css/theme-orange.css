@@ -23,6 +23,7 @@ h4 {color: #808080; }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
     background-color: #801515;
+    color: #ffffff;
 }
 
 .nav li.thirdlevel > a {
@@ -74,6 +75,7 @@ a.navbar-brand:hover {
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: #801515;
+    color: #ffffff;
 }
 
 .btn-primary:hover,
