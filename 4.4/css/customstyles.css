@@ -459,6 +459,11 @@ a.accordion-toggle, a.accordion-collapsed {
     margin: 1px 0;
 }
 
+#version.dropdown {
+    margin: 1px 40px 0;
+}
+
+
 .nav > li li {
     margin: 2px 0;
 }
@@ -508,6 +513,7 @@ background-color: #347DBE;
     line-height: 20px;
     padding: 4px 10px;
 }
+
 
 ul#mysidebar {
     border-radius:0px;
@@ -992,6 +998,8 @@ span.soft {
         color: #444;
     }
 }
+
+
 
 @media (max-width: 990px) {
     #mysidebar {
