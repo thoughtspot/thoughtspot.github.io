@@ -1,6 +1,6 @@
 ---
 title: [Time series analysis]
-keywords: period
+keywords: period,"period ago","time series"
 tags: [time,dates]
 last_updated: tbd
 summary: "You can compare across time periods without using a formula."
@@ -113,3 +113,7 @@ month(commit date) before 01/01/1998
 This type of query also yields a stacked line chart:
 
 ![]({{ site.baseurl }}/images/time-example3.png "Period Analysis Example")
+
+The child date time attribute is on the X-axis and the parent in the legend. For
+example, if you search `revenue month yearly` the child, `monthly`, appears on
+the x-axis and the parent, `yearly`, in the legend.e
