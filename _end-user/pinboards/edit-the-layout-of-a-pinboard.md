@@ -59,10 +59,12 @@ To delete a visualization:
 4. Save your pinboard by clicking **Actions** and **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
-
+e
 ## Other pinboard edits
 
-Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard. Most of these actions are found under the **Actions** button.
+Other pinboard actions include actions you normally perform on your search as
+well as actions that you can only perform on a pinboard. Most of these actions
+are found under the **Actions** button.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
 
