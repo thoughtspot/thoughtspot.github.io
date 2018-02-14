@@ -116,4 +116,4 @@ This type of query also yields a stacked line chart:
 
 The child date time attribute is on the X-axis and the parent in the legend. For
 example, if you search `revenue month yearly` the child, `monthly`, appears on
-the x-axis and the parent, `yearly`, in the legend.e
+the x-axis and the parent, `yearly`, in the legend.
