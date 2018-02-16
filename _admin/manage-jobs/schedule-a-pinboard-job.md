@@ -61,7 +61,9 @@ To schedule a pinboard:
      </tr>
      <tr>
        <th>Recipients</th>
-       <td>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your Thoughtspot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</td>
+       <td><p>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your Thoughtspot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</p>
+       <p>If you experience problems with sending email, your cluster may not have SMTP enabled. Contact your system administrator to resolve this issue.</p>
+       </td>
      </tr>
    </table>
 

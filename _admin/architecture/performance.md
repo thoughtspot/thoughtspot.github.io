@@ -29,7 +29,7 @@ Keep in mind these other boundaries:
 |-------------------------|--------------------|
 | Max number of rows that can be downloaded | 10M (default is 1M) |
 |Size in CSV format| 1 TB per appliance|
-|Total number of rows across all tables| 2B per appliance|
+|Total number of rows across all tables| 1B per appliance|
 |Many-to-Many (Generic) join cardinality|10B per appliance|
 |Load frequency| Once every hour|
 
@@ -45,7 +45,7 @@ should keep in mind the following:
 You can use an ETL process to circumvent these limitations. Speak with
 ThoughtSpot Customer Support to learn more.
 
-### Aggregated worksheets
+### Aggregated worksheets and joins
 
 To be able to join an aggregated worksheet with a base table, your installation
 must be configured to allow the behavior. The aggregated worksheet cannot have
@@ -61,7 +61,7 @@ the following boundaries are recommended:
 |-------------------------|--------------------|
 |Max number of fact tables in a worksheet	|5|
 |Max number of shared dimensions	|2|
-|Max number of rows in non co-sharded shared dimension table of chasm trap	|10M|
+|Max number of rows in _non_ co-sharded shared dimension table of chasm trap	|10B|
 |Max number of rows in co-sharded shared dimension table of chasm trap	| 1B |
 
 ## Row level security Boundaries
