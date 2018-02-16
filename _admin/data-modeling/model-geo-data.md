@@ -50,6 +50,8 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
 {% include content/geotypes.html %}
 
+
+
 ## Related information  
 
 [Model the data for searching](semantic-modeling.html#)
