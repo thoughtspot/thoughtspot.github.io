@@ -24,7 +24,7 @@ If you're doing incremental loads into existing tables, you may want to automate
 
 ### Renaming columns and tables
 
-ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. You can rename columns and tables after a data load, using the DDL edit step or the ThoughtSpot web application. Select Data and click on the name of the table. Then click on a column to rename it.
+ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. If a column or table name changes on the source, you will need to recreate the data load job.
 
 In older versions of ThoughtSpot Data Connect, you could not use characters other than alphanumeric and underscores. Now, you can change a column name to use those, for example you could change "percent_gross_margin" to "% gross margin".
 
