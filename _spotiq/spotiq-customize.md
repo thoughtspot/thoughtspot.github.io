@@ -54,7 +54,7 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 
 7. Select the **Customize algorithms** tab.
 8. Uncheck the **Outlier Detection using Z-Score** option.
-9. Click **Trigger Analysis**.
+9. Click **ANALYZE**.
 
    SpotIQ starts a new analysis.
 
@@ -87,7 +87,7 @@ visualization may help in this case. You can also modify the charts you see in
 your results. Try this now.
 
 1. Select the menu on the **Total imports, Total value_added by year** chart.
-2. Click on the chart menu and choose.**Edit**.
+2. Click on the chart menu and choose **Edit**.
 
    ![]({{ site.baseurl }}/images/spotiq-edit-chart.png)
 
@@ -107,7 +107,7 @@ your results. Try this now.
    ![]({{ site.baseurl }}/images/spotiq-line-column.png)
 
 5. Choose **Actions > Update**.
-7. Close the dialog by pressing the **X**.
+7. Close the dialog by pressing the **Close**.
 
     The chart with your changes now appears in the **SpotIQ** list. The outlier
     stands out very clearly now in both charts.
@@ -119,20 +119,19 @@ your results. Try this now.
 
 You can present SpotIQ insights in several ways. You can present an individual
 result or all of them at once. You can package all the insights in a PDF. This
-is useful for passing a packet of results. Because any insight an insight into
-data at a specific point in time, you should always consider saving the insight
-as a PDF.
+is useful for passing a packet of results. Since any insight reflects the
+data at a specific point in time, always consider saving the insight as a PDF.
 
 1. Locate the **Actions** menu on the corner of the **SpotIQ** page.
 2. Choose **Actions > Download as PDF** from the menu.
 
-   The system downloads a file containing all the insights. Keep in mind this is
+   The system downloads a file containing all the insights. Keep in mind this
    file can be very large if there are a lot of insights found in your data.
 
-You can use the **Present** action to view visualizations that appear in a carousel.  can be presented as a group. Present is the best way to To do
-this, do the following:
+You can use the **Present** action to view visualizations that appear in a
+carousel, and present them as a group.
 
-1. Scroll down to your first carousel with your new charts.
+1. Scroll down to the first carousel with your new charts.
 2. Roll over the right corner of the menu to reveal the menu.
 
    ![]({{ site.baseurl }}/images/spotiq-carousel.png)
@@ -141,8 +140,11 @@ this, do the following:
 
     <video src="{{ site.baseurl }}/images/spotiq-present.mp4" width="600" controls preload></video>
 
-    Each individual chart has a **Download**, **Present**, or **Copy link**
-    action you can also take.
+    Click through the carousel with the next / previous arrow buttons, or use
+    the left side menu of chart names.
+
+Also, each individual chart has a **Download**, **Present**, or **Copy link**
+action you can take.
 
 ## Schedule a recurring analysis
 
@@ -172,13 +174,14 @@ Keep in mind that SpotIQ jobs take resources in your system. So, you really
 don't want to leave casual jobs running in the system.  Go ahead and delete this
 latest job. Now that you know how to schedule a job, it isn't needed anymore.
 
-1. Check the job you just scheduled.
+1. Click the checkbox for the job you just scheduled.
 2. Click **Delete** to remove it.
+
+   ![]({{ site.baseurl }}/images/spotiq-rm-job.png)
 
 ## Congratulations!
 
 Congratulations, at this point you've learned the basics of SpotIQ with
 ThoughtSpot. Throughout the application, you'll find the SpotIQ icon on search
 answers, pinboards, visualizations, and data. Wherever you see this option, you
-can end up on the SpotIQ page, refining your analysis and discovering new
-insights into your business.
+can click to run suggested or custom analyses, and get new insights on the SpotIQ page.

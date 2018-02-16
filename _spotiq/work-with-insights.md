@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 At this point, you have done [the first set of SpotIQ tutorial tasks](overview.html), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
-**INSIGHT** list and see when your analysis ran. This is important knowledge
+**SpotIQ** list and see when your analysis ran. This is important knowledge
 because data changes, you'll want to run multiple analyzes on the same data.
 
 In this section, you look at the results and see what insights SpotIQ
@@ -17,7 +17,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 ## View results of an analysis
 
 1. If you haven't, log into the ThoughtSpot application.
-2. Select the **INSIGHTS > Results** page.
+2. Select the **SpotIQ > Results** page.
 3. Look for results from your **FoodDollarDataReal** analysis and click on the **NAME**.
    The application opens the SpotIQ insights.
 
