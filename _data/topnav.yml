@@ -9,12 +9,16 @@
 #       url: /news
 
 #Topnav dropdowns
-# topnav_dropdowns:
-# - title: Topnav dropdowns
-#   sections:
-#     - title: Version
-#       sectionitems:
-#         - title: 4.5
-#           url: /4.5/index.html
-#         - title: 4.4
-#           url: /4.4/index..html
+topnav_dropdowns:
+- title: Topnav dropdowns
+  sections:
+    - title: Version
+      sectionitems:
+        - title: 4.4
+          url: /4.4/index.html
+        - title: 4.2
+          url: /4.2/4.2-home.html
+        - title: 3.5
+          url: /3.5/3.5-home.html
+        - title: 3.4
+          url: /3.4/3.4-home.html
