@@ -70,6 +70,29 @@ From this dialog you can get to the following:
 Along the bottom of the **Help** dialog you'll see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
+## Learn
+
+Choosing **Learn** from the **Help** menu takes a customer to the *Learn* center.
+The center contains one or more example queries.  Users can click on a query to
+replay it in their browser. Users can only complete replay on data that the user
+has access to.
+
+Any administrator can add to the items in the **Learn** center. To add a reply, do
+the following:
+
+1. Search in your search bar.
+2. Choose the pin from the answer that results.
+   The system lists the pinboards you can pin to.
+3. Select **Learn how to use ThoughtSpot** pinboard.
+
+   ![]({{ site.baseurl }}/images/learn-save.png "Contact support")
+
+4. Navigate to the *Learn* center to replay your search.
+
+   ![]({{ site.baseurl }}/images/learn-replay.png "Contact support")
+
+
+
 ## Search the help in search bar
 
 You can search the help directly from the search bar with the `how to` and `help` keywords.
