@@ -144,9 +144,7 @@ Use this subcommand to do the following:
 * `tscli callhome enable --customer_name` *`customer_name`*`
 
     Enables the "call home" feature, which sends usage statistics to ThoughtSpot
-    Support every six hours via the secure file server. Before using this
-    command for the first time, you need to set up the file server connection
-    using `tscli fileserver configure`.
+    This feature is enabled by default.
 
     The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
 

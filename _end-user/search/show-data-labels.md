@@ -7,7 +7,8 @@ summary: "You can configure charts to show the y-axis data values.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Some charts have additional options under **Configuration Options** that are covered in each chart type topic.
+Some charts have additional options under **Configuration Options** that are
+covered in each chart type topic.
 
 
 ## Show data labels
@@ -27,4 +28,13 @@ To show data labels:
 1. While viewing your answer as a chart, click **Edit chart configuration**.
 2. Select **Show regression line**.
 
-     ![]({{ site.baseurl }}/images/regression-line.png)S
+     ![]({{ site.baseurl }}/images/regression-line.png)
+
+## Display gridlines
+
+Charts with X and Y axis can display gridlines. To display them:
+
+1. Choose **Edit chart configuration**.
+2. Select one or both of the gridline options.
+
+     ![]({{ site.baseurl }}/images/chart-gridline.png)

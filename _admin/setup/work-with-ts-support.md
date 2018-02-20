@@ -80,29 +80,20 @@ To configure the connection to the secure file server:
     If you do not supply the `--password` parameter, you are prompted to enter it.
 
 
-## Enable call home capability
+## Call home with cluster usage data
 
-The optional "call home" capability sends usage statistics to ThoughtSpot Support once a day via a secure file server.
+"Call home" data is metadata and usage data from your ThoughtSpot cluster. This
+data allows ThoughtSpot's Support team to troubleshoot your cluster. They use
+the data to see basic usage information over time for your ThoughtSpot instance.
+ThoughtSpot's "call home" functionality intermittently sends a call home bundle
+of  statistics to a ThoughtSpot S3 server via HTTPS. The data is encrypted at
+rest on the server.
 
-Before you can enable the call home feature:
+By default, call home is enabled on your cluster. You can disable call home in
+by doing the following:
 
-1.  [Configure the connection to the file server](work-with-ts-support.html#).
-2.  Obtain the customer name as recognized by the file server.
-
-The customer name is formatted like this example: `Shared/<customer_name>/stats`. If you do not know the customer name, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
-
-This can be helpful when troubleshooting problems with ThoughtSpot Support, because they will be able to see basic usage information over time for your ThoughtSpot instance.
-
-To set up the call home feature:
-
-1. Log in to the Linux shell using SSH.
-2. Enable the call home feature by issuing:
-
-    ```
-    $ tscli callhome enable --customer_name <customer_name>
-    ```
-
-3. If you want to disable call home in the future, you can do so by issuing:
+1. Log into the ThoughtSpot server as `admin` user.
+2. Use the `tscli` command to disable.
 
     ```
     $ tscli callhome disable
