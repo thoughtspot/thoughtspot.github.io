@@ -752,7 +752,7 @@ entries:
       - title: Network connectivity issues
         url: /admin/troubleshooting/check-connectivity.html
         output: web,admBk
-      - title: Change the timezone
+      - title: Check the timezone
         url: /admin/troubleshooting/set-timezone.html
         output: web,admBk
       - title: Browser untrusted connection error
