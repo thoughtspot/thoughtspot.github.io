@@ -7,8 +7,12 @@ permalink: /:collection/:path.html
 ---
 You can create a bulk filter on a worksheet or  table. You create the filter by
 pasting a list of values, separated by commas, semicolons, new lines, or tabs,
-into the bulk filter box. This allows you to easily search a large list of
-filters repeatedly. Your filter can have up to 10k values in it.
+into the bulk filter box. A filter allows you to easily search a large list of
+values repeatedly.
+
+Your filter can have up to 10k values in it. When you add a filter, the system
+does not check that the value exists in the data. This allows you to anticipate
+values that _may be_ added in your filter.
 
 Before you can create a bulk filter, you must have **Can edit** permission on
 the table or worksheet. In this example, you will cut and paste values to create
