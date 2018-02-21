@@ -74,7 +74,7 @@ You must [configure SAML]({{
 site.baseurl}}/admin/setup/configure-SAML-with-tscli.html) on your ThoughtSpot
 instance before using this method.
 
-### Trusted authentication service
+### Trusted authentication service (ThoughtSpot v4.4.1 and above)
 
 A ThoughtSpot installation can enable support for token-based authentication
 service. This allows an installation to use a central authentication service
