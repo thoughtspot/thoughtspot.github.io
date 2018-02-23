@@ -70,23 +70,7 @@ There are still just a few things to look out for when using a schema that conta
 
 ## Chasm trap limitations
 
-If your database schema contains any chasm traps, you may encounter these limitations.
-
-### Operations
-
-The following limitations on chasm trap schemas will produce a red bar error in the ThoughtSpot application:
-
--   **Show underlying data** does not work for chasm trap searches, whether the search is on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--   When using the ThoughtSpot APIs, you cannot pass filter values via the URL if the relevant searches occur on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--  Use[Rule-Based Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#).
-
-### Behavior
-
-The following behavior is different for chasm traps than for schemas that do not contain a chasm trap:
-
--   There are no headlines (single facts based on the data) shown when a search contains a worksheet containing a chasm trap or base tables that are related over a chasm trap.
--   Join information in **What am I Looking At?** does not appear for searches on a worksheet containing a chasm trap or on base tables that are related over a chasm trap.
--   There are cases when attempting to configure certain charts on chasm trap worksheets or tables will not work. If this happens, you will see the error **Your search needs to have unique y-axis values for each series of data shown on the x-axis**. The workaround is to remove all columns from the search, except for those used in your chart.
+Join information in **What am I Looking At?** does not appear for searches on a worksheet containing a chasm trap or on base tables that are related over a chasm trap. 
 
 ###  Workarounds
 
