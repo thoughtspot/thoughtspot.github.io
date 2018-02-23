@@ -5,9 +5,20 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can create a bulk filter by pasting a list of values, separated by commas, semicolons, new lines, or tabs, into the bulk filter box. This allows you to easily search a large list of filters repeatedly.
+You can create a bulk filter on a worksheet or  table. You create the filter by
+pasting a list of values, separated by commas, semicolons, new lines, or tabs,
+into the bulk filter box. A filter allows you to easily search a large list of
+values repeatedly.
 
-In this example, we will cut and paste values to create a bulk filter. You could also do this by pasting in a list of text values from an email or cells from an Excel or Google Sheets spreadsheet.
+Your filter can have up to 10k values in it. When you add a filter, the system
+does not check that the value exists in the data. This allows you to anticipate
+values that _may be_ added in your filter.
+
+Before you can create a bulk filter, you must have **Can edit** permission on
+the table or worksheet. In this example, you will cut and paste values to create
+a bulk filter. You could also get a list of text values from another
+application such as an email or cells from an Excel or Google Sheets
+spreadsheet.
 
 1. When viewing a table, select multiple cells by clicking and dragging.
 2. Right click and choose **Copy to Clipboard**.

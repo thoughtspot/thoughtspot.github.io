@@ -698,9 +698,6 @@ entries:
       - title: Overview of System administration
         url: /admin/system-admin/sysadmin-overview.html
         output: web,admBk
-      - title: System monitoring
-        url: /admin/system-admin/monitor-pinboards.html
-        output: web,admBk
       - title: Using the Space Utilization chart
         url: /admin/system-admin/about-the-memory-usage-chart.html
         output: web,admBk
@@ -709,6 +706,27 @@ entries:
         output: web,admBk
       - title: Set up recording for Replay Search
         url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+    - levelTwoTitle: Monitoring
+      output: web,admBk
+      levelTwoItems:
+      - title: Monitoring tools
+        url: /admin/system-monitor/introduction.html
+        output: web,admBk
+      - title: Overview board
+        url: /admin/system-monitor/overview.html
+        output: web,admBk
+      - title: Data board
+        url: /admin/system-monitor/data.html
+        output: web,admBk
+      - title: Cluster Manager board
+        url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: Alerts and Events board
+        url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: Custom monitor boards
+        url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
@@ -752,7 +770,7 @@ entries:
       - title: Network connectivity issues
         url: /admin/troubleshooting/check-connectivity.html
         output: web,admBk
-      - title: Change the timezone
+      - title: Check the timezone
         url: /admin/troubleshooting/set-timezone.html
         output: web,admBk
       - title: Browser untrusted connection error
