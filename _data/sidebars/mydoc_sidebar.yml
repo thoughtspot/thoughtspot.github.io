@@ -902,9 +902,6 @@ entries:
         - title: Test the ADFS Integration
           url: /app-integrate/SAML/test-ADFS.html
           output: web,apgBk
-      - title: Legacy SAML configuration
-        url: /app-integrate/SAML/ts-as-sp.html
-        output: web,apgBk
     - levelTwoTitle: REST API
       output: web,apgBk
       levelTwoItems:
