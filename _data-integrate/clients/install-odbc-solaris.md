@@ -13,7 +13,7 @@ driver overview]({{ site.baseurl }}/data-integrate/clients/about-odbc.html#).
 This workstation is the same machine where you plan to run your ETL activities.
 The Solaris ODBC driver is certified on Solaris Sparc 10.
 
-## Download the driver and update your workstation environment
+## Download the driver and update your environment
 
 On your workstation, where you want to connect from, do the following to obtain
 the ODBC driver:
