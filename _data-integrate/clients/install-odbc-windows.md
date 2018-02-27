@@ -11,7 +11,7 @@ The ODBC driver for Windows requires Visual C++ Redistributable for Visual
 Studio 2013. You will be prompted to install it during installation of the
 driver if it isn't already installed.  
 
-## Download the driver and update your workstation environment
+## Download the driver
 
 On your workstation, where you want to connect from, do the following:
 
