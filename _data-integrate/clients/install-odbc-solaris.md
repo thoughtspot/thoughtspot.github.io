@@ -15,12 +15,12 @@ The Solaris ODBC driver is certified on Solaris Sparc 10.
 
 ## Download the driver and update your workstation environment
 
-On your workstation, where you want to connect from, do the following:
+On your workstation, where you want to connect from, do the following to obtain
+the ODBC driver:
 
-1. Obtain the ODBC driver:
-2. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
-3. Click **ODBC Driver for Solaris** to download the driver..
-4. Unzip and untar the file:
+1. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
+2. Click **ODBC Driver for Solaris** to download the driver.
+2. Unzip and untar the file:
 
     ```
     gunzip ThoughtSpot_solaris_sparc_odbc_<version>.tar.gz
@@ -28,7 +28,7 @@ On your workstation, where you want to connect from, do the following:
     tar -xvf ThoughtSpot_solaris_sparc_odbc_<version>.tar
     ```
 
-5. Copy the library files from the `Lib` directory to a safe location on your Linux machine.
+4. Copy the library files from the `Lib` directory to a safe location on your Linux machine.
 
     For 32-bit users, the library files are located in the directory:
 
@@ -43,7 +43,7 @@ On your workstation, where you want to connect from, do the following:
     ```
 
 
-6. Add the location's path to the `LD_LIBRARY_PATH` environment variable.
+5. Add the location's path to the `LD_LIBRARY_PATH` environment variable.
 
 ## Edit the /etc/simbaclient.ini file
 

@@ -15,10 +15,10 @@ driver if it isn't already installed.
 
 On your workstation, where you want to connect from, do the following:
 
-
-1. Navigate to the Downloads page in the Help Center to download the ODBC driver onto your Windows workstation.
-2. Unzip the file you downloaded.
-3. Choose the installer for your version of Windows.
+1. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
+2. Click **ODBC Driver for Windows** to download the driver.
+3. Unzip the file you downloaded at a convenient location on your workstation.
+4. Choose the installer for your version of Windows.
    There are two different Windows ODBC installers included in the file you downloaded.
     -   ThoughtSpotODBC (x86).msi for Windows 32-bit
     -   ThoughtSpotODBC (x64).msi for Windows 64-bit
