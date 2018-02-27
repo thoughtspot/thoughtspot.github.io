@@ -1,6 +1,6 @@
 ---
-title: [ Use the JDBC Driver]
-keywords: tbd
+title: [Use the JDBC Driver]
+keywords: jdbc,driver,connection
 last_updated: tbd
 summary: "How to configure the JDBC driver. "
 sidebar: mydoc_sidebar
@@ -14,8 +14,8 @@ To use the JDBC driver, include the JDBC library in your path, and provide the c
 |Server IP address | The ThoughtSpot appliance URL or IP address. The IP address can be found by going to `http://<server-ip\>:2201/status/service?name=simba_server`|
 |Simba port | The simba port, which is 12345 by default.|
 |Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
-|Database username | The name of a ThoughtSpot user with administrator permissions.|
-|Database password | This is not the machine login password. The ThoughtSpot user password.|
+|username | The name of a ThoughtSpot user with administrator permissions.|
+|password | The password of a ThoughtSpot application user. This is not the machine or SSH userpassword. |
 
 ## Install the driver
 

@@ -1034,7 +1034,7 @@ entries:
     - levelTwoTitle: Use the ODBC Client
       output: web,digBk
       levelTwoItems:
-       - title: About the ODBC Driver
+       - title: ODBC driver Overview
          url: /data-integrate/clients/about-odbc.html
          output: web,digBk
        - levelThreeTitle: Install on Windows
@@ -1061,7 +1061,7 @@ entries:
     - levelTwoTitle: JDBC Driver Client
       output: web,digBk
       levelTwoItems:
-      - title: About the JDBC Driver
+      - title: JDBC driver Overview
         url: /data-integrate/clients/about-jdbc-driver.html
         output: web,digBk
       - title: Use the JDBC Driver

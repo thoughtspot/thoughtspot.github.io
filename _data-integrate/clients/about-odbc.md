@@ -1,5 +1,5 @@
 ---
-title: [About the ODBC Driver]
+title: [Overview of the ODBC Driver]
 keywords: connection,ODBC,secure,version
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."
