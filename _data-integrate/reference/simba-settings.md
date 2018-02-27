@@ -1,6 +1,6 @@
 ---
 title: [ODBC and JDBC configuration properties]
-keywords: tbd
+keywords: simba
 last_updated: tbd
 summary: "Lists the properties you can set for ODBC or JDBC connections"
 sidebar: mydoc_sidebar
@@ -24,6 +24,7 @@ property  type:
 |DSN|`odbc.ini` file|
 |Driver|`odbsinst.ini` file|
 |SimbaSetting Reader|`simbaclient.ini` file|
+
 
 ## Setting Properties for JDBC
 
