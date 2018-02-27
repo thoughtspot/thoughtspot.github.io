@@ -175,15 +175,15 @@ The following tables summarize the configuration properties.
          </td>
       </tr>
       <tr>
-         <td><code>UID</code></td>
-         <td>Login Username</td>
-         <td>The ODBC/JDBC login username.
+         <td><code>username</code></td>
+         <td>UID</td>
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is an administrator user on the application.
          </td>
       </tr>
       <tr>
-         <td><code>PWD</code></td>
-         <td>Login Pasword</td>
-         <td>The ODBC/JDBC login password.
+         <td><code>password</code></td>
+         <td>Password</td>
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is an administrator user on the application.
          </td>
       </tr>
    </tbody>

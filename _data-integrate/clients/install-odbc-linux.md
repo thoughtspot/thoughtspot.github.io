@@ -7,32 +7,27 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-It is important to note the following about the ODBC login information:
+The instructions on this page explain how to configure the ODBC driver on a
+Linux workstation. Make sure you have read the overview material in the [ODBC
+driver overview]({{ site.baseurl }}/data-integrate/clients/about-odbc.html#).
+This workstation is the same machine where you plan to run your ETL activities.
 
--   Database username: This is not the machine login username.This is the name of a ThoughtSpot user with administrator permissions.
--   Database password: This is not the machine login password. This is the ThoughtSpot user password.
+## Download the driver and update your environment
 
-When you are ready, do the following to install the driver:
+On your workstation, where you want to connect from, do the following to get the
+ODBC driver:
 
-1. Create a file on your Linux workstation called /etc/simbaclient.ini and add the following text to it:
+1. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
+2. Click **ODBC Driver for Linux** to download the driver.
+3. Unzip and untar the file:
 
     ```
-    [Driver]
-    ErrorMessagesPath=<path_to_error_messages_directory>
+    gunzip ThoughtSpot_linux_odbc_<version>.tar.gz
+
+    tar -xvf ThoughtSpot_linux_odbc_<version>.tar
     ```
 
-2. Obtain the ODBC driver:
-    1. Navigate to the Downloads page in the Help Center to download the ODBC driver.
-    2. Click **ODBC Driver for Linux** to download the file `ThoughtSpot_linux_odbc_<version>.tar.gz`.
-    3. Unzip and untar the file:
-
-        ```
-        gunzip ThoughtSpot_linux_odbc_<version>.tar.gz
-
-        tar -xvf ThoughtSpot_linux_odbc_<version>.tar
-        ```
-
-3. Copy the library files from the Lib directory to a safe location on your Linux machine and add the corresponding path to the `LD_LIBRARY_PATH` environment variable.
+4. Copy the library files from the `Lib` directory to a safe location on your Linux machine.
 
     For 32-bit users, the library files are located in the directory:
 
@@ -46,17 +41,41 @@ When you are ready, do the following to install the driver:
     /linux/Lib/Linux_x8664
     ```
 
-4. Open the file `/linux/Setup/odbc.ini` in the editor of your choice.
-5. Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the `Description`.
-6. Find the line below it that begins with `ServerList` and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.
+5. Add the location's path to the `LD_LIBRARY_PATH` environment variable.
 
-    Leave the port number as 12345. The syntax for `ServerList` is:
+## Edit the /etc/simbaclient.ini file
+
+When you are ready, do the following to install the driver:
+
+1. Create a file on your Linux workstation called `/etc/simbaclient.ini`.
+2. Edit the `/etc/simbaclient.ini` file and add the following text to it:
+
+    ```
+    [Driver]
+    ErrorMessagesPath=<path_to_error_messages_directory>
+    ```
+3. Save and close the file.
+
+## Edit the odbc.ini file
+
+1. Open the file `/linux/Setup/odbc.ini` in the editor of your choice.
+2. Locate the `Description` section for the type of Linux you are using (32-bit or 64-bit).
+3. Locate the line that begins with `ServerList`.
+4. Replace `127.0.0.1` with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.
+
+    The syntax for the `ServerList` is:
 
     ```
     ServerList = <node1_IP> 12345, <node2_IP> 12345 [, <node3_IP> 12345, ...]
     ```
 
-    For example, for the 64-bit ODBC driver:
+    If you need to obtain the IP addresses of the ThoughtSpot cluster nodes, run
+    the command `tscli node ls` from a Linux shell on a ThoughtSpot appliance.
+
+5. Do not edit the port number, leave it as `12345`.  
+
+    When you are done, your entry will look similar to the following (this
+    example is for the 64-bit ODBC driver):
 
     ```
     [ThoughtSpot]
@@ -72,11 +91,12 @@ When you are ready, do the following to install the driver:
     DATABASE = # Set the default database to connect to
     SCHEMA = # Set the default schema to connect to
     ```
+6. Save and close the file.
 
-    If you need to obtain the IP addresses of the nodes in the cluster, you can run the command `tscli node ls` from the Linux shell on the ThoughtSpot instance.
+## Edit the odbcinst.ini file
 
-6. Open the file `/linux/Setup/odbcinst.ini` in the editor of your choice.
-7. Update the line that starts with `Driver` to have the path to the file `libSimbaClient.so`
+1. Open the file `/linux/Setup/odbcinst.ini` in the editor of your choice.
+2. Edit the `Driver`  line so that it contains the path to the file `libSimbaClient.so`
 
     Use the path where you copied the library files. For example, for the 64-bit ODBC driver:
 
@@ -90,4 +110,12 @@ When you are ready, do the following to install the driver:
     SQLLevel            = 1
     ```
 
-8. Save the file. Now you can test your ODBC connection.
+3. Save and close the file.
+
+## Testing your ODBC connection
+
+At this point, you can test your ODBC connection to ThoughSpot.  It is important
+to recall that the username/password you use belongs to a ThoughSpot application
+user with with administrator permissions.  Before trying the ODBC connection,
+make sure you can use this username/password to login into the ThoughSpot
+application and confirm the user's privileges.

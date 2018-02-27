@@ -26,7 +26,7 @@ Permissions are restricted. This means the R script does not have permission to
 issue system commands.
 
 The ThoughtSpot cluster has pre-installed the basic R packages. If your script
-requires a specific package, you must request your Thoughtspot cluster admin to
+requires a specific package, you must request your ThoughtSpot cluster admin to
 install the package on your behalf.
 
 ThoughtSpot internally transforms and binds an R script prior to sending it to

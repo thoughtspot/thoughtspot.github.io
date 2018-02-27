@@ -40,7 +40,7 @@ To list these internal worksheets:
     <tr>
       <th>TS: Search</th>
       <td>
-      
+      Contains data related to the number of queries run in the system.
       <td>
     </tr>
     <tr>

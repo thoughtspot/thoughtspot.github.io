@@ -1,14 +1,21 @@
 ---
-title: [Change the Windows ODBC Configuration]
+title: [Change the ODBC Configuration]
 keywords: tbd
 last_updated: tbd
 summary: "Use the ODBC Administrator to change the ODBC configuration."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once installation is complete, you can use the ODBC Administrator to change the ODBC configuration. For example, you may want to add a default schema or change the server IP address or the default database.
+Once installation is complete, you can use the ODBC Administrator to change the
+ODBC configuration on your Windows workstation. For example, you may want to add
+a default schema or change the server IP address or the default database.
 
-It is recommended to add a default schema. If you don't specify a default schema, you will need to supply it every time you use the ODBC driver. If you aren't using schemas in ThoughtSpot, you should specify the default schema, which is "falcon_default_schema". If you don't supply a default schema, and you don't specify a schema when using the ODBC driver, you will see an error that says the schema could not be found.
+It is recommended to add a default schema. If you don't specify a default
+schema, you will need to supply it every time you use the ODBC driver. If you
+aren't using schemas in ThoughtSpot, you should specify the default schema,
+which is "falcon_default_schema". If you don't supply a default schema, and you
+don't specify a schema when using the ODBC driver, you will see an error that
+says the schema could not be found.
 
 To make changes to the ODBC settings on Windows:
 
