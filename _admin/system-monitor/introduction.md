@@ -6,8 +6,10 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-System monitoring tools in ThoughtSpot include the System Health, system log
-files, and out-of-the-box system monitoring pinboards.
+System monitoring tools in ThoughtSpot includes a **Admin > System Health** page
+as well as system log files. Additionally, ThoughtSpot provides several
+worksheets from which were created out-of-the-box system monitoring pinboards.
+You can also create your own custom pinboards from these same worksheets.  
 
 ## System Health Center
 
@@ -17,18 +19,19 @@ Center by clicking on the **Admin** icon and then clicking **System Health**.
 
 ![]({{ site.baseurl }}/images/control_center_overview.png "System Health Center: Overview")
 
-
-The System Health pinboards can only be viewed by administrative users.
+The System Health center can only be viewed by administrative users.
 
 
 ## Log files
 
-Many of the administration commands output logging information to log files. The logs get written into the fixed directory /export/logs, with a sub-directory for each subsystem. The individual log directories are:
+Many of the administration commands output logging information to log files. The
+logs get written into the fixed directory `/export/logs`, with a sub-directory for
+each subsystem. The individual log directories are:
 
--   `/export/logs/orion`
--   `/export/logs/oreo`
--   `/export/logs/hadoop`
--   `/export/logs/zookeeper`
+- `/export/logs/orion`
+- `/export/logs/oreo`
+- `/export/logs/hadoop`
+- `/export/logs/zookeeper`
 
 ## System monitoring notifications
 
