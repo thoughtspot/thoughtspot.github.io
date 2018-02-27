@@ -177,13 +177,13 @@ The following tables summarize the configuration properties.
       <tr>
          <td><code>username</code></td>
          <td>UID</td>
-         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is an administrator user on the application.
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements. Typically, this user is a user with data management or administrative privileges on the application.
          </td>
       </tr>
       <tr>
          <td><code>password</code></td>
          <td>Password</td>
-         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is an administrator user on the application.
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is a user with data management or administrative privileges on the application.
          </td>
       </tr>
    </tbody>
