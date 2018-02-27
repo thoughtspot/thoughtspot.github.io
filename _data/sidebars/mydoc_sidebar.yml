@@ -707,10 +707,13 @@ entries:
     - levelTwoTitle: Monitoring
       output: web,admBk
       levelTwoItems:
-      - title: Monitoring tools
+      - title: Overview of monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
       - title: System worksheets
+        url: /admin/system-monitor/worksheets.html
+        output: web,admBk
+      - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
       - title: Health Overview board
@@ -1189,3 +1192,6 @@ entries:
     - title: Downloads
       url: /release/downloads.html
       output: web
+    - title: Topic index
+      url: /reference/tags_index.html
+      output: web,refGd
