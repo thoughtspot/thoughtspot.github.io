@@ -45,7 +45,7 @@ To create a group and add privileges for the group:
      </tr>
      <tr>
        <th>Display name</th>
-       <td></td>
+       <td>Name of the group as it appears in ThoughtSpot.</td>
      </tr>
      <tr>
        <th>Sharing visibility</th>

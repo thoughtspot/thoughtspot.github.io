@@ -1,6 +1,6 @@
 ---
 title: [About the ODBC Driver]
-keywords: tbd
+keywords: connection,ODBC,secure,version
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."
 sidebar: mydoc_sidebar
@@ -17,9 +17,12 @@ Supported operating systems for the ODBC driver are:
 -   Solaris Sparc 32-bit
 -   Solaris Sparc 64-bit
 
-## Version Compatibility
+## Version compatibility and connection parameters
 
-To ensure compatibility, always use the ODBC driver with the same version number as the ThoughtSpot instance to which you are connecting.
+To ensure compatibility, always use the ODBC driver with the same version number
+as the ThoughtSpot instance to which you are connecting. You can make a secure
+ODBC connection to the ThoughtSpot database by configuring a user and password
+combination with the driver.  For detailed information about connection parameters, see the [ODBC and JDBC configuration properties]({{ site.baseurl }}/data-integrate/reference/simba-settings.html#)
 
 ## Supported Data Types
 
