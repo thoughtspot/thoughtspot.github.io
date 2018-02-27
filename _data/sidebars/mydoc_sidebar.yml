@@ -698,9 +698,6 @@ entries:
       - title: Overview of System administration
         url: /admin/system-admin/sysadmin-overview.html
         output: web,admBk
-      - title: Using the Space Utilization chart
-        url: /admin/system-admin/about-the-memory-usage-chart.html
-        output: web,admBk
       - title: Send logs when reporting problems
         url: /admin/system-admin/send-logs-to-administrator.html
         output: web,admBk
@@ -713,7 +710,10 @@ entries:
       - title: Monitoring tools
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: Overview board
+      - title: System worksheets
+        url: /admin/system-monitor/monitor-pinboards.html
+        output: web,admBk
+      - title: Health Overview board
         url: /admin/system-monitor/overview.html
         output: web,admBk
       - title: Data board
