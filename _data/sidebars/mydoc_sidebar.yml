@@ -1043,7 +1043,7 @@ entries:
          - title: Windows Installation Overview
            url: /data-integrate/clients/install-odbc-windows.html
            output: web,digBk
-         - title: Change the Windows ODBC Configuration
+         - title: Change the ODBC Configuration
            url: /data-integrate/clients/change-odbc-windows.html
            output: web,digBk
          - title: Add a New Data Source to ODBC on Windows
