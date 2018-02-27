@@ -122,6 +122,7 @@ When you are ready, do the following to install the driver:
 
 At this point, you can test your ODBC connection to ThoughSpot.  It is important
 to recall that the username/password you use belongs to a ThoughSpot application
-user with with administrator permissions.  Before trying the ODBC connection,
-make sure you can use this username/password to login into the ThoughSpot
-application and confirm the user's privileges.
+user. Typically, this user is a user with data management or administrative
+privileges on the application. Before trying the ODBC connection, make sure
+you can use this username/password to login into the ThoughSpot application and
+confirm the user's privileges.
