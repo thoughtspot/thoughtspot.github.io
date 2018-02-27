@@ -39,6 +39,12 @@ upgrade. First, upgrade to one of the above versions, and then to this release.<
 <tbody>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4><a name="Trusted_Authentication"></a>Trusted_Authentication</h4>
+<p>Included in this release is support for a trusted authentication service. A ThoughtSpot installation can enable support for token-based authentication service. This allows an installation to use a central authentication service rather than using ThoughtSpot to authenticate. In this architecture, ThoughtSpot provides the service with a token that allows it to authenticate on behalf of users.</p>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h4><a name="UIImprovements"></a>UI Improvements</h4>
 <p>Included in this release are visual changes meant to improve the visual appeal of the user interface.</p>
 </td>
