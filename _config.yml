@@ -96,7 +96,7 @@ collections:
   spotiq:
     output: true
   tooltips:
-    output: false
+    output: true
 
 defaults:
   - values:
