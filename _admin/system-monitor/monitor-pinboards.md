@@ -1,111 +1,39 @@
 ---
 title: [System worksheets]
-keywords: monitor,worksheet
+keywords: monitor,pinboard
 tags: [indexing]
-last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+There are several system monitoring pinboards in ThoughtSpot that include
+information about the system status and resource usage. The information in these
+pinboard is updated hourly from an internal database that collects monitoring
+statistics.
 
-The monitoring information in **System Health** query several underlying worksheets. Administrators can view these worksheets and query them, but they cannot edit them.
+ ![]({{ site.baseurl }}/images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
 
-## List internal system worksheets
+ The monitoring pinboards can only be viewed by users with the administrator
+ privilege. They are based on worksheets, which administrators can view, but not
+ modify. However, you can create new monitoring reports from the
+ worksheets.
 
-To list these internal worksheets:
+ The monitoring information in **System Health** query several underlying
+ worksheets. Administrators can view these worksheets and query them, but they
+ cannot edit them.
 
-1. Go to the **Data** tab.
+## List system pinboards
+
+To list these system pinboards:
+
+1. Go to the **Pinboards** tab.
 2. Choose **All** and **All types**.
-3. Enter `TS:` in the search bar.
+3. Enter `TS ` (don't forget the space) in the search field.
 
-   ![]({{ site.baseurl }}/images/su-worksheets.png)
+   ![]({{ site.baseurl }}/images/su-pinboards.png)
 
-
-## About the worksheets
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-    <tr>
-      <th>Worksheet</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <th>TS: BI Server</th>
-      <td>
-      Contains data related to the the database underlying the ThoughtSpot server.
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Search</th>
-      <td>
-      Contains data related to the number of queries run in the system.
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Database</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Table Row Size</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Table Shards</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Table Row Counts</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS; Internal Table Wise Capacity WS</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Table Info</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Table Row Counts and Shards</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Internal Capacity WS</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Service Resources</th>
-      <td>
-      <td>
-    </tr>
-    <tr>
-      <th>TS: Metrics</th>
-      <td>
-      <td>
-    </tr>
-  </table>
-
-modify. The underlying tables are protected system tables that cannot be
-accessed directly. However, you can create new monitoring reports from the
-worksheets.
-
-The worksheets for system monitoring are:
-
--   TS: bi server
--   TS: database
--   TS: loader
--   TS: search
--   TS: service resources
+## Summary of system pinboards
 
 Here is a list of the system monitoring pinboards:
 
@@ -136,18 +64,9 @@ Here is a list of the system monitoring pinboards:
   -   Memory usage per component over time
   -   Aggregate memory usage over time
 -
-There are several system monitoring pinboards in ThoughtSpot that include
-information about the system status and resource usage. The information in these
-pinboard is updated hourly from an internal database that collects monitoring
-statistics.
 
- ![]({{ site.baseurl }}/images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
-The monitoring pinboards can only be viewed by users with the administrator
-privilege. They are based on worksheets, which administrators can view, but not
-modify. The underlying tables are protected system tables that cannot be
-accessed directly. However, you can create new monitoring reports from the
-worksheets.
+
 
 The worksheets for system monitoring are:
 

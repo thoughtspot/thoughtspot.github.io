@@ -37,7 +37,7 @@ To set up ThoughtSpot Data Connect:
 
         The commands `--proxy_host <proxy_server_hostname>` and `--proxy_port <proxy_server_port>` are also optional, and specify the proxy details.
 
-3. You may change your user password using the following tscli command:
+3. You may change your user password using the following `tscli` command:
 
     ```
     `tscli etl change-password --admin_username <admin_user> --username <Informatica_user>`

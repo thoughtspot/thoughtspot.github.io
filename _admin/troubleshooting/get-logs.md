@@ -38,7 +38,9 @@ There are two ways to get logs:
 
      ![]({{ site.baseurl }}/images/trace_log.png "Download log trace")
 
--   You can generate a log bundle using the tscli command `tscli logs collect` if you are comfortable with Linux. The command lets you specify which logs to collect and from what time periods.
+- You can generate a log bundle using the `tscli` command `tscli logs collect` if
+you are comfortable with Linux. The command lets you specify which logs to
+collect and from what time periods.
 
     Usage for this command is:
 

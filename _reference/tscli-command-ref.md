@@ -816,7 +816,7 @@ This subcommand supports the following actions:
 
 ```
 tscli support [-h]
-{restart-remote,rm-admin-email,rm-admin-phone,set-admin-email,set-admin-phone,set-remote,show-admin-email,show-admin-phone,show-remote,start-remote,stop-remote}
+{restart-remote,rm-admin-email, rm-admin-phone, rm-feedback-email, set-admin-email, set-admin-phone, set-feedback-email, set-remote, show-admin-email, show-admin-phone, show-feedback-email, show-remote, start-remote, stop-remote}
 
 ```
 
@@ -824,11 +824,15 @@ This subcommand supports the following actions:
 
 * `tscli support restart-remote` Restarts remote support.
 * `tscli support rm-admin-email` Removes the email address for contacting the customer administrator. Replaces it with the default ThoughtSpot Support email address.
+* `tscli support rm-feedback-email` Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address.
 * `tscli support rm-admin-phone` Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number.
+* `tscli support rm-feedback-email` Removes the email for sending feedback out of the system. If you would like to set a blank email address, issue the command `tscli support set-feedback-email ' '`.
 * `tscli support set-admin-email` *`email`* Sets the email address for contacting the customer administrator. If you would like to display a blank email address, issue the command `tscli support set-admin-email ' '`.
+* `tscli support set-feedback-email` *`email`* Sets the email address for sending feedback. If you would like to display a blank email address, issue the command `tscli support set-feedback-email ' '`.
 * `tscli support set-admin-phone` *`phone_number`* Sets the phone number for contacting the customer administrator. Specify a phone number using any value (e.g. `+1 800-508-7008 Ext. 1`). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone`.
 * `tscli support set-remote [-h] [--addr` *`ADDR`*`] [--user` *`USER`*`]` Configures the cluster for remote support through SSH tunneling, where *`ADDR`* is the address of support, e.g. t`unnel.thoughtspot.com`, and *`USER`* is the support username.
 * `tscli support show-admin-email` Shows the email address for customer administrator, if set.
+* `tscli support show-feedback-email` Shows the email address for product feedback, if set.
 * `tscli support show-admin-phone` Shows the phone number for customer administrator, if set.
 * `tscli support show-remote` Shows the status and configuration of remote support.
 * `tscli support start-remote` Starts remote support.

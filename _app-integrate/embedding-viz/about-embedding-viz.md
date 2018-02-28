@@ -110,3 +110,12 @@ phishing attack. Cross-origin or cross-domain verification closes this vulnerabi
 When embedding, you must enable CORS between your client application domain and
 the ThoughtSpot domain. This protects your data, so that another actor cannot
 use the same URL to embed the visualization in its own Web pages.
+
+## Decide if you need to change the feedback email
+
+ThoughtSpot has an automated feature that collects feedback from users and sends
+it to `support@thoughtspot.com`. Depending on what and how you embed, user
+actions with your embedded application can trigger feedback. You can continue to
+forward feedback in this manner or direct the feedback to another email. To
+learn how to change the feedback email, see [Manage the feedback contact]({{
+site.baseurl }}/admin/setup/work-with-ts-support.html#manage-the-feedback-contact).
