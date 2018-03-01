@@ -41,19 +41,23 @@ settings and rules.
 |Worksheets|A worksheet created using a Web browser.|Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)|
 |Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)|
 
+## Understanding SHAREABLE
+
 When you share an object, only the users and groups that have **SHAREABLE** set
 for the **Sharing visibility** option appear on the dialog.
 
 ![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
+
+Only users in the **Administrators** group can share with groups marked as **NOT
+SHAREABLE**.
 
 User in groups marked **NOT SHAREABLE** cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.
 
-![]({{ site.baseurl }}/images/share-venn.png)
-
-Only users in the **Administrators** group can share with groups marked as **NOT
+Only users in the **Administrators** group or users with **Admin** privileges
+can share with groups marked as **NOT
 SHAREABLE**.
 
 ## Row level security

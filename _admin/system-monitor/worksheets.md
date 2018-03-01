@@ -36,24 +36,29 @@ To list these system worksheets:
     <tr>
       <th>TS: BI Server</th>
       <td>
-      Contains data related to the the database underlying the ThoughtSpot server.
-      <td>
+      Contains data related to the systems associated with underlying the
+  ThoughtSpot BI server.  This includes database latency, browser clients, size
+  of responses, and more.
+      </td>
     </tr>
     <tr>
       <th>TS: Search</th>
       <td>
-      Contains data related to the number of queries run in the system.
-      <td>
+      Contains data related to the number of queries run in the system. This contains
+information such as uptime, host, and timestamps.
+      </td>
     </tr>
     <tr>
       <th>TS: Database</th>
       <td>
-      <td>
+      Contains information related to the database cache and queries run on the database. For example, you could use this worksheet to see data on the query errors returned by the database.
+      </td>
     </tr>
     <tr>
       <th>TS: Table Row Size</th>
       <td>
-      <td>
+      
+      </td>
     </tr>
     <tr>
       <th>TS: Table Shards</th>

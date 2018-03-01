@@ -2,20 +2,52 @@
 title: [Overview board]
 keywords: monitor,system
 tags: [indexing]
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The **Overview** tab summarizes basic information about how your cluster and who
-uses it. Choose **Admin > System Health > Overview** to see this tab.  This
-section discusses the pinboards you'll find on this page and what you can learn
-from them.
+uses it. Choose **Admin > System Health > Overview** to see this tab. The tab
+contains information about the system status and resource usage.
+
+## Understand system boards and pinboards
+
+The **Overview** page includes boards and <a href="#" data-toggle="tooltip"
+data-original-title='{{site.data.glossary.pinboard}}'>pinboard</a>. The boards
+contain information that are system generated in real time. The pinboards use
+the underlying system worksheets. The information in these pinboard is updated
+hourly from internal tables that collect monitoring statistics.  
+
+Each board has a menu. You can present or copy the links to the boards. The
+pinboards have the standard ThoughtSpot answer menu. You can use the menu to do
+additional actions such as download the panel's visualization or present
+information about your ThoughtSpot cluster. You cannot, however, change the
+underlying query.
+
+To find out how a particular panel result is calculated, do the following:
+
+1. Select **Edit** from the panel menu.
+
+   ![]({{ site.baseurl }}/images/panel-data.png "Menu of panel")
+
+   This displays a **Search** bar.
+
+2. Investigate the components of the search as you would normally.
+
+    ![]({{ site.baseurl }}/images/admin-panel-details.png)
+
+
 
 ## Cluster Summary
 
+This has basic information about your cluster.  The **NUMBER OF NODES** is the
+number of installed nodes. This doesn't reflect the active nodes which may be
+more or less.
+
 This summary includes the import **LAST SNAPSHOT TIME** which shows that regular
-snapshots of your cluster are collected. This value should update regularly. If
-you do not see it change, you should check your cluster snapshot policy.  
+snapshots of your cluster are collected. This value should update regularly in
+real time. If you do not see it change, you should check your cluster snapshot
+policy.  
 
 ```
 $ tscli snapshot-policy show
@@ -52,61 +84,50 @@ Events** panel on this same page.
 
 ## Relational Data Cache
 
-This section reports information about tables in your cluster. Worksheet data
-is not included.
+This section reports real-time information about tables in your cluster.
+Worksheet data is not included.
 
+| Value  |  Description |
+|---|---|
+|  **TABLES LOADED** | Number currently loaded.  |
+|  **TABLES BEING UPDATED** | Number of table loads in-progress. |
+|  **NEW TABLES BEING LOADED** | Number of tables being loaded for the first time.  |
+|  **ROWS** | Number of rows combined across all tables in ThoughtSpot.  |
 
 ## Relational Search Engine
 
 
+| Value  |  Description |
+|---|---|
+|  **TABLES SEARCHABLE** | ???  |
+|  **TABLES BEING INDEXED** | Total of in-progress table indexing. |
+|  **NEW TABLES BEING INDEXED** | Total of first-time, in-progress table indexing.  |
+|  **TOKENS SEARCHABLE** | Number of <a href="#" data-toggle="tooltip" data-original-title='{{site.data.glossary.token}}'>tokens</a> of all table (combined) indexed in ThoughtSpot. |
+
 
 ## Critical Alerts
 
+Alerts generated in the last ???. This includes when an alert was generated and
+from which service and machine.  Unlike the other
 
 
-## System monitoring pinboards
+## Space Utilization
 
-There are several system monitoring panels in ThoughtSpot that include
-information about the system status and resource usage. The information in these
-pinboard is updated hourly from internal tables that collect monitoring
-statistics.  
-
-Each panel has a menu. You can use the menu to do additional actions such as
-download the panel's visualization or present information about your ThoughtSpot
-cluster. To find out how a particular panel result is calculated, do the
-following:
-
-1. Select **Edit** from the panel menu.
-
-   ![]({{ site.baseurl }}/images/panel-data.png "Menu of panel")
-
-   This displays a **Search** bar.
-
-2. Investigate the components of the search as you would normally.
-
-    ![]({{ site.baseurl }}/images/admin-panel-details.png)
-
-
-The following panels are available.
-
-### Space Utilization
-
-The **Space Utilization** chart is one of the available charts for you to use when
-checking the cluster overview. You can find the chart in the **Overview**
-section of the System Health center. This line chart displays the total used
-space, which consists of raw uncompressed data, including replication.
+The **Space Utilization** chart is one of the available charts for you to use
+when checking the cluster overview. This line chart displays the total capacity
+and estimated used capacity over time. The chart relies on the `TS: Internal
+Table Wise Capacity WS` worksheet. It tracks  total used space, which consists
+of raw uncompressed data, including replication.
 
  ![]({{ site.baseurl }}/images/memory_usage_chart.png "Space Utilization chart example")
 
 The x-axis is by time. It allows you to zoom in and see daily or hourly data.
 The y-axis measures the size in GB. So in the **Space Utilization** chart above, the
 green line shows the amount of capacity in use in the system, while the red line
-shows the total capacity. The increase in the red line at the end of the period
+shows the total capacity. An increase in the red line at the end of a time period
 indicates the addition of extra hardware, resulting in increased capacity.
 
-You can use Edit to view the query, which is:
-
-`
+```
 day of timestamp
 total capacity (gb)
 total used space (gb)
@@ -114,26 +135,63 @@ daily
 last 90 days last 25 hours
 total capacity (gb) > 0
 total used space (gb) > 0
+```
 
 
-### Monthly Active Users
+## Monthly Active Users
 
-Number of users in the system per month. An active user is a user who has logged in at least once in the past month. Month is calculated from the current date.
+Number of active users in the system over the last four months. An active user
+within a time interval is defined as a user who has logged in at least once in
+that time interval, in this case a month. Month is calculated from the current
+month.
 
-### Monthly Ad-hoc Searches
+```
+monthly
+last 4 months this month
+active users
+user != {null}
+```
 
-Number of ad-hoc searches made per month. An ad-hoc query is a search through the search bar or via or an API call.
+## Monthly Ad-hoc Searches
 
-### Monthly Pinboard Views
+Number of ad-hoc searches (query) made per month. An ad-Hoc query is any change
+in a search that results in a new answer (result).  A search result from a
+change in the search bar such as adding a new token like a formula or keyword. A
+search can also happen through SpotIQ or through another UI/API interaction.
+
+For example,  scenarios considered as ad-hoc search (query):
+
+* User edits tokens in the search bar.
+* User opens an existing saved answer and makes changes to tokens in the search bar.
+* User opens an existing saved pinboard, edits a context viz and makes change to the search viz search tokens.
+* Searches initiated by a `tspublic` API call for data with runtime filters
+
+It is not considered a search (query) if a user opens an existing saved
+aggregated worksheet and makes changes to tokens related to its underlying
+query.
+
+The query for this pinboard is the following:
+
+```
+ad-hoc search
+user action = 'answer_pinboard_context' 'answer_saved' 'answer_unsaved'
+monthly
+last 4 months this month
+```
+
+This query relies on data from the `TS: BI Server` worksheet.
 
 
-### Top Users Last Month</th>
+## Monthly Pinboard Views
 
 
-### Top Pinboards Last Month</th>
+## Top Users Last Month</th>
 
 
-### Configuration events
+## Top Pinboards Last Month</th>
+
+
+## Configuration events
 
 
 ## About deprecated boards
