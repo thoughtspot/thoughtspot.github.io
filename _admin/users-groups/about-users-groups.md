@@ -63,7 +63,7 @@ Permissions to see and edit tables, worksheets, and pinboards are set when you
 share them with users and groups, as described in the topic [Data security]({{
 site.baseurl }}/admin/data-security/sharing-security-overview.html#).
 
-{% include content/matrix.md %}
+{% include content/security-matrix.md %}
 
 ## Related information
 

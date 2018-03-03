@@ -45,40 +45,6 @@ The **Database Status** section has the following values:
         <td>ERROR</td>
         <td>The table is invalid. Call Customer Support.</td>
        </tr>
-       <tr>
-        <td>Search</td>
-        <td>
-         <p dir="ltr">READY</p>
-        </td>
-        <td>The data is up to date and searchable.</td>
-       </tr>
-       <tr>
-        <td>
-         <p dir="ltr">NOT READY</p>
-        </td>
-        <td>The data is not ready to be searched.</td>
-       </tr>
-       <tr>
-        <td>
-         <p dir="ltr">DELETING INDEX</p>
-        </td>
-        <td>The table has already been deleted, but the index still exists due to the latency
-         between the database and search engine.</td>
-       </tr>
-       <tr>
-        <td>INDEXING DISABLED</td>
-        <td>Either too many tokens exist in a column for it to be indexed, or indexing has been
-         disabled manually.</td>
-       </tr>
-       <tr>
-        <td>CREATING INDEX</td>
-        <td>The index is being created.</td>
-       </tr>
-       <tr>
-        <td>UPDATING INDEX</td>
-        <td>A change has been made to indexing or the data, and the index is being updated to
-         reflect it.</td>
-       </tr>
        </tbody>
     </table>
 

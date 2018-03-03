@@ -27,7 +27,7 @@ Keep in mind these other boundaries:
 
 |Description |Boundary|
 |-------------------------|--------------------|
-| Max number of rows that can be downloaded | 10M (default is 1M) |
+|Max number of rows that can be downloaded | 10M (default is 1M) |
 |Size in CSV format| 1 TB per appliance|
 |Total number of rows across all tables| 1B per appliance|
 |Many-to-Many (Generic) join cardinality|10B per appliance|

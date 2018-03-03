@@ -1,5 +1,5 @@
 ---
-title: [System worksheets]
+title: [System pinboards]
 keywords: monitor,pinboard
 tags: [indexing]
 toc: false
@@ -35,83 +35,57 @@ To list these system pinboards:
 
 ## Summary of system pinboards
 
-Here is a list of the system monitoring pinboards:
-
-* **TS StaTS: Usage** Helps you see how much the system is being used. Shows search and pinboard activity by user and by date. Examples include:
-  -   Questions asked by user
-  -   Questions asked by date
-  -   Pinboard impressions
-
-* **TS StaTS: Suggestions** Helps you monitor the performance statistics for the suggestions provided in the search bar. Shows the number and latency of suggestions given over time. Examples include:
-  -   Suggestion volume over time
-  -   Suggestion latency over time
-
-- **TS StaTS: Queries** Helps you monitor database performance over time by showing query volume, latency, and any errors.  Examples include:
-  -   Query latency by size of response
-  -   Average vs. maximum query latency
-  -   Database queries and errors
-
-- **TS StaTS: Resource Usage** Helps you monitor cluster resources by showing memory and CPU usage per component:
-  -   Service
-  -   Database
-  -   Search
-  -   Host
-  -   Aggregate (all)
-
-  Examples include:
-
-  -   CPU usage per component over time
-  -   Memory usage per component over time
-  -   Aggregate memory usage over time
--
-
-
-
-
-The worksheets for system monitoring are:
-
-
--   TS: BI server
--   TS: database
--   TS: loader
--   TS: search
--   TS: service resources
-
-Here is a list of the system monitoring pinboards:
-
-* **TS StaTS: Usage** Helps you see how much the system is being used. Shows search and pinboard activity by user and by date. Examples include:
-  -   Questions asked by user
-  -   Questions asked by date
-  -   Pinboard impressions
-
-* **TS StaTS: Suggestions** Helps you monitor the performance statistics for the suggestions provided in the search bar. Shows the number and latency of suggestions given over time. Examples include:
-  -   Suggestion volume over time
-  -   Suggestion latency over time
-
-- **TS StaTS: Queries** Helps you monitor database performance over time by showing query volume, latency, and any errors.  Examples include:
-  -   Query latency by size of response
-  -   Average vs. maximum query latency
-  -   Database queries and errors
-
-- **TS StaTS: Resource Usage** Helps you monitor cluster resources by showing memory and CPU usage per component:
-  -   Service
-  -   Database
-  -   Search
-  -   Host
-  -   Aggregate (all)
-
-  Examples include:
-
-  -   CPU usage per component over time
-  -   Memory usage per component over time
-  -   Aggregate memory usage over time
+<table>
+<colgroup>
+   <col style="width:35%" />
+   <col style="width:65%" />
+</colgroup>
+   <tr>
+      <th>Pinboard</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Learn how to use ThoughtSpot</code></td>
+      <td>
+         Contains search replays created in the system.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS Stats: Alert Detail</code></td>
+      <td>
+         DESCRIPTION
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS Stats: Cluster Detail</code></td>
+      <td>
+         DESCRIPTION
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS Stats: Alert Detail</code></td>
+      <td>
+         DESCRIPTION
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS Stats: Latency Visualizations</code></td>
+      <td>
+         DESCRIPTION
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS Stats: Table Status</code></td>
+      <td>
+         DESCRIPTION
+      </td>
+   </tr>
+  </table>
 
 
-## Create your own activity panels
+## About deprecated boards
 
-The information on the  System Health page is visible only to administrative
-users. You may find it useful to share some of this information with your users.
-Or you may want to customize some of this information and share it with your
-users. You can do this.
-
-1.
+The deprecated boards (`TS status: Usage - Deprecated` and `TS StaTS: Queries --
+Deprecated`) are there to support older installations. New installations, should
+not use or rely on deprecated boards. Older installations that have used these
+boards in some way, should use the new boards and remove any dependencies.

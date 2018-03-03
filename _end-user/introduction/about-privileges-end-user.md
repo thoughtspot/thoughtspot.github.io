@@ -18,4 +18,4 @@ Here are the privileges that the administrator sets, and the capabilities they e
 
 The following table shows the intersection of user privilege and ability:
 
-{% include content/matrix.md %}
+{% include content/security-matrix.md %}

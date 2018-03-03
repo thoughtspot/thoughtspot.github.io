@@ -21,7 +21,7 @@ applied at the group level.
 
 The following table shows the intersection of user privilege and ability:
 
-{% include content/matrix.md %}
+{% include content/security-matrix.md %}
 
 
 ## Security model for sharing objects

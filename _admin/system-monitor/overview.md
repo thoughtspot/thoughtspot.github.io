@@ -112,7 +112,6 @@ Worksheet data is not included.
 Alerts generated in the last ???. This includes when an alert was generated and
 from which service and machine.  Unlike the other
 
-
 ## Space Utilization
 
 The **Space Utilization** chart is one of the available charts for you to use
@@ -220,10 +219,10 @@ The query uses the `TS: BI Server` data source.
 
 ## Top Users Last Month
 
-This answer shows the top ThoughtSpot users ranked by number of ad-hoc searches
+This answer shows the top ThoughtSpot users ranked by number of user actions
 the users performed in the last 30 days. The possible user actions include:
 
-* ???
+{% include content/user-actions.md %}
 
 The query underlying this answer is:
 
@@ -269,6 +268,6 @@ command and other operations.
 ## About deprecated boards
 
 There are a number of deprecated boards on this page. They are there to support
-older installations that relied on them. New installations, should not user or
+older installations that relied on them. New installations, should not use or
 rely on deprecated boards. Older installations that have used these boards in
-some way, should user the new boards and remove any dependencies.
+some way, should use the new boards and remove any dependencies.
