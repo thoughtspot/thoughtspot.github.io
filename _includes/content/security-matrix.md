@@ -50,7 +50,7 @@
          </th>
          <th class="rotate">
             <div><span>
-               Share with All
+               Share with all users
                </span>
             </div>
          </th>

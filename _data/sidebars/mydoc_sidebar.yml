@@ -710,12 +710,6 @@ entries:
       - title: Overview of monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: System worksheets
-        url: /admin/system-monitor/worksheets.html
-        output: web,admBk
-      - title: System pinboards
-        url: /admin/system-monitor/monitor-pinboards.html
-        output: web,admBk
       - title: Health Overview board
         url: /admin/system-monitor/overview.html
         output: web,admBk
@@ -727,6 +721,12 @@ entries:
         output: web,admBk
       - title: Alerts and Events board
         url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: System worksheets
+        url: /admin/system-monitor/worksheets.html
+        output: web,admBk
+      - title: System pinboards
+        url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
       - title: Custom monitor boards
         url: /admin/system-monitor/monitor-pinboards.html
@@ -1176,6 +1176,9 @@ entries:
       output: web,refGd
     - title: Worksheet formula reference
       url: /reference/formula-reference.html
+      output: web,refGd
+    - title: Alerts reference
+      url: /reference/alerts-reference.html
       output: web,refGd
     - title: Error code reference
       url: /error-codes/error-codes-reference.html

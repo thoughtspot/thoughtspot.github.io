@@ -1,7 +1,7 @@
 ---
 title: [Get your configuration and logs]
 keywords: tbd
-last_updated: tbd
+tags: [logs]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

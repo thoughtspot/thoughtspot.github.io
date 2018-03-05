@@ -21,7 +21,7 @@ applied at the group level.
 
 The following table shows the intersection of user privilege and ability:
 
-{% include content/matrix.md %}
+{% include content/security-matrix.md %}
 
 
 ## Security model for sharing objects
@@ -48,17 +48,18 @@ for the **Sharing visibility** option appear on the dialog.
 
 ![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
 
-Only users in the **Administrators** group can share with groups marked as **NOT
-SHAREABLE**.
+Only users in the **Administrators** group or users with **Admin** privileges
+can share with groups marked as **NOT SHAREABLE**. Members of a group with
+**Can share with all users** privilege can also share with groups marked as
+**NOT SHAREABLE**.
 
 User in groups marked **NOT SHAREABLE** cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.
 
-Only users in the **Administrators** group or users with **Admin** privileges
-can share with groups marked as **NOT
-SHAREABLE**.
+
+
 
 ## Row level security
 

@@ -76,7 +76,7 @@ div.col-sm-4 {
   margin-top: 20px;
 }
 
-/* Privileges table in matrix.md*/
+/* Privileges table in security-matrix.md*/
 
 table.wide_table > caption {
   /*font-size: larger;*/
@@ -133,7 +133,7 @@ th.rotate > div > span {
   padding: 5px 10px;
 }
 
-/* END: Privileges table in matrix.md*/
+/* END: Privileges table in security-matrix.md*/
 
 /*https://css-tricks.com/rotated-table-column-headers/*/
 
@@ -1339,4 +1339,5 @@ h4.panel-title {
     .collapse.in{
         display:block !important;
     }
+
 }

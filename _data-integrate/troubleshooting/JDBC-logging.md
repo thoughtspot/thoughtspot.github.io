@@ -1,7 +1,7 @@
 ---
 title: [Enabling JDBC Logs]
 keywords: tbd
-last_updated: tbd
+tags: [logs]
 summary: "Configure logging parameter strings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

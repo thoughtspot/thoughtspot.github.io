@@ -1,7 +1,7 @@
 ---
 title: [Slack integration]
 keywords: slack, integration, messaging
-last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

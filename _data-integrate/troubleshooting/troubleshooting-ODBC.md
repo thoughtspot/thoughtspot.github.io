@@ -1,7 +1,7 @@
 ---
 title: [Enabling ODBC Logs on Windows]
 keywords: tbd
-last_updated: tbd
+tags: [logs]
 summary: "Using logs to aid in troulbeshooting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
