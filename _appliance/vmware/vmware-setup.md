@@ -77,7 +77,11 @@ for a sandbox environment but is insufficient for a production environment.
 
 2. Select **Add hard disk > New hard disk**.
 
+   You can give the VM up to 38 cores (or approximately 490 G RAM). The ESXi host
+   should keep a minimum of 2 cores.
+
    ![]({{ site.baseurl }}/images/vmware-adddisk1.png "New hard disk")
+
 
    The new disk appears as a new row under the only existing SSD row.
 
