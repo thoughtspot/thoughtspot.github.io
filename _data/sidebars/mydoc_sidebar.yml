@@ -1177,6 +1177,9 @@ entries:
     - title: Worksheet formula reference
       url: /reference/formula-reference.html
       output: web,refGd
+    - title: Alerts reference
+      url: /reference/alerts-reference.html
+      output: web,refGd
     - title: Error code reference
       url: /error-codes/error-codes-reference.html
       output: web,refGd

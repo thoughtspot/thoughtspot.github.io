@@ -1,7 +1,7 @@
 ---
 title: [ODBC Data Source Administrator]
 keywords: tbd
-last_updated: tbd
+tags: [logs]
 summary: "Use ODBC to modify log in options and troubleshoot ODBC issues."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

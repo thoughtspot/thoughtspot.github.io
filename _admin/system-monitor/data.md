@@ -7,13 +7,17 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The **Data** page shows all the stored tables with details on the last update
-time, time taken for auto-indexing, number of rows, etc.
+time, time taken for auto-indexing, number of rows, and so forth.
 
  ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the System Health Center: Data")
 
+ You can click on a column name to sort by table name. This table information is
+ based on an underlying system data, you can present it or copy the link, but
+ you cannot access the underlying query.
+
 ## Database Status
 
-The **Database Status** section has the following values:
+The **Database Status** column can have the following possible values:
 
 <table>
     <colgroup>
@@ -29,20 +33,20 @@ The **Database Status** section has the following values:
       <tbody>
        <tr>
         <td>
-         <p dir="ltr">READY</p>
+         <p><code style="highlighter-rouge">READY</code></p>
         </td>
         <td>The data has been loaded.</td>
        </tr>
        <tr>
-        <td>IN PROGRESS</td>
+        <td><code style="highlighter-rouge">IN PROGRESS</code></td>
         <td>The data is still being loaded.</td>
        </tr>
        <tr>
-        <td>STALE</td>
+        <td><code style="highlighter-rouge">STALE</code></td>
         <td>The data is not up to date.</td>
        </tr>
        <tr>
-        <td>ERROR</td>
+        <td><code style="highlighter-rouge">ERROR</code></td>
         <td>The table is invalid. Call Customer Support.</td>
        </tr>
        </tbody>
@@ -50,6 +54,8 @@ The **Database Status** section has the following values:
 
 
 ## Search Status
+
+The **Search Status** column can have the following possible values:
 
 
 <table>
@@ -66,34 +72,34 @@ The **Database Status** section has the following values:
       <tbody>
     <tr>
      <td>
-      <p dir="ltr">READY</p>
+      <p><code style="highlighter-rouge">READY</code></p>
      </td>
      <td>The data is up to date and searchable.</td>
     </tr>
     <tr>
      <td>
-      <p dir="ltr">NOT READY</p>
+      <p><code style="highlighter-rouge">NOT READY</code></p>
      </td>
      <td>The data is not ready to be searched.</td>
     </tr>
     <tr>
      <td>
-      <p dir="ltr">DELETING INDEX</p>
+      <p><code style="highlighter-rouge">DELETING INDEX</code></p>
      </td>
      <td>The table has already been deleted, but the index still exists due to the latency
       between the database and search engine.</td>
     </tr>
     <tr>
-     <td>INDEXING DISABLED</td>
+     <td><code style="highlighter-rouge">INDEXING DISABLED</code></td>
      <td>Either too many tokens exist in a column for it to be indexed, or indexing has been
       disabled manually.</td>
     </tr>
     <tr>
-     <td>CREATING INDEX</td>
+     <td><code style="highlighter-rouge">CREATING INDEX</code></td>
      <td>The index is being created.</td>
     </tr>
     <tr>
-     <td>UPDATING INDEX</td>
+     <td><code style="highlighter-rouge">UPDATING INDEX</code></td>
      <td>A change has been made to indexing or the data, and the index is being updated to
       reflect it.</td>
     </tr>

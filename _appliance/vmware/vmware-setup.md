@@ -82,7 +82,6 @@ for a sandbox environment but is insufficient for a production environment.
 
    ![]({{ site.baseurl }}/images/vmware-adddisk1.png "New hard disk")
 
-
    The new disk appears as a new row under the only existing SSD row.
 
 3. Click the **New Hard disk** to expand the detailed configuration options.
