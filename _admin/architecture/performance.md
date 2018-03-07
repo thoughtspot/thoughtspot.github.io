@@ -61,7 +61,7 @@ the following boundaries are recommended:
 |-------------------------|--------------------|
 |Max number of fact tables in a worksheet	|5|
 |Max number of shared dimensions	|2|
-|Max number of rows in _non_ co-sharded shared dimension table of chasm trap	|10B|
+|Max number of rows in _non_ co-sharded shared dimension table of chasm trap	|1B|
 |Max number of rows in co-sharded shared dimension table of chasm trap	| 1B |
 
 ## Row level security Boundaries
