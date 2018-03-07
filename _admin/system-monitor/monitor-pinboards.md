@@ -13,7 +13,6 @@ statistics.
 
  ![]({{ site.baseurl }}/images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
-
  The monitoring pinboards can only be viewed by users with the administrator
  privilege. They are based on worksheets, which administrators can view, but not
  modify. However, you can create new monitoring reports from the
@@ -53,31 +52,31 @@ To list these system pinboards:
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Alert Detail</code></td>
       <td>
-         DESCRIPTION
+         Combines alerts, notification events, and configuration events boards.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Cluster Detail</code></td>
       <td>
-         DESCRIPTION
+         Contains cluster details, logs, snapshots, and latency data.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS Stats: Alert Detail</code></td>
+      <td><code class="highlighter-rouge">TS Stats: System Information and Usage</code></td>
       <td>
-         DESCRIPTION
+         Replicates the **Admin > System Health > Overview** page.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Latency Visualizations</code></td>
       <td>
-         DESCRIPTION
+         Latency on servers and <a href="#" data-toggle="tooltip" data-original-title='{{site.data.glossary.impression}}'>impression</a> counts. This data comes from the `TS: BI Server` worksheet.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Table Status</code></td>
       <td>
-         DESCRIPTION
+         Replicates the **Data** board.
       </td>
    </tr>
   </table>

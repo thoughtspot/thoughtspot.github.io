@@ -101,7 +101,7 @@ Worksheet data is not included.
 
 | Value  |  Description |
 |---|---|
-|  **TABLES SEARCHABLE** | ???  |
+|  **TABLES SEARCHABLE** | Tables that are indexed and can be searched.  |
 |  **TABLES BEING INDEXED** | Total of in-progress table indexing. |
 |  **NEW TABLES BEING INDEXED** | Total of first-time, in-progress table indexing.  |
 |  **TOKENS SEARCHABLE** | Number of <a href="#" data-toggle="tooltip" data-original-title='{{site.data.glossary.token}}'>tokens</a> of all table (combined) indexed in ThoughtSpot. |
@@ -109,8 +109,29 @@ Worksheet data is not included.
 
 ## Critical Alerts
 
-Alerts generated in the last ???. This includes when an alert was generated and
-from which service and machine.  Unlike the other
+Displays critical and warning alerts. This includes when an alert was generated and
+from which service and machine. Administrators can get a refined list by issuing a `tscli alert list` on the appliance:
+
+```
+tscli alert list --since 4w
+```
+
+The critical alerts you can encounter in this display are the following:
+
+{% for item in site.data.extract-alerts.alerts %}  
+  {% if item.type == "CRITICAL" %}
+
+* `{{item.id}}`
+
+  **Msg**: `{{item.msg}}`
+
+  {{item.description}}
+   {% endif %}
+ {% unless forloop.last %}
+ {% endunless %}
+{% endfor %}
+
+The possible alert types are `CRITICAL`, `WARNING`, `ERROR`, and `INFO` . To view a list of the possible alerts, see the [Alert code reference]({{ site.baseurl }}/reference/alerts-reference.html#).
 
 ## Space Utilization
 
@@ -261,9 +282,55 @@ The query uses the `TS: BI Server` data source.
 
 ## Configuration Events
 
-This system visualization displays events that changed the configuration of the
-system for the last ??? days. The include events initiated from the `tscli`
-command and other operations.
+This system visualization displays recent events that changed the configuration of the
+system. This panel displays configuration events related to:
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="60%" />
+    </colgroup>
+      <tbody>
+       <tr>
+        <th>
+        Cluster Configuration
+        </th>
+        <td>Reports configuration actions from the `tscli` command. </td>
+       </tr>
+       <tr>
+        <th>
+         Metadata Management
+        </th>
+        <td>Events related to metadata such as column names, column visibility, column and data definition, column rank and so forth.</td>
+       </tr>
+       <tr>
+        <th>
+         User Management
+        </th>
+        <td>Events related to creating, updating, or adding new users and groups. </td>
+       </tr>
+       </tbody>
+    </table>
+
+For a more detailed list, including the user that issued a command, you can use
+the `tscli event list` command. Administrators can ssh into the cluster and
+specify a time period or even a type of command to include.
+
+```
+[admin@testsystem ~]$ tscli event list --since 3d
++-------------------------------+-----------------------------------+----------------------------------+
+|             DATE              |               USER                |           SUMMARY                |
++-------------------------------+-----------------------------------+----------------------------------+
+| 2018-03-06 11:57:10 -0800 PST | eng-admin@thoughtspot.int         | User Management: User            |
+|                               |                                   | "guest_1" updated                |
+| 2018-03-06 11:48:10 -0800 PST | admin                             | tscli node ls                    |
+| 2018-03-06 11:17:04 -0800 PST | eng-admin@thoughtspot.int         | Metadata Management:             |
+|                               |                                   | Metadata object "Number of       |
+|                               |                                   | Opportunities by Opportunity     |
+|                               |                                   | AE and Stage" of type            |
+|                               |                                   | "QUESTION_ANSWER_BOOK" saved     |
+...
+```
 
 ## About deprecated boards
 
@@ -271,3 +338,7 @@ There are a number of deprecated boards on this page. They are there to support
 older installations that relied on them. New installations, should not use or
 rely on deprecated boards. Older installations that have used these boards in
 some way, should use the new boards and remove any dependencies.
+
+## Related information
+
+[`tscli logs` command]({{ site.baseurl }}/reference/tscli-command-ref.html#logs)

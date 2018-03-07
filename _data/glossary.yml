@@ -1,2 +1,3 @@
 token: "Text a user can enter in the search bar. For example, keywords, column names, and forumula names are examples of tokens."
 pinboard: "Collections of related search results that appear as tables or visualizations."
+impression:  "Impressions are instances a user enters text into a search bar or loads a pinboard. Impressions should go up as users become more comfortable with search."
