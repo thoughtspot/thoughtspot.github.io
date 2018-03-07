@@ -707,10 +707,10 @@ entries:
     - levelTwoTitle: Monitoring
       output: web,admBk
       levelTwoItems:
-      - title: Overview of monitoring
+      - title: Introduction to monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: Health Overview board
+      - title: Overview board
         url: /admin/system-monitor/overview.html
         output: web,admBk
       - title: Data board
@@ -720,7 +720,7 @@ entries:
         url: /admin/system-monitor/cluster-manager.html
         output: web,admBk
       - title: Alerts and Events board
-        url: /admin/system-monitor/cluster-manager.html
+        url: /admin/system-monitor/alerts-events.html
         output: web,admBk
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
@@ -1176,6 +1176,9 @@ entries:
       output: web,refGd
     - title: Alert codes reference
       url: /reference/alerts-reference.html
+      output: web,refGd
+    - title: User action codes reference
+      url: /reference/action-codes.html
       output: web,refGd
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html

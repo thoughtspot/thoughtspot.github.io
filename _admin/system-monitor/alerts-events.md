@@ -2,7 +2,7 @@
 title: [Alerts and Events board]
 keywords: alerts,events,logs
 tags: [indexing,logs]
-last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,9 +13,9 @@ trail of cluster configuration changes.
  ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the **System Health** center: Events and Alerts")
 
 
- ## Cluster Details
+## Alerts
 
- The fields on this visualization has the following meaning:
+ The fields on this answer have the following meaning:
 
   <table>
   <colgroup>
@@ -27,39 +27,41 @@ trail of cluster configuration changes.
         <th>Description</th>
      </tr>
      <tr>
-        <th>Cluster Name</th>
+        <th>Time</th>
         <td>
-           The name of the cluster defined at installation time.
+           When the alert was sent.
         </td>
      </tr>
      <tr>
-        <td>Cluster ID</td>
+        <th>Type</th>
         <td>
-           The ID of the cluster set at installation time.
+           The ID of the event.
         </td>
      </tr>
      <tr>
-        <td>Last Update Time</td>
+        <th>Message</th>
         <td>
-           Last time the cluster was updated.
-        </td>
-     </tr>
-     <tr>
-        <td>Release</td>
-        <td>
-           Version of the current release.
-        </td>
-     </tr>
-     <tr>
-        <td>Zookeeper Servers</td>
-        <td>
-           IP addresses of the Zookeeper servers.
-        </td>
-     </tr>
-     <tr>
-        <td>HDFS Name Nodes</td>
-        <td>
-           Control nodes for Hadoop Distributed File System (HDFS).
+           The text of the alert message.
         </td>
      </tr>
     </table>
+
+For a full reference of possible alerts, see the [Alert code reference]({{ site.baseurl
+}}/reference/alerts-reference.html#).
+
+## Configuration Events
+
+This system answer displays recent events that changed the configuration of the
+system. This list can contain the same types of information available on the **Admin
+>System Health > Overview** page. This answer displays the **Time**, the
+**User** that performed the action, and a **Summary** of the action.  
+
+## Notification events
+
+This answer displays notifications of data loads. The display the **Time**, the
+**User** that performed the action, and a **Summary** of the action.
+Notifications are kept for 90 days before being discarded.
+
+## Related information
+
+[Alert code reference]({{ site.baseurl }}/reference/alerts-reference.html#)

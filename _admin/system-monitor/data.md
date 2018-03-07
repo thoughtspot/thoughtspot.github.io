@@ -1,5 +1,5 @@
 ---
-title: [Data page]
+title: [Data board]
 keywords: data,system,monitor
 tags: [indexing]
 toc: false
