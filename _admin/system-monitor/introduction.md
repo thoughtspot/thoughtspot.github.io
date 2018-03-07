@@ -20,7 +20,22 @@ Center by clicking on the **Admin** icon and then clicking **System Health**.
 ![]({{ site.baseurl }}/images/control_center_overview.png "System Health Center: Overview")
 
 The System Health center can only be viewed by administrative users.
+Administrative users can present to others much of the information that displays
+in the System Health center.
 
+Administrators can also create their own, custom boards that reflect system data
+in ways that is meaningful to specific departments or groups. For more
+information, see the documentation on a specific system board or system
+worksheet.
+
+* [Health Overview board]({{ site.baseurl }}/admin/system-monitor/overview.html)
+* [Data board]({{ site.baseurl }}/admin/system-monitor/data.html)
+* [Cluster Manager board]({{ site.baseurl }}/admin/system-monitor/cluster-manager.html)
+* [Alerts and Events board]({{ site.baseurl }}/admin/system-monitor/cluster-manager.html)
+* [System worksheets]({{ site.baseurl }}/admin/system-monitor/worksheets.html)
+* [System pinboards]({{ site.baseurl }}/admin/system-monitor/monitor-pinboards.html)
+
+Much of the data presented by these boards are also available through [`tscli` commands]({{ site.baseurl }}/reference/tscli-command-ref.html).
 
 ## Log files
 
@@ -32,6 +47,9 @@ each subsystem. The individual log directories are:
 - `/export/logs/oreo`
 - `/export/logs/hadoop`
 - `/export/logs/zookeeper`
+
+There are [several topics that touch on log files]({{ site.baseurl
+}}/tags/tag_logs.html) throughout the documentation.
 
 ## System monitoring notifications
 

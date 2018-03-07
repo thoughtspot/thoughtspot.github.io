@@ -69,7 +69,7 @@ column header. To make changes in the model file:
 
     If you are using Excel, you may see a warning message.
 
-         ![]({{ site.baseurl }}/images/warning_open_model_excel.png)
+     ![]({{ site.baseurl }}/images/warning_open_model_excel.png)
 
     Click `YES` to proceed.
 

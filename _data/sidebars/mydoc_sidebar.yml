@@ -728,9 +728,6 @@ entries:
       - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
-      - title: Custom monitor boards
-        url: /admin/system-monitor/monitor-pinboards.html
-        output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
       levelTwoItems:
@@ -1177,10 +1174,10 @@ entries:
     - title: Worksheet formula reference
       url: /reference/formula-reference.html
       output: web,refGd
-    - title: Alerts reference
+    - title: Alert codes reference
       url: /reference/alerts-reference.html
       output: web,refGd
-    - title: Error code reference
+    - title: Error codes reference
       url: /error-codes/error-codes-reference.html
       output: web,refGd
   - sectiontitle: About this Release
