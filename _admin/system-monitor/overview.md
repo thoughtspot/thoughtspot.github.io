@@ -299,7 +299,7 @@ system. This panel displays configuration events related to:
         <th>
         Cluster Configuration
         </th>
-        <td>Reports configuration actions from the `tscli` command. </td>
+        <td>Reports configuration actions from the `tscli` and `tql` commands. </td>
        </tr>
        <tr>
         <th>
@@ -317,7 +317,7 @@ system. This panel displays configuration events related to:
     </table>
 
 For a more detailed list, including the user that issued a command, you can use
-the `tscli event list` command. Administrators can ssh into the cluster and
+the `tscli event list` command. Administrators can `ssh` into the cluster and
 specify a time period or even a type of command to include.
 
 ```

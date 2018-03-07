@@ -1,5 +1,5 @@
 ---
-title: [Monitoring Tools]
+title: [Introduction to monitoring]
 keywords: monitor,logs,health,node,cluster,performance
 tags: [indexing]
 last_updated: tbd
