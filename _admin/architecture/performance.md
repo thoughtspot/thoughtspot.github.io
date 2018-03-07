@@ -19,6 +19,8 @@ data per node. Ways to reduce the total amount of data and rows of data include
 limiting the amount of data (number of years, etc.) or combining long, but
 narrow tables together.
 
+The performance information related on this page apply to a typical 1TB 4 node cluster.
+
 ## Data Boundaries
 
 Total rows in a result of a join can also have an impact. In general, it is

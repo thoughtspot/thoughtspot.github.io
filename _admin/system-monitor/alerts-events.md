@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 The **Alerts and Events** section shows notifications, alerts, and an audit
 trail of cluster configuration changes.
 
- ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the System Health Center: Events and Alerts")
+ ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the **System Health** center: Events and Alerts")
 
 
  ## Cluster Details
