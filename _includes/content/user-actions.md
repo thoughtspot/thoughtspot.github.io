@@ -42,7 +42,7 @@
       </tr>
       <tr>
          <td><code class="highlighter-rouge">data_show_underlying_row</code></td>
-         <td>Request to show underlying data for a data row/s.</td>
+         <td>Request to show underlying data for a data row(s).</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">data_export</code></td>
@@ -54,19 +54,19 @@
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_aggregated_worksheet_save</code></td>
-         <td>User updates aggregated worksheet. In this workflow client updates the ACContext with new GUIDs using sage and then sends answer call to create a corresponding answer to save as worksheet.</td>
+         <td>User updates aggregated worksheet. </td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_add_new_filter</code></td>
-         <td>User wants to add a filter using the UI. To populate the widget client will make an  intermediate call to generate answer with empty filter.</td>
+         <td>User adds a filter using the UI.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">data_show_underlying_viz</code></td>
-         <td>Request to show underlying data for a data row/s.</td>
+         <td>Request to show underlying data for a data row(s).</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_view</code></td>
-         <td>User opens an existing saved answer.</td>
+         <td>User opens an existing, saved answer.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_viz_context_view</code></td>

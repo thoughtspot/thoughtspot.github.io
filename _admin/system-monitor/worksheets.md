@@ -6,19 +6,17 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The monitoring information in **System Health** query several underlying
-worksheets. They are based on worksheets, which administrators can view, but not
-modify. The underlying tables are protected system tables that cannot be
-accessed directly. However, you can create new monitoring reports from the
-worksheets.
+Most of the monitoring information in **System Health** are sourced from system
+worksheet which administrators can view, but not modify. The underlying tables
+are protected system tables that cannot be accessed directly. However,
+administrators can create new, custom monitoring reports from the worksheets.
 
 ## List the system worksheets
 
-To list these system worksheets:
+To list the system worksheets:
 
-1. Go to the **Data** tab.
-2. Choose **All** and **All types**.
-3. Enter `TS ` (don't forget the space) in the search field.
+1. Go to the **Data** tab. 2. Choose **All** and **All types**. 3. Enter `TS `
+(don't forget the space) in the search field.
 
    ![]({{ site.baseurl }}/images/su-worksheets.png)
 
@@ -76,7 +74,7 @@ To list these system worksheets:
    <tr>
       <td><code class="highlighter-rouge">TS: Service Resources</code></td>
       <td>
-         Contains data related to cluster nodes including pagefaults, memory usage, memory fail and more.
+         Contains data related to cluster nodes including page faults, memory usage, memory failures, and more.
       </td>
    </tr>
    <tr>

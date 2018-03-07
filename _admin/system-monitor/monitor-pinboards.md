@@ -6,21 +6,16 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are several system monitoring pinboards in ThoughtSpot that include
-information about the system status and resource usage. The information in these
-pinboard is updated hourly from an internal database that collects monitoring
+There are several system monitoring pinboards in ThoughtSpot that provide
+answers for system status and resource usage questions. The information in these
+pinboards are updated hourly from internal data sources that collect monitoring
 statistics.
 
  ![]({{ site.baseurl }}/images/resource_usage_pinboard.png "Example of a system monitoring pinboard")
 
- The monitoring pinboards can only be viewed by users with the administrator
- privilege. They are based on worksheets, which administrators can view, but not
- modify. However, you can create new monitoring reports from the
- worksheets.
-
- The monitoring information in **System Health** query several underlying
- worksheets. Administrators can view these worksheets and query them, but they
- cannot edit them.
+ Only users with administrative privilege can view the monitoring pinboards.
+ They are based on worksheets, which administrators can view, but not modify.
+ However, you can create new monitoring pinboards from the worksheets.
 
 ## List system pinboards
 

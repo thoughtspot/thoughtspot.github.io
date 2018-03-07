@@ -11,7 +11,7 @@ The **Cluster Manager** section show detailed information about a cluster
 including latency over time, snapshot status, installed release, node functions,
 and logs.
 
- ![]({{ site.baseurl }}/images/control_center_cluster_mgmt.png "Partial view of the System Health Center: Cluster Manager")
+ ![]({{ site.baseurl }}/images/control_center_cluster_mgmt.png "Partial view of the **System Health** center: Cluster Manager")
 
 Only the **Average Latency Last 2 Weeks (sec)** panel contains a standard
 ThoughtSpot visualization. The other visualizations rely on internal queries
@@ -37,31 +37,31 @@ The fields on this visualization has the following meaning:
        </td>
     </tr>
     <tr>
-       <td>Cluster ID</td>
+       <th>Cluster ID</th>
        <td>
           The ID of the cluster set at installation time.
        </td>
     </tr>
     <tr>
-       <td>Last Update Time</td>
+       <th>Last Update Time</th>
        <td>
           Last time the cluster was updated.
        </td>
     </tr>
     <tr>
-       <td>Release</td>
+       <th>Release</th>
        <td>
           Version of the current release.
        </td>
     </tr>
     <tr>
-       <td>Zookeeper Servers</td>
+       <th>Zookeeper Servers</th>
        <td>
           IP addresses of the Zookeeper servers.
        </td>
     </tr>
     <tr>
-       <td>HDFS Name Nodes</td>
+       <th>HDFS Name Nodes</th>
        <td>
           Control nodes for Hadoop Distributed File System (HDFS).
        </td>
@@ -88,13 +88,13 @@ The fields on this visualization has the following meaning:
       </td>
    </tr>
    <tr>
-      <td>Type</td>
+      <th>Type</th>
       <td>
          Type of action.
       </td>
    </tr>
    <tr>
-      <td>Release</td>
+      <th>Release</th>
       <td>
         Identifies the full release number.
       </td>
@@ -120,23 +120,23 @@ The fields on this visualization has the following meaning:
    <tr>
       <th>Time</th>
       <td>
-         A timestamp indicating when a snapshot/backup happened occurred.
+         A timestamp indicating when a snapshot or backup happened occurred.
       </td>
    </tr>
    <tr>
-      <td>Name</td>
+      <th>Name</th>
       <td>
          Name of the snapshot file. These files are stored in the `/usr/local/scaligent/backup` directory on your cluster.
       </td>
    </tr>
    <tr>
-      <td>Reason</td>
+      <th>Reason</th>
       <td>
         Identifies the reason the snapshot/backup was created. You should see several period snapshots if your cluster is configured properly. You may also see evidence here of manual backups. For example, you should be sure your cluster is backed up before major events such as upgrades. Email <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> if you don't see evidence your cluster is periodically creating snapshots.
       </td>
    </tr>
    <tr>
-      <td>Size</td>
+      <th>Size</th>
       <td>
         Size of the backup in gigabytes.
       </td>

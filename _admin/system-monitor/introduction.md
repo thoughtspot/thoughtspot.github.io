@@ -6,27 +6,27 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-System monitoring tools in ThoughtSpot includes a **Admin > System Health** page
-as well as system log files. Additionally, ThoughtSpot provides several
-worksheets from which were created out-of-the-box system monitoring pinboards.
-You can also create your own custom pinboards from these same worksheets.  
+System monitoring tools in ThoughtSpot include a **Admin > System Health** page
+and system logs. Additionally, ThoughtSpot provides several worksheets and
+out-of-the-box system monitoring pinboards. From these worksheets, you can
+create your own custom visualizations and pinboards.  This page introduces these
+features and directs you towards more detailed information.
 
-## System Health Center
+## **System Health** center
 
-The ThoughtSpot application includes a System Health Center, for easy monitoring
-of usage and cluster health, including alerts. You can view the System Health
-Center by clicking on the **Admin** icon and then clicking **System Health**.
+The ThoughtSpot application includes a **System Health** center, for easy monitoring
+of usage, alerts, events and general cluster health. You view the System Health
+Center by choosing the **Admin** icon and then selecting **System Health**.
 
-![]({{ site.baseurl }}/images/control_center_overview.png "System Health Center: Overview")
+![]({{ site.baseurl }}/images/control_center_overview.png "**System Health** center: Overview")
 
-The System Health center can only be viewed by administrative users.
-Administrative users can present to others much of the information that displays
-in the System Health center.
+Only users with administrative privileges can view the **System Health** center.
+However, administrative users can present to others the information that
+displays in the **System Health** center.
 
 Administrators can also create their own, custom boards that reflect system data
-in ways that is meaningful to specific departments or groups. For more
-information, see the documentation on a specific system board or system
-worksheet.
+in ways that are meaningful to specific departments or groups. For more
+information, see the following documentation:
 
 * [Health Overview board]({{ site.baseurl }}/admin/system-monitor/overview.html)
 * [Data board]({{ site.baseurl }}/admin/system-monitor/data.html)
@@ -41,14 +41,14 @@ Much of the data presented by these boards are also available through [`tscli` c
 
 Many of the administration commands output logging information to log files. The
 logs get written into the fixed directory `/export/logs`, with a sub-directory for
-each subsystem. The individual log directories are:
+each subsystem. The individual log directories are the following:
 
 - `/export/logs/orion`
 - `/export/logs/oreo`
 - `/export/logs/hadoop`
 - `/export/logs/zookeeper`
 
-There are [several topics that touch on log files]({{ site.baseurl
+You can also view [additional topics that also touch on log files]({{ site.baseurl
 }}/tags/tag_logs.html) throughout the documentation.
 
 ## System monitoring notifications

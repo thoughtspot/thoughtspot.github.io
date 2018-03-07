@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 The **Data** page shows all the stored tables with details on the last update
 time, time taken for auto-indexing, number of rows, and so forth.
 
- ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the System Health Center: Data")
+ ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the **System Health** center: Data")
 
  You can click on a column name to sort by table name. This table information is
  based on an underlying system data, you can present it or copy the link, but

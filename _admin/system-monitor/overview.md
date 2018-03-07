@@ -6,27 +6,27 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The **Overview** tab summarizes basic information about how your cluster and who
-uses it. Choose **Admin > System Health > Overview** to see this tab. The tab
-is a pinboard with information about the system status and resource usage.
+The **Overview** pinboard summarizes essential information about your cluster
+and its users. Choose **Admin > System Health > Overview** to see this pinboard.
 
 ## Understand system boards and pinboards
 
-The **Overview** page includes system charts and standard ThoughtSpot <a
+The **Overview** page includes system panels and standard ThoughtSpot <a
 href="#" data-toggle="tooltip"
-data-original-title='{{site.data.glossary.pinboard}}'>answers</a>. The system
-charts contain information that are system generated in real time and use
-internal system data. The other answers rely on underlying system worksheets
-which administrators can view. The information in these answers update hourly
-from internal tables that collect monitoring statistics.  
+data-original-title='{{site.data.glossary.answer}}'>answers</a>.
+The system charts are  generated in real time and relies on internal system
+data. The answers rely on underlying system worksheets which are
+available to ThoughtSpot administrators. The information in these answers
+update hourly from internal tables that collect monitoring statistics.  
 
-Each answer has a menu. You can present or copy the links to the system charts.
-The answers have the standard ThoughtSpot answer menu. You can use the menu to
-do additional actions such as download the panel's answer or present information
+Each answers has a menu. You can present or copy the links to the system charts.
+The answers have a subset of the ThoughtSpot answer menu. You can use the menu
+to do additional actions such as download the answer or present information
 about your ThoughtSpot cluster. You cannot, however, change the underlying
 query.
 
-To find out how a particular answer result is calculated, do the following:
+To find out how a particular answer was created, do the
+following:
 
 1. Select **Edit** from the panel menu.
 
@@ -42,14 +42,14 @@ To find out how a particular answer result is calculated, do the following:
 
 ## Cluster Summary
 
-This has basic information about your cluster.  The **NUMBER OF NODES** is the
-number of installed nodes. This doesn't reflect the active nodes which may be
-more or less.
+This system panel contains basic information about your cluster.  The **NUMBER OF
+NODES** is the number of installed nodes. This doesn't reflect the active nodes
+which may be more or less.
 
-This summary includes the import **LAST SNAPSHOT TIME** which shows that regular
+This summary includes the **LAST SNAPSHOT TIME** it reflects whether regular
 snapshots of your cluster are collected. This value should update regularly in
-real time. If you do not see it change, you should check your cluster snapshot
-policy.  
+real time. If you do not see it change or empty, you should check your cluster
+snapshot policy using the `tscli` command:  
 
 ```
 $ tscli snapshot-policy show
@@ -79,9 +79,9 @@ schedule {
 enabled: false
 ```
 
-You can see this policy is disabled, which is a problem. For your cluster safety
-you should enable the default snapshot policy. When you show or enable the
-snapshot policy, you'll see your actions reflected in the **Configuration
+You can see this policy is disabled, which is a problem. Production clusters
+should enable the default snapshot policy. When you show or enable the snapshot
+policy, you'll see your `tscli` command reflected in the **Configuration
 Events** panel on this same page.
 
 ## Relational Data Cache
@@ -91,7 +91,7 @@ Worksheet data is not included.
 
 | Value  |  Description |
 |---|---|
-|  **TABLES LOADED** | Number currently loaded.  |
+|  **TABLES LOADED** | Number of currently loaded tables.  |
 |  **TABLES BEING UPDATED** | Number of table loads in-progress. |
 |  **NEW TABLES BEING LOADED** | Number of tables being loaded for the first time.  |
 |  **ROWS** | Number of rows combined across all tables in ThoughtSpot.  |
@@ -109,8 +109,9 @@ Worksheet data is not included.
 
 ## Critical Alerts
 
-Displays critical and warning alerts. This includes when an alert was generated and
-from which service and machine. Administrators can get a refined list by issuing a `tscli alert list` on the appliance:
+Displays critical and warning alerts. This includes when an alert was generated
+and from which service and machine. Administrators can get a custom report by
+issuing a `tscli alert list` on the appliance:
 
 ```
 tscli alert list --since 4w
@@ -131,7 +132,9 @@ The critical alerts you can encounter in this display are the following:
  {% endunless %}
 {% endfor %}
 
-The possible alert types are `CRITICAL`, `WARNING`, `ERROR`, and `INFO` . To view a list of the possible alerts, see the [Alert code reference]({{ site.baseurl }}/reference/alerts-reference.html#).
+The possible alert types are `CRITICAL`, `WARNING`, `ERROR`, and `INFO`. For a
+full reference, see the [Alert code reference]({{ site.baseurl
+}}/reference/alerts-reference.html#).
 
 ## Space Utilization
 
@@ -141,11 +144,12 @@ and estimated used capacity over time.
 
  ![]({{ site.baseurl }}/images/memory_usage_chart.png "Space Utilization chart example")
 
-The x-axis is by time. It allows you to zoom in and see daily or hourly data.
-The y-axis measures the size in GB. So in the **Space Utilization** chart above, the
-green line shows the amount of capacity in use in the system, while the red line
-shows the total capacity. An increase in the red line at the end of a time period
-indicates the addition of extra hardware, resulting in increased capacity.
+The x-axis is by time and the y-axis measures the size in GB. You can zoom in
+and see daily or hourly utilization data. So, in the **Space Utilization** chart
+above, the green line shows the amount of capacity in use in the system, while
+the red line shows the total capacity. An increase in the red line at the end of
+a time period indicates the addition of extra hardware, resulting in increased
+capacity.
 
 The query for this answer is the following:
 
@@ -185,22 +189,22 @@ This query relies on the `TS: BI server` worksheet.
 ## Monthly Ad-hoc Searches
 
 Number of ad-hoc searches (query) made per month. An ad-hoc query is any change
-in a search that results in a new answer (result).  A search result from a
+in a search that builds in a new answer (result).  A search result from a
 change in the search bar such as adding a new token like a formula or keyword. A
 search can also happen through SpotIQ or through another UI/API interaction.
 
-For example,  scenarios considered as ad-hoc search (query):
+ThoughtSpot considers all of the following as ad-hoc searches (queries):
 
 * User edits tokens in the search bar.
 * User opens an existing saved answer and makes changes to tokens in the search bar.
-* User opens an existing saved pinboard, edits a context viz and makes change to the search viz search tokens.
+* User opens an existing saved pinboard, edits a context viz, and makes change to the search viz search tokens.
 * Searches initiated by a `tspublic` API call for data with runtime filters
 
 It is not considered a search (query) if a user opens an existing saved
 aggregated worksheet and makes changes to tokens related to its underlying
 query.
 
-The query for this pinboard is the following:
+The query for this answer is the following:
 
 ```
 ad-hoc search
@@ -209,7 +213,7 @@ monthly
 last 4 months this month
 ```
 
-This visualization relies on data from the `TS: BI Server` worksheet.
+This answer relies on data from the `TS: BI Server` worksheet.
 
 ## Monthly Pinboard Views
 
@@ -282,7 +286,7 @@ The query uses the `TS: BI Server` data source.
 
 ## Configuration Events
 
-This system visualization displays recent events that changed the configuration of the
+This system answer displays recent events that changed the configuration of the
 system. This panel displays configuration events related to:
 
 <table>
