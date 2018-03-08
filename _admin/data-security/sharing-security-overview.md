@@ -53,7 +53,7 @@ can share with groups marked as **NOT SHAREABLE**. Members of a group with
 **Can share with all users** privilege can also share with groups marked as
 **NOT SHAREABLE**.
 
-User in groups marked **NOT SHAREABLE** cannot share objects among themselves.
+Users in groups marked **NOT SHAREABLE** cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.
