@@ -1,12 +1,33 @@
-Where can I find the version of ThoughtSpot I am using?
+---
+title: ["Frequently asked questions"]
+keywords: help, center, faq
+toc: false
+last_updated: tbd
+sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
+---
+
+### Where can I find the version of ThoughtSpot I am using?
+
+Users with administrative privileges can see this displayed on the **Admin >
+System Health > Overview** page.
 
 ### I'm not seeing certain columns/values in the drop-down, why?
-It could be a few things
-Index has not built with the latest data, or something is causing it to be dropped. Look at the varz page to see if the column is there and if its index_type not DONT_INDEX.
-It could be a ranking issue. Check index priority for the column on sage varz page.
+
+It could be the index has not built with the latest data or something
+is causing the column to be dropped.
+
+* Verify the the column is available using the **Data** page.
+* View the table columns and check the **INDEX TYPE** value. If it is set to `DONT_INDEX`, change it.
+* Check the column's  **INDEX PRIORITY** &emdash. make sure it is `1`.
+
+To learn more about modeling data see [modeling data]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html#) in this documentation.
+
 
 ### How do I track progress of current index build?
-Other than tailing info logs, there is nothing much we can do rightnow. We will add add something to the varz page about number of columns processed vs total number of columns.
+
+If you are an administrator, you can use the **Admin > System Health >
+Overview** page to see the number of tables currently being indexed. You can also review the
 
 ### How do I display the features used in my cluster configuration?
 
@@ -30,3 +51,22 @@ Other than tailing info logs, there is nothing much we can do rightnow. We will 
     | Fileserver                      | Disabled |               |
     +---------------------------------+----------+---------------+
     ```
+
+### Is it possible to create a max(date) filed and set it to filter?
+
+If you have a date field in my set of data and want to return the most recent set of
+data based on specific date. To do this:
+
+1. Create a formula called `Max Date`, for example:
+
+    ```
+    date = group_max ( date_to_filter_by )
+    ```
+
+2. In the search bar, filter your dates by this formula for example:
+
+    ```
+    max date = true
+    ```
+
+    This returns only those fields that pass the filter.

@@ -97,6 +97,8 @@ collections:
     output: true
   tooltips:
     output: true
+  faq:
+    output: true
 
 defaults:
   - values:
