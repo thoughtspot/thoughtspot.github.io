@@ -1183,6 +1183,9 @@ entries:
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html
       output: web,refGd
+    - title: Frequently asked questions
+      url: /faq/faq.html
+      output: web,refGd
   - sectiontitle: About this Release
     output: web
     sectionitems:
