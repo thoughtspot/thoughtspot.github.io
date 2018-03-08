@@ -7,9 +7,11 @@ permalink: /:collection/:path.html
 ---
 Congratulations on purchasing ThoughtSpot. You can install a ThoughtSpot cluster
 on a hardware appliance or on a hosted AWS or VMWare appliance. Your ThoughtSpot
-installation cannot mix types, your installation must be homogenous, so, for
-example either hardware or VMWare nodes. This guide instructs you how to prepare
-each of the following:
+installation cannot mix node types, your installation must be homogenous, so,
+for example either hardware or VMWare nodes. You can have an AWS cluster for
+development and use an appliance for production.
+
+This guide instructs you how to prepare each of the following:
 
 - [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
 - [AWS EC2 node]({{ site.baseurl }}/appliance/aws/about-aws.html)
