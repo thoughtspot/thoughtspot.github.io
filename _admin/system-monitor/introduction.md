@@ -6,11 +6,9 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-System monitoring tools in ThoughtSpot include a **Admin > System Health** page
-and system logs. Additionally, ThoughtSpot provides several worksheets and
+System monitoring tools in ThoughtSpot include an **Admin > System Health** page and system logs. Additionally, ThoughtSpot provides several worksheets and
 out-of-the-box system monitoring pinboards. From these worksheets, you can
-create your own custom visualizations and pinboards.  This page introduces these
-features and directs you towards more detailed information.
+create your own custom visualizations and pinboards.  This page introduces these features and directs you towards more detailed information.
 
 ## **System Health** center
 
@@ -35,7 +33,7 @@ information, see the following documentation:
 * [System worksheets]({{ site.baseurl }}/admin/system-monitor/worksheets.html)
 * [System pinboards]({{ site.baseurl }}/admin/system-monitor/monitor-pinboards.html)
 
-Much of the data presented by these boards are also available through [`tscli` commands]({{ site.baseurl }}/reference/tscli-command-ref.html).
+Much of the data presented by these boards is also available through [`tscli` commands]({{ site.baseurl }}/reference/tscli-command-ref.html).
 
 ## Log files
 
