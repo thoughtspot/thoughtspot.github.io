@@ -1,6 +1,6 @@
 ---
 title: [About grouping formulas]
-keywords: tbd
+keywords: group,aggregation
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,13 +17,64 @@ Only the measure value is required. If you supply both a measure and an attribut
 
 The grouping formulas are the following:
 
-|Function|Description|Examples|
-|--------|-----------|--------|
-|group_average|Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).| -   `group_average (revenue, customer region)`|
-|group_count|Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).|  `group_count (revenue, customer region)`|
-|group_max|Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).|  `group_max (revenue, customer region)`|
-|group_min|Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).|  `group_min (revenue, customer region)`|
-|group_stddev|Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).|  `group_stddev (revenue, customer region)`|
-|group_sum|Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).|  `group_sum (revenue, customer region)`|
-|group_unique_count|Takes a column name and one or more attributes. Returns the number of unique values in a column, grouped by the attribute(s).|  `group_unique_count ( product, supplier)`|
-|group_variance|Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).|  `group_variance (revenue, customer region)`|
+
+<table>
+<colgroup>
+   <col style="width:25%" />
+   <col style="width:75%" />
+</colgroup>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><code>group_average</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).</p>
+    <p><code>group_count (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_count</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the count of the measure grouped by the attribute(s).</p>
+    <p><code>group_count (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_max</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the maximum of the measure grouped by the attribute(s).</p>
+    <p><code>group_max (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_min</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the minimum of the measure grouped by the attribute(s).</p>
+    <p><code>group_min (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_stddev</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the standard deviation of the measure grouped by the attribute(s).</p>
+    <p><code>group_stddev (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_sum</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the sum of the measure grouped by the attribute(s).</p>
+    <p><code>group_sum (revenue, customer region)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_unique_count</code></td>
+    <td><p>Takes a column name and one or more attributes. Returns the number of unique values in a column, grouped by the attribute(s).</p>
+    <p><code>group_unique_count ( product, supplier)</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><code>group_variance</code></td>
+    <td><p>Takes a measure and one or more attributes. Returns the variance of the measure grouped by the attribute(s).</p>
+    <p><code>group_variance (revenue, customer region)</code></p>
+    </td>
+  </tr>
+</table>

@@ -6,11 +6,22 @@ summary: "Style Customization allows you to change the overall style of your Tho
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Using style customization you can create a uniform ThoughtSpot experience that matches with your company's look and feel. To re-brand the interface, you can use the style customization option found on the Admin section in the ThoughtSpot web application. It lets you change the logo, application background color, chart color palettes, and footer text. For help with chart and table visualization fonts, contact ThoughtSpot support.
+Using style customization you can create a uniform ThoughtSpot experience that
+matches with your company's look and feel. To re-brand the interface, you can
+use the style customization option found on the Admin section in the ThoughtSpot
+web application. It lets you change the logo, application background color,
+chart color palettes, and footer text. For help with chart and table
+visualization fonts, contact ThoughtSpot support.
 
-This is especially useful if you're using the ThoughtSpot APIs for embedding visualizations from ThoughtSpot in your own web portal or application. You can make the visualizations match the look and feel of the portal or application in which they are embedded. For more information on using the APIs, see the ThoughtSpot Application Integration Guide.
+This is especially useful if you're using the ThoughtSpot APIs for embedding
+visualizations from ThoughtSpot in your own web portal or application. You can
+make the visualizations match the look and feel of the portal or application in
+which they are embedded. For more information on using the APIs, see the
+ThoughtSpot Application Integration Guide.
 
-Style customization is a premium feature, that can be enabled at additional cost. To enable style customization, contact ThoughtSpot Support. The ThoughtSpot logo in the middle of the page is automatically removed when Style Customization is enabled.
+To enable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
+in the middle of the page is automatically removed when Style Customization is
+enabled.
 
 
 ## Change style customization

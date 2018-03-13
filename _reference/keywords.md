@@ -29,6 +29,10 @@ You can use keywords when asking a question to help define your search. This ref
 
 {% include content/keywords-filter.md %}
 
+## Comparative
+
+{% include content/keywords-comparative.md %}
+
 ## Filter
 
 {% include content/keywords-filter.md %}

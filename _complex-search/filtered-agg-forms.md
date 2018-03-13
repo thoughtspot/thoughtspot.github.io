@@ -8,16 +8,36 @@ summary: "You can create a filtered aggregation in the search bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In comparative analysis you compare two values against each in the **Search**
-bar. Typically, in these cases, one measure is a _filtered measure_, for
-example, `revenue region = west` is a filtered measure. Filtered measures allow
-you to filter as part of your query.
 
 Filters are useful for queries where the results should reflect a new, filtered
-vale. region. In the `revenue region = west` example, you filter the region
-column to values in the `west` only and compare it to total revenue.
+value. On this page you learn about comparative versus derivative queries, and
+the functions, and the keywords that you can use with them.
 
-## About filter functions
+## Comparative and derivative filters
+
+In comparative analysis you compare two segments of some whole against each in
+the **Search** bar. For example, a company that has locations across the United
+States, may want to compare total revenue in the Wes to the East segment. In a
+comparative filter, one of the segments you are comparing is filtered.
+
+An example of a comparative filter is comparing west revenue with total revenue.
+In these cases, one measure is a _filtered measure_, for example, `revenue
+region = west` is a filtered measure.
+
+Derivative comparison is when you want to add a column to your results which is
+derived from other columns in the same results. For example, you search for
+revenue and cost and want to calculate profit in your result.
+
+Some examples of comparisons in the real world are:
+
+* revenue of this_soap versus all_soaps (Comparative filter)
+* tax as a percentage of revenue (derivative)
+* count revenue as a percentage of state revenue (comparative with a derivative)
+
+If you plan to create these types of filters, you need to understand how to
+create filter functions.
+
+## Use filter functions
 
 Filter functions take two arguments, the column ( measure or attribute) to
 aggregate and the filter condition:
@@ -36,6 +56,8 @@ ThoughtSpot functional library will include the following functions:
 * `min_if`
 * `stddev_if`
 * `variance_if`
+* `vs`
+* `all`
 
 The table below illustrates some examples of these functions in use:
 
@@ -58,9 +80,14 @@ The table below illustrates some examples of these functions in use:
   </tr>
 </table>
 
-A condition can have multiple filters like `region = west OR region = east`. If
+A condition can have multiple filters like `sales region = west OR region = east`. You
+can also just type a value such as `east` as in `sales east` as a filter. If
 there are no rows matching the criteria, the condition returns a 0 (zero). A 0
 can result in situations where there are logic errors in the formula, so be sure
 to double-check your work.
 
 ![]({{ site.baseurl }}/images/filtered-agg-forms.png "Filter Aggregation")
+
+Once you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
+
+## Using the vs and all keywords
