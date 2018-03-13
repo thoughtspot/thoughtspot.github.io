@@ -13,17 +13,13 @@
       <tr>
          <td>near</td>
          <td>
-
             <code>revenue store name county near san francisco</code>
-
          </td>
       </tr>
       <tr>
          <td>near... within <i>n</i> miles|km|meters</td>
          <td>
-
   <code>revenue store name county near alameda within 50 miles</code>
-
          </td>
       </tr>
       <tr>
