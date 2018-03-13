@@ -10,11 +10,11 @@
       </tr>
    </thead>
    <tr>
-      <th>help</th>
+      <td>help</td>
       <td><code>help keywords</code></td>
    </tr>
    <tr>
-      <th>how to</th>
+      <td>how to</td>
       <td><code>how to search</code></td>
    </tr>
 </table>

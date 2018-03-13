@@ -1,7 +1,7 @@
 <table>
    <colgroup>
       <col style="width:25%" />
-      <col style="width:75%" />
+      <col style="width:50%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
@@ -9,14 +9,62 @@
          <th class="entry cellrowborder">Examples</th>
       </tr>
    </thead>
-   <tr>
-      <td>vs, versus</td>
-      <td>
-<code>revenue east vs west</code>
-    </td>
-   </tr>
-   <tr>
-      <td>all</td>
-      <td><code>all</code> </td>
-   </tr>
+   <tbody class="tbody">
+      <tr>
+         <td>all</td>
+         <td><code>all</code> </td>
+      </tr>
+      <tr>
+         <td>between... and</td>
+         <td>
+            <code>revenue between 0 and 1000</code>
+         </td>
+      </tr>
+      <tr>
+         <td>vs, versus</td>
+         <td>
+            <code>revenue east vs west</code>
+         </td>
+      </tr>
+      <tr>
+         <td>&gt;</td>
+         <td>
+            <code>sum sale amount by visitor by product for last year sale amount &gt;
+            2000</code>
+         </td>
+      </tr>
+      <tr>
+         <td>&lt;</td>
+         <td>
+            <code>unique count visitor by product by store for sale amount &lt; 20</code>
+         </td>
+      </tr>
+      <tr>
+         <td>&gt;=</td>
+         <td>
+            <code>count calls by employee lastname &gt;= m</code>
+         </td>
+      </tr>
+      <tr>
+         <td>&lt;=</td>
+         <td>
+            <code>count shipments by city latitude &lt;= 0</code>
+         </td>
+      </tr>
+      <tr>
+         <td>=</td>
+         <td>
+
+<code>unique count visitor by store purchased products = 3 for last 5
+days</code>
+
+         </td>
+      </tr>
+      <tr>
+         <td>!=</td>
+         <td>
+            <code>sum sale amount region != canada region != mexico</code>
+         </td>
+      </tr>
+   </tbody>
 </table>

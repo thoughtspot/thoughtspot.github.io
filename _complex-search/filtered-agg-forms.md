@@ -91,3 +91,5 @@ to double-check your work.
 Once you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
 
 ## Using the vs and all keywords
+
+You can use the `vs` and `all` keywords to expand the usefulness of your comparison filters.

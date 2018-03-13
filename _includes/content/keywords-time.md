@@ -1,5 +1,5 @@
 <table>
-     <colgroup>
+   <colgroup>
       <col style="width:15%" />
       <col style="width:85%" />
    </colgroup>
@@ -13,91 +13,57 @@
       <tr>
          <td>detailed</td>
          <td>
-            <ul>
-               <li>
-                  <code>ship time detailed
-                  </code>
-               </li>
-            </ul>
+            <code>ship time detailed
+            </code>
          </td>
       </tr>
       <tr>
          <td>last minute</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count homepage views last minute
-                  </code>
-               </li>
-            </ul>
+            <code>count homepage views last minute
+            </code>
          </td>
       </tr>
       <tr>
          <td>last hour</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count unique visits last hour
-                  </code>
-               </li>
-            </ul>
+            <code>count unique visits last hour
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count visitors last 30 minutes
-                  </code>
-               </li>
-            </ul>
+            <code>count visitors last 30 minutes
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count visitors last 12 hours
-                  </code>
-               </li>
-            </ul>
+            <code>count visitors last 12 hours
+            </code>
          </td>
       </tr>
       <tr>
          <td>hourly</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>visitors by page name hourly
-                  </code>
-               </li>
-            </ul>
+            <code>visitors by page name hourly
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes ago</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>sum inventory by product 10 minutes
-                  ago
-                  </code>
-               </li>
-            </ul>
+            <code>sum inventory by product 10 minutes ago
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours ago</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>sum inventory by product by store 2 hours
-                  ago
-                  </code>
-               </li>
-            </ul>
+            <code>sum inventory by product by store 2 hours ago
+            </code>
          </td>
       </tr>
    </tbody>
