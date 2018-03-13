@@ -10,7 +10,8 @@ permalink: /:collection/:path.html
 ---
 
 Filters are useful for queries where the results should reflect a new, filtered
-value.  
+value. On this page you learn about comparative versus derivative queries, and
+the functions, and the keywords that you can use with them.
 
 ## Comparative and derivative filters
 
@@ -36,7 +37,7 @@ Some examples of comparisons in the real world are:
 If you plan to create these types of filters, you need to understand how to
 create filter functions.
 
-## About filter functions
+## Use filter functions
 
 Filter functions take two arguments, the column ( measure or attribute) to
 aggregate and the filter condition:
@@ -55,6 +56,8 @@ ThoughtSpot functional library will include the following functions:
 * `min_if`
 * `stddev_if`
 * `variance_if`
+* `vs`
+* `all`
 
 The table below illustrates some examples of these functions in use:
 
@@ -77,9 +80,14 @@ The table below illustrates some examples of these functions in use:
   </tr>
 </table>
 
-A condition can have multiple filters like `region = west OR region = east`. If
+A condition can have multiple filters like `sales region = west OR region = east`. You
+can also just type a value such as `east` as in `sales east` as a filter. If
 there are no rows matching the criteria, the condition returns a 0 (zero). A 0
 can result in situations where there are logic errors in the formula, so be sure
 to double-check your work.
 
 ![]({{ site.baseurl }}/images/filtered-agg-forms.png "Filter Aggregation")
+
+Once you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
+
+## Using the vs and all keywords
