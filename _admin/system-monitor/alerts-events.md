@@ -52,8 +52,7 @@ For a full reference of possible alerts, see the [Alert code reference]({{ site.
 ## Configuration Events
 
 This system answer displays recent events that changed the configuration of the
-system. This list can contain the same types of information available on the **Admin
->System Health > Overview** page. This answer displays the **Time**, the
+system. This list can contain the same types of information available on the **Admin System Health > Overview** page. This answer displays the **Time**, the
 **User** that performed the action, and a **Summary** of the action.  
 
 ## Notification events

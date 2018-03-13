@@ -146,8 +146,7 @@ The fields on this visualization has the following meaning:
 ## Average Latency Last 2 Weeks (sec)
 
 This visualization relies on the `TS: BI Server` worksheet to display the
-average database latency over the last 15 days. Database latency how long it
-takes for a user to query data from ThoughtSpot. You can use the visualization
+average database latency over the last 15 days. The database latency measures how long it takes for a search to return data from ThoughtSpot - this does not include the time taken to send the answer back to the client, it measures internal processing time. You can use the visualization
 menu to drill down to its underlying query:
 
 ```

@@ -74,13 +74,14 @@ public class InsertData {
 
   private static final String DB_CONNECTION = "jdbc:simba://192.168.2.129:12345;
      192.168.2.249:12345,192.168.2.247:12345;
-     LoginTimeout=5;DATABASE=jdbc_example";SCHEMA=falcon_default_schema
+     LoginTimeout=5;DATABASE=jdbc_example;SCHEMA=falcon_default_schema";
 
   private static final String TABLE_NAME = "jdbc_example";
   private static final String DB_USER = "<username>";
   private static final String DB_PASSWORD = "<password>";
 
   // Assuming everything in local directory use:
+  //   javac InsertData.java
   //   java -cp .:thoughtspot_jdbc4.jar InsertData
   public static void main(String[] argv) {
 
