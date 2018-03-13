@@ -14,16 +14,17 @@ and its users. Choose **Admin > System Health > Overview** to see this pinboard.
 The **Overview** page includes system panels and standard ThoughtSpot <a
 href="#" data-toggle="tooltip"
 data-original-title='{{site.data.glossary.answer}}'>answers</a>.
-The system charts are  generated in real time and relies on internal system
+The system charts are  generated in real time and rely on internal system
 data. The answers rely on underlying system worksheets which are
-available to ThoughtSpot administrators. The information in these answers
-update hourly from internal tables that collect monitoring statistics.  
+available to ThoughtSpot administrators. The information in these worksheets
+is updated hourly from internal tables that collect monitoring statistics.  
 
-Each answers has a menu. You can present or copy the links to the system charts.
+Each answer has a menu. You can present or copy the links to the system charts.
 The answers have a subset of the ThoughtSpot answer menu. You can use the menu
 to do additional actions such as download the answer or present information
-about your ThoughtSpot cluster. You cannot, however, change the underlying
-query.
+about your ThoughtSpot cluster. Whilst you can interact with and change the search, you cannot save changes to the underlying query.
+
+You can also interact with the answers, drilling into them to explore the detail as with any other pinboard answer.
 
 To find out how a particular answer was created, do the
 following:
@@ -170,10 +171,7 @@ replication.
 
 ## Monthly Active Users
 
-Number of active users in the system over the last four months. An active user
-within a time interval is defined as a user who has logged in at least once in
-that time interval, in this case a month. Month is calculated from the current
-month.
+This chart shows the number of active users in the system over the last four months and current month. An active user is defined as a user who has logged in at least once in the defined time interval, in this case months.
 
 The query for this answer is the following:
 
@@ -188,20 +186,17 @@ This query relies on the `TS: BI server` worksheet.
 
 ## Monthly Ad-hoc Searches
 
-Number of ad-hoc searches (query) made per month. An ad-hoc query is any change
-in a search that builds in a new answer (result).  A search result from a
-change in the search bar such as adding a new token like a formula or keyword. A
-search can also happen through SpotIQ or through another UI/API interaction.
+Number of ad-hoc searches (queries) issued per month. An ad-hoc query is defined as any search or change to a search that builds a new answer (result). An ad-hoc search can also be generated through SpotIQ or another UI/API interaction.
 
 ThoughtSpot considers all of the following as ad-hoc searches (queries):
 
-* User edits tokens in the search bar.
+* User edits tokens (boxed terms) in the search bar.
 * User opens an existing saved answer and makes changes to tokens in the search bar.
-* User opens an existing saved pinboard, edits a context viz, and makes change to the search viz search tokens.
-* Searches initiated by a `tspublic` API call for data with runtime filters
+* User opens an existing saved pinboard, edits a visualization, and makes change to the search tokens.
+* Searches initiated by an API call for data with runtime filters
 
-It is not considered a search (query) if a user opens an existing saved
-aggregated worksheet and makes changes to tokens related to its underlying
+It is not considered a search (query) in this context if a user opens an existing saved
+aggregated worksheet and makes changes to its underlying
 query.
 
 The query for this answer is the following:
@@ -217,19 +212,19 @@ This answer relies on data from the `TS: BI Server` worksheet.
 
 ## Monthly Pinboard Views
 
-Number of times a saved pinboard is opened by a user. These scenarios are
-considered viewing a pinboard:
+Number of times a saved pinboard is viewed by a user. These scenarios are
+considered pinboard views:
 
 * User opens an existing saved pinboard.
-* User opens embed pinboard from a URL.
-* Pinboard data is accessed using the `tspublic` API.
+* User opens an embedded pinboard from a URL.
+* Pinboard data is accessed using the an API.
 
 These scenarios are not considered pinboard views:
 
 * A user opens SpotIQ tab pinboards.
 * A user opens admin tab pinboards.
 * The system loads a pinboard on the homepage.
-* The system loads a pinboard in the learn page.
+* The system loads the 'learn how to use ThoughtSpot' pinboard.
 
 The query underlying this answer is:
 
@@ -244,7 +239,7 @@ The query uses the `TS: BI Server` data source.
 
 ## Top Users Last Month
 
-This answer shows the top ThoughtSpot users ranked by number of user actions
+This answer shows the top ThoughtSpot users ranked by number of actions
 the users performed in the last 30 days. The possible user actions include:
 
 {% include content/user-actions.md %}
@@ -267,8 +262,8 @@ This answer shows the top ThoughtSpot users ranked by number of pinboard actions
 performed in the last 30 days. The possible user actions include:
 
 * User opens an existing saved pinboard ('pinboard_view').
-* User opens embed pinboard from a URL ('pinboard_embed_view' ).
-* Pinboard data is accessed using the `tspublic` API ('pinboard_tspublic_no_runtime_filter' or 'pinboard_tspublic_runtime_filter').
+* User opens an embedded pinboard from a URL ('pinboard_embed_view' ).
+* Pinboard data is accessed using an API ('pinboard_tspublic_no_runtime_filter' or 'pinboard_tspublic_runtime_filter').
 
 
 The query underlying this answer is:

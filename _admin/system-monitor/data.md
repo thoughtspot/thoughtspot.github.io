@@ -52,6 +52,11 @@ The **Database Status** column can have the following possible values:
        </tbody>
     </table>
 
+## Replication Status
+
+The **Replicated** column indicates if the table has been replicated or sharded. This can be used in conjunction with the **Total Shards** column to see how your data is distributed. 
+
+If the table is replicated on a multi node system, the **Used Capacity (MB)** column will indicate the total space used on all nodes. a 10MB table replicated on a 4 node system will show 40MB used capacity for example. 
 
 ## Search Status
 
