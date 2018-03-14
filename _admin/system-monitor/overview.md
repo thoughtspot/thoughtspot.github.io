@@ -22,9 +22,11 @@ is updated hourly from internal tables that collect monitoring statistics.
 Each answer has a menu. You can present or copy the links to the system charts.
 The answers have a subset of the ThoughtSpot answer menu. You can use the menu
 to do additional actions such as download the answer or present information
-about your ThoughtSpot cluster. Whilst you can interact with and change the search, you cannot save changes to the underlying query.
+about your ThoughtSpot cluster. While you can interact with and change the
+search, you cannot save changes to the underlying query.
 
-You can also interact with the answers, drilling into them to explore the detail as with any other pinboard answer.
+You can also interact with the answers, drilling into them to explore the detail
+as with any other pinboard answer.
 
 To find out how a particular answer was created, do the
 following:

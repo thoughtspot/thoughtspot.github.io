@@ -1,7 +1,7 @@
 <table>
 <colgroup>
-   <col style="width:15%" />
-   <col style="width:33%" />
+   <col style="width:25%" />
+   <col style="width:25%" />
    <col style="width:52%" />
 </colgroup>
   <thead>
@@ -79,7 +79,7 @@
     </tr>
     <tr>
       <td><code>start_of_month</code></td>
-      <td>Returns `MMM yyyy` for the first day of the month. Your installation configuration can override this setting so that it returns a different format such as `MM/dd/yyyy`. Speak with your ThoughtSpot administrator if you .</td>
+      <td>Returns <code>MMM yyyy</code> for the first day of the month. Your installation configuration can override this setting so that it returns a different format such as <code>MM/dd/yyyy</code>. Speak with your ThoughtSpot administrator for information on doing this.</td>
       <td><code class="highlighter-rouge">start_of_month ( 01/31/2015 ) = Jan FY 2015</code><br><code class="highlighter-rouge">start_of_month (shipped)</code></td>
     </tr>
     <tr>

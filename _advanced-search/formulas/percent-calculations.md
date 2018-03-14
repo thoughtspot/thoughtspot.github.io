@@ -69,9 +69,12 @@ Simple number functions include addition, subtraction, multiplication, and divis
 
 ## Calculate percentages
 
-Calculating percentages is useful when you want to see, for example, the percentage revenue generated from each channel (online, stores, partner, etc.).
+Calculating percentages is useful when you want to see, for example, the
+percentage revenue generated from each channel (online, stores, partner, etc.).
+For example, you can figure out the percentage revenue generated from each
+channel (online, stores, partners, etc.). Create a formula called `Percent Revenue`  in the **Formula
+Assistant**:
 
-The following example shows you how to figure out the percentage revenue generated from each channel (online, stores, partners, etc.).
+    `( sum ( revenue ) / group sum ( revenue ) ) \* 100`
 
-1.  Create the following formula in the Formula Builder: ` percent revenue = ( sum ( revenue ) / group sum ( revenue ) ) \* 100`
-2.  Now you can search by each channel, using the percent revenue formula that you just created.
+Now you can search by each channel, using the percent revenue formula that you just created.

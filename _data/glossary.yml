@@ -5,3 +5,6 @@ search: "A query in ThoughtSpot. Called a search because ThoughtSpot queries are
 token: "Text a user can enter in the search bar. For example, keywords, column names, and forumula names are examples of tokens."
 visualization: "A visual representation of data. In ThoughtSpot, a visualization is applied to an answer."
 viz: "An abbreviation for visualization."
+filter: "A column value added to search.  Filters appear in the search bar as a white box."
+pinned measure: "Aggregating a value by a specific attribute.  This is also known as group aggregation or a level-based measure."
+group aggregation: "Aggregating a value by a specific attribute.  This is also known as pinned aggregation or a level-based measure."
