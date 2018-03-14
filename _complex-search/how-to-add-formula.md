@@ -40,4 +40,4 @@ To create a formula in a search:
 
 ## Related information  
 
-[Formula reference]({{ site.baseurl }}/reference/formula-reference.html#)
+[Formula function reference]({{ site.baseurl }}/reference/formula-reference.html#)

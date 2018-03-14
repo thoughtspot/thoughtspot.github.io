@@ -229,35 +229,28 @@ entries:
         - title: Overview of aggregate formulas
           url: /complex-search/aggregation-formulas.html
           output: web,ugBk
-        - title: Filtered aggregation
-          url: /complex-search/filtered-agg-forms.html
-          output: web,ugBk
-        - title: Aggregates over time
+        - title: Cumulative functions
           url: /complex-search/about-cumulative-formulas.html
           output: web,ugBk
-        - title: Calculate the cumulative sum
-          url: /complex-search/search-using-the-cumulative-function.html
-          output: web,ugBk
-        - title: Grouping formulas
+        - title: Grouping functions
           url: /complex-search/about-pinned-measures.html
           output: web,ugBk
-        - title: Moving formulas
+        - title: Moving functions
           url: /complex-search/about-moving-formulas.html
           output: web,ugBk
-        - title: Calculate a moving average
-          url: /complex-search/search-using-the-moving-function.html
+        - title: Filtered aggregation functions
+          url: /complex-search/filtered-agg-forms.html
           output: web,ugBk
-
-      - title: Conversion formulas
+      - title: Conversion functions
         url: /complex-search/conversion-formulas.html
         output: web,ugBk
-      - title: Date formulas
+      - title: Date functions
         url: /advanced-search/formulas/date-formulas.html
         output: web,ugBk
       - title: Percent (simple number) calculations
         url: /advanced-search/formulas/percent-calculations.html
         output: web,ugBk
-      - title: Conditional formulas (operators)
+      - title: Formula operators
         url: /advanced-search/formulas/conditional-sum.html
         output: web,ugBk
       - title: Nested formulas
@@ -1171,7 +1164,7 @@ entries:
     - title: Row level security rules reference
       url: /reference/rls-rule-builder-reference.html
       output: web,refGd
-    - title: Worksheet formula reference
+    - title: Formula function reference
       url: /reference/formula-reference.html
       output: web,refGd
     - title: Alert codes reference

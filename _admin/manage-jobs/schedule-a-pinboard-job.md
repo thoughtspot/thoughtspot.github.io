@@ -57,7 +57,7 @@ To schedule a pinboard:
      <tr>
      <th>Gating condition</th>
      <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
-     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula Reference</a>.</p></td>
+     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function Reference</a>.</p></td>
      </tr>
      <tr>
        <th>Recipients</th>
