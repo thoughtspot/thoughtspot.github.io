@@ -8,13 +8,18 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The `growth of` keyword compares the data from different date periods, and
-returns a percentage of growth. To search using growth over time:
+returns a percentage of growth.
+
+## Growth over time search
+
+To search using growth over time:
 
 1. Type growth of into the search bar, and choose a measure you're interested in seeing the growth of.
 
      ![]({{ site.baseurl }}/images/growth_of_suggestions.png "Growth of suggestions")
 
-    You will see a list of suggestions to choose from based on your sources. You can also type a different column name containing numeric data to compare.
+    You will see a list of suggestions to choose from based on your sources. You
+    can also type a different column name containing numeric data to compare.
 
 2. Type `by`, followed by a date column name.
 
@@ -34,9 +39,14 @@ returns a percentage of growth. To search using growth over time:
 
     ![]({{ site.baseurl }}/images/growth_of_year_over_year.png "Growth of by monthly year-over-year")
 
-    This compares data between the same month from different years. For example, it will allow you to compare sales from June of this year to the sales from June of last year. Note that for the first year, values are labeled as "\{Blank\}" in the Data View since there are no previous data to compare them to.
+    This compares data between the same month from different years. For example,
+    it will allow you to compare sales from June of this year to the sales from
+    June of last year. Note that for the first year, values are labeled as
+    "\{Blank\}" in the Data View since there are no previous data to compare
+    them to.
 
-    Add an attribute to your search see the breakdown of how each grouping of the attribute contributed to the overall growth of your measure.
+    Add an attribute to your search see the breakdown of how each grouping of
+    the attribute contributed to the overall growth of your measure.
 
 5. Click **Configure Chart** and add your attribute to the Legend field.
 
@@ -44,3 +54,21 @@ returns a percentage of growth. To search using growth over time:
 
     It looks like Q4, FY 15 was a much more productive period for a number of
     categories compared to a year ago.
+
+## Date buckets and period calculations
+
+Growth query now supports more hierarchical date buckets and period
+calculations. The growth query syntax is as follows:
+
+
+`growth of <measure_column> by <date_column> <bucket> <period-over-period>`
+
+where the <bucket> and <period-over-period> can be from the following table:
+
+| |year-over-year||quarter-over-quarter||month-over-month||week-over-week||day-over-day||
+|yearly| | | | | |
+|quarterly|YES| | | | |
+|monthly|YES|YES| | | |
+|weekly|YES|YES|YES| | |
+|daily|YES|YES|YES|YES| |
+|hourly| | | | |YES|
