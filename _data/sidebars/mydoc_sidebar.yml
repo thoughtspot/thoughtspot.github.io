@@ -961,9 +961,27 @@ entries:
       - title: Change the footer text
         url: /app-integrate/custom-branding/change-the-footer-text.html
         output: web,apgBk
-    - title: API Reference
-      url: /app-integrate/reference/public-api-reference.html
+    - levelTwoTitle: API Reference
       output: web,apgBk
+      levelTwoItems:
+      - title: Introduction
+        url: /app-integrate/reference/public-api-reference.html
+        output: web,apgBk
+      - title: pinboarddata API
+        url: /app-integrate/reference/pinboarddata.html
+        output: web,apgBk
+      - title: metadata API
+        url: /app-integrate/reference/metadata-api.html
+        output: web,apgBk
+      - title: session API
+        url: /app-integrate/reference/session-api.html
+        output: web,apgBk
+      - title: user API
+        url: /app-integrate/reference/user-api.html
+        output: web,apgBk
+      - title: group API
+        url: /app-integrate/reference/group-api.html
+        output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
     sectionitems:
