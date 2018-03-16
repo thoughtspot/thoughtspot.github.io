@@ -17,8 +17,8 @@ transfer objects to or from the system user or the administrative user.
 
 <table>
 <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:25%" />
+      <col style="width:75%" />
    </colgroup>
    <thead>
       <tr>
@@ -35,7 +35,7 @@ transfer objects to or from the system user or the administrative user.
          </td>
       </tr>
       <tr>
-         <td>toUserName>name</code></td>
+         <td><code>toUserName</code></td>
          <td>
             <p>Username to transfer to. You cannot specify the system user or an administrative user.
             </p>
