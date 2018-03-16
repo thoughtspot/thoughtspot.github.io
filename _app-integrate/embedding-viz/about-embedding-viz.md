@@ -119,3 +119,11 @@ actions with your embedded application can trigger feedback. You can continue to
 forward feedback in this manner or direct the feedback to another email. To
 learn how to change the feedback email, see [Manage the feedback contact]({{
 site.baseurl }}/admin/setup/work-with-ts-support.html#manage-the-feedback-contact).
+
+## Remove the ThoughtSpot branded footer
+
+The ThoughtSpot footer appears by default in the ThoughtSpot application. It
+also appears with an embed application that encompasses an individual pinboard
+or a full application. In embed applications that are have a single
+visualization, you can ask your ThoughtSpot support engineer to disable the
+footer.
