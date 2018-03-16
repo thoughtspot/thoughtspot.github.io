@@ -17,8 +17,8 @@ Lists the metadata object headers in the repository
 
 <table>
    <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:25%" />
+      <col style="width:75%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
