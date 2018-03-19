@@ -1,17 +1,19 @@
-<table>
-     <colgroup>
+<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+   <colgroup>
       <col style="width:25%" />
       <col style="width:50%" />
    </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th class="entry cellrowborder">Function</th>
-         <th class="entry cellrowborder">Examples</th>
-      </tr>
-   </thead>
+  <tr>
+    <th>Keyword</th>
+    <th>Example</th>
+  </tr>
   <tr>
     <td>quarter (<i>date</i>)</td>
     <td><code>quarter (commit date)</code></td>
+  </tr>
+  <tr>
+    <td>quarter of year (<i>date</i>)</td>
+    <td><code>quarter of year (commit date)</code></td>
   </tr>
   <tr>
     <td>month of quarter (<i>date</i>)</td>
@@ -40,6 +42,10 @@
   <tr>
     <td>day (<i>date</i>)</td>
     <td><code>day (order date)</code></td>
+  </tr>
+  <tr>
+    <td>day of month (<i>date</i>)</td>
+    <td><code>day of monthy (order date)</code></td>
   </tr>
   <tr>
     <td>day of week (<i>date</i>)</td>
