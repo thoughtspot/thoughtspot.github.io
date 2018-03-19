@@ -5,14 +5,33 @@ tags: [logs]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot Support uses a secure file sever to collect log files or other files needed for troubleshooting. You can easily send log files to this file serve directly from the ThoughtSpot instance.
+ThoughtSpot Support uses a secure file sever to collect log files or other files
+needed for troubleshooting. You can easily send log files to this file serve
+directly from the ThoughtSpot instance.
+
+## Metrics collection
+
+ThoughSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. These metrics allow for:
+
+* Our support team can begin working to remediate any issue with you at once.
+* Metrics provides direct visibility to the ThoughtSpot team on your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to prevent failures. Metrics also help reduce SLA times as the team can debug much faster.
+* ThoughSpot can tune search algorithms by studying search history and schema.
+* ThoughSpot analyzes expensive and complex query patterns to look for performance optimizations.
+
+Finally, the metrics pipeline allows ThoughSpot to identify application-use
+patterns that contribute to performance bottlenecks with specific browsers and
+help your team prevent or alleviate them.
+
+## Other log uploads
 
 Before you can upload a file to the secure file server:
 
 1.  [Configure the connection to the file server]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#).
 2.  Obtain the directory path on the file server.
 
-The server directory path for uploading a file is formatted like this example: `/Shared/support/<customer_name>`. If you do not know the customer name, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
+The server directory path for uploading a file is formatted like this example:
+`/Shared/support/<customer_name>`. If you do not know the customer name,
+[contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 You can upload files directly to the file server using this procedure:
 
