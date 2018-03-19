@@ -61,3 +61,11 @@ what these are so you can avoid them.  If your data contains a measure that uses
 a `MOVING_*` or `GROUP_*` formula, SpotIQ may return results that simply aren't
 meaningful. When doing a correlation analysis, SpotIQ may not find meaningful
 data if you have a measure with anything other than `SUM`.
+
+## Set SpotIQ preferences
+
+You can set preferences for SpotIQ in your user profile. These preferences allow
+you to control how you receive analysis notifications.  They also allow you to
+exclude nulls or zero value measures from analysis.
+
+![]({{ site.baseurl }}/images/spotiq-prefs.png)
