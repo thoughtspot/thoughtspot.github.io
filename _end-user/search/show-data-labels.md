@@ -44,4 +44,5 @@ Charts with X and Y axis can display gridlines. To display them:
 You can use the lock icon to prevent ThoughtSpot from recommending other chart
 options. For example, you want a line chart, you can lock that display and stop
 TS from recommending an alternative visualization such as a funnel/pie/column
-and so forth.
+and so forth. A lock applies for all subsequent answers that have the same
+column set. 

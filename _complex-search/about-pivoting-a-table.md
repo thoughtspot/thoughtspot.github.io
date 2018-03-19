@@ -7,18 +7,24 @@ summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically. Pivot tables are a chart time typat use a drag-and-drop interface.  
+Creating a pivot table enables exploring alternate visualization of data in a
+wide table. The basic idea is that some data is easier to consume when laid out
+horizontally, while others, vertically. Pivot tables are a chart time table that
+use a drag-and-drop interface.  
 
  ![]({{ site.baseurl }}/images/pivot_chart_example.png "Pivot table chart type")
 
-Choose **Pivot Table** under Select Chart Type to view your search as a pivot table. Add rows, measures, and columns to the search bar and restructure your table by moving these values under **Configure Chart** or by dragging and dropping them.
+Choose **Pivot Table** under Select Chart Type to view your search as a pivot
+table. Add rows, measures, and columns to the search bar and restructure your
+table by moving these values under **Configure Chart** or by dragging and
+dropping them.
 
  ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns")
 
 Some additional details about pivot tables include:
 
 -   Pivot tables show the grand totals for columns and rows.
--   You can toggle on the Heatmap mode found under Configuration Options to add color coordination to your data.
+-   You can toggle on the **Heatmap mode** found under **Configuration Options** to add color coordination to your data.
 
      ![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
 
@@ -27,6 +33,9 @@ Some additional details about pivot tables include:
      ![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
 
 -   When you pin a pivot table to a pinboard, it will retain your expansion settings.
+-   You can switch between the default tree layout and a flat/table like layout.
+
+
 
 ## Pivot table limitations
 
