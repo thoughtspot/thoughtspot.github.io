@@ -9,10 +9,10 @@ permalink: /:collection/:path.html
 ## POST v1/group/addprivilege
 
 Adds a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default
-`ALL` group. All users in the system are always part of `ALL` group. By default,
-the ALL group does not have either permission.
+`ALL_GROUP`. All users in the system are always part of `ALL` group. By default,
+this group does not have either permission.
 
-All the data sources which the ALL group has permissions to are downloadable
+All the data sources which the `ALL_GROUP` has permissions to are downloadable
 when `DATADOWNLOADING` is set.
 
 
