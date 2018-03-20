@@ -8,7 +8,12 @@ permalink: /:collection/:path.html
 
 ## POST v1/group/addprivilege
 
-Adds a privilege to a group.
+Adds a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default
+`ALL_GROUP`. All users in the system are always part of `ALL` group. By default,
+this group does not have either permission.
+
+All the data sources which the `ALL_GROUP` has permissions to are downloadable
+when `DATADOWNLOADING` is set.
 
 
 ### Parameters
@@ -27,11 +32,11 @@ Adds a privilege to a group.
    <tbody>
       <tr>
          <td><code>privilege</code></td>
-         <td>A string representing the privilege to add.</td>
+         <td>A string representing the privilege to add. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
       </tr>
       <tr>
          <td><code>groupNames</code></td>
-         <td>A string representing the name of the group to add the privilege to.</td>
+         <td>A string representing the name of the group to add the privilege to. Only `ALL_GROUP` is accepted.</td>
       </tr>
    </tbody>
 </table>
@@ -68,14 +73,14 @@ Removes a privilege from a group.
       </tr>
    </thead>
    <tbody>
-      <tr>
-         <td><code>privilege</code></td>
-         <td>A string representing the privilege to remove.</td>
-      </tr>
-      <tr>
-         <td><code>groupNames</code></td>
-         <td>A string representing the name of the group to remove the privilege from.</td>
-      </tr>
+   <tr>
+      <td><code>privilege</code></td>
+      <td>A string representing the privilege to remove. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
+   </tr>
+   <tr>
+      <td><code>groupNames</code></td>
+      <td>A string representing the name of the group to remove the privilege from. Only `ALL_GROUP` is accepted.</td>
+   </tr>
    </tbody>
 </table>
 
