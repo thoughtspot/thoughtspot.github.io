@@ -8,13 +8,13 @@ ThoughtSpot supports:
 | *de-DE*|  German  |
 | *en-CA* | Canadian English  |
 | *en-GB* | United Kingdom English  |
-| *en-US* | English (United States)  |
+| *en-US (beta)* | English (United States)  |
 | *es-US* | Spanish (United States)  |
-| *fr-CA* | French (Canada)  |
-| *fr-FR* | French (France)  |
-| *ja* | Japanese  |
-| *pt-BR* | Portuguese (Brazil)  |
-| *zh-CN* | Chinese (S)  |
+| *fr-CA (beta)* | French (Canada)  |
+| *fr-FR (beta)* | French (France)  |
+| *ja*    | Japanese  |
+| *pt-BR (beta)* | Portuguese (Brazil)  |
+| *zh-CN (beta)* | Chinese (S)  |
 
 Date and number formats change to reflect your locale. So, if you set Japanese
 as your default locale in your profile settings, then the interface will update
