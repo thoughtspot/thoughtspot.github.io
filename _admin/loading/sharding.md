@@ -12,6 +12,8 @@ their entirety, the complete data set, on each node. Sharded tables consist of a
 single data set divided into multiple tables or shards. The shards have
 identical schemas but different sets of data.
 
+## When to use sharding
+
 By default, ThoughtSpot tables are replicated, you must explicitly shard tables.
 Sharding your tables impacts the total amount of memory used by the table as
 well as its performance.
@@ -143,8 +145,13 @@ use the same shard key.
   Instead, `saleid` and `productid` would be the better choice as it results in
   a wider variety of keys.
 
-as mentioned in the previous section, it is possible to simply use the primary
-key as a shard key.
+As mentioned in the previous section, it is possible to simply use the primary
+key as a shard key. It isn't a good idea to use shard keys outside of the
+primary key.  The reason is that it, with a non-primary shard key, it is
+possible to get two versions of a record if the shard key for a record changes,
+but the primary key doesn't. A second version reults because, in the absence of
+a unique shard key, the system create a secondary record rather than doing a SQL
+MERGE (`upsert`).
 
 ## Sharded dimension tables
 
