@@ -8,8 +8,8 @@ ThoughtSpot supports:
 | *de-DE*|  German  |
 | *en-CA* | Canadian English  |
 | *en-GB* | United Kingdom English  |
-| *en-US (beta)* | English (United States)  |
-| *es-US* | Spanish (United States)  |
+| *en-US* | English (United States)  |
+| *es-US (beta)* | Spanish (United States)  |
 | *fr-CA (beta)* | French (Canada)  |
 | *fr-FR (beta)* | French (France)  |
 | *ja*    | Japanese  |

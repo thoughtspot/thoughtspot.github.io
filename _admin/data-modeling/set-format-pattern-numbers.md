@@ -21,8 +21,8 @@ Currency symbols are not supported.
 
 The system has default values which are:
 
--   `#,###` for integer data types (INT, BIGINT).
--   `#,###.00` for decimal data types (DOUBLE and FLOAT).
+| `#,###` | For integer data types `INT` and `BIGINT`. As you can see, these can only contain numbers, alpha characters are not permitted. |
+| `#,###.00` | for decimal data types `DOUBLE` and `FLOAT`. |
 
 These are some examples of formats you can use:
 
