@@ -41,7 +41,12 @@
     </tr>
     <tr>
       <td><strong>Can Administer RLS</strong></td>
-      <td>Users in groups with this privilege (directly or indirectly) are exempt rom row-level security (RLS) rules. Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the  <b>Has administration privilege</b> can grant this privilege. </td>
+      <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
+<ul>      <li>Are exempt from row-level security (RLS) rules.</li>
+      <li>Can add/edit/delete existing RLS rules.</li>
+      <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
+
+      <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the  <b>Has administration privilege</b> can grant this privilege.</p> </td>
     </tr>
   </tbody>
 </table>
