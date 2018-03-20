@@ -1,4 +1,3 @@
 |Function|Description|Examples|
 |--------|-----------|--------|
 |`ts_groups`|Returns a list of all the groups the current logged in user belongs to. For any row, if the expression evaluates to true for any of the groups, the user can see that row.| `ts_groups = east`|
-|   `ts_username`|Returns the list of all the users in the system  |   |
