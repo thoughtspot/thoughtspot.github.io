@@ -55,7 +55,7 @@
             </div>
          </th>
          <th class="rotate">
-            <div><span>RLS rules</span></div>
+            <div><span>Manage RLS rules</span></div>
          </th>
          <th class="rotate">
             <div><span>CrUD Relationships</span></div>
@@ -93,7 +93,7 @@
    </thead>
    <tbody>
       <tr>
-         <td>Admin</td>
+         <td>Has administration privilege </td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -113,7 +113,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can Upload Data</div>
+            <div>Can upload user data</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -138,7 +138,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can Download Data</div>
+            <div>Can download data</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -161,7 +161,7 @@
       </tr>
       <tr>
          <td>
-            <div>Data Management</div>
+            <div>Can manage data</div>
          </td>
          <td>Y</td>
          <td>Y</td>
@@ -210,7 +210,7 @@
          <td>Y</td>
       </tr>
       <tr>
-         <td>Can Schedule</td>
+         <td>Can schedule pinboards</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -232,7 +232,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can Share with All</div>
+            <div>Can share with all users</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -246,6 +246,27 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+      </tr>
+      <tr>
+         <td>
+            <div>Can administer RLS</div>
+         </td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>Y</td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>

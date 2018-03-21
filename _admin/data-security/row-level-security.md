@@ -12,10 +12,19 @@ table's RLS rules also apply to any objects with data from that table. So,
 searches, answers, worksheets, and pinboards that rely on a table's data fall
 under RLS rules.
 
+
+## Worksheet queries and RLS
+
 You cannot set RLS rules on worksheets, only on tables. However, administrators
 can disable RLS on worksheets that are derived from tables with RLS rules. Once
 RLS rules are disabled, users with access to the worksheet can see all its data.
 
+By default, worksheet queries only take into account RLS rules on tables whose
+columns appear in the query. Other related tables that may underly the worksheet
+are ignored. This means that not all RLS rules on underlying tables are taken
+into account. You can configure a stricter application of RLS rules to take into
+account RLS rules from all the tables underlying the worksheet. To do this,
+contact ThoughtSpot Customer Support.
 
 ## Privileges that allow users to set, or be exempt from, RLS
 
@@ -28,9 +37,14 @@ privilege** have full access to everything in the system. As a result:
 
 If your installation has enabled the **Can Administer RLS** privilege,
 administrators can also grant **Can Administer RLS** to groups. Members of
-groups with **Can Administer RLS** are exempt from row-level security (RLS)
-rules. This is true regardless of whether the group membership is direct or
-indirect (through a group hierarchy).
+groups with **Can Administer RLS**:
+
+* Are xempt from row-level security (RLS) rules.
+* Can add/edit/delete existing RLS rules.
+* Can check or uncheck Bypass RLS on a worksheet.
+
+This behavior is true regardless of whether the privilege is from a direct group
+membership or indirect (through a group hierarchy).
 
 ## Examples of RLS rules
 

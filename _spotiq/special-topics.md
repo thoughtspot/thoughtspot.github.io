@@ -69,3 +69,7 @@ you to control how you receive analysis notifications.  They also allow you to
 exclude nulls or zero value measures from analysis.
 
 ![]({{ site.baseurl }}/images/spotiq-prefs.png)
+
+The exclusions impact each SpotIQ analysis. It eliminates points with such
+values during statistical calculations for example, for mean, standard deviation
+SpotIQ excludes values from any equation and uses only the remaining points.
