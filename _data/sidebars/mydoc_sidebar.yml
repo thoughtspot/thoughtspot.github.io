@@ -1128,10 +1128,10 @@ entries:
       # - title: Reference
       #   url: /data-integrate/reference/intro-reference.html
       #   output: pdf
-      - title: ODBC supported SQL commands
+      - title: Supported SQL commands
         url: /data-integrate/reference/odbc-commands.html
         output: web,digBk
-      - title: ODBC and JDBC configuration properties
+      - title: Connection configuration
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
   - sectiontitle: Disaster Recovery
