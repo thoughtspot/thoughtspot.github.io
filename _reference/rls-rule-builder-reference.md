@@ -6,9 +6,18 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to "true" for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.
+ThoughtSpot allows you to create row level security rules using expressions. If
+an expression evaluates to "true" for a particular row and group combination,
+that group will be able to see that row. This reference lists the various
+operators and functions you can use to create rules.
 
-For information on how to use the row level security functions and operators, see [About Rule-Based Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#). There is a special variable called ts_groups, which you can use when creating row level security rules. It fetches a list of the groups that the currently logged in user belongs to. For each row, f the expression in the rule evaluates to 'true' for any one of these groups, that row will be shown to the user.
+For information on how to use the row level security functions and operators,
+see [About Rule-Based Row Level Security]({{ site.baseurl
+}}/admin/data-security/row-level-security.html#). There is a special variable
+called ts_groups, which you can use when creating row level security rules. It
+fetches a list of the groups that the currently logged in user belongs to. For
+each row, f the expression in the rule evaluates to 'true' for any one of these
+groups, that row will be shown to the user.
 
 You can also see this list of operators and examples from within the Rule Builder by selecting **Rule Assistant**.
 
