@@ -21,10 +21,14 @@ RLS rules are disabled, users with access to the worksheet can see all its data.
 
 By default, worksheet queries only take into account RLS rules on tables whose
 columns appear in the query. Other related tables that may underly the worksheet
-are ignored. This means that not all RLS rules on underlying tables are taken
-into account. You can configure a stricter application of RLS rules to take into
-account RLS rules from all the tables underlying the worksheet. To do this,
-contact ThoughtSpot Customer Support.
+are ignored. This means that not all RLS rules on underlying tables are applied
+when a user queries.
+
+You can configure a stricter application of RLS rules to take into account RLS
+rules from all the tables underlying the worksheet. This is recommended if you
+have key dimension tables that worksheets rely on but that are not necessarily
+regularly accessed through query. To do this, contact ThoughtSpot Customer
+Support.
 
 ## Privileges that allow users to set, or be exempt from, RLS
 
