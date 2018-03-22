@@ -43,7 +43,7 @@ If your installation has enabled the **Can Administer RLS** privilege,
 administrators can also grant **Can Administer RLS** to groups. Members of
 groups with **Can Administer RLS**:
 
-* Are xempt from row-level security (RLS) rules.
+* Are exempt from row-level security (RLS) rules.
 * Can add/edit/delete existing RLS rules.
 * Can check or uncheck Bypass RLS on a worksheet.
 
@@ -52,10 +52,12 @@ membership or indirect (through a group hierarchy).
 
 ## Examples of RLS rules
 
-An RLS rule evaluates against the `ts_groups` system variable. This variable
-returns all the groups the currently authenticated (logged in) user belongs to
-directly and indirectly through groups in groups. ThoughtSpot filters a table's
-rows by evaluating a rule against the authenticated user.
+An RLS rule evaluates against two system variables:
+
+{% include content/func-variables.md %}
+
+ThoughtSpot filters a table's rows by evaluating a rule against the
+authenticated user.
 
 A rule is an expression that returns a boolean, `TRUE` or `FALSE`. If the rule
 evaluates to `TRUE`, a user can see that row. If the rule evaluates to `FALSE`
