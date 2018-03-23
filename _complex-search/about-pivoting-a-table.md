@@ -21,20 +21,34 @@ dropping them.
 
  ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns")
 
-Some additional details about pivot tables include:
+ When you pin a pivot table to a pinboard, it will retain your expansion settings.
 
--   Pivot tables show the grand totals for columns and rows.
--   You can toggle on the **Heatmap mode** found under **Configuration Options** to add color coordination to your data.
+## Configuring your pivot table
 
-     ![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
+You can show grand totals on pivot tables.
 
--   Click a column or row to expand it. Additionally, you can expand or collapse all by right clicking the arrow on the top left of a cell.
+![]({{ site.baseurl }}/images/pivot-grand-total.png)
 
-     ![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
+You can switch between the default tree layout and a flat/table like layout.
+Turn the tree layout for row headers on/off:
 
--   When you pin a pivot table to a pinboard, it will retain your expansion settings.
--   You can switch between the default tree layout and a flat/table like layout.
+![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png)
 
+From the header menu users, change the type of total shown for an aggregated
+measure:
+
+![]({{ site.baseurl }}/images/pivot-table-agg-totals.png )
+
+
+Toggle on the **Heatmap mode** found under **Configuration Options** to add
+color coordination to your data.
+
+![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
+
+Click a column or row to expand it. Additionally, you can expand or collapse all
+by right clicking the arrow on the top left of a cell.
+
+![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
 
 
 ## Pivot table limitations
@@ -44,6 +58,5 @@ The pivot table chart type has these limitations:
 - Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.
 - Pivot table is not available if the dataset contains more than 100,000 rows.
 - Cardinality is not configurable.
-- Columns with cardinality beyond 100 are grouped into \{Other\}.
 - Show underlying data menu is unavailable.
 - Conditional formatting is not functional.
