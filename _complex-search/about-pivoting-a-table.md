@@ -25,12 +25,31 @@ dropping them.
 
 ## Configuring your pivot table
 
-You can show grand totals on pivot tables.
+Click a column or row to expand it. Additionally, you can expand or collapse all
+by right clicking the arrow on the top left of a cell.
+
+![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
+
+
+You can show **% Row Grand Total** and, **% of Column Grand Total**, or **% of
+Grand Total** on pivot tables. Grand  totals aggregate data of the entire pivot
+grid. They show values summarized across all available data.
 
 ![]({{ site.baseurl }}/images/pivot-grand-total.png)
 
-You can switch between the default tree layout and a flat/table like layout.
-Turn the tree layout for row headers on/off:
+You only see 100% value when grand total rows is enabled. This is because when
+it is disabled, the rows and columns they have no parental total column and the
+percentage cannot be calculated. All intermediate total (columns or rows)
+display the percentage values calculated with respect to their parent. For each
+inner summary (column or row) the parental total values are assumed to be 100%
+internally.
+
+To see the total column make sure you also have **Pivot Summaries** checked.
+
+![]({{ site.baseurl }}/images/pivot-summaries.png)
+
+For row headers, you can switch between the default view and a more compact
+(tree) layout:
 
 ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png)
 
@@ -44,11 +63,6 @@ Toggle on the **Heatmap mode** found under **Configuration Options** to add
 color coordination to your data.
 
 ![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
-
-Click a column or row to expand it. Additionally, you can expand or collapse all
-by right clicking the arrow on the top left of a cell.
-
-![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
 
 
 ## Pivot table limitations
