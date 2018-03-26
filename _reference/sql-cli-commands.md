@@ -444,31 +444,9 @@ nickname';</code></p>
    &lt;new_data_type&gt;;</code></p>
          </td>
          <td>
-            <p>Sets the load priority for a table. You can set any value from 1-100.  For example:
-            </p>
-            <p><code>ALTER TABLE 'sales_facts' SET LOAD PRIORITY 1</code></p>
-         </td>
-      </tr>
-      <tr>
-         <td>
-            <p><code align="left">ALTER TABLE &lt;table&gt; SET LOAD PRIORITY &lt;value&gt;
-   &lt;new_data_type&gt;;</code></p>
-         </td>
-         <td>
             <p>Sets the load priority for a table. Load priority determines the order in which a table is loaded on a cluster restart. You can set any value from <code>1-100</code>. The system default for all tables is <code>50</code>. For example:
             </p>
             <p><code>ALTER TABLE 'sales_facts' SET LOAD PRIORITY 1</code></p>
-         </td>
-      </tr>
-      <tr>
-         <td>
-            <p><code align="left">ALTER TABLE &lt;table&gt; SET LOAD PRIORITY &lt;value&gt;
-   &lt;new_data_type&gt;;</code></p>
-         </td>
-         <td>
-            <p>Removes a load priority setting for a table and returns priority to the system default which is  <code>50</code>. For example:
-            </p>
-            <p><code>ALTER TABLE 'sales_facts' REMOVE LOAD PRIORITY</code></p>
          </td>
       </tr>
       <tr>
