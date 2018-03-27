@@ -124,20 +124,57 @@ curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: Though
     'https://<instance>/callosum/v1/tspublic/v1/metadata/listobjectheaders?category=ALL&sort=DEFAULT&offset=-1'
 ```
 
-### Response Body
+For example:
 
-Response body of each returned object obtained has these first class citizens:
-
-* `id` (GUID)
-* `name` (String)
-* `description` (String)
-* `author` (GUID)
-* `created` (Epoch)
-* `modified` (Epoch)
-* `modifiedBy` (GUID)
-* `owner` (GUID)
-* `isAutoCreated` (boolean)
-* `isAutoDeleted` (boolean)
+```
+[
+  {
+    "id": "6715f768-8930-4180-9a3d-1efdbfaa8e7f",
+    "name": "Headline Pinboard",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1519940021267,
+    "modified": 1519945210514,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "6715f768-8930-4180-9a3d-1efdbfaa8e7f",
+    "isAutoCreated": false,
+    "isAutoDelete": false
+  },
+  {
+    "id": "262abdac-b00f-4f5f-ad33-fcf10154184f",
+    "name": "Empty Pinboard",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1519945152030,
+    "modified": 1519945152030,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "262abdac-b00f-4f5f-ad33-fcf10154184f",
+    "isAutoCreated": false,
+    "isAutoDelete": false
+  },
+  {
+    "id": "327f4d60-c502-43b0-b1d4-c73df5031a2e",
+    "name": "Charts Pinboard",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1519880454269,
+    "modified": 1519945014529,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "327f4d60-c502-43b0-b1d4-c73df5031a2e",
+    "isAutoCreated": false,
+    "isAutoDelete": false
+  },
+  ...snip...,
+  {
+    "id": "e82fe65a-7ac0-4282-a783-7a35c01b8dbd",
+    "name": "Broken Pinboard",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1455598191207,
+    "modified": 1455598218094,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "e82fe65a-7ac0-4282-a783-7a35c01b8dbd",
+    "isAutoCreated": false,
+    "isAutoDelete": false
+  }
+]
+```
 
 ### Response Code
 
@@ -149,20 +186,22 @@ Response body of each returned object obtained has these first class citizens:
 
 ```
 {
-  "x-callosum-incident-id": "6bfb1700-eec6-4be9-b7e6-ba205c313c91",
-  "x-callosum-trace-id": "8f998669-7277-402e-a11a-a295acc2b916",
-  "date": "Thu, 15 Mar 2018 19:58:43 GMT",
+  "x-callosum-trace-id": "c8008291-c074-45cf-b88a-371253166b5b",
+  "date": "Tue, 27 Mar 2018 17:38:54 GMT",
   "content-encoding": "gzip",
-  "x-callosum-request-time-us": "209241",
+  "x-callosum-request-time-us": "11694",
+  "transfer-encoding": "chunked",
+  "x-nginx-localhost": "172.18.231.12",
+  "x-callosum-ip": "172.18.231.12",
+  "connection": "keep-alive",
+  "x-ua-compatible": "IE=edge",
+  "x-callosum-incident-id": "791eb139-5fd1-478a-9002-35a81b0dd4aa",
+  "pragma": "no-cache",
   "server": "ThoughtSpot",
-  "status": "200",
   "vary": "Accept-Encoding",
   "content-type": "application/json",
-  "pragma": "no-cache",
   "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'",
-  "strict-transport-security": "max-age=31536000; includeSubDomains",
-  "x-ua-compatible": "IE=edge"
+  "content-security-policy": "script-src 'self'"
 }
 ```
 
@@ -199,7 +238,6 @@ the given pinboard.
 * `400` Invalid pinboard GUID.
 
 
-
 ### Request URL
 
 ```
@@ -209,14 +247,15 @@ https://<instance>/callosum/v1/tspublic/v1/metadata/listvizheaders
 For example:
 
 ```
-curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot'
-  'https://<name>/callosum/v1/tspublic/v1/metadata/listvizheaders?id=e3452291-bed7-478d-a0ed-d710e0e53e9b'
+curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'http://172.18.231.12:8088/callosum/v1/tspublic/v1/metadata/listvizheaders?id=327f4d60-c502-43b0-b1d4-c73df5031a2e'
 ```
 
 ### Response Body
 
-Body of each response has these first class citizens:
+An array where each response has these first class citizens:
 
+* `size` (String enumeration)
+* `vizType` (String enumeration)
 * `id` (GUID)
 * `name` (String)
 * `author` (GUID)
@@ -224,6 +263,46 @@ Body of each response has these first class citizens:
 * `modified` (Epoch)
 * `modifiedBy` (GUID)
 * `owner` (GUID)
+
+For example:
+
+```
+[
+  {
+    "size": "m",
+    "vizType": "CHART",
+    "title": {
+      "value": {
+        "text": "Line chart- horizontal 900-1200 - data labels"
+      }
+    },
+    "id": "8fbf93e6-54ba-4a20-b2bb-4afe8dca5321",
+    "name": "1177d886-27fd-4dff-a617-8defadd27a6b::6e87081a-fc4c-4bd9-b1e0-cfe145868498 Pinboard Ref",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1519880461956,
+    "modified": 1519945014529,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "6f403a20-fe68-43e7-a0bf-a4e706740361"
+  },
+...snip...
+  {
+    "size": "ls",
+    "vizType": "CHART",
+    "title": {
+      "value": {
+        "text": "Percent as chart"
+      }
+    },
+    "id": "eb59aa25-1d2b-44f4-b5b4-b390105d56a8",
+    "name": "b8c26ea1-b341-4a18-871b-cc67a6bb237f::80cd5837-d5a7-491d-a3dc-490dfb3dbb0f Pinboard Ref",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1519932657762,
+    "modified": 1519945014529,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "6f403a20-fe68-43e7-a0bf-a4e706740361"
+  }
+]
+```
 
 ### Response Code
 
@@ -235,20 +314,21 @@ Body of each response has these first class citizens:
 
 ```
 {
-  "x-callosum-incident-id": "6f10c360-1dc8-4469-8d7d-41c7eab4d883",
-  "x-callosum-trace-id": "70d91ca9-7278-4926-8161-bec75bfe3c5e",
-  "date": "Sun, 19 Feb 2017 03:19:17 GMT",
+  "x-callosum-trace-id": "c0c84945-be03-414c-80c3-47b1b0949803",
+  "date": "Tue, 27 Mar 2018 17:46:47 GMT",
   "content-encoding": "gzip",
-  "x-callosum-request-time-us": "3437",
-  "server": "nginx",
+  "x-callosum-request-time-us": "35402",
+  "transfer-encoding": "chunked",
+  "x-nginx-localhost": "172.18.231.12",
+  "x-callosum-ip": "172.18.231.12",
+  "connection": "keep-alive",
+  "x-ua-compatible": "IE=edge",
+  "x-callosum-incident-id": "4ed1364c-b018-43a8-8486-ee954cd3dae3",
+  "pragma": "no-cache",
+  "server": "ThoughtSpot",
   "vary": "Accept-Encoding",
   "content-type": "application/json",
-  "pragma": "no-cache",
   "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "transfer-encoding": "chunked",
-  "content-security-policy": "script-src 'self'",
-  "connection": "keep-alive",
-  "x-callosum-ip": "192.168.2.247",
-  "x-ua-compatible": "IE=edge"
+  "content-security-policy": "script-src 'self'"
 }
 ```
