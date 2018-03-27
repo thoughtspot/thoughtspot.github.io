@@ -47,6 +47,8 @@ create a pinboard filter:
 3. Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**.
 4. Click **Done**.
 
+## Edit a filter from the answer
+
 Your applied filter will sit at the top of the pinboard, where you can edit it in place:
 
 ![]({{ site.baseurl }}/images/select_filters.png "Select Filter Values")
