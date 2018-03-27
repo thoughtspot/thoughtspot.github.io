@@ -454,7 +454,7 @@ pinboard, or aggregated/unaggregated worksheet objects.</p>
 <tr>
 <td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
 <h4><a name="NewHasadministrationprivileges"></a>New Has administration privileges</h4>
-<p>If you add the privilege <strong>Has administration privileges</strong> to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and row-level security (RLS) does not apply to them. If you want to enable users to bypass row-level security on a worksheet, add them to a group with <strong>Can Administer RLS</strong> privileges.</p>
+<p>If you add the privilege <strong>Has administration privileges</strong> to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and row-level security (RLS) does not apply to them. If you want to enable users to bypass row-level security on a worksheet, add them to a group with <strong>Can Administer and Bypass RLS</strong> privileges.</p>
 </td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ pinboard, or aggregated/unaggregated worksheet objects.</p>
 <tr>
 <td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
 <h4><a name="Administerrowlevelsecurityprivilege"></a>Administer row level security privilege</h4>
-<p>Users with the <strong>Can Administer RLS</strong> privilege can bypass row-level security (RLS) rules on a worksheet. By default this privilege is enabled. You can configure your installation to disable it.</p>
+<p>Users with the <strong>Can Administer and Bypass RLS</strong> privilege can bypass row-level security (RLS) rules on a worksheet. By default this privilege is enabled. You can configure your installation to disable it.</p>
 </td>
 </tr>
 <tr>

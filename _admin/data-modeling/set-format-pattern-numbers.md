@@ -38,9 +38,11 @@ These are some examples of formats you can use:
 
 &nbsp;
 
-You can change the date format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by editing the data
-model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
-Editing the data model file requires that you have administrative privileges.
+You can change the date format used to display a column's values [for a single
+table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by
+editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
+}}/admin/data-modeling/edit-model-file.html). Editing the data model file
+requires that you have administrative privileges.
 
 1. Decide if the change is for a table or the entire instance.
 2. Find the **Format Pattern** for the column.
@@ -52,7 +54,8 @@ Editing the data model file requires that you have administrative privileges.
 ### Profile-based number formatting
 
 Number formatting is set by default based on your ThoughtSpot profile's
-**Preferred locale** setting. You can set this value to accommodate your geographic locations.
+**Preferred locale** setting. You can set this value to accommodate your
+geographic locations.
 
 ![]({{ site.baseurl }}/images/profile-locale.png "Specify Profile locale")
 
@@ -70,8 +73,10 @@ These are some examples of formats you can use:
 
 {% include content/data-modeling-strings.md %}
 
-To change the date format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by editing the data
-model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
+To change the date format used to display a column's values [for a single
+table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by
+editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
+}}/admin/data-modeling/edit-model-file.html).
 
 
 1. Decide if the change is for a table or the entire instance.
@@ -83,20 +88,25 @@ model, for [the entire ThoughtSpot instance]({{ site.baseurl }}/admin/data-model
 
 ## Set currency format
 
-You can set a format for how currencies are displayed in tables and charts when using the ThoughtSpot Data API or embedding. For example, you can display currencies in a standard European Euro or US Dollar format based on the data modeling setting **Currency Type**.
+You can set a format for how currencies are displayed in tables and charts when
+using the ThoughtSpot Data API or embedding. For example, you can display
+currencies in a standard European Euro or US Dollar format based on the data
+modeling setting **Currency Type**.
 
-You can change the currency format used to display a column's values [for a single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html). When you specify the
-currency type of your data on the **DATA** page, your currency data will
-only display the correct format and currency code in the embedded use case.
-Currency specific symbols are available in the non-embedded use case as well,
-but they are not localized.
+You can change the currency format used to display a column's values [for a
+single table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html).
+When you specify the currency type of your data on the **DATA** page, your
+currency data will only display the correct format and currency code in the
+embedded use case. Currency specific symbols are available in the non-embedded
+use case as well, but they are not localized.
 
 All users are treated as if they are in `en-US` locale unless they are in embed
 mode and their browser configuration tells ThoughtSpot that they are in some
 other locale. For example, `100 Polish Zloty` appears as `100zł` to a user in
 Poland, but without localization enabled, it appears as `PLN 100`.
 
-This subtle difference can be seen when you use the REST API. See the ThoughtSpot Application Integration Guide for more information on the API.
+This subtle difference can be seen when you use the REST API. See the
+ThoughtSpot Application Integration Guide for more information on the API.
 
 1. Find the **Currency Type** for the column whose display format you want to change.
 2. Click on it to open the **Specify Currency Type** menu.

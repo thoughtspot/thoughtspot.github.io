@@ -72,12 +72,13 @@ well as the version of ThoughtSpot you are using.
 
 ## Learn
 
-Choosing **Learn** from the **Help** menu takes a customer to the *Learn* center.
-The center contains one or more example queries.  Users can click on a query to
-replay it in their browser. Users can only complete replay on data that the user
-has access to.
+Choosing **Learn** from the **Help** menu takes a you to the *Learn* center.
+The center contains one or more example queries.  You can only play replay on data that you have access to.
 
-Any administrator can add to the items in the **Learn** center. To add a reply, do
+Click on a item in Learn to replay it in ThoughtSpot. During a reply, you can
+click `Pause` or `Resume` or click `ESC` to exit the replay.
+
+Any administrator can add to the items in the **Learn** center. To add a replay, do
 the following:
 
 1. Search in your search bar.

@@ -21,10 +21,14 @@ RLS rules are disabled, users with access to the worksheet can see all its data.
 
 By default, worksheet queries only take into account RLS rules on tables whose
 columns appear in the query. Other related tables that may underly the worksheet
-are ignored. This means that not all RLS rules on underlying tables are taken
-into account. You can configure a stricter application of RLS rules to take into
-account RLS rules from all the tables underlying the worksheet. To do this,
-contact ThoughtSpot Customer Support.
+are ignored. This means that not all RLS rules on underlying tables are applied
+when a user queries a worksheet.
+
+You can configure a stricter application of RLS rules to take into account RLS
+rules from all the tables underlying the worksheet. This is recommended if you
+have key dimension tables that worksheets rely on but that are not necessarily
+regularly accessed through query. To do this, contact ThoughtSpot Customer
+Support.
 
 ## Privileges that allow users to set, or be exempt from, RLS
 
@@ -35,11 +39,11 @@ privilege** have full access to everything in the system. As a result:
 * They can create, edit, and delete RLS rules.
 * They can also disable RLS rules on individual worksheets.
 
-If your installation has enabled the **Can Administer RLS** privilege,
-administrators can also grant **Can Administer RLS** to groups. Members of
-groups with **Can Administer RLS**:
+If your installation has enabled the **Can Administer and Bypass RLS** privilege,
+administrators can also grant **Can Administer and Bypass RLS** to groups. Members of
+groups with **Can Administer and Bypass RLS**:
 
-* Are xempt from row-level security (RLS) rules.
+* Are exempt from row-level security (RLS) rules.
 * Can add/edit/delete existing RLS rules.
 * Can check or uncheck Bypass RLS on a worksheet.
 
@@ -48,10 +52,12 @@ membership or indirect (through a group hierarchy).
 
 ## Examples of RLS rules
 
-An RLS rule evaluates against the `ts_groups` system variable. This variable
-returns all the groups the currently authenticated (logged in) user belongs to
-directly and indirectly through groups in groups. ThoughtSpot filters a table's
-rows by evaluating a rule against the authenticated user.
+An RLS rule evaluates against two system variables:
+
+{% include content/func-variables.md %}
+
+ThoughtSpot filters a table's rows by evaluating a rule against the
+authenticated user.
 
 A rule is an expression that returns a boolean, `TRUE` or `FALSE`. If the rule
 evaluates to `TRUE`, a user can see that row. If the rule evaluates to `FALSE`
@@ -109,7 +115,7 @@ the rules evaluate to `true` for a user on a row, that row's data is visible.
 If a user is a member of multiple groups, the user can see all the rows that are
 visible to all of their groups. The most permissive policy is used.
 
-Members of groups with **Can Administer RLS** are exempt from row-level security
+Members of groups with **Can Administer and Bypass RLS** are exempt from row-level security
 (RLS) rules.  This is true regardless of whether the group membership is direct
 or indirect (through a group hierarchy).
 

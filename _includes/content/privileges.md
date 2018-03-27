@@ -40,7 +40,7 @@
       <td>User can use SpotIQ's auto analyze function.</td>
     </tr>
     <tr>
-      <td><strong>Can Administer RLS</strong></td>
+      <td><strong>Can Administer and Bypass RLS</strong></td>
       <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
 <ul>      <li>Are exempt from row-level security (RLS) rules.</li>
       <li>Can add/edit/delete existing RLS rules.</li>

@@ -255,7 +255,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can administer RLS</div>
+            <div>Can Administer and Bypass RLS</div>
          </td>
          <td>N</td>
          <td>N</td>
