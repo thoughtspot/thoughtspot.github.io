@@ -3,7 +3,7 @@ title: [Filtered aggregation functions]
 keywords: filter, search, aggregation
 tags: [time,dates]
 last_updated: tbd
-toc: false
+toc: true
 summary: "You can create a filtered aggregation in the search bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -99,13 +99,18 @@ Once you have aggregated with a filter, you can do further comparisons with the 
 ## Using the vs and all keywords
 
 You can use the `vs` and `all` keywords to expand the usefulness of your
-comparison filters. The basic format of a comparison search is:
+comparison filters. It compares a measure across different sets of filters and
+or groupings. The basic format of a comparison search is:
 
 `<common search tokens> (A` **vs** `B) <common search tokens>`
 
-Try this syntax on using the [Superstore]({{ site.baseurl
-}}/downloads/Superstore.xsl) example data. The first `vs` example compares two
-segments with a single search token:
+For example:
+
+`revenue region last 10 years vs all`
+
+Try this syntax on using the
+[Superstore]({{site.baseurl}}/downloads/Superstore.csv) example data. The first
+`vs` example compares two segments with a single search token:
 
 ![]({{ site.baseurl }}/images/vs-ex-1.png)
 
@@ -126,6 +131,6 @@ Of course, you can compare across different columns as well:
 Other supported formats you can try:
 
 * `sales accessory6 accessory12 vs all`
-* `sales monthly accessory6 vs all`
+* `sales monthly accessory6 vs last year`
 * `sales staples file caddy vs all monthly` answers what the share of sales belonging to the file caddy by month
 * `sales (germany ariel vs laundry) july 2017 time` answers what is the category share of Germany Ariel for July 17?

@@ -16,10 +16,16 @@ time table that use a drag-and-drop interface.
 
 If a **Pivot Table** is available for your answer, you see this type of
 visualization as an option under the visualization. Add rows, measures, and
-columns to the search bar and restructure your table by moving these values
-under **Configure Chart** or by dragging and dropping them.
+columns to the search bar:
 
  ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns")
+
+
+You can restructure your pivot table by moving these values under **Configure
+Chart** or by dragging and dropping column headings on the table itself. If you
+right click on a the row headings, the system displays a contextual sort menu:
+
+![]({{ site.baseurl }}/images/pivot-context-menu.png)
 
 
 ## Expanding or contract columns and rows
@@ -62,13 +68,15 @@ measure:
 
 ![]({{ site.baseurl }}/images/pivot-table-agg-totals.png )
 
-## Toggle heatmap mode
+## Heatmap of large contributors
 
-Toggle on the **Heatmap mode** found under **Configuration Options** to add
-color coordination to your data.
+The heatmap functionality allows you to see which measures contribute more than
+others (heat) within the table.
 
 ![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
 
+Toggle on the **Heatmap mode** found under **Configuration Options** to add
+color coordination to your data.
 
 ## Pivot table limitations
 
