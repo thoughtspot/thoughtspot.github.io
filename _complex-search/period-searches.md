@@ -103,4 +103,4 @@ matches dates in March.
 supported, so `day of week = d1` is not valid.
 * `INTEGER_CONDITION` with `=` or `!=` accept a list of filter values, so, `day of week = 1 2 3` is valid.
 * `INTEGER_CONDITION` with `=` or `!=` require legal values, so `day of week >` accepts any integer on the right hand side while `day of week =` requires a value in the legal `1-7` range.
-* Simple date filters allow you to use the filter panel to refine your search, including a hierarchical date filter disables this ability.
+* Simple date filters allow you to use edit the filter through the visualization to refine your search, adding a a hierarchical date filter in the search bar disables this ability.

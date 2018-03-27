@@ -47,10 +47,11 @@ create a pinboard filter:
 3. Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**.
 4. Click **Done**.
 
-     ![]({{ site.baseurl }}/images/select_filters.png "Select Filter Values")
+Your applied filter will sit at the top of the pinboard, where you can edit it in place:
 
+![]({{ site.baseurl }}/images/select_filters.png "Select Filter Values")
 
-Your applied filter will sit at the top of the pinboard, where you can either edit or delete it.
+Or delete it:
 
 ![]({{ site.baseurl }}/images/filter_appears.png "Applied Pinboard Filter")
 
