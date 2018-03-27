@@ -39,9 +39,9 @@ privilege** have full access to everything in the system. As a result:
 * They can create, edit, and delete RLS rules.
 * They can also disable RLS rules on individual worksheets.
 
-If your installation has enabled the **Can Administer RLS** privilege,
-administrators can also grant **Can Administer RLS** to groups. Members of
-groups with **Can Administer RLS**:
+If your installation has enabled the **Can Administer and Bypass RLS** privilege,
+administrators can also grant **Can Administer and Bypass RLS** to groups. Members of
+groups with **Can Administer and Bypass RLS**:
 
 * Are exempt from row-level security (RLS) rules.
 * Can add/edit/delete existing RLS rules.
@@ -115,7 +115,7 @@ the rules evaluate to `true` for a user on a row, that row's data is visible.
 If a user is a member of multiple groups, the user can see all the rows that are
 visible to all of their groups. The most permissive policy is used.
 
-Members of groups with **Can Administer RLS** are exempt from row-level security
+Members of groups with **Can Administer and Bypass RLS** are exempt from row-level security
 (RLS) rules.  This is true regardless of whether the group membership is direct
 or indirect (through a group hierarchy).
 
