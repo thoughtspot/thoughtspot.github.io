@@ -47,6 +47,11 @@ create a pinboard filter:
 3. Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**.
 4. Click **Done**.
 
+  When you apply a filter, the pinboard is not automatically saved with your
+  filter applied to every object in the pinboard that was created from a
+  worksheet. Pinboard filters do not apply to tables and charts built directly on
+  top of base tables.
+
 ## Edit a filter from the answer
 
 Your applied filter will sit at the top of the pinboard, where you can edit it in place:
@@ -56,8 +61,3 @@ Your applied filter will sit at the top of the pinboard, where you can edit it i
 Or delete it:
 
 ![]({{ site.baseurl }}/images/filter_appears.png "Applied Pinboard Filter")
-
-When you apply a filter, the pinboard is not automatically saved with your
-filter applied to every object in the pinboard that was created from a
-worksheet. Pinboard filters do not apply to tables and charts built directly on
-top of base tables.
