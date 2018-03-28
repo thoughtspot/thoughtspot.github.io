@@ -6,4 +6,4 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include content/log_in_out.html %}
+{% include content/log_in_out.md %}
