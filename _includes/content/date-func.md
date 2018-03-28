@@ -35,12 +35,12 @@
     <tr>
        <td><code>day_number_of_quarter</code></td>
        <td>Returns the number of the day in a quarter for a given date.</td>
-       <td><code class="highlighter-rouge">day_number_of_quarter (01/30/2015)</td>
+       <td><code class="highlighter-rouge">day_number_of_quarter (01/30/2015)</code></td>
     </tr>
     <tr>
        <td><code>day_number_of_week</code></td>
         <td>Returns the number of the day in a week for a given date.</td>
-       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014) > 3</td>
+       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014) > 3</code></td>
     </tr>
     <tr>
       <td><code>day_number_of_year</code></td>
@@ -85,7 +85,7 @@
     <tr>
        <td><code>month_number_of_quarter</code></td>
        <td>Returns the month (1-12) number for the given date in a quarter.</td>
-       <td><code class="highlighter-rouge">>month_number_of_quarter (02/20/2018) > 9</td>
+       <td><code class="highlighter-rouge">>month_number_of_quarter (02/20/2018) > 9 </code></td>
     </tr>
     <tr>
       <td><code>now</code></td>
@@ -120,17 +120,17 @@
     <tr>
        <td><code>week_number_of_month</code></td>
        <td>Returns the week number for the given date in a month.</td>
-       <td><code class="highlighter-rouge">week_number_of_month(03/23/2017) = 3</td>
+       <td><code class="highlighter-rouge">week_number_of_month(03/23/2017) = 3</code></td>
     </tr>
     <tr>
        <td><code>week_number_of_quarter</code></td>
        <td>Returns the week number for the given date in a quarter.</td>
-       <td><code class="highlighter-rouge">week_number_of_quarter(04/03/2017)> 2 </td>
+       <td><code class="highlighter-rouge">week_number_of_quarter(04/03/2017)> 2 </code></td>
     </tr>
     <tr>
        <td><code>week_number_of_year</code></td>
        <td>Returns the week number for the given date in a year.</td>
-       <td><code class="highlighter-rouge">week_number_of_year(04/03/2017) = 20 </td>
+       <td><code class="highlighter-rouge">week_number_of_year(04/03/2017) = 20 </code></td>
     </tr>
     <tr>
       <td><code>year</code></td>
