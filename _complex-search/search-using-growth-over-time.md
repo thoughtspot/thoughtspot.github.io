@@ -10,11 +10,11 @@ permalink: /:collection/:path.html
 The `growth of` keyword compares the data from different date periods, and
 returns a percentage of growth.
 
-## Growth over time search
+## Growth of measure by year
 
 To search using growth over time:
 
-1. Type growth of into the search bar, and choose a measure you're interested in seeing the growth of.
+1. Type `growth of` into the search bar, and choose a measure you're interested in seeing the growth of.
 
      ![]({{ site.baseurl }}/images/growth_of_suggestions.png "Growth of suggestions")
 
@@ -55,7 +55,7 @@ To search using growth over time:
     It looks like Q4, FY 15 was a much more productive period for a number of
     categories compared to a year ago.
 
-## Date buckets and period calculations
+## Display periods (daily) over time (year-over-year)
 
 Growth query now supports more hierarchical date buckets and period
 calculations. The growth query syntax is as follows:
@@ -63,12 +63,54 @@ calculations. The growth query syntax is as follows:
 
 `growth of <measure_column> by <date_column> <bucket> <period-over-period>`
 
-where the <bucket> and <period-over-period> can be from the following table:
+This table shows the possible buckets and the period-over keywords you can
+combine:
 
-| |year-over-year||quarter-over-quarter||month-over-month||week-over-week||day-over-day||
-|yearly| | | | | |
-|quarterly|YES| | | | |
-|monthly|YES|YES| | | |
-|weekly|YES|YES|YES| | |
-|daily|YES|YES|YES|YES| |
-|hourly| | | | |YES|
+<table>
+  <tr>
+    <td><code>quarterly</code></td>
+    <td><code>monthly</code></td>
+    <td><code>weekly</code></td>
+    <td><code>daily</code></td>
+    <td><code>hourly</code></td>
+  </tr>
+  <tr>
+    <td><code>year-over-year</code></td>
+    <td><code>year-over-year</code></td>
+    <td><code>year-over-year</code></td>
+    <td><code>year-over-year</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><code>quarter-over-quarter</code></td>
+    <td><code>quarter-over-quarter</code></td>
+    <td><code>quarter-over-quarter</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><code>month-over-month</code></td>
+    <td><code>month-over-month</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><code>week-over-week</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><code>day-over-day</code></td>
+  </tr>
+</table>
+
+For example, the following query `growth of sales by date daily month-over-month`:
+
+![]({{ site.baseurl }}/images/date-period-over-period.png)

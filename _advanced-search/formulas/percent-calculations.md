@@ -7,10 +7,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can use simple number functions to perform useful percent calculations.
+Simple number functions include addition, subtraction, multiplication, and
+division.
 
-Simple number functions include addition, subtraction, multiplication, and division.
-
-<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+<table>
    <colgroup>
       <col style="width:10%"/>
       <col style="width:45%"/>
@@ -72,9 +72,10 @@ Simple number functions include addition, subtraction, multiplication, and divis
 Calculating percentages is useful when you want to see, for example, the
 percentage revenue generated from each channel (online, stores, partner, etc.).
 For example, you can figure out the percentage revenue generated from each
-channel (online, stores, partners, etc.). Create a formula called `Percent Revenue`  in the **Formula
-Assistant**:
+channel (online, stores, partners, etc.).
 
-    `( sum ( revenue ) / group sum ( revenue ) ) \* 100`
+Create a formula called `Percent Revenue`  in the **Formula Assistant**:
+
+`( sum ( revenue ) / group sum ( revenue ) ) \* 100`
 
 Now you can search by each channel, using the percent revenue formula that you just created.

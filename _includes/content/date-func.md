@@ -85,7 +85,7 @@
     <tr>
        <td><code>month_number_of_quarter</code></td>
        <td>Returns the month (1-12) number for the given date in a quarter.</td>
-       <td><code class="highlighter-rouge">>month_number_of_quarter (02/20/2018) > 9 </code></td>
+       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) > 9 </code></td>
     </tr>
     <tr>
       <td><code>now</code></td>
