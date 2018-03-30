@@ -47,7 +47,7 @@ home page is a search bar and below that several areas that show activity in you
   </tr>
   <tr>
     <th>Recent team activity</th>
-    <td>Answers,pinboards,worksheets, and tables people in your company have created or edited recently.
+    <td>Answers, pinboards, worksheets, and tables people in your company have created or edited recently.
     <br>
     <img src="{{ "/images/home-team-activity.png "| prepend: site.baseurl  }}" />
 
