@@ -19,8 +19,8 @@ home page is a search bar and below that several areas that show activity in you
 
 <table>
 <colgroup>
-   <col style="width:50%" />
-   <col style="width:50%" />
+   <col style="width:25%" />
+   <col style="width:75%" />
 </colgroup>
 <thead class="thead" style="text-align:left;">
    <tr>
