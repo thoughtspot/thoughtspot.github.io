@@ -591,7 +591,7 @@ This subcommand has the following actions:
 ### node
 
 ```
-tscli node [-h] {check,ls,reinstall-os,status}
+tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status} ...
 ```
 
 This subcommand has the following actions:
@@ -608,6 +608,9 @@ This subcommand has the following actions:
 
   * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
   * `--cluster` Is the node part of a cluster (default: `False`)
+* `tscli node resume-reinstall-os` Resume in-progress reinstall
+
+
 
 ### saml
 

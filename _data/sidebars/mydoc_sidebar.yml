@@ -943,7 +943,7 @@ entries:
     - levelTwoTitle: Style Customization
       output: web,apgBk
       levelTwoItems:
-      - title: Make Style Customization
+      - title: Customize the application style
         url: /app-integrate/custom-branding/perform-style-customization.html
         output: web,apgBk
       - title: Upload application logos
