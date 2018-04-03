@@ -225,20 +225,6 @@ tscli dr-mirror [-h] {start,status,stop}
 * `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
 * `tscli dr-mirror stop` Stops mirroring on the local cluster.
 
-### entity
-```
-tscli entity [-h] {pack} ...
-```
-Creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
-pinboard, or aggregated/unaggregated worksheet objects.
-
-* `tscli entity pack [-h] --id ID [--outdir FULLPATHNAME]`  Packs object metadata and schema into a file. Packed filenames have the format XXX.YYY where XXX is ### ?
-optional arguments:
-
-    * `--id ID` The required `ID` of the object to pack. IDs are found in thne URL of an answer,
-    pinboard, or aggregated/unaggregated worksheet. For example, the ID for a pinboard
-    				`http://thoughtspot.com:8088/#/pinboard/061457a2-27bc-43a9-9754-0cd873691bf0/` is `061457a2-27bc-43a9-9754-0cd873691bf0`.
-    * `--outdir FULLPATHNAME` Directory where the command places the packed object.
 
 ### etl
 
