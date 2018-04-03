@@ -14,17 +14,59 @@ These are the different sections in ThoughtSpot:
 
 ## Home
 
-Click the logo to go to the home page. The home page contains:
+Click the ThoughtSpot logo to go to the application home page. At the top of the
+home page is a search bar and below that several areas that show activity in your ThoughtSpot instance.
 
--   Search bar - Click in the search bar to start a new search. This is the same thing as clicking **Search** in the top navigation bar.
--   Last viewed pinboard - The home page shows the last pinboard you looked at. The dropdown box on the top left of the pinboard lets you choose a different pinboard without having to leave the home page.
--   Activity - The activity button shows recent actions performed by other people.
+<table>
+<colgroup>
+   <col style="width:25%" />
+   <col style="width:75%" />
+</colgroup>
+<thead class="thead" style="text-align:left;">
+   <tr>
+      <th>Keyword</th>
+      <th>Examples</th>
+   </tr>
+</thead>
+<tbody class="tbody">
+  <tr>
+    <th>All time popular<br>Recently trending</th>
+    <td>
+    Shows all time popular answers and pinboards by number of views. You can
+    choose between all-time popular or recently in the last 15 days. Small icons illustrate the type of visualization you'll find when you click on an item.
+    <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
+</td>
+  </tr>
+  <tr>
+    <th>Recently viewed</th>
+    <td>Answers and pinboards you've viewed recently.
+    <br>
+    <img src="{{ "/images/home-recently-viewed.png "| prepend: site.baseurl  }}" />
 
-    To view the activity panel, click on the **activity icon** on the right side of the home page.
+</td>
+  </tr>
+  <tr>
+    <th>Recent team activity</th>
+    <td>Answers, pinboards, worksheets, and tables people in your company have created or edited recently.
+    <br>
+    <img src="{{ "/images/home-team-activity.png "| prepend: site.baseurl  }}" />
 
-     ![]({{ site.baseurl }}/images/activity.png "Activity bar")
+</td>
+  </tr>
+  <tr>
+    <th>Did you know?</th>
+    <td>Contains auto analysis results from SpotIQ. Visible only to users that have the SpotIQ privilege.
+    <br>   
+    <img src="{{ "/images/home-spotiq.png "| prepend: site.baseurl  }}" />
 
-    You can even click on one of the object names to jump to its location.
+</td>
+  </tr>
+  </tbody>
+</table>
+
+The items shown in these areas are limited to answers, pinboards, worksheets,
+and other objects you have access to. For example, if you don't have the ability
+to use SpotIQ, that option does not appear.
 
 
 ## Search

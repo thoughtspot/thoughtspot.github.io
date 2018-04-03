@@ -225,20 +225,6 @@ tscli dr-mirror [-h] {start,status,stop}
 * `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
 * `tscli dr-mirror stop` Stops mirroring on the local cluster.
 
-### entity
-```
-tscli entity [-h] {pack} ...
-```
-Creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
-pinboard, or aggregated/unaggregated worksheet objects.
-
-* `tscli entity pack [-h] --id ID [--outdir FULLPATHNAME]`  Packs object metadata and schema into a file. Packed filenames have the format XXX.YYY where XXX is ### ?
-optional arguments:
-
-    * `--id ID` The required `ID` of the object to pack. IDs are found in thne URL of an answer,
-    pinboard, or aggregated/unaggregated worksheet. For example, the ID for a pinboard
-    				`http://thoughtspot.com:8088/#/pinboard/061457a2-27bc-43a9-9754-0cd873691bf0/` is `061457a2-27bc-43a9-9754-0cd873691bf0`.
-    * `--outdir FULLPATHNAME` Directory where the command places the packed object.
 
 ### etl
 
@@ -605,7 +591,7 @@ This subcommand has the following actions:
 ### node
 
 ```
-tscli node [-h] {check,ls,reinstall-os,status}
+tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status} ...
 ```
 
 This subcommand has the following actions:
@@ -622,6 +608,9 @@ This subcommand has the following actions:
 
   * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
   * `--cluster` Is the node part of a cluster (default: `False`)
+* `tscli node resume-reinstall-os` Resume in-progress reinstall
+
+
 
 ### saml
 
@@ -738,22 +727,21 @@ This subcommand supports the following actions:
 tscli spot [-h] {enable}
 ```
 
-This subcommand supports the following actions:
+Enables Spot integration.  This subcommand supports the following actions:
 
-`tscli spot [-h] {enable}` Enableds Spot integrtion.
+`tscli spot enable [-h] --token ` *`TOKEN`* `--thoughtspot_url` *`THOUGHTSPOT_URL`* `[--cache_timeout` *`CACHE_TIMEOUT`* `]`
+
+
+* `--token ` *`TOKEN`*  Slack authroization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.
+* `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
+* `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
+
 
 ### ssl
 
 ```
 tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 ```        
-
-
-status              Shows whether of SSL authentication is enabled or
-                    disabled for the ThoughtSpot application.
-tls-status          Prints the status of TLS support
-
-
 
 This subcommand supports the following actions:
 
@@ -821,6 +809,40 @@ tscli support [-h]
 ```
 
 This subcommand supports the following actions:
+
+* ` tscli support bundle [-h] [--include INCLUDE] [--exclude EXCLUDE] [--list_selectors] [--since SINCE] [--from FROM] [--to TO] [--out OUT] [--nodes NODES]`
+
+  - `--include` *`INCLUDE`* Comma separated list of selectors to include, each entry is
+    either a "selector" or a glob for matching files. To see the list of valid
+    selectors, run this command with `--list_selectors`. You may also specify: "`all`
+    to get all selectors and logs, and "basic" to get only the basic selectors.
+    Selectors may also be selectors meant for logs collect: all, orion, system, ts,
+    or the name of a service. Anything starting with / is assumed to be a glob
+    pattern and interpreted via find(1). Other entries are ignored. TIP: put single
+    quotes around the param value to prevent undesired glob expansion. Use "all" to
+    collect all selectors and all logs (default: all_but_logs)
+
+  - `--exclude` *`EXCLUDE`* Comma separated list of selectors to exclude. Applies to the
+    list selected by `--include`. Params are interpreted just like in `--include`. Use
+    the special keyword "logs" to exclude logs collection all together. (default:
+    None)
+
+  - `--list_selectors` List the selectors available for `--include` and
+    `--exclude`, and then exit. (default: `False`)
+
+  - `--since` *`SINCE`* Grab logs from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None)
+
+  - `--from` *`FROM`*  Timestamp where collection begins, must be of the form:
+    `yyyymmdd-HH:MM` (default: None)
+
+  - `--to` *`TO`* Timestamp where collection ends, must be of the form:
+    `yyyymmdd-HH:MM` (default: None)
+
+  - `--out` *`OUT`* Tarball path for dumping the support bundle (default:
+`/tmp/support_bundle.tar.gz`)
+
+  - `--nodes` *`NODES`* Comma separated list of nodes from where to collect logs. Skip this to use all
+nodes. (default: None)
 
 * `tscli support restart-remote` Restarts remote support.
 * `tscli support rm-admin-email` Removes the email address for contacting the customer administrator. Replaces it with the default ThoughtSpot Support email address.

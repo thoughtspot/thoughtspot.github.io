@@ -89,8 +89,8 @@ for a sandbox environment but is insufficient for a production environment.
 
     <table>
     <colgroup>
-    <col width="25%" />
-    <col width="60%" />
+    <col width="50%" />
+    <col width="50%" />
     </colgroup>
     <tr>
      <th>Setting</th>

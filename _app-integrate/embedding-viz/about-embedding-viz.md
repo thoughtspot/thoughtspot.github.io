@@ -19,7 +19,7 @@ The first example could require modifying a single HTML page while the later
 example may require working with a development team and several different
 workflows in a browser application.
 
-Regardless of the simplicity or complexity of your clieant application, its
+Regardless of the simplicity or complexity of your client application, its
 infrastructure must allow for loading and calling the ThoughtSpot JS library.
 This library allows you to authenticate to ThoughtSpot and load specific
 objects.
@@ -50,6 +50,13 @@ There are different methods for embedding ThoughtSpot into a client application:
 </table>
 
 You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
+
+### Configuration requirements for embedding
+
+Only Extended Enterprise installation can use ThoughSpot's embed functionality.
+ThoughSpot Enterprise installations must also work with ThoughSpot Support to
+enable embed before using this functionality.
+
 
 ## Choose an authentication methodology
 

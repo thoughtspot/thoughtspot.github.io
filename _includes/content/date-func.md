@@ -33,6 +33,16 @@
       <td><code class="highlighter-rouge">day_number_of_week (01/30/2015) = 6</code><br><code class="highlighter-rouge">day_number_of_week (shipped)</code></td>
     </tr>
     <tr>
+       <td><code>day_number_of_quarter</code></td>
+       <td>Returns the number of the day in a quarter for a given date.</td>
+       <td><code class="highlighter-rouge">day_number_of_quarter (01/30/2015)</code></td>
+    </tr>
+    <tr>
+       <td><code>day_number_of_week</code></td>
+        <td>Returns the number of the day in a week for a given date.</td>
+       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014) > 3</code></td>
+    </tr>
+    <tr>
       <td><code>day_number_of_year</code></td>
       <td>Returns the number (1-366) of the day in a year for the given date.</td>
       <td><code class="highlighter-rouge">day_number_of_year (01/30/2015) = 30</code><br><code class="highlighter-rouge">day_number_of_year (invoiced)</code></td>
@@ -73,6 +83,11 @@
       <td><code class="highlighter-rouge">month_number (09/20/2014) = 9</code><br><code class="highlighter-rouge">month_number (purchased)</code></td>
     </tr>
     <tr>
+       <td><code>month_number_of_quarter</code></td>
+       <td>Returns the month (1-12) number for the given date in a quarter.</td>
+       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) > 9 </code></td>
+    </tr>
+    <tr>
       <td><code>now</code></td>
       <td>Returns the current timestamp.</td>
       <td><code class="highlighter-rouge">now ()</code></td>
@@ -101,6 +116,21 @@
       <td><code>time</code></td>
       <td>Returns the time portion of a given date.</td>
       <td><code class="highlighter-rouge">time (3/1/2002 10:32) = 10:32</code><br><code class="highlighter-rouge">time (call began)</code></td>
+    </tr>
+    <tr>
+       <td><code>week_number_of_month</code></td>
+       <td>Returns the week number for the given date in a month.</td>
+       <td><code class="highlighter-rouge">week_number_of_month(03/23/2017) = 3</code></td>
+    </tr>
+    <tr>
+       <td><code>week_number_of_quarter</code></td>
+       <td>Returns the week number for the given date in a quarter.</td>
+       <td><code class="highlighter-rouge">week_number_of_quarter(04/03/2017)> 2 </code></td>
+    </tr>
+    <tr>
+       <td><code>week_number_of_year</code></td>
+       <td>Returns the week number for the given date in a year.</td>
+       <td><code class="highlighter-rouge">week_number_of_year(04/03/2017) = 20 </code></td>
     </tr>
     <tr>
       <td><code>year</code></td>
