@@ -1,5 +1,5 @@
 ---
-title: [Enabling ODBC Logs on Linux or Solaris]
+title: [Enable ODBC Logs on Linux or Solaris]
 keywords: tbd
 tags: [logs]
 summary: "Learn how to troubleshoot ODBC connections."

@@ -1,5 +1,5 @@
 ---
-title: [Enabling JDBC Logs]
+title: [Enable JDBC Logs]
 keywords: tbd
 tags: [logs]
 summary: "Configure logging parameter strings."

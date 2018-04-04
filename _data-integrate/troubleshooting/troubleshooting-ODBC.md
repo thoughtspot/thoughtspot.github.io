@@ -1,5 +1,5 @@
 ---
-title: [Enabling ODBC Logs on Windows]
+title: [Enable ODBC Logs on Windows]
 keywords: tbd
 tags: [logs]
 summary: "Using logs to aid in troulbeshooting."
