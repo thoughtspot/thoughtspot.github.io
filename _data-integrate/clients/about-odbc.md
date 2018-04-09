@@ -47,6 +47,8 @@ between source and target in ODBC. As much as possible ThoughtSpot automatically
 infers the incoming "compatible" input data  and converts it to the most likely
 ThoughtSpot target datatype.
 
+By default, we just take the source data as is, and write to the target column "assuming" it's compatible. There's no inferring or anything that happens here. It's the user's responsibility to ensure that the incoming data is EXACTLY in the same format as the target able. e.g. you MUST have source datatype as INT if the target ThoughtSpot datatype is INT. If the source has
+
 Alternatively, you can require that ThoughtSpot match the source data type
 exactly and, if it can't find a match, it returns an error and the data load
 fails. By mixing both types, you can configure along a scale of behavior between

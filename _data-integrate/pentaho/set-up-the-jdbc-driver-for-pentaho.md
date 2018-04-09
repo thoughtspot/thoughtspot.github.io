@@ -6,11 +6,16 @@ summary: "JDBC to connect to the Falcon Simba server from Pentaho."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Use JDBC to connect to the Falcon Simba server from Pentaho. The connection will be made between a new Falcon Table Input and Output objects.
+Use JDBC to connect to the Falcon Simba server from Pentaho. The connection will
+be made between a new Falcon Table Input and Output objects.
 
 ## Download the required files
 
-Before starting the Pentaho Data Integration (PDI) client and creating the connection, ensure that the Simba JDBC client libraries are present in the Pentaho client/server machines. This will ensure that they can be picked up at runtime. Please copy the `SimbaJDBCClient4.jar` file or the `thoughtspot_jdbc4.jar` file to the following directories:
+Before starting the Pentaho Data Integration (PDI) client and creating the
+connection, ensure that the Simba JDBC client libraries are present in the
+Pentaho client/server machines. This will ensure that they can be picked up at
+runtime. Please copy the `SimbaJDBCClient4.jar` file or the
+`thoughtspot_jdbc4.jar` file to the following directories:
 
 -   `<Pentaho_install_dir>/server/data-integration-server/tomcat/webapps/pentaho-di/WED-INF/lib/`
 -   `<Pentaho_install_dir>/design-tools/data-integration/lib/`
@@ -22,7 +27,9 @@ You can download these files from the Help Center.
 
 ## Set up the driver
 
-In this example, we are using Spoon, the graphical transformation and job designer associated with the PDI suite. It is also known as the Kettle project. Therefore, the screenshots will reflect this client version.
+In this example, we are using Spoon, the graphical transformation and job
+designer associated with the PDI suite. It is also known as the Kettle project.
+Therefore, the screenshots will reflect this client version.
 
 To set up the JDBC driver using Pentaho:
 
@@ -94,13 +101,16 @@ To set up the JDBC driver using Pentaho:
 
         `<server_ip>` is the IP of your Falcon cluster. `<database_name>` is the name of the database you want to connect to. Use TQL to create a database name if needed.
 
-    -   Custom Driver Class Name: `com.simba.client.core.jdbc4.JDBC4Driver
-`
-         Please ensure that there are no leading or trailing spaces in the Custom Connection URL and the Custom Driver Class Name fields. JDBC will get confused if there are any such spaces, and as a result, will not be able to establish a connection.
+    -   Custom Driver Class Name: `com.simba.client.core.jdbc4.JDBC4Driver `
+        Please ensure that there are no leading or trailing spaces in the Custom
+        Connection URL and the Custom Driver Class Name fields. JDBC will get
+        confused if there are any such spaces, and as a result, will not be able
+        to establish a connection.
 
     -   User Name and Password
 
-        The User Name and Password are your ThoughtSpot credentials, but you can elect to keep these fields empty.
+        The User Name and Password are your ThoughtSpot credentials, but you can
+        elect to keep these fields empty.
 
         ![]({{ site.baseurl }}/images/database_connection_pentaho.png "Database Connection properties")
 
