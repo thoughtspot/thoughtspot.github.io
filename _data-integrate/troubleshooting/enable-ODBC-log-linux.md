@@ -1,5 +1,5 @@
 ---
-title: [Enabling ODBC Logs on Linux or Solaris]
+title: [Enable ODBC Logs on Linux or Solaris]
 keywords: tbd
 tags: [logs]
 summary: "Learn how to troubleshoot ODBC connections."
@@ -11,7 +11,7 @@ If you need more information in order to troubleshoot ODBC connections, you can 
 To enable ODBC logs:
 
 1. Navigate to the directory where you installed ODBC.
-2. Open the file `odbc.ini` in a text editor.
+2. Open the `odbc.ini` file in a text editor.
 3. Find the settings `LogLevel` and `LogPath` in the file, and uncomment them by removing the "\#" at the beginning of each line.
 4. Edit the value for each of the logging properties:
 

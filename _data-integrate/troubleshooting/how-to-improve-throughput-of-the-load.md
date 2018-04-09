@@ -1,5 +1,5 @@
 ---
-title: [How to improve throughput of the load]
+title: [How to improve throughput]
 keywords: performance
 tags: [performance]
 last_updated: tbd

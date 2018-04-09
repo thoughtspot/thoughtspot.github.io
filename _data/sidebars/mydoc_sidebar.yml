@@ -1107,20 +1107,23 @@ entries:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
         output: web,digBk
-      - title: Enabling ODBC Logs on Windows
+      - title: Enable ODBC Logs on Windows
         url: /data-integrate/troubleshooting/troubleshooting-ODBC.html
         output: web,digBk
-      - title: Enabling ODBC Logs on Linux or Solaris
+      - title: Enable ODBC Logs on Linux or Solaris
         url: /data-integrate/troubleshooting/enable-ODBC-log-linux.html
         output: web,digBk
-      - title: Enabling JDBC Logs
+      - title: Enable JDBC Logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
       - title: Schema not found error
         url: /data-integrate/troubleshooting/schema-not-found.html
         output: web,digBk
-      - title: How to improve throughput of the load
+      - title: How to improve throughput
         url: /data-integrate/troubleshooting/how-to-improve-throughput-of-the-load.html
+        output: web,digBk
+      - title: ODBC tracing on Windows
+        url: /data-integrate/troubleshooting/windows-odbc-tracing.html
         output: web,digBk
     - levelTwoTitle: Reference
       output: web,digBk
