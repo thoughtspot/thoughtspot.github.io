@@ -1125,9 +1125,6 @@ entries:
     - levelTwoTitle: Reference
       output: web,digBk
       levelTwoItems:
-      # - title: Reference
-      #   url: /data-integrate/reference/intro-reference.html
-      #   output: pdf
       - title: Supported SQL commands
         url: /data-integrate/reference/odbc-commands.html
         output: web,digBk
@@ -1163,19 +1160,18 @@ entries:
     sectionitems:
     - title: About this reference
       url: /reference/intro-reference.html
-      output: pdf
+      output: web
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
-    - title: TQL reference
       url: /reference/sql-cli-commands.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: Date and time formats reference
       url: /reference/date-formats-for-loading.html
       output: web,refGd
@@ -1187,18 +1183,18 @@ entries:
       output: web,refGd
     - title: Alert codes reference
       url: /reference/alerts-reference.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: User action codes reference
       url: /reference/action-codes.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
   - sectiontitle: About this Release
-    output: web
+    output: web,rnotes
     sectionitems:
     - title: Help Center
       url: /release/help-center.html
@@ -1211,4 +1207,4 @@ entries:
       output: web
     - title: Topic index
       url: /reference/tags_index.html
-      output: web,refGd
+      output: web
