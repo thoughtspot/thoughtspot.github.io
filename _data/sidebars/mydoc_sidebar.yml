@@ -1163,7 +1163,7 @@ entries:
     sectionitems:
     - title: About this reference
       url: /reference/intro-reference.html
-      output: pdf
+      output: web
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
