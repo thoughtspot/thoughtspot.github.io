@@ -53,9 +53,5 @@ Here are the options, with information on where to find the documentation for ea
       <td><a href="{{"/data-integrate/pentaho/about-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
       <td>You can use the JDBC driver to connect to Pentaho and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
-    <tr>
-      <td><a href="{{"/data-integrate/clients/about-informatica.html" | prepend: site.baseurl }}">Informatica Connector</a></td>
-      <td>If your company uses Informatica, you can take advantage of the <a href="{{"/data-integrate/clients/about-informatica.html" | prepend: site.baseurl }}">Informatica Connector</a>. This allows ThoughtSpot to become a target database, into which you can load data.</td>
-    </tr>
   </tbody>
 </table>

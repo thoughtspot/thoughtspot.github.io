@@ -1078,9 +1078,6 @@ entries:
       - title: Use the JDBC Driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - title: About Informatica Connector
-      url: /data-integrate/clients/about-informatica.html
-      output: web,digBk
     - levelTwoTitle: Microsoft SSIS client
       output: web,digBk
       levelTwoItems:
@@ -1166,7 +1163,7 @@ entries:
     sectionitems:
     - title: About this reference
       url: /reference/intro-reference.html
-      output: web,refGd
+      output: pdf
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
