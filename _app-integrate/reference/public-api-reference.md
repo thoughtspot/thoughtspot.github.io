@@ -10,7 +10,7 @@ aimed to help you solve specific use cases, such as syncing users and groups, or
 fetching visualization headers. The following public APIs are available:
 
 - [pinboarddata API]({{ site.baseurl }}/app-integrate/reference/pinboarddata.html)
-- [metadata API]({{ site.baseurl }}/app-integrate/reference/methadata-api.html)
+- [metadata API]({{ site.baseurl }}/app-integrate/reference/metadata-api.html)
 - [session API]({{ site.baseurl }}/app-integrate/reference/session-api.html)
 - [user API]({{ site.baseurl }}/app-integrate/reference/user-api.html)
 - [group API]({{ site.baseurl }}/app-integrate/reference/group-api.html)
