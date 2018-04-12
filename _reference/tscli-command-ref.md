@@ -610,6 +610,32 @@ This subcommand has the following actions:
   * `--cluster` Is the node part of a cluster (default: `False`)
 * `tscli node resume-reinstall-os` Resume in-progress reinstall
 
+### rpackage
+
+```
+tscli rpackage [-h] {add,delete,list} ...
+```
+
+Manages R packages available to SpotIQ.
+
+
+* `tscli rpackage add [-h] [--repo` *`REPO`*`] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`]
+[--nodes` *`NODES`*`]` *`package_name`*  Command to add an R *`package_name`*  to the cluster. This command has the following options:
+
+  * `--repo` *`REPO`*  Specify the url of a specific repo to download packages
+  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be installed (default: 60)
+  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
+  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
+
+* `tscli rpackage add [-h] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`] [--nodes` *`NODES`*`]` *`package_name`* Command to delete an installed R package from the cluster. This command has the following options:
+
+  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be removed (default: 60)
+  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
+  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
+
+* `tscli rpackage list [-h] [--detailed` *`DETAILED`*`]`  List all R packages installed on the cluster.
+
+
 
 
 ### saml

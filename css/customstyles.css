@@ -6,6 +6,12 @@ div#toc ul li ul li {
 }
 */
 
+ol ol, ol ul, ul ol, ul ul {
+    /* margin-bottom: 0; */
+    list-style: inherit !important;
+    margin-bottom: 15pt;
+}
+
 div#unibox-suggest-box {
   padding: 0px !important;
 }
