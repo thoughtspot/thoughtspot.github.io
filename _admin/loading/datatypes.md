@@ -16,9 +16,9 @@ The tables you create to receive the data must have the same number of columns a
 | Data | Supported data types | Details |
 |--------------|----------------------|---------|
 |Character|`VARCHAR(*n*)`|Specify the maximum number of characters, as in `VARCHAR(255)`. The size limit is 1GB for `VARCHAR` values.|
-|Floating point|`DOUBLE` or `FLOAT`|`DOUBLE` is recommended.|
+|Floating point|`DOUBLE` or `FLOAT`|`DOUBLE` is recommended. DOUBLE has  RANGE `1.7E +/- 308` (15 digits).|
 |Boolean|`BOOL`|Can be `true` or `false`.|
-|Integer|`INT` or `BIGINT`|`INT` holds 32 bits. `BIGINT` holds 64 bits.|
+|Integer|`INT` or `BIGINT`|`INT` holds 32 bits. `BIGINT` holds 64 bits. INT has a range of `–2,147,483,648` to `2,147,483,647`. BIGINT range is `–9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`.|
 |Date or time| `DATE`,  `DATETIME`, `TIMESTAMP`, `TIME` |`DATETIME`, `TIMESTAMP`, and `TIME` are stored at the granularity of seconds. `TIMESTAMP` is identical to `DATETIME`, but is included for syntax compatibility.|
 
 {% include warning.html content="There is a 1GB limitation on the number of characters for `VARCHAR`. If you have any `VARCHAR` data that exceeds this limit, the entire load will fail."%}
