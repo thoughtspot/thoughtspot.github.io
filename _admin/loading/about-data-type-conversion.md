@@ -94,9 +94,9 @@ ALTER TABLE fruit_sales
    MODIFY COLUMN time_of_sale VARCHAR(32);
 ```
 
-## Boolean to string conversions
+## String to boolean conversions
 
-Boolean to string conversions have format strings, too. You'll use `parsinghint`
+String to boolean conversions have format strings, too. You'll use `parsinghint`
 as you do for date and time conversions. You can choose among these approaches:
 
 -   Option 1: Specify string values for both true and false. Any non-matching values get converted to null. In this example, "100" gets converted to true, and "0" gets converted to false. "-1" gets converted to null.
