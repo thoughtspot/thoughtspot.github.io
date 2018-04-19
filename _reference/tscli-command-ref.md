@@ -633,7 +633,7 @@ Manages R packages available to SpotIQ.
   * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
   * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
 
-* `tscli rpackage list [-h] [--detailed` *`DETAILED`*`]`  List all R packages installed on the cluster.
+* `tscli rpackage list [-h] [--detailed]`  List all R packages installed on the cluster.
 
 
 
