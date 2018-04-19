@@ -68,6 +68,8 @@ measure:
 
 ![]({{ site.baseurl }}/images/pivot-table-agg-totals.png )
 
+You can also **Remove** a headline.
+
 ## Heatmap of large contributors
 
 The heatmap functionality allows you to see which measures contribute more than
