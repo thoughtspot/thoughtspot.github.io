@@ -60,7 +60,7 @@ Use this subcommand to do the following:
 
 * `tscli alert info` Lists all alerts.
 * `tscli alert list` Lists the generated alerts.
-* `tscli alert off` Disables all alerts from the cluster.
+* `tscli alert off` Disables all alerts from the cluster in the cluster's timezone.
 * `tscli alert on` Enables alerts from the cluster.
 * `tscli alert silence --name <alert_name>`
 
