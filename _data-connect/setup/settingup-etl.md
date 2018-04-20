@@ -9,33 +9,38 @@ The ThoughtSpot team will assist you in the initial setup and configuration of T
 
 Your purchase of ThoughtSpot Data Connect includes the necessary credentials for connecting to Informatica. ThoughtSpot Support will supply the Informatica credentials, if you do not already have an account. You can change the Informatica credentials later, if you would like. You need these credentials when issuing the command to enable ThoughtSpot Data Connect.
 
-To set up ThoughtSpot Data Connect:
+To set up ThoughtSpot Data Connect. firts check with ThoughtSpot Support to ensure they have provisioned an account for you with the appropriate connectivity licenses. A full list of supported connectivity licenses is available in the [Data Connect connectors reference]({{ site.baseurl }}/data-connect/reference/data-connect-connection-credentials.html#).
 
-1. Check with ThoughtSpot Support to ensure they have provisioned an account for you with the appropriate connectivity licenses.
-    A full list of supported connectivity licenses is available in the [Data Connect connectors reference]({{ site.baseurl }}/data-connect/reference/data-connect-connection-credentials.html#).
-2. Enable ThoughtSpot Data Connect by completing the following steps:
-    1. Log in to the Linux shell using SSH.
-    2. Invoke `tscli` to enable ThoughtSpot Data Connect, which will register with Informatica Cloud and start the `infaagent` service.
-        The process will take a couple of minutes:
+Enable ThoughtSpot Data Connect by completing the following steps:
 
-        ```
-        tscli etl enable-lw
-          --admin_username <admin_user>
-          --username <Informatica_user>
-          --thoughtspot_url <URL>
-          --org_id <informatica_org_id>
-          [--pin_to <IP_address>]
-          [--proxy_host <proxy_server_hostname>]
-          [--proxy_port <proxy_server_port>]
-        ```
+1. Log in to the Linux shell using SSH.
+2. Invoke `tscli` to enable ThoughtSpot Data Connect, which will register with Informatica Cloud and start the `infaagent` service.
 
-        If you want to use HTTPS with your URL, you will need to use a signed certificate.
+    The process will take a couple of minutes:
 
-        The parameter `org_id` specifies the Informatica id of the organization (company). `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only `003XYZ`
+    ```
+    tscli etl enable-lw
+    --admin_username <admin_user>
+    --username <Informatica_user>
+    --thoughtspot_url <URL>
+    --org_id <informatica_org_id>
+    [--pin_to <IP_address>]
+    [--proxy_host <proxy_server_hostname>]
+    [--proxy_port <proxy_server_port>]
+      ```
 
-        The command `--pin_to` is optional. If you specify an IP to pin to, that node becomes sticky to the Informatica agent, and will always be used. This defaults to the public IP address of the localhost where this command was run.
+    If you want to use HTTPS with your URL, you will need to use a signed certificate.
 
-        The commands `--proxy_host <proxy_server_hostname>` and `--proxy_port <proxy_server_port>` are also optional, and specify the proxy details.
+    The parameter `org_id` specifies the Informatica id of the organization
+    (company). `org_id` shouldn't include the prefix `Org`. For example, if on
+    Informatica cloud, the `orgid` is `Org003XYZ`, then use only `003XYZ`
+
+    The command `--pin_to` is optional. If you specify an IP to pin to, that node
+    becomes sticky to the Informatica agent, and will always be used. This
+    defaults to the public IP address of the localhost where this command was run.
+
+    The commands `--proxy_host <proxy_server_hostname>` and `--proxy_port
+    <proxy_server_port>` are also optional, and specify the proxy details.
 
 3. You may change your user password using the following `tscli` command:
 
@@ -43,4 +48,4 @@ To set up ThoughtSpot Data Connect:
     `tscli etl change-password --admin_username <admin_user> --username <Informatica_user>`
     ```
 
-4. Now you can log in to ThoughtSpot, and begin using ThoughtSpot Data Connect.
+Now, you can log in to ThoughtSpot, and begin using ThoughtSpot Data Connect.

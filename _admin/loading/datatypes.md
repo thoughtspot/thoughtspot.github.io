@@ -13,13 +13,43 @@ Before you import data, compare the data types you want to load with these suppo
 
 The tables you create to receive the data must have the same number of columns and data types as the data you will be loading. Choose a data type for each column from the list of supported data types:
 
-| Data | Supported data types | Details |
-|--------------|----------------------|---------|
-|Character|`VARCHAR(*n*)`|Specify the maximum number of characters, as in `VARCHAR(255)`. The size limit is 1GB for `VARCHAR` values.|
-|Floating point|`DOUBLE` or `FLOAT`|`DOUBLE` is recommended. DOUBLE has  RANGE `1.7E +/- 308` (15 digits).|
-|Boolean|`BOOL`|Can be `true` or `false`.|
-|Integer|`INT` or `BIGINT`|`INT` holds 32 bits. `BIGINT` holds 64 bits. INT has a range of `–2,147,483,648` to `2,147,483,647`. BIGINT range is `–9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`.|
-|Date or time| `DATE`,  `DATETIME`, `TIMESTAMP`, `TIME` |`DATETIME`, `TIMESTAMP`, and `TIME` are stored at the granularity of seconds. `TIMESTAMP` is identical to `DATETIME`, but is included for syntax compatibility.|
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="50%" />
+</colgroup>
+  <tr>
+    <th>Data</th>
+    <th>Supported data types</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>Character</td>
+    <td><code>VARCHAR(*n*)</code></td>
+    <td>Specify the maximum number of characters, as in <code>VARCHAR(255)</code>. The size limit is 1GB for <code>VARCHAR</code> values.</td>
+  </tr>
+  <tr>
+    <td>Floating point</td>
+    <td><code>DOUBLE</code> or <code>FLOAT</code></td>
+    <td><code>DOUBLE</code> is recommended. <code>DOUBLE</code> has a range of <code>1.7E +/- 308</code> (15 digits).</td>
+  </tr>
+  <tr>
+    <td>Boolean</td>
+    <td><code>BOOL</code></td>
+    <td>Can be <code>true</code> or <code>false</code>.</td>
+  </tr>
+  <tr>
+    <td>Integer</td>
+    <td><code>INT</code> or <code>BIGINT</code></td>
+    <td><code>INT</code> holds 32 bits. <code>BIGINT</code> holds 64 bits. <code>INT</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>BIGINT</code> range is <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
+  </tr>
+  <tr>
+    <td>Date or time</td>
+    <td><code>DATE</code>,  <code>DATETIME</code>, <code>TIMESTAMP</code>, <code>TIME</code></td>
+    <td><code>DATETIME</code>, <code>TIMESTAMP</code>, and <code>TIME</code> are stored at the granularity of seconds. <code>TIMESTAMP</code> is identical to <code>DATETIME</code>, but is included for syntax compatibility.</td>
+  </tr>
+</table>
 
 {% include warning.html content="There is a 1GB limitation on the number of characters for `VARCHAR`. If you have any `VARCHAR` data that exceeds this limit, the entire load will fail."%}
 

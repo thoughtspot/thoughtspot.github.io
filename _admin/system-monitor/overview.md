@@ -319,17 +319,16 @@ specify a time period or even a type of command to include.
 
 ```
 [admin@testsystem ~]$ tscli event list --since 3d
-+-------------------------------+-----------------------------------+----------------------------------+
-|             DATE              |               USER                |           SUMMARY                |
-+-------------------------------+-----------------------------------+----------------------------------+
-| 2018-03-06 11:57:10 -0800 PST | eng-admin@thoughtspot.int         | User Management: User            |
-|                               |                                   | "guest_1" updated                |
-| 2018-03-06 11:48:10 -0800 PST | admin                             | tscli node ls                    |
-| 2018-03-06 11:17:04 -0800 PST | eng-admin@thoughtspot.int         | Metadata Management:             |
-|                               |                                   | Metadata object "Number of       |
-|                               |                                   | Opportunities by Opportunity     |
-|                               |                                   | AE and Stage" of type            |
-|                               |                                   | "QUESTION_ANSWER_BOOK" saved     |
++-------------------------------+-----------------------+----------------------------+
+|             DATE              |       USER            |           SUMMARY          |
++-------------------------------+-----------------------+----------------------------+
+| 2018-03-06 11:57:10 -0800 PST |eadmin@thoughtspot.int | User Management: User      |
+|                               |                       | "guest_1" updated          |
+| 2018-03-06 11:48:10 -0800 PST |admin                  | tscli node ls              |
+| 2018-03-06 11:17:04 -0800 PST |eadmin@thoughtspot.int | Metadata Management:       |
+|                               |                       | Metadata object "Number of |
+|                               |                       | Opportunity                |
+|                               |                       | AE and Stage" of type      |
 ...
 ```
 

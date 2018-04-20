@@ -4,6 +4,7 @@ keywords: tbd
 last_updated: tbd
 summary: "You can adjust the data model for a newly loaded table."
 sidebar: mydoc_sidebar
+toc: false
 permalink: /:collection/:path.html
 ---
 To make modeling settings for a table you've just loaded, or to make a quick

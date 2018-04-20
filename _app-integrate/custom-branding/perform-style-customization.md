@@ -4,6 +4,7 @@ keywords: tbd
 last_updated: tbd
 summary: "Style Customization allows you to change the overall style of your ThoughtSpot interface. "
 sidebar: mydoc_sidebar
+toc: false
 permalink: /:collection/:path.html
 ---
 Using style customization you can create a uniform ThoughtSpot experience that
@@ -22,7 +23,6 @@ ThoughtSpot Application Integration Guide.
 To enable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
 in the middle of the page is automatically removed when Style Customization is
 enabled.
-
 
 ## Change style customization
 
