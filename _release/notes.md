@@ -1,5 +1,5 @@
 ---
-title: ["Release Notes"]
+title: ["4.5 Release Notes"]
 toc: false
 keywords: "release notes"
 last_updated: tbd
@@ -10,6 +10,7 @@ permalink: /:collection/:path.html
 <ul>
    <li><a href="#4-5-new features-and-functionality ">4.5 New Features and Functionality</a></li>
    <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
+   <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
 <h2>Supported upgrade paths</h2>
 <p>If you are running one of the following releases, you can upgrade to this release directly.
@@ -665,3 +666,10 @@ permalink: /:collection/:path.html
       </tr>
    </tbody>
 </table>
+<h2>Notes for older versions</h2>
+<ul>
+<li><a href="{{"/4.4/release/notes.html" | prepend: site.baseurl }}">4.4 Release Notes</a></li>
+<li><a href="{{"/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf" | prepend: site.url }}">4.2 Release Notes</a></li>
+<li><a href="{{"/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf" | prepend: site.url }}">3.5 Release Notes</a></li>
+<li><a href="{{"/3.4/pdf/ThoughtSpot_Release_Notes_3.4.pdf" | prepend: site.url }}">3.4 Release Notes</a></li>
+</ul>
