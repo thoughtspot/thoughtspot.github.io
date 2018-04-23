@@ -10,7 +10,7 @@ System monitoring tools in ThoughtSpot include an **Admin > System Health** page
 out-of-the-box system monitoring pinboards. From these worksheets, you can
 create your own custom visualizations and pinboards.  This page introduces these features and directs you towards more detailed information.
 
-## **System Health** center
+## System Health center
 
 The ThoughtSpot application includes a **System Health** center, for easy monitoring
 of usage, alerts, events and general cluster health. You view the System Health

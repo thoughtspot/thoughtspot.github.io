@@ -39,7 +39,7 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_Users_Guide",
+      "filename": "ThoughtSpot_User_Guide",
       "title": "Users Guide",
       "codes": [
         "ugBk",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "filename": "Release_Notes",
+      "filename": "ThoughtSpot_Release_Notes",
       "title": "Release Notes",
       "codes": [
         "rnotes"

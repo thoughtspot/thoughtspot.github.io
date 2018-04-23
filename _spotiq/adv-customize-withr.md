@@ -17,7 +17,7 @@ analysis in a ThoughtSpot environment.
 
 This section explains the feature and how to use it. It is not meant as an R
 primer. To learn more about R and how to use it, visit the
-(R Project for Statistical Computing)[https://www.r-project.org/].  
+[R Project for Statistical Computing](https://www.r-project.org/).  
 
 ## Understand R script requirements in ThoughtSpot
 

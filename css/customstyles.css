@@ -6,6 +6,12 @@ div#toc ul li ul li {
 }
 */
 
+ol ol, ol ul, ul ol, ul ul {
+    /* margin-bottom: 0; */
+    list-style: inherit !important;
+    margin-bottom: 15pt;
+}
+
 div#unibox-suggest-box {
   padding: 0px !important;
 }
@@ -812,6 +818,7 @@ a[data-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
+    text-decoration:none;
 }
 
 .seriesNext, .seriesContext {
@@ -1094,6 +1101,7 @@ a.no_icon:after
 
 .btn-default {
     margin-bottom: 10px;
+    background-color: #ea8f3e59;
 }
 
 /* algolia search */

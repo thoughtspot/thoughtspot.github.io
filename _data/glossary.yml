@@ -9,3 +9,5 @@ filter: "A column value added to search.  Filters appear in the search bar as a 
 pinned measure: "Aggregating a value by a specific attribute.  This is also known as group aggregation or a level-based measure."
 group aggregation: "Aggregating a value by a specific attribute.  This is also known as pinned aggregation or a level-based measure."
 reportbook: "An internal name for a visualization."
+user: "Individuals that can log into ThoughtSpot (authentication)."
+forumula: "An expression applying a calculation, usually mathmaticaly, against data."

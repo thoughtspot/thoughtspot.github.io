@@ -1,784 +1,675 @@
 ---
-title: ["Release Notes"]
+title: ["4.5 Release Notes"]
 toc: false
 keywords: "release notes"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.4.1 version. Below is the list features and issues that were part of the 4.4.X release cycle.</p>
-
+<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5 version. Below is the list features and issues that were part of the 4.5.X release cycle.</p>
 <ul>
-<li><a href="#4-4-1-new-features-and-functionality">4.4.1 New Features and Functionality</a></li>
-<li><a href="notes.html#4-4-1-fixed-bugs">4.4.1 Fixed bugs</a></li>
-<li><a href="#4-4-new-features-and-functionality">4.4 New Features and Functionality</a></li>
-<li><a href="notes.html#4-4-fixed-bugs">4.4 Fixed bugs</a></li>
+   <li><a href="#4-5-new features-and-functionality ">4.5 New Features and Functionality</a></li>
+   <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
+   <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
-
-{% include callout.html content="For detailed descriptions of new features and capabilities in the 4.4 release, see the official release announcement on the ThoughtSpot blog <b><a href='https://www.thoughtspot.com/thoughtspot-blog/5-amazing-new-additions-thoughtspot-44'>5 Amazing New Additions in ThoughtSpot 4.4</a>.</b>" type="success" %}
-
 <h2>Supported upgrade paths</h2>
-
 <p>If you are running one of the following releases, you can upgrade to this release directly.
-
 <ul>
-<li>4.2.3, 4.3, 4.4 and any hotfixes or customer patches on these branches</li>
+   <li>4.2.3, 4.3, 4.4.X and any hotfixes or customer patches on these branches</li>
 </ul>
-
 <p>If you are running a different version, you need to do a multiple pass
-upgrade. First, upgrade to one of the above versions, and then to this release.</p>
-
-<h2>4.4.1 New&nbsp;Features and Functionality&nbsp;</h2>
-
+   upgrade. First, upgrade to one of the above versions, and then to this release.
+</p>
+<h2><br />4.5 New&nbsp;Features and Functionality&nbsp;</h2>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<!-- <thead>
-<tr style="width: 100%;">
-<th style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; font-weight: bold;" title="Release Note Text">Release Note Text</th>
-</tr>
-</thead> -->
-<tbody>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Trusted_Authentication"></a>Trusted_Authentication</h4>
-<p>Included in this release is support for a trusted authentication service. A ThoughtSpot installation can enable support for token-based authentication service. This allows an installation to use a central authentication service rather than using ThoughtSpot to authenticate. In this architecture, ThoughtSpot provides the service with a token that allows it to authenticate on behalf of users.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="UIImprovements"></a>UI Improvements</h4>
-<p>Included in this release are visual changes meant to improve the visual appeal of the user interface.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="FillAgg"></a>Filtered aggregations in search bar</h4>
-<p>You can now use a set of filtered aggregation functions in the Formula Editor rather than crafting a lengthy `if then else` formula to achieve that today.  Filters are useful for queries where the results should reflect a new, filtered value. For example, a query that compares total review with the cost of the `west` region. In this example, you filter the region column to values in the `west` only.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="ExpandedAnswerspagefeatures"></a>Expanded Answers page features</h4>
-<p>This release includes an expanded information layout available with each answer. This expansion includes the following features;</p>
-<ul>
-<li>A subsection detailing related insight cards you can fire.</li>
-<li>Responsive layout for all tiles</li>
-<li>Related queries that detail additional queries you may use.</li>
-</ul>
-<p><span class="image-wrap"><img style="border: 0px solid black;" src="{{"/images/notes/image-2017-11-13-17-20-07-383.png" | prepend: site.baseurl }}"/></span></p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Helpsearchfeature"></a>Help search feature</h4>
-<p>You can enable the new help search feature on your installation. This feature allows you to search the ThoughtSpot help from the <strong>Search</strong> bar.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Dialoginteractionsimproved"></a>Dialog interactions improved</h4>
-<p>This release includes improvements to dialog interactions and interfaces.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Removalofthetscliospackagecommand"></a>Changes to the tscli command</h4>
-<p>A new code>tscli entity [-h] {pack}</code> command creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
-pinboard, or aggregated/unaggregated worksheet objects.</p>
-<p>Now, the <code>tscli callhome</code> bundle defaults to the inclusion of 100 alerts collected for the last 7 days.</p>
-<p>Beginning with this release, the <code>tscli os package</code> command is no longer available. You should use the platform specific commands to list the packages on your system. For example, you can use the <code>dpkg -l | rpm -qa</code> command.</p>
-<p>See the documentation for the <a href="{{"/reference/tscli-command-ref.html" | prepend: site.baseurl}}">tscli</a> command for more information.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Visualizationandpinboardinteractionautosavessomechanges"></a>Visualization and pinboard interaction auto-saves some changes</h4>
-<p>This release includes changes to user interactions on pinboards and visualizations. Previously, visual changes to the colors or column order required you to explicitly save your change. This is no longer the case, these changes on visualizations, pinboards, and pinboard tiles now save automatically.</p>
-<p>Some pinboard changes are applied but require a user to explicitly save the change to complete the edit. These changes are:</p>
-<ul>
-<li>filter changes</li>
-<li>reording tiles</li>
-<li>resizing tiles</li>
-<li>deletion of a tile</li>
-</ul>
-<p>If a user attempts to navigate away from an object with a pending change of this type, the system prompts the user to save the change.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="SupportforNFS4protocol"></a>Support for NFS4 protocol</h4>
-<p>This release includes support for the NFS4 protocol.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="Designatesharingornonsharing"></a>Designate sharing or non-sharing</h4>
-<p>A new feature in this release allows you to designate whether information <em>can be shared</em> with a user or group.</p>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h4><a name="NewSSHaccountprovided"></a>New SSH account provided</h4>
-<p>This release includes a <code>thoughtspot</code> OS user. This user has the ability to execute <code>tscli</code> commands that do not require <code>sudo</code> or that do no impact <code>rootfs</code> resources. An example of a typical command this user can execute is the <code>tscli cluster status</code> command. If the user cannot execute a command, the system returns an informative error message.</p>
-</td>
-</tr>
-</tbody>
-</table>
+   <tbody>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="UIReportsquerycancellation"></a>UI Reports query cancellation</h3>
+            <p>Beginning in this release, ThoughSpot reports queries which exceed system resource:</p>
+            <p><tt>Query cancelled due to memory limits being exceeded (OOM).</tt></p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h4><a name="Datatypeinformationavailableonhover"></a>Data type information available on hover</h4>
+            <p>The data type information is now available when a user hovers over a column.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Improvedsessionsecurity"></a>Improved session security</h3>
+            <p>New improvements in security reduce the amount of information made available by the UI during a user session.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Improvedmemorymanagementlogs"></a>Improved memory management logs</h3>
+            <p>This release includes improvements to how the system logs memory situations. The logs no record when a situation begins and ends plus information about which request triggered the situation. The system also now keeps a tally of how many distinct clients experienced a rejection.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Improvementsinupgrade"></a>Improvements in upgrade</h3>
+            <p>This release includes significant improvements in the performance of upgrades particularly those installations with large objects.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Multipledata%2Ftimeformattedcolumnsindataimport"></a>Multiple data/time formatted columns in data import</h3>
+            <p>You imported data can now include columns with different date/time formats.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="NewcommandstoinstallRpackages"></a>New commands to install R packages</h3>
+            <p>This release includes the `tscli rpackage` command. This command allows users to manage R packages for use with SpotIQ.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Settinguserfeedbackemail"></a>Setting user feedback email</h3>
+            <p>Users in ThoughtSpot may be asked for feedback for new or BETA features in the<br /> system. By default, feedback goes directly to ThoughtSpot support. Alternatively, you can send feedback to someone in your company. See the <tt>tscli</tt> commands reference for details.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="SpotIQprofilepreferences"></a>SpotIQ profile preferences</h3>
+            <p>In this release, you can configure your SpotIQ preferences in your user profile. These preferences control notifications and allows you exclude nulls or zero measures from your analysis.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Flyingournewcolors"></a>Flying our new colors</h3>
+            <p>In this release, we are changing our primary navigation bar from black to light gray. Screen captures in the documentation may show the older color scheme. Expect them to update over all.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="ExpandRLSconfigurationtoincludeallunderlyingtables"></a>Expand RLS configuration to include all underlying tables</h3>
+            <p>By default, worksheet queries only take into account RLS rules on tables whose<br /> columns appear in the query. Other related tables that may underly the worksheet<br /> are ignored. This means that not all RLS rules on underlying tables are applied<br /> when a user queries a worksheet.</p>
+            <p>You can configure a stricter application of RLS rules to take into account RLS<br /> rules from all the tables underlying the worksheet. This is recommended if you<br /> have key dimension tables that worksheets rely on but that are not necessarily<br /> regularly accessed through query. To do this, contact ThoughtSpot Customer<br /> Support.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Higherbulkfilterlimit"></a>Higher bulk filter limit</h3>
+            <p>Users can now have up to 10K values in a bulk filter. Additionally, bulk filtering no longer requires validation of filtered values. Values in the bulk filter that do not exist in the data are allowed in the filter. This allows a filter to anticipate data that may be present in the future.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Newhomepage"></a>New home page</h3>
+            <p>This release includes updates to the application home page. It now contains several new sections intended to encourage users to explore and learn about your company data:</p>
+            <ul>
+               <li><strong>All time popular/Recently trending</strong> answers and pinboards</li>
+               <li><strong>Recently viewed</strong> answers and pinboards</li>
+               <li><strong>Recent team activity</strong> Answers, pinboards, worksheets, and tables people in your company have created or edited recently.</li>
+               <li><strong>Did you know?</strong> Auto analysis results from SpotIQ</li>
+            </ul>
+            <p>The areas are restricted by privileges just as other areas. For example, if a user doesn't have the ability<br /> to use SpotIQ, that option does not appear.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Strictercolumnsharingfeature"></a>Stricter column sharing feature</h3>
+            <p>This release includes the ability to apply strict column level security. Under the standard column sharing, users without access to a specific table column can still see the column's data if subsequent worksheets relying on that data were shared with them. Now, you can for your installation, prevent this permissive sharing and prevent users from ever seeing the data. Speak with ThoughtSpot Customer Support for information on enabling this feature.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="GrantDownload%2FUploadtoAll"></a>Grant Download/Upload to All</h3>
+            <p>This release includes two APIs (<tt>v1/group/addprivilege</tt> or <tt>v1/group/removeprivilege</tt>) that allow you to add or remove the <tt>DATADOWNLOADING</tt> or <tt>USERDATAUPLOADING</tt> privilege to/from the system default <tt>ALL_GROUP</tt> group.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Newdatefunctionsforformulas"></a>New date functions for formulas</h3>
+            <p>This release includes several new date functions for formulas:</p>
+            <ul>
+               <li><strong>day_number_of_quarter</strong></li>
+               <li><strong>day_number_of_week</strong></li>
+               <li><strong>month_number_of_quarter</strong></li>
+               <li><strong>week_number_of_month</strong></li>
+               <li><strong>week_number_of_quarter</strong></li>
+               <li><strong>week_number_of_year</strong></li>
+            </ul>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Metricspipelineimprovements"></a>Metrics pipeline improvements</h3>
+            <p>Included in this release are metrics pipelines that empower both our team and yours to enrich the ThoughSpot product experience. The new metric pipelines enable:</p>
+            <ul>
+               <li>Faster issue resolution: ThoughSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. Our support team can begin working to remediate any issue with you at once.</li>
+               <li>Failure prevention: Metrics provides direct visibility to the ThoughtSpot team on your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to prevent failures. Metrics also help reduce SLA times as the team can debug much faster.</li>
+               <li>Improved Search: ThoughSpot can tune search algorithms by studying search history and schema.</li>
+               <li>Improve Performance: ThoughSpot analyzes expensive and complex query patterns to look for performance optimizations.</li>
+               <li>Improved Browser Performance: Finally, the metrics pipeline allows ThoughSpot to identify application-use patterns that contribute to performance bottlenecks with specific browsers and help your team prevent or alleviate them.</li>
+            </ul>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Relativetimefiltering"></a>Relative time filtering</h3>
+            <p>This release includes support for filtering with relative time frame. The syntax for this filter is:</p>
+            <p><tt>last <span class="error">[N]</span> &lt;period&gt; for each &lt;period&gt;</tt></p>
+            <p>For example, this filter presents results for the last two months for all the years available in the data.</p>
+            <p><tt>last 2 months for each year</tt></p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Gridlinesforchartswithx%2Fyaxis"></a>Gridlines for charts with x/y axis</h3>
+            <p>Users can now enable the display of gridlines in charts that have an x and y axis.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="ImprovementstoGrowthovertimequeries"></a>Improvements to Growth-over-time queries</h3>
+            <p>This release includes improvements with queries that use growth of queries with formats such as the following:</p>
+            <p><tt>growth of &lt;measure_column&gt; by &lt;date_column&gt; &lt;bucket&gt; &lt;period-over-period&gt;</tt></p>
+            <p>This table shows the possible buckets and the period-over keywords you can<br /> combine:</p>
+            <div class="table-wrap">
+               <table class="confluenceTable">
+                  <tbody>
+                     <tr>
+                        <td class="confluenceTd"><tt>quarterly</tt></td>
+                        <td class="confluenceTd"><tt>monthly</tt></td>
+                        <td class="confluenceTd"><tt>weekly</tt></td>
+                        <td class="confluenceTd"><tt>daily</tt></td>
+                        <td class="confluenceTd"><tt>hourly</tt></td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><tt>year-over-year</tt></td>
+                        <td class="confluenceTd"><tt>year-over-year</tt></td>
+                        <td class="confluenceTd"><tt>year-over-year</tt></td>
+                        <td class="confluenceTd"><tt>year-over-year</tt></td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd"><tt>quarter-over-quarter</tt></td>
+                        <td class="confluenceTd"><tt>quarter-over-quarter</tt></td>
+                        <td class="confluenceTd"><tt>quarter-over-quarter</tt></td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd"><tt>month-over-month</tt></td>
+                        <td class="confluenceTd"><tt>month-over-month</tt></td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd"><tt>week-over-week</tt></td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                        <td class="confluenceTd"><tt>day-over-day</tt></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Newperiodkeywords"></a>New period keywords</h3>
+            <p>This release includes expansions to the time-series keywords. The <tt>quarter of year</tt> and <tt>day of month</tt> keywords were added.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Abilitytosettableloadprioritization"></a>Ability to set table load prioritization</h3>
+            <p>You can now use <tt>tql</tt> to set table load priority. You can set priority values between <tt>1-100</tt>. The default priority is <tt>50</tt>. The following show some the new commands for setting and changing table load priority:</p>
+            <div class="code panel" style="border-width: 1px;">
+               <div class="codeContent panelContent">
+                  <pre class="code-java">  alter table <span class="code-quote">'t1'</span> set load priority [value]
+  alter table <span class="code-quote">'t1'</span> remove load priority
+</pre>
+               </div>
+            </div>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Customizeheadlinedisplay"></a>Customize headline display</h3>
+            <p>Now, you can decide whether or not to display headlines in your table results. To customize headlines, choose <strong>Actions &gt; Customize summaries</strong>.</p>
+            <p><span class="image-wrap">
+               <img style="border: 0px solid black;" src="{{ "/images/notes/image-2018-03-21-15-35-53-119.png"| prepend: site.baseurl }}"/>
+               </span>
+            </p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h4><a name="Pinboardinformation"></a>Pinboard information</h4>
+            <p>The *<strong>Actions &gt; Pinboard Info</strong>* was added to the pinboards. This feature allows you to see who authored a pinboard, when it was created, and when it was last modified.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Improvedcallhomefunctionality"></a>Improved call home functionality</h3>
+            <p>"Call home" data is metadata and usage data from your ThoughtSpot cluster. ThoughtSpot's "call home" functionality intermittently sends a call home bundle<br /> of statistics to a ThoughtSpot S3 server via HTTPS. The data is encrypted at<br /> rest on the server.</p>
+            <p>Beginning with this release, callhome is enabled by default. Your ThoughtSpot Support personnel configures callhome for you during installation and upgrade.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="AdditionalRLSabilitieswithprivilege"></a>Additional RLS abilities with privilege</h3>
+            <p>Users in groups with this privilege (directly or via group inheritance) can now add/edit/delete existing RLS rules. They were are already permitted to:</p>
+            <ul>
+               <li>Exempt from row-level security (RLS) rules.</li>
+               <li>Permitted to check or uncheck Bypass RLS on a worksheet.</li>
+            </ul>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Newdefaultsnapshotpolicy"></a>New default snapshot policy</h3>
+            <p>This release includes a new default snapshot policy. Three snapshots are taken over 4 hour intervals in the course of a day. And 4 daily snapshots are taken. This provides continuity over the long weekends in many countries by ensuring snapshots on Saturda, Sunday, Monday, and Tuesday.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h4><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h4>
+            <p>The Learn option from the main menu has moved from a BETA to a GA feature. Lean uses replay to teach users how to perform search with ThoughtSpot.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h4><a name="Filteredaggregation"></a>Filtered aggregation</h4>
+            <p>You can now use a set of filtered aggregation functions in the Formula Editor rather than crafting a lengthy <tt>if then else</tt> formula to achieve that today. Filters are useful for queries where the results should reflect a new, filtered vale. For example, a query that compares total review with the cost of the <tt>west</tt> region. In this example, you filter the region column to values in the <tt>west</tt> only.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Disablefooterinsomeembedsituations"></a>Disable footer in some embed situations</h3>
+            <p>This release includes the ability to disable the footer in embed applications that involve an individual visualization.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="UpdatestotheSystemHealthpinboards"></a>Updates to the System Health pinboards</h3>
+            <p>This release includes updates to counts in System Health for:</p>
+            <ul>
+               <li>pinboard impressions</li>
+               <li>ad-hoc searches -new search done from search bar</li>
+               <li>user counts</li>
+            </ul>
+            <p>New boards were added and some older boards were deprecated. A expanded monitoring section was added to the documentation as well.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Comparisonwithvsandall"></a>Comparison with vs and all</h3>
+            <p>Users can now do comparisons with the <tt>vs</tt>/<tt>versus</tt> keyword. You can also use the new <tt>all</tt> keyword in these comparison expressions.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="NewtsusernamevariableforRLS"></a>New ts_username variable for RLS</h3>
+            <p>A new <tt>ts_username</tt> variable was added for use in row level security (RLS) rules.</p>
+            <p><tt>ts_username != 'mark'</tt></p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Periodagoanalysisfeature%22foreach%22andversusandmore"></a>Period-ago analysis feature "for each" and versus and more</h3>
+            <p>This feature allows user to analyze and compare two time periods. For example, a user wants to compare monthly performance this year vs last year.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="NewlanguagesandCanadiangmapping"></a>New languages and Canadiang mapping</h3>
+            <p>This release includes support for Canadian province and county maps.</p>
+            <p>Additionally, following languages are possible from the interface.</p>
+            <div class="table-wrap">
+               <table class="confluenceTable">
+                  <tbody>
+                     <tr>
+                        <td class="confluenceTd">Locale</td>
+                        <td class="confluenceTd">Language</td>
+                        <td class="confluenceTd">BETA?</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>de-DE</strong></td>
+                        <td class="confluenceTd">German</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>en-CA</strong></td>
+                        <td class="confluenceTd">Canadian English</td>
+                        <td class="confluenceTd">Yes</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>en-GB</strong></td>
+                        <td class="confluenceTd">United Kingdom English</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>en-US</strong></td>
+                        <td class="confluenceTd">English (United States)</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>es-US</strong></td>
+                        <td class="confluenceTd">Spanish (United States)</td>
+                        <td class="confluenceTd">Yes</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>fr-CA</strong></td>
+                        <td class="confluenceTd">French (Canada)</td>
+                        <td class="confluenceTd">Yes</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>fr-FR</strong></td>
+                        <td class="confluenceTd">French (France)</td>
+                        <td class="confluenceTd">Yes</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>ja</strong></td>
+                        <td class="confluenceTd">Japanese</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>pt-BR</strong></td>
+                        <td class="confluenceTd">Portuguese (Brazil)</td>
+                        <td class="confluenceTd">Yes</td>
+                     </tr>
+                     <tr>
+                        <td class="confluenceTd"><strong>zh-CN</strong></td>
+                        <td class="confluenceTd">Chinese (S)</td>
+                        <td class="confluenceTd">&nbsp;</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <p>BETA languages are for testing purposes only. You should not rely on them for production clusters.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Improvementstopivottablevisualizations"></a>Improvements to pivot table visualizations</h3>
+            <p>This release added the ability to show grand totals on pivot tables.</p>
+            <p><span class="image-wrap">
+            <img style="border: 0px solid black;" src="{{ "/images/notes/image-2018-03-20-12-03-50-657.png" | prepend: site.baseurl }}"/>
 
+            </span></p>
+            <p>Pivot tables now support the tree layout for row headers:</p>
+            <p><span class="image-wrap">
+            <img style="border: 0px solid black;" src="{{ "/images/notes/image-2018-03-23-11-01-12-994.png" | prepend: site.baseurl }}"/>
+            </span></p>
+            <p>From the header menu users can now change the type of total shown for an aggregated measure:</p>
+            <p><span class="image-wrap">
+            <img style="border: 0px solid black;" src="{{ "/images/notes/image-2018-03-23-10-58-23-080.png" | prepend: site.baseurl }}"/>
 
-<h2>4.4.1 Fixed Bugs</h2>
-<table>
-<tbody>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was resolved where a saving a pinboard resulted in a random order for the visualizations it contained.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem was resolved with NFS4 mounts by adding support for NFS4 mounts to the system.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An upgrade issue was resolved where the system was using an incorrect interface.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was fixed where pinboards could not be opened after an upgrade but instead returned an <em>Not inheriting state from previous worksheet state</em> error.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Fixed an issue with the <code>tscli backup create</code> command which was miscalculating the ETA of backups.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem was fixed that caused the system to format the negative outcome of a currency formula with double negative signs. Now, these format with a single negative sign.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem was resolved that prevented users from seeing the underlying data in a shared worksheet.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Previously, <code>tql update</code> statements that referred to unknown columns could cause the backend system to fail. This issue was resolved in this release. The system returns errors for <code>update</code> statements that reference unknown columns.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release includes the addition of the <code>tscli storage df</code> command. You can use this command to detect the amount of space left on your disks in your ThoughtSpot cluster.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An intermittent upgrade issue was resolved where a pinboards that involved date-related keywords failed to load.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Fixed a problem where the round function was ignored when using a pivot table.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Customers reported a Double Fetch Denial of Service Vulnerability in the Linux Kernel shipped with a previous version of the product. This release includes a patch to the Linux kernel packages as shipped with Red Hat Enterprise Linux 6, 7 and Red Hat Enterprise MRG 2.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release patches a reported security vulnerability in CentOS Security Update for sudo.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for libsoup (CESA-2017:2459) to prevent reported security vulnerabilities in the source software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for git (CESA-2017:2484 <strong>and</strong> CESA-2017:2004) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release patches a reported vulnerability in CentOS Security Update for samba (CESA-2017:1950).</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release includes a patch for the CentOS Security Update for python (CESA-2017:1868) security vulnerability.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release patches the CentOS Security Update for openssh (CESA-2017:2029) security vulnerability.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release patches the system to CentOS Security Update for openldap (CESA-2017:1852).</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for mariadb (CESA-2017:2192) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for libtasn1 (CESA-2017:1860) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies the following patches:</p>
-<ul>
-<li>CentOS Security Update for kernel (CESA-2017:1842)</li>
-<li>CentOS Security Update for kernel (CESA-2017:2473)</li>
-<li>CentOS Security Update for kernel (CESA-2017:1615)</li>
-<li>CentOS Security Update for Kernel (CESA-2017:1484) (Stack Clash)</li>
-</ul>
-<p>These patches are proactive prevent for reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for gnutls (CESA-2017:2292) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for glibc (CESA-2017:1916) and CentOS Security Update for glibc (CESA-2017:1481) (Stack Clash) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for ghostscript (CESA-2017:2180) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This release resolves a reported security vulnerability with a CentOS Security Update for tigervnc.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for curl Security Update (CESA-2017:2016) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for bash Security Update (CESA-2017:1931) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for graphite2 (CESA-2017:1793) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>This upgrade applies patch CentOS Security Update for bind (CESA-2017:1680) to prevent reported security vulnerabilities in the patched software.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Aggregation over group_max returned a red bar error, This was resolved, users can now aggregate over a <code>group_max</code> function.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was resolved where a bar on the chart label did not match the underlying data. The data was correct, the label was not.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was corrected where, if one snapshot deletion failed in any fashion, any subsequent attempts to delete a snapshot failed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Previously, upgrades did not preserve a user's custom color preferences. This was fixed in this release.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Users were unable to edit a KPI formula if the KPI formula was pinned to a pinboard.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Users were able to <strong>Select All</strong> for 1000+ items in a pinboard filter. This action was available but not supported and caused users to believe pinboard filters were not working. Now, the option to <strong>Select All</strong> no longer functions when there are 1000+ items in a filter.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Creating a formula on <code>cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Previously, users received an error when removing columns from a broken relationship. These errors were caused by underlying formulas in the relationship configuration. This is no longer the case. The system now handles removal of columns where underlying formulas are involved.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Using <code>safe_divide</code> and <code>sum</code> did not work with formula on formula. This problem was fixed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code>IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was fixed where an unnecessary right-outer join was being applied to row-level security RLS-introduced joins. This situation led to impacts on query performance.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Resolved an issue with a chasm trap that used <code>unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code>unique count</code> is applied correctly in the final query.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was resolved where filters could only be edited in the search bar.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>An issue was resolved where a change in the underlying system where the system did not properly recover space after a crash. This is no longer an issue, the system properly recovers HDFS space after a crash.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>Intermittent, ambiguous red bar errors related to chasm trap situations were resolved.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td>
-<p>The help for row-level security rules was complicated and hard to parse. This text was improved and moved into the Query Visualizer.</p>
-</td>
-</tr>
-</tbody>
+            </span></p>
+            <p>Finally, pivot tables no longer limit the number of rows displayed. Previously, rows over the limit showed<br /> as (Other) . Now, the system simply shows the rows as expected.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Ramdiskispreservedacrossclusterupgrades"></a>Ramdisk is preserved across cluster upgrades</h3>
+            <p>A feature was added that preserves RAMDisk across cluster upgrades.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <h3><a name="Presentoptiononpinboardandvisualization"></a>Present option on pinboard and visualization</h3>
+            <p>The present operation is now available on both the pinboard and an individual visualization <strong>Action</strong> menu.</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
-<!-- START -->
-<h2>4.4 New Features and Functionality</h2>
-<table>
-<tbody>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="LearnThoughtSpotinBETA"></a>Learn ThoughtSpot in BETA</h4>
-<p>The Learn option from the main menu is a BETA feature that uses replay to teach you more about ThoughtSpot.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="SupportforUKandCanadianLanguages"></a>Support for UK and Canadian Languages</h4>
-<p>Support for UK English (<strong>en-GB</strong>) and Canadian English (<strong>en-CA</strong>) was added. Users can <a class="external-link" href="https://docs.thoughtspot.com/4.4/end-user/introduction/about-user.html" rel="nofollow">set these locale's via their profile</a></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Showregressionlineoption"></a>Show regression line option</h4>
-<p>Users have a new option to <strong>Show Regression Line</strong> on line, column, bubble, and scatter charts.</p>
-<p>
-<img src="{{ "/images/notes/image-2017-10-11-16-05-22-908.png"| prepend: site.baseurl }}"/></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="NewHasadministrationprivileges"></a>New Has administration privileges</h4>
-<p>If you add the privilege <strong>Has administration privileges</strong> to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and row-level security (RLS) does not apply to them. If you want to enable users to bypass row-level security on a worksheet, add them to a group with <strong>Can Administer and Bypass RLS</strong> privileges.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Checkclustercommandadded"></a>Check cluster command added</h4>
-<p>The <code>tscli cluster check</code> command was added to check the status of all or specific nodes in a cluster.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Servicelogsstoredtodisk"></a>Service logs stored to disk</h4>
-<p>Service logs are now stored to disk. This ensures better protection against service logs from exceeding the SSD on a node and impacting a node.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Thetsclinasmountcifscommandrequiresapassword"></a>The tscli nas mount-cifs command requires a password</h4>
-<p>Now the <code>tscli nas mount-cifs</code> command prompts for a password if you do not supply one.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="SankeyChart"></a>Sankey Chart</h4>
-<p>A new type of chart, the Sankey diagram, is now available. This chart displays a flow diagram that illustrates transfers of flows within a system.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Newimprovedicons"></a>New improved icons</h4>
-<p>In this release, the search <strong>?</strong> (question mark) icon was replaced with an <strong>i</strong> (letter "i"). The team has redesigned the caret-down and <strong>x</strong> (clear-all) icon. Finally, the wand icon is removed from keywords in the <strong>Search</strong> dropdown. Instead, the identifier <code>keyword</code> appears beneath each keyword.</p>
-<p><img src="{{ "/images/notes/image-2017-10-11-14-14-52-672.png "| prepend: site.baseurl  }}"/></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="WhatamIlookingat%3FRedesign%21"></a>What am I looking at? Redesign!</h4>
-<p>The <strong>What am I looking at</strong> information panel is improved in this release with an <strong>I</strong> rather than the previous <strong>?</strong> (question mark). The new design is intended to clarify the information in the panel and make it easier to use.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Configurablemaximumjobtime"></a>Configurable maximum job time</h4>
-<p>You can set the maximum amount of time in milliseconds a task is allowed to stay in "In progress" state. If the task exceeds this time, it is aborted.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Administerrowlevelsecurityprivilege"></a>Administer row level security privilege</h4>
-<p>Users with the <strong>Can Administer and Bypass RLS</strong> privilege can bypass row-level security (RLS) rules on a worksheet. By default this privilege is enabled. You can configure your installation to disable it.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>ThoughtSpot introduced a feature in <strong>3.4</strong> which implicitly converted boolean columns to filters when a user searched. For example, <code>product isRed = true</code> became <code>product isRed</code>. This behavior meant that the <code>product</code> column was not added to the table or chart result.</p>
-<p>Users were confused by this implicit behavior. This feature was reverted <strong>4.3</strong>. Now, boolean columns are treated like any other columns in the query. Meaning they remain <code>product isRed = true</code> and are not converted. The column also appears in the search results.</p>
-<p>When you upgrade a 3.4 through 4.2 installation to 4.3 or newer, tables or charts created in the 3.4 through 4.2, that contained these booleans are upgraded using <code>product isRed = true</code> so that users are not surprised by additional columns suddenly appearing in their saved answers.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="ImprovementsinRAMDiskrecovery"></a>Improvements in RAMDisk recovery</h4>
-<p>This release includes improvements in the speed and performance of RAMDisk recovery.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Fantrapsituationsaresupportedfornewinstallations"></a>Fan trap situations are supported for new installations</h4>
-<p>ThoughtSpot now supports fan traps in new installations. This feature is enabled by default in new installations.</p>
-<p>For existing customers upgrading to 4.4 this feature is disabled. You must work with ThoughtSpot Support and Customer support to dentify answers and pinboards that are impacted should this feature be enabled. Your ThoughtSpot customer service representative or ThoughtSpot Support can help you to identify, mitigate, and resolve any impacted data. Once these impacts are resolved, they can enable the feature for you.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Improvementstoconcatfunction"></a>Improvements to concat function</h4>
-<p>The <code>concat</code> function now allows users to concatenate multiple strings rather than single strings.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Primarykeydropscheckdependencies"></a>Primary key drops check dependencies</h4>
-<p>Dropping a primary key can impact downstream objects such as worksheets and pinboards. When dropping a primary key, TQL now checks for dependencies and issues a warning. Users must override with the <code>--allow_unsafe</code> flag.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="TooltipfunctionalityintheSchemaVisualizer"></a>Tooltip functionality in the Schema Visualizer</h4>
-<p>A tooltip function was introduced into the <strong>Table</strong> list for the <strong>Schema Visualizer</strong>. This tooltip shows information about the underlying table.</p>
-<p>
-<img src="{{ "/images/notes/image-2017-10-12-11-34-45-219.png "| prepend: site.baseurl  }}" /></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Colorpickerimprovements"></a>Color picker improvements</h4>
-<p>This release includes new vibrant chart colors. It also includes the ability to add your own HEX values.</p>
-<p><img src="{{ "/images/notes/image-2017-10-11-14-51-27-471.png "| prepend: site.baseurl  }}" /></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="tspublicsession%2Floginandsession%2FlogoutAPIs"></a>tspublic session/login and session/logout APIs</h4>
-<p>This release includes two new public APIs. You can use these APIs to log users in and out of a ThoughtSpot session. See the documentation for <a class="external-link" href="https://goo.gl/ggXFCb" rel="nofollow">details about the calls</a>.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Reducesearchsuggestiontokens"></a>Reduce search suggestion tokens</h4>
-<p>This release improves the search experience by reducing the number of tokens in search results. Users found the number of suggestions confusing. Instead, the search greatly reduces the number of suggestions.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Queryprocessingimprovements"></a>Query processing improvements</h4>
-<p>This release includes improvements to the underlying processing of complex schema, object, and formula variations. Users should see improved ability to work with:</p>
-<ul>
-<li>Schema various such as chasm, fan, nested chasm, and chain of chasm traps,</li>
-<li>Object variations such as aggregated worksheet, join of aggregated worksheet and base tables.</li>
-<li>Formula variation such as aggregate and non-aggregate functions, windowing functions, and pinned measures.</li>
-</ul>
-<p>These changes include optimization for generating queries that involve row level security(RLS).</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Filterbycreator"></a>Filter by creator</h4>
-<p>Users have the ability to filter pinboards and answers by creator.</p>
-<p><img src="{{ "/images/notes/image-2017-10-12-11-57-00-108.png "| prepend: site.baseurl  }}" /></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Improvementinpinboardlayoutofsmalltable"></a>Improvement in pinboard layout of small table</h4>
-<p>Tables with fewer rows appeared distorted with whitespace when pinned in a pinboard. This release includes improvements for display of tables in pinboards. See the documentation for more information about <a class="external-link" href="https://goo.gl/XiqaXu" rel="nofollow">editing a pinboard</a>.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Formulaperformanceimprovements"></a>Formula performance improvements</h4>
-<p>This release includes improvements in backend indexing formats that result in formula performance improvements.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Abilitytodefineajoinbetweenaworksheetandatable"></a>Ability to define a join between a worksheet and a table</h4>
-<p>Users can join a worksheet to one or more tables. The direction of the join can be from the worksheet to the table or the reverse. When you join a worksheet to a table, you bring any tables connected to the joined table into a search.</p>
-<p>This feature has limitations. It is not possible to join multiple tables in the worksheet and a single table in a single relationship. Nor is it possible to join between a formula column in a worksheet and another table.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Gettingaclusterconfiguration"></a>Getting a cluster configuration</h4>
-<p>When using <code>tscli cluster get-config</code> to get cluster information, the system can run into situations where it cannot make a connection across the network. When this happens, the command returns an error but continues to work.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="ODBCextract%2Ftransform%2Floadimprovements"></a>ODBC extract/transform/load improvements</h4>
-<p>By default, ThoughtSpot takes a permissive approach to datatype compatibility<br /> between source and target in ODBC. As much as possible ThoughtSpot automatically<br /> converts incoming "compatible" input data to the desired ThoughtSpot target<br /> datatype. Flags were added that allow you to tune this behavior and make it stricter. At installation time, your customer support engineer can assist you in<br /> configuring a stricter load behavior.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Userswithdataaccesscandrilldown"></a>Users with data access can drill down</h4>
-<p>If you own the pinboard you can drill down to the data beneath. New in this release, users you share the pinboard with can also drill down provide they <em>also</em><br /> have access to the data on which the board was based.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Descriptionincludedwhenaddingcolumnstoworksheets"></a>Description included when adding columns to worksheets</h4>
-<p>When adding a column from an existing data table or worksheet, the <strong>Description</strong> of the column is also copied into the new worksheet.</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="Abilitytochangeapinboardheadline"></a>Ability to change a pinboard headline</h4>
-<p>Users can edit the pinboard headline. To edit a headline, activate the headline edit button at the corner of a headline and click it.</p>
-<p><img src="{{ "/images/notes/image-2017-10-12-14-24-08-298.png "| prepend: site.baseurl }}" /></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<h4><a name="APItotransferownershipofobjects"></a>API to transfer ownership of objects</h4>
-<p>The new <code>POST /tspublic/v1/user/transfer/ownership</code> API was added. It allows the transfer ownership of all objects from one user to another. You must transfer all of a user's objects. This mehtod takes two query parameters of type String.</p>
-<ul>
-<li><strong><code>fromUserName</code></strong> Name of a user from whom the ownership needs to be transferred.</li>
-<li><strong><code>toUserName</code></strong> Name of a user to whom the ownership needs to be transferred.</li>
-</ul>
-<p>It returns a <code>200</code> status if ownership of all objects are successfully transferred. It returns a status of <code>400</code> if either the <code>fromName</code> and <code>toName</code> is invalid or for given username there is no user present.</p>
-</td>
-</tr>
-</tbody>
+<h2>4.5 Fixed Bugs&nbsp;</h2>
+<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issues with upgrade was resolved which caused the appliance to boot from an incorrect partition causing users to be found missing.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where where deadlock issues with the Search service caused indexing to fail.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where periodic backups was delayed.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Adding columns to a worksheet and saving them resulted in timeouts and an <tt>HTTP_UNAUTHORIZED(401)</tt> status. This problem resulted from an internal <tt>SESSION</tt> handling error. This problem was resolved in this release.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where <tt>tsadmin</tt> and <tt>guest</tt> were prevented from uploading a CSV upload and received a red bar error instead.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem with memory links during upgrade was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where Google Chrome version 65 broke the formatting of headlines in pinboards. This issue was reported as a Product Support Advisory for versions 3.x and 4.x releases older than 4.4.1.4. It</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An underlying system issue was resolved that caused a saved answer to fail with a read bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A pinned answer that relied on an underlying join between two worksheets one of<br /> which included a filter failed to display properly. This problem was resolved in<br /> this release.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>After upgraded customer appliance from 4.4.0.11 to 4.4.1.2 GA, some pinboards could not be opened and instead returned a red bar error. This issue was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Some customers reported that several data buckets were relative to calendar year/quarter/month rather than relative to the financial year.</p>
+            <ul>
+               <li>QUARTER_OF_YEAR</li>
+               <li>MONTH_OF_YEAR</li>
+               <li>MONTH_OF_QUARTER</li>
+               <li>WEEK_OF_YEAR_ISO</li>
+               <li>WEEK_OF_QUARTER</li>
+               <li>DAY_OF_YEAR</li>
+               <li>DAY_OF_QUARTER</li>
+            </ul>
+            <p>This issue was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was resolved where hidden fields in source data prevented users from creating answers related to other columns in that data.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Customers were receiving a <tt>RowSecurityManager not implemented for Atlas.</tt> message when scheduling a pinboard. This problem was the result of legacy features in the system. These features no longer are checked.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where drill down on multiple buckets did not apply all date filters.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved that caused a segmentation faults which in turn caused crashes in a cluster during an upgrade.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was resolved that potentially made ThoughtSpot at risk for Jackson JSON Library Vulnerabilities.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved with the <strong>Show underlying data</strong> function ignoring the "last period" filter. This filter is no longer ignored.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where the presence of a date bucket filter after a measure column was ignored in query execution.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Issues were resolved that potentially exposed ThoughtSpot to two vulnerabilities,Meltdown&rdquo; and &ldquo;Spectre&rdquo;, and their with variants. IThese vulnerabilities only applied when the ThoughtSpot application was sharing hardware with other applications, such as cloud deployments. When deployed in a virtualized environment, either on prem or in AWS, the virtual environment needed to patch the OS for it. When deployed on its own appliance, these vulnerabilities should not have affected ThoughtSpot.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was fixed that occurred when plotting a formula that has either NaN or Infinity as some of the values. In this case, the pivot table treated the first instance of NaN/Infinity and every subsequent value as a single value and plots it in one cell. This problem was fixed.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where <tt>near</tt> keywords returned a red bar error.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was resolved where requests to update a formula failed due to the complexity of the nesting.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Non-admin user could still see hidden fields. In queries, these users were asked to disambiguate these even though they were hidden. This problem was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was fixed where the installation path was not properly updated resulting in an environment pointing to old versions of <tt>tsload</tt> and <tt>tql</tt>. Now, the standard path is updated during an upgrade.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where a saved answer from version 4.3 failed after upgrade because they referred to old table names.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>When query has keywords that map to date column and Period Ago date buckets then SpotIQ Insight for that query did not work even though the user-created query succeeded. This SpotIQ bug was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>When a query had keywords that mapped to a date column as well as to date buckets, SpotIQ Analysis failed for that query. For example, in query <tt>revenue in Q1 1992</tt> the last part represents date buckets. If <tt>Q1 1992</tt> maps to a date column then SpotIQ analysis failed. The query itself worked and any answer/pinboard that based on these queries were fine. This problem was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where NPS surveys were appearing when ThoughtSpot was provided through embedded content. This should no longer occur.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was occurring where upgrade to a new version caused several types of formulas that relied on aggregated data to stop working. Problems were recorded involving:</p>
+            <ul class="alternate" type="square">
+               <li>Unique or count not functional when using Aggregated date.</li>
+               <li>Group_count not functional as well.</li>
+               <li>Group_max giving duplicated result.</li>
+            </ul>
+            <p>This problem was resolved and should no longer appear</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where ThoughtSpot would throw an error if the query involved multiple date filters on the same date column. This has been fixed in this release.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where the <tt>tscli ssl set-min-version</tt> failed because the minimum value was incorrect internally. The internal issue was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue with the callhome metrics feature caused problems during upgrade. This problem was resolved.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where deleting a relation failed if either side of that relationship was a worksheet.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved where Zookeeper reported reaching a descriptor limit. This report was returned in error. ThoughSpot no longer reports this.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem where Strict Transport Security was not enforced was fixed. The product now supports Strict Transport Security.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API clients will have to updated to be compliant with this new feature. The primary clients that would be effected:</p>
+            <ul>
+               <li>Sync scripts that manage users and groups creation.</li>
+               <li>Scripts that use the public APIs to fetch data.</li>
+            </ul>
+            <p>The easiest way to diagnose this would the inability of the script to login to the system. Please contact support to get guidance on the steps to resolve the issue.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>A problem was resolved with the <tt>JESSIONID</tt> value. Previously, setting the <strong>Remember Me</strong> option ion the login page, caused the server to set a new <tt>JSESSIONID</tt> on the client after the user logs out. This new <tt>JSESSIONID</tt> was used for the next authenticated user session, regardless of the user's identity. This no longer happens. Instead, users that relow after setting <strong>Remember Me</strong> are given an new <tt>JSESSIONID</tt>.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Dates on the *<strong>Data</strong>* page was corrected so that dates now sort chronologically.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Previously, the application allowed cookies to contain information related to session state. An option was added to set more secure cookie handling in the application.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Previously, the login form on the ThoughSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning of <tt>autocomplete</tt> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>Previously, alerts were time stamped with in PDT. This was fixed, now <tt>tscli alert list</tt> shows alerts display in the cluster's local timezone.</p>
+         </td>
+      </tr>
+      <tr style="width: 100%;border-bottom-style: inset;">
+         <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+            <p>The system now validates both the format and the size of profile pictures, previously these were not checked.</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
-<h2>4.4 Fixed Bugs</h2>
-<table style="border-collapse: collapse; width: 100%; font-size: inherit; font-family: inherit;" border="0" cellspacing="0" cellpadding="0">
-<thead>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<th style="text-align: left; padding: 10px 0; font-weight: bold; font-size: inherit; font-family: inherit;" title="Description">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Aggregation over group_max returned a red bar error, This was resolved, users can now aggregate over a <code>group_max</code> function.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>An issue was resolved where a bar on the chart label did not match the underlying data. The data was correct, the label was not.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>An issue was corrected where, if one snapshot deletion failed in any fashion, any subsequent attempts to delete a snapshot failed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Users were unable to edit a KPI formula if the KPI formula was pinned to a pinboard.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Users were able to <strong>Select All</strong> for 1000+ items in a pinboard filter. This action was available but not supported and caused users to believe pinboard filters were not working. Now, the option to <strong>Select All</strong> no longer functions when there are 1000+ items in a filter.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Creating a formula on <code>cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Using <code>safe_divide</code> and <code>sum</code> did not work with formula on formula. This problem was fixed.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code>IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>An issue was fixed where an unnecessary right-outer join was being applied to row-level security RLS-introduced joins. This situation led to impacts on query performance.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Resolved an issue with a chasm trap that used <code>unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code>unique count</code> is applied correctly in the final query.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>An issue was resolved where filters could only be edited in the search bar.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Intermittent, ambiguous red bar errors related to chasm trap situations were resolved.</p>
-</td>
-</tr>
-<tr style="border-bottom: 1px solid #cccccc; width: 100%;">
-<td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>The help for row-level security rules was complicated and hard to parse. This text was improved and moved into the Query Visualizer.</p>
-</td>
-</tr>
-</tbody>
-</table>
+<h2>Notes for older versions</h2>
+<ul>
+<li><a href="{{"/4.4/release/notes.html" | prepend: site.baseurl }}">4.4 Release Notes</a></li>
+<li><a href="{{"/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf" | prepend: site.url }}">4.2 Release Notes</a></li>
+<li><a href="{{"/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf" | prepend: site.url }}">3.5 Release Notes</a></li>
+<li><a href="{{"/3.4/pdf/ThoughtSpot_Release_Notes_3.4.pdf" | prepend: site.url }}">3.4 Release Notes</a></li>
+</ul>

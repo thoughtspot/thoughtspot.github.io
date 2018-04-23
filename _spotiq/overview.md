@@ -16,7 +16,7 @@ first [read the introduction to SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.h
 ## Prerequisites
 
 Before you begin, make sure you can login into ThoughtSpot application. To
-complete this tutorial, you need the ability to Log in into ThoughtSpot Ability
+complete this tutorial, you need the ability to log into ThoughtSpot and the ability
 to upload a CSV file.  You also need the ability to use the SpotIQ application.
 These features require that your user account must have the following privileges:
 

@@ -12,17 +12,24 @@ You might occasionally see unexpected behavior that is due to the Web browser ca
 
 To resolve any of these situations, clear the browser cache:
 
-1. Clear the browser cache. This works a little differently on individual browser versions and operating systems. For example, when using Chrome, to get to the browser cache settings, navigate to:
+1. Clear the browser cache.
+
+    This works a little differently on individual browser versions and operating systems. For example, when using Chrome, to get to the browser cache settings, navigate to:
 
     ```
     chrome://settings/clearBrowserData
     ```
 
-     ![]({{ site.baseurl }}/images/chrome_clear_cache.png "Clear the browser cache")
+    ![]({{ site.baseurl }}/images/chrome_clear_cache.png "Clear the browser cache")
 
-2. Click **Clear browsing data**. This is the name of the button on Chrome. The name may vary slightly on other browsers.
-3. Reload the page. For example, on Chrome you would click the **Reload** icon:
+2. Click **Clear browsing data**.
 
-     ![]({{ site.baseurl }}/images/browser_reload.png "Reload the page")
+   This is the name of the button on Chrome. The name may vary slightly on other browsers.
 
-4. Now the problem should be fixed, and the page will appear as expected.
+3. Reload the page.
+
+   For example, on Chrome you would click the **Reload** icon:
+
+   ![]({{ site.baseurl }}/images/browser_reload.png "Reload the page")
+
+Now the problem should be fixed, and the page will appear as expected.

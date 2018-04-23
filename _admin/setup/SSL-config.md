@@ -41,15 +41,15 @@ To install the SSL certificate:
 3. Log in to the Linux shell using SSH.
 4. Change directories to where you copied the certificate:
 
-      ```
-      $ cd <path>
-      ```
+    ```
+    $ cd <path>
+    ```
 
 5. Issue the `tscli` command to install the certificate:
 
-      ```
-      $ tscli ssl add-cert <key> <certificate>
-      ```
+    ```
+    $ tscli ssl add-cert <key> <certificate>
+    ```
 
 6. To test that the certificate was installed correctly, [Log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
 

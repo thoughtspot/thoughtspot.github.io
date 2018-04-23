@@ -32,14 +32,48 @@ modeling your data security policy. Security and sharing settings apply to
 several different types of objects, each of which has its own security default
 settings and rules.
 
-|Object type|Description|Default security model|
-|-----------|-----------|----------------------|
-|Tables|The source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share-source-tables.html#)|
-|Columns|The columns in the source data tables that have been loaded using ThoughtSpot Loader.|Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share-source-tables.html#)|
-|Rows|The rows in the source data tables that have been loaded using ThoughtSpot Loader.|All rows in the source tables are shared with all users by default. |
-|Imported data|Data that was imported using a Web browser.|Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share-source-tables.html#)|
-|Worksheets|A worksheet created using a Web browser.|Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)|
-|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)|
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="50%" />
+</colgroup>
+  <tr>
+    <th>Object type</th>
+    <th>Description</th>
+    <th>Default security model</th>
+  </tr>
+  <tr>
+    <td>Tables</td>
+    <td>The source data tables that have been loaded using ThoughtSpot Loader.</td>
+    <td>Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+  </tr>
+  <tr>
+    <td>Columns</td>
+    <td>The columns in the source data tables that have been loaded using ThoughtSpot Loader.</td>
+    <td>Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+  </tr>
+  <tr>
+    <td>Rows</td>
+    <td>The rows in the source data tables that have been loaded using ThoughtSpot Loader.</td>
+    <td>All rows in the source tables are shared with all users by default.</td>
+  </tr>
+  <tr>
+    <td>Imported data</td>
+    <td>Data that was imported using a Web browser.</td>
+    <td>Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+  </tr>
+  <tr>
+    <td>Worksheets</td>
+    <td>A worksheet created using a Web browser.</td>
+    <td>Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)</td>
+  </tr>
+  <tr>
+    <td>Pinboards</td>
+    <td>A pinboard of saved search results.</td>
+    <td>Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)</td>
+  </tr>
+</table>
 
 ## Understanding SHAREABLE
 
@@ -50,7 +84,7 @@ for the **Sharing visibility** option appear on the dialog.
 
 Only users in the **Administrators** group or users with **Admin** privileges
 can share with groups marked as **NOT SHAREABLE**. Members of a group with
-**Can share with all users** privilege can also share with groups marked as
+**Can share with all users** authorization can also share with groups marked as
 **NOT SHAREABLE**.
 
 Users in groups marked **NOT SHAREABLE** cannot share objects among themselves.

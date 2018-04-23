@@ -68,7 +68,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
 
   This example passes multiple variables to a single column as well as multiple columns. It shows that data values are returned as epoch.
 
-    ```
-    col1=region&op1=IN&val1=midwest&val1=south&val1=northeast
-    &col2=date&op2=BET&val2=<epoch_start>&val2=<epoch_end>
-    ```
+  ```
+  col1=region&op1=IN&val1=midwest&val1=south&val1=northeast
+  &col2=date&op2=BET&val2=<epoch_start>&val2=<epoch_end>
+  ```

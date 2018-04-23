@@ -16,15 +16,15 @@ To set up a relay host:
 1. Log in to the Linux shell using SSH.
 2. Issue the setup command, providing the IP address of the relay host:
 
-      ```
-      $ tscli smtp set-relayhost <IP_address>
-      ```
+    ```
+    $ tscli smtp set-relayhost <IP_address>
+    ```
 
 3. Verify your settings:
 
-      ```
-      $ tscli smtp show-relayhost
-      ```
+    ```
+    $ tscli smtp show-relayhost
+    ```
 
 4. Verify that email is working.
 
@@ -45,8 +45,8 @@ Check if the email settings are working properly by using this procedure.
  1. Log in to the Linux shell using SSH.
  2. Try sending an email to yourself by issuing:
 
-       ```
-       $ echo | mail -s Hello <your_email>
-       ```
+    ```
+    $ echo | mail -s Hello <your_email>
+    ```
 
  3. If you receive the email at the address(es) you supplied, email is working correctly.

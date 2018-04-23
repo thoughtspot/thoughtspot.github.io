@@ -12,7 +12,7 @@ ThoughtSpot includes a number of management tools, monitoring applications, and 
 
 There are several ways you can view audit log information in ThoughtSpot. You can see recent events in the Control Center or view more detailed audit logs using tscli. Administrators can view audit logs of configuration changes users have made to ThoughtSpot in these ways:
 
-- Monitor events from the [Control Center]({{ site.baseurl }}/admin/system-admin/monitor-pinboards.html#).
+- Monitor events from the [Control Center]({{ site.baseurl }}/admin/system-monitor/monitor-pinboards.html#).
 - Generate audit log reports through the `tscli` command.
 
 
