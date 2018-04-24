@@ -25,5 +25,7 @@ if [ -z "$1" ]
     git checkout master
     rm -rf $1
     mv /tmp/$1 $1
+    cp $1/index.html .
+    cp $1/search.html .
 
 fi
