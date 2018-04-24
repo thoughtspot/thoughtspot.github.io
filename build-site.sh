@@ -23,5 +23,7 @@ if [ -z "$1" ]
     rm _config.$2.yml
 
     git checkout master
+    rm -rf $1
+    mv /tmp/$1 $1
 
 fi
