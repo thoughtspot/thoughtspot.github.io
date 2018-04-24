@@ -1,15 +1,56 @@
-# /bsh/sh
+#! /bin/sh
 
-if [ -z "$1" ]
+helpmsg () {
+  printf "\\nSYNTAX: \\n"
+  printf "   bash-build.sh BRANCH_NAME VERSION_VALUE [-r]\\n"
+  printf "\\nBRANCH_NAME   Location of your source files, may be a name such as x.y.z"
+  printf "\\nVERSION_VALUE Product version, such as x.y"
+  printf "\\n -r           Optionally replace the index.html and search.html files. Use for updating an existing or to a new version.\\n"
+
+}
+
+if [ $# -lt 2 ]
   then
-    echo "The command format is: bash-build.sh BRANCH_NAME VERSION_VALUE"
-    exit
-  else
-    if [ -z "$2" ]
-    then
-        echo "Use the format: bash-build.sh BRANCH_NAME VERSION_VALUE"
-        exit
-    fi
+    printf "%b" "Error. Not enough argments.\\n" >&2
+    helpmsg >&2
+    exit 1
+  elif [ $# -gt 3 ]
+   then
+    printf "%b" "Error. Too many argments.\\n" >&2
+    helpmsg >&2
+    exit 1
+fi
+
+
+case $1 in
+  [0-9].[0-9])
+  ;;
+  [0-9].[0-9].[0-9])
+  ;;
+  [0-9].[0-9].[0-9].[0-9])
+  ;;
+  *)
+    printf "%b" "Error. BRANCH_NAME format is not. w.x.y.z is the largest number supported\\n" >&2
+    helpmsg >&2
+    exit 1
+  esac
+
+  case $2 in
+    [0-9].[0-9])
+    ;;
+    *)
+      printf "%b" "Error. VERSION_VALUE format is not supported. Must be a major version number such as: w.x\\n" >&2
+      helpmsg >&2
+      exit 1
+  esac
+
+  if [ $3 -ne "-r" ];
+  then
+    printf "%b" "Error. $3 format is not supported. Must be -r \\n" >&2
+    helpmsg >&2
+    exit 1
+  fi
+
 
     # Checkout a versioned branch with the version name
     git checkout $1
@@ -25,7 +66,8 @@ if [ -z "$1" ]
     git checkout master
     rm -rf $1
     mv /tmp/$1 $1
-    cp $1/index.html .
-    cp $1/search.html .
 
-fi
+    if [[ $3 == "-r" ]]; then
+        cp $1/index.html .
+        cp $1/search.html .
+    fi
