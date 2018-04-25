@@ -11,12 +11,12 @@ helpmsg () {
 
 if [ $# -lt 2 ]
   then
-    printf "%b" "Error. Not enough argments.\\n" >&2
+    printf "Error. Not enough argments.\\n" >&2
     helpmsg >&2
     exit 1
   elif [ $# -gt 3 ]
    then
-    printf "%b" "Error. Too many argments.\\n" >&2
+    printf "Error. Too many argments.\\n" >&2
     helpmsg >&2
     exit 1
 fi
@@ -30,7 +30,7 @@ case $1 in
   [0-9].[0-9].[0-9].[0-9])
   ;;
   *)
-    printf "%b" "Error. BRANCH_NAME format is not. w.x.y.z is the largest number supported\\n" >&2
+    printf "Error. BRANCH_NAME format is not. w.x.y.z is the largest number supported\\n" >&2
     helpmsg >&2
     exit 1
   esac
@@ -39,31 +39,44 @@ case $1 in
     [0-9].[0-9])
     ;;
     *)
-      printf "%b" "Error. VERSION_VALUE format is not supported. Must be a major version number such as: w.x\\n" >&2
+      printf "Error. VERSION_VALUE format is not supported. Must be a major version number such as: w.x\\n" >&2
       helpmsg >&2
       exit 1
   esac
 
   if [ $3 -ne "-r" ];
   then
-    printf "%b" "Error. $3 format is not supported. Must be -r \\n" >&2
+    printf "Error. $3 format is not supported. Must be -r \\n" >&2
     helpmsg >&2
     exit 1
   fi
 
 
 # Checkout a versioned branch with the version name
-if git checkout $1; then echo "checked out $1"; fi
+if git checkout $1; then
+  echo "SUCCESS: checked out $1";
+else
+  printf "Error. $3 format is not supported. Must be -r \\n" >&2
+  exit 1
+fi
+
 # Create a configuration file that sets a new baseurl based d on version
 echo "baseurl : /$2" > _config.$2.yml
 echo "exclude : " >> _config.$2.yml
 echo "  - $2"  >> _config.$2.yml
 echo "branch_url : /$1" >> _config.$2.yml
+
 # Build using both the basic configuration file and the version config file
 bundle exec jekyll build --config _config.yml,_config.$2.yml -d /tmp/$2/
 rm _config.$2.yml
 
-git checkout master
+if git checkout master; then
+  echo "SUCCESS: checked out master";
+else
+  printf "Error. failed ot checkout master \\n" >&2
+  exit 1
+fi
+
 rm -rf $1
 mv /tmp/$1 $1
 
