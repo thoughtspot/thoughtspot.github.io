@@ -44,11 +44,16 @@ case $1 in
       exit 1
   esac
 
-  if [ $3 -ne "-r" ];
-  then
-    printf "Error. $3 format is not supported. Must be -r \\n" >&2
-    helpmsg >&2
-    exit 1
+
+
+
+  if [ "$3" ]; then
+    if [ "$3" != "-r" ]; then
+      #statements
+      printf "Error. The $3 flag is not supported. Must be -r \\n" >&2
+      helpmsg >&2                  s
+      exit 1
+    fi
   fi
 
 
@@ -56,7 +61,6 @@ case $1 in
 if git checkout $1; then
   echo "SUCCESS: checked out $1";
 else
-  printf "Error. $3 format is not supported. Must be -r \\n" >&2
   exit 1
 fi
 
@@ -73,7 +77,6 @@ rm _config.$2.yml
 if git checkout master; then
   echo "SUCCESS: checked out master";
 else
-  printf "Error. failed ot checkout master \\n" >&2
   exit 1
 fi
 
