@@ -52,22 +52,25 @@ case $1 in
   fi
 
 
-    # Checkout a versioned branch with the version name
-    git checkout $1
-    # Create a configuration file that sets a new baseurl based d on version
-    echo "baseurl : /$2" > _config.$2.yml
-    echo "exclude : " >> _config.$2.yml
-    echo "  - $2"  >> _config.$2.yml
-    echo "branch_url : /$1" >> _config.$2.yml
-    # Build using both the basic configuration file and the version config file
-    bundle exec jekyll build --config _config.yml,_config.$2.yml -d /tmp/$2/
-    rm _config.$2.yml
+# Checkout a versioned branch with the version name
+if git checkout $1; then echo "checked out $1"; fi
+# Create a configuration file that sets a new baseurl based d on version
+echo "baseurl : /$2" > _config.$2.yml
+echo "exclude : " >> _config.$2.yml
+echo "  - $2"  >> _config.$2.yml
+echo "branch_url : /$1" >> _config.$2.yml
+# Build using both the basic configuration file and the version config file
+bundle exec jekyll build --config _config.yml,_config.$2.yml -d /tmp/$2/
+rm _config.$2.yml
 
-    git checkout master
-    rm -rf $1
-    mv /tmp/$1 $1
+git checkout master
+rm -rf $1
+mv /tmp/$1 $1
 
-    if [[ $3 == "-r" ]]; then
-        cp $1/index.html .
-        cp $1/search.html .
-    fi
+# This replaces the root files with the latest version.  index.html redirects to the latest version x.x/index.html.
+if [[ $3 == "-r" ]]; then
+  cp $1/index.html .
+  cp $1/search.html .
+fi
+
+exit 0
