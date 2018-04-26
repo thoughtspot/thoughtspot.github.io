@@ -27,7 +27,7 @@ You can use keywords when asking a question to help define your search. This ref
 
 ## Number
 
-{% include content/keywords-filter.md %}
+{% include content/keywords-number.md %}
 
 ## Filter
 

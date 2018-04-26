@@ -39,6 +39,29 @@ upgrade. First, upgrade to one of the above versions, and then to this release.<
 <tbody>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<h4 id="metrics-pipeline-improvements"><a name="Mixpanel"></a>Metrics pipeline improvements<a class="anchorjs-link " href="#metrics-pipeline-improvements" aria-label="Anchor link for: metrics pipeline improvements" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a><a class="anchorjs-link " href="#metrics-pipeline-improvements" aria-label="Anchor link for: metrics pipeline improvements" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4>
+<p>Included in this release are metrics pipelines that empower both our team
+and yours to enrich the ThoughSpot product experience. The new metric
+pipelines enable:</p> <ul class="alternate" type="square">
+<li>Faster issue resolution: ThoughSpot collects the diagnostic information from your
+system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported.
+Our support team can begin working to remediate any issue with you at once.</li>
+<li>Failure prevention: Metrics provides direct visibility to the ThoughtSpot team on
+your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to
+prevent failures. Metrics also help reduce SLA times as the team can debug much
+faster.</li>
+<li>Improved Search: ThoughSpot can tune search algorithms by studying search
+history and schema.</li>
+<li>Improve Performance: ThoughSpot analyzes expensive and complex query
+patterns to look for performance optimizations.</li>
+<li>Improved Browser Performance: Finally, the metrics pipeline allows
+ThoughSpot to identify application-use patterns that contribute to performance bottlenecks with
+specific browsers and help your team prevent or alleviate them.</li>
+</ul>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h4><a name="UIImprovements"></a>UI Improvements</h4>
 <p>Included in this release are visual changes meant to improve the visual appeal of the user interface.</p>
 </td>
