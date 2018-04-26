@@ -80,8 +80,8 @@ else
   exit 1
 fi
 
-rm -rf $1
-mv /tmp/$1 $1
+rm -rf $2
+mv /tmp/$1 $2
 
 # This replaces the root files with the latest version.  index.html redirects to the latest version x.x/index.html.
 if [[ $3 == "-r" ]]; then
