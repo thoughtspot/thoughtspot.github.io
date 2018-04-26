@@ -1164,6 +1164,7 @@ entries:
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
+    - title: TQL reference
       url: /reference/sql-cli-commands.html
       output: web,refGdAdmin
     - title: tsload flag reference
