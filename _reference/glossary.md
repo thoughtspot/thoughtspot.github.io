@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 <div class="glossary">
-{% assign projectTags = site.data.glossary.entries %}
+{% assign projectTags = site.data.glossary.entries | sort_natural:"word"%}
 {% for entry in projectTags %}
   <p><strong>{{entry.word}}</strong> : {{entry.definition}} </p>
 {% endfor %}

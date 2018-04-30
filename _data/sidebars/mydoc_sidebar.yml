@@ -1206,6 +1206,9 @@ entries:
     - title: Downloads
       url: /release/downloads.html
       output: web
+    - title: Glossary
+      url: /reference/glossary.html
+      output: web
     - title: Topic index
       url: /reference/tags_index.html
       output: web

@@ -107,7 +107,7 @@ Worksheet data is not included.
 |  **TABLES SEARCHABLE** | Tables that are indexed and can be searched.  |
 |  **TABLES BEING INDEXED** | Total of in-progress table indexing. |
 |  **NEW TABLES BEING INDEXED** | Total of first-time, in-progress table indexing.  |
-|  **TOKENS SEARCHABLE** | Number of <a href="#" data-toggle="tooltip" data-original-title='{{site.data.glossary.token}}'>tokens</a> of all table (combined) indexed in ThoughtSpot. |
+|  **TOKENS SEARCHABLE** | Number of <a href="#" data-toggle="tooltip" data-original-title='{% for entry in site.data.glossary.entries %}{% if entry.word == "token" %}{{ entry.definition }}{% endif %}{% endfor %}'>tokens</a> of all table (combined) indexed in ThoughtSpot. |
 
 
 ## Critical Alerts
