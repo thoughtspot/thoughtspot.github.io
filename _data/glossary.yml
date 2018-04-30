@@ -23,5 +23,5 @@ entries:
     definition: "An internal name for a visualization."
   - word: user
     definition: "Individuals that can log into ThoughtSpot (authentication)."
-  - word: forumula
+  - word: formula
     definition: "An expression applying a calculation, usually mathmaticaly, against data."
