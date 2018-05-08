@@ -22,10 +22,6 @@ if (( $? > 0 ));
       exit 1
     fi
 
-echo 'Deleting all old pdfs'
-rm pdf/*.pdf;
-echo "done";
-
 
 for book in $(echo "$jsonfile" | jq -r '.books[] | @base64'); do
 
