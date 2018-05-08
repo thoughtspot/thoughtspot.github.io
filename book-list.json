@@ -5,7 +5,9 @@
       "filename": "ThoughtSpot_Administration_Guide",
       "title": "Administration Guide",
       "codes": [
-        "admBk"
+        "admBk",
+        "refGd",
+        "refGdAdmin"
       ]
     },
     {
@@ -40,7 +42,8 @@
       "filename": "ThoughtSpot_User_Guide",
       "title": "Users Guide",
       "codes": [
-        "ugBk"
+        "ugBk",
+        "refGd"
       ]
     },
     {

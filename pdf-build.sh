@@ -1,18 +1,8 @@
 # Note that .sh scripts work only on Mac. If you're on Windows, install Git Bash and use that as your client.
 
-jsonfile=$(<book-list.json)
+## Make sure script is in the git repo
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-# Get the version of the current branch
-theVersion=$(git branch | grep \* | cut -d ' ' -f2)
-echo $theVersion
-case $theVersion in
-  [0-9].[0-9])
-  ;;
-  *)
-    printf "Error. The version $theVersion format is not supported. Must be a major version number such as: w.x\\n" >&2
-    helpmsg >&2
-    exit 1
-esac
+
 
 ## Make sure the gemfile is up-to-date
 bundle install --quiet
@@ -20,10 +10,31 @@ if (( $? > 0 ));
     then
       printf "You are missing a bundle. Run bundle install to pick up the bundle";
       exit 1
-    fi
+fi
+
+# Set some variables like the
+bookList=$(<book-list.json)
+theVersion=$(git branch | grep \* | cut -d ' ' -f2)
+case $theVersion in
+  [0-9].[0-9])
+    printf "Creating PDFs for the $theVersion version\\n"
+  ;;
+  *)
+    printf "Error. The version $theVersion format is not supported. Must be a major version number such as: w.x\\n" >&2
+    helpmsg >&2
+    exit 1
+esac
 
 
-for book in $(echo "$jsonfile" | jq -r '.books[] | @base64'); do
+
+if [ -d pdf ]; then
+    echo 'Deleting all old pdfs'
+    rm pdf/*.pdf;
+    echo "done";
+fi
+
+
+for book in $(echo "$bookList" | jq -r '.books[] | @base64'); do
 
     sed -i "" "s/THEVERSION/${theVersion}/g" ${DIR}/book-list.json
     sed -i "" "s/THEVERSION/${theVersion}/g" ${DIR}/pdfconfigs/config_mydoc_pdf.yml
@@ -55,6 +66,8 @@ for book in $(echo "$jsonfile" | jq -r '.books[] | @base64'); do
     echo "Building the PDF ...";
     prince --javascript --pdf-keywords=prince-no-fallback --input-list=_site/pdfconfigs/prince-list.txt -o pdf/${theName}_${theVersion}.pdf;
 
+
+    ## Reset everything for the next book
     git checkout -- ${DIR}/book-list.json
     git checkout -- ${DIR}/pdfconfigs/config_mydoc_pdf.yml
     git checkout -- ${DIR}/_data/sidebars/mydoc_sidebar.yml
