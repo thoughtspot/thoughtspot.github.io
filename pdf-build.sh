@@ -73,6 +73,9 @@ for book in $(echo "$bookList" | jq -r '.books[] | @base64'); do
     git checkout -- ${DIR}/_data/sidebars/mydoc_sidebar.yml
 done
 
+
+sed -i "" "s/THEVERSION/${theVersion}/g" ${DIR}/index.html
+
 # echo "Done. Look in the pdf directory to see if it printed successfully."
 #
 # open pdf/$1_$2.pdf;
