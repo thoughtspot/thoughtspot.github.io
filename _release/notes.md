@@ -20,15 +20,9 @@ permalink: /:collection/:path.html
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
-<th style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; font-weight: bold;" title="Release Note Text">Release Note Text</th>
 </tr>
 </thead>
 <tbody>
-<tr style="width: 100%;border-bottom-style: inset;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved where idle sessions were never timing out.</p>
-</td>
-</tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="UIReportsquerycancellation"></a>UI Reports query cancellation</h3>
@@ -430,7 +424,6 @@ permalink: /:collection/:path.html
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
-<th style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; font-weight: bold;" title="Release Note Text">Release Note Text</th>
 </tr>
 </thead>
 <tbody>
@@ -438,6 +431,11 @@ permalink: /:collection/:path.html
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <p>A problem was resolved where insufficient memory caused services on a cluster crashed repeatedly.</p>
 </td>
+<tr style="width: 100%;border-bottom-style: inset;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
+<p>A problem was resolved where idle sessions were never timing out.</p>
+</td>
+</tr>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
