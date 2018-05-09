@@ -65,7 +65,8 @@ To list these system pinboards:
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Latency Visualizations</code></td>
       <td>
-         Latency on servers and <a href="#" data-toggle="tooltip" data-original-title='{{site.data.glossary.impression}}'>impression</a> counts. This data comes from the `TS: BI Server` worksheet.
+         Latency on servers and <a href="#" data-toggle="tooltip" data-original-title='{% for entry in site.data.glossary.entries %}{% if entry.word == "impression" %}{{ entry.definition }}{% endif %}{% endfor %}
+'>impression</a> counts. This data comes from the `TS: BI Server` worksheet.
       </td>
    </tr>
    <tr>
