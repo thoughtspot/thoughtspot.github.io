@@ -29,12 +29,6 @@ table.scheduler, th, td {
 }
 
 
-/*search*/
-
-div.gsc-control-cse {
-    max-width: 100%;
-}
-
 /*help center*/
 
 div.links{
@@ -342,6 +336,11 @@ p.post-meta {font-size: 80%; color: #777;}
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
 /* search area */
+
+div.gsc-control-cse {
+    max-width: 100%;
+}
+
 #search ul#results-container {
     list-style: none;
     font-size: 12px;
@@ -1103,26 +1102,6 @@ a.no_icon:after
     margin-bottom: 10px;
     background-color: #ea8f3e59;
 }
-
-/* algolia search */
-
-.search {
-    text-align: left;
-}
-.search input {
-    font-size: 20px;
-    width: 300px;
-}
-.results {
-    margin: auto;
-    text-align: left;
-}
-.results ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* algolia */
 
 div.results {
     position: absolute;
