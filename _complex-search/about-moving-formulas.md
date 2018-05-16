@@ -31,7 +31,7 @@ The moving formulas are the following:
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the average of the measure over the given window.
   The attributes are the ordering columns used to compute the moving average.
-  The window is (current - Num1...Current + Num2) with both end points being
+  The window is (`current - Num1...Current + Num2`) with both end points being
   included in the window. For example, `1,1` will have a window size of 3. To
   see periods in the past, use a negative number for the second endpoint, as in
   the example `moving_average(sales, 1, -1, date)`.
