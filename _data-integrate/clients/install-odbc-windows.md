@@ -11,6 +11,21 @@ The ODBC driver for Windows requires Visual C++ Redistributable for Visual
 Studio 2013. You will be prompted to install it during installation of the
 driver if it isn't already installed.  
 
+## Check the ThoughSpot IP and the simba_server status
+
+Before you begin, you need to know the IP address or DNS name of the server you
+intend to connect your server to.
+
+1. SSH as `admin` or the `thoughtspot` user to your ThoughSpot node.
+2. Verify the node IP.
+
+   ```bash
+   $ tscli node ls
+   172.18.231.17
+   ```
+3. Verify that the `simba_server` is running, if it isn't, work with ThoughSpot Support to start it.
+3. Exit or close the shell.
+
 ## Download the driver
 
 On your workstation, where you want to connect from, do the following:
@@ -18,10 +33,15 @@ On your workstation, where you want to connect from, do the following:
 1. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
 2. Click **ODBC Driver for Windows** to download the driver.
 3. Unzip the file you downloaded at a convenient location on your workstation.
+
+    ![]({{ site.baseurl }}/images/odbc-windows-extract.png)
+
+    There are two different Windows ODBC installers included in the file you downloaded.
+     -   ThoughtSpotODBC (x86).msi for Windows 32-bit
+     -   ThoughtSpotODBC (x64).msi for Windows 64-bit
+
 4. Choose the installer for your version of Windows.
-   There are two different Windows ODBC installers included in the file you downloaded.
-    -   ThoughtSpotODBC (x86).msi for Windows 32-bit
-    -   ThoughtSpotODBC (x64).msi for Windows 64-bit
+
 
 ## Install the driver
 

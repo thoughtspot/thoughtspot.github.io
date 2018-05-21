@@ -370,7 +370,7 @@ driver.
     [ThoughtSpot]
     Description = ThoughtSpot 64-bit ODBC Driver
     Driver = ThoughtSpot
-    ServerList = 192.168.2.249 12345, 192.168.2.148 12345, 192.168.2.247 12345
+    ServerList =  172.18.231.17 12345
     Locale = en-US
     ErrorMessagesPath = /home/admin/linux/ErrorMessages
     UseSsl = 0
@@ -396,6 +396,8 @@ to login into the ThoughSpot application.
 2. Confirm the user's privileges by going to the **Data** tab.
 3. Go back to your workstation's terminal shell.
 4. Use the `/usr/bin/isql` and confirm you can connect.
+
+   Specify the `ThoughSpot` DSN:
 
     ```
     /usr/bin/isql -v ThoughtSpot tsadmin adminpwd
