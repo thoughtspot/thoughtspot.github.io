@@ -1,4 +1,4 @@
----
+Below is the feature list---
 title: ["4.5 Release Notes"]
 toc: false
 keywords: "release notes"
@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5 version. Below is the list features and issues that were part of the 4.5.X release cycle.</p>
+<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5 version. Below is the features list and issues that were part of the 4.5.X release cycle.</p>
 <ul>
    <li><a href="#4-5-new features-and-functionality ">4.5 New Features and Functionality</a></li>
    <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
@@ -45,7 +45,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Improvedmemorymanagementlogs"></a>Improved memory management logs</h3>
-<p>This release includes improvements to how the system logs memory situations. The logs no record when a situation begins and ends plus information about which request triggered the situation. The system also now keeps a tally of how many distinct clients experienced a rejection.</p>
+<p>This release includes improvements to how the system logs memory situations. The logs now record when a situation begins and ends plus information about which request triggered the situation. The system also now keeps a tally of how many distinct clients experienced a rejection.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -57,7 +57,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Multipledata%2Ftimeformattedcolumnsindataimport"></a>Multiple data/time formatted columns in data import</h3>
-<p>You imported data can now include columns with different date/time formats.</p>
+<p>Your imported data can now include columns with different date/time formats.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -75,7 +75,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="SpotIQprofilepreferences"></a>SpotIQ profile preferences</h3>
-<p>In this release, you can configure your SpotIQ preferences in your user profile. These preferences control notifications and allows you exclude nulls or zero measures from your analysis.</p>
+<p>In this release, you can configure your SpotIQ preferences in your user profile. These preferences control notifications and allows you to exclude nulls or zero measures from your analysis.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -229,7 +229,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Abilitytosettableloadprioritization"></a>Ability to set table load prioritization</h3>
-<p>You can now use <tt>tql</tt> to set table load priority. You can set priority values between <tt>1-100</tt>. The default priority is <tt>50</tt>. The following show some the new commands for setting and changing table load priority:</p>
+<p>You can now use <tt>tql</tt> to set table load priority. You can set priority values between <tt>1-100</tt>. The default priority is <tt>50</tt>. The following illustrates examples of the new commands for setting and changing table load priority:</p>
 <div class="code panel" style="border-width: 1px;">
 <div class="codeContent panelContent">
 <pre class="code-java">  alter table <span class="code-quote">'t1'</span> set load priority [value]
@@ -272,7 +272,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Newdefaultsnapshotpolicy"></a>New default snapshot policy</h3>
-<p>This release includes a new default snapshot policy. Three snapshots are taken over 4 hour intervals in the course of a day. And 4 daily snapshots are taken. This provides continuity over the long weekends in many countries by ensuring snapshots on Saturda, Sunday, Monday, and Tuesday.</p>
+<p>This release includes a new default snapshot policy. Three snapshots are taken over 4 hour intervals in the course of a day. And 4 daily snapshots are taken. This provides continuity over the long weekends in many countries by ensuring snapshots on Saturday, Sunday, Monday, and Tuesday.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -284,7 +284,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Filteredaggregation"></a>Filtered aggregation</h3>
-<p>You can now use a set of filtered aggregation functions in the Formula Editor rather than crafting a lengthy <tt>if then else</tt> formula to achieve that today. Filters are useful for queries where the results should reflect a new, filtered vale. For example, a query that compares total review with the cost of the <tt>west</tt> region. In this example, you filter the region column to values in the <tt>west</tt> only.</p>
+<p>You can now use a set of filtered aggregation functions in the Formula Editor rather than crafting a lengthy <tt>if then else</tt> formula to achieve that today. Filters are useful for queries where the results should reflect a new, filtered vale. For example, a query that compares total revenue with the cost of the <tt>west</tt> region. In this example, you filter the region column to values in the <tt>west</tt> only.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -302,7 +302,7 @@ permalink: /:collection/:path.html
 <li>ad-hoc searches -new search done from search bar</li>
 <li>user counts</li>
 </ul>
-<p>New boards were added and some older boards were deprecated. A expanded monitoring section was added to the documentation as well.</p>
+<p>New boards were added and some older boards were deprecated. An expanded monitoring section was added to the documentation as well.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -326,7 +326,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<h3><a name="NewlanguagesandCanadiangmapping"></a>New languages and Canadiang mapping</h3>
+<h3><a name="NewlanguagesandCanadiangmapping"></a>New languages and Canadian mapping</h3>
 <p>This release includes support for Canadian province and county maps.</p>
 <p>Additionally, following languages are possible from the interface.</p>
 <div class="table-wrap">
@@ -429,7 +429,7 @@ permalink: /:collection/:path.html
 <tbody>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved where insufficient memory caused services on a cluster crashed repeatedly.</p>
+<p>A problem was resolved where insufficient memory caused services on a cluster to crash repeatedly.</p>
 </td>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
@@ -479,12 +479,12 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved where Google Chrome version 65 broke the formatting of headlines in pinboards. This issue was reported as a Product Support Advisory for versions 3.x and 4.x releases older than 4.4.1.4. It</p>
+<p>A problem was resolved where Google Chrome version 65 broke the formatting of headlines in pinboards. This issue was reported as a Product Support Advisory for versions 3.x and 4.x releases older than 4.4.1.4. </p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>An underlying system issue was resolved that caused a saved answer to fail with a read bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</p>
+<p>An underlying system issue was resolved that caused a saved answer to fail with a red bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -529,7 +529,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved that caused a segmentation faults which in turn caused crashes in a cluster during an upgrade.</p>
+<p>A problem was resolved that caused segmentation faults which in turn caused crashes in a cluster during an upgrade.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -549,7 +549,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>Issues were resolved that potentially exposed ThoughtSpot to two vulnerabilities,Meltdown&rdquo; and &ldquo;Spectre&rdquo;, and their with variants. IThese vulnerabilities only applied when the ThoughtSpot application was sharing hardware with other applications, such as cloud deployments. When deployed in a virtualized environment, either on prem or in AWS, the virtual environment needed to patch the OS for it. When deployed on its own appliance, these vulnerabilities should not have affected ThoughtSpot.</p>
+<p>Issues were resolved that potentially exposed ThoughtSpot to two vulnerabilities: "Meltdown" and "Spectre", along with variants. These vulnerabilities only applied when the ThoughtSpot application was sharing hardware with other applications, such as cloud deployments. When deployed in a virtualized environment, either on prem or in AWS, the virtual environment needed to patch the OS for it. When deployed on its own appliance, these vulnerabilities should not have affected ThoughtSpot.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -625,7 +625,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved where deleting a relation failed if either side of that relationship was a worksheet.</p>
+<p>A problem was resolved where deleting a relationship failed if either side of that relationship was a worksheet.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -645,17 +645,17 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API clients will have to updated to be compliant with this new feature. The primary clients that would be effected:</p>
+<p>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API clients will have to be updated to be compliant with this new feature. The primary clients that would be effected:</p>
 <ul>
 <li>Sync scripts that manage users and groups creation.</li>
 <li>Scripts that use the public APIs to fetch data.</li>
 </ul>
-<p>The easiest way to diagnose this would the inability of the script to login to the system. Please contact support to get guidance on the steps to resolve the issue.</p>
+<p>The easiest way to diagnose this would be the inability of the script to login to the system. Please contact support to get guidance on the steps to resolve the issue.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved with the <tt>JESSIONID</tt> value. Previously, setting the <strong>Remember Me</strong> option ion the login page, caused the server to set a new <tt>JSESSIONID</tt> on the client after the user logs out. This new <tt>JSESSIONID</tt> was used for the next authenticated user session, regardless of the user's identity. This no longer happens. Instead, users that relow after setting <strong>Remember Me</strong> are given an new <tt>JSESSIONID</tt>.</p>
+<p>A problem was resolved with the <tt>JESSIONID</tt> value. Previously, setting the <strong>Remember Me</strong> option on the login page, caused the server to set a new <tt>JSESSIONID</tt> on the client after the user logs out. This new <tt>JSESSIONID</tt> was used for the next authenticated user session, regardless of the user's identity. This no longer happens. Instead, users that re-login after setting <strong>Remember Me</strong> are given a new <tt>JSESSIONID</tt>.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -670,7 +670,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>Previously, the login form on the ThoughSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning of <tt>autocomplete</tt> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
+<p>Previously, the login form on the ThoughSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning off <tt>autocomplete</tt> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
