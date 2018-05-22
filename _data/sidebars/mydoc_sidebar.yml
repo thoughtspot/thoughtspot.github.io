@@ -1048,10 +1048,10 @@ entries:
        - title: ODBC driver Overview
          url: /data-integrate/clients/about-odbc.html
          output: web,digBk
-       - levelThreeTitle: Install on Windows
+       - levelThreeTitle: ODBC on Windows
          output: web,digBk
          levelThreeItems:
-         - title: Windows Installation Overview
+         - title: Install the ODBC driver on Windows
            url: /data-integrate/clients/install-odbc-windows.html
            output: web,digBk
          - title: Change the ODBC Configuration
