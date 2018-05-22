@@ -1,5 +1,5 @@
 ---
-title: [Install the ODBC Driver on Windows]
+title: [Install the ODBC driver on Windows]
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Microsoft Windows ODBC driver and install it."
@@ -20,7 +20,7 @@ the same machine where you plan to run your ETL activities.
 ## Prerequisites
 
 These instructions include directions to use the `ssh` command. Make sure your
-Windows workstation is equipped with a tool <a  href=https://www.putty.org/>such as Putty</a> for making `ssh`
+Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making `ssh`
 connections to your ThoughSpot server.
 
 
@@ -152,7 +152,7 @@ privileges on the application.
 10. When you are done, press **OK** to save your new properties.
 11. Press **Test Connection** to test your database connection.
 
-   ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")
+    ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")
 
 12. Press **Cancel** to close the **DSN Configuration** dialog.
 13. Press **OK** to close the **Client Configuration Dialog** the dialog.
