@@ -30,7 +30,11 @@ it isn't already installed.
 
 ![]({{ site.baseurl }}/images/windows-odbc-cplusplus.png "C++ requirement")
 
-Make sure you <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">download and install it</a> before continuing.
+To check if this Microsoft tool is already installed, search for it on your workstation.
+
+![]({{ site.baseurl }}/images/odbc-windows-search-0.png "Search for tool")
+
+If it isn't installed, make sure you <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">download and install it</a> before continuing.
 
 
 ## Check the ThoughSpot IP and the simba_server status
@@ -63,7 +67,11 @@ On the workstation where you want to connect from, do the following:
      -   ThoughtSpotODBC (x86).msi for Windows 32-bit
      -   ThoughtSpotODBC (x64).msi for Windows 64-bit
 
-## Install the driver
+## Install the driver and supporting software
+
+The installation process installs the Simba driver and adds the ODBC
+Administrator software to your workstation. You use this software to configure
+the driver.
 
 1. Launch the installer for your version of Windows.
 2. Click **Next** to continue.
@@ -97,16 +105,17 @@ On the workstation where you want to connect from, do the following:
 
 9.  Click **Finish**.
 
-If you need to make changes to the ODBC configuration later, you can [Change the
-ODBC Configuration on Windows]({{ site.baseurl
-}}/data-integrate/clients/change-odbc-windows.html#). For example, you may want
-to add a default schema or change the server IP address or the default database.
-You can also [add a new ODBC data source]({{ site.baseurl
-}}/data-integrate/clients/add-new-ODBC-source-windows.html). This capability
-supports connecting to multiple ThoughtSpot instances.
 
+## Configure the driver and test your connection
 
-## Test your ODBC connection
+Once installation is complete, you use the ODBC Administrator to configure the
+ODBC connection.
+
+ on your Windows workstation. For example, you may want to add
+a default schema or change the server IP address or the default database.
+
+It is recommended to add a default schema. If you don't specify a default
+schema, you will need to supply it every time you use the ODBC driver.
 
 At this point, you can test your ODBC connection to ThoughSpot.  It is important
 to recall that the username/password you use belongs to a ThoughSpot application
@@ -116,46 +125,58 @@ privileges on the application.
 1. Before trying the ODBC connection, confirm a username/password that can login into the ThoughSpot applications.
 2. Confirm the user's privileges by going to the **Data** tab.
 3. Return to your workstation.
-4. Locate the **ODBC Data Source Administrator (64-bit)** application.
+4. Locate and open the **ODBC Data Source Administrator (64-bit)** application.
 
    ![]({{ site.baseurl }}/images/odbc-windows-search.png "System DSN")
 
-5. Open the **ODBC Data Source Administrator (64-bit)** application.
-
-   This software may be called **ODBC Data Sources** depending on your version
-   of Windows.
-
-6. Choose the **System DSN** tab.
+5. Choose the **System DSN** tab.
 
    ![]({{ site.baseurl }}/images/odbc-system-dsn.png "System DSN")
 
-7. Select **ThoughtSpot** and press **Configure**.
+6. Select **ThoughtSpot** and press **Configure**.
 
    ![]({{ site.baseurl }}/images/odbc-configure-dialog.png "Configure")
 
-8. Choose **Options**.
+7. Choose **Options**.
 
     The system displays the **Options** dialog.
 
-9. Ensure you have the following **Custom Property** values set:
+8. Ensure you have the following **Custom Property** values set:
 
     | Custom Property   | Value                                                  |
     |-------------------|--------------------------------------------------------|
-    | `SCHEMA`          | falcon_default_schema                                  |
+    | `SCHEMA`          | `falcon_default_schema` is the default                |
     | `UID`             | The username of a user with data management privilege. |
     | `PWD`             | The password for the username you specify.             |
+
+    You don't have to use the default schema, you can specify another. You
+    should at least supply a default schema, otherwise, you must supply Once
+    every time you use the ODBC driver. Moreover, without a schema or if the
+    schema is not present, the ODBC driver returns an error that says the schema
+    could not be found.
+
+    Similarly, adding the `UID` and `PWD` properties are not required. If you
+    don't add them, you are prompted to supply them each time you connect.
 
     When you are done, your options should look similar to the following:
 
     ![]({{ site.baseurl }}/images/windows-odbc-options.png "Options")
 
-10. When you are done, press **OK** to save your new properties.
-11. Press **Test Connection** to test your database connection.
+9. When you are done, press **OK** to save your new properties.
+10. Press **Test Connection** to test your database connection.
 
     ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")
 
-12. Press **Cancel** to close the **DSN Configuration** dialog.
-13. Press **OK** to close the **Client Configuration Dialog** the dialog.
-14. Press **OK** to close the **ODBC Data Source Administrator (64-bit)** application
+11. Press **Cancel** to close the **DSN Configuration** dialog.
+12. Press **OK** to close the **Client Configuration Dialog** the dialog.
+13. Press **OK** to close the **ODBC Data Source Administrator (64-bit)** application
 
 Now, you are ready to begin using the connection you've configured.
+
+
+## Related information
+
+* Enable ODBC logs
+* \ [add a new ODBC data source]({{ site.baseurl
+}}/data-integrate/clients/multiple-sources-windows.html). This capability
+supports connecting to multiple ThoughtSpot instances.
