@@ -1060,6 +1060,14 @@ entries:
          - title: Deploy SSL with ODBC on Windows
            url: /data-integrate/clients/windows-deploy-ssl.html
            output: web,digBk
+         - title: About Microsoft SSIS
+           url: /data-integrate/ssis/about-ssis.html)
+         - title: ODBC Data Source Administrator
+           url: /data-integrate/ssis/odbc-data-source-administrator.html
+           output: web,digBk
+         - title: Set up the ODBC Driver for SSIS
+           url: /data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html
+           output: web,digBk
        - title: Install the ODBC Driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
          output: web,digBk
@@ -1077,17 +1085,6 @@ entries:
         output: web,digBk
       - title: Use the JDBC Driver
         url: /data-integrate/clients/use-jdbc-driver.html
-        output: web,digBk
-    - levelTwoTitle: Microsoft SSIS client
-      output: web,digBk
-      levelTwoItems:
-      - title: About Microsoft SSIS
-        url: /data-integrate/ssis/about-ssis.html)
-      - title: ODBC Data Source Administrator
-        url: /data-integrate/ssis/odbc-data-source-administrator.html
-        output: web,digBk
-      - title: Set up the ODBC Driver for SSIS
-        url: /data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html
         output: web,digBk
     - levelTwoTitle: Pentaho client
       output: web,digBk

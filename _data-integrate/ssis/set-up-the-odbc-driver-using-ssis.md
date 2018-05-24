@@ -6,9 +6,32 @@ summary: "Use SSIS to set up the ODBC Driver."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination.
 
-On Windows 64-bit, you have to install both the 32-bit and 64-bit ThoughtSpot ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required because the 64-bit SSIS shows a list of 32-bit ODBC drivers when you configure an ODBC target. However, it executes the 64-bit driver. If the drivers aren't named the same, then you'll get an error saying the driver doesn't exist.
+
+Microsoft SSIS (SQL Server Integration Services) is a data integration and
+workflow applications platform that can be used to connect to ThoughtSpot. The
+platform is a component of the Microsoft SQL Server database software.
+
+SSIS can be used to perform data migration tasks, and its data warehousing tool
+can be used for data ETL (extraction, transformation, and loading).
+
+The SSIS Import/Export Wizard creates packages that transfers data with no
+transformations. It can move data from a variety of source types to a variety of
+destination types, including text files and other SQL Server instances.
+
+
+Use SSIS to set up the ODBC Driver by creating a connection manager. This
+manager is used to create a connection between your OLE DB Source and the ODBC
+Destination.
+
+On Windows 64-bit, you have to install both the 32-bit and 64-bit ThoughtSpot
+ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By
+default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required
+because the 64-bit SSIS shows a list of 32-bit ODBC drivers when you configure
+an ODBC target. However, it executes the 64-bit driver. If the drivers aren't
+named the same, then you'll get an error saying the driver doesn't exist.
+
+
 
 ## Set up the driver
 
