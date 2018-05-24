@@ -66,53 +66,44 @@ ODBC driver:
 
     This extracts a subdirectory called `Solaris` into the current directory.
 
-8. Take a moment to examine the contents of the new directory.
+8. Take a moment to examine the contents of the new `solaris_sparc` directory.
 
-    The structure contains a Simba client library, supporting libraries and
-    setup files for two different architectures. It also continues error
-    messages for multiple languages.
+    The structure contains a version for GNU Compiler Collection (gcc) and no GCC. Beneath these two subdirectories have identical subdirectories that suppor 32 or 64 bit Sparc. The subdirectories include a Simba client library, supporting libraries, error messages, and
+    setup files.
 
     ```
-    ├── Bin
-    │   ├── Solaris_x86
-    │   │   └── libSimbaClient.so
-    │   └── Solaris_x8664
-    │       └── libSimbaClient.so
-    ├── ErrorMessages
-    │   ├── de-DE
-    │   │   ├── CSCommonMessages.xml
-    │   │   ├── ClientMessages.xml
-    │   │   ├── JNIDSIMessages.xml
-    │   │   ├── ODBCMessages.xml
-    │   │   ├── SQLEngineMessages.xml
-    │   │   └── ServerMessages.xml
-    │   ├── en-US
-    │   │   ├── ...
-    │   ├── es-ES
-    │   ├── fr-FR
-    │   ├── it-IT
-    │   └── ja-JP
-    ├── Lib
-    │   ├── Solaris_x86
-    │   │   ├── libcrypto.so
-    │   │   ├── libcrypto.so.1.0.0
-    │   │   ├── ...
-    │   └── Solaris_x8664
-    │       ├── ...
-    └── Setup
-        ├── .simba.javaquickstart.ini
-        ├── .simba.javaultralight.ini
-        ├── .simba.quickstart.ini
-        ├── .simba.ultralight.ini
-        ├── .simbaclient.ini
-        ├── .simbaserver.javaquickstart.ini
-        ├── .simbaserver.javaultralight.ini
-        ├── .simbaserver.quickstart.ini
-        ├── .simbaserver.ultralight.ini
-        ├── odbc.ini
-        └── odbcinst.ini
-
-    14 directories, 92 files
+    /gcc:
+        /Bin:
+           /Solaris_sparc64_gcc:
+              libSimbaClient.so
+           /Solaris_sparc_gcc:
+            libSimbaClient.so
+        /ErrorMessages:
+          de-DE
+            CSCommonMessages.xml
+            ClientMessages.xml
+            ODBCMessages.xml
+            SQLEngineMessages.xml
+            ServerMessages.xml
+          en-US
+          es-ES
+          fr-FR
+          it-IT
+          ja-JP
+        /Lib/Solaris_sparc64_gcc:
+          libcrypto.so
+          libcrypto.so.1.0.0
+          ...
+        /Lib/Solaris_sparc_gcc:
+          libcrypto.so
+          libcrypto.so.1.0.0
+          ..
+        /Setup:
+          odbc.ini
+          odbcinst.ini
+          simbaclient.ini
+    /no_gcc/
+      ...  same as gcc structure ...
     ```
 
     The `Solaris/Setup` directory contains the key ODBC configuration files and
@@ -124,14 +115,12 @@ ODBC driver:
    You can use the `arch` or the `uname` command or both.
 
     ```bash
-    $ arch
-      x86_64
-    $ uname -a
-      Solaris nebula-docs-production-4vfnv 4.4.108-1.el7.elrepo.x86_64 #1 SMP Mon Dec 25 09:55:39 EST 2017 x86_64 x86_64 x86_64 GNU/Solaris
+    $ isainfo
+    amd64 i386
     ```
 
     In the above examples, the workstation is a 64 bit workstation. Your
-    workstation may be 32-bit. You'll use this architecture information in the
+    own workstation may be 32-bit. You'll use this architecture information in the
     procedures that follow.
 
 
@@ -146,55 +135,29 @@ procedures where references are made to the unixODBC tools.
 
 1. Search for the unixODBC tools on your system.
 
-   The `yum` package manager searches for software already installed or
-   available on your system or from the configured repositories. Depending on
-   your workstation configuration, you may need to use the `sudo` command with
-   your workstation.
+   The [`pkgadd` package manager](https://www.opencsw.org/package/unixodbc/)
+   searches for software already installed or available on your system or from
+   the configured repositories.
 
-   ```
-   $ yum search unixODBC
-   ...
-    * updates: repos-lax.psychz.net
-   ================ N/S matched: unixODBC==============================
-   opensips-unixodbc.x86_64 : OpenSIPS unixODBC Storage support
-   unixODBC-devel.i686 : Development files for programs which will use the unixODBC library
-   unixODBC-devel.x86_64 : Development files for programs which will use the unixODBC library
-   erlang-odbc.x86_64 : A library for unixODBC support in Erlang
-   freeradius-unixODBC.x86_64 : Unix ODBC support for freeradius
-   unixODBC.i686 : A complete ODBC driver manager for Solaris
-   unixODBC.x86_64 : A complete ODBC driver manager for Solaris
-   ```
+    ```
+    pkgadd -d http://get.opencsw.org/now
+    /opt/csw/bin/pkgutil -U
+     ```
 
-    Make note of the correct package to install for your architecture.
+   Make note of the correct package to install for your architecture.
 
 2. Install the appropriate package for your architecture.
 
    In this case the command installs the tools for a 64-bit architecture. A 32-bit package needs the  `unixODBC.i686` package.
 
     ```bash
-    [admin@nebula-docs-odbc-test-cxmrn ~]$ yum install unixODBC.x86_64
-    Loaded plugins: fastestmirror, ovl
-    Loading mirror speeds from cached hostfile
-     * base: mirror.Solarisfix.com
-     * elrepo: repos.lax-noc.com
-     * epel: mirror.hmc.edu
-     * extras: centos-distro.cavecreek.net
-     * rpmforge: mirror.lstn.net
-     * updates: repos-lax.psychz.net
-    Resolving Dependencies
-    --> Running transaction check
-    ---> Package unixODBC.x86_64 0:2.3.1-11.el7 will be installed
-    ...
-    Complete!
+    /opt/csw/bin/pkgutil -y -i unixodbc
     ```
 
-  3. Verify the files were installed.
+3. Verify the files were installed.
 
     ```bash
-    $ ls /usr/bin/isql
-    /usr/bin/isql
-    $ ls /usr/bin/odbcinst
-    /usr/bin/odbcinst
+    /usr/sbin/pkgchk -L CSWunixodbc
     ```
 
 ## Set up your environment
@@ -203,10 +166,12 @@ In this section, you set parameters in your workstation to support your ODBC con
 
 1. Copy the library for your architecture from the `Lib` directory on your Solaris machine.
 
-    | Library                  | Architecture |
-    |--------------------------|--------------|
-    | `/Solaris/Lib/Solaris_x86`   | 32-bit       |
-    | `/Solaris/Lib/Solaris_x8664` | 64-bit       |
+    | Library                                      | Architecture |
+    |----------------------------------------------|--------------|
+    | `/solaris_sparc/gcc/Lib/Solaris_sparc/`      | 32-bit       |
+    | `/solaris_sparc/gcc/Lib/Solaris_sparc64/`    | 64-bit       |
+    | `/solaris_sparc/no_gcc/Lib/Solaris_sparc/`   | 32-bit       |
+    | `/solaris_sparc/no_gcc/Lib/Solaris_sparc64/` | 64-bit       |
 
 
 2. Add the location's path to the `LD_LIBRARY_PATH` environment variable.
@@ -214,7 +179,8 @@ In this section, you set parameters in your workstation to support your ODBC con
    For example if your architecture is 64-bit and you keep the library in your `home` directory:
 
    ```
-   export LD_LIBRARY_PATH=~/Solaris/Lib/Solaris_x8664/
+   LD_LIBRARY_PATH=~/solaris_sparc/no_gcc/Lib/Solaris_sparc64/
+   export LD_LIBRARY_PATH
    ```
 
 3. Use the `echo` command to verify the path was added correctly.
@@ -226,7 +192,7 @@ In this section, you set parameters in your workstation to support your ODBC con
 4. Copy the `odbc.ini` file to the `/etc` directory.
 
    ```
-   $ cp ~/Solaris/Setup/odbc.ini  /etc
+   $ cp ~/solaris_sparc/no_gcc/Setup/odbc.ini  /etc
    ```
 
    If you have trouble making the copy, use the `sudo` command to make the move.
@@ -234,33 +200,35 @@ In this section, you set parameters in your workstation to support your ODBC con
 5. Copy the `odbcinst.ini` file to the `/etc` directory.
 
     ```
-    $ cp ~/Solaris/Setup/odbcinst.ini  /etc
+    $ cp ~/solaris_sparc/no_gcc/Setupodbcinst.ini  /etc
     ```
 
 6. Copy the hidden `.simba.quickstart.ini ` file to the `/etc` directory, renaming it in the process to `simbaclient.ini`.
 
     ```
-    $ cp ~/Solaris/Setup/.simba.quickstart.ini  /etc/simbaclient.ini
+    $ cp ~/solaris_sparc/no_gcc/Setup/simbaclient.ini  /etc/simbaclient.ini
     ```
 
 7. Update your environment with the `ODBCSYSINI` and `ODBCINI` variables.
 
     ```
-    $ export ODBCSYSINI=/etc/
-    $ export ODBCINI=/etc/odbc.ini
+    $ ODBCSYSINI=/etc/
+    $ export ODBCSYSINI
+    $ ODBCINI=/etc/odbc.ini
+    $ export ODBCINI
     ```
 8. Use the `/usr/bin/odbcinst` command to confirm your settings:
 
     ```
-    $ /usr/bin/odbcinst -j
+    $ /opt/csw/bin/odbcinst -j
     unixODBC 2.3.1
-    DRIVERS............: /etc/odbcinst.ini
-    SYSTEM DATA SOURCES: /etc/odbc.ini
-    FILE DATA SOURCES..: /etc/ODBCDataSources
-    USER DATA SOURCES..: /etc/odbc.ini
-    SQLULEN Size.......: 8
-    SQLLEN Size........: 8
-    SQLSETPOSIROW Size.: 8
+    DRIVERS............: /etc/opt/csw/odbcinst.ini
+    SYSTEM DATA SOURCES: /etc/opt/csw/odbc.ini
+    FILE DATA SOURCES..: /etc/opt/csw/ODBCDataSources
+    USER DATA SOURCES..: //.odbc.ini
+    SQLULEN Size.......: 4
+    SQLLEN Size........: 4
+    SQLSETPOSIROW Size.: 2
     ```
 
 ## Edit the /etc/simbaclient.ini file
@@ -268,25 +236,11 @@ In this section, you set parameters in your workstation to support your ODBC con
 When you are ready, follow this procedure to configure the driver.  
 
 1. Edit the `/etc/simbaclient.ini` file with your favorite editor.
-2.
 2. Change the `ErrorMessagesPath` property to point to the location where you unzipped the client.
 
     ```
     [Driver]
     ErrorMessagesPath=<path_to_error_messages_directory>
-    ```
-4. Comment out the `# Generic ODBCInstLib` value.
-5. Uncomment the `ODBCInstLib` property.
-
-   When you are done, your file looks like the following:
-
-    ```
-    # Generic ODBCInstLib
-    #   iODBC
-    #ODBCInstLib=libiodbcinst.so
-
-    #   SimbaDM / unixODBC
-    ODBCInstLib=libodbcinst.so
     ```
 
 3. Save and close the `/etc/simbaclient.ini` file.
@@ -311,7 +265,7 @@ driver.
     APILevel            = 1
     ConnectFunctions    = YYY
     Description         = ThoughtSpot 64bit ODBC driver
-    Driver              = /home/admin/Solaris/Bin/Solaris_x8664/libSimbaClient.so
+    Driver              = /home/admin/solaris_sparc/no_gcc/Lib/Solaris_sparc64/libSimbaClient.so
     DriverODBCVer       = 03.52
     SQLLevel            = 1
     ```
@@ -325,7 +279,7 @@ driver.
     #APILevel            = 1
     #ConnectFunctions    = YYY
     #Description         = ThoughtSpot 32bit ODBC driver
-    #Driver              = /usr/local/scaligent/toolchain/local/simba/odbc/Solaris/Bin/Solaris_x86/libSimbaClient.so
+    #Driver              = /home/admin/solaris_sparc/no_gcc/Bin/Solaris_sparc/libSimbaClient.so
     #DriverODBCVer       = 03.80
     #SQLLevel            = 1
 
@@ -333,7 +287,7 @@ driver.
     APILevel            = 1
     ConnectFunctions    = YYY
     Description         = ThoughtSpot 64bit ODBC driver
-    Driver              = /home/admin/Solaris/Bin/Solaris_x8664/libSimbaClient.so
+    Driver              = /home/admin/solaris_sparc/no_gcc/Bin/Solaris_sparc64/libSimbaClient.so
     DriverODBCVer       = 03.80
     SQLLevel            = 1
     ```
@@ -376,7 +330,7 @@ driver.
     Driver = ThoughtSpot
     ServerList =  172.18.231.17 12345
     Locale = en-US
-    ErrorMessagesPath = /home/admin/Solaris/ErrorMessages
+    ErrorMessagesPath = /home/admin/solaris_sparc/no_gcc/ErrorMessages
     UseSsl = 0
     #SSLCertFile = # Set the SSL certificate file path. The certificate file can be obtained by extracting the SDK tarball
     #LogLevel = 0 # Set log level to enable debug logging
@@ -399,12 +353,12 @@ privileges on the application.
 to login into the ThoughSpot application.
 2. Confirm the user's privileges by going to the **Data** tab.
 3. Go back to your workstation's terminal shell.
-4. Use the `/usr/bin/isql` and confirm you can connect.
+4. Use the `/opt/csw/bin` and confirm you can connect.
 
    Specify the `ThoughSpot` DSN:
 
     ```
-    /usr/bin/isql -v ThoughtSpot tsadmin adminpwd
+    /opt/csw/bin/isql -v ThoughtSpot tsadmin adminpwd
     +---------------------------------------+
     | Connected!                            |
     |                                       |
