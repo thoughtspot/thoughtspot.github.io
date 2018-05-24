@@ -12,11 +12,25 @@ enable logging for ODBC on the workstation you use for connecting to ThoughSpot.
 * the workstation where you run your ETL activities
 * the server where the Simba service is running
 
+On both workstation and servers, the verbosity of the log is controlled by the
+`LogLevel` property. This property can be one of the following:
+
+  * `0` or `LOG_OFF`: no logging occurs
+  * `1` or `LOG_FATAL`: only log fatal errors
+  * `2` or `LOG_ERROR`: log all errors
+  * `3` or `LOG_WARNING`: log all errors and warnings
+  * `4` or `LOG_INFO`: log all errors, warnings, and informational messages
+  * `5` or `LOG_DEBUG`: log method entry and exit points and parameter values for debugging
+  * `6` or `LOG_TRACE`: log all method entry points
+
+Larger values include the information from lessor values. For example, if you
+set `3` or `LOG_WARNING`, you log all warnings _and_ all errors.
+
 ## Enable ODBC logs on a Windows workstation
 
 To enable ODBC logs on Windows:
 
-1. Open the ODBC Data Source Administrator and select the **System DSN** tab.
+1. Open the **ODBC Data Source Administrator** and select the **System DSN** tab.
 2. Select your ThoughtSpot data source and click **Configure**.
 
      ![]({{ site.baseurl }}/images/odbc_logs_1.png "Configure ODBC data source")
@@ -77,10 +91,40 @@ To enable logging on Linux or Solaris, follow these instructions:
 9. To test the configuration, run the ODBC load and review the log files.
 
 
-## Log information from the Simba server
+## Control logs from the Simba server
 
 You may want to collect logs from the Simba service. Do the
 following to procedure on every ThoughSpot node running the Simba service.
 
-1. Edit /etc/thoughtspot/simba.ini file on the node where simba_server is running and uncomment LogLevel setting. Set LogPath to a directory to save the logs.
-2. Restart simba_server. Note that if simba_server node IP changes because of the restart, they’ll need to start from step 1 again.
+1. SSH into the ThoughSpot node.
+2. Edit the `/etc/thoughtspot/simba.ini` file.
+
+    ```
+    ...
+    [Driver]
+
+    ## Note that this default DriverManagerEncoding of UTF-32 is for iODBC. unixODBC uses UTF-16 by default.
+    ## If unixODBC was compiled with -DSQL_WCHART_CONVERT, then UTF-32 is the correct value.
+    ## Execute 'odbc_config --cflags' to determine if you need UTF-32 or UTF-16 on unixODBC
+    DriverManagerEncoding=UTF-32
+    DriverLocale=en-US
+    ErrorMessagesPath=/usr/home/linux/ErrorMessages/
+    LogLevel=0
+    LogNamespace=
+    LogPath=
+
+    ....
+    ```
+
+3. Uncomment the `LogLevel` setting.
+
+    The `LogLevel` is the level of logging to capture (0-6).
+
+
+4. Set `LogPath` to a directory to save the logs.
+
+   The `LogPath` is the fully qualified path where ThoughSpot should write the logs.
+
+2. Work with ThoughSpot Support to restart the Simba serivce.
+
+    The node IP may change because of the restart. If this happens, repeat the entire procedure.

@@ -1060,13 +1060,8 @@ entries:
          - title: Deploy SSL with ODBC on Windows
            url: /data-integrate/clients/windows-deploy-ssl.html
            output: web,digBk
-         - title: About Microsoft SSIS
-           url: /data-integrate/ssis/about-ssis.html)
-         - title: ODBC Data Source Administrator
-           url: /data-integrate/ssis/odbc-data-source-administrator.html
-           output: web,digBk
          - title: Set up the ODBC Driver for SSIS
-           url: /data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html
+           url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
            output: web,digBk
        - title: Install the ODBC Driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
@@ -1107,7 +1102,7 @@ entries:
       - title: Enable JDBC Logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
-      - title: Schema not found error
+      - title: Schema not found error with ODBC
         url: /data-integrate/troubleshooting/schema-not-found.html
         output: web,digBk
       - title: How to improve throughput
