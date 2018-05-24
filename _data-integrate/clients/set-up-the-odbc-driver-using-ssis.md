@@ -23,6 +23,9 @@ Use SSIS to set up the ODBC Driver by creating a connection manager. This
 manager connects an OLE DB Source and the ODBC
 Destination.
 
+
+## Prerequisites
+
 On Windows 64-bit, you have to install both the 32-bit and 64-bit ThoughtSpot
 ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By
 default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required
@@ -31,14 +34,17 @@ an ODBC target. However, it executes the 64-bit driver. If the drivers aren't
 named the same, then you'll get an error saying the driver doesn't exist.
 
 
-
 ## Set up the driver
 
 To set up the ODBC driver using SSIS:
 
 1. Open your SQL Server visual development tool that is based on Microsoft Visual Studio.
 2. Select **OLE DB Source**, and click **New**.
-3. Here you must add the server by name from the machine accessible list.
+
+    Where ODBC provides access only to relational databases, OLE DB provides
+    access to data regardless of its format or location.
+
+3. Add the server by name from the machine accessible list.
 4. Enter the authentication information: db name, user name, password, and test connection.
 
    You can add the UID and password by clicking on **Options**.
@@ -69,7 +75,8 @@ To set up the ODBC driver using SSIS:
 
      ![]({{ site.baseurl }}/images/ssis_ole_db_connection_manager.png "Configure OLE DB Connection Manager")
 
-     If you do not see your data connection, you will have to create a new one in the Connection Manager by clicking **New**.
+     If you do not see your data connection, you will have to create a new one
+     in the Connection Manager by clicking **New**.
 
 5. Back in the OLE DB Source Editor, select the **Name of the table or the view**, and click **OK**.
 
@@ -84,7 +91,8 @@ To set up the ODBC driver using SSIS:
 
 ## Configure the ODBC Data Source Administrator
 
-The ODBC Data Source Administrator has to be configured to connect to ThoughtSpot and bring the table in.
+The ODBC Data Source Administrator has to be configured to connect to
+ThoughtSpot and bring the table in.
 
 1. Search for and open your **ODBC Data Sources (32-bit)** program.
 2. Click the **System DSN** tab and select **ThoughtSpot_32**.
@@ -94,7 +102,11 @@ The ODBC Data Source Administrator has to be configured to connect to ThoughtSpo
 
 4.  In the Client Configuration Dialog, enter the **Server IP** and **Server Port**.
 
-      Any node IP that has Simba server running on it should work. You can specify multiple secondary servers and ThoughtSpot will resolve to the server Simba is running on. To provide  **Secondary Servers** dialog enter one server IP per line. The line return serves as a separator, comma separation is not supported.
+      Any node IP that has Simba server running on it should work. You can
+      specify multiple secondary servers and ThoughtSpot will resolve to the
+      server Simba is running on. To provide  **Secondary Servers** dialog enter
+      one server IP per line. The line return serves as a separator, comma
+      separation is not supported.
 
 5. Click **OK** twice to close the Client Configuration Dialog and the ODBC Data Source Administrator.
 
@@ -102,9 +114,13 @@ The ODBC Data Source Administrator has to be configured to connect to ThoughtSpo
 
 ## Create a file to take the feed
 
-Now that you have set up your source, create the empty table in ThoughtSpot to take this feed. SSIS does not allow you to create the table in ThoughtSpot. You have to do this first in TQL. In Pentaho, it will create the table in ThoughtSpot, but not in SSIS.
+Now that you have set up your source, create the empty table in ThoughtSpot to
+take this feed. SSIS does not allow you to create the table in ThoughtSpot. You
+have to do this first in TQL. In Pentaho, it will create the table in
+ThoughtSpot, but not in SSIS.
 
-Create the ODBC Destination. Use the one you created and named in the ODBC Data Source Administrator.
+Create the ODBC Destination. Use the one you created and named in the ODBC Data
+Source Administrator.
 
 1. In the **SSIS Toolbox** tab, under **Other Destinations**, drag and drop **ODBC Destination** to the main window.
 2. Drag the **blue arrow** to connect the OLE DB Source icon to the ODBC Destination icon.
@@ -120,18 +136,26 @@ Create the ODBC Destination. Use the one you created and named in the ODBC Data 
 
 5. Set the **Transaction Size** to match the total number of rows that are expected to be loaded in the load cycle.
 
-    Your transaction size can be quite large—even spanning a million rows. However, too many small batches can leave the cluster in a rough state. This is because each batch acts as a separate transaction and creates a separate commit. Too many of these will slow down our system since each transaction creates a “data version” in our system. In Pentaho, the transaction size setting is called Commit Size.
+    Your transaction size can be quite large—even spanning a million rows.
+    However, too many small batches can leave the cluster in a rough state. This
+    is because each batch acts as a separate transaction and creates a separate
+    commit. Too many of these will slow down our system since each transaction
+    creates a “data version” in our system. In Pentaho, the transaction size
+    setting is called Commit Size.
 
 6. Set the **Transaction Option** attribute of the Data Flow Task to **Supported**.
 7. In the **Mappings** tab, validate the mapping or change it.
 
-   You can have different column names in each database if you map them. Of course, they must be of the same or compatible datatype.
+   You can have different column names in each database if you map them. Of
+   course, they must be of the same or compatible datatype.
 
    ![]({{ site.baseurl }}/images/ssis_mappings.png "ODBC Destination: Mappings")
 
 8.  Start the import job by clicking the **Start** button.
 
-    You should see an animation indicating that the data is transferring over. When the import is complete, the number of successfully transferred rows is displayed.
+    You should see an animation indicating that the data is transferring over.
+    When the import is complete, the number of successfully transferred rows is
+    displayed.
 
      ![]({{ site.baseurl }}/images/ssis_start.png "Start import job")
 
