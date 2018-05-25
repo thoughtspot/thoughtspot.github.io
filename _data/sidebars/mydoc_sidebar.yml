@@ -1033,19 +1033,16 @@ entries:
   - sectiontitle: Data Integration
     output: web,digBk
     sectionitems:
-    - title: Introduction
+    - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
     - title: Login credentials for administration
       url: /data-integrate/introduction/logins.html
       output: web,digBk
-    - title: ThoughtSpot Clients
-      url: /data-integrate/clients/about-clients.html
-      output: web,digBk
-    - levelTwoTitle: Use the ODBC Client
+    - levelTwoTitle: Use the ODBC client
       output: web,digBk
       levelTwoItems:
-       - title: ODBC driver Overview
+       - title: ODBC driver overview
          url: /data-integrate/clients/about-odbc.html
          output: web,digBk
        - levelThreeTitle: ODBC on Windows
@@ -1081,15 +1078,9 @@ entries:
       - title: Use the JDBC Driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - levelTwoTitle: Pentaho client
+    - title: Set up the JDBC Driver for Pentaho
+      url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
       output: web,digBk
-      levelTwoItems:
-      - title: About Pentaho
-        url: /data-integrate/pentaho/about-pentaho.html
-        output: web,digBk
-      - title: Set up the JDBC Driver for Pentaho
-        url: /data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html
-        output: web,digBk
     - levelTwoTitle: Troubleshooting
       output: web,digBk
       levelTwoItems:

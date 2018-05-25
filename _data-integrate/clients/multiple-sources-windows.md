@@ -68,7 +68,7 @@ or development cluster.
 
 
     If your test connection fails, [enable ODBC logging]({{ site.baseurl
-    }}/data-integrate/troubleshooting/troubleshooting-ODBC.html#) to
+    }}/data-integrate/troubleshooting/enable-ODBC-log.html#) to
     troubleshoot.
 
 11. Press **Cancel** to close the **DSN Configuration** dialog.

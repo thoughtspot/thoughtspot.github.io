@@ -176,7 +176,5 @@ Now, you are ready to begin using the connection you've configured.
 
 ## Related information
 
-* Enable ODBC logs
-* \ [add a new ODBC data source]({{ site.baseurl
-}}/data-integrate/clients/multiple-sources-windows.html). This capability
-supports connecting to multiple ThoughtSpot instances.
+* [Enable ODBC logs]({{ site.baseurl}}/data-integrate/troubleshooting/enable-ODBC-log.html).
+* [Configure multiple connections on Windows]({{ site.baseurl}}/data-integrate/clients/multiple-sources-windows.html).
