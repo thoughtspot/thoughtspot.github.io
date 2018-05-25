@@ -1033,32 +1033,32 @@ entries:
   - sectiontitle: Data Integration
     output: web,digBk
     sectionitems:
-    - title: Introduction
+    - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
     - title: Login credentials for administration
       url: /data-integrate/introduction/logins.html
       output: web,digBk
-    - title: ThoughtSpot Clients
-      url: /data-integrate/clients/about-clients.html
-      output: web,digBk
-    - levelTwoTitle: Use the ODBC Client
+    - levelTwoTitle: Use the ODBC client
       output: web,digBk
       levelTwoItems:
-       - title: ODBC driver Overview
+       - title: ODBC driver overview
          url: /data-integrate/clients/about-odbc.html
          output: web,digBk
-       - levelThreeTitle: Install on Windows
+       - levelThreeTitle: ODBC on Windows
          output: web,digBk
          levelThreeItems:
-         - title: Windows Installation Overview
+         - title: Install the ODBC driver on Windows
            url: /data-integrate/clients/install-odbc-windows.html
            output: web,digBk
-         - title: Change the ODBC Configuration
-           url: /data-integrate/clients/change-odbc-windows.html
+         - title: Configure multiple connections on Windows
+           url: /data-integrate/clients/multiple-sources-windows.html
            output: web,digBk
-         - title: Add a New Data Source to ODBC on Windows
-           url: /data-integrate/clients/add-new-ODBC-source-windows.html
+         - title: Deploy SSL with ODBC on Windows
+           url: /data-integrate/clients/windows-deploy-ssl.html
+           output: web,digBk
+         - title: Set up the ODBC Driver for SSIS
+           url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
            output: web,digBk
        - title: Install the ODBC Driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
@@ -1078,42 +1078,22 @@ entries:
       - title: Use the JDBC Driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - levelTwoTitle: Microsoft SSIS client
+    - title: Set up the JDBC Driver for Pentaho
+      url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
       output: web,digBk
-      levelTwoItems:
-      - title: About Microsoft SSIS
-        url: /data-integrate/ssis/about-ssis.html)
-      - title: ODBC Data Source Administrator
-        url: /data-integrate/ssis/odbc-data-source-administrator.html
-        output: web,digBk
-      - title: Set up the ODBC Driver for SSIS
-        url: /data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html
-        output: web,digBk
-    - levelTwoTitle: Pentaho client
-      output: web,digBk
-      levelTwoItems:
-      - title: About Pentaho
-        url: /data-integrate/pentaho/about-pentaho.html
-        output: web,digBk
-      - title: Set up the JDBC Driver for Pentaho
-        url: /data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html
-        output: web,digBk
     - levelTwoTitle: Troubleshooting
       output: web,digBk
       levelTwoItems:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
         output: web,digBk
-      - title: Enable ODBC Logs on Windows
-        url: /data-integrate/troubleshooting/troubleshooting-ODBC.html
-        output: web,digBk
-      - title: Enable ODBC Logs on Linux or Solaris
-        url: /data-integrate/troubleshooting/enable-ODBC-log-linux.html
+      - title: Enable ODBC Logs
+        url: /data-integrate/troubleshooting/enable-ODBC-log.html
         output: web,digBk
       - title: Enable JDBC Logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
-      - title: Schema not found error
+      - title: Schema not found error with ODBC
         url: /data-integrate/troubleshooting/schema-not-found.html
         output: web,digBk
       - title: How to improve throughput

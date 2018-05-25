@@ -48,7 +48,10 @@ You can download the session logs for a data load run. Access the link to downlo
 
 ## Timestamp format
 
-All relevant source values should be in the following format: `yyyy-mm-dd hh:mm:ss`. In addition, please ensure that year values are within the range of 0000-9999. Any fractional seconds in the source values should be removed and converted to the format above by adding a transformation.
+All relevant source values should be in the following format: `yyyy-mm-dd
+hh:mm:ss`. In addition, please ensure that year values are within the range of
+0000-9999. Any fractional seconds in the source values should be removed and
+converted to the format above by adding a transformation.
 
 ## Import relationships
 

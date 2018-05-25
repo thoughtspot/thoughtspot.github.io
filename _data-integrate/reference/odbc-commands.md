@@ -1,12 +1,16 @@
 ---
 title: [Supported SQL commands]
 keywords: odbc,jdbc
-toc: false
 summary: "The ThoughtSpot connection drivers support a limited set of SQL commands."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.
+The ODBC and JDBC drivers support a limited set of SQL commands. When developing
+software that uses a ThoughtSpot ODBC driver, use this reference of supported
+commands. This reference is intended for developers using other tools (ETL,
+etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.
+
+{% include note.html content="ThoughtSpot displays `VARCHAR` fields using lower case, regardless of what the original casing of your loaded data is." %}
 
 ## ODBC
 

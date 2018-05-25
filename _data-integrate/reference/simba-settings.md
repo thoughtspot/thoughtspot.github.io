@@ -15,7 +15,7 @@ clients, and ThoughtSpot has added some properties, which are listed separately
 here. All configuration properties use the type String (text).
 
 You can set these properties on Windows by using the [ODBC Administrator]({{
-site.baseurl }}/data-integrate/clients/change-odbc-windows.html#) client. For
+site.baseurl }}/data-integrate/clients/install-odbc-windows.html#) client. For
 Linux and Solaris, the properties are located in three files, depending on the
 property  type:
 
@@ -36,7 +36,7 @@ For more information, see [Use the JDBC Driver]({{ site.baseurl
 
 The following tables summarize the configuration properties.
 
-<table cellpadding="4" cellspacing="0" summary="" id="reference_h2b_cwk_vw__table_ok1_434_vw" class="table" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
       <col style="width:15%"/>
       <col style="width:15%"/>

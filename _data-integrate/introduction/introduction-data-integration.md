@@ -5,13 +5,33 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This guide explains how to integrate ThoughtSpot with other data sources for loading data. It also includes information on installing and using the ThoughtSpot clients (ODBC, JDBC, and Informatica).
+This guide explains how to integrate ThoughtSpot with other data sources for
+loading data. It also includes information on installing and using the
+ThoughtSpot clients (ODBC, JDBC, and more).
 
-There are several ways to load data into ThoughtSpot, depending on your goals and where the data is located. You should also consider requirements for recurring loads when planning how best to bring the data into ThoughtSpot.
+## ThoughtSpot Clients
 
-{% include note.html content="ThoughtSpot displays VARCHAR fields using lower case, regardless of what the original casing of your loaded data is." %}
+ThoughtSpot provides certified clients to help you load data easily from your
+ETL tool or another database. These include ODBC and JDBC drivers.
 
-Here are the options, with information on where to find the documentation for each method:
+You can obtain the ThoughtSpot client downloads from the Help Center. Always use
+the version of the ThoughtSpot clients that corresponds with the version of
+ThoughtSpot that you are running. When upgrading, make sure to upgrade your
+clients as well.
+
+{% include important.html content="The ETL tool must add a data transformation
+step if the source column data type does not exactly match the target's,
+ThoughtSpot's, column data type. The driver does not do any implicit
+conversions." %}
+
+## Methods for loading data
+
+There are several ways to load data into ThoughtSpot, depending on your goals
+and where the data is located. Always consider your requirements for
+recurring loads when planning how best to bring the data into ThoughtSpot.
+
+Here are the options, with information on where to find the documentation for
+each method:
 
 <table>
 <colgroup>
@@ -46,7 +66,7 @@ Here are the options, with information on where to find the documentation for ea
       <td>ThoughtSpot provides a JDBC (Java Database Connectivity) driver to enable transferring data from your ETL tool into ThoughtSpot.</td>
     </tr>
     <tr>
-      <td><a href="{{"/data-integrate/ssis/about-ssis.html" | prepend: site.baseurl }}">Connect to SSIS</a></td>
+      <td><a href="{{"/data-integrate/clients/set-up-the-odbc-driver-using-ssis.html" | prepend: site.baseurl }}">Microsoft SSIS (SQL Server Integration Services)</a></td>
       <td>You can use the ODBC driver to connect to SSIS and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
     <tr>
@@ -55,3 +75,11 @@ Here are the options, with information on where to find the documentation for ea
     </tr>
   </tbody>
 </table>
+
+
+## Where to go next
+
+-   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
+You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
+-   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  
+ Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.

@@ -9,7 +9,7 @@ For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot 
 
 ## General tsload flags
 
-<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
    <col style="width:25%">
    <col style="width:30%">
@@ -85,7 +85,7 @@ For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot 
 
 The following flags are used when loading data from an input file:
 
-<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
       <col style="width:25%">
       <col style="width:30%">
