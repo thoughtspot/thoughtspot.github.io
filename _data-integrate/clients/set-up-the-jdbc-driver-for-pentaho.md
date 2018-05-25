@@ -118,7 +118,7 @@ Do the following on your ETL workstation with the Pentaho client:
 1. Click **Design > Output**.
 2. Drag and drop **Table output** to the **Transformation** window.
 
-     ![]({{ site.baseurl }}/images/table_output_pentaho.png "Output and Table output")
+    ![]({{ site.baseurl }}/images/table_output_pentaho.png "Output and Table output")
 
 3. Double click the **Table output** icon to open the Table output dialog.
 4. Enter a **Step name**.
