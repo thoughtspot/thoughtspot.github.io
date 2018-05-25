@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Use SSIS to set up the ODBC Driver."> -->
+<!-- <meta name="description" content="You can add multiple ODBC data sources."> -->
 <meta name="keywords" content=",  tbd">
-<title>Set up the ODBC Driver for SSIS | ThoughtSpot</title>
+<title>Configure multiple connections on Windows | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,20 +48,20 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>[“Set up the ODBC Driver for SSIS”]</title>
+<title>[“Configure multiple connections on Windows”]</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="[“Set up the ODBC Driver for SSIS”]" />
+<meta property="og:title" content="[“Configure multiple connections on Windows”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination." />
-<meta property="og:description" content="Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination." />
-<link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html" />
+<meta name="description" content="Use this procedure if you want to add an additional data source after creating a single source succeeds. The main reason for needing to set up multiple ThoughtSpot ODBC data sources is that you have a production cluster and a test or development cluster." />
+<meta property="og:description" content="Use this procedure if you want to add an additional data source after creating a single source succeeds. The main reason for needing to set up multiple ThoughtSpot ODBC data sources is that you have a production cluster and a test or development cluster." />
+<link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/clients/multiple-sources-windows.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/clients/multiple-sources-windows.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-09T09:54:54-07:00" />
+<meta property="article:published_time" content="2018-05-25T14:38:47-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html","headline":"[“Set up the ODBC Driver for SSIS”]","dateModified":"2018-05-09T09:54:54-07:00","datePublished":"2018-05-09T09:54:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html"},"@context":"http://schema.org"}</script>
+{"description":"Use this procedure if you want to add an additional data source after creating a single source succeeds. The main reason for needing to set up multiple ThoughtSpot ODBC data sources is that you have a production cluster and a test or development cluster.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/multiple-sources-windows.html","headline":"[“Configure multiple connections on Windows”]","dateModified":"2018-05-25T14:38:47-07:00","datePublished":"2018-05-25T14:38:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/multiple-sources-windows.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,7 +204,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -2478,7 +2478,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction</a></li>
+                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction to Data Integration</a></li>
                 
               
             
@@ -2489,42 +2489,42 @@ var ss360Config = {
               
             
               
-                
-                  <li><a href="/4.5/data-integrate/clients/about-clients.html">ThoughtSpot Clients</a></li>
-                
-              
-            
-              
               <li class="levelTwo">
-                  <a href="#">Use the ODBC Client</a>
+                  <a href="#">Use the ODBC client</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver Overview</a></li>
+                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver overview</a></li>
                       
                    
                 
                   
                    <li class="levelThree">
-                       <a href="#">Install on Windows</a>
+                       <a href="#">ODBC on Windows</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Windows Installation Overview</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Install the ODBC driver on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/change-odbc-windows.html">Change the ODBC Configuration</a></li>
+                                  <li class="active"><a href="/4.5/data-integrate/clients/multiple-sources-windows.html">Configure multiple connections on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/add-new-ODBC-source-windows.html">Add a New Data Source to ODBC on Windows</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/windows-deploy-ssl.html">Deploy SSL with ODBC on Windows</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.5/data-integrate/clients/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
                               
                             
                         
@@ -2576,47 +2576,9 @@ var ss360Config = {
               
             
               
-              <li class="levelTwo">
-                  <a href="#">Microsoft SSIS client</a>
-                  <ul>
                 
-                  
+                  <li><a href="/4.5/data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
                 
-                  
-                      
-                          <li><a href="/4.5/data-integrate/ssis/odbc-data-source-administrator.html">ODBC Data Source Administrator</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li class="active"><a href="/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Pentaho client</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/about-pentaho.html">About Pentaho</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
               
             
               
@@ -2632,13 +2594,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/troubleshooting-ODBC.html">Enable ODBC Logs on Windows</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log-linux.html">Enable ODBC Logs on Linux or Solaris</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log.html">Enable ODBC Logs</a></li>
                       
                    
                 
@@ -2650,7 +2606,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error with ODBC</a></li>
                       
                    
                 
@@ -2890,7 +2846,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Set up the ODBC Driver for SSIS</h1>
+   <h1 class="post-title-main">Configure multiple connections on Windows</h1>
 </div>
 
 
@@ -2898,7 +2854,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Use SSIS to set up the ODBC Driver.</div>
+    <div class="summary">You can add multiple ODBC data sources.</div>
    
 
     
@@ -2928,148 +2884,135 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Use SSIS to set up the ODBC Driver by creating a connection manager. This manager is used to create a connection between your OLE DB Source and the ODBC Destination.</p>
-
-<p>On Windows 64-bit, you have to install both the 32-bit and 64-bit ThoughtSpot ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required because the 64-bit SSIS shows a list of 32-bit ODBC drivers when you configure an ODBC target. However, it executes the 64-bit driver. If the drivers aren’t named the same, then you’ll get an error saying the driver doesn’t exist.</p>
-
-<h2 id="set-up-the-driver">Set up the driver</h2>
-
-<p>To set up the ODBC driver using SSIS:</p>
+  <p>Use this procedure if you want to add an additional data source after creating a
+<a href="install-odbc-windows.html#">single source succeeds</a>. The main reason for needing to set up multiple
+ThoughtSpot ODBC data sources is that you have a production cluster and a test
+or development cluster.</p>
 
 <ol>
-  <li>Open your SQL Server visual development tool that is based on Microsoft Visual Studio.</li>
-  <li>Select <strong>OLE DB Source</strong>, and click <strong>New</strong>.</li>
-  <li>Here you must add the server by name from the machine accessible list.</li>
   <li>
-    <p>Enter the authentication information: db name, user name, password, and test connection.</p>
+    <p>Locate and open the <strong>ODBC Data Source Administrator (64-bit)</strong> application.</p>
 
-    <p>You can add the UID and password by clicking on <strong>Options</strong>.</p>
+    <p><img src="/4.5/images/odbc-windows-search.png" alt="" title="System DSN" />1</p>
   </li>
-  <li>Click <strong>File</strong> and select <strong>New</strong>, then <strong>Project</strong>.</li>
-  <li>Select the <strong>Integration Services</strong> tab under <strong>Installed &gt; Templates &gt; Business Intelligence</strong>.</li>
+  <li>Click the <strong>System DSN</strong> tab.</li>
   <li>
-    <p>Enter a name in the <strong>Name</strong> field and click <strong>OK</strong>.</p>
+    <p>Select <strong>Add</strong>.</p>
 
-    <p><img src="/4.5/images/ssis_integration_services.png" alt="" title="New Project: Integration Services" /></p>
+    <p>The system lists the available drivers.</p>
+
+    <p><img src="/4.5/images/ODBC_choose_new_data_source_to_add.png" alt="" title="Create New Data Source" /></p>
   </li>
   <li>
-    <p>Select the <strong>SSIS Toolbox</strong> tab on the left hand side of the platform, and drag and drop <strong>Data Flow Task</strong> to the main window.</p>
+    <p>Choose the <strong>ThoughtSpot ODBC Driver</strong> and click <strong>Finish</strong>.</p>
 
-    <p><img src="/4.5/images/ssis_data_flow_task.png" alt="" title="Drag and drop Data Flow Task" /></p>
+    <p>The system displays the <strong>Client Configuration Dialog</strong> dialog.</p>
+
+    <p><img src="/4.5/images/ODBC_config_dev_source_connect.png" alt="" title="New connection" /></p>
   </li>
   <li>
-    <p>Double click the <strong>Data Flow Task</strong> icon when it appears in the center of the page.</p>
+    <p>Enter the your data source configuration.</p>
 
-    <p><img src="/4.5/images/ssis_data_flow_task_icon.png" alt="" title="Data Flow Task icon" /></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Configuration Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Data Source Name</strong></td>
+          <td>The name you want to call the data source.</td>
+        </tr>
+        <tr>
+          <td><strong>Description</strong></td>
+          <td>A description of the data source.</td>
+        </tr>
+        <tr>
+          <td><strong>Server IP</strong></td>
+          <td>A list of the IP addresses for each node, separated by commas.</td>
+        </tr>
+        <tr>
+          <td><strong>Server Port</strong></td>
+          <td><code class="highlighter-rouge">12345</code></td>
+        </tr>
+        <tr>
+          <td><strong>Idle Timeout</strong></td>
+          <td>Time in seconds after which an idle ODBC connection times out.</td>
+        </tr>
+        <tr>
+          <td><strong>Login Timeout</strong></td>
+          <td>Time in seconds after which a login request times out.</td>
+        </tr>
+        <tr>
+          <td><strong>Query Timeout</strong></td>
+          <td>Time in seconds after which a query times out.</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
-  <li>Navigate back to the <strong>SSIS Toolbox</strong> tab.
-You now want to create sources and destinations.</li>
+  <li>
+    <p>Configure custom properties by clicking <strong>Options</strong>.</p>
+
+    <p>The system displays the <strong>Options</strong> dialog.</p>
+
+    <p><img src="/4.5/images/ODBC_add_custom_property.png" alt="" title="Add a custom property" /></p>
+  </li>
+  <li>
+    <p>Add these properties using the <strong>Add</strong> to enter an option and click <strong>OK</strong> after to save an option.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>DATABASE</strong></td>
+          <td>The default database to connect to.</td>
+        </tr>
+        <tr>
+          <td><strong>SCHEMA</strong></td>
+          <td>The default schema to connect to. Use <code class="highlighter-rouge">falcon_default_schema</code> if you aren’t sure.</td>
+        </tr>
+        <tr>
+          <td><strong>CONNECTIONTIMEOUT</strong></td>
+          <td>Optional. Seconds before an idle connection times out.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in <a href="/4.5/data-integrate/reference/simba-settings.html#">ODBC and JDBC configuration properties</a>.</p>
+
+    <p><img src="/4.5/images/ODBC_add_custom_property_new_data_source.png" alt="" title="Enter the custom property key and value" /></p>
+  </li>
+  <li>
+    <p>When you are done, press <strong>OK</strong> to save your new configuration.</p>
+
+    <p><img src="/4.5/images/odbc-new-config.png" alt="" title="Success" /></p>
+  </li>
+  <li>
+    <p>Press <strong>Test Connection</strong> to test your database connection.</p>
+
+    <p><img src="/4.5/images/windows-odbc-success.png" alt="" title="Success" /></p>
+
+    <p>If your test connection fails, <a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log.html#">enable ODBC logging</a> to
+troubleshoot.</p>
+  </li>
+  <li>Press <strong>Cancel</strong> to close the <strong>DSN Configuration</strong> dialog.</li>
+  <li>Press <strong>OK</strong> to close the <strong>Client Configuration Dialog</strong> the dialog.</li>
+  <li>Press <strong>OK</strong> to close the <strong>ODBC Data Source Administrator (64-bit)</strong> application</li>
 </ol>
-
-<h2 id="create-sources-and-destinations">Create sources and destinations</h2>
-
-<ol>
-  <li>Under <strong>Other Sources</strong>, find <strong>OLE DB Source</strong> and drag and drop it to the main window.</li>
-  <li>Double click the <strong>OLE DB Source</strong> icon when it appears in the center of the page to open the OLE DB Source Editor.</li>
-  <li>Select a new OLE DB connection manager by clicking <strong>New</strong>.</li>
-  <li>
-    <p>In the Configure OLE DB Connection Manager window, select your <strong>Data connection</strong> and click <strong>OK</strong>.</p>
-
-    <p><img src="/4.5/images/ssis_ole_db_connection_manager.png" alt="" title="Configure OLE DB Connection Manager" /></p>
-
-    <p>If you do not see your data connection, you will have to create a new one in the Connection Manager by clicking <strong>New</strong>.</p>
-  </li>
-  <li>
-    <p>Back in the OLE DB Source Editor, select the <strong>Name of the table or the view</strong>, and click <strong>OK</strong>.</p>
-
-    <p><img src="/4.5/images/ssis_name_of_table.png" alt="" title="OLE DB Source Editor table name" /></p>
-  </li>
-  <li>
-    <p>Select the table, and see what columns are in it.</p>
-
-    <p>In this example, a single column, <code class="highlighter-rouge">c1</code>, is selected.</p>
-
-    <p><img src="/4.5/images/ssis_table_column.png" alt="" title="OLE DB Table column" /></p>
-  </li>
-</ol>
-
-<h2 id="configure-the-odbc-data-source-administrator">Configure the ODBC Data Source Administrator</h2>
-
-<p>The ODBC Data Source Administrator has to be configured to connect to ThoughtSpot and bring the table in.</p>
-
-<ol>
-  <li>Search for and open your <strong>ODBC Data Sources (32-bit)</strong> program.</li>
-  <li>Click the <strong>System DSN</strong> tab and select <strong>ThoughtSpot_32</strong>.</li>
-  <li>
-    <p>Click <strong>Configure</strong>.</p>
-
-    <p><img src="/4.5/images/ssis_system_dsn.png" alt="" title="ODBC Data Source Administrator: Configure" /></p>
-  </li>
-  <li>
-    <p>In the Client Configuration Dialog, enter the <strong>Server IP</strong> and <strong>Server Port</strong>.</p>
-
-    <p>Any node IP that has Simba server running on it should work. You can specify multiple secondary servers and ThoughtSpot will resolve to the server Simba is running on. To provide  <strong>Secondary Servers</strong> dialog enter one server IP per line. The line return serves as a separator, comma separation is not supported.</p>
-  </li>
-  <li>
-    <p>Click <strong>OK</strong> twice to close the Client Configuration Dialog and the ODBC Data Source Administrator.</p>
-
-    <p><img src="/4.5/images/ssis_client_configuration_dialog.png" alt="" title="ODBC Data Source Administrator: Client Configuration Dialog" /></p>
-  </li>
-</ol>
-
-<h2 id="create-a-file-to-take-the-feed">Create a file to take the feed</h2>
-
-<p>Now that you have set up your source, create the empty table in ThoughtSpot to take this feed. SSIS does not allow you to create the table in ThoughtSpot. You have to do this first in TQL. In Pentaho, it will create the table in ThoughtSpot, but not in SSIS.</p>
-
-<p>Create the ODBC Destination. Use the one you created and named in the ODBC Data Source Administrator.</p>
-
-<ol>
-  <li>In the <strong>SSIS Toolbox</strong> tab, under <strong>Other Destinations</strong>, drag and drop <strong>ODBC Destination</strong> to the main window.</li>
-  <li>Drag the <strong>blue arrow</strong> to connect the OLE DB Source icon to the ODBC Destination icon.</li>
-  <li>
-    <p>Double click the <strong>ODBC Destination</strong> icon.</p>
-
-    <p><img src="/4.5/images/ssis_drag_connector.png" alt="" title="Creating the OLE DB Source and ODBC Destination connection" /></p>
-  </li>
-  <li>
-    <p>Use ODBC Destination to set the <strong>Batch size</strong> for the connection in the Connection Manager tab. You can set the size to be up to 10,000.</p>
-
-    <p><img src="/4.5/images/ssis_batch_size.png" alt="" title="ODBC Destination: Batch size" /></p>
-
-    <p>If the load fails, the entire batch will be lost, and you will have to start that load over again.</p>
-  </li>
-  <li>
-    <p>Set the <strong>Transaction Size</strong> to match the total number of rows that are expected to be loaded in the load cycle.</p>
-
-    <p>Your transaction size can be quite large—even spanning a million rows. However, too many small batches can leave the cluster in a rough state. This is because each batch acts as a separate transaction and creates a separate commit. Too many of these will slow down our system since each transaction creates a “data version” in our system. In Pentaho, the transaction size setting is called Commit Size.</p>
-  </li>
-  <li>Set the <strong>Transaction Option</strong> attribute of the Data Flow Task to <strong>Supported</strong>.</li>
-  <li>
-    <p>In the <strong>Mappings</strong> tab, validate the mapping or change it.</p>
-
-    <p>You can have different column names in each database if you map them. Of course, they must be of the same or compatible datatype.</p>
-
-    <p><img src="/4.5/images/ssis_mappings.png" alt="" title="ODBC Destination: Mappings" /></p>
-  </li>
-  <li>
-    <p>Start the import job by clicking the <strong>Start</strong> button.</p>
-
-    <p>You should see an animation indicating that the data is transferring over. When the import is complete, the number of successfully transferred rows is displayed.</p>
-
-    <p><img src="/4.5/images/ssis_start.png" alt="" title="Start import job" /></p>
-
-    <p><img src="/4.5/images/ssis_success.png" alt="" title="Successful import job" /></p>
-  </li>
-</ol>
-
-<p>You can validate the import using TQL or in the <strong>DATA</strong> screen.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.5/_data-integrate/ssis/set-up-the-odbc-driver-using-ssis.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.5/_data-integrate/clients/multiple-sources-windows.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -3088,7 +3031,7 @@ You now want to create sources and destinations.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 9, 2018 <br />
+        Generated: May 25, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
