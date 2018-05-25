@@ -39,17 +39,7 @@ If it isn't installed, make sure you <a href="https://www.microsoft.com/en-us/do
 
 ## Check the ThoughSpot IP and the simba_server status
 
-Before you begin, you need to know the IP address or DNS name of the server you
-intend to connect your server to.
-
-1. Using Putty or similar, SSH as `admin` or the `thoughtspot` user to your ThoughSpot node.
-2. Verify the node IP(s).
-
-   ![]({{ site.baseurl }}/images/putty-ssh.png "SSH with putty")
-
-3. Make a note of each IP; there may be more than one.
-4. Verify that the `simba_server` is running, if it isn't, work with ThoughSpot Support to start it.
-5. Exit or close the shell.
+{% include content/simba-server-start.md %}
 
 ## Download the driver
 

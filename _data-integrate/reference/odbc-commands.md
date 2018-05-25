@@ -1,7 +1,6 @@
 ---
 title: [Supported SQL commands]
 keywords: odbc,jdbc
-toc: false
 summary: "The ThoughtSpot connection drivers support a limited set of SQL commands."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

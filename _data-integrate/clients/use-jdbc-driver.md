@@ -20,7 +20,6 @@ activities.
 ## JDBC Configuration parameters
 
 
-
 | Information | Description |
 |-------------|-------------|
 |Driver name | `com.simba.client.core.jdbc4.SCJDBC4Driver` |
@@ -30,10 +29,14 @@ activities.
 |username | The name of a ThoughtSpot user with administrator permissions.|
 |password | The password of a ThoughtSpot application user. This is not the machine or SSH userpassword. |
 
+## Check the ThoughSpot IP and the simba_server status
+
+{% include content/simba-server-start.md %}
+
+
 ## Install the driver
 
-The JDBC driver is a `.jar` packaged application. To use the package, you download it, install it 
-
+The JDBC driver is a `.jar` packaged application. To use the package, you download it, install it
 
 1. Log in to the local machine where you want to install the JDBC driver.
 2. Click [**Here**]({{ site.baseurl }}/release/downloads.html) to download the JDBC driver.
@@ -172,3 +175,9 @@ public class InsertData {
 }
 
 ```
+
+## Related Information
+
+* [Enable JDBC logs]({{ site.baseurl }}/data-integrate/troubleshooting/JDBC-logging.html)
+* [Connection configuration]({{ site.baseurl }}/data-integrate/reference/simba-settings.html#)
+* [Supported SQL commands]({{ site.baseurl }}/data-integrate/reference/odbc-commands.html)
