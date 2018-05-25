@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Use ODBC to modify log in options and troubleshoot ODBC issues."> -->
-<meta name="keywords" content="logs,  tbd">
-<title>ODBC Data Source Administrator | ThoughtSpot</title>
+<!-- <meta name="description" content=""> -->
+<meta name="keywords" content=",  tbd">
+<title>Deploy SSL with ODBC on Windows | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,20 +48,20 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>[“ODBC Data Source Administrator”]</title>
+<title>[“Deploy SSL with ODBC on Windows”]</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="[“ODBC Data Source Administrator”]" />
+<meta property="og:title" content="[“Deploy SSL with ODBC on Windows”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The ODBC Data Source Administrator can be used to modify log in options and troubleshoot ODBC issues." />
-<meta property="og:description" content="The ODBC Data Source Administrator can be used to modify log in options and troubleshoot ODBC issues." />
-<link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/ssis/odbc-data-source-administrator.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/ssis/odbc-data-source-administrator.html" />
+<meta name="description" content="You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection." />
+<meta property="og:description" content="You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection." />
+<link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-09T09:54:54-07:00" />
+<meta property="article:published_time" content="2018-05-25T14:38:47-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"The ODBC Data Source Administrator can be used to modify log in options and troubleshoot ODBC issues.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/ssis/odbc-data-source-administrator.html","headline":"[“ODBC Data Source Administrator”]","dateModified":"2018-05-09T09:54:54-07:00","datePublished":"2018-05-09T09:54:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/ssis/odbc-data-source-administrator.html"},"@context":"http://schema.org"}</script>
+{"description":"You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html","headline":"[“Deploy SSL with ODBC on Windows”]","dateModified":"2018-05-25T14:38:47-07:00","datePublished":"2018-05-25T14:38:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,7 +204,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -2478,7 +2478,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction</a></li>
+                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction to Data Integration</a></li>
                 
               
             
@@ -2489,42 +2489,42 @@ var ss360Config = {
               
             
               
-                
-                  <li><a href="/4.5/data-integrate/clients/about-clients.html">ThoughtSpot Clients</a></li>
-                
-              
-            
-              
               <li class="levelTwo">
-                  <a href="#">Use the ODBC Client</a>
+                  <a href="#">Use the ODBC client</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver Overview</a></li>
+                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver overview</a></li>
                       
                    
                 
                   
                    <li class="levelThree">
-                       <a href="#">Install on Windows</a>
+                       <a href="#">ODBC on Windows</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Windows Installation Overview</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Install the ODBC driver on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/change-odbc-windows.html">Change the ODBC Configuration</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/multiple-sources-windows.html">Configure multiple connections on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/add-new-ODBC-source-windows.html">Add a New Data Source to ODBC on Windows</a></li>
+                                  <li class="active"><a href="/4.5/data-integrate/clients/windows-deploy-ssl.html">Deploy SSL with ODBC on Windows</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.5/data-integrate/clients/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
                               
                             
                         
@@ -2576,47 +2576,9 @@ var ss360Config = {
               
             
               
-              <li class="levelTwo">
-                  <a href="#">Microsoft SSIS client</a>
-                  <ul>
                 
-                  
+                  <li><a href="/4.5/data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
                 
-                  
-                      
-                          <li class="active"><a href="/4.5/data-integrate/ssis/odbc-data-source-administrator.html">ODBC Data Source Administrator</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Pentaho client</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/about-pentaho.html">About Pentaho</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
               
             
               
@@ -2632,13 +2594,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/troubleshooting-ODBC.html">Enable ODBC Logs on Windows</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log-linux.html">Enable ODBC Logs on Linux or Solaris</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log.html">Enable ODBC Logs</a></li>
                       
                    
                 
@@ -2650,7 +2606,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error with ODBC</a></li>
                       
                    
                 
@@ -2890,15 +2846,13 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">ODBC Data Source Administrator</h1>
+   <h1 class="post-title-main">Deploy SSL with ODBC on Windows</h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">Use ODBC to modify log in options and troubleshoot ODBC issues.</div>
    
 
     
@@ -2928,36 +2882,88 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The ODBC Data Source Administrator can be used to modify log in options and troubleshoot ODBC issues.</p>
+  <p>You can configure a secure ODBC connection between your Thoughtspot cluster and
+a remote Windows Machine.  This article explains the SSL resources you need and
+the ODBC configuration options you need to enable SSL for an ODBC connection.</p>
 
-<h2 id="logging-options">Logging Options</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<p>In the ODBC Data Source Administrator, you can specify the log verbosity in the Logging Options. This is done to debug connectivity or failures from the client side.</p>
+<p>Your system administration should have created and configured your network’s
+Certificate Authority before configuring SSL over the ThoughSpot ODBC
+connection. Additionally, the system administrator should have available both
+the proper Private Key and Server Certificate.</p>
 
-<p><img src="/4.5/images/ssis_logging_options.png" alt="" title="Logging Options menu" /></p>
+<h2 id="configure-the-thoughspot-cluster-nodes">Configure the ThoughSpot cluster nodes</h2>
 
-<h2 id="schema-property">Schema Property</h2>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Portions of this procedure require that you work
+with your ThoughSpot Customer Service or Support Engineer.</div>
 
-<p>You can provide a schema using the Edit Property. If you do not do this, our system will look in all of the schemas.</p>
+<p>Before you change your ODBC configuration, decide on a path where you will store
+the Private Key and Server Certificate, for example, you could decide to use
+<code class="highlighter-rouge">/home/admin/Simba_SSL/</code> as the path.</p>
+
+<p>Then, do the following on <em>every ThoughSpot node</em> in your cluster.</p>
+
+<ol>
+  <li>Create the path on the node.</li>
+  <li>Copy the SSL certificate and private key to this path.</li>
+  <li>Edit the node’s <code class="highlighter-rouge">/etc/thoughtspot/simba.ini</code> file (Simba server configuration) with your favorite editor.</li>
+  <li>
+    <p>Add the following lines:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> SslCertfile=/home/admin/Simba_SSL/Server-Certificate.pem
+ SslKeyfile=/home/admin/Simba_SSL/Private-Key.pem
+ UseSsl=Enabled
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Restart the Simba service.</p>
+
+    <p>You need to work with your ThoughSpot Customer Success or Support Engineer to do this.</p>
+  </li>
+</ol>
+
+<h2 id="deploy-the-certificate-on-your-windows-workstation">Deploy the certificate on your windows workstation</h2>
+
+<p>Do the following procedure on the workstation you use for your ODBC connection.</p>
+
+<ol>
+  <li>
+    <p>Save CA certificate to a secure location on the workstation disk.</p>
+
+    <p>Choose a location where the certificate is unlikely to be deleted by mistake,
+for example, <code class="highlighter-rouge">C:\ODBC-SSL\CA.pem</code> is an example of a location.</p>
+  </li>
+  <li>Open your ThoughtSpot ODBC connection configuration dialog.</li>
+  <li>Click <strong>Options</strong>.</li>
+  <li>Check the <strong>Require SSL</strong> option.</li>
+  <li>
+    <p>Enter the location of the CA certificate in the <strong>SSL Certificate File</strong> field.</p>
+
+    <p><img src="/4.5/images/windows-odbc-cplusplus.png" alt="" title="Certificate location" /></p>
+  </li>
+  <li>When you are done, press <strong>OK</strong> to save your new properties.</li>
+  <li>
+    <p>Press <strong>Test Connection</strong> to test your database connection.</p>
+
+    <p><img src="/4.5/images/windows-odbc-success.png" alt="" title="Success" /></p>
+  </li>
+  <li>Press <strong>Cancel</strong> to close the configuration dialog.</li>
+  <li>Press <strong>OK</strong> to close the <strong>Client Configuration Dialog</strong> the dialog.</li>
+  <li>Press <strong>OK</strong> to close the <strong>ODBC Data Source Administrator (64-bit)</strong> application</li>
+</ol>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.5/_data-integrate/ssis/odbc-data-source-administrator.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.5/_data-integrate/clients/windows-deploy-ssl.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
     </div>
     <div >
-        
-        
-        
-        
-        <a href="/4.5/tags/tag_logs.html" class="btn btn-default navbar-btn cursorNorm" role="button">logs</a>
-        
-        
         
     </div>
 </div>
@@ -2971,9 +2977,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 9, 2018 <br />
+        Generated: May 25, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

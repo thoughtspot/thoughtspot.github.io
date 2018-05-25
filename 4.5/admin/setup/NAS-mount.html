@@ -57,11 +57,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-09T09:54:54-07:00" />
+<meta property="article:published_time" content="2018-05-25T14:38:47-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system for these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you would like. This procedure shows you how to mount a NAS file system for storing or accessing large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found. When supplying a directory for writing or reading a backup, you can specify the mount point as the directory to use. Likewise, you can stage data there for loading. Backups are written by the Linux user admin. If that user does not have permission to write to the NAS file system, you could write the backups to disk (for example /export/sdc1, /export/sdd1, /export/sde1, or /export/sdf1) and then set up a cron job that executes as root user and copies the backup to the NAS device every night, then deletes it from the directory. Do not send the periodic backups or stage files on /export/sdb1 since it is a name node. It is used internally by Hadoop Distributed File System (HDFS) and if this drive fills up, it can cause serious problems. Do not allow backups or data files to accumulate on ThoughtSpot. If disk space becomes limited, the system will not function normally. Log in to the Linux shell using SSH. Mount the directory to the file system, by issuing the appropriate command: For an NFS (Network File System) directory: tscli nas mount-nfs --server &lt;server_NFS_address&gt; --path_on_server &lt;path&gt; --mount_point &lt;target&gt; For a CIFS (Common Internet File System) directory: tscli nas mount-cifs --server &lt;server_CIFS_address&gt; --path_on_server &lt;path&gt; --mount_point &lt;target&gt; --username &lt;user&gt; --password &lt;password&gt; --uid &lt;uid&gt; --gid &lt;gid&gt; Use the mounted file system as you wish, specifying it by referring to its mount point. When you are finished with it, you may optionally unmount the NAS file system: tscli nas unmount --dir &lt;directory&gt;","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html","headline":"[“Configure NAS file system”]","dateModified":"2018-05-09T09:54:54-07:00","datePublished":"2018-05-09T09:54:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html"},"@context":"http://schema.org"}</script>
+{"description":"Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system for these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you would like. This procedure shows you how to mount a NAS file system for storing or accessing large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found. When supplying a directory for writing or reading a backup, you can specify the mount point as the directory to use. Likewise, you can stage data there for loading. Backups are written by the Linux user admin. If that user does not have permission to write to the NAS file system, you could write the backups to disk (for example /export/sdc1, /export/sdd1, /export/sde1, or /export/sdf1) and then set up a cron job that executes as root user and copies the backup to the NAS device every night, then deletes it from the directory. Do not send the periodic backups or stage files on /export/sdb1 since it is a name node. It is used internally by Hadoop Distributed File System (HDFS) and if this drive fills up, it can cause serious problems. Do not allow backups or data files to accumulate on ThoughtSpot. If disk space becomes limited, the system will not function normally. Log in to the Linux shell using SSH. Mount the directory to the file system, by issuing the appropriate command: For an NFS (Network File System) directory: tscli nas mount-nfs --server &lt;server_NFS_address&gt; --path_on_server &lt;path&gt; --mount_point &lt;target&gt; For a CIFS (Common Internet File System) directory: tscli nas mount-cifs --server &lt;server_CIFS_address&gt; --path_on_server &lt;path&gt; --mount_point &lt;target&gt; --username &lt;user&gt; --password &lt;password&gt; --uid &lt;uid&gt; --gid &lt;gid&gt; Use the mounted file system as you wish, specifying it by referring to its mount point. When you are finished with it, you may optionally unmount the NAS file system: tscli nas unmount --dir &lt;directory&gt;","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html","headline":"[“Configure NAS file system”]","dateModified":"2018-05-25T14:38:47-07:00","datePublished":"2018-05-25T14:38:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/admin/setup/NAS-mount.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,7 +204,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> ThoughtSpot Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -2478,7 +2478,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction</a></li>
+                  <li><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Introduction to Data Integration</a></li>
                 
               
             
@@ -2489,42 +2489,42 @@ var ss360Config = {
               
             
               
-                
-                  <li><a href="/4.5/data-integrate/clients/about-clients.html">ThoughtSpot Clients</a></li>
-                
-              
-            
-              
               <li class="levelTwo">
-                  <a href="#">Use the ODBC Client</a>
+                  <a href="#">Use the ODBC client</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver Overview</a></li>
+                          <li><a href="/4.5/data-integrate/clients/about-odbc.html">ODBC driver overview</a></li>
                       
                    
                 
                   
                    <li class="levelThree">
-                       <a href="#">Install on Windows</a>
+                       <a href="#">ODBC on Windows</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Windows Installation Overview</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/install-odbc-windows.html">Install the ODBC driver on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/change-odbc-windows.html">Change the ODBC Configuration</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/multiple-sources-windows.html">Configure multiple connections on Windows</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/4.5/data-integrate/clients/add-new-ODBC-source-windows.html">Add a New Data Source to ODBC on Windows</a></li>
+                                  <li><a href="/4.5/data-integrate/clients/windows-deploy-ssl.html">Deploy SSL with ODBC on Windows</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/4.5/data-integrate/clients/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
                               
                             
                         
@@ -2576,47 +2576,9 @@ var ss360Config = {
               
             
               
-              <li class="levelTwo">
-                  <a href="#">Microsoft SSIS client</a>
-                  <ul>
                 
-                  
+                  <li><a href="/4.5/data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
                 
-                  
-                      
-                          <li><a href="/4.5/data-integrate/ssis/odbc-data-source-administrator.html">ODBC Data Source Administrator</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html">Set up the ODBC Driver for SSIS</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
-              <li class="levelTwo">
-                  <a href="#">Pentaho client</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/about-pentaho.html">About Pentaho</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html">Set up the JDBC Driver for Pentaho</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
               
             
               
@@ -2632,13 +2594,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/troubleshooting-ODBC.html">Enable ODBC Logs on Windows</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log-linux.html">Enable ODBC Logs on Linux or Solaris</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/enable-ODBC-log.html">Enable ODBC Logs</a></li>
                       
                    
                 
@@ -2650,7 +2606,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error</a></li>
+                          <li><a href="/4.5/data-integrate/troubleshooting/schema-not-found.html">Schema not found error with ODBC</a></li>
                       
                    
                 
@@ -3028,7 +2984,7 @@ will not function normally.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 9, 2018 <br />
+        Generated: May 25, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
