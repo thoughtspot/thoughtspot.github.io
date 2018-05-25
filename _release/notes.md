@@ -17,7 +17,7 @@ permalink: /:collection/:path.html
 <p>4.2.3, 4.3, 4.4.X and any hotfixes or customer patches on these branches</p>
 <p>If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.</p>
 <h2><br />4.5 New&nbsp;Features and Functionality&nbsp;</h2>
-<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<table style="border-collapse: collapse; width: 100%;" border="0" border-collapse: collapse; padding="0">
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
 </tr>
@@ -421,7 +421,7 @@ permalink: /:collection/:path.html
 </tbody>
 </table>
 <h2>4.5 Fixed Bugs&nbsp;</h2>
-<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<table style="border-collapse: collapse; width: 100%;" border="0" border-collapse: collapse; padding="0">
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
 </tr>

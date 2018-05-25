@@ -36,7 +36,7 @@ For more information, see [Use the JDBC Driver]({{ site.baseurl
 
 The following tables summarize the configuration properties.
 
-<table cellpadding="4" cellspacing="0" summary="" id="reference_h2b_cwk_vw__table_ok1_434_vw" class="table" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
       <col style="width:15%"/>
       <col style="width:15%"/>

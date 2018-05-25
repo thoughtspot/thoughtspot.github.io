@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 The following videos are new in the 4.4 release cycle:
 
-<table cellpadding="1" cellspacing="1" style="width: 100%; table-layout: fixed;">
+<table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
       <tr>
          <td>
@@ -48,7 +48,7 @@ The following videos are new in the 4.4 release cycle:
 
 In this section, you'll find some additional videos you may find helpful.
 
-<table cellpadding="1" cellspacing="1" style="width: 100%; table-layout: fixed;">
+<table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
       <tr>
          <td>

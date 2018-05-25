@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 If you're looking for ThoughtSpot clients or API files, you've come to the right place. Click the link to download the file you need:
 
-<table cellpadding="1" cellspacing="1" class="mt-responsive-table mt-responsive-table" table="table">
+<table padding="1" class="mt-responsive-table mt-responsive-table" table="table">
     <tbody>
         <tr>
             <td class="mt-column-width-20 mt-noheading">&nbsp;</td>
