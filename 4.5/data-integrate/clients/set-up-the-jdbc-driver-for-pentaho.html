@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="JDBC to connect to the ThoughSpot Simba server from Pentaho."> -->
+<!-- <meta name="description" content="JDBC to connect to the ThoughtSpot Simba server from Pentaho."> -->
 <meta name="keywords" content=",  tbd">
 <title>Set up the JDBC driver for Pentaho | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/syntax.css">
@@ -2854,7 +2854,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">JDBC to connect to the ThoughSpot Simba server from Pentaho.</div>
+    <div class="summary">JDBC to connect to the ThoughtSpot Simba server from Pentaho.</div>
    
 
     
@@ -2902,13 +2902,13 @@ support.</p>
 <p>Use JDBC to connect to the ThoughtSpot Simba server from Pentaho. The connection will
 be made between a new ThoughtSpot Table Input and Output objects.</p>
 
-<h2 id="check-the-thoughspot-ip-and-the-simba_server-status">Check the ThoughSpot IP and the simba_server status</h2>
+<h2 id="check-the-thoughspot-ip-and-the-simba_server-status">Check the ThoughtSpot IP and the simba_server status</h2>
 
 <p>Before you begin, you need to know the IP address or DNS name of the server you
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughSpot node.</li>
+  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -2917,7 +2917,7 @@ intend to connect your server to.</p>
 </code></pre></div>    </div>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
-  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughSpot Support to start it.</li>
+  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
   <li>Exit or close the shell.</li>
 </ol>
 
@@ -3057,7 +3057,7 @@ with the PDI suite. It is also known as the Kettle project.</p>
  <tr>
     <th>Custom Connection URL</th>
     <td><code>jdbc:simba://SERVER_IP:12345;Database=DATABASE_or_SCHEMA_NAME</code>&lt;/code&gt;
-    <p>The IP is a node in your ThoughSpot cluster. The name or schema of the database you want to connect to. Use TQL to create a database name if needed. Ensure that there are no leading or trailing spaces.</p></td>
+    <p>The IP is a node in your ThoughtSpot cluster. The name or schema of the database you want to connect to. Use TQL to create a database name if needed. Ensure that there are no leading or trailing spaces.</p></td>
  </tr>
  <tr>
     <th>Custom Driver Class Name</th>
@@ -3066,7 +3066,7 @@ with the PDI suite. It is also known as the Kettle project.</p>
  </tr>
  <tr>
     <th>User Name</th>
-    <td>A ThoughtSpot username. If you leave this empty, you are prompted for it at connection time. This user should have **Data Management** privileges on ThoughSpot.</td>
+    <td>A ThoughtSpot username. If you leave this empty, you are prompted for it at connection time. This user should have **Data Management** privileges on ThoughtSpot.</td>
  </tr>
  <tr>
     <th>Password</th>
