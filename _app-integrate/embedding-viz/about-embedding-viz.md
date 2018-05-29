@@ -53,8 +53,8 @@ You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
 
 ### Configuration requirements for embedding
 
-Only Extended Enterprise installation can use ThoughSpot's embed functionality.
-ThoughSpot Enterprise installations must also work with ThoughSpot Support to
+Only Extended Enterprise installation can use ThoughtSpot's embed functionality.
+ThoughtSpot Enterprise installations must also work with ThoughtSpot Support to
 enable embed before using this functionality.
 
 

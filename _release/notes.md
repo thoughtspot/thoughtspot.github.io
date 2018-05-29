@@ -26,7 +26,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="UIReportsquerycancellation"></a>UI Reports query cancellation</h3>
-<p>Beginning in this release, ThoughSpot reports queries which exceed system resource:</p>
+<p>Beginning in this release, ThoughtSpot reports queries which exceed system resource:</p>
 <p><tt>Query cancelled due to memory limits being exceeded (OOM).</tt></p>
 </td>
 </tr>
@@ -139,13 +139,13 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Metricspipelineimprovements"></a>Metrics pipeline improvements</h3>
-<p>Included in this release are metrics pipelines that empower both our team and yours to enrich the ThoughSpot product experience. The new metric pipelines enable:</p>
+<p>Included in this release are metrics pipelines that empower both our team and yours to enrich the ThoughtSpot product experience. The new metric pipelines enable:</p>
 <ul>
-<li>Faster issue resolution: ThoughSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. Our support team can begin working to remediate any issue with you at once.</li>
+<li>Faster issue resolution: ThoughtSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. Our support team can begin working to remediate any issue with you at once.</li>
 <li>Failure prevention: Metrics provides direct visibility to the ThoughtSpot team on your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to prevent failures. Metrics also help reduce SLA times as the team can debug much faster.</li>
-<li>Improved Search: ThoughSpot can tune search algorithms by studying search history and schema.</li>
-<li>Improve Performance: ThoughSpot analyzes expensive and complex query patterns to look for performance optimizations.</li>
-<li>Improved Browser Performance: Finally, the metrics pipeline allows ThoughSpot to identify application-use patterns that contribute to performance bottlenecks with specific browsers and help your team prevent or alleviate them.</li>
+<li>Improved Search: ThoughtSpot can tune search algorithms by studying search history and schema.</li>
+<li>Improve Performance: ThoughtSpot analyzes expensive and complex query patterns to look for performance optimizations.</li>
+<li>Improved Browser Performance: Finally, the metrics pipeline allows ThoughtSpot to identify application-use patterns that contribute to performance bottlenecks with specific browsers and help your team prevent or alleviate them.</li>
 </ul>
 </td>
 </tr>
@@ -630,7 +630,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>A problem was resolved where Zookeeper reported reaching a descriptor limit. This report was returned in error. ThoughSpot no longer reports this.</p>
+<p>A problem was resolved where Zookeeper reported reaching a descriptor limit. This report was returned in error. ThoughtSpot no longer reports this.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -670,7 +670,7 @@ permalink: /:collection/:path.html
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
-<p>Previously, the login form on the ThoughSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning off <tt>autocomplete</tt> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
+<p>Previously, the login form on the ThoughtSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning off <tt>autocomplete</tt> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">

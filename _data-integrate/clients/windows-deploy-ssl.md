@@ -13,20 +13,20 @@ the ODBC configuration options you need to enable SSL for an ODBC connection.
 ## Prerequisites
 
 Your system administration should have created and configured your network's
-Certificate Authority before configuring SSL over the ThoughSpot ODBC
+Certificate Authority before configuring SSL over the ThoughtSpot ODBC
 connection. Additionally, the system administrator should have available both
 the proper Private Key and Server Certificate.
 
-## Configure the ThoughSpot cluster nodes
+## Configure the ThoughtSpot cluster nodes
 
 {% include important.html content="Portions of this procedure require that you work
-with your ThoughSpot Customer Service or Support Engineer." %}
+with your ThoughtSpot Customer Service or Support Engineer." %}
 
 Before you change your ODBC configuration, decide on a path where you will store
 the Private Key and Server Certificate, for example, you could decide to use
 `/home/admin/Simba_SSL/` as the path.
 
-Then, do the following on *every ThoughSpot node* in your cluster.
+Then, do the following on *every ThoughtSpot node* in your cluster.
 
 1. Create the path on the node.
 2. Copy the SSL certificate and private key to this path.
@@ -40,7 +40,7 @@ Then, do the following on *every ThoughSpot node* in your cluster.
     ```
 5. Restart the Simba service.
 
-   You need to work with your ThoughSpot Customer Success or Support Engineer to do this.
+   You need to work with your ThoughtSpot Customer Success or Support Engineer to do this.
 
 ## Deploy the certificate on your windows workstation
 

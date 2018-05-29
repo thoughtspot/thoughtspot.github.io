@@ -11,14 +11,14 @@ directly from the ThoughtSpot instance.
 
 ## Metrics collection
 
-ThoughSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. These metrics allow for:
+ThoughtSpot collects the diagnostic information from your system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported. These metrics allow for:
 
 * Our support team can begin working to remediate any issue with you at once.
 * Metrics provides direct visibility to the ThoughtSpot team on your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to prevent failures. Metrics also help reduce SLA times as the team can debug much faster.
-* ThoughSpot can tune search algorithms by studying search history and schema.
-* ThoughSpot analyzes expensive and complex query patterns to look for performance optimizations.
+* ThoughtSpot can tune search algorithms by studying search history and schema.
+* ThoughtSpot analyzes expensive and complex query patterns to look for performance optimizations.
 
-Finally, the metrics pipeline allows ThoughSpot to identify application-use
+Finally, the metrics pipeline allows ThoughtSpot to identify application-use
 patterns that contribute to performance bottlenecks with specific browsers and
 help your team prevent or alleviate them.
 

@@ -2,7 +2,7 @@
 title: [Set up the JDBC driver for Pentaho]
 keywords: tbd
 last_updated: tbd
-summary: "JDBC to connect to the ThoughSpot Simba server from Pentaho."
+summary: "JDBC to connect to the ThoughtSpot Simba server from Pentaho."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ support.
 Use JDBC to connect to the ThoughtSpot Simba server from Pentaho. The connection will
 be made between a new ThoughtSpot Table Input and Output objects.
 
-## Check the ThoughSpot IP and the simba_server status
+## Check the ThoughtSpot IP and the simba_server status
 
 {% include content/simba-server-start.md %}
 
@@ -148,7 +148,7 @@ Do the following on your ETL workstation with the Pentaho client:
     <tr>
        <th>Custom Connection URL</th>
        <td><code>jdbc:simba://SERVER_IP:12345;Database=DATABASE_or_SCHEMA_NAME</code></code>
-       <p>The IP is a node in your ThoughSpot cluster. The name or schema of the database you want to connect to. Use TQL to create a database name if needed. Ensure that there are no leading or trailing spaces.</p></td>
+       <p>The IP is a node in your ThoughtSpot cluster. The name or schema of the database you want to connect to. Use TQL to create a database name if needed. Ensure that there are no leading or trailing spaces.</p></td>
     </tr>
     <tr>
        <th>Custom Driver Class Name</th>
@@ -157,7 +157,7 @@ Do the following on your ETL workstation with the Pentaho client:
     </tr>
     <tr>
        <th>User Name</th>
-       <td>A ThoughtSpot username. If you leave this empty, you are prompted for it at connection time. This user should have **Data Management** privileges on ThoughSpot.</td>
+       <td>A ThoughtSpot username. If you leave this empty, you are prompted for it at connection time. This user should have **Data Management** privileges on ThoughtSpot.</td>
     </tr>
     <tr>
        <th>Password</th>
