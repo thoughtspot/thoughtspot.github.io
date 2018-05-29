@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughSpot's ODBC connection relies on the <a
+ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
 X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the JDBC driver.
@@ -29,7 +29,7 @@ activities.
 |username | The name of a ThoughtSpot user with administrator permissions.|
 |password | The password of a ThoughtSpot application user. This is not the machine or SSH userpassword. |
 
-## Check the ThoughSpot IP and the simba_server status
+## Check the ThoughtSpot IP and the simba_server status
 
 {% include content/simba-server-start.md %}
 

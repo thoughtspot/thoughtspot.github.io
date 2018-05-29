@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughSpot's ODBC connection relies on the <a
+ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
 X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
@@ -21,7 +21,7 @@ the same machine where you plan to run your ETL activities.
 
 These instructions include directions to use the `ssh` command. Make sure your
 Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making `ssh`
-connections to your ThoughSpot server.
+connections to your ThoughtSpot server.
 
 
 The ODBC driver for Windows requires Visual C++ Redistributable for Visual
@@ -37,7 +37,7 @@ To check if this Microsoft tool is already installed, search for it on your work
 If it isn't installed, make sure you <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">download and install it</a> before continuing.
 
 
-## Check the ThoughSpot IP and the simba_server status
+## Check the ThoughtSpot IP and the simba_server status
 
 {% include content/simba-server-start.md %}
 
@@ -107,12 +107,12 @@ a default schema or change the server IP address or the default database.
 It is recommended to add a default schema. If you don't specify a default
 schema, you will need to supply it every time you use the ODBC driver.
 
-At this point, you can test your ODBC connection to ThoughSpot.  It is important
-to recall that the username/password you use belongs to a ThoughSpot application
+At this point, you can test your ODBC connection to ThoughtSpot.  It is important
+to recall that the username/password you use belongs to a ThoughtSpot application
 user. Typically, this user is a user with data management or administrative
 privileges on the application.
 
-1. Before trying the ODBC connection, confirm a username/password that can login into the ThoughSpot applications.
+1. Before trying the ODBC connection, confirm a username/password that can login into the ThoughtSpot applications.
 2. Confirm the user's privileges by going to the **Data** tab.
 3. Return to your workstation.
 4. Locate and open the **ODBC Data Source Administrator (64-bit)** application.

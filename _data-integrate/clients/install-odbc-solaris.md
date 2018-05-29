@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughSpot's ODBC connection relies on the <a
+ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
 X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
@@ -19,7 +19,7 @@ the same machine where you plan to run your ETL activities. The Solaris ODBC
 driver is certified on Solaris Sparc 10.
 
 
-## Check the ThoughSpot IP and the simba_server status
+## Check the ThoughtSpot IP and the simba_server status
 
 {% include content/simba-server-start.md %}
 
@@ -118,7 +118,7 @@ configuration and connection.  If you are experienced with ODBC and want to skip
 this, you can. Simply substitute your preferred mechanism in the subsequent
 procedures where references are made to the unixODBC tools.
 
-{% include warning.html content="Your ThoughtSpot installation contains a version of the unixODBC tools.  These tools are incompatible with CentOS. Do not use these tools if you are performing this procedure on your ThoughSpot server." %}
+{% include warning.html content="Your ThoughtSpot installation contains a version of the unixODBC tools.  These tools are incompatible with CentOS. Do not use these tools if you are performing this procedure on your ThoughtSpot server." %}
 
 1. Search for the unixODBC tools on your system.
 
@@ -331,18 +331,18 @@ driver.
 
 ## Test your ODBC connection
 
-At this point, you can test your ODBC connection to ThoughSpot.  It is important
-to recall that the username/password you use belongs to a ThoughSpot application
+At this point, you can test your ODBC connection to ThoughtSpot.  It is important
+to recall that the username/password you use belongs to a ThoughtSpot application
 user. Typically, this user is a user with data management or administrative
 privileges on the application.
 
 1. Before trying the ODBC connection, make sure you can use this username/password
-to login into the ThoughSpot application.
+to login into the ThoughtSpot application.
 2. Confirm the user's privileges by going to the **Data** tab.
 3. Go back to your workstation's terminal shell.
 4. Use the `/opt/csw/bin` and confirm you can connect.
 
-   Specify the `ThoughSpot` DSN:
+   Specify the `ThoughtSpot` DSN:
 
     ```
     /opt/csw/bin/isql -v ThoughtSpot tsadmin adminpwd

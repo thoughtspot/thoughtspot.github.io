@@ -2,7 +2,7 @@
 title: [Full application embedding]
 keywords: SAML,security,"active directory",authenticate,full,embed
 last_updated: tbd
-summary: "Full embedding allows users to create ThoughSpot content in an embedded environment."
+summary: "Full embedding allows users to create ThoughtSpot content in an embedded environment."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

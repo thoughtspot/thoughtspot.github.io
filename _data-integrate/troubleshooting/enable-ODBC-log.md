@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 If you need more information in order to troubleshoot ODBC connections, you can
-enable logging for ODBC on the workstation you use for connecting to ThoughSpot.  There are two points where you can enable logging:
+enable logging for ODBC on the workstation you use for connecting to ThoughtSpot.  There are two points where you can enable logging:
 
 * the workstation where you run your ETL activities
 * the server where the Simba service is running
@@ -94,9 +94,9 @@ To enable logging on Linux or Solaris, follow these instructions:
 ## Control logs from the Simba server
 
 You may want to collect logs from the Simba service. Do the
-following to procedure on every ThoughSpot node running the Simba service.
+following to procedure on every ThoughtSpot node running the Simba service.
 
-1. SSH into the ThoughSpot node.
+1. SSH into the ThoughtSpot node.
 2. Edit the `/etc/thoughtspot/simba.ini` file.
 
     ```
@@ -123,8 +123,8 @@ following to procedure on every ThoughSpot node running the Simba service.
 
 4. Set `LogPath` to a directory to save the logs.
 
-   The `LogPath` is the fully qualified path where ThoughSpot should write the logs.
+   The `LogPath` is the fully qualified path where ThoughtSpot should write the logs.
 
-2. Work with ThoughSpot Support to restart the Simba serivce.
+2. Work with ThoughtSpot Support to restart the Simba serivce.
 
     The node IP may change because of the restart. If this happens, repeat the entire procedure.

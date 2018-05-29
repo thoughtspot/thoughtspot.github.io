@@ -79,7 +79,7 @@ approach.
 
 <p>Your customer support engineer who can assist you in configuring the ODBC
 behavior that suits you best. Regardless of which configuration you choose, you
-should validate that the results of data loading _as they appear in_ ThoughSpot
+should validate that the results of data loading _as they appear in_ ThoughtSpot
 are what you desire.</p>
 
 
