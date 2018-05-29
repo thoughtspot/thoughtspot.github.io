@@ -41,21 +41,21 @@ upgrade. First, upgrade to one of the above versions, and then to this release.<
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h4 id="metrics-pipeline-improvements"><a name="Mixpanel"></a>Metrics pipeline improvements<a class="anchorjs-link " href="#metrics-pipeline-improvements" aria-label="Anchor link for: metrics pipeline improvements" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a><a class="anchorjs-link " href="#metrics-pipeline-improvements" aria-label="Anchor link for: metrics pipeline improvements" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4>
 <p>Included in this release are metrics pipelines that empower both our team
-and yours to enrich the ThoughSpot product experience. The new metric
+and yours to enrich the ThoughtSpot product experience. The new metric
 pipelines enable:</p> <ul class="alternate" type="square">
-<li>Faster issue resolution: ThoughSpot collects the diagnostic information from your
+<li>Faster issue resolution: ThoughtSpot collects the diagnostic information from your
 system on an ongoing basis: there is no time needed to collect diagnostic information after a problem is reported.
 Our support team can begin working to remediate any issue with you at once.</li>
 <li>Failure prevention: Metrics provides direct visibility to the ThoughtSpot team on
 your system's limits. Therefore, our Support team can proactively identify critical threshold issues and work to
 prevent failures. Metrics also help reduce SLA times as the team can debug much
 faster.</li>
-<li>Improved Search: ThoughSpot can tune search algorithms by studying search
+<li>Improved Search: ThoughtSpot can tune search algorithms by studying search
 history and schema.</li>
-<li>Improve Performance: ThoughSpot analyzes expensive and complex query
+<li>Improve Performance: ThoughtSpot analyzes expensive and complex query
 patterns to look for performance optimizations.</li>
 <li>Improved Browser Performance: Finally, the metrics pipeline allows
-ThoughSpot to identify application-use patterns that contribute to performance bottlenecks with
+ThoughtSpot to identify application-use patterns that contribute to performance bottlenecks with
 specific browsers and help your team prevent or alleviate them.</li>
 </ul>
 </td>
@@ -359,7 +359,7 @@ pinboard, or aggregated/unaggregated worksheet objects.</p>
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
 <td>
-<p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
+<p>Previously setting both the browser and the ThoughtSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
@@ -719,7 +719,7 @@ pinboard, or aggregated/unaggregated worksheet objects.</p>
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
 <td style="text-align: left; padding: 10px 0; font-size: inherit; font-family: inherit;">
-<p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
+<p>Previously setting both the browser and the ThoughtSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
 </td>
 </tr>
 <tr style="border-bottom: 1px solid #cccccc; width: 100%;">
