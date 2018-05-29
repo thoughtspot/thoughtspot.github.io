@@ -52,8 +52,8 @@
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="[“Install the ODBC Driver on Solaris”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation." />
-<meta property="og:description" content="ThoughSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation." />
+<meta name="description" content="ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation." />
+<meta property="og:description" content="ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html" />
 <meta property="og:type" content="article" />
@@ -61,7 +61,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html","headline":"[“Install the ODBC Driver on Solaris”]","dateModified":"2018-05-25T14:38:47-07:00","datePublished":"2018-05-25T14:38:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html"},"@context":"http://schema.org"}</script>
+{"description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html","headline":"[“Install the ODBC Driver on Solaris”]","dateModified":"2018-05-25T14:38:47-07:00","datePublished":"2018-05-25T14:38:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/install-odbc-solaris.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2884,7 +2884,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughSpot’s ODBC connection relies on the <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
+  <p>ThoughtSpot’s ODBC connection relies on the <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
 X SDK</a> to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
 Solaris workstation.</p>
@@ -2893,13 +2893,13 @@ Solaris workstation.</p>
 the same machine where you plan to run your ETL activities. The Solaris ODBC
 driver is certified on Solaris Sparc 10.</p>
 
-<h2 id="check-the-thoughspot-ip-and-the-simba_server-status">Check the ThoughSpot IP and the simba_server status</h2>
+<h2 id="check-the-thoughspot-ip-and-the-simba_server-status">Check the ThoughtSpot IP and the simba_server status</h2>
 
 <p>Before you begin, you need to know the IP address or DNS name of the server you
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughSpot node.</li>
+  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -2908,7 +2908,7 @@ intend to connect your server to.</p>
 </code></pre></div>    </div>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
-  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughSpot Support to start it.</li>
+  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
   <li>Exit or close the shell.</li>
 </ol>
 
@@ -3008,7 +3008,7 @@ configuration and connection.  If you are experienced with ODBC and want to skip
 this, you can. Simply substitute your preferred mechanism in the subsequent
 procedures where references are made to the unixODBC tools.</p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Your ThoughtSpot installation contains a version of the unixODBC tools.  These tools are incompatible with CentOS. Do not use these tools if you are performing this procedure on your ThoughSpot server.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Your ThoughtSpot installation contains a version of the unixODBC tools.  These tools are incompatible with CentOS. Do not use these tools if you are performing this procedure on your ThoughtSpot server.</div>
 
 <ol>
   <li>
@@ -3255,20 +3255,20 @@ driver.</p>
 
 <h2 id="test-your-odbc-connection">Test your ODBC connection</h2>
 
-<p>At this point, you can test your ODBC connection to ThoughSpot.  It is important
-to recall that the username/password you use belongs to a ThoughSpot application
+<p>At this point, you can test your ODBC connection to ThoughtSpot.  It is important
+to recall that the username/password you use belongs to a ThoughtSpot application
 user. Typically, this user is a user with data management or administrative
 privileges on the application.</p>
 
 <ol>
   <li>Before trying the ODBC connection, make sure you can use this username/password
-to login into the ThoughSpot application.</li>
+to login into the ThoughtSpot application.</li>
   <li>Confirm the user’s privileges by going to the <strong>Data</strong> tab.</li>
   <li>Go back to your workstation’s terminal shell.</li>
   <li>
     <p>Use the <code class="highlighter-rouge">/opt/csw/bin</code> and confirm you can connect.</p>
 
-    <p>Specify the <code class="highlighter-rouge">ThoughSpot</code> DSN:</p>
+    <p>Specify the <code class="highlighter-rouge">ThoughtSpot</code> DSN:</p>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /opt/csw/bin/isql -v ThoughtSpot tsadmin adminpwd
  +---------------------------------------+
