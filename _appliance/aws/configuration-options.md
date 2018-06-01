@@ -20,9 +20,10 @@ Below are charts depicting the specifications for the configuration for EC2 and 
 |-------------|-------------|-----|----|
 |r4.16xlarge|Up to 250 GB|64|488 GB|
 
+
 |Instance name|Data capacity|Root volume (SSD)|Data volume (SSD or HDD)|
 |-------------|-------------|-------------------|--------------------------|
-|r4.16xlarge|Up to 250 GB|1 vol 200 GB|2 vols 400 GB each|
+|r4.16xlarge|Up to 250 GB|1 vol 200 GB|2 vols 1 TB each|
 
 
 
