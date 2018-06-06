@@ -33,7 +33,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Datatypeinformationavailableonhover"></a>Data type information available on hover</h3>
-<p>The data type information is now available when a user hovers over a column.</p>
+<p>The data type information is now available when a user hovers over a column in the left panel.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
@@ -278,7 +278,7 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h3>
-<p>The Learn option from the main menu has moved from a BETA to a GA feature. Lean uses replay to teach users how to perform search with ThoughtSpot.</p>
+<p>The Learn option from the main menu has moved from a BETA to a GA feature. Learn uses replay to teach users how to perform search with ThoughtSpot.</p>
 </td>
 </tr>
 <tr style="width: 100%;border-bottom-style: inset;">
