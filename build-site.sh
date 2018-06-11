@@ -85,8 +85,8 @@ mv /tmp/$2 $2
 
 # This replaces the root files with the latest version.  index.html redirects to the latest version x.x/index.html.
 if [[ $3 == "-r" ]]; then
-  cp $1/index.html .
-  cp $1/search.html .
+  cp $2/index.html .
+  cp $2/search.html .
 fi
 
 exit 0
