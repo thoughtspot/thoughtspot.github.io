@@ -3,8 +3,8 @@
 helpmsg () {
   printf "\\nSYNTAX: \\n"
   printf "   bash-build.sh BRANCH_NAME VERSION_VALUE [-r]\\n"
-  printf "\\nBRANCH_NAME   Location of your source files, may be a name such as x.y.z"
-  printf "\\nVERSION_VALUE Product version, such as x.y"
+  printf "\\nBRANCH_NAME   Branch that contains your source files, may be a name such as x.y.z"
+  printf "\\nVERSION_VALUE Product version to build, should be a major version such as x.y"
   printf "\\n -r           Optionally replace the index.html and search.html files. Use for updating an existing or to a new version.\\n"
 
 }
@@ -85,8 +85,8 @@ mv /tmp/$2 $2
 
 # This replaces the root files with the latest version.  index.html redirects to the latest version x.x/index.html.
 if [[ $3 == "-r" ]]; then
-  cp $1/index.html .
-  cp $1/search.html .
+  cp $2/index.html .
+  cp $2/search.html .
 fi
 
 exit 0
