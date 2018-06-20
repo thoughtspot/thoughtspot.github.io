@@ -7,31 +7,43 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The following videos are new in the 4.4 release cycle:
+These videos are new in the 4.5 release cycle (_more to come, check back soon_):
+
+<table padding="1" style="width: 100%; table-layout: fixed;">
+   <tbody>
+      <tr>
+        <td>
+          <script src="https://fast.wistia.com/embed/medias/5s5brg2ady.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+             <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+             <span class="wistia_embed wistia_async_5s5brg2ady popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+          </div>
+          <p style="text-align: center;">Search</p>
+         </td>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/pntkcnzuew.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <span class="wistia_embed wistia_async_pntkcnzuew popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">Visualizations & Chart Types</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+These videos were published for the 4.4 release cycle:
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
       <tr>
          <td>
-            <script src="https://fast.wistia.com/embed/medias/l4oqjszs35.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_l4oqjszs35 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-            </div>
-            <p style="text-align: center;">Search</p>
-         </td>
-         <td>
             <script src="https://fast.wistia.com/embed/medias/yw6zaddkq8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
             <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_yw6zaddkq8 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+               <span class="wistia_embed wistia_async_yw6zaddkq8 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
             </div>
             <p style="text-align: center;">Charts & Pinboards</p>
-         </td>
-         <td>
-            <script src="https://fast.wistia.com/embed/medias/kuv86oqn6l.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_kuv86oqn6l popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-            </div>
-            <p style="text-align: center;">SpotIQ</p>
          </td>
          <td>
             <script src="https://fast.wistia.com/embed/medias/vtt7618xjx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
