@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 <p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5.1 version. Below is the features list and issues that are part of the 4.5.X release cycle.</p>
 <ul>
    <li><a href="notes.html#4-5-1-new-features-and-functionality ">4.5.1 New Features and Functionality</a></li>
+   <li><a href="notes.html#4-5-1-fixed-bugs">4.5.1 Fixed bugs</a></li>
    <li><a href="notes.html#4-5-new-features-and-functionality ">4.5 New Features and Functionality</a></li>
    <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
@@ -38,9 +39,9 @@ permalink: /:collection/:path.html
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
 <p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
-<p><span class="image-wrap"><a id="57702_thumb" title="custom_help_item.png" href="/secure/attachment/57702/57702_custom_help_item.png"><img style="border: 0px solid black;" src="https://thoughtspot.atlassian.net/secure/thumbnail/57702/custom_help_item.png" data-attachment-name="custom_help_item.png" data-attachment-type="thumbnail" data-media-services-id="23638522-343e-4dd9-8da1-f56a625fae87" data-media-services-type="file" /></a></span></p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/custom_help_item.png"| prepend: site.baseurl }}"/></p>
 <p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
-<p><span class="image-wrap"><a id="57703_thumb" title="customize_help.png" href="/secure/attachment/57703/57703_customize_help.png"><img style="border: 0px solid black;" src="https://thoughtspot.atlassian.net/secure/thumbnail/57703/customize_help.png" data-attachment-name="customize_help.png" data-attachment-type="thumbnail" data-media-services-id="c10ab03e-60b5-420f-98fc-0d52fbdf62da" data-media-services-type="file" /></a></span></p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/customize_help.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
 </tr>
