@@ -57,11 +57,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/release/notes.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/release/notes.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-07-03T11:10:19-07:00" />
+<meta property="article:published_time" content="2018-07-03T17:52:36-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5.1 version. Below is the features list and issues that are part of the 4.5.X release cycle. 4.5.1 New Features and Functionality 4.5.1 Fixed bugs 4.5 New Features and Functionality 4.5 Fixed bugs Notes for older versions Supported upgrade paths If you are running one of the following releases, you can upgrade to this release directly. 4.2.3, 4.3, 4.4.X, 4.5, and any hotfixes or customer patches on these branches If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/release/notes.html","headline":"[“4.5 Release Notes”]","dateModified":"2018-07-03T11:10:19-07:00","datePublished":"2018-07-03T11:10:19-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/release/notes.html"},"@context":"http://schema.org"}</script>
+{"description":"We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5.1 version. Below is the features list and issues that are part of the 4.5.X release cycle. 4.5.1 New Features and Functionality 4.5.1 Fixed bugs 4.5 New Features and Functionality 4.5 Fixed bugs Notes for older versions Supported upgrade paths If you are running one of the following releases, you can upgrade to this release directly. 4.2.3, 4.3, 4.4.X, 4.5, and any hotfixes or customer patches on these branches If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/release/notes.html","headline":"[“4.5 Release Notes”]","dateModified":"2018-07-03T17:52:36-07:00","datePublished":"2018-07-03T17:52:36-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/release/notes.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2880,19 +2880,38 @@ var ss360Config = {
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Newcharttype%3AStackedbarchart"></a>New chart type: Stacked bar chart</h3>
-<p>Stacked bar charts are the equivalent of stacked column charts, but with a horizontal orientation. Some types of data are easier to understand when shown in a stacked bar rather than a stacked column chart.</p>
+<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
+<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
+<p><img style="border: 0px solid black;" src="/4.5/images/notes/custom_help_item.png" /></p>
+<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
+<p><img style="border: 0px solid black;" src="/4.5/images/notes/customize_help.png" /></p>
 </div>
 </td>
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
-<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
-<p><img style="border: 0px solid black;" src="/4.5/images/notes/custom_help_item.png" /></p>
-<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
-<p><img style="border: 0px solid black;" src="/4.5/images/notes/customize_help.png" /></p>
+<h3><a name="Adminchartcolorpalettesautoupdatebasedonprimary color"></a>Admin chart color palettes auto update based on primary colors</h3>
+<p>In the Admin <b>Style Customization</b> "Chart Color Palettes", secondary color gradients are now based off of the primary colors selected. When a different primary color is chosen, the associated secondary color gradients below it automatically update.</p>
+<p><img style="border: 0px solid black;" src="/4.5/images/notes/chart-color-palette-admin-style-customize.png" /></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Customcolorpalettesarereflectedinuserschartcolorpicker"></a>Custom color palettes are reflected in users chart color picker</h3>
+<p>Color palette changes made by the Admin in Style Customization, are now reflected in users' chart configuration color palettes (not just in the auto-generated chart colors, as in previous releases).</p>
+<p><img style="border: 0px solid black;" src="/4.5/images/notes/chart-color-user-config-inherit-palette.png" /></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Admincanenableordisableautocolorrotationinstylecustomizationchartcolorpalettes"></a>Admins can enable or disable auto color rotation in Style Customization Chart Color Palettes</h3>
+<p>When there is a single color on a chart (no legend), ThoughtSpot auto-rotates through primary colors to render the chart for visual variety. If an Admin does not want this behavior, they can disable it by choosing <b>Disable Color Rotation</b> on the "Chart Color Palettes", in which case ThoughtSpot will always use the default color on single-color charts.</p>
+<p><img style="border: 0px solid black;" src="/4.5/images/notes/chart-color-palette-admin-rotation-on-off.png" /></p>
 </div>
 </td>
 </tr>
@@ -3765,7 +3784,7 @@ var ss360Config = {
 
 <h2>Notes for older versions</h2>
 <ul>
-<li><a href="/4.5/4.4/release/notes.html">4.4 Release Notes</a></li>
+<li><a href="https://docs.thoughtspot.com/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf">4.4 Release Notes</a></li>
 <li><a href="https://docs.thoughtspot.com/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf">4.2 Release Notes</a></li>
 <li><a href="https://docs.thoughtspot.com/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf">3.5 Release Notes</a></li>
 <li><a href="https://docs.thoughtspot.com/3.4/pdf/ThoughtSpot_Release_Notes_3.4.pdf">3.4 Release Notes</a></li>
