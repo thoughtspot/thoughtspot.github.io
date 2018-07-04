@@ -29,19 +29,38 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Newcharttype%3AStackedbarchart"></a>New chart type: Stacked bar chart</h3>
-<p>Stacked bar charts are the equivalent of stacked column charts, but with a horizontal orientation. Some types of data are easier to understand when shown in a stacked bar rather than a stacked column chart.</p>
+<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
+<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/custom_help_item.png"| prepend: site.baseurl }}"/></p>
+<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/customize_help.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
-<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/custom_help_item.png"| prepend: site.baseurl }}"/></p>
-<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/customize_help.png"| prepend: site.baseurl }}"/></p>
+<h3><a name="Adminchartcolorpalettesautoupdatebasedonprimary color"></a>Admin chart color palettes auto update based on primary colors</h3>
+<p>In the Admin <b>Style Customization</b> "Chart Color Palettes", secondary color gradients are now based off of the primary colors selected. When a different primary color is chosen, the associated secondary color gradients below it automatically update.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/chart-color-palette-admin-style-customize.png"| prepend: site.baseurl }}"/></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Customcolorpalettesarereflectedinuserschartcolorpicker"></a>Custom color palettes are reflected in users chart color picker</h3>
+<p>Color palette changes made by the Admin in Style Customization, are now reflected in users' chart configuration color palettes (not just in the auto-generated chart colors, as in previous releases).</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/chart-color-user-config-inherit-palette.png"| prepend: site.baseurl }}"/></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Admincanenableordisableautocolorrotationinstylecustomizationchartcolorpalettes"></a>Admins can enable or disable auto color rotation in Style Customization Chart Color Palettes</h3>
+<p>When there is a single color on a chart (no legend), ThoughtSpot auto-rotates through primary colors to render the chart for visual variety. If an Admin does not want this behavior, they can disable it by choosing <b>Disable Color Rotation</b> on the "Chart Color Palettes", in which case ThoughtSpot will always use the default color on single-color charts.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/chart-color-palette-admin-rotation-on-off.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
 </tr>
@@ -914,7 +933,7 @@ permalink: /:collection/:path.html
 
 <h2>Notes for older versions</h2>
 <ul>
-<li><a href="{{"/4.4/release/notes.html" | prepend: site.baseurl }}">4.4 Release Notes</a></li>
+<li><a href="{{"/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf" | prepend: site.url }}">4.4 Release Notes</a></li>
 <li><a href="{{"/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf" | prepend: site.url }}">4.2 Release Notes</a></li>
 <li><a href="{{"/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf" | prepend: site.url }}">3.5 Release Notes</a></li>
 <li><a href="{{"/3.4/pdf/ThoughtSpot_Release_Notes_3.4.pdf" | prepend: site.url }}">3.4 Release Notes</a></li>
