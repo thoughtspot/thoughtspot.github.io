@@ -936,5 +936,4 @@ permalink: /:collection/:path.html
 <li><a href="{{"/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf" | prepend: site.url }}">4.4 Release Notes</a></li>
 <li><a href="{{"/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf" | prepend: site.url }}">4.2 Release Notes</a></li>
 <li><a href="{{"/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf" | prepend: site.url }}">3.5 Release Notes</a></li>
-<li><a href="{{"/3.4/pdf/ThoughtSpot_Release_Notes_3.4.pdf" | prepend: site.url }}">3.4 Release Notes</a></li>
 </ul>
