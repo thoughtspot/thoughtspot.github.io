@@ -1,6 +1,6 @@
 ---
 title: [AWS configuration options]
-keywords: tbd
+keywords: AWS configuration
 tags: [performance]
 last_updated: tbd
 sidebar: mydoc_sidebar

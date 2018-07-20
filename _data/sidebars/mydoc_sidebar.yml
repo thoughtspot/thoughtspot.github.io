@@ -1015,6 +1015,18 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
+    - levelTwoTitle: Azure node
+      output: web,appQs
+      levelTwoItems:
+        - title: Azure cluster overview
+          url: /appliance/azure/about-azure.html
+          output: web,appQs
+        - title: Configuration options
+          url: /appliance/azure/configuration-options.html
+          output: web,appQs
+        - title: Set up Azure for ThoughtSpot
+          url: /appliance/azure/launch-an-instance.html
+          output: web,appQs
     - levelTwoTitle: VMWare node
       output: web,appQs
       levelTwoItems:
