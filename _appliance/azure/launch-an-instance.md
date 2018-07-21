@@ -46,17 +46,17 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 ### Create an instance
 1. Log in to the Azure portal.
 
-    In a browser, go to http://azure.microsoft.com, and log in to your Azure account.
+    In a browser, go to [http://azure.microsoft.com](http://azure.microsoft.com), and log in to your Azure account.
 
 2. Find the [ThoughtSpot Virtual Machine on the Azure
 Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine).
 
-   If the above link does not work, navigate to Azure Marketplace and search for
-   “ThoughtSpot” to find the ThoughtSpot Virtual Machine.
+   If the above link does not work, navigate to [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/) and search for
+   `ThoughtSpot` to find the ThoughtSpot Virtual Machine.
 
 3. Click **Get It Now**.
 4. Provide a name and password for your VM.
-5. Provide a Resource Group, by clicking on ‘existing’ and selecting one.
+5. Provide a Resource Group, by clicking on `existing` and selecting one.
 6. Choose **Virtual Machine Size** and select “E64S_V3 standard”.
 7. For storage, select **Managed Disks**.
 
@@ -70,17 +70,17 @@ from your Azure support team.
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
-The minimum ports needed are:
+   The minimum ports needed are:
 
-| Port    | Protocol   | Service                       |
-| ------- | ---------- | ----------------------------  |
-| 22    | SSH          |  Secure Shell access          |
-| 80    | HTTP         |  Web access                   |
-| 443   | HTTPS        |  Secure Web access            |
-| 12345 | TCP          |  ODBC and JDBC drivers access |
-| 2201  | HTTP         |  Cluster Debugging            |
-| 2101  | HTTP         |  Node daemon Debugging        |
-| 4001  | HTTP         |  Data Cache Debugging         |
+   | Port    | Protocol   | Service                       |
+   | ------- | ---------- | ----------------------------  |
+   | 22    | SSH          |  Secure Shell access          |
+   | 80    | HTTP         |  Web access                   |
+   | 443   | HTTPS        |  Secure Web access            |
+   | 12345 | TCP          |  ODBC and JDBC drivers access |
+   | 2201  | HTTP         |  Cluster Debugging            |
+   | 2101  | HTTP         |  Node daemon Debugging        |
+   | 4001  | HTTP         |  Data Cache Debugging         |
 
 4. Azure will do the final validation check. Verify the summary of information
 shown is correct, and click Create.
@@ -163,12 +163,10 @@ that will be part of the ThoughtSpot cluster.
 
 ### Make network support settings
 
-All the changes in this section must be re-applied each time after a cluster
-is created or updated. If these changes are not present, a reboot of the VMs
-will not have network access.
-
-So when updating these files, keep a backup to copy after any subsequent cluster
-creation or update.
+{% include tip.html content="All changes in this section must be re-applied each
+time after a cluster is created or updated. If these changes are not present, a
+reboot of the VMs will not have network access. So when updating these files,
+keep a backup to copy after any subsequent cluster creation or update." %}
 
 1. Update hostnames for all the nodes by issuing:
 
