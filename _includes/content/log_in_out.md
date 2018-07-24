@@ -49,7 +49,7 @@ or UI issues when using IE." %}
 To log in to ThoughtSpot from a browser:
 
 1. Open the browser and type in the Web address for ThoughtSpot: `http://HOSTNAME_OR_IP`
-2. Enter your username and password and click **Enter Now**.
+2. Enter your username and password and click **Sign In**.
 
    ![]({{ site.baseurl }}/images/log_in.png "Log in")
 
