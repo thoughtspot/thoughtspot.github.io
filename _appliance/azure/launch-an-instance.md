@@ -126,6 +126,12 @@ processes do not get blocked.
    | 4001  | HTTP         |  Data Cache Debugging         |
 
 
+   {% include note.html content="ThoughtSpot requires that nodes purchased from
+Azure must be reachable to each other so that they can communicate and form a
+distributed environment. ThoughtSpot only requires that those ports be accessible
+between nodes within a cluster.  Use your discretion about whether
+to restrict public access or not for all nodes/all ports" %}
+
 4. Leave other configurations such as `auto shutdown` and `monitoring` on their
 default settings.
 

@@ -6,7 +6,8 @@ summary: "You can easily change the legend colors in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To change the colors used in a chart, you can use the color picker from the chart. The color you set is used in:
+To change the colors used in a chart, you can use the color picker from the
+chart. The color you set is used in:
 
 * legends on charts
 * tables for conditional formatting
@@ -16,12 +17,12 @@ To change the chart colors, you need at least one column in the chart's legend.
 If the chart does not have a legend (not all do) and it is a single-measure
 chart, you can [apply a conditional
 format]({{site.baseurl}}/end-user/search/apply-conditional-formatting.html) to
-change the color. This type of conditional formatting does not work. with Line
+change the color. This type of conditional formatting does not work with Line
 charts.
 
-Colors are maintained across searches within a session. For example, when doing a search on
-revenue by state, each state will keep its color assigned to it even if you change the search or
-chart type.
+Colors are maintained across searches within a session. For example, when doing
+a search on revenue by state, each state will keep its color assigned to it even
+if you change the search or chart type.
 
 ## Add a column to the legend
 
