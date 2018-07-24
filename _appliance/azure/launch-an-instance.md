@@ -44,29 +44,72 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 3. Set up a Resource Group.
 
 ### Create an instance
+
+To get started, you need to log into the Azure portal, create a resource group,
+get the [ThoughtSpot Virtual
+Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
+on the [Azure
+Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/), create
+a resource based on the VM, and complete initial setup. You can either start at
+the Marketplace or from within the resource group you just created, as described
+here.
+
 1. Log in to the Azure portal.
 
     In a browser, go to [http://azure.microsoft.com](http://azure.microsoft.com), and log in to your Azure account.
 
-2. Find the [ThoughtSpot Virtual Machine on the Azure
-Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine).
+2. Create a Resource Group.
 
-   If the above link does not work, navigate to [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/) and search for
-   `ThoughtSpot` to find the ThoughtSpot Virtual Machine.
+   ![]({{ site.baseurl }}/images/azure_create_resource_group.png "Create a resource group")
 
-3. Click **Get It Now**.
-4. Provide a name and password for your VM.
-5. Provide a Resource Group, by clicking on `existing` and selecting one.
-6. Choose **Virtual Machine Size** and select “E64S_V3 standard”.
-7. For storage, select **Managed Disks**.
+3. Next, create a resource based on the ThoughtSpot Virtual Machine.
 
-### Configure Network Settings
+   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and select it.
 
-_Prerequisite_: Get the details needed for setting up the vnet, Subnet and NSG
-from your Azure support team.
+     ![]({{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png "Choose ThoughtSpot in Marketplace")
 
-1. Select **VNet**, then **Subnet**, then **NSG**.
-2. Leave other configurations such as `auto shutdown` and `monitoring` on their default settings.
+   b. On the ThoughtSpot Virtual Machine page, click **Create**.
+
+     ![]({{ site.baseurl }}/images/azure_create_ts_vm.png "Choose ThoughtSpot in Marketplace")
+
+### Configure basic settings
+
+1. Provide a name and password for your new virtual machine.
+
+2. Choose a disk type.
+
+   {% include tip.html content="the new SSD disk types are currently available
+   for only particular regions, so if you choose this disk type, make sure it's
+   supported on the region you chose for your VM." %}
+
+   See [Standard SSD Disks for Virtual Machine workloads](https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/) for more on SSD disks.
+
+3. Provide a Resource Group, by clicking `existing` and selecting one.
+
+4. Select a location.
+
+5. Click **OK** to save the Basics, which should look similar to the example below.
+
+   ![]({{ site.baseurl }}/images/azure_ts_vm_basics.png "Basic settings on the ThoughtSpot Azure VM")
+
+### Choose a machine size
+
+For **Choose a size**, select `E64S_V3 standard`.
+
+![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
+
+
+### Configure network settings, storage, and other options
+
+_Prerequisite_: Get the details needed for setting up the Virtual Network,
+Subnet, and Network Security Group from your Azure support team.
+
+1. For storage, select **Yes** to **use managed disks**.
+
+2. Under **Network**, select **Virtual network**, then **Subnet**, then **Public
+IP addresses**, and set those names, addresses, and ranges approriately for your
+network.
+
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
@@ -82,8 +125,22 @@ processes do not get blocked.
    | 2101  | HTTP         |  Node daemon Debugging        |
    | 4001  | HTTP         |  Data Cache Debugging         |
 
-4. Azure will do the final validation check. Verify the summary of information
-shown is correct, and click Create.
+
+4. Leave other configurations such as `auto shutdown` and `monitoring` on their
+default settings.
+
+   ![]({{ site.baseurl }}/images/azure_network_settings.png "Configure network settings and other options")
+
+5. Click **OK**.
+
+    Azure will do the final validation check.
+
+### Review the Summary
+
+Verify that the validation check succeeded and that summary of information shown
+is correct. If you find errors, reconfigure as needed.
+
+When you are satisfied with the virtual machine setup, click **Create**.
 
 ### Prepare for starting up ThoughtSpot
 
