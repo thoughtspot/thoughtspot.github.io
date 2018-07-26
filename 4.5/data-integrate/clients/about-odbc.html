@@ -57,11 +57,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-07-25T20:59:16-07:00" />
+<meta property="article:published_time" content="2018-07-26T12:56:54-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html","headline":"[“Overview of the ODBC Driver”]","dateModified":"2018-07-25T20:59:16-07:00","datePublished":"2018-07-25T20:59:16-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html"},"@context":"http://schema.org"}</script>
+{"description":"ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html","headline":"[“Overview of the ODBC Driver”]","dateModified":"2018-07-26T12:56:54-07:00","datePublished":"2018-07-26T12:56:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/about-odbc.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1017,27 +1017,6 @@ var ss360Config = {
               
             
               
-              <li class="levelTwo">
-                  <a href="#">Slack and ThoughtSpot</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/4.5/end-user/slack/intro.html">Slack and Spot</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/end-user/slack/use-spot.html">How to use Spot</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
                 
                   <li><a href="/4.5/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a></li>
                 
@@ -1222,12 +1201,6 @@ var ss360Config = {
                   
                       
                           <li><a href="/4.5/admin/setup/customize-style.html">Customize look and feel</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/4.5/admin/setup/slack-integration.html">Add the Slack integration</a></li>
                       
                    
                 
@@ -2911,7 +2884,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.</p>
+  <p>ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so
+that you can transfer data between ThoughtSpot and other databases. Basic
+knowledge of ODBC data source administration is helpful when setting up ODBC.</p>
 
 <p>Supported operating systems for the ODBC driver are:</p>
 
@@ -2951,18 +2926,21 @@ combination with the driver.  For detailed information about connection paramete
 
 <h2 id="source-and-target-data-compatibility">Source and target data compatibility</h2>
 
-<p>By default, ThoughtSpot takes a “most likely” approach to datatype compatibility
-between source and target in ODBC. As much as possible ThoughtSpot automatically
-infers the incoming “compatible” input data  and converts it to the most likely
-ThoughtSpot target datatype.</p>
+<p>By default, ThoughtSpot takes a permissive approach to data type compatibility
+between source and target data in ODBC. In this mode, ThoughtSpot assumes that
+the incoming data either matches exactly or is compatible with the target data
+types. If data types are not the same, ThoughtSpot will convert to the closest
+match for the ThoughtSpot target data type.</p>
 
-<p>By default, we just take the source data as is, and write to the target column “assuming” it’s compatible. There’s no inferring or anything that happens here. It’s the user’s responsibility to ensure that the incoming data is EXACTLY in the same format as the target able. e.g. you MUST have source datatype as INT if the target ThoughtSpot datatype is INT. If the source has</p>
-
-<p>Alternatively, you can require that ThoughtSpot match the source data type
+<p>Alternatively, you can require that ThoughtSpot match the source data types
 exactly and, if it can’t find a match, it returns an error and the data load
-fails. By mixing both types, you can configure along a scale of behavior between
-the permissiveness of the automatic approach and the strictness of “must match”
-approach.</p>
+fails. In this mode, for example, if the target ThoughtSpot data type for a
+column is INT, the source data type for that column must be INT.</p>
+
+<p>By toggling <em><strong>strict</strong></em> and <em><strong>permissive</strong></em> <code class="highlighter-rouge">true</code> and <code class="highlighter-rouge">false</code> options, you
+can configure settings along a scale of behavior between the permissive,
+automatic approach and the strictness of the “must match” approach. All options
+are described below.</p>
 
 <table>
   <tr style="background-color:white;">
@@ -2988,18 +2966,18 @@ approach.</p>
 
 <p>Your customer support engineer who can assist you in configuring the ODBC
 behavior that suits you best. Regardless of which configuration you choose, you
-should validate that the results of data loading _as they appear in_ ThoughtSpot
+should validate that the results of data loading <i>as they appear</i> in ThoughtSpot
 are what you desire.</p>
 
 <h2 id="data-type-conversion-matrix">Data type conversion matrix</h2>
 
-<p>Following table describes the conversion matrix between SQL datatypes and
-ThoughtSpot datatypes.</p>
+<p>Following table describes the conversion matrix between SQL data types and
+ThoughtSpot data types.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Source SQL Datatypes</th>
+      <th>Source SQL Data Typess</th>
       <th>BOOL</th>
       <th>INT32</th>
       <th>INT64</th>
@@ -3416,7 +3394,7 @@ column data type. The driver does not do any implicit conversions.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 25, 2018 <br />
+        Generated: Jul 26, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
