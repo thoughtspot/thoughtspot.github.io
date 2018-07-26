@@ -6,7 +6,9 @@ summary: "Use the ODBC driver to bring data in from your ETL tool or database."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.
+ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so
+that you can transfer data between ThoughtSpot and other databases. Basic
+knowledge of ODBC data source administration is helpful when setting up ODBC.
 
 Supported operating systems for the ODBC driver are:
 
@@ -42,18 +44,21 @@ The ODBC driver supports these data types:
 
 ## Source and target data compatibility
 
-By default, ThoughtSpot takes a "most likely" approach to datatype compatibility
-between source and target in ODBC. As much as possible ThoughtSpot automatically
-infers the incoming "compatible" input data  and converts it to the most likely
-ThoughtSpot target datatype.
+By default, ThoughtSpot takes a permissive approach to data type compatibility
+between source and target data in ODBC. In this mode, ThoughtSpot assumes that
+the incoming data either matches exactly or is compatible with the target data
+types. If data types are not the same, ThoughtSpot will convert to the closest
+match for the ThoughtSpot target data type.
 
-By default, we just take the source data as is, and write to the target column "assuming" it's compatible. There's no inferring or anything that happens here. It's the user's responsibility to ensure that the incoming data is EXACTLY in the same format as the target able. e.g. you MUST have source datatype as INT if the target ThoughtSpot datatype is INT. If the source has
-
-Alternatively, you can require that ThoughtSpot match the source data type
+Alternatively, you can require that ThoughtSpot match the source data types
 exactly and, if it can't find a match, it returns an error and the data load
-fails. By mixing both types, you can configure along a scale of behavior between
-the permissiveness of the automatic approach and the strictness of "must match"
-approach.
+fails. In this mode, for example, if the target ThoughtSpot data type for a
+column is INT, the source data type for that column must be INT.
+
+By toggling _**strict**_ and _**permissive**_ `true` and `false` options, you
+can configure settings along a scale of behavior between the permissive,
+automatic approach and the strictness of the "must match" approach. All options
+are described below.
 
 <table>
   <tr style="background-color:white;">
@@ -79,17 +84,17 @@ approach.
 
 <p>Your customer support engineer who can assist you in configuring the ODBC
 behavior that suits you best. Regardless of which configuration you choose, you
-should validate that the results of data loading _as they appear in_ ThoughtSpot
+should validate that the results of data loading <i>as they appear</i> in ThoughtSpot
 are what you desire.</p>
 
 
 ## Data type conversion matrix
 
-<p>Following table describes the conversion matrix between SQL datatypes and
-ThoughtSpot datatypes.</p>
+<p>Following table describes the conversion matrix between SQL data types and
+ThoughtSpot data types.</p>
 
 
-| Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
+| Source SQL Data Typess          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
 |-------------------------------|-----|------|------|-------|------|------|-----|------|--------|
 |`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
 |`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
