@@ -14,10 +14,19 @@ permalink: /:collection/:path.html
    <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
+
 <h2>Supported upgrade paths</h2>
-<p><br />If you are running one of the following releases, you can upgrade to this release directly.</p>
-<p>4.2.3, 4.3, 4.4.X, 4.5, and any hotfixes or customer patches on these branches</p>
-<p>If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.</p>
+
+<p><br />If you are running clusters on 4.5.0, 4.4.1.X, you can upgrade to release
+4.5.1.X directly. (This incudes any hotfixes or customer patches on these branches.)</p>
+
+<p>If you are running on 4.4.0 or earlier releases, direct upgrade of a cluster
+to 4.5.1.X is not supported. In this case, you need to do a multiple pass upgrade:</p>
+
+<ol>
+    <li>Upgrade your cluster to the latest version of 4.4.1.X.</li>
+    <li>After successful completion of step 1, upgrade from 4.4.1.X to 4.5.1.X.</li>
+</ol>
 
 <h2>4.5.1 New Features and Functionality</h2>
 
