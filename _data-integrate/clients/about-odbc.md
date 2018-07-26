@@ -45,15 +45,15 @@ The ODBC driver supports these data types:
 ## Source and target data compatibility
 
 By default, ThoughtSpot takes a permissive approach to data type compatibility
-between source and target data in ODBC. In this mode, ThoughtSpot assumes that
-the incoming data either matches exactly or is compatible with the target data
-types. If data types are not the same, ThoughtSpot will convert to the closest
-match for the ThoughtSpot target data type.
+between source and target data in ODBC. In this mode, ThoughtSpot _assumes_ that
+the incoming data matches exactly with the target data types and loads the table
+as is.
 
-Alternatively, you can require that ThoughtSpot match the source data types
-exactly and, if it can't find a match, it returns an error and the data load
-fails. In this mode, for example, if the target ThoughtSpot data type for a
-column is INT, the source data type for that column must be INT.
+Alternatively, you can explicitly require that ThoughtSpot match the source data
+types exactly and, if it can't find a match, it returns an error and the data
+load fails. In this mode, for example, if the target ThoughtSpot data type for a
+column is INT, the source data type for that column must be INT in order for the
+data load to succeed.
 
 By toggling _**strict**_ and _**permissive**_ `true` and `false` options, you
 can configure settings along a scale of behavior between the permissive,
