@@ -13,7 +13,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>&easter;</code></td>
+      <td><code>&ast;</code></td>
       <td>Returns the result of multiplying both numbers.</td>
       <td><code class="highlighter-rouge">3 * 2 = 6</code><br><code class="highlighter-rouge">price * taxrate</code></td>
     </tr>
