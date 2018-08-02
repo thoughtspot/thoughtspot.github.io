@@ -41,9 +41,9 @@ to 4.5.1.X is not supported. In this case, you need to do a multiple pass upgrad
 <p>Slack is an enterprise software platform for team communication through a messaging
 application. Slack also allows users to communicate with applications like ThoughtSpot
 through chat. ThoughtSpot implemented full Slack integration in version 4.5.1.
-Administrators can follow setup steps in <a href="{{"/admin/setup/slack-integration.html" | prepend: site.url }}">Add the Slack integration</a>, and ThoughtSpot users can learn how to use Spot in
-<a href="{{"/end-user/slack/intro.html" | prepend: site.url }}">Slack and Spot</a>
-and <a href="{{"/end-user/slack/use-spot.html" | prepend: site.url }}">How to use Spot</a></p>
+Administrators can follow setup steps in <a href="{{"/4.5/admin/setup/slack-integration.html" | prepend: site.url }}">Add the Slack integration</a>, and ThoughtSpot users can learn how to use Spot in
+<a href="{{"/4.5/end-user/slack/intro.html" | prepend: site.url }}">Slack and Spot</a>
+and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How to use Spot</a></p>
 </div>
 </td>
 </tr>
