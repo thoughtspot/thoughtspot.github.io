@@ -29,12 +29,26 @@ to 4.5.1.X is not supported. In this case, you need to do a multiple pass upgrad
 </ol>
 
 <h2>4.5.1 New Features and Functionality</h2>
-
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
 </tr>
 </thead>
 <tbody>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="ProvidedfullintegrationwithSlackviaSpot"></a>Provided full integration with Slack via Spot</h3>
+<p>Slack is an enterprise software platform for team communication through a messaging
+application. Slack also allows users to communicate with applications like ThoughtSpot
+through chat. ThoughtSpot implemented full Slack integration in version 4.5.1.
+Administrators can follow setup steps in <a href="{{"/admin/setup/slack-integration.html" | prepend: site.url }}">Add the Slack integration</a>, and ThoughtSpot users can learn how to use Spot in
+<a href="{{"/end-user/slack/intro.html" | prepend: site.url }}">Slack and Spot</a>
+and <a href="{{"/end-user/slack/use-spot.html" | prepend: site.url }}">How to use Spot</a></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;border-bottom-style: inset;">
+</tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">

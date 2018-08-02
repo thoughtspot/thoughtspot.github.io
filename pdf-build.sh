@@ -1,4 +1,5 @@
 # Note that .sh scripts work only on Mac. If you're on Windows, install Git Bash and use that as your client.
+# Make sure you have Prince and jq installed, otherwise the script will throw errors.
 
 ## Make sure script is in the git repo
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
