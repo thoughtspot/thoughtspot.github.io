@@ -75,7 +75,7 @@ Once generated, tokens do not expire.
 
     It is also important the the `username` is a match for a `username` on the ThoughtSpot application.
 
-2. The trusted web server requests a authentication token on the user's behalf from ThoughtSpot.
+2. The trusted web server requests an authentication token on the user's behalf from ThoughtSpot.
 
     `POST https://<thoughtspot>/callosum/v1/session/auth/token`
 
@@ -103,12 +103,6 @@ Once generated, tokens do not expire.
         <td>An optional <code>formData</code> parameter containing a ThoughtSpot object identifier. This is only required if you specified <code>REPORT_BOOK_VIEW</code> for the <code>access_level</code> parameter.</td>
       </tr>
       </table>
-
-    You can view the Swagger description of this call and test it from your
-    ThoughtSpot application server:
-    `https://<thoughtspot>/external/swagger/#!/session/getAuthToken`
-
-    This call returns a `200` return code when the call is successful and an authentication token in the `Response Body`.
 
 4. The trusted authenticator server is responsible for managing this token.  
 
