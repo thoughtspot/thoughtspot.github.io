@@ -36,6 +36,11 @@ The following browsers are verified to work well with the ThoughtSpot applicatio
       <td>11</td>
       <td>Windows 7 or greater</td>
     </tr>
+    <tr>
+      <td>Safari</td>
+      <td>10 or greater</td>
+      <td>MacOS</td>
+    </tr>
   </tbody>
 </table>
 
