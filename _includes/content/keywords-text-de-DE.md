@@ -1,0 +1,54 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-31q5{background-color:#000000;color:#ffcd33;vertical-align:top}
+.tg .tg-4eph{background-color:#f9f9f9}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-31q5">Keywords</th>
+    <th class="tg-31q5">Deutsche</th>
+    <th class="tg-31q5">Examples</th>
+  </tr>
+  <tr>
+    <td class="tg-4eph">begins with</td>
+    <td class="tg-4eph">beginnt mit</td>
+    <td class="tg-4eph"><code>product name begins with 'pro'</code></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">contains</td>
+    <td class="tg-031e">enthält</td>
+    <td class="tg-031e"><code>product name contains "alpine" description contains "snow shoe"</code></td>
+  </tr>
+  <tr>
+    <td class="tg-4eph">ends with</td>
+    <td class="tg-4eph">endet mit</td>
+    <td class="tg-4eph"><code>product name ends with 'deluxe'</code></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">not begins with</td>
+    <td class="tg-031e">beginnt nicht mit</td>
+    <td class="tg-031e"><code>product name not begins with "tom's"</code></td>
+  </tr>
+  <tr>
+    <td class="tg-4eph">not contains</td>
+    <td class="tg-4eph">enthält nicht</td>
+    <td class="tg-4eph"><code>product color not contains 'tan' product color not contains 'red'</code></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">not ends with</td>
+    <td class="tg-031e">endet nicht mit</td>
+    <td class="tg-031e"><code>product name not ends with "trial"</code></td>
+  </tr>
+  <tr>
+    <td class="tg-4eph">similar to</td>
+    <td class="tg-4eph">ähnlich zu</td>
+    <td class="tg-4eph"><code>course name similar to 'hand'</code></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">not similar to</td>
+    <td class="tg-031e">nicht ähnlich zu</td>
+    <td class="tg-031e"><code>course name not similar to 'hand'</code></td>
+  </tr>
+</table>

@@ -1,0 +1,55 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-j0ga{background-color:#000000;color:#ffcd33;border-color:inherit;vertical-align:top}
+.tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
+.tg .tg-us36{border-color:inherit;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-j0ga">Keywords</th>
+    <th class="tg-j0ga">Deutsche</th>
+    <th class="tg-j0ga">Examples</th>
+  </tr>
+  <tr>
+    <td class="tg-dc35">detailed</td>
+    <td class="tg-dc35">detailliert</td>
+    <td class="tg-dc35"><code>ship time detailed</code></td>
+  </tr>
+  <tr>
+    <td class="tg-us36">last minute</td>
+    <td class="tg-us36">letzte minute</td>
+    <td class="tg-us36"><code>count homepage views last minute</code></td>
+  </tr>
+  <tr>
+    <td class="tg-dc35">last hour</td>
+    <td class="tg-dc35">letzte stunde</td>
+    <td class="tg-dc35"><code>count unique visits last hour</code></td>
+  </tr>
+  <tr>
+    <td class="tg-us36"><span style="font-style:italic">n</span> minutes</td>
+    <td class="tg-us36"><span style="font-style:italic">n</span> minuten</td>
+    <td class="tg-us36"><code>count visitors last 30 minutes</code></td>
+  </tr>
+  <tr>
+    <td class="tg-dc35"><span style="font-style:italic">n</span> hours</td>
+    <td class="tg-dc35"><span style="font-style:italic">n</span> stunden</td>
+    <td class="tg-dc35"><code>count visitors last 12 hours</code></td>
+  </tr>
+  <tr>
+    <td class="tg-us36">hourly</td>
+    <td class="tg-us36">stündlich</td>
+    <td class="tg-us36"><code>visitors by page name hourly</code></td>
+  </tr>
+  <tr>
+    <td class="tg-dc35"><span style="font-style:italic">n</span> minutes ago</td>
+    <td class="tg-dc35"><span style="font-style:italic">n</span> minuten vor</td>
+    <td class="tg-dc35"><code>sum inventory by product 10 minutes ago</code></td>
+  </tr>
+  <tr>
+    <td class="tg-us36"><span style="font-style:italic">n</span> hours ago</td>
+    <td class="tg-us36"><span style="font-style:italic">n</span> stunden vor</td>
+    <td class="tg-us36"><code>sum inventory by product by store 2 hours ago</code></td>
+  </tr>
+</table>
