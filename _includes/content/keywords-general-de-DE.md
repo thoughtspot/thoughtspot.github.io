@@ -24,22 +24,23 @@
     <td class="tg-yw4l">bottom</td>
     <td class="tg-yw4l">unten</td>
     <td class="tg-yw4l">
-    <ul><li><code>bottom revenue average revenue by state</code></li>
-    <li><code>customer by revenue for each sales rep bottom </code></li></ul>
+    <ul><li><code><b>bottom</b> revenue average</code></li>
+    <li><code><b>bottom</b> revenue by state</code></li>
+    <li><code>customer by revenue for each sales rep <b>bottom</b></code></li></ul>
     </td>
   </tr>
   <tr>
     <td class="tg-b7b8"><span style="font-style:italic">n</span></td>
     <td class="tg-b7b8"><span style="font-style:italic">n</span></td>
     <td class="tg-b7b8">
-    <code>top 10 sales rep revenue</code>
+    <code><b>top 10</b> sales rep revenue</code>
     </td>
   </tr>
   <tr>
     <td class="tg-yw4l"><span style="font-style:italic">n</span></td>
     <td class="tg-yw4l"><span style="font-style:italic">n</span></td>
     <td class="tg-yw4l">
-    <code>bottom 25 customer by revenue for each sales rep</code>
+    <code><b>bottom 25</b> customer by revenue for each sales rep</code>
     </td>
   </tr>
   <tr>
@@ -47,8 +48,8 @@
     <td class="tg-b7b8">sortieren nach</td>
     <td class="tg-b7b8">
     <ul>
-    <li><code>revenue by state sort by average revenue</code></li>
-    <li><code>revenue by customer sort by region</code></li>
+    <li><code>revenue by state <b>sort by average</b> revenue</code></li>
+    <li><code>revenue by customer <b>sort by region</b></code></li>
     </ul>
     </td>
   </tr>

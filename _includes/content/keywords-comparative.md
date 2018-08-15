@@ -12,50 +12,49 @@
    <tbody class="tbody">
       <tr>
          <td>all</td>
-         <td><code>all</code> </td>
+         <td><code><b>all</b></code> </td>
       </tr>
       <tr>
          <td>between... and</td>
          <td>
-            <code>revenue between 0 and 1000</code>
+            <code>revenue <b>between</b> 0 <b>and</b> 1000</code>
          </td>
       </tr>
       <tr>
          <td>vs, versus</td>
          <td>
-            <code>revenue east vs west</code>
+            <code>revenue east <b>vs</b> west</code>
          </td>
       </tr>
       <tr>
          <td>&gt;</td>
          <td>
-            <code>sum sale amount by visitor by product for last year sale amount &gt;
-            2000</code>
+            <code>sum sale amount by visitor by product for last year sale amount <b>&gt;</b> 2000</code>
          </td>
       </tr>
       <tr>
          <td>&lt;</td>
          <td>
-            <code>unique count visitor by product by store for sale amount &lt; 20</code>
+            <code>unique count visitor by product by store for sale amount <b>&lt;</b> 20</code>
          </td>
       </tr>
       <tr>
          <td>&gt;=</td>
          <td>
-            <code>count calls by employee lastname &gt;= m</code>
+            <code>count calls by employee lastname <b>&gt;=</b> m</code>
          </td>
       </tr>
       <tr>
          <td>&lt;=</td>
          <td>
-            <code>count shipments by city latitude &lt;= 0</code>
+            <code>count shipments by city latitude <b>&lt;=</b> 0</code>
          </td>
       </tr>
       <tr>
          <td>=</td>
          <td>
 
-<code>unique count visitor by store purchased products = 3 for last 5
+<code>unique count visitor by store purchased products <b>=</b> 3 for last 5
 days</code>
 
          </td>
@@ -63,7 +62,7 @@ days</code>
       <tr>
          <td>!=</td>
          <td>
-            <code>sum sale amount region != canada region != mexico</code>
+            <code>sum sale amount region != canada region <b>!=</b> mexico</code>
          </td>
       </tr>
    </tbody>

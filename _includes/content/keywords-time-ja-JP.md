@@ -17,41 +17,41 @@
   <tr>
     <td class="tg-dc35">detailed</td>
     <td class="tg-dc35">詳細</td>
-    <td class="tg-dc35"><code>ship time detailed</code></td>
+    <td class="tg-dc35"><code>ship time <b>detailed</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">last minute</td>
     <td class="tg-us36">最後 分</td>
-    <td class="tg-us36"><code>count homepage views last minute</code></td>
+    <td class="tg-us36"><code>count homepage views <b>last minute</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last hour</td>
     <td class="tg-dc35">最後 時間</td>
-    <td class="tg-dc35"><code>count unique visits last hour</code></td>
+    <td class="tg-dc35"><code>count unique visits <b>last hour</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><span style="font-style:italic">n</span> minutes</td>
+    <td class="tg-us36"><em>n</em> minutes</td>
     <td class="tg-us36"><em>n</em> 分</td>
-    <td class="tg-us36"><code>count visitors last 30 minutes</code></td>
+    <td class="tg-us36"><code>count visitors last <b>30 minutes</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><span style="font-style:italic">n</span> hours</td>
+    <td class="tg-dc35"><em>n</em> hours</td>
     <td class="tg-dc35"><em>n</em> 時間</td>
-    <td class="tg-dc35"><code>count visitors last 12 hours</code></td>
+    <td class="tg-dc35"><code>count visitors last <b>12 hours</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">hourly</td>
     <td class="tg-us36">時間単位</td>
-    <td class="tg-us36"><code>visitors by page name hourly</code></td>
+    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><span style="font-style:italic">n </span>minutes ago</td>
     <td class="tg-dc35"><em>n</em> 分 前</td>
-    <td class="tg-dc35"><code>sum inventory by product 10 minutes ago</code></td>
+    <td class="tg-dc35"><code>sum inventory by product <b>10 minutes ago</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><span style="font-style:italic">n</span> hours ago</td>
+    <td class="tg-us36"><em>n</em> hours ago</td>
     <td class="tg-us36"><em>n</em> 時間 前</td>
-    <td class="tg-us36"><code>sum inventory by product by store 2 hours ago</code></td>
+    <td class="tg-us36"><code>sum inventory by product by store <b>2 hours ago</b></code></td>
   </tr>
 </table>
