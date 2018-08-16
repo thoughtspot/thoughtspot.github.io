@@ -8,8 +8,8 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-k64o">Keywords</th>
-    <th class="tg-k64o">Deutsche</th>
+    <th class="tg-k64o">English Keywords</th>
+    <th class="tg-k64o">Deutsche Keywords</th>
     <th class="tg-k64o">Examples</th>
   </tr>
   <tr>

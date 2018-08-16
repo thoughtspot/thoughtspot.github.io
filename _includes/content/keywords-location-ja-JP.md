@@ -9,23 +9,23 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-8env">Keywords</th>
-    <th class="tg-8env">日本語</th>
+    <th class="tg-8env">English Keywords</th>
+    <th class="tg-8env">日本語 Keywords</th>
     <th class="tg-8env">Examples</th>
   </tr>
   <tr>
     <td class="tg-b7b8">near</td>
     <td class="tg-b7b8">近い</td>
-    <td class="tg-b7b8"><code>revenue store name county near san francisco</code></td>
+    <td class="tg-b7b8"><code>revenue store name county <b>near</b> san francisco</code></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">near... within n miles|km|meters</td>
-    <td class="tg-yw4l">近い...以内 n マイル|キロメートル|メートル</td>
-    <td class="tg-yw4l"><code>revenue store name county near alameda within 50 miles</code></td>
+    <td class="tg-yw4l">near... within <em>n</em> miles|km|meters</td>
+    <td class="tg-yw4l">近い...以内 <em>n</em> マイル|キロメートル|メートル</td>
+    <td class="tg-yw4l"><code>revenue store name county <b>near</b> alameda <b>within</b> 50 miles</code></td>
   </tr>
   <tr>
-    <td class="tg-b7b8">farther than n miles|km|meters from</td>
-    <td class="tg-b7b8">以上 n マイル|キロメートル|メートル</td>
-    <td class="tg-b7b8"><code>average hours worked branch farther than 80 km from scarborough</code></td>
+    <td class="tg-b7b8">farther than <em>n</em> miles|km|meters from</td>
+    <td class="tg-b7b8">以上 <em>n</em> マイル|キロメートル|メートル</td>
+    <td class="tg-b7b8"><code>average hours worked branch <b>farther than 80 km from</b> scarborough</code></td>
   </tr>
 </table>

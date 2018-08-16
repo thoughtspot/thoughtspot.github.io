@@ -9,50 +9,50 @@
   </tr>
   <tr>
     <td>quarter (<i>date</i>)</td>
-    <td><code>quarter (commit date)</code></td>
+    <td><code><b>quarter</b> (purchase date)</code></td>
   </tr>
   <tr>
     <td>quarter of year (<i>date</i>)</td>
-    <td><code>quarter of year (commit date)</code></td>
+    <td><code><b>quarter of year</b> (purchase date)</code></td>
   </tr>
   <tr>
     <td>month of quarter (<i>date</i>)</td>
-    <td><code>month of quarter (commit date)</code></td>
+    <td><code><b>month of quarter</b> (purchase date)</code></td>
   </tr>
   <tr>
     <td>week of year (<i>date</i>)</td>
-    <td><code>week of year (commit date)</code></td>
+    <td><code><b>week of year</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>week of quarter (<i>date</i>)</td>
-    <td><code>week of quarter (commit date)</code></td>
+    <td><code><b>week of quarter</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>week of month (<i>date</i>)</td>
-    <td><code>week of month (commit date)</code></td>
+    <td><code><b>week of month</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>day of year (<i>date</i>)</td>
-    <td><code>day of year (commit date)</code></td>
+    <td><code><b>day of year</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>day of quarter (<i>date</i>)</td>
-    <td><code>day of quarter (commit date)</code></td>
+    <td><code><b>day of quarter</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>day (<i>date</i>)</td>
-    <td><code>day (order date)</code></td>
+    <td><code><b>day</b> (ship date)</code></td>
   </tr>
   <tr>
     <td>day of month (<i>date</i>)</td>
-    <td><code>day of monthy (order date)</code></td>
+    <td><code><b>day of month</b> (order date)</code></td>
   </tr>
   <tr>
     <td>day of week (<i>date</i>)</td>
-    <td><code>day of week (order date)</code></td>
+    <td><code><b>day of week</b> (order date)</code></td>
   </tr>
   <tr>
     <td>hour (<i>datetime</i>)</td>
-    <td><code>hour (timestamp)</code></td>
+    <td><code><b>hour</b> (timestamp)</code></td>
   </tr>
 </table>

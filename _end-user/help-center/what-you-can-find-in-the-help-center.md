@@ -93,15 +93,14 @@ the following:
    ![]({{ site.baseurl }}/images/learn-replay.png "Contact support")
 
 
-
-## Search the help in search bar
+<!-- ## Search the help in search bar
 
 You can search the help directly from the search bar with the `how to` and `help` keywords.
 
 {% include content/keywords-help.md %}
 
 The `how to` keyword takes you into the documentation only. The `help` keyword
-allows you to jump directly into a product workflow.
+allows you to jump directly into a product workflow. -->
 
 ## Support contact information
 

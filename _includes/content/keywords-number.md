@@ -13,32 +13,32 @@
       <tr>
          <td>sum</td>
          <td>
-            <code>sum revenue</code>
+            <code><b>sum</b> revenue</code>
          </td>
       </tr>
       <tr>
          <td>average</td>
          <td>
-            <code>average revenue by store</code>
+            <code><b>average</b> revenue by store</code>
          </td>
       </tr>
       <tr>
          <td>count</td>
          <td>
-            <code>count visitors by site</code>
+            <code><b>count</b> visitors by site</code>
          </td>
       </tr>
       <tr>
          <td>max</td>
          <td>
-            <code>max sales by visitor by site</code>
+            <code><b>max</b> sales by visitor by site</code>
          </td>
       </tr>
       <tr>
          <td>min</td>
          <td>
 
-            <code>min revenue by store by campaign for cost &gt; 5000</code>
+            <code><b>min</b> revenue by store by campaign for cost &gt; 5000</code>
 
          </td>
       </tr>
@@ -46,7 +46,7 @@
          <td>standard deviation</td>
          <td>
 
-<code>standard deviation revenue by product by month for date after
+<code><b>standard deviation</b> revenue by product by month for date after
 10/31/2010</code>
 
          </td>
@@ -55,7 +55,7 @@
          <td>unique count</td>
          <td>
 
-            <code>unique count visitor by product page last week</code>
+            <code><b>unique count</b> visitor by product page last week</code>
 
          </td>
       </tr>
@@ -63,7 +63,7 @@
          <td>variance</td>
          <td>
 
-    <code>variance sale amount by visitor by product for last year</code>
+    <code><b>variance</b> sale amount by visitor by product for last year</code>
 
          </td>
       </tr>

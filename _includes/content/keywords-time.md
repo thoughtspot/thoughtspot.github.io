@@ -13,56 +13,56 @@
       <tr>
          <td>detailed</td>
          <td>
-            <code>ship time detailed
+            <code>ship time <b>detailed</b>
             </code>
          </td>
       </tr>
       <tr>
          <td>last minute</td>
          <td>
-            <code>count homepage views last minute
+            <code>count homepage views <b>last minute</b>
             </code>
          </td>
       </tr>
       <tr>
          <td>last hour</td>
          <td>
-            <code>count unique visits last hour
+            <code>count unique visits <b>last hour</b>
             </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes</td>
          <td>
-            <code>count visitors last 30 minutes
+            <code>count visitors last <b>30 minutes</b>
             </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours</td>
          <td>
-            <code>count visitors last 12 hours
+            <code>count visitors last <b>12 hours</b>
             </code>
          </td>
       </tr>
       <tr>
          <td>hourly</td>
          <td>
-            <code>visitors by page name hourly
+            <code>visitors by page name <b>hourly</b>
             </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes ago</td>
          <td>
-            <code>sum inventory by product 10 minutes ago
+            <code>sum inventory by product <b>10 minutes ago</b>
             </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours ago</td>
          <td>
-            <code>sum inventory by product by store 2 hours ago
+            <code>sum inventory by product by store <b>2 hours ago</b>
             </code>
          </td>
       </tr>
