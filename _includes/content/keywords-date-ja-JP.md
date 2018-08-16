@@ -10,8 +10,8 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">Keywords</span></th>
-    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">日本語</span></th>
+    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">English Keywords</span></th>
+    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">日本語 Keywords</span></th>
     <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">Examples</span></th>
   </tr>
   <tr>
@@ -76,32 +76,32 @@
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … daily</td>
-    <td class="tg-dc35">成長…により… 日単位</td>
+    <td class="tg-dc35">次の成長 ...により… 日単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> order date <b>daily</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">growth of … by … monthly</td>
-    <td class="tg-us36">成長…により… 月単位</td>
+    <td class="tg-us36">次の成長 ...により… 月単位</td>
     <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> date shipped <b>monthly</b> sales &gt; 24000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … quarterly</td>
-    <td class="tg-dc35">成長…により… 四半期単位</td>
+    <td class="tg-dc35">次の成長 ...により… 四半期単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> date shipped <b>quarterly</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">growth of … by … weekly</td>
-    <td class="tg-us36">成長…により… 週単位</td>
+    <td class="tg-us36">次の成長 ...により… 週単位</td>
     <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for proski2000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … yearly</td>
-    <td class="tg-dc35">成長…により… 年単位</td>
+    <td class="tg-dc35">次の成長 ...により… 年単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> date closed <b>yearly</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">growth of … by ...</td>
-    <td class="tg-us36">成長…により…</td>
+    <td class="tg-us36">次の成長 ...により…</td>
     <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> order date</code></td>
   </tr>
   <tr>
@@ -121,17 +121,17 @@
   </tr>
   <tr>
     <td class="tg-us36">last <em>n</em> days</td>
-    <td class="tg-us36">最後 n 曜日</td>
+    <td class="tg-us36">最後 <em>n</em> 曜日</td>
     <td class="tg-us36"><code>visitors <b>last 7 days</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last <em>n</em> quarters</td>
-    <td class="tg-dc35">最後 n 四半期</td>
+    <td class="tg-dc35">最後 <em>n</em> 四半期</td>
     <td class="tg-dc35"><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
   </tr>
   <tr>
     <td class="tg-us36">last <em>n</em> weeks</td>
-    <td class="tg-us36">最後 n 週</td>
+    <td class="tg-us36">最後 <em>n</em> 週</td>
     <td class="tg-us36"><code>visitors <b>last 10 weeks</b> by day</code></td>
   </tr>
   <tr>
@@ -148,6 +148,11 @@
     <td class="tg-dc35">last year</td>
     <td class="tg-dc35">最後 年</td>
     <td class="tg-dc35"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
+  </tr>
+  <tr>
+    <td class="tg-dc35">last <em>n</em> years</td>
+    <td class="tg-dc35">最後 <em>n</em> 年</td>
+    <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt; 5000</code></td>
   </tr>
   <tr>
     <td class="tg-us36">month to date</td>
@@ -223,11 +228,6 @@
     <td class="tg-us36"><em>n</em> years</td>
     <td class="tg-us36"><em>n</em> 年</td>
     <td class="tg-us36"><code>opportunities next <b>5 years</b> by revenue</code></td>
-  </tr>
-  <tr>
-    <td class="tg-dc35"><em>n</em> years</td>
-    <td class="tg-dc35"><em>n</em> 年</td>
-    <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt; 5000</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next day</td>

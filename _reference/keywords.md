@@ -10,6 +10,13 @@ You can use keywords when asking a question to help define your search. This
 reference lists the various keywords. You can also see this list of keywords and
 examples from within the help center.
 
+### Keywords in Other Languages
+
+Currently, we have the following keyword translations, and plan to add more soon.
+
+<!-- | [日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html) | [Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html) | -->
+
+| **[日本語](keywords-ja-JP.html)** |   | **[Deutsche](keywords-de-DE.html)** |
 
 ## General
 
@@ -43,6 +50,6 @@ examples from within the help center.
 
 {% include content/keywords-period.md %}
 
-## Help
+<!-- ## Help
 
-{% include content/keywords-help.md %}
+{% include content/keywords-help.md %} -->

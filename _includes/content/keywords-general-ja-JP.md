@@ -9,8 +9,8 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-k64o">Keywords</th>
-    <th class="tg-k64o">日本語</th>
+    <th class="tg-k64o">English Keywords</th>
+    <th class="tg-k64o">日本語 Keywords</th>
     <th class="tg-k64o">Examples</th>
   </tr>
   <tr>

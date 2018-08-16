@@ -8,8 +8,8 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-j0ga">Keywords</th>
-    <th class="tg-j0ga">Deutsche</th>
+    <th class="tg-j0ga">English Keywords</th>
+    <th class="tg-j0ga">Deutsche Keywords</th>
     <th class="tg-j0ga">Examples</th>
   </tr>
   <tr>
@@ -148,6 +148,11 @@
     <td class="tg-dc35"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
   </tr>
   <tr>
+    <td class="tg-dc35">last <em>n</em> years</td>
+    <td class="tg-dc35">letzte <em>n</em> jahre</td>
+    <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt;5000</code></td>
+  </tr>
+  <tr>
     <td class="tg-us36">month to date</td>
     <td class="tg-us36">monat bis jetzt</td>
     <td class="tg-us36"><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
@@ -221,11 +226,6 @@
     <td class="tg-us36"><em>n</em> years</td>
     <td class="tg-us36"><em>n</em> jahre</td>
     <td class="tg-us36"><code>opportunities next <b>5 years</b> by revenue</code></td>
-  </tr>
-  <tr>
-    <td class="tg-dc35"><em>n</em> years</td>
-    <td class="tg-dc35"><em>n</em> jahre</td>
-    <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt;5000</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next day</td>

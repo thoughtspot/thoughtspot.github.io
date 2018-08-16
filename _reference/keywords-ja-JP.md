@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.
 
+| _[< Back to English Keywords page](keywords.html)_ |
+
 ## General
 
 {% include content/keywords-general-ja-JP.md %}
@@ -40,6 +42,6 @@ You can use keywords when asking a question to help define your search. This ref
 
 {% include content/keywords-period-ja-JP.md %}
 
-## Help
+<!-- ## Help
 
-{% include content/keywords-help-ja-JP.md %}
+{% include content/keywords-help-ja-JP.md %} -->
