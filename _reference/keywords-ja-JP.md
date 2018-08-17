@@ -6,6 +6,8 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="This content is still under review, and might have incremental changes until this message is removed."%}
+
 You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.
 
 | _[< Back to English Keywords page](keywords.html)_ |
