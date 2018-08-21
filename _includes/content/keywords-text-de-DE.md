@@ -2,7 +2,7 @@
 .tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-.tg .tg-31q5{background-color:#000000;color:#ffcd33;vertical-align:top}
+.tg .tg-31q5{background-color:#f0f0f0;color:#000;font-weight:bold;vertical-align:top}
 .tg .tg-4eph{background-color:#f9f9f9}
 </style>
 <table class="tg">

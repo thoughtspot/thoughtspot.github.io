@@ -72,7 +72,7 @@
       </tr>
       <tr>
          <td>growth of … by … weekly</td>
-         <td><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for proski2000</code></td>
+         <td><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for pro-ski2000</code></td>
       </tr>
       <tr>
          <td>growth of … by … yearly</td>
@@ -280,7 +280,7 @@
       </tr>
       <tr>
          <td>yesterday</td>
-         <td><code>sales <b>yesterday</b> for pro -ski200 by store</code></td>
+         <td><code>sales <b>yesterday</b> for pro-ski200 by store</code></td>
       </tr>
    </tbody>
 </table>

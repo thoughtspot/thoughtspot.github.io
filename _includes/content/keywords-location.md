@@ -19,14 +19,14 @@
       <tr>
          <td>near... within <i>n</i> miles|km|meters</td>
          <td>
-  <code>revenue store name county <b>near</b> alameda <b<within</b> 50 miles</code>
+  <code>revenue store name county <b>near</b> alameda <b>within</b> <b>50 miles</b></code>
          </td>
       </tr>
       <tr>
          <td>farther than <i>n</i> miles|km|meters from</td>
          <td>
 
-<code>average hours worked branch <b>farther than</b> 80 km from scarborough</code>
+<code>average hours worked branch <b>farther than</b> <b>80 km</b> from scarborough</code>
 
          </td>
       </tr>

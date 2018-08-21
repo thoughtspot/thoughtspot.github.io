@@ -13,7 +13,7 @@
       <tr>
          <td>top</td>
          <td>
-          <ul><li><code><b>top</b> sales rep by count sales for average revenue &gt;10000</code></li>
+          <ul><li><code><b>top</b> sales rep by count sales for average revenue > 10000</code></li>
           <li><code>sales rep average revenue for each region <b>top</b> </code></li> </ul>
          </td>
       </tr>
