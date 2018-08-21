@@ -2,7 +2,7 @@
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-.tg .tg-1r1g{background-color:#fe0000;border-color:inherit;vertical-align:top}
+.tg .tg-1r1g{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
 .tg .tg-us36{border-color:inherit;vertical-align:top}
 .tg .tg-lnw8{background-color:#f9f9f9;font-family:serif !important;;border-color:inherit;vertical-align:top}
@@ -10,9 +10,9 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">English Keywords</span></th>
-    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">日本語 Keywords</span></th>
-    <th class="tg-1r1g"><span style="color:rgb(255, 255, 255)">Examples</span></th>
+    <th class="tg-1r1g">English Keywords</th>
+    <th class="tg-1r1g">日本語 Keywords</th>
+    <th class="tg-1r1g">Examples</th>
   </tr>
   <tr>
     <td class="tg-dc35">after</td>
@@ -92,7 +92,7 @@
   <tr>
     <td class="tg-us36">growth of … by … weekly</td>
     <td class="tg-us36">次の成長 ...により… 週単位</td>
-    <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for proski2000</code></td>
+    <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for pro-ski2000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … yearly</td>
@@ -352,6 +352,6 @@
   <tr>
     <td class="tg-us36">yesterday</td>
     <td class="tg-us36">昨日</td>
-    <td class="tg-us36"><code>sales <b>yesterday</b> for pro -ski200 by store</code></td>
+    <td class="tg-us36"><code>sales <b>yesterday</b> for pro-ski200 by store</code></td>
   </tr>
 </table>

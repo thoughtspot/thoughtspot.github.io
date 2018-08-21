@@ -2,7 +2,7 @@
 .tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-.tg .tg-31q5{background-color:#000000;color:#ffcd33;vertical-align:top}
+.tg .tg-31q5{white-space:nowrap;background-color:#f0f0f0;color:#000;font-weight:bold;vertical-align:top}
 .tg .tg-b7b8{background-color:#f9f9f9;vertical-align:top}
 .tg .tg-yw4l{vertical-align:top}
 </style>
@@ -16,7 +16,7 @@
     <td class="tg-b7b8">top</td>
     <td class="tg-b7b8">oben</td>
     <td class="tg-b7b8">
-    <ul><li><code>top sales rep by count sales for average revenue &gt;10000</code></li>
+    <ul><li><code>top sales rep by count sales for average revenue > 10000</code></li>
     <li><code>sales rep average revenue for each region top </code></li> </ul>
     </td>
   </tr>
