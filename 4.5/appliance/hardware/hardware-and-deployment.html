@@ -57,11 +57,11 @@
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-08-21T15:40:36-07:00" />
+<meta property="article:published_time" content="2018-08-21T16:51:27-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html","headline":"[“Supported hardware”]","dateModified":"2018-08-21T15:40:36-07:00","datePublished":"2018-08-21T15:40:36-07:00","description":"This section lists all required hardware that is needed to successfully install your ThoughtSpot appliance in your data center. Some hardware will be provided with your appliance, while the rest must be provided on-site.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html","headline":"[“Supported hardware”]","dateModified":"2018-08-21T16:51:27-07:00","datePublished":"2018-08-21T16:51:27-07:00","description":"This section lists all required hardware that is needed to successfully install your ThoughtSpot appliance in your data center. Some hardware will be provided with your appliance, while the rest must be provided on-site.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/hardware/hardware-and-deployment.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2911,15 +2911,25 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This section lists all required hardware that is needed to successfully install your ThoughtSpot appliance in your data center. Some hardware will be provided with your appliance, while the rest must be provided on-site.</p>
+  <p>This section lists all required hardware that is needed to successfully install
+your ThoughtSpot appliance in your data center. Some hardware will be provided
+with your appliance, while the rest must be provided on-site.</p>
 
-<p>The ThoughtSpot instance hardware is configured for fast data searching and reliability. This overview details the hardware specification and installation. The system is made up of compute nodes, which form a cluster. The 2U system includes up to 4 nodes and can hold up to 1TB of data. This can be scaled out.</p>
+<p>The ThoughtSpot instance hardware is configured for fast data searching and
+reliability. This overview details the hardware specification and installation.
+The system is made up of compute nodes, which form a cluster. The 2U system
+includes up to 4 nodes and can hold up to 1TB of data. This can be scaled out.</p>
 
 <h2 id="network-connection">Network connection</h2>
 
-<p>Before accessing ThoughtSpot, you will need a network connection.</p>
+<p>Before you can access ThoughtSpot, you will need a network connection.</p>
 
-<p>You can refer to the ThoughtSpot Administrator Guide to see which ports must remain open to outside traffic for handling certain network requests and for inter-cluster communication. You can also find information on how to test your network connectivity between nodes and network security.</p>
+<p>Refer to <a href="/4.5/admin/setup/firewall-ports.html">Network Ports</a> in
+the Administrator’s Guide to see which ports must remain open to outside traffic
+for handling certain network requests and for inter-cluster communication. The
+<a href="/4.5/admin/intro.html">Administrator’s Guide</a> also provides
+information on network security and how to test your network connectivity
+between nodes.</p>
 
 <p>Here are some more details on ports and node communication:</p>
 
@@ -2932,52 +2942,51 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="appliance-hardware-platforms">Appliance hardware platforms</h2>
 
-<p>There are two different appliance hardware platforms on which ThoughtSpot’s Analytical Search engine is deployed, Ivy Bridge and Haswell. Both of the platforms provide the same performance. The physical differences between the platforms are detailed below.</p>
+<p>You can deploy the ThoughtSpot Analytical Search engine on Haswell appliance
+hardware platforms, with specifications as detailed below.</p>
 
 <table>
   <thead>
     <tr>
       <th>Details</th>
-      <th>Ivy Bridge</th>
       <th>Haswell</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Dimensions</strong></td>
-      <td>2 RU chassis (17.25 x 3.47 x 26.75 in.)</td>
-      <td>2 RU chassis (17.25 x 3.47 x 28.5 in., 2” longer than Ivy Bridge)</td>
+      <td>2 RU chassis (17.25 x 3.47 x 28.5 in.)</td>
     </tr>
     <tr>
       <td><strong># of nodes</strong></td>
-      <td>Populated with 3 or 4 nodes</td>
       <td>Populated with 1 to 4 nodes</td>
     </tr>
     <tr>
       <td><strong>Node specifications</strong></td>
-      <td>Each node is independent and consists of a server board (removable from rear), 1x 120GB SSD, 5x 1TB HDD</td>
       <td>Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x 2TB HDD</td>
     </tr>
     <tr>
       <td><strong>Max power consumption</strong></td>
-      <td>1620 W</td>
       <td>2000 W</td>
     </tr>
     <tr>
       <td><strong>Required power input</strong></td>
-      <td>120-140 V / 12-10A / 50-60Hz, 180-240V / 10.5-8 A / 50-60Hz</td>
       <td>200-240 / 11.8 - 9.8A / 50-60Hz</td>
     </tr>
   </tbody>
 </table>
 
-<p><strong>Note:</strong> Required connections are the same for each platform.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot deployments are no longer offered on Ivy Bridge platforms.</div>
 
 <h2 id="chassis-views">Chassis views</h2>
 
-<p>These diagrams show the front and rear chassis views. The marked features are present on all four nodes on the rear of the chassis even though they are only pointed out on one node in the diagrams.</p>
+<p>These diagrams show the front and rear chassis views. The marked features are
+present on all four nodes on the rear of the chassis even though they are only
+pointed out on one node in the diagrams.</p>
 
-<p>The chassis are shown fully populated (4-nodes). Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If less than 4-nodes were ordered, the empty slot will be filled with a filler panel.</p>
+<p>The chassis are shown fully populated (4-nodes). Your appliance may be populated
+with 1-4 nodes, depending on the ordered configuration. If less than 4-nodes
+were ordered, the empty slot will be filled with a filler panel.</p>
 
 <p><img src="/4.5/images/ivy_bridge_chassis_views.png" alt="" title="Ivy Bridge - front and rear chassis views" /></p>
 
