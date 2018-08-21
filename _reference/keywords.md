@@ -16,7 +16,7 @@ Currently, we have the following keyword translations, and plan to add more soon
 
 <!-- | [日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html) | [Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html) | -->
 
-| **[日本語](keywords-ja-JP.html)** |   | **[Deutsche](keywords-de-DE.html)** |
+| **[日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html)** |   | **[Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html)** |
 
 ## General
 
