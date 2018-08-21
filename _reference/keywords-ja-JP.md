@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 
 You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.
 
-| _[< Back to English Keywords page](keywords.html)_ |
+| _[< Back to English Keywords page]({{ site.baseurl }}/reference/keywords.html)_ |
 
 ## General
 
