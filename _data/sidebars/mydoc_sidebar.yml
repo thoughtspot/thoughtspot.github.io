@@ -1027,7 +1027,7 @@ entries:
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: VMWare node
+    - levelTwoTitle: VMware node
       output: web,appQs
       levelTwoItems:
         - title: Configuration overview
