@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  tbd">
-<title>Set up VMWare for ThoughtSpot | ThoughtSpot</title>
+<title>Set up VMware for ThoughtSpot | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,20 +48,20 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Set up VMWare for ThoughtSpot”]</title>
+<title>[“Set up VMware for ThoughtSpot”]</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="[“Set up VMWare for ThoughtSpot”]" />
+<meta property="og:title" content="[“Set up VMware for ThoughtSpot”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This page explains how to install a ThoughtSpot cluster in a VMWare VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:" />
-<meta property="og:description" content="This page explains how to install a ThoughtSpot cluster in a VMWare VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:" />
+<meta name="description" content="This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:" />
+<meta property="og:description" content="This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-08-21T16:51:27-07:00" />
+<meta property="article:published_time" content="2018-08-21T18:20:47-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html","headline":"[“Set up VMWare for ThoughtSpot”]","dateModified":"2018-08-21T16:51:27-07:00","datePublished":"2018-08-21T16:51:27-07:00","description":"This page explains how to install a ThoughtSpot cluster in a VMWare VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html","headline":"[“Set up VMware for ThoughtSpot”]","dateModified":"2018-08-21T18:20:47-07:00","datePublished":"2018-08-21T18:20:47-07:00","description":"This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/vmware/vmware-setup.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2463,7 +2463,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMWare node</a>
+                  <a href="#">VMware node</a>
                   <ul>
                 
                   
@@ -2873,7 +2873,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Set up VMWare for ThoughtSpot</h1>
+   <h1 class="post-title-main">Set up VMware for ThoughtSpot</h1>
 </div>
 
 
@@ -2909,12 +2909,13 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This page explains how to install a ThoughtSpot cluster in a VMWare VSphere
+  <p>This page explains how to install a ThoughtSpot cluster in a VMware VSphere
 Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:</p>
 
 <ul>
   <li>Complete the prerequisites</li>
-  <li>Use the OVF to create a VM</li>
+  <li>Use the ThoughtSpot Open Virtualization Format (OVF) file to create
+a virtual machine (VM)</li>
   <li>Add hard disks to the VM</li>
 </ul>
 
@@ -2942,7 +2943,7 @@ power of the physical host.</p>
 
 <ol>
   <li>
-    <p>Download the <a href="">ThoughtSpot OVF</a> to a location on an accessible disk.</p>
+    <p>Download the <a href="https://thoughtspot.egnyte.com/dl/iWvEqo76Pr">ThoughtSpot OVF</a> to a location on an accessible disk.</p>
   </li>
   <li>
     <p>Log into the ESXi web portal.</p>
@@ -2957,7 +2958,7 @@ power of the physical host.</p>
     <p><img src="/4.5/images/vmware-ovf.png" alt="" title="ThoughtSpot OVF" /></p>
   </li>
   <li>
-    <p>Choose the OVF a template and press <strong>Next</strong>.</p>
+    <p>Choose the OVF template and press <strong>Next</strong>.</p>
 
     <p>The system prompts you to select a storage.</p>
   </li>
@@ -3004,9 +3005,38 @@ power of the physical host.</p>
 
     <p><img src="/4.5/images/vmware-loading.png" alt="" title="OVF Loading" /></p>
   </li>
+  <li>
+    <p>Make sure that VM is powered off.</p>
+  </li>
 </ol>
 
 <h2 id="add-hard-disks-to-the-vm">Add hard disks to the VM</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>HDFS Disk Requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POC</td>
+      <td>2 x 1 TB on HDD</td>
+    </tr>
+    <tr>
+      <td>Production</td>
+      <td>3 x 2 TB on HDD</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a proof of concept (POC), follow these steps to create two 1TB HDFS disks on
+HDD storage, as shown here (2 x 1TB).</p>
+
+<p>For production deployments, ThoughtSpot requires you to have three 2TB HDFS
+disks on HDD (3 x 2TB). For this use case, follow these same steps to create the
+additional, larger capacity disks.</p>
 
 <ol>
   <li>
@@ -3026,7 +3056,7 @@ should keep a minimum of 2 cores.</p>
   </li>
   <li>Click the <strong>New Hard disk</strong> to expand the detailed configuration options.</li>
   <li>
-    <p>Set the options as follows:</p>
+    <p>For a proof of concept, set the options as follows. (For production deployments, set the size to 2TB.)</p>
 
     <table>
  <colgroup>
@@ -3039,7 +3069,7 @@ should keep a minimum of 2 cores.</p>
  </tr>
  <tr>
   <td>size</td>
-  <td>2 TB.</td>
+  <td>1 TB</td>
  </tr>
  <tr>
   <th>Location</th>
@@ -3057,11 +3087,17 @@ should keep a minimum of 2 cores.</p>
 
     <p>You should see something similar to the following:</p>
 
-    <p><img src="/4.5/images/vmware-adddisk2.png" alt="" title="New hard disk" /></p>
+    <p><img src="/4.5/images/vmware-adddisk2-1TB.png" alt="" title="New hard disk" /></p>
   </li>
   <li>Save your changes.</li>
-  <li>Repeat steps 1-5 for the remaining hard disks.</li>
-  <li>Reboot the VM.</li>
+  <li>Repeat steps 1-5 to create more hard disks.</li>
+  <li>Power on the VM</li>
+  <li>
+    <p>Once the VM is online, run the following command to prepare the HDFS disks:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">sudo</span> /usr/local/scaligent/bin/prepare_disks.sh
+</code></pre></div>    </div>
+  </li>
 </ol>
 
 <h2 id="next-steps">Next steps</h2>
