@@ -1,15 +1,16 @@
 ---
-title: [Set up VMWare for ThoughtSpot]
+title: [Set up VMware for ThoughtSpot]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page explains how to install a ThoughtSpot cluster in a VMWare VSphere
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere
 Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
 
 * Complete the prerequisites
-* Use the OVF to create a VM
+* Use the ThoughtSpot Open Virtualization Format (OVF) file to create
+a virtual machine (VM)
 * Add hard disks to the VM
 
 
@@ -30,7 +31,7 @@ for a sandbox environment but is insufficient for a production environment.
 
 ## Use the OVF to Create a VM
 
-1. Download the [ThoughtSpot OVF]() to a location on an accessible disk.
+1. Download the [ThoughtSpot OVF](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr) to a location on an accessible disk.
 
 2. Log into the ESXi web portal.
 
@@ -42,7 +43,7 @@ for a sandbox environment but is insufficient for a production environment.
 
    ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
 
-3. Choose the OVF a template and press **Next**.
+3. Choose the OVF template and press **Next**.
 
    The system prompts you to select a storage.
 
@@ -68,8 +69,22 @@ for a sandbox environment but is insufficient for a production environment.
 
    ![]({{ site.baseurl }}/images/vmware-loading.png "OVF Loading")
 
+8. Make sure that VM is powered off.
+
 
 ## Add hard disks to the VM
+
+| Use Case      | HDFS Disk Requirements |
+| --------      | ---------------------- |
+| POC           | 2 x 1 TB on HDD        |
+| Production    | 3 x 2 TB on HDD        |
+
+For a proof of concept (POC), follow these steps to create two 1TB HDFS disks on
+HDD storage, as shown here (2 x 1TB).
+
+For production deployments, ThoughtSpot requires you to have three 2TB HDFS
+disks on HDD (3 x 2TB). For this use case, follow these same steps to create the
+additional, larger capacity disks.
 
 1. Edit the VM you just created.
 
@@ -85,7 +100,7 @@ for a sandbox environment but is insufficient for a production environment.
    The new disk appears as a new row under the only existing SSD row.
 
 3. Click the **New Hard disk** to expand the detailed configuration options.
-4. Set the options as follows:
+4. For a proof of concept, set the options as follows. (For production deployments, set the size to 2TB.)
 
     <table>
     <colgroup>
@@ -98,7 +113,7 @@ for a sandbox environment but is insufficient for a production environment.
     </tr>
     <tr>
      <td>size</td>
-     <td>2 TB.</td>
+     <td>1 TB</td>
     </tr>
     <tr>
      <th>Location</th>
@@ -116,11 +131,16 @@ for a sandbox environment but is insufficient for a production environment.
 
     You should see something similar to the following:
 
-   ![]({{ site.baseurl }}/images/vmware-adddisk2.png "New hard disk")
+   ![]({{ site.baseurl }}/images/vmware-adddisk2-1TB.png "New hard disk")
 
 5. Save your changes.
-6. Repeat steps 1-5 for the remaining hard disks.
-7. Reboot the VM.
+6. Repeat steps 1-5 to create more hard disks.
+7. Power on the VM
+8. Once the VM is online, run the following command to prepare the HDFS disks:
+
+    ```shell
+    sudo /usr/local/scaligent/bin/prepare_disks.sh
+    ```
 
 ## Next steps
 
