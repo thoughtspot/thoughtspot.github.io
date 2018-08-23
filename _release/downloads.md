@@ -7,7 +7,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-If you're looking for ThoughtSpot clients or API files, you've come to the right place. Click the link to download the file you need:
+If you're looking for ThoughtSpot clients or API files, you've come to the right place. Click the link to download the file you need.
+
+## Drivers and APIs
 
 <table padding="1" class="mt-responsive-table mt-responsive-table" table="table">
     <tbody>
@@ -44,10 +46,17 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
     </tbody>
 </table>
 
-## Installation Instructions
+## Driver Install Instructions
 
 For documentation on installing and configuration, see the instructions for the client you want to use:
 
 * [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
 * [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
 * [Install the ODBC driver on Solaris Sparc]({{ site.baseurl }}/data-integrate/clients/install-odbc-solaris.html)
+* [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)
+
+## Virutal and Cloud Platforms
+
+| Platform                                                |   Download Link |     Setup Guide |
+| :-----------------------:                               | :-------------: | :-------------: |
+| **VMware** | [ThoughtSpot OVF](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr) | [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) |

@@ -1084,7 +1084,7 @@ entries:
     - levelTwoTitle: JDBC Driver Client
       output: web,digBk
       levelTwoItems:
-      - title: JDBC driver Overview
+      - title: JDBC Driver Overview
         url: /data-integrate/clients/about-jdbc-driver.html
         output: web,digBk
       - title: Use the JDBC Driver
