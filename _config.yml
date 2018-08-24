@@ -11,7 +11,7 @@ url                      : https://docs.thoughtspot.com
 repository               : thoughtspot/thoughtspot.github.io
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repo                     : thoughtspot.github.io
-github_editme_path       : thoughtspot/thoughtspot.github.io/blob/gh-pages/
+github_editme_path       : thoughtspot/thoughtspot.github.io/blob
 topnav_title             : ThoughtSpot Documentation
 # appears on the top navigation bar next to the home button
 site_title               : ThoughtSpot
