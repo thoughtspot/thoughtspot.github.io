@@ -1,5 +1,5 @@
 ---
-title: [JDBC driver overview]
+title: [JDBC Driver Overview]
 keywords: jdbc,driver,database,connect
 last_updated: tbd
 tags: [performance]

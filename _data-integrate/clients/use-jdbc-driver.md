@@ -16,9 +16,7 @@ The ThoughtSpot JDBC driver is supplied by a `.jar` file you install on a
 workstation. This workstation is the same machine where you plan to run your ETL
 activities.
 
-
-## JDBC Configuration parameters
-
+## JDBC configuration parameters
 
 | Information | Description |
 |-------------|-------------|
@@ -28,6 +26,12 @@ activities.
 |Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
 |username | The name of a ThoughtSpot user with administrator permissions.|
 |password | The password of a ThoughtSpot application user. This is not the machine or SSH userpassword. |
+
+For more JDBC configuration options, see also:
+
+* [JDBC properties reference](http://localhost:4000/data-integrate/reference/simba-settings.html#properties-reference) in this ThoughtSpot documentation
+
+*  [SimbaClient for JDBC Configuration Properties reference ](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientjdbc/simbaclient_jdbcconfigurationoptions.htm)
 
 ## Check the ThoughtSpot IP and the simba_server status
 
