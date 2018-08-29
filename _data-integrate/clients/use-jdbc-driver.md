@@ -29,7 +29,7 @@ activities.
 
 For more JDBC configuration options, see also:
 
-* [JDBC properties reference](http://localhost:4000/data-integrate/reference/simba-settings.html#properties-reference) in this ThoughtSpot documentation
+* [JDBC properties reference]({{ site.baseurl }}/data-integrate/reference/simba-settings.html#properties-reference) in this ThoughtSpot documentation
 
 *  [SimbaClient for JDBC Configuration Properties reference ](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientjdbc/simbaclient_jdbcconfigurationoptions.htm)
 
