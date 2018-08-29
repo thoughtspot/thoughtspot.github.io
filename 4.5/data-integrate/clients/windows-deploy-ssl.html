@@ -52,16 +52,16 @@
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="[“Deploy SSL with ODBC on Windows”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection." />
-<meta property="og:description" content="You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection." />
+<meta name="description" content="You can configure a secure ODBC connection between your ThoughtSpot cluster and a remote Windows Machine. This article explains the SSL resources and ODBC configuration options you need to enable SSL for an ODBC connection." />
+<meta property="og:description" content="You can configure a secure ODBC connection between your ThoughtSpot cluster and a remote Windows Machine. This article explains the SSL resources and ODBC configuration options you need to enable SSL for an ODBC connection." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-08-24T14:53:50-07:00" />
+<meta property="article:published_time" content="2018-08-28T17:07:24-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html","headline":"[“Deploy SSL with ODBC on Windows”]","dateModified":"2018-08-24T14:53:50-07:00","datePublished":"2018-08-24T14:53:50-07:00","description":"You can configure a secure ODBC connection between your Thoughtspot cluster and a remote Windows Machine. This article explains the SSL resources you need and the ODBC configuration options you need to enable SSL for an ODBC connection.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html","headline":"[“Deploy SSL with ODBC on Windows”]","dateModified":"2018-08-28T17:07:24-07:00","datePublished":"2018-08-28T17:07:24-07:00","description":"You can configure a secure ODBC connection between your ThoughtSpot cluster and a remote Windows Machine. This article explains the SSL resources and ODBC configuration options you need to enable SSL for an ODBC connection.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/data-integrate/clients/windows-deploy-ssl.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2909,21 +2909,23 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>You can configure a secure ODBC connection between your Thoughtspot cluster and
-a remote Windows Machine.  This article explains the SSL resources you need and
-the ODBC configuration options you need to enable SSL for an ODBC connection.</p>
+  <p>You can configure a secure ODBC connection between your ThoughtSpot cluster and
+a remote Windows Machine.  This article explains the SSL resources and ODBC
+configuration options you need to enable SSL for an ODBC connection.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>Your system administration should have created and configured your network’s
-Certificate Authority before configuring SSL over the ThoughtSpot ODBC
-connection. Additionally, the system administrator should have available both
+<p>Before configuring SSL over the ThoughtSpot ODBC connection, make sure that
+your system administrator has created and configured your network’s Certificate
+Authority. Additionally, the system administrator should have available both
 the proper Private Key and Server Certificate.</p>
 
 <h2 id="configure-the-thoughtspot-cluster-nodes">Configure the ThoughtSpot cluster nodes</h2>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Portions of this procedure require that you work
 with your ThoughtSpot Customer Service or Support Engineer.</div>
+
+<p>The <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaserver/configurationoptions.htm">SimbaServer Configuration Properties reference</a> includes full details on <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaserver/configurationoptions.htm#SSL_Server">SSL Configuration Properties</a>.</p>
 
 <p>Before you change your ODBC configuration, decide on a path where you will store
 the Private Key and Server Certificate, for example, you could decide to use
@@ -2940,7 +2942,7 @@ the Private Key and Server Certificate, for example, you could decide to use
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> SslCertfile=/home/admin/Simba_SSL/Server-Certificate.pem
  SslKeyfile=/home/admin/Simba_SSL/Private-Key.pem
- UseSsl=Enabled
+ UseSsl=Required
 </code></pre></div>    </div>
   </li>
   <li>
@@ -2952,32 +2954,55 @@ the Private Key and Server Certificate, for example, you could decide to use
 
 <h2 id="deploy-the-certificate-on-your-windows-workstation">Deploy the certificate on your windows workstation</h2>
 
-<p>Do the following procedure on the workstation you use for your ODBC connection.</p>
+<p>Please note that the SSL settings on the server and client are interdependent.</p>
+
+<p>The <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcconfigurationoptions.htm">SimbaClient for ODBC Configuration Properties</a> reference describes how to set parameters on the client to use SSL (scroll down to useSsl section at the end).</p>
+
+<p>The Simba documentation also provides a chart showing <a href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringssl/configcombinations.htm">configuration properties for SSL</a> where you can see how different combinations of SSL settings on client and server will behave. For example:</p>
+
+<ul>
+  <li>
+    <p>Setting both server and client to <code class="highlighter-rouge">UseSsl=Enabled</code> provides the ability for clients to connect with or without SSL.</p>
+  </li>
+  <li>
+    <p>Setting both server and client to <code class="highlighter-rouge">UseSsl=Required</code> requires that all clients use SSL.</p>
+  </li>
+</ul>
+
+<p>On the workstation you use for your ODBC connection, we recommend that you set <code class="highlighter-rouge">UseSSL</code> to the more restrictive <code class="highlighter-rouge">Required</code> per the following procedure.</p>
 
 <ol>
   <li>
     <p>Save CA certificate to a secure location on the workstation disk.</p>
 
     <p>Choose a location where the certificate is unlikely to be deleted by mistake,
-for example, <code class="highlighter-rouge">C:\ODBC-SSL\CA.pem</code> is an example of a location.</p>
+for example, <code class="highlighter-rouge">C:\ODBC-SSL\CA.pem</code> is an example of a full path to such a location.</p>
   </li>
   <li>Open your ThoughtSpot ODBC connection configuration dialog.</li>
   <li>Click <strong>Options</strong>.</li>
-  <li>Check the <strong>Require SSL</strong> option.</li>
+  <li>
+    <p>Check the <strong>Require SSL</strong> option and/or add SSL as a custom property.</p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Some customers have reported that setting the SSL parameter with this option doesn’t always work. Alternatively or in addition, you can add SSL as a custom property: <code class="highlighter-rouge">UseSSL = Required</code>, as shown below.</div>
+
+    <p><img src="/4.5/images/windows-odbc-ssl-options.png" alt="" title="client settings" />
+ <img src="/4.5/images/windows-odbc-custom-SSL-property.png" alt="" title="client settings" />
+ <img src="/4.5/images/windows-odbc-custom-SSL-added.png" alt="" title="client settings" /></p>
+  </li>
   <li>
     <p>Enter the location of the CA certificate in the <strong>SSL Certificate File</strong> field.</p>
 
-    <p><img src="/4.5/images/windows-odbc-cplusplus.png" alt="" title="Certificate location" /></p>
+    <p><img src="/4.5/images/windows-odbc-cert-and-SSL.png" alt="" title="client settings" /></p>
   </li>
   <li>When you are done, press <strong>OK</strong> to save your new properties.</li>
   <li>
-    <p>Press <strong>Test Connection</strong> to test your database connection.</p>
+    <p>Click <strong>Test Connection</strong> to test your database connection.</p>
 
     <p><img src="/4.5/images/windows-odbc-success.png" alt="" title="Success" /></p>
   </li>
-  <li>Press <strong>Cancel</strong> to close the configuration dialog.</li>
-  <li>Press <strong>OK</strong> to close the <strong>Client Configuration Dialog</strong> the dialog.</li>
-  <li>Press <strong>OK</strong> to close the <strong>ODBC Data Source Administrator (64-bit)</strong> application</li>
+  <li>Click <strong>Cancel</strong> to close the configuration dialog.</li>
+  <li>Click <strong>OK</strong> to close the <strong>Client Configuration Dialog</strong> the dialog.</li>
+  <li>Click <strong>OK</strong> to close the <strong>ODBC Data Source Administrator (64-bit)</strong> application.</li>
 </ol>
 
   <div class="tags">
@@ -3004,7 +3029,7 @@ for example, <code class="highlighter-rouge">C:\ODBC-SSL\CA.pem</code> is an exa
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2018 <br />
+        Generated: Aug 28, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
