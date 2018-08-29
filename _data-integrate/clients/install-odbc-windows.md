@@ -99,9 +99,7 @@ the driver.
 ## Configure the driver and test your connection
 
 Once installation is complete, you use the ODBC Administrator to configure the
-ODBC connection.
-
- on your Windows workstation. For example, you may want to add
+ODBC connection on your Windows workstation. For example, you may want to add
 a default schema or change the server IP address or the default database.
 
 It is recommended to add a default schema. If you don't specify a default
