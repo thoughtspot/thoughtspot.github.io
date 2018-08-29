@@ -28,6 +28,15 @@ These videos are new in the 4.5 release cycle (_more to come, check back soon_):
             </div>
             <p style="text-align: center;">Visualizations & Chart Types</p>
          </td>
+         <td>
+            <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <span class="wistia_embed wistia_async_w8xlyijnfh popover=true popoverAnimateThumbnail=true videoFoam=true"
+            style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+            </div>
+            <p style="text-align: center;">Using Formulas to Create Custom Fields</p>
+            </td>
       </tr>
    </tbody>
 </table>
