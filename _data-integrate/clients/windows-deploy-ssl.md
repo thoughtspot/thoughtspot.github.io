@@ -63,9 +63,7 @@ reported that these are not always reliable. In the procedure below, we
 recommend using custom properties to define these settings (either preemptively,
 or as a solution if the ODBC connection over SSL does not work with the
 pre-defined options). There is no harm in setting both. Example settings are:
-
-* `UseSSL = Required`
-* `SslCACertfile = C:\ODBC-SSL\CA.pem`" %}
+`UseSSL = Required` and `SslCACertfile = C:\ODBC-SSL\CA.pem`" %}
 
 On the workstation you want to use for your ODBC connection, specify the level
 of SSL you want to use on the client along with the path to the CA certificate,
