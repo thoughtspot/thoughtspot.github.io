@@ -48,17 +48,30 @@ Then, do the following on *every ThoughtSpot node* in your cluster.
 
 Please note that the SSL settings on the server and client are interdependent.
 
-The [SimbaClient for ODBC Configuration Properties](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcconfigurationoptions.htm) reference describes how to set parameters on the client to use SSL (scroll down to useSsl section at the end).   
-
-The Simba documentation also provides a chart showing [configuration properties for SSL](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringssl/configcombinations.htm) where you can see how different combinations of SSL settings on client and server will behave. For example:
+The [SimbaClient for ODBC Configuration Properties](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcconfigurationoptions.htm) reference describes how to set parameters
+on the client to use SSL (scroll down to useSsl section at the end). The Simba documentation also provides a chart showing [configuration properties for
+SSL](https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringssl/configcombinations.htm) where you can see how different combinations of SSL settings on client and
+server will behave. For example:
 
 * Setting both server and client to `UseSsl=Enabled` provides the ability for clients to connect with or without SSL.
 
 * Setting both server and client to `UseSsl=Required` requires that all clients use SSL.
 
-On the workstation you use for your ODBC connection, we recommend that you set `UseSSL` to the more restrictive `Required` per the following procedure.
+{% include note.html content="Note that the SSL and certificate parameters can
+be set through the pre-defined options on the options dialog, but customers have
+reported that these are not always reliable. In the procedure below, we
+recommend using custom properties to define these settings (either preemptively,
+or as a solution if the ODBC connection over SSL does not work with the
+pre-defined options). There is no harm in setting both. Example settings are:
 
-1. Save CA certificate to a secure location on the workstation disk.
+* `UseSSL = Required`
+* `SslCACertfile = C:\ODBC-SSL\CA.pem`" %}
+
+On the workstation you want to use for your ODBC connection, specify the level
+of SSL you want to use on the client along with the path to the CA certificate,
+and then test the connection.
+
+1. Save the CA certificate to a secure location on the workstation disk.
 
    Choose a location where the certificate is unlikely to be deleted by mistake,
    for example, `C:\ODBC-SSL\CA.pem` is an example of a full path to such a location.
@@ -67,14 +80,14 @@ On the workstation you use for your ODBC connection, we recommend that you set `
 3. Click **Options**.
 4. Check the **Require SSL** option and/or add SSL as a custom property.
 
-    {% include note.html content="Some customers have reported that setting the SSL parameter with this option doesn't always work. Alternatively or in addition, you can add SSL as a custom property: `UseSSL = Required`, as shown below." %}
-
     ![]({{ site.baseurl }}/images/windows-odbc-ssl-options.png "client settings")
     ![]({{ site.baseurl }}/images/windows-odbc-custom-SSL-property.png "client settings")
     ![]({{ site.baseurl }}/images/windows-odbc-custom-SSL-added.png "client settings")
 
-5. Enter the location of the CA certificate in the **SSL Certificate File** field.
+5. Enter the location of the CA certificate in the **SSL Certificate File** field and/or add the CA certificate as a custom property. Be sure to provide the full path to the certificate (`{certificate_directory}\{CA_certificate}.pem`).
 
+    ![]({{ site.baseurl }}/images/windows-odbc-cert-add-custom.png "client settings")
+    ![]({{ site.baseurl }}/images/windows-odbc-custom-CACert-property.png "client settings")
     ![]({{ site.baseurl }}/images/windows-odbc-cert-and-SSL.png "client settings")
 
 6. When you are done, press **OK** to save your new properties.
