@@ -36,6 +36,10 @@ layout: default
 
     {% unless page.toc == false %}
     {% include toc.html %}
+    {% endunless %}
+
+
+    {% unless page.tree == false %}
     {% include read_time.html %}
     {% endunless %}
 
