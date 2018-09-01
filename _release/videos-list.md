@@ -10,68 +10,94 @@ permalink: /:collection/:path.html
 
 ## Videos new in 4.5
 
-These videos are new in the 4.5 release cycle (_we are adding new videos frequently, check back often_):
+We are adding new videos frequently, please check back often!
+<br /><br />
 
-<table padding="1" style="width: 100%; table-layout: fixed;">
-   <tbody>
-      <tr>
-        <td>
-          <script src="https://fast.wistia.com/embed/medias/5s5brg2ady.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-             <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-             <span class="wistia_embed wistia_async_5s5brg2ady popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-          </div>
-          <p style="text-align: center;"><b>Search</b></p>
-          <p> Here is an introduction to search in ThoughtSpot. We cover the role of choosing data sources to narrow the scope of your search, how to change the chart type, and how measures, attributes, and filters work in the search bar. We also touch on ThoughtSpot keywords, and show how to get keywords help. Finally, we save the search as an answer.
-          </p>
-         </td>
-         <td>
-            <script src="https://fast.wistia.com/embed/medias/pntkcnzuew.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <span class="wistia_embed wistia_async_pntkcnzuew popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-            </div>
-            <p style="text-align: center;"><b>Visualizations & Chart Types</b></p>
-            <p> This is a more thorough exploration of visualizations and chart types that show as a result of a search. We explain why different types of searches default to certain visualizations, show how to change the visualization, and how to get help on all the chart and table types. Finally, we demonstrate how the measures, attributes, and filters you type in the search bar dynamically influence the visualization and re-render it.
-            </p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+<div class="component-container">
+    <!--start row-->
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/5s5brg2ady.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+           <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+           <span class="wistia_embed wistia_async_5s5brg2ady popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span>
+           </div>
+        </div>
+        <p style="text-align: center;"><b>Search</b></p>
+        <p> An introduction, including how to narrow the scope of a search, change chart types, and use measures, attributes, filters, and keywords.
+        </p>
 
-<table padding="1" style="width: 100%; table-layout: fixed;">
-   <tbody>
-      <tr>
-         <td>
-            <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script>
-            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <span class="wistia_embed wistia_async_w8xlyijnfh popover=true popoverAnimateThumbnail=true videoFoam=true"
-            style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-            </div>
-            <p style="text-align: center;"><b>Using Formulas to Create Custom Fields</b></p>
-            <p>
-            This video shows you how to add an <code>if..then..else</code> formula at the search bar to show profit margins on products sold, ranking items as "high", "low", or "medium" in terms of profitability. The "profitability indicator" we create calculates percentage profit based on another field in the data called <code>margin percentage</code>. You'll learn how to add a new column to your data based on existing measures and attributes, use the Formula Assistant to view examples and check syntax, and use your new formula in searches and analyses.
-            </p>
-            </td>
-            <td>
+        </div>
 
-            <script src="https://fast.wistia.com/embed/medias/8lm0vlz5d5.jsonp" async></script>
-            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <span class="wistia_embed wistia_async_8lm0vlz5d5 popover=true popoverAnimateThumbnail=true videoFoam=true"
-            style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-            </div>
-            <p style="text-align: center;"><b>Using Versus for Comparison</b></p>
-            <p>
-            This video shows you how to do comparative analysis in ThoughtSpot using the versus (or vs) keyword in the Search bar. We identify and compare demographic groups, first a straight forward comparison of sales for customers in two different income brackets, then a more complex comparison using multiple conditions to define each group. We use the query visualizer to understand how versus builds the formulas for the comparisons behind the scenes.
-            </p>
-            </td>
-      </tr>
-   </tbody>
-</table>
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/pntkcnzuew.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+           <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_pntkcnzuew popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Visualizations & Chart Types</b></p>
+        <p> How to work with charts and tables that show as the result of a search.
+        </p>
+        </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_w8xlyijnfh popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Use Formulas to Create Custom Fields</b></p>
+        <p>
+        How to add a formula at the search bar to create a custom column based on another field in your data.
+        </p>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="component-container">
+    <!--start row-->
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/8lm0vlz5d5.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_8lm0vlz5d5 popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Use Versus for Comparison</b></p>
+        <p>
+        How to do comparative analysis in ThoughtSpot using the <b>versus</b> (or <b>vs</b>) keyword in the Search bar.
+        </p>
+
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/h83yuarjsq.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_h83yuarjsq popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Show Growth Over Time</b></p>
+        <p>
+        Use the <b>growth</b> keyword to compare current and past data, such as year-over-year sales.
+        </p>
+        </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+
+        </div>
+
+
+    </div>
+</div>
 
 ## Videos from the 4.4 release cycle
 
