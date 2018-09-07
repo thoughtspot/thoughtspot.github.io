@@ -214,7 +214,7 @@
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> weeks ago</td>
-    <td class="tg-us36"><em>n</em> 月 前</td>
+    <td class="tg-us36"><em>n</em> 週 前</td>
     <td class="tg-us36"><code>sales <b>4 weeks ago</b> by store</code></td>
   </tr>
   <tr>
