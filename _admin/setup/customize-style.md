@@ -8,15 +8,15 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can customize the look and feel of the ThoughtSpot application for your
-company. Configuring these settings set system-wide defaults for all your users.
+company. Configuring these settings sets system-wide defaults for all your users.
 
-You must configure your cluster to enable this functionality. Contact
+Style customization is enabled by default. You can configure your cluster to disable this functionality. Contact
 <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
-about enabling this feature.
+about disabling this feature.
 
 ## Where to customize styles
 
-If you have enabled this feature, a user with administrative rights can view and
+A user with administrative rights can view and
 access the customization on the **Admin** page.
 
 ![]({{ site.baseurl }}/images/custom-style.png)
