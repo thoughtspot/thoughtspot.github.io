@@ -24,7 +24,7 @@
   </tr>
   <tr>
     <td class="tg-dc35">between … and ...</td>
-    <td class="tg-dc35">entre … e …td>
+    <td class="tg-dc35">entre … e …</td>
     <td class="tg-dc35"><code>order date <b>between</b> 01/30/2012 <b>and</b> 01/30/2014</code></td>
   </tr>
   <tr>
