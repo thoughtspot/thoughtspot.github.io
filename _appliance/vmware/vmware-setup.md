@@ -1,6 +1,6 @@
 ---
 title: [Set up VMware for ThoughtSpot]
-keywords: tbd
+keywords: vmware, configuration
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

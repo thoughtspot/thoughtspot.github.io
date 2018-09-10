@@ -1,6 +1,6 @@
 ---
-title: [AWS configuration options]
-keywords: AWS, configuration
+title: [GCP configuration options]
+keywords: GCP, configuration
 tags: [performance]
 last_updated: tbd
 sidebar: mydoc_sidebar
