@@ -4,14 +4,19 @@ Whenever you view an answer, you have the option of sharing it with others. It w
 2. Save the answer by clicking **Actions** and **Save**.
 3. Click **Actions** and then **Share**.
 
-     ![]({{ site.baseurl }}/images/share_with.png)
+     ![]({{ site.baseurl }}/images/share_with_x.png)
 
-4. Click **+ Add users or groups** and select users or groups that you want to share with.
-
-    ![]({{ site.baseurl }}/images/share_answer.png)
-
+4.  Click the plus (**+**) on the Share dialog and select users or groups with whom you want to share this answer.
 5. Configure the level of access by selecting from the dropdown list. You can select:
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared answer.
     -   **Can Edit** to allow modification. Enables renaming or deleting the shared answer. If a user with edit privileges modifies a shared answer, their changes will be saved to it.
+
+    ![]({{ site.baseurl }}/images/share_answer.png)
+
 6. Click **Add and Save**.
+
+    ![]({{ site.baseurl }}/images/share_answer_add_save.png)
+
 7. Click **Done**.
+
+    ![]({{ site.baseurl }}/images/share_answer_done.png)
