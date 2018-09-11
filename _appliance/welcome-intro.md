@@ -14,7 +14,9 @@ development and use an appliance for production.
 This guide instructs you how to prepare each of the following:
 
 - [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
-- [AWS EC2 node]({{ site.baseurl }}/appliance/aws/about-aws.html)
+- [Amazon Web Services (AWS) EC2 node]({{ site.baseurl }}/appliance/aws/about-aws.html)
+- [Azure node]({{ site.baseurl }}/appliance/azure/about-azure.html)
+- [Google Cloud Platform (GCP) node]({{ site.baseurl }}/appliance/gcp/about-gcp.html)
 - [VMWare node]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
 
 Once you've configured your nodes, you can contact [ThoughtSpot

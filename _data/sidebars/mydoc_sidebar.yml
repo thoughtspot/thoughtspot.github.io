@@ -1027,6 +1027,18 @@ entries:
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs
+    - levelTwoTitle: GCP node
+      output: web,appQs
+      levelTwoItems:
+        - title: GCP cluster overview
+          url: /appliance/gcp/about-gcp.html
+          output: web,appQs
+        - title: Configuration options
+          url: /appliance/gcp/configuration-options.html
+          output: web,appQs
+        - title: Set up GCP for ThoughtSpot
+          url: /appliance/gcp/launch-an-instance.html
+          output: web,appQs
     - levelTwoTitle: VMware node
       output: web,appQs
       levelTwoItems:
