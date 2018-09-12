@@ -6,87 +6,110 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you've determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot.
+After you've determined your configuration options, set up your virtual machines
+(VMs) on Google Cloud Platform. The ThoughtSpot base image for booting the
+VMs and some other aspects of system setup will be shared with you by ThoughtSpot.
 
+## About the ThoughtSpot and Google Cloud Platform
 
-## About the ThoughtSpot AMI
-
-The ThoughtSpot AMI comes provisioned with the custom ThoughtSpot image to make hosting simple.  An AMI is a preconfigured template that provides the information required to launch an instance.  You must specify an AMI when you launch an instance. An AMI includes the following:
-
--   A template for the root volume for the instance (for example, an operating system, an appliance server, and applications).
--   Launch permissions that control which AWS accounts can use the AMI to launch instances.
-
--   A block device mapping that specifics the volumes to attach to the instance when it's launch.
-
-Check with your ThoughtSpot contact to learn about the latest version of the ThoughtSpot AMI. Once you've provided your AWS account ID and region where the VMs will be hosted, ThoughtSpot will share the current ThoughtSpot base AMI with you.
-
-The ThoughtSpot AMI has specific applications on an CentOS base image. The EBS volumes required for ThoughtSpot install in AWS comes as part of the AMI. When you launch an EC2 instance from this image, the EBS volumes automatically get sized and provisioned. The storage attached to the base AMI is 200 GB (xvda), 2X400 GB (xvdb), and SSD gp2. It contains the max disks so that it can take care of the full load of the VM.
-
-##  Launch an instance
-
-Follow these steps to set up the VMs and launch ThoughtSpot.
+Thoughtspot uses a custom image in GCP (like our requirements on other public
+clouds). The base image is a Centos derived image, which will be available in
+your Google Cloud project as a custom image from ThoughtSpot.
 
 ### Overview
 
-ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for your EC2 details:
+Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll do this on Google Cloud Platform.
 
--   EC2 instance type: r4.16xlarge.
--   Networking requirement: 10GbE network is needed between the VMs. This is the default for the chosen VM type.
--   Security: VMs need to be accessible from each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
--   Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Also for staging larger datasets (\> 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD gp2 provisioned.
+In a nutshell, the required configuration is:
 
+- 64 vCPU
+- 416 GB RAM
+- 250GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- 2 1TB SSD for data
 
-###  Contact support and set your region
+The following topics walk you through this process.
 
-1. Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
-2. Provide ThoughtSpot Support with your AWS account ID and the region where the VMs will be hosted.
-   Support will grant you permissions and share the current ThoughtSpot base AMI with you.
+###  Create an instance
 
-    {% include note.html content="You can find your account ID and region on the top right corner of the AWS console." %}
+1. Log in to your Google account from the [Google Cloud Platform page](https://console.cloud.google.com/).
 
-     ![]({{ site.baseurl }}/images/aws_account_id_region.png "AWS account ID and region")
+2. Select **VM instances** on the left panel and click **CREATE INSTANCE**.
 
-3. Navigate to the EC2 service dashboard by clicking **Services**, then select **EC2**.
+3. Provide a name for the image, choose a region, choose number of CPUs (e.g., 8 vCPUs for a cluster), and click **Customize** to further configure CPUs and memory.
 
-     ![]({{ site.baseurl }}/images/navigate_to_ec2_dashboard.png "Navigate to the EC2 Dashboard")
+    ![]({{ site.baseurl }}/images/gcp-1-create-instance.png "Create GCP VM instance")
 
-4. Make sure your selected region is correct on the top right corner of the dashboard.
-   If not, select a different region you would like to launch your instance in. Let ThoughtSpot Support know if you change your region.
+4. For **Machine type** set the following configuration:
 
-     ![]({{ site.baseurl }}/images/select_region.png "Select a region to launch your instance in")
+    | Setting       | Value                |
+    |------------   | -------------------- |
+    | Cores         | `64 vCPU`            |
+    | Memory        | `415 GB`             |
+    | Extend memory | Enabled (checkmark)  |
+    | CPU platform  | `Automatic` (or select one of the preferred CPU platforms, `Intel Skylake` or `Intel Broadwell`, if available)|
 
-## Create an instance
+    ![]({{ site.baseurl }}/images/gcp-3-config-machine.png "Configure CPU and memory")
 
-1. Create an instance by clicking **Launch Instance**.
+    ![]({{ site.baseurl }}/images/gcp-3-preferred-CPUs.png "Preferred CPU platforms")
 
-     ![]({{ site.baseurl }}/images/launch_instance.png "Launch an instance")
+5. Configure the Boot disk.
 
-2. Select the appropriate AMI from the AMI Selection step by clicking **Select**.
+    a. Scroll down to the find the **Boot disk** section and click **Change**.
 
-   The ThoughtSpot shared AMI can be found under the **My AMIs** tab.
+      ![]({{ site.baseurl }}/images/gcp-4-change-boot-disk.png "Change boot disk")
 
-     ![]({{ site.baseurl }}/images/select_the%20ami.png "Select the AMI")
+    b. Click **Custom Images** on the tabs at the top, select a ThoughtSpot base image and configure the boot disk as follows:
 
-3. Select `r4.16xlarge` as the instance type.
-4. Click **Next: Configure Instance Details**.
-5. Configure the instances by choosing the number of EC2 instances you need based on your EC2 details.
-   The instances need to be on the same VPC and subnetwork.
-6. Click **Next: Add Storage**.
-    The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned.
-7. Click **Next: Add Tags** when you are done modifying the storage size.
-8. Set a name for tagging your instances and click **Next: Configure Security Group**.
-9. Select an existing security group to attach new security groups to such that it meets the security requirements for ThoughtSpot.
+      | Setting         | Value                     |
+      |------------     | --------------------      |
+      | Image           | `ThoughtSpot`             |
+      | Boot disk type  | `Standard persistent disk`|
+      | Size (GB)       | `250`                     |
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster needs to be accessible from one another. For easier configuration, it is better to open all accesses from across VMs in a cluster.</li> <li>Additionally, more ports need to be opened on the VM to provide data staging capabilities to your network. Check the network ports reference to determine the minimum required ports that need to be opened for your ThoughtSpot appliance.</li></ul>
-    {{site.data.alerts.end}}
+      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config.png "Change boot disk")
 
+      c. Click **Select** to save the boot disk configuration.
 
-10.  Click **Review and Launch**. After you have reviewed your instance launch details, click **Launch**.
-11.  Choose a key pair.
-      A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you should create one, otherwise you won’t be able to SSH into the AWS instance later on.
-12.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
-13.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
+6.  Back on the main configuration page, click to expand the advanced configuration options
+    (**Management, security, disks, networking, sole tenancy**).
 
-## Related information  
+    ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
+7.  Attach 2 1TB SSD drives. These drives will be used for the data storage.
+
+    a. Click the **Disks** tab, and click **Add new disk**.
+
+      ![]({{ site.baseurl }}/images/gcp-7-advanced-disk-config.png "Advanced disk config")
+
+    b. Configure the following settings for each disk.
+
+      | Setting      | Value                  |
+      |------------  | ---------------------- |
+      | Type         | `SSD persistent disk`  |
+      | Source type  | `Blank disk`           |
+      | Size (GB)    | `1024`                 |
+
+      ![]({{ site.baseurl }}/images/gcp-8-advanced-blank-disk-config.png "Advanced disk config")
+
+      ![]({{ site.baseurl }}/images/gcp-10-additional-disks.png "Additional data storage disks")
+
+8. Customize the network settings as needed, preferably use your default VPC settings.
+
+9. Repeat these steps to create the necessary number of such VMs.
+
+## Prepare the VMs (ThoughtSpot Site Reliability Team)
+
+{% include important.html content="This procedure is typically done by a
+ThoughtSpot Site Reliability Engineer (SRE). Please consult
+with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
+
+Before we can install a ThoughtSpot cluster, an administrator must log in to
+each VM via SSH and complete the following preparation steps:
+
+1. Run `/usr/local/scaligent/release/bin/prepare_disks.sh` on every machine.
+2. Configure each VM based on the site-survey.
+
+## Launch the cluster
+
+Upload the TS tarball to one of the machines and proceed with the normal
+cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
