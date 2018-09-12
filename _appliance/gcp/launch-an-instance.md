@@ -7,20 +7,21 @@ permalink: /:collection/:path.html
 ---
 
 After you've determined your configuration options, set up your virtual machines
-(VMs) on Google Cloud Platform. The ThoughtSpot base image for booting the
-VMs and some other aspects of system setup will be shared with you by ThoughtSpot.
+(VMs). The ThoughtSpot base image for booting the VMs and some other aspects of
+system setup will be shared with you on GCP by ThoughtSpot.
 
 ## About the ThoughtSpot and Google Cloud Platform
 
-Thoughtspot uses a custom image in GCP (like our requirements on other public
-clouds). The base image is a Centos derived image, which will be available in
-your Google Cloud project as a custom image from ThoughtSpot.
+ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Centos derived
+image, which will be available to you in your Google Compute Engine project for
+Boot disk options under Custom Images.
 
 ### Overview
 
-Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll do this on Google Cloud Platform.
+Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll
+do this on Google Compute Engine, the GCP platform for [creating and running VMs](https).
 
-In a nutshell, the required configuration is:
+In a nutshell, the required configuration ThoughtSpot is:
 
 - 64 vCPU
 - 416 GB RAM
@@ -31,7 +32,11 @@ The following topics walk you through this process.
 
 ###  Create an instance
 
-1. Log in to your Google account from the [Google Cloud Platform page](https://console.cloud.google.com/).
+1. Log in to the [Google Cloud Console](https://console.cloud.google.com/).
+
+2. Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.
+
+    ![]({{ site.baseurl }}/images/gcp-select-compute-engine-dash.png)
 
 2. Select **VM instances** on the left panel and click **CREATE INSTANCE**.
 
@@ -66,7 +71,7 @@ The following topics walk you through this process.
       | Boot disk type  | `Standard persistent disk`|
       | Size (GB)       | `250`                     |
 
-      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config.png "Change boot disk")
+      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-x.png "Change boot disk")
 
       c. Click **Select** to save the boot disk configuration.
 

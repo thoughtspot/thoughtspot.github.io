@@ -1,6 +1,7 @@
 ---
 title: [VMware configuration overview]
 keywords: vmware
+tags: [vm, performance]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
