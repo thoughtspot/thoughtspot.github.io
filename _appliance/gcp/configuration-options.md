@@ -15,7 +15,9 @@ and networking capacity you should be running for your instances.
 
 ## Hardware configurations
 
-GCP provides several storage types and media options. The ThoughtSpot server requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks, with the following minimum CPU and memory capacity. The ThoughtSpot reference implementation uses the Google `n1-highmem-64`, which is on the higher end of the [High Memory Machine types](https://cloud.google.com/compute/docs/machine-types#highmem).
+GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks. The ThoughtSpot reference implementation uses the Google `n1-highmem-64`, which is on the higher end of the [High Memory Machine types](https://cloud.google.com/compute/docs/machine-types#highmem).
+
+The following table summarizes the reference implementation machine type, along with minimum required CPU, memory capacity, and storage.
 
 
 |Machine Type | Storage Type           | Data Capacity             |vCPUs|System Memory |
@@ -30,13 +32,13 @@ the keys. ThoughtSpot uses only persistent storage options. Instance storage
 
 Each [GCP n1-highmem-64 machine](https://cloud.google.com/compute/docs/machine-types#highmem)
 has 416 GB of memory and can accommodate ~208 GB of ThoughtSpot dedicated data.
-As a ThoughtSpot recommended sizing heuristic in this platform, the number of
-nodes needed to host a given data size is equal to data size (GB) modulo 208.
+As a ThoughtSpot recommended sizing heuristic for this platform, the number of
+nodes needed to host a given data size is equal to data size (GB), modulo 208.
 This size refers to the amount of data in the CSV files you will be loading into
 ThoughtSpot. The 208 GB number takes into account all replication of data done
 automatically by ThoughtSpot to provide redundancy and fast performance.
 
-You can start with the minimum platform described here, and add nodes capacity
-by adding nodes and disks as needed. You can also choose to start off with more
-more data capacity, as long as you know the best fit configuration for your data
+You can start with the minimum platform described here, and add capacity by
+adding nodes and disks as needed. You can also choose to start off with more
+data capacity, as long as you know the best fit configuration for your data
 volume.
