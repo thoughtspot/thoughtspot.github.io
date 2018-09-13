@@ -11,7 +11,7 @@ instance, and is easily updated from development instances.
 
 Your database capacity will determine the number of instances you'll need and
 the instance network/storage requirements. In addition, you can go with multiple
-VMs based on your dataset size.
+virtual machines (VMs) based on your dataset size.
 
 The security group setting of your ThoughtSpot instance on GCP is up to you. You
 can find more information about which ports to open in the [network ports
@@ -32,7 +32,7 @@ capacity.
 
 The ThoughtSpot image deploys on [Google Compute
 Engine](https://cloud.google.com/compute/docs/), the GCP platform for creating
-and running virtual machines (_instances_) on Google Cloud infrastructure. GCP
+and running VMs (_instances_) on Google Cloud infrastructure. GCP
 and Google Compute Engine use [Identity and Access Management
 (IAM)](https://cloud.google.com/iam/) roles to manage permissions to resources.
 Google Compute engine instances and persistent disks are [zonal
