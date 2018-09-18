@@ -137,7 +137,7 @@ The following flags are used when loading data from an input file:
     <tr>
       <td><code class="highlighter-rouge">--has_header_row</code></td>
       <td>Indicates that the input file contains a header row.</td>
-      <td>If supplied, column names in the header row are used to match column names in the target table in ThoughtSpot. If not supplied, the first row of the file is loaded as data, the same as all subsequent rows.</td>
+      <td>If supplied, column names in the header row are used as column names in the target table in ThoughtSpot. If not supplied, the first row of the file is loaded as data, the same as all subsequent rows".</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">--escape_character "&lt;character&gt;"</code></td>
