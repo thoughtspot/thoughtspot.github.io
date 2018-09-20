@@ -2,21 +2,21 @@
 title: [Change chart colors]
 keywords: tbd
 last_updated: tbd
-summary: "You can easily change the legend colors in a chart."
+summary: "You can change the colors used in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To change the colors used in a chart, you can use the color picker from the
-chart. The color you set is used in:
+To change the colors used in a chart, use the color picker on the chart styles
+panel. You can set colors for:
 
+* bars, lines, areas, bubbles, maps, and other visuals on charts
 * legends on charts
 * tables for conditional formatting
 * tags and editing the colors
 
 To change the chart colors, you need at least one column in the chart's legend.
 If the chart does not have a legend (not all do) and it is a single-measure
-chart, you can [apply a conditional
-format]({{site.baseurl}}/end-user/search/apply-conditional-formatting.html) to
+chart, you can [apply a conditional format]({{site.baseurl}}/end-user/search/apply-conditional-formatting.html) to
 change the color. This type of conditional formatting does not work with Line
 charts.
 
@@ -24,28 +24,23 @@ Colors are maintained across searches within a session. For example, when doing
 a search on revenue by state, each state will keep its color assigned to it even
 if you change the search or chart type.
 
-## Add a column to the legend
+## Set colors
 
-1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
+1. While viewing your search or answer as a chart, click **Edit chart styles** on the right.
 
-     ![]({{ site.baseurl }}/images/edit_chart_configuration_bar.png "Edit chart configuration icon")
+    ![]({{ site.baseurl }}/images/edit_chart_colors_styles.png "Edit chart configuration icon")
 
-2. Make sure you have a column in the **Legend** field.
 
-     ![]({{ site.baseurl }}/images/legend_field.png "Legend field")
+2. On the chart, click the color icon of the label or legend value you would like to change the color of.
 
-## Set a color through the legend
+    ![]({{ site.baseurl }}/images/legend.png "Legend values list")
 
-1. On the chart, click the color icon of the legend value you would like to change the color of.
-
-     ![]({{ site.baseurl }}/images/legend.png "Legend values list")
-
-2. Use the color picker to choose a new color to represent that legend value.
+2. Use the color picker to choose a new color to represent that value.
 
    You can also enter a HEX value directly.
 
      ![]({{ site.baseurl }}/images/color_picker.png "Legend color picker")
 
-3. Click outside of the picker to dismiss the picker.
+     Your changes are saved immediately.
 
-4. **Actions > Save** your changes.
+3. Click the **X** at top right to dismiss the styles panel.
