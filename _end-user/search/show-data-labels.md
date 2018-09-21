@@ -35,10 +35,17 @@ To show data markers:
 
 ## Add regression line
 
+{% include note.html content="To add a regression line, you need a search with only one attribute and one measure. Otherwise, this option will show as disabled; i.e., greyed out on the styles panel. As soon as you modify the search to contain a single measure and attribute, the regression line option will be clickable."%}
+
 1. While viewing your answer as a chart, click **Edit chart styles**.
 2. Select **Show regression line**.
 
-     ![]({{ site.baseurl }}/images/regression-line.png)
+  You can show regression lines on most types of charts (bar, stacked bar, line,
+  bubble, and so on). In the examples below, `sales` is the measure and `department` is
+  the attribute.
+
+  ![]({{ site.baseurl }}/images/regression-line.png)
+  ![]({{ site.baseurl }}/images/regression-line-with-line-chart.png)
 
 ## Display gridlines
 
@@ -85,3 +92,7 @@ funnel/pie/column and so forth. A lock applies for all subsequent answers that
 have the same column set.
 
 ![]({{ site.baseurl }}/images/chart_lock.png "Lock chart")
+
+## Related information
+
+[Change chart colors]({{ site.baseurl }}/end-user/search/change-chart-colors.html)  

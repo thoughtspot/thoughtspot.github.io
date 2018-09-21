@@ -19,6 +19,4 @@ This example shows you how to reorder the x-axis columns.
 
      ![]({{ site.baseurl }}/images/x-axis_column_order.png "Reordering X-Axis columns")
 
-3. Click **Done**.
-
    Your chart reorganizes itself to reflect the new label order.
