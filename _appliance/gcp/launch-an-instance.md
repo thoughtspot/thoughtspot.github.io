@@ -49,7 +49,7 @@ The following topics walk you through this process.
     | Setting       | Value                |
     |------------   | -------------------- |
     | Cores         | `64 vCPU`            |
-    | Memory        | `415 GB`             |
+    | Memory        | `416 GB`             |
     | Extend memory | Enabled (checkmark)  |
     | CPU platform  | `Automatic` (or select one of the preferred CPU platforms, `Intel Skylake` or `Intel Broadwell`, if available)|
 
