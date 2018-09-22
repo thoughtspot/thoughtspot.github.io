@@ -3,7 +3,7 @@ title: [Customize ThoughtSpot Help]
 tags: [customize,help,style]
 keywords: customize
 last_updated: tbd
-summary: "You can brand the ThoughtSpot application for your company."
+summary: "You customize ThoughtSpot Help to be specific to your data, examples, and documentation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
