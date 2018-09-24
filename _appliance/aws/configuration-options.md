@@ -54,11 +54,18 @@ Since the minimum data volume offered is 250 GB, you would need one r4.16xlarge
 block to match the data capacity. This scales linearly. So, 500 GB would require
 two r4.16xlarge blocks.
 
-## Placement groups
+## Regions, availability zones, and placement groups
 
-A placement group is a logical grouping of instances within a single
-availability zone. Placement groups are recommended for applications that
-benefit from low network latency, high network throughput, or both.
+AWS instances are configured to a location with regard to where the computing
+resources are physically located. You must specify a region, an availability
+zone, and below that, a placement group.
+
+AWS nodes in a ThoughtSpot cluster must be in the same [availability zone](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) (and, therefore, also in the same region).
+
+A [placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+is a logical grouping of instances _within_ a single availability zone.
+Placement groups are recommended for applications that benefit from low network
+latency, high network throughput, or both.
 
 ThoughtSpot relies on high connectivity between nodes of a cluster, which is why
 creating a placement group is recommended. Being in same placement group will
@@ -67,11 +74,12 @@ lowest latencies. This will make the node-node network reach the closest AWS
 promised specs. Our default recommendation for a multi-instance setup requires a
 placement group since it works best for our application performance. Also, AWS
 will provide jumbo frames (9000 MTU) support in such situations, and they don't
-charge extra for being in the same placement group. Having said that,
-ThoughtSpot will still work with EC2s in the cluster across placement groups in
-an availability zone.
+charge extra for being in the same placement group.
 
-## Related information:
+Having said that, ThoughtSpot will still work with EC2s in the cluster across
+placement groups in an availability zone.
+
+## Related information
 
 - [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
 - [EC2 pricing](https://aws.amazon.com/ec2/pricing/)
