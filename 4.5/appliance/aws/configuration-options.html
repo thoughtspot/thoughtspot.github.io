@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content="performance,  AWS configuration">
+<meta name="keywords" content="performance,  AWS, configuration">
 <title>AWS configuration options | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/syntax.css">
 
@@ -43,12 +43,12 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“AWS configuration options”]</title>
+<title>[“AWS configuration options”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="[“AWS configuration options”]" />
 <meta property="og:locale" content="en_US" />
@@ -56,12 +56,13 @@
 <meta property="og:description" content="ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability." />
 <link rel="canonical" href="https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html" />
+<meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-08-31T18:07:41-07:00" />
+<meta property="article:published_time" content="2018-09-24T14:41:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2018-08-31T18:07:41-07:00","datePublished":"2018-08-31T18:07:41-07:00","description":"ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2018-09-24T14:41:38-07:00","datePublished":"2018-09-24T14:41:38-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.5/appliance/aws/configuration-options.html"},"description":"ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2915,21 +2916,29 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    2 minutes
+    3 minutes
   
 </span>
 
     
 
-  <p>ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability.</p>
+  <p>ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
+appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block
+Store (EBS) configurations for best performance, load balancing, scalability,
+and reliability.</p>
 
-<p>You can find information here on which configuration of memory, CPU, storage, and networking capacity you should be running for your instances. There are also details on how to configure your placement groups.</p>
+<p>You can find information here on which configuration of memory, CPU, storage,
+and networking capacity you should be running for your instances. There are also
+details on how to configure your placement groups.</p>
 
 <h2 id="hardware-configurations">Hardware configurations</h2>
 
-<p>There is only one available hardware configuration for deploying ThoughtSpot on Amazon: <code class="highlighter-rouge">r4.16xlarge</code></p>
+<p>There is only one available hardware configuration for deploying ThoughtSpot on
+Amazon: <code class="highlighter-rouge">r4.16xlarge</code></p>
 
-<p>Below are charts depicting the specifications for the configuration for EC2 and EBS requirements. Both EC2 and EBS requirements must be fulfilled to deploy on Amazon.</p>
+<p>Below are charts depicting the specifications for the configuration for EC2 and
+EBS requirements. Both EC2 and EBS requirements must be fulfilled to deploy on
+Amazon.</p>
 
 <table>
   <thead>
@@ -2971,23 +2980,49 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="thoughtspot-software-license-sizes">ThoughtSpot software license sizes</h2>
 
-<p>ThoughtSpot only sells software licenses in multiples of 250 GB of data. So you can start with 250 GB, and add increments of 250 GB each time your data capacity needs increase. You can also choose to start off with more than 250 GB of data, as long as you know the best fit configuration for your data volume.</p>
+<p>ThoughtSpot only sells software licenses in multiples of 250 GB of data. So you
+can start with 250 GB, and add increments of 250 GB each time your data capacity
+needs increase. You can also choose to start off with more than 250 GB of data,
+as long as you know the best fit configuration for your data volume.</p>
 
 <h2 id="lego-blocks">Lego blocks</h2>
 
-<p>If you aren’t sure what kind of configuration you need, it might help to think of the hardware configurations in terms of simple Lego blocks. The r4.16xlarge size can be seen as a 250 GB block.</p>
+<p>If you aren’t sure what kind of configuration you need, it might help to think
+of the hardware configurations in terms of simple Lego blocks. The r4.16xlarge
+size can be seen as a 250 GB block.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot does not support sizes other than r4.16xlarge.</div>
 
-<p>Since the minimum data volume offered is 250 GB, you would need one r4.16xlarge block to match the data capacity. This scales linearly. So, 500 GB would require two r4.16xlarge blocks.</p>
+<p>Since the minimum data volume offered is 250 GB, you would need one r4.16xlarge
+block to match the data capacity. This scales linearly. So, 500 GB would require
+two r4.16xlarge blocks.</p>
 
-<h2 id="placement-groups">Placement groups</h2>
+<h2 id="regions-availability-zones-and-placement-groups">Regions, availability zones, and placement groups</h2>
 
-<p>A placement group is a logical grouping of instances within a single availability zone. Placement groups are recommended for applications that benefit from low network latency, high network throughput, or both.</p>
+<p>AWS instances are configured to a location with regard to where the computing
+resources are physically located. You must specify a region, an availability
+zone, and below that, a placement group.</p>
 
-<p>ThoughtSpot relies on high connectivity between nodes of a cluster, which is why creating a placement group is recommended. Being in same placement group will give you the best shot at the highest bandwidth across AWS EC2 instances and the lowest latencies. This will make the node-node network reach the closest AWS promised specs. Our default recommendation for a multi-instance setup requires a placement group since it works best for our application performance. Also, AWS will provide jumbo frames (9000 MTU) support in such situations, and they don’t charge extra for being in the same placement group. Having said that, ThoughtSpot will still work with EC2s in the cluster across placement groups in an availability zone.</p>
+<p>AWS nodes in a ThoughtSpot cluster must be in the same <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html">availability zone</a> (and, therefore, also in the same region).</p>
 
-<h2 id="related-information">Related information:</h2>
+<p>A <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html">placement group</a>
+is a logical grouping of instances <em>within</em> a single availability zone.
+Placement groups are recommended for applications that benefit from low network
+latency, high network throughput, or both.</p>
+
+<p>ThoughtSpot relies on high connectivity between nodes of a cluster, which is why
+creating a placement group is recommended. Being in same placement group will
+give you the best shot at the highest bandwidth across AWS EC2 instances and the
+lowest latencies. This will make the node-node network reach the closest AWS
+promised specs. Our default recommendation for a multi-instance setup requires a
+placement group since it works best for our application performance. Also, AWS
+will provide jumbo frames (9000 MTU) support in such situations, and they don’t
+charge extra for being in the same placement group.</p>
+
+<p>Having said that, ThoughtSpot will still work with EC2s in the cluster across
+placement groups in an availability zone.</p>
+
+<h2 id="related-information">Related information</h2>
 
 <ul>
   <li><a href="https://aws.amazon.com/ec2/instance-types/">EC2 instance types</a></li>
@@ -3027,7 +3062,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 31, 2018 <br />
+        Generated: Sep 24, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
