@@ -13,10 +13,18 @@ You can filter a chart in two ways:
 
 To add a filter from the chart axes:
 
-1. While viewing your answer as a chart, click the chart axis you want to filter on, and select **Filter**.
+1. While viewing your answer as a chart, click the chart axis you want to filter on, and select **Filter...**.
 
      ![]({{ site.baseurl }}/images/filter_by_chart_axis.png "Choose filter from a chart axis")
 
-2. Select the values you would like to include in your answer. Then click **Done**.
+2. Select the values you would like to include in your answer.
 
-     ![]({{ site.baseurl }}/images/filter_menu_chart_axis.png "Axis filters value box")
+     ![]({{ site.baseurl }}/images/filter_menu_chart_axis.png "Axis filters include value box")
+
+3. If you want to exclude values, click **Exclude** and choose values to exclude.
+
+     ![]({{ site.baseurl }}/images/filter_chart_exclude.png "Axis filters exclude value box")
+
+4. Click **ADD FILTER**.
+
+If there are too many values, you can use the filter search bar to find the ones you want.
