@@ -10,8 +10,6 @@ permalink: /:collection/:path.html
 
 ## Videos new in 4.5
 
-<br /><br />
-
 <div class="component-container">
     <!--start row-->
     <div class="row">
