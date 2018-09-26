@@ -10,9 +10,6 @@ permalink: /:collection/:path.html
 
 ## Videos new in 4.5
 
-We are adding new videos frequently, please check back often!
-<br /><br />
-
 <div class="component-container">
     <!--start row-->
     <div class="row">
@@ -74,7 +71,6 @@ We are adding new videos frequently, please check back often!
         <p>
         How to do comparative analysis in ThoughtSpot using the <b>versus</b> (or <b>vs</b>) keyword in the Search bar.
         </p>
-
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
@@ -92,9 +88,46 @@ We are adding new videos frequently, please check back often!
 
 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/ax6dbi47ux.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_ax6dbi47ux popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Period Ago and Time Analysis</b></p>
+        <p>
+        Work with the <b>ago</b> keyword to analyze and compare time series data from different periods.
+        </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="component-container">
+    <!--start row-->
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/zwm15hcjtb.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_zwm15hcjtb popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Top <i>n</i></b></p>
+        <p>
+        Identify <b>top</b> or <b>bottom</b> performers using the associated keywords.
+        </p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
 
         </div>
 
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+
+        </div>
 
     </div>
 </div>
