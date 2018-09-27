@@ -48,7 +48,7 @@ permalink: /:collection/:path.html
         </div>
         <p style="text-align: center;"><b>Use Formulas to Create Custom Fields</b></p>
         <p>
-        How to add a formula at the search bar to create a custom column based on another field in your data.
+        How to add a formula to create a custom column based on another field in your data.
         </p>
         </div>
 
@@ -96,7 +96,7 @@ permalink: /:collection/:path.html
         </div>
         <p style="text-align: center;"><b>Period Ago and Time Analysis</b></p>
         <p>
-        Work with the <b>ago</b> keyword to analyze and compare time series data from different periods.
+        How to analyze and compare time series data from different periods.
         </p>
         </div>
 
