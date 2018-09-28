@@ -167,7 +167,7 @@ the custom feedback contact, do the following:
 3. Verify the email address was set:
 
     ```
-    $ tscli feedback show-feedback-email
+    $ tscli support show-feedback-email
     ```
 
 If you need to reset the email to the default (ThoughtSpot support), issue:
