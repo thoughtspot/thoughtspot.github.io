@@ -162,7 +162,7 @@ the custom feedback contact, do the following:
 2. To set the feedback email address, do the following:
 
     ```
-    $ tscli feedback set-feedback-email <email_address>
+    $ tscli support set-feedback-email <email_address>
     ```
 3. Verify the email address was set:
 
@@ -173,14 +173,14 @@ the custom feedback contact, do the following:
 If you need to reset the email to the default (ThoughtSpot support), issue:
 
 ```
-$ tscli feedback rm-feedback-email
+$ tscli support rm-feedback-email
 ```
 
 You can also choose not to send feedback out of your system at all by doing the
 following:
 
 ```
-$ tscli feedback set-feedback-email ' '
+$ tscli support set-feedback-email ' '
 ```
 
 ## How users find your company's support contact
