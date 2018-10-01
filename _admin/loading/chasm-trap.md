@@ -14,7 +14,7 @@ This is known as a chasm trap, and ThoughtSpot can handle it!
 ## Understand how chasm traps occur
 
 A fact table, just as it sounds, stores facts about your business. If you are
-selling applies, the sales fact table has facts about these apples.
+selling apples, the sales fact table has facts about these apples.
 
 | SaleID  | AppleTypeID  | StoreID  |  Units Sold |
 |---|---|---|---|
