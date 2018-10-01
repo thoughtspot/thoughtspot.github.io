@@ -11,7 +11,7 @@ There is a schema viewer in ThoughtSpot which lets you see your database schema
 in the web browser. The Schema Viewer is interactive, so you can configure it to
 show just what you want to see.
 
-You need **Admin** or **Data Management** privilege to use the **Schema Viewer**.
+You need **Admin** privileges to use the **Schema Viewer**.
 
 ## Bringing up the Schema Viewer
 
