@@ -19,16 +19,3 @@ See [About the REST API]({{ site.baseurl
 }}/app-integrate/data-api/about-data-api.html#) for information on how to call
 and use the REST APIs.
 
-## Interactive Swagger rest browser
-
-Your ThoughtSpot installation has an interactive REST browser application built
-in.  You can view the Swagger content at:
-
-`https://<instance_name>/external/swagger/#/`
-
-You can use the instance to review API documentation and test the APIs before
-using them in an application.
-
-{% include warning.html content="The Swagger browser application reveals both
-private and public APIs. You should not use the private APIs, their signature
-can change without warning breaking your application." %}
