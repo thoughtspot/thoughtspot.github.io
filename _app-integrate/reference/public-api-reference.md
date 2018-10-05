@@ -19,6 +19,7 @@ See [About the REST API]({{ site.baseurl
 }}/app-integrate/data-api/about-data-api.html#) for information on how to call
 and use the REST APIs.
 
+<!-- HIDE THIS UNTIL PUBLIC AND PRIVATE APIs are separated
 ## Interactive Swagger rest browser
 
 Your ThoughtSpot installation has an interactive REST browser application built
@@ -32,3 +33,4 @@ using them in an application.
 {% include warning.html content="The Swagger browser application reveals both
 private and public APIs. You should not use the private APIs, their signature
 can change without warning breaking your application." %}
+-->
