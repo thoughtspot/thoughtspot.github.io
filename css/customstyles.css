@@ -629,7 +629,7 @@ table.dataTable thead {
     background-color: #444;
 }
 table td {
-    hyphens: auto;
+    hyphens: none;
 }
 
 section table tr.success {
