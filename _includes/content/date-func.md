@@ -43,7 +43,7 @@
     <tr>
        <td><code>day_number_of_week</code></td>
         <td>Returns the number (1-7) of the day in a week for a given date with 1 being Monday and 7 being Sunday.</td>
-       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014)  3</code><br>
+       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014) = 3</code><br>
        <code class="highlighter-rouge">day_number_of_week (shipped)</code><br>
        </td>
     </tr>
@@ -109,7 +109,7 @@
         calculate the result. Default is 'calendar'. (In examples, start of fiscal year
         is set to May 01.)
        </td>
-       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) = 9 </code><br>
+       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) = 2 </code><br>
        <code class="highlighter-rouge">month_number_of_quarter (02/20/2018,'fiscal' ) = 1</code></td>
     </tr>
     <tr>
@@ -199,8 +199,15 @@
     </tr>
     <tr>
       <td><code>year</code></td>
-      <td>Returns the year from the given date.</td>
-      <td><code class="highlighter-rouge">year (01/15/2014) = 2014</code><br><code class="highlighter-rouge">year (date ordered)</code></td>
+      <td>
+      Returns the year from a given date. Add an optional second parameter to specify
+      whether a 'fiscal' or 'calendar' year is used to calculate the result. Default
+      is 'calendar'. (In examples, start of fiscal year is set to May 01.)
+      </td>
+      <td>
+      <code class="highlighter-rouge">year (01/15/2014) = 2014</code><br>
+      <code class="highlighter-rouge">year (01/15/2014, 'fiscal') = 2013</code><br>
+      <code class="highlighter-rouge">year (date ordered)</code></td>
     </tr>
   </tbody>
 </table>
