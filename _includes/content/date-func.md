@@ -28,24 +28,36 @@
       <td><code class="highlighter-rouge">day (01/15/2014) = 15</code><br><code class="highlighter-rouge">day (date ordered)</code></td>
     </tr>
     <tr>
-      <td><code>day_number_of_week</code></td>
-      <td>Returns the number (1-7) of the day in a week for the given date with 1 being Monday and 7 being Sunday.</td>
-      <td><code class="highlighter-rouge">day_number_of_week (01/30/2015) = 6</code><br><code class="highlighter-rouge">day_number_of_week (shipped)</code></td>
-    </tr>
-    <tr>
        <td><code>day_number_of_quarter</code></td>
-       <td>Returns the number of the day in a quarter for a given date.</td>
-       <td><code class="highlighter-rouge">day_number_of_quarter (01/30/2015)</code></td>
+       <td>
+        Returns the number of the day in a quarter for a given date. Add an optional
+        second parameter to specify whether a 'fiscal' or 'calendar' year is used to
+        calculate the result. Default is 'calendar'. (In examples, start of fiscal year
+        is set to May 01.)
+       </td>
+       <td>
+       <code class="highlighter-rouge">day_number_of_quarter (01/30/2015) = 30</code><br>
+       <code class="highlighter-rouge">day_number_of_quarter (01/30/2015, 'fiscal') = 91</code><br>
+       </td>
     </tr>
     <tr>
        <td><code>day_number_of_week</code></td>
-        <td>Returns the number of the day in a week for a given date.</td>
-       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014) > 3</code></td>
+        <td>Returns the number (1-7) of the day in a week for a given date with 1 being Monday and 7 being Sunday.</td>
+       <td><code class="highlighter-rouge">day_number_of_week(01/15/2014)  3</code><br>
+       <code class="highlighter-rouge">day_number_of_week (shipped)</code><br>
+       </td>
     </tr>
     <tr>
       <td><code>day_number_of_year</code></td>
-      <td>Returns the number (1-366) of the day in a year for the given date.</td>
-      <td><code class="highlighter-rouge">day_number_of_year (01/30/2015) = 30</code><br><code class="highlighter-rouge">day_number_of_year (invoiced)</code></td>
+      <td>
+      Returns the number (1-366) of the day in a year from a given date. Add an
+      optional second parameter to specify whether a 'fiscal' or 'calendar' year is
+      used to calculate the result. Default is 'calendar'. (In examples, start of
+      fiscal year is set to May 01.)
+      </td>
+      <td><code class="highlighter-rouge">day_number_of_year (01/30/2015) = 30</code><br>
+      <code class="highlighter-rouge">day_number_of_year ( 01/30/2015, 'fiscal' ) = 275</code><br>
+      <code class="highlighter-rouge">day_number_of_year (invoiced)</code></td>
     </tr>
     <tr>
       <td><code>day_of_week</code></td>
@@ -79,18 +91,42 @@
     </tr>
     <tr>
       <td><code>month_number</code></td>
-      <td>Returns the number (1-12) of the month for the given date.</td>
-      <td><code class="highlighter-rouge">month_number (09/20/2014) = 9</code><br><code class="highlighter-rouge">month_number (purchased)</code></td>
+      <td>
+        Returns the number (1-12) of the month from a given date. Add an optional second
+        parameter to specify whether a 'fiscal' or 'calendar' year is used to calculate
+        the result. Default is 'calendar'. (In examples, start of fiscal year is set to
+        May 01.)
+      </td>
+      <td><code class="highlighter-rouge">month_number (09/20/2014) = 9</code><br>
+      <code class="highlighter-rouge">month_number ( 09/20/2014, 'fiscal' ) = 5</code><br>
+      <code class="highlighter-rouge">month_number (purchased)</code></td>
     </tr>
     <tr>
        <td><code>month_number_of_quarter</code></td>
-       <td>Returns the month (1-12) number for the given date in a quarter.</td>
-       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) > 9 </code></td>
+       <td>
+        Returns the month (1-12) number for the given date in a quarter. Add an optional
+        second parameter to specify whether a 'fiscal' or 'calendar' year is used to
+        calculate the result. Default is 'calendar'. (In examples, start of fiscal year
+        is set to May 01.)
+       </td>
+       <td><code class="highlighter-rouge">month_number_of_quarter (02/20/2018) = 9 </code><br>
+       <code class="highlighter-rouge">month_number_of_quarter (02/20/2018,'fiscal' ) = 1</code></td>
     </tr>
     <tr>
       <td><code>now</code></td>
       <td>Returns the current timestamp.</td>
       <td><code class="highlighter-rouge">now ()</code></td>
+    </tr>
+    <tr>
+       <td><code>quarter_number</code></td>
+       <td>
+        Returns the number (1-4) of the quarter associated with the given date. Add an
+        optional second parameter to specify 'fiscal' or 'calendar' dates. Default is
+        'calendar'. (In examples, start of fiscal year is set to May 01.)
+       </td>
+       <td><code class="highlighter-rouge">quarter_number ( 04/14/2014) = 2 </code><br>
+       <code class="highlighter-rouge">quarter_number ( 04/14/2014, 'fiscal' ) = 4</code><br>
+       <code class="highlighter-rouge">quarter_number ( shipped )</code></td>
     </tr>
     <tr>
       <td><code>start_of_month</code></td>
@@ -99,8 +135,15 @@
     </tr>
     <tr>
       <td><code>start_of_quarter</code></td>
-      <td>Returns the date for the first day of the quarter for the given date.</td>
-      <td><code class="highlighter-rouge">start_of_quarter ( 09/18/2015 ) = Q3 FY 2015</code><br><code class="highlighter-rouge">start_of_quarter (sold)</code></td>
+      <td>
+      Returns the date for the first day of the quarter for the given date. Add an
+      optional second parameter to specify whether a 'fiscal' or 'calendar' year is
+      used to calculate the result. Default is 'calendar'. (In examples, start of
+      fiscal year is set to May 01.)
+      </td>
+      <td><code class="highlighter-rouge">start_of_quarter ( 04/01/2014) = Apr 2014</code><br>
+      <code class="highlighter-rouge">start_of_quarter ( 04/01/2014, 'fiscal') = Feb 2014</code><br>
+      <code class="highlighter-rouge">start_of_quarter (sold)</code></td>
     </tr>
     <tr>
       <td><code>start_of_week</code></td>
@@ -109,8 +152,16 @@
     </tr>
     <tr>
       <td><code>start_of_year</code></td>
-      <td>Returns the date for the first day of the year for the given date.</td>
-      <td><code class="highlighter-rouge">start_of_year ( 02/15/2015 ) = FY 2015</code><br><code class="highlighter-rouge">start_of_year (joined)</code></td>
+      <td>
+      Returns the date for the first day of the year for the given date. Add an
+      optional second parameter to specify whether a 'fiscal' or 'calendar' year is
+      used to calculate the result. Default is 'calendar'. (In examples, start of
+      fiscal year is set to May 01.)
+      </td>
+      <td>
+      <code class="highlighter-rouge">start_of_year (04/01/2014) returns Jan 2014</code><br>
+      <code class="highlighter-rouge">start_of_year (04/01/2014, 'fiscal') returns May 2013</code><br>
+      <code class="highlighter-rouge">start_of_year (joined)</code></td>
     </tr>
     <tr>
       <td><code>time</code></td>
@@ -124,13 +175,27 @@
     </tr>
     <tr>
        <td><code>week_number_of_quarter</code></td>
-       <td>Returns the week number for the given date in a quarter.</td>
-       <td><code class="highlighter-rouge">week_number_of_quarter(04/03/2017)> 2 </code></td>
+       <td>
+        Returns the week number for the given date in a quarter. Add an optional second
+        parameter to specify whether a 'fiscal' or 'calendar' year is used to calculate
+        the result. Default is 'calendar'. (In examples, start of fiscal year is set to
+        May 01.)
+       </td>
+       <td><code class="highlighter-rouge">week_number_of_quarter (04/03/2017) = 1</code><br>
+       <code class="highlighter-rouge">week_number_of_quarter (04/03/2017, 'fiscal') = 10</code></td>
     </tr>
     <tr>
        <td><code>week_number_of_year</code></td>
-       <td>Returns the week number for the given date in a year.</td>
-       <td><code class="highlighter-rouge">week_number_of_year(04/03/2017) = 20 </code></td>
+       <td>
+        Returns the week number for the given date in a year. Add an optional second
+        parameter to specify whether a 'fiscal' or 'calendar' year is used to calculate
+        the result. Default is 'calendar'. (In examples, start of fiscal year is set to
+        May 01.)
+       </td>
+       <td>
+       <code class="highlighter-rouge">week_number_of_year (01/17/2014) = 3</code><br>
+       <code class="highlighter-rouge">week_number_of_year ( 01/17/2014, 'fiscal') = 38</code>
+       </td>
     </tr>
     <tr>
       <td><code>year</code></td>
