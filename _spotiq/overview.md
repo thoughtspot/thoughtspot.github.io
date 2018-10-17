@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 This 101 walks you through a few simple, SpotIQ workflows. When you have
-completed the walk through you will be able to use the core features of SpotIQ
+completed the walkthrough, you will be able to use the core features of SpotIQ
 in your ThoughtSpot installation.
 
 If you want a detailed overview of what SpotIQ does before you try it out,
