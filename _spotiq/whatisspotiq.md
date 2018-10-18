@@ -29,7 +29,7 @@ If you can't see this option, ask your ThoughtSpot Administrator to give you the
 
 ## Where to find SpotIQ actions
 
-The **SpotIQ** page shows you the all the analysis results in the system you
+The **SpotIQ** page shows you all the analysis results in the system you
 have access to, these results are called SpotIQ _insights_. You can create your
 own results from several different locations in your system:
 
