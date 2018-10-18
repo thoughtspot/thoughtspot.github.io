@@ -248,15 +248,22 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
    $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
-   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
+   DEVICE=eth0
+   ONBOOT=yes
+   BOOTPROTO=dhcp
+   HWADDR=<Add eth0 MAC>
+   TYPE=Ethernet
+   USERCTL=no
+   PEERDNS=yes
+   IPV6INIT=no
    ```
 
 3. Do not reboot any of the nodes, until these changes are made to each node:
 
-   a. Open the grub file  /update/etc/default/grub in an editor:
+   a. Open the file /etc/default/grub in an editor:
 
       ```
-      $ sudo vi /update/etc/default/grub
+      $ sudo vi /etc/default/grub
       ```
 
    b. Change the line:
@@ -271,12 +278,13 @@ keep a backup to copy after any subsequent cluster creation or update." %}
       ```
 
     c. Save your changes.
+    d. cp -pv /etc/default/grub /update/etc/default/grub
 
 4. Issue these commands:
 
    ```
-   $ sudo cp /update/etc/default/grub /etc/default/
    $ rm /usr/local/scaligent/bin/setup-net-devices.sh
    ```
 
-5. Reboot the nodes.
+5. Reboot the nodes and connect via ssh to prove connectivity.
+6. Contact ThoughtSpot SRE to proceed with post-installation tasks.
