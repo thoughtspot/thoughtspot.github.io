@@ -120,13 +120,33 @@ permalink: /:collection/:path.html
         </p>
         </div>
 
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
 
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/0598zcls9y.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_0598zcls9y popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Pivot Table Basics</b></p>
+        <p>
+        Summarize, rearrange, sort, and filter data in a ThoughtSpot pivot table.
+        </p>
         </div>
 
-
         <div class="col-sm-12 col-md-12 col-lg-4 block">
-
+        <script src="https://fast.wistia.com/embed/medias/kb7uok6mys.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_kb7uok6mys popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Working with Filters</b></p>
+        <p>
+        Use filters to narrow the scope of search results to specific measures, ranges, and attributes.
+        </p>
         </div>
 
     </div>
