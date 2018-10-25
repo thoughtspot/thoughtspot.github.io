@@ -104,7 +104,7 @@
     <tr>
        <td><code>month_number_of_quarter</code></td>
        <td>
-        Returns the month (1-12) number for the given date in a quarter. Add an optional
+        Returns the month (1-3) number for the given date in a quarter. Add an optional
         second parameter to specify whether a 'fiscal' or 'calendar' year is used to
         calculate the result. Default is 'calendar'. (In examples, start of fiscal year
         is set to May 01.)
