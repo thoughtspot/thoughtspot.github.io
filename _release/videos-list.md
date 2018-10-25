@@ -152,6 +152,45 @@ permalink: /:collection/:path.html
     </div>
 </div>
 
+<div class="component-container">
+    <!--start row-->
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/h6pd8ycl7e.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_h6pd8ycl7e popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Working with Pinboards</b></p>
+        <p>
+        Drill down, sort, re-organize, and filter on collections of data visualizations on Pinboards.
+        </p>
+        </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/n5otpkcsy8.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_n5otpkcsy8 popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Uploading Data</b></p>
+        <p>
+        Upload and work with custom data in ThoughtSpot CSV files and spreadsheets.
+        </p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+
+        </div>
+
+    </div>
+</div>
+
 ## Videos from the 4.4 release cycle
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
