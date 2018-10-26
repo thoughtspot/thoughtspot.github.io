@@ -262,21 +262,6 @@ entries:
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
         output: web,ugBk
-    - levelTwoTitle: Work with worksheets
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand worksheets
-        url: /complex-search/about-query-on-query.html
-        output: web,ugBk
-      - title: Save a search as a worksheet
-        url: /complex-search/create-aggregated-worksheet.html
-        output: web,ugBk
-      - title: Create a search from a worksheet
-        url: /complex-search/do-query-on-query.html
-        output: web,ugBk
-      - title: Worksheet example scenarios
-        url: /complex-search/more-example-scenarios.html
-        output: web,ugBk
     - levelTwoTitle: Use pinboards
       output: web,ugBk
       levelTwoItems:
@@ -628,6 +613,21 @@ entries:
       - title: Delete a worksheet or table
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
+    - levelTwoTitle: Work with views
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand views
+        url: /complex-search/about-query-on-query.html
+        output: web,ugBk
+      - title: Save a search as a view
+        url: /complex-search/create-aggregated-worksheet.html
+        output: web,ugBk
+      - title: Create a search from a view
+        url: /complex-search/do-query-on-query.html
+        output: web,ugBk
+      - title: View example scenarios
+        url: /complex-search/more-example-scenarios.html
+        output: web,ugBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:

@@ -1,11 +1,11 @@
 ---
-title: [Search from an aggregated worksheet]
+title: [Create a search from a view]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After creating a worksheet from a search (also called an aggregated worksheet) and linking it to related data, you're ready to create your new search. To do a search on the aggregated worksheet, along with any data sources you linked:
+After creating a view and linking it to related data, you're ready to create your new search. To do a search on the view, along with any data sources you linked:
 
 1. Click the search icon, and select **Data Source**. Choose your linked sources.
 
@@ -20,6 +20,6 @@ After creating a worksheet from a search (also called an aggregated worksheet) a
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-7. Choose both views using **Choose Sources**.
+7. Choose your view and any other tables it is linked to using **Choose Sources**.
 8. You may need to rename some columns appropriately for searching.
 9. Share the worksheet with the appropriate users and groups.
