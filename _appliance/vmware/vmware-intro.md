@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 Congratulations on purchasing the ThoughtSpot instance. This section is an
 overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
-VSphere Hypervisor (ESXi) 6.5 environment.
+vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot on VMware
 
@@ -39,7 +39,7 @@ minimum specifications for an individual VMware ESXi host machine:
 * 3X 2TB Hard disks (6TB in total in hard disk space)
 * 80 Cores
 
-All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
+All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
 ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes

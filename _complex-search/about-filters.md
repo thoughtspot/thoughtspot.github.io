@@ -77,3 +77,8 @@ You can [create a bulk filter]({{ site.baseurl
 }}/complex-search/create-bulk-filter.html) by pasting a list of values,
 separated by commas, semicolons, new lines, or tabs, into the bulk filter box.
 This allows you to easily search a large list of filters repeatedly.
+
+## Cascading filters
+
+If you want to apply a table filter wherever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
+When columns from that table are applied in a search, the table filter is implicitly applied to the search. The filter is invisible in the search bar, but visible from the filter bar.
