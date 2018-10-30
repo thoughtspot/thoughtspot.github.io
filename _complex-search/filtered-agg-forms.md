@@ -134,3 +134,9 @@ Other supported formats you can try:
 * `sales monthly accessory6 vs last year`
 * `sales staples file caddy vs all monthly` answers what the share of sales belonging to the file caddy by month
 * `sales (germany ariel vs laundry) july 2017 time` answers what is the category share of Germany Ariel for July 17?
+
+## Flexible aggregation for filters
+
+The `group_aggregate` function gives you more control over aggregation and filtering.
+
+See [Flexible aggregation](aggregation-flexible.html#) to learn more about specifying `query_filters` with this formula.

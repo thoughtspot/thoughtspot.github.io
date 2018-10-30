@@ -87,3 +87,9 @@ The group aggregation functions are the following:
     </td>
   </tr>
 </table>
+
+## Flexible aggregation
+
+The `group_aggregate` function gives you more control over aggregation and filtering.
+
+See [Flexible aggregation](aggregation-flexible.html#) to learn more about specifying `query_groups` with this formula.
