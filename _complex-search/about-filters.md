@@ -7,8 +7,7 @@ summary: "Filters narrow down the search result to only include the data you wan
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you add a value to your search, it becomes a filter. You can define filters on tables, views and worksheets. When you add a filter, it is applied to the table, view, or worksheet, so the result set only shows rows that satisfy a set of parameters specified in the filter.
-
+When you add a value to your search, it becomes a filter. You can define filters on tables, views and worksheets. When you add a filter, it is applied to the table, view, or worksheet, so the result set only shows rows that satisfy a set of parameters specified in the filter. You can also set filters that are automatically used in every search you perform using a particular data source. For example, you can exclude inactive customers records from your search result set. To avoid typing `status = inactive` with every search you perform, you can use a filter. 
 
 To add a filter from the search bar:
 
@@ -83,5 +82,7 @@ This allows you to easily search a large list of filters repeatedly.
 
 ## Cascading filters
 
-If you want to apply a table filter wherever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
+If you want to apply a table filter whenever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
 When columns from that table are applied in a search, the table filter is implicitly applied to the search. The filter is invisible in the search bar, but visible from the filter bar.
+
+Consider a table with a filter that is used in a worksheet. When a search uses that worksheet, it is as though the filter is added to the search.
