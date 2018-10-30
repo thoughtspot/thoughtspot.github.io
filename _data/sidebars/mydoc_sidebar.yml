@@ -244,6 +244,9 @@ entries:
         - title: Filtered aggregation functions
           url: /complex-search/filtered-agg-forms.html
           output: web,ugBk
+        - title: Flexible aggregation functions
+          url: /complex-search/aggregation-flexible.html
+          output: web,ugBk
       - title: Conversion functions
         url: /complex-search/conversion-formulas.html
         output: web,ugBk

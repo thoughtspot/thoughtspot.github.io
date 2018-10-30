@@ -49,6 +49,13 @@ advanced aggregation functions are:
 
 Data from any rows that are not included in the search result will not be incorporated, and you cannot create a filter on aggregated data.
 
+## Flexible aggregation
+
+The `group_aggregate` function makes it possible to aggregate measures at granularities that are
+different from the dimensions or column groupings used in the search.
+
+See [Flexible aggregation](aggregation-flexible.html#) to learn more about working with this formula.
+
 ## Using division with aggregation in a search
 
 Whenever your search result combines rows, your formula will get aggregated

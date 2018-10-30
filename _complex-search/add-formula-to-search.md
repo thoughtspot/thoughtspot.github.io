@@ -30,3 +30,7 @@ Conditional formulas, or operators, allow you to apply `if`/`then`/`else` condit
 Nested formulas, or formula on formula, allow you to reference a formula within another formula.
 -   **[About formula support for chasm trap schemas]({{ site.baseurl }}/complex-search/about-formula-support-for-chasm-trap-schemas.html)**  
 You can create a formula that involves aggregated measures coming from multiple fact tables of a chasm trap.
+
+Text formulas are also available. These are covered in the comprehensive
+**[Formula function reference]({{ site.baseurl }}/reference/formula-reference.html)**,
+which provides brief descriptions and examples for all types of formulas. The above topics explain concepts and give step-by-step instructions of how to work with formulas, whereas the reference is a quick cheat sheet.
