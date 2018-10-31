@@ -83,6 +83,6 @@ This allows you to easily search a large list of filters repeatedly.
 ## Cascading filters
 
 If you want to apply a table filter whenever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
-When columns from that table are applied in a search, the table filter is implicitly applied to the search. The filter is invisible in the search bar, but visible from the filter bar.
+When columns from that table are applied in a search, the table filter is implicitly applied to the search. All worksheet filters are accessible from the query visualizer.
 
 Consider a table with a filter that is used in a worksheet. When a search uses that worksheet, it is as though the filter is added to the search.
