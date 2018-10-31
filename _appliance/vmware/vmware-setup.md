@@ -22,9 +22,9 @@ for a sandbox environment but is insufficient for a production environment.
 
 1. Make sure you have installed the Hypervisor on each of your three nodes.
 
-   The VM template, by default, captures a 38-core configuration. If your
-   physical host has more than 40 cores, you may want to edit VM to have (`n-2`)
-   cores (for a physical host with n cores) to fully take advantage of computing
+   The VM template, by default, captures a 72-core configuration. If your
+   physical host has more than 72 cores, you may want to edit the VM to have (`n-2`)
+   cores (for a physical host with _n_ cores) to fully take advantage of computing
    power of the physical host.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.

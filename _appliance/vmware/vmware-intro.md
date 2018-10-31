@@ -36,7 +36,7 @@ minimum specifications for an individual VMware ESXi host machine:
 * 512GB Memory
 * 200GB SSD
 * 3X 2TB Hard disks (6TB in total in hard disk space)
-* 40 Cores
+* 80 Cores
 
 All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
 
