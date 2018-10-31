@@ -67,3 +67,9 @@ your view slow or error prone.
 
 You can use an ETL (extract, transform, load) process to circumvent these
 limitations.
+
+## Related Information
+
+-   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html)  
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
+-   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html)
