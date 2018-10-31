@@ -235,17 +235,17 @@ entries:
         - title: Cumulative functions
           url: /complex-search/about-cumulative-formulas.html
           output: web,ugBk
-        - title: Grouping functions
-          url: /complex-search/about-pinned-measures.html
-          output: web,ugBk
         - title: Moving functions
           url: /complex-search/about-moving-formulas.html
           output: web,ugBk
-        - title: Filtered aggregation functions
-          url: /complex-search/filtered-agg-forms.html
-          output: web,ugBk
         - title: Flexible aggregation functions
           url: /complex-search/aggregation-flexible.html
+          output: web,ugBk
+        - title: Grouping functions
+          url: /complex-search/about-pinned-measures.html
+          output: web,ugBk
+        - title: Filtered aggregation functions
+          url: /complex-search/filtered-agg-forms.html
           output: web,ugBk
       - title: Conversion functions
         url: /complex-search/conversion-formulas.html

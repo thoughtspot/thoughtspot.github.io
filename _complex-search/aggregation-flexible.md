@@ -25,7 +25,7 @@ The aggregation formulas are described in [Overview of aggregate formulas](aggre
 ## About flexible aggregation
 
 Starting with version 5.0, ThoughtSpot provides for more flexible aggregation
-capability with a new formula called `group_aggregate`. You can use this formula
+capability with a new function called `group_aggregate`. You can use this formula
 to pin columns in a query at a granularity different from the search bar query,
 using custom groupings and filters, rather than being bound to those of the
 search terms/columns.
@@ -62,6 +62,11 @@ creation time. You can use `+/-` to modify the set of groups included from
 the query.
 
 {% include note.html content="`+/-` is currently supported only for  `query_groups`, not `query_filters`."%}
+
+## Groups and filters
+
+These formulas allow for flexibility in both groupings and filters. The formulas
+give you the ability to specify only groupings or only filters.
 
 ## Where to learn more
 
