@@ -32,12 +32,12 @@ ThoughtSpot VMs as your dataset size grows.
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform on VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-minimum specifications for an individual VMware ESXi host machine:
+_minimum specifications_ for an individual VMware ESXi host machine:
 
 * 512GB Memory
 * 200GB SSD
 * 3X 2TB Hard disks (6TB in total in hard disk space)
-* 80 Cores
+* 64 Hyper-threaded Cores
 
 All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
 
