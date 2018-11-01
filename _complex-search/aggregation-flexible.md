@@ -32,7 +32,7 @@ search terms/columns.
 
 The formula uses a sub-query to perform the custom aggregation. If the sub-query
 is at a courser grain, result column is simply added to the result of original
-query. Roll-up or _re-aggregation_ is used when the sub-query is at a finer grain than the
+query. Roll-up or _reaggregation_ is used when the sub-query is at a finer grain than the
 original query
 
 This is particularly useful for comparison analysis.
@@ -41,7 +41,7 @@ You can specify to use the groups and filters from the query with `query_groups`
 `query_filters`, respectively, and for `query_groups` you can also add or exclude
 some groups or filters.
 
-You can use roll-up or re-aggregation to fill in a column.
+You can use roll-up or reaggregation to fill in a column.
 
 ## Examples
 
@@ -63,7 +63,7 @@ the query.
 
 {% include note.html content="`+/-` is currently supported only for  `query_groups`, not `query_filters`."%}
 
-## Using re-aggregation when group formula results are finer-grained than the search
+## When group formula results are finer-grained than the search
 
 With the flexibility of groupings for group formulas, the computed column
 created by a formula can be finer or courser grained than the search itself.
@@ -73,9 +73,9 @@ formula that computes total sales _for each month_ (a finer-grained calculation
 than the search).
 
 In such cases, if an additional aggregation is specified by the formula, the
-results get re-aggregated.
+results get _reaggregated_.
 
-Re-aggregation can be applied in either of these ways:
+Reaggregation can be applied in either of these ways:
 
 * You can add an aggregation keyword just before a formula column in a search.
 For example, in this search we've added the keyword **min** just before our formula
@@ -106,7 +106,7 @@ inherits the formula groupings, as in this search:
 
 where, the original query is computed at a monthly grain instead of yearly.
 
-## Re-aggregation scenarios
+## Reaggregation scenarios
 
 Some scenarios require aggregation on an already aggregated result.
 
