@@ -63,14 +63,83 @@ the query.
 
 {% include note.html content="`+/-` is currently supported only for  `query_groups`, not `query_filters`."%}
 
+## Using re-aggregation when group formula results are finer-grained than the search
+
+With the flexibility of groupings for group formulas, the computed column
+created by a formula can be finer or courser grained than the search itself.
+
+For example, you can have a search that shows **total yearly sales** and a
+formula that computes total sales _for each month_ (a finer-grained calculation
+than the search).
+
+In such cases, if an additional aggregation is specified by the formula, the
+results get re-aggregated.
+
+Re-aggregation can be applied in either of these ways:
+
+* You can add an aggregation keyword just before a formula column in a search.
+For example, in this search we've added the keyword **min** just before our formula
+for `monthly_sales`:
+
+  **sum revenue yearly min monthly_sales**
+
+  where, the `monthly_sales` formula is written as:
+
+    ```
+     group_aggregate(sum(revenue), {start_of_month(date)}, {})
+    ```
+
+* You can create a separate formula, such as in this search for:
+
+  **sum revenue yearly min_monthly_sales**
+
+  where, the `min_monthly_sales` formula is written as:
+
+  ```
+  min(monthly_sales)
+  ```
+
+Alternatively, if no aggregation is specified, then the search query also
+inherits the formula groupings, as in this search:
+
+**sum revenue yearly monthly_sales**
+
+where, the original query is computed at a monthly grain instead of yearly.
+
+## Re-aggregation scenarios
+
+Some scenarios require aggregation on an already aggregated result.
+
+For example, computing minimum monthly sales per ship mode, requires two
+aggregations:
+
+* the first aggregation of **sum** to compute total monthly sales per ship
+mode.
+
+* the second aggregation of **min** to compute minimum sale that happened
+for any given month for that ship mode.
+
+An example of this is this search:
+
+**ship mode min monthly_sales**
+
+where the formula `monthly_sales` is written as:
+
+```
+group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
+```
+
 ## Groups and filters
 
-These formulas allow for flexibility in both groupings and filters. The formulas
-give you the ability to specify only groupings or only filters.
+Flexible group aggregate formulas allow for flexibility in both [groupings](about-pinned-measures.html#)
+and [filters](filtered-agg-forms.html#). The formulas give you the ability to
+specify only groupings or only filters.
 
 ## Where to learn more
 
 * For more examples of flexible aggregation, see the `group_aggregate` function under "Aggregate
 functions" in the [Formula function reference]({{ site.baseurl}}/reference/formula-reference.html).
 
-* To learn about aggregation formulas in general, see [Overview of aggregate formulas](aggregation-formulas.html#) and [Group aggregation functions](about-pinned-measures.html#)
+* To learn about aggregation formulas in general, see
+[Overview of aggregate formulas](aggregation-formulas.html#) and
+[Group aggregation functions](about-pinned-measures.html#)
