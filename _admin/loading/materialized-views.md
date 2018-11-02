@@ -25,10 +25,14 @@ These are the statuses a view can have:
 
 |Status|Description|Action|
 |------|-----------|--------|
-|In Progress|View is being materialized.|Wait for materialization to finish.|
-|Ready|View has been materialized into memory.|View has been materialized, and may be searched.|
-|Stale|View has become out of sync with the data in the tables that make it up, usually due to an incremental data load. |Refresh the view so that it includes the newest data from the tables that make it up.|
-|Unknown|View status could not be determined.|Verify that the view has been materialized by clicking on it and choosing **Views**.|
+|Queued|View is waiting to be materialized.|Click **Update status**.|
+|In Progress|View is being materialized.|Click **Update status**. Wait for materialization to finish.|
+|Materialized|View has been materialized into memory.|You can now search the materialized view.|
+|Stale|View has become out of sync with the data in the tables that make it up, usually due to an incremental data load. |Refresh the view by clicking **Refresh Data***.|
+|Unknown|View status could not be determined.|Click **Update status**.|
+|Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
+
+\* You will only have the option to refresh data if you have the **Can administer ThoughtSpot** privilege.
 
 ## Related Information
 

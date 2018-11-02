@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 If you want to use the results of a search as the starting point for other searches, you can save the initial search as a view. Views are similar to tables. One important difference is that the search that makes up a view gets computed each time the view is used. However, you can [materialize a view]({{ site.baseurl }}/admin/loading/materialized_views.html), so its data gets stored in memory. When materialized, a view becomes much like a table, with the same fast performance users expect when searching.
 
-{% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as "Aggregated Worksheets". When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
+{% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as Aggregated Worksheets. When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
 
 You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one
 column by one other column. Because of this, you may come across searches you
@@ -37,7 +37,7 @@ save your first answer as a view, certain explorations like this won't be
 possible. If you want to do this, here are the steps at a high level:
 
 1. Create the first search, and [save it as a view](create-aggregated-worksheet.html#).
-2. [Link]({{ site.baseurl }}/admin/data_modeling/create-new-relationship.html#) your view to any other data sources you'll need or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#}}).
+2. [Create relationships]({{ site.baseurl }}/admin/data_modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#}}) to connect your view with any other data sources you'll need.
 3. Create a new search that includes your view and the other sources you linked with it.
 4. You may want to [create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html#}}) that includes all these data sources.
 

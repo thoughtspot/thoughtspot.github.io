@@ -617,16 +617,28 @@ entries:
       output: web,ugBk
       levelTwoItems:
       - title: Understand views
-        url: /complex-search/about-query-on-query.html
+        url: /admin/complex-search/about-query-on-query.html
         output: web,ugBk
       - title: Save a search as a view
-        url: /complex-search/create-aggregated-worksheet.html
+        url: /admin/complex-search/create-aggregated-worksheet.html
         output: web,ugBk
       - title: Create a search from a view
-        url: /complex-search/do-query-on-query.html
+        url: /admin/complex-search/do-query-on-query.html
         output: web,ugBk
       - title: View example scenarios
-        url: /complex-search/more-example-scenarios.html
+        url: /admin/complex-search/more-example-scenarios.html
+        output: web,ugBk
+      - title: About materialized views
+        url: /admin/loading/materialized-views.html
+        output: web,ugBk
+      - title: Materialize a view
+        url: /admin/loading/materialize-a-view.html
+        output: web,ugBk
+      - title: Dematerialize a view
+        url: /admin/loading/dematerialize-a-view.html
+        output: web,ugBk
+      - title: Refresh a view
+        url: /admin/loading/refresh-view.html
         output: web,ugBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
