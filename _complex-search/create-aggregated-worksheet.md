@@ -1,7 +1,7 @@
 ---
 title: [Save a search as a view]
 keywords: view
-last_updated: tbd
+last_updated: 11/1/2018
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,4 +17,12 @@ This procedure walks you through creating a view from a search. To create a view
 
 3. Save the answer as a **View**.
 
-     ![]({{ site.baseurl }}/images/save_as_worksheet.png "Save as a View")
+     ![]({{ site.baseurl }}/images/save_as_view.png "Save as a View")
+
+4. Give the view a name and save it.
+
+     ![]({{ site.baseurl }}/images/save_view_dialog.png "Name the View")
+
+5. [Link]({{ site.baseurl }}/admin/data_modeling/create-new-relationship.html#) your view to any other data sources you'll need or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#}}).
+
+At this point the view has been saved, but you may also want to [materialize the view]({{ site.baseurl }}/admin/loading/materialized_views.html), to improve its performance when searching.
