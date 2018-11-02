@@ -9,6 +9,8 @@ permalink: /:collection/:path.html
 ---
 If you want to use the results of a search as the starting point for other searches, you can save the initial search as a view. Views are similar to tables. One important difference is that the search that makes up a view gets computed each time the view is used. However, you can [materialize a view]({{ site.baseurl }}/admin/loading/materialized_views.html), so its data gets stored in memory. When materialized, a view becomes much like a table, with the same fast performance users expect when searching.
 
+{% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as "Aggregated Worksheets". When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
+
 You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one
 column by one other column. Because of this, you may come across searches you
 can't do in one pass, because they are essentially nested queries. But you can

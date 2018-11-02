@@ -11,9 +11,15 @@ Views can become slow as your data volume and the number of views stacked on top
 
 To materialize a view, you must have the [Administrator privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
-The number of materialized views you can create is limited to 50, because materialized views take up space in memory.
+{% include note.html content="The number of materialized views you can create is limited to 50, because materialized views take up space in memory." %}
 
-Once materialized, a view can have one of three states. You can see the status of a view by selecting **Data**, clicking on **Views**, and finding your view in the list. The status is shown next to the name of your view.
+These are the operations you can do on a view:
+-   [Materialize a view]({{ site.baseurl }}/admin/loading/materialize-a-view.html) to improve performance,
+-   [Dematerialize a view]({{ site.baseurl }}/admin/loading/dematerialize-a-view.html) to save space, or
+-   [Refresh a view]({{ site.baseurl }}/admin/loading/refresh-view.html) to synchronize its data with the latest data load to the underlying tables.
+-   Check the status of a view.
+
+Once materialized, a view can have one of three statuses. You can see the status of a view by selecting **Data**, clicking on **Views**, and finding your view in the list. The status is shown next to the name of your view.
 
 These are the statuses a view can have:
 
@@ -24,11 +30,10 @@ These are the statuses a view can have:
 |Stale|View has become out of sync with the data in the tables that make it up, usually due to an incremental data load. |Refresh the view so that it includes the newest data from the tables that make it up.|
 |Unknown|View status could not be determined.|Verify that the view has been materialized by clicking on it and choosing **Views**.|
 
-If the status is **Stale**, you'll need to refresh the view so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date. To refresh the view, click **Refresh**.
-
 ## Related Information
 
 -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  
--   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html)  
+-   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html)
+-   [Materialize a view]({{ site.baseurl }}/loading/materialize-a-view.html)  
 -   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
 -   [Sharding]({{ site.baseurl }}/admin/loading/sharding.html)
