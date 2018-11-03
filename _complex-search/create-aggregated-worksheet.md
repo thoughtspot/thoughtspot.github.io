@@ -15,7 +15,7 @@ This procedure walks you through creating a view from a search. To create a view
 
      ![]({{ site.baseurl }}/images/aggregation_change.png "Select an aggregation")
 
-3. Save the answer as a **View**.
+3. Click the three dot icon and **Save as view**.
 
      ![]({{ site.baseurl }}/images/save_as_view.png "Save as a View")
 
