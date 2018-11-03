@@ -136,7 +136,7 @@ Flexible group aggregate formulas allow for flexibility in both [groupings](abou
 and [filters](filtered-agg-forms.html#). The formulas give you the ability to
 specify only groupings or only filters.
 
-## Where to learn more
+## Related information
 
 * For more examples of flexible aggregation, see the `group_aggregate` function under "Aggregate
 functions" in the [Formula function reference]({{ site.baseurl}}/reference/formula-reference.html).

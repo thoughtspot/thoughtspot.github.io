@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add conditional logic.
 
+## How to add a formula
+
 To create a formula in a search:
 
 1. Start a new search, or choose an existing answer from a pinboard to edit.
