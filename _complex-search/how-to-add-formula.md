@@ -1,11 +1,14 @@
 ---
 title: [Add a formula to a search]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add conditional logic.
+
+## How to add a formula
 
 To create a formula in a search:
 
@@ -33,7 +36,7 @@ To create a formula in a search:
     -   Data type
     -   ATTRIBUTE or MEASURE
     -   Aggregation type
-    
+
     ![]({{ site.baseurl }}/images/formula_advanced_settings.png "Advanced settings in the Formula Builder")
 
 7. Name the formula by clicking on its title and typing the new name. Click **Save**.
