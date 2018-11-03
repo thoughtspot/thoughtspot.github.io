@@ -2,6 +2,7 @@
 title: [Create a search from a view]
 keywords: tbd
 last_updated: 11/1/2018
+summary: "After creating a view, you can select it and search its data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -15,11 +16,10 @@ After creating a view and linking it to related data, you're ready to create you
 3. Test the result, to make sure it’s what you expect.
     If your search shows no data found or doesn't look right to you, it is possible that one of the links between your sources was made on the incorrect column. Check the relationships you created and try linking using a different column, to see if that gives the expected search results.
 4. Once you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
-5. Click the three dot icon on the upper right side of the screen.
-6. Select **Create worksheet**.
+5. Click the three dot icon and select **Create worksheet**.
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-7. Choose your view and any other tables it is linked to using **Choose Sources**.
-8. You may need to rename some columns appropriately for searching.
-9. Save the worksheet and share it with the appropriate users and groups.
+6. Choose your view and any other tables it is linked to using **Choose Sources**.
+7. You may need to rename some columns appropriately for searching.
+8. Save the worksheet and share it with the appropriate users and groups.

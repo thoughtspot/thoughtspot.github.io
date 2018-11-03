@@ -1,7 +1,8 @@
 ---
 title: [View example scenarios]
 keywords: tbd
-last_updated: tbd
+last_updated: 11/2/2018
+summary: "It's not always easy to know when you need to use a view, but these are some common scenarios."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -23,7 +24,7 @@ This example is similar to the previous example, except that it involves a more 
 
 First, you would have to perform searches for total sales by customer for both A and B, and create views for both. Then join these two views back in an outer join looking for conditions where the A and B join values are null.
 
-This example could also be solved in a single search by using [conditional formulas]({{ site.baseurl }}/advanced-search/formulas/conditional-sum.html#) to determine the desired group (or cohort) of customers as defined by their buying behavior, and then doing the analysis on this group.
+This example could also be solved in a single search by using [conditional formulas]({{ site.baseurl }}/advanced-search/formulas/conditional-sum.html#) to determine the desired group (or cohort) of customers as defined by their buying behavior, and then doing the analysis on this group. But the performance will be better if you do this using a view, and then [materialize the view]({{ site.baseurl }}/admin/loading/materialized-views.html#).
 
 ## Example 3
 

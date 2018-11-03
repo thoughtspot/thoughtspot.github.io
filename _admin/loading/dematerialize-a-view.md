@@ -15,11 +15,15 @@ To dematerialize a view:
 1. To find your materialized view, click **Data** in the top menu, and choose **Views**.
 2. Click on the name of your view.
 3. Click **Schema**.
-6. Under **Materialize View**, click **Dematerialize**
+6. Under **Materialization**, click **Dematerialize**.
+
+   ![]({{ site.baseurl }}/images/materialization-dialog-on.png)
+
 7. You can see the status of the dematerialization as it progresses. Click **Update status** to refresh it.
-   Remember that at this point your view is still searchable. It just isn't materialized into memory. If you want to remove the view altogether, you can delete it.
+
+   Remember that at this point your view is still searchable. It just isn't materialized into memory. If you want to remove the view altogether, you still need to delete the view.
 
 ## Related Information
 
 -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  
--   [Materialize a view]({{ site.baseurl }}/loading/materialize-a-view.html)  
+-   [Materialize a view]({{ site.baseurl }}/admin/loading/materialize-a-view.html)  

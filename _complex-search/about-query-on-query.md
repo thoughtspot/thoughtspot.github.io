@@ -2,12 +2,12 @@
 title: [Understand views]
 tags: [bestpractices]
 keywords: search,view,aggregated
-last_updated: tbd
+last_updated: 11/2/2018
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If you want to use the results of a search as the starting point for other searches, you can save the initial search as a view. Views are similar to tables. One important difference is that the search that makes up a view gets computed each time the view is used. However, you can [materialize a view]({{ site.baseurl }}/admin/loading/materialized_views.html), so its data gets stored in memory. When materialized, a view becomes much like a table, with the same fast performance users expect when searching.
+## Introduction to views
 
 {% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as Aggregated Worksheets. When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
 
@@ -36,10 +36,10 @@ discounted a specific product using data from the orders fact table. Unless you
 save your first answer as a view, certain explorations like this won't be
 possible. If you want to do this, here are the steps at a high level:
 
-1. Create the first search, and [save it as a view](create-aggregated-worksheet.html#).
-2. [Create relationships]({{ site.baseurl }}/admin/data_modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#}}) to connect your view with any other data sources you'll need.
+1. Create the first search, and [save it as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#).
+2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you'll need.
 3. Create a new search that includes your view and the other sources you linked with it.
-4. You may want to [create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html#}}) that includes all these data sources.
+4. You may want to [create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html#) that includes all these data sources.
 
     Creating a worksheet will make it easier for people to search using your
     view and any related tables.
@@ -68,7 +68,7 @@ limitations.
 
 ## Related Information
 
--   [More view scenario examples]({{ site.baseurl }}/complex-search/more-example-scenarios.html)
--   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html)  
--   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
--   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html)
+-   [More view scenario examples]({{ site.baseurl }}/complex-search/more-example-scenarios.html#)
+-   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#)  
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html#)
+-   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html#)

@@ -1,5 +1,5 @@
 ---
-title: [Materialized views]
+title: [About materialized views]
 keywords: materialize views
 last_updated: 10/31/2018
 summary: "You can materialize a view to improve its performance."
@@ -7,11 +7,16 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+## Introduction to materialized views
+
 Views can become slow as your data volume and the number of views stacked on top of one another grow. This happens because when doing a search, each view is computed on the fly. To improve the performance of a view, you can materialize it. Materializing pre-computes the view and stores it in memory, just like a table. You can expect a materialized view to be three to six times faster than a view that is not materialized, on average.
 
-To materialize a view, you must have the [Administrator privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
+To materialize a view, you must have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
 {% include note.html content="The number of materialized views you can create is limited to 50, because materialized views take up space in memory." %}
+
+{% include note.html content="Row Level Security does not apply to materialized views. All users will see the same data when using the materialized view as a data source." %}
 
 These are the operations you can do on a view:
 -   [Materialize a view]({{ site.baseurl }}/admin/loading/materialize-a-view.html) to improve performance,
@@ -20,6 +25,9 @@ These are the operations you can do on a view:
 -   Check the status of a view.
 
 Once materialized, a view can have one of three statuses. You can see the status of a view by selecting **Data**, clicking on **Views**, and finding your view in the list. The status is shown next to the name of your view.
+
+## Materialization status
+[](#materialization-status)
 
 These are the statuses a view can have:
 
@@ -32,12 +40,17 @@ These are the statuses a view can have:
 |Unknown|View status could not be determined.|Click **Update status**.|
 |Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
 
-\* You will only have the option to refresh data if you have the **Can administer ThoughtSpot** privilege.
+\* You will only have the option to refresh data if you have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) privilege.
+
+## Freshness of data
+
+Your view can become stale, if it isn't refreshed when the data in the tables used to create it is updated. There are two ways to refresh the data:
+
+* [Manually refresh data in a view]({{ site.baseurl }}/admin/loading/refresh-view.html)
+* [Refresh the view on a schedule]({{ site.baseurl }}/admin/loading/schedule-materialization.html)
 
 ## Related Information
 
 -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  
 -   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html)
--   [Materialize a view]({{ site.baseurl }}/loading/materialize-a-view.html)  
--   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
--   [Sharding]({{ site.baseurl }}/admin/loading/sharding.html)
+-   [Materialize a view]({{ site.baseurl }}/admin/loading/materialize-a-view.html)  
