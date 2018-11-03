@@ -631,6 +631,20 @@ entries:
       - title: View example scenarios
         url: /complex-search/more-example-scenarios.html
         output: web,ugBk
+      - title: About materialized views
+        url: /admin/loading/materialized-views.html
+        output: web,ugBk
+      - title: Materialize a view
+        url: /admin/loading/materialize-a-view.html
+        output: web,ugBk
+      - title: Dematerialize a view
+        url: /admin/loading/dematerialize-a-view.html
+        output: web,ugBk
+      - title: Refresh a view
+        url: /admin/loading/refresh-view.html
+      - title: Schedule view refreshes
+        url: /admin/loading/schedule-materialization.html
+        output: web,ugBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
