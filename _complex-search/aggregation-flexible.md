@@ -1,6 +1,7 @@
 ---
 title: [Flexible aggregation functions (groups and filters)]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

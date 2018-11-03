@@ -1,12 +1,19 @@
 ---
 title: [About date formulas]
 keywords: tbd
+tags: [dates, formulas]
 last_updated: tbd
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Date formulas are useful when you want to compare data collected between two date periods. Date formulas allow you to apply date related functions to your formulas. The date functions include:
+Date functions are useful when you want to compare data collected between two
+date periods. Date formulas allow you to apply date related functions to your
+formulas.
+
+## Date formulas
+
+The date formulas include:
 
 {% include content/date-func.md %}
 
@@ -28,3 +35,31 @@ The following example shows you how to calculate the percent increase from the l
 1. Create the formula: `this week revenue = sum ( if ( this week ) then revenue else 0 )`
 2. Then create the formula: `last week revenue = sum ( if (last week ) then revenue else 0 )`
 3. Use [nested formulas]({{ site.baseurl }}/complex-search/about-nested-formulas.html#) to calculate the percent increase by creating a parent formula: `percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100`
+
+## Fiscal and Gregorian calendars
+
+For the following date formulas, you can further specify either `fiscal` or
+Gregorian `calendar` on which to base date calculations. (If you do not specify a
+calendar type, the formula will default to standard Gregorian, with the year
+starting in January.)
+
+* `day_number_of_quarter`
+* `month_number`
+* `month_number_of_quarter`
+* `quarter_number`
+* `start_of_quarter`
+* `start_of_year`
+* `week_number_of_quarter`
+* `week_number_of_year`
+* `year`
+
+Your ThoughtSpot administrator and ThoughtSpot Support can
+[set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#)
+to start on any month. If the `fiscal` year is not explicitly configured in the system,
+`fiscal` defaults to January, the same as the Gregorian `calendar`.
+
+## Where to learn more
+
+* [Date functions]({{ site.baseurl }}/reference/formula-reference.html#date-functions) in the [Formula function reference]({{ site.baseurl }}/reference/formula-reference.html#)
+
+* [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#)

@@ -10,6 +10,9 @@ By default, the application's fiscal calendar in January. If your company's
 calendar year starts in another month, setting a fiscal calendar quarter makes
 the ThoughtSpot date searches reflect your fiscal year.
 
+[Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
+will also reflect the fiscal year you set here.
+
 When you set a custom fiscal year, you will designate the month on which your
 company's fiscal year begins. All the date language will then reflect your
 change, so if someone searches for **this quarter** or **q3**, the answer will

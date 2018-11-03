@@ -1,6 +1,7 @@
 ---
 title: [Add a formula to a search]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -33,7 +34,7 @@ To create a formula in a search:
     -   Data type
     -   ATTRIBUTE or MEASURE
     -   Aggregation type
-    
+
     ![]({{ site.baseurl }}/images/formula_advanced_settings.png "Advanced settings in the Formula Builder")
 
 7. Name the formula by clicking on its title and typing the new name. Click **Save**.
