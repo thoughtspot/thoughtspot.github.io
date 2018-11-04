@@ -13,8 +13,16 @@ Materialized views can get out of synch with their underlying data. If the statu
 To refresh a view manually:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
+
 2. Click on the name of your view.
+
 3. Click **Schema**.
+
 4. Under **Materialization**, choose **Dematerialize**.
 
      ![]({{ site.baseurl }}/images/materialization-dialog-on-weekly.png "Dematerialize a View")
+
+## Related Information
+
+     -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  
+     -   [About materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html)

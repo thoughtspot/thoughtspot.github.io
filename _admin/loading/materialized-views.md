@@ -49,6 +49,14 @@ Your view can become stale, if it isn't refreshed when the data in the tables us
 * [Manually refresh data in a view]({{ site.baseurl }}/admin/loading/refresh-view.html)
 * [Refresh the view on a schedule]({{ site.baseurl }}/admin/loading/schedule-materialization.html)
 
+Here are some conditions that could lead to a view becoming stale:
+
+* Changes to the view definition
+* Changes to the fields used in the view
+* Changes to the join relationships used in the view
+* Change to formulas in the view
+* Change the datatypes in the underlying tables
+
 ## Related Information
 
 -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  

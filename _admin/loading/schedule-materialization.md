@@ -13,8 +13,11 @@ To keep the data in a view up-to-date, you can schedule periodic refreshes from 
 To schedule materialization of a view:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
+
 2. Click on the name of your view.
+
 3. Click **Schema**.
+
 4. Under **Materialization**, click the link next to **Update Schedule:**.
 
 5. In the **Schedule data updates** dialog, select an option for **Repeats** (Monthly, Weekly, or Daily).

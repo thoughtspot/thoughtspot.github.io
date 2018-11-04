@@ -28,6 +28,8 @@ resulting worksheet can differ from the number of rows in the table when
 accessing it directly, because of the join condition. The worksheet contains the results of a defined query in
 the form of a table.
 
+{% include note.html content="If you need a different join type for a specific join between tables within the worksheet, you an override the inclusion rule for just that specific join by modifying the join type within the worksheet." %}
+
 If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by [changing the inclusion rule for the worksheet](change-inclusion-rule.html#).
 
 The answer returned when searching using a worksheet as the source can be different from the answer you get when using the table directly as a source. When using a worksheet as a source, even if you were to select fields that come from only one table in your search, any underlying joins to other tables will still be active. When using the table directly as the source, you will see every value.
@@ -37,3 +39,6 @@ This is best understood through an example.
 A typical sales fact table contains a column with the employee ID of the person who made the sale. The employee ID column has a foreign key in the employee dimension table. This is the relationship used to join the two tables.
 
 Sometimes a sale has been made directly or through a reseller, without involving a sales person. In this case, the employee ID value for the sale will be empty in the fact table. If you wanted the worksheet to include all sales, regardless of whether or not they were associated with a sales person, you would choose **Apply left outer join (Left Outer Join)**. If you only want the worksheet to contain sales made by employees, you would choose **Exclude empty rows (Inner Join)**.
+
+## Related Information
+-   [Modify join type within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html)

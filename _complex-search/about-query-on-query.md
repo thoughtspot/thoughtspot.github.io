@@ -37,8 +37,11 @@ save your first answer as a view, certain explorations like this won't be
 possible. If you want to do this, here are the steps at a high level:
 
 1. Create the first search, and [save it as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#).
+
 2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you'll need.
+
 3. Create a new search that includes your view and the other sources you linked with it.
+
 4. You may want to [create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html#) that includes all these data sources.
 
     Creating a worksheet will make it easier for people to search using your
@@ -46,8 +49,10 @@ possible. If you want to do this, here are the steps at a high level:
 
 ## Best practices for using views
 
-Only users with administrative or data management privileges can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
+Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
 worksheet size.
+
+{% include note.html content="Views do not support row level security, so all users of a view will be able to see all the data it contains." %}
 
 To be able to join a view with a base table, your installation
 must be configured to allow this. The view cannot have

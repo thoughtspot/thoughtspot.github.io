@@ -13,13 +13,19 @@ After creating a view and linking it to related data, you're ready to create you
      ![]({{ site.baseurl }}/images/select_sources_view.png "Select sources")
 
 2. Do a search using columns from the linked sources.
+
 3. Test the result, to make sure it’s what you expect.
+
     If your search shows no data found or doesn't look right to you, it is possible that one of the links between your sources was made on the incorrect column. Check the relationships you created and try linking using a different column, to see if that gives the expected search results.
+
 4. Once you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
+
 5. Click the three dot icon and select **Create worksheet**.
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
 6. Choose your view and any other tables it is linked to using **Choose Sources**.
+
 7. You may need to rename some columns appropriately for searching.
+
 8. Save the worksheet and share it with the appropriate users and groups.

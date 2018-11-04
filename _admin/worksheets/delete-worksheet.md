@@ -10,11 +10,10 @@ ThoughtSpot checks for dependencies whenever you try to remove a table or worksh
 
 To delete a worksheet or table:
 
-1. Click on **DATA**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+1. Click on **Data**, on the top navigation bar.
 
 2. Find the worksheet or table you want to remove in the list, and check the box next to its name.
+
 3. Click the **Delete** icon.
 
      ![]({{ site.baseurl }}/images/delete_object.png "The Delete icon")
@@ -22,9 +21,10 @@ To delete a worksheet or table:
      If you are attempting to delete a data source with dependent objects, the operation will be blocked. You will see a warning, with a list of dependent objects with links.
 
 4. Click on the link for an object to modify or delete it.
+
    When all its dependencies are removed, you will be able to delete the data source.
 
-     ![]({{ site.baseurl }}/images/dependency_warning_with_links.png "Dependent objects warning")
+   ![]({{ site.baseurl }}/images/dependency_warning_with_links.png "Dependent objects warning")
 
 5. You can also click on the name of a worksheet or table and then click **Dependents**, to see a list of dependent objects with links.
 
