@@ -13,9 +13,8 @@ You can run a SQL script to create your database schema through the browser, wit
 -   Use the browser SQL interface as an interactive SQL editor, for example to test an existing script or make changes to an existing schema.
 
 1. Log into ThoughtSpot from a browser.
-2. Click on **DATA**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+2. Click **Data**, on the top navigation bar.
 
 3. Click **Actions** and select **Upload schema**.
 

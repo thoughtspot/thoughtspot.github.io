@@ -18,7 +18,7 @@ Users are often unfamiliar with tables and how they are related to one another. 
 -   To include a derived column using a formula.
 -   To rename columns to make the data easier to search.
 -   To build in a specific filter or aggregation.
-
+-   To give users a filtered set of data to search.
 
 Typically, you create one worksheet for each set of fact and dimension tables. For example, you may have a sales fact table and an inventory fact table. Each of these fact tables shares common dimensions like date, region, and store. In this scenario, you would create two worksheets: sales and inventory. The following diagram depicts the workflow for creating the sales worksheet.
 
@@ -42,9 +42,11 @@ The process for creating a worksheet is:
 
 8.  Optionally [create formulas](create-formula.html#).
 
-9.  Save the worksheet.
+9.  Optionally [create worksheet filters](create-ws-filter.html#).
 
-10.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
+10.  Save the worksheet.
+
+11.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
 ## Create a worksheet
 
@@ -93,19 +95,23 @@ To add the sources to the worksheet:
 
     Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
-8. Click on the worksheet title to name it, and then **Save** it.
+8.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
-9. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+9.  Optionally [create formulas](create-formula.html#).
 
-10.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
+10.  Optionally [create worksheet filters](create-ws-filter.html#).8. Click on the worksheet title to name it, and then **Save** it.
+
+11. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+
+12.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
 
      ![]({{ site.baseurl }}/images/worksheet_add_col_prefix.png "Add a prefix to column names")
 
-11. Click **Actions** and select **Save**.
+13. Click **Actions** and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
-12.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
+14.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
 
 ## Where to go next
 

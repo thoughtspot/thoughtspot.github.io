@@ -6,8 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you upload a CSV file, it is available as a table in ThoughtSpot. The
-**Profile** tab appears after you have selected a specific table from **DATA**.
+After you upload a CSV file, it is available as a table in ThoughtSpot. Click **Data** in the top navigation bar and select your CSV file. Then click
+**Profile**.
 
 ![]({{ site.baseurl }}/images/data_profile.png)
 

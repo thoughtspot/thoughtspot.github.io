@@ -10,7 +10,7 @@ You need **Admin** privileges to use the **Schema Viewer**.
 
 ## Bringing up the Schema Viewer
 
-You can access the Schema Viewer from the **DATA** screen by clicking
+You can access the Schema Viewer from the **Data** screen by clicking
 **Actions**, and selecting **View Schema**.
 
  ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema

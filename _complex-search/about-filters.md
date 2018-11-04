@@ -29,7 +29,7 @@ applied to all visualizations of a pinboard. You can find out more about
 
 ## Where filters appear in ThoughtSpot
 
-As you have seen with search, filters appear in white boxes in the search bar.
+As you have seen with search, filters appear in grey boxes in the search bar.
 
  ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with filters")
 
@@ -50,20 +50,20 @@ values](about-filters-for-null.html#)." %}
 ## Simple filters
 
 Simple filters can be applied to searches in a few different ways. You can use
-the search bar or the **Change Configuration** menu to add a filter to a search.
+the search bar or choose **Filter** from the column header or axis label.
 You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the **Change Configuration** menu, numeric columns and
-text columns provide you with a checkbox selector for values. If the column
+When adding a filter from the three dot icon in the column header or by clicking on a chart axis, numeric columns and
+text columns provide you with the ability to include or exclude values, and a checkbox selector for the values. If the column
 contains a date, you'll see a calendar selector when applying a filter. This is
 also where you'll go to apply bulk filters.
 
 ## Bulk filters
 
 If you have a large worksheet or table with thousands or millions of rows, you
-may want to create bulk filters. You can paste in a list of filter values,
+may want to create bulk filters. You can paste in a list of filter values to include or exclude,
 without having to click the box next to each value in the filter selector.
 
 Bulk filters can be very useful when you have a very large worksheet or table.
@@ -73,7 +73,6 @@ to you in an email. You can cut and paste those values into the bulk filter box
 to quickly generate a report or chart that includes only those items of
 interest.
 
-You can [create a bulk filter]({{ site.baseurl
-}}/complex-search/create-bulk-filter.html) by pasting a list of values,
+You can [create a bulk filter]({{ site.baseurl}}/complex-search/create-bulk-filter.html) by pasting a list of values,
 separated by commas, semicolons, new lines, or tabs, into the bulk filter box.
 This allows you to easily search a large list of filters repeatedly.
