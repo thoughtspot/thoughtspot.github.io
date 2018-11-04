@@ -59,12 +59,3 @@ if they have chasm trap).
 For chasm trap _worksheets_, progressive and non-progressive joins do not apply.
 There is an entirely different methodology for how worksheet joins on a chasm
 trap schema work with row level security. So you can safely ignore that setting.
-
-## Joins and aggregated worksheets
-
-You have the ability to join an aggregated worksheet with a table. You can join
-an aggregated worksheet with a system table by creating a relationship. This
-means aggregated worksheets behave similar to tables, and they can be used in
-the same way as a table, excluding any TQL manipulation. You also have the
-capability to create a worksheet on top of an aggregated worksheet. So
-aggregated worksheets can be included as tables in regular worksheets.

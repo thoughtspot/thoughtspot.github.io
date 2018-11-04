@@ -27,16 +27,24 @@ Typically, you create one worksheet for each set of fact and dimension tables. F
 The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
-2.  Create a new worksheet.
-3.  Add sources (tables) to the worksheet.
-4.  Choose the [inclusion rule](about-inclusion-rule.html#) to apply.
-5.  Choose the [worksheet join rule](progressive-joins.html#).
-6.  Select the columns to include.
-7.  Optionally [create formulas](create-formula.html#).
-8.  Save the worksheet.
-9.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
-An alternative way to create a worksheet is to do a search and save it as a worksheet. See the [ThoughtSpot User Guide]({{ site.baseurl }}/end-user/introduction/introduction.html#) for details on how to do this.
+2.  Create a new worksheet.
+
+3.  Add sources (tables) to the worksheet.
+
+4.  Choose the [inclusion rule](about-inclusion-rule.html#) to apply.
+
+5.  Choose the [worksheet join rule](progressive-joins.html#).
+
+6.  Select the columns to include.
+
+7.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
+
+8.  Optionally [create formulas](create-formula.html#).
+
+9.  Save the worksheet.
+
+10.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
 ## Create a worksheet
 
@@ -44,9 +52,7 @@ Create a worksheet to make the data easy for users to search. This process inclu
 
 To create a new worksheet:
 
-1. Click on **DATA**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+1. Click on **Data**, on the top navigation bar.
 
 2. Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**.
 
@@ -70,18 +76,27 @@ To add the sources to the worksheet:
     ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png)
 
 3. If you want to see what the data inside the sources looks like, click **Explore all data**.
+
 4. Choose the [inclusion rule](about-inclusion-rule.html#).
+
 5. Choose the [worksheet join rule](progressive-joins.html#).
+
 6. Click **Done** to save your changes.
+
 7. Expand the table names under **Columns** to select the columns to add to the worksheet.
 
     1. To add all of the columns from a table, click on the table name and click **+ Add Columns**.
+
     2. To add a single column, double click on its name.
+
     3. To add multiple columns, Ctl+click on each column you want to add and click **+ Add Columns**.
+
     Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
 8. Click on the worksheet title to name it, and then **Save** it.
+
 9. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+
 10.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
 
      ![]({{ site.baseurl }}/images/worksheet_add_col_prefix.png "Add a prefix to column names")

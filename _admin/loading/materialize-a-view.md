@@ -13,9 +13,13 @@ To improve the performance of a view, you can materialize it. This operation com
 To materialize a view:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
+
 2. Click on the name of your view.
+
 3. Click **Schema**.
+
 4. If needed, [add joins]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
+
 5. Under **Materialization**, find **Materialize** and click the checkbox.
 
    ![]({{ site.baseurl }}/images/materialization-dialog-off.png)
@@ -25,7 +29,9 @@ To materialize a view:
    ![]({{ site.baseurl }}/images/materialize-details.png)
 
    {% include note.html content="If you do not fill in the sharding details, the view will be replicated on every node of your cluster. If you're not sure what to fill in, ask your ThoughtSpot administrator, or follow the links in this step to learn more about sharding." %}
+
 7. Click **Materialize**.
+
 8. In the **Schedule data updates** dialog, select an option for **Repeats** (Monthly, Weekly, or Daily).
 
    ![]({{ site.baseurl }}/images/materialized-view-sched-weekly.png)

@@ -1,45 +1,46 @@
 ---
-title: [Create a relationship]
-keywords: tbd
-last_updated: tbd
-summary: "Explains how to create a link between two data sources through a relationship."
+title: [Join a table or view to another data source]
+keywords: join table view
+last_updated: 11/3/2018
+summary: "Learn how to define joins between a table or view and another table, view, or worksheet"
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can quickly create a relationship (or link) between tables that allows you to combine them in a single search. Choose a column to join on that both tables contain (e.g. employee ID or product key).
+Joining a table or view to another table, view, or worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both tables contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the table or view and the other table, view, or worksheet on the column you specify.
 
-You must have either administration privilege or modify access permission to the columns to create a relationship.
+If you want to create a primary key/foreign key relationship, you need to [use TQL]({{ site.baseurl }}/admin/loading/constraints.html) rather than the web interface.
 
-When creating a link between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you'll make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
+You must have either the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
+
+When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you'll make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
 
 To create a relationship through the Web interface:
 
-1. Click on **DATA**, on the top navigation bar.
+1. To find your table or view, click **Data** in the top menu, and choose **Tables** or **Views**.
 
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+2. Click on the name of your table or view.
 
-2. Click on the name of the data source you want to link from.
-3. Select **Relationships**.
+3. Click **Schema**. You will see the list showing existing joins.
 
-     ![]({{ site.baseurl }}/images/select_relationships.png "Select Relationships")
+4. Click the **+ Add Join** button on the upper right side of the screen.
 
-4. If there are already some existing relationships, scroll down and click **Add Relationship**. Otherwise, continue to the next step.
-5. Click on **Source Column** and select the column you want to link in the source table.
+   ![]({{ site.baseurl }}/images/table-add-join.png "Add join")
 
-     ![]({{ site.baseurl }}/images/create_relationship_2.png "Select a Source Column")
+5. Use the **Map source to destination** dialog to choose the destination table, view, or worksheet you want to join to.
 
-6. Under **Destination Table** find and select the table that you want to link to.
+   ![]({{ site.baseurl }}/images/table-join-select-destination.png "Select destination table")
 
-     ![]({{ site.baseurl }}/images/create_relationship_3.png "Find and select a Destination Table")
+6. Choose the columns you want to join on from the table or view (source) and destination table, view, or worksheet. Click **Next**.
 
-7. Click on **Destination Column** and select the column you want to link to in the destination table.
+   ![]({{ site.baseurl }}/images/table-join-select-col.png "Select columns to join on")
 
-     ![]({{ site.baseurl }}/images/create_relationship_4.png "Select the Destination Column")
+7. Give your join a name and description and click **ADD JOIN**.
 
-8. Click **Add Key** to add the link.
-9. Name your relationship and optionally give it a description.
+8.  Repeat these steps until all the joins you want to make have been created.
 
-     ![]({{ site.baseurl }}/images/create_relationship_5.png "Name the Relationship")
+After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you'll need to delete the join and create a new one.
 
-10.  Click **Add Relationship**.
-11.  Repeat these steps for creating a link until all the links you want to make for your table have been created.
+## Related Information
+
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
