@@ -3,7 +3,7 @@ You may need to revoke access to an object (table, worksheet, or pinboard) that 
 To unshare one or more objects:
 
 1. Go to the area where the object(s) you want to unshare is located. From the top menu bar:
-    -   If the object is a table or worksheet, click **DATA**.
+    -   If the object is a table or worksheet, click **Data**.
     -   If the object is a pinboard, click **Pinboards**.
     -   If the object is an answer, click **Answers**.
 2. Find the object(s) in the list, and check the corresponding box(es).

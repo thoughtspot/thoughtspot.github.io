@@ -16,7 +16,7 @@
     </tr>
     <tr>
       <td><strong>Can upload user data</strong></td>
-      <td>Can upload their own data from the application's <strong>DATA</strong> page using <strong>Actions > Upload data</strong>.</td>
+      <td>Can upload their own data from the application's <strong>Data</strong> page using <strong>Actions > Upload data</strong>.</td>
     </tr>
     <tr>
       <td><strong>Can download data</strong></td>

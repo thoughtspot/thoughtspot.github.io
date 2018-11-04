@@ -87,7 +87,7 @@ To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-us
 
 ## Data
 
-**DATA** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
+**Data** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
 
 To learn more about this section, visit [Working with data]({{ site.baseurl }}/end-user/data-view/data-intro-end-user.html#).
 

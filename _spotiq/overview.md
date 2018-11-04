@@ -41,14 +41,19 @@ item and department.
 ## Upload the data
 
 1. If you haven't, log into the ThoughtSpot application.
-2. Click the **DATA** tab and choose **Actions > Upload Data**.
+
+2. Click the **Data** tab and choose **Actions > Upload Data**.
+
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
+
 4. Choose `YES` for the **Are the column names already defined in the file header** setting.
+
 5. Choose **Comma** for the **Are the files separated by?** setting.
 
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
 6. Click **Next** for the **Set column names** page.
+
 7. Set the **category_num** column to **TEXT** on the **Set column types** page.
 
    ![]({{ site.baseurl }}/images/spotiq-set-column-types.png)

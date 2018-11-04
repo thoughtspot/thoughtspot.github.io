@@ -46,7 +46,7 @@ hold down the SHIFT key you can click on multiple heads and sort on them in
 turn.
 
 {% include tip.html content="This same functionality is available on tables you
-see elsewhere in ThoughtSpot. For example, a table in the **DATA** page is also
+see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also
 sortable in this manner."%}
 
 ## About headlines (summary information)

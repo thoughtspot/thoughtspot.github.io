@@ -27,12 +27,14 @@ spreadsheet.
 
 3. Click the **Filters** icon in the column header.
 
-4. Click **Add values in bulk**:
+4. Choose whether you want your bulk filter to **Include** or **Exclude** values.
+
+5. Click **Add values in bulk**:
 
      ![]({{ site.baseurl }}/images/bulk_filter_add_values_in_bulk.png "Add values in bulk")
 
-5. Paste the values into the bulk filter box.
+6. Paste the values into the bulk filter box.
 
      ![]({{ site.baseurl }}/images/bulk_filter_paste_values.png "Paste values into the bulk filter box")
 
-6. Click **Done**.
+7. Click **Done**.

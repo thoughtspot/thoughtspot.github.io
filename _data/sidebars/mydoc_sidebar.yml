@@ -604,6 +604,9 @@ entries:
       - title: Create a formula in a worksheet
         url: /admin/worksheets/create-formula.html
         output: web,admBk
+      - title: Create worksheet filters
+        url: /admin/worksheets/create-ws-filter.html
+        output: web,admBk
       - title: How the inclusion rule works
         url: /admin/worksheets/about-inclusion-rule.html
         output: web,admBk

@@ -15,7 +15,7 @@ If you created a relationship (join or link) between tables using the Web interf
 
 To delete a relationship from the Web interface:
 
-1. Click on the **DATA** icon on the top navigation bar.
+1. Click **Data** on the top navigation bar.
 
 2. Click on the name of the data source you from which you want to remove the relationship.
 

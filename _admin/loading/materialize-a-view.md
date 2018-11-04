@@ -10,6 +10,8 @@ permalink: /:collection/:path.html
 
 To improve the performance of a view, you can materialize it. This operation computes the data for the view and stores it in memory, just like a table. You can expect a 3-6 times performance improvement on a materialized view over a view that is not materialized. However, materialized views take up space in memory, so weigh the tradeoffs and benefits of materializing a view ahead of time.
 
+{% include note.html content="Row Level Security does not apply to materialized views. All users will see the same data when using the materialized view as a data source." %}
+
 To materialize a view:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.

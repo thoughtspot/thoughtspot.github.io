@@ -161,4 +161,4 @@ Source Administrator.
 
      ![]({{ site.baseurl }}/images/ssis_success.png "Successful import job")
 
-You can validate the import using TQL or in the **DATA** screen.
+You can validate the import using TQL or from the **Data** screen.
