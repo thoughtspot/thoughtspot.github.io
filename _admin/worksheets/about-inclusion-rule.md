@@ -20,13 +20,12 @@ Only rows in the fact table (also known as the LEFT table) are affected by the i
 |---------------|------------|
 | **Apply full outer join (Full Outer Join)** | The results of both the left and right outer joins are combined, and all matched or unmatched rows from the tables on both sides are shown.|
 | **Apply left outer join (Left Outer Join)** | All possible rows in the fact table are shown, regardless of whether they have a match in the dimension tables.|
-|  **Apply right outer join (Right Outer Join)** | All possible rows in the second table are shown, regardless of whether they have a match in the dimension tables. |
+| **Apply right outer join (Right Outer Join)** | All possible rows in the second table are shown, regardless of whether they have a match in the dimension tables. |
 | **Exclude empty rows (Inner Join)** | Any rows that do not have a match in one of the dimension tables, won't be shown in search results.|
 
 When using **Exclude empty rows (Inner Join)**, the number of rows in the
 resulting worksheet can differ from the number of rows in the table when
-accessing it directly, because of the join condition. The worksheet acts like a
-materialized view. This means that it contains the results of a defined query in
+accessing it directly, because of the join condition. The worksheet contains the results of a defined query in
 the form of a table.
 
 If you find that the charts and tables built on a worksheet contain a large number of null values (which display as `{blank}` in the web browser), you can fix this by [changing the inclusion rule for the worksheet](change-inclusion-rule.html#).
@@ -37,4 +36,4 @@ This is best understood through an example.
 
 A typical sales fact table contains a column with the employee ID of the person who made the sale. The employee ID column has a foreign key in the employee dimension table. This is the relationship used to join the two tables.
 
-Sometimes a sale has been made directly or through a reseller, without involving a sales person. In this case, the employee ID value for the sale will be empty in the fact table. If you wanted the worksheet to include all sales, regardless of whether or not they were associated with a sales person, you would choose **Include all rows (Left Outer Join)**. If you only want the worksheet to contain sales made by employees, you would choose **Exclude empty rows (Inner Join)**.
+Sometimes a sale has been made directly or through a reseller, without involving a sales person. In this case, the employee ID value for the sale will be empty in the fact table. If you wanted the worksheet to include all sales, regardless of whether or not they were associated with a sales person, you would choose **Apply left outer join (Left Outer Join)**. If you only want the worksheet to contain sales made by employees, you would choose **Exclude empty rows (Inner Join)**.

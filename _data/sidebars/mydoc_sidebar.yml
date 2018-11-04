@@ -613,6 +613,12 @@ entries:
       - title: "Change inclusion, join, or RLS for a worksheet"
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
+      - title: "Create a join relationship"
+        url: /admin/worksheets/add-joins.html
+        output: web,admBk
+      - title: "Modify joins between worksheet tables"
+        url: /admin/worksheets/mod-ws-internal-joins.html
+        output: web,admBk
       - title: Delete a worksheet or table
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk

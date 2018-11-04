@@ -1,11 +1,46 @@
 ---
-title: [Add joins to a worksheet or view]
+title: [Join a worksheet to another data source]
 keywords: worksheet view join relationship
 last_updated: 11/2/2018
-summary: "Learn how to define joins for a worksheet or view."
+summary: "Learn how to define joins between a worksheet and a table, view, or other worksheet"
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-This page is a placeholder for flexible joins in worksheets and views.
+Joining a worksheet to a table, view, or another worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the other table, view, or worksheet on the column you specify.
+
+You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to create a join relationship.
+
+When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data.
+
+To create a relationship through the Web interface:
+
+1. To find your worksheet, click **Data** in the top menu, and choose **Worksheets**.
+2. Click on the name of your worksheet.
+3. Click **Schema**. You will see the list showing existing joins within the worksheet.
+4. To view the joins between the worksheet and other data sources, click on **Joins within worksheets** and choose **Joins between worksheets**.
+
+   ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
+
+5. Click the **+ Add Join** button on the upper right side of the screen.
+
+   ![]({{ site.baseurl }}/images/ws-add-join.png "Add join")
+
+6. Use the **Map source to destination** dialog to choose the destination table, view, or worksheet you want to join to.
+
+   ![]({{ site.baseurl }}/images/ws-join-select-destination.png "Select destination table")
+
+7. Choose the columns you want to join on from the worksheet (source) and destination data source. Click **Next**.
+
+   ![]({{ site.baseurl }}/images/ws-join-select-col.png "Select columns to join on")
+
+8. Give your join a name and description and click **ADD JOIN**.
+
+9. Repeat these steps until all the joins you want to make have been created.
+
+After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you'll need to delete the join and create a new one.
+
+## Related Information
+
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
