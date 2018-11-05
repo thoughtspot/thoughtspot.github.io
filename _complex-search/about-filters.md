@@ -7,7 +7,9 @@ summary: "Filters narrow down the search result to only include the data you wan
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you add a value to your search, it becomes a filter. To add a filter from the search bar:
+When you add a value to your search, it becomes a filter. You can define filters on tables, views and worksheets. When you add a filter, it is applied to the table, view, or worksheet, so the result set only shows rows that satisfy a set of parameters specified in the filter. You can also set filters that are automatically used in every search you perform using a particular data source. For example, you can exclude inactive customers records from your search result set. To avoid typing `status = inactive` with every search you perform, you can use a filter. The complex the filter is, the more useful it is to set on the data sources (e.g. `status = inactive year = 2017 rating > 0`).
+
+To add a filter from the search bar:
 
 1. Click in the search bar and type the values you want to include in the search.
 
@@ -76,3 +78,14 @@ interest.
 You can [create a bulk filter]({{ site.baseurl}}/complex-search/create-bulk-filter.html) by pasting a list of values,
 separated by commas, semicolons, new lines, or tabs, into the bulk filter box.
 This allows you to easily search a large list of filters repeatedly.
+
+## Cascading filters
+
+If you want to apply a table filter whenever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
+When columns from that table are applied in a search, the table filter is implicitly applied to the search. All worksheet filters are accessible from the query visualizer.
+
+Consider a table with a filter that is used in a worksheet. When a search uses that worksheet, the filters are automatically applied as a part of the search.
+
+## Worksheet filters
+
+A worksheet filter gets applied every time that worksheet is used. This means that for any search involving a filtered worksheet, all worksheet filters are applied before the search is submitted. So results are always filtered, even if the specific terms searched do not include the column(s) that are filtered.
