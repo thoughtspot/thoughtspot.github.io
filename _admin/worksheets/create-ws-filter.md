@@ -6,7 +6,7 @@ summary: "You can add a filters to a worksheet to limit the data users can acces
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Beginning in ThoughtSpot version 5.0, you can add filters to a worksheet to limit the data it contains. This is useful when you have underlying tables that store more data than in necessary for the types of analyses the worksheet is intended for. You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
+Beginning in ThoughtSpot version 5.0, you can add filters to a worksheet to limit the data it contains. This is useful when you have underlying tables that store more data than is necessary for the types of analyses the worksheet is intended for. You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
 
 To add a filter to a worksheet:
 

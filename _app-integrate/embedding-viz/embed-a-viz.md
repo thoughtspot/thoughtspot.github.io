@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 The page explains, through an example, how to embed a visualization (table or
 chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
 application.
+
 To build this sample, you need to have access to a text editor and
 a ThoughtSpot instance with a visualization. You should also have some
 experience working with Javascript.
@@ -20,8 +21,11 @@ already exists. If the pinboard or visualization doesn't exist, create it now
 before continuing.
 
 1. Log in to ThoughtSpot from a browser.
+
 2. Navigate to a visualization on the **Pinboard** tab.
+
 3. Open a pinboard.
+
 3. Copy the URL for the entire pinboard and for a single visualization.
 
    If the object is a pinboard, click **Actions > Copy Link**.
