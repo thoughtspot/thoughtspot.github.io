@@ -185,7 +185,17 @@ permalink: /:collection/:path.html
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
-
+        <script src="https://fast.wistia.com/embed/medias/hlgvzajez9.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_hlgvzajez9 popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Specialized Visualizations</b></p>
+        <p>
+        Deep dive into less commonly used visualizations.
+        </p>
         </div>
 
     </div>
