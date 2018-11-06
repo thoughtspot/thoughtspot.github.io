@@ -225,7 +225,7 @@ permalink: /:collection/:path.html
    </tbody>
 </table>
 
-## Videos on earlier releases
+## Videos on older releases
 
 In this section, you'll find some additional videos you may find helpful.
 
