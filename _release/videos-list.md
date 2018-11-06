@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## Videos new in 4.5
+## Videos on ThoughtSpot 4.5
 
 <div class="component-container">
     <!--start row-->
@@ -201,7 +201,7 @@ permalink: /:collection/:path.html
     </div>
 </div>
 
-## Videos from the 4.4 release cycle
+## Videos on ThoughtSpot 4.4
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
@@ -225,7 +225,7 @@ permalink: /:collection/:path.html
    </tbody>
 </table>
 
-## Videos from older releases
+## Videos on older releases
 
 In this section, you'll find some additional videos you may find helpful.
 
