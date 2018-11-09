@@ -34,7 +34,10 @@ will not function normally.
            --server <server_NFS_address>
            --path_on_server <path>
            --mount_point <target>
+           --options vers=<version>, sec=<security scheme>, <OPTIONS>
         ```
+
+        {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
     -   For a CIFS (Common Internet File System) directory:
 
@@ -47,7 +50,10 @@ will not function normally.
            --password <password>
            --uid <uid>
            --gid <gid>
+           --options <OPTIONS>
         ```
+
+        {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}
 
 3. Use the mounted file system as you wish, specifying it by referring to its mount point.
 4. When you are finished with it, you may optionally unmount the NAS file system:
