@@ -945,8 +945,11 @@ entries:
       - title: Use the REST API to get data
         url: /app-integrate/data-api/use-data-api-read.html
         output: web,apgBk
-      - title: Use the Direct Search-to_Embed API
+      - title: Use the Direct Search-to-Embed API
         url: /app-integrate/data-api/direct-search-to-embed.html
+        output: web,apgBk
+      - title: Push data to an external application
+        url: /app-integrate/data-api/push-data-to-external-app.html
         output: web,apgBk
     - levelTwoTitle: Embed ThoughtSpot
       output: web,apgBk
