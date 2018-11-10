@@ -1,6 +1,6 @@
 ---
 title: [Advanced R Customizations]
-tags: [spotiq,customize]
+tags: [spotiq,customize, r-scripts]
 keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -73,7 +73,7 @@ column and a zip code column.
 1. Log into ThoughtSpot and go to the **Search** bar.
 2. Use **Choose Sources** to locate a source with sales and zip code data.
    This example uses **Phone Sales** data.
-3. Enter `sales zip code` in the search bar.
+3. Enter `sales store zip code` in the search bar.
 
    If your source contains the proper data, you should see something similar to
    the following:
@@ -97,7 +97,6 @@ column and a zip code column.
 7. Enter this sample script in the field.
 
     ```
-    ####R SCRIPT####
     library(ggplot2)
     set.seed(20)
     df <- data.frame(.param0, .param1)
@@ -105,20 +104,22 @@ column and a zip code column.
     cluster$cluster <- as.factor(cluster$cluster)
     png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
-    ####COLUMN BINDINGS (ONE PER LINE)####
-    Sales
-    Zip Code
     ```
+    This script binds `.param0` to `Sales` and `.param1` to the `Store Zip Code`
+    column.
 
-    This script binds `.param0` to `Sales` and `.param1` to the `Zip Code`
-    column. You can see from the script that the output should be PNG
+    You can see from the script that the output should be PNG
     (`#output_png#`).
 
 8. Check your work.
 
    ![]({{ site.baseurl }}/images/spotiq-r5.png)
 
-9. Click **Trigger Analysis**.
+
+   * Make sure that both Sales and Store Zip Code columns are selected for the column bindings.
+   * Make sure PNG is selected as the output format.
+
+9. Click **Analyze**.
 
    SpotIQ runs your analysis in the background.
 
@@ -133,7 +134,6 @@ column and a zip code column.
 You can run another R script directly on this result to get CSV results. Try this on your own. Here is the script to give you CSV output:
 
 ```
-####R SCRIPT####
 set.seed(20);
 df <- data.frame(.param0,.param1);
 cluster <- kmeans(df[1:2], 3, nstart = 20);
@@ -141,9 +141,6 @@ df$Cluster <- as.factor(cluster$cluster);
 colnames(df)[1] <- 'Sales';
 colnames(df)[2] <- 'Zip Code';
 write.csv(df, file=#output_csv#, row.names=FALSE);
-####COLUMN BINDINGS (ONE PER LINE)####
-Sales
-Zip Code
 ```
 
 ## Syntax help in the dialog

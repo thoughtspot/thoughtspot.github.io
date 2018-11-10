@@ -289,11 +289,50 @@ entries:
         - title: Copy a pinboard or visualization link
           url: /end-user/pinboards/copy-link-for-a-pinboard.html
           output: web,ugBk
-        - title: Reset a pinobard or visualization
+        - title: Reset a pinboard or visualization
           url: /end-user/pinboards/reset-a-visualization.html
           output: web,ugBk
         - title: Start a slideshow
           url: /end-user/pinboards/start-a-slideshow.html
+          output: web,ugBk
+    - levelTwoTitle: Use custom R scripts
+      output: web,ugBk
+      levelTwoItems:
+        - title: About R in ThoughtSpot
+          url: /end-user/r-scripts/about-r-in-thoughtspot.html
+          output: web,ugBk
+        - title: Create and share R scripts
+          url: /end-user/r-scripts/create-r-scripts.html
+          output: web,ugBk
+        - title: Run an R analysis
+          url: /end-user/r-scripts/use-r-analysis.html
+          output: web,ugBk
+        - title: Save and share R visualizations
+          url: /end-user/r-scripts/share-r-visualizations.html
+          output: web,ugBk
+    - levelTwoTitle: SpotIQ
+      output: web,ugBk
+      levelTwoItems:
+        - title: What is SpotIQ
+          url: /spotiq/whatisspotiq.html
+          output: web,ugBk
+        - title: "101: Load and analyze data"
+          url: /spotiq/overview.html
+          output: web,ugBk
+        - title: "101: Review and save insights"
+          url: /spotiq/work-with-insights.html
+          output: web,ugBk
+        - title: "101: Do more with SpotIQ"
+          url: /spotiq/spotiq-customize.html
+          output: web,ugBk
+        - title: "Best SpotIQ Practices"
+          url: /spotiq/special-topics.html
+          output: web,ugBk
+        - title: "Custom SpotIQ analysis"
+          url: /spotiq/customization.html
+          output: web,ugBk
+        - title: "Advanced R Customizations"
+          url: /spotiq/adv-customize-withr.html
           output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
@@ -313,30 +352,6 @@ entries:
         - title: Date and currency format settings
           url: /end-user/locale.html
           output: web,ugBk
-        - levelThreeTitle: SpotIQ
-          output: web,ugBk
-          levelThreeItems:
-          - title: What is SpotIQ
-            url: /spotiq/whatisspotiq.html
-            output: web,ugBk
-          - title: "101: Load and analyze data"
-            url: /spotiq/overview.html
-            output: web,ugBk
-          - title: "101: Review and save insights"
-            url: /spotiq/work-with-insights.html
-            output: web,ugBk
-          - title: "101: Do more with SpotIQ"
-            url: /spotiq/spotiq-customize.html
-            output: web,ugBk
-          - title: "Best SpotIQ Practices"
-            url: /spotiq/special-topics.html
-            output: web,ugBk
-          - title: "Custom SpotIQ analysis"
-            url: /spotiq/customization.html
-            output: web,ugBk
-          - title: "Advanced R Customizations"
-            url: /spotiq/adv-customize-withr.html
-            output: web,ugBk
         - levelThreeTitle: Share your work
           output: web,ugBk
           levelThreeItems:
