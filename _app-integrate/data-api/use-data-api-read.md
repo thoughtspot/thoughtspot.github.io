@@ -6,12 +6,16 @@ summary: "This procedure shows how to use the REST API to get data out of Though
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
+Data retrieved using the REST API is returned as JSON (JavaScript Object Notation).
+
+Before you can use the REST API, you need to enable the [JavaScript API (JS API)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
 
 Use this procedure to construct the URL you will use to call the REST API:
 
 1. Log in to ThoughtSpot from a browser.
+
 2. Navigate to the pinboard from which you want to get data. If it doesn't exist yet, create it now.
+
 3. Find the ID number of the object you want to get the data from. If the object is:
     -   A pinboard, click **Actions** and select **Copy Link**.
 
@@ -49,6 +53,8 @@ Use this procedure to construct the URL you will use to call the REST API:
     ```
 
 6. If you want to apply any filters to the data that will be returned, apply [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#).
+
 7. Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
   The REST API returns the data formatted as JSON.
+
 8. Retrieve the data from the JSON and display it in your Web page, Web portal, or application.

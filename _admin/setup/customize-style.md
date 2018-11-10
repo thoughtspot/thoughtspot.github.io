@@ -88,7 +88,9 @@ To set a new font:
 ![]({{ site.baseurl }}/images/custom-style-font.png)
 
 1. Make sure you have a WOFF file available for your font.
+
 2. Select the label you want to change.
+
 3. Press the **+** button.
 
    The system displays the **Custom Font** dialog.
@@ -102,3 +104,14 @@ To set a new font:
    The file appears in the font dialog
 
 6. Press **Save** to change the font.
+
+## How to specify the behavior or clickable links in data
+
+There is a system-wide setting which determines what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.
+
+Changing this setting opens the links:
+
+|Link type|Opens in|
+|Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
+|Link in table embedded in an iFrame|Same iFrame that contains the table|
+|Link in full ThoughtSpot application embedded in an iFrame|Same iFrame that contains the application|

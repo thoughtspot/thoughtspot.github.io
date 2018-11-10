@@ -57,6 +57,18 @@ Only Extended Enterprise installation can use ThoughtSpot's embed functionality.
 ThoughtSpot Enterprise installations must also work with ThoughtSpot Support to
 enable embed before using this functionality.
 
+### Optional settings for embedding
+
+There are some settings that apply to embedding which ThoughtSpot Support or your other ThoughtSpot technical contact can make for you. 
+
+One of these involves what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.
+
+Changing this setting opens the links:
+
+|Link type|Opens in|
+|Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
+|Link in table embedded in an iFrame|Same iFrame that contains the table|
+|Link in full ThoughtSpot application embedded in an iFrame|Same iFrame that contains the application|
 
 ## Choose an authentication methodology
 

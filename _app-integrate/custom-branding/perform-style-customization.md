@@ -20,9 +20,8 @@ make the visualizations match the look and feel of the portal or application in
 which they are embedded. For more information on using the APIs, see the
 ThoughtSpot Application Integration Guide.
 
-To enable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
-in the middle of the page is automatically removed when Style Customization is
-enabled.
+Style customization is enabled by default beginning in ThoughtSpot version 5.0. To disable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
+in the middle of the page is automatically removed when Style Customization is enabled.
 
 ## Change style customization
 
@@ -31,6 +30,7 @@ Make changes to the style of your ThoughtSpot interface in the **Style Customiza
 To re-brand the interface:
 
 1. Log in to ThoughtSpot from a browser.
+
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
