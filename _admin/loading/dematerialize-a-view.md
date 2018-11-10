@@ -19,6 +19,8 @@ To dematerialize a view:
 
    ![]({{ site.baseurl }}/images/materialization-dialog-on.png)
 
+   You will see a warning message that the data in the view will be removed from memory. Click **Remove** to confirm.
+
 7. You can see the status of the dematerialization as it progresses. Click **Update status** to refresh it.
 
    Remember that at this point your view is still searchable. It just isn't materialized into memory. If you want to remove the view altogether, you still need to delete the view.

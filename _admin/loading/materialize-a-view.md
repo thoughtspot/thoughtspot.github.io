@@ -22,9 +22,9 @@ To materialize a view:
 
 4. If needed, [add joins]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
 
-5. Under **Materialization**, find **Materialize** and click the checkbox.
+5. Under **Materialization**, click **Materialize**.
 
-   ![]({{ site.baseurl }}/images/materialization-dialog-off.png)
+   ![]({{ site.baseurl }}/images/materialization_dialog_off.png)
 
 6. Fill in the details for [primary key]({{ site.baseurl }}/admin/loading/constraints.html), [sharding key, and number of shards]({{ site.baseurl }}/admin/loading/sharding.html).
 
@@ -46,7 +46,11 @@ To materialize a view:
 
 10. Click **Update**.
 
-11. You can see the status of the materialization as it progresses. Click **Update status** to refresh it. When it says **Materialized** your materialized view is ready for search.
+11. You can see the status of the materialization as it progresses. Click **Update status** to refresh it.
+
+    ![]({{ site.baseurl }}/images/materialization-update-status.png)
+
+12. When it says **Materialized** your materialized view is ready for search.
 
     ![]({{ site.baseurl }}/images/materialization-dialog-on.png)
 
