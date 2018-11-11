@@ -13,11 +13,11 @@ Fully embedding ThoughtSpot content gives your users the ability to:
 -   upload data and refresh uploaded data
 -   relate uploaded data with existing worksheets
 
-This is useful for supplyt he full search experience into an iframe with
+This is useful for supplying the full search experience into an iframe with
 different navigation views and toggle options. However, there are limitations.
 Users won't be able to:
 
--   create worksheets, both regular and aggregated.
+-   create worksheets or views.
 -   modify profiles.
 -   view the Help Center.
 
