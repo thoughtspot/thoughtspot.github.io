@@ -355,6 +355,18 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
+    - levelTwoTitle: Use SearchIQ
+      output: web,ugBk
+      levelTwoItems:
+        - title: About SearchIQ
+          url: /end-user/search/about-searchiq.html
+          output: web,ugBk
+        - title: Use SearchIQ for natural searches
+          url: /end-user/search/use-searchiq.html
+          output: web,ugBk
+        - title: Teach SearchIQ your language
+          url: /end-user/search/teach-searchiq.html
+          output: web,ugBk
     - levelTwoTitle: Slack and ThoughtSpot
       output: web,ugBk
       levelTwoItems:
@@ -459,6 +471,9 @@ entries:
         output: web,admBk
       - title: Push data to another system
         url: /admin/setup/push-data-to-other-system.html
+        output: web,admBk
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
         output: web,admBk
       - title: Add the Slack integration
         url: /admin/setup/slack-integration.html

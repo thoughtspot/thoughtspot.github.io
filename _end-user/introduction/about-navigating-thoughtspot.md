@@ -11,7 +11,6 @@ These are the different sections in ThoughtSpot:
 
 ![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
 
-
 ## Home
 
 Click the ThoughtSpot logo to go to the application home page. At the top of the
@@ -24,8 +23,8 @@ home page is a search bar and below that several areas that show activity in you
 </colgroup>
 <thead class="thead" style="text-align:left;">
    <tr>
-      <th>Keyword</th>
-      <th>Examples</th>
+      <th>Label</th>
+      <th>Description</th>
    </tr>
 </thead>
 <tbody class="tbody">
@@ -69,11 +68,15 @@ and other objects you have access to. For example, if you don't have the ability
 to use SpotIQ, that option does not appear.
 
 
-## Search
+## Search or Search+
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
+If SearchIQ has been enabled by your administrator, this label will say **Search+** to differentiate it from SearchIQ. In this case, you'll go to the search bar on the homepage to use SearchIQ.
+
 To learn more about this section, visit [About search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html#).
+
+To learn more about SearchIQ, visit [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#).
 
 ## Answers
 
@@ -85,6 +88,12 @@ Pinboards are collections of related search results. You can create your own pin
 
 To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 
+## SpotIQ
+
+If SpotIQ has been enabled by your administrator, you can go here to view the status of your request after you choose **Auto Analyze** or **Custom Analyze**, and to see the results.
+
+To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/end-user/spotiq/whatisspotiq.html#).
+
 ## Data
 
 **Data** contains a list of data sources (tables and worksheets). These are usually loaded and managed by your administrator. However, you may be able to import a spreadsheet (Excel or CSV) here, if you have the correct privileges.
@@ -93,17 +102,21 @@ To learn more about this section, visit [Working with data]({{ site.baseurl }}/e
 
 ## Admin
 
-**Admin** only appears if you have administrator privileges. This section is covered in the ThoughtSpot Administrator Guide.
+**Admin** only appears if you have administrator privileges.
 
-## Help
+This section is covered in the [ThoughtSpot Administrator Guide]({{ site.baseurl }}/admin/intro.html#).
 
-**Help** is a support resource for ThoughtSpot. It contains short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+## Help Icon
 
-## User
+The help icon looks like two people. You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+
+To learn more about this section, visit [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html#).
+
+## User Icon
 
 The **user icon** allows you to either view your preferences or log out. You can also change your icon here.
 
-To learn more about this section, visit [About the user profile](about-user.html).
+To learn more about this section, visit [About the user profile]({{ site.baseurl }}/end-user/introduction/about-user.html).
 
 
 ## Related information
