@@ -24,10 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {alert,backup,backup-policy,callhome,cluster,command,dr-mirror,etl,event,
-             feature,fileserver,firewall,hdfs,ldap,logs,map-tiles,monitoring,nas,node,
-             os,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,
-             support}
+           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -50,10 +47,21 @@ A subcommand itself may have several options.
 
 This section lists each subcommand and its syntax.
 
-### alert subcommand
+### access
 
 ```
-tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
+tscli access [-h] {list} ...
+```
+
+Use this subcommand to do the following:
+
+* `tscli access list` Lists objects by last access time.
+
+
+### alert
+
+```
+tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence} ...
 ```
 
 Use this subcommand to do the following:
@@ -71,22 +79,18 @@ Use this subcommand to do the following:
 
 * `tscli alert unsilence-name` *`alert_name`*
 
-   Unsilences the alert with `*`alert_name`*`. For example, `DISK_ERROR`.
+   Unsilences the alert with *`alert_name`*. For example, `DISK_ERROR`.
 
 
-### backup subcommand
+### backup
 
 ```
-tscli backup [-h] {create,delete,ls,restore}
+tscli backup [-h] {create,delete,ls,restore} ...
 ```
 
 Use this subcommand to do the following:
 
-
-* `tscli backup create [-h] [--mode {full,light,dataless}]
-                           [--type {full,incremental}] [--base BASE]
-                           [--storage_type {local,nas}] [--remote]
-                           name out`
+* `tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] [--storage_type {local,nas}] [--remote] name out`
 
     Pulls a snapshot and saves it as a backup where:
 
@@ -117,7 +121,7 @@ Use this subcommand to do the following:
 ### backup-policy
 
 ```
-tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
+tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update} ...
 ```
 
 Use this subcommand to do the following:
@@ -136,7 +140,7 @@ Use this subcommand to do the following:
 ### callhome
 
 ```
-tscli callhome [-h] {disable,enable,generate-bundle}
+tscli callhome [-h] {disable,enable,generate-bundle} ...
 ```
 
 Use this subcommand to do the following:
@@ -163,22 +167,34 @@ Use this subcommand to do the following:
       last `7` days by default.
 
 
+### cassandra
+
+```
+tscli cassandra [-h] {backup,restore} ...
+```
+
+Use this subcommand to do the following:
+
+* `tscli cassandra backup` Take a backup of cassandra
+* `tscli cassandra restore` Restore cassandra from a backup
+
+
 ### cluster
 
 ```
-tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os,report,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,show-resource-spec,start,status,stop,update,update-hadoop}
+tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os,report,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,show-resource-spec,start,status,stop,update,update-hadoop} ...
 ```
 
 Use this subcommand to do the following:
 
 * `tscli cluster abort-reinstall-os` Abort in-progress reinstall.
-* `tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}` check the status nodes in the cluster.
+* `tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}` Check the status nodes in the cluster.
 
    You must specify a component to check.
 
 * `tscli cluster create` *`release`*
 
-    Creates a new cluster from the release file specified by  `*`release`*`. This command is used by ThoughtSpot Support when installing a new cluster, for example, `tscli cluster create 2.0.4.tar.gz`
+    Creates a new cluster from the release file specified by  *`release`*. This command is used by ThoughtSpot Support when installing a new cluster, for example, `tscli cluster create 2.0.4.tar.gz`
 
 * `tscli cluster get-config` Get current cluster network and time configuration. Prints JSON configuration to stdout.
 If for some reason the system cannot be connected to all interfaces, the command returns an error but continues to function.
@@ -203,7 +219,7 @@ If for some reason the system cannot be connected to all interfaces, the command
 ### command
 
 ```
-tscli command [-h] {run}
+tscli command [-h] {run} ...
 ```
 
 Command to run a command on all nodes.
@@ -219,7 +235,7 @@ Command to run a command on all nodes.
 ###  dr-mirror
 
 ```
-tscli dr-mirror [-h] {start,status,stop}
+tscli dr-mirror [-h] {start,status,stop} ...
 ```
 
 * `tscli dr-mirror start` Starts a mirror cluster which will continuously recover from a primary cluster.
@@ -230,7 +246,7 @@ tscli dr-mirror [-h] {start,status,stop}
 ### etl
 
 ```
-tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
+tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw} ...
 ```
 
 * `tscli etl change-password --admin_username` *`admin_user`*  `--username` *`Informatica_user`*`
@@ -263,7 +279,7 @@ tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
 ### event
 
 ```
-tscli event [-h] {list}
+tscli event [-h] {list} ...
 ```
 
 This subcommand has the following actions:
@@ -284,7 +300,7 @@ This subcommand has the following actions:
 ### feature
 
 ```
-tscli feature [-h] {get-all-config}
+tscli feature [-h] {get-all-config} ...
 ```
 This subcommand has the following actions:
 
@@ -294,7 +310,7 @@ This subcommand has the following actions:
 ### fileserver
 
 ```
-tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
+tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload} ...
 ```
 
 This subcommand has the following actions:
@@ -324,7 +340,7 @@ This subcommand has the following actions:
 ### firewall
 
 ```
-tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
+tscli firewall [-h] {close-ports,disable,enable,open-ports,status} ...
 ```
 
 * `tscli firewall close-ports`
@@ -336,7 +352,7 @@ tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 
 * `tscli firewall disable` Disable firewall.
 * `tscli firewall enable` Enable firewall.
-* `tscli firewall open-ports *`ports`*`
+* `tscli firewall open-ports` *`ports`*
 
    Opens given ports through firewall on all nodes. Takes a list of ports to
    open, comma separated. Ignores ports which are already open. Some essential
@@ -349,17 +365,31 @@ tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 ### hdfs
 
 ```
-tscli hdfs [-h] {leave-safemode}
+tscli hdfs [-h] {leave-safemode} ...
 ```
 
 This subcommand has the following actions:
 
 `tscli hdfs leave-safemode`  Command to get HDFS namenodes out of safemode.
 
+
+### ipsec
+
+```
+tscli ipsec [-h] {disable,enable,status} ...
+```
+
+This subcommand has the following actions:
+
+`tscli ipsec disable`  Disable IPSec
+`tscli ipsec enable`  Enable IPSec
+`tscli ipsec status`  Show IPSec status on all nodes
+
+
 ### ldap
 
 ```
-tscli ldap [-h] {add-cert,configure,purge-configuration}
+tscli ldap [-h] {add-cert,configure,purge-configuration} ...
 ```
 
 This subcommand has the following actions:
@@ -373,11 +403,7 @@ This subcommand has the following actions:
 * `tscli ldap configure`
 
    Configures LDAP using an interactive script. You can see detailed
-   instructions for setting up LDAP in <a class="xref"
-   href="{{"/admin/setup/about-LDAP.html" | prepend: site.baseurl }}" title="Some companies use
-   LDAP (Lightweight Directory Access Protocol) to manage user authentication.
-   Using LDAP provides security and makes user management more
-   centralized.">About LDAP integration</a>.
+   instructions for setting up LDAP in [About LDAP integration]({{ site.baseurl }}/admin/setup/about-LDAP.html).
 
 * `tscli ldap purge-configuration` Purges (removes) any existing LDAP configuration.
 
@@ -385,7 +411,7 @@ This subcommand has the following actions:
 ### logs
 
 ```
-tscli logs [-h] {collect,runcmd}
+tscli logs [-h] {collect,runcmd} ...
 ```
 
 This subcommand has the following actions:
@@ -427,7 +453,7 @@ This subcommand has the following actions:
 
 
 * `tscli logs runcmd [-h] --cmd` `CMD [--include` *`INCLUDE`*`] [--exclude` *`EXCLUDE`*`]
-[--since` `SINCE``] [--from` *`FROM`*`] [--to` *`TO`*`] [--outfile` *`OUTFILE`*`] [--outdir` *`OUTDIR`*`]
+[--since` `SINCE] [--from` *`FROM`*`] [--to` *`TO`*`] [--outfile` *`OUTFILE`*`] [--outdir` *`OUTDIR`*`]
 [--cmd_infmt` *`CMD_INFMT`*`] [--cmd_outfmt` *`CMD_OUTFMT`*`] [--nodes` *`NODES`*`]`
 
 
@@ -488,7 +514,7 @@ This subcommand has the following actions:
 ### map-tiles
 
 ```
-tscli map-tiles [-h] {disable,enable}
+tscli map-tiles [-h] {disable,enable,status} ...
 ```
 
 This subcommand supports the following actions:
@@ -504,10 +530,13 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles disable ` Disable map-tiles functionality.
 
+* `tscli map-tiles status ` Check whether map-tiles is enabled.
+
+
 ### monitoring
 
 ```
-tscli monitoring [-h] {set-config,show-config}
+tscli monitoring [-h] {set-config,show-config} ...
 ```
 
 This subcommand has the following actions:
@@ -523,10 +552,11 @@ This subcommand has the following actions:
 
 * `tscli monitoring show-config` Shows the monitoring configuration.
 
+
 ### nas
 
 ```
-tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
+tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount} ...
 ```
 
 This subcommand has the following actions:
@@ -611,6 +641,43 @@ This subcommand has the following actions:
   * `--cluster` Is the node part of a cluster (default: `False`)
 * `tscli node resume-reinstall-os` Resume in-progress reinstall
 
+
+### patch
+
+```
+tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback} ...
+```
+
+This subcommand has the following actions:
+
+* `tscli patch apply [-h] [` *`release`*`]`
+
+  Apply the patch on an existing cluster. Takes the following parameters:
+
+  * *`release`*  The relative path to the patch tar ball
+
+* `tscli patch ls [-h]  [--applied] [--rolled_back] [--service SERVICE]
+                      [--md5 MD5] [--history]` Lists the patches currently applied. This takes the following parameters:
+
+  * `--applied` Show only the patches applied since last full release (default: ` False` )
+  * `--rolled_back` Show only the patches rolled back since last full release (default: ` False` )
+  * `--service SERVICE` Show patches filtered by service (default: ` None` )
+  * `--md5 MD5` Shows the details of the patch specified (default: ` None` )
+  * `--history` Shows the history of all patch apply/rollback release (default: ` False` )
+
+* `tscli patch resume-apply [-h]`
+
+  Resume patch apply
+
+* `tscli patch resume-rollback [-h]`
+
+  Resume patch roll-backup
+
+* `tscli patch rollback [-h]`
+
+  Rollback the patch from an existing cluster
+
+
 ### rpackage
 
 ```
@@ -618,7 +685,6 @@ tscli rpackage [-h] {add,delete,list} ...
 ```
 
 Manages R packages available to SpotIQ.
-
 
 * `tscli rpackage add [-h] [--repo` *`REPO`*`] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`]
 [--nodes` *`NODES`*`]` *`package_name`*  Command to add an R *`package_name`*  to the cluster. This command has the following options:
@@ -637,8 +703,6 @@ Manages R packages available to SpotIQ.
 * `tscli rpackage list [-h] [--detailed]`  List all R packages installed on the cluster.
 
 
-
-
 ### saml
 
 ```
@@ -649,6 +713,7 @@ This subcommand has the following actions:
 
 * `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html).
 * `tscli saml purge-configuration` Purges any existing SAML configuration.
+
 
 ### scheduled-pinboards
 
@@ -668,18 +733,26 @@ Support for help configuring a whitelist." %}
 ###  smtp
 
 ```
-tscli smtp [-h] {reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
+tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
 ```
 
 This subcommand takes supports the following actions:
 
+* `tscli smtp remove-mailfromname` Removes current cluster mailfromname
+* `tscli smtp remove-mailname` Removes current cluster mailname
+* `tscli smtp remove-relayhost` Removes current cluster relayhost
+* `tscli smtp remove-saslcredentials` Clears SASL credentials and disables SMTP AUTH
+
 * `tscli smtp reset-canonical-mapping` Deletes the current postmap mapping.
+
 * `tscli smtp set-canonical-mapping [-h]` *`new_key`* *`new_value`* Sets a new Postmap mapping.
 * `tscli smtp set-mailfromname` *`mailfromname`* Sets the name, an email address, from which email alerts are sent, for the cluster.
 * `tscli smtp set-mailname` *`mailname`* Sets the mailname, a domain, where email alerts are sent, for the cluster.
 * `tscli smtp set-relayhost [-h] [--force FORCE] relayhost` Sets the Relay Host for SMTP (email) sent from the cluster.
 
   * `--force` *`FORCE`*  Set even if relay host is not accessible. (default: `False`)
+
+* `tscli smtp set-saslcredentials` Sets SASL credentials and enables SMTP AUTH
 
 * `tscli smtp show-canonical-mapping` Shows the current postmap mapping.
 * `tscli smtp show-mailfromname` Shows the mailname, from which email alerts are sent, for the cluster.
@@ -689,7 +762,7 @@ This subcommand takes supports the following actions:
 ### snapshot
 
 ```
-tscli snapshot [-h] {backup,create,delete,ls,restore,update-ttl}
+tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl}
 ```
 
 Learn more about snapshots and backups see the [Understand the backup strategies]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html) documentation.
@@ -716,12 +789,15 @@ This subcommand supports the following actions:
   parameters is the number of days after which this snapshot will be
   automatically deleted. A value of `-1` disables automatic deletion.
 
+* `tscli snapshot pin [-h]` *`name`*  Pins a snapshot so it cannot be deleted or garbage collected.
 * `tscli snapshot delete [-h]` *`name`*  Deletes the named snapshot.
 * `tscli snapshot ls [-h]` List available snapshots.
 * `tscli snapshot restore [-h] [--allow_release_change] [--only_service_state]` *`name`* Restore cluster to an existing snapshot. This takes the following parameters:
 
   * `--allow_release_change` Allow restoration to a snapshot at a different release. (default: `False`)
   * `--only_service_state` Restore only service state. (default: `False`)
+
+* `tscli snapshot unpin [-h]` *`name`*  Unpin a snapshot so it can be deleted or garbage collected.
 
 * `tscli snapshot update-ttl [-h] [--disable` *`DISABLE`* `]` *`name`* *`ttl`*
 
@@ -731,6 +807,7 @@ This subcommand supports the following actions:
   * `ttl` Extends the manual snapshot `ttl` (time-to-live) value. Use a positive value to increase `ttl`. Use negative value to decrease it.
   * `--disable` *`DISABLE`* Disable manual snapshot garbage collection. Setting this value to `True` will
     override any `ttl` value. (default: False)
+
 
 ### snapshot-policy
 
@@ -751,7 +828,7 @@ This subcommand supports the following actions:
 ### spot
 
 ```
-tscli spot [-h] {enable}
+tscli spot [-h] {enable} ...
 ```
 
 Enables Spot integration.  This subcommand supports the following actions:
@@ -767,7 +844,7 @@ Enables Spot integration.  This subcommand supports the following actions:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
 ```        
 
 This subcommand supports the following actions:
@@ -786,10 +863,11 @@ This subcommand supports the following actions:
 * `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
 
+
 ### storage
 
 ```
-tscli storage [-h] gc df
+tscli storage [-h] {gc,df} ...
 ```
 
 This subcommand supports the following actions:
@@ -827,11 +905,12 @@ This subcommand supports the following actions:
 
    Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`.
 
+
 ### support
 
 ```
 tscli support [-h]
-{restart-remote,rm-admin-email, rm-admin-phone, rm-feedback-email, set-admin-email, set-admin-phone, set-feedback-email, set-remote, show-admin-email, show-admin-phone, show-feedback-email, show-remote, start-remote, stop-remote}
+{bundle,restart-remote,rm-admin-email,rm-admin-phone,rm-feedback-email,set-admin-email,set-admin-phone,set-debug-ui-password,set-feedback-email,set-remote,show-admin-email,show-admin-phone,show-feedback-email,show-remote,start-remote,stop-remote} ...
 
 ```
 
@@ -886,6 +965,7 @@ nodes. (default: None)
 * `tscli support show-remote` Shows the status and configuration of remote support.
 * `tscli support start-remote` Starts remote support.
 * `tscli support stop-remote` Stops remote support.
+
 
 ### tokenauthentication
 
