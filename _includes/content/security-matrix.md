@@ -31,7 +31,7 @@
             </div>
          </th>
          <th class="rotate">
-            <div><span>Create Agg WS</span></div>
+            <div><span>Create View</span></div>
          </th>
          <th class="rotate">
             <div><span>
@@ -93,7 +93,7 @@
    </thead>
    <tbody>
       <tr>
-         <td>Has administration privilege </td>
+         <td>Can administer ThoughtSpot</td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -185,29 +185,6 @@
          <td>Y</td>
          <td>N</td>
          <td>N</td>
-      </tr>
-      <tr>
-         <td>
-            <div>Can Auto-Analyze</div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>
-            <div>Y<sup>4</sup></div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>Y</td>
       </tr>
       <tr>
          <td>Can schedule pinboards</td>
