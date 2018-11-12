@@ -155,6 +155,16 @@ you can also add or exclude some groups or filters.</p>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="FiscalCalendarInDateFormulas"></a>Fiscal calendar in date formulas</h3>
+<p>Several date functions now support the ability to indicate either a <tt>fiscal</tt> or Gregorian calendar (<tt>calendar</tt>) on which to base date calculations.  If no calendar type is specified, formulas default to standard Gregorian, with the year starting in January.
+</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="CustomRScriptsOnSearchResults"></a>Custom R scripts on search results</h3>
 <p>The ability to add custom R scripts is now available as part of the Search page.
 In previous releases, custom R scripts were an option only on SpotIQ custom analysis.
@@ -249,7 +259,7 @@ bad actor ThoughtSpot servers.
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="MoreLocalizationInGA"></a>More Localization in GA</h3>
+<h3><a name="MoreLanguagePreferencesInGA"></a>More language preferences in GA</h3>
 <p>Several language options for browser display have moved from BETA to GA to now include
 Français (Canada), Français (France), Português (Brasil), 中文 (简体), and Español (latín).
 Users can change their Locale preference on the ThoughtSpot Profile page.</p>
