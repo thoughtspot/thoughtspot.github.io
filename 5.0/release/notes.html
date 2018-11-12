@@ -3067,6 +3067,20 @@ var ss360Config = {
 <div>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="worksheetfilters"></a>Worksheet filters</h3>
+<p>You can now add filters to a worksheet to limit the set of data it contains.
+This is useful when you have underlying tables that store more data than necessary
+for the types of analyses the worksheet is intended for.
+You can also use worksheet filters to provide data security when you have different groups
+of users that are trying to access different types of data without relying on row level security.</p>
+</div>
+</td>
+</tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -3144,11 +3158,22 @@ scripts on top of their search results.</p>
 </td>
 </tr>
 
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="stacked"></a>New chart type: Stacked bar chart</h3>
+<p>Stacked bar charts are the equivalent of stacked column charts,
+but with a horizontal orientation. Some types of data are easier to understand
+when shown in a stacked bar rather than a stacked column chart.</p>
+</div>
+</td>
+</tr>
+
 
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Abilitytoincludeorexcludevalues%2Cincludingnullvalues"></a>Ability to include or exclude values, including null values</h3>
+<h3><a name="excludevalues"></a>Ability to include or exclude values, including null values</h3>
 <p>Filters on columns, pinboards, and worksheets now give you the ability to include or exclude values. In past releases, you could only choose values to include. This change makes it easy to see all values except for one or more values. Bulk filters also work with exclude.</p>
 <p>When selecting a filter from a list of values, the null value is now available for filtering. You can choose to include or exclude the null value. This allows you to easily see where null (missing) values exist in the data. This can be helpful when looking for dirty or incomplete data.</p>
 </div>
@@ -3179,6 +3204,56 @@ scripts on top of their search results.</p>
 </div>
 </td>
 </tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="excludefilters"></a>Exclude filters</h3>
+<p>When defining a filter for a column or worksheet, you can now choose values to exclude as well as to include. In past releases, it was difficult to do a not equals filter. Now you can define an exclude filter in any of these ways:
+by choosing from a list of values
+by adding a bulk exclude filter
+by using != operator in the search bar</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="searchranking"></a>Search suggestion ranking improvement</h3>
+<p>The rules that determine the ranking of search suggestions have been adjusted to more closely
+match what most users expect. For example, suggestions that match what you've
+typed so far can move up in the suggestion ranking, but not down.
+Suggestions that match the beginning of what you're typing appear
+higher than ones that have a match in the middle of a phrase.
+These changes make suggestions more useful and the search experience more intuitive.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="SearchIQ"></a>SearchIQ is now available for all</h3>
+<p>SearchIQ is a different search experience that understands more natural, speech-like search language than the current search function. For example, a user could search for “What was my top selling product last month?”, instead of having to type “top 1 product by sales last month”. You can also speak your search using the voice-to-text capability of your operating system.
+You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from column names or values. In order to give it time to learn, the best practice recommendation is to enable SearchIQ for a small group of users. Over time you can roll it out to larger groups as SearchIQ learns what your users search for the most.
+SearchIQ is turned off by default, but you can enable it by asking ThoughtSpot Support to turn it on for your cluster.
+For each group that should have access to the SearchIQ experience,
+you’ll need to grant them the “Can use experimental features” permission.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="flexibleaggregations"></a>Flexible Aggregations</h3>
+<p>The 5.0 release introduces flexible aggregations to enable you to aggregate measures using filters and aggregation dimensions that might be different from the ones that are used in the search. For example, you might need to compare yearly sales against the monthly sales for each product category or you might need to compare against the total sales of only active products.
+</p>
+</div>
+</td>
+</tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -3202,6 +3277,7 @@ scripts on top of their search results.</p>
 </div>
 </td>
 </tr>
+
 
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
