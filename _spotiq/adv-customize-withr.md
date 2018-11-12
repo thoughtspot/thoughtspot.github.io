@@ -49,7 +49,7 @@ script in a form suitable for ThoughtSpot:
 ####R SCRIPT####
 df <- data.frame(.param0,.param1, ...);
 ...
-write.csv(..., file=#output_csv#, ...);
+write.csv(..., file=#output_file#, ...);
 ```
 
 Notice that `.param0` refers to first column in column binding and `.param1`
@@ -97,6 +97,7 @@ column and a zip code column.
 7. Enter this sample script in the field.
 
     ```
+    ####R SCRIPT####
     library(ggplot2)
     set.seed(20)
     df <- data.frame(.param0, .param1)
@@ -104,6 +105,9 @@ column and a zip code column.
     cluster$cluster <- as.factor(cluster$cluster)
     png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
+    ####COLUMN BINDINGS (ONE PER LINE)####
+    Sales
+    Zip Code
     ```
     This script binds `.param0` to `Sales` and `.param1` to the `Store Zip Code`
     column.
@@ -134,13 +138,14 @@ column and a zip code column.
 You can run another R script directly on this result to get CSV results. Try this on your own. Here is the script to give you CSV output:
 
 ```
+###R SCRIPT####
 set.seed(20);
 df <- data.frame(.param0,.param1);
 cluster <- kmeans(df[1:2], 3, nstart = 20);
 df$Cluster <- as.factor(cluster$cluster);
 colnames(df)[1] <- 'Sales';
 colnames(df)[2] <- 'Zip Code';
-write.csv(df, file=#output_csv#, row.names=FALSE);
+write.csv(df, file=#output_file#, row.names=FALSE);
 ```
 
 ## Syntax help in the dialog
