@@ -16,7 +16,7 @@ permalink: /:collection/:path.html
 
 <h2>Supported upgrade paths</h2>
 
-<p><br />If you are running one of the following releases, you can upgrade to this release directly.</p>
+<p>If you are running one of the following releases, you can upgrade to this release directly.</p>
 <ul>
 <li>4.4.1.x to 5.0</li>
 <li>4.5. to 5.0</li>
@@ -25,19 +25,135 @@ permalink: /:collection/:path.html
 <p>(This incudes any hotfixes or customer patches on these branches.)</p>
 <p>If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.</p>
 
-<a name="5-0-new-features-and-functionality"></a>
+<p><a name="5-0-new-features-and-functionality"></a></p>
 <h2>5.0 New Features and Functionality</h2>
-
 <div>&nbsp;</div>
 <div>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Worksheetfilters"></a>Worksheet filters</h3>
+<p>You can now add filters to a worksheet to limit the set of data it contains.
+This is useful when you have underlying tables that store more data than necessary
+for the types of analyses the worksheet is intended for.
+You can also use worksheet filters to provide data security when you have different groups
+of users that are trying to access different types of data without relying on row level security.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Improvementsinthevisualizationconfigurationworkflowandydesign"></a>Improvements in the visualization configuration workflow and design</h3>
+<p>Switching from table to chart is now a toggle button rather than two separate icons. To change the chart type, you now use a separate button. This makes changing the chart type more intuitive.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/chart_table_toggle.png"| prepend: site.baseurl }}"/></p>
+
+<p>The chart configuration icons now appear in a vertical panel, to the right of the visualization.
+This provides a cleaner look, and more real estate to display the visualization. The more information icon has also been moved to this panel.
+They style icon has been added for easy access to setting display properties, including colors.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/chart_configuration_icons.png"| prepend: site.baseurl }}"/></p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Excludefilters"></a>Exclude filters</h3>
+<p>When defining a filter for a column or worksheet, you can now choose values to
+exclude as well as to include. In past releases, it was difficult to create a "not equals" filter. Now you can define an exclude filter in any of these ways:</p>
+<ul>
+<li>by choosing from a list of values</li>
+<li>by adding a bulk exclude filter</li>
+<li>by using != operator in the search bar</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Searchranking"></a>Search ranking</h3>
+<p>The rules that determine the ranking of search suggestions have been adjusted to more closely
+match what most users expect.
+For example, suggestions that match what you've
+typed so far can move up in the suggestion ranking, but not down.
+Suggestions that match the beginning of what you're typing appear
+higher than ones that have a match in the middle of a phrase.
+These changes make suggestions more useful and the search experience more intuitive.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Searchiq"></a>SearchIQ</h3>
+<p>SearchIQ is a different search experience that understands more natural, speech-like search language than the current search function. For example, a user could search for “What was my top selling product last month?”, instead of having to type “top 1 product by sales last month”. You can also speak your search using the voice-to-text capability of your operating system.
+You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from column names or values. In order to give it time to learn, the best practice recommendation is to enable SearchIQ for a small group of users. Over time you can roll it out to larger groups as SearchIQ learns what your users search for the most.
+SearchIQ is turned off by default, but you can enable it by asking ThoughtSpot Support to turn it on for your cluster.
+For each group that should have access to the SearchIQ experience,
+you’ll need to grant them the “Can use experimental features” permission.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Flexibleaggregations"></a>Flexible aggregations</h3>
+<p>The 5.0 release introduces flexible aggregations to enable you to aggregate measures
+  using filters and aggregation dimensions that might be different from the ones that
+  are used in the search. For example, you might need to compare yearly sales against
+  the monthly sales for each product category or you might need to compare against
+  the total sales of only active products.
+</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="FlexibleJoinsinWorksheets"></a>Flexible Joins in Worksheets</h3>
+<p>This version of ThoughtSpot introduces flexible join types to give you more options and an easier workflow to model joins between tables, views, and worksheets and within worksheets.</p>
+<p>You can now specify the join type separately for each join between tables in a worksheet. You can also create generic relationships between tables without leaving the worksheet creation workflow within the ThoughtSpot application.</p>
+<p>In past versions, there were several limitations on joins:</p>
+<ol>
+<li>It was hard to see the effective schema when creating or editing a worksheet.</li>
+<li>You could only specify one type of join (inner, outer, etc.) per worksheet, and that join type would be applied to all table joins in the worksheet.</li>
+</ol>
+<p>This limited the use of worksheets such that they couldn&rsquo;t be applied to some use cases. For example, sometimes two tables in a worksheet required a full outer join between them, while two others required an inner join. Now you can create this type of worksheet, and all the joins to support it, in a single workflow.</p>
+<p>Now you can specify join type for each relationship in a worksheet, using one of these types:</p>
+<ul>
+<li>Full outer join</li>
+<li>Left outer join</li>
+<li>Right outer join</li>
+<li>Inner join</li>
+</ul>
+<p>In ThoughtSpot, the fact or source table is the &ldquo;left&rdquo; table, and the dimension (target or destination) table is the &ldquo;right&rdquo; table. You can now easily see which is the left table and which is the right table when you&rsquo;re setting up the join types.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
+<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/custom_help_item.png"| prepend: site.baseurl }}"/></p>
+<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
+</div>
+</td>
+</tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="Stylecustomizationoptionsareenabledbydefault"></a>Style customization options are enabled by default</h3>
 <p>In the past, to enable style customization&mdash;colors, fonts, and custom logo&mdash;you had to contact ThoughtSpot Support. With this release, style customization features are enabled by default for users with the Administrator privilege. If you want to disable these settings, contact ThoughtSpot Support.</p>
 <p><img style="border: 0px solid black;" src="{{ "/images/notes/style-customizations.png"| prepend: site.baseurl }}"/></p>
+
 </div>
 </td>
 </tr>
@@ -45,7 +161,18 @@ permalink: /:collection/:path.html
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="SupportforIPSecbetweenclusternodes"></a>Support for IPSec between cluster nodes</h3>
-<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on AWS, GCP, OnPrem, and Azure.</p>
+<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on AWS/GCP/OnPrem/Azure.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Embeddedsearchapi"></a>Embedded search API</h3>
+<p>The Embedded Search API enables searching directly from an external application or web page to pull data from ThoughtSpot. When using this API, you can access data stored in ThoughtSpot directly. You do not need to save a search result to a pinboard and then reference it using the visualization’s URL.
+This embedded search is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion.
+To have the Embedded Search API functionality turned on, contact ThoughtSpot Support.
+</p>
 </div>
 </td>
 </tr>
@@ -83,9 +210,56 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Abilitytoincludeorexcludevalues%2Cincludingnullvalues"></a>Ability to include or exclude values, including null values</h3>
+<h3><a name="Abilitytoincludeorexcludevalues"></a>Ability to include or exclude values</h3>
 <p>Filters on columns, pinboards, and worksheets now give you the ability to include or exclude values. In past releases, you could only choose values to include. This change makes it easy to see all values except for one or more values. Bulk filters also work with exclude.</p>
 <p>When selecting a filter from a list of values, the null value is now available for filtering. You can choose to include or exclude the null value. This allows you to easily see where null (missing) values exist in the data. This can be helpful when looking for dirty or incomplete data.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="colorchart"></a>Change the color on single color charts</h3>
+<p>When a chart consists of a single color, you can now change the color. To do this, select the chart style icon to the right of the chart. Under the Color section, use the color picker to choose which color to use for the chart.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Stackedbarchart"></a>Stacked bar chart</h3>
+<p>Stacked bar chart, a new chart type, is the equivalent of stacked column charts,
+but with a horizontal orientation. Some types of data are easier to understand
+when shown in a stacked bar rather than a stacked column chart.</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Latestupdatestotableformatting"></a>Latest updates to table formatting</h3>
+<p>Tables have a new look! The new table formatting makes data more accessible to see because the columns are sized better, text wraps more cleanly, and there is additional white space between rows. To adjust the column width, try clicking and dragging between columns.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/new_table.png"| prepend: site.baseurl }}"/></p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Datapushapi"></a>Data Push API</h3>
+<p>The Data Push API allows you to open a web page in the context of the ThoughtSpot application. This third party web page will then have access to the results of the ThoughtSpot search from which it was invoked. This is useful when you want to initiate an action in another application based on the result of a search in ThoughtSpot.
+An example of pushing data to another system to trigger an action would be where you do a search to find customers who are coming due for renewal of their contract in the next month. You could then trigger an action that brings up a web page from an external billing system. The billing system could be set up to read the data (list of names, emails, products, and renewal dates) from ThoughtSpot. The billing system might then add the price, generate an invoice for each customer, and send it out via email.
+To have the Data Push API functionality turned on, contact ThoughtSpot Support.
+</p>
+</div>
+</td>
+</tr>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Rintegrationinanswerpage"></a>R Integration in answer page</h3>
+<p>With R integration accessible from the answer page, the following features are available:
+support for R templates (CRUD) to share R scripts within cluster; pre-built R scripts to get started; toggle between R, table, and chart options.</p>
 </div>
 </td>
 </tr>
@@ -106,6 +280,36 @@ permalink: /:collection/:path.html
 </div>
 </td>
 </tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Introducingmaterializedviews"></a>Introducing Materialized Views</h3>
+<p>Views are new in version 5.0, and they are similar to aggregated worksheets or search saved as a worksheet. With this release, views can be materialized to provide better performance. After creating a view, you can choose to materialize the view, which helps precompute the view and store it in memory along with the data. You can refresh the view manually or on a set schedule to keep in in synch with the underlying tables as their data is refreshed.
+Note: Once materialized, a view does not respect row-level security. So all users of the view will be able to see all the data it contains.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Newlanguagesupport"></a>New Language support</h3>
+<p>Starting in the 5.0 release, the following new locales are supported on the UI including support for
+language keywords that can be used in the search bar:
+<p>
+<ul><li>French-France</li>
+<li>French-Canada</li>
+<li>Spanish-Latin American</li>
+<li>Chinese-Simplified</li>
+<li>Portuguese-Brazil</li>
+</ul></p>
+</p>
+</div>
+</td>
+</tr>
+
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -114,85 +318,6 @@ permalink: /:collection/:path.html
 </div>
 </td>
 </tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="FlexibleJoinsinWorksheets"></a>Flexible Joins in Worksheets</h3>
-<p>This version of ThoughtSpot introduces flexible join types to give you more options and an easier workflow to model joins between tables, views, and worksheets and within worksheets.</p>
-<p>You can now specify the join type separately for each join between tables in a worksheet. You can also create generic relationships between tables without leaving the worksheet creation workflow within the ThoughtSpot application.</p>
-<p>In past versions, there were several limitations on joins:</p>
-<ol>
-<li>It was hard to see the effective schema when creating or editing a worksheet.</li>
-<li>You could only specify one type of join (inner, outer, etc.) per worksheet, and that join type would be applied to all table joins in the worksheet.</li>
-</ol>
-<p>This limited the use of worksheets such that they couldn&rsquo;t be applied to some use cases. For example, sometimes two tables in a worksheet required a full outer join between them, while two others required an inner join. Now you can create this type of worksheet, and all the joins to support it, in a single workflow.</p>
-<p>Now you can specify join type for each relationship in a worksheet, using one of these types:</p>
-<ul>
-<li>Full outer join</li>
-<li>Left outer join</li>
-<li>Right outer join</li>
-<li>Inner join</li>
-</ul>
-<p>In ThoughtSpot, the fact or source table is the &ldquo;left&rdquo; table, and the dimension (target or destination) table is the &ldquo;right&rdquo; table. You can now easily see which is the left table and which is the right table when you&rsquo;re setting up the join types.</p>
-</div>
-</td>
-</tr>
-
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="FlexibleAggregationFormulas"></a>Flexible aggregation formulas</h3>
-<p>ThoughtSpot now provides for more flexible aggregation capability with a
-new function called <tt>group_aggregate</tt>. You can use this in formulas to pin columns
-in a query at a granularity different from the search bar query, rather than being
-bound to those of the search terms/columns. You can use the groups and filters from
-the query with <tt>query_groups</tt> and <tt>query_filters</tt>, and with <tt>query_groups</tt>
-you can also add or exclude some groups or filters.</p>
-</div>
-</td>
-</tr>
-
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="FiscalCalendarInDateFormulas"></a>Fiscal calendar in date formulas</h3>
-<p>Several date functions now support the ability to indicate either a <tt>fiscal</tt> or Gregorian calendar (<tt>calendar</tt>) on which to base date calculations.  If no calendar type is specified, formulas default to standard Gregorian, with the year starting in January.
-</p>
-</div>
-</td>
-</tr>
-
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="CustomRScriptsOnSearchResults"></a>Custom R scripts on search results</h3>
-<p>The ability to add custom R scripts is now available as part of the Search page.
-In previous releases, custom R scripts were an option only on SpotIQ custom analysis.
-Starting in version 5.0, given R privileges, you can create and run R scripts on search
-results (answers),leverage ThoughtSpot provided scripts, share scripts as templates, and
-share R visualizations as answers and pinboards. End users with privileges can run pre-built R
-scripts on top of their search results.</p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/r-icon.png"| prepend: site.baseurl }}"/></p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/r-png-result.png"| prepend: site.baseurl }}"/></p>
-</div>
-</td>
-</tr>
-
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="AwsSesForSecureEmailOnThoughtSpotServers"></a>AWS SES for secure
-email on ThoughtSpot servers</h3>
-<p>ThoughtSpot now supports secured mail on ThoughtSpot servers.
-Administrators can set up SMTP authorization to verify emails come
-from an authorized entity, such as AWS Simple Email Service (SES). This
-minimizes the chance that spam, malicious, or phishing emails generating from
-bad actor ThoughtSpot servers.
-</p>
-</div>
-</td>
-</tr>
-
 
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
@@ -200,7 +325,6 @@ bad actor ThoughtSpot servers.
 <h3><a name="NewLeaderboardpinboard"></a>New Leaderboard pinboard</h3>
 <p>The out-of-the-box pinboard called <tt>TS Stats: System Information and Usage</tt> now contains leaderboard visualizations. These show which users are most active, and what kinds of things they're doing in ThoughtSpot.</p>
 <p><img style="border: 0px solid black;" src="{{ "/images/notes/leaderboard_pinboard.png"| prepend: site.baseurl }}"/></p>
-
 
 <p>Some of the new visualizations show:</p>
 <ul>
@@ -226,14 +350,14 @@ bad actor ThoughtSpot servers.
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h3>
-<p>The Learn option from the main menu has moved from a BETA to a GA feature. Learn uses replay to teach users how to perform search with ThoughtSpot.</p>
+<p>The Learn option from the main menu has moved from a BETA to a GA feature. Lean uses replay to teach users how to perform search with ThoughtSpot.</p>
 </div>
 </td>
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="PushdatatoanothersystemfromThoughtSpot"></a>Push data to another system from ThoughtSpot</h3>
+<h3><a name="PushdatatoanothersystemfromthoughtSpot"></a>Push data to another system from ThoughtSpot</h3>
 <p>You can now operationalize your data by pushing it to external systems, so actions on that data can be automated. You can create a custom action that allows a user in ThoughtSpot to manually push the results of a search to the other system for processing.</p>
 <p>For example, a ThoughtSpot search on customers with past due accounts could push a list of addresses to a system that generates a payment reminder mailing.</p>
 <p>You must be licensed for ThoughtSpot Extended Enterprise Edition to enable pushing data to another system. To have this functionality turned on, contact ThoughtSpot Support.</p>
@@ -251,34 +375,17 @@ bad actor ThoughtSpot servers.
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="LocalizedDateFormatSupportedinSearchFilters"></a>Localized Date Format Supported in Search Filters</h3>
+<h3><a name="Localizeddateformatsupportedinsearchfilters"></a>Localized Date Format Supported in Search Filters</h3>
 <p>The search bar now accepts dates in the format used by the user browser's locale setting. For example, European locales accept dates using formats like DD-MM-YYYY. The US locale accepts dates using formats like MM-DD-YYYY.</p>
 </div>
 </td>
 </tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="MoreLanguagePreferencesInGA"></a>More language preferences in GA</h3>
-<p>Several language options for browser display have moved from BETA to GA to now include
-Français (Canada), Français (France), Português (Brasil), 中文 (简体), and Español (latín).
-Users can change their Locale preference on the ThoughtSpot Profile page.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="KeywordsReferenceInMultipleLanguages"></a>Keywords reference in multiple languages</h3>
-<p>The keyword reference in the documentation now provides translations (for keywords only)
-from English into the following languages:</p>
-<li>日本語</li>
-<li>中文 (简体)</li>
-<li>Deutsche</li>
-<li>Español (latín)</li>
-<li>Français (Canada)</li>
-<li>Français (France)</li>
-<li>Português (Brasil)</li>
+<h3><a name="Fiscalcalendarindateformulas"></a>Fiscal calendar in date formulas</h3>
+<p>Several date functions now support the ability to indicate either a <tt>fiscal</tt> or Gregorian calendar (<tt>calendar</tt>) on which to base date calculations.  If no calendar type is specified, formulas default to standard Gregorian, with the year starting in January.</p>
 </div>
 </td>
 </tr>
@@ -286,7 +393,7 @@ from English into the following languages:</p>
 </table>
 </div>
 
-<a name="5-0-fixed-bugs"></a>
+<p><a name="5-0-fixed-bugs"></a></p>
 <h2>5.0 Fixed Bugs</h2>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
