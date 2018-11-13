@@ -35,20 +35,23 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Stylecustomizationoptionsareenabledbydefault"></a>Style customization options are enabled by default</h3>
-<p>In the past, to enable style customization&mdash;colors, fonts, and custom logo&mdash;you had to contact ThoughtSpot Support. With this release, style customization features are enabled by default for users with the Administrator privilege. If you want to disable these settings, contact ThoughtSpot Support.</p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/style-customizations.png"| prepend: site.baseurl }}"/></p>
+<h3><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h3>
+<p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/custom_help_item.png"| prepend: site.baseurl }}"/></p>
+<p>You can also edit existing links, change icons, or remove items from the help listing altogether.</p>
 </div>
 </td>
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="SupportforIPSecbetweenclusternodes"></a>Support for IPSec between cluster nodes</h3>
-<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on AWS, GCP, OnPrem, and Azure.</p>
+<h3><a name="Stylecustomizationoptionsareenabledbydefault"></a>Style customization options are enabled by default</h3>
+<p>In the past, to enable style customization&mdash;colors, fonts, and custom logo&mdash;you had to contact ThoughtSpot Support. With this release, style customization features are enabled by default for users with the Administrator privilege. If you want to disable these settings, contact ThoughtSpot Support.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/style-customizations.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
 </tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -59,19 +62,7 @@ permalink: /:collection/:path.html
 </div>
 </td>
 </tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Patchsupportforupdates"></a>Patch support for updates</h3>
-<p>The 5.0 release adds support for applying patches using the <tt>tscli</tt> command. With this patch support, you do not need to upgrade the entire cluster when there is a bug fix, security fix, or minor feature you want to install. It also the ability to apply or rollback a patch and to see any patches that have been applied cluster-wide or listed out by service. To see the list of patches applied currently on a cluster, run the following commands:</p>
-<p><tt>tscli patch ls</tt></p>
-<p>To see a list of all patches that have ever been applied, including any that were rolled back, issue the command:</p>
-<p><tt>tscli patch ls --applied</tt></p>
-<p>Additional command flags allow you to see the listing by service or to view all patch rollbacks.</p>
-<p>To install a patch, contact ThoughtSpot Support.</p>
-</div>
-</td>
-</tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -89,15 +80,7 @@ permalink: /:collection/:path.html
 </div>
 </td>
 </tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="DirectsearchtoembedAPI"></a>Direct search to embed API</h3>
-<p>ThoughtSpot Extended Enterprise Edition now includes more API functionality with the introduction of direct to search embedding. Direct to search embedding enables new embed use cases by allowing a search from an external application or web page to pull data directly from ThoughtSpot. You no longer need to save a search result to a pinboard and embed it using the visualization's URL.</p>
-<p>This direct to search embedding is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion, but you do not want to embed the entire ThoughtSpot application.</p>
-</div>
-</td>
-</tr>
+
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -137,6 +120,94 @@ permalink: /:collection/:path.html
 </div>
 </td>
 </tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Choosesourcesuihasbeenredesigned"></a>Choose Sources UI has been redesigned</h3>
+<p>Choose Sources has been updated to appear full screen, which allows you to easily discover, find, and select a data source on one screen.</p>
+</div>
+</td>
+</tr>
+
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="NewLeaderboardpinboard"></a>New Leaderboard pinboard</h3>
+<p>The out-of-the-box pinboard called <tt>TS Stats: System Information and Usage</tt> now contains leaderboard visualizations. These show which users are most active, and what kinds of things they're doing in ThoughtSpot.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/leaderboard_pinboard.png"| prepend: site.baseurl }}"/></p>
+
+
+<p>Some of the new visualizations show:</p>
+<ul>
+<li>Which users were most active in the last month</li>
+<li>Which pinboards are viewed most often</li>
+<li>Which users have initiated the most all-time ad-hoc searches</li>
+<li>Which users have been active today</li>
+<li>Number of monthly active users (MAU)</li>
+</ul>
+<p>This leaderboard increases engagement within your user community and helps you identify the people who are the most skilled and frequent ThoughtSpot users.</p>
+</div>
+</td>
+</tr>
+
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h3>
+<p>The Learn option from the main menu has moved from a BETA to a GA feature. Learn uses replay to teach users how to perform search with ThoughtSpot.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="AllsavedanswersuggestionsappearinAnswersratherthanassearchsuggestions"></a>All saved answer suggestions appear in Answers rather than as search suggestions</h3>
+<p>In past versions, search suggestions included saved answers and pinboards, if they were closer to what you were searching. Now, they appear as cards at the bottom of the search results. This is less distracting when searching and makes these saved searches stand out as distinct from search suggestions.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="LocalizedDateFormatSupportedinSearchFilters"></a>Localized Date Format Supported in Search Filters</h3>
+<p>The search bar now accepts dates in the format used by the user browser's locale setting. For example, European locales accept dates using formats like DD-MM-YYYY. The US locale accepts dates using formats like MM-DD-YYYY.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="MoreLanguagePreferencesInGA"></a>More language preferences in GA</h3>
+<p>Several language options for browser display have moved from BETA to GA to now include
+Français (Canada), Français (France), Português (Brasil), 中文 (简体), and Español (latín).
+Users can change their Locale preference on the ThoughtSpot Profile page.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="KeywordsReferenceInMultipleLanguages"></a>Keywords reference in multiple languages</h3>
+<p>The keyword reference in the documentation now provides translations (for keywords only)
+from English into the following languages:</p>
+<li>日本語</li>
+<li>中文 (简体)</li>
+<li>Deutsche</li>
+<li>Español (latín)</li>
+<li>Français (Canada)</li>
+<li>Français (France)</li>
+<li>Português (Brasil)</li>
+</div>
+</td>
+</tr>
+
 
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
@@ -181,6 +252,45 @@ scripts on top of their search results.</p>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="DirectsearchtoembedAPI"></a>Direct search to embed API</h3>
+<p>ThoughtSpot Extended Enterprise Edition now includes more API functionality with the introduction of direct to search embedding. Direct to search embedding enables new embed use cases by allowing a search from an external application or web page to pull data directly from ThoughtSpot. You no longer need to save a search result to a pinboard and embed it using the visualization's URL.</p>
+<p>This direct to search embedding is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion, but you do not want to embed the entire ThoughtSpot application.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="PushdatatoanothersystemfromThoughtSpot"></a>Push data to another system from ThoughtSpot</h3>
+<p>You can now operationalize your data by pushing it to external systems, so actions on that data can be automated. You can create a custom action that allows a user in ThoughtSpot to manually push the results of a search to the other system for processing.</p>
+<p>For example, a ThoughtSpot search on customers with past due accounts could push a list of addresses to a system that generates a payment reminder mailing.</p>
+<p>You must be licensed for ThoughtSpot Extended Enterprise Edition to enable pushing data to another system. To have this functionality turned on, contact ThoughtSpot Support.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Newdefaultsnapshotpolicy"></a>New default snapshot policy</h3>
+<p>This release includes a new default snapshot policy. Three snapshots are taken over 4-hour intervals in the course of a day. And 4 daily snapshots are taken. This provides continuity over the long weekends in many countries by ensuring snapshots on Saturday, Sunday, Monday, and Tuesday.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="SupportforIPSecbetweenclusternodes"></a>Support for IPSec between cluster nodes</h3>
+<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on AWS, GCP, OnPrem, and Azure.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="AwsSesForSecureEmailOnThoughtSpotServers"></a>AWS SES for secure
 email on ThoughtSpot servers</h3>
 <p>ThoughtSpot now supports secured mail on ThoughtSpot servers.
@@ -193,95 +303,21 @@ bad actor ThoughtSpot servers.
 </td>
 </tr>
 
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Patchsupportforupdates"></a>Patch support for updates</h3>
+<p>The 5.0 release adds support for applying patches using the <tt>tscli</tt> command. With this patch support, you do not need to upgrade the entire cluster when there is a bug fix, security fix, or minor feature you want to install. It also the ability to apply or rollback a patch and to see any patches that have been applied cluster-wide or listed out by service. To see the list of patches applied currently on a cluster, run the following commands:</p>
+<p><tt>tscli patch ls</tt></p>
+<p>To see a list of all patches that have ever been applied, including any that were rolled back, issue the command:</p>
+<p><tt>tscli patch ls --applied</tt></p>
+<p>Additional command flags allow you to see the listing by service or to view all patch rollbacks.</p>
+<p>To install a patch, contact ThoughtSpot Support.</p>
+</div>
+</td>
+</tr>
 
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="NewLeaderboardpinboard"></a>New Leaderboard pinboard</h3>
-<p>The out-of-the-box pinboard called <tt>TS Stats: System Information and Usage</tt> now contains leaderboard visualizations. These show which users are most active, and what kinds of things they're doing in ThoughtSpot.</p>
-<p><img style="border: 0px solid black;" src="{{ "/images/notes/leaderboard_pinboard.png"| prepend: site.baseurl }}"/></p>
 
-
-<p>Some of the new visualizations show:</p>
-<ul>
-<li>Which users were most active in the last month</li>
-<li>Which pinboards are viewed most often</li>
-<li>Which users have initiated the most all-time ad-hoc searches</li>
-<li>Which users have been active today</li>
-<li>Number of monthly active users (MAU)</li>
-</ul>
-<p>This leaderboard increases engagement within your user community and helps you identify the people who are the most skilled and frequent ThoughtSpot users.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Newdefaultsnapshotpolicy"></a>New default snapshot policy</h3>
-<p>This release includes a new default snapshot policy. Three snapshots are taken over 4-hour intervals in the course of a day. And 4 daily snapshots are taken. This provides continuity over the long weekends in many countries by ensuring snapshots on Saturday, Sunday, Monday, and Tuesday.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h3>
-<p>The Learn option from the main menu has moved from a BETA to a GA feature. Learn uses replay to teach users how to perform search with ThoughtSpot.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="PushdatatoanothersystemfromThoughtSpot"></a>Push data to another system from ThoughtSpot</h3>
-<p>You can now operationalize your data by pushing it to external systems, so actions on that data can be automated. You can create a custom action that allows a user in ThoughtSpot to manually push the results of a search to the other system for processing.</p>
-<p>For example, a ThoughtSpot search on customers with past due accounts could push a list of addresses to a system that generates a payment reminder mailing.</p>
-<p>You must be licensed for ThoughtSpot Extended Enterprise Edition to enable pushing data to another system. To have this functionality turned on, contact ThoughtSpot Support.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="AllsavedanswersuggestionsappearinAnswersratherthanassearchsuggestions"></a>All saved answer suggestions appear in Answers rather than as search suggestions</h3>
-<p>In past versions, search suggestions included saved answers and pinboards, if they were closer to what you were searching. Now, they appear as cards at the bottom of the search results. This is less distracting when searching and makes these saved searches stand out as distinct from search suggestions.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="LocalizedDateFormatSupportedinSearchFilters"></a>Localized Date Format Supported in Search Filters</h3>
-<p>The search bar now accepts dates in the format used by the user browser's locale setting. For example, European locales accept dates using formats like DD-MM-YYYY. The US locale accepts dates using formats like MM-DD-YYYY.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="MoreLanguagePreferencesInGA"></a>More language preferences in GA</h3>
-<p>Several language options for browser display have moved from BETA to GA to now include
-Français (Canada), Français (France), Português (Brasil), 中文 (简体), and Español (latín).
-Users can change their Locale preference on the ThoughtSpot Profile page.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="KeywordsReferenceInMultipleLanguages"></a>Keywords reference in multiple languages</h3>
-<p>The keyword reference in the documentation now provides translations (for keywords only)
-from English into the following languages:</p>
-<li>日本語</li>
-<li>中文 (简体)</li>
-<li>Deutsche</li>
-<li>Español (latín)</li>
-<li>Français (Canada)</li>
-<li>Français (France)</li>
-<li>Português (Brasil)</li>
-</div>
-</td>
-</tr>
 </tbody>
 </table>
 </div>
