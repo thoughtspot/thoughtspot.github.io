@@ -81,7 +81,7 @@ of users that are trying to access different types of data without relying on ro
 
 <p>The chart configuration icons now appear in a vertical panel, to the right of the visualization.
 This provides a cleaner look, and more real estate to display the visualization. The more information icon has also been moved to this panel.
-They style icon has been added for easy access to setting display properties, including colors.</p>
+The style icon has been added for easy access to setting display properties, including colors.</p>
 <p><img style="border: 0px solid black;" src="{{ "/images/notes/chart_configuration_icons.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
@@ -197,7 +197,7 @@ To have the Embedded Search API functionality turned on, contact ThoughtSpot Sup
 <h3><a name="URLlinksindatavaluescannowopeninthesametaboriFrame"></a>URL links in data values can now open in the same tab or iFrame</h3>
 <p>In past versions, clicking a URL link in an answer would open the URL in a new tab. Similarly, for an answer embedded in an iFrame, clicking on a URL opened it in a new tab. This is still the default behavior, but you can configure ThoughtSpot to open the link in the same context where it appears.</p>
 <p>Now you can change a cluster-wide setting to make links open in the same context (iFrame or tab) in which they appear. With this configuration, if the ThoughtSpot answer is embedded in an iFrame, clicking the URL will open it within the same iFrame. If you are using the ThoughtSpot application the link will open in the same tab.</p>
-<p>This setting applies to an entire ThoughtSpot instance. So if it is set to open URLs in the same tab, all URL links whether in the application or in an embedded visualization will open in place. Contact ThoughtSpot Support if you wold like them to change this setting for you.</p>
+<p>This setting applies to an entire ThoughtSpot instance. So if it is set to open URLs in the same tab, all URL links whether in the application or in an embedded visualization will open in place. Contact ThoughtSpot Support if you would like them to change this setting for you.</p>
 </div>
 </td>
 </tr>
@@ -205,7 +205,7 @@ To have the Embedded Search API functionality turned on, contact ThoughtSpot Sup
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="Patchsupportforupdates"></a>Patch support for updates</h3>
-<p>The 5.0 release adds support for applying patches using the <tt>tscli</tt> command. With this patch support, you do not need to upgrade the entire cluster when there is a bug fix, security fix, or minor feature you want to install. It also the ability to apply or rollback a patch and to see any patches that have been applied cluster-wide or listed out by service. To see the list of patches applied currently on a cluster, run the following commands:</p>
+<p>The 5.0 release adds support for applying patches using the <tt>tscli</tt> command. With this patch support, you do not need to upgrade the entire cluster when there is a bug fix, security fix, or minor feature you want to install. It also provides the ability to apply or rollback a patch and to see any patches that have been applied cluster-wide or listed out by service. To see the list of patches applied currently on a cluster, run the following commands:</p>
 <p><tt>tscli patch ls</tt></p>
 <p>To see a list of all patches that have ever been applied, including any that were rolled back, issue the command:</p>
 <p><tt>tscli patch ls --applied</tt></p>
@@ -290,7 +290,7 @@ scripts on top of their search results.</p>
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="Introducingmaterializedviews"></a>Introducing Materialized Views</h3>
-<p>Views are new in version 5.0, and they are similar to aggregated worksheets or search saved as a worksheet. With this release, views can be materialized to provide better performance. After creating a view, you can choose to materialize the view, which helps precompute the view and store it in memory along with the data. You can refresh the view manually or on a set schedule to keep in in synch with the underlying tables as their data is refreshed.
+<p>Views are new in version 5.0, and they are similar to aggregated worksheets or search saved as a worksheet. With this release, views can be materialized to provide better performance. After creating a view, you can choose to materialize the view, which helps precompute the view and store it in memory along with the data. You can refresh the view manually or on a set schedule to keep it in synch with the underlying tables as their data is refreshed.
 Note: Once materialized, a view does not respect row-level security. So all users of the view will be able to see all the data it contains.</p>
 </div>
 </td>
@@ -319,7 +319,7 @@ language keywords that can be used in the search bar:
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="SpotIQAutomatedInsightsonthehomepage"></a>SpotIQ Automated Insights on the homepage</h3>
-<p>On the homepage, there is now a section called <strong>Did You Know?</strong>, which shows insights found by SpotIQ. To find these insights, SpotIQ runs many analyses of the data used in recent searches. The results which are most likely to contain useful insights are included in this section. This helps users you more value from their data and learn about areas where you may want to do further exploration.</p>
+<p>On the homepage, there is now a section called <strong>Did You Know?</strong>, which shows insights found by SpotIQ. To find these insights, SpotIQ runs many analyses of the data used in recent searches. The results which are most likely to contain useful insights are included in this section. This helps users get more value from their data and learn about areas where you may want to do further exploration.</p>
 </div>
 </td>
 </tr>
@@ -355,7 +355,7 @@ language keywords that can be used in the search bar:
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="LearnThoughtSpotinGA"></a>Learn ThoughtSpot in GA</h3>
-<p>The Learn option from the main menu has moved from a BETA to a GA feature. Lean uses replay to teach users how to perform search with ThoughtSpot.</p>
+<p>The Learn option from the main menu has moved from a BETA to a GA feature. Learn uses replay to teach users how to perform search with ThoughtSpot.</p>
 </div>
 </td>
 </tr>
