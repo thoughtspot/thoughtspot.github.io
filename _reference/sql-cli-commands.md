@@ -434,8 +434,8 @@ nickname';</code></p>
          <td><p>Inserts values into a table. Only use this for testing. Do not use <code>INSERT</code> on
             a production system. For example:</p>
 
-            <p><code>INSERT INTO "vendor" VALUES 'helen rose', 'jacob norse', 'eileen ruff',
-'manny gates';</code></p>
+            <p><code>INSERT INTO "vendor" VALUES ('helen rose', 'jacob norse', 'eileen ruff',
+'manny gates');</code></p>
          </td>
       </tr>
       <tr>
@@ -446,7 +446,7 @@ nickname';</code></p>
          <td>
             <p>Sets the load priority for a table. Load priority determines the order in which a table is loaded on a cluster restart. You can set any value from <code>1-100</code>. The system default for all tables is <code>50</code>. For example:
             </p>
-            <p><code>ALTER TABLE 'sales_facts' SET LOAD PRIORITY 1</code></p>
+            <p><code>ALTER TABLE 'sales_facts' SET LOAD PRIORITY 1;</code></p>
          </td>
       </tr>
       <tr>
