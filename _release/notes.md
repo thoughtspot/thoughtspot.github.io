@@ -63,11 +63,7 @@ of users that are trying to access different types of data without relying on ro
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="SearchresponsetoEnterkey"></a>Search response to Enter key</h3>
-<p>You can now add filters to a worksheet to limit the set of data it contains.
-This is useful when you have underlying tables that store more data than necessary
-for the types of analyses the worksheet is intended for.
-You can also use worksheet filters to provide data security when you have different groups
-of users that are trying to access different types of data without relying on row level security.</p>
+<p>The way the system responds to the user typing the Enter key has changed. The system can now resolve an exact match even if there are other partial matches or the suggestions have not returned from the server yet. These changes result in a more natural search experience that allows advanced users to get search results quicker.</p>
 </div>
 </td>
 </tr>
