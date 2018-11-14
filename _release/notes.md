@@ -35,7 +35,34 @@ permalink: /:collection/:path.html
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="Searchiq"></a>SearchIQ</h3>
+<p>SearchIQ is a different search experience that understands more natural, speech-like search language than the current search function. For example, a user could search for “What was my top selling product last month?”, instead of having to type “top 1 product by sales last month”. You can also speak your search using the voice-to-text capability of your operating system.</p>
+
+<p>You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from column names or values. In order to give it time to learn, the best practice recommendation is to enable SearchIQ for a small group of users. Over time you can roll it out to larger groups as SearchIQ learns what your users search for the most.</p>
+
+<p>SearchIQ is turned off by default, but you can enable it by asking ThoughtSpot Support to turn it on for your cluster. For each group that should have access to the SearchIQ experience,
+you’ll need to grant them the “Can use experimental features” permission.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="Worksheetfilters"></a>Worksheet filters</h3>
+<p>You can now add filters to a worksheet to limit the set of data it contains.
+This is useful when you have underlying tables that store more data than necessary
+for the types of analyses the worksheet is intended for.
+You can also use worksheet filters to provide data security when you have different groups
+of users that are trying to access different types of data without relying on row level security.</p>
+</div>
+</td>
+</tr>
+
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<h3><a name="SearchresponsetoEnterkey"></a>Search response to Enter key</h3>
 <p>You can now add filters to a worksheet to limit the set of data it contains.
 This is useful when you have underlying tables that store more data than necessary
 for the types of analyses the worksheet is intended for.
@@ -89,18 +116,6 @@ These changes make suggestions more useful and the search experience more intuit
 </td>
 </tr>
 
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Searchiq"></a>SearchIQ</h3>
-<p>SearchIQ is a different search experience that understands more natural, speech-like search language than the current search function. For example, a user could search for “What was my top selling product last month?”, instead of having to type “top 1 product by sales last month”. You can also speak your search using the voice-to-text capability of your operating system.
-You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from column names or values. In order to give it time to learn, the best practice recommendation is to enable SearchIQ for a small group of users. Over time you can roll it out to larger groups as SearchIQ learns what your users search for the most.
-SearchIQ is turned off by default, but you can enable it by asking ThoughtSpot Support to turn it on for your cluster.
-For each group that should have access to the SearchIQ experience,
-you’ll need to grant them the “Can use experimental features” permission.</p>
-</div>
-</td>
-</tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
@@ -160,15 +175,15 @@ you’ll need to grant them the “Can use experimental features” permission.<
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="SupportforIPSecbetweenclusternodes"></a>Support for IPSec between cluster nodes</h3>
-<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on AWS/GCP/OnPrem/Azure.</p>
+<h3><a name="Supportforipsecbetweenclusternodes"></a>Support for IPSec between cluster nodes</h3>
+<p>With 5.0, you can encrypt traffic between various ThoughtSpot cluster nodes. However, by default the encryption of traffic between ThoughtSpot nodes is disabled. When required to enable on a specific cluster, contact ThoughtSpot Support. ThoughtSpot can enable encryption of traffic between ThoughtSpot nodes to allow this feature to automatically work on Amazon Web Services (AWS), Google Cloud Platform (GCP), OnPrem, or Microsoft Azure.</p>
 </div>
 </td>
 </tr>
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Embeddedsearchapi"></a>Embedded search API</h3>
+<h3><a name="Embeddedsearchapi"></a>Embedded Search API</h3>
 <p>The Embedded Search API enables searching directly from an external application or web page to pull data from ThoughtSpot. When using this API, you can access data stored in ThoughtSpot directly. You do not need to save a search result to a pinboard and then reference it using the visualization’s URL.
 This embedded search is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion.
 To have the Embedded Search API functionality turned on, contact ThoughtSpot Support.
@@ -203,7 +218,8 @@ To have the Embedded Search API functionality turned on, contact ThoughtSpot Sup
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="PinboardInstantInsights"></a>Pinboard Instant Insights</h3>
-<p>With the 5.0 release, you can now automatically view the executive summary of insights for each SpotIQ Pinboard visualizations. Use the magic wand icon (at the top right corner) to see instant insights of your data. The instant insights are generated based on the analysis of visualizations and tables which are pinned on to your pinboard.<br /> Note that the instant insights are cached. It means if you ran SpotIQ analysis on a pinboard to generate insights you don&rsquo;t need to rerun SpotIQ analysis.</p>
+<p>With the 5.0 release, you can now automatically view the executive summary of insights for each SpotIQ Pinboard visualizations. Use the magic wand icon (at the top right corner) to see instant insights of your data. The instant insights are generated based on the analysis of visualizations and tables which are pinned on to your pinboard.</p>
+<p>Note that the instant insights are cached. It means if you ran SpotIQ analysis on a pinboard to generate insights, you do not need to rerun SpotIQ analysis.</p>
 </div>
 </td>
 </tr>
@@ -257,26 +273,15 @@ To have the Data Push API functionality turned on, contact ThoughtSpot Support.
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Rintegrationinanswerpage"></a>R Integration in answer page</h3>
-<p>With R integration accessible from the answer page, the following features are available:
-support for R templates (CRUD) to share R scripts within cluster; pre-built R scripts to get started; toggle between R, table, and chart options.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="DirectsearchtoembedAPI"></a>Direct search to embed API</h3>
-<p>ThoughtSpot Extended Enterprise Edition now includes more API functionality with the introduction of direct to search embedding. Direct to search embedding enables new embed use cases by allowing a search from an external application or web page to pull data directly from ThoughtSpot. You no longer need to save a search result to a pinboard and embed it using the visualization's URL.</p>
-<p>This direct to search embedding is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion, but you do not want to embed the entire ThoughtSpot application.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Changethecoloronsinglecolorcharts"></a>Change the color on single color charts</h3>
-<p>When a chart consists of a single color, you can now change the color. To do this, select the chart style icon to the right of the chart. Under the Color section, use the color picker to choose which color to use for the chart.</p>
+<h3><a name="CustomRScriptsOnSearchResults"></a>Custom R scripts on search results</h3>
+<p>The ability to add custom R scripts is now available as part of the Search page.
+In previous releases, custom R scripts were an option only on SpotIQ custom analysis.
+Starting in version 5.0, given R privileges, you can create and run R scripts on search
+results (answers),leverage ThoughtSpot provided scripts, share scripts as templates, and
+share R visualizations as answers and pinboards. End users with privileges can run pre-built R
+scripts on top of their search results.</p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/r-icon.png"| prepend: site.baseurl }}"/></p>
+<p><img style="border: 0px solid black;" src="{{ "/images/notes/r-png-result.png"| prepend: site.baseurl }}"/></p>
 </div>
 </td>
 </tr>
@@ -357,17 +362,7 @@ language keywords that can be used in the search bar:
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="PushdatatoanothersystemfromthoughtSpot"></a>Push data to another system from ThoughtSpot</h3>
-<p>You can now operationalize your data by pushing it to external systems, so actions on that data can be automated. You can create a custom action that allows a user in ThoughtSpot to manually push the results of a search to the other system for processing.</p>
-<p>For example, a ThoughtSpot search on customers with past due accounts could push a list of addresses to a system that generates a payment reminder mailing.</p>
-<p>You must be licensed for ThoughtSpot Extended Enterprise Edition to enable pushing data to another system. To have this functionality turned on, contact ThoughtSpot Support.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="AllsavedanswersuggestionsappearinAnswersratherthanassearchsuggestions"></a>All saved answer suggestions appear in Answers rather than as search suggestions</h3>
+<h3><a name="Relatedanswers"></a>Related answers</h3>
 <p>In past versions, search suggestions included saved answers and pinboards, if they were closer to what you were searching. Now, they appear as cards at the bottom of the search results. This is less distracting when searching and makes these saved searches stand out as distinct from search suggestions.</p>
 </div>
 </td>
@@ -375,7 +370,7 @@ language keywords that can be used in the search bar:
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<h3><a name="Localizeddateformatsupportedinsearchfilters"></a>Localized Date Format Supported in Search Filters</h3>
+<h3><a name="Localizeddateformatsupportedinsearchfilters"></a>Localized date format supported in search filters</h3>
 <p>The search bar now accepts dates in the format used by the user browser's locale setting. For example, European locales accept dates using formats like DD-MM-YYYY. The US locale accepts dates using formats like MM-DD-YYYY.</p>
 </div>
 </td>
