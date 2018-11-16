@@ -32,7 +32,7 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
 -   **Basic keywords**
 
-    You can use keywords such as `top` and "`bottom` to, for example, only see results for the best or worst performing sales rep.
+    You can use keywords such as `top` and `bottom` to, for example, only see results for the best or worst performing sales rep.
 
 -   **Date keywords**
 
