@@ -7,64 +7,82 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-R is an open source programming language used for statistical
-computing. As such, knowledgable users can use R to perform sophisticated
-analysis in a ThoughtSpot environment.
+R is a popular open source programming language for statistical computing,
+machine learning, and AI.
 
-R is a popular language for machine learning statistics and AI
-Enable users to leverage the power of R, create their own semantics and business logic on top of data using ThoughtSpot core
-Enables SpotIQ team to leverage R internally to build their own custom logic (K means clustering, for example, has been built using R)
-Acts both as a platform for extensibility and for ThoughtSpot
-Data scientists and analysts can build visualizations using R, for end user consumers
+While the ability to run custom R scripts on ThoughtSpot data was available in
+previous releases via SpotIQ custom analysis, as of version 5.0 users with R
+privileges can now run R scripts directly on search results.
 
-This section explains the feature and how to use it. It is not meant as an R
-primer. To learn more about R and how to use it, visit the
-[R Project for Statistical Computing](https://www.r-project.org/).  
+Analysts and data scientists proficient in R can create and share custom
+scripts. Users can leverage custom scripts and ThoughtSpot provided scripts, run
+pre-built R scripts on top of their search results, and share R visualizations
+as answers and pinboards.
 
-## Understand R script requirements in ThoughtSpot
+This topic explains how to use R in ThoughtSpot both from an end user and
+scripting perspective, but is not meant as an R primer. To learn more about R
+programming, a good place to start is [R Project for Statistical
+Computing](https://www.r-project.org/). Also, Anthony Chen's blog post on
+[Using R Analysis in ThoughtSpot for Time Series Forecasting](https://www.thoughtspot.com/codex/using-r-analysis-thoughtspot-time-series-forecasting)
+is a nice introduction to writing R scripts in ThoughtSpot.
 
-ThoughtSpot provides R running as a service within a ThoughtSpot cluster.
-Permissions are restricted. This means the R script does not have permission to
-issue system commands.
+## How to access R scripts
 
-The ThoughtSpot cluster has pre-installed the basic R packages. If your script
-requires a specific package, you must request your ThoughtSpot cluster admin to
-install the package on your behalf.
+Users with R script privileges can click the **R** icon on the toolbar for any search result (answer).
 
-ThoughtSpot internally transforms and binds an R script prior to sending it to
-the cluster's R service. The system expects each script have a well-defined
-structure which is the following:
+![]({{ site.baseurl }}/images/r-icon.png)
 
-```
-####R SCRIPT####
-<Fill script body>
-####COLUMN BINDINGS (ONE PER LINE)####
-<Fill column bindings here>
-```
+From here, you have options to write a custom script, or load a pre-built or
+ThoughtSpot provided script.
 
-The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. ThoughtSpot expects for each `.param`_n_ in R your script must
-provide a corresponding binding. The following pseudo code illustrates an R
-script in a form suitable for ThoughtSpot:
+![]({{ site.baseurl }}/images/r-load-or-write-script.png)
+
+## Basic R script to generate CSV data
+
+This is an example of a basic R script that generates CSV data.
 
 ```
-####R SCRIPT####
-df <- data.frame(.param0,.param1, ...);
-...
-write.csv(..., file=#output_csv#, ...);
+write.csv(df,  #output_file#)
 ```
 
-Notice that `.param0` refers to first column in column binding and `.param1`
-refers to the second.  Should you need a third binding, you would use  `.param2`
-and so forth.
+The generated data is displayed back as a table when you run the analysis:
 
-The output of the script is either PNG or CSV. This example script uses
-`#output_csv#` to emit data in a CSV (tabular) format. Use `#output_png#` to
-emit data in PNG format.
+![]({{ site.baseurl }}/images/r-csv-basic.png)
 
-## TBD
+## Basic R script to generate a PNG graphic
+
+This is an example of a basic R script that generates PNG data as output.
+
+```
+png(#output_file#)
+plot(.param0, .param1)
+```
+
+The generated data is displayed back as a static PNG when you run the analysis:
+
+![]({{ site.baseurl }}/images/r-png-basic.png)
+
+## Column bindings
+
+Under **Select columns for R analysis**, you specify the data you want to send
+to R and how to send it. If you do not make any choices here, all columns in the
+search are selected in the order they appear in the search bar.
+
+When a column is selected, ThoughtSpot sends that data to R as a list of values
+(or _vectors_). A vector has a variable name of `.param` followed by some
+number, based on the order in which the columns are selected.
+
+In the examples above, `Monthly (Date)` is `.param0`, and `Sales` is `.param1`.
+To verify this, click the question mark icon next to **Select columns for R
+analysis** to see the “column bindings”. Reordering the columns changes the
+column bindings/params.
 
 ## Related information
 
-As always, you can also run custom R scripts on ThoughtSpot data using SpotIQ custom
-analysis [SpotIQ custom analysis]({{ site.baseurl}}/spotiq/adv-customize-withr).
+* [Create and share R scripts](create-r-scripts.html#)
+
+* [Save and share R visualizations](share-r-visualizations.html#)
+
+* [Run an R analysis](use-r-analysis.html#)
+
+* [SpotIQ custom analysis]({{ site.baseurl}}/spotiq/adv-customize-withr)
