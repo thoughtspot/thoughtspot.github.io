@@ -29,7 +29,3 @@ inputted.
 For example, if you are using ThoughtSpot in the US, the number formatting
 should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
 `xxx.xxx,xx`.
-
-{% include warning.html content="It is possible that you set your locale but
-find strings in the UI still appear in English, this indicates an untranslated
-string. Please notify ThoughtSpot support." %}
