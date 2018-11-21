@@ -20,7 +20,7 @@ To edit a worksheet:
 
 4. Make your changes to the worksheet.
 
-5.  Click **Actions** and select **Save**.
+5.  Click the **three dot icon** and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
@@ -38,6 +38,6 @@ To change the name of a worksheet or table:
 
 ## Related information
 
-- [Change the inclusion or join rule for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html)
+- [Change the join rule for a worksheet]({{ site.baseurl }}/admin/worksheets/change-inclusion-rule.html)
 - [Add joins between a worksheet and other data]({{ site.baseurl }}/admin/worksheets/add-joins.html)
 - [Modify table joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html)

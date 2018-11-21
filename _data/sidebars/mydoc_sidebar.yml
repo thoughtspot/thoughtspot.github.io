@@ -637,13 +637,10 @@ entries:
       - title: Create worksheet filters
         url: /admin/worksheets/create-ws-filter.html
         output: web,admBk
-      - title: How the inclusion rule works
-        url: /admin/worksheets/about-inclusion-rule.html
-        output: web,admBk
       - title: How the worksheet join rule works
         url: /admin/worksheets/progressive-joins.html
         output: web,admBk
-      - title: "Change inclusion, join, or RLS for a worksheet"
+      - title: "Change join rule or RLS for a worksheet"
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
       - title: "Create a join relationship"

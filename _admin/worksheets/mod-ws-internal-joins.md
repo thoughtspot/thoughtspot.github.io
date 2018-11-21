@@ -8,9 +8,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you create a worksheet, you select a [join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html) and an [inclusion rule]({{ site.baseurl }}/admin/worksheets/about-inclusion-rule.html). These two rules work together to define how the tables that make up the worksheet are joined, and how those joins behave when searching on the worksheet.
+When you create a worksheet, you select a [join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html). The join rule works together with the joins defined within the worksheet determine how the tables that make up the worksheet are joined, and how those joins behave when searching on the worksheet.
 
-Beginning in ThoughtSpot version 5.0, you aren't limited to just one join rule for the entire worksheet. You can define different types of joins for each join between tables in a worksheet. Be default, each of these individual table joins inherits its type from the worksheet join rule. But you can override this at the individual join level.
+Beginning in ThoughtSpot version 5.0, you aren't limited to just one join rule for the entire worksheet. You can define different types of joins for each join between tables in a worksheet. Be default, each of these individual table joins uses an inner join. But you can override this at the individual join level.
 
 You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to modify joins within worksheets.
 
@@ -26,7 +26,7 @@ To modify the join types within a worksheet:
 
    ![]({{ site.baseurl }}/images/worksheet-join-chooser.png "Joins within a worksheet")
 
-4. Find the join you want to modify and click the **Edit** icon.
+4. Find the join you want to modify and click the **Edit** icon. Note that the fact table is always the left table, and it is shown on the left side.
 
    ![]({{ site.baseurl }}/images/ws-join-edit-icon.png "Edit worksheet join")
 
@@ -38,7 +38,6 @@ Now these two tables will be joined using the type you selected, in the context 
 
 ## Related Information
 
--   [Inclusion rule]({{ site.baseurl }}/admin/worksheets/about-inclusion-rule.html)
 -   [Join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html)
 -   [Create joins using TQL]({{ site.baseurl }}/admin/loading/constraints.html)
 -   [Create join relationships in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html)

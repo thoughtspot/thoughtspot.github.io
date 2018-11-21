@@ -32,21 +32,19 @@ The process for creating a worksheet is:
 
 3.  Add sources (tables) to the worksheet.
 
-4.  Choose the [inclusion rule](about-inclusion-rule.html#) to apply.
+4.  Choose the [worksheet join rule](progressive-joins.html#).
 
-5.  Choose the [worksheet join rule](progressive-joins.html#).
+5.  Select the columns to include.
 
-6.  Select the columns to include.
+6.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
-7.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
+7.  Optionally [create formulas](create-formula.html#).
 
-8.  Optionally [create formulas](create-formula.html#).
+8.  Optionally [create worksheet filters](create-ws-filter.html#).
 
-9.  Optionally [create worksheet filters](create-ws-filter.html#).
+9.  Save the worksheet.
 
-10.  Save the worksheet.
-
-11.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
+10.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
 ## Create a worksheet
 
@@ -56,7 +54,7 @@ To create a new worksheet:
 
 1. Click on **Data**, on the top navigation bar.
 
-2. Click the **Actions** icon from the upper right side of the screen, and select **Create worksheet**.
+2. Click the **three dot icon*** from the upper right side of the screen, and select **Create worksheet**.
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
@@ -67,23 +65,23 @@ After creating a worksheet, you need to add the sources that contain the data. S
 
 To add the sources to the worksheet:
 
-1.  Click on the **Choose Sources** link.
+1.  Click on the **+ icon**.
 
     ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
 2. Check the box next to each of the sources you want to include in the worksheet.
 
-    Note that the list of sources only shows the tables on which you have view privileges.
+    Note that the list of sources only shows the data sources on which you have view or edit privileges.
 
     ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png)
 
 3. If you want to see what the data inside the sources looks like, click **Explore all data**.
 
-4. Choose the [inclusion rule](about-inclusion-rule.html#).
+4. Choose the [worksheet join rule](progressive-joins.html#).
 
-5. Choose the [worksheet join rule](progressive-joins.html#).
+5. If you want to disable [Row Level Security]({{ site.baseurl }}/data-security/row-level-security.html#), for this worksheet, check the checkbox to disable it.
 
-6. Click **Done** to save your changes.
+6. Click **CLOSE** to save your changes.
 
 7. Expand the table names under **Columns** to select the columns to add to the worksheet.
 
@@ -107,7 +105,7 @@ To add the sources to the worksheet:
 
      ![]({{ site.baseurl }}/images/worksheet_add_col_prefix.png "Add a prefix to column names")
 
-13. Click **Actions** and select **Save**.
+13. Click the **three dot icon** and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
@@ -115,7 +113,5 @@ To add the sources to the worksheet:
 
 ## Where to go next
 
--   **[How the inclusion rule works]({{ site.baseurl }}/admin/worksheets/about-inclusion-rule.html)**  
-Use the inclusion rule to specify which data to include in a worksheet where two or more tables are joined. If you are familiar with SQL, you might think of it as a JOIN condition.
 -   **[How the worksheet join rule works]({{ site.baseurl }}/admin/worksheets/progressive-joins.html)**  
 Use the worksheet join rule to specify when to apply joins when a search is done on a worksheet. You can either apply joins progressively, as each search term is added (recommended), or apply all joins to every search.
