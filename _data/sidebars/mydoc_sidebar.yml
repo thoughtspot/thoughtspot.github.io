@@ -304,11 +304,11 @@ entries:
         - title: Create and share R scripts
           url: /end-user/r-scripts/create-r-scripts.html
           output: web,ugBk
-        - title: Run an R analysis
-          url: /end-user/r-scripts/use-r-analysis.html
+        - title: Run prebuilt R scripts on answers
+          url: /end-user/r-scripts/run-prebuilt-r-scripts.html
           output: web,ugBk
         - title: Save and share R visualizations
-          url: /end-user/r-scripts/share-r-visualizations.html
+          url: /end-user/r-scripts/save-and-share-r-answers.html
           output: web,ugBk
     - levelTwoTitle: SpotIQ
       output: web,ugBk
