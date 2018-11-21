@@ -484,9 +484,6 @@ entries:
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
         output: web,admBk
-      - title: Push data to another system
-        url: /admin/setup/push-data-to-other-system.html
-        output: web,admBk
       - title: Enable SearchIQ
         url: /admin/setup/enable-searchiq.html
         output: web,admBk
@@ -640,13 +637,10 @@ entries:
       - title: Create worksheet filters
         url: /admin/worksheets/create-ws-filter.html
         output: web,admBk
-      - title: How the inclusion rule works
-        url: /admin/worksheets/about-inclusion-rule.html
-        output: web,admBk
       - title: How the worksheet join rule works
         url: /admin/worksheets/progressive-joins.html
         output: web,admBk
-      - title: "Change inclusion, join, or RLS for a worksheet"
+      - title: "Change join rule or RLS for a worksheet"
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
       - title: "Create a join relationship"
