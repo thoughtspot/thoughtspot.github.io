@@ -2,7 +2,7 @@
 title: [About R in ThoughtSpot]
 tags: [r-scripts,customize]
 keywords: R, "R scripts", "scripts"
-summary: "You can leverage R analysis on your data in ThoughtSpot, using ThoughtSpot provided scripts, or custom scripts shared with your team. R visualizations can be shared as answers and pinboards."
+summary: "You can run an R analysis on your data, using ThoughtSpot provided scripts, or custom scripts shared with your team. R visualizations can be shared as answers and pinboards."
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -71,6 +71,10 @@ is a nice introduction to writing R scripts in ThoughtSpot.
 
 * [Create and share R scripts](create-r-scripts.html#)
 
-* [Run pre-built R scripts on answers](run-and-share-prebuilt-r-scripts.html#)
+* [Run pre-built R scripts on answers](run-prebuilt-r-scripts.html)
 
-* [SpotIQ custom analysis]({{ site.baseurl}}/spotiq/adv-customize-withr)
+* [SpotIQ custom analysis]({{ site.baseurl}}/spotiq/adv-customize-withr.html)
+
+* [Understand groups and privileges]({{ site.baseurl}}/admin/users-groups/about-users-groups.html)
+
+* [tscli rpackage]({{ site.baseurl }}/reference/tscli-command-ref.html#rpackage)
