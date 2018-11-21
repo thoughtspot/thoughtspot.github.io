@@ -153,3 +153,7 @@ write.csv(df, file=#output_file#, row.names=FALSE);
 Use the **i** icon to see help for the R syntax.
 
 ![]({{ site.baseurl }}/images/spotiq-help.png)
+
+## Related information
+
+* [tscli rpackage]({{ site.baseurl }}/reference/tscli-command-ref.html#rpackage)

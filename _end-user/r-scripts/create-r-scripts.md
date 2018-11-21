@@ -2,7 +2,7 @@
 title: [Create and share R scripts]
 tags: [r-scripts,customize]
 keywords: R
-summary: "You can create and share your custom R scripts in ThoughtSpot, and run R analyses on ThoughtSpot search results."
+summary: "You can create and share your custom R scripts in ThoughtSpot."
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,11 +11,19 @@ permalink: /:collection/:path.html
 ## How it works
 
 An R script in ThoughtSpot consumes input from search results or _answers_ (both
-the data and the schema), using the columns you select for the analysis. Data
-frames are used as parameters around which to build the script.
+the data and the schema), using the columns you select for the analysis.
+
+ThoughtSpot auto generates a _data frame_ object for all selected columns. A
+data frame is R’s representation of a table (a 2D data structure containing
+rows and columns). The system-generated data frame has the variable name “DF”.
+Data frames are used as parameters around which to build the script.
+
+When columns are selected, ThoughtSpot sends that data to R as a list of values
+(or _vectors_). A vector has a variable name of `.param` followed by some
+number, based on the order in which the columns are selected.
 
 When the script executes, it passes the information to the server to run the
-analysis, and displays the answer as visualization, in either PNG or CSV (table)
+analysis, and displays the answer as a visualization, in either PNG or CSV (table)
 format.
 
 As shown below, you can chain R analyses together by running another R script on
@@ -62,10 +70,6 @@ The generated data is displayed back as a static PNG when you run the analysis:
 * Under **Select column(s) for R analysis**, you specify the data you want to send
   to R and how to send it. If you do not make any choices here, all columns in the
   search are selected in the order they appear in the search bar.
-
-  When a column is selected, ThoughtSpot sends that data to R as a list of values
-  (or _vectors_). A vector has a variable name of `.param` followed by some
-  number, based on the order in which the columns are selected.
 
   In the examples above, `Monthly (Date)` is `.param0`, and `Sales` is `.param1`.
   To verify this, click the question mark icon next to **Select columns for R
@@ -114,13 +118,13 @@ The script for CSV output generates a table:
 
 ## Save and share your script
 
-To save a script, choose **Save as** from the ellipses "more options" menu on
+To save a script, choose **Save as** from the options menu (**...**) on
 the script. After you name it and save it, your script will show in the **Load**
 scripts dialog.
 
 ![]({{ site.baseurl }}/images/r-save-script.png)
 
-To share a script, choose **Share** from the ellipses "more options" menu.
+To share a script, choose **Share** from the options menu (**...**).
 
 ![]({{ site.baseurl }}/images/r-share-script.png)
 
