@@ -12,7 +12,7 @@
   <tbody>
     <tr>
       <td><strong>Can administer ThoughtSpot</strong></td>
-      <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer.</td>
+      <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer. </td>
     </tr>
     <tr>
       <td><strong>Can upload user data</strong></td>
@@ -33,11 +33,15 @@
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
-      <td>Can use SearchIQ and other experimental features, if enabled on the ThoughtSpot instance.</td>
+      <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
+<!--    <tr>
+      <td><strong>Can schedule pinboards</strong></td>
+      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
+    </tr> -->
     <tr>
       <td><strong>Can invoke Custom R Analysis</strong></td>
-      <td>Can choose to run a Custom R Analysis on a search result.</td>
+      <td>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</td>
     </tr>
     <tr>
       <td><strong>Can schedule pinboards</strong></td>

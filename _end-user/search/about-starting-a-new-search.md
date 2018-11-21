@@ -6,9 +6,15 @@ summary: "You use search to answer questions about your data without having to c
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Using ThoughtSpot's relational search is simple, so anyone can use it. In the search bar, type what you are interested in exploring, for example `revenue midwest sales rep`. Searches return a set of results in the form of a table or a chart. ThoughtSpot likes to call this set of results in response to a search an _answer_.
+Using ThoughtSpot's relational search is simple, so anyone can use it. In the
+search bar, type what you are interested in exploring, for example `revenue
+midwest sales rep`. Searches return a set of results in the form of a table or a
+chart. ThoughtSpot likes to call this set of results in response to a search an
+_answer_.
 
-As you get better with ThoughtSpot's search, you will be able to get more out of your data by performing more complex searches.  There are a few basic things you should understand before starting a new ThoughtSpot search.
+As you get better with ThoughtSpot's search, you will be able to get more out of
+your data by performing more complex searches.  There are a few basic things you
+should understand before starting a new ThoughtSpot search.
 
 ## How do I search data?
 
