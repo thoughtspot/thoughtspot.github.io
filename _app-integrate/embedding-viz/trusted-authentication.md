@@ -104,12 +104,6 @@ Once generated, tokens do not expire.
       </tr>
       </table>
 
-    You can view the Swagger description of this call and test it from your
-    ThoughtSpot application server:
-    `https://<thoughtspot>/external/swagger/#!/session/getAuthToken`
-
-    This call returns a `200` return code when the call is successful and an authentication token in the `Response Body`.
-
 4. The trusted authenticator server is responsible for managing this token.  
 
     The token can be managed in any way you see fit. Tokens expire in XXX minutes/hours/day.
