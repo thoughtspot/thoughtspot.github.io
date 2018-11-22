@@ -201,6 +201,56 @@ permalink: /:collection/:path.html
     </div>
 </div>
 
+<div class="component-container">
+    <!--start row-->
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/3neqqofag2.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_3neqqofag2 popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Working with Answers</b></p>
+        <p>
+        Save, modify, share, and pin answers.
+        </p>
+        </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/0ekamu0je5.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_0ekamu0je5 popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Exporting Answers and Pinboards</b></p>
+        <p>
+        Export search results as answers or pinboards to PDFs, PNG image files, CSV, or Excel files.
+        </p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/g0p91lg6qc.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_g0p91lg6qc popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Scheduling Pinboards</b></p>
+        <p>
+        Schedule pinboards for email distribution to ThoughtSpot users and groups, or colleagues external to ThoughtSpot.
+        </p>
+        </div>
+
+    </div>
+</div>
+
+
 ## Videos on ThoughtSpot 4.4
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
