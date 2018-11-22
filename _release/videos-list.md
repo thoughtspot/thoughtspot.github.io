@@ -8,6 +8,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+Videos are also published on the [ThoughtSpot Product Training](https://www.youtube.com/playlist?list=PLUocSHxJDKPslAO2R0tgQjYXTTDMFUHx6) YouTube channel.
+
 ## Videos on ThoughtSpot 4.5
 
 <div class="component-container">
