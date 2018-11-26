@@ -8,9 +8,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Videos are also published on the [ThoughtSpot Product Training](https://www.youtube.com/playlist?list=PLUocSHxJDKPslAO2R0tgQjYXTTDMFUHx6) YouTube channel.
+## Videos
 
-## Videos on ThoughtSpot 4.5
+These videos guide you through key workflows and features on ThoughtSpot. You may notice slight variations in buttons and icons, depending on whether a video was created on **ThoughtSpot 5.0 or 4.5**. For new or completely updated features, we provide version-specific videos. (These videos are also published on the [ThoughtSpot Product Training](https://www.youtube.com/playlist?list=PLUocSHxJDKPslAO2R0tgQjYXTTDMFUHx6) YouTube channel.)
+<br /><br />
 
 <div class="component-container">
     <!--start row-->
