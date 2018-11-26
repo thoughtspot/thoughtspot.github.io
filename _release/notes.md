@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<p>ThoughtSpot version 5.0 is now available. This release includes the features and issue fixes shown here.</p>
+<p>ThoughtSpot version 5.0 is now available. This release includes the features and issues shown here.</p>
 
 <ul>
    <li><a href="notes.html#5-0-new-features-and-functionality">5.0 New Features and Functionality</a></li>
