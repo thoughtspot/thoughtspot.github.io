@@ -15,7 +15,7 @@ the data and the schema), using the columns you select for the analysis.
 
 ThoughtSpot auto generates a _data frame_ object for all selected columns. A
 data frame is R’s representation of a table (a 2D data structure containing
-rows and columns). The system-generated data frame has the variable name “DF”.
+rows and columns). The system-generated data frame has the variable name “df”.
 Data frames are used as parameters around which to build the script.
 
 When columns are selected, ThoughtSpot sends that data to R as a list of values
@@ -41,7 +41,8 @@ Add your script into the **Custom R Script** dialog, and set the [column binding
 
 ## Basic R script to generate CSV data
 
-This is an example of a basic R script that generates CSV data.
+This is an example of a basic R script that generates CSV data. (The `df`
+variable name must be lower case, as shown.)
 
 ```
 write.csv(df,  #output_file#)
