@@ -22,7 +22,7 @@ permalink: /:collection/:path.html
 <li>4.5. to 5.0</li>
 <li>4.5.1.x to 5.0</li>
 </ul>
-<p>(This incudes any hotfixes or customer patches on these branches.)</p>
+<p>(This includes any hotfixes or customer patches on these branches.)</p>
 <p>If you are running a different version, you need to do a multiple pass upgrade. First, upgrade to one of the above versions, and then to this release.</p>
 
 <p><a name="5-0-new-features-and-functionality"></a></p>
