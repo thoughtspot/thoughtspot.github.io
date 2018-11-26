@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-11-26T10:07:30-08:00" />
+<meta property="article:published_time" content="2018-11-26T12:14:47-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-26T10:07:30-08:00","dateModified":"2018-11-26T10:07:30-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"How it works","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-26T12:14:47-08:00","dateModified":"2018-11-26T12:14:47-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"How it works","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2223,6 +2223,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.0/app-integrate/introduction/login-console.html">Log in to the Linux shell using SSH</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.0/app-integrate/introduction/logins.html">Log in credentials</a></li>
                 
               
@@ -3092,7 +3098,7 @@ the data and the schema), using the columns you select for the analysis.</p>
 
 <p>ThoughtSpot auto generates a <em>data frame</em> object for all selected columns. A
 data frame is R’s representation of a table (a 2D data structure containing
-rows and columns). The system-generated data frame has the variable name “DF”.
+rows and columns). The system-generated data frame has the variable name “<code class="highlighter-rouge">df</code>”.
 Data frames are used as parameters around which to build the script.</p>
 
 <p>When columns are selected, ThoughtSpot sends that data to R as a list of values
@@ -3118,7 +3124,8 @@ the answer to a previous script.</p>
 
 <h2 id="basic-r-script-to-generate-csv-data">Basic R script to generate CSV data</h2>
 
-<p>This is an example of a basic R script that generates CSV data.</p>
+<p>This is an example of a basic R script that generates CSV data. (The <code class="highlighter-rouge">df</code>
+variable name must be lower case, as shown.)</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>write.csv(df,  #output_file#)
 </code></pre></div></div>
