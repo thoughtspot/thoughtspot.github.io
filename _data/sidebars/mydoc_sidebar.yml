@@ -921,6 +921,9 @@ entries:
     - title: Introduction
       url: /app-integrate/introduction/introduction.html
       output: web,apgBk
+    - title: Log in to the Linux shell using SSH
+      url: /app-integrate/introduction/login-console.html
+      output: web,apgBk
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
       output: web,apgBk
