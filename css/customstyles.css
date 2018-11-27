@@ -1353,3 +1353,13 @@ h4.panel-title {
     width: 100%;
     background-color: #f5f5f5;
 }
+
+/*
+*
+* Inline graphics and icons (like the R information, options, and popout arrow icons)
+*
+*/
+
+img.inline {
+    display: inline;
+}
