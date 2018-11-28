@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-11-27T19:24:12-08:00" />
+<meta property="article:published_time" content="2018-11-27T22:01:40-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-27T19:24:12-08:00","dateModified":"2018-11-27T19:24:12-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"Overview","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-27T22:01:40-08:00","dateModified":"2018-11-27T22:01:40-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"Overview","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3085,7 +3085,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    5 minutes
+    6 minutes
   
 </span>
 
@@ -3101,7 +3101,7 @@ the right.</p>
 columns to include for analysis, and indicate what output data to expect from
 your script (PNG or CSV).</p>
 
-<p><img src="/5.0/images/r-gross-margin-by-date-script.png" alt="" /></p>
+<p><img src="/5.0/images/r-script-dialog.png" alt="" /></p>
 
 <p>ThoughtSpot also supports the sharing of scripts among users to enable you to
 share your powerful R analyses across the system, and allow others to run your
@@ -3121,8 +3121,8 @@ data elements in your script.</p>
 ThoughtSpot generates for these before the script is run. The first column you
 select has the variable name <code class="highlighter-rouge">.param0</code>, the second column you select has the
 variable name <code class="highlighter-rouge">.param1</code>, and so on. This naming scheme continues if there are
-more columns. (You can click the question mark <strong>?</strong> icon on the R script dialog
-to get a visual mapping of how the columns are bound to variables in R.)</p>
+more columns. (You can click the question mark icon <img src="/5.0/images/r-icon-question-mark.png" alt="question icon" class="inline" /> next to “<strong>Select columns for R
+analysis</strong>” to get a visual mapping of how the columns are bound to variables in R.)</p>
 
 <p>ThoughtSpot also provides an automatically-generated <em>data frame</em> object, <code class="highlighter-rouge">df</code>,
 that contains all selected column vectors. The data frame is R’s representation
@@ -3137,7 +3137,8 @@ another R script on the answer to a previous script.</p>
 
 <h2 id="write-a-custom-script">Write a custom script</h2>
 
-<p>To add a custom R script, start by running a search, then click the <strong>R</strong> icon on the toolbar.</p>
+<p>To add a custom R script, start by running a search, then click the <strong>R</strong> icon
+<img src="/5.0/images/r-icon-inline.png" alt="R icon" class="inline" /> on the toolbar.</p>
 
 <p><img src="/5.0/images/r-icon.png" alt="" /></p>
 
@@ -3190,7 +3191,7 @@ plot(.param0, .param1)
 to R and how to send it. If you do not make any choices here, all columns in the
 search are selected in the order they appear in the search bar.</p>
 
-    <p>In the examples above, <code class="highlighter-rouge">Monthly (Date)</code> is <code class="highlighter-rouge">.param0</code>, and <code class="highlighter-rouge">Sales</code> is <code class="highlighter-rouge">.param1</code>.
+    <p>In the examples above, <code class="highlighter-rouge">Year (Date)</code> is <code class="highlighter-rouge">.param0</code>, and <code class="highlighter-rouge">Sales</code> is <code class="highlighter-rouge">.param1</code>.
 To verify this, click the question mark icon next to <strong>Select columns for R
 analysis</strong> to see the “column bindings”. Reordering the columns changes the
 column bindings/params.</p>
@@ -3202,20 +3203,30 @@ column bindings/params.</p>
 
 <h2 id="options-on-scripts">Options on scripts</h2>
 
-<p><img src="/5.0/images/r-png-basic-annotated.png" alt="" /></p>
+<p>You can click these icons on the R script dialog to get more options:</p>
 
 <ul>
   <li>
-    <p>The <img src="images/r-icon-i.png" alt="R script information icon" class="inline" /> provides
-a basic reference guide for creating an R analysis in ThoughtSpot.</p>
+    <p>The R script information icon
+<img src="/5.0/images/r-icon-i.png" alt="R info icon" class="inline" />
+provides a basic reference guide for creating an R analysis in ThoughtSpot.</p>
   </li>
   <li>
-    <p>The arrow in the top right of the script dialog opens a popout that provides a larger
-space in which to view and edit your R script.</p>
+    <p>The ellipses icon (3 dots)
+<img src="/5.0/images/r-icon-more-options.png" alt="R info icon" class="inline" />
+provides a menu with options to save or load a previously saved R script, as well as
+share your R script with other users in the system.</p>
   </li>
   <li>
-    <p>The “…” icon provides an options menu to save or load a previously saved R
-script, as well as share your R script with other users in the system.</p>
+    <p>The arrow at the top right of the script dialog
+<img src="/5.0/images/r-icon-popout-arrow.png" alt="popout arrow" class="inline" />
+opens a popout editor that gives you a larger space in which to view and edit your R script.</p>
+  </li>
+  <li>
+    <p>The question mark icon
+<img src="/5.0/images/r-icon-question-mark.png" alt="question icon" class="inline" />
+next to “<strong>Select column(s) for R analysis</strong>” provides a visual mapping of how the columns
+are bound to variables in R.</p>
   </li>
 </ul>
 
