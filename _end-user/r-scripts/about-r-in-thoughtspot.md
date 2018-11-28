@@ -30,7 +30,9 @@ scripting perspective, but is not meant as an R primer.
 
 ## How to access R scripts
 
-Users with R script privileges can click the **R** icon on the toolbar for any search result (answer).
+Users with R script privileges can click the **R** icon
+![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline}
+on the toolbar for any search result (answer).
 
 ![]({{ site.baseurl }}/images/r-icon.png)
 
