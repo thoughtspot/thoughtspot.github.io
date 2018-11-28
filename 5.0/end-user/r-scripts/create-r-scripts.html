@@ -52,17 +52,17 @@
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="[“Create and share R scripts”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="How it works" />
-<meta property="og:description" content="How it works" />
+<meta name="description" content="Overview" />
+<meta property="og:description" content="Overview" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-11-26T16:32:31-08:00" />
+<meta property="article:published_time" content="2018-11-27T17:28:19-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-26T16:32:31-08:00","dateModified":"2018-11-26T16:32:31-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"How it works","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","datePublished":"2018-11-27T17:28:19-08:00","dateModified":"2018-11-27T17:28:19-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/end-user/r-scripts/create-r-scripts.html"},"description":"Overview","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3085,32 +3085,55 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    4 minutes
+    5 minutes
   
 </span>
 
     
 
-  <h2 id="how-it-works">How it works</h2>
+  <h2 id="overview">Overview</h2>
 
-<p>An R script in ThoughtSpot consumes input from search results or <em>answers</em> (both
-the data and the schema), using the columns you select for the analysis.</p>
+<p>Each ThoughtSpot cluster is capable of running an R analysis on your data. To
+perform your own R analysis, start with a simple search and click the R icon on
+the right.</p>
 
-<p>ThoughtSpot auto generates a <em>data frame</em> object for all selected columns. A
-data frame is R’s representation of a table (a 2D data structure containing
-rows and columns). The system-generated data frame has the variable name “<code class="highlighter-rouge">df</code>”.
-Data frames are used as parameters around which to build the script.</p>
+<p>Use the <strong>Custom R Script</strong> dialog and settings to enter your script, set which
+columns to include for analysis, and indicate what output data to expect from
+your script (PNG or CSV).</p>
 
-<p>When columns are selected, ThoughtSpot sends that data to R as a list of values
-(or <em>vectors</em>). A vector has a variable name of <code class="highlighter-rouge">.param</code> followed by some
-number, based on the order in which the columns are selected.</p>
+<p><img src="/5.0/images/r-gross-margin-by-date-script.png" alt="" /></p>
+
+<p>ThoughtSpot also supports the sharing of scripts among users to enable you to
+share your powerful R analyses across the system, and allow others to run your
+scripts on different search results.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>An R script in ThoughtSpot is based off of your original search (both the data
+and the schema), using the columns you select for the analysis. You can
+select all columns used in the original search or a subset of those columns,
+depending on the script.</p>
+
+<p>ThoughtSpot auto generates objects with variable names by which you can refer to
+data elements in your script.</p>
+
+<p>You can refer to the data in the selected columns by using vectors that
+ThoughtSpot generates for these before the script is run. The first column you
+select has the variable name <code class="highlighter-rouge">.param0</code>, the second column you select has the
+variable name <code class="highlighter-rouge">.param1</code>, and so on. This naming scheme continues if there are
+more columns. (You can click the question mark <strong>?</strong> icon on the R script dialog
+to get a visual mapping of how the columns are bound to variables in R.)</p>
+
+<p>ThoughtSpot also provides an automatically-generated <em>data frame</em> object, <code class="highlighter-rouge">df</code>,
+that contains all selected column vectors. The data frame is R’s representation
+of a table (a 2D data structure containing rows and columns).</p>
 
 <p>When the script executes, it passes the information to the server to run the
 analysis, and displays the answer as a visualization, in either PNG or CSV (table)
 format.</p>
 
-<p>As shown below, you can chain R analyses together by running another R script on
-the answer to a previous script.</p>
+<p>As shown in the examples below, you can chain R analyses together by running
+another R script on the answer to a previous script.</p>
 
 <h2 id="write-a-custom-script">Write a custom script</h2>
 
@@ -3118,9 +3141,16 @@ the answer to a previous script.</p>
 
 <p><img src="/5.0/images/r-icon.png" alt="" /></p>
 
-<p>Add your script into the <strong>Custom R Script</strong> dialog, and set the <a href="#column-bindings">column bindings</a> and <a href="#output-file-type">output type</a> appropriately, as shown in the following examples.</p>
+<p>Add your script into the <strong>Custom R Script</strong> dialog, and set the
+<a href="#column-bindings">column bindings</a> and <a href="#output-file-type">output type</a>
+appropriately, as shown in the following examples.</p>
 
 <p><img src="/5.0/images/r-png-basic.png" alt="" /></p>
+
+<p>For an R script to produce a meaningful output in ThoughtSpot, the script should
+generate a CSV or PNG file. Output should be written to the token
+<code class="highlighter-rouge">#output_file#</code>. CSV output is rendered back as a simple table in ThoughtSpot,
+PNG output is rendered back as a static PNG.</p>
 
 <h2 id="basic-r-script-to-generate-csv-data">Basic R script to generate CSV data</h2>
 
@@ -3133,6 +3163,12 @@ variable name must be lower case, as shown.)</p>
 <p>The generated data is displayed back as a table when you run the analysis:</p>
 
 <p><img src="/5.0/images/r-csv-basic.png" alt="" /></p>
+
+<p>This basic script returns the exact same table results as if you did the query
+directly in ThoughtSpot and selected the table view, barring some additional
+formatting you get for free on the search.</p>
+
+<p><img src="/5.0/images/r-basic-table-search-result.png" alt="" /></p>
 
 <h2 id="basic-r-script-to-generate-a-png-graphic">Basic R script to generate a PNG graphic</h2>
 
@@ -3164,20 +3200,37 @@ column bindings/params.</p>
   </li>
 </ul>
 
+<h2 id="options-on-scripts">Options on scripts</h2>
+
+<p><img src="/5.0/images/r-png-basic-annotated.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>The <img src="images/r-icon-i.png" alt="R script information icon" class="inline" /> provides
+a basic reference guide for creating an R analysis in ThoughtSpot.</p>
+  </li>
+  <li>
+    <p>The arrow in the top right of the script dialog opens a popout that provides a larger
+space in which to view and edit your R script.</p>
+  </li>
+  <li>
+    <p>The “…” icon provides an options menu to save or load a previously saved R
+script, as well as share your R script with other users in the system.</p>
+  </li>
+</ul>
+
 <h2 id="k-means-clustering-example-scripts">K-Means clustering example scripts</h2>
 
 <p>This script loads the <code class="highlighter-rouge">ggplot2</code> visualization package, labels the columns inside
 of the ThoughtSpot generated data frame object (<code class="highlighter-rouge">df</code>), and runs a K-Means
 clustering algorithm.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
- library(ggplot2)
- set.seed(20)
- df &lt;- data.frame(.param0, .param1)
- cluster &lt;- kmeans(df[1:2], 3, nstart = 20)
- cluster$cluster &lt;- as.factor(cluster$cluster)
- png(file=#output_file#,width=400,height=350,res=72)
- print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+
+kmeansOutput &lt;- kmeans(df[1:2], 3, nstart = 20)
+kmeansOutput$cluster &lt;- as.factor(kmeansOutput$cluster)
+png(file=#output_file#, width=400, height=350, res=72)
+print(ggplot(df, aes(.param0, .param1, color = kmeansOutput$cluster)) + geom_point())
 </code></pre></div></div>
 
 <p>When you run this script on the results of the original <code class="highlighter-rouge">sales date</code> search, you
@@ -3187,13 +3240,8 @@ get the following visualization as a PNG.</p>
 
 <p>You can run another R script directly on this result to get CSV results:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>###R SCRIPT####
-set.seed(20);
-df &lt;- data.frame(.param0,.param1);
-cluster &lt;- kmeans(df[1:2], 3, nstart = 20);
-df$Cluster &lt;- as.factor(cluster$cluster);
-colnames(df)[1] &lt;- 'Sales';
-colnames(df)[2] &lt;- 'Zip Code';
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kmeansOutput &lt;- kmeans(df[1:2], 3, nstart = 20);
+df$Cluster &lt;- as.factor(kmeansOutput$cluster);
 write.csv(df, file=#output_file#, row.names=FALSE);
 </code></pre></div></div>
 <p>The script for CSV output generates a table:</p>
@@ -3273,7 +3321,7 @@ or load one of the ThoughtSpot provided scripts:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 26, 2018 <br />
+        Generated: Nov 27, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
