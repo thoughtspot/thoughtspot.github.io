@@ -18,7 +18,7 @@ Use the **Custom R Script** dialog and settings to enter your script, set which
 columns to include for analysis, and indicate what output data to expect from
 your script (PNG or CSV).
 
-![]({{ site.baseurl }}/images/r-gross-margin-by-date-script.png)
+![]({{ site.baseurl }}/images/r-script-dialog.png)
 
 ThoughtSpot also supports the sharing of scripts among users to enable you to
 share your powerful R analyses across the system, and allow others to run your
@@ -38,8 +38,8 @@ You can refer to the data in the selected columns by using vectors that
 ThoughtSpot generates for these before the script is run. The first column you
 select has the variable name `.param0`, the second column you select has the
 variable name `.param1`, and so on. This naming scheme continues if there are
-more columns. (You can click the question mark **?** icon on the R script dialog
-to get a visual mapping of how the columns are bound to variables in R.)
+more columns. (You can click the question mark icon ![question icon]({{ site.baseurl }}/images/r-icon-question-mark.png){: .inline} next to "**Select columns for R
+analysis**" to get a visual mapping of how the columns are bound to variables in R.)
 
 ThoughtSpot also provides an automatically-generated _data frame_ object, `df`,
 that contains all selected column vectors. The data frame is R’s representation
@@ -107,7 +107,7 @@ The generated data is displayed back as a static PNG when you run the analysis:
   to R and how to send it. If you do not make any choices here, all columns in the
   search are selected in the order they appear in the search bar.
 
-  In the examples above, `Monthly (Date)` is `.param0`, and `Sales` is `.param1`.
+  In the examples above, `Year (Date)` is `.param0`, and `Sales` is `.param1`.
   To verify this, click the question mark icon next to **Select columns for R
   analysis** to see the “column bindings”. Reordering the columns changes the
   column bindings/params.
@@ -116,16 +116,25 @@ The generated data is displayed back as a static PNG when you run the analysis:
 
 ## Options on scripts
 
-![]({{ site.baseurl }}/images/r-png-basic-annotated.png)
+You can click these icons on the R script dialog to get more options:
 
-* The ![R script information icon](images/r-icon-i.png){: .inline} provides
-a basic reference guide for creating an R analysis in ThoughtSpot.
+* The R script information icon
+![R info icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
+provides a basic reference guide for creating an R analysis in ThoughtSpot.
 
-* The arrow in the top right of the script dialog opens a popout that provides a larger
-space in which to view and edit your R script.
+* The ellipses icon (3 dots)
+![R info icon]({{ site.baseurl }}/images/r-icon-more-options.png){: .inline}
+provides a menu with options to save or load a previously saved R script, as well as
+share your R script with other users in the system.
 
-* The “...” icon provides an options menu to save or load a previously saved R
-script, as well as share your R script with other users in the system.
+* The arrow at the top right of the script dialog
+![popout arrow]({{ site.baseurl }}/images/r-icon-popout-arrow.png){: .inline}
+opens a popout editor that gives you a larger space in which to view and edit your R script.
+
+* The question mark icon
+![question icon]({{ site.baseurl }}/images/r-icon-question-mark.png){: .inline}
+next to "**Select column(s) for R analysis**" provides a visual mapping of how the columns
+are bound to variables in R.
 
 ## K-Means clustering example scripts
 
