@@ -20,29 +20,30 @@ your script (PNG or CSV).
 
 ![]({{ site.baseurl }}/images/r-gross-margin-by-date-script.png)
 
+ThoughtSpot also supports the sharing of scripts among users to enable you to
+share your powerful R analyses across the system, and allow others to run your
+scripts on different search results.
 
 ## How it works
 
-An R script in ThoughtSpot is based off of your original search (both
-the data and the schema), using the columns you select for the analysis.
+An R script in ThoughtSpot is based off of your original search (both the data
+and the schema), using the columns you select for the analysis. You can
+select all columns used in the original search or a subset of those columns,
+depending on the script.
 
-ThoughtSpot auto generates a _data frame_ object for all selected columns. A
-data frame is R’s representation of a table (a 2D data structure containing
-rows and columns). The system-generated data frame has the variable name “`df`”.
-Data frames are used as parameters around which to build the script.
+ThoughtSpot auto generates objects with variable names by which you can refer to
+data elements in your script.
 
-You can refer to the data in the selected columns in your script by using
-automatically-generated variables that ThoughtSpot provides as part of each R
-analysis. You can refer to the first column that you select for analysis (in
-this case Month(Date)) with the variable `.param0`, a vector that ThoughtSpot
-generates and provides for you before your script is run. Refer to the second
-column by `.param1`, and so on (this naming scheme continues if there are more
-columns). Click the question mark **?** icon to get a visual mapping of how the
-columns are bound to variables in R.
+You can refer to the data in the selected columns by using vectors that
+ThoughtSpot generates for these before the script is run. The first column you
+select has the variable name `.param0`, the second column you select has the
+variable name `.param1`, and so on. This naming scheme continues if there are
+more columns. (You can click the question mark **?** icon on the R script dialog
+to get a visual mapping of how the columns are bound to variables in R.)
 
-ThoughtSpot also provides an automatically-generated dataframe object, `df`,
+ThoughtSpot also provides an automatically-generated _data frame_ object, `df`,
 that contains all selected column vectors. The data frame is R’s representation
-of a table (a 2D data structure containing rows and columns)
+of a table (a 2D data structure containing rows and columns).
 
 When the script executes, it passes the information to the server to run the
 analysis, and displays the answer as a visualization, in either PNG or CSV (table)
@@ -81,6 +82,11 @@ The generated data is displayed back as a table when you run the analysis:
 
 ![]({{ site.baseurl }}/images/r-csv-basic.png)
 
+This basic script returns the exact same table results as if you did the query
+directly in ThoughtSpot and selected the table view, barring some additional
+formatting you get for free on the search.
+
+![]({{ site.baseurl }}/images/r-basic-table-search-result.png)
 
 ## Basic R script to generate a PNG graphic
 
