@@ -54,7 +54,8 @@ another R script on the answer to a previous script.
 
 ## Write a custom script
 
-To add a custom R script, start by running a search, then click the **R** icon on the toolbar.
+To add a custom R script, start by running a search, then click the **R** icon
+![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline} on the toolbar.
 
 ![]({{ site.baseurl }}/images/r-icon.png)
 

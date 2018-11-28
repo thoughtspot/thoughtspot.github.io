@@ -14,7 +14,8 @@ users you share visualizations with do not need R privileges.
 
 ## Run an R analysis
 
-1.  Click the **R** icon on the toolbar for any search result (answer).
+1.  Click the **R** icon ![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline}
+on the toolbar for any search result (answer).
 
     ![]({{ site.baseurl }}/images/r-icon-marketspot.png)
 
