@@ -33,6 +33,7 @@ home page is a search bar and below that several areas that show activity in you
     <td>
     Shows all time popular answers and pinboards by number of views. You can
     choose between all-time popular or recently in the last 15 days. Small icons illustrate the type of visualization you'll find when you click on an item.
+    <br>
     <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
 </td>
   </tr>
