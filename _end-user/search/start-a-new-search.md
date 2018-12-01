@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 To start a new search:
 
-1. Click **Search** on the top navigation bar. You can also click **Search your data** at the top of the home page.
+1. Click **Search +** on the top navigation bar. You can also click **Search your data** at the top of the home page.
 
      ![]({{ site.baseurl }}/images/start_a_new_search.png "Start a new search")
 2. Click the Data button, to the left of the search field.
@@ -19,6 +19,8 @@ To start a new search:
 3. Choose your sources by clicking **Choose Sources**.
 
      ![]({{ site.baseurl }}/images/choose_sources.png "Choose sources menu")
+     <br>
+     ![]({{ site.baseurl }}/images/choose_sources_2.png "Choose sources menu")
 
      To see details of all of the data, click **Explore all data**.
 
