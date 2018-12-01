@@ -26,7 +26,7 @@ To start a new search:
 
     1. Filter through all available sources by using the search bar or stickers.
     2. Select your sources.
-    3. Click **Done**.
+    3. Click **CLOSE**.
 
 3. Add columns to the search bar, or double click columns in the Data column in the left panel.
 
