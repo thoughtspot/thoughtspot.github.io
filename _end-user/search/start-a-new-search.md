@@ -22,7 +22,7 @@ To start a new search:
      <br>
      ![]({{ site.baseurl }}/images/choose_sources_2.png "Choose sources menu")
 
-     To see details of all of the data, click **Explore all data**.
+     To see details of all of the data, click **EXPLORE ALL DATA**.
 
     1. Filter through all available sources by using the search bar or stickers.
     2. Select your sources.
