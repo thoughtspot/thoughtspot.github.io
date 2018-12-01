@@ -57,15 +57,21 @@ h1.indexTitle {
   color: #98A0B0;
 }
 
+p.iconTitle {
+  text-align: center;
+}
+
 p.bookLink {
   font-size: 97%;
   font-family: sans-serif;
   margin-top:-10px;
   padding-top: 10px;
+  text-align: center;
 }
 
 img.indexImg {
   margin-bottom: 27px;
+  text-align: center;
 }
 
 h2.tagLine {
