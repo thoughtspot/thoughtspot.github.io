@@ -26,5 +26,5 @@ to open the **Query details** panel.
 ![]({{ site.baseurl }}/images/what_am_i_looking_at.png "Query details")
 
 This dialog shows measures ThoughtSpot computed, for each combination of
-attributes. Choose **QUERY VISUALIZER** to see search filters and how the tables
+attributes. Choose **Query visualizer** to see search filters and how the tables
 were linked and used.
