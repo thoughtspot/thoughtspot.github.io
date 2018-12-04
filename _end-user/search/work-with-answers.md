@@ -38,9 +38,9 @@ You can make a copy of an answer if you would like to make edits without changin
 
 ## Other features
 
-At the bottom of the **Answers** page, you can find two additional areas,
-**SpotIQ Insights** and **Related Searches**. These areas are derived from your
-original answer and you can select them to deepen your search.
+At the bottom of the **Answers** page, you can an additional area, called
+**SpotIQ Insights**. This area is derived from your
+original answer and you can select any of the insights to deepen your search.
 
 ![]({{ site.baseurl }}/images/other-answers.png "Features of Answers")
 
