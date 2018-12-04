@@ -14,7 +14,9 @@ topnav_dropdowns:
   sections:
     - title: Version
       sectionitems:
-        - title: latest (4.5)
+        - title: latest (5.0)
+          url: /5.0/index.html
+        - title: 4.5
           url: /4.5/index.html
         - title: 4.4
           url: /4.4/index.html
