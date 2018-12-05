@@ -7,7 +7,7 @@ summary: "Use keywords when asking a question to narrow and further define your 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references]({{ site.baseurl }}/reference/keywords.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
+In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references]({{ site.baseurl }}/reference/keywords.html#) section or in the help. Open the help by clicking **Help** on the top navigation bar.
 
  ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
 
