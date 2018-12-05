@@ -66,7 +66,7 @@ aggregations are total, average, standard deviation, variance, minimum, and
 maximum. There are also unique count and total count values available for the
 appropriate columns.
 
-To add a headline to a pinboard, hover over the upper-right corner of the headline and click the **Pin** icon.
+To add a headline to a pinboard, hover over the headline and click the **Pin** icon.
 
  ![]({{ site.baseurl }}/images/pin_headline.png "Add a headline to a pinboard")
 
