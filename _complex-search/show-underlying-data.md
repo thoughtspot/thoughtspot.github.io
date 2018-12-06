@@ -30,12 +30,12 @@ To show underlying data:
 
     A new window opens that displays a summary and the underlying data.
 
-3. Optionally, choose to **+ Add Column** to add additional data.
+3. Optionally, choose to **+ ADD COLUMNS** to add additional data.
 
    ![]({{ site.baseurl }}/images/add_columns_underlying_data.png "Add columns to underlying data")
 
-4. Click **Confirm Changes**.
+4. Click **CONFIRM CHANGES**.
 
-5. Click **Download** to download a CSV file of the data.
+5. Click **DOWNLOAD** to download a CSV file of the data.
 
    ![]({{ site.baseurl }}/images/showing_underlying_data.png "Download underlying data")
