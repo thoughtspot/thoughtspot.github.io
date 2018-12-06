@@ -71,7 +71,7 @@ You can include or exclude row values from your answer.
 
 To exclude or include row values:
 
-1. Right click on the visualization or table cell of interest
+1. Right-click the visualization or table cell of interest
 2. Select **Exclude "value"** or **Include "value"** if available.
 
      ![]({{ site.baseurl }}/images/exclude.png "Exclude value option")
