@@ -9,9 +9,9 @@ permalink: /:collection/:path.html
 You can see the most granular details of a given result set, i.e. it shows the
 un-aggregated view. This feature lets you understand what an answer consists of.
 For example, if you search for `customer region revenue`, the answer shows the
-aggregate revenue value for each customer region. You can then click on any row
-and then on **Show underlying data**, to see each value that `revenue`
-constitutes of, for any given region.
+aggregate revenue value for each customer region. Then, you can right-click any row
+and then click **Show underlying data**, to see each value which constitutes `revenue`
+for any given region.
 
 Only the first 1,000 rows are shown when viewing the underlying data. You can
 even download the results shown when you choose **Show underlying data** from a
@@ -23,7 +23,7 @@ tables." %}
 
 To show underlying data:
 
-1. Right click on the visualization or table cell of interest
+1. Right-click the visualization or table cell of interest
 2. Select **Show underlying data**.
 
    ![]({{ site.baseurl }}/images/show_underlying_data.png "Show underlying data option")
