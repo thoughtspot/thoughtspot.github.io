@@ -56,10 +56,10 @@ For information on <strong>application integration</strong>, see the [Applicatio
 
 For documentation on installing and configuration, see the instructions for the client you want to use:
 
+* [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)
 * [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
 * [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
 * [Install the ODBC driver on Solaris Sparc]({{ site.baseurl }}/data-integrate/clients/install-odbc-solaris.html)
-* [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)
 
 ## Virutal and Cloud Platforms
 
