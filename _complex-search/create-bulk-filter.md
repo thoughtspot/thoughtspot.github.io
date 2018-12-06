@@ -21,7 +21,7 @@ application such as an email or cells from an Excel or Google Sheets
 spreadsheet.
 
 1. In table view, select multiple cells by clicking and dragging.
-2. Right click and choose **Copy to clipboard**.
+2. Right-click and choose **Copy to clipboard**.
 
      ![]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png "Copy to the Clipboard")
 
