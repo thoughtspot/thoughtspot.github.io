@@ -16,8 +16,7 @@ You can change the view of your answer so it appears as a table or a chart. To
 change the view of your answer:
 
 1. View your answer.
-2. Click **Change Visualization**.
-3. Select either table or a chart type.
+2. Select either table or a chart type.
 
    ![]({{ site.baseurl }}/images/toggle_between_views.png "Toggle between the two views")
 
