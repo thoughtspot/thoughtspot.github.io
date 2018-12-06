@@ -27,7 +27,7 @@ To sort your search:
 
 * If you are in the data (table) view, click the column header you would like to sort on.
 
-   By default, sorting applies in descending order. You can click on a column header to sort again to sort in ascending order.
+   By default, sorting applies in descending order. You can click a column header to sort again to sort in ascending order.
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 
@@ -51,7 +51,7 @@ ThoughtSpot chooses a default date bucket for you when you search. This default
 takes the entire search result into account. For example, if your search
 includes last month, dates are bucketed daily instead of monthly.
 
-On a table view, you use the date bucket dropdown below the column header. On a
+On a table view, you use the date bucket drop-down, below the column header. On a
 chart, you can change this via the axis label.
 
 ![]({{ site.baseurl }}/images/bucket_change.png "Chooser location")
