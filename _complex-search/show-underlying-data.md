@@ -36,6 +36,6 @@ To show underlying data:
 
 4. Click **CONFIRM CHANGES**.
 
-5. Click **DOWNLOAD** to download a CSV file of the data.
-
    ![]({{ site.baseurl }}/images/showing_underlying_data.png "Download underlying data")
+
+5. Click **DOWNLOAD** to download a CSV file of the data.
