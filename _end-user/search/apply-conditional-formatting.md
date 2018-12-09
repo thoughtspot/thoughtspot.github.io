@@ -26,7 +26,7 @@ To apply conditional formatting to a table:
      ![]({{ site.baseurl }}/images/conditional_formatting_table_1.png "Three dot menu")
 
 2. Select **Conditional Formatting**.
-3. Click the **+ ADD FORMATTING** icon in the **Conditional Formatting** window.
+3. Click **+ ADD FORMATTING** in the **Conditional Formatting** window.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_2.png "Conditional formatting menu")
 
@@ -47,7 +47,7 @@ You can use conditional formatting to show charts with a target value or range d
 To apply conditional formatting to a chart:
 
 1. Click the axis label of your chart. Select **Conditional Formatting**.
-2. Click the **+ ADD FORMATTING** icon in the Conditional Formatting window.
+2. Click **+ ADD FORMATTING** in the Conditional Formatting window.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_menu%20copy.png "Conditional formatting menu")
 
