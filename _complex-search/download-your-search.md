@@ -11,11 +11,11 @@ PDF, or XLSX (Excel) file. When you download a chart, it will be a PNG file. To
 download your search:
 
 * Click the three-dot **Actions** icon, and do any of the following:
-- For a table, choose **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
+        * For a table, choose **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
 
      ![]({{ site.baseurl }}/images/download_a_table.png "Download your table options")
 
-- For a chart, select **Download**.
+          * For a chart, select **Download**.
 
      ![]({{ site.baseurl }}/images/download_a_chart.png "Download your chart option")
 
