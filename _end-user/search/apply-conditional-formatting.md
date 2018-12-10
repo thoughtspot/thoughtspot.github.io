@@ -21,12 +21,12 @@ You can use conditional formatting to show table cells with a background color d
 
 To apply conditional formatting to a table:
 
-1. In the column header of your table for the column you want to apply formatting to, click the three dot **Change Configuration** icon.
+1. In the column header of your table for the column you want to apply formatting to, click the three-dot **Change Configuration** icon.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_1.png "Three dot menu")
 
 2. Select **Conditional Formatting**.
-3. Click the **+** icon in the **Conditional Formatting** menu.
+3. Click **+ ADD FORMATTING** in the **Conditional Formatting** window.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_2.png "Conditional formatting menu")
 
@@ -38,7 +38,7 @@ To apply conditional formatting to a table:
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_4.png "Table with conditional formatting")
 
-6. Note that if you change to a chart type, you will need to apply conditional formatting again. Conditional formatting is tied to the specific visualization.
+Note: If you change to a chart type, you will need to apply conditional formatting again. Conditional formatting is tied to the specific visualization.
 
 ## Apply conditional formatting to a chart
 
@@ -47,7 +47,7 @@ You can use conditional formatting to show charts with a target value or range d
 To apply conditional formatting to a chart:
 
 1. Click the axis label of your chart. Select **Conditional Formatting**.
-2. Click the **+** icon in the Conditional Formatting menu.
+2. Click **+ ADD FORMATTING** in the Conditional Formatting window.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_menu%20copy.png "Conditional formatting menu")
 
@@ -59,4 +59,4 @@ To apply conditional formatting to a chart:
 
      ![]({{ site.baseurl }}/images/conditional_formatting_chart.png "Chart with conditional formatting")
 
-5. Note that if you change the chart type, you will need to apply conditional formatting again. It is tied to the specific visualization.
+Note: If you change the chart type, you will need to apply conditional formatting again. It is tied to the specific visualization.

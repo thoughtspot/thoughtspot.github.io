@@ -25,6 +25,6 @@ To add a filter from the chart axes:
 
      ![]({{ site.baseurl }}/images/filter_chart_exclude.png "Axis filters exclude value box")
 
-4. Click **ADD FILTER**.
+4. Click **DONE**.
 
 If there are too many values, you can use the filter search bar to find the ones you want.

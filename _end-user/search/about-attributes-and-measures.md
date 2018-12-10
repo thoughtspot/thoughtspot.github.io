@@ -20,11 +20,11 @@ Measures are numeric values you can do math on, with meaningful results. You wil
 ## Query details
 
 After, or while completing a search, you can see how ThoughtSpot displayed the
-answer. Click the **exclamation mark** on the right hand side of the search bar
-to open the **Query details** dialogue box.
+answer. Click the **Query details** button on the right-hand side of the screen
+to open the **Query details** panel.
 
 ![]({{ site.baseurl }}/images/what_am_i_looking_at.png "Query details")
 
-This dialog shows measures ThoughtSpot computed, for each combination of
-attributes. Choose **QUERY VISUALIZER** to see search filters and how the tables
+This panel shows the measures that ThoughtSpot computed, for each combination of
+attributes. Choose **Query visualizer** to see search filters and how the tables
 were linked and used.

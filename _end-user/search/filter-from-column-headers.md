@@ -22,6 +22,6 @@ To add a filter from column headers:
 
      ![]({{ site.baseurl }}/images/exclude_nulls.png "Exclude column filters value box")
 
-5. Click **ADD FILTER**.
+5. Click **DONE**.
 
    If there are too many values, you can use the filter search bar to find the ones you want.
