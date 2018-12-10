@@ -13,11 +13,11 @@ download your search:
 * Click the three-dot **Actions** icon, and do any of the following:
     * For a table, choose **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
 
-     ![]({{ site.baseurl }}/images/download_a_table.png "Download your table options")
+         ![]({{ site.baseurl }}/images/download_a_table.png "Download your table options")
 
     * For a chart, select **Download**.
 
-     ![]({{ site.baseurl }}/images/download_a_chart.png "Download your chart option")
+         ![]({{ site.baseurl }}/images/download_a_chart.png "Download your chart option")
 
 Currently, ThoughtSpot limits the maximum number of rows that can be downloaded
 to 10M (default is 1M). Your system limit is configured by your ThoughtSpot administrator.
