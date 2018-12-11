@@ -20,7 +20,7 @@ You can always go back and view or edit a formula that was added to a search. Do
 
 5. View or edit your formula in the Formula Builder.
 
-     ![]({{ site.baseurl }}/images/formula_builder.png "Use the Formula Builder")
+     ![]({{ site.baseurl }}/images/formula_builder_2.png "Use the Formula Builder")
 
     {% include note.html content="Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
 
