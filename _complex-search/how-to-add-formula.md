@@ -31,7 +31,7 @@ To create a formula in a search:
 
     ![]({{ site.baseurl }}/images/formula_assistant.png "Examples in the Formula Assistant")
 
-6.  If you want to change what your formula returns, use the **Advanced settings**.Depending on your formula, you may be able to change:
+6.  If you want to change what your formula returns, use the **Advanced settings**. Depending on your formula, you may be able to change:
 
     -   Data type
     -   ATTRIBUTE or MEASURE
