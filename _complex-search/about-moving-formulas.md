@@ -76,7 +76,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper right hand side of the table, click **Actions** and select **Add formula**.
+2. In the upper-right side of the table, click the three-dot **Actions** icon and select **Add formula**.
 
    ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 
@@ -86,7 +86,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
     ![]({{ site.baseurl }}/images/moving_average_formula.png "Moving Average Formula")
 
-4. Name the formula by clicking on its title and typing the new name. Click **Save**.
+4. Name the formula by entering a title in the top field, and then click **Save**.
 
    The formula will appear in the search bar and in the table as its own column.
 
@@ -94,4 +94,4 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
    A box displaying the moving average within the entire table will appear at the bottom.
 
-5. Click on the box to toggle between aggregation types.
+5. To use a different aggregation type, click the current aggregation type in the bottom of the box and select another type.
