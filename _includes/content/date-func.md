@@ -202,11 +202,12 @@
       <td>
       Returns the year from a given date. Add an optional second parameter to specify
       whether a 'fiscal' or 'calendar' year is used to calculate the result. Default
-      is 'calendar'. (In examples, start of fiscal year is set to May 01.)
+      is 'calendar'. (In examples, start of fiscal year is set to May 01. Per standard
+      convention, the fiscal year is defined by the year-end date.)
       </td>
       <td>
       <code class="highlighter-rouge">year (01/15/2014) = 2014</code><br>
-      <code class="highlighter-rouge">year (01/15/2014, 'fiscal') = 2013</code><br>
+      <code class="highlighter-rouge">year (12/15/2013, 'fiscal' ) = 2014</code><br>
       <code class="highlighter-rouge">year (date ordered)</code></td>
     </tr>
   </tbody>
