@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="The ThoughtSpot connection drivers support a limited set of SQL commands."> -->
-<meta name="keywords" content=",  odbc,jdbc">
-<title>Supported SQL commands | ThoughtSpot</title>
+<!-- <meta name="description" content="Use the schema viewer to see tables and worksheets and their relationships. "> -->
+<meta name="keywords" content="Modeling,  schema viewer, relationships, keys, worksheet">
+<title>How to view a data schema | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,21 +48,21 @@
 
 <!-- SEO Tools -->
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Supported SQL commands”] | thoughtspot.github.io</title>
+<title>[“How to view a data schema”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="[“Supported SQL commands”]" />
+<meta property="og:title" content="[“How to view a data schema”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC or JDBC driver." />
-<meta property="og:description" content="The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC or JDBC driver." />
-<link rel="canonical" href="https://docs.thoughtspot.com/5.0/data-integrate/reference/odbc-commands.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/5.0/data-integrate/reference/odbc-commands.html" />
+<meta name="description" content="ThoughtSpot offers a schema viewer that lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see." />
+<meta property="og:description" content="ThoughtSpot offers a schema viewer that lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see." />
+<link rel="canonical" href="https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-12-13T18:14:47-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/data-integrate/reference/odbc-commands.html","headline":"[“Supported SQL commands”]","datePublished":"2018-12-13T18:14:47-08:00","dateModified":"2018-12-13T18:14:47-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/data-integrate/reference/odbc-commands.html"},"description":"The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html","headline":"[“How to view a data schema”]","datePublished":"2018-12-13T18:14:47-08:00","dateModified":"2018-12-13T18:14:47-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html"},"description":"ThoughtSpot offers a schema viewer that lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1312,7 +1312,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.0/admin/loading/schema-viewer.html">How to view a data schema</a></li>
+                          <li class="active"><a href="/5.0/admin/loading/schema-viewer.html">How to view a data schema</a></li>
                       
                    
                 
@@ -2828,7 +2828,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/5.0/data-integrate/reference/odbc-commands.html">Supported SQL commands</a></li>
+                          <li><a href="/5.0/data-integrate/reference/odbc-commands.html">Supported SQL commands</a></li>
                       
                    
                 
@@ -3041,7 +3041,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Supported SQL commands</h1>
+   <h1 class="post-title-main">How to view a data schema</h1>
 </div>
 
 
@@ -3049,7 +3049,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">The ThoughtSpot connection drivers support a limited set of SQL commands.</div>
+    <div class="summary">Use the schema viewer to see tables and worksheets and their relationships. </div>
    
 
     
@@ -3085,75 +3085,111 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    1 minute
+    2 minutes
   
 </span>
 
     
 
-  <p>The ODBC and JDBC drivers support a limited set of SQL commands. When developing
-software that uses a ThoughtSpot ODBC driver, use this reference of supported
-commands. This reference is intended for developers using other tools (ETL,
-etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.</p>
+  <p>ThoughtSpot offers a schema viewer that lets you see your database schema in the
+web browser. The Schema Viewer is interactive, so you can configure it to show
+just what you want to see.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot displays <code class="highlighter-rouge">VARCHAR</code> fields using lower case, regardless of what the original casing of your loaded data is.</div>
+<p>You need <strong>Admin</strong> privileges to use the <strong>Schema Viewer</strong>.</p>
 
-<h2 id="odbc">ODBC</h2>
+<h2 id="bringing-up-the-schema-viewer">Bringing up the Schema Viewer</h2>
 
-<p>These SQL commands are supported for ODBC:</p>
+<p>You can bring up the Schema Viewer from the <strong>Data</strong> screen. Click the ellipses icon
+(3 dots) <img src="/5.0/images/r-icon-more-options.png" alt="R info icon" class="inline" />,
+and select <strong>View Schema</strong>.</p>
+
+<p><img src="/5.0/images/access_schema_viewer.png" alt="" title="Access the Schema
+ Viewer" /></p>
+
+<p>When viewing the schema, you can filter the tables shown similarly to how you
+filter data sources. The list of tables, worksheets, and imported data on the
+left includes only those objects you want to see. Clicking on one of the objects
+brings it to the middle of the viewer and highlights it. You can drag the
+objects around in the viewer.</p>
+
+<p><img src="/5.0/images/schema_viewer.png" alt="" title="Schema Viewer filters" /></p>
+
+<h2 id="why-to-use-the-schema-viewer">Why to use the Schema Viewer</h2>
+
+<p>You can use the Schema Viewer to find out information like:</p>
 
 <ul>
-  <li>
-    <p><code class="highlighter-rouge">CREATE TABLE</code></p>
-
-    <p>Creates a table with the specified column definitions and constraints. The table is replicated on each node.</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  CREATE TABLE country_dim (id_number int, country varchar, CONSTRAINT PRIMARY KEY (id_number));
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">INSERT</code></p>
-
-    <p>Creates placeholders in the table to receive the data.</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  INSERT INTO TABLE country_dim (?, ?);
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">DELETE FROM &lt;table&gt;</code></p>
-
-    <p>Deletes <code class="highlighter-rouge">ALL</code> rows from the specified table. Does not support the <code class="highlighter-rouge">WHERE</code> clause.</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DELETE FROM country_dim;
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">SELECT &lt;cols_or_expression&gt; FROM &lt;table_list&gt; [WHERE &lt;predicates&gt;] [GROUP BY &lt;expressions&gt;]</code><code class="highlighter-rouge">[ORDER BY &lt;expressions&gt;]</code></p>
-
-    <p>Fetches the specified set of table data.</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SELECT id_number, country FROM country_dim WHERE id_number &gt; 200;
-</code></pre></div>    </div>
-  </li>
+  <li>What is the relationship between two tables? What tables make up this</li>
+  <li>worksheet, and how are they joined?</li>
 </ul>
 
-<h2 id="jdbc">JDBC</h2>
+<p>The schema viewer shows joins between tables, join directionality, and join type
+(whether they are Foreign Key to Primary Key, relationship joins, or joins
+defined by users through the web interface). Use the <strong>Table</strong> list to find a
+specific table or worksheet.</p>
 
-<p><code class="highlighter-rouge">TRUNCATE</code> is not supported. Instead, use <code class="highlighter-rouge">DELETE FROM TABLE</code> which is
-functionally equivalent to “truncate table” in terms of table compression and so
-forth.</p>
+<h2 id="how-the-schema-viewer-shows-joins">How the Schema Viewer shows joins</h2>
+
+<p>You can use the Schema Viewer to review your schema and ensure that it was
+modeled using best practices. For example, joins are shown in separate colors that indicate their type:</p>
+
+<ul>
+  <li>Red is used for generic relationships</li>
+  <li>Green is used for primary key/foreign key joins</li>
+</ul>
+
+<p>When viewing a worksheet, you’ll also be able to see whether an inner, left outer, right outer, or full outer join was used between each of the joined tables.</p>
+
+<p>A good rule to follow is “Keep it Green”. This means that you’ll get better results from PK/FK joins rather than from using generic relationships. You should only use generic relationships when the tables being joined have a many-to-many rather than a PK/FK structure. If you find tables that have been joined using a generic relationship, but could have used a PK/FK join, you should drop the relationship and create a PK/FK join instead. To do this, you need to use the ALTER TABLE…DROP RELATIONSHIP statement in TQL. Then use ALTER TABLE…ADD FOREIGN KEY to create the PK/FK join.</p>
+
+<h2 id="worksheet-view">Worksheet view</h2>
+
+<p>Click on a worksheet, to see it in the Schema Viewer. The worksheet
+view shows the following information:</p>
+
+<ul>
+  <li>All tables in the worksheet, and the relationships between these tables.</li>
+  <li>
+    <p>Source columns for all columns of a worksheet.</p>
+  </li>
+  <li>
+    <p>Keys and definitions for each relationship, as well as join paths and types.</p>
+  </li>
+  <li>
+    <p>Columns that are derived from formulas.</p>
+  </li>
+  <li>Correct join paths for newly created chasm trap worksheets. Existing chasm</li>
+  <li>trap worksheets created prior to ThoughtSpot version 4.4 will not show the correct join paths.</li>
+</ul>
+
+<p><img src="/5.0/images/worksheet_viewer.png" alt="" title="Worksheet view example" /></p>
+
+<h2 id="related-information">Related Information</h2>
+
+<ul>
+  <li><a href="/5.0/admin/worksheets/add-joins.html">Worksheet joins</a></li>
+  <li><a href="/5.0/admin/loading/change-schema.html">Change the schema using TQL</a></li>
+  <li><a href="/5.0/admin/loading/constraints.html">Constraints</a></li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.0/_data-integrate/reference/odbc-commands.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.0/_admin/loading/schema-viewer.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
     </div>
     <div >
+        
+        
+        
+        
+        <a href="/5.0/tags/tag_Modeling.html" class="btn btn-default navbar-btn cursorNorm" role="button">Modeling</a>
+        
+        
         
     </div>
 </div>
@@ -3169,7 +3205,7 @@ forth.</p>
       <div class="col-lg-12 footer">
         Generated: Dec 13, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 12/13/2018<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
