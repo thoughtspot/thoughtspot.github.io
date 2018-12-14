@@ -1,17 +1,24 @@
---- title: [How to view a data schema] tags: [Modeling] keywords: schema viewer,
---relationships, keys, worksheet last_updated: tbd summary: "Use the schema
---viewer to see tables and worksheets and their relationships. " sidebar:
---mydoc_sidebar permalink: /:collection/:path.html - There is a schema viewer in
---ThoughtSpot which lets you see your database schema in the web browser. The
---Schema Viewer is interactive, so you can configure it to show just what you
---want to see.
+---
+title: [How to view a data schema]
+keywords: schema viewer, relationships, keys, worksheet
+last_updated: 12/13/2018
+tags: [Modeling]
+toc: true
+summary: "Use the schema viewer to see tables and worksheets and their relationships. "
+sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
+---
+ThoughtSpot offers a schema viewer that lets you see your database schema in the
+web browser. The Schema Viewer is interactive, so you can configure it to show
+just what you want to see.
 
 You need **Admin** privileges to use the **Schema Viewer**.
 
 ## Bringing up the Schema Viewer
 
-You can access the Schema Viewer from the **Data** screen by clicking
-**Actions**, and selecting **View Schema**.
+You can bring up the Schema Viewer from the **Data** screen. Click the ellipses icon
+(3 dots) ![R info icon]({{ site.baseurl }}/images/r-icon-more-options.png){: .inline},
+and select **View Schema**.
 
  ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema
  Viewer")
