@@ -1345,3 +1345,13 @@ h4.panel-title {
     margin: 0 0 50px;
     width: 100%;
 }
+
+/*
+*
+* Inline graphics and icons (like 3 dots options menu icon)
+*
+*/
+
+img.inline {
+    display: inline;
+}
