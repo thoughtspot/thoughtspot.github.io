@@ -25,10 +25,12 @@ To schedule a pinboard:
 
 5. Click **+ Schedule** to add a new schedule.
 
-     ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
+
 
      On the **Add a Schedule** page, you create a new schedule for your pinboard.
 
+     ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
+     
 6. Set the values for your schedule.
 
     ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
