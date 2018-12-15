@@ -10,7 +10,7 @@ You can copy and paste the copied link to include in a presentation or spreadshe
 
 You can also use this link for embedding the chart or table in another Web page, Web portal, or application when using the ThoughtSpot JavaScript API with Embedding or the REST API. For details, read the ThoughtSpot Application Integration Guide.
 
-## Copying a pinboard
+## Copying a pinboard link
 
 To copy the link for a pinboard:
 
