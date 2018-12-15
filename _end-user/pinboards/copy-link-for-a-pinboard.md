@@ -10,6 +10,8 @@ You can copy and paste the copied link to include in a presentation or spreadshe
 
 You can also use this link for embedding the chart or table in another Web page, Web portal, or application when using the ThoughtSpot JavaScript API with Embedding or the REST API. For details, read the ThoughtSpot Application Integration Guide.
 
+## Copying a pinboard
+
 To copy the link for a pinboard:
 
 1. Click **Pinboards**, on the top navigation bar.
@@ -25,10 +27,12 @@ To copy the link for a pinboard:
 
      ![]({{ site.baseurl }}/images/copy_link_pinboard.png "Copy pinboard link")
 
-5. To copy an individual visualization link, click **Copy link** under the drop-down menu of the visualization you would like to copy a link from.
+## Copying a visualization link     
+
+1. To copy an individual visualization link, click the three-dot **Actions** button and select **Copy link** of the visualization you would like to copy a link from.
 
      ![]({{ site.baseurl }}/images/copy_link_of_a_visualization.png "Copy visualization link option")
 
-6. Copy the visualization link. The highlighted portion is the visualization ID.
+2. Copy the visualization link. The highlighted portion is the visualization ID.
 
      ![]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png "Copy visualization link")
