@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can undo your edits to a pinboard visualization by resetting it
 
-## Resetting a pinboard visualization
+## Reset a pinboard visualization
 
 After performing ad hoc actions or edits to a visualization of your pinboard, you can reset the visualization to its original form.
 
