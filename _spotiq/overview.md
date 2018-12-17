@@ -100,14 +100,14 @@ analysis generates new results.
    Not every SpotIQ analysis creates results. You can see information about each
    analysis as well as the results.
 
-4. Click the **analyses** tab at the top of the page.
+4. Click the **Analyses** tab at the top of the page.
 
    Check the **STATUS** and also how long the **RESULT** took to generate. Since
    you got results, you can see that the analysis succeeded.
 
 5. Select the **Analysis for FoodDollarDataReal** and choose **Delete**.
 
-   The information disappears from the **analyses** list.
+   The information disappears from the **Analyses** list.
 
 6. Choose **Results**.
 
