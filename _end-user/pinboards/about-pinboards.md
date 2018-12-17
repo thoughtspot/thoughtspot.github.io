@@ -6,18 +6,18 @@ summary: "Create a new pinboard to group and manage related search results. Pinb
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Pinboards act like live dashboards, and are collections of your related charts, tables, and headline.
+Pinboards act like live dashboards. They are collections of your related charts, tables, and headline.
 
 ## What are pinboards
 
-You can pin charts and tables to any pinboard which you created, and those that have been shared with you with the **Edit** privilege. When you create a pinboard, you can share it with other people with either the **View** or **Edit** privilege. Pinboards are interactive, allowing you to perform actions like filtering, excluding values, and drilldown on the visualizations.
+You can pin charts and tables to any pinboard which you created, and those that have been shared with you with the **Edit** privilege. When you create a pinboard, you can share it with other people with either the **View** or **Edit** privilege. Pinboards are interactive, allowing you to perform actions like filtering, excluding values, and drill down on the visualizations.
 
 
 ## Create a pinboard
 
 To create a pinboard:
 
-1. Click on **Pinboards**, on the top navigation bar.
+1. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
@@ -31,14 +31,14 @@ To create a pinboard:
 
 ## Add an answer to a pinboard
 
-Instead of saving an answer you can add it to a pinboard by pinning it. To add
+Instead of saving an answer you can add it to a pinboard. To add
 an answer to a pinboard:
 
-1. While viewing your answer of interest, click the **Pin** icon on the top right of the answer.
+1. While viewing your answer of interest, click the **Pin** icon at the top right of the answer.
 
     ![]({{ site.baseurl }}/images/add_to_pinboard.png "Pin an answer to a pinboard icon")
 
-2. In the **Copy to pinboard(s)** dialog box, click the **+** icons next to the pinboards you would like to add your answer to.
+2. In the **Add to pinboard** dialog box, click the **+** icons next to the pinboards you would like to add your answer to.
 
     ![]({{ site.baseurl }}/images/copy_to_pinboard.png "Add filters menu")
 
@@ -51,7 +51,7 @@ You can download a pinboard as a PDF file, without having to download each
 visualization separately. Downloading a pinboard works just as it would when
 downloading an answer. To download a pinboard:
 
-*   Click **Actions**, and select **Download as PDF**.
+*   Click the three-dot **Actions** button, and select **Download as PDF**.
 
      ![]({{ site.baseurl }}/images/download_a_pinboard.png "Download your pinboard")
 
@@ -72,12 +72,10 @@ are found under the **Actions** button.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
 
-Other actions are available on a pinboard display itself. Some actions are
-static others appear only when you over over specific locations of the pinboard.
+Other actions are available on a pinboard display itself. Some actions always appear, while others appear only when you hover over specific locations of the pinboard.
 This diagram displays active action areas on a pinboard.
 
 ![]({{ site.baseurl }}/images/pinboard-controls.png "Pinboard controls")
 
-If you make a change to a pinboard, the system recognizes this and puts a **Save
-changes** button up in the header to alert you.  Simply press this button to
-make your changes permanent.
+If you make a change to a pinboard, the system recognizes this and displays an alert message with a **Save
+changes** button at the top of the page. Click this button to make your changes permanent.
