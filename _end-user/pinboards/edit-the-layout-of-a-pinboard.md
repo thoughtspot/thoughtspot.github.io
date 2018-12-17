@@ -17,13 +17,12 @@ In addition, the size picker at the bottom of a visualization drop-down menu let
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboards page, click the pinboard you would like to edit.
-3. Resize your visualizations by choosing between the predetermined sizes under the visualization drop-down menu.
+3. Resize a visualization by choosing a predetermined size under the three-dot **Actions** menu for the visualization.
 
      ![]({{ site.baseurl }}/images/resize_pinboard_visualization.png "Resize your visualization")
 
 4. Drag and drop your visualizations on the layout grid to reorder your pinboard.
-5. If you are unhappy with your layout or you would like ThoughtSpot to configure your layout for you, go ahead and [reset your layout](reset-a-visualization.html#).
-6. Save your pinboard by clicking the three-dot **Actions** button and select **Save**.
+5. Save your pinboard by clicking the three-dot **Actions** button and select **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
 
