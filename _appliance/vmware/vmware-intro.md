@@ -27,7 +27,7 @@ Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Configuration
+## Configuration (minimum)
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform on VMware for the best performance, load balancing, scalability,
@@ -37,7 +37,8 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 * 512GB Memory
 * 200GB SSD
 * 3X 2TB Hard disks (6TB in total in hard disk space)
-* 64 Hyper-threaded Cores
+* 72 Hyper-threaded Cores (Additional spare cores can also be added).
+* Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
 
 All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
