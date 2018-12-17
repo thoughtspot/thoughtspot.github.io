@@ -39,19 +39,19 @@ item and department.
 
 ## Upload the data
 
-1. If you haven't, sign in to the ThoughtSpot application and click the **Data** tab.
+1. If you haven't already, sign in to the ThoughtSpot application and click the **Data** tab.
 
 2. Click the three-dot **Actions** button, and select **Upload data**.
 
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 
-4. Choose `YES` for the **Are the column names already defined in the file header** setting.
+4. Choose `YES` for the **Are the column names already defined in the file header?** setting.
 
-5. Choose **Comma** for the **Are the files separated by?** setting.
+5. Choose `Comma` for the **Are the files separated by?** setting.
 
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
-6. Click **Next** for the **Set column names** page.
+6. Click **Next** to go to the **Set column names** page.
 
 7. Set the **category_num** column to **TEXT** on the **Set column types** page.
 
@@ -59,7 +59,7 @@ item and department.
 
 8. Click **Upload**.
 
-   The system presents you with a few choices.
+   ThoughtSpot presents you with a few choices.
 
    ![]({{ site.baseurl }}/images/spotiq-choice.png)
 
@@ -79,7 +79,7 @@ keeps the results until the user that requested the analysis (or an admin),
 deletes them. You can run SpotIQ on the same object multiple times. Each
 analysis generates new results.
 
-1. To check for the results of your analysis, select the **SpotIQ** page.
+1. To check for the results of your analysis, go to the **SpotIQ** page.
 
    The **SpotIQ** page allows you to see all results with data you have
    permission for. So the results lists shows **All** results or just **Yours**.
