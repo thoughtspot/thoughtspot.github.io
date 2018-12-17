@@ -5,7 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can undo your edits to a pinboard visualization by resetting it
+You can undo your edits to a pinboard visualization by resetting it.
 
 ## Reset a pinboard visualization
 
