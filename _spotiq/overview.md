@@ -35,7 +35,7 @@ This tutorial uses a dataset containing a list of sales and movement data by
 item and department.
 
 1. Download the [FoodDollarDataReal]({{ site.baseurl }}/downloads/FoodDollarDataReal.csv) CSV file.
-2. Save or move the file to a place on your local drive..
+2. Save or move the file to a place on your local drive.
 
 ## Upload the data
 
@@ -45,7 +45,7 @@ item and department.
 
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 
-4. Choose `YES` for the **Are the column names already defined in the file header?** setting.
+4. Choose `Yes` for the **Are the column names already defined in the file header?** setting.
 
 5. Choose `Comma` for the **Are the files separated by?** setting.
 
@@ -100,14 +100,14 @@ analysis generates new results.
    Not every SpotIQ analysis creates results. You can see information about each
    analysis as well as the results.
 
-4. Select the **analyzes** link at the top of the page.
+4. Click the **analyses** tab at the top of the page.
 
    Check the **STATUS** and also how long the **RESULT** took to generate. Since
    you got results, you can see that the analysis succeeded.
 
 5. Select the **Analysis for FoodDollarDataReal** and choose **Delete**.
 
-   The information disappears from the **analyzes** list.
+   The information disappears from the **analyses** list.
 
 6. Choose **Results**.
 
