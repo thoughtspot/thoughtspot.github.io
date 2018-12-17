@@ -38,7 +38,7 @@ own results from several different locations in your system:
 * data uploads
 * SpotIQ insights
 
-The menu items that use SpotIQ have a lozenge that indicates this:
+The menu items that use SpotIQ have a label that indicates this:
 
 ![]({{ site.baseurl }}/images/spotiq-menu-items.png)
 
