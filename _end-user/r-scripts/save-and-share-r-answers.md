@@ -13,13 +13,11 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Save an R visualization
 
-1.  Click the options menu (**...**) above the generated graphic or table containing your analysis.
+1.  Click the three-dot **Actions** menu above the generated graphic or table containing your analysis.
 
     ![]({{ site.baseurl }}/images/r-time-forecast-options.png)
 
 2.  Select **Save** from the menu.
-
-    ![]({{ site.baseurl }}/images/r-save-time-forecast-answer.png)
 
 3.  Add a name and description for the analysis, and click **Save**.
 
