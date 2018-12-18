@@ -90,12 +90,10 @@ analysis generates new results.
 
 3. Look for results from your **FoodDollarDataReal** data.
 
-    SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **STICKERS**,
-    and **MODIFIED**. The **NAME** comes from the object that was analyzed which
-    is referenced again in the **DESCRIPTION**. The combination of **NAME**,
-    **DESCRIPTION**, and **MODIFIED** is unique.
+    SpotIQ labels each result with a **NAME**, **STICKERS**,
+    and **MODIFIED**. The combination of **NAME** and **MODIFIED** is unique.
 
-4. Take a minute and review the **DESCRIPTION** and **MODIFIED** time.
+4. Take a minute and review the **MODIFIED** time.
 
    Not every SpotIQ analysis creates results. You can see information about each
    analysis as well as the results.
