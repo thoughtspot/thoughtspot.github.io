@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.0/spotiq/overview.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-12-13T18:14:47-08:00" />
+<meta property="article:published_time" content="2018-12-17T16:43:29-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/spotiq/overview.html","headline":"[“SpotIQ 101: Load and analyze data”]","datePublished":"2018-12-13T18:14:47-08:00","dateModified":"2018-12-13T18:14:47-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/spotiq/overview.html"},"description":"This 101 walks you through a few simple, SpotIQ workflows. When you have completed the walkthrough, you will be able to use the core features of SpotIQ in your ThoughtSpot installation.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"description":"This 101 walks you through a few simple, SpotIQ workflows. When you have completed the walkthrough, you will be able to use the core features of SpotIQ in your ThoughtSpot installation.","@type":"BlogPosting","url":"https://docs.thoughtspot.com/5.0/spotiq/overview.html","headline":"[“SpotIQ 101: Load and analyze data”]","dateModified":"2018-12-17T16:43:29-08:00","datePublished":"2018-12-17T16:43:29-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/spotiq/overview.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -853,7 +853,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.0/end-user/pinboards/reset-a-visualization.html">Reset a pinboard or visualization</a></li>
+                          <li><a href="/5.0/end-user/pinboards/reset-a-visualization.html">Reset a pinboard visualization</a></li>
                       
                    
                 
@@ -3098,10 +3098,9 @@ first <a href="/5.0/spotiq/whatisspotiq.html">read the introduction to SpotIQ</a
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>Before you begin, make sure you can login into ThoughtSpot application. To
-complete this tutorial, you need the ability to log into ThoughtSpot and the ability
-to upload a CSV file.  You also need the ability to use the SpotIQ application.
-These features require that your user account must have the following privileges:</p>
+<p>Before you begin, make sure you can sign in to the ThoughtSpot application. To
+complete this tutorial, you need the ability to upload a CSV file and use the SpotIQ application.
+These features require that your user account has the following privileges:</p>
 
 <ul>
   <li><strong>Can upload user data</strong></li>
@@ -3122,31 +3121,31 @@ item and department.</p>
 
 <ol>
   <li>Download the <a href="/5.0/downloads/FoodDollarDataReal.csv">FoodDollarDataReal</a> CSV file.</li>
-  <li>Save or move the file to a place on your local drive..</li>
+  <li>Save or move the file to a place on your local drive.</li>
 </ol>
 
 <h2 id="upload-the-data">Upload the data</h2>
 
 <ol>
   <li>
-    <p>If you haven’t, log into the ThoughtSpot application.</p>
+    <p>If you haven’t already, sign in to the ThoughtSpot application and click the <strong>Data</strong> tab.</p>
   </li>
   <li>
-    <p>Click the <strong>Data</strong> tab and choose <strong>Actions &gt; Upload Data</strong>.</p>
+    <p>Click the three-dot <strong>Actions</strong> button, and select <strong>Upload data</strong>.</p>
   </li>
   <li>
     <p>Browse to the sample data file you downloaded or drag the file into the upload area.</p>
   </li>
   <li>
-    <p>Choose <code class="highlighter-rouge">YES</code> for the <strong>Are the column names already defined in the file header</strong> setting.</p>
+    <p>Choose <code class="highlighter-rouge">Yes</code> for the <strong>Are the column names already defined in the file header?</strong> setting.</p>
   </li>
   <li>
-    <p>Choose <strong>Comma</strong> for the <strong>Are the files separated by?</strong> setting.</p>
+    <p>Choose <code class="highlighter-rouge">Comma</code> for the <strong>Are the files separated by?</strong> setting.</p>
 
     <p><img src="/5.0/images/spotiq-download.png" alt="" /></p>
   </li>
   <li>
-    <p>Click <strong>Next</strong> for the <strong>Set column names</strong> page.</p>
+    <p>Click <strong>Next</strong> to go to the <strong>Set column names</strong> page.</p>
   </li>
   <li>
     <p>Set the <strong>category_num</strong> column to <strong>TEXT</strong> on the <strong>Set column types</strong> page.</p>
@@ -3156,7 +3155,7 @@ item and department.</p>
   <li>
     <p>Click <strong>Upload</strong>.</p>
 
-    <p>The system presents you with a few choices.</p>
+    <p>ThoughtSpot presents you with a few choices.</p>
 
     <p><img src="/5.0/images/spotiq-choice.png" alt="" /></p>
   </li>
@@ -3180,7 +3179,7 @@ analysis generates new results.</p>
 
 <ol>
   <li>
-    <p>To check for the results of your analysis, select the <strong>SpotIQ</strong> page.</p>
+    <p>To check for the results of your analysis, go to the <strong>SpotIQ</strong> page.</p>
 
     <p>The <strong>SpotIQ</strong> page allows you to see all results with data you have
 permission for. So the results lists shows <strong>All</strong> results or just <strong>Yours</strong>.</p>
@@ -3205,7 +3204,7 @@ permission for. So the results lists shows <strong>All</strong> results or just 
 analysis as well as the results.</p>
   </li>
   <li>
-    <p>Select the <strong>analyzes</strong> link at the top of the page.</p>
+    <p>Click the <strong>Analyses</strong> tab at the top of the page.</p>
 
     <p>Check the <strong>STATUS</strong> and also how long the <strong>RESULT</strong> took to generate. Since
 you got results, you can see that the analysis succeeded.</p>
@@ -3213,7 +3212,7 @@ you got results, you can see that the analysis succeeded.</p>
   <li>
     <p>Select the <strong>Analysis for FoodDollarDataReal</strong> and choose <strong>Delete</strong>.</p>
 
-    <p>The information disappears from the <strong>analyzes</strong> list.</p>
+    <p>The information disappears from the <strong>Analyses</strong> list.</p>
   </li>
   <li>
     <p>Choose <strong>Results</strong>.</p>
@@ -3264,7 +3263,7 @@ must delete each individually.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Dec 13, 2018 <br />
+        Generated: Dec 17, 2018 <br />
          &copy;2018 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
