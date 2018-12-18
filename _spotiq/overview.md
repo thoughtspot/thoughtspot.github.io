@@ -51,9 +51,9 @@ item and department.
 
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
-6. Click **Next** to go to the **Set column names** page.
+6. Click **Next** to go to the **Set column names** page, and **Next** again to go to the **Set column types** page.
 
-7. Set the **category_num** column to **TEXT** on the **Set column types** page.
+7. Set the **category_num** column to **TEXT**.
 
    ![]({{ site.baseurl }}/images/spotiq-set-column-types.png)
 
