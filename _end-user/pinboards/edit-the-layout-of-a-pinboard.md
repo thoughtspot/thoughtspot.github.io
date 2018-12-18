@@ -10,56 +10,54 @@ Visualizations within a pinboard are easy to move around and snap into place on 
 
 ## Reorder the visualization
 
-In addition, the size picker at the bottom of a visualization dropdown lets you toggle between predetermined sizes for each visualization. Charts and graphs can be toggled between a small, medium, and full width size, while headlines can be only one size (small). One row of the pinboard can hold a predetermined number of visualizations of each size.
+In addition, the size picker at the bottom of a visualization's three-dot Actions menu lets you toggle between predetermined sizes for each visualization. Charts and graphs can be toggled between a small, medium, and full width size, while headlines can be only one size (small). One row of the pinboard can hold a predetermined number of visualizations of each size.
 
-1. Click on **Pinboards**, on the top navigation bar.
+1. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
-2. On the pinboard list page, click the pinboard you would like to edit.
-3. Resize your visualizations by choosing between the predetermined sizes under the visualization dropdown menu.
+2. On the pinboards page, click the pinboard you would like to edit.
+3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the **Actions** menu for the visualization.
 
      ![]({{ site.baseurl }}/images/resize_pinboard_visualization.png "Resize your visualization")
 
-4. Drag and drop your visualizations on the layout grid to reorder your pinboard.
-5. If you are unhappy with your layout or you would like ThoughtSpot to configure your layout for you, go ahead and [reset your layout](reset-a-visualization.html#).
-6. Save your pinboard by clicking **Actions** and **Save**.
+4. Save your pinboard by clicking the **Actions** button and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
 
 ## Change the orientation of a chart or table
 
-You can change the size of a chart or table on a pinboard. To do this:
+You can change the orientation of a chart or table on a pinboard. To do this:
 
 1. Navigate to the chart or table.
-2. Select the menu.
+2. Click the **Actions** menu for the chart or table.
 
-   The system displays the dropdown menu.
+   ThoughtSpot displays the drop-down menu.
 
    ![]({{ site.baseurl }}/images/size_pinboard_item.png "Resize an item")
 
-   The last item shows the possible orientation
+   The last item shows different possible orientations, with the current orientation selected.
 
 3. Select a new orientation.
-4. Choose **Actions > Save**.
+4. Click the **Actions** button and select **Save**.
 
-## Remove a visualization from your pinboard.
+## Delete a visualization from your pinboard.
 
 To delete a visualization:
 
-1. Click on **Pinboards**, on the top navigation bar.
+1. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
-2. On the pinboard list page, click the pinboard you would like to edit.
-3. Click **Delete** under the dropdown menu of the visualization you would like to delete.
+2. On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
+3. Click the **Actions** button of the visualization you want to delete and select **Delete**.
 
      ![]({{ site.baseurl }}/images/detele_a_pinboard_visualization.png "Delete a visualization")
 
-4. Save your pinboard by clicking **Actions** and **Save**.
+4. Save your pinboard by clicking the **Actions** button and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
-e
+
 ## Other pinboard edits
 
 Other pinboard actions include actions you normally perform on your search as

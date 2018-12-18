@@ -289,7 +289,7 @@ entries:
         - title: Copy a pinboard or visualization link
           url: /end-user/pinboards/copy-link-for-a-pinboard.html
           output: web,ugBk
-        - title: Reset a pinboard or visualization
+        - title: Reset a pinboard visualization
           url: /end-user/pinboards/reset-a-visualization.html
           output: web,ugBk
         - title: Start a slideshow

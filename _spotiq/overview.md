@@ -15,10 +15,9 @@ first [read the introduction to SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.h
 
 ## Prerequisites
 
-Before you begin, make sure you can login into ThoughtSpot application. To
-complete this tutorial, you need the ability to log into ThoughtSpot and the ability
-to upload a CSV file.  You also need the ability to use the SpotIQ application.
-These features require that your user account must have the following privileges:
+Before you begin, make sure you can sign in to the ThoughtSpot application. To
+complete this tutorial, you need the ability to upload a CSV file and use the SpotIQ application.
+These features require that your user account has the following privileges:
 
 * **Can upload user data**
 * **Has Spot IQ privilege**
@@ -36,23 +35,23 @@ This tutorial uses a dataset containing a list of sales and movement data by
 item and department.
 
 1. Download the [FoodDollarDataReal]({{ site.baseurl }}/downloads/FoodDollarDataReal.csv) CSV file.
-2. Save or move the file to a place on your local drive..
+2. Save or move the file to a place on your local drive.
 
 ## Upload the data
 
-1. If you haven't, log into the ThoughtSpot application.
+1. If you haven't already, sign in to the ThoughtSpot application and click the **Data** tab.
 
-2. Click the **Data** tab and choose **Actions > Upload Data**.
+2. Click the three-dot **Actions** button, and select **Upload data**.
 
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 
-4. Choose `YES` for the **Are the column names already defined in the file header** setting.
+4. Choose `Yes` for the **Are the column names already defined in the file header?** setting.
 
-5. Choose **Comma** for the **Are the files separated by?** setting.
+5. Choose `Comma` for the **Are the files separated by?** setting.
 
    ![]({{ site.baseurl }}/images/spotiq-download.png)
 
-6. Click **Next** for the **Set column names** page.
+6. Click **Next** to go to the **Set column names** page.
 
 7. Set the **category_num** column to **TEXT** on the **Set column types** page.
 
@@ -60,7 +59,7 @@ item and department.
 
 8. Click **Upload**.
 
-   The system presents you with a few choices.
+   ThoughtSpot presents you with a few choices.
 
    ![]({{ site.baseurl }}/images/spotiq-choice.png)
 
@@ -80,7 +79,7 @@ keeps the results until the user that requested the analysis (or an admin),
 deletes them. You can run SpotIQ on the same object multiple times. Each
 analysis generates new results.
 
-1. To check for the results of your analysis, select the **SpotIQ** page.
+1. To check for the results of your analysis, go to the **SpotIQ** page.
 
    The **SpotIQ** page allows you to see all results with data you have
    permission for. So the results lists shows **All** results or just **Yours**.
@@ -101,14 +100,14 @@ analysis generates new results.
    Not every SpotIQ analysis creates results. You can see information about each
    analysis as well as the results.
 
-4. Select the **analyzes** link at the top of the page.
+4. Click the **Analyses** tab at the top of the page.
 
    Check the **STATUS** and also how long the **RESULT** took to generate. Since
    you got results, you can see that the analysis succeeded.
 
 5. Select the **Analysis for FoodDollarDataReal** and choose **Delete**.
 
-   The information disappears from the **analyzes** list.
+   The information disappears from the **Analyses** list.
 
 6. Choose **Results**.
 
