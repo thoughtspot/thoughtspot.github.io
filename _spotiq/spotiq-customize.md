@@ -53,7 +53,7 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
    The **Customize Analysis** dialog appears.
 
 7. Select the **Customize algorithms** tab.
-8. Uncheck the **Outlier Detection using Z-Score** option.
+8. Uncheck the **Outlier Detection using Z-Scores** option.
 9. Click **ANALYZE**.
 
    SpotIQ starts a new analysis.
