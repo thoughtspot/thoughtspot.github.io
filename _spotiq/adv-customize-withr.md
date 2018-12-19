@@ -70,7 +70,7 @@ ThoughtSpot.
 The following illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
-1. Log into ThoughtSpot and go to the **Search** bar.
+1. Sign in to ThoughtSpot and go to the **Search** bar.
 2. Use **Choose Sources** to locate a source with sales and zip code data.
    This example uses **Phone Sales** data.
 3. Enter `sales store zip code` in the search bar.
