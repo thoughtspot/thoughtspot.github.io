@@ -116,7 +116,7 @@ column and a zip code column.
     You can see from the script that the output should be PNG
     (`#output_png#`).
 
-8. Check your work.
+9. Check your work.
 
    ![]({{ site.baseurl }}/images/spotiq-r5.png)
 
@@ -124,11 +124,11 @@ column and a zip code column.
    * Make sure that both Sales and Store Zip Code columns are selected for R analysis.
    * Make sure PNG is selected as the output format.
 
-9. Click **ANALYZE**.
+10. Click **ANALYZE**.
 
    SpotIQ runs your analysis in the background.
 
-10. To see the results of your newly triggered analysis, go to the SpotIQ page, click **Analyses**, and then click the name of your analysis.
+11. To see the results of your newly triggered analysis, go to the SpotIQ page, and then click the name of your analysis.
 
     ![]({{ site.baseurl }}/images/spotiq-r4.png)
 
