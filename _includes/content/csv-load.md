@@ -32,4 +32,4 @@ Any user who belongs to a group that has the privilege **Has administration priv
 
     * Click **Link to existing data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Ask a question** if you want to begin a new search.
-    * Click **SpotIQ Auto analyze** if you want to use the SpotIQ feature to find insights in your new data.
+    * Click **SpotIQ Auto Analyze** if you want to use the SpotIQ feature to find insights in your new data.
