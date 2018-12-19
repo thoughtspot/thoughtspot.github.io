@@ -44,6 +44,7 @@ calendar type, the formula will default to standard Gregorian, with the year
 starting in January.)
 
 * `day_number_of_quarter`
+* `day_number_of_year`
 * `month_number`
 * `month_number_of_quarter`
 * `quarter_number`
