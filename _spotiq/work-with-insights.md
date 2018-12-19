@@ -87,14 +87,13 @@ towels in one week out of the year because there was a flood that week.
 
 2. Count the number of items in the carousel.
 
-    You should see that SpotIQ found two outliers.
+    You should see that SpotIQ found four outliers.
 
     ![]({{ site.baseurl }}/images/spotiq-outliers.png)
 
-    In this case, SpotIQ is indicating that the **Total Imports** value is
-    significantly higher than the other values in your set.
+    In this case, SpotIQ is indicating that the **Total value_added** value is significantly higher than the other values in your set.
 
-    Two facts about this outlier shouldn't surprise, you. The first fact is that a
+    Two facts about these outliers shouldn't surprise you. The first fact is that a
     total exceeds all the other items in the data. That just makes sense so this
     isn't a true outlier.
 
