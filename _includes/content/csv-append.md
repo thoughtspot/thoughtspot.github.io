@@ -15,6 +15,9 @@ To append data into ThoughtSpot:
 5. Upload the CSV or Excel file by doing one of these options:
     -   Click **Browse your files** and select the file.
     -   Drag and drop the file into the drop area.
+
+     ![]({{ site.baseurl }}/images/spotiq-upload.png "Load data")
+
 6. Answer the question: **Are the column names already defined in the file header?**
 7. For the question: **Do you want to append to the existing data or overwrite it?**, select **append**
 8. Answer the question: **Are the fields separated by?**, and then click **Next**.
