@@ -70,31 +70,32 @@ ThoughtSpot.
 The following illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
-1. Sign in to ThoughtSpot and go to the **Search** bar.
-2. Use **Choose Sources** to locate a source with sales and zip code data.
+1. Sign in to ThoughtSpot and click **Search +**.
+2. Click the Data button to the left of the search field to open the Data panel.
+3. Click **Choose Sources**, select a source with sales and zip code data and, then click **CLOSE**.
    This example uses **Phone Sales** data.
-3. Enter `sales store zip code` in the search bar.
+4. Enter `sales store zip code` in the search bar and press **Return**.
 
    If your source contains the proper data, you should see something similar to
    the following:
 
    ![]({{ site.baseurl }}/images/spotiq-r1.png)
 
-4. Choose **Actions > Custom Analyze**.
+5. Click the three-dot **Actions** button and select **Custom Analyze**.
 
    ![]({{ site.baseurl }}/images/spotiq-r2.png)
 
-   ThoughtSpot opens the **Customize Analysis** dialog.
+   ThoughtSpot opens the **Customize analysis** dialog.
 
-5. Choose the **Customize algorithms** tab.
-6. In the **Select Algorithms** section, click the **Custom R Script** box.
+6. Choose the **Customize algorithms** tab.
+7. In the **Select Algorithms** section, select the **Custom R Script** checkbox.
 
-   Selecting this option unsets all the other options on this tab and displays
-   the **Refine Parameters** field.
+   Selecting this option deselects all the other options on this tab and displays
+   the **Custom R Script** field.
 
    ![]({{ site.baseurl }}/images/spotiq-r3.png)
 
-7. Enter this sample script in the field.
+8. Enter this sample script in the field.
 
     ```
     ####R SCRIPT####
@@ -120,14 +121,14 @@ column and a zip code column.
    ![]({{ site.baseurl }}/images/spotiq-r5.png)
 
 
-   * Make sure that both Sales and Store Zip Code columns are selected for the column bindings.
+   * Make sure that both Sales and Store Zip Code columns are selected for R analysis.
    * Make sure PNG is selected as the output format.
 
-9. Click **Analyze**.
+9. Click **ANALYZE**.
 
    SpotIQ runs your analysis in the background.
 
-10. Go to the SpotIQ page and click on the results of your newly triggered analysis.
+10. To see the results of your newly triggered analysis, go to the SpotIQ page, click **Analyses**, and then click the name of your analysis.
 
     ![]({{ site.baseurl }}/images/spotiq-r4.png)
 
