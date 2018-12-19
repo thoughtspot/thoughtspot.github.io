@@ -10,7 +10,7 @@ Now that you've enabled ThoughtSpot Data Connect, you will be able to add a new 
 
 Data sources can consist of relational database sources, like SQL Server, or applications, like Marketo or Salesforce. To add a data source:
 
-1. Log in to ThoughtSpot from a browser.
+1. Sign in to ThoughtSpot.
 
 2. Click **Data**, on the top navigation bar.
 
@@ -111,7 +111,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 16. You can add a pre-script that will run your TQL script before the datasource uploads.
 
     Additionally, you can add a post-script that will run your TQL script after the data uploads. This feature is not available if Informatica Cloud Services is still in use.
-    
+
 17. Click **Import**.
 
 18. If you want to view or change the SQL DDL (data definition language) that will create the target table, click **here**.
