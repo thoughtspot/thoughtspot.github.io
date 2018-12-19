@@ -115,12 +115,11 @@ relationship between two data sets moves. The range is -1 to 1, the closer the
 cross-correlation value is to 1, the more closely the information fields (data
 elements) are correlated.
 
-1. Scroll down your insight page, till you find the correlation results:
-2. Page through the correlation category to the third insight:
+* Scroll down your insight page, till you find the correlation results:
 
    ![]({{ site.baseurl }}/images/spotiq-correlations.png)
 
-    You can see that the over all total and the total category number values
+    You can see that the overall total by year and total value_added number values
     correlate very strongly. The correlation also looks for a _lag_ value.
 
       _In the business world the dependence of a variable Y (the dependent variable)
