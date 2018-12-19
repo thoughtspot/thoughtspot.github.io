@@ -18,7 +18,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
 1. If you haven't, log into the ThoughtSpot application.
 2. Select the **SpotIQ > Results** page.
-3. Look for results from your **FoodDollarDataReal** analysis and click on the **NAME**.
+3. Look for results from your **FoodDollarDataReal** analysis and click the **NAME**.
    The application opens the SpotIQ insights.
 
    ![]({{ site.baseurl }}/images/spotiq-in-sights.png)
@@ -29,17 +29,15 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
    ![]({{ site.baseurl }}/images/spotiq-details.png)
 
-   You can tell that SpotIQ ran through 20 combinations and discovered 14
-   insights. The first looked for an insight in a combination of the `table_num`
-   and `year` columns in the **FoodDollarDataReal** data and discovered one
-   insight. The next to column combination `table_num` and `units` did not
-   reveal any insights.
+   You can tell that SpotIQ ran through 15 combinations and discovered 9
+   insights. One insight was the combination of the `value_added`
+   and `category_num` columns and another was the combination of `value_added` and `category_desc` in the **FoodDollarDataReal** data.
 
 5. Close the details panel and look at the corresponding insight SpotIQ produced.
 
    You can see that SpotIQ found three sets of insights:
 
-   * 2 insights for CATEGORY_DESC have significantly higher Total imports than the rest. Includes similar insights for Total value_added.
+   * 4 insights for CATEGORY_DESC have significantly higher Total imports than the rest. Includes similar insights for Total value_added.
    * Insights from Cross Correlation Analysis.
    * Insights from Trend Analysis.
 
@@ -66,7 +64,7 @@ can't provide information you can use, just that you are unlikely to get the
 same insight twice.
 
 If a set of insights look good, you can **Save** them and they are not removed
-when they expire. Do this now, click **Actions > Save** from the menu:
+when they expire. Do this now, click the three-dot **Actions** menu and select **Save**:
 
 ![]({{ site.baseurl }}/images/spotiq-save.png)
 
