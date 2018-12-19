@@ -16,7 +16,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
 ## View results of an analysis
 
-1. If you haven't, log into the ThoughtSpot application.
+1. If you haven't, sign in to ThoughtSpot.
 2. Select the **SpotIQ > Results** page.
 3. Look for results from your **FoodDollarDataReal** analysis and click the **NAME**.
    The application opens the SpotIQ insights.
@@ -25,7 +25,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
    The first panel provides information about the analysis.
 
-4. Click on the small **i** to see a summary of the SpotIQ analysis.
+4. Click the small **i** to see a summary of the SpotIQ analysis.
 
    ![]({{ site.baseurl }}/images/spotiq-details.png)
 
@@ -37,7 +37,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
    You can see that SpotIQ found three sets of insights:
 
-   * 4 insights for CATEGORY_DESC have significantly higher Total imports than the rest. Includes similar insights for Total value_added.
+   * 4 insights for category_num and CATEGORY_DESC have significantly higher Total value_added than the rest.
    * Insights from Cross Correlation Analysis.
    * Insights from Trend Analysis.
 
