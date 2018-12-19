@@ -385,7 +385,7 @@ language keywords that can be used in the search bar:
 </div>
 
 <p><a name="5-0-fixed-bugs"></a></p>
-<h2>5.0 Fixed Bugs</h2>
+<h2>5.0 Fixed Issues</h2>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="width: 100%;">
@@ -417,6 +417,16 @@ language keywords that can be used in the search bar:
 </td>
 </tr>
 </tbody>
+
+<!--<h2>5.0.1 Fixed Issues</h2>
+<tr style="width: 100%;">
+<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
+<div style="word-wrap: break-word; overflow-wrap: break-word;">
+<p>TYPE Fixed Issues DESC here</p>-->
+</div>
+</td>
+</tr>
+
 </table>
 
 <a name="notes-for-older-versions"></a>
