@@ -120,11 +120,11 @@ The generated data is displayed back as a static PNG when you run the analysis:
 You can click these icons on the R script dialog to get more options:
 
 * The R script information icon
-![R info icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
+![more options menu icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
 provides a basic reference guide for creating an R analysis in ThoughtSpot.
 
 * The ellipses icon (3 dots)
-![R info icon]({{ site.baseurl }}/images/r-icon-more-options.png){: .inline}
+![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}
 provides a menu with options to save or load a previously saved R script, as well as
 share your R script with other users in the system.
 

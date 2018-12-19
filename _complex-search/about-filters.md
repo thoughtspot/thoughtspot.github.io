@@ -57,16 +57,19 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the three dot icon in the column header or by clicking on a chart axis, numeric columns and
-text columns provide you with the ability to include or exclude values, and a checkbox selector for the values. If the column
-contains a date, you'll see a calendar selector when applying a filter. This is
-also where you'll go to apply bulk filters.
+When adding a filter from the ellipses icon (3 dots)
+![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
+in the column header or by clicking on a chart axis, numeric columns and
+text columns provide you with the ability to include or exclude values, and
+a checkbox selector for the values. If the column contains a date, you'll see a
+calendar selector when applying a filter. This is also where you'll go to apply bulk filters.
 
 ## Bulk filters
 
 If you have a large worksheet or table with thousands or millions of rows, you
-may want to create bulk filters. You can paste in a list of filter values to include or exclude,
-without having to click the box next to each value in the filter selector.
+may want to create bulk filters. You can paste in a list of filter values to
+include or exclude, without having to click the box next to each value in the
+filter selector.
 
 Bulk filters can be very useful when you have a very large worksheet or table.
 You can use them to filter a large list of values easily. For example, this is

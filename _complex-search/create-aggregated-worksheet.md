@@ -14,7 +14,9 @@ This procedure walks you through creating a view from a search. To create a view
 
 2. Make any changes to the visualization that you want in your saved view (change aggregation level, filters, etc.)
 
-3. Click the three dot icon and **Save as view**.
+3. Click the ellipses icon
+(3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
+and **Save as view**.
 
      ![]({{ site.baseurl }}/images/save_as_view.png "Save as a View")
 
