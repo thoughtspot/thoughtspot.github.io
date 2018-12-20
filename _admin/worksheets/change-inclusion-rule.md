@@ -44,6 +44,6 @@ To configure these values for a worksheet:
 
 6. Click **CLOSE**.
 
-7. Click the **three dot icon** and select **Save**.
+7. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")

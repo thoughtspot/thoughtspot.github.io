@@ -4,7 +4,9 @@ Any user who belongs to a group that has the privilege **Has administration priv
 
 2. Click **Data**, on the top navigation bar.
 
-3. Click the **Actions** button in the upper right corner, and select **Upload Data**.
+3. Click the the ellipses icon (3 dots)
+![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
+in the upper right corner, and select **Upload Data**.
 
    ![]({{ site.baseurl }}/images/new_imported_data.png "Upload data")
 
@@ -21,7 +23,7 @@ Any user who belongs to a group that has the privilege **Has administration priv
 8. Review the automatically generated data types for each column, and make any changes you want.
 
    There are four data types: Text, Integer, Decimal, and Date.
-   
+
 9. Click **Import**.
 
     When an upload is complete, the system reports the results and offers you some further actions.

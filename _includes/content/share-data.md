@@ -10,7 +10,7 @@ Share a table or imported data by following these steps:
 
 4. Select **Entire Table** or **Specific Columns**.
 
-![]({{ site.baseurl }}/images/share_tables.png)
+    ![]({{ site.baseurl }}/images/share_tables.png)
 
 5. If you selected **Specific Columns**, select the column to share.
 

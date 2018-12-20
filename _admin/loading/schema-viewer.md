@@ -17,7 +17,7 @@ You need **Admin** privileges to use the **Schema Viewer**.
 ## Bringing up the Schema Viewer
 
 You can bring up the Schema Viewer from the **Data** screen. Click the ellipses icon
-(3 dots) ![R info icon]({{ site.baseurl }}/images/r-icon-more-options.png){: .inline},
+(3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 and select **View Schema**.
 
  ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema
@@ -57,8 +57,16 @@ A good rule to follow is "Keep it Green". This means that you'll get better resu
 
 ## Worksheet view
 
-Click on a worksheet, to see it in the Schema Viewer. The worksheet
-view shows the following information:
+Worksheets are often based on more than one table. The worksheet schema will
+show schemas for the tables behind the worksheet, as well as the joins between
+tables _that were created as a part of the worksheet_.
+
+Click on a worksheet, to see it in the Schema Viewer. If the schema view is not showing the schema behind the worksheet, double click the tab on the top right of the worksheet object.
+
+![]({{ site.baseurl }}/images/worksheet_viewer_schema.png "Worksheet schema example")
+
+
+The worksheet view shows the following information:
 
 -   All tables in the worksheet, and the relationships between these tables.
 -   Source columns for all columns of a worksheet.

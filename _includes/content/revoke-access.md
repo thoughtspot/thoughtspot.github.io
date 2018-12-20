@@ -15,6 +15,6 @@ To unshare one or more objects:
 
      ![]({{ site.baseurl }}/images/unshare.png "Click X to unshare")
 
-5. Click **Done**.
+5. Click **Save**, and then click **Done**.
 
     ![]({{ site.baseurl }}/images/unshare_done.png "Click Done on the Share dialog to save changes")

@@ -3,7 +3,9 @@ When you share a pinboard what you are really sharing is a live link to the pinb
 To share a pinboard:
 
 1. Configure it to look as you'll want it to appear when shared.
-2. From within a pinboard, click the **Actions -> Share**.
+2. From within a pinboard, click the ellipses icon (3 dots)
+![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
+and select **Share**.
 
     ![]({{ site.baseurl }}/images/share_pinboard_with.png)
 
