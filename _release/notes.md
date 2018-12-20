@@ -422,10 +422,10 @@ language keywords that can be used in the search bar:
 <tr style="width: 100%;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
-<p>TYPE Fixed Issues DESC here</p>-->
+<p>TYPE Fixed Issues DESC here</p>
 </div>
 </td>
-</tr>
+</tr>-->
 
 </table>
 
