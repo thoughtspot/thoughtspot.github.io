@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 After you upload a CSV file, it is available as a table in ThoughtSpot.
 
-To view your table:
+To view the data profile of your table:
 1. Click **Data** in the top navigation bar.
 2. Select your table.
 3. Click **Profile**.
