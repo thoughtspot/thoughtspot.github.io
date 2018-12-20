@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-12-19T13:42:09-08:00" />
+<meta property="article:published_time" content="2018-12-19T21:47:00-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html","headline":"[“How to view a data schema”]","datePublished":"2018-12-19T13:42:09-08:00","dateModified":"2018-12-19T13:42:09-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html"},"description":"ThoughtSpot offers a schema viewer that lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html","headline":"[“How to view a data schema”]","datePublished":"2018-12-19T21:47:00-08:00","dateModified":"2018-12-19T21:47:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.0/admin/loading/schema-viewer.html"},"description":"ThoughtSpot offers a schema viewer that lets you see your database schema in the web browser. The Schema Viewer is interactive, so you can configure it to show just what you want to see.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3085,7 +3085,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    2 minutes
+    3 minutes
   
 </span>
 
@@ -3100,7 +3100,7 @@ just what you want to see.</p>
 <h2 id="bringing-up-the-schema-viewer">Bringing up the Schema Viewer</h2>
 
 <p>You can bring up the Schema Viewer from the <strong>Data</strong> screen. Click the ellipses icon
-(3 dots) <img src="/5.0/images/r-icon-more-options.png" alt="R info icon" class="inline" />,
+(3 dots) <img src="/5.0/images/icon-ellipses.png" alt="more options menu icon" class="inline" />,
 and select <strong>View Schema</strong>.</p>
 
 <p><img src="/5.0/images/access_schema_viewer.png" alt="" title="Access the Schema
@@ -3144,8 +3144,15 @@ modeled using best practices. For example, joins are shown in separate colors th
 
 <h2 id="worksheet-view">Worksheet view</h2>
 
-<p>Click on a worksheet, to see it in the Schema Viewer. The worksheet
-view shows the following information:</p>
+<p>Worksheets are often based on more than one table. The worksheet schema will
+show schemas for the tables behind the worksheet, as well as the joins between
+tables <em>that were created as a part of the worksheet</em>.</p>
+
+<p>Click on a worksheet, to see it in the Schema Viewer. If the schema view is not showing the schema behind the worksheet, double click the tab on the top right of the worksheet object.</p>
+
+<p><img src="/5.0/images/worksheet_viewer_schema.png" alt="" title="Worksheet schema example" /></p>
+
+<p>The worksheet view shows the following information:</p>
 
 <ul>
   <li>All tables in the worksheet, and the relationships between these tables.</li>
