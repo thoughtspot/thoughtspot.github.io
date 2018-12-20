@@ -79,9 +79,6 @@ access to. An HR person could create an answer with the salary information and
 share with someone outside of HR. That person would now have access to the
 salary information.
 
-There are updates planned in future versions that will provider stricter access
-to columns and stronger governance of data.
-
 ## System privileges
 
 System privileges refer to what a user can do in ThoughtSpot. For example, can
