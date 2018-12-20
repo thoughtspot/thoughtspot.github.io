@@ -19,9 +19,9 @@ site.baseurl }}/admin/data-security/row-level-security.html#).
 You can set RLS rules _only_ on tables. To set up rule-based row level security,
 do the following:
 
-1. Navigate to the **Data** page and edit by clicking on it.
-2. Click **Row security** at the top right side of the page.
-3. Click the **+ Add row security** button.
+1. Click **Data**, and double-click on a table.
+2. Click **Row security**.
+3. Click **+ Add row security**.
 
     ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
 

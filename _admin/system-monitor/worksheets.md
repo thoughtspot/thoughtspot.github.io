@@ -16,8 +16,8 @@ administrators can create new, custom monitoring reports from the worksheets.
 To list the system worksheets:
 
 1. Go to the **Data** tab.
-2. Choose **All** and **All types**.
-3. Enter `TS ` (don't forget the space) in the search field.
+2. Choose **All** and **Worksheets**.
+3. Enter `TS: ` in the search field.
 
    ![]({{ site.baseurl }}/images/su-worksheets.png)
 
