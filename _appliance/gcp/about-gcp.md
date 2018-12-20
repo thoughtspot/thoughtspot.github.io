@@ -24,7 +24,7 @@ ThoughtSpot deployment in the [network ports reference]({{ site.baseurl}}/applia
 
 GCP is a secure cloud services platform offered by Google. Using
 ThoughtSpot on GCP allows you to easily add instances as your dataset grows.
-You can do everything you’d normally want to do in a traditional database center
+You can do everything you’d normally want to do in a traditional data center
 with GCP. It features an on-demand delivery of IT resources and applications
 via the Internet. When you are connected to an instance, you can use it just
 like you use any other server.
