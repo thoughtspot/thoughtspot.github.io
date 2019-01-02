@@ -1,5 +1,6 @@
 ---
 title: [Initialize the Service Provider Metadata]
+tags: [security]
 keywords: SAML,security,"active directory",authenticate
 last_updated: tbd
 summary: "This procedure shows how to initialize the Service Provider (SP) metadata for AD FS."

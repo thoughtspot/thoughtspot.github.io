@@ -1,7 +1,7 @@
 ---
 title: [Data and object security]
 keywords: "data,security,row level security,privileges"
-tags: [rls]
+tags: [rls,security]
 last_updated: tbd
 summary: "Understand how to secure your data and other key information in ThoughtSpot."
 sidebar: mydoc_sidebar

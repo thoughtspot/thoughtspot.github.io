@@ -19,6 +19,7 @@ allowed-tags:
  - rls
  - r-scripts
  - SAML_LDAP_AD
+ - security
  - spotiq
  - style
  - Supportability

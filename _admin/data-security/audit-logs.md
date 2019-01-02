@@ -1,7 +1,7 @@
 ---
 title: [System security]
 keywords: tbd
-tags: [logs]
+tags: [logs,security]
 summary: "System security refers to audit logs and security policies."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
