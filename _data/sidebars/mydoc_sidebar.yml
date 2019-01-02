@@ -744,6 +744,9 @@ entries:
         - title: Set Rule-Based RLS
           url: /admin/data-security/set-rls.html
           output: web,admBk
+      - title: ThoughtSpot Lifecycle
+        url: /admin/data-security/security-thoughtspot-lifecycle.html
+        output: web, admBk
     - levelTwoTitle: System administration
       output: web,admBk
       levelTwoItems:
