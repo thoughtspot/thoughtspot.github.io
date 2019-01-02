@@ -12,7 +12,7 @@ permalink: /:collection/:path.html
 
 Views can become slow as your data volume and the number of views stacked on top of one another grow. This happens because when doing a search, each view is computed on the fly. To improve the performance of a view, you can materialize it. Materializing pre-computes the view and stores it in memory, just like a table. You can expect a materialized view to be three to six times faster than a view that is not materialized, on average.
 
-To materialize a view, you must have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
+To materialize a view, you must have the [**Can administer ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
 {% include note.html content="The number of materialized views you can create is limited to 50, because materialized views take up space in memory." %}
 
