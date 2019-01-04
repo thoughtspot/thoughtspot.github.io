@@ -22,11 +22,11 @@ on the toolbar for any search result (answer).
     From here, you have options to write a custom script, or load a pre-built or
     ThoughtSpot provided script.
 
-2. On the Analyze dialog, click the ellipses next to the **Custom R Script** panel, and choose **Load**.
+2. In the Analyze dialog, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} next to the **Custom R Script** panel, and choose **Load**.
 
     ![]({{ site.baseurl }}/images/r-load-prebuilt.png)
 
-    This brings up a list of prebuilt scripts, both ThoughtSpot provided and those created by programmers on your team.
+    This brings up a list of pre-built scripts, both provided by ThoughtSpot and any created by programmers on your team.
 
     ![]({{ site.baseurl }}/images/r-load-list-of-scripts.png)
 
