@@ -47,6 +47,6 @@ Share uploaded data by following these steps:
     -   **Can View** to provide read-only access. This enables viewing the table data and defining worksheets on the table.
     -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table and adding or removing its columns.
 
-8. Click **Add and Save**.
+8. Click **Add**.
 
 9. Click **Done**.
