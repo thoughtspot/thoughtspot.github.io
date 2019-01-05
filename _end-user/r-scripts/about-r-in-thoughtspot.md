@@ -41,10 +41,10 @@ ThoughtSpot provided script.
 
 ![]({{ site.baseurl }}/images/r-load-or-write-script.png)
 
-## Run prebuilt R scripts
+## Run pre-built R scripts
 
 You don't have to have a background in statistics or be an R programmer to run R
-analyses in ThoughtSpot. You can use ThoughtSpot provided scripts and share the
+analyses in ThoughtSpot. You can use ThoughtSpot-provided scripts and share the
 R visualizations with others.
 
 For more on how to run provided scripts, skip to

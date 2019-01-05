@@ -117,7 +117,7 @@ The generated data is displayed back as a static PNG when you run the analysis:
 
 ## Options on scripts
 
-You can click these icons on the R script dialog to get more options:
+You can click these icons in the R script dialog to get more options:
 
 * The R script information icon
 ![more options menu icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
@@ -170,13 +170,13 @@ The script for CSV output generates a table:
 
 ## Save and share your script
 
-To save a script, choose **Save as** from the options menu (**...**) on
-the script. After you name it and save it, your script will show in the **Load**
+To save a script, choose **Save as** from the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} of
+the script. After you name and save it, your script will show in the **Load**
 scripts dialog.
 
 ![]({{ site.baseurl }}/images/r-save-script.png)
 
-To share a script, choose **Share** from the options menu (**...**).
+To share a script, choose **Share** from the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 ![]({{ site.baseurl }}/images/r-share-script.png)
 

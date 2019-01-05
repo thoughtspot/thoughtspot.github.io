@@ -13,15 +13,11 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Save an R visualization
 
-1.  Click the options menu (**...**) above the generated graphic or table containing your analysis.
+1.  Click the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing your analysis, and select **Save** from the menu.
 
     ![]({{ site.baseurl }}/images/r-time-forecast-options.png)
 
-2.  Select **Save** from the menu.
-
-    ![]({{ site.baseurl }}/images/r-save-time-forecast-answer.png)
-
-3.  Add a name and description for the analysis, and click **Save**.
+2.  Add a name and description for the analysis, and click **Save**.
 
     ![]({{ site.baseurl }}/images/r-save-time-forecast-answer.png)
 
@@ -31,13 +27,13 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Share an R visualization
 
-1.  Click the options menu (**...**) above the generated graphic or table containing
+1.  Click the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing
     your analysis, and select **Share** from the menu.
 
     ![]({{ site.baseurl }}/images/r-viz-share.png)
 
-3.  Select the user or group with which to share along with level of access
-    (**Can View**, **Can Edit**), then click **Done**.
+2.  Select and add the user or group with which to share, along with level of access
+    (**Can View**, **Can Edit**), and then click **Done**.
 
     ![]({{ site.baseurl }}/images/r-viz-share-choose-group.png)
 
