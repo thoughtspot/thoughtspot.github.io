@@ -13,7 +13,7 @@ and select **Share**.
 
     ![]({{ site.baseurl }}/images/share_click_button.png)
 
-3. Click the plus (**+**) on the Share dialog, and select users or groups with whom you want to share. (Users are listed first, scroll down to find the list of Groups.)
+3. Click the plus (**+**) at the bottom of the Share dialog, and select users or groups with whom you want to share.
 
     ![]({{ site.baseurl }}/images/share_pinboard.png)
 
@@ -23,6 +23,6 @@ and select **Share**.
 
     -   **Can Edit** to allow modification. Enables renaming or deleting the shared pinboard. If a person with edit privileges modifies a shared pinboard, their changes will be saved to it.
 
-5. Click **Add & Save** to save your changes, then click **Done**.
+5. Click **Add** to save your changes, then click **Done**.
 
     ![]({{ site.baseurl }}/images/share_pinboard_complete.png)
