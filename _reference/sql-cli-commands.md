@@ -335,7 +335,7 @@ nickname';</code></p>
        &lt;name&gt;;</code></p>
       </td>
       <td><p>Drops the named foreign key or relationship between two tables. For example:</p>
-         <p><code>ALTER TABLE "sales_fact" DROP FOREIGN KEY "FK_PO_number";</code></p>
+         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";</code></p>
         <p><code>ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";</code></p>
       </td>
    </tr>
