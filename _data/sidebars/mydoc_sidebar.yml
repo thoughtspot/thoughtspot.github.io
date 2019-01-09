@@ -858,7 +858,7 @@ entries:
     - title: Set up ThoughtSpot Data Connect
       url: /data-connect/setup/settingup-etl.html
       output: web,cngBk
-    - levelTwoTitle: Work with Data Data Sources
+    - levelTwoTitle: Work with Data Sources
       output: web,cngBk
       levelTwoItems:
       - title: Add a new data source
