@@ -17,7 +17,7 @@ Use this procedure to construct the URL you will use to call the REST API:
 2. Navigate to the pinboard from which you want to get data. If it doesn't exist yet, create it now.
 
 3. Find the ID number of the object you want to get the data from. If the object is:
-    -   A pinboard, click **Actions** and select **Copy Link**.
+    -   A pinboard, click ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} the and select **Copy Link**.
 
         ![]({{ site.baseurl }}/images/copy_pinboard_link.png "The Actions menu")
 
@@ -32,13 +32,9 @@ Use this procedure to construct the URL you will use to call the REST API:
 
         ![]({{ site.baseurl }}/images/copy_link_pinboard.png "The pinboard ID")
 
-    -   A visualization (table or chart), copy the identifier that appears after "viz/". This is the pinboard ID.
+    -   A visualization (table or chart), copy the identifier that appears after "viz/". This is the visualization ID.
 
         ![]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png "The pinboard ID")
-
-        Then skip the "/" and copy what follows it. This is the visualization ID.
-
-        ![]({{ site.baseurl }}/images/copy_link_viz_viz_part.png "The visualization ID")
 
 5. Construct the URL as follows: For a pinboard, the URL takes the form:
 
