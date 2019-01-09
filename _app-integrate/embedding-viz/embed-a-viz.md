@@ -28,13 +28,17 @@ before continuing.
 
 3. Copy the URL for the entire pinboard and for a single visualization.
 
-   If the object is a pinboard, click **Actions > Copy Link**.
+   If the object is a pinboard, click the ellipses icon (3 dots)
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-1.png "Pinboard Link")
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click **Actions > Copy Link**.
+   For a vizualization in a pinboard, click the ellipses icon (3 dots)
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-2.png "Visualization Link")
 
