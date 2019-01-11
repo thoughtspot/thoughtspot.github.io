@@ -41,7 +41,7 @@ item and department.
 
 1. If you haven't already, sign in to the ThoughtSpot application and click the **Data** tab.
 
-2. Click the three-dot **Actions** button, and select **Upload data**.
+2. Click the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Upload data**.
 
 3. Browse to the sample data file you downloaded or drag the file into the upload area.
 

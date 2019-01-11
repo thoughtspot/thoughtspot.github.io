@@ -25,7 +25,7 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 
    The first panel provides information about the analysis.
 
-4. Click on the small **i** to see a summary of the SpotIQ analysis.
+4. Click the information icon ![information icon]({{ site.baseurl }}/images/icon-info.png){: .inline} at the top of the page to see a summary of the SpotIQ analysis.
 
    ![]({{ site.baseurl }}/images/spotiq-details.png)
 
@@ -66,7 +66,7 @@ can't provide information you can use, just that you are unlikely to get the
 same insight twice.
 
 If a set of insights look good, you can **Save** them and they are not removed
-when they expire. Do this now, click **Actions > Save** from the menu:
+when they expire. Do this now, click ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} > **Save**:
 
 ![]({{ site.baseurl }}/images/spotiq-save.png)
 
