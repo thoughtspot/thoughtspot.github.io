@@ -115,7 +115,7 @@ with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 Before we can install a ThoughtSpot cluster, an administrator must log in to
 each VM via SSH and complete the following preparation steps:
 
-1. Run `/usr/local/scaligent/release/bin/prepare_disks.sh` on every machine.
+1. Run `/usr/local/scaligent/bin/prepare_disks.sh` on every machine.
 2. Configure each VM based on the site-survey.
 
 ## Launch the cluster
