@@ -71,7 +71,9 @@ The following topics walk you through this process.
       | Boot disk type  | `Standard persistent disk`|
       | Size (GB)       | `250`                     |
 
-      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-x.png "Change boot disk")
+      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
+
+      {% include note.html content="ThoughtSpot updates these base images patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend taking the newer image as it likely includes security or other types of patches."%}
 
       c. Click **Select** to save the boot disk configuration.
 
