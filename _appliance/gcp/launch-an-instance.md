@@ -102,10 +102,10 @@ The following topics walk you through this process.
 
 9. Repeat these steps to create the necessary number of such VMs.
 
-## Prepare the VMs (ThoughtSpot Site Reliability Team)
+## Prepare the VMs (ThoughtSpot Systems Reliability Team)
 
 {% include important.html content="This procedure is typically done by a
-ThoughtSpot Site Reliability Engineer (SRE). Please consult
+ThoughtSpot Systems Reliability Engineer (SRE). Please consult
 with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
 Before we can install a ThoughtSpot cluster, an administrator must log in to
