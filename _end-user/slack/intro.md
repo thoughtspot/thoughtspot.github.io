@@ -28,6 +28,6 @@ administrator to see if you can get one.
 
 ## Related Information
 
-* Go to [How to use Spot](use-spot.md) to get started using Spot.
+* Go to [How to use Spot](use-spot.html) to get started using Spot.
 
 * For information on setting up Spot, see [Slack Integration]({{ site.baseurl }}/admin/setup/slack-integration.html) in the Administration Guide.
