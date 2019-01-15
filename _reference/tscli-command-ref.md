@@ -336,7 +336,7 @@ tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 
 * `tscli firewall disable` Disable firewall.
 * `tscli firewall enable` Enable firewall.
-* `tscli firewall open-ports *`ports`*`
+* `tscli firewall open-ports` `--ports` *`ports`*
 
    Opens given ports through firewall on all nodes. Takes a list of ports to
    open, comma separated. Ignores ports which are already open. Some essential
