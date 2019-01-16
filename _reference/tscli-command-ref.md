@@ -864,6 +864,32 @@ This subcommand supports the following actions:
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
 
 
+### sssd
+
+```
+tscli sssd {enable, set-sudo-group, disable} ...
+```
+
+This subcommand uses system security services daemon (SSSD), and has the following actions:
+
+* `tscli sssd enable --user` *`USER`* `--domain` *`DOMAIN`*
+
+   Enables system Active Directory (AD) user access on a single node. You will be
+   prompted for password credentials. The user must have permission to join a
+   computer or VM to the domain.
+
+* `tscli sssd set-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+
+   Allows `sudo` permissions for AD group
+
+* `tscli sssd disable`
+
+   Disables system AD based access on a local node.
+
+   {% include note.html content="Running this command will also remove the AD group from sudoers list."%}
+
+For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
+
 ### storage
 
 ```
