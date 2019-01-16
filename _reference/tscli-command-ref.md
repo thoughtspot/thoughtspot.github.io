@@ -24,7 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,support,tokenauthentication}
+           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,sssd, ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -840,30 +840,6 @@ Enables Spot integration.  This subcommand supports the following actions:
 * `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
 * `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
 
-
-### ssl
-
-```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
-```        
-
-This subcommand supports the following actions:
-
-* `tscli ssl add-cert [-h]` *`key`* *`certificate`* Adds an SSL certificate, key pair.
-* `tscli ssl clear-min-tls-version [-h]` Clears any customizations for the minimum TLS version to support.
-* `tscli ssl off`
-
-    Disables SSL. Disabling SSL will stop users from seeing a security warning
-    when accessing ThoughtSpot from a browser if there is no SSL certificate
-    installed.
-
-* `tscli ssl on [-h]` If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser.
-* `tscli ssl rm-cert` Removes the existing SSL certificate, if any.
-* `tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}` Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.
-* `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
-* `tscli ssl tls-status [-h]`  Prints the status of TLS support.
-
-
 ### sssd
 
 ```
@@ -889,6 +865,29 @@ This subcommand uses system security services daemon (SSSD), and has the followi
    {% include note.html content="Running this command will also remove the AD group from sudoers list."%}
 
 For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
+
+### ssl
+
+```
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
+```        
+
+This subcommand supports the following actions:
+
+* `tscli ssl add-cert [-h]` *`key`* *`certificate`* Adds an SSL certificate, key pair.
+* `tscli ssl clear-min-tls-version [-h]` Clears any customizations for the minimum TLS version to support.
+* `tscli ssl off`
+
+    Disables SSL. Disabling SSL will stop users from seeing a security warning
+    when accessing ThoughtSpot from a browser if there is no SSL certificate
+    installed.
+
+* `tscli ssl on [-h]` If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser.
+* `tscli ssl rm-cert` Removes the existing SSL certificate, if any.
+* `tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}` Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.
+* `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
+* `tscli ssl tls-status [-h]`  Prints the status of TLS support.
+
 
 ### storage
 
