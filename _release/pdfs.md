@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 
 ThoughtSpot 5.1 guides are also provided as downloadable PDFs here.
-TBD - 5.1 PDFS ARE NOT READY YET
+**TBD - 5.1 PDFS ARE NOT READY YET**
 
 | [User Guide](/5.1/pdf/ThoughtSpot_User_Guide_5.1.pdf)|
 | [Administrator Guide](/5.1/pdf/ThoughtSpot_Administration_Guide_5.1.pdf)|
