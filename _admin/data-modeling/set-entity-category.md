@@ -19,14 +19,14 @@ support the SearchIQ user experience.
 
 | Category            | Description                                          |
 | :---                | :---                                                 |
-| PERSON              |                                                      |
-| PLACE               |                                                      |
-| TIME                |                                                      |
-| PRODUCT             |                                                      |
-| ZIP_CODE            |                                                      |
-| LAT_LONG            |                                                      |
-| COMPANY_ORG         |                                                      |
-| NUM_TYPES           |                                                      |
+| PERSON              | Contains data about people, relevant to questions about "who?" |
+| PLACE               | Contains data about location, relevant to questions about "where?" |
+| TIME                | Contains data about dates or times, relevant to questions about "when?" |
+| PRODUCT             | Contains data about products|
+| ZIP_CODE            | Contains zip code data, relevant to questions like "where?" or "what zip code?"|
+| LAT_LONG            | Contains positional geo data, relevant to questions like "where?"|
+| COMPANY_ORG         | Contains data about a company or organization |
+| NUM_TYPES           | Contains numerical data |
 
 ## Set Entity Categories
 
