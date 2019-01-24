@@ -45,6 +45,6 @@ To specify entity categories:
 
 ## Related information
 
-* [SpotIQ tutorial]({{ site.baseurl}}/spotiq/whatisspotiq.html)
+* [SearchIQ]({{ site.baseurl}}/end-user/search/about-searchiq.html)
 
 * [Overview of data modeling settings]({{ site.baseurl}}/admin/data-modeling/data-modeling-settings.html)
