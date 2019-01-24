@@ -29,7 +29,7 @@ This index lists the editable data modeling settings. With three exceptions, the
 | [Aggregation](change-aggreg-additive.html#) | Sets the default aggregation type for a column. |
 | [Hidden](change-visibility-synonym.html#) | Sets the visibility of a column. |
 | [Synonyms](change-visibility-synonym.html#) | Adds synonyms that can be used in the search bar to refer to a column. |
-| [SpotIQ Preference](change-visibility-synonym.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ.|
+| [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ.|
 | [Index Type](change-index.html#) | Sets the type of index that will be created for a column. |
 | [Geo Config](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
 | [Index Priority](change-column-priority.html#) | Changes the priority of a column in search suggestions. |
@@ -37,7 +37,6 @@ This index lists the editable data modeling settings. With three exceptions, the
 | [Currency Format](set-format-pattern-numbers.html#set-currency-format) | Specifies the format to use when showing the currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. |
 | [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column by entity type. Options are `PERSON`, `PLACE`, `TIME`, `MONEY`, `PRODUCT`, `ZIP_CODE`, `LAT_LONG`, `COMPANY_ORG`, `NUM_TYPES`. By default, `ENTITY TYPE` is not set. <br><br> Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. <br><br>For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.|
-
 
 ## Data modeling for worksheets
 

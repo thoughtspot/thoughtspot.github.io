@@ -598,6 +598,9 @@ entries:
         - title: Hide a column or define a synonym
           url: /admin/data-modeling/change-visibility-synonym.html
           output: web,admBk
+        - title: Set columns to exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
         - title: Manage suggestion indexing
           url: /admin/data-modeling/change-index.html
           output: web,admBk
@@ -609,6 +612,9 @@ entries:
           output: web,admBk
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
+          output: web,admBk
+        - title: Set entity categories for SearchIQ
+          url: /admin/data-modeling/set-entity-category.html
           output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk

@@ -26,8 +26,23 @@ You can change your picture by clicking **Upload Picture**. The system accepts
 
 ## SpotIQ preferences and email notifications
 
-You can change your [SpotIQ]({{ site.baseurl }}/spotiq/overview.html) preferences by checking or unchecking the email and SpotIQ options.
+You can specify email notifications behavior along with exclude parameters and
+threshold settings used for your SpotIQ analyses.
+
+You can change your [SpotIQ]({{ site.baseurl }}/spotiq/overview.html) basic
+preferences by checking or unchecking the email and exclude preferences for analyses.
 
  ![]({{ site.baseurl }}/images/update_preferences.png "Update my preferences")
 
-Click **Sign out** to log out of ThoughtSpot, and return to the sign in page.
+ Click **Insight Threshold Settings** to further refine parameters SpotIQ will use.
+
+ ![]({{ site.baseurl }}/images/update_preferences_spotiq_thresholds.png "Update my preferences")
+
+ These parameters and threshold settings are a subset of those available on the
+ [SpotIQ Customize analysis]({{ site.baseurl }}/spotiq/customization.html) dialog.
+ If you set them here, the settings will persist for all your SpotIQ analyses including
+ when you run custom analyses, unless you explicitly reset options for a custom analysis.
+
+## Logging out
+
+Click **Profile > Sign out** to log out of ThoughtSpot, and return to the sign in page.
