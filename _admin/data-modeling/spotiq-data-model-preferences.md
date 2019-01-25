@@ -8,18 +8,18 @@ permalink: /:collection/:path.html
 ---
 
 [SpotIQ]({{ site.baseurl}}/spotiq/whatisspotiq.html) is a ThoughtSpot
-feature  that helps users insights in data by automatically surfacing
-interesting characteristics.
+feature  that provides users with insights about their data by automatically surfacing
+interesting characteristics (trends, correlations, outliers, and so on).
 
-If you have access to tables and worksheets for data modeling purposes, you can specify columns to exclude from SpotIQ analyses from data sources. By default, all columns are included in SpotIQ analyses.
+If you have access to tables, worksheets, and views for data modeling purposes, you can specify columns to exclude from SpotIQ analyses. By default, all columns are _included_ in SpotIQ analyses.
 
 ## Exclude columns from SpotIQ analyses
 
 To specify columns to exclude from SpotIQ analyses:
 
-1. Click **Data** in the top menu, and choose **Tables** or **Worksheets**.
+1. Click **Data** in the top menu, and choose **Tables**,  **Worksheets**, or **[Views]({{site.baseurl}}/complex-search/about-query-on-query.html)**.
 
-2. Click on the name of your table or worksheet.
+2. Click on the name of your data source.
 
 3. On the **Columns** tab, find the COLUMN NAMES you want to exclude from SpotIQ analyses, and scroll to the right to find `SPOTIQ PREFERENCE`.
 
@@ -34,9 +34,9 @@ By default, all columns are included in SpotIQ analyses.
 
 If you have previously set some columns to EXCLUDE and you want to re-set these to be included, do the following.
 
-1. Click **Data** in the top menu, and choose **Tables** or **Worksheets**.
+1. Click **Data** in the top menu, and choose **Tables**, **Worksheets**, or **[Views]({{site.baseurl}}/complex-search/about-query-on-query.html)**.
 
-2. Click on the name of your table or worksheet.
+2. Click on the name of your data source.
 
 3. On the **Columns** tab, find the COLUMN NAMES you want to set back to include in SpotIQ analyses, and scroll to the right to find `SPOTIQ PREFERENCE`.
 
