@@ -18,7 +18,7 @@ formulas.
 
 {% include content/operators.md %}
 
-## Aggregate functions (group_aggregate)
+## Aggregate functions (group aggregate)
 
 These functions can be used to aggregate data.
 
