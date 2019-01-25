@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-[SpotIQ tutorial]({{ site.baseurl}}/spotiq/whatisspotiq.html) is a ThoughtSpot
+[SpotIQ]({{ site.baseurl}}/spotiq/whatisspotiq.html) is a ThoughtSpot
 feature  that helps users insights in data by automatically surfacing
 interesting characteristics.
 
