@@ -24,19 +24,18 @@ To show data labels:
 
 ## Show rounded or non rounded numbers
 
-You can toggle this option off to show non-rounded numbers. **Show rounded
-numbers** will only be available to toggle on or off if **Show Data Labels** is
-enabled.
+You can toggle this option off to show non-rounded numbers. **Show Rounded Numbers**
+will only be available to toggle on or off if **Show Data Labels** is enabled.
 
 1. While viewing your search or answer as a chart, click **Edit chart styles** on the right.
 2. Verify that **Show Data Labels** is enabled.
-3. Click **Show rounded numbers** to toggle on or off.
+3. Click **Show Rounded Numbers** to toggle on or off.
 
-   By default, charts with data labels enabled show rounded numbers on chart labels.
+   By default, charts with data labels enabled Show Rounded Numbers on chart labels.
 
-   ![]({{ site.baseurl }}/images/show_rounded_numbers.png "Show rounded numbers")
+   ![]({{ site.baseurl }}/images/show_rounded_numbers.png "Show Rounded Numbers")
 
-   When you uncheck **Show rounded numbers**, data labels show precise, non rounded numbers out to the furthest decimal.
+   When you uncheck **Show Rounded Numbers**, data labels show precise, non rounded numbers out to the furthest decimal.
 
     ![]({{ site.baseurl }}/images/show_non_rounded_numbers.png "Show non rounded numbers")
 
