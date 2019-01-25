@@ -238,7 +238,7 @@ entries:
         - title: Moving functions
           url: /complex-search/about-moving-formulas.html
           output: web,ugBk
-        - title: Flexible aggregation functions
+        - title: Flexible aggregation functions (group aggregate and filters)
           url: /complex-search/aggregation-flexible.html
           output: web,ugBk
         - title: Grouping functions

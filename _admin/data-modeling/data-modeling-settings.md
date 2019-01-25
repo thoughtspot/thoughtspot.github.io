@@ -6,10 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can change these settings in two ways, both of which have change the model.
+You can change these settings in two ways, both of which change the model.
 If you want to make a few small changes, you should [make them in the
 ThoughtSpot application ]({{ site.baseurl
-}}/admin/data-modeling/model-data-in-UI.html) if you want to make many changes
+}}/admin/data-modeling/model-data-in-UI.html). If you want to make many changes
 [you should edit the modeling file]({{ site.baseurl
 }}/admin/data-modeling/edit-model-file.html#). Whether you are changing data
 modeling settings using the modeling file or the Web interface, the settings and
@@ -17,7 +17,7 @@ their accepted values are the same.
 
 ## Modeling settings
 
-This index lists the editable data modeling settings. With three exceptions, the modeling settings must be modeled in a table.  Column names, descriptions, and synonyms can also be modeled in a worksheet.
+This index lists the editable data modeling settings.
 
 | Setting name | Description |
 |----------------|----------------------|
@@ -32,7 +32,7 @@ This index lists the editable data modeling settings. With three exceptions, the
 | [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ.|
 | [Index Type](change-index.html#) | Sets the type of index that will be created for a column. |
 | [Geo Config](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
-| [Index Priority](change-column-priority.html#) | Changes the priority of a column in search suggestions. |
+| [Index Priority](change-index.html#) | Changes the priority of a column in search suggestions. |
 | [Format Pattern](set-format-pattern-numbers.html#) | Specifies the format to use for numeric values or dates that show in the column. |
 | [Currency Format](set-format-pattern-numbers.html#set-currency-format) | Specifies the format to use when showing the currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. |
@@ -56,4 +56,3 @@ they will be reflected in all worksheets that use the table.
 
 - [Model the data for searching](semantic-modeling.html#)
 - [Add a geographical data setting for a column]({{ site.baseurl }}/admin/data-modeling/model-geo-data.html)  
-- [Set the search suggestions priority for a column]({{ site.baseurl }}/admin/data-modeling/change-column-priority.html)  
