@@ -37,7 +37,18 @@ The command to allow `sudo` permissions for AD group:
 tscli sssd set-sudo-group <ACTIVE_DIRECTORY_GROUP_NAME>
 ```
 
-## Disable Active Directory based access on a local node
+## Clear sudoers AD Group on a local node
+
+Clearing `sudo` AD group only applies on the node where command is run, and is
+not set for the whole cluster.
+
+The command to clear `sudo` permissions for the AD group:
+
+```
+tscli sssd clear-sudo-group <ACTIVE_DIRECTORY_GROUP_NAME>
+```
+
+## Disable AD based access on a local node
 
 Currently ThoughtSpot supports disabling AD based access individually on each
 node where the commands are run. There is no provision to disable AD access for

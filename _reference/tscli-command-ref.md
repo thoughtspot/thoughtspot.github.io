@@ -840,32 +840,6 @@ Enables Spot integration.  This subcommand supports the following actions:
 * `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
 * `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
 
-### sssd
-
-```
-tscli sssd {enable, set-sudo-group, disable} ...
-```
-
-This subcommand uses system security services daemon (SSSD), and has the following actions:
-
-* `tscli sssd enable --user` *`USER`* `--domain` *`DOMAIN`*
-
-   Enables system Active Directory (AD) user access on a single node. You will be
-   prompted for password credentials. The user must have permission to join a
-   computer or VM to the domain.
-
-* `tscli sssd set-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
-
-   Allows `sudo` permissions for AD group
-
-* `tscli sssd disable`
-
-   Disables system AD based access on a local node.
-
-   {% include note.html content="Running this command will also remove the AD group from sudoers list."%}
-
-For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
-
 ### ssl
 
 ```
@@ -888,6 +862,33 @@ This subcommand supports the following actions:
 * `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
 
+### sssd
+
+```
+tscli sssd {enable, disable, set-sudo-group, clear-sudo-group} ...
+```
+
+This subcommand uses system security services daemon (SSSD), and has the following actions:
+
+* `tscli sssd enable --user` *`USER`* `--domain` *`DOMAIN`*
+
+   Enables system Active Directory (AD) user access on a single node. You will be
+   prompted for password credentials. The user must have permission to join a
+   computer or VM to the domain.
+
+* `tscli sssd disable`
+
+  Disables system AD based access on a local node. Running this command will also remove the AD group from sudoers list.
+
+* `tscli sssd set-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+
+   Allows `sudo` permissions for AD group.
+
+* `tscli sssd clear-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+
+   Clears any set AD sudo group.
+
+For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
 
 ### storage
 
