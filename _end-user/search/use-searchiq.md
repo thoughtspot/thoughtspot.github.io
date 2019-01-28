@@ -9,29 +9,41 @@ permalink: /:collection/:path.html
 
 To do a search using SearchIQ:
 
-1. Click the ThoughtSpot logo to the left of the top menu bar to get to the homepage.
+1. Click the ThoughtSpot search bar on the homepage or select **Search** from the top menu.
 
    ![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
 
-   The search bar on the homepage is the SearchIQ-enabled search bar.
+2. Click on the SearchIQ toggle button to go into SearchIQ mode.
 
-   ![]({{ site.baseurl }}/images/searchiq_search_bar.png "SearchIQ search bar")   
+   ![]({{ site.baseurl }}/images/choose_searchiq.png "SearchIQ toggle button")
 
-2. Choose the data you want to search using the selector to the right side of the search bar.
+   If you later decide to go back to the classic search mode, you can click on the SearchIQ toggle button to turn it off again.
 
-   ![]({{ site.baseurl }}/images/searchiq_data_selector.png "SearchIQ data selector")
+3. Choose the data you want to search using the selector in the left panel.
 
-3. Then click in the search bar and type your search.
+   ![]({{ site.baseurl }}/images/searchiq_select_data_source.png "SearchIQ data selector")
+
+4. Type your search in the search bar using plain language.
 
    If you see a microphone icon in the search bar, that means your operating system and browser are enabled for speech-to-text. In this case, you can click on the microphone and speak your search instead of typing.
 
-4. Press the **Enter** key when your search is complete.
+5. Press the **Enter** key when your search is complete.
 
-5. When your answer appears, it will look something like this:
+6. When your answer appears, you may also see one of these messages:
 
-   ![]({{ site.baseurl }}/images/searchiq_result.png "SearchIQ result")
+   * Ignored words: These words were not needed in order to create the answer, so they are ignored.
 
-6. If the answer isn't what you were expecting, you may choose to refine your answer by [teaching SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
+     ![]({{ site.baseurl }}/images/searchiq_ignored_words.png "SearchIQ ignored words message")
+
+   * Ambiguous words: These are words that could have more than one meaning in the context of the search.
+
+     ![]({{ site.baseurl }}/images/searchiq_ambiguous.png "SearchIQ ambiguous words message")   
+
+        You can clarify by choosing what you meant from the possible meanings shown.
+
+        ![]({{ site.baseurl }}/images/searchiq_disambiguate.png "SearchIQ clarify selected words")   
+
+6. If the answer isn't what you were expecting, you can refine your answer by [teaching SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
 
 ## Related information
 
