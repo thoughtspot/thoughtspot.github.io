@@ -72,3 +72,11 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
 
  You can decide whether or not to display headlines in your table results. To
  customize headlines, choose **... > Customize summaries**.
+
+### Table aggregate headline
+
+ The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline below the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
+
+ In the following example, the table aggregate is shown as a result of the Average Profit formula `sum ( profit ) / count ( ship mode )` which divides the total profit of each ship mode by the sum total count for that ship mode. Table Aggregate, recalculates that function for the entire table taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes, providing a table aggregate average profit of 181. This a more useful result compared to the Avg headline option which would simply sum the the average profit for all ship modes and divide it by the number of ship modes (3), providing an average of 187.
+
+![]({{ site.baseurl }}/images/headlines_table_agg.png "Table aggregate headline")

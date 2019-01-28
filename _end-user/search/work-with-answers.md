@@ -19,22 +19,32 @@ Only administrators create stickers, but anyone with edit privileges can tag an 
 
 You can apply as many stickers as you like to an object.
 
-## Copy an answer
+## Edit a copy of an answer
 
-You can make a copy of an answer if you would like to make edits without changing the original answer. When copying, you can type in a different name for your copy.
+You can edit a copy of an answer if you would like to make edits without changing the original answer. When saving, you can type in a different name for your copy.
 
-1. Click on **Answers**, on the top navigation bar.
+1. Click **Answers**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/answers_icon.png "Answers")
 
-2. On the answer list page, click the answer you would like to copy.
-3. Click **Actions** and select **Make a copy**.
+2. On the answer list page, click the answer you would like to edit a copy of.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
 
      ![]({{ site.baseurl }}/images/copy_an_answer.png "Make a copy of the answer")
 
-4. Give your answer a new name and description. Then click **Save**.
+   A copy of the answer is displayed with “Copy of” added to the beginning of the title.
+
+4. Make any changes you want to the answer.
+
+5. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+
+   The Save Answer dialog box appears.
 
      ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+
+6. Change the name and description, as needed, and click **SAVE**.
+
+   When you navigate back to the Answers page, your edited Answer will appear in the list.
 
 ## Other features
 
@@ -48,3 +58,21 @@ The **SpotIQ Insights** section is only visible to users with the **Has SpotIQ**
 privilege. Once you expand an insight on this list, an **Edit** button allows
 you modify the insight and make it your own. Your installation configuration
 determines how many insights can appear in this section. The default is 6.
+
+## Edit a copy of a SpotIQ Insight
+
+You can edit a copy of a SpotIQ Insight if you would like to make edits without changing the original insight. When saving, you can type in a different name for your copy.
+
+1. Find the SpotIQ insight you want edit and click it to open it as an answer.
+
+2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
+
+   A copy of the answer is displayed with “Copy of” added to the beginning of the title.
+
+3. Make any changes you want to the answer.
+
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+
+   The Save Answer dialog box appears.
+
+5. Change the name and description, as needed, and click **SAVE**.

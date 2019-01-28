@@ -15,9 +15,9 @@ The search bar shows boxes around each search phrase, so you can easily see wher
 
  ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with boxed phrases")
 
-## Removing search phrases
+## Editing a search query
 
-When you click on a search phrase, it is highlighted, so you can easily replace it with one of the suggestions. When you hover over on a boxed phrase, you'll see an **x**, which you can click to remove it. When you delete a phrase, your search will automatically update.
+You can edit a search query without affecting existing search results.  When you click a search phrase, it is selected, and ThoughtSpot displays other suggestions from which you can choose to replace the selected phrase. When you hover over a boxed phrase, you'll see an **x**, which you can click to remove it from the query. You can insert a new phrase in the middle of a query, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the query. As you edit your query, ThoughtSpot continuously generates new search results.
 
 If you find yourself looking at a table or chart, but it doesn't seem to contain all the data you expect, try looking in the search bar for white boxes (filters). If you remove all the filters, you will again see all the available data for that search.
 
