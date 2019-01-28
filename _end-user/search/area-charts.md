@@ -28,3 +28,7 @@ Stacked area charts plot the y-axis as a percentage by default. You can choose t
  ![]({{ site.baseurl }}/images/stacked_area_chart_on_example.png "Stacked area chart example: "Show Y-Axis as %" toggled on")
 
 Your search needs at least two attributes and one measure to be represented as a stacked area chart.
+
+![]({{ site.baseurl }}/images/stacked_area_chart_multi_y_axis.png "Stacked area chart example: "Show multiple measures on Y-Axis")
+
+You can have multiple measures on the y-axis of a stacked area chart.

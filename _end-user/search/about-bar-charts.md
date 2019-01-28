@@ -31,5 +31,8 @@ It is important to note that stacked bar charts plot the y-axis as a percentage 
 
 ![]({{ site.baseurl }}/images/bar_chart_example_stacked_xy.png "Stacked bar chart example")
 
-
 Your search needs at least two attributes and one measure to be represented as a stacked bar chart.
+
+![]({{ site.baseurl }}/images/stacked_bar_chart_multi_y_axis.png "Stacked bar chart example: Show multiple measures on Y-Axis")
+
+You can have multiple measures on the y-axis of a stacked bar chart.

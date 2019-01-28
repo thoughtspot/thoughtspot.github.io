@@ -17,11 +17,11 @@ In addition, the size picker at the bottom of a visualization's three-dot Action
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboards page, click the pinboard you would like to edit.
-3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the **Actions** menu for the visualization.
+3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the visualization.
 
      ![]({{ site.baseurl }}/images/resize_pinboard_visualization.png "Resize your visualization")
 
-4. Save your pinboard by clicking the **Actions** button and selecting **Save**.
+4. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
 
@@ -30,7 +30,7 @@ In addition, the size picker at the bottom of a visualization's three-dot Action
 You can change the orientation of a chart or table on a pinboard. To do this:
 
 1. Navigate to the chart or table.
-2. Click the **Actions** menu for the chart or table.
+2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the chart or table.
 
    ThoughtSpot displays the drop-down menu.
 
@@ -39,9 +39,9 @@ You can change the orientation of a chart or table on a pinboard. To do this:
    The last item shows different possible orientations, with the current orientation selected.
 
 3. Select a new orientation.
-4. Click the **Actions** button and select **Save**.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
-## Delete a visualization from your pinboard.
+## Delete a visualization from your pinboard
 
 To delete a visualization:
 
@@ -50,19 +50,49 @@ To delete a visualization:
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
-3. Click the **Actions** button of the visualization you want to delete and select **Delete**.
+3. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete**.
 
      ![]({{ site.baseurl }}/images/detele_a_pinboard_visualization.png "Delete a visualization")
 
-4. Save your pinboard by clicking the **Actions** button and selecting **Save**.
+4. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
+
+## Edit a copy of a visualization from your pinboard
+
+To edit a copy of a visualization:
+
+1. Click **Pinboards**, on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+
+2. On the pinboard list page, click the pinboard that contains the visualization you would like to edit a copy of.
+
+3. Find a visualization in the pinboard you want to edit.
+
+4. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
+
+   ![]({{ site.baseurl }}/images/make_a_copy_of_a_pinboard_viz.png "Make a copy of the pinboard visualization")
+
+   A copy of the answer that was used to create the visualization is displayed with “Copy of” added to the beginning of the title.
+
+5. Make any changes you want to the visualization.
+
+6. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+
+   The Save Answer dialog box appears.
+
+   ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+
+7. Change the name and description, as needed, and click **SAVE**.
+
+   When you navigate back to the Answers page, your edited Answer will appear in the list.
 
 ## Other pinboard edits
 
 Other pinboard actions include actions you normally perform on your search as
 well as actions that you can only perform on a pinboard. Most of these actions
-are found under the **Actions** button.
+are found under the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
 
