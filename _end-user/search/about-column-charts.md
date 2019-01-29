@@ -35,7 +35,3 @@ charts.
  ![]({{ site.baseurl }}/images/stacked_column_chart_on_example.png "Stacked column chart example: "Show Y-Axis as a %" toggled on")
 
 Your search needs at least two attributes and one measure to be represented as a stacked column chart.
-
-![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis.png "Stacked column chart example: "Show multiple measures on Y-Axis")
-
-You can have multiple measures on the y-axis of a stacked column chart.

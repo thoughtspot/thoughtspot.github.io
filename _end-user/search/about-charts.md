@@ -22,11 +22,11 @@ To change the chart type of your answer:
 
 1. Click **Change visualization** to get a palette of charts, maps, pivot table, and so on (scroll down to see more.)
 
-  ![]({{ site.baseurl }}/images/chart_type_icons_change_viz.png "ThoughtSpot chart types")
+   ![]({{ site.baseurl }}/images/chart_type_icons_change_viz.png "ThoughtSpot chart types")
 
 2. Click a different chart or visualization type.
 
-  ![]({{ site.baseurl }}/images/chart_type_icons.png "ThoughtSpot chart types")
+   ![]({{ site.baseurl }}/images/chart_type_icons.png "ThoughtSpot chart types")
 
 **Note:** Some chart types may be unavailable for you to select depending on the columns in your search. For example, if your search does not contain at least one geographical column then you will not be able to select any of the geo chart types. Unavailable chart types are grayed out. Hovering over one will tell you what columns are needed before you can choose it.
 
@@ -62,3 +62,23 @@ There are three geo charts that let you visualize geographical data in ThoughtSp
 Sankey charts show a flow from one set of values to another, usually with visual emphasis (brighter colors or larger bandwidths) for comparison of the values (e.g., top cities in terms of sales might be emphasized).
 -   **[About pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)**  
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.
+
+### Charts with multiple measures on the y-axis
+
+You can have multiple measures on the y-axis of many charts, which is a great additional way of presenting information in a chart.
+
+![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis.png "Stacked column chart example: "Show multiple measures on Y-Axis")
+
+Example of multiple measures on the y-axis of a stacked column chart.
+
+Charts which support multiple measures on the y-axis:
+* Column
+* Stacked Column
+* Bar
+* Stacked Bar
+* Line
+* Area
+* Stacked Area
+* Waterfall
+* Line Column
+* Line Stacked Column
