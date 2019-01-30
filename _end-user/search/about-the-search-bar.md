@@ -21,6 +21,12 @@ You can edit a search without affecting existing search results.  When you click
 
 If you find yourself looking at a table or chart, but it doesn't seem to contain all the data you expect, try looking in the search bar for white boxes (filters). If you remove all the filters, you will again see all the available data for that search.
 
+## Quick Select search results
+
+When you type search phrases in the search bar, the first suggestion is automatically highlighted and you can use tab to navigate further. In addition, after you type a phrase or a letter and press Enter, the highlighted suggestion is automatically selected. Suggestions can be an attribute, measures, value, keyword, historic query, or exactly what you typed as the search phrase. If there are no suggestions, the suggestion list will not be displayed.
+
+Note that you can press Enter or Tab to select the first suggestion. Historic suggestions always display on top with the first suggestion highlighted as default.
+
 ## Spell check
 
 The search bar includes spell check. If you spell or type a term incorrectly, your suggestions will include the correct spelling of the term or keyword.
