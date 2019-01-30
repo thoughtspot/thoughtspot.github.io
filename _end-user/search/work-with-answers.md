@@ -19,7 +19,7 @@ Only administrators create stickers, but anyone with edit privileges can tag an 
 
 You can apply as many stickers as you like to an object.
 
-## Edit a copy of an answer
+## Copy and edit an answer
 
 You can edit a copy of an answer if you would like to make edits without changing the original answer. When saving, you can type in a different name for your copy.
 
@@ -28,7 +28,7 @@ You can edit a copy of an answer if you would like to make edits without changin
      ![]({{ site.baseurl }}/images/answers_icon.png "Answers")
 
 2. On the answer list page, click the answer you would like to edit a copy of.
-3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
      ![]({{ site.baseurl }}/images/copy_an_answer.png "Make a copy of the answer")
 
@@ -65,7 +65,7 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
 1. Find the SpotIQ insight you want edit and click it to open it as an answer.
 
-2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
+2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
    A copy of the answer is displayed with “Copy of” added to the beginning of the title.
 
