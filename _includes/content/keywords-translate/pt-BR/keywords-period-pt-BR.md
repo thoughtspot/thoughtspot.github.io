@@ -9,7 +9,7 @@
 <table class="tg">
   <tr>
     <th class="tg-31q5">English Keywords</th>
-    <th class="tg-31q5">Português (Brasil)</th>
+    <th class="tg-31q5">Português (Brasil) Keywords</th>
     <th class="tg-31q5">Examples</th>
   </tr>
   <tr>
@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td class="tg-yw4l">week of year (<em>date</em>)</td>
-    <td class="tg-yw4l">semana do trimestre (<em>date</em>)</td>
+    <td class="tg-yw4l">semana do ano (<em>date</em>)</td>
     <td class="tg-yw4l"><code><b>week of year</b> (ship date)</code></td>
   </tr>
   <tr>
