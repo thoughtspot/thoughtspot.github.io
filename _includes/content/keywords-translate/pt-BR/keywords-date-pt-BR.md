@@ -9,7 +9,7 @@
 <table class="tg">
   <tr>
     <th class="tg-j0ga">English Keywords</th>
-    <th class="tg-j0ga">Português (Brasil)</th>
+    <th class="tg-j0ga">Português Keywords</th>
     <th class="tg-j0ga">Examples</th>
   </tr>
   <tr>
@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td class="tg-us36">daily year-over-year</td>
-    <td class="tg-us36">diariamente ano a ano</td>
+    <td class="tg-us36">diariamente ano à ano</td>
     <td class="tg-us36"><code>growth of revenue by order date <b>daily year-over-year</b></code></td>
   </tr>
   <tr>
@@ -174,7 +174,7 @@
   </tr>
   <tr>
     <td class="tg-us36">monthly year-over-year</td>
-    <td class="tg-us36">mensalmente ano a ano</td>
+    <td class="tg-us36">mensalmente ano à ano</td>
     <td class="tg-us36"><code>growth of revenue by receipt date <b>monthly year-over-year</b></code></td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@
   </tr>
   <tr>
     <td class="tg-us36">quarterly year-over-year</td>
-    <td class="tg-us36">trimestralmente ano a ano</td>
+    <td class="tg-us36">trimestralmente ano à ano</td>
     <td class="tg-us36"><code>growth of revenue by date shipped <b>quarterly year-over-year</b></code></td>
   </tr>
   <tr>
@@ -309,7 +309,7 @@
   </tr>
   <tr>
     <td class="tg-us36">weekly year-over-year</td>
-    <td class="tg-us36">semanalmente ano a ano</td>
+    <td class="tg-us36">semanalmente ano à ano</td>
     <td class="tg-us36"><code>growth of revenue by date shipped <b>weekly year-over-year</b></code></td>
   </tr>
   <tr>

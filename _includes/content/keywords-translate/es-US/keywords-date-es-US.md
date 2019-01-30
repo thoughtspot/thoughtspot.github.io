@@ -9,7 +9,7 @@
 <table class="tg">
   <tr>
     <th class="tg-j0ga">English Keywords</th>
-    <th class="tg-j0ga">Español (latín) Keywords</th>
+    <th class="tg-j0ga">Español Keywords</th>
     <th class="tg-j0ga">Examples</th>
   </tr>
   <tr>
@@ -104,7 +104,7 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> hours for each day</td>
-    <td class="tg-dc35"><em>n</em> horas para cada día tag</td>
+    <td class="tg-dc35"><em>n</em> horas para cada día</td>
     <td class="tg-dc35"><code>sales last <b>2 hours for each day</b></code></td>
   </tr>
   <tr>
