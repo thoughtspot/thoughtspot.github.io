@@ -69,6 +69,6 @@ You can integrate tsload into your ETL environment for more automated data loads
     Total load time = 1.13 seconds = 0.02 minutes = 0.00 hours
     Data size = 50 bytes = 0.06 KB = 0.00 MB
     ```
-5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were ommitted, review your CSV file, make the required adjustments, and then load it again.
+5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were omitted, review your CSV file, make the required adjustments, and then load it again.
 
 6. Once your file has been loaded properly, repeat this process to load data from any additional CSV files.
