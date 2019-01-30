@@ -54,22 +54,22 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> days for each month</td>
-    <td class="tg-dc35"><em>n</em> n dage for hver måned</td>
+    <td class="tg-dc35"><em>n</em> dage for hver måned</td>
     <td class="tg-dc35"><code>sales last <b>2 days for each month</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> days for each quarter</td>
-    <td class="tg-us36"><em>n</em> n dage for hver kvartal</td>
+    <td class="tg-us36"><em>n</em> dage for hver kvartal</td>
     <td class="tg-us36"><code>revenue last <b>15 days for each quarter</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> days for each week</td>
-    <td class="tg-dc35"><em>n</em> n dage for hver uge</td>
+    <td class="tg-dc35"><em>n</em> dage for hver uge</td>
     <td class="tg-dc35"><code>total sold last <b>2 days for each week</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> days for each year</td>
-    <td class="tg-us36"><em>n</em> n dage for hver år</td>
+    <td class="tg-us36"><em>n</em> dage for hver år</td>
     <td class="tg-us36"><code>revenue last <b>300 days for each year</b></code></td>
   </tr>
   <tr>
