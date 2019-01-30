@@ -24,7 +24,6 @@ If you find yourself looking at a table or chart, but it doesn't seem to contain
 ## Quick select search results
 
 When you type search phrases in the search bar, the first suggestion is automatically highlighted and you can use tab to navigate further. In addition, after you type a phrase or a letter and press **Enter**, the highlighted suggestion is automatically selected. Suggestions can be an attribute, measures, value, keyword, historic query, or exactly what you typed as the search phrase. You can also press **Enter** or **Tab** to select the first suggestion. If there are no suggestions, the suggestion list will not be displayed.
-
 Historic suggestions always display on top with the first suggestion highlighted as default.
 
 ## Spell check
