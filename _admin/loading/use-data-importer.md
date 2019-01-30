@@ -19,22 +19,56 @@ You can integrate tsload into your ETL environment for more automated data loads
 
 1.  Log in to the Linux shell using SSH.
 2.  Change to the directory where your CSV files are staged.
-3.  Invoke `tsload`, specifying the appropriate flags and your data source file:
+3.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
     ```
-    $ tsload --target_database my_database
-           --target_table my_table --alsologtostderr
-           --empty_target --source_file my_file.csv --v 1
-           --field_separator "separator_char"
+    $ tsload --target_database=my_database
+           --target_table=my_table --alsologtostderr
+           --empty_target --source_file=my_file.csv --v 1
+           --field_separator="separator_char"
     ```
-
-4. Repeat the data load for each of your CSV files.
-
     This example imports the CSV file `ssbm_customer.csv` into the table CUSTOMER:
 
     ```
-    $ tsload --target_database SAMPLE_DB
-           --target_table CUSTOMER --alsologtostderr
-           --empty_target --source_file ssbm_customer.csv
+    $ tsload --target_database=SAMPLE_DB
+           --target_table=CUSTOMER --alsologtostderr
+           --empty_target --source_file=ssbm_customer.csv
            --v 1 --field_separator "|"
     ```
+4. Once the processing begins, you'll see messages to indicate the progress and then two summary messages after the load is complete.
+
+    ```
+    Started processing data row
+    Source has 32 data rows, ignored row count 0
+    Waiting for rows to commit...(please wait)
+
+    Source summary
+    --------------
+    Data source:                     ssbm_customer.csv
+    Source data format:              csv
+    Header row?:                     no
+    Tokenizer Options:               escape_char: "" field_separator: "|" enclosing_char: "\""
+    Date format:                     %Y%m%d
+    Date time format:                %Y%m%d %H:%M:%S
+    Flexible mode?:                  no
+
+    Load summary
+    ------------
+    Target table:                    CUSTOMER
+    Should empty target?:            yes
+    Status:                          Successful
+    Rows total:                      32
+    Rows successfully loaded:        30
+    Rows failed to load:             0
+    Rows duplicate/omitted:          2
+    % of Rows successfully loaded:   93.75 %
+    Load Rate (MB/s):                0.00 MB/s
+    Load Rate (Rows/s):              3.53 Rows/s
+    Start time (Wallclock):          Tue Jan 29 09:09:07
+    End time (Wallclock):            Tue Jan 29 09:09:08
+    Total load time = 1.13 seconds = 0.02 minutes = 0.00 hours
+    Data size = 50 bytes = 0.06 KB = 0.00 MB
+    ```
+5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were ommitted, review your CSV file, make the required adjustments, and then load it again.
+
+6. Once your file has been loaded properly, repeat this process to load data from any additional CSV files.
