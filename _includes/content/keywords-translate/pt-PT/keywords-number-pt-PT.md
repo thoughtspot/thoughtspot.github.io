@@ -9,7 +9,7 @@
 <table class="tg">
   <tr>
     <th class="tg-31q5">English Keywords</th>
-    <th class="tg-31q5">Português (Portugal) Keywords</th>
+    <th class="tg-31q5">Português Keywords</th>
     <th class="tg-31q5">Examples</th>
   </tr>
   <tr>

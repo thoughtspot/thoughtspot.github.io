@@ -1,5 +1,5 @@
 ---
-title: [Português Keyword reference]
+title: [Português (Portugal) Keyword reference]
 tags: [keywords]
 keywords: tbd
 last_updated: tbd
