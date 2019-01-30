@@ -69,7 +69,7 @@
   </tr>
   <tr>
     <td class="tg-yw4l">hour (<em>datetime</em>)</td>
-    <td class="tg-yw4l">hora (datetime)</td>
+    <td class="tg-yw4l">hora (<em>datetime</em>)</td>
     <td class="tg-yw4l"><code><b>hour</b> (timestamp)</code></td>
   </tr>
 </table>

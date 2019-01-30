@@ -31,7 +31,7 @@ Currently, we offer the following keyword translations.
     <td><a href="{{ site.baseurl }}/reference/keywords-fr-CA.html">Français (Canada)</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-fr-FR.html">Français (France)</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-pt-BR.html">Português (Brasil)</a></td>
-    <td><a href="{{ site.baseurl }}/reference/keywords-pt-PT.html">Português (República Portuguesa)</a></td>
+    <td><a href="{{ site.baseurl }}/reference/keywords-pt-PT.html">Português (Portugal)</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-it-IT.html">Italiano</a></td>
   </tr>
   <tr>

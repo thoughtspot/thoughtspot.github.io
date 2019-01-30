@@ -9,47 +9,47 @@
 <table class="tg">
   <tr>
     <th class="tg-j0ga">English Keywords</th>
-    <th class="tg-j0ga">Deutsche Keywords</th>
+    <th class="tg-j0ga">Italiano Keywords</th>
     <th class="tg-j0ga">Examples</th>
   </tr>
   <tr>
     <td class="tg-dc35">detailed</td>
-    <td class="tg-dc35">detailliert</td>
+    <td class="tg-dc35">dettagliato</td>
     <td class="tg-dc35"><code>ship time <b>detailed</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">last minute</td>
-    <td class="tg-us36">letzte minute</td>
+    <td class="tg-us36">ultimo minuto</td>
     <td class="tg-us36"><code>count homepage views <b>last minute</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last hour</td>
-    <td class="tg-dc35">letzte stunde</td>
+    <td class="tg-dc35">ultimo ora</td>
     <td class="tg-dc35"><code>count unique visits <b>last hour</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> minutes</td>
-    <td class="tg-us36"><em>n</em> minuten</td>
+    <td class="tg-us36"><em>n</em> minuti</td>
     <td class="tg-us36"><code>count visitors last <b>30 minutes</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> hours</td>
-    <td class="tg-dc35"><em>n</em> stunden</td>
+    <td class="tg-dc35"><em>n</em> ore</td>
     <td class="tg-dc35"><code>count visitors last <b>12 hours</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">hourly</td>
-    <td class="tg-us36">stündlich</td>
+    <td class="tg-us36">orario</td>
     <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> minutes ago</td>
-    <td class="tg-dc35"><em>n</em> minuten vor</td>
+    <td class="tg-dc35"><em>n</em> minuti fa</td>
     <td class="tg-dc35"><code>sum inventory by product <b>10 minutes ago</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> hours ago</td>
-    <td class="tg-us36"><em>n</em> stunden vor</td>
+    <td class="tg-us36"><em>n</em> ore fa</td>
     <td class="tg-us36"><code>sum inventory by product by store <b>2 hours ago</b></code></td>
   </tr>
 </table>

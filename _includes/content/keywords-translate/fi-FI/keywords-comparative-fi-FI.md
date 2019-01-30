@@ -9,17 +9,17 @@
 <table class="tg">
   <tr>
     <th class="tg-31q5">English Keywords</th>
-    <th class="tg-31q5">Deutsche Keywords</th>
+    <th class="tg-31q5">Suomi Keywords</th>
     <th class="tg-31q5">Examples</th>
   </tr>
   <tr>
     <td class="tg-b7b8">all</td>
-    <td class="tg-b7b8">alle</td>
+    <td class="tg-b7b8">kaikki</td>
     <td class="tg-b7b8"><code><b>all</b></code></td>
   </tr>
   <tr>
     <td class="tg-yw4l">between... and</td>
-    <td class="tg-yw4l">zwischen … und</td>
+    <td class="tg-yw4l">välillä … ja</td>
     <td class="tg-yw4l"><code>revenue <b>between</b> 0 <b>and</b> 1000</code></td>
   </tr>
   <tr>
