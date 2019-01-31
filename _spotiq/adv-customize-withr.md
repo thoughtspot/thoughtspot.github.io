@@ -80,7 +80,7 @@ column and a zip code column.
 
    ![]({{ site.baseurl }}/images/spotiq-r1.png)
 
-4. Choose **Actions > Custom Analyze**.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Custom Analyze**.
 
    ![]({{ site.baseurl }}/images/spotiq-r2.png)
 
