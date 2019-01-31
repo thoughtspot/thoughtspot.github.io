@@ -19,7 +19,7 @@ To schedule a pinboard:
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 3. Select the pinboard you want to create a schedule for.
-4. Click the three-dot **Actions** button and select **Manage schedules** to view all of the schedules set for the pinboard.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
 
      ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
 

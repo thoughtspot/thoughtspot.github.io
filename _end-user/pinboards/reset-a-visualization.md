@@ -17,6 +17,6 @@ To reset a visualization:
 
      ![]({{ site.baseurl }}/images/reset_a_visualization.png "Click to reset")
 
-2. Save your pinboard by clicking the three-dot **Actions** button and selecting **Save**.
+2. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")

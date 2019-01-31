@@ -76,7 +76,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper-right side of the table, click the three-dot **Actions** icon and select **Add formula**.
+2. In the upper-right side of the table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
 
    ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 

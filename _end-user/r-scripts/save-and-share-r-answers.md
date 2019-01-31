@@ -13,7 +13,7 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Save an R visualization
 
-1.  Click the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing your analysis, and select **Save** from the menu.
+1.  Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing your analysis, and select **Save** from the menu.
 
     ![]({{ site.baseurl }}/images/r-time-forecast-options.png)
 
@@ -27,7 +27,7 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Share an R visualization
 
-1.  Click the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing
+1.  Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing
     your analysis, and select **Share** from the menu.
 
     ![]({{ site.baseurl }}/images/r-viz-share.png)
