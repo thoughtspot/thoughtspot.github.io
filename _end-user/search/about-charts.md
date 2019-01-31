@@ -63,7 +63,7 @@ Sankey charts show a flow from one set of values to another, usually with visual
 -   **[About pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)**  
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.
 
-### Charts with multiple measures on the y-axis
+## Charts with multiple measures on the y-axis
 
 You can have multiple measures on the y-axis of many charts, which is a great additional way of presenting information in a chart.
 
