@@ -59,7 +59,7 @@ privilege. Once you expand an insight on this list, an **Edit** button allows
 you modify the insight and make it your own. Your installation configuration
 determines how many insights can appear in this section. The default is 6.
 
-## Edit a copy of a SpotIQ Insight
+## Copy and edit a SpotIQ Insight
 
 You can edit a copy of a SpotIQ Insight if you would like to make edits without changing the original insight. When saving, you can type in a different name for your copy.
 
