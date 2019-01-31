@@ -82,3 +82,5 @@ Charts which support multiple measures on the y-axis:
 * Waterfall
 * Line Column
 * Line Stacked Column
+
+To learn more, see [Stack multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/show-data-labels.html#stack-multiple-measures-on-the-y-axis).
