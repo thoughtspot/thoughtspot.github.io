@@ -81,7 +81,29 @@ You can specify which fields to show on the X axis and Y axis of a chart.
 
 2. Click into the X or Y axis field and select the column used in the search that you want on a particular axis.
 
-  ![]({{ site.baseurl }}/images/chart_x-y-axis.png "Configure x and y axis")
+   ![]({{ site.baseurl }}/images/chart_x-y-axis.png "Configure x and y axis")
+
+## Stack multiple measures on the y-axis
+
+You can have multiple measures on the y-axis of most (but not all) chart types, as follows:
+
+1. Create a chart.
+2. Click **Edit chart configuration** on the right.
+3. Click into the **Y-Axis** field and start typing the name of a measure used in the search.
+4. Select the measure you want.
+
+    The chart updates to show multiple measures on the Y-Axis.
+
+    ![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis-annotated.png "Stacked column chart example: "Show multiple measures on Y-Axis")
+
+    * If your original chart had a legend, you will get a message saying _"When
+    there are multiple columns on the y-axis, you cannot add a legend.
+    `<Measure>` is already in use."_ If so, remove the legend and the chart will
+    update to show multiple measures on the y-axis.
+
+    * In some cases, the y-axis measures will show one on either side of the chart (left and right) instead of stacked on the same side, depending on the parameters of the analysis.
+
+    * For a list of chart types to which this applies, see [Charts with multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis).
 
 ## Add columns to a chart legend
 
