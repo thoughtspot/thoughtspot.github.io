@@ -58,7 +58,7 @@ To delete a visualization:
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
 
-## Edit a copy of a visualization from your pinboard
+## Copy and edit a visualization from your pinboard
 
 To edit a copy of a visualization:
 
@@ -70,7 +70,7 @@ To edit a copy of a visualization:
 
 3. Find a visualization in the pinboard you want to edit.
 
-4. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit a copy**.
+4. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
    ![]({{ site.baseurl }}/images/make_a_copy_of_a_pinboard_viz.png "Make a copy of the pinboard visualization")
 
