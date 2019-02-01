@@ -104,7 +104,7 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> hours for each day</td>
-    <td class="tg-dc35"><em>n</em> horas para cada día tag</td>
+    <td class="tg-dc35"><em>n</em> horas para cada día</td>
     <td class="tg-dc35"><code>sales last <b>2 hours for each day</b></code></td>
   </tr>
   <tr>
