@@ -20,7 +20,7 @@ the y-axis range:
 2. Under **Y-Axis Range** enter your preferred start and end values.
 
     In this example, our original chart is showing sales values by department
-    from 0 to over $10M. We can enter a y-axis range of `5000000` to `1000000` to
+    from 0 to over $10M. We can enter a y-axis range of `5000000` to `9000000` to
     show only sales between $5M and $10M.
 
     The chart will reorganize itself to reflect the new y-axis range.
