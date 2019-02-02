@@ -43,10 +43,18 @@ a schema they have access to.
 
 Before 5.1, Period to Date didn't work in conjunction with other date filters.
 With this release, you can compare data spread across the same period and drill
-down to a specific period of a year, month, week, and date. For example, you can
-compare Quarter to Date vs Last Year Quarter to Date, Month-to-date vs the Last
-Month-to-date, Year-to-date vs Last Year Month-to-date, Week-to-date vs Last
-Quarter WTD.
+down to a specific period of a year, month, week, and date.
+
+For example, you can compare:
+
+* `quarter to date vs last year quarter to date`
+* `month to date vs last month to date`
+* `year to date vs last year month to date`
+* `week to date vs last quarter week to date`
+
+To review date keywords, see [Date in keywords reference]({{ site.baseurl }}/reference/keywords.html#date).
+
+For more about `vs` keyword, see [Comparative in keywords reference]({{ site.baseurl }}/reference/keywords.html#comparative)
 
 ### Case sensitivity on formulas is supported
 
@@ -93,9 +101,10 @@ suggestions, available by clicking ‘more’ at the bottom of the list, are add
 to the bottom of the list without moving any of the initial suggestions.
 
 When there are four or more instances of a specific match, they are added to a
-folded list ( icon) and the number of additional instances is displayed with a
-plus sign (Example: 4+ matches). When you click the folded list, it expands to
-show all the matches in that folded list.
+folded list (![folded list icon]({{ site.baseurl }}/images/icon-folded-list.png){: .inline})
+and the number of additional instances is displayed with a plus sign (example:
+4+ matches). When you click the folded list, it expands to show all the matches
+in list.
 
 ### Table aggregate headline
 
@@ -159,7 +168,7 @@ Beta mode [internationalization (I18N) keywords support]({{ site.baseurl}}/refer
 {: id="51-fixed"}
 ## 5.1 Fixed Issues
 
-X and Y axis were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
+The X and Y axes were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
