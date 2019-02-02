@@ -14,7 +14,7 @@ resolved issues from the previous releases, and known issues.
 
 * [5.1 New Features](#51-new)
 * [5.1 Fixed bugs](#51-fixed)
-* [Notes for older versions](#RN-for-older-versions)
+* [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
@@ -30,6 +30,7 @@ If you are running one of the following version, you can upgrade to 5.1 release 
 If you are running a different version, you need to do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to 5.1 release.
 
+{: id="51-new"}
 ## New Features and Functionality
 
 ### Schema Viewer available to non-admin users
@@ -51,8 +52,8 @@ Quarter WTD.
 
 You can now enable case sensitivity when defining formulas, and the final
 formula output retains the case sensitive state. Quoted texts in a formula can
-now be case-sensitive. For example, "if revenue > 1000 then 'Good' else 'Bad'".
-The output of this formula retains the case
+now be case-sensitive. For example, "`if revenue > 1000 then 'Good' else 'Bad'`".
+The output of this formula retains the case.
 
 ### Only authenticated users have access
 
@@ -65,8 +66,7 @@ cookie. This has been fixed. Only authenticated users have access.
 
 With the 5.1 release, the fonts used are Optimo Plain and BB Roller Mono. This
 provides a modern, more readable look for the application user interface and
-data visualizations. [?] X and Y axis were previously flipped on Bar and Stacked
-Bar. This has been fixed.
+data visualizations.
 
 ### Presentation mode supported
 
@@ -82,7 +82,7 @@ be easily displayed on projectors in conference rooms and on laptops.
 
 ### Pie charts now support color customization
 
-You can now [customize the colors of each slice on pie charts]({{ site.based}}/end-user/search/change-chart-colors.html#set-pie-chart-slice-colors) from the chart Styles panel (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}).
+You can now [customize the colors of each slice on pie charts]({{ site.based}}/end-user/search/change-chart-colors.html#set-pie-chart-slice-colors) from the chart Styles panel. Click the Styles button next to any pie chart to get started (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}).
 
 ### Improved search suggestions
 
@@ -134,17 +134,18 @@ By default, all columns are included in SpotIQ analyses.
 
 ### Active Directory (AD) management for ThoughtSpot nodes
 
-ThoughtSpot supports enabling [Active Directory (AD) based access]({{ site.baseurl/admin/setup/active-directory-based-access.html}}) individually on
+ThoughtSpot supports enabling [Active Directory (AD) based access]({{ site.baseurl}}/admin/setup/active-directory-based-access.html) individually on
 each node where the commands are run. To enable AD access on a cluster, the
 administrator must run the same commands on each individual node and on any
 additional nodes added to the cluster.
 
 ### Show rounded or non rounded numbers on charts
 
-You can set labels on charts to [show rounded or non rounded numbers]({{ site.baseurl/end-user/search/show-data-labels.html#show-rounded-or-non-rounded-numbers}}).
+You can set labels on charts to [show rounded or non rounded numbers]({{ site.baseurl}}/end-user/search/show-data-labels.html#show-rounded-or-non-rounded-numbers).
 
-Keyword support for eight new languages / locales (Beta)
-Beta mode keywords support for the following locales (i18n) is available in version 5.1:
+### Keyword support for eight new languages / locales (Beta)
+
+Beta mode [internationalization (I18N) keywords support]({{ site.baseurl}}/reference/keywords.html) for the following additional locales is available in version 5.1:
 
 * Español (España)
 * Português (Portugal)
@@ -155,11 +156,12 @@ Beta mode keywords support for the following locales (i18n) is available in vers
 * Norsk
 * Nederland
 
-
+{: id="51-fixed"}
 ## 5.1 Fixed Issues
 
-N/A
+X and Y axis were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
 
+{: id="notes-for-older-versions"}
 ## Notes from older versions
 
 * [5.0 Release Notes]({{ site.baseurl}}/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
