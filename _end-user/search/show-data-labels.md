@@ -22,7 +22,7 @@ To show detail labels:
 
      ![]({{ site.baseurl }}/images/show_data_labels.png "Toggle on Show Data Labels")
 
-## Show rounded or non rounded numbers
+## Show rounded or non-rounded numbers
 
 You can toggle this option off to show non-rounded numbers. **Rounded Numbers**
 will only be available to toggle on or off if **Detail Labels** is enabled.
@@ -35,9 +35,9 @@ will only be available to toggle on or off if **Detail Labels** is enabled.
 
    ![]({{ site.baseurl }}/images/show_rounded_numbers.png "Show Rounded Numbers")
 
-   When you uncheck **Rounded Numbers**, data labels show precise, non rounded numbers out to the furthest decimal.
+   When you uncheck **Rounded Numbers**, data labels show precise, non-rounded numbers out to the furthest decimal.
 
-    ![]({{ site.baseurl }}/images/show_non_rounded_numbers.png "Show non rounded numbers")
+    ![]({{ site.baseurl }}/images/show_non_rounded_numbers.png "Show non-rounded numbers")
 
 ## Show data markers
 

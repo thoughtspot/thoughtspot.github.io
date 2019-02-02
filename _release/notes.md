@@ -18,11 +18,13 @@ resolved issues from the previous releases, and known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following version, you can upgrade to 5.1 release directly.
+If you are running one of the following versions, you can upgrade to 5.1 release
+directly.
 
 * 4.4.1.x to 5.0
 * 4.5. to 5.0
 * 4.5.1.x to 5.0
+* 4.5.1.x to 5.1
 * 5.0.x to 5.1
 
 (This includes any hotfixes or customer patches on these branches.)
@@ -33,11 +35,61 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="51-new"}
 ## New Features and Functionality
 
-### Schema Viewer available to non-admin users
+### Presentation mode supported
 
-Starting 5.1 release, you can grant non-admin users with Can manage data
-privilege access to Schema Viewer. This enables non-admin users to view data in
-a schema they have access to.
+You can display SpotIQ pinboards and saved answers over projector screen by
+switching to presentation mode. This enables full-screen mode for pinboards to
+be easily displayed on projectors in conference rooms and on laptops.
+
+1. Choose a pinboard that you want to display and click the **present** icon ![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} (top-right).
+
+   Alternatively, you can click the ellipses ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Present**.
+
+2. Use the **Up** and **Down** arrow keys to navigate.
+
+### Improved search suggestions
+
+Search suggestions are now more stable. When you start to type a search term and
+the full matching term appears in the results list, the order in which it
+appears does not change as you finish typing the term. Any additional
+suggestions, available by clicking "more" at the bottom of the list, are added
+to the bottom of the list without moving any of the initial suggestions.
+
+When there are four or more instances of a specific match, they are added to a
+folded list (![folded list icon]({{ site.baseurl }}/images/icon-folded-list.png){: .inline})
+and the number of additional instances is displayed with a plus sign (example:
+4+ matches). When you click the folded list, it expands to show all the matches
+in list.
+
+### Show rounded or non-rounded numbers on charts
+
+You can set labels on charts to [show rounded or non-rounded numbers]({{ site.baseurl}}/end-user/search/show-data-labels.html#show-rounded-or-non-rounded-numbers).
+
+### Pie charts now support color customization
+
+You can now [customize the colors of each slice on pie charts]({{ site.based}}/end-user/search/change-chart-colors.html#set-pie-chart-slice-colors) from the chart Styles panel. Click the Styles button next to any pie chart to get started (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}).
+
+### Longer pinboard descriptions
+
+Table or chart descriptions in a pinboard can now be up to two lines long.
+Descriptions that exceed a second line are truncated with three periods (...) at
+the end. Headline tiles (which don’t have a table or chart) are limited to a
+one-line description.
+
+### New typography in the desktop app
+
+With the 5.1 release, the fonts used are Optimo Plain and BB Roller Mono. This
+provides a modern, more readable look for the ThoughtSpot application user
+interface and data visualizations.
+
+### Table aggregate headline
+
+The Table Aggregate headline option is available when an aggregate function is
+used in a table either through a formula or a search bar query, like the average
+of a measure. It recalculates the function for the entire table. In such cases,
+the Table Aggregate is shown by default below the table, instead of the “Avg”
+option, which does a second level of aggregation on top of the existing
+aggregation.
 
 ### Period to date
 
@@ -59,74 +111,15 @@ For more about `vs` keyword, see [Comparative in keywords reference]({{ site.bas
 ### Case sensitivity on formulas is supported
 
 You can now enable case sensitivity when defining formulas, and the final
-formula output retains the case sensitive state. Quoted texts in a formula can
+formula output retains the case sensitive state. Quoted text in a formula can
 now be case-sensitive. For example, "`if revenue > 1000 then 'Good' else 'Bad'`".
 The output of this formula retains the case.
-
-### Only authenticated users have access
-
-Prior to 5.1 release, the application used JSESSIONID to track user sessions and
-control access to the application, however not all URL’s are protected from
-unauthenticated access. Certain URL’s are accessible without a valid JSESSIONID
-cookie. This has been fixed. Only authenticated users have access.
-
-### New typography in the desktop app
-
-With the 5.1 release, the fonts used are Optimo Plain and BB Roller Mono. This
-provides a modern, more readable look for the application user interface and
-data visualizations.
-
-### Presentation mode supported
-
-You can display SpotIQ Pinboards, saved answers over projector screen by
-switching to presentation mode. This enables full-screen mode for pinboards to
-be easily displayed on projectors in conference rooms and on laptops.
-
-1. Choose a pinboard that you want to display and click the **present** icon ![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} (top-right).
-
-   Alternatively, you can click the ellipses ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Present**.
-
-2. Use the **Up** and **Down** arrow keys to navigate.
-
-### Pie charts now support color customization
-
-You can now [customize the colors of each slice on pie charts]({{ site.based}}/end-user/search/change-chart-colors.html#set-pie-chart-slice-colors) from the chart Styles panel. Click the Styles button next to any pie chart to get started (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}).
-
-### Improved search suggestions
-
-Search suggestions are now more stable. When you start to type a search term and
-the full matching term appears in the results list, the order in which it
-appears does not change as you finish typing the term. Any additional
-suggestions, available by clicking ‘more’ at the bottom of the list, are added
-to the bottom of the list without moving any of the initial suggestions.
-
-When there are four or more instances of a specific match, they are added to a
-folded list (![folded list icon]({{ site.baseurl }}/images/icon-folded-list.png){: .inline})
-and the number of additional instances is displayed with a plus sign (example:
-4+ matches). When you click the folded list, it expands to show all the matches
-in list.
-
-### Table aggregate headline
-
-The Table Aggregate headline option is available when an aggregate function is
-used in a table either through a formula or a search bar query, like the average
-of a measure. It recalculates the function for the entire table. In such cases,
-the Table Aggregate is shown by default below the table, instead of the “Avg”
-option, which does a second level of aggregation on top of the existing
-aggregation.
-
-### Longer pinboard descriptions
-
-Table or chart descriptions in a pinboard can now be up to two lines long.
-Descriptions that exceed a second line are truncated with three periods (...) at
-the end. Headline tiles (which don’t have a table or chart) are limited to a
-one-line description.
 
 ### SpotIQ personalization
 
 Users can specify "Insight Threshold Settings" as part of their individual
-profile [SpotIQ preferences]({{ site.baseurl}}/end-user/introduction/about-user.html#spotiq-preferences-and-email-notifications) to further refine the parameters SpotIQ uses. SpotIQ
-profile preferences are a subset of those available on the SpotIQ "Customize
+profile [SpotIQ preferences]({{ site.baseurl}}/end-user/introduction/about-user.html#spotiq-preferences-and-email-notifications) to further refine the parameters SpotIQ uses.
+SpotIQ profile preferences are a subset of those available on the SpotIQ "Customize
 analysis dialog", and persist for all SpotIQ analyses, unless you explicitly
 reset options for custom analyze.
 
@@ -138,8 +131,15 @@ from auto or custom SpotIQ analyses.
 ### SpotIQ column level data modeling
 
 Data modelers and administrators can [exclude columns from SpotIQ analyses]({{ site.baseurl }}/admin/data-modeling/spotiq-data-model-preferences.html) via a
-new SPOTIQ PREFERENCE option on the Data tabs for worksheets, tables or views.
+new `SPOTIQ PREFERENCE` option on the Data tabs for worksheets, tables or views.
 By default, all columns are included in SpotIQ analyses.
+
+### Schema Viewer available to non-admin users
+
+Starting in the 5.1 release, you can grant non-admin users with
+[Can manage data]({{ site.baseurl}}/admin/users-groups/about-users-groups.html)
+privilege access to [Schema Viewer]({{ site.baseurl}}/admin/loading/schema-viewer.html).
+This enables non-admin users to view data in a schema they have access to.
 
 ### Active Directory (AD) management for ThoughtSpot nodes
 
@@ -147,10 +147,6 @@ ThoughtSpot supports enabling [Active Directory (AD) based access]({{ site.baseu
 each node where the commands are run. To enable AD access on a cluster, the
 administrator must run the same commands on each individual node and on any
 additional nodes added to the cluster.
-
-### Show rounded or non rounded numbers on charts
-
-You can set labels on charts to [show rounded or non rounded numbers]({{ site.baseurl}}/end-user/search/show-data-labels.html#show-rounded-or-non-rounded-numbers).
 
 ### Keyword support for eight new languages / locales (Beta)
 
