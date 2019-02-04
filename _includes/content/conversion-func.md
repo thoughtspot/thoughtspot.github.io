@@ -36,7 +36,8 @@
       <td><code>to_string</code></td>
       <td>Returns the input as a text string.</td>
       <td><code class="highlighter-rouge">to_string (45 + 1) = '46'</code>
-      <br><code class="highlighter-rouge">to_string (revenue - cost)</code></td>
+      <br><code class="highlighter-rouge">to_string (revenue - cost)</code>
+      <br><code class="highlighter-rouge">to_string (date,'%Y/%m/%d')</code></td>
     </tr>
   </tbody>
 </table>
