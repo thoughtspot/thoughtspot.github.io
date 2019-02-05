@@ -35,11 +35,9 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="51-new"}
 ## New Features and Functionality
 
-### Presentation mode supported
+### Improvements in the presentation mode experience of pinboards
 
-You can display SpotIQ pinboards and saved answers over projector screen by
-switching to presentation mode. This enables full-screen mode for pinboards to
-be easily displayed on projectors in conference rooms and on laptops.
+When you display pinboards charts on projectors in conference rooms and on a laptop that has a widescreen display, the display automatically adjusts itself depending on the size of the display screen. For example, if you are using a widescreen display, pinboard font size increases for a more definitive and high-quality experience.
 
 1. Choose a pinboard that you want to display and click the **present** icon ![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} (top-right).
 
