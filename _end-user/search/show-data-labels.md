@@ -28,14 +28,16 @@ You can toggle this option off to show non-rounded numbers. **Rounded Numbers**
 will only be available to toggle on or off if **Detail Labels** is enabled.
 
 1. While viewing your search or answer as a chart, click **Edit chart styles** on the right.
-2. Verify that **Detail Labels** is enabled.
-3. Click **Rounded Numbers** to toggle on or off.
+
+2. Click **Rounded Numbers** to toggle on or off.
 
    By default, charts with data labels enabled show rounded numbers on chart labels.
 
    ![]({{ site.baseurl }}/images/show_rounded_numbers.png "Show Rounded Numbers")
 
-   When you uncheck **Rounded Numbers**, data labels show precise, non-rounded numbers out to the furthest decimal.
+   When you uncheck **Rounded Numbers**, data labels, X and Y axes, and tooltips
+   show precise, non-rounded numbers out to the furthest decimal or integer,
+   based on the underlying worksheet format.
 
     ![]({{ site.baseurl }}/images/show_non_rounded_numbers.png "Show non-rounded numbers")
 
