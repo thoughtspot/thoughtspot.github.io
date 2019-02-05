@@ -29,7 +29,7 @@ section.
 ## A single page with the full application embedded
 
 The following sample <a href="{{"/downloads/embed.html" | prepend: site.baseurl }}"
-target="_blank"><code>embed.html</code></a> demonstrates how you might full
+target="_blank" class="_"><code>embed.html</code></a> demonstrates how you might full
 embed app the application.
 
 ```
@@ -106,5 +106,3 @@ Here are some additional notes about the full embed feature:
 -   Call `thoughtspot.<customerURL>.com/#/answer` and use that to access the search functionality.
 -   Call `thoughtspot.<customerURL>.com/#/pinboards` and use that to access saved pinboards.
 -   Use SAML for authentication against ThoughtSpot within the iFrame.
-
-Finally, to hide the top navigation or the expandable left panel that shows data sources and fields within the current data source, contact ThoughtSpot Support.
