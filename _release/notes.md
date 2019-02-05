@@ -47,19 +47,11 @@ be easily displayed on projectors in conference rooms and on laptops.
 
 2. Use the **Up** and **Down** arrow keys to navigate.
 
-### Improved search suggestions
+### Stable search suggestions
 
-Search suggestions are now more stable. When you start to type a search term and
-the full matching term appears in the results list, the order in which it
-appears does not change as you finish typing the term. Any additional
-suggestions, available by clicking "more" at the bottom of the list, are added
-to the bottom of the list without moving any of the initial suggestions.
-
-When there are four or more instances of a specific match, they are added to a
-folded list (![folded list icon]({{ site.baseurl }}/images/icon-folded-list.png){: .inline})
-and the number of additional instances is displayed with a plus sign (example:
-4+ matches). When you click the folded list, it expands to show all the matches
-in list.
+Search suggestions are now more stable. When you start to type a search phrase and
+the full matching phrase appears in the results list, the order in which it
+appears does not change as you finish typing it.
 
 ### Show rounded or non-rounded numbers on charts
 
@@ -122,6 +114,14 @@ profile [SpotIQ preferences]({{ site.baseurl}}/end-user/introduction/about-user.
 SpotIQ profile preferences are a subset of those available on the SpotIQ "Customize
 analysis dialog", and persist for all SpotIQ analyses, unless you explicitly
 reset options for custom analyze.
+
+### Improved Search Editing
+
+You can edit a search without affecting existing search results. You can insert a new phrase or edit an existing one in the middle of a search without causing any errors. You can even merge words or phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.
+
+### Copy and edit
+
+The previous feature called "Make a Copy" is now called "Copy and Edit" and it brings a major workflow improvement. Instead of simply saving a copy in the background, "Copy and Edit" allows you to make a copy of an answer, pinboard visualization, insight, SpotIQ pinboard or view and immediately start editing it.
 
 ### SpotIQ insight feedback
 
