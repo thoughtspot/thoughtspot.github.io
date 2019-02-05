@@ -35,7 +35,7 @@ will only be available to toggle on or off if **Detail Labels** is enabled.
 
    ![]({{ site.baseurl }}/images/show_rounded_numbers.png "Show Rounded Numbers")
 
-   When you uncheck **Rounded Numbers**, data labels, x and y axes, and tooltips
+   When you uncheck **Rounded Numbers**, data labels, X and Y axes, and tooltips
    show precise, non-rounded numbers out to the furthest decimal or integer,
    based on the underlying worksheet format.
 
