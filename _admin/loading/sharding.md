@@ -30,6 +30,20 @@ whenever possible. If you have a large dimension table, you might choose to
 shard it along with the fact table it is joined with. Sharding both the fact and
 dimension table is known as _co-sharding_.
 
+### Table sizes and sharding recommendations
+
+|---------------           | ----------------             |
+| Number of rows in table  | 5-10 million                 |
+| Maximum                  | 10 million rows per shard    |   
+| Maximum number of shards | ~ 80% of CPU cores           |   
+
+### Example
+
+|---------------           | ----------------             |
+| Number of rows in table  | 1.1 billion                  |
+| CPUS in cluster          | 256                          |   
+| HASH (128)               | ~50% of total CPUs, 8.6 million rows per shard |   
+
 ## How to shard
 
 Sharding is a type partitioning and is sometimes called _Horizontal
