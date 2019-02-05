@@ -35,6 +35,12 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="51-new"}
 ## New Features and Functionality
 
+### Quick Select
+
+When you type search phrases in the search bar, the first suggestion is automatically highlighted and you can use tab to navigate further. In addition, after you type a phrase or a letter and press Enter, the highlighted suggestion is automatically selected. Suggestions can be an attribute, measures, value, keyword, historical queries, or exactly what you typed as the search phrase. 
+If there are no suggestions, the suggestion list will not be displayed.
+Note that you can press Enter or Tab to select the first suggestion. Historic suggestions always display on top with the first suggestion highlighted as default. 
+
 ### Improvements in the presentation mode experience of pinboards
 
 When you display pinboards charts on projectors in conference rooms and on a laptop that has a widescreen display, the display automatically adjusts itself depending on the size of the display screen. For example, if you are using a widescreen display, pinboard font size increases for a more definitive and high-quality experience.
