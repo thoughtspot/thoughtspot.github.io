@@ -33,16 +33,17 @@ dimension table is known as _co-sharding_.
 ### Table sizes and sharding recommendations
 
 |---------------           | ----------------             |
-| Number of rows in table  | 5-10 million                 |
+| Number of rows per shard | 5-10 million                 |
 | Maximum                  | 10 million rows per shard    |   
 | Maximum number of shards | ~ 80% of CPU cores           |   
 
 ### Example
 
-|---------------           | ----------------             |
-| Number of rows in table  | 1.1 billion                  |
-| CPUS in cluster          | 256                          |   
-| HASH (128)               | ~50% of total CPUs, 8.6 million rows per shard |   
+|---------------           | ----------------               |
+| Number of rows in table  | 1.1 billion                    |
+| CPUS in cluster          | 256                            |   
+| HASH (128)               |* ~50% of total CPUs            |
+|                          |* 8.6 million rows per shard    |
 
 ## How to shard
 
