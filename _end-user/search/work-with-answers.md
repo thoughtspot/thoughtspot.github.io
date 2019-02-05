@@ -67,6 +67,8 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
 2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
+    ![]({{ site.baseurl }}/images/copy_an_edit_spiq.png "Insights")
+
    A copy of the answer is displayed with “Copy of” added to the beginning of the title.
 
 3. Make any changes you want to the answer.
