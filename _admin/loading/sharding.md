@@ -42,8 +42,8 @@ dimension table is known as _co-sharding_.
 |---------------           | ----------------               |
 | Number of rows in table  | 1.1 billion                    |
 | CPUS in cluster          | 256                            |   
-| HASH (128)               |* ~50% of total CPUs            |
-|                          |* 8.6 million rows per shard    |
+| HASH (128)               | ~50% of total CPUs            |
+|                          | 8.6 million rows per shard    |
 
 ## How to shard
 
