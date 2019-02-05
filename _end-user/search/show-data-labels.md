@@ -24,8 +24,7 @@ To show detail labels:
 
 ## Show rounded or non-rounded numbers
 
-You can toggle this option off to show non-rounded numbers. **Rounded Numbers**
-will only be available to toggle on or off if **Detail Labels** is enabled.
+You can toggle this option off to show non-rounded numbers.
 
 1. While viewing your search or answer as a chart, click **Edit chart styles** on the right.
 
