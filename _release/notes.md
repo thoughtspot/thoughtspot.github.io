@@ -35,6 +35,10 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="51-new"}
 ## New Features and Functionality
 
+### Quick Select
+
+When you type a phrase or a letter in the search bar, the first suggestion is automatically highlighted and you can press Enter to select it. Suggestions can be an attribute, measures, value, keyword, historical queries, or exactly what you typed as the search phrase. Historic suggestions always display on top with the first suggestion highlighted as default.  If there are no suggestions, the suggestion list is not be displayed.
+
 ### Improvements in the presentation mode experience of pinboards
 
 When you display pinboards charts on projectors in conference rooms and on a laptop that has a widescreen display, the display automatically adjusts itself depending on the size of the display screen. For example, if you are using a widescreen display, pinboard font size increases for a more definitive and high-quality experience.
@@ -113,7 +117,7 @@ SpotIQ profile preferences are a subset of those available on the SpotIQ "Custom
 analysis dialog", and persist for all SpotIQ analyses, unless you explicitly
 reset options for custom analyze.
 
-### Improved Search Editing
+### Improved search editing
 
 You can edit a search without affecting existing search results. You can insert a new phrase or edit an existing one in the middle of a search without causing any errors. You can even merge words or phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.
 
