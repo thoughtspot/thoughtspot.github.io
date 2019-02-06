@@ -67,79 +67,98 @@
 
 <!--  Site Search -->
 <script>
+  /********* Version 11.x JavaScript for Site Search 360 *********/
 var ss360Config = {
-    /********* General *********/
-    siteId: 'docs.thoughtspot.com',
-    animationSpeed: 250,
-    themeColor: '#ea603e',
+  /********* General *********/
+    siteId: "docs.thoughtspot.com",
     showErrors: false,
-    /********* Search Box *********/
-    searchBoxSelector: '#searchBox',
-    searchBoxStyle: {
-        text: {
-            color: '#6c6c6c',
-            size: '14px',
+    layout: {
+        navigation: {
+            position: "top"
         },
-        background: {
-            color: '#ffffff',
+        mobile: {
+            showUrl: true,
+            showImages: true
         },
-        padding: '6px',
-        icon: {
-            image: 'magnifier',
-        },
-        border: {
-            color: '#98a0b0',
-            radius: '0px',
-        },
-        button: {
-            text: 'Search...',
-            icon: undefined
+        desktop: {
+            showUrl: true,
+            showImages: true
         }
     },
-    placeholder: 'Search...',
-    searchButton: undefined,
     /********* Search Suggestions *********/
-    showSearchSuggestions: false,
-    suggestionsStyle: {
-        text: {
-            color: '#5c5c5c',
-        },
-        background: {
-            color: '#ffffff'
-        },
-        padding: '1px',
-        distanceFromTop: '0px',
-        border: {
-            color: '#ea603e',
-            radius: '0px',
-        },
+    suggestions: {
+        show: false,
+        maxQuerySuggestions: 3,
+        showImages: false,
+        num: 6,
+        minChars: 3,
+        highlight: true
     },
-    showImagesSuggestions: false,
-    numSuggestions: 6,
-    maxQuerySuggestions: 3,
-    minChars: 3,
-    highlight: true,
-    /********* Search Results *********/
-    searchResults: {'contentBlock':'searchresults-only', 'url': 'https://docs.thoughtspot.com/search.html'},
-    searchResultsCaption: 'Found #COUNT# results for your query "#QUERY#"',
-    numResults: 300,
-    navigation: 'top',
-    highlightQueryTerms: true,
-    showImagesResults: true,
-    showResultLink: true,
-    queryCorrectionText: 'Did you mean "#CORRECTION#"?',
-    noResultsText: 'Sorry, we have not found any matches for your query.',
-    otherContentGroupName: 'Search results',
-    ignoreOtherContentGroup: false,
-    moreResultsButton: 'More results',
-    moreResultsPagingSize: 50,
-    groupResults: true,
-    loader: {
-        type: 'circle'
+    style: {
+        themeColor: "#ea603e",
+        suggestions: {
+            text: {
+                color: "#5c5c5c"
+            },
+            background: {
+                color: "#ffffff"
+            },
+            padding: "1px",
+            distanceFromTop: "0px",
+            border: {
+                color: "#ea603e",
+                radius: "0px"
+            }
+        },
+        /********* Search Box *********/
+        searchBox: {
+            text: {
+                color: "#6c6c6c",
+                size: "14px"
+            },
+            background: {
+                color: "#ffffff"
+            },
+            padding: "6px",
+            icon: {
+                image: "magnifier"
+            },
+            border: {
+                color: "#98a0b0",
+                radius: "0px"
+            },
+            button: {
+                text: "Search..."
+            }
+        },
+        loaderType: "circle",
+        animationSpeed: 250
+    },
+    searchBox: {
+        placeholder: "Search...",
+        selector: "#searchBox"
+    },
+    results: {
+        embedConfig: {
+            contentBlock: "searchresults-only",
+            url: "https://docs.thoughtspot.com/search.html"
+        },
+        caption: "Found #COUNT# results for your query \"#QUERY#\"",
+        group: true,
+        num: 300,
+        highlightQueryTerms: true,
+        moreResultsButton: "More results",
+        noResultsText: "Sorry, we have not found any matches for your query.",
+        queryCorrectionText: "Did you mean \"#CORRECTION#\"?",
+        moreResultsPagingSize: 50
+    },
+    contentGroups: {
+        otherName: "Search results",
+        ignoreOther: false
     }
 }
 </script>
-<script src="https://sitesearch360.com/cdn/sitesearch360-v10.min.js"></script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -4316,8 +4335,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      
-      
       <tr>
          <td><a href="/5.1/spotiq/adv-customize-withr.html">Advanced R Customizations</a></td>
          <td> Admins and users with the Has SpotIQ privilege can run an R script using the Custom Analysis feature of SpotIQ. This means you can run an R script from any point in ThoughtSpot where you find the Custom Analysis menu option. The R language is an open source programming language... </td>
@@ -5669,8 +5686,6 @@ $('#toc').on('click', 'a', function() {
           
       
         
-          
-            
           
             
           
