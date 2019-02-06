@@ -171,8 +171,8 @@ The X and Y axes were previously flipped on [bar charts and stacked bar charts](
 {: id="notes-for-older-versions"}
 ## Notes from older versions
 
-* [5.0 Release Notes]({{ site.baseurl}}/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
-* [4.5 Release Notes]({{ site.baseurl}}/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
-* [4.4 Release Notes]({{ site.baseurl}}/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
-* [4.2 Release Notes]({{ site.baseurl}}/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf)
-* [3.5 Release Notes]({{ site.baseurl}}/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf)
+* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
+* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
+* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
+* [4.2 Release Notes](/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf)
+* [3.5 Release Notes](/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf)
