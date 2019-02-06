@@ -63,9 +63,11 @@ determines how many insights can appear in this section. The default is 6.
 
 You can edit a copy of a SpotIQ Insight if you would like to make edits without changing the original insight. When saving, you can type in a different name for your copy.
 
-1. Find the SpotIQ insight you want edit and click it to open it as an answer.
+1. Find the SpotIQ insight you want to edit and click it to open it as an answer.
 
 2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
+
+    ![]({{ site.baseurl }}/images/copy_an_edit_spiq.png "Insights")
 
    A copy of the answer is displayed with “Copy of” added to the beginning of the title.
 
