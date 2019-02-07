@@ -9,7 +9,7 @@
 <table class="tg">
   <tr>
     <th class="tg-j0ga">English Keywords</th>
-    <th class="tg-j0ga">Français (France)</th>
+    <th class="tg-j0ga">Français</th>
     <th class="tg-j0ga">Examples</th>
   </tr>
   <tr>

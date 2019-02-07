@@ -8,7 +8,7 @@
 <table class="tg">
   <tr>
     <th class="tg-31q5">English Keywords</th>
-    <th class="tg-31q5">Français (France)</th>
+    <th class="tg-31q5">Français</th>
     <th class="tg-31q5">Examples</th>
   </tr>
   <tr>
