@@ -12,16 +12,11 @@ examples from within the help center.
 
 ### Keywords in Other Languages
 
-The language the ThoughtSpot UX displays is based on how you set
-[locale preferences in your user profile]({{ site.baseurl }}/end-user/introduction/about-user.html). The locale preferences control the language and data formats (date and number
-formats) by geographic locations.
-
 Currently, we offer the following keyword translations.
 
 <!-- | [日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html) | [Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html) |
 
  | **[日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html)** |   | **[中文 (简体)]({{ site.baseurl }}/reference/keywords-translate/keywords-zh-CN.html)** | **[Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html)** | **[Español (latín)]({{ site.baseurl }}/reference/keywords-es-US.html)** | **[Français (Canada)]({{ site.baseurl }}/reference/keywords-fr-CA.html)** | **[Français (France)]({{ site.baseurl }}/reference/keywords-fr-FR.html)** | **[Português (Brasil)]({{ site.baseurl }}/reference/keywords-pt-BR.html)** | -->
-
 
 <table style="width: 70%; border-spacing: 2px;">
   <tr>
@@ -45,9 +40,10 @@ Currently, we offer the following keyword translations.
     <td><a href="{{ site.baseurl }}/reference/keywords-nb-NO.html">Norsk</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-nl-NL.html">Nederland</a></td>
   </tr>
-
-
 </table>
+
+Also, see the topic on how to set [locale preferences in your user profile]({{ site.baseurl }}/end-user/introduction/about-user.html) to control language, date, and number formats on the ThoughtSpot UI.
+
 
 ## General
 
