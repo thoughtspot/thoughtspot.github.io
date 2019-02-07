@@ -12,6 +12,10 @@ examples from within the help center.
 
 ### Keywords in Other Languages
 
+The language the ThoughtSpot UX displays is based on how you set
+[locale preferences in your user profile]({{ site.baseurl }}/end-user/introduction/about-user.html). The locale preferences control the language and data formats (date and number
+formats) by geographic locations.
+
 Currently, we offer the following keyword translations.
 
 <!-- | [日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html) | [Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html) |
