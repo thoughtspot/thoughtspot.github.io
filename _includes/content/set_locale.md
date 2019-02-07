@@ -5,8 +5,8 @@ ThoughtSpot supports:
 
 | Locale |  Language  
 |---|---|
-| *de-DE* | Dansk (beta)|
-| *da-DK* | Deutsche  |
+| *da-DK* | Dansk (beta)|
+| *de-DE* | Deutsche  |
 | *en-CA* | English (Canada)  |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
