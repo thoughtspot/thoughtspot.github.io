@@ -21,9 +21,6 @@ resolved issues from the previous releases, and known issues.
 If you are running one of the following versions, you can upgrade to 5.1 release
 directly.
 
-* 4.4.1.x to 5.0
-* 4.5. to 5.0
-* 4.5.1.x to 5.0
 * 4.5.1.x to 5.1
 * 5.0.x to 5.1
 
@@ -32,16 +29,25 @@ directly.
 If you are running a different version, you need to do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to 5.1 release.
 
+
 {: id="51-new"}
 ## New Features and Functionality
 
 ### Quick Select
 
-When you type a phrase or a letter in the search bar, the first suggestion is automatically highlighted and you can press Enter to select it. Suggestions can be an attribute, measures, value, keyword, historical queries, or exactly what you typed as the search phrase. Historic suggestions always display on top with the first suggestion highlighted as default.  If there are no suggestions, the suggestion list is not be displayed.
+When you type a phrase or a letter in the search bar, the first suggestion is
+automatically highlighted and you can press Enter to select it ([Quick Select]({{ site.baseurl }}/end-user/search/about-the-search-bar.html)). Suggestions can be an attribute, measures, value, keyword, historical queries,
+or exactly what you typed as the search phrase. Historic suggestions always
+display on top with the first suggestion highlighted as default.  If there are
+no suggestions, the suggestion list is not be displayed. 
 
 ### Improvements in the presentation mode experience of pinboards
 
-When you display pinboards charts on projectors in conference rooms and on a laptop that has a widescreen display, the display automatically adjusts itself depending on the size of the display screen. For example, if you are using a widescreen display, pinboard font size increases for a more definitive and high-quality experience.
+When you display pinboards charts on projectors in conference rooms and on a
+laptop that has a widescreen display, the display automatically adjusts itself
+depending on the size of the display screen. For example, if you are using a
+widescreen display, pinboard font size increases for a more definitive and
+high-quality experience.
 
 1. Choose a pinboard that you want to display and click the **present** icon ![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} (top-right).
 
