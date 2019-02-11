@@ -18,7 +18,7 @@ resolved issues from the previous releases, and known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to 5.1 release
+If you are running one of the following versions, you can upgrade to the 5.1 release
 directly.
 
 * 4.5.1.x to 5.1
@@ -39,7 +39,7 @@ When you type a phrase or a letter in the search bar, the first suggestion is
 automatically highlighted and you can press Enter to select it ([Quick Select]({{ site.baseurl }}/end-user/search/about-the-search-bar.html)). Suggestions can be an attribute, measures, value, keyword, historical queries,
 or exactly what you typed as the search phrase. Historic suggestions always
 display on top with the first suggestion highlighted as default.  If there are
-no suggestions, the suggestion list is not be displayed. 
+no suggestions, the suggestion list is not be displayed.
 
 ### Improvements in the presentation mode experience of pinboards
 
