@@ -14,7 +14,7 @@ These are the different sections in ThoughtSpot:
 ## Home
 
 Click the ThoughtSpot logo to go to the application home page. At the top of the
-home page is a search bar and below that several areas that show activity in your ThoughtSpot instance.
+home page is a search bar and below that several areas that show activity in ThoughtSpot.
 
 <table>
 <colgroup>
