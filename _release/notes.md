@@ -35,9 +35,11 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
-### Search phrase menu now shows top 5 matches
+### SearchIQ phrase drop-down menu now shows top 5 matches
 
-Drop-down menu in refinement panel of a search phrase is now limited to top 5 matches, to keep the list from becoming too long to easily display in the browser. A separation line has been added between the matches and Ignore and Teach.
+The drop-down menu of a search phrase in SearchIQ now displays the top 5 matches.'More' appears at the bottom, which you can click to display additional matches after that. This keeps the list from becoming so long that Ignore and Teach are pushed to the bottom of the screen. A line has been added to separate the matches from 'Ignore' and 'Teach'.
+
+![]({{ site.baseurl }}/images/searchiq_phrase_menu.png "Phrase menu")
 
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
