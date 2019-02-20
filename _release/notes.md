@@ -42,7 +42,7 @@ Drop-down menu in refinement panel of a search phrase is now limited to top 5 ma
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
 
-Console error that appeared from any click in the Microsoft Internet Explorer or Edge browsers is now fixed.
+Console error that occurred from any click in the Microsoft Internet Explorer or Edge browsers when ThoughtSpot was embedded in a desktop application is now fixed.
 
 Deprecated SSH cryptographic settings used in previous releases are no longer used. This ensures that a man-in-the-middle attacker cannot exploit vulnerabilities in those settings to record communication to decrypt the session key or  messages.
 
