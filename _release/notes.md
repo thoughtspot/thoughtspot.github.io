@@ -9,9 +9,11 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.1.1 is now available. These release notes include information about new features,
 resolved issues from the previous releases, and known issues.
 
+* [5.1.1 New Features](#511-new)
+* [5.1.1 Fixed bugs](#511-fixed)
 * [5.1 New Features](#51-new)
 * [5.1 Fixed bugs](#51-fixed)
 * [Notes for older versions](#notes-for-older-versions)
@@ -19,19 +21,41 @@ resolved issues from the previous releases, and known issues.
 ## Supported Upgrade Paths
 
 If you are running one of the following versions, you can upgrade to the 5.1 release
-directly.
+directly:
 
-* 4.5.1.x to 5.1
-* 5.0.x to 5.1
+* 4.5.1.x to 5.1.1
+* 5.0.x to 5.1.1
+* 5.1 to 5.1.1
 
 (This includes any hotfixes or customer patches on these branches.)
 
-If you are running a different version, you need to do a multiple pass upgrade.
+If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to 5.1 release.
 
+{: id="511-new"}
+## 5.1.1 New Features and Functionality
+
+### Search phrase menu now shows top 5 matches
+
+Drop-down menu in refinement panel of search phrase now restricted to top 5 matches. Separation line between top 5 matches and Ignore and Teach.
+
+{: id="511-fixed"}
+## 5.1.1 Fixed Issues
+
+Console error that appeared from any click on Internet Explorer or Edge Browser is now Fixed.
+
+Deprecated SSH cryptographic settings used in previous releases are no longer used.
+
+Geobubble map that always displayed labels that could not be turned off has now been fixed by adding a checkbox to enable/disable data labels.
+
+Search autocomplete that crashed when using the payment_method column in search has now fixed.
+
+Query joins that don't appear correct when using a formula that involves multiple dimensions that causes a chasm trap query that combines data from similar queries is now fixed.
+
+Problem when attempting to mount drives using tscli mount-* is now fixed.
 
 {: id="51-new"}
-## New Features and Functionality
+## 5.1 New Features and Functionality
 
 ### Quick Select
 
@@ -173,6 +197,7 @@ Beta mode [internationalization (I18N) keywords support]({{ site.baseurl}}/refer
 ## 5.1 Fixed Issues
 
 The X and Y axes were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
+
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
