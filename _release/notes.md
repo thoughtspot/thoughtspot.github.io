@@ -37,7 +37,7 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 
 ### Search phrase menu now shows top 5 matches
 
-Drop-down menu in refinement panel of search phrase now restricted to top 5 matches. Separation line between top 5 matches and Ignore and Teach.
+Drop-down menu in refinement panel of a search phrase is now limited to top 5 matches, to keep the list from becoming too long to easily display in the browser. A separation line has been added between the matches and Ignore and Teach.
 
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
