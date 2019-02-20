@@ -41,6 +41,14 @@ The drop-down menu of a search phrase in SearchIQ now displays the top 5 matches
 
 ![]({{ site.baseurl }}/images/searchiq_phrase_menu.png "Phrase menu")
 
+### Data visualization color refinements
+
+Visualization colors have been refined to match ThoughtSpot's new fresh and modern look. You can still customize colors and reset them to the default color palette later, if needed.
+
+### Pinboard presentation improvements
+
+The pinboard 'Present' mode now has an improved left-hand navigation list. Titles of each slide are larger and show an icon representing the type of visualization that is in the slide. A slide number now appears at the top-right corner of the screen, with clickable navigation arrows that allow you to move forward or backward in the presentation.
+
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
 
