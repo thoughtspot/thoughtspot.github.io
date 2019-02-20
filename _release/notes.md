@@ -42,9 +42,9 @@ Drop-down menu in refinement panel of search phrase now restricted to top 5 matc
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
 
-Console error that appeared from any click on Internet Explorer or Edge Browser is now Fixed.
+Console error that appeared from any click in the Microsoft Internet Explorer or Edge browsers is now fixed.
 
-Deprecated SSH cryptographic settings used in previous releases are no longer used.
+Deprecated SSH cryptographic settings used in previous releases are no longer used. This ensures that a man-in-the-middle attacker cannot exploit vulnerabilities in those settings to record communication to decrypt the session key or  messages.
 
 Geobubble map that always displayed labels that could not be turned off has now been fixed by adding a checkbox to enable/disable data labels.
 
