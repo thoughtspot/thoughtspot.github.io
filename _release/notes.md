@@ -20,7 +20,7 @@ resolved issues from the previous releases, and known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.1 release
+If you are running one of the following versions, you can upgrade to the 5.1.1 release
 directly:
 
 * 4.5.1.x to 5.1.1
@@ -30,7 +30,7 @@ directly:
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to 5.1 release.
+First, upgrade to one of the above versions, and then to 5.1.1 release.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
@@ -60,11 +60,11 @@ A problem with SpotIQ snapshots that allowed the date picker to be used to selec
 
 A problem where cross-origin resource sharing couldn't be enabled is now fixed. Previously, using the following command to whitelist certain domains, did not work: `echo "https?://(tmx-trusted-some-server.com|localhost|.:443)" | tscli --adv config set --key "/config/nginx/corshosts"`
 
-Previously, contextual (right-click) menus in a Pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
+Previously, the contextual (right-click) menu in a Pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
 
-Previously, contextual menus in a Pinboard presentation did not close when pressing the Esc key. This is now fixed.
+Previously, the contextual menu in a Pinboard presentation did not close when pressing the Esc key. This is now fixed.
 
-A problem where the `thoughtspot` user did not source /etc/bashrc upon login is now fixed.
+A problem where the `thoughtspot` user did not source `/etc/bashrc` upon login is now fixed.
 
 The problem of a display name that includes a space causing the master of the cluster management system to go into a crash loop is now fixed. Cluster ID is now used instead of display name, to avoid this problem.
 
@@ -130,11 +130,11 @@ Inconsistencies in style between the windows used to edit the title and descript
 
 A problem using Microsoft Internet Explorer, when saving the name of the answer, where the dialog box and 'Done' button can be hidden behind the table, is now fixed.
 
-A problem where the horizontal legend in pinboard presentation mode, overflows the edge of the screen, is now fixed.
+A problem where the horizontal legend in pinboard presentation mode overflows the edge of the screen, is now fixed.
 
 Previously, admin style and font customizations for tables and charts were not on by default, but should have been. This is now fixed.
 
-Previously, there was a problem that occurred when typing a search phrase. When the full phrase appeared in the suggestion drop-down list, and you clicked on it, the full search phrase appeared, highlighted in red, in the search field. This has now been fixed.
+Previously, there was a problem that occurred when typing a search phrase. When the full phrase appeared in the suggestion drop-down list, and you clicked it, the full search phrase appeared, highlighted in red, in the search field. This has now been fixed.
 
 A problem where GeoBubble or Geo HeatMap charts display briefly and then disappear, when using certain datasets, is now fixed.
 
