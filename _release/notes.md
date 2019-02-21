@@ -35,19 +35,9 @@ First, upgrade to one of the above versions, and then to 5.1 release.
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
-### SearchIQ phrase drop-down menu now shows top 5 matches
-
-The drop-down menu of a search phrase in SearchIQ now displays the top 5 matches.'More' appears at the bottom, which you can click to display additional matches after that. This keeps the list from becoming so long that Ignore and Teach are pushed to the bottom of the screen. A line has been added to separate the matches from 'Ignore' and 'Teach'.
-
-![]({{ site.baseurl }}/images/searchiq_phrase_menu.png "Phrase menu")
-
 ### Data visualization color refinements
 
 Visualization colors have been refined to match ThoughtSpot's new fresh and modern look. You can still customize colors and reset them to the default color palette later, if needed.
-
-### Pinboard presentation improvements
-
-The pinboard 'Present' mode now has an improved left-hand navigation list. Titles of each slide are larger and show an icon representing the type of visualization that is in the slide. A slide number now appears at the top-right corner of the screen, with clickable navigation arrows that allow you to move forward or backward in the presentation.
 
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
@@ -58,11 +48,99 @@ Deprecated SSH cryptographic settings used in previous releases are no longer us
 
 Geobubble map that always displayed labels that could not be turned off has now been fixed by adding a checkbox to enable/disable data labels.
 
-Search autocomplete that crashed when using the payment_method column in search has now fixed.
+Search autocomplete that crashed when using the payment_method column in search is now fixed.
 
 Query joins that don't appear correct when using a formula that involves multiple dimensions that causes a chasm trap query that combines data from similar queries is now fixed.
 
 Problem when attempting to mount drives using tscli mount-* is now fixed.
+
+A problem when running SpotIQ Snapshot R analysis where it would display a blank screen, is now fixed. If the analysis finds no data, the message "No data found" will be displayed.
+
+A problem with SpotIQ snapshots the allowed you to use the date picker to select a date in the future is now fixed. You can no longer select a date in the future.
+
+A problem where cross-origin resource sharing couldn't be enabled is now fixed. Previously, using the following command to whitelist certain domains, did not work: `echo "https?://(tmx-trusted-some-server.com|localhost|.:443)" | tscli --adv config set --key "/config/nginx/corshosts"`
+
+Context menu in a Pinboard presentation that did not close when changing slides using the arrow keys is now fixed.
+
+Context menu in a Pinboard presentation that did not close when pressing the Esc key is now fixed.
+
+A problem where the `thoughtspot` user did not source /etc/bashrc upon login is now fixed.
+
+The problem of a display name that includes a space causing the master of the cluster management system is now fixed. Cluster ID is now used instead of display name, to avoid this problem.
+
+The problem with the Configuration Events list becoming cluttered because of periodic cluster checks is now fixed. Those checks are now filtered out.
+
+A problem with error messages flowing outside the text field on the SpotIQ analyses page is fixed.
+
+A problem where the filter panel fails to open from the left panel in a worksheet formula column is now fixed.   
+
+Misaligned text in search field of source panel of SearchIQ is now fixed.
+
+Custom R analysis failing when run using Custom Analyze is now fixed.
+
+A problem with the close (x) button for search phrases not being aligned properly is now fixed.
+
+A problem with wrong font being used for a chart label is now fixed.
+
+`Error Code: QUERY_GEN_ERROR` error on a saved answer after upgrading a cluster is now fixed.
+
+A problem where there were two different backgrounds on an answer page and causing the left-panel title to look wrong, is now fixed.
+
+An error message in the chart Configure panel that had the x and y axes reversed is now fixed.
+
+A problem where the context (right-click) menu opened in presentation mode remains on screen when user returns to pinboard, is now fixed.
+
+Previously, using the legend in the Configure panel of the Funnel chart caused an error. This has now been fixed by removing the legend from this chart.
+
+Previously, pressing ESC to close the search phrase drop-down menu in an answer opened from a pinboard caused the answer to close (instead of the drop-down menu). This is now fixed.
+
+A problem where the buttons do not display at the bottom of the Edit Group, Add a New Group, and Customize Analysis windows in the Microsoft Internet Explorer browser is now fixed.
+
+The misaligned SearchIQ phrase suggestion drop-down menu is now fixed.
+
+Previously, there was a problem with SearchIQ when so many search phrases were entered into the search field that it wrapped onto a second or third line. This caused it to overflow off the edge of the window, and could also cause the buttons on the bottom to be pushed below the bottom of the window, and made inaccessible. These problems are now fixed.
+
+A problem where the Customize analysis button in a SpotIQ result was misaligned because the result's description line was too long, is now fixed.
+
+Previously, when a search query is so long that it wrapped onto a second line, causing the close (x) button to not appear and the 'More...' link to not work and overlap with SearchIQ toggle. This is now fixed.
+
+A problem with line, scatter and radar charts, where the tooltip (information) for a specific data point appears as soon as the mouse enters the main answer area of the page, even if it is not close to the data point itself, is now fixed. Now all charts only show tooltips when the mouse is close to the data point for which the tooltip is being shown.
+
+A problem where the list of pinboards slides down and back up, when creating or deleting a pinboard, is now fixed.
+
+The problem when editing a visualization from a pinboard, where text at the upper-left corner of the window displays "Editing Visualization Chart 1" or "Editing Visualization Table 1" is now fixed. In addition, the 'Close' link in the upper-right corner of the window is now replaced with '<' to indicate that you will go back to the pinboard when you click it.
+
+The misaligned 'Search Columns' text in the sources search field, when SearchIQ is turned on, is now fixed.
+
+Previously, if you edited an answer or view in a pinboard and then you turned on SearchIQ, you automatically navigated to the results page, losing any edits that you made. This is now fixed.
+
+The incorrect spacing between chart legends, is now fixed.
+
+The misaligned information in the Load Status column on the Data > Data Sources page is now fixed.
+
+The misaligned checkmarks on the Upload your data page have been fixed.
+
+The misaligned author icon for a rule on the Data > Row Security page is now fixed.
+
+Previously, cards in the Recent team activity section on the home page were shorter than other cards. They are now the same height as the other cards.
+
+The alignment problem of the column sort arrows in the Showing underlying data window, opened from either an answer or a worksheet, is now fixed.
+
+The title-switcher drop-down menu below a pinboard title that was too close to the existing title, has been fixed.
+
+Inconsistencies in style between the windows used to edit the title and description of a pinboard compared to an answer have been fixed.
+
+A problem using Microsoft Internet Explorer, when saving the name of the answer, where the dialog box and Done button can be hidden behind the table, is now fixed.
+
+A problem where the horizontal legend in pinboard presentation mode, overflows the edge of the screen, is now fixed.
+
+Previously, admin style and font customizations for tables and charts were not on by default, but should have been. This is now fixed.
+
+Previously, there was a problem that occurred when typing a search phrase. When the full phrase appeared in the suggestion drop-down list, and you clicked on it, the full search phrase appeared in the search field highlighted in red. This has now been fixed.
+
+A problem where GeoBubble or Geo HeatMap charts display briefly and then disappear with certain datasets, is now fixed.
+
+A problem where it is not possible to zoom in or out on geo maps using a the wheel of a mouse, has been fixed.
 
 {: id="51-new"}
 ## 5.1 New Features and Functionality
