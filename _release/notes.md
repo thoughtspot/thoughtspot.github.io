@@ -37,7 +37,7 @@ First, upgrade to one of the above versions, and then to 5.1.1 release.
 
 ### Data visualization color refinements
 
-Visualization colors have been refined to match ThoughtSpot's new fresh and modern look. You can still customize colors and reset them to the default color palette later, if needed.
+Visualization colors have been refined to match ThoughtSpot's fresh, new look. You can still customize colors, and reset them to the default color palette later, if needed.
 
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
@@ -60,9 +60,9 @@ A problem with SpotIQ snapshots that allowed the date picker to be used to selec
 
 A problem where cross-origin resource sharing couldn't be enabled is now fixed.
 
-Previously, the contextual (right-click) menu in a Pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
+Previously, the contextual (right-click) menu in a pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
 
-Previously, the contextual menu in a Pinboard presentation did not close when pressing the Esc key. This is now fixed.
+Previously, the contextual menu in a pinboard presentation did not close when pressing the Esc key. This is now fixed.
 
 A problem where the `thoughtspot` user did not source `/etc/bashrc` upon login is now fixed.
 
@@ -130,15 +130,15 @@ Inconsistencies in style between the windows used to edit the title and descript
 
 A problem using Microsoft Internet Explorer, when saving the name of the answer, where the dialog box and 'Done' button can be hidden behind the table, is now fixed.
 
-A problem where the horizontal legend in pinboard presentation mode overflows the edge of the screen, is now fixed.
+A problem with the horizontal legend in pinboard presentation mode overflowing the edge of the screen, is now fixed.
 
 Previously, admin style and font customizations for tables and charts were not on by default, but should have been. This is now fixed.
 
-Previously, there was a problem that occurred when typing a search phrase. When the full phrase appeared in the suggestion drop-down list, and you clicked it, the full search phrase appeared, highlighted in red, in the search field. This has now been fixed.
+Previously, there was a problem that occurred when typing a search phrase. When the full phrase appeared in the suggestion drop-down list, and you clicked it, the full search phrase appeared in the search field, highlighted in red. This has now been fixed.
 
-A problem where GeoBubble or Geo HeatMap charts display briefly and then disappear, when using certain datasets, is now fixed.
+A problem where GeoBubble or Geo Heatmap charts display briefly and then disappear, when using certain datasets, is now fixed.
 
-A problem where it is not possible to zoom in or out on geo maps using the scroll wheel of a mouse, has been fixed.
+A problem where it is not possible to zoom in or out on Geo maps using the scroll wheel of a mouse has been fixed.
 
 {: id="51-new"}
 ## 5.1 New Features and Functionality
