@@ -2,7 +2,7 @@
 title: ["5.1 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: Jan 2019
+last_updated: Feb 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -48,7 +48,7 @@ Deprecated SSH cryptographic settings used in previous releases are no longer us
 
 Geobubble map that always displayed labels that could not be turned off has now been fixed by adding a checkbox to enable/disable data labels.
 
-Search autocomplete that crashed when using the payment_method column in search is now fixed.
+Search autocomplete previously caused an error. This has been fixed.
 
 There was a problem where query joins don't appear correct when using a formula that involves multiple dimensions. In that scenario, a chasm trap query is created that combines data from similar queries. This problem is now fixed.
 
@@ -58,7 +58,7 @@ A problem when running SpotIQ Snapshot R analysis where it would display a blank
 
 A problem with SpotIQ snapshots that allowed the date picker to be used to select a date in the future is now fixed.
 
-A problem where cross-origin resource sharing couldn't be enabled is now fixed. Previously, using the following command to whitelist certain domains, did not work: `echo "https?://(tmx-trusted-some-server.com|localhost|.:443)" | tscli --adv config set --key "/config/nginx/corshosts"`
+A problem where cross-origin resource sharing couldn't be enabled is now fixed.
 
 Previously, the contextual (right-click) menu in a Pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
 
@@ -66,7 +66,7 @@ Previously, the contextual menu in a Pinboard presentation did not close when pr
 
 A problem where the `thoughtspot` user did not source `/etc/bashrc` upon login is now fixed.
 
-The problem of a display name that includes a space causing the master of the cluster management system to go into a crash loop is now fixed. Cluster ID is now used instead of display name, to avoid this problem.
+A problem with the handling of display names that include a space is now fixed. Cluster ID is now used instead of display name, to avoid this problem.
 
 The problem with the Configuration Events list becoming cluttered because of periodic cluster checks is now fixed. Those checks are now filtered out.
 
@@ -96,7 +96,7 @@ A problem using the Microsoft Internet Explorer browser, where the buttons do no
 
 The misaligned SearchIQ phrase suggestion drop-down menu is now fixed.
 
-Previously, there was a problem with SearchIQ when so many search phrases were entered into the search field that it wrapped onto a second or third line. This caused it to the phrases to run off the edge of the window, and could also cause the buttons on the bottom to be pushed below the bottom of the window, and made inaccessible. These problems are now fixed.
+Previously, there was a problem with SearchIQ when so many search phrases were entered into the search field that it wrapped onto a second or third line. This caused the phrases to run off the edge of the window, and could also cause the buttons on the bottom to be pushed below the bottom of the window, and made inaccessible. These problems are now fixed.
 
 A problem where the Customize analysis button in a SpotIQ result was misaligned, because the result's description line was too long, is now fixed.
 
