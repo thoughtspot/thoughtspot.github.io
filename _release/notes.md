@@ -48,7 +48,7 @@ Deprecated SSH cryptographic settings used in previous releases are no longer us
 
 Geobubble map that always displayed labels that could not be turned off has now been fixed by adding a checkbox to enable/disable data labels.
 
-Search autocomplete that crashed when using the payment_method column in search is now fixed.
+Search autocomplete previously caused an error. This has been fixed.
 
 There was a problem where query joins don't appear correct when using a formula that involves multiple dimensions. In that scenario, a chasm trap query is created that combines data from similar queries. This problem is now fixed.
 
@@ -58,7 +58,7 @@ A problem when running SpotIQ Snapshot R analysis where it would display a blank
 
 A problem with SpotIQ snapshots that allowed the date picker to be used to select a date in the future is now fixed.
 
-A problem where cross-origin resource sharing couldn't be enabled is now fixed. Previously, using the following command to whitelist certain domains, did not work: `echo "https?://(tmx-trusted-some-server.com|localhost|.:443)" | tscli --adv config set --key "/config/nginx/corshosts"`
+A problem where cross-origin resource sharing couldn't be enabled is now fixed.
 
 Previously, the contextual (right-click) menu in a Pinboard presentation did not close when changing slides using the arrow keys. This is now fixed.
 
