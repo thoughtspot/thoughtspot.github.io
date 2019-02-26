@@ -42,7 +42,7 @@ Visualization colors have been refined to match ThoughtSpot's fresh, new look. Y
 {: id="511-fixed"}
 ## 5.1.1 Fixed Issues
 
-Geo Bubble map labels can now be disabled or enabled through data labels checkbox.
+Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
 
 Filter panel failure to open during formula creation has been fixed.
 
