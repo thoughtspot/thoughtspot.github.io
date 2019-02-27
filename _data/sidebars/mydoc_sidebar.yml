@@ -1125,7 +1125,7 @@ entries:
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs
-        - title: Set up VMWware for ThoughtSpot
+        - title: Set up VMware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs
     - title: Network ports
