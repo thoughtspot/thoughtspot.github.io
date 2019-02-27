@@ -30,7 +30,7 @@ directly:
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to 5.1.1 release.
+First, upgrade to one of the above versions, and then to the 5.1.1 release.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
