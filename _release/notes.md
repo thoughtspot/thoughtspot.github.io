@@ -13,9 +13,9 @@ ThoughtSpot version 5.1.1 is now available. These release notes include informat
 resolved issues from the previous releases, and known issues.
 
 * [5.1.1 New Features](#511-new)
-* [5.1.1 Fixed bugs](#511-fixed)
+* [5.1.1 Fixed Issues](#511-fixed)
 * [5.1 New Features](#51-new)
-* [5.1 Fixed bugs](#51-fixed)
+* [5.1 Fixed Issues](#51-fixed)
 * [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
