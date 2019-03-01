@@ -31,11 +31,11 @@ To re-brand the interface:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. In the **Admin** panel, click on **Style Customization**.
+3. In the **Admin** panel, click **Style Customization**.
 
      ![]({{ site.baseurl }}/images/style_customization.png "Style Customization menu")
 

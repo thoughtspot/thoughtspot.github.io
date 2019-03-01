@@ -18,7 +18,7 @@ To modify the join types within a worksheet:
 
 1. To find your worksheet, click **Data** in the top menu, and choose **Worksheets**.
 
-2. Click on the name of your worksheet.
+2. Click the name of your worksheet.
 
 3. Click **Schema**. You will see the list showing existing joins within the worksheet. The joins shown here include all the joins between the underlying tables, whether [created using TQL]({{ site.baseurl }}/admin/loading/constraints.html) or [in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
 

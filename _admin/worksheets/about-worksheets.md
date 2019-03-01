@@ -52,7 +52,7 @@ Create a worksheet to make the data easy for users to search. This process inclu
 
 To create a new worksheet:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click **Data**, on the top navigation bar.
 
 2. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
 
@@ -65,7 +65,7 @@ After creating a worksheet, you need to add the sources that contain the data. S
 
 To add the sources to the worksheet:
 
-1.  Click on the **+ icon**.
+1.  Click the **+ icon**.
 
     ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
@@ -85,11 +85,11 @@ To add the sources to the worksheet:
 
 7. Expand the table names under **Columns** to select the columns to add to the worksheet.
 
-    1. To add all of the columns from a table, click on the table name and click **+ Add Columns**.
+    1. To add all of the columns from a table, click the table name and click **+ Add Columns**.
 
-    2. To add a single column, double click on its name.
+    2. To add a single column, double click its name.
 
-    3. To add multiple columns, Ctl+click on each column you want to add and click **+ Add Columns**.
+    3. To add multiple columns, Ctl+click each column you want to add and click **+ Add Columns**.
 
     Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
@@ -97,9 +97,9 @@ To add the sources to the worksheet:
 
 9.  Optionally [create formulas](create-formula.html#).
 
-10.  Optionally [create worksheet filters](create-ws-filter.html#).8. Click on the worksheet title to name it, and then **Save** it.
+10.  Optionally [create worksheet filters](create-ws-filter.html#).8. Click the worksheet title to name it, and then **Save** it.
 
-11. Click on each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+11. Click each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
 
 12.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
 

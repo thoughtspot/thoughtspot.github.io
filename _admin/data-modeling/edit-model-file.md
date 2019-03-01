@@ -49,11 +49,11 @@ you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click on the **admin** tab in the top navigation bar.
+2. Click the **admin** tab in the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Data Management**.
+3. Click **Data Management**.
 4. Click **Download model.xls**.
 
     ![]({{ site.baseurl }}/images/download_model.png)
@@ -96,11 +96,11 @@ After you have made changes to the modeling file, you must upload it back to
 ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Data Management**.
+3. Click **Data Management**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 
     ![]({{ site.baseurl }}/images/upload_model.png)

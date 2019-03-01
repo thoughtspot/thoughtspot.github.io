@@ -34,7 +34,7 @@ To specify entity categories:
 
 1. Click **Data** in the top menu, and choose **Tables** or **Worksheets**.
 
-2. Click on the name of your table or worksheet.
+2. Click the name of your table or worksheet.
 
 3. On the **Columns** tab, find the COLUMN NAMES for which you want to specify entity categories, and scroll to the right to find `ENTITY CATEGORY`.
 

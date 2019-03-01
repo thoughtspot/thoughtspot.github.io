@@ -46,4 +46,4 @@ If you type an unrecognized search term, you will be offered tips on searching. 
 
 ## Related searches
 
-At the end of the **Search** page is the system provides searches you might find useful. These are quick searches you can load into the search bar by simply click on the provided link.
+At the end of the **Search** page is the system provides searches you might find useful. These are quick searches you can load into the search bar by simply click the provided link.

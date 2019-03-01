@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 You can filter a chart in two ways:
 
-1.  Click on the legend labels to toggle the values on or off.
+1.  Click the legend labels to toggle the values on or off.
 2.  Follow the steps shown here to filter on the axis values.
 
 To add a filter from the chart axes:

@@ -19,7 +19,7 @@ To specify columns to exclude from SpotIQ analyses:
 
 1. Click **Data** in the top menu, and choose **Tables**,  **Worksheets**, or **[Views]({{site.baseurl}}/complex-search/about-query-on-query.html)**.
 
-2. Click on the name of your data source.
+2. Click the name of your data source.
 
 3. On the **Columns** tab, find the COLUMN NAMES you want to exclude from SpotIQ analyses, and scroll to the right to find `SPOTIQ PREFERENCE`.
 
@@ -36,7 +36,7 @@ If you have previously set some columns to EXCLUDE and you want to re-set these 
 
 1. Click **Data** in the top menu, and choose **Tables**, **Worksheets**, or **[Views]({{site.baseurl}}/complex-search/about-query-on-query.html)**.
 
-2. Click on the name of your data source.
+2. Click the name of your data source.
 
 3. On the **Columns** tab, find the COLUMN NAMES you want to set back to include in SpotIQ analyses, and scroll to the right to find `SPOTIQ PREFERENCE`.
 

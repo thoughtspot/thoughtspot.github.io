@@ -16,11 +16,11 @@ You can edit manually created users through the interface. If a manually-created
 This procedure shows how to creating a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Any user you create will be added to the group **All** automatically.
 
 1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click on **User Management** and **Users**.
+3.  In the **Admin** panel, click **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 
@@ -94,15 +94,15 @@ As an administrator, you can edit a user and change the groups the user belongs 
 To edit an existing user:
 
 1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click on **User Management** and **Users**.
+3.  In the **Admin** panel, click **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 
-4. Find the user you want to edit in the list and click on its name or the edit icon ![]({{ site.baseurl }}/images/edit_icon.png). If you don't see the name of the user, try searching for it.
+4. Find the user you want to edit in the list and click its name or the edit icon ![]({{ site.baseurl }}/images/edit_icon.png). If you don't see the name of the user, try searching for it.
 
     You can also delete a user from this page by clicking the **Delete** icon.
 

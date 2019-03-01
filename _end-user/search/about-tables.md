@@ -42,7 +42,7 @@ when you pin the table to a pinboard. To resize the column widths:
 ## Sort columns
 
 You can sort a table by column values by clicking on the column title. If you
-hold down the SHIFT key you can click on multiple heads and sort on them in
+hold down the SHIFT key you can click multiple heads and sort on them in
 turn.
 
 {% include tip.html content="This same functionality is available on tables you

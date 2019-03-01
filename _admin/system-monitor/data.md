@@ -11,7 +11,7 @@ time, time taken for auto-indexing, number of rows, and so forth.
 
  ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the **System Health** center: Data")
 
- You can click on a column name to sort by table name. This table information is
+ You can click a column name to sort by table name. This table information is
  based on an underlying system data, you can present it or copy the link, but
  you cannot access the underlying query.
 
@@ -54,9 +54,9 @@ The **Database Status** column can have the following possible values:
 
 ## Replication Status
 
-The **Replicated** column indicates if the table has been replicated or sharded. This can be used in conjunction with the **Total Shards** column to see how your data is distributed. 
+The **Replicated** column indicates if the table has been replicated or sharded. This can be used in conjunction with the **Total Shards** column to see how your data is distributed.
 
-If the table is replicated on a multi node system, the **Used Capacity (MB)** column will indicate the total space used on all nodes. a 10MB table replicated on a 4 node system will show 40MB used capacity for example. 
+If the table is replicated on a multi node system, the **Used Capacity (MB)** column will indicate the total space used on all nodes. a 10MB table replicated on a 4 node system will show 40MB used capacity for example.
 
 ## Search Status
 
