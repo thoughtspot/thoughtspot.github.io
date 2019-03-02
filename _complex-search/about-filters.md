@@ -57,7 +57,7 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the ellipses icon (3 dots)
+When adding a filter from the ellipses icon 
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the column header or by clicking on a chart axis, numeric columns and
 text columns provide you with the ability to include or exclude values, and

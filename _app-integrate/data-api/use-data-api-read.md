@@ -17,7 +17,7 @@ Use this procedure to construct the URL you will use to call the REST API:
 2. Navigate to the pinboard from which you want to get data. If it doesn't exist yet, create it now.
 
 3. Find the ID number of the object you want to get the data from. If the object is:
-    -   A pinboard, click ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} the and select **Copy Link**.
+    -   A pinboard, click ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} the and select **Copy Link**.
 
         ![]({{ site.baseurl }}/images/copy_pinboard_link.png "The Actions menu")
 

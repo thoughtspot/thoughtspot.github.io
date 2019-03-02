@@ -20,7 +20,7 @@ To edit a worksheet:
 
 4. Make your changes to the worksheet.
 
-5.  Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+5.  Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 

@@ -4,7 +4,7 @@ Any user who belongs to a group that has the privilege **Has administration priv
 
 2. Click **Data**, on the top navigation bar.
 
-3. Click the the ellipses icon (3 dots)
+3. Click the ellipses icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the upper right corner, and select **Upload Data**.
 

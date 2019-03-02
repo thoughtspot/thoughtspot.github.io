@@ -17,7 +17,7 @@ You need **Admin** privileges to use the **Schema Viewer**.
 ## Bringing up the Schema Viewer
 
 You can bring up the Schema Viewer from the **Data** screen. Click the ellipses icon
-(3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
+ ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 and select **View Schema**.
 
  ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema
