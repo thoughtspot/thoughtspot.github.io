@@ -14,7 +14,7 @@ To refresh a view manually:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
 
-2. Click on the name of your view.
+2. Click the name of your view.
 
 3. Click **Schema**.
 

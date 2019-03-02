@@ -61,7 +61,7 @@ Worksheets are often based on more than one table. The worksheet schema will
 show schemas for the tables behind the worksheet, as well as the joins between
 tables _that were created as a part of the worksheet_.
 
-Click on a worksheet, to see it in the Schema Viewer. If the schema view is not showing the schema behind the worksheet, double click the tab on the top right of the worksheet object.
+Click a worksheet, to see it in the Schema Viewer. If the schema view is not showing the schema behind the worksheet, double click the tab on the top right of the worksheet object.
 
 ![]({{ site.baseurl }}/images/worksheet_viewer_schema.png "Worksheet schema example")
 

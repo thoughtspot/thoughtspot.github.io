@@ -87,7 +87,7 @@ visualization may help in this case. You can also modify the charts you see in
 your results. Try this now.
 
 1. Select the menu on the **Total imports, Total value_added by year** chart.
-2. Click on the chart menu and choose **Edit**.
+2. Click the chart menu and choose **Edit**.
 
    ![]({{ site.baseurl }}/images/spotiq-edit-chart.png)
 
@@ -157,7 +157,7 @@ business, data changes all the time.
 
    ![]({{ site.baseurl }}/images/spotiq-analysis-check.png)
 
-3. Click on the latest **Total imports by CATEGORY_DESC** analysis.
+3. Click the latest **Total imports by CATEGORY_DESC** analysis.
 
    The **Customize Analysis** dialog appears.
 

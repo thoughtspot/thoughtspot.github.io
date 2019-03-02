@@ -32,7 +32,7 @@ home page is a search bar and below that several areas that show activity in Tho
     <th>All time popular<br>Recently trending</th>
     <td>
     Shows all time popular answers and pinboards by number of views. You can
-    choose between all-time popular or recently in the last 15 days. Small icons illustrate the type of visualization you'll find when you click on an item.
+    choose between all-time popular or recently in the last 15 days. Small icons illustrate the type of visualization you'll find when you click an item.
     <br>
     <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
 </td>
@@ -85,7 +85,7 @@ Answers are the result of a single search. You can save an answer you want to wo
 
 ## Pinboards
 
-Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. Once a pinboard has been saved, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click on one to view, edit, or share it.
+Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. Once a pinboard has been saved, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click one to view, edit, or share it.
 
 To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 

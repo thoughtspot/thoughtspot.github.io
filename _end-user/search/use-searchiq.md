@@ -13,11 +13,11 @@ To do a search using SearchIQ:
 
    ![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
 
-2. Click on the SearchIQ toggle button to go into SearchIQ mode.
+2. Click the SearchIQ toggle button to go into SearchIQ mode.
 
    ![]({{ site.baseurl }}/images/choose_searchiq.png "SearchIQ toggle button")
 
-   If you later decide to go back to the classic search mode, you can click on the SearchIQ toggle button to turn it off again.
+   If you later decide to go back to the classic search mode, you can click the SearchIQ toggle button to turn it off again.
 
 3. Choose the data you want to search using the selector in the left panel.
 
@@ -25,7 +25,7 @@ To do a search using SearchIQ:
 
 4. Type your search in the search bar using plain language.
 
-   If you see a microphone icon in the search bar, that means your operating system and browser are enabled for speech-to-text. In this case, you can click on the microphone and speak your search instead of typing.
+   If you see a microphone icon in the search bar, that means your operating system and browser are enabled for speech-to-text. In this case, you can click the microphone and speak your search instead of typing.
 
 5. Press the **Enter** key when your search is complete.
 

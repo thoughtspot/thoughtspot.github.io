@@ -127,7 +127,7 @@ column and a zip code column.
 
    SpotIQ runs your analysis in the background.
 
-10. Go to the SpotIQ page and click on the results of your newly triggered analysis.
+10. Go to the SpotIQ page and click the results of your newly triggered analysis.
 
     ![]({{ site.baseurl }}/images/spotiq-r4.png)
 

@@ -28,13 +28,13 @@ following affect data:
 
 To configure these values for a worksheet:
 
-1. Click on **Data** on the top navigation bar and then on **Worksheets**.
+1. Click **Data** on the top navigation bar and then on **Worksheets**.
 
-2. Click on the name of the worksheet you want to edit from the list.
+2. Click the name of the worksheet you want to edit from the list.
 
 3. Click the **Edit Worksheet** button in the upper right hand side of the screen.
 
-4. Click on the **+ icon** next to **Sources**.
+4. Click the **+ icon** next to **Sources**.
 
 5. Scroll to the bottom of the page.
 

@@ -12,11 +12,11 @@ If you created a worksheet, or you have edit permissions on it, you can make cha
 
 To edit a worksheet:
 
-1. Click on **Data** on the top navigation bar.
+1. Click **Data** on the top navigation bar.
 
-2. Click on the name of the worksheet you want to edit.
+2. Click the name of the worksheet you want to edit.
 
-3. Click the **Edit** button in the upper right hand side of the screen.
+3. Click the **Edit** button in the upper-right side of the screen.
 
 4. Make your changes to the worksheet.
 
@@ -30,9 +30,9 @@ You can change a worksheet or table name from the ThoughtSpot application.
 
 To change the name of a worksheet or table:
 
-1. Click on **Data**, on the top navigation bar.
+1. Click **Data**, on the top navigation bar.
 
-2. Find the worksheet or table you want to rename and click on its name.
+2. Find the worksheet or table you want to rename and click its name.
 
 3. Click the current name, and enter a new name.
 

@@ -18,11 +18,11 @@ To create a relationship through the Web interface:
 
 1. To find your worksheet, click **Data** in the top menu, and choose **Worksheets**.
 
-2. Click on the name of your worksheet.
+2. Click the name of your worksheet.
 
 3. Click **Schema**. You will see the list showing existing joins within the worksheet.
 
-4. To view the joins between the worksheet and other data sources, click on **Joins within worksheets** and choose **Joins between worksheets**.
+4. To view the joins between the worksheet and other data sources, click **Joins within worksheets** and choose **Joins between worksheets**.
 
    ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
 

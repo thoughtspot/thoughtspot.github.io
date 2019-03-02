@@ -113,7 +113,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can upload user data</div>
+            <div>Can upload <br> user data</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -188,7 +188,7 @@
       </tr>
       <tr>
          <td>
-            <div>Can share with all users</div>
+            <div>Can share with <br> all users</div>
          </td>
          <td>N</td>
          <td>N</td>

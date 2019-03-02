@@ -6,7 +6,7 @@ summary: "The user icon lets you view your profile or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To view the user actions, click on your user icon on the top right corner of the page.
+To view the user actions, click your user icon on the top right corner of the page.
 
  ![]({{ site.baseurl }}/images/user_icon.png "User icon")
 

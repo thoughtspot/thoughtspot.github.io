@@ -23,7 +23,7 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 
 1. Click **Data** on the top navigation bar.
 
-2. Click on a data source you own or can edit.
+2. Click a data source you own or can edit.
 
    ![]({{ site.baseurl }}/images/data_management_select_data_source.png "Select a data source")
 

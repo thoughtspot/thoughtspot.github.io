@@ -34,7 +34,7 @@ For troubleshooting on specific incidents or cluster problems, two things are im
 
 There are two ways to get logs:
 
--   When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can click on **What Happened?** in the error message for more details. To download related logs, click **Download Trace**. Send the logs as an email attachment to the support contact that is provided. Clicking **Report Problem** will also send the logs as an email attachment to your administrator.
+-   When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can click **What Happened?** in the error message for more details. To download related logs, click **Download Trace**. Send the logs as an email attachment to the support contact that is provided. Clicking **Report Problem** will also send the logs as an email attachment to your administrator.
 
      ![]({{ site.baseurl }}/images/trace_log.png "Download log trace")
 

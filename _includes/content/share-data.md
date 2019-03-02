@@ -2,7 +2,7 @@ Share a table or imported data by following these steps:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click on **Tables**.
+2. Click **Tables**.
 
     ![]({{ site.baseurl }}/images/data_icon_and_tables.png)
 

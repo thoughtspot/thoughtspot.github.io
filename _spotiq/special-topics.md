@@ -33,7 +33,7 @@ or a data management professional. Modeling data requires that you can:
 
 1. Click **Data** to get to the data management listing.
 
-2. Click on a data source you own or can edit.
+2. Click a data source you own or can edit.
 
     This brings up the **Columns** screen, where you'll make your modeling settings.
 
