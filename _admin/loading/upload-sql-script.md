@@ -16,7 +16,7 @@ You can run a SQL script to create your database schema through the browser, wit
 
 2. Click **Data**, on the top navigation bar.
 
-3. Click the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Upload schema**.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Upload schema**.
 
      ![]({{ site.baseurl }}/images/import_schema.png "Upload schema")
 

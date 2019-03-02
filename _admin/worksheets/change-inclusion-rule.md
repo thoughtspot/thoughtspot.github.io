@@ -38,12 +38,12 @@ To configure these values for a worksheet:
 
 5. Scroll to the bottom of the page.
 
-5. Configure the worksheet join rule and RLS setting as needed.
+6. Configure the worksheet join rule and RLS setting as needed.
 
      ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png "The worksheet join rule and RLS setting")
 
-6. Click **CLOSE**.
+7. Click **CLOSE**.
 
-7. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+8. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")

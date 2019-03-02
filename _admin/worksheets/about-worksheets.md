@@ -54,7 +54,7 @@ To create a new worksheet:
 
 1. Click **Data**, on the top navigation bar.
 
-2. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
+2. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
@@ -105,7 +105,7 @@ To add the sources to the worksheet:
 
      ![]({{ site.baseurl }}/images/worksheet_add_col_prefix.png "Add a prefix to column names")
 
-13. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+13. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
