@@ -1,9 +1,9 @@
 
 This reference lists the potential ports to open when setting up your security group.
 
-### Required ports for inter-cluster operation
+### Required ports for intra-cluster operation
 
-Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from inter-cluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
+Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from intra-cluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
@@ -48,6 +48,12 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50010</mark>|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50020</mark>|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">7000</mark>|HTTP|Cassandra KV store database|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">9042</mark>|HTTP|Munshi server impression service|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4010</mark>|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4011</mark>|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
 
 ### Required ports for inbound and outbound cluster access
 
