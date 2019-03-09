@@ -56,6 +56,7 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |<mark style="background-color: lightblue">9042</mark>|HTTP|<mark style="background-color: lightblue">Munshi server impression service</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
 |<mark style="background-color: lightblue">4010</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
 |<mark style="background-color: lightblue">4011</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">20123 - 32768</mark>|TCP (dynamic)|<mark style="background-color: lightblue">Services that change between runs</mark>|bidirectional|All nodes|All nodes|Services|
 
 ### Required ports for inbound and outbound cluster access
 

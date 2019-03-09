@@ -1,5 +1,5 @@
 ---
-title: [Network policies]
+title: [Network <mark style="background-color: lightblue">policies</mark>]
 tags: [bestpractices]
 keywords: network, ports, policies
 tags: [networking]
