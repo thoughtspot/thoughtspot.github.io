@@ -4,7 +4,7 @@ tags: [bestpractices]
 keywords: network, ports, policies
 tags: [networking]
 last_updated: tbd
-summary: "Lists the required and optional ports and policies for an installation."
+summary: "Lists the required and optional ports, protocols <mark style="background-color: lightblue">and policies</mark> for an installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
