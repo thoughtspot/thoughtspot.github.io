@@ -48,12 +48,12 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50010</mark>|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50020</mark>|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">7000</mark>|HTTP|Cassandra KV store database|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">9042</mark>|HTTP|Munshi server impression service|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">4010</mark>|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">4011</mark>|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50010</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50020</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">7000</mark>|HTTP|<mark style="background-color: lightblue">Cassandra KV store database</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">9042</mark>|HTTP|<mark style="background-color: lightblue">Munshi server impression service</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4010</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4011</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
 
 ### Required ports for inbound and outbound cluster access
 
