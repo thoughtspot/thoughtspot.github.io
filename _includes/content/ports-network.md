@@ -1,9 +1,9 @@
 
 This reference lists the potential ports to open when setting up your security group.
 
-### Required ports for inter-cluster operation
+### Required ports for <mark style="background-color: lightblue">intracluster</mark> operation
 
-Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from inter-cluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
+Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from <mark style="background-color: lightblue">intracluster</mark> network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
@@ -12,6 +12,8 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
 |2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|<mark style="background-color: lightblue">3181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
+|<mark style="background-color: lightblue">4181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
 |2210|RPC|Cluster stats service RPC port|bidirectional|All nodes|All nodes|Internal communication with the stats collector|
@@ -48,6 +50,13 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50010</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">50020</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">7000</mark>|HTTP|<mark style="background-color: lightblue">Cassandra KV store database</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">9042</mark>|HTTP|<mark style="background-color: lightblue">Munshi server impression service</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4010</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">4011</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
+|<mark style="background-color: lightblue">20123 - 32768</mark>|TCP (dynamic)|<mark style="background-color: lightblue">Services that change between runs</mark>|bidirectional|All nodes|All nodes|Services|
 
 ### Required ports for inbound and outbound cluster access
 
