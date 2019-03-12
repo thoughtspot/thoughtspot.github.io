@@ -50,13 +50,13 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50010</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50020</mark>|HTTP|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">7000</mark>|HTTP|<mark style="background-color: lightblue">Cassandra KV store database</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">9042</mark>|HTTP|<mark style="background-color: lightblue">Munshi server impression service</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">4010</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">4011</mark>|HTTP|<mark style="background-color: lightblue">Falcon moderator</mark>|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">20123 - 32768</mark>|TCP (dynamic)|<mark style="background-color: lightblue">Services that change between runs</mark>|bidirectional|All nodes|All nodes|Services|
+|<mark style="background-color: lightblue">50010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">50020</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">7000</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Cassandra KV store database</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">9042</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Munshi server impression service</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">4010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">4011</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
+|<mark style="background-color: lightblue">20123 - 32768</mark>|<mark style="background-color: lightblue">TCP (dynamic)</mark>|<mark style="background-color: lightblue">Services that change between runs</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Services</mark>|
 
 ### Required ports for inbound and outbound cluster access
 
@@ -71,9 +71,12 @@ ThoughtSpot uses static ports for inbound and outbound access to a cluster.
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|
-|443|HTTPS|HTTPS|outbound|All nodes|208.83.110.20|For transferring files to thoughtspot.egnyte.com (IP address 208.83.110.20).|
+  |443|TCP|HTTPS|outbound|All nodes|208.83.110.20 |For transferring files to thoughtspot.egnyte.com.|
+|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">For transferring product usage data to mixpanel cloud.</mark>|<mark style="background-color: lightblue">outbound</mark>|
+|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com</mark>|<mark style="background-color: lightblue">For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).</mark>|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
+
 
 ### Required ports for IPMI (Intelligent Platform Management Interface)
 
@@ -82,3 +85,5 @@ ThoughtSpot uses static ports for out-of-band IPMI communications between the cl
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
+|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">S-HTTP</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
+|<mark style="background-color: lightblue">623</mark>|<mark style="background-color: lightblue">UDP</mark>|<mark style="background-color: lightblue">Serial-over-LAN</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
