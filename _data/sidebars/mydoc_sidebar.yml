@@ -475,7 +475,7 @@ entries:
       - title: Configure support services
         url: /admin/setup/work-with-ts-support.html
         output: web,admBk
-      - title: Network protocols
+      - title: Network policies
         url: /admin/setup/firewall-ports.html
         output: web,admBk
       - title: Configure load balancing and proxies
@@ -1128,7 +1128,7 @@ entries:
         - title: Set up VMware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs
-    - title: Network protocols
+    - title: Network policies
       url: /appliance/firewall-ports.html
       output: web,appQs
     - title: Contact support
