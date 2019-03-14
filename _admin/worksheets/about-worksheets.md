@@ -1,5 +1,5 @@
 ---
-title: [Simplify search with worksheets]
+title: [Create and use worksheets]
 keywords: tbd
 last_updated: tbd
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
@@ -54,7 +54,7 @@ To create a new worksheet:
 
 1. Click **Data**, on the top navigation bar.
 
-2. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
+2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
 
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
@@ -65,7 +65,7 @@ After creating a worksheet, you need to add the sources that contain the data. S
 
 To add the sources to the worksheet:
 
-1.  Click the **+ icon**.
+1.  Click the **+** icon.
 
     ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
@@ -79,37 +79,41 @@ To add the sources to the worksheet:
 
 4. Choose the [worksheet join rule](progressive-joins.html#).
 
-5. If you want to disable [Row Level Security]({{ site.baseurl }}/data-security/row-level-security.html#), for this worksheet, check the checkbox to disable it.
+5. If you want to disable [Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#), for this worksheet, check the checkbox to disable it.
 
 6. Click **CLOSE** to save your changes.
 
-7. Expand the table names under **Columns** to select the columns to add to the worksheet.
+7. Expand the table names under **Columns** and select the columns to add to the worksheet, by doing any of the following:
 
     1. To add all of the columns from a table, click the table name and click **+ Add Columns**.
 
-    2. To add a single column, double click its name.
+    2. To add a single column, double-click its name.
 
     3. To add multiple columns, Ctl+click each column you want to add and click **+ Add Columns**.
 
     Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
-8.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
+8.  (Optional) [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
-9.  Optionally [create formulas](create-formula.html#).
+9.  (Optional) [create formulas](create-formula.html#).
 
-10.  Optionally [create worksheet filters](create-ws-filter.html#).8. Click the worksheet title to name it, and then **Save** it.
+10.  (Optional) [create worksheet filters](create-ws-filter.html#).
 
-11. Click each column name to give it a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+11. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
-12.  If you want to add a prefix to the name of several columns, select them, click the **Add Prefix** button, and type in the prefix.
+12. In the Save Worksheet window, enter a name and description for your worksheet and click **SAVE**.
+
+13. (Optional) Click each column name and enter a more user-friendly name for searching. You can tab through the list of columns to rename them quickly.
+
+14.  (Optional) If you want to add a prefix to the name of several columns, select them, click the **Add prefix** button, and type in the prefix.
 
      ![]({{ site.baseurl }}/images/worksheet_add_col_prefix.png "Add a prefix to column names")
 
-13. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+15. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
-14.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
+16.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
 
 ## Where to go next
 
