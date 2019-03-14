@@ -3,9 +3,9 @@ This reference lists the potential ports to open when setting up your security g
 
 ### Required ports for <mark style="background-color: lightblue">intracluster</mark> operation
 
-Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release. 
+Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release.
 
-If your organization does not allow you to open all ports, make sure you open required intracluster ports listed below. Do not close these ports from <mark style="background-color: lightblue">intracluster</mark> network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
+If your organization does not allow you to open all ports, make sure you open the required intracluster ports listed below. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of ports that are dynamically allocated by Linux (20K+).
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
@@ -62,7 +62,7 @@ If your organization does not allow you to open all ports, make sure you open re
 
 ### Required ports for inbound and outbound cluster access
 
-ThoughtSpot uses static ports for inbound and outbound access to a cluster.
+ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
@@ -82,7 +82,7 @@ ThoughtSpot uses static ports for inbound and outbound access to a cluster.
 
 ### Required ports for IPMI (Intelligent Platform Management Interface)
 
-ThoughtSpot uses static ports for out-of-band IPMI communications between the cluster and ThoughtSpot Support.
+ThoughtSpot uses static ports for out-of-band IPMI communications between the cluster and ThoughtSpot support.
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
