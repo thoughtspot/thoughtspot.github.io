@@ -3,7 +3,9 @@ This reference lists the potential ports to open when setting up your security g
 
 ### Required ports for <mark style="background-color: lightblue">intracluster</mark> operation
 
-Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from <mark style="background-color: lightblue">intracluster</mark> network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
+Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release. 
+
+If your organization does not allow you to open all ports, make sure you open required intracluster ports listed below. Do not close these ports from <mark style="background-color: lightblue">intracluster</mark> network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
