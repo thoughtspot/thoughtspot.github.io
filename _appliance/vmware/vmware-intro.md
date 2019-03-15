@@ -37,7 +37,7 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 * 512GB Memory
 * 200GB SSD
 * 3X 2TB Hard disks (6TB in total in hard disk space)
-* 72 Hyper-threaded Cores (Additional spare cores can also be added).
+* 72 Hyper-threaded Cores (Additional spare cores can also be added. Oversubscription is not supported).
 * Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
 
 All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
