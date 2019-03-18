@@ -1,7 +1,7 @@
 
 This reference lists the potential ports to open when setting up your security group.
 
-### Required ports for <mark style="background-color: lightblue">intracluster</mark> operation
+### Required ports for intracluster operation
 
 Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release.
 
@@ -14,8 +14,8 @@ If your organization does not allow you to open all ports, make sure you open th
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
 |2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
-|<mark style="background-color: lightblue">3181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
-|<mark style="background-color: lightblue">4181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
+|3181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|4181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
 |2210|RPC|Cluster stats service RPC port|bidirectional|All nodes|All nodes|Internal communication with the stats collector|
@@ -52,13 +52,13 @@ If your organization does not allow you to open all ports, make sure you open th
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">50020</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">7000</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Cassandra KV store database</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">9042</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Munshi server impression service</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">4010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">4011</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">20123 - 32768</mark>|<mark style="background-color: lightblue">TCP (dynamic)</mark>|<mark style="background-color: lightblue">Services that change between runs</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Services</mark>|
+|50010|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|50020|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|7000|HTTP|Cassandra KV store database|bidirectional|All nodes|All nodes|Debug DFS data|
+|9042|HTTP|Munshi server impression service|bidirectional|All nodes|All nodes|Debug DFS data|
+|4010|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|4011|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|20123 - 32768|TCP (dynamic)|Services that change between runs|bidirectional|All nodes|All nodes|Services|
 
 ### Required ports for inbound and outbound cluster access
 
@@ -74,8 +74,8 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|
   |443|TCP|HTTPS|outbound|All nodes|208.83.110.20 |For transferring files to thoughtspot.egnyte.com.|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">For transferring product usage data to mixpanel cloud.</mark>|<mark style="background-color: lightblue">outbound</mark>|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com</mark>|<mark style="background-color: lightblue">For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).</mark>|
+|443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
+|443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
@@ -87,5 +87,5 @@ ThoughtSpot uses static ports for out-of-band IPMI communications between the cl
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">S-HTTP</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
-|<mark style="background-color: lightblue">623</mark>|<mark style="background-color: lightblue">UDP</mark>|<mark style="background-color: lightblue">Serial-over-LAN</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
+|443|TCP|S-HTTP|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|
+|623|UDP|Serial-over-LAN|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|
