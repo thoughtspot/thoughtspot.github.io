@@ -9,9 +9,11 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.1.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.1.2 is now available. These release notes include information about new features,
 resolved issues from the previous releases, and known issues.
 
+* [5.1.2 New Features](#512-new)
+* [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
 * [5.1.1 Fixed Issues](#511-fixed)
 * [5.1 New Features](#51-new)
@@ -20,17 +22,47 @@ resolved issues from the previous releases, and known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.1.1 release
+If you are running one of the following versions, you can upgrade to the 5.1.2 release
 directly:
 
-* 4.5.1.x to 5.1.1
-* 5.0.x to 5.1.1
-* 5.1 to 5.1.1
+* 4.5.1.x to 5.1.2
+* 5.0.x to 5.1.2
+* 5.1.x to 5.1.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.1.1 release.
+First, upgrade to one of the above versions, and then to the 5.1.2 release.
+
+{: id="512-new"}
+## 5.1.2 New Features and Functionality
+
+### Data visualization color refinements
+
+Visualization colors have been refined to match ThoughtSpot's fresh, new look. You can still customize colors, and reset them to the default color palette later, if needed.
+
+{: id="512-fixed"}
+## 5.1.2 Fixed Issues
+
+Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
+
+Filter panel failure to open during formula creation has been fixed.
+
+Custom R analysis failure when run from Custom Analyze has been fixed.
+
+Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.
+
+Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point.
+
+Microsoft Internet Explorer problem with saving the name of an answer has been fixed.
+
+Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.
+
+Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.
+
+Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.
+
+Zoom on Geo maps can now be done using a mouse scroll wheel.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
