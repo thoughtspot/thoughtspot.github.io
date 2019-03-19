@@ -44,25 +44,11 @@ Visualization colors have been refined to match ThoughtSpot's fresh, new look. Y
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
 
-Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
+HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during upgrade.
 
-Filter panel failure to open during formu la creation has been fixed.
+Firewall on calling node of cluster no longer reverts to default settings when a node is removed.
 
-Custom R analysis failure when run from Custom Analyze has been fixed.
 
-Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.
-
-Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point.
-
-Microsoft Internet Explorer problem with saving the name of an answer has been fixed.
-
-Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.
-
-Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.
-
-Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.
-
-Zoom on Geo maps can now be done using a mouse scroll wheel.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
