@@ -46,7 +46,7 @@ Visualization colors have been refined to match ThoughtSpot's fresh, new look. Y
 
 Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
 
-Filter panel failure to open during formula creation has been fixed.
+Filter panel failure to open during formu la creation has been fixed.
 
 Custom R analysis failure when run from Custom Analyze has been fixed.
 
