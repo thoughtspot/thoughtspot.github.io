@@ -27,6 +27,8 @@ If your organization does not allow you to open all ports, make sure you open th
 |3888|RPC|Ports used by Zookeeper servers for communication between themselves|bidirectional|All nodes|All nodes|Ports used by Zookeeper servers for communication between themselves|
 |4000|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
 |4001|HTTP|Falcon worker HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the data cache|
+|4003|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
+|4004|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
 |4021|RPC|Sage metadata service port (exported by Tomcat)|bidirectional|Admin IP addresses and all nodes|All nodes|Port where search service contacts metadata service for metadata|
 |4201|HTTP|Sage auto complete server HTTP interface port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
 |4231|HTTP|Sage index server HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
@@ -50,6 +52,8 @@ If your organization does not allow you to open all ports, make sure you open th
 |8888|HTTP|HTTP proxy server (tinyproxy)|bidirectional|All nodes|All nodes|Reverse SSH tunnel|
 |11211|Mem-cached |Memcached server port|bidirectional|All nodes|All nodes|BI engine cache|
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
+|8480|HTTP|HDFS journalnode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
+|8485|HTTP|HDFS journalnode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
 |50010|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
