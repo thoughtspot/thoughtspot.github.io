@@ -48,8 +48,6 @@ HDFS images for a cluster are now created prior to pushing the HDFS configuratio
 
 Firewall on calling node of cluster no longer reverts to default settings when a node is removed.
 
-
-
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
