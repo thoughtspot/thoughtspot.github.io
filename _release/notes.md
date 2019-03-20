@@ -12,7 +12,6 @@ permalink: /:collection/:path.html
 ThoughtSpot version 5.1.2 is now available. These release notes include information about new features,
 resolved issues from the previous releases, and known issues.
 
-* [5.1.2 New Features](#512-new)
 * [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
 * [5.1.1 Fixed Issues](#511-fixed)
@@ -34,19 +33,14 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.1.2 release.
 
-{: id="512-new"}
-## 5.1.2 New Features and Functionality
-
-### Data visualization color refinements
-
-Visualization colors have been refined to match ThoughtSpot's fresh, new look. You can still customize colors, and reset them to the default color palette later, if needed.
-
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
 
 HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during upgrade.
 
-Firewall on calling node of cluster no longer reverts to default settings when a node is removed.
+Firewall on the calling node of the cluster no longer reverts to default settings when a node is removed.
+
+Shell users can now run `tql` and `tsload` using the **thoughtspot** user.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
