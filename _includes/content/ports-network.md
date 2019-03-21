@@ -98,7 +98,7 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
 |443|HTTPS|HTTPS|bidirectional|ThoughtSpot Support|All nodes|Secure HTTP.|
 |12345|TCP|Simba|bidirectional|ThoughtSpot Support|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
-|2049|TCP|NFS: In case one needs to mount NFS share on TS node. |bidirectional|ThoughtSpot Support|All nodes|Port used by NFS|
+|2049|TCP|NFS: In case one needs to mount NFS share on TS node. |bidirectional|ThoughtSpot Support|All nodes|Port used by NFS.|
 |123|UDP|NTP service|bidirectional|ThoughtSpot Support|All nodes|Port used by NTP service.|
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
