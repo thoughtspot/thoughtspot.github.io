@@ -42,6 +42,8 @@ When removing a node, the node calling command no longer results in unreachabili
 
 Fixed permission issues with `tsload` and `tql` so **thoughspot** user can load data.
 
+Database stability has been improved.
+
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
