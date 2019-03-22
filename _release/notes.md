@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 ## What's in the Release Notes
 
 ThoughtSpot version 5.1.2 is now available. These release notes include information about new features,
-resolved issues from the previous releases, and known issues.
+fixed issues from the previous releases, and any known issues.
 
 * [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
@@ -36,11 +36,11 @@ First, upgrade to one of the above versions, and then to the 5.1.2 release.
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
 
-HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during upgrade.
+HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.
 
-Firewall on the calling node of the cluster no longer reverts to default settings when a node is removed.
+When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
 
-Shell users can now run `tql` and `tsload` using the **thoughtspot** user.
+Fixed permission issues with `tsload` and `tql` so **thoughspot** user can load data.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
