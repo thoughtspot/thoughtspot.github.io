@@ -48,8 +48,6 @@ Fixed permission issues with `tsload` and `tql` so **thoughspot** user can now l
 
 Database stability has been improved.
 
-Formula function `group_count` now works for non-admin users on worksheets that contain tables with row level security applied.
-
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
