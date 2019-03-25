@@ -36,6 +36,10 @@ First, upgrade to one of the above versions, and then to the 5.1.2 release.
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
 
+Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.
+
+Selecting 'Copy and Edit' in an answer, pinboard visualization, insight, SpotIQ pinboard or view, no longer causes the user to be signed out.
+
 HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.
 
 When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
@@ -43,6 +47,8 @@ When removing a node, the node calling command no longer results in unreachabili
 Fixed permission issues with `tsload` and `tql` so **thoughspot** user can now load data.
 
 Database stability has been improved.
+
+Formula function `group_count` now works for non-admin users on worksheets that contain tables with row level security applied.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
