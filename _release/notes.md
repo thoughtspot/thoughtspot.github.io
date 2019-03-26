@@ -44,7 +44,7 @@ HDFS images for a cluster are now created prior to pushing the HDFS configuratio
 
 When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
 
-Fixed permission issues with `tsload` and `tql` so **thoughspot** user can now load data.
+Permissions issues with `tsload` and `tql` are now fixed so the **thoughspot** user can load data.
 
 Database stability has been improved.
 
