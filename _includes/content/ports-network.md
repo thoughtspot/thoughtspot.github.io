@@ -1,7 +1,7 @@
 
 This reference lists the potential ports to open when setting up your security group.
 
-### Required ports for <mark style="background-color: lightblue">intracluster</mark> operation
+### Required ports for intracluster operation
 
 Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release.
 
@@ -14,20 +14,27 @@ If your organization does not allow you to open all ports, make sure you open th
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
 |2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
-|<mark style="background-color: lightblue">3181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
-|<mark style="background-color: lightblue">4181</mark>|<mark style="background-color: lightblue">RPC</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Zookeeper servers listen on this port for client connections</mark>|
+|3181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|4181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
+|2205|TCP|Cluster update service TCP port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2210|RPC|Cluster stats service RPC port|bidirectional|All nodes|All nodes|Internal communication with the stats collector|
 |2211|HTTP|Cluster stats service HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the stats collector|
 |2230|RPC|Callosum stats collector RPC port|bidirectional|All nodes|All nodes|Internal communication with the BI stats collector|
 |2231|HTTP|Callosum stats collector HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the BI stats collector|
 |2240|RPC|Alert manager|bidirectional|All nodes|All nodes|Port where alerting service receives alert events|
+|2241|RPC|Alert manager|bidirectional|All nodes|All nodes|Port where alerting service receives alert events|
 |2888|RPC|Ports used by Zookeeper servers for communication between themselves|bidirectional|All nodes|All nodes|Ports used by Zookeeper servers for communication between themselves|
+|3181|RPC|Ports used by Zookeeper servers for communication between themselves|bidirectional|All nodes|All nodes|Ports used by Zookeeper servers for communication between themselves|
 |3888|RPC|Ports used by Zookeeper servers for communication between themselves|bidirectional|All nodes|All nodes|Ports used by Zookeeper servers for communication between themselves|
 |4000|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
 |4001|HTTP|Falcon worker HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the data cache|
-|4021|RPC|Sage metadata service port (exported by Tomcat)|bidirectional|Admin IP addresses and all nodes|All nodes|Port where search service contacts metadata service for metadata|
+|4002|HTTP|Falcon worker HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the data cache|
+|4003|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
+|4004|RPC|Falcon worker RPC port|bidirectional|All nodes|All nodes|Port used by data cache for communication between themselves|
+|4021|RPC|Sage metadata service port (exported by Tomcat), Callosum services like meta-data services, medata-dependency service, scheduling service, session-less service, spotiq service|bidirectional|All nodes|All nodes|Port where search service contacts metadata service for metadata|
+|4181|RPC|Ports used by Zookeeper servers for communication between themselves|bidirectional|All nodes|All nodes|Ports used by Zookeeper servers for communication between themselves|
 |4201|HTTP|Sage auto complete server HTTP interface port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
 |4231|HTTP|Sage index server HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
 |4232|RPC|Sage index server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
@@ -35,30 +42,51 @@ If your organization does not allow you to open all ports, make sure you open th
 |4241|HTTP|Sage auto complete server HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
 |4242|RPC|Sage auto complete server RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
+|4244|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
+|4245|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
+|4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
 |4251|RPC|Sage master RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4405|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
+|4406|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
 |4500|RPC|Trace vault service RPC port|bidirectional|All nodes|All nodes|Trace collection for ThoughtSpot services|
 |4501|HTTP|Trace vault service HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Debug trace collection|
 |4851|RPC|Graphite manager RPC port|bidirectional|All nodes|All nodes|Communication with graphite manager|
 |4852|HTTP|Graphite manager HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Debug graphite manager|
 |4853|RPC|Elastic search stack (ELK) manager RPC port|bidirectional|All nodes|All nodes|Communication with log search service|
 |4853|HTTP|Elastic search stack (ELK) manager HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Debug log search service|
+|9200|RPC|Elastic search (ELK)|bidirectional|All nodes|All nodes|Communication with log search service|
+|5021|RPC|Callosum services like meta-data services, medata-dependency service, scheduling service, session-less service, spotiq service|bidirectional|All nodes|All nodes|Port where search service contacts metadata service for metadata|
 |5432|Postgres|Postgres database server port|bidirectional|All nodes|All nodes|Communication with Postgres database|
+|6021|RPC|Callosum services like meta-data services, medata-dependency service, scheduling service, session-less service, spotiq service|bidirectional|All nodes|All nodes|Port where search service contacts metadata service for metadata|
+|7021|RPC|Callosum services like meta-data services, medata-dependency service, scheduling service, session-less service, spotiq service|bidirectional|All nodes|All nodes|Port where search service contacts metadata service for metadata|
 |8020|RPC|HDFS namenode server RPC port|bidirectional|All nodes|All nodes|Distributed file system (DFS) communication with clients|
+|8021|RPC|Callosum services like meta-data services, medata-dependency service, scheduling service, session-less service, spotiq service|bidirectional|All nodes|All nodes|Port where search service contacts metadata service for metadata|
 |8080|HTTP|Tomcat|bidirectional|All nodes|All nodes|BI engine communication with clients|
+|8081|HTTP|Callosum/Tomcat status|bidirectional|All nodes|All nodes|BI engine communication with clients|
 |8787|HTTP|Periscope (UI) service HTTP port|bidirectional|All nodes|All nodes|Administration UI back end|
 |8888|HTTP|HTTP proxy server (tinyproxy)|bidirectional|All nodes|All nodes|Reverse SSH tunnel|
 |11211|Mem-cached |Memcached server port|bidirectional|All nodes|All nodes|BI engine cache|
 |12345|ODBC|Simba server port|bidirectional|All nodes|All nodes|Port used for ETL (extract, transform, load)|
+|8480|HTTP|HDFS journalnode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
+|8485|HTTP|HDFS journalnode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50070|HTTP|HDFS namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
+|50090|HTTP|HDFS secondary namenode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS metadata|
 |50075|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
-|<mark style="background-color: lightblue">50010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">50020</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">HDFS datanode server HTTP port</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">7000</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Cassandra KV store database</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">9042</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Munshi server impression service</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">4010</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">4011</mark>|<mark style="background-color: lightblue">HTTP</mark>|<mark style="background-color: lightblue">Falcon moderator</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Debug DFS data</mark>|
-|<mark style="background-color: lightblue">20123 - 32768</mark>|<mark style="background-color: lightblue">TCP (dynamic)</mark>|<mark style="background-color: lightblue">Services that change between runs</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">Services</mark>|
+|50010|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|50020|HTTP|HDFS datanode server HTTP port|bidirectional|All nodes|All nodes|Debug DFS data|
+|7000|TCP|Cassandra KV store database|bidirectional|All nodes|All nodes|Debug DFS data|
+|7001|TCP|Cassandra|bidirectional|All nodes|All nodes|Debug DFS data|
+|9042|HTTP|Munshi server impression service, Cassandra|bidirectional|All nodes|All nodes|Debug DFS data|
+|9160|TCP|Cassandra|bidirectional|All nodes|All nodes|Debug DFS data|
+|4010|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|4011|HTTP|Falcon moderator|bidirectional|All nodes|All nodes|Debug DFS data|
+|20123 - 32768|TCP (dynamic)|Dynamic port in this range used for various services and anciliary services like atlas, caffeine, callhome, callosum, falcon, monitoring, munshi server, nlp, object_search, postgres, sage UBR, spotiq snapshot, timely|All nodes|Services|
+|5270|TCP|Cluster monitoring service (ELK)|bidirectional|All nodes|All nodes|Services|
+|5271|TCP|Cluster monitoring service (ELK)|bidirectional|All nodes|All nodes|Services|
+|5601|TCP|Kibana UI (ELK)|bidirectional|All nodes|All nodes|Services|
+|6311|TCP|R service|bidirectional|All nodes|All nodes|Services|
+|8008|TCP|Video recorder|bidirectional|All nodes|All nodes|Services|
+|9090|TCP|Timely|bidirectional|All nodes|All nodes|Services|
 
 ### Required ports for inbound and outbound cluster access
 
@@ -70,12 +98,14 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
 |443|HTTPS|HTTPS|bidirectional|ThoughtSpot Support|All nodes|Secure HTTP.|
 |12345|TCP|Simba|bidirectional|ThoughtSpot Support|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
+|2049|TCP|NFS: In case one needs to mount NFS share on TS node. |bidirectional|ThoughtSpot Support|All nodes|Port used by NFS.|
+|123|UDP|NTP service|bidirectional|ThoughtSpot Support|All nodes|Port used by NTP service.|
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|
   |443|TCP|HTTPS|outbound|All nodes|208.83.110.20 |For transferring files to thoughtspot.egnyte.com.|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">For transferring product usage data to mixpanel cloud.</mark>|<mark style="background-color: lightblue">outbound</mark>|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">HTTPS</mark>|<mark style="background-color: lightblue">outbound</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com</mark>|<mark style="background-color: lightblue">For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).</mark>|
+|443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
+|443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
@@ -87,5 +117,5 @@ ThoughtSpot uses static ports for out-of-band IPMI communications between the cl
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
 |80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
-|<mark style="background-color: lightblue">443</mark>|<mark style="background-color: lightblue">TCP</mark>|<mark style="background-color: lightblue">S-HTTP</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
-|<mark style="background-color: lightblue">623</mark>|<mark style="background-color: lightblue">UDP</mark>|<mark style="background-color: lightblue">Serial-over-LAN</mark>|<mark style="background-color: lightblue">bidirectional</mark>|<mark style="background-color: lightblue">ThoughtSpot Support</mark>|<mark style="background-color: lightblue">All nodes</mark>|<mark style="background-color: lightblue">IPMI GUI and for HTML5-based IPMI console access.</mark>|
+|443|TCP|S-HTTP|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|
+|623|UDP|Serial-over-LAN|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|
