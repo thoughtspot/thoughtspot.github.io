@@ -21,7 +21,7 @@ activities.
 | Information | Description |
 |-------------|-------------|
 |Driver name | `com.simba.client.core.jdbc4.SCJDBC4Driver` |
-|Server IP address | The ThoughtSpot appliance URL or IP address. The IP address can be found by going to `http://<server-ip\>/internal/status/service?name=simba_server`|
+|Server IP address | The ThoughtSpot appliance URL or IP address.
 |Simba port | The simba port, which is `12345` by default.|
 |Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
 |username | The name of a ThoughtSpot user with administrator permissions.|
