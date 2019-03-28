@@ -40,6 +40,14 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 * 72 Hyper-threaded Cores (Additional spare cores can also be added).
 * Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
 
+Locally attached storage provides the best performance.
+
+SAN can be used, but must comply with the following requirements:
+* 136 MBps maximum random read bandwidth
+* 240 random IOPS (~4s seek latency)
+
+NAS/NFS is not supported since its latency is so high that it tends to be unreliable.
+
 All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
 ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
