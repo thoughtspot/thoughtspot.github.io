@@ -47,6 +47,6 @@ Note: IPSec is supported in ThoughtSpot software versions starting from 4.5.1.4
     Note: You can check  `/etc/strongswan/ipsec.conf` and `/etc/strongswan/ipsec.secrets` on each node to verify that they are consistent across all nodes.
 
 ## Firewall configuration
-The following UDP ports need to be opened between nodes to allow IPSec encryption to function:
+The following ports must be open between nodes to allow IPSec encryption:
   - UDP port 500 (for IKE)
   - UDP port 4500 (for IPSec over IDP)
