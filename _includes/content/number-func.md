@@ -130,7 +130,7 @@
     <tr>
       <td><code>round</code></td>
       <td>Returns the first number rounded to the second number (the default is 1).</td>
-      <td><code class="highlighter-rouge">round (35.65, 10) = 40</code><br><code class="highlighter-rouge">round (battingavg, 100)</code></td>
+      <td><code class="highlighter-rouge">round (35.65, 10) = 40</code><br><code class="highlighter-rouge">round (battingavg, 100)</code><br><code class="highlighter-rouge">round (48.67, .1) = 48.7</code></td>
     </tr>
     <tr>
       <td><code>safe_divide</code></td>
