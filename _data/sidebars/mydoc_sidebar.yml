@@ -756,6 +756,9 @@ entries:
       - title: ThoughtSpot Lifecycle
         url: /admin/data-security/security-thoughtspot-lifecycle.html
         output: web, admBk
+      - title: Encryption of data in transit
+        url: /admin/data-security/encryption-of-data.html
+        output: web, admBk
     - levelTwoTitle: System administration
       output: web,admBk
       levelTwoItems:
