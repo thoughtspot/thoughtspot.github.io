@@ -33,21 +33,6 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.1.1 release.
 
-{: id="512-fixed"}
-## 5.1.2 Fixed Issues
-
-Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.
-
-Selecting 'Copy and Edit' in an answer, pinboard visualization, insight, SpotIQ pinboard or view, no longer causes the user to be signed out.
-
-HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.
-
-When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
-
-Permissions issues with `tsload` and `tql` are now fixed so the **thoughspot** user can load data.
-
-Database stability has been improved.
-
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
 
