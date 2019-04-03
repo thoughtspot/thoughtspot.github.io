@@ -12,7 +12,7 @@ permalink: /:collection/:path.html
 ThoughtSpot version 5.1.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-<!-- * [5.1.2 Fixed Issues](#512-fixed)-->
+
 * [5.1.1 New Features](#511-new)
 * [5.1.1 Fixed Issues](#511-fixed)
 * [5.1 New Features](#51-new)
@@ -33,7 +33,7 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.1.1 release.
 
-<!-- {: id="512-fixed"}
+{: id="512-fixed"}
 ## 5.1.2 Fixed Issues
 
 Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.
@@ -46,7 +46,7 @@ When removing a node, the node calling command no longer results in unreachabili
 
 Permissions issues with `tsload` and `tql` are now fixed so the **thoughspot** user can load data.
 
-Database stability has been improved. -->
+Database stability has been improved.
 
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
