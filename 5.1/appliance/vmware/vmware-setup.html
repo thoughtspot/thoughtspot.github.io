@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.1/appliance/vmware/vmware-setup.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-02T12:01:53-08:00" />
+<meta property="article:published_time" content="2019-04-04T10:00:24-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2019-03-02T12:01:53-08:00","dateModified":"2019-03-02T12:01:53-08:00","url":"https://docs.thoughtspot.com/5.1/appliance/vmware/vmware-setup.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/appliance/vmware/vmware-setup.html"},"description":"This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:","@type":"BlogPosting","headline":"[“Set up VMware for ThoughtSpot”]","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/appliance/vmware/vmware-setup.html"},"url":"https://docs.thoughtspot.com/5.1/appliance/vmware/vmware-setup.html","headline":"[“Set up VMware for ThoughtSpot”]","dateModified":"2019-04-04T10:00:24-07:00","datePublished":"2019-04-04T10:00:24-07:00","description":"This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. For each hardware node, you must:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1278,7 +1278,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.1/admin/setup/firewall-ports.html">Network ports</a></li>
+                          <li><a href="/5.1/admin/setup/firewall-ports.html">Network policies</a></li>
                       
                    
                 
@@ -1881,6 +1881,12 @@ var ss360Config = {
                   
                       
                           <li><a href="/5.1/admin/data-security/security-thoughtspot-lifecycle.html">ThoughtSpot Lifecycle</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/5.1/admin/data-security/encryption-of-data.html">Encryption of data in transit</a></li>
                       
                    
                 
@@ -2699,7 +2705,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.1/appliance/firewall-ports.html">Network ports</a></li>
+                  <li><a href="/5.1/appliance/firewall-ports.html">Network policies</a></li>
                 
               
             
@@ -3159,7 +3165,9 @@ for a sandbox environment but is insufficient for a production environment.</p>
     <p>The VM template, by default, captures a 72-core configuration. If your
 physical host has more than 72 cores, you may want to edit VM to have (<code class="highlighter-rouge">n-2</code>)
 cores (for a physical host with n cores) to fully take advantage of computing
-power of the physical host.</p>
+power of the physical host. Extra cores help performance.</p>
+
+    <p>You should aim to allocate 490 GB or more RAM.</p>
   </li>
   <li>
     <p>Create datastores for all solid-state drive (SSD) and hard drive devices.</p>
@@ -3270,9 +3278,6 @@ additional, larger capacity disks.</p>
   <li>
     <p>Select <strong>Add hard disk &gt; New hard disk</strong>.</p>
 
-    <p>You can give the VM up to 72 cores (or approximately 490 G RAM). The ESXi host
-should keep a minimum of 2 cores.</p>
-
     <p><img src="/5.1/images/vmware-adddisk1.png" alt="" title="New hard disk" /></p>
 
     <p>The new disk appears as a new row under the only existing SSD row.</p>
@@ -3352,7 +3357,7 @@ from any terminal within local network, contact <a href="mailto:support@thoughts
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 2, 2019 <br />
+        Generated: Apr 4, 2019 <br />
          &copy;2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
