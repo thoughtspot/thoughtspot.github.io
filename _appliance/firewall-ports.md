@@ -1,5 +1,5 @@
 ---
-title: [Network policies]
+title: [Network ports]
 keywords: network, ports
 tags: [networking]
 last_updated: tbd
