@@ -32,7 +32,7 @@ The steps to build a schema using TQL include:
 
 ## Where to go next
 
--   **[Connect with TCL and create a schema]({{ site.baseurl }}/admin/loading/prep-schema-for-load.html)**  
+-   **[Connect with TQL and create a schema]({{ site.baseurl }}/admin/loading/prep-schema-for-load.html)**  
 Having examined the structure of the data to be loaded and become familiar with the ThoughtSpot SQL Command Line (TQL), you are now ready to create the schema.
 -   **[Write a SQL script to create the schema]({{ site.baseurl }}/admin/loading/create-schema-with-script.html)**  
 Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed.
