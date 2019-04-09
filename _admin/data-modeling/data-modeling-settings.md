@@ -17,7 +17,7 @@ their accepted values are the same.
 
 ## Modeling settings
 
-This index lists the editable data modeling settings.
+This index lists the editable data modeling settings. You can apply these settings to columns in tables or worksheets.
 
 | Setting name | Description |
 |----------------|----------------------|
@@ -38,19 +38,15 @@ This index lists the editable data modeling settings.
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. |
 | [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.|
 
-## Data modeling for worksheets
+## Data modeling best practices
 
-For worksheets, only some of the settings can be modified, whether you are using
-the modeling file or the Web interface. The editable settings for worksheets
-are:
+As a best practice, make any data modeling settings in the table when you will be creating multiple worksheets that use that table. This way, you won't have to make the same settings in each worksheet. The settings will be inherited when you create worksheets that uses columns from the table.
 
--   Name
--   Description
--   Synonyms
+If you have settings that only apply in the context of a particular worksheet, make those settings in the worksheet rather than in the underlying table(s).
 
-If you want to change any of the settings that cannot be modified in a
-worksheet, you need to make your changes to the underlying table instead, and
-they will be reflected in all worksheets that use the table.
+Note that if you make your settings at the table level, and then create a worksheet that uses columns from the table, the settings are inherited from the table at the point in time that the worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the worksheet.
+
+If you want the worksheet to have the changes you made at the table level, you'll need to drop those columns from the worksheet and re-add them. Then save the worksheet. At this point, the new settings will be used in the worksheet. Note that any saved answers or pinboards based on the worksheet may display differently because of your changes. For example, if you've changed the GeoMap setting from "None" to "Country", you will now see a map where before you might have seen a table.
 
 ## Related information  
 

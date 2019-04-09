@@ -210,7 +210,7 @@
   <tr>
     <td class="tg-dc35"><em>n</em> quarters ago</td>
     <td class="tg-dc35"><em>n</em> kwartalen geleden</td>
-    <td class="tg-dc35"><code>sales <b>4 quarters ago</b> by product name contains deluxe</code></td>
+    <td class="tg-dc35"><code>sales <b>4 quarters ago</b> by product name contains "deluxe"</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> weeks ago</td>
@@ -340,7 +340,7 @@
   <tr>
     <td class="tg-us36"><em>year</em></td>
     <td class="tg-us36"><em>jaar</em></td>
-    <td class="tg-us36"><code>revenue by product <b>2014</b> product name contains snowboard</code></td>
+    <td class="tg-us36"><code>revenue by product <b>2014</b> product name contains "snowboard"</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">yearly</td>
