@@ -168,7 +168,7 @@
       </tr>
       <tr>
          <td><em>n</em> quarters ago</td>
-         <td><code>sales <b>4 quarters ago</b> by product name contains deluxe</code></td>
+         <td><code>sales <b>4 quarters ago</b> by product name contains "deluxe"</code></td>
       </tr>
       <tr>
          <td><em>n</em> weeks ago</td>
@@ -272,7 +272,7 @@
       </tr>
       <tr>
          <td><em>year</em></td>
-         <td><code>revenue by product <b>2014</b> product name contains snowboard</code></td>
+         <td><code>revenue by product <b>2014</b> product name contains "snowboard"</code></td>
       </tr>
       <tr>
          <td>yearly</td>
