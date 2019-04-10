@@ -87,6 +87,7 @@ If your organization does not allow you to open all ports, make sure you open th
 |6311|TCP|R service|bidirectional|All nodes|All nodes|Services|
 |8008|TCP|Video recorder|bidirectional|All nodes|All nodes|Services|
 |9090|TCP|Timely|bidirectional|All nodes|All nodes|Services|
+||ICMPv4|Used for health check of cluster nodes|bidirectional|All nodes|All nodes|Services|
 
 ### Required ports for inbound and outbound cluster access
 
