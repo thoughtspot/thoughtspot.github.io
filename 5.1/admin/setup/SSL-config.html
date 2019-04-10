@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.1/admin/setup/SSL-config.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-02T12:01:53-08:00" />
+<meta property="article:published_time" content="2019-04-10T16:40:14-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2019-03-02T12:01:53-08:00","dateModified":"2019-03-02T12:01:53-08:00","url":"https://docs.thoughtspot.com/5.1/admin/setup/SSL-config.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/admin/setup/SSL-config.html"},"description":"You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.","@type":"BlogPosting","headline":"[“Configure SSL”]","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/admin/setup/SSL-config.html"},"url":"https://docs.thoughtspot.com/5.1/admin/setup/SSL-config.html","headline":"[“Configure SSL”]","dateModified":"2019-04-10T16:40:14-07:00","datePublished":"2019-04-10T16:40:14-07:00","description":"You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1278,7 +1278,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.1/admin/setup/firewall-ports.html">Network ports</a></li>
+                          <li><a href="/5.1/admin/setup/firewall-ports.html">Network policies</a></li>
                       
                    
                 
@@ -1881,6 +1881,12 @@ var ss360Config = {
                   
                       
                           <li><a href="/5.1/admin/data-security/security-thoughtspot-lifecycle.html">ThoughtSpot Lifecycle</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/5.1/admin/data-security/encryption-of-data.html">Encryption of data in transit</a></li>
                       
                    
                 
@@ -2699,7 +2705,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.1/appliance/firewall-ports.html">Network ports</a></li>
+                  <li><a href="/5.1/appliance/firewall-ports.html">Network policies</a></li>
                 
               
             
@@ -3132,7 +3138,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    2 minutes
+    3 minutes
   
 </span>
 
@@ -3141,7 +3147,7 @@ $('#toc').on('click', 'a', function() {
   <p>You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.</p>
 
 <h2 id="about-ssl">About SSL</h2>
-<p>Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you’ll need your company’s own SSL certificate. The certificate is issued per domain, so if you want to use SSL for both HTTP and LDAP, you will need two separate certificates - one for the HTTP domain and one for the LDAP domain.</p>
+<p>Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you’ll need your company’s own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you will need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.</p>
 
 <p>If you do not have an SSL certificate:</p>
 
@@ -3160,8 +3166,8 @@ $('#toc').on('click', 'a', function() {
 <p>This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:</p>
 
 <ul>
-  <li>The SSL certificate</li>
-  <li>The private key</li>
+  <li>The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN” and “END” directive. It can be a bundle of certificates.</li>
+  <li>The private key in compatible .PEM format. It should not be password/passphrase protected.</li>
 </ul>
 
 <p>To install the SSL certificate:</p>
@@ -3244,7 +3250,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 2, 2019 <br />
+        Generated: Apr 10, 2019 <br />
          &copy;2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
