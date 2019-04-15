@@ -111,52 +111,52 @@
   </tr>
   <tr>
     <td class="tg-us36">last day by</td>
-    <td class="tg-us36">最後 日 により</td>
+    <td class="tg-us36">先日</td>
     <td class="tg-us36"><code>customers <b>last day by</b> referrer</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last month by</td>
-    <td class="tg-dc35">最後 月 により</td>
+    <td class="tg-dc35">先月</td>
     <td class="tg-dc35"><code>customers <b>last month by</b> day</code></td>
   </tr>
   <tr>
     <td class="tg-us36">last <em>n</em> days</td>
-    <td class="tg-us36">最後 <em>n</em> 曜日</td>
+    <td class="tg-us36">過去 <em>n</em> 日</td>
     <td class="tg-us36"><code>visitors <b>last 7 days</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last <em>n</em> quarters</td>
-    <td class="tg-dc35">最後 <em>n</em> 四半期</td>
+    <td class="tg-dc35">過去 <em>n</em> 四半期</td>
     <td class="tg-dc35"><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
   </tr>
   <tr>
     <td class="tg-us36">last <em>n</em> weeks</td>
-    <td class="tg-us36">最後 <em>n</em> 週</td>
+    <td class="tg-us36">過去 <em>n</em> 週</td>
     <td class="tg-us36"><code>visitors <b>last 10 weeks</b> by day</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last quarter</td>
-    <td class="tg-dc35">最後 四半期</td>
+    <td class="tg-dc35">前四半期</td>
     <td class="tg-dc35"><code>customers <b>last quarter</b> sale &gt; 300</code></td>
   </tr>
   <tr>
     <td class="tg-us36">last week</td>
-    <td class="tg-us36">最後 週</td>
+    <td class="tg-us36">先週</td>
     <td class="tg-us36"><code>customers <b>last week</b> by store</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last year</td>
-    <td class="tg-dc35">最後 年</td>
+    <td class="tg-dc35">去年</td>
     <td class="tg-dc35"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last <em>n</em> years</td>
-    <td class="tg-dc35">最後 <em>n</em> 年</td>
+    <td class="tg-dc35">過去 <em>n</em> 年</td>
     <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt; 5000</code></td>
   </tr>
   <tr>
     <td class="tg-us36">month to date</td>
-    <td class="tg-us36">月 現在まで</td>
+    <td class="tg-us36">月初から今日まで</td>
     <td class="tg-us36"><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
   </tr>
   <tr>
@@ -196,12 +196,12 @@
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> days ago</td>
-    <td class="tg-us36"><em>n</em> 曜日 前</td>
+    <td class="tg-us36"><em>n</em> 日前</td>
     <td class="tg-us36"><code>sales <b>2 days ago</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> months ago</td>
-    <td class="tg-dc35"><em>n</em> 月 前</td>
+    <td class="tg-dc35"><em>n</em> か月前</td>
     <td class="tg-dc35"><code>sales <b>2 months ago</b> by region</code></td>
   </tr>
   <tr>
@@ -211,17 +211,17 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> quarters ago</td>
-    <td class="tg-dc35"><em>n</em> 四半期 前</td>
+    <td class="tg-dc35"><em>n</em> 四半期前</td>
     <td class="tg-dc35"><code>sales <b>4 quarters ago</b> by product name contains "deluxe"</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> weeks ago</td>
-    <td class="tg-us36"><em>n</em> 週 前</td>
+    <td class="tg-us36"><em>n</em> 週前</td>
     <td class="tg-us36"><code>sales <b>4 weeks ago</b> by store</code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> years ago</td>
-    <td class="tg-dc35"><em>n</em> 年 前</td>
+    <td class="tg-dc35"><em>n</em> 年前</td>
     <td class="tg-dc35"><code>sales <b>5 years ago</b> by store for region west</code></td>
   </tr>
   <tr>
@@ -231,52 +231,52 @@
   </tr>
   <tr>
     <td class="tg-us36">next day</td>
-    <td class="tg-us36">次 日</td>
+    <td class="tg-us36">翌日</td>
     <td class="tg-us36"><code>shipments <b>next day</b> by order</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">next month</td>
-    <td class="tg-dc35">次 月</td>
+    <td class="tg-dc35">来月</td>
     <td class="tg-dc35"><code>appointments <b>next month</b> by day</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next <em>n</em> days</td>
-    <td class="tg-us36">次 <em>n</em> 曜日</td>
+    <td class="tg-us36">次の <em>n</em> 日</td>
     <td class="tg-us36"><code>shipments <b>next 7 days</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">next <em>n</em> months</td>
-    <td class="tg-dc35">次 <em>n</em> 月</td>
+    <td class="tg-dc35">次の <em>n</em> か月</td>
     <td class="tg-dc35"><code>openings <b>next 6 months</b> location</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next <em>n</em> quarters</td>
-    <td class="tg-us36">次 <em>n</em> 四半期</td>
+    <td class="tg-us36">次の <em>n</em> 四半期</td>
     <td class="tg-us36"><code>opportunities <b>next 2 quarters</b> by campaign</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">next <em>n</em> weeks</td>
-    <td class="tg-dc35">次 <em>n</em> 週</td>
+    <td class="tg-dc35">次の <em>n</em> 週</td>
     <td class="tg-dc35"><code>shipments <b>next 10 weeks</b> by day</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next quarter</td>
-    <td class="tg-us36">次 四半期</td>
+    <td class="tg-us36">来四半期</td>
     <td class="tg-us36"><code>opportunities <b>next quarter</b> amount &gt; 30000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">next week</td>
-    <td class="tg-dc35">次 週</td>
+    <td class="tg-dc35">来週</td>
     <td class="tg-dc35"><code>shipments <b>next week</b> by store</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next year</td>
-    <td class="tg-us36">次 年</td>
+    <td class="tg-us36">来年</td>
     <td class="tg-us36"><code>opportunities <b>next year</b> by sales rep</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">quarter to date</td>
-    <td class="tg-dc35">四半期 現在まで</td>
+    <td class="tg-dc35">四半期初から今日まで</td>
     <td class="tg-dc35"><code>sales by product <b>quarter to date</b> for top 10 products by sales</code></td>
   </tr>
   <tr>
@@ -301,7 +301,7 @@
   </tr>
   <tr>
     <td class="tg-us36">week to date</td>
-    <td class="tg-us36">週 現在まで</td>
+    <td class="tg-us36">週初から今日まで</td>
     <td class="tg-us36"><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
   </tr>
   <tr>
@@ -336,7 +336,7 @@
   </tr>
   <tr>
     <td class="tg-dc35">year to date</td>
-    <td class="tg-dc35">年 現在まで</td>
+    <td class="tg-dc35">年初から今日まで</td>
     <td class="tg-dc35"><code>sales by product <b>year to date</b></code></td>
   </tr>
   <tr>
