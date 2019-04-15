@@ -155,6 +155,19 @@
       <td><code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></td>
     </tr>
     <tr>
+      <td><code>rank</code></td>
+      <td>Returns the rank for the current row. Identical values are assigned an identical rank. Takes an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.
+</td>
+      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc'</code>
+</td>
+<tr>
+  <td><code>rank_percentile</code></td>
+  <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Taken an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.</td>
+  <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )
+</code> 
+</td>
+    </tr>
+    <tr>
       <td><code>stddev</code></td>
       <td>Returns the standard deviation of all values of a column.</td>
       <td><code class="highlighter-rouge">stddev (revenue)</code></td>
