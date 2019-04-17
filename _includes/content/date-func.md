@@ -18,6 +18,11 @@
       <td><code class="highlighter-rouge">add_days (01/30/2015, 5) = 02/04/2015</code><br><code class="highlighter-rouge">add_days (invoiced, 30)</code></td>
     </tr>
     <tr>
+      <td><code>add_minutes</code></td>
+      <td>Returns the result of adding the specified number of minutes to input date/datetime/time.</td>
+      <td><code class="highlighter-rouge">add_minutes ( 01/30/2015 00:10:20 , 5 ) = 01/30/2015 00:11:20</code><br><code class="highlighter-rouge">add_minutes ( invoiced , 30 )</code></td>
+    </tr>
+    <tr>
       <td><code>date</code></td>
       <td>Returns the date portion of a given date.</td>
       <td><code class="highlighter-rouge">date (home visit)</code></td>
