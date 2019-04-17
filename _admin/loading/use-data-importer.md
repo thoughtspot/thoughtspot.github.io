@@ -72,3 +72,39 @@ You can integrate tsload into your ETL environment for more automated data loads
 5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were omitted, review your CSV file, make the required adjustments, and then load it again.
 
 6. Once your file has been loaded properly, repeat this process to load data from any additional CSV files.
+
+## Loading data from an AWS S3 bucket
+
+If you have data in .csv format stored in an AWS bucket, you can load it directly to ThoughtSpot.
+
+1.  Log in to the Linux shell using SSH.
+
+2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
+
+    ```
+    $ tsload --source_file "path_to_my_file_on_aws"
+           --target_database "my_database_in_ThoughtSpot" --target_table "my_table_in_the_database_in_ThoughtSpot"
+    ```       
+    This example imports the CSV file `teams.csv` into the table `teams` in the database `temp`:
+
+    ```
+    $ tsload --source_file "/aws/default/teams.csv"
+           --target_database "temp" --target_table "teams"
+    ```       
+    After running this command, you are prompted to enter additional AWS S3 information:
+
+    * AWS S3 bucket name.
+
+    * AWS S3 region.
+
+    * AWS S3 credentials (accesskey;secret_key).
+
+    * AWS S3 root (prefix for S3 object search path)
+
+    {% include note.html content="These four pieces of information can be inserted at the beginning of the command (in step 2) by using the following flags:
+    * aws_s3_bucket_name ”bucket name”
+    * aws_s3_region_name ”region name”
+    * aws_s3_credentials ”credentials”
+    * aws_s3_root ”search path”" %}
+
+3.  Once the processing begins, you'll see messages to indicate the progress and then source and load summary messages after the load is complete.    
