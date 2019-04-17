@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Version
-  version: 5.1 Guides
+  version: 5.2 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -72,6 +72,12 @@ entries:
           output: web,ugBk
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
+          output: web,ugBk
+        - title: Ask an expert
+          url: /end-user/search/ask-an-expert.html
+          output: web,ugBk
+        - title: Retrieve Ask an expert answers
+          url: /end-user/search/retrieve-expert-answer.html
           output: web,ugBk
       - title: Results that are tables
         url: /end-user/search/about-tables.html
