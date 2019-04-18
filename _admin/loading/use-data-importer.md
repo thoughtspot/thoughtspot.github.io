@@ -82,8 +82,8 @@ If you have data in .csv format stored in an AWS bucket, you can load it directl
 2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
     ```
-    $ tsload --source_file "path_to_my_file_on_aws"
-           --target_database "my_database_in_ThoughtSpot" --target_table "my_table_in_the_database_in_ThoughtSpot"
+    $ tsload --source_file "/aws/default/<my_file_in_aws>"
+           --target_database "<my_database_in_ThoughtSpot>" --target_table "<my_table_in_the_database_in_ThoughtSpot>"
     ```       
     This example imports the CSV file `teams.csv` into the table `teams` in the database `temp`:
 
