@@ -91,20 +91,20 @@ If you have data in .csv format stored in an AWS bucket, you can load it directl
     $ tsload --source_file "/aws/default/teams.csv"
            --target_database "temp" --target_table "teams"
     ```       
-    After running this command, you are prompted to enter additional AWS S3 information:
+3. After running the `tsload` command, you are prompted to enter additional AWS S3 information:
 
-    * AWS S3 bucket name.
+    * AWS S3 bucket name
 
-    * AWS S3 region.
+    * AWS S3 region
 
-    * AWS S3 credentials (accesskey;secret_key).
+    * AWS S3 credentials (accesskey;secret_key)
 
     * AWS S3 root (prefix for S3 object search path)
 
-    {% include note.html content="These four pieces of information can be inserted at the beginning of the command (in step 2) by using the following flags:
-    * aws_s3_bucket_name ”bucket name”
-    * aws_s3_region_name ”region name”
-    * aws_s3_credentials ”credentials”
-    * aws_s3_root ”search path”" %}
+    Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
+    * `--aws_s3_bucket_name "<bucket name>"` <br>
+    * `--aws_s3_region_name "<region name>"` <br>
+    * `--aws_s3_credentials "<credentials>"` <br>
+    * `--aws_s3_root "<search path>"`
 
-3.  Once the processing begins, you'll see messages to indicate the progress and then source and load summary messages after the load is complete.    
+4.  Once the processing begins, you'll see messages to indicate the progress and then source and load summary messages after the load is complete.    
