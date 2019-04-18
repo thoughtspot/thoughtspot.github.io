@@ -15,11 +15,11 @@ SearchIQ is a different search experience that understands more natural, speech-
 
 Clicking on the search bar on your homepage, or clicking **Search** in the top menu bar takes you to the search screen.
 
-From here, if SearchIQ has been enabled for you by your administrator, you'll notice a **SearchIQ** toggle button to the right of the search bar. Switch it to the on position.
-
-This puts the search into SearchIQ mode, and you can now type in a search using plain, speech-like language.
+From here, if SearchIQ has been enabled for you by your administrator, you'll notice a **SearchIQ** toggle button to the right of the search bar.
 
  ![]({{ site.baseurl }}/images/choose_searchiq.png "Search bar")
+
+Switch it to the on position. This puts the search into SearchIQ mode, and you can now type in a search using plain, speech-like language.
 
 If you leave the **SearchIQ** setting in the off position, you'll get the [original ThoughtSpot search experience]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html), which uses keywords, column names, and data values.
 

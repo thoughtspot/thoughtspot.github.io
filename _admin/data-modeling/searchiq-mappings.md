@@ -1,30 +1,25 @@
 ---
-title: [Edit the system-wide data model]
-keywords: tbd
-tags: [indexing]
-last_updated: tbd
-summary: "Edit the modeling file to edit your data settings."
+title: [Edit the SearchIQ mappings]
+keywords: SearchIQ, "mappings file", teach
+tags: [SearchIQ]
+last_updated: 4/17/2019
+summary: "Change SearchIQ language settings by editing the mapping file."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you load data, ThoughtSpot uses defaults for data modeling metadata. You
-change these defaults using the data modeling file if you have access to the
+SearchIQ uses language mappings to understand what users mean when they type a term in the search bar that doesn't occur in the data. Users can teach their language to SearchIQ using [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
+
+As an administrator, you can see and change these language mappings using the mappings file. You will be able to get the mappings file if you have access to the
 **ADMIN > Data Management** page. Editing this file allows you to
-view and edit all your system's data columns at once, in bulk. When you (or
-your users) add new data to your system, this file changes as it expands to
-accommodate new data columns.
+view and edit all the language mappings users have made at once, in bulk.
 
-{% include tip.html content="If you just want to change a subset of your data,
-use the [Change a table's data model](model-data-in-UI.html#) instead." %}
+## Overview of the mapping process
 
-## Overview of the modeling process
-
-The data formats you use in your system are controlled by the modeling file, an
-Excel file. To make these changes you download the model file, change the model,
+The language mappings in SearchIQ are controlled by a CSV (comma separated values) file called the mapping file. The mapping file is saved with an .xls file extension, so you can open and edit it using Excel. To make these changes you will download the mapping file, change the mappings,
 and upload your changes back into the system.
 
-In each row of the modeling file, all the data properties corresponding to a
+In each row of the mapping file, all the data properties corresponding to a
 column from your data are listed. You can modify many of these properties by
 typing in the new value. Remember these important guidelines when editing the
 model file:
@@ -41,22 +36,20 @@ The model file must be saved as UTF-8 encoded. If your model file includes
 multi-byte characters, make sure you save it in the correct format or you won't
 be able to upload it after making your changes.
 
-## Download the model file
+## Download the mapping file
 
-Before you can make changes to the model file, you need to download it. Then,
+Before you can make changes to the mapping file, you need to download it. Then,
 you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 
 To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-
-2. Click the **ADMIN** tab in the top navigation bar.
+2. Click the **admin** tab in the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click **Data Management**, then click **Business Data Model**.
-
-4. Click **Download**.
+3. Click **Data Management**, then click **Language Mappings**.
+4. Click **Download model.xls**.
 
     ![]({{ site.baseurl }}/images/download_model.png)
 
@@ -98,11 +91,11 @@ After you have made changes to the modeling file, you must upload it back to
 ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click **ADMIN**, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click **Data Management**, then click **Business Data Model**.
+3. Click **Data Management**, then click **Language Mappings**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 
     ![]({{ site.baseurl }}/images/upload_model.png)

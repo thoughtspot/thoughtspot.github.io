@@ -45,7 +45,7 @@ The hierarchy of SearchIQ language learning is set up like this:
 
 1. Language mappings the user taught SearchIQ
 2. Language mappings the user's [Group members]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) taught SearchIQ
-3. Language mappings set by the administrator
+3. [Language mappings set by the administrator]({{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html)
 
 In this way, SearchIQ provides the best and most customized search experience possible for all users, and your efforts to teach it are valuable to as many people as possible.
 
@@ -53,3 +53,4 @@ In this way, SearchIQ provides the best and most customized search experience po
 
 -   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html)
 -   [Use SearchIQ]({{ site.baseurl }}/end-user/search/use-searchiq.html)
+-   [Modify SearchIQ mappings]({{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html)
