@@ -56,22 +56,22 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> days for each month</td>
-    <td class="tg-dc35"><em>n</em> 月毎の最後の n 日</td>
+    <td class="tg-dc35">月毎の最後の <em>n</em> 日</td>
     <td class="tg-dc35"><code>sales last <b>2 days for each month</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> days for each quarter</td>
-    <td class="tg-us36"><em>n</em> 四半期毎の最後の n 日</td>
+    <td class="tg-us36">四半期毎の最後の <em>n</em> 日</td>
     <td class="tg-us36"><code>revenue last <b>15 days for each quarter</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> days for each week</td>
-    <td class="tg-dc35"><em>n</em> 週毎の最後の n 日</td>
+    <td class="tg-dc35">週毎の最後の <em>n</em> 日</td>
     <td class="tg-dc35"><code>total sold last <b>2 days for each week</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> days for each year</td>
-    <td class="tg-us36"><em>n</em> 年毎の最後の n 日</td>
+    <td class="tg-us36">年毎の最後の <em>n</em> 日</td>
     <td class="tg-us36"><code>revenue last <b>300 days for each year</b></code></td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> hours for each day</td>
-    <td class="tg-dc35"><em>n</em> 日毎の最後の n 時間</td>
+    <td class="tg-dc35">日毎の最後の <em>n</em> 時間</td>
     <td class="tg-dc35"><code>sales last <b>2 hours for each day</b></code></td>
   </tr>
   <tr>
@@ -186,12 +186,12 @@
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> months for each quarter</td>
-    <td class="tg-us36"><em>n</em> 四半期毎の最後の n か月</td>
+    <td class="tg-us36">四半期毎の最後の <em>n</em> か月</td>
     <td class="tg-us36"><code>cost last <b>2 months for each quarter</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> months for each year</td>
-    <td class="tg-dc35"><em>n</em> 年毎の最後の n か月</td>
+    <td class="tg-dc35">年毎の最後の <em>n</em> か月</td>
     <td class="tg-dc35"><code>last <b>8 months for each year</b></code></td>
   </tr>
   <tr>
@@ -291,7 +291,7 @@
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> quarters for each year</td>
-    <td class="tg-us36"><em>n</em> 年毎の最後の n 四半期</td>
+    <td class="tg-us36">年毎の最後の <em>n</em> 四半期</td>
     <td class="tg-us36"><code>last <b>2 quarters for each year</b></code></td>
   </tr>
   <tr>
@@ -321,17 +321,17 @@
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> weeks for each month</td>
-    <td class="tg-us36"><em>n</em> 月毎の最後の n 週</td>
+    <td class="tg-us36">月毎の最後の <em>n</em> 週</td>
     <td class="tg-us36"><code>sales last <b>3 weeks for each month</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35"><em>n</em> weeks for each quarter</td>
-    <td class="tg-dc35"><em>n</em> 四半期毎の最後の n 週</td>
+    <td class="tg-dc35">四半期毎の最後の <em>n</em> 週</td>
     <td class="tg-dc35"><code>last <b>2 weeks for each quarter</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> weeks for each year</td>
-    <td class="tg-us36"><em>n</em> 年毎の最後の n 週</td>
+    <td class="tg-us36">年毎の最後の <em>n</em> 週</td>
     <td class="tg-us36"><code>last <b>3 weeks for each year</b></code></td>
   </tr>
   <tr>
