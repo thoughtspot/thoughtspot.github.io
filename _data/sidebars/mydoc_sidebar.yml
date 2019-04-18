@@ -1002,6 +1002,9 @@ entries:
       - title: Embed pinboard or visualization
         url: /app-integrate/embedding-viz/embed-a-viz.html
         output: web,apgBk
+      - title: Retrieve JSON with the Data API
+        url: /app-integrate/embedding-viz/data-api.html
+        output: web,apgBk
       - title: Authentication flow with embed
         url: /app-integrate/JSAPI/enable-JS-API.html
         output: web,apgBk
