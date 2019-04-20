@@ -15,6 +15,9 @@ If you have access to tables and worksheets for data modeling purposes, you can
 specify columns entity types for different columns in your data sources which
 support the SearchIQ user experience.
 
+If you're not sure how to change the data modeling settings, see the
+[Overview of data modeling settings]({{ site.baseurl}}/admin/data-modeling/data-modeling-settings.html).
+
 ## About Entity Categories
 
 | Category            | Description                                          |

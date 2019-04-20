@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Version
-  version: 5.1 Guides
+  version: 5.2 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -72,6 +72,15 @@ entries:
           output: web,ugBk
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
+          output: web,ugBk
+        - title: Ask an Expert
+          url: /end-user/search/ask-an-expert.html
+          output: web,ugBk
+        - title: Retrieve Ask an Expert answers
+          url: /end-user/search/retrieve-expert-answer.html
+          output: web,ugBk
+        - title: Answer an Ask an Expert question
+          url: /end-user/search/answer-expert-question.html
           output: web,ugBk
       - title: Results that are tables
         url: /end-user/search/about-tables.html
@@ -487,9 +496,6 @@ entries:
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
         output: web,admBk
-      - title: Enable SearchIQ
-        url: /admin/setup/enable-searchiq.html
-        output: web,admBk
       - title: Add the Slack integration
         url: /admin/setup/slack-integration.html
         output: web,admBk
@@ -613,9 +619,6 @@ entries:
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
           output: web,admBk
-        - title: Set entity categories for SearchIQ
-          url: /admin/data-modeling/set-entity-category.html
-          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
@@ -628,9 +631,9 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-      - title: Use stickers
-        url: /admin/data-modeling/stickers-concept.html
-        output: web,admBk
+        - title: Use stickers
+          url: /admin/data-modeling/stickers-concept.html
+          output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
       levelTwoItems:
@@ -690,6 +693,18 @@ entries:
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
+    - levelTwoTitle: Enable SearchIQ for natural language search
+      output: web,admBk
+      levelTwoItems:
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
+        output: web,admBk
+      - title: Set entity categories for SearchIQ
+        url: /admin/data-modeling/set-entity-category.html
+        output: web,admBk
+      - title: Change SearchIQ mappings
+        url: /admin/data-modeling/searchiq-mappings.html
+        output: web,admBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
