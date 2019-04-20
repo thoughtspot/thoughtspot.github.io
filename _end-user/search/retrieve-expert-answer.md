@@ -1,5 +1,5 @@
 ---
-title: ["Retrieve an expert answer"]
+title: ["View an answer from an expert"]
 keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
 last_updated: 4/16/2019
 summary: "Getting an answer back when you use Ask an expert"
@@ -11,7 +11,7 @@ When you use **Ask an expert** to get help, you'll be able to view the answer on
 
 To view the answer:
 
-Click the link in the email you receive automatically when the expert answers your question, or:
+Click the link in the email you receive automatically when the expert answers your question, or if you're not set up with an email in ThoughtSpot:
 
 1. Click **Answers** in the top menu.
 
@@ -19,7 +19,7 @@ Click the link in the email you receive automatically when the expert answers yo
 
 3. View your answer.
 
-The answer will include any changes the expert made, to get to the answer you were looking for. You should review the new answer, to learn from what the expert did to answer your question.
+The answer will include any changes the expert made, to get to the answer you were looking for. You should review the new answer, to learn from the things the expert did to answer your question.
 
 Note that the answer is a full fledged ThoughtSpot answer. This means that you can pin it to a pinboard, edit it, or share it with others, just like the result of any ThoughtSpot search.
 

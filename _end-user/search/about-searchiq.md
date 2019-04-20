@@ -7,11 +7,13 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+In order to understand natural language searches, SearchIQ collects data on searches and user language preferences. More information on what SearchIQ collects is available [here]({{ site.baseurl }}/end-user/search/searchiq-data-collection.html).
+
 SearchIQ is a different search experience that understands more natural, speech-like search language than [the original ThoughtSpot search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html). For example, you can search for `What was my top selling product last month?`, instead of having to type `top 1 product by sales last month`. You can also speak your search using the voice-to-text capability of your operating system.
 
-{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You'll also need to be a member of a group that has the **Can use experimental features** permission." %}
-
 ## How do I use SearchIQ?
+
+{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You'll also need to be a member of a group that has the **Can use experimental features** permission." %}
 
 Clicking on the search bar on your homepage, or clicking **Search** in the top menu bar takes you to the search screen.
 
