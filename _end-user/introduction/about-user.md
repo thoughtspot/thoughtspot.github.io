@@ -24,6 +24,6 @@ You can change your picture by clicking **Upload Picture**. The system accepts
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
 
-## Logging out
+## Signing out
 
 Click **Profile > Sign out** to log out of ThoughtSpot, and return to the sign in page.
