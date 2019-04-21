@@ -343,6 +343,9 @@ entries:
         - title: "Advanced R Customizations"
           url: /spotiq/adv-customize-withr.html
           output: web,ugBk
+        - title: "SpotIQ preferences"
+          url: /spotiq/spotiq-preferences.html
+          output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
       levelTwoItems:
