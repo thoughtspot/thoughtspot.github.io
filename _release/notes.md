@@ -63,7 +63,14 @@ TBD.
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
 
-TBD.
+Table UX Improvements
+* Column header is now left aligned
+* Column widths can be made very narrow
+
+Sort by date on X axis
+* Date format no longer changes when sorting and the axis no longer disappears.
+
+You can now sort using a sort field that is not in your chart.
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
