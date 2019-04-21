@@ -11,7 +11,7 @@ To view the user actions, click your user icon on the top right corner of the pa
  ![]({{ site.baseurl }}/images/user_icon.png "User icon")
 
 Click **Profile** to go to your profile preference page, where you can change
-your icon, email, and locale preferences.  
+your icon, password, and locale preferences.  
 
 ## Language and data format settings
 
