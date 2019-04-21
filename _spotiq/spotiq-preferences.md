@@ -10,11 +10,11 @@ You can specify email notifications behavior along with exclude parameters and
 threshold settings used for your SpotIQ analyses.
 
 You can change your [SpotIQ]({{ site.baseurl }}/spotiq/overview.html) basic
-preferences by checking or unchecking the email and exclude preferences for analyses.
+preferences by checking or unchecking the email and data preferences for analyses.
 
  ![]({{ site.baseurl }}/images/update_preferences.png "Update my preferences")
 
- Click **Insight Threshold Settings** to further refine parameters SpotIQ will use.
+ Under Parameters for analysis, you can further refine parameters SpotIQ will use.
 
  ![]({{ site.baseurl }}/images/update_preferences_spotiq_thresholds.png "Update my preferences")
 
