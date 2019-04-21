@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can allow people in your organization to request access to ThoughtSpot by clicking a button on the sign-in page.
 
-You provide a special ThoughtSpot sign-up URL to the people you want to sign up. Using that special URL, they see the sign-up button on the ThoughtSpot sign-in page.
+You provide a special ThoughtSpot sign-up URL to the people you want to sign up. Using that URL, they see the sign-up button on the ThoughtSpot sign-in page.
 
 ![]({{ site.baseurl }}/images/admin_sign-up.png)
 
