@@ -24,9 +24,11 @@ affects previous saved searches.
 
 ## Create a custom calendar
 
+Before you create your custom calendar, you must enable the custom calendar feature for your ThoughtSpot cluster.
+
 ### Enabling the custom calendar feature
 
-To enable the custom calendar feature for your ThoughtSpot cluster, do the following:
+To enable the custom calendar feature for your cluster, do the following:
 
 1. SSH into your ThoughtSpot cluster as admin.
 
@@ -48,9 +50,9 @@ week_number_of_quarter
 week_number_of_year
 is_weekday
 ```
-Example calendar:
+Example calendar with the fiscal year beginning on April 1:
 
-![]({{ site.baseurl }}/images/custom_cal.png)
+      ![]({{ site.baseurl }}/images/custom_cal.png)
 
 
 2. Save your calendar as a .csv file.
@@ -74,7 +76,7 @@ Example calendar:
 
 8. Under Column Name, find a column that you want to set to use your custom calendar and scroll right until you see the Calendar Type column.
 
-   {% include note.html content="The column must use the DATE data type.." %}
+   {% include note.html content="The column must use the DATE data type." %}
 
 9. In the Calendar Type column for the column you chose, double-click the existing calendar name, and then select your custom calendar.
 
