@@ -720,8 +720,8 @@ entries:
       - title: Add, edit, or delete a user
         url: /admin/users-groups/add-user.html
         output: web,admBk
-      - title: Allow users to request access
-        url: /admin/users-groups/request-access.html
+      - title: Allow users to sign up
+        url: /admin/users-groups/sign-up.html
         output: web,admBk
     - levelTwoTitle: Manage jobs
       output: web,admBk
