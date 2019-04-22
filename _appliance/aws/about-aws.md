@@ -1,5 +1,5 @@
 ---
-title: [AWS node overview]
+title: [AWS cluster overview]
 keywords: aws,appliance,overview
 tags: [cloud,vm]
 last_updated: tbd
