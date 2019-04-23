@@ -1107,9 +1107,15 @@ entries:
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs
-    - levelTwoTitle: AWS node
+    - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
+      - title: Cloud overview
+        url: /appliance/cloud.html
+        output: web,appQs
+      - levelThreeTitle: AWS
+        output: web,appQs
+        levelThreeItems:
         - title: AWS cluster overview
           url: /appliance/aws/about-aws.html
           output: web,appQs
@@ -1119,9 +1125,9 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: Azure node
-      output: web,appQs
-      levelTwoItems:
+      - levelThreeTitle: Azure
+        output: web,appQs
+        levelThreeItems:
         - title: Azure cluster overview
           url: /appliance/azure/about-azure.html
           output: web,appQs
@@ -1131,19 +1137,16 @@ entries:
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: GCP node
-      output: web,appQs
-      levelTwoItems:
+      - levelThreeTitle: GCP
+        output: web,appQs
+        levelThreeItems:
         - title: GCP cluster overview
           url: /appliance/gcp/about-gcp.html
-          output: web,appQs
-        - title: Configuration options
-          url: /appliance/gcp/configuration-options.html
           output: web,appQs
         - title: Set up GCP for ThoughtSpot
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: VMware node
+    - levelTwoTitle: VMware
       output: web,appQs
       levelTwoItems:
         - title: Configuration overview
