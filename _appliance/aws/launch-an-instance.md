@@ -86,6 +86,10 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 12.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
 13.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
 
+## Load data from AWS S3
+
+For details on how to load data from AWS S3, refer to [Loading data from an AWS S3 bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+
 ## Related information  
 
 [EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
