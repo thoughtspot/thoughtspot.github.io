@@ -231,7 +231,15 @@ See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) open th
 'sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-f756f1ee.efs.us-west-1.amazonaws.com:/ /home/admin/efs/'
 Make sure read and write permissions are provided on all cluster EFS mount points. use: `chmod 777 /home/admin/efs`
 
-5. Go to First cluster. Create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Below are sample commands: 
+5. Go to First cluster. Create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Below are sample commands:
+`tscli snapshot create EfsTest HA 2`
+`tscli backup create --mode full --type full --storage_type local EfsTest /home/admin/efs/Efs-backup`
+6. Make sure the backup is created and accessible from all the clusters where EFS is mounted. In our cases both the clusters.
+7. Now bring down the first cluster instances.
+8. Go to Second cluster, delete existing cluster and create new one by restoring from the first cluster backup which is accessible from efs mount point.
+Example: `tscli cluster restore /home/admin/EFS/Efs-backup`
+
+Cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for Thoughtspot clusters.
 
 ## Load data from AWS S3
 
