@@ -24,9 +24,9 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
     <span class="wistia_embed wistia_async_rd51azkfw4 popover=true popoverAnimateThumbnail=true videoFoam=true"
     style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
     </div>
-    <p style="text-align: center;"><b>ThoughtSpot Overview</b></p>
+    <p style="text-align: center;"><b>Getting Started</b></p>
     <p>
-    Introduction to the user interface and basic search in ThoughtSpot.
+    Introduction to ThoughtSpot.
     </p>
     </div>
         <div class="col-sm-12 col-md-12 col-lg-4 block">
