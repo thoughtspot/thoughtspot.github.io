@@ -219,6 +219,20 @@ See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) open th
 
 4. Verify the AWS instance is deployed from console.
 
+## Providing HA for ThoughtSpot Cluster using AWS EFS (Elastic File System)
+
+1. Create EFS File System spanning across different availability zones and different subnets.
+
+2. Create two ThoughtSpot clusters in each availability zone and in the subnets where the above file system was created.
+
+3. Change the IP addresses of the cluster (if needed).
+
+4. Create efs <customizable name> directory in /home/admin path and issue below command to mount the above created file system, editing the below sample link:
+'sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-f756f1ee.efs.us-west-1.amazonaws.com:/ /home/admin/efs/'
+Make sure read and write permissions are provided on all cluster EFS mount points. use: `chmod 777 /home/admin/efs`
+
+5. Go to First cluster. Create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Below are sample commands: 
+
 ## Load data from AWS S3
 
 For details on how to load data from AWS S3, refer to [Loading data from an AWS S3 bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
