@@ -38,27 +38,15 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 - Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Please check <above> for recommended nodes for a given data size.
 - Also for staging larger datasets (> 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD (gp2) provisioned.
 
-##  Launch an instance
+## Steps to set up a ThoughtSpot cluster on AWS
 
-Follow these steps to set up the VMs and launch ThoughtSpot.
-
-### Overview
-
-ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for your EC2 details:
-
--   EC2 instance type: r4.16xlarge.
--   Networking requirement: 10GbE network is needed between the VMs. This is the default for the chosen VM type.
--   Security: VMs need to be accessible from each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
--   Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Also for staging larger datasets (\> 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD gp2 provisioned.
-
-
-###  Contact support and set your region
+###  Contact ThoughtSpot support to get access to ThoughtSpot AMIs
 
 1. Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 2. Provide ThoughtSpot Support with your AWS account ID and the region where the VMs will be hosted.
    Support will grant you permissions and share the current ThoughtSpot base AMI with you.
 
-    {% include note.html content="You can find your account ID and region on the top right corner of the AWS console." %}
+    {% include note.html content="You can find your account ID and region on the top-right corner of the AWS console." %}
 
      ![]({{ site.baseurl }}/images/aws_account_id_region.png "AWS account ID and region")
 
@@ -67,41 +55,169 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
      ![]({{ site.baseurl }}/images/navigate_to_ec2_dashboard.png "Navigate to the EC2 Dashboard")
 
 4. Make sure your selected region is correct on the top right corner of the dashboard.
-   If not, select a different region you would like to launch your instance in. Let ThoughtSpot Support know if you change your region.
+   If not, select a different region you would like to launch your instance in. Let ThoughtSpot support know if you change your region.
 
      ![]({{ site.baseurl }}/images/select_region.png "Select a region to launch your instance in")
 
-## Create an instance
+### Choose the VM instance recommended by ThoughtSpot
+(See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) )
 
-1. Create an instance by clicking **Launch Instance**.
+1. Start the process of launching a VM by clicking **Launch Instance**.
 
      ![]({{ site.baseurl }}/images/launch_instance.png "Launch an instance")
 
-2. Select the appropriate AMI from the AMI Selection step by clicking **Select**.
-
-   The ThoughtSpot shared AMI can be found under the **My AMIs** tab.
+2. Click the **My AMIs** tab, find the ThoughtSpot AMI from the list, and click **Select**.
 
      ![]({{ site.baseurl }}/images/select_the%20ami.png "Select the AMI")
 
-3. Select `r4.16xlarge` as the instance type.
+3. On the Choose and Instance Type page, select a ThoughtSpot-supported instance type.
+   (See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) )        
 4. Click **Next: Configure Instance Details**.
-5. Configure the instances by choosing the number of EC2 instances you need based on your EC2 details.
-   The instances need to be on the same VPC and subnetwork.
+5. Configure the instances by choosing the number of EC2 instances you need.
+   The instances need to be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.
 6. Click **Next: Add Storage**.
     The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned.
 7. Click **Next: Add Tags** when you are done modifying the storage size.
 8. Set a name for tagging your instances and click **Next: Configure Security Group**.
 9. Select an existing security group to attach new security groups to such that it meets the security requirements for ThoughtSpot.
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster needs to be accessible from one another. For easier configuration, it is better to open all accesses from across VMs in a cluster.</li> <li>Additionally, more ports need to be opened on the VM to provide data staging capabilities to your network. Check the network ports reference to determine the minimum required ports that need to be opened for your ThoughtSpot appliance.</li></ul>
+    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster needs to be accessible from one another. For easier configuration, it is recommended that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports need to be opened on the VM to provide data staging capabilities to your network. Check [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) to determine the minimum required ports that must be opened for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
-
 
 10.  Click **Review and Launch**. After you have reviewed your instance launch details, click **Launch**.
 11.  Choose a key pair.
-      A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you should create one, otherwise you won’t be able to SSH into the AWS instance later on.
+      A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.
 12.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
-13.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
+13.  Contact ThoughtSpot support to complete your ThoughtSpot installation.
+     They will set up the VM instances to be part of the cluster.
+14.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
+
+## Open relevant network ports
+
+See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) open the right network ports for traffic from end users as well as between ThoughtSpot nodes in a cluster.
+
+## Deploying an AWS instance using Cloud Formation CLI
+
+1. A ThoughtSpot cluster requires AWS nodes to be configured with EBS volumes.
+
+2. Below is a Sample JSON file to deploy an AWS instance, please edit the values to the keys as per requirement.
+
+
+   `{`
+
+   `"AWSTemplateFormatVersion" : "2010-09-09",`
+
+   `"Description" : "Thoughtspot Ec2 Instance",`
+
+   `"Resources" : {`
+
+   `"EC2Instance" : {`
+
+   `"Type" : "AWS::EC2::Instance",`
+
+   `"Properties" : {`
+
+   `"AvailabilityZone" : "us-west-2c",`
+
+   `"ImageId" : "ami-08aaf182e43599854",`
+
+   `"KeyName" : "<key pair>",`
+
+   `"InstanceType" : "r4.16xlarge",`
+
+   `"BlockDeviceMappings" : [`
+
+   `{`
+
+   `"DeviceName" : "/dev/xvda",`
+
+   `"Ebs" : {`
+
+   `"SnapshotId": "snap-01e554619c99184cf",`
+
+   `"VolumeType" : "gp2",`
+
+   `"DeleteOnTermination" : "true",`
+
+   `"VolumeSize" : "200"`
+
+   `}`
+
+   `},`
+
+   `{`
+
+   `"DeviceName" : "/dev/xvdb",`
+
+   `"Ebs" : {`
+
+   `"SnapshotId": "snap-012d2e12313e1cdb2",`
+
+   `"VolumeType" : "gp2",`
+
+   `"DeleteOnTermination" : "true",`
+
+   `"VolumeSize" : "1024"`
+
+   `}`
+
+   `},`
+
+   `{`
+
+   `"DeviceName": "/dev/xvdc",`
+
+   `"Ebs": {`
+
+   `"SnapshotId": "snap-0ab3b43966023820a",`
+
+   `"DeleteOnTermination": true,`
+
+   `"VolumeType": "gp2",`
+
+   `"VolumeSize": "1024"`
+
+   `}`
+
+   `}`
+
+   `],`
+
+   `"EbsOptimized" : true,`
+
+   `"NetworkInterfaces": [`
+
+   `{`
+
+   `"DeviceIndex": 0,`
+
+   `"Description": "Primary network interface",`
+
+   `"SubnetId": "subnet-3aaf9e63",`
+
+   `"DeleteOnTermination": true,`
+
+   `"GroupSet": [`
+
+   `"sg-0e2725bca060835ea"`
+
+   `]`
+
+   `}`
+
+   `]`
+
+   `}`
+
+   `}`
+
+   `}`
+
+   `}`
+
+3. aws cloudformation create-stack --stack-name testing --template-body file:///<json-file-path> --capabilities CAPABILITY_IAM
+
+4. Verify the AWS instance is deployed from console.
 
 ## Load data from AWS S3
 
