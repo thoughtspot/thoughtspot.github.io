@@ -1,5 +1,5 @@
 ---
-title: ["SpotIQ 101: Do more with SpotIQ"]
+title: ["SpotIQ 101: Review insights"]
 tags: [spotiq]
 keywords:
 last_updated: tbd
