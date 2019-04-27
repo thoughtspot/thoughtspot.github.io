@@ -334,17 +334,14 @@ entries:
         - title: "101: Do more with SpotIQ"
           url: /spotiq/spotiq-customize.html
           output: web,ugBk
-        - title: "Best SpotIQ practices"
+        - title: "Best SpotIQ Practices"
           url: /spotiq/special-topics.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
           output: web,ugBk
-        - title: "Advanced R customizations"
+        - title: "Advanced R Customizations"
           url: /spotiq/adv-customize-withr.html
-          output: web,ugBk
-        - title: "Insight feedback"
-          url: /spotiq/insight-feedback.html
           output: web,ugBk
         - title: "SpotIQ preferences"
           url: /spotiq/spotiq-preferences.html
