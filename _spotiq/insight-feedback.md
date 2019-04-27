@@ -1,7 +1,7 @@
 ---
-title: ["Insight feedback"]
+title: [Insight feedback]
 tags: [spotiq]
-keywords:
+keywords: SpotIQ, feedback
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
