@@ -21,6 +21,7 @@ fixed issues from the previous releases, and any known issues.
 If you are running one of the following versions, you can upgrade to the 5.2 release
 directly:
 
+* 4.5.x to 5.2
 * 5.0.x to 5.2
 * 5.1.x to 5.2
 
