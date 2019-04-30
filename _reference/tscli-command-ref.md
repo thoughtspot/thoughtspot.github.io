@@ -24,7 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,sssd,ssl,storage,support,tokenauthentication}
+           {access,alert,ansible, backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,sssd,ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -81,6 +81,18 @@ Use this subcommand to do the following:
 
    Unsilences the alert with *`alert_name`*. For example, `DISK_ERROR`.
 
+### ansible
+
+   ```
+   tscli ansible [-h] {checkout,commit} [--local] ...
+   ```
+
+   Use this subcommand to install and configure third party software on the ThoughtSpot cluster.
+
+   For details, see:
+
+   - [About third party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#)
+   - [Installing third party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)
 
 ### backup
 
