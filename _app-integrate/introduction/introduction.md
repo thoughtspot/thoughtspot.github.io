@@ -17,7 +17,7 @@ Here are the top level topics on application integration:
 * [Using the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/about-JS-API.html)
 * [SAML]({{ site.baseurl }}/app-integrate/SAML/about-SAML-integrations.html)
 * [REST API]({{ site.baseurl }}/app-integrate/data-api/about-data-api.html)
-* [Emdbed ThoughtSpot]({{ site.baseurl }}/app-integrate/embedding-viz/about-embedding-viz.html)
+* [Embed ThoughtSpot]({{ site.baseurl }}/app-integrate/embedding-viz/about-embedding-viz.html)
 * [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html)
 * [Style Customization]({{ site.baseurl }}/app-integrate/custom-branding/perform-style-customization.html)
 * [API Reference]({{ site.baseurl }}/app-integrate/reference/public-api-reference.html)
