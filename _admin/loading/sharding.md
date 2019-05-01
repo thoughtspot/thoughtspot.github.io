@@ -74,7 +74,7 @@ in your cluster:
 |49-60|640|
 |61-72|768|
 
-If you omit the `PARTION BY HASH` statement or if the `HASH` parameter is 1
+If you omit the `PARTITION BY HASH` statement or if the `HASH` parameter is 1
 (one), the table is unsharded. This also means the table physically exists in
 its entirety on each node.
 
@@ -93,7 +93,7 @@ TQL> CREATE TABLE "supplier" (
 ```
 
 The system does not use primary keys as sharding keys by default. If you specify
-the `PARTION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
+the `PARTITION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
 `KEY` parameter_ ThoughtSpot shards the table randomly. This is not recommended;
 avoid this by always ensuring you specify the `KEY` parameter with a HASH
 greater than 1 (one).
