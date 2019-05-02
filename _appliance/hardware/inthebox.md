@@ -38,7 +38,7 @@ When your ThoughtSpot appliance arrives, the following items will be included:
 * Data center with proper cooling
 * 2U of rack space per appliance (post depth 26.5" - 36.4")
 * AC power
-  **Attention:** Refer to [Ivy Bridge and Haswell hardware details](inthebox.html#hardware-provided-by-thoughtspot) for power input requirements.
+  **Attention:** Refer to [Ivy Bridge and Haswell hardware details]({{ site.baseurl }}/appliance/hardware/hardware-and-deployment.html) for power input requirements.
 * 10GbE infrastructure (switch) - 1x port required / node
 * 100MbE infrastructure (switch) - 1x port required /node
 * Network cable Cat 5e/6 (node management)<sup>1</sup>
