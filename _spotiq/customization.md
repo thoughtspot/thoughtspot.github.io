@@ -6,31 +6,30 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Everywhere in ThoughtSpot where you can **Auto Analyze** with ThoughtSpot, you
-can also configure a customized SpotIQ analysis. The customized analysis can be
+Everywhere in ThoughtSpot where you can run **SpotIQ analyze** , you
+can configure a customized SpotIQ analysis. The customized analysis can be
 a one-time customization or can apply to all future analysis of that particular
 data source.
 
 ## Finding customization controls
 
-Every menu or location where you can **Auto Analyze** with ThoughtSpot, you
-can also choose **Custom Analyze**. It looks like this:
+Every menu or location where you can run **SpotIQ analyze**, you
+can customize your analysis. You access it using the lightbulb button ![more options menu icon]({{ site.baseurl }}/images/icon-lightbulb.png){: .inline} or the ellipses menu ![SpotIQ analyze icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 ![]({{ site.baseurl }}/images/spotiq-where-customize.png)
 
-Regardless of where you are in the ThoughtSpot UI, the SpotIQ **Customize
-Analysis** dialog has the same layout. The columns, of course, are specific to
+Regardless of where you are in the ThoughtSpot UI, the SpotIQ **SpotIQ
+analysis** window has the same layout. The columns, of course, are specific to
 the data you launched the dialog from.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
 
-This dialog has three tabs:
-* **Included columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
-* **Excluded columns**, where you can explicitly indicate which columns to exclude in an SpotIQ analysis. (You can select all, some, or none.)
-* **Customize Algorithms**, where you can run custom analyses and incorporate R scripts into SpotIQ.
+This dialog has two tabs:
+* **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
+* **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
-The **Customize Algorithms** is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
+The **Advanced** tab is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 
