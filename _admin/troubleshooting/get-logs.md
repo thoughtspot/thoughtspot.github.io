@@ -95,7 +95,7 @@ This command collects logs from a specific time window:
 $ tscli logs collect --include system,orion --from 20150520-12:00 --to 20150522-12:30
 ```
 
-Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag.
+Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag. 
 
 ```
 $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --since 2h
