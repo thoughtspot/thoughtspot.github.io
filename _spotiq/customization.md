@@ -18,8 +18,7 @@ can customize your analysis. You access it using the lightbulb button ![more opt
 
 ![]({{ site.baseurl }}/images/spotiq-where-customize.png)
 
-Regardless of where you are in the ThoughtSpot UI, the SpotIQ **SpotIQ
-analysis** window has the same layout. The columns, of course, are specific to
+Regardless of where you are in the ThoughtSpot UI, the **SpotIQ** window has the same layout. The columns, of course, are specific to
 the data you launched the dialog from.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
