@@ -12,14 +12,16 @@ When you click dislike, you can provide more details on why you disliked the ins
 
 The following are examples of questions based on different types of insights.
 
-Anomaly insight: <br>
+*Anomaly insight:* <br>
 ![]({{ site.baseurl }}/images/anomaly_insight.png)
 
-Trend insight: <br>
+*Trend insight:* <br>
 ![]({{ site.baseurl }}/images/trend_insight.png)
 
-Cross-correlation insight: <br>
+*Cross-correlation insight:* <br>
 ![]({{ site.baseurl }}/images/cross_corr_insight.png)
+
+{% include note.html content="Feedback is enabled for insights generated from Spotiq analyze but not instant insights that are computed in the background."%}
 
 ### Feedback tab
 

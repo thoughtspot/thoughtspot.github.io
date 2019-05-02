@@ -18,17 +18,17 @@ can customize your analysis. You access it using the lightbulb button ![more opt
 
 ![]({{ site.baseurl }}/images/spotiq-where-customize.png)
 
-Regardless of where you are in the ThoughtSpot UI, the **SpotIQ** window has the same layout. The columns, of course, are specific to
-the data you launched the dialog from.
+Regardless of where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the same layout. The columns displayed, though, are specific to
+the data from which you run **SpotIQ analyze**.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
 
-This dialog has two tabs:
+This window has two tabs:
 * **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
 * **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
-The **Advanced** tab is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
+The **Advanced** tab has many options. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 
