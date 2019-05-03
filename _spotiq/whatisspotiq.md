@@ -41,8 +41,3 @@ own results from several different locations in your system:
 The menu items that use SpotIQ have a label that indicates this:
 
 ![]({{ site.baseurl }}/images/spotiq-menu-items.png)
-
-## How do you use SpotIQ?
-
-The best way to learn how to use SpotIQ is to try it for your self.
-The [SpotIQ 101 tutorial](overview.html) walks you through a simple example.

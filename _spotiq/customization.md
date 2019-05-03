@@ -6,45 +6,43 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Everywhere in ThoughtSpot where you can **Auto Analyze** with ThoughtSpot, you
-can also configure a customized SpotIQ analysis. The customized analysis can be
+Everywhere in ThoughtSpot where you can run **SpotIQ analyze**, you
+can configure a customized SpotIQ analysis. The customized analysis can be
 a one-time customization or can apply to all future analysis of that particular
 data source.
 
 ## Finding customization controls
 
-Every menu or location where you can **Auto Analyze** with ThoughtSpot, you
-can also choose **Custom Analyze**. It looks like this:
+Every menu or location where you can run **SpotIQ analyze**, you
+can customize your analysis. You access it using the lightbulb button ![more options menu icon]({{ site.baseurl }}/images/icon-lightbulb.png){: .inline} or the ellipses menu ![SpotIQ analyze icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 ![]({{ site.baseurl }}/images/spotiq-where-customize.png)
 
-Regardless of where you are in the ThoughtSpot UI, the SpotIQ **Customize
-Analysis** dialog has the same layout. The columns, of course, are specific to
-the data you launched the dialog from.
+Regardless of where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the same layout. The columns displayed, though, are specific to
+the data from which you run **SpotIQ analyze**.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
 
-This dialog has three tabs:
-* **Included columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
-* **Excluded columns**, where you can explicitly indicate which columns to exclude in an SpotIQ analysis. (You can select all, some, or none.)
-* **Customize Algorithms**, where you can run custom analyses and incorporate R scripts into SpotIQ.
+This window has two tabs:
+* **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
+* **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
-The **Customize Algorithms** is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
+The **Advanced** tab has many options. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 
-The **SpotIQ** insights page has an option for this dialog and also an option to
+The **SpotIQ** insights page has an option to open this window to
 customize a single analysis.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-locations.png)
 
-The **Improve Analysis** dialog always excludes a value from all future analysis.
+The **Tell us more** window provides information on how to exclude a value from all future analysis.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-improve-analysis.png)
 
-You can set a subset of SpotIQ customization parameters in your
-[profile preferences]({{ site.baseurl }}/_end-user/introduction/about-user.html), along with options for email notifications when analyses run.
+You can set SpotIQ customization parameters in your
+[SpotIQ preferences]({{ site.baseurl }}/_spotiq/spotiq-preferences.html), along with options for email notifications when analyses run.
 
 ## Eliminate null values
 
@@ -58,7 +56,7 @@ Null values should be eliminated from your analysis.
   <tr>
     <td>
     <!-- next -->
-    <p>In the Search bar, add a filter <code><i>column</i>!= Null</code> to the search bar. Or choose <b>Exclude null values from current analysis</b>, using the <b>Customize algorithms</b> panel.</p>
+    <p>In the Search bar, add a filter <code><i>column</i>!= Null</code> to the search bar. Or choose <b>Exclude null values from current analysis</b>, using the <b>Advanced</b> panel.</p>
     </td>
     <td>
     <!-- future -->
@@ -79,18 +77,14 @@ You should always exclude columns you are not interested from your analysis.
   <tr>
     <td>
     <!-- next -->
-    <p>Exclude a column using <b>Improve Analysis</b> on a visualization. Or set the value through the <b>Excluded columns</b> tab of the <b>Customize Analysis</b> panel.</p>
-    </td>
-    <td>
-    <!-- future -->
-    Choose <b>Also exclude from all my future analysis</b> on the <b>Excluded columns</b> tab of the <b>Customize Analysis</b> panel. Alternatively, exclude using the <b>Improve Analysis</b> dialog on an insight that uses the column you want to exclude.
+    <p>Use the <b>EXCLUDE</b> option of <b>SPOTIQ PREFERENCE</b> under the <b>DATA</b> tab to exclude any column permanently from all future analysis.</p>
     </td>
   </tr>
 </table>
 
 ## Include an interesting column
 
-You can always includes columns that interest you in your analysis.  
+You can always include columns that interest you in your analysis.  
 
 <table>
   <tr>
@@ -100,11 +94,11 @@ You can always includes columns that interest you in your analysis.
   <tr>
     <td>
     <!-- next -->
-    <p>Choose <b>Customize Analysis</b> and select to <b>Include columns</b> that you want to appear.</p>
+    <p>Choose <b>Customize analysis</b> and select columns that you want to include.</p>
     </td>
     <td>
     <!-- future -->
-    Ensure **Index Priority** is between 8-10 on the column through data modeling.
+    Ensure <b>Index Priority</b> is between 8-10 on the column under the <b>DATA</b> tab.
     </td>
   </tr>
 </table>
@@ -112,7 +106,7 @@ You can always includes columns that interest you in your analysis.
 
 ## Remove known date outliers
 
-Your data may contain known outliers. For example, you are in the middle of a quarter and only want to analyize the previous quarter. Anything from the present quarter could contain an outlier.
+Your data may contain known outliers. For example, you are in the middle of a quarter and only want to analyze the previous quarter. Anything from the present quarter could contain an outlier.
 
 <table>
   <tr>
@@ -143,7 +137,7 @@ Your SpotIQ analysis may not provide you as many insights as you think it should
   <tr>
     <td>
     <!-- next -->
-    <p>Choose <b>Customize Analysis</b> and <b>Customize algorithms</b> Decrease the <b>Multiplier for Outlier Detection</b> to a value closer to zero.
+    <p>Choose <b>Customize analysis</b>, select the <b>Advanced</b> tab, and decrease the <b>Multiplier for Outlier Detection</b> to a value closer to zero.
 </p>
 </td>
     <td>
