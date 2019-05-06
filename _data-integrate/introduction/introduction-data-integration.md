@@ -70,7 +70,7 @@ each method:
       <td>You can use the ODBC driver to connect to SSIS and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
     <tr>
-      <td><a href="{{"/data-integrate/pentaho/about-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
+      <td><a href="{{"/data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
       <td>You can use the JDBC driver to connect to Pentaho and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
   </tbody>
