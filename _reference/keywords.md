@@ -77,6 +77,10 @@ Also, see the topic on how to set [locale preferences in your user profile]({{ s
 
 {% include content/keywords-period.md %}
 
+## In
+
+{% include content/keywords-in.md %}
+
 <!-- ## Help
 
 {% include content/keywords-help.md %} -->
