@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 The replay feature shows how to create the chart or table you are viewing. Use it to teach yourself, or take a screen recording of it and create your own ThoughtSpot training for your team.
 
-* When viewing a chart or table, click the three-dot **Actions** icon and select **Replay search**.
+* When viewing a chart or table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Replay search**.
 
      ![]({{ site.baseurl }}/images/replay_search_icon.png "The Replay search icon")
 
