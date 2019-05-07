@@ -35,31 +35,31 @@ First, upgrade to one of the above versions, and then to the 5.2 release.
 
 ### Favorites
 
-TBD.
+If you frequently go back to look at certain Answers or Pinboards, you can now use Favorites to find them faster than ever before. Click the Favorite icon ![Favorite icon]({{ site.baseurl }}/images/icon-favorite.png){: .inline} for an Answer or Pinboard, and it will be added to the Favorites list on the Answers and Pinboard pages, as well as the ThoughtSpot home page.
 
 ### Custom calendars
 
-TBD.
+You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure that when you search for ‘last quarter’ you will get results that reflect your company's last fiscal quarter.
 
 ### Ask an Expert
 
-TBD.
+Sometimes making a decision based on data is so challenging that you need an expert opinion from someone else. This is what the Ask an Expert feature is all about. Below the results of a Search or Answer, you click **Ask an expert** to send a question to ThoughtSpot users in your organization who are the most familiar with the data set used for the search.  They will receive your question, the search terms used, and the results. This information will give them the context they need to provide clarification, and even updated search terms, if necessary.
 
-### Inline subquery for filtering
+### IN subquery for filtering
 
-TBD.
+With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s two queries. The first one, to get the top 10 stores in terms of net margin last month, and the second one, to see what the sales were for those stores this month.  Before the IN subquery, you would need to save a view to get this answer.
 
 ### Support for small and medium cloud instance types
 
-TBD.
+One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100GB), ThoughtSpot supports “small” (20GB data) and “medium” (100GB data) instance types as shown in the table to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
 
 ### Cluster shutdown and restart to save infrastructure costs
 
-TBD.
+If you do not need your ThoughtSpot cluster to be up and running 24x7, you can shut down the cluster and restart it during expected usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments.
 
 ### Ability to upload .CSV data from an AWS S3 bucket
 
-TBD.
+If you have data in .csv format stored in an AWS bucket, you can now load it directly to ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
 
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
