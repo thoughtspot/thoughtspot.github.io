@@ -167,12 +167,9 @@ ThoughtSpot recommends following these guidelines to help reduce the cost of you
 
 ### Use small and medium instance types
 
-For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100GB), ThoughtSpot supports “small” (20GB data) and “medium” (100GB data) instance types as shown in the table above to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128GB/256 RAM). Additional configuration is needed prior to any data being loaded onto these instances. The configuration is enforced via TSCLI commands as follows:
+For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100GB), ThoughtSpot supports “small” (20GB data) and “medium” (100GB data) instance types as shown in the table above to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.
 
-`$ tscli --adv config-mode lean -h
-usage: tscli config-mode lean [-h] --type {small,medium,default}`
-
-Use the "small" option for 16vCPU/~128GB RAM and the "medium" option for the 32vCPU/~256B RAM options.
+Please contact ThoughtSpot support for assistance with this configuration.
 
 ### Shut down and restart your cluster
 

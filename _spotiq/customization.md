@@ -146,3 +146,9 @@ Your SpotIQ analysis may not provide you as many insights as you think it should
     </td>
   </tr>
 </table>
+
+## Explaining Anomaly Insights
+
+When SpotIQ finds insights with anomaly points, you have the option to run the Explain Insight command to have SpotIQ do further analysis on the anomaly points.
+
+![]({{ site.baseurl }}/images/spotiq-explain-insight-1.png)
