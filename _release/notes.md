@@ -55,7 +55,7 @@ One size does not fit all when it comes to the cloud. You need flexibility to ch
 
 ### Cluster shutdown and restart to save infrastructure costs
 
-If you do not need your ThoughtSpot cluster to be up and running 24x7, you can shut down the cluster and restart it during expected usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#shut-down-and-restart-your-clusters).
+If you do not need your ThoughtSpot cluster to be up and running 24x7, you can shut down the cluster and restart it during expected usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
 
 ### Ability to upload .CSV data from an AWS S3 bucket
 
@@ -64,7 +64,7 @@ If you have data in .csv format stored in an AWS bucket, you can now load it dir
 ### Allow users to sign up for ThoughtSpot
 
 You can now allow people in your organization to sign up for ThoughtSpot by clicking a button on the sign-in page. When a person clicks the sign-up button, they go to a sign-up page that you’ve already set up outside of ThoughtSpot. This can be any page you want to use for registering new users.
-For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html). 
+For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html).
 
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
