@@ -43,7 +43,11 @@ You can now add a custom fiscal calendar for your company. This is important if 
 
 ### Ask an Expert
 
-Sometimes making a decision based on data is so challenging that you need an expert opinion from someone else. This is what the Ask an Expert feature is all about. Below the results of a Search or Answer, you click **Ask an expert** to send a question to ThoughtSpot users in your organization who are the most familiar with the data set used for the search.  They will receive your question, the search terms used, and the results. This information will give them the context they need to provide clarification, and even updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
+Sometimes making a decision based on data is so challenging that you need an expert opinion from someone else. This is what the Ask an Expert feature is all about. Below the results of a Search or Answer, click **Ask an expert** to send a question to ThoughtSpot users in your organization who are the most familiar with the data set used for the search.  They will also receive the search terms used, and the results. With this information, they will have the context they need to provide clarification, and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
+
+### ThoughtSpot mobile beta
+
+Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <mobile_beta@thoughtspot.com>.  
 
 ### IN subquery for filtering
 
