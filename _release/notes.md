@@ -47,7 +47,7 @@ Sometimes making a decision based on data is so challenging that you need an exp
 
 ### ThoughtSpot mobile beta
 
-Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <mobile_beta@thoughtspot.com>.  
+Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <mobile_beta@thoughtspot.com?subject=ThoughtSpot Mobile Beta">.  
 
 ### IN subquery for filtering
 
