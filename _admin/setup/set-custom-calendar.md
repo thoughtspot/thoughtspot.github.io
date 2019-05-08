@@ -32,7 +32,7 @@ To enable the custom calendar feature for your cluster, do the following:
 
 1. SSH into your ThoughtSpot cluster as admin.
 
-2. Run the following command: `tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true`
+2. Run the following command: `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true`
 
 ### Creating a custom calendar
 
@@ -66,10 +66,10 @@ Example calendar with the fiscal year beginning on April 1:
 4. Upload your .csv file to the `home/admin directory`.
 
 5. Add the new custom calendar to your cluster, by running the following command:
-   `tscli calendar --adv create --file_path <file path of csv> --name <calendar name> --username <username>`
+   `tscli calendar create --file_path <file path of csv> --name <calendar name> --username <username>`
 
    Example:
-   `tscli calendar --adv create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin`
+   `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin`
 6. From a browser, sign in to your ThoughtSpot cluster and click **DATA**.
 
 7. On the DATA page, click the name of a worksheet, table or view.
@@ -89,7 +89,7 @@ To set your custom calendar as the default calendar for your cluster, do the fol
 1. SSH into your ThoughtSpot cluster as admin.
 
 2. Run the following command:
-   `tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar <calendar_name>`
+   `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar <calendar_name>`
 
    Example:
-   `tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar my_calendar`
+   `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar my_calendar`
