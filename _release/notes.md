@@ -33,6 +33,10 @@ First, upgrade to one of the above versions, and then to the 5.2 release.
 {: id="52-new"}
 ## 5.2 New Features and Functionality
 
+### ThoughtSpot mobile beta
+
+Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <mobile_beta@thoughtspot.com>.
+
 ### Favorites
 
 If you frequently go back to look at certain Answers or Pinboards, you can now use Favorites to find them faster than ever before. Click the Favorite icon ![Favorite icon]({{ site.baseurl }}/images/icon-favorite.png){: .inline} of an Answer or Pinboard, and it will be added to the Favorites list on the Answers and Pinboard pages, as well as the ThoughtSpot home page.
@@ -44,10 +48,6 @@ You can now add a custom fiscal calendar for your company. This is important if 
 ### Ask an expert
 
 Sometimes making a decision based on data is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to send a question to ThoughtSpot users in your organization who are the most familiar with the data set used for the search.  They will also receive the search terms used, and the results. With this information, they will have the context they need to provide clarification, and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
-
-### ThoughtSpot mobile beta
-
-Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <mobile_beta@thoughtspot.com>.  
 
 ### IN subquery for filtering
 
