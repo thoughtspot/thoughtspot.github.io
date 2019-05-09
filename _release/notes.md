@@ -35,7 +35,7 @@ First, upgrade to one of the above versions, and then to the 5.2 release.
 
 ### ThoughtSpot mobile beta
 
-Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, contact us at: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
+Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
 
 ### Favorites
 
