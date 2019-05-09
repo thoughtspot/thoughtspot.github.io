@@ -152,3 +152,23 @@ Your SpotIQ analysis may not provide you as many insights as you think it should
 When SpotIQ finds insights with anomaly points, you have the option to run the Explain Insight command to have SpotIQ do further analysis on the anomaly points.
 
 ![]({{ site.baseurl }}/images/spotiq-explain-insight-1.png)
+
+To explain an insight, do the following:
+
+1. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the insight you want to explain and select **Explain insight**.
+
+2. In the SpotIQ window, click **Analyze**.
+
+   Analysis begins.
+
+3. Click **SpotIQ** in the top navigation bar.
+
+4. Click the **Analyses** tab.
+
+5. Find the name of the insight that you analyzed and click **View Results**.
+
+   The results of your insight analysis explaining your anomaly points appear.
+
+![]({{ site.baseurl }}/images/spotiq-explain-insight-2.png)
+
+{% include note.html content="**Explain insight** does not work with Trend Analysis or Cross Correlation Analysis." %}
