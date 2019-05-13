@@ -22,7 +22,7 @@ you make this change after your users have been using ThoughtSpot for any period
 of time, you should alert them of the change you will be making and how it
 affects previous saved searches.
 
-## Create a custom calendar
+## Setting up a custom calendar
 
 Before you create your custom calendar, you must enable the custom calendar feature for your ThoughtSpot cluster.
 
@@ -70,17 +70,6 @@ Example calendar with the fiscal year beginning on April 1:
 
    Example:
    `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin`
-6. From a browser, sign in to your ThoughtSpot cluster and click **DATA**.
-
-7. On the DATA page, click the name of a worksheet, table or view.
-
-8. Under Column Name, find a column that you want to set to use your custom calendar and scroll right until you see the Calendar Type column.
-
-   {% include note.html content="The column must use the DATE data type." %}
-
-9. In the Calendar Type column for the column you chose, double-click the existing calendar name, and then select your custom calendar.
-
-10. Click **Save Changes**.
 
 ### (Optional) Setting a custom calendar as the default calendar for a cluster
 
@@ -93,3 +82,19 @@ To set your custom calendar as the default calendar for your cluster, do the fol
 
    Example:
    `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar my_calendar`
+
+### Using a custom calendar
+
+To use a custom calendar, do the following:
+
+1. Sign in to your ThoughtSpot cluster and click **DATA**.
+
+2. On the DATA page, click the name of a worksheet, table or view.
+
+3. Under COLUMN NAME, find a column where you want to use your custom calendar and scroll right until you see the Calendar Type column.
+
+    {% include note.html content="The column must use the DATE data type." %}
+
+4. In the CALENDAR TYPE column for the column you chose, double-click the existing calendar name, and then select your custom calendar.
+
+5. Click **Save Changes**.
