@@ -91,7 +91,7 @@ To use a custom calendar, do the following:
 
 2. On the DATA page, click the name of a worksheet, table or view.
 
-3. Under COLUMN NAME, find a column where you want to use your custom calendar and scroll right until you see the Calendar Type column.
+3. Under COLUMN NAME, find a column where you want to use your custom calendar and scroll right until you see the CALENDAR TYPE column.
 
     {% include note.html content="The column must use the DATE data type." %}
 
