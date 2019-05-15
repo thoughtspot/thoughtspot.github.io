@@ -2,7 +2,7 @@
 title: ["5.2 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: Feb 2019
+last_updated: May 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -43,27 +43,27 @@ If you frequently go back to look at certain Answers or Pinboards, you can now u
 
 ### Custom calendars
 
-You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure that when you search for ‘last quarter’ you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
+You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure when you search for ‘last quarter’ that you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
 
 ### Ask an expert
 
-Sometimes making a decision based on data is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to send a question to ThoughtSpot users in your organization who are the most familiar with the data set used for the search.  They will also receive the search terms used, and the results. With this information, they will have the context they need to provide clarification, and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
+Sometimes making a data-based decision is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to write a question to the ThoughtSpot users in your organization who are very familiar with the data set used for that search.  When you send your question, you automatically provide the search terms and the results. With this information, an expert in your organization will have the context they need to provide clarification and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ### IN subquery for filtering
 
-With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s two queries. The first one, to get the top 10 stores in terms of net margin last month, and the second one, to see what the sales were for those stores this month.  Before the IN subquery, you would need to save a view to get this answer. For details refer to [Using the in keyword for nested searchs]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
+With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searchs]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
 
 ### Support for small and medium cloud instance types
 
-One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100GB), ThoughtSpot now supports “small” (20GB data) and “medium” (100GB data) instance types to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
+One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100 GB), ThoughtSpot now supports “small” (20 GB data) and “medium” (100 GB data) instance types to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
 
 ### Cluster shutdown and restart to save infrastructure costs
 
-If you do not need your ThoughtSpot cluster to be up and running 24x7, you can shut down the cluster and restart it during expected usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
+If you do not need your ThoughtSpot cluster to be up and running 24/7, you can shut down your cluster and restart it during normal usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
 
 ### Ability to upload .CSV data from an AWS S3 bucket
 
-If you have data in .csv format stored in an AWS bucket, you can now load it directly to ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
+If you have data in .csv format stored in an AWS bucket, you can now load it directly into ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
 
 ### Allow users to sign up for ThoughtSpot
 
@@ -73,14 +73,13 @@ For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-g
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
 
-Table UX Improvements
-* Column header is now left aligned
-* Column widths can be made very narrow
+Table user experience improvements:
+* The column header is now left-aligned.
+* Column widths can be made very narrow.
 
-Sort by date on X axis
-* Date format no longer changes when sorting and the axis no longer disappears.
-
-You can now sort using a sort field that is not in your chart.
+Chart user experience improvements:
+* When sorting by date on the x-axis, the date format no longer changes and the axis no longer disappears.
+* You can now sort using a sort field that is not in your chart.
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
