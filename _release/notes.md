@@ -70,6 +70,11 @@ If you have data in .csv format stored in an AWS bucket, you can now load it dir
 You can now allow people in your organization to sign up for ThoughtSpot by clicking a button on the sign-in page. When a person clicks the sign-up button, they go to a sign-up page that you’ve already set up outside of ThoughtSpot. This can be any page you want to use for registering new users.
 For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html).
 
+### Improved Japanese date keywords
+
+Japanese-language users now have a more natural way of expressing date phrases in their queries.
+For details, refer to: [Japanese (日本語) keyword reference]({{ site.baseurl }}/reference/keywords-ja-jp).
+
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
 
