@@ -59,7 +59,7 @@ One size does not fit all when it comes to the cloud. You need flexibility to ch
 
 ### Cluster shutdown and restart to save infrastructure costs
 
-If you do not need your ThoughtSpot cluster to be up and running 24/7, you can shut down your cluster and restart it during normal usage hours to save on the infrastructure cost of running ThoughtSpot VM instances in cloud provider environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
+If you don't need your ThoughtSpot cluster up and running 24/7, you can shut it down and restart it during normal usage hours. This allows you to save on the infrastructure costs of running ThoughtSpot VM instances in cloud environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
 
 ### Ability to upload .CSV data from an AWS S3 bucket
 
