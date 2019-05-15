@@ -1122,6 +1122,12 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
+        - title: Deploy using CloudFormation CLI
+          url: /appliance/aws/deploy-aws-cloud-formation.html
+          output: web,appQs
+        - title: Set up high availability
+          url: /appliance/aws/ha-aws-efs.html
+          output: web,appQs
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
