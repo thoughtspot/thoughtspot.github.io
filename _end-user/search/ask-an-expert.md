@@ -9,7 +9,9 @@ permalink: /:collection/:path.html
 
 At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use **Ask an expert** to request help from someone in your organization. Your request will go to the person in your company who best know the data source you're using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the **Answers** listing in ThoughtSpot.
 
-This feature helps in a few ways:
+{% include note.html content="If you don't see **Ask an expert** it's possible that your company has chosen to disable this capability. If you want to try it out, ask your administrator to consider enabling it ." %}
+
+**Ask an expert** can help in these ways:
 
 1. You can get an answer to your tough question, even when you're stuck.
 2. The expert gets to see what people have trouble with, so he or she can make it easier.

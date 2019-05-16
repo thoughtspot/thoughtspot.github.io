@@ -12,13 +12,14 @@ experience that allows you to ask more natural questions, similar to the way you
 might talk to a person.
 
 If you have access to tables and worksheets for data modeling purposes, you can
-specify columns entity types for different columns in your data sources which
-support the SearchIQ user experience.
+specify entity types for their columns. This lets you designate that column as representing a person, place, or thing. So then when a user asks "Which", "Who", or "Where", an appropriate response can more easily be found in the data.
 
 If you're not sure how to change the data modeling settings, see the
 [Overview of data modeling settings]({{ site.baseurl}}/admin/data-modeling/data-modeling-settings.html).
 
 ## About Entity Categories
+
+These are the available Entity Categories:
 
 | Category            | Description                                          |
 | :---                | :---                                                 |
