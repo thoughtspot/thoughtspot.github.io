@@ -37,6 +37,18 @@ To teach SearchIQ your language:
 
    SearchIQ will remember what you taught it, and use that to understand your searches in the future.
 
+## What are some best practices when teaching SearchIQ?
+
+Searchiq learns the meanings of words and phrases as exact matches. Because of this, it is recommended to include the context in the phrase being mapped to improve the accuracy of the mappings.
+
+For example, consider the following search:
+
+“How many travellers are travelling from New York to San Francisco ?”.
+
+You can train SearchIQ to map this natural language search to the keyword search “unique count traveler name source city = ‘new york’ destination name = ‘san francisco’”. However, SearchIQ will not be able to understand whether "new york" is to be considered a match for "new york" as the source city or destination city.
+
+To make the mapping more specific, you should map “from New York” to “source city = ‘New York`” and “to San Francisco” to “destination city = ‘San Francisco`”. This will help SearchIQ match a city to the source city or destination city based on the preceding preposition (to or from).
+
 ## What if I teach SearchIQ a different language from somebody else?
 
 SearchIQ learns the language you teach it, and your efforts are useful to everyone else who uses SearchIQ in the future. If SearchIQ learns different search term mappings from different users, these are applied to new searches in a hierarchical fashion, with the top learnings carrying more weight than those further down the list.
