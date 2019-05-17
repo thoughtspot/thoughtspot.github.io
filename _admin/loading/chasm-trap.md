@@ -14,7 +14,7 @@ This is known as a chasm trap, and ThoughtSpot can handle it!
 ## Understand how chasm traps occur
 
 A fact table, just as it sounds, stores facts about your business. If you are
-selling apples, the sales fact table has facts about these apples.
+selling apples, the sales fact table has facts about these sales.
 
 | SaleID  | AppleTypeID  | StoreID  |  Units Sold |
 |---|---|---|---|
@@ -23,7 +23,7 @@ selling apples, the sales fact table has facts about these apples.
 | 10  | 09  |  09 | 1  |
 
 Dimension tables describe the attributes that are interesting to analyze. For
-example, the apple table might look like this.
+example, the apple table might look like this:
 
 | AppleTypeID  | Color  | Name  | Use |
 |---|---|---|---|
@@ -31,8 +31,8 @@ example, the apple table might look like this.
 | 34 |  Green |  Granny Smith |  Cooking |
 | 09  | Yellow  |  Golden  | Snack  |
 
-As you can imagine, in a business you might have several fact tables that access
-dimension tables. So, an apple business may record waste as well as sales.
+In a business you might have several fact tables that access
+dimension tables. So, an apple orchard may record waste in addition to sales:
 
 | TimeID  | AppleTypeID  | StoreID  |  Units Wasted |
 |---|---|---|---|
