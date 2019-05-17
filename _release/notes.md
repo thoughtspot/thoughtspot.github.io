@@ -51,7 +51,7 @@ Sometimes making a data-based decision is so challenging that you need an expert
 
 ### IN subquery for filtering
 
-With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searchs]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
+With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searches]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
 
 ### Support for small and medium cloud instance types
 
