@@ -14,9 +14,9 @@ You need a Support Portal login to file a ticket. Please contact ThoughtSpot to 
 
 ThoughtSpot, Inc.
 
-1 Palo Alto Square, Building 1, Suite 200
+910 Hermosa Ct
 
-Palo Alto, CA 94306
+Sunnyvale, CA 94085
 
 ## Phone numbers
 
