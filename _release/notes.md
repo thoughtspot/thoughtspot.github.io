@@ -89,7 +89,7 @@ Chart user experience improvements:
 {: id="notes-for-older-versions"}
 ## Notes from older versions
 
-* [5.1 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
+* [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
 * [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
 * [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
 * [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
