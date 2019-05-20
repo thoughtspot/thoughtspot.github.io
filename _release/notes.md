@@ -73,7 +73,7 @@ For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-g
 ### Improved Japanese date keywords
 
 Japanese-language users now have a more natural way of expressing date phrases in their queries.
-For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-jp#date).
+For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-JP.html#date).
 
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
