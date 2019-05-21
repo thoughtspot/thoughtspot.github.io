@@ -13,16 +13,93 @@ reliability.
 You can find information here on which configuration of memory, CPU, storage,
 and networking capacity you should be running for your instances.
 
-## Hardware configurations
+## ThoughtSpot GCP instance types
 
-GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks. The ThoughtSpot reference implementation uses the Google `n1-highmem-64`, which is on the higher end of the [High Memory Machine types](https://cloud.google.com/compute/docs/machine-types#highmem).
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">Up to 3 TB </p></td>
+      <td><p dir="ltr">208 GB</p></td>
+      <td><p dir="ltr">n1-highmem-64</p></td>
+      <td><p dir="ltr">64/416</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-The following table summarizes the reference implementation machine type, along with minimum required CPU, memory capacity, and storage.
+      <td><p dir="ltr">&gt;3 TB</p></td>
+      <td><p dir="ltr">312 GB</p></td>
+      <td><p dir="ltr">n1-highmem-96</p></td>
+      <td><p dir="ltr">96/624</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1.5 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">n1-highmem-32<sup>b</sup></p></td>
+      <td><p dir="ltr">16/104</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-|Machine Type | Storage Type           | Data Capacity             |vCPUs|System Memory |
-|-------------|---------------------   | -----------------         |-----|--------------|
-|n1-highmem-64|zonal SSD attached disks|1x250GB plus two 1TB disks | 64  |416 GB        |
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">n1-highmem-16<sup>b</sup></p></td>
+      <td><p dir="ltr">16/122</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">180 GB</p></td>
+      <td><p dir="ltr">n1-standard-96</p></td>
+      <td><p dir="ltr">96/330</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
+
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
+
+GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks.        |
 
 ThoughtSpot uses only persistent storage options. Instance storage (also known
 as "local storage") is not used for ThoughtSpot deployments on GCP.
