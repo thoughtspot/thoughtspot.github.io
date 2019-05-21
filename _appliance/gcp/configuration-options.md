@@ -103,16 +103,3 @@ GCP provides several storage types and media options. ThoughtSpot requires [atta
 
 ThoughtSpot uses only persistent storage options. Instance storage (also known
 as "local storage") is not used for ThoughtSpot deployments on GCP.
-
-## Data capacity per node
-
-Each [GCP n1-highmem-64 machine](https://cloud.google.com/compute/docs/machine-types#highmem)
-has 416 GB of memory and can accommodate ~200 GB of ThoughtSpot dedicated data.
-This size refers to the amount of data in the CSV files you will be loading into
-ThoughtSpot. The 200 GB number takes into account all replication of data done
-automatically by ThoughtSpot to provide redundancy and fast performance.
-
-You can start with the minimum platform described here, and add capacity by
-adding nodes and disks as needed. You can also choose to start off with more
-data capacity, as long as you know the best fit configuration for your data
-volume.

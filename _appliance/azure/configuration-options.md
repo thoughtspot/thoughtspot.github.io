@@ -90,14 +90,3 @@ details on how to configure your scope and permissions.
        </td>
     </tr>
   </table>
-
-## Data capacity per node
-
-ThoughtSpot sizes nodes in multiples of 200 GB of data in Azure. This size
-refers to the amount of data in the CSV files you will be loading into
-ThoughtSpot. The 200GB number takes into account all replication of data done
-automatically by ThoughtSpot to provide redundancy and fast performance.
-
-You can start with 200 GB, and add increments of 200 GB each time your data
-capacity needs increase. You can also choose to start off with more than 200 GB
-of data, as long as you know the best fit configuration for your data volume.
