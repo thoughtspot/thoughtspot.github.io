@@ -102,25 +102,6 @@ details on how to configure your placement groups.
     </tr>
   </table>
 
-## ThoughtSpot software license sizes
-
-ThoughtSpot only sells software licenses in multiples of 250 GB of data. So you
-can start with 250 GB, and add increments of 250 GB each time your data capacity
-needs increase. You can also choose to start off with more than 250 GB of data,
-as long as you know the best fit configuration for your data volume.
-
-## Lego blocks
-
-If you aren't sure what kind of configuration you need, it might help to think
-of the hardware configurations in terms of simple Lego blocks. The r4.16xlarge
-size can be seen as a 250 GB block.
-
-{% include note.html content="ThoughtSpot does not support sizes other than r4.16xlarge." %}
-
-Since the minimum data volume offered is 250 GB, you would need one r4.16xlarge
-block to match the data capacity. This scales linearly. So, 500 GB would require
-two r4.16xlarge blocks.
-
 ## Regions, availability zones, and placement groups
 
 AWS instances are configured to a location with regard to where the computing
