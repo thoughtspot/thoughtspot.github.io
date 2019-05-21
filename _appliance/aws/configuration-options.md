@@ -15,25 +15,92 @@ You can find information here on which configuration of memory, CPU, storage,
 and networking capacity you should be running for your instances. There are also
 details on how to configure your placement groups.
 
-## Hardware configurations
+## ThoughtSpot AWS instance types
 
-There is only one available hardware configuration for deploying ThoughtSpot on
-Amazon: `r4.16xlarge`
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
 
-Below are charts depicting the specifications for the configuration for EC2 and
-EBS requirements. Both EC2 and EBS requirements must be fulfilled to deploy on
-Amazon.
+    </tr>
+    <tr>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">Up to 2 TB </p></td>
+      <td><p dir="ltr">250 GB</p></td>
+      <td><p dir="ltr">r4.16xlarge<sup>a</sup></p></td>
+      <td><p dir="ltr">64/488</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-|Instance name|Data capacity|vCPUs|DRAM|
-|-------------|-------------|-----|----|
-|r4.16xlarge|Up to 250 GB|64|488 GB|
+      <td><p dir="ltr">&gt;2 TB</p></td>
+      <td><p dir="ltr">384 GB (Large)</p></td>
+      <td><p dir="ltr">r5.24xlarge</p></td>
+      <td><p dir="ltr">96/768</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1.5 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">r4.8xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">32/244</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-|Instance name|Data capacity|Root volume (SSD)|Data volume (SSD or HDD)|
-|-------------|-------------|-------------------|--------------------------|
-|r4.16xlarge|Up to 250 GB|1 vol 200 GB|2 vols 1 TB each|
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">r4.4xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">16/122</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
 
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">192 GB</p></td>
+      <td><p dir="ltr">m5.24xlarge</p></td>
+      <td><p dir="ltr">96/384</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
 
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
 
 ## ThoughtSpot software license sizes
 
