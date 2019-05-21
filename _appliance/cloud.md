@@ -13,7 +13,7 @@ ThoughtSpot currently supports the following cloud deployments:
 
 This page provides recommendations and best practices for ThoughtSpot cloud deployments, including how to set up your ThoughtSpot instance and how to reduce infrastructure costs.
 
-## ThoughtSpot cloud instance types
+## ThoughtSpot cloud instance types 
 
 This table provides guidelines on how to set up ThoughtSpot on each cloud service.
 
