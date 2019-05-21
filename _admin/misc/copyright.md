@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Copyright for ThoughtSpot publications.
 
-©2019 ThoughtSpot, Inc. All rights reserved.
+© 2015, 2019 ThoughtSpot, Inc. All rights reserved.
 
 ThoughtSpot, Inc. 910 Hermosa Ct, Sunnyvale, CA 94085
 
