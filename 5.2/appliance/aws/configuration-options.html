@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/aws/configuration-options.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-20T14:24:53-07:00" />
+<meta property="article:published_time" content="2019-05-21T15:56:33-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-05-20T14:24:53-07:00","datePublished":"2019-05-20T14:24:53-07:00","description":"ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-05-21T15:56:33-07:00","datePublished":"2019-05-21T15:56:33-07:00","description":"ThoughtSpot engineering has performed extensive testing of the ThoughtSpot appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS) configurations for best performance, load balancing, scalability, and reliability.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2734,6 +2734,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/5.2/appliance/gcp/configuration-options.html">Configuration options</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/5.2/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
@@ -3200,7 +3206,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    3 minutes
+    2 minutes
   
 </span>
 
@@ -3215,71 +3221,92 @@ and reliability.</p>
 and networking capacity you should be running for your instances. There are also
 details on how to configure your placement groups.</p>
 
-<h2 id="hardware-configurations">Hardware configurations</h2>
+<h2 id="thoughtspot-aws-instance-types">ThoughtSpot AWS instance types</h2>
 
-<p>There is only one available hardware configuration for deploying ThoughtSpot on
-Amazon: <code class="highlighter-rouge">r4.16xlarge</code></p>
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
 
-<p>Below are charts depicting the specifications for the configuration for EC2 and
-EBS requirements. Both EC2 and EBS requirements must be fulfilled to deploy on
-Amazon.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Instance name</th>
-      <th>Data capacity</th>
-      <th>vCPUs</th>
-      <th>DRAM</th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
-      <td>r4.16xlarge</td>
-      <td>Up to 250 GB</td>
-      <td>64</td>
-      <td>488 GB</td>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <br />data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <br />Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <br />Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
     <tr>
-      <th>Instance name</th>
-      <th>Data capacity</th>
-      <th>Root volume (SSD)</th>
-      <th>Data volume (SSD or HDD)</th>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">Up to 2 TB </p></td>
+      <td><p dir="ltr">250 GB</p></td>
+      <td><p dir="ltr">r4.16xlarge<sup>a</sup></p></td>
+      <td><p dir="ltr">64/488</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
-      <td>r4.16xlarge</td>
-      <td>Up to 250 GB</td>
-      <td>1 vol 200 GB</td>
-      <td>2 vols 1 TB each</td>
+      <td><br /></td>
+
+      <td><p dir="ltr">&gt;2 TB</p></td>
+      <td><p dir="ltr">384 GB (Large)</p></td>
+      <td><p dir="ltr">r5.24xlarge</p></td>
+      <td><p dir="ltr">96/768</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1.5 TB</p></td>
     </tr>
-  </tbody>
-</table>
+    <tr>
+      <td><br /></td>
 
-<h2 id="thoughtspot-software-license-sizes">ThoughtSpot software license sizes</h2>
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">r4.8xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">32/244</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-<p>ThoughtSpot only sells software licenses in multiples of 250 GB of data. So you
-can start with 250 GB, and add increments of 250 GB each time your data capacity
-needs increase. You can also choose to start off with more than 250 GB of data,
-as long as you know the best fit configuration for your data volume.</p>
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">r4.4xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">16/122</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
 
-<h2 id="lego-blocks">Lego blocks</h2>
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">192 GB</p></td>
+      <td><p dir="ltr">m5.24xlarge</p></td>
+      <td><p dir="ltr">96/384</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
 
-<p>If you aren’t sure what kind of configuration you need, it might help to think
-of the hardware configurations in terms of simple Lego blocks. The r4.16xlarge
-size can be seen as a 250 GB block.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot does not support sizes other than r4.16xlarge.</div>
-
-<p>Since the minimum data volume offered is 250 GB, you would need one r4.16xlarge
-block to match the data capacity. This scales linearly. So, 500 GB would require
-two r4.16xlarge blocks.</p>
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
 
 <h2 id="regions-availability-zones-and-placement-groups">Regions, availability zones, and placement groups</h2>
 
@@ -3346,7 +3373,7 @@ placement groups in an availability zone.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2019 <br />
+        Generated: May 21, 2019 <br />
          &copy;2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>

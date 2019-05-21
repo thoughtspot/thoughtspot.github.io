@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/cloud.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-20T14:24:53-07:00" />
+<meta property="article:published_time" content="2019-05-21T15:56:33-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/cloud.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2019-05-20T14:24:53-07:00","datePublished":"2019-05-20T14:24:53-07:00","description":"ThoughtSpot currently supports the following cloud deployments:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/cloud.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2019-05-21T15:56:33-07:00","datePublished":"2019-05-21T15:56:33-07:00","description":"ThoughtSpot currently supports the following cloud deployments:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2734,6 +2734,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/5.2/appliance/gcp/configuration-options.html">Configuration options</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/5.2/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
@@ -3200,7 +3206,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    4 minutes
+    2 minutes
   
 </span>
 
@@ -3218,151 +3224,13 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="thoughtspot-cloud-instance-types">ThoughtSpot cloud instance types</h2>
 
-<p>This table provides guidelines on how to set up ThoughtSpot on each cloud service.</p>
+<p>Refer to the following guidelines for how to set up ThoughtSpot on each cloud service:</p>
 
-<table width="853">
-    <colgroup>
-      <col width="110" />
-      <col width="110" />
-      <col width="110" />
-      <col width="105" />
-      <col width="140" />
-      <col width="95" />
-    </colgroup>
-    <tr>
-      <td><br /></td>
-      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
-      <td><br /></td>
-      <td><br /></td>
-      <td><br /></td>
-    </tr>
-    <tr>
-      <td><p dir="ltr"><strong>Cloud Provider</strong></p></td>
-      <td><p dir="ltr"><strong>Data shape</strong></p></td>
-      <td><p dir="ltr"><strong>Total cluster <br />data size</strong></p></td>
-      <td><p dir="ltr"><strong>Per VM <br />Data capacity</strong></p></td>
-      <td><p dir="ltr"><strong>Recommended <br />Instance type</strong></p></td>
-      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
-    </tr>
-    <tr>
-      <td><p dir="ltr"><strong>AWS</strong></p></td>
-      <td><p dir="ltr">Standard</p>
-        <p dir="ltr">(1KB/row)</p></td>
-      <td><p dir="ltr">Up to 2 TB </p></td>
-      <td><p dir="ltr">250 GB</p></td>
-      <td><p dir="ltr">r4.16xlargea</p></td>
-      <td><p dir="ltr">64/488</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">&gt;2 TB</p></td>
-      <td><p dir="ltr">384 GB (Large)</p></td>
-      <td><p dir="ltr">r5.24xlargeb</p></td>
-      <td><p dir="ltr">96/768</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 100 GB</p></td>
-      <td><p dir="ltr">100 GB</p></td>
-      <td><p dir="ltr">r4.8xlargec</p></td>
-      <td><p dir="ltr">32/244</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 20 GB</p></td>
-      <td><p dir="ltr">20 GB</p></td>
-      <td><p dir="ltr">r4.4xlargec</p></td>
-      <td><p dir="ltr">16/122</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><p dir="ltr">Thin rows</p>
-        <p dir="ltr">(&lt;300 bytes/row)</p></td>
-      <td><p dir="ltr">Any</p></td>
-      <td><p dir="ltr">192 GB</p></td>
-      <td><p dir="ltr">m5.24xlargeb</p></td>
-      <td><p dir="ltr">96/384</p></td>
-    </tr>
-    <tr>
-      <td><p dir="ltr"><strong>Azure</strong></p></td>
-      <td><p dir="ltr">Standard</p>
-        <p dir="ltr">(1KB/row)</p></td>
-      <td><p dir="ltr">&gt;100 GB</p></td>
-      <td><p dir="ltr">200 GB</p></td>
-      <td><p dir="ltr">E64sv3</p></td>
-      <td><p dir="ltr">64/416</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 100 GB</p></td>
-      <td><p dir="ltr">100 GB</p></td>
-      <td><p dir="ltr">E32sv3c</p></td>
-      <td><p dir="ltr">32/256</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 20 GB</p></td>
-      <td><p dir="ltr">20 GB</p></td>
-      <td><p dir="ltr">E16sv3c</p></td>
-      <td><p dir="ltr">16/128</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><p dir="ltr">Thin rows</p>
-        <p dir="ltr">(&lt;300 bytes/row)</p></td>
-      <td><p dir="ltr">Any</p></td>
-      <td><p dir="ltr">120 GB</p></td>
-      <td><p dir="ltr">D64v3b</p></td>
-      <td><p dir="ltr">64/256</p></td>
-    </tr>
-    <tr>
-      <td><p dir="ltr"><strong>GCP</strong></p></td>
-      <td><p dir="ltr">Standard</p>
-        <p dir="ltr">(1KB/row)</p></td>
-      <td><p dir="ltr">Up to 3 TB</p></td>
-      <td><p dir="ltr">208 GB</p></td>
-      <td><p dir="ltr">n1-highmem-64</p></td>
-      <td><p dir="ltr">64/416</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">&gt;3 TB</p></td>
-      <td><p dir="ltr">312 GB</p></td>
-      <td><p dir="ltr">n1-highmem-96</p></td>
-      <td><p dir="ltr">96/624</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 100 GB</p></td>
-      <td><p dir="ltr">100 GB</p></td>
-      <td><p dir="ltr">n1-highmem-32c</p></td>
-      <td><p dir="ltr">32/208</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><br /></td>
-      <td><p dir="ltr">Up to 20 GB</p></td>
-      <td><p dir="ltr">20 GB</p></td>
-      <td><p dir="ltr">n1-highmem-16c</p></td>
-      <td><p dir="ltr">16/104</p></td>
-    </tr>
-    <tr>
-      <td><br /></td>
-      <td><p dir="ltr">Thin rows</p>
-        <p dir="ltr">(&lt;300 bytes/row)</p></td>
-      <td><p dir="ltr">Any</p></td>
-      <td><p dir="ltr">180 GB</p></td>
-      <td><p dir="ltr">n1-standard-96</p></td>
-      <td><p dir="ltr">96/360</p></td>
-    </tr>
-  </table>
+<ul>
+  <li><a href="/5.2/appliance/aws/configuration-options.html">AWS instance types</a></li>
+  <li><a href="/5.2/appliance/azure/configuration-options.html">Azure instance types</a></li>
+  <li><a href="/5.2/appliance/gcp/configuration-options.html">GCP instance types</a></li>
+</ul>
 
 <h2 id="reducing-your-cloud-infrastructure-costs">Reducing your cloud infrastructure costs</h2>
 
@@ -3438,7 +3306,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2019 <br />
+        Generated: May 21, 2019 <br />
          &copy;2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
