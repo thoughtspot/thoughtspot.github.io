@@ -27,7 +27,7 @@ ThoughtSpot recommends following these guidelines to help reduce the cost of you
 
 ### Use small and medium instance types
 
-For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types as shown in the table above to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.
+For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.
 
 Please contact ThoughtSpot support for assistance with this configuration.
 
@@ -47,14 +47,16 @@ To shut down and restart your cluster, do the following in the tscli:
 
 3. Go to your cloud provider's console and shut down all of the ThoughtSpot VMs in your cluster.
 
-4. When you are ready to use ThoughtSpot again, restart your cluster by running:
+4. When you are ready to use ThoughtSpot again, start up your node VMs.
+
+5. Restart your cluster by running:
 	`$ tscli cluster start`
 
    You should see the message: ”Started pre-existing cluster”
 
    Depending on the size of your cluster, you may need to wait several minutes before the system is up and running. Make sure you budget for this startup time to ensure that the system is fully operational before you expect people to use it.
 
-5. Ensure that your cluster is ready for use by running:
+6. Ensure that your cluster is ready for use by running:
 	`$ tscli cluster status`
 
 	The following messages are displayed to indicate your cluster is up and running: <br> 	
