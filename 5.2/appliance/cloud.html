@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/cloud.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-21T15:56:33-07:00" />
+<meta property="article:published_time" content="2019-05-21T23:34:22-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/cloud.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2019-05-21T15:56:33-07:00","datePublished":"2019-05-21T15:56:33-07:00","description":"ThoughtSpot currently supports the following cloud deployments:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/cloud.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2019-05-21T23:34:22-07:00","datePublished":"2019-05-21T23:34:22-07:00","description":"ThoughtSpot currently supports the following cloud deployments:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3238,7 +3238,7 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="use-small-and-medium-instance-types">Use small and medium instance types</h3>
 
-<p>For ThoughtSpot customers who are deploying their instance with lower data sizes (&lt;=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types as shown in the table above to help reduce cost of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.</p>
+<p>For ThoughtSpot customers who are deploying their instance with lower data sizes (&lt;=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.</p>
 
 <p>Please contact ThoughtSpot support for assistance with this configuration.</p>
 
@@ -3263,7 +3263,10 @@ $('#toc').on('click', 'a', function() {
     <p>Go to your cloud provider’s console and shut down all of the ThoughtSpot VMs in your cluster.</p>
   </li>
   <li>
-    <p>When you are ready to use ThoughtSpot again, restart your cluster by running:
+    <p>When you are ready to use ThoughtSpot again, start up your node VMs.</p>
+  </li>
+  <li>
+    <p>Restart your cluster by running:
  <code class="highlighter-rouge">$ tscli cluster start</code></p>
 
     <p>You should see the message: ”Started pre-existing cluster”</p>
