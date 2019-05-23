@@ -75,6 +75,17 @@ For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-g
 Japanese-language users now have a more natural way of expressing date phrases in their queries.
 For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-JP.html).
 
+### New languages
+
+ThoughtSpot now supports seven new languages, available in the Profile page:
+* Danish
+* Norwegian
+* Swedish
+* Finnish
+* Portuguese (Portugal)
+* Spanish (Spain)
+* Italian
+
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
 
