@@ -2,6 +2,19 @@
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
+
+  <!-- Alicia added this to point to latest version if you're on an older version of docs.
+     -->
+
+  {% if sidebar[0].version < site.current_version %}
+  <li class="small"><a href="{{ "/index.html" | prepend: site.baseurl }}">Latest version: {{ site.current_version }}</a></li>
+                {% else %}
+  <li class="small">This is the latest version.</li>
+                {% endif %}
+
+  <!-- End of Alicia change
+     -->
+
   {% for entry in sidebar %}
     {% for section in entry.sections %}
       {% if section.output contains "web" %}
