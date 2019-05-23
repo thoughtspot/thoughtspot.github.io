@@ -14,9 +14,9 @@
   <tbody>
     <tr>
       <td><code>concat</code></td>
-      <td>Returns the one or more values as a concatenated text string. Be sure to use single quotes instead of double quotes around each of the strings.
+      <td>Returns two or more values as a concatenated text string. Use single quotes around each literal string, not double quotes.
 </td>
-      <td><code class="highlighter-rouge">concat ( 'hay' , 'stack' ) = 'haystack'</code><br><code class="highlighter-rouge">concat (last_name , first_name</code>)</td>
+      <td><code class="highlighter-rouge">concat ( 'hay' , 'stack' ) = 'haystack'</code><br><code class="highlighter-rouge">concat (title, ' ', first_name , ' ', last_name)</code></td>
     </tr>
     <tr>
       <td><code>contains</code></td>
