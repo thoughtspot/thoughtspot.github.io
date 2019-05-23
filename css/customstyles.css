@@ -28,6 +28,12 @@ table.scheduler, th, td {
    border: 1px solid black;
 }
 
+small-sidebar-link {
+    font-size: 80%
+    margin-left: 5px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
 
 /*help center*/
 
