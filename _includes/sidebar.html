@@ -5,6 +5,7 @@
 
   <!-- Alicia added this to point to latest version if you're on an older version of docs.
      -->
+  <li class="small">Latest version: {{ site.current_version }}</li>
 
   {% if sidebar[0].version < site.current_version %}
   <li class="small"><a href="{{ "/index.html" | prepend: site.baseurl }}">Latest version: {{ site.current_version }}</a></li>
