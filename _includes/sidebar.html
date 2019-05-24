@@ -1,6 +1,6 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 
-<ul>
+<ul id="mysidebar" class="nav">
   <li class="bookTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
 
   <!-- Alicia added this to point to latest version if you're on an older version of docs.
@@ -14,10 +14,7 @@
 
   <!-- End of Alicia change
      -->
-</ul>
 
-
-<ul id="mysidebar" class="nav">
   {% for entry in sidebar %}
     {% for section in entry.sections %}
       {% if section.output contains "web" %}
