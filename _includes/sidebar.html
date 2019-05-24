@@ -1,11 +1,10 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 
-<ul id="mysidebar" class="nav">
+<ul>
   <li class="bookTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
 
   <!-- Alicia added this to point to latest version if you're on an older version of docs.
      -->
-  <li class="small-sidebar-link"><a href="{{ "/index.html" | prepend: site.baseurl }}">Switch to the latest version: {{ site.current_version }}</a></li>
 
 {% if sidebar[0].version < site.current_version %}
   <li class="small-sidebar-link"><a href="{{ "/index.html" | prepend: site.baseurl }}">Switch to the latest version: {{ site.current_version }}</a></li>
@@ -15,7 +14,10 @@
 
   <!-- End of Alicia change
      -->
+</ul>
 
+
+<ul id="mysidebar" class="nav">
   {% for entry in sidebar %}
     {% for section in entry.sections %}
       {% if section.output contains "web" %}
