@@ -85,6 +85,7 @@ ThoughtSpot now supports seven new languages, available in the Profile page:
 * Portuguese (Portugal)
 * Spanish (Spain)
 * Italian
+* English (Australia)
 
 {: id="52-fixed"}
 ## 5.2 Fixed Issues
