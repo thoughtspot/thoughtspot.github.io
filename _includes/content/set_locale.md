@@ -5,22 +5,23 @@ ThoughtSpot supports:
 
 | Locale |  Language  
 |---|---|
-| *da-DK* | Dansk (beta)|
+| *da-DK* | Dansk  |
 | *de-DE* | Deutsche  |
+| *en-AU* | English (Australia)  |
 | *en-CA* | English (Canada)  |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
 | *es-US* | Español (latín)  |
-| *es-ES* | Español (España - beta)  |
+| *es-ES* | Español (España)  |
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |
-| *it-IT* | Italiano (beta)  |
+| *it-IT* | Italiano  |
 | *nl-NL* | Nederland (beta)  |
-| *nb-NO* | Norsk (beta)  |
+| *nb-NO* | Norsk  |
 | *pt-BR* | Português (Brazil)  |
-| *pt-PT* | Português (Portugal - beta)  |
-| *fi-FI* | Suomi (beta)  |
-| *sv-SE* | Svenska (beta)  |
+| *pt-PT* | Português (Portugal)  |
+| *fi-FI* | Suomi  |
+| *sv-SE* | Svenska  |
 | *zh-CN* | 中文(简体)  |
 | *ja-JP* | 日本語  |
 
