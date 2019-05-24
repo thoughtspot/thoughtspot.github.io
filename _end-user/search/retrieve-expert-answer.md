@@ -26,4 +26,4 @@ Note that the answer is a full fledged ThoughtSpot answer. This means that you c
 ## Related information
 
 -   [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html)
--   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-ask-an-expert.html)
+-   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)
