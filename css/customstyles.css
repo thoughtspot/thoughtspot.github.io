@@ -61,7 +61,7 @@ div.links{
 h1.indexTitle {
   margin-bottom: 43px;
   font-stretch: extra-expanded;
-  color: #000000;
+  color: #333;
 }
 
 p.iconTitle {
@@ -70,7 +70,7 @@ p.iconTitle {
 
 p.bookLink {
   font-size: 97%;
-  font-family: sans-serif;
+  font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top:-10px;
   padding-top: 10px;
   text-align: center;
@@ -517,7 +517,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li.active > a  {
-background-color: #347DBE;
+background-color: #3E43CA;
 }
 
 .nav li a {
@@ -582,7 +582,7 @@ ul#mysidebar {
 }
 
 span.projectTitle {
-    font-family: Helvetica;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -1188,7 +1188,7 @@ table thead th code.highlighter-rouge {
     width: 100px;
     height: 80px;
     background-color: #f5f5f5;
-    font-family: Arial;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     hyphens: auto;
     float: left;
@@ -1213,7 +1213,7 @@ table thead th code.highlighter-rouge {
 }
 
 h2.userMapTitle {
-    font-family: Arial;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #userMap a:hover {
@@ -1376,3 +1376,25 @@ h4.panel-title {
 img.inline {
     display: inline;
 }
+
+
+
+/* BEGIN Localized keywords CSS */
+
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
+.tg td{font-family:"Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:"Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-31q5{white-space:nowrap;background-color:#f0f0f0;color:#000;font-weight:bold;vertical-align:top}
+.tg .tg-b7b8{background-color:#f9f9f9;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-4eph{background-color:#f9f9f9}
+.tg .tg-j0ga{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;vertical-align:top}
+.tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
+.tg .tg-us36{border-color:inherit;vertical-align:top}
+.tg .tg-k64o{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;vertical-align:top}
+
+
+
+
+
+/* END Localized keywords CSS */
