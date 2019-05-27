@@ -7,9 +7,16 @@
      -->
 
 {% if sidebar[0].version < site.current_version %}
-  <li class="small-sidebar-link"><a href="{{ "/index.html" | prepend: site.baseurl }}">Switch to the latest version: {{ site.current_version }}</a></li>
-                {% else %}
   <li class="small-sidebar-link">This is the latest version.</li>
+                  {% else %}
+{% assign url_chunks = page.url | split: "/" %}
+{% assign newURL = url_chunks[0] + "//" + url_chunks[1] + "/" + site.current_version + "/" + url_chunks[3] + "/" + url_chunks[4] + "/" + url_chunks[5] %}
+  <!-- <li class="small-sidebar-link"><a href="{{ "/index.html" | prepend: site.baseurl }}">Switch to {{ site.current_version }} (latest version)</a></li>
+  -->
+<li class="small-sidebar-link">{{ newURL }}</li>
+
+<li class="small-sidebar-link"><a href="{{ newURL }}">Switch to {{ site.current_version }} (latest version)</a></li>
+
                 {% endif %}
 
   <!-- End of Alicia change

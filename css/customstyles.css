@@ -31,7 +31,7 @@ table.scheduler, th, td {
 small-sidebar-link {
     font-size: 80%
     margin-left: 5px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 small-sidebar-link .a{
@@ -68,7 +68,7 @@ div.links{
 h1.indexTitle {
   margin-bottom: 43px;
   font-stretch: extra-expanded;
-  color: #4E55FD;
+  color: #333;
 }
 
 p.iconTitle {
@@ -84,8 +84,8 @@ p.bookLink {
 }
 
 img.indexImg {
+  text-align: center !important;
   margin-bottom: 27px;
-  text-align: center;
 }
 
 h2.tagLine {
@@ -195,6 +195,8 @@ table.classic {
 }
 .bs-callout code {
     border-radius: 3px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 .bs-callout+.bs-callout {
     margin-top: -5px;
@@ -802,6 +804,7 @@ li.activeSeries {
 
 div.alert code, h2 code {
     background-color: transparent !important;
+    color: #333 !important;
 }
 /* without this, the links in these notes aren't visible.*/
 .alert a {
@@ -908,7 +911,8 @@ a.dropdown-toggle.otherProgLangs {
 
 span.muted {color: #666;}
 
-table code {background-color: transparent;}
+table code {background-color: transparent;
+  color: #333 !important;}
 
 .highlight .err {
     color: #a61717;
@@ -926,10 +930,19 @@ pre, table code {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    color: #333 !important;
 }
 
 pre {
     margin: 25px 0px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
+}
+
+code {
+    border-radius: 3px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 
 #json-box-container pre {
@@ -980,7 +993,8 @@ a.accordion-toggle {
 }
 
 span.red {
-    color: red;
+    color: #333;
+    background-color:#f5f5f5;
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
@@ -1162,6 +1176,8 @@ span.label.label-primary {
 
 a code {
     color: #248EC2;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 
 code + a > code {
