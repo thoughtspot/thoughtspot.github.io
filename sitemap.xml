@@ -7,7 +7,6 @@ layout: null
 	  {% for post in site.advanced-search %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.app-integrate %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.appliance %}{% include single-post-sitemap.html %}{% endfor %}
-		{% for post in site.aws %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.complex-search %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.data-connect %}{% include single-post-sitemap.html %}{% endfor %}
 		{% for post in site.data-integrate %}{% include single-post-sitemap.html %}{% endfor %}
