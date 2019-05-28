@@ -923,7 +923,8 @@ a.dropdown-toggle.otherProgLangs {
 
 span.muted {color: #666;}
 
-table code {background-color: transparent;
+table code {
+  background-color: transparent !important;;
   color: #333 !important;}
 
 .highlight .err {
