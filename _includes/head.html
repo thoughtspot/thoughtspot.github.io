@@ -46,7 +46,7 @@
 {% if page.title == "Search results" %}
 <!-- Do not add the SEO and remove from indexing-->
 <meta name="robots" content="noindex" />
-{% elsif page.url contains current_version %}
+{% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
 {% else %}
@@ -109,11 +109,10 @@ var ss360Config = {
             },
             padding: "6px",
             icon: {
-                image: "magnifier",
-                padding-left:15px
+                image: "magnifier"
             },
             border: {
-                color: "#000000",
+                color: "#98a0b0",
                 radius: "0px"
             },
             button: {

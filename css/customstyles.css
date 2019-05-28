@@ -22,16 +22,22 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;*/
+      line-height: 24px;
     }
+
+p {
+  padding-top: 10px;
+}
 
 table.scheduler, th, td {
    border: 1px solid black;
 }
 
-small-sidebar-link {
+small-sidebar-version-nav {
     font-size: 80%
     margin-left: 5px;
     padding-bottom: 25px;
+    background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
@@ -286,7 +292,8 @@ margin-top: -40px
 
 table {
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
@@ -771,7 +778,12 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
     color: white;
 }
 
-ol li ol li {list-style-type: lower-alpha;}
+ol li ol li {
+  list-style-type: lower-alpha;
+  padding: 10px;
+  line-height: 24px;
+}
+
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
@@ -1371,7 +1383,7 @@ h4.panel-title {
     font-style: italic;
     font-size: 13px;
     display: block;
-    color: rgba(13, 86, 125, 0.55);
+    color: #78D8DD;
     margin-bottom: 20px;
 }
 
