@@ -40,21 +40,19 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
         </p>
         </div>
 
-
         <div class="col-sm-12 col-md-12 col-lg-4 block">
-        <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script>
+        <script src="https://fast.wistia.com/embed/medias/y4qetwe325.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
         <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
         <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-        <span class="wistia_embed wistia_async_w8xlyijnfh popover=true popoverAnimateThumbnail=true videoFoam=true"
+        <span class="wistia_embed wistia_async_y4qetwe325 popover=true popoverAnimateThumbnail=true videoFoam=true"
         style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
         </div>
-        <p style="text-align: center;"><b>Use Formulas to Create Custom Fields</b></p>
+        <p style="text-align: center;"><b>Pinboard Filters  </b></p>
         <p>
-        How to add a formula to create a custom column based on another field in your data.
+        How to use pinboard filters to see only the data you care about within the tables and charts of a pinboard.
         </p>
         </div>
-
 
     </div>
 </div>
@@ -270,8 +268,18 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
         </p>
         </div>
 
-
         <div class="col-sm-12 col-md-12 col-lg-4 block">
+        <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+        <span class="wistia_embed wistia_async_w8xlyijnfh popover=true popoverAnimateThumbnail=true videoFoam=true"
+        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+        </div>
+        <p style="text-align: center;"><b>Use Formulas to Create Custom Fields</b></p>
+        <p>
+        How to add a formula to create a custom column based on another field in your data.
+        </p>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
