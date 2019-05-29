@@ -7,44 +7,37 @@ sidebar: mydoc_sidebar
 <div class="bd-example bd-example-row">
 <div class="container-fluid">
   <div class="row align-items-center justify-content-center">
-    <div class="col-sm-4">
-      <img class="indexImg" src="{{ "/images/basics.png" | prepend: site.baseurl  }}" alt="" height="150  ">
-      <p class="bookLink"><a href="{{"/admin/intro.html" | prepend: site.baseurl  }}">Administration Guide</a> | <a href="{{"/pdf/ThoughtSpot_Administration_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a></p>
-      <p class="bookLink"><a href="{{"/end-user/introduction/introduction.html" | prepend: site.baseurl  }}">User Guide</a> | <a href="{{"/pdf/ThoughtSpot_User_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </p>
-      <p class="bookLink"><a href="{{"/reference/intro-reference.html" | prepend: site.baseurl }}">Reference Guide</a> | <a href="{{"/pdf/ThoughtSpot_Reference_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </p>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+      <p class="iconTitle">VIDEOS AND TUTORIALS</p>
+      <img class="indexImg" src="{{ "/images/learn.svg" | prepend: site.baseurl  }}" alt="" height="150  ">
+        <p class="bookLink"><a href="{{ "/release/help-center.html"| prepend: site.baseurl }}">Videos</a></p>
+        <p class="bookLink"><a href="{{ "/end-user/introduction/about-navigating-thoughtspot.html "| prepend: site.baseurl }}">Getting started</a></p>
     </div>
-    <div class="col-sm-4">
-      <img class="indexImg" src="{{ "/images/data_connect.png" | prepend: site.baseurl  }}" alt="" height="150">
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+    <p class="iconTitle">USER AND ADMIN GUIDES</p>
+      <img class="indexImg" src="{{ "/images/guides.svg" | prepend: site.baseurl  }}" alt="" height="150">
+      <p class="bookLink"><a href="{{"/end-user/introduction/introduction.html" | prepend: site.baseurl  }}">User Guide</a></p>
+      <p class="bookLink"><a href="{{"/reference/intro-reference.html" | prepend: site.baseurl }}">Reference Guide</a> </p>
+      <p class="bookLink"><a href="{{"/admin/intro.html" | prepend: site.baseurl  }}">Administration Guide</a> </p>
+    </div>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+      <p class="iconTitle">DATA AND APP SETUP</p>
+      <img class="indexImg" src="{{ "/images/setup.svg" | prepend: site.baseurl  }}" alt="" height="150">
       <br>
-        <p class="bookLink"><a href="{{"/data-connect/setup/ETL.html" | prepend: site.baseurl  }}">Data Connect Guide</a> | <a href="{{"/pdf/ThoughtSpot_Data_Connect_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="{{"/data-integrate/introduction/introduction-data-integration.html" | prepend: site.baseurl  }}">Data Integration Guide</a> | <a href="{{"/pdf/ThoughtSpot_Data_Integration_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="{{"/app-integrate/introduction/introduction.html" | prepend: site.baseurl  }}">Application Integration Guide</a> | <a href="{{"/pdf/ThoughtSpot_Application_Integration_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </h3>
+        <p class="bookLink"><a href="{{"/appliance/welcome-intro.html" | prepend: site.baseurl}}">Node Setup Guide</a> </p>
+        <p class="bookLink"><a href="{{"/data-integrate/introduction/introduction-data-integration.html" | prepend: site.baseurl  }}">Data Integration Guide</a> </p>
+        <p class="bookLink"><a href="{{"/app-integrate/introduction/introduction.html" | prepend: site.baseurl  }}">Application Integration Guide</a> </p>
     </div>
-    <div class="col-sm-4">
-      <img class="indexImg" src="{{ "/images/appliance.png" | prepend: site.baseurl  }}" alt="" height="150">
-			<br>
-			  <p class="bookLink"><a href="{{"/appliance/welcome/welcome-intro.html" | prepend: site.baseurl}}">Applicance Quick Start</a> | <a href="{{"/pdf/ThoughtSpot_Appliance_Quick_Start_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="{{"/aws/introduction/about-aws.html" | prepend: site.baseurl  }}">AWS Quick Start</a>| <a href="{{"/pdf/ThoughtSpot_AWS_Quick_Start_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="{{"/disaster-recovery/about-disaster-recovery.html" | prepend: site.baseurl  }}">Disaster Recovery</a>| <a href="{{"/pdf/ThoughtSpot_Disaster_Recovery_Guide_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a></h3>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+    <p class="iconTitle">COMMUNITY NEWS</p>
+      <img class="indexImg" src="{{ "/images/com.png" | prepend: site.baseurl  }}" alt="" height="150">
+      <br>
+        <p class="bookLink"><a href="https://community.thoughtspot.com/" target="_blank">Community</a>
+        <p class="bookLink"><a href="https://community.thoughtspot.com/category/spoton-learning-webinars-continuing-ed" target="_blank">SpotOn Webinars</a>
+        <p class="bookLink"><a href="{{"/release/notes.html" | prepend: site.baseurl  }}"><b>Release Notes</b></a></p>
     </div>
   </div>
-		<div class="row align-items-center justify-content-center">
-		<div class="col-sm-4">
-			<img class="indexImg" src="{{ "/images/release_notes.png" | prepend: site.baseurl  }}" alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="{{"/release/notes.html" | prepend: site.baseurl  }}">Release Notes</a> | <a href="{{"/pdf/ThoughtSpot_Release_Notes_4.4.pdf " | prepend: site.baseurl  }}" target="_blank">PDF</a></h3></h3>
-		</div>
-		<div class="col-sm-4">
-			<img class="indexImg" src="{{ "/images/videos.png "| prepend: site.baseurl  }}" alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="{{ "/release/help-center.html "| prepend: site.baseurl }}">Videos</h3>
-		</div>
-		<div class="col-sm-4">
-			<img class="indexImg" src="{{ "/images/community.png" | prepend: site.baseurl  }}" alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="https://community.thoughtspot.com/" target="_blank">Community</a>
-		</div>
-	</div>
 </div>
 </div>
+
 <h2 class="tagLine">Try ThoughtSpot's <a href="{{"/spotiq/overview.html" | prepend: site.baseurl  }}">SpotIQ tutorial</a>!</h2>
