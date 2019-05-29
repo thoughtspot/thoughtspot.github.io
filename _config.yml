@@ -3,6 +3,8 @@
 locale                   : "en"
 destination              : ./_site
 output                   : web
+# Used to designate the current version. Edit when a new version is released
+current_version          : "5.2"
 # used for conditional content filtering
 description              : "Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily."
 twitter                  : thoughtspot
@@ -12,7 +14,7 @@ repository               : thoughtspot/thoughtspot.github.io
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repo                     : thoughtspot.github.io
 github_editme_path       : thoughtspot/thoughtspot.github.io/blob
-topnav_title             : ThoughtSpot® Documentation
+# topnav_title             : ThoughtSpot® Documentation -- REMOVED IN FAVOR OF image
 # appears on the top navigation bar next to the home button
 site_title               : ThoughtSpot
 # appears in the browser tab - seen mostly by search engines, not users
