@@ -8,6 +8,12 @@
 #     - title: News
 #       url: /news
 
+topnav:
+ - title: ThoughtSpot Documentation
+   items:
+   - title: www.thoughtspot.com
+     external_url: http://www.thoughtspot.com
+
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
@@ -22,6 +28,8 @@ topnav_dropdowns:
           url: /5.0/index.html
         - title: 4.5
           url: /4.5/index.html
+        - title: 4.4
+          url: /4.4/index.html
         - title: 4.2
           url: /4.2/4.2-home.html
         - title: 3.5
