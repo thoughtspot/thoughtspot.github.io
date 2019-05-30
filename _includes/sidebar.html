@@ -8,7 +8,7 @@
 
        {% assign url_chunks = page.url | split: "/" %}
 
-    <!-- KEEP FOR TESTING   -->
+    <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is {{ page.url }}.</li>
          <li class="small-sidebar-link">Current version is {{ site.current_version }}.</li>
          <li class="small-sidebar-link">absolute_url is {{ absolute_url }}.</li>
@@ -16,7 +16,7 @@
                   <li class="small-sidebar-link">url_chunks[1] is {{ url_chunks[1] }}.</li>
            <li class="small-sidebar-link">url_chunks[2] is {{ url_chunks[2] }}.</li>
                     <li class="small-sidebar-link">url_chunks[3] is {{ url_chunks[3] }}.</li>
-
+ -->
 
        {% assign newURL = "/" | append:site.current_version %}
 
@@ -41,17 +41,15 @@
        {% endif %}
 
   {% if sidebar[0].version < site.current_version %}
-  <li class="small-sidebar-version-nav"><a href="{{ newURL | absolute_url }}">Switch to version {{ site.current_version }} (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
   {% else %}
       <li class="small-sidebar-version-nav">This is the latest version.</li>
   {% endif %}
 
-
-
-         <!-- KEEP FOR TESTING    -->
+         <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is {{ newURL }}</li>
   <li class="small-sidebar-link">New URL will be {{ newURL | absolute_url }}</li>
-
+ -->
 
     <!-- End add link to latest version
        -->
