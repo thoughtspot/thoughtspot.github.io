@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/customstyles.css">
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/theme-orange.css">
+<link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/theme-new-brand.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -214,6 +214,7 @@ var ss360Config = {
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
+
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -222,7 +223,22 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com/">&nbsp;<span class="projectTitle"> ThoughtSpot® Documentation</span></a>
+
+<!-- OLD HOME NAV removed in favor of logo image
+           <a class="fa fa-home fa-lg navbar-brand" href="/5.1/index.html">&nbsp;<span class="projectTitle"> </span></a>
+-->
+
+<div class="logo">
+<figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
+
+</div>
+
+
+<!-- REMOVE OLD DOCS HOME LINK
+        </div>
+           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com/">&nbsp;<span class="projectTitle"> </span></a>
+-->
+
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -234,6 +250,12 @@ var ss360Config = {
                 
 
                 
+                
+                
+                <li><a href="http://www.thoughtspot.com" target="_blank">www.thoughtspot.com</a></li>
+                
+                
+                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
                 
@@ -244,6 +266,10 @@ var ss360Config = {
                         
                         
                           <li><a href="/5.2/index.html">latest (5.2)</a></li>
+                        
+                        
+                        
+                          <li><a href="/5.1/index.html">5.1</a></li>
                         
                         
                         
@@ -305,6 +331,46 @@ var ss360Config = {
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">Version 5.1 Guides</li>
+
+    <!-- Add link to same page in the latest version if you're on an older version of docs.
+       -->
+
+       
+
+    <!-- KEEP FOR TESTING
+         <li class="small-sidebar-link">Current page URL is /.</li>
+         <li class="small-sidebar-link">Current version is 5.2.</li>
+         <li class="small-sidebar-link">absolute_url is .</li>
+         <li class="small-sidebar-link">url_chunks[0] is .</li>
+                  <li class="small-sidebar-link">url_chunks[1] is .</li>
+           <li class="small-sidebar-link">url_chunks[2] is .</li>
+                    <li class="small-sidebar-link">url_chunks[3] is .</li>
+ -->
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+  
+  <li class="small-sidebar-version-nav"><a href="/5.2">Switch to version 5.2 (latest)</a></li>
+  
+
+         <!-- KEEP FOR TESTING
+<li class="small-sidebar-link">newURL is /5.2</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/5.2</li>
+ -->
+
+    <!-- End add link to latest version
+       -->
+
   
     
       
@@ -3095,31 +3161,28 @@ var ss360Config = {
 <div class="bd-example bd-example-row">
 <div class="container-fluid">
   <div class="row align-items-center justify-content-center">
-    <div class="col-sm-3" style="background-color: #F8F9F8; padding: 15px; border: 3px solid white; height: 400px;">
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
       <p class="iconTitle">VIDEOS AND TUTORIALS</p>
-      <img class="indexImg" src="/5.1/images/start-home.png" alt="" height="150  ">
+      <img class="indexImg" src="/5.1/images/learn.svg" alt="" height="150  ">
         <p class="bookLink"><a href="/5.1/release/videos-list.html ">Videos</a></p>
-        <p class="bookLink"><a href="/5.1/spotiq/overview.html ">SpotIQ tutorial</a></p>
         <p class="bookLink"><a href="/5.1/end-user/introduction/about-navigating-thoughtspot.html ">Getting started</a></p>
     </div>
-    <div class="col-sm-3" style="background-color: #F8F9F8; padding: 15px; border: 3px solid white; height: 400px;>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
     <p class="iconTitle">USER AND ADMIN GUIDES</p>
-      <img class="indexImg" src="/5.1/images/learn.png" alt="" height="150">
+      <img class="indexImg" src="/5.1/images/guides.svg" alt="" height="150">
       <p class="bookLink"><a href="/5.1/end-user/introduction/introduction.html">User Guide</a></p>
       <p class="bookLink"><a href="/5.1/reference/intro-reference.html">Reference Guide</a> </p>
       <p class="bookLink"><a href="/5.1/admin/intro.html">Administration Guide</a> </p>
     </div>
-    <div class="col-sm-3" style="background-color: #F8F9F8; padding: 15px; border: 3px solid white; height: 400px;">
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
       <p class="iconTitle">DATA AND APP SETUP</p>
-      <img class="indexImg" src="/5.1/images/setup.png" alt="" height="150">
+      <img class="indexImg" src="/5.1/images/setup.svg" alt="" height="150">
       <br>
         <p class="bookLink"><a href="/5.1/appliance/welcome-intro.html">Node Setup Guide</a> </p>
-        <p class="bookLink"><a href="/5.1/data-connect/setup/ETL.html">Data Connect Guide</a></p>
         <p class="bookLink"><a href="/5.1/data-integrate/introduction/introduction-data-integration.html">Data Integration Guide</a> </p>
         <p class="bookLink"><a href="/5.1/app-integrate/introduction/introduction.html">Application Integration Guide</a> </p>
-        <p class="bookLink"><a href="/5.1/disaster-recovery/about-disaster-recovery.html">Disaster Recovery</a></p>
     </div>
-    <div class="col-sm-3" style="background-color: #F8F9F8; padding: 15px; border: 3px solid white; height: 400px;">
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
     <p class="iconTitle">COMMUNITY NEWS</p>
       <img class="indexImg" src="/5.1/images/com.png" alt="" height="150">
       <br>
