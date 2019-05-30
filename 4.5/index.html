@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/customstyles.css">
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/theme-orange.css">
+<link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/theme-new-brand.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -203,8 +203,22 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> ThoughtSpot® Documentation</span></a>
-        </div>
+            <!-- OLD HOME NAV removed in favor of logo image
+                       <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> </span></a>
+            -->
+
+            <div class="logo">
+            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
+
+            </div>
+
+                    </div>
+
+                <!-- Remove old site nav
+                                        <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com/">&nbsp;<span class="projectTitle"> </span></a>
+                    </div>
+                End Remove old site nav -->
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- toggle sidebar button -->
@@ -214,6 +228,12 @@ var ss360Config = {
                 
                 
 
+                
+                
+                
+                <li><a href="http://www.thoughtspot.com" target="_blank">www.thoughtspot.com</a></li>
+                
+                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
@@ -290,6 +310,46 @@ var ss360Config = {
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">Version 4.5 Guides</li>
+
+    <!-- Add link to same page in the latest version if you're on an older version of docs.
+       -->
+
+       
+
+    <!-- KEEP FOR TESTING
+         <li class="small-sidebar-link">Current page URL is /.</li>
+         <li class="small-sidebar-link">Current version is 5.2.</li>
+         <li class="small-sidebar-link">absolute_url is .</li>
+         <li class="small-sidebar-link">url_chunks[0] is .</li>
+                  <li class="small-sidebar-link">url_chunks[1] is .</li>
+           <li class="small-sidebar-link">url_chunks[2] is .</li>
+                    <li class="small-sidebar-link">url_chunks[3] is .</li>
+ -->
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+  
+  <li class="small-sidebar-version-nav"><a href="/5.2">Switch to version 5.2 (latest)</a></li>
+  
+
+         <!-- KEEP FOR TESTING
+<li class="small-sidebar-link">newURL is /5.2</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.5/5.2</li>
+ -->
+
+    <!-- End add link to latest version
+       -->
+
   
     
       
@@ -2883,46 +2943,39 @@ var ss360Config = {
 <div class="bd-example bd-example-row">
 <div class="container-fluid">
   <div class="row align-items-center justify-content-center">
-    <div class="col-md-4">
-      <img class="indexImg" src="/4.5/images/basics.png" alt="" height="150  ">
-      <p class="bookLink"><a href="/4.5/admin/intro.html">Administration Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Administration_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a></p>
-      <p class="bookLink"><a href="/4.5/end-user/introduction/introduction.html">User Guide</a> | <a href="/4.5/pdf/ThoughtSpot_User_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a> </p>
-      <p class="bookLink"><a href="/4.5/reference/intro-reference.html">Reference Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Reference_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a> </p>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+      <p class="iconTitle">VIDEOS AND TUTORIALS</p>
+      <img class="indexImg" src="/4.5/images/learn.svg" alt="" height="150  ">
+        <p class="bookLink"><a href="/4.5/release/help-center.html">Videos</a></p>
+        <p class="bookLink"><a href="/4.5/end-user/introduction/about-navigating-thoughtspot.html ">Getting started</a></p>
     </div>
-    <div class="col-md-4">
-      <img class="indexImg" src="/4.5/images/data_connect.png" alt="" height="150">
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+    <p class="iconTitle">USER AND ADMIN GUIDES</p>
+      <img class="indexImg" src="/4.5/images/guides.svg" alt="" height="150">
+      <p class="bookLink"><a href="/4.5/end-user/introduction/introduction.html">User Guide</a></p>
+      <p class="bookLink"><a href="/4.5/reference/intro-reference.html">Reference Guide</a> </p>
+      <p class="bookLink"><a href="/4.5/admin/intro.html">Administration Guide</a> </p>
+    </div>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+      <p class="iconTitle">DATA AND APP SETUP</p>
+      <img class="indexImg" src="/4.5/images/setup.svg" alt="" height="150">
       <br>
-        <p class="bookLink"><a href="/4.5/data-connect/setup/ETL.html">Data Connect Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Data_Connect_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Data Integration Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Data_Integration_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a> </h3>
-        <p class="bookLink"><a href="/4.5/app-integrate/introduction/introduction.html">Application Integration Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Application_Integration_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a> </h3>
+        <p class="bookLink"><a href="/4.5/appliance/welcome-intro.html">Node Setup Guide</a> </p>
+        <p class="bookLink"><a href="/4.5/data-integrate/introduction/introduction-data-integration.html">Data Integration Guide</a> </p>
+        <p class="bookLink"><a href="/4.5/app-integrate/introduction/introduction.html">Application Integration Guide</a> </p>
     </div>
-    <div class="col-md-4">
-      <img class="indexImg" src="/4.5/images/appliance.png" alt="" height="150">
-			<br>
-      <p class="bookLink"><a href="/4.5/appliance/welcome-intro.html">Node Setup Guide</a> | <a href="/4.5/pdf/ThoughtSpot_Node_Setup_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a>
-        <p class="bookLink"><a href="/4.5/disaster-recovery/about-disaster-recovery.html">Disaster Recovery</a>| <a href="/4.5/pdf/ThoughtSpot_Disaster_Recovery_Guide_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a></h3>
+    <div class="col-sm-3" style="text-align: center; padding: 15px; border: 3px solid white; height: 400px;">
+    <p class="iconTitle">COMMUNITY NEWS</p>
+      <img class="indexImg" src="/4.5/images/com.png" alt="" height="150">
+      <br>
+        <p class="bookLink"><a href="https://community.thoughtspot.com/" target="_blank">Community</a>
+        <p class="bookLink"><a href="https://community.thoughtspot.com/category/spoton-learning-webinars-continuing-ed" target="_blank">SpotOn Webinars</a>
+        <p class="bookLink"><a href="/4.5/release/notes.html"><b>Release Notes</b></a></p>
     </div>
   </div>
-		<div class="row align-items-center justify-content-center">
-		<div class="col-md-4">
-			<img class="indexImg" src="/4.5/images/release_notes.png" alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="/4.5/release/notes.html">Release Notes</a> | <a href="/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf " onClick="ga('send', 'event', 'PDF Downloads', 'Click', 'LinkTaken', { nonInteraction: true });" target="_blank">PDF</a></h3></h3>
-          <p class="bookLink"><a href="/4.5/faq/faq.html">Frequently Asked Questions</a>
-    </div>
-		<div class="col-md-4">
-			<img class="indexImg" src="/4.5/images/videos.png " alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="/4.5/release/help-center.html ">Videos</h3>
-		</div>
-		<div class="col-md-4">
-			<img class="indexImg" src="/4.5/images/community.png" alt="" height="150">
-			<br>
-        <p class="bookLink"><a href="https://community.thoughtspot.com/" target="_blank">Community</a>
-		</div>
-	</div>
 </div>
 </div>
+
 <h2 class="tagLine">Try ThoughtSpot's <a href="/4.5/spotiq/overview.html">SpotIQ tutorial</a>!</h2>
 
         </div>
