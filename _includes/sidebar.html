@@ -13,7 +13,7 @@
          <li class="small-sidebar-link">Current version is {{ site.current_version }}.</li>
    -->
 
-       {% assign newURL = "/" | append:site.current_version | append:"/" | append:url_chunks[1] %}
+       {% assign newURL = "/" | append:site.current_version %}
 
        {% if url_chunks[2] %}
        {% assign newURL = newURL | append:"/" | append:url_chunks[2] %}
