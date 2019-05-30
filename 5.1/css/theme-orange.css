@@ -5,11 +5,11 @@
 }
 
 
-h3 {color: #ED5F46; }
+h3 {color: #4E55FD; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #FF4900;
+    background-color: #4E55FD;
     color: white;
 }
 
@@ -40,8 +40,8 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #FF4900;
-    border-color: #9B2C00;
+    background-color: #4E55FD;
+    border-color: #272A7F;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
     color: white;
@@ -109,7 +109,7 @@ li.bookTitle {
   margin-top:20px;
     font-weight:normal;
     font-size:130%;
-    color: #ED5F46;
+    color: #4E55FD;
     margin-bottom:10px;
     margin-left: 5px;
 
