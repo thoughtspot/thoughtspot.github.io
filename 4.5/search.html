@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/customstyles.css">
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/theme-orange.css">
+<link rel="stylesheet" href="https://docs.thoughtspot.com/4.5/css/theme-new-brand.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -188,8 +188,22 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> ThoughtSpot® Documentation</span></a>
-        </div>
+            <!-- OLD HOME NAV removed in favor of logo image
+                       <a class="fa fa-home fa-lg navbar-brand" href="/4.5/index.html">&nbsp;<span class="projectTitle"> </span></a>
+            -->
+
+            <div class="logo">
+            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
+
+            </div>
+
+                    </div>
+
+                <!-- Remove old site nav
+                                        <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com/">&nbsp;<span class="projectTitle"> </span></a>
+                    </div>
+                End Remove old site nav -->
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- toggle sidebar button -->
@@ -199,6 +213,12 @@ var ss360Config = {
                 
                 
 
+                
+                
+                
+                <li><a href="http://www.thoughtspot.com" target="_blank">www.thoughtspot.com</a></li>
+                
+                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
@@ -275,6 +295,46 @@ var ss360Config = {
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">Version 4.5 Guides</li>
+
+    <!-- Add link to same page in the latest version if you're on an older version of docs.
+       -->
+
+       
+
+    <!-- KEEP FOR TESTING
+         <li class="small-sidebar-link">Current page URL is /search.html.</li>
+         <li class="small-sidebar-link">Current version is 5.2.</li>
+         <li class="small-sidebar-link">absolute_url is .</li>
+         <li class="small-sidebar-link">url_chunks[0] is .</li>
+                  <li class="small-sidebar-link">url_chunks[1] is search.html.</li>
+           <li class="small-sidebar-link">url_chunks[2] is .</li>
+                    <li class="small-sidebar-link">url_chunks[3] is .</li>
+ -->
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+  
+  <li class="small-sidebar-version-nav"><a href="/5.2/search.html">Switch to version 5.2 (latest)</a></li>
+  
+
+         <!-- KEEP FOR TESTING
+<li class="small-sidebar-link">newURL is /5.2/search.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.5/5.2/search.html</li>
+ -->
+
+    <!-- End add link to latest version
+       -->
+
   
     
       
