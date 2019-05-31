@@ -86,7 +86,7 @@ details on how to configure your scope and permissions.
     </tr>
 	<tr>
 
-      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/5.2/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
        </td>
     </tr>
   </table>
