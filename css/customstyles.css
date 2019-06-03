@@ -927,6 +927,16 @@ table code {
   background-color: transparent !important;;
   color: #333 !important;}
 
+code.api-method-post {
+  background-color: #10a54a !important;
+  color: white !important;
+}
+
+code.api-method-get {
+  background-color: #0f6ab4 !important;
+  color: white !important;
+}
+
 .highlight .err {
     color: #a61717;
     background-color: transparent !important;
