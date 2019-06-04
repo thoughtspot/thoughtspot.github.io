@@ -79,7 +79,7 @@ var ss360Config = {
         highlight: true
     },
     style: {
-        themeColor: "#ea603e",
+        themeColor: "#4E55FD",
         suggestions: {
             text: {
                 color: "#5c5c5c"
@@ -90,7 +90,7 @@ var ss360Config = {
             padding: "1px",
             distanceFromTop: "0px",
             border: {
-                color: "#ea603e",
+                color: "#4E55FD",
                 radius: "0px"
             }
      },
@@ -212,7 +212,7 @@ var ss360Config = {
 -->
 
 <div class="logo">
-<figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
+<figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:10px"/> </a></figure>
 
 </div>
 
@@ -3227,14 +3227,76 @@ var ss360Config = {
   <p>This reference details all the public ThoughtSpot APIs. The descriptions are
 aimed to help you solve specific use cases, such as syncing users and groups, or
 fetching visualization headers. The following public APIs are available:</p>
-
-<ul>
-  <li><a href="/5.2/app-integrate/reference/pinboarddata.html">pinboarddata API</a></li>
-  <li><a href="/5.2/app-integrate/reference/metadata-api.html">metadata API</a></li>
-  <li><a href="/5.2/app-integrate/reference/session-api.html">session API</a></li>
-  <li><a href="/5.2/app-integrate/reference/user-api.html">user API</a></li>
-  <li><a href="/5.2/app-integrate/reference/group-api.html">group API</a></li>
-</ul>
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:40%" />
+      <col style="width:40%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th>Public APIs</th>
+         <th>Functional Behaviour</th>
+         <th>Despcription</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="/5.2/app-integrate/reference/pinboarddata.html">Pinboard Data</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/pinboarddata</td>
+         <td>Get the pinboard data from the ThoughtSpot system</td>
+      </tr>
+     <tr>
+         <td rowspan="2"><a href="/5.2/app-integrate/reference/metadata-api.html">Metadata</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/metadata/listobjectheaders</td>
+         <td>List the metadata object headers in the repository</td>
+      </tr>
+      <tr>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/metadata/listvizheaders</td>
+         <td>Get the visualization headers from the ThoughtSpot system</td>
+      </tr>
+      <tr>
+         <td rowspan="2"><a href="/5.2/app-integrate/reference/session-api.html">Session</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/session/login</td>
+         <td>Authenticate and login a user</td>
+         </tr>
+     <tr>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/session/logout</td>
+         <td>Logout a user out of an existing session</td>
+      </tr>
+      <tr>
+         <td rowspan="4"><a href="/5.2/app-integrate/reference/user-api.html">User</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/user/transfer/ownership</td>
+         <td>Transfer ownership of all objects from one user to another</td>
+         </tr>
+     <tr>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/user/sync</td>
+         <td>Synchronize principal from your external system with ThoughtSpot system</td>
+      </tr>
+      <tr>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/user/updatepassword</td>
+         <td>Change the password of a user</td>
+      </tr>
+      <tr>
+         <td><code class="api-method-get">GET</code> /tspublic/v1/user/list</td>
+         <td>Get all users, groups and their inter-dependencies</td>
+      </tr>
+      <tr>
+         <td rowspan="2"><a href="/5.2/app-integrate/reference/group-api.html">Group</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/group/addprivilege</td>
+         <td>Add a privilege to a group</td>
+      </tr>
+      <tr>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/group/removeprivilege</td>
+         <td>Remove a privilege from a group</td>
+      </tr>
+      <tr>
+         <td><a href="/5.2/app-integrate/reference/group-api.html">Materialization (link to be added)</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/materialization/refreshview/{id}</td>
+         <td>Re-execute the query and load data into the materialized view</td>
+      </tr>
+   </tbody>
+</table>
 
 <p>See <a href="/5.2/app-integrate/data-api/about-data-api.html#">About the REST API</a> for information on how to call
 and use the REST APIs.</p>
@@ -3279,7 +3341,7 @@ can change without warning breaking your application.</div>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 31, 2019 <br />
+        Generated: Jun 4, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
