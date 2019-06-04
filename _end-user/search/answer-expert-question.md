@@ -35,4 +35,4 @@ When a user struggles to answer a specific question, build a chart you have in m
 ## Related information
 
 -   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
--   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-ask-expert-question.html)
+-   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)

@@ -41,4 +41,4 @@ You can use **Ask an expert** to ask any kind of question you like. Even if your
 ## Related information
 
 -   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
--   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-ask-expert-question.html)
+-   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)
