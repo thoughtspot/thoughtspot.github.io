@@ -29,11 +29,11 @@ fetching visualization headers. The following public APIs are available:
       </tr>
      <tr>
          <td rowspan="2"><a href="{{ site.baseurl }}/app-integrate/reference/metadata-api.html">Metadata</a></td>
-         <td><code class="api-method-post">POST</code> /tspublic/v1/metadata/listobjectheaders</td>
+         <td><code class="api-method-get">GET</code> /tspublic/v1/metadata/listobjectheaders</td>
          <td>List the metadata object headers in the repository</td>
       </tr>
       <tr>
-         <td><code class="api-method-post">POST</code> /tspublic/v1/metadata/listvizheaders</td>
+         <td><code class="api-method-get">GET</code> /tspublic/v1/metadata/listvizheaders</td>
          <td>Get the visualization headers from the ThoughtSpot system</td>
       </tr>
       <tr>
