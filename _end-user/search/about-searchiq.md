@@ -49,5 +49,6 @@ If all is well, you'll see a microphone icon it the search bar, when it is in Se
 
 ## Related information
 
+-   [SearchIQ Data Collection]({{ site.baseurl }}/end-user/search/searchiq-data-collection.html)
 -   [Use SearchIQ]({{ site.baseurl }}/end-user/search/use-searchiq.html)
 -   [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html)
