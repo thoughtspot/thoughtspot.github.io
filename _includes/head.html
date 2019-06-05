@@ -46,18 +46,22 @@
 {% if page.title == "Search results" %}
 <!-- Do not add the SEO and remove from indexing-->
 <meta name="robots" content="noindex" />
-{% else %}
+{% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
+{% else %}
+<meta name="robots" content="noindex" />
+
 {% endif %}
 
 <!--  Site Search -->
 <script>
+  /********* Version 11.x JavaScript for Site Search 360 *********/
 var ss360Config = {
     /********* General *********/
-    siteId: 'docs.thoughtspot.com',
-    animationSpeed: 250,
-    themeColor: '#ea603e',
+    siteId: "docs.thoughtspot.com",
+
+
     showErrors: false,
     /********* Search Box *********/
     searchBoxSelector: '#searchBox',
@@ -125,4 +129,4 @@ var ss360Config = {
     }
 }
 </script>
-<script src="https://sitesearch360.com/cdn/sitesearch360-v10.min.js"></script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
