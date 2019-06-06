@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
-<title>Copy a pinboard | ThoughtSpot</title>
+<!-- <meta name="description" content="ThoughtSpot recognizes a defined list of 'helper' words; we call them **stop words**."> -->
+<meta name="keywords" content="stop words,  stop words stopwords">
+<title>Stop Word Reference | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -315,13 +315,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /end-user/pinboards/copy-a-pinboard.html.</li>
+         <li class="small-sidebar-link">Current page URL is /reference/stop-words.html.</li>
          <li class="small-sidebar-link">Current version is 5.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is end-user.</li>
-           <li class="small-sidebar-link">url_chunks[2] is pinboards.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is copy-a-pinboard.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is reference.</li>
+           <li class="small-sidebar-link">url_chunks[2] is stop-words.html.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is .</li>
  -->
 
        
@@ -341,8 +341,8 @@ var ss360Config = {
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /5.2/end-user/pinboards/copy-a-pinboard.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/5.2/end-user/pinboards/copy-a-pinboard.html</li>
+<li class="small-sidebar-link">newURL is /5.2/reference/stop-words.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/5.2/reference/stop-words.html</li>
  -->
 
     <!-- End add link to latest version
@@ -929,7 +929,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/5.2/end-user/pinboards/copy-a-pinboard.html">Copy a pinboard</a></li>
+                          <li><a href="/5.2/end-user/pinboards/copy-a-pinboard.html">Copy a pinboard</a></li>
                       
                    
                 
@@ -3203,13 +3203,15 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Copy a pinboard</h1>
+   <h1 class="post-title-main">Stop Word Reference</h1>
 </div>
 
 
 
 <div class="post-content">
 
+   
+    <div class="summary">ThoughtSpot recognizes a defined list of 'helper' words; we call them **stop words**.</div>
    
 
     
@@ -3251,38 +3253,223 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>You can make a copy of a pinboard if you would like to make edits without changing the original pinboard. Making a copy of a pinboard allows you to make your own edits without overwriting the original. When saving a copy, you can type in a new name.</p>
+  <p>This reference lists the various stop words that ThoughtSpot recognizes as
+normal parts of the language (articles, prepositions, conjunctions, and
+interjections). Specifically, SearchIQ uses uses stop words in its
+descriptive columns.</p>
 
-<ol>
-  <li>
-    <p>Click <strong>Pinboards</strong>, on the top navigation bar.</p>
+<p>When training SearchIQ Data Optimization, we recommend training worksheets with
+questions that contain only the following:</p>
 
-    <p><img src="/5.2/images/click_pinboards_icon.png" alt="" title="Pinboards" /></p>
-  </li>
-  <li>On the pinboard list page, click the pinboard you would like to copy.</li>
-  <li>
-    <p>Click the ellipses icon <img src="/5.2/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> and select <strong>Make a copy</strong>.</p>
+<ul>
+  <li>Exact column names or their synonyms</li>
+  <li>Exact values (for filtering)</li>
+  <li>Keywords</li>
+  <li>Stop words</li>
+</ul>
 
-    <p><img src="/5.2/images/make_a_copy_of_a_pinboard.png" alt="" title="Make a copy of the pinboard" /></p>
-  </li>
-  <li>
-    <p>Give your pinboard a new name and description, and then click <strong>Save</strong>.</p>
+<h3 id="stop-words-in-english">Stop words in English</h3>
 
-    <p><img src="/5.2/images/name_your_pinboard_copy.png" alt="" title="Name and save your pinboard copy" /></p>
-  </li>
-</ol>
+<p>This is the comprehensive list of stop words in English:</p>
+<details>
+<summary>A</summary>
+a
+about
+again
+against
+am
+an
+any
+are
+arent
+as
+at
+</details>
+<details>
+<summary>B</summary>
+be
+because
+been
+being
+both
+but
+</details>
+<details>
+<summary>C</summary>
+cant
+cannot
+could
+couldnt
+</details>
+<details>
+<summary>D</summary>
+did
+didnt
+do
+does
+doesnt
+doing
+dont
+down
+during
+</details>
+<details>
+<summary>E</summary>
+each
+</details>
+<details>
+<summary>F</summary>
+few
+for
+from
+further
+</details>
+<details>
+<summary>H</summary>
+had
+hadnt
+has
+hasnt
+have
+havent
+having
+he
+her
+here
+hers
+herself
+him
+himself
+his
+how
+</details>
+<details>
+<summary>I</summary>
+i
+if
+in
+into
+is
+isnt
+it
+its
+itself
+</details>
+<details>
+<summary>L</summary>
+let
+</details>
+<details>
+<summary>M</summary>
+me
+mustnt
+my
+myself
+</details>
+<details>
+<summary>N</summary>
+nor
+</details>
+<details>
+<summary>O</summary>
+of
+off
+on
+once
+only
+or
+other
+ought
+our
+ours
+ourselves
+out
+over
+</details>
+<details>
+<summary>S</summary>
+same
+she
+should
+shouldnt
+so
+some
+such
+</details>
+<details>
+<summary>T</summary>
+than
+that
+the
+their
+theirs
+them
+themselves
+then
+there
+these
+they
+this
+those
+through
+to
+too
+</details>
+<details>
+<summary>U</summary>
+under
+until
+up
+</details>
+<details>
+<summary>V</summary>
+very
+</details>
+<details>
+<summary>W</summary>
+was
+wasnt
+we
+were
+werent
+what
+which
+while
+whom
+why
+wont
+would
+wouldnt
+</details>
+<details>
+<summary>Y</summary>
+you
+your
+yours
+yourself
+yourselves
+</details>
+
+<h3 id="stop-words-in-other-languages">Stop words in Other Languages</h3>
+
+<p>Currently, we support only English stop words.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.2/_end-user/pinboards/copy-a-pinboard.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.2/_reference/stop-words.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
     </div>
     <div >
+        
+        
+        
+        
+        
         
     </div>
 </div>
@@ -3298,7 +3485,7 @@ $('#toc').on('click', 'a', function() {
       <div class="col-lg-12 footer">
         Generated: Jun 6, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 05/05/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
