@@ -72,3 +72,10 @@ ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.
     ```
 
     This will block all usage of older versions.
+
+## Supported SSL ciphers
+The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
+    ```
+    nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
+    ```
+You will need to ensure that your load-balancer supports these ciphers.
