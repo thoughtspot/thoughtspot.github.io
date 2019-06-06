@@ -46,9 +46,11 @@
 {% if page.title == "Search results" %}
 <!-- Do not add the SEO and remove from indexing-->
 <meta name="robots" content="noindex" />
-{% else %}
+{% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
+{% else %}
+<meta name="robots" content="noindex" />
 {% endif %}
 
 <!--  Site Search -->
