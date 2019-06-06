@@ -3,7 +3,7 @@ title: [Stop Word Reference]
 tags: [stop words]
 keywords: stop words stopwords
 last_updated: 05/05/2019
-summary: "ThoughtSpot recognizes a defined list of 'helper' uses uses stop words in its descriptive columns."
+summary: "ThoughtSpot recognizes a defined list of 'helper' words; we call them **stop words**."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
