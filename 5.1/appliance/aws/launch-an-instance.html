@@ -58,11 +58,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.1/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-30T01:04:57-07:00" />
+<meta property="article:published_time" content="2019-06-05T18:29:21-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.1/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-05-30T01:04:57-07:00","datePublished":"2019-05-30T01:04:57-07:00","description":"After you’ve determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot SRE liaison.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.1/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.1/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-06-05T18:29:21-07:00","datePublished":"2019-06-05T18:29:21-07:00","description":"After you’ve determined your configuration options, you must setup your virtual machines (VMs) using an Amazon Machine Image (AMI). This AMI will be shared with you by ThoughtSpot SRE liaison.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3239,17 +3239,15 @@ $('#toc').on('click', 'a', function() {
   <li>Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Also for staging larger datasets (&gt; 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD gp2 provisioned.</li>
 </ul>
 
-<h3 id="contact-support-and-set-your-region">Contact support and set your region</h3>
+<h3 id="copy-ts-ami-to-your-region">Copy TS AMI to your region</h3>
 
 <ol>
   <li>Log in to your AWS account from the <a href="https://console.aws.amazon.com/console/home">AWS Amazon sign in page</a>.</li>
   <li>
-    <p>Provide ThoughtSpot Support with your AWS account ID and the region where the VMs will be hosted.
-Support will grant you permissions and share the current ThoughtSpot base AMI with you.</p>
-
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can find your account ID and region on the top right corner of the AWS console.</div>
-
-    <p><img src="/5.1/images/aws_account_id_region.png" alt="" title="AWS account ID and region" /></p>
+    <p>Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:<br />
+<strong>AMI Name</strong>: centos-golden-20171207-61be6ad-prod-small<br />
+<strong>AMI ID</strong>: ami-f1151091<br />
+<strong>Region</strong>: N. California</p>
   </li>
   <li>
     <p>Navigate to the EC2 service dashboard by clicking <strong>Services</strong>, then select <strong>EC2</strong>.</p>
@@ -3328,7 +3326,7 @@ The instances need to be on the same VPC and subnetwork.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 30, 2019 <br />
+        Generated: Jun 5, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
