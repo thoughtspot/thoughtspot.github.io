@@ -930,11 +930,21 @@ table code {
 code.api-method-post {
   background-color: #10a54a !important;
   color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
 }
 
 code.api-method-get {
   background-color: #0f6ab4 !important;
   color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
 }
 
 .highlight .err {
