@@ -43,11 +43,10 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 To set up a ThoughtSpot cluster in AWS, do the following:
 
 1. Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
-2. Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:
-
-  **AMI Name**: centos-golden-20171207-61be6ad-prod-small
-  **AMI ID**: ami-f1151091
-  **Region**: N. California
+2. Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
+**AMI Name**: centos-golden-20171207-61be6ad-prod-small  
+**AMI ID**: ami-f1151091  
+**Region**: N. California
 
 3. Navigate to the EC2 service dashboard by clicking **Services**, then select **EC2**.
 
