@@ -10,8 +10,8 @@ aimed to help you solve specific use cases, such as syncing users and groups, or
 fetching visualization headers. The following public APIs are available:
 <table>
    <colgroup>
-      <col style="width:20%" />
-      <col style="width:40%" />
+      <col style="width:15%" />
+      <col style="width:45%" />
       <col style="width:40%" />
    </colgroup>
    <thead>
@@ -72,7 +72,7 @@ fetching visualization headers. The following public APIs are available:
          <td>Remove a privilege from a group</td>
       </tr>
       <tr>
-         <td><a href="{{ site.baseurl }}/app-integrate/reference/group-api.html">Materialization (link to be added)</a></td>
+         <td><a href="{{ site.baseurl }}/app-integrate/reference/public-api-reference.html">Materialization</a></td>
          <td><code class="api-method-post">POST</code> /tspublic/v1/materialization/refreshview/{id}</td>
          <td>Re-execute the query and load data into the materialized view</td>
       </tr>
