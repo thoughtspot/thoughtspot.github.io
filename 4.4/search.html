@@ -50,6 +50,83 @@
 <meta name="robots" content="noindex" />
 
 
+<!--  Site Search -->
+<script>
+  /********* Version 11.x JavaScript for Site Search 360 *********/
+var ss360Config = {
+    /********* General *********/
+    siteId: "docs.thoughtspot.com",
+
+
+    showErrors: false,
+    /********* Search Box *********/
+    searchBoxSelector: '#searchBox',
+    searchBoxStyle: {
+        text: {
+            color: '#6c6c6c',
+            size: '14px',
+        },
+        background: {
+            color: '#ffffff',
+        },
+        padding: '6px',
+        icon: {
+            image: 'magnifier',
+        },
+        border: {
+            color: '#98a0b0',
+            radius: '0px',
+        },
+        button: {
+            text: 'Search...',
+            icon: undefined
+        }
+    },
+    placeholder: 'Search...',
+    searchButton: undefined,
+    /********* Search Suggestions *********/
+    showSearchSuggestions: false,
+    suggestionsStyle: {
+        text: {
+            color: '#5c5c5c',
+        },
+        background: {
+            color: '#ffffff'
+        },
+        padding: '1px',
+        distanceFromTop: '0px',
+        border: {
+            color: '#ea603e',
+            radius: '0px',
+        },
+    },
+    showImagesSuggestions: false,
+    numSuggestions: 6,
+    maxQuerySuggestions: 3,
+    minChars: 3,
+    highlight: true,
+    /********* Search Results *********/
+    searchResults: {'contentBlock':'searchresults-only', 'url': 'https://docs.thoughtspot.com/search.html'},
+    searchResultsCaption: 'Found #COUNT# results for your query "#QUERY#"',
+    numResults: 300,
+    navigation: 'top',
+    highlightQueryTerms: true,
+    showImagesResults: true,
+    showResultLink: true,
+    queryCorrectionText: 'Did you mean "#CORRECTION#"?',
+    noResultsText: 'Sorry, we have not found any matches for your query.',
+    otherContentGroupName: 'Search results',
+    ignoreOtherContentGroup: false,
+    moreResultsButton: 'More results',
+    moreResultsPagingSize: 50,
+    groupResults: true,
+    loader: {
+        type: 'circle'
+    }
+}
+</script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
+
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -99,7 +176,7 @@
         });
     </script>
     
-
+<meta name="google-site-verification" content="A4aJPCELY1A6FdBNFswMFI6hX-y6jxAu1v5SLW1ur48" />
 </head>
 <body>
 <!-- Navigation -->
@@ -117,7 +194,7 @@
             -->
 
             <div class="logo">
-            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
+            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:10px"/> </a></figure>
 
             </div>
 
@@ -2721,21 +2798,23 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <h2 id="search-results">Search results</h2>
+            <searchresults-only>
+</searchresults-only>
 
-<script>
- (function() {
-   var cx = '009143652178737222860:o0t5z79dldy';
-   var gcse = document.createElement('script');
-   gcse.type = 'text/javascript';
-   gcse.async = true;
-   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-   var s = document.getElementsByTagName('script')[0];
-   s.parentNode.insertBefore(gcse, s);
- })();
-</script>
+<h2 id="search-results--removed-to-make-44-like-50-which-works">Search results – removed to make 4.4 like 5.0 which works</h2>
 
-<gcse:searchresults-only></gcse:searchresults-only>
+<h2><script></script></h2>
+<h2 id="function-">(function() {</h2>
+<h2 id="var-cx--009143652178737222860o0t5z79dldy">var cx = ‘009143652178737222860:o0t5z79dldy’;</h2>
+<h2 id="var-gcse--documentcreateelementscript">var gcse = document.createElement(‘script’);</h2>
+<h2 id="gcsetype--textjavascript">gcse.type = ‘text/javascript’;</h2>
+<h2 id="gcseasync--true">gcse.async = true;</h2>
+<h2 id="gcsesrc--httpscsegooglecomcsejscx--cx">gcse.src = ‘https://cse.google.com/cse.js?cx=’ + cx;</h2>
+<h2 id="var-s--documentgetelementsbytagnamescript0">var s = document.getElementsByTagName(‘script’)[0];</h2>
+<h2 id="sparentnodeinsertbeforegcse-s">s.parentNode.insertBefore(gcse, s);</h2>
+<h2 id="-1">})();</h2>
+<h2 id="script">&lt;/script&gt;</h2>
+<h2 id="-2"><gcse:searchresults-only></gcse:searchresults-only></h2>
 
         </div>
     <!-- /.row -->
