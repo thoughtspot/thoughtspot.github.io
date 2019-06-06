@@ -46,85 +46,25 @@
 <link rel="alternate" type="application/rss+xml" title="" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<meta name="robots" content="noindex" />
+<!-- SEO Tools -->
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>[“Row level security rules reference”]</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="[“Row level security rules reference”]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules." />
+<meta property="og:description" content="ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules." />
+<link rel="canonical" href="https://docs.thoughtspot.com/4.4/reference/rls-rule-builder-reference.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/4.4/reference/rls-rule-builder-reference.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-30T00:03:30-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"url":"https://docs.thoughtspot.com/4.4/reference/rls-rule-builder-reference.html","headline":"[“Row level security rules reference”]","dateModified":"2019-05-30T00:03:30-07:00","datePublished":"2019-05-30T00:03:30-07:00","description":"ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/4.4/reference/rls-rule-builder-reference.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
 
-<!--  Site Search -->
-<script>
-  /********* Version 11.x JavaScript for Site Search 360 *********/
-var ss360Config = {
-    /********* General *********/
-    siteId: "docs.thoughtspot.com",
-
-
-    showErrors: false,
-    /********* Search Box *********/
-    searchBoxSelector: '#searchBox',
-    searchBoxStyle: {
-        text: {
-            color: '#6c6c6c',
-            size: '14px',
-        },
-        background: {
-            color: '#ffffff',
-        },
-        padding: '6px',
-        icon: {
-            image: 'magnifier',
-        },
-        border: {
-            color: '#98a0b0',
-            radius: '0px',
-        },
-        button: {
-            text: 'Search...',
-            icon: undefined
-        }
-    },
-    placeholder: 'Search...',
-    searchButton: undefined,
-    /********* Search Suggestions *********/
-    showSearchSuggestions: false,
-    suggestionsStyle: {
-        text: {
-            color: '#5c5c5c',
-        },
-        background: {
-            color: '#ffffff'
-        },
-        padding: '1px',
-        distanceFromTop: '0px',
-        border: {
-            color: '#ea603e',
-            radius: '0px',
-        },
-    },
-    showImagesSuggestions: false,
-    numSuggestions: 6,
-    maxQuerySuggestions: 3,
-    minChars: 3,
-    highlight: true,
-    /********* Search Results *********/
-    searchResults: {'contentBlock':'searchresults-only', 'url': 'https://docs.thoughtspot.com/search.html'},
-    searchResultsCaption: 'Found #COUNT# results for your query "#QUERY#"',
-    numResults: 300,
-    navigation: 'top',
-    highlightQueryTerms: true,
-    showImagesResults: true,
-    showResultLink: true,
-    queryCorrectionText: 'Did you mean "#CORRECTION#"?',
-    noResultsText: 'Sorry, we have not found any matches for your query.',
-    otherContentGroupName: 'Search results',
-    ignoreOtherContentGroup: false,
-    moreResultsButton: 'More results',
-    moreResultsPagingSize: 50,
-    groupResults: true,
-    loader: {
-        type: 'circle'
-    }
-}
-</script>
-<script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -193,7 +133,7 @@ var ss360Config = {
             -->
 
             <div class="logo">
-            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:10px"/> </a></figure>
+            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:15px"/> </a></figure>
 
             </div>
 
@@ -2834,18 +2774,6 @@ $('#toc').on('click', 'a', function() {
 
     
 
-
-    
-    <span class="reading-time" title="Estimated reading time">
-  Estimated reading time: 
-  
-  
-    13 minutes
-  
-</span>
-
-    
-
   <p>ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.</p>
 
 <p>For information on how to use the row level security functions and operators, see <a href="/4.4/admin/data-security/row-level-security.html#">About Rule-Based Row Level Security</a>. There is a special variable called ts_groups, which you can use when creating row level security rules. It fetches a list of the groups that the currently logged in user belongs to. For each row, f the expression in the rule evaluates to ‘true’ for any one of these groups, that row will be shown to the user.</p>
@@ -3418,7 +3346,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 5, 2019 <br />
+        Generated: May 30, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
