@@ -1068,20 +1068,23 @@ entries:
       - title: Introduction
         url: /app-integrate/reference/public-api-reference.html
         output: web,apgBk
-      - title: pinboarddata API
+      - title: Pinboard Data API
         url: /app-integrate/reference/pinboarddata.html
         output: web,apgBk
-      - title: metadata API
+      - title: Metadata API
         url: /app-integrate/reference/metadata-api.html
         output: web,apgBk
-      - title: session API
+      - title: Session API
         url: /app-integrate/reference/session-api.html
         output: web,apgBk
-      - title: user API
+      - title: User API
         url: /app-integrate/reference/user-api.html
         output: web,apgBk
-      - title: group API
+      - title: Group API
         url: /app-integrate/reference/group-api.html
+        output: web,apgBk
+      - title: Materialization API
+        url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
