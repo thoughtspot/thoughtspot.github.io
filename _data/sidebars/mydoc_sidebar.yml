@@ -1305,7 +1305,7 @@ entries:
     - title: User action codes reference
       url: /reference/action-codes.html
       output: web,refGdAdmin
-    - tilte: Stop word reference
+    - title: Stop word reference
       url: /reference/stop-words.html
       output: web,refGD
     - title: Error codes reference
