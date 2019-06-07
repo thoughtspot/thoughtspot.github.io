@@ -65,7 +65,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
      ![]({{ site.baseurl }}/images/select_the%20ami.png "Select the AMI")
 
-7. On the Choose and Instance Type page, select a ThoughtSpot-supported instance type.
+7. On the Choose an Instance Type page, select a ThoughtSpot-supported instance type.
    (See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) )        
 8. Click **Next: Configure Instance Details**.
 9. Configure the instances by choosing the number of EC2 instances you need.
