@@ -65,18 +65,18 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
      ![]({{ site.baseurl }}/images/select_the%20ami.png "Select the AMI")
 
-7. On the Choose and Instance Type page, select a ThoughtSpot-supported instance type.
+7. On the Choose an Instance Type page, select a ThoughtSpot-supported instance type.
    (See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) )        
 8. Click **Next: Configure Instance Details**.
 9. Configure the instances by choosing the number of EC2 instances you need.
-   The instances need to be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.
+   The instances must be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.
 10. Click **Next: Add Storage**.
-    The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned.
-11. Click **Next: Add Tags** when you are done modifying the storage size.
+    The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement, you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned.
+11. When you are done modifying the storage size, Click **Next: Add Tags**.
 12. Set a name for tagging your instances and click **Next: Configure Security Group**.
-13. Select an existing security group to attach new security groups to such that it meets the security requirements for ThoughtSpot.
+13. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster needs to be accessible from one another. For easier configuration, it is recommended that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports need to be opened on the VM to provide data staging capabilities to your network. Check [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) to determine the minimum required ports that must be opened for your ThoughtSpot appliance.</li></ul>
+    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/5.2/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports that must be opened for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
 
 14.  Click **Review and Launch**. After you have reviewed your instance launch details, click **Launch**.
