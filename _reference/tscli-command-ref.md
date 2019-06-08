@@ -32,7 +32,7 @@ The `tscli` command has several subcommands such as `alert`, `backup`, and so fo
 
 ```
 tscli [subcommand ]
-```
+``` 
 
 Subcommands have their own additional options and actions such as `tscli backup
 create` or `tscli backup delete` for example.  To view help for a subcommand:
@@ -664,7 +664,7 @@ This subcommand has the following actions:
 
 * `tscli patch apply [-h] [` *`release`*`]`
 
-  Apply the patch on an existing cluster. Takes the following parameters:
+  Apply the patch on an existing cluster. Before querying status of patch, please allow 2-5 minutes. Takes the following parameters:
 
   * *`release`*  The relative path to the patch tar ball
 
