@@ -79,7 +79,7 @@ var ss360Config = {
         highlight: true
     },
     style: {
-        themeColor: "#ea603e",
+        themeColor: "#4E55FD",
         suggestions: {
             text: {
                 color: "#5c5c5c"
@@ -90,7 +90,7 @@ var ss360Config = {
             padding: "1px",
             distanceFromTop: "0px",
             border: {
-                color: "#ea603e",
+                color: "#4E55FD",
                 radius: "0px"
             }
      },
@@ -3091,9 +3091,9 @@ $('#toc').on('click', 'a', function() {
 
 <p>This reference lists the potential ports to open when setting up your security group.</p>
 
-<h3 id="required-ports-for-inter-cluster-operation">Required ports for inter-cluster operation</h3>
+<h3 id="required-ports-for-intracluster-operation">Required ports for intracluster operation</h3>
 
-<p>Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from inter-cluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).</p>
+<p>Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from intraluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).</p>
 
 <table>
   <thead>
@@ -3556,7 +3556,16 @@ $('#toc').on('click', 'a', function() {
       <td>outbound</td>
       <td>All nodes</td>
       <td>208.83.110.20</td>
-      <td>For transferring files to thoughtspot.egnyte.com (IP address 208.83.110.20).</td>
+      <td>For transferring files to thoughtspot.egnyte.com  (IP address 208.83.110.20).</td>
+    </tr>
+    <tr>
+      <td>443</td>
+      <td>HTTPS</td>
+      <td>HTTPS</td>
+      <td>outbound</td>
+      <td>All nodes</td>
+      <td>https://api.mix  panel.com</td>
+      <td>For transferring product usage data to mixpanel cloud.</td>
     </tr>
     <tr>
       <td>25 or 587</td>
@@ -3576,8 +3585,61 @@ $('#toc').on('click', 'a', function() {
       <td>All nodes</td>
       <td>Allow outbound access for the IP address of the LDAP server in use.</td>
     </tr>
+    <tr>
+      <td>8086</td>
+      <td>HTTPS</td>
+      <td>HTTPS</td>
+      <td>outbound</td>
+      <td>All nodes</td>
+      <td>https://pinheads-1da40166.influxcloud.net</td>
+      <td>For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).</td>
+    </tr>
   </tbody>
 </table>
+
+<p>In releases 4.5.1 and later, port 8086 is not required for transferring data to InfluxCloud. The following port can be opened instead:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Port</th>
+      <th>Protocol</th>
+      <th>Service Name</th>
+      <th>Direction</th>
+      <th>Source</th>
+      <th>Destination</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>443</td>
+      <td>HTTPS</td>
+      <td>HTTPS</td>
+      <td>outbound</td>
+      <td>All nodes</td>
+      <td>https://je8b47jfif.execute-api.us-east-2.amazonaws.com/monitoring</td>
+      <td>For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="callhome">Callhome</h3>
+
+<p>Callhome stats are uploaded to AWS. The bucket configured by default is <code class="highlighter-rouge">ts-callhome-prod</code> in region <code class="highlighter-rouge">us-west-1</code>.</p>
+
+<p>Uploads to AWS are done on one of the following endpoints:</p>
+<ol>
+  <li><code class="highlighter-rouge">s3.us-west-1.amazonaws.com</code></li>
+  <li><code class="highlighter-rouge">s3-us-west-1.amazonaws.com</code></li>
+  <li><code class="highlighter-rouge">s3.dualstack.us-west-1.amazonaws.com</code></li>
+</ol>
+
+<p>All uploads are done over “https” and default port 443 is used.  (Example: https://s3-us-west-1.amazonaws.com/%7BBucket%7D/%7BKey+%7D).</p>
+
+<h4 id="more-information">More information</h4>
+
+<p><a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region" target="_blank">AWS endpoints<a></a></a></p>
 
 <h3 id="required-ports-for-ipmi-intelligent-platform-management-interface">Required ports for IPMI (Intelligent Platform Management Interface)</h3>
 
@@ -3633,7 +3695,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 6, 2019 <br />
+        Generated: Jun 7, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
