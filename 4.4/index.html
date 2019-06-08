@@ -52,15 +52,50 @@
 <!--  Site Search -->
 <script>
   /********* Version 11.x JavaScript for Site Search 360 *********/
-var ss360Config = {
-  /********* General *********/
-    siteId: "docs.thoughtspot.com",
-    animationSpeed: 250,
-    themeColor: '#ea603e',
-    showErrors: false,
-        /********* Search Box *********/
-        searchBoxSelector: '#searchBox',
-        searchBoxStyle: {
+  var ss360Config = {
+    /********* General *********/
+      siteId: "docs.thoughtspot.com",
+      showErrors: false,
+      layout: {
+          navigation: {
+              position: "top"
+          },
+          mobile: {
+              showUrl: true,
+              showImages: true
+          },
+          desktop: {
+              showUrl: true,
+              showImages: true
+          }
+      },
+      /********* Search Suggestions *********/
+      suggestions: {
+          show: false,
+          maxQuerySuggestions: 3,
+          showImages: false,
+          num: 6,
+          minChars: 3,
+          highlight: true
+      },
+      style: {
+          themeColor: "#4E55FD",
+          suggestions: {
+              text: {
+                  color: "#5c5c5c"
+              },
+              background: {
+                  color: "#ffffff"
+              },
+              padding: "1px",
+              distanceFromTop: "0px",
+              border: {
+                  color: "#4E55FD",
+                  radius: "0px"
+              }
+       },
+          /********* Search Box *********/
+          searchBox: {
             text: {
                 color: "#6c6c6c",
                 size: "14px"
@@ -78,51 +113,34 @@ var ss360Config = {
             },
             button: {
                 text: "Search..."
-                icon: undefined
             }
         },
-        placeholder: 'Search...',
-        searchButton: undefined,
-        /********* Search Suggestions *********/
-        showSearchSuggestions: false,
-        suggestionsStyle: {
-            text: {
-                color: '#5c5c5c',
-            },
-            background: {
-                color: '#ffffff'
-            },
-            padding: '1px',
-            distanceFromTop: '0px',
-            border: {
-                color: '#ea603e',
-                radius: '0px',
-            },
+        loaderType: "circle",
+        animationSpeed: 250
+    },
+    searchBox: {
+        placeholder: "Search...",
+        selector: "#searchBox"
+    },
+    results: {
+        embedConfig: {
+            contentBlock: "searchresults-only",
+            url: "https://docs.thoughtspot.com/search.html"
         },
-        showImagesSuggestions: false,
-        numSuggestions: 6,
-        maxQuerySuggestions: 3,
-        minChars: 3,
-        highlight: true,
-        /********* Search Results *********/
-        searchResults: {'contentBlock':'searchresults-only', 'url': 'https://docs.thoughtspot.com/search.html'},
-        searchResultsCaption: 'Found #COUNT# results for your query "#QUERY#"',
-        numResults: 300,
-        navigation: 'top',
+        caption: "Found #COUNT# results for your query \"#QUERY#\"",
+        group: true,
+        num: 300,
         highlightQueryTerms: true,
-        showImagesResults: true,
-        showResultLink: true,
-        queryCorrectionText: 'Did you mean "#CORRECTION#"?',
-        noResultsText: 'Sorry, we have not found any matches for your query.',
-        otherContentGroupName: 'Search results',
-        ignoreOtherContentGroup: false,
-        moreResultsButton: 'More results',
-        moreResultsPagingSize: 50,
-        groupResults: true,
-        loader: {
-            type: 'circle'
-        }
+        moreResultsButton: "More results",
+        noResultsText: "Sorry, we have not found any matches for your query.",
+        queryCorrectionText: "Did you mean \"#CORRECTION#\"?",
+        moreResultsPagingSize: 50
+    },
+    contentGroups: {
+        otherName: "Search results",
+        ignoreOther: false
     }
+}
 </script>
 <script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
 
@@ -175,7 +193,7 @@ var ss360Config = {
         });
     </script>
 
-
+    <meta name="google-site-verification" content="A4aJPCELY1A6FdBNFswMFI6hX-y6jxAu1v5SLW1ur48" />
 </head>
 <body>
 <!-- Navigation -->
@@ -187,10 +205,14 @@ var ss360Config = {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
-            <div class="logo">
-            <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home" style="width:158px;padding:10px"/> </a></figure>
-            </div>
+              </button>
+  <!-- OLD HOME NAV removed in favor of logo image
+             <a class="fa fa-home fa-lg navbar-brand" href="/5.2/index.html">&nbsp;<span class="projectTitle"> </span></a>
+  -->
+
+  <div class="logo">
+  <figure><a class="no_icon" target="_blank" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home"  style="width:158px;padding:10px"/> </a></figure>
+  </div>
 
                     </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -198,6 +220,15 @@ var ss360Config = {
                 <!-- toggle sidebar button -->
                 <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
                 <!-- entries without drop-downs appear here -->
+
+
+
+
+
+
+
+                <li><a href="http://www.thoughtspot.com" target="_blank">www.thoughtspot.com</a></li>
+
 
 
                 <!-- entries with drop-downs appear here -->
