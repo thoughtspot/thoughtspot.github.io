@@ -36,36 +36,35 @@ First, upgrade to one of the above versions, and then to the 5.1.3 release.
 {: id="513-fixed"}
 ## 5.1.3 Fixed Issues
 
-Downloading an R visualization no longer shows empty page.
+Downloading an R visualization no longer causes an empty page to be displayed.
 
-A problem where tables in a Google Chrome tab becoming misaligned and unfixable is now fixed.
+A problem where tables in a Google Chrome tab become misaligned is now fixed.
 
-A problem where a custom binary whisker scatter chart disappeared from pinboards after upgrade has now been fixed.
+Custom scatter charts no longer disappear from pinboards after an upgrade.
 
-A problem where the Copy and Edit button appears on embedded visuals has been fixed.
+An issue where the Copy-and-edit button no longer appears on embedded visuals is now fixed.
 
 Occasional slow navigation between the Answer and Pinboard pages has been fixed.
 
-A normal bar chart changed to stacked bar chart in a Pinboard no longer reverts to the normal bar chart after the pinboard is saved, the browser is closed and the Pinboard is opened again.
+A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.
 
-The exclude filter on Pinboards providing wrong results is now fixed.
+A problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
 
-Usage-based indexing of search has been Improved
+Usage-based indexing of search has been improved.
 
-When a search results in fantrap queries, and no attribute is mentioned in the search, the measure(s) values shown are no longer incorrect.
+A problem where the `tscli ssl rm-cert` command was used to remove a cert, but did not revert it back to the default cert is now fixed.
 
-A problem where users could not log in through SSO after upgrade has been fixed.
+When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.
 
-Fan trap queries no longer have more grouping columns then necessary.
+A problem where some users could not log in through SSO after an upgrade has been fixed.
 
-A problem where worksheets showed incomplete joins has been fixed.
+Fan-trap queries no longer have more grouping columns then necessary.
 
-A problem where the user interface would become slow during a data load has been fixed.
+An issue with worksheets showing incomplete compound-column joins has been fixed.
 
-A problem where CSVs downloaded by certain row level security users were empty has been fixed.
+A problem where the user interface becomes slow during a data load has been fixed.
 
-
-
+CSVs downloaded by certain row-level-security users are no longer empty.
 
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
