@@ -58,7 +58,7 @@ When a search that uses no attributes results in fan-trap queries, the measure v
 
 A problem where some users could not log in through SSO after an upgrade has been fixed.
 
-Fan-trap queries no longer have more grouping columns then necessary.
+Fan-trap queries no longer have more grouping columns than necessary.
 
 An issue with worksheets showing incomplete compound-column joins has been fixed.
 
