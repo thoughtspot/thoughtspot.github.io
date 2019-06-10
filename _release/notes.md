@@ -2,16 +2,17 @@
 title: ["5.1 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: Feb 2019
+last_updated: Jun 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.1.2 is now available. These release notes include information about new features,
+ThoughtSpot version 5.1.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [5.1.3 Fixed Issues](#513-fixed)
 * [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
 * [5.1.1 Fixed Issues](#511-fixed)
@@ -21,16 +22,50 @@ fixed issues from the previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.1.2 release
+If you are running one of the following versions, you can upgrade to the 5.1.3 release
 directly:
 
-* 4.5.1.x to 5.1.2
-* 5.1.x to 5.1.2
+* 4.5.1.x to 5.1.3
+* 5.1.x to 5.1.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.1.2 release.
+First, upgrade to one of the above versions, and then to the 5.1.3 release.
+
+{: id="513-fixed"}
+## 5.1.3 Fixed Issues
+
+Downloading an R visualization no longer shows empty page.
+
+A problem where tables in a Google Chrome tab becoming misaligned and unfixable is now fixed.
+
+A problem where a custom binary whisker scatter chart disappeared from pinboards after upgrade has now been fixed.
+
+A problem where the Copy and Edit button appears on embedded visuals has been fixed.
+
+Occasional slow navigation between the Answer and Pinboard pages has been fixed.
+
+A normal bar chart changed to stacked bar chart in a Pinboard no longer reverts to the normal bar chart after the pinboard is saved, the browser is closed and the Pinboard is opened again.
+
+The exclude filter on Pinboards providing wrong results is now fixed.
+
+Usage-based indexing of search has been Improved
+
+When a search results in fantrap queries, and no attribute is mentioned in the search, the measure(s) values shown are no longer incorrect.
+
+A problem where users could not log in through SSO after upgrade has been fixed.
+
+Fan trap queries no longer have more grouping columns then necessary.
+
+A problem where worksheets showed incomplete joins has been fixed.
+
+A problem where the user interface would become slow during a data load has been fixed.
+
+A problem where CSVs downloaded by certain row level security users were empty has been fixed.
+
+
+
 
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
