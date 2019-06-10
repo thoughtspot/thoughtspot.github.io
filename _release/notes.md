@@ -2,16 +2,17 @@
 title: ["5.1 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: Feb 2019
+last_updated: Jun 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.1.2 is now available. These release notes include information about new features,
+ThoughtSpot version 5.1.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [5.1.3 Fixed Issues](#513-fixed)
 * [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
 * [5.1.1 Fixed Issues](#511-fixed)
@@ -21,16 +22,49 @@ fixed issues from the previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.1.2 release
+If you are running one of the following versions, you can upgrade to the 5.1.3 release
 directly:
 
-* 4.5.1.x to 5.1.2
-* 5.1.x to 5.1.2
+* 4.5.1.x to 5.1.3
+* 5.1.x to 5.1.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.1.2 release.
+First, upgrade to one of the above versions, and then to the 5.1.3 release.
+
+{: id="513-fixed"}
+## 5.1.3 Fixed Issues
+
+Downloading an R visualization no longer causes an empty page to be displayed.
+
+A problem where tables in a Google Chrome tab become misaligned is now fixed.
+
+Custom scatter charts no longer disappear from pinboards after an upgrade.
+
+An issue where the Copy-and-edit button no longer appears on embedded visuals is now fixed.
+
+Occasional slow navigation between the Answer and Pinboard pages has been fixed.
+
+A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.
+
+A problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
+
+Usage-based indexing of search has been improved.
+
+A problem where the `tscli ssl rm-cert` command was used to remove a cert, but did not revert it back to the default cert is now fixed.
+
+When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.
+
+A problem where some users could not log in through SSO after an upgrade has been fixed.
+
+Fan-trap queries no longer have more grouping columns then necessary.
+
+An issue with worksheets showing incomplete compound-column joins has been fixed.
+
+A problem where the user interface becomes slow during a data load has been fixed.
+
+CSVs downloaded by certain row-level-security users are no longer empty.
 
 {: id="512-fixed"}
 ## 5.1.2 Fixed Issues
