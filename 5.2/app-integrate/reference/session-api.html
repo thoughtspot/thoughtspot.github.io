@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  REST,API,data,"REST API"">
-<title>Public API reference | ThoughtSpot</title>
+<title>Session API | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -46,7 +46,24 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<meta name="robots" content="noindex" />
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>[“Session API”] | thoughtspot.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="[“Session API”]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Session APIs enable you to manage sessions of the new and existing users." />
+<meta property="og:description" content="The Session APIs enable you to manage sessions of the new and existing users." />
+<link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html" />
+<meta property="og:site_name" content="thoughtspot.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-11T14:48:48-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html","headline":"[“Session API”]","dateModified":"2019-06-11T14:48:48-07:00","datePublished":"2019-06-11T14:48:48-07:00","description":"The Session APIs enable you to manage sessions of the new and existing users.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 
 
 <!--  Site Search -->
@@ -2595,31 +2612,37 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/pinboarddata.html">pinboarddata API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/pinboarddata.html">Pinboard Data API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/metadata-api.html">metadata API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/metadata-api.html">Metadata API</a></li>
                       
                    
                 
                   
                       
-                          <li class="active"><a href="/5.2/app-integrate/reference/session-api.html">session API</a></li>
+                          <li class="active"><a href="/5.2/app-integrate/reference/session-api.html">Session API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/user-api.html">user API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/user-api.html">User API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/group-api.html">group API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/group-api.html">Group API</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/5.2/app-integrate/reference/materialization-api.html">Materialization API</a></li>
                       
                    
                 
@@ -3201,7 +3224,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Public API reference</h1>
+   <h1 class="post-title-main">Session API</h1>
 </div>
 
 
@@ -3239,95 +3262,93 @@ $('#toc').on('click', 'a', function() {
 
 
     
-    <span class="reading-time" title="Estimated reading time">
-  Estimated reading time: 
+    <!--
+<span class="reading-time" title="Estimated reading time">
+  Estimated reading time:
   
   
     1 minute
   
 </span>
+ -->
 
     
 
-  <p>This object has two POST calls, one for <code class="highlighter-rouge">login</code> and one for <code class="highlighter-rouge">logout</code>.</p>
+  <p>The Session APIs enable you to manage sessions of the new and existing users.</p>
 
-<h2 id="post-tspublicv1sessionlogin">POST /tspublic/v1/session/login</h2>
+<h2 id="managing-login">Managing login</h2>
 
 <p>This call takes a <code class="highlighter-rouge">APPLICATION_FORM_URLENCODED</code> payload containing a
 <code class="highlighter-rouge">username</code>, a <code class="highlighter-rouge">password</code>, and an optional <code class="highlighter-rouge">rememberme</code> flag. If you do not
 supply the optional flag, the system uses the default <code class="highlighter-rouge">false</code> value.</p>
 
-<h3 id="inputs">Inputs</h3>
+<h3 id="resource-url">Resource URL</h3>
+<p><code class="api-method-post">post</code> /tspublic/v1/session/login</p>
+
+<h3 id="request-parameters">Request Parameters</h3>
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td>  <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td>  <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td>  <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user to log in as.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user to log in as.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>string</td> <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
   </tbody>
 </table>
 
-<h3 id="returns">Returns</h3>
+<h3 id="request-example">Request Example</h3>
+<h5 id="curl">cURL</h5>
 
-<p>No object is returned.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'username=test&amp;password=fhfh2323bbn&amp;rememberme=false' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/login'
+</code></pre></div></div>
 
-<h3 id="status-codes">Status Codes</h3>
+<h5 id="request-url">Request URL</h5>
 
-<table>
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">204</code></td>
-      <td>On successful login.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">401</code></td>
-      <td>On failure to login</td>
-    </tr>
-  </tbody>
-</table>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/login
+</code></pre></div></div>
+<h3 id="response-example">Response Example</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Successful login
+</code></pre></div></div>
 
-<h2 id="post-tspublicv1sessionlogout">POST /tspublic/v1/session/logout</h2>
+<h2 id="managing-logout">Managing logout</h2>
 
 <p>This call logs a user out of an existing session.</p>
 
-<h3 id="returns-1">Returns</h3>
+<h3 id="resource-url-1">Resource URL</h3>
+<p><code class="api-method-post">post</code> /tspublic/v1/session/logout</p>
 
-<p>No object is returned.</p>
+<h3 id="response-example-1">Response Example</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Successful login
+</code></pre></div></div>
 
-<h3 id="status-codes-1">Status Codes</h3>
-
+<h2 id="error-codes">Error Codes</h2>
 <table>
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">204</code></td>
-      <td>On successful logout.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">401</code></td>
-      <td>On failure or when unauthorized to call.</td>
-    </tr>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td><td><code>401</code></td></tr>
   </tbody>
 </table>
 
@@ -3355,7 +3376,7 @@ supply the optional flag, the system uses the default <code class="highlighter-r
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 7, 2019 <br />
+        Generated: Jun 11, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>

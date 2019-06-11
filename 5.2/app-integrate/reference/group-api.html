@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  REST,API,data,"REST API"">
-<title>group API | ThoughtSpot</title>
+<meta name="keywords" content=",  REST,API,data,"REST API", group API">
+<title>Group API | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -46,7 +46,24 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<meta name="robots" content="noindex" />
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>[“Group API”] | thoughtspot.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="[“Group API”]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Group APIs enable you to set/remove a privilege to/from a group or multiple groups." />
+<meta property="og:description" content="The Group APIs enable you to set/remove a privilege to/from a group or multiple groups." />
+<link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/reference/group-api.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/reference/group-api.html" />
+<meta property="og:site_name" content="thoughtspot.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-11T14:48:48-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/group-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/group-api.html","headline":"[“Group API”]","dateModified":"2019-06-11T14:48:48-07:00","datePublished":"2019-06-11T14:48:48-07:00","description":"The Group APIs enable you to set/remove a privilege to/from a group or multiple groups.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 
 
 <!--  Site Search -->
@@ -2595,31 +2612,37 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/pinboarddata.html">pinboarddata API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/pinboarddata.html">Pinboard Data API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/metadata-api.html">metadata API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/metadata-api.html">Metadata API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/session-api.html">session API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/session-api.html">Session API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/user-api.html">user API</a></li>
+                          <li><a href="/5.2/app-integrate/reference/user-api.html">User API</a></li>
                       
                    
                 
                   
                       
-                          <li class="active"><a href="/5.2/app-integrate/reference/group-api.html">group API</a></li>
+                          <li class="active"><a href="/5.2/app-integrate/reference/group-api.html">Group API</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/5.2/app-integrate/reference/materialization-api.html">Materialization API</a></li>
                       
                    
                 
@@ -3201,7 +3224,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">group API</h1>
+   <h1 class="post-title-main">Group API</h1>
 </div>
 
 
@@ -3239,104 +3262,144 @@ $('#toc').on('click', 'a', function() {
 
 
     
-    <span class="reading-time" title="Estimated reading time">
-  Estimated reading time: 
+    <!--
+<span class="reading-time" title="Estimated reading time">
+  Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>
+ -->
 
     
 
-  <h2 id="post-v1groupaddprivilege">POST v1/group/addprivilege</h2>
+  <p>The Group APIs enable you to set/remove a privilege to/from a group or multiple groups.</p>
 
-<p>Adds a <code class="highlighter-rouge">DATADOWNLOADING</code> or <code class="highlighter-rouge">USERDATAUPLOADING</code> privilege to the system default
-<code class="highlighter-rouge">ALL_GROUP</code>. All users in the system are always part of <code class="highlighter-rouge">ALL</code> group. By default,
-this group does not have either permission.</p>
+<h2 id="add-a-privilege">Add a privilege</h2>
 
-<p>All the data sources which the <code class="highlighter-rouge">ALL_GROUP</code> has permissions to are downloadable
-when <code class="highlighter-rouge">DATADOWNLOADING</code> is set.</p>
+<p>Use this API to add a <code class="highlighter-rouge">DATADOWNLOADING</code> or <code class="highlighter-rouge">USERDATAUPLOADING</code> privilege to the system default <code class="highlighter-rouge">ALL_GROUP</code>group. All users in the system are always a part of <code class="highlighter-rouge">ALL_GROUP</code> group. By default, this group does not have either permission.</p>
 
-<h3 id="parameters">Parameters</h3>
+<p>All the data sources which the <code class="highlighter-rouge">ALL_GROUP</code> group has permissions to are downloadable when <code class="highlighter-rouge">DATADOWNLOADING</code> is applied.</p>
+
+<h3 id="resource-url">Resource URL</h3>
+
+<p><code class="api-method-post">post</code> /tspublic/v1/group/addprivilege</p>
+
+<h3 id="request-parameters">Request Parameters</h3>
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td><code>privilege</code></td>
-         <td>A string representing the privilege to add. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
+         <td>string</td>
+         <td>Specifies a privilege type to add. Valid values are <code>DATADOWNLOADING</code> or <code>USERDATAUPLOADING</code> privilege.</td>
       </tr>
       <tr>
          <td><code>groupNames</code></td>
-         <td>A string representing the name of the group to add the privilege to. Only `ALL_GROUP` is accepted.</td>
+         <td>string</td>
+         <td>Specifies a group name to add the privilege to. Valid value is <code>ALL_GROUP</code> group.</td>
       </tr>
    </tbody>
 </table>
 
-<h2 id="return-codes">Return codes</h2>
+<h3 id="request-example">Request Example</h3>
 
-<ul>
-  <li>200</li>
-  <li>204 Success</li>
-  <li>401 Failure/unauthorized</li>
-</ul>
+<h5 id="curl">cURL</h5>
 
-<h3 id="request-url">Request URL</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'privilege=DATADOWNLOADING&amp;groupNames=ALL_GROUP' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/group/addprivilege'
+</code></pre></div></div>
+
+<h5 id="request-url">Request URL</h5>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/group/addprivilege
 </code></pre></div></div>
+<h3 id="response-example">Response Example</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Success
+</code></pre></div></div>
 
-<h2 id="post-v1groupremoveprivilege">POST v1/group/removeprivilege</h2>
+<h2 id="remove-a-privilege">Remove a privilege</h2>
 
-<p>Removes a privilege from a group.</p>
+<p>Use this API to delete a <code class="highlighter-rouge">DATADOWNLOADING</code> or <code class="highlighter-rouge">USERDATAUPLOADING</code> privilege from the system default <code class="highlighter-rouge">ALL_GROUP</code>group.</p>
 
-<h3 id="parameters-1">Parameters</h3>
+<h3 id="resource-url-1">Resource URL</h3>
+
+<p><code class="api-method-post">post</code> /tspublic/v1/group/removeprivilege</p>
+
+<h3 id="request-parameters-1">Request Parameters</h3>
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
    <tr>
       <td><code>privilege</code></td>
-      <td>A string representing the privilege to remove. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
+      <td>string</td>
+      <td>Specifies a privilege type to delete. Valid values are <code>DATADOWNLOADING</code> or <code>USERDATAUPLOADING</code> privilege.</td>
    </tr>
    <tr>
       <td><code>groupNames</code></td>
-      <td>A string representing the name of the group to remove the privilege from. Only `ALL_GROUP` is accepted.</td>
+      <td>string</td>
+      <td>Specifies a group name to delete the privilege from. Valid value is <code>ALL_GROUP</code> group.</td>
    </tr>
    </tbody>
 </table>
 
-<h2 id="return-codes-1">Return codes</h2>
+<h3 id="request-example-1">Request Example</h3>
 
-<ul>
-  <li>200</li>
-  <li>204 Success</li>
-  <li>401 Failure/unauthorized</li>
-</ul>
+<h5 id="curl-1">cURL</h5>
 
-<h3 id="request-url-1">Request URL</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/group/addprivilege
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'privilege=USERDATAUPLOADING&amp;groupNames=ALL_GROUP' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/group/removeprivilege'
 </code></pre></div></div>
+<h5 id="request-url-1">Request URL</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/group/removeprivilege
+</code></pre></div></div>
+<h3 id="response-example-1">Response Example</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Success
+</code></pre></div></div>
+<h2 id="error-codes">Error Codes</h2>
+
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td> <td><code>401</code></td></tr>
+
+  </tbody>
+</table>
 
   <div class="tags">
     <div style="float:right;">
@@ -3362,7 +3425,7 @@ when <code class="highlighter-rouge">DATADOWNLOADING</code> is set.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 7, 2019 <br />
+        Generated: Jun 11, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
