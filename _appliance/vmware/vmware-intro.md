@@ -64,5 +64,4 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
-support ticket.
+site.baseurl }}/appliance/contact.html) by filing a support ticket, email or by phone.
