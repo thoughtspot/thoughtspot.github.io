@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display."> -->
-<meta name="keywords" content=",  case,"data load",configure,lowercase,uppercase">
-<title>Configure casing | ThoughtSpot</title>
+<!-- <meta name="description" content=""> -->
+<meta name="keywords" content=",  REST,API,data,"REST API"">
+<title>Materialization API | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,21 +47,21 @@
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Configure casing”] | thoughtspot.github.io</title>
+<title>[“Materialization API”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="[“Configure casing”]" />
+<meta property="og:title" content="[“Materialization API”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Before you load your data, you should consider the type of casing you would like your data to reflect. The case sensitivity for source data strings is preserved in the display. So, the visual display of results is identical to the input case that is loaded." />
-<meta property="og:description" content="Before you load your data, you should consider the type of casing you would like your data to reflect. The case sensitivity for source data strings is preserved in the display. So, the visual display of results is identical to the input case that is loaded." />
-<link rel="canonical" href="https://docs.thoughtspot.com/5.2/admin/loading/about-case-configuration.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/loading/about-case-configuration.html" />
+<meta name="description" content="This API enables you to refresh a materialized view to synchronize its data with the latest data load to the underlying tables. You may want to invoke this API in the following scenarios: When the status of a materialized view is Stale (out of sync) due to an incremental data load, When the status of a materialized view is Error due to an error occurred." />
+<meta property="og:description" content="This API enables you to refresh a materialized view to synchronize its data with the latest data load to the underlying tables. You may want to invoke this API in the following scenarios: When the status of a materialized view is Stale (out of sync) due to an incremental data load, When the status of a materialized view is Error due to an error occurred." />
+<link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/reference/materialization-api.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/reference/materialization-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-06-11T14:48:48-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/loading/about-case-configuration.html"},"url":"https://docs.thoughtspot.com/5.2/admin/loading/about-case-configuration.html","headline":"[“Configure casing”]","dateModified":"2019-06-11T14:48:48-07:00","datePublished":"2019-06-11T14:48:48-07:00","description":"Before you load your data, you should consider the type of casing you would like your data to reflect. The case sensitivity for source data strings is preserved in the display. So, the visual display of results is identical to the input case that is loaded.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/materialization-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/materialization-api.html","headline":"[“Materialization API”]","dateModified":"2019-06-11T14:48:48-07:00","datePublished":"2019-06-11T14:48:48-07:00","description":"This API enables you to refresh a materialized view to synchronize its data with the latest data load to the underlying tables. You may want to invoke this API in the following scenarios: When the status of a materialized view is Stale (out of sync) due to an incremental data load, When the status of a materialized view is Error due to an error occurred.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -326,13 +326,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /admin/loading/about-case-configuration.html.</li>
+         <li class="small-sidebar-link">Current page URL is /app-integrate/reference/materialization-api.html.</li>
          <li class="small-sidebar-link">Current version is 5.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is admin.</li>
-           <li class="small-sidebar-link">url_chunks[2] is loading.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is about-case-configuration.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is app-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is reference.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is materialization-api.html.</li>
  -->
 
        
@@ -352,8 +352,8 @@ var ss360Config = {
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /5.2/admin/loading/about-case-configuration.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/5.2/admin/loading/about-case-configuration.html</li>
+<li class="small-sidebar-link">newURL is /5.2/app-integrate/reference/materialization-api.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/5.2/app-integrate/reference/materialization-api.html</li>
  -->
 
     <!-- End add link to latest version
@@ -1393,7 +1393,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/5.2/admin/loading/about-case-configuration.html">Configure casing</a></li>
+                          <li><a href="/5.2/admin/loading/about-case-configuration.html">Configure casing</a></li>
                       
                    
                 
@@ -2642,7 +2642,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/reference/materialization-api.html">Materialization API</a></li>
+                          <li class="active"><a href="/5.2/app-integrate/reference/materialization-api.html">Materialization API</a></li>
                       
                    
                 
@@ -3224,15 +3224,13 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Configure casing</h1>
+   <h1 class="post-title-main">Materialization API</h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display.</div>
    
 
     
@@ -3276,30 +3274,90 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Before you load your data, you should consider the type of casing you would like
-your data to reflect. The case sensitivity for source data strings is preserved
-in the display. So, the visual display of results is identical to the input case
-that is loaded.</p>
+  <p>This API enables you to refresh a materialized view to synchronize its data with the latest data load to the underlying tables. You may want to invoke this API in the following scenarios:</p>
+<ul>
+  <li>When the status of a materialized view is <code class="highlighter-rouge">Stale</code> (out of sync) due to an incremental data load,</li>
+  <li>When the status of a materialized view is <code class="highlighter-rouge">Error</code> due to an error occurred.</li>
+</ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The casing will remain lowercase in other parts of
-the application, such as when you ask a question or filter.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+To refresh a materialized view, you must have the <a href="/5.2/admin/users-groups/about-users-groups.html#list-of-privileges"><strong>Can administer ThoughtSpot</strong> privilege</a>.
+</div>
 
-<p>It is important to note that string casings aren’t applied globally, but by
-column. So datasets will have different string casings as long as they’re in
-different columns. Tables that are already compacted will keep their lowercase
-format. In these cases, to get the specific string case that you want,
-you would have to truncate related tables and reload them.</p>
+<h2 id="resource-url">Resource URL</h2>
 
-<p>To take advantage of case configuration, you need to have ThoughtSpot Support
-enable it on your cluster for you. In addition, title casing should be disabled
-for string casing to properly work.</p>
+<p><code class="api-method-post">post</code> /tspublic/v1/materialization/refreshview/{id}</p>
+
+<h2 id="request-parameters">Request Parameters</h2>
+
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:15%" />
+      <col style="width:65%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th>Path Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><code>id</code></td>
+         <td>string</td>
+         <td>ID of the metadata object</td>
+
+      </tr>
+
+   </tbody>
+</table>
+
+<h2 id="request-example">Request Example</h2>
+
+<h5 id="curl">cURL</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: */*' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/materialization/refreshview/e27f3c1c-a9cd-4996-9029-097449cd6f60'
+</code></pre></div></div>
+
+<h5 id="request-url">Request URL</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/materialization/refreshview/e27f3c1c-a9cd-4996-9029-097449cd6f60
+</code></pre></div></div>
+
+<h2 id="response-example">Response Example</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Refresh submitted
+</code></pre></div></div>
+
+<h2 id="error-codes">Error Codes</h2>
+
+<table>
+   <colgroup>
+      <col style="width:10%" />
+      <col style="width:80%" />
+      <col style="width:10%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10000</code></td>  <td>Internal server error. .</td><td><code>500</code></td></tr>
+  </tbody>
+</table>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.2/_admin/loading/about-case-configuration.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.2/_app-integrate/reference/materialization-api.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
