@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-11T14:48:48-07:00" />
+<meta property="article:published_time" content="2019-06-11T16:23:14-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html","headline":"[“Set up GCP for ThoughtSpot”]","dateModified":"2019-06-11T14:48:48-07:00","datePublished":"2019-06-11T14:48:48-07:00","description":"After you’ve determined your configuration options, set up your virtual machines (VMs). The ThoughtSpot base image for booting the VMs and some other aspects of system setup will be shared with you on GCP by ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html","headline":"[“Set up GCP for ThoughtSpot”]","dateModified":"2019-06-11T16:23:14-07:00","datePublished":"2019-06-11T16:23:14-07:00","description":"After you’ve determined your configuration options, set up your virtual machines (VMs). The ThoughtSpot base image for booting the VMs and some other aspects of system setup will be shared with you on GCP by ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3296,8 +3296,8 @@ do this on Google Compute Engine, the GCP platform for <a href="https">creating 
 <ul>
   <li>64 vCPU</li>
   <li>416 GB RAM</li>
-  <li>250GB SSD for the boot disk, provisioned with a ThoughtSpot base image</li>
-  <li>2 1TB SSD for data</li>
+  <li>200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image</li>
+  <li>Two 1 TB SSDs for data</li>
 </ul>
 
 <p>The following topics walk you through this process.</p>
@@ -3306,7 +3306,7 @@ do this on Google Compute Engine, the GCP platform for <a href="https">creating 
 
 <ol>
   <li>
-    <p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</p>
+    <p>Sign in to the <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</p>
   </li>
   <li>
     <p>Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.</p>
@@ -3382,7 +3382,7 @@ do this on Google Compute Engine, the GCP platform for <a href="https">creating 
         </tr>
         <tr>
           <td>Size (GB)</td>
-          <td><code class="highlighter-rouge">250</code></td>
+          <td><code class="highlighter-rouge">200</code></td>
         </tr>
       </tbody>
     </table>
@@ -3400,7 +3400,7 @@ do this on Google Compute Engine, the GCP platform for <a href="https">creating 
     <p><img src="/5.2/images/gcp-6-save-boot-disk-expand-mgmt.png" alt="" title="Advanced disk config" /></p>
   </li>
   <li>
-    <p>Attach 2 1TB SSD drives. These drives will be used for the data storage.</p>
+    <p>Attach two 1 TB SSD drives. These drives will be used for the data storage.</p>
 
     <p>a. Click the <strong>Disks</strong> tab, and click <strong>Add new disk</strong>.</p>
 
