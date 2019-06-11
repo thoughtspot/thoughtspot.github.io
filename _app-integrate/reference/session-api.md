@@ -1,62 +1,89 @@
 ---
-title: [Public API reference]
+title: [Session API]
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This object has two POST calls, one for `login` and one for `logout`.
+The Session APIs enable you to manage sessions of the new and existing users.
 
 
-## POST /tspublic/v1/session/login
+## Managing login
 
 This call takes a `APPLICATION_FORM_URLENCODED` payload containing a
 `username`, a `password`, and an optional `rememberme` flag. If you do not
 supply the optional flag, the system uses the default `false` value.
 
-### Inputs
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/session/login
+
+### Request Parameters
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td>  <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td>  <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td>  <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user to log in as.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user to log in as.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>string</td> <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
   </tbody>
 </table>
 
-### Returns
+### Request Example
+##### cURL
 
-No object is returned.
+```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'username=test&password=fhfh2323bbn&rememberme=false' 'https://<instance>/callosum/v1/tspublic/v1/session/login'
+```
 
-### Status Codes
+##### Request URL
 
-| Code| Description |
-|------|-----|
-| `204` | On successful login.|
-| `401` | On failure to login |
+```
+https://<instance>/callosum/v1/tspublic/v1/session/login
+```
+### Response Example
+```
+204 - Successful login
+```
 
-
-## POST /tspublic/v1/session/logout
+## Managing logout
 
 This call logs a user out of an existing session.
 
-### Returns
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/session/logout
 
-No object is returned.
+### Response Example
+```
+204 - Successful login
+```
 
-### Status Codes
-
-| Code| Description |
-|------|-----|
-| `204` | On successful logout.|
-| `401` | On failure or when unauthorized to call.|
+## Error Codes
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td><td><code>401</code></td></tr>
+  </tbody>
+</table>

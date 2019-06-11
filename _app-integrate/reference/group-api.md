@@ -7,6 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 The Group APIs enable you to set/remove a privilege to/from a group or multiple groups.
+
 ## Add a privilege
 
 Use this API to add a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default `ALL_GROUP`group. All users in the system are always a part of `ALL_GROUP` group. By default, this group does not have either permission.
@@ -62,7 +63,6 @@ https://<instance>/callosum/v1/tspublic/v1/group/addprivilege
 ### Response Example
 ```
 204 - Success
-401 - Failure/Unauthorized
 ```
 
 ## Remove a privilege
@@ -87,7 +87,7 @@ Use this API to delete a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege from
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
          <th>Data Type</th>
          <th>Description</th>
       </tr>
@@ -105,6 +105,7 @@ Use this API to delete a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege from
    </tr>
    </tbody>
 </table>
+
 ### Request Example
 
 ##### cURL
@@ -120,5 +121,24 @@ https://<instance>/callosum/v1/tspublic/v1/group/removeprivilege
 ### Response Example
 ```
 204 - Success
-401 - Failure/Unauthorized
 ```
+## Error Codes
+
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td> <td><code>401</code></td></tr>
+
+  </tbody>
+</table>
