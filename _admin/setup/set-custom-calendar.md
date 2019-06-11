@@ -32,7 +32,7 @@ To enable the custom calendar feature for your cluster, do the following:
 
 1. SSH into your ThoughtSpot cluster as admin.
 
-2. Run the following command: `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true`
+2. Run the following command: `tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true`
 
 ### Creating a custom calendar
 
