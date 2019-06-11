@@ -27,14 +27,14 @@ In a nutshell, the required configuration ThoughtSpot is:
 
 - 64 vCPU
 - 416 GB RAM
-- 250GB SSD for the boot disk, provisioned with a ThoughtSpot base image
-- 2 1TB SSD for data
+- 200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- Two 1 TB SSDs for data
 
 The following topics walk you through this process.
 
 ###  Create an instance
 
-1. Log in to the [Google Cloud Console](https://console.cloud.google.com/).
+1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
 2. Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.
 
@@ -71,7 +71,7 @@ The following topics walk you through this process.
       |------------     | --------------------      |
       | Image           | `ThoughtSpot`             |
       | Boot disk type  | `Standard persistent disk`|
-      | Size (GB)       | `250`                     |
+      | Size (GB)       | `200`                     |
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
@@ -84,7 +84,7 @@ The following topics walk you through this process.
 
     ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-7.  Attach 2 1TB SSD drives. These drives will be used for the data storage.
+7.  Attach two 1 TB SSD drives. These drives will be used for the data storage.
 
     a. Click the **Disks** tab, and click **Add new disk**.
 
