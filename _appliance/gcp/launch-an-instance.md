@@ -16,7 +16,7 @@ ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Cent
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.
 
-Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be logged into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
+Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
 ### Overview
 
