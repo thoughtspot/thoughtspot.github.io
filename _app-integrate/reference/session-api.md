@@ -9,10 +9,7 @@ The Session APIs enable you to manage sessions of the new and existing users.
 
 
 ## Managing login
-
-This call takes a `APPLICATION_FORM_URLENCODED` payload containing a
-`username`, a `password`, and an optional `rememberme` flag. If you do not
-supply the optional flag, the system uses the default `false` value.
+Use this API to authenticate and login a user.
 
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/session/login
@@ -33,9 +30,9 @@ supply the optional flag, the system uses the default `false` value.
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td> <td>string</td> <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>boolean</td> <td>A flag to remember the user session. The system default is <code>false</code>.</td></tr>
   </tbody>
 </table>
 
