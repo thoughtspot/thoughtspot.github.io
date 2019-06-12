@@ -75,7 +75,7 @@ The following topics walk you through this process.
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend using the latest image as it would typically have the latest security & maintenance patches."%}
+      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
 
       c. Click **Select** to save the boot disk configuration.
 
