@@ -141,6 +141,10 @@ additional, larger capacity disks.
 
 ## Next steps
 
-There is no network at this point on your VMs. To make the VM node accessible
-from any terminal within local network, contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>.
+There is no network at this point on your VMs. As a prerequisite:
+
+1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
+2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
+3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
+
+Once done, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
