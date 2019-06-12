@@ -16,7 +16,7 @@ ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Cent
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.
 
-Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be logged into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
+Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
 ### Overview
 
@@ -75,7 +75,7 @@ The following topics walk you through this process.
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend taking the newer image as it likely includes security or other types of patches."%}
+      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
 
       c. Click **Select** to save the boot disk configuration.
 
@@ -122,3 +122,4 @@ each VM via SSH as user "admin" and complete the following preparation steps:
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
+ 
