@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-11T16:23:14-07:00" />
+<meta property="article:published_time" content="2019-06-11T18:07:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html","headline":"[“Set up GCP for ThoughtSpot”]","dateModified":"2019-06-11T16:23:14-07:00","datePublished":"2019-06-11T16:23:14-07:00","description":"After you’ve determined your configuration options, set up your virtual machines (VMs). The ThoughtSpot base image for booting the VMs and some other aspects of system setup will be shared with you on GCP by ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/gcp/launch-an-instance.html","headline":"[“Set up GCP for ThoughtSpot”]","dateModified":"2019-06-11T18:07:35-07:00","datePublished":"2019-06-11T18:07:35-07:00","description":"After you’ve determined your configuration options, set up your virtual machines (VMs). The ThoughtSpot base image for booting the VMs and some other aspects of system setup will be shared with you on GCP by ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3284,7 +3284,7 @@ system setup will be shared with you on GCP by ThoughtSpot.</p>
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.</p>
 
-<p>Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be logged into your organization’s GCP console. We will share ThoughtSpot’s GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.</p>
+<p>Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be signed into your organization’s GCP console. We will share ThoughtSpot’s GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.</p>
 
 <h3 id="overview">Overview</h3>
 
@@ -3389,7 +3389,7 @@ do this on Google Compute Engine, the GCP platform for <a href="https">creating 
 
     <p><img src="/5.2/images/gcp-5-boot-disk-config-2018-01-11.png" alt="" title="Change boot disk" /></p>
 
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend taking the newer image as it likely includes security or other types of patches.</div>
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches.</div>
 
     <p>c. Click <strong>Select</strong> to save the boot disk configuration.</p>
   </li>
@@ -3461,6 +3461,7 @@ each VM via SSH as user “admin” and complete the following preparation steps
 
 <p>Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using <a href="/5.2/reference/tscli-command-ref.html#cluster">tscli cluster create</a>.</p>
+
 
   <div class="tags">
     <div style="float:right;">
