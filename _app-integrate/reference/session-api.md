@@ -5,14 +5,10 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The Session APIs enable you to manage sessions of the new and existing users.
-
+The Session APIs enable you to manage sessions of the existing users.
 
 ## Managing login
-
-This call takes a `APPLICATION_FORM_URLENCODED` payload containing a
-`username`, a `password`, and an optional `rememberme` flag. If you do not
-supply the optional flag, the system uses the default `false` value.
+Use this API to authenticate and login a user.
 
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/session/login
@@ -33,9 +29,9 @@ supply the optional flag, the system uses the default `false` value.
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td> <td>string</td> <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>boolean</td> <td>A flag to remember the user session. The system default is <code>false</code>.</td></tr>
   </tbody>
 </table>
 
@@ -53,19 +49,33 @@ https://<instance>/callosum/v1/tspublic/v1/session/login
 ```
 ### Response Example
 ```
+Not applicable
 204 - Successful login
 ```
 
 ## Managing logout
 
-This call logs a user out of an existing session.
+Use this API to log a current user out of an existing session. The user details are captured from the active user session.
 
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/session/logout
 
+### Request Example
+##### cURL
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/session/logout'
+```
+
+##### Request URL
+
+```
+https://<instance>/callosum/v1/tspublic/v1/session/logout
+```
+
 ### Response Example
 ```
-204 - Successful login
+Not applicable
+204 - Successful logout
 ```
 
 ## Error Codes
@@ -83,7 +93,8 @@ This call logs a user out of an existing session.
       </tr>
    </thead>
    <tbody>
+   <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
-    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td><td><code>401</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
   </tbody>
 </table>
