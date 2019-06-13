@@ -64,6 +64,7 @@ https://<instance>/callosum/v1/tspublic/v1/materialization/refreshview/e27f3c1c-
 ## Response Example
 
 ```
+Not applicable
 204 - Refresh submitted
 ```
 
@@ -71,9 +72,9 @@ https://<instance>/callosum/v1/tspublic/v1/materialization/refreshview/e27f3c1c-
 
 <table>
    <colgroup>
-      <col style="width:10%" />
-      <col style="width:80%" />
-      <col style="width:10%" />
+   <col style="width:20%" />
+   <col style="width:60%" />
+   <col style="width:20%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
@@ -84,6 +85,6 @@ https://<instance>/callosum/v1/tspublic/v1/materialization/refreshview/e27f3c1c-
    </thead>
    <tbody>
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
-    <tr> <td><code>10000</code></td>  <td>Internal server error. .</td><td><code>500</code></td></tr>
+    <tr> <td><code>10000</code></td>  <td>Internal server error.</td><td><code>500</code></td></tr>
   </tbody>
 </table>

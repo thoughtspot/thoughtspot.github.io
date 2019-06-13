@@ -62,6 +62,7 @@ https://<instance>/callosum/v1/tspublic/v1/group/addprivilege
 ```
 ### Response Example
 ```
+Not applicable
 204 - Success
 ```
 
@@ -120,6 +121,7 @@ https://<instance>/callosum/v1/tspublic/v1/group/removeprivilege
 ```
 ### Response Example
 ```
+Not applicable
 204 - Success
 ```
 ## Error Codes
