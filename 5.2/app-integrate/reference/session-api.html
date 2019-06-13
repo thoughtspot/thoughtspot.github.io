@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Session API”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The Session APIs enable you to manage sessions of the new and existing users." />
-<meta property="og:description" content="The Session APIs enable you to manage sessions of the new and existing users." />
+<meta name="description" content="The Session APIs enable you to manage sessions of the existing users." />
+<meta property="og:description" content="The Session APIs enable you to manage sessions of the existing users." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-12T14:45:03-07:00" />
+<meta property="article:published_time" content="2019-06-13T15:53:36-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html","headline":"[“Session API”]","dateModified":"2019-06-12T14:45:03-07:00","datePublished":"2019-06-12T14:45:03-07:00","description":"The Session APIs enable you to manage sessions of the new and existing users.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/session-api.html","headline":"[“Session API”]","dateModified":"2019-06-13T15:53:36-07:00","datePublished":"2019-06-13T15:53:36-07:00","description":"The Session APIs enable you to manage sessions of the existing users.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3118,13 +3118,10 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The Session APIs enable you to manage sessions of the new and existing users.</p>
+  <p>The Session APIs enable you to manage sessions of the existing users.</p>
 
 <h2 id="managing-login">Managing login</h2>
-
-<p>This call takes a <code class="highlighter-rouge">APPLICATION_FORM_URLENCODED</code> payload containing a
-<code class="highlighter-rouge">username</code>, a <code class="highlighter-rouge">password</code>, and an optional <code class="highlighter-rouge">rememberme</code> flag. If you do not
-supply the optional flag, the system uses the default <code class="highlighter-rouge">false</code> value.</p>
+<p>Use this API to authenticate and login a user.</p>
 
 <h3 id="resource-url">Resource URL</h3>
 <p><code class="api-method-post">post</code> /tspublic/v1/session/login</p>
@@ -3145,9 +3142,9 @@ supply the optional flag, the system uses the default <code class="highlighter-r
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td> <td>string</td> <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>boolean</td> <td>A flag to remember the user session. The system default is <code>false</code>.</td></tr>
   </tbody>
 </table>
 
@@ -3162,18 +3159,30 @@ supply the optional flag, the system uses the default <code class="highlighter-r
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/login
 </code></pre></div></div>
 <h3 id="response-example">Response Example</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Successful login
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Not applicable
+204 - Successful login
 </code></pre></div></div>
 
 <h2 id="managing-logout">Managing logout</h2>
 
-<p>This call logs a user out of an existing session.</p>
+<p>Use this API to log a current user out of an existing session. The user details are captured from the active user session.</p>
 
 <h3 id="resource-url-1">Resource URL</h3>
 <p><code class="api-method-post">post</code> /tspublic/v1/session/logout</p>
 
+<h3 id="request-example-1">Request Example</h3>
+<h5 id="curl-1">cURL</h5>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/logout'
+</code></pre></div></div>
+
+<h5 id="request-url-1">Request URL</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/logout
+</code></pre></div></div>
+
 <h3 id="response-example-1">Response Example</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>204 - Successful login
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Not applicable
+204 - Successful logout
 </code></pre></div></div>
 
 <h2 id="error-codes">Error Codes</h2>
@@ -3191,8 +3200,9 @@ supply the optional flag, the system uses the default <code class="highlighter-r
       </tr>
    </thead>
    <tbody>
+   <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
-    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td><td><code>401</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
   </tbody>
 </table>
 
@@ -3220,7 +3230,7 @@ supply the optional flag, the system uses the default <code class="highlighter-r
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 12, 2019 <br />
+        Generated: Jun 13, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>

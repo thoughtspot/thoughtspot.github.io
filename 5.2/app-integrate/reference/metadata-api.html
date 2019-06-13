@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  REST,API,data,"REST API"">
-<title>metadata API | ThoughtSpot</title>
+<title>Metadata API | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,21 +47,21 @@
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“metadata API”] | thoughtspot.github.io</title>
+<title>[“Metadata API”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="[“metadata API”]" />
+<meta property="og:title" content="[“Metadata API”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="These two APIs work with metadata for objects in the system." />
-<meta property="og:description" content="These two APIs work with metadata for objects in the system." />
+<meta name="description" content="The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard." />
+<meta property="og:description" content="The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-12T14:45:03-07:00" />
+<meta property="article:published_time" content="2019-06-13T15:53:36-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html","headline":"[“metadata API”]","dateModified":"2019-06-12T14:45:03-07:00","datePublished":"2019-06-12T14:45:03-07:00","description":"These two APIs work with metadata for objects in the system.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/reference/metadata-api.html","headline":"[“Metadata API”]","dateModified":"2019-06-13T15:53:36-07:00","datePublished":"2019-06-13T15:53:36-07:00","description":"The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3068,7 +3068,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">metadata API</h1>
+   <h1 class="post-title-main">Metadata API</h1>
 </div>
 
 
@@ -3111,39 +3111,117 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    3 minutes
   
 </span>
  -->
 
     
 
-  <p>These two APIs work with metadata for objects in the system.</p>
+  <p>The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.</p>
 
-<h2 id="get-tspublicv1metadatalistobjectheaders">GET /tspublic/v1/metadata/listobjectheaders</h2>
+<h2 id="get-visualization-headers">Get visualization headers</h2>
 
-<p>Lists the metadata object headers in the repository</p>
+<p>Use this API to list the visualization headers from the ThoughtSpot system. The expected output includes a list of objects, each with information about the visualizations of
+the given pinboard or an answer.</p>
 
-<h3 id="parameters">Parameters</h3>
+<h3 id="resource-url">Resource URL</h3>
+<p><code class="api-method-get">get</code> /tspublic/v1/metadata/listvizheaders</p>
+
+<h3 id="request-parameters">Request Parameters</h3>
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Parameter</th>
+         <th>Query Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td><code>id</code></td>
+      <td>string</td>
+      <td>ID of a particular answer or a pinboard.</td>
+    </tr>
+</tbody>
+</table>
+
+<h3 id="request-example">Request Example</h3>
+<h5 id="curl">cURL</h5>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listvizheaders?id=97begg839e-71b6-42ad-a980-20c38b4d6db5'
+</code></pre></div></div>
+<h5 id="request-url">Request URL</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listvizheaders?id=97be839e-71b6-42ggad-a980-20c38b4d6db5
+</code></pre></div></div>
+
+<h3 id="response-example">Response Example</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "id": "dd7f5467-99c3-4278-998b-6dd0c4346cd4",
+    "name": "Headline Viz answer book guid max timestamp answer book guid != {null} sort by max timestamp descending today last 180 days",
+    "author": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "created": 1536179170172,
+    "modified": 1536179170172,
+    "modifiedBy": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "owner": "ec718bc5-4608-4ea9-93e2-c1f82e9f2b31"
+  },
+  {
+    "id": "fcb65fdb-3965-4f56-8bda-e5e3c2a127a7",
+    "name": "Filter Viz answer book guid max timestamp answer book guid != {null} sort by max timestamp descending today last 180 days Row: 1",
+    "author": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "created": 1536179170172,
+    "modified": 1536179170172,
+    "modifiedBy": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "owner": "ec718bc5-4608-4ea9-93e2-c1f82e9f2b31"
+  },
+  {
+    "id": "0f6e7220-5088-4a0e-8122-50b637c356fc",
+    "name": "Table Viz answer book guid max timestamp answer book guid != {null} sort by max timestamp descending today last 180 days",
+    "author": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "created": 1536179170172,
+    "modified": 1536179170172,
+    "modifiedBy": "67e15c06-d153-4924-a4cd-ff615393b60f",
+    "owner": "ec718bc5-4608-4ea9-93e2-c1f82e9f2b31"
+  }
+]
+</code></pre></div></div>
+
+<h2 id="get-object-headers">Get object headers</h2>
+<p>Use this API to fetch a comprehensive list of metadata headers of a specific object type in the Thoughtspot system.</p>
+
+<h3 id="resource-url-1">Resource URL</h3>
+<p><code class="api-method-get">get</code> /tspublic/v1/metadata/listobjectheaders</p>
+
+<h3 id="request-parameters-1">Request Parameters</h3>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Query Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
     <tr>
       <td><code>type</code></td>
-      <td>A string specifying the metadata object type. Valid values for this field are:
+      <td>string</td>
+      <td>Specifies the metadata object type. Valid values are:
          <ul>
-         <li><code>REPORT_BOOK</code></li>
-         <li><code>QUESTION_ANSWER_BOOKPINBOARD_ANSWER_BOOK</code></li>
+         <li><code>QUESTION_ANSWER_BOOK</code></li>
+         <li><code>PINBOARD_ANSWER_BOOK</code></li>
          <li><code>QUESTION_ANSWER_SHEET</code></li>
          <li><code>PINBOARD_ANSWER_SHEET</code></li>
          <li><code>LOGICAL_COLUMN</code></li>
@@ -3156,7 +3234,8 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td><code>subtypes</code></td>
-      <td>List of sub-types of metadata object. This setting applies to the  <code>LOGICAL_TABLE</code> type. Valid values are:
+      <td>string</td>
+      <td>Specifies the sub-types of metadata object. Valid values are:
       <ul>
       <li><code>ONE_TO_ONE_LOGICAL</code></li>
       <li><code>WORKSHEET</code></li>
@@ -3164,16 +3243,26 @@ $('#toc').on('click', 'a', function() {
       <li><code>USER_DEFINED</code></li>
       <li><code>AGGR_WORKSHEET</code></li>
       </ul>
+      <b>Note:</b> This parameter only applies to the <code>LOGICAL_TABLE</code> type.
       </td>
     </tr>
     <tr>
       <td><code>category</code></td>
-      <td>A string specifying the metadata object category. Valid values are <code>ALL</code> or <code>MY</code>.</td>
+      <td>string</td>
+      <td>Specifies the metadata object category. Valid values are:
+      <ul>
+      <li><code>ALL</code></li>
+      <li><code>MY</code></li>
+      <li><code>FAVORITE</code></li>
+      <li><code>REQUESTED</code></li>
+      </ul> </td>
     </tr>
     <tr>
       <td><code>sort</code></td>
-      <td>Sort order of returned headers. Valid values - DEFAULT
+      <td>string</td>
+      <td>Sort order of returned headers. Valid values are:
           <ul>
+          <li><code>DEFAULT</code></li>
           <li><code>NAME</code></li>
           <li><code>DISPLAY_NAME</code></li>
           <li><code>AUTHOR</code></li>
@@ -3184,59 +3273,76 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td><code>sortascending</code></td>
-      <td>A boolean flag specifying sort order. A null value defines default order. True signifies ascending order. False signifies descending order.</td>
+      <td>boolean</td>
+      <td>A flag to specify the sort order. A null value defines the default order.
+      <ul>
+      <li>Choose <code>true</code> to set ascending order</li>
+      <li>Choose <code>false</code> to set descending order</li>
+      </ul>
+      </td>
     </tr>
     <tr>
       <td><code>offset</code></td>
-      <td>An integer specifying the batch offset to fetch page of headers. A value of <code>-1</code> implies first page.</td>
+      <td>integer</td>
+      <td>The batch offset to fetch the page of headers. The system default is <code>-1</code> that implies first page.</td>
     </tr>
     <tr>
       <td><code>batchsize</code></td>
-      <td>An integer specifying the batch size. The system default is unspecified, a value of <code>-1</code> implies no pagination.</td>
+      <td>integer</td>
+      <td>The batch size of the object. A value of <code>-1</code> implies no pagination.</td>
     </tr>
     <tr>
       <td><code>tagname</code></td>
-      <td>A JSON string array containing  a set of tag names to filter headers by.</td>
+      <td>string</td>
+      <td>A JSON array containing a set of tag names to filter headers by.</td>
     </tr>
     <tr>
       <td><code>pattern</code></td>
-      <td>A string specifying a object name pattern to match. Use <code>%</code> for wildcard match.</td>
+      <td>string</td>
+      <td>A pattern to match for object name. Use <code>%</code> for wildcard match.</td>
     </tr>
     <tr>
       <td><code>skipids</code></td>
-      <td>A string identifying the object metadata GUIDs to exclude.</td>
+      <td>string</td>
+      <td>IDs of metadata objects to exclude.</td>
     </tr>
     <tr>
       <td><code>fetchids</code></td>
-      <td>A string identifying the object metadata GUIDs to fetch.</td>
+      <td>string</td>
+      <td>IDs of metadata objects to fetch.</td>
     </tr>
     <tr>
       <td><code>auto_created</code></td>
-      <td>A boolean specifying whether to list auto created objects only. A value of null signifies return all.</td>
+      <td>boolean</td>
+      <td>A fag to specify  whether to list auto created objects only. A value of null signifies return all.</td>
     </tr>
    </tbody>
   </table>
 
-<h3 id="http-status-code">HTTP Status Code</h3>
-
-<ul>
-  <li><code class="highlighter-rouge">200</code> Gets the visualization headers.</li>
-</ul>
-
-<h3 id="request-url">Request URL</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders
+<h3 id="request-example-1">Request Example</h3>
+<h5 id="curl-1">cURL</h5>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders?type=PINBOARD_ANSWER_BOOK&amp;subtypes=WORKSHEET&amp;category=ALL&amp;sort=CREATED&amp;offset=-1'
 </code></pre></div></div>
+<h5 id="request-url-1">Request URL</h5>
 
-<p>For example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders?type=PINBOARD_ANSWER_BOOK&amp;subtypes=WORKSHEET&amp;category=ALL&amp;sort=CREATED&amp;offset=-1
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot'
-    'https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders?category=ALL&amp;sort=DEFAULT&amp;offset=-1'
 </code></pre></div></div>
-
-<p>For example:</p>
+<h3 id="response-example-1">Response Example</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "id": "7752fa9e-db22-415e-bf34-e082c4bc41c3",
+    "name": "Basic Pinboard 1",
+    "description": "This pinboard contains one TPCH based visualization",
+    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "created": 1450823023991,
+    "modified": 1504281997165,
+    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+    "owner": "7752fa9e-db22-415e-bf34-e082c4bc41c3",
+    "isAutoCreated": false,
+    "isAutoDelete": false
+  },
   {
     "id": "6715f768-8930-4180-9a3d-1efdbfaa8e7f",
     "name": "Headline Pinboard",
@@ -3249,194 +3355,37 @@ $('#toc').on('click', 'a', function() {
     "isAutoDelete": false
   },
   {
-    "id": "262abdac-b00f-4f5f-ad33-fcf10154184f",
-    "name": "Empty Pinboard",
+    "id": "601be8e5-140e-477c-8812-843795306438",
+    "name": "Pinboard Filter - datatypes",
     "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "created": 1519945152030,
-    "modified": 1519945152030,
+    "created": 1519943239150,
+    "modified": 1519944533160,
     "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "owner": "262abdac-b00f-4f5f-ad33-fcf10154184f",
-    "isAutoCreated": false,
-    "isAutoDelete": false
-  },
-  {
-    "id": "327f4d60-c502-43b0-b1d4-c73df5031a2e",
-    "name": "Charts Pinboard",
-    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "created": 1519880454269,
-    "modified": 1519945014529,
-    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "owner": "327f4d60-c502-43b0-b1d4-c73df5031a2e",
-    "isAutoCreated": false,
-    "isAutoDelete": false
-  },
-  ...snip...,
-  {
-    "id": "e82fe65a-7ac0-4282-a783-7a35c01b8dbd",
-    "name": "Broken Pinboard",
-    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "created": 1455598191207,
-    "modified": 1455598218094,
-    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "owner": "e82fe65a-7ac0-4282-a783-7a35c01b8dbd",
+    "owner": "601be8e5-140e-477c-8812-843795306438",
     "isAutoCreated": false,
     "isAutoDelete": false
   }
 ]
 </code></pre></div></div>
 
-<h3 id="response-code">Response Code</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
-</code></pre></div></div>
-
-<h3 id="response-headers">Response Headers</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-  "x-callosum-trace-id": "c8008291-c074-45cf-b88a-371253166b5b",
-  "date": "Tue, 27 Mar 2018 17:38:54 GMT",
-  "content-encoding": "gzip",
-  "x-callosum-request-time-us": "11694",
-  "transfer-encoding": "chunked",
-  "x-nginx-localhost": "172.18.231.12",
-  "x-callosum-ip": "172.18.231.12",
-  "connection": "keep-alive",
-  "x-ua-compatible": "IE=edge",
-  "x-callosum-incident-id": "791eb139-5fd1-478a-9002-35a81b0dd4aa",
-  "pragma": "no-cache",
-  "server": "ThoughtSpot",
-  "vary": "Accept-Encoding",
-  "content-type": "application/json",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'"
-}
-</code></pre></div></div>
-
-<h2 id="get-tspublicv1metadatalistvizheaders">GET /tspublic/v1/metadata/listvizheaders</h2>
-
-<p>Gets the visualization headers from the ThoughtSpot system. The expected output
-includes a list of objects, each with information about the visualizations of
-the given pinboard.</p>
-
-<h3 id="parameters-1">Parameters</h3>
-
+<h2 id="error-codes">Error Codes</h2>
 <table>
    <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Parameter</th>
+         <th>Error Code</th>
          <th>Description</th>
+         <th>HTTP Code</th>
       </tr>
    </thead>
    <tbody>
-    <tr>
-      <td><code>id</code></td>
-      <td>A string specifying the GUID of a particular answer (reportbook).</td>
-    </tr>
-</tbody>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid paramater values i.e., wrong pinboard ID.</td> <td><code>400</code></td></tr>
+  </tbody>
 </table>
-
-<h3 id="http-status-code-1">HTTP Status Code</h3>
-
-<ul>
-  <li><code class="highlighter-rouge">200</code> Gets the visualization headers.</li>
-  <li><code class="highlighter-rouge">400</code> Invalid pinboard GUID.</li>
-</ul>
-
-<h3 id="request-url-1">Request URL</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listvizheaders
-</code></pre></div></div>
-
-<p>For example:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'http://172.18.231.12:8088/callosum/v1/tspublic/v1/metadata/listvizheaders?id=327f4d60-c502-43b0-b1d4-c73df5031a2e'
-</code></pre></div></div>
-
-<h3 id="response-body">Response Body</h3>
-
-<p>An array where each response has these first class citizens:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">size</code> (String enumeration)</li>
-  <li><code class="highlighter-rouge">vizType</code> (String enumeration)</li>
-  <li><code class="highlighter-rouge">id</code> (GUID)</li>
-  <li><code class="highlighter-rouge">name</code> (String)</li>
-  <li><code class="highlighter-rouge">author</code> (GUID)</li>
-  <li><code class="highlighter-rouge">created</code> (Epoch)</li>
-  <li><code class="highlighter-rouge">modified</code> (Epoch)</li>
-  <li><code class="highlighter-rouge">modifiedBy</code> (GUID)</li>
-  <li><code class="highlighter-rouge">owner</code> (GUID)</li>
-</ul>
-
-<p>For example:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
-  {
-    "size": "m",
-    "vizType": "CHART",
-    "title": {
-      "value": {
-        "text": "Line chart- horizontal 900-1200 - data labels"
-      }
-    },
-    "id": "8fbf93e6-54ba-4a20-b2bb-4afe8dca5321",
-    "name": "1177d886-27fd-4dff-a617-8defadd27a6b::6e87081a-fc4c-4bd9-b1e0-cfe145868498 Pinboard Ref",
-    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "created": 1519880461956,
-    "modified": 1519945014529,
-    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "owner": "6f403a20-fe68-43e7-a0bf-a4e706740361"
-  },
-...snip...
-  {
-    "size": "ls",
-    "vizType": "CHART",
-    "title": {
-      "value": {
-        "text": "Percent as chart"
-      }
-    },
-    "id": "eb59aa25-1d2b-44f4-b5b4-b390105d56a8",
-    "name": "b8c26ea1-b341-4a18-871b-cc67a6bb237f::80cd5837-d5a7-491d-a3dc-490dfb3dbb0f Pinboard Ref",
-    "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "created": 1519932657762,
-    "modified": 1519945014529,
-    "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
-    "owner": "6f403a20-fe68-43e7-a0bf-a4e706740361"
-  }
-]
-</code></pre></div></div>
-
-<h3 id="response-code-1">Response Code</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
-</code></pre></div></div>
-
-<h3 id="response-headers-1">Response Headers</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-  "x-callosum-trace-id": "c0c84945-be03-414c-80c3-47b1b0949803",
-  "date": "Tue, 27 Mar 2018 17:46:47 GMT",
-  "content-encoding": "gzip",
-  "x-callosum-request-time-us": "35402",
-  "transfer-encoding": "chunked",
-  "x-nginx-localhost": "172.18.231.12",
-  "x-callosum-ip": "172.18.231.12",
-  "connection": "keep-alive",
-  "x-ua-compatible": "IE=edge",
-  "x-callosum-incident-id": "4ed1364c-b018-43a8-8486-ee954cd3dae3",
-  "pragma": "no-cache",
-  "server": "ThoughtSpot",
-  "vary": "Accept-Encoding",
-  "content-type": "application/json",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'"
-}
-</code></pre></div></div>
 
   <div class="tags">
     <div style="float:right;">
@@ -3462,7 +3411,7 @@ the given pinboard.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 12, 2019 <br />
+        Generated: Jun 13, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
