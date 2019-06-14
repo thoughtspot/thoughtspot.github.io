@@ -196,8 +196,8 @@ Use this API to get a list of all users, groups, and their inter-dependencies in
 of principal objects. A typical principal object contains the following properties:
 <table>
 <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:20%" />
+      <col style="width:80%" />
    </colgroup>
    <thead>
       <tr>
@@ -317,7 +317,7 @@ https://<instance>/callosum/v1/tspublic/v1/user/list
    </thead>
    <tbody>
    <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
-    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
-    <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
+    <tr> <td><code>10002</code></td>  <td>Bad request. No user found with the given username.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Unable to authenticate user</td><td><code>403</code></td></tr>
   </tbody>
 </table>
