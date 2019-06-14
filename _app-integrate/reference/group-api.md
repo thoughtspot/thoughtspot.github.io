@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Group APIs enable you to set/remove a privilege to/from a group or multiple groups.
+The Group APIs enable you to set or remove a privilege to or from a group or multiple groups.
 
 ## Add a privilege
 
@@ -140,7 +140,7 @@ Not applicable
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Please ensure that at least one realm can authenticate these tokens.</td> <td><code>401</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Use valid realm that can authenticate these tokens.</td> <td><code>401</code></td></tr>
 
   </tbody>
 </table>
