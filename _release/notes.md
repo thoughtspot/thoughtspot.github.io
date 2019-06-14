@@ -9,25 +9,59 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.2 is now available. These release notes include information about new features,
+ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [5.2.1 Fixed Issues](#521-fixed)
 * [5.2 New Features](#52-new)
 * [5.2 Fixed Issues](#52-fixed)
 * [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2 release
+If you are running one of the following versions, you can upgrade to the 5.2.1 release
 directly:
 
-* 5.0.x to 5.2
-* 5.1.x to 5.2
+* 5.0.x to 5.2.1
+* 5.1.x to 5.2.1
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2 release.
+First, upgrade to one of the above versions, and then to the 5.2.1 release.
+
+{: id="521-fixed"}
+## 5.2.1 Fixed Issues
+
+An issue where column tooltip that displayed last updated information was missing is now fixed.
+
+The Walkme 3rd party application loads intermittently on customer clusters.
+
+An error that occurred when saving changes to the title of a visualization is now fixed.
+
+filter dialog hangs when opened from pinboard or from left panel
+
+NAS mount disconnected during DR restore
+
+A problem where tables in a Google Chrome tab become misaligned is now fixed.
+
+Metadata Corruption After 5.1.1 Upgrade causes worksheet to not be editable
+
+Unintuitive delayed search UX (once users enter delayed search mode, they have to make a different query to come out of the greyed out box.)
+
+Table created with a DDL having incorrect syntax imported into TS without any errors and the table was missing a column.
+
+Database Manager memory limit increased to 16 GB to improve performance
+
+A problem with date filters in the Japanese locale is now fixed.
+
+An issue with refreshing materialization of views is now fixed.
+
+Scheduled pinboard emails fail to send to specific recipient citing invalid email address
+
+Occasional slow navigation between the Answer and Pinboard pages has been fixed.
+
+hen embedding a pinboard, the new pin button in the inboard still appears.
 
 {: id="52-new"}
 ## 5.2 New Features and Functionality
