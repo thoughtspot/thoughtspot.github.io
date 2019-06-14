@@ -72,7 +72,7 @@ fetching visualization headers. The following public APIs are available:
          <td>Remove a privilege from a group</td>
       </tr>
       <tr>
-         <td><a href="{{ site.baseurl }}/app-integrate/reference/public-api-reference.html">Materialization</a></td>
+         <td><a href="{{ site.baseurl }}/app-integrate/reference/materialization-api.html">Materialization</a></td>
          <td><code class="api-method-post">POST</code> /tspublic/v1/materialization/refreshview/{id}</td>
          <td>Re-execute the query and load data into the materialized view</td>
       </tr>
