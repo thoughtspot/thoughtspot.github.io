@@ -33,35 +33,35 @@ First, upgrade to one of the above versions, and then to the 5.2.1 release.
 {: id="521-fixed"}
 ## 5.2.1 Fixed Issues
 
-An issue where column tooltip that displayed last updated information was missing is now fixed.
+An issue where column tooltips do not display last-updated information is now fixed.
 
-The Walkme 3rd party application loads intermittently on customer clusters.
+An error that occurs when attempting to save changes to the title of a visualization is now fixed.
 
-An error that occurred when saving changes to the title of a visualization is now fixed.
+An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.
 
-filter dialog hangs when opened from pinboard or from left panel
+Reliability of the filter dialog when opened from a pinboard or the left panel has been improved.
 
-NAS mount disconnected during DR restore
+An issue with a NAS mount disconnecting during restore of a cluster is now fixed.
 
 A problem where tables in a Google Chrome tab become misaligned is now fixed.
 
-Metadata Corruption After 5.1.1 Upgrade causes worksheet to not be editable
+Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.
 
-Unintuitive delayed search UX (once users enter delayed search mode, they have to make a different query to come out of the greyed out box.)
+An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.
 
-Table created with a DDL having incorrect syntax imported into TS without any errors and the table was missing a column.
+The database manager memory limit has been increased to 16 GB to improve performance.
 
-Database Manager memory limit increased to 16 GB to improve performance
+An issue where tables created with a DDL having incorrect syntax could be imported without any errors is now fixed.
 
 A problem with date filters in the Japanese locale is now fixed.
 
 An issue with refreshing materialization of views is now fixed.
 
-Scheduled pinboard emails fail to send to specific recipient citing invalid email address
-
 Occasional slow navigation between the Answer and Pinboard pages has been fixed.
 
-hen embedding a pinboard, the new pin button in the inboard still appears.
+A problem where scheduled pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.
+
+Embedded pinboards no longer occasionally display a Pin button.
 
 {: id="52-new"}
 ## 5.2 New Features and Functionality
