@@ -51,7 +51,7 @@ An issue where greyed-out search phrases could not be edited while in delayed se
 
 The database manager memory limit has been increased to 16 GB to improve performance.
 
-An issue where tables created with a DDL having incorrect syntax could be imported without any errors is now fixed.
+An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.
 
 A problem with date filters in the Japanese locale is now fixed.
 
