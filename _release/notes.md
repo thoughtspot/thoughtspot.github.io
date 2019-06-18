@@ -27,7 +27,7 @@ permalink: /:collection/:path.html
 
 <p><a name="5-0-new-features-and-functionality"></a></p>
 <h2>5.0 New Features and Functionality</h2>
-<div>&nbsp;</div>
+
 <div>
 <table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
@@ -377,9 +377,9 @@ language keywords that can be used in the search bar:
 <div style="word-wrap: break-word; overflow-wrap: break-word;">
 <h3><a name="Fiscalcalendarindateformulas"></a>Fiscal calendar in date formulas</h3>
 <p>Several date functions now support the ability to indicate either a <tt>fiscal</tt> or Gregorian calendar (<tt>calendar</tt>) on which to base date calculations.  If no calendar type is specified, formulas default to standard Gregorian, with the year starting in January.</p>
-<!--</div>
+</div>
 </td>
-</tr>-->
+</tr>
 </tbody>
 </table>
 </div>
