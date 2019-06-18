@@ -1311,6 +1311,9 @@ entries:
     - title: Stop word reference
       url: /reference/stop-words.html
       output: web,refGD
+    - title: Geo map reference
+      url: /reference/geomap-reference.html
+      output: web,refGD
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html
       output: web,refGdAdmin
