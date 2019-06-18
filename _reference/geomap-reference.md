@@ -3,11 +3,11 @@ title: [Geo Map Reference]
 tags: [Geo map subdivisions]
 keywords: geo map divisons subdivisions
 last_updated: 06/17/2019
-summary: "ThoughtSpot recognizes a broad list geographcic regions and their subdivisions."
+summary: "ThoughtSpot recognizes a broad list geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This reference lists supported countries and their associated subdivisions that are available as geomaps in ThoughtSpot.
+This reference lists supported countries and their subdivisions that are available in geomaps.
 
 ### Supported geo maps in ThoughtSpot
 
