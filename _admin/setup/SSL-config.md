@@ -29,6 +29,8 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 -   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
 -   The private key in compatible .PEM format. It should not be password/passphrase protected.
 
+**_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
+
 To install the SSL certificate:
 
 1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
