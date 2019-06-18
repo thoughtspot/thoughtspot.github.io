@@ -7,7 +7,7 @@ summary: "ThoughtSpot recognizes a broad list geographic regions and their subdi
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This reference lists supported countries and their subdivisions that are available in geomaps.
+This reference lists supported countries and their subdivisions that are available in geo maps.
 
 ### Supported geo maps in ThoughtSpot
 
