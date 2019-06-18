@@ -12,25 +12,25 @@ permalink: /:collection/:path.html
 ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-* [5.2.1 Fixed Issues](#521-fixed)
+<!-- * [5.2.1 Fixed Issues](#521-fixed) -->
 * [5.2 New Features](#52-new)
 * [5.2 Fixed Issues](#52-fixed)
 * [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2.1 release
+If you are running one of the following versions, you can upgrade to the 5.2 release
 directly:
 
-* 5.0.x to 5.2.1
-* 5.1.x to 5.2.1
+* 5.0.x to 5.2
+* 5.1.x to 5.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2.1 release.
+First, upgrade to one of the above versions, and then to the 5.2 release.
 
-{: id="521-fixed"}
+<!-- {: id="521-fixed"}
 ## 5.2.1 Fixed Issues
 
 An issue where column tooltips do not display last-updated information is now fixed.
@@ -62,7 +62,7 @@ Occasional slow navigation between the Answer and Pinboard pages has been fixed.
 A problem where scheduled pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.
 
 Embedded pinboards no longer occasionally display a Pin button.
-
+-->
 {: id="52-new"}
 ## 5.2 New Features and Functionality
 
