@@ -59,21 +59,23 @@ To install the SSL certificate:
 
 ## Set the recommended TLS version
 
-There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
+This procedure shows you how to set the recommended TLS version. This helps avoid exposure of your ThoughtSpot service to known vulnerabilities.
 
-The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2.
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2. 
 
-ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
+ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default. 
 
-1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
-2.  Log in to the Linux shell using SSH..
-3.  Issue the following command:
+To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
+    ```
+    tscli ssl set-min-tls-version --help
+    ```
+To change the TLS version, issue the following commands as an example.
 
     ```
-    tscli ssl set-min-version 1.2
+    tscli ssl set-min-version 1.1
     ```
-
-    This will block all usage of older versions.
+    
+    This will enable TLS version 1.1 and higher on ThoughtSpot.
 
 ## Supported SSL ciphers
 The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
