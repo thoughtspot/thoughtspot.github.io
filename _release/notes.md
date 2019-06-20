@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
 <!-- * [5.2.1 Fixed Issues](#521-fixed) -->
