@@ -3212,6 +3212,8 @@ $('#toc').on('click', 'a', function() {
   <li>The private key in compatible .PEM format. It should not be password/passphrase protected.</li>
 </ul>
 
+<p><strong><em>NOTE:</em></strong> Do not use a passphrase while creating the cert. Invoke the command, <code class="highlighter-rouge">openssl rsa -check -in pk.key</code> to verify if you’re prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.</p>
+
 <p>To install the SSL certificate:</p>
 
 <ol>
