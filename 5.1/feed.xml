@@ -5,13 +5,8 @@
         <description>Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily.</description>
         <link>https://docs.thoughtspot.com/</link>
         <atom:link href="https://docs.thoughtspot.com/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-        <pubDate>Wed, 19 Jun 2019 22:25:10 -0700</pubDate>
-        <lastBuildDate>Wed, 19 Jun 2019 22:25:10 -0700</lastBuildDate>
-=======
-        <pubDate>Thu, 02 May 2019 15:17:25 -0700</pubDate>
-        <lastBuildDate>Thu, 02 May 2019 15:17:25 -0700</lastBuildDate>
->>>>>>> ea8c3b6bfc0d3683472a8c136d66a3004ec890e6
+        <pubDate>Thu, 20 Jun 2019 03:56:26 -0700</pubDate>
+        <lastBuildDate>Thu, 20 Jun 2019 03:56:26 -0700</lastBuildDate>
         <generator>Jekyll v3.7.4</generator>
         
     </channel>
