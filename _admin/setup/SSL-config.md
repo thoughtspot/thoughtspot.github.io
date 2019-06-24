@@ -31,6 +31,52 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a href="#profile" data-toggle="tab">Using UI</a></li>
+    <li><a href="#about" data-toggle="tab">Using tscli</a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="profile">
+    <h2>Using UI</h2>
+<p>Vishal ka Managment Portal</p>
+</div>
+
+<div role="tabpanel" class="tab-pane" id="about">
+    <h2>Using tscli</h2>
+    <p>
+    To install the SSL certificate:
+
+    <ul>
+    <li>Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.</li>
+    <li>Copy the certificate and key files to ThoughtSpot:
+<p><code>$ scp <key> <certificate> admin@<IP_address>:<path></code>
+          </p>
+    <li>Log in to the Linux shell using SSH.</li>
+<li>Change directories to where you copied the certificate:
+<p><code>$ cd <path></code>
+          </p>
+
+
+    5. Issue the `tscli` command to install the certificate:
+
+        ```
+        $ tscli ssl add-cert <key> <certificate>
+        ```
+
+    6. To test that the certificate was installed correctly, [Log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
+
+         You should see that the application's URL begins with `https://`.
+    </p></div>
+
+</div>
+
+This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
+
+-   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
+-   The private key in compatible .PEM format. It should not be password/passphrase protected.
+
+**_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
+
 To install the SSL certificate:
 
 1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
