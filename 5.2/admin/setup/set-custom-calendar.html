@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-20T15:57:32-07:00" />
+<meta property="article:published_time" content="2019-06-24T14:37:57-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a fiscal calendar year”]","dateModified":"2019-06-20T15:57:32-07:00","datePublished":"2019-06-20T15:57:32-07:00","description":"By default, the application’s fiscal calendar begins in January. If your company’s calendar year starts in another month, setting a fiscal calendar quarter makes the ThoughtSpot date searches reflect your fiscal year.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a fiscal calendar year”]","dateModified":"2019-06-24T14:37:57-07:00","datePublished":"2019-06-24T14:37:57-07:00","description":"By default, the application’s fiscal calendar begins in January. If your company’s calendar year starts in another month, setting a fiscal calendar quarter makes the ThoughtSpot date searches reflect your fiscal year.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -229,7 +229,7 @@ var ss360Config = {
 -->
 
 <div class="logo">
-<figure><a class="no_icon" target="_self" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home" style="width:100%;max-width:158px;padding:10px"/> </a></figure>
+<figure><a class="no_icon" target="_self" href="/"><img class="docimage" src="/images/company_logo_white.svg" alt="ThoughtSpot Documentation home" style="width:158;width:158px;padding:10px"/> </a></figure>
 <!-- fixed target parameter, by setting it to "self" to ensure when logo is clicked that it does not open a new browser tab -->
 
 </div>
@@ -3156,7 +3156,7 @@ affects previous saved searches.</p>
     <p>SSH into your ThoughtSpot cluster as admin.</p>
   </li>
   <li>
-    <p>Run the following command: <code class="highlighter-rouge">tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true</code></p>
+    <p>Run the following command: <code class="highlighter-rouge">tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true</code></p>
   </li>
 </ol>
 
@@ -3166,7 +3166,8 @@ affects previous saved searches.</p>
 
 <ol>
   <li>Create your calendar as a table using the following required columns:
-    <pre><code class="language-date">day_of_week
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>date
+day_of_week
 month
 quarter
 year
@@ -3174,8 +3175,8 @@ day_number_of_week
 week_number_of_month
 week_number_of_quarter
 week_number_of_year
-is_weekday
-</code></pre>
+is_weekend
+</code></pre></div>    </div>
     <p>Example calendar with the fiscal year beginning on April 1:</p>
 
     <p><img src="/5.2/images/custom_cal.png" alt="" /></p>
@@ -3274,7 +3275,7 @@ is_weekday
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 20, 2019 <br />
+        Generated: Jun 24, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
