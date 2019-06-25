@@ -48,8 +48,8 @@ Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot
 ## Parameters to be set on load balancer devices / application proxy servers
 
 ### Maximum size of HTTP POST request
-Some load balancers / proxy solutions impose a defaul limit on the size of HTTP POST requests. In some cases it can be as low as 1 MB. 
+Some load balancers / proxy solutions impose a default limit on the size of HTTP POST requests. In some cases it can be as low as 1 MB. 
 ThoughtSpot advises it to be set to 50 MB so please configure your device accordingly.
 
 ### Encryption cipher suites on load balancer (server side).
-Please see https://docs.thoughtspot.com/5.2/admin/setup/SSL-config.html#supported-ssl-ciphers 
+Please see [Supported SSL ciphers]({{ site.baseurl }}/admin/setup/SSL-config.html#supported-ssl-ciphers)
