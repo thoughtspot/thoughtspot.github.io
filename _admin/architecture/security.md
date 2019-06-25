@@ -20,7 +20,7 @@ Object security is the ability for users to see content within ThoughtSpot.
 Objects can be tables, columns in tables, worksheets, pinboards, and saved
 answers.
 
-Users gain access to objects when an object owner share-answers with them.
+Users gain access to objects when an object owner shares access with them.
 Owners can share with individual users or with entire groups, giving access to
 anyone within that group. Owners can share with edit or view options.
 
