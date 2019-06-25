@@ -29,15 +29,15 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 ##  Prerequisites
 
 ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for setting up your EC2 details:
-- Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
+- Sign in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 - Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the deafult AMI are:  
 **AMI Name**: centos-golden-20171207-61be6ad-prod-small  
 **AMI ID**: ami-f1151091  
 **Region**: N. California
-- Default AMI has 2x1TB attached EBS storage volumes to support the maximum capacity of 250GB data per ThoughtSpot node. 
-- For customers with smaller data sets, a custom AMI (Name = centos-golden-20181023-4d9ee24-prod-small, ID = ami-06138062df81bdaf7) has also been made available. VMs based on this configuration will suffice for data sizes up to 100GB/node.
+- Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node. 
+- For customers with smaller data sets, a custom AMI (Name = centos-golden-20181023-4d9ee24-prod-small, ID = ami-06138062df81bdaf7) has also been made available. VMs based on this configuration will suffice for data sizes up to 100 GB/node.
 - Choose the appropriate EC2 instance type: See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) for supported instance types.
-- Networking requirements: 10GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
+- Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
 - Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
 - Number of EC2 instances needed: Based on the datasets, this number will vary. Please check [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) for recommended nodes for a given data size.
 - Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2).
@@ -48,7 +48,7 @@ The examples/screenshots below are for N. California region. Your own region may
 
 To set up a ThoughtSpot cluster in AWS, do the following:
 
-1. Navigate to the EC2 service dashboard by clicking **Services**, then select **EC2**.
+1. Navigate to the EC2 service dashboard by clicking **Services**, then **EC2**.
 
      ![]({{ site.baseurl }}/images/navigate_to_ec2_dashboard.png "Navigate to the EC2 Dashboard")
 
@@ -82,8 +82,8 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 12.  Click **Review and Launch**. After you have reviewed your instance launch details, click **Launch**.
 13.  Choose a key pair.
       A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.
-14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
-15.  Contact ThoughtSpot support to complete your ThoughtSpot installation.
+14.  Click **Launch Instance**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
+15.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
      They will set up the VM instances to be part of the cluster.
 16.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
