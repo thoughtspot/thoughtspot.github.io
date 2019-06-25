@@ -427,7 +427,7 @@ TQL&gt; ALTER TABLE "sales"
       <tr>
          <td>
             <code>ALTER TABLE &lt;<var>table</var>&gt;
-   DROP [FOREIGN KEY|
+   DROP CONSTRAINT [FOREIGN KEY|
    RELATIONSHIP]
    &lt;<var>name</var>&gt;;</code>
          </td>
@@ -435,7 +435,7 @@ TQL&gt; ALTER TABLE "sales"
          <td>
             <code>TQL&gt; ALTER TABLE
      "sales_fact"
-     DROP FOREIGN KEY
+     DROP CONSTRAINT FOREIGN KEY
      "FK_PO_number";
 
 TQL&gt; ALTER TABLE "fruit_dim"
