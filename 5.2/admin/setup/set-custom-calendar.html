@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can customize your fiscal calendar to start in month other than January."> -->
+<!-- <meta name="description" content="You can customize your fiscal calendar to start in a month other than January."> -->
 <meta name="keywords" content="dates,  fiscal calendarfiscal calendar yearcustom calendar">
 <title>Set up a fiscal calendar year | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-24T14:37:57-07:00" />
+<meta property="article:published_time" content="2019-06-24T17:26:48-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a fiscal calendar year”]","dateModified":"2019-06-24T14:37:57-07:00","datePublished":"2019-06-24T14:37:57-07:00","description":"By default, the application’s fiscal calendar begins in January. If your company’s calendar year starts in another month, setting a fiscal calendar quarter makes the ThoughtSpot date searches reflect your fiscal year.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a fiscal calendar year”]","dateModified":"2019-06-24T17:26:48-07:00","datePublished":"2019-06-24T17:26:48-07:00","description":"By default, the application’s fiscal calendar begins in January. If your company’s calendar year starts in another month, setting a fiscal calendar quarter makes the ThoughtSpot date searches reflect your fiscal year.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3083,7 +3083,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can customize your fiscal calendar to start in month other than January.</div>
+    <div class="summary">You can customize your fiscal calendar to start in a month other than January.</div>
    
 
     
@@ -3149,16 +3149,7 @@ affects previous saved searches.</p>
 
 <h3 id="enabling-the-custom-calendar-feature">Enabling the custom calendar feature</h3>
 
-<p>To enable the custom calendar feature for your cluster, do the following:</p>
-
-<ol>
-  <li>
-    <p>SSH into your ThoughtSpot cluster as admin.</p>
-  </li>
-  <li>
-    <p>Run the following command: <code class="highlighter-rouge">tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true</code></p>
-  </li>
-</ol>
+<p>To enable the custom calendar feature for your cluster, contact <a href="/5.2/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
 
 <h3 id="creating-a-custom-calendar">Creating a custom calendar</h3>
 
@@ -3205,20 +3196,7 @@ is_weekend
 
 <h3 id="optional-setting-a-custom-calendar-as-the-default-calendar-for-a-cluster">(Optional) Setting a custom calendar as the default calendar for a cluster</h3>
 
-<p>To set your custom calendar as the default calendar for your cluster, do the following:</p>
-
-<ol>
-  <li>
-    <p>SSH into your ThoughtSpot cluster as admin.</p>
-  </li>
-  <li>
-    <p>Run the following command:
-<code class="highlighter-rouge">tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar &lt;calendar_name&gt;</code></p>
-
-    <p>Example:
-<code class="highlighter-rouge">tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar my_calendar</code></p>
-  </li>
-</ol>
+<p>To set your custom calendar as the default calendar for your cluster, contact <a href="/5.2/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
 
 <h3 id="using-a-custom-calendar">Using a custom calendar</h3>
 
