@@ -16,7 +16,7 @@ The ThoughtSpot AMI comes provisioned with the custom ThoughtSpot image to make 
 -   A template for the root volume for the instance (for example, an operating system, an appliance server, and applications).
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 
--   A block device mapping that specifies the volumes to attach to the instance when it's launch.
+-   A block device mapping that specifies the volumes to attach to the instance when it's launched.
 
 Check with your ThoughtSpot contact to learn about the latest version of the ThoughtSpot AMI. Once you've provided your AWS account ID and region where the VMs will be hosted, ThoughtSpot will share the current ThoughtSpot base AMI with you.
 
