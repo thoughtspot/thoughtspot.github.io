@@ -6,8 +6,8 @@ summary: "You can customize your fiscal calendar to start in month other than Ja
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-By default, the application's fiscal calendar in January. If your company's
-calendar year starts in another month, setting a fiscal calendar quarter makes
+By default, the application's fiscal calendar starts in January. If your company's
+fiscal year starts in another month, setting a custom fiscal calendar makes
 the ThoughtSpot date searches reflect your fiscal year.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)

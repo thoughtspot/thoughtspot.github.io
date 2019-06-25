@@ -1,4 +1,4 @@
-The language the ThoughtSpot UX displays is based off of the locale in a user's
+The language the ThoughtSpot UI displays is based on the locale in a user's
 profile. The locale preferences control the language and data formats (date and
 number formats) by geographic locations. In addition to American English (*en-US*),
 ThoughtSpot supports:

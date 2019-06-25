@@ -20,7 +20,7 @@ virtual meeting room.
 
 Granting remote support access can streamline troubleshooting activities, since
 it enables your support agent to work directly in a secure setting. The remote
-tunnel enables SSH and HTTP access to your by ThoughtSpot Support. This access
+tunnel enables SSH and HTTP access to your ThoughtSpot instance by ThoughtSpot Support. This access
 can be granted and revoked easily, so you can enable it for a troubleshooting
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
