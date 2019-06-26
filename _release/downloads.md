@@ -19,9 +19,9 @@ If you're looking for ThoughtSpot clients or API files, you've come to the right
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>ODBC Driver</strong></td>
-            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://f1.help.thoughtspot.com/@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip?revision=2">ODBC driver for Windows</a></td>
-            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3123/ThoughtSpot_odbc_linux_3.4.tar.gz?revision=1">ODBC driver for Linux</a></td>
-            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://f1.help.thoughtspot.com/@api/deki/files/3642/ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz?revision=1">ODBC driver for Solaris&nbsp;Sparc</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://thoughtspot.egnyte.com/dl/MrljBtxjri/">ODBC driver for Windows</a></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/hFbkjmVbDZ/">ODBC driver for Linux</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/xyKZdKw6P3/">ODBC driver for Solaris&nbsp;Sparc</a></td>
         </tr>
         <tr>
             <td class="mt-column-width-20 mt-noheading"><strong>JDBC Driver</strong></td>
