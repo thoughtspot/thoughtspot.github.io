@@ -41,7 +41,7 @@ To enable remote support:
     remote tunnel.
 
     ```
-    $ tscli support set-remote --addr tunnel.thoughtspot.com --user ubuntu
+    $ tscli support set-remote --addr tunnelrelay.thoughtspot.com --user ubuntu
     ```
 
 5. Test that the setting is configured:
