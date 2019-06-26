@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-24T17:26:48-07:00" />
+<meta property="article:published_time" content="2019-06-25T17:39:31-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html","headline":"[“Configure load balancing and proxies”]","dateModified":"2019-06-24T17:26:48-07:00","datePublished":"2019-06-24T17:26:48-07:00","description":"Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html","headline":"[“Configure load balancing and proxies”]","dateModified":"2019-06-25T17:39:31-07:00","datePublished":"2019-06-25T17:39:31-07:00","description":"Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3163,6 +3163,15 @@ thoughtspot.customer.com IN A 69.9.64.14
 
 <p>Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot backend. You can essentially use the web proxy as a load balancer. Therefore, your session will carry over if the proxy round robins between the ThoughtSpot backends as long as the URL doesn’t change.</p>
 
+<h2 id="parameters-to-be-set-on-load-balancer-devices--application-proxy-servers">Parameters to be set on load balancer devices / application proxy servers</h2>
+
+<h3 id="maximum-size-of-http-post-request">Maximum size of HTTP POST request</h3>
+<p>Some load balancers / proxy solutions impose a default limit on the size of HTTP POST requests. In some cases it can be as low as 1 MB. 
+ThoughtSpot advises it to be set to 50 MB so please configure your device accordingly.</p>
+
+<h3 id="encryption-cipher-suites-on-load-balancer-server-side">Encryption cipher suites on load balancer (server side).</h3>
+<p>Please see <a href="/5.2/admin/setup/SSL-config.html#supported-ssl-ciphers">Supported SSL ciphers</a></p>
+
   <div class="tags">
     <div style="float:right;">
       
@@ -3194,7 +3203,7 @@ thoughtspot.customer.com IN A 69.9.64.14
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 24, 2019 <br />
+        Generated: Jun 25, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
