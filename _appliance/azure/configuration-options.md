@@ -38,7 +38,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
       <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
       <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
-      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
+      <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
 	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
 	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
