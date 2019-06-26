@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-24T17:26:48-07:00" />
+<meta property="article:published_time" content="2019-06-25T17:39:31-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-06-24T17:26:48-07:00","datePublished":"2019-06-24T17:26:48-07:00","description":"After you’ve determined your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI). Please read further for next steps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-06-25T17:39:31-07:00","datePublished":"2019-06-25T17:39:31-07:00","description":"After you’ve determined your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI). Please read further for next steps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3147,19 +3147,21 @@ $('#toc').on('click', 'a', function() {
   <li>A block device mapping that specifics the volumes to attach to the instance when it’s launch.</li>
 </ul>
 
-<p>The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks so that it handle the full load of the VM.</p>
+<p>The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
 <p>ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for setting up your EC2 details:</p>
 <ul>
-  <li>Log in to your AWS account from the <a href="https://console.aws.amazon.com/console/home">AWS Amazon sign in page</a>.</li>
-  <li>Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:<br />
+  <li>Sign in to your AWS account from the <a href="https://console.aws.amazon.com/console/home">AWS Amazon sign in page</a>.</li>
+  <li>Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the deafult AMI are:<br />
 <strong>AMI Name</strong>: centos-golden-20171207-61be6ad-prod-small<br />
 <strong>AMI ID</strong>: ami-f1151091<br />
 <strong>Region</strong>: N. California</li>
+  <li>Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node.</li>
+  <li>For customers with smaller data sets, a custom AMI (Name = centos-golden-20181023-4d9ee24-prod-small, ID = ami-06138062df81bdaf7) has also been made available. VMs based on this configuration will suffice for data sizes up to 100 GB/node.</li>
   <li>Choose the appropriate EC2 instance type: See <a href="/5.2/appliance/cloud.html#thoughtspot-cloud-instance-types">ThoughtSpot cloud instance types</a> for supported instance types.</li>
-  <li>Networking requirements: 10GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.</li>
+  <li>Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.</li>
   <li>Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.</li>
   <li>Number of EC2 instances needed: Based on the datasets, this number will vary. Please check <a href="/5.2/appliance/cloud.html#thoughtspot-cloud-instance-types">ThoughtSpot cloud instance types</a> for recommended nodes for a given data size.</li>
   <li>Staging larger datasets (&gt; 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2).</li>
@@ -3167,17 +3169,19 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="setting-up-your-thoughtspot-cluster-in-aws">Setting up your ThoughtSpot cluster in AWS</h2>
 
+<p>The examples/screenshots below are for N. California region. Your own region may be different.</p>
+
 <p>To set up a ThoughtSpot cluster in AWS, do the following:</p>
 
 <ol>
   <li>
-    <p>Navigate to the EC2 service dashboard by clicking <strong>Services</strong>, then select <strong>EC2</strong>.</p>
+    <p>Navigate to the EC2 service dashboard by clicking <strong>Services</strong>, then <strong>EC2</strong>.</p>
 
     <p><img src="/5.2/images/navigate_to_ec2_dashboard.png" alt="" title="Navigate to the EC2 Dashboard" /></p>
   </li>
   <li>
     <p>Make sure your selected region is correct in the top right corner of the dashboard.
-If not, select a different region you would like to launch your instance in. Let ThoughtSpot support know if you change your region.</p>
+If not, select a different region you would like to launch your instance in.</p>
 
     <p><img src="/5.2/images/select_region.png" alt="" title="Select a region to launch your instance in" /></p>
   </li>
@@ -3209,8 +3213,8 @@ The instances must be on the same VPC and subnetwork. ThoughtSpot will set up th
   <li>Click <strong>Review and Launch</strong>. After you have reviewed your instance launch details, click <strong>Launch</strong>.</li>
   <li>Choose a key pair.
  A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.</li>
-  <li>Click <strong>Launch Instances</strong>. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.</li>
-  <li>Contact ThoughtSpot support to complete your ThoughtSpot installation.
+  <li>Click <strong>Launch Instance</strong>. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.</li>
+  <li>Contact ThoughtSpot Support to complete your ThoughtSpot installation.
 They will set up the VM instances to be part of the cluster.</li>
   <li>When the setup is complete, you can load data into ThoughtSpot for search analytics.</li>
 </ol>
@@ -3248,7 +3252,7 @@ They will set up the VM instances to be part of the cluster.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 24, 2019 <br />
+        Generated: Jun 25, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
