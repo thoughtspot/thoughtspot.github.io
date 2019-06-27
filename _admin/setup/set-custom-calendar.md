@@ -72,7 +72,7 @@ Example calendar with the fiscal year beginning on April 1:
 
 To set your custom calendar as the default calendar for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
-### Using a custom calendar
+## Using a custom calendar
 
 To use a custom calendar, do the following:
 
