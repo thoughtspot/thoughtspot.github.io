@@ -13,7 +13,7 @@ important to understand these considerations prior to implementation, since some
 solutions will perform better than others.
 
 Each node in a ThoughtSpot cluster has been found to perform ideally with less
-than 250GB of data and fewer than 0.5 billion total rows of data. For schemas
+than 250 GB of data and fewer than 0.5 billion total rows of data. For schemas
 that are particularly complex, performance is increased with even fewer rows of
 data per node. Ways to reduce the total amount of data and rows of data include
 limiting the amount of data (number of years, etc.) or combining long, but
