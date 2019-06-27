@@ -1323,9 +1323,6 @@ entries:
   - sectiontitle: About this Release
     output: web,rnotes
     sectionitems:
-    - title: Help Center
-      url: /release/help-center.html
-      output: web
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes

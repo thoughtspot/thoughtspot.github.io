@@ -2,12 +2,12 @@
 title: [Set up a fiscal calendar year]
 keywords: [fiscal calendar, fiscal calendar year, custom calendar]
 tags: [dates]
-summary: "You can customize your fiscal calendar to start in month other than January."
+summary: "You can customize your fiscal calendar to start in a month other than January."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-By default, the application's fiscal calendar begins in January. If your company's
-calendar year starts in another month, setting a fiscal calendar quarter makes
+By default, the application's fiscal calendar starts in January. If your company's
+fiscal year starts in another month, setting a custom fiscal calendar quarter makes
 the ThoughtSpot date searches reflect your fiscal year.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
@@ -28,18 +28,15 @@ Before you create your custom calendar, you must enable the custom calendar feat
 
 ### Enabling the custom calendar feature
 
-To enable the custom calendar feature for your cluster, do the following:
-
-1. SSH into your ThoughtSpot cluster as admin.
-
-2. Run the following command: `tscli --adv service add-javaopt tomcat.tomcat D orion.customCalendarConfig.enabled true`
+To enable the custom calendar feature for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 ### Creating a custom calendar
 
 To create your custom calendar, do the following:
 
 1. Create your calendar as a table using the following required columns:
-   ```date
+   ```
+date
 day_of_week
 month
 quarter
@@ -48,7 +45,7 @@ day_number_of_week
 week_number_of_month
 week_number_of_quarter
 week_number_of_year
-is_weekday
+is_weekend
 ```
 Example calendar with the fiscal year beginning on April 1:
 
@@ -73,15 +70,7 @@ Example calendar with the fiscal year beginning on April 1:
 
 ### (Optional) Setting a custom calendar as the default calendar for a cluster
 
-To set your custom calendar as the default calendar for your cluster, do the following:
-
-1. SSH into your ThoughtSpot cluster as admin.
-
-2. Run the following command:
-   `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar <calendar_name>`
-
-   Example:
-   `tscli service add-javaopt tomcat.tomcat D orion.customCalendarConfig.defaultClusterCalendar my_calendar`
+To set your custom calendar as the default calendar for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 ### Using a custom calendar
 
