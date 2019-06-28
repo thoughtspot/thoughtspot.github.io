@@ -1,5 +1,5 @@
 ---
-title: [Set up a fiscal calendar year]
+title: [Set up a custom calendar]
 keywords: [fiscal calendar, fiscal calendar year, custom calendar]
 tags: [dates]
 summary: "You can customize your fiscal calendar to start in a month other than January."
