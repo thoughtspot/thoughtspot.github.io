@@ -1,4 +1,3 @@
-
 <table>
 <colgroup>
    <col style="width:25%" />
@@ -156,16 +155,14 @@
     </tr>
     <tr>
       <td><code>rank</code></td>
-      <td>Returns the rank for the current row. Identical values are assigned an identical rank. Takes an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.
-</td>
-      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc'</code>
-</td>
-<tr>
-  <td><code>rank_percentile</code></td>
-  <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Taken an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.</td>
-  <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )
-</code> 
-</td>
+      <td>Returns the rank for the current row. Identical values receive an identical rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc' )</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>rank_percentile</code></td>
+      <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )</code></td>
     </tr>
     <tr>
       <td><code>stddev</code></td>
