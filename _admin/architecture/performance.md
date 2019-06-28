@@ -71,10 +71,6 @@ the following boundaries are recommended:
 Max number of unique RLS rules with search data suggestions should not exceed
 15K.
 
-## Data Connect Boundaries
-
-The maximum number of connections should be less than or equal to 25.
-
 ## Scheduled pinboards
 
 For scheduled pinboards, ideal performance is to have 50 or fewer scheduled
