@@ -1,4 +1,4 @@
-You can append data to your existing system tables through the ThoughtSpot application, even if the tables were initially loaded using Data Connect or `tsload`. The CSV file must have the same structure as the table it is being loaded into, including number and type of columns, in the same order as the target table.
+You can append data to your existing system tables through the ThoughtSpot application, even if the tables were initially loaded using `tsload`. The CSV file must have the same structure as the table it is being loaded into, including number and type of columns, in the same order as the target table.
 
 To append data into ThoughtSpot:
 
