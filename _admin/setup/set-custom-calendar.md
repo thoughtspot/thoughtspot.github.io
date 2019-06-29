@@ -2,18 +2,17 @@
 title: [Set up a custom calendar]
 keywords: [fiscal calendar, fiscal calendar year, custom calendar]
 tags: [dates]
-summary: "You can customize your fiscal calendar to start in a month other than January."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-By default, the application's fiscal calendar begins in January. If your company's
-calendar year starts in another month, setting a fiscal calendar quarter makes
-the ThoughtSpot date searches reflect your fiscal year.
+By default, the application's fiscal calendar begins on January 1st. If your company's
+calendar starts on another month or date, you can set a fiscal calendar that ensures
+ThoughtSpot date searches reflect your fiscal calendar.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 will also reflect the fiscal year you set here.
 
-When you set a custom fiscal calendar year, you will designate the month on which your
+When you set a custom fiscal calendar year, you will designate the month and day on which your
 company's fiscal year begins. All the date language will then reflect your
 change, so if someone searches for **this quarter** or **q3**, the answer will
 conform to the fiscal quarter in use. When you make this change, existing
