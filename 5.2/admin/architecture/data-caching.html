@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Data Caching”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has four ways to get data into the cluster:" />
-<meta property="og:description" content="ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has four ways to get data into the cluster:" />
+<meta name="description" content="ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has several approaches for getting data into the cluster." />
+<meta property="og:description" content="ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has several approaches for getting data into the cluster." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-27T13:58:09-07:00" />
+<meta property="article:published_time" content="2019-06-29T11:14:09-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html"},"url":"https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html","headline":"[“Data Caching”]","dateModified":"2019-06-27T13:58:09-07:00","datePublished":"2019-06-27T13:58:09-07:00","description":"ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has four ways to get data into the cluster:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html"},"url":"https://docs.thoughtspot.com/5.2/admin/architecture/data-caching.html","headline":"[“Data Caching”]","dateModified":"2019-06-29T11:14:09-07:00","datePublished":"2019-06-29T11:14:09-07:00","description":"ThoughtSpot caches data as relational tables in memory. The tables can be sourced from different data sources and joined together. ThoughtSpot has several approaches for getting data into the cluster.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1268,7 +1268,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/admin/setup/set-custom-calendar.html">Set up a fiscal calendar year</a></li>
+                          <li><a href="/5.2/admin/setup/set-custom-calendar.html">Set up a custom calendar</a></li>
                       
                    
                 
@@ -3122,61 +3122,44 @@ $('#toc').on('click', 'a', function() {
     
 
   <p>ThoughtSpot caches data as relational tables in memory. The tables can be
-sourced from different data sources and joined together. ThoughtSpot has four
-ways to get data into the cluster:</p>
+sourced from different data sources and joined together. ThoughtSpot has several approaches
+for getting data into the cluster.</p>
 
 <p><img src="/5.2/images/DataCaching.png" alt="" /></p>
 
+<h2 id="jdbc-and-odbc-drivers">JDBC and ODBC Drivers</h2>
 <p>ThoughtSpot provides a JDBC and ODBC driver that can be used to write data to
 ThoughtSpot. This is useful for customers who already have an existing
-ETL process or tool and want to extend it to populate the ThoughtSpot cache.</p>
+ETL process or tool, and want to extend it to populate the ThoughtSpot cache.</p>
 
-<p>Data Connect is a ThoughtSpot add-on that connects to a wide variety of data
-sources and pulls data into ThoughtSpot.</p>
+<p>JDBC and ODBC drivers are appropriate under the following circumstances:</p>
+<ul>
+<li>have an ETL load, such as Informatica, SSIS, and so on</li>
+<li>have available resources to create and manage ETL</li>
+<li>have smaller daily loads</li>
+</ul>
 
+<h2 id="tsload">tsload</h2>
 <p>You can use the <code class="highlighter-rouge">tsload</code> command line tool to bulk load delimited data with very
 high throughput. Finally, individual users can upload smaller (&lt; 50MB)
 spreadsheets or delimited files.</p>
 
-<p>Which approach you use depends on your environment and data needs.</p>
+<p>We recommend the tsload approach in the following cases:</p>
+<ul>
+<li>initial data load</li>
+<li>JDBC or ODBC drivers are not available</li>
+<li>there are large recurring daily loads</li>
+<li>for higher throughput; this can add I/O costs</li>
+</ul>
 
-<p>The following table shows the tradeoffs between different data caching options.
-Many implementations use a variety of approaches. For example, a solution with a
+<h2 id="choosing-a-data-caching-strategy">Choosing a Data Caching Strategy</h2>
+
+<p>The approach you choose depends on your environment and data needs. There are, of course, tradeoffs between different data caching options.</p>
+
+<p>Many implementations use a variety of approaches. For example, a solution with a
 large amount of initial data and smaller daily increments might use tsload to
-load the initial data and then use the JDBC driver with an ETL tool for
+load the initial data, and then use the JDBC driver with an ETL tool for
 incremental loads.</p>
-
-<table>
-  <tr>
-    <th>JDBC/ODBC</th>
-    <th>Data Connect</th>
-    <th>tsload</th>
-  </tr>
-  <tr>
-    <td>
-    <ul>
-    <li>Have an ETL load, for example, Informatica, SSIS, and so forth.</li>
-    <li>Have available resources to create and manage ETL.</li>
-    <li>Have smaller daily loads.</li>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li>Purchased as an add-on.</li>
-    <li>Source data is well formed for ThoughtSpot or it can be modified prior to being loaded.</li>
-    <li>Have smaller daily loads.</li>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li>Initial data load.</li>
-    <li>When JDBC/ODBC and Data Connect are not options.</li>
-    <li>When there are large recurring daily loads.</li>
-    <li>Higher throughput but can add I/O costs.</li>
-    </ul>
-    </td>
-  </tr>
-</table>
 
   <div class="tags">
     <div style="float:right;">
@@ -3202,7 +3185,7 @@ incremental loads.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 27, 2019 <br />
+        Generated: Jun 29, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>

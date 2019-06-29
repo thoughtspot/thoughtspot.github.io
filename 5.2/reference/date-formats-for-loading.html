@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Date and time formats reference”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
-<meta property="og:description" content="This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
+<meta name="description" content="This is a reference for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
+<meta property="og:description" content="This is a reference for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-06-27T13:58:09-07:00" />
+<meta property="article:published_time" content="2019-06-29T11:14:09-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html"},"url":"https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html","headline":"[“Date and time formats reference”]","dateModified":"2019-06-27T13:58:09-07:00","datePublished":"2019-06-27T13:58:09-07:00","description":"This is a references for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html"},"url":"https://docs.thoughtspot.com/5.2/reference/date-formats-for-loading.html","headline":"[“Date and time formats reference”]","dateModified":"2019-06-29T11:14:09-07:00","datePublished":"2019-06-29T11:14:09-07:00","description":"This is a reference for the date and time contexts and formats you can use with ThoughtSpot. You define data formats in specific contexts and, depending on the context, your choices in data formatting differ. You must understand date and time when you load data in these contexts:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1268,7 +1268,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/admin/setup/set-custom-calendar.html">Set up a fiscal calendar year</a></li>
+                          <li><a href="/5.2/admin/setup/set-custom-calendar.html">Set up a custom calendar</a></li>
                       
                    
                 
@@ -3119,7 +3119,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This is a references for the date and time contexts and formats you can use with
+  <p>This is a reference for the date and time contexts and formats you can use with
 ThoughtSpot. You define data formats in specific contexts and, depending on the
 context, your choices in data formatting differ. You must understand date  and
 time when you load data in these contexts:</p>
@@ -3127,7 +3127,7 @@ time when you load data in these contexts:</p>
 <ul>
   <li>using data upload from the browser</li>
   <li>through <code class="highlighter-rouge">tsload</code> command</li>
-  <li>through data connect or another extract, transform, load (ETL) tool</li>
+  <li>through an extract, transform, load (ETL) tool</li>
 </ul>
 
 <p>Data loading formats do not change how data is displayed in tables and charts.</p>
@@ -3135,13 +3135,13 @@ time when you load data in these contexts:</p>
 <p>The context where you <em>can control</em> date and time formats is data modeling. Data
 modeling controls how data is displayed in search and their resulting answers.</p>
 
-<h2 id="data-loading-formats-via-tsload">Data loading formats via tsload</h2>
+<h2 id="data-loading-formats-through-tsload">Data loading formats through tsload</h2>
 
 <p>When loading via the <code class="highlighter-rouge">tsload</code> command you must specify <code class="highlighter-rouge">date</code> and <code class="highlighter-rouge">timestamp</code>
 formats using the format specifications defined in the <a href="http://man7.org/linux/man-pages/man3/strptime.3.html"><code class="highlighter-rouge">strptime</code> library function</a>. Data is
 imported based on the timezone of the node from which <code class="highlighter-rouge">tsload</code> is run.</p>
 
-<p>For <code class="highlighter-rouge">date</code> data types, the default format is <code class="highlighter-rouge">%Y%m%d</code> which translates to
+<p>For <code class="highlighter-rouge">date</code> data types, the default format is <code class="highlighter-rouge">%Y%m%d</code>, which translates to
 <code class="highlighter-rouge">yearmonthday</code>  For example, <code class="highlighter-rouge">Dec 30th, 2001</code> is represented as <code class="highlighter-rouge">20011230</code>.  For
 <code class="highlighter-rouge">time</code> and <code class="highlighter-rouge">datetime</code> data types, the default is <code class="highlighter-rouge">%Y%m%d %H:%M:%S</code> which
 translates to <code class="highlighter-rouge">yearmonthday hour:minute:second</code>, for example, <code class="highlighter-rouge">Dec 30th, 2001
@@ -3204,13 +3204,12 @@ that fits your data best:</p>
   <li>10:32:22.000 AM</li>
 </ul>
 
-<h2 id="data-loading-formats-via-data-connect-or-another-etl-tool">Data loading formats via data connect or another ETL tool</h2>
+<h2 id="data-loading-formats-through-an-etl-tool">Data loading formats through an ETL tool</h2>
 
-<p>Data that is loaded via ETL arrives through ODBC or JDBC connection. After you
-extract the data from the source and before you load it into ThoughtSpot, you
-must transform any date or timestamp into a valid format for ThoughtSpot. Once
-transformed, no explicit data masking is required. See the data integration
-guide for more details of loading data via ODBC and JDBC.</p>
+<p>Data loads through ETL uses ODBC or JDBC connections. After you
+extract the data from the source but before you load it into ThoughtSpot, you
+must transform any date or timestamp columns into a format that is valid for ThoughtSpot. After the data transformation completes, there is no requirement for explicit data masking. See the data integration
+guide for more information on loading data through ODBC and JDBC.</p>
 
 <h2 id="data-modeling-formats">Data modeling formats</h2>
 
@@ -3355,7 +3354,7 @@ limited to:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 27, 2019 <br />
+        Generated: Jun 29, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
