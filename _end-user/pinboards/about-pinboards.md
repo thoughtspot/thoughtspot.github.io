@@ -1,7 +1,7 @@
 ---
 title: [Basic pinboard usage]
 keywords: tbd
-last_updated: tbd
+last_updated: 6/30/2019
 summary: "Create a new pinboard to group and manage related search results. Pinboards are the ThoughtSpot term for a dashboard."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -77,3 +77,8 @@ This diagram displays active action areas on a pinboard.
 
 If you make a change to a pinboard, the system recognizes this and displays an alert message with a **Save
 changes** button at the top of the page. Click this button to make your changes permanent.
+
+## Related information
+
+[Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
+[Present a pinboard]({{ site.baseurl }}/pinboards/start-a-slideshow.html)
