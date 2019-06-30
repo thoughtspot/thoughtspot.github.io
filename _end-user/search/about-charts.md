@@ -28,18 +28,28 @@ To change the chart type of your answer:
 
    ![]({{ site.baseurl }}/images/chart_type_icons.png "ThoughtSpot chart types")
 
-**Note:** Some chart types may be unavailable for you to select depending on the columns in your search. For example, if your search does not contain at least one geographical column then you will not be able to select any of the geo chart types. Unavailable chart types are grayed out. Hovering over one will tell you what columns are needed before you can choose it.
+# # Choosing a chart ##
+
+**Note:** Some chart types may not be unavailable, depending on the columns in your search. For example, if your search does not contain at least one geographical column, then you will not be able to select any of the geo chart types. ThoughtSpot show unavailable chart types as grayed out.
+
+Hovering over a chart type icon tell you what columns you require before you can use it.
 
 -   **[Column charts]({{ site.baseurl }}/end-user/search/about-column-charts.html)**  
-The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not, the column chart will be chosen as your default chart type.
+The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. The column chart is often the chosen default chart type, and displayes data as vertical columns.
+-  **Stacked columns**
+The stacked column combines the different secondary dimensions into a single column, stacking them. Note that the dimensions retain their relative size and color.
 -   **[Bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html)**  
-The bar chart is very similar to the column chart. The only difference is that it is oriented the other way.
+The bar chart is nearly identical to the column chart. The primary difference is that it displays data as horizontal bars.
+-  **Stacked bar**
+Just like stacked columns, stacked bars combine the different secondary dimensions into a single stacked bar.
 -   **[Line charts]({{ site.baseurl }}/end-user/search/about-line-charts.html)**  
 Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not the line chart will be chosen as your default chart type.
 -   **[Pie charts]({{ site.baseurl }}/end-user/search/pie-charts.html)**  
 The pie chart is a classic chart type that displays your search in a circle. The pie chart ThoughtSpot shows is in the shape of a doughnut.
 -   **[Area charts]({{ site.baseurl }}/end-user/search/area-charts.html)**  
 The area chart is based on the line chart, but has filled in regions.
+-   **Stacked area**
+This option stacks the values of one dimension on top of the other, enabling you to clearly see the relative volume of data under the line. Contrast this with the presentation in the area chart, where data for different overlaps.
 -   **[Scatter charts]({{ site.baseurl }}/end-user/search/about-scatter-charts.html)**  
 The scatter chart is useful for finding correlations or outliers in your data.
 -   **[Bubble charts]({{ site.baseurl }}/end-user/search/about-bubble-charts.html)**  
@@ -56,12 +66,16 @@ The heatmap chart displays individual data values in a matrix following a color 
 The line column chart combines the column and line charts.
 -   **[Funnel charts]({{ site.baseurl }}/end-user/search/about-funnel-charts.html)**  
 The funnel chart shows a process with progressively decreasing proportions amounting to 100 percent in total.
--   **[About geo charts]({{ site.baseurl }}/end-user/search/about-geo-charts.html)**  
-There are three geo charts that let you visualize geographical data in ThoughtSpot.
--   **[About sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)**  
-Sankey charts show a flow from one set of values to another, usually with visual emphasis (brighter colors or larger bandwidths) for comparison of the values (e.g., top cities in terms of sales might be emphasized).
--   **[About pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)**  
+-   **[Geo charts]({{ site.baseurl }}/end-user/search/about-geo-charts.html)**  
+There are three geo charts that let you visualize geographical data in ThoughtSpot: Area, Bubble, and Heatmap.
+-   **[Pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)**  
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.
+-   **[Sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)**  
+Sankey charts show a flow from one set of values to another, usually with visual emphasis (brighter colors or larger bandwidths) for comparison of the values (e.g., top cities in terms of sales might be emphasized).
+-   **[ ]Radar charts]({{ site.baseurl }}/end-user/search/about-radar-charts.html)**
+Radar charts display multivariate data on a two-dimensional chart of three or more quantitative variables that plot on axes (spokes) that originate at the same point.
+-   **Candlestick charts**
+Candlestick charts efficiently collapse financial information, such as price movements on a single day, into a unified representation.
 
 ## Charts with multiple measures on the y-axis
 
