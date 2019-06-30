@@ -77,3 +77,8 @@ This diagram displays active action areas on a pinboard.
 
 If you make a change to a pinboard, the system recognizes this and displays an alert message with a **Save
 changes** button at the top of the page. Click this button to make your changes permanent.
+
+## Related information
+
+[Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
+[Present a pinboard]({{ site.baseurl }}/pinboards/start-a-slideshow.html)
