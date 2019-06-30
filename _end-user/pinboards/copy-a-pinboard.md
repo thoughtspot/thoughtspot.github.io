@@ -5,7 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can make a copy of a pinboard if you would like to make edits without changing the original pinboard. Making a copy of a pinboard allows you to make your own edits without overwriting the original. When saving a copy, you can type in a new name.
+You can make a copy of a pinboard if you would plan to make edits without overwriting the original pinboard.  When you save a copy, you can use a new pinboard name.
 
 1. Click **Pinboards**, on the top navigation bar.
 

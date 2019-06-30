@@ -307,6 +307,9 @@ entries:
         - title: Start a slideshow
           url: /end-user/pinboards/start-a-slideshow.html
           output: web,ugBk
+        - title: Download as PDF
+          url: /end-user/pinboards/download-pinboard-pdf.html
+          output: web,ugBk
     - levelTwoTitle: Use custom R scripts
       output: web,ugBk
       levelTwoItems:
