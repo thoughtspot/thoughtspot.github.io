@@ -97,15 +97,15 @@ If you have data in .csv format stored in an AWS bucket, you can load it directl
 
     * AWS S3 region
 
-      **Note:** You must use your Amazon S3 **Region** rather than **Region Name**. For example, if your Region Name is **US West (N. California)** you would use the Region: **us-west-1**. For a list of AWS S3 regions, refer to <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">AWS Regions and Endpoints.</a>
+      **Note:** You must use your Amazon S3 **Region** rather than **Region Name**. For example, if your Region Name is **US West (N. California)** you would use the Region: **us-west-1**. For a list of AWS S3 regions, refer to <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank">AWS Regions and Endpoints.</a>
 
     * AWS S3 credentials (accesskey;secret_key)
 
     * AWS S3 root (prefix for S3 object search path)
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
-    * `--aws_s3_bucket "<bucket name>"` <br>
-    * `--aws_s3_region_name "<region name>"` <br>
+    * `--aws_s3_bucket_name "<bucket name>"` <br>
+    * `--aws_s3_region "<region name>"` <br>
     * `--aws_s3_credentials "<credentials>"` <br>
     * `--aws_s3_root "<search path>"`
 
