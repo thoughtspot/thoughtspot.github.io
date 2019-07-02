@@ -28,9 +28,9 @@ To change the chart type of your answer:
 
    ![]({{ site.baseurl }}/images/chart_type_icons.png "ThoughtSpot chart types")
 
-# # Choosing a chart ##
+## Choosing a chart ##
 
-**Note:** Some chart types may not be unavailable, depending on the columns in your search. For example, if your search does not contain at least one geographical column, then you will not be able to select any of the geo chart types. ThoughtSpot show unavailable chart types as grayed out.
+**Note:** Some chart types may not be available, depending on the columns in your search. For example, if your search does not contain at least one geographical column, then you will not be able to select any of the geo chart types. ThoughtSpot shows unavailable chart types as grayed out.
 
 Hovering over a chart type icon tell you what columns you require before you can use it.
 
