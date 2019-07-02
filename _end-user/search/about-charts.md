@@ -36,11 +36,11 @@ Hovering over a chart type icon tell you what columns you require before you can
 
 -   **[Column charts]({{ site.baseurl }}/end-user/search/about-column-charts.html)**  
 The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. The column chart is often the chosen default chart type, and displays data as vertical columns.
--  **[Stacked columns] ({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**
+-  **[Stacked columns]({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**
 The stacked column combines the different secondary dimensions into a single column, stacking them. Note that the dimensions retain their relative size and color.
 -   **[Bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html)**  
 The bar chart is nearly identical to the column chart. The primary difference is that it displays data as horizontal bars.
--  **[Stacked bar charts] ({{ site.baseurl }}/end-user/search/about-bar-charts.html#stacked-bar-charts)**
+-  **[Stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html#stacked-bar-charts)**
 Just like stacked columns, stacked bars combine the different secondary dimensions into a single stacked bar.
 -   **[Line charts]({{ site.baseurl }}/end-user/search/about-line-charts.html)**  
 Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not the line chart will be chosen as your default chart type.
