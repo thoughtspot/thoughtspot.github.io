@@ -1,11 +1,12 @@
 ---
 title: [Pie charts]
-keywords: tbd
-last_updated: tbd
+keywords: pie, chart, visualization, proportional
+last_updated: 07-01-2019
+summary: "A pie (or a circle) chart is a statistical graphic that divides data into slices to illustrate numerical proportion. In a pie chart, the arc length of a slice is proportional to the quantity it represents."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The pie chart is a classic chart type that displays your search in a circle. The pie chart ThoughtSpot shows is in the shape of a doughnut.
+The pie chart is a classic chart type that displays your search in a circle. The default pie chart in ThoughtSpot displays data in the shape of a doughnut, or a thick ring.
 
 ## How pie charts divide data
 
@@ -24,11 +25,11 @@ To see a pie in pie chart, assign two different measures to the y-axis under **C
  ![]({{ site.baseurl }}/images/pie_in_pie_chart_example.png "Pie in pie chart example")
 
 ## Color customization of pie in pie charts
-You can customize the colors of each pie in a pie chart using the Style widget. 
+You can customize the colors of each pie in a pie chart using the Style widget.
 
 1. Choose a pinboard that has a pie chart.
-2. Click the **Edit chart style** (paintbrush icon) to open the Style widget. 
-3. From the Style widget, assign a color of your choice to each pie as listed in the widget. 
+2. Click the **Edit chart style** (paintbrush icon) to open the Style widget.
+3. From the Style widget, assign a color of your choice to each pie as listed in the widget.
 4. Click **…** and choose **Update** to save the changes.
 5. Click **Close**.
 6. Optionally, you can click **Reset** to use the default color.

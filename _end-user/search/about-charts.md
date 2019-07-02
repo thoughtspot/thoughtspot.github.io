@@ -72,10 +72,10 @@ There are three geo charts that let you visualize geographical data in ThoughtSp
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.
 -   **[Sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)**  
 Sankey charts show a flow from one set of values to another, usually with visual emphasis (brighter colors or larger bandwidths) for comparison of the values (e.g., top cities in terms of sales might be emphasized).
--   **[ ]Radar charts]({{ site.baseurl }}/end-user/search/about-radar-charts.html)**
+-   **[Radar charts]({{ site.baseurl }}/end-user/search/about-radar-charts.html)**
 Radar charts display multivariate data on a two-dimensional chart of three or more quantitative variables that plot on axes (spokes) that originate at the same point.
--   **Candlestick charts**
-Candlestick charts efficiently collapse financial information, such as price movements on a single day, into a unified representation.
+-   **[Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html)**
+Candlestick charts efficiently collapse financial information, such as price movements on a single day, into a unified representation. A single 'candlestick' shows the _open_, _high_, _low_, and _close_ prices.
 
 ## Charts with multiple measures on the y-axis
 

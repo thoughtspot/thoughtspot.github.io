@@ -13,8 +13,7 @@ the bar is proportional to the data value.
 
  ![]({{ site.baseurl }}/images/bar_chart_example.png "Bar chart example")
 
-Your search needs at least one attribute and one measure to be represented as a
-bar chart.
+Your search needs at least one attribute and one measure to be represented as a bar chart.
 
 ## Stacked bar charts
 
@@ -22,8 +21,7 @@ The stacked bar chart is similar to the bar chart, but with one major difference
 
 Stacked bar charts are typically used when you want to compare aggregated
 data and the data that it includes together. You can toggle the options in
-styles to show Detailed Labels (summaries for each section of each bar) and
-Total Labels (show the sum of the stacks for each bar).
+styles to show Detailed Labels (summaries for each section of each bar) and Total Labels (show the sum of the stacks for each bar).
 
 ![]({{ site.baseurl }}/images/bar_chart_example_stacked_labels.png "Stacked bar chart example")
 

@@ -205,6 +205,9 @@ entries:
         - title: Radar Charts
           url: /end-user/search/about-radar-charts.html
           output: web,ugBk
+        - title: Candlestick Charts
+          url: /end-user/search/candlestick-charts.html
+          output: web,ugBk
       - levelThreeTitle: Changing a chart
         output: web,ugBk
         levelThreeItems:
