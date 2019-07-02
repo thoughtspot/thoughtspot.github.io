@@ -31,53 +31,68 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a href="#profile" data-toggle="tab">Using UI</a></li>
-    <li><a href="#about" data-toggle="tab">Using tscli</a></li>
-</ul>
-<div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="profile">
-    <h2>Using UI</h2>
-<p>Vishal ka Managment Portal</p>
-</div>
+### Using Management Portal
+To install and configure the SSL certificate using the admin UI:
 
-<div role="tabpanel" class="tab-pane" id="about">
-    <h2>Using tscli</h2>
-    <p>
-    To install the SSL certificate:
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** icon on the top navigation bar.
 
-    <ul>
-    <li>Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.</li>
-    <li>Copy the certificate and key files to ThoughtSpot:
-<p><code>$ scp <key> <certificate> admin@<IP_address>:<path></code>
-          </p>
-    <li>Log in to the Linux shell using SSH.</li>
-<li>Change directories to where you copied the certificate:
-<p><code>$ cd <path></code>
-          </p>
+   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+
+   This opens the ThoughtSpot Management Portal.
+3. Click **Configure** icon on the top navigation bar.
+
+   **image**
+
+4. In the Configure panel, click **SSL** and then  **Configure** option.
+
+   **image**  
 
 
-    5. Issue the `tscli` command to install the certificate:
 
-        ```
-        $ tscli ssl add-cert <key> <certificate>
-        ```
+5. Enter the SSL details:
 
-    6. To test that the certificate was installed correctly, [Log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
+   **image**
 
-         You should see that the application's URL begins with `https://`.
-    </p></div>
+   <table>
+   <colgroup>
+   <col width="20%" />
+   <col width="80%" />
+   </colgroup>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th>SSL Status</th>
+      <td>Enable the SSL.</td>
+    </tr>
+    <tr>
+      <th>Algorithm</th>
+      <td>Choose the algorithm as RSA.</td>
+    </tr>
+    <tr>
+      <th>Minimum TLS Version</th>
+      <td>Set the recommended TLS version as TLS v1.2.</td>
+    </tr>
+    <tr>
+      <th>Private Key</th>
+      <td>Browse and copy the private key to ThoughtSpot.</td>
+    </tr>
+    <tr>
+      <th>Public Certificate</th>
+      <td>Browsw and copy the public cert to ThoughtSpot.
+      </td>
+    </tr>
+   </table>
 
-</div>
+6. Click **Save** to configure the SSL.
 
-This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
 
--   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
--   The private key in compatible .PEM format. It should not be password/passphrase protected.
 
-**_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
+### Using tscli
 
-To install the SSL certificate:
+Below are the instructions to install the SSL certificate using tscli:
 
 1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
 2. Copy the certificate and key files to ThoughtSpot:
@@ -103,7 +118,7 @@ To install the SSL certificate:
 
      You should see that the application's URL begins with `https://`.
 
-## Set the recommended TLS version
+#### Set the recommended TLS version
 
 There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
 
@@ -121,7 +136,7 @@ ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.
 
     This will block all usage of older versions.
 
-## Supported SSL ciphers
+#### Supported SSL ciphers
 The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
