@@ -80,7 +80,7 @@ To use a custom calendar, do the following:
 
 3. Under COLUMN NAME, find a column where you want to use your custom calendar and scroll right until you see the CALENDAR TYPE column.
 
-    {% include note.html content="The column must use the DATE data type." %}
+    {% include note.html content="The column must use the DATE or DATETIME data type." %}
 
 4. In the CALENDAR TYPE column for the column you chose, double-click the existing calendar name, and then select your custom calendar.
 
