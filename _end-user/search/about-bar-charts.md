@@ -15,7 +15,7 @@ the bar is proportional to the data value.
 
 Your search needs at least one attribute and one measure to be represented as a bar chart.
 
-## Stacked bar charts
+## Stacked bar charts {#stacked-bar-charts}
 
 The stacked bar chart is similar to the bar chart, but with one major difference. It includes a legend, which divides each bar into additional sections by color.
 
