@@ -1,19 +1,19 @@
 ---
-title: [Spiderweb charts]
+title: [Radar charts; spiderweb charts]
 keywords: spiderweb,multivariate
 last_updated: tbd
-summary: "The Spiderweb chart is a radar chart that contains both columns and a special type of line chart.
+summary: "The Radar (or spiderweb) chart contains both columns and a special type of line chart.
 "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 A Spiderweb chart displays data in the form of a two-dimensional chart of three
-or more qualities represented on axes starting from the same point. This is a
-good chart to use when, for example, you have asked users to rank an experience
+or more qualities, represented on axes starting from the same point. This is a
+good chart to use when you have asked users to rank an experience
 or product. You can use a spiderweb chart to examine the relative values for a
-single data point.  You can also use it to locate outliers.
+single data point. You can also use it to locate outliers.
 
-When you build a Spiderweb chart you need to provide at least 3 (three)
+When you build a Spiderweb chart you must provide at least 3 (three)
 attributes and one measure. The measure values move from smallest to the outer
 edge of the web. Each spoke of the web is reserved for one of the variables. The
 points where each value lies on the web are connected.

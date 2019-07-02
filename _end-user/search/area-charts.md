@@ -15,7 +15,7 @@ Area charts display quantitative data graphically. The area between the x-axis a
 
 Your search needs at least one attribute and one measure to be represented as an area chart.
 
-## Stacked area charts
+## Stacked area charts {#stacked-area-charts}
 
 The stacked area chart is an area chart with an attribute in the legend, which divides the area into layers.
 

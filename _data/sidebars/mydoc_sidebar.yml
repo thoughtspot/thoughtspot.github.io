@@ -196,11 +196,17 @@ entries:
         - title: Geo charts
           url: /end-user/search/about-geo-charts.html
           output: web,ugBk
+        - title: Pivot table
+          url: /complex-search/about-pivoting-a-table.html
+          output: web,ugBk
         - title: Sankey charts
           url: /end-user/search/about-sankey-charts.html
           output: web,ugBk
-        - title: Pivot table
-          url: /complex-search/about-pivoting-a-table.html
+        - title: Radar Charts
+          url: /end-user/search/about-radar-charts.html
+          output: web,ugBk
+        - title: Candlestick Charts
+          url: /end-user/search/candlestick-charts.html
           output: web,ugBk
       - levelThreeTitle: Changing a chart
         output: web,ugBk

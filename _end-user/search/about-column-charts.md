@@ -14,11 +14,10 @@ Column charts are vertical bar charts that display your data using rectangular b
 
 Your search needs at least one attribute and one measure to be represented as a column chart.
 
-## Stacked column charts
+## Stacked column charts {#stacked-columns}
 
 The stacked column chart is similar to the column chart, but with one major
-difference. It includes a legend, which divides each column into additional
-sections by color.
+difference. It includes a legend, which divides each column into additional sections, by color.
 
 Stacked column charts are typically used when you want to compare aggregated
 data and the data that it includes together. You can toggle the options in
