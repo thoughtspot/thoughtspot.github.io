@@ -25,9 +25,12 @@ Candlestick charts have a very specific approach to representing data:
   ![]({{ site.baseurl }}/images/candlestick_components.png "Components of a Candlestick chart"){: .image-left }
 
 * The _High_ and _Low_ values plot at the top and bottom of the candlestick.
+
 * The _Open_ and _Close_ positions vary, depending on the relative values of the price at opening and closing of the trading day.
+
 * The height of the rectangle depends on the difference between the _Open_ and _Close_ prices, and does not indicate the volume of trades.
-* The 'wick' that extends upwards from the rectangle indicates the difference between the highest of [_Open_ | _Close_] and highest traded value, _High_. Similarly for the extension downwards from the lowest of [_Open_ | _Close_] and the lowest traded value, _Low_.
+
+* The 'wick' that extends upwards from the rectangle indicates the difference between the highest of _Open_ or _Close_, and highest traded value (_High_). Similarly for the extension downwards from the lowest of _Open_ or _Close_, and the lowest traded value (_Low_).
 
 * Your search must start with the four mandatory measures. Additionally, it must have a periodicity, such as `daily`. The search question has to be in the following form:
   ```
@@ -35,10 +38,12 @@ Candlestick charts have a very specific approach to representing data:
   ```
   The order of these measurements is critical to correctly generate the candlestick chart.
 
+  ![]({{ site.baseurl }}/images/candlestick_increase_decrease.png "Increasing and Decreasing Candlesticks"){: .image-left }
+
 * The candlestick chart does not show the volume of trades. However, the longer body of the candle generally correlates with the intensity of trading.
 
-  ![]({{ site.baseurl }}/images/candlestick_increase_decrease.png "Increasing and Decreasing Candlesticks"){: .image-left }
 * When the rectangle is green and high relative to other time periods, this is an indicator that the market for the financial instrument is very bullish, with a likely "buy" recommendation.
+
 * Alternatively, the red rectangles mean that the price is decreasing, and this pattern over time describes a bearish "sell" market for the instrument.
 
 ## Interpreting candlestick charts

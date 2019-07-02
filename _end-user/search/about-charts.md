@@ -35,7 +35,7 @@ To change the chart type of your answer:
 Hovering over a chart type icon tell you what columns you require before you can use it.
 
 -   **[Column charts]({{ site.baseurl }}/end-user/search/about-column-charts.html)**  
-The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. The column chart is often the chosen default chart type, and displayes data as vertical columns.
+The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. The column chart is often the chosen default chart type, and displays data as vertical columns.
 -  **[Stacked columns] ({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**
 The stacked column combines the different secondary dimensions into a single column, stacking them. Note that the dimensions retain their relative size and color.
 -   **[Bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html)**  
