@@ -50,7 +50,6 @@ Example calendar with the fiscal year beginning on April 1:
 
       ![]({{ site.baseurl }}/images/custom_cal.png)
 
-
 2. Save your calendar as a .csv file.
 
    Example: `my-calendar.csv`
