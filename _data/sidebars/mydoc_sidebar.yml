@@ -1323,7 +1323,7 @@ entries:
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGD
-    - title: Error codes reference
+    - title: Error code reference
       url: /error-codes/error-codes-reference.html
       output: web,refGdAdmin
     - title: Frequently asked questions
