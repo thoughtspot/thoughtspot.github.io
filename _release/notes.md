@@ -9,9 +9,10 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.1.3 is now available. These release notes include information about new features,
+ThoughtSpot version 5.1.4 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [5.1.4 Fixed Issues](#514-fixed)
 * [5.1.3 Fixed Issues](#513-fixed)
 * [5.1.2 Fixed Issues](#512-fixed)
 * [5.1.1 New Features](#511-new)
@@ -22,16 +23,29 @@ fixed issues from the previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.1.3 release
+If you are running one of the following versions, you can upgrade to the 5.1.4 release
 directly:
 
-* 4.5.1.x to 5.1.3
-* 5.1.x to 5.1.3
+* 4.5.1.x to 5.1.4
+* 5.1.x to 5.1.4
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.1.3 release.
+First, upgrade to one of the above versions, and then to the 5.1.4 release.
+
+{: id="514-fixed"}
+## 5.1.4 Fixed Issues
+
+Misalignment between column names and values when viewing tables on iPad is now fixed (pending).
+
+An error that occurred when saving changes to the title of a visualization is now fixed.
+
+Corrupted metadata after upgrade which made some worksheets uneditable is now fixed.
+
+A problem with date filters in the Japanese locale is now fixed.
+
+An issue with refreshing materialization of views is now fixed.
 
 {: id="513-fixed"}
 ## 5.1.3 Fixed Issues
