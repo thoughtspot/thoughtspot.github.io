@@ -16,7 +16,7 @@ To schedule a pinboard:
 1. Sign in to ThoughtSpot from a browser.
 2. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 3. Select the pinboard you want to create a schedule for.
 4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.

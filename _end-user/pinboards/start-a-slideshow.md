@@ -14,7 +14,7 @@ To start a presentation, follow these steps:
 
 1. Click **Pinboards** on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. Select a pinboard from the list of pinboards by clicking on its title.
 
