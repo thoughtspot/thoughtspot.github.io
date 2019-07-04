@@ -70,7 +70,7 @@ To use the template as your custom calendar, some editing is required.
 
 3. Save your calendar as a .csv file so that there are no carriage returns (^M characters).
 
-      {% include note.html content="Carriage returns prevent you from adding your calendar into ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor and save it as a .csv with UNIX line breaks." %}
+      {% include note.html content="Carriage returns prevent you from adding your calendar into ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
 
 ### Add the custom calendar to your cluster
 
