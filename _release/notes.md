@@ -17,8 +17,12 @@ permalink: /:collection/:path.html
 
 <h2>Supported upgrade paths</h2>
 
+<p><br />If you are running clusters on 4.4.1.1 or 4.4.1.2, you should upgrade to release
+4.5.1.3 first and then to 4.5.1.X.</p>
+
 <p><br />If you are running clusters on 4.5.0 or 4.4.1.X, you can upgrade to release
 4.5.1.X directly. (This incudes any hotfixes or customer patches on these branches.)</p>
+
 
 <p>If you are running on 4.4.0 or earlier releases, direct upgrade of a cluster
 to 4.5.1.X is not supported. In this case, you need to do a multiple pass upgrade:</p>
