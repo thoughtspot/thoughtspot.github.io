@@ -37,11 +37,9 @@ First, upgrade to one of the above versions, and then to the 5.1.4 release.
 {: id="514-fixed"}
 ## 5.1.4 Fixed Issues
 
-Misalignment between column names and values when viewing tables on iPad is now fixed (pending).
-
 An error that occurred when saving changes to the title of a visualization is now fixed.
 
-Corrupted metadata after upgrade which made some worksheets uneditable is now fixed.
+An issue where some worksheets became uneditable after an upgrade, due to corrupted metadata, is now fixed.
 
 A problem with date filters in the Japanese locale is now fixed.
 
