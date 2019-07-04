@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 By default, ThoughtSpot's fiscal calendar begins on January 1st. If your company's
 calendar starts on a different date, you can use a custom calendar to ensure
-date searches in reflect your fiscal calendar.
+date searches in ThoughtSpot reflect your fiscal calendar.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 will also reflect the fiscal year you set here.
