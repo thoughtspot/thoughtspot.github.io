@@ -37,12 +37,12 @@ To generate a custom calendar template, do the following:
 
 2. Run the `tscli calendar generate` command using the following syntax:
 
-  `tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username <cluster_admin_username>`
+`tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username <cluster_admin_username>`
 
-  Example:
-  `tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
+Example:
+`tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
 
-  This generates a calendar template file in .csv format. In the above example: **my_calendar.csv**.
+This generates a calendar template file in .csv format. In the above example: **my_calendar.csv**.
 
 3. Exit your SSH session.
 
@@ -63,9 +63,8 @@ To use the template as your custom calendar, some editing is required.
   - (Optional) To enhance searchability, ThoughtSpot recommends adding a “Q” before each quarter number. Example: **Q1**. If adapting the calendar to different language, use the appropriate letter in place of "Q".
   - Make any other changes needed to the calendar (like translating months or days into a different language.)
 
- Example calendar with the fiscal year beginning on April 1:
-
-      ![]({{ site.baseurl }}/images/custom_cal.png)
+Example calendar with the fiscal year beginning on April 1:
+![]({{ site.baseurl }}/images/custom_cal.png)
 
 3. Save your calendar as a .csv file so that there are no carriage returns (^M characters).
 
