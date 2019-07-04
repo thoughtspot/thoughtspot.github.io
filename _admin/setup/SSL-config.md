@@ -7,7 +7,7 @@ summary: "SSL provides authentication and data security"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
+ThoughtSpot enables you to use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 
 ## About SSL
 Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you will need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.
@@ -40,11 +40,11 @@ To install and configure the SSL certificate using the admin UI:
    ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
 
    This opens the ThoughtSpot Management Portal.
-3. Click **Configure** icon on the top navigation bar.
+3. Click **Settings** icon on the top navigation bar.
 
    **image**
 
-4. In the Configure panel, click **SSL** and then  **Configure** option.
+4. In the Settings panel, click **SSL** and then  **Configure** option.
 
    **image**  
 
@@ -65,7 +65,7 @@ To install and configure the SSL certificate using the admin UI:
     </tr>
     <tr>
       <th>SSL Status</th>
-      <td>Enable the SSL.</td>
+      <td>Enable the SSL. If you want to disable the LDAP configuration, select Disable and exit the setup.</td>
     </tr>
     <tr>
       <th>Algorithm</th>
@@ -73,7 +73,7 @@ To install and configure the SSL certificate using the admin UI:
     </tr>
     <tr>
       <th>Minimum TLS Version</th>
-      <td>Set the recommended TLS version as TLS v1.2.</td>
+      <td>Set the recommended TLS version as TLS v1.2. <p><b>Note</b>: Choose SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.</p></td>
     </tr>
     <tr>
       <th>Private Key</th>
@@ -81,8 +81,7 @@ To install and configure the SSL certificate using the admin UI:
     </tr>
     <tr>
       <th>Public Certificate</th>
-      <td>Browsw and copy the public cert to ThoughtSpot.
-      </td>
+      <td>Browsw and copy the public cert to ThoughtSpot.</td>
     </tr>
    </table>
 
@@ -92,7 +91,7 @@ To install and configure the SSL certificate using the admin UI:
 
 ### Using tscli
 
-Below are the instructions to install the SSL certificate using tscli:
+Below are the instructions to install the SSL certificate using the tscli:
 
 1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
 2. Copy the certificate and key files to ThoughtSpot:
