@@ -9,9 +9,9 @@ permalink: /:collection/:path.html
 <p>ThoughtSpot version 4.5.1 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues.</p>
 <ul>
    <li><a href="notes.html#4-5-1-new-features-and-functionality ">4.5.1 New Features and Functionality</a></li>
-   <li><a href="notes.html#4-5-1-fixed-bugs">4.5.1 Fixed Ramdiskispreservedacrossclusterupgrades</a></li>
+   <li><a href="notes.html#4-5-1-fixed-issues">4.5.1 Fixed Issues</a></li>
    <li><a href="notes.html#4-5-new-features-and-functionality ">4.5 New Features and Functionality</a></li>
-   <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed Issues</a></li>
+   <li><a href="notes.html#4-5-fixed-issues">4.5 Fixed Issues</a></li>
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
 
