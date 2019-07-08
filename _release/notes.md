@@ -26,7 +26,7 @@ directly:
 
 <ol>
     <li>Upgrade your cluster to 4.4.1.3.</li>
-    <li>Upgrade from 4.4.1.3 to 4.5.1.X.</li>
+    <li>Upgrade from 4.4.1.3 to 4.5.1.x.</li>
 </ol>
 
 <h2>4.5.1 New Features and Functionality</h2>
