@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<p>We are&nbsp;happy to inform you that the latest version of ThoughtSpot is available with the release of the 4.5.1 version. Below is the features list and issues that are part of the 4.5.X release cycle.</p>
+<p>ThoughtSpot version 4.5.1 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues.</p>
 <ul>
    <li><a href="notes.html#4-5-1-new-features-and-functionality ">4.5.1 New Features and Functionality</a></li>
    <li><a href="notes.html#4-5-1-fixed-bugs">4.5.1 Fixed bugs</a></li>
@@ -15,17 +15,18 @@ permalink: /:collection/:path.html
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
 
-<h2>Supported upgrade paths</h2>
+<h2>Supported Upgrade Paths</h2>
 
-<p><br />If you are running clusters on 4.5.0 or 4.4.1.X, you can upgrade to release
-4.5.1.X directly. (This incudes any hotfixes or customer patches on these branches.)</p>
+If you are running the following version, you can upgrade to the 4.5.1.x release
+directly:
 
-<p>If you are running on 4.4.0 or earlier releases, direct upgrade of a cluster
-to 4.5.1.X is not supported. In this case, you need to do a multiple pass upgrade:</p>
+* 4.4.1.3 to 4.5.1.x
+
+<p>If you are running 4.4.1.2 or earlier, you must do a multiple pass upgrade:</p>
 
 <ol>
-    <li>Upgrade your cluster to the latest version of 4.4.1.X.</li>
-    <li>After successful completion of step 1, upgrade from 4.4.1.X to 4.5.1.X.</li>
+    <li>Upgrade your cluster to 4.4.1.3.</li>
+    <li>Upgrade from 4.4.1.3 to 4.5.1.X.</li>
 </ol>
 
 <h2>4.5.1 New Features and Functionality</h2>
@@ -97,7 +98,7 @@ and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How t
 </tr>
 </tbody>
 
-<h2>4.5.1 Fixed Bugs</h2>
+<h2>4.5.1 Fixed Issues</h2>
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
 </tr>
