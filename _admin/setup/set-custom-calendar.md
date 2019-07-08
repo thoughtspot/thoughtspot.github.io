@@ -10,34 +10,34 @@ calendar starts on a different date, you can use a custom calendar to ensure
 date searches in ThoughtSpot reflect your fiscal calendar.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
-will also reflect the fiscal year you set here.
+also reflect the fiscal year you set here.
 
 When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, will conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards that use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
+company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards tat use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
 
 ## Setting up a custom calendar
 
 To set up a custom calendar for your cluster, you must do the following:
 1. Enable the custom calendar feature.
-2. Generate a custom calendar template.
-3. Edit the custom calendar template.
+2. Generate a calendar template.
+3. Edit the calendar template.
 4. Add the custom calendar to your cluster.
 
 ### Enable the custom calendar feature
 
 To enable the custom calendar feature for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
-### Generate a custom calendar template
+### Generate a calendar template
 
-Using a custom calendar template as your starting point ensures that you use a format that is compatible with ThoughtSpot.
+Using a calendar template as your starting point ensures that you use a format that is compatible with ThoughtSpot.
 
-To generate a custom calendar template, do the following:
+To generate a calendar template, do the following:
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
 2. Run the `tscli calendar generate` command using the following syntax:
 
-      `tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username <cluster_admin_username>`
+      `tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username tsadmin`
 
       Example:
       `tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
@@ -46,9 +46,9 @@ To generate a custom calendar template, do the following:
 
 3. Exit your SSH session.
 
-### Edit the custom calendar template
+### Edit the calendar template
 
-To use the template as your custom calendar, some editing is required.
+To use the template you generated as your custom calendar, some editing is required.
 
 1. Download the .csv file to your computer using following syntax:
 
@@ -68,15 +68,17 @@ To use the template as your custom calendar, some editing is required.
     Example calendar with the fiscal year beginning on April 1:
     ![]({{ site.baseurl }}/images/custom_cal.png)
 
-3. Save your calendar as a .csv file so that there are no carriage returns (^M characters).
+3. Save your calendar template as a .csv file so that there are no carriage returns (^M characters).
 
-      {% include note.html content="Carriage returns prevent you from adding your calendar into ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
+      {% include note.html content="Carriage returns prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
 
 ### Add the custom calendar to your cluster
 
+To use your edited calendar template as a custom calendar, you must upload it to your cluster and use it to create a calendar in ThoughtSpot.
+
 1. Upload the .csv file to your ThoughtSpot cluster using the following syntax:
 
-      `scp /<Local directory on your computer>/<calendar_name>.csv admin@<cluster-ip-address>:/home/admin/`
+      `scp /<Local directory on your computer>/<calendar_template_name>.csv admin@<cluster-ip-address>:/home/admin/`
 
       Example (on Mac OS):
       `scp /Users/john.smith/Desktop/my_calendar.csv admin@172.18.144.217:/home/admin`
@@ -84,10 +86,10 @@ To use the template as your custom calendar, some editing is required.
 2. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
 3. Run the `tscli calendar create` command using the following syntax:
-   `tscli calendar create --file_path <file path of csv> --name <calendar name> --username <username>`
+   `tscli calendar create --file_path /home/admin/<calendar_template_name>.csv --name <calendar name> --username tsadmin`
 
    Example:
-   `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin`
+   `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username tsadmin`
 
 ### (Optional) Set a custom calendar as the default calendar for your cluster
 
@@ -95,7 +97,7 @@ To set your custom calendar as the default calendar for your cluster, contact [T
 
 ## Setting a worksheet, table or view to use your custom calendar
 
-If you don't set your custom calendar as the default for your cluster, you'll need to do the following to use your calendar:
+If you don't set your custom calendar as the default for your cluster, you must do the following to use your calendar:
 
 1. Sign in to your ThoughtSpot cluster and click **DATA**.
 
@@ -109,4 +111,4 @@ If you don't set your custom calendar as the default for your cluster, you'll ne
 
 5. Click **Save Changes**.
 
-  Now, date-related searches in the selected worksheet, table or view will use your custom calendar.
+  Now, date-related searches in the selected worksheet, table or view use your custom calendar.
