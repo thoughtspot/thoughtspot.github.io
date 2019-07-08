@@ -955,7 +955,7 @@ and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How t
 </tr>
 </tbody>
 
-<h2>Notes for older versions</h2>
+<h2>Notes for Older Versions</h2>
 <ul>
 <li><a href="{{"/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf" | prepend: site.url }}">4.4 Release Notes</a></li>
 <li><a href="{{"/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf" | prepend: site.url }}">4.2 Release Notes</a></li>
