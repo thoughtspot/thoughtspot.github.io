@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-04T08:18:24-07:00" />
+<meta property="article:published_time" content="2019-07-08T15:54:51-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a custom calendar”]","dateModified":"2019-07-04T08:18:24-07:00","datePublished":"2019-07-04T08:18:24-07:00","description":"By default, ThoughtSpot’s fiscal calendar begins on January 1st. If your company’s calendar starts on a different date, you can use a custom calendar to ensure date searches in ThoughtSpot reflect your fiscal calendar.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/set-custom-calendar.html","headline":"[“Set up a custom calendar”]","dateModified":"2019-07-08T15:54:51-07:00","datePublished":"2019-07-08T15:54:51-07:00","description":"By default, ThoughtSpot’s fiscal calendar begins on January 1st. If your company’s calendar starts on a different date, you can use a custom calendar to ensure date searches in ThoughtSpot reflect your fiscal calendar.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3124,18 +3124,18 @@ calendar starts on a different date, you can use a custom calendar to ensure
 date searches in ThoughtSpot reflect your fiscal calendar.</p>
 
 <p><a href="/5.2/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars">Date formulas with the <code class="highlighter-rouge">fiscal</code> option specified</a>
-will also reflect the fiscal year you set here.</p>
+also reflect the fiscal year you set here.</p>
 
 <p>When you create a custom calendar, you designate the month, day and year on which your
-company’s fiscal year begins and ends. When using your custom calendar, searches like <strong>this quarter</strong> or <strong>q3</strong>, will conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards that use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.</p>
+company’s fiscal year begins and ends. When using your custom calendar, searches like <strong>this quarter</strong> or <strong>q3</strong>, conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards tat use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.</p>
 
 <h2 id="setting-up-a-custom-calendar">Setting up a custom calendar</h2>
 
 <p>To set up a custom calendar for your cluster, you must do the following:</p>
 <ol>
   <li>Enable the custom calendar feature.</li>
-  <li>Generate a custom calendar template.</li>
-  <li>Edit the custom calendar template.</li>
+  <li>Generate a calendar template.</li>
+  <li>Edit the calendar template.</li>
   <li>Add the custom calendar to your cluster.</li>
 </ol>
 
@@ -3143,11 +3143,11 @@ company’s fiscal year begins and ends. When using your custom calendar, search
 
 <p>To enable the custom calendar feature for your cluster, contact <a href="/5.2/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
 
-<h3 id="generate-a-custom-calendar-template">Generate a custom calendar template</h3>
+<h3 id="generate-a-calendar-template">Generate a calendar template</h3>
 
-<p>Using a custom calendar template as your starting point ensures that you use a format that is compatible with ThoughtSpot.</p>
+<p>Using a calendar template as your starting point ensures that you use a format that is compatible with ThoughtSpot.</p>
 
-<p>To generate a custom calendar template, do the following:</p>
+<p>To generate a calendar template, do the following:</p>
 
 <ol>
   <li>
@@ -3156,7 +3156,7 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   <li>
     <p>Run the <code class="highlighter-rouge">tscli calendar generate</code> command using the following syntax:</p>
 
-    <p><code class="highlighter-rouge">tscli calendar generate --name &lt;calendar_name&gt; --start_date &lt;MM/DD/YYYY&gt; --end_date &lt;MM/DD/YYYY&gt; --username &lt;cluster_admin_username&gt;</code></p>
+    <p><code class="highlighter-rouge">tscli calendar generate --name &lt;calendar_name&gt; --start_date &lt;MM/DD/YYYY&gt; --end_date &lt;MM/DD/YYYY&gt; --username tsadmin</code></p>
 
     <p>Example:
    <code class="highlighter-rouge">tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin</code></p>
@@ -3168,9 +3168,9 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   </li>
 </ol>
 
-<h3 id="edit-the-custom-calendar-template">Edit the custom calendar template</h3>
+<h3 id="edit-the-calendar-template">Edit the calendar template</h3>
 
-<p>To use the template as your custom calendar, some editing is required.</p>
+<p>To use the template you generated as your custom calendar, some editing is required.</p>
 
 <ol>
   <li>
@@ -3197,19 +3197,21 @@ company’s fiscal year begins and ends. When using your custom calendar, search
  <img src="/5.2/images/custom_cal.png" alt="" /></p>
   </li>
   <li>
-    <p>Save your calendar as a .csv file so that there are no carriage returns (^M characters).</p>
+    <p>Save your calendar template as a .csv file so that there are no carriage returns (^M characters).</p>
 
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Carriage returns prevent you from adding your calendar into ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks.</div>
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Carriage returns prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks.</div>
   </li>
 </ol>
 
 <h3 id="add-the-custom-calendar-to-your-cluster">Add the custom calendar to your cluster</h3>
 
+<p>To use your edited calendar template as a custom calendar, you must upload it to your cluster and use it to create a calendar in ThoughtSpot.</p>
+
 <ol>
   <li>
     <p>Upload the .csv file to your ThoughtSpot cluster using the following syntax:</p>
 
-    <p><code class="highlighter-rouge">scp /&lt;Local directory on your computer&gt;/&lt;calendar_name&gt;.csv admin@&lt;cluster-ip-address&gt;:/home/admin/</code></p>
+    <p><code class="highlighter-rouge">scp /&lt;Local directory on your computer&gt;/&lt;calendar_template_name&gt;.csv admin@&lt;cluster-ip-address&gt;:/home/admin/</code></p>
 
     <p>Example (on Mac OS):
    <code class="highlighter-rouge">scp /Users/john.smith/Desktop/my_calendar.csv admin@172.18.144.217:/home/admin</code></p>
@@ -3219,10 +3221,10 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   </li>
   <li>
     <p>Run the <code class="highlighter-rouge">tscli calendar create</code> command using the following syntax:
-<code class="highlighter-rouge">tscli calendar create --file_path &lt;file path of csv&gt; --name &lt;calendar name&gt; --username &lt;username&gt;</code></p>
+<code class="highlighter-rouge">tscli calendar create --file_path /home/admin/&lt;calendar_template_name&gt;.csv --name &lt;calendar name&gt; --username tsadmin</code></p>
 
     <p>Example:
-<code class="highlighter-rouge">tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin</code></p>
+<code class="highlighter-rouge">tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username tsadmin</code></p>
   </li>
 </ol>
 
@@ -3232,7 +3234,7 @@ company’s fiscal year begins and ends. When using your custom calendar, search
 
 <h2 id="setting-a-worksheet-table-or-view-to-use-your-custom-calendar">Setting a worksheet, table or view to use your custom calendar</h2>
 
-<p>If you don’t set your custom calendar as the default for your cluster, you’ll need to do the following to use your calendar:</p>
+<p>If you don’t set your custom calendar as the default for your cluster, you must do the following to use your calendar:</p>
 
 <ol>
   <li>
@@ -3254,7 +3256,7 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   </li>
 </ol>
 
-<p>Now, date-related searches in the selected worksheet, table or view will use your custom calendar.</p>
+<p>Now, date-related searches in the selected worksheet, table or view use your custom calendar.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3287,7 +3289,7 @@ company’s fiscal year begins and ends. When using your custom calendar, search
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 4, 2019 <br />
+        Generated: Jul 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
