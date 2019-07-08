@@ -10,10 +10,10 @@ calendar starts on a different date, you can use a custom calendar to ensure
 date searches in ThoughtSpot reflect your fiscal calendar.
 
 [Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
-will also reflect the fiscal year you set here.
+also reflect the fiscal year you set here.
 
 When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, will conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards that use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
+company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards that use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
 
 ## Setting up a custom calendar
 
@@ -95,7 +95,7 @@ To set your custom calendar as the default calendar for your cluster, contact [T
 
 ## Setting a worksheet, table or view to use your custom calendar
 
-If you don't set your custom calendar as the default for your cluster, you'll need to do the following to use your calendar:
+If you don't set your custom calendar as the default for your cluster, you must do the following to use your calendar:
 
 1. Sign in to your ThoughtSpot cluster and click **DATA**.
 
@@ -109,4 +109,4 @@ If you don't set your custom calendar as the default for your cluster, you'll ne
 
 5. Click **Save Changes**.
 
-  Now, date-related searches in the selected worksheet, table or view will use your custom calendar.
+  Now, date-related searches in the selected worksheet, table or view use your custom calendar.
