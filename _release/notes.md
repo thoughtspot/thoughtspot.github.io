@@ -9,9 +9,9 @@ permalink: /:collection/:path.html
 <p>ThoughtSpot version 4.5.1 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues.</p>
 <ul>
    <li><a href="notes.html#4-5-1-new-features-and-functionality ">4.5.1 New Features and Functionality</a></li>
-   <li><a href="notes.html#4-5-1-fixed-bugs">4.5.1 Fixed bugs</a></li>
+   <li><a href="notes.html#4-5-1-fixed-bugs">4.5.1 Fixed Ramdiskispreservedacrossclusterupgrades</a></li>
    <li><a href="notes.html#4-5-new-features-and-functionality ">4.5 New Features and Functionality</a></li>
-   <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed bugs</a></li>
+   <li><a href="notes.html#4-5-fixed-bugs">4.5 Fixed Issues</a></li>
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
 
@@ -690,7 +690,7 @@ and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How t
 </tr>
 </tbody>
 
-<h2>4.5 Fixed Bugs</h2>
+<h2>4.5 Fixed Issues</h2>
 
 <thead>
 <tr style="width: 100%;border-bottom-style: inset;">
