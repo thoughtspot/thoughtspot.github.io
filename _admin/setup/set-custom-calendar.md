@@ -37,7 +37,7 @@ To generate a custom calendar template, do the following:
 
 2. Run the `tscli calendar generate` command using the following syntax:
 
-      `tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username <cluster_admin_username>`
+      `tscli calendar generate --name <calendar_name> --start_date <MM/DD/YYYY> --end_date <MM/DD/YYYY> --username tsadmin`
 
       Example:
       `tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
@@ -76,7 +76,7 @@ To use the template as your custom calendar, some editing is required.
 
 1. Upload the .csv file to your ThoughtSpot cluster using the following syntax:
 
-      `scp /<Local directory on your computer>/<calendar_name>.csv admin@<cluster-ip-address>:/home/admin/`
+      `scp /<Local directory on your computer>/<calendar_template_name>.csv admin@<cluster-ip-address>:/home/admin/`
 
       Example (on Mac OS):
       `scp /Users/john.smith/Desktop/my_calendar.csv admin@172.18.144.217:/home/admin`
@@ -84,10 +84,10 @@ To use the template as your custom calendar, some editing is required.
 2. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
 3. Run the `tscli calendar create` command using the following syntax:
-   `tscli calendar create --file_path <file path of csv> --name <calendar name> --username <username>`
+   `tscli calendar create --file_path /home/admin/<calendar_template_name>.csv --name <calendar name> --username tsadmin`
 
    Example:
-   `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username admin`
+   `tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username tsadmin`
 
 ### (Optional) Set a custom calendar as the default calendar for your cluster
 
