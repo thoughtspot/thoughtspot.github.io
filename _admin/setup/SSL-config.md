@@ -31,7 +31,7 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
-### Using Management Portal
+### Using Management Console
 To install and configure the SSL certificate using the admin UI:
 
 1. Log into ThoughtSpot from a browser.
@@ -39,7 +39,7 @@ To install and configure the SSL certificate using the admin UI:
 
    ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
 
-   This opens the ThoughtSpot Management Portal.
+   This opens the ThoughtSpot Management Console.
 3. Click **Settings** icon on the top navigation bar.
 
    **image**
@@ -81,11 +81,13 @@ To install and configure the SSL certificate using the admin UI:
     </tr>
     <tr>
       <th>Public Certificate</th>
-      <td>Browsw and copy the public cert to ThoughtSpot.</td>
+      <td>Browse and copy the public cert to ThoughtSpot.</td>
     </tr>
    </table>
 
 6. Click **Save** to configure the SSL.
+
+You can now test the SSL setup by log in to the ThoughtSpot application. You should see the application URL begins with `https://`.
 
 
 

@@ -24,10 +24,10 @@ Before you configure LDAP for Active Directory, collect the following informatio
   **_NOTE:_** In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against LDAP or against ThoughtSpot's internal authentication.
 - **Also use ThoughtSpot internal authentication? (yes/no)**: If you choose 'yes', ThoughtSpot will first attempt to authenticate the user against LDAP when a user logs in. If that attempt fails, it will then attempt to authenticate the user against ThoughtSpot. If either of these succeed, then the user is successfully logged in.
 
-  **_NOTE:_** You can use this option only via tscli. This is useful in scenarios where some users are not in LDAP and are created only in ThoughtSpot.
+  **_NOTE:_** You can use this option only via `tscli`. This is useful in scenarios where some users are not in LDAP and are created only in ThoughtSpot.
 
 
-## Configure using Management Portal
+## Configure using Management Console
 To configure LDAP for active directory:
 
 1. Log into ThoughtSpot from a browser.
@@ -35,7 +35,7 @@ To configure LDAP for active directory:
 
    ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
 
-   This opens the ThoughtSpot Management Portal.
+   This opens the ThoughtSpot Management Console.
 3. Click **Settings** icon on the top navigation bar.
 
    **image**
