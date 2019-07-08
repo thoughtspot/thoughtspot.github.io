@@ -13,7 +13,7 @@ date searches in ThoughtSpot reflect your fiscal calendar.
 also reflect the fiscal year you set here.
 
 When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar in use. Existing worksheets, tables, views and pinboards tat use your new custom calendar change to reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
+company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
 
 ## Setting up a custom calendar
 
