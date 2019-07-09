@@ -9,6 +9,7 @@ The information here provides very basic troubleshooting. For more detailed trou
 
 -   **[Get your configuration and logs]({{ site.baseurl }}/admin/troubleshooting/get-logs.html)**  
 For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.
+-   **[Upload logs to ThoughtSpot Support]({{ site.baseurl }}/admin/troubleshooting/upload-logs-egnyte.html)**
 -   **[Network connectivity issues]({{ site.baseurl }}/admin/troubleshooting/check-connectivity.html)**  
 If network connectivity to and from ThoughtSpot is not working, try using these steps to find and correct the issue.
 -   **[Check the timezone]({{ site.baseurl }}/admin/troubleshooting/set-timezone.html)**  

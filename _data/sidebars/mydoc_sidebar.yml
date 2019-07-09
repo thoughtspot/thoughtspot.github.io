@@ -586,6 +586,108 @@ entries:
         - title: Delete or change a table in TQL
           url: /admin/loading/check-dependencies-tql.html
           output: web,admBk
+    - levelTwoTitle: Manage users and groups
+      output: web,admBk
+      levelTwoItems:
+      - title: Understand groups and privileges
+        url: /admin/users-groups/about-users-groups.html
+        output: web,admBk
+      - title: Create, edit, or delete a group
+        url: /admin/users-groups/add-group.html
+        output: web,admBk
+      - title: Add, edit, or delete a user
+        url: /admin/users-groups/add-user.html
+        output: web,admBk
+      - title: Allow users to sign up
+        url: /admin/users-groups/sign-up.html
+        output: web,admBk
+    - levelTwoTitle: Security
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview of security features
+        url: /admin/data-security/about-security.html
+        output: web,admBk
+      - title: System Security
+        url: /admin/data-security/audit-logs.html
+        output: web,admBk
+      - levelThreeTitle: Data security
+        output: web,admBk
+        levelThreeItems:
+        - title: Data security
+          url: /admin/data-security/sharing-security-overview.html
+          output: web,admBk
+        - title: Share tables and columns
+          url: /admin/data-security/share-source-tables.html
+          output: web,admBk
+        - title: Share worksheets
+          url: /admin/data-security/share-worksheets.html
+          output: web,admBk
+        - title: Share a pinboard
+          url: /admin/data-security/share-pinboards.html
+          output: web,admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
+          output: web,admBk
+        - title: Revoke access (unshare)
+          url: /admin/data-security/unshare.html
+          output: web,admBk
+      - levelThreeTitle: Row level security (RLS)
+        output: web,admBk
+        levelThreeItems:
+        - title: About row level security (RLS)
+          url: /admin/data-security/about-row-security.html
+          output: web,admBk
+        - title: How Rule-Based RLS works
+          url: /admin/data-security/row-level-security.html
+          output: web,admBk
+        - title: Set Rule-Based RLS
+          url: /admin/data-security/set-rls.html
+          output: web,admBk
+      - title: ThoughtSpot Lifecycle
+        url: /admin/data-security/security-thoughtspot-lifecycle.html
+        output: web, admBk
+      - title: Encryption of data in transit
+        url: /admin/data-security/encryption-of-data.html
+        output: web, admBk
+    - levelTwoTitle: System administration
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview of System administration
+        url: /admin/system-admin/sysadmin-overview.html
+        output: web,admBk
+      - title: Send logs when reporting problems
+        url: /admin/system-admin/send-logs-to-administrator.html
+        output: web,admBk
+      - title: Set up recording for Replay Search
+        url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+    - levelTwoTitle: Backup and restore
+      output: web,admBk
+      levelTwoItems:
+      - title: Understand the backup strategies
+        url: /admin/backup-restore/choose-strategy.html
+        output: web,admBk
+      - title: Understand backup/snapshot schedules
+        url: /admin/backup-restore/how-to-create-a-schedule.html
+        output: web,admBk
+      - title: Work with snapshots
+        url: /admin/backup-restore/overview-snapshot.html
+        output: web,admBk
+      - levelThreeTitle: Work with backups
+        output: web,admBk
+        levelThreeItems:
+        - title: Understand backup modes
+          url: /admin/backup-restore/backup-modes.html
+          output: web,admBk
+        - title: Create a manual backup
+          url: /admin/backup-restore/take-backup.html
+          output: web,admBk
+        - title: Configure periodic backups
+          url: /admin/backup-restore/configure-backup.html
+          output: web,admBk
+        - title: About restore operations
+          url: /admin/backup-restore/restore.html
+          output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk
       levelTwoItems:
@@ -714,22 +816,7 @@ entries:
       - title: Change SearchIQ mappings
         url: /admin/data-modeling/searchiq-mappings.html
         output: web,admBk
-    - levelTwoTitle: Manage users and groups
-      output: web,admBk
-      levelTwoItems:
-      - title: Understand groups and privileges
-        url: /admin/users-groups/about-users-groups.html
-        output: web,admBk
-      - title: Create, edit, or delete a group
-        url: /admin/users-groups/add-group.html
-        output: web,admBk
-      - title: Add, edit, or delete a user
-        url: /admin/users-groups/add-user.html
-        output: web,admBk
-      - title: Allow users to sign up
-        url: /admin/users-groups/sign-up.html
-        output: web,admBk
-    - levelTwoTitle: Manage jobs
+    - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
       - title: Job management (scheduled pinboards)
@@ -737,66 +824,6 @@ entries:
         output: web,admBk
       - title: Scheduled pinboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
-        output: web,admBk
-    - levelTwoTitle: Security
-      output: web,admBk
-      levelTwoItems:
-      - title: Overview of security features
-        url: /admin/data-security/about-security.html
-        output: web,admBk
-      - title: System Security
-        url: /admin/data-security/audit-logs.html
-        output: web,admBk
-      - levelThreeTitle: Data security
-        output: web,admBk
-        levelThreeItems:
-        - title: Data security
-          url: /admin/data-security/sharing-security-overview.html
-          output: web,admBk
-        - title: Share tables and columns
-          url: /admin/data-security/share-source-tables.html
-          output: web,admBk
-        - title: Share worksheets
-          url: /admin/data-security/share-worksheets.html
-          output: web,admBk
-        - title: Share a pinboard
-          url: /admin/data-security/share-pinboards.html
-          output: web,admBk
-        - title: Security for SpotIQ functions
-          url: /admin/data-security/spotiq-admin.html
-          output: web,admBk
-        - title: Revoke access (unshare)
-          url: /admin/data-security/unshare.html
-          output: web,admBk
-      - levelThreeTitle: Row level security (RLS)
-        output: web,admBk
-        levelThreeItems:
-        - title: About row level security (RLS)
-          url: /admin/data-security/about-row-security.html
-          output: web,admBk
-        - title: How Rule-Based RLS works
-          url: /admin/data-security/row-level-security.html
-          output: web,admBk
-        - title: Set Rule-Based RLS
-          url: /admin/data-security/set-rls.html
-          output: web,admBk
-      - title: ThoughtSpot Lifecycle
-        url: /admin/data-security/security-thoughtspot-lifecycle.html
-        output: web, admBk
-      - title: Encryption of data in transit
-        url: /admin/data-security/encryption-of-data.html
-        output: web, admBk
-    - levelTwoTitle: System administration
-      output: web,admBk
-      levelTwoItems:
-      - title: Overview of System administration
-        url: /admin/system-admin/sysadmin-overview.html
-        output: web,admBk
-      - title: Send logs when reporting problems
-        url: /admin/system-admin/send-logs-to-administrator.html
-        output: web,admBk
-      - title: Set up recording for Replay Search
-        url: /admin/system-admin/configure-record-search.html
         output: web,admBk
     - levelTwoTitle: Monitoring
       output: web,admBk
@@ -822,39 +849,12 @@ entries:
       - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
-    - levelTwoTitle: Backup and restore
-      output: web,admBk
-      levelTwoItems:
-      - title: Understand the backup strategies
-        url: /admin/backup-restore/choose-strategy.html
-        output: web,admBk
-      - title: Understand backup/snapshot schedules
-        url: /admin/backup-restore/how-to-create-a-schedule.html
-        output: web,admBk
-      - title: Work with snapshots
-        url: /admin/backup-restore/overview-snapshot.html
-        output: web,admBk
-      - levelThreeTitle: Work with backups
-        output: web,admBk
-        levelThreeItems:
-        - title: Understand backup modes
-          url: /admin/backup-restore/backup-modes.html
-          output: web,admBk
-        - title: Create a manual backup
-          url: /admin/backup-restore/take-backup.html
-          output: web,admBk
-        - title: Configure periodic backups
-          url: /admin/backup-restore/configure-backup.html
-          output: web,admBk
-        - title: About restore operations
-          url: /admin/backup-restore/restore.html
-          output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
       levelTwoItems:
       - title: About troubleshooting
         url: /admin/troubleshooting/troubleshooting-intro.html
-        output: pdf
+        output: web,admBk
       - title: Get your configuration and logs
         url: /admin/troubleshooting/get-logs.html
         output: web,admBk
