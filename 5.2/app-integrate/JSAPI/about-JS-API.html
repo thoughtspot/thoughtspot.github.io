@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Using the JavaScript API”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:" />
-<meta property="og:description" content="The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:" />
+<meta name="description" content="The ThoughtSpot JavaScript API (JS API) enables you to use ThoughtSpot within your own Web application and to perform the following tasks:" />
+<meta property="og:description" content="The ThoughtSpot JavaScript API (JS API) enables you to use ThoughtSpot within your own Web application and to perform the following tasks:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-09T09:42:33-07:00" />
+<meta property="article:published_time" content="2019-07-09T17:59:37-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html","headline":"[“Using the JavaScript API”]","dateModified":"2019-07-09T09:42:33-07:00","datePublished":"2019-07-09T09:42:33-07:00","description":"The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/JSAPI/about-JS-API.html","headline":"[“Using the JavaScript API”]","dateModified":"2019-07-09T17:59:37-07:00","datePublished":"2019-07-09T17:59:37-07:00","description":"The ThoughtSpot JavaScript API (JS API) enables you to use ThoughtSpot within your own Web application and to perform the following tasks:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2228,7 +2228,7 @@ var ss360Config = {
             
               
                 
-                  <li class="active"><a href="/5.2/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                  <li class="active"><a href="/5.2/app-integrate/JSAPI/about-JS-API.html">Useing JavaScript API</a></li>
                 
               
             
@@ -2368,7 +2368,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.2/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
+                          <li><a href="/5.2/app-integrate/embedding-viz/trusted-authentication.html">Configure trusted authentication</a></li>
                       
                    
                 
@@ -3123,101 +3123,79 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The ThoughtSpot JavaScript API (JS API) allows you to use your ThoughtSpot
-instance within your own Web application. The JS API has methods that allow you
-to:</p>
+  <p>The ThoughtSpot JavaScript API (JS API) enables you to use ThoughtSpot
+within your own Web application and to perform the following tasks:</p>
 
 <ul>
-  <li>Authenticate to ThoughtSpot.</li>
-  <li>Embed visualizations from ThoughtSpot in your Web page using iframes.</li>
-  <li>Use the ThoughtSpot REST API to get data from ThoughtSpot and use it in your Web page.</li>
+  <li>Authenticate users to ThoughtSpot</li>
+  <li>Embed ThoughtSpot visualizations in your Web page using the <code class="highlighter-rouge">&lt;iframe&gt;</code> HTML tag</li>
+  <li>Supply ThoughtSpot data to your Web page through ThoughtSpot’s REST APIs</li>
 </ul>
 
-<p>You can <a href="/5.2/release/downloads.html" target="_blank">download the ThoughtSpot JavaScript library</a> from our secure storage server.</p>
+<p>You can download the <a href="/5.2/release/downloads.html" target="_blank">ThoughtSpot JavaScript library</a> from our secure storage server.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To use the JS API in your Web page, you must have the access and permissions to
-update the code of the web page or application.</div>
+update the code of your Web page or application.</div>
 
 <h2 id="browser-support">Browser Support</h2>
 
 <p>The JS API works in the following browsers:</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Browser</th>
-      <th>Versions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Internet Explorer</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Firefox</td>
-      <td>38 or later</td>
-    </tr>
-    <tr>
-      <td>Google Chrome</td>
-      <td>47 or later</td>
-    </tr>
-    <tr>
-      <td>Safari</td>
-      <td>9 or later</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li><strong>Internet Explorer</strong><br />Version 11</li>
+  <li><strong>Firefox</strong><br />Version 38 or later</li>
+  <li><strong>Google Chrome</strong><br />Version 47 or later</li>
+  <li><strong>Safari</strong><br />Version 9 or later</li>
+</ul>
 
-<p><strong>Internet Explorer 10</strong></p>
+<h3 id="ie-10">Internet Explorer 10</h3>
 
 <p>Microsoft introduced a compatibility mode in Internet Explorer 10, which
-displays your page using the version of Internet Explorer that is most
-compatible with the current page. Since we do not support any version below 11,
-this feature can sometimes break the code. There are two ways to force the
-emulation of Internet Explorer to the most up to date version:</p>
+displays the page using the version of Internet Explorer that is most
+compatible with that page. Because we do not support any version earlier than 11,
+this feature may break the code.</p>
+
+<p>There are two approaches for forcing the Internet Explorer to emulate the most recent version:</p>
 
 <ul>
-  <li>
-    <p>Add a Custom Response Header</p>
-
-    <p>This is the recommended approach since it is more robust, offers more
-control, and has a lower risk of introducing a bug to your code. The header
-name should be set to “X-UA-Compatible” and the value should be set to
-“IE=Edge”. The response header should be based on the server it is set on
-and the technology being used.</p>
+  <li><strong>Add a Custom Response Header</strong>
+  We recommend this approach because it is more robust, offers more
+  control, and has a lower risk of introducing a bug to your code. in general,
+  you must set the response header to match the server and the technology.
+    <ul>
+      <li>set the header name to “X-UA-Compatible”</li>
+      <li>set the value to “IE=Edge”</li>
+    </ul>
   </li>
   <li>
-    <p>Add a Meta Tag</p>
+    <p><strong>Add a Meta Tag</strong>
+  Add this meta tag as the <em>first</em> tag in the header section of the page:</p>
 
-    <p>The following meta tag should be added to your header: <code class="highlighter-rouge">&lt;meta
-http-equiv="X-UA-Compatible" content="IE=Edge" \&gt;</code>. This tag must be the
-first tag in the header section of the page.</p>
+    <p><code class="highlighter-rouge">&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge" \&gt;</code></p>
   </li>
 </ul>
 
-<h2 id="cross-origin-http-requests-cors">Cross-Origin HTTP Requests (CORS)</h2>
+<h2 id="cross-origin-http-requests">Cross-Origin HTTP Requests (CORS)</h2>
 
 <p>Collecting user credentials from one application (domain) and sending them to
 another (such as ThoughtSpot) can present security vulnerabilities such as a
 phishing attack. Cross-origin or cross-domain verification closes this vulnerability.</p>
 
-<p>When you use the JavaScript API, your client makes a call from your own Web
-page, portal, or application to ThoughtSpot. The domains of your client and
-ThoughtSpot will be different. So, you’ll need to enable cross-origin HTTP
-requests from your client application to the ThoughtSpot application. This
-protects your data, so that another actor cannot use the same URL to embed the
-visualization in its own Web pages.</p>
+<p>When you use the JavaScript API, your client calls ThoughtSpot from your Web
+page, portal, or application. Because your client and ThoughtSpot are on different
+domains, you must enable cross-origin HTTP requests from your client application
+to the ThoughtSpot application. This protects your data by preventing another actor
+from using the same URL to embed the visualization in its own Web pages.</p>
 
-<p>Your cluster’s CORS configuration controls which domains are allowed to use your
-client code to authorize users. It also prevents other people from copying your
-code and running it on their site.  For example, if your Web site is hosted on
-the domain <code class="highlighter-rouge">example.com</code>, you would enable CORS for that domain. Similarly, if
-you want to test your code locally, you’ll also need to add the origin for your
-local server as well, for example: <code class="highlighter-rouge">http://localhost:8080.</code> Though, it is a good
-idea to disable the <code class="highlighter-rouge">localhost</code> access after your testing is complete.</p>
+<p>Your cluster’s CORS configuration controls which domains can use your
+client code to authorize users. It also prevents code copying and deployment on
+unauthorized sites.  For example, if your Web site is hosted on
+the domain <code class="highlighter-rouge">example.com</code>, you must enable CORS for that domain. Similarly, to
+test your code locally, you must also add the domain for your
+local server, such as <code class="highlighter-rouge">http://localhost:8080</code>. We recommend that you disable the
+<code class="highlighter-rouge">localhost</code> access after you finish testing.</p>
 
-<p>To enable CORS between your client applications and your ThoughtSpot instance. ,
+<p>To enable CORS between your client applications and your ThoughtSpot instance,
 you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
 Support</a>.</p>
 
@@ -3247,7 +3225,7 @@ Support</a>.</p>
       <div class="col-lg-12 footer">
         Generated: Jul 9, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 07/09/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
