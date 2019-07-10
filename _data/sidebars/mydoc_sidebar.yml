@@ -457,6 +457,9 @@ entries:
       - title: Set up a fiscal calendar year
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
+      - title: Configure internal authentication
+        url: /admin/setup/internal-auth.html
+        output: web,admBk
       - title: Configure SSL
         url: /admin/setup/SSL-config.html
         output: web,admBk

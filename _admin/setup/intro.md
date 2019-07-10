@@ -44,12 +44,13 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
 
 ## Related information
 
-The following tasks are available  needed:
+The following tasks are available needed:
 
 * [Set your locale]({{ site.baseurl }}/admin/setup/set-your-thoughtspot-locale.html)
 * [Test connectivity between nodes]({{ site.baseurl }}/admin/setup/test-network.html)
 * [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
 * [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html)
+* [Configure internal authentication]({{ site.baseurl }}/admin/setup/internal-auth.html)
 * [Configure SSL]({{ site.baseurl }}/admin/setup/SSL-config.html)
 * [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html)
 * [Integrate LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html)
