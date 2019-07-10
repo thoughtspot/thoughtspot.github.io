@@ -495,7 +495,7 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have Internet access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
 
   * `--online` Download `maptiles` tar from internet. (default: True)
   * `--offline`   Using `maptiles` tar from local disk. (default: False)
