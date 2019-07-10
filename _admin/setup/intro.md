@@ -41,6 +41,12 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
+## About Management Console
+ThoughtSpot now comes with a Management Console, a self-service portal that enables network administrators to manage and monitor ThoughtSpot clusters. This console  compliments the existing tscli-based configuration. The Management Console is broadly classified into three functional areas, namely:
+- **Admin**: The existing admin-related functions such as user, data, jobs, system monitoring, styling and many more reside here.
+- **Settings**: This section allows you to configure a series of system administration modules such as SAML, SSL, LDAP, AD, SMTP and many more.
+- **Update**: This section allows you to upgrade your cluster.
+
 
 ## Related information
 
