@@ -3,7 +3,6 @@ title: [Configure NAS file system]
 keywords: tscli, backup, restore
 tags: [networking, tscli, nas]
 last_updated: tbd
-summary: "You can use network attached storage to support backup/restore and data loading."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -82,7 +81,7 @@ To mount a NAS file system using the admin UI:
    </tr>
    <tr>
    <th>Optional Mount Parameters</th>
-   <td>Specify other command-line options if you wish to add. The default is <code>noexec</code>.</a>
+   <td>Specify other command-line options if you wish to add. The default is <code>noexec</code>.
    </td>
    </tr>
    </table>
