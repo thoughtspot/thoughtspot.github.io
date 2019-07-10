@@ -48,7 +48,7 @@ To set up a relay host and SMTP rules using the admin UI:
    </tr>
    <tr>
    <th>Is Host Reachable</th>
-   <td>Select <b>Yes</b> if host is reachable.</td>
+   <td>Select <b>Yes</b> if host is reachable. ThoughtSpot will verify the host.</td>
    </tr>
    <tr>
    <th>From Email</th>
