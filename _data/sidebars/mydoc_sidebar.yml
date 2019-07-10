@@ -969,7 +969,7 @@ entries:
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
       output: web,apgBk
-    - title: Get the JavaScript API
+    - title: Useing JavaScript API
       url: /app-integrate/JSAPI/about-JS-API.html
       output: web,apgBk
     - levelTwoTitle: SAML
@@ -1035,7 +1035,7 @@ entries:
       - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
         output: web,apgBk
-      - title: Configured trusted authentication
+      - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
         output: web,apgBk
     - levelTwoTitle: Runtime Filters
