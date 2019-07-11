@@ -957,10 +957,10 @@ entries:
   #     - title: Connectors reference
   #       url: /data-connect/reference/data-connect-connection-credentials.html
   #       output: web,cngBk
-  - sectiontitle: Application Integration
+  - sectiontitle: Embedding ThoughtSpot using APIs
     output: web,apgBk
     sectionitems:
-    - title: Introduction
+    - title: Introduction to Embedding
       url: /app-integrate/introduction/introduction.html
       output: web,apgBk
     - title: Log in to the Linux shell using SSH
@@ -969,7 +969,7 @@ entries:
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
       output: web,apgBk
-    - title: Useing JavaScript API
+    - title: Use the JavaScript API
       url: /app-integrate/JSAPI/about-JS-API.html
       output: web,apgBk
     - levelTwoTitle: SAML
