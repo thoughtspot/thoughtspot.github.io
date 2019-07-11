@@ -29,9 +29,7 @@ When you buy ThoughtSpot Extended Enterprise, the following rights and obligatio
    - Can administer and bypass RLS
 5. The license for Extended Enterprise does not enable you to act as an MSP (Managed Service Provider). This means that you must not offer managed services to third parties that are based on the ThoughtSpot software.
 6. As a company offering access to ThoughtSpot Extended Enterprise to external users, you are responsible for your own data policy and for complying with local laws and regulations concerning data privacy, such as GDPR and HIPAA.
-7. If you are using either ***Application Embedding*** or ***Embedded Search***, an NPS (Net Promoter Score) survey will be offered to your external users. You may not disable this survey.
-
-  If you are using either the ***Visualization Embedding*** or ***Pinboard Embedding*** in your application, it is okay to disable the NPS survey.
+7. If you are using either ***Application Embedding*** or ***Embedded Search***, an NPS (Net Promoter Score) survey will be offered to your external users. You may not disable this survey.<br>If you are using either the ***Visualization Embedding*** or ***Pinboard Embedding*** in your application, it is okay to disable the NPS survey.
 8. Deployments of ThoughtSpot Extended Enterprise must conform to [logo restrictions](https://brand.thoughtspot.com/d/Vtg4Zg2mqTbE/brand-guidelines).
 
    These are the branding elements you can change in ThoughtSpot Extended Enterprise:
