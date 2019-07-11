@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
+The Metadata APIs enable you to fetch metadata details for various objects in the ThoughtSpot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
 
 ## Get visualization headers
 
