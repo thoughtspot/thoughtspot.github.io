@@ -72,11 +72,11 @@ To configure LDAP for active directory:
    </tr>
    <tr>
    <th>Add users in ThoughtSpot?</th>
-   <td>Select **Yes** to automatically add AD users to ThoughtSpot upon first successful authentication. For more information, see **Before you begin section**.</td>
+   <td>Select <b>Yes</b> to automatically add AD users to ThoughtSpot upon first successful authentication. For more information, see <b>Before you begin section</b>.</td>
    </tr>
    <tr>
    <th>SSL Required?</th>
-   <td>If you are using SSL, add the **SSL Certificate** and specify the **Certificate Alias** for LDAP.</a>
+   <td>If you are using SSL, add the **SSL Certificate** and specify the **Certificate Alias** for LDAP.
    </td>
    </tr>
    </table>
