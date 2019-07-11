@@ -64,7 +64,7 @@ To manually create a backup using the admin UI:
 
 6. Click **Save** to configure the backup.
 
-You can see the newly created backup in the backup dashboard.
+You can see the newly created backup file in the backup dashboard.
 
 ## Using tscli
 To manually create a backup using the tscli:
