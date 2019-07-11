@@ -691,6 +691,15 @@ entries:
         - title: About restore operations
           url: /admin/backup-restore/restore.html
           output: web,admBk
+    - levelTwoTitle: Mobile
+      output: web,admBk
+      levelTwoItems:
+      - title: Deploy mobile app
+        url: /admin/mobile/deploy-mobile.html
+        output: web,admBk
+      - title: FAQ
+        url: /admin/mobile/faq-mobile
+        output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk
       levelTwoItems:
