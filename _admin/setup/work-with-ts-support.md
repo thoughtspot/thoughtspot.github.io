@@ -3,7 +3,6 @@ title: [Configure support services]
 tags: [tscli, Supportability,logs]
 keywords: tbd
 last_updated: tbd
-summary: "Set up and configure ThoughtSpot support services for your installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,8 +24,8 @@ This access can be granted and revoked easily, so you can enable it for a troubl
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-Before you can do this procedure, your networking team needs to open port `22`
-in your firewall outgoing rules.
+**_NOTE:_** Before you set up a reverse tunnel, open port `22`
+in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
 ### Using Management Console
 1. Log into ThoughtSpot from a browser.
@@ -62,7 +61,7 @@ in your firewall outgoing rules.
       </tr>
       <tr>
       <th>Reverse SSH Tunnel</th>
-      <td>Select **Enable** to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
+      <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
       </tr>
       </table>
 
