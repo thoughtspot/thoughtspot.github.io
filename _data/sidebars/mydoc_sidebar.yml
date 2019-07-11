@@ -948,7 +948,7 @@ entries:
   #     - title: Connectors reference
   #       url: /data-connect/reference/data-connect-connection-credentials.html
   #       output: web,cngBk
-  - sectiontitle: Embedding ThoughtSpot using APIs
+  - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
     - title: Introduction to Embedding
