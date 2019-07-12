@@ -26,9 +26,6 @@ See [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clien
 * **Linux**<br>ThoughtSpot_odbc_linux_3.4.tar.gz<br>
 See [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
 
-## Informatica ##
-For the Informatica Connector, see [Informatica Cloud Connectivity](http://www.informatica.com/products/cloud-integration/connectivity/connectors.html).
-
 ## JavaScript API ##
 For the JavaScript API, see the [JavaScript API library](https://thoughtspot.egnyte.com/dl/D8tbICaVbR/).
 
@@ -37,5 +34,6 @@ For information on ThoughtSpot Extended Enterprise Edition, our embeddable offer
 
 ## Virtual Platforms ##
 
-* **VMware**<br>[ts-centos7-vmware-template.tar.gz](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr)<br>[Set up VMware for ThoughtSpot]
- ({{ site.baseurl }}/appliance/vmware/vmware-setup.html)
+* **VMware**<br>
+[ts-centos7-vmware-template.tar.gz](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr)<br>
+[Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html)
