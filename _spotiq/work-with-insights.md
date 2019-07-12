@@ -6,13 +6,13 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-At this point, you have done [the first set of SpotIQ tutorial tasks](overview.html), you've uploaded some
-data and run your first SpotIQ analysis. You should be able to look at the
+At this point, you completed the [first set of SpotIQ tutorial tasks](overview.html), you uploaded some
+data, and ran your first SpotIQ analysis. You can look at the
 **SpotIQ** list and see when your analysis ran. This is important knowledge
-because data changes, you'll want to run multiple analyzes on the same data.
+because as data changes over time, we continue to analyze it.
 
 In this section, you look at the results and see what insights SpotIQ
-discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
+discovered. Learn about the basic types of analysis SpotIQ runs on data.
 
 ## View results of an analysis
 
@@ -43,11 +43,11 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
    * Insights from Cross Correlation Analysis.
    * Insights from Trend Analysis.
 
-   There is a reason there are three sets. You'll learn the answer to that later.
+   There is a reason there are three sets. Learn the answer to that later.
 
 ## Time and your insight data
 
-You'll notice that when you first look at an insight there is an expiration date
+Notice that when you first look at an insight there is an expiration date
 in the upper right corner:
 
 ![]({{ site.baseurl }}/images/spotiq-expiration.png)
@@ -110,7 +110,7 @@ towels in one week out of the year because there was a flood that week.
 The second category of insights SpotIQ attempts to find is cross-correlations.
 Cross-correlation looks for and measures relationships between two quantitive,
 continous information sets -- in our case two fields (columns) in our dataset.
-Usually, you'll see a cross-correlation in your insights if your data includes
+Usually, you can see a cross-correlation in your insights if your data includes
 time or date data.
 
 The result of a correlation analysis shows how strong and in what direction a
@@ -161,5 +161,4 @@ categories of insights:
 * cross-correlations
 * trendlines
 
-In [the next section]({{ site.baseurl }}/spotiq/spotiq-customize.html), you'll
-learn how to schedule SpotIQ to deliver insights on a regular basis.
+In the [next section]({{ site.baseurl }}/spotiq/spotiq-customize.html), learn how to schedule SpotIQ to regularly deliver insights.

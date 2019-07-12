@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
-X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
+X SDK</a> to connect through ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
 Windows workstation.
 
@@ -79,7 +79,7 @@ the driver.
 
     - For **Server(s)**, provide a comma separated list of the IP addresses of each node on the ThoughtSpot instance.
 
-    - For **Database**, optionally specify the database to use. If you skip this entry, you'll need to provide the database each time you connect using ODBC.
+    - For **Database**, optionally specify the database to use. If you skip this entry, you must provide the database each time you connect using ODBC.
 
 6. Confirm that the install can begin by clicking **Install**.
 
@@ -98,12 +98,12 @@ the driver.
 
 ## Configure the driver and test your connection
 
-Once installation is complete, you use the ODBC Administrator to configure the
+After installation completes, use the ODBC Administrator to configure the
 ODBC connection on your Windows workstation. For example, you may want to add
 a default schema or change the server IP address or the default database.
 
 It is recommended to add a default schema. If you don't specify a default
-schema, you will need to supply it every time you use the ODBC driver.
+schema, you must supply it every time you use the ODBC driver.
 
 At this point, you can test your ODBC connection to ThoughtSpot.  It is important
 to recall that the username/password you use belongs to a ThoughtSpot application
@@ -137,10 +137,10 @@ privileges on the application.
     | `UID`             | The username of a user with data management privilege. |
     | `PWD`             | The password for the username you specify.             |
 
-    You don't have to use the default schema, you can specify another. You
-    should at least supply a default schema, otherwise, you must supply Once
-    every time you use the ODBC driver. Moreover, without a schema or if the
-    schema is not present, the ODBC driver returns an error that says the schema
+    You don't have to use the ThoughtSpot default schema. You can specify your own.
+    We recommend that you define a default schema. Otherwise, you must supply a schema
+    every time you use the ODBC driver. Moreover, without a schema (or if the
+    schema is not present), the ODBC driver returns an error that states that the schema
     could not be found.
 
     Similarly, adding the `UID` and `PWD` properties are not required. If you

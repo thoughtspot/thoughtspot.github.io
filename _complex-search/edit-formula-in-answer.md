@@ -10,7 +10,7 @@ You can always go back and view or edit a formula that was added to a search. Do
 
 1. Navigate to the pinboard that contains the answer with the formula, click the three-dot **Actions** icon and select **Edit**.
 2. Scroll down to the bottom of the **Columns** listing. You will see a data source called **Formulas**.
-3. Expand **Formulas**, and you'll see a list of all the formulas in this answer.
+3. Expand **Formulas**, and you can see a list of all the formulas in this answer.
 
      ![]({{ site.baseurl }}/images/edit_formula_in_answer.png "Formulas section expanded to show formulas in the answer")
 

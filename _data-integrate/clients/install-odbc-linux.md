@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
-X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
+X SDK</a> to connect through ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
 Linux workstation.
 
@@ -101,10 +101,10 @@ ODBC driver:
     ```
 
     The `linux/Setup` directory contains the key ODBC configuration files and
-    sample Simba client configurations you'll use later in this procedure.
+    sample Simba client configurations you can use later in this procedure.
 
 
-9. You need to know your workstation architecture to continue, confirm  your workstation's architecture.
+9. You must know your workstation architecture to continue, confirm  your workstation's architecture.
 
    You can use the `arch` or the `uname` command or both.
 
@@ -115,8 +115,8 @@ ODBC driver:
       Linux nebula-docs-production-4vfnv 4.4.108-1.el7.elrepo.x86_64 #1 SMP Mon Dec 25 09:55:39 EST 2017 x86_64 x86_64 x86_64 GNU/Linux
     ```
 
-    In the above examples, the workstation is a 64 bit workstation. Your
-    workstation may be 32-bit. You'll use this architecture information in the
+    In previous examples, the workstation is a 64 bit workstation. Your
+    workstation may be 32-bit. You can use this architecture information in the
     procedures that follow.
 
 

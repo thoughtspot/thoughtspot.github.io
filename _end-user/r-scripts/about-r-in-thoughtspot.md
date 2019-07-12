@@ -15,8 +15,8 @@ integrated feature in version 5.0
 ## Using R in ThoughtSpot
 
 While the ability to run custom R scripts on ThoughtSpot data was available in
-previous releases via SpotIQ custom analysis, as of version 5.0 users with R
-privileges can now run R scripts directly on search results.
+previous releases through SpotIQ custom analysis, starting with version 5.0 users with R
+privileges can run R scripts directly on search results.
 
 Analysts and data scientists proficient in R can create and share custom
 scripts.

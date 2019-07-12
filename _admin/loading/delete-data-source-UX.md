@@ -28,7 +28,7 @@ To view dependent objects for a data source:
 
 4. Click a dependent object to modify or delete it.
 
-    If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
+    If you want to remove the dependency by modifying the dependent object, you must remove all search terms or columns that refer back to the data source you are trying to delete.
 
 5. When all dependencies have been removed, you will be able to go back and delete the data source.
 
@@ -62,6 +62,6 @@ ThoughtSpot checks for dependencies whenever you try to delete a table or worksh
 
 5. Click a dependent object to modify or delete it.
 
-    If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
+    If you want to remove the dependency by modifying the dependent object, you must remove all search terms or columns that refer back to the data source you are trying to delete.
 
 6. When all dependencies have been removed, you will be able to go back and delete the data source.

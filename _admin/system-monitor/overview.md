@@ -84,7 +84,7 @@ enabled: false
 
 You can see this policy is disabled, which is a problem. Production clusters
 should enable the default snapshot policy. When you show or enable the snapshot
-policy, you'll see your `tscli` command reflected in the **Configuration
+policy, you can see your `tscli` command reflected in the **Configuration
 Events** panel on this same page.
 
 ## Relational Data Cache
@@ -173,7 +173,7 @@ replication.
 
 ## Monthly Active Users
 
-This chart shows the number of active users in the system over the last four months and current month. An active user is defined as a user who has logged in at least once in the defined time interval, in this case months.
+This chart shows the number of active users in the system over the last four months, and during the current month. An active user is defined as a user who has logged in at least one time in the defined time interval, in this case months.
 
 The query for this answer is the following:
 

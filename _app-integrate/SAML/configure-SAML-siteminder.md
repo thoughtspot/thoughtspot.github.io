@@ -23,7 +23,7 @@ Before configuring CA SiteMinder, you must [configure SAML in ThoughtSpot](confi
     |Signed Authentication Requests Required|No|
     |Supported NameID format|Optional|
 
-2. Create the Remote SP Entity, either via a metadata import or manually.
+2. Create the Remote SP Entity, either through a metadata import or manually.
    To configure the Remote SP entity manually, select **Create Entity**. Create ThoughtSpot as a Remote Entity with following details:
 
     |Section|Entry|

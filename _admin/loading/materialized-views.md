@@ -24,7 +24,7 @@ These are the operations you can do on a view:
 -   [Refresh a view]({{ site.baseurl }}/admin/loading/refresh-view.html) to synchronize its data with the latest data load to the underlying tables.
 -   Check the status of a view.
 
-Once materialized, a view can have one of three statuses. You can see the status of a view by selecting **Data**, clicking on **Views**, and finding your view in the list. The status is shown next to the name of your view.
+After materializing, a view can have one of three statuses. You can see the status of a view by selecting **Data**, clicking on **Views**, and finding your view in the list. The status is shown next to the name of your view.
 
 ## Materialization status
 [](#materialization-status)

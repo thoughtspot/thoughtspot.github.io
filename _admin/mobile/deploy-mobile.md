@@ -37,7 +37,7 @@ There are two ways to provide the app to your users with your MDM or MAM platfor
 
   Management platforms also provide an option to upload a custom .ipa file. There are a couple of prerequisites for this:
   - Your company must have an Apple developer enterprise account.
-  - They will need to re-sign the .ipa file which can be downloaded from this Egnyte link <Insert Egnyte Link>, and the instructions to re-sign the .ipa can be found here.
+  - They must re-sign the .ipa file which can be downloaded from this Egnyte link <Insert Egnyte Link>, and the instructions to re-sign the .ipa can be found here.
 
   To add the ThoughtSpot .ipa file to your management platform, refer to the following platform-specific information:
   - <a href="https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL.html#GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL target="_blank">Workspace ONE (AirWatch)</a>

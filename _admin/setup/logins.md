@@ -6,7 +6,7 @@ summary: "You need administrative access to perform the actions discussed in thi
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
+You can access ThoughtSpot through SSH at the command prompt, and from a Web browser.
 
 ## Administrative access
 

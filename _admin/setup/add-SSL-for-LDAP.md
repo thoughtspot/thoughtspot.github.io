@@ -13,7 +13,7 @@ You must have the SSL certificate before you start. For more information on obta
 
 To add the SSL certificate for LDAP:
 
-1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
+1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent by email or available for download.
 2. Copy the certificate to ThoughtSpot:
 
     ```

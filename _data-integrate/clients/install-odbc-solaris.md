@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
-X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
+X SDK</a> to connect through ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the Simba ODBC driver on a
 Solaris workstation.
 
@@ -94,10 +94,10 @@ ODBC driver:
     ```
 
     The `Solaris/Setup` directory contains the key ODBC configuration files and
-    sample Simba client configurations you'll use later in this procedure.
+    sample Simba client configurations you can use later in this procedure.
 
 
-9. You need to know your workstation architecture to continue, confirm  your workstation's architecture.
+9. You must know your workstation architecture to continue, confirm  your workstation's architecture.
 
    You can use the `arch` or the `uname` command or both.
 
@@ -106,8 +106,8 @@ ODBC driver:
     amd64 i386
     ```
 
-    In the above examples, the workstation is a 64 bit workstation. Your
-    own workstation may be 32-bit. You'll use this architecture information in the
+    In previous examples, the workstation is a 64 bit workstation. Your
+    own workstation may be 32-bit. You can use this architecture information in the
     procedures that follow.
 
 

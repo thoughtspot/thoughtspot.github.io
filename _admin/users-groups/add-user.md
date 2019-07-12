@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. If a user has access through LDAP, that user's information is managed via your LDAP installation.  If you create a user manually in ThoughtSpot, you manage that user in ThoughtSpot.
+You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. If a user has access through LDAP, that user's information is managed by your LDAP installation.  If you create a user manually in ThoughtSpot, you manage that user in ThoughtSpot.
 
 You can edit manually created users through the interface. If a manually-created user forgets their password, you can reset it by editing the user. If you have forgotten the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
 
@@ -44,7 +44,7 @@ This procedure shows how to creating a user manually. When you create a user, yo
       <tr>
         <th>Username</th>
         <td><p>A login name for the user. Usernames must be unique and lowercase.</p>
-        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
       </tr>
       <tr>
         <th>Display name</th>

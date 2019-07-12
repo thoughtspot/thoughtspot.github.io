@@ -57,8 +57,7 @@ data load to succeed.
 
 By toggling _**strict**_ and _**permissive**_ `true` and `false` options, you
 can configure settings along a scale of behavior between the permissive,
-automatic approach and the strictness of the "must match" approach. All options
-are described below.
+automatic approach and the strictness of the "must match" approach.
 
 <table>
   <tr style="background-color:white;">
@@ -82,19 +81,19 @@ are described below.
   </tr>
 </table>
 
-<p>Your customer support engineer who can assist you in configuring the ODBC
-behavior that suits you best. Regardless of which configuration you choose, you
-should validate that the results of data loading <i>as they appear</i> in ThoughtSpot
-are what you desire.</p>
+<p>Your customer support engineer can assist you in configuring custom ODBC
+behavior. Regardless of the configuration you choose, you
+must validate that the results of data loading <i>as they appear</i> in ThoughtSpot
+are what you require.</p>
 
 
 ## Data type conversion matrix
 
-<p>Following table describes the conversion matrix between SQL data types and
+<p>The following table describes the conversion matrix between SQL data types and
 ThoughtSpot data types.</p>
 
 
-| Source SQL Data Typess          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
+| Source SQL Data Types          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
 |-------------------------------|-----|------|------|-------|------|------|-----|------|--------|
 |`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
 |`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |

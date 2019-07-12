@@ -92,7 +92,7 @@ To manually create a backup using the tscli:
 
 3. Make sure you have enough room on the target disk.
 
-    In addition to the size of the snapshot, you will need 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the `df` command to check disk size.
+    In addition to the size of the snapshot, you must have 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the `df` command to check disk size.
 
     ```
     $ df -h

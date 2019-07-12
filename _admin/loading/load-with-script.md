@@ -61,9 +61,9 @@ If you have a very large data file that takes a long time to load, you can reduc
 
 * Split up your large data file into multiple smaller files.
 
-* Stage the data files in a location accessible to the node on which you'll run the script. Usually you'll use an [NAS mounted file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#).
+* Stage the data files in a location accessible to the node on which you run the script. Usually, you can use an [NAS mounted file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#).
 
-* Create a script to load the files (see example below).
+* Create a script to load the files in the following example.
 
 * Run the script to load the files. You will make your script multi-threaded by invoking multiple loader threads (between 1 and 5 are recommended).
 
@@ -134,4 +134,4 @@ nohup bash ./load_script.sh > master_log.txt &
 tail -f master_log.txt
 ```
 
-Constructing your script in this way will execute all the commands in the background, and output to the file `master_log.txt`. You'll see a running status as the commands in the script execute. After the script completes, you can check the log file for detailed information, such as the number of rows that loaded successfully.
+Constructing your script in this way will execute all the commands in the background, and output to the file `master_log.txt`. You can see a running status as the commands in the script execute. After the script completes, you can check the log file for detailed information, such as the number of rows that loaded successfully.

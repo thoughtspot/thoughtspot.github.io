@@ -11,7 +11,7 @@ You should always take a snapshot of your database before making any schema chan
 
 After you've set up a Data Source, you may decide that you want the table it is loading into to have a different type of sharding. For example, if you specified 96 shards, but then you expand your cluster, you may want to specify a large number or shards. You can even change a sharded table to a replicated table, or vice versa, by using this procedure.
 
-First, you'll modify the table sharding, using TQL. Note that this operation changes the target table itself. You do not need to change the DDL that was generated when you first configured the data source. That DDL executes only one time, to build the empty table into which the data gets loaded. So if you change the sharding on the table in ThoughtSpot, you do not need to change the DDL that got generated when you first set up the data source. Likewise, if the load is scheduled to recur, the sharding that is defined on the target table will be used in the next load. Sharding is a one time setup, and does not need to be kept in sync with the data source DDL.
+First, you can modify the table sharding using TQL. Note that this operation changes the target table itself. You do not have to change the DDL that was generated when you first configured the data source. That DDL executes only one time, to build the empty table into which the data gets loaded. So if you change the sharding on the table in ThoughtSpot, you do not have to change the DDL that got generated when you first set up the data source. Likewise, if the load is scheduled to recur, the sharding that is defined on the target table will be used in the next load. Sharding is a one-time setup, and does not have to be kept in-sync with the data source DDL.
 
 To change the sharding on a Data Source:
 
@@ -20,7 +20,7 @@ To change the sharding on a Data Source:
     ```
     $ tql
     ```
-3.  Designate the database you'll be working in:
+3.  Designate the database:
 
     ```
     TQL> use <database_name>;

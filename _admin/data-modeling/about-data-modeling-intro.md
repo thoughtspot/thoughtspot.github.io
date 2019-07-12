@@ -28,8 +28,8 @@ table or you can view and configure all the system data using a modeling file.
 Editing the data model file requires that you have administrative privileges.
 
 The model file contains a row for each column in your data set. It isn't unusual
-to have tens of thousand of rows in this file. This means editing this file is
-equivalent to editing all the tables at once. When you add new data to your
+to have tens of thousand of rows in this file. This means that editing this file is
+equivalent to editing all the tables simultaneously. When you add new data to your
 system, this file expands to accommodate the new data columns you have added.
 
 Both of these methods, have the same effect, they improve search. Moreover,

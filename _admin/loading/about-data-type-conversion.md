@@ -68,7 +68,7 @@ Some data type conversion require a format string. These include:
 -   conversion from `DATE`/`TIME`/`DATETIME`
 -   conversion to `DATE`/`TIME`/`DATETIME`
 
-For these types of conversions, you'll use a special syntax using parsinghint
+For these types of conversions, you can use a special syntax using parsinghint
 and the date format specifications supported in the [strptime library
 function](http://man7.org/linux/man-pages/man3/strptime.3.html).
 
@@ -99,7 +99,7 @@ ALTER TABLE fruit_sales
 
 ## String to boolean conversions
 
-String to boolean conversions have format strings, too. You'll use `parsinghint`
+String to boolean conversions have format strings, too. You can use `parsinghint`
 as you do for date and time conversions. You can choose among these approaches:
 
 **OPTION 1: Specify string values for both true and false.** Any non-matching values
@@ -150,7 +150,7 @@ ALTER TABLE db
 ## Change the Data Type of a Column
 
 When you issue the TQL command to convert a column from one data type to
-another, the conversion is handled automatically. However, you'll need to ensure
+another, the conversion is handled automatically. However, you must ensure
 that any visualizations built on top of the table display correctly.
 
 You should always take a snapshot of your database before making any schema

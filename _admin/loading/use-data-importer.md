@@ -35,7 +35,7 @@ You can integrate tsload into your ETL environment for more automated data loads
            --empty_target --source_file=ssbm_customer.csv
            --v 1 --field_separator "|"
     ```
-4. Once the processing begins, you'll see messages to indicate the progress and then two summary messages after the load is complete.
+4. After the processing begins, you can see messages that indicate the progress, and then two summary messages after the load is complete.
 
     ```
     Started processing data row
@@ -71,7 +71,7 @@ You can integrate tsload into your ETL environment for more automated data loads
     ```
 5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were omitted, review your CSV file, make the required adjustments, and then load it again.
 
-6. Once your file has been loaded properly, repeat this process to load data from any additional CSV files.
+6. After correctly loading your file, repeat this process to load data from any additional CSV files.
 
 ## Loading data from an AWS S3 bucket
 
@@ -107,4 +107,4 @@ If you have data in .csv format stored in an AWS bucket, you can load it directl
     * `--aws_s3_credentials "<credentials>"` <br>
     * `--aws_s3_root "<search path>"`
 
-4.  Once the processing begins, you'll see messages to indicate the progress and then source and load summary messages after the load is complete.    
+4.  After the processing begins, you can see messages that indicate the progress, and then source and load summary messages after the load is complete.    

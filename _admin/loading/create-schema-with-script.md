@@ -15,7 +15,7 @@ If you are working in a schema other than the default schema, object names must 
 
 If your schema includes constraints to define relationships between tables (foreign key, or the `RELATIONSHIP` syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the `ADD CONSTRAINT` syntax. This makes it easier to troubleshoot the script and make changes.
 
-If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:
+If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you must decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:
 
 ```
 cat safest_script_ever.sql | tql --allow_unsafe

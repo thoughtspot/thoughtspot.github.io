@@ -23,6 +23,6 @@ To select the chart color palettes:
 
      ![]({{ site.baseurl }}/images/color_palettes_2.png "Secondary color palette")
 
-    The colors from the secondary color palette are used once all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
+    The colors from the secondary color palette are used after all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
 
 4. Click the **Reset** button on the upper right hand side of the section if you would like to bring back the default color palettes.

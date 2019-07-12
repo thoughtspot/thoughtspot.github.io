@@ -42,7 +42,7 @@ To generate a calendar template, do the following:
       Example:
       `tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
 
-      This generates a calendar template file in .csv format. In the above example: **my_calendar.csv**.
+      This generates a calendar template file in .csv format. In the previous example: **my_calendar.csv**.
 
 3. Exit your SSH session.
 

@@ -9,11 +9,11 @@ permalink: /:collection/:path.html
 Google Cloud Platform (GCP) can provide memory and CPU for your ThoughtSpot
 instance.
 
-Your database capacity will determine the number of instances you'll need and
-the instance network/storage requirements. In addition, you can go with multiple
+Your database capacity determine the number of instances you must have, and
+the instance network/storage requirements. In addition, you can choose multiple
 virtual machines (VMs) based on your dataset size.
 
-You will need to setup the appropriate Firewall Rules in your GCP environment
+You must setup the appropriate Firewall Rules in your GCP environment
 for your ThoughtSpot deployment. See the [GCP Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)
 article for configuration details.
 
@@ -26,7 +26,7 @@ GCP is a secure cloud services platform offered by Google. Using
 ThoughtSpot on GCP allows you to easily add instances as your dataset grows.
 You can do everything you’d normally want to do in a traditional data center
 with GCP. It features an on-demand delivery of IT resources and applications
-via the Internet. When you are connected to an instance, you can use it just
+through the Internet. When you are connected to an instance, you can use it just
 like you use any other server.
 
 Using GCP lets you develop and deploy applications faster since there is no need

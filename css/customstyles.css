@@ -376,7 +376,7 @@ div.gsc-control-cse {
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    top: 40px; /* if you change anything about the nav, must reset the top and left values here.*/
     left: 20px;
     z-index: -1;
     width:223px;

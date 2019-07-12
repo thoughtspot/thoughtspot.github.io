@@ -11,7 +11,7 @@ permalink: /:collection/:path.html
 When you load data, ThoughtSpot uses defaults for data modeling metadata. You
 change these defaults using the data modeling file if you have access to the
 **ADMIN > Data Management** page. Editing this file allows you to
-view and edit all your system's data columns at once, in bulk. When you (or
+view and edit all the system data columns. When you (or
 your users) add new data to your system, this file changes as it expands to
 accommodate new data columns.
 
@@ -62,9 +62,9 @@ To obtain the model file:
 
 ## Edit the file and change the settings
 
-You'll make changes to the settings using this procedure. To see a list of the
+You can make changes to the settings using this procedure. To see a list of the
 changes you can make, see [Data modeling settings](data-modeling-settings.html#). You can edit any of the values in the
-model file, except for those where the words **DoNotModify** appear below the
+model file, except for those where the words **DoNotModify** appear under the
 column header. To make changes in the model file:
 
 1. Open the model file you downloaded (`model.xls`) in Excel, vi/vim, or a text editor.
@@ -109,7 +109,7 @@ ThoughtSpot before the changes will take effect. To upload the model file:
 
     If you receive an error message upon uploading the file, check that it does
     not include any multi-byte characters (for example, Japanese or other multi-byte
-    language characters). If it does, you'll need to download the file again and
+    language characters). If it does, you must download the file again and
     make your edits using vi or vim.
 
     If you choose to remove all the rows you have not changed from
