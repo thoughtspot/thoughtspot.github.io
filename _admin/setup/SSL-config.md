@@ -10,12 +10,12 @@ permalink: /:collection/:path.html
 ThoughtSpot enables you to use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 
 ## About SSL
-Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you will need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.
+Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you must have your company's own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.
 
 If you do not have an SSL certificate:
 
 -   Check with your IT department to see if they already have an SSL certificate you can use.
--   If not, you will need to obtain the certificate from an issuing authority.
+-   If not, you must obtain the certificate from an issuing authority.
 -   Alternatively, you may disable SSL if you don't want the security it provides by using the command `tscli ssl off`.
 
 There are many SSL vendors to choose from. Check with your existing Web hosting provider first, to see if they can provide the certificate for you.
@@ -24,7 +24,7 @@ When you apply for the SSL certificate, you may specify a SAN, wildcard, or sing
 
 ## Configure SSL for web traffic
 
-This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
+This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you need:
 
 -   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
 -   The private key in compatible .PEM format. It should not be password/passphrase protected.
@@ -95,7 +95,7 @@ You can now test the SSL setup by log in to the ThoughtSpot application. You sho
 
 Below are the instructions to install the SSL certificate using the tscli:
 
-1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
+1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent by email or available for download.
 2. Copy the certificate and key files to ThoughtSpot:
 
       ```
@@ -142,4 +142,4 @@ The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance 
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-You will need to ensure that your load-balancer supports these ciphers.
+You must ensure that your load-balancer supports these ciphers.

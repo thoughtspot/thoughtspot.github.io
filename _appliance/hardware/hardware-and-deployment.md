@@ -18,7 +18,7 @@ includes up to 4 nodes and can hold up to 1TB of data. This can be scaled out.
 
 ## Network connection
 
-Before you can access ThoughtSpot, you will need a network connection.
+Before you can access ThoughtSpot, you need a network connection.
 
 Refer to [Network Ports]({{ site.baseurl }}/admin/setup/firewall-ports.html) in
 the Administrator's Guide to see which ports must remain open to outside traffic
@@ -30,7 +30,7 @@ between nodes.
 Here are some more details on ports and node communication:
 
 -   Port redundancy (bonding) is not supported. Only one 10G port is active per node.
--   Nodes communicate to each other via the 10G connection (data ports).
+-   Nodes communicate with each other through the 10G connection (data ports).
 -   All nodes should be on the same VLAN – ideally connected to the same top of rack switch.
 -   IPMI ports are used for management functions of the nodes.
 
@@ -38,7 +38,7 @@ Here are some more details on ports and node communication:
 ## Appliance hardware platforms
 
 You can deploy the ThoughtSpot Analytical Search engine on Haswell appliance
-hardware platforms, with specifications as detailed below.
+hardware platforms, with the following specifications:
 
 |Details                    |  Haswell|
 |-------                    | ------- |
@@ -56,7 +56,7 @@ These diagrams show the front and rear chassis views. The marked features are
 present on all four nodes on the rear of the chassis even though they are only
 pointed out on one node in the diagrams.
 
-The chassis are shown fully populated (4-nodes). Your appliance may be populated
+The chassis appear fully populated (4-nodes). Your appliance may be populated
 with 1-4 nodes, depending on the ordered configuration. If less than 4-nodes
 were ordered, the empty slot will be filled with a filler panel.
 

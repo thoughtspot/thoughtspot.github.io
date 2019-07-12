@@ -2,11 +2,11 @@
 title: [Delete a worksheet or table]
 keywords: tbd
 last_updated: tbd
-summary: "When you try to delete a worksheet or table, you'll see a message listing any dependent objects that must be removed first."
+summary: "When you try to delete a worksheet or atable, you can see a message listing any dependent objects that must be removed first."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot checks for dependencies whenever you try to remove a table or worksheet. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you'll be able to remove the table or worksheet.
+ThoughtSpot checks for dependencies whenever you try to remove a table or worksheet. A list of dependent objects appears, and you can click them to delete them or remove the dependency. Then, you can remove the table or worksheet.
 
 To delete a worksheet or table:
 

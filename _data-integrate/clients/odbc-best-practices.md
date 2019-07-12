@@ -13,8 +13,8 @@ When developing tools that use the ODBC driver, use these best practices:
 
 * When setting up ODBC for the first time, begin by using the ThoughtSpot `tsload`
 for the initial data loads. This allows you to do more in-depth troubleshooting
-on any initial loading issues.  Once initial loads are working properly, then
-switch to ODBC to do incremental loads.
+on any initial loading issues.  After initial loads work properly,
+switch to ODBC to perform incremental loads.
 
 * You should create the parameterized SQL statement outside of ODBC. Using this
 method, the SQL statement can be sent to ThoughtSpot in batches by the ODBC
@@ -31,8 +31,8 @@ loading even while loading to a single table or multiple tables at the same
 time.
 
 * When doing an incremental data load, note that the same `UPSERT` behavior that
-occurs via TQL will apply. This means that if you import a row whose primary key
-matches to an existing row, the existing row will be updated with the new
+occurs in TQL also occurs. This means that if you import a row whose primary key
+matches an existing row, the existing row will be updated with the new
 values.
 
 ## Related information

@@ -16,7 +16,7 @@ ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Cent
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.
 
-Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
+Ask your ThoughtSpot liaison for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
 ### Overview
 
@@ -112,8 +112,8 @@ The following topics walk you through this process.
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
 with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-Before we can install a ThoughtSpot cluster, an administrator must log in to
-each VM via SSH as user "admin" and complete the following preparation steps:
+Before we can install a ThoughtSpot cluster, an administrator must log into
+each VM through SSH as user "admin", and complete the following preparation steps:
 
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
 2. Configure each VM based on the site-survey.
@@ -122,4 +122,3 @@ each VM via SSH as user "admin" and complete the following preparation steps:
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
- 

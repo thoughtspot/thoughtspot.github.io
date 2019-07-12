@@ -58,7 +58,7 @@ To manually create a snapshot using the admin UI:
    </tr>
    <tr>
    <th>Time to Live</th>
-   <td>Specify the day counter after which the snapshot will automatically be deleted.</td>
+   <td>Specify the day counter after which the snapshot automatically deletes.</td>
    </tr>
    </table>
 

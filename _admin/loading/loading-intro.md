@@ -29,7 +29,7 @@ These are the methods you can use to load data, along with the benefits of each 
 
 If you're uploading data through the Web interface, you can use a native Excel
 file. If you want to use a CSV (comma separated values) or delimited file, or
-you are loading using ThoughtSpot Loader, you'll need to
+you are loading using ThoughtSpot Loader, you must
 [create CSV files with the data to be loaded](load-from-web-browser.html#create-a-csv-file) first.
 
 {% include note.html content="End users will almost always work with worksheets and data they upload." %}

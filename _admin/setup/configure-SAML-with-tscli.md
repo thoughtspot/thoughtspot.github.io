@@ -11,7 +11,7 @@ ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to 
 
 ## Before you begin
 
-Before you configure SAML, you will need the following information:
+Before you configure SAML, you need the following information:
 
 - **ThoughtSpot Service address**: Domain or IP of the server where your ThoughtSpot instance is running.
 - **Port**: Port of the server where your ThoughtSpot instance is running.
@@ -24,7 +24,7 @@ Before you configure SAML, you will need the following information:
   If you choose 'no', SAML users are added in ThoughtSpot upon first login.
 - **Internal authentication**: This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin`, so set it to true if you do not know what it does.
 
-  **_NOTE:_** You can set internal authentication only via `tscli`.
+  **_NOTE:_** You can set internal authentication only through `tscli`.
 
 ## Configure using Management Console
 To configure SAML using the admin UI:
@@ -96,7 +96,7 @@ You can now test the SAML setup. Open ThoughtSpot login page in a browser. You s
 
 To set up SAML on ThoughtSpot for user authentication:
 
-**_NOTE:_** This configuration persists across software updates, so you do not need to reapply it if you update to a newer release of ThoughtSpot.
+**_NOTE:_** This configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.
 
 1. Log in to the Linux shell using SSH.
 2. Execute the command to launch the interactive SAML configuration:

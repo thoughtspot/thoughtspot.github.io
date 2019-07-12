@@ -13,7 +13,7 @@ Sometimes the results from SearchIQ won't be quite what you were expecting. You 
 
 To teach SearchIQ your language:
 
-1. After receiving a search result from SearchIQ, you'll notice a section below the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
+1. After receiving a search result from SearchIQ, notice a section under the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
 
    Wherever you see **- -**, those terms were ignored. Where you see a word or words, those are the keywords, column names, or data values as understood by SearchIQ.
 

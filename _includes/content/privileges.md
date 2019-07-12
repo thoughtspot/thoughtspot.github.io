@@ -49,7 +49,7 @@
     </tr>
     <tr>
       <td><strong>Can administer and bypass RLS</strong></td>
-      <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
+      <td><p>Users in groups with this privilege (directly or through group inheritance):</p>
 <ul>      <li>Are exempt from row-level security (RLS) rules.</li>
       <li>Can add/edit/delete existing RLS rules.</li>
       <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>

@@ -23,7 +23,7 @@ Azure is a secure cloud services platform offered by Microsoft. Using
 ThoughtSpot  on Azure allows you to easily add instances as your dataset grows.
 You can do everything you’d normally want to do in a traditional data center
 with Azure. It features an on-demand delivery of IT resources and applications
-via the Internet. When you are connected to an instance, you can use it just
+through the Internet. When you are connected to an instance, you can use it just
 like you use any other server.
 
 Using Azure lets you develop and deploy applications faster since there is no

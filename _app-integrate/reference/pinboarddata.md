@@ -61,7 +61,7 @@ This API enables you to retrieve the data of a pinboard or visualization from th
      <tr>
          <td><code>offset</code></td>
          <td>integer</td>
-         <td>The system default is <code>-1</code>. Alternately, set the offset using the below:
+         <td>The system default is <code>-1</code>. Alternately, set the offset using the following code:
          <p><code>1-based indexingOffset = (pageNumber - 1) * batchSize</code></p></td>
 
       </tr>

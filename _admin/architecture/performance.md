@@ -33,7 +33,7 @@ Keep in mind these other boundaries:
 |Size in CSV format| 1 TB per appliance|
 |Total number of rows across all tables| 1B per appliance|
 |Many-to-Many (Generic) join cardinality|10B per appliance|
-|Load frequency| Once every hour|
+|Load frequency| Every hour|
 
 
 ## Worksheet Boundaries
@@ -56,7 +56,7 @@ aggregated worksheet cannot be greater than 1000.
 
 ### Chasm Trap worksheets
 
-For chasm trap scenarios (two or more fact tables joined via a shared dimension)
+For chasm trap scenarios (two or more fact tables joined by a shared dimension)
 the following boundaries are recommended:
 
 |Description |Boundary|

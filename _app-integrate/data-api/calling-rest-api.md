@@ -5,11 +5,11 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To call the Data REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
+To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
 
 ## Specify the pinboard or visualization example
 
-For a pinboard, you'll append the ID of your pinboard as a parameter, like this example:
+For a pinboard, you can append the ID of your pinboard as a parameter, like this example:
 
 ```
 https://<thoughtspot_server>/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
@@ -56,7 +56,7 @@ The `columnNames` array contains a list of all column headers. And the `data` ar
 
  ![]({{ site.baseurl }}/images/columnnames_and_data_arrays.png "columnNames and data arrays")
 
-The REST API supports filtering the data returned via parameters that you pass within the URL. These are called [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#).
+The REST API supports filtering the data returned through parameters that you pass within the URL. These are called [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#).
 
 ## Example
 

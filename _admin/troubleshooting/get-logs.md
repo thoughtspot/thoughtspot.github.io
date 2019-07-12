@@ -77,7 +77,7 @@ $ tscli logs collect --include all --since 1d
 
 In this example, `all` is a selector for all the available logs.
 
-In most cases, you'll probably use the selector `ts` to only capture logs for the ThoughtSpot application:
+In most cases, you can probably use the selector `ts` to only capture logs for the ThoughtSpot application:
 
 ```
 $ tscli logs collect --include ts --since 2d

@@ -106,7 +106,7 @@ details on how to configure your placement groups.
 
 AWS instances are configured to a location with regard to where the computing
 resources are physically located. You must specify a region, an availability
-zone, and below that, a placement group.
+zone, and a placement group.
 
 AWS nodes in a ThoughtSpot cluster must be in the same [availability zone](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) (and, therefore, also in the same region).
 

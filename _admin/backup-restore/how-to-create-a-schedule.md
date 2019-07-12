@@ -10,7 +10,7 @@ You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot come
 
 ## Configuration format
 
-ThoughtSpot uses a [protocol buffer](https://developers.google.com/protocol-buffers/) configuration file to hold snapshot and backup policies. There are slight differences between the configuration of snapshots and backups. You'll read more about these later. However, the file format defines a `schedule` structure which is the same for both snapshots and backups. The following example shows the `schedule` format:
+ThoughtSpot uses a [protocol buffer](https://developers.google.com/protocol-buffers/) configuration file to hold snapshot and backup policies. There are slight differences between the configuration of snapshots and backups. You can read more about these later. However, the file format defines a `schedule` structure which is the same for both snapshots and backups. The following example shows the `schedule` format:
 
 ```
 
@@ -133,7 +133,7 @@ retention_policy {
 
 ```
 
-When the fourth hour comes along, the snapshot from first hour is discarded as per FIFO behavior. So in the 4th hour, you'll have the snapshots from hours 2, 3, and 4 in this retention bucket.
+At the beginning of the fourth hour, the system discards the snapshot from the first hour. This is in accordance with  FIFO behavior. Therefore, this retention bucket contains snapshots from hours 2, 3, and 4.
 
 |1D|2R|3R|4R|5|6|7|8|9|10|11|12|13|14|...|24|
 
@@ -158,9 +158,9 @@ It retains two of these four-hour-interval snapshots at any one time. By hour 9 
 
 |1|2|3|4R|5|6|7|8R|9|10|11|12|13|14|...|24|
 
-Consider what you will have in the first bucket in hour 9? The first bucket will have the snapshots from hour 9, 8, and 7.
+Consider what you will have in the first bucket in hour 9? The first bucket has the snapshots from hour 9, 8, and 7.
 
-At the end of the day, in the first bucket, you will have 22, 23, and 24th snapshot. While in the second bucket, you will have the 20th hour and the 24th hour snapshots.
+At the end of the day, in the first bucket, you can have 22, 23, and 24th snapshot. While in the second bucket, you will have the 20th hour and the 24th hour snapshots.
 
 |1|...|12|13|14|15|16|17|18|19|20R|21|22R|23R|24R|
 

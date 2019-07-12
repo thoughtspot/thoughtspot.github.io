@@ -14,11 +14,11 @@ Before you can use the Data REST API, you must authenticate to ThoughtSpot using
 
 ## Cross Domain Verification
 
-You'll need to enable cross domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
+You cano enable cross-domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
 
 ## Data REST API capabilities
 
-Use a POST method to access the URL, which calls the REST API. The data is returned as a JSON string. When using this method, you'll need to extract the data from the JSON file and render it on your Web page, portal, or application.
+Use a POST method to access the URL, which calls the REST API. The data is returned as a JSON string. When using this method, you must extract the data from the JSON file and render it on your Web page, portal, or application.
 
 You can use the REST API to do things like:
 
@@ -31,7 +31,7 @@ Remember that the data you retrieve from ThoughtSpot is live data, so whenever t
 
 ## Direct Search-to-Embed API
 
-The [Direct Search-to-Embed API]({{ site.baseurl }}/app-integrate/data-api/direct-search-to-embed.html#) enables searching directly from an external application or web page to pull data from ThoughtSpot. This feature was introduced in ThoughtSpot 5.0. When using it, you can access data stored in ThoughtSpot directly. You do not need to save a search result to a pinboard and then reference it using the visualization's URL.
+The [Direct Search-to-Embed API]({{ site.baseurl }}/app-integrate/data-api/direct-search-to-embed.html#) enables searching directly from an external application or web page to pull data from ThoughtSpot. This feature was introduced in ThoughtSpot 5.0. When using it, you can access data stored in ThoughtSpot directly. You do not have to save a search result to a pinboard and then reference it using the visualization's URL.
 
 ## Public API reference
 

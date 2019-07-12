@@ -36,7 +36,7 @@ before continuing.
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click the ellipses icon 
+   For a vizualization in a pinboard, click the ellipses icon
    ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
     **Copy Link**.
 
@@ -46,8 +46,8 @@ before continuing.
 
 ## Edit the test.html
 
-You need to edit the page in your application or web page where you want to
-embed a ThoughtSpot pinboard or visualization. For this example, you'll get a copy of the
+You must edit the page in your application or web page where you want to
+embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the
 <a href="{{"/downloads/test.html" | prepend: site.baseurl }}" target="_blank"><code>test.html</code></a>  file.
 
 1. Create an empty directory called `test`.
@@ -83,7 +83,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you'll get a co
     ```
 
     The protocol (`http` or `https`) of your client and your ThoughtSpot instance
-    should match. You'll use this identifier in the next part.
+    should match. You can use this identifier in the next part.
 
 7. Save your changes and close the `test.html` file.
 
@@ -94,10 +94,10 @@ You must work with ThoughtSpot support to enable CORS between your client
 application domain and the ThoughtSpot domain. If you don't do this, you will
 receive an error message when `test.html` attempts to load the embedded objects.
 
-The test infrastructure uses Python's `simplehttpserver` which runs, by default
-as `localhost:8000`, this is information ThoughtSpot support will need. You can
-also just copy the `test` directory to an existing web server. If you do this,
-you'll need to DNS for the server when you contact Support.
+The test infrastructure uses Python's `simplehttpserver`, which runs by default
+as `localhost:8000`. ThoughtSpot support must have this information. You can
+also copy the `test` directory to an existing web server. If you do this,
+you must DNS for the server when you contact Support.
 
 ## Test the example page
 
@@ -109,7 +109,7 @@ fastest way to run a webserver and test the code is using Python's
 1. Log into ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
-   haven't done that with this system. So, before you test, you'll login to the
+   haven't done that with this system. So, before you test, you must login to the
    ThoughtSpot. Successfully logging in causes the system to create a session
    and an authentication key. Your browser has this information and so when you
    load the `test.html` page in another tab, you won't need to authenticate

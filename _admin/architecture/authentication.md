@@ -11,7 +11,7 @@ SAML if possible since ThoughtSpot provides only basic authentication with no
 restrictions on passwords, timeouts, failed logins, etc.
 
 
-The table below shows each of the options and the items to consider for each.
+The following table shows each of the options and the items to consider for each.
 
 
 <table>
@@ -48,11 +48,11 @@ The table below shows each of the options and the items to consider for each.
 
 All users and groups must be known to ThoughtSpot. If you are using LDAP/AD or
 SAML and don’t create users in ThoughtSpot, a user is created when the user
-first logs in. However, this user is assigned to the `All` group and will only
+first logs in. However, this user is assigned to the `All` group and can only
 see content available for all users.
 
 Groups are the primary way that security is managed. Groups are not
-automatically created. You can create groups and users manually or you need to
+automatically created. You can create groups and users manually or you must
 automate the assignment from a source system. ThoughtSpot has an assignment
 script that works with most LDAP / AD stores. It also has public APIs that you
 can use to sync users and groups between source systems and your ThoughtSpot

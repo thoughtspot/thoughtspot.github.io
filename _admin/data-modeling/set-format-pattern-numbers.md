@@ -54,7 +54,7 @@ requires that you have administrative privileges.
 
 4. Save your changes.
 
-   If you are using a data-modeling file you'll need to upload the new file to your installation.
+   If you are using a data-modeling file you must upload the new file to your installation.
 
 ### Profile-based number formatting
 
@@ -94,7 +94,7 @@ editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
 
 4. Save your changes.
 
-   If you are using a data-modeling file you'll need to upload the new file to your installation.
+   If you are using a data-modeling file you must upload the new file to your installation.
 
 ## Set currency format
 

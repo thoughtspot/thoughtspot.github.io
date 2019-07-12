@@ -67,7 +67,7 @@ in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
 6. Click **Save** to configure the SSH tunnel.
 
-You may choose to disable the access once ThoughtSpot Support finishes the troubleshooting.
+You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
 
 ### Using tscli
 To enable remote support:
@@ -78,7 +78,7 @@ To enable remote support:
 3. Log into the Linux shell using SSH.
 4. Issue the command to configure the destination for the remote tunnel.
 
-    You only need to do this once, when you are enabling the tunnel for the very
+    You only need to do this one time, when you are enabling the tunnel for the very
     first time. After that, this setting persists when you start and stop the
     remote tunnel.
 
@@ -125,7 +125,7 @@ and password for logging in to the secure file server. You can get these from
 ThoughtSpot Support.
 
 Configuring the connection to the file server is a one time operation. You do
-not need to reconfigure the connection unless your password changes. Note that
+not have to reconfigure the connection unless your password changes. Note that
 you can do a one time override of the user and password you used to configure
 the connection. This is done by passing a different user and password on the
 command line when uploading or downloading a file.
@@ -148,7 +148,7 @@ To configure the connection to the secure file server:
 data allows ThoughtSpot's Support team to troubleshoot your cluster. They use
 the data to see basic usage information over time for your ThoughtSpot instance.
 ThoughtSpot's "call home" functionality intermittently sends a call home bundle
-of  statistics to a ThoughtSpot S3 server via HTTPS. The data is encrypted at
+of  statistics to a ThoughtSpot S3 server through HTTPS. The data is encrypted at
 rest on the server.
 
 By default, call home is enabled on your cluster. You can disable call home in

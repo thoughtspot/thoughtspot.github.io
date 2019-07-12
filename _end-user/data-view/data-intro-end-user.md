@@ -14,7 +14,7 @@ The **Data** tab lists all of the tables and data sources available to you. Ther
 | Table            |                | Raw table loaded by an Administrator                             | Administrators            |
 | Worksheet        |                | Collection of related tables optimized for searching (like standard concept of a _view_) | Anyone |
 | User Imported    |                | Table uploaded by a user through the web browser (e.g. as a `.csv` file) | Anyone |
-| View             |                | Table saved as a [materialized view]({{ site.baseurl }}/complex-search/about-query-on-query.html) by a user through the web browser via **Save as view** option on a search | Anyone |
+| View             |                | Table saved as a [materialized view]({{ site.baseurl }}/complex-search/about-query-on-query.html) by a user through the web browser through **Save as view** option on a search | Anyone |
 
 
 ![]({{ site.baseurl }}/images/types_of_data_sources_table.png "Types of Data Sources")

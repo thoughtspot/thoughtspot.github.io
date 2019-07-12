@@ -31,7 +31,7 @@ cursor moves to the right of any setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The table below lists the style customizations you can configure.
+The following table lists the style customizations you can configure.
 
 <table>
   <tr>

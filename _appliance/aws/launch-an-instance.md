@@ -28,7 +28,7 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 
 ##  Prerequisites
 
-ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for setting up your EC2 details:
+ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow these guidelines for setting up your EC2 details:
 - Sign in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 - Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
 **AMI Name**: centos-golden-20171207-61be6ad-prod-small  
@@ -80,7 +80,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 12.  Click **Review and Launch**. After you have reviewed your instance launch details, click **Launch**.
 13.  Choose a key pair.
       A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.
-14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
+14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
 15.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
      They will set up the VM instances to be part of the cluster.
 16.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    

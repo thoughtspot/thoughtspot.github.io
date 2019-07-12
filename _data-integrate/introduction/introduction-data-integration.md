@@ -78,4 +78,4 @@ each method:
 -   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
 -   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  
- Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.
+ Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support through a JDBC driver that we provide.

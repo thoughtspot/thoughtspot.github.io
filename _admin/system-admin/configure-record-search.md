@@ -46,7 +46,7 @@ To record a search replay using ThoughtSpot:
 
      ![]({{ site.baseurl }}/images/record_search_replay_4.png "Select entire screen")
 
-8. When the search replay has been recorded, you'll see a confirmation. Select **Download**.
+8. When the search replay has been recorded, you can see a confirmation. Select **Download**.
 
      ![]({{ site.baseurl }}/images/record_search_replay_5.png "Download the recorded search")
 
