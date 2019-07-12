@@ -6,13 +6,10 @@ summary: "This procedure shows how to use the REST API to get data out of Though
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<<<<<<< HEAD
-Data is returned as JSON (JavaScript Object Notation). Before you can use the REST API, you need to eEnable the JavaScript API (JS API)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
-=======
+
 Data retrieved using the Data REST API is returned as JSON (JavaScript Object Notation).
 
 Before you can use the Data REST API, you need to enable the [JavaScript API (JS API)]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) and authenticate to ThoughtSpot.
->>>>>>> 2a3dbdf3c... Add legal for Ext Enterprise Edition
 
 Use this procedure to construct the URL you will use to call the Data REST API:
 
@@ -56,10 +53,7 @@ Use this procedure to construct the URL you will use to call the Data REST API:
 
 6. If you want to apply any filters to the data that will be returned, apply [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#).
 7. Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
-<<<<<<< HEAD
-  The REST API returns the data formatted as JSON.
-=======
+
   The Data REST API returns the data formatted as JSON.
 
->>>>>>> 2a3dbdf3c... Add legal for Ext Enterprise Edition
 8. Retrieve the data from the JSON and display it in your Web page, Web portal, or application.
