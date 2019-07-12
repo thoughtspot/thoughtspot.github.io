@@ -698,7 +698,7 @@ entries:
         url: /admin/mobile/deploy-mobile.html
         output: web,admBk
       - title: FAQ
-        url: /admin/mobile/faq-mobile
+        url: /admin/mobile/faq-mobile.html
         output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk

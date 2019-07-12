@@ -5,34 +5,52 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-## Requirements
+## Mobile app requirements
 - ThoughtSpot cluster running release 5.1 or later
 - iOS version 8.0 and later (iPad and iPhone only)
 
-## Download from the App Store for iOS
-If your company doesn't use any mobile device management (MDM) or mobile app management (MAM) service, your users can directly download the **ThoughtSpot app for iOS** from the App Store for iOS. If your company uses this method to deploy the app, the latest updates will be available to all users.
+## Deployment options
 
-## Deploy using MDM platforms
-There are two additional ways to deploy the app using an MDM platform:
+There are two options for your users to download the ThoughtSpot mobile app:
+- The App Store for iOS
+- A mobile device or app management platform
 
-1. Add the App Store link into your MDM **[Recommended]**: Almost all the MDM platforms support adding the app store link, which will make the ThoughtSpot app readily available to download to the internal users. Use ThoughtSpot for iOS link<Insert Link> for the same. This is the recommended method as the users will automatically get the latest updates.
+### App Store for iOS
+If your company doesn't use a mobile device management (MDM) or mobile app management (MAM) platform, your users can directly download the ThoughtSpot app from the App Store for iOS. If your company uses this method to deploy the app, the latest updates will be available to all users.
 
-  To add the ThoughtSpot iOS app to your MDM Platform use the guidance below:
+### Mobile device or app management platform
+There are two ways to provide the app to your users with your MDM or MAM platform:
 
-  - Workspace ONE (AirWatch)
-  - MobileIron (Scroll to “Adding an app from a public store”)
-  - XenMobile
-  - Intune
-  - Cisco Meraki
-2. Custom .ipa file: MDM services also provide an option to upload a custom .ipa file. There are a couple of prerequisites for this:
+- **Option 1 [Recommended]: Link to the ThoughtSpot app in the App Store for iOS.**
+
+    Almost all of the platforms allow you to add the App Store link, which makes the ThoughtSpot app available for download to your internal users. Use the link to the ThoughtSpot app in the App Store for iOS. ThoughtSpot recommends this method, because your users automatically get the latest updates.
+
+    To add the ThoughtSpot app to your management platform, refer to the following platform-specific information:
+
+    - <a href="https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-PUBLIC-APPS-WS1.html target="_blank">Workspace ONE (AirWatch)</a>
+    - <a href="http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/App_Catalog.htm target="_blank">MobileIron</a> (Scroll to “Adding an app from a public store”)
+    - <a href="https://docs.citrix.com/en-us/xenmobile/xenmobile-service/apps.html#add-a-public-app-store-app target="_blank">XenMobile</a>
+    - <a href="https://docs.microsoft.com/en-us/intune/store-apps-ios target="_blank">Intune</a>
+    - <a href="https://documentation.meraki.com/SM/Apps_and_Software/Deploying_Store_Apps_for_iOS%2F%2FmacOS_and_Android target="_blank">Cisco Meraki</a>
+
+- **Option 2: Provide a custom .ipa file of the ThoughtSpot app.**
+
+  Management platforms also provide an option to upload a custom .ipa file. There are a couple of prerequisites for this:
   - Your company must have an Apple developer enterprise account.
   - They will need to re-sign the .ipa file which can be downloaded from this Egnyte link <Insert Egnyte Link>, and the instructions to re-sign the .ipa can be found here.
 
-  To add the ThoughtSpot .ipa file to your MDM use the guidance below:
-  - Workspace ONE (AirWatch)
-  - MobileIron (Scroll to “Adding an In-house app”)
-  - XenMobile
-  - Intune
-  - Cisco Meraki
+  To add the ThoughtSpot .ipa file to your management platform, refer to the following platform-specific information:
+  - <a href="https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL.html#GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL target="_blank">Workspace ONE (AirWatch)</a>
+  - <a href="http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/App_Catalog.htm target="_blank">MobileIron</a> (Scroll to “Adding an In-house app”)
+  - <a href="https://docs.citrix.com/en-us/citrix-endpoint-management/apps.html#add-an-enterprise-app target="_blank">XenMobile</a>
+  - <a href="https://docs.microsoft.com/en-us/intune/lob-apps-ios target="_blank">Intune</a>
+  - <a href="https://documentation.meraki.com/SM/Apps_and_Software/Installing_Custom_Apps_on_iOS_and_Android_Devices target="_blank">Cisco Meraki</a>
 
-  
+#### App config support
+
+The ThoughtSpot mobile app conforms to the industry standard Appconfig community and version 1 of the app supports the following keys. You can add these keys while deploying through the MDM platform.
+
+  |Key          |Format     |Description                   |
+  |-----------------|------------|-----------------------------------|
+  |ServerUrls   |https://thoughtspot.example.com,https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from during sign-in. Separate the servers with commas.|
+  |HomePinboardHelpText  |Please drop an email to admin@example.com if you are facing difficulties in setting up your home pinboard.| The home pinboard set up help text can be customised using this key.|
