@@ -48,7 +48,7 @@ There are two ways to provide the app to your users with your MDM or MAM platfor
 
 #### AppConfig support
 
-The ThoughtSpot mobile app conforms to the industry standard AppConfig community and version 1 of the app supports the following keys. You can add these keys while deploying through your MDM platform.
+The ThoughtSpot mobile app conforms to the industry standard AppConfig community and version 1 of the app supports the following keys. You can add these keys while deploying through your MDM or MAM platform.
 
   |Key          |Format     |Description                   |
   |-----------------|------------|-----------------------------------|
