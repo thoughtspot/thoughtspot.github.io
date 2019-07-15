@@ -1,6 +1,6 @@
 Whenever you view an answer, you have the option of sharing it with others. It will be shared in its current state, so if you have modified the answer by interacting with the table or chart, the modified version is what will be shared.
 
-1. Configure the answer to look as you'll want it to appear when shared.
+1. Configure the answer to look exactly like it must appear when shared.
 2. Save the answer by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 3. Share the answer by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Share**.
 

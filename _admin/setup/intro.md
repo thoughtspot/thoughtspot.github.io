@@ -7,6 +7,7 @@ permalink: /:collection/:path.html
 ---
 Your ThoughtSpot application software is already installed for you in a
 ThoughtSpot appliance (this is true for both physical and virtual appliances).
+
 The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
 will contact you to schedule an update when one becomes available.
 
@@ -40,15 +41,22 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
+## About Management Console
+ThoughtSpot now comes with a Management Console, a self-service portal that enables network administrators to manage and monitor ThoughtSpot clusters. This console  compliments the existing tscli-based configuration. The Management Console is broadly classified into three functional areas, namely:
+- **Admin**: The existing admin-related functions such as user, data, jobs, system monitoring, styling and many more reside here.
+- **Settings**: This section allows you to configure a series of system administration modules such as SAML, SSL, LDAP, AD, SMTP and many more.
+- **Update**: This section allows you to upgrade your cluster.
+
 
 ## Related information
 
-The following tasks are available  needed:
+The following tasks are available needed:
 
 * [Set your locale]({{ site.baseurl }}/admin/setup/set-your-thoughtspot-locale.html)
 * [Test connectivity between nodes]({{ site.baseurl }}/admin/setup/test-network.html)
 * [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
 * [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html)
+* [Configure internal authentication]({{ site.baseurl }}/admin/setup/internal-auth.html)
 * [Configure SSL]({{ site.baseurl }}/admin/setup/SSL-config.html)
 * [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html)
 * [Integrate LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html)

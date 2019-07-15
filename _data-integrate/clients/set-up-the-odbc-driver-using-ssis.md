@@ -31,7 +31,7 @@ ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By
 default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required
 because the 64-bit SSIS shows a list of 32-bit ODBC drivers when you configure
 an ODBC target. However, it executes the 64-bit driver. If the drivers aren't
-named the same, then you'll get an error saying the driver doesn't exist.
+named the same, then you can get an error stating the driver doesn't exist.
 
 
 ## Set up the driver

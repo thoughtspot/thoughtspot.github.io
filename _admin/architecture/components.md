@@ -23,7 +23,7 @@ instances that are clustered together. From an external interface, regardless of
 the appliance type, the appliance appears to be a single instance.
 
 For authentication (logging in), some source of user information is required.
-These define the login requirements and access control groups. Users will access
-the data from a supported browser to view saved content or perform
+These define the login requirements and access control groups. Users must access
+the data from a supported browser to view saved content, or perform
 searched-based analytics. Finally, it is recommended that you have some sort of
 networked attached storage for storing backups in case of hardware failure.

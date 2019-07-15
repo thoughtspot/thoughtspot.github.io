@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Before you can load data with ThoughtSpot Loader, you must create a schema to receive it, using the SQL command line interface (TQL).
 
-The TQL syntax is similar to the SQL used in other relational databases, but with some important differences. You'll use DDL (data definition language) to create the schema into which you'll load the data. You'll probably want to put all your DDL statements into a text file, which you'll use as a script for creating the schema.
+The TQL syntax is similar to the SQL used in other relational databases, but with some important differences. Use DDL (data definition language) to create the schema into which you can load the data. We recommend combining all DDL statements into a single script for creating the schema.
 
 Before writing your TQL script, you need to understand some basic ThoughtSpot concepts.
 
@@ -35,7 +35,7 @@ The schema you create to hold the data needs to be a good fit for your data. Fir
 -   The size of the table on disk
 -   Any other tables it can be joined with (foreign keys)
 
-Here's what you'll need to take into account in your TQL for creating each table, based on these properties:
+Here's what you must take into account in your TQL for creating each table, based on these properties:
 
 |Table type|Table size|To be joined with|Schema recommendations|
 |----------|----------|-----------------|----------------------|

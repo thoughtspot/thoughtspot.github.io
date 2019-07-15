@@ -59,7 +59,7 @@ The output of the script is either PNG or CSV. This example script uses
 emit data in PNG format.
 
 Presently, error reporting is limited for R scripts in SpotIQ. You should
-validate your R script independent of your ThoughtSpot environment. Once you are
+validate your R script independent of your ThoughtSpot environment. After you are
 sure they are free of syntax or other errors, then try the script in
 ThoughtSpot.
 

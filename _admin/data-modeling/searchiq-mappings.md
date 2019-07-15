@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 
 When a user types a term in the SearchIQ search bar, one of the ways SearchIQ understands what the user means is through language mappings. Users can teach their language to SearchIQ using [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
 
-As an administrator, you can see and change these language mappings by editing the mappings file. You will be able to get the mappings file if you are in the Administrator group, because then you'll have access to the **ADMIN > Data Management** page. You can download the mappings file there. This allows you to view and edit all the language mappings users have made at once, in bulk.
+As an administrator, you can see and change these language mappings by editing the mappings file. You can access the mappings file if you are in the Administrator group, because then you can have access to the **ADMIN > Data Management** page. You can download the mappings file there. This allows you to view and edit all the language mappings users made, in bulk.
 
 ## Overview of the mapping process
 
@@ -78,7 +78,7 @@ ThoughtSpot before the changes will take effect. To upload the mapping file:
 
     If you receive an error message upon uploading the file, check that it does
     not include any multi-byte characters (for example, Japanese or other multi-byte
-    language characters). If it does, you'll need to save it as UTF-8 encoded. You may need to download the file again and
+    language characters). If it does, you must save it as UTF-8 encoded. You may need to download the file again and
     make your edits using vi or vim.
 
 As soon as the file is uploaded, your new settings will be reflected within a few minutes.

@@ -14,7 +14,7 @@ These are the different sections in ThoughtSpot:
 ## Home
 
 Click the ThoughtSpot logo to go to the application home page. At the top of the
-home page is a search bar and below that several areas that show activity in ThoughtSpot.
+home page you can see a search bar, and several areas that show activity in ThoughtSpot.
 
 <table>
 <colgroup>
@@ -31,8 +31,8 @@ home page is a search bar and below that several areas that show activity in Tho
   <tr>
     <th>All time popular<br>Recently trending</th>
     <td>
-    Shows all time popular answers and pinboards by number of views. You can
-    choose between all-time popular or recently in the last 15 days. Small icons illustrate the type of visualization you'll find when you click an item.
+    Shows all-time popular answers and pinboards, by number of views. You can
+    choose between all-time popular, or recently in the last 15 days. Small icons illustrate the type of visualization you can find when you click an item.
     <br>
     <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
 </td>
@@ -73,7 +73,7 @@ to use SpotIQ, that option does not appear.
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-If SearchIQ has been enabled by your administrator, this label will say **Search+** to differentiate it from SearchIQ. In this case, you'll go to the search bar on the homepage to use SearchIQ.
+If SearchIQ has been enabled by your administrator, this label will say **Search+** to differentiate it from SearchIQ. In this case, use the search bar on the homepage to use SearchIQ.
 
 To learn more about this section, visit [About search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html#).
 
@@ -85,7 +85,7 @@ Answers are the result of a single search. You can save an answer you want to wo
 
 ## Pinboards
 
-Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. Once a pinboard has been saved, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click one to view, edit, or share it.
+Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. After saving a pinboard, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click one to view, edit, or share it.
 
 To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 

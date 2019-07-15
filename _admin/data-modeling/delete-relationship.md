@@ -21,7 +21,7 @@ To delete a relationship from the Web interface:
 
 3. Click **Schema**. You will see the list showing existing joins.
 
-   If this is a worksheet, you will need to click **Joins within worksheets** and choose **Joins between worksheets**.
+   If this is a worksheet, you must click **Joins within worksheets** and choose **Joins between worksheets**.
 
       ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
 

@@ -3,7 +3,6 @@ title: [Configure support services]
 tags: [tscli, Supportability,logs]
 keywords: tbd
 last_updated: tbd
-summary: "Set up and configure ThoughtSpot support services for your installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,9 +24,52 @@ This access can be granted and revoked easily, so you can enable it for a troubl
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-Before you can do this procedure, your networking team needs to open port `22`
-in your firewall outgoing rules.
+**_NOTE:_** Before you set up a reverse tunnel, open port `22`
+in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
+### Using Management Console
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** icon on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** icon on the top navigation bar.
+
+   **image**
+
+4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Configure** option.
+
+   **image**  
+
+5. Enter the reverse tunnel details:
+
+      **image**
+
+      <table>
+      <colgroup>
+      <col width="20%" />
+      <col width="80%" />
+      </colgroup>
+      <tr>
+      <th>Field</th>
+      <th>Description</th>
+      </tr>
+      <tr>
+      <th>Have you whitelisted tunnelrelay.thoughtspot.com?</th>
+      <td>Ensure that this has been done before you enable the SSH tunnel. Select <b> Yes </b> to continue.</td>
+      </tr>
+      <tr>
+      <th>Reverse SSH Tunnel</th>
+      <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
+      </tr>
+      </table>
+
+6. Click **Save** to configure the SSH tunnel.
+
+You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
+
+### Using tscli
 To enable remote support:
 
 1. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and open a support ticket for making the appropriate reverse tunnel settings on our end.
@@ -36,7 +78,7 @@ To enable remote support:
 3. Log into the Linux shell using SSH.
 4. Issue the command to configure the destination for the remote tunnel.
 
-    You only need to do this once, when you are enabling the tunnel for the very
+    You only need to do this one time, when you are enabling the tunnel for the very
     first time. After that, this setting persists when you start and stop the
     remote tunnel.
 
@@ -57,7 +99,7 @@ To enable remote support:
     ```
 
 7. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and test the setup with your ThoughtSpot Support contact.
-8. After your remote session with ThoughtSpot Support, turn the remote tunnel off, until you need to use it again:
+8. After your remote session with ThoughtSpot Support is over, turn the remote tunnel off until you need to use it again:
 
     ```
     $ tscli support stop-remote
@@ -83,7 +125,7 @@ and password for logging in to the secure file server. You can get these from
 ThoughtSpot Support.
 
 Configuring the connection to the file server is a one time operation. You do
-not need to reconfigure the connection unless your password changes. Note that
+not have to reconfigure the connection unless your password changes. Note that
 you can do a one time override of the user and password you used to configure
 the connection. This is done by passing a different user and password on the
 command line when uploading or downloading a file.
@@ -106,7 +148,7 @@ To configure the connection to the secure file server:
 data allows ThoughtSpot's Support team to troubleshoot your cluster. They use
 the data to see basic usage information over time for your ThoughtSpot instance.
 ThoughtSpot's "call home" functionality intermittently sends a call home bundle
-of  statistics to a ThoughtSpot S3 server via HTTPS. The data is encrypted at
+of  statistics to a ThoughtSpot S3 server through HTTPS. The data is encrypted at
 rest on the server.
 
 By default, call home is enabled on your cluster. You can disable call home in

@@ -28,16 +28,16 @@ To view dependent objects for a data source:
 
 4. Click a dependent object to modify or delete it.
 
-    If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
+    If you want to remove the dependency by modifying the dependent object, you must remove all search terms or columns that refer back to the data source you are trying to delete.
 
 5. When all dependencies have been removed, you will be able to go back and delete the data source.
 
 ## Delete a data source
 
 You can delete data sources from the browser, as long as they were not created
-by an administrator through `tsload` or Data Connect.
+by an administrator through `tsload`.
 
-You can delete data sources from the browser if they were created from the
+You can delete data sources from the browser if they were created in the
 browser. These types of data sources include:
 
 -   Data imported from the browser.
@@ -62,6 +62,6 @@ ThoughtSpot checks for dependencies whenever you try to delete a table or worksh
 
 5. Click a dependent object to modify or delete it.
 
-    If you want to remove the dependency by modifying the dependent object, you'll need to remove all search terms or columns that refer back to the data source you are trying to delete.
+    If you want to remove the dependency by modifying the dependent object, you must remove all search terms or columns that refer back to the data source you are trying to delete.
 
 6. When all dependencies have been removed, you will be able to go back and delete the data source.

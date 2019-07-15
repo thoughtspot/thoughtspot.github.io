@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Java Database Connectivity (JDBC) is a Java standard API that allows
 applications to interact with databases in a standard manner. ThoughtSpot has
-JDBC support via a JDBC driver we provide.
+JDBC support through a JDBC driver that we provide.
 
 ## Connector type
 

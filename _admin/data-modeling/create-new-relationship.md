@@ -13,7 +13,7 @@ If you want to create a primary key/foreign key relationship, you need to [use T
 
 You must have either the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
-When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you'll make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
+When creating a join between the columns in two data sources, the linked columns must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you can make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
 
 To create a relationship through the Web interface:
 
@@ -39,7 +39,7 @@ To create a relationship through the Web interface:
 
 8.  Repeat these steps until all the joins you want to make have been created.
 
-After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you'll need to delete the join and create a new one.
+After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.
 
 ## Related Information
 

@@ -10,7 +10,7 @@ This section discusses three strategies for backing up your ThoughtSpot cluster.
 
 ## Snapshots
 
-A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs the system to periodically take snapshots. Creation of a snapshot takes about 20 seconds. Once taken, a snapshot is persisted on disk in the cluster's HDFS.
+A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs the system to periodically take snapshots. Creation of a snapshot takes about 20 seconds. After creation, a snapshot persists on disk in the cluster's HDFS.
 
 You can also create a snapshot manually. You should create a snapshot before making any changes to the environment, loading a large amount of new data, or changing the structure of a table. A snapshot may only be restored to the same cluster on which it was taken. The cluster software release version must match the snapshot release version.
 
@@ -85,8 +85,7 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
                         <ul id="ul_c1v_mmc_m1b">
                             <li>Includes  all data, state, and metadata etc. created between
                                 snapshot creation and restore.</li>
-                            <li>Are lost if the HDFS name node fails, you lose multiple disks at
-                                once, or the entire cluster is destroyed</li>
+                            <li>Are lost if the HDFS name node fails, you lose multiple disks, or the entire cluster is destroyed</li>
                             <li>Can only restored to the cluster they were taken from</li>
                         </ul>
                     </td>

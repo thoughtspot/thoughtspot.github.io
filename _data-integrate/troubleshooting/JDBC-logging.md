@@ -6,7 +6,7 @@ summary: "Configure logging parameter strings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To enable logging for JDBC, add the logging parameters to the connect string. Logs are stored on ThoughtSpot. Before enabling JDBC logging, you will need:
+To enable logging for JDBC, add the logging parameters to the connect string. Logs are stored on ThoughtSpot. Before enabling JDBC logging, you need:
 
 -   The level of logging you want to capture.
 -   The path on the ThoughtSpot server where the logs will be written. Make sure the directory has the correct permissions so that the "admin" Linux user can write logs to it.

@@ -59,7 +59,7 @@ To show data markers:
 2. Select **Regression line**.
 
   You can show regression lines on most types of charts (bar, stacked bar, line,
-  bubble, and so on). In the examples below, `sales` is the measure and `department` is
+  bubble, and so on). In the following examples, `sales` is the measure and `department` is
   the attribute.
 
   ![]({{ site.baseurl }}/images/regression-line.png)
@@ -97,7 +97,7 @@ You can have multiple measures on the y-axis of most (but not all) chart types, 
 
     ![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis-annotated.png "Stacked column chart example: "Show multiple measures on Y-Axis")
 
-    * If your original chart had a legend, you will get a message saying _"When
+    * If your original chart had a legend, you will get a message stating _"When
     there are multiple columns on the y-axis, you cannot add a legend.
     `<Measure>` is already in use."_ If so, remove the legend and the chart will
     update to show multiple measures on the y-axis.

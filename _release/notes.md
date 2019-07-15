@@ -24,12 +24,11 @@ directly:
 
 * 5.0.x to 5.3
 * 5.1.x to 5.3
-* 5.2.x to 5.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.3 release.
+First, upgrade to version 5.0.x or versin 5.1.x, and then to the 5.3 release.
 
 <!-- {: id="521-fixed"}
 ## 5.2.1 Fixed Issues

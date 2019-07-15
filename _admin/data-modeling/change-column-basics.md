@@ -63,8 +63,7 @@ columns with the numeric data types (`FLOAT`, `DOUBLE`, `INT`, or `BIGINT`) are
 assigned the type `MEASURE`. Columns with `VARCHAR`, `BOOL`, or date/time data
 types are assigned the type `ATTRIBUTE`.
 
-Usually the default setting for column type works fine. But occasionally you'll
-need to change a `MEASURE` to an `ATTRIBUTE`. Examples of numeric values for
+Usually the default setting for column type works fine. But occasionally, you must change a `MEASURE` to an `ATTRIBUTE`. Examples of numeric values for
 which mathematical operations are not meaningful include:
 
 - ID numbers

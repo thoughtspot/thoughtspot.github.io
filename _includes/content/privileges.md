@@ -29,7 +29,7 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create a worksheet. Can also create a view from the results of a search by selecting <strong>Save as view</strong>. Can also use ThoughtSpot Data Connect, if it is enabled on your cluster.</td>
+      <td>Can create a worksheet. Can also create a view from the results of a search by selecting <strong>Save as view</strong>.</td>
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
@@ -49,7 +49,7 @@
     </tr>
     <tr>
       <td><strong>Can administer and bypass RLS</strong></td>
-      <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
+      <td><p>Users in groups with this privilege (directly or through group inheritance):</p>
 <ul>      <li>Are exempt from row-level security (RLS) rules.</li>
       <li>Can add/edit/delete existing RLS rules.</li>
       <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>

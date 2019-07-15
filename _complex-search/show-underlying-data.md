@@ -13,7 +13,7 @@ aggregate revenue value for each customer region. Then, you can right-click any 
 and then click **Show underlying data**, to see each value which constitutes `revenue`
 for any given region.
 
-Only the first 1,000 rows are shown when viewing the underlying data. You can
+Only the first 1,000 rows appear when viewing the underlying data. You can
 even download the results shown when you choose **Show underlying data** from a
 chart. The download file limit is a million rows.
 

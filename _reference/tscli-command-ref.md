@@ -327,8 +327,8 @@ tscli fileserver [-h] {configure,download-release,purge-config,show-config,uploa
 
 This subcommand has the following actions:
 
-* `tscli fileserver configure [-h] --user` *`USER`* `[--password ` *`PASSWORD`* `]` Configures the secure file server username and password for file upload/download and the call home feature. You only need to issue this command once, to set up the connection to the secure file server. You only need to reissue this command if the password changes. The parameter *`PASSWORD`* is optional. If a password is not specified, you will be prompted to enter it.
-* `tscli fileserver download-release [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`]` *`release`* Downloads the specified release file, including its checksum, and verifies the integrity of release bundle. You'll need to specify the exact release number (e.g. 5.1.3). Before using this command for the first time, you must set up the file server connection using `tscli fileserver configure`. You will then work with a member of the ThoughtSpot Support team since a privileged `--user` (and corresponding `--password`) must be specified to download releases.
+* `tscli fileserver configure [-h] --user` *`USER`* `[--password ` *`PASSWORD`* `]` Configures the secure file server username and password for file upload/download and the call home feature. You only need to issue this command one time, to set up the connection to the secure file server. You only need to reissue this command if the password changes. The parameter *`PASSWORD`* is optional. If a password is not specified, you will be prompted to enter it.
+* `tscli fileserver download-release [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`]` *`release`* Downloads the specified release file, including its checksum, and verifies the integrity of release bundle. You must specify the exact release number (e.g. 5.1.3). Before using this command for the first time, you must set up the file server connection using `tscli fileserver configure`. You will then work with a member of the ThoughtSpot Support team since a privileged `--user` (and corresponding `--password`) must be specified to download releases.
 * `tscli fileserver purge-config` Removes the file server configuration.
 * `tscli fileserver show-config` Shows the file server configuration.
 
@@ -439,9 +439,9 @@ This subcommand has the following actions:
   * `--include` *`INCLUDE`*
 
     Specifies a comma separated list of logs to include. Each entry is either a
-    "selector" or a glob for matching files.Selectors must be among: `all`,
+    "selector" or a glob for matching files. Selectors must be among: `all`,
     `orion`, `system`, `ts`. Anything starting with `/` is assumed to be a glob
-    pattern and interpreted via `find(1)`. Other entries are ignored. Put single
+    pattern, and it is interpreted through `find(1)`. Other entries are ignored. Put single
     quotes around the param value to prevent undesired glob expansion (default:
     `all`)
 
@@ -480,12 +480,12 @@ This subcommand has the following actions:
     spaces etc. Language used to specify CMDSTR has following rules.
 
     * A logfile and its corresponding result file can be referred by keywords `SRCFILE` &
-    `DSTFILE`. eg. `cp SRCFILE DSTFILE`
+    `DSTFILE`. For example, `cp SRCFILE DSTFILE`.
 
     * Without any reference to DSTFILE in CMDSTR, `> DSTFILE` will be appended to CMDSTR for output redirection. eg `du
     -sch SRCFILE` gets auto- transtalted to `du -sch SRCFILE > DSTFILE`
 
-    * Without any reference to SRCFILE, content of log is streamed to CMDSTR via pipe. eg.
+    * Without any reference to SRCFILE, content of log is streamed to CMDSTR by pipe. For example:
     `tail -n100 | grep ERROR` gets auto-transtalted to `cat SRCFILE | tail -n100 |
     grep ERROR > DSTFILE` (default: None)
 
@@ -494,7 +494,7 @@ This subcommand has the following actions:
     Comma separated list of logs to include,each entry is either a "selector" or
     a glob for matching files.Selectors must be among: `all`, `orion`, `system`,
     `ts`. Anything starting with / is assumed to be a glob pattern and
-    interpreted via `find(1)`. Other entries are ignored. TIP: put single quotes
+    interpreted through `find(1)`. Other entries are ignored. TIP: put single quotes
     around the param value to prevent undesired glob expansion (default: all)
 
   * `--exclude` *`EXCLUDE`*     
@@ -588,9 +588,8 @@ This subcommand has the following actions:
   * `--mount_point` *`MOUNT_POINT`*
 
     Directory on all cluster nodes where the NFS filesystem should be mounted
-    (target). This directory does not need to already exist. If this directory
-    already exists, a new directory is not created and the existing directory is
-    used for mounting. For example: `/mnt/external` (default: None)
+    (target). If this directory does not exist, the command creates it. If this directory
+    already exists, the command uses it for mounting. For example: `/mnt/external` (default: None)
 
   * `--username` *`USERNAME`*   Username to connect to the CIFS filesystem as (default: None)
   * `--password` *`PASSWORD`*  CIFS password for `--username` (default: None)
@@ -618,7 +617,7 @@ This subcommand has the following actions:
   * `--mount_point` `MOUNT_POINT`
 
     Directory on all cluster nodes where the NFS filesystem should be mounted
-    (target). This directory does not need to already exist. If this directory
+    (target). This directory does not have to already exist. If this directory
     already exists, a new directory is not created and the existing directory is
     used for mounting. For example: `/mnt/external` (default: None)
 
@@ -629,7 +628,7 @@ This subcommand has the following actions:
 
     Unmounts all devices from the specified *`DIR`* (directory) location. This
     command returns an error if nothing is currently mounted on this directory
-    via `tscli nas mount` (default: None)
+    through `tscli nas mount` (default: None)
 
 ### node
 
@@ -997,7 +996,7 @@ This subcommand supports the following actions:
     to get all selectors and logs, and "basic" to get only the basic selectors.
     Selectors may also be selectors meant for logs collect: all, orion, system, ts,
     or the name of a service. Anything starting with / is assumed to be a glob
-    pattern and interpreted via find(1). Other entries are ignored. TIP: put single
+    pattern and interpreted through find(1). Other entries are ignored. TIP: put single
     quotes around the param value to prevent undesired glob expansion. Use "all" to
     collect all selectors and all logs (default: all_but_logs)
 

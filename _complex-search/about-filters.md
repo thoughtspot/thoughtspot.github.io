@@ -35,7 +35,7 @@ As you have seen with search, filters appear in grey boxes in the search bar.
 
  ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with filters")
 
-In an answer or a pinboard, filters appear just below the title. For pinboards,
+In an answer or a pinboard, filters appear just under the title. For pinboards,
 your filters apply to all worksheet-based visualizations in the pinboard.
 
  ![]({{ site.baseurl }}/images/filter_appears.png "Pinboard filters")
@@ -57,12 +57,12 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the ellipses icon 
+When adding a filter from the ellipses icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the column header or by clicking on a chart axis, numeric columns and
 text columns provide you with the ability to include or exclude values, and
-a checkbox selector for the values. If the column contains a date, you'll see a
-calendar selector when applying a filter. This is also where you'll go to apply bulk filters.
+a checkbox selector for the values. If the column contains a date, you can see a
+calendar selector when applying a filter. This is also where you can apply bulk filters.
 
 ## Bulk filters
 

@@ -34,7 +34,7 @@ TQL actions with possible dependency consequences include:
 -   Change or add a sharding key.
 -   Drop a table, schema, or database.
 
-When issuing one of the above commands, you will see a warning message similar to this:
+When issuing one of the previous commands, you will see a warning message similar to this:
 
 ```
 TQL> ALTER TABLE table1

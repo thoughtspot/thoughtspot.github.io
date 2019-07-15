@@ -88,7 +88,7 @@ here.
 
 4. Select a location.
 
-5. Click **OK** to save the Basics, which should look similar to the example below.
+5. Click **OK** to save the Basics, which should look similar to the following example.
 
    ![]({{ site.baseurl }}/images/azure_ts_vm_basics.png "Basic settings on the ThoughtSpot Azure VM")
 
@@ -148,14 +148,14 @@ When you are satisfied with the virtual machine setup, click **Create**.
 
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log in to the VM, you will need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
-   - To see the private IP click Networking (below SETTINGS on the left side of the screen).
+   - To see the private IP click Networking (under SETTINGS on the left side of the screen).
 
-2. Connect to the VM via SSH, using the private key provided for the admin user.
+2. Connect to the VM through SSH, using the private key provided for the admin user.
 
    - You must file a support ticket to obtain this private key; it is necessary for the first login.
    - This key is different from the credentials and|or private keys supplied in earlier steps, which do not work in this context.

@@ -12,7 +12,7 @@ This section includes some tips and best practices for using ThoughtSpot Data Co
 
 Unless you're trying to bring in relationships between tables with a data source, the recommendation is to create one data source load job per table. Doing this makes your data sources more flexible for if/when you need to change something (add a column, etc.)
 
-If you want to add a foreign key, do it using the TQL command ALTER TABLE, after the load has completed. This is often easier than trying to get relationships to come in with a data load, and it works even if the relationship you want to create does not exist in the source system. If use this method, you'll need to manually create the relationships using a TQL script, which you can run afterward the first data load.
+If you want to add a foreign key, do it using the TQL command ALTER TABLE, after the load has completed. This is often easier than trying to get relationships to come in with a data load, and it works even if the relationship you want to create does not exist in the source system. If use this method, you must manually create the relationships using a TQL script, which you can run afterward the first data load.
 
 ### Derived column names
 
@@ -24,7 +24,7 @@ If you're doing incremental loads into existing tables, you may want to automate
 
 ### Renaming columns and tables
 
-ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. If a column or table name changes on the source, you will need to recreate the data load job.
+ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. If a column or table name changes on the source, you must recreate the data load job.
 
 In older versions of ThoughtSpot Data Connect, you could not use characters other than alphanumeric and underscores. Now, you can change a column name to use those, for example you could change "percent_gross_margin" to "% gross margin".
 

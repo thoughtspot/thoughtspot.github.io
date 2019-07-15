@@ -1,29 +1,32 @@
 ---
 title: ["About SearchIQ"]
 keywords: SearchIQ,answer,introduction,"search bar","natural language",speech,voice
-last_updated: tbd
+last_updated: 07/08/2019
 summary: "With SearchIQ you can search using natural language or by speaking."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-In order to understand natural language searches, SearchIQ collects data on searches and user language preferences. More information on what SearchIQ collects is available [here]({{ site.baseurl }}/end-user/search/searchiq-data-collection.html).
+In order to understand natural language search, SearchIQ collects data on searches and user-language preferences. Find more information about what SearchIQ collects at [SearchIQ data collection]({{ site.baseurl }}/end-user/search/searchiq-data-collection.html).
 
-SearchIQ is a different search experience that understands more natural, speech-like search language than [the original ThoughtSpot search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html). For example, you can search for `What was my top selling product last month?`, instead of having to type `top 1 product by sales last month`. You can also speak your search using the voice-to-text capability of your operating system.
+SearchIQ is a different search experience that understands more natural, speech-like search language than the [original ThoughtSpot search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html). For example, you can search for `What was my top selling product last month?`, instead of typing `top 1 product by sales last month`. You can also speak your search using the voice-to-text capability of your operating system.
 
 ## How do I use SearchIQ?
 
-{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You'll also need to be a member of a group that has the **Can use experimental features** permission." %}
+
+Search IQ collects data to improve accuracy of natural language interpretation. For more details, see [SearchIQ data collection]({{ site.baseurl }}/end-user/search/searchiq-data-collection.html).
+
+{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You must also be a member of a group that has **Can use experimental features** permissions." %}
 
 Clicking on the search bar on your homepage, or clicking **Search** in the top menu bar takes you to the search screen.
 
-From here, if SearchIQ has been enabled for you by your administrator, you'll notice a **SearchIQ** toggle button to the right of the search bar.
+From here, if SearchIQ is enabled for you by your administrator, you can see a **SearchIQ** toggle button to the right of the search bar.
 
  ![]({{ site.baseurl }}/images/choose_searchiq.png "Search bar")
 
 Switch it to the on position. This puts the search into SearchIQ mode, and you can now type in a search using plain, speech-like language.
 
-If you leave the **SearchIQ** setting in the off position, you'll get the [original ThoughtSpot search experience]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html), which uses keywords, column names, and data values.
+If you leave the **SearchIQ** setting in the off position, you have the [original ThoughtSpot search experience]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html), which uses keywords, column names, and data values.
 
 ## What kinds of things can I type?
 
@@ -33,7 +36,7 @@ Like regular search, SearchIQ is based on the tables that exist in your data. Ta
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
 -   One of the special [keywords]({{ site.baseurl }}/reference/keywords.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
 
-What's different about SearchIQ is that the form of your question can be more like natural language. This means that SearchIQ will ignore extraneous words like `What was the` or `Can you show me`. If you find that your natural language search doesn't return the results you expect, you can [teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html) easily.
+What's different about SearchIQ is that the form of your question can be more like natural language. This means that SearchIQ ignores extraneous words like `What was the` or `Can you show me`. If you find that your natural language search doesn't return the results you expect, you can [teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html) easily.
 
 ## How do I use voice search with SearchIQ?
 
@@ -43,7 +46,7 @@ Make sure your microphone on your computer is enabled and working correctly. If 
 
 Next, make sure your browser supports the text-to-speech capability by consulting its documentation.
 
-If all is well, you'll see a microphone icon it the search bar, when it is in SearchIQ mode. Clicking on the microphone will begin accepting voice input, which is translated to text in the search bar.
+If all is well, you can see a microphone icon it the search bar, when it is in SearchIQ mode. Clicking on the microphone will begin accepting voice input, which is translated to text in the search bar.
 
 {% include note.html content="If the SearchIQ text-to-speech functionality is not working, ensure that you are accessing ThoughtSpot in your browser using HTTPS:// and not HTTP://." %}
 

@@ -10,12 +10,12 @@ If your organization has a trusted authentication server, you can use this
 server to authenticate users of the embedded ThoughtSpot application. After
 authenticating a user, the trusted authenticator server or service obtains an
 authentication token from ThoughtSpot on the user's behalf. In this way, the
-user need only authenticate once, with the trusted authentication server.
+user need only authenticate one time, with the trusted authentication server.
 
 
 ## How users are authenticated
 
-In the scenario below, the trust authenticator forwards requests for ThoughtSpot
+In the following scenario, the trust authenticator forwards requests for ThoughtSpot
 data from client applications to ThoughtSpot.
 
 ![]({{ site.baseurl }}/images/authentication.png "Authentication flow")
@@ -61,7 +61,7 @@ return a new one. To disable a token and not overwrite it:
 tscli tokenauthentication disable
 ```
 
-Once generated, tokens do not expire.
+Generated tokens do not expire.
 
 ## Trusted authentication call     
 

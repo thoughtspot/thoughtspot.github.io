@@ -19,5 +19,5 @@ This guide instructs you how to prepare each of the following:
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/about-gcp.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
 
-Once you've configured your nodes, you can contact [ThoughtSpot
+After you configure your nodes, you can contact [ThoughtSpot
 Support]({{ site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a support ticket.

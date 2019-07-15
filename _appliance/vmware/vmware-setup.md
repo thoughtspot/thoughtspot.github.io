@@ -25,7 +25,7 @@ for a sandbox environment but is insufficient for a production environment.
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
    power of the physical host. Extra cores help performance.
-   
+
    You should aim to allocate 490 GB or more RAM.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
@@ -133,7 +133,7 @@ additional, larger capacity disks.
 5. Save your changes.
 6. Repeat steps 1-5 to create more hard disks.
 7. Power on the VM
-8. Once the VM is online, run the following command to prepare the HDFS disks:
+8. After the VM is online, run the following command to prepare the HDFS disks:
 
     ```shell
     sudo /usr/local/scaligent/bin/prepare_disks.sh
@@ -147,4 +147,4 @@ There is no network at this point on your VMs. As a prerequisite:
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
 
-Once done, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
+After you finish, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.

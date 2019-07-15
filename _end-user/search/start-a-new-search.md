@@ -30,8 +30,8 @@ To start a new search:
 
 3. Add columns to the search bar, or double click columns in the Data column in the left panel.
 
-   The columns listed in the left panel are grouped together by data sources for discoverability and ease of access. You can also add multiple columns at once by clicking each column to select it, and then click **+ Add Columns**.
+   The columns listed in the left panel are grouped together by data sources for discoverability and ease of access. You can also add multiple columns by clicking each column to select it, and then clicking **+ Add Columns**.
 
-     ![]({{ site.baseurl }}/images/add_multiple_columns.png "Add multiple columns at once")
+     ![]({{ site.baseurl }}/images/add_multiple_columns.png "Add multiple columns")
 
 Your search is given an automatic title based on your search columns, and is displayed as either a table or chart, depending on how it is best represented. You can [change the view]({{ site.baseurl }}/complex-search/change-the-view.html#) to fit your needs.

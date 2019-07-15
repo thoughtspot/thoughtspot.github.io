@@ -42,7 +42,7 @@ Then, do the following on *every ThoughtSpot node* in your cluster.
     ```
 5. Restart the Simba service.
 
-   You need to work with your ThoughtSpot Customer Success or Support Engineer to do this.
+   You must work with your ThoughtSpot Customer Success or Support Engineer to do this.
 
 ## Deploy the certificate on your windows workstation
 
@@ -59,7 +59,7 @@ server will behave. For example:
 
 {% include note.html content="Note that the SSL and certificate parameters can
 be set through the pre-defined options on the options dialog, but customers have
-reported that these are not always reliable. In the procedure below, we
+reported that these are not always reliable. In the following procedure, we
 recommend using custom properties to define these settings (either preemptively,
 or as a solution if the ODBC connection over SSL does not work with the
 pre-defined options). There is no harm in setting both. Example settings are:

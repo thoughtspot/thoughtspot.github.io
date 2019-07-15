@@ -13,7 +13,7 @@ There are a few ways for Administrators to optimize how SearchIQ interprets natu
 
 ## How do I optimize SearchIQ?
 
-{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You'll also need to be a member of a group that has the **Can use experimental features** permission." %}
+{% include note.html content="SearchIQ is turned off by default, but your administrator can enable it for you. You must also be a member of a group that has the **Can use experimental features** permission." %}
 
 There are two main ways to optimize SearchIQ to understand natural language searches:
 
