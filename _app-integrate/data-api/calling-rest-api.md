@@ -1,16 +1,12 @@
 ---
-<<<<<<< HEAD
 title: [Calling the REST API]
 tags:
-=======
-title: [Calling the Data REST API]
->>>>>>> 2a3dbdf3c... Add legal for Ext Enterprise Edition
 keywords: API,URL,calling,REST,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To call the Data REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
+To call the REST API, you'll specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.
 
 ## Specify the pinboard or visualization example
 
