@@ -1,5 +1,10 @@
 ---
+<<<<<<< HEAD
+title: [REST API pagination]
+tags:
+=======
 title: [Data REST API pagination]
+>>>>>>> 2a3dbdf3c... Add legal for Ext Enterprise Edition
 keywords: REST,API,pagination,JSON,"REST API"
 last_updated: tbd
 summary: "You can paginate the JSON response that is called from the REST API. The order of the data is retained from page to page."
