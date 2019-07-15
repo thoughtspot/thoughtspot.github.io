@@ -1,15 +1,15 @@
 ---
-title: ["5.2 Release Notes"]
+title: ["5.3 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: May 2019
+last_updated: July 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
 <!-- * [5.2.1 Fixed Issues](#521-fixed) -->
@@ -63,9 +63,25 @@ A problem where scheduled pinboard emails failed to send to a specific recipient
 
 Embedded pinboards no longer occasionally display a Pin button.
 -->
-{: id="52-new"}
-## 5.2 New Features and Functionality
+{: id="53-new"}
+## 5.3 New Features and Functionality
 
+### Onboarding
+
+In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time.
+
+See [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onb oarding.html).
+
+To include each user in the onboarding process, each user profile must now use a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+
+When you creat a new user, we recommend that you adde them to a user group immediately. That user group, in turn, must be configured to use up to three default pinboards, and use a welcome email.
+
+SCAL-37498
+
+To configure the email protocols necessary for onboarding, the administrator has to specify the onboarding
+configuration. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+
+<!--
 ### ThoughtSpot mobile beta
 
 Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
@@ -119,9 +135,10 @@ ThoughtSpot now supports seven new languages, available in the Profile page:
 * Spanish (Spain)
 * Italian
 * English (Australia)
+-->
 
-{: id="52-fixed"}
-## 5.2 Fixed Issues
+{: id="53-fixed"}
+## 5.3 Fixed Issues
 
 Table user experience improvements:
 * The column header is now left-aligned.

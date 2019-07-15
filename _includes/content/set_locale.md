@@ -1,7 +1,10 @@
-The language the ThoughtSpot UI displays is based off of the locale in a user's
-profile. The Preferred Locale preferences controls the language and data formats (date and
-number formats) by geographic locations. In addition to American English (*en-US*),
-ThoughtSpot supports:
+By default, the language that ThoughtSpot UI displays depends on the system locale. It is simple to change it using the **Profile** interface.
+
+The **Language** selection specifies more than just the language: it sets the locale, which controls both the language choice and standard data formats for date and number. So, if you set French as the default locale in your profile settings, the interface updates to reflect this. Be sure to refresh your browser page.
+
+For example, in the United States the number format for large numbers uses the comma thousands separator and a period decimals separator, and looks like this: `xxx,xxx.xx`. In most  European countries, they use the reverse notation, with comma decimals separator and period thousands separator, like this: `xxx.xxx,xx`.
+
+In addition to American English (*en-US*), ThoughtSpot supports the following locales:
 
 | Locale |  Language  
 |---|---|
@@ -25,19 +28,6 @@ ThoughtSpot supports:
 | *zh-CN* | 中文(简体)  |
 | *ja-JP* | 日本語  |
 
-Date and number formats change to reflect your locale. So, if you set Japanese
-as your default locale in your profile settings, then the interface will update
-to reflect that after you refresh your page.
+ThoughtSpot translates keywords, operators, and error messages. See the [keyword reference for all supported languages]({{ site.baseurl }}/reference/keywords.html).
 
-Keywords, operators, and error messages are included in the translated material.
-(A [keyword reference for all supported languages]({{ site.baseurl }}/reference/keywords.html)
-is included in this documentation under "Keywords in Other Languages".)  
-
-Formulas, however, are _not translated_. Also, all metadata remains as user
-inputted.
-
-![]({{ site.baseurl }}/images/profile-locale.png "Specify Profile locale")
-
-For example, if you are using ThoughtSpot in the US, the number formatting
-should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
-`xxx.xxx,xx`.
+ThoughtSpot _DOES NOT_ translate formulas, or metadata entered by the user. For example, if you name a visualization 'Quarterly Sales' in any variant of English and subsequently change the locale to a variant of French, the visualization remains 'Quarterly Sales' and does not become 'Ventes trimestrielles'.
