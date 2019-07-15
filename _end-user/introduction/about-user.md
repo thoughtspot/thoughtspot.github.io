@@ -27,7 +27,12 @@ Under **Preferences**, see the **Language** option to set the language.
 
 {% include content/set_locale.md %}
 
-## Email ##
+[]## Email Notifications##](#email-notifications)
+Under **Preferences**, see the **Notifications** option.
+
+Select **Email me sharing notifications** to receive automatic messages whenever another user shares pinboards with you.
+
+![]({{ site.baseurl }}/images/profile-email-notifications.png "Email sharing notifications")
 
 [## Revisit Onboarding ##](#revisit-onboarding)
 
