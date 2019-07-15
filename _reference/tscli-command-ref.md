@@ -654,6 +654,41 @@ This subcommand has the following actions:
 * `tscli node resume-reinstall-os` Resume in-progress reinstall
 
 
+### [onboarding](#tscli-onboarding)
+
+**```
+tscli onboarding
+```
+Onboarding helps application administrators to bulk update user information.
+In particular, it configures various in-app email options.
+
+```
+tscli onboarding --help
+```
+This subcommand prints help for the onboarding configuration
+
+
+```
+tscli onboarding configure
+```
+This command configures the onboarding through series of steps. It asks the user
+to provide information necessary for onboarding-related functionality, such as the following:
+1. Company Name
+2. Product name
+3. Should welcome emails be enabled?
+   - Send welcome emails to new users
+   - Support email
+   - Custom message to include in emails
+   - URL of the ThoughtSpot instance
+   - URL of the ThoughtSpot documentation
+
+```
+tscli onboarding purge-configuration
+```
+
+This command removes all onboarding configuration
+
+
 ### patch
 
 ```

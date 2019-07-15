@@ -1,15 +1,15 @@
 ---
-title: ["5.2 Release Notes"]
+title: ["5.3 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: May 2019
+last_updated: July 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
 <!-- * [5.2.1 Fixed Issues](#521-fixed) -->
@@ -19,16 +19,17 @@ fixed issues from the previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2 release
+If you are running one of the following versions, you can upgrade to the 5.3 release
 directly:
 
-* 5.0.x to 5.2
-* 5.1.x to 5.2
+* 5.0.x to 5.3
+* 5.1.x to 5.3
+* 5.2.x to 5.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2 release.
+First, upgrade to one of the above versions, and then to the 5.3 release.
 
 <!-- {: id="521-fixed"}
 ## 5.2.1 Fixed Issues
@@ -63,9 +64,17 @@ A problem where scheduled pinboard emails failed to send to a specific recipient
 
 Embedded pinboards no longer occasionally display a Pin button.
 -->
-{: id="52-new"}
-## 5.2 New Features and Functionality
+{: id="53-new"}
+## 5.3 New Features and Functionality
 
+### Onboarding
+
+In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time, and become a  ThoughtSpot super-user.
+
+To configure the email protocols, the administrator has to specify the onboarding
+configuration. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+
+<!--
 ### ThoughtSpot mobile beta
 
 Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
@@ -119,9 +128,10 @@ ThoughtSpot now supports seven new languages, available in the Profile page:
 * Spanish (Spain)
 * Italian
 * English (Australia)
+-->
 
-{: id="52-fixed"}
-## 5.2 Fixed Issues
+{: id="53-fixed"}
+## 5.3 Fixed Issues
 
 Table user experience improvements:
 * The column header is now left-aligned.
