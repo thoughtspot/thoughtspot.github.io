@@ -43,6 +43,9 @@ entries:
       - title: Use stickers to organize
         url: /end-user/stickers.html
         output: web,ugBk
+    - levelTwoTitle: onboarding
+      output: web,ugBk
+      url: /end-user/onboarding/intro-onboarding.html
     - levelTwoTitle: Use Search
       output: web,ugBk
       levelTwoItems:

@@ -71,7 +71,9 @@ Embedded pinboards no longer occasionally display a Pin button.
 
 In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time, and become a  ThoughtSpot super-user.
 
-To configure the email protocols, the administrator has to specify the onboarding
+See [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onb oarding.html).
+
+To configure the email protocols necessary for onboarding, the administrator has to specify the onboarding
 configuration. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
 <!--
