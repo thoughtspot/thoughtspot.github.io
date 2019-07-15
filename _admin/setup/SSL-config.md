@@ -37,18 +37,13 @@ To install and configure the SSL certificate using the admin UI:
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** icon on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+   ![]({{ site.baseurl }}/images/admin.png)
 
    This opens the ThoughtSpot Management Console.
 3. Click **Settings** icon on the top navigation bar.
-
-   **image**
-
 4. In the Settings panel, click **SSL** and then  **Configure** option.
 
-   **image**  
-
-
+   ![]({{ site.baseurl }}/images/settings-ssl.png)  
 
 5. Enter the SSL details:
 
