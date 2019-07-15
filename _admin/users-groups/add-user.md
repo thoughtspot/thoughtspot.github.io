@@ -11,7 +11,7 @@ You will create a user account for each unique person who will access ThoughtSpo
 You can edit manually created users through the interface. If a manually-created user forgets their password, you can reset it by editing the user. If you have forgotten the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
 
 
-## Create a user through the interface
+## [Create a user through the interface](#create-user-ui)
 
 This procedure shows how to creating a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Any user you create will be added to the group **All** automatically.
 
@@ -73,7 +73,8 @@ This procedure shows how to creating a user manually. When you create a user, yo
       <tr>
         <th>Email</th>
         <td>Yes</td>
-        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.</td>
+        <td><p>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.</p>
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
       </tr>    
       <tr>     
         <th>Send a welcome email</th>
@@ -101,6 +102,7 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 6. Click **Add** to create the user.
 
+Note that this process of identifying the user's needs helps setup a robust onboarding process. See
 
 
 ## Edit or delete a user

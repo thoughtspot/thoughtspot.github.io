@@ -69,9 +69,15 @@ Embedded pinboards no longer occasionally display a Pin button.
 
 ### Onboarding
 
-In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time, and become a  ThoughtSpot super-user.
+In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time.
 
 See [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onb oarding.html).
+
+To include each user in the onboarding process, each user profile must now use a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+
+When you creat a new user, we recommend that you adde them to a user group immediately. That user group, in turn, must be configured to use up to three default pinboards, and use a welcome email.
+
+SCAL-37498
 
 To configure the email protocols necessary for onboarding, the administrator has to specify the onboarding
 configuration. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
