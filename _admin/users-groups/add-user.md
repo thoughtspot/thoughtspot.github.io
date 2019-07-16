@@ -6,14 +6,17 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. If a user has access through LDAP, that user's information is managed by your LDAP installation.  If you create a user manually in ThoughtSpot, you manage that user in ThoughtSpot.
+For each unique person who accesses ThoughtSpot, you must create a user account.
 
-You can edit manually created users through the interface. If a manually-created user forgets their password, you can reset it by editing the user. If you have forgotten the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
+You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
+When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user's password, change their email, and so on. If forgot the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
+
+For users who have access through LDAP, the LDAP installation manages all  user information.
 
 ## [Create a user through the interface](#create-user-ui)
 
-This procedure shows how to creating a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Any user you create will be added to the group **All** automatically.
+This procedure demonstrates how to create a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Also, note that all users automatically belong to the group **All**.
 
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
@@ -102,10 +105,10 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 6. Click **Add** to create the user.
 
-Note that this process of identifying the user's needs helps setup a robust onboarding process. See
+Note that this process of identifying the user's needs helps setup a robust onboarding process. See [Onboarding users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html#)
 
 
-## Edit or delete a user
+## Edit or delete a user ##
 
 After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password. You can also change their name as long as it remains unique
 

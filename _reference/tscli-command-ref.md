@@ -655,7 +655,7 @@ This subcommand has the following actions:
 
 ### [onboarding](#tscli-onboarding)
 
-**```
+```
 tscli onboarding
 ```
 Onboarding helps application administrators to bulk update user information.
