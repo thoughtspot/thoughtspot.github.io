@@ -407,6 +407,9 @@ entries:
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
           output: web,ugBk
+    - title: Mobile
+      url: /admin/mobile/use-mobile.html
+      output: web,ugBk
     - levelTwoTitle: Slack and ThoughtSpot
       output: web,ugBk
       levelTwoItems:

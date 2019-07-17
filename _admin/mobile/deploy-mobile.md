@@ -5,9 +5,11 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Deploying the ThoughSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device. For more information about features in the mobile app, refer to [ThoughtSpot mobile app]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+
 ## Mobile app requirements
 - ThoughtSpot cluster running release 5.1 or later
-- iOS version 8.0 and later (iPad and iPhone only)
+- Apple iOS version 8.0 and later (iPad and iPhone only)
 
 ## Deployment options
 
@@ -53,4 +55,4 @@ The ThoughtSpot mobile app conforms to the industry standard AppConfig community
   |Key          |Format     |Description                   |
   |-----------------|------------|-----------------------------------|
   |ServerUrls   |https://thoughtspot.example.com,https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from during sign-in. Separate the servers with commas.|
-  |HomePinboardHelpText  |Please drop an email to admin@example.com if you are facing difficulties in setting up your home pinboard.| The home pinboard set up help text can be customised using this key.|
+  |HomePinboardHelpText |Please drop an email to admin@example.com if you are facing difficulties in setting up your home pinboard.| The home pinboard set up help text can be customised using this key.|
