@@ -1075,9 +1075,6 @@ entries:
       - levelThreeTitle: AWS
         output: web,appQs
         levelThreeItems:
-        - title: AWS cluster overview
-          url: /appliance/aws/about-aws.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs
@@ -1093,9 +1090,6 @@ entries:
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
-        - title: Azure cluster overview
-          url: /appliance/azure/about-azure.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs
@@ -1105,9 +1099,6 @@ entries:
       - levelThreeTitle: GCP
         output: web,appQs
         levelThreeItems:
-        - title: GCP cluster overview
-          url: /appliance/gcp/about-gcp.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
           output: web,appQs
