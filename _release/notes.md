@@ -64,6 +64,11 @@ You can now download a pinboard in PDF format, without downloading each visualiz
 
 We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
 
+### Drivers
+
+As of this release, ThoughtSpot no longer supports Solaris installations.  
+We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
+
 <!-- Are there improvements? If not, let's drop the section -->
 ### Custom calendars
 

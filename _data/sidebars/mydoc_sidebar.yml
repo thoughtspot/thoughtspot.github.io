@@ -1173,9 +1173,6 @@ entries:
        - title: Install the ODBC Driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
          output: web,digBk
-       - title: Install the ODBC Driver on Solaris
-         url: /data-integrate/clients/install-odbc-solaris.html
-         output: web,digBk
        - title: Best Practices for Using ODBC
          url: /data-integrate/clients/odbc-best-practices.html
          output: web,digBk
