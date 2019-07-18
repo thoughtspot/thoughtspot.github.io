@@ -469,7 +469,7 @@ entries:
       - title: Set the relay host for SMTP
         url: /admin/setup/set-up-relay-host.html
         output: web,admBk
-      - title: Set up a fiscal calendar year
+      - title: Set up a custom calendar
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
       - title: Configure internal authentication
