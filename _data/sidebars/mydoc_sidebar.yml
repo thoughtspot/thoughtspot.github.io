@@ -1134,6 +1134,21 @@ entries:
     - title: Login credentials for administration
       url: /data-integrate/introduction/logins.html
       output: web,digBk
+    - levelTwoTitle: Embrace
+      output: web,digBk
+      levelTwoItems:
+      - title: Introduction to Embrace
+        url: /data-integrate/embrace/embrace-intro.html
+        output: web,digBk
+      - title: Setup a new connection
+        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+        output: web,apgBk
+      - title: Modify a connection
+        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+        output: web,apgBk
+      - title: Connectors reference
+        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+        output: web,apgBk
     - levelTwoTitle: Use the ODBC client
       output: web,digBk
       levelTwoItems:
