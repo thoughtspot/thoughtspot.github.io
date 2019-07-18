@@ -12,9 +12,8 @@ permalink: /:collection/:path.html
 ThoughtSpot version 5.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-<!-- * [5.2.1 Fixed Issues](#521-fixed) -->
-* [5.2 New Features](#52-new)
-* [5.2 Fixed Issues](#52-fixed)
+* [5.3 New Features](#53-new)
+* [5.3 Fixed Issues](#53-fixed)
 * [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
@@ -50,7 +49,7 @@ To configure the email protocols necessary for onboarding, the administrator mus
 
 ### Mandatory user emails
 
-In this release, all users must have a valid email in ThoughtSpot. Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html), and also talk to your Customer Success team for a solution to update missing user emails.
+In this release, all users must have a valid email in ThoughtSpot. Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
 
 <!-- assume this is now GA with new features?-->
 ### ThoughtSpot mobile
