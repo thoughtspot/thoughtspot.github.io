@@ -16,7 +16,7 @@ After choosing a data connection, you can choose from the data source, list of a
 
 {% include note.html content="Please contact your ThoughtSpot representative, if you want to find out how to enable ThoughtSpot Embrace." %}
 
-## Key Benefits
+## Key benefits
 - Simple and scalable data movement model with focus only on data visualizations.
 - Quick setup and faster deployments with seamless DB connections.
 - Eliminate the need of moving data into ThoughtSpot for analysis.
