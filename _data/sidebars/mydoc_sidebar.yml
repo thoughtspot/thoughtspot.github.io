@@ -46,12 +46,12 @@ entries:
     - levelTwoTitle: Onboarding
       output: web,ugBk
       levelTwoItems:
-        -title: Introduction to onboarding
-         url: /end-user/onboarding/intro-onboarding.html
-         output: web,ugBk
-       - title: User onboarding experience
-         url: /end-user/onboarding/user-onboarding-experience.html
-         output: web,ugBk
+      - title: Introduction to onboarding
+        url: /end-user/onboarding/intro-onboarding.html
+        output: web,ugBk
+      - title: User onboarding experience
+        url: /end-user/onboarding/user-onboarding-experience.html
+        output: web,ugBk
     - levelTwoTitle: Use Search
       output: web,ugBk
       levelTwoItems:
