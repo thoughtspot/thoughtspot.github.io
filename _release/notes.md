@@ -30,39 +30,9 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.0.x or versin 5.1.x, and then to the 5.3 release.
 
-<!-- {: id="521-fixed"}
-## 5.2.1 Fixed Issues
+Note that release must include the upgrade of all user profiles to include valid domain-specific email address.
 
-An issue where column tooltips do not display last-updated information is now fixed.
 
-An error that occurs when attempting to save changes to the title of a visualization is now fixed.
-
-An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.
-
-Reliability of the filter dialog when opened from a pinboard or the left panel has been improved.
-
-An issue with a NAS mount disconnecting during restore of a cluster is now fixed.
-
-A problem where tables in a Google Chrome tab become misaligned is now fixed.
-
-Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.
-
-An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.
-
-The database manager memory limit has been increased to 16 GB to improve performance.
-
-An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.
-
-A problem with date filters in the Japanese locale is now fixed.
-
-An issue with refreshing materialization of views is now fixed.
-
-Occasional slow navigation between the Answer and Pinboard pages has been fixed.
-
-A problem where scheduled pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.
-
-Embedded pinboards no longer occasionally display a Pin button.
--->
 {: id="53-new"}
 ## 5.3 New Features and Functionality
 
@@ -72,85 +42,53 @@ In this release, we introduce user onboarding, which enables anyone to master th
 
 See [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onb oarding.html).
 
-To include each user in the onboarding process, each user profile must now use a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
 
-When you creat a new user, we recommend that you adde them to a user group immediately. That user group, in turn, must be configured to use up to three default pinboards, and use a welcome email.
+When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the \welcome email
 
-SCAL-37498
+To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
-To configure the email protocols necessary for onboarding, the administrator has to specify the onboarding
-configuration. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+### Mandatory user emails
 
-<!--
-### ThoughtSpot mobile beta
+In this release, all users must have a valid email in ThoughtSpot. Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html), and also talk to your Customer Success team for a solution to update missing user emails.
 
-Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
+<!-- assume this is now GA with new features?-->
+### ThoughtSpot mobile
 
-### Favorites
+Our brand new mobile app is now available in for customers with ThoughtSpot 5.1 or later.
 
-If you frequently go back to look at certain Answers or Pinboards, you can now use Favorites to find them faster than ever before. Click the Favorite icon ![Favorite icon]({{ site.baseurl }}/images/icon-favorite.png){: .inline} of an Answer or Pinboard, and it will be added to the Favorites list on the Answers and Pinboard pages, as well as the ThoughtSpot home page.
+### Pinboard export in PDF format
 
+You can now download a pinboard in PDF format, without downloading each visualization separately. PDF files replicate the pinboard layout by default. Alternatively, you can choose to have each visualization on its own page. For more information, see [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
+
+### Pinboard presentation in full screen
+
+We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
+
+<!-- Are there improvements? If not, let's drop the section -->
 ### Custom calendars
 
 You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure when you search for ‘last quarter’ that you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
 
-### Ask an expert
-
-Sometimes making a data-based decision is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to write a question to the ThoughtSpot users in your organization who are very familiar with the data set used for that search.  When you send your question, you automatically provide the search terms and the results. With this information, an expert in your organization will have the context they need to provide clarification and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
-
-### IN subquery for filtering
-
-With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searches]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
-
+<!-- assume this is now GA with new features?-->
 ### Support for small and medium cloud instance types
 
 One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100 GB), ThoughtSpot now supports “small” (20 GB data) and “medium” (100 GB data) instance types to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
 
+<!-- This may have been in Beta in 5.2, and GA in 5.3. Must verify -->
 ### Cluster shutdown and restart to save infrastructure costs
 
 If you don't need your ThoughtSpot cluster up and running 24/7, you can shut it down and restart it during normal usage hours. This allows you to save on the infrastructure costs of running ThoughtSpot VM instances in cloud environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
 
-### Ability to upload .CSV data from an AWS S3 bucket
-
-If you have data in .csv format stored in an AWS bucket, you can now load it directly into ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
-
-### Allow users to sign up for ThoughtSpot
-
-You can now allow people in your organization to sign up for ThoughtSpot by clicking a button on the sign-in page. When a person clicks the sign-up button, they go to a sign-up page that you’ve already set up outside of ThoughtSpot. This can be any page you want to use for registering new users.
-For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html).
-
-### Improved Japanese date keywords
-
-Japanese-language users now have a more natural way of expressing date phrases in their queries.
-For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-JP.html).
-
-### New languages
-
-ThoughtSpot now supports seven new languages, available in the Profile page:
-* Danish
-* Norwegian
-* Swedish
-* Finnish
-* Portuguese (Portugal)
-* Spanish (Spain)
-* Italian
-* English (Australia)
--->
 
 {: id="53-fixed"}
 ## 5.3 Fixed Issues
 
-Table user experience improvements:
-* The column header is now left-aligned.
-* Column widths can be made very narrow.
-
-Chart user experience improvements:
-* When sorting by date on the x-axis, the date format no longer changes and the axis no longer disappears.
-* You can now sort using a sort field that is not in your chart.
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
 
+* [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
 * [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
 * [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
 * [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)

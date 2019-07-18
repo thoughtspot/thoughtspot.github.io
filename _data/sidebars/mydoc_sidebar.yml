@@ -298,7 +298,7 @@ entries:
         - title: Basic pinboard usage
           url: /end-user/pinboards/about-pinboards.html
           output: web,ugBk
-        - title: Follow a pinboard  
+        - title: Follow a pinboard
           url: /end-user/pinboards/follow-pinboard.html
           output: web,ugBk
         - title: Edit a pinboard
