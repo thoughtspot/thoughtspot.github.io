@@ -10,11 +10,11 @@ permalink: /:collection/:path.html
 
 Onboarding enables the users to master the key workflfows of ThoughSpot, and makes them productive and capable users in a very short time.
 
-## Configue onboarding ##
+## Prerequisites ##
 
-Before starting the onboarding process, an administrator must specify the onboarding configuration.
+- **Valid emails**  All users must have valid emails. To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
 
-See the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+- **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
 
 ## Onboarding process ##
