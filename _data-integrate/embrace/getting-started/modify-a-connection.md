@@ -33,7 +33,7 @@ To edit a connection:
      ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
 ## Edit a table
-ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table or worksheet.
+ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
 
 To delete a table:
 1. Log in to ThoughtSpot from a browser.
@@ -59,7 +59,7 @@ To delete a table:
 You can also click the name of a table and then click the linked objects to to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
 ## Delete a connection
-A connection is not tied to a task, and can therefore be called in multiple data visualizations. So in order to delete a connection, you must first delete all of the sources and tasks that use that connection. Once the connection is not used in data sources, you will be able to delete it.
+A connection is not tied to a task, and can therefore be called in multiple data sources or visualizations. So in order to delete a connection, you must first delete all of the sources and tasks that use that connection. Once the connection is not used in data sources, you will be able to delete it.
 
 To delete a connection:
 1. Log in to ThoughtSpot from a browser.
