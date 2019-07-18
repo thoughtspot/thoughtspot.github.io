@@ -7,13 +7,17 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
-appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block
-Store (EBS) configurations for best performance, load balancing, scalability,
-and reliability.
+application on the Amazon Elastic Compute Cloud (EC2) platform, including both Amazon Elastic Block
+Store (EBS) and S3 storage configurations for the best performance, scalability,
+reliability, and cost savings.
 
 You can find information here on which configuration of memory, CPU, storage,
 and networking capacity you should be running for your instances. There are also
 details on how to configure your placement groups.
+
+## Persistent storage options
+
+In order to reduce the cost of a deployment, S3 is available as persistent storage for major services like the ThoughtSpot database and search engine. HDFS is also available, but it uses EBS for underlying storage which is significantly more expensive than S3 storage. If your cluster size is 1 TB or greater, you may benefit from the cost savings of the S3 storage option. Contact ThoughtSpot Support for assistance with setting up this option.
 
 ## ThoughtSpot AWS instance types
 

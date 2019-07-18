@@ -13,6 +13,10 @@ ThoughtSpot currently supports the following cloud deployments:
 
 This page provides recommendations and best practices for ThoughtSpot cloud deployments, including how to set up your ThoughtSpot instance and how to reduce infrastructure costs.
 
+## Heterogeneous cluster configuration
+
+Prior to the 5.3 release, each node in a cluster had the same configuration and resources (CPU/RAM). All services ran on all nodes. With heterogeneous clusters, different nodes in the cluster run different services. This allows the size of each VM in the cluster varies to match the resource needs for each service. This  reduces the cost of the cluster for large cluster sizes since the cost of compute is more optimized than it was in previous releases. 
+
 ## ThoughtSpot cloud instance types
 
 Refer to the following guidelines for how to set up ThoughtSpot on each cloud service:

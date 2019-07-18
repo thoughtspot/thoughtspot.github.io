@@ -69,7 +69,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.
 8. Click **Next: Add Storage**.
-    The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. Based on the dataset size requirement, you might need to provision and prepare (formatting/file system placement) an extra storage of 400 GB per VM that is SSD gp2 provisioned.
+    The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types)
 9. When you are done modifying the storage size, Click **Next: Add Tags**.
 10. Set a name for tagging your instances and click **Next: Configure Security Group**.
 11. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
