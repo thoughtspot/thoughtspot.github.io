@@ -13,7 +13,7 @@ important to understand these considerations prior to implementation, since some
 solutions will perform better than others.
 
 Each node in a ThoughtSpot cluster has been found to perform ideally with less
-than 250GB of data and fewer than 0.5 billion total rows of data. For schemas
+than 250GB of data and fewer than 0.25 billion total rows of data. For schemas
 that are particularly complex, performance is increased with even fewer rows of
 data per node. Ways to reduce the total amount of data and rows of data include
 limiting the amount of data (number of years, etc.) or combining long, but
@@ -31,8 +31,8 @@ Keep in mind these other boundaries:
 |-------------------------|--------------------|
 |Max number of rows that can be downloaded | 10M (default is 1M) |
 |Size in CSV format| 1 TB per appliance|
-|Total number of rows across all tables| 1B per appliance|
-|Many-to-Many (Generic) join cardinality|10B per appliance|
+|Total number of rows across all tables| 250GB per node|
+|Many-to-Many (Generic) join cardinality|2.5B per node|
 |Load frequency| Once every hour|
 
 
