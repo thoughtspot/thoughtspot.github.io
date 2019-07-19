@@ -15,7 +15,7 @@ This page provides recommendations and best practices for ThoughtSpot cloud depl
 
 ## Heterogeneous cluster configuration
 
-Prior to the 5.3 release, each node in a cluster had the same configuration and resources (CPU/RAM). All services ran on all nodes. With heterogeneous clusters, different nodes in the cluster run different services. This allows the size of each VM in the cluster varies to match the resource needs for each service. This  reduces the cost of the cluster for large cluster sizes since the cost of compute is more optimized than it was in previous releases. 
+Prior to the 5.3 release, each cluster was homogeneous. Each node in a cluster had the same configuration and resources, and ran the same services. With heterogeneous clusters, now different nodes in the cluster run different services. Each VM in the cluster is sized to match the resource needs of each service. This configuration reduces the cost of the cluster for large cluster sizes, since the compute cost is more optimized than the homogeneous configuration in previous releases.
 
 ## ThoughtSpot cloud instance types
 

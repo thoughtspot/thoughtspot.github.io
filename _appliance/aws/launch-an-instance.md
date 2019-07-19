@@ -70,6 +70,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
    The instances must be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.
 8. Click **Next: Add Storage**.
     The default storage specified by the ThoughtSpot AMI should be populated. Optionally, you can add extra storage. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types)
+    - (Optional) If your cluster size is 1 TB or larger, you may benefit from the cost savings of adding an S3 bucket to use for persistent storage of the database and search engines. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from this storage option.
 9. When you are done modifying the storage size, Click **Next: Add Tags**.
 10. Set a name for tagging your instances and click **Next: Configure Security Group**.
 11. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
@@ -81,7 +82,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 13.  Choose a key pair.
       A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
-15.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
+15.  Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to complete your ThoughtSpot installation.
      They will set up the VM instances to be part of the cluster.
 16.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
