@@ -679,6 +679,9 @@ entries:
       - title: Set up recording for Replay Search
         url: /admin/system-admin/configure-record-search.html
         output: web,admBk
+      - title: Upgrade a cluster
+        url: /admin/system-admin/upgrade-a-cluster.html
+        output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
       levelTwoItems:
