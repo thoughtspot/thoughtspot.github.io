@@ -23,8 +23,6 @@ For details on how to deploy the ThoughtSpot mobile app, refer to [Deploy mobile
 |**Quick Share**|Share KPIs and charts via email/Slack/iMessage, and
 start discussions.|
 |**Offline Exploration**|Access your home Pinboard even when you are offline.|
-|**Mobile Device/App Management Support**|Supports services like VMware AirWatch, MobileIron, Microsoft Intune, Cisco Meraki, etc.|
-|**AppConfig Compliant**|Ensures an easy setup to drive to help end-user adoption in the enterprise.|
 
 ## Getting Started
 
