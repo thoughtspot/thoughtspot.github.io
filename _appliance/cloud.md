@@ -13,17 +13,19 @@ ThoughtSpot currently supports the following cloud deployments:
 
 This page provides recommendations and best practices for ThoughtSpot cloud deployments, including how to set up your ThoughtSpot instance and how to reduce infrastructure costs.
 
-## Heterogeneous cluster configuration
+The ThoughtSpot cloud deployment consists of a combination of cloud compute (VM) instances as well as an underlying persistent storage layer (which uses block storage volumes, except in the case of AWS, which supports block and object-based options for persistent storage. For more information about AWS storage options, refer to:
 
-Prior to the 5.3 release, each cluster was homogeneous. Each node in a cluster had the same configuration and resources, and ran the same services. With heterogeneous clusters, now different nodes in the cluster run different services. Each VM in the cluster is sized to match the resource needs of each service. This configuration reduces the cost of the cluster for large cluster sizes, since the compute cost is more optimized than the homogeneous configuration in previous releases.
+The number of instances required for a cloud deployment is based on the size of the data in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.
+
+![]({{ site.baseurl }}/images/cloud-vm-storage.png "ThoughtSpot cloud deployment")
 
 ## ThoughtSpot cloud instance types
 
 Refer to the following guidelines for how to set up ThoughtSpot on each cloud service:
 
-- [AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html)
-- [Azure instance types]({{ site.baseurl }}/appliance/azure/configuration-options.html)
-- [GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
+- [AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types)
+- [Azure instance types]({{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types)
+- [GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types)
 
 ## Reducing your cloud infrastructure costs
 
