@@ -19,7 +19,7 @@ Complete the following steps to follow a pinboard.
 2. On the pinboard list page, select a pinboard by clicking on it.
 
 3. Click **Follow** at the top right corner of the pinboard.
-   ![click Follow]({{ site.baseurl }}/images/pinboard-follow.png)
+   ![]({{ site.baseurl }}/images/pinboard-follow.png "Click Follow")
 
 You are now following the pinboard. Notice that the **Follow** option no longer appears in the top right corner of the pinboard.
 
