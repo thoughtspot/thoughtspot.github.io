@@ -29,22 +29,22 @@ in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
 ### Using Management Console
 1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** icon on the top navigation bar.
+2. Click the **Admin** menu on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+   ![]({{ site.baseurl }}/images/admin.png)
 
    This opens the ThoughtSpot Management Console.
-3. Click **Settings** icon on the top navigation bar.
+3. Click **Settings** menu on the top navigation bar.
 
-   **image**
+   ![]({{ site.baseurl }}/images/settings.png)
 
-4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Configure** option.
+4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Edit** option.
 
-   **image**  
+   ![]({{ site.baseurl }}/images/ssh.png)  
 
 5. Enter the reverse tunnel details:
 
-      **image**
+      ![]({{ site.baseurl }}/images/ssh-configure.png)
 
       <table>
       <colgroup>

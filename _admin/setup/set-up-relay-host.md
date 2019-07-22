@@ -11,23 +11,23 @@ ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Suppor
 ## Configure using Management Console
 To set up a relay host and SMTP rules using the admin UI:
 1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** icon on the top navigation bar.
+2. Click the **Admin** menu on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+   ![]({{ site.baseurl }}/images/admin.png)
 
    This opens the ThoughtSpot Management Console.
-3. Click **Settings** icon on the top navigation bar.
+3. Click **Settings** menu on the top navigation bar.
 
-   **image**
+   ![]({{ site.baseurl }}/images/settings.png)
 
 4. In the Settings panel, click **SMTP** and then  **Configure** option.
 
-   **image**  
+   ![]({{ site.baseurl }}/images/smtp.png)  
 
 
 5. Enter the relay host details:
 
-   **image**
+   ![]({{ site.baseurl }}/images/smtp-configure.png)
 
    <table>
    <colgroup>
