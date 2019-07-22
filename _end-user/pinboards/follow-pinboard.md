@@ -19,7 +19,7 @@ Complete the following steps to follow a pinboard.
 2. On the pinboard list page, select a pinboard by clicking on it.
 
 3. Click **Follow** at the top right corner of the pinboard.
-   ![click Follow]({{ site.baseurl }}/images/pinboard-follow.png)
+   ![]({{ site.baseurl }}/images/pinboard-follow.png "Click Follow")
 
 You are now following the pinboard. Notice that the **Follow** option no longer appears in the top right corner of the pinboard.
 
@@ -29,14 +29,14 @@ Next, configure the schedule of email notifications for the pinboard.
 
 Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **![configure]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} Follow**.
 
-     ![]({{ site.baseurl }}/images/pinboard-menu-follow.png "start configuring follow emails")
+     ![]({{ site.baseurl }}/images/pinboard-menu-follow.png "Start configuring follow emails")
 
 In the **Follow** dialogue, specify the email schedule by marking the appropriate options in the pulldown menus. The default schedule is weekly, on the day and time during which you are performing the configuration.
 
 1. **Repeats** specifies the frequency of emails: Daily, Weekly \(default\), or Monthly
 2. **On** specifies the starting point
    - For **Daily**, choose either __Every weekday__, or __Every day__.
-   - For ** Weekly**, choose one or more days of the week, and click **Done**.
+   - For **Weekly**, choose one or more days of the week, and click **Done**.
    - For **Monthly**, select the numerical days of the month.
 3. **At** specifies the hour and minute of the day when Thoughtspot generates the pinboard image and sends it.
      ![]({{ site.baseurl }}/images/pinboard-follow-schedule.png "Schedule the emails for pinboard snapshots")
