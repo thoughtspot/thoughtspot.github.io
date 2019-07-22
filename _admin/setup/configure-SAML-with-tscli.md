@@ -27,6 +27,9 @@ Before you configure SAML, you need the following information:
   **_NOTE:_** You can set internal authentication only through `tscli`.
 
 ## Configure using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 To configure SAML using the admin UI:
 
 1. Log into ThoughtSpot from a browser.

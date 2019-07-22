@@ -32,6 +32,9 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
 ### Using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 To install and configure the SSL certificate using the admin UI:
 
 1. Log into ThoughtSpot from a browser.

@@ -4,11 +4,17 @@ tags: [Security_SSL]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
+toc: false
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
+
 Many organizations don't use LDAP or active directory for user authentication. In other scenario, some users are not in LDAP and are created only in ThoughtSpot. In such cases, you can choose to authenticate users against ThoughtSpot internal authentication.
 
-**_NOTE:_** Before you log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against ThoughtSpot's internal authentication or against LDAP.
+
+{% include note.html content="Before you log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against ThoughtSpot's internal authentication or against LDAP." %}
 
 If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#). They can assist you in migrating existing users to their LDAP equivalents.
 
