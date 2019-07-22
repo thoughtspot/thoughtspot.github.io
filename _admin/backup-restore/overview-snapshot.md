@@ -23,6 +23,9 @@ background of a running cluster.  If you would like to restore from a snapshot
 instead, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 ### Using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 To manually create a snapshot using the admin UI:
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
@@ -92,6 +95,9 @@ snapshots of your cluster. This section explains how to learn more about the
 periodic snapshots in your cluster.
 
 ### Using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 The default snapshot policy is enabled for every cluster. You can update the current policy for periodic snapshots.
 
 To update your current periodic snapshot policy using the admin UI:

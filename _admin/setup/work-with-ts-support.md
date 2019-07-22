@@ -28,6 +28,9 @@ company's security policies allow reverse tunneling.
 in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
 ### Using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 

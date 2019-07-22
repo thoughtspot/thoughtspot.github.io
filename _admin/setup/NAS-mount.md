@@ -33,6 +33,9 @@ files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
 ## Mount using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
 To mount a NAS file system using the admin UI:
 
 1. Log into ThoughtSpot from a browser.
