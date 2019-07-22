@@ -20,6 +20,8 @@ details on how to configure your placement groups.
 In order to reduce the cost of a deployment, S3 is available as storage for major services like the ThoughtSpot database and search engine. HDFS is also available, but it uses EBS for underlying storage which is significantly more expensive than the object-based S3 storage. If your cluster size is 1 TB or greater, you may benefit from the cost savings of the S3 storage option. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) for assistance with setting up this option.
 ![]({{ site.baseurl }}/images/persistent-storage.png "Persistent Storage with S3")
 
+{% include note.html content="A certain amount of block storage is still required for services like the key-value store and other services. This data volume size is much smaller, however, when using S3 for major services." %}
+
 ## ThoughtSpot AWS instance types
 
 <table width="853">
