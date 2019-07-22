@@ -15,9 +15,9 @@ You can find information here on which configuration of memory, CPU, storage,
 and networking capacity you should be running for your instances. There are also
 details on how to configure your placement groups.
 
-## Persistent storage options
+## Storage options
 
-In order to reduce the cost of a deployment, S3 is available as persistent storage for major services like the ThoughtSpot database and search engine. HDFS is also available, but it uses EBS for underlying storage which is significantly more expensive than the object-based S3 storage. If your cluster size is 1 TB or greater, you may benefit from the cost savings of the S3 storage option. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) for assistance with setting up this option.
+In order to reduce the cost of a deployment, S3 is available as storage for major services like the ThoughtSpot database and search engine. HDFS is also available, but it uses EBS for underlying storage which is significantly more expensive than the object-based S3 storage. If your cluster size is 1 TB or greater, you may benefit from the cost savings of the S3 storage option. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) for assistance with setting up this option.
 ![]({{ site.baseurl }}/images/persistent-storage.png "Persistent Storage with S3")
 
 ## ThoughtSpot AWS instance types
