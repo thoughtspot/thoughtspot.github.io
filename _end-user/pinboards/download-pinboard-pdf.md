@@ -28,7 +28,7 @@ To download a pinboard in PDF format, follow these steps:
 
   6. Click **Export**.
 
-     ![]({{ site.baseurl }}/images/pinboard-export.png "Export a pinboard as PDF, either combined, or one visualization to a page.")
+     ![]({{ site.baseurl }}/images/pinboard-export.png "Export a pinboard as PDF, either combined, or one visualization to a page")
 
   7. After the download completes, examine your PDF.
 
