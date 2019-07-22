@@ -29,7 +29,7 @@ Next, configure the schedule of email notifications for the pinboard.
 
 Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **![configure]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} Follow**.
 
-     ![]({{ site.baseurl }}/images/pinboard-menu-follow.png "Start configuring follow emails")
+![]({{ site.baseurl }}/images/pinboard-menu-follow.png "Start configuring follow emails")
 
 In the **Follow** dialogue, specify the email schedule by marking the appropriate options in the pulldown menus. The default schedule is weekly, on the day and time during which you are performing the configuration.
 
