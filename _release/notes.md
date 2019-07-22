@@ -27,7 +27,7 @@ directly:
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.0.x or versin 5.1.x, and then to the 5.3 release.
+First, upgrade to version 5.0.x or version 5.1.x, and then to the 5.3 release.
 
 Note that release must include the upgrade of all user profiles to include valid domain-specific email address.
 
@@ -54,7 +54,11 @@ In this release, all users must have a valid email in ThoughtSpot. Before this r
 <!-- assume this is now GA with new features?-->
 ### ThoughtSpot mobile
 
-Our brand new mobile app is now available in for customers with ThoughtSpot 5.1 or later.
+Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or later. For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
+
+### Amazon S3 persistent storage option
+
+You can now reduce the cost of an AWS deployment by using S3 for storage of major services like the ThoughtSpot database and search engine.  For more information, see [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html#).
 
 ### Pinboard export in PDF format
 
