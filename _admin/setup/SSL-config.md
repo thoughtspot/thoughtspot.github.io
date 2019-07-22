@@ -35,24 +35,22 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 To install and configure the SSL certificate using the admin UI:
 
 1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** icon on the top navigation bar.
+2. Click the **Admin** menu on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+   ![]({{ site.baseurl }}/images/admin.png)
 
    This opens the ThoughtSpot Management Console.
-3. Click **Settings** icon on the top navigation bar.
+3. Click **Settings** menu on the top navigation bar.
 
-   **image**
+   ![]({{ site.baseurl }}/images/settings.png)
 
 4. In the Settings panel, click **SSL** and then  **Configure** option.
 
-   **image**  
-
-
+   ![]({{ site.baseurl }}/images/ssl.png)  
 
 5. Enter the SSL details:
 
-   **image**
+   ![]({{ site.baseurl }}/images/ssl-configure.png)
 
    <table>
    <colgroup>
@@ -65,7 +63,7 @@ To install and configure the SSL certificate using the admin UI:
     </tr>
     <tr>
       <th>SSL Status</th>
-      <td>Enable the SSL. If you want to disable the LDAP configuration, select Disable and exit the setup.</td>
+      <td>Enable the SSL. If you want to disable the LDAP configuration, select Disable and then click Save to exit the setup.</td>
     </tr>
     <tr>
       <th>Algorithm</th>

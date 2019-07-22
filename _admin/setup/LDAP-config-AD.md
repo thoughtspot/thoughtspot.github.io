@@ -31,23 +31,23 @@ Before you configure LDAP for Active Directory, collect the following informatio
 To configure LDAP for active directory:
 
 1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** icon on the top navigation bar.
+2. Click the **Admin** menu on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/mgmt-portal/admin.png)
+   ![]({{ site.baseurl }}/images/admin.png)
 
    This opens the ThoughtSpot Management Console.
-3. Click **Settings** icon on the top navigation bar.
+3. Click **Settings** menu on the top navigation bar.
 
-   **image**
+   ![]({{ site.baseurl }}/images/settings.png)
 
 4. In the Settings panel, click **Authentication: Active Directory** and then  **Configure** option.
 
-   **image**  
+   ![]({{ site.baseurl }}/images/ad.png)  
 
 
-5. Enter the active directory details:
+5. Enter the active directory details with the information you gathered above in **Before you begin** section:
 
-   **image**
+   ![]({{ site.baseurl }}/images/ad-configure.png)
 
    <table>
    <colgroup>
