@@ -412,9 +412,6 @@ entries:
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
           output: web,ugBk
-    - title: Mobile
-      url: /admin/mobile/use-mobile.html
-      output: web,ugBk
     - levelTwoTitle: Slack and ThoughtSpot
       output: web,ugBk
       levelTwoItems:
@@ -709,15 +706,6 @@ entries:
         - title: About restore operations
           url: /admin/backup-restore/restore.html
           output: web,admBk
-    - levelTwoTitle: Mobile
-      output: web,admBk
-      levelTwoItems:
-      - title: Deploy mobile app
-        url: /admin/mobile/deploy-mobile.html
-        output: web,admBk
-      - title: FAQ
-        url: /admin/mobile/faq-mobile.html
-        output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk
       levelTwoItems:
