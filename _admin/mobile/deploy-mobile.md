@@ -15,8 +15,8 @@ Deploying the ThoughSpot mobile app to your users allows them to access their da
 ## Deployment options
 
 There are two options for your users to download the ThoughtSpot mobile app:
-- The App Store for iOS
-- A mobile device or app management platform
+- App Store for iOS
+- Mobile device or app management platform
 
 ### App Store for iOS
 If your company doesn't use a mobile device management (MDM) or mobile app management (MAM) platform, your users can directly download the ThoughtSpot app from the App Store for iOS. If your company uses this method to deploy the app, the latest updates will be available to all users.
@@ -24,7 +24,7 @@ If your company doesn't use a mobile device management (MDM) or mobile app manag
 ### Mobile device or app management platform
 There are two ways to provide the ThoughtSpot app to your users with your MDM or MAM platform:
 
-#### **Option 1 [Recommended]: Provide a link to the app in the App Store for iOS.**
+#### Option 1 [Recommended]: Provide a link to the app in the App Store for iOS.
 
 Almost all of the platforms allow you to link to the app in the App Store. With this option, your users download it directly and automatically receive the latest updates, when they are available.
 
@@ -36,11 +36,11 @@ To add a link to the ThoughtSpot app on your management platform,  refer to the 
   - [Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios){:target="_blank"}
   - [Cisco Meraki](https://documentation.meraki.com/SM/Apps_and_Software/Deploying_Store_Apps_for_iOS%2F%2FmacOS_and_Android){:target="_blank"}
 
-#### **Option 2: Provide a custom .ipa file of the ThoughtSpot app.**
+#### Option 2: Provide a custom .ipa file of the ThoughtSpot app.
 
   You can upload a custom .ipa file of the ThoughtSpot app to your management platform.
 
- ##### Before you begin
+##### Before you begin
   - Your company must have an Apple developer enterprise account.
   - You must download the .ipa file, and the instructions for re-signing it, from this Egnyte link [Insert Egnyte Link]
   - You must re-sign the downloaded .ipa file.
