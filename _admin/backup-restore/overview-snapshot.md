@@ -3,6 +3,7 @@ title: [Work with snapshots]
 keywords: backup,snapshot
 tags: [performance]
 last_updated: tbd
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
