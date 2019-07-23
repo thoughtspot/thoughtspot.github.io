@@ -51,7 +51,6 @@ To configure the email protocols necessary for onboarding, the administrator mus
 
 In this release, all users must have a valid email in ThoughtSpot. Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
 
-<!-- assume this is now GA with new features?-->
 ### ThoughtSpot mobile
 
 Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or later. For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
@@ -72,22 +71,6 @@ We enhanced the presentation experience to show ThoughtSpot pinboards like a typ
 
 As of this release, ThoughtSpot no longer supports Solaris installations.  
 We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
-
-<!-- Are there improvements? If not, let's drop the section -->
-### Custom calendars
-
-You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure when you search for ‘last quarter’ that you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
-
-<!-- assume this is now GA with new features?-->
-### Support for small and medium cloud instance types
-
-One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100 GB), ThoughtSpot now supports “small” (20 GB data) and “medium” (100 GB data) instance types to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
-
-<!-- This may have been in Beta in 5.2, and GA in 5.3. Must verify -->
-### Cluster shutdown and restart to save infrastructure costs
-
-If you don't need your ThoughtSpot cluster up and running 24/7, you can shut it down and restart it during normal usage hours. This allows you to save on the infrastructure costs of running ThoughtSpot VM instances in cloud environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
-
 
 {: id="53-fixed"}
 ## 5.3 Fixed Issues
