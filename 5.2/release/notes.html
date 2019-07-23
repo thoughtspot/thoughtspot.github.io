@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/release/notes.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-19T10:30:20-07:00" />
+<meta property="article:published_time" content="2019-07-23T14:46:42-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/release/notes.html"},"url":"https://docs.thoughtspot.com/5.2/release/notes.html","headline":"[“5.2 Release Notes”]","dateModified":"2019-07-19T10:30:20-07:00","datePublished":"2019-07-19T10:30:20-07:00","description":"What’s in the Release Notes","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/release/notes.html"},"url":"https://docs.thoughtspot.com/5.2/release/notes.html","headline":"[“5.2 Release Notes”]","dateModified":"2019-07-23T14:46:42-07:00","datePublished":"2019-07-23T14:46:42-07:00","description":"What’s in the Release Notes","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3091,7 +3091,7 @@ var ss360Config = {
   Estimated reading time:
   
   
-    6 minutes
+    7 minutes
   
 </span>
  -->
@@ -3100,10 +3100,11 @@ var ss360Config = {
 
   <h2 id="whats-in-the-release-notes">What’s in the Release Notes</h2>
 
-<p>ThoughtSpot version 5.2.1 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.</p>
+<p>ThoughtSpot version 5.2.2 is now available. These release notes include information about new features,
+fixed issues from previous releases, and any known issues.</p>
 
 <ul>
+  <li><a href="#522-fixed">5.2.2 Fixed Issues</a></li>
   <li><a href="#521-fixed">5.2.1 Fixed Issues</a></li>
   <li><a href="#52-new">5.2 New Features</a></li>
   <li><a href="#52-fixed">5.2 Fixed Issues</a></li>
@@ -3112,18 +3113,30 @@ fixed issues from the previous releases, and any known issues.</p>
 
 <h2 id="supported-upgrade-paths">Supported Upgrade Paths</h2>
 
-<p>If you are running one of the following versions, you can upgrade to the 5.2.1 release
+<p>If you are running one of the following versions, you can upgrade to the 5.2.2 release
 directly:</p>
 
 <ul>
-  <li>5.0.x to 5.2.1</li>
-  <li>5.1.x to 5.2.1</li>
+  <li>5.0.x to 5.2.2</li>
+  <li>5.1.x to 5.2.2</li>
 </ul>
 
 <p>(This includes any hotfixes or customer patches on these branches.)</p>
 
 <p>If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2.1 release.</p>
+First, upgrade to one of the above versions, and then to the 5.2.2 release.</p>
+
+<h2 id="522-fixed">5.2.2 Fixed Issues</h2>
+
+<p>An issue where PDFs downloaded from a Pinboard are poorly formatted is now fixed.</p>
+
+<p>An occasional problem where the login process is slow has been fixed.</p>
+
+<p>An issue where the filter dialog box freezes when opened from a Pinboard, or the filter icon in the left panel is now fixed.</p>
+
+<p>Previously, when the <code class="highlighter-rouge">unique_count_if</code> aggregate function was used in both the numerator and denominator of a division formula in a search query, it caused only the numerator value to be returned. This problem is now fixed.</p>
+
+<p>A problem where the <code class="highlighter-rouge">unique_count_if</code> aggregate function does not parse an expression is now fixed.</p>
 
 <h2 id="521-fixed">5.2.1 Fixed Issues</h2>
 
@@ -3133,7 +3146,7 @@ First, upgrade to one of the above versions, and then to the 5.2.1 release.</p>
 
 <p>An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.</p>
 
-<p>Reliability of the filter dialog when opened from a pinboard or the left panel has been improved.</p>
+<p>Reliability of the filter dialog when opened from a Pinboard or the left panel has been improved.</p>
 
 <p>An issue with a NAS mount disconnecting during restore of a cluster is now fixed.</p>
 
@@ -3153,9 +3166,9 @@ First, upgrade to one of the above versions, and then to the 5.2.1 release.</p>
 
 <p>Occasional slow navigation between the Answer and Pinboard pages has been fixed.</p>
 
-<p>A problem where scheduled pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.</p>
+<p>A problem where scheduled Pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.</p>
 
-<p>Embedded pinboards no longer occasionally display a Pin button.</p>
+<p>Embedded Pinboards no longer occasionally display a Pin button.</p>
 
 <h2 id="52-new">5.2 New Features and Functionality</h2>
 
@@ -3215,6 +3228,10 @@ For details, refer to: <a href="/5.2/reference/keywords-ja-JP.html">Japanese (�
   <li>English (Australia)</li>
 </ul>
 
+<h3 id="one-to-one-joins-in-worksheets">One-to-one joins in worksheets</h3>
+
+<p>When editing joins within a worksheet, you can now specify a join cardinality of One to One, as well as Many to One.</p>
+
 <h2 id="52-fixed">5.2 Fixed Issues</h2>
 
 <p>Table user experience improvements:</p>
@@ -3264,7 +3281,7 @@ For details, refer to: <a href="/5.2/reference/keywords-ja-JP.html">Japanese (�
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 19, 2019 <br />
+        Generated: Jul 23, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> May 2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
