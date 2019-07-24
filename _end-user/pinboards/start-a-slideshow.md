@@ -43,12 +43,17 @@ Hover over the top right corner of the presentation to see the navigation contro
 ## Presenting pinboards
 While in presentation mode, you can easily explore each visualization.
 
-  1. You can see the tooltip information about each element of the visualization as you hover the cursor over that area of the presentation.
-  2. To quickly edit a visualization, click the pencil icon, and proceed to make the necessary changes. This takes you out of presentation mode.
-  3. By left-clicking, you can open a drop menu where you can change filtering to **Exclude selected values**.
-  4. Similarly, you can apply a filter to **Only include selected values | point**.
-  5. You can drill down to see more information about the columns used in search. Left-click and select **Drill down** from the menu.
-  6. To show underlying data in more detail, left-click and select **Show underlying data** from the menu.
-  7. To run SpotIQ, left-click and select **SpotIQ analyze** from the menu.
-  8. Depending on the chart type in presentation, you can perform the chart-specific actions. In case of geographic maps, you can zoom and pan the map.
-  ![]({{ site.baseurl }}/images/pinboard-present-actions.png "Available actions in pinboard presentations")
+![]({{ site.baseurl }}/images/pinboard-present-actions.png "Available actions in pinboard presentations")
+
+Consider the following actions on pinboards:
+
+| Legend | Action |
+| --- | --- |
+| 1. | You can see the tooltip information about each element of the visualization as you hover the cursor over that area of the presentation.|
+| 2. | To quickly edit a visualization, click the pencil icon, and proceed to make the necessary changes. This takes you out of presentation mode. |
+| 3. | By left-clicking, you can open a drop menu where you can change filtering to **Exclude selected values**. |
+| 4. | Similarly, you can apply a filter to **Only include selected values** or **Only include selected  point**. |
+| 5. | You can drill down to see more information about the columns used in search. Left-click and select **Drill down** from the menu. |
+| 6. | To show underlying data in more detail, left-click and select **Show underlying data** from the menu. |
+| 7. | To run SpotIQ, left-click and select **SpotIQ analyze** from the menu. |
+| 8. | Depending on the chart type in presentation, you can perform the chart-specific actions. In case of geographic maps, you can zoom and pan the map. |
