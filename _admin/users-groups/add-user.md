@@ -10,7 +10,7 @@ For each unique person who accesses ThoughtSpot, you must create a user account.
 
 You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
-When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user's password, change their email, and so on. If forgot the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
+When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user's password, change their email, and so on. If forgot the admin password, please call [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 For users who have access through LDAP, the LDAP installation manages all  user information.
 
@@ -35,21 +35,21 @@ This procedure demonstrates how to create a user manually. When you create a use
 
      ![]({{ site.baseurl }}/images/new_user_dialogue.png "Create a user manually")
 
-     <table>
+    <table>
      <colgroup>
-     <col width="20%" />
-     <col width="10%" />
-     <col width="70%" />
+      <col width="20%">
+      <col width="10%">
+      <col width="70%">
      </colgroup>
-      <tr>
-        <th>Field</th>
-        <th>Required?</th>
-        <th><p>Description</p></th>
+     <tr>
+      <th>Field</th>
+      <th>Required?</th>
+      <th>Description</th>
       </tr>
       <tr>
         <th>Username</th>
         <td>Yes</td>
-        <td><p><em>Mandatory</em> A login name for the user. Usernames must be unique and lowercase.
+        <td><p>A login name for the user. Usernames must be unique and lowercase.</p>
         <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
       </tr>
       <tr>
@@ -96,8 +96,8 @@ This procedure demonstrates how to create a user manually. When you create a use
         <p>Note that if you add the user to a group that has the privilege <b>Has administration privileges</b>, they can see all the data in ThoughtSpot. </p>
         <p>When you create a new user, the groups they belong to define the following attributes for the user:</p>
         <ul>
-        <li><strong>Privileges</strong>: the actions they can perform, defined when you <a href="add-group.html">Add a group and set security privileges</a>.</li>
-        <li><strong>Permissions</strong>: the data they can access and view, defined when you consider <a href="{{"/admin/data-security/sharing-security-overview.html#" | prepend: site.baseurl }}">Data security</a>.</li>
+          <li><strong>Privileges</strong>: the actions they can perform, defined when you <a href="add-group.html">Add a group and set security privileges</a>.</li>
+          <li><strong>Permissions</strong>: the data they can access and view, defined when you consider <a href="{{"/admin/data-security/sharing-security-overview.html#" | prepend: site.baseurl }}">Data security</a>.</li>
       </ul>
         <p>Administrators can see all data sources, and <a href="{{"/admin/data-security/about-row-security.html#" | prepend: site.baseurl }}">Row level security</a> does not apply to them.</p></td>
       </tr>
