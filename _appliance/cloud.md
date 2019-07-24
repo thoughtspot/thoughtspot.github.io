@@ -17,7 +17,7 @@ The ThoughtSpot cloud deployment consists of a combination of cloud compute (VM)
 
 The number of instances required for a cloud deployment is based on the size of the data in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.
 
-![]({{ site.baseurl }}/images/cloud-vm-storage.png "ThoughtSpot cloud deployment")
+![]({{ site.baseurl }}/images/cloud-vm-storage.svg "ThoughtSpot cloud deployment")
 
 ## ThoughtSpot cloud instance types
 
