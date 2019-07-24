@@ -31,7 +31,7 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow these guidelines for setting up your EC2 details:
 - Sign in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 - Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
-**AMI Name**: centos-golden-20171207-61be6ad-prod-small  
+**AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
 **AMI ID**: ami-0b23846e4761375f1  
 **Region**: N. California
 - Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node.
