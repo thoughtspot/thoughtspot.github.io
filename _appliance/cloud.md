@@ -13,7 +13,7 @@ ThoughtSpot currently supports the following cloud deployments:
 
 This page provides recommendations and best practices for ThoughtSpot cloud deployments, including how to set up your ThoughtSpot instance and how to reduce infrastructure costs.
 
-The ThoughtSpot cloud deployment consists of a combination of cloud compute (VM) instances as well as an underlying persistent storage layer (which uses block storage volumes, except in the case of AWS, which supports block and object-based options for persistent storage. For more information about AWS storage options, refer to:
+The ThoughtSpot cloud deployment consists of a combination of cloud compute (VM) instances as well as an underlying persistent storage layer (which uses block storage volumes, except in the case of AWS, which supports block and object-based options for persistent storage.
 
 The number of instances required for a cloud deployment is based on the size of the data in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.
 
