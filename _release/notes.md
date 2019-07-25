@@ -47,6 +47,9 @@ When you create a new user, we recommend that you add them to a user group immed
 
 To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
+### ThoughtSpot Management Console
+The Management Console is now available in beta. This new feature allows administrators to manage and monitor ThoughtSpot clusters. To enable it, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
+
 ### Mandatory user emails
 
 In this release, all users must have a valid email in ThoughtSpot. Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
