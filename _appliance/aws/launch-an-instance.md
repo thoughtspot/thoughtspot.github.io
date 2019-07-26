@@ -117,7 +117,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
     When complete, your storage is mounted and ready for use with your cluster.
 
 17.  Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to complete your ThoughtSpot installation.
-     They will set up the VM instances to be part of the cluster. If you created an S3 bucket to use for storage, tell them the name of your bucket.
+     They will set up the VM instances to be part of your cluster. If you created an S3 bucket to use for storage, tell them the name of your bucket.
 
 18.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
