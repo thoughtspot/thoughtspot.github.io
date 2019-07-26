@@ -47,8 +47,8 @@ When you create a new user, we recommend that you add them to a user group immed
 
 To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
-### ThoughtSpot Management Console
-The Management Console is now available in beta. This new feature allows administrators to manage and monitor ThoughtSpot clusters. To enable it, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
+### Management Console
+The Management Console is now available in beta. This allows administrators to manage, configure, monitor, and upgrade a cluster from the ThoughtSpot Admin page. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
 
 ### Mandatory user emails
 
