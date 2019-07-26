@@ -24,9 +24,9 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
 
 ## ThoughtSpot AWS instance types
 
-The following table contains the supported and recommended instance types for a ThoughtSpot AWS deployment.
+The following table contains the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
 
-For example: If you are deploying 1 TB of data using the standard r5.16xlarge instance type, you will need 4 instances, because the per-VM capacity of that instance type is 250 GB.
+For example: If you are deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you need 4 instances (VMs), because the per-VM capacity of that instance type is 250 GB. If you are deploying EBS-only data volumes, you need 1 TB.
 
 <table width="853">
 <colgroup>
