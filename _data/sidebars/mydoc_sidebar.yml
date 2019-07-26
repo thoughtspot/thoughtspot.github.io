@@ -28,6 +28,9 @@ entries:
     - levelTwoTitle: Getting Started
       output: web,ugBk
       levelTwoItems:
+      - title: User onboarding experience
+        url: /end-user/onboarding/user-onboarding-experience.html
+        output: web,ugBk
       - title: Finding your way around
         url: /end-user/introduction/about-navigating-thoughtspot.html
         output: web,ugBk
@@ -42,15 +45,6 @@ entries:
         output: web,ugBk
       - title: Use stickers to organize
         url: /end-user/stickers.html
-        output: web,ugBk
-    - levelTwoTitle: Onboarding
-      output: web,ugBk
-      levelTwoItems:
-      - title: Introduction to onboarding
-        url: /end-user/onboarding/intro-onboarding.html
-        output: web,ugBk
-      - title: User onboarding experience
-        url: /end-user/onboarding/user-onboarding-experience.html
         output: web,ugBk
     - levelTwoTitle: Use Search
       output: web,ugBk
@@ -604,6 +598,9 @@ entries:
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
+      - title: Introduction to onboarding
+        url: /end-user/onboarding/intro-onboarding.html
+        output: web,ugBk
       - title: Understand groups and privileges
         url: /admin/users-groups/about-users-groups.html
         output: web,admBk
