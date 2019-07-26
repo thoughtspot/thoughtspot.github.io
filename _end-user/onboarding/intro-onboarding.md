@@ -10,6 +10,15 @@ permalink: /:collection/:path.html
 
 Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.
 
+## Introduction to Onboarding Users ##
+
+To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).  
+
+To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).  
+
+When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
+
+
 ## Prerequisites ##
 
 - **Valid emails**  All users must have valid emails. To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
@@ -17,7 +26,7 @@ Onboarding enables users to master the key workflows of ThoughtSpot, and makes t
 - **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
 
-## Onboarding process ##
+## Onboarding Process ##
 
 The key workflows that enable successful onboarding include the following:
 
