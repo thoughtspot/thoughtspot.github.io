@@ -37,7 +37,7 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
   </colgroup>
 <tr>
     <td><br /></td>
-    <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+    <td style="height:5px" colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
     <td><br /></td>
     <td><br /></td>
     <td><br /></td>
@@ -57,7 +57,7 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
 <tr>
       <td><p dir="ltr">Standard</p>
         <p dir="ltr">(1KB/row)</p></td>
-      <td><p dir="ltr">Up to 2 TB </p></td>
+      <td><p dir="ltr">Up to 2 TB</p></td>
       <td><p dir="ltr">250 GB</p></td>
       <td><p dir="ltr">r4.16xlarge<sup>a</sup></p></td>
       <td><p dir="ltr">64/488</p></td>
@@ -67,10 +67,10 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
 </tr>
 <tr>
       <td></td>
-      <td><p dir="ltr">&gt;2 TB</p></td>
-      <td><p dir="ltr">384 GB (Large)</p></td>
-      <td><p dir="ltr">r5.16xlarge</p></td>
-      <td><p dir="ltr">96/768</p></td>
+      <td><p dir="ltr">Up to 2 TB</p></td>
+      <td><p dir="ltr">250 GB (Large)</p></td>
+      <td><p dir="ltr">r5.16xlarge<sup>a</sup></p></td>
+      <td><p dir="ltr">64/488</p></td>
     <td><p dir="ltr">200 GB</p></td>
     <td><p dir="ltr">2X 1 TB</p></td>
 		<td><p dir="ltr"><b>✓</b></p></td>
