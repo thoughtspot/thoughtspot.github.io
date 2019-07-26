@@ -30,18 +30,20 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
 
 <table width="853">
 <colgroup>
-      <col width="100" />
-      <col width="110" />
-      <col width="110" />
-      <col width="100" />
+      <col width="80" />
       <col width="95" />
       <col width="90" />
+      <col width="80" />
+      <col width="40" />
+      <col width="60" />
      <col width="90" />
-    <col width="110" />
+    <col width="70" />
+    <col width="90" />
   </colgroup>
 <tr>
     <td style="height:0 px"></td>
     <td style="height:0 px" colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+    <td style="height:0 px"></td>
     <td style="height:0 px"></td>
     <td style="height:0 px"></td>
     <td style="height:0 px"></td>
@@ -55,8 +57,9 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr"><strong>Instance type</strong></p></td>
       <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
 	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
-	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
-		  <td><p dir="ltr"><strong>ThoughtSpot recommends</strong></p></td>
+	  <td><p dir="ltr"><strong>Data <br>volumes <br>EBS only</strong></p></td>
+    <td><p dir="ltr"><strong>Data <br>volumes <br>with S3</strong></p></td>
+		  <td><p dir="ltr"><strong>Recommended</strong></p></td>
 </tr>
 <tr>
       <td><p dir="ltr">Standard</p>
@@ -67,6 +70,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">64/488</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"></p></td>
 </tr>
 <tr>
@@ -77,6 +81,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">64/488</p></td>
     <td><p dir="ltr">200 GB</p></td>
     <td><p dir="ltr">2X 1 TB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"><b>✓</b></p></td>
 </tr>
 <tr>
@@ -87,6 +92,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">96/768</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 1.5 TB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"></p></td>
     </tr>
 <tr>
@@ -97,6 +103,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">32/244</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"></p></td>
     </tr>
 <tr>    
@@ -107,6 +114,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">32/244</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"><b>✓</b></p></td>
     </tr>
 <tr>
@@ -117,6 +125,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">16/122</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"></p></td>
     </tr>
 <tr>
@@ -127,6 +136,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">16/122</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"><b>✓</b></p></td>
 </tr>
     <tr>
@@ -138,6 +148,7 @@ For example: If you are deploying 1 TB of data using the standard r5.16xlarge in
       <td><p dir="ltr">96/384</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
+    <td><p dir="ltr">500 GB</p></td>
 		<td><p dir="ltr"></p></td>
     </tr>
 <tr>
