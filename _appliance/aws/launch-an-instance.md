@@ -12,7 +12,9 @@ After you've determined your configuration options, you must set up your virtual
 The high-level process for setting up ThoughtSpot in AWS is the following:
 1. Gain access to ThoughtSpot AMIs.
 2. Choose a VM instance configuration recommended by ThoughtSpot.
-3. Work with ThoughtSpot to set up your ThoughtSpot cluster.
+3. Set up your Amazon S3 bucket (optional).
+4. Set up your ThoughtSpot cluster in AWS.
+3. Contact ThoughtSpot to finish setting up your cluster.
 4. Open the required network ports for communication for the nodes in your cluster and end users.
 5. [Deploy your AWS instance using CloudFormation CLI.]({{ site.baseurl }}/appliance/aws/deploy-aws-cloud-formation.html)
 
