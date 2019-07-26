@@ -598,7 +598,7 @@ entries:
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
-      - title: Introduction to onboarding
+      - title: Onboarding Users
         url: /end-user/onboarding/intro-onboarding.html
         output: web,ugBk
       - title: Understand groups and privileges
