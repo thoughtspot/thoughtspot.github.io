@@ -24,6 +24,10 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
 
 ## ThoughtSpot AWS instance types
 
+The following table contains the supported and recommended instance types for a ThoughtSpot AWS deployment.
+
+For example: If you are deploying 1 TB of data using the standard r5.16xlarge instance type, you will need 4 instances, because the per-VM capacity of that instance type is 250 GB.
+
 <table width="853">
 <colgroup>
       <col width="100" />
@@ -36,13 +40,13 @@ In order to reduce the cost of a deployment, S3 is available as storage for majo
     <col width="110" />
   </colgroup>
 <tr>
-    <td><br /></td>
-    <td style="height:5px" colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
-    <td><br /></td>
-    <td><br /></td>
-    <td><br /></td>
-    <td><br /></td>
-    <td><br /></td>
+    <td style="height:0 px"></td>
+    <td style="height:0 px" colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+    <td style="height:0 px"></td>
+    <td style="height:0 px"></td>
+    <td style="height:0 px"></td>
+    <td style="height:0 px"></td>
+    <td style="height:0 px"></td>
   </tr>
 <tr>
       <td><p dir="ltr"><strong>Data shape</strong></p></td>
