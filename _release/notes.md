@@ -71,6 +71,23 @@ You can now download a pinboard in PDF format, without downloading each visualiz
 
 We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
 
+### New candlestick chart type
+
+We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick chart]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
+
+### SpotIQ comparative analysis
+
+SpotIQ Analysis now supports more complex measurements:  
+* _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
+* _Unique count_  uses a 'versus' analysis to highlight absolute change grouped by different drill attributes  
+
+See [SpotIQ Comparative Analysis]({{ site.baseurl }}//spotiq/spotiq-comparative-analysis.html).
+
+### SpotIQ simplified feedback
+
+We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}//spotiq/insight=feedback.html).
+
+
 ### Drivers
 
 As of this release, ThoughtSpot no longer supports Solaris installations.  

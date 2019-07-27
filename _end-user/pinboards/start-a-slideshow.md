@@ -49,7 +49,7 @@ Consider the following actions on pinboards:
 
 | Legend | Action |
 | --- | --- |
-| 1. | You can see the tooltip information about each element of the visualization as you hover the cursor over that area of the presentation.|
+| 1. | You can see the tooltip information about each element of the visualization as you hover the cursor over that area of the presentation. |
 | 2. | To quickly edit a visualization, click the pencil icon, and proceed to make the necessary changes. This takes you out of presentation mode. |
 | 3. | By left-clicking, you can open a drop menu where you can change filtering to **Exclude selected values**. |
 | 4. | Similarly, you can apply a filter to **Only include selected values** or **Only include selected  point**. |
