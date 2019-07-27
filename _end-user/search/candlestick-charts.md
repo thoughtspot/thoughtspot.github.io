@@ -1,7 +1,7 @@
 ---
 title: [Candlestick charts]
 keywords: financial, candlestick, open-close, price fluctuation
-last_updated: 07-01-2019
+last_updated: 07-26-2019
 summary: "A candlestick chart describes price movements of financial instruments, such as stocks, derivatives, currencies, and commodities."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -32,11 +32,12 @@ Candlestick charts have a very specific approach to representing data:
 
 * The 'wick' that extends upwards from the rectangle indicates the difference between the highest of _Open_ or _Close_, and highest traded value (_High_). Similarly for the extension downwards from the lowest of _Open_ or _Close_, and the lowest traded value (_Low_).
 
-* Your search must start with the four mandatory measures. Additionally, it must have a periodicity, such as `daily`. The search question has to be in the following form:
+* Your search must compute four measures. Additionally, it must have a "for each" specification for the horizontal axis. Most commonly, this is a a periodicity, such as `daily`.  
+
+  The search question can be expressed in the following form:
   ```
-  open high low close by date daily <date_filter>
+  open high low close daily
   ```
-  The order of these measurements is critical to correctly generate the candlestick chart.
 
   ![]({{ site.baseurl }}/images/candlestick_increase_decrease.png "Increasing and Decreasing Candlesticks"){: .image-left }
 
@@ -76,3 +77,7 @@ There are two color choices for this chart type:
 ThoughtSpot uses Green and Red, respectively, as default.
 
 Each candlestick renders in one of the two options, depending on the relative values of `open` and `close` measurements.
+
+## Adapting candlestick charts for other data
+
+You can use this chart to display other statistical data, as long as you provide four measurements in addition to specifying the horizontal axis.
