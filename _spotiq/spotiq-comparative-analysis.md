@@ -4,6 +4,7 @@ tags: [spotiq]
 keywords: SpotIQ, comparative analysis, complex measures
 summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
 last_updated: 07/26/2019
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -53,7 +54,8 @@ To view the results of your analysis, follow these steps:
     Click _View Results_ to open the report.
     ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
-3. In the report, SpotIQ prepared a visualization for comparing each of the columns identified in the analysis request. In this example, these columns are _Department_, _Age Group_, and _Store Region_.
+3. In the report, SpotIQ prepared a visualization for comparing each of the columns identified in the analysis request. In this example, these columns are _Department_, _Age Group_, and _Store Region_.  
+
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
 4. You can now examine each visualization in the analysis for details of comparison, give feedback on its usefulness, and so on.  

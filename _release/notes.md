@@ -48,6 +48,8 @@ When you create a new user, we recommend that you add them to a user group immed
 
 To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
+Finally, see the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
+
 ### Management Console
 The Management Console is now available in beta.  
 
@@ -81,12 +83,15 @@ SpotIQ Analysis now supports more complex measurements:
 * _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
 * _Unique count_  uses a 'versus' analysis to highlight absolute change grouped by different drill attributes  
 
-See [SpotIQ Comparative Analysis]({{ site.baseurl }}//spotiq/spotiq-comparative-analysis.html).
+See [SpotIQ Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-analysis.html).
 
 ### SpotIQ simplified feedback
 
-We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}//spotiq/insight=feedback.html).
+We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
 
+### Schema and Join Information
+
+You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
 
 ### Drivers
 

@@ -3,38 +3,71 @@ title: [Modify joins within a worksheet]
 keywords: worksheet view join relationship
 last_updated: 11/2/2018
 summary: "Learn how to change the join type between the tables within a worksheet"
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 When you create a worksheet, you select a [join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html). The join rule works together with the joins defined within the worksheet determine how the tables that make up the worksheet are joined, and how those joins behave when searching on the worksheet.
 
-Beginning in ThoughtSpot version 5.0, you aren't limited to just one join rule for the entire worksheet. You can define different types of joins for each join between tables in a worksheet. Be default, each of these individual table joins uses an inner join. But you can override this at the individual join level.
+Starting with ThoughtSpot version 5.0, you are not limited to just one join rule for the entire worksheet. You can define different types of joins for each join between tables in a worksheet. Be default, each of these individual table joins uses an inner join. But you can override this at the individual join level.
 
 You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to modify joins within worksheets.
 
-To modify the join types within a worksheet:
+## Modify a join
 
-1. To find your worksheet, click **Data** in the top menu, and choose **Worksheets**.
+To modify the join types within a worksheet, follow these steps:
 
-2. Click the name of your worksheet.
+1. Click the **Data** tab in the top menu.  
 
-3. Click **Schema**. You will see the list showing existing joins within the worksheet. The joins shown here include all the joins between the underlying tables, whether [created using TQL]({{ site.baseurl }}/admin/loading/constraints.html) or [in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
+   ![]({{ site.baseurl }}/images/click-data.png "Click Data")
 
-   If you don't see the joins within the worksheet, make sure **Joins within worksheets** is chosen.
+2. Select **Table**, and then select **Worksheets**.
 
-   ![]({{ site.baseurl }}/images/worksheet-join-chooser.png "Joins within a worksheet")
+3. Click the name of the worksheet. Here, we selected the worksheet _West Regional Sales_.
 
-4. Find the join you want to modify and click the **Edit** icon. Note that the fact table is always the left table, and it is shown on the left side.
+4. At the top of the worksheet, click the **Schema** tab.
 
-   ![]({{ site.baseurl }}/images/ws-join-edit-icon.png "Edit worksheet join")
+   ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
 
-5. Select the join type to use for this relationship in the worksheet and click **Save**.
+5. The join information and the schema for the worksheet appear.
+   -  The schema representation includes the join type.  
+   -  You can see the list of _Joins within the worksheet_, which include all joins between the underlying tables, both [created using TQL]({{ site.baseurl }}/admin/loading/constraints.html) and [created in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
+   -  The fact table is always on the left side of the join, and it appears on the left side.
 
-   ![]({{ site.baseurl }}/images/worksheet-internal-join-type.png "Select join type")
+   ![]({{ site.baseurl }}/images/worksheet-join-schema-view.png "View join and schema")
 
-Now these two tables will be joined using the type you selected, in the context of this worksheet.
+   Note the available actions for the join view.  
+
+   <table>
+     <tr>
+       <th>Legend</th>
+       <th>Action</th>
+     </tr>
+     <tr>
+       <td>1.</td>
+       <td>See either <em>Join within this Worksheet (Default)</em>, or <em>Joins from this Worksheet</em>.</td>
+     </tr>
+     <tr>
+       <td>2.</td>
+       <td>Click the pencil icon to edit the join.</td>
+     </tr>
+     <tr>
+       <td>3.</td>
+       <td>Click the up arrow icon to collapse the join detail.</td>
+     </tr>
+   </table>
+
+7. Select the join you plan to modify, and click the **Edit** \(pencil\) icon next to it.
+
+8. In the **Edit Join** window modal, make the necessary changes:  
+
+   ![]({{ site.baseurl }}/images/change-join.png "Select join type and cardinality")
+
+    -  Under **Join Type**, select one of _Inner Join_, _Left Outer Join_, _Right Outer Join_, or _Full Outer Join_.
+    - Under **Join Cardinality**, select either _Many to One_, or _One to One_.
+
+   Click **Save**.
 
 ## Related Information
 
