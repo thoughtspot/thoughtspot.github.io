@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/app-integrate/embedding-viz/trusted-authentication.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-23T14:46:42-07:00" />
+<meta property="article:published_time" content="2019-07-28T12:17:37-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/embedding-viz/trusted-authentication.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/embedding-viz/trusted-authentication.html","headline":"[“Configure trusted authentication”]","dateModified":"2019-07-23T14:46:42-07:00","datePublished":"2019-07-23T14:46:42-07:00","description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate once, with the trusted authentication server.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/app-integrate/embedding-viz/trusted-authentication.html"},"url":"https://docs.thoughtspot.com/5.2/app-integrate/embedding-viz/trusted-authentication.html","headline":"[“Configure trusted authentication”]","dateModified":"2019-07-28T12:17:37-07:00","datePublished":"2019-07-28T12:17:37-07:00","description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate once, with the trusted authentication server.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3164,7 +3164,7 @@ return a new one. To disable a token and not overwrite it:</p>
   <li>
     <p>User in another application or web page requests access to embedded ThoughtSpot.</p>
 
-    <p>This is a REST request for an embedded ThoughtSpot Eobject, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:</p>
+    <p>This is a REST request for an embedded ThoughtSpot object, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:</p>
 
     <ul>
       <li>if the requestor is itself authenticated with your server</li>
@@ -3175,7 +3175,7 @@ return a new one. To disable a token and not overwrite it:</p>
     <p>It is also important the the <code class="highlighter-rouge">username</code> is a match for a <code class="highlighter-rouge">username</code> on the ThoughtSpot application.</p>
   </li>
   <li>
-    <p>The trusted web server requests a authentication token on the user’s behalf from ThoughtSpot.</p>
+    <p>The trusted web server requests an authentication token on the user’s behalf from ThoughtSpot.</p>
 
     <p><code class="highlighter-rouge">POST https://&lt;thoughtspot&gt;/callosum/v1/session/auth/token</code></p>
 
@@ -3215,7 +3215,7 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <p>For example, if the customer was requesting a specific object:</p>
 
-    <p><code class="highlighter-rouge">https://THOUGHTSPOT_URL/?authtoken=TOKEN_VALUE/#/embed/viz/REPORTBOOK_ID/ID</code></p>
+    <p><code class="highlighter-rouge">GET https://&lt;instance&gt;/callosum/v1/session/login/token?username=&lt;user&gt;&amp;auth_token=&lt;token&gt;&amp;redirect_url=&lt;full-encoded-url-with-auth-token&gt;</code></p>
 
     <p>If you are using ThoughtSpot embed with objects or pages, you must request
  reauthenticate requests for each new object.</p>
@@ -3246,7 +3246,7 @@ return a new one. To disable a token and not overwrite it:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 23, 2019 <br />
+        Generated: Jul 28, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
