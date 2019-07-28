@@ -101,6 +101,45 @@ We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/download
 {: id="53-fixed"}
 ## 5.3 Fixed Issues
 
+A problem where dates do not display properly in the query details pane of an answer is now fixed.
+
+An issue where the color coding of columns is not displayed in a PDF downloaded from a worksheet is fixed.
+
+A problem where the column tooltip in a pinboard does not show last updated information has been fixed.
+
+An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.
+
+A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.
+
+An issue when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.
+
+A problem where searches on a pinboard don’t include cached queries has been fixed.
+
+An issue where URLs that appear within an Answer are red, instead of blue, is now fixed.
+
+A problem where an answer that has no measures causes it to display blank is now fixed.
+
+An issue where using **Copy and edit** in a saved answer causes the screen to go blank has been fixed.
+
+A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.
+
+An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.
+
+A problem where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.
+
+An issue where running the `tscli cluster` command causes a failed security check is now fixed.
+
+A problem where a stacked bar chart does not work in a pinboard is now fixed.
+
+An issue where an exclude filter does not work properly on a pinboard is now fixed.
+
+A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.
+
+An issue where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.
+
+A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
+
+An issue where axis labels are missing from some visualizations is now fixed.
 
 {: id="notes-for-older-versions"}
 ## Notes from older versions
