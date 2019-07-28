@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application. "> -->
 <meta name="keywords" content=",  REST,API,data,"REST API"">
-<title>Use the REST API to get data | ThoughtSpot</title>
+<title>Use the Data REST API to get data | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -2307,12 +2307,12 @@ var ss360Config = {
     
       
        <li >
-         <a href="#">Application Integration</a>
+         <a href="#">Embedding</a>
        <ul class="section">
             
               
                 
-                  <li><a href="/5.1/app-integrate/introduction/introduction.html">Introduction</a></li>
+                  <li><a href="/5.1/app-integrate/introduction/introduction.html">Introduction to Embedding</a></li>
                 
               
             
@@ -2330,7 +2330,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.1/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                  <li><a href="/5.1/app-integrate/JSAPI/about-JS-API.html">Use the JavaScript API</a></li>
                 
               
             
@@ -2470,7 +2470,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/embedding-viz/trusted-authentication.html">Configured trusted authentication</a></li>
+                          <li><a href="/5.1/app-integrate/embedding-viz/trusted-authentication.html">Configure trusted authentication</a></li>
                       
                    
                 
@@ -2563,31 +2563,37 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/reference/pinboarddata.html">pinboarddata API</a></li>
+                          <li><a href="/5.1/app-integrate/reference/pinboarddata.html">Pinboard Data API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/reference/metadata-api.html">metadata API</a></li>
+                          <li><a href="/5.1/app-integrate/reference/metadata-api.html">Metadata API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/reference/session-api.html">session API</a></li>
+                          <li><a href="/5.1/app-integrate/reference/session-api.html">Session API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/reference/user-api.html">user API</a></li>
+                          <li><a href="/5.1/app-integrate/reference/user-api.html">User API</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/5.1/app-integrate/reference/group-api.html">group API</a></li>
+                          <li><a href="/5.1/app-integrate/reference/group-api.html">Group API</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/5.1/app-integrate/reference/materialization-api.html">Materialization API</a></li>
                       
                    
                 
@@ -3136,7 +3142,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Use the REST API to get data</h1>
+   <h1 class="post-title-main">Use the Data REST API to get data</h1>
 </div>
 
 
@@ -3186,11 +3192,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Data retrieved using the REST API is returned as JSON (JavaScript Object Notation).</p>
+  <p>Data retrieved using the Data REST API is returned as JSON (JavaScript Object Notation).</p>
 
-<p>Before you can use the REST API, you need to enable the <a href="/5.1/app-integrate/JSAPI/enable-JS-API.html#">JavaScript API (JS API)</a> and authenticate to ThoughtSpot.</p>
+<p>Before you can use the Data REST API, you need to enable the <a href="/5.1/app-integrate/JSAPI/enable-JS-API.html#">JavaScript API (JS API)</a> and authenticate to ThoughtSpot.</p>
 
-<p>Use this procedure to construct the URL you will use to call the REST API:</p>
+<p>Use this procedure to construct the URL you will use to call the Data REST API:</p>
 
 <ol>
   <li>
@@ -3246,7 +3252,7 @@ $('#toc').on('click', 'a', function() {
   </li>
   <li>
     <p>Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
-  The REST API returns the data formatted as JSON.</p>
+  The Data REST API returns the data formatted as JSON.</p>
   </li>
   <li>Retrieve the data from the JSON and display it in your Web page, Web portal, or application.</li>
 </ol>
@@ -3275,7 +3281,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 3, 2019 <br />
+        Generated: Jul 28, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
