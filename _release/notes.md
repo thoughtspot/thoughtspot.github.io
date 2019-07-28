@@ -54,7 +54,7 @@ A problem where tables in a Google Chrome tab become misaligned is now fixed.
 
 Custom scatter charts no longer disappear from pinboards after an upgrade.
 
-An issue where the Copy-and-edit button no longer appears on embedded visuals is now fixed.
+An issue where the Copy-and-edit button incorrectly appears on embedded visuals is now fixed.
 
 Occasional slow navigation between the Answer and Pinboard pages has been fixed.
 
