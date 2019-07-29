@@ -13,7 +13,7 @@ With SpotIQ competitive analysis, you can compare two data points for simple or 
   * _Count_
   * _Sum over sum_, which generate a pinboard that has 'what-if' percentage insights
   * _Average_, which generate a pinboard that has 'what-if' percentage insights
-  * _Unique count_, which uses a 'versus' analysis to show the absolute change grouped by different drill attributes
+  * Other functions, such as _unique count_ , which use a 'versus' analysis to show the absolute change grouped by different drill attributes
 
 ## Basic Comparative Analysis in SpotIQ ##
 
@@ -26,10 +26,10 @@ To perform this analysis, follow these steps:
 3. Right-click to see the drop-down menu, and select **SpotIQ Analyze**.  
    ![]({{ site.baseurl }}/images/comparative-analysis-1.png "Starting comparative analysis")
 
-4. In the SpotIQ information modal, click **Got it**.  
-   ![]({{ site.baseurl }}/images/comparative-analysis-2.png "Got it")
+4. If you see the the SpotIQ information modal, click **Got it**.
+   <!--![]({{ site.baseurl }}/images/comparative-analysis-2.png "Got it")-->
 
-5. In the window modal, under **Columns**, select the columns for SpotIQ to compare. By default, all columns appear selected.  
+5. In the window modal, under **Columns**, select the columns for SpotIQ to compare. By default, SpotIQ picks the most relevant columns, based on what it learned from your past activity.  
 
    Here, we selected _Department_, _Age Group_, and _Store Region_.  
 
@@ -47,14 +47,14 @@ To view the results of your analysis, follow these steps:
 1. On the top navigation bar, click **SpotIQ**.  
    ![]({{ site.baseurl }}/images/click-spotiq.png "Click SpotIQ")
 
-2. Select the **Results** tab, and the locate your analysis under **All** or **Yours**.  
+2. Select the **Analyses** tab.  
 
    Your analysis may be in progress. Wait until its **Status** changes to _Done_.
 
-    Click _View Results_ to open the report.
+    Click _View Results_ to open the pinboard.
     ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
-3. In the report, SpotIQ prepared a visualization for comparing each of the columns identified in the analysis request. In this example, these columns are _Department_, _Age Group_, and _Store Region_.  
+3. In the report, SpotIQ generates a pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.  
 
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
@@ -66,7 +66,7 @@ To view the results of your analysis, follow these steps:
    | --- | --- |
    | 1. | **Give feedback**. SpotIQ learns how to improve its feedback based on the information you provide. |
    | 2. | **Add to a pinboard**. You can add the specific visualization to an existing pinboard, or create a new pinboard and add it there. |
-   | 3. | **Get the name of the algorithm** |
+   | 3. | **Analysis details**. Get the name of the algorithm |
    | 4. | **More options**, including another round of SpotIQ analysis, download of data as a CSV file, editing this visualization, or editing a copy of the visualization. |
 
 ## Advanced Comparative Analysis in SpotIQ ##
