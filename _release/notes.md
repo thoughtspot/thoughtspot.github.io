@@ -89,6 +89,10 @@ See [SpotIQ Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-a
 
 We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
 
+### Explore Search
+
+With **Explore**, existing pinboards lead you to deeper insights through a multi-step discovery process. A single click generates a new chart, which leads to further exploration. See [Explore]({{ site.baseurl }}/end-user/search/explore.html).
+
 ### Schema and Join Information
 
 You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
