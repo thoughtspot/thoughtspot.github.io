@@ -22,7 +22,7 @@ With **Explore**, you gain a deeper insight from your existing charts. ThoughtSp
 
 1. In an answer within a pinboard, click **Explore**.
 
-   ![]({{ site.baseurl }}/images/explore-01.png "Click Explore")
+   ![]({{ site.baseurl }}/images/explore-01.png "Click Explore" | width=400)
 
 2. A new visualization appears in the pinboard, with an attached **Explore this data** interface.
 
