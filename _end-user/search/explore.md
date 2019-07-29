@@ -3,6 +3,7 @@ title: ["Explore"]
 keywords: Search,answer,explore
 last_updated: 7/28/2019
 summary: "In ThoughtSpot, we guide you to further explore the search answers, to deeper insights about your data."
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

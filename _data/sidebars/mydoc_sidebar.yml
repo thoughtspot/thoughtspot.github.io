@@ -76,7 +76,7 @@ entries:
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
           output: web,ugBk
-        - titile: Explore
+        - title: Explore
           url: /end-user/search/explore.html
           output: web,ugBk
         - title: Ask an Expert
