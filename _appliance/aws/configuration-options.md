@@ -6,14 +6,14 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
-application on the Amazon Elastic Compute Cloud (EC2) platform, including both Amazon Elastic Block
-Store (EBS) and S3 storage configurations for the best performance, scalability,
-reliability, and cost savings.
-
-You can find information here on which configuration of memory, CPU, storage,
-and networking capacity you should be running for your instances. There are also
-details on how to configure your placement groups.
+This page includes details on the following configuration options for AWS instances:
+- Storage
+- Memory
+- CPU
+- Networking
+- Regions
+- Availability zones
+- Placement groups
 
 ## Storage options
 
