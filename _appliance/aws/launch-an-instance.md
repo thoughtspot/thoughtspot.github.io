@@ -19,7 +19,7 @@ The ThoughtSpot AMI comes provisioned with a custom ThoughtSpot image to make ho
 
 The ThoughtSpot AMI has specific applications on an CentOS base image. The EBS volumes required for ThoughtSpot install in AWS comes as part of the AMI. When you launch an EC2 instance from this image, the EBS volumes automatically get sized and provisioned. The storage attached to the base AMI is 200 GB (xvda), 2X1 TB (xvdb), and SSD gp2. It contains the maximum size of disks and it can manage full load of the VM.
 
-Please go through the section "Copy ThoughtSpot AMI to your region" to start commissioning your EC2 instances.
+Please follow the steps in "Copy ThoughtSpot AMI to your region" to start commissioning your EC2 instances.
 
 ##  Launch an instance
 
