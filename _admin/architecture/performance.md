@@ -15,7 +15,7 @@ limit the data range to the relevant years or months, or combine long and narrow
 
 ## Data Boundaries
 
-Total rows in a result of a join can have an impact on perforamence. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
+Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
 
 |Description |Boundary|
 |-------------------------|--------------------|
@@ -30,8 +30,8 @@ Total rows in a result of a join can have an impact on perforamence. In general,
 
 Worksheets must have less than 1000 columns. For aggregated worksheets, follow these guidelines:
 
-* Number of columns should be less than 50
-* Number of rows should be less than 10 millions
+* Number of columns not to exceed 50
+* Number of rows not to exceed 10 million
 
 You can use an ETL process to circumvent these limitations. Speak with ThoughtSpot Customer Support to learn more.
 
