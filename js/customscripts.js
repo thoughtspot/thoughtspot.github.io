@@ -54,7 +54,7 @@ $(function() {
 });
 
 
-// docs feedback
+// docs feedback tool
 const formUrl = 'https://script.google.com/macros/s/AKfycbz-XYBCvJlZhrQlcyWRMn-s02i--AcF4JWI3oNFx38-WDJCJN-3/exec';
 var $form = '';
 function saveData(){
@@ -71,8 +71,8 @@ function saveData(){
 }
 var useFulArticle = 'Was this article helpful?';
 function activeForm(value){
-  const feedbackYesMessage = `Thank you. That’s good to know. Please tell us what information you were looking for, what we did well, and if we can improve.`,
-  feedbackNoMessage = `Sorry we were not able to answer your questions. Please tell us what information you were looking for, and how we can improve. Thank you.`;
+  const feedbackYesMessage = `Thank you. Please share your experience with us.`,
+  feedbackNoMessage = `Apologies! Please tell us how we can improve. Thank you.`;
   if(value == 'No'){
     document.querySelector('#feedback-form_radio-no').checked = true;
     document.querySelector('#feedback-form_radio-yes').checked = false;
@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $form = $('form#feedback-form');
     document.getElementById('submitForm').addEventListener("click",  function(event){
     event.preventDefault();
-    var valid = validFeedback();if (valid) {saveData();}
-    //saveData();
+    //var valid = validFeedback();if (valid) {saveData();}
+    saveData();
     });
   }
 });
