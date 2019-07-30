@@ -17,9 +17,9 @@ The ThoughtSpot AMI comes provisioned with a custom ThoughtSpot image to make ho
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifies the volumes to attach to the instance when it's launch.
 
-Check with your ThoughtSpot contact to learn about the latest version of the ThoughtSpot AMI. Once you've provided your AWS account ID and region where the VMs will be hosted, ThoughtSpot will share the current ThoughtSpot base AMI with you.
-
 The ThoughtSpot AMI has specific applications on an CentOS base image. The EBS volumes required for ThoughtSpot install in AWS comes as part of the AMI. When you launch an EC2 instance from this image, the EBS volumes automatically get sized and provisioned. The storage attached to the base AMI is 200 GB (xvda), 2X1 TB (xvdb), and SSD gp2. It contains the maximum size of disks and it can manage full load of the VM.
+
+Please follow the steps in "Copy ThoughtSpot AMI to your region" to start commissioning your EC2 instances.
 
 ##  Launch an instance
 
@@ -35,7 +35,7 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 -   Number of EC2 instances needed: Based on the datasets, the number of EC2 instances needed will vary. Also for staging larger datasets (\> 50 GB per VM), there may be a need to provision additional attached EBS volumes that are SSD gp2 provisioned.
 
 
-###  Copy TS AMI to your region
+###  Copy ThoughtSpot AMI to your region
 
 1. Log in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
 2. Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
