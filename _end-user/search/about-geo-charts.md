@@ -31,7 +31,7 @@ Here is a table that shows which GeoType data can be displayed using which geo c
 |County|Geo area (default), geo bubble, geo heatmap| Only for counties in the United States.|
 |Point|Geo bubble (default), geo heatmap| Must use both latitude and longitude columns.|
 |State|Geo area (default), geo bubble, geo heatmap| Only for states in the United States.|
-|Zipcode|Geo bubble (default), geo heatmap| Zip codes and zip codes +4 in the United States.|
+|Zipcode|Geo bubble (default), geo heatmap| Zip codes in the United States.|
 |Other sub-nation regions|Geo area (default), geo bubble, geo heatmap| The display will depend on the type of administrative region chosen.|
 
 For data to be displayed using geo charts, your administrator must configure it
