@@ -87,7 +87,7 @@ These data types can be designated as geographical data, which enables them to b
 * `LONGITUDE` which must be used with `LATITUDE`
   -   122.142103
   -   103.848865
-* `ZIP_CODE` for zip codes and zip codes +4 in the United States
+* `ZIP_CODE` for zip codes in the United States
   -   `po_name`: MT MEADOWS AREA
   -   `ZIP`: "00012"
   -   `zip2`: 12
