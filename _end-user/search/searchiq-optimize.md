@@ -110,7 +110,7 @@ There are a few ways to teach new language interpretations to SearchIQ:
 -->
 ## Add Experts
 
-While not completely necessary, we recommend that you add Experts to the datasource. These people in your organization generally know a great deal about the data, and can help you train the SearhIQ. They are also the individuals who can assist business users in  validating the answers they receive as a result of regular Search, and SearchIQ. You can learn more about that by reading about our [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html) feature.
+While not completely necessary, we recommend that you add Experts to the datasource. These people in your organization know a great deal about the data, and can help you train SearchIQ. They are also the individuals who can assist business users in validating the answers they receive as a result of both regular Search and SearchIQ. You can learn more about that by reading about our [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html) feature.
 
 To specify the experts for the datasource, follow these steps:
 
@@ -122,7 +122,7 @@ To specify the experts for the datasource, follow these steps:
 
    ![]({{ site.baseurl }}/images/add-experts.png "Add experts")
 
-3. After you complete adding experts, click **Done**.
+3. After you finish adding experts, click **Done**.
 
    ![]({{ site.baseurl }}/images/add-experts-done.png "Complete adding experts")
 
