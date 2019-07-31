@@ -21,7 +21,9 @@ Complete the following steps to follow a pinboard.
 3. Click **Follow** at the top right corner of the pinboard.
    ![]({{ site.baseurl }}/images/pinboard-follow.png "Click Follow")
 
-You are now following the pinboard. Notice that the **Follow** option no longer appears in the top right corner of the pinboard.
+You are now following the pinboard, and will receive emails weekly, at the same date and time when you followed the pinboard.  To change the schedule, see the next section of this article.
+
+Notice that the **Follow** option no longer appears in the top right corner of the pinboard.
 
 ## Configure the email schedule for the pinboard
 
