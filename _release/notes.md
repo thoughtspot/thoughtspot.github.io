@@ -51,9 +51,8 @@ To configure the email protocols necessary for onboarding, the administrator mus
 Finally, see the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
 
 ### Management Console
-The Management Console is now available in beta.  
 
-Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
+**The Management Console is now available in beta.** Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
 
 ### Mandatory user emails
 
@@ -92,6 +91,10 @@ We simplified feedback for insights and analysis to use fewer questions. These q
 ### Explore Search
 
 With **Explore**, existing pinboards lead you to deeper insights through a multi-step discovery process. A single click generates a new chart, which leads to further exploration. See [Explore]({{ site.baseurl }}/end-user/search/explore.html).
+
+### SearchIQ optimization and other enhancements
+
+**SearchIQ is in beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
 
 ### Schema and Join Information
 

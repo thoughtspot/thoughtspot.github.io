@@ -832,7 +832,7 @@ entries:
         url: /admin/setup/enable-searchiq.html
         output: web,admBk
       - title: Optimize SearchIQ
-        url: /admin/setup/searchiq-optimize.html
+        url: /end-user/search/searchiq-optimize.html
         output: web,admBk
       - title: Set entity categories for SearchIQ
         url: /admin/data-modeling/set-entity-category.html
