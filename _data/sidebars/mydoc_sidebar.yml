@@ -825,7 +825,7 @@ entries:
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
-    - levelTwoTitle: Set up SearchIQ for natural language search
+    - levelTwoTitle: Set up SearchIQ
       output: web,admBk
       levelTwoItems:
       - title: Enable SearchIQ
