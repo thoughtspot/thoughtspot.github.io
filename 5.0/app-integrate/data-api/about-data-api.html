@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."> -->
 <meta name="keywords" content=",  REST,API,data,authentication,public">
-<title>About the REST API | ThoughtSpot</title>
+<title>About the Data REST API | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -2287,12 +2287,12 @@ var ss360Config = {
     
       
        <li >
-         <a href="#">Application Integration</a>
+         <a href="#">Embedding</a>
        <ul class="section">
             
               
                 
-                  <li><a href="/5.0/app-integrate/introduction/introduction.html">Introduction</a></li>
+                  <li><a href="/5.0/app-integrate/introduction/introduction.html">Introduction to Embedding</a></li>
                 
               
             
@@ -2310,7 +2310,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.0/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                  <li><a href="/5.0/app-integrate/JSAPI/about-JS-API.html">Use the JavaScript API</a></li>
                 
               
             
@@ -3116,7 +3116,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">About the REST API</h1>
+   <h1 class="post-title-main">About the Data REST API</h1>
 </div>
 
 
@@ -3166,17 +3166,17 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>When using the REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON (JavaScript Object Notation) representation of the data will be returned.</p>
+  <p>When using the Data REST API, authentication is achieved through SAML. After authentication, use the POST method to call a URL for the desired visualization or pinboard. A JSON (JavaScript Object Notation) representation of the data will be returned.</p>
 
 <h2 id="authentication">Authentication</h2>
 
-<p>Before you can use the REST API, you must authenticate to ThoughtSpot using SAML with the <a href="/5.0/app-integrate/JSAPI/about-JS-API.html#">JavaScript API</a>.</p>
+<p>Before you can use the Data REST API, you must authenticate to ThoughtSpot using SAML with the <a href="/5.0/app-integrate/JSAPI/about-JS-API.html#">JavaScript API</a>.</p>
 
 <h2 id="cross-domain-verification">Cross Domain Verification</h2>
 
-<p>You’ll need to enable cross domain verification when using the REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for <a href="/5.0/app-integrate/JSAPI/enable-JS-API.html#">enabling the JavaScript API</a> includes information on how to enable this.</p>
+<p>You’ll need to enable cross domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for <a href="/5.0/app-integrate/JSAPI/enable-JS-API.html#">enabling the JavaScript API</a> includes information on how to enable this.</p>
 
-<h2 id="rest-api-capabilities">REST API capabilities</h2>
+<h2 id="data-rest-api-capabilities">Data REST API capabilities</h2>
 
 <p>Use a POST method to access the URL, which calls the REST API. The data is returned as a JSON string. When using this method, you’ll need to extract the data from the JSON file and render it on your Web page, portal, or application.</p>
 
@@ -3230,7 +3230,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 26, 2019 <br />
+        Generated: Jul 31, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
