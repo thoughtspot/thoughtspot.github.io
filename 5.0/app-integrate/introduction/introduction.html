@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  tbd">
-<title>Introduction | ThoughtSpot</title>
+<title>Introduction to Embedding | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -2287,12 +2287,12 @@ var ss360Config = {
     
       
        <li >
-         <a href="#">Application Integration</a>
+         <a href="#">Embedding</a>
        <ul class="section">
             
               
                 
-                  <li class="active"><a href="/5.0/app-integrate/introduction/introduction.html">Introduction</a></li>
+                  <li class="active"><a href="/5.0/app-integrate/introduction/introduction.html">Introduction to Embedding</a></li>
                 
               
             
@@ -2310,7 +2310,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.0/app-integrate/JSAPI/about-JS-API.html">Get the JavaScript API</a></li>
+                  <li><a href="/5.0/app-integrate/JSAPI/about-JS-API.html">Use the JavaScript API</a></li>
                 
               
             
@@ -3116,7 +3116,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Introduction</h1>
+   <h1 class="post-title-main">Introduction to Embedding</h1>
 </div>
 
 
@@ -3158,26 +3158,69 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    1 minute
+    2 minutes
   
 </span>
 
     
 
-  <p>This guide explains how to integrate ThoughtSpot with other applications,
-including authentication, embedding, and APIs. For information on how to
-integrate with other data sources for loading data, refer to the
-<a href="/5.0/data-integrate/introduction/introduction-data-integration.html">Data Integration Guide</a>.</p>
+  <p>ThoughtSpot Extended Enterprise Edition lets you give people outside of your company access to some ThoughtSpot capabilities within the context of an external application, website, or portal. We call these people “external users”. For example, you could give external users access to data, search, search results, data visualizations, and/or pinboards.</p>
 
-<p>Here are the top level topics on application integration:</p>
+<p>External users cannot be granted administrative privileges or receive technical support from ThoughtSpot. All first-line support must be handled through your company or organization.</p>
+
+<p>ThoughtSpot Extended Enterprise Edition includes these capabilities:</p>
 
 <ul>
-  <li><a href="/5.0/app-integrate/introduction/login-console.html">Log in to the Linux shell using SSH</a></li>
+  <li><a href="/5.0/app-integrate/embedding-viz/about-full-embed.html">Full Application Embedding</a></li>
+  <li><a href="/5.0/app-integrate/embedding-viz/embed-a-viz.html">Embedded Charts and Pinboards</a></li>
+  <li><a href="/5.0/app-integrate/data-api/about-data-api.html">Data REST API</a></li>
+  <li><a href="/5.0/app-integrate/runtime-filters/about-runtime-filters.html">Runtime Filters</a></li>
+  <li><a href="/5.0/app-integrate/reference/metadata-api.html">Metadata API</a></li>
+</ul>
+
+<h2 id="rights-and-obligations">Rights and Obligations</h2>
+
+<p>When you buy ThoughtSpot Extended Enterprise, the following rights and obligations apply:</p>
+
+<ol>
+  <li>External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboard and answers, SearchIQ, and SpotIQ.</li>
+  <li>External users may not be granted Administrator privileges such as the ability to create and modify users and groups.</li>
+  <li>External users are not permitting to copy or download the ThoughtSpot software.</li>
+  <li>You may not include external users in a group that has access to these privileges:
+    <ul>
+      <li>Can administer ThoughtSpot</li>
+      <li>Can administer and bypass RLS</li>
+    </ul>
+  </li>
+  <li>The license for Extended Enterprise does not enable you to act as an MSP (Managed Service Provider). This means that you must not offer managed services to third parties that are based on the ThoughtSpot software.</li>
+  <li>As a company offering access to ThoughtSpot Extended Enterprise to external users, you are responsible for your own data policy and for complying with local laws and regulations concerning data privacy, such as GDPR and HIPAA.</li>
+  <li>If you are using either <strong><em>Application Embedding</em></strong> or <strong><em>Embedded Search</em></strong>, an NPS (Net Promoter Score) survey will be offered to your external users. You may not disable this survey.<br />If you are using either the <strong><em>Visualization Embedding</em></strong> or <strong><em>Pinboard Embedding</em></strong> in your application, it is okay to disable the NPS survey.</li>
+  <li>
+    <p>Deployments of ThoughtSpot Extended Enterprise must conform to <a href="https://brand.thoughtspot.com/d/Vtg4Zg2mqTbE/brand-guidelines">logo restrictions</a>.</p>
+
+    <p>These are the branding elements you can change in ThoughtSpot Extended Enterprise:</p>
+
+    <ul>
+      <li><a href="/5.0/app-integrate/custom-branding/upload-application-logos.html">Logos &amp; Favicon</a></li>
+      <li><a href="/5.0/app-integrate/custom-branding/select-chart-color-palettes.html">Color Palettes</a></li>
+      <li><a href="/5.0/app-integrate/custom-branding/choose-background-color.html">Background Color</a></li>
+      <li><a href="/5.0/app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html">Chart and Table Fonts</a></li>
+      <li><a href="/5.0/app-integrate/custom-branding/change-the-footer-text.html">Footer Text</a></li>
+    </ul>
+  </li>
+  <li>You may not remove the <em>Powered by ThoughtSpot</em> logo that appears at the bottom right of the embedded application when using ThoughtSpot full application embed, or when embedding a pinboard. It is okay to remove the logo if you are embedding a single visualization.</li>
+</ol>
+
+<h2 id="section-contents">Section Contents</h2>
+<p>Here are the main topics for Embedding with Extended Enterprise:</p>
+
+<ul>
+  <li><a href="/5.0/app-integrate/introduction/login-console.html">Log into the Linux shell using SSH</a></li>
   <li><a href="/5.0/app-integrate/introduction/logins.html">Login credentials</a></li>
   <li><a href="/5.0/app-integrate/JSAPI/about-JS-API.html">Using the JavaScript API</a></li>
   <li><a href="/5.0/app-integrate/SAML/about-SAML-integrations.html">SAML</a></li>
-  <li><a href="/5.0/app-integrate/data-api/about-data-api.html">REST API</a></li>
-  <li><a href="/5.0/app-integrate/embedding-viz/about-embedding-viz.html">Emdbed ThoughtSpot</a></li>
+  <li><a href="/5.0/app-integrate/data-api/about-data-api.html">Data REST API</a></li>
+  <li><a href="/5.0/app-integrate/embedding-viz/about-embedding-viz.html">Embed ThoughtSpot</a></li>
   <li><a href="/5.0/app-integrate/runtime-filters/about-runtime-filters.html">Runtime Filters</a></li>
   <li><a href="/5.0/app-integrate/custom-branding/perform-style-customization.html">Style Customization</a></li>
   <li><a href="/5.0/app-integrate/reference/public-api-reference.html">API Reference</a></li>
@@ -3207,7 +3250,7 @@ integrate with other data sources for loading data, refer to the
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jun 26, 2019 <br />
+        Generated: Jul 31, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

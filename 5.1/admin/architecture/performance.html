@@ -3192,25 +3192,15 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughtSpot is configured and licensed by memory availability. However, there
-are other considerations that will impact the performance of your solution. It’s
-important to understand these considerations prior to implementation, since some
-solutions will perform better than others.</p>
+  <p>ThoughtSpot configuration and licensing varies by memory availability. Other considerations also impact the performance of your solution. Because some
+solutions perform better than others, think about the following issues before implementation.</p>
 
-<p>Each node in a ThoughtSpot cluster has been found to perform ideally with less
-than 250GB of data and fewer than 0.5 billion total rows of data. For schemas
-that are particularly complex, performance is increased with even fewer rows of
-data per node. Ways to reduce the total amount of data and rows of data include
-limiting the amount of data (number of years, etc.) or combining long, but
-narrow tables together.</p>
-
-<p>The performance information related on this page apply to a typical 1TB 4 node cluster.</p>
+<p>Each node in a ThoughtSpot cluster performs ideally when it has less than 250GB of data and fewer than 0.25 billion total rows of data. For more complex schemas, we recommend even fewer rows of data per node for optimal performance. To reduce the total amount of data and rows of data, you can
+limit the data range to the relevant years or months, or combine long and narrow tables into wider tables when possible.</p>
 
 <h2 id="data-boundaries">Data Boundaries</h2>
 
-<p>Total rows in a result of a join can also have an impact. In general, it is
-recommended that you have fewer than 10 billion rows in a many-to-many join.
-Keep in mind these other boundaries:</p>
+<p>Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:</p>
 
 <table>
   <thead>
@@ -3221,20 +3211,20 @@ Keep in mind these other boundaries:</p>
   </thead>
   <tbody>
     <tr>
-      <td>Max number of rows that can be downloaded</td>
-      <td>10M (default is 1M)</td>
+      <td>Maximum number of rows that can be downloaded</td>
+      <td>10M (default:  1M)</td>
     </tr>
     <tr>
       <td>Size in CSV format</td>
-      <td>1 TB per appliance</td>
+      <td>250GB per node</td>
     </tr>
     <tr>
       <td>Total number of rows across all tables</td>
-      <td>1B per appliance</td>
+      <td>250GB per node</td>
     </tr>
     <tr>
       <td>Many-to-Many (Generic) join cardinality</td>
-      <td>10B per appliance</td>
+      <td>2.5B per node</td>
     </tr>
     <tr>
       <td>Load frequency</td>
@@ -3245,28 +3235,26 @@ Keep in mind these other boundaries:</p>
 
 <h2 id="worksheet-boundaries">Worksheet Boundaries</h2>
 
-<p>Worksheets must have less than 1000 columns. For aggregated worksheets, you
-should keep in mind the following:</p>
+<p>Worksheets must have less than 1000 columns. For aggregated worksheets, follow these guidelines:</p>
 
 <ul>
-  <li>Number of columns should be less than 50</li>
-  <li>Number of rows should be less than 10 millions</li>
+  <li>Number of columns not to exceed 50</li>
+  <li>Number of rows not to exceed 10 million</li>
 </ul>
 
-<p>You can use an ETL process to circumvent these limitations. Speak with
-ThoughtSpot Customer Support to learn more.</p>
+<p>You can use an ETL process to circumvent these limitations. Speak with ThoughtSpot Customer Support to learn more.</p>
 
-<h3 id="aggregated-worksheets-and-joins">Aggregated worksheets and joins</h3>
+<h3 id="aggregated-worksheets-and-joins">Aggregated Worksheets and Joins</h3>
 
-<p>To be able to join an aggregated worksheet with a base table, your installation
-must be configured to allow the behavior. The aggregated worksheet cannot have
-more than 5 tables involved. Moreover, the number of rows in the final
-aggregated worksheet cannot be greater than 1000.</p>
+<p>To join an aggregated worksheet with a base table, you must configure your installation to allow this behavior.</p>
+<ul>
+  <li>The aggregated worksheet cannot use more than 5 component tables.</li>
+  <li>The number of rows in the final aggregated worksheet cannot be greater than 1000.</li>
+</ul>
 
-<h3 id="chasm-trap-worksheets">Chasm Trap worksheets</h3>
+<h3 id="chasm-trap-worksheets">Chasm Trap Worksheets</h3>
 
-<p>For chasm trap scenarios (two or more fact tables joined via a shared dimension)
-the following boundaries are recommended:</p>
+<p>For chasm trap scenarios where two or more fact tables join through a shared dimension, we recommend the following boundaries:</p>
 
 <table>
   <thead>
@@ -3277,37 +3265,31 @@ the following boundaries are recommended:</p>
   </thead>
   <tbody>
     <tr>
-      <td>Max number of fact tables in a worksheet</td>
+      <td>Maximum number of fact tables in a worksheet</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>Max number of shared dimensions</td>
+      <td>Maximum number of shared dimensions</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>Max number of rows in <em>non</em> co-sharded shared dimension table of chasm trap</td>
+      <td>Maximum number of rows in a <em>non</em> co-sharded shared dimension table of chasm trap</td>
       <td>1B</td>
     </tr>
     <tr>
-      <td>Max number of rows in co-sharded shared dimension table of chasm trap</td>
+      <td>Maximum number of rows in a co-sharded shared dimension table of chasm trap</td>
       <td>1B</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="row-level-security-boundaries">Row level security Boundaries</h2>
+<h2 id="row-level-security-boundaries">Row-level Security Boundaries</h2>
 
-<p>Max number of unique RLS rules with search data suggestions should not exceed
-15K.</p>
+<p>Maximum number of unique RLS rules with search data suggestions should not exceed 15K.</p>
 
-<h2 id="data-connect-boundaries">Data Connect Boundaries</h2>
+<h2 id="scheduled-pinboards">Scheduled Pinboards</h2>
 
-<p>The maximum number of connections should be less than or equal to 25.</p>
-
-<h2 id="scheduled-pinboards">Scheduled pinboards</h2>
-
-<p>For scheduled pinboards, ideal performance is to have 50 or fewer scheduled
-pinboard jobs.</p>
+<p>For ideal performance of scheduled pinboards, do not exceed 50 scheduled pinboard jobs.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3344,9 +3326,9 @@ pinboard jobs.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jul 28, 2019 <br />
+        Generated: Jul 31, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 07/20/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
