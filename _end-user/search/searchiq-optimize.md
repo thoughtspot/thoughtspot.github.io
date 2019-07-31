@@ -15,7 +15,7 @@ There are a few ways for Administrators to optimize how SearchIQ interprets natu
 ## Prerequisites
 
 - SearchIQ is turned off by default; ask your administrator to enable it.
-- You must be a member of a group that has the **Can use experimental features** permission."
+- You must be a member of a group that has the **Can use experimental features** permission.
 
 ## Guidelines for enabling SearchIQ
 
@@ -42,29 +42,19 @@ To enable columns in a worksheet for SearchIQ, follow these steps:
 
 6.  Change the **Entity Category** for the columns you marked **SearchIQ Enabled**, from _default_ to one that accurately describes the column.  
 
-    See [Set Entity Categories]({{ site.baseurl }}/admin/data-modeling/set-entity-category.html). The category options are:  
-    - default
-    - person
-    - replace
-    - time
-    - money
-    - product
-    - zip_code
-    - lat_long
-    - company_org
-    - num_types
+    See [Set Entity Categories]({{ site.baseurl }}/admin/data-modeling/set-entity-category.html). The category options are <em>default</em>, <em>person</em>, <em>replace</em>, <em>time</em>, <em>money</em>, <em>product</em>, <em>zip_code</em>, <em>lat_long</em>, <em>company_org</em>, and <em>num_types</em>.
 
     ![]({{ site.baseurl }}/images/worksheet-column-entity-categories-searchiq.png "Specify entity categories for columns")
 
-7.  Add **Synonyms** for all columns you marked **SearchIQ Enabled**.  See [Add common synonyms]({{ site.baseurl }}/admin/data-modeling/change-visibility-synonym.md).  
+7.  Add **Synonyms** for all columns you marked **SearchIQ Enabled**, simply by typing them in the appropriate cell.  See [Add common synonyms]({{ site.baseurl }}/admin/data-modeling/change-visibility-synonym.md) for more information.  
 
     ![]({{ site.baseurl }}/images/worksheet-column-synonyms-searchiq.png "Specify synonyms")
 
-8.  Change the **Index Type** to `DONT_INDEX` for columns when they must be excluded from indexing because they are descriptive in nature and contain large amount of text, [stop words]({{ site.baseurl }}/reference/stop-words.html), or for any other reason.  See [Turn off indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html).  
+8.  Change the **Index Type** to `DONT_INDEX` for columns when they must be excluded from indexing. We recommend excluding a column when it is descriptive in nature, =contains a large amount of text, has [stop words]({{ site.baseurl }}/reference/stop-words.html), or for a variety of similar reason.  See [Turn off indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html).  
 
      ![]({{ site.baseurl }}/images/data-modeling-columns-indextype-dont-index.png "Don't index")
 
-     This prevents SearchIQ from scanning through large amounts of text to understand what user asked. Note that searches of the text field that use the `contains` keyword still work.  
+     This prevents SearchIQ from scanning through large amounts of text to understand what user asked. Note that searches on text fields that use the `contains` keyword still work.  
 
      ![]({{ site.baseurl }}/images/worksheet-column-do-not-index-searchiq.png "Change Index Type to DONT_INDEX")
 
