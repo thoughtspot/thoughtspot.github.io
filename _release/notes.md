@@ -38,22 +38,21 @@ Note that release must include the upgrade of all user profiles to include a val
 
 ### Onboarding
 
-In this release, we introduce user onboarding, which enables anyone to master the features they need in a very short time.
+In this release, we introduce user Onboarding, which enables anyone to master ThoughtSpot in a very short time.
 
-To learn how to set-up user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
+- To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
 
-To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+- To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
 
-When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
+- When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
 
-To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
-Finally, see the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
+- To see the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
 
 ### Management Console
-The Management Console is now available in beta.  
 
-Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
+**The Management Console is now available in beta.** Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
 
 ### Mandatory user emails
 
@@ -92,6 +91,10 @@ We simplified feedback for insights and analysis to use fewer questions. These q
 ### Explore Search
 
 With **Explore**, existing pinboards lead you to deeper insights through a multi-step discovery process. A single click generates a new chart, which leads to further exploration. See [Explore]({{ site.baseurl }}/end-user/search/explore.html).
+
+### SearchIQ optimization and other enhancements
+
+**SearchIQ is in beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
 
 ### Schema and Join Information
 

@@ -2,17 +2,16 @@
 title: [Set entity categories for SearchIQ ]
 keywords: tbd
 last_updated: tbd
-summary: "You can specify a per column entity category to help SearchIQ."
+summary: "Entity categories help describe the column content, and assist SearchIQ in interpreting natural language queries."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-[SearchIQ]({{ site.baseurl}}/end-user/search/about-searchiq.html) is a search
-experience that allows you to ask more natural questions, similar to the way you
-might talk to a person.
+Entity categories specify how to categorize the data in the column, by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.
 
-If you have access to tables and worksheets for data modeling purposes, you can
-specify entity types for their columns. This lets you designate that column as representing a person, place, or thing. So then when a user asks "Which", "Who", or "Where", an appropriate response can more easily be found in the data.
+<!--  You can specify a per column entity category to help SearchIQ. -->
+
+If you have access to tables and worksheets for data modeling purposes, you can specify entity categories for their columns. This lets you designate that column as representing a person, place, or thing. So then when a user asks "Which", "Who", or "Where", an appropriate response can more easily be found in the data.
 
 If you're not sure how to change the data modeling settings, see the
 [Overview of data modeling settings]({{ site.baseurl}}/admin/data-modeling/data-modeling-settings.html).
