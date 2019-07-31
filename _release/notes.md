@@ -40,7 +40,7 @@ Note that release must include the upgrade of all user profiles to include a val
 
 In this release, we introduce user Onboarding, which enables anyone to master ThoughtSpot in a very short time.
 
-- To learn how to set-up user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
+- To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
 
 - To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
 
