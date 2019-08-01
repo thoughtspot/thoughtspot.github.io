@@ -6,13 +6,10 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
-appliance on various Azure configurations for best performance, load balancing,
-scalability, and reliability.
+ThoughtSpot can be deployed in your Azure environment by deploying compute (VM) instances in your VNET as well as an underlying persistent storage infrastructure. Currently we support Premium SSD Managed Disks for persistent storage.
 
-You can find information here on which configuration of memory, CPU, storage,
-and networking capacity you should be running for your instances. There are also
-details on how to configure your scope and permissions.
+All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability zone
+(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs( nodes) of the same cluster across availability zones.
 
 ## ThoughtSpot Azure instance types
 

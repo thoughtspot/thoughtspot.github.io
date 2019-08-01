@@ -6,12 +6,10 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has performed extensive testing on various Google Cloud Platform
-(GCP) configurations for best performance, load balancing, scalability, and
-reliability.
+ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) instances in your VPC as well as an underlying persistent storage infrastructure. Currently we support Zonal SSD persistent disk for persistent storage.
 
-You can find information here on which configuration of memory, CPU, storage,
-and networking capacity you should be running for your instances.
+All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
+(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs( nodes) of the same cluster across zones.
 
 ## ThoughtSpot GCP instance types
 
@@ -99,7 +97,4 @@ and networking capacity you should be running for your instances.
     </tr>
   </table>
 
-GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks.        |
-
-ThoughtSpot uses only persistent storage options. Instance storage (also known
-as "local storage") is not used for ThoughtSpot deployments on GCP.
+GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks.        

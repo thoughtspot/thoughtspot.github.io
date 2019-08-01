@@ -16,7 +16,6 @@ The high-level process for setting up ThoughtSpot in AWS is the following:
 4. Set up your ThoughtSpot cluster in AWS.
 3. Contact ThoughtSpot to finish setting up your cluster.
 4. Open the required network ports for communication for the nodes in your cluster and end users.
-5. [Deploy your AWS instance using CloudFormation CLI.]({{ site.baseurl }}/appliance/aws/deploy-aws-cloud-formation.html)
 
 ## About the ThoughtSpot AMI
 
@@ -128,5 +127,5 @@ See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for a c
 
 ## Related information  
 
-[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
+[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)  
 [Loading data from an AWS S3 bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
