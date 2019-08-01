@@ -29,8 +29,7 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create a worksheet. Can also create a view from the results of a search by selecting <strong>Save as view</strong>.</td>
-    </tr>
+      td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
     <tr>
       <td><strong>Can use experimental features</strong></td>
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
