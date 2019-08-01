@@ -7,12 +7,12 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
-- Mode 1: Compute VMs + persistent storage using EBS only
-- Mode 2: Compute VMs + persistent storage using a combination of EBS and S3
+- Mode 1: Compute VMs + EBS-only persistent storage
+- Mode 2: Compute VMs + EBS and S3 persistent storage
 
-The cost of infrastructure for deploying ThoughtSpot will be cheaper when using S3. However, there are differences in where data gets loaded as well as in the backup and restore procedure.  Please consult your ThoughtSpot representative to understand the best mode to run ThoughtSpot in AWS.
+The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  Please consult your ThoughtSpot representative to understand the best mode to run ThoughtSpot in AWS.
 
-<table width="700" border="1">
+<table width="700" border="0">
   <tbody>
     <tr>
       <td><b>Operation</b></td>
