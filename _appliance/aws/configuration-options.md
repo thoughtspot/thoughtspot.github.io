@@ -6,18 +6,24 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page includes details on the following configuration options for AWS instances:
-- Storage
-- Memory
-- CPU
-- Networking
-- Regions
-- Availability zones
-- Placement groups
+ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
+- Mode 1: Compute VMs + persistent storage using EBS only
+- Mode 2: Compute VMs + persistent storage using a combination of EBS and S3
+
+The cost of infrastructure for deploying ThoughtSpot will be cheaper when using S3. However, there are differences in where data gets loaded as well as in the backup and restore procedure.  Please consult your ThoughtSpot representative to understand the best mode to run ThoughtSpot in AWS.
+
+|<b>Operation</b>|<b>VMs with EBS-only persistent storage</b>|<b>VMs with EBS and S3 persistent storage</b>|
+|Data loading|Into EBS|Into S3|
+|Snapshots|In EBS|In EBS|
+|Backups<B>*</B>|In EBS|In EBS|
+|Restore a cluster from backup|Copy backup to VM and then restore|Copy backup to VM and then restore|  
+
+<b>*</b>See [Create a manual backup]({{ site.baseurl }}admin/backup-restore/take-backup.html#)
+
 
 ## Storage options
 
-In order to reduce the cost of a deployment, S3 is available as storage for major services like the ThoughtSpot database and search engine. HDFS is also available, but it uses EBS for underlying storage which is significantly more expensive than the object-based S3 storage. If your cluster size is 1 TB or greater, you may benefit from the cost savings of the S3 storage option. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) for assistance with setting up this option.
+See [Create a manual backup]({{ site.baseurl }}admin/backup-restore/take-backup.html#) for assistance with setting up this option.
 ![]({{ site.baseurl }}/images/persistent-storage-aws.svg "Persistent Storage with S3")
 
 {% include note.html content="A certain amount of block storage is still required for services like the key-value store and other services. This data volume size is much smaller, however, when using S3 for major services." %}
@@ -156,31 +162,6 @@ For example: If you are deploying a total cluster data size of 1 TB using the st
     </td>
 </tr>
   </table>
-
-## Regions, availability zones, and placement groups
-
-AWS instances are configured to a location with regard to where the computing
-resources are physically located. You must specify a region, an availability
-zone, and a placement group.
-
-AWS nodes in a ThoughtSpot cluster must be in the same [availability zone](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) (and, therefore, also in the same region).
-
-A [placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
-is a logical grouping of instances _within_ a single availability zone.
-Placement groups are recommended for applications that benefit from low network
-latency, high network throughput, or both.
-
-ThoughtSpot relies on high connectivity between nodes of a cluster, which is why
-creating a placement group is recommended. Being in same placement group will
-give you the best shot at the highest bandwidth across AWS EC2 instances and the
-lowest latencies. This will make the node-node network reach the closest AWS
-promised specs. Our default recommendation for a multi-instance setup requires a
-placement group since it works best for our application performance. Also, AWS
-will provide jumbo frames (9000 MTU) support in such situations, and they don't
-charge extra for being in the same placement group.
-
-Having said that, ThoughtSpot will still work with EC2s in the cluster across
-placement groups in an availability zone.
 
 ## Related information
 
