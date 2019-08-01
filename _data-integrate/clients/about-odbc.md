@@ -16,8 +16,6 @@ Supported operating systems for the ODBC driver are:
 -   Microsoft Windows 64-bit
 -   Linux 32-bit
 -   Linux 64-bit
--   Solaris Sparc 32-bit
--   Solaris Sparc 64-bit
 
 ## Version compatibility and connection parameters
 

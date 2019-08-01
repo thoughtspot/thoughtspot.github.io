@@ -16,7 +16,7 @@ here. All configuration properties use the type String (text).
 
 You can set these properties on Windows by using the [ODBC Administrator]({{
 site.baseurl }}/data-integrate/clients/install-odbc-windows.html#) client. For
-Linux and Solaris, the properties are located in three files, depending on the
+Linux, the properties are located in three files, depending on the
 property  type:
 
 |Property Type|Location|
