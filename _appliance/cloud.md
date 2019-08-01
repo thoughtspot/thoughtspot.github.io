@@ -31,7 +31,7 @@ Refer to the following guidelines for how to set up ThoughtSpot on each cloud se
 
 ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.  
 
-### Use small and medium instance types
+### Use small and medium instance types when applicable
 
 For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Additional configuration is required before any data can be loaded onto these instances.
 

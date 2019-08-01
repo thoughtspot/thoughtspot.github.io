@@ -12,27 +12,42 @@ ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) in
 
 The cost of infrastructure for deploying ThoughtSpot will be cheaper when using S3. However, there are differences in where data gets loaded as well as in the backup and restore procedure.  Please consult your ThoughtSpot representative to understand the best mode to run ThoughtSpot in AWS.
 
-|<b>Operation</b>|<b>VMs with EBS-only persistent storage</b>|<b>VMs with EBS and S3 persistent storage</b>|
-|Data loading|Into EBS|Into S3|
-|Snapshots|In EBS|In EBS|
-|Backups<B>*</B>|In EBS|In EBS|
-|Restore a cluster from backup|Copy backup to VM and then restore|Copy backup to VM and then restore|  
+<table width="700" border="1">
+  <tbody>
+    <tr>
+      <td><b>Operation</b></td>
+      <td><b>VMs with EBS-only persistent storage</b></td>
+      <td><b>VMs with EBS and S3 persistent storage</b></td>
+    </tr>
+    <tr>
+      <td>Data loading</td>
+      <td>Into EBS</td>
+      <td>Into S3</td>
+    </tr>
+    <tr>
+      <td>Snapshots</td>
+      <td>In EBS</td>
+      <td>In EBS</td>
+    </tr>
+    <tr>
+      <td>Backups<sup>a</sup></td>
+      <td>In EBS</td>
+      <td>In EBS</td>
+    </tr>
+	  <tr>
+      <td colspan="3">(a) See <a href="/admin/backup-restore/take-backup.html#">Create a manual backup.</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<b>*</b>See [Create a manual backup]({{ site.baseurl }}admin/backup-restore/take-backup.html#)
+All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see [Regions and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html){:target="_blank"} in Amazon's AWS documentation.
 
-
-## Storage options
-
-See [Create a manual backup]({{ site.baseurl }}admin/backup-restore/take-backup.html#) for assistance with setting up this option.
-![]({{ site.baseurl }}/images/persistent-storage-aws.svg "Persistent Storage with S3")
-
-{% include note.html content="A certain amount of block storage is still required for services like the key-value store and other services. This data volume size is much smaller, however, when using S3 for major services." %}
 
 ## ThoughtSpot AWS instance types
 
 The following table contains the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
 
-For example: If you are deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you need 4 instances (VMs), because the per-VM capacity of that instance type is 250 GB. If you are deploying EBS-only data volumes, you need 1 TB.
+For example: If you are deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you need 4 instances (VMs), because the per-VM user data capacity of that instance type is 250 GB. If you are deploying EBS-only data volumes, you need 2X1 TB data volumes per VM.
 
 <table width="853">
 <colgroup>
@@ -158,7 +173,7 @@ For example: If you are deploying a total cluster data size of 1 TB using the st
 		<td><p dir="ltr"></p></td>
     </tr>
 <tr>
-    <td colspan="8"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/5.2/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+    <td colspan="8"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
     </td>
 </tr>
   </table>
