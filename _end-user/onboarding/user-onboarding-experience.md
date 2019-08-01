@@ -11,12 +11,6 @@ When you begin using ThoughtSpot, the onboarding process starts automatically an
 
 Usually, you receive an email welcoming you to the onboarding process at ThoughtSpot.
 
-Your email may look something like this:
-
-![]({{ site.baseurl }}/images/welcome-email.png "Welcome email")
-
-
-
 ## How onboarding works for the user ##
 
 Your onboarding experience begins when you login for the first time.
