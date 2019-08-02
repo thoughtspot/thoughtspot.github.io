@@ -6,14 +6,13 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you’ve determined your configuration options, you must setup your virtual
+After you’ve determined your configuration options, you must set up your virtual
 machines (VMs) using a ThoughtSpot image for Azure.
 
 
 ## About the ThoughtSpot image
 
-To provision a ThoughtSpot image in the Azure portal, you’ll need to access the
-ThoughtSpot Virtual Machine in the Azure Marketplace.
+To provision ThoughtSpot in the Azure portal, you’ll need to access the ThoughtSpot Virtual Machine in the Azure Marketplace.
 
 The ThoughtSpot Virtual Machine comes provisioned with the custom ThoughtSpot
 image to make hosting simple. A virtual machine is a preconfigured template that
