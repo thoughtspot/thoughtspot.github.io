@@ -240,7 +240,7 @@ Command to run a command on all nodes.
 *`COPYFIRST`*`] [--timeout` *`TIMEOUT`*`]` *`command`*
 
 * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: `all`)
-* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (default: None)
+* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (Mandatory. Default: None)
 * `--copyfirst` *`COPYFIRST`* Copy the executable to required nodes first. (default: `False`)
 * `--timeout` *`TIMEOUT`* Timeout waiting for the command to finish. (default: `60`)
 
