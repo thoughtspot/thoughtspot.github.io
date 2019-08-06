@@ -17,8 +17,6 @@ All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
 | --- | --- | --- |--- |
 | 208 GB | n1-highmem-64 | 64/416 | 2x 1 TB |
 | 312 GB | n1-highmem-96 | 96/624 | 2x 1.5 TB |
-| 100 GB | n1-highmem-32 | 16/104 | 2X 400 GB |
+| 100 GB | n1-highmem-32 | 32/208 | 2X 400 GB |
 | 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB |
-| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB |
-
-GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks.        
+| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB |    

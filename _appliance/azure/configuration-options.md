@@ -15,7 +15,7 @@ All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability 
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume |
 | --- | --- | --- |--- |
-| 200 GB | E64sv3 | 64/416 | 2x1 TB |
+| 200 GB | E64sv3 | 64/432 | 2x1 TB |
 | 100 GB | E32sv3 | 32/256 | 2X 400 GB |
 | 20 GB | E16sv3 | 16/128 | 2X 400 GB |
 | 120 GB | D64v3 | 64/256 | 2X 1 TB |
