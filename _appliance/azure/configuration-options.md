@@ -48,7 +48,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr">>100 GB </p></td>
       <td><p dir="ltr">200 GB</p></td>
       <td><p dir="ltr">E64sv3</p></td>
-      <td><p dir="ltr">64/416</p></td>
+      <td><p dir="ltr">64/432</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
