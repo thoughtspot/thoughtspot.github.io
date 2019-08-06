@@ -15,7 +15,7 @@ The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an
 
 | | AWS | Azure | GCP |
 | --- | --- | --- | --- |
-| <b>Compute<b> | Virtual Machines deployed in your<br>AWS VPC | Virtual Machines in your<br>GCP VPC |
+| <b>Compute<b> | Virtual Machines deployed in your<br>AWS VPC | Virtual Machines in your<br>Azure VNET | Virtual Machines in your<br>GCP VPC |
 | <b>Persistent <br>storage<b> | Two deployment options:<br>1. Elastic Block Storage<br>2. AWS + Elastic Block Storage | Premium SSD Managed Disks | Zonal SSD persistent disk |
 
 ![]({{ site.baseurl }}/images/cloud-vm-storage.svg "ThoughtSpot cloud deployment")
