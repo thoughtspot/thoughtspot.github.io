@@ -21,17 +21,15 @@ fixed issues from the previous releases, and any known issues.
 If you are running one of the following versions, you can upgrade to the 5.3 release
 directly:
 
-* 5.0.x to 5.3
+* 5.2.x to 5.3
 * 5.1.x to 5.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.0.x or version 5.1.x, and then to the 5.3 release.
+First, upgrade to version 5.1.x or version 5.2.x, and then to the 5.3 release.
 
-Note that release must include the upgrade of all user profiles to include a valid, domain-specific email address. We block the upgrade if all users don't have valid emails.
-
-
+{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade will be blocked." %}
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
