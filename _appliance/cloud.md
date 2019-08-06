@@ -5,19 +5,22 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot currently supports the following cloud deployments:
+ThoughtSpot can currently be deployed in the following cloud provider environments:
 
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/about-aws.html)
 - [Microsoft Azure]({{ site.baseurl }}/appliance/azure/about-azure.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/about-gcp.html)
 
-This page provides recommendations and best practices for ThoughtSpot cloud deployments, including how to set up your ThoughtSpot instance and how to reduce infrastructure costs.
+The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.  
 
-The ThoughtSpot cloud deployment consists of a combination of cloud compute (VM) instances as well as an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.  
+| | AWS | Azure | GCP |
+| --- | --- | --- | --- |
+| <b>Compute<b> | Virtual Machines deployed in your<br>AWS VPC | Virtual Machines in your<br>GCP VPC |
+| <b>Persistent <br>storage<b> | Two deployment options:<br>1. Elastic Block Storage<br>2. AWS + Elastic Block Storage | Premium SSD Managed Disks | Zonal SSD persistent disk |
 
 ![]({{ site.baseurl }}/images/cloud-vm-storage.svg "ThoughtSpot cloud deployment")
 
-To determine the number of instances and the associated persistent storage that you need to provision your cluster, please refer to the available instance types for your cloud service in the next section.
+To determine the number of instances and the persistent storage requirements to provision your cluster, please refer to the available instance types for your cloud service provider in the next section.
 
 ## ThoughtSpot cloud instance types
 
