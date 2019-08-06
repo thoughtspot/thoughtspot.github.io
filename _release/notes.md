@@ -29,7 +29,7 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.1.x or version 5.2.x, and then to the 5.3 release.
 
-{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade will be blocked." %}
+{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
