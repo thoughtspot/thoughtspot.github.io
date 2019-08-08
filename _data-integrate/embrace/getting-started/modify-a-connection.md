@@ -48,7 +48,7 @@ To remap a connection:
 
 5. Click ellipses icon **...** and **Remapping** on the upper right hand side of the page.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap connection")
+    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
 6. Click **Download** to download the source mapping file
 
