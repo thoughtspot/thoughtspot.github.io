@@ -35,7 +35,7 @@ To edit a connection:
 
 ## Remap a connection
 
-You can modify the connection parameters by editing the source mapping<code> yaml </code>file that have been created during setting up a new connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure that they display as intended.
+You can modify the connection parameters by editing the source mapping<code> yaml </code>file that has been created during setting up a new connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure that they display as intended.
 
 To remap a connection:
 
@@ -48,13 +48,18 @@ To remap a connection:
 
 5. Click ellipses icon **...** and **Remapping** on the upper right hand side of the page.
 
-    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap connection")
 
 6. Click **Download** to download the source mapping file
+
+    ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
+
 7. Edit and update the file as required.
+
+    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
+
 8. Finally upload the mapping file to reflect the new mapping in the existing connection.
 
-     ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
 
 ## Edit a table
