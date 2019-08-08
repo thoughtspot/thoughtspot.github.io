@@ -22,7 +22,7 @@ To edit a connection:
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-5. Click **Edit connection** on the upper right hand side of the page.
+5. Click **Edit Connection** on the upper right hand side of the page.
 
     ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
 
@@ -31,6 +31,31 @@ To edit a connection:
 7. Click **Update** to reflect the connection details.
 
      ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+
+
+## Remap a connection
+
+You can modify the connection parameters by editing the source mapping<code> yaml </code>file that have been created during setting up a new connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure that they display as intended.
+
+To remap a connection:
+
+1. Log in to ThoughtSpot from a browser.
+2. Click **Data** on the top navigation bar.
+3. Click the **Connections** tab at the top of the page.
+4. Select the connection type of interest on Connections list page.
+
+   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+
+5. Click ellipses icon **...** and **Remapping** on the upper right hand side of the page.
+
+    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+
+6. Click **Download** to download the source mapping file
+7. Edit and update the file as required.
+8. Finally upload the mapping file to reflect the new mapping in the existing connection.
+
+     ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+
 
 ## Edit a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
