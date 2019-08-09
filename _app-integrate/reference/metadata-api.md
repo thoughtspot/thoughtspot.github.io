@@ -176,7 +176,7 @@ Use this API to fetch a comprehensive list of metadata headers of a specific obj
     <tr>
       <td><code>offset</code></td>
       <td>integer</td>
-      <td>The batch offset to fetch the page of headers. The system default is <code>-1</code> that implies first page.</td>
+      <td>The batch offset to fetch the page headers. The system default is <code>-1</code> that implies first page.</td>
     </tr>
     <tr>
       <td><code>batchsize</code></td>
@@ -206,7 +206,7 @@ Use this API to fetch a comprehensive list of metadata headers of a specific obj
     <tr>
       <td><code>auto_created</code></td>
       <td>boolean</td>
-      <td>A fag that indicates whether to list auto created objects only. A value of null signifies return all.</td>
+      <td>A flag that indicates whether to list auto-created objects only. A value of null signifies return all.</td>
     </tr>
    </tbody>
   </table>
@@ -279,6 +279,6 @@ https://<instance>/callosum/v1/tspublic/v1/metadata/listobjectheaders?type=PINBO
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid paramater values i.e., wrong pinboard ID.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values i.e., wrong pinboard ID.</td> <td><code>400</code></td></tr>
   </tbody>
 </table>
