@@ -162,7 +162,7 @@ privileges on the application.
 Now, you are ready to begin using the connection you've configured.
 
 
-## Related information
+## Related information 
 
 * [Enable ODBC logs]({{ site.baseurl}}/data-integrate/troubleshooting/enable-ODBC-log.html).
 * [Configure multiple connections on Windows]({{ site.baseurl}}/data-integrate/clients/multiple-sources-windows.html).
