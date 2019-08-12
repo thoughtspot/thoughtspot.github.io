@@ -5,11 +5,8 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing ThoughtSpot. You can install a ThoughtSpot cluster
-on a hardware appliance, cloud service, or VMware appliance. Your ThoughtSpot
-installation cannot mix node types, your installation must be homogenous, so,
-for example either hardware or VMware nodes. You can, however, have an cloud cluster for
-development and use an appliance for production.
+You can install a ThoughtSpot cluster on a hardware appliance, cloud service, or VMware appliance.
+Your ThoughtSpot installation cannot mix node types. For example, you can have either hardware or VMware nodes, but not both. You can, however, have a cloud cluster for development and use an appliance for production.
 
 This guide instructs you how to prepare each of the following:
 

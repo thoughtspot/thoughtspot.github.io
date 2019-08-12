@@ -23,13 +23,6 @@ Ask your ThoughtSpot liaison for access to this image. We need the Google accoun
 Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll
 do this on Google Compute Engine, the GCP platform for [creating and running VMs](https).
 
-In a nutshell, the required configuration ThoughtSpot is:
-
-- 64 vCPU
-- 416 GB RAM
-- 200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
-- Two 1 TB SSDs for data
-
 The following topics walk you through this process.
 
 ###  Create an instance
