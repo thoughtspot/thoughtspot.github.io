@@ -82,6 +82,9 @@ entries:
         - title: Ask an Expert
           url: /end-user/search/ask-an-expert.html
           output: web,ugBk
+        - title: Manage Ask an Expert requests
+          url: /end-user/search/monitor-expert.html
+          output: web,ugBk
         - title: Retrieve Ask an Expert answers
           url: /end-user/search/retrieve-expert-answer.html
           output: web,ugBk
