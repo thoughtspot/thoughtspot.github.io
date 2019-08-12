@@ -86,7 +86,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.  
 
-   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. If you want to restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket and select it instead. For details on that, click **Create new IAM role**.
+   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. If you want to restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket, and select it instead. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
    Add the required storage based on the storage requirements of the instance type you have selected, and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
