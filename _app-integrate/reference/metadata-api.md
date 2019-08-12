@@ -206,7 +206,7 @@ Use this API to fetch a comprehensive list of metadata headers of a specific obj
     <tr>
       <td><code>auto_created</code></td>
       <td>boolean</td>
-      <td>A fag that indicates whether to list auto created objects only. A value of null signifies return all.</td>
+      <td>A flag that indicates whether to list auto created objects only. A value of null signifies return all.</td>
     </tr>
    </tbody>
   </table>
