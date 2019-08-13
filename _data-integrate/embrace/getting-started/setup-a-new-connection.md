@@ -39,7 +39,29 @@ To add a new connection:
     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
 
 
-Your connection details will appear on the Connections list page. You can select a connection to review the selected tables and columns. Review and edit the table and create schema joins as necessary.
+Your connection details appear on the Connections list page. You can select a connection to review the selected tables and columns. Review and edit the table and create schema joins as necessary.
+
+## Data syncing
+After you’ve set up an external database connection, you can directly perform a live query against the selected tables mapped in the new connection. This process may take sometime to render the search results since ThoughtSpot doesn't cache the data when you connect to external databases.
+
+To improve the search performance time, Embrace allows you to manage your new data sources using the `Sync` functionality. Using this procedure, you can locally store the selected tables or columns in ThoughtSpot that you wish to use in your search query. You can also schedule some useful conditions when you sync tables from the underlying database periodically. For example, add sync mode to define the data to be replaced or appended with every sync interval.
+
+To sync a data table:
+1. Log in to ThoughtSpot from a browser.
+2. Click Data on the top navigation bar.
+3. Click the Connections tab at the top of the page.
+4. Select the connection type of interest on Connections list page.
+
+    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection")
+
+5. Find the table you want to sync in the list, and check the box next to its name.
+6. Click the **Sync now** icon.
+
+    ![]({{ site.baseurl }}/images/sync.png "Table sync")
+
+Notice the sync status in the table list once the sync job completes the syncing request.
+
+
 
 ## Related information
 - [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)
