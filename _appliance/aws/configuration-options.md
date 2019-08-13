@@ -44,7 +44,7 @@ details on how to configure your placement groups.
 	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
 	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
-    <tr>
+    <tr> 
       <td><p dir="ltr">Standard</p>
         <p dir="ltr">(1KB/row)</p></td>
       <td><p dir="ltr">Up to 2 TB </p></td>
