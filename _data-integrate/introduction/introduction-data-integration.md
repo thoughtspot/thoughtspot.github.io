@@ -75,6 +75,8 @@ each method:
 
 ## Where to go next
 
+-   **[Server-side prerequisites for using JDBC/ODBC to import data]({{ site.baseurl }}/data-integrate/introduction/jdbc-odbc-prereqs.html)**  
+You must follow setup prerequisites for importing data using JDBC/ODBC.
 -   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
 -   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  

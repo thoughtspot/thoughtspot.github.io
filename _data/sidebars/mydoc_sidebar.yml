@@ -1146,7 +1146,10 @@ entries:
       - title: Connectors reference
         url: /data-integrate/embrace/reference/embrace-connection-credentials.html
         output: web,apgBk
-    - levelTwoTitle: Use the ODBC client
+    - title: JDBC and ODBC setup prerequisites
+      url: /data-integrate/introduction/jdbc-odbc-prereqs.html
+      output: web,digBk
+    - levelTwoTitle: ODBC driver client
       output: web,digBk
       levelTwoItems:
        - title: ODBC driver overview
@@ -1164,25 +1167,25 @@ entries:
          - title: Deploy SSL with ODBC on Windows
            url: /data-integrate/clients/windows-deploy-ssl.html
            output: web,digBk
-         - title: Set up the ODBC Driver for SSIS
+         - title: Set up the ODBC driver for SSIS
            url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
            output: web,digBk
-       - title: Install the ODBC Driver on Linux
+       - title: Install the ODBC driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
          output: web,digBk
        - title: Best Practices for Using ODBC
          url: /data-integrate/clients/odbc-best-practices.html
          output: web,digBk
-    - levelTwoTitle: JDBC Driver Client
+    - levelTwoTitle: JDBC driver client
       output: web,digBk
       levelTwoItems:
-      - title: JDBC Driver Overview
+      - title: JDBC driver overview
         url: /data-integrate/clients/about-jdbc-driver.html
         output: web,digBk
-      - title: Use the JDBC Driver
+      - title: Use the JDBC driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - title: Set up the JDBC Driver for Pentaho
+    - title: Set up the JDBC driver for Pentaho
       url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
       output: web,digBk
     - levelTwoTitle: Troubleshooting
@@ -1191,10 +1194,10 @@ entries:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
         output: web,digBk
-      - title: Enable ODBC Logs
+      - title: Enable ODBC logs
         url: /data-integrate/troubleshooting/enable-ODBC-log.html
         output: web,digBk
-      - title: Enable JDBC Logs
+      - title: Enable JDBC logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
       - title: Schema not found error with ODBC
