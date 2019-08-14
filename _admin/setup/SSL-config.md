@@ -78,6 +78,24 @@ To change the TLS version, issue the following commands as an example.
     This will enable TLS version 1.1 and higher on ThoughtSpot.
 
 ## Supported SSL ciphers
+Following ciphers are currently supported.
+
+```
+|   TLSv1.2:
+|     ciphers:
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 - strong
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 - strong
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 - strong
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 - strong
+|     compressors:
+|       NULL
+|_  least strength: strong
+```
+
 The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
