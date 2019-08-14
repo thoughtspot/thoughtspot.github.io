@@ -7,7 +7,7 @@ summary: "Verify your network is properly configured for the application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This procedure tests the network connectivity between the ThoughtSpot nodes, and to the LAN. If you can perform these steps successfully, the network settings on ThoughtSpot are correct.
+This procedure tests the network connectivity between all ThoughtSpot nodes, and to the LAN. If you can perform these steps successfully, the network settings on ThoughtSpot are correct.
 
 1. Log in to the Linux shell using SSH.
 2. Ping each of the other nodes in the cluster.
