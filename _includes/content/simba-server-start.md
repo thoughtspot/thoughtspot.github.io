@@ -7,8 +7,9 @@ intend to connect your server to.
    ```bash
    $ tscli node ls
    172.18.231.17
+   172.18.231.18
    ```
 
 3. Make a note of each IP; there may be more than one.
-4. Verify that the `simba_server` is running, if it isn't, work with ThoughtSpot Support to start it.
+4. Configure the ThoughtSpot firewall to allow connections from your ETL client by running the following command on any ThoughtSpot node: `tscli firewall open-ports --ports 12345`
 5. Exit or close the shell.
