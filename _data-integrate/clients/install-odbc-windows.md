@@ -46,7 +46,7 @@ If it isn't installed, make sure you <a href="https://www.microsoft.com/en-us/do
 On the workstation where you want to connect from, do the following:
 
 1. Navigate to the [**Downloads**]({{ site.baseurl }}/release/downloads.html#) page.
-2. Download the **ODBC Driver for Windows**  driver.
+2. Download the **ODBC Driver for Windows**.
 3. Unzip the file you downloaded at a convenient location on your workstation.
 
    ![]({{ site.baseurl }}/images/odbc-windows-extract.png)
@@ -87,7 +87,7 @@ the driver.
 
     ![]({{ site.baseurl }}/images/windows_ODBC_install.png "Allow the ODBC Installer to run")
 
-8. Select `YES` to continue.
+8. Click **Yes** to continue.
 
     A confirmation message appears when the installation is complete.
 
@@ -110,24 +110,22 @@ to recall that the username/password you use belongs to a ThoughtSpot applicatio
 user. Typically, this user is a user with data management or administrative
 privileges on the application.
 
-1. Before trying the ODBC connection, confirm a username/password that can login into the ThoughtSpot applications.
-2. Confirm the user's privileges by going to the **Data** tab.
+1. Before trying the ODBC connection, confirm a username/password that can log into the ThoughtSpot applications.
+2. Click the **Data** tab, and confirm the user's privileges.
 3. Return to your workstation.
 4. Locate and open the **ODBC Data Source Administrator (64-bit)** application.
 
    ![]({{ site.baseurl }}/images/odbc-windows-search.png "System DSN")
 
-5. Choose the **System DSN** tab.
+5. Click the **System DSN** tab.
 
    ![]({{ site.baseurl }}/images/odbc-system-dsn.png "System DSN")
 
-6. Select **ThoughtSpot** and press **Configure**.
+6. Select **ThoughtSpot** and click **Configure...**
 
    ![]({{ site.baseurl }}/images/odbc-configure-dialog.png "Configure")
 
-7. Choose **Options**.
-
-    The system displays the **Options** dialog.
+7. Click **Options...**
 
 8. Ensure you have the following **Custom Property** values set:
 
@@ -150,14 +148,14 @@ privileges on the application.
 
     ![]({{ site.baseurl }}/images/windows-odbc-options.png "Options")
 
-9. When you are done, press **OK** to save your new properties.
-10. Press **Test Connection** to test your database connection.
+9. When you are done, click **OK** to save your new properties.
+10. Click **Test Connection** to test your database connection.
 
     ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")
 
-11. Press **Cancel** to close the **DSN Configuration** dialog.
-12. Press **OK** to close the **Client Configuration Dialog** the dialog.
-13. Press **OK** to close the **ODBC Data Source Administrator (64-bit)** application
+11. Click **Cancel** to close the **DSN Configuration** dialog.
+12. Click **OK** to close the **Client Configuration Dialog** the dialog.
+13. Click **OK** to close the **ODBC Data Source Administrator (64-bit)** application.
 
 Now, you are ready to begin using the connection you've configured.
 
