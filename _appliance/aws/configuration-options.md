@@ -29,21 +29,6 @@ The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. H
       <td>In EBS</td>
       <td>In EBS</td>
     </tr>
-    <tr>
-      <td>Snapshots</td>
-      <td>In EBS</td>
-      <td>In EBS</td>
-    </tr>
-    <tr>
-      <td>Backups<b>*</b></td>
-      <td>In EBS</td>
-      <td>In EBS</td>
-    </tr>
-    <tr>
-      <td colspan="3"><b>*</b>For details on how to back up your ThoughtSpot instance, see <a href="/admin/backup-restore/take-backup.html#">Create a manual backup</a>.</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
   </tbody>
 </table>
 
