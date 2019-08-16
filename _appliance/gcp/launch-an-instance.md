@@ -64,7 +64,7 @@ The following topics walk you through this process.
       |------------     | --------------------      |
       | Image           | `ThoughtSpot`             |
       | Boot disk type  | `Standard persistent disk`|
-      | Size (GB)       | `200`                     |
+      | Size (GB)       | `250`                     |
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
