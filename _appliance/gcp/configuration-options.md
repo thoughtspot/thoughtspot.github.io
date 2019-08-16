@@ -38,7 +38,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
       <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
       <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
-	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot disk</strong></p></td>
 	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
     <tr>
@@ -48,7 +48,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">208 GB</p></td>
       <td><p dir="ltr">n1-highmem-64</p></td>
       <td><p dir="ltr">64/416</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">312 GB</p></td>
       <td><p dir="ltr">n1-highmem-96</p></td>
       <td><p dir="ltr">96/624</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 1.5 TB</p></td>
     </tr>
     <tr>
@@ -68,7 +68,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">100 GB</p></td>
       <td><p dir="ltr">n1-highmem-32<sup>b</sup></p></td>
       <td><p dir="ltr">32/208</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -78,7 +78,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">20 GB</p></td>
       <td><p dir="ltr">n1-highmem-16<sup>b</sup></p></td>
       <td><p dir="ltr">16/122</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">180 GB</p></td>
       <td><p dir="ltr">n1-standard-96</p></td>
       <td><p dir="ltr">96/330</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
 	<tr>
