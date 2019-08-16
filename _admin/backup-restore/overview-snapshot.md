@@ -81,7 +81,7 @@ This policy takes a snapshot every hour starting at midnight on Sunday. It retai
 
 You shouldn't change this default policy unless instructed to by support. If you have to adjust it for some reason, you can use, `tscli snapshot-policy update` command. This opens the current policy in an editor. Your policy should never retain more than 20 snapshots at any point in time. Exceeding this number can impact cluster performance.
 
-You cannot delete the snapshot policy. However, you can disable the policy by executing the`tscli snapshot-policy disable` command. And you can re-enable it by running, `tscli snapshot enable-policy`.
+You cannot delete the snapshot policy. However, you can disable the policy by executing the`tscli snapshot-policy disable` command. And you can re-enable it by running, `tscli snapshot-policy enable`.
 
 CAUTION: Backups rely on the snapshot system. For this reason, you should never disable the periodic snapshot system. For example, if you have disabled the periodic snapshots and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together.
 
