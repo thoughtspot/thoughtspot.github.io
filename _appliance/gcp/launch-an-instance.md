@@ -27,7 +27,7 @@ In a nutshell, the required configuration ThoughtSpot is:
 
 - 64 vCPU
 - 416 GB RAM
-- 200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- 250 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
 - Two 1 TB SSDs for data
 
 The following topics walk you through this process.
@@ -122,4 +122,3 @@ each VM via SSH as user "admin" and complete the following preparation steps:
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
- 
