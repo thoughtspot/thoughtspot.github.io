@@ -77,8 +77,13 @@ To change the TLS version, issue the following commands as an example.
     
     This will enable TLS version 1.1 and higher on ThoughtSpot.
 
-## Supported SSL ciphers
-Following ciphers are currently supported.
+## Configuration string for load balancers
+When enabling SSL support on a load balancer's server-side SSL client profile, use the following list of ciphers to ensure compatibility between the load balancer and ThoughtSpot.
+```
+EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+```
+
+Following ciphers are currently supported in ThoughtSpot.
 
 ```
 |   TLSv1.2:
@@ -96,8 +101,10 @@ Following ciphers are currently supported.
 |_  least strength: strong
 ```
 
-The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
-    ```
-    nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
-    ```
+These can retrieved from the ThoughtSpot webserver (not against the load balancer) by running the following command on any ThoughtSpot node.
+
+```
+nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
+```
+
 You will need to ensure that your load-balancer supports these ciphers.
