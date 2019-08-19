@@ -61,9 +61,9 @@ To install the SSL certificate:
 
 This procedure shows you how to set the recommended TLS version. This helps avoid exposure of your ThoughtSpot service to known vulnerabilities.
 
-The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1. TLS v1.2 is recommended for both. 
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1. TLS v1.2 is recommended for both.
 
-ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default. 
+ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default.
 
 To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
     ```
@@ -74,7 +74,7 @@ To change the TLS version, issue the following commands as an example.
     ```
     tscli ssl set-min-version 1.1
     ```
-    
+
     This will enable TLS version 1.1 and higher on ThoughtSpot.
 
 ## Configuration string for load balancers
@@ -83,7 +83,7 @@ When enabling SSL support on a load balancer's server-side SSL client profile, u
 EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
 ```
 
-Following ciphers are currently supported in ThoughtSpot.
+The following ciphers are currently supported in ThoughtSpot:
 
 ```
 |   TLSv1.2:
@@ -101,10 +101,10 @@ Following ciphers are currently supported in ThoughtSpot.
 |_  least strength: strong
 ```
 
-These can retrieved from the ThoughtSpot webserver (not against the load balancer) by running the following command on any ThoughtSpot node.
+You can retrieve these from the ThoughtSpot web server (not against the load balancer) by running the following command on any ThoughtSpot node:
 
 ```
 nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
 ```
 
-You will need to ensure that your load-balancer supports these ciphers.
+You must ensure that your load balancer supports these ciphers.
