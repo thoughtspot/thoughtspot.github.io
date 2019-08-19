@@ -78,7 +78,7 @@ To change the TLS version, issue the following commands as an example.
     This will enable TLS version 1.1 and higher on ThoughtSpot.
 
 ## Configuration string for load balancers
-When enabling SSL support on load balancers' server-side SSL client-profile, use the following list of ciphers to ensure compatibility between load balancer and ThoughtSpot.
+When enabling SSL support on a load balancer's server-side SSL client profile, use the following list of ciphers to ensure compatibility between the load balancer and ThoughtSpot.
 ```
 EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
 ```
