@@ -101,7 +101,7 @@ Following ciphers are currently supported in ThoughtSpot.
 |_  least strength: strong
 ```
 
-These can retrieved from TS webserver (Not against the load-balancer) by running the following command on any ThoughtSpot node.
+These can retrieved from the ThoughtSpot webserver (not against the load balancer) by running the following command on any ThoughtSpot node.
 
 ```
 nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
