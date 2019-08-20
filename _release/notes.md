@@ -48,9 +48,13 @@ In this release, we introduce user Onboarding, which enables anyone to master Th
 
 - See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
 
-### Management Console
+### Management console
 
 **The Management Console is now available in beta.** Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
+
+### ThoughtSpot mobile
+
+Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or later. For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
 ### Mandatory user emails
 
@@ -90,7 +94,7 @@ See [SpotIQ Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-a
 
 We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
 
-### Explore Search
+### Explore search
 
 With **Explore**, existing pinboards lead you to deeper insights through a multi-step discovery process. A single click generates a new chart, which leads to further exploration. See [Explore]({{ site.baseurl }}/end-user/search/explore.html).
 
@@ -98,7 +102,7 @@ With **Explore**, existing pinboards lead you to deeper insights through a multi
 
 **SearchIQ is in beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
 
-### Schema and Join Information
+### Schema and join information
 
 You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
 

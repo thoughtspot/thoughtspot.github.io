@@ -1302,8 +1302,11 @@ entries:
   - sectiontitle: About this Release
     output: web,rnotes
     sectionitems:
-    - title: Release notes
+    - title: 5.3 release notes
       url: /release/notes.html
+      output: web,rnotes
+    - title: Mobile release notes
+      url: /release/mobile-notes.html
       output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
@@ -1311,6 +1314,6 @@ entries:
     - title: Glossary
       url: /reference/glossary.html
       output: web
-    - title: Topic index
-      url: /reference/tags_index.html
-      output: web
+[//]: #     - title: Topic index
+[//]: #       url: /reference/tags_index.html
+[//]: #       output: web
