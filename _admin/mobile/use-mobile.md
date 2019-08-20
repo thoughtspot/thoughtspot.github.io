@@ -16,12 +16,20 @@ For details on how to deploy the ThoughtSpot mobile app, refer to [Deploy mobile
 
 ## Features
 
-|**Home Pinboard**|**Quick Share**|
+|**Home Pinboard**|Add charts and tables to a customizable Home Pinboard.|
+|**Quick Share**|Share KPIs and charts using iMessage, email, and Slack.|
+|**Offline Exploration**|Access your Home Pinboard even when you are offline.|
+|**Responsive & Interactive Experience**|Tap and swipe to see chart details. Filter and sort to pinpoint relevant insights.|  
+|**Quick Share**|Share KPIs and charts using iMessage, email, and Slack.|  
+|**Offline Exploration**|Access your Home Pinboard even when you are offline.|  
+|**Responsive & Interactive Experience**|Tap and swipe to see chart details. Filter and sort to pinpoint relevant insights.|
+
+<!-- |**Home Pinboard**|**Quick Share**|
 |Add charts and tables to a customizable Home Pinboard.|Share KPIs and charts using iMessage, email, and Slack.|  
 |![]({{ site.baseurl }}/images/mobile_home.png "Home screen")|![]({{ site.baseurl }}/images/share_answer.gif "Quick Share")|
 |**Offline Exploration**|**Responsive & Interactive Experience**|
 |Access your Home Pinboard even when you are offline.|Tap and swipe to see chart details. Filter and sort to pinpoint relevant insights.|
-|![]({{ site.baseurl }}/images/mobile_offline_pinboard.png "Offline Pinboard")|![]({{ site.baseurl }}/images/responsive_interact.gif "Responsive and interactive")|
+|![]({{ site.baseurl }}/images/mobile_offline_pinboard.png "Offline Pinboard")|![]({{ site.baseurl }}/images/responsive_interact.gif "Responsive and interactive")| -->
 
 ## Getting Started
 
