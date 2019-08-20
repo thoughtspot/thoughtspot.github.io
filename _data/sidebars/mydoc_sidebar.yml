@@ -19,6 +19,15 @@ entries:
       output: pdf
       type: frontmatter
 # end PDF output defs
+  - sectiontitle: About this Release
+    output: web,rnotes
+    sectionitems:
+    - title: Release notes
+      url: /release/notes.html
+      output: web,rnotes
+    - title: Downloads
+      url: /release/downloads.html
+      output: web
   - sectiontitle: Users
     output: web,ugBk
     sectionitems:
@@ -415,9 +424,6 @@ entries:
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
           output: web,ugBk
-    - title: Mobile
-      url: /admin/mobile/use-mobile.html
-      output: web,ugBk
     - levelTwoTitle: Slack and ThoughtSpot
       output: web,ugBk
       levelTwoItems:
@@ -715,15 +721,6 @@ entries:
         - title: About restore operations
           url: /admin/backup-restore/restore.html
           output: web,admBk
-    - levelTwoTitle: Mobile
-      output: web,admBk
-      levelTwoItems:
-      - title: Deploy mobile app
-        url: /admin/mobile/deploy-mobile.html
-        output: web,admBk
-      - title: FAQ
-        url: /admin/mobile/faq-mobile.html
-        output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk
       levelTwoItems:
@@ -924,6 +921,24 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
+  - sectiontitle: Mobile
+    output: web,apgBk
+    sectionitems:
+    - title: Overview
+      url: /admin/mobile/use-mobile.html
+      output: web,apgBk
+    - title: Deploy
+      url: /admin/mobile/deploy-mobile.html
+      output: web,admBk
+    - title: Install
+      url: /admin/mobile/install-mobile.html
+      output: web,admBk
+    - title: FAQ
+      url: /admin/mobile/faq-mobile.html
+      output: web,admBk
+    - title: Release notes
+      url: /release/mobile-notes.html
+      output: web,rnotes
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1296,24 +1311,12 @@ entries:
     - title: Error code reference
       url: /error-codes/error-codes-reference.html
       output: web,refGdAdmin
-    - title: Frequently asked questions
-      url: /faq/faq.html
-      output: web,refGd
-  - sectiontitle: About this Release
-    output: web,rnotes
-    sectionitems:
-    - title: 5.3 release notes
-      url: /release/notes.html
-      output: web,rnotes
-    - title: Mobile release notes
-      url: /release/mobile-notes.html
-      output: web,rnotes
-    - title: Downloads
-      url: /release/downloads.html
-      output: web
     - title: Glossary
       url: /reference/glossary.html
       output: web
+    - title: Frequently asked questions
+      url: /faq/faq.html
+      output: web,refGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web

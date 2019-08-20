@@ -5,17 +5,8 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-**Q**: What is the minimum version of ThoughtSpot cluster required to deploy the mobile app?  
-**A**: 5.1 or later.
-
-**Q**: Which mobile devices are supported?  
-**A**: iOS device (iPhone/iPad) running iOS version 8.0 or later is required.
-
 **Q**: Which features are available on the mobile app?  
 **A**: Currently, the mobile app supports data viewing only. You can create pinboards using existing answers and use pinboard filters. Search is not available yet.
-
-**Q**: Are mobile device or app management platforms supported for deployment?  
-**A**: Yes. For details, please refer to [mobile device or app management platforms]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
 **Q**: Where are the cached data and login credentials stored on the mobile device?  
 **A**: ThoughtSpot iOS app stores two kinds of data:
