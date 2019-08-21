@@ -5,9 +5,9 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can use the mobile app, ask your IT group where you should download it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
+Before you install the mobile app, ask your ThoughtSpot administrator where you should download it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
 
-## Use VPN to access to your ThoughtSpot cluster (if necessary)
+## Use VPN to access to your ThoughtSpot cluster
 
 Use one of the following methods to securely access your cluster:
 
@@ -41,4 +41,4 @@ To set up the ThoughtSpot mobile app, follow these steps on your iOS device:
    - Help me set my Home Pinboard
 6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Pinboard.
 
-Have questions? Feel free to drop us a mail at mobile@thoughtspot.com
+Have questions? Feel free to drop us a mail at <mobile@thoughtspot.com>

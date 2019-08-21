@@ -936,9 +936,6 @@ entries:
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
       output: web,admBk
-    - title: Release notes
-      url: /release/mobile-notes.html
-      output: web,rnotes
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
