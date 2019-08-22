@@ -1,19 +1,19 @@
 ---
-title: [Install mobile app]
+title: [Install and set up mobile app]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can use the mobile app, ask your IT group where you should download it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
+Before you install the mobile app, ask your ThoughtSpot administrator where you should get it, and which method of VPN (if any) you should use to access your ThoughtSpot cluster.
 
-## Use VPN to access to your ThoughtSpot cluster (if necessary)
+## Set up VPN
 
-Use one of the following methods to securely access your cluster:
+Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign into  the app and access your ThoughtSpot cluster:
 
 ### Per-app VPN [Recommended]
 
-If you are deploying the app through mobile device management (MDM) platform, you can utilise the powerful and very secure Per-APP VPN feature provided by these platforms out of the box. The following resources from MDM vendors help you configure their global and per-app VPN options:
+If you download the app from your company's internal app store (mobile device or app management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
 
 - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-iOS-Device-Management/GUID-AWT-IOS-PROFILEVPN.html){:target="_blank"}
 - [MobileIron](http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/Per-App_VPN_Configuration.htm){:target="_blank"}
@@ -22,18 +22,31 @@ If you are deploying the app through mobile device management (MDM) platform, yo
 
 ### Standard VPN
 
-If your company doesn't use an MDM or MAM platform to deploy the app, you can use standard VPN to securely sign into the ThoughtSpot mobile app.
+If you download the app from the App Store for iOS, you can use standard VPN to sign in.
 
-- Launch and authenticate using the VPN app on the iOS device on which you want to use the ThoughtSpot app.
+- Open the VPN app on your iOS device and authenticate.
 
-## Install and set up the app
+## Install the app
 
-To set up the ThoughtSpot mobile app, follow these steps on your iOS device:
-1. Download the app from your company's approved app store.
-2. Open the app.
-3. Tap **Get started**.
-4. In the Server URL field, enter the URL for your ThoughtSpot cluster and tap **Continue**.
-5. Enter your User ID and Password for the cluster and tap **Log In**.
+Contact your ThoughtSpot administrator, to determine where to get the app.
+
+### App Store for iOS
+
+If your company allows you to download it from the App Store for iOS, download it from here:
+
+[![Download ThougtSpot app]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](http://apple.com/){:target="_blank"}
+
+### Your company's internal app store (if applicable)
+
+If your company has an internal app store, your administrator may ask you to download the app from there. Contact your administrator for details on where to find it.
+
+## Set up the app
+
+After you install the ThoughtSpot app, follow these steps to set it up:
+1. Open the app.
+2. Tap **Get Started**.
+3. In the Server URL field, enter the URL for your ThoughtSpot cluster and tap **Continue**.
+4. Enter your User ID and Password for the cluster and tap **Sign In**.
 
    The Home screen appears, showing three options for setting up your home pinboard:
    - Choose an existing Pinboard
@@ -41,4 +54,4 @@ To set up the ThoughtSpot mobile app, follow these steps on your iOS device:
    - Help me set my Home Pinboard
 6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Pinboard.
 
-Have questions? Feel free to drop us a mail at mobile@thoughtspot.com
+Have questions? Feel free to contact us at <mobile@thoughtspot.com>

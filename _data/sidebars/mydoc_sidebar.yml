@@ -930,15 +930,12 @@ entries:
     - title: Deploy
       url: /admin/mobile/deploy-mobile.html
       output: web,admBk
-    - title: Install
+    - title: Install and set up
       url: /admin/mobile/install-mobile.html
       output: web,admBk
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
       output: web,admBk
-    - title: Release notes
-      url: /release/mobile-notes.html
-      output: web,rnotes
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:

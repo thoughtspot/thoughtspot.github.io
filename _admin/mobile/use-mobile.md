@@ -5,14 +5,12 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards.
+The ThoughSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
 ## Requirements
 
 - User account on a ThoughtSpot cluster running release 5.1 or later
-- Apple iOS version 8.0 and later (iPad and iPhone only)  
-
-For details on how to deploy the ThoughtSpot mobile app, refer to [Deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
+- Apple iOS version 8.0 or later (iPad and iPhone only)
 
 ## Features
 
@@ -27,26 +25,12 @@ For details on how to deploy the ThoughtSpot mobile app, refer to [Deploy mobile
 |**Offline Exploration**|**Responsive & Interactive Experience**|
 |Access your Home Pinboard even when you are offline.|Tap and swipe to see chart details. Filter and sort to pinpoint relevant insights.|
 |![]({{ site.baseurl }}/images/mobile_offline_pinboard.png "Offline Pinboard")|![]({{ site.baseurl }}/images/responsive_interact.gif "Responsive and interactive")| -->
+## Getting Started
 
-## Getting started
+### For administrators:
+- To deploy the app to users in your company, see [Deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
-Before you can use the mobile app, determine from where you are going to download it (ask your IT group).
+- To try the app before deploying it, see [Try mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#try-the-mobile-app).
 
-### (Optional) Secure access to your ThoughtSpot cluster
-
-
-
-### Install and set up the app
-
-To set up the ThoughtSpot mobile app, follow these steps:
-1. Download the app from your company's approved app store.
-2. Open the app.
-3. Tap **Get started**.
-4. In the Server URL field, enter the URL for your ThoughtSpot cluster and tap **Continue**.
-5. Enter your User ID and Password for the cluster and tap **Log In**.  
-
-   The Home screen appears, showing three options for setting up your home pinboard:
-   - Choose an existing Pinboard  
-   - Create a new Pinboard  
-   - Help me set my Home Pinboard
-6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Pinboard.
+### For users:
+- To install and set up the app, see [Install and set up mobile app]({{ site.baseurl }}/admin/mobile/install-mobile.html#).
