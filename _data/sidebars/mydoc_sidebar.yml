@@ -930,7 +930,7 @@ entries:
     - title: Deploy
       url: /admin/mobile/deploy-mobile.html
       output: web,admBk
-    - title: Install
+    - title: Install and set up
       url: /admin/mobile/install-mobile.html
       output: web,admBk
     - title: FAQ

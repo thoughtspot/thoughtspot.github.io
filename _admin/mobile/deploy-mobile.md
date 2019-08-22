@@ -14,9 +14,7 @@ There are two options for your users to download the ThoughtSpot mobile app:
 - Your MDM or MAM platform
 
 ### App Store for iOS
-The ThoughtSpot app is available from the App Store for iOS. Your users can download it directly from there:
-
-[![Download ThougtSpot app]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](http://apple.com/){:target="_blank"}
+The ThoughtSpot app is available from the App Store for iOS. Your users can download it directly from there.
 
 ### Mobile device or app management platform
 There are two ways to provide the ThoughtSpot app to your users with your MDM or MAM platform:
@@ -39,8 +37,7 @@ To add a link to the ThoughtSpot app on your management platform, refer to the f
 
 ##### Before you begin
   - Your company must have an Apple developer enterprise account.
-  - You must download the .ipa file, and the instructions for re-signing it, from this Egnyte link [Insert Egnyte Link]
-  - You must re-sign the downloaded .ipa file.
+  - Contact ThoughtSpot to get the ThoughtSpot .ipa file.
 
 To upload the ThoughtSpot .ipa file to your management platform, refer to the following platform-specific information:
   - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL.html#GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL){:target="_blank"}
@@ -57,3 +54,14 @@ The ThoughtSpot mobile app conforms to the industry standard AppConfig community
   |-----------------|------------|-----------------------------------|
   |ServerUrls   |https://thoughtspot.example.com,https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from during sign-in. Separate the servers with commas.|
   |HomePinboardHelpText |Please drop an email to admin@example.com if you are facing difficulties in setting up your home pinboard.| The home pinboard set up help text can be customised using this key.|
+
+## Try the mobile app
+
+If you want to try the mobile app before you deploy it to ThoughtSpot users in your company, do the following:
+1. Install and set up the app, following the steps in [Install and set up the mobile app]({{ site.baseurl }}/admin/mobile/install-mobile.html#).
+2. Use the following credentials to connect to ThoughtSpot's testing environment and try out the app:  
+   **Server URL**: https://try.thoughtspot.com  
+   **User ID**: mobile_beta@thoughtspot.com  
+   **Password**: mobile
+
+Have questions? Feel free to contact us at <mobile@thoughtspot.com>   

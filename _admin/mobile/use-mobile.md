@@ -5,7 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards.
+The ThoughSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
 ## Requirements
 
@@ -30,7 +30,7 @@ The ThoughSpot mobile app allows you to discover insights in seconds from billio
 ### For administrators:
 - To deploy the app to users in your company, see [Deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
-- To try the app before deploying it, see [Try mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
+- To try the app before deploying it, see [Try mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#try-the-mobile-app).
 
 ### For users:
-- To install and set up the app, see [Install mobile app]({{ site.baseurl }}/admin/mobile/install-mobile.html#).
+- To install and set up the app, see [Install and set up mobile app]({{ site.baseurl }}/admin/mobile/install-mobile.html#).
