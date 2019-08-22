@@ -50,10 +50,10 @@ To upload the ThoughtSpot .ipa file to your management platform, refer to the fo
 
 The ThoughtSpot mobile app conforms to the industry standard AppConfig community and version 1.1 of the app supports the following keys. You can add these keys while deploying through your MDM or MAM platform.
 
-  |Key          |Format     |Description                   |
+  |Key |Format     |Description                   |
   |-----------------|------------|-----------------------------------|
-  |ServerUrls   |https://thoughtspot.example.com,https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from during sign-in. Separate the servers with commas.|
-  |HomePinboardHelpText |Please drop an email to admin@example.com if you are facing difficulties in setting up your home pinboard.| The home pinboard set up help text can be customised using this key.|
+  |ServerUrls   |https://thoughtspot.example.com, <br>https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from <br>during sign-in. Separate the servers with commas.|
+  |HomePinboardHelpText |Please drop an email to admin@example.com <br>if you are facing difficulties in setting up your <br>home pinboard.| The home pinboard setup help text can be <br>customized using this key.|
 
 ## Try the mobile app
 

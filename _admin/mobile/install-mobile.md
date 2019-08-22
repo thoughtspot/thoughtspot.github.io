@@ -34,7 +34,7 @@ Contact your ThoughtSpot administrator, to determine where to get the app.
 
 If your company allows you to download it from the App Store for iOS, download it from here:
 
-[![Download ThougtSpot app]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](http://apple.com/){:target="_blank"}
+[![Download ThougtSpot app]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apps.apple.com/app/id1437983463){:target="_blank"}
 
 ### Your company's internal app store (if applicable)
 
