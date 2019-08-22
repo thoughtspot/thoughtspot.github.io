@@ -54,4 +54,4 @@ After you install the ThoughtSpot app, follow these steps to set it up:
    - Help me set my Home Pinboard
 6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Pinboard.
 
-Have questions? Feel free to contact us at <mobile@thoughtspot.com>
+Have questions? Feel free to contact us at [mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=ThoughtSpot%20Mobile%20App%20Question)
