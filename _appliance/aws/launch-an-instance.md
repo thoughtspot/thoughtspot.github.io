@@ -24,18 +24,18 @@ The ThoughtSpot AMI comes provisioned with the custom ThoughtSpot image to make 
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifics the volumes to attach to the instance when it’s launch.
 
-The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned. 
+The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned.
 
 ##  Prerequisites
 
 ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for setting up your EC2 details:
 - Sign in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
-- Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the deafult AMI are:  
-**AMI Name**: centos-golden-20171207-61be6ad-prod-small  
-**AMI ID**: ami-f1151091  
+- Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the default AMI are:  
+**AMI Name**: thoughtspot-image-20190614-0123e58511a-prod-2tb-ebs  
+**AMI ID**: ami-0e8118e34275009d1  
 **Region**: N. California
-- Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node. 
-- For customers with smaller data sets, a custom AMI (Name = centos-golden-20181023-4d9ee24-prod-small, ID = ami-06138062df81bdaf7) has also been made available. VMs based on this configuration will suffice for data sizes up to 100 GB/node.
+- Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node.
+- For customers with smaller data sets, a custom AMI (Name = thoughtspot-image-20190614-0123e58511a-prod-800gb-ebs, ID = ami-0b1a0f31eb913e45b) has also been made available. VMs based on this configuration will suffice for data sizes up to 800 GB/node.
 - Choose the appropriate EC2 instance type: See [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types) for supported instance types.
 - Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
 - Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
@@ -44,7 +44,7 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 
 ## Setting up your ThoughtSpot cluster in AWS
 
-The examples/screenshots below are for N. California region. Your own region may be different. 
+The examples/screenshots below are for N. California region. Your own region may be different.
 
 To set up a ThoughtSpot cluster in AWS, do the following:
 
