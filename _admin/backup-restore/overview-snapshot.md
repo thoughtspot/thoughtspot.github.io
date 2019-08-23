@@ -112,9 +112,8 @@ To update your current periodic snapshot policy, follow these steps:
    | Snapshot Policy | Specify _Enabled_ or _Disabled_. |
    | Period | Specify the frequency of the chosen unit of time: _Minutes_, _Hours_, or _Days_. |
    | Retention Policy | Specify the retention intervals in the chosen unit of time: _Minutes_, _Hours_, or _Days_. Retention is on a first-in-first-out (FIFO) basis, discarding the oldest results first. |
-   | Capacity |  |
-
-   To use multiple retention buckets with different retention policies, click <strong>Add Retention Policy</strong> to specify multiple policies.
+   | Capacity | Specify how many backups (snapshots) the system retains for each retention bucket. |
+   | Add Retention Policy | To use multiple retention buckets with different retention policies, use this option to specify multiple policies. |
 
 6. Click **Save** to update the snapshot policy.
 

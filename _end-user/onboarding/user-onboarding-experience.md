@@ -34,6 +34,7 @@ Your onboarding experience begins when you login for the first time.
 4. **Step 4: View your insights**  
    Examine the pinboard you selected, and learn what insights it provides.
    Click **Follow** to receive periodic emails about this pinboard.
+
    ![]({{ site.baseurl }}/images/onboard-user-experience-4.png "Examine the first pinboard")
 
 ## Repeating the onboarding process ##

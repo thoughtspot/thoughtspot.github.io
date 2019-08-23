@@ -85,4 +85,4 @@ As soon as the file is uploaded, your new settings will be reflected within a fe
 
 ## Related information  
 
-* [Teach SearchIQ your language](({{ site.baseurl }}/end-user/search/teach-searchiq.html#)
+* [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html#)
