@@ -499,7 +499,7 @@ and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How t
 <tr style="width: 100%;border-bottom-style: inset;">
 <td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px;">
 <h3><a name="Abilitytosettableloadprioritization"></a>Ability to set table load prioritization</h3>
-<p>You can now use <tt>tql</tt> to set table load priority. You can set priority values between <tt>1-100</tt>. The default priority is <tt>50</tt>. Lower number means higher priority. 1 is the highest possible priority as a result. The following illustrates examples of the new commands for setting and changing table load priority:</p>
+<p>You can now use <tt>tql</tt> to set table load priority. You can set priority values between <tt>1-100</tt>. The default priority is <tt>50</tt>. A lower number indicates a higher priority, with 1 being the highest priority. Tables set to a load priority of 1, load before tables set to higher numbers. The following illustrates examples of the new commands for setting and changing table load priority:</p>
 <div class="code panel" style="border-width: 1px;">
 <div class="codeContent panelContent">
 <pre class="code-java">  alter table <span class="code-quote">'t1'</span> set load priority [value]
