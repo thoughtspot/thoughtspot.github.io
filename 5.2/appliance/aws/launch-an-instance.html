@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-08-19T13:34:26-07:00" />
+<meta property="article:published_time" content="2019-08-23T10:03:25-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-08-19T13:34:26-07:00","datePublished":"2019-08-19T13:34:26-07:00","description":"After you’ve determined your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI). Please read further for next steps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/5.2/appliance/aws/launch-an-instance.html","headline":"[“Set up AWS for ThoughtSpot”]","dateModified":"2019-08-23T10:03:25-07:00","datePublished":"2019-08-23T10:03:25-07:00","description":"After you’ve determined your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI). Please read further for next steps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3158,12 +3158,12 @@ $('#toc').on('click', 'a', function() {
 <p>ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow the guidelines below for setting up your EC2 details:</p>
 <ul>
   <li>Sign in to your AWS account from the <a href="https://console.aws.amazon.com/console/home">AWS Amazon sign in page</a>.</li>
-  <li>Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the deafult AMI are:<br />
-<strong>AMI Name</strong>: centos-golden-20171207-61be6ad-prod-small<br />
-<strong>AMI ID</strong>: ami-f1151091<br />
+  <li>Copy the suitable ThoughtSpot public AMI which has been made available in N. California region to your AWS region. Details for the default AMI are:<br />
+<strong>AMI Name</strong>: thoughtspot-image-20190614-0123e58511a-prod-2tb-ebs<br />
+<strong>AMI ID</strong>: ami-0e8118e34275009d1<br />
 <strong>Region</strong>: N. California</li>
   <li>Default AMI has 2x1 TB attached EBS storage volumes to support the maximum capacity of 250 GB data per ThoughtSpot node.</li>
-  <li>For customers with smaller data sets, a custom AMI (Name = centos-golden-20181023-4d9ee24-prod-small, ID = ami-06138062df81bdaf7) has also been made available. VMs based on this configuration will suffice for data sizes up to 100 GB/node.</li>
+  <li>For customers with smaller data sets, a custom AMI (Name = thoughtspot-image-20190614-0123e58511a-prod-800gb-ebs, ID = ami-0b1a0f31eb913e45b) has also been made available. VMs based on this configuration will suffice for data sizes up to 800 GB/node.</li>
   <li>Choose the appropriate EC2 instance type: See <a href="/5.2/appliance/cloud.html#thoughtspot-cloud-instance-types">ThoughtSpot cloud instance types</a> for supported instance types.</li>
   <li>Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.</li>
   <li>Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.</li>
@@ -3256,7 +3256,7 @@ They will set up the VM instances to be part of the cluster.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 19, 2019 <br />
+        Generated: Aug 23, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
