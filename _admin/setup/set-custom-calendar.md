@@ -68,9 +68,9 @@ To use the template you generated as your custom calendar, some editing is requi
     Example calendar with the fiscal year beginning on April 1:
     ![]({{ site.baseurl }}/images/custom_cal.png)
 
-3. Save your calendar template as a .csv file so that there are no carriage returns (^M characters).
+3. Save your calendar template as a UTF-8 encoded .csv file with UNIX line breaks.
 
-      {% include note.html content="Carriage returns prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
+      {% include note.html content="Saving the file with UNIX line breaks, ensures there are no carriage returns in the file which prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
 
 ### Add the custom calendar to your cluster
 
