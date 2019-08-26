@@ -91,11 +91,11 @@ To set a new font:
 
 2. Select the label you want to change.
 
-3. Press the **+** button.
+3. Click the **+** button.
 
    The system displays the **Custom Font** dialog.
 
-4. Press the **Custom Font** field.
+4. Click the **Custom Font** field.
 
    The system displays the file finder.
 
@@ -103,7 +103,7 @@ To set a new font:
 
    The file appears in the font dialog
 
-6. Press **Save** to change the font.
+6. Click **Save** to change the font.
 
 ## How to specify the behavior or clickable links in data
 
