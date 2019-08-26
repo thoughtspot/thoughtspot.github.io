@@ -43,15 +43,15 @@ for a sandbox environment but is insufficient for a production environment.
 
    ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
 
-3. Choose the OVF template and press **Next**.
+3. Choose the OVF template and click **Next**.
 
    The system prompts you to select a storage.
 
-4. Choose the SSD as the destination and press **Next**.
+4. Choose the SSD as the destination and click **Next**.
 
    The system displays the **Deployment Options** dialog.
 
-5. Enter the options and press **Next**.
+5. Enter the options and click **Next**.
 
     | Setting                    | Value                                             |
     |----------------------------|---------------------------------------------------|
@@ -59,7 +59,7 @@ for a sandbox environment but is insufficient for a production environment.
     | **Disk provisioning**      | Choose Thin.                                      |
     | **Power on automatically** | Check this box.                                   |
 
-6. Review your selection and press **Finish**.
+6. Review your selection and click **Finish**.
 
    ![]({{ site.baseurl }}/images/vmware-complete.png "Complete")
 

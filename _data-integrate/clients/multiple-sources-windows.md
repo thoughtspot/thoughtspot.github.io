@@ -58,11 +58,11 @@ or development cluster.
 
     ![]({{ site.baseurl }}/images/ODBC_add_custom_property_new_data_source.png "Enter the custom property key and value")
 
-9. When you are done, press **OK** to save your new configuration.
+9. When you are done, click **OK** to save your new configuration.
 
     ![]({{ site.baseurl }}/images/odbc-new-config.png "Success")
 
-10. Press **Test Connection** to test your database connection.
+10. Click **Test Connection** to test your database connection.
 
     ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")
 
@@ -71,6 +71,6 @@ or development cluster.
     }}/data-integrate/troubleshooting/enable-ODBC-log.html#) to
     troubleshoot.
 
-11. Press **Cancel** to close the **DSN Configuration** dialog.
-12. Press **OK** to close the **Client Configuration Dialog** the dialog.
-13. Press **OK** to close the **ODBC Data Source Administrator (64-bit)** application
+11. Click **Cancel** to close the **DSN Configuration** dialog.
+12. Click **OK** to close the **Client Configuration Dialog** the dialog.
+13. Click **OK** to close the **ODBC Data Source Administrator (64-bit)** application
