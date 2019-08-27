@@ -31,4 +31,5 @@ Sunnyvale, CA 94085
 |---------------------|-----|
 |For sales inquiries.|<a href="mailto:sales@thoughtspot.com">sales@thoughtspot.com</a>|
 |For customer support and software update inquiries.|<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>|
+|For mobile app inquiries.|[mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=%20ThoughtSpot%20Mobile%20App%20Question)|
 |For other inquiries.|<a href="mailto:hello@thoughtspot.com">hello@thoughtspot.com</a>|
