@@ -34,6 +34,10 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.1.4 release.
 
+## Mobile App
+
+ThoughtSpot mobile app version 1.1 is now available! For more information, see [ThoughtSpot mobile overview]({{ site.baseurl}}/admin/mobile/use-mobile.html)
+
 {: id="514-fixed"}
 ## 5.1.4 Fixed Issues
 
