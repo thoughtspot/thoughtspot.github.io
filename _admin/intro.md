@@ -28,3 +28,8 @@ Additionally, administrators are often involved in the following workflows:
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)
 - [Troubleshooting]({{ site.baseurl }}/admin/troubleshooting/troubleshooting-intro.html)
+
+Someone with following skill levels would be comfortable as a ThoughtSpot administrator.
+- Advanced user or intermediate administrator of Linux-like operating systems.
+- Intermediate or junior (but self-sufficient)level database service administrator.
+- Intermediate level application availability manager. 
