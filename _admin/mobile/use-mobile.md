@@ -14,17 +14,8 @@ ThoughSpot mobile app version 1.1 allows you to discover insights in seconds fro
 
 ## Features
 
-|**Home Pinboard**|Add charts and tables to a customizable Home Pinboard.|
-|**Quick Share**|Share KPIs and charts using iMessage, email, and Slack.|
-|**Offline Exploration**|Access your Home Pinboard even when you are offline.|
-|**Responsive & Interactive Experience**|Tap and swipe to see chart details. Filter to pinpoint relevant insights.|  
+|![]({{ site.baseurl }}/images/v1_mobile.gif "Home screen")|<br><br>**Home Pinboard**<br>Add charts and tables to a customizable Home Pinboard.<br><br>**Quick Share**<br>Share KPIs and charts using iMessage, email, and Slack.<br><br>**Offline Exploration**<br>Access your Home Pinboard even when you are offline.<br><br>**Responsive & Interactive Experience**<br>Tap and swipe to see chart details. Filter to pinpoint relevant insights.<br><br>**Favorites**<br>Tag your favorite Pinboards and Answers for quick access.|
 
-<!-- |**Home Pinboard**|**Quick Share**|
-|Add charts and tables to a customizable Home Pinboard.|Share KPIs and charts using iMessage, email, and Slack.|  
-|![]({{ site.baseurl }}/images/mobile_home.png "Home screen")|![]({{ site.baseurl }}/images/share_answer.gif "Quick Share")|
-|**Offline Exploration**|**Responsive & Interactive Experience**|
-|Access your Home Pinboard even when you are offline.|Tap and swipe to see chart details. Filter to pinpoint relevant insights.|
-|![]({{ site.baseurl }}/images/mobile_offline_pinboard.png "Offline Pinboard")|![]({{ site.baseurl }}/images/responsive_interact.gif "Responsive and interactive")| -->
 ## Getting Started
 
 ### For administrators:
