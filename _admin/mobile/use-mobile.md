@@ -14,7 +14,7 @@ ThoughSpot mobile app version 1.1 allows you to discover insights in seconds fro
 
 ## Features
 
-|![]({{ site.baseurl }}/images/v1_mobile.gif "Home screen")|<br><br>**Home Pinboard**<br>Add charts and tables to a customizable Home Pinboard.<br><br>**Quick Share**<br>Share KPIs and charts using iMessage, email, and Slack.<br><br>**Offline Exploration**<br>Access your Home Pinboard even when you are offline.<br><br>**Responsive & Interactive Experience**<br>Tap and swipe to see chart details. Filter to pinpoint relevant insights.|
+|![]({{ site.baseurl }}/images/v1_mobile.gif "Home screen")|<br><br>**Home Pinboard**<br>Add charts and tables to a customizable Home Pinboard.<br><br>**Quick Share**<br>Share KPIs and charts using iMessage, email, and Slack.<br><br>**Offline Exploration**<br>Access your Home Pinboard even when you are offline.<br><br>**Responsive & Interactive Experience**<br>Tap and swipe to see chart details. Filter to pinpoint relevant insights.<br><br>**Favorites**<br>Tag your favorite Pinboards and Answers for quick access.|
 
 ## Getting Started
 
