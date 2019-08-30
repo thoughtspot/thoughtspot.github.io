@@ -6,15 +6,19 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Many organizations use data lakes deployed either as an on-premise setup or a cloud-based solution for data management. Data flows within the data lake are sourced from different data repositories that may have security implications due to the strict data governance policies. Moving data to ThoughtSpot also adds a significant time for the setup to complete, and increases the overall time for deployment to analysis. In addition, ETL pipeline setup and maintenance also require considerable cost and efforts before you bring the data into ThoughtSpot system.
+ThoughtSpot Embrace is in Beta, and works only with Snowflake databases. To enable ThoughtSpot Embrace, contact your ThoughtSpot representative.
+
+Source data exists in data warehouses in many organizations.These warehouses have strict security rules, and these companies prefer to keep the data in one place. In these circumstances, Embrace leverages all ThoughtSpot analytical capabilities directly on the external database, without moving the data. And it makes it easy to bring this data into ThoughtSpot at any time.
 
 ## About Embrace
 
-ThoughtSpot Embrace is an exciting capability that allows you to perform live query to the external databases for analysis,  without having to cache the data in ThoughtSpot. Using Embrace, you can read directly from the external databases and do all your data analysis and create  visualizations in the ThoughtSpot application. This data can be refreshed from the underlying database at any time. Database connections are stored to make reconnecting seamless.
+Embrace has two primary operating modes:
+- **Linked**: queries from ThoughtSpot run directly on the external Snowflake database.
+- **Synced**: Embrace transfers data from Snowflake into ThoughtSpot, and periodically refreshes it.
+
+ThoughtSpot Embrace allows you to directly query an external database and do all your data analysis and create visualizations in ThoughtSpot. Embrace has an intuitive process for synchronizing the external data into ThoughtSpot on a predefined schedule.
 
 After choosing a data connection, you can choose from the database - a list of available tables to setup your live query. Then select only the columns of interest from each table. Primary key and foreign key relationships will also be imported, but only when the primary key table is imported at the same time as the foreign key table. It’s easy to apply transformations and filters to the data, too. So you only connect the data you want to explore.
-
-{% include note.html content="Please contact your ThoughtSpot representative, if you want to find out how to enable ThoughtSpot Embrace." %}
 
 ## Key benefits
 - Simple and scalable data movement model with focus only on data visualizations.
