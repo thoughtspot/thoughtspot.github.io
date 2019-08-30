@@ -21,11 +21,11 @@ ThoughtSpot Embrace allows you to directly query an external database and do all
 After choosing a data connection, you can choose from the database - a list of available tables to setup your live query. Then select only the columns of interest from each table. Primary key and foreign key relationships will also be imported, but only when the primary key table is imported at the same time as the foreign key table. It’s easy to apply transformations and filters to the data, too. So you only connect the data you want to explore.
 
 ## Key benefits
-- Simple and scalable data movement model with focus only on data visualizations.
-- Quick setup and faster deployments with seamless DB connections.
-- Eliminate the need of moving data into ThoughtSpot for analysis.
-- Ease of data management and governance.
-- Huge time and cost saving since ETL pipelines are eliminated.
+- Quick setup and faster deployments of ThoughtSpot by connecting directly to a Snowflake.
+- Eliminate the need to move data into ThoughtSpot for analysis.
+- Centralized data management and governance in Snowflake.
+- Significant time and cost savings by avoiding ETL pipelines.
+- In cases where data must be transferred into ThoughtSpot, Embrace provides easy setup and scheduling capabilities.
 
 ## What's next
 
@@ -33,9 +33,7 @@ After choosing a data connection, you can choose from the database - a list of a
 Set up and enable the connection between ThoughtSpot and new database connection.
 -   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
 Edit a connection when you connect to a new data source or edit an existing one.
+- Edit a linked table
 -   **[Know database connector details]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Here is a list of all of the source cloud data connectors, and their connection credentials, that are supported in ThoughtSpot Embrace.
--   **[Data sources management]({{ site.baseurl }}/admin/loading/loading-intro.html)**  
-After you have successfully loaded your tables, you can check on the status of the load, make edits, and more.
--   **[Data security]({{ site.baseurl }}/admin/architecture/security.html)**  
-Understand how to secure your data and other key information in ThoughtSpot.
+- Synchronize
