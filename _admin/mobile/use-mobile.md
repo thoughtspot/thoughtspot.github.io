@@ -10,7 +10,7 @@ ThoughSpot mobile app version 1.1 allows you to discover insights in seconds fro
 ## Requirements
 
 - User account on a ThoughtSpot cluster running release 5.1 or later
-- Apple iOS version 8.0 or later (iPad and iPhone only)
+- Apple iOS version 9.0 or later (iPad and iPhone only)
 
 ## Features
 
