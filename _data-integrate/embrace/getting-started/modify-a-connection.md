@@ -7,80 +7,78 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify a connection and its tables after you created a new Embrace database connection.
+You can modify a connection in the following ways:
+- Edit a connection: to add or remove tables and columns
+- Remap a connection: to map a table or column to a different table or column
+- Delete a table
+- Delete a connection
 
 ## Edit a connection
 
-You can modify the loaded tables by adding or removing columns that have been selected during creating a new connection. This makes it easier to include new source columns in an existing database connection. In addition, you can also add more tables while editing a database connection.
+Edit a connection to add or remove tables and columns.
 
 To edit a connection:
 
-1. Log in to ThoughtSpot from a browser.
-2. Click **Data** on the top navigation bar.
-3. Click the **Connections** tab at the top of the page.
-4. Select the connection type of interest on Connections list page.
+1. Click **Data** in the top navigation bar.
+2. Click the **Connections** tab at the top of the page.
+3. Select the connection type of interest on Connections list page.
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-5. Click **Edit Connection** on the upper right hand side of the page.
+4. Click **Edit Connection** at the upper-right-hand side of the page.
 
-    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+   ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
 
-6. Expand the database table dropdown, and choose the tables and select the columns you wish to add or remove.
+5. Expand the database table drop-down menu, and select the tables and columns you want to add or remove.
 
-7. Click **Update** to reflect the connection details.
+   ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
-     ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
-
+6. Click **Update** to reflect the connection details.
 
 ## Remap a connection
 
-You can modify the connection parameters by editing the source mapping<code> yaml </code>file that has been created during setting up a new connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure that they display as intended.
+Modify the connection parameters by editing the source mapping<code> yaml </code>file that was created when you adding the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
 To remap a connection:
 
-1. Log in to ThoughtSpot from a browser.
-2. Click **Data** on the top navigation bar.
-3. Click the **Connections** tab at the top of the page.
-4. Select the connection type of interest on Connections list page.
+1. Click **Data** in the top navigation bar.
+2. Click the **Connections** tab at the top of the page.
+3. Select the connection type of interest on Connections list page.
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-5. Click ellipses icon **...** and **Remapping** on the upper right hand side of the page.
+4. Click ellipses icon **...** and **Remapping** on the upper-right-hand side of the page.
 
     ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
-6. Click **Download** to download the source mapping file
+5. Click **Download** to download the source mapping file
 
     ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
 
-7. Edit and update the file as required.
+6. Edit and update the file as required.
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
-8. Finally upload the mapping file to reflect the new mapping in the existing connection.
+7. Finally upload the mapping file to reflect the new mapping in the existing connection.
 
-
-
-## Edit a table
+## Delete a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
 
 To delete a table:
-1. Log in to ThoughtSpot from a browser.
-2. Click **Data** on the top navigation bar.
-3. Click the **Connections** tab at the top of the page.
-4. Select the connection type of interest on Connections list page.
+1. Click **Data** in the top navigation bar.
+2. Click the **Connections** tab at the top of the page.
+3. Select the connection type of interest.
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-5. Find the table you want to remove in the list, and check the box next to its name.
-6. Click the **Delete** icon.
+4. Find the table you want to remove in the list, and check the box next to its name.
+5. Click **Delete**.
 
     ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
 
     {% include note.html content="If you are attempting to delete a table with dependent objects, the operation will be blocked. You will see a warning, with a list of dependent objects with links." %}
 
-7. Click the link for an object to modify or delete it.
+6. Click the link for an object to modify or delete it.
 
    When all its dependencies are removed, you will be able to delete the table.
 
@@ -89,21 +87,21 @@ To delete a table:
 You can also click the name of a table and then click the linked objects to to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
 ## Delete a connection
-A connection is not tied to a task, and can therefore be called in multiple data sources or visualizations. So in order to delete a connection, you must first delete all of the sources and tasks that use that connection. Once the connection is not used in data sources, you will be able to delete it.
+A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
 To delete a connection:
-1. Log in to ThoughtSpot from a browser.
-2. Click **Data** on the top navigation bar.
-3. Click the **Connections** tab at the top of the page.
-4. Find the connection you want to remove in the list, and check the box next to its name.
-5. Click the **Delete** icon.
+1. Click **Data** in the top navigation bar.
+2. Click the **Connections** tab at the top of the page.
+3. Check the box next to the connection you want to delete.
+4. Click **Delete**.
 
    ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
 
-   {% include note.html content="If you are attempting to delete a connection with dependent objects, the operation will be blocked. You will see a warning, with a list of dependent objects with links." %}
-6. Click the link for an object to modify or delete it.
+   If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
-    ![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type")
+   ![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type")
 
-7. When all its dependencies are removed, you will be able to delete the connection. Click **Delete** to confirm.
+5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
+
+6. When all its dependencies are removed, delete the connection by clicking **Delete**.
     ![]({{ site.baseurl }}/images/final-delete.png "delete connection type")

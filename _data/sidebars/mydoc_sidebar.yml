@@ -1170,7 +1170,7 @@ entries:
       - title: Introduction to Embrace
         url: /data-integrate/embrace/embrace-intro.html
         output: web,digBk
-      - title: Setup a new connection
+      - title: Add a connection
         url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
         output: web,apgBk
       - title: Modify a connection
