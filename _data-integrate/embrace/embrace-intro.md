@@ -14,7 +14,7 @@ Source data exists in data warehouses in many organizations.These warehouses hav
 
 Embrace has two primary operating modes:
 - **Linked**: queries from ThoughtSpot run directly on the external Snowflake database.
-- **Synced**: Embrace transfers data from Snowflake into ThoughtSpot, and periodically refreshes it.
+- **Synced**: data transfers from Snowflake into ThoughtSpot, and is periodically refreshed.
 
 ThoughtSpot Embrace allows you to directly query an external database and do all your data analysis and create visualizations in ThoughtSpot. Embrace has an intuitive process for synchronizing the external data into ThoughtSpot on a predefined schedule.
 
@@ -26,6 +26,25 @@ After choosing a data connection, you can choose from the database - a list of a
 - Centralized data management and governance in Snowflake.
 - Significant time and cost savings by avoiding ETL pipelines.
 - In cases where data must be transferred into ThoughtSpot, Embrace provides easy setup and scheduling capabilities.
+
+## Features available in Embrace modes
+
+| Feature |  Synced Tables | Linked Tables |
+|---|---|---|
+| *Simple Search* | Yes | Yes |
+| *Complex searches like Versus, Inline Subquerying, Growth* | Yes | Yes |
+| *Search Suggestions for column names* | Yes | Yes |
+| *Search Suggestions for column values* | Yes | No |
+| *Headlines at the bottom that summarize tables* | Yes | Yes |
+| *All Chart Types & Configurations* | Yes | Yes |
+| *SpotIQ Instant Insights* | Yes | Yes |
+| *SpotIQ pre-computed insights* | Yes | No |
+| *Table & Column Remapping* | No | No |
+| *Custom Calendar* | Yes | No |
+| *Hot & Cold Data* | N/A | No |
+| *Pass Through Security* | N/A | No |
+| *Sync using ODBC / JDBC driver of target database* | N/A | Yes |
+| *Sync using Bulk Loading capability of target database for faster syncing* | N/A | No |
 
 ## What's next
 

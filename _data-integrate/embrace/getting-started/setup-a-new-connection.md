@@ -1,5 +1,5 @@
 ---
-title: [Setup a new connection]
+title: [Add a connection]
 tags: [limitations]
 keywords: tbd
 last_updated: tbd
@@ -7,44 +7,44 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Now that you've enabled ThoughtSpot Embrace, you will be able to add a new connection to a supported database source. Database sources are the external source systems to which you want to perform a live query to create answers and pinboards, without having to bring data into ThoughtSpot.
+Now that you've enabled ThoughtSpot Embrace, you can add a connection to a supported database source. Database sources are the external source systems to which you want to perform a live query to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-{% include note.html content="This release only supports Snowflake connection. In coming releases, we shall bring in support for more  relational database sources, like Amazon Redshift, SQL Server, or applications, like Marketo or Salesforce and so on." %}
+{% include note.html content="The 5.3 release only supports Snowflake." %}
 
 ## Create a new connection
 
 To add a new connection:
 
-1. Log in to ThoughtSpot from a browser.
+1. Sign in to ThoughtSpot from a browser.
 
-2. Click **Data** on the top navigation bar.
+2. Click **Data** in the top navigation bar.
 
-3. Click the **Connections** tab at the top of the page, and select **+ Add connection** on the upper right hand side of the panel.
+3. Click the **Connections** tab at the top of the page, and select **+ Add connection** at the upper right-hand side of the panel.
 
      ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
 
-4. Select connection type you wish to use from the available list in the Connection Type screen and click **Next**.
+4. Select the connection type you want to use from the available list and click **Next**.
 
      ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type")
 
-5. Enter the connection credentials to your external data source in the Set Credentials screen and click **Next**:
+5. Enter the connection credentials for your external data source and click **Next**:
 
     ![]({{ site.baseurl }}/images/new-connection-creds.png "Select a connection type")
 
     Refer to the [Embrace connectors]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html#) for more information on each of the specific attributes you must enter into the dialog box.
 
-6. Choose the tables and select the columns you wish to load in the Select Tables screen.
-7. When all the columns are selected, click  **Create connection**.
+6. Select the tables and columns you want to load.
+7. When all the columns are selected, click **Create connection**.
 
     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
 
 
-Your connection details appear on the Connections list page. You can select a connection to review the selected tables and columns. Review and edit the table and create schema joins as necessary.
+Your connection details appear on the Connections list page. You can view the selected tables and columns of a connection, edit the table, and create schema joins as necessary.
 
 ## Data syncing
-After you’ve set up an external database connection, you can directly perform a live query against the selected tables mapped in the new connection. This process may take sometime to render the search results since ThoughtSpot doesn't cache the data when you connect to external databases.
+After you add a connection, you can directly perform a live query against the selected tables specified in that connection. This process may take a while to initially render the search results because the selected tables in the connection are linked. When they are linked, ThoughtSpot doesn't cache the data when you connect to linked tables in an external database.
 
-To improve the search performance time, Embrace allows you to manage your new data sources using the `Sync` functionality. Using this procedure, you can locally store the selected tables or columns in ThoughtSpot that you wish to use in your search query. You can also schedule some useful conditions when you sync tables from the underlying database periodically. For example, add sync mode to define the data to be replaced or appended with every sync interval.
+To improve the search performance, you can use Embrace's `Sync` functionality. Using this procedure, you can locally store the selected tables or columns in ThoughtSpot that you wish to use in your search query. You can also schedule some useful conditions when you sync tables from the underlying database periodically. For example, add sync mode to define the data to be replaced or appended with every sync interval.
 
 To sync a data table:
 1. Log in to ThoughtSpot from a browser.
