@@ -15,52 +15,57 @@ Now that you've enabled ThoughtSpot Embrace, you can add a connection to a suppo
 
 To add a new connection:
 
-1. Sign in to ThoughtSpot from a browser.
+1. Click **Data** in the top navigation bar.
 
-2. Click **Data** in the top navigation bar.
-
-3. Click the **Connections** tab at the top of the page, and select **+ Add connection** at the upper right-hand side of the panel.
+2. Click the **Connections** tab at the top of the page, and click **+ Add Connection** at the upper-right-hand side of the page.
 
      ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
 
-4. Select the connection type you want to use from the available list and click **Next**.
+3. Select a connection type and click **Next**.
 
      ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type")
 
-5. Enter the connection credentials for your external data source and click **Next**:
+4. Enter the connection credentials for your external data source and click **Next**:
 
     ![]({{ site.baseurl }}/images/new-connection-creds.png "Select a connection type")
 
     Refer to the [Embrace connectors]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html#) for more information on each of the specific attributes you must enter into the dialog box.
 
-6. Select the tables and columns you want to load.
-7. When all the columns are selected, click **Create connection**.
+5. Select the tables and columns you want to load, and then click **Create Connection**.
 
     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
 
+   Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
-Your connection details appear on the Connections list page. You can view the selected tables and columns of a connection, edit the table, and create schema joins as necessary.
+The connection you just created is a link to the external data source. If there are any joins in the external data source, those are imported into ThoughtSpot.
 
-## Data syncing
-After you add a connection, you can directly perform a live query against the selected tables specified in that connection. This process may take a while to initially render the search results because the selected tables in the connection are linked. When they are linked, ThoughtSpot doesn't cache the data when you connect to linked tables in an external database.
+You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database. To copy your external tables or columns into ThoughtSpot, you must sync them.
 
-To improve the search performance, you can use Embrace's `Sync` functionality. Using this procedure, you can locally store the selected tables or columns in ThoughtSpot that you wish to use in your search query. You can also schedule some useful conditions when you sync tables from the underlying database periodically. For example, add sync mode to define the data to be replaced or appended with every sync interval.
+Not all of ThoughtSpot's features are supported with linked tables and columns. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-available-in-embrace-modes).
 
-To sync a data table:
-1. Log in to ThoughtSpot from a browser.
-2. Click Data on the top navigation bar.
-3. Click the Connections tab at the top of the page.
-4. Select the connection type of interest on Connections list page.
+## Sync tables and columns
+
+To improve search performance, you can use Embrace's **Sync** feature. Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. In addition, you can use all of ThoughtSpot's features, like SpotIQ, to gain insights into your data. You can sync manually at any time, and also schedule your sync. For example, add sync mode to define the data to be replaced or appended with every sync interval.
+
+### Sync now
+
+To sync now:
+1. Click **Data** in the top navigation bar.
+2. Click the **Connections** tab at the top of the page.
+3. Select your connection name.
 
     ![]({{ site.baseurl }}/images/select-connection.png "Select a connection")
 
-5. Find the table you want to sync in the list, and check the box next to its name.
-6. Click the **Sync now** icon.
+4. Check the box next to the table or columns that you want to sync, and click **Sync Now**.
 
     ![]({{ site.baseurl }}/images/sync.png "Table sync")
 
 Notice the sync status in the table list once the sync job completes the syncing request.
 
+### Schedule sync
+
+To schedule sync:
+1.
 
 
 ## Related information
