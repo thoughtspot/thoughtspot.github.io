@@ -15,7 +15,7 @@ You can modify a connection in the following ways:
 
 ## Edit a connection
 
-Edit a connection to add or remove tables and columns.
+You can edit a connection to add or remove tables and columns.
 
 To edit a connection:
 
