@@ -1161,9 +1161,6 @@ entries:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-    - title: Sign-in credentials for administration
-      url: /data-integrate/introduction/logins.html
-      output: web,digBk
     - levelTwoTitle: Embrace
       output: web,digBk
       levelTwoItems:
