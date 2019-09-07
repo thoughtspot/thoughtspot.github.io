@@ -1,24 +1,24 @@
 ---
-title: [Introduction to Embrace]
+title: [Embrace overview]
 keywords: live query, external database, connectors
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot Embrace is in Beta, and works only with Snowflake databases. To enable ThoughtSpot Embrace, contact your ThoughtSpot representative.
+ThoughtSpot Embrace is in beta, and only works with Snowflake databases at this time. To enable Embrace, contact your ThoughtSpot representative.
 
-Source data exists in data warehouses in many organizations.These warehouses have strict security rules, and these companies prefer to keep the data in one place. In these circumstances, Embrace leverages all ThoughtSpot analytical capabilities directly on the external database, without moving the data. And it makes it easy to bring this data into ThoughtSpot at any time.
+Source data exists in data warehouses for many organizations. These warehouses have strict security rules, and these companies prefer to keep the data in one place. Embrace allows you to use ThoughtSpot's analytical capabilities directly on the external database, without moving the data. It also makes it easy to bring the data into ThoughtSpot at any time.
 
 ## About Embrace
+
+Embrace allows you to directly query an external database, and do your data analysis and visualizations in ThoughtSpot. Embrace has an intuitive and flexible process for synchronizing the external data into ThoughtSpot.
 
 Embrace has two primary operating modes:
 - **Linked**: queries from ThoughtSpot run directly on the external Snowflake database.
 - **Synced**: data transfers from Snowflake into ThoughtSpot, and is periodically refreshed.
 
-ThoughtSpot Embrace allows you to directly query an external database and do all your data analysis and create visualizations in ThoughtSpot. Embrace has an intuitive process for synchronizing the external data into ThoughtSpot on a predefined schedule.
-
-After choosing a data connection, you can choose from the database - a list of available tables to setup your live query. Then select only the columns of interest from each table. Primary key and foreign key relationships will also be imported, but only when the primary key table is imported at the same time as the foreign key table. It’s easy to apply transformations and filters to the data, too. So you only connect the data you want to explore.
+After creating a connection to a Snowflake database, you choose tables to set up your live query, and then select only the columns you want to explore from each table. Primary key and foreign key relationships are imported when the primary key table is imported at the same time as the foreign key table. It’s easy to apply transformations and filters to the data, too.
 
 ## Key benefits
 - Quick setup and faster deployments of ThoughtSpot by connecting directly to a Snowflake.
