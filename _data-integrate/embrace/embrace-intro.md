@@ -6,13 +6,13 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot Embrace is in beta, and only works with Snowflake databases at this time. To enable Embrace, contact your ThoughtSpot representative.
+If your company stores source data externally in data warehouses, you can use Embrace to directly query that data and use ThoughtSpot's analytical capabilities, without moving the data into ThoughtSpot. If you decide later you want to bring the data into ThoughtSpot, you can also do that with Embrace.
 
-Source data exists in data warehouses for many organizations. These warehouses have strict security rules, and these companies prefer to keep the data in one place. Embrace allows you to use ThoughtSpot's analytical capabilities directly on the external database, without moving the data. It also makes it easy to bring the data into ThoughtSpot at any time.
+{% include note.html content="ThoughtSpot Embrace is in beta, and only works with Snowflake databases at this time. To enable Embrace, contact ThoughtSpot support." %}
 
 ## About Embrace
 
-Embrace allows you to directly query an external database, and do your data analysis and visualizations in ThoughtSpot. Embrace has an intuitive and flexible process for synchronizing the external data into ThoughtSpot.
+Embrace allows you to directly query an external database, and do your data analysis and visualizations in ThoughtSpot. With Embrace, you can also copy the external data into ThoughtSpot using sync.
 
 Embrace has two primary operating modes:
 - **Linked**: queries from ThoughtSpot run directly on the external Snowflake database.
