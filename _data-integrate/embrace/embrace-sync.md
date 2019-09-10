@@ -69,11 +69,7 @@ To update a schedule:
 
 To remove a schedule:
 
-- Click More Info (insert icon here) and select 
-
-
-
-
+- Click More Info (insert icon here) and select **Remove Schedule**.
 
 
 ## Related information
