@@ -15,7 +15,9 @@ You can modify a connection in the following ways:
 
 ## Edit a connection
 
-You can edit a connection to add or remove tables and columns.
+You can edit a connection to add tables and columns.
+
+{% include note.html content="You cannot remove a table from a connection, by editing it. You must delete it from connection details page." %}
 
 To edit a connection:
 
@@ -29,7 +31,7 @@ To edit a connection:
 
    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
 
-5. Expand the database table drop-down menu, and select the tables and columns you want to add or remove.
+5. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
    ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
