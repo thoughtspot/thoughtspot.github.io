@@ -17,8 +17,6 @@ You can modify a connection in the following ways:
 
 You can edit a connection to add tables and columns.
 
-{% include note.html content="You cannot remove a table from a connection, by editing it. You must delete it from connection details page." %}
-
 To edit a connection:
 
 1. Click **Data** in the top navigation bar.
@@ -36,6 +34,8 @@ To edit a connection:
    ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
 6. Click **Update** to reflect the connection details.
+
+To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
 
 ## Remap a connection
 
@@ -78,11 +78,11 @@ To delete a table:
 
     ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
 
-    {% include note.html content="If you are attempting to delete a table with dependent objects, the operation will be blocked. You will see a warning, with a list of dependent objects with links." %}
+    {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
 
-6. Click the link for an object to modify or delete it.
+6. Click the link for each object to modify or delete it.
 
-   When all its dependencies are removed, you will be able to delete the table.
+   When all dependencies are removed, you can delete the table.
 
    ![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning")
 

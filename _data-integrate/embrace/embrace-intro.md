@@ -50,10 +50,10 @@ When you create your connection to a Snowflake database, by default, it is a **L
 ## Next steps
 
 -   **[Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)**  
-Set up and enable the connection between ThoughtSpot and tables in a Snowflake database.
--   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
-Edit, remap or delete a connection to tables in a Snowflake database.
+Create the connection between ThoughtSpot and tables in a Snowflake database.
 - **[Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html)**
 Set your connection to copy tables from Snowflake into ThoughtSpot.
+-   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
+Edit, remap or delete a connection to tables in a Snowflake database.
 - **[Know database connector details]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Source cloud data connectors, and their connection credentials, supported by Embrace.
