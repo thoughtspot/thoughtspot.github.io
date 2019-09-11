@@ -53,7 +53,7 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
-5. Click **Download** to download the source mapping file
+5. Click **Download** to download the source mapping file.
 
     ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
 
@@ -61,7 +61,7 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
-7. Finally upload the mapping file to reflect the new mapping in the existing connection.
+7. Finally, upload the mapping file to reflect the new mapping in the existing connection.
 
 ## Delete a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.

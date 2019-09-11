@@ -15,9 +15,11 @@ Not all of ThoughtSpot's features are supported with linked tables and columns. 
 
 To improve search performance, you can use Embrace's **Sync** feature. Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. In addition, you can use all of ThoughtSpot's features, like SpotIQ, to gain insights into your data. You can sync manually at any time, and also schedule your sync.
 
-### Sync now
+### Sync a table now
 
-To sync now:
+You can manually sync one or more tables in a connection.
+
+To sync a table now:
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
@@ -26,27 +28,29 @@ To sync now:
 
     ![]({{ site.baseurl }}/images/select-connection.png "Select a connection")
 
-4. Check the box next to the table that you want to sync, and click **Sync Now**.
+4. Check the box next one or more tables that you want to sync, and click **Sync Now**.
 
     ![]({{ site.baseurl }}/images/sync.png "Table sync")
 
 The status of the sync appears in the Last Synced column and refreshes to indicate when the sync was completed.
 
-### Schedule sync
+### Schedule sync of a table
 
 To schedule sync:
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
 
-3. Click the name of the table you want to sync.
+3. Click the name of your connection that contains the table you want to sync.
+
+4. Click the name of the table you want to sync.
 
 4. Click the **Sync** tab.
 
 5. Click **Schedule**.
 
-6. In the *Sync table* window, set the following items:  
-    A. For Repeats, select how often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
+6. In the *Sync table schedule* window, set the following items:  
+    A. For *Repeats*, select how often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
     B. Select a sync mode:
     - **Append** adds to the current data.
     - **Overwrite** replaces the current data.  
@@ -57,19 +61,19 @@ To schedule sync:
 9. Click **Schedule**
 
    The schedule is saved and runs automatically at the selected time.  
-   Every time the schedule is run, it is listed History list.
+   Every time the schedule is run, it is listed in the History list.
 
 #### Update or remove a schedule
 
 To update a schedule:
 
-1. Click **Schedule**.
+1. From the sync tab of the table you want to update, click **Schedule**.
 
 2. In the *Sync table* window, make your changes and click **Update Schedule**.
 
 To remove a schedule:
 
-- Click More Info (insert icon here) and select **Remove Schedule**.
+- From the sync tab of the table you want to update, click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remove Schedule**.
 
 
 ## Related information
