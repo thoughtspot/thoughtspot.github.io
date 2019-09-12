@@ -328,7 +328,7 @@ entries:
         - title: Reset a pinboard visualization
           url: /end-user/pinboards/reset-a-visualization.html
           output: web,ugBk
-        - title: Present the pinboard as slideshow
+        - title: Present a pinboard as a slideshow
           url: /end-user/pinboards/start-a-slideshow.html
           output: web,ugBk
         - title: Download as PDF
