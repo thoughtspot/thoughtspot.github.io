@@ -11,7 +11,7 @@ If your company stores source data externally in data warehouses, you can use Th
 {% include note.html content="ThoughtSpot Embrace is in beta, and only works with Snowflake databases at this time. To enable Embrace, contact ThoughtSpot support." %}
 
 ## How it works
-You create a connection to a Snowflake database, choosing the columns from each table that you want to explore in your live query. Primary key and foreign key relationships are imported along with the primary key and foreign key tables. If there are any joins in the tables of your connection, they are also imported. After your connection is complete, it becomes a data source in ThoughtSpot that allows you to query the Snowflake database directly. It’s easy to apply transformations and filter the data also.
+You create a connection to a Snowflake database, choosing the columns from each table that you want to explore in your live query. Primary key and foreign key relationships are imported along with the primary and foreign key tables. If there are any joins in the tables of your connection, they are also imported. After your connection is complete, it becomes a **linked** data source in ThoughtSpot that allows you to query the Snowflake database directly. It’s easy to apply transformations and filter the data also.
 
 ## Key benefits
 - Set up and deploy ThoughtSpot faster by connecting directly to a Snowflake database.

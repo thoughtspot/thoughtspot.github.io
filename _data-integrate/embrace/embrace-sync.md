@@ -7,19 +7,17 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you create a connection, the selected tables and columns in your connection are linked to the Snowflake database. As a result, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the Snowflake database directly, which is slower than querying data that is stored in ThoughtSpot's database. To copy tables from the Snowflake database into ThoughtSpot, you must sync them.
+When you create a connection to Snowflake, the selected tables and columns in your connection are linked to the Snowflake database. With linked data, ThoughtSpot queries the Snowflake database directly, which is convenient because you don't have to import the data into ThoughtSpot, but search is slower and you don't have access to all of ThoughtSpot's features. With Sync, you get the search performance and all the features available of ThoughtSpot.
 
-Not all of ThoughtSpot's features are supported with linked tables and columns. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-available-in-embrace-modes).
+## How sync works
 
-## Sync tables and columns
+Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. You can sync manually at any time, and also schedule your sync.
 
-To improve search performance, you can use Embrace's **Sync** feature. Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. In addition, you can use all of ThoughtSpot's features, like SpotIQ, to gain insights into your data. You can sync manually at any time, and also schedule your sync.
-
-### Sync a table now
+### Sync manually
 
 You can manually sync one or more tables in a connection.
 
-To sync a table now:
+To sync manually:
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
@@ -34,7 +32,7 @@ To sync a table now:
 
 The status of the sync appears in the Last Synced column and refreshes to indicate when the sync was completed.
 
-### Schedule sync of a table
+### Schedule sync
 
 To schedule sync:
 1. Click **Data** in the top navigation bar.
