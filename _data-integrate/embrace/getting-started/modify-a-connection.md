@@ -17,8 +17,6 @@ You can modify a connection in the following ways:
 
 You can edit a connection to add tables and columns.
 
-{% include note.html content="You cannot remove a table from a connection, by editing it. You must delete it from connection details page." %}
-
 To edit a connection:
 
 1. Click **Data** in the top navigation bar.
@@ -37,6 +35,8 @@ To edit a connection:
 
 6. Click **Update** to reflect the connection details.
 
+To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
+
 ## Remap a connection
 
 Modify the connection parameters by editing the source mapping<code> yaml </code>file that was created when you adding the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
@@ -53,7 +53,7 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
-5. Click **Download** to download the source mapping file
+5. Click **Download** to download the source mapping file.
 
     ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
 
@@ -61,7 +61,7 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
-7. Finally upload the mapping file to reflect the new mapping in the existing connection.
+7. Finally, upload the mapping file to reflect the new mapping in the existing connection.
 
 ## Delete a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
@@ -78,11 +78,11 @@ To delete a table:
 
     ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
 
-    {% include note.html content="If you are attempting to delete a table with dependent objects, the operation will be blocked. You will see a warning, with a list of dependent objects with links." %}
+    {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
 
-6. Click the link for an object to modify or delete it.
+6. Click the link for each object to modify or delete it.
 
-   When all its dependencies are removed, you will be able to delete the table.
+   When all dependencies are removed, you can delete the table.
 
    ![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning")
 

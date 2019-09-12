@@ -11,7 +11,7 @@ If your company stores source data externally in data warehouses, you can use Th
 {% include note.html content="ThoughtSpot Embrace is in beta, and only works with Snowflake databases at this time. To enable Embrace, contact ThoughtSpot support." %}
 
 ## How it works
-You create a connection to a Snowflake database, choosing the columns from each table that you want to explore in your live query. Primary key and foreign key relationships are imported along with the primary key and foreign key tables. If there are any joins in the tables of your connection, they are also imported. After your connection is complete, it becomes a data source in ThoughtSpot that allows you to query the Snowflake database directly. It’s easy to apply transformations and filter the data also.
+You create a connection to a Snowflake database, choosing the columns from each table that you want to explore in your live query. Primary key and foreign key relationships are imported along with the primary and foreign key tables. If there are any joins in the tables of your connection, they are also imported. After your connection is complete, it becomes a **linked** data source in ThoughtSpot that allows you to query the Snowflake database directly. It’s easy to apply transformations and filter the data also.
 
 ## Key benefits
 - Set up and deploy ThoughtSpot faster by connecting directly to a Snowflake database.
@@ -50,10 +50,10 @@ When you create your connection to a Snowflake database, by default, it is a **L
 ## Next steps
 
 -   **[Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)**  
-Set up and enable the connection between ThoughtSpot and tables in a Snowflake database.
--   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
-Edit, remap or delete a connection to tables in a Snowflake database.
+Create the connection between ThoughtSpot and tables in a Snowflake database.
 - **[Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html)**
 Set your connection to copy tables from Snowflake into ThoughtSpot.
+-   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
+Edit, remap or delete a connection to tables in a Snowflake database.
 - **[Know database connector details]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Source cloud data connectors, and their connection credentials, supported by Embrace.

@@ -7,17 +7,17 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you create a connection, the selected tables and columns in your connection are linked to the Snowflake database. As a result, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the Snowflake database directly, which is slower than querying data that is stored in ThoughtSpot's database. To copy tables from the Snowflake database into ThoughtSpot, you must sync them.
+When you create a connection to Snowflake, the selected tables and columns in your connection are linked to the Snowflake database. With linked data, ThoughtSpot queries the Snowflake database directly, which is convenient because you don't have to import the data into ThoughtSpot, but search is slower and you don't have access to all of ThoughtSpot's features. With Sync, you get the search performance and all the features available of ThoughtSpot.
 
-Not all of ThoughtSpot's features are supported with linked tables and columns. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-available-in-embrace-modes).
+## How sync works
 
-## Sync tables and columns
+Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. You can sync manually at any time, and also schedule your sync.
 
-To improve search performance, you can use Embrace's **Sync** feature. Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. In addition, you can use all of ThoughtSpot's features, like SpotIQ, to gain insights into your data. You can sync manually at any time, and also schedule your sync.
+### Sync manually
 
-### Sync now
+You can manually sync one or more tables in a connection.
 
-To sync now:
+To sync manually:
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
@@ -26,7 +26,7 @@ To sync now:
 
     ![]({{ site.baseurl }}/images/select-connection.png "Select a connection")
 
-4. Check the box next to the table that you want to sync, and click **Sync Now**.
+4. Check the box next one or more tables that you want to sync, and click **Sync Now**.
 
     ![]({{ site.baseurl }}/images/sync.png "Table sync")
 
@@ -39,14 +39,16 @@ To schedule sync:
 
 2. Click the **Connections** tab at the top of the page.
 
-3. Click the name of the table you want to sync.
+3. Click the name of your connection that contains the table you want to sync.
+
+4. Click the name of the table you want to sync.
 
 4. Click the **Sync** tab.
 
 5. Click **Schedule**.
 
-6. In the *Sync table* window, set the following items:  
-    A. For Repeats, select how often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
+6. In the *Sync table schedule* window, set the following items:  
+    A. For *Repeats*, select how often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
     B. Select a sync mode:
     - **Append** adds to the current data.
     - **Overwrite** replaces the current data.  
@@ -57,19 +59,19 @@ To schedule sync:
 9. Click **Schedule**
 
    The schedule is saved and runs automatically at the selected time.  
-   Every time the schedule is run, it is listed History list.
+   Every time the schedule is run, it is listed in the History list.
 
 #### Update or remove a schedule
 
 To update a schedule:
 
-1. Click **Schedule**.
+1. From the sync tab of the table you want to update, click **Schedule**.
 
 2. In the *Sync table* window, make your changes and click **Update Schedule**.
 
 To remove a schedule:
 
-- Click More Info (insert icon here) and select **Remove Schedule**.
+- From the sync tab of the table you want to update, click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remove Schedule**.
 
 
 ## Related information
