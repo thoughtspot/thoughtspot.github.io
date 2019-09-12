@@ -35,8 +35,7 @@ First, upgrade to version 5.1.x or version 5.2.x, and then to the 5.3 release.
 ## 5.3 New Features and Functionality
 
 ### Onboarding
-
-In this release, we introduce user Onboarding, which enables anyone to master ThoughtSpot in a very short time.
+In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
 
 - To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
 
@@ -44,10 +43,9 @@ In this release, we introduce user Onboarding, which enables anyone to master Th
 
 - When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
 
-- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
 
 - See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
-
 ### Management console
 
 **The Management Console is now available in beta.** Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
@@ -60,7 +58,7 @@ Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or 
 
 To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
 
-Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
+Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/ldap-config-ad.html).
 
 ### Amazon S3 persistent storage option
 
@@ -68,7 +66,7 @@ You can now reduce the cost of an AWS deployment by using S3 for storage of majo
 
 ### Embrace
 
-With ThoughtSpot Embrace, you can now directly perform live queries into an external Snowflake database, without having to cache the data in ThoughtSpot. Embrace reads directly from the database, allowing you to analyze the data and create visualizations in ThoughtSpot. It automatically synchronizes the data on a predefined schedule. This allows you to deploy ThoughtSpot faster by eliminating the need to move all the data into ThoughtSpot. For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+With ThoughtSpot Embrace, you can now directly perform live queries into an external Snowflake database, without having to cache the data in ThoughtSpot. Embrace reads directly from the database, allowing you to analyze the data and create visualizations in ThoughtSpot. It automatically synchronizes the data on a predefined schedule. This allows you to deploy ThoughtSpot faster by eliminating the need to move all the data into ThoughtSpot. For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Pinboard export in PDF format
 
@@ -80,7 +78,7 @@ We enhanced the presentation experience to show ThoughtSpot pinboards like a typ
 
 ### New candlestick chart type
 
-We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick chart]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
+We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
 
 ### SpotIQ comparative analysis
 
@@ -88,7 +86,7 @@ SpotIQ Analysis now supports more complex measurements:
 * _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
 * _Unique count_  uses a 'versus' analysis to highlight absolute change grouped by different drill attributes  
 
-See [SpotIQ Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-analysis.html).
+See [Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-analysis.html).
 
 ### SpotIQ simplified feedback
 
