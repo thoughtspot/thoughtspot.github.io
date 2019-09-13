@@ -45,7 +45,8 @@ In this release, we introduce user Onboarding, which communicates the value of T
 
 - To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
 
-- See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
+- See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).  
+
 ### Management console
 
 **The Management Console is now available in beta.** Using the Management Console that is part of the ThoughtSpot Admin page, the administrators can manage, configure, monitor, and upgrade clusters. To enable this feature, contact ThoughtSpot Support. For more information, see [About Management Console]({{ site.baseurl }}/admin/setup/intro.html#about-management-console).
