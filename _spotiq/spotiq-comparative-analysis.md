@@ -13,7 +13,7 @@ With SpotIQ competitive analysis, you can compare two data points for simple or 
   * _Count_
   * _Sum over sum_, which generate a pinboard that has 'what-if' percentage insights
   * _Average_, which generate a pinboard that has 'what-if' percentage insights
-  * Other functions, such as _unique count_ , which use a 'versus' analysis to show the absolute change grouped by different drill attributes
+  * Other functions which use a 'versus' analysis to show the absolute change grouped by different drill attributes
 
 ## Basic Comparative Analysis in SpotIQ ##
 
