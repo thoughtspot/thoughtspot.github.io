@@ -21,7 +21,7 @@ fixed issues from previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2.2 release
+If you are running one of the following versions, you can upgrade to the 5.2.3 release
 directly:
 
 * 5.0.x to 5.2.3
@@ -30,7 +30,7 @@ directly:
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2.2 release.
+First, upgrade to one of the above versions, and then to the 5.2.3 release.
 
 ## Mobile App
 
