@@ -39,7 +39,7 @@ Version 1.1 of the ThoughtSpot mobile app is now available! For more information
 {: id="523-fixed"}
 ## 5.2.3 Fixed Issues
 
-An issue where LDAP sync was not syncing users after upgrade to release 5.2.2 is now fixed.
+An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.
 
 A problem where certain types of joins do not work when row-level security is used is now fixed.
 
