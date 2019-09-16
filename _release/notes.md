@@ -41,6 +41,16 @@ Version 1.1 of the ThoughtSpot mobile app is now available! For more information
 
 An issue where LDAP sync was not syncing users after upgrade to release 5.2.2 is now fixed.
 
+A problem where certain types of joins do not work when row-level security is used is now fixed.
+
+An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+
+A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+
+An issue where syncing users using the public API does not work is now fixed.
+
+A problem where Canadian postal codes do not appear on maps is now fixed.
+
 {: id="522-fixed"}
 ## 5.2.2 Fixed Issues
 
