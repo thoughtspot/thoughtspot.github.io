@@ -9,9 +9,10 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.2.2 is now available. These release notes include information about new features,
+ThoughtSpot version 5.2.3 is now available. These release notes include information about new features,
 fixed issues from previous releases, and any known issues.
 
+* [5.2.3 Fixed Issues](#523-fixed)
 * [5.2.2 Fixed Issues](#522-fixed)
 * [5.2.1 Fixed Issues](#521-fixed)
 * [5.2 New Features](#52-new)
@@ -20,20 +21,35 @@ fixed issues from previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2.2 release
+If you are running one of the following versions, you can upgrade to the 5.2.3 release
 directly:
 
-* 5.0.x to 5.2.2
-* 5.1.x to 5.2.2
+* 5.0.x to 5.2.3
+* 5.1.x to 5.2.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2.2 release.
+First, upgrade to one of the above versions, and then to the 5.2.3 release.
 
 ## Mobile App
 
-Version 1.1 of the ThoughtSpot mobile app is now available! For more information, see [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html). 
+Version 1.1 of the ThoughtSpot mobile app is now available! For more information, see [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html).
+
+{: id="523-fixed"}
+## 5.2.3 Fixed Issues
+
+An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.
+
+A problem where certain types of joins do not work when row-level security is used is now fixed.
+
+An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+
+A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+
+An issue where syncing users using the public API does not work is now fixed.
+
+A problem where Canadian postal codes do not appear on maps is now fixed.
 
 {: id="522-fixed"}
 ## 5.2.2 Fixed Issues
