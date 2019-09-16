@@ -2,7 +2,7 @@
 title: ["5.3 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: September 3, 2019
+last_updated: July 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -36,8 +36,7 @@ First, upgrade to version 5.1.x or version 5.2.x, and then to the 5.3 release.
 
 ### Onboarding
 
-In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined earning experience with default Pinboards, and enables anyone to master ThoughtSpot in a very short time.
-
+In this release, we introduce user Onboarding, which enables anyone to master ThoughtSpot in a very short time.
 
 - To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
 
@@ -69,17 +68,7 @@ You can now reduce the cost of an AWS deployment by using S3 for storage of majo
 
 ### Embrace
 
-With ThoughtSpot Embrace, you can perform live queries against an external data repository without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot.
-
-There are two modes for using Embrace:
-- Linked tables provide real-time access to external data.
-- Synced tables enable you to bring select tables into the ThoughtSpot internal database.
-
-You can easily switch between Synced and Linked operation modes.
-
-You can also schedule automatic updates that refresh the synced data
-
-For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+With ThoughtSpot Embrace, you can now directly perform live queries into an external Snowflake database, without having to cache the data in ThoughtSpot. Embrace reads directly from the database, allowing you to analyze the data and create visualizations in ThoughtSpot. It automatically synchronizes the data on a predefined schedule. This allows you to deploy ThoughtSpot faster by eliminating the need to move all the data into ThoughtSpot. For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Pinboard export in PDF format
 
