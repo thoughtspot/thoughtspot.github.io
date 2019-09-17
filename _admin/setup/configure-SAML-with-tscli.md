@@ -7,28 +7,23 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a `tscli` based configurator.
+ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a `tscli` based configurator. It is configured to work using service provided by an Identity Provider (IDP).
 
 ## Before you begin
 
 Before you configure SAML, you need the following information:
 
-- **ThoughtSpot Service address**: Domain or IP of the server where your ThoughtSpot instance is running.
-- **Port**: Port of the server where your ThoughtSpot instance is running.
-- **Unique service name**: The unique key used as IDP to identify the client. It should be in the following format: `urn:thoughtspot:callosum:saml`
-- **Skew Time in Seconds**: Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. It is usually set to 3600 seconds.
-- **Protocol**: An authentication mechanism for ThoughtSpot.
-- **IDP Metadata XML File**: The absolute path to the `idp-meta.xml` file. This is needed so that the configuration persists over upgrades.
-- **Automatically add SAML users** (yes/no): If you choose 'yes', the user that does not exist in ThoughtSpot is automatically created in ThoughtSpot.
-
-  If you choose 'no', SAML users are added in ThoughtSpot upon first login.
-- **Internal authentication**: This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin`, so set it to true if you do not know what it does.
-
-  **_NOTE:_** You can set internal authentication only through `tscli`.
+1. ThoughtSpot Service address: DNS name of the load balancer front-end (For multi-node ThoughtSpot clusters) or of ThoughtSpot server (For single-node ThoughtSpot cluster).
+2. Service port: Service port for ThoughtSpot instance (Typically TCP/443).
+3. Unique service name: The unique key used in ThoughtSpot as an identifier for IDP service. It will be set by ThoughtSpot Support Team. It can be set to anything in the format  `urn:thoughtspot:callosum:saml`.
+4. Skew Time in Seconds: Allowed skew time for authentication (Duration after authentication response is rejected and sent back from the IDP). Usually set to `3600` seconds.
+5. IDP Metadata XML File: This file is provided by the IDP. The absolute path to the `idp-meta.xml` file is needed for one-time configuration.
+6. Decide whether to `Automatically add SAML users to Thoughtspot: (yes/no)`: If you choose 'yes', then new users will be automatically created in ThoughtSpot. If 'no', then SAML users will be added in ThoughtSpot upon first successful SSO login.
+7. Decide whether to `Also use ThoughtSpot internal authentication (y/n)`: If 'y' then ThoughtSpot local/internal users (including local administrative users) will still be authenticated outside the scope of SSO.
 
 ## Configure using Management Console
 
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+{% include note.html content="The Management Console is now available as a `Beta` release." %}
 
 To configure SAML using the admin UI:
 
