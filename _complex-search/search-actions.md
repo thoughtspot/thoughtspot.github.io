@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 There are other search actions you can perform by interacting directly with your answer. These actions can be performed in an ad hoc way, or you can pin your answer to a pinboard to save your configurations.
 
--   **[Change view optins]({{ site.baseurl }}/complex-search/change-the-view.html)**  
+-   **[Change view options]({{ site.baseurl }}/complex-search/change-the-view.html)**  
 You can change the view of your answer so it appears as a table or a chart. Sorting your search allows you to order your answer, making it easier to read.
 You can change the date bucketing on tables and charts for columns with date values.
 -   **[Show underlying data]({{ site.baseurl }}/complex-search/show-underlying-data.html)**  

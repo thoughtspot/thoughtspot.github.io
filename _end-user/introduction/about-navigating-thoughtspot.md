@@ -69,7 +69,7 @@ and other objects you have access to. For example, if you don't have the ability
 to use SpotIQ, that option does not appear.
 
 
-## Search or Search+
+## Search
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
@@ -93,7 +93,7 @@ To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-us
 
 If SpotIQ has been enabled by your administrator, you can go here to view the status of your request after you choose **Auto Analyze** or **Custom Analyze**, and to see the results.
 
-To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/end-user/spotiq/whatisspotiq.html#).
+To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.html#).
 
 ## Data
 

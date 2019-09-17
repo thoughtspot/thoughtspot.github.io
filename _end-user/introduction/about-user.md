@@ -27,14 +27,14 @@ Under **Preferences**, see the **Language** option to set the language.
 
 {% include content/set_locale.md %}
 
-[## Email Notifications##](#email-notifications)
+## Email Notifications ##
 Under **Preferences**, see the **Notifications** option.
 
 Select **Email me sharing notifications** to receive emails whenever another user shares pinboards with you.
 
 ![]({{ site.baseurl }}/images/profile-email-notifications.png "Email sharing notifications")
 
-[## Revisit Onboarding ##](#revisit-onboarding)
+## Revisit Onboarding ##
 
 When you are relatively new to using ThoughtSpot, we help you to become productive faster.
 
@@ -43,7 +43,7 @@ Whenever you need a refresh, navigate to **My Profile*. Under **Preferences**, s
 ![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
 
 
-[## Change Password ##](#change-password)
+## Change Password ##
 
 When you need to change your password, navigate to **My Profile**, and under **Preferences** enter the following information:
   - Current Password
