@@ -14,7 +14,7 @@ You can change the date bucketing on tables and charts for columns with date val
 Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data.
 -   **[Drill down]({{ site.baseurl }}/complex-search/drill-down.html)**  
 Drilling down allows you to see more information about the columns used within your search.
--   **[Exclude and include row values]({{ site.baseurl }}/end-user/search/exclude_and_include_row_values.html)**  
+-   **[Exclude and include row values]({{ site.baseurl }}/complex-search/change-the-view.html#exclude-and-include-row-values)**  
 You can include or exclude row values from your answer.
 -   **[Apply conditional formatting]({{ site.baseurl }}/end-user/search/about-conditional-formatting.html)**  
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values over, under, or within a particular threshold stand out.
