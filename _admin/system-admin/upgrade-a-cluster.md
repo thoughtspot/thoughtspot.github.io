@@ -12,9 +12,7 @@ ThoughtSpot patches the Operating System at the time of upgrades. The exact same
 
 {% include note.html content="ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available." %}
 
-
-## Upgrade using Management Console
-
+<!--## Upgrade using Management Console
 
 {% include note.html content="The Management Console is now available in **beta** for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -46,3 +44,4 @@ To update a cluster:
     - Click **Download** in the Download release section to download a new release tarball from the ThoughtSpot release server. Wait for the download to complete.
     - Click **Pre-Update** in the Pre-update checks section to run a series of health tests. Wait for the checks to complete.
     - Click **Update** in the Update cluster section to update your cluster to the new release version. Always perform this under a scheduled maintenance period.
+-->
