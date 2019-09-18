@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content=",  ">
 <title>Create a manual backup | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/backup-restore/take-backup.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-17T14:34:37-07:00" />
+<meta property="article:published_time" content="2019-09-17T17:52:46-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/backup-restore/take-backup.html"},"url":"https://docs.thoughtspot.com/5.3/admin/backup-restore/take-backup.html","headline":"[“Create a manual backup”]","dateModified":"2019-09-17T14:34:37-07:00","datePublished":"2019-09-17T14:34:37-07:00","description":"ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state, a differently configured appliance, or move the backup from an appliance to a virtual cluster or vice versa. For restoring a cluster from a backup, contact ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/backup-restore/take-backup.html"},"url":"https://docs.thoughtspot.com/5.3/admin/backup-restore/take-backup.html","headline":"[“Create a manual backup”]","dateModified":"2019-09-17T17:52:46-07:00","datePublished":"2019-09-17T17:52:46-07:00","description":"ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state, a differently configured appliance, or move the backup from an appliance to a virtual cluster or vice versa. For restoring a cluster from a backup, contact ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3259,71 +3259,67 @@ $('#toc').on('click', 'a', function() {
 
 <p>You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.</p>
 
-<h2 id="using-management-console">Using Management Console</h2>
+<!--
+## Using Management Console
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
+<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
 
-<p>To manually create a backup using the admin UI:</p>
-<ol>
-  <li>Log into ThoughtSpot from a browser.</li>
-  <li>
-    <p>Click the <strong>Admin</strong> menu on the top navigation bar.</p>
 
-    <p><img src="/5.3/images/admin.png" alt="" /></p>
+To manually create a backup using the admin UI:
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
 
-    <p>This opens the ThoughtSpot Management Console.</p>
-  </li>
-  <li>
-    <p>Click <strong>Settings</strong> menu on the top navigation bar.</p>
+   ![](/5.3/images/admin.png)
 
-    <p><img src="/5.3/images/settings.png" alt="" /></p>
-  </li>
-  <li>
-    <p>In the Settings panel, click <strong>Backup</strong> and then  <strong>Configure</strong> option.</p>
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** menu on the top navigation bar.
 
-    <p><img src="/5.3/images/backup.png" alt="" /></p>
-  </li>
-  <li>
-    <p>Enter the backup configuration details:</p>
+   ![](/5.3/images/settings.png)
 
-    <p><img src="/5.3/images/backup-create.png" alt="" /></p>
+4. In the Settings panel, click **Backup** and then  **Configure** option.
 
-    <table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-<tr>
-<th>Location</th>
-<td>Specify the backup location.</td>
-</tr>
-<tr>
-<th>Mode</th>
-<td>Select the backup mode. Allowed type are <code>full</code>, <code>light weight</code> or <code>dataless</code>.</td>
-</tr>
-<tr>
-<th>NAS Path</th>
-<td>If you choose NAS, select the NAS path or configure a new NAS mount.</td>
-</tr>
-<tr>
-<th>Directory Name</th>
-<td>Specify the location on the disk to place the backup.</td>
-</tr>
-<tr>
-<th>Choose Snapshot</th>
-<td>Select an existing snapshot. If unavailable, create a manual snapshot for the backup.</td>
-</tr>
-</table>
-  </li>
-  <li>Click <strong>Save</strong> to configure the backup.</li>
-</ol>
+   ![](/5.3/images/backup.png)  
 
-<p>You can see the newly created backup file in the backup dashboard.</p>
 
+5. Enter the backup configuration details:
+
+   ![](/5.3/images/backup-create.png)
+
+   <table>
+   <colgroup>
+   <col width="20%" />
+   <col width="80%" />
+   </colgroup>
+   <tr>
+   <th>Field</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <th>Location</th>
+   <td>Specify the backup location.</td>
+   </tr>
+   <tr>
+   <th>Mode</th>
+   <td>Select the backup mode. Allowed type are <code>full</code>, <code>light weight</code> or <code>dataless</code>.</td>
+   </tr>
+   <tr>
+   <th>NAS Path</th>
+   <td>If you choose NAS, select the NAS path or configure a new NAS mount.</td>
+   </tr>
+   <tr>
+   <th>Directory Name</th>
+   <td>Specify the location on the disk to place the backup.</td>
+   </tr>
+   <tr>
+   <th>Choose Snapshot</th>
+   <td>Select an existing snapshot. If unavailable, create a manual snapshot for the backup.</td>
+   </tr>
+   </table>
+
+6. Click **Save** to configure the backup.
+
+You can see the newly created backup file in the backup dashboard.
+-->
 <h2 id="using-tscli">Using tscli</h2>
 <p>To manually create a backup using the tscli:</p>
 <ol>

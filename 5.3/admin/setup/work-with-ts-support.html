@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content="tscliSupportabilitylogs,  tbd">
+<meta name="keywords" content="tscliSupportabilitylogs,  ">
 <title>Configure support services | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/setup/work-with-ts-support.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-17T14:34:37-07:00" />
+<meta property="article:published_time" content="2019-09-17T17:52:46-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/work-with-ts-support.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/work-with-ts-support.html","headline":"[“Configure support services”]","dateModified":"2019-09-17T14:34:37-07:00","datePublished":"2019-09-17T14:34:37-07:00","description":"There are several configurations you can set up in your installation to ensure your company’s support from ThoughtSpot works smoothly.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/work-with-ts-support.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/work-with-ts-support.html","headline":"[“Configure support services”]","dateModified":"2019-09-17T17:52:46-07:00","datePublished":"2019-09-17T17:52:46-07:00","description":"There are several configurations you can set up in your installation to ensure your company’s support from ThoughtSpot works smoothly.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3275,58 +3275,52 @@ company’s security policies allow reverse tunneling.</p>
 <p><strong><em>NOTE:</em></strong> Before you set up a reverse tunnel, open port <code class="highlighter-rouge">22</code>
 in your firewall outgoing rules to whitelist <code class="highlighter-rouge">tunnelrelay.thoughtspot.com</code>.</p>
 
-<h3 id="using-management-console">Using Management Console</h3>
+<!--### Using Management Console
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
+<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
 
-<ol>
-  <li>Log into ThoughtSpot from a browser.</li>
-  <li>
-    <p>Click the <strong>Admin</strong> menu on the top navigation bar.</p>
 
-    <p><img src="/5.3/images/admin.png" alt="" /></p>
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
 
-    <p>This opens the ThoughtSpot Management Console.</p>
-  </li>
-  <li>
-    <p>Click <strong>Settings</strong> menu on the top navigation bar.</p>
+   ![](/5.3/images/admin.png)
 
-    <p><img src="/5.3/images/settings.png" alt="" /></p>
-  </li>
-  <li>
-    <p>In the Settings panel, click <strong>Reverse SSH Tunnel</strong> and then  <strong>Edit</strong> option.</p>
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** menu on the top navigation bar.
 
-    <p><img src="/5.3/images/ssh.png" alt="" /></p>
-  </li>
-  <li>
-    <p>Enter the reverse tunnel details:</p>
+   ![](/5.3/images/settings.png)
 
-    <p><img src="/5.3/images/ssh-configure.png" alt="" /></p>
+4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Edit** option.
 
-    <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>Have you whitelisted tunnelrelay.thoughtspot.com?</th>
-   <td>Ensure that this has been done before you enable the SSH tunnel. Select <b> Yes </b> to continue.</td>
-   </tr>
-   <tr>
-   <th>Reverse SSH Tunnel</th>
-   <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
-   </tr>
-   </table>
-  </li>
-  <li>Click <strong>Save</strong> to configure the SSH tunnel.</li>
-</ol>
+   ![](/5.3/images/ssh.png)  
 
-<p>You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.</p>
+5. Enter the reverse tunnel details:
 
+      ![](/5.3/images/ssh-configure.png)
+
+      <table>
+      <colgroup>
+      <col width="20%" />
+      <col width="80%" />
+      </colgroup>
+      <tr>
+      <th>Field</th>
+      <th>Description</th>
+      </tr>
+      <tr>
+      <th>Have you whitelisted tunnelrelay.thoughtspot.com?</th>
+      <td>Ensure that this has been done before you enable the SSH tunnel. Select <b> Yes </b> to continue.</td>
+      </tr>
+      <tr>
+      <th>Reverse SSH Tunnel</th>
+      <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
+      </tr>
+      </table>
+
+6. Click **Save** to configure the SSH tunnel.
+
+You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
+-->
 <h3 id="using-tscli">Using tscli</h3>
 <p>To enable remote support:</p>
 
