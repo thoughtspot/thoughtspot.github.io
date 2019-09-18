@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/setup/NAS-mount.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-17T14:34:37-07:00" />
+<meta property="article:published_time" content="2019-09-17T17:52:46-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/NAS-mount.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/NAS-mount.html","headline":"[“Configure NAS file system”]","dateModified":"2019-09-17T14:34:37-07:00","datePublished":"2019-09-17T14:34:37-07:00","description":"Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system to support these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you would like.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/NAS-mount.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/NAS-mount.html","headline":"[“Configure NAS file system”]","dateModified":"2019-09-17T17:52:46-07:00","datePublished":"2019-09-17T17:52:46-07:00","description":"Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system to support these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you would like.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3281,71 +3281,67 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.</p>
 
-<h2 id="mount-using-management-console">Mount using Management Console</h2>
+<!--## Mount using Management Console
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
+<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
 
-<p>To mount a NAS file system using the admin UI:</p>
 
-<ol>
-  <li>Log into ThoughtSpot from a browser.</li>
-  <li>
-    <p>Click the <strong>Admin</strong> menu on the top navigation bar.</p>
+To mount a NAS file system using the admin UI:
 
-    <p><img src="/5.3/images/admin.png" alt="" /></p>
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
 
-    <p>This opens the ThoughtSpot Management Console.</p>
-  </li>
-  <li>
-    <p>Click <strong>Settings</strong> menu on the top navigation bar.</p>
+   ![](/5.3/images/admin.png)
 
-    <p><img src="/5.3/images/settings.png" alt="" /></p>
-  </li>
-  <li>
-    <p>In the Settings panel, click <strong>NAS Mount</strong> and then  <strong>Configure</strong> option.</p>
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** menu on the top navigation bar.
 
-    <p><img src="/5.3/images/nas.png" alt="" /></p>
-  </li>
-  <li>
-    <p>Enter the mount point details:</p>
+   ![](/5.3/images/settings.png)
 
-    <p><img src="/5.3/images/nas-mount.png" alt="" /></p>
+4. In the Settings panel, click **NAS Mount** and then  **Configure** option.
 
-    <table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-<tr>
-<th>Mount Type</th>
-<td>Select the mount protocol. Supported types are network file system (NFS) and common internet file system (CIFS).</td>
-</tr>
-<tr>
-<th>Server Address</th>
-<td>Specify the IP of NFS or CIFS directory.</td>
-</tr>
-<tr>
-<th>Path on Server</th>
-<td>Specify the mount path on the server.</td>
-</tr>
-<tr>
-<th>Local Mount Point</th>
-<td>Specify the target mount point as the directory to use.</td>
-</tr>
-<tr>
-<th>Optional Mount Parameters</th>
-<td>Specify other command-line options if you wish to add. The default is <code>noexec</code>.
-</td>
-</tr>
-</table>
-  </li>
-  <li>Click <strong>Save</strong> to mount a NAS file system.</li>
-</ol>
+   ![](/5.3/images/nas.png)  
 
+
+5. Enter the mount point details:
+
+   ![](/5.3/images/nas-mount.png)
+
+   <table>
+   <colgroup>
+   <col width="20%" />
+   <col width="80%" />
+   </colgroup>
+   <tr>
+   <th>Field</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <th>Mount Type</th>
+   <td>Select the mount protocol. Supported types are network file system (NFS) and common internet file system (CIFS).</td>
+   </tr>
+   <tr>
+   <th>Server Address</th>
+   <td>Specify the IP of NFS or CIFS directory.</td>
+   </tr>
+   <tr>
+   <th>Path on Server</th>
+   <td>Specify the mount path on the server.</td>
+   </tr>
+   <tr>
+   <th>Local Mount Point</th>
+   <td>Specify the target mount point as the directory to use.</td>
+   </tr>
+   <tr>
+   <th>Optional Mount Parameters</th>
+   <td>Specify other command-line options if you wish to add. The default is <code>noexec</code>.
+   </td>
+   </tr>
+   </table>
+
+6. Click **Save** to mount a NAS file system.
+
+-->
 <h2 id="mount-using-tscli">Mount using tscli</h2>
 <p>To mount a NAS file system using the tscli:</p>
 <ol>

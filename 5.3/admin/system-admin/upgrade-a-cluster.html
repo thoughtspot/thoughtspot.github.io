@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content=",  ">
 <title>Upgrade a cluster | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/system-admin/upgrade-a-cluster.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-17T14:34:37-07:00" />
+<meta property="article:published_time" content="2019-09-17T17:52:46-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/system-admin/upgrade-a-cluster.html"},"url":"https://docs.thoughtspot.com/5.3/admin/system-admin/upgrade-a-cluster.html","headline":"[“Upgrade a cluster”]","dateModified":"2019-09-17T14:34:37-07:00","datePublished":"2019-09-17T14:34:37-07:00","description":"ThoughtSpot is installed or updated from a release tarball which contains the ThoughtSpot application (binaries and configuration), third-party software, and Operating System image. Third party softwares are licensed software components necessary for operation of the ThoughtSpot application. These include Java, Boost C++ libraries, Google protocol buffers, and so on.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/system-admin/upgrade-a-cluster.html"},"url":"https://docs.thoughtspot.com/5.3/admin/system-admin/upgrade-a-cluster.html","headline":"[“Upgrade a cluster”]","dateModified":"2019-09-17T17:52:46-07:00","datePublished":"2019-09-17T17:52:46-07:00","description":"ThoughtSpot is installed or updated from a release tarball which contains the ThoughtSpot application (binaries and configuration), third-party software, and Operating System image. Third party softwares are licensed software components necessary for operation of the ThoughtSpot application. These include Java, Boost C++ libraries, Google protocol buffers, and so on.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3261,49 +3261,41 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available.</div>
 
-<h2 id="upgrade-using-management-console">Upgrade using Management Console</h2>
+<!--## Upgrade using Management Console
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in <strong>beta</strong> for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
+<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in **beta** for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
 
-<p>ThoughtSpot now comes with a brand new Management Console that allows you to upgrade a cluster. When a new release or a patch is available for update, it appears under the <strong>Update</strong> menu in the Management Console as seen below:
-<img src="/5.3/images/update-available.png" alt="" title="cluster update" /></p>
 
-<p>Upgrading a cluster typically involves three steps:</p>
-<ul>
-  <li><strong>Download release</strong>:This option allows you to download a valid release tarball from an available list.</li>
-  <li><strong>Pre-update checks</strong>: This option enables you to run a series of diagnostic health checks to test the server readiness before the cluster upgrade.</li>
-  <li><strong>Update cluster</strong>: This option allows you to upgrade the cluster once you successfully completed the pre-update checks.</li>
-</ul>
+ThoughtSpot now comes with a brand new Management Console that allows you to upgrade a cluster. When a new release or a patch is available for update, it appears under the **Update** menu in the Management Console as seen below:
+![](/5.3/images/update-available.png "cluster update")
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Ensure that you perform all pre-update checks well in advance to avoid any unforeseen issues before the scheduled maintenance window.</div>
+Upgrading a cluster typically involves three steps:
+- **Download release**:This option allows you to download a valid release tarball from an available list.
+- **Pre-update checks**: This option enables you to run a series of diagnostic health checks to test the server readiness before the cluster upgrade.
+- **Update cluster**: This option allows you to upgrade the cluster once you successfully completed the pre-update checks.
 
-<p>To update a cluster:</p>
-<ol>
-  <li>Log into ThoughtSpot from a browser.</li>
-  <li>
-    <p>Click the <strong>Admin</strong> menu on the top navigation bar.</p>
+<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Ensure that you perform all pre-update checks well in advance to avoid any unforeseen issues before the scheduled maintenance window.</div>
 
-    <p><img src="/5.3/images/admin.png" alt="" /></p>
 
-    <p>This opens the ThoughtSpot Management Console.</p>
-  </li>
-  <li>
-    <p>Click <strong>Update</strong> menu on the top navigation bar.</p>
+To update a cluster:
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
 
-    <p><img src="/5.3/images/update1.png" alt="" /></p>
-  </li>
-  <li>
-    <p>Expand the update you wish to use from the <strong>Available Updates</strong> list. This takes you to three-step process as explained above:</p>
+   ![](/5.3/images/admin.png)
 
-    <p><img src="/5.3/images/update-steps.png" alt="" /></p>
+   This opens the ThoughtSpot Management Console.
+3. Click **Update** menu on the top navigation bar.
 
-    <ul>
-      <li>Click <strong>Download</strong> in the Download release section to download a new release tarball from the ThoughtSpot release server. Wait for the download to complete.</li>
-      <li>Click <strong>Pre-Update</strong> in the Pre-update checks section to run a series of health tests. Wait for the checks to complete.</li>
-      <li>Click <strong>Update</strong> in the Update cluster section to update your cluster to the new release version. Always perform this under a scheduled maintenance period.</li>
-    </ul>
-  </li>
-</ol>
+   ![](/5.3/images/update1.png)
+
+4. Expand the update you wish to use from the **Available Updates** list. This takes you to three-step process as explained above:
+
+    ![](/5.3/images/update-steps.png)
+
+    - Click **Download** in the Download release section to download a new release tarball from the ThoughtSpot release server. Wait for the download to complete.
+    - Click **Pre-Update** in the Pre-update checks section to run a series of health tests. Wait for the checks to complete.
+    - Click **Update** in the Update cluster section to update your cluster to the new release version. Always perform this under a scheduled maintenance period.
+-->
 
   <div class="tags">
     <div style="float:right;">
