@@ -1,6 +1,6 @@
 ---
 title: [Waterfall charts]
-keywords: tbd
+
 last_updated: tbd
 summary: "The waterfall chart is used to show how an initial value is affected by a series of intermediate positive or negative values."
 sidebar: mydoc_sidebar

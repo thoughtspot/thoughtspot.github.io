@@ -1,6 +1,6 @@
 ---
 title: [Schema not found error with ODBC]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 summary: "Correct schema not found errors."

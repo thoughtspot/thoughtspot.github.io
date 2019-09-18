@@ -1,6 +1,6 @@
 ---
 title: [Set up recording for Replay Search]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can use the recording to create training for your users on how to search your own data."
 sidebar: mydoc_sidebar

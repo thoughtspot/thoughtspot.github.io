@@ -1,7 +1,7 @@
 ---
 title: [Add a new data source]
 tags: [limitations]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

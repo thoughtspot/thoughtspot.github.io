@@ -1,6 +1,6 @@
 ---
 title: [Search results contain too many blanks]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

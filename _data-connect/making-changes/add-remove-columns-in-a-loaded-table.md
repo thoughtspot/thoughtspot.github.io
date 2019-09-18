@@ -1,6 +1,6 @@
 ---
 title: ["Add/remove columns in a loaded table"]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

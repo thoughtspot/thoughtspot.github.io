@@ -1,6 +1,6 @@
 ---
 title: [About your user profile]
-keywords: tbd
+
 last_updated: tbd
 summary: "The user icon lets you view your profile or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar

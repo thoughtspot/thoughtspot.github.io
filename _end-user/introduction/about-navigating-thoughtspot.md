@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
@@ -109,7 +109,7 @@ This section is covered in the [ThoughtSpot Administrator Guide]({{ site.baseurl
 
 ## Help Icon
 
-The help icon looks like two people. You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
 
 To learn more about this section, visit [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html#).
 

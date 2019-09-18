@@ -1,7 +1,7 @@
 ---
 title: [Configure SSL]
 tags: [Security_SSL]
-keywords: tbd
+
 last_updated: tbd
 summary: "SSL provides authentication and data security"
 sidebar: mydoc_sidebar
@@ -31,7 +31,7 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
-### Using Management Console
+<!--### Using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -91,7 +91,7 @@ To install and configure the SSL certificate using the admin UI:
 You can now test the SSL setup by log in to the ThoughtSpot application. You should see the application URL begins with `https://`.
 
 
-
+-->
 ### Using tscli
 
 Below are the instructions to install the SSL certificate using the tscli:

@@ -1,6 +1,6 @@
 ---
 title: [View example scenarios]
-keywords: tbd
+
 last_updated: 11/2/2018
 summary: "It's not always easy to know when you need to use a view, but these are some common scenarios."
 sidebar: mydoc_sidebar

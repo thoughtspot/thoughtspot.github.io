@@ -1,6 +1,6 @@
 ---
 title: [Understand formulas in searches]
-keywords: tbd
+
 tags: [formulas]
 last_updated: tbd
 summary: "To provide richer insights, you can add a formula to your search. "

@@ -1,6 +1,6 @@
 ---
 title: [Search suggestions]
-keywords: tbd
+
 last_updated: tbd
 summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar

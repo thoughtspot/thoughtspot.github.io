@@ -1,7 +1,7 @@
 ---
 title: [How to write a SQL script]
 tags: [TQL, bestpractices]
-keywords: tbd
+
 last_updated: tbd
 summary: "Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed."
 sidebar: mydoc_sidebar

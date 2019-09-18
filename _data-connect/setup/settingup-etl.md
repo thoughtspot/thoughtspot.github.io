@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot Data Connect]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

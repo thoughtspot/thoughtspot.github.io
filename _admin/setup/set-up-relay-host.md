@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
 
-## Configure using Management Console
+<!--## Configure using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -71,7 +71,7 @@ To set up a relay host and SMTP rules using the admin UI:
 
 6. Click **Save** to configure the SMTP traffic rules.
 
-
+-->
 ## Configure using tscli
 
 Set up SMTP rules to send critical email notifications to ThoughtSpot Support.

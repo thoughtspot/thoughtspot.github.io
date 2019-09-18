@@ -1,6 +1,6 @@
 ---
 title: [Set up the JDBC driver for Pentaho]
-keywords: tbd
+
 last_updated: tbd
 summary: "JDBC to connect to the ThoughtSpot Simba server from Pentaho."
 sidebar: mydoc_sidebar

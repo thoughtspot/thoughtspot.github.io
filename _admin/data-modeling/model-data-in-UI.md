@@ -1,6 +1,6 @@
 ---
 title: [Change a table's data model]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can adjust the data model for a newly loaded table."
 sidebar: mydoc_sidebar
