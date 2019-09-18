@@ -1,7 +1,7 @@
 ---
 title: [Configure support services]
 tags: [tscli, Supportability,logs]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,6 @@
 ---
 title: [Hide and show values]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can hide and show values on the chart using the legend."
 sidebar: mydoc_sidebar

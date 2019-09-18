@@ -1,7 +1,7 @@
 ---
 title: [TQL reference]
 tags: [TQL,bestpractices]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,6 @@
 ---
 title: [Formula function reference]
-keywords: tbd
+
 tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar

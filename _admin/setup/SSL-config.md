@@ -1,7 +1,7 @@
 ---
 title: [Configure SSL]
 tags: [Security_SSL]
-keywords: tbd
+
 last_updated: tbd
 summary: "SSL provides authentication and data security"
 sidebar: mydoc_sidebar

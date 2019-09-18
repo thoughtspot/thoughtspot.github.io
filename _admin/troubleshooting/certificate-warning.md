@@ -1,6 +1,6 @@
 ---
 title: [Browser untrusted connection error]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

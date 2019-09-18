@@ -1,6 +1,6 @@
 ---
 title: [Set entity categories for SearchIQ ]
-keywords: tbd
+
 last_updated: tbd
 summary: "Entity categories help describe the column content, and assist SearchIQ in interpreting natural language queries."
 sidebar: mydoc_sidebar

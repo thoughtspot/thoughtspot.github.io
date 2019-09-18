@@ -1,6 +1,6 @@
 ---
 title: ["About changing the schema (DDL)"]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

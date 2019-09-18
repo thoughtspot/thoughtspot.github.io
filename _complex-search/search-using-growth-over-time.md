@@ -1,7 +1,7 @@
 ---
 title: [Search using growth over time]
 tags: [keywords,time]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can show growth over time by using the growth of keyword in your search. "
 sidebar: mydoc_sidebar

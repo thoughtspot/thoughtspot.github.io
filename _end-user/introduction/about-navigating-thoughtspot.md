@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."

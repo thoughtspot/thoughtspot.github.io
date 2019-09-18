@@ -1,6 +1,6 @@
 ---
 title: [Set chart and table visualization fonts]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

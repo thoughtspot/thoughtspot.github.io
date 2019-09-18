@@ -1,6 +1,6 @@
 ---
 title: [Send logs when reporting problems]
-keywords: tbd
+
 tags: [logs]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

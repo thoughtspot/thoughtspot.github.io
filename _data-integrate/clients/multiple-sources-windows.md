@@ -1,6 +1,6 @@
 ---
 title: [Configure multiple connections on Windows]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can add multiple ODBC data sources."
 sidebar: mydoc_sidebar

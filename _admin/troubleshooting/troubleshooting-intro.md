@@ -1,6 +1,6 @@
 ---
 title: [About troubleshooting]
-keywords: tbd
+
 tags: [logs]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

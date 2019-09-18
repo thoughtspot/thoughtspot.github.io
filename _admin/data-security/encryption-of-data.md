@@ -1,6 +1,6 @@
 ---
 title: [Encryption of data in transit within a cluster]
-keywords: tbd
+
 tags: tbd
 summary:
 sidebar: mydoc_sidebar

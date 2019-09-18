@@ -1,6 +1,6 @@
 ---
 title: [Apply conditional formatting]
-keywords: tbd
+
 last_updated: tbd
 summary: "Use conditional formatting to make portiosn of your results stand  out"
 sidebar: mydoc_sidebar

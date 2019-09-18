@@ -1,6 +1,6 @@
 ---
 title: [Enable JDBC Logs]
-keywords: tbd
+
 tags: [logs]
 summary: "Configure logging parameter strings."
 sidebar: mydoc_sidebar
