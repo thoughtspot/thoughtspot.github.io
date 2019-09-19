@@ -11,13 +11,14 @@ ThoughtSpot enables you to set up integration with Active Directory using LDAP. 
 
 ## Before you begin
 Before you configure ThoughtSpot for Active Directory, collect the following information:
-- **URL**: This is needed to connect to Active Directory. For example, `ldap://ad.yourdomain.local:389` or `ldap://ad.yourdomain.local:636`
-- **Domain name**: Default domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple domains, you can still designate one of them as the default. **_NOTE:_** Users belonging to a non-default domain will have to explicitly qualify their username when they log in, for example: `username@ad.yourdomain.local`
-- **Search base**: LDAP search base (Scope of searching for user/information within AD).
-- **Automatically add LDAP or AD users in ThoughtSpot? (yes/no)**: If you choose 'yes', new users in ThoughtSpot will be automatically created when authenticated against AD. Note that ThoughtSpot doesn't cache passwords for AD-authenticated users. If you choose 'no', users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP authenticated user manually in ThoughtSpot has to be domain qualified, for example: `username1@ad.yourdomain.local`. **_NOTE:_** In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against AD or against ThoughtSpot's internal authentication.
+- **URL**: Required to connect to Active Directory. For example, `ldap://ad.yourdomain.local:389` or `ldap://ad.yourdomain.local:636`
+- **Domain name**: Default domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple sub-domains, you can still designate one of them as the default. Authentication against multiple domains is not supported. **_NOTE:_** Users who don't belong to the default domain will have to explicitly qualify their username when they log in, for example: `username@ad.yourdomain.local`
+- **Search base**: LDAP search base (Scope of searching user information like email and displayName within AD).
+- **SSL**: If you want to use SSL, you must obtain the SSL certificate from an issuing authority. **_NOTE:_** If AD servers are behind a load balancer, you must procure the SSL certificate to identify ThoughtSpot to the load balancer (The communication after the load balancer is non-secure). ThoughtSpot does not support a scenario where multiple AD servers provide their own SSL certificates.
+- **Automatically add LDAP or AD users in ThoughtSpot? (yes/no)**: If you choose 'yes', new users are automatically created within ThoughtSpot when successfully authenticated against AD. Note that ThoughtSpot doesn't cache passwords for AD-authenticated users. If you choose 'no', users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP authenticated user manually in ThoughtSpot has to be domain qualified, for example: `username1@ad.yourdomain.local`. **_NOTE:_** In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against AD or against ThoughtSpot's internal authentication.
 - **Also use ThoughtSpot internal authentication? (yes/no)**: If you choose 'yes', ThoughtSpot will first attempt to authenticate the user against AD. If that attempt fails, it will then attempt to authenticate the user as an internal/local ThoughtSpot user. If either of these succeed, then the user is successfully logged in. This is useful in scenarios where some users are not in AD and are created only in ThoughtSpot.
 
-## Configure using Management Console
+<!-- ## Configure using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or newer." %}
 
@@ -74,8 +75,8 @@ To configure authentication via Active Directory:
    </tr>
    </table>
 
-6. Click **Save** to configure the active directory configuration.
-
+6. Click **Save** to configure the active directory configuration. 
+-->
 ## Configure using tscli
 
 You do not have to create a user called `tsadmin` on your LDAP server. Internal authentication can be used for `tsadmin`. To configure AD based authentication:
