@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 ## Setting up High Availability (HA) for your ThoughtSpot cluster using AWS Elastic File System (EFS)
 
-To set up HA for your ThoughSpot cluster, do the following:
+To set up HA for your ThoughtSpot cluster, do the following:
 
 1. Create an EFS File System that spanns across different availability zones, and across different subnets.
 
