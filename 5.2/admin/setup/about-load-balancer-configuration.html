@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-16T16:31:15-07:00" />
+<meta property="article:published_time" content="2019-09-19T12:21:51-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html","headline":"[“Configure load balancing and proxies”]","dateModified":"2019-09-16T16:31:15-07:00","datePublished":"2019-09-16T16:31:15-07:00","description":"Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html"},"url":"https://docs.thoughtspot.com/5.2/admin/setup/about-load-balancer-configuration.html","headline":"[“Configure load balancing and proxies”]","dateModified":"2019-09-19T12:21:51-07:00","datePublished":"2019-09-19T12:21:51-07:00","description":"Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3162,48 +3162,40 @@ $('#toc').on('click', 'a', function() {
 
   <p>Here are some of the best practices and guidelines for a typical implementation with ThoughtSpot. Your experience may differ depending on your environment and preference.</p>
 
-<h2 id="load-balance-across-thoughtspot-nodes">Load balance across ThoughtSpot nodes</h2>
+<h2 id="load-balancing-across-thoughtspot-nodes">Load balancing across ThoughtSpot nodes</h2>
 
 <p>The following shows a network architectural diagram which includes a load balancer for ThoughtSpot nodes.</p>
 
 <p><img src="/5.2/images/network_architectural_diagram.png" alt="" /></p>
 
-<p>The load balancer is an appliance in your infrastructure that routes traffic automatically to nodes to provide failover. You can also place a load balancer or proxy in front of the ThoughtSpot appliance if you’d like external network users to access the system.</p>
+<p>The load balancer appliance/implementation manages traffic to back-end cluster nodes to provide failover and high-availability capabilities for a multi-node ThoughtSpot cluster.</p>
 
-<p>The best way to load balance across all ThoughtSpot nodes in a cluster is to map one domain name (FQDN) to all the IPs in the cluster in a round robin fashion.</p>
+<p>Deploying a load balancer between users and a ThoughtSpot cluster is highly recommended. 
+You must set up a load balancer before you can set up CORS, SAML or single sign-on for a multi-node ThoughtSpot cluster.</p>
 
-<p>For example, if you want to use a DNS server based load balancing, then you can define multiple “A” resource records (RR) for the same name.</p>
+<h2 id="typical-configuration-for-a-load-balancer">Typical configuration for a load balancer</h2>
 
-<p>Below is an example of how you could set that up</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thoughtspot.customer.com IN A 69.9.64.11
-thoughtspot.customer.com IN A 69.9.64.12
-thoughtspot.customer.com IN A 69.9.64.13
-thoughtspot.customer.com IN A 69.9.64.14
-</code></pre></div></div>
-
-<p>The example indicates that IP addresses for the domain thoughtspot.customer.com are 69.9.64.11, 69.9.64.12, 69.9.64.13, and 69.9.64.14.</p>
-
-<h2 id="session-affinity">Session Affinity</h2>
-
-<p>Session Affinity refers to directing requests to the same application server for the time it takes to complete a task.</p>
-
-<p>In order for session affinity to work on ThoughtSpot, HTTPS (an SSL certificate) has to be installed on the load balancer level. If it is installed outside of the load balancer, session affinity may not occur and the ThoughtSpot system will fail.</p>
+<ol>
+  <li>Session affinity: Having it enabled by default helps retain established SSL sessions, instead of having to frequently renegotiate sessions between the load balancer and back-end nodes. This is the recommended setting.</li>
+  <li>Maximum size of HTTP POST request: Some load balancers / proxy solutions impose a default limit (as low as 1 MB) on the size of HTTP POST requests. ThoughtSpot requires it to be set to 50 MB (or as close to it as possible), so please confirm you’ve set this correctly.</li>
+  <li>Server-side SSL profile must be enabled on load balancers.</li>
+  <li>The following SSL ciphers must be enabled on server-side SSL profile : <a href="/5.2/admin/setup/SSL-config.html#supported-ssl-ciphers">Supported SSL ciphers</a></li>
+</ol>
 
 <h2 id="web-proxies">Web proxies</h2>
 
-<p>You can access ThoughtSpot through any standard web proxy server. Web proxies are fairly universal regardless of the application they are proxying. However, ThoughtSpot doesn’t use any new protocols, like SPDY or HTTP/2, which may have a dependency on the proxy. Instead, ThoughtSpot is commonly placed behind a web HTTP/HTTPS proxy.</p>
+<p>You can access ThoughtSpot through any standard Web proxy server. Web proxies are fairly universal regardless of the application they are proxying. 
+ThoughtSpot doesn’t use any new protocols, like SPDY or HTTP/2, which may have a dependency on the proxy and as a result, ThoughtSpot is commonly placed behind a Web HTTP/HTTPS proxy.</p>
 
-<p>Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot backend. You can essentially use the web proxy as a load balancer. Therefore, your session will carry over if the proxy round robins between the ThoughtSpot backends as long as the URL doesn’t change.</p>
+<p>The proxy can also round-robin across the nodes in ThoughtSpot cluster in which case you are using the Web proxy as a load balancer. Your session will carry over, if the proxy round robins between the ThoughtSpot backends as long as the URL doesn’t change.</p>
 
-<h2 id="parameters-to-be-set-on-load-balancer-devices--application-proxy-servers">Parameters to be set on load balancer devices / application proxy servers</h2>
-
-<h3 id="maximum-size-of-http-post-request">Maximum size of HTTP POST request</h3>
-<p>Some load balancers / proxy solutions impose a default limit on the size of HTTP POST requests. In some cases it can be as low as 1 MB. 
-ThoughtSpot advises it to be set to 50 MB so please configure your device accordingly.</p>
-
-<h3 id="encryption-cipher-suites-on-load-balancer-server-side">Encryption cipher suites on load balancer (server side).</h3>
-<p>Please see <a href="/5.2/admin/setup/SSL-config.html#supported-ssl-ciphers">Supported SSL ciphers</a></p>
+<h2 id="alternatives">Alternatives</h2>
+<p>One way to load balance across all ThoughtSpot nodes in a cluster is to map one domain name (FQDN) to all the IPs in the cluster in a round-robin fashion. 
+This is no longer recommended because:</p>
+<ol>
+  <li>This is not suitable for secured (HTTPS) access.</li>
+  <li>DNS-based round-robin isn’t aware of the state of back-end nodes and can still send requests to nodes that are no longer in service.</li>
+</ol>
 
   <div class="tags">
     <div style="float:right;">
@@ -3236,7 +3228,7 @@ ThoughtSpot advises it to be set to 50 MB so please configure your device accord
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 16, 2019 <br />
+        Generated: Sep 19, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
