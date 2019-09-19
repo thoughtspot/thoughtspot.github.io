@@ -1,6 +1,6 @@
 ---
 title: [Proximity keywords near and farther than]
-keywords: tbd
+
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 sidebar: mydoc_sidebar

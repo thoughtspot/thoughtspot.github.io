@@ -1,6 +1,6 @@
 ---
 title: [About incremental data loads]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can create an incremental data load, with some planning ahead."
 sidebar: mydoc_sidebar

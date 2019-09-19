@@ -1,6 +1,6 @@
 ---
 title: [Select chart color palettes]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

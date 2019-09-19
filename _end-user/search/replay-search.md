@@ -1,6 +1,6 @@
 ---
 title: [Replay search]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can instantly generate a step-by-step replay showing the creation of a table or chart."
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: [日本語 Keyword reference]
 tags: [keywords]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

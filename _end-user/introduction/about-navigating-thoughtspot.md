@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
@@ -69,7 +69,7 @@ and other objects you have access to. For example, if you don't have the ability
 to use SpotIQ, that option does not appear.
 
 
-## Search or Search+
+## Search
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
@@ -93,7 +93,7 @@ To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-us
 
 If SpotIQ has been enabled by your administrator, you can go here to view the status of your request after you choose **Auto Analyze** or **Custom Analyze**, and to see the results.
 
-To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/end-user/spotiq/whatisspotiq.html#).
+To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.html#).
 
 ## Data
 
@@ -109,7 +109,7 @@ This section is covered in the [ThoughtSpot Administrator Guide]({{ site.baseurl
 
 ## Help Icon
 
-The help icon looks like two people. You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
 
 To learn more about this section, visit [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html#).
 

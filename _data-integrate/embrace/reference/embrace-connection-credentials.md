@@ -1,6 +1,6 @@
 ---
 title: [Connectors reference]
-keywords: tbd
+
 toc: false
 last_updated: tbd
 toc: true

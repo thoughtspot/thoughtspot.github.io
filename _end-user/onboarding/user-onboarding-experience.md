@@ -1,6 +1,6 @@
 ---
 title: [User Onboarding Experience]
-keywords: tbd
+
 last_updated: tbd
 toc: true
 summary: "ThoughtSpot's onboarding is quick and intuitive; you can learn to use the application very quickly and efficiently."

@@ -1,7 +1,7 @@
 ---
 title: [Results that are tables]
 tags: [keywords]
-keywords: tbd
+
 last_updated: tbd
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar

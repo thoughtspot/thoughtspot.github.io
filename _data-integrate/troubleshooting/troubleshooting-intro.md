@@ -1,6 +1,6 @@
 ---
 title: [Troubleshooting Data Integrations]
-keywords: tbd
+
 last_updated: tbd
 summary: "Learn how to fix connection issues."
 sidebar: mydoc_sidebar

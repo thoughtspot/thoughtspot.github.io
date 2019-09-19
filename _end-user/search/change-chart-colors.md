@@ -1,6 +1,6 @@
 ---
 title: [Change chart colors]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can change the colors used in a chart."
 sidebar: mydoc_sidebar

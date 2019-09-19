@@ -1,6 +1,6 @@
 ---
 title: [Log in to the Linux shell using SSH]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

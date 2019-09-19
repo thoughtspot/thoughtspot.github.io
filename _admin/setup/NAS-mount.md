@@ -32,7 +32,7 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
-## Mount using Management Console
+<!--## Mount using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -91,7 +91,7 @@ To mount a NAS file system using the admin UI:
 
 6. Click **Save** to mount a NAS file system.
 
-
+-->
 ## Mount using tscli
 To mount a NAS file system using the tscli:
 1. Log in to the Linux shell using SSH.

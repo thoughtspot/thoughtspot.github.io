@@ -1,6 +1,6 @@
 ---
 title: [Set the y-axis range]
-keywords: tbd
+
 last_updated: tbd
 summary: "On charts, you can manually configure the y-axis range to be different from the search default. You can have multiple measures on the y-axis of many charts."
 sidebar: mydoc_sidebar

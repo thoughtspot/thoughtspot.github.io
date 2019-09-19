@@ -63,7 +63,19 @@ You can now reduce the cost of an AWS deployment by using S3 for storage of majo
 
 ### Embrace
 
-**ThoughtSpot Embrace is now available in beta.** With Embrace, you can now directly perform live queries into an external Snowflake database, without having to cache the data in ThoughtSpot. Embrace reads directly from the database, allowing you to analyze the data and create visualizations in ThoughtSpot. It automatically synchronizes the data on a predefined schedule. This allows you to deploy ThoughtSpot faster by eliminating the need to move all the data into ThoughtSpot. For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+**ThoughtSpot Embrace is in beta.**
+
+With ThoughtSpot Embrace, you can perform live queries against an external data repository without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot.
+
+There are two modes for using Embrace:
+- Linked tables provide real-time access to external data.
+- Synced tables enable you to bring select tables into the ThoughtSpot internal database.
+
+You can easily switch between Synced and Linked operation modes.
+
+You can also schedule automatic updates that refresh the synced data
+
+For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Pinboard export in PDF format
 
