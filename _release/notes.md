@@ -55,7 +55,7 @@ Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or 
 
 To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
 
-Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
+Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure authentication through Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
 ### Amazon S3 persistent storage option
 
