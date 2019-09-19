@@ -1,5 +1,5 @@
 ---
-title: [Configure LDAP for Active Directory]
+title: [Configure authentication through Active Directory]
 tags: [SAML_LDAP_AD, tscli]
 keywords: LDAP, "Active Directory"
 last_updated: tbd
@@ -7,7 +7,6 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL.
-
 
 ## Before you begin
 Before you configure ThoughtSpot for Active Directory, collect the following information:
@@ -88,7 +87,7 @@ To configure LDAP for active directory:
    </tr>
    </table>
 
-6. Click **Save** to configure the active directory configuration. 
+6. Click **Save** to configure the active directory configuration.
 
 -->
 ## Configure using tscli
