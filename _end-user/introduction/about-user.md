@@ -38,7 +38,7 @@ Select **Email me sharing notifications** to receive emails whenever another use
 
 When you are relatively new to using ThoughtSpot, we help you to become productive faster.
 
-Whenever you need a refresh, navigate to **My Profile*. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughSpot guides you through onboarding again.
+Whenever you need a refresh, navigate to **My Profile*. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughtSpot guides you through onboarding again.
 
 ![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
 
