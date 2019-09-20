@@ -104,3 +104,25 @@ supported, so `day of week = d1` is not valid.
 * `INTEGER_CONDITION` with `=` or `!=` accept a list of filter values, so, `day of week = 1 2 3` is valid.
 * `INTEGER_CONDITION` with `=` or `!=` require legal values, so `day of week >` accepts any integer on the right hand side while `day of week =` requires a value in the legal `1-7` range.
 * Simple date filters allow you to use edit the filter through the answer to refine your search, adding a a hierarchical date filter in the search bar disables this ability.
+
+### Create a max(date) field and use it to filter
+
+If you have a date field in your data set and want to return the most recent set of data based on a specific date, do the following:
+
+1. Create a formula called `Max Date`.
+
+   For example:
+
+    ```
+    date = group_max ( date_to_filter_by )
+    ```
+
+2. In the search bar, filter your dates by this formula.
+
+   For example:
+
+    ```
+    max date = true
+    ```
+
+    This returns only those fields that pass the filter.

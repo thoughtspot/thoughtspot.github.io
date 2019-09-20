@@ -22,22 +22,3 @@ is causing the column to be dropped.
 * Check the column's  **INDEX PRIORITY** &emdash. make sure it is `1`.
 
 To learn more about modeling data see [modeling data]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html#) in this documentation.
-
-### Is it possible to create a max(date) filed and set it to filter?
-
-If you have a date field in my set of data and want to return the most recent set of
-data based on specific date. To do this:
-
-1. Create a formula called `Max Date`, for example:
-
-    ```
-    date = group_max ( date_to_filter_by )
-    ```
-
-2. In the search bar, filter your dates by this formula for example:
-
-    ```
-    max date = true
-    ```
-
-    This returns only those fields that pass the filter.
