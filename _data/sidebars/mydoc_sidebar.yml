@@ -678,6 +678,7 @@ entries:
         output: web,ugBk
       - title: Refresh a view
         url: /admin/loading/refresh-view.html
+        output: web,ugBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
