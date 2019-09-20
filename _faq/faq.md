@@ -23,29 +23,6 @@ is causing the column to be dropped.
 
 To learn more about modeling data see [modeling data]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html#) in this documentation.
 
-### How do I display the features used in my cluster configuration?
-
-1. Log into the ThoughtSpot cluster as the `admin` user.
-2. Use the `tscli feature` subcommand to display your current configuration.
-
-    ```
-    $ tscli feature get-all-config
-    +---------------------------------+----------+---------------+
-    |              NAME               |  STATUS  | CONFIGURATION |
-    +---------------------------------+----------+---------------+
-    | Firewall                        | Disabled |               |
-    | Saml                            | Disabled |               |
-    | Ldap                            | Disabled |               |
-    | CustomBranding                  | Disabled |               |
-    | CustomBrandingFontCustomization | Disabled |               |
-    | DataConnect                     | Disabled |               |
-    | RLS                             | Enabled  |               |
-    | Callhome                        | Enabled  |               |
-    | SSHTunnel                       | Enabled  |               |
-    | Fileserver                      | Disabled |               |
-    +---------------------------------+----------+---------------+
-    ```
-
 ### Is it possible to create a max(date) filed and set it to filter?
 
 If you have a date field in my set of data and want to return the most recent set of
