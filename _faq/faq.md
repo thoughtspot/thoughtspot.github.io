@@ -23,12 +23,6 @@ is causing the column to be dropped.
 
 To learn more about modeling data see [modeling data]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html#) in this documentation.
 
-
-### How do I track progress of current index build?
-
-If you are an administrator, you can use the **Admin > System Health >
-Overview** page to see the number of tables currently being indexed. You can also review the
-
 ### How do I display the features used in my cluster configuration?
 
 1. Log into the ThoughtSpot cluster as the `admin` user.
