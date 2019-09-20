@@ -2,25 +2,27 @@
 title: [Refresh a materialized view]
 keywords: materialize, views, refresh, stale
 last_updated: 11/2/2018
-summary: "You can refresh a view manually, so that its data matches the data in its underlying tables."
+summary: "You can refresh a view manually, so that its data matches the data in the underlying tables."
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Materialized views can get out of sync with their underlying data. If the status of a view is **Stale**, you'll need to refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.
+Materialized views can get out of sync with their underlying data. If the status of a view is **Stale**, you must refresh the view manually to sync it with the table.
 
-To refresh a view manually:
+Note that until it is refreshed, the view remains searchable.
+
+To refresh a view manually, follow these steps:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
 
-2. Click the name of your view.
-
 3. Click **Schema**.
 
-4. Under **Materialization**, choose **Dematerialize**.
+4. In the **Materialization** panel, notice that the **Status** is _Stale_.
 
-     ![]({{ site.baseurl }}/images/materialization-dialog-on-weekly.png "Dematerialize a View")
+5. Next to the _Stale_ status, click **Refresh Data**.
+
+     ![Refresh a stale view]({{ site.baseurl }}/images/refresh-materialized-views.png "Refresh a view")
 
 ## Related Information
 - [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)
