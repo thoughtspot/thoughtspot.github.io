@@ -87,6 +87,29 @@ should enable the default snapshot policy. When you show or enable the snapshot
 policy, you can see your `tscli` command reflected in the **Configuration
 Events** panel on this same page.
 
+### Display the features used in a cluster configuration
+
+1. Log into the ThoughtSpot cluster as the `admin` user.
+2. Use the `tscli feature` subcommand to display your current configuration.
+
+    ```
+    $ tscli feature get-all-config
+    +---------------------------------+----------+---------------+
+    |              NAME               |  STATUS  | CONFIGURATION |
+    +---------------------------------+----------+---------------+
+    | Firewall                        | Disabled |               |
+    | Saml                            | Disabled |               |
+    | Ldap                            | Disabled |               |
+    | CustomBranding                  | Disabled |               |
+    | CustomBrandingFontCustomization | Disabled |               |
+    | DataConnect                     | Disabled |               |
+    | RLS                             | Enabled  |               |
+    | Callhome                        | Enabled  |               |
+    | SSHTunnel                       | Enabled  |               |
+    | Fileserver                      | Disabled |               |
+    +---------------------------------+----------+---------------+
+    ```
+
 ## Relational Data Cache
 
 This section reports real-time information about tables in your cluster.
