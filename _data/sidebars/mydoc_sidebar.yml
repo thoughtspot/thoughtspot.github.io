@@ -687,6 +687,7 @@ entries:
         output: web,ugBk
       - title: Refresh a view
         url: /admin/loading/refresh-view.html
+        output: web,ugBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
@@ -872,7 +873,7 @@ entries:
       output: web,admBk
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
-      output: web,admBk      
+      output: web,admBk
   - sectiontitle: Data Connect
     output: web,cngBk
     sectionitems:
