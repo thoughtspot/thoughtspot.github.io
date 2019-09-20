@@ -32,6 +32,8 @@ To schedule materialization of a view:
 
 7. Click **Update**.
 
+{% include note.html content="Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable." %}
+
 ## Related Information
 
 -   [Understand views]({{ site.baseurl }}/complex-search/about-query-on-query.html)  
