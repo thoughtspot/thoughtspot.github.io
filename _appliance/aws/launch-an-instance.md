@@ -29,13 +29,13 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 
 ## Prerequisites
 
-Before you can install and launch ThoughtSpot, you must provision AWS EC2 instances in your AWS account.
+To install and launch ThoughtSpot, you must have familiarity with Linux administration, and a general understanding of cloud deployment models.
 
 ### Required AWS components
 
 - An AWS VPC. For details, see [VPC and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html){:target="_blank"} in Amazon's AWS documentation.
 - A ThoughtSpot AMI. For details, see the next section.
-- Set up AWS security groups. For required open ports, see [network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+- AWS security groups. For required open ports, see [network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
 - AWS VM instances. For instance type recommendations, see [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
 - EBS volumes.
 - (Optional) If deploying with S3 persistent storage, one S3 bucket dedicated to each ThoughtSpot cluster.
