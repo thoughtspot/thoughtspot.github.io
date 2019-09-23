@@ -27,10 +27,22 @@ The ThoughtSpot AMI comes provisioned with the custom ThoughtSpot image to make 
 
 The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks so that it handle the full load of the VM.
 
-##  Prerequisites
+## Prerequisites
 
-ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS account before ThoughtSpot can be installed and launched. Please make sure you follow these guidelines for setting up your EC2 details:
-- Sign in to your AWS account from the [AWS Amazon sign in page](https://console.aws.amazon.com/console/home).
+Before you can install and launch ThoughtSpot, you must provision AWS EC2 instances in your AWS account.
+
+### Required AWS components
+
+- An AWS VPC. For details, see [VPC and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html){:target="_blank"} in Amazon's AWS documentation.
+- A ThoughtSpot AMI. For details, see the next section.
+- Set up AWS security groups. For required open ports, see [network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+- AWS VM instances. For instance type recommendations, see [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
+- EBS volumes.
+- (Optional) If deploying with S3 persistent storage, one S3 bucket dedicated to each ThoughtSpot cluster.
+
+### Guidelines for setting up your EC2 instances
+
+- Sign in to your [AWS account](https://console.aws.amazon.com/console/home).
 - Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
 **AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
 **AMI ID**: ami-0b23846e4761375f1  
