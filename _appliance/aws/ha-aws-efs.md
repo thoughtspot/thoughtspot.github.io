@@ -29,4 +29,10 @@ Make sure read and write permissions are provided on all cluster EFS mount point
 8. Go to Second cluster, delete existing cluster and create new one by restoring from the first cluster backup which is accessible from efs mount point.
 Example: `tscli cluster restore /home/admin/EFS/Efs-backup`
 
-Cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for ThoughtSpot clusters.
+Your cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for ThoughtSpot clusters.
+
+### Replacing a cluster
+
+For information on how to recover from infrastructure failure scenarios, see: [Cluster replacement]({{ site.baseurl }}/disaster-recovery/cluster-replacement.html).
+
+{% include note.html content="At this time, ThoughtSpot does not support AWS Auto Scaling or deployment across AWS availability zones or regions." %}
