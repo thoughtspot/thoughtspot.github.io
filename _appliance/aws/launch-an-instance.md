@@ -31,7 +31,7 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 
 To install and launch ThoughtSpot, you must have the following:
 - Familiarity with Linux administration, and a general understanding of cloud deployment models.
-- The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the requirements of the following section.  
+- The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.  
   For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
 
 ### Required AWS components
@@ -75,6 +75,15 @@ To set up an Amazon S3 bucket in AWS, do the following:
 6. On the Configure options page, make sure **Block *all* public access** is selected and click **Next**.
 
 7. On the Set permissions page, click **Create bucket**.
+
+## (Optional) Encrypting your data at rest on Amazon EBS or S3 in AWS
+
+ThoughtSpot makes use of EBS for the data volumes to store persistent data (in the EBS deployment model) and the boot volume (in the EBS and S3 deployment models). ThoughtSpot recommends that you encrypt your data volumes prior to setting up your ThoughtSpot cluster.
+If you are using the S3 persistent storage model, you can encrypt the S3 buckets using SSE-S3. ThoughtSpot does not currently support AWS KMS encryption for AWS S3.  
+
+For more information on encryption supported with AWS:
+- For EBS, see [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html){:target="_blank"} in Amazon's AWS documentation.  
+- For S3, see [Amazon S3 Default Encryption for S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html){:target="_blank"} in Amazon's AWS documentation.
 
 ## Setting up your ThoughtSpot cluster in AWS
 
@@ -136,7 +145,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 ## Open the required network ports
 
-See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for a complete list of network ports that must be open for traffic from end users as well as between ThoughtSpot nodes in a cluster.
+To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
 
 ## Related information  
 
