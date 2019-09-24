@@ -108,6 +108,14 @@ We simplified feedback for insights and analysis to use fewer questions. These q
 
 You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
 
+### New geo map support
+<!--SCAL-48652-->
+Starting with this release, ThoughtSpot supports geo maps for these countries and regions:
+ - United Kingdom: Zip Code
+ - Sweden: Postal Code
+
+ See [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
+
 ### Drivers
 
 As of this release, ThoughtSpot no longer supports Solaris installations.  
