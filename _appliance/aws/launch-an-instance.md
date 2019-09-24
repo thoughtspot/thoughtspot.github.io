@@ -29,7 +29,10 @@ The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS vo
 
 ## Prerequisites
 
-To install and launch ThoughtSpot, you must have familiarity with Linux administration, and a general understanding of cloud deployment models.
+To install and launch ThoughtSpot, you must have the following:
+- Familiarity with Linux administration, and a general understanding of cloud deployment models.
+- The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the requirements of the following section.  
+  For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
 
 ### Required AWS components
 
