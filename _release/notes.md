@@ -102,7 +102,7 @@ We simplified feedback for insights and analysis to use fewer questions. These q
 
 ### SearchIQ optimization and other enhancements
 
-**SearchIQ is in beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
+**SearchIQ is in Beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
 
 ### Schema and join information
 

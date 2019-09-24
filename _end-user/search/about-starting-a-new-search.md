@@ -1,7 +1,6 @@
 ---
 title: ["What are Searches and Answers?"]
-keywords: search,answer,introduction,"search bar"
-last_updated: tbd
+last_updated: 09/23/2019
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -77,4 +76,4 @@ An answer is the result of a single search. You can save an answer you want to w
 -   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
 -   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  
 -   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html)
--   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html)
+-   **Beta** [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html)

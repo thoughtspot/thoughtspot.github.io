@@ -1,12 +1,13 @@
 ---
 title: ["Enable Columns for SearchIQ"]
-keywords: SearchIQ, columns
-last_updated: 08/22/2019
+last_updated: 09/23/2019
 summary: "Let us discuss how to enable SearchIQ for the columns of the data source."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-***SearchIQ is in Beta.***
+**SearchIQ is in Beta.**
+
+{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
 
 Before enabling columns, keep in mind these points, and other in-product guidelines:
 - Enable no more than fifteen (15) columns for SearchIQ.

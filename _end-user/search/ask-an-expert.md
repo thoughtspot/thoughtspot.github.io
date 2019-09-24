@@ -1,8 +1,7 @@
 ---
 title: ["Ask an expert"]
-keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
-last_updated: 4/16/2019
-summary: "Need help finding something in your data? Ask an expert to create the search for you."
+last_updated: 09/23/2019
+summary: "Do you need help finding something in your data? Ask an expert to create the search for you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
