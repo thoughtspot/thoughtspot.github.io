@@ -14,7 +14,7 @@ Before you can use the Data REST API, you must authenticate to ThoughtSpot using
 
 ## Cross Domain Verification
 
-You cano enable cross-domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
+You can enable cross-domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
 
 ## Data REST API capabilities
 

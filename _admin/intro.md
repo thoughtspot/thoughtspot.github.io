@@ -1,7 +1,7 @@
 ---
 title: [Introduction to administration]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: 07-08-2019
+last_updated: 09-23-2019
+summary: "This guide covers all topics of special interest to application administrators."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -24,7 +24,7 @@ Additionally, administrators are often involved in the following workflows:
 - [Using worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) to simplify search
 - [Using views]({{ site.baseurl }}/complex-search/about-query-on-query.html) for 'stacked' search;
    note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the [`IN` keyword]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
-- [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search
+- **Beta** [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search.
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)
 - [Troubleshooting]({{ site.baseurl }}/admin/troubleshooting/troubleshooting-intro.html)
