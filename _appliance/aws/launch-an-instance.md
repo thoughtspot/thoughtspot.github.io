@@ -50,6 +50,7 @@ To install and launch ThoughtSpot, you must have the following:
 **AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
 **AMI ID**: ami-0b23846e4761375f1  
 **Region**: N. California
+  {% include note.html content="The AMI is backward compatible with ThoughtSpot releases 5.1.x - 5.2.x." %}
 - Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for supported instance types.
 - Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
 - Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
