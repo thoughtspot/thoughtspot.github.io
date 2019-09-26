@@ -1,6 +1,6 @@
 ---
 title: [Nederland Keyword reference]
-tags: [keywords]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

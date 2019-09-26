@@ -1,6 +1,6 @@
 ---
 title: [Keyword reference]
-tags: [keywords]
+
 
 toc: true
 last_updated: tbd
