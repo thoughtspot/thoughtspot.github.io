@@ -1,6 +1,6 @@
 ---
 title: [Authentication flow with embed]
-keywords: API,javascript,enable,"JS API",embed
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

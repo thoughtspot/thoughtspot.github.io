@@ -1,6 +1,6 @@
 ---
 title: [Use the Embedded Search API to pull data from ThoughtSpot]
-keywords: REST,API,data,direct,pull
+
 last_updated: 11/4/2018
 summary: "This procedure shows how to use the Embedded Search API to get data from ThoughtSpot"
 sidebar: mydoc_sidebar

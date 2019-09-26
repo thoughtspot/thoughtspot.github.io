@@ -1,6 +1,6 @@
 ---
 title: [Understand embedding]
-keywords: embedding,authentication,SAML,embed
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
