@@ -1,7 +1,7 @@
 ---
 title: [About LDAP integration]
-tags: [SAML_LDAP_AD]
-keywords: SAML,security,"active directory",authenticate
+
+
 last_updated: tbd
 summary: "You authenticate users against an LDAP server. "
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: [Sharding]
-keywords: sharding,partitioning,distribution,dimension,split,table,shard,partition,performance
-tags: [performance]
+
+
 last_updated: tbd
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar

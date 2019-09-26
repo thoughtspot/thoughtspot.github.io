@@ -1,6 +1,6 @@
 ---
 title: [Proximity searches "near" and "farther than"]
-keywords: within,near,"farther than",proximity,geo,search
+
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 toc: false

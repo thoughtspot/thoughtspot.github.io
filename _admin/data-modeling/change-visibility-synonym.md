@@ -1,6 +1,6 @@
 ---
 title: [Hide a column or define a synonym]
-keywords: "data,synonym,hide"
+
 last_updated: tbd
 summary: "Hide a column from users or make it easier to find by assigning a synonym."
 sidebar: mydoc_sidebar

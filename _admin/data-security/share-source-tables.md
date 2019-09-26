@@ -1,6 +1,6 @@
 ---
 title: [Share tables and columns]
-tags: [bestpractices]
+
 
 toc: false
 summary: "You can share an entire table, or only some of its columns."

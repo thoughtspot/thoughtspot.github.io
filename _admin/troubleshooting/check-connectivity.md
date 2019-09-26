@@ -1,7 +1,7 @@
 ---
 title: [Network connectivity issues]
 
-tags: [networking]
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

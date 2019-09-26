@@ -1,6 +1,6 @@
 ---
 title: [Configure internal authentication]
-tags: [Security_SSL]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

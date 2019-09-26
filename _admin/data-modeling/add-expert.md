@@ -1,6 +1,6 @@
 ---
 title: ["Manage experts or add an expert"]
-keywords: expert,ask an expert
+
 last_updated: 09/23/2019
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar

@@ -2,7 +2,7 @@
 title: [Data security]
 
 last_updated: tbd
-tags: [groups,rls,security]
+
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

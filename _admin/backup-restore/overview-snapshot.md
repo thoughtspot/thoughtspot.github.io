@@ -1,7 +1,7 @@
 ---
 title: [Work with snapshots]
-keywords: backup,snapshot
-tags: [performance]
+
+
 last_updated: 06/16/2019
 toc: true
 sidebar: mydoc_sidebar

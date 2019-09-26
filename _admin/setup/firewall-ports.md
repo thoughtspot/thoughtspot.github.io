@@ -1,8 +1,8 @@
 ---
 title: [Network policies]
-tags: [bestpractices]
-keywords: network, ports, policies
-tags: [networking]
+
+
+
 last_updated: tbd
 summary: "Lists the required ports, protocols and policies for an installation."
 sidebar: mydoc_sidebar

@@ -1,6 +1,6 @@
 ---
 title: [Edit or rename worksheet]
-keywords: "worksheet,edit"
+
 last_updated: tbd
 summary: "A worksheet can be edited by anyone with the proper permissions."
 sidebar: mydoc_sidebar

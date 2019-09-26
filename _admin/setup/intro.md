@@ -1,6 +1,6 @@
 ---
 title: [About installation and upgrades]
-keywords: notes, tips, cautions, warnings, admonitions,configuration
+
 last_updated: July 3, 2016
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

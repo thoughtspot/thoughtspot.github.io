@@ -1,7 +1,7 @@
 ---
 title: [Alerts and Events board]
-keywords: alerts,events,logs
-tags: [indexing,logs]
+
+
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
