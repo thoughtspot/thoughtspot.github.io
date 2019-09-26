@@ -1,6 +1,6 @@
 ---
 title: [Set up Azure for ThoughtSpot]
-keywords: Azure
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

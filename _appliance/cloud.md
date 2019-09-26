@@ -1,6 +1,6 @@
 ---
 title: [Cloud overview]
-keywords: setup,cluster,cloud,aws,azure,gcp
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

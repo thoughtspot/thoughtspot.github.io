@@ -1,6 +1,6 @@
 ---
 title: [Set up GCP for ThoughtSpot]
-keywords: GCP
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
