@@ -1,7 +1,7 @@
 ---
 title: [Filtered aggregation functions]
-keywords: filter, search, aggregation
-tags: [time,dates]
+
+
 last_updated: tbd
 toc: true
 summary: "You can create a filtered aggregation in the search bar."

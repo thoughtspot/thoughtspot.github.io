@@ -1,6 +1,6 @@
 ---
 title: [Overview of keyword searches]
-tags: [keywords]
+
 
 last_updated: tbd
 summary: "Use keywords when asking a question to narrow and further define your search."

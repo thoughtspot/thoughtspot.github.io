@@ -1,7 +1,7 @@
 ---
 title: [Time series analysis]
-keywords: period,"period ago","time series"
-tags: [time,dates]
+
+
 last_updated: tbd
 summary: "You can compare across time periods without using a formula."
 sidebar: mydoc_sidebar

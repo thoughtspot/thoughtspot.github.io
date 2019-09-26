@@ -1,6 +1,6 @@
 ---
 title: [Save a search as a view]
-keywords: view,aggregated
+
 last_updated: 11/2/2018
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
