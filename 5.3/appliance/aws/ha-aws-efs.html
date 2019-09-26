@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Set up high availability for AWS”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Setting up High Availability (HA) for your ThoughtSpot cluster using AWS Elastic File System (EFS)" />
-<meta property="og:description" content="Setting up High Availability (HA) for your ThoughtSpot cluster using AWS Elastic File System (EFS)" />
+<meta name="description" content="To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), do the following:" />
+<meta property="og:description" content="To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), do the following:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html","headline":"[“Set up high availability for AWS”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"Setting up High Availability (HA) for your ThoughtSpot cluster using AWS Elastic File System (EFS)","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/ha-aws-efs.html","headline":"[“Set up high availability for AWS”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), do the following:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3255,24 +3259,14 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="setting-up-high-availability-ha-for-your-thoughtspot-cluster-using-aws-elastic-file-system-efs">Setting up High Availability (HA) for your ThoughtSpot cluster using AWS Elastic File System (EFS)</h2>
-
-<p>To set up HA for your ThoughtSpot cluster, do the following:</p>
+  <p>To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), do the following:</p>
 
 <ol>
   <li>
-    <p>Create an EFS File System that spanns across different availability zones, and across different subnets.</p>
-
-    <p><img src="/5.3/images/aws_ha_1.png" alt="" title="Create EFS File System" /></p>
-
-    <p><img src="/5.3/images/aws_ha_2.png" alt="" title="Create EFS File System 2" /></p>
+    <p>Create an EFS File System that spans across different availability zones, and across different subnets.</p>
   </li>
   <li>
     <p>Create two ThoughtSpot clusters in each availability zone and in the subnets, where the file system was created.</p>
-
-    <p><img src="/5.3/images/aws_ha_3.png" alt="" title="Create EFS File System 3" /></p>
-
-    <p><img src="/5.3/images/aws_ha_4.png" alt="" title="Create EFS File System 4" /></p>
   </li>
   <li>
     <p>Change the IP addresses of the cluster (if needed).</p>
@@ -3282,16 +3276,31 @@ $('#toc').on('click', 'a', function() {
 'sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-f756f1ee.efs.us-west-1.amazonaws.com:/ /home/admin/efs/'
 Make sure read and write permissions are provided on all cluster EFS mount points. use: `chmod 777 /home/admin/efs`</customizable></p>
   </li>
-  <li>Go to First cluster. Create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Below are sample commands:
+  <li>
+    <p>On the first cluster, create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Example commands:
 <code class="highlighter-rouge">tscli snapshot create EfsTest HA 2</code>
-<code class="highlighter-rouge">tscli backup create --mode full --type full --storage_type local EfsTest /home/admin/efs/Efs-backup</code></li>
-  <li>Make sure the backup is created and accessible from all the clusters where EFS is mounted. In our cases both the clusters.</li>
-  <li>Now bring down the first cluster instances.</li>
-  <li>Go to Second cluster, delete existing cluster and create new one by restoring from the first cluster backup which is accessible from efs mount point.
-Example: <code class="highlighter-rouge">tscli cluster restore /home/admin/EFS/Efs-backup</code></li>
+<code class="highlighter-rouge">tscli backup create --mode full --type full --storage_type local EfsTest /home/admin/efs/Efs-backup</code></p>
+  </li>
+  <li>
+    <p>Make sure the backup is created and accessible from all the clusters where EFS is mounted. In our cases both the clusters.</p>
+  </li>
+  <li>
+    <p>Now bring down the first cluster instances.</p>
+  </li>
+  <li>
+    <p>Go to Second cluster, delete existing cluster and create new one by restoring from the first cluster backup which is accessible from efs mount point.
+Example: <code class="highlighter-rouge">tscli cluster restore /home/admin/EFS/Efs-backup</code></p>
+  </li>
 </ol>
 
-<p>Cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for ThoughtSpot clusters.</p>
+<p>Your cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for ThoughtSpot clusters.</p>
+
+<h3 id="replacing-a-cluster">Replacing a cluster</h3>
+
+<p>For information on how to recover from infrastructure failure scenarios, see: <a href="/5.3/disaster-recovery/cluster-replacement.html">Cluster replacement</a>.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> At this time, ThoughtSpot does not support AWS Auto Scaling or deployment across AWS availability zones or regions.</div>
+
 
   <div class="tags">
     <div style="float:right;">
@@ -3317,7 +3326,7 @@ Example: <code class="highlighter-rouge">tscli cluster restore /home/admin/EFS/E
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

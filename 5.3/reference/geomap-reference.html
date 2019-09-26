@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="ThoughtSpot recognizes a broad list geographic regions and their subdivisions."> -->
-<meta name="keywords" content="Geo map subdivisions,  geo map divisons subdivisions">
+<meta name="keywords" content=",  ">
 <title>Geo Map Reference | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Geo Map Reference”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This reference lists supported countries and their subdivisions that are available in geo maps." />
-<meta property="og:description" content="This reference lists supported countries and their subdivisions that are available in geo maps." />
+<meta name="description" content="This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps." />
+<meta property="og:description" content="This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/reference/geomap-reference.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/reference/geomap-reference.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/reference/geomap-reference.html"},"url":"https://docs.thoughtspot.com/5.3/reference/geomap-reference.html","headline":"[“Geo Map Reference”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"This reference lists supported countries and their subdivisions that are available in geo maps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/reference/geomap-reference.html"},"url":"https://docs.thoughtspot.com/5.3/reference/geomap-reference.html","headline":"[“Geo Map Reference”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3217,31 +3221,6 @@ var ss360Config = {
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the
-on-page minitoc. if you use html tags, you must supply an ID for the heading
-element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-
-});
-</script>
-
-<div id="toc"></div>
-
-    
 
 
     
@@ -3257,7 +3236,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This reference lists supported countries and their subdivisions that are available in geo maps.</p>
+  <p>This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.</p>
 
 <h3 id="supported-geo-maps-in-thoughtspot">Supported geo maps in ThoughtSpot</h3>
 
@@ -3272,17 +3251,25 @@ $('#toc').on('click', 'a', function() {
 <summary><b>United Kingdom</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;County and Unitary Authority<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Local Area District<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Zip Code<br /><!--Since 5.3.0>-->
 </details>
+<!--Since 5.2.0-->
+<details>
+<summary><b>Australia</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;State<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Suburb<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Postcode<br />
+</details>
+<!--Since 6.0.0<details>
+<summary><b>Austria</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;State<br>
+&nbsp;&nbsp;&nbsp;&nbsp;District<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+</details>-->
 <details>
 <summary><b>Canada</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territories<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Census Divisions<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br />
-</details>
-<details>
-<summary><b>Germany</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br />
-&nbsp;&nbsp;&nbsp;&nbsp;District<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br />
 </details>
 <details>
@@ -3291,29 +3278,43 @@ $('#toc').on('click', 'a', function() {
 &nbsp;&nbsp;&nbsp;&nbsp;Department<br />
 </details>
 <details>
+<summary><b>Germany</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;State<br />
+&nbsp;&nbsp;&nbsp;&nbsp;District<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br />
+</details>
+<details>
+<summary><b>Indonesia</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br />
+</details>
+<!--Since 6.0.0<details>
+<summary><b>Italy</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;Region<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+</details>-->
+<!--Since 5.2.0-->
+<details>
 <summary><b>Japan</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Prefecture<br />
 &nbsp;&nbsp;&nbsp;&nbsp;PMC<br />
 </details>
-<details>
-<summary><b>Australia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Suburb<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Postcode<br />
-</details>
+<!--Since 6.0.0<details>
+<summary><b>Poland</b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;County<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+</details>-->
 <details>
 <summary><b>Sweden</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;County<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Municipality<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Post Code<br /><!--Since 5.3.0 -->
 </details>
 <details>
 <summary><b>South Africa</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;State<br />
 &nbsp;&nbsp;&nbsp;&nbsp;District<br />
-</details>
-<details>
-<summary><b>Indonesia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province/Territory<br />
 </details>
 
   <div class="tags">
@@ -3328,11 +3329,6 @@ $('#toc').on('click', 'a', function() {
     </div>
     <div >
         
-        
-        
-        
-        
-        
     </div>
 </div>
 
@@ -3345,9 +3341,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 06/17/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 09/23/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

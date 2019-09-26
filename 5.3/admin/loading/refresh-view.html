@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can refresh a view manually, so that its data matches the data in its underlying tables."> -->
+<!-- <meta name="description" content="You can refresh a view manually, so that its data matches the data in the underlying tables."> -->
 <meta name="keywords" content=",  materialize, views, refresh, stale">
 <title>Refresh a materialized view | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Refresh a materialized view”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date." />
-<meta property="og:description" content="Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date." />
+<meta name="description" content="Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually to sync it with the table." />
+<meta property="og:description" content="Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually to sync it with the table." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html","headline":"[“Refresh a materialized view”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/refresh-view.html","headline":"[“Refresh a materialized view”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"Materialized views can get out of sync with their underlying data. If the status of a view is Stale, you must refresh the view manually to sync it with the table.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li class="active"><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3213,7 +3217,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can refresh a view manually, so that its data matches the data in its underlying tables.</div>
+    <div class="summary">You can refresh a view manually, so that its data matches the data in the underlying tables.</div>
    
 
     
@@ -3257,24 +3261,26 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Materialized views can get out of sync with their underlying data. If the status of a view is <strong>Stale</strong>, you must refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.</p>
+  <p>Materialized views can get out of sync with their underlying data. If the status of a view is <strong>Stale</strong>, you must refresh the view manually to sync it with the table.</p>
 
-<p>To refresh a view manually:</p>
+<p>Note that until it is refreshed, the view remains searchable.</p>
+
+<p>To refresh a view manually, follow these steps:</p>
 
 <ol>
   <li>
     <p>To find your view, click <strong>Data</strong> in the top menu, and choose <strong>Views</strong>.</p>
   </li>
   <li>
-    <p>Click the name of your view.</p>
-  </li>
-  <li>
     <p>Click <strong>Schema</strong>.</p>
   </li>
   <li>
-    <p>Under <strong>Materialization</strong>, choose <strong>Dematerialize</strong>.</p>
+    <p>In the <strong>Materialization</strong> panel, notice that the <strong>Status</strong> is <em>Stale</em>.</p>
+  </li>
+  <li>
+    <p>Next to the <em>Stale</em> status, click <strong>Refresh Data</strong>.</p>
 
-    <p><img src="/5.3/images/materialization-dialog-on-weekly.png" alt="" title="Dematerialize a View" /></p>
+    <p><img src="/5.3/images/refresh-materialized-views.png" alt="Refresh a stale view" title="Refresh a view" /></p>
   </li>
 </ol>
 
@@ -3308,9 +3314,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
+         <!-- <span>Page last updated:</span> 09/20/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

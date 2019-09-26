@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot: Mode 1: Compute VMs + EBS-only persistent storage Mode 2: Compute VMs + EBS and S3 persistent storage","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot: Mode 1: Compute VMs + EBS-only persistent storage Mode 2: Compute VMs + EBS and S3 persistent storage","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3261,27 +3265,7 @@ $('#toc').on('click', 'a', function() {
   <li>Mode 2: Compute VMs + EBS and S3 persistent storage</li>
 </ul>
 
-<p>The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative.</p>
-
-<table width="100%" border="0">
-  <tbody>
-    <tr>
-      <td><b>Operation</b></td>
-      <td><b>VMs with EBS-only persistent storage</b></td>
-      <td><b>VMs with EBS and S3 persistent storage</b></td>
-    </tr>
-    <tr>
-      <td>Data loading</td>
-      <td>Into EBS</td>
-      <td>Into S3</td>
-    </tr>
-    <tr>
-      <td>Snapshots</td>
-      <td>In EBS</td>
-      <td>In EBS</td>
-    </tr>
-  </tbody>
-</table>
+<p>The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative. For more information on purchasing ThoughtSpot on AWS, see: <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot Pricing</a>.</p>
 
 <p>All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html" target="_blank">Regions and Availability Zones</a> in Amazon’s AWS documentation.</p>
 
@@ -3306,10 +3290,10 @@ $('#toc').on('click', 'a', function() {
   </thead>
   <tbody>
     <tr>
-      <td>250 GB</td>
-      <td>r4.16xlarge, r516xlarge</td>
-      <td>64/488, 64/512</td>
-      <td>2x 1 TB</td>
+      <td>20 GB</td>
+      <td>r4.4xlarge, r5.4xlarge</td>
+      <td>16/122, 16/128</td>
+      <td>2X 400 GB</td>
     </tr>
     <tr>
       <td>100 GB</td>
@@ -3318,22 +3302,22 @@ $('#toc').on('click', 'a', function() {
       <td>2X 400 GB</td>
     </tr>
     <tr>
-      <td>20 GB</td>
-      <td>r4.4xlarge, r5.4xlarge</td>
-      <td>16/122, 16/128</td>
-      <td>2X 400 GB</td>
+      <td>192 GB</td>
+      <td>m5.24xlarge</td>
+      <td>96/384</td>
+      <td>2X 1 TB</td>
+    </tr>
+    <tr>
+      <td>250 GB</td>
+      <td>r4.16xlarge, r516xlarge</td>
+      <td>64/488, 64/512</td>
+      <td>2x 1 TB</td>
     </tr>
     <tr>
       <td>384 GB</td>
       <td>r5.24xlarge</td>
       <td>96/768</td>
       <td>2X 1.5 TB</td>
-    </tr>
-    <tr>
-      <td>192 GB</td>
-      <td>m5.24xlarge</td>
-      <td>96/384</td>
-      <td>2X 1 TB</td>
     </tr>
   </tbody>
 </table>
@@ -3353,9 +3337,9 @@ $('#toc').on('click', 'a', function() {
   </thead>
   <tbody>
     <tr>
-      <td>250 GB</td>
-      <td>r4.16xlarge, r516xlarge</td>
-      <td>64/488, 64/512</td>
+      <td>20 GB</td>
+      <td>r4.4xlarge, r5.4xlarge</td>
+      <td>16/122, 16/128</td>
       <td>1x 500 GB</td>
     </tr>
     <tr>
@@ -3365,21 +3349,21 @@ $('#toc').on('click', 'a', function() {
       <td>1x 500 GB</td>
     </tr>
     <tr>
-      <td>20 GB</td>
-      <td>r4.4xlarge, r5.4xlarge</td>
-      <td>16/122, 16/128</td>
+      <td>192 GB</td>
+      <td>m5.24xlarge</td>
+      <td>96/384</td>
+      <td>1x 500 GB</td>
+    </tr>
+    <tr>
+      <td>250 GB</td>
+      <td>r4.16xlarge, r516xlarge</td>
+      <td>64/488, 64/512</td>
       <td>1x 500 GB</td>
     </tr>
     <tr>
       <td>384 GB</td>
       <td>r5.24xlarge</td>
       <td>96/768</td>
-      <td>1x 500 GB</td>
-    </tr>
-    <tr>
-      <td>192 GB</td>
-      <td>m5.24xlarge</td>
-      <td>96/384</td>
       <td>1x 500 GB</td>
     </tr>
   </tbody>
@@ -3427,7 +3411,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
