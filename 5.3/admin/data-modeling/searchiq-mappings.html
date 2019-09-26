@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Change SearchIQ language mappings."> -->
-<meta name="keywords" content="SearchIQ,  SearchIQ, "mappings file", teach">
+<!-- <meta name="description" content="In SearchIQ, you can change the language mappings established earlier, during initial configuration."> -->
+<meta name="keywords" content=",  ">
 <title>Edit the SearchIQ mappings | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Edit the SearchIQ mappings”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="When a user types a term in the SearchIQ search bar, one of the ways SearchIQ understands what the user means is through language mappings. Users can teach their language to SearchIQ using Teach SearchIQ your language." />
-<meta property="og:description" content="When a user types a term in the SearchIQ search bar, one of the ways SearchIQ understands what the user means is through language mappings. Users can teach their language to SearchIQ using Teach SearchIQ your language." />
+<meta name="description" content="Note: SearchIQ is in Beta SearchIQ is only available in English. The feature is off by default; to enable it, contact ThoughtSpot Support. You must have the Can use experimental features permission." />
+<meta property="og:description" content="Note: SearchIQ is in Beta SearchIQ is only available in English. The feature is off by default; to enable it, contact ThoughtSpot Support. You must have the Can use experimental features permission." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html"},"url":"https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html","headline":"[“Edit the SearchIQ mappings”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"When a user types a term in the SearchIQ search bar, one of the ways SearchIQ understands what the user means is through language mappings. Users can teach their language to SearchIQ using Teach SearchIQ your language.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html"},"url":"https://docs.thoughtspot.com/5.3/admin/data-modeling/searchiq-mappings.html","headline":"[“Edit the SearchIQ mappings”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"Note: SearchIQ is in Beta SearchIQ is only available in English. The feature is off by default; to enable it, contact ThoughtSpot Support. You must have the Can use experimental features permission.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3213,7 +3217,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Change SearchIQ language mappings.</div>
+    <div class="summary">In SearchIQ, you can change the language mappings established earlier, during initial configuration.</div>
    
 
     
@@ -3250,14 +3254,23 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span>
  -->
 
     
 
-  <p>When a user types a term in the SearchIQ search bar, one of the ways SearchIQ understands what the user means is through language mappings. Users can teach their language to SearchIQ using <a href="/5.3/end-user/search/teach-searchiq.html">Teach SearchIQ your language</a>.</p>
+  <div class="alert alert-info" role="alert">
+ <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is in Beta</strong></p>
+ <ul type="square">
+  <li>SearchIQ is only available in English.</li>
+  <li>The feature is off by default; to enable it, contact <a href="mailto:support@thoughtspot.com?subject=SearchIQ%20Reguest&amp;body=I%20want%20to%20try%20SearchIQ">ThoughtSpot Support</a>.</li>
+  <li>You must have the <strong>Can use experimental features</strong> permission.</li>
+</ul>
+</div>
+
+<p>When a user types a term in the SearchIQ search bar, SearchIQ interprets what the user means through language mappings. Users can teach their language to SearchIQ using <a href="/5.3/end-user/search/teach-searchiq.html">Teach SearchIQ your language</a>.</p>
 
 <p>As an administrator, you can see and change these language mappings by editing the mappings file. You can access the mappings file if you are in the Administrator group, because then you can have access to the <strong>ADMIN &gt; Data Management</strong> page. You can download the mappings file there. This allows you to view and edit all the language mappings users made, in bulk.</p>
 
@@ -3365,11 +3378,6 @@ ThoughtSpot before the changes will take effect. To upload the mapping file:</p>
     </div>
     <div >
         
-        
-        
-        
-        
-        
     </div>
 </div>
 
@@ -3382,9 +3390,9 @@ ThoughtSpot before the changes will take effect. To upload the mapping file:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 4/17/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 9/23/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

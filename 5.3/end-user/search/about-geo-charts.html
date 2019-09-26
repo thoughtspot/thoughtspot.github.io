@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Geo charts”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, which are:" />
-<meta property="og:description" content="Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, which are:" />
+<meta name="description" content="Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, depending on territory:" />
+<meta property="og:description" content="Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, depending on territory:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-20T13:38:28-07:00" />
+<meta property="article:published_time" content="2019-09-26T12:06:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html","headline":"[“Geo charts”]","dateModified":"2019-09-20T13:38:28-07:00","datePublished":"2019-09-20T13:38:28-07:00","description":"Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, which are:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/about-geo-charts.html","headline":"[“Geo charts”]","dateModified":"2019-09-26T12:06:35-07:00","datePublished":"2019-09-26T12:06:35-07:00","description":"Geo charts show data on a map by location. They are geo area, geo bubble, and geo heatmap charts. And these geo charts can display six types of geographical data, depending on territory:","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2098,6 +2098,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li><a href="/5.3/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3259,22 +3263,20 @@ $('#toc').on('click', 'a', function() {
 
   <p>Geo charts show data on a map by location. They are geo area, geo bubble, and
 geo heatmap charts. And these geo charts can display six types of geographical
-data, which are:</p>
+data, depending on territory:</p>
 
 <ul>
   <li>Country</li>
   <li>State</li>
   <li>County</li>
-  <li>Zipcode</li>
+  <li>Zip code</li>
   <li>Point (latitude/longitude)</li>
   <li>Other sub-nation regions (for international countries)</li>
 </ul>
 
-<p>In addition to the United States, ThoughtSpot also supports maps for the
-Canadian province/count maps, United Kingdom, Germany, Sweden, South Africa, and
-France.</p>
+<p>ThoughtSpot supports maps many countries. Please see the complete list in <a href="/5.3/reference/geomap-reference.html">Geo Map Reference</a>.</p>
 
-<h2 id="geo-data-that-can-be-displayed">Geo data that can be displayed</h2>
+<h2 id="displayed-geo-data">Displayed Geo data</h2>
 
 <p>Here is a table that shows which GeoType data can be displayed using which geo chart type.</p>
 
@@ -3315,39 +3317,36 @@ France.</p>
     <tr>
       <td>Other sub-nation regions</td>
       <td>Geo area (default), geo bubble, geo heatmap</td>
-      <td>The display will depend on the type of administrative region chosen.</td>
+      <td>The display depends on the type of administrative region.</td>
     </tr>
   </tbody>
 </table>
 
-<p>For data to be displayed using geo charts, your administrator must configure it
-as geographical data. If you are expecting to be able to get a map
-visualization, but it isn’t available, contact your administrator so they can
-make the configuration.</p>
+<p>For data to display in geo charts, your administrator must configure it
+as geographical data. If you you don’t get an expected map
+visualization, contact your administrator so they can configure the system correctly.</p>
 
 <h2 id="area-charts">Area charts</h2>
 
-<p>Geo area charts highlight the regions of interest. Point data
-(longitude/latitude) doesn’t work on geo area charts. Also, only geo area charts
-display boundaries for counties.</p>
+<p>Geo area charts highlight the regions of interest, and
+display boundaries for various regions.</p>
 
 <p><img src="/5.3/images/state_level_geo_area_chart.png" alt="" title="Geo area chart example" /></p>
 
-<p>Your search needs one geographical column of granularity to be represented as a geo area chart.</p>
+<p>To paint a geo area chart, your search must include a geographical column with appropriate granularity. See <a href="/5.3/reference/geomap-reference.html">Geo Map Reference</a>.</p>
 
 <h2 id="geo-bubble-charts">Geo bubble charts</h2>
 
-<p>Geo bubble charts, like bubble charts, display the value of the measure by the
-size of the bubble. Zip code data makes the most sense for geo bubble charts.</p>
+<p>Geo bubble charts, like bubble charts, display the value of the measure through the relative
+size of the bubble. Zip code data is a good choice for geo bubble charts.</p>
 
 <p><img src="/5.3/images/geo_bubble_chart_example.png" alt="" title="Geo bubble chart example" /></p>
 
-<p>Your search needs one geographical column or a pair of latitude and longitude
-columns to be represented as a geo bubble chart.</p>
+<p>To paint a geo bubble chart, your search must include a geographical column, or a  latitude and longitude pair.</p>
 
 <h2 id="heatmap-charts">Heatmap charts</h2>
 
-<p>Heatmap charts are similar to treemap charts in that they both use a similar
+<p>Heatmap charts are similar to treemap charts: they both use a similar
 system of color-coding to represent data values. However, the heatmap does not
 use size to measure data, and instead requires an additional attribute.</p>
 
@@ -3381,9 +3380,9 @@ use size to measure data, and instead requires an additional attribute.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 20, 2019 <br />
+        Generated: Sep 26, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 09/23/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
