@@ -38,14 +38,11 @@ When you create your connection to a Snowflake database, by default, it is a **L
 | *Search Suggestions for column values* | No | Yes |
 | *Headlines at the bottom that summarize tables* | Yes | Yes |
 | *All Chart Types & Configurations* | Yes | Yes |
-| *SpotIQ Instant Insights* | Yes | Yes |
+| *SpotIQ Instant Insights* | No | Yes |
 | *SpotIQ pre-computed insights* | No | Yes |
-| *Table & Column Remapping* | No | No |
+| *Table and Column Remapping* | No | N/A |
 | *Custom Calendar* | No | Yes |
-| *Hot & Cold Data* | No | N/A |
-| *Pass Through Security* | No | N/A |
-| *Sync using ODBC / JDBC driver of target database* | Yes | N/A |
-| *Sync using Bulk Loading capability of target database for faster syncing* | No | N/A |
+| *Materialized Views* | No | Yes |
 
 ## Next steps
 
