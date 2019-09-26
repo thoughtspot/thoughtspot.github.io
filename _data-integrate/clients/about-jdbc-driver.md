@@ -1,6 +1,6 @@
 ---
 title: [JDBC Driver Overview]
-keywords: jdbc,driver,database,connect
+
 last_updated: tbd
 tags: [performance]
 summary: "Use JDBC to interact with databases in a standard manner."

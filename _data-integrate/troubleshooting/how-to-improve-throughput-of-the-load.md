@@ -1,6 +1,6 @@
 ---
 title: [How to improve throughput]
-keywords: performance
+
 tags: [performance]
 last_updated: tbd
 summary: "Adjusting the transaction size may correct poor performance and low throughput."
