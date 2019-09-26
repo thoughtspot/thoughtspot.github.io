@@ -1,7 +1,5 @@
 ---
 title: [Encryption of data in transit within a cluster]
-
-tags: tbd
 summary:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
