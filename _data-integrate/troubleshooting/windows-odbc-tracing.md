@@ -1,7 +1,7 @@
 ---
 title: [ODBC tracing on Windows]
 
-tags: [logs]
+
 summary: "Using logs to aid in troubleshooting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

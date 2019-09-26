@@ -1,7 +1,7 @@
 ---
 title: [Enable JDBC Logs]
 
-tags: [logs]
+
 summary: "Configure logging parameter strings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

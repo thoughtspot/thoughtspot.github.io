@@ -2,7 +2,7 @@
 title: [JDBC Driver Overview]
 
 last_updated: tbd
-tags: [performance]
+
 summary: "Use JDBC to interact with databases in a standard manner."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

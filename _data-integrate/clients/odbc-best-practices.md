@@ -1,6 +1,6 @@
 ---
 title: [Best Practices for Using ODBC]
-tags: [bestpractices]
+
 
 last_updated: tbd
 toc: false

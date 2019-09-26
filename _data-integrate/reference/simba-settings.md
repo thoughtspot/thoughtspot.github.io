@@ -1,7 +1,7 @@
 ---
 title: [Connection configuration]
 
-tags: [tsload]
+
 summary: "Lists the properties you can set for ODBC or JDBC connections"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,6 @@
 ---
 title: [Data Connect best practices]
-tags: [bestpractices]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar
