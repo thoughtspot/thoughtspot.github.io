@@ -1,7 +1,7 @@
 ---
 title: [About R in ThoughtSpot]
-tags: [r-scripts,customize]
-keywords: R, "R scripts", "scripts"
+
+
 summary: "You can run an R analysis on your data, using ThoughtSpot provided scripts, or custom scripts shared with your team. R visualizations can be shared as answers and pinboards."
 last_updated: tbd
 sidebar: mydoc_sidebar

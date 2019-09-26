@@ -1,7 +1,7 @@
 ---
 title: [Save and share R visualizations]
-tags: [r-scripts]
-keywords: R
+
+
 summary: "You can save and share R analyses as answers and pinboards."
 last_updated: tbd
 sidebar: mydoc_sidebar

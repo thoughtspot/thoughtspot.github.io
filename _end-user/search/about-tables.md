@@ -1,6 +1,6 @@
 ---
 title: [Results that are tables]
-tags: [keywords]
+
 
 last_updated: tbd
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
