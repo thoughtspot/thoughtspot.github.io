@@ -1,6 +1,5 @@
 ---
 title: ["Help Center"]
-keywords: help, center, thoughtspot
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
