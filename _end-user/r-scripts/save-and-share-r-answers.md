@@ -1,7 +1,5 @@
 ---
 title: [Save and share R visualizations]
-
-
 summary: "You can save and share R analyses as answers and pinboards."
 last_updated: tbd
 sidebar: mydoc_sidebar

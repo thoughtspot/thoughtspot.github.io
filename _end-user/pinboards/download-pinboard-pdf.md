@@ -1,6 +1,5 @@
 ---
 title: [Download a pinboard as PDF]
-
 last_updated: 06/30/2019
 summary: "In ThoughtSpot, you can download the entire pinboard in PDF format."
 sidebar: mydoc_sidebar

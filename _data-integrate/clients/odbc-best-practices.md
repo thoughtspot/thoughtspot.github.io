@@ -1,7 +1,5 @@
 ---
 title: [Best Practices for Using ODBC]
-
-
 last_updated: tbd
 toc: false
 summary: "To successfully use ODBC, following these best practices is recommended."

@@ -1,6 +1,5 @@
 ---
 title: [More help and support]
-
 last_updated: tbd
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar

@@ -1,7 +1,5 @@
 ---
 title: [Run prebuilt R scripts on answers]
-
-
 summary: "Anyone with R privileges can run an R analysis ThoughtSpot using provided scripts, you don't need to be an expert. "
 last_updated: tbd
 sidebar: mydoc_sidebar

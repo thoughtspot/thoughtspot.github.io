@@ -1,6 +1,5 @@
 ---
 title: [Onboarding Users]
-
 last_updated: 07/25/2019
 toc: true
 summary: "In ThoughtSpot, you can onboard users quickly, and teach them how to use the application efficiently."

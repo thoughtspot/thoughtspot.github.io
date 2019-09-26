@@ -1,7 +1,5 @@
 ---
 title: [Create and share R scripts]
-
-
 summary: "You can create and share your custom R scripts in ThoughtSpot."
 last_updated: tbd
 sidebar: mydoc_sidebar

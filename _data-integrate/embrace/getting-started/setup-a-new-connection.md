@@ -1,7 +1,5 @@
 ---
 title: [Add a connection]
-
-
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
