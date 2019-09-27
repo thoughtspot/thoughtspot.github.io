@@ -1,7 +1,7 @@
 ---
 title: [Percent (simple number) calculations]
 
-tags: [formulas]
+
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

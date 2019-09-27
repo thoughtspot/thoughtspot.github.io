@@ -1,7 +1,7 @@
 ---
 title: [Configure authentication through Active Directory]
-tags: [SAML_LDAP_AD, tscli]
-keywords: LDAP, "Active Directory"
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

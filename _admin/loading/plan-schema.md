@@ -1,7 +1,7 @@
 ---
 title: [Schema planning concepts]
-tags: [Modeling]
-keywords: loader,TQL,DDL
+
+
 last_updated: tbd
 summary: "Considerations in creating a schema for the ThoughtSpot Loader."
 sidebar: mydoc_sidebar

@@ -1,7 +1,5 @@
 ---
 title: [Understanding privileges]
-tags: [spotiq]
-
 last_updated: 07/31/2019
 summary: "The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership.
 "

@@ -1,6 +1,6 @@
 ---
 title: [Candlestick charts]
-keywords: financial, candlestick, open-close, price fluctuation
+
 last_updated: 07-26-2019
 summary: "A candlestick chart describes price movements of financial instruments, such as stocks, derivatives, currencies, and commodities."
 sidebar: mydoc_sidebar

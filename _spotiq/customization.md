@@ -1,7 +1,5 @@
 ---
 title: [Custom SpotIQ analysis]
-tags: [spotiq,indexing]
-keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

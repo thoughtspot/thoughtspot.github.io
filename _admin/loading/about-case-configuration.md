@@ -1,6 +1,6 @@
 ---
 title: [Configure casing]
-keywords: case,"data load",configure,lowercase,uppercase
+
 last_updated: tbd
 summary: "You can set the type of case sensitivity you would like to see reflected in the ThoughtSpot display."
 sidebar: mydoc_sidebar

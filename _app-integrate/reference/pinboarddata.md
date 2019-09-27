@@ -1,6 +1,6 @@
 ---
 title: [Pinboard Data API]
-keywords: REST,API,data,"REST API",pinboard
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

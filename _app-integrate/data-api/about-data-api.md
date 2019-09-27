@@ -1,6 +1,6 @@
 ---
 title: [About the Data REST API]
-keywords: REST,API,data,authentication,public
+
 last_updated: tbd
 summary: "The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
 sidebar: mydoc_sidebar

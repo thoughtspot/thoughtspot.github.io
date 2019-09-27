@@ -1,6 +1,6 @@
 ---
 title: [Schedule materialization refresh on a view]
-keywords: materialize,views,schedule
+
 last_updated: 11/2/2018
 summary: "Learn how to schedule materialization refresh of a view to keep it in synch with the data that makes it up."
 toc: false

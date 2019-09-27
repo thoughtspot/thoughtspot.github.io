@@ -1,6 +1,6 @@
 ---
 title: [Deploy AWS using CloudFormation CLI]
-keywords: AWS, AMI
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

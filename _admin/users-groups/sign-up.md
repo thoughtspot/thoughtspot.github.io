@@ -1,6 +1,6 @@
 ---
 title: ["Allow users to sign up"]
-keywords: "register, onboard, request access, sign up"
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

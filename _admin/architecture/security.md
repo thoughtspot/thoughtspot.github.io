@@ -1,7 +1,7 @@
 ---
 title: [Data and object security]
-keywords: "data,security,row level security,privileges"
-tags: [rls,cls,security]
+
+
 last_updated: 08/13/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

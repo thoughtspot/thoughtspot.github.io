@@ -1,6 +1,6 @@
 ---
 title: [Embed pinboard or visualization]
-keywords: embed,sample,client,example
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 toc: true

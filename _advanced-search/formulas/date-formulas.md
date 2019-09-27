@@ -1,7 +1,7 @@
 ---
 title: [About date formulas]
 
-tags: [dates, formulas]
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar

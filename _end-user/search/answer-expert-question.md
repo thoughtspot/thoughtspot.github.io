@@ -1,6 +1,6 @@
 ---
 title: ["Answer an expert question"]
-keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
+
 last_updated: 4/16/2019
 summary: "You're the expert. Now what? Here's how to answer a request from Ask an Expert."
 sidebar: mydoc_sidebar

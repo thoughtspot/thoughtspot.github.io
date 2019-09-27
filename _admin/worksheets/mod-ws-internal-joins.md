@@ -1,6 +1,6 @@
 ---
 title: [Modify joins within a worksheet]
-keywords: worksheet view join relationship
+
 last_updated: 11/2/2018
 summary: "Learn how to change the join type between the tables within a worksheet"
 toc: true

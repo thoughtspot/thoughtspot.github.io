@@ -1,7 +1,5 @@
 ---
 title: [Connection configuration]
-keywords: simba,odbc,jdbc
-tags: [tsload]
 summary: "Lists the properties you can set for ODBC or JDBC connections"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

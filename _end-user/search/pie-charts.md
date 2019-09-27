@@ -1,6 +1,6 @@
 ---
 title: [Pie charts]
-keywords: pie, chart, visualization, proportional
+
 last_updated: 07-01-2019
 summary: "A pie (or a circle) chart is a statistical graphic that divides data into slices to illustrate numerical proportion. In a pie chart, the arc length of a slice is proportional to the quantity it represents."
 sidebar: mydoc_sidebar

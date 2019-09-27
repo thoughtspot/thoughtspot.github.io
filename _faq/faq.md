@@ -1,6 +1,5 @@
 ---
 title: ["Frequently asked questions"]
-keywords: help, center, faq
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar

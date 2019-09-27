@@ -1,6 +1,6 @@
 ---
 title: [Materialization API]
-keywords: REST,API,data,"REST API"
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

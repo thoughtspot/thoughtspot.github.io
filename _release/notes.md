@@ -1,7 +1,6 @@
 ---
 title: ["5.3 Release Notes"]
 toc: false
-keywords: "release notes"
 last_updated: July 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

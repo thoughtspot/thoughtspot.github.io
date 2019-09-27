@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-keywords: live query, external database, connectors
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar

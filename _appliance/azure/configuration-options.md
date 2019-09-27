@@ -1,7 +1,7 @@
 ---
 title: [Azure configuration options]
-keywords: Azure, configuration
-tags: [performance]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

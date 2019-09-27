@@ -1,7 +1,7 @@
 ---
 title: ["Manage expert requests"]
-keywords: search,expert,ask an expert
-tags: [expert,SearchIQ]
+
+
 last_updated: 08/01/2019
 summary: "You can monitor and manage Ask and Expert requests, both as a requester and as an expert."
 sidebar: mydoc_sidebar

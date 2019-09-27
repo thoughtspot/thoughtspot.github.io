@@ -1,6 +1,6 @@
 ---
 title: [Use the Data Push API]
-keywords: REST,API,data,direct,pull
+
 last_updated: 11/4/2018
 summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application"
 sidebar: mydoc_sidebar

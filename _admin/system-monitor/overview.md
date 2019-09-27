@@ -1,7 +1,7 @@
 ---
 title: [Overview board]
-keywords: monitor,system,actions,user,cluster,nodes,version
-tags: [indexing]
+
+
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

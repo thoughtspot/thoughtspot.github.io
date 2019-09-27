@@ -1,7 +1,6 @@
 ---
 title: ["ThoughtSpot 5.3 PDFs"]
 toc: false
-keywords: downloads
 last_updated: 07/12/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

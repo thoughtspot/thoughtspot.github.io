@@ -1,6 +1,6 @@
 ---
 title: [Set up high availability for AWS]
-keywords: AWS, AMI
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

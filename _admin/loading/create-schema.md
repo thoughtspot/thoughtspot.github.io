@@ -1,7 +1,7 @@
 ---
 title: [Overview of schema building]
-tags: [Modeling, TQL]
-keywords: "SQL,data schema,TQL"
+
+
 last_updated: tbd
 summary: "Before you can load data into ThoughtSpot, you must build a database schema to receive it. "
 sidebar: mydoc_sidebar

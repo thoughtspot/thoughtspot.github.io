@@ -1,6 +1,5 @@
 ---
 title: [Column charts]
-
 last_updated: tbd
 summary: "A column chart is the most versatile chart type"
 sidebar: mydoc_sidebar

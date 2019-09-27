@@ -1,6 +1,6 @@
 ---
 title: [Overview of security features]
-tags: [security]
+
 
 summary:
 sidebar: mydoc_sidebar
