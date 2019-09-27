@@ -9,32 +9,32 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.3.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3<!--.1--> is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-* [5.3.1 New Features](#531-new)
-* [5.3.1 Fixed Issues](#531-fixed)
+<!-- * [5.3.1 New Features](#531-new)
+* [5.3.1 Fixed Issues](#531-fixed) -->
 * [5.3 New Features](#53-new)
 * [5.3 Fixed Issues](#53-fixed)
 * [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3.1 release
+If you are running one of the following versions, you can upgrade to the 5.3<!--.1--> release
 directly:
 
-* 5.3 to 5.3.1
-* 5.2.x to 5.3.1
-* 5.1.x to 5.3.1
+<!--* 5.3 to 5.3.1-->
+* 5.2.x to 5.3<!--.1-->
+* 5.1.x to 5.3<!--.1-->
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x, version 5.2.x, or version 5.3 and then to the 5.3.1 release.
+First, upgrade to version 5.1.x, <!--version 5.2.x, or version 5.3-->or 5.2.x, and then to the 5.3<!--.1--> release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
-{: id="531-new"}
+<!--{: id="531-new"}
 ## 5.3.1 New Features and Functionality
 
 TBD
@@ -58,7 +58,7 @@ A problem in custom calendar where filtering the date values by year, month or q
 
 A problem where Canadian postal codes do not appear on maps is now fixed.
 
-An issue where the Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo is now fixed.
+An issue where the Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo is now fixed.-->
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
