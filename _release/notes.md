@@ -40,19 +40,19 @@ First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 
 {: id="531-fixed"}
 ## 5.3.1 Fixed Issues
 
-An issue running a query filtering on a date field using a custom calendar where a table that has joins on that date causes a database error is now fixed.
+An issue when using a custom calendar where a query that filters on a date field causes a database error is now fixed.
 
-A problem where a user tries to sign in to ThoughtSpot multiple times in quick succession causes them to get a 500 error is now fixed.
+A problem where signing in to ThoughtSpot multiple times in quick succession causes a 500 error is now fixed.
 
 An issue when row-level security is used, where a 2-column join in a fan-trap query does not work if the column contains NULL data/values is now fixed.
 
-An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+A problem where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
 
-A problem where columns renamed in a worksheet revert back to original names later is now fixed.
+An issue where columns renamed in a worksheet revert back to their original names later is now fixed.
 
-An issue where columns cannot be deleted from a worksheet is now fixed.
+A problem where columns cannot be deleted from a worksheet is now fixed.
 
-A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+An issue in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
 
 A problem where Canadian postal codes do not appear on maps is now fixed.
 
