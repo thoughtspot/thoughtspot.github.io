@@ -32,11 +32,7 @@ Refer to the following guidelines for how to set up ThoughtSpot on each cloud se
 
 ## Reducing your cloud infrastructure costs
 
-ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.
-
-### Heterogeneous cluster configuration
-
-Prior to the 5.3.1 release, each cluster was homogeneous. Each node in a cluster had the same configuration and resources, and ran the same services. With heterogeneous clusters, now different nodes in the cluster run different services. Each VM in the cluster is sized to match the resource needs of each service. This configuration reduces the cost of the cluster for large cluster sizes, since the compute cost is more optimized than the homogeneous configuration in previous releases.  
+ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment. 
 
 ### Use small and medium instance types when applicable
 

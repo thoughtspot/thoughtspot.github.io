@@ -36,9 +36,6 @@ First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 
 {: id="531-new"}
 ## 5.3.1 New Features and Functionality
 
-### Heterogeneous cluster configuration for cloud deployment
-
-With heterogeneous clusters, now different nodes in the cluster run different services. Because each VM in the cluster is sized to match the resource needs of each service, this configuration reduces the cost of the cluster for large cluster sizes, since the compute cost is more optimized than the homogeneous configuration in previous releases.
 
 {: id="531-fixed"}
 ## 5.3.1 Fixed Issues
