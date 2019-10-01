@@ -15,7 +15,8 @@ fixed issues from the previous releases, and any known issues.
 * [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
 * [5.3 Fixed Issues](#53-fixed)
-* [Notes for older versions](#notes-for-older-versions)
+* [Beta Programs](#beta-program)
+* [Notes from Older Versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
@@ -36,6 +37,8 @@ First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 
 {: id="531-new"}
 ## 5.3.1 New Features and Functionality
 
+### Streamlined AWS data loading from an S3 bucket
+You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials or root when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
 
 {: id="531-fixed"}
 ## 5.3.1 Fixed Issues
@@ -186,8 +189,17 @@ We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/download
 
 - A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
 
+{: id="beta-program"}
+## Beta Programs
+If you are interesting in testing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
+We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+These features are currently in Beta. Please contact us if you are interested in participating.
+- [SearchIQ](mailto:BetaProram@thoughtspot.com?subject=SearchIQ%20Beta%20Program%20Request)
+- [Explore](mailto:BetaProram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request)
+- [Embrace](mailto:BetaProram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request)
+
 {: id="notes-for-older-versions"}
-## Notes from older versions
+## Notes from Older Versions
 
 * [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
 * [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
