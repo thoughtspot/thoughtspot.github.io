@@ -20,7 +20,7 @@ fixed issues from the previous releases, and any known issues.
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3<!--.1--> release
+If you are running one of the following versions, you can upgrade to the 5.3.1 release
 directly:
 
 * 5.3 to 5.3.1
