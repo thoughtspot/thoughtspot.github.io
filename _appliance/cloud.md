@@ -32,7 +32,7 @@ Refer to the following guidelines for how to set up ThoughtSpot on each cloud se
 
 ## Reducing your cloud infrastructure costs
 
-ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.  
+ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment. 
 
 ### Use small and medium instance types when applicable
 
