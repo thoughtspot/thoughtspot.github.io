@@ -191,12 +191,12 @@ We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/download
 
 {: id="beta-program"}
 ## Beta Programs
-If you are interesting in testing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
+If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-These features are currently in Beta. Please contact us if you are interested in participating.
-- [SearchIQ](mailto:BetaProram@thoughtspot.com?subject=SearchIQ%20Beta%20Program%20Request)
-- [Explore](mailto:BetaProram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request)
-- [Embrace](mailto:BetaProram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request)
+These features are currently in Beta. Please contact us if you are interested in participating:
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
+Collapse
 
 {: id="notes-for-older-versions"}
 ## Notes from Older Versions

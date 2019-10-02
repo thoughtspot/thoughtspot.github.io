@@ -102,14 +102,16 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
     * AWS S3 region
 
-    * AWS S3 credentials (accesskey;secret_key) ***(Not needed in 5.3.1 release, if S3 read-only role is assigned to your instance)***
+    * AWS S3 credentials (accesskey;secret_key)__*__
 
-    * AWS S3 root (prefix for S3 object search path) ***(Not needed in 5.3.1 release, if S3 read-only role is assigned to your instance)***
+    * AWS S3 root (prefix for S3 object search path)__*__
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
     * `--aws_s3_bucket_name "<bucket name>"` <br>
     * `--aws_s3_region_name "<region name>"` <br>
-    * `--aws_s3_credentials "<credentials>"` ***(Not needed in 5.3.1 release, if S3 read-only role is assigned to your instance)*** <br>
+    * `--aws_s3_credentials "<credentials>"`__*__ <br>
     * `--aws_s3_root "<search path>"`
+
+    {% include note.html content="<b>*<b>AWS S3 credentials, and AWS S3 root are not used in the 5.3.1 release, if an S3 read-only role is assigned to your instance." %}
 
 4.  After the processing begins, you can see messages that indicate the progress, and then source and load summary messages after the load is complete.    
