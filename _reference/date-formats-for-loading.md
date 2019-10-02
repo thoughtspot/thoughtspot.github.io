@@ -17,7 +17,7 @@ time when you load data in these contexts:
 Data loading formats do not change how data is displayed in tables and charts.
 
 The context where you _can control_ date and time formats is data modeling. Data
-modeling controls how data is displayed in search and their resulting answers.
+modeling controls how data is displayed in search and their resulting answers..
 
 ## Data loading formats through tsload
 
