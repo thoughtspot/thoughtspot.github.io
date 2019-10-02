@@ -196,7 +196,6 @@ We like to have a diversity of experience and perspective, and want to hear from
 These features are currently in Beta. Please contact us if you are interested in participating:
 - Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
 - Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
-Collapse
 
 {: id="notes-for-older-versions"}
 ## Notes from Older Versions
