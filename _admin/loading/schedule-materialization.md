@@ -18,21 +18,19 @@ To schedule materialization of a view:
 
 3. Click **Schema**.
 
-4. Under **Materialization**, click the link next to **Update Schedule:**.
+4. Under **Materialization**, click the link next to **Update Schedule**.
 
-5. In the **Schedule data updates** dialog, select an option for **Repeats** (Monthly, Weekly, or Daily).
+5. In the **Schedule Data Updates** dialog, select an option for **Repeats** (Monthly, Weekly, or Daily).
 
    ![]({{ site.baseurl }}/images/materialized-view-sched-weekly.png)
-
-   If you don't want to set a schedule now, choose **Setup later** and skip to Step 11.
 
 6. Fill in the schedule details:
 
    ![]({{ site.baseurl }}/images/schedule-data-updates-weekly.png)
 
-7. Click **Update**.
+7. Click **SCHEDULE**.
 
-{% include note.html content="Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable." %}
+{% include note.html content="Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable using the flag `orion.materializationConfig.refreshWindowStartTime` which can be set to values such as `12:00PM` or `01:00AM` etc. Example: To set the cluster window from 2:00 AM to 10:00 AM you can set the flag as `orion.materializationConfig.refreshWindowStartTime \"02:00AM\"`."%}
 
 ## Related Information
 
