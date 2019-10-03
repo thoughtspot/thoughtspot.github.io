@@ -139,15 +139,15 @@ The following table provides a description of each command-line switch available
         </tr>
 		<tr>
 	      <td><code>--purge</code></td>
-	      <td>When used, this purges any users that exist in ThoughtSpot, but not in AD.</td>
+	      <td>Purges any users that exist in ThoughtSpot, but not in AD.</td>
         </tr>
 		<tr>
 	      <td><code>--basedn</code></td>
-	      <td>The place in the directory that will be searched for users.</td>
+	      <td>Place in the directory that will be searched for users.</td>
         </tr>
 		<tr>
 	      <td><code>--filter_str</code></td>
-	      <td>Allows you to further filter results from your base DN.</td>
+	      <td>Further filters results from your base DN.</td>
         </tr>
 		<tr>
 	      <td><code>--include_nontree_members</code></td>
