@@ -20,14 +20,14 @@ Ask your ThoughtSpot liaison for access to this image. We need the Google accoun
 
 ### Overview
 
-Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll do this on Google Compute Engine, the GCP platform for [creating and running VMs](https).
+Before you can create a ThoughtSpot cluster, you must provision VMs.  We'll do this on the Google Compute Engine (GCP) platform for [creating and running VMs](https).
 
 The following topics walk you through this process.
 
 ###  Prerequisites
 
-1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be spun up for your ThoughtSpot cluster. 
-2. A performant ThoughtSpot cluster requires 10Gb/s bandwidth or better between any two nodes. This needs to be established before creating a new cluster.
+1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be used in your ThoughtSpot cluster. 
+2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. This must be established before creating a new cluster.
 
 ###  Create an instance
 
