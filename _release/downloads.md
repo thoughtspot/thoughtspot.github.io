@@ -28,11 +28,8 @@ See [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients
 ## JavaScript API ##
 For the JavaScript API, see the [JavaScript API library](https://thoughtspot.egnyte.com/dl/D8tbICaVbR/).
 
-## Embedding ThoughtSpot ##
-For information on ThoughtSpot Extended Enterprise Edition, our embeddable offering, see [**Embedding**]({{ site.baseurl }}/app-integrate/introduction/introduction.html).
 
-## Virtual Platforms ##
 
-* **VMware**<br>
-[ts-centos7-vmware-template.tar.gz](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr)<br>
-[Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html)
+
+
+
