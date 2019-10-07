@@ -246,13 +246,14 @@ To delete existing groups, follow these steps:
 
 6. Click **Delete**.
 
-    [Delete Groups]({{ site.baseurl }}/images/delete-group.png "Delete Groups")
+    ![Delete Groups]({{ site.baseurl }}/images/delete-group.png "Delete Groups")
 
 {: id="list-group-members"}
 ## List group members
 
 When browsing through users or subgroups, you can often see only a limited list. To check for other users, search for the name of a specific user or subgroup.
 
+{: id="add-users-to-groups"}
 ## Add multiple users to a group
 
 To add multiple users to a group, you must be on the **Users** interface. Follow these steps:
