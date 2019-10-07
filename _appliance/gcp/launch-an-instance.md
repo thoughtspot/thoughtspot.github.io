@@ -20,7 +20,7 @@ Ask your ThoughtSpot liaison for access to this image. We need the Google accoun
 
 ### Overview
 
-Before you can create a ThoughtSpot cluster, you must provision VMs.  You do this using the Google Compute Engine (GCP) platform for [creating and running VMs](https).
+Before you can create a ThoughtSpot cluster, you must provision VMs.  You use the Google Compute Engine (GCP) platform for [creating and running VMs](https).
 
 The following topics walk you through this process.
 
