@@ -38,7 +38,7 @@ To change your email, navigate to **My Profile**. Under **Information**, enter a
 
 
 {: id="language" }
-## Language and data format settings ##
+## Change language and data format settings ##
 
 To change your language, navigate to **My Profile**. Under **Preferences**, see the **Language** option to set the language.
 
@@ -47,7 +47,7 @@ To change your language, navigate to **My Profile**. Under **Preferences**, see 
 {% include content/set_locale.md %}
 
 {: id="notifications" }
-## Notifications
+## Update sharing notification settings
 
 Under **Preferences**, see the **Notifications** option.
 
