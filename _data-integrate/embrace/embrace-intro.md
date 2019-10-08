@@ -19,6 +19,7 @@ You create a connection to a Snowflake database, choosing the columns from each 
 - Centralize data management and governance in Snowflake.
 - Save significant time and money by avoiding ETL pipelines.
 - Set up and schedule sync of data into ThoughtSpot.
+- Connect to multiple Snowflake databases (starting in release 5.3.1).
 
 ## Embrace modes
 
@@ -52,5 +53,5 @@ Create the connection between ThoughtSpot and tables in a Snowflake database.
 Set your connection to copy tables from Snowflake into ThoughtSpot.
 -   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
 Edit, remap or delete a connection to tables in a Snowflake database.
-- **[Know database connector details]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
+- **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Source cloud data connectors, and their connection credentials, supported by Embrace.

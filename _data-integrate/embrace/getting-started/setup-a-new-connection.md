@@ -41,6 +41,6 @@ Not all of ThoughtSpot's features are supported with linked tables. For details,
 
 ## Related information
 - [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)
-- [Know Embrace connector]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)
-- [Data sources management]({{ site.baseurl }}/admin/loading/loading-intro.html)
-- [Data security]({{ site.baseurl }}/admin/architecture/security.html)
+- [Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)
+- [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
+- [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)
