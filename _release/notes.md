@@ -38,7 +38,7 @@ First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 
 ## 5.3.1 New Features and Functionality
 
 ### Onboarding
-In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-a-group) and
+In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group) and
 [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface).
 
 ### Embrace
