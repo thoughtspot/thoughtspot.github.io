@@ -27,7 +27,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
 | --- | --- | --- |--- |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32,256 | 2X 400 GB |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB |
 | 192 GB | m5.24xlarge | 96/384 | 2X 1 TB |
 | 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 2x 1 TB |
 | 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB |
@@ -39,7 +39,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
 | --- | --- | --- |--- |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32, 256 | 1x 500 GB |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB |
 | 192 GB | m5.24xlarge | 96/384 | 1x 500 GB |
 | 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 1x 500 GB |
 | 384 GB | r5.24xlarge | 96/768 | 1x 500 GB |
