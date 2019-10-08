@@ -58,23 +58,25 @@ You can now load data from an S3 bucket into your ThoughtSpot AWS instance faste
 {: id="531-fixed"}
 ## 5.3.1 Fixed Issues
 
-An issue when using a custom calendar where a query that filters on a date field causes a database error is now fixed.
+The following issues are fixed in the 5.3.1 release:
 
-A problem where signing in to ThoughtSpot multiple times in quick succession causes a 500 error is now fixed.
+- Using a custom calendar, and doing a query that filters on a date field causes a database error.
 
-An issue when row-level security is used, where a 2-column join in a fan-trap query does not work if the column contains NULL data/values is now fixed.
+- Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.
 
-A problem where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+- When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.
 
-An issue where columns renamed in a worksheet revert back to their original names later is now fixed.
+- Opening certain pinboards can cause the Google Chrome browser to freeze.
 
-A problem where columns cannot be deleted from a worksheet is now fixed.
+- Columns renamed in a worksheet revert back to their original names later.
 
-An issue in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+- Columns cannot be deleted from a worksheet.
 
-A problem where Canadian postal codes do not appear on maps is now fixed.
+- Using a custom calendar and filtering date values by year, month or quarter does not work.
 
-An issue where the Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo is now fixed.
+- Canadian postal codes do not appear on maps.
+
+- The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
