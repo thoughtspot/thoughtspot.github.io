@@ -131,7 +131,7 @@ We added a new chart that shows price movements of financial instruments. You ca
 SpotIQ Analysis now supports more complex measurements:  
 * _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
 
-See [Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-analysis.html).
+See [Comparative Analysis]({{ site.baseurl }}/spotiq/comparative-analysis.html).
 
 ### SpotIQ simplified feedback
 

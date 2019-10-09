@@ -1,25 +1,26 @@
 ---
 title: [Comparative Analysis]
 summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
-last_updated: 07/26/2019
+last_updated: 10/09/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-With SpotIQ competitive analysis, you can compare two data points for simple or complex measures:  
+SpotIQ competitive analysis compares data points of simple or complex measures using these aggregates:  
   * _Sum_
   * _Count_
-  * _Sum over sum_, which generate a pinboard that has 'what-if' percentage insights
-  * _Average_, which generate a pinboard that has 'what-if' percentage insights
+  * _Sum over sum_, which generate a Pinboard that has 'what-if' percentage insights
+  * _Average_, which generate a Pinboard that has 'what-if' percentage insights
   * Other functions which use a 'versus' analysis to show the absolute change grouped by different drill attributes
 
+{: id="basic-comparative-analysis" }
 ## Basic Comparative Analysis in SpotIQ ##
 
 To perform this analysis, follow these steps:  
 
 1. On a column chart, hold down the command key \(Mac OS\) or control key \(Linux or Windows\).  
 
-2. Click the two columns you plan to compare. Here, we are comparing the results for _San Francisco_ and _Atlanta_ stores.
+2. Click the two columns you plan to compare. Here, we are comparing the results for the _San Francisco_ and _Atlanta_ stores.
 
 3. Right-click to see the drop-down menu, and select **SpotIQ Analyze**.  
    ![]({{ site.baseurl }}/images/comparative-analysis-1.png "Starting comparative analysis")
@@ -35,7 +36,7 @@ To perform this analysis, follow these steps:
 
   ![]({{ site.baseurl }}/images/comparative-analysis-3.png "Analyze selected columns")
 
-
+{: id="viewing-results" }
 ## Viewing Results ##
 
 Notice that ThoughtSpot saves the results of SpotIQ analysis for 24 hours.
@@ -52,11 +53,11 @@ To view the results of your analysis, follow these steps:
     Click _View Results_ to open the pinboard.
     ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
-3. In the report, SpotIQ generates a pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.  
+3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.  
 
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
-4. You can now examine each visualization in the analysis for details of comparison, give feedback on its usefulness, and so on.  
+4. You can now examine each visualization of the analysis for details of comparison, give feedback on its usefulness, and so on.  
   ![]({{ site.baseurl }}/images/comparative-analysis-7.png "Possible actions on SpotIQ visualizations")
 
 
@@ -67,6 +68,7 @@ To view the results of your analysis, follow these steps:
    | 3. | **Analysis details**. Get the name of the algorithm |
    | 4. | **More options**, including another round of SpotIQ analysis, download of data as a CSV file, editing this visualization, or editing a copy of the visualization. |
 
+{: id="advanced-comparative-analysis" }
 ## Advanced Comparative Analysis in SpotIQ ##
 
 ThoughtSpot ships with a number of comparative algorithms. Using the **Advanced** option of SpotIQ, you can adjust the parameters of the analysis, or choose a different comparative algorithm for your data.  
@@ -79,7 +81,6 @@ Under **Customize algorithm for comparative analysis**, adjust the options. In t
 
 ![]({{ site.baseurl }}/images/comparative-analysis-4.png "Advanced analysis Options")
 
-
-On the SpotIQ Feedback tab, you can see all SpotIQ feedback you have given. Insights that you disliked are pushed to the bottom of the list.
+On the SpotIQ Feedback tab, you can see all SpotIQ feedback gave. Insights that you disliked are pushed to the bottom of the list.
 
 ![]({{ site.baseurl }}/images/insight-feedback.png)
