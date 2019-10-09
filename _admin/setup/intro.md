@@ -1,6 +1,6 @@
 ---
 title: [About installation and upgrades]
-last_updated: 10/09/2019, 2016
+last_updated: 10/09/2019
 summary: "As administrator, you are responsible for setting up and configuring ThoughtSpot. This guide explains how. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,7 +15,7 @@ As administrator, you are responsible for setting up and configuring
 ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
 some common problems, finding additional resources, and contacting ThoughtSpot.
 
-{: display-current-config}
+{: id="display-current-config"}
 ## Display your current configuration
 
 To perform the setup and configuration, you must first learn how to [gain
@@ -43,7 +43,7 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     ```
 
 <!--
-{: management-console }
+{: id="management-console" }
 ## About Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later.  If you want to try it, please contact ThoughtSpot Support." %}
@@ -62,8 +62,7 @@ ThoughtSpot now comes with a Management Console, a self-service portal that enab
 - **Update**: This section allows you to [upgrade your cluster.]({{ site.baseurl }}/admin/system-admin/upgrade-a-cluster.html#)
 
 -->
-
-{: related }
+{: id="related" }
 ## Related information
 
 The following tasks are also available:
