@@ -1,11 +1,10 @@
 ---
 title: ["Create, edit, or delete a user"]
 last_updated: 10/08/2019
+summary: "For each person who uses ThoughtSpot, you must create a user account."
 sidebar: mydoc_sidebar
-Summary: "For each person who uses ThoughtSpot, you must create a user account."
 permalink: /:collection/:path.html
 ---
-
 You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
 When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user's password, change their email, and so on.
