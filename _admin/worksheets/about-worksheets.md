@@ -1,6 +1,6 @@
 ---
 title: [Create and use worksheets]
-keywords: tbd
+
 last_updated: tbd
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar

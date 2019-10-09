@@ -1,6 +1,6 @@
 ---
 title: [Deploy SSL with ODBC on Windows]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

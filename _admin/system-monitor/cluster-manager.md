@@ -1,7 +1,7 @@
 ---
 title: [Cluster Manager board]
-keywords: cluster,management,latency,logs
-tags: [indexing,logs]
+
+
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

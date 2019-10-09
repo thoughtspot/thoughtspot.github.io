@@ -1,53 +1,50 @@
 ---
 title: [Onboarding Users]
-keywords: user setup, onboarding
-last_updated: 07/25/2019
+last_updated: 10/07/2019
 toc: true
-summary: "In ThoughtSpot, you can onboard users quickly, and teach them how to use the application efficiently."
+summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.
 
-## Introduction to Onboarding Users ##
-
-To include users in the onboarding process, each user profile must include a valid email address; see [Create a user through the interface](#create-user-ui)[tscli onboarding command]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).  
-
-To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).  
-
 When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
 
+{: id="onboarding-prerequisites"}
+## Prerequisites for onboarding ##
 
-## Prerequisites ##
+{: id="onboarding-valid-email"}
+- **Valid emails**  All users must have valid emails.
 
-- **Valid emails**  All users must have valid emails. To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}admin/setup/LDAP-config-AD.html).
+  To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user).  
 
-- **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+  To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
+{: id="onboarding-tscli-configuration"}
+- **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
+{: id="onboarding-process"}
 ## Onboarding Process ##
 
 The key workflows that enable successful onboarding include the following:
 
 1. Configure and save a default pinboard that you plan to use for new users.
-   See steps for [creating a pinboard]({{ site.baseurl }}end-user/pinboards/about-pinboards.html#create-a-pinboard).
+   See steps for [creating a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#create-a-pinboard).
+
 2. Create a new user group, or edit an existing user group to which new users belong:
    - specify the group name and its display name
    - set the sharing visibility to visible
    - specify the Privileges
    - select up to 3 default pinboards
    - test and customize the test welcome email.
-   See steps for [creating a user group]({{ site.baseurl }}admin/users-groups/add-group.html#create-a-group).
-3. Create a new user and assign them to the group you are using for onboarding. See steps for [creating a new user]({{ site.baseurl }}admin/users-groups/add-user.html#create-a-user-through-the-interface).
-   In addition to creating a new user directly in ThoughtSpot, you can add users in bulk through [Active Directory]({{ site.baseurl }}admin/setup/active-directory-based-access.html).
-4. When the new user signs in for the first time, the ThoughtSpot onboarding process starts automatically and guides them through a few basic scenarios of using the application.
-   See [User Onboarding Experience]({{ site.baseurl }}end-user/onboarding/user-onboarding-experience.html).
-5. ***\[Optional\]*** Any user can repeat their onboarding experience at any time. Simply select **Profile** from user icon on the top right corner of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
-   See [Revisit Onboarding]({{ site.baseurl }}end-user/introduction/about-user.html#revisit-onboarding).
+   See steps for [creating a user group]({{ site.baseurl }}/admin/users-groups/add-group.html#add-group) or [editing a user group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group).
 
-<!--1. Create a pinboard with a couple of visualizations.
-2. Share the pinboard and all the data sources used to create the pinboard with a group they belong to, such as the analyst group.
-3. Edit the group, and assign the make the newly created pinboard the default pinboard for that group.
-4. Create a new user, and assign the user to the same group.
-5. Sign in as the new user, and be guided through the onboarding process.-->
+3. Create a new user and assign them to the group you are using for onboarding. See steps for [creating a new user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). You can also add existing users to the group; see
+
+   In addition to creating a new user directly in ThoughtSpot, you can add users in bulk through [Active Directory]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
+
+4. When the new user signs in for the first time, the ThoughtSpot onboarding process starts automatically and guides them through a few basic scenarios of using the application.
+   See [User onboarding experience]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
+
+5. **\[Optional\]** Any user can repeat their onboarding experience at any time. Simply select **Profile** from user icon on the top right corner of the page. Under **Preferences > New user onboarding**, click **Revisit**.  See [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).

@@ -1,6 +1,5 @@
 ---
 title: [Edit the layout of a pinboard]
-keywords: tbd
 last_updated: tbd
 summary: "Editing the layout of a pinboard lets you snap visualizations into place, choose between set visualization sizes, and reset your layout."
 sidebar: mydoc_sidebar

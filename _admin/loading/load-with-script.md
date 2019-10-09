@@ -1,6 +1,6 @@
 ---
 title: [Use a script to load data]
-keywords: "tsload,csv,script,load"
+
 last_updated: tbd
 summary: "Learn how to load one or files in bulk with a script."
 sidebar: mydoc_sidebar

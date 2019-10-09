@@ -1,7 +1,7 @@
 ---
 title: [Work with snapshots]
-keywords: backup,snapshot
-tags: [performance]
+
+
 last_updated: 06/16/2019
 toc: true
 sidebar: mydoc_sidebar
@@ -9,13 +9,9 @@ permalink: /:collection/:path.html
 ---
 A snapshot is a timestamped image of your live cluster that you can use to restore that cluster. This article describes how to work with the default snapshot configuration of your cluster, and how to make manual snapshots.
 
-To work with snapshots, use either the `tscli` command line interface, or the Management Console.
+To work with snapshots, use the `tscli` command line interface.
 
-{% include note.html content=" The Management Console is in beta on ThoughtSpot Release 5.3 or later. Contact ThoughtSpot Support to enable it." %}
-
-{% include warning.html content="Backups rely on the snapshot system, so you must never disable the periodic snapshot system. If
-you disable periodic snapshots and enable periodic backups, the
-backups either fail or use an outdated snapshot." %}
+{% include warning.html content="Backups rely on the snapshot system, so you must never disable the periodic snapshot system. If you disable periodic snapshots and enable periodic backups, the backups either fail or use an outdated snapshot." %}
 
 ## Create a manual snapshot
 
@@ -26,7 +22,7 @@ loading a large amount of data, or changing the structure of a table. ThoughtSpo
 
 ThughtSpot creates a snapshot in approximately 20 seconds, depending on the size of the cluster. To restore from a snapshot, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
-### Using Management Console
+<!--### Using Management Console
 
 To manually create a snapshot using the Admin UI, follow these steps:
 
@@ -58,7 +54,7 @@ To manually create a snapshot using the Admin UI, follow these steps:
 6. Click **Save** to create a snapshot.
 
 You can see the new snapshot file in the snapshot dashboard.
-
+-->
 ### Using tscli
 
 To create a snapshot using the `tscli`, follow these steps:
@@ -80,8 +76,7 @@ To create a snapshot using the `tscli`, follow these steps:
 
 Each ThoughtSpot cluster automatically makes periodic
 snapshots based on its default snapshot policy. You can change this policy.
-
-### Using Management Console
+<!--### Using Management Console
 
 The default snapshot policy is enabled for every cluster. You can update the current policy for periodic snapshots.
 
@@ -116,7 +111,7 @@ To update your current periodic snapshot policy, follow these steps:
    | Add Retention Policy | To use multiple retention buckets with different retention policies, use this option to specify multiple policies. |
 
 6. Click **Save** to update the snapshot policy.
-
+-->
 
 ### Using tscli
 

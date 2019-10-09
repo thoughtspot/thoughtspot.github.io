@@ -1,6 +1,6 @@
 ---
 title: [Cloud overview]
-keywords: setup,cluster,cloud,aws,azure,gcp
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -32,7 +32,7 @@ Refer to the following guidelines for how to set up ThoughtSpot on each cloud se
 
 ## Reducing your cloud infrastructure costs
 
-ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.  
+ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment. 
 
 ### Use small and medium instance types when applicable
 

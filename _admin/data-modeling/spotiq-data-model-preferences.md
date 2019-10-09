@@ -1,6 +1,6 @@
 ---
 title: [Set columns to exclude from SpotIQ analyses ]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can specify columns to exclude from SpotIQ analyses."
 sidebar: mydoc_sidebar

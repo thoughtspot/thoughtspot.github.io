@@ -1,7 +1,7 @@
 ---
 title: [Configure CA SiteMinder]
-tags: [security]
-keywords: SAML,security,"active directory",authenticate,siteminder,certificate
+
+
 last_updated: tbd
 summary: "CA SiteMinder can be used as an Identity Provider for single sign on to ThoughtSpot."
 sidebar: mydoc_sidebar

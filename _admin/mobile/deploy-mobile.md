@@ -1,11 +1,11 @@
 ---
 title: [Deploy mobile app]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Deploying the ThoughSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device. For more information about features in the mobile app, refer to [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+Deploying the ThoughtSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device. For more information about features in the mobile app, refer to [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
 
 ## Deployment options
 

@@ -1,7 +1,7 @@
 ---
 title: [Upload logs to ThoughtSpot Support]
-keywords: tbd
-tags: [logs]
+
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

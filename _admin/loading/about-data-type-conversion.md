@@ -1,7 +1,7 @@
 ---
 title: [Convert column data type]
-tags: [TQL,dates,modeling]
-keywords: "TQL,SQL, data types"
+
+
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar

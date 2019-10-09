@@ -1,7 +1,7 @@
 ---
 title: [Configure SAML]
-tags: [security]
-keywords: SAML,security,"active directory",authenticate,configure,
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,20 +12,15 @@ users. You can set up SAML through the shell on the ThoughtSpot instance using a
 
 Before configuring SAML, you need this information:
 
--   IP of the server where your ThoughtSpot instance is running.
--   Port of the server where your ThoughtSpot instance is running.
--   Protocol, or the authentication mechanism for ThoughtSpot.
--   Unique service name that is used as the unique key by IDP to identify the client.
+-   Domain name for ThoughtSpot service (E.g. - `thoughtspot.ts-customer.com`).
+-   Port of the server where your ThoughtSpot instance is running (E.g. - `443`).
+-   Protocol, or the authentication mechanism for ThoughtSpot (E.g. - `http` or `https`)
+-   Unique service name that is used as the unique key by IDP to identify the client (E.g. - `urn:thoughtspot:callosum:saml`)
+-   Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. `86400` is a popular choice.
+-   The absolute path to identity provider's metadata file. Typically called `idp-meta.xml` or similar. This is needed so that the configuration persists over upgrades. Best to set it up on persistent/HA storage (NAS volumes) else in the same absolute path on all nodes in the cluster.
+-   This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin` and other ThoughtSpot local users. Set it to true by default to let local system/admin users in via the frontend.
 
-    It should be in the following format: `urn:thoughtspot:callosum:saml`
-
--   Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. It is usually set to 86400.
--   The absolute path to the `idp-meta.xml` file. This is needed so that the configuration persists over upgrades.
--   This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin`, so set it to true if you do not know what it does.
-
-Use this procedure to set up SAML on ThoughtSpot for user authentication. Note
-that this configuration persists across software updates, so you do not have to
-reapply it if you update to a newer release of ThoughtSpot.
+Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.
 
 1. Log in to the Linux shell using SSH.
 2. Execute the command to launch the interactive SAML configuration:

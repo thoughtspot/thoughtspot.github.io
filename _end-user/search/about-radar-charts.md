@@ -1,6 +1,6 @@
 ---
 title: [Radar charts; spiderweb charts]
-keywords: spiderweb,multivariate
+
 last_updated: tbd
 summary: "The Radar (or spiderweb) chart contains both columns and a special type of line chart.
 "

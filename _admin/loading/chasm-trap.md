@@ -1,7 +1,7 @@
 ---
 title: [Chasm traps]
-tags: [Modeling,limitations]
-keywords: "chasm trap,many-to-one,joins"
+
+
 last_updated: tbd
 summary: "A chasm trap occurs when two many-to-one joins converge on a single table."
 sidebar: mydoc_sidebar

@@ -1,6 +1,6 @@
 ---
 title: [Change sharding for a data source]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

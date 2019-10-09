@@ -1,6 +1,5 @@
 ---
 title: [Search results and column types]
-keywords: query, details, visualizer
 last_updated: tbd
 summary: "Searches in ThoughtSpot use columns that are defined as either attributes or measures."
 sidebar: mydoc_sidebar

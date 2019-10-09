@@ -1,7 +1,7 @@
 ---
 title: [Configure NAS file system]
-keywords: tscli, backup, restore
-tags: [networking, tscli, nas]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -32,7 +32,7 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
-## Mount using Management Console
+<!--## Mount using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -91,35 +91,27 @@ To mount a NAS file system using the admin UI:
 
 6. Click **Save** to mount a NAS file system.
 
-
+-->
 ## Mount using tscli
 To mount a NAS file system using the tscli:
 1. Log in to the Linux shell using SSH.
 2. Mount the directory to the file system, by issuing the appropriate command:
-    -   For an NFS (Network File System) directory:
+    -   Example for an NFS (Network File System) directory:
 
         ```
-        tscli nas mount-nfs
-           --server <server_NFS_address>
-           --path_on_server <path>
-           --mount_point <target>
-           --options vers=<version>, sec=<security scheme>, <OPTIONS>
+        tscli nas mount-nfs --server storageservername.file.yourdomain.net
+           --path_on_server <path>  /tsdev-backup --mount_point /export/BACKUPS/
+           --options vers=<version>,sec=<security scheme>,<OPTIONS>
         ```
 
         {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
-    -   For a CIFS (Common Internet File System) directory:
+    -   Example for a CIFS (Common Internet File System) directory:
 
         ```
-        tscli nas mount-cifs
-           --server <server_CIFS_address>
-           --path_on_server <path>
-           --mount_point <target>
-           --username <user>
-           --password <password>
-           --uid <uid>
-           --gid <gid>
-           --options <OPTIONS>
+        tscli nas mount-cifs --server storageservername.file.yourdomain.net
+          --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
+          --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
         ```
 
         {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}

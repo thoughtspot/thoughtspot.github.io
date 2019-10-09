@@ -1,7 +1,7 @@
 ---
 title: [AWS configuration options]
-keywords: AWS, configuration
-tags: [performance]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,28 +10,7 @@ ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) in
 - Mode 1: Compute VMs + EBS-only persistent storage
 - Mode 2: Compute VMs + EBS and S3 persistent storage
 
-The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative.
-
-<table width="100%" border="0">
-  <tbody>
-    <tr>
-      <td><b>Operation</b></td>
-      <td><b>VMs with EBS-only persistent storage</b></td>
-      <td><b>VMs with EBS and S3 persistent storage</b></td>
-    </tr>
-    <tr>
-      <td>Data loading</td>
-      <td>Into EBS</td>
-      <td>Into S3</td>
-    </tr>
-    <tr>
-      <td>Snapshots</td>
-      <td>In EBS</td>
-      <td>In EBS</td>
-    </tr>
-  </tbody>
-</table>
-
+The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative. For more information on purchasing ThoughtSpot on AWS, see: [ThoughtSpot Pricing](https://www.thoughtspot.com/pricing){:target="_blank"}.
 
 All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see [Regions and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html){:target="_blank"} in Amazon's AWS documentation.
 
@@ -47,11 +26,11 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
 | --- | --- | --- |--- |
-| 250 GB | r4.16xlarge, r516xlarge | 64/488, 64/512 | 2x 1 TB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32,256 | 2X 400 GB |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB |
-| 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB |
 | 192 GB | m5.24xlarge | 96/384 | 2X 1 TB |
+| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 2x 1 TB |
+| 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB |
 
 ### VMs with EBS and S3 persistent storage
 
@@ -59,11 +38,11 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
 | --- | --- | --- |--- |
-| 250 GB | r4.16xlarge, r516xlarge | 64/488, 64/512 | 1x 500 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32, 256 | 1x 500 GB |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB |
-| 384 GB | r5.24xlarge | 96/768 | 1x 500 GB |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB |
 | 192 GB | m5.24xlarge | 96/384 | 1x 500 GB |
+| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 1x 500 GB |
+| 384 GB | r5.24xlarge | 96/768 | 1x 500 GB |
 
 {% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
 

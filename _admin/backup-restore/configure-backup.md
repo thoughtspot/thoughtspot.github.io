@@ -1,6 +1,6 @@
 ---
 title: [Configure periodic backups]
-keywords: tbd
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
@@ -63,7 +63,7 @@ The retention system deletes the oldest stored backup and the corresponding
 snapshot on a first-in-first-out basis (FIFO). This means that if you set a
 bucket retention of 1 the system stores a single backup at any one time. The
 system  deletes the older backup after the new full backup is successful.
-
+<!--
 ### Configure using Management Console
 
 {% include note.html content="The Management Console is now available in **beta** for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
@@ -135,7 +135,7 @@ To configure periodic backups using the admin UI:
 
 6. Click **Save** to update the backup policy.
 
-
+-->
 
 ### Configure using tscli
 

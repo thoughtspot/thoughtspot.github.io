@@ -1,7 +1,7 @@
 ---
 title: [System worksheets]
-keywords: monitor,worksheet
-tags: [indexing]
+
+
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

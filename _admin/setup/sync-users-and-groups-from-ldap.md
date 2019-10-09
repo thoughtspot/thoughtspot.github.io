@@ -1,7 +1,7 @@
 ---
 title: [Sync users and groups from LDAP]
-tags: [SAML_LDAP_AD]
-keywords: SAML,security,"active directory",authenticate
+
+
 last_updated: tbd
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar
@@ -92,3 +92,66 @@ To run the LDAP sync script in interactive mode:
     ```
 
     The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
+
+### `syncUsersAndGroups.py` command-line switches
+
+The following table provides a description of each command-line switch available for the `syncUsersAndGroups` python script.
+
+  <table width="100%" border="0">
+  <col width="260">
+  <col width="900">
+	  <tbody>
+	    <tr>
+	      <th scope="col">Switch</th>
+	      <th scope="col">Description</th>
+        </tr>
+        <tr>
+  	      <td><code>--ts_hostport &lt;ts_hostport&gt;</code></td>
+  	      <td>ThoughtSpot cluster host port. Default port is 8088.</td>
+          </tr>  
+	    <tr>
+	      <td><code>--disable_ssl</code></td>
+	      <td>Controls the communication between the sync script and the ThoughtSpot cluster. It disables SSL communications between the script and the cluster ONLY, and prevents the need to provide SSL certs during the script execution in order to create users and groups.</td>
+        </tr>
+	    <tr>
+	      <td><code>--ts_uname</code></td>
+	      <td>ThoughtSpot cluster username. The <code>admin</code> user is usually used.</td>
+        </tr>
+	    <tr>
+	      <td><code>--ts_pass</code></td>
+	      <td>ThoughtSpot cluster password.</td>
+        </tr>
+		<tr>
+	      <td><code>--ldap_hostport</code></td>
+	      <td>AD/LDAP server port that is queried. Default is 389.</td>
+        </tr>
+		<tr>
+	      <td><code>--ldap_uname</code></td>
+	      <td>Username for the LDAP/AD server.</td>
+        </tr>
+		<tr>
+	      <td><code>--ldap_pass &lt;ldap_password&gt;</code></td>
+	      <td>Password for the LDAP/AD server.</td>
+        </tr>
+		<tr>
+	      <td><code>--sync</code></td>
+	      <td>Syncs users and groups which match the <code>basedn</code> and <code>filter_str</code> queries to your ThoughtSpot cluster.</td>
+        </tr>
+		<tr>
+	      <td><code>--purge</code></td>
+	      <td>Purges any users that exist in ThoughtSpot, but not in AD.</td>
+        </tr>
+		<tr>
+	      <td><code>--basedn</code></td>
+	      <td>Place in the directory that will be searched for users.</td>
+        </tr>
+		<tr>
+	      <td><code>--filter_str</code></td>
+	      <td>Further filters results from your base DN.</td>
+        </tr>
+		<tr>
+	      <td><code>--include_nontree_members</code></td>
+	      <td>Includes group members from LDAP/AD even if they do not belong to the current subtree that is being synced.</td>
+        </tr>	  
+  </tbody>
+</table>

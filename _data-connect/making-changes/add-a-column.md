@@ -1,6 +1,5 @@
 ---
 title: [Add a column to an existing data source]
-keywords: tbd
 last_updated: tbd
 summary: "Add a column to an existing data source."
 sidebar: mydoc_sidebar

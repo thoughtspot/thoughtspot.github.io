@@ -1,12 +1,13 @@
 ---
 title: ["Optimize SearchIQ"]
-keywords: SearchIQ,answer,introduction,"search bar","natural language",speech,voice
-last_updated: 08/22/2019
-summary: "For SearchIQ to work well, you must enable, optimize, and train it on the data source."
+last_updated: 09/23/2019
+summary: "For SearchIQ to work well, you must enable, optimize, and enable it on the data source."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-***SearchIQ is in Beta.***
+**SearchIQ is in Beta.**
+
+{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
 
 SearchIQ is a search experience that understands a more natural, speech-like search language. Contrast it with the [original ThoughtSpot search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html). For example, you can search for _`What was my top selling product last month?`_, instead of typing _`top 1 product by sales last month`_. You can also speak your search using the voice-to-text capability of your operating system.
 

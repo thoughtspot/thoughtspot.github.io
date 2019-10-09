@@ -1,6 +1,6 @@
 ---
 title: [Overview]
-keywords: setup,cluster,appliance,aws,vmware,ec2
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

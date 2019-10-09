@@ -1,6 +1,6 @@
 ---
 title: [About installation and upgrades]
-keywords: notes, tips, cautions, warnings, admonitions,configuration
+
 last_updated: July 3, 2016
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -41,7 +41,7 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
-## About Management Console
+<!--## About Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -58,7 +58,7 @@ ThoughtSpot now comes with a Management Console, a self-service portal that enab
   - [Configure reverse SSH tunnel]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#set-up-a-reverse-tunnel-for-support)
 - **Update**: This section allows you to [upgrade your cluster.]({{ site.baseurl }}/admin/system-admin/upgrade-a-cluster.html#)
 
-
+-->
 ## Related information
 
 The following tasks are available needed:

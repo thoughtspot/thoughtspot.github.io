@@ -1,6 +1,5 @@
 ---
 title: [Following pinboads]
-keywords: follow,unfollow,subscribe,unsubscribe,"schedule pinboard emails"
 last_updated: 07/16/2019
 summary: "In ThoughtSpot, you can follow pinboards to regularly review the visuals that represent dynamic data. For example, you can follow a pinboard that tracks sales revenue, and schedule to receive its email notifications weekly."
 sidebar: mydoc_sidebar

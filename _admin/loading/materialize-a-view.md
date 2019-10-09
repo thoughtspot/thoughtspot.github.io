@@ -1,6 +1,6 @@
 ---
 title: [Materialize a view]
-keywords: materialize,views
+
 last_updated: 11/2/2018
 summary: "Learn how to materialize a view to improve its performance."
 toc: false

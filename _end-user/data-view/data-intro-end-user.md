@@ -1,6 +1,5 @@
 ---
 title: ["Understand data sources"]
-keywords: tbd
 last_updated: tbd
 summary: "Use the Data tab to manage data sources."
 toc: false

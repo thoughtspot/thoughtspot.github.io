@@ -1,6 +1,6 @@
 ---
 title: [Delete a relationship]
-keywords: "delete,relationship,table"
+
 last_updated: tbd
 summary: "You can delete relationship (link) between tables through the application or TQL."
 toc: false

@@ -1,6 +1,6 @@
 ---
 title: [Start a new search]
-keywords: tbd
+
 last_updated: tbd
 summary: "Starting a new ThoughtSpot search is simple, like starting a new Google search."
 sidebar: mydoc_sidebar
