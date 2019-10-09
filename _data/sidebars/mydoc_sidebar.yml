@@ -1315,9 +1315,6 @@ entries:
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGD
-    - title: Error code reference
-      url: /error-codes/error-codes-reference.html
-      output: web,refGdAdmin
     - title: Glossary
       url: /reference/glossary.html
       output: web

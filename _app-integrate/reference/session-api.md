@@ -78,7 +78,7 @@ Not applicable
 204 - Successful logout
 ```
 
-## Error Codes
+<!--## Error Codes
 <table>
    <colgroup>
       <col style="width:20%" />
@@ -97,4 +97,4 @@ Not applicable
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
   </tbody>
-</table>
+</table>-->
