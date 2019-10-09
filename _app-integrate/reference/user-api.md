@@ -301,7 +301,7 @@ https://<instance>/callosum/v1/tspublic/v1/user/list
   }
   ]
 ```
-## Error Codes
+<!--## Error Codes
 <table>
    <colgroup>
       <col style="width:20%" />
@@ -320,4 +320,4 @@ https://<instance>/callosum/v1/tspublic/v1/user/list
     <tr> <td><code>10002</code></td>  <td>Bad request. No user found with the given username.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10003</code></td>  <td>Unable to authenticate user</td><td><code>403</code></td></tr>
   </tbody>
-</table>
+</table>-->
