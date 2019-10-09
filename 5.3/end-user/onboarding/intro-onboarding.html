@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="In ThoughtSpot, you can onboard users quickly, and teach them how to use the application efficiently."> -->
-<meta name="keywords" content=",  user setup, onboarding">
+<!-- <meta name="description" content="Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization."> -->
+<meta name="keywords" content=",  ">
 <title>Onboarding Users | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/end-user/onboarding/intro-onboarding.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-27T11:22:39-07:00" />
+<meta property="article:published_time" content="2019-10-08T20:00:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/onboarding/intro-onboarding.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/onboarding/intro-onboarding.html","headline":"[“Onboarding Users”]","dateModified":"2019-09-27T11:22:39-07:00","datePublished":"2019-09-27T11:22:39-07:00","description":"Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/onboarding/intro-onboarding.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/onboarding/intro-onboarding.html","headline":"[“Onboarding Users”]","dateModified":"2019-10-08T20:00:38-07:00","datePublished":"2019-10-08T20:00:38-07:00","description":"Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1652,7 +1652,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/admin/users-groups/add-user.html">Add, edit, or delete a user</a></li>
+                          <li><a href="/5.3/admin/users-groups/add-user.html">Create, edit, or delete a user</a></li>
                       
                    
                 
@@ -3168,12 +3168,6 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.3/error-codes/error-codes-reference.html">Error code reference</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/5.3/reference/glossary.html">Glossary</a></li>
                 
               
@@ -3217,7 +3211,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">In ThoughtSpot, you can onboard users quickly, and teach them how to use the application efficiently.</div>
+    <div class="summary">Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization.</div>
    
 
     
@@ -3263,23 +3257,22 @@ $('#toc').on('click', 'a', function() {
 
   <p>Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.</p>
 
-<h2 id="introduction-to-onboarding-users">Introduction to Onboarding Users</h2>
-
-<p>To include users in the onboarding process, each user profile must include a valid email address; see <a href="#create-user-ui">Create a user through the interface</a><a href="/5.3/admin/users-groups/add-user.html#create-user-ui">tscli onboarding command</a>.</p>
-
-<p>To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the <a href="/5.3/reference/tscli-command-ref.html#tscli-onboarding">tscli onboarding command</a>.</p>
-
 <p>When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.</p>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="onboarding-prerequisites">Prerequisites for onboarding</h2>
 
-<ul>
+<ul id="onboarding-valid-email">
   <li>
-    <p><strong>Valid emails</strong>  All users must have valid emails. To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See <a href="/5.3admin/setup/LDAP-config-AD.html">Configure LDAP for Active Directory</a>.</p>
+    <p><strong>Valid emails</strong>  All users must have valid emails.</p>
+
+    <p>To include users in the onboarding process, each user profile must include a valid email address; see <a href="/5.3/admin/users-groups/add-user.html#add-user">Create a user</a>.</p>
+
+    <p>To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See <a href="/5.3/admin/setup/LDAP-config-AD.html">Configure LDAP for Active Directory</a>.</p>
   </li>
-  <li>
-    <p><strong>Onboarding configuration</strong>  Before starting the onboarding process, an administrator must specify the configuration through the tscli onboarding command](/5.3/reference/tscli-command-ref.html#tscli-onboarding).</p>
-  </li>
+</ul>
+
+<ul id="onboarding-tscli-configuration">
+  <li><strong>Onboarding configuration</strong>  Before starting the onboarding process, an administrator must specify the configuration through the <a href="/5.3/reference/tscli-command-ref.html#tscli-onboarding">tscli onboarding command</a>.</li>
 </ul>
 
 <h2 id="onboarding-process">Onboarding Process</h2>
@@ -3287,8 +3280,10 @@ $('#toc').on('click', 'a', function() {
 <p>The key workflows that enable successful onboarding include the following:</p>
 
 <ol>
-  <li>Configure and save a default pinboard that you plan to use for new users.
-See steps for <a href="/5.3end-user/pinboards/about-pinboards.html#create-a-pinboard">creating a pinboard</a>.</li>
+  <li>
+    <p>Configure and save a default pinboard that you plan to use for new users.
+See steps for <a href="/5.3/end-user/pinboards/about-pinboards.html#create-a-pinboard">creating a pinboard</a>.</p>
+  </li>
   <li>Create a new user group, or edit an existing user group to which new users belong:
     <ul>
       <li>specify the group name and its display name</li>
@@ -3296,22 +3291,20 @@ See steps for <a href="/5.3end-user/pinboards/about-pinboards.html#create-a-pinb
       <li>specify the Privileges</li>
       <li>select up to 3 default pinboards</li>
       <li>test and customize the test welcome email.
-See steps for <a href="/5.3admin/users-groups/add-group.html#create-a-group">creating a user group</a>.</li>
+See steps for <a href="/5.3/admin/users-groups/add-group.html#add-group">creating a user group</a> or <a href="/5.3/admin/users-groups/add-group.html#edit-group">editing a user group</a>.</li>
     </ul>
   </li>
-  <li>Create a new user and assign them to the group you are using for onboarding. See steps for <a href="/5.3admin/users-groups/add-user.html#create-a-user-through-the-interface">creating a new user</a>.
-In addition to creating a new user directly in ThoughtSpot, you can add users in bulk through <a href="/5.3admin/setup/active-directory-based-access.html">Active Directory</a>.</li>
-  <li>When the new user signs in for the first time, the ThoughtSpot onboarding process starts automatically and guides them through a few basic scenarios of using the application.
-See <a href="/5.3end-user/onboarding/user-onboarding-experience.html">User Onboarding Experience</a>.</li>
-  <li><strong><em>[Optional]</em></strong> Any user can repeat their onboarding experience at any time. Simply select <strong>Profile</strong> from user icon on the top right corner of the page, and under <strong>Preferences &gt; New user onboarding</strong>, click <strong>Revisit Onboarding</strong>.
-See <a href="/5.3end-user/introduction/about-user.html#revisit-onboarding">Revisit Onboarding</a>.</li>
-</ol>
+  <li>
+    <p>Create a new user and assign them to the group you are using for onboarding. See steps for <a href="/5.3/admin/users-groups/add-user.html#add-user">creating a new user</a>. You can also add existing users to the group; see</p>
 
-<!--1. Create a pinboard with a couple of visualizations.
-2. Share the pinboard and all the data sources used to create the pinboard with a group they belong to, such as the analyst group.
-3. Edit the group, and assign the make the newly created pinboard the default pinboard for that group.
-4. Create a new user, and assign the user to the same group.
-5. Sign in as the new user, and be guided through the onboarding process.-->
+    <p>In addition to creating a new user directly in ThoughtSpot, you can add users in bulk through <a href="/5.3/admin/setup/active-directory-based-access.html">Active Directory</a>.</p>
+  </li>
+  <li>
+    <p>When the new user signs in for the first time, the ThoughtSpot onboarding process starts automatically and guides them through a few basic scenarios of using the application.
+See <a href="/5.3/end-user/onboarding/user-onboarding-experience.html">User onboarding experience</a>.</p>
+  </li>
+  <li><strong>[Optional]</strong> Any user can repeat their onboarding experience at any time. Simply select <strong>Profile</strong> from user icon on the top right corner of the page. Under <strong>Preferences &gt; New user onboarding</strong>, click <strong>Revisit</strong>.  See <a href="/5.3/end-user/introduction/about-user.html#onboarding">Revisit onboarding</a>.</li>
+</ol>
 
   <div class="tags">
     <div style="float:right;">
@@ -3337,9 +3330,9 @@ See <a href="/5.3end-user/introduction/about-user.html#revisit-onboarding">Revis
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 27, 2019 <br />
+        Generated: Oct 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 07/25/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 10/07/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

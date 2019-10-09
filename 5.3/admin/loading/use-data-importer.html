@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/loading/use-data-importer.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-27T11:22:39-07:00" />
+<meta property="article:published_time" content="2019-10-08T20:00:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/use-data-importer.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/use-data-importer.html","headline":"[“Import CSV files with tsload”]","dateModified":"2019-09-27T11:22:39-07:00","datePublished":"2019-09-27T11:22:39-07:00","description":"Use ThoughtSpot Loader (tsload) to load data from a CSV text file into an existing table in ThoughtSpot. ThoughtSpot Loader (tsload) is a common way to import data. When using tsload, you can load larger datasets and make the loading process repeatable through scripting. The tsload command accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/use-data-importer.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/use-data-importer.html","headline":"[“Import CSV files with tsload”]","dateModified":"2019-10-08T20:00:38-07:00","datePublished":"2019-10-08T20:00:38-07:00","description":"Use ThoughtSpot Loader (tsload) to load data from a CSV text file into an existing table in ThoughtSpot. ThoughtSpot Loader (tsload) is a common way to import data. When using tsload, you can load larger datasets and make the loading process repeatable through scripting. The tsload command accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1652,7 +1652,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/admin/users-groups/add-user.html">Add, edit, or delete a user</a></li>
+                          <li><a href="/5.3/admin/users-groups/add-user.html">Create, edit, or delete a user</a></li>
                       
                    
                 
@@ -3168,12 +3168,6 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.3/error-codes/error-codes-reference.html">Error code reference</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/5.3/reference/glossary.html">Glossary</a></li>
                 
               
@@ -3254,7 +3248,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span>
  -->
@@ -3336,6 +3330,11 @@ The <code class="highlighter-rouge">tsload</code> command accepts flags that ena
 
 <p>If you have data in .csv format stored in an AWS bucket, you can load it directly to ThoughtSpot.</p>
 
+<h3 id="531-and-later-assigning-s3-read-only-role-to-your-ec2-instance">(5.3.1 and later) Assigning S3 read-only role to your EC2 instance</h3>
+<p>If your cluster is running 5.3.1 or later, you can assign an S3 read-only role to your ThoughtSpot EC2 instance(s) so the instance(s) can access the S3 bucket from which you want to load the data. This eliminates the need to enter the AWS S3 credentials when loading your data. For details, see: <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html" target="_blank">Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances</a> in Amazon’s AWS documentation.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you are using S3 for persistent storage, and assigned the <em>ec2rolewithfulls3access</em> IAM role to your instance, you do not need to complete this step.</div>
+
 <ol>
   <li>
     <p>Log in to the Linux shell using SSH.</p>
@@ -3363,7 +3362,7 @@ The <code class="highlighter-rouge">tsload</code> command accepts flags that ena
         <p>AWS S3 region</p>
       </li>
       <li>
-        <p>AWS S3 credentials (accesskey;secret_key)</p>
+        <p>AWS S3 credentials (accesskey;secret_key)<strong>*</strong></p>
       </li>
       <li>
         <p>AWS S3 root (prefix for S3 object search path)</p>
@@ -3374,12 +3373,14 @@ The <code class="highlighter-rouge">tsload</code> command accepts flags that ena
     <ul>
       <li><code class="highlighter-rouge">--aws_s3_bucket_name "&lt;bucket name&gt;"</code> <br /></li>
       <li><code class="highlighter-rouge">--aws_s3_region_name "&lt;region name&gt;"</code> <br /></li>
-      <li><code class="highlighter-rouge">--aws_s3_credentials "&lt;credentials&gt;"</code> <br /></li>
+      <li><code class="highlighter-rouge">--aws_s3_credentials "&lt;credentials&gt;"</code><strong>*</strong> <br /></li>
       <li><code class="highlighter-rouge">--aws_s3_root "&lt;search path&gt;"</code></li>
     </ul>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <b>*<b>AWS S3 credentials is not used in the 5.3.1 release, if an S3 read-only role is assigned to your instance.</b></b></div>
   </li>
   <li>
-    <p>After the processing begins, you can see messages that indicate the progress, and then source and load summary messages after the load is complete.</p>
+    <p>After the processing begins, progress messages appear, and then source and load summary messages after the load is complete.</p>
   </li>
 </ol>
 
@@ -3407,7 +3408,7 @@ The <code class="highlighter-rouge">tsload</code> command accepts flags that ena
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 27, 2019 <br />
+        Generated: Oct 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

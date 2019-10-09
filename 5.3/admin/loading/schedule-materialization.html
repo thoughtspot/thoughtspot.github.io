@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Learn how to schedule materialization refresh of a view to keep it in synch with the data that makes it up."> -->
-<meta name="keywords" content=",  materialize,views,schedule">
+<!-- <meta name="description" content="Learn how to schedule materialization refresh of a view to keep it in sync with the data that makes it up."> -->
+<meta name="keywords" content=",  ">
 <title>Schedule materialization refresh on a view | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/loading/schedule-materialization.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-27T11:22:39-07:00" />
+<meta property="article:published_time" content="2019-10-08T20:00:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/schedule-materialization.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/schedule-materialization.html","headline":"[“Schedule materialization refresh on a view”]","dateModified":"2019-09-27T11:22:39-07:00","datePublished":"2019-09-27T11:22:39-07:00","description":"To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s).","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/schedule-materialization.html"},"url":"https://docs.thoughtspot.com/5.3/admin/loading/schedule-materialization.html","headline":"[“Schedule materialization refresh on a view”]","dateModified":"2019-10-08T20:00:38-07:00","datePublished":"2019-10-08T20:00:38-07:00","description":"To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s).","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1652,7 +1652,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/admin/users-groups/add-user.html">Add, edit, or delete a user</a></li>
+                          <li><a href="/5.3/admin/users-groups/add-user.html">Create, edit, or delete a user</a></li>
                       
                    
                 
@@ -3168,12 +3168,6 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.3/error-codes/error-codes-reference.html">Error code reference</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/5.3/reference/glossary.html">Glossary</a></li>
                 
               
@@ -3217,7 +3211,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Learn how to schedule materialization refresh of a view to keep it in synch with the data that makes it up.</div>
+    <div class="summary">Learn how to schedule materialization refresh of a view to keep it in sync with the data that makes it up.</div>
    
 
     
@@ -3251,14 +3245,12 @@ var ss360Config = {
     <p>Click <strong>Schema</strong>.</p>
   </li>
   <li>
-    <p>Under <strong>Materialization</strong>, click the link next to <strong>Update Schedule:</strong>.</p>
+    <p>Under <strong>Materialization</strong>, click the link next to <strong>Update Schedule</strong>.</p>
   </li>
   <li>
-    <p>In the <strong>Schedule data updates</strong> dialog, select an option for <strong>Repeats</strong> (Monthly, Weekly, or Daily).</p>
+    <p>In the <strong>Schedule Data Updates</strong> dialog, select an option for <strong>Repeats</strong> (Monthly, Weekly, or Daily).</p>
 
     <p><img src="/5.3/images/materialized-view-sched-weekly.png" alt="" /></p>
-
-    <p>If you don’t want to set a schedule now, choose <strong>Setup later</strong> and skip to Step 11.</p>
   </li>
   <li>
     <p>Fill in the schedule details:</p>
@@ -3266,11 +3258,11 @@ var ss360Config = {
     <p><img src="/5.3/images/schedule-data-updates-weekly.png" alt="" /></p>
   </li>
   <li>
-    <p>Click <strong>Update</strong>.</p>
+    <p>Click <strong>Schedule</strong>.</p>
   </li>
 </ol>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable using the flag <code class="highlighter-rouge">orion.materializationConfig.refreshWindowStartTime</code> which can be set to values such as <code class="highlighter-rouge">12:00PM</code> or <code class="highlighter-rouge">01:00AM</code> etc. Example: To set the cluster window from 2:00 AM to 10:00 AM you can set the flag as <code class="highlighter-rouge">orion.materializationConfig.refreshWindowStartTime "02:00AM"</code>.</div>
 
 <h2 id="related-information">Related Information</h2>
 
@@ -3304,7 +3296,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 27, 2019 <br />
+        Generated: Oct 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

@@ -1650,7 +1650,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/admin/users-groups/add-user.html">Add, edit, or delete a user</a></li>
+                          <li><a href="/5.3/admin/users-groups/add-user.html">Create, edit, or delete a user</a></li>
                       
                    
                 
@@ -3166,12 +3166,6 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.3/error-codes/error-codes-reference.html">Error code reference</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/5.3/reference/glossary.html">Glossary</a></li>
                 
               
@@ -3250,7 +3244,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    1 minute
   
 </span>
  -->
@@ -3576,10 +3570,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/LDAP-config-AD.html">Configure authentication through Active Directory</a></td>
-         <td> ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL. Before you begin Before you configure ThoughtSpot for Active Directory, collect the following information:  URL: Required to connect to Active Directory. For example,... </td>
-      </tr>
       
       
       
@@ -3587,10 +3577,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/NAS-mount.html">Configure NAS file system</a></td>
-         <td> Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system to support these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you... </td>
-      </tr>
       
       
       
@@ -3614,10 +3600,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/add-SSL-for-LDAP.html">Add the SSL certificate for LDAP</a></td>
-         <td> Install the certificate to support LDAPS </td>
-      </tr>
       
       
       
@@ -3625,10 +3607,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/configure-SAML-with-tscli.html">Configure SAML</a></td>
-         <td> ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML through the shell on ThoughtSpot using a tscli based configurator. Before you begin Before you configure SAML, you need the following information:  ThoughtSpot Service address: Domain or IP... </td>
-      </tr>
       
       
       
@@ -3672,19 +3650,11 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/set-up-monitoring.html">Set up monitoring</a></td>
-         <td> Setting up monitoring is a one time operation. </td>
-      </tr>
       
       
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/set-up-relay-host.html">Set the relay host for SMTP (email)</a></td>
-         <td> ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.  Note: The Management Console is now available in... </td>
-      </tr>
       
       
       
@@ -3706,10 +3676,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      <tr>
-         <td><a href="/5.3/admin/setup/work-with-ts-support.html">Configure support services</a></td>
-         <td> There are several configurations you can set up in your installation to ensure your company’s support from ThoughtSpot works smoothly. Set up a reverse tunnel for support You can set up a reverse tunnel to allow ThoughtSpot Support to get access to your ThoughtSpot instance, to perform support-related activities.... </td>
-      </tr>
       
       
       
@@ -4079,486 +4045,6 @@ $('#toc').on('click', 'a', function() {
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <tr>
-         <td><a href="/5.3/reference/tscli-command-ref.html">tscli command reference</a></td>
-         <td> The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it. The command... </td>
-      </tr>
       
       
       
@@ -4743,606 +4229,29 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-              
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/LDAP-config-AD.html">Configure authentication through Active Directory</a></td>
-                 <td> ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL. Before you begin Before you configure ThoughtSpot for Active Directory, collect the following information:  URL: Required to connect to Active Directory. For example,... </td>
-              </tr>
-              
-            
-          
-            
-              
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/NAS-mount.html">Configure NAS file system</a></td>
-                 <td> Some operations, like backup/restore and data loading, require you to either read or write large files. You can mount a NAS (network attached storage) file system to support these operations. Currently, ThoughtSpot does not have an option for direct attached storage. Your NAS storage can use whichever drive format you... </td>
-              </tr>
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/add-SSL-for-LDAP.html">Add the SSL certificate for LDAP</a></td>
-                 <td> Install the certificate to support LDAPS </td>
-              </tr>
-              
-            
-          
-            
-              
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/configure-SAML-with-tscli.html">Configure SAML</a></td>
-                 <td> ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML through the shell on ThoughtSpot using a tscli based configurator. Before you begin Before you configure SAML, you need the following information:  ThoughtSpot Service address: Domain or IP... </td>
-              </tr>
-              
-            
-          
-            
-              
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/set-up-monitoring.html">Set up monitoring</a></td>
-                 <td> Setting up monitoring is a one time operation. </td>
-              </tr>
-              
-            
-          
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/set-up-relay-host.html">Set the relay host for SMTP (email)</a></td>
-                 <td> ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.  Note: The Management Console is now available in... </td>
-              </tr>
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-              <tr>
-                 <td><a href="/5.3/admin/setup/work-with-ts-support.html">Configure support services</a></td>
-                 <td> There are several configurations you can set up in your installation to ensure your company’s support from ThoughtSpot works smoothly. Set up a reverse tunnel for support You can set up a reverse tunnel to allow ThoughtSpot Support to get access to your ThoughtSpot instance, to perform support-related activities.... </td>
-              </tr>
-              
-            
-              
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-      
-        
           
             
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
           
             
-              
-            
-              
-            
           
             
-              
-            
-          
-      
-        
           
             
           
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
             
-              
-            
           
-            
-              
             
           
             
@@ -5398,25 +4307,14 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
             
           
             
-          
-      
-        
           
-            
-              
-            
-              
             
           
             
-              
-            
           
             
           
@@ -5424,14 +4322,8 @@ $('#toc').on('click', 'a', function() {
           
             
           
-            
-              
             
-              
-            
           
-            
-              
             
           
             
@@ -5441,17 +4333,9 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
-            
-              
             
-              
-            
           
-            
-              
             
           
             
@@ -5465,80 +4349,39 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
-              
-            
           
             
           
             
-          
-      
-        
           
             
-              
-            
           
-            
-              
             
           
-            
-              
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
             
-              
-            
           
-            
-              
             
-              
-            
           
-            
-              
             
           
             
@@ -5552,27 +4395,15 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
-            
-              
             
-              
-            
           
-            
-              
             
           
             
           
             
           
-            
-              
-            
-              
             
           
             
@@ -5580,18 +4411,9 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
-              
-            
           
             
           
-      
-        
-          
-            
-              
             
           
             
@@ -5615,8 +4437,6 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
             
           
@@ -5627,22 +4447,13 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
             
           
-            
-              
             
           
             
           
-      
-        
-          
-            
-              
             
           
             
@@ -5654,8 +4465,6 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
             
           
@@ -5667,15 +4476,11 @@ $('#toc').on('click', 'a', function() {
           
             
           
-            
-              
             
           
             
           
             
-              
-            
           
             
           
@@ -5689,41 +4494,26 @@ $('#toc').on('click', 'a', function() {
           
             
           
-            
-              
             
           
             
-              
-            
           
-            
-              
             
           
             
-              
-            
           
             
           
             
           
-            
-              
             
           
-      
-        
-          
             
           
             
           
             
           
-            
-              
             
           
             
@@ -5738,124 +4528,17 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
-              
-            
-          
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
           
             
           
             
           
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
+      
+        
           
-            
-          
-            
-              
             
           
             
-              
-            
-              
-            
           
             
           
@@ -5875,8 +4558,6 @@ $('#toc').on('click', 'a', function() {
           
             
           
-            
-              
             
           
             
@@ -5890,10 +4571,6 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
-              
-            
           
             
           
@@ -5925,10 +4602,6 @@ $('#toc').on('click', 'a', function() {
           
             
           
-            
-              
-            
-              
             
           
             
@@ -5943,6 +4616,398 @@ $('#toc').on('click', 'a', function() {
         
           
             
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      
+        
           
       
         
@@ -5964,7 +5029,13 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
+          
+            
+          
+            
+          
+            
+          
             
           
             
@@ -5974,77 +5045,11 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
+          
             
           
             
-              
-            
           
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              
-            
-              
             
           
             
@@ -6052,14 +5057,25 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
+          
             
-              
-              <tr>
-                 <td><a href="/5.3/reference/tscli-command-ref.html">tscli command reference</a></td>
-                 <td> The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it. The command... </td>
-              </tr>
-              
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
             
           
       
@@ -6074,66 +5090,28 @@ $('#toc').on('click', 'a', function() {
             
           
             
-              
-            
           
       
         
           
             
-              
-            
-              
-            
-              
+          
             
           
             
-              
-            
-              
+          
             
           
             
-              
+          
             
           
             
-              
-            
-              
+          
             
           
             
-              
-            
-              
-            
           
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
-            
-              
-            
-          
-            
-              
             
           
       
@@ -6150,34 +5128,18 @@ $('#toc').on('click', 'a', function() {
           
       
           
-            
-        
-            
-        
-      
-          
-            
-        
-            
-        
-            
-        
-      
-          
-      
-          
-            
-        
-            
-        
       
           
       
           
       
           
-            
-        
+      
+          
+      
+          
+      
+          
        -->
 
       <!--  -->
@@ -6210,7 +5172,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 27, 2019 <br />
+        Generated: Oct 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

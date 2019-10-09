@@ -8,8 +8,8 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  user, delete, add, edit, manage">
-<title>Add, edit, or delete a user | ThoughtSpot</title>
+<meta name="keywords" content=",  ">
+<title>Create, edit, or delete a user | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,21 +47,21 @@
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Add, edit, or delete a user”] | thoughtspot.github.io</title>
+<title>[“Create, edit, or delete a user”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="[“Add, edit, or delete a user”]" />
+<meta property="og:title" content="[“Create, edit, or delete a user”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="For each unique person who accesses ThoughtSpot, you must create a user account." />
-<meta property="og:description" content="For each unique person who accesses ThoughtSpot, you must create a user account." />
+<meta name="description" content="You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols." />
+<meta property="og:description" content="You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-27T11:22:39-07:00" />
+<meta property="article:published_time" content="2019-10-08T20:00:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html"},"url":"https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html","headline":"[“Add, edit, or delete a user”]","dateModified":"2019-09-27T11:22:39-07:00","datePublished":"2019-09-27T11:22:39-07:00","description":"For each unique person who accesses ThoughtSpot, you must create a user account.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html"},"url":"https://docs.thoughtspot.com/5.3/admin/users-groups/add-user.html","headline":"[“Create, edit, or delete a user”]","dateModified":"2019-10-08T20:00:38-07:00","datePublished":"2019-10-08T20:00:38-07:00","description":"You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1652,7 +1652,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/5.3/admin/users-groups/add-user.html">Add, edit, or delete a user</a></li>
+                          <li class="active"><a href="/5.3/admin/users-groups/add-user.html">Create, edit, or delete a user</a></li>
                       
                    
                 
@@ -3168,12 +3168,6 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.3/error-codes/error-codes-reference.html">Error code reference</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/5.3/reference/glossary.html">Glossary</a></li>
                 
               
@@ -3209,7 +3203,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Add, edit, or delete a user</h1>
+   <h1 class="post-title-main">Create, edit, or delete a user</h1>
 </div>
 
 
@@ -3252,46 +3246,53 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    6 minutes
   
 </span>
  -->
 
     
 
-  <p>For each unique person who accesses ThoughtSpot, you must create a user account.</p>
+  <p>You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.</p>
 
-<p>You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.</p>
-
-<p>When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user’s password, change their email, and so on. If forgot the admin password, please call <a href="/5.3/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
+<p>When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user’s password, change their email, and so on.</p>
 
 <p>For users who have access through LDAP, the LDAP installation manages all  user information.</p>
 
-<h2 id="create-a-user-through-the-interface"><a href="#create-user-ui">Create a user through the interface</a></h2>
+<h2 id="add-user">Create a user in ThoughtSpot</h2>
 
-<p>This procedure demonstrates how to create a user manually. When you create a user, you can assign group memberships. The group’s privileges and permissions apply to all of its members. Also, note that all users automatically belong to the group <strong>All</strong>.</p>
+<p>This procedure demonstrates how to create a user manually. When you create a user, you can specify the <em><a href="#username">username</a></em>, <em><a href="#display-name">display name</a></em>, <em><a href="#sharing-visibility">sharing visibility</a></em>, the <em><a href="#password">password</a></em>, <em><a href="#email">email</a></em>, whether they get a <em><a href="#welcome-email">welcome email</a></em> and its <em><a href="#welcome-text">text</a></em>, and assign <em><a href="#groups">group</a></em> memberships. The user inherits privileges and permissions directly from the group assignments.</p>
+
+<p>Note that all users automatically belong to the group <strong>All</strong>.</p>
+
+<p>To create a new user and assign that user to groups, follow these steps:</p>
 
 <ol>
   <li>Log into ThoughtSpot from a browser.</li>
   <li>
     <p>Click the <strong>Admin</strong> icon, on the top navigation bar.</p>
 
-    <p><img src="/5.3/images/admin_icon.png" alt="" /></p>
+    <p><img src="/5.3/images/click-admin.png" alt="Admin tab" title="Admin Tab" /></p>
   </li>
   <li>
-    <p>In the <strong>Admin</strong> panel, click <strong>User Management</strong> and <strong>Users</strong>.</p>
+    <p>In the <strong>Admin</strong> panel, click <strong>User Management</strong>.</p>
 
-    <p><img src="/5.3/images/manage_users_3.2.png" alt="" title="Manage Users" /></p>
+    <p><img src="/5.3/images/admin-user-management.png" alt="Admin &gt; User Management" title="Admin &gt; User Management" /></p>
   </li>
   <li>
-    <p>Click the <strong>+ Add User</strong> button on the upper right hand side of the list of groups.</p>
+    <p>In the <strong>User Management</strong> section, click <strong>Users</strong>.</p>
 
-    <p><img src="/5.3/images/add_user_3.2.png" alt="" title="Add a new User" /></p>
+    <p><img src="/5.3/images/admin-user-management-users.png" alt="Manage Groups" title="Manage Users" /></p>
   </li>
   <li>
-    <p>Enter the details for the new user:</p>
+    <p>Click the <strong>+ Add User</strong> button on the upper right-hand side of the list of users.</p>
 
-    <p><img src="/5.3/images/new_user_dialogue.png" alt="" title="Create a user manually" /></p>
+    <p><img src="/5.3/images/admin-user-management-add-user.png" alt="Add a new User" title="Add a new User" /></p>
+  </li>
+  <li>
+    <p>In the <strong>Add a new user</strong> interface, enter the details for the new user:</p>
+
+    <p><img src="/5.3/images/add-user.png" alt="Add a new User" title="Add a new User" /></p>
 
     <table>
   <colgroup>
@@ -3304,53 +3305,53 @@ $('#toc').on('click', 'a', function() {
    <th>Required?</th>
    <th>Description</th>
    </tr>
-   <tr>
+   <tr id="username">
      <th>Username</th>
      <td>Yes</td>
-     <td><p>A login name for the user. Usernames must be unique and lowercase.</p>
-     <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+     <td>A login name for the user. Usernames must be unique and lowercase.
+     <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain-qualified (<code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
    </tr>
-   <tr>
+   <tr id="display-name">
      <th>Display name</th>
      <td>Yes</td>
      <td>A unique name for the user (usually their first and last name).</td>
    </tr>
-   <tr>
+   <tr id="sharing-visibility">
      <th>Sharing visibility</th>
      <td>Yes</td>
      <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
      this user is an option in the <b>Share</b> dialog.</td>
    </tr>
-   <tr>
+   <tr id="password">
      <th>Change password</th>
      <td>Yes</td>
      <td>A password.</td>
    </tr>
-   <tr>
+   <tr id="confirm_password">
      <th>Confirm password</th>
      <td>Yes</td>
      <td>Enter the password again.</td>
    </tr>   
-   <tr>
+   <tr id="email">
      <th>Email</th>
      <td>Yes</td>
-     <td><p>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.</p>
+     <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.
      <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
    </tr>    
-   <tr>     
+   <tr id="welcome-email">     
      <th>Send a welcome email</th>
      <td>No</td>
      <td>When checked, this option ensures that the new user receives a welcome email.</td>
    </tr>
-   <tr>     
+   <tr id="email-text">     
      <th>Email message text</th>
      <td>No</td>
      <td>This enter text of the optional welcome email here.</td>
    </tr>
-   <tr>
-     <th>Manage groups</th>
-     <td>No</td>
-     <td><p>Select all the groups the user belongs to.</p>
+   <tr id="groups">
+     <th>Groups</th>
+     <td>Recommended</td>
+     <td>Select the groups for the user.
      <p>Note that if you add the user to a group that has the privilege <b>Has administration privileges</b>, they can see all the data in ThoughtSpot. </p>
      <p>When you create a new user, the groups they belong to define the following attributes for the user:</p>
      <ul>
@@ -3364,34 +3365,144 @@ $('#toc').on('click', 'a', function() {
   <li>Click <strong>Add</strong> to create the user.</li>
 </ol>
 
-<p>Note that this process of identifying the user’s needs helps setup a robust onboarding process. See <a href="/5.3/end-user/onboarding/intro-onboarding.html#">Onboarding users</a></p>
+<p>Note that this process of identifying the user’s needs contributes to a robust onboarding process. See <a href="/5.3/end-user/onboarding/intro-onboarding.html#">Onboarding users</a>.</p>
 
-<h2 id="edit-or-delete-a-user">Edit or delete a user</h2>
+<h2 id="edit-user">Edit an existing user</h2>
 
-<p>After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password. You can also change their name as long as it remains unique</p>
+<p>As an administrator, you can edit a user account, and change the user’s groups. You can also help users by resetting their password, and evaluating their onboarding experience to ensure they receive the best possible introduction to relevant information in ThoughtSpot.</p>
 
-<p>As an administrator, you can edit a user and change the groups the user belongs to. You can also edit a user to reset a user’s password by entering and confirming the new password. This is useful if a user has forgotten their password, or to effectively disable an account.</p>
-
-<p>To edit an existing user:</p>
+<p>To edit an existing user, follow these steps:</p>
 
 <ol>
-  <li>Log into ThoughtSpot from a browser.</li>
+  <li>
+    <p>Log into ThoughtSpot from a browser.</p>
+  </li>
   <li>
     <p>Click the <strong>Admin</strong> icon, on the top navigation bar.</p>
 
-    <p><img src="/5.3/images/admin_icon.png" alt="" /></p>
+    <p><img src="/5.3/images/click-admin.png" alt="Admin tab" title="Admin Tab" /></p>
   </li>
   <li>
-    <p>In the <strong>Admin</strong> panel, click <strong>User Management</strong> and <strong>Users</strong>.</p>
+    <p>In the <strong>Admin</strong> panel, click <strong>User Management</strong>.</p>
 
-    <p><img src="/5.3/images/manage_users_3.2.png" alt="" title="Manage Users" /></p>
+    <p><img src="/5.3/images/admin-user-management.png" alt="Admin &gt; User Management" title="Admin &gt; User Management" /></p>
   </li>
   <li>
-    <p>Find the user you want to edit in the list and click its name or the edit icon <img src="/5.3/images/edit_icon.png" alt="" />. If you don’t see the name of the user, try searching for it.</p>
+    <p>In the <strong>User Management</strong> section, click <strong>Users</strong>.</p>
 
-    <p>You can also delete a user from this page by clicking the <strong>Delete</strong> icon.</p>
+    <p><img src="/5.3/images/admin-user-management-users.png" alt="Manage Groups" title="Manage Users" /></p>
   </li>
-  <li>Make your changes and click <strong>Save</strong>.</li>
+  <li>
+    <p>Click on the username in the list to open the <strong>Edit User</strong> interface.</p>
+
+    <p>If you don’t immediately see the username you plan to edit, try searching for it.</p>
+
+    <p><img src="/5.3/images/edit-user-search.png" alt="Search Users" title="Search Users" /></p>
+  </li>
+  <li>
+    <p>In the <strong>Edit User</strong> interface, edit the basic user information.</p>
+
+    <p>You can change the <em><a href="#username">username</a></em>, <em><a href="#display-name">display name</a></em>, <em><a href="#sharing-visibility">sharing visibility</a></em>, <em><a href="#password">passwords</a></em>, and <em><a href="#email">user’s email</a></em>.</p>
+
+    <p><img src="/5.3/images/edit-user.png" alt="Edit User" title="Edit User" /></p>
+
+    <p>You can also <a href="#edit-user-preview-onboarding">Preview onboarding</a>, and make changes to the <em><a href="#edit-user-groups">Groups</a></em> assigned to the user.<!--, and check _[Email](#edit-user-email)_ options.--></p>
+  </li>
+  <li>
+    <p>Click <strong>Update</strong>.</p>
+  </li>
+</ol>
+
+<h3 id="edit-user-preview-onboarding">Preview onboarding</h3>
+
+<p>You can click <strong>Preview onboarding</strong> to evaluate this user’s first experience with ThoughtSpot. After previewing the user’s default data source and Pinboards, you may choose to change the <strong><a href="*change-groups">Group</a></strong> assignments.</p>
+
+<p><img src="/5.3/images/edit-user-preview-onboarding.png" alt="Preview onboarding experience" title="Preview onboarding experience" /></p>
+
+<h3 id="edit-user-groups">Groups</h3>
+
+<p>Follow these steps to change the user’s groups:</p>
+
+<ol>
+  <li>
+    <p>Click the <strong>Groups</strong> tab.</p>
+  </li>
+  <li>
+    <p>Select the groups you want to add in the list by clicking the box next to the group name.</p>
+  </li>
+  <li>
+    <p>You can also use <strong>Search</strong> to find groups by name.</p>
+  </li>
+  <li>
+    <p>Deselect the groups you want to remove from the list by clearing the box next to the group name.</p>
+  </li>
+  <li>
+    <p>Click <strong>Update</strong> to save changes.</p>
+  </li>
+</ol>
+
+<p><img src="/5.3/images/edit-user-groups.png" alt="Edit User Grouops" title="Edit User Groups" /></p>
+
+<!--
+{: id="edit-user-email"}
+### Email
+
+You can _Resend welcome email_ by clicking **Send**.
+
+Clicking **Test welcome email**  introduces them to ThoughtSpot, and initiates the onboarding process.
+
+Follow these steps to configure group-wide emails:
+
+1. Click the **Email** tab.
+
+2. Under **Resend welcome email**, select either either _All users_ or _New users_.
+
+3. Enter optional text for the email.
+   Here, we added "Welcome!"
+
+4. To send the email immediately, click **Send**.
+
+5. To test the email, click "Test welcome email"
+
+6. Click **Update** to save changes.
+
+![Edit User Email](/5.3/images/edit-user-email.png "Edit User Email")-->
+
+<h2 id="delete-user">Delete users</h2>
+
+<p>To delete users, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>Log into ThoughtSpot from a browser.</p>
+  </li>
+  <li>
+    <p>Click the <strong>Admin</strong> icon, on the top navigation bar.</p>
+
+    <p><img src="/5.3/images/click-admin.png" alt="Admin tab" title="Admin Tab" /></p>
+  </li>
+  <li>
+    <p>In the <strong>Admin</strong> panel, click <strong>User Management</strong>.</p>
+
+    <p><img src="/5.3/images/admin-user-management.png" alt="Admin &gt; User Management" title="Admin &gt; User Management" /></p>
+  </li>
+  <li>
+    <p>In the <strong>User Management</strong> section, click <strong>Users</strong>.</p>
+
+    <p><img src="/5.3/images/admin-user-management-users.png" alt="Manage Groups" title="Manage Users" /></p>
+  </li>
+  <li>
+    <p>Select the users you plan to delete by clicking the box next to the username.</p>
+
+    <p>If you don’t immediately see the username you plan to delete, try searching for it.</p>
+
+    <p><img src="/5.3/images/edit-user-search.png" alt="Search Users" title="Search Users" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Delete</strong>.</p>
+
+    <p><img src="/5.3/images/delete-users.png" alt="Delete Users" title="Delete Users" /></p>
+  </li>
 </ol>
 
   <div class="tags">
@@ -3418,9 +3529,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 27, 2019 <br />
+        Generated: Oct 8, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 10/08/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
