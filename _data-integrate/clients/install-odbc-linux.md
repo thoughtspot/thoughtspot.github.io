@@ -65,14 +65,14 @@ ODBC driver:
     │       └── libSimbaClient.so
     ├── ErrorMessages
     │   ├── de-DE
+    │   │   ├── ... 
+    │   ├── en-US
     │   │   ├── CSCommonMessages.xml
     │   │   ├── ClientMessages.xml
     │   │   ├── JNIDSIMessages.xml
     │   │   ├── ODBCMessages.xml
     │   │   ├── SQLEngineMessages.xml
     │   │   └── ServerMessages.xml
-    │   ├── en-US
-    │   │   ├── ...
     │   ├── es-ES
     │   ├── fr-FR
     │   ├── it-IT
