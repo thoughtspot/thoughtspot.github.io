@@ -11,6 +11,7 @@ permalink: /:collection/:path.html
 ThoughtSpot version 5.3.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [Supported Upgrade Paths](#upgrade-paths)
 * [5.3.1 New Features](#531-new)
 * [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
@@ -18,6 +19,7 @@ fixed issues from the previous releases, and any known issues.
 * [Beta Programs](#beta-program)
 * [Notes from Older Versions](#notes-for-older-versions)
 
+{: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
 If you are running one of the following versions, you can upgrade to the 5.3.1 release
@@ -61,21 +63,13 @@ You can now load data from an S3 bucket into your ThoughtSpot AWS instance faste
 The following issues are fixed in the 5.3.1 release:
 
 - Using a custom calendar, and doing a query that filters on a date field causes a database error.
-
 - Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.
-
 - When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.
-
 - Opening certain pinboards can cause the Google Chrome browser to freeze.
-
 - Columns renamed in a worksheet revert back to their original names later.
-
 - Columns cannot be deleted from a worksheet.
-
 - Using a custom calendar and filtering date values by year, month or quarter does not work.
-
 - Canadian postal codes do not appear on maps.
-
 - The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
 
 {: id="53-new"}
@@ -85,13 +79,9 @@ The following issues are fixed in the 5.3.1 release:
 In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
 
 - To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
-
 - To include users in the onboarding process, each user profile must include a valid email address. See [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
-
 - When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
-
 - To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
-
 - See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).  
 
 ### ThoughtSpot mobile
