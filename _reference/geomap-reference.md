@@ -1,7 +1,7 @@
 ---
 title: [Geo Map Reference]
 last_updated: 09/23/2019
-summary: "ThoughtSpot recognizes a broad list geographic regions and their subdivisions."
+summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
