@@ -13,13 +13,13 @@ ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to 
 
 Before you configure SAML, collect the following information:
 
-| &#10063; | [ThoughtSpot service address](#ts-service-address)
-| &#10063; | [Service port](#ts-service-port)
-| &#10063; | [Unique service name](#ts-service-name)
-| &#10063; | [Skew time in seconds](#skew-time)
-| &#10063; | [IDP Metadata XML File](#metadata-xml-file)
-| &#10063; | [Automatically add SAML users to Thoughtspot](#auto-add)
-| &#10063; | [Also use ThoughtSpot internal authentication](#ts-auth)
+| &#10063; | [ThoughtSpot service address](#ts-service-address |
+| &#10063; | [Service port](#ts-service-port) |
+| &#10063; | [Unique service name](#ts-service-name) |
+| &#10063; | [Skew time in seconds](#skew-time) |
+| &#10063; | [IDP Metadata XML File](#metadata-xml-file) |
+| &#10063; | [Automatically add SAML users to Thoughtspot](#auto-add) |
+| &#10063; | [Also use ThoughtSpot internal authentication](#ts-auth) |
 
 {: id="ts-service-address" }
 ### ThoughtSpot service address
