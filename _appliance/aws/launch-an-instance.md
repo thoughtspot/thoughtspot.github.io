@@ -75,9 +75,9 @@ To set up an Amazon S3 bucket in AWS, do the following:
 
 3. Click **Create bucket**.
 
-4. In the Name and region page, enter a name for your bucket, select the region where you will set up your cluster, and click **Next**.
+4. In the **Name and region** page, enter a name for your bucket, select the region where to set up the cluster, and click **Next**.
 
-5. On the Properties page, click **Next**.
+5. On the **Properties** page, click **Next**.
 
 6. On the Configure options page, make sure **Block *all* public access** is selected and click **Next**.
 

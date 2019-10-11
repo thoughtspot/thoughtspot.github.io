@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 {: id="prerequisites"}
-## Configuration Prerequisites
+## Configuration prerequisites
 
 Before you configure ThoughtSpot for Active Directory, collect the following information:
 
