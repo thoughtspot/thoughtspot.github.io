@@ -1,37 +1,57 @@
 ---
 title: [Set up high availability for AWS]
-
-last_updated: tbd
+last_updated: 10/10/2019
+summary: "This article explains how to set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS)"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), do the following:
+{: id="configure-ha"}
+## Configure high availabiity
+To set up High Availability (HA) for your ThoughtSpot cluster using the AWS Elastic File System (EFS), follow these steps:
 
 1. Create an EFS File System that spans across different availability zones, and across different subnets.
 
 2. Create two ThoughtSpot clusters in each availability zone and in the subnets, where the file system was created.
 
-3. Change the IP addresses of the cluster (if needed).
+3. Change the IP addresses of the cluster, if necessary.
 
-4. Create efs <customizable name> directory in /home/admin path and issue the following command to mount the previously created file system, editing the following sample link:
-'sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-f756f1ee.efs.us-west-1.amazonaws.com:/ /home/admin/efs/'
-Make sure read and write permissions are provided on all cluster EFS mount points. use: `chmod 777 /home/admin/efs`
+4. Create an EFS <customizable_name> directory in the `/home/admin` path, and issue the following command to mount the previously created file system.
 
-5. On the first cluster, create a snapshot and backup from that snapshot, on to the mount point where EFS is mounted. Example commands:
-`tscli snapshot create EfsTest HA 2`
-`tscli backup create --mode full --type full --storage_type local EfsTest /home/admin/efs/Efs-backup`
+   Modify the fields as necessary for your installation.
 
-6. Make sure the backup is created and accessible from all the clusters where EFS is mounted. In our cases both the clusters.
+   ```
+   sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,
+                        noresvport fs-f756f1ee.efs.us-west-1.amazonaws.com:/ /home/admin/efs/
+   ```
 
-7. Now bring down the first cluster instances.
+   To ensure that all clusters with EFS mount points have read and write permissions, modify permissions:
+   ```
+   chmod 777 /home/admin/efs
+   ```
 
-8. Go to Second cluster, delete existing cluster and create new one by restoring from the first cluster backup which is accessible from efs mount point.
-Example: `tscli cluster restore /home/admin/EFS/Efs-backup`
+5. On the first cluster, create a snapshot on to the EFS mount point, and backup it.
 
-Your cluster should now be successfully restored on the second cluster from the backup provided my EFS, achieving HA for ThoughtSpot clusters.
+   ```
+   tscli snapshot create EfsTest HA 2
+   tscli backup create --mode full --type full
+                       --storage_type local EfsTest /home/admin/efs/Efs-backup
+   ```
 
-### Replacing a cluster
+6. Ensure that the backup is successful, and that it can be accessed from all clusters where EFS is mounted.
+
+7. Take down the first cluster instances.
+
+8. On the second cluster, delete the existing cluster, and create a new one by restoring from the first cluster backup. This is accessible from the EFS mount point.
+
+   ```
+   tscli cluster restore /home/admin/EFS/Efs-backup
+   ```
+
+Your cluster should now be successfully restored to the second cluster from the backup on the EFS, achieving HA for ThoughtSpot clusters.
+
+{: id="replace-cluster"}
+## Replace a cluster
 
 For information on how to recover from infrastructure failure scenarios, see: [Cluster replacement]({{ site.baseurl }}/disaster-recovery/cluster-replacement.html).
 
