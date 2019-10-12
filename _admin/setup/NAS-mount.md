@@ -1,17 +1,13 @@
 ---
 title: [Configure NAS file system]
-
-
-last_updated: tbd
+last_updated: 10/10/2019
 sidebar: mydoc_sidebar
+summary: "Some operations, like backup, restore, and data loading, require either
+reading or writing very large files. You can mount a network attached storage (NAS)) file
+system to support these operations. Your NAS storage can be in the drive format you choose."
 permalink: /:collection/:path.html
 ---
-Some operations, like backup/restore and data loading, require you to either
-read or write large files. You can mount a NAS (network attached storage) file
-system to support these operations. Currently, ThoughtSpot does not have an option for
-direct attached storage. Your NAS storage can use whichever drive format you
-would like.
-
+{: id="mount-nas"}
 ## About NAS mount
 
 ThoughtSpot enables you to mount a NAS file system for storing or accessing
@@ -21,7 +17,7 @@ When supplying a directory for writing or reading a backup, you can specify the 
 loading.
 
 Backups are written by the Linux user `admin`. If that user does not have
-permission to write to the NAS file system, you could write the backups to disk
+permission to write to the NAS file system, you can write the backups to a disk
 (for example `/export/sdc1`, `/export/sdd1`, `/export/sde1`, or `/export/sdf1`)
 and then set up a cron job that executes as root user and copies the backup to
 the NAS device every night, then deletes it from the directory.
@@ -92,10 +88,14 @@ To mount a NAS file system using the admin UI:
 6. Click **Save** to mount a NAS file system.
 
 -->
-## Mount using tscli
-To mount a NAS file system using the tscli:
+
+{: id="mount-nas-tscli"}
+## Mount NAS using tscli
+
+To mount a NAS file system using the tscli, follow these steps:
+
 1. Log in to the Linux shell using SSH.
-2. Mount the directory to the file system, by issuing the appropriate command:
+2. Mount the directory to the file system by issuing the appropriate command:
     -   Example for an NFS (Network File System) directory:
 
         ```
@@ -116,8 +116,9 @@ To mount a NAS file system using the tscli:
 
         {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}
 
-3. Use the mounted file system as you wish, specifying it by referring to its mount point.
-4. When you are finished with it, you may optionally unmount the NAS file system:
+3. Use the mounted file system by referring to its mount point.
+
+4. When you are finished with it, you can optionally unmount the NAS file system:
 
     ```
     tscli nas unmount --dir <directory>

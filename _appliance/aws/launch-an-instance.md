@@ -1,15 +1,13 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-
-last_updated: tbd
+last_updated: 10/10/2019
 sidebar: mydoc_sidebar
+summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
 ---
-
-After you've determined your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI). Please read further for next steps.
-
+{: id="aws-overview"}
 ## Overview of ThoughtSpot setup in AWS
-The high-level process for setting up ThoughtSpot in AWS is the following:
+The high-level process for setting up ThoughtSpot in AWS involves these steps:
 1. Gain access to ThoughtSpot AMIs.
 2. Choose a VM instance configuration recommended by ThoughtSpot.
 3. Set up your Amazon S3 bucket (optional).
@@ -17,16 +15,20 @@ The high-level process for setting up ThoughtSpot in AWS is the following:
 3. Contact ThoughtSpot to finish setting up your cluster.
 4. Open the required network ports for communication for the nodes in your cluster and end users.
 
+{: id="prerequisites"}
 ## About the ThoughtSpot AMI
 
-The ThoughtSpot AMI comes provisioned with the custom ThoughtSpot image to make deploying simple. An Amazon Machine image (AMI) is a preconfigured template that provides the information required to launch an instance. You must specify an AMI when you launch an instance in AWS. An AMI includes the following:
+An Amazon Machine image (AMI) is a preconfigured template that provides the information required to launch an instance. You must specify an AMI when you launch an instance in AWS.
 
--   A template for the root volume for the instance (for example, an operating system, an appliance server, and applications).
+To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image, with the following components:
+
+-   A template for the root volume for the instance, such as  an operating system, an appliance server, and applications.
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
--   A block device mapping that specifics the volumes to attach to the instance when it’s launch.
+-   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
-The ThoughtSpot AMI has specific applications on a CentOS base image. The EBS volumes required to install ThoughtSpot in AWS are included in the AMI. When you launch an EC2 instance from this image, the EBS volumes are automatically sized and provisioned. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks so that it handle the full load of the VM.
+The ThoughtSpot AMI has specific applications on a CentOS base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisiones the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
+{: id="prerequisites"}
 ## Prerequisites
 
 To install and launch ThoughtSpot, you must have the following:
@@ -34,6 +36,7 @@ To install and launch ThoughtSpot, you must have the following:
 - The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.  
   For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
 
+{: id="aws-required"}
 ### Required AWS components
 
 - An AWS VPC. For details, see [VPC and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html){:target="_blank"} in Amazon's AWS documentation.
@@ -43,6 +46,7 @@ To install and launch ThoughtSpot, you must have the following:
 - EBS volumes.
 - (Optional) If deploying with S3 persistent storage, one S3 bucket dedicated to each ThoughtSpot cluster.
 
+{: id="ec2-setup"}
 ### Guidelines for setting up your EC2 instances
 
 - Sign in to your [AWS account](https://console.aws.amazon.com/console/home).
@@ -50,14 +54,16 @@ To install and launch ThoughtSpot, you must have the following:
 **AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
 **AMI ID**: ami-0b23846e4761375f1  
 **Region**: N. California
-  {% include note.html content="The AMI is backward compatible with ThoughtSpot releases 5.1.x - 5.2.x." %}
+  {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 5.2.x." %}
 - Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for supported instance types.
 - Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
 - Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
 - Number of EC2 instances needed: Based on the datasets, this number will vary. Please check [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
 - Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2).
 
-## (Optional) Setting up your Amazon S3 bucket
+{: id="s3-bucket-setup"}
+## Setting up your Amazon S3 bucket
+***This is optional.***
 
 If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the S3 storage option.
 
@@ -69,15 +75,18 @@ To set up an Amazon S3 bucket in AWS, do the following:
 
 3. Click **Create bucket**.
 
-4. In the Name and region page, enter a name for your bucket, select the region where you will set up your cluster, and click **Next**.
+4. In the **Name and region** page, enter a name for your bucket, select the region where to set up the cluster, and click **Next**.
 
-5. On the Properties page, click **Next**.
+5. On the **Properties** page, click **Next**.
 
 6. On the Configure options page, make sure **Block *all* public access** is selected and click **Next**.
 
 7. On the Set permissions page, click **Create bucket**.
 
-## (Optional) Encrypting your data at rest on Amazon EBS or S3 in AWS
+{: id="encrypt"}
+## Encrypting your data at rest on Amazon EBS or S3 in AWS
+
+***This is optional.***
 
 ThoughtSpot makes use of EBS for the data volumes to store persistent data (in the EBS deployment model) and the boot volume (in the EBS and S3 deployment models). ThoughtSpot recommends that you encrypt your data volumes prior to setting up your ThoughtSpot cluster.
 If you are using the S3 persistent storage model, you can encrypt the S3 buckets using SSE-S3. ThoughtSpot does not currently support AWS KMS encryption for AWS S3.  
@@ -86,6 +95,7 @@ For more information on encryption supported with AWS:
 - For EBS, see [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html){:target="_blank"} in Amazon's AWS documentation.  
 - For S3, see [Amazon S3 Default Encryption for S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html){:target="_blank"} in Amazon's AWS documentation.
 
+{: id="aws-ts-setup-cluster"}
 ## Setting up your ThoughtSpot cluster in AWS
 
 To set up a ThoughtSpot cluster in AWS, do the following:
@@ -144,6 +154,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 18.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
+{: id="network-ports"}
 ## Open the required network ports
 
 To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).

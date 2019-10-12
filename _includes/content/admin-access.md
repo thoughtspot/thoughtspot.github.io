@@ -1,6 +1,5 @@
-Each ThoughtSpot appliance comes pre-built with three default users. You should
-talk with a ThoughtSpot Customer Success Engineer or ThoughtSpot support, to get
-the password for each user.  The default users are:
+Each ThoughtSpot cluster has three default users. Contact your ThoughtSpot support team to get
+the passwords.
 
 <table>
 <colgroup>
@@ -15,28 +14,30 @@ the password for each user.  The default users are:
   </tr>
   <tr>
     <td>Shell user</td>
-    <td><code>admin</code></td>
-    <td>Used for work that requires sudo or root privileges. Does not exist for application login. Logs for this user are found in <code>/usr/local/scaligent/logs</code> logs</td>
+    <td id="admin"><code>admin</code></td>
+    <td>For work that requires <code>sudo</code> or <code>root</code> privileges
+        <p>Not for application login</p>
+        <p>Logs for this user are in <code>/usr/local/scaligent/logs</code> directory</p></td>
   </tr>
   <tr>
     <td>Shell user</td>
-    <td><code>thoughtspot</code></td>
-    <td>Used for command line work that does not require sudo or root privileges. For example, these users can use <code>tsload</code>, <code>tql</code>, and check the cluster status. This user cannot login to the application.  Logs for this user are found under <code>/tmp</code>.</td>
+    <td id="thoughtspot"><code>thoughtspot</code></td>
+    <td>For command-line work that does not <code>sudo</code> or <code>root</code> privileges
+        <p>Can use <code>tsload</code>, <code>tql</code>, and check the cluster status</p>
+        <p>Not for application login</p>
+        <p>Logs for this user are in <code>/tmp</code> directory</p></td>
   </tr>
   <tr>
     <td>Application user</td>
-    <td><code>tsadmin</code></td>
-    <td>Access through a Web browser.</td>
+    <td id="tsadmin"><code>tsadmin</code></td>
+    <td>Access through a Web browser</td>
   </tr>
 </table>
-<p>&nbsp;</p>
-Both the `admin` and `thoughtspot` user can SSH into the appliance. After
-authenticating into the appliance, either user can do any of the following:
 
-* [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html)
+Both the [`admin`](#admin) and [`thoughtspot`](#thoughtspot) user can SSH into the cluster. After
+authenticating, either user can use and and all of the following utilities:
+
+* [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html); [`thoughtspot`](#thoughtspot) user cannot use commands that require
+`sudo` or `root` privileges
 * [tsload]({{ site.baseurl }}/reference/sql-cli-commands.html)
 * [tql]({{ site.baseurl }}/admin/loading/use-data-importer.html)
-
-
-The `thoughtspot` user is restricted to `tscli` commands that do not require
-`sudo` or root privileges.
