@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="Your specific instances require specific configurations of memory, CPU, storage, and networking capacity."> -->
 <meta name="keywords" content=",  ">
 <title>AWS configuration options | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-08T21:17:18-07:00" />
+<meta property="article:published_time" content="2019-10-14T09:04:24-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-10-08T21:17:18-07:00","datePublished":"2019-10-08T21:17:18-07:00","description":"ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot: Mode 1: Compute VMs + EBS-only persistent storage Mode 2: Compute VMs + EBS and S3 persistent storage","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/aws/configuration-options.html","headline":"[“AWS configuration options”]","dateModified":"2019-10-14T09:04:24-07:00","datePublished":"2019-10-14T09:04:24-07:00","description":"ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot: Mode 1: Compute VMs + EBS-only persistent storage Mode 2: Compute VMs + EBS and S3 persistent storage","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1079,7 +1079,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/spotiq/spotiq-comparative-anaysis.html">Comparative Analysis</a></li>
+                          <li><a href="/5.3/spotiq/comparative-anaysis.html">Comparative Analysis</a></li>
                       
                    
                 
@@ -3211,6 +3211,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">Your specific instances require specific configurations of memory, CPU, storage, and networking capacity.</div>
+   
 
     
     
@@ -3263,13 +3265,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html" target="_blank">Regions and Availability Zones</a> in Amazon’s AWS documentation.</p>
 
-<h2 id="thoughtspot-aws-instance-types">ThoughtSpot AWS instance types</h2>
+<h2 id="ts-aws-instance-types">ThoughtSpot AWS instance types</h2>
 
 <p>The following sections contain the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.</p>
 
 <p>For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 instances (VMs), because the per-VM user data capacity of that instance type is 250 GB. If you were deploying EBS-only data volumes, you would need 2x1 TB data volumes per VM.</p>
 
-<h3 id="vms-with-ebs-only-persistent-storage">VMs with EBS-only persistent storage</h3>
+<h3 id="vm-ebs-only-persistent-storage">VMs with EBS-only persistent storage</h3>
 
 <p><img src="/5.3/images/persistent-storage-ebs.svg" alt="" title="AWS EBS-only Persistent Storage" /></p>
 
@@ -3316,7 +3318,7 @@ $('#toc').on('click', 'a', function() {
   </tbody>
 </table>
 
-<h3 id="vms-with-ebs-and-s3-persistent-storage">VMs with EBS and S3 persistent storage</h3>
+<h3 id="vm-ebs-s3-persistent-storage">VMs with EBS and S3 persistent storage</h3>
 
 <p><img src="/5.3/images/persistent-storage-ebs-s3.svg" alt="" title="AWS EBS and S3 Persistent Storage" /></p>
 
@@ -3365,7 +3367,7 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The S3 bucket size is approximately equal to the size of the user data.</div>
 
-<h2 id="related-information">Related information</h2>
+<h2 id="related">Related information</h2>
 
 <ul>
   <li><a href="https://aws.amazon.com/ec2/instance-types/">EC2 instance types</a></li>
@@ -3398,9 +3400,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 8, 2019 <br />
+        Generated: Oct 14, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 10/09/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

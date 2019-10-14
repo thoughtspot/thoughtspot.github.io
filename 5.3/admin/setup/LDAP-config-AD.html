@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server."> -->
 <meta name="keywords" content=",  ">
 <title>Configure authentication through Active Directory | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Configure authentication through Active Directory”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL." />
-<meta property="og:description" content="ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL." />
+<meta name="description" content="Configuration prerequisites" />
+<meta property="og:description" content="Configuration prerequisites" />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-08T21:17:18-07:00" />
+<meta property="article:published_time" content="2019-10-14T09:04:24-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html","headline":"[“Configure authentication through Active Directory”]","dateModified":"2019-10-08T21:17:18-07:00","datePublished":"2019-10-08T21:17:18-07:00","description":"ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/LDAP-config-AD.html","headline":"[“Configure authentication through Active Directory”]","dateModified":"2019-10-14T09:04:24-07:00","datePublished":"2019-10-14T09:04:24-07:00","description":"Configuration prerequisites","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1079,7 +1079,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/spotiq/spotiq-comparative-anaysis.html">Comparative Analysis</a></li>
+                          <li><a href="/5.3/spotiq/comparative-anaysis.html">Comparative Analysis</a></li>
                       
                    
                 
@@ -3211,6 +3211,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server.</div>
+   
 
     
     
@@ -3246,104 +3248,85 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    5 minutes
+    3 minutes
   
 </span>
  -->
 
     
 
-  <p>ThoughtSpot enables you to set up integration with Active Directory using LDAP. After successful setup, you can authenticate users against AD, including authentication over SSL.</p>
+  <h2 id="prerequisites">Configuration prerequisites</h2>
 
-<h2 id="before-you-begin">Before you begin</h2>
 <p>Before you configure ThoughtSpot for Active Directory, collect the following information:</p>
-<ul>
-  <li><strong>URL</strong>: Required to connect to Active Directory. For example, <code class="highlighter-rouge">ldap://ad.yourdomain.local:389</code> or <code class="highlighter-rouge">ldap://ad.yourdomain.local:636</code></li>
-  <li><strong>Domain name</strong>: Default domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple sub-domains, you can still designate one of them as the default. Authentication against multiple domains is not supported. <strong><em>NOTE:</em></strong> Users who don’t belong to the default domain will have to explicitly qualify their username when they log in, for example: <code class="highlighter-rouge">username@ad.yourdomain.local</code></li>
-  <li><strong>Search base</strong>: LDAP search base (Scope of searching user information like email and displayName within AD).</li>
-  <li><strong>SSL</strong>: If you want to use SSL, you must obtain the SSL certificate from an issuing authority. <strong><em>NOTE:</em></strong> If AD servers are behind a load balancer, you must procure the SSL certificate to identify ThoughtSpot to the load balancer (The communication after the load balancer is non-secure). ThoughtSpot does not support a scenario where multiple AD servers provide their own SSL certificates.</li>
-  <li><strong>Automatically add LDAP or AD users in ThoughtSpot? (yes/no)</strong>: If you choose ‘yes’, new users are automatically created within ThoughtSpot when successfully authenticated against AD. Note that ThoughtSpot doesn’t cache passwords for AD-authenticated users. If you choose ‘no’, users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="highlighter-rouge">username1@ad.yourdomain.local</code>. <strong><em>NOTE:</em></strong> In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against AD or against ThoughtSpot’s internal authentication.</li>
-  <li><strong>Also use ThoughtSpot internal authentication? (yes/no)</strong>: If you choose ‘yes’, ThoughtSpot will first attempt to authenticate the user against AD. If that attempt fails, it will then attempt to authenticate the user as an internal/local ThoughtSpot user. If either of these succeed, then the user is successfully logged in. This is useful in scenarios where some users are not in AD and are created only in ThoughtSpot.</li>
-</ul>
 
-<!-- ## Configure using Management Console
+<table>
+  <tbody>
+    <tr>
+      <td>❏</td>
+      <td><a href="#url">URL</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#domain-name">Domain name</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#search-base">Search base</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ssl">SSL</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#auto-add">Automatically add LDAP or AD users in ThoughtSpot?</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ts-auth">Also use ThoughtSpot internal authentication?</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or newer.</div>
+<h3 id="url">URL</h3>
 
+<p>Required to connect to Active Directory.</p>
 
-To configure authentication via Active Directory:
-=======
-  **_NOTE:_** In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against LDAP or against ThoughtSpot's internal authentication.
-- **Also use ThoughtSpot internal authentication? (yes/no)**: If you choose 'yes', ThoughtSpot will first attempt to authenticate the user against LDAP when a user logs in. If that attempt fails, it will then attempt to authenticate the user against ThoughtSpot. If either of these succeed, then the user is successfully logged in.
+<p>For example, <code class="highlighter-rouge">ldap://ad.yourdomain.local:389</code> or <code class="highlighter-rouge">ldap://ad.yourdomain.local:636</code></p>
 
-  **_NOTE:_** You can use this option only in `tscli`. This is useful in scenarios where some users are not in LDAP and are created only in ThoughtSpot.
+<h3 id="domain-name">Domain name</h3>
 
-<!--
-## Configure using Management Console
+<p>Default domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple sub-domains, you can still designate one of them as the default. Authentication against multiple domains is not supported.</p>
 
-<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it.</div>
+<p>Users who don’t belong to the default domain must explicitly qualify their username when they log in.</p>
 
+<p>For example: <code class="highlighter-rouge">username@ad.yourdomain.local</code></p>
 
-To configure LDAP for active directory:
+<h3 id="search-base">Search base</h3>
 
+<p>LDAP search base. The scope of searching user information, like <em>email</em> and <em>Display name</em>, within AD.</p>
 
-1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
+<h3 id="ssl">SSL</h3>
 
-   ![](/5.3/images/admin.png)
+<p>If you want to use SSL, you must obtain the SSL certificate from an issuing authority.</p>
 
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
+<p>If AD servers are behind a load balancer, you must procure the SSL certificate to identify ThoughtSpot to the load balancer. The communication after the load balancer is non-secure. ThoughtSpot does not support a scenario where multiple AD servers provide their own SSL certificates.</p>
 
-   ![](/5.3/images/settings.png)
+<h3 id="auto-add">Automatically add LDAP or AD users in ThoughtSpot? (yes/no)</h3>
 
-4. In the Settings panel, click **Authentication: Active Directory** and then  **Configure** option.
+<p>If you choose ‘yes’, new users are automatically created within ThoughtSpot when successfully authenticated against AD. ThoughtSpot doesn’t cache passwords for AD-authenticated users.</p>
 
-   ![](/5.3/images/ad.png)  
+<p>If you choose ‘no’, users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP-authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="highlighter-rouge">username1@ad.yourdomain.local</code>.</p>
 
+<p>In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against AD or against ThoughtSpot’s internal authentication.</p>
 
-5. Enter the active directory details with the information you gathered above in **Before you begin** section:
+<h3 id="ts-auth">Also use ThoughtSpot internal authentication? (yes/no)</h3>
 
-   ![](/5.3/images/ad-configure.png)
+<p>If you choose ‘yes’, ThoughtSpot will first attempt to authenticate the user against AD. If that attempt fails, it will then attempt to authenticate the user as an internal/local ThoughtSpot user. If either of these succeed, then the user is successfully logged in. This is useful in scenarios where some users are not in AD and are created only in ThoughtSpot.</p>
 
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>URL</th>
-   <td>Specify the URL to connect to active directory.</td>
-   </tr>
-   <tr>
-   <th>Domain name preferred</th>
-   <td>Specify the preferred LDAP domain name.</td>
-   </tr>
-   <tr>
-   <th>Search Base</th>
-   <td>Specify the LDAP search base.</td>
-   </tr>
-   <tr>
-   <th>Add users in ThoughtSpot?</th>
-   <td>Select <b>Yes</b> to automatically add AD users to ThoughtSpot upon first successful authentication. For more information, see <b>Before you begin section</b>.</td>
-   </tr>
-   <tr>
-   <th>SSL Required?</th>
-   <td>If you are using SSL, add the **SSL Certificate** and specify the **Certificate Alias** for LDAP.
-   </td>
-   </tr>
-   </table>
+<h2 id="configure-ldap-tscli">Configure LDAP using tscli</h2>
 
-6. Click **Save** to configure the active directory configuration.
-
--->
-<h2 id="configure-using-tscli">Configure using tscli</h2>
-
-<p>You do not have to create a user called <code class="highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="highlighter-rouge">tsadmin</code>. To configure AD based authentication:</p>
+<p>You do not have to create a user called <code class="highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="highlighter-rouge">tsadmin</code>. To configure AD based authentication, follow these steps:</p>
 
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
@@ -3370,7 +3353,7 @@ To configure LDAP for active directory:
   </li>
   <li>If you are using SSL, <a href="add-SSL-for-LDAP.html#">add the SSL certificate for AD</a>.</li>
   <li>
-    <p>If you want to remove the AD configuration, issue:</p>
+    <p>If you want to remove the AD configuration, issue the following command:</p>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap purge-configuration
 </code></pre></div>    </div>
@@ -3401,9 +3384,9 @@ To configure LDAP for active directory:
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 8, 2019 <br />
+        Generated: Oct 14, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 10/10/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

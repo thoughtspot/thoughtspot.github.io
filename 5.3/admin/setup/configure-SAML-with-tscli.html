@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="You can use the Security Assertion Markup Language (SAML) to authenticate users."> -->
 <meta name="keywords" content=",  ">
 <title>Configure SAML | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/setup/configure-SAML-with-tscli.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-08T21:17:18-07:00" />
+<meta property="article:published_time" content="2019-10-14T09:04:24-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/configure-SAML-with-tscli.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/configure-SAML-with-tscli.html","headline":"[“Configure SAML”]","dateModified":"2019-10-08T21:17:18-07:00","datePublished":"2019-10-08T21:17:18-07:00","description":"ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a tscli-based configurator. It is configured to work using service provided by an Identity Provider (IDP).","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/configure-SAML-with-tscli.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/configure-SAML-with-tscli.html","headline":"[“Configure SAML”]","dateModified":"2019-10-14T09:04:24-07:00","datePublished":"2019-10-14T09:04:24-07:00","description":"ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a tscli-based configurator. It is configured to work using service provided by an Identity Provider (IDP).","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1079,7 +1079,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/5.3/spotiq/spotiq-comparative-anaysis.html">Comparative Analysis</a></li>
+                          <li><a href="/5.3/spotiq/comparative-anaysis.html">Comparative Analysis</a></li>
                       
                    
                 
@@ -3211,6 +3211,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">You can use the Security Assertion Markup Language (SAML) to authenticate users.</div>
+   
 
     
     
@@ -3246,7 +3248,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>
  -->
@@ -3255,37 +3257,92 @@ $('#toc').on('click', 'a', function() {
 
   <p>ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a <code class="highlighter-rouge">tscli</code>-based configurator. It is configured to work using service provided by an Identity Provider (IDP).</p>
 
-<h2 id="before-you-begin">Before you begin</h2>
+<h2 id="prerequisites">Configuration prerequisites</h2>
 
-<p>Before you configure SAML, you need the following information:</p>
+<p>Before you configure SAML, collect the following information:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ts-service-address">ThoughtSpot service address</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ts-service-port">Service port</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ts-service-name">Unique service name</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#skew-time">Skew time in seconds</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#metadata-xml-file">IDP Metadata XML File</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#auto-add">Automatically add SAML users to Thoughtspot</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#ts-auth">Also use ThoughtSpot internal authentication</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ts-service-address">ThoughtSpot service address</h3>
+<p>DNS name of the load balancer <em>front-end</em> for multi-node ThoughtSpot clusters, or of ThoughtSpot <em>server</em> For single-node ThoughtSpot cluster.</p>
+
+<h3 id="ts-service-port">Service port</h3>
+<p>Service port for ThoughtSpot instance, typically TCP/443.</p>
+
+<h3 id="#ts-service-name">Unique service name</h3>
+<p>The unique key ThoughtSpot uses to identify IDP service. Set by the ThoughtSpot Support Team.</p>
+
+<p>The key has the following format: <code class="highlighter-rouge">urn:thoughtspot:callosum:saml</code>.</p>
+
+<h3 id="skew-time">Skew time in seconds</h3>
+<p>Allowed skew time for authentication, or the duration after authentication response is rejected and sent back from the IDP.</p>
+
+<p>Usually set to <code class="highlighter-rouge">3600</code> seconds.</p>
+
+<h3 id="metadata-xml-file">IDP Metadata XML File</h3>
+<p>This file is provided by the IDP. The absolute path to the <code class="highlighter-rouge">idp-meta.xml</code> file is needed for one-time configuration.</p>
+
+<h3 id="auto-add">Automatically add SAML users to Thoughtspot: (yes/no)</h3>
+<p>If you choose ‘yes’, then new users will be automatically created in ThoughtSpot.
+If ‘no’, then SAML users will be added in ThoughtSpot upon first successful SSO login.</p>
+
+<h3 id="ts-auth">Also use ThoughtSpot internal authentication: (y/n)</h3>
+
+<p>If ‘y’, then ThoughtSpot local/internal users (including local administrative users) will still be authenticated outside the scope of SSO.</p>
+
+<h2 id="saml-configure-tscli">Configure SAML using tscli</h2>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The configuration persists across updates to newer releases of ThoughtSpot.</div>
+
+<p>To set up SAML on ThoughtSpot for user authentication, follow these steps:</p>
 
 <ol>
-  <li>ThoughtSpot Service address: DNS name of the load balancer front-end (For multi-node ThoughtSpot clusters) or of ThoughtSpot server (For single-node ThoughtSpot cluster).</li>
-  <li>Service port: Service port for ThoughtSpot instance (Typically TCP/443).</li>
-  <li>Unique service name: The unique key used in ThoughtSpot as an identifier for IDP service. It will be set by ThoughtSpot Support Team. It can be set to anything in the format  <code class="highlighter-rouge">urn:thoughtspot:callosum:saml</code>.</li>
-  <li>Skew Time in Seconds: Allowed skew time for authentication (Duration after authentication response is rejected and sent back from the IDP). Usually set to <code class="highlighter-rouge">3600</code> seconds.</li>
-  <li>IDP Metadata XML File: This file is provided by the IDP. The absolute path to the <code class="highlighter-rouge">idp-meta.xml</code> file is needed for one-time configuration.</li>
-  <li>Decide whether to <code class="highlighter-rouge">Automatically add SAML users to Thoughtspot: (yes/no)</code>: If you choose ‘yes’, then new users will be automatically created in ThoughtSpot. If ‘no’, then SAML users will be added in ThoughtSpot upon first successful SSO login.</li>
-  <li>Decide whether to <code class="highlighter-rouge">Also use ThoughtSpot internal authentication (y/n)</code>: If ‘y’ then ThoughtSpot local/internal users (including local administrative users) will still be authenticated outside the scope of SSO.</li>
-</ol>
-
-<h2 id="configure-using-tscli">Configure using tscli</h2>
-
-<p>To set up SAML on ThoughtSpot for user authentication:</p>
-
-<p><strong><em>NOTE:</em></strong> This configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.</p>
-
-<ol>
-  <li>Log in to the Linux shell using SSH.</li>
   <li>
-    <p>Execute the command to launch the interactive SAML configuration:</p>
+    <p>Log into the Linux shell using SSH.</p>
+  </li>
+  <li>
+    <p>Run the <code class="highlighter-rouge">saml configure</code> command to launch the interactive SAML configuration:</p>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli saml configure
 </code></pre></div>    </div>
   </li>
-  <li>Complete the configurator prompts with the information you gathered above in <strong>Before you begin section</strong>.</li>
-  <li>When the configuration is complete, open a browser and go to the ThoughtSpot login page.
-It should now show the SSO option.</li>
+  <li>
+    <p>Complete the configurator prompts with the information you collected in <a href="#prerequisites">Configuration prerequisites</a>.</p>
+  </li>
+  <li>
+    <p>When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.</p>
+  </li>
 </ol>
 
   <div class="tags">
@@ -3312,9 +3369,9 @@ It should now show the SSO option.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 8, 2019 <br />
+        Generated: Oct 14, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 10/11/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
