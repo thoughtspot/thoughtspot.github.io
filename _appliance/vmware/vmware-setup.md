@@ -32,7 +32,7 @@ for a sandbox environment but is insufficient for a production environment.
 
 ## Use the OVF to Create a VM
 
-1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
+1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
 2. Log into the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
