@@ -1,13 +1,11 @@
 ---
 title: [Understand the backup strategies]
-
-
-last_updated: tbd
+last_updated: 10/14/2019
+summary: "Consider the strategies for backing up your ThoughtSpot cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section discusses three strategies for backing up your ThoughtSpot cluster.
-
+{: id="snapshots"}
 ## Snapshots
 
 A snapshot is a point-in-time image of your running cluster. Snapshots are both taken on and restored to a cluster while it is running. Each cluster has a periodic snapshot configuration enabled by default. This configuration instructs the system to periodically take snapshots. Creation of a snapshot takes about 20 seconds. After creation, a snapshot persists on disk in the cluster's HDFS.
@@ -16,21 +14,24 @@ You can also create a snapshot manually. You should create a snapshot before mak
 
 If you need to move data between clusters or restore to a cluster that was updated to a new release, contact ThoughtSpot Support.
 
+{: id="backups"}
 ## Backups
 
 A backup is a procedure that stores a snapshot outside of a ThoughtSpot cluster. Backups are stored in a directory on a local or network file system. You can store all of the data associated with a snapshot or a portion of that data or only metadata. There is no default configuration enabled for backing up a cluster. You can configure on yourself or you can take backups manually. Backing up periodically protects your company from losing data and/or user work.
 
 You can use a backup to restore a cluster to a prior state, a differently configured appliance, or move the backup from an appliance to a virtual cluster or vice versa.
 
+{: id="offline-backups"}
 ## Offline backup cluster
 
 The most robust strategy for backup and recovery requires having a backup cluster offline that is kept in sync with the production cluster. Then, if the production cluster fails, the backup cluster can be drafted to take its place with minimal loss of work and disruption to operations.
 
 Details on this architecture and instructions on setting it up are available in the ThoughtSpot Disaster Recovery Guide, which you can request from ThoughtSpot.
 
-## Choosing when to use a strategy
+{: id="choose-strategy"}
+## Choosing a strategy
 
-Depending on your situation and your goals, you can choose to use a snapshot or a backup. This table should help you decide:
+Depending on your situation and your goals, you can choose to use either a snapshot or a backup. This table should help you decide:
 
 <table>
 <colgroup>
@@ -101,4 +102,4 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
                 </tr>
             </table>
 
-You should never restore from a snapshot or backup yourself, instead contact ThoughtSpot Support for help.
+You should never restore from a snapshot or backup yourself. Contact ThoughtSpot Support for help.
