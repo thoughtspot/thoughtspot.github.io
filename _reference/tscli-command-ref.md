@@ -856,8 +856,7 @@ Enables Spot integration.  This subcommand supports the following actions:
 
 ```
 tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
-```        
-
+```   
 This subcommand supports the following actions:
 
 * `tscli ssl add-cert [-h]` *`key`* *`certificate`* Adds an SSL certificate, key pair.
@@ -873,6 +872,12 @@ This subcommand supports the following actions:
 * `tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}` Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.
 * `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
+
+##### Required ports for SSL
+
+To use SSL, the following ports must be open:
+- 443
+- 80
 
 ### sssd
 
