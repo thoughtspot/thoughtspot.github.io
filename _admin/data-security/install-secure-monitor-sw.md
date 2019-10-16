@@ -1,14 +1,14 @@
 ---
-title: [Installing third party security and monitoring software]
+title: [Installing third-party security and monitoring software]
 keywords: qualys,splunk,security,third party,installation,SNMP
 tags: [logs,security]
-summary: "You can install third party software for security, governance, and monitoring of ThoughtSpot."
+summary: "You can install third-party software for security, governance, and monitoring of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This procedure shows how to install supported [third party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#) on a ThoughtSpot cluster:
+This procedure shows how to install supported [third-party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#) on a ThoughtSpot cluster:
 
-## To install third party software
+## To install third-party software
 
 1. Log in to the Linux shell using SSH.
 
