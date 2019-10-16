@@ -22,6 +22,12 @@ There are many SSL vendors to choose from. Check with your existing Web hosting 
 
 When you apply for the SSL certificate, you may specify a SAN, wildcard, or single domain certificate. Any of these can work with ThoughtSpot.
 
+## Required ports
+
+To use SSL, the following ports must be open:
+- 443
+- 80
+
 ## Configure SSL for web traffic
 
 This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
