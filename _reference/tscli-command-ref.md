@@ -908,6 +908,12 @@ This subcommand supports the following actions:
 * `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
 
+##### Required ports for SSL
+
+To use SSL, the following ports must be open:
+- 443
+- 80
+
 ### sssd
 
 ```
