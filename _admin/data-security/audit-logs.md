@@ -1,5 +1,5 @@
 ---
-title: [System security]
+title: [System security tools and processes]
 keywords: tbd
 tags: [logs,security]
 summary: "System security refers to audit logs and security policies."
@@ -75,6 +75,6 @@ The ThoughtSpot Engineering and ThoughtSpot Support teams are notified of Common
 
 Whenever a CVE is identified, and an OS package needs to be updated, the next patch release will include the patch or update. You can view installed Linux packages at any time, along with the version numbers of the installed packages.
 
-## Third party security software for security, governance, and monitoring of ThoughtSpot
+## Third-party security software for security, governance, and monitoring of ThoughtSpot
 
 You can install supported [third party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#) on a ThoughtSpot cluster.
