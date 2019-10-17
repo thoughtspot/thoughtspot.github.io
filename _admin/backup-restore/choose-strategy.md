@@ -41,62 +41,61 @@ Depending on your situation and your goals, you can choose to use either a snaps
 </colgroup>
                 <tr>
                     <td/>
-                    <td><b>Snapshot</b></td>
-                    <td><b>Backup</b></td>
+                    <td><strong>Snapshot</strong></td>
+                    <td><strong>Backup</strong></td>
                 </tr>
-                <tr>
-                    <td><b>Used to</b></td>
-                    <td>To restore to a cluster to particular point in time.</td>
+                <tr id="purpose">
+                    <td><strong>Purpose</strong></td>
+                    <td>Restore to a cluster to particular point in time.</td>
                     <td>
-                        <ul id="ul_vbv_tlc_m1b">
+                        <ul>
                             <li>Restore a cluster to a prior state.</li>
-                            <li>Move a cluster to a different HW appliance.</li>
+                            <li>Move a cluster to a different appliance.</li>
                             <li>Move a cluster to VM appliance.</li>
-                            <li>Removal of a node.</li>
-                            <li>Restoring to a cluster running a different release from the one
+                            <li>Removing a node.</li>
+                            <li>Restoring to a cluster that runs a different release from the one
                                 where the backup was taken.</li>
                         </ul>
                     </td>
                 </tr>
-                <tr>
-                    <td><b>Stored</b></td>
+                <tr id="storage">
+                    <td><strong>Storage</strong></td>
                     <td>In the cluster's HDFS</td>
                     <td>Outside the cluster on either local or NAS disk.</td>
                 </tr>
-                <tr>
-                    <td><b>Advantages</b></td>
+                <tr id="advantages">
+                    <td><strong>Advantages</strong></td>
                     <td>
-                        <ul id="ul_zxj_bmc_m1b">
-                            <li>Can be taken on or restored to a running cluster</li>
-                            <li>Creation and restore is fast</li>
+                        <ul>
+                            <li>Can be taken on, or restored to, a running cluster</li>
+                            <li>Fastest create and restore</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li>Very stable medium.</li>
-                            <li>Can be used to recover from data loss or corruption, even if your
-                                cluster was destroyed.</li>
-                            <li>Can be typed as full, lightweight, or dataless.</li>
+                            <li>Very stable.</li>
+                            <li>Can be used to recover from data loss or corruption, even if the cluster is destroyed.</li>
+                            <li>Can be typed as <em>full</em>, <em>lightweight</em>, or <em>dataless</em>.</li>
                         </ul>
                     </td>
                 </tr>
-                <tr>
-                    <td><b>Limitations</b></td>
+                <tr id="limitations">
+                    <td><strong>Limitations</strong></td>
                     <td>
-                        <ul id="ul_c1v_mmc_m1b">
-                            <li>Includes  all data, state, and metadata etc. created between
-                                snapshot creation and restore.</li>
-                            <li>Are lost if the HDFS name node fails, you lose multiple disks, or the entire cluster is destroyed</li>
-                            <li>Can only restored to the cluster they were taken from</li>
+                        <ul>
+                            <li>Include all data, state, and metadata created between
+                                snapshot create and restore.</li>
+                            <li>Lost if the HDFS name node fails, if you lose multiple disks, or if the entire cluster is destroyed</li>
+                            <li>Can be restored only to the cluster were they are taken</li>
                         </ul>
                     </td>
                     <td>
-                        <ul id="ul_lzn_tmc_m1b">
-                            <li>Backups require deleting the existing cluster first.
+                        <ul>
+                            <li>Require deleting the existing cluster first.
                             <li>You are responsible for validating your backup configuration as
                                 viable for restoring a cluster.</li>
                             <li>Best practice recommends you to maintain multiple backups.</li>
-                            <li>Are typically large in size.</li>
+                            <li>Typically, very large in memory size.</li>
                         </ul>
                     </td>
                 </tr>
