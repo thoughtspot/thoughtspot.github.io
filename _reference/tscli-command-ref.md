@@ -1619,6 +1619,11 @@ This subcommand has the following option:
 ```
 tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 ```        
+This subcommand manages the SSL configuration.
+
+To use SSL, the following ports must be open:
+- 443
+- 80
 
 This subcommand has the following options:
 
@@ -1669,6 +1674,7 @@ This subcommand has the following options:
 </dl>
 
 {: id="tscli-sssd"}
+
 ### sssd
 
 ```

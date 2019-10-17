@@ -21,6 +21,13 @@ If you do not have an SSL certificate, there are options:
     ```
 ThoughtSpot works with a wide variety of SSL types, from a wide variety of vendors.
 
+{: id="ssl-ports"}
+## Required ports
+
+To use SSL, the following ports must be open:
+- 443
+- 80
+
 {: id="ssl-configure"}
 ## Configure SSL for web traffic
 
