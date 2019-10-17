@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 When you begin using ThoughtSpot, the onboarding process starts automatically and guides you through a few basic scenarios.
 
-Usually, you receive an email welcoming you to the onboarding process at ThoughtSpot.
+Usually, you receive an email welcoming you to the ThoughtSpot. You can click the **Get started** link, which takes you to the ThoughtSpot login page.
 
 To repeat user onboarding, see [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).
 
