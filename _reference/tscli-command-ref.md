@@ -1,1055 +1,1944 @@
 ---
 title: [tscli command reference]
-
-
-last_updated: tbd
+last_updated: 10/17/2019
+summary: "The ThoughtSpot command line interface, or `tscli`, is an administration interface for the cluster. Use `tscli` to take snapshots (backups) of data, apply
+updates, stop and start the services, and view information about the system.
+This reference defines each subcommand."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The `tscli` command line interface is an administration interface for the
-ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply
-updates, stop and start the services, and view information about the system.
-This reference defines each subcommand and what you can accomplish with it.
 
-The command returns 0 upon success and a non-zero exit code upon failure.
-Because the `tscli` command is typically running a command on multiple codes, an
-error may be called at different points. As much as possible, the command
-attempts to save errors to the `stderr` directory as configured on a node.
+The command returns `0` on success, and a non-zero exit codes on failure.
+The `tscli` command logs errors to the `stderr` directory.
 
+{: id="tscli-command"}
 ## How to use the tscli command
 
 The `tscli` command has the following syntax:
 
+<pre>
+tscli [-h]
+      [--helpfull]
+      [--verbose]
+      [--noautoconfig]
+      [--autoconfig]
+      [--yes]
+      [--cluster <<em>cluster</em>>]
+      [--zoo <<em>zookeeper</em>>]
+      [--username <<em>username</em>>]
+      [--identity_file <<em>identity_file</em>>]
+      {access, alert, ansible, backup, backup-policy, callhome, cassandra,
+       cluster, command, dr-mirror, etl, event, feature, fileserver,
+       firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
+       node, patch, rpackage, saml, scheduled-pinboards, smtp, snapshot,
+       snapshot-policy, spot, sssd, ssl, storage, support,
+       tokenauthentication}
+</pre>
+
+The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
+
+Issue subcommands using the following format:
+
 ```
-tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
-           [--autoconfig] [--yes] [--cluster <cluster>]
-           [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,ansible, backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,sssd,ssl,storage,support,tokenauthentication}
+tscli [subcommand]
 ```
 
-The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
+Subcommands have their own additional options and actions, such as `tscli backup
+create` or `tscli backup delete`.  
 
+Each subcommand may have several options.
 
-```
-tscli [subcommand ]
-```
-
-Subcommands have their own additional options and actions such as `tscli backup
-create` or `tscli backup delete` for example.  To view help for a subcommand:
+To view help for a subcommand, type `-h` for the subcommand option:
 
 ```
 tscli [subcommand] -h
 ```
-
-A subcommand itself may have several options.
-
+{: id="tscli-subcommands"}
 ## tscli subcommands
 
 This section lists each subcommand and its syntax.
 
+{: id="tscli-access"}
 ### access
 
 ```
-tscli access [-h] {list} ...
+tscli access [-h] {list}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following option:
 
-* `tscli access list` Lists objects by last access time.
+<dl>
+  <dlentry>
+    <dt><code>tscli access list</code></dt>
+    <dd>Lists objects by last access time.</dd>
+  </dlentry>
+</dl>
 
-
+{: id="tscli-alert"}
 ### alert
 
 ```
-tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence} ...
+tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
 
+<dl>
+  <dlentry>
+    <dt><code>tscli alert info</code></dt>
+    <dd>Lists all alerts.</dd>
+  </dlentry>
 
-* `tscli alert info` Lists all alerts.
-* `tscli alert list` Lists the generated alerts.
-* `tscli alert off` Disables all alerts from the cluster in the cluster's timezone.
-* `tscli alert on` Enables alerts from the cluster.
-* `tscli alert silence --name <alert_name>`
+  <dlentry>
+    <dt><code>tscli alert list</code></dt>
+    <dd>Lists the generated alerts.</dd>
+  </dlentry>
 
-    Silences the alert with *`alert_name`*. For example, DISK_ERROR. Silenced alerts are still recorded in postgres, however emails are not sent out.
+  <dlentry>
+    <dt><code>tscli alert off</code></dt>
+    <dd>Disables all alerts from the cluster in the cluster's timezone.</dd>
+  </dlentry>
 
-* `tscli alert status` Shows the status of cluster alerts.
+  <dlentry>
+    <dt><code>tscli alert on</code></dt>
+    <dd>Enables alerts from the cluster.</dd>
+  </dlentry>
 
-* `tscli alert unsilence-name` *`alert_name`*
+  <dlentry>
+    <dt><code>tscli alert silence --name <em>alert_name</em></code></dt>
+    <dd>Silences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
+  </dlentry>
 
-   Unsilences the alert with *`alert_name`*. For example, `DISK_ERROR`.
+  <dlentry>
+    <dt><code>tscli alert status</code></dt>
+    <dd>Shows the status of cluster alerts.</dd>
+  </dlentry>
 
+  <dlentry>
+    <dt><code>tscli alert unsilence-name <em>alert_name</em></code></dt>
+    <dd>Unsilences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>.</dd>
+   </dlentry>
+</dl>   
+
+{: id="tscli-ansible"}
 ### ansible
 
    ```
-   tscli ansible [-h] {checkout,commit} [--local] ...
+   tscli ansible [-h] {checkout,commit} [--local]
    ```
 
-   Use this subcommand to install and configure third party software on the ThoughtSpot cluster.
+   Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.
 
-   For details, see:
+   For details, see these articles:
 
    - [About third party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#)
    - [Installing third party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)
 
+{: id="tscli-backup"}
 ### backup
 
 ```
-tscli backup [-h] {create,delete,ls,restore} ...
+tscli backup [-h] {create,delete,ls,restore}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
+<dl>
+  <dlentry>
+    <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] name out</code></dt>
+    <dd>
+      <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
 
-* `tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] [--storage_type {local,nas}] [--remote] name out`
+      <dl>
+        <dlentry>
+         <dt><code>--mode {full,light,dataless}</code></dt>
+         <dd>Mode of backups.</dd></dlentry>
+        <dlentry>
+          <dt><code>--type {full,incremental}</code></dt>
+          <dd>
+            <p>Type of backup.</p>
+            <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
+            <p>The default setting is <code>full</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--base <em>BASE</em></code></dt>
+          <dd>
+            <p>Based snapshot name for incremental backup.</p>
+            <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
+            <p>There is no default setting.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--storage_type {local,nas}</code></dt>
+          <dd>
+            <p>Storage type of output directory.</p>
+            <p>The default setting is <code>local</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--remote</code></dt>
+          <dd>
+            <p>Take backup through orion master.</p>
+            <p>The default setting is <code>True</code>.</p></dd>
+        </dlentry>
+        </dl>
+    </dd>
 
-    Pulls a snapshot and saves it as a backup where:
+    </dlentry>
 
-    * `--mode {full,light,dataless}`
+  <dlentry>
+    <dt><code>tscli backup delete <em>name</em></code></dt>
+    <dd>Deletes the named backup.</dd>
+  </dlentry>
 
-        Mode of backups. To understand these diffrent modes see [Understand backup modes]({{ site.baseurl }}/admin/backup-restore/backup-modes.html).
+  <dlentry>
+    <dt><code>tscli backup ls</code></dt>
+    <dd>List all backups taken by the system.</dd>
+  </dlentry>
 
-    * `--type {full,incremental}`
-        Type of backup.(Incremental `incremental` is not implemented yet) (default: full)
+  <dlentry>
+    <dt><code>tscli backup restore</code></dt>
+    <dd>Restore cluster using backup.</dd>
+  </dlentry>
+</dl>
 
-    * `--base BASE`           
-
-        Based snapshot name for incremental backup. (Not Implemented yet) (default: None)
-
-    * `--storage_type {local,nas}`
-
-        Storage type of output directory. (default: local)
-
-    * `--remote`              
-        Take backup through orion master. (default: True)
-
-* `tscli backup delete *`name`*` Deletes the named backup.
-* `tscli backup ls` List all backups taken by the system.
-* `tscli backup restore` Restore cluster using backup.
-
-
-
+{: id="tscli-backup-policy"}
 ### backup-policy
 
 ```
-tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update} ...
+tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
 ```
 
-Use this subcommand to do the following:
+Manages the backup policy.
 
+This subcommand has the following options:
 
-* `tscli backup-policy create` Prompts an editor for you to edit the parameters of the backup policy.
-* `tscli backup-policy delete` *`name`*  Deletes the backup policy with *`name`*.
-* `tscli backup-policy disable` *`name`* Disables the policy *`name`*.
-* `tscli backup-policy enable` *`name`* Enables the policy *`name`*.
-* `tscli backup-policy ls` List backup policies.
-* `tscli backup-policy show` *`name`* Show the policy *`name`*.
-* `tscli backup-policy status` *`name`*  Enables the policy *`name`*.
-* `tscli backup-policy update *`name`*` Prompts an editor for you to edit the policy *`name`*.
+<dl>
+  <dlentry>
+    <dt><code>tscli backup-policy create</code></dt>
+    <dd>Prompts an editor for you to edit the parameters of the backup policy.</dd></dlentry>
 
+  <dlentry>
+    <dt><code>tscli backup-policy delete <em>name</em></code></dt>
+    <dd>Deletes the backup policy with <em>name</em>.</dd></dlentry>
 
+  <dlentry>
+    <dt><code>tscli backup-policy disable <em>name</em></code></dt>
+    <dd>Disables the policy <em>name</em>.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli backup-policy enable <em>name</em></code></dt>
+    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli backup-policy ls</code></dt>
+    <dd>List backup policies.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli backup-policy show <em>name</em></code></dt>
+    <dd>Show the policy <em>name</em>.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli backup-policy status <em>name</em></code></dt>
+    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli backup-policy update <em>name</em></code></dt>
+    <dd>Prompts an editor for you to edit the policy <em>name</em>.</dd></dlentry>
+</dl>
+
+{: id="tscli-callhome"}
 ### callhome
 
 ```
-tscli callhome [-h] {disable,enable,generate-bundle} ...
+tscli callhome [-h] {disable,enable,generate-bundle}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
 
-* `tscli callhome disable` Turns off the periodic call home feature.
-* `tscli callhome enable --customer_name` *`customer_name`*`
+<dl>
+  <dlentry>
+    <dt><code>tscli callhome disable</code></dt>
+    <dd>Turns off the periodic call home feature.</dd></dlentry>
 
-    Enables the "call home" feature, which sends usage statistics to ThoughtSpot
-    This feature is enabled by default.
+  <dlentry>
+    <dt><code>tscli callhome enable --customer_name <em>customer_name</em></code></dt>
+    <dd>
+      <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
+      <p>This feature is enabled by default.</p>
+      <p>The parameter <code>customer_name</code> takes the form  <code>Shared/<em>customer_name</em>/stats</code>.</p></dd></dlentry>
 
-    The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
+  <dlentry>
+    <dt><code>tscli callhome generate-bundle  --d <em>directory</em> --since <em>DAYS</em></code></dt>
+    <dd>
+      <p>These are the parameters:</p>
+      <dl>
+        <dlentry>
+          <dt><code>--d D</code></dt>
+          <dd><p>Destination folder for the tar file.</p>
+            <p>There is no default setting.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--since <em>DAYS</em></code></dt>
+          <dd>
+            <p>Grab <code>callhome</code> data from this time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1day).</p>
+            <p>This option generates a <code>tar</code> file of the cluster metrics and
+      writes it to the specified directory, where  <code>DAYS</code> is how many days back the file must start.</p>
+            <p>The default setting is <code>7</code> days.</p></dd>
+            </dlentry>
+            </dl>
+            </dd>
+  </dlentry>
+</dl>
 
-* `tscli callhome generate-bundle`   --d *`directory`* `--since` *`DAYS`*
-
-   * `--d D` Dest folder where tar file will be created. (default: None)
-   * ` --since`  *`DAYS`*
-
-      Grab callhome data from this time window in the past. Should be a human
-      readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1
-      day). (default: None) Generates a tar file of the cluster metrics and
-      writes it to the specified directory where  *`DAYS`* is how far back you'd
-      like to generate the tar file from in days. For example, `30`. If this
-      parameter is not specified, the command will collect the stats from the
-      last `7` days by default.
-
-
+{: id="tscli-cassandra"}
 ### cassandra
 
 ```
-tscli cassandra [-h] {backup,restore} ...
+tscli cassandra [-h] {backup,restore}
 ```
 
-Use this subcommand to do the following:
+Backs up cassandra.
 
-* `tscli cassandra backup` Take a backup of cassandra
-* `tscli cassandra restore` Restore cassandra from a backup
+This subcommand has the following options:
 
+<dl>
+<dlentry>
+  <dt><code>tscli cassandra backup</code></dt>
+  <dd>Take a backup of cassandra.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli cassandra restore</code></dt>
+    <dd>Restore cassandra from a backup.</dd></dlentry>
+</dl>
 
+{: id="tscli-cluster"}
 ### cluster
 
 ```
-tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,reinstall-os,report,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,show-resource-spec,start,status,stop,update,update-hadoop} ...
+tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,
+                    reinstall-os,report,restore,resume-reinstall-os,
+                    resume-update,set-config,set-min-resource-spec,
+                    show-resource-spec,start,status,stop,update,
+                    update-hadoop}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
 
-* `tscli cluster abort-reinstall-os` Abort in-progress reinstall.
-* `tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}` Check the status nodes in the cluster.
+<dl>
+  <dlentry>
+    <dt><code>tscli cluster abort-reinstall-os</code></dt>
+    <dd>Abort in-progress reinstall.</dd></dlentry>
 
-   You must specify a component to check.
+  <dlentry>
+    <dt><code>tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}</code></dt>
+    <dd>
+      <p>Check the status nodes in the cluster.</p>
+      <p>You must specify a component to check.</p></dd></dlentry>
 
-* `tscli cluster create` *`release`*
+  <dlentry>
+    <dt><code>tscli cluster create <em>release</em></code></dt>
+    <dd>
+      <p>Creates a new cluster from the release file specified by <code><em>release</em></code>.</p>
+      <p>Used by ThoughtSpot Support when installing a new cluster. For example, <code>tscli cluster create 5.3.2.tar.gz</code>.</p></dd></dlentry>
 
-    Creates a new cluster from the release file specified by  *`release`*. This command is used by ThoughtSpot Support when installing a new cluster, for example, `tscli cluster create 2.0.4.tar.gz`
+  <dlentry>
+    <dt><code>tscli cluster get-config</code></dt>
+    <dd>
+      <p>Get current cluster network and time configuration. Prints JSON configuration to <code>stdout.</code></p>
+      <p>If the system cannot be connected to all interfaces, the command returns an error but continues to function.</p></dd></dlentry>
 
-* `tscli cluster get-config` Get current cluster network and time configuration. Prints JSON configuration to stdout.
-If for some reason the system cannot be connected to all interfaces, the command returns an error but continues to function.
-* `tscli cluster load` Load state from given backup onto existing cluster
-* `tscli cluster reinstall-os ` Reinstall OS on all nodes of the cluster.
-* `tscli cluster report` Generate cluster report.
-* `tscli cluster restore --release` *`release_tarball`* *`backupdir`*`
+  <dlentry>
+    <dt><code>tscli cluster load</code></dt>
+    <dd>Load state from specified backup onto existing cluster.</dd></dlentry>
 
-    Restores a cluster using the backup in the specified directory *`backupdir`*. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.
+  <dlentry>
+    <dt><code>tscli cluster reinstall-os</code></dt>
+    <dd>Reinstall OS on all nodes of the cluster.</dd></dlentry>
 
-* `tscli cluster resume-reinstall-os` Resume in-progress reinstall.
-* `tscli cluster resume-update` Resume in-progress updates.
-* `tscli cluster set-config ` Set cluster network and time configuration. Takes JSON configuration from stdin.
-* `tscli cluster set-min-resource-spec` Sets min resource configuration of the cluster
-* `tscli cluster show-resource-spec` Prints default or min.
-* `tscli cluster start` Start cluster.
-* `tscli cluster status` Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status.
-* `tscli cluster stop` Pauses the cluster (but does not stop storage services).
-* `tscli cluster update` Update existing cluster.
-* `tscli cluster update-hadoop` Updates Hadoop/Zookeeper on the cluster.
+<dlentry>
+    <dt><code>tscli cluster report</code></dt>
+    <dd>Generate cluster report.</dd></dlentry>
 
+  <dlentry>
+    <dt><code>tscli cluster restore --release <em>release_tarball</em> <em>backupdir</em></code></dt>
+    <dd>Restores a cluster using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster resume-reinstall-os</code></dt>
+    <dd>Resume in-progress reinstall.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster resume-update</code></dt>
+    <dd>Resume in-progress updates.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster set-config</code></dt>
+    <dd>Set cluster network and time configuration. Takes JSON configuration from stdin.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster set-min-resource-spec</code></dt>
+    <dd>Sets min resource configuration of the cluster.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster show-resource-spec</code></dt>
+    <dd>Prints default or min.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster start</code></dt>
+    <dd>Start cluster.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster status</code></dt>
+    <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster stop</code></dt>
+    <dd>Pauses the cluster (but does not stop storage services).</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster update</code></dt>
+    <dd>Update existing cluster.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli cluster update-hadoop</code></dt>
+    <dd>Updates Hadoop/Zookeeper on the cluster.</dd></dlentry>
+
+</dl>
+
+
+{: id="tscli-command"}
 ### command
 
 ```
-tscli command [-h] {run} ...
+tscli command [-h] {run}
 ```
 
-Command to run a command on all nodes.
+Command to run on all nodes.
 
-`tscli command run [-h] [--nodes` *`NODES`*`] --dest_dir` *`DEST_DIR`* `[--copyfirst`
-*`COPYFIRST`*`] [--timeout` *`TIMEOUT`*`]` *`command`*
+This subcommand has the following option:
+<dl>
+  <dlentry>
+    <dt><code>tscli command run [-h] [--nodes <em>NODES</em>] --dest_dir <em>DEST_DIR</em> [--copyfirst <em>COPYFIRST</em>] [--timeout <em>TIMEOUT</em>] <em>command</em></code></dt>
+  <dd>
+    <p>These are the parameters:</p>
+    <dl>
+    <dlentry>
+      <dt><code>--nodes <em>NODES</em></code></dt>
+      <dd>
+        <p>Space-separated IPs of nodes where to run the command.</p>
+        <p>The default setting is <code>all</code>.</p></dd></dlentry>
+    <dlentry>
+      <dt><code>--dest_dir <em>DEST_DIR</em></code></dt>
+      <dd>
+        <p>Directory to save the files that contain the output from each node.</p>
+        <p>This is a mandatory parameter.</p></dd></dlentry>
+    <dlentry>
+      <dt><code>--copyfirst <em>COPYFIRST</em></code></dt>
+      <dd>
+        <p>Copy the executable to required nodes first.</p>
+        <p>The default setting is <code>False</code>.</p></dd></dlentry>
+    <dlentry>
+      <dt><code>--timeout <em>TIMEOUT</em></code></dt>
+      <dd>
+        <p>Timeout waiting for the command to finish.</p>
+        <p>The default setting is <code>60</code>.</p></dd></dlentry>
+    </dl>
+  </dd>
+ </dlentry>
+</dl>
 
-* `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: `all`)
-* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (required. default: None)
-* `--copyfirst` *`COPYFIRST`* Copy the executable to required nodes first. (default: `False`)
-* `--timeout` *`TIMEOUT`* Timeout waiting for the command to finish. (default: `60`)
-
+{: id="tscli-dr-mirror"}
 ###  dr-mirror
 
 ```
-tscli dr-mirror [-h] {start,status,stop} ...
+tscli dr-mirror [-h] {start,status,stop}
 ```
 
-* `tscli dr-mirror start` Starts a mirror cluster which will continuously recover from a primary cluster.
-* `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
-* `tscli dr-mirror stop` Stops mirroring on the local cluster.
+This subcommand has the following options:
 
+<dl>
+  <dlentry>
+    <dt><code>tscli dr-mirror start</code></dt>
+    <dd>Starts a mirror cluster which will continuously recover from a primary cluster.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli dr-mirror status</code></dt>
+    <dd>Checks whether the current cluster is running in mirror mode.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli dr-mirror stop</code></dt>
+    <dd>Stops mirroring on the local cluster.</dd></dlentry>
+</dl>
 
+{: id="etl"}
 ### etl
 
 ```
-tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw} ...
+tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
 ```
 
-* `tscli etl change-password --admin_username` *`admin_user`*  `--username` *`Informatica_user`*`
+This subcommand has the following options:
 
-   Changes the Informatica Cloud account password used by ThoughtSpot Data Connect. Required parameters are:
+<dl>
+  <dlentry>
+    <dt><code>tscli etl change-password --admin_username <em>admin_user</em> --username <em>Informatica_user</em></code></dt>
+    <dd>
+      <p>Changes the Informatica Cloud account password used by ThoughtSpot Data Connect.</p>
+      <p>Required parameters are:</p>
 
-   * `--admin_username` *`admin_user`* specifies the Administrator username for ThoughtSpot.
-   * `--username` *`Informatica_user`* specifies the username for the Informatica Cloud.
+      <dl>
+        <dlentry>
+          <dt><code>--admin_username <em>admin_user</em></code></dt>
+          <dd>Specifies the Administrator username for ThoughtSpot.</dd></dlentry>
+        <dlentry>
+          <dt><code>--username <em>Informatica_user</em></code></dt>
+          <dd>Specifies the username for the Informatica Cloud.</dd></dlentry>
+      </dl></dd></dlentry>
 
-* `tscli etl disable-lw` Disables ThoughtSpot Data Connect.
-* `tscli etl download-agent` Downloads the ThoughtSpot Data Connect agent to the cluster.
-* `tscli etl enable-lw [-h] --username` *`USERNAME`* `--thoughtspot_url` *`THOUGHTSPOT_URL`* `--admin_username` *`ADMIN_USERNAME`* `[--groupname` *`GROUPNAME`*`] --org_id` *`ORG_ID`* `[--pin_to `*`PIN_TO`*`] [--proxy_host` *`PROXY_HOST`*`] [--proxy_port` *`PROXY_PORT`*`] [--proxy_username` *`PROXY_USERNAME`* `] [--max_wait` *`MAX_WAIT`*`]`
+  <dlentry>
+    <dt><code>tscli etl disable-lw</code></dt>
+    <dd>Disables ThoughtSpot Data Connect.</dd></dlentry>
 
-    You should contact ThoughtSpot Support for assistance in setting this up. Required parameters are:
+  <dlentry>
+    <dt><code>tscli etl download-agent</code></dt>
+    <dd>Downloads the ThoughtSpot Data Connect agent to the cluster.</dd></dlentry>
 
-   * `--username` *`USERNAME`* Username for Informatica Cloud (default: None)
-   * `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL to reach thoughtspot. (default: None)
-   * `--admin_username` *`ADMIN_USERNAME`* Admin username for ThoughtSpot (default: None)
-   * `--groupname` *`GROUPNAME`*
-   * `--org_id` *`ORG_ID`* specifies the Informatica `id` of the organization (company). For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only
-   * `--pin_to` *`PIN_TO`* specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
+  <dlentry>
+    <dt><code>tscli etl enable-lw [-h] --username <em>USERNAME</em> --thoughtspot_url <em>THOUGHTSPOT_URL</em> --admin_username <em>ADMIN_USERNAME</em> [--groupname <em>GROUPNAME</em>] --org_id <em>ORG_ID</em> [--pin_to  <em>PIN_TO</em>] [--proxy_host <em>PROXY_HOST</em>] [--proxy_port <em>PROXY_PORT</em>] [--proxy_username <em>PROXY_USERNAME</em>] [--max_wait <em>MAX_WAIT</em>]</code></dt>
+
+    <dd>
+      <p>Contact ThoughtSpot Support for assistance in setting this up.</p>
+      <p>Required parameters are:</p>
+
+      <dl>
+        <dlentry>
+          <dt><code>--username <em>USERNAME</em></code></dt>
+          <dd>Username for Informatica Cloud</dd></dlentry>
+        <dlentry>
+          <dt><code>--thoughtspot_url <em>THOUGHTSPOT_URL</em></code></dt>
+          <dd>URL to reach thoughtspot.</dd></dlentry>
+        <dlentry>
+          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
+          <dd>Admin username for ThoughtSpot</dd></dlentry>
+        <dlentry>
+          <dt><code>--groupname <em>GROUPNAME</em></code></dt>
+          <dd></dd></dlentry>
+        <dlentry>
+          <dt><code>--org_id <em>ORG_ID</em></code></dt>
+          <dd>Specifies the Informatica <code>id</code> of the company.<!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
+        <dlentry>
+          <dt><code>--pin_to <em>PIN_TO</em></code></dt>
+          <dd>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
       to the Informatica agent, and will always be used. Defaults to the public IP
-      address of the localhost where this command was run.
-   * `--proxy_host` *`PROXY_HOST`* Proxy server host for network access (default: )
-   * `--proxy_port` *`PROXY_PORT`* Proxy server port (default: )
-   * `--proxy_username` *`PROXY_USERNAME`* Proxy server username (default: )
-   * `--max_wait` *`MAX_WAIT`*  Maximum time in seconds to wait for Data Connect agentto start (default: None)
-* `tscli etl show-lw` Shows the status of ThoughtSpot Data Connect. It also returns the Informatica username and OrgId.
+      address of the localhost where this command was run.</dd></dlentry>
+        <dlentry>
+          <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
+          <dd>Proxy server host for network access.</dd></dlentry>
+        <dlentry>
+          <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
+          <dd>Proxy server port.</dd></dlentry>
+        <dlentry>
+          <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
+          <dd>Proxy server username.</dd></dlentry>
+        <dlentry>
+          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
+          <dd>Maximum time in seconds to wait for Data Connect agent to start.</dd></dlentry>
+      </dl></dd></dlentry>
+
+  <dlentry>
+     <dt><code>tscli etl show-lw</code></dt>
+     <dd>
+       <p>Shows the status of ThoughtSpot Data Connect.</p>
+       <p>It also returns the Informatica username and OrgId.</p></dd></dlentry>
+
+</dl>
+{: id="tscli-event"}
 
 ### event
-
 ```
-tscli event [-h] {list} ...
+tscli event [-h] {list}
 ```
+This subcommand and its options manage event notifications.
 
-This subcommand has the following actions:
+This subcommand has the following option:
 
-`tscli event list [-h] [--include` *`INCLUDE`*`] [--since` *`SINCE`*`] [--from` *`FROM`*`] [--to` *`TO`*`] [--limit` *`LIMIT`*`] [--detail] [--summary_contains` *`SUMMARY_CONTAINS`*`] [--detail_contains` *`DETAIL_CONTAINS`*`] [--attributes` *`ATTRIBUTES`*`]`
+<dl>
+  <dlentry>
+    <dt><code>tscli event list [-h] [--include <em>INCLUDE</em>] [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--limit <em>LIMIT</em>] [--detail] [--summary_contains <em>SUMMARY_CONTAINS</em>] [--detail_contains <em>DETAIL_CONTAINS</em>] [--attributes <em>ATTRIBUTES</em>]</code></dt>
 
-  * `--include` *`INCLUDE`* Options are all, config, notification. Default config. (default: config)
-  * `--since` *`SINCE`* Grab events from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None)
-  * `--from` *`FROM`* Begin timestamp, must be of the form: `yyyymmdd-HH:MM` (default: None)
-  * `--to` *`TO`* End timestamp, must be of the form: `yyyymmdd-HH:MM` (default: None)
-  * `--limit` *`LIMIT`* Max number of events to fetch. (default: 0)
-  * `--detail` Print events in detail format. This is not tabular. Default is a tabular summary. (default: False)
-  * `--summary_contains` *`SUMMARY_CONTAINS`* Summary of the event will be checked for this string. Multiple strings to check for can be specified by separating them with `|` (event returned if it matchesALL). Put single quotes around the param value to prevent undesired glob expansion (default: None)
-  * `--detail_contains` *`DETAIL_CONTAINS`* Details of the event will be checked for this string. Multiple strings to check for can be specified by separating them with `|` (event returned if it matches ALL). Put single quotes around the param value to prevent undesired glob expansion (default: None)
-  * `--attributes` *`ATTRIBUTES`* Specify attributes to match as key=value. Multiple attributes to check for can be specified by separating them with `|` (event returned if it matches ALL). Put single quotes around the param value to prevent undesired glob expansion (default: None)
+    <dd>
+      <p>The <code>event</code> subcommand accepts these optional flags:</p>
 
+      <dl>
 
+        <dlentry>
+          <dt><code>--include <em>INCLUDE</em></code></dt>
+          <dd>Options are all, config, notification. Default config. (default: config)</dd></dlentry>
+        <dlentry>
+          <dt><code>--since <em>SINCE</em></code></dt>
+          <dd>Grab events from this time window in the past. Should be a human readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</dd></dlentry>
+        <dlentry>
+          <dt><code>--from <em>FROM</em></code></dt>
+          <dd>Begin timestamp. Must be of the form: <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
+        <dlentry>
+          <dt><code>--to <em>TO</em></code></dt>
+          <dd>End timestamp. Must be of the form: <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
+        <dlentry>
+          <dt><code>--limit <em>LIMIT</em></code></dt>
+          <dd>
+            <p>Maximum number of events to fetch.</p>
+            <p>The default setting is <code>0</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--detail</code></dt>
+          <dd>
+            <p>Print events in detail format. This is not tabular. Default is a tabular summary.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--summary_contains <em>SUMMARY_CONTAINS</em></code></dt>
+          <dd>Summary of the event will be checked for this string. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matchesALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
+        <dlentry>
+          <dt><code>--detail_contains <em>DETAIL_CONTAINS</em></code></dt>
+          <dd>Details of the event will be checked for this string. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matches ALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
+        <dlentry>
+          <dt><code>--attributes <em>ATTRIBUTES</em></code></dt>
+          <dd>Specify attributes to match as key=value. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matches ALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
+        </dl>
+      </dd></dlentry>
+  </dl>    
+
+{: id="tscli-feature"}
 ### feature
 
 ```
-tscli feature [-h] {get-all-config} ...
+tscli feature [-h] {get-all-config}
 ```
-This subcommand has the following actions:
+This subcommand has the following option:
 
-`tscli feature get-all-config` Gets the configured features in a cluster. The command will return a list of features, such as custom branding, Data Connect, and call home, and tell you whether they are enabled or disabled.
+<dl>
+  <dlentry>
+    <dt><code>tscli feature get-all-config</code></dt>
+    <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding, Data Connect, and call home, and informs whether they are enabled or disabled.</dd></dlentry>
+</dl>
 
-
+{: id="tscli-fileserver"}
 ### fileserver
 
 ```
-tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload} ...
+tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli fileserver configure [-h] --user` *`USER`* `[--password ` *`PASSWORD`* `]` Configures the secure file server username and password for file upload/download and the call home feature. You only need to issue this command one time, to set up the connection to the secure file server. You only need to reissue this command if the password changes. The parameter *`PASSWORD`* is optional. If a password is not specified, you will be prompted to enter it.
-* `tscli fileserver download-release [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`]` *`release`* Downloads the specified release file, including its checksum, and verifies the integrity of release bundle. You must specify the exact release number (e.g. 5.1.3). Before using this command for the first time, you must set up the file server connection using `tscli fileserver configure`. You will then work with a member of the ThoughtSpot Support team since a privileged `--user` (and corresponding `--password`) must be specified to download releases.
-* `tscli fileserver purge-config` Removes the file server configuration.
-* `tscli fileserver show-config` Shows the file server configuration.
+<dl>
+  <dlentry>
+    <dt><code>tscli fileserver configure [-h] --user <em>USER</em> [--password <em>PASSWORD</em>]</code></dt>
+    <dd>
+      <p>Configures the secure file server username and password for file upload/download, and the call home feature.</p>
+      <p>You only have to issue this command one time, to set up the connection to the secure file server. Reissue this command if the password changes.</p>
+      <p>The parameter <code>PASSWORD</code> is optional. If a password is not specified, you will be prompted to enter it.</p></dd></dlentry>
+  <dlentry>
+    <dt><code>tscli fileserver download-release [-h] [--user <em>USER</em>] [--password <em>PASSWORD</em>] <em>release</em></code></dt>
+    <dd>
+      <p>Downloads the specified release file, including its checksum, and verifies the integrity of release bundle.</p>
+      <p>You must specify the exact release number, such as <code>5.1.3</code>. </p>
+      <p>Before using this command for the first time, you must set up the file server connection using <code>tscli fileserver configure</code>. You can then work with a member of the ThoughtSpot Support team becuase a privileged <code>user</code> and a corresponding <code>password</code> must be specified to download releases.</p></dd></dlentry>
+  <dlentry>
+    <dt><code>tscli fileserver purge-config</code></dt>
+    <dd>Removes the file server configuration.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli fileserver show-config</code></dt>
+    <dd>Shows the file server configuration.</dd></dlentry>
 
-* `tscli fileserver upload [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`] --file_name` *`FILE_NAME* `--server_dir_path` *`SERVER_DIR_PATH`*
+  <dlentry>
+    <dt><code>tscli fileserver upload [-h] [--user <em>USER</em>] [--password <em>PASSWORD</em>] --file_name <em>FILE_NAME</em> --server_dir_path <em>SERVER_DIR_PATH</em></code></dt>
 
-  Uploads the file specified to the directory specified on the secure file server.
-  You may optionally specify the `--user` and `--password` to bypass the
-  credentials that were specified when configuring the file server connection with
-  `tscli fileserver configure`. Before using this command for the first time, you
-  need to set up the file server connection using `tscli fileserver configure`.
+    <dd>
+      <p>Uploads the specified file to the directory specified on the secure file server.</p>
+      <p>You may optionally specify the <code>user</code> and <code>password</code> to bypass the
+  credentials specified when configuring the file server connection with
+  <code>tscli fileserver configure</code>. Before using this command for the first time, you
+  must set up the file server connection using <code>tscli fileserver configure</code>.</p>
 
-  Accepts these flags
+      <p>This uses the following flags:</p>
 
-  * `--user` *`USER`* Username of fileserver (default: None)
-  * `--password` *`PASSWORD`* Password of fileserver (default: None). This is required and the command prompts you for it if you do not supply it.
-  * `--file_name` *`FILE_NAME`* Local file that needs to be uploaded (default: None)
-  * `--server_dir_path` *`SERVER_DIR_PATH`* Directory path on fileserver. (default: None) The *`SERVER_DIR_PATH`* parameter specifies the directory to which you want
-    to upload the file. It is based on your customer name, and takes the form `/Shared/support/*`customer_name`*`.
+      <dl>
 
+       <dlentry>
+         <dt><code>--user <em>USER</em></code></dt>
+         <dd>Username of the fileserver.</dd></dlentry>
+       <dlentry>
+         <dt><code>--password <em>PASSWORD</em></code></dt>
+         <dd>Password of the fileserver. This is required and the command prompts you for it if you do not supply it.</dd></dlentry>
+       <dlentry>
+         <dt><code>--file_name <em>FILE_NAME</em></code></dt>
+         <dd>Local file to upload.</dd></dlentry>
+       <dlentry>
+         <dt><code>--server_dir_path <em>SERVER_DIR_PATH</em></code></dt>
+         <dd>Directory path on fileserver. The <code>SERVER_DIR_PATH</code> parameter specifies the directory for file upload. It is based on customer name, and takes the form <code>/Shared/support/<em>customer_name</em></code>.</dd></dlentry>
+   </dl>
+   </dd></dlentry>
+</dl>
 
+{: id="tscli-firewall"}
 ### firewall
 
 ```
-tscli firewall [-h] {close-ports,disable,enable,open-ports,status} ...
+tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 ```
+This subcommand has the following options:
 
-* `tscli firewall close-ports`
+<dl>
+  <dlentry>
+    <dt><code>tscli firewall close-ports</code></dt>
+    <dd>
+      <p>Closes specified ports through firewall on all nodes.</p>
+      <p>Accepts a comma-separated list of ports. Only closes ports that were previously opened using <code>open-ports</code>, and ignores ports that were not opened with <code>open-port</code>, or closed ports.</p>
+      <p>Some essential ports are always kept open, such as <code>ssh</code>; they are not affected by this command
+  or by <code>open-ports</code>.</p></dd></dlentry>
+  <dlentry>
+    <dt><code>tscli firewall disable</code></dt>
+    <dd>Disable firewall.</dd></dlentry>
+   <dlentry>
+     <dt><code>tscli firewall enable</code></dt>
+     <dd>Enable firewall.</dd></dlentry>
+   <dlentry>
+     <dt><code>tscli firewall open-ports --ports <em>ports</em></code></dt>
+     <dd>
+       <p>Opens specified ports through a firewall on all nodes.</p>
+       <p>Accepts a comma-separated list of ports.</p>
+       <p>Ignores open ports.</p>
+       <p>Some essential ports are always kept open, such as <code>ssh</code>; they are not affected by this command
+   or by <code>close-ports</code>.</p></dd></dlentry>
 
-  Closes given ports through firewall on all nodes. Takes a list of ports to
-  close, comma separated. Only closes ports which were previously opened using
-  "open-ports". Ignores ports which were not previously opened with "open-ports"
-  or were already closed.
+   <dlentry>
+     <dt><code>tscli firewall status</code></dt>
+     <dd>Shows whether firewall is currently enabled or disabled.</dd></dlentry>
+</dl>
 
-* `tscli firewall disable` Disable firewall.
-* `tscli firewall enable` Enable firewall.
-* `tscli firewall open-ports` `--ports`  *`ports`*
-
-   Opens given ports through firewall on all nodes. Takes a list of ports to
-   open, comma separated. Ignores ports which are already open. Some essential
-   ports are always kept open (e.g. `ssh`), they are not affected by this command
-   or by `close-ports`.
-
-* `tscli firewall status` Shows whether firewall is currently enabled or disabled.
-
-
+{: id="tscli-hdfs"}
 ### hdfs
 
 ```
-tscli hdfs [-h] {leave-safemode} ...
+tscli hdfs [-h] {leave-safemode}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following option:
 
-`tscli hdfs leave-safemode`  Command to get HDFS namenodes out of safemode.
+<dl>
+  <dlentry>
+    <dt><code>tscli hdfs leave-safemode</code></dt>
+    <dd>Command to get HDFS <code>namenodes</code> out of <code>safemode</code>.</dd>
+  </dlentry></dl>
 
-
+{: id="tscli-ispec"}
 ### ipsec
 
 ```
-tscli ipsec [-h] {disable,enable,status} ...
+tscli ipsec [-h] {disable,enable,status}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-`tscli ipsec disable`  Disable IPSec
-`tscli ipsec enable`  Enable IPSec
-`tscli ipsec status`  Show IPSec status on all nodes
+<dl>
+  <dlentry>
+    <dt><code>tscli ipsec disable</code></dt>
+    <dd>Disable IPSec</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli ipsec enable</code></dt>
+    <dd>Enable IPSec</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli ipsec status</code></dt>
+    <dd>Show IPSec status on all nodes</dd></dlentry>
+</dl>
 
-
+{: id="tscli-ldap"}
 ### ldap
 
 ```
-tscli ldap [-h] {add-cert,configure,purge-configuration} ...
+tscli ldap [-h] {add-cert,configure,purge-configuration}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli ldap add-cert` *`name`* *`certificate`*
+<dl>
+  <dlentry>
+    <dt><code>tscli ldap add-cert <em>name</em> <em>certificate</em></code></dt>
+    <dd>Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
+  SSL and you wish to add it. Use <code>name</code> to supply an alias for the
+  certificate you are installing.</dd></dlentry>
 
-  Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
-  SSL and you wish to add it. Use `*`name`*` to supply an alias for the
-  certificate you are installing.
+  <dlentry>
+    <dt><code>tscli ldap configure</code></dt>
+    <dd>Configures LDAP using an interactive script.</dd></dlentry>
 
-* `tscli ldap configure`
+  <dlentry>
+    <dt><code>tscli ldap purge-configuration</code></dt>
+    <dd>Purges (removes) any existing LDAP configuration.</dd></dlentry>
+</dl>
 
-   Configures LDAP using an interactive script. You can see detailed
-   instructions for setting up LDAP in [About LDAP integration]({{ site.baseurl }}/admin/setup/about-LDAP.html).
-
-* `tscli ldap purge-configuration` Purges (removes) any existing LDAP configuration.
-
-
+{: id="tscli-logs"}
 ### logs
 
 ```
-tscli logs [-h] {collect,runcmd} ...
+tscli logs [-h] {collect,runcmd}
 ```
 
-This subcommand has the following actions:
+Manages the logging behavior.
 
+This subcommand has the following options:
 
-* `tscli logs collect [-h] [--include` *`INCLUDE`*`] [--exclude` *`EXCLUDE`*`] [--since` *`SINCE`*`] [--from` *`FROM`*`] [--to` *`TO`*`] [--out` *`OUT`*`] [--maxsize` *`MAXSIZE`*`] [--sizeonly] [--nodes` *`NODES`*]
+<dl>
 
-  Extracts logs from the cluster. Does not include any logs that have been
-  deleted due to log rotation.
-
-  These parameters have the following values:
-
-  * `--include` *`INCLUDE`*
-
-    Specifies a comma separated list of logs to include. Each entry is either a
+  <dlentry>
+    <dt><code>tscli logs collect [-h] [--include <em>INCLUDE</em>] [--exclude <em>EXCLUDE</em>] [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--out <em>OUT</em>] [--maxsize <em>MAXSIZE</em>] [--sizeonly] [--nodes <em>NODES</em>]</code></dt>
+    <dd>
+      <p>Extracts logs from the cluster. Does not include any logs that have been deleted due to log rotation.</p>
+      <p>These parameters have the following values:</p>
+      <dl>
+        <dlentry>
+          <dt><code>--include <em>INCLUDE</em></code></dt>
+          <dd>Specifies a comma separated list of logs to include. Each entry is either a
     "selector" or a glob for matching files. Selectors must be among: `all`,
     `orion`, `system`, `ts`. Anything starting with `/` is assumed to be a glob
     pattern, and it is interpreted through `find(1)`. Other entries are ignored. Put single
     quotes around the param value to prevent undesired glob expansion (default:
-    `all`)
+    `all`)</dd></dlentry>
 
-  * `--exclude` *`EXCLUDE`*
+        <dlentry>
+          <dt><code>--exclude <em>EXCLUDE</em></code></dt>
+          <dd>Comma separated list of logs to exclude. Applies to the list selected by
+  <code>--include</code>. Params are interpreted just like in <code>--include</code>.</dd></dlentry>
 
-    Comma separated list of logs to exclude. Applies to the list selected by
-    --include. Params are interpreted just like in --include (default: None)
+       <dlentry>
+         <dt><code>--since <em>SINCE</em></code></dt>
+         <dd>Grab logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day). (default:
+    None)</dd></dlentry>
 
-  * `--since` *`SINCE`*   
+      <dlentry>
+        <dt><code>--from <em>FROM</em></code></dt>
+        <dd>Timestamp where collection begins; must be of the form <code>yyyymmdd-HH:MM</code>.</dd></dlentry>                
+      <dlentry>
+        <dt><code>--to <em>TO</em></code></dt>
+        <dd>Timestamp where collection ends; must be of the form <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
+      <dlentry>
+        <dt><code>--out <em>OUT</em></code></dt>
+        <dd>
+          <p>Tarball path for writing logs from each node.</p>
+          <p>The default setting is <code>/tmp/logs.tar.gz</code>.</p></dd></dlentry>
+      <dlentry>
+        <dt><code>--maxsize <em>MAXSIZE</em></code></dt>
+        <dd>Only fetch logs if size is smaller that this value. Can be specified in megabytes or gigabytes, such as <code>100MB</code>, <code>10GB</code>.</dd></dlentry>
+      <dlentry>
+              <dt><code>--sizeonly</code></dt>
+              <dd>
+                <p>Do not collect logs. Just report the size.</p>
+                <p>The default setting is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+        <dt><code>--nodes <em>NODES</em></code></dt>
+        <dd>Comma separated list of nodes from where to collect logs.  Skip this to use all nodes.</dd></dlentry>
+      </dl>
+    </dd></dlentry>
 
-    Grab logs from this time window in the past. Should be a human readable
-    duration string, e.g. 4h (4 hours), 30m (30 minutes), 1d (1 day). (default:
-    None)
+  <dlentry>
+    <dt><code>tscli logs runcmd [-h] --cmd <em>CMD</em> [--include <em>INCLUDE</em>] [--exclude <em>EXCLUDE</em>]
+   [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--outfile <em>OUTFILE</em>] [--outdir <em>OUTDIR</em>] [--cmd_infmt <em>CMD_INFMT</em>] [--cmd_outfmt <em>CMD_OUTFMT</em>] [--nodes <em>NODES</em>]</code></dt>
 
-  * `--from` *`FROM`* Timestamp where collection begins, must be of the form: `yyyymmdd-HH:MM` (default: None)                 
-  * `--to` *`TO`* Timestamp where collection ends, must be of the form: `yyyymmdd-HH:MM` (default: None)
-  * `--out` *`OUT`*  Tarball path for dumping logs from each node (default: `/tmp/logs.tar.gz`)
-  * `--maxsize` *`MAXSIZE`*  Only fetch logs if size is smaller that this value. Can be specified in megabytes/gigabytes, e.g. 100MB, 10GB. (default: None)
-  * `--sizeonly ` Do not collect logs. Just report the size. (default: False)
-  * `--nodes` *`NODES`*  Comma separated list of nodes from where to collect logs.  Skip this to use all nodes. (default: None)
+   <dd>
+     <p>Runs a Unix command on logs in the cluster matching the given constraints.  Results are reported as text dumped to standard out, the specified output file, or as tarballs dumped into the specified directory.</p>
+    <p>Accepts these optional flags:</p>
+    <dl>
+    <dlentry>
+      <dt><code>--cmd <em>CMD</em></code></dt>
+      <dd>
+        <p>Unix-Command to be run on the selected logs. Use single quotes to escape
+    spaces etc. Note the language used to specify CMDSTR has following rules.</p>
+        <ul>
+          <li>A logfile and its corresponding result file can be referred by keywords <code>SRCFILE</code> and
+    <code>DSTFILE</code>. For example, <code>cp SRCFILE DSTFILE</code>.</li>
+          <li>Without any reference to <code>DSTFILE</code> in CMDSTR, <code>DSTFILE</code> will be appended to CMDSTR for output redirection. For example, <code>du -sch SRCFILE</code> gets auto-transtalted to <code>du -sch SRCFILE > DSTFILE</code>.</li>
+          <li>Without any reference to SRCFILE, content of log is streamed to CMDSTR by pipe. For example,
+    <code>tail -n100 | grep ERROR</code> gets auto-transtalted to <code>cat SRCFILE | tail -n100 |
+    grep ERROR > DSTFILE</code>.</li></ul></dd></dlentry>
 
+    <dlentry>
+      <dt><code>--include <em>INCLUDE</em></code></dt>
+      <dd>
+        <p>Comma-separated list of logs to include,each entry is either a "selector" or
+    a glob for matching files.</p>
+        <p>Selectors must be one of <code>all</code>, <code>orion</code>, <code>system</code>,
+    <code>ts</code>.</p>
+        <p>Anything that starts with <code>/</code> (forward slash) is assumed to be a glob pattern and
+    interpreted through <code>find(1)</code>. Other entries are ignored.</p>
+         <p><strong>TIP:</strong> use single quotes around the parameter value to prevent undesired glob expansion.</p>
+         <p>The default setting is <code>all</code>.</p></dd></dlentry>
 
-* `tscli logs runcmd [-h] --cmd` `CMD [--include` *`INCLUDE`*`] [--exclude` *`EXCLUDE`*`]
-[--since` `SINCE] [--from` *`FROM`*`] [--to` *`TO`*`] [--outfile` *`OUTFILE`*`] [--outdir` *`OUTDIR`*`]
-[--cmd_infmt` *`CMD_INFMT`*`] [--cmd_outfmt` *`CMD_OUTFMT`*`] [--nodes` *`NODES`*`]`
+    <dlentry>
+      <dt><code>--exclude <em>EXCLUDE</em></code></dt>
+      <dd>Comma separated list of logs to exclude. Applies to the list selected by
+    <code>--include</code>. Params are interpreted just like in <code>--include</code>.</dd></dlentry>
 
+    <dlentry>
+      <dt><code>--since <em>SINCE</em></code></dt>
+      <dd>Grab logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</dd></dlentry>
 
-  Runs a Unix command on logs in the cluster matching the given constraints.
-  Results are reported as text dumped to standard out, the specified output
-  file, or as tarballs dumped into the specified directory.
+    <dlentry>
+      <dt><code>--from <em>FROM</em></code></dt>
+      <dd>Timestamp where collection begins; must be of the form <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
 
+    <dlentry>
+      <dt><code>--to <em>TO</em></code></dt>
+      <dd>Timestamp where collection ends; must be of the form <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
 
-  * `--cmd` *`CMD`*           
+    <dlentry>
+      <dt><code>--outfile <em>OUTFILE</em></code></dt>
+      <dd>File path for printing all results. By default printed to <code>stdout</code></dd></dlentry>
 
-    Unix-Command to be run on the selected logs. Use single quotes to escape
-    spaces etc. Language used to specify CMDSTR has following rules.
+    <dlentry>
+      <dt><code>--outdir <em>OUTDIR</em></code></dt>
+      <dd>Directory path for writing results with original directory structure from each node. Used as an alternative to printing output to <code>outfile/stdout</code>.</dd></dlentry>
 
-    * A logfile and its corresponding result file can be referred by keywords `SRCFILE` &
-    `DSTFILE`. For example, `cp SRCFILE DSTFILE`.
+    <dlentry>
+      <dt><code>--cmd_infmt <em>CMD_INFMT</em></code></dt>
+      <dd>Specify if the input file should be compressed or uncompressed before running <code>CMD</code>. <code>C</code> for compressed, <code>U</code> for uncompressed. Don't use this flag if <code>CMD</code> works on both.</dd></dlentry>
 
-    * Without any reference to DSTFILE in CMDSTR, `> DSTFILE` will be appended to CMDSTR for output redirection. eg `du
-    -sch SRCFILE` gets auto- transtalted to `du -sch SRCFILE > DSTFILE`
+    <dlentry>
+      <dt><code>--cmd_outfmt <em>CMD_OUTFMT</em></code></dt>
+      <dd>Specify if <code>OUTFILE</code> generated by <code>CMD</code> should be compressed or uncompressed. <code>C</code> for compressed, <code>U</code> for uncompressed. Don't use this flag if output file is of the same format as the input file.</dd></dlentry>
 
-    * Without any reference to SRCFILE, content of log is streamed to CMDSTR by pipe. For example:
-    `tail -n100 | grep ERROR` gets auto-transtalted to `cat SRCFILE | tail -n100 |
-    grep ERROR > DSTFILE` (default: None)
+    <dlentry>
+      <dt><code>--nodes <em>NODES</em></code></dt>
+      <dd>Comma separated list of nodes where to run command. Skip this to use all nodes.</dd></dlentry>
+   </dl>
+  </dd></dlentry></dl>
 
-  * `--include` *`INCLUDE`*     
-
-    Comma separated list of logs to include,each entry is either a "selector" or
-    a glob for matching files.Selectors must be among: `all`, `orion`, `system`,
-    `ts`. Anything starting with / is assumed to be a glob pattern and
-    interpreted through `find(1)`. Other entries are ignored. TIP: put single quotes
-    around the param value to prevent undesired glob expansion (default: all)
-
-  * `--exclude` *`EXCLUDE`*     
-
-    Comma separated list of logs to exclude. Applies to the list selected by
-    `--include`. Params are interpreted just like in `--include` (default: None)
-
-  * `--since` *`SINCE`*         
-
-    Grab logs from this time window in the past. Should be a human readable
-    duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default:
-    None)
-
-  * `--from` *`FROM`*  Timestamp where collection begins, must be of the form: `yyyymmdd-HH:MM` (default: None)
-
-  * `--to ` *`TO`* Timestamp where collection ends, must be of the form: `yyyymmdd-HH:MM` (default: None)
-
-  * `--outfile` *`OUTFILE`* File path for printing all the results. By default printed to stdout (default: None)
-
-  * `--outdir` *`OUTDIR`*  Directory path for dumping results with original dir structure from each node. Used as an alternative to printing output to outfile/stdout (default: None)
-
-  * `--cmd_infmt` *`CMD_INFMT`* Specify if the inputfile should be compressed/uncompressed before running `CMD`. `C`=compressed, `U`=uncompressed. Don't use this flag if `CMD` works on both (default: None)
-
-  * `--cmd_outfmt` *`CMD_OUTFMT`* Specify if *`OUTFILE`* generated by `CMD` will be compressed/uncompressed. `C`=compressed, `U`=uncompressed. Don't use this flag if output file will be of same format as input file (default: None)
-
-  * `--nodes` *`NODES`* Comma separated list of nodes where to run command. Skip this to use all nodes. (default: None)
-
-
+{: id="tscli-tiles"}
 ### map-tiles
 
 ```
-tscli map-tiles [-h] {disable,enable,status} ...
+tscli map-tiles [-h] {disable,enable,status}
 ```
 
-This subcommand supports the following actions:
+This subcommand has the following options:
 
-* `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
+<dl>
+  <dlentry>
+    <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
+    <dd>
+      <p>Enables ThoughtSpot's map tiles, used when constructing geomap charts.</p>
+      <p>If you don't have interest access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+      <dl>
+        <dlentry>
+          <dt><code>--online</code></dt>
+          <dd>
+            <p>Download <code>maptiles</code> tar from internet.</p>
+            <p>The default setting is <code>True</code></p></dd></dlentry>
+        <dlentry>
+          <dt><code>--offline</code></dt>
+          <dd>
+            <p>Using <code>maptiles</code> tar from local disk.</p>
+            <p>The default setting is <code>False</code></p></dd></dlentry>
+        <dlentry>
+          <dt><code>--tar <em>TAR</em></code></dt>
+          <dd>Specified tar file for map-tiles.</dd></dlentry>
+        <dlentry>
+          <dt><code>--md5 <em>MD5</em></code></dt>
+          <dd>Specified md5 file for map-tiles.</dd></dlentry>
+      </dl>
 
-  * `--online` Download `maptiles` tar from internet. (default: True)
-  * `--offline`   Using `maptiles` tar from local disk. (default: False)
-  * `--tar` *`TAR`*   Specified tar file for map-tiles. (default: )
-  * `--md5` *`MD5`*   Specified md5 file for map-tiles. (default: )
+    </dd></dlentry>  
 
-* `tscli map-tiles disable ` Disable map-tiles functionality.
+  <dlentry>
+    <dt><code>tscli map-tiles disable</code></dt>
+    <dd>Disable map-tiles functionality.</dd></dlentry>
 
-* `tscli map-tiles status ` Check whether map-tiles is enabled.
+  <dlentry>
+    <dt><code>tscli map-tiles status</code></dt>
+    <dd>Check whether map-tiles are enabled.</dd></dlentry>
 
+</dl>
 
+{: id="tscli-monitoring"}
 ### monitoring
 
 ```
-tscli monitoring [-h] {set-config,show-config} ...
+tscli monitoring [-h] {set-config,show-config}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli monitoring set-config [-h] [--email EMAIL] [--clear_email] [--heartbeat_interval HEARTBEAT_INTERVAL] [--heartbeat_disable] [--report_interval REPORT_INTERVAL] [--report_disable]` Sets the monitoring configuration.
+<dl>
+  <dlentry>
+    <dt><code>tscli monitoring set-config [-h] [--email EMAIL] [--clear_email] [--heartbeat_interval HEARTBEAT_INTERVAL] [--heartbeat_disable] [--report_interval REPORT_INTERVAL] [--report_disable]</code></dt>
+    <dd>
+      <p>Sets the monitoring configuration.</p>
+      <p>The <code>monitoring</code> subcommand accepts the following optional flags:</p>
 
-  * `--email` *`EMAIL`* Comma separated list (no spaces) of email addresses where the cluster will send monitoring information.
-  * `--clear_email` Disable emails by clearing email configuration. (default: False)
-  * `--heartbeat_interval` *`HEARTBEAT_INTERVAL`*  Heartbeat email generation interval in seconds. Should be greater than 0.
-  * `--heartbeat_disable`   Disable heartbeat email generation. (default: False)
-  * `--report_interval` *`REPORT_INTERVAL`* Cluster report email generation interval in seconds. Should be greater than 0.
-  * `--report_disable` Disable cluster report email generation. (default: False)
+      <dl>
+        <dlentry>
+          <dt><code>--email <em>EMAIL</em></code></dt>
+          <dd>Comma separated list (no spaces) of email addresses where the cluster will send monitoring information.</dd></dlentry>
+        <dlentry>
+          <dt><code>--clear_email</code></dt>
+          <dd>Disable emails by clearing email configuration. (default: False)</dd></dlentry>
+       <dlentry>
+         <dt><code>--heartbeat_interval <em>HEARTBEAT_INTERVAL</em></code></dt>
+         <dd>Heartbeat email generation interval in seconds. Should be greater than 0.</dd></dlentry>
+       <dlentry>
+         <dt><code>--heartbeat_disable</code></dt>
+         <dd>Disable heartbeat email generation. (default: False)</dd></dlentry>
+       <dlentry>
+         <dt><code>--report_interval <em>REPORT_INTERVAL</em></code></dt>
+         <dd>
+           <p>Cluster report email generation interval in seconds.</p>
+           <p>Should be greater than <code>0</code>.</p></dd></dlentry>
+       <dlentry>
+         <dt><code>--report_disable</code></dt>
+         <dd>
+           <p>Disable cluster report email generation.</p>
+           <p>The default setting is <code>False</code>.</p></dd></dlentry>
 
-* `tscli monitoring show-config` Shows the monitoring configuration.
+      </dl>
+    </dd></dlentry>
 
+    <dlentry>
+      <dt><code>tscli monitoring show-config</code></dt>
+      <dd>Shows the monitoring configuration.</dd></dlentry>
 
+</dl>
+
+{: id="tscli-nas"}
 ### nas
 
 ```
-tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount} ...
+tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli nas ls [-h]`  List mounts managed by NAS mounter service.
+<dl>
+  <dlentry>
+    <dt><code>tscli nas ls [-h]</code></dt>
+    <dd>List mounts managed by NAS mounter service.</dd></dlentry>
 
-* `tscli nas mount-cifs [-h] --server` *`SERVER`* `[--path_on_server` *`PATH_ON_SERVER`* `]
---mount_point` *`MOUNT_POINT`* `--username` *`USERNAME`* `--password` *`PASSWORD`* `[--uid` *`UID`*`]
-[--gid` *`GID`*`] [--options` *`OPTIONS`* `]`
+ <dlentry>
+    <dt><code>tscli nas mount-cifs [-h] --server <em>SERVER</em> [--path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em>--username <em>USERNAME</em> --password <em>PASSWORD</em> [--uid <em>UID</em>] [--gid <em>GID</em>] [--options <em>OPTIONS</em>]</code></dt>
+    <dd>
 
-  Mounts a CIFS device on all nodes.
+    <p>Mounts a CIFS device on all nodes.</p>
+    <p>Accepts the following optional flags:</p>
 
-  * `--server` *`SERVER`* IP address or DNS name of CIFS service. For example, `10.20.30.40` (default: None)
+    <dl>
+      <dlentry>
+      <dt><code>--server <em>SERVER</em></code></dt>
+      <dd>
+        <p>IP address or DNS name of CIFS service.</p>
+        <p>For example, <code>10.20.30.40</code>.</p></dd></dlentry>
 
-  * `--path_on_server` *`PATH_ON_SERVER`*  Filesystem path on the CIFS server to mount (source). For example: `/a` (default: `/`)
+     <dlentry>
+       <dt><code>--path_on_server <em>PATH_ON_SERVER</em></code></dt>
+       <dd>
+         <p>Filesystem path on the CIFS source server to mount NAS.</p>
+         <p>For example, <code>/a</code>.</p>
+         <p>The default setting is <code>/</code> (forward slash).</p></dd></dlentry>
 
-  * `--mount_point` *`MOUNT_POINT`*
+     <dlentry>
+       <dt><code>--mount_point <em>MOUNT_POINT</em></code></dt>
+       <dd>
+         <p>Directory on all cluster nodes where to mount the NFS filesystem on the target.</p>
+         <p>If this directory does not exist, the command creates it. If this directory already exists, the command uses it for mounting.</p>
+         <p>For example, <code>/mnt/external</code>.</p></dd></dlentry>
 
-    Directory on all cluster nodes where the NFS filesystem should be mounted
-    (target). If this directory does not exist, the command creates it. If this directory
-    already exists, the command uses it for mounting. For example: `/mnt/external` (default: None)
+      <dlentry>
+        <dt><code>--username <em>USERNAME</em></code></dt>
+        <dd>Username to connect to the CIFS filesystem</dd></dlentry>
 
-  * `--username` *`USERNAME`*   Username to connect to the CIFS filesystem as (default: None)
-  * `--password` *`PASSWORD`*  CIFS password for `--username` (default: None)
-  * `--uid` *`UID`*
+      <dlentry>
+        <dt><code>--password <em>PASSWORD</em></code></dt>
+        <dd>CIFS password for <code>--username</code></dd></dlentry>
 
-      *`UID`* that will own all files or directories on the mounted filesystem when
-      the server does not provide ownership information. See `man mount.cifs`
-      for more details. (default: `1001`)
+      <dlentry>
+        <dt><code>--uid <em>UID</em></code></dt>
+        <dd>
+          <p>The <em>UID</em> that owns all files or directories on the mounted filesystem when the server does not provide ownership information.</p>
+          <p>See <code>man mount.cifs</code> for more details.</p>
+          <p>The default setting is <code>1001</code>.</p></dd></dlentry>
 
-  * `--gid` *`GID`*             
+      <dlentry>
+        <dt><code>--gid <em>GID</em></code></dt>
+        <dd>
+          <p>The <code>GID</code> that owns all files or directories on the mounted filesystem when the server does not provide ownership information.</p>
+          <p>See <code>man mount.cifs</code> for more details.</p>
+          <p>The default is <code>1001</code>.</p></dd></dlentry>
 
-    Gid that will own all files or directories on the mounted filesystem when
-    the server does not provide ownership information. See `man mount.cifs` for
-    more details. (default: `1001`)
+      <dlentry>
+        <dt><code>--options <em>OPTIONS</em></code></dt>
+        <dd>
+          <p>Other command-line options to forward to the <code>mount.cifs</code> command.</p>
+          <p>The default setting is <code>noexec</code>.</p></dd></dlentry>
+     </dl>
 
-  * `--options` *`OPTIONS`* Other command-line options to forward to `mount.cifs` command (default: `noexec`)
+    </dd></dlentry>
 
-* `tscli nas mount-nfs [-h] --server SERVER [--protocol PROTO --path_on_server PATH_ON_SERVER]
-  --mount_point MOUNT_POINT [--options OPTIONS]`
+  <dlentry>
+    <dt><code>tscli nas mount-nfs [-h] --server <em>SERVER</em> [--protocol <em>PROTO</em> --path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em> [--options <em>OPTIONS</em>]</code></dt>
+    <dd>
+      <p>Mounts a NFS device on all nodes.</p>
+      <p>Accepts the following optional flags:</p>
 
-  Mounts a NFS device on all nodes. Parameters are:
+      <dl>
+        <dlentry>
+          <dt><code>--server <em>SERVER</em></code></dt>
+          <dd>IP address or DNS name of NFS service. For example, <code>10.20.30.40</code>.</dd></dlentry>
+        <dlentry>
+          <dt><code>--path_on_server <em>PATH_ON_SERVER</em></code></dt>
+          <dd>
+            <p>Filesystem path on the NFS source server.</p>
+            <p>For example, <code>/a/b/c/d</code>.</p>
+            <p>The default setting is <code>/</code>.</p></dd></dlentry>
 
-  * `--server` `SERVER` IP address or DNS name of NFS service. For example,` 10.20.30.40` (default: None)
-  * `--path_on_server` `PATH_ON_SERVER` Filesystem path on the NFS server to mount (source). For example: `/a/b/c/d` (default: `/`)
-  * `--mount_point` `MOUNT_POINT`
+        <dlentry>
+          <dt><code>--mount_point <em>MOUNT_POINT</em></code></dt>
+          <dd>
+            <p>Directory on all cluster nodes of the target system.</p>
+            <p>If this directory does not exist, the command creates it. If this directory already exists, the command uses it for mounting.</p>
+            <p>For example, <code>/mnt/external</code>.</p></dd></dlentry>
 
-    Directory on all cluster nodes where the NFS filesystem should be mounted
-    (target). This directory does not have to already exist. If this directory
-    already exists, a new directory is not created and the existing directory is
-    used for mounting. For example: `/mnt/external` (default: None)
+        <dlentry>
+          <dt><code>--options <em>OPTIONS</em></code></dt>
+          <dd>
+            <p>Command-line options to mount.</p>
+            <p>The default setting is <code>noexec</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--protocol <em>PROTO</em></code></dt>
+          <dd>
+            <p>One of <code>nfs</code> or <code>nfs4</code>.</p>
+            <p>The default is <code>nfs</code>.</p></dd></dlentry>
+       </dl>
+       </dd>
+       </dlentry>
 
-  * `--options` `OPTIONS` Command-line options to forward to mount command (default: `noexec`).
-  * `--protocol PROTO` One of `nfs` or `nfs4`. The default is `nfs`.
+  <dlentry>
+    <dt><code>tscli nas unmount [-h] --dir <em>DIR</em></code></dt>
+    <dd>
+      <p>Unmounts all devices from the specified directory, <code>DIR</code>.</p>
+      <p>This command returns an error if nothing is currently mounted on this directory through <code>tscli nas mount</code>.</p></dd></dlentry>
 
-* `tscli nas unmount [-h] --dir` *`DIR`*
+</dl>
 
-    Unmounts all devices from the specified *`DIR`* (directory) location. This
-    command returns an error if nothing is currently mounted on this directory
-    through `tscli nas mount` (default: None)
-
+{: id="tscli-node"}
 ### node
 
 ```
-tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status} ...
+tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli node check [-h] [--select {reinstall-preflight}] [--secondary` *`SECONDARY`*`]`
+<dl>
+  <dlentry>
+    <dt><code>tscli node check [-h] [--select {reinstall-preflight}] [--secondary <em>SECONDARY</em>]</code></dt>
+    <dd>
+      <p>Run checks per node.</p>
+      <p>Accepts the following flags:</p>
 
-  Run checks per node. Takes the following parameters:
+      <dl>
+        <dlentry>
+          <dt><code>--select {reinstall-preflight}</code></dt>
+          <dd>
+            <p>Select the type of node check</p>
+            <p>The default setting is <code>reinstall-preflight</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--secondary <em>SECONDARY</em></code></dt>
+          <dd>
+            <p>Secondary drive for <code>reinstall-preflight</code>.</p>
+            <p>The default setting is <code>sdd</code>.</p></dd></dlentry>
+      </dl>
+    </dd></dlentry>
 
-  * `--select {reinstall-preflight}` Select the type of node check (default: `reinstall-preflight`)
-  * `--secondary` *`SECONDARY`*  Secondary drive for `reinstall-preflight` (default: `sdd`)
+   <dlentry>
+      <dt><code>tscli node ls [-h] [--type {all,healthy,not-healthy}]</code></dt>
+      <dd>
+        <p>Filter by node state.</p>
+        <p>The default setting is <code>all</code>.</p>
+      </dd></dlentry>
 
-* `tscli node ls [-h] [--type {all,healthy,not-healthy}]` Filter by node state (default: `all`)
-* `tscli node reinstall-os [-h] [--secondary` *`SECONDARY`* `] [--cluster]` Reinstall OS on a node. This takes the following parameters:
+   <dlentry>
+      <dt><code>tscli node reinstall-os [-h] [--secondary <em>SECONDARY</em>] [--cluster]</code></dt>
+      <dd>
+        <p>Reinstall OS on a node.</p>
+        <p>Accepts the following flags:</p>
 
-  * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
-  * `--cluster` Is the node part of a cluster (default: `False`)
-* `tscli node resume-reinstall-os` Resume in-progress reinstall
+        <dl>
+          <dlentry>
+            <dt><code>--secondary <em>SECONDARY</em></code></dt>
+            <dd>
+              <p>Secondary drive for reinstall.</p>
+              <p>The default setting is <code>sdd</code>.</p></dd></dlentry>
+          <dlentry>
+          <dt><code>--cluster</code></dt>
+          <dd>
+            <p>The node part of a cluster.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
+        </dl>
+     </dd></dlentry>
 
+   <dlentry>
+    <dt><code>tscli node resume-reinstall-os</code></dt>
+    <dd>Resume in-progress reinstall</dd></dlentry>
 
-### [onboarding](#tscli-onboarding)
+</dl>
+
+{: id="tscli-onboarding"}
+### onboarding
 
 ```
-tscli onboarding
+tscli onboarding [-h] {configure,purge-configuration}
 ```
+
 Onboarding helps application administrators to bulk update user information.
 In particular, it configures various in-app email options.
 
-```
-tscli onboarding --help
-```
-This subcommand prints help for the onboarding configuration
+This subcommand has the following options:
 
+<dl>
+  <dlentry>
+    <dt><code>tscli onboarding --help</code></dt>
+    <dd>Prints help for the onboarding configuration</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli onboarding configure</code></dt>
+    <dd>
+      <p>Configures the onboarding through series of steps.</p>
+      <p>Asks the user to provide information necessary for onboarding-related functionality, such as the following:</p>
+      <ol>
+        <li>Company name</li>
+        <li>Product name</li>
+        <li>
+          <p>Should welcome emails be enabled?</p>
+          <ul>
+            <li>Send welcome emails to new users</li>
+            <li>Support email</li>
+            <li>Custom message to include in emails</li>
+            <li>URL of the ThoughtSpot instance</li>
+            <li>URL of the ThoughtSpot documentation</li>
+          </ul></li></ol></dd></dlentry>
+  <dlentry>
+    <dt><code>tscli onboarding purge-configuration</code></dt>
+    <dd>This command removes all onboarding configuration.</dd></dlentry>
+</dl>
 
-```
-tscli onboarding configure
-```
-This command configures the onboarding through series of steps. It asks the user
-to provide information necessary for onboarding-related functionality, such as the following:
-1. Company Name
-2. Product name
-3. Should welcome emails be enabled?
-   - Send welcome emails to new users
-   - Support email
-   - Custom message to include in emails
-   - URL of the ThoughtSpot instance
-   - URL of the ThoughtSpot documentation
-
-```
-tscli onboarding purge-configuration
-```
-
-This command removes all onboarding configuration
-
-
+{: id="tscli-patch"}
 ### patch
 
 ```
-tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback} ...
+tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli patch apply [-h] [` *`release`*`]`
+<dl>
+  <dlentry>
+    <dt><code>tscli patch apply [-h] [<em>release</em>]</code></dt>
+    <dd>
+      <p>Apply the patch on an existing cluster.</p>
+      <p>Accepts the following flag:</p>
+      <dl>
+        <dlentry>
+          <dt><code>release</code></dt>
+          <dd>The relative path to the patch tar ball.</dd></dlentry></dl>
+      </dd></dlentry>
 
-  Apply the patch on an existing cluster. Takes the following parameters:
+    <dlentry>
+      <dt><code>tscli patch ls [-h]  [--applied] [--rolled_back] [--service <em>SERVICE</em>] [--md5 <em>MD5</em>] [--history]</code></dt>
+      <dd>
+        <p>Lists the patches currently applied.</p>
+        <p>Accepts the following flags:</p>
 
-  * *`release`*  The relative path to the patch tar ball
+        <dl>
+          <dlentry>
+            <dt><code>--applied</code></dt>
+            <dd>
+              <p>Show only the patches applied since last full release.</p>
+              <p>The default setting is <code>False</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--rolled_back</code></dt>
+            <dd>
+              <p>Show only the patches rolled back since last full release.</p>
+              <p>The default setting is <code>False</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--service <em>SERVICE</em></code></dt>
+            <dd>
+              <p>Show patches filtered by service.</p>
+              <p>The default setting is <code>None</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--md5 <em>MD5</em></code></dt>
+            <dd>
+              <p>Shows the details of the patch specified.</p>
+              <p>The default setting is <code>None</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--history</code></dt>
+            <dd>
+              <p>Shows the history of all patch apply/rollback release.</p>
+              <p>The default setting is <code>False</code>.</p></dd></dlentry>
+        </dl>
+        </dd></dlentry>
 
-* `tscli patch ls [-h]  [--applied] [--rolled_back] [--service SERVICE]
-                      [--md5 MD5] [--history]` Lists the patches currently applied. This takes the following parameters:
+    <dlentry>
+      <dt><code>tscli patch resume-apply [-h]</code></dt>
+      <dd>Resume patch apply</dd></dlentry>
 
-  * `--applied` Show only the patches applied since last full release (default: ` False` )
-  * `--rolled_back` Show only the patches rolled back since last full release (default: ` False` )
-  * `--service SERVICE` Show patches filtered by service (default: ` None` )
-  * `--md5 MD5` Shows the details of the patch specified (default: ` None` )
-  * `--history` Shows the history of all patch apply/rollback release (default: ` False` )
+    <dlentry>
+      <dt><code>tscli patch resume-rollback [-h]</code></dt>
+      <dd>Resume patch roll-backup</dd></dlentry>
 
-* `tscli patch resume-apply [-h]`
+    <dlentry>
+      <dt><code>tscli patch rollback [-h]</code></dt>
+      <dd>Rollback the patch from an existing cluster</dd></dlentry>
 
-  Resume patch apply
+</dl>    
 
-* `tscli patch resume-rollback [-h]`
-
-  Resume patch roll-backup
-
-* `tscli patch rollback [-h]`
-
-  Rollback the patch from an existing cluster
-
-
+{: id="tscli-rpackage"}
 ### rpackage
 
 ```
-tscli rpackage [-h] {add,delete,list} ...
+tscli rpackage [-h] {add,delete,list}
 ```
 
 Manages R packages available to SpotIQ.
 
-* `tscli rpackage add [-h] [--repo` *`REPO`*`] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`]
-[--nodes` *`NODES`*`]` *`package_name`*  Command to add an R *`package_name`*  to the cluster. This command has the following options:
+This subcommand has the following options:
 
-  * `--repo` *`REPO`*  Specify the url of a specific repo to download packages
-  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be installed (default: 60)
-  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
-  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
+<dl>
+<dt><code>tscli rpackage add [-h] [--repo <em>REPO</em>] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
+<dd>
+<p>Command to add an R package, <code>package_name</code>, to the cluster.</p>
+<p>Accepts the following flags:</p>
+<dl>
+<dt><code>--repo <em>REPO</em></code></dt>
+<dd>Specify the url of a specific repository to download packages.</dd>
+<dt><code>-timeout  <em>REPO</em></code></dt>
+<dd>Timeout waiting for the R Package to be installed (default: 60)</dd>
+<dt><code>--dest_dir <em>REPO</em></code></dt>
+<dd>Directory where output of this command will be placed</dd>
+<dt><code>--nodes <em>NODES</em></code></dt>
+<dd>
+<p>Space-separated list of IPs for nodes where to run the command.</p>
+<p>The default setting is <code>all</code>.</p>
+</dd>
+<dt><code>tscli rpackage add [-h] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
+<dd>
+<p>Command to delete an installed R package from the cluster.</p>
+<p>Accepts the following flags:</p>
+<dl>
+<dt><code>--timeout <em>REPO</em></code></dt>
+<dd>
+<p>Timeout waiting before removing the R package.</p>
+<p>The default is 60</p>
+</dd>
+<dt><code>--dest_dir <em>REPO</em></code></dt>
+<dd>Directory where to save the output of this command.</dd>
+<dt><code>--nodes <em>NODES</em></code></dt>
+<dd>
+<p>Space-separated list of node IPs where to run the command.</p>
+<p>The default setting is <code>all</code>.</p>
+</dd>
+</dl>
+</dd>
+<dt><code>tscli rpackage list [-h] [--detailed]</code></dt>
+<dd>List all R packages installed on the cluster.</dd>
+</dl>
+</dd>
+</dl>
 
-* `tscli rpackage add [-h] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`] [--nodes` *`NODES`*`]` *`package_name`* Command to delete an installed R package from the cluster. This command has the following options:
-
-  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be removed (default: 60)
-  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
-  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
-
-* `tscli rpackage list [-h] [--detailed]`  List all R packages installed on the cluster.
-
-
+{: id="tscli-saml"}
 ### saml
 
 ```
 tscli saml [-h] {configure,purge-configuration}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli saml configure [-h]` Configures SAML. To see a list of prerequisites refer to [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html).
-* `tscli saml purge-configuration` Purges any existing SAML configuration.
+<dl>
+  <dlentry>
+    <dt><code>tscli saml configure [-h]</code></dt>
+    <dd>Configures SAML.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli saml purge-configuration</code></dt>
+    <dd>Purges any existing SAML configuration.</dd></dlentry>
+</dl>
 
+To see a list of prerequisites, refer to [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html).
 
+{: id="tscli-scheduled-pinboards"}
 ### scheduled-pinboards
 
 ```
 tscli scheduled-pinboards [-h] {disable,enable}
 ```
 
-This subcommand has the following actions:
+This subcommand has the following options:
 
-* `tscli scheduled-pinboards disable [-h]` Disable scheduled pinboards for this cluster.
-* `tscli scheduled-pinboards enable [-h]` Enables scheduled pinboards, which is disabled in prod clusters by default.
+<dl>
+  <dlentry>
+    <dt><code>tscli scheduled-pinboards disable [-h]</code></dt>
+    <dd>Disable scheduled pinboards for this cluster.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli scheduled-pinboards enable [-h]</code></dt>
+    <dd>Enables scheduled pinboards, which is disabled in prod clusters by default.</dd></dlentry>
+  </dl>
 
 {% include note.html content="When you enable scheduled pinboards, you should
 also configure a whitelist of intended email domains. Contact ThoughtSpot
-Support for help configuring a whitelist." %}
+Support for help on how to configure a whitelist." %}
 
+{: id="tscli-smtp"}
 ###  smtp
 
 ```
 tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
 ```
 
-This subcommand takes supports the following actions:
+This subcommand has the following options:
 
-* `tscli smtp remove-mailfromname` Removes current cluster mailfromname
-* `tscli smtp remove-mailname` Removes current cluster mailname
-* `tscli smtp remove-relayhost` Removes current cluster relayhost
-* `tscli smtp remove-saslcredentials` Clears SASL credentials and disables SMTP AUTH
+<dl>
+  <dlentry>
+    <dt><code>tscli smtp remove-mailfromname</code></dt>
+    <dd>Removes current cluster mail from name.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli smtp remove-mailname</code></dt>
+    <dd>Removes current cluster mail name.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp remove-relayhost</code></dt>
+  <dd>Removes current cluster relay host.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp remove-saslcredentials</code></dt>
+  <dd>Clears SASL credentials and disables SMTP AUTH.</dd></dlentry>
 
-* `tscli smtp reset-canonical-mapping` Deletes the current postmap mapping.
+<dlentry>
+    <dt><code>tscli smtp reset-canonical-mapping</code></dt>
+  <dd>Deletes the current postmap mapping.</dd></dlentry>
 
-* `tscli smtp set-canonical-mapping [-h]` *`new_key`* *`new_value`* Sets a new Postmap mapping.
-* `tscli smtp set-mailfromname` *`mailfromname`* Sets the name, an email address, from which email alerts are sent, for the cluster.
-* `tscli smtp set-mailname` *`mailname`* Sets the mailname, a domain, where email alerts are sent, for the cluster.
-* `tscli smtp set-relayhost [-h] [--force FORCE] relayhost` Sets the Relay Host for SMTP (email) sent from the cluster.
+<dlentry>
+  <dt><code>tscli smtp set-canonical-mapping [-h] <em>new_key</em> <em>new_value</em></code></dt>
+  <dd>Sets a new Postmap mapping.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli smtp set-mailfromname <em>mailfromname</em></code></dt>
+  <dd>Sets the name and an email address from where email alerts are sent for the cluster.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli smtp set-mailname <em>mailname</em></code></dt>
+  <dd>Sets the mailname and a domain from where email alerts are sent for the cluster.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] relayhost</code></dt>
+  <dd>
+    <p>Sets the Relay Host for SMTP (email) sent from the cluster.</p>
+    <p>Accepts the following flag:</p>
+      <dl>
+        <dlentry>
+        <dt><code>--force <em>FORCE</em></code></dt>
+          <dd><p>Set even if relay host is not accessible.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
+    </dl>
+  </dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp set-saslcredentials</code></dt>
+  <dd>Sets SASL credentials and enables SMTP AUTH</dd></dlentry>
 
-  * `--force` *`FORCE`*  Set even if relay host is not accessible. (default: `False`)
+<dlentry>
+  <dt><code>tscli smtp show-canonical-mapping</code></dt>
+  <dd>Shows the current postmap mapping.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp show-mailfromname</code></dt>
+  <dd>Shows the mailname, from which email alerts are sent, for the cluster.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp show-mailname</code></dt>
+  <dd>Shows the mailname, where email alerts are sent, for the cluster.</dd></dlentry>
+<dlentry>
+    <dt><code>tscli smtp show-relayhost</code></dt>
+  <dd>
+    <p>Shows the  for SMTP (email) sent from the cluster.</p>
+    <p>If there a relay host is not configured, the command returns <code>NOT FOUND</code>.</p></dd></dlentry>
+   </dl>
 
-* `tscli smtp set-saslcredentials` Sets SASL credentials and enables SMTP AUTH
-
-* `tscli smtp show-canonical-mapping` Shows the current postmap mapping.
-* `tscli smtp show-mailfromname` Shows the mailname, from which email alerts are sent, for the cluster.
-* `tscli smtp show-mailname` Shows the mailname, where email alerts are sent, for the cluster.
-* `tscli smtp show-relayhost` Shows the  for SMTP (email) sent from the cluster. If there is no Relay Host configured, the command returns `NOT FOUND`.
-
+{: id="tscli-snapshot"}
 ### snapshot
 
 ```
 tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl}
 ```
 
-Learn more about snapshots and backups see the [Understand the backup strategies]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html) documentation.
-This subcommand supports the following actions:
+To learn more about snapshots and backups, see the [Understand the backup strategies]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html) documentation.
 
-* `tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type
-{full,incremental}] [--base` *`BASE`* `] [--storage_type {local,nas}] [--remote]` *`name`*
-*`out`*
+This subcommand has the following options:
 
-  Pull snapshot out as a backup. This takes the following parameters:
+<dl>
+  <dlentry>
+    <dt><code>tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base <em>BASE</em>] [--storage_type {local,nas}] [--remote] <em>name</em> <em>out</em></code></dt>
+  <dd>
+    <p>Pull snapshot out as a backup.</p>
+    <p>Accepts the following flags:</p>
+      <dl>
+        <dlentry>
+          <dt><code>--mode {full,light,dataless}</code></dt>
+          <dd>Mode of backups. (default: `full`)</dd></dlentry>
+        <dlentry>
+          <dt><code>name</code></dt>
+          <dd>Name of snapshot to pull out as a backup. To list all snapshots, run `tscli snapshot ls`.</dd></dlentry>
+        <dlentry>
+          <dt><code>out</code></dt>
+          <dd>Directory where backup will be written, must not already exist.</dd></dlentry>
+        <dlentry>
+          <dt><code>--type {full,incremental}</code></dt>
+          <dd>
+            <p>Type of backup.</p>
+            <p>Incremental backup is not implemented.</p>
+            <p>The default setting is <code>full</code>.</p>
+        </dd></dlentry>
+      <dlentry>
+        <dt><code>--base <em>BASE</em></code></dt>
+        <dd>
+          <p>Based snapshot name for incremental backup.</p>
+          <p>Incremental backup not implemented yet.</p>
+        </dd></dlentry>
+      <dlentry>
+        <dt><code>storage_type {local,nas}</code></dt>
+        <dd>Storage type of output directory. (default: `local`)</dd></dlentry>
+      <dlentry>
+        <dt><code>--remote</code></dt>
+        <dd>Take backup through Orion master. (default: `True`)</dd></dlentry></dl>
+    </dd></dlentry>
+  <dlentry>
+    <dt><code>tscli snapshot create [-h] <em>name</em> <em>reason</em> <em>ttl</em></code></dt>
+    <dd>
+      <p>Creates a new snapshot with the specified <code>name</code> and <code>reason</code>.</p>
+      <p>This command does not accept <code>.</code> (periods). It does accept <code>-</code> (dashes or hyphens).</p>
+      <p>The <code>ttl</code> parameter is the number of days after which this snapshot is automatically deleted. A value of <code>-1</code> disables automatic deletion.</p>
+   </dd>
+</dlentry>
+<dlentry>
+  <dt><code>tscli snapshot pin [-h] <em>name</em></code></dt>
+  <dd>Pins a snapshot so it cannot be deleted or garbage collected.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli snapshot delete [-h] <em>name</em></code></dt>
+  <dd>Deletes the named snapshot.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli snapshot ls [-h]</code></dt>
+  <dd>Lists available snapshots.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli snapshot restore [-h] [--allow_release_change] [--only_service_state] <em>name</em></code></dt>
+  <dd>
+    <p>Restores cluster to an existing snapshot.</p>
+    <p>Accepts the following flags:</p>
+    <dl>
+      <dlentry>
+        <dt><code>--allow_release_change</code></dt>
+        <dd>Allow restoration to a snapshot at a different release. (default: `False`)</dd></dlentry>
+      <dlentry>
+        <dt><code>--only_service_state</code></dt>
+        <dd>Restore only service state. (default: `False`)</dd></dlentry></dl></dd></dlentry>
+<dlentry>
+  <dt><code>tscli snapshot unpin [-h] <em>name</em></code></dt>
+  <dd>Unpin a snapshot so it can be deleted or garbage-collected</dd></dlentry>
+<dlentry>
+  <dt><code>tscli snapshot update-ttl [-h] [--disable <em>DISABLE</em>] <em>name</em> <em>ttl</em></code></dt>
+  <dd><p>Updates manual snapshot garbage collection policy.</p>
+    <p>Accepts the following flags:</p>
+    <dl>
+      <dlentry>
+        <dt><code>name</code></dt>
+        <dd>Specifies which snapshot to update.</dd></dlentry>
+      <dlentry>
+        <dt><code>ttl</code></dt>
+        <dd>Extends the manual snapshot</dd></dlentry>
+      <dlentry>
+        <dt><code>ttl</code></dt>
+        <dd><p>This is the "time-to-live" value.</p>
+          <p>Use a positive value to increase <code>ttl</code>. Use negative values to decrease it.</p></dd></dlentry>
+      <dlentry>
+        <dt><code>--disable <em>DISABLE</em></code></dt>
+        <dd><p>Disable manual snapshot garbage collection.</p>
+          <p>Setting this value to `True` will override any `ttl` value. (default: False)</p></dd></dlentry></dl></dd></dlentry>
+</dl>
 
-  * `--mode {full,light,dataless}` Mode of backups. (default: `full`)
-  * *`name`* Name of snapshot to pull out as a backup. To list all snapshots, run `tscli snapshot ls`.
-  * *`out`*  Directory where backup will be written, must not already exist.
-  * `--type {full,incremental}` Type of backup.(Incremental backup is not implemented yet) (default: `full`)
-  * `--base` *`BASE`* Based snapshot name for incremental backup. (Not Implemented yet) (default: None)
-  * `--storage_type {local,nas}` Storage type of output directory. (default: `local`)
-  * `--remote` Take backup through Orion master. (default: `True`)
-
-* `tscli snapshot create [-h]` *`name`* *`reason`* *`ttl`*  
-
-  Creates a new snapshot with the *`name`* and *`reason`* provided. This command
-  does not accept `.` (periods), but does accept `-` (dashes). The `ttl`
-  parameters is the number of days after which this snapshot will be
-  automatically deleted. A value of `-1` disables automatic deletion.
-
-* `tscli snapshot pin [-h]` *`name`*  Pins a snapshot so it cannot be deleted or garbage collected.
-* `tscli snapshot delete [-h]` *`name`*  Deletes the named snapshot.
-* `tscli snapshot ls [-h]` List available snapshots.
-* `tscli snapshot restore [-h] [--allow_release_change] [--only_service_state]` *`name`* Restore cluster to an existing snapshot. This takes the following parameters:
-
-  * `--allow_release_change` Allow restoration to a snapshot at a different release. (default: `False`)
-  * `--only_service_state` Restore only service state. (default: `False`)
-
-* `tscli snapshot unpin [-h]` *`name`*  Unpin a snapshot so it can be deleted or garbage collected.
-
-* `tscli snapshot update-ttl [-h] [--disable` *`DISABLE`* `]` *`name`* *`ttl`*
-
-  Updates manual snapshot garbage collection policy.
-
-  * `name` Specifies which snapshot to update.  
-  * `ttl` Extends the manual snapshot `ttl` (time-to-live) value. Use a positive value to increase `ttl`. Use negative value to decrease it.
-  * `--disable` *`DISABLE`* Disable manual snapshot garbage collection. Setting this value to `True` will
-    override any `ttl` value. (default: False)
-
-
+{: id="tscli-snapshot-policy"}
 ### snapshot-policy
 
 ```
 tscli snapshot-policy [-h] {disable,enable,show,update}
 ```
 
-This subcommand supports the following actions:
+This subcommand has the following options:
 
-* `tscli snapshot-policy disable [-h]` Disable snapshot policy.
-* `tscli snapshot-policy enable -h` Enable specified snapshot policy.
-* `tscli snapshot-policy show [-h]` Show snapshot policy.
-* `tscli snapshot-policy update [-h] [--config` *`CONFIG`*`]` Update periodic snapshot config. This takes the following parameter:
+<dl>
+  <dlentry>
+    <dt><code>tscli snapshot-policy disable [-h]</code></dt>
+    <dd>Disable snapshot policy.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli snapshot-policy enable -h</code></dt>
+    <dd>Enable specified snapshot policy.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli snapshot-policy show [-h]</code></dt>
+    <dd>Show snapshot policy.</dd></dlentry>
+  <dlentry>
+    <dt><code>tscli snapshot-policy update [-h] [--config <em>CONFIG</em>]</code></dt>
 
-   *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
+    <dd>
+      <p>Update periodic snapshot config. This takes the following parameter</p>
+      <dl>
+        <dlentry>
+          <dt><code>--config <em>CONFIG</em></code></dt>
+          <dd>Text format of periodic backup policy config.</dd></dlentry></dl>
+    </dd></dlentry>          
+</dl>
 
-
+{: id="tscli-spot"}
 ### spot
 
 ```
-tscli spot [-h] {enable} ...
+tscli spot [-h] {enable}
 ```
 
-Enables Spot integration.  This subcommand supports the following actions:
+Enables Spot integration.  
 
-`tscli spot enable [-h] --token ` *`TOKEN`* `--thoughtspot_url` *`THOUGHTSPOT_URL`* `[--cache_timeout` *`CACHE_TIMEOUT`* `]`
+This subcommand has the following option:
 
+<dl>
+  <dlentry>
+    <dt><code>tscli spot enable [-h] --token <em>TOKEN</em> --thoughtspot_url <em>THOUGHTSPOT_URL</em> [--cache_timeout <em>CACHE_TIMEOUT</em>]</code></dt>
+    <dd>
+      <p>The <code>spot</code> subcommand accepts the following optional flags:</p>
 
-* `--token ` *`TOKEN`*  Slack authroization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.
-* `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
-* `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
+      <dl>
+        <dlentry>
+          <dt><code>--token <em>TOKEN</em></code></dt>
+          <dd>Slack authorization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.</dd></dlentry>
 
+      <dlentry>
+        <dt><code>--thoughtspot_url <em>THOUGHTSPOT_URL</em></code></dt>
+        <dd>
+          <p>URL for the ThoughtSpot application.</p>
+          <p>This is required.</p></dd></dlentry>
+      <dlentry>
+        <dt><code>--cache_timeout <em>CACHE_TIMEOUT</em></code></dt>
+        <dd>
+          <p>Internal cache timeout.</p>
+          <p>The default setting is <code>60000</code>.</p></dd></dlentry>
+     </dl></dd></dlentry>
+
+</dl>
+
+{: id="tscli-ssl"}
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 ```        
-
-This subcommand supports the following actions:
-
-* `tscli ssl add-cert [-h]` *`key`* *`certificate`* Adds an SSL certificate, key pair.
-* `tscli ssl clear-min-tls-version [-h]` Clears any customizations for the minimum TLS version to support.
-* `tscli ssl off`
-
-    Disables SSL. Disabling SSL will stop users from seeing a security warning
-    when accessing ThoughtSpot from a browser if there is no SSL certificate
-    installed.
-
-* `tscli ssl on [-h]` If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser.
-* `tscli ssl rm-cert` Removes the existing SSL certificate, if any.
-* `tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}` Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.
-* `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
-* `tscli ssl tls-status [-h]`  Prints the status of TLS support.
-
-##### Required ports for SSL
+This subcommand manages the SSL configuration.
 
 To use SSL, the following ports must be open:
 - 443
 - 80
 
+This subcommand has the following options:
+
+<dl>
+
+  <dlentry>
+    <dt><code>tscli ssl add-cert [-h] <em>key</em> <em>certificate</em></code></dt>
+    <dd>Adds an SSL certificate, key pair.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl clear-min-tls-version [-h]</code></dt>
+    <dd>Clears any customizations for the minimum TLS version to support.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl off</code></dt>
+    <dd>Disables SSL. Disabling SSL will stop users from seeing a security warning
+    when accessing ThoughtSpot from a browser if there is no SSL certificate
+    installed.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl on [-h]</code></dt>
+    <dd>If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl rm-cert</code></dt>
+    <dd>Removes the existing SSL certificate, if any.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}</code></dt>
+    <dd>Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl status</code></dt>
+    <dd>Shows whether SSL authentication is enabled or disabled.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl tls-status [-h]</code></dt>
+    <dd>Prints the status of TLS support.</dd>
+  </dlentry>
+
+</dl>
+
+{: id="tscli-sssd"}
+
 ### sssd
 
 ```
-tscli sssd {enable, disable, set-sudo-group, clear-sudo-group} ...
+tscli sssd {enable, disable, set-sudo-group, clear-sudo-group}
 ```
 
-This subcommand uses system security services daemon (SSSD), and has the following actions:
+This subcommand uses system security services daemon (SSSD), and has the following options:
 
-* `tscli sssd enable --user` *`USER`* `--domain` *`DOMAIN`*
+<dl>
 
-   Enables system Active Directory (AD) user access on a single node. You will be
+<dlentry>
+  <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
+  <dd>Enables system Active Directory (AD) user access on a single node. You will be
    prompted for password credentials. The user must have permission to join a
-   computer or VM to the domain.
+   computer or VM to the domain.</dd>
+ </dlentry>
 
-* `tscli sssd disable`
+ <dlentry>
+   <dt><code>tscli sssd disable</code></dt>
+    <dd></dd>
+  </dlentry>
 
-  Disables system AD based access on a local node. Running this command will also remove the AD group from sudoers list.
+  <dlentry>
+    <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
+    <dd>Allows <code>sudo</code> permissions for AD group.</dd>
+  </dlentry>
 
-* `tscli sssd set-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+  <dlentry>
+    <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
+    <dd>Clears any set AD sudo group.</dd>
+  </dlentry>
 
-   Allows `sudo` permissions for AD group.
-
-* `tscli sssd clear-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
-
-   Clears any set AD sudo group.
+</dl>
 
 For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
 
+{: id="tscli-storage"}
 ### storage
 
 ```
-tscli storage [-h] {gc,df} ...
+tscli storage [-h] {gc,df}
 ```
 
-This subcommand supports the following actions:
+This subcommand has the following options:
 
-* `tscli storage gc [-h] [--log_age` *`LOG_AGE`* `] [--force] [--localhost_only]`
+<dl>
 
-    Garbage collect unused storage. Before issuing this command, you must stop the cluster using `tscli
-    cluster stop`. After garbage collection has completed, you can restart
-    the cluster with `tscli cluster start`.  The command frees space in these directories:
+  <dlentry>
+    <dt><code>tscli storage gc [-h] [--log_age <em>LOG_AGE</em>] [--force] [--localhost_only]</code></dt>
+    <dd>
+    Garbage collect unused storage.
+    <p>Before issuing this command, you must stop the cluster using <code>=tscli
+    cluster stop</code>.</p>
+    <p>After garbage collection finishes, you can restart the cluster with <code>tscli cluster start</code>.</p>
 
-     * `/tmp`
-     * `/usr/local/scaligent/logs/`
-     * `/export/logs/orion`
-     * `/export/logs/oreo`
-     * `/export/logs/hadoop`
-     * `/export/logs/zookeeper`
-     * `cores`
+    <p>This command frees space in the following directories:</p>
 
-    Accepts these optional flags:
+    <pre>/tmp
+    /usr/local/scaligent/logs/
+    /export/logs/orion
+    /export/logs/oreo
+    /export/logs/hadoop
+    /export/logs/zookeeper
+    cores</pre>
 
-    * `--log_age` *`LOG_AGE`*
+    <p>The <code>storage</code> subcommand accepts these optional flags:</p>
 
-      Delete logs older than these many hours. Use a non-zero value ideally. A
-      zero value will cause all temporary files to be deleted, including say those
-      which are just temporarily closed while they are being passed from one
-      component to the next. (default: `4`)
+    <dl>
 
-    * `--force` Forces deletion of all logs and temporary files regardless of age. This must
-    only be run on a stopped cluster. (default: False)
+      <dlentry><dt><code>--log_age <em>LOG_AGE</em></code></dt>
+        <p>Deletes logs older than these many hours. Use a non-zero value, becuase zero deletes all temporary files, including the ones that are closed temporarily, while they are passed from one component to the next.</p>
+        <p>The default setting is <code>4</code>.</p>
+      </dlentry>
 
-    * `--localhost_only` If used, only the logs on the localhost will be removed. If not specified, the
-       command acts on the entire cluster.
+      <dlentry><dt><code>--force</code></dt>
+        <p>Forces deletion of all logs and temporary files regardless of age. This must
+        only be run on a stopped cluster.</p>
+        <p>The default setting is <code>False</code>.</p>
+      </dlentry>
 
-* `tscli storage df [--mode disk|hdfs]`
+      <dlentry><dt><code>--localhost_only</code></dt>
+        <p>If used, only the logs on the localhost will be removed. If not specified, the
+           command acts on the entire cluster.</p>
+      </dlentry>
+    </dl>
+    </dd>
+  </dlentry>
 
-   Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`.
+  <dlentry>
+    <dt><code>tscli storage df [--mode disk|hdfs]</code></dt>
+    <dd>Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command <code>df -h <em>directory</em></code>.</dd>
+  </dlentry>
 
+</dl>
 
+{: id="tscli-support"}
 ### support
 
 ```
 tscli support [-h]
-{bundle,restart-remote,rm-admin-email,rm-admin-phone,rm-feedback-email,set-admin-email,set-admin-phone,set-debug-ui-password,set-feedback-email,set-remote,show-admin-email,show-admin-phone,show-feedback-email,show-remote,start-remote,stop-remote} ...
+   {bundle, restart-remote, rm-admin-email, rm-admin-phone, rm-feedback-email,
+    set-admin-email, set-admin-phone, set-debug-ui-password, set-feedback-email,
+    set-remote, show-admin-email, show-admin-phone, show-feedback-email,
+    show-remote, start-remote, stop-remote}
 
 ```
+This subcommand has the following options:
 
-This subcommand supports the following actions:
+<dl>
+  <dlentry>
+    <dt><code>tscli support bundle [-h] [--include <em>INCLUDE</em>] [--exclude <em>EXCLUDE</em>] [--list_selectors] [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--out <em>OUT</em>] [--nodes <em>NODES</em>]</code></dt>
 
-* ` tscli support bundle [-h] [--include INCLUDE] [--exclude EXCLUDE] [--list_selectors] [--since SINCE] [--from FROM] [--to TO] [--out OUT] [--nodes NODES]`
+   <dd>
+      <dl>
 
-  - `--include` *`INCLUDE`* Comma separated list of selectors to include, each entry is
-    either a "selector" or a glob for matching files. To see the list of valid
-    selectors, run this command with `--list_selectors`. You may also specify: "`all`
-    to get all selectors and logs, and "basic" to get only the basic selectors.
-    Selectors may also be selectors meant for logs collect: all, orion, system, ts,
-    or the name of a service. Anything starting with / is assumed to be a glob
-    pattern and interpreted through find(1). Other entries are ignored. TIP: put single
-    quotes around the param value to prevent undesired glob expansion. Use "all" to
-    collect all selectors and all logs (default: all_but_logs)
+        <dlentry>
+          <dt><code>--include <em>INCLUDE</em></code></dt>
+          <dd>
+            <p>Comma-separated list of selectors to include. Each entry is
+      either a "selector" or a glob for matching files. To see the list of valid
+      selectors, run this command with <code>--list_selectors</code>. You may also specify <code>all</code> to get all selectors and logs, and <code>basic</code> to get only the basic selectors.</p>
+            <p>Selectors can be used for logs collection: <code>all</code>, <code>orion</code>, <code>system</code>, <code>ts</code>, or the name of a service.</p>
+            <p>Anything that starting with <code>/</code> (forward slash) is assumed to be a glob
+      pattern, and it is interpreted through <code>find(1)</code>. Other entries are ignored.</p>
+            <p><strong>TIP:</strong> Use single quotes around the param value to prevent undesired glob expansion. Use <code>all</code> to collect all selectors and all logs.</p>
+            <p>The default setting is <code>all_but_logs</code>.</p></dd></dlentry>
 
-  - `--exclude` *`EXCLUDE`* Comma separated list of selectors to exclude. Applies to the
-    list selected by `--include`. Params are interpreted just like in `--include`. Use
-    the special keyword "logs" to exclude logs collection all together. (default:
-    None)
+        <dlentry>
+          <dt><code>--exclude <em>EXCLUDE</em></code></dt>
+          <dd>
+            <p>Comma-separated list of selectors to exclude. Applies to the
+      list selected by <code>--include</code>. Params are interpreted in the same manner as in <code>--include</code>.</p>
+           <p>Use the special keyword <code>logs</code> to exclude logs collection altogether.</p>
+           <p>There is no default setting.</p></dd></dlentry>
 
-  - `--list_selectors` List the selectors available for `--include` and
-    `--exclude`, and then exit. (default: `False`)
+        <dlentry>
+          <dt><code>--list_selectors</code></dt>
+          <dd>
+            <p>List the selectors available for <code>--include</code> and <code>--exclude</code>, and then exit.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
 
-  - `--since` *`SINCE`* Grab logs from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None)
+        <dlentry>
+          <dt><code>--since <em>SINCE</em></code></dt>
+          <dd><p>Grabs logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+          <p>There is no default setting.</p></dd></dlentry>
 
-  - `--from` *`FROM`*  Timestamp where collection begins, must be of the form:
-    `yyyymmdd-HH:MM` (default: None)
+        <dlentry>
+          <dt><code>--from <em>FROM</em></code></dt>
+          <dd>
+            <p>Timestamp when collection begins. Must be of the form: <code>yyyymmdd-HH:MM</code>.</p>
+            <p>There is no default setting.</p></dd></dlentry>
 
-  - `--to` *`TO`* Timestamp where collection ends, must be of the form:
-    `yyyymmdd-HH:MM` (default: None)
+        <dlentry>
+          <dt><code>--to <em>TO</em></code></dt>
+          <dd>
+            <p>Timestamp when collection ends. Must be of the form: <code>yyyymmdd-HH:MM</code>.</p>
+            <p>There is no default setting.</p></dd></dlentry>
 
-  - `--out` *`OUT`* Tarball path for dumping the support bundle (default:
-`/tmp/support_bundle.tar.gz`)
+        <dlentry>
+          <dt><code>--out <em>OUT</em></code></dt>
+          <dd>
+            <p>Tarball path for dumping the support bundle.</p>
+            <p>The default setting is <code>/tmp/support_bundle.tar.gz</code>.</p></dd></dlentry>
 
-  - `--nodes` *`NODES`* Comma separated list of nodes from where to collect logs. Skip this to use all
-nodes. (default: None)
+        <dlentry>
+          <dt><code>--nodes <em>NODES</em></code></dt>
+          <dd>
+            <p>Comma separated list of nodes from where to collect logs. Skip this to use all
+        nodes.</p>
+            <p>There is no default setting.</p></dd></dlentry>
 
-* `tscli support restart-remote` Restarts remote support.
-* `tscli support rm-admin-email` Removes the email address for contacting the customer administrator. Replaces it with the default ThoughtSpot Support email address.
-* `tscli support rm-feedback-email` Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address.
-* `tscli support rm-admin-phone` Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number.
-* `tscli support rm-feedback-email` Removes the email for sending feedback out of the system. If you would like to set a blank email address, issue the command `tscli support set-feedback-email ' '`.
-* `tscli support set-admin-email` *`email`* Sets the email address for contacting the customer administrator. If you would like to display a blank email address, issue the command `tscli support set-admin-email ' '`.
-* `tscli support set-feedback-email` *`email`* Sets the email address for sending feedback. If you would like to display a blank email address, issue the command `tscli support set-feedback-email ' '`.
-* `tscli support set-admin-phone` *`phone_number`* Sets the phone number for contacting the customer administrator. Specify a phone number using any value (e.g. `+1 800-508-7008 Ext. 1`). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone`.
-* `tscli support set-remote [-h] [--addr` *`ADDR`*`] [--user` *`USER`*`]` Configures the cluster for remote support through SSH tunneling, where *`ADDR`* is the address of support, e.g. t`unnel.thoughtspot.com`, and *`USER`* is the support username.
-* `tscli support show-admin-email` Shows the email address for customer administrator, if set.
-* `tscli support show-feedback-email` Shows the email address for product feedback, if set.
-* `tscli support show-admin-phone` Shows the phone number for customer administrator, if set.
-* `tscli support show-remote` Shows the status and configuration of remote support.
-* `tscli support start-remote` Starts remote support.
-* `tscli support stop-remote` Stops remote support.
+      </dl></dd></dlentry>
 
+<dlentry>
+  <dt><code>tscli support restart-remote</code></dt>
+  <dd>Restarts remote support.</dd>
+</dlentry>
 
+<dlentry>
+  <dt><code>tscli support rm-admin-email</code></dt>
+  <dd>Removes the email address for contacting the customer administrator. Replaces it with the default ThoughtSpot Support email address.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support rm-feedback-email</code></dt>
+  <dd>Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support rm-admin-phone</code></dt>
+  <dd>Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support rm-feedback-email</code></dt>
+  <dd>Removes the email for sending feedback out of the system. To set a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support set-admin-email <em>email</em></code></dt>
+  <dd>Sets the email address for contacting the customer administrator. To display a blank email address, issue the command <code>tscli support set-admin-email</code>.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support set-feedback-email <em>email</em></code></dt>
+  <dd>Sets the email address for sending feedback. To display a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support set-admin-phone <em>phone_number</em></code></dt>
+  <dd>Sets the phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>. To display a blank phone number, issue the command <code>tscli support set-admin-phone</code>.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support set-remote [-h] [--addr <em>ADDR</em>] [--user <em>USER</em>]</code></dt>
+  <dd>Configures the cluster for remote support through SSH tunneling, where <em><code>ADDR</code></em> is the address of support, such as <code>tunnel.thoughtspot.com</code>, and <em><code>USER</code></em> is the support username.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support show-admin-email</code></dt>
+  <dd>Shows the email address for customer administrator, if set</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support show-feedback-email</code></dt>
+  <dd>Shows the email address for product feedback, if set</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support show-admin-phone</code></dt>
+  <dd>Shows the phone number for customer administrator, if set</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support show-remote</code></dt>
+  <dd>Shows the status and configuration of remote support</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support start-remote</code></dt>
+  <dd>Starts remote support</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support stop-remote</code></dt>
+  <dd>Stops remote support</dd>
+</dlentry>
+</dl>
+
+{: id="tscli-tokenauthentication"}
 ### tokenauthentication
 
 ```
 tscli cli tokenauthentication [-h] {disable,enable}
 ```
 
-* `tscli cli tokenauthentication enable` Generates a token.
-* `tscli cli tokenauthentication disable` Purges token login configuration.
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli cli tokenauthentication enable</code></dt>
+    <dd>Generates a token</dd>
+  </dlentry>
+<dlentry>
+  <dt><code>tscli cli tokenauthentication disable</code></dt>
+  <dd>Purges token login configuration</dd></dlentry>
+</dl>
