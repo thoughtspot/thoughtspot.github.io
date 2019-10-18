@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can refresh a view manually, so that its data matches the data in its underlying tables."> -->
+<!-- <meta name="description" content="You can refresh a view manually, so that its data matches the data in the underlying tables."> -->
 <meta name="keywords" content=",  materialize, views, refresh, stale">
 <title>Refresh a materialized view | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
@@ -1748,6 +1748,10 @@ var ss360Config = {
                    
                 
                   
+                      
+                          <li class="active"><a href="/5.0/admin/loading/refresh-view.html">Refresh a view</a></li>
+                      
+                   
                 
                   
                       
@@ -3120,7 +3124,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can refresh a view manually, so that its data matches the data in its underlying tables.</div>
+    <div class="summary">You can refresh a view manually, so that its data matches the data in the underlying tables.</div>
    
 
     
@@ -3162,32 +3166,34 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Materialized views can get out of synch with their underlying data. If the status of a view is <strong>Stale</strong>, you’ll need to refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.</p>
+  <p>Materialized views can get out of sync with their underlying data. If the status of a view is <strong>Stale</strong>, you must refresh the view manually to sync it with the table.</p>
 
-<p>To refresh a view manually:</p>
+<p>Note that until it is refreshed, the view remains searchable.</p>
+
+<p>To refresh a view manually, follow these steps:</p>
 
 <ol>
   <li>
     <p>To find your view, click <strong>Data</strong> in the top menu, and choose <strong>Views</strong>.</p>
   </li>
   <li>
-    <p>Click on the name of your view.</p>
-  </li>
-  <li>
     <p>Click <strong>Schema</strong>.</p>
   </li>
   <li>
-    <p>Under <strong>Materialization</strong>, choose <strong>Dematerialize</strong>.</p>
+    <p>In the <strong>Materialization</strong> panel, notice that the <strong>Status</strong> is <em>Stale</em>.</p>
+  </li>
+  <li>
+    <p>Next to the <em>Stale</em> status, click <strong>Refresh Data</strong>.</p>
 
-    <p><img src="/5.0/images/materialization-dialog-on-weekly.png" alt="" title="Dematerialize a View" /></p>
+    <p><img src="/5.0/images/refresh-materialized-views.png" alt="Refresh a stale view" title="Refresh a view" /></p>
   </li>
 </ol>
 
 <h2 id="related-information">Related Information</h2>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> -   [Understand views](/5.0/complex-search/about-query-on-query.html)  
- -   [About materialized views](/5.0/admin/loading/materialized-views.html)
-</code></pre></div></div>
+<ul>
+  <li><a href="/5.0/complex-search/about-query-on-query.html">Understand views</a></li>
+  <li><a href="/5.0/admin/loading/materialized-views.html">About materialized views</a></li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
@@ -3213,9 +3219,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 19, 2019 <br />
+        Generated: Oct 18, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
+         <!-- <span>Page last updated:</span> 09/20/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
