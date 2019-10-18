@@ -68,7 +68,7 @@ Locally attached storage provides the best performance.
 
 SAN can be used, but must comply with the following requirements:
 * 136 MBps minimum random read bandwidth
-* 240 random IOPS (~4s seek latency)
+* 240 random IOPS (~4ms seek latency)
 
 NAS/NFS is not supported since its latency is so high that it tends to be unreliable.
 
