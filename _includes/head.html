@@ -34,23 +34,24 @@
 <script src="{{ "js/customscripts.js" | absolute_url }}"></script>
 
 <!-- begin feedback form code -->
-<script type="text/javascript">
-$( document ).ready(function() {
-
-   $('#more').click(function(){
-       $('#inneriframe').animate({height:'200px'}, 500);
-       $('#more').text('Cancel');
-       $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-        return false;
-    });
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+  });
 });
 </script>
-<style type = "text/css"/>
-    #inneriframe {
-         height: 0px;
-		 width: 700px;
-        overflow: hidden;
-    }
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+}
+
+#panel {
+  display: none;  
+}
 </style>
 <!-- end feedback form code -->
 
