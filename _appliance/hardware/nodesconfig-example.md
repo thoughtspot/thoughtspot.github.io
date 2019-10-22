@@ -1,9 +1,9 @@
 ---
-title: [The `nodes.config` file]
-last_updated: [10/18/2019]
-summary: "Learn how to use the `get.config` command and the `nodes.config` file to install  your super micro computer."
+title: [The nodes.config file]
+last_updated: [10/22/2019]
+summary: "Learn how to use the get.config command and the nodes.config file to install  your super micro computer."
 sidebar: mydoc_sidebar
-permalink: /appliance/super-micro-computer/nodes-config.html
+permalink: /:collection/:path.html
 ---
 {: id="using-nodes.config"}
 ## Using the `nodes.config` file
@@ -18,8 +18,9 @@ As you install the Super Micro Computer appliance, you must configure the nodes.
 
 {: id="node-autodiscovery"}
 
- ### Autodiscovery of one node
-```$ tscli cluster get-config |& tee nodes.config  
+### Autodiscovery of one node
+```
+$ tscli cluster get-config |& tee nodes.config  
 {  
  "ClusterId": ""  
  "ClusterName": ""  
@@ -50,7 +51,7 @@ As you install the Super Micro Computer appliance, you must configure the nodes.
 
 ### Autodiscovery of one node example
 ```
- $ vim nodes.config    
+$ vim nodes.config    
 {  
 "ClusterId": "190905X0001",  
   "ClusterName": "TS-Company",  

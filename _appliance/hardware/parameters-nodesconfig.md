@@ -1,9 +1,9 @@
 ---
-title: [Parameters of the `nodes.config` file]
+title: [Parameters of the nodes.config file]
 last_updated: [10/22/2019]
-summary: "Learn the parameters of the `nodes.config` file to install  your super micro computer."
+summary: "Learn the parameters of the nodes.config file to install  your super micro computer."
 sidebar: mydoc_sidebar
-permalink: /appliance/super-micro-computer/parameters-nodes-config.html
+permalink: /:collection/:path.html
 ---
 
 {: id="using-nodes.config"}
@@ -11,10 +11,10 @@ permalink: /appliance/super-micro-computer/parameters-nodes-config.html
 As you install the Super Micro Computer appliance, you must configure the nodes.
 
 1. Run `tscli cluster get-config |& tee nodes.config` in your terminal.
-2. Add network information for the nodes in the `nodes.config` file, as demonstrated in [the `nodes.config` file]({{ site.baseurl }}/appliance/super-micro-computer/nodes-config.html) example. Fill in the areas specified in [Parameters of `nodes.config`](parameters-nodes.config) with your specific network information.
+2. Add network information for the nodes in the `nodes.config` file, as demonstrated in [the `nodes.config` file]({{ site.baseurl }}/appliance/super-micro-computer/nodes-config.html) example. Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/super-micro-computer/parameters-nodes-config.html#parameters-nodes.config) with your specific network information.
 3. If you have  additional nodes, complete each node within the nodes.config file in [the `nodes.config` file]({{ site.baseurl }}/appliance/super-micro-computer/nodes-config.html) example.
 
-**Note:** Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`](parameters-nodes.config). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+**Note:** Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/super-micro-computer/parameters-nodes-config.html#parameters-nodes.config). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 See [Parameters of `nodes.config`](parameters-nodes.config) to understand the parameters in the file.
 
