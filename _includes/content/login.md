@@ -9,11 +9,7 @@ Before accessing ThoughtSpot, you need the following:
 
 ThoughtSpot supports the following Web browsers:
 
-|Browser          |Version     |Operating System                   |
-|-----------------|------------|-----------------------------------|
-|Google Chrome    |20 and above| Windows 7 or greater, Linux, MacOS|
-|Mozilla Firefox  |14 and above| Windows 7 or greater, Linux, MacOS|
-|Internet Explorer|11          | Windows 7 or greater |
+{% include content/browser-support.md %}
 
 {% include tip.html content="We support, but do not recommend, the use of the Internet Explorer.<br>
     Depending on your environment, you can experience performance or UI issues." %}
