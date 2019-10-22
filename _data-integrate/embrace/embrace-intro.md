@@ -1,8 +1,8 @@
 ---
 title: [Embrace overview]
-
-last_updated: tbd
+last_updated: 10/21/2019
 toc: true
+summary: "Using Embrace, you can perform live query on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
