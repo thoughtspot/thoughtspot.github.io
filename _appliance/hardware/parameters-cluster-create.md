@@ -1,23 +1,23 @@
 ---
-title: [Parameters of the `cluster create` command]
-last_updated: [10/22/2019]
-summary: "Learn the parameters of the `cluster create` command."
+title: [Parameters of the cluster create command]
+last_updated: [10/23/2019]
+summary: "Learn the parameters of the cluster create command."
 sidebar: mydoc_sidebar
-permalink: /appliance/super-micro-computer/parameters-cluster-create.html
+permalink: /:collection/:path.html
 ---
 
 {: id="using-cluster-create"}
-## Using the `cluster create` command
+## Using the cluster create command
 To install the super micro computer, you must install the cluster.
 
 1. **Copy the release tarball** Run `scp 0.0.tar.gz admin@hostname:/home/admin/`, filling in your specific information for the release number and the hostname. For example, `scp 6.0 admin@ThoughtSpot:/home/admin`.
 1. **Run the `cluster create` command** Run `tscli cluster create` in your terminal.
-2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer](parameters-cluster-create) below.
+2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 
-Refer to [Parameters of ThoughtSpot Installer](parameters-cluster-create) for further information.
-Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance-super-micro-computer/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
+Refer to [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) for further information.
+Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) to see the expected output of the install command, `tscli cluster create`.
 
- **Note:** Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer](parameters-cluster-create). Deleting colons, commas, or other parts of the code could cause setup to fail.
+ **Note:** Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). Deleting colons, commas, or other parts of the code could cause setup to fail.
 
 {: id="parameters-cluster-create"}
 
