@@ -1,7 +1,7 @@
 ---
 title: [tscli command reference]
 last_updated: 10/24/2019
-summary: "The ThoughtSpot command line interface, or `tscli`, is an administration interface for the cluster. Use `tscli` to take snapshots (backups) of data, apply
+summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
 sidebar: mydoc_sidebar
@@ -23,14 +23,12 @@ tscli [-h]
       [--noautoconfig]
       [--autoconfig]
       [--yes]
-      [--cluster <<em>cluster</em>>]
-      [--zoo <<em>zookeeper</em>>]
-      [--username <<em>username</em>>]
-      [--identity_file <<em>identity_file</em>>]
-      {access, alert, ansible, backup, backup-policy, callhome, cassandra,
+      [--cluster ]
+      [--zoo ]
+      {access, alert, ansible, backup, backup-policy, calendar, callhome, cassandra,
        cluster, command, dr-mirror, etl, event, feature, fileserver,
        firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
-       node, patch, rpackage, saml, scheduled-pinboards, smtp, snapshot,
+       node, notification, onboarding, patch, rpackage, saml, scheduled-pinboards, set, smtp, snapshot,
        snapshot-policy, spot, sssd, ssl, storage, support,
        tokenauthentication}
 </pre>
@@ -48,7 +46,7 @@ create` or `tscli backup delete`.
 
 Each subcommand may have several options.
 
-To view help for a subcommand, type `-h` for the subcommand option:
+To view help for a subcommand, type `-h` after the subcommand option:
 
 ```
 tscli [subcommand] -h
@@ -85,13 +83,18 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
+    <dt><code>tscli alert count</code></dt>
+    <dd>Lists counts of generated alerts by type.</dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli alert info</code></dt>
-    <dd>Lists all alerts.</dd>
+    <dd>Lists all alerts. Add <code>silenced</code> to list only silenced alerts, <code>active</code> to list only active alerts, or <code>detailed</code> to get detailed alert information.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli alert list</code></dt>
-    <dd>Lists the generated alerts.</dd>
+    <dd>Lists the generated alerts. Add <code>limit</code> to specify the number of recent alerts to display or <code>since</code> to list all alerts raised since a specified time period, in the form of a human readable duration string, such as 4h (4 hours) or 4m (4 minutes).</dd>
   </dlentry>
 
   <dlentry>
@@ -105,6 +108,11 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
+    <dt><code>tscli alert refresh</code></dt>
+    <dd>Refreshes alert metadata on the cluster.</dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli alert silence --name <em>alert_name</em></code></dt>
     <dd>Silences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
   </dlentry>
@@ -115,7 +123,7 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert unsilence-name <em>alert_name</em></code></dt>
+    <dt><code>tscli alert unsilence --name <em>alert_name</em></code></dt>
     <dd>Unsilences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>.</dd>
    </dlentry>
 </dl>   
@@ -123,11 +131,25 @@ This subcommand has the following options:
 {: id="tscli-ansible"}
 ### ansible
 
-   ```
-   tscli ansible [-h] {checkout,commit} [--local]
-   ```
+```
+tscli ansible [-h] {checkout,commit} [--local]
+```
 
-   Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.
+This subcommand has the following options:
+
+   <dl>
+     <dlentry>
+       <dt><code>tscli ansible checkout</code></dt>
+       <dd>Checks out Ansible playbooks. Add <code>host</code> to specify the target host that is running the ts_ansible service.</dd>
+     </dlentry>
+
+     <dlentry>
+       <dt><code>tscli ansible commit</code></dt>
+       <dd>Commits Ansible playbooks. Add <code>host</code> to specify the target host that is running the ts_ansible service.</dd>
+     </dlentry>
+</dl>
+
+   Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.  
 
    For details, see these articles:
 
@@ -141,10 +163,14 @@ This subcommand has the following options:
 tscli backup [-h] {create,delete,ls,restore}
 ```
 
-This subcommand has the following options:
+  This subcommand has the following options:
+
 <dl>
   <dlentry>
     <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] name out</code></dt>
+  </dlentry>
+
+  <p><dt><code>tscli backup create</code></dt></p>
     <dd>
       <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
 
@@ -172,13 +198,17 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--remote</code></dt>
           <dd>
-            <p>Take backup through orion master.</p>
-            <p>The default setting is <code>True</code>.</p></dd>
+            <p>Takes backup through orion master.</p>
+            <p>The default setting is <code>False</code>.</p></dd>
         </dlentry>
+        <dlentry>
+          <dt><code>--no-orion-master</code></dt>
+          <dd>
+            <p>Whether orion master is available during backup.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
         </dl>
     </dd>
 
-    </dlentry>
 
   <dlentry>
     <dt><code>tscli backup delete <em>name</em></code></dt>
@@ -187,13 +217,33 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli backup ls</code></dt>
-    <dd>List all backups taken by the system.</dd>
+    <dd>Lists all backups taken by the system.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli backup restore</code></dt>
-    <dd>Restore cluster using backup.</dd>
-  </dlentry>
+      <dd>Restores cluster using backup, with these parameters:</dd></dlentry>
+
+      <dl>
+        <dlentry>
+         <dt><code>--disable_rotate_keys</code></dt>
+         <dd>
+         <p>Disables cluster rotate key configurations.</p>
+         <p>The default is <code>False</code>.</p></dd>
+        </dlentry>
+      <dl>
+        <dlentry>
+         <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
+          <dd>
+          <p>Determines whether to enable Cloud Storage setup.</p></dd>
+          </dlentry>
+      <dl>
+        <dlentry>
+         <dt><code>--heterogeneous</code></dt>
+         <dd>
+         <p>Should be set for hetereogenous clusters.</p>
+         <p>The default is <code>False</code>.</p></dd>
+         </dlentry>    
 </dl>
 
 {: id="tscli-backup-policy"}
