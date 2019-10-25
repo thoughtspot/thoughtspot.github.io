@@ -29,7 +29,7 @@ tscli [-h]
        cluster, command, dr-mirror, etl, event, feature, fileserver,
        firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
        node, notification, onboarding, patch, rpackage, saml, scheduled-pinboards, set, smtp, snapshot,
-       snapshot-policy, spot, sssd, ssl, storage, support,
+       snapshot-policy, socialproof spot, sssd, ssl, storage, support,
        tokenauthentication}
 </pre>
 
@@ -68,7 +68,34 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli access list</code></dt>
-    <dd>Lists objects by last access time.</dd>
+    <dd>Lists objects by last access time, with the following parameters.</dd>
+    <dl>
+  <dlentry>
+    	<dt><code>tscli access type TYPE</code></dt>
+    	<dd>Type of object, either answer or pinboard.</dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>tscli access limit	LIMIT</code></dt>
+    <dd><p>The number of objects to fetch.</p>
+      <p>The default is 30.</p> </dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>tscli access offset OFFSET</code></dt>
+    <dd><p>Offset to use to skip objects for batched results.</p>
+    <p>
+      The default is 0.
+      </p></dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>tscli access ascending</code></dt>
+    <dd><p>
+      Sorts the answers by access time ascending.
+      </p>
+    <p>
+      The default is true.
+      </p></dd>
+  </dlentry>
+</dl>
   </dlentry>
 </dl>
 
