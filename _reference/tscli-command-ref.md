@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 10/24/2019
+last_updated: 10/25/2019
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
@@ -313,35 +313,206 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli backup-policy create</code></dt>
-    <dd>Prompts an editor for you to edit the parameters of the backup policy.</dd></dlentry>
+    <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--config CONFIG</code><dt>
+    <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy delete <em>name</em></code></dt>
-    <dd>Deletes the backup policy with <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy delete name</code></dt>
+    <dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy disable <em>name</em></code></dt>
-    <dd>Disables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy disable name</code></dt>
+    <dd>Disables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy enable <em>name</em></code></dt>
-    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy enable name</code></dt>
+    <dd>Enables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli backup-policy ls</code></dt>
-    <dd>List backup policies.</dd></dlentry>
+    <dd>Lists backup policies.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy show <em>name</em></code></dt>
-    <dd>Show the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy show name</code></dt>
+    <dd>Shows the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy status <em>name</em></code></dt>
-    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy status name</code></dt>
+    <dd>Shows the status of the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy update <em>name</em></code></dt>
-    <dd>Prompts an editor for you to edit the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy update name</code></dt>
+    <dd>Prompts an editor for you to edit the backup policy <code>name</code>.</dd></dlentry>
+</dl>
+
+{: id="tscli-calendar"}
+### calendar
+```
+tscli calendar [-h] {create,delete,disable,enable,generate,get,list,update}
+```
+
+This subcommand has the following options:
+
+<dl>
+<dlentry>
+<dt><code>tscli calendar create</code></dt>
+<dd>Creates a new custom calendar, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--file_path FILE_PATH</code></dt>
+<dd><p>Path to the CSV file holding custom calendar data.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Custom calendar name.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--separator SEPARATOR</code></dt>
+<dd><p>The separator used in the CSV file.</p>
+<p>The default is <code>,</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--no-header-row</code></dt>
+<dd><p>Flag to indicate that the CSV file has no header row.</p>
+<p>The default is <code>True</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar delete</code></dt>
+<dd>Deletes a custom calendar table from the system, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Deletes the custom calendar NAME.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar disable</code></dt>
+<dd>Disables custom calendar on the cluster.</dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar enable</code></dt>
+<dd>Enables custom calendar on the cluster.</dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar generate</code></dt>
+<dd>Creates a custom calendar table based on given specifications, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>A name to create the custom calendar CSV file with.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--start_date START_DATE</code></dt>
+<dd><p>The start date to begin the custom calendar with in the form mm/dd/yyyy.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--end_date END_DATE</code></dt>
+<dd><p>The end date to end the custom calendar with in the form mm/dd/yyyy.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--calendar_type {MONTH_OFFSET,4-4-5,4-5-4,5-4-4}</code></dt>
+<dd><p>The type of custom calendar to create.</p>
+<p>The default is <code>MONTH_OFFSET</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--month_offset {January,February,March,April,May,June,July,August,September,October,November,December}</code></dt>
+<dd><p>The month offset to start the year from, if the calendar is the MONTH_OFFSET type.</p>
+<p>The default is <code>January</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--start_day_of_week</code></dt>
+<dd><p>The day the week starts on.</p>
+<p>The default is <code>Sunday</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--quarter_name_prefix</code></dt>
+<dd>The string to prefix a quarter name with.
+</dlentry>
+<dlentry>
+<dt><code>--year_name_prefix YEAR_NAME_PREFIX</code></dt>
+<dd>The string to prefix a year name with.
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar get</code></dt>
+<dd>Procures data of a custom calendar as a CSV file, with the following parameters:
+<dl><dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Procures data of custom calendar <code>NAME</code></p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>Admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd></dlentry>
+<dlentry>
+<dt><code>tscli calendar list</code></dt>
+<dd>Procures a list of custom calendars present in the cluster, with the following parameter:
+<dl>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>Admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd></dlentry>
+<dlentry>
+<dt><code>tscli calendar update</code></dt>
+<dd>Updates a custom calendar table in the system, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--file_path FILE_PATH</code></dt>
+<dd><p>Path to the CSV file holding custom calendar data.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Custom calendar name.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--separator SEPARATOR</code></dt>
+<dd><p>The separator used in the CSV file.</p>
+<p>The default is <code>,</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--no-header-row</code></dt>
+<dd><p>Flag to indicate that the CSV file has no header row.</p>
+<p>The default is <code>True</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
 </dl>
 
 {: id="tscli-callhome"}
