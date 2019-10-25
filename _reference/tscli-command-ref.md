@@ -68,34 +68,35 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli access list</code></dt>
-    <dd>Lists objects by last access time, with the following parameters.</dd>
+    <dd>Lists objects by last access time, with the following parameters:
     <dl>
   <dlentry>
-    	<dt><code>tscli access type TYPE</code></dt>
+    	<dt><code>--type TYPE</code></dt>
     	<dd>Type of object, either answer or pinboard.</dd>
   </dlentry>
   <dlentry>
-  <dt><code>tscli access limit	LIMIT</code></dt>
+  <dt><code>--limit	LIMIT</code></dt>
     <dd><p>The number of objects to fetch.</p>
       <p>The default is 30.</p> </dd>
   </dlentry>
   <dlentry>
-  <dt><code>tscli access offset OFFSET</code></dt>
+  <dt><code>--offset OFFSET</code></dt>
     <dd><p>Offset to use to skip objects for batched results.</p>
     <p>
       The default is 0.
       </p></dd>
   </dlentry>
   <dlentry>
-  <dt><code>tscli access ascending</code></dt>
+  <dt><code>--ascending</code></dt>
     <dd><p>
       Sorts the answers by access time ascending.
       </p>
     <p>
-      The default is true.
+      The default is <code>True</code>.
       </p></dd>
   </dlentry>
 </dl>
+</dd>
   </dlentry>
 </dl>
 
@@ -121,7 +122,18 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli alert list</code></dt>
-    <dd>Lists the generated alerts. Add <code>limit</code> to specify the number of recent alerts to display or <code>since</code> to list all alerts raised since a specified time period, in the form of a human readable duration string, such as 4h (4 hours) or 4m (4 minutes).</dd>
+    <dd>Lists the generated alerts, with these parameters:
+    <dl>
+    <dlentry>
+    <dt><code>--limit LIMIT</code></dt>
+    <dd>Specifies the number of recent alerts to display.</dd>
+    </dlentry>
+    <dlentry>
+    <dt><code>--since SINCE</code></dt>
+    <dd>Lists all alerts raised since a specified time period, in the form of a human readable duration string, such as 4h (4 hours) or 4m (4 minutes).</dd>
+    </dlentry>
+    </dl>
+    </dd>
   </dlentry>
 
   <dlentry>
@@ -140,8 +152,8 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert silence --name <em>alert_name</em></code></dt>
-    <dd>Silences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
+    <dt><code>tscli alert silence --name NAME</code></dt>
+    <dd>Silences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
   </dlentry>
 
   <dlentry>
@@ -150,8 +162,8 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert unsilence --name <em>alert_name</em></code></dt>
-    <dd>Unsilences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>.</dd>
+    <dt><code>tscli alert unsilence --name  NAME</code></dt>
+    <dd>Unsilences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>.</dd>
    </dlentry>
 </dl>   
 
@@ -166,13 +178,13 @@ This subcommand has the following options:
 
    <dl>
      <dlentry>
-       <dt><code>tscli ansible checkout</code></dt>
-       <dd>Checks out Ansible playbooks. Add <code>host</code> to specify the target host that is running the ts_ansible service.</dd>
+       <dt><code>tscli ansible checkout --host HOST</code></dt>
+       <dd>Checks out Ansible playbook with the target <code>HOST</code> that is running the ts_ansible service.</dd>
      </dlentry>
 
      <dlentry>
-       <dt><code>tscli ansible commit</code></dt>
-       <dd>Commits Ansible playbooks. Add <code>host</code> to specify the target host that is running the ts_ansible service.</dd>
+       <dt><code>tscli ansible commit --host HOST</code></dt>
+       <dd>Commits Ansible playbooks with the target <code>HOST </code> that is running the ts_ansible service.</dd>
      </dlentry>
 </dl>
 
@@ -192,86 +204,100 @@ tscli backup [-h] {create,delete,ls,restore}
 
   This subcommand has the following options:
 
-<dl>
-  <dlentry>
-    <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] name out</code></dt>
-  </dlentry>
+  <dl>
+    <dlentry>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] [--no-orion-master]</code></dt>
+      <dd>
+        <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
 
-  <p><dt><code>tscli backup create</code></dt></p>
-    <dd>
-      <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
-
-      <dl>
-        <dlentry>
-         <dt><code>--mode {full,light,dataless}</code></dt>
-         <dd>Mode of backups.</dd></dlentry>
-        <dlentry>
-          <dt><code>--type {full,incremental}</code></dt>
-          <dd>
-            <p>Type of backup.</p>
-            <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
-            <p>The default setting is <code>full</code>.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--base <em>BASE</em></code></dt>
-          <dd>
-            <p>Based snapshot name for incremental backup.</p>
-            <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
-            <p>There is no default setting.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--storage_type {local,nas}</code></dt>
-          <dd>
-            <p>Storage type of output directory.</p>
-            <p>The default setting is <code>local</code>.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--remote</code></dt>
-          <dd>
-            <p>Takes backup through orion master.</p>
-            <p>The default setting is <code>False</code>.</p></dd>
-        </dlentry>
-        <dlentry>
-          <dt><code>--no-orion-master</code></dt>
-          <dd>
-            <p>Whether orion master is available during backup.</p>
-            <p>The default setting is <code>False</code>.</p></dd></dlentry>
-        </dl>
-    </dd>
-
-
-  <dlentry>
-    <dt><code>tscli backup delete <em>name</em></code></dt>
-    <dd>Deletes the named backup.</dd>
-  </dlentry>
-
-  <dlentry>
-    <dt><code>tscli backup ls</code></dt>
-    <dd>Lists all backups taken by the system.</dd>
-  </dlentry>
-
-  <dlentry>
-    <dt><code>tscli backup restore</code></dt>
-      <dd>Restores cluster using backup, with these parameters:</dd></dlentry>
-
-      <dl>
-        <dlentry>
-         <dt><code>--disable_rotate_keys</code></dt>
-         <dd>
-         <p>Disables cluster rotate key configurations.</p>
-         <p>The default is <code>False</code>.</p></dd>
-        </dlentry>
-      <dl>
-        <dlentry>
-         <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-          <dd>
-          <p>Determines whether to enable Cloud Storage setup.</p></dd>
+        <dl>
+          <dlentry>
+           <dt><code>--mode {full,light,dataless}</code></dt>
+            <dd><p>Mode of backups.</p>
+            <p>
+              The default is <code>full</code>.
+              </p></dd></dlentry>
+          <dlentry>
+            <dt><code>--type {full,incremental}</code></dt>
+            <dd>
+              <p>Type of backup.</p>
+              <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
+              <p>The default setting is <code>full</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--base BASE</code></dt>
+            <dd>
+              <p>Based snapshot name for incremental backup.</p>
+              <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
+              <p>There is no default setting.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--storage_type {local,nas}</code></dt>
+            <dd>
+              <p>Storage type of output directory.</p>
+              <p>The default setting is <code>local</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--remote</code></dt>
+            <dd>
+              <p>Takes backup through orion master.</p>
+              <p>The default setting is <code>True</code>.</p></dd>
+            <dlentry>
+            <dt><code>--no-orion-master</code></dt>
+             <dd> <p>
+                Determines whether orion master is available during backup.
+              </p>
+               <p>
+                 The default is <code>False</code>.
+               </p></dd>
+            </dlentry>
           </dlentry>
+          </dl>
+      </dd>
+
+      </dlentry>
+
+    <dlentry>
+      <dt><code>tscli backup delete <em>name</em></code></dt>
+      <dd>Deletes the named backup.</dd>
+    </dlentry>
+
+    <dlentry>
+      <dt><code>tscli backup ls</code></dt>
+      <dd>Lists all backups taken by the system.</dd>
+    </dlentry>
+
+    <dlentry>
+      <dt><code>tscli backup restore</code></dt>
+      <dd>Restores cluster using backup, with the following parameters:
       <dl>
         <dlentry>
-         <dt><code>--heterogeneous</code></dt>
-         <dd>
-         <p>Should be set for hetereogenous clusters.</p>
-         <p>The default is <code>False</code>.</p></dd>
-         </dlentry>    
-</dl>
+        <dt><code>--release RELEASE</code></dt>
+          <dd>Restore the cluster on a specific release number.</dd>
+        </dlentry>
+        <dlentry>
+        <dt><code>--disable_rotate_keys</code></dt>
+          <dd><p>
+            Disables cluster rotate key configurations.
+            </p>
+          <p>
+            The default is <code>False</code>.
+            </p></dd>
+        </dlentry>
+        <dlentry>
+        <dt><code>--enable_cloud_storage</code></dt>
+          <dd>Determines whether to enable Cloud Storage setup.</dd>
+        </dlentry>
+        <dlentry>
+        <dt>--heterogeneous</dt>
+          <dd><p>
+            Should be set for heterogeneous clusters.
+            </p>
+          <p>
+            The default is <code>False</code>.
+            </p></dd>
+        </dlentry>
+        </dl>
+      </dd>
+    </dlentry>
+  </dl>
 
 {: id="tscli-backup-policy"}
 ### backup-policy
