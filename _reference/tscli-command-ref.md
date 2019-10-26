@@ -316,7 +316,7 @@ This subcommand has the following options:
     <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameter:
     <dl>
     <dlentry>
-    <dt><code>--config CONFIG</code><dt>
+    <dt><code>--config CONFIG</code></dt>
     <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
     </dd></dlentry>
 
@@ -448,11 +448,12 @@ This subcommand has the following options:
 </dlentry>
 <dlentry>
 <dt><code>--quarter_name_prefix</code></dt>
-<dd>The string to prefix a quarter name with.
+<dd>The string to prefix a quarter name with.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--year_name_prefix YEAR_NAME_PREFIX</code></dt>
-<dd>The string to prefix a year name with.
+<dd>The string to prefix a year name with.</dd>
+</dlentry>
 <dlentry>
 <dt><code>--username USERNAME</code></dt>
 <dd><p>The admin username for ThoughtSpot login.</p>
@@ -530,29 +531,29 @@ This subcommand has the following options:
     <dd>Turns off the periodic call home feature.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome enable --customer_name <em>customer_name</em></code></dt>
+    <dt><code>tscli callhome enable --customer_name CUSTOMER_NAME</code></dt>
     <dd>
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
-      <p>The parameter <code>customer_name</code> takes the form  <code>Shared/<em>customer_name</em>/stats</code>.</p></dd></dlentry>
+      <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+      <p>The default is <code>None</code>.</p></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome generate-bundle  --d <em>directory</em> --since <em>DAYS</em></code></dt>
-    <dd>
-      <p>These are the parameters:</p>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
       <dl>
         <dlentry>
           <dt><code>--d D</code></dt>
           <dd><p>Destination folder for the tar file.</p>
             <p>There is no default setting.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--since <em>DAYS</em></code></dt>
+          <dt><code>--since SINCE</code></dt>
           <dd>
-            <p>Grab <code>callhome</code> data from this time window in the past.</p>
-            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1day).</p>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
-      writes it to the specified directory, where  <code>DAYS</code> is how many days back the file must start.</p>
-            <p>The default setting is <code>7</code> days.</p></dd>
+      writes it to the specified directory, where  <code>SINCE</code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
             </dlentry>
             </dl>
             </dd>
@@ -573,21 +574,33 @@ This subcommand has the following options:
 <dl>
 <dlentry>
   <dt><code>tscli cassandra backup</code></dt>
-  <dd>Take a backup of cassandra.</dd></dlentry>
+  <dd>Takes a backup of cassandra, with the following parameters:
+  <dl>
+  <dlentry>
+  <dt><code>--keyspaces KEYSPACES</code></dt>
+  <dd><p>Comma separated list of keyspaces to take a backup of.</p>
+  <p>The default is <code>None</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>backup_dir BACKUP_DIR</code></dt>
+  <dd><p>The path to the backup directory to write the backup.</p>
+  <p>The default is <code>None</code>.</p></dd>
+  </dlentry></dl></dd></dlentry>
 <dlentry>
     <dt><code>tscli cassandra restore</code></dt>
-    <dd>Restore cassandra from a backup.</dd></dlentry>
+    <dd>Restores cassandra from a backup, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--backup_dir BACKUP_DIR</code></dt>
+    <dd><p>The path to the backup directory to write the backup.</p>
+    <p>The default is <code>None</code>.</p></dd>
+    </dlentry></dl></dd></dlentry>
 </dl>
 
 {: id="tscli-cluster"}
 ### cluster
 
 ```
-tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,
-                    reinstall-os,report,restore,resume-reinstall-os,
-                    resume-update,set-config,set-min-resource-spec,
-                    show-resource-spec,start,status,stop,update,
-                    update-hadoop}
+tscli cluster [-h] abort-reinstall-os,abort-update,bucket-  name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
 ```
 
 This subcommand has the following options:
@@ -595,13 +608,41 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli cluster abort-reinstall-os</code></dt>
-    <dd>Abort in-progress reinstall.</dd></dlentry>
+    <dd>Aborts in-progress reinstall.</dd></dlentry>
+
+    <dlentry>
+      <dt><code>tscli cluster abort-update</code></dt>
+      <dd>Aborts an ongoing cluster update, if safe.</dd></dlentry>
+
+    <dlentry>
+      <dt><code>tscli cluster bucket-name</code></dt>
+      <dd>Returns the name of the s3 bucket associated with the cluster, if there is one.</dd></dlentry>  
 
   <dlentry>
-    <dt><code>tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}</code></dt>
-    <dd>
-      <p>Check the status nodes in the cluster.</p>
-      <p>You must specify a component to check.</p></dd></dlentry>
+    <dt><code>tscli cluster check [--path PATH] [--includes INCLUDES] [--retry RETRY] [--localhost] [--disable-events]</code></dt>
+    <dd>Checks the status of all nodes in the cluster, with the following parameters:
+      <dl>
+      <dlentry>
+      <dt><code>--path PATH</code></dt>
+      <dd><p>Specifies the working directory of the diagnostic tool.</p>
+      <p>The default is <code>/usr/local/scaligent/release</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--includes INCLUDES</code></dt>
+      <dd><p>Specifies the comma-separated component(s) to be included in the check.</p>
+      <p>The default is <code>all</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--retry RETRY</code></dt>
+      <dd><p>The maximum number of retry times if the node is unreachable.</p>
+      <p>The default is <code>10</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--localhost</code></dt>
+      <dd><p>Runs cluster checks only on localhost.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--disable-events</code></dt>
+      <dd><p>Disables raising configuration events.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+      </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster create <em>release</em></code></dt>
