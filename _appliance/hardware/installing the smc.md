@@ -13,7 +13,7 @@ Ensure that you have the following items, information, and understanding of poli
 <table>
 <tr>
 <td>&#10063;</td>
-<td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="#smc-appliance-location-ports">Appliance Port Location</a>.</td></tr>
+<td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="#appliance-port-location-the-back-of-the-smc-appliance">Appliance Port Location</a>.</td></tr>
 <tr>
 <td>&#10063;</td>
 <td>10GbE switch, with enabled IPv6 broadcast and multicast</td></tr>
