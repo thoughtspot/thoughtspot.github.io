@@ -817,6 +817,9 @@ entries:
       - title: Delete a worksheet or table
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
+      - title: Migrate or restore worksheets
+        url: /admin/worksheets/worksheet-export.html
+        output: web,admBk
     - levelTwoTitle: Work with views
       output: web,ugBk
       levelTwoItems:
