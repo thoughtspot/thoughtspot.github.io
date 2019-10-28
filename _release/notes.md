@@ -36,6 +36,20 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
+### Mobile
+You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPAd devices. ThoughtSpot Mobile works for releases 5.1 and later.
+
+Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
+
+See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
+
+### GeoMaps
+ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html).
+ visualizations for these new locales:
+- <strong>Austria:</strong> State, District, and Postal
+- <strong>Italy:</strong> Region, Province/Territories, and Postal Code
+- <strong>Poland:</strong> Province/Territories, County, Postal Code
+
 ### TBD
 TBD
 
