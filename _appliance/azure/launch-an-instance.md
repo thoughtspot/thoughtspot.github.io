@@ -1,14 +1,11 @@
 ---
 title: [Set up Azure for ThoughtSpot]
-
-last_updated: tbd
+last_updated: 10/25/20919
+summary: "After you determine your configuration options, you must set up your virtual
+machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-After you’ve determined your configuration options, you must set up your virtual
-machines (VMs) using a ThoughtSpot image for Azure.
-
 
 ## About the ThoughtSpot image
 
@@ -157,7 +154,7 @@ _Prerequisite_: To log in to the VM, you need the private key that is available 
 2. Connect to the VM through SSH, using the private key provided for the admin user.
 
    - You must file a support ticket to obtain this private key; it is necessary for the first login.
-   - This key is different from the credentials and|or private keys supplied in earlier steps, which do not work in this context.
+   - This key is different from the credentials, or the private keys supplied in earlier steps, which do not work in this context.
 
 3. Update the password for both the `admin` and the `thoughtspot` users.
 
