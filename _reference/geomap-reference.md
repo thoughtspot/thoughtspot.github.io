@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 09/23/2019
+last_updated: 10/28/2019
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -29,12 +29,12 @@ The following countries and their associated subdivisions are supported:
 &nbsp;&nbsp;&nbsp;&nbsp;Suburb<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postcode<br>
 </details>
-<!--Since 6.0.0<details>
+<!--Since 6.0.0<details>-->
 <summary><b>Austria</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;State<br>
 &nbsp;&nbsp;&nbsp;&nbsp;District<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
-</details>-->
+</details>
 <details>
 <summary><b>Canada</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
@@ -56,23 +56,23 @@ The following countries and their associated subdivisions are supported:
 <summary><b>Indonesia</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
 </details>
-<!--Since 6.0.0<details>
+<!--Since 6.0.0<details>-->
 <summary><b>Italy</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Region<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
-</details>-->
+</details>
 <!--Since 5.2.0--><details>
 <summary><b>Japan</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Prefecture<br>
 &nbsp;&nbsp;&nbsp;&nbsp;PMC<br>
 </details>
-<!--Since 6.0.0<details>
+<!--Since 6.0.0<details>-->
 <summary><b>Poland</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
 &nbsp;&nbsp;&nbsp;&nbsp;County<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
-</details>-->
+</details>
 <details>
 <summary><b>Sweden</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;County<br>

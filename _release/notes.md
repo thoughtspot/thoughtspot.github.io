@@ -43,6 +43,12 @@ Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured c
 
 See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
+### GeoMaps
+ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html).
+ visualizations for these new locales:
+- <strong>Austria:</strong> State, District, and Postal
+- <strong>Italy:</strong> Region, Province/Territories, and Postal Code
+- <strong>Poland:</strong> Province/Territories, County, Postal Code
 
 ### TBD
 TBD
