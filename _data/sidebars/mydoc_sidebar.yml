@@ -811,13 +811,13 @@ entries:
       - title: "Create a join relationship"
         url: /admin/worksheets/add-joins.html
         output: web,admBk
-      - title: "Modify joins between worksheet tables"
+      - title: "Modify joins between Worksheet Tables"
         url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
-      - title: Delete a worksheet or table
+      - title: Delete Worksheets or Tables
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
-      - title: Migrate or restore worksheets
+      - title: Migrate or restore Worksheets
         url: /admin/worksheets/worksheet-export.html
         output: web,admBk
     - levelTwoTitle: Work with views
