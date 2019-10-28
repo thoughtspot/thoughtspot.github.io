@@ -647,42 +647,117 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli cluster create <em>release</em></code></dt>
     <dd>
-      <p>Creates a new cluster from the release file specified by <code><em>release</em></code>.</p>
-      <p>Used by ThoughtSpot Support when installing a new cluster. For example, <code>tscli cluster create 5.3.2.tar.gz</code>.</p></dd></dlentry>
+      <p>Creates a new cluster from the release file specified by adding the  release number.</p>
+      <p>Used by ThoughtSpot Support when installing a new cluster. For example, <code>tscli cluster create 5.3.2.tar.gz</code>.</p>
+      <p>This command has the following parameters:</p>
+      <dl>
+      <dlentry>
+      <dt><code>--disable_rotate_keys</code></dt>
+      <dd><p>Disables cluster rotate key configuration.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--enable_cloud_storage</code></dt>
+      <dd>Determines whether to enable Coud Storage setup.
+      </dd></dlentry>
+      <dlentry>
+      <dt><code>heterogeneous</code></dt>
+      <dd><p>Should be set for hetergenous clusters.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster download-release <em>release</em></code></dt>
+    <dd>Downloads the specified release to the Hadoop Distributed File Sytem (HDFS) for later upgrading.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster get-config</code></dt>
     <dd>
-      <p>Get current cluster network and time configuration. Prints JSON configuration to <code>stdout.</code></p>
-      <p>If the system cannot be connected to all interfaces, the command returns an error but continues to function.</p></dd></dlentry>
+      <p>Gets current cluster network and time configuration. Prints JSON configuration to <code>stdout</code>.</p>
+      <p>If the system cannot be connected to all interfaces, the command returns an error but continues to function.</p>
+      <p>This command has the following parameters:</p>
+      <dl>
+      <dlentry>
+      <dt><code>--local</code></dt>
+      <dd><p>Gets the config for the local host only.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--nodes NODES</code></dt>
+      <dd><p>A comma separated list of specified nodes to get the config for.</p>
+      <p>The default is <code>None</code>.</p></dd></dlentry>
+      </dl></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster load</code></dt>
-    <dd>Load state from specified backup onto existing cluster.</dd></dlentry>
+    <dt><code>tscli cluster list-available-releases</code></dt>
+    <dd>Lists the available releases to update to on the cluster.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster list-downloaded-releases</code></dt>
+    <dd>Lists the releases downloaded to the cluster.</dd></dlentry>    
+
+  <dlentry>
+    <dt><code>tscli cluster load <em>backupdir</em></code></dt>
+    <dd>Loads the state from a specified backup directory onto an existing cluster.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster reinstall-os</code></dt>
-    <dd>Reinstall OS on all nodes of the cluster.</dd></dlentry>
-
-<dlentry>
-    <dt><code>tscli cluster report</code></dt>
-    <dd>Generate cluster report.</dd></dlentry>
+    <dd>Reinstalls OS on all nodes of the cluster, with the following parameters:
+    <dl>
+    <dlentry>
+    <dt><code>--secondary SECONDARY</code></dt>
+    <dd><p>A secondary drive for reinstall.</p>
+    <p>The default is <code>sdd</code>.</p></dd></dlentry>
+    <dlentry>
+    <dt><code>--stdin</code></dt>
+    <dd>Command to take JSON configuration from stdin.</dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster restore --release <em>release_tarball</em> <em>backupdir</em></code></dt>
-    <dd>Restores a cluster using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</dd></dlentry>
+    <dt><code>tscli cluster restore --release RELEASE <em>backupdir</em></code></dt>
+    <dd><p>Restores a cluster on the specified release number using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</p>
+    <p>This command has the following parameters:</p>
+    <dl>
+    <dlentry>
+    <dt><code>--disable_rotate_keys</code></dt>
+    <dd><p>Disables cluster rotate key configurations.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry>
+    <dlentry>
+    <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
+    <dd>Determines whether to enable Cloud Storage setup.</dd></dlentry>
+    <dlentry>
+    <dt><code>--heterogenous</code></dt>
+    <dd><p>Should be set for heterogenous clusters.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-reinstall-os</code></dt>
-    <dd>Resume in-progress reinstall.</dd></dlentry>
+    <dd>Resumes in-progress reinstall.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-update</code></dt>
-    <dd>Resume in-progress updates.</dd></dlentry>
+    <dd>Resumes in-progress updates, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--ignore_if_unhealthy</code></dt>
+    <dd><p>Comma separated list of node IPs on which upgrade is not attempted if they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</p>
+    <p>The default is <code>None</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster set-config</code></dt>
-    <dd>Set cluster network and time configuration. Takes JSON configuration from stdin.</dd></dlentry>
+    <dd><p>Sets cluster network and time configuration. Takes JSON configuration from stdin.</p>
+    <p>This subcommand has the following parameters:</p>
+    <dl>
+    <dlentry>
+    <dt><code>--ipv4-only</code></dt>
+    <dd><p>Only use ipv4 for node communication. Requires passing ipMap in config unless no-network-change is also specified.</p>
+    <p>The default is <code>False</code>.</p></dd>
+    </dlentry>
+    <dlentry>
+    <dt><code>--no-network-change</code></dt>
+    <dd><p>This flag ensures that a change made with set-config does not update network settings.</p>
+    <p>The default is <code>False</code>.</p>
+    </dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster set-min-resource-spec</code></dt>
