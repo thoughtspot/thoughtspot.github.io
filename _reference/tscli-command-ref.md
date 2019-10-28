@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 10/25/2019
+last_updated: 10/28/2019
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
@@ -761,13 +761,13 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli cluster set-min-resource-spec</code></dt>
-    <dd>Sets min resource configuration of the cluster.</dd></dlentry>
+    <dd>Sets the minimum resource configuration of the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
     <dd>Prints default or min.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster start</code></dt>
-    <dd>Start cluster.</dd></dlentry>
+    <dd>Starts the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster status</code></dt>
     <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status.</dd></dlentry>
