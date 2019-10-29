@@ -74,6 +74,23 @@ You can deploy ThoughtSpot on two different appliance hardware platforms: Haswel
 | Max power consumption | 2000 W | 2200 W |
 | Required power input | 200-240V / 11.8 - 9.8A / 50-60Hz | 220-240 VAC  50-60 Hz |
 
+{: id="hardware-front-back-diagrams"}
+### Hardware front and back view diagrams
+These pictures show the front and back views of each appliance.
+
+{: id="haswell-front-back"}
+**Haswell Front View**
+![The front of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-front-view.png "The front of the Haswell appliance")
+
+**Haswell Back View**
+![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-back-view.png "The back of the Haswell appliance")
+
+Note that the nodes are in a reverse N shape, with Node A at the bottom right and Node D at the top left.
+
+{: id="skylake-front-back"}
+**Skylake Front View**
+
+
 {: id="Configure-Nodes"}
 ## Configure Nodes
 
