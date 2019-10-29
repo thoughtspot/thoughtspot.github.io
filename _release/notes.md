@@ -50,6 +50,13 @@ ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.
 - <strong>Italy:</strong> Region, Province/Territories, and Postal Code
 - <strong>Poland:</strong> Province/Territories, County, Postal Code
 
+### Worksheet scriptability
+You can now **Export** worksheets by downloading them to a `*.yaml` file, making changes, and then **Update** the worksheet from the changed file either to the same or to a different cluster.
+
+Worksheet scriptability supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
+
+See [Migrate or restore worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html
+
 ### TBD
 TBD
 
