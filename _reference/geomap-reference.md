@@ -29,7 +29,7 @@ The following countries and their associated subdivisions are supported:
 &nbsp;&nbsp;&nbsp;&nbsp;Suburb<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postcode<br>
 </details>
-<!--Since 6.0.0<details>-->
+<!--Since 6.0.0--><details>
 <summary><b>Austria</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;State<br>
 &nbsp;&nbsp;&nbsp;&nbsp;District<br>
@@ -56,7 +56,7 @@ The following countries and their associated subdivisions are supported:
 <summary><b>Indonesia</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
 </details>
-<!--Since 6.0.0<details>-->
+<!--Since 6.0.0--><details>
 <summary><b>Italy</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Region<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
@@ -67,7 +67,7 @@ The following countries and their associated subdivisions are supported:
 &nbsp;&nbsp;&nbsp;&nbsp;Prefecture<br>
 &nbsp;&nbsp;&nbsp;&nbsp;PMC<br>
 </details>
-<!--Since 6.0.0<details>-->
+<!--Since 6.0.0--><details>
 <summary><b>Poland</b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
 &nbsp;&nbsp;&nbsp;&nbsp;County<br>
