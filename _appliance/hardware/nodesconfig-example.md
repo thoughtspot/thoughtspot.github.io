@@ -1,6 +1,6 @@
 ---
 title: [The nodes.config file]
-last_updated: [10/23/2019]
+last_updated: [10/29/2019]
 summary: "Learn how to use the get.config command and the nodes.config file to install  your super micro computer."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

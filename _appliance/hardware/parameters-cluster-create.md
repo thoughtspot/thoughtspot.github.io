@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the cluster create command]
-last_updated: [10/23/2019]
+last_updated: [10/29/2019]
 summary: "Learn the parameters of the cluster create command."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

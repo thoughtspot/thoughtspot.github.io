@@ -1,6 +1,6 @@
 ---
 title: [Using the cluster create command]
-last_updated: [10/23/2019]
+last_updated: [10/29/2019]
 summary: "Learn how to use the cluster create command to install your super micro computer."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
