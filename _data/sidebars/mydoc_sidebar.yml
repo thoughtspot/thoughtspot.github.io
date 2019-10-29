@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Version
-  version: 5.3 Guides
+  version: 6.0 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
