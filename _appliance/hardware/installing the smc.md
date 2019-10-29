@@ -1,6 +1,6 @@
 ---
 title: [Installing the Super Micro Computer]
-last_updated: [10/22/2019]
+last_updated: [10/29/2019]
 summary: "Learn how to install the Super Micro Computer (SMC) Appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -85,10 +85,9 @@ Depending on which version of the SMC appliance you have, Haswell or Skylight, y
 ### Appliance Power Button: The front of the SMC appliance
 
 {: id="smc-appliance-power-button"}
-### Haswell appliance
-![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")
-### Skylight appliance
-![The power button on the front of the Skylight SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylight-power-button.png "The power button is at the front of the Skylight appliance")
+| Haswell Appliance | &#32; &#32; &#32; | Skylight Appliance |
+| ---- | ---- | ---- |
+| ![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")| &#32; | ![The power button on the front of the Skylight SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylight-power-button.png "The power button is at the front of the Skylight appliance") |
 
 4. **Log in** Connect the keyboard and the mouse to the appliance, and log in using the *admin* user credentials for the console.
 
