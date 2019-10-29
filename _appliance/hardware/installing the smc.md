@@ -66,7 +66,7 @@ Depending on which version of the SMC appliance you have, Haswell or Skylight, y
 ### Haswell appliance
 {: id="smc-appliance-haswell-location-ports"}
 
-![The back of the SMC Haswell appliance]({{ site.baseurl }}/images/smc-haswell-appliance-location-ports.png "The 10GbE ports are on the back of the SMC Haswell appliance")
+![The back of the SMC Haswell appliance]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The 10GbE ports are on the back of the SMC Haswell appliance")
 ### Skylight appliance
 {: id="smc-appliance-skylight-location-ports"}
 
@@ -86,7 +86,7 @@ Depending on which version of the SMC appliance you have, Haswell or Skylight, y
 
 {: id="smc-appliance-power-button"}
 ### Haswell appliance
-![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-appliance-power-button.png "The power button is at the front of the Haswell appliance")
+![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")
 ### Skylight appliance
 ![The power button on the front of the Skylight SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylight-power-button.png "The power button is at the front of the Skylight appliance")
 
