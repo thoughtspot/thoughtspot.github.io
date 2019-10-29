@@ -8,79 +8,196 @@ permalink: /:collection/:path.html
 ---
 This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.
 
-### Supported geo maps in ThoughtSpot
+ThoughtSpot supports the following countries and their associated subdivisions:
+<dl>
+<dlentry>
+<!--Since 5.2.0-->
+<dt>Australia</dt>
+<dd>
+<details><summary><strong>States</strong></summary>
+{% include content/geo/au-state.md %}
+</details>
+<details><summary><strong>State Abbreviations</strong></summary>
+{% include content/geo/au-state-abbr.md %}
+</details>
+<details><summary><strong>Suburb</strong></summary>
+{% include content/geo/au-suburb.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/au-post-code.md %}
+</details>
+</dd>
+</dlentry>
 
-The following countries and their associated subdivisions are supported:
+<!--Since 6.0.0-->
+<dlentry>
+<dt>Austria</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/at-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/at-district.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/at-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Canada</dt>
+<dd>
 <details>
-<summary><b>United States</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;County<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Zip Code<br>
-</details>
-<details>
-<summary><b>United Kingdom</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;County and Unitary Authority<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Local Area District<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Zip Code<br><!--Since 5.3.0>-->
-</details>
-<!--Since 5.2.0--><details>
-<summary><b>Australia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Suburb<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postcode<br>
-</details>
-<!--Since 6.0.0--><details>
-<summary><b>Austria</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;District<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+<summary><strong>Province and Territory</strong></summary>
+{% include content/geo/ca-province-territory.md %}
 </details>
 <details>
-<summary><b>Canada</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Census Divisions<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+<summary><strong>Census Divisions</strong></summary>
+{% include content/geo/ca-census-division.md %}
 </details>
 <details>
-<summary><b>France</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Region<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Department<br>
+<summary><strong>Postal Codes</strong></summary>
+{% include content/geo/ca-postal-code.md %}
 </details>
-<details>
-<summary><b>Germany</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;District<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>France</dt>
+<dd>
+<details><summary><strong>Region</strong></summary>
+{% include content/geo/fr-region.md %}
 </details>
-<details>
-<summary><b>Indonesia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
+<details><summary><strong>Department</strong></summary>
+{% include content/geo/fr-department.md %}
 </details>
-<!--Since 6.0.0--><details>
-<summary><b>Italy</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Region<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Germany</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/de-state.md %}
 </details>
-<!--Since 5.2.0--><details>
-<summary><b>Japan</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Prefecture<br>
-&nbsp;&nbsp;&nbsp;&nbsp;PMC<br>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/de-district.md %}
 </details>
-<!--Since 6.0.0--><details>
-<summary><b>Poland</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
-&nbsp;&nbsp;&nbsp;&nbsp;County<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/de-postal-code.md %}
 </details>
-<details>
-<summary><b>Sweden</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;County<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Municipality<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Post Code<br><!--Since 5.3.0 -->
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Indonesia</dt>
+<dd>
+<details><summary><strong>Province and Territory</strong></summary>
+{% include content/geo/id-province-territory.md %}
 </details>
-<details>
-<summary><b>South Africa</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;District<br>
+</dd>
+</dlentry>
+
+<!--Since 6.0.0-->
+<dlentry>
+<dt>Italy</dt>
+<dd>
+<details><summary><strong>Region</strong></summary>
+{% include content/geo/it-region.md %}
 </details>
+<details><summary><strong>Province and Territory</strong></summary>
+{% include content/geo/it-province-territory.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/it-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<!--Since 5.2.0-->
+<dlentry>
+<dt>Japan</dt>
+<dd>
+<details><summary><strong>Prefecture</strong></summary>
+{% include content/geo/jp-prefecture.md %}
+</details>
+<details><summary><strong>PMC</strong></summary>
+{% include content/geo/jp-pmc.md %}
+</details>
+</dd>
+</dlentry>
+
+<!--Since 6.0.0-->
+<dlentry>
+<dt>Poland</dt>
+<dd>
+<details><summary><strong>Province and Territory</strong></summary>
+{% include content/geo/pl-province-territory.md %}
+</details>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/pl-county.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/pl-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Sweden</dt>
+<dd>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/se-county.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/se-municipality.md %}
+</details>
+<!-- Since 5.3.0 -->
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/se-post-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>South Africa</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/za-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/za-district.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>United States</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/us-state.md %}
+</details>
+<details><summary><strong>Country</strong></summary>
+{% include content/geo/us-county.md %}
+</details>
+<details><summary><strong>Zip Code</strong></summary>
+{% include content/geo/us-zip-code.md %}
+</details>
+</dd></dlentry>
+
+<dlentry>
+<dt>United Kingdom</dt>
+<dd>
+<details><summary><strong>County and Unitary Authority</strong></summary>
+{% include content/geo/gb-county-unitary-authority.md %}
+</details>
+<details><summary><strong>Local Area District</strong></summary>
+{% include content/geo/gb-local-area-district.md %}
+</details>
+<details><summary><strong>Zip Code</strong></summary>
+{% include content/geo/gb-zip-code.md %}
+</details>
+</dd></dlentry>
+
+</dl>
