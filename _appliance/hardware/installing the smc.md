@@ -14,16 +14,25 @@ Ensure that you have the following items, information, and understanding of poli
 <tr>
 <td>&#10063;</td>
 <td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="#appliance-port-location-the-back-of-the-smc-appliance">Appliance Port Location</a>.</td></tr>
-<tr>
-<td>&#10063;</td>
-<td>10GbE switch, with enabled IPv6 broadcast and multicast</td></tr>
-<tr>
-<td>&#10063;</td>
-<td>10GbE network cables, either direct attach copper (DAC) or fiber</td></tr>
 
 <tr>
 <td>&#10063;</td>
-<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management</td></tr>
+<td>Data center with proper cooling</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>AC power</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one per node.</td></tr>
+<tr>
+<td>&#10063;</td>
+<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to cable types for more information.</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management. You need one per node.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -31,11 +40,15 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Rack space and power strip</td></tr>
+<td>Rack space (2U or 3.5 inches per appliance) and power strip</td></tr>
 
 <tr>
 <td>&#10063;</td>
 <td>Monitor and keyboard</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>10G connection: SFP+ for switch side</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -47,6 +60,19 @@ Ensure that you have the following items, information, and understanding of poli
 </table>
 
 See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+
+{: id="about-hardware"}
+## About the Hardware
+You can deploy ThoughtSpot on two different appliance hardware platforms: Haswell and Skylake. Both of the platforms provide the same performance. Refer to [Haswell and Skylake hardware details]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#hardware-details) for details on their physical differences.
+
+{: id="hardware-details"}
+| Details | Haswell | Skylake |
+| --- | --- | --- |
+| Dimensions | 2 RU chassis (17.25" x 3.47" x 28.5" (WxHxD)) | 2 RU chassis (17.6" x 3.47" x 28.75" (WxHxD)) |
+| # of nodes | Populated with 1 to 4 nodes | Populated with 1 to 4 nodes |
+| Node specifications | Each node is independent and consists of a server board (removable from rear), 1x 200G SSD, 3x 2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240G SSD, 3x 2TB HDD |
+| Max power consumption | 2000 W | 2200 W |
+| Required power input | 200-240V / 11.8 - 9.8A / 50-60Hz | 220-240 VAC  50-60 Hz |
 
 {: id="Configure-Nodes"}
 ## Configure Nodes
@@ -62,15 +88,15 @@ Follow these steps to connect the appliance. Refer to [Appliance Port Location](
 
 ### Appliance Port Location: The back of the SMC appliance
 
-Depending on which version of the SMC appliance you have, Haswell or Skylight, your 10GbE ports will be in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
+Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports will be in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
 ### Haswell appliance
 {: id="smc-appliance-haswell-location-ports"}
 
 ![The back of the SMC Haswell appliance]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The 10GbE ports are on the back of the SMC Haswell appliance")
-### Skylight appliance
-{: id="smc-appliance-skylight-location-ports"}
+### Skylake appliance
+{: id="smc-appliance-skylake-location-ports"}
 
-![The back of the SMC Skylight appliance]({{ site.baseurl }}/images/smc-appliance-skylight-location-ports.png "The 10GbE ports are on the back of the SMC Skylight appliance")
+![The back of the SMC Skylake appliance]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The 10GbE ports are on the back of the SMC Skylake appliance")
 
 
   * Connect to the switch **only** the appliances (4 nodes each) that you want to use in the cluster.  
@@ -85,9 +111,9 @@ Depending on which version of the SMC appliance you have, Haswell or Skylight, y
 ### Appliance Power Button: The front of the SMC appliance
 
 {: id="smc-appliance-power-button"}
-| Haswell Appliance | &#32; &#32; &#32; | Skylight Appliance |
+| Haswell Appliance | &#32; &#32; &#32; | Skylake Appliance |
 | ---- | ---- | ---- |
-| ![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")| &#32; | ![The power button on the front of the Skylight SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylight-power-button.png "The power button is at the front of the Skylight appliance") |
+| ![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")| &#32; | ![The power button on the front of the Skylake SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylake-power-button.png "The power button is at the front of the Skylake appliance") |
 
 4. **Log in** Connect the keyboard and the mouse to the appliance, and log in using the *admin* user credentials for the console.
 
