@@ -185,7 +185,7 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 {: id="Configure-Node-in-Terminal"}
 ### Configure Nodes in Terminal
 
-1. **Change to the `install` directory** In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install` You may have to use the `home/admin` directory if your `/install` subdirectory does not exist.
+1. **Change to the `install` directory** In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. You may have to use the `home/admin` directory if your `/install` subdirectory does not exist.
 
 2. **Run the `get-config` command** Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`.  More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
