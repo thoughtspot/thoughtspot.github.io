@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the cluster create command]
-last_updated: [10/29/2019]
+last_updated: [10/30/2019]
 summary: "Learn the parameters of the cluster create command."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {: id="using-cluster-create"}
 ## Using the cluster create command
-To install the super micro computer, you must install the cluster.
+To install your appliance, you must install the cluster.
 
 1. **Copy the release tarball** Run `scp 0.0.tar.gz admin@hostname:/home/admin/`, filling in your specific information for the release number and the hostname. For example, `scp 6.0 admin@ThoughtSpot:/home/admin`.
 1. **Run the `cluster create` command** Run `tscli cluster create` in your terminal.
@@ -30,3 +30,8 @@ Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardw
 **Host IPs**	Enter the IP addresses of all cluster hosts, in the form 000.000.000.000. For example, 192.168.7.70. Use spaces instead of commas to separate multiple IP addresses.
 
 **Email alerts**	Enter the email addresses you would like to receive alerts about this cluster, in the form company@example.com. The address prod-alerts@thoughtspot.com should remain, so that ThoughtSpot can be aware of the status of your cluster. Separate email addresses with a space.
+
+## References
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)

@@ -1,13 +1,13 @@
 ---
 title: [The nodes.config file]
-last_updated: [10/29/2019]
-summary: "Learn how to use the get.config command and the nodes.config file to install  your super micro computer."
+last_updated: [10/30/2019]
+summary: "Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="using-nodes.config"}
 ## Using the nodes.config file
-As you install the Super Micro Computer appliance, you must configure the nodes.
+As you install your appliance, you must configure the nodes.
 1. Run `tscli cluster get-config |& tee nodes.config` in your terminal.
 2. Add network information for the nodes, as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
 3. If you have  additional nodes, complete each node within the `nodes.config` file as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). [Autodiscovery of one node]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery) shows the `nodes.config` file before you fill in your specific information.
@@ -78,3 +78,8 @@ $ vim nodes.config
   }  
 }
 ```
+
+## References
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
