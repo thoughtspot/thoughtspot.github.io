@@ -28,7 +28,7 @@ Ensure that you have the following items, information, and understanding of poli
 <td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one per node.</td></tr>
 <tr>
 <td>&#10063;</td>
-<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to cable types for more information.</td></tr>
+<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to <a href="#fiber-cables">Fiber Cables</a> and <a href="#dac-cables">DAC Cables</a> for more information to decide between the two types.</td></tr>
 
 <tr>
 <td>&#10063;</td>
