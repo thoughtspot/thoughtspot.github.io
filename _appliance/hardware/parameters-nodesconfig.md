@@ -1,14 +1,14 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [10/29/2019]
-summary: "Learn the parameters of the nodes.config file to install  your super micro computer."
+last_updated: [10/30/2019]
+summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {: id="using-nodes.config"}
 ## Using the nodes.config file
-As you install the Super Micro Computer appliance, you must configure the nodes.
+As you install your appliance, you must configure the nodes.
 
 1. Run `tscli cluster get-config |& tee nodes.config` in your terminal.
 2. Add network information for your nodes in the `nodes.config` file output, as demonstrated in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example. Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) with your specific network information.
@@ -47,3 +47,8 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 **IPv4**	The main IP address, associated with DataNetmask and DataGateway, in the form 000.000.000.000. For example, 192.168.7.70.  
 
 **IPMI IPv4**	A secondary IP address, associated with the IPMINetmask and IPMIGateway, in the form 000.000.000.000. For example, 192.168.5.70.
+
+## References
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)

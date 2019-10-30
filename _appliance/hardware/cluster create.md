@@ -1,13 +1,13 @@
 ---
 title: [Using the cluster create command]
-last_updated: [10/29/2019]
-summary: "Learn how to use the cluster create command to install your super micro computer."
+last_updated: [10/30/2019]
+summary: "Learn how to use the cluster create command to install your appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="using-cluster-create"}
 ## Using the cluster create command
-To install the super micro computer, you must install the cluster using the release tarball (estimated time 1 hour).
+To install your appliance, you must install the cluster using the release tarball (estimated time 1 hour).
 1. **Download the release tarball** Download the release tarball from the download link sent by ThoughtSpot Support. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.  
 2.  **Copy the release tarball** In your Terminal (Apple) or using [Winscp](https://winscp.net/eng/index.php) (Windows application), copy the downloaded release tarball to /home/admin/ and run the cluster installer as shown below. To copy the release tarball, run the command `scp 0.0.tar.gz admin@hostname:/home/admin/`, where '0.0' is replaced by your release number and 'hostname' is your hostname. For example, `6.0.tar.gz admin@ThoughtSpot:/home/admin`.  
 
@@ -66,3 +66,8 @@ Broadcast message from root@ip-192-168-7-70(Sun 2018-09-30 23:04:32 UTC):
 
 The system is going down for reboot at Sun 2018-09-30 23:05:32 UTC!
 ```
+
+## References
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)

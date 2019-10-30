@@ -285,7 +285,7 @@ All nodes have now been configured. Next, you must install the cluster using the
 Copy the downloaded release tarball to /home/admin. Then you can run the `tscli cluster create` command and edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
 
-The cluster installation will automatically reboot all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which will take a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
+The cluster installation automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
 
 ### 2. Check Cluster Health
 Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#check-cluster-health).
