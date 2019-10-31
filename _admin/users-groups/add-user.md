@@ -70,7 +70,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password.</td>
+        <td>A password. Minimum 8 chars, 1 upper case, 1 digit</td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
