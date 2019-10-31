@@ -12,7 +12,7 @@ As you install your appliance, you must configure the nodes.
 2. Add network information for the nodes, as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
 3. If you have  additional nodes, complete each node within the `nodes.config` file as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). [Autodiscovery of one node]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery) shows the `nodes.config` file before you fill in your specific information.
 
-**Note:** Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
  See [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) to understand the parameters in the file.
 

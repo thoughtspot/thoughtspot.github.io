@@ -17,7 +17,7 @@ To install your appliance, you must install the cluster.
 Refer to [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) for further information.
 Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) to see the expected output of the install command, `tscli cluster create`.
 
- **Note:** Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). Deleting colons, commas, or other parts of the code could cause setup to fail.
+Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). Deleting colons, commas, or other parts of the code could cause setup to fail.
 
 {: id="parameters-cluster-create"}
 

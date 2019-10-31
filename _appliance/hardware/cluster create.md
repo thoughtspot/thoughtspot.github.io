@@ -11,12 +11,12 @@ To install your appliance, you must install the cluster using the release tarbal
 1. **Download the release tarball** Download the release tarball from the download link sent by ThoughtSpot Support. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.  
 2.  **Copy the release tarball** In your Terminal (Apple) or using [Winscp](https://winscp.net/eng/index.php) (Windows application), copy the downloaded release tarball to /home/admin/ and run the cluster installer as shown below. To copy the release tarball, run the command `scp 0.0.tar.gz admin@hostname:/home/admin/`, where '0.0' is replaced by your release number and 'hostname' is your hostname. For example, `6.0.tar.gz admin@ThoughtSpot:/home/admin`.  
 
-**Note** ThoughtSpot recommends that you start the session using [screen](https://linux.die.net/man/1/screen), so you do not lose your progress if you lose your connection at any point.
+ThoughtSpot recommends that you start the session using [screen](https://linux.die.net/man/1/screen), so you do not lose your progress if you lose your connection at any point.
 3. **Run the `cluster create` command** Run `tscli cluster create` in your terminal.
 2. **Specify your installation information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 3. **Wait for output** You may need to wait about 15 seconds before you see any output. The installer is unpacking files and copying them over to the nodes, which can take a few seconds.
 
-**Note:** Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html). Deleting colons, commas, or other parts of the code could cause setup to fail.
+Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html). Deleting colons, commas, or other parts of the code could cause setup to fail.
 
 Refer to [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html) for further information. Below shows the output of the install command, `tscli cluster create`.
 

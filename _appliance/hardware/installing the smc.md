@@ -1,6 +1,6 @@
 ---
 title: [Installing the Super Micro Computer]
-last_updated: [10/30/2019]
+last_updated: [10/31/2019]
 summary: "Learn how to install the Super Micro Computer (SMC) Appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,7 +13,7 @@ Ensure that you have the following items, information, and understanding of poli
 <table>
 <tr>
 <td>&#10063;</td>
-<td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="#appliance-port-location-the-back-of-the-smc-appliance">Appliance Port Location</a>.</td></tr>
+<td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="#step-1-connect-switches-to-10gbe-ports">Appliance Port Location</a>.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -28,7 +28,7 @@ Ensure that you have the following items, information, and understanding of poli
 <td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one per node.</td></tr>
 <tr>
 <td>&#10063;</td>
-<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to <a href="#fiber-cables">Fiber Cables</a> and <a href="#dac-cables">DAC Cables</a> for more information to decide between the two types.</td></tr>
+<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to <a href="#step-1-connect-switches-to-10gbe-ports">Step 1: Connect switches to 10GbE ports</a> for more information to decide between the two types.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -85,9 +85,9 @@ These pictures show the front and back views of each appliance.
 ### Haswell Back View
 ![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-back-view.png "The back of the Haswell appliance")
 
-Note that the nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left.
+{% include note.html content="The nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left." %}
 
-The Haswell appliance shown here is not fully populated, as it only has three nodes. Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If you order less than four nodes, ThoughtSpot fills the empty slot with a filler panel.
+{% include note.html content="The Haswell appliance shown here is not fully populated, as it only has three nodes. Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If you order less than four nodes, ThoughtSpot fills the empty slot with a filler panel." %}
 
 {: id="skylake-front-back"}
 ### Skylake Front View
@@ -96,73 +96,82 @@ The Haswell appliance shown here is not fully populated, as it only has three no
 ### Skylake Back View
 ![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-skylake-back-view.png "The back of the Haswell appliance")
 
-Note that the nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left.
+{% include note.html content="The nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left." %}
 
-The Skylake appliance shown here is fully populated with four nodes.
+{% include note.html content="The Skylake appliance shown here is fully populated with four nodes." %}
 
-{: id="Configure-Nodes"}
-## Configure Nodes
+{: id="Connect-the-Appliance"}
+## Connect the Appliance
 
 After you rack and stack the appliance, you can begin to configure it. If needed, review the [Hardware Appliance Overview]({{ site.baseurl }}/appliance/hardware/inthebox.html).
 
-{: id="Connect-the-Appliance"}
-### Connect the Appliance
+Follow these steps to connect the appliance. Refer to [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports) and [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-3-turn-on-nodes).
 
-Follow these steps to connect the appliance. Refer to [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-port-location-the-back-of-the-smc-appliance) and [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-power-button-the-front-of-the-smc-appliance).
+### Step 1: Connect switches to 10GbE ports
+Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports), to the 10GbE switches on your own rack using either fiber or DAC cables.
 
-1. **Connect switches to 10GbE ports** Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-port-location-the-back-of-the-smc-appliance), to the 10GbE switches on your own rack using either fiber or DAC cables.
+ Refer to the [Cable reference]({{ site.baseurl }}/appliance/hardware/cable-reference.html) for information on the cable types:
+ * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#fiber-cables)
+ * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#dac-cables)
 
-    See the information about the cables:
-    * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#fiber-cables)
-    * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#dac-cables)
+ {% include note.html content="Cables do not come with the appliance." %}
 
-    {% include note.html content="Cables do not come with the appliance." %}
+{: id=appliance-port-location}
+Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
 
-    Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
+{: id="smc-appliance-haswell-location-ports"}
 
-  {: id="smc-appliance-haswell-location-ports"}
+![The data and management ports are on the back of the SMC Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The back of the SMC Haswell appliance")
 
-  ![The data and management ports are on the back of the SMC Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The back of the SMC Haswell appliance")
+{% include note.html content="The above image of the Haswell appliance has a GBIC plugged in next to the highlighted 10GbE data port." %}
 
-  {% include note.html content="This image of the Haswell appliance has a GBIC plugged in next to the highlighted 10GBe data port." %}
+{: id="smc-appliance-skylake-location-ports"}
 
-  {: id="smc-appliance-skylake-location-ports"}
+![The data and management ports are on the back of the SMC Skylake appliance.]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The back of the SMC Skylake appliance")
 
-  ![The data and management ports are on the back of the SMC Skylake appliance.]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The back of the SMC Skylake appliance")
-
-  * Connect to switches **only** the appliances (4 nodes each) that you want to use in the cluster.  
-  * You must power off or disconnect from the switch all other appliances or nodes. This prevents accidental configuration of incorrect nodes.  
-  * You must connect all nodes, even if using only one node, to a 10G switch. Verify that the connection is valid by pinging the gateway. To ping the gateway, enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+* Connect to switches **only** the appliances (4 nodes each) that you want to use in the cluster.  
+* You must power off or disconnect from the switch all other appliances or nodes. This prevents accidental configuration of incorrect nodes.  
+* You must connect all nodes, even if using only one node, to a 10G switch. Verify that the connection is valid by pinging the gateway. To ping the gateway, enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
 
 
-2. **Connect IPMI ports** Connect the IPMI port of each node to the management switch; see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-port-location-the-back-of-the-smc-appliance).
+### Step 2: Connect IPMI ports
+Connect the IPMI port of each node to the management switch; see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports).
 
-3. **Turn on nodes** Turn on the power for the nodes by pressing the power button; see [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-power-button-the-front-of-the-smc-appliance). Note that there is one power button for each node.
+### Step 3: Turn on nodes
+Turn on the power for the nodes by pressing the power button; see [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-3-turn-on-nodes).
 
 {: id="smc-appliance-power-button"}
 | Haswell Appliance | &#32; &#32; &#32; | Skylake Appliance |
 | ---- | ---- | ---- |
-| ![The power button on the front of the Haswell SMC appliance]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button is at the front of the Haswell appliance")| &#32; | ![The power button on the front of the Skylake SMC appliance]({{ site.baseurl }}/images/smc-appliance-skylake-power-button.png "The power button is at the front of the Skylake appliance") |
+| ![The power button is at the front of the Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button on the front of the Haswell SMC appliance")| &#32; | ![The power button is at the front of the Skylake appliance]({{ site.baseurl }}/images/smc-appliance-skylake-power-button.png "The power button on the front of the Skylake SMC appliance") |
 
-4. **Log in** Connect the keyboard and the mouse to the appliance, and log in using the *admin* user credentials for the console.
+{% include note.html content="There is one power button for each node." %}
+
+### Step 4: Log in
+Connect the keyboard and the mouse to the appliance, and log in using the *admin* user credentials for the console.
 
 {: id="Configure-Node-in-Terminal"}
-### Configure Nodes in Terminal
+## Configure Nodes in Terminal
+Once you have connected the appliance, you can begin to configure the nodes in your Mac Terminal or Windows terminal emulator.
 
-1. **Change to the `install` directory** In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. You may have to use the `home/admin` directory if your `/install` subdirectory does not exist.
+### Step 1: Change to the `install` directory
+In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. You may have to use the `home/admin` directory if your `/install` subdirectory does not exist.
 
-2. **Run the `get-config` command** Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`.  More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
-
-
-3. **Configure the network of nodes** Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information. If you have  additional nodes, complete each node within the nodes.config file in the same way. Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
-
+### Step 2: Run the `get-config` command
+Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`.  More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
 
-4. **The `set-config` command** Configure the nodes in the `nodes.config` file using the `set-config` command [(set-config)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config`.
+### Step 3: Configure the network of nodes
+Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information. If you have  additional nodes, complete each node within the nodes.config file in the same way. Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+
+
+
+### Step 4: Run the `set-config` command
+Configure the nodes in the `nodes.config` file using the `set-config` command [(set-config)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config`.
 
 {: id="set-config-command"}
 
-### Set-config
+#### Set-config
 ```
 $ cat nodes.config | tscli cluster set-config
 
@@ -175,12 +184,12 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 ```
-### Set-config error recovery
+#### Set-config error recovery
 If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`[(Restart node-scout service)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#node-scout-restart).
 
 {: id="node-scout-restart"}
 
-### Restart node-scout service
+#### Restart node-scout service
 If you have this error, restart the node-scout.
 ```
 
@@ -207,10 +216,11 @@ Done setting up ThoughtSpot
 ```
 
 
-5. **The `get-config` command** Confirm the node configuration with the `get-config` command [(Confirm node configuration)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#confirm-node-configuration).
+### Step 5: Confirm node configuration with the `get-config` command
+Confirm the node configuration with the `get-config` command [(Confirm node configuration)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#confirm-node-configuration).
 
 {: id=confirm-node-config}
-### Confirm node configuration
+#### Confirm node configuration
 ```
 $ tscli cluster get-config
 
