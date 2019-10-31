@@ -73,3 +73,9 @@ To shut down and restart your cluster, do the following in the tscli:
   `Cluster: RUNNING` <br>
   `Database: READY` <br>
   `Search Engine: READY`
+
+## Automating your cloud deployment
+
+You can automate your deployment, using the free tools in the [ThoughtSpot Cloud Deployment GitHub repository](https://github.com/thoughtspot/community-tools/tree/master/ThoughtSpot_Cloud_deployments){:target="_blank"}.
+
+For more information about automating your cloud deployment, read [Deploying ThoughtSpot in the Cloud Using Terraform and Ansible](https://www.thoughtspot.com/thoughtspot-blog/deploying-thoughtspot-cloud-using-terraform-and-ansible){:target="_blank"}.  
