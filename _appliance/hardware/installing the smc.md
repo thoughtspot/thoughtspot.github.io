@@ -112,59 +112,25 @@ Follow these steps to connect the appliance. Refer to [Appliance Port Location](
 
 1. **Connect switches to 10GbE ports** Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-port-location-the-back-of-the-smc-appliance), to the 10GbE switches on your own rack using either fiber or DAC cables.
 
-{: id="fiber-cables"}
-### Fiber Cables
-Fiber cables can be run long distances to the switch. If you decide to use fiber cables, you need multi mode fiber (MMF) 850nm cables with duplex LC connectors. Refer to [Fiber Cables example]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#smc-fiber-cables) to see what they look like.
+    See the information about the cables:
+    * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#fiber-cables)
+    * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#dac-cables)
 
-{: id="smc-fiber-cables"}
-![Fiber Cables example]({{ site.baseurl }}/images/smc-fiber-cables.png "These are fiber cables.")
+    {% include note.html content="Cables do not come with the appliance." %}
 
-Fiber cables require gigabit interface converters (GBIC), SFP+ form factor. Refer to [GBIC example]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#smc-gbic) to see what they look like.
+    Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
 
-{: id="smc-gbic"}
-![GBIC example]({{ site.baseurl }}/images/smc-gbic.png "This is a gigabit interface converter.")
+  {: id="smc-appliance-haswell-location-ports"}
 
-You must plug the GBIC into a 10GBe data port on the back of the appliance before you plug in the fiber cables. Refer to [Plugging in a GBIC]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#gbic-arrangement) for more information.
+  ![The data and management ports are on the back of the SMC Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The back of the SMC Haswell appliance")
 
-{: id="gbic-arrangement"}
-![Plugging in a GBIC]({{ site.baseurl }}/images/smc-gbic-arrangement.png "This is how to plug in a GBIC.")
+  {% include note.html content="This image of the Haswell appliance has a GBIC plugged in next to the highlighted 10GBe data port." %}
 
-You must then plug the fiber cables into the GBIC. Refer to [Plugging in the fiber cables]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#smc-fiber-arrangement) for more information.
+  {: id="smc-appliance-skylake-location-ports"}
 
-{: id="smc-fiber-arrangement"}
-![Plugging in the fiber cables]({{ site.baseurl }}/images/smc-fiber-arrangement.png "This is how to plug in the fiber cables.")
+  ![The data and management ports are on the back of the SMC Skylake appliance.]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The back of the SMC Skylake appliance")
 
-{: id="dac-cables"}
-### DAC Cables
-Copper can only be run short distances to the switch. An SFP+ is already attached to the cable. Refer to [DAC Cables example]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#smc-dac-cables) to see what they look like.
-
-{: id="smc-dac-cables"}
-![DAC Cables example]({{ site.baseurl }}/images/smc-dac-cables.png "This is what a direct attach copper cable looks like.")
-
-You can connect a DAC cable directly to the 10GBe data port. Refer to [Plugging in the DAC cables]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#smc-dac-arrangement) for more information.
-
-{: id="smc-dac-arrangement"}
-![Plugging in the DAC cables]({{ site.baseurl }}/images/smc-dac-arrangement.png "This is how to plug in a direct attach copper cable.")
-
-**Note** Cables do not come with the appliance.
-
-### Appliance Port Location: The back of the SMC appliance
-
-Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
-### Haswell appliance
-{: id="smc-appliance-haswell-location-ports"}
-
-![The back of the SMC Haswell appliance]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The data and management ports are on the back of the SMC Haswell appliance.")
-
-**Note** This image of the Haswell appliance has a GBIC plugged in next to the highlighted 10GBe data port.
-
-### Skylake appliance
-{: id="smc-appliance-skylake-location-ports"}
-
-![The back of the SMC Skylake appliance]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The data and management ports are on the back of the SMC Skylake appliance.")
-
-
-  * Connect to the switch **only** the appliances (4 nodes each) that you want to use in the cluster.  
+  * Connect to switches **only** the appliances (4 nodes each) that you want to use in the cluster.  
   * You must power off or disconnect from the switch all other appliances or nodes. This prevents accidental configuration of incorrect nodes.  
   * You must connect all nodes, even if using only one node, to a 10G switch. Verify that the connection is valid by pinging the gateway. To ping the gateway, enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
 
@@ -172,8 +138,6 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 2. **Connect IPMI ports** Connect the IPMI port of each node to the management switch; see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-port-location-the-back-of-the-smc-appliance).
 
 3. **Turn on nodes** Turn on the power for the nodes by pressing the power button; see [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#appliance-power-button-the-front-of-the-smc-appliance). Note that there is one power button for each node.
-
-### Appliance Power Button: The front of the SMC appliance
 
 {: id="smc-appliance-power-button"}
 | Haswell Appliance | &#32; &#32; &#32; | Skylake Appliance |
