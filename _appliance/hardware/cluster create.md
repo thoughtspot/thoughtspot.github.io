@@ -34,7 +34,7 @@ EX: tscli cluster create 5.0.tar.gz
 Enter a name for the cluster (alphanumeric characters only): thoughtspot-cluster  
 Enter cluster ID: 1909X00001  
 Enter IP addresses of all hosts in the cluster (space separated):
-<mark192.168.7.70  
+192.168.7.70  
 Enter email addresses for alerts (space separated, "later" to skip): prod-alerts@thoughtspot.com company@example.com
 
 ################################################################

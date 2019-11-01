@@ -129,43 +129,50 @@ Once the cluster is installed, check its status with the `tscli cluster status` 
 #### Cluster Status
 ```
 $ tscli cluster status
+Cluster: RUNNING
+Cluster name    : thoughtspot
+Cluster id      : 1234X11111
+Number of nodes : 3
+Release         : 6.0
+Last update     = Wed Oct 16 02:24:18 2019
+Heterogeneous Cluster : False
+Storage Type    : HDFS
 
-Cluster: RUNNING  
-Cluster name    : thoughtspot-cluster  
-Cluster id      : 1111X000000  
-Number of nodes : 1  
-Release         : 5.0  
-Last update     = Thu Nov 15 20:25:29 2018
-
-Database: READY  
-Number of tables in READY state: 1732  
-Number of tables in STALE state: 0  
-Number of tables in INPROGRESS state: 0  
+Database: READY
+Number of tables in READY state: 2185
+Number of tables in OFFLINE state: 0
+Number of tables in INPROGRESS state: 0
+Number of tables in STALE state: 0
 Number of tables in ERROR state: 0
 
-Search Engine: READY  
-Has pending tables. Pending time = 256393ms  
-Number of tables in KNOWN_TABLES state: 1546  
-Number of tables in READY state: 1546  
-Number of tables in WILL_REMOVE state: 0  
-Number of tables in BUILDING_AND_NOT_SERVING state: 0  
-Number of tables in BUILDING_AND_SERVING state: 1546  
-Number of tables in WILL_NOT_INDEX state: 2
+Search Engine: READY
+Has pending tables. Pending time = 1601679ms
+Number of tables in KNOWN_TABLES state: 1934
+Number of tables in READY state: 1928
+Number of tables in WILL_REMOVE state: 0
+Number of tables in BUILDING_AND_NOT_SERVING state: 0
+Number of tables in BUILDING_AND_SERVING state: 128
+Number of tables in WILL_NOT_INDEX state: 0
 ```
 ### Step 3. Finalize Installation
 
-Once the cluster status shows “Ready,” log in to the ThoughtSpot application following the steps below.
+After the cluster status changes to “Ready,” log into the ThoughtSpot application on your browser.
+Follow these steps:
 
-* Start a browser from a user’s laptop
-* Enter https://IP-of-any-node/
-* You may need to bypass the security warning: Click the **Advanced** button and then click **Proceed**
-* Verify that the ThoughtSpot login page appears [(ThoughtSpot's login page)]({{ site.baseurl }}/appliance/hardware/installing-aws.html#ts-login)
-* Enter *tsadmin* Login and *admin* password credentials and verify the user can log in successfully
+1. Start a browser from your computer.
+2. Enter your secure IP information on the address line.
+    ```
+    https:<IP-address>
+    ```
+3. If you don't have a security certificate for ThoughtSpot, you must bypass the security warning to proceed:
+  * Click **Advanced**
+  * Click **Proceed**
+4. The ThoughtSpot login page appears.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#ts-login), enter admin credentials, and click **Sign in**.
+  ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}
-#### ThoughtSpot's login page
-
-![ThoughtSpot's login page]({{ site.baseurl }}/images/ts-login-page.png "Log in to ThoughtSpot")
+![ThoughtSpot's login window]({{ site.baseurl }}/images/ts-login-page.png "Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select Remember me option.")
 
 ## References
 Use these references for successful installation and administration of ThoughtSpot.

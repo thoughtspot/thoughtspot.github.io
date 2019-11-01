@@ -36,9 +36,6 @@ Copper can only be run short distances to the switch. An SFP+ is already attache
 {: id="smc-dac-cables"}
 ![This is what a direct attach copper cable looks like.]({{ site.baseurl }}/images/smc-dac-cables.png "DAC cables example")
 
-You can connect a DAC cable directly to the 10GbE data port. Refer to [Plugging in the DAC cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#smc-dac-arrangement) for more information.
+You can connect a DAC cable directly to the 10GbE data port.
 
-{: id="smc-dac-arrangement"}
-![This is how to plug in a direct attach copper cable.]({{ site.baseurl }}/images/smc-dac-arrangement.png "Plugging in the DAC cables")
-
-{% include note.html content="Cables do not come with the appliance." %}
+{% include note.html content="SFP+'s are not included with the appliance. You can order them separately." %}
