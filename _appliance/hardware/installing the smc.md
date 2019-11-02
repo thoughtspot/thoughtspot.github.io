@@ -56,7 +56,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Network policies</td></tr>
+<td><a href="#{{ site.baseurl }}/appliance/firewall-ports.html">Network policies</a></td></tr>
 </table>
 
 See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
@@ -131,11 +131,13 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 
 * Connect to switches **only** the appliances (4 nodes each) that you want to use in the cluster.  
 * You must power off or disconnect from the switch all other appliances or nodes. This prevents accidental configuration of incorrect nodes.  
-* You must connect all nodes, even if using only one node, to a 10G switch. Verify that the connection is valid by pinging the gateway. To ping the gateway, enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+* You must connect all nodes, even if using only one node, to a 10G switch.
+* Verify that the connection is valid by pinging the gateway:
+  * Enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
 
 
 ### Step 2: Connect IPMI ports
-Connect the IPMI port of each node to the management switch; see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports).
+Connect the IPMI port of each node to the management switch. If you need help finding the ports, see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports).
 
 ### Step 3: Turn on nodes
 Turn on the power for the nodes by pressing the power button; see [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-3-turn-on-nodes).
@@ -155,19 +157,26 @@ Connect the keyboard and the mouse to the appliance, and log in using the *admin
 Once you have connected the appliance, you can begin to configure the nodes in your Mac Terminal or Windows terminal emulator.
 
 ### Step 1: Change to the `install` directory
-In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. You may have to use the `home/admin` directory if your `/install` subdirectory does not exist.
+In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. If your `/install` subdirectory does not exist, you may have to use the `home/admin` directory.
 
-### Step 2: Run the `get-config` command
+    $ cd /home/admin/install  
+
+### Step 2: Get a list of nodes to configure
 Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`.  More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
+    $ tscli cluster get-config |& tee nodes.config
 
 ### Step 3: Configure the network of nodes
-Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information. If you have  additional nodes, complete each node within the nodes.config file in the same way. Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
+2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
+  * If you have  additional nodes, complete each node within the nodes.config file in the same way.
+
+  Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 
 
-### Step 4: Run the `set-config` command
-Configure the nodes in the `nodes.config` file using the `set-config` command [(set-config)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config`.
+### Step 4: Configure the nodes
+Configure the nodes in the `nodes.config` file using the `set-config` command [(set-config)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config` in your terminal. If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#node-scout-restart).
 
 {: id="set-config-command"}
 
@@ -185,12 +194,12 @@ Setting up Timezone
 Done setting up ThoughtSpot
 ```
 #### Set-config error recovery
-If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`[(Restart node-scout service)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#node-scout-restart).
+If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
 {: id="node-scout-restart"}
 
 #### Restart node-scout service
-If you have this error, restart the node-scout.
+If you have this error, restart the node-scout:
 ```
 
 Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
@@ -199,9 +208,9 @@ Please retry or contact support.
 ```
 Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command).
 
-`$ sudo systemctl restart node-scout`
+    $ sudo systemctl restart node-scout
 
-The command output should be the following:
+The command output should no longer have a warning:
 ```
 $ cat nodes.config | tscli cluster set-config
 
@@ -217,7 +226,7 @@ Done setting up ThoughtSpot
 
 
 ### Step 5: Confirm node configuration with the `get-config` command
-Confirm the node configuration with the `get-config` command [(Confirm node configuration)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#confirm-node-configuration).
+Run `tscli cluster get-config` in your terminal to confirm node configuration.
 
 {: id=confirm-node-config}
 #### Confirm node configuration
@@ -252,14 +261,21 @@ $ tscli cluster get-config
 ```
 {: id="cluster-install"}
 ## Install Cluster
-All nodes have now been configured. Next, you must install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.
+All nodes have now been configured. Next, you must install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
+
+If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.
 
 {: id="run-installer"}
 ### 1. Run the Installer  
-Copy the downloaded release tarball to /home/admin. Then you can run the `tscli cluster create` command and edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/`. Replace '0.0' with your release number and 'hostname' with your specific hostname.
+```
+    $ scp 0.0.tar.gz admin@hostname:/home/admin/
+```
+2. Run `tscli cluster create`.
+3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
-
-The cluster installation automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
+  The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
+  Log into any node to check the current cluster status, using the command `tscli cluster status`.
 
 ### 2. Check Cluster Health
 Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#check-cluster-health).
