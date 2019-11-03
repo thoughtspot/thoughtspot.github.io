@@ -31,14 +31,14 @@ All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
 | 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB |
 | 180 GB | n1-standard-96 | 96/330 | 2X 1 TB |
 
-### VMs with Persistent Disk and Google Cloud Storage
+### VMs with Persistent Disk and Google Cloud storage
 
 ![]({{ site.baseurl }}/images/persistent-storage-ssd-gcs.svg "GCP SSD and GCS Persistent Storage")
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume |
 | --- | --- | --- |--- |
-| 208 GB | n1-highmem-64 | 64/416 | 2x 1 TB |
-| 312 GB | n1-highmem-96 | 96/624 | 2x 1.5 TB |
-| 100 GB | n1-highmem-32 | 32/208 | 2X 400 GB |
-| 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB |
-| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB |    
+| 208 GB | n1-highmem-64 | 64/416 | 1X 500 GB |
+| 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB |
+| 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB |
+| 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB |
+| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB |    
