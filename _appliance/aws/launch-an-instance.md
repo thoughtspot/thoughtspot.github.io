@@ -139,17 +139,28 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
 
-15. SSH as `admin` into the IP address of the instance, using the password: `Th0ughtSp0t`.
+## Prepare the VMs (ThoughtSpot Systems Reliability Team)
 
-16. Prepare your storage for use with your cluster, by running this command:  
-`sudo /usr/local/scaligent/bin/prepare_disks.sh`.
+{% include important.html content="This procedure is typically done by a
+ThoughtSpot Systems Reliability Engineer (SRE). Please consult
+with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-    When complete, your storage is mounted and ready for use with your cluster.
+Before we can install a ThoughtSpot cluster, an administrator must log into
+each VM through SSH as user "admin", and complete the following preparation steps:
 
-17.  Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to complete your ThoughtSpot installation.
-     They will set up the VM instances to be part of your cluster. If you created an S3 bucket to use for storage, tell them the name of your bucket.
+1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
+2. Configure each VM based on the site-survey.
 
-18.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
+   When complete, your storage is mounted and ready for use with your cluster.
+
+## Launch the cluster
+
+Upload the TS tarball to one of the VMs and proceed with the normal
+cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
+
+If you are going to use S3 as your persistent storage, you must enable it when running this command, using the **enable_cloud_storage** flag. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a`
+
+When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
 {: id="network-ports"}
 ## Open the required network ports
