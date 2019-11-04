@@ -20,6 +20,12 @@ After creating the instance, you can start to configure the nodes.
 
 ### Step 1: Log in to your cluster
 Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows.
+1. Run `ssh admin@clusterIP` or `ssh admin@hostname`.
+2. Enter your admin password.
+  * Ask your network administrator if you don't know the password.
+```
+    ssh admin@clusterIP
+```
 
 ### Step 2: Get a list of nodes to configure
 Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`. More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
