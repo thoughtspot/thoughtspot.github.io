@@ -27,48 +27,164 @@ Refer to [Parameters of the cluster create command]({{ site.baseurl }}/appliance
 {: id="run-installer"}
 
 ### Run the Installer
+The output for a hardware installation:
 ```
-$ tscli cluster create <release>   
-EX: tscli cluster create 5.0.tar.gz
-
+[admin@jessi-gcs-test ~]$ tscli cluster create 6.0-145.tar.gz
+Unpacking 6.0-145.tar.gz to /export/release_cache/e695feeec627591dc644635c0d8ea03d
 ################################################################
 #                                                              #
 #               Welcome to ThoughtSpot installer               #
 #                                                              #
 ################################################################
-
-Enter a name for the cluster (alphanumeric characters only): thoughtspot-cluster  
-Enter cluster ID: 1909X00001  
-Enter IP addresses of all hosts in the cluster (space separated):
-192.168.7.70  
-Enter email addresses for alerts (space separated, "later" to skip): prod-alerts@thoughtspot.com company@example.com
-
+Enter a name for the cluster (alphanumeric characters only): jessi-ts-gcs-test
+Enter cluster ID: 0x0000
+Enter IP addresses of all hosts in the cluster (space separated): 10.116.0.66
+Enter email addresses for alerts (space separated, "later" to skip): later
+2019-11-03 21:26:47,959 Pushing /usr/local/scaligent/toolchain/jolokia to localhost
+2019-11-03 21:26:48,195 Rsync finished on localhost
+2019-11-03 21:26:48,195 Rsync finished to all hosts
+2019-11-03 21:26:48,195 Pushing /usr/local/scaligent/toolchain/jvm to localhost
+2019-11-03 21:26:48,461 Rsync finished on localhost
+2019-11-03 21:26:48,461 Rsync finished to all hosts
+2019-11-03 21:26:48,462 Pushing /usr/local/scaligent/toolchain/hadoop to localhost
+2019-11-03 21:26:48,738 Rsync finished on localhost
+2019-11-03 21:26:48,738 Rsync finished to all hosts
+2019-11-03 21:26:48,738 Pushing /usr/local/scaligent/toolchain/zookeeper to localhost
+2019-11-03 21:26:49,004 Rsync finished on localhost
+2019-11-03 21:26:49,004 Rsync finished to all hosts
 ################################################################
-
-  Unpacking release
-
+  Setup Hadoop
 ################################################################
+Installing Zookeeper
+First deleting existing Zookeeper service
+Deleting Zookeeper
+Zookeeper Deleted
+Starting Zookeeper servers
+Zookeeper Ready
+Installing HDFS
+First deleting existing HDFS service
+Deleting HDFS
+HDFS Deleted
+Deploying configs
+Formatting and starting Primary Name Node
+Starting Data Nodes
+Setting NFS configs
+Waiting for HDFS
+HDFS Ready
+2019-11-03 21:27:06,212 Starting a secondary namenode for checkpoint...
+2019-11-03 21:27:06,551 Cannot disable unknown service: hdfs_secondary_namenode
+2019-11-03 21:27:06,552 Failed to disable new service: hdfs_secondary_namenode
+2019-11-03 21:27:07,198 HDFS secondary namenode started successfully.
+Successfully Created zookeeper znodes
+Successfully initialized HDFS files
+Successfully saved hadoop layout proto
+Successfully moved the release dir to export partition
+Successfully installed orion on localhost
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Couldn't install application services
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Couldn't install application services
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Successfully installed application services
+All nodes are now healthy
+Restarted all services
+Successfully pushed statsdb
+Successfully refreshed alert metadata
+Successfully enabled alerts
+Successfully configured new ssh keys on cluster
+Successfully recorded install event
+Successfully deleted deployer service
+2019-11-03 21:40:02,917 Cannot check for enabled status of unknown service: deploy
+```
 
-2018-09-30 23:02:20,504 Installing release on all machines  
-2018-09-30 23:02:20,504 Pushing release to all hosts  
-2018-09-30 23:02:20,504 Installing release on all hosts in parallel  
-2018-09-30 23:02:20,504 Pushing release to localhost  
-2018-09-30 23:02:20,969 Installing release on localhost  
-2018-09-30 23:04:32,741 Release installer finished on localhost  
-2018-09-30 23:04:32,741 Release installed on all hosts  
-2018-09-30 23:04:32,742 Preparing for reboot
-
+The output for a cloud installation:
+```
+admin@jessi-gcs-test ~]$ tscli cluster create ./6.0-145.tar.gz  --enable_cloud_storage gcs
+Unpacking ./6.0-145.tar.gz to /export/release_cache/e695feeec627591dc644635c0d8ea03d
 ################################################################
-
-  Rebooting cluster
-
+#                                                              #
+#               Welcome to ThoughtSpot installer               #
+#                                                              #
 ################################################################
-
-2018-09-30 23:04:32,843 Rebooting node. Run tscli cluster status after reboot to know the progress
-
-Broadcast message from root@ip-192-168-7-70(Sun 2018-09-30 23:04:32 UTC):
-
-The system is going down for reboot at Sun 2018-09-30 23:05:32 UTC!
+Enter a name for the cluster (alphanumeric characters only): jessi-ts-gcs-test
+Enter cluster ID: 0x0000
+Enter IP addresses of all hosts in the cluster (space separated): 10.116.0.66
+Enter email addresses for alerts (space separated, "later" to skip): later
+Enter the GCS bucket to be configured for the cluster: jessi-gcs-test-bucket
+Bucket successfully validated.
+2019-11-03 22:00:29,175 Pushing /usr/local/scaligent/toolchain/jolokia to localhost
+2019-11-03 22:00:29,411 Rsync finished on localhost
+2019-11-03 22:00:29,411 Rsync finished to all hosts
+2019-11-03 22:00:29,412 Pushing /usr/local/scaligent/toolchain/jvm to localhost
+2019-11-03 22:00:29,678 Rsync finished on localhost
+2019-11-03 22:00:29,678 Rsync finished to all hosts
+2019-11-03 22:00:29,678 Pushing /usr/local/scaligent/toolchain/hadoop to localhost
+2019-11-03 22:00:29,945 Rsync finished on localhost
+2019-11-03 22:00:29,945 Rsync finished to all hosts
+2019-11-03 22:00:29,945 Pushing /usr/local/scaligent/toolchain/zookeeper to localhost
+2019-11-03 22:00:30,211 Rsync finished on localhost
+2019-11-03 22:00:30,211 Rsync finished to all hosts
+################################################################
+  Setup Hadoop
+################################################################
+Installing Zookeeper
+First deleting existing Zookeeper service
+Deleting Zookeeper
+Zookeeper Deleted
+Starting Zookeeper servers
+Zookeeper Ready
+Installing HDFS
+First deleting existing HDFS service
+Deleting HDFS
+HDFS Deleted
+Deploying configs
+Formatting and starting Primary Name Node
+Starting Data Nodes
+Setting NFS configs
+Waiting for HDFS
+HDFS Ready
+2019-11-03 22:00:47,287 Starting a secondary namenode for checkpoint...
+2019-11-03 22:00:47,629 Cannot disable unknown service: hdfs_secondary_namenode
+2019-11-03 22:00:47,630 Failed to disable new service: hdfs_secondary_namenode
+2019-11-03 22:00:48,282 HDFS secondary namenode started successfully.
+Successfully Created zookeeper znodes
+Successfully initialized HDFS files
+Successfully saved hadoop layout proto
+Successfully moved the release dir to export partition
+Successfully installed orion on localhost
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Couldn't install application services
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Couldn't install application services
+Successfully connected to Orion Master
+Successfully enabled data protection
+Successfully enabled firewall
+Successfully added machines to cluster
+Successfully installed application services
+All nodes are now healthy
+Restarted all services
+Successfully pushed statsdb
+Successfully refreshed alert metadata
+Successfully enabled alerts
+Successfully configured new ssh keys on cluster
+Successfully recorded install event
+Successfully deleted deployer service
+2019-11-03 22:11:54,571 Cannot check for enabled status of unknown service: deploy
 ```
 
 ## References
