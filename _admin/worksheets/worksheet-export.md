@@ -66,7 +66,7 @@ To update an existing worksheet, follow these steps:
 
 7. In the **Update worksheet** interface, click **Upload**.
 
-   ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-browse.png "Upload the Worksheet")
+   ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-upload.png "Upload the Worksheet")
 
 8. If you constructed the Worksheet file correctly, the **Upload Worksheet** displays an *Upload successfull* message.
 
