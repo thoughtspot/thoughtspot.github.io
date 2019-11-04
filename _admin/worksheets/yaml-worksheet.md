@@ -200,7 +200,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
       <li><code>region_name</code> for specifying a region in a country<br>
           Uses two paired parameters:<br>
            - <code>country: &lt;<em>country_name</em>&gt;</code><br>
-           - <code>region_name: &lt;<em>region_name_in_UI</em>&gt;</code>, which can be State, </li>
+           - <code>region_name: &lt;<em>region_name_in_UI</em>&gt;</code>, which can be State, Postal Code, District, and so on.</li>
     </ul>  
     See <a href="../data-modeling/model-geo-data.html">Add a geographical data setting</a></dd>
   </dlentry>
@@ -364,9 +364,9 @@ There are certain limitations to the changes you can apply be editing a Workshee
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
-* It is not possible to reverse join direction in the script.
+* It is not possible to reverse the join direction in the YAML script.
 
-* It is not possible to include Worksheet filters in the script.
+* It is not possible to include Worksheet filters in the YAML script.
 
 ## Related Information
 - [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html)
