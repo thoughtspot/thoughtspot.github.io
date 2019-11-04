@@ -1,6 +1,6 @@
 ---
 title: [Worksheet YAML specification]
-last_updated: 11/01/2019
+last_updated: 11/04/2019
 summary: "ThoughtSpot worksheet specification may be exported as a YAML file, modified, and imported into the same or different cluster. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

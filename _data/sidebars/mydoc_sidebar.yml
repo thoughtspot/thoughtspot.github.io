@@ -820,6 +820,9 @@ entries:
       - title: Migrate or restore Worksheets
         url: /admin/worksheets/worksheet-export.html
         output: web,admBk
+      - title: Worksheet YAML specification
+        url: /admin/worksheets/yaml-worksheet.html
+        output: web,admBk
     - levelTwoTitle: Work with views
       output: web,ugBk
       levelTwoItems:
