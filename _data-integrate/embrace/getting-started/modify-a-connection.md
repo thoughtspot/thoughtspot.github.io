@@ -1,7 +1,6 @@
 ---
 title: [Modify a connection]
-
-last_updated: tbd
+last_updated:
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
