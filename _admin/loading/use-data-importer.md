@@ -82,6 +82,8 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
 {% include note.html content="If you are using S3 for persistent storage, and assigned the *ec2rolewithfulls3access* IAM role to your instance, you do not need to complete this step." %}
 
+To load data from an AWS S3 bucket, do the following:
+
 1.  Log in to the Linux shell using SSH.
 
 2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
@@ -120,6 +122,11 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
 If you have data in .csv format stored in an GCS bucket, you can load it directly to ThoughtSpot.
 
+### Assigning GCS read-only role to your GCP instance
+You can assign a read-only role to your ThoughtSpot GCP instance(s) so the instance(s) can access the GCS bucket from which you want to load the data. This eliminates the need to enter the GCP GCS credentials when loading your data. For details, refer to the storage setting detailed in the GCP [Create an instance]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html#create-an-instance) section.
+
+{% include note.html content="If you are using GCS for persistent storage, you already assigned the *Set access for each API* scope to your instance, and specified *Full* storage access, so you do not need to complete this step." %}
+
 ### Create the database and table
 
 1. Log in to the Linux shell using SSH.
@@ -147,7 +154,7 @@ If you have data in .csv format stored in an GCS bucket, you can load it directl
     TQL> exit;
     ```
 
-### Load data from the GCS bucket
+To load data from an GCP GCS bucket, do the following:
 
 - Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
