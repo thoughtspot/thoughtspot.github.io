@@ -7,8 +7,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) instances in your VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
-- Mode 1: Compute VMs + Persistent Disk storage-only
-- Mode 2: Compute VMs + Persistent Disk and Google Cloud Storage (GCS).
+- Mode 1: Compute VMs + SSD Persistent Disk storage-only
+- Mode 2: Compute VMs + SSD Persistent Disk and Google Cloud Storage (GCS).
 
 For more information about Persistant Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
 
