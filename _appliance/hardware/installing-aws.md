@@ -138,6 +138,10 @@ If you have not received a link to download the release tarball, open a support 
     $ scp 0.0.tar.gz admin@hostname:/home/admin/
 ```
 2. Run `tscli cluster create`.
+  * If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3`.
+```
+    tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
+```  
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.

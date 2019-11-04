@@ -16,7 +16,14 @@ To install your appliance, you must install the cluster using the release tarbal
   ```
     scp 0.0.tar.gz admin@hostname:/home/admin/
   ```
-3. **Run the `cluster create` command** Run `tscli cluster create <release-number>` in your terminal.
+3. **Run the `cluster create` command** Run `tscli cluster create <release-number>.tar.gz` in your terminal.
+  * If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage s3` or `--enable_cloud_storage gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
+```
+    tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
+```  
+```
+    tscli cluster create 6.0.tar.gz --enable_cloud_storage gcs
+```  
 4. **Specify your installation information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 5. **Wait for output** You may need to wait about 15 seconds before you see any output. The installer is unpacking files and copying them over to the nodes, which can take a few seconds.
 
@@ -106,7 +113,7 @@ Successfully deleted deployer service
 2019-11-03 21:40:02,917 Cannot check for enabled status of unknown service: deploy
 ```
 
-The output for a cloud installation:
+The output for a cloud installation, with GCS object storage:
 ```
 admin@jessi-gcs-test ~]$ tscli cluster create ./6.0-145.tar.gz  --enable_cloud_storage gcs
 Unpacking ./6.0-145.tar.gz to /export/release_cache/e695feeec627591dc644635c0d8ea03d
