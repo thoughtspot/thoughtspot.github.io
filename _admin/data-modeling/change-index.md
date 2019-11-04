@@ -1,9 +1,7 @@
 ---
 title: ["Manage suggestion indexing"]
-
-
 last_updated: tbd
-summary: " ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
+summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
@@ -91,7 +89,7 @@ or in the **Index** value in the modeling file.
 
 The values you can set for **INDEX TYPE** are:
 
-<table>
+<table id="index-type">
 <colgroup>
     <col style="width:30%">
     <col style="width:70%">
