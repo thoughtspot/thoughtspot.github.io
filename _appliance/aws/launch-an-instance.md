@@ -63,7 +63,6 @@ To install and launch ThoughtSpot, you must have the following:
 
 {: id="s3-bucket-setup"}
 ## Setting up your Amazon S3 bucket
-***This is optional.***
 
 If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the S3 storage option.
 
@@ -85,8 +84,6 @@ To set up an Amazon S3 bucket in AWS, do the following:
 
 {: id="encrypt"}
 ## Encrypting your data at rest on Amazon EBS or S3 in AWS
-
-***This is optional.***
 
 ThoughtSpot makes use of EBS for the data volumes to store persistent data (in the EBS deployment model) and the boot volume (in the EBS and S3 deployment models). ThoughtSpot recommends that you encrypt your data volumes prior to setting up your ThoughtSpot cluster.
 If you are using the S3 persistent storage model, you can encrypt the S3 buckets using SSE-S3. ThoughtSpot does not currently support AWS KMS encryption for AWS S3.  

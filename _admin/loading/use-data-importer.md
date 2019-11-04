@@ -114,4 +114,103 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
     {% include note.html content="<b>*<b>AWS S3 credentials is not used in the 5.3.1 release, if an S3 read-only role is assigned to your instance." %}
 
-4.  After the processing begins, progress messages appear, and then source and load summary messages after the load is complete.    
+4.  After the processing begins, progress messages appear, and then source and load summary messages after the load is complete.
+
+## Loading data from a GCP GCS bucket
+
+If you have data in .csv format stored in an GCS bucket, you can load it directly to ThoughtSpot.
+
+### Create the database and table
+
+1. Log in to the Linux shell using SSH.
+2. Invoke TQL:
+
+    ```
+    $ tql
+
+    TQL>
+    ```
+3. Create the database:
+
+    ```
+    TQL> CREATE DATABASE temp;
+    ```    
+4. Connect to the database:
+
+    ```
+    TQL> USE temp;
+    ```
+5. Create the table
+
+    ```
+    TQL> create table teams (id int, name VARCHAR(255));
+    TQL> exit;
+    ```
+
+### Load data from the GCS bucket
+
+- Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
+
+   ```
+   $ tsload --source_file /gs/default/team.csv
+           --target_database temp
+           --target_table teams
+           --gs_bucket_name "my_gcs_bucket"
+           --has_header_row 2>/dev/null
+
+   $ Header row read successfully
+     Source has 2 data rows, has header row, ignored row count 0
+     Waiting for rows to commit...(please wait)
+     Source summary
+     --------------
+     Data source:                 /gs/default/team.csv
+     Source data format           csv
+     Header row?                  yes
+     Tokenizer Options:           escape_char: "" field_separator: "," enclosing_char: "\"" null_value: "(null)" trailing_field_separator: false
+     Date format:                 %Y%m%d
+     Date time format:            %Y%m%d %H:%M:%S
+     Flexible mode?               no
+     Load summary
+     ------------
+     Target table:                teams
+     Should empty target?         no
+     Status:                      Successful
+     Rows total:                  2
+     Rows successfully loaded:    2
+     Rows failed to load:         0
+     % of Rows successfully loaded: 100.00 %
+     Load Rate (MB/s):             0.00 MB/s
+     Load Rate (Rows/s):           1.13 Rows/s
+     Start time (Wallclock):       Wed Oct 30 23:30:11
+     End time (Wallclock):         Wed Oct 30 23:30:13
+     Total load time = 1.78 seconds = 0.03 minutes = 0.00 hours
+     Data size = 19 bytes = 0.02 KB = 0.00 MB
+     ```
+
+### Verify the table contents
+
+1. Invoke TQL:
+
+    ```
+    $ tql
+
+    TQL>
+    ```
+2. Connect to the database:
+
+    ```
+    TQL> USE temp;
+    ```        
+3. Show the table data:
+
+   ```
+   TQL> select * from teams;
+   ```
+   Table contents are displayed:
+
+   ```
+   id|name
+   -------
+   1|sameer
+   2|sandeep
+   ```
