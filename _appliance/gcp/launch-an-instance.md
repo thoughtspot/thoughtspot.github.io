@@ -157,5 +157,5 @@ To determine which network ports to open for a functional ThoughtSpot cluster, s
 
 ## Related information
 
-[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets)  
+[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
 [Loading data from an GCP GCS bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
