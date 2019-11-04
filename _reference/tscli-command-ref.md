@@ -656,8 +656,8 @@ This subcommand has the following options:
       <dd><p>Disables cluster rotate key configuration.</p>
       <p>The default is <code>False</code>.</p></dd></dlentry>
       <dlentry>
-      <dt><code>--enable_cloud_storage</code></dt>
-      <dd>Determines whether to enable Coud Storage setup.
+      <dt><code>--enable_cloud_storage {s3a,gcs}</code></code></dt>
+      <dd>Determines whether to enable Cloud Storage setup, and which storage format to use.
       </dd></dlentry>
       <dlentry>
       <dt><code>heterogeneous</code></dt>

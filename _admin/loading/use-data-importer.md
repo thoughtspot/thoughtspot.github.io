@@ -84,7 +84,7 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
 To load data from an AWS S3 bucket, do the following:
 
-1.  Log in to the Linux shell using SSH.
+1.  Log in to the Linux shell of your AWS instance using SSH.
 
 2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
@@ -129,7 +129,7 @@ You can assign a read-only role to your ThoughtSpot GCP instance(s) so the insta
 
 ### Create the database and table
 
-1. Log in to the Linux shell using SSH.
+1. Log in to the Linux shell of your GCP instance using SSH.
 2. Invoke TQL:
 
     ```

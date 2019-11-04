@@ -147,3 +147,5 @@ each VM through SSH as user "admin", and complete the following preparation step
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
+
+If you are going to use GCS as your persistent storage, you must enable it when running this command. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=gcs`
