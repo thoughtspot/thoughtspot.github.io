@@ -49,8 +49,6 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 8. For advanced settings, leave Encryption set to **Google-managed key**, do not set a retention policy, and click **CREATE**.
 
-9. In the Bucket detail screen, click the **Permissions** tab, and make sure the following member is checked for the Storage Admin role: **567354788853-compute@developer.gserviceaccount.com**.
-
 When you create your instance, make sure you set Storage to **Full** access.
 
 ## Create an instance
