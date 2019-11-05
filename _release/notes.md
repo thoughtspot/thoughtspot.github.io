@@ -37,7 +37,7 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 ## 6.0 New Features and Functionality
 
 ### Mobile
-You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPAd devices. ThoughtSpot Mobile works for releases 5.1 and later.
+You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
 Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
@@ -57,23 +57,33 @@ Worksheet scriptability supports metadata migration from development to producti
 
 See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)]
 
-### TBD
-TBD
+### Embrace now supports Amazon Redshift
+You can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot. As with Snowflake, you can sync the data into ThoughtSpot later, if you want. Support for **Amazon Redshift is in beta**.
+
+Also, the following features are now supported for linked tables:
+- Search suggestions for column values
+- Indexing of table columns
+- Remapping of tables and columns
+
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 <!-- ### New group functions
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
 
-### Streamlined AWS data loading from an S3 bucket
-You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+### Google Cloud Platform GCS persistent storage option
+You can now reduce the cost of an GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
+
+### Streamlined GCP data loading from an GCS bucket
+You can now load data from an Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from an GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
 
 {: id="6-fixed"}
 ## 6.0 Fixed Issues
 
 The following issues are fixed in the 6.0 release:
 
-- TBD
-- TBD
+- The `tscli cluster download-release` command sometimes does not work correctly.
+- The date dimension attribute is removed from the query for all date aggregations, except for DETAILED.
 
 {: id="beta-program"}
 ## Beta Programs

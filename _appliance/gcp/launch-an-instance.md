@@ -49,7 +49,7 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 8. For advanced settings, leave Encryption set to **Google-managed key**, do not set a retention policy, and click **CREATE**.
 
-When you create your instance, make sure you set Storage to **Full** access.
+When you create your instance, make sure you set Storage to **Read Write** access.
 
 ## Create an instance
 
@@ -124,7 +124,7 @@ When you create your instance, make sure you set Storage to **Full** access.
 8. (For use with GCS only) In the Identity and API access section, make sure Service account is set to **Compute Engine default service account**, and under Access scopes, select **Set access for each API**.
 
 9. (For use with GCS only) Scroll down to the Storage setting, and set it to one of the following options:
-   - To use Google Cloud Storage (GCS) as persistent storage for your instance, select **Full**.
+   - To use Google Cloud Storage (GCS) as persistent storage for your instance, select **Read Write**.
    - To only use GCS to load data into ThoughtSpot, select **Read Only**.
 
 10. Customize the network settings as needed, preferably use your default VPC settings.
@@ -154,3 +154,8 @@ If you are going to use GCS as your persistent storage, you must enable it when 
 ## Open the required network ports
 
 To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+
+## Related information
+
+[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
+[Loading data from a GCP GCS bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
