@@ -79,7 +79,7 @@ To delete a table:
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-4. Find the table you want to remove in the list, and check the box next to its name.
+4. Find the table you want to delete in the list, and check the box next to its name.
 
 5. Click **Delete**.
 
