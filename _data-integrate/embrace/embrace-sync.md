@@ -11,11 +11,12 @@ When you create a connection to Snowflake, the selected tables and columns in yo
 
 Sync copies selected tables or columns into ThoughtSpot. By syncing your tables and columns, your data is indexed, which improves search speed. You can sync manually at any time, and also schedule your sync.
 
-### Sync manually
+### Syncing manually
 
 You can manually sync one or more tables in a connection.
 
 To sync manually:
+
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
@@ -30,9 +31,10 @@ To sync manually:
 
 The status of the sync appears in the Last Synced column and refreshes to indicate when the sync was completed.
 
-### Schedule sync
+### Scheduling sync
 
 To schedule sync:
+
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Connections** tab at the top of the page.
@@ -45,31 +47,31 @@ To schedule sync:
 
 5. Click **Schedule**.
 
-6. In the *Sync table schedule* window, set the following items:  
-    A. For *Repeats*, select how often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
+6. In the *Sync table schedule* window, use the **Select interval** drop-down menu to set the following items:  
+    A. How often you want to sync (**Hourly**, **Daily**, **Weekly**, or **Monthly**).  
     B. Select a sync mode:
     - **Append** adds to the current data.
     - **Overwrite** replaces the current data.  
-7. (Optional) Enter a Snowflake condition to be added to the search query.
+7. (Optional) Enter a filter condition to be added to the search query.
 
-8. (Optional) If you want to shard the data as it is synced, click **Show Advanced settings** and enter the **Primary key**, **Sharding key** and **Number of shards**.
+8. (Optional) If you want to shard the data as it is synced, click **Show advanced settings** and enter the **Primary key**, **Sharding key** and **Number of shards**.
 
 9. Click **Schedule**
 
    The schedule is saved and runs automatically at the selected time.  
    Every time the schedule is run, it is listed in the History list.
 
-#### Update or remove a schedule
+#### Updating or removing a schedule
 
 To update a schedule:
 
 1. From the sync tab of the table you want to update, click **Schedule**.
 
-2. In the *Sync table* window, make your changes and click **Update Schedule**.
+2. In the *Sync table schedule* window, make your changes and click **Update schedule**.
 
 To remove a schedule:
 
-- From the sync tab of the table you want to update, click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remove Schedule**.
+- From the sync tab of the table you want to update, click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete schedule**.
 
 
 ## Related information
