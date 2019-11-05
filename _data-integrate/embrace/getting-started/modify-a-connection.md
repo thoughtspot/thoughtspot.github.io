@@ -19,12 +19,14 @@ You can edit a connection to add tables and columns.
 To edit a connection:
 
 1. Click **Data** in the top navigation bar.
+
 2. Click the **Connections** tab at the top of the page.
-3. Select the connection type of interest on Connections list page.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+3. Click the name of the connection you want to edit.
 
-4. Click **Edit Connection** at the upper-right-hand side of the page.
+   ![]({{ site.baseurl }}/images/select-connection.png "select Connection")
+
+4. Click **Edit connection** at the upper-right-hand side of the page.
 
    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
 
@@ -32,7 +34,7 @@ To edit a connection:
 
    ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
 
-6. Click **Update** to reflect the connection details.
+6. Click **Update** to save the connection details.
 
 To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
 
@@ -43,12 +45,14 @@ Modify the connection parameters by editing the source mapping<code> yaml </code
 To remap a connection:
 
 1. Click **Data** in the top navigation bar.
+
 2. Click the **Connections** tab at the top of the page.
-3. Select the connection type of interest on Connections list page.
+
+3. Click the name of the connection you want to remap.
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-4. Click ellipses icon **...** and **Remapping** on the upper-right-hand side of the page.
+4. Click ellipses icon **...** and select **Remapping** on the upper-right-hand side of the page.
 
     ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
@@ -60,19 +64,23 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
-7. Finally, upload the mapping file to reflect the new mapping in the existing connection.
+7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 ## Deleting a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
 
 To delete a table:
+
 1. Click **Data** in the top navigation bar.
+
 2. Click the **Connections** tab at the top of the page.
-3. Select the connection type of interest.
+
+3. Click the name of the connection that contains the table you want to delete.
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
 4. Find the table you want to remove in the list, and check the box next to its name.
+
 5. Click **Delete**.
 
     ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
@@ -91,9 +99,13 @@ You can also click the name of a table and then click the linked objects to to s
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
 To delete a connection:
+
 1. Click **Data** in the top navigation bar.
+
 2. Click the **Connections** tab at the top of the page.
+
 3. Check the box next to the connection you want to delete.
+
 4. Click **Delete**.
 
    ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
@@ -105,4 +117,3 @@ To delete a connection:
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
 6. When all its dependencies are removed, delete the connection by clicking **Delete**.
-    ![]({{ site.baseurl }}/images/final-delete.png "delete connection type")
