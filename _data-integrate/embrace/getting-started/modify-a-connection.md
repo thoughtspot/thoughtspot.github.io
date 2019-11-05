@@ -52,7 +52,7 @@ To remap a connection:
 
    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
-4. Click ellipses icon **...** and select **Remapping** on the upper-right-hand side of the page.
+4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
     ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
 
