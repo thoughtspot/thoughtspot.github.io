@@ -56,7 +56,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td><a href="#{{ site.baseurl }}/appliance/firewall-ports.html">Network policies</a></td></tr>
+<td>Network policies</td></tr>
 </table>
 
 See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
@@ -68,11 +68,11 @@ You can deploy ThoughtSpot on two different appliance hardware platforms: Haswel
 {: id="hardware-details"}
 | Details | Haswell | Skylake |
 | --- | --- | --- |
-| Dimensions | 2 RU chassis (17.25" x 3.47" x 28.5" (WxHxD)) | 2 RU chassis (17.6" x 3.47" x 28.75" (WxHxD)) |
-| # of nodes | Populated with 1 to 4 nodes | Populated with 1 to 4 nodes |
-| Node specifications | Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x 2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240GB SSD, 3x 2TB HDD |
-| Max power consumption | 2000 W | 2200 W |
-| Required power input | 200-240V / 11.8 - 9.8A / 50-60Hz | 220-240 VAC  50-60 Hz |
+| <strong>Dimensions</strong> | 2 RU chassis (17.25" x 3.47" x 28.5" (WxHxD)) | 2 RU chassis (17.6" x 3.47" x 28.75" (WxHxD)) |
+| <strong># of nodes</strong> | Populated with 1 to 4 nodes | Populated with 1 to 4 nodes |
+| <strong>Node specifications</strong> | Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x 2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240GB SSD, 3x 2TB HDD |
+| <strong>Max power consumption</strong> | 2000 W | 2200 W |
+| <strong>Required power input</strong> | 200-240V / 11.8 - 9.8A / 50-60Hz | 220-240 VAC  50-60 Hz |
 
 {: id="hardware-front-back-diagrams"}
 ### Hardware front and back view diagrams
@@ -105,8 +105,6 @@ These pictures show the front and back views of each appliance.
 
 After you rack and stack the appliance, you can begin to configure it. If needed, review the [Hardware Appliance Overview]({{ site.baseurl }}/appliance/hardware/inthebox.html).
 
-Follow these steps to connect the appliance. Refer to [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports) and [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-3-turn-on-nodes).
-
 ### Step 1: Connect switches to 10GbE ports
 Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports), to the 10GbE switches on your own rack using either fiber or DAC cables.
 
@@ -133,8 +131,10 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 * You must power off or disconnect from the switch all other appliances or nodes. This prevents accidental configuration of incorrect nodes.  
 * You must connect all nodes, even if using only one node, to a 10G switch.
 * Verify that the connection is valid by pinging the gateway:
-  * Enter `ping <default gateway IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
-
+  * Enter `ping <default-gateway-IP>`. Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+```  
+    $ ping <default-gateway-IP>
+```    
 
 ### Step 2: Connect IPMI ports
 Connect the IPMI port of each node to the management switch. If you need help finding the ports, see [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports).
@@ -154,7 +154,7 @@ Connect the keyboard and the mouse to the appliance, and log in using the *admin
 
 {: id="Configure-Node-in-Terminal"}
 ## Configure Nodes in Terminal
-Once you have connected the appliance, you can begin to configure the nodes in your Mac Terminal or Windows terminal emulator.
+Once you have connected the appliance, configure the nodes in your Mac Terminal or Windows terminal emulator.
 
 ### Step 1: Change to the `install` directory
 In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. If your `/install` subdirectory does not exist, you may have to use the `home/admin` directory.
@@ -162,12 +162,12 @@ In your terminal, change directory to `/home/admin/install` by running the comma
     $ cd /home/admin/install  
 
 ### Step 2: Get a list of nodes to configure
-Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`.  More information on this procedure can be found in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
+Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`. You can find more information on this process in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
     $ tscli cluster get-config |& tee nodes.config
 
 ### Step 3: Configure the network of nodes
-1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
 2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
   * If you have  additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -176,7 +176,7 @@ Run the `tscli cluster get-config` command to get a list of the nodes that must 
 
 
 ### Step 4: Configure the nodes
-Configure the nodes in the `nodes.config` file using the `set-config` command [(set-config)]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config` in your terminal. If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#node-scout-restart).
+Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config` in your terminal. If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#node-scout-restart).
 
 {: id="set-config-command"}
 
@@ -201,7 +201,6 @@ If the set-config fails with the following warning, restart the node-scout servi
 #### Restart node-scout service
 If you have this error, restart the node-scout:
 ```
-
 Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
 Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
@@ -261,7 +260,7 @@ $ tscli cluster get-config
 ```
 {: id="cluster-install"}
 ## Install Cluster
-All nodes have now been configured. Next, you must install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
+Next, install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
 
 If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.
 
@@ -271,7 +270,7 @@ If you have not received a link to download the release tarball, open a support 
 ```
     $ scp 0.0.tar.gz admin@hostname:/home/admin/
 ```
-2. Run `tscli cluster create`.
+2. Run `tscli cluster create <release>`.
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
