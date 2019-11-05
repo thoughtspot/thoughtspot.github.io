@@ -29,7 +29,7 @@ To sync manually:
 
     ![]({{ site.baseurl }}/images/sync.png "Table sync")
 
-The status of the sync appears in the Last Synced column and refreshes to indicate when the sync was completed.
+The status of the sync appears in the _Last synced_ column and refreshes to indicate when the sync was completed.
 
 ### Scheduling sync
 
