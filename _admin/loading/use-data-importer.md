@@ -120,7 +120,7 @@ To load data from an AWS S3 bucket, do the following:
 
 ## Loading data from a GCP GCS bucket
 
-If you have data in .csv format stored in an GCS bucket, you can load it directly to ThoughtSpot.
+If you have data in .csv format stored in a GCS bucket, you can load it directly to ThoughtSpot.
 
 ### Assigning GCS read-only role to your GCP instance
 You can assign a read-only role to your ThoughtSpot GCP instance(s) so the instance(s) can access the GCS bucket from which you want to load the data. This eliminates the need to enter the GCP GCS credentials when loading your data. For details, refer to the storage setting detailed in the GCP [Create an instance]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html#create-an-instance) section.

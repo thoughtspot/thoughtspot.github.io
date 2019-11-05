@@ -36,12 +36,12 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
-### Mobile
+<!-- ### Mobile
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
 Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
-See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
+See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).-->
 
 ### GeoMaps
 ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html).
@@ -72,10 +72,10 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
 
 ### Google Cloud Platform GCS persistent storage option
-You can now reduce the cost of an GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
+You can now reduce the cost of a GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
 
-### Streamlined GCP data loading from an GCS bucket
-You can now load data from an Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from an GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
+### Streamlined GCP data loading from a GCS bucket
+You can now load data from a Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
 
 {: id="6-fixed"}
 ## 6.0 Fixed Issues
