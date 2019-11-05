@@ -57,12 +57,22 @@ Worksheet scriptability supports metadata migration from development to producti
 
 See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)]
 
-### TBD
-TBD
+### Embrace now supports Amazon Redshift
+You can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot. As with Snowflake, you can sync the data into ThoughtSpot later, if you want. Support for **Amazon Redshift is in beta**.
+
+Also, the following features are now supported for linked tables:
+- Search suggestions for column values
+- Indexing of table columns
+- Remapping of tables and columns
+
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 <!-- ### New group functions
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
+
+### Google Cloud Platform GCS persistent storage option
+You can now reduce the cost of an GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
 
 ### Streamlined GCP data loading from an GCS bucket
 You can now load data from an Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from an GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
