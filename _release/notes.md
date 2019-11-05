@@ -37,7 +37,7 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 ## 6.0 New Features and Functionality
 
 ### Mobile
-You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPAd devices. ThoughtSpot Mobile works for releases 5.1 and later.
+You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
 Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
@@ -64,16 +64,16 @@ TBD
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
 
-### Streamlined AWS data loading from an S3 bucket
-You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+### Streamlined GCP data loading from an GCS bucket
+You can now load data from an Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from an GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
 
 {: id="6-fixed"}
 ## 6.0 Fixed Issues
 
 The following issues are fixed in the 6.0 release:
 
-- TBD
-- TBD
+- The `tscli cluster download-release` command sometimes does not work correctly.
+- The date dimension attribute is removed from the query for all date aggregations, except for DETAILED.
 
 {: id="beta-program"}
 ## Beta Programs

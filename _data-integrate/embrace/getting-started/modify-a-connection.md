@@ -12,7 +12,7 @@ You can modify a connection in the following ways:
 - Delete a table
 - Delete a connection
 
-## Edit a connection
+## Editing a connection
 
 You can edit a connection to add tables and columns.
 
@@ -36,7 +36,7 @@ To edit a connection:
 
 To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
 
-## Remap a connection
+## Remapping a connection
 
 Modify the connection parameters by editing the source mapping<code> yaml </code>file that was created when you adding the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
@@ -62,7 +62,7 @@ To remap a connection:
 
 7. Finally, upload the mapping file to reflect the new mapping in the existing connection.
 
-## Delete a table
+## Deleting a table
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
 
 To delete a table:
@@ -87,7 +87,7 @@ To delete a table:
 
 You can also click the name of a table and then click the linked objects to to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
-## Delete a connection
+## Deleting a connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
 To delete a connection:
