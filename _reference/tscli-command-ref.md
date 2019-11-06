@@ -2063,6 +2063,10 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli ssl add-valid-hosts [-h] <em>VALID_HOSTS</em></code></dt>
     <dd>Enables host validation for the specified host(s). Helps improve security. This feature is for all customers that have already enabled SSL or are going to. Multiple hosts must be separated by a comma (,).</dd>
+    <dd>Examples:</dd>
+    <dd>1. If you want to make sure the valid host is <b>cluster1.corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts cluster1.corp.example.com</code></dd>
+    <dd>2. If you want to allow all hosts which have the suffix <b>corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.example.com</code>. This wild card could be anywhere in the command.</dd>
+    <dd>3. If you want to allow multiple valid hosts, for example both <b>*.corp.example.com</b> and <b>cluster1</b>, you would run command: <br><code>tscli ssl add-valid-hosts *.corp.thoughtspot.com,champagne</code></dd>
   </dlentry>
 
 </dl>
