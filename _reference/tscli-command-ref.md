@@ -2007,7 +2007,7 @@ This subcommand has the following option:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status,add-valid-hosts}
 ```        
 This subcommand manages the SSL configuration.
 
@@ -2059,6 +2059,10 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli ssl tls-status [-h]</code></dt>
     <dd>Prints the status of TLS support.</dd>
+  </dlentry>
+  <dlentry>
+    <dt><code>tscli ssl add-valid-hosts [-h] <em>VALID_HOSTS</em></code></dt>
+    <dd>Enables host validation for the specified host(s). Helps improve security. This feature is for all customers that have already enabled SSL or are going to. Multiple hosts must be separated by a comma (,).</dd>
   </dlentry>
 
 </dl>
