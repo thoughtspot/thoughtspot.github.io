@@ -109,7 +109,7 @@ The enhancements to Answer Explorer include the following:
 
 * Filters
 
-  Search field can now accept any value, including a column name. After you enter your value, press Enter, or click **Add**.
+  Search field can now accept any value, including a column name. After you enter your value, press **Enter**, or click **Add**.
 
 * Comparisons
 
