@@ -55,7 +55,38 @@ You can now **Export** Worksheets by downloading them to a `*.yaml` file, make c
 
 Worksheet scriptability supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
 
-See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)]
+See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)
+
+### Chart Configuration
+
+This release introduces a complete new approach that makes chart configuration much easier and more intuitive, as demonstrated in the following video.
+
+<p><strong>An overview of chart configuration</strong></p>
+<script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_v408bchsqf videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/v408bchsqf/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+The scope of improvements and changes in chart configuration includes the following:
+
+* Added drag-and-drop chips
+
+  Automatically adding new measures to the chart as "Not visualized" after incrementing search terms, and then moving them onto the axis.
+
+* Improved number formatting
+
+  All data labels on the chart marks (bars, bubbles, lines), and on the axes can use numbers, percentages, currencies, and specified units.
+
+  Can use units "as is" (auto mode), or change to millions, trillions, and billions (K, M, B).
+
+  Can easily specify the number of decimal places.
+
+* Independent control of each measure
+
+   For example, a chart with three lines that have labels on each data point may look busy. You can choose to show labels on only one line or series.
+
+* Simple time bucketing   
+
+* Intuitive color configuration
+
+* Column renaming for pivot Tables and regular tables, wrapping and clipping.
 
 ### Embrace now supports Amazon Redshift
 You can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot. As with Snowflake, you can sync the data into ThoughtSpot later, if you want. Support for **Amazon Redshift is in beta**.

@@ -232,6 +232,11 @@ entries:
         - title: Change the chart
           url: /end-user/search/change-the-chart.html
           output: web,ugBk
+        # new with ChartConfig changes
+        - title: Change axes options
+          url: /end-user/search/chart-axes-options.html
+          output: web,ugBk
+        # older topics
         - title: Reorder the labels
           url: /end-user/search/reorder-values-on-the-x-axis.html
           output: web,ugBk
