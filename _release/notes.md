@@ -117,7 +117,7 @@ Answer Explorer includes the following features:
 
 * Breakdowns
 
-  Change time bucket for time series: monthly, weekly, daily, or quarterly. Improved relevance and user experience. Easier to add a new attribute or replace and existing one.
+  Change time bucket for time series: monthly, weekly, daily, or quarterly. Easier to add a new attribute or replace and existing one.
 
 * Metrics  
 
