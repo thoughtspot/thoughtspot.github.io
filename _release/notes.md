@@ -98,6 +98,13 @@ Also, the following features are now supported for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
+### Answer Explorer
+
+This release introduces Answer Explorer, which provides you AI-guided exploration of pinboards with a single click.
+
+<p><strong>An overview of Answer Explorer</strong></p>
+
+
 <!-- ### New group functions
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
