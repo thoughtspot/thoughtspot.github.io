@@ -100,10 +100,41 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 
 ### Answer Explorer
 
-This release introduces Answer Explorer, which provides you AI-guided exploration of pinboards with a single click.
+This release enhances Answer Explorer, which provides you AI-guided exploration of pinboards with a single click.
 
 <p><strong>An overview of Answer Explorer</strong></p>
+<script src="https://fast.wistia.com/embed/medias/iu2ho8imd3.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_iu2ho8imd3 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:84px;position:relative;width:150px">&nbsp;</span>
 
+The enhancements to Answer Explorer include the following:
+
+* Filters
+
+  Search field can now accept any value, including a column name. After you enter your value, press Enter, or click **Add**.
+
+* Comparisons
+
+  New section which allows you to easily do "versus" comparisons.
+
+* Breakdowns
+
+  Change time bucket for time series: monthly, weekly, daily, or quarterly. Improved relevance and user experience. Easier to add a new attribute or replace and existing one.
+
+* Metrics  
+
+  "Also include" allows you to add a metric. Changing a column allows you to replace a metric.
+
+Overall enhancements:
+
+* Improved relevance
+* Improved usability
+* Column names appear separately from search values
+* Undo goes back to the last change
+* Copy and edit retains all changes
+* Seamlessly switch from Answer Explorer to Search
+
+### Ask an Expert
+
+TBD
 
 <!-- ### New group functions
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
