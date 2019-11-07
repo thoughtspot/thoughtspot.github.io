@@ -59,39 +59,23 @@ See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/workshee
 
 ### Chart Configuration
 
-This release introduces a complete new approach that makes chart configuration much easier and more intuitive, as demonstrated in the following video.
+This release introduces a complete new approach that makes chart configuration much easier and more intuitive.
 
-<p><strong>An overview of chart configuration</strong></p>
+<strong>Chart configuration overview</strong>
+
 <script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_v408bchsqf videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/v408bchsqf/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 
-The scope of improvements and changes in chart configuration includes the following:
-
-* Added drag-and-drop chips
-
-  Automatically adding new measures to the chart as "Not visualized" after incrementing search terms, and then moving them onto the axis.
-
-* Improved number formatting
-
-  All data labels on the chart marks (bars, bubbles, lines), and on the axes can use numbers, percentages, currencies, and specified units.
-
-  Can use units "as is" (auto mode), or change to millions, trillions, and billions (K, M, B).
-
-  Can easily specify the number of decimal places.
-
-* Independent control of each measure
-
-   For example, a chart with three lines that have labels on each data point may look busy. You can choose to show labels on only one line or series.
-
-* Simple time bucketing   
-
-* Intuitive color configuration
-
-* Column renaming for pivot Tables and regular tables, wrapping and clipping.
+* <strong>Add drag-and-drop chips</strong> automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
+* <strong>Improve number formatting</strong> for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
+* <strong>Independent control of each measure</strong> in a chart helps you reduce noise by applying labels only where you need it.
+* <strong>Simple time bucketing</strong> lets you change granularity of time series.
+* <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
+* <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
 
 ### Embrace now supports Amazon Redshift
 You can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot. As with Snowflake, you can sync the data into ThoughtSpot later, if you want. Support for **Amazon Redshift is in beta**.
 
-Also, the following features are now supported for linked tables:
+ThoughtSpot now supports the following features for linked tables:
 - Search suggestions for column values
 - Indexing of table columns
 - Remapping of tables and columns
@@ -101,6 +85,22 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 <!-- ### New group functions
 - [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
 - [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
+
+### Sharing
+
+We improved the experience of sharing answers and Pinboards through better email notifications, with embedded links.
+
+<strong>Sharing Pinboards and Answers</strong>
+
+<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_g05dmacmng videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/g05dmacmng/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+### Access request and granularity
+
+To enhance the ease of sharing, we simplified and reinforced the workflow for access request and grant of privileges to Pinboards, Answers, and Data sources.
+
+<strong>Requesting and granting access to Pinboards and Answers</strong>
+
+<script src="https://fast.wistia.com/embed/medias/34nrrb385a.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_34nrrb385a videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/34nrrb385a/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 
 ### Google Cloud Platform GCS persistent storage option
 You can now reduce the cost of a GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
@@ -122,7 +122,7 @@ If you are interested in seeing some of our newest features, we want to add you 
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
 These features are currently in Beta. Please contact us if you are interested in participating:
 - Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
-- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query the new supported external database, Amazon Redshift.
 
 {: id="notes-for-older-versions"}
 ## Notes from Older Versions
