@@ -1,7 +1,7 @@
 ---
 title: [About your user profile]
 last_updated: 10/07/2019
-summary: "The user icon lets you view your profile, adjust language options, specify notification preferenses, revisit onboarding, or sign out of ThoughtSpot."
+summary: "The user icon lets you view your profile, adjust language options, specify notification preferences, revisit onboarding, or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
