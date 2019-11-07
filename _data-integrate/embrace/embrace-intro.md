@@ -40,14 +40,15 @@ When you create your connection to an external database, by default, it is a **L
 | *Simple Search* | Yes | Yes |
 | *Complex searches like Versus, Inline Subquerying, Growth* | Yes | Yes |
 | *Search Suggestions for column names* | Yes | Yes |
-| *Search Suggestions for column values* | No | Yes |
+| *Search Suggestions for column values* | Yes | Yes |
 | *Headlines at the bottom that summarize tables* | Yes | Yes |
 | *All Chart Types & Configurations* | Yes | Yes |
 | *SpotIQ Instant Insights* | No | Yes |
 | *SpotIQ pre-computed insights* | No | Yes |
-| *Table and Column Remapping* | No | N/A |
+| *Table and Column Remapping* | Yes | N/A |
 | *Custom Calendar* | No | Yes |
 | *Materialized Views* | No | Yes |
+| *Indexing of table columns* | Yes | Yes |
 
 ## Next steps
 
