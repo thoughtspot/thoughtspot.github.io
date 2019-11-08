@@ -29,7 +29,7 @@ tscli [-h]
        cluster, command, dr-mirror, etl, event, feature, fileserver,
        firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
        node, notification, onboarding, patch, rpackage, saml, scheduled-pinboards, set, smtp, snapshot,
-       snapshot-policy, socialproof spot, sssd, ssl, storage, support,
+       snapshot-policy, socialproof, spot, ssl, sssd, storage, support,
        tokenauthentication}
 </pre>
 
@@ -117,7 +117,7 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli alert info</code></dt>
-    <dd>Lists all alerts. Add <code>silenced</code> to list only silenced alerts, <code>active</code> to list only active alerts, or <code>detailed</code> to get detailed alert information.</dd>
+    <dd>Lists all alerts. Add <code>--silenced</code> to list only silenced alerts, <code>--active</code> to list only active alerts, or <code>--detailed</code> to get detailed alert information.</dd>
   </dlentry>
 
   <dlentry>
@@ -153,7 +153,7 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli alert silence --name NAME</code></dt>
-    <dd>Silences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
+    <dd>Silences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres; however, emails are not sent out.</dd>
   </dlentry>
 
   <dlentry>
@@ -283,7 +283,7 @@ tscli backup [-h] {create,delete,ls,restore}
         </dlentry>
         <dlentry>
         <dt><code>--enable_cloud_storage</code></dt>
-          <dd>Determines whether to enable Cloud Storage setup.</dd>
+          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>.</dd>
         </dlentry>
         <dlentry>
         <dt>--heterogeneous</dt>
@@ -321,15 +321,15 @@ This subcommand has the following options:
     </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy delete name</code></dt>
+    <dt><code>tscli backup-policy delete NAME</code></dt>
     <dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy disable name</code></dt>
+    <dt><code>tscli backup-policy disable NAME</code></dt>
     <dd>Disables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy enable name</code></dt>
+    <dt><code>tscli backup-policy enable NAME</code></dt>
     <dd>Enables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
@@ -337,15 +337,15 @@ This subcommand has the following options:
     <dd>Lists backup policies.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy show name</code></dt>
+    <dt><code>tscli backup-policy show NAME</code></dt>
     <dd>Shows the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy status name</code></dt>
+    <dt><code>tscli backup-policy status NAME</code></dt>
     <dd>Shows the status of the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy update name</code></dt>
+    <dt><code>tscli backup-policy update NAME</code></dt>
     <dd>Prompts an editor for you to edit the backup policy <code>name</code>.</dd></dlentry>
 </dl>
 
@@ -761,22 +761,86 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli cluster set-min-resource-spec</code></dt>
-    <dd>Sets the minimum resource configuration of the cluster.</dd></dlentry>
+    <dd>Sets the minimum resource configuration of the cluster, with the following parameter:
+<dl>
+  <dlentry>
+  <dt><code>--file FILE</code></dt>
+  <dd><p>Specified script with overrides.</p>
+  <p>The default is <code>False</code>.</p></dd>
+  </dlentry></dl></dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster setup-release-host HOST</code></dt>
+    <dd>Sets up the release host for Self Service Upgrade, with the specified <code>HOST</code>.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster setup-release-host-key</code></dt>
+    <dd>Sets up the release host api key for Self Service Upgrade.</dd></dlentry>  
+
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
     <dd>Prints default or min.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster start</code></dt>
     <dd>Starts the cluster.</dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster status</code></dt>
-    <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status.</dd></dlentry>
+    <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status. This subcommand has the following parameters:
+  <dl>
+  <dlentry>
+  <dt><code>--mode {basic,service,table,full,reinstall-os}</code></dt>
+  <dd>Specifies the kind of status message you want.</dd></dlentry>
+  <dlentry>
+  <dt><code>--tail</code></dt>
+  <dd><p>Prints the details of creation and update progress.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--no-orion</code></dt>
+  <dd><p>Runs checks not related to orion.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--includes INCLUDES</code></dt>
+  <dd><p>The name of the service to check the status of, either falcon or sage.</p>
+  <p>The default is <code>None</code>.</p></dd></dlentry></dl></dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster stop</code></dt>
     <dd>Pauses the cluster (but does not stop storage services).</dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster update</code></dt>
-    <dd>Update existing cluster.</dd></dlentry>
+    <dd>Updates an existing cluster on a specified release, with the following parameters:
+  <dl>
+  <dlentry>
+  <dt><code>--release_version</code></dt>
+  <dd><p>Looks for 'release' in the downloaded tarballs and if found, will update to that tarball.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--dry_run_only</code></dt>
+  <dd><p>Runs only the pre-update checks.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--wait_for_falcon_sage</code></dt>
+  <dd><p>Waits for Falcon and Sage to be in a serving state before marking an update as complete.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--create_snapshot_before_update</code></dt>
+  <dd><p>Creates a snapshot automatically before starting update.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--generate_compare_scoreboard</code></dt>
+  <dd><p>Generates pre-update and post-update scoreboards and compares them.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>--update_orion_only</code></dt>
+  <dd>Only updates orion.</dd></dlentry>
+  <dlentry>
+  <dt><code>--ignore_if_unhealthy</code></dt>
+  <dd><p>A comma separated list of node IPs on which upgrade is not attempted in case they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</p>
+  <p>The default is <code>None</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster update-hadoop</code></dt>
     <dd>Updates Hadoop/Zookeeper on the cluster.</dd></dlentry>
@@ -791,29 +855,29 @@ This subcommand has the following options:
 tscli command [-h] {run}
 ```
 
-Command to run on all nodes.
+Runs a specified command (`COMMAND`) on all nodes.
 
 This subcommand has the following option:
 <dl>
   <dlentry>
-    <dt><code>tscli command run [-h] [--nodes <em>NODES</em>] --dest_dir <em>DEST_DIR</em> [--copyfirst <em>COPYFIRST</em>] [--timeout <em>TIMEOUT</em>] <em>command</em></code></dt>
+    <dt><code>tscli command run COMMAND</code></dt>
   <dd>
-    <p>These are the parameters:</p>
+    <p>This subcommand has the following parameters:</p>
     <dl>
     <dlentry>
-      <dt><code>--nodes <em>NODES</em></code></dt>
+      <dt><code>--nodes NODES</code></dt>
       <dd>
-        <p>Space-separated IPs of nodes where to run the command.</p>
+        <p>Space-separated IPs of nodes on which to run the command.</p>
         <p>The default setting is <code>all</code>.</p></dd></dlentry>
     <dlentry>
-      <dt><code>--dest_dir <em>DEST_DIR</em></code></dt>
+      <dt><code>--dest_dir DEST_DIR</code></dt>
       <dd>
         <p>Directory to save the files that contain the output from each node.</p>
         <p>This is a mandatory parameter.</p></dd></dlentry>
     <dlentry>
       <dt><code>--copyfirst <em>COPYFIRST</em></code></dt>
       <dd>
-        <p>Copy the executable to required nodes first.</p>
+        <p>Command to copy the executable to required nodes first.</p>
         <p>The default setting is <code>False</code>.</p></dd></dlentry>
     <dlentry>
       <dt><code>--timeout <em>TIMEOUT</em></code></dt>
@@ -837,7 +901,24 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli dr-mirror start</code></dt>
-    <dd>Starts a mirror cluster which will continuously recover from a primary cluster.</dd></dlentry>
+    <dd>Starts a mirror cluster which will continuously recover from a primary cluster, with the following parameters:
+    <dl><dlentry>
+    <dt><code>directory</code></dt>
+    <dd>Directory where backups of primary cluster can be found.</dd></dlentry>
+    <dlentry>
+    <dt><code>nodes</code></dt>
+    <dd>Comma-separated list of IP addresses of nodes in the mirror cluster.</dd></dlentry>
+    <dlentry>
+    <dt><code>cluster_name</code></dt>
+    <dd>The name of the mirror cluster.</dd></dlentry>
+    <dlentry>
+    <dt><code>cluster_id</code></dt>
+    <dd>The ID of the mirror cluster.</dd></dlentry>
+    <dlentry>
+    <dt><code>--email EMAIL</code></dt>
+    <dd><p>Option alert email setting.</p>
+    <p>The default is <code>later</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
   <dlentry>
     <dt><code>tscli dr-mirror status</code></dt>
     <dd>Checks whether the current cluster is running in mirror mode.</dd></dlentry>
@@ -857,18 +938,27 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli etl change-password --admin_username <em>admin_user</em> --username <em>Informatica_user</em></code></dt>
-    <dd>
-      <p>Changes the Informatica Cloud account password used by ThoughtSpot Data Connect.</p>
-      <p>Required parameters are:</p>
+    <dt><code>tscli etl change-password</code></dt>
+    <dd>Changes the Informatica Cloud account password used by ThoughtSpot Data Connect, with the following parameters:
 
       <dl>
         <dlentry>
-          <dt><code>--admin_username <em>admin_user</em></code></dt>
-          <dd>Specifies the Administrator username for ThoughtSpot.</dd></dlentry>
+          <dt><code>--admin_username ADMIN_USERNAME</code></dt>
+          <dd><p>Specifies the Administrator username for ThoughtSpot.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--username <em>Informatica_user</em></code></dt>
-          <dd>Specifies the username for the Informatica Cloud.</dd></dlentry>
+          <dt><code>--username USERNAME</code></dt>
+          <dd><p>Specifies the username for Informatica Cloud.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--max_wait MAX_WAIT</code></dt>
+          <dd><p>The maximum time in seconds to wait for the Data Connect agent to start.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--isIICS</code></dt>
+          <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
+          <p>The default is <code>False</code>.</p></dd>
+          </dlentry>
       </dl></dd></dlentry>
 
   <dlentry>
@@ -877,48 +967,83 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli etl download-agent</code></dt>
-    <dd>Downloads the ThoughtSpot Data Connect agent to the cluster.</dd></dlentry>
+    <dd>Downloads the ThoughtSpot Data Connect agent to the cluster, with the following parameters:
+    <dl>
+      <dlentry>
+      <dt><code>--push_to_all</code></dt>
+      <dd><p>Pushes the downloaded installer to all nodes.</p>
+      <p>The default is <code>False</code>.</p></dd>
+      </dlentry>
+      <dlentry>
+      <dt><code>--proxy_host PROXY_HOST</code></dt>
+      <dd>Specify your proxy server host for network access.</dd>
+      </dlentry>
+      <dlentry>
+      <dt><code>--proxy_port PROXY_PORT</code></dt>
+      <dd>Specify your proxy server port.</dd>
+      </dlentry>
+      <dlentry>
+      <dt><code>--proxy_username PROXY_USERNAME</code></dt>
+      <dd>Specify your proxy server username.</dd>
+      </dlentry>
+      <dlentry>
+      <dt><code>--isIICS</code></dt>
+      <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
+      <p>The default is <code>False</code>.</p></dd>
+      </dlentry>
+    </dl></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli etl enable-lw [-h] --username <em>USERNAME</em> --thoughtspot_url <em>THOUGHTSPOT_URL</em> --admin_username <em>ADMIN_USERNAME</em> [--groupname <em>GROUPNAME</em>] --org_id <em>ORG_ID</em> [--pin_to  <em>PIN_TO</em>] [--proxy_host <em>PROXY_HOST</em>] [--proxy_port <em>PROXY_PORT</em>] [--proxy_username <em>PROXY_USERNAME</em>] [--max_wait <em>MAX_WAIT</em>]</code></dt>
+    <dt><code>tscli etl enable-lw</code></dt>
 
-    <dd>
-      <p>Contact ThoughtSpot Support for assistance in setting this up.</p>
-      <p>Required parameters are:</p>
+    <dd><p>Enables Data Connect.Contact ThoughtSpot Support for assistance in setting this up.</p>
+    <p>This subcommand has the following parameters:</p>
 
       <dl>
         <dlentry>
-          <dt><code>--username <em>USERNAME</em></code></dt>
-          <dd>Username for Informatica Cloud</dd></dlentry>
+          <dt><code>--username USERNAME</code></dt>
+          <dd><p>Username for Informatica Cloud</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--thoughtspot_url <em>THOUGHTSPOT_URL</em></code></dt>
-          <dd>URL to reach thoughtspot.</dd></dlentry>
+          <dt><code>--thoughtspot_url THOUGHTSPOT_URL</code></dt>
+          <dd><p>URL to reach ThoughtSpot.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
-          <dd>Admin username for ThoughtSpot</dd></dlentry>
+          <dt><code>--admin_username ADMIN_USERNAME</code></dt>
+          <dd><p>Admin username for ThoughtSpot</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--groupname <em>GROUPNAME</em></code></dt>
-          <dd></dd></dlentry>
+          <dt><code>--groupname GROUPNAME</code></dt>
+          <dd><p>Name of the secure agent group to use.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--org_id <em>ORG_ID</em></code></dt>
-          <dd>Specifies the Informatica <code>id</code> of the company.<!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
+          <dt><code>--org_id ORG_ID</code></dt>
+          <dd><p>Specifies the Informatica <code>id</code> of the company.</p>
+          <p>The default is <code>None</code>.</p><!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
         <dlentry>
-          <dt><code>--pin_to <em>PIN_TO</em></code></dt>
-          <dd>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
+          <dt><code>--pin_to PIN_TO</code></dt>
+          <dd><p>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
       to the Informatica agent, and will always be used. Defaults to the public IP
-      address of the localhost where this command was run.</dd></dlentry>
+      address of the localhost where this command was run.</p>
+      <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
+          <dt><code>--proxy_host PROXY_HOST</code></dt>
           <dd>Proxy server host for network access.</dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
+          <dt><code>--proxy_port PROXY_PORT</code></dt>
           <dd>Proxy server port.</dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
+          <dt><code>--proxy_username PROXY_USERNAME</code></dt>
           <dd>Proxy server username.</dd></dlentry>
         <dlentry>
-          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
-          <dd>Maximum time in seconds to wait for Data Connect agent to start.</dd></dlentry>
+          <dt><code>--max_wait MAX_WAIT</code></dt>
+          <dd><p>Maximum time in seconds to wait for Data Connect agent to start.</p>
+          <p>The default is <code>None</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--isIICS</code></dt>
+          <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
+          <p>The default is <code>False</code>.</p></dd>
+          </dlentry>
       </dl></dd></dlentry>
 
   <dlentry>
@@ -2007,7 +2132,7 @@ This subcommand has the following option:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status,add-valid-hosts}
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 ```        
 This subcommand manages the SSL configuration.
 
@@ -2059,14 +2184,6 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli ssl tls-status [-h]</code></dt>
     <dd>Prints the status of TLS support.</dd>
-  </dlentry>
-  <dlentry>
-    <dt><code>tscli ssl add-valid-hosts [-h] <em>VALID_HOSTS</em></code></dt>
-    <dd>Enables host validation for the specified host(s). Helps improve security. This feature is for all customers that have already enabled SSL or are going to. Multiple hosts must be separated by a comma (,).</dd>
-    <dd>Examples:</dd>
-    <dd>1. If you want to make sure the valid host is <b>cluster1.corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts cluster1.corp.example.com</code></dd>
-    <dd>2. If you want to allow all hosts which have the suffix <b>corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.example.com</code>. This wild card could be anywhere in the command.</dd>
-    <dd>3. If you want to allow multiple valid hosts, for example both <b>*.corp.example.com</b> and <b>cluster1</b>, you would run command: <br><code>tscli ssl add-valid-hosts *.corp.thoughtspot.com,cluster1</code></dd>
   </dlentry>
 
 </dl>
