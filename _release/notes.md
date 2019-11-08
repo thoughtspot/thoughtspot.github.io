@@ -18,7 +18,7 @@ fixed issues from the previous releases, and any known issues.
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
-<!-- ### Mobile
+<!-- ### Mobile 
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
 Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
