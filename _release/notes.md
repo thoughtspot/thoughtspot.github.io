@@ -65,10 +65,10 @@ This release introduces a complete new approach that makes chart configuration m
 * <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
 * <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
 
-### Worksheet migration
+### Worksheet scriptability
 You can now **Export** Worksheets by downloading them to a `*.yaml` file, make changes, and then **Update** the Worksheet from the changed file either to the same cluster, or to a new cluster.
 
-Worksheet migration supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
+worksheet scriptability supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
 
 See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html).
 
