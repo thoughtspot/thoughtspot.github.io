@@ -45,7 +45,7 @@ In this release, administrators can configure 'Welcome' emails to send to both n
 
 ### Embrace
 **ThoughtSpot Embrace is in beta.**
-In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html). 
+In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Pinboard export in PDF format has branding, and more
 We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
@@ -86,7 +86,11 @@ In this release, we introduce user Onboarding, which communicates the value of T
 
 ### ThoughtSpot mobile
 
-Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or later. For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
+Our mobile app is available for customers with ThoughtSpot 5.1 or later.
+
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
+
+For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
 ### Mandatory user emails
 
