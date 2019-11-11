@@ -21,7 +21,7 @@ fixed issues from the previous releases, and any known issues.
 ### Mobile
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
-Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
 See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
