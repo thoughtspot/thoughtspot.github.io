@@ -19,7 +19,7 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 After creating the instance, you must configure the nodes.
 
 ### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows.
+Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. The admin password is th0ughtSp0t.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
 2. Enter your admin password.
   * Ask your network administrator if you don't know the password.
@@ -132,9 +132,9 @@ If you do not have a link to download the release tarball, open a support ticket
 
 {: id="run-installer"}
 ### Step 1. Run the Installer  
-1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/`. Replace '0.0' with your release number and 'hostname' with your specific hostname.
+1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/file-name`. Replace '0.0' with your release number. Replace 'hostname' and 'file-name' with your specific hostname and the name of the tarball file.
 ```
-    $ scp 0.0.tar.gz admin@hostname:/home/admin/
+    $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
 ```
 2. Run `tscli cluster create <release>`.
   * If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3`.

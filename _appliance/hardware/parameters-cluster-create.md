@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 ## Using the cluster create command
 To install your appliance, you must install the cluster.
 
-1. **Copy the release tarball** Run `scp 0.0.tar.gz admin@hostname:/home/admin/`, filling in your specific information for the release number and the hostname. For example, `scp 6.0 admin@ThoughtSpot:/home/admin`.
+1. **Copy the release tarball** Run `scp 0.0.tar.gz admin@hostname:/home/admin/file-name`, filling in your specific information for the release number, hostname, and release tarball file name. For example, `scp 6.0 admin@ThoughtSpot:/home/admin/TS-tarball`.
 1. **Run the `cluster create` command** Run `tscli cluster create` in your terminal.
 2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 

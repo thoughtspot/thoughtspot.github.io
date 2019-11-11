@@ -11,10 +11,10 @@ To install your appliance, you must install the cluster using the release tarbal
 1. **Download the release tarball** Download the release tarball from the download link sent by ThoughtSpot Support.
   * If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.  
 2.  **Copy the release tarball** In your Terminal (Apple) or using [Winscp](https://winscp.net/eng/index.php) (Windows application), copy the downloaded release tarball to /home/admin/ and run the cluster installer as shown below.
-  To copy the release tarball, run the command `scp 0.0.tar.gz admin@hostname:/home/admin/`, where '0.0' is replaced by your release number and 'hostname' is your hostname. For example, `6.0.tar.gz admin@ThoughtSpot:/home/admin`.
+  To copy the release tarball, run the command `scp 0.0.tar.gz admin@hostname:/home/admin/file-name`, where '0.0' is replaced by your release number, 'hostname' is your hostname, and 'file-name' is the name of the tarball file. For example, `scp 6.0.tar.gz admin@ThoughtSpot:/home/admin/TS-tarball`.
   ThoughtSpot recommends that you start the session using [screen](https://linux.die.net/man/1/screen), so you do not lose your progress if you lose your connection at any point.
   ```
-    scp 0.0.tar.gz admin@hostname:/home/admin/
+    scp 0.0.tar.gz admin@hostname:/home/admin/file-name
   ```
 3. **Run the `cluster create` command** Run `tscli cluster create <release-number>.tar.gz` in your terminal.
   * If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage s3` or `--enable_cloud_storage gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.

@@ -266,9 +266,9 @@ If you have not received a link to download the release tarball, open a support 
 
 {: id="run-installer"}
 ### 1. Run the Installer  
-1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/`. Replace '0.0' with your release number and 'hostname' with your specific hostname.
+1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/file-name`. Replace '0.0' with your release number. Replace 'hostname' and 'file-name' with your specific hostname and the name of the tarball file.
 ```
-    $ scp 0.0.tar.gz admin@hostname:/home/admin/
+    $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
 ```
 2. Run `tscli cluster create <release>`.
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
