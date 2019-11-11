@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can add multiple ODBC data sources."> -->
-<meta name="keywords" content=",  tbd">
-<title>Configure multiple connections on Windows | ThoughtSpot</title>
+<!-- <meta name="description" content=""> -->
+<meta name="keywords" content=",  ">
+<title>ThoughtSpot mobile release notes | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -316,13 +316,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /data-integrate/clients/multiple-sources-windows.html.</li>
+         <li class="small-sidebar-link">Current page URL is /admin/mobile/notes-mobile.html.</li>
          <li class="small-sidebar-link">Current version is 6.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
-           <li class="small-sidebar-link">url_chunks[2] is clients.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is multiple-sources-windows.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is admin.</li>
+           <li class="small-sidebar-link">url_chunks[2] is mobile.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is notes-mobile.html.</li>
  -->
 
        
@@ -338,12 +338,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.0/data-integrate/clients/multiple-sources-windows.html">Switch to version 6.0 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.0/admin/mobile/notes-mobile.html">Switch to version 6.0 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.0/data-integrate/clients/multiple-sources-windows.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.0/data-integrate/clients/multiple-sources-windows.html</li>
+<li class="small-sidebar-link">newURL is /6.0/admin/mobile/notes-mobile.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.0/admin/mobile/notes-mobile.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2184,7 +2184,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/5.1/admin/mobile/notes-mobile.html">Release notes</a></li>
+                  <li class="active"><a href="/5.1/admin/mobile/notes-mobile.html">Release notes</a></li>
                 
               
             
@@ -2851,7 +2851,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li class="active"><a href="/5.1/data-integrate/clients/multiple-sources-windows.html">Configure multiple connections on Windows</a></li>
+                                  <li><a href="/5.1/data-integrate/clients/multiple-sources-windows.html">Configure multiple connections on Windows</a></li>
                               
                             
                         
@@ -3185,15 +3185,13 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Configure multiple connections on Windows</h1>
+   <h1 class="post-title-main">ThoughtSpot mobile release notes</h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">You can add multiple ODBC data sources.</div>
    
 
     
@@ -3229,141 +3227,42 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    1 minute
   
 </span>-->
 
     
 
-  <p>Use this procedure if you want to add an additional data source after creating a
-<a href="install-odbc-windows.html#">single source succeeds</a>. The main reason for needing to set up multiple
-ThoughtSpot ODBC data sources is that you have a production cluster and a test
-or development cluster.</p>
+  <p>ThoughtSpot mobile 1.1.2 is now available. These release notes include information about new features,
+fixed issues from the previous releases, and any known issues.</p>
 
-<ol>
-  <li>
-    <p>Locate and open the <strong>ODBC Data Source Administrator (64-bit)</strong> application.</p>
+<h2 id="1-1-2-new">1.1.2 New Features and Functionality</h2>
+<ul>
+  <li>Auto-redirect Single Sign-On (SSO) for clusters with SSO enabled.</li>
+</ul>
 
-    <p><img src="/5.1/images/odbc-windows-search.png" alt="" title="System DSN" />1</p>
-  </li>
-  <li>Click the <strong>System DSN</strong> tab.</li>
-  <li>
-    <p>Select <strong>Add</strong>.</p>
+<h2 id="1-1-2-fixed">1.1.2 Fixed Issues</h2>
 
-    <p>The system lists the available drivers.</p>
+<p>The following issues are fixed in the 1.1.2 release:</p>
 
-    <p><img src="/5.1/images/ODBC_choose_new_data_source_to_add.png" alt="" title="Create New Data Source" /></p>
-  </li>
-  <li>
-    <p>Choose the <strong>ThoughtSpot ODBC Driver</strong> and click <strong>Finish</strong>.</p>
-
-    <p>The system displays the <strong>Client Configuration Dialog</strong> dialog.</p>
-
-    <p><img src="/5.1/images/ODBC_config_dev_source_connect.png" alt="" title="New connection" /></p>
-  </li>
-  <li>
-    <p>Enter the your data source configuration.</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Configuration Property</th>
-          <th>Value</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Data Source Name</strong></td>
-          <td>The name you want to call the data source.</td>
-        </tr>
-        <tr>
-          <td><strong>Description</strong></td>
-          <td>A description of the data source.</td>
-        </tr>
-        <tr>
-          <td><strong>Server IP</strong></td>
-          <td>A list of the IP addresses for each node, separated by commas.</td>
-        </tr>
-        <tr>
-          <td><strong>Server Port</strong></td>
-          <td><code class="highlighter-rouge">12345</code></td>
-        </tr>
-        <tr>
-          <td><strong>Idle Timeout</strong></td>
-          <td>Time in seconds after which an idle ODBC connection times out.</td>
-        </tr>
-        <tr>
-          <td><strong>Login Timeout</strong></td>
-          <td>Time in seconds after which a login request times out.</td>
-        </tr>
-        <tr>
-          <td><strong>Query Timeout</strong></td>
-          <td>Time in seconds after which a query times out.</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    <p>Configure custom properties by clicking <strong>Options</strong>.</p>
-
-    <p>The system displays the <strong>Options</strong> dialog.</p>
-
-    <p><img src="/5.1/images/ODBC_add_custom_property.png" alt="" title="Add a custom property" /></p>
-  </li>
-  <li>
-    <p>Add these properties using the <strong>Add</strong> to enter an option and click <strong>OK</strong> after to save an option.</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Option</th>
-          <th>Value</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>DATABASE</strong></td>
-          <td>The default database to connect to.</td>
-        </tr>
-        <tr>
-          <td><strong>SCHEMA</strong></td>
-          <td>The default schema to connect to. Use <code class="highlighter-rouge">falcon_default_schema</code> if you aren’t sure.</td>
-        </tr>
-        <tr>
-          <td><strong>CONNECTIONTIMEOUT</strong></td>
-          <td>Optional. Seconds before an idle connection times out.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>The key must be defined exactly as it appear here, using all capital letters. You can find other supported properties in <a href="/5.1/data-integrate/reference/simba-settings.html#">ODBC and JDBC configuration properties</a>.</p>
-
-    <p><img src="/5.1/images/ODBC_add_custom_property_new_data_source.png" alt="" title="Enter the custom property key and value" /></p>
-  </li>
-  <li>
-    <p>When you are done, press <strong>OK</strong> to save your new configuration.</p>
-
-    <p><img src="/5.1/images/odbc-new-config.png" alt="" title="Success" /></p>
-  </li>
-  <li>
-    <p>Press <strong>Test Connection</strong> to test your database connection.</p>
-
-    <p><img src="/5.1/images/windows-odbc-success.png" alt="" title="Success" /></p>
-
-    <p>If your test connection fails, <a href="/5.1/data-integrate/troubleshooting/enable-ODBC-log.html#">enable ODBC logging</a> to
-troubleshoot.</p>
-  </li>
-  <li>Press <strong>Cancel</strong> to close the <strong>DSN Configuration</strong> dialog.</li>
-  <li>Press <strong>OK</strong> to close the <strong>Client Configuration Dialog</strong> the dialog.</li>
-  <li>Press <strong>OK</strong> to close the <strong>ODBC Data Source Administrator (64-bit)</strong> application</li>
-</ol>
+<ul>
+  <li>Dates appear as invalid on visualizations.</li>
+  <li>Last updated time is sometimes one day later than it actually is.</li>
+  <li>The home pinboard refreshes randomly and does not follow the 30 minutes background to foreground logic.</li>
+  <li>The “Excluded” filters applied in the ThoughtSpot web user interface appear in the “Included” list in the Mobile app.</li>
+  <li>Cached data disappears even before new data loads.</li>
+  <li>Clickable area for the close button on the Filters page is too small.</li>
+  <li>“Login with SSO” on iPad is misaligned.</li>
+  <li>Cascading filters do not work.</li>
+  <li>Dates overlap on the x-axis when custom calendar is used.</li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.1/_data-integrate/clients/multiple-sources-windows.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.1/_admin/mobile/notes-mobile.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
