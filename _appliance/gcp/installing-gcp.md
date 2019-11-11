@@ -1,17 +1,17 @@
 ---
-title: [Installing Azure]
+title: [Installing GCP]
 last_updated: [11/11/2019]
-summary: "Learn how to install a ThoughtSpot cluster on Azure."
+summary: "Learn how to install a ThoughtSpot cluster on Google Cloud Platform (GCP)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on Azure.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on GCP.
 
-1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
-2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
+1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
+2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
 
 {: id="configure-nodes"}
@@ -19,13 +19,13 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 After creating the instance, you must configure the nodes.
 
 ### Step 1: Log into your cluster
-Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster. Log in using the ssh private key provided by ThoughtSpot.
-  * If you do not have a private key, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) by email or through the support portal.
+Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster.
+1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
+2. When prompted, enter the admin password: th0ughtSp0t.
+```
+    $ ssh admin@clusterIP
+```
 
-To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
-```
-    $ ssh -i <private_key> admin@<public-vm-ip>
-```
 ### Step 2: Get a list of nodes to configure
 Run the `tscli cluster get-config` command to get a list of the nodes that must be configured for the new cluster, and redirect it to the file `nodes.config`. You can find more information on this procedure in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
@@ -39,10 +39,10 @@ Run the `tscli cluster get-config` command to get a list of the nodes that must 
 Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 ### Step 4: Configure the nodes
-Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/azure/installing-azure.html#set-config-command).
+Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-command).
 1. Disable `Firewalld` by running `sudo systemctl stop firewalld` in your terminal. `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. When the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
 2. Run `cat nodes.config | tscli cluster set-config`.
-  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/azure/installing-azure.html#set-config-error-recovery).
+  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-error-recovery).
 
 {: id="set-config-command"}
 
@@ -70,7 +70,7 @@ Connecting to local node-scout WARNING: Detected 0 nodes, but found configuratio
 Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
 ```
-Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/azure/installing-azure.html#set-config-command).
+Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-command).
 
     $ sudo systemctl restart node-scout
 
@@ -188,7 +188,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
-5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/azure/installing-azure.html#ts-login), enter admin credentials, and click **Sign in**. The admin username is *tsadmin* and the default password is *admin*.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#ts-login), enter admin credentials, and click **Sign in**. The admin username is *tsadmin* and the default password is *admin*.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}
