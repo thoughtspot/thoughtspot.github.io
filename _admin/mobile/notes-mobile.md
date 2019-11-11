@@ -15,13 +15,11 @@ permalink: /:collection/:path.html
 The following issues are fixed in the 1.1.2 release:
 
 - Dates appear as invalid on visualizations.
-- Last updated time was sometimes one day later than it actually was.
-- Fixed a bug which caused the home pinboard to refresh randomly and not follow the 30mins background to foreground logic.
-- Fixed an issue which caused the “Excluded” filters applied on Blink to appear in the “Included” list on Mobile.
-- Fixed an issue which caused the cached data to disappear even before loading the new data.
-- Increased the click area for the close button on the Filters page.
-- Fixed the alignment issue of the “Login with SSO” on iPad.
-- Fixes cascading filters not working issue. (Reported by #internal-haggar)
-- Fixes an issue which caused the dates to overlap on the x-axis when custom calender is used. (Reported by #internal-verizon-coe)
-Features
-- Support for auto-redirect for SSO added if it has been enabled on the cluster. (Missing functionality reported by #internal-pwc and #internal-verizon-coe)
+- Last updated time is sometimes one day later than it actually is.
+- The home pinboard refreshes randomly and does not follow the 30 minutes background to foreground logic.
+- The “Excluded” filters applied in the ThoughtSpot web user interface appear in the “Included” list in the Mobile app.
+- Cached data disappears even before new data loads.
+- Clickable area for the close button on the Filters page is too small.
+- “Login with SSO” on iPad is misaligned.
+- Cascading filters do not work.
+- Dates overlap on the x-axis when custom calendar is used.
