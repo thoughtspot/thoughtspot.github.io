@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
-Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
+Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters. 
 
 ## Requirements
 
