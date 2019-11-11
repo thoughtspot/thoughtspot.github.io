@@ -7,6 +7,8 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot mobile app version 1.1 allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
+Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for clusters with SSO enabled.
+
 ## Requirements
 
 - User account on a ThoughtSpot cluster running release 5.1 or later

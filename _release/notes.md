@@ -38,6 +38,10 @@ First, upgrade to one of the above versions, and then to the 5.1.4 release.
 
 ThoughtSpot mobile app version 1.1 is now available! For more information, see [ThoughtSpot mobile overview]({{ site.baseurl}}/admin/mobile/use-mobile.html)
 
+Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for clusters with SSO enabled.
+
+For more information, see [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+
 {: id="514-fixed"}
 ## 5.1.4 Fixed Issues
 
