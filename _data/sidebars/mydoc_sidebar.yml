@@ -874,6 +874,9 @@ entries:
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
       output: web,admBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,admBk
   - sectiontitle: Data Connect
     output: web,cngBk
     sectionitems:
