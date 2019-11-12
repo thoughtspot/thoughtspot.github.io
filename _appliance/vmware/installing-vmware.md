@@ -1,17 +1,18 @@
 ---
-title: [Installing Google Cloud Platform]
-last_updated: [11/11/2019]
-summary: "Learn how to install a ThoughtSpot cluster on Google Cloud Platform (GCP)."
+title: [Installing VMware]
+last_updated: 11/12/2019
+summary: "Learn how to install a ThoughtSpot cluster on VMware."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on GCP.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on VMware.
 
-1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
-2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
+1. **Download the OVF** Download the [Open Virtualization Format](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/) (OVF) file.
+1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
+2. **Create the instance** Refer to [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
 
 {: id="configure-nodes"}
@@ -39,10 +40,10 @@ Run the `tscli cluster get-config` command to get a list of the nodes that must 
 Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 ### Step 4: Configure the nodes
-Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-command).
+Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#set-config-command).
 1. Disable `Firewalld` by running `sudo systemctl stop firewalld` in your terminal. `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. When the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
 2. Run `cat nodes.config | tscli cluster set-config`.
-  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-error-recovery).
+  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#set-config-error-recovery).
 
 {: id="set-config-command"}
 
@@ -60,6 +61,7 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 ```
+
 #### Set-config error recovery
 If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
@@ -70,7 +72,7 @@ Connecting to local node-scout WARNING: Detected 0 nodes, but found configuratio
 Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
 ```
-Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#set-config-command).
+Restart the node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#set-config-command).
 
     $ sudo systemctl restart node-scout
 
@@ -121,6 +123,7 @@ $ tscli cluster get-config
   }  
 }
 ```
+
 {: id="cluster-install"}
 ## Install Cluster
 Next, install the cluster using the release tarball (est. time 1 hour).
@@ -137,6 +140,7 @@ If you do not have a link to download the release tarball, open a support ticket
 ```
     $ tscli cluster create 6.0.tar.gz
 ```  
+
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. `Firewalld` automatically turns back on. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
@@ -188,7 +192,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
-5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/gcp/installing-gcp.html#ts-login), enter admin credentials, and click **Sign in**. The admin username is *tsadmin* and the default password is *admin*.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#ts-login), enter admin credentials, and click **Sign in**. The admin username is *tsadmin* and the default password is *admin*.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

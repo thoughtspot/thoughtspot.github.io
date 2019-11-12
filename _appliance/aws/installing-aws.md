@@ -40,11 +40,11 @@ Run the `tscli cluster get-config` command to get a list of the nodes to configu
   Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 ### Step 4: Configure the nodes
-Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/hardware/installing-aws.html#set-config-command).
+Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
 1. Disable `Firewalld` by running `sudo systemctl stop firewalld` in your terminal.
   `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. When the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
 2. Run `$ cat nodes.config | tscli cluster set-config`.
-  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing-aws.html#set-config-error-recovery).
+  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-error-recovery).
 
 {: id="set-config-command"}
 #### Set-config
@@ -73,7 +73,7 @@ Connecting to local node-scout WARNING: Detected 0 nodes, but found configuratio
 Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
 ```
-Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/hardware/installing-aws.html#set-config-command).
+Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
 
     $ sudo systemctl restart node-scout
 
@@ -147,7 +147,7 @@ If you do not have a link to download the release tarball, open a support ticket
   Log into any node to check the current cluster status, using the command `tscli cluster status`.
 
 ### Step 2. Check Cluster Health
-Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/hardware/installing-aws.html#check-cluster-health).
+Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/aws/installing-aws.html#check-cluster-health).
 
 {: id="check-cluster-health"}
 
@@ -193,7 +193,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
-5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/hardware/installing-aws.html#ts-login), enter admin credentials, and click **Sign in**.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/aws/installing-aws.html#ts-login), enter admin credentials, and click **Sign in**.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

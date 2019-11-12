@@ -50,5 +50,8 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 ## References
 * [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
-* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)
