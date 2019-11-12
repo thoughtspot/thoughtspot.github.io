@@ -6,12 +6,12 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with worksheet scriptability in ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster.
+To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster.
 
 {: id="syntax"}
 ##  Syntax of the Worksheet YAML file
 
-The YAML file for worksheet scriptability has a specific syntax.
+The YAML file for Scriptable Worksheets has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
