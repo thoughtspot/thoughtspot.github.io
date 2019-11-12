@@ -1,12 +1,12 @@
 ---
 title: [Modify a connection]
-last_updated:
-toc: true
+last_updated: 11/12/2019
+summary: Learn how to modify a connection and its tables after creating a new Embrace database connection.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify a connection in the following ways:
+You can modify an Embrace database connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
 - Delete a table
@@ -40,7 +40,7 @@ To remove a table from a connection, delete it from the connection details page.
 
 ## Remapping a connection
 
-Modify the connection parameters by editing the source mapping<code> yaml </code>file that was created when you adding the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
+Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
 To remap a connection:
 
@@ -67,7 +67,7 @@ To remap a connection:
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 ## Deleting a table
-ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.
+ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
 
 To delete a table:
 
@@ -93,7 +93,7 @@ To delete a table:
 
    ![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning")
 
-You can also click the name of a table and then click the linked objects to to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
+You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
 ## Deleting a connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
