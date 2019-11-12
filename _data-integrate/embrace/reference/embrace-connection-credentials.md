@@ -1,21 +1,17 @@
 ---
 title: [Connectors reference]
-
-toc: false
-last_updated: tbd
-toc: true
+summary: Learn about the external database connectors necessary for ThoughtSpot Embrace.
+last_updated: 11/11/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of all of the external database connectors, and their connection credentials, that you need to save in ThoughtSpot Embrace. As you create a new external connection, you need specific connection information to establish seamless and secure connection with that database.
-
-{% include note.html content="Keep watching this space for more external DB connection details that ThoughtSpot Embrace will support in future." %}
+Here is a list of all of the external database connectors, and their connection credentials, that you must save in ThoughtSpot Embrace. As you create a new external connection, you need specific connection information to establish seamless and secure connection with that database.
 
 ## Snowflake
  - **Connection name**: Mandatory. Enter a new Snowflake connection name.
  - **Description**: Optional. Provide a short description about the connection.
- - **AccountName**: Mandatory. Enter the account name associated with the Snowflake connection.
+ - **Account Name**: Mandatory. Enter the account name associated with the Snowflake connection.
  - **User**: Mandatory. Enter the Snowflake account username.
  - **Password**: Mandatory. Enter the Snowflake account password.
  - **Role**: Mandatory. Specify the privilege of the user.
