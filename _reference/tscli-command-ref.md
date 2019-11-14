@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 10/28/2019
+last_updated: 11/13/2019
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The command returns `0` on success, and a non-zero exit codes on failure.
+The command returns `0` on success, and a non-zero exit code on failure.
 The `tscli` command logs errors to the `stderr` directory.
 
 {: id="tscli-command"}
@@ -71,16 +71,16 @@ This subcommand has the following option:
     <dd>Lists objects by last access time, with the following parameters:
     <dl>
   <dlentry>
-    	<dt><code>--type TYPE</code></dt>
+    	<dt><code>--type <em>TYPE</em></code></dt>
     	<dd>Type of object, either answer or pinboard.</dd>
   </dlentry>
   <dlentry>
-  <dt><code>--limit	LIMIT</code></dt>
+  <dt><code>--limit	<em>LIMIT</em></code></dt>
     <dd><p>The number of objects to fetch.</p>
       <p>The default is 30.</p> </dd>
   </dlentry>
   <dlentry>
-  <dt><code>--offset OFFSET</code></dt>
+  <dt><code>--offset <em>OFFSET</em></code></dt>
     <dd><p>Offset to use to skip objects for batched results.</p>
     <p>
       The default is 0.
@@ -125,11 +125,11 @@ This subcommand has the following options:
     <dd>Lists the generated alerts, with these parameters:
     <dl>
     <dlentry>
-    <dt><code>--limit LIMIT</code></dt>
+    <dt><code>--limit <em>LIMIT</em></code></dt>
     <dd>Specifies the number of recent alerts to display.</dd>
     </dlentry>
     <dlentry>
-    <dt><code>--since SINCE</code></dt>
+    <dt><code>--since <em>SINCE</em></code></dt>
     <dd>Lists all alerts raised since a specified time period, in the form of a human readable duration string, such as 4h (4 hours) or 4m (4 minutes).</dd>
     </dlentry>
     </dl>
@@ -152,7 +152,7 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert silence --name NAME</code></dt>
+    <dt><code>tscli alert silence --name <em>NAME</em></code></dt>
     <dd>Silences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres; however, emails are not sent out.</dd>
   </dlentry>
 
@@ -178,12 +178,12 @@ This subcommand has the following options:
 
    <dl>
      <dlentry>
-       <dt><code>tscli ansible checkout --host HOST</code></dt>
+       <dt><code>tscli ansible checkout --host <em>HOST</em></code></dt>
        <dd>Checks out Ansible playbook with the target <code>HOST</code> that is running the ts_ansible service.</dd>
      </dlentry>
 
      <dlentry>
-       <dt><code>tscli ansible commit --host HOST</code></dt>
+       <dt><code>tscli ansible commit --host <em>HOST</em></code></dt>
        <dd>Commits Ansible playbooks with the target <code>HOST </code> that is running the ts_ansible service.</dd>
      </dlentry>
 </dl>
@@ -224,7 +224,7 @@ tscli backup [-h] {create,delete,ls,restore}
               <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
               <p>The default setting is <code>full</code>.</p></dd></dlentry>
           <dlentry>
-            <dt><code>--base BASE</code></dt>
+            <dt><code>--base <em>BASE</em></code></dt>
             <dd>
               <p>Based snapshot name for incremental backup.</p>
               <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
@@ -269,7 +269,7 @@ tscli backup [-h] {create,delete,ls,restore}
       <dd>Restores cluster using backup, with the following parameters:
       <dl>
         <dlentry>
-        <dt><code>--release RELEASE</code></dt>
+        <dt><code>--release <em>RELEASE</em></code></dt>
           <dd>Restore the cluster on a specific release number.</dd>
         </dlentry>
         <dlentry>
@@ -316,12 +316,12 @@ This subcommand has the following options:
     <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameter:
     <dl>
     <dlentry>
-    <dt><code>--config CONFIG</code></dt>
+    <dt><code>--config <em>CONFIG</em></code></dt>
     <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
     </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy delete NAME</code></dt>
+    <dt><code>tscli backup-policy delete <em>NAME</em></code></dt>
     <dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
@@ -329,7 +329,7 @@ This subcommand has the following options:
     <dd>Disables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy enable NAME</code></dt>
+    <dt><code>tscli backup-policy enable <em>NAME</em></code></dt>
     <dd>Enables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
@@ -341,11 +341,11 @@ This subcommand has the following options:
     <dd>Shows the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy status NAME</code></dt>
+    <dt><code>tscli backup-policy status <em>NAME</em></code></dt>
     <dd>Shows the status of the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy update NAME</code></dt>
+    <dt><code>tscli backup-policy update <em>NAME</em></code></dt>
     <dd>Prompts an editor for you to edit the backup policy <code>name</code>.</dd></dlentry>
 </dl>
 
@@ -363,17 +363,17 @@ This subcommand has the following options:
 <dd>Creates a new custom calendar, with the following parameters:
 <dl>
 <dlentry>
-<dt><code>--file_path FILE_PATH</code></dt>
+<dt><code>--file_path <em>FILE_PATH</em></code></dt>
 <dd><p>Path to the CSV file holding custom calendar data.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--name NAME</code></dt>
+<dt><code>--name <em>NAME</em></code></dt>
 <dd><p>Custom calendar name.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--separator SEPARATOR</code></dt>
+<dt><code>--separator <em>SEPARATOR</em></code></dt>
 <dd><p>The separator used in the CSV file.</p>
 <p>The default is <code>,</code>.</p></dd>
 </dlentry>
@@ -383,7 +383,7 @@ This subcommand has the following options:
 <p>The default is <code>True</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>The admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
@@ -394,12 +394,12 @@ This subcommand has the following options:
 <dd>Deletes a custom calendar table from the system, with the following parameters:
 <dl>
 <dlentry>
-<dt><code>--name NAME</code></dt>
-<dd><p>Deletes the custom calendar NAME.</p>
+<dt><code>--name <em>NAME</em></code></dt>
+<dd><p>Deletes the custom calendar <em>NAME</em>.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>The admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry></dl></dd>
@@ -417,17 +417,17 @@ This subcommand has the following options:
 <dd>Creates a custom calendar table based on given specifications, with the following parameters:
 <dl>
 <dlentry>
-<dt><code>--name NAME</code></dt>
+<dt><code>--name <em>NAME</em></code></dt>
 <dd><p>A name to create the custom calendar CSV file with.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--start_date START_DATE</code></dt>
+<dt><code>--start_date <em>START_DATE</em></code></dt>
 <dd><p>The start date to begin the custom calendar with in the form mm/dd/yyyy.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--end_date END_DATE</code></dt>
+<dt><code>--end_date <em>END_DATE</em></code></dt>
 <dd><p>The end date to end the custom calendar with in the form mm/dd/yyyy.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
@@ -451,11 +451,11 @@ This subcommand has the following options:
 <dd>The string to prefix a quarter name with.</dd>
 </dlentry>
 <dlentry>
-<dt><code>--year_name_prefix YEAR_NAME_PREFIX</code></dt>
+<dt><code>--year_name_prefix <em>YEAR_NAME_PREFIX</em></code></dt>
 <dd>The string to prefix a year name with.</dd>
 </dlentry>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>The admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
@@ -465,12 +465,12 @@ This subcommand has the following options:
 <dt><code>tscli calendar get</code></dt>
 <dd>Procures data of a custom calendar as a CSV file, with the following parameters:
 <dl><dlentry>
-<dt><code>--name NAME</code></dt>
+<dt><code>--name <em>NAME</em></code></dt>
 <dd><p>Procures data of custom calendar <code>NAME</code></p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>Admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry></dl></dd></dlentry>
@@ -479,7 +479,7 @@ This subcommand has the following options:
 <dd>Procures a list of custom calendars present in the cluster, with the following parameter:
 <dl>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>Admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry></dl></dd></dlentry>
@@ -488,17 +488,17 @@ This subcommand has the following options:
 <dd>Updates a custom calendar table in the system, with the following parameters:
 <dl>
 <dlentry>
-<dt><code>--file_path FILE_PATH</code></dt>
+<dt><code>--file_path <em>FILE_PATH</em></code></dt>
 <dd><p>Path to the CSV file holding custom calendar data.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--name NAME</code></dt>
+<dt><code>--name <em>NAME</em></code></dt>
 <dd><p>Custom calendar name.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--separator SEPARATOR</code></dt>
+<dt><code>--separator <em>SEPARATOR</em></code></dt>
 <dd><p>The separator used in the CSV file.</p>
 <p>The default is <code>,</code>.</p></dd>
 </dlentry>
@@ -508,7 +508,7 @@ This subcommand has the following options:
 <p>The default is <code>True</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--username USERNAME</code></dt>
+<dt><code>--username <em>USERNAME</em></code></dt>
 <dd><p>The admin username for ThoughtSpot login.</p>
 <p>The default is <code>None</code>.</p></dd>
 </dlentry>
@@ -531,7 +531,7 @@ This subcommand has the following options:
     <dd>Turns off the periodic call home feature.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome enable --customer_name CUSTOMER_NAME</code></dt>
+    <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
     <dd>
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
@@ -543,16 +543,16 @@ This subcommand has the following options:
     <dd>Generates the callhome stats tar file, with the following parameters:
       <dl>
         <dlentry>
-          <dt><code>--d D</code></dt>
+          <dt><code>--d <em>D</em></code></dt>
           <dd><p>Destination folder for the tar file.</p>
             <p>There is no default setting.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--since SINCE</code></dt>
+          <dt><code>--since <em>SINCE</em></code></dt>
           <dd>
             <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
             <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
-      writes it to the specified directory, where  <code>SINCE</code> is how many days back the file must start.</p>
+      writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
             <p>There is no default setting.</p></dd>
             </dlentry>
             </dl>
@@ -577,11 +577,11 @@ This subcommand has the following options:
   <dd>Takes a backup of cassandra, with the following parameters:
   <dl>
   <dlentry>
-  <dt><code>--keyspaces KEYSPACES</code></dt>
+  <dt><code>--keyspaces <em>KEYSPACES</em></code></dt>
   <dd><p>Comma separated list of keyspaces to take a backup of.</p>
   <p>The default is <code>None</code>.</p></dd></dlentry>
   <dlentry>
-  <dt><code>backup_dir BACKUP_DIR</code></dt>
+  <dt><code>backup_dir <em>BACKUP_DIR</em></code></dt>
   <dd><p>The path to the backup directory to write the backup.</p>
   <p>The default is <code>None</code>.</p></dd>
   </dlentry></dl></dd></dlentry>
@@ -590,7 +590,7 @@ This subcommand has the following options:
     <dd>Restores cassandra from a backup, with the following parameter:
     <dl>
     <dlentry>
-    <dt><code>--backup_dir BACKUP_DIR</code></dt>
+    <dt><code>--backup_dir <em>BACKUP_DIR</em></code></dt>
     <dd><p>The path to the backup directory to write the backup.</p>
     <p>The default is <code>None</code>.</p></dd>
     </dlentry></dl></dd></dlentry>
@@ -623,15 +623,15 @@ This subcommand has the following options:
     <dd>Checks the status of all nodes in the cluster, with the following parameters:
       <dl>
       <dlentry>
-      <dt><code>--path PATH</code></dt>
+      <dt><code>--path <em>PATH</em></code></dt>
       <dd><p>Specifies the working directory of the diagnostic tool.</p>
       <p>The default is <code>/usr/local/scaligent/release</code>.</p></dd></dlentry>
       <dlentry>
-      <dt><code>--includes INCLUDES</code></dt>
+      <dt><code>--includes <em>INCLUDES</em></code></dt>
       <dd><p>Specifies the comma-separated component(s) to be included in the check.</p>
       <p>The default is <code>all</code>.</p></dd></dlentry>
       <dlentry>
-      <dt><code>--retry RETRY</code></dt>
+      <dt><code>--retry <em>RETRY</em></code></dt>
       <dd><p>The maximum number of retry times if the node is unreachable.</p>
       <p>The default is <code>10</code>.</p></dd></dlentry>
       <dlentry>
@@ -661,7 +661,7 @@ This subcommand has the following options:
       </dd></dlentry>
       <dlentry>
       <dt><code>heterogeneous</code></dt>
-      <dd><p>Should be set for hetergenous clusters.</p>
+      <dd><p>Should be set for heterogeneous clusters.</p>
       <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
 
   <dlentry>
@@ -680,7 +680,7 @@ This subcommand has the following options:
       <dd><p>Gets the config for the local host only.</p>
       <p>The default is <code>False</code>.</p></dd></dlentry>
       <dlentry>
-      <dt><code>--nodes NODES</code></dt>
+      <dt><code>--nodes <em>NODES</em></code></dt>
       <dd><p>A comma separated list of specified nodes to get the config for.</p>
       <p>The default is <code>None</code>.</p></dd></dlentry>
       </dl></dd></dlentry>
@@ -702,7 +702,7 @@ This subcommand has the following options:
     <dd>Reinstalls OS on all nodes of the cluster, with the following parameters:
     <dl>
     <dlentry>
-    <dt><code>--secondary SECONDARY</code></dt>
+    <dt><code>--secondary <em>SECONDARY</em></code></dt>
     <dd><p>A secondary drive for reinstall.</p>
     <p>The default is <code>sdd</code>.</p></dd></dlentry>
     <dlentry>
@@ -711,7 +711,7 @@ This subcommand has the following options:
     </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster restore --release RELEASE <em>backupdir</em></code></dt>
+    <dt><code>tscli cluster restore --release <em>RELEASE</em> <em>backupdir</em></code></dt>
     <dd><p>Restores a cluster on the specified release number using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</p>
     <p>This command has the following parameters:</p>
     <dl>
@@ -723,8 +723,8 @@ This subcommand has the following options:
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
     <dd>Determines whether to enable Cloud Storage setup.</dd></dlentry>
     <dlentry>
-    <dt><code>--heterogenous</code></dt>
-    <dd><p>Should be set for heterogenous clusters.</p>
+    <dt><code>--heterogeneous</code></dt>
+    <dd><p>Should be set for heterogeneous clusters.</p>
     <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
 
@@ -764,7 +764,7 @@ This subcommand has the following options:
     <dd>Sets the minimum resource configuration of the cluster, with the following parameter:
 <dl>
   <dlentry>
-  <dt><code>--file FILE</code></dt>
+  <dt><code>--file <em>FILE</em></code></dt>
   <dd><p>Specified script with overrides.</p>
   <p>The default is <code>False</code>.</p></dd>
   </dlentry></dl></dd></dlentry>
@@ -800,7 +800,7 @@ This subcommand has the following options:
   <dd><p>Runs checks not related to orion.</p>
   <p>The default is <code>False</code>.</p></dd></dlentry>
   <dlentry>
-  <dt><code>--includes INCLUDES</code></dt>
+  <dt><code>--includes <em>INCLUDES</em></code></dt>
   <dd><p>The name of the service to check the status of, either falcon or sage.</p>
   <p>The default is <code>None</code>.</p></dd></dlentry></dl></dd></dlentry>
 
@@ -860,17 +860,17 @@ Runs a specified command (`COMMAND`) on all nodes.
 This subcommand has the following option:
 <dl>
   <dlentry>
-    <dt><code>tscli command run COMMAND</code></dt>
+    <dt><code>tscli command run <em>COMMAND</em></code></dt>
   <dd>
     <p>This subcommand has the following parameters:</p>
     <dl>
     <dlentry>
-      <dt><code>--nodes NODES</code></dt>
+      <dt><code>--nodes <em>NODES</em></code></dt>
       <dd>
         <p>Space-separated IPs of nodes on which to run the command.</p>
         <p>The default setting is <code>all</code>.</p></dd></dlentry>
     <dlentry>
-      <dt><code>--dest_dir DEST_DIR</code></dt>
+      <dt><code>--dest_dir <em>DEST_DIR</em></code></dt>
       <dd>
         <p>Directory to save the files that contain the output from each node.</p>
         <p>This is a mandatory parameter.</p></dd></dlentry>
@@ -915,7 +915,7 @@ This subcommand has the following options:
     <dt><code>cluster_id</code></dt>
     <dd>The ID of the mirror cluster.</dd></dlentry>
     <dlentry>
-    <dt><code>--email EMAIL</code></dt>
+    <dt><code>--email <em>EMAIL</em></code></dt>
     <dd><p>Option alert email setting.</p>
     <p>The default is <code>later</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
@@ -943,15 +943,15 @@ This subcommand has the following options:
 
       <dl>
         <dlentry>
-          <dt><code>--admin_username ADMIN_USERNAME</code></dt>
+          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
           <dd><p>Specifies the Administrator username for ThoughtSpot.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--username USERNAME</code></dt>
+          <dt><code>--username <em>USERNAME</em></code></dt>
           <dd><p>Specifies the username for Informatica Cloud.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--max_wait MAX_WAIT</code></dt>
+          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
           <dd><p>The maximum time in seconds to wait for the Data Connect agent to start.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
@@ -975,15 +975,15 @@ This subcommand has the following options:
       <p>The default is <code>False</code>.</p></dd>
       </dlentry>
       <dlentry>
-      <dt><code>--proxy_host PROXY_HOST</code></dt>
+      <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
       <dd>Specify your proxy server host for network access.</dd>
       </dlentry>
       <dlentry>
-      <dt><code>--proxy_port PROXY_PORT</code></dt>
+      <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
       <dd>Specify your proxy server port.</dd>
       </dlentry>
       <dlentry>
-      <dt><code>--proxy_username PROXY_USERNAME</code></dt>
+      <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
       <dd>Specify your proxy server username.</dd>
       </dlentry>
       <dlentry>
@@ -1001,7 +1001,7 @@ This subcommand has the following options:
 
       <dl>
         <dlentry>
-          <dt><code>--username USERNAME</code></dt>
+          <dt><code>--username <em>USERNAME</em></code></dt>
           <dd><p>Username for Informatica Cloud</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
@@ -1009,34 +1009,34 @@ This subcommand has the following options:
           <dd><p>URL to reach ThoughtSpot.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--admin_username ADMIN_USERNAME</code></dt>
+          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
           <dd><p>Admin username for ThoughtSpot</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--groupname GROUPNAME</code></dt>
+          <dt><code>--groupname <em>GROUPNAME</em></code></dt>
           <dd><p>Name of the secure agent group to use.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--org_id ORG_ID</code></dt>
+          <dt><code>--org_id <em>ORG_ID</em></code></dt>
           <dd><p>Specifies the Informatica <code>id</code> of the company.</p>
           <p>The default is <code>None</code>.</p><!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
         <dlentry>
-          <dt><code>--pin_to PIN_TO</code></dt>
+          <dt><code>--pin_to <em>PIN_TO</em></code></dt>
           <dd><p>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
       to the Informatica agent, and will always be used. Defaults to the public IP
       address of the localhost where this command was run.</p>
       <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_host PROXY_HOST</code></dt>
+          <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
           <dd>Proxy server host for network access.</dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_port PROXY_PORT</code></dt>
+          <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
           <dd>Proxy server port.</dd></dlentry>
         <dlentry>
-          <dt><code>--proxy_username PROXY_USERNAME</code></dt>
+          <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
           <dd>Proxy server username.</dd></dlentry>
         <dlentry>
-          <dt><code>--max_wait MAX_WAIT</code></dt>
+          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
           <dd><p>Maximum time in seconds to wait for Data Connect agent to start.</p>
           <p>The default is <code>None</code>.</p></dd></dlentry>
         <dlentry>
@@ -1068,22 +1068,23 @@ This subcommand has the following option:
     <dt><code>tscli event list [-h] [--include <em>INCLUDE</em>] [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--limit <em>LIMIT</em>] [--detail] [--summary_contains <em>SUMMARY_CONTAINS</em>] [--detail_contains <em>DETAIL_CONTAINS</em>] [--attributes <em>ATTRIBUTES</em>]</code></dt>
 
     <dd>
-      <p>The <code>event</code> subcommand accepts these optional flags:</p>
+      <p>The <code>event list </code> subcommand accepts these optional flags:</p>
 
       <dl>
 
         <dlentry>
           <dt><code>--include <em>INCLUDE</em></code></dt>
-          <dd>Options are all, config, notification. Default config. (default: config)</dd></dlentry>
+          <dd><p>Options are all, config, and notification.</p>
+          <p>The default is <code>config</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--since <em>SINCE</em></code></dt>
-          <dd>Grab events from this time window in the past. Should be a human readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</dd></dlentry>
+          <dd>Grabs events from the specified time window. Should be a human readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), or <code>1d</code> (1 day).</dd></dlentry>
         <dlentry>
           <dt><code>--from <em>FROM</em></code></dt>
-          <dd>Begin timestamp. Must be of the form: <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
+          <dd>Specifies the starting point for the time window to grab events from. Must be of the form <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
         <dlentry>
           <dt><code>--to <em>TO</em></code></dt>
-          <dd>End timestamp. Must be of the form: <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
+          <dd>Specifies the ending point for the time window to grab events from. Must be of the form: <code>yyyymmdd-HH:MM</code>.</dd></dlentry>
         <dlentry>
           <dt><code>--limit <em>LIMIT</em></code></dt>
           <dd>
@@ -1092,11 +1093,11 @@ This subcommand has the following option:
         <dlentry>
           <dt><code>--detail</code></dt>
           <dd>
-            <p>Print events in detail format. This is not tabular. Default is a tabular summary.</p>
+            <p>Prints events in detail format. This is not tabular. Default is a tabular summary.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--summary_contains <em>SUMMARY_CONTAINS</em></code></dt>
-          <dd>Summary of the event will be checked for this string. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matchesALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
+          <dd>Summary of the event will be checked for this string. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matches ALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
         <dlentry>
           <dt><code>--detail_contains <em>DETAIL_CONTAINS</em></code></dt>
           <dd>Details of the event will be checked for this string. Multiple strings to check for can be specified by separating them with <code>|</code> (pipe). The event is returned if it <code>matches ALL</code>. Put single quotes around the param value to prevent undesired glob expansion.</dd></dlentry>
@@ -1118,7 +1119,10 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli feature get-all-config</code></dt>
-    <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding, Data Connect, and call home, and informs whether they are enabled or disabled.</dd></dlentry>
+    <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding, Data Connect, and callhome, and informs whether they are enabled or disabled. This subcommand has the following parameter:
+    <dl><dlentry>
+    <dt><code>--proto</code></dt>
+    <dd>Shows the output as a serialized proto.</dd></dlentry></dl></dd></dlentry>
 </dl>
 
 {: id="tscli-fileserver"}
@@ -1138,11 +1142,27 @@ This subcommand has the following options:
       <p>You only have to issue this command one time, to set up the connection to the secure file server. Reissue this command if the password changes.</p>
       <p>The parameter <code>PASSWORD</code> is optional. If a password is not specified, you will be prompted to enter it.</p></dd></dlentry>
   <dlentry>
-    <dt><code>tscli fileserver download-release [-h] [--user <em>USER</em>] [--password <em>PASSWORD</em>] <em>release</em></code></dt>
+    <dt><code>tscli fileserver download-release [-h] [--user <em>USER</em>] [--password <em>PASSWORD</em>] [--url <em>URL</em>] [--md5 <em>MD5</em>] [--out <em>OUT</em>] <em>release</em></code></dt>
     <dd>
       <p>Downloads the specified release file, including its checksum, and verifies the integrity of release bundle.</p>
       <p>You must specify the exact release number, such as <code>5.1.3</code>. </p>
-      <p>Before using this command for the first time, you must set up the file server connection using <code>tscli fileserver configure</code>. You can then work with a member of the ThoughtSpot Support team becuase a privileged <code>user</code> and a corresponding <code>password</code> must be specified to download releases.</p></dd></dlentry>
+      <p>Before using this command for the first time, you must set up the file server connection using <code>tscli fileserver configure</code>. You can then work with a member of the ThoughtSpot Support team because a privileged <code>user</code> and a corresponding <code>password</code> must be specified to download releases. This command has the following parameters:</p>
+      <dl><dlentry>
+      <dt><code>--user <em>USER</em></code></dt>
+      <dd>The fileserver username.</dd></dlentry>
+      <dlentry>
+      <dt><code>--password <em>PASSWORD</em></code></dt>
+      <dd>The fileserver password.</dd></dlentry>
+      <dlentry>
+      <dt><code>--url <em>URL</em></code></dt>
+      <dd>Url from where the release needs to be downloaded.</dd></dlentry>
+      <dlentry>
+      <dt><code>--md5 <em>MD5</em></code></dt>
+      <dd>Md5 of the release tarball, if known.</dd></dlentry>
+      <dlentry>
+      <dt><code>--out <em>OUT</em></code></dt>
+      <dd>File name of the tar ball.</dd></dlentry></dl>
+      </dd></dlentry>
   <dlentry>
     <dt><code>tscli fileserver purge-config</code></dt>
     <dd>Removes the file server configuration.</dd></dlentry>
@@ -1160,7 +1180,7 @@ This subcommand has the following options:
   <code>tscli fileserver configure</code>. Before using this command for the first time, you
   must set up the file server connection using <code>tscli fileserver configure</code>.</p>
 
-      <p>This uses the following flags:</p>
+      <p>This command uses the following flags:</p>
 
       <dl>
 
@@ -1190,7 +1210,7 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli firewall close-ports</code></dt>
+    <dt><code>tscli firewall close-ports --ports <em>PORTS</em></code></dt>
     <dd>
       <p>Closes specified ports through firewall on all nodes.</p>
       <p>Accepts a comma-separated list of ports. Only closes ports that were previously opened using <code>open-ports</code>, and ignores ports that were not opened with <code>open-port</code>, or closed ports.</p>
@@ -1198,12 +1218,12 @@ This subcommand has the following options:
   or by <code>open-ports</code>.</p></dd></dlentry>
   <dlentry>
     <dt><code>tscli firewall disable</code></dt>
-    <dd>Disable firewall.</dd></dlentry>
+    <dd>Disables firewall.</dd></dlentry>
    <dlentry>
      <dt><code>tscli firewall enable</code></dt>
-     <dd>Enable firewall.</dd></dlentry>
+     <dd>Enables firewall.</dd></dlentry>
    <dlentry>
-     <dt><code>tscli firewall open-ports --ports <em>ports</em></code></dt>
+     <dt><code>tscli firewall open-ports --ports <em>PORTS</em></code></dt>
      <dd>
        <p>Opens specified ports through a firewall on all nodes.</p>
        <p>Accepts a comma-separated list of ports.</p>
@@ -1228,10 +1248,14 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli hdfs leave-safemode</code></dt>
-    <dd>Command to get HDFS <code>namenodes</code> out of <code>safemode</code>.</dd>
+    <dd>Command to get HDFS <code>namenodes</code> out of <code>safemode</code>, with the following parameter:
+    <dl><dlentry>
+    <dt><code>--timeout <em>TIMEOUT</em></code></dt>
+    <dd><p>Specifies timeout when waiting for the command to finish.</p>
+    <p>The default is <code>5</code>.</p></dd></dlentry></dl></dd>
   </dlentry></dl>
 
-{: id="tscli-ispec"}
+{: id="tscli-ipsec"}
 ### ipsec
 
 ```
@@ -1243,13 +1267,13 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli ipsec disable</code></dt>
-    <dd>Disable IPSec</dd></dlentry>
+    <dd>Disables IPSec.</dd></dlentry>
   <dlentry>
     <dt><code>tscli ipsec enable</code></dt>
-    <dd>Enable IPSec</dd></dlentry>
+    <dd>Enables IPSec.</dd></dlentry>
   <dlentry>
     <dt><code>tscli ipsec status</code></dt>
-    <dd>Show IPSec status on all nodes</dd></dlentry>
+    <dd>Shows IPSec status on all nodes.</dd></dlentry>
 </dl>
 
 {: id="tscli-ldap"}
@@ -1263,10 +1287,10 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli ldap add-cert <em>name</em> <em>certificate</em></code></dt>
+    <dt><code>tscli ldap add-cert <em>name</em> <em>cert_file</em></code></dt>
     <dd>Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
   SSL and you wish to add it. Use <code>name</code> to supply an alias for the
-  certificate you are installing.</dd></dlentry>
+  certificate you are installing. Specify the file where the certificate is.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli ldap configure</code></dt>
@@ -1294,16 +1318,16 @@ This subcommand has the following options:
     <dt><code>tscli logs collect [-h] [--include <em>INCLUDE</em>] [--exclude <em>EXCLUDE</em>] [--since <em>SINCE</em>] [--from <em>FROM</em>] [--to <em>TO</em>] [--out <em>OUT</em>] [--maxsize <em>MAXSIZE</em>] [--sizeonly] [--nodes <em>NODES</em>]</code></dt>
     <dd>
       <p>Extracts logs from the cluster. Does not include any logs that have been deleted due to log rotation.</p>
-      <p>These parameters have the following values:</p>
+      <p>This subcommand has the following parameters:</p>
       <dl>
         <dlentry>
           <dt><code>--include <em>INCLUDE</em></code></dt>
-          <dd>Specifies a comma separated list of logs to include. Each entry is either a
-    "selector" or a glob for matching files. Selectors must be among: `all`,
-    `orion`, `system`, `ts`. Anything starting with `/` is assumed to be a glob
-    pattern, and it is interpreted through `find(1)`. Other entries are ignored. Put single
-    quotes around the param value to prevent undesired glob expansion (default:
-    `all`)</dd></dlentry>
+          <dd><p>Specifies a comma separated list of logs to include. Each entry is either a
+    "selector" or a glob for matching files. Selectors must be among: <code>all</code>,
+    <code>orion</code>, <code>system</code>, <code>ts</code>. Anything starting with <code>/</code> is assumed to be a glob
+    pattern, and it is interpreted through <code>find(1)</code>. Other entries are ignored. Put single
+    quotes around the param value to prevent undesired glob expansion.</p>
+    <p>The default is <code>all</code>.</p></dd></dlentry>
 
         <dlentry>
           <dt><code>--exclude <em>EXCLUDE</em></code></dt>
@@ -1312,8 +1336,8 @@ This subcommand has the following options:
 
        <dlentry>
          <dt><code>--since <em>SINCE</em></code></dt>
-         <dd>Grab logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day). (default:
-    None)</dd></dlentry>
+         <dd><p>Grabs logs from the specified time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+         <p>The default is <code>None</code>.</p></dd></dlentry>
 
       <dlentry>
         <dt><code>--from <em>FROM</em></code></dt>
@@ -1328,7 +1352,7 @@ This subcommand has the following options:
           <p>The default setting is <code>/tmp/logs.tar.gz</code>.</p></dd></dlentry>
       <dlentry>
         <dt><code>--maxsize <em>MAXSIZE</em></code></dt>
-        <dd>Only fetch logs if size is smaller that this value. Can be specified in megabytes or gigabytes, such as <code>100MB</code>, <code>10GB</code>.</dd></dlentry>
+        <dd>Only fetch logs if size is smaller than this value. Can be specified in megabytes or gigabytes, such as <code>100MB</code>, <code>10GB</code>.</dd></dlentry>
       <dlentry>
               <dt><code>--sizeonly</code></dt>
               <dd>
@@ -1352,7 +1376,7 @@ This subcommand has the following options:
       <dt><code>--cmd <em>CMD</em></code></dt>
       <dd>
         <p>Unix-Command to be run on the selected logs. Use single quotes to escape
-    spaces etc. Note the language used to specify CMDSTR has following rules.</p>
+    spaces etc. Note the language used to specify CMDSTR has the following rules.</p>
         <ul>
           <li>A logfile and its corresponding result file can be referred by keywords <code>SRCFILE</code> and
     <code>DSTFILE</code>. For example, <code>cp SRCFILE DSTFILE</code>.</li>
@@ -1364,9 +1388,9 @@ This subcommand has the following options:
     <dlentry>
       <dt><code>--include <em>INCLUDE</em></code></dt>
       <dd>
-        <p>Comma-separated list of logs to include,each entry is either a "selector" or
+        <p>Comma-separated list of logs to include. Each entry is either a "selector" or
     a glob for matching files.</p>
-        <p>Selectors must be one of <code>all</code>, <code>orion</code>, <code>system</code>,
+        <p>Selectors must be one of <code>all</code>, <code>orion</code>, <code>system</code>, or
     <code>ts</code>.</p>
         <p>Anything that starts with <code>/</code> (forward slash) is assumed to be a glob pattern and
     interpreted through <code>find(1)</code>. Other entries are ignored.</p>
@@ -1376,11 +1400,11 @@ This subcommand has the following options:
     <dlentry>
       <dt><code>--exclude <em>EXCLUDE</em></code></dt>
       <dd>Comma separated list of logs to exclude. Applies to the list selected by
-    <code>--include</code>. Params are interpreted just like in <code>--include</code>.</dd></dlentry>
+    <code>--include</code>. Parameters are interpreted just like in <code>--include</code>.</dd></dlentry>
 
     <dlentry>
       <dt><code>--since <em>SINCE</em></code></dt>
-      <dd>Grab logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</dd></dlentry>
+      <dd>Grabs logs from the specified time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), or  <code>1d</code> (1 day).</dd></dlentry>
 
     <dlentry>
       <dt><code>--from <em>FROM</em></code></dt>
@@ -1392,7 +1416,7 @@ This subcommand has the following options:
 
     <dlentry>
       <dt><code>--outfile <em>OUTFILE</em></code></dt>
-      <dd>File path for printing all results. By default printed to <code>stdout</code></dd></dlentry>
+      <dd>File path for printing all results. By default printed to <code>stdout</code>.</dd></dlentry>
 
     <dlentry>
       <dt><code>--outdir <em>OUTDIR</em></code></dt>
@@ -1408,7 +1432,7 @@ This subcommand has the following options:
 
     <dlentry>
       <dt><code>--nodes <em>NODES</em></code></dt>
-      <dd>Comma separated list of nodes where to run command. Skip this to use all nodes.</dd></dlentry>
+      <dd>Comma separated list of nodes to run command on. Skip this to use all nodes.</dd></dlentry>
    </dl>
   </dd></dlentry></dl>
 
@@ -1425,20 +1449,20 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
-      <p>Enables ThoughtSpot's map tiles, used when constructing geomap charts.</p>
+      <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
       <p>If you don't have interest access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
 
       <dl>
         <dlentry>
           <dt><code>--online</code></dt>
           <dd>
-            <p>Download <code>maptiles</code> tar from internet.</p>
-            <p>The default setting is <code>True</code></p></dd></dlentry>
+            <p>Downloads <code>maptiles</code> tar from internet.</p>
+            <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--offline</code></dt>
           <dd>
-            <p>Using <code>maptiles</code> tar from local disk.</p>
-            <p>The default setting is <code>False</code></p></dd></dlentry>
+            <p>Specifies that you are using <code>maptiles</code> tar from local disk.</p>
+            <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
           <dd>Specified tar file for map-tiles.</dd></dlentry>
@@ -1451,11 +1475,15 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli map-tiles disable</code></dt>
-    <dd>Disable map-tiles functionality.</dd></dlentry>
+    <dd>Disables map-tiles functionality.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli map-tiles status</code></dt>
-    <dd>Check whether map-tiles are enabled.</dd></dlentry>
+    <dd>Checks whether map-tiles are enabled, with the following parameter:
+    <dl><dlentry>
+    <dt><code>--md5 <em>MD5</em></code></dt>
+    <dd>Specified md5 checksum for validation.</dd></dlentry></dl>
+    </dd></dlentry>
 
 </dl>
 
@@ -1470,7 +1498,7 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli monitoring set-config [-h] [--email EMAIL] [--clear_email] [--heartbeat_interval HEARTBEAT_INTERVAL] [--heartbeat_disable] [--report_interval REPORT_INTERVAL] [--report_disable]</code></dt>
+    <dt><code>tscli monitoring set-config [-h] [--email EMAIL] [--clear_email] [--heartbeat_interval HEARTBEAT_INTERVAL] [--heartbeat_disable]</code></dt>
     <dd>
       <p>Sets the monitoring configuration.</p>
       <p>The <code>monitoring</code> subcommand accepts the following optional flags:</p>
@@ -1481,23 +1509,14 @@ This subcommand has the following options:
           <dd>Comma separated list (no spaces) of email addresses where the cluster will send monitoring information.</dd></dlentry>
         <dlentry>
           <dt><code>--clear_email</code></dt>
-          <dd>Disable emails by clearing email configuration. (default: False)</dd></dlentry>
+          <dd><p>Disables monitoring emails by clearing email configuration.</p>
+          <p>The default is <code>False</code>.</p></dd></dlentry>
        <dlentry>
          <dt><code>--heartbeat_interval <em>HEARTBEAT_INTERVAL</em></code></dt>
          <dd>Heartbeat email generation interval in seconds. Should be greater than 0.</dd></dlentry>
        <dlentry>
          <dt><code>--heartbeat_disable</code></dt>
-         <dd>Disable heartbeat email generation. (default: False)</dd></dlentry>
-       <dlentry>
-         <dt><code>--report_interval <em>REPORT_INTERVAL</em></code></dt>
-         <dd>
-           <p>Cluster report email generation interval in seconds.</p>
-           <p>Should be greater than <code>0</code>.</p></dd></dlentry>
-       <dlentry>
-         <dt><code>--report_disable</code></dt>
-         <dd>
-           <p>Disable cluster report email generation.</p>
-           <p>The default setting is <code>False</code>.</p></dd></dlentry>
+         <dd>Disables heartbeat email generation. (default: False)</dd></dlentry>
 
       </dl>
     </dd></dlentry>
@@ -1520,7 +1539,7 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli nas ls [-h]</code></dt>
-    <dd>List mounts managed by NAS mounter service.</dd></dlentry>
+    <dd>Lists mounts managed by NAS mounter service.</dd></dlentry>
 
  <dlentry>
     <dt><code>tscli nas mount-cifs [-h] --server <em>SERVER</em> [--path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em>--username <em>USERNAME</em> --password <em>PASSWORD</em> [--uid <em>UID</em>] [--gid <em>GID</em>] [--options <em>OPTIONS</em>]</code></dt>
@@ -1552,11 +1571,11 @@ This subcommand has the following options:
 
       <dlentry>
         <dt><code>--username <em>USERNAME</em></code></dt>
-        <dd>Username to connect to the CIFS filesystem</dd></dlentry>
+        <dd>Username to connect to the CIFS filesystem.</dd></dlentry>
 
       <dlentry>
         <dt><code>--password <em>PASSWORD</em></code></dt>
-        <dd>CIFS password for <code>--username</code></dd></dlentry>
+        <dd>CIFS password for <code>--username</code>.</dd></dlentry>
 
       <dlentry>
         <dt><code>--uid <em>UID</em></code></dt>
@@ -1582,9 +1601,9 @@ This subcommand has the following options:
     </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli nas mount-nfs [-h] --server <em>SERVER</em> [--protocol <em>PROTO</em> --path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em> [--options <em>OPTIONS</em>]</code></dt>
+    <dt><code>tscli nas mount-nfs [-h] [--server <em>SERVER</em>] [--path_on_server <em>PATH_ON_SERVER</em>] [--mount_point <em>MOUNT_POINT</em>] [--options <em>OPTIONS</em>] [--protocol {nfs,nfs4}]</code></dt>
     <dd>
-      <p>Mounts a NFS device on all nodes.</p>
+      <p>Mounts the NFS filesystem on all nodes.</p>
       <p>Accepts the following optional flags:</p>
 
       <dl>
@@ -1613,7 +1632,7 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--protocol <em>PROTO</em></code></dt>
           <dd>
-            <p>One of <code>nfs</code> or <code>nfs4</code>.</p>
+            <p>Protocol to use for mounting, either <code>nfs</code> or <code>nfs4</code>.</p>
             <p>The default is <code>nfs</code>.</p></dd></dlentry>
        </dl>
        </dd>
@@ -1640,14 +1659,14 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli node check [-h] [--select {reinstall-preflight}] [--secondary <em>SECONDARY</em>]</code></dt>
     <dd>
-      <p>Run checks per node.</p>
+      <p>Runs checks per node.</p>
       <p>Accepts the following flags:</p>
 
       <dl>
         <dlentry>
           <dt><code>--select {reinstall-preflight}</code></dt>
           <dd>
-            <p>Select the type of node check</p>
+            <p>Specifies the type of node check.</p>
             <p>The default setting is <code>reinstall-preflight</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--secondary <em>SECONDARY</em></code></dt>
@@ -1659,15 +1678,17 @@ This subcommand has the following options:
 
    <dlentry>
       <dt><code>tscli node ls [-h] [--type {all,healthy,not-healthy}]</code></dt>
-      <dd>
-        <p>Filter by node state.</p>
-        <p>The default setting is <code>all</code>.</p>
+      <dd>Lists all nodes in the cluster, with the following parameter:
+      <dl><dlentry>
+      <dt><code>--type {all,healthy,not-healthy}</code></dt>
+      <dd><p>Filters by node state.</p>
+      <p>The default setting is <code>all</code>.</p></dd></dlentry></dl>
       </dd></dlentry>
 
    <dlentry>
       <dt><code>tscli node reinstall-os [-h] [--secondary <em>SECONDARY</em>] [--cluster]</code></dt>
       <dd>
-        <p>Reinstall OS on a node.</p>
+        <p>Reinstalls OS on a node.</p>
         <p>Accepts the following flags:</p>
 
         <dl>
@@ -1679,15 +1700,29 @@ This subcommand has the following options:
           <dlentry>
           <dt><code>--cluster</code></dt>
           <dd>
-            <p>The node part of a cluster.</p>
+            <p>Use this flag to specify if the node is part of a cluster.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         </dl>
      </dd></dlentry>
 
    <dlentry>
     <dt><code>tscli node resume-reinstall-os</code></dt>
-    <dd>Resume in-progress reinstall</dd></dlentry>
+    <dd>Resumes in-progress reinstall</dd></dlentry>
 
+</dl>
+
+{: id="tscli-notification"}
+### notification
+```
+tscli notification [-h] {set-apns-config}
+```
+This subcommand has the following option:
+
+<dl>
+<dlentry>
+<dt><code>tscli notification set-apns-config</code></dt>
+<dd>Sets APNS configuration.</dd>
+</dlentry>
 </dl>
 
 {: id="tscli-onboarding"}
@@ -1709,7 +1744,7 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli onboarding configure</code></dt>
     <dd>
-      <p>Configures the onboarding through series of steps.</p>
+      <p>Configures the onboarding through a series of steps.</p>
       <p>Asks the user to provide information necessary for onboarding-related functionality, such as the following:</p>
       <ol>
         <li>Company name</li>
@@ -1725,28 +1760,37 @@ This subcommand has the following options:
           </ul></li></ol></dd></dlentry>
   <dlentry>
     <dt><code>tscli onboarding purge-configuration</code></dt>
-    <dd>This command removes all onboarding configuration.</dd></dlentry>
+    <dd>This command removes all previous onboarding configuration.</dd></dlentry>
 </dl>
 
 {: id="tscli-patch"}
 ### patch
 
 ```
-tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback}
+tscli patch [-h] {abort-apply,apply,ls,resume-apply,resume-rollback,rollback,status}
 ```
 
 This subcommand has the following options:
 
 <dl>
   <dlentry>
+    <dt><code>tscli patch abort-apply</code></dt>
+    <dd>Aborts an ongoing patch-apply, if safe.</dd></dlentry>
+
+  <dlentry>
     <dt><code>tscli patch apply [-h] [<em>release</em>]</code></dt>
     <dd>
-      <p>Apply the patch on an existing cluster.</p>
-      <p>Accepts the following flag:</p>
+      <p>Applies the patch on an existing cluster.</p>
+      <p>Accepts the following flags:</p>
       <dl>
         <dlentry>
           <dt><code>release</code></dt>
-          <dd>The relative path to the patch tar ball.</dd></dlentry></dl>
+          <dd>The relative path to the patch tar ball.</dd></dlentry>
+        <dlentry>
+          <dt><code>--skip-check</code></dt>
+          <dd><p>When set, skips all pre-apply checks.</p>
+          <p>The default is <code>False</code>.</p></dd></dlentry>
+          </dl>
       </dd></dlentry>
 
     <dlentry>
@@ -1759,17 +1803,17 @@ This subcommand has the following options:
           <dlentry>
             <dt><code>--applied</code></dt>
             <dd>
-              <p>Show only the patches applied since last full release.</p>
+              <p>Shows only the patches applied since the last full release.</p>
               <p>The default setting is <code>False</code>.</p></dd></dlentry>
           <dlentry>
             <dt><code>--rolled_back</code></dt>
             <dd>
-              <p>Show only the patches rolled back since last full release.</p>
+              <p>Shows only the patches rolled back since the last full release.</p>
               <p>The default setting is <code>False</code>.</p></dd></dlentry>
           <dlentry>
             <dt><code>--service <em>SERVICE</em></code></dt>
             <dd>
-              <p>Show patches filtered by service.</p>
+              <p>Shows patches filtered by service.</p>
               <p>The default setting is <code>None</code>.</p></dd></dlentry>
           <dlentry>
             <dt><code>--md5 <em>MD5</em></code></dt>
@@ -1786,15 +1830,28 @@ This subcommand has the following options:
 
     <dlentry>
       <dt><code>tscli patch resume-apply [-h]</code></dt>
-      <dd>Resume patch apply</dd></dlentry>
+      <dd>Resumes patch apply.</dd></dlentry>
 
     <dlentry>
       <dt><code>tscli patch resume-rollback [-h]</code></dt>
-      <dd>Resume patch roll-backup</dd></dlentry>
+      <dd>Resumes patch roll-back</dd></dlentry>
 
     <dlentry>
       <dt><code>tscli patch rollback [-h]</code></dt>
-      <dd>Rollback the patch from an existing cluster</dd></dlentry>
+      <dd>Rolls back the patch from an existing cluster, with the following parameters:
+      <dl>
+      <dlentry>
+      <dt><code>md5</code></dt>
+      <dd>Specifies the md5 of the patch to be rolled back.</dd></dlentry>
+      <dlentry>
+      <dt><code>--skip_check</code></dt>
+      <dd><p>When set, skips all pre-apply checks while rolling back.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+      </dd></dlentry>
+
+    <dlentry>
+      <dt><code>tscli patch status</code></dt>
+      <dd>Shows the progress of patch operation.</dd></dlentry>
 
 </dl>    
 
@@ -1810,46 +1867,54 @@ Manages R packages available to SpotIQ.
 This subcommand has the following options:
 
 <dl>
+<dlentry>
 <dt><code>tscli rpackage add [-h] [--repo <em>REPO</em>] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
 <dd>
 <p>Command to add an R package, <code>package_name</code>, to the cluster.</p>
 <p>Accepts the following flags:</p>
 <dl>
+<dlentry>
 <dt><code>--repo <em>REPO</em></code></dt>
-<dd>Specify the url of a specific repository to download packages.</dd>
+<dd>Specify the url of a specific repository to download packages.</dd></dlentry>
+<dlentry>
 <dt><code>-timeout  <em>REPO</em></code></dt>
 <dd>Timeout waiting for the R Package to be installed (default: 60)</dd>
 <dt><code>--dest_dir <em>REPO</em></code></dt>
-<dd>Directory where output of this command will be placed</dd>
+<dd>Directory where output of this command will be placed</dd></dlentry>
+<dlentry>
 <dt><code>--nodes <em>NODES</em></code></dt>
 <dd>
 <p>Space-separated list of IPs for nodes where to run the command.</p>
 <p>The default setting is <code>all</code>.</p>
-</dd>
+</dd></dlentry></dl></dd></dlentry>
+<dlentry>
 <dt><code>tscli rpackage add [-h] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
 <dd>
 <p>Command to delete an installed R package from the cluster.</p>
 <p>Accepts the following flags:</p>
 <dl>
+<dlentry>
 <dt><code>--timeout <em>REPO</em></code></dt>
 <dd>
 <p>Timeout waiting before removing the R package.</p>
 <p>The default is 60</p>
-</dd>
+</dd></dlentry>
+<dlentry>
 <dt><code>--dest_dir <em>REPO</em></code></dt>
-<dd>Directory where to save the output of this command.</dd>
+<dd>Directory where to save the output of this command.</dd></dlentry>
+<dlentry>
 <dt><code>--nodes <em>NODES</em></code></dt>
 <dd>
 <p>Space-separated list of node IPs where to run the command.</p>
 <p>The default setting is <code>all</code>.</p>
-</dd>
+</dd></dlentry>
 </dl>
-</dd>
+</dd></dlentry>
+<dlentry>
 <dt><code>tscli rpackage list [-h] [--detailed]</code></dt>
-<dd>List all R packages installed on the cluster.</dd>
+<dd>List all R packages installed on the cluster.</dd></dlentry>
 </dl>
-</dd>
-</dl>
+
 
 {: id="tscli-saml"}
 ### saml
@@ -1882,8 +1947,8 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli scheduled-pinboards disable [-h]</code></dt>
-    <dd>Disable scheduled pinboards for this cluster.</dd></dlentry>
+    <dt><code>tscli scheduled-pinboards disable</code></dt>
+    <dd>Disables scheduled pinboards for the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli scheduled-pinboards enable [-h]</code></dt>
     <dd>Enables scheduled pinboards, which is disabled in prod clusters by default.</dd></dlentry>
@@ -1892,6 +1957,30 @@ This subcommand has the following options:
 {% include note.html content="When you enable scheduled pinboards, you should
 also configure a whitelist of intended email domains. Contact ThoughtSpot
 Support for help on how to configure a whitelist." %}
+
+{: id="tscli-set"}
+### set
+
+```
+tscli set [-h] {heterogeneous}
+```
+
+This subcommand has the following option:
+
+ <dl>
+ <dlentry>
+  <dt><code>tscli set heterogeneous</code></dt>
+  <dd>Sets or unsets a cluster as heterogeneous, with the following parameters:
+    <dl>
+    <dlentry>
+      <dt><code>--set</code></dt>
+      <dd><p>Marks the cluster heterogeneous.</p>
+      <p>The default is <code>True</code>.</p></dd></dlentry>
+    <dlentry>
+      <dt><code>--unset</code></dt>
+      <dd><p>Marks the cluster homogeneous.</p>
+      <p>The default is <code>True</code>.</p></dd></dlentry>
+  </dl></dd></dlentry></dl>
 
 {: id="tscli-smtp"}
 ###  smtp
@@ -1922,13 +2011,15 @@ This subcommand has the following options:
 
 <dlentry>
   <dt><code>tscli smtp set-canonical-mapping [-h] <em>new_key</em> <em>new_value</em></code></dt>
-  <dd>Sets a new Postmap mapping.</dd></dlentry>
+  <dd>Sets a new Postmap mapping. You must specify the <code>new_key</code> and the <code>new_value</code>.</dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailfromname <em>mailfromname</em></code></dt>
-  <dd>Sets the name and an email address from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the name from where email alerts are sent for the cluster.</p>
+  <p>It is the first half of the email address, the part before the @ sign. In <em>example@company.com</em>, it is <em>example</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailname <em>mailname</em></code></dt>
-  <dd>Sets the mailname and a domain from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the domain from where email alerts are sent for the cluster.</p>
+  <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] relayhost</code></dt>
   <dd>
@@ -1943,7 +2034,7 @@ This subcommand has the following options:
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>
-  <dd>Sets SASL credentials and enables SMTP AUTH</dd></dlentry>
+  <dd>Sets SASL credentials and enables SMTP AUTH.</dd></dlentry>
 
 <dlentry>
   <dt><code>tscli smtp show-canonical-mapping</code></dt>
@@ -1957,15 +2048,15 @@ This subcommand has the following options:
 <dlentry>
     <dt><code>tscli smtp show-relayhost</code></dt>
   <dd>
-    <p>Shows the  for SMTP (email) sent from the cluster.</p>
-    <p>If there a relay host is not configured, the command returns <code>NOT FOUND</code>.</p></dd></dlentry>
+    <p>Shows the relay host for SMTP (email) sent from the cluster.</p>
+    <p>If the relay host is not configured, the command returns <code>NOT FOUND</code>.</p></dd></dlentry>
    </dl>
 
 {: id="tscli-snapshot"}
 ### snapshot
 
 ```
-tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl}
+tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl,validate}
 ```
 
 To learn more about snapshots and backups, see the [Understand the backup strategies]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html) documentation.
@@ -1974,20 +2065,23 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base <em>BASE</em>] [--storage_type {local,nas}] [--remote] <em>name</em> <em>out</em></code></dt>
+    <dt><code>tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base <em>BASE</em>] [--storage_type {local,nas}] [--remote] [--no-orion-master] <em>name</em> <em>out</em></code></dt>
   <dd>
-    <p>Pull snapshot out as a backup.</p>
-    <p>Accepts the following flags:</p>
+    <p>Pulls snapshot out as a backup.</p>
+    <p>This command has the following required elements:</p>
+    <dl>
+    <dlentry>
+      <dt><code>name</code></dt>
+      <dd>Name of snapshot to pull out as a backup. To list all snapshots, run <code>tscli snapshot ls</code>.</dd></dlentry>
+    <dlentry>
+      <dt><code>out</code></dt>
+      <dd>Directory where backup will be written. The directory must not already exist.</dd></dlentry></dl>
+    <p><code>tscli snapshot backup</code> also accepts the following optional flags:</p>
       <dl>
         <dlentry>
           <dt><code>--mode {full,light,dataless}</code></dt>
-          <dd>Mode of backups. (default: `full`)</dd></dlentry>
-        <dlentry>
-          <dt><code>name</code></dt>
-          <dd>Name of snapshot to pull out as a backup. To list all snapshots, run `tscli snapshot ls`.</dd></dlentry>
-        <dlentry>
-          <dt><code>out</code></dt>
-          <dd>Directory where backup will be written, must not already exist.</dd></dlentry>
+          <dd><p>Mode of backups.</p>
+          <p>The default is <code>full</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--type {full,incremental}</code></dt>
           <dd>
@@ -1999,14 +2093,16 @@ This subcommand has the following options:
         <dt><code>--base <em>BASE</em></code></dt>
         <dd>
           <p>Based snapshot name for incremental backup.</p>
-          <p>Incremental backup not implemented yet.</p>
+          <p>Incremental backup is not implemented yet.</p>
         </dd></dlentry>
       <dlentry>
         <dt><code>storage_type {local,nas}</code></dt>
-        <dd>Storage type of output directory. (default: `local`)</dd></dlentry>
+        <dd><p>Storage type of output directory.</p>
+        <p>The default is <code>local</code>.</p></dd></dlentry>
       <dlentry>
         <dt><code>--remote</code></dt>
-        <dd>Take backup through Orion master. (default: `True`)</dd></dlentry></dl>
+        <dd><p>Takes backup through orion master.</p>
+        <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot create [-h] <em>name</em> <em>reason</em> <em>ttl</em></code></dt>
@@ -2017,29 +2113,31 @@ This subcommand has the following options:
    </dd>
 </dlentry>
 <dlentry>
-  <dt><code>tscli snapshot pin [-h] <em>name</em></code></dt>
-  <dd>Pins a snapshot so it cannot be deleted or garbage collected.</dd></dlentry>
-<dlentry>
   <dt><code>tscli snapshot delete [-h] <em>name</em></code></dt>
   <dd>Deletes the named snapshot.</dd></dlentry>
 <dlentry>
   <dt><code>tscli snapshot ls [-h]</code></dt>
   <dd>Lists available snapshots.</dd></dlentry>
 <dlentry>
+  <dt><code>tscli snapshot pin [-h] <em>name</em></code></dt>
+  <dd>Pins a snapshot with the specified <em>name</em> so it cannot be deleted or garbage collected.</dd></dlentry>
+<dlentry>
   <dt><code>tscli snapshot restore [-h] [--allow_release_change] [--only_service_state] <em>name</em></code></dt>
   <dd>
-    <p>Restores cluster to an existing snapshot.</p>
+    <p>Restores cluster to the specified snapshot <em>name</em>.</p>
     <p>Accepts the following flags:</p>
     <dl>
       <dlentry>
         <dt><code>--allow_release_change</code></dt>
-        <dd>Allow restoration to a snapshot at a different release. (default: `False`)</dd></dlentry>
+        <dd><p>Allows restoration to a snapshot at a different release.</p>
+        <p>The default is <code>False</code>.</p></dd></dlentry>
       <dlentry>
         <dt><code>--only_service_state</code></dt>
-        <dd>Restore only service state. (default: `False`)</dd></dlentry></dl></dd></dlentry>
+        <dd><p>Restores only the service state.</p>
+        <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
 <dlentry>
   <dt><code>tscli snapshot unpin [-h] <em>name</em></code></dt>
-  <dd>Unpin a snapshot so it can be deleted or garbage-collected</dd></dlentry>
+  <dd>Unpins the specified snapshot <em>name</em> so it can be deleted or garbage-collected.</dd></dlentry>
 <dlentry>
   <dt><code>tscli snapshot update-ttl [-h] [--disable <em>DISABLE</em>] <em>name</em> <em>ttl</em></code></dt>
   <dd><p>Updates manual snapshot garbage collection policy.</p>
@@ -2050,15 +2148,15 @@ This subcommand has the following options:
         <dd>Specifies which snapshot to update.</dd></dlentry>
       <dlentry>
         <dt><code>ttl</code></dt>
-        <dd>Extends the manual snapshot</dd></dlentry>
-      <dlentry>
-        <dt><code>ttl</code></dt>
         <dd><p>This is the "time-to-live" value.</p>
           <p>Use a positive value to increase <code>ttl</code>. Use negative values to decrease it.</p></dd></dlentry>
       <dlentry>
         <dt><code>--disable <em>DISABLE</em></code></dt>
-        <dd><p>Disable manual snapshot garbage collection.</p>
-          <p>Setting this value to `True` will override any `ttl` value. (default: False)</p></dd></dlentry></dl></dd></dlentry>
+        <dd><p>Disables manual snapshot garbage collection.</p>
+          <p>Setting this value to <code>True</code> overrides any <code>ttl</code> value. The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
+  <dlentry>
+  <dt><code>tscli snapshot validate</code></dt>
+  <dd>Validates a specified snapshot <em>name</em> to ensure it is not corrupt.</dd></dlentry>
 </dl>
 
 {: id="tscli-snapshot-policy"}
@@ -2073,24 +2171,40 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli snapshot-policy disable [-h]</code></dt>
-    <dd>Disable snapshot policy.</dd></dlentry>
+    <dd>Disables a specified snapshot policy.</dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot-policy enable -h</code></dt>
-    <dd>Enable specified snapshot policy.</dd></dlentry>
+    <dd>Enables a specified snapshot policy.</dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot-policy show [-h]</code></dt>
-    <dd>Show snapshot policy.</dd></dlentry>
+    <dd>Shows snapshot policy.</dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot-policy update [-h] [--config <em>CONFIG</em>]</code></dt>
 
     <dd>
-      <p>Update periodic snapshot config. This takes the following parameter</p>
+      <p>Updates periodic snapshot config, with the following parameter:</p>
       <dl>
         <dlentry>
           <dt><code>--config <em>CONFIG</em></code></dt>
           <dd>Text format of periodic backup policy config.</dd></dlentry></dl>
     </dd></dlentry>          
 </dl>
+
+{: id="tscli-socialproof"}
+### socialproof
+```
+tscli socialproof [-h] {disable,enable}
+```
+
+This subcommand has the following options:
+
+<dl>
+<dlentry>
+  <dt><code>tscli socialproof disable</code</dt>
+  <dd>Disables socialproof.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli socialproof enable</code></dt>
+  <dd>Enables socialproof.</dd></dlentry></dl>
 
 {: id="tscli-spot"}
 ### spot
