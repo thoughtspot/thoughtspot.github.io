@@ -25,12 +25,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access, alert, ansible, backup, backup-policy, calendar, callhome, cassandra,
-       cluster, command, dr-mirror, etl, event, feature, fileserver,
-       firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
-       node, notification, onboarding, patch, rpackage, saml, scheduled-pinboards, set, smtp, snapshot,
-       snapshot-policy, socialproof, spot, ssl, sssd, storage, support,
-       tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -44,13 +39,93 @@ tscli [subcommand]
 Subcommands have their own additional options and actions, such as `tscli backup
 create` or `tscli backup delete`.  
 
-Each subcommand may have several options.
+Each subcommand may have several options. When a subcommand option is of the form <code>tscli subcommand --flag <em>FLAG</em></code>, it requires a specific input from the user. For example, the command <code>tscli access list --type <em>TYPE</em></code>, where you want a list of pinboards, takes the form `tscli access list type pinboard`.
 
 To view help for a subcommand, type `-h` after the subcommand option:
 
 ```
 tscli [subcommand] -h
 ```
+
+{: id="tscli-optional-flags"}
+## tscli optional flags
+
+There are eight optional flags common to each `tscli` subcommand.
+
+{: id="tscli--help"}
+### help
+```
+-h, --help
+```
+
+Shows help for a command. This flag lists the specified command's subcommands and their definitions.
+
+{: id="tscli--helpfull"}
+### helpfull
+```
+--helpfull HELPFUll
+```
+
+This flag shows help for all supported commands.
+
+{: id="tscli--verbose"}
+### verbose
+```
+--verbose
+```
+
+Turns verbose logging on for the console. By default, logs are written to both the console and log files, with the log files containing the highest verbosity log messages.
+
+The default is `false`.
+
+{: id="tscli--noautoconfig"}
+### noautoconfig
+```
+--noautoconfig
+```
+
+Prompts y/n for each question within a command instead of assuming `yes`.
+
+The default is `True`.
+
+{: id="tscli--autoconfig"}
+### autoconfig
+```
+--autoconfig
+```
+
+Automatically configures properties of the cluster when possible. User may still be prompted for certain inputs.
+
+The default is `False`.
+
+{: id="tscli--yes"}
+### yes
+```
+--yes
+```
+
+Automatically configures properties of the cluster when possible. User may still be prompted for certain inputs.
+
+The default is `False`.
+
+{: id="tscli--cluster"}
+### cluster
+```
+--cluster CLUSTER
+```
+
+Name of the cluster. Used when a cluster is not automatically detected.
+
+The default is `False`.
+
+{: id="tscli--zoo"}
+### zoo
+```
+--zoo ZOO
+```
+
+List of Zookeeper servers, comma separated. Used when a cluster is not automatically detected.
+
 {: id="tscli-subcommands"}
 ## tscli subcommands
 
@@ -162,7 +237,7 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert unsilence --name  NAME</code></dt>
+    <dt><code>tscli alert unsilence --name  <em>NAME</em></code></dt>
     <dd>Unsilences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>.</dd>
    </dlentry>
 </dl>   
@@ -1506,17 +1581,18 @@ This subcommand has the following options:
       <dl>
         <dlentry>
           <dt><code>--email <em>EMAIL</em></code></dt>
-          <dd>Comma separated list (no spaces) of email addresses where the cluster will send monitoring information.</dd></dlentry>
+          <dd>Comma separated list (no spaces) of email addresses where the cluster sends monitoring information.</dd></dlentry>
         <dlentry>
           <dt><code>--clear_email</code></dt>
           <dd><p>Disables monitoring emails by clearing email configuration.</p>
           <p>The default is <code>False</code>.</p></dd></dlentry>
        <dlentry>
          <dt><code>--heartbeat_interval <em>HEARTBEAT_INTERVAL</em></code></dt>
-         <dd>Heartbeat email generation interval in seconds. Should be greater than 0.</dd></dlentry>
+         <dd>Specify a heartbeat email generation interval in seconds. The interval should be greater than 0.</dd></dlentry>
        <dlentry>
          <dt><code>--heartbeat_disable</code></dt>
-         <dd>Disables heartbeat email generation. (default: False)</dd></dlentry>
+         <dd><p>Disables heartbeat email generation.</p>
+         <p>The default is <code>False</code>.</p></dd></dlentry>
 
       </dl>
     </dd></dlentry>
@@ -1878,7 +1954,8 @@ This subcommand has the following options:
 <dd>Specify the url of a specific repository to download packages.</dd></dlentry>
 <dlentry>
 <dt><code>-timeout  <em>REPO</em></code></dt>
-<dd>Timeout waiting for the R Package to be installed (default: 60)</dd>
+<dd><p>Timeout waiting for the R Package to be installed.</p>
+<p>The default is <code>60</code>.</p></dd>
 <dt><code>--dest_dir <em>REPO</em></code></dt>
 <dd>Directory where output of this command will be placed</dd></dlentry>
 <dlentry>
@@ -2200,7 +2277,7 @@ This subcommand has the following options:
 
 <dl>
 <dlentry>
-  <dt><code>tscli socialproof disable</code</dt>
+  <dt><code>tscli socialproof disable</code></dt>
   <dd>Disables socialproof.</dd></dlentry>
 <dlentry>
   <dt><code>tscli socialproof enable</code></dt>
@@ -2221,7 +2298,7 @@ This subcommand has the following option:
   <dlentry>
     <dt><code>tscli spot enable [-h] --token <em>TOKEN</em> --thoughtspot_url <em>THOUGHTSPOT_URL</em> [--cache_timeout <em>CACHE_TIMEOUT</em>]</code></dt>
     <dd>
-      <p>The <code>spot</code> subcommand accepts the following optional flags:</p>
+      <p>The <code>spot enable</code> subcommand accepts the following optional flags:</p>
 
       <dl>
         <dlentry>
@@ -2246,13 +2323,15 @@ This subcommand has the following option:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+tscli ssl [-h] {add-cert,add-valid-hosts,clear-min-tls-version,off,on,remove-valid-hosts,rm-cert,set-alert-days,set-min-tls-version,status,tls-status}
 ```        
 This subcommand manages the SSL configuration.
 
 To use SSL, the following ports must be open:
 - 443
 - 80
+
+Refer to [Configure SSL]({{ site.baseurl }}/admin/setup/SSL-config.html) for more information.
 
 This subcommand has the following options:
 
@@ -2262,6 +2341,10 @@ This subcommand has the following options:
     <dt><code>tscli ssl add-cert [-h] <em>key</em> <em>certificate</em></code></dt>
     <dd>Adds an SSL certificate, key pair.</dd>
   </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl add-valid-hosts</code></dt>
+    <dd>Adds valid hosts.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli ssl clear-min-tls-version [-h]</code></dt>
@@ -2277,17 +2360,27 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli ssl on [-h]</code></dt>
-    <dd>If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser.</dd>
+    <dd>If SSL is enabled and there is no certificate, users will see a security warning when accessing ThoughtSpot from a browser. To bypass this warning, users must click <strong>Advanced</strong> and then <strong>Proceed</strong>.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl remove-valid-hosts</code></dt>
+    <dd>Turns off validation of hosts.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli ssl rm-cert</code></dt>
-    <dd>Removes the existing SSL certificate, if any.</dd>
+    <dd>Removes the existing SSL certificate, if any. Reverts to default self-signed certificate.</dd>
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli ssl set-min-tls-version [-h] {1.0,1.1,1.2}</code></dt>
-    <dd>Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. Please ensure that client browsers are enabled for this version or newer.</dd>
+    <dt><code>tscli ssl set-alert-days</code></dt>
+    <dd>Sets alert threshold for number of days to check before SSL certificate expires.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl set-min-tls-version</code></dt>
+    <dd>Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. You must ensure that client browsers are enabled for this version or newer.</dd>
   </dlentry>
 
   <dlentry>
@@ -2296,7 +2389,7 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli ssl tls-status [-h]</code></dt>
+    <dt><code>tscli ssl tls-status</code></dt>
     <dd>Prints the status of TLS support.</dd>
   </dlentry>
 
@@ -2318,22 +2411,33 @@ This subcommand uses system security services daemon (SSSD), and has the followi
   <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
   <dd>Enables system Active Directory (AD) user access on a single node. You will be
    prompted for password credentials. The user must have permission to join a
-   computer or VM to the domain.</dd>
+   computer or VM to the domain. This subcommand has the following parameters:
+   <dl>
+    <dlentry>
+      <dt><code>--user <em>USER</em></code></dt>
+      <dd>You must specify the user to receive access.</dd>
+    </dlentry>
+    <dlentry>
+      <dt><code>--domain <em>DOMAIN</em></code></dt>
+      <dd>You must specify the domain.</dd>
+    </dlentry>
+  </dl>
+   </dd>
  </dlentry>
 
  <dlentry>
    <dt><code>tscli sssd disable</code></dt>
-    <dd></dd>
+    <dd>Leaves identity domain and removes AD sudo group.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-    <dd>Allows <code>sudo</code> permissions for AD group.</dd>
+    <dd>Allows <code>sudo</code> permissions for a specified AD group.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-    <dd>Clears any set AD sudo group.</dd>
+    <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
   </dlentry>
 
 </dl>
@@ -2354,8 +2458,8 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli storage gc [-h] [--log_age <em>LOG_AGE</em>] [--force] [--localhost_only]</code></dt>
     <dd>
-    Garbage collect unused storage.
-    <p>Before issuing this command, you must stop the cluster using <code>=tscli
+    Garbage collects unused storage.
+    <p>Before issuing this command, you must stop the cluster using <code>tscli
     cluster stop</code>.</p>
     <p>After garbage collection finishes, you can restart the cluster with <code>tscli cluster start</code>.</p>
 
@@ -2369,23 +2473,22 @@ This subcommand has the following options:
     /export/logs/zookeeper
     cores</pre>
 
-    <p>The <code>storage</code> subcommand accepts these optional flags:</p>
+    <p>The <code>storage gc</code> subcommand accepts these optional flags:</p>
 
     <dl>
 
       <dlentry><dt><code>--log_age <em>LOG_AGE</em></code></dt>
-        <p>Deletes logs older than these many hours. Use a non-zero value, becuase zero deletes all temporary files, including the ones that are closed temporarily, while they are passed from one component to the next.</p>
+        <p>Deletes logs older than a specified number of hours. Use a non-zero value, because zero deletes all temporary files, including the ones that are closed temporarily while passing from one component to the next.</p>
         <p>The default setting is <code>4</code>.</p>
       </dlentry>
 
       <dlentry><dt><code>--force</code></dt>
-        <p>Forces deletion of all logs and temporary files regardless of age. This must
-        only be run on a stopped cluster.</p>
+        <p>Forces deletion of all logs and temporary files regardless of age. Only run this command on a stopped cluster. To stop a cluster, run <code>tscli cluster stop</code>.</p>
         <p>The default setting is <code>False</code>.</p>
       </dlentry>
 
       <dlentry><dt><code>--localhost_only</code></dt>
-        <p>If used, only the logs on the localhost will be removed. If not specified, the
+        <p>Only removes the logs on the local host. If not specified, the
            command acts on the entire cluster.</p>
       </dlentry>
     </dl>
@@ -2426,28 +2529,28 @@ This subcommand has the following options:
       either a "selector" or a glob for matching files. To see the list of valid
       selectors, run this command with <code>--list_selectors</code>. You may also specify <code>all</code> to get all selectors and logs, and <code>basic</code> to get only the basic selectors.</p>
             <p>Selectors can be used for logs collection: <code>all</code>, <code>orion</code>, <code>system</code>, <code>ts</code>, or the name of a service.</p>
-            <p>Anything that starting with <code>/</code> (forward slash) is assumed to be a glob
-      pattern, and it is interpreted through <code>find(1)</code>. Other entries are ignored.</p>
-            <p><strong>TIP:</strong> Use single quotes around the param value to prevent undesired glob expansion. Use <code>all</code> to collect all selectors and all logs.</p>
+            <p>Anything that starts with <code>/</code> (forward slash) is assumed to be a glob
+      pattern, and is interpreted through <code>find(1)</code>. Other entries are ignored.</p>
+            <p><strong>TIP:</strong> Use single quotes around the parameter value to prevent undesired glob expansion. Use <code>all</code> to collect all selectors and all logs.</p>
             <p>The default setting is <code>all_but_logs</code>.</p></dd></dlentry>
 
         <dlentry>
           <dt><code>--exclude <em>EXCLUDE</em></code></dt>
           <dd>
             <p>Comma-separated list of selectors to exclude. Applies to the
-      list selected by <code>--include</code>. Params are interpreted in the same manner as in <code>--include</code>.</p>
+      list selected by <code>--include</code>. Parameters are interpreted in the same manner as in <code>--include</code>.</p>
            <p>Use the special keyword <code>logs</code> to exclude logs collection altogether.</p>
            <p>There is no default setting.</p></dd></dlentry>
 
         <dlentry>
           <dt><code>--list_selectors</code></dt>
           <dd>
-            <p>List the selectors available for <code>--include</code> and <code>--exclude</code>, and then exit.</p>
+            <p>Lists the selectors available for <code>--include</code> and <code>--exclude</code>, and then exits.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
 
         <dlentry>
           <dt><code>--since <em>SINCE</em></code></dt>
-          <dd><p>Grabs logs from this time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+          <dd><p>Grabs logs from the specified time window. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
           <p>There is no default setting.</p></dd></dlentry>
 
         <dlentry>
@@ -2489,12 +2592,12 @@ This subcommand has the following options:
 
 <dlentry>
   <dt><code>tscli support rm-feedback-email</code></dt>
-  <dd>Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address</dd>
+  <dd>Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support rm-admin-phone</code></dt>
-  <dd>Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number</dd>
+  <dd>Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number.</dd>
 </dlentry>
 
 <dlentry>
@@ -2504,52 +2607,52 @@ This subcommand has the following options:
 
 <dlentry>
   <dt><code>tscli support set-admin-email <em>email</em></code></dt>
-  <dd>Sets the email address for contacting the customer administrator. To display a blank email address, issue the command <code>tscli support set-admin-email</code>.</dd>
+  <dd>Sets the specified email address for contacting the customer administrator. To display a blank email address, issue the command <code>tscli support set-admin-email</code>.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support set-feedback-email <em>email</em></code></dt>
-  <dd>Sets the email address for sending feedback. To display a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
+  <dd>Sets the specified email address for sending feedback. To display a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support set-admin-phone <em>phone_number</em></code></dt>
-  <dd>Sets the phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>. To display a blank phone number, issue the command <code>tscli support set-admin-phone</code>.</dd>
+  <dd>Sets the specified phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>. To display a blank phone number, issue the command <code>tscli support set-admin-phone</code>.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support set-remote [-h] [--addr <em>ADDR</em>] [--user <em>USER</em>]</code></dt>
-  <dd>Configures the cluster for remote support through SSH tunneling, where <em><code>ADDR</code></em> is the address of support, such as <code>tunnel.thoughtspot.com</code>, and <em><code>USER</code></em> is the support username.</dd>
+  <dd>Configures the cluster for remote support through SSH tunneling, where <em><code>ADDR</code></em> is the support address, such as <code>tunnel.thoughtspot.com</code>, and <em><code>USER</code></em> is the support username.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support show-admin-email</code></dt>
-  <dd>Shows the email address for customer administrator, if set</dd>
+  <dd>Shows the email address for the customer administrator, if set.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support show-feedback-email</code></dt>
-  <dd>Shows the email address for product feedback, if set</dd>
+  <dd>Shows the email address for product feedback, if set.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support show-admin-phone</code></dt>
-  <dd>Shows the phone number for customer administrator, if set</dd>
+  <dd>Shows the phone number for the customer administrator, if set.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support show-remote</code></dt>
-  <dd>Shows the status and configuration of remote support</dd>
+  <dd>Prints the status and configuration of remote support.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support start-remote</code></dt>
-  <dd>Starts remote support</dd>
+  <dd>Starts remote support.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support stop-remote</code></dt>
-  <dd>Stops remote support</dd>
+  <dd>Stops remote support.</dd>
 </dlentry>
 </dl>
 
@@ -2557,17 +2660,17 @@ This subcommand has the following options:
 ### tokenauthentication
 
 ```
-tscli cli tokenauthentication [-h] {disable,enable}
+tscli tokenauthentication [-h] {disable,enable}
 ```
 
 This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli cli tokenauthentication enable</code></dt>
-    <dd>Generates a token</dd>
+    <dt><code>tscli tokenauthentication enable</code></dt>
+    <dd>Configures token-based login.</dd>
   </dlentry>
 <dlentry>
-  <dt><code>tscli cli tokenauthentication disable</code></dt>
-  <dd>Purges token login configuration</dd></dlentry>
+  <dt><code>tscli tokenauthentication disable</code></dt>
+  <dd>Purges existing token-based login configuration.</dd></dlentry>
 </dl>
