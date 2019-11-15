@@ -367,7 +367,7 @@ entries:
           url: /spotiq/special-topics.html
           output: web,ugBk
         - title: "Comparative Analysis"
-          url: /spotiq/comparative-anaysis.html
+          url: /spotiq/comparative-analysis.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
