@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="Learn how to modify a connection and its tables after creating a new Embrace database connection."> -->
 <meta name="keywords" content=",  ">
 <title>Modify a connection | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Modify a connection”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You can modify a connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection" />
-<meta property="og:description" content="You can modify a connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection" />
+<meta name="description" content="You can modify an Embrace database connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection" />
+<meta property="og:description" content="You can modify an Embrace database connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection" />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-11-12T07:08:04-08:00" />
+<meta property="article:published_time" content="2019-11-15T09:31:07-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html","headline":"[“Modify a connection”]","dateModified":"2019-11-12T07:08:04-08:00","datePublished":"2019-11-12T07:08:04-08:00","description":"You can modify a connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/getting-started/modify-a-connection.html","headline":"[“Modify a connection”]","dateModified":"2019-11-15T09:31:07-08:00","datePublished":"2019-11-15T09:31:07-08:00","description":"You can modify an Embrace database connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1095,7 +1095,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/spotiq/comparative-anaysis.html">Comparative Analysis</a></li>
+                          <li><a href="/6.0/spotiq/comparative-analysis.html">Comparative Analysis</a></li>
                       
                    
                 
@@ -3266,6 +3266,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">Learn how to modify a connection and its tables after creating a new Embrace database connection.</div>
+   
 
     
     
@@ -3308,7 +3310,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>You can modify a connection in the following ways:</p>
+  <p>You can modify an Embrace database connection in the following ways:</p>
 <ul>
   <li>Edit a connection: to add or remove tables and columns</li>
   <li>Remap a connection: to map a table or column to a different table or column</li>
@@ -3353,7 +3355,7 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="remapping-a-connection">Remapping a connection</h2>
 
-<p>Modify the connection parameters by editing the source mapping<code> yaml </code>file that was created when you adding the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.</p>
+<p>Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.</p>
 
 <p>To remap a connection:</p>
 
@@ -3390,7 +3392,7 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h2 id="deleting-a-table">Deleting a table</h2>
-<p>ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. A list of dependent objects is shown, and you can click them to delete them or remove the dependency. Then you’ll be able to remove the table.</p>
+<p>ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.</p>
 
 <p>To delete a table:</p>
 
@@ -3425,7 +3427,7 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ol>
 
-<p>You can also click the name of a table and then click the linked objects to to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.</p>
+<p>You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.</p>
 
 <h2 id="deleting-a-connection">Deleting a connection</h2>
 <p>A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.</p>
@@ -3484,9 +3486,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Nov 12, 2019 <br />
+        Generated: Nov 15, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 11/12/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
