@@ -1,7 +1,7 @@
 ---
 title: [Slack and Spot]
-
-last_updated: tbd
+summary: Learn about Spot, a ThoughtSpot integration with Slack.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

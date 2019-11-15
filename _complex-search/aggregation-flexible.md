@@ -1,8 +1,7 @@
 ---
 title: [Flexible aggregation functions (group aggregate and filters)]
-
-
-last_updated: tbd
+summary: Learn about advanced aggregation functions.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,7 +33,7 @@ search terms/columns.
 The formula uses a sub-query to perform the custom aggregation. If the sub-query
 is at a courser grain, result column is simply added to the result of original
 query. Roll-up or _reaggregation_ is used when the sub-query is at a finer grain than the
-original query
+original query.
 
 This is particularly useful for comparison analysis.
 
@@ -62,7 +61,7 @@ This is helpful to include the main query groups that are not known at formula
 creation time. You can use `+/-` to modify the set of groups included from
 the query.
 
-{% include note.html content="`+/-` is currently supported only for  `query_groups`, not `query_filters`."%}
+{% include note.html content="`+/-` is currently supported only for `query_groups`, not `query_filters`."%}
 
 ## When group formula results are finer-grained than the search
 

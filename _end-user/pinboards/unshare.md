@@ -1,6 +1,7 @@
 ---
 title: [Revoke access (unshare)]
-last_updated: tbd
+summary: Learn how to revoke access to a pinboard.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

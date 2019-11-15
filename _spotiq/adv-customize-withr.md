@@ -1,6 +1,7 @@
 ---
 title: [Advanced R Customizations]
-last_updated: tbd
+summary: Learn about R customizations.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

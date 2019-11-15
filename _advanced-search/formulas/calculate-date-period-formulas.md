@@ -1,6 +1,7 @@
 ---
 title: [Calculate date formulas]
-last_updated: tbd
+summary: Learn how to create date formulas.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,7 +1,7 @@
 ---
 title: [How to use Spot]
-
-last_updated: tbd
+summary: Learn how to use Spot.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

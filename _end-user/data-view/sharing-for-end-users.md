@@ -1,6 +1,7 @@
 ---
 title: [Overview of sharing]
-last_updated: tbd
+summary: Learn about sharing answers and pinboards.
+last_updated: 11/15/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
