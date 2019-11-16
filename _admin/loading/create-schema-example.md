@@ -3,7 +3,7 @@ title: [Schema creation examples]
 
 
 last_updated: tbd
-summary: "Simple examples that illustrate how to use the TQL and the ThoughtSpot Loader."
+summary: "Use the TQL and the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

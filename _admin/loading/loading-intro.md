@@ -1,7 +1,7 @@
 ---
 title: [Load and manage data]
-
-last_updated: tbd
+summary: Learn about loading and managing data.
+last_updated: 11/15/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

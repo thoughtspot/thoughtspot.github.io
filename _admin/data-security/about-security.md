@@ -1,8 +1,7 @@
 ---
 title: [Overview of security features]
-
-
-summary:
+summary: Learn about ThoughtSpot's security features.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

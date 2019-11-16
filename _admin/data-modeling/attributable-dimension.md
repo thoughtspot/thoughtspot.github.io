@@ -1,9 +1,9 @@
 ---
 title: [Change the Attribution Dimension]
 
-toc: false
-last_updated: tbd
-summary: "The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
+toc: true
+last_updated: 11/15/2019
+summary: "The Attribution Dimension setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
