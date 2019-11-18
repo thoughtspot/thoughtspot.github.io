@@ -1,8 +1,8 @@
 ---
 title: [Set up recording for Replay Search]
 
-last_updated: tbd
-summary: "You can use the recording to create training for your users on how to search your own data."
+last_updated: 11/18/2019
+summary: "You can record a search replay to create training for your users on how to search your own data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

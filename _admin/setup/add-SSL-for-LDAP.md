@@ -2,8 +2,8 @@
 title: [Add the SSL certificate for LDAP]
 
 
-last_updated: tbd
-summary: "Install the certificate to support LDAPS"
+last_updated: 11/18/2019
+summary: "Install the certificate to support LDAPS."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

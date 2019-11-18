@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
-For users who have access through LDAP, the LDAP installation manages all  user information.
+For users who have access through LDAP, the LDAP installation manages all user information.
 
 {: id="add-user"}
 ## Create a user in ThoughtSpot

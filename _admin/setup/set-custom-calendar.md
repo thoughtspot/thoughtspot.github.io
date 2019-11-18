@@ -1,7 +1,7 @@
 ---
 title: [Set up a custom calendar]
-
-
+summary: Learn how to set up a custom calendar.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

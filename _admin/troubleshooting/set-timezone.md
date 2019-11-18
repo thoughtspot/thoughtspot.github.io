@@ -1,7 +1,7 @@
 ---
 title: [Check the timezone]
-
-
+summary: Learn how to check the timezone your ThoughtSpot installation is running on.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

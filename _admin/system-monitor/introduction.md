@@ -1,8 +1,7 @@
 ---
 title: [Introduction to monitoring]
-
-
-last_updated: tbd
+summary: "Learn how to monitor your system."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,7 +15,7 @@ The ThoughtSpot application includes a **System Health** center, for easy monito
 of usage, alerts, events and general cluster health. You view the System Health
 Center by choosing the **Admin** icon and then selecting **System Health**.
 
-![]({{ site.baseurl }}/images/control_center_overview.png "**System Health** center: Overview")
+![]({{ site.baseurl }}/images/control_center_overview.png "System Health center: Overview")
 
 Only users with administrative privileges can view the **System Health** center.
 However, administrative users can present to others the information that

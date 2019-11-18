@@ -1,11 +1,11 @@
 ---
 title: [Get your configuration and logs]
-
-
+last_updated: 11/18/2019
+summary: Two main troubleshooting tools are getting a log bundle and understanding your cluster configuration.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For troubleshooting on specific incidents or cluster problems, two things are important. Understanding your current configuration and getting a log bundle.
+For troubleshooting on specific incidents or cluster problems, two things are important: understanding your current configuration and getting a log bundle.
 
 ## Check your configuration
 

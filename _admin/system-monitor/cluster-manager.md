@@ -1,17 +1,17 @@
 ---
 title: [Cluster Manager board]
-
-
+last_updated: 11/18/2019
 toc: false
+summary: Learn about the Cluster Manager board.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The **Cluster Manager** section show detailed information about a cluster
+The **Cluster Manager** section shows detailed information about a cluster
 including latency over time, snapshot status, installed release, node functions,
 and logs.
 
- ![]({{ site.baseurl }}/images/control_center_cluster_mgmt.png "Partial view of the **System Health** center: Cluster Manager")
+ ![]({{ site.baseurl }}/images/control_center_cluster_mgmt.png "Partial view of the System Health center: Cluster Manager")
 
 Only the **Average Latency Last 2 Weeks (sec)** panel contains a standard
 ThoughtSpot visualization. The other visualizations rely on internal queries
@@ -19,7 +19,7 @@ that are not accessible. You can, however, **Present** or **Copy link** on them.
 
 ## Cluster Details
 
-The fields on this visualization has the following meaning:
+The fields on this visualization have the following meaning:
 
  <table>
  <colgroup>
@@ -70,7 +70,7 @@ The fields on this visualization has the following meaning:
 
 ## Cluster Logs
 
-The fields on this visualization has the following meaning:
+The fields on this visualization have the following meaning:
 
 <table>
 <colgroup>
@@ -106,7 +106,7 @@ You can also use the `tscli logs` command to review log data from your cluster.
 ## List of Snapshots
 
 This visualization shows the snapshots _and the backups_ taken on the cluster.
-The fields on this visualization has the following meaning:
+The fields on this visualization have the following meaning:
 
 <table>
 <colgroup>

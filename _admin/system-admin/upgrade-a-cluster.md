@@ -1,7 +1,7 @@
 ---
 title: [Upgrade a cluster]
-
-last_updated: tbd
+summary: You can upgrade a cluster to a new release.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

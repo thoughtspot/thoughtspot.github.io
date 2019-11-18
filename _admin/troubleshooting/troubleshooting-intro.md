@@ -1,7 +1,7 @@
 ---
 title: [About troubleshooting]
-
-
+summary: Learn the basics of troubleshooting for ThoughtSpot.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

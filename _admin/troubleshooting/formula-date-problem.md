@@ -1,7 +1,7 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
-
-
+last_updated: 11/18/2019
+summary: "Learn how to troubleshoot problems with data types and formulas."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ due to problems with data types and formulas.
 In this scenario, "data type" refers the data type as defined in the column
 definition when creating the schema (INT, TIMESTAMP, VARCHAR, etc.).
 
-When you define a formula, both the data type it returns is set automatically.
+When you define a formula, the data type it returns is set automatically.
 This can lead to problems, if you build another formula that uses the output of
 the first formula as input. This can be hard to understand, so an example will
 be helpful.

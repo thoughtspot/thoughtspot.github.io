@@ -1,7 +1,7 @@
 ---
 title: [Slack integration]
-
-last_updated: tbd
+summary: Learn how to configure ThoughtSpot's Slack integration.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
