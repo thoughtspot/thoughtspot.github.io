@@ -1,6 +1,6 @@
 ---
 title: [Set up Azure for ThoughtSpot]
-last_updated: 10/25/20919
+last_updated: 11/18/2019
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -20,12 +20,12 @@ includes the following:
 system, an appliance server, and applications).
 
 The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
-configured, on an CentOS base image. Check with your ThoughtSpot contact to
+configured, on a CentOS base image. Check with your ThoughtSpot contact to
 learn about the latest version of the ThoughtSpot Virtual Machine.
 
 Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the
 administrator users. When you are ready to obtain the password, contact
-ThoughtSpot Support.
+[ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Set up ThoughtSpot on Azure
 

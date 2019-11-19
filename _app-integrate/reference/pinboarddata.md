@@ -1,7 +1,7 @@
 ---
 title: [Pinboard Data API]
-
-last_updated: tbd
+summary: "You can retrieve the data in a pinboard or other ThoughtSpot visualization."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

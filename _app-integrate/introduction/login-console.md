@@ -1,7 +1,7 @@
 ---
-title: [Log in to the Linux shell using SSH]
-
-last_updated: tbd
+title: [Log into the Linux shell using SSH]
+summary: You may need to log into the Linux shell to administer your ThoughtSpot cluster.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

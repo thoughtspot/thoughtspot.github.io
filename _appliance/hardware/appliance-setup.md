@@ -1,20 +1,18 @@
 ---
 title: [Setup and start the appliance]
-
-last_updated: tbd
+summary: "Learn how to install and start the appliance."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-This section explains how to install and start the appliance.
 
 ## Before you begin
 
 The ThoughtSpot appliance comes pre-installed with all the required software. Network settings on the appliance are required prior to using the appliance. Reference ThoughtSpot's site survey for the information specific to the customer's network environment that is required to configure the appliance.
 
-* If ThoughtSpot's site survey form was completed and returned to ThoughtSpot prior to the appliance being shipped, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
+* If you completed ThoughtSpot's site survey form and returned it to ThoughtSpot prior to the appliance shipment, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
 * If the network configuration was not pre-set, then this step must be done as part of the installation process.
-* If assistance is needed to determine the configuration status of the appliance, please contact ThoughtSpot Support.
+* If you need assistance to determine the configuration status of the appliance, please contact ThoughtSpot Support.
 
 
 ## Installation procedure

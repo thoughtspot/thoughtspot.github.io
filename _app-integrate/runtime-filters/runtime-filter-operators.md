@@ -1,7 +1,7 @@
 ---
 title: [Runtime Filter Operators]
-
-last_updated: tbd
+summary: "Runtime filters have several operators you can use to filter your embedded pinboards and visualizations."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

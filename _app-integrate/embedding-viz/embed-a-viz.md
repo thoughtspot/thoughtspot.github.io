@@ -1,7 +1,7 @@
 ---
 title: [Embed pinboard or visualization]
-
-last_updated: tbd
+summary: Learn how to embed a visualization or pinboard in your own Web page.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html

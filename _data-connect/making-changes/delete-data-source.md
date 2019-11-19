@@ -1,8 +1,8 @@
 ---
 title: [Delete a data source]
 
-last_updated: tbd
-summary: "If you want to delete a data source, make sure and read this section so you don't inadvertently delete data in ThoughtSpot."
+last_updated: 11/18/2019
+summary: "Learn how to delete a data source without inadvertently deleting data in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,8 +1,7 @@
 ---
 title: [GCP configuration options]
-
-
-last_updated: tbd
+summary: "ThoughtSpot offers several different GCP instance types."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -10,7 +9,7 @@ ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) in
 - Mode 1: Compute VMs + SSD Persistent Disk storage-only
 - Mode 2: Compute VMs + SSD Persistent Disk and Google Cloud Storage (GCS).
 
-For more information about Persistant Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
+For more information about Persistent Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
 
 For more information about Google Cloud Storage, see [Cloud Storage Buckets](https://cloud.google.com/compute/docs/disks/#gcsbuckets){:target="_blank"} in Google's Cloud documentation.
 

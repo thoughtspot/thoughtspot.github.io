@@ -1,8 +1,7 @@
 ---
 title: [Azure node overview]
-
-
-last_updated: tbd
+summary: "You can host ThoughtSpot on Microsoft Azure."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,7 +19,7 @@ reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
 ## A little about Azure
 
 Azure is a secure cloud services platform offered by Microsoft. Using
-ThoughtSpot  on Azure allows you to easily add instances as your dataset grows.
+ThoughtSpot on Azure allows you to easily add instances as your dataset grows.
 You can do everything you’d normally want to do in a traditional data center
 with Azure. It features an on-demand delivery of IT resources and applications
 through the Internet. When you are connected to an instance, you can use it just

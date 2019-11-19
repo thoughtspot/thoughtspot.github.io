@@ -1,12 +1,11 @@
 ---
 title: [Pinboard filters]
-
-last_updated: tbd
-toc: false
+summary: "You can apply filters to pinboards as well as tables and charts."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Filters, including bulk filters and exclude fiters, can be applied to pinboards just as with tables
+Filters, including bulk filters and exclude filters, can be applied to pinboards just as with tables
 and charts. These kinds of filters apply to an entire pinboard, making it easy
 to see only the data that you are interested in across the tables and charts
 within a pinboard.
@@ -20,8 +19,7 @@ for specific purposes or audiences.
 When you apply a filter, the pinboard is not automatically saved with your
 filter applied. This is to encourage ad hoc filtering. Therefore, people with
 read-only access can create pinboard filters. You must have edit access to the
-pinboard, and view access (or higher) to the underlying data source in order
-save a pinboard filter.
+pinboard, and view access (or higher) to the underlying data source in order to save a pinboard filter.
 
 Note that pinboard filters only apply to the tables and charts that are based on
 worksheets. If a pinboard also includes tables and charts that were created from
@@ -36,7 +34,7 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
      ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
 

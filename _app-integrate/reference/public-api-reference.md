@@ -1,6 +1,7 @@
 ---
 title: [Public API reference]
-
+summary: "ThoughtSpot has several public APIs."
+last_updated: 11/18/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

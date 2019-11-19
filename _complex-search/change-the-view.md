@@ -1,13 +1,12 @@
 ---
 title: [Change result display options]
-
-
+last_updated: 11/18/2019
 summary: "You can change how your search results (answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Your search answer (results) have various display options. You can change the
-visualization used to display your results, their sort oder, and how they are
+Your search results (answers) have various display options. You can change the
+visualization used to display your results, their sort order, and how they are
 grouped or grouped.
 
 ## Change the view
@@ -27,7 +26,7 @@ To sort your search:
 
 * If you are in the data (table) view, click the column header you would like to sort on.
 
-   By default, sorting applies in descending order. You can click a column header to sort again to sort in ascending order.
+   By default, sorting applies in descending order. To sort in ascending order, click the column header again.
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 

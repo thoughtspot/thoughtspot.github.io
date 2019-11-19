@@ -1,7 +1,7 @@
 ---
 title: [Set chart and table visualization fonts]
-
-last_updated: tbd
+summary: Learn how to add and edit fonts to customize ThoughtSpot's appearance.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

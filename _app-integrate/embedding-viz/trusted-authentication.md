@@ -1,7 +1,7 @@
 ---
 title: [Configure trusted authentication]
-
-last_updated: tbd
+summary: "Learn how to configure trusted authentication."
+last_updated: 11/18/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,7 +21,7 @@ data from client applications to ThoughtSpot.
 ![]({{ site.baseurl }}/images/authentication.png "Authentication flow")
 
 
-A user already logged into client-application interacts with a ThoughtSpot embed
+A user already logged into the client application interacts with a ThoughtSpot embed
 point which launches the following sequence:
 
 1. The client-side application requests a user token from the trusted authenticator.
@@ -31,8 +31,8 @@ point which launches the following sequence:
 
 2. The trusted server authenticates the user and requests a token from ThoughtSpot on the user's behalf.
 3. ThoughtSpot verifies the authenticator server's request and returns a user token.
-4. The authenticator returns the user token to the client which it uses to complete the user request.
-5. The client forwards the request together with the user token to ThoughtSpot.
+4. The authenticator returns the user token to the client, which it uses to complete the user request.
+5. The client forwards the request and the user token to ThoughtSpot.
 6. ThoughtSpot validates the token and returns information commensurate with that authenticated user's authorization.
 
 ## Enable trusted authentication and get a token
@@ -52,7 +52,7 @@ point which launches the following sequence:
       Override added successfully
       ```
 
-Tokens are like any other password, you should store them securely and protect
+Tokens are like any other password. You should store them securely and protect
 knowledge of them.  At any point in time, your installation can have a single
 authentication token. Repeated calls to enable overwrite the existing token and
 return a new one. To disable a token and not overwrite it:
@@ -65,7 +65,7 @@ Generated tokens do not expire.
 
 ## Trusted authentication call     
 
-1. User in another application or web page requests access to embedded ThoughtSpot.
+1. A user in another application or web page requests access to embedded ThoughtSpot.
 
    This is a REST request for an embedded ThoughtSpot object, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:
 
@@ -108,7 +108,7 @@ Generated tokens do not expire.
 
     The token can be managed in any way you see fit. Tokens expire in XXX minutes/hours/day.
 
-5. The trusted authenticator server returns token to the original requestor.
+5. The trusted authenticator server returns a token to the original requestor.
 6. Client completes the user's request providing the token along with the request.  
 
     For example, if the customer was requesting a specific object:

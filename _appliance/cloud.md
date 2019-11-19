@@ -1,7 +1,7 @@
 ---
 title: [Cloud overview]
-
-last_updated: tbd
+summary: "You can deploy ThoughtSpot on several cloud providers."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

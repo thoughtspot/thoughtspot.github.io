@@ -1,7 +1,7 @@
 ---
 title: [Calling the Data REST API]
-
-last_updated: tbd
+summary: Learn how to call the Data REST API.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

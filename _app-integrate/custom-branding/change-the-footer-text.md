@@ -1,7 +1,7 @@
 ---
 title: [Change the footer text]
-
-last_updated: tbd
+summary: You can customize ThoughtSpot's footer test to add a company-specific message.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

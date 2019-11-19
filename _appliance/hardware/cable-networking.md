@@ -1,7 +1,7 @@
 ---
 title: [Cable networking]
-
-last_updated: tbd
+summary: "Review the types of cables you can use with the appliance."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
