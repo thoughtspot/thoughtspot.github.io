@@ -999,21 +999,9 @@ entries:
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
         output: web,apgBk
-      - levelThreeTitle: Active Directory
+      - title: Configure Active Directory Federated Services
+        url: /app-integrate/SAML/integrate-ADFS.html
         output: web,apgBk
-        levelThreeItems:
-        - title: Configure Active Directory Federated Services
-          url: /app-integrate/SAML/integrate-ADFS.html
-          output: web,apgBk
-        - title: Initialize the Identity Provider Metadata
-          url: /app-integrate/SAML/initialize-IDP.html
-          output: web,apgBk
-        - title: Initialize the Service Provider Metadata
-          url: /app-integrate/SAML/initialize-SP.html
-          output: web,apgBk
-        - title: Test the ADFS Integration
-          url: /app-integrate/SAML/test-ADFS.html
-          output: web,apgBk
     - levelTwoTitle: REST API
       output: web,apgBk
       levelTwoItems:
