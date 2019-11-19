@@ -8,10 +8,11 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.3.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
 * [Supported Upgrade Paths](#upgrade-paths)
+* [5.3.2 Fixed Issues](#532-fixed)
 * [5.3.1 New Features](#531-new)
 * [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
@@ -22,19 +23,33 @@ fixed issues from the previous releases, and any known issues.
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3.1 release
+If you are running one of the following versions, you can upgrade to the 5.3.2 release
 directly:
 
-* 5.3 to 5.3.1
-* 5.2.x to 5.3.1
-* 5.1.x to 5.3.1
+* 5.3 to 5.3.2
+* 5.2.x to 5.3.2
+* 5.1.x to 5.3.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 5.3.1 release.
+First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
+
+{: id="532-fixed"}
+## 5.3.2 Fixed Issues
+
+The following issues are fixed in the 5.3.2 release:
+
+- Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.
+- Pop-up messages sometimes cover the entire width of the screen.
+- _Share_, _Copy a link_, and _Send feedback_ cannot be disabled when ThoughtSpot is embedded.
+- An error in the date range occurs when drilling down in a custom calendar.
+- When the network check fails during a self-service upgrade, it retries indefinitely.
+- If formulas have a less-than sign (<) followed by text, the text following the less-than sign does not display in a table.
+- Removing a column from a search query increases the number of rows displayed.
+- A search that uses the `group_max` function displays an incorrect result when filtering is applied.
 
 {: id="531-new"}
 ## 5.3.1 New Features and Functionality
