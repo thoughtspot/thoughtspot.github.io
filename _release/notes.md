@@ -10,7 +10,8 @@ permalink: /:collection/:path.html
 
 <ul>
    <li><a href="notes.html#5-0-new-features-and-functionality">5.0 New Features and Functionality</a></li>
-   <li><a href="notes.html#5-0-fixed-bugs">5.0 Fixed bugs</a></li>
+   <li><a href="notes.html#5-0-fixed-bugs">5.0.4 Fixed issues</a></li>
+   <li><a href="notes.html#5-0-4-fixed-bugs">5.0 Fixed issues</a></li>
    <li><a href="notes.html#notes-for-older-versions">Notes for older versions</a></li>
 </ul>
 
@@ -383,40 +384,22 @@ language keywords that can be used in the search bar:
 </tbody>
 </table>
 </div>
+<a name="5-0-4-fixed-bugs"></a>
+## 5.0.4 Fixed Issues
 
-<p><a name="5-0-fixed-bugs"></a></p>
-<h2>5.0 Fixed Issues</h2>
-<table style="border-collapse: collapse; width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<p>A problem was resolved where changes to metadata resulted in rebuilding the search index, even though the data had not changed.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<p>A problem was resolved where a search was returning an unexpected answer, because the last aggregation performed during execution was doing a MIN() rather than a SUM().</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<p>A problem was resolved where timeouts were causing a cluster crash in some cases when a right outer join was used.</p>
-</div>
-</td>
-</tr>
-<tr style="width: 100%;">
-<td style="border: 1px solid #cccccc; text-align: left; padding: 10px 5px; max-width: 500px;">
-<div style="word-wrap: break-word; overflow-wrap: break-word;">
-<p>A problem was resolved where the space allocation chart was not getting updated.</p>
-</div>
-</td>
-</tr>
-</tbody>
+The following issue is fixed in the 5.0.4 release:
+
+- Deprecated SSH cryptographic settings are used.
+
+<a name="5-0-fixed-bugs"></a>
+## 5.0 Fixed Issues
+
+The following issues are fixed in the 5.0 release:
+
+- Changes to metadata result in rebuilding the search index, even though the data has not changed.
+- A search returns an unexpected answer, because the last aggregation performed during execution was doing a MIN() rather than a SUM().
+- Timeouts cause a cluster crash in some cases when a right outer join was used.
+- The space allocation chart does not update.
 
 <!--<h2>5.0.1 Fixed Issues</h2>
 <tr style="width: 100%;">
@@ -426,8 +409,6 @@ language keywords that can be used in the search bar:
 </div>
 </td>
 </tr>-->
-
-</table>
 
 <a name="notes-for-older-versions"></a>
 <h2>Notes for older versions</h2>
