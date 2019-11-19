@@ -71,6 +71,7 @@ The following issues are fixed in the 5.3.1 release:
 - Using a custom calendar and filtering date values by year, month or quarter does not work.
 - Canadian postal codes do not appear on maps.
 - The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
+- Certain HTTP security headers are not implemented.
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
