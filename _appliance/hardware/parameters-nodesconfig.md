@@ -16,7 +16,7 @@ As you install your appliance, you must configure the nodes.
 
 Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
-See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file.
+See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.
 
 {: id="parameters-nodes.config"}
 
