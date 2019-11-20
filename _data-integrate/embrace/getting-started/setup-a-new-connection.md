@@ -1,6 +1,7 @@
 ---
 title: [Add a connection]
-last_updated: tbd
+last_updated: 11/19/2019
+summary: "Add a connection to a supported external database with Embrace."
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -44,7 +45,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database. To copy your external tables into ThoughtSpot, you must sync them. For details on how to sync tables and columns, see: [Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html#).
 
-Not all of ThoughtSpot's features are supported with linked tables. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-available-in-embrace-modes).
+Not all of ThoughtSpot's features are supported with linked tables. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-in-embrace-modes).
 
 ## Related information
 - [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)

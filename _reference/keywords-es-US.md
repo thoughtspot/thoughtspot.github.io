@@ -1,8 +1,7 @@
 ---
 title: [Español (latín) Keyword reference]
-
-
-last_updated: tbd
+summary: Use keywords to help define a search.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

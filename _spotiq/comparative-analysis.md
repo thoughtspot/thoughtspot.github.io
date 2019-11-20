@@ -1,7 +1,7 @@
 ---
 title: [Comparative Analysis]
 summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
-last_updated: 10/09/2019
+last_updated: 11/19/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -61,12 +61,12 @@ To view the results of your analysis, follow these steps:
   ![]({{ site.baseurl }}/images/comparative-analysis-7.png "Possible actions on SpotIQ visualizations")
 
 
-   | Legend | Action |
-   | --- | --- |
-   | 1. | **Give feedback**. SpotIQ learns how to improve its feedback based on the information you provide. |
-   | 2. | **Add to a pinboard**. You can add the specific visualization to an existing pinboard, or create a new pinboard and add it there. |
-   | 3. | **Analysis details**. Get the name of the algorithm |
-   | 4. | **More options**, including another round of SpotIQ analysis, download of data as a CSV file, editing this visualization, or editing a copy of the visualization. |
+   | Legend | Action | Description |
+   | --- | --- | --- |
+   | 1. | **Give feedback** | SpotIQ learns how to improve its feedback based on the information you provide. |
+   | 2. | **Add to a pinboard** | You can add the specific visualization to an existing pinboard, or create a new pinboard and add it there. |
+   | 3. | **Analysis details** | Get the name of the algorithm. |
+   | 4. | **More options** | You can run another round of SpotIQ analysis, download the data as a CSV file, edit this visualization, or edit a copy of the visualization. |
 
 {: id="advanced-comparative-analysis" }
 ## Advanced Comparative Analysis in SpotIQ ##

@@ -1,8 +1,8 @@
 ---
 title: [Onboarding Users]
-last_updated: 10/07/2019
+last_updated: 11/19/2019
 toc: true
-summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization."
+summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages adoption throughout your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

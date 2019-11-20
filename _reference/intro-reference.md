@@ -1,11 +1,10 @@
 ---
 title: [About this reference]
-
-last_updated: tbd
+summary: This Reference section contains the commands and their syntax for all the command line tools in ThoughtSpot.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This Reference section contains the commands and their syntax for all the command line tools in ThoughtSpot.
 
 Included in this guide are:
 

@@ -1,7 +1,7 @@
 ---
 title: [Node failure]
-last_updated: tbd
-summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate."
+last_updated: 11/19/2019
+summary: "ThoughtSpot uses replication of stored data. When a node fails, ThoughtSpot continues to operate."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

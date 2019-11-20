@@ -1,8 +1,8 @@
 ---
 title: [Last data refresh time]
 
-
-summary: "You can see the last time at which data was refreshed without having to visit the **Data** page.
+last_updated: 11/19/2019
+summary: "You can see the last time at which data was refreshed without having to visit the Data page.
 "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

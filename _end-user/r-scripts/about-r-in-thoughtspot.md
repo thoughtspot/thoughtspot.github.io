@@ -1,14 +1,14 @@
 ---
 title: [About R in ThoughtSpot]
 summary: "You can run an R analysis on your data, using ThoughtSpot provided scripts, or custom scripts shared with your team. R visualizations can be shared as answers and pinboards."
-last_updated: tbd
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 R is a popular open source programming language for statistical computing,
-machine learning, and AI. ThoughtSpot makes R analysis available as a fully
-integrated feature in version 5.0
+machine learning, and AI. R analysis is available as a fully
+integrated feature in version 5.0.
 
 ## Using R in ThoughtSpot
 

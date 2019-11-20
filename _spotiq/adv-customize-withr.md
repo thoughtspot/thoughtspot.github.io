@@ -1,7 +1,7 @@
 ---
 title: [Advanced R Customizations]
 summary: Learn about R customizations.
-last_updated: 11/15/2019
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -27,8 +27,8 @@ requires a specific package, you must request your ThoughtSpot cluster admin to
 install the package on your behalf.
 
 ThoughtSpot internally transforms and binds an R script prior to sending it to
-the cluster's R service. The system expects each script have a well-defined
-structure which is the following:
+the cluster's R service. The system expects each script to have a well-defined
+structure, following this format:
 
 ```
 ####R SCRIPT####
@@ -38,7 +38,7 @@ structure which is the following:
 ```
 
 The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. ThoughtSpot expects for each `.param`_n_ in R your script must
+in the R script. For each `.param` _n_ in R your script, you must
 provide a corresponding binding. The following pseudo code illustrates an R
 script in a form suitable for ThoughtSpot:
 
@@ -59,12 +59,12 @@ emit data in PNG format.
 
 Presently, error reporting is limited for R scripts in SpotIQ. You should
 validate your R script independent of your ThoughtSpot environment. After you are
-sure they are free of syntax or other errors, then try the script in
+sure it is free of syntax or other errors, you can try the script in
 ThoughtSpot.
 
 ## Try a Custom Analysis with R
 
-The following illustrates how to run an R analysis on data that has a sales
+This example illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
 1. Sign into ThoughtSpot and go to the **Search** bar.

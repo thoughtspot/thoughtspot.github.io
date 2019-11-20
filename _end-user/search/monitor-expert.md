@@ -2,8 +2,8 @@
 title: ["Manage expert requests"]
 
 
-last_updated: 08/01/2019
-summary: "You can monitor and manage Ask and Expert requests, both as a requester and as an expert."
+last_updated: 11/19/2019
+summary: "You can monitor and manage Ask an Expert requests, both as a requester and as an expert."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
