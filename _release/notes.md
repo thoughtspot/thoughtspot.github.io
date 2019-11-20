@@ -36,7 +36,7 @@ ThoughtSpot now supports the following features for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### Monitor headlines
+### Monitor headlines 
 
 The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
 
