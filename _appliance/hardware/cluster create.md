@@ -71,4 +71,5 @@ The system is going down for reboot at Sun 2018-09-30 23:05:32 UTC!
 * [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
 * [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 * [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)

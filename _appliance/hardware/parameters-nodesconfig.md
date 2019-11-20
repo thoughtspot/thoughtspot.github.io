@@ -54,4 +54,5 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 * [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
 * [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)
