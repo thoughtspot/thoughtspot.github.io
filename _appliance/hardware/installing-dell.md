@@ -17,6 +17,18 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
+<td>Data center with proper cooling</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>AC power</td></tr>
+
+<tr>
+<td>&#10063;</td>
+<td>10G connection: SFP+ for switch side</td></tr>
+
+<tr>
+<td>&#10063;</td>
 <td>10GbE network cables, either direct attach copper (DAC) or fiber. See <a href="cable-reference.html">Cable Reference</a>.</td></tr>
 
 <tr>
@@ -65,7 +77,11 @@ Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]
 Connect the iDRAC management ports of each node to the management switch. If you need help finding the ports, see [Appliance Port Location](#appliance-port-location).
 
 ### Step 3: Connect a keyboard and monitor
-Connect a keyboard and monitor to the appliance. You need these to initially configure the appliance, and you can disconnect them later.
+Connect a keyboard and monitor to the appliance. You need these to initially configure the appliance, and you can disconnect them later. Use the adapter Dell provides. Plug it into the Display Port shown in [Appliance Port Location](#appliance-port-location), and plug the monitor in on the other side of the adapter.
+
+**Dell-provided display to VGA adapter**
+
+![Plug the monitor and keyboard into the display port using the adapter.]({{ site.baseurl }}/images/dell-monitor-adapter.png "Plug the monitor and keyboard into the display port using the adapter.")
 
 ### Step 4: Turn on nodes
 Turn on power for the nodes by pressing the power button for each one; see [Appliance Power Button](#appliance-power-button).
@@ -80,8 +96,8 @@ Turn on power for the nodes by pressing the power button for each one; see [Appl
 ## Configure the management settings
 Next, input your specific network information to configure the management settings. Refer to [Dell Management Configuration](#dell-idrac-config).
 
-1. **Open the iDRAC settings modal** Press F11 on your keyboard to enter the Boot Manager.
-2. **Press F2** Press F2 when the option is available.
+1. **Open the iDRAC settings modal** Before the node boots, a screen appears on your monitor with several options. Click F11 to enter the Boot Manager.
+2. **Press F2** Click F2 when the option is available.
 3. **Select iDRAC** In the Bios setup screen, there are several options. Select **iDRAC**.
 4. **Select network configuration** From the iDRAC settings options, select **network**.  
 5. **Fill out the iDRAC settings form** Add your specific network information for the IP address, Gateway, and Netmask in the empty boxes. Refer to your ThoughtSpot site survey for a quick reference, and ask your network administrator for help if you have not filled out the site survey yet. Refer to [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) for definitions of the fields in the form.
