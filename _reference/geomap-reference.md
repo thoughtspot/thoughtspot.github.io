@@ -122,6 +122,9 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <details><summary><strong>Prefecture</strong></summary>
 {% include content/geo/jp-prefecture.md %}
 </details>
+<details><summary><strong>City</strong></summary>
+{% include content/geo/jp-city.md %}
+</details>
 <details><summary><strong>PMC</strong></summary>
 {% include content/geo/jp-pmc.md %}
 </details>
