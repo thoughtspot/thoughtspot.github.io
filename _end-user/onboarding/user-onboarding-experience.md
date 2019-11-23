@@ -45,3 +45,5 @@ Your onboarding experience begins when you login for the first time.
 ***\[Optional\]*** Any user can repeat their onboarding experience at any time. Simply select **Profile** from the user icon on the top right corner of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**. See [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).
 
 If you are a new user and you did not experience onboarding, please contact your administrator and request that they configure it for you and other new users.
+
+You can always get additional help. As you start to use ThoughtSpot, we recommend that you review [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).

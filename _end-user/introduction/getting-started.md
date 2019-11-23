@@ -6,40 +6,111 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The **Getting Started** sidebar guides new users through ThoughtSpot with a brief lesson on navigation and several quick videos on ThoughtSpot's main features.
+The **Getting Started** sidebar teaches new users about ThoughtSpot with a brief lesson on navigation and several quick videos on ThoughtSpot's main features.
 
-## How it works
-When you sign into ThoughtSpot, the **Getting Started** menu appears on the right side of the page. It looks like this:
+When you sign into ThoughtSpot, the **Getting Started** menu appears on the right edge of the screen. It looks like this:
 ![The Getting Started menu is on the right side of the page.]({{ site.baseurl }}/images/gettingstarted-main.png "The Getting Started menu is on the right side of the page.")
 
-You can click on the menu and open it to see the **Learning Resources** available to you:
+Click on the menu and open it to see the **Learning Resources** available to you:
+* Navigation Overview
+* Your First Search
+* Intro to Pinboard
+* Refining Data Using Filters
+* Automated Insights Using SpotIQ
+* Hide Getting Started Menu
+
 ![Open the Getting Started menu to see the Learning Resources]({{ site.baseurl }}/images/gettingstarted-open-menu.png "Open the Getting Started menu to see the Learning Resources")
 
-Click on the menu options in order to get an overview of ThoughtSpot.
+## Navigation overview
+The **Navigation Overview** teaches you about the menu bar at the top of the page.
 
-### Navigation overview
-First, click **Navigation overview**. It takes you through the menu bar at the top of the page.
+![Navigation Overview gif]({{ site.baseurl }}/images/getting-started-navoverview.gif "Gif of Navigation Overview: Search, Answers, Pinboards, and Help")
 
-1. The **Search** tab
+1. **Search**
 
     ![Search - navigation overview]({{ site.baseurl }}/images/gettingstarted-search.png "Search - navigation overview")
 
-    The **Search** tab is where you search your data. Click **next** when you are ready to move on to the next topic, or click the **x** at the top right of the box to leave the navigation overview.
+    Search your data in the **Search** tab.
+
+    Click **next** when you are ready to move on to the next topic, or click the **x** at the top right of the box to leave the navigation overview.
 
     ![Click next to move on or click x to leave.]({{ site.baseurl }}/images/gettingstarted-searchnext.png "Click next to move on.")
 
-2. The **Answers** tab
+    For more information on Search, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#search).
+
+2. **Answers**
 
     ![Answers - navigation overview]({{ site.baseurl }}/images/gettingstarted-answers.png "Answers - navigation overview")
 
-    The **Answers** tab is where you view saved search results. Click **next** to move on, or click **back** if you want to review searches again.
+    View saved search results in the **Answers** tab.
+
+    Click **next** to move on, or click **back** if you want to review searches again.
 
     ![Click next to move on or click back to go back to Search.]({{ site.baseurl }}/images/gettingstarted-answers-backnext.png "Click next to move on or click back to go back to Search.")
 
-3. The **Pinboards** tab
+    For more information on Answers, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#answers).
+
+3. **Pinboards**
 
     ![Pinboards - navigation overview]({{ site.baseurl }}/images/gettingstarted-pinboards.png "Pinboards - navigation overview")
 
-    The **Pinboards** tab is where you view saved Pinboards. Pinboards are collections of related visualizations and Answers. Click **next**.
+    View saved Pinboards in the **Pinboards** tab. Pinboards are collections of related visualizations and Answers.
 
-4. The **Help** icon 
+    Click **next** to move on.
+
+    For more information on Pinboards, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#pinboards).
+
+4. **Help**
+
+    ![Help - navigation overview]({{ site.baseurl }}/images/gettingstarted-help.png "Help - navigation overview")
+
+    Access **Help** from the help icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} in the top right corner of the screen. You can also access your profile in this corner.
+
+    Click **done** to exit the navigation overview.
+
+    ![Click done to exit the navigation overview.]({{ site.baseurl }}/images/gettingstarted-help-done.png "Click done to exit the navigation overview.")
+
+    For more information on Help, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#help-icon).
+
+When you click **Getting Started** again, notice that the **Navigation Overview** is crossed out:
+
+![Navigation Overview is crossed out.]({{ site.baseurl }}/images/gettingstarted-yourfirstsearch.png "Navigation Overview is crossed out once completed.")
+
+## Your first search
+In **Your First Search**, watch a short video about how to search in ThoughtSpot.
+
+![Learn how to search ThoughtSpot]({{ site.baseurl }}/images/gettingstarted-searchvideo.png "Learn how to search ThoughtSpot")
+
+View the [keyword reference]({{ site.baseurl }}/reference/keywords.html).
+
+Click **done** to exit **Your First Search**.
+
+## Intro to pinboards
+In **Intro to Pinboards**, watch a short video about pinboards.
+
+![Learn how to use pinboards]({{ site.baseurl }}/images/gettingstarted-pinboardvideo.png "Learn how to use pinboards")
+
+Click **done** to exit **Intro to Pinboards**.
+
+## Refining data using filters
+In **Refining Data Using Filters**, watch a short video about filters.
+
+![Learn how to use filters]({{ site.baseurl }}/images/gettingstarted-filtervideo.png "Learn how to use filters when you search.")
+
+Click **done** to exit **Refining Data Using Filters**.
+
+## Automated insights using SpotIQ
+In **Automated Insights Using SpotIQ**, watch a short video about SpotIQ.
+
+![Learn how to use SpotIQ]({{ site.baseurl }}/images/gettingstarted-spotiqvideo.png "Learn how to use SpotIQ for automated insights into your data.")
+
+Click **done** to exit **Automated Insights Using SpotIQ**.
+
+## Hide getting started menu
+**Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+![Hide the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-help.png "Hide the Getting Started Menu from the help menu.")
+
+To hide the Getting Started sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Hide getting started**.
+
+![Hide the Getting Started menu gif]({{ site.baseurl }}/images/getting-started-hideandshow.gif "Hide the Getting Started menu gif")
