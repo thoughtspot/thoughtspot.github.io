@@ -3,6 +3,7 @@ title: [Getting Started]
 last_updated: 11/22/2019
 summary: "The Getting Started sidebar teaches new users to navigate and understand ThoughtSpot."
 sidebar: mydoc_sidebar
+toc: false
 permalink: /:collection/:path.html
 ---
 
@@ -12,12 +13,12 @@ When you sign into ThoughtSpot, the **Getting Started** menu appears on the righ
 ![The Getting Started menu is on the right side of the page.]({{ site.baseurl }}/images/gettingstarted-main.png "The Getting Started menu is on the right side of the page.")
 
 Click on the menu and open it to see the **Learning Resources** available to you:
-* Navigation Overview
-* Your First Search
-* Intro to Pinboard
-* Refining Data Using Filters
-* Automated Insights Using SpotIQ
-* Hide Getting Started Menu
+* [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
+* [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)
+* [Intro to Pinboards]({{ site.baseurl }}/end-user/introduction/getting-started.html#intro-to-pinboards)
+* [Refining Data Using Filters]({{ site.baseurl }}/end-user/introduction/getting-started.html#refining-data-using-filters)
+* [Automated Insights Using SpotIQ]({{ site.baseurl }}/end-user/introduction/getting-started.html#automated-insights-using-spotiq)
+* [Hide Getting Started Menu]({{ site.baseurl }}/end-user/introduction/getting-started.html#hide-getting-started-menu)
 
 ![Open the Getting Started menu to see the Learning Resources]({{ site.baseurl }}/images/gettingstarted-open-menu.png "Open the Getting Started menu to see the Learning Resources")
 
@@ -44,7 +45,7 @@ The **Navigation Overview** teaches you about the menu bar at the top of the pag
 
     View saved search results in the **Answers** tab.
 
-    Click **next** to move on, or click **back** if you want to review searches again.
+    Click **next** to move on, or click **back** if you want to review **Search** again.
 
     ![Click next to move on or click back to go back to Search.]({{ site.baseurl }}/images/gettingstarted-answers-backnext.png "Click next to move on or click back to go back to Search.")
 
@@ -109,8 +110,10 @@ Click **done** to exit **Automated Insights Using SpotIQ**.
 ## Hide getting started menu
 **Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
-![Hide the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-help.png "Hide the Getting Started Menu from the help menu.")
+![Hide the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-hide.png "Hide the Getting Started Menu from the help menu.")
 
 To hide the Getting Started sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Hide getting started**.
 
 ![Hide the Getting Started menu gif]({{ site.baseurl }}/images/getting-started-hideandshow.gif "Hide the Getting Started menu gif")
+
+You can always activate **Getting Started** again. To show the Getting Started sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Show getting started**.
