@@ -73,7 +73,7 @@ The **Navigation Overview** teaches you about the menu bar at the top of the pag
 
     For more information on Help, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#help-icon).
 
-When you click **Getting Started** again, notice that the **Navigation Overview** is crossed out:
+When you click **Getting Started** again, notice that the **Navigation Overview** is crossed out. You can still do the **Navigation Overview** again, though.
 
 ![Navigation Overview is crossed out.]({{ site.baseurl }}/images/gettingstarted-yourfirstsearch.png "Navigation Overview is crossed out once completed.")
 
@@ -100,12 +100,16 @@ In **Refining Data Using Filters**, watch a short video about filters.
 
 Click **done** to exit **Refining Data Using Filters**.
 
+For more information on filters, see [Understand Filters]({{ site.baseurl }}/complex-search/about-filters.html).
+
 ## Automated insights using SpotIQ
 In **Automated Insights Using SpotIQ**, watch a short video about SpotIQ.
 
 ![Learn how to use SpotIQ]({{ site.baseurl }}/images/gettingstarted-spotiqvideo.png "Learn how to use SpotIQ for automated insights into your data.")
 
 Click **done** to exit **Automated Insights Using SpotIQ**.
+
+For more information on SpotIQ, see [What is SpotIQ?]({{ site.baseurl }}/spotiq/whatisspotiq.html).
 
 ## Hide getting started menu
 **Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
