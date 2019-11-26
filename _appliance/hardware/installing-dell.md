@@ -33,7 +33,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>10bps switch for iDRAC (Out of Band Management)</td></tr>
+<td>10bps switch for connection to the iDRAC (Out of Band Management) port</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -109,8 +109,8 @@ Turn on power for the nodes by pressing the power button for each one; see [Appl
 Next, input your specific network information to configure the management settings. Refer to [Dell Management Configuration](#dell-idrac-config). If you need additional guidance, view [Dell Support](https://www.dell.com/support/home/us/en/04/product-support/product/dell-xc6420/overview) for this product.
 
 1. **Open the iDRAC settings modal** Before the node boots, a screen appears on your monitor with several options. Click F11 to enter the Boot Manager.
-2. **Press F2** Click F2 when the option is available.
-3. **Select iDRAC** In the Bios setup screen, there are several options. Select **iDRAC**.
+2. **Press F2** Click F2 when the option to do so appears on your screen.
+3. **Select iDRAC** In the Bios setup screen, there are several options. Select **iDRAC** to configure your iDRAC settings.
 4. **Select network configuration** From the iDRAC settings options, select **network**.  
 5. **Fill out the iDRAC settings form** Add your specific network information for the IP address, Gateway, and Netmask in the empty boxes. DNS information is optional. Refer to your ThoughtSpot site survey for a quick reference, and ask your network administrator for help if you have not filled out the site survey yet.
 * For **Enable IPv4**, select **enabled**.
@@ -137,7 +137,7 @@ Make sure you have logged into your cluster. If you have not, use admin credenti
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
 2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
   * If you have  additional nodes, complete each node within the nodes.config file in the same way.
-  
+
       Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
 ### Step 4: Configure the nodes
@@ -145,7 +145,7 @@ Configure the nodes in the `nodes.config` file using the [`set-config` command](
   * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing-dell.html#set-config-error-recovery).
 
 {: id="set-config-command"}
-#### Set-config
+**Set-config**
 ```
 $ cat nodes.config | tscli cluster set-config
 
@@ -158,12 +158,16 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 ```
-#### Set-config error recovery
+
+{: id="set-config-error-recovery"}
+**Set-config error recovery**
+
 If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
 {: id="node-scout-restart"}
 
-#### Restart node-scout service
+**Restart node-scout service**
+
 If you have this error, restart the node-scout:
 ```
 Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
@@ -189,10 +193,10 @@ Done setting up ThoughtSpot
 ```
 
 ### Step 5: Confirm node configuration with the `get-config` command
-Run `tscli cluster get-config` in your terminal to confirm node configuration.
+Run `tscli cluster get-config` on the command line to confirm node configuration.
 
 {: id=confirm-node-config}
-#### Confirm node configuration
+**Confirm node configuration**
 ```
 $ tscli cluster get-config
 
@@ -238,6 +242,9 @@ If you do not have a link to download the release tarball, open a support ticket
   $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
 ```
 2. Run `tscli cluster create <release>`.
+```
+    $ tscli cluster create 6.0.tar.gz
+```
 3. Edit the ouput with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
 The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
