@@ -271,6 +271,9 @@ If you have not received a link to download the release tarball, open a support 
     $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
 ```
 2. Run `tscli cluster create <release>`.
+```
+    $ tscli cluster create 6.0.tar.gz
+```
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
