@@ -37,7 +37,7 @@ We bundle SearchIQ with a set of pre-defined templates that help it understand n
 See [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
 
    1. Select a saved answer.
-   2. Click on one of the dropdown phrases that shows how SearchIQ interprets the search terms, and click **Teach**.
+   2. Click one of the drop-down phrases that shows how SearchIQ interprets the search terms, and click **Teach**.
 
 ### Use new searches to teach SearchIQ ###
 
