@@ -19,7 +19,7 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 After creating the instance, you must configure the nodes.
 
 ### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. The admin password is th0ughtSp0t.
+Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
 2. Enter your admin password.
   * Ask your network administrator if you don't know the password.

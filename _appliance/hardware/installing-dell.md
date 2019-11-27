@@ -117,7 +117,7 @@ Next, input your specific network information to configure the management settin
 * For **Enable DHCP**, select **disabled**.
 * For **Enable IPv6**, select **disabled**.
 6. **Save changes and reboot** Follow the prompts on the monitor to save changes to the management settings form, exit, and reboot the system.
-7. **Log into ThoughtSpot** When the system reboots, the login page appears. Log in as an administrator. The username is *admin*, and the password is *th0ughtSp0t*.
+7. **Log into ThoughtSpot** When the system reboots, the login page appears. Log in as *admin*.
 
 {: id="dell-idrac-config"}
 
