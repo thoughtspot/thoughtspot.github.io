@@ -7,6 +7,7 @@
 # ThoughtSpot_Data_Connect_Guide_x.x
 # ThoughtSpot_Reference_Guide_x.x
 # ThoughtSpot_Node_Setup_Guide_x.x
+# ThoughtSpot_SMC_Installation_Guide_x.x
 #
 destination: _site/
 url: "http://127.0.0.1:4010"

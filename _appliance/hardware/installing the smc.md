@@ -1,6 +1,6 @@
 ---
 title: [Installing the Super Micro Computer]
-last_updated: [10/31/2019]
+last_updated: [11/27/2019]
 summary: "Learn how to install the Super Micro Computer (SMC) Appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -79,10 +79,12 @@ You can deploy ThoughtSpot on two different appliance hardware platforms: Haswel
 These pictures show the front and back views of each appliance.
 
 {: id="haswell-front-back"}
-### Haswell Front View
+**Haswell Front View**
+
 ![The front of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-front-view.png "The front of the Haswell appliance")
 
-### Haswell Back View
+**Haswell Back View**
+
 ![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-back-view.png "The back of the Haswell appliance")
 
 {% include note.html content="The nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left." %}
@@ -90,10 +92,12 @@ These pictures show the front and back views of each appliance.
 {% include note.html content="The Haswell appliance shown here is not fully populated, as it only has three nodes. Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If you order less than four nodes, ThoughtSpot fills the empty slot with a filler panel." %}
 
 {: id="skylake-front-back"}
-### Skylake Front View
+**Skylake Front View**
+
 ![The front of the Skylake appliance]({{ site.baseurl }}/images/smc-skylake-front-view.png "The front of the Skylake appliance")
 
-### Skylake Back View
+**Skylake Back View**
+
 ![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-skylake-back-view.png "The back of the Haswell appliance")
 
 {% include note.html content="The nodes on the back are in a reverse N shape, with Node A at the bottom right and Node D at the top left." %}
@@ -118,13 +122,13 @@ Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]
 Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
 
 {: id="smc-appliance-haswell-location-ports"}
-
+**Haswell appliance**
 ![The data and management ports are on the back of the SMC Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "The back of the SMC Haswell appliance")
 
 {% include note.html content="The above image of the Haswell appliance has a GBIC plugged in next to the highlighted 10GbE data port." %}
 
 {: id="smc-appliance-skylake-location-ports"}
-
+**Skylake appliance**
 ![The data and management ports are on the back of the SMC Skylake appliance.]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "The back of the SMC Skylake appliance")
 
 * Connect to switches **only** the appliances (4 nodes each) that you want to use in the cluster.  
@@ -150,7 +154,7 @@ Turn on the power for the nodes by pressing the power button; see [Appliance Pow
 {% include note.html content="There is one power button for each node." %}
 
 ### Step 4: Log in
-Connect the keyboard and the mouse to the appliance, and log in using the *admin* user credentials for the console.
+Connect the keyboard and the mouse to the appliance, and log in using the admin user credentials for the console. If you do not know the admin credentials, ask your network administrator.
 
 {: id="Configure-Node-in-Terminal"}
 ## Configure Nodes in Terminal
@@ -180,7 +184,7 @@ Configure the nodes in the `nodes.config` file using the [`set-config` command](
 
 {: id="set-config-command"}
 
-#### Set-config
+**Set-config**
 ```
 $ cat nodes.config | tscli cluster set-config
 
@@ -193,12 +197,14 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 ```
-#### Set-config error recovery
+
+{: id="set-config-error-recovery"}
+**Set-config error recovery**
 If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
 {: id="node-scout-restart"}
 
-#### Restart node-scout service
+**Restart node-scout service**
 If you have this error, restart the node-scout:
 ```
 Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
@@ -228,7 +234,7 @@ Done setting up ThoughtSpot
 Run `tscli cluster get-config` in your terminal to confirm node configuration.
 
 {: id=confirm-node-config}
-#### Confirm node configuration
+**Confirm node configuration**
 ```
 $ tscli cluster get-config
 
@@ -284,7 +290,7 @@ Once the cluster is installed, check its status with the `tscli cluster status` 
 
 {: id="check-cluster-health"}
 
-### Cluster Status
+**Cluster Status**
 ```
 $ tscli cluster status
 Cluster: RUNNING
@@ -326,7 +332,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
-5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#ts-login), enter admin credentials, and click **Sign in**.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#ts-login), enter admin credentials, and click **Sign in**. If you do not know the admin credentials, ask your network administrator.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

@@ -17,3 +17,4 @@ You can download ThoughtSpot 5.3 guides in PDF format.
 * [Disaster Recovery Guide](/5.3/pdf/ThoughtSpot_Disaster_Recovery_Guide_5.3.pdf)
 * [Reference Guide](/5.3/pdf/ThoughtSpot_Reference_Guide_5.3.pdf)
 * [Release Notes](/5.3/pdf/ThoughtSpot_Release_Notes_5.3.pdf)
+* [Super Micro Computer](/6.0/pdf/ThoughtSpot_SMC_Installation_Guide_6.0.pdf)

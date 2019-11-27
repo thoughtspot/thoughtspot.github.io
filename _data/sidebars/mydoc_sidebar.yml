@@ -1110,16 +1110,19 @@ entries:
       levelTwoItems:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
-        output: web,appQs
+        output: web,appQs,instSMC
+      - title: SMC Installation
+        url: /appliance/hardware/installing the smc.html
+        output: web,appQs,instSMC
       - title: Supported hardware
         url: /appliance/hardware/hardware-and-deployment.html
-        output: web,appQs
+        output: web,appQs,instSMC
       - title: Cable networking
         url: /appliance/hardware/cable-networking.html
-        output: web,appQs
+        output: web,appQs,instSMC
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
-        output: web,appQs
+        output: web,appQs,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
