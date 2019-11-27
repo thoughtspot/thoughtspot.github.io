@@ -142,7 +142,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
 
-15. SSH as `admin` into the IP address of the instance, using the password: `Th0ughtSp0t`.
+15. SSH as `admin` into the IP address of the instance. Your ThoughtSpot contact can provide you with the password.
 
 16. Prepare your storage for use with your cluster, by running this command:  
 `sudo /usr/local/scaligent/bin/prepare_disks.sh`.
