@@ -139,7 +139,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
 
-## Prepare the VMs (ThoughtSpot Systems Reliability Team)
+## Prepare the VMs (ThoughtSpot Systems Reliability Team) 
 
 {% include important.html content="This procedure is typically done by a
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
