@@ -9,10 +9,10 @@ permalink: /:collection/:path.html
 
 The **Getting Started** sidebar teaches new users about ThoughtSpot with a brief lesson on navigation and several quick videos on ThoughtSpot's main features.
 
-When you sign into ThoughtSpot, the **Getting Started** menu appears on the right edge of the screen. It looks like this:
-![The Getting Started menu is on the right side of the page.]({{ site.baseurl }}/images/gettingstarted-main.png "The Getting Started menu is on the right side of the page.")
+When you sign into ThoughtSpot, the **Getting Started** sidebar appears on the right edge of the screen. It looks like this:
+![The Getting Started menu is on the right side of the page.]({{ site.baseurl }}/images/gettingstarted-main.png "The Getting Started sidebar is on the right edge of the screen.")
 
-Click on the menu and open it to see the **Learning Resources** available to you:
+Click on the sidebar to expand it and see the **Learning Resources** available to you:
 * [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
 * [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)
 * [Intro to Pinboards]({{ site.baseurl }}/end-user/introduction/getting-started.html#intro-to-pinboards)
@@ -22,6 +22,7 @@ Click on the menu and open it to see the **Learning Resources** available to you
 
 ![Open the Getting Started menu to see the Learning Resources]({{ site.baseurl }}/images/gettingstarted-open-menu.png "Open the Getting Started menu to see the Learning Resources")
 
+{: id="navigation-overview"}
 ## Navigation overview
 The **Navigation Overview** teaches you about the menu bar at the top of the page.
 
@@ -77,6 +78,7 @@ When you click **Getting Started** again, notice that the **Navigation Overview*
 
 ![Navigation Overview is crossed out.]({{ site.baseurl }}/images/gettingstarted-yourfirstsearch.png "Navigation Overview is crossed out once completed.")
 
+{: id="your-first-search"}
 ## Your first search
 In **Your First Search**, watch a short video about how to search in ThoughtSpot.
 
@@ -86,6 +88,7 @@ View the [keyword reference]({{ site.baseurl }}/reference/keywords.html).
 
 Click **done** to exit **Your First Search**.
 
+{: id="intro-to-pinboards"}
 ## Intro to pinboards
 In **Intro to Pinboards**, watch a short video about pinboards.
 
@@ -93,6 +96,7 @@ In **Intro to Pinboards**, watch a short video about pinboards.
 
 Click **done** to exit **Intro to Pinboards**.
 
+{: id="refining-data-using-filters"}
 ## Refining data using filters
 In **Refining Data Using Filters**, watch a short video about filters.
 
@@ -102,6 +106,7 @@ Click **done** to exit **Refining Data Using Filters**.
 
 For more information on filters, see [Understand Filters]({{ site.baseurl }}/complex-search/about-filters.html).
 
+{: id="automated-insights-using-spotiq"}
 ## Automated insights using SpotIQ
 In **Automated Insights Using SpotIQ**, watch a short video about SpotIQ.
 
@@ -111,6 +116,7 @@ Click **done** to exit **Automated Insights Using SpotIQ**.
 
 For more information on SpotIQ, see [What is SpotIQ?]({{ site.baseurl }}/spotiq/whatisspotiq.html).
 
+{: id="hide-getting-started-menu"}
 ## Hide getting started menu
 **Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
