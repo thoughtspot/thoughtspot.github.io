@@ -1,11 +1,12 @@
 ---
 title: [Cable reference]
-last_updated: [10/31/2019]
+last_updated: [11/12/2019]
 summary: "Learn the differences between fiber and DAC cables."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+You need either fiber or DAC cables to connect the Super Micro Computer or Dell appliance to the switches on your rack. Refer to [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html) or [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html).
 
 {: id="fiber-cables"}
 ## Fiber Cables
@@ -39,3 +40,7 @@ Copper can only be run short distances to the switch. An SFP+ is already attache
 You can connect a DAC cable directly to the 10GbE data port.
 
 {% include note.html content="SFP+'s are not included with the appliance. You can order them separately." %}
+
+## References
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
