@@ -1,6 +1,6 @@
 ---
 title: [Installing VMware]
-last_updated: 11/12/2019
+last_updated: 11/27/2019
 summary: "Learn how to install a ThoughtSpot cluster on VMware."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,7 +22,7 @@ After creating the instance, you must configure the nodes.
 ### Step 1: Log into your cluster
 Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
-2. When prompted, enter the admin password: th0ughtSp0t.
+2. When prompted, enter the admin password. Ask your network administrator if you do not know the admin credentials.
 ```
     $ ssh admin@clusterIP
 ```
@@ -47,7 +47,7 @@ Configure the nodes in the `nodes.config` file using the [`set-config` command](
 
 {: id="set-config-command"}
 
-#### Set-config
+**Set-config**
 ```
 $ sudo systemctl stop firewalld
 $ cat nodes.config | tscli cluster set-config
@@ -62,10 +62,11 @@ Setting up Timezone
 Done setting up ThoughtSpot
 ```
 
-#### Set-config error recovery
+{: id="set-config-error-recovery"}
+**Set-config error recovery**
 If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
-#### Restart node-scout service
+**Restart node-scout service**
 If you have this error, restart the node-scout:
 ```
 Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
@@ -93,7 +94,7 @@ Done setting up ThoughtSpot
 ### Step 5: Confirm node configuration with the `get-config` command
 Run `tscli cluster get-config` in your terminal to confirm node configuration.
 
-#### Confirm node configuration
+**Confirm node configuration**
 ```
 $ tscli cluster get-config
 
@@ -150,7 +151,7 @@ If you do not have a link to download the release tarball, open a support ticket
 Once the cluster is installed, check its status with the `tscli cluster status` command.
 
 {: id="check-cluster-health"}
-#### Cluster Status
+**Cluster Status**
 ```
 $ tscli cluster status
 Cluster: RUNNING
@@ -192,7 +193,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
-5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#ts-login), enter admin credentials, and click **Sign in**. The admin username is *tsadmin* and the default password is *admin*.
+5. In the [ThoughtSpot login window]({{ site.baseurl }}/appliance/vmware/installing-vmware.html#ts-login), enter admin credentials, and click **Sign in**. Ask your network administrator if you do not know the admin credentials.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}
