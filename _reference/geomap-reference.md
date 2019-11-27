@@ -181,7 +181,7 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <details><summary><strong>State</strong></summary>
 {% include content/geo/us-state.md %}
 </details>
-<details><summary><strong>Country</strong></summary>
+<details><summary><strong>County</strong></summary>
 {% include content/geo/us-county.md %}
 </details>
 <details><summary><strong>Zip Code</strong></summary>
