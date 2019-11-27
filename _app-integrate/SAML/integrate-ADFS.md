@@ -13,7 +13,7 @@ Before you configure ADFS, complete these prerequisites.
 1. [Configure SAML in ThoughtSpot](configure-SAML-with-tscli#).
 2. Install [ADFS 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=10909). ThoughtSpot supports ADFS 3.0, but recommends ADFS 2.0.
 3. Make sure you can run ADFS 2.0 Federation Server Configuration Wizard from the ADFS 2.0 Management Console.
-4. Make sure that the DNS name of your Windows Server is available at your service provider (SP) and vice versa. You can do this by running the command `nslookup` in the command line on both machines, supplying the DNS of the other server. The syntax is `nslookup [HOST] [SERVER]`. Replace HOST and SERVER with your specific information. 
+4. Make sure that the DNS name of your Windows Server is available at your service provider (SP) and vice versa. You can do this by running the command `nslookup` in the command line on both machines, supplying the DNS of the other server. The syntax is `nslookup [HOST] [SERVER]`. Replace HOST and SERVER with your specific information.
 ```
     $ nslookup [HOST] [SERVER]
 ```
@@ -44,7 +44,7 @@ ADFS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily int
 
 ## Step 2: Initialize the Service Provider metadata
 
-### 1: Import Metadata
+### 1: Import metadata
 1. Open the ADFS 2.0 Management Console.
 2. Select **Relying Party Trusts > Add Relying Party Trust**.
 3. Select **Import data about the relying party from a file**.
@@ -52,7 +52,7 @@ ADFS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily int
 5. Select **Next**.
 * There may be a warning that some of the content of the metadata is not supported. You can safely ignore this warning.
 
-### 2: Edit Claim Rules
+### 2: Edit claim rules
 6. In the **Ready to Add Trust** section, make sure that the tab endpoints contain multiple endpoint values.
 * If not, verify that your metadata was generated with the HTTPS protocol URLs.
 7. Ensure that the **Open the Edit Claim Rules dialog** checkbox is checked.
@@ -60,7 +60,7 @@ ADFS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily int
 8. Select **Add Rule**.
 9. Choose **Send LDAP Attributes as Claims**.
 10. Click **Next**.
-10. For **Claim rule name** enter "NameID".
+10. For **NameID** enter the name of your claim rule.
 11. For **Attribute store**, choose "Active Directory".
 12. For **LDAP Attribute**, choose "SAM-Account-Name".
 13. For **Outgoing claim type**, choose "Name ID".
@@ -68,12 +68,13 @@ ADFS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily int
 14. Finish the wizard.
 15. Confirm that all information is correct in the claim rules window.
 
-### 3. Choose Secure Hash Algorithm
+### 3. Specify your level of security
 15. Open the provider by double-clicking it.
 16. Select the **Advanced** tab.
-17. Under **Secure hash algorithm**, choose "SHA-1".
+17. Under **Secure hash algorithm**, choose "SHA-256".
+* If you have trouble with SHA-256, try SHA-1 instead.
 
-Your Service Provider is now registered.
+You can now use ADFS.
 
 ## Step 3: Test your ADFS integration
 After setting up the ADFS integration, make sure it works properly. To test your ADFS integration, go to the ThoughtSpot login page using a Web browser and try to login with SAML.
