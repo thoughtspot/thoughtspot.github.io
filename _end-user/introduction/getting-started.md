@@ -122,8 +122,24 @@ For more information on SpotIQ, see [What is SpotIQ?]({{ site.baseurl }}/spotiq/
 
 ![Hide the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-hide.png "Hide the Getting Started Menu from the help menu.")
 
-To hide the Getting Started sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Hide getting started**.
+To hide the **Getting Started** sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Hide getting started**.
 
 ![Hide the Getting Started menu gif]({{ site.baseurl }}/images/getting-started-hideandshow.gif "Hide the Getting Started menu gif")
 
 You can always activate **Getting Started** again. To show the Getting Started sidebar, click the **Help** icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} and select **Show getting started**.
+
+{: id="change-language"}
+## Change the language
+You can change the language used in **Getting Started**. ThoughtSpot supports three languages for **Getting Started**: English, Deutsch, and 日本語.
+
+To change the language, open the **Getting Started** menu and click on the language drop-down menu at the top right of the **Getting Started** menu:
+
+![Change the language at the top right of the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-changelanguage.png "Change the language at the top right of the Getting Started menu.")
+
+When you change the language, it changes the title of the **Getting Started** sidebar.
+
+![Getting Started Sidebar in Deutsch]({{ site.baseurl }}/images/gettingstarted-sidebardeutsch.png "The title of the Getting Started sidebar changes to Deutsch.")
+
+It also changes the language of the **back** and **next** buttons. It does not change the text of the lessons.
+
+![Navigation Overview - Answers in Deutsch]({{ site.baseurl }}/images/gettingstarted-answersdeutsch.png "The next and back buttons change languages, but the other text does not.")
