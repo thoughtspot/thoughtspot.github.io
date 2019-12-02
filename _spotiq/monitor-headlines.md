@@ -8,68 +8,45 @@ permalink: /:collection/:path.html
 ---
 With SpotIQ Monitor, you can follow headline metrics of your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
 
-{: id="pinboard-follow"}
-## Follow Pinboards
-To monitor headlines, click the **Follow** icon in the top right corner of the relevant Pinboard.
+{: id="headline-follow"}
+## Follow Headlines
 
-![Monitor headlines with Follow]({{ site.baseurl }}/images/monitor-follow-pinboard.png "Monitor headlines with Follow")
+To monitor a Headline, click the **Follow** icon in its top right corner.
 
-This action opens the scheduler.  See [Schedule monitoring](#monitor-schedule).
+![Monitor headlines with Follow]({{ site.baseurl }}/images/follow-headline.gif "Monitor headlines with Follow")
 
-Notice that after you configure the schedule, the Pinboard appears as **Following**.
+The system confirms that you are now following that Headline, and will receive daily email updates. Notice that the Headline's **Follow** icon has a checkmark.
 
-![Monitored Pinboard]({{ site.baseurl }}/images/monitor-followed-pinboard.png "Monitored Pinboard")
+If the user account is not configured with an email, you must supply it at this time.
 
-{: id="monitor-schedule"}
-## Schedule monitoring  
+{: id="headline-unfollow"}
+## Unfollow Headline
 
-In the **Follow** scheduler, specify the time interval and the timing of notifications.
+To stop monitoring a Headline, follow these steps:
 
-![Schedule the monitoring]({{ site.baseurl }}/images/monitor-follow-schedule.png "Schedule the monitoring")
+1. Click the **SpotIQ** tab.
+2. Click **Follow**.
+3. Hover over the action area of the Headline you plan to unfollow.
+4. Click the **Unfollow** \(trash\) icon.
+5. Confirm by clicking **Unfollow**.
 
-<dl>
-  <dlentry>
-     <dt>Weekly</dt>
-     <dd>By default, the schedule is weekly, on the day of the week and at the time you create the schedule.<br>
-     You can select another day of the week, and then set the time.</dd>
-  </dlentry>
-  <dlentry>
-    <dt>Daily</dt>
-    <dd>Specify <em>every weekday</em> (every working day), or <em>every day of the week</em>. Then set the time.</dd>
-  </dlentry>
-  <dlentry>
-    <dt>Monthly</dt>
-    <dd>Specify the day of the month, from <em>1</em> onwards. Then set the time.</dd>
-  </dlentry>
-</dl>
+![Unfollow a monitored Headline]({{ site.baseurl }}/images/unfollow-headline.gif "Unfollow a monitored Headline")
 
-Click **Save**.
+{: id="headline-rename"}
+## Rename monitored Headline
 
-If the user account is not configured with an email, you must supply one at this time.
+To rename a followed Headlin, follow these steps:
 
-{: id="schedule-change"}
-## Change the monitoring schedule
+1. Click the **SpotIQ** tab.
+2. Click **Follow**.
+3. Hover over the action area of the Headline you plan to unfollow.
+4. Click the **Rename** \(gear\) icon.
+5. In the window modal, change the name of the headline.
+6. Confirm by clicking **Save**.
 
-To change the existing time interval and the timing of notifications, click **Following** in the top right corner of the Pinboard.
+![Rename a monitored Headline]({{ site.baseurl }}/images/rename-headline.gif "Rename a monitored Headline")
 
-When the scheduling interface appears, make the necessary changes, and click **Save**.
-
-{: id="pinboard-unfollow"}
-## Unfollow Pinboard
-
-To stop monitoring a Pinboard, click **Following** in the top right corner.
-
-When the scheduling interface appears, click **Unfollow**.
-
-![Unfollow Pinboard]({{ site.baseurl }}/images/monitor-unfollow.png "Unfollow Pinboard")
-
-{: id="monitor-interface"}
-## Manage monitored pinboards
-
-To manage the Pinboards you follow, click **SpotIQ** in the main navigation across the top, and then select **Follow**.
-
-The **Follow** interface lists all headlines you monitor, and summarizes the changes from last run.
-  ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
+<!--  ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")-->
 
 {: id="monitor-detail"}
 ## Monitoring details
