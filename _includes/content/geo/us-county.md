@@ -316,7 +316,6 @@
   <tr><td>Kent,Delaware</td><td>Kent,DE</td><td>10001</td></tr>
   <tr><td>New Castle,Delaware</td><td>New Castle,DE</td><td>10003</td></tr>
   <tr><td>Sussex,Delaware</td><td>Sussex,DE</td><td>10005</td></tr>
-  <tr><td>Washington,District of Colombia</td><td>Washington,DC</td><td>11001</td></tr>
   <tr><td>Alachua,Florida</td><td>Alachua,FL</td><td>12001</td></tr>
   <tr><td>Baker,Florida</td><td>Baker,FL</td><td>12003</td></tr>
   <tr><td>Bay,Florida</td><td>Bay,FL</td><td>12005</td></tr>
