@@ -1141,20 +1141,20 @@ entries:
         url: /appliance/cloud.html
         output: web,appQs
       - levelThreeTitle: AWS Installation
-        output: web,appQs,instAWS
+        output: web,appQs,instAWS,pdf
         levelThreeItems:
         - title: Installing Amazon Web Services
           url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS  
+          output: web,appQs,instAWS,pdf
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
-          output: web,appQs,instAWS
+          output: web,appQs,instAWS,pdf
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs,instAWS
+          output: web,appQs,instAWS,pdf
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs,instAWS
+          output: web,appQs,instAWS,pdf
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
