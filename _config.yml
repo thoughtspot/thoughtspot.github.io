@@ -82,6 +82,8 @@ collections:
     output: true
   appliance:
     output: true
+  appliance/aws:
+    output: true
   complex-search:
     output: true
   data-connect:
