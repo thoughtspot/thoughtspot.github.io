@@ -35,10 +35,6 @@
       <td><strong>Can use experimental features</strong></td>
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
-<!--    <tr>
-      <td><strong>Can schedule pinboards</strong></td>
-      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
-    </tr> -->
     <tr>
       <td><strong>Can invoke Custom R Analysis</strong></td>
       <td>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</td>
@@ -46,6 +42,10 @@
     <tr>
       <td><strong>Can schedule pinboards</strong></td>
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
+    </tr>
+    <tr>
+      <td><strong>Has SpotIQ privilege</strong></td>
+      <td>Can use the SpotIQ feature.<br>If this privilege is not enabled for the user, they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
     </tr>
     <tr>
       <td><strong>Can administer and bypass RLS</strong></td>
