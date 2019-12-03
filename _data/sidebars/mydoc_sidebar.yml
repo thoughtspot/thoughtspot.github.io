@@ -366,6 +366,9 @@ entries:
         - title: "Best SpotIQ practices"
           url: /spotiq/special-topics.html
           output: web,ugBk
+        - title: "Monitor Headlines"
+          url: /spotiq/monitor-headlines.html
+          output: web,ugBk
         - title: "Comparative Analysis"
           url: /spotiq/comparative-analysis.html
           output: web,ugBk
