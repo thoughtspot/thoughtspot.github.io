@@ -120,7 +120,6 @@ defaults:
 sidebars:
 - home_sidebar
 - mydoc_sidebar
-- mydoc_sidebar-aws
 - other
 
 
