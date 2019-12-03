@@ -1,10 +1,16 @@
-Whenever you view an answer, you have the option of sharing it with others. It will be shared in its current state, so if you have modified the answer by interacting with the table or chart, the modified version is what will be shared.
-
+Whenever you view an answer, you have the option of sharing it with others. The answer appears in its most recent state when you share it. For example, if you add a filter after saving the answer and then share it, the answer you share has that filter.
 1. Configure the answer to look exactly like it must appear when shared.
-2. Save the answer by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
-3. Share the answer by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Share**.
+2. Save the answer by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
-     ![]({{ site.baseurl }}/images/share_with_x.png)
+    ![Click the ellipsis icon and then click save to save an answer.]({{ site.baseurl }}/images/sharing-save-answer.png "Click the ellipsis icon and then click save to save an answer.")
+
+3. Share the answer by clicking the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
+
+     ![]({{ site.baseurl }}/images/sharing-share-icon.png)
+
+4. If you did not save the answer, ThoughtSpot prompts you to name and save the answer before sharing it.
+
+    ![Save the answer and share it.]({{ site.baseurl }}/images/sharing-saveandshare.png "Save the answer and share it.")
 
 4.  Click the plus (**+**) at the bottom of the Share dialog and select users or groups with whom you want to share this answer.
 5. Configure the level of access by selecting from the drop-down list. You can select:
