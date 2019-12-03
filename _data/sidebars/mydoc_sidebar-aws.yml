@@ -1,0 +1,40 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Version
+  version: 6.0 Guides
+  sections:
+# Needed for PDF output only; no titles in this section
+  - sectiontitle:
+    output: pdf
+    type: frontmatter
+    sectionitems:
+    - title:
+      url: /pdfconfigs/titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /pdfconfigs/tocpage.html
+      output: pdf
+      type: frontmatter
+# end PDF output defs
+
+  - sectiontitle: AWS Installation
+    output: instAWS
+    sectionitems:
+    - title: Installing Amazon Web Services
+      url: /appliance/aws/installing-aws.html
+      output: instAWS
+    - title: Configuration options
+      url: /appliance/aws/configuration-options.html
+      output: instAWS
+    - title: Set up AWS for ThoughtSpot
+      url: /appliance/aws/launch-an-instance.html
+      output: instAWS
+    - title: Set up high availability
+      url: /appliance/aws/ha-aws-efs.html
+      output: instAWS
+[//]: #     - title: Topic index
+[//]: #       url: /reference/tags_index.html
+[//]: #       output: web

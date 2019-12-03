@@ -16,7 +16,7 @@ As you install your appliance, you must configure the nodes.
 
 Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
 
-See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file.
+See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.
 
 {: id="parameters-nodes.config"}
 
@@ -50,5 +50,9 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 ## References
 * [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
-* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
+* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)

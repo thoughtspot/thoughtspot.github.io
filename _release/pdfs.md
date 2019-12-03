@@ -16,3 +16,4 @@ You can download ThoughtSpot 6.0 guides in PDF format.
 * [Disaster Recovery Guide](/6.0/pdf/ThoughtSpot_Disaster_Recovery_Guide_6.0.pdf)
 * [Reference Guide](/6.0/pdf/ThoughtSpot_Reference_Guide_6.0.pdf)
 * [Release Notes](/6.0/pdf/ThoughtSpot_Release_Notes_6.0.pdf)
+* [AWS Install Guide](/6.0/pdf/ThoughtSpot_AWS_Installation_Guide_6.0.pdf)

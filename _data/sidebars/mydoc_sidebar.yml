@@ -370,7 +370,7 @@ entries:
           url: /spotiq/monitor-headlines.html
           output: web,ugBk
         - title: "Comparative Analysis"
-          url: /spotiq/comparative-anaysis.html
+          url: /spotiq/comparative-analysis.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
@@ -972,6 +972,9 @@ entries:
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
       output: web,admBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,admBk
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1137,18 +1140,21 @@ entries:
       - title: Cloud overview
         url: /appliance/cloud.html
         output: web,appQs
-      - levelThreeTitle: AWS
-        output: web,appQs
+      - levelThreeTitle: AWS Installation
+        output: web,appQs,instAWS
         levelThreeItems:
+        - title: Installing Amazon Web Services
+          url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS  
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
-          output: web,appQs
+          output: web,appQs,instAWS
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs
+          output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs
+          output: web,appQs,instAWS
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
