@@ -1,10 +1,26 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [11/27/2019]
+last_updated: [12/4/2019]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+To install a ThoughtSpot cluster on AWS, complete these steps:
+
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#installation-prerequisites">Installation Prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#configure-nodes">Configure Nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-install">Install Cluster</a></td>
+  </tr>
+</table>
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
@@ -17,7 +33,24 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 {: id="configure-nodes"}
 ## Configure Nodes
 After creating the instance, you must configure the nodes.
+Follow the steps in this checklist.
 
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#installation-prerequisites">Installation Prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#configure-nodes">Configure Nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-install">Install Cluster</a></td>
+  </tr>
+</table>
+
+{: }
 ### Step 1: Log into your cluster
 Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
@@ -126,6 +159,7 @@ $ tscli cluster get-config
   }  
 }
 ```
+
 {: id="cluster-install"}
 ## Install Cluster
 Next, install the cluster using the release tarball (est. time 1 hour).
