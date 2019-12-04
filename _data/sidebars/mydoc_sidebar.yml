@@ -1150,6 +1150,9 @@ entries:
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs
+      - title: Installing the ThoughtSpot Dell appliance
+        url: /appliance/hardware/installing-dell.html
+        output: web,appQs,instDell
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
@@ -1159,7 +1162,7 @@ entries:
       - levelThreeTitle: AWS
         output: web,appQs,instAWS,pdf
         levelThreeItems:
-#        - title: Installing Amazon Web Services
+#        - title: Installing ThoughtSpot on AWS
 #          url: /appliance/aws/installing-aws.html
 #          output: web,appQs,instAWS,pdf
         - title: Configuration options
