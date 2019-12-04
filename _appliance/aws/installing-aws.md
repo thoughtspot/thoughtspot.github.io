@@ -94,7 +94,7 @@ If the command returns an error, refer to [set-config error recovery]({{ site.ba
 {: id="set-config-command"}
 `Set-config`
 
-After you run the node configuration command, the output appears similar to the following:
+After you run the node configuration command, your output appears similar to the following:
 ```
 $ sudo systemctl stop firewalld
 $ cat nodes.config | tscli cluster set-config
