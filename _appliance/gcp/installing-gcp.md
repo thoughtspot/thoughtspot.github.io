@@ -22,6 +22,7 @@ After creating the instance, you must configure the nodes.
 Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
 2. When prompted, enter the admin password. Ask your network administrator if you do not know the admin credentials.
+
 ```
     $ ssh admin@clusterIP
 ```

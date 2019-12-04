@@ -366,8 +366,11 @@ entries:
         - title: "Best SpotIQ practices"
           url: /spotiq/special-topics.html
           output: web,ugBk
+        - title: "Monitor Headlines"
+          url: /spotiq/monitor-headlines.html
+          output: web,ugBk
         - title: "Comparative Analysis"
-          url: /spotiq/comparative-anaysis.html
+          url: /spotiq/comparative-analysis.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
@@ -969,6 +972,9 @@ entries:
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
       output: web,admBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,admBk
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1107,6 +1113,22 @@ entries:
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
+# -- Uncomment out this section ONLY when generating a PDF for AWS
+#  - sectiontitle: AWS Installation
+#    output: web,instAWS
+#    sectionitems:
+#    - title: Installing Amazon Web Services
+#      url: /appliance/aws/installing-aws.html
+#      output: web,appQs,instAWS
+#    - title: Configuration options
+#      url: /appliance/aws/configuration-options.html
+#      output: web,appQs,instAWS
+#    - title: Set up ThoughtSpot in AWS
+#      url: /appliance/aws/launch-an-instance.html
+#      output: web,appQs,instAWS
+#    - title: Set up high availability
+#      url: /appliance/aws/ha-aws-efs.html
+#      output: web,appQs,instAWS,pdf
   - sectiontitle: Node Setup
     output: web,appQs
     sectionitems:
@@ -1119,9 +1141,9 @@ entries:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
         output: web,appQs,instDell
-      - title: Installing the Dell Appliance
-        url: /appliance/hardware/installing-dell.html
-        output: web,appQs,instDell
+ #     - title: Installing the Dell Appliance
+ #       url: /appliance/hardware/installing-dell.html
+ #       output: web,appQs,instDell
       - title: Supported hardware
         url: /appliance/hardware/hardware-and-deployment.html
         output: web,appQs,instDell
@@ -1137,27 +1159,27 @@ entries:
       - title: Cloud overview
         url: /appliance/cloud.html
         output: web,appQs
-      - levelThreeTitle: AWS Installation
-        output: web,appQs,instAWS
+      - levelThreeTitle: AWS
+        output: web,appQs,instAWS,pdf
         levelThreeItems:
-        - title: Installing Amazon Web Services
-          url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS
+#        - title: Installing Amazon Web Services
+#          url: /appliance/aws/installing-aws.html
+#          output: web,appQs,instAWS,pdf
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
-          output: web,appQs,instAWS
-        - title: Set up AWS for ThoughtSpot
+          output: web,appQs,instAWS,pdf
+        - title: Set up ThoughtSpot in AWS
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs,instAWS
+          output: web,appQs,instAWS,pdf
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
           output: web,appQs,instAWS
       - levelThreeTitle: Azure Installation
         output: web,appQs,instAzure
         levelThreeItems:
-        - title: Installing Azure
-          url: /appliance/azure/installing-azure.html
-          output: web,appQs,instAzure
+ #       - title: Installing Azure
+ #         url: /appliance/azure/installing-azure.html
+ #         output: web,appQs,instAzure
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs,instAzure
@@ -1167,9 +1189,9 @@ entries:
       - levelThreeTitle: GCP Installation
         output: web,appQs, instGCP
         levelThreeItems:
-        - title: Installing GCP
-          url: /appliance/gcp/installing-gcp.html
-          output: web,appQs,instGCP
+  #      - title: Installing GCP
+  #        url: /appliance/gcp/installing-gcp.html
+  #        output: web,appQs,instGCP
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
           output: web,appQs,instGCP
@@ -1179,9 +1201,9 @@ entries:
     - levelTwoTitle: VMware Installation
       output: web,appQs,instVMware
       levelTwoItems:
-        - title: Installing VMware
-          url: /appliance/vmware/installing-vmware.html
-          output: web,appQs,instVMware
+  #      - title: Installing VMware
+  #        url: /appliance/vmware/installing-vmware.html
+  #        output: web,appQs,instVMware
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs,instVMware

@@ -1,30 +1,24 @@
 ---
 title: [About R in ThoughtSpot]
-summary: "You can run an R analysis on your data, using ThoughtSpot provided scripts, or custom scripts shared with your team. R visualizations can be shared as answers and pinboards."
-last_updated: tbd
+summary: "Analyze your data with R scripts that ship with ThoughtSpot, and build visualizations and Pinboards based on the analytical insights you obtained. You can also create custom R scripts, and share them with your team."
+last_updated: 11/22/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-R is a popular open source programming language for statistical computing,
-machine learning, and AI. ThoughtSpot makes R analysis available as a fully
-integrated feature in version 5.0
+R is a popular open source programming language for statistical computing, machine learning, and AI. ThoughtSpot makes R analysis available as a fully integrated feature.
+
+{% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}
 
 ## Using R in ThoughtSpot
 
-While the ability to run custom R scripts on ThoughtSpot data was available in
-previous releases through SpotIQ custom analysis, starting with version 5.0 users with R
-privileges can run R scripts directly on search results.
+Users with R privileges can run R scripts directly on search results.
 
-Analysts and data scientists proficient in R can create and share custom
-scripts.
+Analysts and data scientists who are proficient in R can create and share custom scripts.
 
-Users can leverage custom scripts and ThoughtSpot provided scripts, run
-pre-built R scripts on top of their search results, and share R visualizations
-as answers and pinboards.
+Users can leverage custom scripts and ThoughtSpot provided scripts, run pre-built R scripts on top of their search results, and share R visualizations as answers and pinboards.
 
-This topic explains how to use R in ThoughtSpot both from an end user and
-scripting perspective, but is not meant as an R primer.
+This topic explains how to use R in ThoughtSpot both from an end user and scripting perspective, but is not meant as an R primer.
 
 ## How to access R scripts
 

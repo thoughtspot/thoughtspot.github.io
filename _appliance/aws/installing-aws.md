@@ -28,7 +28,7 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 
 1. **Review configuration options** Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up AWS for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your instance.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
+3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot. 
 
 {: id="configure-nodes"}
 ## Configure Nodes
@@ -59,9 +59,14 @@ After creating the instance, you must configure the nodes. Follow the steps in t
 
 {: id="node-step-1"}
 ### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
+
+Log into your cluster with admin credentials from a terminal on a Mac, or a terminal emulator on Windows. 
+
+Ask your network administrator for admin credentials if you don't know them already.
+
 1. Run `ssh admin@<clusterIP>` or `ssh admin@<hostname>`.<br>
 Replace `clusterIP` or `hostname` with your specific network information.
+
 ```
 $ ssh admin@<clusterIP>
 ```
@@ -181,6 +186,7 @@ If you are using an s3 bucket for object storage, include the flag `--enable_clo
 ```
     $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage s3
 ```  
+
 3. Edit the output with your specific cluster information.<br>
 For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 

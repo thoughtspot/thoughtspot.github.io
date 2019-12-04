@@ -1,7 +1,7 @@
 ---
 title: [AWS configuration options]
 last_updated: 10/09/2019
-summary: "Your specific instances require specific configurations of memory, CPU, storage, and networking capacity."
+summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

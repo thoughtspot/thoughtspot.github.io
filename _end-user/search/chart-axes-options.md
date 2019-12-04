@@ -43,7 +43,7 @@ To manage the filters applied to the axis (in this example, _Total Sales_), foll
 
 1. Click the **Filters** option in the axis menu.
 
-  ![Change axis filter]({{ site.baseurl }}/images/edit-axis-filter.png "Change axis filter")
+   ![Change axis filter]({{ site.baseurl }}/images/edit-axis-filter.png "Change axis filter")
 
 2. In the window modal, click **+ add a condition**.
 

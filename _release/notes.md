@@ -18,12 +18,12 @@ fixed issues from the previous releases, and any known issues.
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
-<!-- ### Mobile
+### Mobile
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
-Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
-See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).-->
+See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
 ### Embrace for Snowflake and Amazon Redshift
 
@@ -36,14 +36,18 @@ ThoughtSpot now supports the following features for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### Monitor headlines
+### Monitor headlines 
 
-The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
+The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
+
+For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html)  
+
+ **Support for Monitor is in beta**.
 
 * To monitor headlines, click the **Follow** icon in the top right corner of the Pinboard.
   ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
 
-* The **SpotIQ Follow** interface lists all the headlines you follow, and the change from last run.
+* The **SpotIQ Follow** interface lists all the headlines you follow, and the changes from last run.
   ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
 
 * Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose. And you can change to table view, or to another chart type to better visualize your changing metric.
@@ -65,10 +69,10 @@ This release introduces a complete new approach that makes chart configuration m
 * <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
 * <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
 
-### Worksheet scriptability
+### Scriptable Worksheets
 You can now **Export** Worksheets by downloading them to a `*.yaml` file, make changes, and then **Update** the Worksheet from the changed file either to the same cluster, or to a new cluster.
 
-worksheet scriptability supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
+Scriptable Worksheets support metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
 
 See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html).
 
