@@ -1,10 +1,26 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [10/30/2019]
+last_updated: [12/4/2019]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+To install a ThoughtSpot cluster on AWS, complete these steps:
+
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#installation-prerequisites">Installation Prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#configure-nodes">Configure Nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-install">Install Cluster</a></td>
+  </tr>
+</table>
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
@@ -16,38 +32,74 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 
 {: id="configure-nodes"}
 ## Configure Nodes
-After creating the instance, you must configure the nodes.
+After creating the instance, you must configure the nodes. Follow the steps in this checklist.
 
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-1">Step 1: Log into your cluster</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-2">Step 2: Get a list of nodes to configure</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-3">Step 3: Configure the network of nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-4">Step 4: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-5">Step 5: Confirm node configuration</a></td>
+  </tr>
+</table>
+
+{: id="node-step-1"}
 ### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows.
-1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
-2. Enter your admin password.
-  * Ask your network administrator if you don't know the password.
-```
-    $ ssh admin@clusterIP
-```
 
+Log into your cluster with admin credentials from a terminal on a Mac, or a terminal emulator on Windows. 
+
+Ask your network administrator for admin credentials if you don't know them already.
+
+1. Run `ssh admin@<clusterIP>` or `ssh admin@<hostname>`.<br>
+Replace `clusterIP` or `hostname` with your specific network information.
+
+```
+$ ssh admin@<clusterIP>
+```
+2. Enter your admin password.<br>
+Ask your network administrator if you don't know the password.
+
+{: id="node-step-2"}
 ### Step 2: Get a list of nodes to configure
-Run the `tscli cluster get-config` command to get a list of the nodes to configure for the new cluster, and redirect it to the file `nodes.config`. You can find more information on this process in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
+Run the `tscli cluster get-config` command to get a list of the nodes to configure for the new cluster. Redirect it to the file `nodes.config`.<br>
+You can find more information on this process in the [`nodes.config` file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
     $ tscli cluster get-config |& tee nodes.config
 
+{: id="node-step-3"}
 ### Step 3: Configure the network of nodes
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
-2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
-  * If you have  additional nodes, complete each node within the nodes.config file in the same way.
+2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
+If you have additional nodes, complete each node within the nodes.config file in the same way.
 
-  Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
 
+{: id="node-step-4"}
 ### Step 4: Configure the nodes
 Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
-1. Disable `Firewalld` by running `sudo systemctl stop firewalld` in your terminal.
-  `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. When the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
-2. Run `$ cat nodes.config | tscli cluster set-config`.
-  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-error-recovery).
+1. Disable the `Firewalld` service by running `sudo systemctl stop firewalld` in your terminal.
+  `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. After the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
+2. Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-error-recovery).
 
 {: id="set-config-command"}
-#### Set-config
+`Set-config`
+
+After you run the node configuration command, your output appears similar to the following:
 ```
 $ sudo systemctl stop firewalld
 $ cat nodes.config | tscli cluster set-config
@@ -61,40 +113,11 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 ```
-#### Set-config error recovery
-If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
 
-{: id="node-scout-restart"}
-
-#### Restart node-scout service
-If you have this error, restart the node-scout:
-```
-Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
-Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
-Please retry or contact support.
-```
-Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
-
-    $ sudo systemctl restart node-scout
-
-The command output should no longer have a warning:
-```
-$ cat nodes.config | tscli cluster set-config
-
-Connecting to local node-scout  
-Setting up hostnames for all nodes  
-Setting up networking interfaces on all nodes  
-Setting up hosts file on all nodes  
-Setting up IPMI configuration  
-Setting up NTP Servers  
-Setting up Timezone  
-Done setting up ThoughtSpot
-```
-### Step 5: Confirm node configuration with the `get-config` command
-Run `tscli cluster get-config` in your terminal to confirm node configuration.
-
-{: id=confirm-node-config}
-#### Confirm node configuration
+{: id="node-step-5"}
+### Step 5: Confirm node configuration
+Use the `get-config` command to confirm node configuration.<br>
+Your output may look similar to the following:
 ```
 $ tscli cluster get-config
 
@@ -124,34 +147,60 @@ $ tscli cluster get-config
   }  
 }
 ```
+
 {: id="cluster-install"}
 ## Install Cluster
-Next, install the cluster using the release tarball (est. time 1 hour).
+Install the cluster using the release tarball. The estimated installation time is one hour. Follow the steps in this checklist.
 
-If you do not have a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-1">Step 1: Run the installer</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-2">Step 2: Check cluster health</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-3">Step 3: Finalize installation</a></td>
+  </tr>
+</table>
 
-{: id="run-installer"}
-### Step 1. Run the Installer  
-1. Copy the downloaded release tarball to `/home/admin` with the command `scp 0.0.tar.gz admin@hostname:/home/admin/file-name`. Replace '0.0' with your release number. Replace 'hostname' and 'file-name' with your specific hostname and the name of the tarball file.
+If you do not have a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release tarball.
+
+{: id="cluster-step-1"}
+### Step 1: Run the installer  
+1. Copy the downloaded release tarball to `/home/admin` using the following command:
 ```
-    $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
+    $ scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
 ```
-2. Run `tscli cluster create <release>`.
-  * If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3`.
+Note the following parameters:
+* `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.
+* `hostname` is your specific hostname.
+* `file-name` is the name of the tarball file on your local computer.
+
+2. Create the cluster<br>
+Run `tscli cluster create` to create the cluster.<br>
+If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3`.
 ```
-    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
+    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage s3
 ```  
-3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html), and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
-  The cluster installer automatically reboots all the nodes after the install. `Firewalld` automatically turns back on. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
-  Log into any node to check the current cluster status, using the command `tscli cluster status`.
+3. Edit the output with your specific cluster information.<br>
+For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
-### Step 2. Check Cluster Health
-Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/aws/installing-aws.html#check-cluster-health).
+  The cluster installer automatically reboots all the nodes after a successful install. The `firewalld` service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br>
+  Log into any node to check the current cluster status:
+  ```   
+    $ tscli cluster status
+  ```
 
-{: id="check-cluster-health"}
+{: id="cluster-step-2"}
+### Step 2: Check cluster health
+After the cluster installs, check its status using the `tscli cluster status` command.
 
-#### Cluster Status
+Your output may look similar to the following:
 ```
 $ tscli cluster status
 Cluster: RUNNING
@@ -179,9 +228,11 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 ```
-### Step 3. Finalize Installation
 
-After the cluster status changes to “Ready,” log into the ThoughtSpot application on your browser.
+{: id="cluster-step-3"}
+### Step 3: Finalize installation
+
+After the cluster status changes to `READY`, log into ThoughtSpot on your browser.
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -189,7 +240,7 @@ Follow these steps:
     ```
     https:<IP-address>
     ```
-3. If you don't have a security certificate for ThoughtSpot, you must bypass the security warning to proceed:
+3. If you don't have a security certificate for ThoughtSpot, you must bypass the security warning:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot login page appears.
@@ -199,8 +250,27 @@ Follow these steps:
 {: id="ts-login"}
 ![ThoughtSpot's login window]({{ site.baseurl }}/images/ts-login-page.png "Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option.")
 
+{: id="error-recovery"}
+## Error recovery
+{: id="set-config-error-recovery"}
+### `Set-config` error recovery
+If you get a warning about node detection when you run [the `set-config` command]({{ site.baseurl }}#set-config-command), restart the node-scout service.
+
+Your error may look something like the following:
+```
+Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
+Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
+Please retry or contact support.
+```
+Restart the node-scout service with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
+
+    $ sudo systemctl restart node-scout
+    $ cat nodes.config | tscli cluster set-config
+
+The command output should no longer have a warning.
+
 ## References
-Use these references for successful installation and administration of ThoughtSpot.
+Use these references for successful installation and administration of ThoughtSpot:
 
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
