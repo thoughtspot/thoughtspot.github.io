@@ -1,6 +1,6 @@
 ---
 title: ["Understand groups and privileges"]
-
+keywords: user,group,privilege,SAML,authenticate,authentication
 last_updated: tbd
 summary: "Creating groups and assigning users to them makes privilege management easier."
 sidebar: mydoc_sidebar
@@ -63,6 +63,7 @@ Permissions to see and edit tables, worksheets, and pinboards are set when you
 share them with users and groups, as described in the topic [Data security]({{
 site.baseurl }}/admin/data-security/sharing-security-overview.html#).
 
+The following table shows the intersection of user privilege and ability:
 {% include content/security-matrix.md %}
 
 ## Related information
