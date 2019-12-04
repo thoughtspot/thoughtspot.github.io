@@ -1,7 +1,7 @@
 ---
-title: [Installing the Dell appliance]
-summary: "Learn how to install the Dell appliance."
-last_updated: 11/27/2019
+title: [Installing the ThoughtSpot Dell appliance]
+summary: "Learn how to install the ThoughtSpot Dell appliance."
+last_updated: 11/20/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

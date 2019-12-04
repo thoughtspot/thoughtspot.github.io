@@ -3,7 +3,7 @@
   "books": [
     {
       "filename": "ThoughtSpot_Administration_Guide",
-      "title": "Administration Guide",
+      "title": "ThoughtSpot Administration Guide",
       "codes": [
         "admBk",
         "refGd",
@@ -12,35 +12,35 @@
     },
     {
       "filename": "ThoughtSpot_Application_Integration_Guide",
-      "title": "Application Integration Guide",
+      "title": "ThoughtSpot Application Integration Guide",
       "codes": [
         "apgBk"
       ]
     },
     {
       "filename": "ThoughtSpot_Data_Connect_Guide",
-      "title": "Data Connect Guide",
+      "title": "ThoughtSpot Data Connect Guide",
       "codes": [
         "cngBk"
       ]
     },
     {
       "filename": "ThoughtSpot_Data_Integration_Guide",
-      "title": "Data Integration Guide",
+      "title": "ThoughtSpot Data Integration Guide",
       "codes": [
         "digBk"
       ]
     },
     {
       "filename": "ThoughtSpot_Disaster_Recovery_Guide",
-      "title": "Disaster Recovery Guide",
+      "title": "ThoughtSpot Disaster Recovery Guide",
       "codes": [
         "drgBk"
       ]
     },
     {
       "filename": "ThoughtSpot_User_Guide",
-      "title": "Users Guide",
+      "title": "ThoughtSpot User Guide",
       "codes": [
         "ugBk",
         "refGd"
@@ -48,14 +48,14 @@
     },
     {
       "filename": "ThoughtSpot_Node_Setup_Guide",
-      "title": "Node Setup Guide",
+      "title": "ThoughtSpot Node Setup Guide",
       "codes": [
         "appQs"
       ]
     },
     {
       "filename": "ThoughtSpot_AWS_Installation_Guide",
-      "title": "AWS Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for AWS",
       "codes": [
         "instAWS"
       ]
@@ -87,7 +87,7 @@
     },
     {
       "filename": "ThoughtSpot_Reference_Guide",
-      "title": "Reference Guide",
+      "title": "ThoughtSpot Reference Guide",
       "codes": [
         "refGd",
         "refGdAdmin"
@@ -95,7 +95,7 @@
     },
     {
       "filename": "ThoughtSpot_Release_Notes",
-      "title": "Release Notes",
+      "title": "ThoughtSpot Release Notes",
       "codes": [
         "rnotes"
       ]
