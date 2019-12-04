@@ -1,5 +1,5 @@
 ---
-title: [Set up GCP for ThoughtSpot]
+title: [Set up ThoughtSpot in GCP]
 
 last_updated: tbd
 sidebar: mydoc_sidebar
