@@ -1,5 +1,5 @@
 ---
-title: [Set up AWS for ThoughtSpot]
+title: [Set up ThoughtSpot in AWS]
 last_updated: 10/10/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
@@ -26,7 +26,7 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
-The ThoughtSpot AMI has specific applications on a CentOS base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisiones the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
+The ThoughtSpot AMI has specific applications on a CentOS base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
 {: id="prerequisites"}
 ## Prerequisites
@@ -58,13 +58,13 @@ To install and launch ThoughtSpot, you must have the following:
 - Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for supported instance types.
 - Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
 - Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
-- Number of EC2 instances needed: Based on the datasets, this number will vary. Please check [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
+- Number of EC2 instances needed: Based on the datasets, this number varies. Please check [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
 - Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2).
 
 {: id="s3-bucket-setup"}
 ## Setting up your Amazon S3 bucket
 
-If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the S3 storage option.
+If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size can benefit from the S3 storage option.
 
 To set up an Amazon S3 bucket in AWS, do the following:
 
@@ -78,12 +78,12 @@ To set up an Amazon S3 bucket in AWS, do the following:
 
 5. On the **Properties** page, click **Next**.
 
-6. On the Configure options page, make sure **Block *all* public access** is selected and click **Next**.
+6. On the Configure options page, make sure **Block *all* public access** is selected, and click **Next**.
 
 7. On the Set permissions page, click **Create bucket**.
 
 {: id="encrypt"}
-## Encrypting your data at rest on Amazon EBS or S3 in AWS
+## Encrypting your data at rest
 
 ThoughtSpot makes use of EBS for the data volumes to store persistent data (in the EBS deployment model) and the boot volume (in the EBS and S3 deployment models). ThoughtSpot recommends that you encrypt your data volumes prior to setting up your ThoughtSpot cluster.
 If you are using the S3 persistent storage model, you can encrypt the S3 buckets using SSE-S3. ThoughtSpot does not currently support AWS KMS encryption for AWS S3.  
@@ -93,7 +93,7 @@ For more information on encryption supported with AWS:
 - For S3, see [Amazon S3 Default Encryption for S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html){:target="_blank"} in Amazon's AWS documentation.
 
 {: id="aws-ts-setup-cluster"}
-## Setting up your ThoughtSpot cluster in AWS
+## Setting up your ThoughtSpot cluster
 
 To set up a ThoughtSpot cluster in AWS, do the following:
 
@@ -116,14 +116,16 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 6. Click **Next: Configure Instance Details**.
 
 7. Configure the instances by choosing the number of EC2 instances you need.
-   The instances must be on the same VPC and subnetwork. ThoughtSpot will set up the instances to be in the same ThoughtSpot cluster.  
+   The instances must be on the same VPC and subnetwork. ThoughtSpot sets up the instances to be in the same ThoughtSpot cluster.  
 
-   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. If you want to restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket, and select it instead. For details on that, click **Create new IAM role**.
+   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region.
+
+   To restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket, and select it instead. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
    Add the required storage based on the storage requirements of the instance type you have selected, and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
 
-9. When you are done modifying the storage size, Click **Next: Add Tags**.
+9. When you are done modifying the storage size, click **Next: Add Tags**.
 
 10. Set a name for tagging your instances and click **Next: Configure Security Group**.
 
@@ -137,9 +139,9 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 13.  Choose a key pair.
       A key pair consists of a public and private key used to encrypt and decrypt login information. If you don’t have a key pair, you must create one, otherwise you won’t be able to SSH into the AWS instance later on.
 
-14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
+14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it appears on the EC2 console.
 
-## Prepare the VMs (ThoughtSpot Systems Reliability Team) 
+## Prepare the VMs (ThoughtSpot Systems Reliability Team)
 
 {% include important.html content="This procedure is typically done by a
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
@@ -155,7 +157,7 @@ each VM through SSH as user "admin", and complete the following preparation step
 
 ## Launch the cluster
 
-Upload the TS tarball to one of the VMs and proceed with the normal
+Upload the TS tarball to one of the VMs, and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
 
 If you are going to use S3 as your persistent storage, you must enable it when running this command, using the **enable_cloud_storage** flag. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a`

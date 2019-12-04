@@ -1,5 +1,5 @@
 ---
-title: [Set up Azure for ThoughtSpot]
+title: [Set up ThoughtSpot in Azure]
 last_updated: 10/25/20919
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
@@ -27,7 +27,7 @@ Due to security restrictions, the ThoughtSpot Virtual Machine does not have defa
 administrator users. When you are ready to obtain the password, contact
 ThoughtSpot Support.
 
-## Set up ThoughtSpot on Azure
+## Set up ThoughtSpot in Azure
 
 Follow these steps to provision and set up the VMs and launch ThoughtSpot.
 
