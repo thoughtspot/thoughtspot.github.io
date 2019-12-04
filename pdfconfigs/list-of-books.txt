@@ -8,3 +8,7 @@ cngBk - Data Connect
 ugBk - End User guide
 admBk - Admin guide
 instAWS - AWS Installation
+instAzure - Azure Installation
+instGCP - GCP Installation
+instDell - Dell Installation
+isntVMware - VMware Installation
