@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/users-groups/about-users-groups.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-11-11T16:44:14-08:00" />
+<meta property="article:published_time" content="2019-12-03T22:40:20-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/users-groups/about-users-groups.html"},"url":"https://docs.thoughtspot.com/5.2/admin/users-groups/about-users-groups.html","headline":"[“Understand groups and privileges”]","dateModified":"2019-11-11T16:44:14-08:00","datePublished":"2019-11-11T16:44:14-08:00","description":"Before people can log in and use ThoughtSpot, you need to create a username, a password, and a membership in one or more groups for them.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/users-groups/about-users-groups.html"},"url":"https://docs.thoughtspot.com/5.2/admin/users-groups/about-users-groups.html","headline":"[“Understand groups and privileges”]","dateModified":"2019-12-03T22:40:20-08:00","datePublished":"2019-12-03T22:40:20-08:00","description":"Before people can log in and use ThoughtSpot, you need to create a username, a password, and a membership in one or more groups for them.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3259,15 +3259,12 @@ automatically have the privileges of the parent group.</p>
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      td&gt;Can create worksheets and views.<br />Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.&lt;/td&gt;
+      <td>Can create worksheets and views.<br />Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
+    </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
-<!--    <tr>
-      <td><strong>Can schedule pinboards</strong></td>
-      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
-    </tr> -->
     <tr>
       <td><strong>Can invoke Custom R Analysis</strong></td>
       <td>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</td>
@@ -3277,38 +3274,41 @@ automatically have the privileges of the parent group.</p>
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
     </tr>
     <tr>
+      <td><strong>Has SpotIQ privilege</strong></td>
+      <td>Can use the SpotIQ feature.<br />If this privilege is not enabled for the user, they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
+    </tr>
+    <tr>
       <td><strong>Can administer and bypass RLS</strong></td>
-      <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
+      <td><p>Users in groups with this privilege (directly or through group inheritance):</p>
 <ul>      <li>Are exempt from row-level security (RLS) rules.</li>
       <li>Can add/edit/delete existing RLS rules.</li>
       <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
 
       <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege <b>Can administer ThoughtSpot</b> can grant this privilege.</p> </td>
     </tr>
-  &lt;/tbody&gt;
-&lt;/table&gt;
+  </tbody>
+</table>
 
+<p> </p>
 
-&nbsp;
+<p>Typically, the <strong>ALL</strong> group has a common set of privileges applies such as the
+<strong>Can upload user data</strong> and/or <strong>Can download data</strong> privileges.</p>
 
-Typically, the **ALL** group has a common set of privileges applies such as the
-**Can upload user data** and/or **Can download data** privileges.
-
-Privileges are additive, meaning that if a user belongs to more than one group,
+<p>Privileges are additive, meaning that if a user belongs to more than one group,
 they will have the highest level of privileges from among the groups they are a
 member of. They are also inherited from the parent, so that a sub-group gets all
-the same privileges of its parent, all the way up the group hierarchy.
+the same privileges of its parent, all the way up the group hierarchy.</p>
 
-If you add the privilege **Has administration privileges** to a group, note that
+<p>If you add the privilege <strong>Has administration privileges</strong> to a group, note that
 all users in that group will be able to see all the data in ThoughtSpot.
-Administrators can see all data sources, and [Row level security](/5.2/admin/data-security/about-row-security.html#) does not apply to
-them.
+Administrators can see all data sources, and <a href="/5.2/admin/data-security/about-row-security.html#">Row level security</a> does not apply to
+them.</p>
 
-Permissions to see and edit tables, worksheets, and pinboards are set when you
-share them with users and groups, as described in the topic [Data security](/5.2/admin/data-security/sharing-security-overview.html#).
+<p>Permissions to see and edit tables, worksheets, and pinboards are set when you
+share them with users and groups, as described in the topic <a href="/5.2/admin/data-security/sharing-security-overview.html#">Data security</a>.</p>
 
+<p>The following table shows the intersection of user privilege and ability:</p>
 <table id="matrix" class="wide_table" style="font-size:10px;">
-  <caption>The following table shows the intersection of user privilege and ability:</caption>
    <colgroup>
       <col style="width:36%;" />
       <col style="width:4%;" />
@@ -3510,7 +3510,7 @@ share them with users and groups, as described in the topic [Data security](/5.2
       </tr>
       <tr>
          <td>
-            <div>Can Auto-Analyze (SpotIQ privilege)</div>
+            <div>Has SpotIQ privilege</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -3585,12 +3585,12 @@ share them with users and groups, as described in the topic [Data security](/5.2
    </tbody>
 </table>
 
+<h2 id="related-information">Related information</h2>
 
-## Related information
-
--   [Add a group and set security privileges](/5.2/admin/users-groups/add-group.html)  
--   [Add a user](/5.2/admin/users-groups/add-user.html)  
-</tr></tbody></table>
+<ul>
+  <li><a href="/5.2/admin/users-groups/add-group.html">Add a group and set security privileges</a></li>
+  <li><a href="/5.2/admin/users-groups/add-user.html">Add a user</a></li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
@@ -3617,7 +3617,7 @@ share them with users and groups, as described in the topic [Data security](/5.2
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback&body=I have feedback for this page (URL)%20%3A%0D%0A%0D%0A%0D%0AMy%20Feedback%20%3A%0D%0A%0D%0A%0D%0A">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Nov 11, 2019 <br />
+        Generated: Dec 3, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
