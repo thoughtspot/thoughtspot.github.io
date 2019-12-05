@@ -9,9 +9,9 @@ ThoughtSpot can currently be deployed in the following cloud provider environmen
 
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
 - [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
-- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html) 
+- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 
-The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.  
+The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses. 
 
 | | AWS | Azure | GCP |
 | --- | --- | --- | --- |
