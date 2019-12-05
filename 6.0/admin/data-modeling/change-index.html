@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Manage suggestion indexing”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Manage suggestion indexing”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/change-index.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Manage suggestion indexing”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-index.html"},"url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-index.html","headline":"[“Manage suggestion indexing”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Manage suggestion indexing”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-index.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-index.html"},"description":"When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3327,15 +3328,15 @@ impact the dynamically calculated <em>usage based ranking (UBR)</em>,</p>
 
 <h2 id="example-of-search-suggestion-behavior">Example of Search suggestion behavior</h2>
 
-<p>The following example illustrates how searching for <code class="highlighter-rouge">promotion_last_name t</code> causes
-the system to suggest several ways of completing the <code class="highlighter-rouge">t</code> in the search:</p>
+<p>The following example illustrates how searching for <code class="language-plaintext highlighter-rouge">promotion_last_name t</code> causes
+the system to suggest several ways of completing the <code class="language-plaintext highlighter-rouge">t</code> in the search:</p>
 
 <p><img src="/6.0/images/index-type.png" alt="" title="Suggestions" /></p>
 
-<p>The system is suggesting the synonym <code class="highlighter-rouge">type</code> (callout A) for a column in the
-<code class="highlighter-rouge">Promotion</code> table.  It is also suggesting a value of <code class="highlighter-rouge">theil</code> (callout B) for the
-<code class="highlighter-rouge">Promotion_Last Name</code> column. If you look in the <strong>Data &gt; Tables</strong> page, you can
-see that there is a <code class="highlighter-rouge">type</code> synonym for the <code class="highlighter-rouge">Promotion_Type</code> column which is using
+<p>The system is suggesting the synonym <code class="language-plaintext highlighter-rouge">type</code> (callout A) for a column in the
+<code class="language-plaintext highlighter-rouge">Promotion</code> table.  It is also suggesting a value of <code class="language-plaintext highlighter-rouge">theil</code> (callout B) for the
+<code class="language-plaintext highlighter-rouge">Promotion_Last Name</code> column. If you look in the <strong>Data &gt; Tables</strong> page, you can
+see that there is a <code class="language-plaintext highlighter-rouge">type</code> synonym for the <code class="language-plaintext highlighter-rouge">Promotion_Type</code> column which is using
 default indexing.</p>
 
 <p><img src="/6.0/images/index-row.png" alt="" title="Table Row" /></p>
@@ -3356,20 +3357,20 @@ and tables. You can override this default behavior on a per-column basis.</p>
 <ul>
   <li>
     <p>With two exceptions, the system indexes all columns using their <strong>COLUMN NAME</strong>
-value. The exceptions are columns with <strong>COLUMN TYPE</strong> of <code class="highlighter-rouge">MEASURE</code> and columns
-with <strong>DATA TYPE</strong> of <code class="highlighter-rouge">DATE</code>.</p>
+value. The exceptions are columns with <strong>COLUMN TYPE</strong> of <code class="language-plaintext highlighter-rouge">MEASURE</code> and columns
+with <strong>DATA TYPE</strong> of <code class="language-plaintext highlighter-rouge">DATE</code>.</p>
   </li>
   <li>
     <p>Columns that contain data values with large amount of free-form strings, that is,
-a length is greater than 50 words, are indexed as <code class="highlighter-rouge">PREFIX_ONLY</code> by default.</p>
+a length is greater than 50 words, are indexed as <code class="language-plaintext highlighter-rouge">PREFIX_ONLY</code> by default.</p>
 
     <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If a column has a very large free text
-values, ThoughtSpot recommends you keep <code class="highlighter-rouge">DEFAULT</code> or set <code class="highlighter-rouge">DONT_INDEX</code>. Other
+values, ThoughtSpot recommends you keep <code class="language-plaintext highlighter-rouge">DEFAULT</code> or set <code class="language-plaintext highlighter-rouge">DONT_INDEX</code>. Other
 settings indexing on these values may generate confusing suggestions.</div>
   </li>
   <li>
-    <p>Short strings (like a <code class="highlighter-rouge">firstname</code> column) are indexed using
-<code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> by default, which indexes both prefix and substrings.</p>
+    <p>Short strings (like a <code class="language-plaintext highlighter-rouge">firstname</code> column) are indexed using
+<code class="language-plaintext highlighter-rouge">PREFIX_AND_SUBSTRING</code> by default, which indexes both prefix and substrings.</p>
   </li>
   <li>
     <p>If a column is using has a <em>cardinality</em> – the number of unique column values –  greater
@@ -3439,8 +3440,8 @@ or in the <strong>Index</strong> value in the modeling file.</p>
   </tbody>
 </table>
 
-<p>Consider a column in which there are four values <code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Thought</code>,
-<code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code>. If you search for <code class="highlighter-rouge">sp</code>, depending on the setting for
+<p>Consider a column in which there are four values <code class="language-plaintext highlighter-rouge">ThoughtSpot</code>, <code class="language-plaintext highlighter-rouge">Thought</code>,
+<code class="language-plaintext highlighter-rouge">Spot</code> and <code class="language-plaintext highlighter-rouge">Thought Spot</code>. If you search for <code class="language-plaintext highlighter-rouge">sp</code>, depending on the setting for
 indexing, the column value search result suggestions will vary:</p>
 
 <table>
@@ -3452,24 +3453,24 @@ indexing, the column value search result suggestions will vary:</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">DEFAULT</code></td>
-      <td><code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DEFAULT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ThoughtSpot</code>, <code class="language-plaintext highlighter-rouge">Spot</code> and <code class="language-plaintext highlighter-rouge">Thought Spot</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">DONT_INDEX</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DONT_INDEX</code></td>
       <td>No suggestions.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
-      <td><code class="highlighter-rouge">ThoughtSpot</code>, <code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+      <td><code class="language-plaintext highlighter-rouge">PREFIX_AND_SUBSTRING</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ThoughtSpot</code>, <code class="language-plaintext highlighter-rouge">Spot</code> and <code class="language-plaintext highlighter-rouge">Thought Spot</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">PREFIX_ONLY</code></td>
-      <td><code class="highlighter-rouge">Spot</code></td>
+      <td><code class="language-plaintext highlighter-rouge">PREFIX_ONLY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spot</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
-      <td><code class="highlighter-rouge">Spot</code> and <code class="highlighter-rouge">Thought Spot</code></td>
+      <td><code class="language-plaintext highlighter-rouge">PREFIX_AND_WORD_SUBSTRING</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spot</code> and <code class="language-plaintext highlighter-rouge">Thought Spot</code></td>
     </tr>
   </tbody>
 </table>
@@ -3493,17 +3494,17 @@ values appear in the search dropdown.</p>
 
 <p><img src="/6.0/images/priority-effect.png" alt="" /></p>
 
-<p>By default, the <strong>INDEX PRIORITY</strong> value is set to <code class="highlighter-rouge">1</code> for all columns. You can
+<p>By default, the <strong>INDEX PRIORITY</strong> value is set to <code class="language-plaintext highlighter-rouge">1</code> for all columns. You can
 push a column up in the order (increase the rank) by increasing its <strong>INDEX
-PRIORITY</strong> value. A higher value (like <code class="highlighter-rouge">2</code>) will cause the corresponding column
+PRIORITY</strong> value. A higher value (like <code class="language-plaintext highlighter-rouge">2</code>) will cause the corresponding column
 and its values to appear higher up in the search dropdown than columns with
-lower value (like <code class="highlighter-rouge">1</code>).</p>
+lower value (like <code class="language-plaintext highlighter-rouge">1</code>).</p>
 
 <p><img src="/6.0/images/set-priority.png" alt="" /></p>
 
 <p>You should only use numbers between 1-10 in the <strong>INDEX PRIORITY</strong> field.Use a
-value between <code class="highlighter-rouge">8-10</code> for important columns to improve their search ranking. Use
-<code class="highlighter-rouge">1-3</code> for low priority columns.</p>
+value between <code class="language-plaintext highlighter-rouge">8-10</code> for important columns to improve their search ranking. Use
+<code class="language-plaintext highlighter-rouge">1-3</code> for low priority columns.</p>
 
 <p>To change a value in the application UI:</p>
 

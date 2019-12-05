@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Sync users and groups from LDAP”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Sync users and groups from LDAP”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Before synchronizing users and groups, you need this information:" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/sync-users-and-groups-from-ldap.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Sync users and groups from LDAP”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/sync-users-and-groups-from-ldap.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/sync-users-and-groups-from-ldap.html","headline":"[“Sync users and groups from LDAP”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Before synchronizing users and groups, you need this information:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Sync users and groups from LDAP”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/sync-users-and-groups-from-ldap.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/sync-users-and-groups-from-ldap.html"},"description":"Before synchronizing users and groups, you need this information:","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3319,24 +3320,24 @@ $('#toc').on('click', 'a', function() {
   <p>Before synchronizing users and groups, you need this information:</p>
 
 <ul>
-  <li>IP address and port of the server where your ThoughtSpot instance is running. This hostport is needed in the following format <code class="highlighter-rouge">http(s)://&lt;host&gt;:&lt;port&gt;</code> or <code class="highlighter-rouge">http(s)://&lt;domain&gt;</code>.</li>
+  <li>IP address and port of the server where your ThoughtSpot instance is running. This hostport is needed in the following format <code class="language-plaintext highlighter-rouge">http(s)://&lt;host&gt;:&lt;port&gt;</code> or <code class="language-plaintext highlighter-rouge">http(s)://&lt;domain&gt;</code>.</li>
   <li>Administrator login username and password for your ThoughtSpot instance.</li>
   <li>
     <p>URL of the LDAP server, or hostport.</p>
 
-    <p>For example, <code class="highlighter-rouge">ldap://192.168.2.48:389</code></p>
+    <p>For example, <code class="language-plaintext highlighter-rouge">ldap://192.168.2.48:389</code></p>
   </li>
   <li>
     <p>Login username and password for the LDAP system.</p>
 
-    <p>An example username would be <code class="highlighter-rouge">moo_100@ldap.thoughtspot.com</code></p>
+    <p>An example username would be <code class="language-plaintext highlighter-rouge">moo_100@ldap.thoughtspot.com</code></p>
   </li>
   <li>
     <p>Distinguished Name (DN) for the base to start searching for users in the LDAP system.</p>
 
-    <p>For example, <code class="highlighter-rouge">DC=ldap,DC=thoughtspot,DC=com</code></p>
+    <p>For example, <code class="language-plaintext highlighter-rouge">DC=ldap,DC=thoughtspot,DC=com</code></p>
   </li>
-  <li>Location of the Python synchronization script, in case you want to modify it or create your own: <code class="highlighter-rouge">/usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py</code></li>
+  <li>Location of the Python synchronization script, in case you want to modify it or create your own: <code class="language-plaintext highlighter-rouge">/usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py</code></li>
 </ul>
 
 <p>There are two ways for you to fetch users and groups from LDAP and populate them
@@ -3354,13 +3355,13 @@ into your ThoughtSpot system:</p>
   <li>
     <p>Run the command to start the script:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python syncUsersAndGroups.py interactive
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python syncUsersAndGroups.py interactive
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Answer the prompts using the information you collected above. For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Complete URL of TS server in format "http(s)://&lt;host&gt;:&lt;port&gt;": http://10.77.145.24:8088
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Complete URL of TS server in format "http(s)://&lt;host&gt;:&lt;port&gt;": http://10.77.145.24:8088
  Disable SSL authentication to TS server (y/n): y
  Login username for ThoughtSpot system: admin
  Login password for ThoughtSpot system: 12345
@@ -3376,12 +3377,12 @@ into your ThoughtSpot system:</p>
  2:tree Searching of all entries at all levels under and including the specified base DN: 2
 </code></pre></div>    </div>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Filter string to apply the search to: (|(CN=TestGroupAlpha)(CN=TestGroupBeta))
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Filter string to apply the search to: (|(CN=TestGroupAlpha)(CN=TestGroupBeta))
 </code></pre></div>    </div>
 
-    <p>Answering this prompt is optional. If left blank, the default value of <code class="highlighter-rouge">'(CN=*)'</code>will be used.</p>
+    <p>Answering this prompt is optional. If left blank, the default value of <code class="language-plaintext highlighter-rouge">'(CN=*)'</code>will be used.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Apply sync recursively, i.e. Iterates through group members and creates member groups, users and relationships in a recursive way. (y/n): n
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Apply sync recursively, i.e. Iterates through group members and creates member groups, users and relationships in a recursive way. (y/n): n
 </code></pre></div>    </div>
 
     <p>This prompt is asking if you would like to include group members even if they do not belong to the current sub tree that is being synced.</p>
@@ -3391,7 +3392,7 @@ into your ThoughtSpot system:</p>
 
     <p>Issue the Python script commands, supplying all this information, following this format example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python syncUsersAndGroups.py script \
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python syncUsersAndGroups.py script \
  –-ts_hostport &lt;ts_hostport&gt; \
  --disable_ssl \
  --ts_uname &lt;ts_username&gt; \
@@ -3410,9 +3411,9 @@ into your ThoughtSpot system:</p>
   </li>
 </ol>
 
-<h3 id="syncusersandgroupspy-command-line-switches"><code class="highlighter-rouge">syncUsersAndGroups.py</code> command-line switches</h3>
+<h3 id="syncusersandgroupspy-command-line-switches"><code class="language-plaintext highlighter-rouge">syncUsersAndGroups.py</code> command-line switches</h3>
 
-<p>The following table provides a description of each command-line switch available for the <code class="highlighter-rouge">syncUsersAndGroups</code> python script.</p>
+<p>The following table provides a description of each command-line switch available for the <code class="language-plaintext highlighter-rouge">syncUsersAndGroups</code> python script.</p>
 
 <table width="100%" border="0">
   <col width="260" />

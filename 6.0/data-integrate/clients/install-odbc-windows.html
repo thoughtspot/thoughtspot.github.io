@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Install the ODBC driver on Windows”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Install the ODBC driver on Windows”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Windows workstation." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/clients/install-odbc-windows.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Install the ODBC driver on Windows”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/install-odbc-windows.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/install-odbc-windows.html","headline":"[“Install the ODBC driver on Windows”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Windows workstation.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Install the ODBC driver on Windows”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/install-odbc-windows.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/install-odbc-windows.html"},"description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Windows workstation.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3326,8 +3327,8 @@ the same machine where you plan to run your ETL activities.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>These instructions include directions to use the <code class="highlighter-rouge">ssh</code> command. Make sure your
-Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making <code class="highlighter-rouge">ssh</code>
+<p>These instructions include directions to use the <code class="language-plaintext highlighter-rouge">ssh</code> command. Make sure your
+Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making <code class="language-plaintext highlighter-rouge">ssh</code>
 connections to your ThoughtSpot server.</p>
 
 <p>The ODBC driver for Windows requires Visual C++ Redistributable for Visual
@@ -3348,7 +3349,7 @@ it isn’t already installed.</p>
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
+  <li>SSH as <code class="language-plaintext highlighter-rouge">admin</code> or the <code class="language-plaintext highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -3359,7 +3360,7 @@ intend to connect your server to.</p>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
   <li>Configure the ThoughtSpot firewall to allow connections from your ETL client, by running the following command on any ThoughtSpot node:
-<code class="highlighter-rouge">tscli firewall open-ports --ports 12345</code></li>
+<code class="language-plaintext highlighter-rouge">tscli firewall open-ports --ports 12345</code></li>
   <li>Exit or close the shell.</li>
 </ol>
 
@@ -3485,15 +3486,15 @@ privileges on the application.</p>
       </thead>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">SCHEMA</code></td>
-          <td><code class="highlighter-rouge">falcon_default_schema</code> is the default</td>
+          <td><code class="language-plaintext highlighter-rouge">SCHEMA</code></td>
+          <td><code class="language-plaintext highlighter-rouge">falcon_default_schema</code> is the default</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">UID</code></td>
+          <td><code class="language-plaintext highlighter-rouge">UID</code></td>
           <td>The username of a user with data management privilege.</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">PWD</code></td>
+          <td><code class="language-plaintext highlighter-rouge">PWD</code></td>
           <td>The password for the username you specify.</td>
         </tr>
       </tbody>
@@ -3505,7 +3506,7 @@ privileges on the application.</p>
  schema is not present), the ODBC driver returns an error that states that the schema
  could not be found.</p>
 
-    <p>Similarly, adding the <code class="highlighter-rouge">UID</code> and <code class="highlighter-rouge">PWD</code> properties are not required. If you
+    <p>Similarly, adding the <code class="language-plaintext highlighter-rouge">UID</code> and <code class="language-plaintext highlighter-rouge">PWD</code> properties are not required. If you
  don’t add them, you are prompted to supply them each time you connect.</p>
 
     <p>When you are done, your options should look similar to the following:</p>

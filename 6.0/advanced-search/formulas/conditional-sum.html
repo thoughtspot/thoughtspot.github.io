@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Formula operators”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Formula operators”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Formula operators allow you to apply if/then/else conditions in your formulas. You can leverage operators in your formulas to have them return true, false, or a predetermined value." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/advanced-search/formulas/conditional-sum.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Formula operators”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/conditional-sum.html"},"url":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/conditional-sum.html","headline":"[“Formula operators”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Formula operators allow you to apply if/then/else conditions in your formulas. You can leverage operators in your formulas to have them return true, false, or a predetermined value.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Formula operators”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/conditional-sum.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/conditional-sum.html"},"description":"Formula operators allow you to apply if/then/else conditions in your formulas. You can leverage operators in your formulas to have them return true, false, or a predetermined value.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3314,7 +3315,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Formula operators allow you to apply <code class="highlighter-rouge">if</code>/<code class="highlighter-rouge">then</code>/<code class="highlighter-rouge">else</code> conditions in your
+  <p>Formula operators allow you to apply <code class="language-plaintext highlighter-rouge">if</code>/<code class="language-plaintext highlighter-rouge">then</code>/<code class="language-plaintext highlighter-rouge">else</code> conditions in your
 formulas. You can leverage operators in your formulas to have them return true,
 false, or a predetermined value.</p>
 
@@ -3379,7 +3380,7 @@ total revenue for a product by region.</p>
 
 <p>Conditional sum formulas follow this syntax: if (some condition) then (measure)
 else 0. You can use this syntax to limit your search in cases when you don’t
-want to add a column filter. For example: <code class="highlighter-rouge">if ( product = shoes ) then revenue
+want to add a column filter. For example: <code class="language-plaintext highlighter-rouge">if ( product = shoes ) then revenue
 else 0</code></p>
 
 <p>The following example shows you how to figure out the number of customers who
@@ -3390,24 +3391,24 @@ out the revenue generated by both products.</p>
   <li>
     <p>Create the following formula in the Formula Builder:</p>
 
-    <p><code class="highlighter-rouge">ipadcount = sum ( if ( product = 'ipad' ) then 1 else 0 ) &gt; 0</code></p>
+    <p><code class="language-plaintext highlighter-rouge">ipadcount = sum ( if ( product = 'ipad' ) then 1 else 0 ) &gt; 0</code></p>
 
     <p>This formula will provide you with the number of ipads that were bought.</p>
   </li>
   <li>
     <p>You can then create another formula that looks like this:</p>
 
-    <p><code class="highlighter-rouge">galaxycount = sum ( if ( product = 'galaxy' then 1 else 0 ) &gt; 0</code></p>
+    <p><code class="language-plaintext highlighter-rouge">galaxycount = sum ( if ( product = 'galaxy' then 1 else 0 ) &gt; 0</code></p>
 
     <p>And this formula will provide you with the number of galaxys that were bought.</p>
   </li>
   <li>
     <p>Using <a href="/6.0/complex-search/about-nested-formulas.html#">nested formulas</a>, you can combine these two formulas.</p>
 
-    <p>For example: <code class="highlighter-rouge">f1 = ipadcount + galaxycount</code></p>
+    <p>For example: <code class="language-plaintext highlighter-rouge">f1 = ipadcount + galaxycount</code></p>
   </li>
   <li>
-    <p>Now, you can search using the <code class="highlighter-rouge">f1</code> formula to find out the revenue generated by both products.</p>
+    <p>Now, you can search using the <code class="language-plaintext highlighter-rouge">f1</code> formula to find out the revenue generated by both products.</p>
   </li>
 </ol>
 

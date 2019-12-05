@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Encryption of data in transit within a cluster”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Encryption of data in transit within a cluster”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Overview" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-security/encryption-of-data.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Encryption of data in transit within a cluster”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-security/encryption-of-data.html"},"url":"https://docs.thoughtspot.com/6.0/admin/data-security/encryption-of-data.html","headline":"[“Encryption of data in transit within a cluster”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Overview","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Encryption of data in transit within a cluster”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-security/encryption-of-data.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-security/encryption-of-data.html"},"description":"Overview","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3337,26 +3338,26 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li><strong>Enabling IPSec</strong>: Run following command on any ThoughtSpot node after cluster has been configured and right built has been deployed:
-<code class="highlighter-rouge"># tscli ipsec enable</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec enable</code>.</li>
   <li><strong>Disabling IPSec</strong>: Run following command on any node of the cluster:
-<code class="highlighter-rouge"># tscli ipsec disable</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec disable</code>.</li>
   <li><strong>Checking status of IPSec</strong>: Run following command on any node of the cluster
-<code class="highlighter-rouge"># tscli ipsec status</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec status</code>.</li>
   <li>IPSec configuration and settings are NOT persistent across cluster backup/restore and will have to be re-enabled.</li>
   <li><strong>Adding a node in an IPSec enabled cluster</strong>: IPSec settings are automatically configured across nodes as a nodes get added to a ThoughtSpot cluster that has IPSec enabled.</li>
   <li><strong>Removing a node in IPSec enabled cluster</strong>: IPSec settings are not impacted when nodes get removed from a ThoughtSpot cluster that has IPSec enabled. If any failure occurs during node removal, IPSec would need to re-enabled by using the following command:
-<code class="highlighter-rouge">tscli ipsec enable</code>.</li>
+<code class="language-plaintext highlighter-rouge">tscli ipsec enable</code>.</li>
   <li>
     <p><strong>Manually enable/disable IPSec on a single node(if any IPSec related failure occurs on that node)</strong>: <br />
 Manually enable and start strongSwan: <br />
-    <code class="highlighter-rouge">sudo systemctl enable strongswan</code> <br />
-    <code class="highlighter-rouge">sudo systemctl start strongswan</code></p>
+    <code class="language-plaintext highlighter-rouge">sudo systemctl enable strongswan</code> <br />
+    <code class="language-plaintext highlighter-rouge">sudo systemctl start strongswan</code></p>
 
     <p>Manually stop and disable strongSwan: <br />
-    <code class="highlighter-rouge">sudo systemctl stop strongswan</code> <br />
-    <code class="highlighter-rouge">sudo systemctl disable strongswan</code></p>
+    <code class="language-plaintext highlighter-rouge">sudo systemctl stop strongswan</code> <br />
+    <code class="language-plaintext highlighter-rouge">sudo systemctl disable strongswan</code></p>
 
-    <p>Note: You can check  <code class="highlighter-rouge">/etc/strongswan/ipsec.conf</code> and <code class="highlighter-rouge">/etc/strongswan/ipsec.secrets</code> on each node to verify that they are consistent across all nodes.</p>
+    <p>Note: You can check  <code class="language-plaintext highlighter-rouge">/etc/strongswan/ipsec.conf</code> and <code class="language-plaintext highlighter-rouge">/etc/strongswan/ipsec.secrets</code> on each node to verify that they are consistent across all nodes.</p>
   </li>
 </ol>
 

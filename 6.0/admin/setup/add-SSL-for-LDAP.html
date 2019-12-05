@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Add the SSL certificate for LDAP”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Add the SSL certificate for LDAP”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must Configure LDAP for Active Directory." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/add-SSL-for-LDAP.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Add the SSL certificate for LDAP”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/add-SSL-for-LDAP.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/add-SSL-for-LDAP.html","headline":"[“Add the SSL certificate for LDAP”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must Configure LDAP for Active Directory.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Add the SSL certificate for LDAP”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/add-SSL-for-LDAP.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/add-SSL-for-LDAP.html"},"description":"When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). If using SSL, you must install the LDAP SSL certificate. Before you can add the SSL certificate, you must Configure LDAP for Active Directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3327,20 +3328,20 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Copy the certificate to ThoughtSpot:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ scp &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ scp &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Change directories to where you copied the certificate:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Run the command to configure SSL for LDAP, designating an alias for this certificate using the <code class="highlighter-rouge">&lt;name&gt;</code> parameter:</p>
+    <p>Run the command to configure SSL for LDAP, designating an alias for this certificate using the <code class="language-plaintext highlighter-rouge">&lt;name&gt;</code> parameter:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap add-cert &lt;name&gt; &lt;certificate&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap add-cert &lt;name&gt; &lt;certificate&gt;
 </code></pre></div>    </div>
   </li>
 </ol>

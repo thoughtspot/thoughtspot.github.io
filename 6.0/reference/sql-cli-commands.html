@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“TQL reference”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“TQL reference”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“TQL reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html"},"url":"https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html","headline":"[“TQL reference”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“TQL reference”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html"},"description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3324,19 +3325,19 @@ load.</p>
 interface</a> in the Linux
 shell.</p>
 
-<p>Use  <code class="highlighter-rouge">--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
+<p>Use  <code class="language-plaintext highlighter-rouge">--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
 result rows returned by a query. For example:</p>
 
-<p><code class="highlighter-rouge">$ tql --query_results_apply_top_row_count 100</code></p>
+<p><code class="language-plaintext highlighter-rouge">$ tql --query_results_apply_top_row_count 100</code></p>
 
 <p>As a best practice, you should enclose object names (database, schema, table,
 and column) in double quotes, and column values in single quotes.
  When referring to objects using fully qualified object names, the syntax is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"database"."schema"."table"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"database"."schema"."table"
 </code></pre></div></div>
 
-<p>To get help on SQL when using TQL,  enter <code class="highlighter-rouge">help</code> on the command line.</p>
+<p>To get help on SQL when using TQL,  enter <code class="language-plaintext highlighter-rouge">help</code> on the command line.</p>
 
 <p>You can use TQL to view and modify schemas and data in tables. Remember to add a
 semicolon after each command. Commands are not case sensitive but are

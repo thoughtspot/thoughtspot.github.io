@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Enable Active Directory based access”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Enable Active Directory based access”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Enable Active Directory based access on a ThoughtSpot node" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/active-directory-based-access.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Enable Active Directory based access”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/active-directory-based-access.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/active-directory-based-access.html","headline":"[“Enable Active Directory based access”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Enable Active Directory based access on a ThoughtSpot node","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Enable Active Directory based access”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/active-directory-based-access.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/active-directory-based-access.html"},"description":"Enable Active Directory based access on a ThoughtSpot node","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3326,7 +3327,7 @@ nodes added to the cluster.</p>
 
 <p>The command to enable system AD user access is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd enable --user &lt;USER&gt; --domain &lt;DOMAIN&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd enable --user &lt;USER&gt; --domain &lt;DOMAIN&gt;
 </code></pre></div></div>
 
 <p>You will then be prompted for password credentials.</p>
@@ -3335,22 +3336,22 @@ nodes added to the cluster.</p>
 
 <h2 id="set-sudoers-ad-group-on-a-local-node">Set sudoers AD Group on a local node</h2>
 
-<p>Just like enabling AD based access on a node, setting <code class="highlighter-rouge">sudo</code> AD group applies
+<p>Just like enabling AD based access on a node, setting <code class="language-plaintext highlighter-rouge">sudo</code> AD group applies
 only on the node where the command is run, and is not set for the whole cluster.</p>
 
-<p>The command to allow <code class="highlighter-rouge">sudo</code> permissions for AD group:</p>
+<p>The command to allow <code class="language-plaintext highlighter-rouge">sudo</code> permissions for AD group:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd set-sudo-group &lt;ACTIVE_DIRECTORY_GROUP_NAME&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd set-sudo-group &lt;ACTIVE_DIRECTORY_GROUP_NAME&gt;
 </code></pre></div></div>
 
 <h2 id="clear-sudoers-ad-group-on-a-local-node">Clear sudoers AD Group on a local node</h2>
 
-<p>Clearing <code class="highlighter-rouge">sudo</code> AD group only applies on the node where command is run, and is
+<p>Clearing <code class="language-plaintext highlighter-rouge">sudo</code> AD group only applies on the node where command is run, and is
 not set for the whole cluster.</p>
 
-<p>The command to clear <code class="highlighter-rouge">sudo</code> permissions for the AD group:</p>
+<p>The command to clear <code class="language-plaintext highlighter-rouge">sudo</code> permissions for the AD group:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd clear-sudo-group &lt;ACTIVE_DIRECTORY_GROUP_NAME&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd clear-sudo-group &lt;ACTIVE_DIRECTORY_GROUP_NAME&gt;
 </code></pre></div></div>
 
 <h2 id="disable-ad-based-access-on-a-local-node">Disable AD based access on a local node</h2>
@@ -3363,7 +3364,7 @@ cluster.</p>
 
 <p>Command to disable system AD user access is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd disable
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd disable
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Running this command will also remove the AD group from sudoers list.</div>
@@ -3371,7 +3372,7 @@ cluster.</p>
 <h2 id="related-information">Related Information</h2>
 
 <ul>
-  <li><a href="/6.0/reference/tscli-command-ref.html#sssd">sssd</a> in the <code class="highlighter-rouge">tscli</code> command reference</li>
+  <li><a href="/6.0/reference/tscli-command-ref.html#sssd">sssd</a> in the <code class="language-plaintext highlighter-rouge">tscli</code> command reference</li>
 </ul>
 
   <div class="tags">

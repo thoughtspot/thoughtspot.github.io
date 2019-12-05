@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Enable Columns for SearchIQ”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Enable Columns for SearchIQ”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="SearchIQ is in Beta." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/search/searchiq-optimize-columns.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Enable Columns for SearchIQ”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/searchiq-optimize-columns.html"},"url":"https://docs.thoughtspot.com/6.0/end-user/search/searchiq-optimize-columns.html","headline":"[“Enable Columns for SearchIQ”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"SearchIQ is in Beta.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Enable Columns for SearchIQ”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/searchiq-optimize-columns.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/searchiq-optimize-columns.html"},"description":"SearchIQ is in Beta.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3325,9 +3326,9 @@ $('#toc').on('click', 'a', function() {
   <li>Enable no more than fifteen (15) columns for SearchIQ.</li>
   <li>Enable at most one (1) date column.</li>
   <li>Column names should not contain more than 3 words.</li>
-  <li>Name the columns well, by optimizing for business users. For example, use <em>Opportunity Cost</em> and avoid <code class="highlighter-rouge">opp_cst</code>.</li>
+  <li>Name the columns well, by optimizing for business users. For example, use <em>Opportunity Cost</em> and avoid <code class="language-plaintext highlighter-rouge">opp_cst</code>.</li>
   <li>Avoid indexing descriptive columns, ones that contain more than seven (7) words, or contain values with stop words, such as <em>is</em>, <em>are</em>, <em>the</em>, <em>what</em>, and so on). See the <a href="/6.0/reference/stop-words.html">Stop Words</a> reference for the full list of stop words.</li>
-  <li>For columns that represent formulas with categorical values, set the <strong>Indexing Type</strong> to <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code>.</li>
+  <li>For columns that represent formulas with categorical values, set the <strong>Indexing Type</strong> to <code class="language-plaintext highlighter-rouge">PREFIX_AND_SUBSTRING</code>.</li>
 </ul>
 
 <p>To enable columns in a worksheet for SearchIQ, follow these steps:</p>
@@ -3355,16 +3356,16 @@ Set it to <em>Yes</em> for each column enabled for SearchIQ.</p>
     <p><img src="/6.0/images/worksheet-column-synonyms-searchiq.png" alt="" title="Specify synonyms" /></p>
   </li>
   <li>
-    <p>Change the <strong>Index Type</strong> to <code class="highlighter-rouge">DONT_INDEX</code> for columns when they must be excluded from indexing. We recommend excluding a column when it is descriptive in nature, =contains a large amount of text, has <a href="/6.0/reference/stop-words.html">stop words</a>, or for a variety of similar reason.  See <a href="/6.0/admin/data-modeling/change-index.html">Turn off indexing</a>.</p>
+    <p>Change the <strong>Index Type</strong> to <code class="language-plaintext highlighter-rouge">DONT_INDEX</code> for columns when they must be excluded from indexing. We recommend excluding a column when it is descriptive in nature, =contains a large amount of text, has <a href="/6.0/reference/stop-words.html">stop words</a>, or for a variety of similar reason.  See <a href="/6.0/admin/data-modeling/change-index.html">Turn off indexing</a>.</p>
 
     <p><img src="/6.0/images/data-modeling-columns-indextype-dont-index.png" alt="" title="Don't index" /></p>
 
-    <p>This prevents SearchIQ from scanning through large amounts of text to understand what user asked. Note that searches on text fields that use the <code class="highlighter-rouge">contains</code> keyword still work.</p>
+    <p>This prevents SearchIQ from scanning through large amounts of text to understand what user asked. Note that searches on text fields that use the <code class="language-plaintext highlighter-rouge">contains</code> keyword still work.</p>
 
     <p><img src="/6.0/images/worksheet-column-do-not-index-searchiq.png" alt="" title="Change Index Type to DONT_INDEX" /></p>
   </li>
   <li>
-    <p>Change the <strong>Index Type</strong> for columns that represent formulas with categorical values to <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code>. See <a href="/6.0/admin/data-modeling/change-index.html">Turn off indexing</a>.</p>
+    <p>Change the <strong>Index Type</strong> for columns that represent formulas with categorical values to <code class="language-plaintext highlighter-rouge">PREFIX_AND_SUBSTRING</code>. See <a href="/6.0/admin/data-modeling/change-index.html">Turn off indexing</a>.</p>
 
     <p><img src="/6.0/images/data-modeling-columns-indextype-prefix-substring.png" alt="" title="Index type for formulas with categorical values" /></p>
 

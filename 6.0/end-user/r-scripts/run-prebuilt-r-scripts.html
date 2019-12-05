@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Run prebuilt R scripts on answers”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Run prebuilt R scripts on answers”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/r-scripts/run-prebuilt-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Run prebuilt R scripts on answers”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/run-prebuilt-r-scripts.html"},"url":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/run-prebuilt-r-scripts.html","headline":"[“Run prebuilt R scripts on answers”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Run prebuilt R scripts on answers”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/run-prebuilt-r-scripts.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/run-prebuilt-r-scripts.html"},"description":"If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3350,7 +3351,7 @@ ThoughtSpot provided script.</p>
  scripts, the comment at the top of the script provides guidance on what
  columns to select.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # NOTE: Only two columns are needed for this analysis.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # NOTE: Only two columns are needed for this analysis.
  # The first column should represent some date column
  # and the second should be some numeric measure column.
 </code></pre></div>    </div>
@@ -3360,7 +3361,7 @@ ThoughtSpot provided script.</p>
  to produce graphical output, as indicated by a line like this at the end of the
  scripts.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> png(#output_file#, width=1000);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> png(#output_file#, width=1000);
  print(img);
 </code></pre></div>    </div>
   </li>
@@ -3399,7 +3400,7 @@ his full presentation on Custom R Scripts and demo at
 in the Community.</p>
 
 <p>Consider this script, found on this website of <a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations - The Master List (With Full R Code)</a>. A direct link to this script is <a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Diverging%20Bars">here</a>.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
 theme_set(theme_bw())  
 
 # Data Prep
@@ -3424,13 +3425,13 @@ ggplot(mtcars, aes(x=`car name`, y=mpg_z, label=mpg_z)) +
 <p>You can modify the script above to support the phone sales use case discussed in
 the webinar.</p>
 
-<p>In this script, <code class="highlighter-rouge">mtcars</code> is replaced with references to our phone sales
-(<code class="highlighter-rouge">df$Sales</code>) and <code class="highlighter-rouge">car name</code> is replaced with <code class="highlighter-rouge">Device Name</code> both from the column
+<p>In this script, <code class="language-plaintext highlighter-rouge">mtcars</code> is replaced with references to our phone sales
+(<code class="language-plaintext highlighter-rouge">df$Sales</code>) and <code class="language-plaintext highlighter-rouge">car name</code> is replaced with <code class="language-plaintext highlighter-rouge">Device Name</code> both from the column
 data in the search example used in the webinar demo. The script uses the
-ThoughtSpot <em>data frame</em> object (<code class="highlighter-rouge">df</code>), and adds two lines at the end to specify
-output type as a <code class="highlighter-rouge">png</code> image.</p>
+ThoughtSpot <em>data frame</em> object (<code class="language-plaintext highlighter-rouge">df</code>), and adds two lines at the end to specify
+output type as a <code class="language-plaintext highlighter-rouge">png</code> image.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
 theme_set(theme_bw())  
 
 # Data Prep

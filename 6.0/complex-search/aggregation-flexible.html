@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Flexible aggregation functions (group aggregate and filters)”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Flexible aggregation functions (group aggregate and filters)”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You can use the group_aggregate function to aggregate measures at granularities that are different from the dimensions that you have in columns used in the search." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/complex-search/aggregation-flexible.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Flexible aggregation functions (group aggregate and filters)”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/aggregation-flexible.html"},"url":"https://docs.thoughtspot.com/6.0/complex-search/aggregation-flexible.html","headline":"[“Flexible aggregation functions (group aggregate and filters)”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"You can use the group_aggregate function to aggregate measures at granularities that are different from the dimensions that you have in columns used in the search.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Flexible aggregation functions (group aggregate and filters)”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/complex-search/aggregation-flexible.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/aggregation-flexible.html"},"description":"You can use the group_aggregate function to aggregate measures at granularities that are different from the dimensions that you have in columns used in the search.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3314,7 +3315,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>You can use the <code class="highlighter-rouge">group_aggregate</code> function to aggregate measures at granularities that are
+  <p>You can use the <code class="language-plaintext highlighter-rouge">group_aggregate</code> function to aggregate measures at granularities that are
 different from the dimensions that you have in columns used in the search.</p>
 
 <h2 id="how-aggregation-formulas-work">How aggregation formulas work</h2>
@@ -3333,7 +3334,7 @@ dollars for rail, <em>t</em> dollars for truck, <em>s</em> dollars for sea trans
 <h2 id="about-flexible-aggregation">About flexible aggregation</h2>
 
 <p>Starting with version 5.0, ThoughtSpot provides for more flexible aggregation
-capability with a new function called <code class="highlighter-rouge">group_aggregate</code>. You can use this formula
+capability with a new function called <code class="language-plaintext highlighter-rouge">group_aggregate</code>. You can use this formula
 to pin columns in a query at a granularity different from the search bar query,
 using custom groupings and filters, rather than being bound to those of the
 search terms/columns.</p>
@@ -3345,29 +3346,29 @@ original query</p>
 
 <p>This is particularly useful for comparison analysis.</p>
 
-<p>You can specify to use the groups and filters from the query with <code class="highlighter-rouge">query_groups</code> and
-<code class="highlighter-rouge">query_filters</code>, respectively, and for <code class="highlighter-rouge">query_groups</code> you can also add or exclude
+<p>You can specify to use the groups and filters from the query with <code class="language-plaintext highlighter-rouge">query_groups</code> and
+<code class="language-plaintext highlighter-rouge">query_filters</code>, respectively, and for <code class="language-plaintext highlighter-rouge">query_groups</code> you can also add or exclude
 some groups or filters.</p>
 
 <p>You can use roll-up or reaggregation to fill in a column.</p>
 
 <h2 id="examples">Examples</h2>
 
-<p>For a search on <code class="highlighter-rouge">revenue monthly ship mode</code>, you can add a formula to calculate yearly revenue by ship mode:</p>
+<p>For a search on <code class="language-plaintext highlighter-rouge">revenue monthly ship mode</code>, you can add a formula to calculate yearly revenue by ship mode:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), {ship mode, year(commit date)}, {})
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), {ship mode, year(commit date)}, {})
 </code></pre></div></div>
 
-<p>The same formula can also be written using <code class="highlighter-rouge">query_groups()</code> and <code class="highlighter-rouge">query_filters()</code> as following:</p>
+<p>The same formula can also be written using <code class="language-plaintext highlighter-rouge">query_groups()</code> and <code class="language-plaintext highlighter-rouge">query_filters()</code> as following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), query_groups() - {commit date} + {year(commit date)}, {})
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), query_groups() - {commit date} + {year(commit date)}, {})
 </code></pre></div></div>
 
 <p>This is helpful to include the main query groups that are not known at formula
-creation time. You can use <code class="highlighter-rouge">+/-</code> to modify the set of groups included from
+creation time. You can use <code class="language-plaintext highlighter-rouge">+/-</code> to modify the set of groups included from
 the query.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="highlighter-rouge">+/-</code> is currently supported only for  <code class="highlighter-rouge">query_groups</code>, not <code class="highlighter-rouge">query_filters</code>.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <code class="language-plaintext highlighter-rouge">+/-</code> is currently supported only for  <code class="language-plaintext highlighter-rouge">query_groups</code>, not <code class="language-plaintext highlighter-rouge">query_filters</code>.</div>
 
 <h2 id="when-group-formula-results-are-finer-grained-than-the-search">When group formula results are finer-grained than the search</h2>
 
@@ -3387,13 +3388,13 @@ results get <em>reaggregated</em>.</p>
   <li>
     <p>You can add an aggregation keyword just before a formula column in a search.
 For example, in this search we’ve added the keyword <strong>min</strong> just before our formula
-for <code class="highlighter-rouge">monthly_sales</code>:</p>
+for <code class="language-plaintext highlighter-rouge">monthly_sales</code>:</p>
 
     <p><strong>sum revenue yearly min monthly_sales</strong></p>
 
-    <p>where, the <code class="highlighter-rouge">monthly_sales</code> formula is written as:</p>
+    <p>where, the <code class="language-plaintext highlighter-rouge">monthly_sales</code> formula is written as:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   group_aggregate(sum(revenue), {start_of_month(date)}, {})
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   group_aggregate(sum(revenue), {start_of_month(date)}, {})
 </code></pre></div>    </div>
   </li>
   <li>
@@ -3401,9 +3402,9 @@ for <code class="highlighter-rouge">monthly_sales</code>:</p>
 
     <p><strong>sum revenue yearly min_monthly_sales</strong></p>
 
-    <p>where, the <code class="highlighter-rouge">min_monthly_sales</code> formula is written as:</p>
+    <p>where, the <code class="language-plaintext highlighter-rouge">min_monthly_sales</code> formula is written as:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>min(monthly_sales)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>min(monthly_sales)
 </code></pre></div>    </div>
   </li>
 </ul>
@@ -3437,9 +3438,9 @@ for any given month for that ship mode.</p>
 
 <p><strong>ship mode min monthly_sales</strong></p>
 
-<p>where the formula <code class="highlighter-rouge">monthly_sales</code> is written as:</p>
+<p>where the formula <code class="language-plaintext highlighter-rouge">monthly_sales</code> is written as:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
 </code></pre></div></div>
 
 <h2 id="groups-and-filters">Groups and filters</h2>
@@ -3452,7 +3453,7 @@ specify only groupings or only filters.</p>
 
 <ul>
   <li>
-    <p>For more examples of flexible aggregation, see the <code class="highlighter-rouge">group_aggregate</code> function under “Aggregate
+    <p>For more examples of flexible aggregation, see the <code class="language-plaintext highlighter-rouge">group_aggregate</code> function under “Aggregate
 functions” in the <a href="/6.0/reference/formula-reference.html">Formula function reference</a>.</p>
   </li>
   <li>

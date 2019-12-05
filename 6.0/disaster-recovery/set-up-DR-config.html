@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Configure disaster recovery”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure disaster recovery”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Configure disaster recovery”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/disaster-recovery/set-up-DR-config.html"},"url":"https://docs.thoughtspot.com/6.0/disaster-recovery/set-up-DR-config.html","headline":"[“Configure disaster recovery”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Configure disaster recovery”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/disaster-recovery/set-up-DR-config.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/disaster-recovery/set-up-DR-config.html"},"description":"Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3345,7 +3346,7 @@ performance. The following are good guidelines for choosing storage:</p>
 
 <p>Thoughtspot supports shared storage by mounting NFS or CIFS/Samba based volumes.
 Before you begin, make sure you know if the shared volume is Samba or NAS
-volume. To find out, use the <code class="highlighter-rouge">telnet</code> command.</p>
+volume. To find out, use the <code class="language-plaintext highlighter-rouge">telnet</code> command.</p>
 
 <table>
   <tr>
@@ -3386,17 +3387,17 @@ recovery plan.</p>
   <li>
     <p>Create a directory to act as your  _<mount_point>_.</mount_point></p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Set the directory owner to <code class="highlighter-rouge">admin</code>.</p>
+    <p>Set the directory owner to <code class="language-plaintext highlighter-rouge">admin</code>.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R admin:admin &lt;mount_point&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R admin:admin &lt;mount_point&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli nas</code> subcommand to create a NAS is mount on all of the cluster nodes.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli nas</code> subcommand to create a NAS is mount on all of the cluster nodes.</p>
 
     <p>Use the command-line help or the documentation to view all the <a href="/6.0/reference/tscli-command-ref.html#nas">nas subcommand</a> options. Below are some samples to help you:</p>
 
@@ -3425,7 +3426,7 @@ recovery plan.</p>
     <p>If a cluster is running on the target machine, contact please contact
 ThoughtSpot Support to delete the cluster.</p>
   </li>
-  <li>Ensure you have the <code class="highlighter-rouge">tscli</code> command on the target appliance.</li>
+  <li>Ensure you have the <code class="language-plaintext highlighter-rouge">tscli</code> command on the target appliance.</li>
   <li>
     <p>Repeat steps 3-5 on the target machine.</p>
 
@@ -3434,15 +3435,15 @@ shared volume. The configuration of the mount point should be identical on
 both machines.</p>
   </li>
   <li>
-    <p>Test the configuration by creating a file as the <code class="highlighter-rouge">admin</code> user.</p>
+    <p>Test the configuration by creating a file as the <code class="language-plaintext highlighter-rouge">admin</code> user.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Return to the primary server and make sure you can edit the file.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3452,9 +3453,9 @@ both machines.</p>
 <ol>
   <li>If you haven’t already done so, SSH into the primary server.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli backup-policy create</code> command.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli backup-policy create</code> command.</p>
 
-    <p>The command opens a <code class="highlighter-rouge">vi</code> editor for you to configure the backup policy. Make
+    <p>The command opens a <code class="language-plaintext highlighter-rouge">vi</code> editor for you to configure the backup policy. Make
 sure your policy points to the NAS mount in the primary appliance.</p>
 
     <p>When choosing times and frequencies for periodic backups, you should choose a
@@ -3471,21 +3472,21 @@ see <a href="/6.0/admin/backup-restore/configure-backup.html">Configure periodic
     <p>By default, newly created policies are automatically enabled.</p>
   </li>
   <li>
-    <p>Verify the policy using the <code class="highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</p>
+    <p>Verify the policy using the <code class="language-plaintext highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</p>
 
-    <p>Use the <code class="highlighter-rouge">&lt;name&gt;</code> from the policy you created in the previous step.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">&lt;name&gt;</code> from the policy you created in the previous step.</p>
   </li>
   <li>SSH into the secondary recovery appliance.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror start
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror start
 </code></pre></div>    </div>
   </li>
   <li>Verify that the cluster has started running in mirror mode</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli dr-mirror status
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli dr-mirror status
 </code></pre></div></div>
 
 <p>It may take some time for the cluster to begin acting as a mirror.</p>
@@ -3505,19 +3506,19 @@ instance into the primary.</p>
   <li>
     <p>Stop the mirror cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror stop
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror stop
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Verify the mirror has stopped.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror status
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror status
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Start the new primary cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster start
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster start
 </code></pre></div>    </div>
   </li>
   <li>Deploy a new mirror.</li>

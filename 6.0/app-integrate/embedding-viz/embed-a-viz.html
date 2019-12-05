@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Embed pinboard or visualization”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Embed pinboard or visualization”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This page explains, through an example, how to embed a visualization (table or chart) or pinboard from ThoughtSpot in your own static Web page, portal, or application." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/embed-a-viz.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Embed pinboard or visualization”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/embed-a-viz.html"},"url":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/embed-a-viz.html","headline":"[“Embed pinboard or visualization”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"This page explains, through an example, how to embed a visualization (table or chart) or pinboard from ThoughtSpot in your own static Web page, portal, or application.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Embed pinboard or visualization”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/embed-a-viz.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/embed-a-viz.html"},"description":"This page explains, through an example, how to embed a visualization (table or chart) or pinboard from ThoughtSpot in your own static Web page, portal, or application.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3347,7 +3348,7 @@ before continuing.</p>
 
     <p><img src="/6.0/images/embed-link-1.png" alt="" title="Pinboard Link" /></p>
 
-    <p>The format for the link is:  <code class="highlighter-rouge">&lt;protocol&gt;:&lt;host&gt;:&lt;port&gt;/#/embed/viz/&lt;pinboardID&gt;</code></p>
+    <p>The format for the link is:  <code class="language-plaintext highlighter-rouge">&lt;protocol&gt;:&lt;host&gt;:&lt;port&gt;/#/embed/viz/&lt;pinboardID&gt;</code></p>
 
     <p>For a vizualization in a pinboard, click the ellipses icon
 <img src="/6.0/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> &gt;
@@ -3355,7 +3356,7 @@ before continuing.</p>
 
     <p><img src="/6.0/images/embed-link-2.png" alt="" title="Visualization Link" /></p>
 
-    <p>The format for the link is:  <code class="highlighter-rouge">&lt;protocol&gt;:&lt;host&gt;:&lt;port&gt;/#/embed/viz/&lt;pinboardID&gt;/&lt;vizualizationId&gt;</code></p>
+    <p>The format for the link is:  <code class="language-plaintext highlighter-rouge">&lt;protocol&gt;:&lt;host&gt;:&lt;port&gt;/#/embed/viz/&lt;pinboardID&gt;/&lt;vizualizationId&gt;</code></p>
   </li>
 </ol>
 
@@ -3366,15 +3367,15 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
 <a href="/6.0/downloads/test.html" target="_blank"><code>test.html</code></a>  file.</p>
 
 <ol>
-  <li>Create an empty directory called <code class="highlighter-rouge">test</code>.</li>
-  <li>Save the <code class="highlighter-rouge">test.html</code> file to the <code class="highlighter-rouge">test</code> directory.</li>
+  <li>Create an empty directory called <code class="language-plaintext highlighter-rouge">test</code>.</li>
+  <li>Save the <code class="language-plaintext highlighter-rouge">test.html</code> file to the <code class="language-plaintext highlighter-rouge">test</code> directory.</li>
   <li><a href="/6.0/release/downloads.html" target="_blank">Download</a> the ThoughtSpot JavaScript library.</li>
-  <li>Place the Javascript library in an <code class="highlighter-rouge">api</code> directory co-located with the <code class="highlighter-rouge">test.html</code> file.</li>
-  <li>Edit the <code class="highlighter-rouge">test.html</code> file in your favorite editor.</li>
+  <li>Place the Javascript library in an <code class="language-plaintext highlighter-rouge">api</code> directory co-located with the <code class="language-plaintext highlighter-rouge">test.html</code> file.</li>
+  <li>Edit the <code class="language-plaintext highlighter-rouge">test.html</code> file in your favorite editor.</li>
   <li>
-    <p>Scroll down to the <code class="highlighter-rouge">Variables</code> section (about line 37).</p>
+    <p>Scroll down to the <code class="language-plaintext highlighter-rouge">Variables</code> section (about line 37).</p>
 
-    <p>Here are the fields in the <code class="highlighter-rouge">test.html</code> file you need to edit.</p>
+    <p>Here are the fields in the <code class="language-plaintext highlighter-rouge">test.html</code> file you need to edit.</p>
 
     <pre><code class="language-JavaScript"> var protocol = "THOUGHTSPOT_PROTOCOL";
  var hostPort = "HOST_PORT";   
@@ -3388,7 +3389,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
 
     <p>For example, your URL may look similar to the following:</p>
 
-    <p><code class="highlighter-rouge">http://172.18.202.35:8088/#/embed/viz/061457a2-27bc-43a9-9754-0cd873691bf0/9985fccf-b28d-4262-b54b-29619a38348e</code></p>
+    <p><code class="language-plaintext highlighter-rouge">http://172.18.202.35:8088/#/embed/viz/061457a2-27bc-43a9-9754-0cd873691bf0/9985fccf-b28d-4262-b54b-29619a38348e</code></p>
 
     <p>This is a link copied from an individual visualization, the result in the file is:</p>
 
@@ -3399,29 +3400,29 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
  var vizualizationId = "9985fccf-b28d-4262-b54b-29619a38348e";
 </code></pre>
 
-    <p>The protocol (<code class="highlighter-rouge">http</code> or <code class="highlighter-rouge">https</code>) of your client and your ThoughtSpot instance
+    <p>The protocol (<code class="language-plaintext highlighter-rouge">http</code> or <code class="language-plaintext highlighter-rouge">https</code>) of your client and your ThoughtSpot instance
  should match. You can use this identifier in the next part.</p>
   </li>
-  <li>Save your changes and close the <code class="highlighter-rouge">test.html</code> file.</li>
+  <li>Save your changes and close the <code class="language-plaintext highlighter-rouge">test.html</code> file.</li>
 </ol>
 
 <h2 id="enable-cors-for-your-client-domain">Enable CORS for your client domain</h2>
 
 <p>You must work with ThoughtSpot support to enable CORS between your client
 application domain and the ThoughtSpot domain. If you don’t do this, you will
-receive an error message when <code class="highlighter-rouge">test.html</code> attempts to load the embedded objects.</p>
+receive an error message when <code class="language-plaintext highlighter-rouge">test.html</code> attempts to load the embedded objects.</p>
 
-<p>The test infrastructure uses Python’s <code class="highlighter-rouge">simplehttpserver</code>, which runs by default
-as <code class="highlighter-rouge">localhost:8000</code>. ThoughtSpot support must have this information. You can
-also copy the <code class="highlighter-rouge">test</code> directory to an existing web server. If you do this,
+<p>The test infrastructure uses Python’s <code class="language-plaintext highlighter-rouge">simplehttpserver</code>, which runs by default
+as <code class="language-plaintext highlighter-rouge">localhost:8000</code>. ThoughtSpot support must have this information. You can
+also copy the <code class="language-plaintext highlighter-rouge">test</code> directory to an existing web server. If you do this,
 you must DNS for the server when you contact Support.</p>
 
 <h2 id="test-the-example-page">Test the example page</h2>
 
 <p>You are almost ready to view your embedded pinboard and visualization. The
 fastest way to run a webserver and test the code is using Python’s
-<code class="highlighter-rouge">simplehttpserver</code>.  If you have Python on your system you already have the
-<code class="highlighter-rouge">simplehttpserver</code>.</p>
+<code class="language-plaintext highlighter-rouge">simplehttpserver</code>.  If you have Python on your system you already have the
+<code class="language-plaintext highlighter-rouge">simplehttpserver</code>.</p>
 
 <ol>
   <li>
@@ -3431,14 +3432,14 @@ fastest way to run a webserver and test the code is using Python’s
 haven’t done that with this system. So, before you test, you must login to the
 ThoughtSpot. Successfully logging in causes the system to create a session
 and an authentication key. Your browser has this information and so when you
-load the <code class="highlighter-rouge">test.html</code> page in another tab, you won’t need to authenticate
+load the <code class="language-plaintext highlighter-rouge">test.html</code> page in another tab, you won’t need to authenticate
 again.</p>
   </li>
-  <li>Change to your <code class="highlighter-rouge">test</code> directory.</li>
+  <li>Change to your <code class="language-plaintext highlighter-rouge">test</code> directory.</li>
   <li>
-    <p>Start the <code class="highlighter-rouge">simplehttpserver</code> web server.</p>
+    <p>Start the <code class="language-plaintext highlighter-rouge">simplehttpserver</code> web server.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  python -m SimpleHTTPServer 8000
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  python -m SimpleHTTPServer 8000
 </code></pre></div>    </div>
   </li>
   <li>
@@ -3447,7 +3448,7 @@ again.</p>
   <li>
     <p>Navigate to the test page in your browser.</p>
 
-    <p><code class="highlighter-rouge">http://localhost:8000/test.html</code></p>
+    <p><code class="language-plaintext highlighter-rouge">http://localhost:8000/test.html</code></p>
 
     <p>You should see something similar to the following:</p>
 
@@ -3458,7 +3459,7 @@ again.</p>
 
     <p>Success is appears in the console with a message similar to this:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> test.html:60 Initialization successful.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> test.html:60 Initialization successful.
  test.html:113 http://172.18.202.35:8088/#/embed/viz/061457a2-27bc-43a9-9754-0cd873691bf0
  test.html:129 http://172.18.202.35:8088/#/embed/viz/061457a2-27bc-43a9-9754-0cd873691bf0/9985fccf-b28d-4262-b54b-29619a38348e
 </code></pre></div>    </div>
@@ -3471,7 +3472,7 @@ again.</p>
 errors in the page loading, usually on the <strong>Console</strong> tab. If you see an error
 similar to:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No 'Access-Control-Allow-Origin' header is present on the requested resource.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No 'Access-Control-Allow-Origin' header is present on the requested resource.
 </code></pre></div></div>
 
 <p>Typically you see this if the cross domain (CORS) setting was not completed correctly on

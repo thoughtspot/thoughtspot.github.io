@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Calling the Data REST API”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Calling the Data REST API”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/data-api/calling-rest-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Calling the Data REST API”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/calling-rest-api.html"},"url":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/calling-rest-api.html","headline":"[“Calling the Data REST API”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Calling the Data REST API”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/calling-rest-api.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/calling-rest-api.html"},"description":"To call the Data REST API, you can specify a URL using the POST method, passing the ID numbers of the objects from which you want to obtain data.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3320,15 +3321,15 @@ $('#toc').on('click', 'a', function() {
 
 <p>For a pinboard, you can append the ID of your pinboard as a parameter, like this example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
 </code></pre></div></div>
 
 <p>To retrieve data from a specific visualization within a pinboard, you would append the ID number of the visualization using the vizid parameter:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&amp;vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&amp;vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D
 </code></pre></div></div>
 
-<p><strong>Remember:</strong> You must add brackets around the vizid parameter. The URL encoding for open bracket is <code class="highlighter-rouge">%5B</code>, and the URL encoding for close bracket is <code class="highlighter-rouge">%5D</code>.</p>
+<p><strong>Remember:</strong> You must add brackets around the vizid parameter. The URL encoding for open bracket is <code class="language-plaintext highlighter-rouge">%5B</code>, and the URL encoding for close bracket is <code class="language-plaintext highlighter-rouge">%5D</code>.</p>
 
 <h2 id="object-format-for-returned-data">Object Format for Returned Data</h2>
 
@@ -3338,7 +3339,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you make a call to a specific viz on a pinboard, it will return just one object. The JSON object format for the data that is returned from ThoughtSpot is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 vizId1 : {
          name: “Viz name”,
          :[[2-d array of data values], [], [] …..[]],
@@ -3357,10 +3358,10 @@ vizId2 : {
   <li>An array of column headers.</li>
   <li>An array of data.</li>
   <li>The name given to the specific viz.</li>
-  <li>And a sampling ratio. The sampling ratio tells you the percentage of total data returned. <code class="highlighter-rouge">1</code> would mean all data in the viz was returned in the API call.</li>
+  <li>And a sampling ratio. The sampling ratio tells you the percentage of total data returned. <code class="language-plaintext highlighter-rouge">1</code> would mean all data in the viz was returned in the API call.</li>
 </ol>
 
-<p>The <code class="highlighter-rouge">columnNames</code> array contains a list of all column headers. And the <code class="highlighter-rouge">data</code> array contains a list of other arrays. Each sub array represents a new row of data.</p>
+<p>The <code class="language-plaintext highlighter-rouge">columnNames</code> array contains a list of all column headers. And the <code class="language-plaintext highlighter-rouge">data</code> array contains a list of other arrays. Each sub array represents a new row of data.</p>
 
 <p><img src="/6.0/images/columnnames_and_data_arrays.png" alt="" title="columnNames and data arrays" /></p>
 
@@ -3370,7 +3371,7 @@ vizId2 : {
 
 <p>The following example shows a JavaScript function that calls the REST API, gets the results back, and retrieves a single value from the JSON results:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Generates headline by making a data API call.
  *
  * @param void

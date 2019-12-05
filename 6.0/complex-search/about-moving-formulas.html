@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Moving functions”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Moving functions”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/complex-search/about-moving-formulas.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Moving functions”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/about-moving-formulas.html"},"url":"https://docs.thoughtspot.com/6.0/complex-search/about-moving-formulas.html","headline":"[“Moving functions”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Moving functions”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/complex-search/about-moving-formulas.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/about-moving-formulas.html"},"description":"Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3324,7 +3325,7 @@ averages are to the actual data points.</p>
 <p>Each of the moving formula accepts a measure, two integers to define the window,
 and one or more optional attributes.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>formula (measure,integer,integer,[attribute,attribute,...])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>formula (measure,integer,integer,[attribute,attribute,...])
 </code></pre></div></div>
 
 <p>Only the measure and integer values are required. If you supply both required
@@ -3337,54 +3338,54 @@ best meets your use case.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">moving_average</code>, for example <code class="highlighter-rouge">moving_average (revenue, 2, 1, customer region)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_average</code>, for example <code class="language-plaintext highlighter-rouge">moving_average (revenue, 2, 1, customer region)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the average of the measure over the given window.
 The attributes are the ordering columns used to compute the moving average.
-The window is (<code class="highlighter-rouge">current - Num1...Current + Num2</code>) with both end points being
-included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To
+The window is (<code class="language-plaintext highlighter-rouge">current - Num1...Current + Num2</code>) with both end points being
+included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
 see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
+the example <code class="language-plaintext highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_max</code>, for example <code class="highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_max</code>, for example <code class="language-plaintext highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the maximum of the measure over the given window.
 The attributes are the ordering columns used to compute the moving maximum.
 The window is (current - Num1…Current + Num2) with both end points being
-included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To
+included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
 see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="highlighter-rouge">moving_max(sales, 1, -1, date)</code>.</p>
+the example <code class="language-plaintext highlighter-rouge">moving_max(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_min</code>, for example <code class="highlighter-rouge">moving_min (defects, 3, 1, product)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_min</code>, for example <code class="language-plaintext highlighter-rouge">moving_min (defects, 3, 1, product)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and
   one or more attributes. Returns the minimum of the measure over the given
   window. The attributes are the ordering columns used to compute the moving
   minimum. The window is (current - Num1…Current + Num2) with both end
-  points being included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window
+  points being included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window
   size of 3. To see periods in the past, use a negative number for the second
-  endpoint, as in the example <code class="highlighter-rouge">moving_min(sales, 1, -1, date)</code>.</p>
+  endpoint, as in the example <code class="language-plaintext highlighter-rouge">moving_min(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_sum</code>, for example <code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_sum</code>, for example <code class="language-plaintext highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the sum of the measure over the given window. The
 attributes are the ordering columns used to compute the moving sum. The window
 is (current - Num1…Current + Num2) with both end points being included in
-the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To see periods in
+the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To see periods in
 the past, use a negative number for the second endpoint, as in the example
-<code class="highlighter-rouge">moving_sum(sales, 1, -1, date)</code>.</p>
+<code class="language-plaintext highlighter-rouge">moving_sum(sales, 1, -1, date)</code>.</p>
   </li>
 </ul>
 
 <h2 id="calculate-a-moving-average">Calculate a moving average</h2>
 
-<p>This example  demonstrates using the <code class="highlighter-rouge">moving_average</code> formula. To use the moving function in a search:</p>
+<p>This example  demonstrates using the <code class="language-plaintext highlighter-rouge">moving_average</code> formula. To use the moving function in a search:</p>
 
 <ol>
   <li>

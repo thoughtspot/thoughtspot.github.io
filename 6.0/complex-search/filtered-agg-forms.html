@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Filtered aggregation functions”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Filtered aggregation functions”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Filters are useful for queries where the results should reflect a new, filtered value. On this page you learn about comparative versus derivative filters, and the functions, and the keywords that you can use with them." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/complex-search/filtered-agg-forms.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Filtered aggregation functions”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/filtered-agg-forms.html"},"url":"https://docs.thoughtspot.com/6.0/complex-search/filtered-agg-forms.html","headline":"[“Filtered aggregation functions”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Filters are useful for queries where the results should reflect a new, filtered value. On this page you learn about comparative versus derivative filters, and the functions, and the keywords that you can use with them.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Filtered aggregation functions”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/complex-search/filtered-agg-forms.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/filtered-agg-forms.html"},"description":"Filters are useful for queries where the results should reflect a new, filtered value. On this page you learn about comparative versus derivative filters, and the functions, and the keywords that you can use with them.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3328,7 +3329,7 @@ States, may want to compare total revenue in the West to the East segment. In a
 comparative filter, one of the segments you are comparing is filtered.</p>
 
 <p>An example of a comparative filter is comparing west revenue with total revenue.
-In these cases, one measure is a <em>filtered measure</em>, for example, <code class="highlighter-rouge">revenue
+In these cases, one measure is a <em>filtered measure</em>, for example, <code class="language-plaintext highlighter-rouge">revenue
 region = west</code> is a filtered measure.</p>
 
 <p>Derivative filters add a column to your results which is derived from other
@@ -3351,22 +3352,22 @@ create filter functions.</p>
 <p>Filter functions take two arguments, the column ( measure or attribute) to
 aggregate and the filter condition:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FUNCTION_NAME(condition, &lt;column name&gt;)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FUNCTION_NAME(condition, &lt;column name&gt;)
 </code></pre></div></div>
 
 <p>ThoughtSpot functional library will include the following functions:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">sum_if</code></li>
-  <li><code class="highlighter-rouge">average_if</code></li>
-  <li><code class="highlighter-rouge">count_if</code></li>
-  <li><code class="highlighter-rouge">unique_count_if</code></li>
-  <li><code class="highlighter-rouge">max_if</code></li>
-  <li><code class="highlighter-rouge">min_if</code></li>
-  <li><code class="highlighter-rouge">stddev_if</code></li>
-  <li><code class="highlighter-rouge">variance_if</code></li>
-  <li><code class="highlighter-rouge">vs</code></li>
-  <li><code class="highlighter-rouge">all</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sum_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">average_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">count_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">unique_count_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">max_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">min_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">stddev_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">variance_if</code></li>
+  <li><code class="language-plaintext highlighter-rouge">vs</code></li>
+  <li><code class="language-plaintext highlighter-rouge">all</code></li>
 </ul>
 
 <p>The following table illustrates some examples of these functions in use:</p>
@@ -3396,41 +3397,41 @@ aggregate and the filter condition:</p>
   </tr>
 </table>
 
-<p>A condition can have multiple filters like <code class="highlighter-rouge">sales region = west OR region = east</code>. You
-can also just type a value such as <code class="highlighter-rouge">east</code> as in <code class="highlighter-rouge">sales east</code> as a filter. If
+<p>A condition can have multiple filters like <code class="language-plaintext highlighter-rouge">sales region = west OR region = east</code>. You
+can also just type a value such as <code class="language-plaintext highlighter-rouge">east</code> as in <code class="language-plaintext highlighter-rouge">sales east</code> as a filter. If
 there are no rows matching the criteria, the condition returns a 0 (zero). A 0
 can result in situations where there are logic errors in the formula, so be sure
 to double-check your work.</p>
 
 <p><img src="/6.0/images/filtered-agg-forms.png" alt="" title="Filter Aggregation" /></p>
 
-<p>After you have aggregated with a filter, you can do further comparisons with the <code class="highlighter-rouge">vs</code> and <code class="highlighter-rouge">all</code> keywords.</p>
+<p>After you have aggregated with a filter, you can do further comparisons with the <code class="language-plaintext highlighter-rouge">vs</code> and <code class="language-plaintext highlighter-rouge">all</code> keywords.</p>
 
 <h2 id="using-the-vs-and-all-keywords">Using the vs and all keywords</h2>
 
-<p>You can use the <code class="highlighter-rouge">vs</code> and <code class="highlighter-rouge">all</code> keywords to expand the usefulness of your
+<p>You can use the <code class="language-plaintext highlighter-rouge">vs</code> and <code class="language-plaintext highlighter-rouge">all</code> keywords to expand the usefulness of your
 comparison filters. It compares a measure across different sets of filters and
 or groupings. The basic format of a comparison search is:</p>
 
-<p><code class="highlighter-rouge">&lt;common search tokens&gt; (A</code> <strong>vs</strong> <code class="highlighter-rouge">B) &lt;common search tokens&gt;</code></p>
+<p><code class="language-plaintext highlighter-rouge">&lt;common search tokens&gt; (A</code> <strong>vs</strong> <code class="language-plaintext highlighter-rouge">B) &lt;common search tokens&gt;</code></p>
 
 <p>For example:</p>
 
-<p><code class="highlighter-rouge">revenue region last 10 years vs all</code></p>
+<p><code class="language-plaintext highlighter-rouge">revenue region last 10 years vs all</code></p>
 
 <p>Try this syntax on using the
 <a href="/6.0/downloads/Superstore.csv">Superstore</a> example data. The first
-<code class="highlighter-rouge">vs</code> example compares two segments with a single search token:</p>
+<code class="language-plaintext highlighter-rouge">vs</code> example compares two segments with a single search token:</p>
 
 <p><img src="/6.0/images/vs-ex-1.png" alt="" /></p>
 
-<p>The system automatically applies the <code class="highlighter-rouge">sales</code> token to both sides and groups each
-segment. You can use the <code class="highlighter-rouge">all</code> keyword to break out the segments and avoid
+<p>The system automatically applies the <code class="language-plaintext highlighter-rouge">sales</code> token to both sides and groups each
+segment. You can use the <code class="language-plaintext highlighter-rouge">all</code> keyword to break out the segments and avoid
 grouping.</p>
 
 <p><img src="/6.0/images/vs-ex-2.png" alt="" /></p>
 
-<p>You can also provide multiple <code class="highlighter-rouge">vs</code> instances:</p>
+<p>You can also provide multiple <code class="language-plaintext highlighter-rouge">vs</code> instances:</p>
 
 <p><img src="/6.0/images/vs-ex-3.png" alt="" /></p>
 
@@ -3441,10 +3442,10 @@ grouping.</p>
 <p>Other supported formats you can try:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">sales accessory6 accessory12 vs all</code></li>
-  <li><code class="highlighter-rouge">sales monthly accessory6 vs last year</code></li>
-  <li><code class="highlighter-rouge">sales staples file caddy vs all monthly</code> answers what the share of sales belonging to the file caddy by month</li>
-  <li><code class="highlighter-rouge">sales (germany ariel vs laundry) july 2017 time</code> answers what is the category share of Germany Ariel for July 17?</li>
+  <li><code class="language-plaintext highlighter-rouge">sales accessory6 accessory12 vs all</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sales monthly accessory6 vs last year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sales staples file caddy vs all monthly</code> answers what the share of sales belonging to the file caddy by month</li>
+  <li><code class="language-plaintext highlighter-rouge">sales (germany ariel vs laundry) july 2017 time</code> answers what is the category share of Germany Ariel for July 17?</li>
 </ul>
 
   <div class="tags">

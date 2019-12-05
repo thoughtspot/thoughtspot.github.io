@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Data loading too slowly”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Data loading too slowly”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Some tables may take an unusually long time to load due to a high data version issue. This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/troubleshooting/data-loading-too-slowly.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Data loading too slowly”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/troubleshooting/data-loading-too-slowly.html"},"url":"https://docs.thoughtspot.com/6.0/admin/troubleshooting/data-loading-too-slowly.html","headline":"[“Data loading too slowly”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Some tables may take an unusually long time to load due to a high data version issue. This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Data loading too slowly”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/troubleshooting/data-loading-too-slowly.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/troubleshooting/data-loading-too-slowly.html"},"description":"Some tables may take an unusually long time to load due to a high data version issue. This issue normally arises when ThoughtSpot completes an upgrade or the system is recovering after a crash.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3327,7 +3328,7 @@ which could increase the time it takes to build the table.</p>
 fix it. To improve data loading speed, run the following command to find the
 number of tables that are building and their names</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster status --mode table
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster status --mode table
 </code></pre></div></div>
 
 <p>You may notice that a few small tables are taking up a lot of time to be built.
@@ -3336,7 +3337,7 @@ also the chance it could be due to a high data version issue. To determine if
 this is a high data version issue, check the size of the table by running the
 following command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'show statistics for server;' | tql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'show statistics for server;' | tql
 </code></pre></div></div>
 
 <p>If there is a large number of rows in the table, go on to shard the table. If
@@ -3344,7 +3345,7 @@ the table has a small number of rows, then the slow loading speed is caused by a
 high data version issue, and you do not have to shard the table. Use the compact
 table functionality to trim the table down to its actual size:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql&gt; compact table &lt;table name&gt;;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql&gt; compact table &lt;table name&gt;;
 </code></pre></div></div>
 
   <div class="tags">

@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Create and load a CSV file”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Create and load a CSV file”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/data-view/generate-flat-file.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Create and load a CSV file”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/data-view/generate-flat-file.html"},"url":"https://docs.thoughtspot.com/6.0/end-user/data-view/generate-flat-file.html","headline":"[“Create and load a CSV file”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Create and load a CSV file”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/data-view/generate-flat-file.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/data-view/generate-flat-file.html"},"description":"Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3341,7 +3342,7 @@ The exact procedure you use will depend on the source application.</li>
   <li>
     <p>Extract each table you wish to import into ThoughtSpot as a CSV file.</p>
 
-    <p>The column delimiter should be a <code class="highlighter-rouge">,</code> (comma), <code class="highlighter-rouge">|</code> (pipe), or tab.</p>
+    <p>The column delimiter should be a <code class="language-plaintext highlighter-rouge">,</code> (comma), <code class="language-plaintext highlighter-rouge">|</code> (pipe), or tab.</p>
   </li>
 </ol>
 
@@ -3354,18 +3355,18 @@ The file also contains fields optionally enclosed with double quotes. Use these 
 
 <ul>
   <li>If the CSV contains column headers, they must match the column names in the database exactly.</li>
-  <li>Often a <code class="highlighter-rouge">|</code> (pipe) or tab is used as the delimiter, because it may be less likely to occur within the data values.</li>
-  <li>When a field contains a double quote, it must be escaped with the character specified in the escape character argument in <code class="highlighter-rouge">tsload</code>.</li>
+  <li>Often a <code class="language-plaintext highlighter-rouge">|</code> (pipe) or tab is used as the delimiter, because it may be less likely to occur within the data values.</li>
+  <li>When a field contains a double quote, it must be escaped with the character specified in the escape character argument in <code class="language-plaintext highlighter-rouge">tsload</code>.</li>
   <li>When a field contains the delimiter, the field must be enclosed in double quotes.</li>
 </ul>
 
 <p>ThoughtSpot supports a wide range of <a href="/6.0/reference/date-formats-for-loading.html#">date and timestamp formats</a> in the CSV file. Blank values in user uploaded CSV files are interpreted as NULL values. These include the values (case insensitive):</p>
 
 <ul>
-  <li><code class="highlighter-rouge">NULL</code></li>
-  <li><code class="highlighter-rouge">\N</code></li>
-  <li><code class="highlighter-rouge">NA</code></li>
-  <li><code class="highlighter-rouge">N/A</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NULL</code></li>
+  <li><code class="language-plaintext highlighter-rouge">\N</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NA</code></li>
+  <li><code class="language-plaintext highlighter-rouge">N/A</code></li>
   <li>[space]</li>
 </ul>
 
@@ -3426,7 +3427,7 @@ in the upper right corner, and select <strong>Upload Data</strong>.</p>
 
 <h2 id="troubleshoot-uploads">Troubleshoot uploads</h2>
 
-<p>Boolean data must use <code class="highlighter-rouge">TRUE</code>/<code class="highlighter-rouge">FALSE</code> values. Other values such as <code class="highlighter-rouge">Y</code>/<code class="highlighter-rouge">N</code> are not supported.</p>
+<p>Boolean data must use <code class="language-plaintext highlighter-rouge">TRUE</code>/<code class="language-plaintext highlighter-rouge">FALSE</code> values. Other values such as <code class="language-plaintext highlighter-rouge">Y</code>/<code class="language-plaintext highlighter-rouge">N</code> are not supported.</p>
 
   <div class="tags">
     <div style="float:right;">

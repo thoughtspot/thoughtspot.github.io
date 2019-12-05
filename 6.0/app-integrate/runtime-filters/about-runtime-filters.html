@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“About Runtime Filters”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“About Runtime Filters”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned. You can use them with the data API or with embedding of answers or pinboards." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/runtime-filters/about-runtime-filters.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“About Runtime Filters”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/runtime-filters/about-runtime-filters.html"},"url":"https://docs.thoughtspot.com/6.0/app-integrate/runtime-filters/about-runtime-filters.html","headline":"[“About Runtime Filters”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned. You can use them with the data API or with embedding of answers or pinboards.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“About Runtime Filters”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/runtime-filters/about-runtime-filters.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/runtime-filters/about-runtime-filters.html"},"description":"Runtime filters allow you to filter an answer or pinboard through parameters you pass in the URL to filter the data that is returned. You can use them with the data API or with embedding of answers or pinboards.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3328,27 +3329,27 @@ providing filter information through the URL query parameters.</p>
 Filter is operating on the column “Color” and will only return values that are
 equal (EQ) to “red”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.77.144.40:8088/?col1=Color&amp;op1=EQ&amp;val1=red#
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.77.144.40:8088/?col1=Color&amp;op1=EQ&amp;val1=red#
 /pinboard/e36ee65e-64be-436b-a29a-22d8998c4fae
 </code></pre></div></div>
 
 <p>This example shows the URL for a REST API call with a filter. Here the Runtime
-Filter is operating on the column <code class="highlighter-rouge">Category</code> and returning values that are equal
-to <code class="highlighter-rouge">mfgr%2324</code>.</p>
+Filter is operating on the column <code class="language-plaintext highlighter-rouge">Category</code> and returning values that are equal
+to <code class="language-plaintext highlighter-rouge">mfgr%2324</code>.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.77.144.40:8088/callosum/v1/tspublic/v1/pinboarddata?
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.77.144.40:8088/callosum/v1/tspublic/v1/pinboarddata?
 id=e36ee65e-64be-436b-a29a-22d8998c4fae&amp;col1=Category
 &amp;op1=EQ&amp;val1=mfgr%2324
 </code></pre></div></div>
 
 <p>ThoughtSpot will try to find a matching column from the pinboard or
-visualization being accessed, using the <code class="highlighter-rouge">col</code> field as <code class="highlighter-rouge">name</code>. You can add any
-number of filter sets by incrementing the parameters (e.g. <code class="highlighter-rouge">col2</code>, <code class="highlighter-rouge">op2</code>, and
-<code class="highlighter-rouge">val2</code>, etc.) For operators that support more than one value you can pass
-<code class="highlighter-rouge">val1=foo&amp;val1=bar</code>, etc.</p>
+visualization being accessed, using the <code class="language-plaintext highlighter-rouge">col</code> field as <code class="language-plaintext highlighter-rouge">name</code>. You can add any
+number of filter sets by incrementing the parameters (e.g. <code class="language-plaintext highlighter-rouge">col2</code>, <code class="language-plaintext highlighter-rouge">op2</code>, and
+<code class="language-plaintext highlighter-rouge">val2</code>, etc.) For operators that support more than one value you can pass
+<code class="language-plaintext highlighter-rouge">val1=foo&amp;val1=bar</code>, etc.</p>
 
 <p>If the pinboard or answer you’re filtering already has one or more filters
-applied, the Runtime Filter(s) will act as an <code class="highlighter-rouge">AND</code> condition. This means that
+applied, the Runtime Filter(s) will act as an <code class="language-plaintext highlighter-rouge">AND</code> condition. This means that
 the data returned must meet the conditions of all filters - those supplied in
 the runtime filter, and those included in the pinboard or visualization itself.</p>
 
@@ -3357,18 +3358,18 @@ the runtime filter, and those included in the pinboard or visualization itself.<
 <p>You can use runtime filters on these data types:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">VARCHAR</code></li>
-  <li><code class="highlighter-rouge">INT64</code></li>
-  <li><code class="highlighter-rouge">INT32</code></li>
-  <li><code class="highlighter-rouge">FLOAT</code></li>
-  <li><code class="highlighter-rouge">DOUBLE</code></li>
-  <li><code class="highlighter-rouge">BOOLEAN</code></li>
-  <li><code class="highlighter-rouge">DATE</code></li>
-  <li><code class="highlighter-rouge">DATE_TIME</code></li>
-  <li><code class="highlighter-rouge">TIME</code></li>
+  <li><code class="language-plaintext highlighter-rouge">VARCHAR</code></li>
+  <li><code class="language-plaintext highlighter-rouge">INT64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">INT32</code></li>
+  <li><code class="language-plaintext highlighter-rouge">FLOAT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DOUBLE</code></li>
+  <li><code class="language-plaintext highlighter-rouge">BOOLEAN</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DATE</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DATE_TIME</code></li>
+  <li><code class="language-plaintext highlighter-rouge">TIME</code></li>
 </ul>
 
-<p>Note that for <code class="highlighter-rouge">DATE</code> and <code class="highlighter-rouge">DATE_TIME</code> values, you must specify the date in epoch
+<p>Note that for <code class="language-plaintext highlighter-rouge">DATE</code> and <code class="language-plaintext highlighter-rouge">DATE_TIME</code> values, you must specify the date in epoch
 time (also known as POSIX or Unix time).</p>
 
 <h2 id="example-uses">Example Uses</h2>

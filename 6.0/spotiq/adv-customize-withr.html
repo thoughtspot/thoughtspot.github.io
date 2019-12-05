@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Advanced R Customizations”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Advanced R Customizations”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Admins and users with the Has SpotIQ privilege can run an R script." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/spotiq/adv-customize-withr.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Advanced R Customizations”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/spotiq/adv-customize-withr.html"},"url":"https://docs.thoughtspot.com/6.0/spotiq/adv-customize-withr.html","headline":"[“Advanced R Customizations”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Admins and users with the Has SpotIQ privilege can run an R script.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Advanced R Customizations”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/spotiq/adv-customize-withr.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/spotiq/adv-customize-withr.html"},"description":"Admins and users with the Has SpotIQ privilege can run an R script.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3338,29 +3339,29 @@ install the package on your behalf.</p>
 the cluster’s R service. The system expects each script have a well-defined
 structure which is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
 &lt;Fill script body&gt;
 ####COLUMN BINDINGS (ONE PER LINE)####
 &lt;Fill column bindings here&gt;
 </code></pre></div></div>
 
 <p>The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. ThoughtSpot expects for each <code class="highlighter-rouge">.param</code><em>n</em> in R your script must
+in the R script. ThoughtSpot expects for each <code class="language-plaintext highlighter-rouge">.param</code><em>n</em> in R your script must
 provide a corresponding binding. The following pseudo code illustrates an R
 script in a form suitable for ThoughtSpot:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
 df &lt;- data.frame(.param0,.param1, ...);
 ...
 write.csv(..., file=#output_file#, ...);
 </code></pre></div></div>
 
-<p>Notice that <code class="highlighter-rouge">.param0</code> refers to first column in column binding and <code class="highlighter-rouge">.param1</code>
-refers to the second.  Should you need a third binding, you would use  <code class="highlighter-rouge">.param2</code>
+<p>Notice that <code class="language-plaintext highlighter-rouge">.param0</code> refers to first column in column binding and <code class="language-plaintext highlighter-rouge">.param1</code>
+refers to the second.  Should you need a third binding, you would use  <code class="language-plaintext highlighter-rouge">.param2</code>
 and so forth.</p>
 
 <p>The output of the script is either PNG or CSV. This example script uses
-<code class="highlighter-rouge">#output_csv#</code> to emit data in a CSV (tabular) format. Use <code class="highlighter-rouge">#output_png#</code> to
+<code class="language-plaintext highlighter-rouge">#output_csv#</code> to emit data in a CSV (tabular) format. Use <code class="language-plaintext highlighter-rouge">#output_png#</code> to
 emit data in PNG format.</p>
 
 <p>Presently, error reporting is limited for R scripts in SpotIQ. You should
@@ -3378,7 +3379,7 @@ column and a zip code column.</p>
   <li>Use <strong>Choose Sources</strong> to locate a source with sales and zip code data.
 This example uses <strong>Sporting Goods Retail Worksheet</strong> data.</li>
   <li>
-    <p>Enter <code class="highlighter-rouge">sales store zip code</code> in the search bar.</p>
+    <p>Enter <code class="language-plaintext highlighter-rouge">sales store zip code</code> in the search bar.</p>
 
     <p>If your source contains the proper data, you should see something similar to
 the following:</p>
@@ -3391,7 +3392,7 @@ the following:</p>
   <li>
     <p>Enter this sample script in the field.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ####R SCRIPT####
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ####R SCRIPT####
  library(ggplot2)
  set.seed(20)
  df &lt;- data.frame(.param0, .param1)
@@ -3400,11 +3401,11 @@ the following:</p>
  png(file=#output_file#,width=400,height=350,res=72)
  print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
 </code></pre></div>    </div>
-    <p>This script binds <code class="highlighter-rouge">.param0</code> to <code class="highlighter-rouge">Sales</code> and <code class="highlighter-rouge">.param1</code> to the <code class="highlighter-rouge">Store Zip Code</code>
+    <p>This script binds <code class="language-plaintext highlighter-rouge">.param0</code> to <code class="language-plaintext highlighter-rouge">Sales</code> and <code class="language-plaintext highlighter-rouge">.param1</code> to the <code class="language-plaintext highlighter-rouge">Store Zip Code</code>
  column.</p>
 
     <p>You can see from the script that the output should be PNG
- (<code class="highlighter-rouge">#output_png#</code>).</p>
+ (<code class="language-plaintext highlighter-rouge">#output_png#</code>).</p>
   </li>
   <li>For Select column(s) for R analysis, make sure that both <strong>Sales</strong> and <strong>Store Zip Code</strong> columns are selected.</li>
   <li>
@@ -3424,7 +3425,7 @@ the following:</p>
 
 <p>You can run another R script directly on this result to get CSV results. Try this on your own. Here is the script to give you CSV output:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>###R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>###R SCRIPT####
 set.seed(20);
 df &lt;- data.frame(.param0,.param1);
 cluster &lt;- kmeans(df[1:2], 3, nstart = 20);

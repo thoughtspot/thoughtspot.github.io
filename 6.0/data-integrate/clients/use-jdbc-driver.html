@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Use the JDBC Driver”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Use the JDBC Driver”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the JDBC driver." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/clients/use-jdbc-driver.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Use the JDBC Driver”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/use-jdbc-driver.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/use-jdbc-driver.html","headline":"[“Use the JDBC Driver”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the JDBC driver.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Use the JDBC Driver”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/use-jdbc-driver.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/use-jdbc-driver.html"},"description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the JDBC driver.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3320,7 +3321,7 @@ $('#toc').on('click', 'a', function() {
 X SDK</a> to connect through ODBC or JDBC to ThoughtSpot’s remote data stores. The
 instructions on this page explain how to configure the JDBC driver.</p>
 
-<p>The ThoughtSpot JDBC driver is supplied by a <code class="highlighter-rouge">.jar</code> file you install on a
+<p>The ThoughtSpot JDBC driver is supplied by a <code class="language-plaintext highlighter-rouge">.jar</code> file you install on a
 workstation. This workstation is the same machine where you plan to run your ETL
 activities.</p>
 
@@ -3336,7 +3337,7 @@ activities.</p>
   <tbody>
     <tr>
       <td>Driver name</td>
-      <td><code class="highlighter-rouge">com.simba.client.core.jdbc4.SCJDBC4Driver</code></td>
+      <td><code class="language-plaintext highlighter-rouge">com.simba.client.core.jdbc4.SCJDBC4Driver</code></td>
     </tr>
     <tr>
       <td>Server IP address</td>
@@ -3344,7 +3345,7 @@ activities.</p>
     </tr>
     <tr>
       <td>Simba port</td>
-      <td>The simba port, which is <code class="highlighter-rouge">12345</code> by default.</td>
+      <td>The simba port, which is <code class="language-plaintext highlighter-rouge">12345</code> by default.</td>
     </tr>
     <tr>
       <td>Database name</td>
@@ -3378,7 +3379,7 @@ activities.</p>
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
+  <li>SSH as <code class="language-plaintext highlighter-rouge">admin</code> or the <code class="language-plaintext highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -3389,18 +3390,18 @@ intend to connect your server to.</p>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
   <li>Configure the ThoughtSpot firewall to allow connections from your ETL client, by running the following command on any ThoughtSpot node:
-<code class="highlighter-rouge">tscli firewall open-ports --ports 12345</code></li>
+<code class="language-plaintext highlighter-rouge">tscli firewall open-ports --ports 12345</code></li>
   <li>Exit or close the shell.</li>
 </ol>
 
 <h2 id="install-the-driver">Install the driver</h2>
 
-<p>The JDBC driver is a <code class="highlighter-rouge">.jar</code> packaged application. To use the package, you download it, install it</p>
+<p>The JDBC driver is a <code class="language-plaintext highlighter-rouge">.jar</code> packaged application. To use the package, you download it, install it</p>
 
 <ol>
   <li>Log in to the local machine where you want to install the JDBC driver.</li>
   <li>Click <a href="/6.0/release/downloads.html"><strong>Here</strong></a> to download the JDBC driver.</li>
-  <li>Click <strong>JDBC Driver</strong> to download the file <code class="highlighter-rouge">thoughtspot_jdbc&lt;version&gt;.jar</code>.</li>
+  <li>Click <strong>JDBC Driver</strong> to download the file <code class="language-plaintext highlighter-rouge">thoughtspot_jdbc&lt;version&gt;.jar</code>.</li>
   <li>Move the driver to the desired directory on your local machine.</li>
   <li>Add the downloaded JDBC driver to your Java class path on the local machine.</li>
 </ol>
@@ -3413,32 +3414,32 @@ connection, execute statements, and close the connection.</p>
 
 <p>Specify each of the nodes in the cluster in the connection string, as shown.
 This enables high availability for JDBC connections. To find out the nodes in
-the cluster, you can run the command <code class="highlighter-rouge">tscli node ls</code> from the Linux shell on the
+the cluster, you can run the command <code class="language-plaintext highlighter-rouge">tscli node ls</code> from the Linux shell on the
 ThoughtSpot instance.</p>
 
 <p>The format for the connection is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://&lt;node1&gt;:12345,&lt;node2&gt;:12345,&lt;node3&gt;:12345[,…];
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://&lt;node1&gt;:12345,&lt;node2&gt;:12345,&lt;node3&gt;:12345[,…];
            LoginTimeout=&lt;seconds&gt;;DATABASE=&lt;db&gt;;SCHEMA=&lt;schema&gt;
 </code></pre></div></div>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc:simba://192.168.2.248:12345,192.168.2.249:12345,192.168.2.247:12345;
            LoginTimeout=5;DATABASE=test;SCHEMA=falcon_default_schema
 </code></pre></div></div>
 
-<p>As shown, the <code class="highlighter-rouge">DATABASE</code> and <code class="highlighter-rouge">SCHEMA</code> parameters need to be in all caps. For the <code class="highlighter-rouge">simba</code> JDBC driver to work with Spark, the <code class="highlighter-rouge">DATABASE</code> and <code class="highlighter-rouge">SCHEMA</code> must be specified in the URL. They cannot be specified as a name/value pair as a map or property. For example:</p>
+<p>As shown, the <code class="language-plaintext highlighter-rouge">DATABASE</code> and <code class="language-plaintext highlighter-rouge">SCHEMA</code> parameters need to be in all caps. For the <code class="language-plaintext highlighter-rouge">simba</code> JDBC driver to work with Spark, the <code class="language-plaintext highlighter-rouge">DATABASE</code> and <code class="language-plaintext highlighter-rouge">SCHEMA</code> must be specified in the URL. They cannot be specified as a name/value pair as a map or property. For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" -&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" -&gt;
 "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" -&gt;
 "com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -&gt; "Movies", "user" -&gt;
 "tsadmin", "password" -&gt; "admin")).load()
 </code></pre></div></div>
 
-<p>This <code class="highlighter-rouge">InsertData.java</code> example shows how to use ThoughtSpot with JDBC. This is an example of a reference JDBC application:</p>
+<p>This <code class="language-plaintext highlighter-rouge">InsertData.java</code> example shows how to use ThoughtSpot with JDBC. This is an example of a reference JDBC application:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.sql.DriverManager;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Overview of the ODBC Driver”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Overview of the ODBC Driver”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/clients/about-odbc.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Overview of the ODBC Driver”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/about-odbc.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/about-odbc.html","headline":"[“Overview of the ODBC Driver”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Overview of the ODBC Driver”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/clients/about-odbc.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/clients/about-odbc.html"},"description":"ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3341,17 +3342,17 @@ combination with the driver.  For detailed information about connection paramete
 <p>The ODBC driver supports these data types:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">INT</code></li>
-  <li><code class="highlighter-rouge">BIGINT</code></li>
-  <li><code class="highlighter-rouge">BOOLEAN</code></li>
-  <li><code class="highlighter-rouge">DOUBLE</code></li>
-  <li><code class="highlighter-rouge">FLOAT</code></li>
-  <li><code class="highlighter-rouge">DATE</code></li>
-  <li><code class="highlighter-rouge">TIME</code></li>
-  <li><code class="highlighter-rouge">TIMESTAMP</code></li>
-  <li><code class="highlighter-rouge">DATETIME</code></li>
-  <li><code class="highlighter-rouge">CHAR</code></li>
-  <li><code class="highlighter-rouge">VARCHAR</code></li>
+  <li><code class="language-plaintext highlighter-rouge">INT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">BIGINT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">BOOLEAN</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DOUBLE</code></li>
+  <li><code class="language-plaintext highlighter-rouge">FLOAT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DATE</code></li>
+  <li><code class="language-plaintext highlighter-rouge">TIME</code></li>
+  <li><code class="language-plaintext highlighter-rouge">TIMESTAMP</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DATETIME</code></li>
+  <li><code class="language-plaintext highlighter-rouge">CHAR</code></li>
+  <li><code class="language-plaintext highlighter-rouge">VARCHAR</code></li>
 </ul>
 
 <h2 id="source-and-target-data-compatibility">Source and target data compatibility</h2>
@@ -3367,7 +3368,7 @@ load fails. In this mode, for example, if the target ThoughtSpot data type for a
 column is INT, the source data type for that column must be INT in order for the
 data load to succeed.</p>
 
-<p>By toggling <em><strong>strict</strong></em> and <em><strong>permissive</strong></em> <code class="highlighter-rouge">true</code> and <code class="highlighter-rouge">false</code> options, you
+<p>By toggling <em><strong>strict</strong></em> and <em><strong>permissive</strong></em> <code class="language-plaintext highlighter-rouge">true</code> and <code class="language-plaintext highlighter-rouge">false</code> options, you
 can configure settings along a scale of behavior between the permissive,
 automatic approach and the strictness of the “must match” approach.</p>
 
@@ -3420,7 +3421,7 @@ ThoughtSpot data types.</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">SQL_BIT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_BIT</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3432,7 +3433,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_TINYINT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_TINYINT</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3444,7 +3445,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_SMALLINT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_SMALLINT</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3456,7 +3457,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTEGER</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTEGER</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3468,7 +3469,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_BIGINT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_BIGINT</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3480,7 +3481,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_CHAR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_CHAR</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3492,7 +3493,7 @@ ThoughtSpot data types.</p>
       <td>Y</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_VARCHAR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_VARCHAR</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3504,7 +3505,7 @@ ThoughtSpot data types.</p>
       <td>Y</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_LONGVARCHAR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_LONGVARCHAR</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3516,7 +3517,7 @@ ThoughtSpot data types.</p>
       <td>Y</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_BINARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_BINARY</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3528,7 +3529,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_VARBINARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_VARBINARY</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3540,7 +3541,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_LONGVARBINARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_LONGVARBINARY</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3552,7 +3553,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_DOUBLE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_DOUBLE</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3564,7 +3565,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_REAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_REAL</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3576,7 +3577,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_FLOAT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_FLOAT</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3588,7 +3589,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_NUMERIC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_NUMERIC</code></td>
       <td>Y</td>
       <td>Y</td>
       <td>Y</td>
@@ -3600,7 +3601,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_GUID</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_GUID</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3612,7 +3613,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_MINUTE_TO_SECOND</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_MINUTE_TO_SECOND</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3624,7 +3625,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_HOUR_TO_SECOND</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_HOUR_TO_SECOND</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3636,7 +3637,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_HOUR_TO_MINUTE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_HOUR_TO_MINUTE</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3648,7 +3649,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_DAY_TO_SECOND</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_DAY_TO_SECOND</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3660,7 +3661,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_DAY_TO_MINUTE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_DAY_TO_MINUTE</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3672,7 +3673,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_DAY_TO_HOUR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_DAY_TO_HOUR</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3684,7 +3685,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_YEAR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_YEAR</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3696,7 +3697,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_MONTH</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_MONTH</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3708,7 +3709,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_DAY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_DAY</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3720,7 +3721,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_HOUR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_HOUR</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3732,7 +3733,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_MINUTE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_MINUTE</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3744,7 +3745,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_INTERVAL_SECOND</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_INTERVAL_SECOND</code></td>
       <td>–</td>
       <td>Y</td>
       <td>Y</td>
@@ -3756,7 +3757,7 @@ ThoughtSpot data types.</p>
       <td>–</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_TYPE_TIME</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_TYPE_TIME</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3768,7 +3769,7 @@ ThoughtSpot data types.</p>
       <td>Y</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_TYPE_DATE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_TYPE_DATE</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
@@ -3780,7 +3781,7 @@ ThoughtSpot data types.</p>
       <td>Y</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SQL_TYPE_TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SQL_TYPE_TIMESTAMP</code></td>
       <td>–</td>
       <td>–</td>
       <td>–</td>
