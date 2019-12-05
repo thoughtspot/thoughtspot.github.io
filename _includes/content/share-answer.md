@@ -1,7 +1,10 @@
 ![Learn how to save and share answers.]({{ site.baseurl }}/images/sharinganswers.gif "Learn how to save and share answers.")
 
 Whenever you view an answer, you have the option of sharing it with others. The answer appears in its most recent state when you share it. For example, if you add a filter after saving the answer and then share it, the answer you share has that filter.
-1. Configure the answer to look exactly like it must appear when shared.
+
+Follow these steps to share an answer.
+
+1. Configure the answer to look exactly like it must appear when you share it.
 2. Save the answer by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
     ![Click the ellipsis icon and then click save to save an answer.]({{ site.baseurl }}/images/sharing-save-answer.png "Click the ellipsis icon and then click save to save an answer.")
