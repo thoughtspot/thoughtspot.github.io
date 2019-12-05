@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Configure NAS file system”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure NAS file system”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="About NAS mount" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/NAS-mount.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Configure NAS file system”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/NAS-mount.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/NAS-mount.html","headline":"[“Configure NAS file system”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"About NAS mount","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Configure NAS file system”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/NAS-mount.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/NAS-mount.html"},"description":"About NAS mount","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3321,16 +3322,16 @@ $('#toc').on('click', 'a', function() {
 <p>ThoughtSpot enables you to mount a NAS file system for storing or accessing
 large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found.</p>
 
-<p>When supplying a directory for writing or reading a backup, you can specify the <code class="highlighter-rouge">mount</code> point as the directory to use. Likewise, you can stage data there for
+<p>When supplying a directory for writing or reading a backup, you can specify the <code class="language-plaintext highlighter-rouge">mount</code> point as the directory to use. Likewise, you can stage data there for
 loading.</p>
 
-<p>Backups are written by the Linux user <code class="highlighter-rouge">admin</code>. If that user does not have
+<p>Backups are written by the Linux user <code class="language-plaintext highlighter-rouge">admin</code>. If that user does not have
 permission to write to the NAS file system, you can write the backups to a disk
-(for example <code class="highlighter-rouge">/export/sdc1</code>, <code class="highlighter-rouge">/export/sdd1</code>, <code class="highlighter-rouge">/export/sde1</code>, or <code class="highlighter-rouge">/export/sdf1</code>)
+(for example <code class="language-plaintext highlighter-rouge">/export/sdc1</code>, <code class="language-plaintext highlighter-rouge">/export/sdd1</code>, <code class="language-plaintext highlighter-rouge">/export/sde1</code>, or <code class="language-plaintext highlighter-rouge">/export/sdf1</code>)
 and then set up a cron job that executes as root user and copies the backup to
 the NAS device every night, then deletes it from the directory.</p>
 
-<p>Do not send the periodic backups or stage files on <code class="highlighter-rouge">/export/sdb1</code> since it is a
+<p>Do not send the periodic backups or stage files on <code class="language-plaintext highlighter-rouge">/export/sdb1</code> since it is a
 name node. It is used internally by Hadoop Distributed File System (HDFS) and if
 this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
@@ -3409,22 +3410,22 @@ To mount a NAS file system using the admin UI:
       <li>
         <p>Example for an NFS (Network File System) directory:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas mount-nfs --server storageservername.file.yourdomain.net
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas mount-nfs --server storageservername.file.yourdomain.net
    --path_on_server &lt;path&gt;  /tsdev-backup --mount_point /export/BACKUPS/
    --options vers=&lt;version&gt;,sec=&lt;security scheme&gt;,&lt;OPTIONS&gt;
 </code></pre></div>        </div>
 
-        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Other command-line options are available to forward to the command (default: <code class="highlighter-rouge">noexec</code>).</div>
+        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Other command-line options are available to forward to the command (default: <code class="language-plaintext highlighter-rouge">noexec</code>).</div>
       </li>
       <li>
         <p>Example for a CIFS (Common Internet File System) directory:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas mount-cifs --server storageservername.file.yourdomain.net
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas mount-cifs --server storageservername.file.yourdomain.net
   --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
   --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
 </code></pre></div>        </div>
 
-        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Other command-line options are available to forward to the <code class="highlighter-rouge">mount.cifs</code> command (default: <code class="highlighter-rouge">noexec</code>).</div>
+        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Other command-line options are available to forward to the <code class="language-plaintext highlighter-rouge">mount.cifs</code> command (default: <code class="language-plaintext highlighter-rouge">noexec</code>).</div>
       </li>
     </ul>
   </li>
@@ -3434,7 +3435,7 @@ To mount a NAS file system using the admin UI:
   <li>
     <p>When you are finished with it, you can optionally unmount the NAS file system:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli nas unmount --dir &lt;directory&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli nas unmount --dir &lt;directory&gt;
 </code></pre></div>    </div>
   </li>
 </ol>

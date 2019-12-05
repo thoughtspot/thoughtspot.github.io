@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Cluster Manager board”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Cluster Manager board”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The Cluster Manager section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/system-monitor/cluster-manager.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Cluster Manager board”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/system-monitor/cluster-manager.html"},"url":"https://docs.thoughtspot.com/6.0/admin/system-monitor/cluster-manager.html","headline":"[“Cluster Manager board”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"The Cluster Manager section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Cluster Manager board”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/system-monitor/cluster-manager.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/system-monitor/cluster-manager.html"},"description":"The Cluster Manager section show detailed information about a cluster including latency over time, snapshot status, installed release, node functions, and logs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3383,7 +3384,7 @@ that are not accessible. You can, however, <strong>Present</strong> or <strong>C
    </tr>
 </table>
 
-<p>You can also use the <code class="highlighter-rouge">tscli logs</code> command to review log data from your cluster.</p>
+<p>You can also use the <code class="language-plaintext highlighter-rouge">tscli logs</code> command to review log data from your cluster.</p>
 
 <h2 id="list-of-snapshots">List of Snapshots</h2>
 
@@ -3427,11 +3428,11 @@ The fields on this visualization has the following meaning:</p>
 
 <h2 id="average-latency-last-2-weeks-sec">Average Latency Last 2 Weeks (sec)</h2>
 
-<p>This visualization relies on the <code class="highlighter-rouge">TS: BI Server</code> worksheet to display the
+<p>This visualization relies on the <code class="language-plaintext highlighter-rouge">TS: BI Server</code> worksheet to display the
 average database latency over the last 15 days. The database latency measures how long it takes for a search to return data from ThoughtSpot - this does not include the time taken to send the answer back to the client, it measures internal processing time. You can use the visualization
 menu to drill down to its underlying query:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>average datacache (sec)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>average datacache (sec)
 average total (sec)
 daily
 last 15 days
@@ -3440,7 +3441,7 @@ for database latency (us) &gt; 0
 
 <h2 id="related-information">Related information</h2>
 
-<p><a href="/6.0/reference/tscli-command-ref.html#logs"><code class="highlighter-rouge">tscli logs</code> command</a></p>
+<p><a href="/6.0/reference/tscli-command-ref.html#logs"><code class="language-plaintext highlighter-rouge">tscli logs</code> command</a></p>
 
   <div class="tags">
     <div style="float:right;">

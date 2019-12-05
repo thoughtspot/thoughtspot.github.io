@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Configure trusted authentication”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure trusted authentication”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate one time, with the trusted authentication server." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/trusted-authentication.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Configure trusted authentication”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/trusted-authentication.html"},"url":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/trusted-authentication.html","headline":"[“Configure trusted authentication”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate one time, with the trusted authentication server.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Configure trusted authentication”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/trusted-authentication.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/embedding-viz/trusted-authentication.html"},"description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate one time, with the trusted authentication server.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3326,7 +3327,7 @@ authenticated server.</p>
   <li>
     <p>Enable trusted authentication and generate an authenticate token.  (service secret)  – used to identify the server to ThoughtSpot.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [admin@ourthoughtspot ~]$ tscli tokenauthentication enable
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [admin@ourthoughtspot ~]$ tscli tokenauthentication enable
 
  Token generated. Copy the GUID in the box.
 
@@ -3344,7 +3345,7 @@ knowledge of them.  At any point in time, your installation can have a single
 authentication token. Repeated calls to enable overwrite the existing token and
 return a new one. To disable a token and not overwrite it:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli tokenauthentication disable
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli tokenauthentication disable
 </code></pre></div></div>
 
 <p>Generated tokens do not expire.</p>
@@ -3359,16 +3360,16 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <ul>
       <li>if the requestor is itself authenticated with your server</li>
-      <li>which user (<code class="highlighter-rouge">username</code>) is making the request</li>
+      <li>which user (<code class="language-plaintext highlighter-rouge">username</code>) is making the request</li>
       <li>what is being requested, an object, page, or the entire ThoughtSpot application</li>
     </ul>
 
-    <p>It is also important the the <code class="highlighter-rouge">username</code> is a match for a <code class="highlighter-rouge">username</code> on the ThoughtSpot application.</p>
+    <p>It is also important the the <code class="language-plaintext highlighter-rouge">username</code> is a match for a <code class="language-plaintext highlighter-rouge">username</code> on the ThoughtSpot application.</p>
   </li>
   <li>
     <p>The trusted web server requests an authentication token on the user’s behalf from ThoughtSpot.</p>
 
-    <p><code class="highlighter-rouge">POST https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/auth/token</code></p>
+    <p><code class="language-plaintext highlighter-rouge">POST https://&lt;instance&gt;/callosum/v1/tspublic/v1/session/auth/token</code></p>
 
     <p>This post takes the following parameters:</p>
 
@@ -3406,7 +3407,7 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <p>For example, if the customer was requesting a specific object:</p>
 
-    <p><code class="highlighter-rouge">GET https://&lt;instance&gt;/callosum/v1/session/login/token?username=&lt;user&gt;&amp;auth_token=&lt;token&gt;&amp;redirect_url=&lt;full-encoded-url-with-auth-token&gt;</code></p>
+    <p><code class="language-plaintext highlighter-rouge">GET https://&lt;instance&gt;/callosum/v1/session/login/token?username=&lt;user&gt;&amp;auth_token=&lt;token&gt;&amp;redirect_url=&lt;full-encoded-url-with-auth-token&gt;</code></p>
 
     <p>If you are using ThoughtSpot embed with objects or pages, you must request
  reauthenticate requests for each new object.</p>

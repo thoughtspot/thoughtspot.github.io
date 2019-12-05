@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Parameters of the nodes.config file”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Parameters of the nodes.config file”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Using the nodes.config file As you install your appliance, you must configure the nodes." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Parameters of the nodes.config file”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html"},"url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html","headline":"[“Parameters of the nodes.config file”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Using the nodes.config file As you install your appliance, you must configure the nodes.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Parameters of the nodes.config file”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html"},"description":"Using the nodes.config file As you install your appliance, you must configure the nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3320,14 +3321,14 @@ $('#toc').on('click', 'a', function() {
 <p>As you install your appliance, you must configure the nodes.</p>
 
 <ol>
-  <li>Run <code class="highlighter-rouge">tscli cluster get-config |&amp; tee nodes.config</code> in your terminal.</li>
-  <li>Add network information for your nodes in the <code class="highlighter-rouge">nodes.config</code> file output, as demonstrated in <a href="/6.0/appliance/hardware/nodesconfig-example.html">the nodes.config file</a> example. Fill in the areas specified in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="highlighter-rouge">nodes.config</code></a> with your specific network information.</li>
-  <li>If you have  additional nodes, complete each node within the nodes.config file in <a href="/6.0/appliance/hardware/nodesconfig-example.html">the <code class="highlighter-rouge">nodes.config</code> file</a> example.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">tscli cluster get-config |&amp; tee nodes.config</code> in your terminal.</li>
+  <li>Add network information for your nodes in the <code class="language-plaintext highlighter-rouge">nodes.config</code> file output, as demonstrated in <a href="/6.0/appliance/hardware/nodesconfig-example.html">the nodes.config file</a> example. Fill in the areas specified in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="language-plaintext highlighter-rouge">nodes.config</code></a> with your specific network information.</li>
+  <li>If you have  additional nodes, complete each node within the nodes.config file in <a href="/6.0/appliance/hardware/nodesconfig-example.html">the <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a> example.</li>
 </ol>
 
-<p>Make sure that you do not edit any part of the nodes.config file except the sections explained in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="highlighter-rouge">nodes.config</code></a>. Deleting quotation marks, commas, or other parts of the code could cause setup to fail.</p>
+<p>Make sure that you do not edit any part of the nodes.config file except the sections explained in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="language-plaintext highlighter-rouge">nodes.config</code></a>. Deleting quotation marks, commas, or other parts of the code could cause setup to fail.</p>
 
-<p>See <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="highlighter-rouge">nodes.config</code></a> to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.</p>
+<p>See <a href="/6.0/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config">Parameters of <code class="language-plaintext highlighter-rouge">nodes.config</code></a> to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.</p>
 
 <h3 id="parameters-nodes.config">Parameters of the nodes.config file</h3>
 
@@ -3365,7 +3366,7 @@ $('#toc').on('click', 'a', function() {
   <li><a href="/6.0/appliance/vmware/installing-vmware.html">Installing VMware</a></li>
   <li><a href="/6.0/appliance/azure/installing-azure.html">Installing Azure</a></li>
   <li><a href="/6.0/appliance/hardware/installing-dell.html">Installing the Dell Appliance</a></li>
-  <li><a href="/6.0/appliance/hardware/nodesconfig-example.html">The <code class="highlighter-rouge">nodes.config</code> file</a></li>
+  <li><a href="/6.0/appliance/hardware/nodesconfig-example.html">The <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a></li>
 </ul>
 
   <div class="tags">

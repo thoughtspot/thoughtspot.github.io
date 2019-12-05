@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“How to change a schema”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“How to change a schema”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don’t lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/loading/change-schema.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“How to change a schema”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/loading/change-schema.html"},"url":"https://docs.thoughtspot.com/6.0/admin/loading/change-schema.html","headline":"[“How to change a schema”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don’t lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“How to change a schema”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/loading/change-schema.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/loading/change-schema.html"},"description":"Making changes to a schema after data has been loaded and users have created worksheets or pinboards on the tables requires care, so that you don’t lose the relationship between the objects created in ThoughtSpot and the underlying tables. If you follow the procedures here, your tables will retain their relationships to the objects created on top of them.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3324,7 +3325,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Use this procedure to change the primary key for a table. But use it with caution, particularly if you are changing to a primary key for which values are not unique.</p>
 
-<p>You can change the primary key of a table without having to <code class="highlighter-rouge">TRUNCATE</code> it first and reload the data. However, changing the primary key could result in data deletion. This is because of the upsert behavior which is applied when multiple rows have the same primary key. This is very important to understand ahead of time, if you are considering changing to a primary key for which values are not unique.</p>
+<p>You can change the primary key of a table without having to <code class="language-plaintext highlighter-rouge">TRUNCATE</code> it first and reload the data. However, changing the primary key could result in data deletion. This is because of the upsert behavior which is applied when multiple rows have the same primary key. This is very important to understand ahead of time, if you are considering changing to a primary key for which values are not unique.</p>
 
 <p>To change the primary key, first remove any existing primary key, and then define a new one (if any). You do not have to truncate the tables to do this operation beginning in version 3.2. Any dependent objects (pinboards or worksheets) will remain intact.</p>
 
@@ -3336,17 +3337,17 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Drop the existing primary key (if any), by issuing a command like this example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       DROP CONSTRAINT
       PRIMARY KEY;
 </code></pre></div>    </div>
 
-    <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.</p>
+    <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the <code class="language-plaintext highlighter-rouge">--allow_unsafe</code> flag.</p>
   </li>
   <li>
     <p>Add a new primary key, if desired:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       ADD CONSTRAINT
       PRIMARY KEY ("owner_id");
 </code></pre></div>    </div>
@@ -3355,7 +3356,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3375,12 +3376,12 @@ $('#toc').on('click', 'a', function() {
     <p>Issue the command to drop the existing relationship</p>
 
     <p>Before dropping a relationship TQL checks for and then warns of any dependent
-objects. To continue with the drop any way, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.
+objects. To continue with the drop any way, use the <code class="language-plaintext highlighter-rouge">--allow_unsafe</code> flag.
 The following examples illustrate several different types of drop operations.</p>
 
     <p>Drop a foreign key by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE
       "sales_fact"
       DROP CONSTRAINT
       "FK_PO_number";
@@ -3388,31 +3389,31 @@ The following examples illustrate several different types of drop operations.</p
 
     <p>Drop a relationship by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
  TQL&gt; ALTER TABLE "fruit_dim"
       DROP RELATIONSHIP "REL_dates";
 </code></pre></div>    </div>
 
     <p>Drop the foreign key relationship explicitly, if it doesn’t have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
       DROP CONSTRAINT
       FOREIGN KEY "orders";
 </code></pre></div>    </div>
 
     <p>Drop all generic relationships between two tables:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
       DROP RELATIONSHIP
       WITH "retail_sales";
 </code></pre></div>    </div>
   </li>
-  <li>Define a new relationship, if you want to, using <code class="highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
+  <li>Define a new relationship, if you want to, using <code class="language-plaintext highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
   <li>Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.</li>
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3439,7 +3440,7 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Issue the command to change the sharding using this syntax:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
      [SET DIMENSION | SET FACT
      [PARTITION BY HASH
      [(&lt;shards&gt;)]
@@ -3452,14 +3453,14 @@ The following examples illustrate several different types of drop operations.</p
       <li>
         <p>To make a sharded table into a dimension table (replicated on every node), use:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "products"
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "products"
    SET DIMENSION;
 </code></pre></div>        </div>
       </li>
       <li>
         <p>To make a dimension table into a sharded (fact) table or change the number of shards, use:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "sales"
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "sales"
    SET FACT PARTITION BY HASH (96)
    KEY ("productID");
 </code></pre></div>        </div>
@@ -3470,7 +3471,7 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>

@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Supported SQL commands”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Supported SQL commands”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot through the ODBC or JDBC driver." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/reference/odbc-commands.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Supported SQL commands”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/reference/odbc-commands.html"},"url":"https://docs.thoughtspot.com/6.0/data-integrate/reference/odbc-commands.html","headline":"[“Supported SQL commands”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot through the ODBC or JDBC driver.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Supported SQL commands”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/reference/odbc-commands.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/reference/odbc-commands.html"},"description":"The ODBC and JDBC drivers support a limited set of SQL commands. When developing software that uses a ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot through the ODBC or JDBC driver.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3321,7 +3322,7 @@ software that uses a ThoughtSpot ODBC driver, use this reference of supported
 commands. This reference is intended for developers using other tools (ETL,
 etc.) to connect to ThoughtSpot through the ODBC or JDBC driver.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot displays <code class="highlighter-rouge">VARCHAR</code> fields using lower case, regardless of what the original casing of your loaded data is.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot displays <code class="language-plaintext highlighter-rouge">VARCHAR</code> fields using lower case, regardless of what the original casing of your loaded data is.</div>
 
 <h2 id="odbc">ODBC</h2>
 
@@ -3329,42 +3330,42 @@ etc.) to connect to ThoughtSpot through the ODBC or JDBC driver.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">CREATE TABLE</code></p>
+    <p><code class="language-plaintext highlighter-rouge">CREATE TABLE</code></p>
 
     <p>Creates a table with the specified column definitions and constraints. The table is replicated on each node.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  CREATE TABLE country_dim (id_number int, country varchar, CONSTRAINT PRIMARY KEY (id_number));
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  CREATE TABLE country_dim (id_number int, country varchar, CONSTRAINT PRIMARY KEY (id_number));
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">INSERT</code></p>
+    <p><code class="language-plaintext highlighter-rouge">INSERT</code></p>
 
     <p>Creates placeholders in the table to receive the data.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  INSERT INTO TABLE country_dim (?, ?);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  INSERT INTO TABLE country_dim (?, ?);
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">DELETE FROM &lt;table&gt;</code></p>
+    <p><code class="language-plaintext highlighter-rouge">DELETE FROM &lt;table&gt;</code></p>
 
-    <p>Deletes <code class="highlighter-rouge">ALL</code> rows from the specified table. Use the <code class="highlighter-rouge">WHERE</code> clause to specify only certain rows to be deleted. Example: You could remove all data for sales before a certain date to free up space in ThoughtSpot.</p>
+    <p>Deletes <code class="language-plaintext highlighter-rouge">ALL</code> rows from the specified table. Use the <code class="language-plaintext highlighter-rouge">WHERE</code> clause to specify only certain rows to be deleted. Example: You could remove all data for sales before a certain date to free up space in ThoughtSpot.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DELETE FROM country_dim;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DELETE FROM country_dim;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">SELECT &lt;cols_or_expression&gt; FROM &lt;table_list&gt; [WHERE &lt;predicates&gt;] [GROUP BY &lt;expressions&gt;]</code><code class="highlighter-rouge">[ORDER BY &lt;expressions&gt;]</code></p>
+    <p><code class="language-plaintext highlighter-rouge">SELECT &lt;cols_or_expression&gt; FROM &lt;table_list&gt; [WHERE &lt;predicates&gt;] [GROUP BY &lt;expressions&gt;]</code><code class="language-plaintext highlighter-rouge">[ORDER BY &lt;expressions&gt;]</code></p>
 
     <p>Fetches the specified set of table data.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SELECT id_number, country FROM country_dim WHERE id_number &gt; 200;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SELECT id_number, country FROM country_dim WHERE id_number &gt; 200;
 </code></pre></div>    </div>
   </li>
 </ul>
 
 <h2 id="jdbc">JDBC</h2>
 
-<p><code class="highlighter-rouge">TRUNCATE</code> is not supported. Instead, use <code class="highlighter-rouge">DELETE FROM TABLE</code> which is
+<p><code class="language-plaintext highlighter-rouge">TRUNCATE</code> is not supported. Instead, use <code class="language-plaintext highlighter-rouge">DELETE FROM TABLE</code> which is
 functionally equivalent to “truncate table” in terms of table compression and so
 forth.</p>
 

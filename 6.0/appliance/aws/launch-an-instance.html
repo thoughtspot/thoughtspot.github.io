@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Set up ThoughtSpot in AWS”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set up ThoughtSpot in AWS”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Overview of ThoughtSpot setup in AWS The high-level process for setting up ThoughtSpot in AWS involves these steps: Gain access to ThoughtSpot AMIs. Choose a VM instance configuration recommended by ThoughtSpot. Set up your Amazon S3 bucket (optional). Set up your ThoughtSpot cluster in AWS. Contact ThoughtSpot to finish setting up your cluster. Open the required network ports for communication for the nodes in your cluster and end users." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Set up ThoughtSpot in AWS”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html"},"url":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html","headline":"[“Set up ThoughtSpot in AWS”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Overview of ThoughtSpot setup in AWS The high-level process for setting up ThoughtSpot in AWS involves these steps: Gain access to ThoughtSpot AMIs. Choose a VM instance configuration recommended by ThoughtSpot. Set up your Amazon S3 bucket (optional). Set up your ThoughtSpot cluster in AWS. Contact ThoughtSpot to finish setting up your cluster. Open the required network ports for communication for the nodes in your cluster and end users.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Set up ThoughtSpot in AWS”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS The high-level process for setting up ThoughtSpot in AWS involves these steps: Gain access to ThoughtSpot AMIs. Choose a VM instance configuration recommended by ThoughtSpot. Set up your Amazon S3 bucket (optional). Set up your ThoughtSpot cluster in AWS. Contact ThoughtSpot to finish setting up your cluster. Open the required network ports for communication for the nodes in your cluster and end users.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3494,7 +3495,7 @@ with your ThoughtSpot Customer Service or Support Engineer on these steps.</div>
 each VM through SSH as user “admin”, and complete the following preparation steps:</p>
 
 <ol>
-  <li>Run <code class="highlighter-rouge">sudo /usr/local/scaligent/bin/prepare_disks.sh</code> on every machine.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo /usr/local/scaligent/bin/prepare_disks.sh</code> on every machine.</li>
   <li>
     <p>Configure each VM based on the site-survey.</p>
 
@@ -3507,7 +3508,7 @@ each VM through SSH as user “admin”, and complete the following preparation 
 <p>Upload the TS tarball to one of the VMs, and proceed with the normal
 cluster creation process, using <a href="/6.0/reference/tscli-command-ref.html#cluster">tscli cluster create</a>.</p>
 
-<p>If you are going to use S3 as your persistent storage, you must enable it when running this command, using the <strong>enable_cloud_storage</strong> flag. Example: <code class="highlighter-rouge">tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a</code></p>
+<p>If you are going to use S3 as your persistent storage, you must enable it when running this command, using the <strong>enable_cloud_storage</strong> flag. Example: <code class="language-plaintext highlighter-rouge">tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a</code></p>
 
 <p>When the setup is complete, you can load data into ThoughtSpot for search analytics.</p>
 

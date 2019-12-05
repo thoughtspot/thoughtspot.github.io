@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Add a geographical data setting”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Add a geographical data setting”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Add a geographical data setting”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html"},"url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html","headline":"[“Add a geographical data setting”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Add a geographical data setting”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html"},"description":"Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3318,24 +3319,24 @@ $('#toc').on('click', 'a', function() {
 GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US
 Counties, Countries, and select international sub-nation regions.</p>
 
-<p>You can designate a column as <code class="highlighter-rouge">Geo</code> by editing the <strong>GEO CONFIG</strong> column in the
+<p>You can designate a column as <code class="language-plaintext highlighter-rouge">Geo</code> by editing the <strong>GEO CONFIG</strong> column in the
 table <strong>Columns</strong> page. You cannot edit the geo configuration column information
-in the <code class="highlighter-rouge">model.xls</code> file.</p>
+in the <code class="language-plaintext highlighter-rouge">model.xls</code> file.</p>
 
 <h2 id="guidelines-for-geographic-columns">Guidelines for geographic columns</h2>
 
-<p>Columns that can be designated as <code class="highlighter-rouge">Geo</code> columns need to contain text (<code class="highlighter-rouge">VARCHAR</code>)
+<p>Columns that can be designated as <code class="language-plaintext highlighter-rouge">Geo</code> columns need to contain text (<code class="language-plaintext highlighter-rouge">VARCHAR</code>)
 data unless they contain latitude/longitude data. Latitude and longitude columns
-can contain numeric data (<code class="highlighter-rouge">DOUBLE</code>) or text.</p>
+can contain numeric data (<code class="language-plaintext highlighter-rouge">DOUBLE</code>) or text.</p>
 
-<p>If you are using a column with the data type <code class="highlighter-rouge">DOUBLE</code> for latitude and
+<p>If you are using a column with the data type <code class="language-plaintext highlighter-rouge">DOUBLE</code> for latitude and
 longitude, you will also need to change the following settings for those
 columns:</p>
 
 <ul>
-  <li>set <strong>Column Type</strong> to <code class="highlighter-rouge">ATTRIBUTE</code></li>
-  <li>set <strong>Additive</strong> to <code class="highlighter-rouge">NO</code></li>
-  <li>set <strong>Aggregation Type</strong> to <code class="highlighter-rouge">NONE</code></li>
+  <li>set <strong>Column Type</strong> to <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code></li>
+  <li>set <strong>Additive</strong> to <code class="language-plaintext highlighter-rouge">NO</code></li>
+  <li>set <strong>Aggregation Type</strong> to <code class="language-plaintext highlighter-rouge">NONE</code></li>
 </ul>
 
 <p>For information these settings, see <a href="change-aggreg-additive.html">Set ADDITIVE or AGGREGATION</a>.</p>
@@ -3353,11 +3354,11 @@ columns:</p>
     <p>Change the value to the appropriate <strong>GEO CONFIG</strong>, depending on the kind of geo data the column contains.</p>
 
     <p>If your data includes latitude and/or longitude columns that are stored as a
- numeric data type (<code class="highlighter-rouge">DOUBLE</code>), make these changes for those columns:</p>
+ numeric data type (<code class="language-plaintext highlighter-rouge">DOUBLE</code>), make these changes for those columns:</p>
 
     <ol>
-      <li>Change the <strong>Type</strong> to <code class="highlighter-rouge">ATTRIBUTE</code>.</li>
-      <li>Change <strong>ADDITIVE</strong> to <code class="highlighter-rouge">NO</code>/<code class="highlighter-rouge">FALSE</code>.</li>
+      <li>Change the <strong>Type</strong> to <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>.</li>
+      <li>Change <strong>ADDITIVE</strong> to <code class="language-plaintext highlighter-rouge">NO</code>/<code class="language-plaintext highlighter-rouge">FALSE</code>.</li>
     </ol>
   </li>
   <li>Save your changes.</li>

@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Configure authentication through Active Directory”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure authentication through Active Directory”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Configuration prerequisites" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/LDAP-config-AD.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Configure authentication through Active Directory”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/LDAP-config-AD.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/LDAP-config-AD.html","headline":"[“Configure authentication through Active Directory”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Configuration prerequisites","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Configure authentication through Active Directory”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/LDAP-config-AD.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/LDAP-config-AD.html"},"description":"Configuration prerequisites","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3353,7 +3354,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Required to connect to Active Directory.</p>
 
-<p>For example, <code class="highlighter-rouge">ldap://ad.yourdomain.local:389</code> or <code class="highlighter-rouge">ldap://ad.yourdomain.local:636</code></p>
+<p>For example, <code class="language-plaintext highlighter-rouge">ldap://ad.yourdomain.local:389</code> or <code class="language-plaintext highlighter-rouge">ldap://ad.yourdomain.local:636</code></p>
 
 <h3 id="domain-name">Domain name</h3>
 
@@ -3361,7 +3362,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Users who don’t belong to the default domain must explicitly qualify their username when they log in.</p>
 
-<p>For example: <code class="highlighter-rouge">username@ad.yourdomain.local</code></p>
+<p>For example: <code class="language-plaintext highlighter-rouge">username@ad.yourdomain.local</code></p>
 
 <h3 id="search-base">Search base</h3>
 
@@ -3377,7 +3378,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you choose ‘yes’, new users are automatically created within ThoughtSpot when successfully authenticated against AD. ThoughtSpot doesn’t cache passwords for AD-authenticated users.</p>
 
-<p>If you choose ‘no’, users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP-authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="highlighter-rouge">username1@ad.yourdomain.local</code>.</p>
+<p>If you choose ‘no’, users have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP-authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="language-plaintext highlighter-rouge">username1@ad.yourdomain.local</code>.</p>
 
 <p>In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against AD or against ThoughtSpot’s internal authentication.</p>
 
@@ -3387,20 +3388,20 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="configure-ldap-tscli">Configure LDAP using tscli</h2>
 
-<p>You do not have to create a user called <code class="highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="highlighter-rouge">tsadmin</code>. To configure AD based authentication, follow these steps:</p>
+<p>You do not have to create a user called <code class="language-plaintext highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="language-plaintext highlighter-rouge">tsadmin</code>. To configure AD based authentication, follow these steps:</p>
 
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Run the command to configure AD authentication:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap configure
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap configure
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Answer the prompts using the information you collected under <strong>Before you begin</strong> section. For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Choose the LDAP protocol:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Choose the LDAP protocol:
  [1] Active Directory
  Option number: 1
  Configuring Active Directory
@@ -3416,7 +3417,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>If you want to remove the AD configuration, issue the following command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap purge-configuration
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap purge-configuration
 </code></pre></div>    </div>
   </li>
 </ol>

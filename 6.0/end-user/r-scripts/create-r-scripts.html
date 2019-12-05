@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Create and share R scripts”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Create and share R scripts”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Overview" />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/r-scripts/create-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Create and share R scripts”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/create-r-scripts.html"},"url":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/create-r-scripts.html","headline":"[“Create and share R scripts”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Overview","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Create and share R scripts”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/create-r-scripts.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/r-scripts/create-r-scripts.html"},"description":"Overview","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3345,12 +3346,12 @@ data elements in your script.</p>
 
 <p>You can refer to the data in the selected columns by using vectors that
 ThoughtSpot generates for these before the script is run. The first column you
-select has the variable name <code class="highlighter-rouge">.param0</code>, the second column you select has the
-variable name <code class="highlighter-rouge">.param1</code>, and so on. This naming scheme continues if there are
+select has the variable name <code class="language-plaintext highlighter-rouge">.param0</code>, the second column you select has the
+variable name <code class="language-plaintext highlighter-rouge">.param1</code>, and so on. This naming scheme continues if there are
 more columns. (You can click the question mark icon <img src="/6.0/images/r-icon-question-mark.png" alt="question icon" class="inline" /> next to “<strong>Select columns for R
 analysis</strong>” to get a visual mapping of how the columns are bound to variables in R.)</p>
 
-<p>ThoughtSpot also provides an automatically-generated <em>data frame</em> object, <code class="highlighter-rouge">df</code>,
+<p>ThoughtSpot also provides an automatically-generated <em>data frame</em> object, <code class="language-plaintext highlighter-rouge">df</code>,
 that contains all selected column vectors. The data frame is R’s representation
 of a table (a 2D data structure containing rows and columns).</p>
 
@@ -3376,15 +3377,15 @@ appropriately, as shown in the following examples.</p>
 
 <p>For an R script to produce a meaningful output in ThoughtSpot, the script should
 generate a CSV or PNG file. Output should be written to the token
-<code class="highlighter-rouge">#output_file#</code>. CSV output is rendered back as a simple table in ThoughtSpot,
+<code class="language-plaintext highlighter-rouge">#output_file#</code>. CSV output is rendered back as a simple table in ThoughtSpot,
 PNG output is rendered back as a static PNG.</p>
 
 <h2 id="basic-r-script-to-generate-csv-data">Basic R script to generate CSV data</h2>
 
-<p>This is an example of a basic R script that generates CSV data. (The <code class="highlighter-rouge">df</code>
+<p>This is an example of a basic R script that generates CSV data. (The <code class="language-plaintext highlighter-rouge">df</code>
 variable name must be lower case, as shown.)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>write.csv(df,  #output_file#)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>write.csv(df,  #output_file#)
 </code></pre></div></div>
 
 <p>The generated data is displayed back as a table when you run the analysis:</p>
@@ -3401,7 +3402,7 @@ formatting you get for free on the search.</p>
 
 <p>This is an example of a basic R script that generates PNG data as output.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>png(#output_file#)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>png(#output_file#)
 plot(.param0, .param1)
 </code></pre></div></div>
 
@@ -3417,7 +3418,7 @@ plot(.param0, .param1)
 to R and how to send it. If you do not make any choices here, all columns in the
 search are selected in the order they appear in the search bar.</p>
 
-    <p>In the examples above, <code class="highlighter-rouge">Year (Date)</code> is <code class="highlighter-rouge">.param0</code>, and <code class="highlighter-rouge">Sales</code> is <code class="highlighter-rouge">.param1</code>.
+    <p>In the examples above, <code class="language-plaintext highlighter-rouge">Year (Date)</code> is <code class="language-plaintext highlighter-rouge">.param0</code>, and <code class="language-plaintext highlighter-rouge">Sales</code> is <code class="language-plaintext highlighter-rouge">.param1</code>.
 To verify this, click the question mark icon next to <strong>Select columns for R
 analysis</strong> to see the “column bindings”. Reordering the columns changes the
 column bindings/params.</p>
@@ -3458,11 +3459,11 @@ are bound to variables in R.</p>
 
 <h2 id="k-means-clustering-example-scripts">K-Means clustering example scripts</h2>
 
-<p>This script loads the <code class="highlighter-rouge">ggplot2</code> visualization package, labels the columns inside
-of the ThoughtSpot generated data frame object (<code class="highlighter-rouge">df</code>), and runs a K-Means
+<p>This script loads the <code class="language-plaintext highlighter-rouge">ggplot2</code> visualization package, labels the columns inside
+of the ThoughtSpot generated data frame object (<code class="language-plaintext highlighter-rouge">df</code>), and runs a K-Means
 clustering algorithm.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
 
 kmeansOutput &lt;- kmeans(df[1:2], 3, nstart = 20)
 kmeansOutput$cluster &lt;- as.factor(kmeansOutput$cluster)
@@ -3470,14 +3471,14 @@ png(file=#output_file#, width=400, height=350, res=72)
 print(ggplot(df, aes(.param0, .param1, color = kmeansOutput$cluster)) + geom_point())
 </code></pre></div></div>
 
-<p>When you run this script on the results of the original <code class="highlighter-rouge">sales date</code> search, you
+<p>When you run this script on the results of the original <code class="language-plaintext highlighter-rouge">sales date</code> search, you
 get the following visualization as a PNG.</p>
 
 <p><img src="/6.0/images/r-custom-script-png.png" alt="" /></p>
 
 <p>You can run another R script directly on this result to get CSV results:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kmeansOutput &lt;- kmeans(df[1:2], 3, nstart = 20);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kmeansOutput &lt;- kmeans(df[1:2], 3, nstart = 20);
 df$Cluster &lt;- as.factor(kmeansOutput$cluster);
 write.csv(df, file=#output_file#, row.names=FALSE);
 </code></pre></div></div>

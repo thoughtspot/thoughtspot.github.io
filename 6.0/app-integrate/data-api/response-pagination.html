@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Data REST API pagination”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Data REST API pagination”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the Data REST API." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/data-api/response-pagination.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Data REST API pagination”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/response-pagination.html"},"url":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/response-pagination.html","headline":"[“Data REST API pagination”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the Data REST API.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Data REST API pagination”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/response-pagination.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/data-api/response-pagination.html"},"description":"Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the Data REST API.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3295,9 +3296,9 @@ var ss360Config = {
 
 <p>To paginate results in your API response, you must add new parameters to the query:</p>
 
-<p><code class="highlighter-rouge">PageSize</code> determines the number of rows to be included.</p>
+<p><code class="language-plaintext highlighter-rouge">PageSize</code> determines the number of rows to be included.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "pagesize",
     "description": PageSize: The number of rows.",
     "defaultValue": "-1",
@@ -3305,9 +3306,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">Offset</code> determines the starting point.</p>
+<p><code class="language-plaintext highlighter-rouge">Offset</code> determines the starting point.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "offset",
     "description": Offset: The starting point",
     "defaultValue": "-1",
@@ -3315,9 +3316,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">PageNumber</code> is an alternate way to determine the offset. You must make a call with <code class="highlighter-rouge">pageNumber = 1</code> first. Then you can access any page. Calling with <code class="highlighter-rouge">pageNumber != 1</code> as the initial call will fail. <code class="highlighter-rouge">pageNumber = 0</code> is not a valid value.</p>
+<p><code class="language-plaintext highlighter-rouge">PageNumber</code> is an alternate way to determine the offset. You must make a call with <code class="language-plaintext highlighter-rouge">pageNumber = 1</code> first. Then you can access any page. Calling with <code class="language-plaintext highlighter-rouge">pageNumber != 1</code> as the initial call will fail. <code class="language-plaintext highlighter-rouge">pageNumber = 0</code> is not a valid value.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "pagenumber",
     "description": PageNumber: This is an alternate way to set offset. This is 1-based
                    indexing. Offset = (pageNumber - 1) * pageSize.
@@ -3326,9 +3327,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">FormatType</code> is the JSON format type.</p>
+<p><code class="language-plaintext highlighter-rouge">FormatType</code> is the JSON format type.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "formattype",
     "description": FormatType: This sets the JSON format type. Values that are allowed are
                    FULL and COMPACT.
@@ -3337,13 +3338,13 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="highlighter-rouge">FULL</code> is formatted like this: <code class="highlighter-rouge">{'col1': 1 'col2': 'a'}</code></p>
+<p><code class="language-plaintext highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="language-plaintext highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="language-plaintext highlighter-rouge">FULL</code> is formatted like this: <code class="language-plaintext highlighter-rouge">{'col1': 1 'col2': 'a'}</code></p>
 
 <h2 id="example">Example</h2>
 
 <p>The following example shows ThoughtSpot data that is being populated in a table:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
  * Sample response for Page-1.
  */
 {

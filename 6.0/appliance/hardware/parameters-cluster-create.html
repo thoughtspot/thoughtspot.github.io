@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Parameters of the cluster create command”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Parameters of the cluster create command”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Using the cluster create command To install your appliance, you must install the cluster." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-cluster-create.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Parameters of the cluster create command”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-cluster-create.html"},"url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-cluster-create.html","headline":"[“Parameters of the cluster create command”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Using the cluster create command To install your appliance, you must install the cluster.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Parameters of the cluster create command”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-cluster-create.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-cluster-create.html"},"description":"Using the cluster create command To install your appliance, you must install the cluster.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3320,13 +3321,13 @@ $('#toc').on('click', 'a', function() {
 <p>To install your appliance, you must install the cluster.</p>
 
 <ol>
-  <li><strong>Copy the release tarball</strong> Run <code class="highlighter-rouge">scp 0.0.tar.gz admin@hostname:/home/admin/</code>, filling in your specific information for the release number and the hostname. For example, <code class="highlighter-rouge">scp 6.0 admin@ThoughtSpot:/home/admin</code>.</li>
-  <li><strong>Run the <code class="highlighter-rouge">cluster create</code> command</strong> Run <code class="highlighter-rouge">tscli cluster create</code> in your terminal.</li>
+  <li><strong>Copy the release tarball</strong> Run <code class="language-plaintext highlighter-rouge">scp 0.0.tar.gz admin@hostname:/home/admin/</code>, filling in your specific information for the release number and the hostname. For example, <code class="language-plaintext highlighter-rouge">scp 6.0 admin@ThoughtSpot:/home/admin</code>.</li>
+  <li><strong>Run the <code class="language-plaintext highlighter-rouge">cluster create</code> command</strong> Run <code class="language-plaintext highlighter-rouge">tscli cluster create</code> in your terminal.</li>
   <li><strong>Fill out your specific information</strong> Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in <a href="/6.0/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create">Parameters of ThoughtSpot Installer</a> below.</li>
 </ol>
 
 <p>Refer to <a href="/6.0/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create">Parameters of ThoughtSpot Installer</a> for further information.
-Refer to <a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="highlighter-rouge">cluster create</code> command</a> to see the expected output of the install command, <code class="highlighter-rouge">tscli cluster create</code>.</p>
+Refer to <a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a> to see the expected output of the install command, <code class="language-plaintext highlighter-rouge">tscli cluster create</code>.</p>
 
 <p>Make sure that you do not edit any part of the installer file except the sections specified in <a href="/6.0/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create">Parameters of ThoughtSpot Installer</a>. Deleting colons, commas, or other parts of the code could cause setup to fail.</p>
 
@@ -3348,7 +3349,7 @@ Refer to <a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code
   <li><a href="/6.0/appliance/vmware/installing-vmware.html">Installing VMware</a></li>
   <li><a href="/6.0/appliance/azure/installing-azure.html">Installing Azure</a></li>
   <li><a href="/6.0/appliance/hardware/installing-dell.html">Installing the Dell Appliance</a></li>
-  <li><a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="highlighter-rouge">cluster create</code> command</a></li>
+  <li><a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a></li>
 </ul>
 
   <div class="tags">

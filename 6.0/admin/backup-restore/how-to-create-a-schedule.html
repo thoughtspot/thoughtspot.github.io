@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Understand backup/snapshot schedules”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Understand backup/snapshot schedules”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic snapshot policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section helps to understand existing schedules and how to configure new schedules." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/backup-restore/how-to-create-a-schedule.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Understand backup/snapshot schedules”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/how-to-create-a-schedule.html"},"url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/how-to-create-a-schedule.html","headline":"[“Understand backup/snapshot schedules”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic snapshot policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section helps to understand existing schedules and how to configure new schedules.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Understand backup/snapshot schedules”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/how-to-create-a-schedule.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/how-to-create-a-schedule.html"},"description":"You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic snapshot policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section helps to understand existing schedules and how to configure new schedules.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3320,9 +3321,9 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="configuration-format">Configuration format</h2>
 
-<p>ThoughtSpot uses a <a href="https://developers.google.com/protocol-buffers/">protocol buffer</a> configuration file to hold snapshot and backup policies. There are slight differences between the configuration of snapshots and backups. You can read more about these later. However, the file format defines a <code class="highlighter-rouge">schedule</code> structure which is the same for both snapshots and backups. The following example shows the <code class="highlighter-rouge">schedule</code> format:</p>
+<p>ThoughtSpot uses a <a href="https://developers.google.com/protocol-buffers/">protocol buffer</a> configuration file to hold snapshot and backup policies. There are slight differences between the configuration of snapshots and backups. You can read more about these later. However, the file format defines a <code class="language-plaintext highlighter-rouge">schedule</code> structure which is the same for both snapshots and backups. The following example shows the <code class="language-plaintext highlighter-rouge">schedule</code> format:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 schedule {
     period {
         number: integer
@@ -3342,20 +3343,20 @@ schedule {
 
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">schedule</code> has the following components:</p>
+<p>The <code class="language-plaintext highlighter-rouge">schedule</code> has the following components:</p>
 
 <table>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">period</code></td>
-      <td>Specifies the frequency in the chosen <code class="highlighter-rouge">unit</code>. You can specify the <code class="highlighter-rouge">unit</code> as <code class="highlighter-rouge">MINUTE</code>, <code class="highlighter-rouge">HOUR</code>, or <code class="highlighter-rouge">DAY</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">period</code></td>
+      <td>Specifies the frequency in the chosen <code class="language-plaintext highlighter-rouge">unit</code>. You can specify the <code class="language-plaintext highlighter-rouge">unit</code> as <code class="language-plaintext highlighter-rouge">MINUTE</code>, <code class="language-plaintext highlighter-rouge">HOUR</code>, or <code class="language-plaintext highlighter-rouge">DAY</code>.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">retention_policy</code></td>
-      <td>Specifies retention intervals. Retention is on a first-in-first-out (FIFO) basis. So, the oldest result is always discarded. You can specify the <code class="highlighter-rouge">unit</code> as <code class="highlighter-rouge">MINUTE</code>, <code class="highlighter-rouge">HOUR</code>, or <code class="highlighter-rouge">DAY</code>. You can specify multiple retention buckets and they can have different retention policies.</td>
+      <td><code class="language-plaintext highlighter-rouge">retention_policy</code></td>
+      <td>Specifies retention intervals. Retention is on a first-in-first-out (FIFO) basis. So, the oldest result is always discarded. You can specify the <code class="language-plaintext highlighter-rouge">unit</code> as <code class="language-plaintext highlighter-rouge">MINUTE</code>, <code class="language-plaintext highlighter-rouge">HOUR</code>, or <code class="language-plaintext highlighter-rouge">DAY</code>. You can specify multiple retention buckets and they can have different retention policies.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">offset_minutes_from_sunday_midnight</code></td>
+      <td><code class="language-plaintext highlighter-rouge">offset_minutes_from_sunday_midnight</code></td>
       <td>Determines the minute within the hour you’d like execution to start. Setting this to zero is equivalent to midnight.</td>
     </tr>
   </tbody>
@@ -3365,7 +3366,7 @@ schedule {
 
 <p>In this section, you work through an example schedule. This is a working example that is the actual default snapshot schedule set on every ThoughtSpot instance.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 schedule {
     period {
         number: 1
@@ -3392,9 +3393,9 @@ schedule {
 
 </code></pre></div></div>
 
-<p>Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the <code class="highlighter-rouge">period</code> of 1 hour with the midnight offset of 0.</p>
+<p>Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the <code class="language-plaintext highlighter-rouge">period</code> of 1 hour with the midnight offset of 0.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
     schedule {
         period {
             number: 1
@@ -3432,7 +3433,7 @@ schedule {
   </tbody>
 </table>
 
-<p>If you were to specify a <code class="highlighter-rouge">number</code> of 2, the frequency changes. The first execution would start at midnight but subsequent executions would happen every 2 hours as shown here:</p>
+<p>If you were to specify a <code class="language-plaintext highlighter-rouge">number</code> of 2, the frequency changes. The first execution would start at midnight but subsequent executions would happen every 2 hours as shown here:</p>
 
 <table>
   <tbody>
@@ -3457,9 +3458,9 @@ schedule {
   </tbody>
 </table>
 
-<p>You use the <code class="highlighter-rouge">retention_policy</code> to control how many snapshots are kept. In this example, the first bucket retains a snapshot every three hours.</p>
+<p>You use the <code class="language-plaintext highlighter-rouge">retention_policy</code> to control how many snapshots are kept. In this example, the first bucket retains a snapshot every three hours.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 retention_policy {
     bucket {
         time {
@@ -3500,7 +3501,7 @@ retention_policy {
 
 <p>The second bucket retains the snapshot taken at four hour intervals.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
  retention_policy {
     ...
     bucket {
@@ -3565,7 +3566,7 @@ retention_policy {
   </tbody>
 </table>
 
-<p>What if you changed the <code class="highlighter-rouge">period</code> frequency to every 2 hours? What would you have retained in your buckets at hour 24?</p>
+<p>What if you changed the <code class="language-plaintext highlighter-rouge">period</code> frequency to every 2 hours? What would you have retained in your buckets at hour 24?</p>
 
 <table>
   <tbody>

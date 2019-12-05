@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Proximity searches &quot;near&quot; and &quot;farther than&quot;”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Proximity searches &quot;near&quot; and &quot;farther than&quot;”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Proximity keywords allow you to search and show the results on a map. Using proximity keywords causes ThoughtSpot to display a circle that represents your set distance on the geo charts." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/features/proximity-search.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Proximity searches &quot;near&quot; and &quot;farther than&quot;”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/features/proximity-search.html"},"url":"https://docs.thoughtspot.com/6.0/admin/features/proximity-search.html","headline":"[“Proximity searches &quot;near&quot; and &quot;farther than&quot;”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Proximity keywords allow you to search and show the results on a map. Using proximity keywords causes ThoughtSpot to display a circle that represents your set distance on the geo charts.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Proximity searches &quot;near&quot; and &quot;farther than&quot;”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/features/proximity-search.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/features/proximity-search.html"},"description":"Proximity keywords allow you to search and show the results on a map. Using proximity keywords causes ThoughtSpot to display a circle that represents your set distance on the geo charts.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3300,14 +3301,14 @@ set distance on the geo charts.</p>
 <p>The proximity keywords are:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">near</code></li>
+  <li><code class="language-plaintext highlighter-rouge">near</code></li>
   <li>
     <table>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">near…within n miles</code></td>
-          <td><code class="highlighter-rouge">km</code></td>
-          <td><code class="highlighter-rouge">meters</code></td>
+          <td><code class="language-plaintext highlighter-rouge">near…within n miles</code></td>
+          <td><code class="language-plaintext highlighter-rouge">km</code></td>
+          <td><code class="language-plaintext highlighter-rouge">meters</code></td>
         </tr>
       </tbody>
     </table>
@@ -3316,9 +3317,9 @@ set distance on the geo charts.</p>
     <table>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">farther than n miles</code></td>
-          <td><code class="highlighter-rouge">km</code></td>
-          <td><code class="highlighter-rouge">meters from</code></td>
+          <td><code class="language-plaintext highlighter-rouge">farther than n miles</code></td>
+          <td><code class="language-plaintext highlighter-rouge">km</code></td>
+          <td><code class="language-plaintext highlighter-rouge">meters from</code></td>
         </tr>
       </tbody>
     </table>
@@ -3334,18 +3335,18 @@ instances of a geotype column that falls within the parameters. These keywords
 are limited to 33 latitude/longitude pairs. They work on duplicate counties.
 Finally, you can filter on them. Some examples of valid searches are:</p>
 
-<p><code class="highlighter-rouge">landings</code> <em><code class="highlighter-rouge">latitude longitude city</code></em> <code class="highlighter-rouge">near tokyo</code></p>
+<p><code class="language-plaintext highlighter-rouge">landings</code> <em><code class="language-plaintext highlighter-rouge">latitude longitude city</code></em> <code class="language-plaintext highlighter-rouge">near tokyo</code></p>
 
-<p><code class="highlighter-rouge">landings</code> <em><code class="highlighter-rouge">latitude longitude city</code></em> <code class="highlighter-rouge">near tokyo within 50 miles</code></p>
+<p><code class="language-plaintext highlighter-rouge">landings</code> <em><code class="language-plaintext highlighter-rouge">latitude longitude city</code></em> <code class="language-plaintext highlighter-rouge">near tokyo within 50 miles</code></p>
 
 <p>You can bracket your search only with actual values found in the data.  So
- “longitude between <code class="highlighter-rouge">-125.000000</code> and <code class="highlighter-rouge">-115.316670</code> worked for me, but not
- <code class="highlighter-rouge">longitude between -125 and -115</code>.</p>
+ “longitude between <code class="language-plaintext highlighter-rouge">-125.000000</code> and <code class="language-plaintext highlighter-rouge">-115.316670</code> worked for me, but not
+ <code class="language-plaintext highlighter-rouge">longitude between -125 and -115</code>.</p>
 
 <h3 id="proximity-search-configuration-requirements">Proximity search configuration requirements</h3>
 
 <p>All your data must be in the same set. The worksheet or one of the tables must
-contain a column of type <code class="highlighter-rouge">longitude</code> and a column of type <code class="highlighter-rouge">latitude</code>. The
+contain a column of type <code class="language-plaintext highlighter-rouge">longitude</code> and a column of type <code class="language-plaintext highlighter-rouge">latitude</code>. The
 latitude and longitude data have to be on the same base tables for the feature
 to work. You can’t, for instance, have a dimension table with all your cities
 and their associated geo coordinates and join to it from your fact table and

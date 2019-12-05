@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Set column name, description, and type”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set column name, description, and type”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Set column name, description, and type”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html"},"url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html","headline":"[“Set column name, description, and type”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Set column name, description, and type”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html"},"description":"Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3366,17 +3367,17 @@ column stores. This is set automatically upon defining the table, but in some
 cases, you may want to change the type. There are two types of columns:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">ATTRIBUTE</code> contains a property, like name, address, or id number.</li>
-  <li><code class="highlighter-rouge">MEASURE</code> contains a numeric value that can be compared in a meaningful way using math, such as a count or measurement.</li>
+  <li><code class="language-plaintext highlighter-rouge">ATTRIBUTE</code> contains a property, like name, address, or id number.</li>
+  <li><code class="language-plaintext highlighter-rouge">MEASURE</code> contains a numeric value that can be compared in a meaningful way using math, such as a count or measurement.</li>
 </ul>
 
 <p>When a new table is created, the default column type is set according to the
 <strong>Data Type</strong> (UI)/<strong>DataType</strong> (model file) defined for each column. By default,
-columns with the numeric data types (<code class="highlighter-rouge">FLOAT</code>, <code class="highlighter-rouge">DOUBLE</code>, <code class="highlighter-rouge">INT</code>, or <code class="highlighter-rouge">BIGINT</code>) are
-assigned the type <code class="highlighter-rouge">MEASURE</code>. Columns with <code class="highlighter-rouge">VARCHAR</code>, <code class="highlighter-rouge">BOOL</code>, or date/time data
-types are assigned the type <code class="highlighter-rouge">ATTRIBUTE</code>.</p>
+columns with the numeric data types (<code class="language-plaintext highlighter-rouge">FLOAT</code>, <code class="language-plaintext highlighter-rouge">DOUBLE</code>, <code class="language-plaintext highlighter-rouge">INT</code>, or <code class="language-plaintext highlighter-rouge">BIGINT</code>) are
+assigned the type <code class="language-plaintext highlighter-rouge">MEASURE</code>. Columns with <code class="language-plaintext highlighter-rouge">VARCHAR</code>, <code class="language-plaintext highlighter-rouge">BOOL</code>, or date/time data
+types are assigned the type <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>.</p>
 
-<p>Usually the default setting for column type works fine. But occasionally, you must change a <code class="highlighter-rouge">MEASURE</code> to an <code class="highlighter-rouge">ATTRIBUTE</code>. Examples of numeric values for
+<p>Usually the default setting for column type works fine. But occasionally, you must change a <code class="language-plaintext highlighter-rouge">MEASURE</code> to an <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>. Examples of numeric values for
 which mathematical operations are not meaningful include:</p>
 
 <ul>
@@ -3391,7 +3392,7 @@ which mathematical operations are not meaningful include:</p>
 
 <ol>
   <li>Find the column type you want to change.</li>
-  <li>Change it to either <code class="highlighter-rouge">MEASURE</code> or <code class="highlighter-rouge">ATTRIBUTE</code>.</li>
+  <li>Change it to either <code class="language-plaintext highlighter-rouge">MEASURE</code> or <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>.</li>
   <li>Save your changes.</li>
 </ol>
 

@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Set up a custom calendar”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set up a custom calendar”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="By default, ThoughtSpot’s fiscal calendar begins on January 1st. If your company’s calendar starts on a different date, you can use a custom calendar to ensure date searches in ThoughtSpot reflect your fiscal calendar." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/set-custom-calendar.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Set up a custom calendar”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/set-custom-calendar.html"},"url":"https://docs.thoughtspot.com/6.0/admin/setup/set-custom-calendar.html","headline":"[“Set up a custom calendar”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"By default, ThoughtSpot’s fiscal calendar begins on January 1st. If your company’s calendar starts on a different date, you can use a custom calendar to ensure date searches in ThoughtSpot reflect your fiscal calendar.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Set up a custom calendar”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/set-custom-calendar.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/set-custom-calendar.html"},"description":"By default, ThoughtSpot’s fiscal calendar begins on January 1st. If your company’s calendar starts on a different date, you can use a custom calendar to ensure date searches in ThoughtSpot reflect your fiscal calendar.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3318,7 +3319,7 @@ $('#toc').on('click', 'a', function() {
 calendar starts on a different date, you can use a custom calendar to ensure
 date searches in ThoughtSpot reflect your fiscal calendar.</p>
 
-<p><a href="/6.0/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars">Date formulas with the <code class="highlighter-rouge">fiscal</code> option specified</a>
+<p><a href="/6.0/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars">Date formulas with the <code class="language-plaintext highlighter-rouge">fiscal</code> option specified</a>
 also reflect the fiscal year you set here.</p>
 
 <p>When you create a custom calendar, you designate the month, day and year on which your
@@ -3346,15 +3347,15 @@ company’s fiscal year begins and ends. When using your custom calendar, search
 
 <ol>
   <li>
-    <p>SSH as admin into your ThoughtSpot cluster: <code class="highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</p>
+    <p>SSH as admin into your ThoughtSpot cluster: <code class="language-plaintext highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</p>
   </li>
   <li>
-    <p>Run the <code class="highlighter-rouge">tscli calendar generate</code> command using the following syntax:</p>
+    <p>Run the <code class="language-plaintext highlighter-rouge">tscli calendar generate</code> command using the following syntax:</p>
 
-    <p><code class="highlighter-rouge">tscli calendar generate --name &lt;calendar_name&gt; --start_date &lt;MM/DD/YYYY&gt; --end_date &lt;MM/DD/YYYY&gt; --username tsadmin</code></p>
+    <p><code class="language-plaintext highlighter-rouge">tscli calendar generate --name &lt;calendar_name&gt; --start_date &lt;MM/DD/YYYY&gt; --end_date &lt;MM/DD/YYYY&gt; --username tsadmin</code></p>
 
     <p>Example:
-   <code class="highlighter-rouge">tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin</code></p>
+   <code class="language-plaintext highlighter-rouge">tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin</code></p>
 
     <p>This generates a calendar template file in .csv format. In the previous example: <strong>my_calendar.csv</strong>.</p>
   </li>
@@ -3371,10 +3372,10 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   <li>
     <p>Download the .csv file to your computer using following syntax:</p>
 
-    <p><code class="highlighter-rouge">scp admin@&lt;cluster-ip-address&gt;:/home/admin/&lt;calendar_name&gt;.csv /&lt;Local directory on your computer&gt;/.</code></p>
+    <p><code class="language-plaintext highlighter-rouge">scp admin@&lt;cluster-ip-address&gt;:/home/admin/&lt;calendar_name&gt;.csv /&lt;Local directory on your computer&gt;/.</code></p>
 
     <p>Example (on Mac OS):
-   <code class="highlighter-rouge">scp admin@172.18.144.217:/home/admin/my_calendar.csv /Users/john.smith/Desktop/.</code></p>
+   <code class="language-plaintext highlighter-rouge">scp admin@172.18.144.217:/home/admin/my_calendar.csv /Users/john.smith/Desktop/.</code></p>
   </li>
   <li>Open the .csv file in a text editor or spreadsheet program and edit the file to ensure the date and quarter columns are formatted correctly:
     <ul>
@@ -3406,20 +3407,20 @@ company’s fiscal year begins and ends. When using your custom calendar, search
   <li>
     <p>Upload the .csv file to your ThoughtSpot cluster using the following syntax:</p>
 
-    <p><code class="highlighter-rouge">scp /&lt;Local directory on your computer&gt;/&lt;calendar_template_name&gt;.csv admin@&lt;cluster-ip-address&gt;:/home/admin/</code></p>
+    <p><code class="language-plaintext highlighter-rouge">scp /&lt;Local directory on your computer&gt;/&lt;calendar_template_name&gt;.csv admin@&lt;cluster-ip-address&gt;:/home/admin/</code></p>
 
     <p>Example (on Mac OS):
-   <code class="highlighter-rouge">scp /Users/john.smith/Desktop/my_calendar.csv admin@172.18.144.217:/home/admin</code></p>
+   <code class="language-plaintext highlighter-rouge">scp /Users/john.smith/Desktop/my_calendar.csv admin@172.18.144.217:/home/admin</code></p>
   </li>
   <li>
-    <p>SSH as admin into your ThoughtSpot cluster: <code class="highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</p>
+    <p>SSH as admin into your ThoughtSpot cluster: <code class="language-plaintext highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</p>
   </li>
   <li>
-    <p>Run the <code class="highlighter-rouge">tscli calendar create</code> command using the following syntax:
-<code class="highlighter-rouge">tscli calendar create --file_path /home/admin/&lt;calendar_template_name&gt;.csv --name &lt;calendar name&gt; --username tsadmin</code></p>
+    <p>Run the <code class="language-plaintext highlighter-rouge">tscli calendar create</code> command using the following syntax:
+<code class="language-plaintext highlighter-rouge">tscli calendar create --file_path /home/admin/&lt;calendar_template_name&gt;.csv --name &lt;calendar name&gt; --username tsadmin</code></p>
 
     <p>Example:
-<code class="highlighter-rouge">tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username tsadmin</code></p>
+<code class="language-plaintext highlighter-rouge">tscli calendar create --file_path /home/admin/my_calendar.csv --name my_calendar --username tsadmin</code></p>
   </li>
 </ol>
 

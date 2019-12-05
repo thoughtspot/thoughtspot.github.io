@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Set number, date, and currency formats”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set number, date, and currency formats”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You can set number, date, and currency display formats. These formats define how these value types display in tables and charts." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/set-format-pattern-numbers.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Set number, date, and currency formats”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/set-format-pattern-numbers.html"},"url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/set-format-pattern-numbers.html","headline":"[“Set number, date, and currency formats”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Set number, date, and currency formats”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/set-format-pattern-numbers.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/set-format-pattern-numbers.html"},"description":"You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3309,7 +3310,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    7 minutes
   
 </span>
  -->
@@ -3334,12 +3335,12 @@ Currency symbols are not supported.</p>
 <table>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#,###</code></td>
-      <td>For integer data types <code class="highlighter-rouge">INT</code> and <code class="highlighter-rouge">BIGINT</code>. As you can see, these can only contain numbers, alpha characters are not permitted.</td>
+      <td><code class="language-plaintext highlighter-rouge">#,###</code></td>
+      <td>For integer data types <code class="language-plaintext highlighter-rouge">INT</code> and <code class="language-plaintext highlighter-rouge">BIGINT</code>. As you can see, these can only contain numbers, alpha characters are not permitted.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#,###.00</code></td>
-      <td>for decimal data types <code class="highlighter-rouge">DOUBLE</code> and <code class="highlighter-rouge">FLOAT</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">#,###.00</code></td>
+      <td>for decimal data types <code class="language-plaintext highlighter-rouge">DOUBLE</code> and <code class="language-plaintext highlighter-rouge">FLOAT</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -3357,37 +3358,37 @@ Currency symbols are not supported.</p>
   <tbody>
     <tr>
       <td>12345.6789</td>
-      <td><code class="highlighter-rouge">#,##0.##</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.##</code></td>
       <td>12,345.68</td>
     </tr>
     <tr>
       <td>12345.6789</td>
-      <td><code class="highlighter-rouge">#,##0.###</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.###</code></td>
       <td>12,345.679</td>
     </tr>
     <tr>
       <td>12345.6789</td>
-      <td><code class="highlighter-rouge">#,##0.00000</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.00000</code></td>
       <td>12,345.68</td>
     </tr>
     <tr>
       <td>12345.6789</td>
-      <td><code class="highlighter-rouge">#,##0</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0</code></td>
       <td>12,345</td>
     </tr>
     <tr>
       <td>12345.6789</td>
-      <td><code class="highlighter-rouge">#,##0.00</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.00</code></td>
       <td>12,345.68</td>
     </tr>
     <tr>
       <td>12345</td>
-      <td><code class="highlighter-rouge">#,##0.##</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.##</code></td>
       <td>12,345</td>
     </tr>
     <tr>
       <td>12345</td>
-      <td><code class="highlighter-rouge">#,##0.00</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#,##0.00</code></td>
       <td>12,345.00</td>
     </tr>
   </tbody>
@@ -3428,8 +3429,8 @@ geographic locations.</p>
 <p><img src="/6.0/images/profile-locale.png" alt="" title="Specify Profile locale" /></p>
 
 <p>For example, if you are using ThoughtSpot in the US, the number formatting
-should look like this: <code class="highlighter-rouge">xxx,xxx.xx</code>. And in Europe, it should look like this:
-<code class="highlighter-rouge">xxx.xxx,xx</code>.</p>
+should look like this: <code class="language-plaintext highlighter-rouge">xxx,xxx.xx</code>. And in Europe, it should look like this:
+<code class="language-plaintext highlighter-rouge">xxx.xxx,xx</code>.</p>
 
 <h2 id="date-formats">Date formats</h2>
 
@@ -3447,79 +3448,79 @@ These are some examples of formats you can use:</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">YYYY</code> or <code class="highlighter-rouge">yyyy</code></td>
-      <td>four digit year such as <code class="highlighter-rouge">2017</code></td>
+      <td><code class="language-plaintext highlighter-rouge">YYYY</code> or <code class="language-plaintext highlighter-rouge">yyyy</code></td>
+      <td>four digit year such as <code class="language-plaintext highlighter-rouge">2017</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">YY</code> or <code class="highlighter-rouge">yy</code></td>
-      <td>last two digits of year such as <code class="highlighter-rouge">17</code></td>
+      <td><code class="language-plaintext highlighter-rouge">YY</code> or <code class="language-plaintext highlighter-rouge">yy</code></td>
+      <td>last two digits of year such as <code class="language-plaintext highlighter-rouge">17</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">M</code></td>
-      <td>month with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">12</code></td>
+      <td><code class="language-plaintext highlighter-rouge">M</code></td>
+      <td>month with no leading zero <code class="language-plaintext highlighter-rouge">1</code>-<code class="language-plaintext highlighter-rouge">12</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">MM</code></td>
-      <td>Two digit month <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">12</code></td>
+      <td><code class="language-plaintext highlighter-rouge">MM</code></td>
+      <td>Two digit month <code class="language-plaintext highlighter-rouge">01</code>-<code class="language-plaintext highlighter-rouge">12</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">MMM</code></td>
-      <td>Three letter month such as <code class="highlighter-rouge">Jan</code></td>
+      <td><code class="language-plaintext highlighter-rouge">MMM</code></td>
+      <td>Three letter month such as <code class="language-plaintext highlighter-rouge">Jan</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">D</code></td>
-      <td>Day of year without a leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">365</code></td>
+      <td><code class="language-plaintext highlighter-rouge">D</code></td>
+      <td>Day of year without a leading zero <code class="language-plaintext highlighter-rouge">0</code>-<code class="language-plaintext highlighter-rouge">365</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">DD</code></td>
-      <td>Day of year with up to one leading zero <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">365</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DD</code></td>
+      <td>Day of year with up to one leading zero <code class="language-plaintext highlighter-rouge">01</code>-<code class="language-plaintext highlighter-rouge">365</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">DDD</code></td>
-      <td>Day of year with up to two leading zeroes <code class="highlighter-rouge">001</code>-<code class="highlighter-rouge">365</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DDD</code></td>
+      <td>Day of year with up to two leading zeroes <code class="language-plaintext highlighter-rouge">001</code>-<code class="language-plaintext highlighter-rouge">365</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">d</code></td>
-      <td>Day of month with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">31</code></td>
+      <td><code class="language-plaintext highlighter-rouge">d</code></td>
+      <td>Day of month with no leading zero <code class="language-plaintext highlighter-rouge">1</code>-<code class="language-plaintext highlighter-rouge">31</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">dd</code></td>
-      <td>Two digit day of month <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">31</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dd</code></td>
+      <td>Two digit day of month <code class="language-plaintext highlighter-rouge">01</code>-<code class="language-plaintext highlighter-rouge">31</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">HH</code></td>
-      <td>Two digit <code class="highlighter-rouge">24</code> hour representation of hour <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">23</code></td>
+      <td><code class="language-plaintext highlighter-rouge">HH</code></td>
+      <td>Two digit <code class="language-plaintext highlighter-rouge">24</code> hour representation of hour <code class="language-plaintext highlighter-rouge">00</code>-<code class="language-plaintext highlighter-rouge">23</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">hh</code></td>
-      <td>Two digit <code class="highlighter-rouge">12</code> hour representation of hour <code class="highlighter-rouge">01</code>-<code class="highlighter-rouge">12</code></td>
+      <td><code class="language-plaintext highlighter-rouge">hh</code></td>
+      <td>Two digit <code class="language-plaintext highlighter-rouge">12</code> hour representation of hour <code class="language-plaintext highlighter-rouge">01</code>-<code class="language-plaintext highlighter-rouge">12</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">H</code></td>
-      <td>24 hour representation of hour with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">23</code></td>
+      <td><code class="language-plaintext highlighter-rouge">H</code></td>
+      <td>24 hour representation of hour with no leading zero <code class="language-plaintext highlighter-rouge">0</code>-<code class="language-plaintext highlighter-rouge">23</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">h</code></td>
-      <td>12 hour representation of hour with no leading zero <code class="highlighter-rouge">1</code>-<code class="highlighter-rouge">12</code></td>
+      <td><code class="language-plaintext highlighter-rouge">h</code></td>
+      <td>12 hour representation of hour with no leading zero <code class="language-plaintext highlighter-rouge">1</code>-<code class="language-plaintext highlighter-rouge">12</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">mm</code></td>
-      <td>Minutes <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">59</code></td>
+      <td><code class="language-plaintext highlighter-rouge">mm</code></td>
+      <td>Minutes <code class="language-plaintext highlighter-rouge">00</code>-<code class="language-plaintext highlighter-rouge">59</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">m</code></td>
-      <td>Minutes with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">59</code></td>
+      <td><code class="language-plaintext highlighter-rouge">m</code></td>
+      <td>Minutes with no leading zero <code class="language-plaintext highlighter-rouge">0</code>-<code class="language-plaintext highlighter-rouge">59</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">ss</code></td>
-      <td>Seconds <code class="highlighter-rouge">00</code>-<code class="highlighter-rouge">59</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ss</code></td>
+      <td>Seconds <code class="language-plaintext highlighter-rouge">00</code>-<code class="language-plaintext highlighter-rouge">59</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">s</code></td>
-      <td>Seconds with no leading zero <code class="highlighter-rouge">0</code>-<code class="highlighter-rouge">59</code></td>
+      <td><code class="language-plaintext highlighter-rouge">s</code></td>
+      <td>Seconds with no leading zero <code class="language-plaintext highlighter-rouge">0</code>-<code class="language-plaintext highlighter-rouge">59</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">a</code></td>
+      <td><code class="language-plaintext highlighter-rouge">a</code></td>
       <td>AM/PM indicator</td>
     </tr>
   </tbody>
@@ -3529,23 +3530,23 @@ These are some examples of formats you can use:</p>
 limited to:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">\</code> (forward slash)</li>
-  <li><code class="highlighter-rouge">/</code> (backward slash)</li>
-  <li><code class="highlighter-rouge">|</code> (pipe symbol)</li>
-  <li><code class="highlighter-rouge">:</code> (colon)</li>
-  <li><code class="highlighter-rouge">-</code> (dash)</li>
-  <li><code class="highlighter-rouge">_</code> (underscore)</li>
-  <li><code class="highlighter-rouge">=</code> (equal sign)</li>
+  <li><code class="language-plaintext highlighter-rouge">\</code> (forward slash)</li>
+  <li><code class="language-plaintext highlighter-rouge">/</code> (backward slash)</li>
+  <li><code class="language-plaintext highlighter-rouge">|</code> (pipe symbol)</li>
+  <li><code class="language-plaintext highlighter-rouge">:</code> (colon)</li>
+  <li><code class="language-plaintext highlighter-rouge">-</code> (dash)</li>
+  <li><code class="language-plaintext highlighter-rouge">_</code> (underscore)</li>
+  <li><code class="language-plaintext highlighter-rouge">=</code> (equal sign)</li>
 </ul>
 
 <p>Examples of valid format masks you can produce for display are as follows:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">MM/dd/yyyy</code></li>
-  <li><code class="highlighter-rouge">MMM</code></li>
-  <li><code class="highlighter-rouge">DD/MM/yyyy</code></li>
-  <li><code class="highlighter-rouge">MM/dd/yyyy HH:mm</code></li>
-  <li><code class="highlighter-rouge">DD/MM/yyyy HH:mm</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MM/dd/yyyy</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MMM</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DD/MM/yyyy</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MM/dd/yyyy HH:mm</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DD/MM/yyyy HH:mm</code></li>
 </ul>
 
 <p>To change the date format used to display a column’s values <a href="/6.0/admin/data-modeling/model-data-in-UI.html">for a single
@@ -3585,10 +3586,10 @@ currency data will only display the correct format and currency code in the
 embedded use case. Currency specific symbols are available in the non-embedded
 use case as well, but they are not localized.</p>
 
-<p>All users are treated as if they are in <code class="highlighter-rouge">en-US</code> locale unless they are in embed
+<p>All users are treated as if they are in <code class="language-plaintext highlighter-rouge">en-US</code> locale unless they are in embed
 mode and their browser configuration tells ThoughtSpot that they are in some
-other locale. For example, <code class="highlighter-rouge">100 Polish Zloty</code> appears as <code class="highlighter-rouge">100zł</code> to a user in
-Poland, but without localization enabled, it appears as <code class="highlighter-rouge">PLN 100</code>.</p>
+other locale. For example, <code class="language-plaintext highlighter-rouge">100 Polish Zloty</code> appears as <code class="language-plaintext highlighter-rouge">100zł</code> to a user in
+Poland, but without localization enabled, it appears as <code class="language-plaintext highlighter-rouge">PLN 100</code>.</p>
 
 <p>This subtle difference can be seen when you use the REST API. See the
 ThoughtSpot Application Integration Guide for more information on the API.</p>
@@ -3619,7 +3620,7 @@ ThoughtSpot Application Integration Guide for more information on the API.</p>
         </tr>
         <tr>
           <td><strong>From a column</strong></td>
-          <td>Your currency data will be modeled upon the existing currency information in the selected column This option is disabled if there is no <code class="highlighter-rouge">VARCHAR</code> column to choose from.</td>
+          <td>Your currency data will be modeled upon the existing currency information in the selected column This option is disabled if there is no <code class="language-plaintext highlighter-rouge">VARCHAR</code> column to choose from.</td>
         </tr>
         <tr>
           <td><strong>Specify ISO Code</strong></td>

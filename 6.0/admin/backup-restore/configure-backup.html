@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Configure periodic backups”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure periodic backups”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/backup-restore/configure-backup.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Configure periodic backups”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/configure-backup.html"},"url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/configure-backup.html","headline":"[“Configure periodic backups”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Configure periodic backups”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/configure-backup.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/configure-backup.html"},"description":"You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3322,7 +3323,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>The format for a policy includes the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: "name_for_backup"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: "name_for_backup"
 param {
     mode: FULL | DATALESS | LIGHTWEIGHT
     type: STANDALONE
@@ -3349,7 +3350,7 @@ storage_type: NAS | LOCAL
 <h2 id="before-you-begin">Before you begin</h2>
 <p>Before creating a policy, make sure you have read <a href="how-to-create-a-schedule.html">Understand backup/snapshot
 schedules</a> for information on configuring a
-<code class="highlighter-rouge">schedule</code> element. In addition, you must specify:</p>
+<code class="language-plaintext highlighter-rouge">schedule</code> element. In addition, you must specify:</p>
 
 <table>
   <thead>
@@ -3360,20 +3361,20 @@ schedules</a> for information on configuring a
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">mode</code></td>
-      <td>The backup mode. <code class="highlighter-rouge">FULL</code> backups are necessary for restoring a cluster. See <a href="backup-modes.html">Work with backups</a> for details on each backup mode.</td>
+      <td><code class="language-plaintext highlighter-rouge">mode</code></td>
+      <td>The backup mode. <code class="language-plaintext highlighter-rouge">FULL</code> backups are necessary for restoring a cluster. See <a href="backup-modes.html">Work with backups</a> for details on each backup mode.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">type</code></td>
-      <td>Currently, only <code class="highlighter-rouge">STANDALONE</code> is supported.</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>Currently, only <code class="language-plaintext highlighter-rouge">STANDALONE</code> is supported.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">directory</code></td>
+      <td><code class="language-plaintext highlighter-rouge">directory</code></td>
       <td>The location on the disk to place the backup.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">storage_type</code></td>
-      <td>The type of storage you are using. <code class="highlighter-rouge">NAS</code> storage is recommended for <code class="highlighter-rouge">FULL</code> backups.</td>
+      <td><code class="language-plaintext highlighter-rouge">storage_type</code></td>
+      <td>The type of storage you are using. <code class="language-plaintext highlighter-rouge">NAS</code> storage is recommended for <code class="language-plaintext highlighter-rouge">FULL</code> backups.</td>
     </tr>
   </tbody>
 </table>
@@ -3381,10 +3382,10 @@ schedules</a> for information on configuring a
 <h2 id="create-a-backup-policy">Create a backup policy</h2>
 
 <p>Backups cannot start when another backup is still running. So, choose a
-reasonable frequency for the mode in you policy. For example, a <code class="highlighter-rouge">FULL</code> backup
-takes longer than a <code class="highlighter-rouge">DATALESS</code> backup. Consider the load on the system when
+reasonable frequency for the mode in you policy. For example, a <code class="language-plaintext highlighter-rouge">FULL</code> backup
+takes longer than a <code class="language-plaintext highlighter-rouge">DATALESS</code> backup. Consider the load on the system when
 configuring. Do not backup up when the system would experience a heavy load. For
-example, you may want to take <code class="highlighter-rouge">FULL</code> backups late in the evening or on weekends.</p>
+example, you may want to take <code class="language-plaintext highlighter-rouge">FULL</code> backups late in the evening or on weekends.</p>
 
 <p>The retention system deletes the oldest stored backup and the corresponding
 snapshot on a first-in-first-out basis (FIFO). This means that if you set a
@@ -3477,21 +3478,21 @@ system  deletes the older backup after the new full backup is successful.
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
-    <p>Find a directory with enough disk space to support the <code class="highlighter-rouge">retention_policy number</code> you configure.</p>
+    <p>Find a directory with enough disk space to support the <code class="language-plaintext highlighter-rouge">retention_policy number</code> you configure.</p>
 
-    <p>You can use <code class="highlighter-rouge">df -h</code> to see free disk space and <code class="highlighter-rouge">tscli snapshot ls</code> to view existing snapshots and their size on disk.</p>
+    <p>You can use <code class="language-plaintext highlighter-rouge">df -h</code> to see free disk space and <code class="language-plaintext highlighter-rouge">tscli snapshot ls</code> to view existing snapshots and their size on disk.</p>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli backup-policy create</code> command.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli backup-policy create</code> command.</p>
 
-    <p>The command opens a <code class="highlighter-rouge">vi</code> editor for you to configure the backup policy.</p>
+    <p>The command opens a <code class="language-plaintext highlighter-rouge">vi</code> editor for you to configure the backup policy.</p>
   </li>
   <li>
     <p>Write and save the file to store your configuration.</p>
 
-    <p>By default, newly created policies are automatically enabled. To disable a policy, use the <code class="highlighter-rouge">tscli backup-policy disable</code> command.</p>
+    <p>By default, newly created policies are automatically enabled. To disable a policy, use the <code class="language-plaintext highlighter-rouge">tscli backup-policy disable</code> command.</p>
   </li>
-  <li>Verify the policy using the <code class="highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</li>
+  <li>Verify the policy using the <code class="language-plaintext highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</li>
 </ol>
 
 <h3 id="doing-more-with-backup">Doing more with backup</h3>
@@ -3508,34 +3509,34 @@ system  deletes the older backup after the new full backup is successful.
   <tbody>
     <tr>
       <td>List present backup policies.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy ls</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy ls</code></td>
     </tr>
     <tr>
       <td>Show a backup policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy show &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy show &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Check the status of a policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy status &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy status &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Change an existing policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy update &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy update &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Disable or enable an existing policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy disable</code> or <code class="highlighter-rouge">enable</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy disable</code> or <code class="language-plaintext highlighter-rouge">enable</code></td>
     </tr>
     <tr>
       <td>Delete a policy</td>
-      <td><code class="highlighter-rouge">tscli backup-policy delete &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy delete &lt;name&gt;</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>Finally, you can time a <code class="highlighter-rouge">crontab</code> job with your periodic backup configuration to
-move a backup to longer term storage. Simply create a <code class="highlighter-rouge">crontab</code> job that moves
-the backup to a location outside of the <code class="highlighter-rouge">directory</code> defined in the periodic
+<p>Finally, you can time a <code class="language-plaintext highlighter-rouge">crontab</code> job with your periodic backup configuration to
+move a backup to longer term storage. Simply create a <code class="language-plaintext highlighter-rouge">crontab</code> job that moves
+the backup to a location outside of the <code class="language-plaintext highlighter-rouge">directory</code> defined in the periodic
 schedule.</p>
 
   <div class="tags">

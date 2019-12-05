@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Search using growth over time”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Search using growth over time”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The growth of keyword compares the data from different date periods, and returns a percentage of growth." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/complex-search/search-using-growth-over-time.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Search using growth over time”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/search-using-growth-over-time.html"},"url":"https://docs.thoughtspot.com/6.0/complex-search/search-using-growth-over-time.html","headline":"[“Search using growth over time”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"The growth of keyword compares the data from different date periods, and returns a percentage of growth.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Search using growth over time”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/complex-search/search-using-growth-over-time.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/search-using-growth-over-time.html"},"description":"The growth of keyword compares the data from different date periods, and returns a percentage of growth.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3316,7 +3317,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The <code class="highlighter-rouge">growth of</code> keyword compares the data from different date periods, and
+  <p>The <code class="language-plaintext highlighter-rouge">growth of</code> keyword compares the data from different date periods, and
 returns a percentage of growth.</p>
 
 <h2 id="growth-of-measure-by-year">Growth of measure by year</h2>
@@ -3325,7 +3326,7 @@ returns a percentage of growth.</p>
 
 <ol>
   <li>
-    <p>Type <code class="highlighter-rouge">growth of</code> into the search bar, and choose a measure you’re interested in seeing the growth of.</p>
+    <p>Type <code class="language-plaintext highlighter-rouge">growth of</code> into the search bar, and choose a measure you’re interested in seeing the growth of.</p>
 
     <p><img src="/6.0/images/growth_of_suggestions.png" alt="" title="Growth of suggestions" /></p>
 
@@ -3333,7 +3334,7 @@ returns a percentage of growth.</p>
  can also type a different column name containing numeric data to compare.</p>
   </li>
   <li>
-    <p>Type <code class="highlighter-rouge">by</code>, followed by a date column name.</p>
+    <p>Type <code class="language-plaintext highlighter-rouge">by</code>, followed by a date column name.</p>
 
     <p>The growth is calculated as a positive or negative percentage, for each
  period relative to the last period in the series. A line chart is a good
@@ -3375,7 +3376,7 @@ returns a percentage of growth.</p>
 <p>Growth query now supports more hierarchical date buckets and period
 calculations. The growth query syntax is as follows:</p>
 
-<p><code class="highlighter-rouge">growth of &lt;measure_column&gt; by &lt;date_column&gt; &lt;bucket&gt; &lt;period-over-period&gt;</code></p>
+<p><code class="language-plaintext highlighter-rouge">growth of &lt;measure_column&gt; by &lt;date_column&gt; &lt;bucket&gt; &lt;period-over-period&gt;</code></p>
 
 <p>This table shows the possible buckets and the period-over keywords you can
 combine:</p>
@@ -3425,7 +3426,7 @@ combine:</p>
   </tr>
 </table>
 
-<p>For example, the following query <code class="highlighter-rouge">growth of sales by date daily month-over-month</code>:</p>
+<p>For example, the following query <code class="language-plaintext highlighter-rouge">growth of sales by date daily month-over-month</code>:</p>
 
 <p><img src="/6.0/images/date-period-over-period.png" alt="" /></p>
 

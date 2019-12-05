@@ -46,22 +46,23 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Installing Amazon Web Services”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Installing Amazon Web Services”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Installation Prerequisites Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:" />
-<meta property="og:description" content="Installation Prerequisites Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:" />
+<meta name="description" content="To install a ThoughtSpot cluster on AWS, complete these steps:" />
+<meta property="og:description" content="To install a ThoughtSpot cluster on AWS, complete these steps:" />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Installing Amazon Web Services”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html"},"url":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html","headline":"[“Installing Amazon Web Services”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Installation Prerequisites Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Installing Amazon Web Services”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html"},"description":"To install a ThoughtSpot cluster on AWS, complete these steps:","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3309,14 +3310,31 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    7 minutes
   
 </span>
  -->
 
     
 
-  <h2 id="installation-prerequisites">Installation Prerequisites</h2>
+  <p>To install a ThoughtSpot cluster on AWS, complete these steps:</p>
+
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#installation-prerequisites">Installation Prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#configure-nodes">Configure Nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-install">Install Cluster</a></td>
+  </tr>
+</table>
+
+<h2 id="installation-prerequisites">Installation Prerequisites</h2>
 <p>Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:</p>
 
 <ol>
@@ -3326,54 +3344,78 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h2 id="configure-nodes">Configure Nodes</h2>
-<p>After creating the instance, you must configure the nodes.</p>
+<p>After creating the instance, you must configure the nodes. Follow the steps in this checklist.</p>
 
-<h3 id="step-1-log-into-your-cluster">Step 1: Log into your cluster</h3>
-<p>Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows.</p>
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-1">Step 1: Log into your cluster</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-2">Step 2: Get a list of nodes to configure</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-3">Step 3: Configure the network of nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-4">Step 4: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#node-step-5">Step 5: Confirm node configuration</a></td>
+  </tr>
+</table>
+
+<h3 id="node-step-1">Step 1: Log into your cluster</h3>
+
+<p>Log into your cluster with admin credentials from a terminal on a Mac, or a terminal emulator on Windows.</p>
+
+<p>Ask your network administrator for admin credentials if you don’t know them already.</p>
+
 <ol>
-  <li>Run <code class="highlighter-rouge">ssh admin@clusterIP</code> or <code class="highlighter-rouge">ssh admin@hostname</code>, replacing ‘clusterIP’ or ‘hostname’ with your specific network information.</li>
-  <li>Enter your admin password.
-    <ul>
-      <li>Ask your network administrator if you don’t know the password.
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@clusterIP
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">ssh admin@&lt;clusterIP&gt;</code> or <code class="language-plaintext highlighter-rouge">ssh admin@&lt;hostname&gt;</code>.<br />
+Replace <code class="language-plaintext highlighter-rouge">clusterIP</code> or <code class="language-plaintext highlighter-rouge">hostname</code> with your specific network information.</li>
 </ol>
 
-<h3 id="step-2-get-a-list-of-nodes-to-configure">Step 2: Get a list of nodes to configure</h3>
-<p>Run the <code class="highlighter-rouge">tscli cluster get-config</code> command to get a list of the nodes to configure for the new cluster, and redirect it to the file <code class="highlighter-rouge">nodes.config</code>. You can find more information on this process in the <a href="/6.0/appliance/hardware/nodesconfig-example.html">nodes.config file reference</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh admin@&lt;clusterIP&gt;
+</code></pre></div></div>
+<ol>
+  <li>Enter your admin password.<br />
+Ask your network administrator if you don’t know the password.</li>
+</ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster get-config |&amp; tee nodes.config
+<h3 id="node-step-2">Step 2: Get a list of nodes to configure</h3>
+<p>Run the <code class="language-plaintext highlighter-rouge">tscli cluster get-config</code> command to get a list of the nodes to configure for the new cluster. Redirect it to the file <code class="language-plaintext highlighter-rouge">nodes.config</code>.<br />
+You can find more information on this process in the <a href="/6.0/appliance/hardware/nodesconfig-example.html"><code class="language-plaintext highlighter-rouge">nodes.config</code> file reference</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster get-config |&amp; tee nodes.config
 </code></pre></div></div>
 
-<h3 id="step-3-configure-the-network-of-nodes">Step 3: Configure the network of nodes</h3>
+<h3 id="node-step-3">Step 3: Configure the network of nodes</h3>
 <ol>
-  <li>Add your specific network information for the nodes in the <code class="highlighter-rouge">nodes.config</code> file, as demonstrated in the <a href="/6.0/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example">autodiscovery of one node example</a>.</li>
-  <li>Fill in the areas specified in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of the <code class="highlighter-rouge">nodes.config</code> file</a> with your specific network information.
-    <ul>
-      <li>If you have  additional nodes, complete each node within the nodes.config file in the same way.</li>
-    </ul>
-  </li>
+  <li>Add your specific network information for the nodes in the <code class="language-plaintext highlighter-rouge">nodes.config</code> file, as demonstrated in the <a href="/6.0/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example">autodiscovery of one node example</a>.</li>
+  <li>Fill in the areas specified in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of the <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a> with your specific network information.<br />
+If you have additional nodes, complete each node within the nodes.config file in the same way.</li>
 </ol>
 
-<p>Make sure that you do not edit any part of the nodes.config file except the sections explained in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of <code class="highlighter-rouge">nodes.config</code></a>. Deleting quotation marks, commas, or other parts of the code could cause setup to fail.</p>
+<p>Do not edit any part of the <code class="language-plaintext highlighter-rouge">nodes.config</code> file except the sections described in <a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of the <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a>. If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.</p>
 
-<h3 id="step-4-configure-the-nodes">Step 4: Configure the nodes</h3>
-<p>Configure the nodes in the <code class="highlighter-rouge">nodes.config</code> file using the <a href="/6.0/appliance/aws/installing-aws.html#set-config-command"><code class="highlighter-rouge">set-config</code> command</a>.</p>
+<h3 id="node-step-4">Step 4: Configure the nodes</h3>
+<p>Configure the nodes in the <code class="language-plaintext highlighter-rouge">nodes.config</code> file using the <a href="/6.0/appliance/aws/installing-aws.html#set-config-command"><code class="language-plaintext highlighter-rouge">set-config</code> command</a>.</p>
 <ol>
-  <li>Disable <code class="highlighter-rouge">Firewalld</code> by running <code class="highlighter-rouge">sudo systemctl stop firewalld</code> in your terminal.
-  <code class="highlighter-rouge">Firewalld</code> is a Linux firewall that must be off for ThoughtSpot installation. When the cluster installer reboots the nodes, <code class="highlighter-rouge">Firewalld</code> automatically turns back on.</li>
-  <li>Run <code class="highlighter-rouge">$ cat nodes.config | tscli cluster set-config</code>.
-    <ul>
-      <li>If the command returns an error, refer to <a href="/6.0/appliance/aws/installing-aws.html#set-config-error-recovery">set-config error recovery</a>.</li>
-    </ul>
-  </li>
+  <li>Disable the <code class="language-plaintext highlighter-rouge">Firewalld</code> service by running <code class="language-plaintext highlighter-rouge">sudo systemctl stop firewalld</code> in your terminal.
+  <code class="language-plaintext highlighter-rouge">Firewalld</code> is a Linux firewall that must be off for ThoughtSpot installation. After the cluster installer reboots the nodes, <code class="language-plaintext highlighter-rouge">Firewalld</code> automatically turns back on.</li>
+  <li>Run the configuration command: <code class="language-plaintext highlighter-rouge">$ cat nodes.config | tscli cluster set-config</code>.<br />
+If the command returns an error, refer to <a href="/6.0/appliance/aws/installing-aws.html#set-config-error-recovery">set-config error recovery</a>.</li>
 </ol>
 
-<h4 id="set-config-command">Set-config</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl stop firewalld
+<p id="set-config-command"><code class="language-plaintext highlighter-rouge">Set-config</code></p>
+
+<p>After you run the node configuration command, your output appears similar to the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl stop firewalld
 $ cat nodes.config | tscli cluster set-config
 
 Connecting to local node-scout  
@@ -3385,37 +3427,11 @@ Setting up NTP Servers
 Setting up Timezone  
 Done setting up ThoughtSpot
 </code></pre></div></div>
-<h4 id="set-config-error-recovery">Set-config error recovery</h4>
-<p>If the set-config fails with the following warning, restart the node-scout service by running <code class="highlighter-rouge">sudo systemctl restart node-scout</code>.</p>
 
-<h4 id="node-scout-restart">Restart node-scout service</h4>
-<p>If you have this error, restart the node-scout:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
-Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
-Please retry or contact support.
-</code></pre></div></div>
-<p>Restart node-scout with the following command, then retry the <a href="/6.0/appliance/aws/installing-aws.html#set-config-command">set-config command</a>.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl restart node-scout
-</code></pre></div></div>
-
-<p>The command output should no longer have a warning:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat nodes.config | tscli cluster set-config
-
-Connecting to local node-scout  
-Setting up hostnames for all nodes  
-Setting up networking interfaces on all nodes  
-Setting up hosts file on all nodes  
-Setting up IPMI configuration  
-Setting up NTP Servers  
-Setting up Timezone  
-Done setting up ThoughtSpot
-</code></pre></div></div>
-<h3 id="step-5-confirm-node-configuration-with-the-get-config-command">Step 5: Confirm node configuration with the <code class="highlighter-rouge">get-config</code> command</h3>
-<p>Run <code class="highlighter-rouge">tscli cluster get-config</code> in your terminal to confirm node configuration.</p>
-
-<h4 id="confirm-node-configuration">Confirm node configuration</h4>
-<div id="cluster-install" class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster get-config
+<h3 id="node-step-5">Step 5: Confirm node configuration</h3>
+<p>Use the <code class="language-plaintext highlighter-rouge">get-config</code> command to confirm node configuration.<br />
+Your output may look similar to the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster get-config
 
 {  
   "ClusterId": "",  
@@ -3443,36 +3459,59 @@ Done setting up ThoughtSpot
   }  
 }
 </code></pre></div></div>
-<h2 id="install-cluster">Install Cluster</h2>
-<p>Next, install the cluster using the release tarball (est. time 1 hour).</p>
 
-<p>If you do not have a link to download the release tarball, open a support ticket at <a href="https://support.thoughtspot.com">ThoughtSpot Support</a> to access the release tarball.</p>
+<h2 id="cluster-install">Install Cluster</h2>
+<p>Install the cluster using the release tarball. The estimated installation time is one hour. Follow the steps in this checklist.</p>
 
-<h3 id="run-installer">Step 1. Run the Installer</h3>
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-1">Step 1: Run the installer</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-2">Step 2: Check cluster health</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-aws#cluster-step-3">Step 3: Finalize installation</a></td>
+  </tr>
+</table>
+
+<p>If you do not have a link to download the release tarball, open a support ticket at <a href="https://support.thoughtspot.com">ThoughtSpot Support</a> to request access to the release tarball.</p>
+
+<h3 id="cluster-step-1">Step 1: Run the installer</h3>
 <ol>
-  <li>Copy the downloaded release tarball to <code class="highlighter-rouge">/home/admin</code> with the command <code class="highlighter-rouge">scp 0.0.tar.gz admin@hostname:/home/admin/file-name</code>. Replace ‘0.0’ with your release number. Replace ‘hostname’ and ‘file-name’ with your specific hostname and the name of the tarball file.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ scp 0.0.tar.gz admin@hostname:/home/admin/file-name
+  <li>Copy the downloaded release tarball to <code class="language-plaintext highlighter-rouge">/home/admin</code> using the following command:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ scp &lt;release-number&gt;.tar.gz admin@&lt;hostname&gt;:/home/admin/&lt;file-name&gt;
 </code></pre></div>    </div>
-  </li>
-  <li>Run <code class="highlighter-rouge">tscli cluster create &lt;release&gt;</code>.
+    <p>Note the following parameters:</p>
     <ul>
-      <li>If you are using an s3 bucket for object storage, include the flag <code class="highlighter-rouge">--enable_cloud_storage s3</code>.
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
-</code></pre></div>        </div>
-      </li>
+      <li><code class="language-plaintext highlighter-rouge">release-number</code> is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.</li>
+      <li><code class="language-plaintext highlighter-rouge">hostname</code> is your specific hostname.</li>
+      <li><code class="language-plaintext highlighter-rouge">file-name</code> is the name of the tarball file on your local computer.</li>
     </ul>
   </li>
-  <li>Edit the output with your specific cluster information. For more information on this process, refer to <a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="highlighter-rouge">cluster create</code> command</a>, and <a href="/6.0/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="highlighter-rouge">cluster create</code> command</a>.</li>
+  <li>Create the cluster<br />
+Run <code class="language-plaintext highlighter-rouge">tscli cluster create</code> to create the cluster.<br />
+If you are using an s3 bucket for object storage, include the flag <code class="language-plaintext highlighter-rouge">--enable_cloud_storage s3</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli cluster create &lt;release-number&gt;.tar.gz --enable_cloud_storage s3
+</code></pre></div>    </div>
+  </li>
+  <li>Edit the output with your specific cluster information.<br />
+For more information on this process, refer to <a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a> and <a href="/6.0/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a>.</li>
 </ol>
 
-<p>The cluster installer automatically reboots all the nodes after the install. <code class="highlighter-rouge">Firewalld</code> automatically turns back on. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
-  Log into any node to check the current cluster status, using the command <code class="highlighter-rouge">tscli cluster status</code>.</p>
+<p>The cluster installer automatically reboots all the nodes after a successful install. The <code class="language-plaintext highlighter-rouge">firewalld</code> service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br />
+  Log into any node to check the current cluster status:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ tscli cluster status
+</code></pre></div></div>
 
-<h3 id="step-2-check-cluster-health">Step 2. Check Cluster Health</h3>
-<p>Once the cluster is installed, check its status with the <code class="highlighter-rouge">tscli cluster status</code> command <a href="/6.0/appliance/aws/installing-aws.html#check-cluster-health">(Cluster Status)</a>.</p>
+<h3 id="cluster-step-2">Step 2: Check cluster health</h3>
+<p>After the cluster installs, check its status using the <code class="language-plaintext highlighter-rouge">tscli cluster status</code> command.</p>
 
-<h4 id="check-cluster-health">Cluster Status</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster status
+<p>Your output may look similar to the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster status
 Cluster: RUNNING
 Cluster name    : thoughtspot
 Cluster id      : 1234X11111
@@ -3498,18 +3537,19 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 </code></pre></div></div>
-<h3 id="step-3-finalize-installation">Step 3. Finalize Installation</h3>
 
-<p>After the cluster status changes to “Ready,” log into the ThoughtSpot application on your browser.
+<h3 id="cluster-step-3">Step 3: Finalize installation</h3>
+
+<p>After the cluster status changes to <code class="language-plaintext highlighter-rouge">READY</code>, log into ThoughtSpot on your browser.
 Follow these steps:</p>
 
 <ol>
   <li>Start a browser from your computer.</li>
   <li>Enter your secure IP information on the address line.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https:&lt;IP-address&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https:&lt;IP-address&gt;
 </code></pre></div>    </div>
   </li>
-  <li>If you don’t have a security certificate for ThoughtSpot, you must bypass the security warning to proceed:
+  <li>If you don’t have a security certificate for ThoughtSpot, you must bypass the security warning:
     <ul>
       <li>Click <strong>Advanced</strong></li>
       <li>Click <strong>Proceed</strong></li>
@@ -3522,14 +3562,31 @@ Follow these steps:</p>
 
 <p id="ts-login"><img src="/6.0/images/ts-login-page.png" alt="ThoughtSpot's login window" title="Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." /></p>
 
+<h2 id="set-config-error-recovery">Error recovery</h2>
+<h3 id="set-config-error-recovery"><code class="language-plaintext highlighter-rouge">Set-config</code> error recovery</h3>
+<p>If you get a warning about node detection when you run <a href="/6.0#set-config-command">the <code class="language-plaintext highlighter-rouge">set-config</code> command</a>, restart the node-scout service.</p>
+
+<p>Your error may look something like the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
+Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
+Please retry or contact support.
+</code></pre></div></div>
+<p>Restart the node-scout service with the following command, then retry the <a href="/6.0/appliance/aws/installing-aws.html#set-config-command">set-config command</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl restart node-scout
+$ cat nodes.config | tscli cluster set-config
+</code></pre></div></div>
+
+<p>The command output should no longer have a warning.</p>
+
 <h2 id="references">References</h2>
-<p>Use these references for successful installation and administration of ThoughtSpot.</p>
+<p>Use these references for successful installation and administration of ThoughtSpot:</p>
 
 <ul>
-  <li><a href="/6.0/appliance/hardware/nodesconfig-example">The <code class="highlighter-rouge">nodes.config</code> file</a></li>
-  <li><a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of the <code class="highlighter-rouge">nodes.config</code> file</a></li>
-  <li><a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="highlighter-rouge">cluster create</code> command</a></li>
-  <li><a href="/6.0/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="highlighter-rouge">cluster create</code> command</a></li>
+  <li><a href="/6.0/appliance/hardware/nodesconfig-example">The <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a></li>
+  <li><a href="/6.0/appliance/hardware/parameters-nodesconfig.html">Parameters of the <code class="language-plaintext highlighter-rouge">nodes.config</code> file</a></li>
+  <li><a href="/6.0/appliance/hardware/cluster%20create.html">Using the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a></li>
+  <li><a href="/6.0/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a></li>
   <li><a href="https://docs.thoughtspot.com">ThoughtSpot Documentation</a></li>
   <li><a href="/6.0/appliance/contact.html">Contact Support</a></li>
 </ul>
@@ -3561,7 +3618,7 @@ Follow these steps:</p>
       <div class="col-lg-12 footer">
         Generated: Dec 4, 2019 <br />
          &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 10/30/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 12/4/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

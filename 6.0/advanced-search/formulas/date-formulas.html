@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“About date formulas”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“About date formulas”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Date functions are useful when you want to compare data collected between two date periods. Date formulas allow you to apply date related functions to your formulas." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“About date formulas”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html"},"url":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html","headline":"[“About date formulas”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"Date functions are useful when you want to compare data collected between two date periods. Date formulas allow you to apply date related functions to your formulas.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“About date formulas”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html"},"description":"Date functions are useful when you want to compare data collected between two date periods. Date formulas allow you to apply date related functions to your formulas.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3571,8 +3572,8 @@ formulas.</p>
 <p>The following example shows you how to create formulas that you can use to compare data from this week to last week.</p>
 
 <ul>
-  <li>The formula for this week is: <code class="highlighter-rouge">week ( today () ) - week (date)</code></li>
-  <li>The formula for last week is: <code class="highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
+  <li>The formula for this week is: <code class="language-plaintext highlighter-rouge">week ( today () ) - week (date)</code></li>
+  <li>The formula for last week is: <code class="language-plaintext highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
 </ul>
 
 <h3 id="example-2">Example 2</h3>
@@ -3580,39 +3581,39 @@ formulas.</p>
 <p>The following example shows you how to calculate the percent increase from the last date period to this period in terms of revenue.</p>
 
 <ol>
-  <li>Create the formula: <code class="highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
-  <li>Then create the formula: <code class="highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
-  <li>Use <a href="/6.0/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
+  <li>Create the formula: <code class="language-plaintext highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
+  <li>Then create the formula: <code class="language-plaintext highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
+  <li>Use <a href="/6.0/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="language-plaintext highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
 </ol>
 
 <h2 id="fiscal-and-gregorian-calendars">Fiscal and Gregorian calendars</h2>
 
-<p>For the following date formulas, you can further specify either <code class="highlighter-rouge">fiscal</code> or
-Gregorian <code class="highlighter-rouge">calendar</code> on which to base date calculations. (If you do not specify a
+<p>For the following date formulas, you can further specify either <code class="language-plaintext highlighter-rouge">fiscal</code> or
+Gregorian <code class="language-plaintext highlighter-rouge">calendar</code> on which to base date calculations. (If you do not specify a
 calendar type, the formula defaults to standard Gregorian, with the year
 starting in January.)</p>
 
 <ul>
-  <li><code class="highlighter-rouge">day_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">day_number_of_year</code></li>
-  <li><code class="highlighter-rouge">month_number</code></li>
-  <li><code class="highlighter-rouge">month_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">quarter_number</code></li>
-  <li><code class="highlighter-rouge">start_of_quarter</code></li>
-  <li><code class="highlighter-rouge">start_of_year</code></li>
-  <li><code class="highlighter-rouge">week_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">week_number_of_year</code></li>
-  <li><code class="highlighter-rouge">year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">day_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">day_number_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">month_number</code></li>
+  <li><code class="language-plaintext highlighter-rouge">month_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">quarter_number</code></li>
+  <li><code class="language-plaintext highlighter-rouge">start_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">start_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">week_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">week_number_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">year</code></li>
 </ul>
 
 <p>Your ThoughtSpot administrator and ThoughtSpot Support can
 <a href="/6.0/admin/setup/set-custom-calendar.html#">set up a fiscal calendar year</a>
-to start on any month. If the <code class="highlighter-rouge">fiscal</code> year is not explicitly configured in the system,
-<code class="highlighter-rouge">fiscal</code> defaults to January, the same as the Gregorian <code class="highlighter-rouge">calendar</code>.</p>
+to start on any month. If the <code class="language-plaintext highlighter-rouge">fiscal</code> year is not explicitly configured in the system,
+<code class="language-plaintext highlighter-rouge">fiscal</code> defaults to January, the same as the Gregorian <code class="language-plaintext highlighter-rouge">calendar</code>.</p>
 
-<p>For example, the formula <code class="highlighter-rouge">month_number_of_quarter (05/01/2014)</code> would return <code class="highlighter-rouge">2</code>
+<p>For example, the formula <code class="language-plaintext highlighter-rouge">month_number_of_quarter (05/01/2014)</code> would return <code class="language-plaintext highlighter-rouge">2</code>
 based on the default Gregorian calendar, whereas the formula
-<code class="highlighter-rouge">month_number_of_quarter (05/01/2014, 'fiscal')</code> would return <code class="highlighter-rouge">1</code> if your
+<code class="language-plaintext highlighter-rouge">month_number_of_quarter (05/01/2014, 'fiscal')</code> would return <code class="language-plaintext highlighter-rouge">1</code> if your
 administrator has configured the fiscal calendar to start at May.</p>
 
 <h2 id="related-information">Related information</h2>

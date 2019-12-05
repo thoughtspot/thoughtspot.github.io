@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Connect with TQL and create a schema”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Connect with TQL and create a schema”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/loading/prep-schema-for-load.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-04T09:14:53-08:00" />
+<meta property="article:published_time" content="2019-12-04T22:40:46-08:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Connect with TQL and create a schema”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/loading/prep-schema-for-load.html"},"url":"https://docs.thoughtspot.com/6.0/admin/loading/prep-schema-for-load.html","headline":"[“Connect with TQL and create a schema”]","dateModified":"2019-12-04T09:14:53-08:00","datePublished":"2019-12-04T09:14:53-08:00","description":"To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"[“Connect with TQL and create a schema”]","dateModified":"2019-12-04T22:40:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/loading/prep-schema-for-load.html","datePublished":"2019-12-04T22:40:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/loading/prep-schema-for-load.html"},"description":"To perform administrative tasks directly in the database, you will use the ThoughtSpot SQL Command Line (TQL). TQL supports many, but not all, common SQL commands.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2802,7 +2803,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Azure</a>
+                       <a href="#">Azure Installation</a>
                        <ul>
                         
                           
@@ -2813,7 +2814,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up ThoughtSpot in Azure</a></li>
+                                  <li><a href="/6.0/appliance/azure/launch-an-instance.html">Set up Azure for ThoughtSpot</a></li>
                               
                             
                         
@@ -2823,7 +2824,7 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">GCP</a>
+                       <a href="#">GCP Installation</a>
                        <ul>
                         
                           
@@ -2834,7 +2835,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up ThoughtSpot in GCP</a></li>
+                                  <li><a href="/6.0/appliance/gcp/launch-an-instance.html">Set up GCP for ThoughtSpot</a></li>
                               
                             
                         
@@ -2848,7 +2849,7 @@ var ss360Config = {
             
               
               <li class="levelTwo">
-                  <a href="#">VMware</a>
+                  <a href="#">VMware Installation</a>
                   <ul>
                 
                   
@@ -3332,12 +3333,12 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Invoke TQL:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
 
  TQL&gt;
 </code></pre></div>    </div>
   </li>
-  <li>Enter your SQL command, followed by a semicolon (<code class="highlighter-rouge">;</code>).</li>
+  <li>Enter your SQL command, followed by a semicolon (<code class="language-plaintext highlighter-rouge">;</code>).</li>
 </ol>
 
 <h2 id="enter-a-sql-script">Enter a SQL script</h2>
@@ -3353,25 +3354,25 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>If the database you will be using does not exist, create it now:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE DATABASE my_database;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE DATABASE my_database;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Connect to the database:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; USE my_database;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; USE my_database;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>If you wish to use a schema other than the default one, create it now:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE SCHEMA my_schema;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; CREATE SCHEMA my_schema;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Issue a <code class="highlighter-rouge">CREATE TABLE</code> command for each table you will create, using the information in <a href="plan-schema.html#">Plan the schema</a>.</p>
+    <p>Issue a <code class="language-plaintext highlighter-rouge">CREATE TABLE</code> command for each table you will create, using the information in <a href="plan-schema.html#">Plan the schema</a>.</p>
 
-    <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Foreign key declaration within a <code class="highlighter-rouge">CREATE TABLE</code> will show the table created even if there are problems with the foreign key. Therefore, it is good practice to also issue a separate <code class="highlighter-rouge">ALTER TABLE ADD CONSTRAINT FOREIGN KEY</code> command.</div>
+    <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Foreign key declaration within a <code class="language-plaintext highlighter-rouge">CREATE TABLE</code> will show the table created even if there are problems with the foreign key. Therefore, it is good practice to also issue a separate <code class="language-plaintext highlighter-rouge">ALTER TABLE ADD CONSTRAINT FOREIGN KEY</code> command.</div>
   </li>
 </ol>
 
