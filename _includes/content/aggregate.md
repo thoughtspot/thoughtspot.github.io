@@ -1,8 +1,8 @@
 <table>
 <colgroup>
    <col style="width:25%" />
-   <col style="width:50%" />
    <col style="width:25%" />
+   <col style="width:50%" />
 </colgroup>
   <thead>
     <tr>
@@ -64,10 +64,10 @@
       <code>query_filters</code> specify the lists or filters used in the original search. Use <code>+</code> (plus) and <code>-</code> (minus) to add or exclude specific columns for query groups.</p>
       <p>See <a href="{{"/complex-search/aggregation-flexible.html" | prepend: site.baseurl }}">Flexible aggregation functions</a>.</p>
       </td>
-      <td><code class="highlighter-rouge">group_aggregate (sum (revenue) , {ship mode, date} , {} )</code><br /><br />
-      <code class="highlighter-rouge" >group_aggregate (sum (revenue) , {ship mode , date}, {day_of_week (date) = 'friday'} )</code><br /><br />
-      <code class="highlighter-rouge">group_aggregate (sum (revenue) , query_groups() , query_filters() )</code><br /><br />
-      <code class="highlighter-rouge">group_aggregate (sum (revenue) , query_groups() + {date} , query_filters() )</code>
+      <td><code class="highlighter-rouge">group_aggregate (sum (revenue), {ship mode, date}, {} )</code><br /><br />
+      <code class="highlighter-rouge">group_aggregate (sum (revenue), {ship mode , date}, {day_of_week (date) = 'friday'} )</code><br /><br />
+      <code class="highlighter-rouge">group_aggregate (sum (revenue), query_groups(), query_filters() )</code><br /><br />
+      <code class="highlighter-rouge">group_aggregate (sum (revenue), query_groups() + {date}, query_filters() )</code>
       </td>
     </tr>
     <tr id="group_average">
