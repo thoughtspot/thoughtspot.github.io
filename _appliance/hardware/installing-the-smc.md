@@ -1,6 +1,6 @@
 ---
 title: [Installing the Super Micro Computer]
-last_updated: [11/27/2019]
+last_updated: [12/5/2019]
 summary: "Learn how to install the Super Micro Computer (SMC) Appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -52,7 +52,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Networking information, for data, management IPs, DNS, timezone, and default gateway IP. Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference.</td></tr>
+<td>Networking information, for data, management IPs, DNS, timezone, and default gateway IP. Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference before beginning the install process.</td></tr>
 
 <tr>
 <td>&#10063;</td>
