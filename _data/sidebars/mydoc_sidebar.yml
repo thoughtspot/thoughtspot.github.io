@@ -1183,7 +1183,7 @@ entries:
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs,instAzure
-        - title: Set up Azure for ThoughtSpot
+        - title: Set up ThoughtSpot in Azure
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs,instAzure
       - levelThreeTitle: GCP Installation
@@ -1195,7 +1195,7 @@ entries:
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
           output: web,appQs,instGCP
-        - title: Set up GCP for ThoughtSpot
+        - title: Set up ThoughtSpot in GCP
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs,instGCP
     - levelTwoTitle: VMware Installation
@@ -1207,7 +1207,7 @@ entries:
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs,instVMware
-        - title: Set up VMware for ThoughtSpot
+        - title: Set up ThoughtSpot in VMware
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs,instVMware
     - title: Network policies
