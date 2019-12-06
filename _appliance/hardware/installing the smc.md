@@ -161,7 +161,7 @@ Connect the keyboard and the mouse to the appliance, and log in using the admin 
 Once you have connected the appliance, configure the nodes in your Mac Terminal or Windows terminal emulator.
 
 ### Step 1: Change to the `install` directory
-In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. If your `/install` subdirectory does not exist, you may have to use the `home/admin` directory.
+In your terminal, change directory to `/home/admin/install` by running the command `cd /home/admin/install`. If your `../install` subdirectory does not exist, you may have to use the `/home/admin` directory.
 
     $ cd /home/admin/install  
 
