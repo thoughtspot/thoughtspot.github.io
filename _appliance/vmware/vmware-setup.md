@@ -1,5 +1,5 @@
 ---
-title: [Set up VMware for ThoughtSpot]
+title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
 last_updated: tbd
 sidebar: mydoc_sidebar
