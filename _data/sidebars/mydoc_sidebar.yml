@@ -1372,6 +1372,15 @@ entries:
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
+  - sectiontitle: ThoughtSpot in Practice
+    output: web,practGd
+    sectionitems:
+    - title: Introduction
+      url: /practice/intro.html
+      output: web,practGd
+    - title: Reaggregation in practice
+      url: /practice/reaggregation-scenarios.html
+      output: web,practGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
