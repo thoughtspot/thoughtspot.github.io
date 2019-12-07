@@ -6,8 +6,11 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The purpose of this section is to guide you through a few solutions we created for our clients, so you can leverage our experience to quickly and confidently employ ThoughtSport in meeting your own business objectives. 
+The purpose of this section is to guide you through a few solutions we created for our clients, so you can leverage our experience to quickly and confidently employ ThoughtSport in meeting your own business objectives.
 
-Each topic and scenario includes a real-world data modelling problem, and how we solved it with ThoughtSpot technology.
+Each topic and scenario includes a real-world data modeling problem, and how we solved it with ThoughtSpot technology.
 
-[administrative access privileges]({{ site.baseurl }}/practice/reaggregation-scenarios.html).
+* [Scenario 1: Supplier tendering by job]({{ site.baseurl }}/practice/reaggregation-scenarios.html#supplier-tendering)
+* [Scenario 2: Average rates of exchange]({{ site.baseurl }}/practice/reaggregation-scenarios.html#average-rates-exchange)
+* [Scenario 3: Average period value for semi-additive numbers I]({{ site.baseurl }}/practice/reaggregation-scenarios.html#average-period-value-semi-additive-numbers-1)
+* [Scenario 4: Average period value for semi-additive numbers II]({{ site.baseurl }}/practice/reaggregation-scenarios.html#average-period-value-semi-additive-numbers-2)

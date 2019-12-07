@@ -8,10 +8,10 @@ permalink: /:collection/:path.html
 
 The following scenarios showcase the use of the `group_aggregate` function in the real world. We provide them to demonstrate to you how the function works, and the scenarios where it proved useful.
 
-* [Scenario 1: Supplier tendering by job]{#supplier-tendering}
-* [Scenario 2: Average rates of exchange]{#average-rates-exchange}
-* [Scenario 3: Average period value for semi-additive numbers I]
-* [Scenario 4: Average period value for semi-additive numbers II]
+* [Scenario 1: Supplier tendering by job](#supplier-tendering)
+* [Scenario 2: Average rates of exchange](#average-rates-exchange)
+* [Scenario 3: Average period value for semi-additive numbers I](#average-period-value-semi-additive-numbers-1)
+* [Scenario 4: Average period value for semi-additive numbers II](#average-period-value-semi-additive-numbers-2)
 
 {% include content/flexible-aggregation-best-practices.md %}
 
@@ -46,7 +46,7 @@ sum( group_aggregate ( if ( sum ( # trades tendered ) > 1 ) then 1 
     <li>
       <code><strong>query_groups( )</strong></code>
       <p>Adds any additional columns in the search to this aggregation. Here, this is the <code><strong>datelogged</strong></code> column at the yearly level.</p></li>
-    <li>  
+    <li>
       <code><strong>query_filters ( )</strong></code>
       <p>Applies any filters entered in the search. Here, there are no filters.</p></li>
   </ul>
@@ -244,7 +244,7 @@ To solve for this, consider the data model:
 
 ###  Alternate Solution
 
-To return only the number of days that have existing transactions, use the following code in the denominator, insted:
+To return only the number of days that have existing transactions, use the following code in the denominator, instead:
 
 ```
 sum(days_in_period)
