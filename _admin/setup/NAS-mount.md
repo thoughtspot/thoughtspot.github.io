@@ -13,8 +13,7 @@ permalink: /:collection/:path.html
 ThoughtSpot enables you to mount a NAS file system for storing or accessing
 large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found.
 
-When supplying a directory for writing or reading a backup, you can specify the `mount` point as the directory to use. Likewise, you can stage data there for
-loading.
+When supplying a directory for writing or reading a backup, you can specify the a new mount point within /export as the directory to use. Likewise, you can stage data there for loading. It is best to have 2 separate NAS volumes, individually dedicated to data loads and backups.
 
 Backups are written by the Linux user `admin`. If that user does not have
 permission to write to the NAS file system, you can write the backups to a disk
