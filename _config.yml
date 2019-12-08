@@ -36,7 +36,7 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 
 include:
-  - _redirects.txt
+  - _site/_redirects.txt
 # these are the files and directories that jekyll will include in the build
 
 timezone: America/Tijuana
