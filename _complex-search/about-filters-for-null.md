@@ -16,7 +16,7 @@ When you view a table or chart, you may see values that appear as **\{blank\}**.
 -   NULL values, which are essentially missing values.
 -   blank or empty values, like an empty string of text or a string containing only whitespace (spaces, tabs).
 
-Both of these types of values are represented as **\{blank\}**, but if you filter on **\{blank\}**, the filter will apply to only the NULL values. That is, only the NULL values will be included in your result. It can be hard to tell what's going on if you have a data source that contains both NULL and blank/empty values.
+Both of these types of values are represented as **\{blank\}**, but if you filter on **\{blank\}**, the filter will apply to only the NULL values. That is, only the NULL values will be included in your result. It can be hard to tell what's going on if you have a data source that contains both NULL and blank/empty values. 
 
 ## To show NULL and blank values differently
 
