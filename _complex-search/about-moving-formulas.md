@@ -13,7 +13,7 @@ valleys are smoothed out. While the smaller the interval, the closer the moving
 averages are to the actual data points.
 
 Each of the moving formula accepts a measure, two integers to define the window,
-and one or more optional attributes.
+and one or more optional attributes. 
 
 ```
 formula (measure,integer,integer,[attribute,attribute,...])
