@@ -17,14 +17,14 @@ fixed issues from the previous releases, and any known issues.
 * [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
 * [5.3 Fixed Issues](#53-fixed)
-* [Beta Programs](#beta-program) 
+* [Beta Programs](#beta-program)
 * [Notes from Older Versions](#notes-for-older-versions)
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
 If you are running one of the following versions, you can upgrade to the 5.3.2 release
-directly:
+directly: 
 
 * 5.3 to 5.3.2
 * 5.2.x to 5.3.2
