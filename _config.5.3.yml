@@ -1,4 +1,4 @@
-baseurl : /5.3
-exclude : 
+baseurl : /6.0
+exclude :
   - 5.3
 branch_url : /5.3
