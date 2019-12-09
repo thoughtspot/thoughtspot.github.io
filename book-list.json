@@ -61,6 +61,31 @@
       ]
     },
     {
+      "filename": "ThoughtSpot_Azure_Installation_Guide",
+      "title": "Azure Installation Guide",
+      "codes": [
+        "instAzure"
+      ]
+    {
+      "filename": "ThoughtSpot_GCP_Installation_Guide",
+      "title": "GCP Installation Guide",
+      "codes": [
+        "instGCP"
+      ]
+    {
+      "filename": "ThoughtSpot_VMware_Installation_Guide",
+      "title": "VMware Installation Guide",
+      "codes": [
+        "instVMware"
+      ]
+    {
+      "filename": "ThoughtSpot_Dell_Installation_Guide",
+      "title": "Dell Installation Guide",
+      "codes": [
+        "instDell"
+      ]
+    },
+    {
       "filename": "ThoughtSpot_Reference_Guide",
       "title": "ThoughtSpot Reference Guide",
       "codes": [

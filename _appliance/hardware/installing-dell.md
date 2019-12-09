@@ -117,7 +117,8 @@ Next, input your specific network information to configure the management settin
 * For **Enable DHCP**, select **disabled**.
 * For **Enable IPv6**, select **disabled**.
 6. **Save changes and reboot** Follow the prompts on the monitor to save changes to the management settings form, exit, and reboot the system.
-7. **Log into ThoughtSpot** When the system reboots, the login page appears. Log in as *admin*.
+
+7. **Log into ThoughtSpot** When the system reboots, the login page appears. Log in as an administrator. Ask your network administrator if you do not know the admin credentials.
 
 {: id="dell-idrac-config"}
 
@@ -252,7 +253,7 @@ The cluster installer automatically reboots all the nodes after the install. Wai
 ### 2. Check Cluster Health
 Once the cluster is installed, check its status with the `tscli cluster status` command.
 
-### Cluster Status
+**Cluster Status**
 ```
 $ tscli cluster status
 Cluster: RUNNING
