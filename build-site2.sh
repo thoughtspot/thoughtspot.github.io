@@ -35,20 +35,6 @@ case $1 in
     exit 1
   esac
 
-  case $2 in
-    [0-9].[0-9])
-    ;;
-    [latest])
-    ;;
-    *)
-      printf "Error. VERSION_VALUE format is not supported. Must be a major version number such as: w.x\\n" >&2
-      helpmsg >&2
-      exit 1
-  esac
-
-
-
-
   if [ "$3" ]; then
     if [ "$3" != "-r" ]; then
       #statements
@@ -89,7 +75,6 @@ mv /tmp/$2 $2
 if [[ $3 == "-r" ]]; then
   cp $2/index.html .
   cp $2/search.html .
-  cp $2. ./latest/
 fi
 
 exit 0
