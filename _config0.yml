@@ -3,6 +3,7 @@
 locale                   : "en"
 destination              : ./_site
 output                   : web
+baseurl : /6.0
 # Used to designate the current version. Edit when a new version is released
 current_version          : "6.0"
 # used for conditional content filtering
