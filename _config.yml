@@ -1,6 +1,7 @@
 repository: thoughtspot/jekyll
 
 # Should always leave this blank
+
 baseurl: /6.0
 
 plugins:
