@@ -94,8 +94,7 @@ collections:
     output: true
   end-user:
     output: true
-  error-codes:
-    output: true
+  # error-codes: output: true
   reference:
     output: true
   release:
@@ -105,6 +104,8 @@ collections:
   tooltips:
     output: true
   faq:
+    output: true
+  practice:
     output: true
 
 defaults:

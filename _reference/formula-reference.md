@@ -1,7 +1,5 @@
 ---
 title: [Formula function reference]
-
-
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,38 +12,45 @@ functions.
 This reference lists the various operators and functions you can use to create
 formulas.
 
+{: id="operators"}
 ## Operators
 
 {% include content/operators.md %}
 
+{: id="aggregate-functions"}
 ## Aggregate functions (group aggregate)
 
-These functions can be used to aggregate data.
+Use the following functions to aggregate data.
 
 {% include content/aggregate.md %}
 
+{: id="conversion-functions"}
 ## Conversion functions
 
-These functions can be used to convert data from one data type to another. Conversion to or from date data types is not supported.
+Use these functions to convert data from one data type into another data type.
+
+ThoughtSpot does not support _date_ data type conversion.
 
 {% include content/conversion-func.md %}
 
+{: id="date-functions"}
 ## Date functions
 
 {% include content/date-func.md %}
 
+{: id="mixed-functions"}
 ## Mixed functions
 
 These functions can be used with text and numeric data types.
 
 {% include content/mixed-func.md %}
 
-
+{: id="number-functions"}
 ## Number functions
 
 {% include content/number-func.md %}
 
-
+{: id="text-functions"}
 ## Text functions
 
 {% include content/text-func.md %}
