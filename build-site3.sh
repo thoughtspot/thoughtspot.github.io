@@ -56,6 +56,15 @@ case $1 in
     fi
   fi
 
+  if [ "$4" ]; then
+    if [ "$4" != "-r" ]; then
+      #statements
+      printf "Error. The $4 flag is not supported. Must be -l \\n" >&2
+      helpmsg >&2                  s
+      exit 1
+    fi
+  fi
+
 
 # Checkout a versioned branch with the version name
 if git checkout $1; then
@@ -87,6 +96,10 @@ mv /tmp/$2 $2
 if [[ $3 == "-r" ]]; then
   cp $2/index.html .
   cp $2/search.html .
+fi
+
+# This replaces the root files with the latest version.  index.html redirects to the latest version x.x/index.html.
+if [[ $4 == "-l" ]]; then
   cp $2. ./latest/
 fi
 
