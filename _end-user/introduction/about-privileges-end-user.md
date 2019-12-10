@@ -10,7 +10,7 @@ If you are trying to do something in ThoughtSpot, and cannot access the screens 
 
 {% include note.html content="Permissions to see and edit answers and pinboards are not affected by privileges. They are given when these items are shared with you."%}
 
-Here are the privileges that the administrator sets, and the capabilities they enable:
+Here are the privileges that an administrator sets, and the capabilities they enable:
 
 {% include content/privileges.md %}
 
