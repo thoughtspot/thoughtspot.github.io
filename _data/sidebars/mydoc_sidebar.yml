@@ -1119,9 +1119,6 @@ entries:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
         output: web,appQs,instDell
-      - title: Installing the Dell Appliance
-        url: /appliance/hardware/installing-dell.html
-        output: web,appQs,instDell
       - title: Supported hardware
         url: /appliance/hardware/hardware-and-deployment.html
         output: web,appQs,instDell
@@ -1130,6 +1127,9 @@ entries:
         output: web,appQs,instDell
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
+        output: web,appQs,instDell
+      - title: Installing the Dell Appliance
+        url: /appliance/hardware/installing-dell.html
         output: web,appQs,instDell
     - levelTwoTitle: Cloud
       output: web,appQs
@@ -1140,14 +1140,14 @@ entries:
       - levelThreeTitle: AWS Installation
         output: web,appQs,instAWS
         levelThreeItems:
-        - title: Installing Amazon Web Services
-          url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs,instAWS
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
+          output: web,appQs,instAWS
+        - title: Installing Amazon Web Services
+          url: /appliance/aws/installing-aws.html
           output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
@@ -1155,38 +1155,38 @@ entries:
       - levelThreeTitle: Azure Installation
         output: web,appQs,instAzure
         levelThreeItems:
-        - title: Installing Azure
-          url: /appliance/azure/installing-azure.html
-          output: web,appQs,instAzure
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs,instAzure
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs,instAzure
+        - title: Installing Azure
+          url: /appliance/azure/installing-azure.html
+          output: web,appQs,instAzure
       - levelThreeTitle: GCP Installation
         output: web,appQs, instGCP
         levelThreeItems:
-        - title: Installing GCP
-          url: /appliance/gcp/installing-gcp.html
-          output: web,appQs,instGCP
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
           output: web,appQs,instGCP
         - title: Set up GCP for ThoughtSpot
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs,instGCP
+        - title: Installing GCP
+          url: /appliance/gcp/installing-gcp.html
+          output: web,appQs,instGCP
     - levelTwoTitle: VMware Installation
       output: web,appQs,instVMware
       levelTwoItems:
-        - title: Installing VMware
-          url: /appliance/vmware/installing-vmware.html
-          output: web,appQs,instVMware
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs,instVMware
         - title: Set up VMware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
+          output: web,appQs,instVMware
+        - title: Installing VMware
+          url: /appliance/vmware/installing-vmware.html
           output: web,appQs,instVMware
     - title: Network policies
       url: /appliance/firewall-ports.html

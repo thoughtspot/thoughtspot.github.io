@@ -1,19 +1,33 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-last_updated: 12/9/2019
+last_updated: 12/10/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
 ---
 {: id="aws-overview"}
 ## Overview of ThoughtSpot setup in AWS
-The high-level process for setting up ThoughtSpot in AWS involves these steps:
-1. Gain access to ThoughtSpot AMIs.
-2. Choose a VM instance configuration recommended by ThoughtSpot.
-3. Set up your Amazon S3 bucket (optional).
-4. Set up your ThoughtSpot cluster in AWS.
-3. Contact ThoughtSpot to finish setting up your cluster.
-4. Open the required network ports for communication for the nodes in your cluster and end users.
+Follow these steps to set up your ThoughtSpot VMs on AWS.
+<table>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#ec2-setup">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#ec2-setup">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#s3-bucket-setup">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#aws-ts-setup-cluster">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#network-ports">5. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#install-cluster">6. Configure your nodes and install the cluster.</a></td></tr>
+</table>
 
 {: id="prerequisites"}
 ## About the ThoughtSpot AMI
@@ -74,7 +88,7 @@ To install and launch ThoughtSpot, you must have the following:
 **AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
 **AMI ID**: ami-0b23846e4761375f1  
 **Region**: N. California
-    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily change to the N. California region to access it. Then you can return to your own region." %}
+    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
     {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
 3. Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for help choosing the correct instance type for your cluster.
 4. Networking requirements: 10 GbE network bandwidth is needed between the VMs. Ensure that you have this bandwidth.
@@ -140,7 +154,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 5. Click **Select**.
 
-5. On the Choose an Instance Type page, select a ThoughtSpot-supported instance type.
+5. On the **Choose an Instance Type** page, select a ThoughtSpot-supported instance type.
    (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).)
 
 6. Click **Next: Configure Instance Details**.
@@ -197,7 +211,7 @@ When the setup is complete, you can load data into ThoughtSpot for search analyt
  If you have not already opened the required network ports, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) to determine which ports to open.
 
 ## Install Cluster
-Next, you must configure your nodes and install your cluster. Follow the steps in [Installing AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+Next, you must configure your nodes and install your cluster. Follow the steps in [Installing AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html).
 
 ## Related information  
 
