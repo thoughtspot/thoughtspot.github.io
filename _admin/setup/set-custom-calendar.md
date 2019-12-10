@@ -1,16 +1,34 @@
 ---
-title: [Set up a custom calendar]
-
-
+title: [Set up custom calendars]
+summary: "With a custom calendar, you can change the start date of the year, quarters, and other aspects to match your company's calendar, and use date-related keywords in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-By default, ThoughtSpot's fiscal calendar begins on January 1st. If your company's
-calendar starts on a different date, you can use a custom calendar to ensure
-date searches in ThoughtSpot reflect your fiscal calendar.
+You can create custom calendars to use for different purposes within your company.
 
-[Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
-also reflect the fiscal year you set here.
+## Custom calendar features
+
+In a custom calendar, you can do the following:
+- Start a calendar on any date
+- Change the starting day of the week
+- Change the starting dates of quarters
+- Search using ThoughtSpot date keywords, like `this quarter` and `q3`
+- Use [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
+- Set a default calendar for each column of a worksheet
+- Set a default calendar for a cluster
+- Override the calendar used in the search bar by typing the calendar name
+
+## Supported calendars
+
+Custom calendar supports the following types of calendars, and more:
+- Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
+- Fiscal calendars, where the year or quarter starts on a different date each year
+- Pharmaceutical calendars, where the week runs from Friday through Thursday
+- Calendars for different languages
+
+## Limitiations
+- Maximum scope of the date dimension is 90 years
+- Limit of 12 months in a year
 
 When you create a custom calendar, you designate the month, day and year on which your
 company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
