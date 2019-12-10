@@ -1,33 +1,31 @@
 ---
 title: [Set up GCP for ThoughtSpot]
 summary: Set up your GCP virtual machines.
-last_updated: 12/6/2019
+last_updated: 12/9/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you've determined your configuration options, set up your virtual machines
-(VMs). The ThoughtSpot base image for booting the VMs and some other aspects of
-system setup will be shared with you on GCP by ThoughtSpot.
+After you determine your configuration options, set up your virtual machines
+(VMs). ThoughtSpot will share the ThoughtSpot base image for booting the VMs and some other aspects of system setup with you on [the GCP platform](https://console.cloud.google.com).
 
 ## About the ThoughtSpot and Google Cloud Platform
 
 ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Centos derived
-image, which will be available to you in your Google Compute Engine project for
-Boot disk options under Custom Images.
+image. Find the ThoughtSpot custom image under Custom Images in **Boot Disk Options** within your Google Compute Engine project.
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
 ## Overview
 
-Before you can create a ThoughtSpot cluster, you must set up your VMs. Use the Google Compute Engine (GCP) platform to [create and run VMs](https).
+Before you can create a ThoughtSpot cluster, you must set up your VMs. Use the Google Compute Engine (GCP) platform to create and run VMs.
 
 The following topics walk you through this process.
 
 ## Prerequisites
 
-1. Ensure that your **Network Service Tier** on the [Google Cloud Console](https://console.cloud.google.com/) is set to **Premium** for all VMs to be used in your ThoughtSpot cluster.
-2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. This must be established before creating a new cluster.
+1. Ensure that your **Network Service Tier** on the [Google Cloud Console](https://console.cloud.google.com/) is set to **Premium** for the best performance of all your VMs.
+2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. You must ensure this *before* creating a new cluster.
 
 ## Setting up your Google Cloud Storage (GCS) bucket
 
@@ -72,7 +70,7 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 
 3. Under **Select From** pick THOUGHTSPOT.COM.
 
-4. Select the **thoughspot.com** project.
+4. Select the **thoughtspot.com** project.
 
     ![Select the ThoughtSpot project.]({{ site.baseurl }}/images/gcp-selectthoughtspot.png "Select the ThoughtSpot project.")
 
@@ -155,7 +153,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | 4001  | HTTP         |  Data Cache Debugging         |
 
 
-7.  Attach two 1 TB SSD drives for data storage.
+7.  Attach two 1 TB SSD drives for data storage. If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB.
 
     a. Click the **Disks** tab, and click **Add new disk**.
 
@@ -163,7 +161,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
       You can select or unselect the **Deletion rule**, depending on your preferences.
 
-    b. Configure the following settings for each disk. If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the size in GB when you have GCS.
+    b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the size in GB when you have GCS.
 
       | Setting      | Value                  |
       |------------  | ---------------------- |
@@ -185,7 +183,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
 10. Customize the network settings as needed. Use your default VPC settings, if you know them. Ask your network administrator if you do not know your default VPC settings.
 
-11. Repeat these steps to create the necessary number of VMs.
+11. Repeat these steps to create the necessary number of VMs for your cluster.
 
 ## Prepare the VMs
 

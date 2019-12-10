@@ -1,6 +1,6 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [12/4/2019]
+last_updated: [12/9/2019]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -177,9 +177,9 @@ Note the following parameters:
 
 2. Create the cluster<br>
 Run `tscli cluster create` to create the cluster.<br>
-If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3`.
+If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage=s3`.
 ```
-    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage s3
+    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage=s3
 ```  
 3. Edit the output with your specific cluster information.<br>
 For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).

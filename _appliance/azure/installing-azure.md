@@ -1,6 +1,6 @@
 ---
 title: [Installing Azure]
-last_updated: [11/27/2019]
+last_updated: [12/9/2019]
 summary: "Learn how to install a ThoughtSpot cluster on Azure."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
