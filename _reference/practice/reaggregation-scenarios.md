@@ -15,7 +15,6 @@ The following scenarios showcase the use of the `group_aggregate` function in th
 
 {% include content/flexible-aggregation-best-practices.md %}
 
-
 {: id="supplier-tendering"}
 ## Scenario 1: Supplier tendering by job
 
@@ -27,17 +26,20 @@ Our objective is to determine what percentage of jobs had more than 1 supplier r
 
 {% include content/intro-valid-solution.md %}
 
-```
-sum( group_aggregate ( if ( sum ( # trades tendered ) > 1 ) then 1 else 0 , 
-                       query_groups ( ) + { claimid , packageid } , 
-                       query_filters ( ) ) ) 
-```
+<pre>
+<code>
+sum(group_aggregate(if(sum(# trades tendered ) > 1) then 1 else 0, 
+                    query_groups() + {claimid, packageid}, 
+                    query_filters())) 
+           </code>
+</pre>
 
-![Supplier tendering by job, aggregated result]({{ site.baseurl }}/images/suplier-tender-job-1.png "Supplier tendering by job, aggregated result")
+![Supplier tendering by job, aggregated result]({{ site.baseurl }}/images/supplier-tender-job-1.png "Supplier tendering by job, aggregated result")
 
 ### Resolution
 
-1. The <code><strong>sum ( # trades tendered )</strong></code> function aggregates to these attributes:
+<ol>
+  <li><p>The <code><strong>sum ( # trades tendered )</strong></code> function aggregates to these attributes:</p>
 
   <ul>
     <li>
@@ -49,17 +51,17 @@ sum( group_aggregate ( if ( sum ( # trades tendered ) > 1 ) then 1 
     <li>
       <code><strong>query_filters ( )</strong></code>
       <p>Applies any filters entered in the search. Here, there are no filters.</p></li>
-  </ul>
+  </ul></li>
 
-2. For each row in this virtual table, the conditional <code><strong>if() then else</strong></code> function  applies. So, if the sum of tendered responses is greater than 1, then the result returns 1, or else it returns 0.
+<li><p>For each row in this virtual table, the conditional <code><strong>if() then else</strong></code> function  applies. So, if the sum of tendered responses is greater than 1, then the result returns 1, or else it returns 0.</p></li>
 
-3. The outer function, <code><strong>sum()</strong></code>, reaggregates the final output as a single row for each <code><strong>datelogged</strong></code> yearly value.
+<li><p>The outer function, <code><strong>sum()</strong></code>, reaggregates the final output as a single row for each <code><strong>datelogged</strong></code> yearly value.</p>
 
   <ul>
     <li>This reaggregation is possible because the conditional statement is inside the <code><strong>group_aggregate</strong></code> function.</li>
     <li>Rather than return a row for each <code><strong>{claimid,packageid}</strong></code>, the function returns a single row for <code><strong>datelogged yearly</strong></code>.</li>
     <li>The default aggregation setting does not reaggregate the result set.</li>
-  </ul>
+  </ul></li></ol>
 
 ###  Non-Aggregated Result
 
@@ -69,12 +71,10 @@ In the following scenario, the next statement is the conditional <code><strong>i
 
 <pre><code>
 <strong>sum(if</strong>(group_aggregate (sum (# trades tendered),
-                                         query_groups() + {claimid, packageid},
-                                         query_filters ( ) )<strong>>1)
-    then 1 
-    else 0)</strong></code></pre>
+                              query_groups() + {claimid, packageid},
+                              query_filters ( ) )<strong>>1) then 1 else 0)</strong></code></pre>
 
-![Supplier tendering by job, non-aggregated result]({{ site.baseurl }}/images/suplier-tender-job-2.png "Supplier tendering by job, non-aggregated result")
+![Supplier tendering by job, non-aggregated result]({{ site.baseurl }}/images/supplier-tender-job-2.png "Supplier tendering by job, non-aggregated result")
 
 {: id="average-rates-exchange"}
 ## Scenario 2: Average rates of exchange
@@ -112,35 +112,36 @@ The following search and resulting response returns the dollar value for each ye
 
 ### Resolution
 
-1. The <code><strong>sum(loans)</strong></code> function aggregates to these attributes:
+<ol>
+  <li><p>The <code><strong>sum(loans)</strong></code> function aggregates to these attributes:</p>
 
-  <ul>
-    <li>
+    <ul>
+      <li>
       <code><strong>{transaction_currency}</strong></code> and  <code><strong>query_groups()</strong></code>
       <p>Add additional search columns to this aggregation. Here, this at the level of <code>reporting currency</code> and <code>year</code>.</p></li>
 
-  <li>
+     <li>
     <code><strong>query_filters( )</strong></code>
     <p>Applies any filters entered in the search. Here, there are no filters.</p></li>
-  </ul>
+  </ul></li>
 
-2.	Similarly, the <code><strong>average(rate)</strong></code> function aggregates to these attributes:
+<li><p>Similarly, the <code><strong>average(rate)</strong></code> function aggregates to these attributes:</p>
 
-<ul>
-  <li>
+  <ul>
+    <li>
     <code><strong>{transaction_currency}</strong></code> and  <code><strong>query_groups()</strong></code>
     <p>Add additional search columns to this aggregation. Here, this at the level of <code>reporting currency</code> and <code>year</code>.</p></li>
 
-<li>
+  <li>
   <code><strong>query_filters( )</strong></code>
   <p>Applies any filters entered in the search. Here, there are no filters.</p></li>
-</ul>
+  </ul></li>
 
-3.	For each row in this virtual table, the exchange rate applies to the ***sum*** of loans: <code><strong>sum(loans) * average(rate)</strong></code>.
+<li><p>For each row in this virtual table, the exchange rate applies to the sum of loans: <code><strong>sum(loans) * average(rate)</strong></code>.</p></li>
 
-4. The outer <code><strong>sum()</strong></code> function reaggregates the final output as a single row for each yearly reporting currency value.
-
-  Note that the default aggregation setting does not reaggregate the result set.
+<li><p>The outer <code><strong>sum()</strong></code> function reaggregates the final output as a single row for each yearly reporting currency value.</p>
+  <p>Note that the default aggregation setting does not reaggregate the result set.</p></li>
+</ol>  
 
 ###  Non-Aggregated Result
 
@@ -175,7 +176,8 @@ average(group_aggregate(sum(loan balance),
 
 ### Resolution
 
-1.	The <code><strong>sum(loan balance)</strong></code> function aggregates to the following attributes:
+<ol>
+  <li><p>The <code><strong>sum(loan balance)</strong></code> function aggregates to the following attributes:</p>
 
 <ul>
   <li>
@@ -184,22 +186,21 @@ average(group_aggregate(sum(loan balance),
   <li>
     <code><strong>query_filters ( )</strong></code>
     <p>Applies any filters entered in the search. Here, there are no filters.</p></li>
-</ul>
+</ul></li>
 
-2.	The <code><strong>sum(loan balance)</strong></code> function returns a result for each row in this virtual table.
+<li><p>The <code><strong>sum(loan balance)</strong></code> function returns a result for each row in this virtual table.</p></li>
 
-3.	The outer <code><strong>average()</strong></code> function reaggregates the final output as a single row for each <code><strong>year</strong></code> value.
-
+<li><p>The outer <code><strong>average()</strong></code> function reaggregates the final output as a single row for each <code><strong>year</strong></code> value.</p></li>
+</ol>
 
 {: id="average-period-value-semi-additive-numbers-2"}
 ## Scenario 4: Average period value for semi-additive numbers II
 
 **Semi-additive** numbers may be aggregated across some, but not all, dimensions. They commonly apply to specific time positions. In this scenario, we have daily position values for home loans, and therefore cannot aggregate on the date dimension.
 
-Here, we consider a somewhat different situation than in [Scenario 3]{#average-period-value-semi-additive-numbers-1}. In some financial circumstances, the average daily balance has to be calculated, even if the balance does not exist. For example, if a banking account was opened on the 15th of June, business requirements have to consider all the days in the same month, starting with the 1st of June. Importantly, we cannot add these ‘missing’ data rows to the data set; note that the solution used in [Scenario 3]{#average-period-value-semi-additive-numbers-1} returns an average only for the period that has data, such as June 15th to 30th, not for the entire month of June. The challenge is to ensure that in the daily average formula, the denominator returns the total days in the selected period, not just the days that have transactions:
+Here, we consider a somewhat different situation than in [Scenario 3](#average-period-value-semi-additive-numbers-1). In some financial circumstances, the average daily balance has to be calculated, even if the balance does not exist. For example, if a banking account was opened on the 15th of June, business requirements have to consider all the days in the same month, starting with the 1st of June. Importantly, we cannot add these ‘missing’ data rows to the data set; note that the solution used in [Scenario 3](#average-period-value-semi-additive-numbers-1) returns an average only for the period that has data, such as June 15th to 30th, not for the entire month of June. The challenge is to ensure that in the daily average formula, the denominator returns the total days in the selected period, not just the days that have transactions:
 
-<pre><code><strong><box>sum(loans) / sum(days_in_period)</strong></code></box>
-</pre>
+<pre><code>sum(loans) / sum(days_in_period)</code></pre>
 
 To solve for this, consider the data model:
   * The fact table `transactions` reports the daily position for each account, and uses a  `loan` column.
@@ -207,44 +208,69 @@ To solve for this, consider the data model:
   * Worksheets use the `date` column with keywords such as _weekly_, _monthly_, _yearly_ to change the selected period.
   * When users run a search with the _monthly_ keyword, the denominator must reflect the number of days in each month.
 
-  ### Valid solution
+### Valid solution
 
-  {% include content/intro-valid-solution.md %}
+{% include content/intro-valid-solution.md %}
 
-  The following code _in the denominator definition_ returns the total number of days for the period, regardless whether there are transactions, or what filters apply:
+The following code _in the denominator definition_ returns the total number of days for the period, regardless whether there are transactions, or what filters apply:
 
-  ```
-  group_aggregate (sum(days_in_period),{Date},{})
-  ```
+```
+group_aggregate (sum(days_in_period),{Date},{})
+```
 
 ### Resolution
 
-1. The <code><strong>sum(days_in_period)</strong></code> function aggregates to:
-
-    <ul>
-     <li>
-       <code><strong>{Date}</strong></code>
-       <p>No other search columns appear.</p></li>
-     <li>
-      <code>{}</code>
-      <p>We require the entire period, so there are no filters.</p></li>
-  </ul>
-
-  Note that the date keywords _yearly_, _quarterly_, _monthly_, and _weekly_ apply because we use the same column in both the search and the aggregation function. So, the function will result in the following output when it runs with the _yearly_ keyword in search:
-
-  | Year | Result |
-  | --- | --- |
-  | 2016 | 366 |
-  | 2017 | 365 |
-  | 2018 | 365 |
-  | 2019 | 365 |
-  | 2020 | 366 |
-
-2. This data is not reaggregated because we want to return the result at the appropriate `date` level.
+<ol>
+<li>
+<p>The <code><strong>sum(days_in_period)</strong></code> function aggregates to:</p>
+<ul>
+<li><code><strong>{Date}</strong></code>
+<p>No other search columns appear.</p>
+</li>
+<li><code>{}</code>
+<p>We require the entire period, so there are no filters.</p>
+</li>
+</ul>
+<p>Note that the <code>date</code> keywords <em>yearly</em>, <em>quarterly</em>, <em>monthly</em>, and <em>weekly</em>&nbsp;apply because we use the same column in both the search and the aggregation function. So, the function will result in the following output when it runs with the <em>yearly</em> keyword in search:</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016</td>
+<td>366</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>365</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>365</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>365</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>366</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>This data is not reaggregated because we want to return the result at the appropriate <code>date</code> level.</p>
+</li>
+</ol>
 
 ###  Alternate Solution
 
-To return only the number of days that have existing transactions, use the following code in the denominator, instead:
+To return only the number of days that have existing transactions, use the following code in the denominator:
 
 ```
 sum(days_in_period)
