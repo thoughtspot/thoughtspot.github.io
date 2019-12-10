@@ -87,7 +87,7 @@ mv /tmp/$2 $2
 if [[ $3 == "-r" ]]; then
   cp $2/index.html .
   cp $2/search.html .
-  cp $2. ../latest/
+  cp $2. ./latest/
 fi
 
 exit 0
