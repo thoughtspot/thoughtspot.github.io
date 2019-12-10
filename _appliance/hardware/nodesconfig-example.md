@@ -1,6 +1,6 @@
 ---
 title: [The nodes.config file]
-last_updated: [10/30/2019]
+last_updated: [12/10/2019]
 summary: "Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -80,6 +80,6 @@ $ vim nodes.config
 ```
 
 ## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
 * [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)

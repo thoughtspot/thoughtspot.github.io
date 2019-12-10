@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the cluster create command]
-last_updated: [10/30/2019]
+last_updated: [12/10/2019]
 summary: "Learn the parameters of the cluster create command."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,7 +15,7 @@ To install your appliance, you must install the cluster.
 2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 
 Refer to [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) for further information.
-Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) to see the expected output of the install command, `tscli cluster create`.
+Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
 
 Make sure that you do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). Deleting colons, commas, or other parts of the code could cause setup to fail.
 
@@ -32,6 +32,6 @@ Make sure that you do not edit any part of the installer file except the section
 **Email alerts**	Enter the email addresses you would like to receive alerts about this cluster, in the form company@example.com. The address prod-alerts@thoughtspot.com appears automatically and should remain, so that ThoughtSpot can be aware of the status of your cluster. Separate email addresses with a space.
 
 ## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)

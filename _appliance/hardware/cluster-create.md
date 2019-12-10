@@ -1,6 +1,6 @@
 ---
 title: [Using the cluster create command]
-last_updated: [10/30/2019]
+last_updated: [12/10/2019]
 summary: "Learn how to use the cluster create command to install your appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -195,6 +195,6 @@ Successfully deleted deployer service
 ```
 
 ## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
 * [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)

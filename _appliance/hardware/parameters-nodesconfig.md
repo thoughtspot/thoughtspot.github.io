@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [10/30/2019]
+last_updated: [12/10/2019]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -49,6 +49,6 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 **IPMI IPv4**	A secondary IP address, associated with the IPMINetmask and IPMIGateway, in the form 000.000.000.000. For example, 192.168.5.70.
 
 ## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
+* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Installing Amazon Web Services]({{ site.baseurl }}/appliance/hardware/installing-aws.html)
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)

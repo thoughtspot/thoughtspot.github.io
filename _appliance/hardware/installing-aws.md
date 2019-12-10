@@ -1,6 +1,6 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [10/30/2019]
+last_updated: [12/10/2019]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -141,7 +141,7 @@ If you do not have a link to download the release tarball, open a support ticket
 ```
     $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
 ```  
-3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
   Log into any node to check the current cluster status, using the command `tscli cluster status`.
@@ -204,7 +204,7 @@ Use these references for successful installation and administration of ThoughtSp
 
 * [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)
