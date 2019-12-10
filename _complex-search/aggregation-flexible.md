@@ -124,7 +124,7 @@ where the formula `monthly_sales` is written as:
 ```
 group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
 ```
-For more extensive examples of using the `group-aggregate` function, we encourage you to see [Reaggreggation scenarios in practice]({{site.baseurl}}/practice/reaggregation-scenarios.html)
+For more extensive examples of using the `group-aggregate` function, we encourage you to see [Reaggreggation scenarios in practice]({{site.baseurl}}/reference/reaggregation-scenarios.html)
 
 ## Groups and filters
 
@@ -134,10 +134,10 @@ specify only groupings or only filters.
 
 ## Related information
 
-* For more examples of flexible aggregation, see the [group_aggregate]({{site.baseurl}}/reference/formula-reference.html#group_aggregate) function in the [Formula function reference]({{site.baseurl}}/reference/formula-reference.html).
+* For more examples of flexible aggregation, see the [group_aggregate]({{site.baseurl}}/reference/practice/formula-reference.html#group_aggregate) function in the [Formula function reference]({{site.baseurl}}/reference/formula-reference.html).
 
 * To learn about aggregation formulas in general, see
 [Overview of aggregate formulas](aggregation-formulas.html#) and
 [Group aggregation functions](about-pinned-measures.html#)
 
-* To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/practice/reaggregation-scenarios.html)
+* To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)
