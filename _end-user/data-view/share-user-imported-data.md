@@ -1,6 +1,6 @@
 ---
 title: [Share uploaded data]
-last_updated: 12/5/2019
+last_updated: 12/10/2019
 summary: You can share uploaded data with others.
 toc: false
 sidebar: mydoc_sidebar
@@ -13,7 +13,7 @@ privileges with other people, who can further share them with others.
 
 ## Understand data sharing
 
-Data that you uploaded from a Web browser is only visible to you and to the
+Data that you upload from a Web browser is only visible to you and to the
 administrator. You can share the entire uploaded table, or only some of its
 columns.
 
@@ -22,7 +22,7 @@ columns cannot see the other columns' data in their searches. However, the data
 can become visible if a worksheet or pinboard that _also contains_ those columns
 is shared with these users.
 
-If you want to prevent shares of these types from revealing excluded columns,
+If you want to prevent other users from revealing your excluded columns,
 you can ask your administrator to enable a stricter behavior.
 
 You can share data [from the **Data** tab]({{ site.baseurl }}#share-datatab), or [from within the table, worksheet, or view]({{ site.baseurl }}#share-dataset) that you want to share.
@@ -34,9 +34,9 @@ Follow these steps to share uploaded data from the **Data** tab.
 
 1. Click **Data** on the top navigation bar.
 
-2. Hover over the uploaded data you want to share and select it.
+2. Hover over the uploaded data you want to share and select it by clicking the empty checkbox that appears.
 
-3. Click the **Share** icon.
+3. Click **Share**.
 
     ![Select the data you want to share and click the share icon.]({{ site.baseurl }}/images/sharing-data.png "Select the data you want to share and click the share icon.")
 
@@ -44,7 +44,9 @@ Follow these steps to share uploaded data from the **Data** tab.
 
     ![Select either entire table or specific columns.]({{ site.baseurl }}/images/sharing-datacolumns.png "Select either entire table or specific columns.")
 
-5. If you select **Specific Columns**, select the column(s) you want to share. You cannot click multiple columns at once. You must input the users or groups with whom you want to share for each column.
+5. If you selected **Specific Columns**, select the column(s) you want to share. If you selected **Entire Table**, skip to step 6.
+
+    {% include note.html content="You cannot click multiple columns at once. You must input the users or groups with whom you want to share for each column." %}
 
 6. Click **+ Add users or groups** and select the users and groups with whom you want to share.
 

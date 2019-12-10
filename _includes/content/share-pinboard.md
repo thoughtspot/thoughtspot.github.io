@@ -15,28 +15,17 @@ Follow these steps to share a pinboard from the main pinboard page.
 
     ![Save the pinboard by clicking the ellipsis icon and selecting save.]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard by clicking the ellipsis icon and selecting save.")
 
-3. Click **PINBOARDS** on the bar at the top of your screen.
+3. Click **Pinboards** on the bar at the top of your screen.
 
-    ![Click PINBOARDS on the main menu bar.]({{ site.baseurl }}/images/sharing-mainpinboardpage.png "Click PINBOARDS on the main menu bar.")
+    ![Click Pinboards on the main menu bar.]({{ site.baseurl }}/images/sharing-mainpinboardpage.png "Click Pinboards on the main menu bar.")
 
-2. Select the pinboard you want to share from the list of pinboards and click **Share**.
+2. Select the pinboard you want to share from the list of pinboards by hovering over it and clicking the empty check box that appears.
+
+3. Click **Share**.
 
     ![Select the pinboard you want to share and click the share button at the top left of the page.]({{ site.baseurl }}/images/sharing-pinboard-mainpageshare.png "Select the pinboard you want to share and click the share button at the top left of the page.")
 
-{: id="share-pinboardpage"}
-Follow these steps to share a pinboard from within the pinboard.
-
-1. Configure the pinboard to look as it must appear when you share it.
-
-2. Save the pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
-
-    ![Save the pinboard by clicking the ellipsis icon and selecting save.]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard by clicking the ellipsis icon and selecting save.")
-
-3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
-
-    ![Click the sharing icon to open the sharing window modal.]({{ site.baseurl }}/images/sharing-pinboardshareicon.png "Click the sharing icon to open the sharing window modal.")
-
-5. The sharing modal window appears.
+5. The sharing dialog box appears.
 
     ![The sharing window pops up.]({{ site.baseurl }}/images/sharing-modal.png "The sharing window pops up once you save your pinboard and click share.")
 
@@ -66,4 +55,19 @@ Follow these steps to share a pinboard from within the pinboard.
 
 6. Click **Share**.
 
-    ![Click share to share your pinboard with the selected groups and users.]({{ site.baseurl }}/images/sharing-share.png "Click share to share your pinboard with the selected groups and users.")
+    ![Click share to share your pinboard with the selected groups and users.]({{ site.baseurl }}/images/sharing-share.png "Click share to share your pinboard with the selected groups and users.")   
+
+{: id="share-pinboardpage"}
+Follow these steps to share a pinboard from within the pinboard.
+
+1. Configure the pinboard to look as it must appear when you share it.
+
+2. Save the pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+
+    ![Save the pinboard by clicking the ellipsis icon and selecting save.]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard by clicking the ellipsis icon and selecting save.")
+
+3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
+
+    ![Click the sharing icon to open the sharing dialog box.]({{ site.baseurl }}/images/sharing-pinboardshareicon.png "Click the sharing icon to open the sharing window modal.")
+
+5. Refer to steps 6-11 [above]({{ site.baseurl }}#share-mainpinboardpage).

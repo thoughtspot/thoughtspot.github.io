@@ -17,7 +17,7 @@ Follow these steps to share an answer.
 
     ![Save the answer and share it.]({{ site.baseurl }}/images/sharing-saveandshare.png "Save the answer and share it. You can add an optional description.")
 
-5. The sharing modal window appears.
+5. The sharing dialog box appears.
 
     ![The sharing window pops up.]({{ site.baseurl }}/images/sharing-modal.png "The sharing window pops up once you save your answer and click share.")
 
