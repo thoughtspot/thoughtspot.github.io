@@ -16,10 +16,10 @@ In a custom calendar, you can do the following:
 - Set the starting date of a year
 - Set the starting dates of quarters
 - Set the starting day of the week
-- Search using your custom calendar with ThoughtSpot date keywords, like `this quarter` and `q3`
-- Search using your custom calendar with [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars) to search
 - Set a default calendar for each column of a worksheet
 - Set a default calendar for a cluster
+- Search using your custom calendar with ThoughtSpot date keywords, like `this quarter` and `q3`
+- Search using your custom calendar with [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars) to search
 - Override the calendar used in the search bar by typing the calendar name
 
 ## Limitiations
