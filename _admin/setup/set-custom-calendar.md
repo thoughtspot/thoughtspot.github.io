@@ -20,8 +20,8 @@ In a custom calendar, you can set the following:
 ## Search features
 You can use your custom calendar to search the following ways:
 - Using date keywords, like `this quarter` and `q3`
-- Using your [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars) to search
-- Override the calendar used in the search bar by typing your custom calendar's name
+- Using [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
+- Overriding the calendar used in the search bar by typing your custom calendar's name
 
 ## Limitiations
 - Maximum scope of the date dimension is 90 years
