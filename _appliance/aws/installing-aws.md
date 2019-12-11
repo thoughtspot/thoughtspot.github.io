@@ -86,8 +86,18 @@ Do not edit any part of the `nodes.config` file except the sections described in
 {: id="node-step-4"}
 ### Step 4: Configure the nodes
 Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
-1. Disable the `Firewalld` service by running `sudo systemctl stop firewalld` in your terminal.
-  `Firewalld` is a Linux firewall that must be off for ThoughtSpot installation. After the cluster installer reboots the nodes, `Firewalld` automatically turns back on.
+1. Disable the `firewalld` service by running `sudo systemctl stop firewalld` in your terminal.
+  The `firewalld` service is a Linux firewall that must be off for ThoughtSpot installation. After the cluster installer reboots the nodes, `firewalld` automatically turns back on.
+```
+    $ sudo systemctl stop firewalld
+```  
+2. To make sure you temporarily disabled `firewalld`, run `sudo systemctl status firewalld`. Your output should specify that `firewalld` is inactive. It may look something like the following:
+```
+    $ sudo systemctl status firewalld
+      ● firewalld.service - firewalld - dynamic firewall daemon
+        Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+        Active: inactive (dead)
+```
 2. Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
 If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-error-recovery).
 
@@ -256,12 +266,26 @@ Connecting to local node-scout WARNING: Detected 0 nodes, but found configuratio
 Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
 ```
-Restart the node-scout service with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
+Restart the node-scout service with the following command.
 
     $ sudo systemctl restart node-scout
+
+Ensure that you restarted the node-scout by running `sudo systemctl status node-scout`. Your output should specify that the node-scout service is active. It may look something like the following:
+```
+$ sudo systemctl status node-scout
+  ● node-scout.service - Setup Node Scout service
+    Loaded: loaded (/etc/systemd/system/node-scout.service; enabled; vendor preset: disabled)
+    Active: active (running) since Fri 2019-12-06 13:56:29 PST; 4s ago
+```    
+
+Next, retry the [set-config command]({{ site.baseurl }}/appliance/aws/installing-aws.html#set-config-command).
+
     $ cat nodes.config | tscli cluster set-config
 
 The command output should no longer have a warning.
+
+## High availability
+Next, set up high availability (HA) for your cluster. Refer to [Set up high availability for AWS]({{ site.baseurl }}/appliance/aws/ha-aws-efs.html).
 
 ## References
 Use these references for successful installation and administration of ThoughtSpot:
