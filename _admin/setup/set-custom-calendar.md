@@ -1,6 +1,6 @@
 ---
 title: [Set up custom calendars]
-summary: "With a custom calendar, you can choose when your year, quarter, or week starts, to match your specific needs, and use date-related search keywords when using your calendar to search in ThoughtSpot."
+summary: "With a custom calendar, you can choose when your year, quarter, or week starts, to match your specific needs, and use date-related search keywords with your calendar to search in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -126,4 +126,4 @@ If you don't set your custom calendar as the default for your cluster, you must 
 
 5. Click **Save Changes**.
 
-  Now, date-related searches in the selected worksheet, table or view use your custom calendar.
+   Now, date-related searches in the selected worksheet, table or view use your custom calendar.
