@@ -16,13 +16,12 @@ In a custom calendar, you can set the following:
 - The starting date of a year
 - The starting dates of quarters
 - The starting day of the week
-- A default calendar for each column of a worksheet
-- A default calendar for a cluster
 
 ## Search features
-- Search using your custom calendar with ThoughtSpot date keywords, like `this quarter` and `q3`
-- Search using your custom calendar with [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars) to search
-- Override the calendar used in the search bar by typing the calendar name
+You can use your custom calendar to search the following ways:
+- Using date keywords, like `this quarter` and `q3`
+- Using your [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars) to search
+- Override the calendar used in the search bar by typing your custom calendar's name
 
 ## Limitiations
 - Maximum scope of the date dimension is 90 years
