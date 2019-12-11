@@ -36,7 +36,7 @@ ThoughtSpot now supports the following features for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### Monitor headlines 
+### Monitor headlines
 
 The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
 
@@ -95,6 +95,8 @@ We improved the experience of sharing Answers and Pinboards through better email
 <strong>Sharing Pinboards and Answers</strong>
 <br>
 <script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
 ### Access request and grant
 
