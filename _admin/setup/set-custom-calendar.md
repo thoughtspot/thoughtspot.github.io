@@ -4,9 +4,7 @@ summary: "With a custom calendar, you can choose when your year, quarter, or wee
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can create custom calendars to use for different purposes within your company.
-
-Some examples of custom calendars you can create, include:
+You can create custom calendars for different purposes within your company, including:
 - Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
 - Fiscal calendars, where the year or quarter starts on a different date each year
 - Pharmaceutical calendars, where the week runs from Friday through Thursday
@@ -26,7 +24,7 @@ In a custom calendar, you can do the following:
 
 ## Limitiations
 - Maximum scope of the date dimension is 90 years
-- Limit of 12 months in a year
+- Maximum length of a calendar year is 12 months
 
 When you create a custom calendar, you designate the month, day and year on which your
 company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
