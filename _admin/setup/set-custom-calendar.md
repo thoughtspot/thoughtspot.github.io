@@ -6,6 +6,12 @@ permalink: /:collection/:path.html
 ---
 You can create custom calendars to use for different purposes within your company.
 
+Some examples of custom calendars you can create, include:
+- Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
+- Fiscal calendars, where the year or quarter starts on a different date each year
+- Pharmaceutical calendars, where the week runs from Friday through Thursday
+- Calendars for different languages
+
 ## Features
 
 In a custom calendar, you can do the following:
@@ -17,14 +23,6 @@ In a custom calendar, you can do the following:
 - Set a default calendar for each column of a worksheet
 - Set a default calendar for a cluster
 - Override the calendar used in the search bar by typing the calendar name
-
-## Supported calendar types
-
-Custom calendar supports the following types of calendars, and more:
-- Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
-- Fiscal calendars, where the year or quarter starts on a different date each year
-- Pharmaceutical calendars, where the week runs from Friday through Thursday
-- Calendars for different languages
 
 ## Limitiations
 - Maximum scope of the date dimension is 90 years
