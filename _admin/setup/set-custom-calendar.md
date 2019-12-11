@@ -27,9 +27,6 @@ You can use your custom calendar to search the following ways:
 - Maximum scope of the date dimension is 90 years
 - Maximum length of a calendar year is 12 months
 
-When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
-
 ## Setting up a custom calendar
 
 To set up a custom calendar for your cluster, you must do the following:
