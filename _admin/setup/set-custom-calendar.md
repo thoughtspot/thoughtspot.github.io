@@ -1,19 +1,31 @@
 ---
-title: [Set up a custom calendar]
-
-
+title: [Set up custom calendars]
+summary: "With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-By default, ThoughtSpot's fiscal calendar begins on January 1st. If your company's
-calendar starts on a different date, you can use a custom calendar to ensure
-date searches in ThoughtSpot reflect your fiscal calendar.
+You can create custom calendars for different purposes within your company, including:
+- Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
+- Fiscal calendars, where the year or quarter starts on a different date each year
+- Pharmaceutical calendars, where the week runs from Friday through Thursday
+- Calendars for different languages
 
-[Date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
-also reflect the fiscal year you set here.
+## Options
 
-When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
+In a custom calendar, you can set the following:
+- The starting date of a year
+- The starting dates of quarters
+- The starting day of the week
+
+## Search features
+You can use your custom calendar to search the following ways:
+- Using date keywords, like `this quarter` and `q3`
+- Using [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
+- Overriding the calendar used in the search bar by typing your custom calendar's name
+
+## Limitiations
+- Maximum scope of the date dimension is 90 years
+- Maximum length of a calendar year is 12 months
 
 ## Setting up a custom calendar
 
@@ -111,4 +123,4 @@ If you don't set your custom calendar as the default for your cluster, you must 
 
 5. Click **Save Changes**.
 
-  Now, date-related searches in the selected worksheet, table or view use your custom calendar.
+   Now, date-related searches in the selected worksheet, table or view use your custom calendar.
