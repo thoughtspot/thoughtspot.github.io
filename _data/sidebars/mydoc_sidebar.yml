@@ -1129,7 +1129,7 @@ entries:
 #    - title: Set up high availability
 #      url: /appliance/aws/ha-aws-efs.html
 #      output: web,appQs,instAWS,pdf
-  - sectiontitle: Node Setup
+  - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
     - title: Overview
