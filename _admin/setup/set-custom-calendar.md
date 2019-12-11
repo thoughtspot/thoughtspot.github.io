@@ -1,6 +1,6 @@
 ---
 title: [Set up custom calendars]
-summary: "With a custom calendar, you can choose when your year, quarter, or week starts, to match your specific needs, and use date-related search keywords with your calendar to search in ThoughtSpot."
+summary: "With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
