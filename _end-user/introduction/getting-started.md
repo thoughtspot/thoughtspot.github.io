@@ -82,27 +82,33 @@ When you click **Getting Started** again, notice that the **Navigation Overview*
 ## Your first search
 In **Your First Search**, watch a short video about how to search in ThoughtSpot.
 
-![Learn how to search ThoughtSpot]({{ site.baseurl }}/images/gettingstarted-searchvideo.png "Learn how to search ThoughtSpot")
+<script src="https://fast.wistia.com/embed/medias/uf5h6du15r.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_uf5h6du15r" style="height:167px;position:relative;width:300px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/uf5h6du15r/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>
 
 View the [keyword reference]({{ site.baseurl }}/reference/keywords.html).
 
 Click **done** to exit **Your First Search**.
 
+![Learn how to search ThoughtSpot]({{ site.baseurl }}/images/gettingstarted-searchvideo.png "Learn how to search ThoughtSpot")
+
 {: id="intro-to-pinboards"}
 ## Intro to pinboards
 In **Intro to Pinboards**, watch a short video about pinboards.
 
-![Learn how to use pinboards]({{ site.baseurl }}/images/gettingstarted-pinboardvideo.png "Learn how to use pinboards")
+<script src="https://fast.wistia.com/embed/medias/b5boef4vho.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_b5boef4vho" style="height:161px;position:relative;width:300px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/b5boef4vho/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>
 
 Click **done** to exit **Intro to Pinboards**.
+
+![Learn how to use pinboards]({{ site.baseurl }}/images/gettingstarted-pinboardvideo.png "Learn how to use pinboards")
 
 {: id="refining-data-using-filters"}
 ## Refining data using filters
 In **Refining Data Using Filters**, watch a short video about filters.
 
-![Learn how to use filters]({{ site.baseurl }}/images/gettingstarted-filtervideo.png "Learn how to use filters when you search.")
+<script src="https://fast.wistia.com/embed/medias/w79sgt367w.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_w79sgt367w" style="height:169px;position:relative;width:300px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/w79sgt367w/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>
 
 Click **done** to exit **Refining Data Using Filters**.
+
+![Learn how to use filters]({{ site.baseurl }}/images/gettingstarted-filtervideo.png "Learn how to use filters when you search.")
 
 For more information on filters, see [Understand Filters]({{ site.baseurl }}/complex-search/about-filters.html).
 
@@ -110,9 +116,11 @@ For more information on filters, see [Understand Filters]({{ site.baseurl }}/com
 ## Automated insights using SpotIQ
 In **Automated Insights Using SpotIQ**, watch a short video about SpotIQ.
 
-![Learn how to use SpotIQ]({{ site.baseurl }}/images/gettingstarted-spotiqvideo.png "Learn how to use SpotIQ for automated insights into your data.")
+<script src="https://fast.wistia.com/embed/medias/1awg88fjyq.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_1awg88fjyq" style="height:161px;position:relative;width:300px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/1awg88fjyq/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>
 
 Click **done** to exit **Automated Insights Using SpotIQ**.
+
+![Learn how to use SpotIQ]({{ site.baseurl }}/images/gettingstarted-spotiqvideo.png "Learn how to use SpotIQ for automated insights into your data.")
 
 For more information on SpotIQ, see [What is SpotIQ?]({{ site.baseurl }}/spotiq/whatisspotiq.html).
 
