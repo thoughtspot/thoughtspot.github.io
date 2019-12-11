@@ -1,24 +1,24 @@
 ---
 title: [Set up custom calendars]
-summary: "With a custom calendar, you can change the start date of the year, quarters, and other aspects to match your company's calendar, and use date-related keywords in ThoughtSpot."
+summary: "With a custom calendar, you can choose when your year, quarter, or week starts, and other aspects to match your company's calendar, and use date-related search keywords in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can create custom calendars to use for different purposes within your company.
 
-## Custom calendar features
+## Features
 
 In a custom calendar, you can do the following:
 - Start a calendar on any date
-- Change the starting day of the week
-- Change the starting dates of quarters
+- Start quarters on any date
+- Start weeks on any day
 - Search using ThoughtSpot date keywords, like `this quarter` and `q3`
 - Use [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 - Set a default calendar for each column of a worksheet
 - Set a default calendar for a cluster
 - Override the calendar used in the search bar by typing the calendar name
 
-## Supported calendars
+## Supported calendar types
 
 Custom calendar supports the following types of calendars, and more:
 - Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
