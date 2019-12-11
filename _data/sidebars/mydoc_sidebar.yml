@@ -1164,7 +1164,7 @@ entries:
         levelThreeItems:
         - title: Installing ThoughtSpot on AWS
           url: /appliance/aws/installing-aws.html
-\         output: web,appQs,instAWS,pdf
+          output: web,appQs,instAWS,pdf
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs,instAWS,pdf
