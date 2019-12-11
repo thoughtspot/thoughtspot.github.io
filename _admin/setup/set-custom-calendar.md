@@ -1,6 +1,6 @@
 ---
 title: [Set up custom calendars]
-summary: "With a custom calendar, you can choose when your year, quarter, or week starts, and other aspects to match your company's calendar, and use date-related search keywords in to search using your calendar in ThoughtSpot."
+summary: "With a custom calendar, you can choose when your year, quarter, or week starts, to match your specific needs, and use date-related search keywords when using your calendar to search in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,7 +16,7 @@ In a custom calendar, you can do the following:
 - Start a calendar on any date
 - Start quarters on any date
 - Start weeks on any day
-- Search using ThoughtSpot date keywords, like `this quarter` and `q3`
+- Search using your custom calendar with ThoughtSpot date keywords, like `this quarter` and `q3`
 - Use [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 - Set a default calendar for each column of a worksheet
 - Set a default calendar for a cluster
@@ -27,7 +27,7 @@ In a custom calendar, you can do the following:
 - Maximum length of a calendar year is 12 months
 
 When you create a custom calendar, you designate the month, day and year on which your
-company's fiscal year begins and ends. When using your custom calendar, searches like **this quarter** or **q3**, conform to the fiscal quarter defined by the calendar. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
+company's fiscal year begins and ends. Existing worksheets, tables, views and pinboards also reflect that calendar. When you add a custom calendar, be sure to alert your users of the change and how it affects both current and saved searches.
 
 ## Setting up a custom calendar
 
