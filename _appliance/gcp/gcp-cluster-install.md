@@ -1,17 +1,17 @@
 ---
-title: [Install ThoughtSpot Clusters on AWS]
+title: [Install ThoughtSpot Clusters on GCP]
 last_updated: [12/12/2019]
-summary: "Learn how to install ThoughtSpot clusters on AWS."
+summary: "Learn how to install ThoughtSpot clusters on GCP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Prerequisites
-Before you can install your ThoughtSpot clusters on AWS, complete these prerequisites.
-1. **Review configuration options** Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for detailed instance specs.
-2. **Create the instance** Refer to [Set up AWS for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your instance.
+Before you can install your ThoughtSpot clusters on GCP, complete these prerequisites.
+1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
+2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html) to configure your nodes.
+4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software
@@ -20,15 +20,15 @@ Install the cluster using the release tarball. The estimated installation time i
 <table>
   <tr>
     <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-1">Step 1: Run the installer</a></td>
+    <td><a href="gcp-cluster-install#cluster-step-1">Step 1: Run the installer</a></td>
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-2">Step 2: Check cluster health</a></td>
+    <td><a href="gcp-cluster-install#cluster-step-2">Step 2: Check cluster health</a></td>
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-3">Step 3: Finalize installation</a></td>
+    <td><a href="gcp-cluster-install#cluster-step-3">Step 3: Finalize installation</a></td>
   </tr>
 </table>
 
@@ -47,9 +47,9 @@ Note the following parameters:
 
 2. Create the cluster<br>
 Run `tscli cluster create` to create the cluster.<br>
-If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage=s3a`.
+If you are using a gcs bucket for object storage, include the flag `--enable_cloud_storage=gcs`.
 ```
-    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage=s3a
+    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage=gcs
 ```
 
 {% include content/install/cluster-steps1through3.md %}

@@ -1131,6 +1131,18 @@ entries:
       - title: Installing the Dell Appliance
         url: /appliance/hardware/installing-dell.html
         output: web,appQs,instDell
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure
+      - title: Parameters of the nodes.config file
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure
+      - title: Using the cluster create command
+        url: /appliance/hardware/cluster create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure
+      - title: Parameters of the cluster create command
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
@@ -1164,8 +1176,11 @@ entries:
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs,instAzure
-        - title: Installing Azure
+        - title: Configure ThoughtSpot Nodes on Azure
           url: /appliance/azure/installing-azure.html
+          output: web,appQs,instAzure
+        - title: Install ThoughtSpot Clusters on Azure
+          url: /appliance/azure/azure-cluster-install.html
           output: web,appQs,instAzure
       - levelThreeTitle: GCP Installation
         output: web,appQs, instGCP
@@ -1176,8 +1191,11 @@ entries:
         - title: Set up GCP for ThoughtSpot
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs,instGCP
-        - title: Installing GCP
+        - title: Configure ThoughtSpot Nodes on GCP
           url: /appliance/gcp/installing-gcp.html
+          output: web,appQs,instGCP
+        - title: Install ThoughtSpot Clusters on GCP
+          url: /appliance/gcp/gcp-cluster-install.html
           output: web,appQs,instGCP
     - levelTwoTitle: VMware Installation
       output: web,appQs,instVMware
@@ -1188,8 +1206,11 @@ entries:
         - title: Set up VMware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs,instVMware
-        - title: Installing VMware
+        - title: Configure ThoughtSpot Nodes on VMware
           url: /appliance/vmware/installing-vmware.html
+          output: web,appQs,instVMware
+        - title: Install ThoughtSpot Clusters on VMware
+          url: /appliance/vmware/vmware-cluster-install.html
           output: web,appQs,instVMware
     - title: Network policies
       url: /appliance/firewall-ports.html

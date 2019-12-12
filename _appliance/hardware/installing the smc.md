@@ -110,9 +110,9 @@ Follow these steps to connect the appliance. Refer to [Appliance Port Location](
 ### Step 1: Connect switches to 10GbE ports
 Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html#step-1-connect-switches-to-10gbe-ports), to the 10GbE switches on your own rack using either fiber or DAC cables.
 
- Refer to the [Cable reference]({{ site.baseurl }}/appliance/hardware/cable-reference.html) for information on the cable types:
- * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#fiber-cables)
- * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#dac-cables)
+ Refer to the [Cable reference]({{ site.baseurl }}/appliance/hardware/cable-networking.html) for information on the cable types:
+ * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-networking.html#fiber-cables)
+ * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-networking.html#dac-cables)
 
  {% include note.html content="Ask your hardware vendor for more details about what they supply and what you need to buy." %}
 
@@ -321,6 +321,6 @@ Use these references for successful installation and administration of ThoughtSp
 * [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [Cable Reference]({{ site.baseurl }}/appliance/hardware/cable-reference.html)
+* [Cable Reference]({{ site.baseurl }}/appliance/hardware/cable-networking.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)
