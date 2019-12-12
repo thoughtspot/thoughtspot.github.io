@@ -99,6 +99,13 @@
       "codes": [
         "rnotes"
       ]
+    },
+    {
+      "filename": "ThoughtSpot_in_Practice"
+      "title": "ThoughtSpot in Practice"
+      "codes": [
+        "practGd"
+      ]
     }
   ]
 }
