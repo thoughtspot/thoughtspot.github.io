@@ -1250,6 +1250,24 @@ table thead th code.highlighter-rouge {
     background-color: transparent;
 }
 
+table thead th code {
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+
+table thead th pre {
+    color: inherit;
+    background-color: transparent;
+    background: transparent;
+    outline: 0px;
+}
+
+table thead td pre {
+    color: inherit;
+    background-color: transparent;
+    background: transparent;
+    outline: 0px;
 
 .box {
     padding: 10px;
