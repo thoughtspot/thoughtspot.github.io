@@ -12,6 +12,7 @@
 # ThoughtSpot_Dell_Installation_Guide_x.x
 # ThoughtSpot_VMware_Installation_Guide_x.x
 # ThoughtSpot_GCP_Installation_Guide_x.x
+# ThoughtSpot_in_Practice_x.x
 #
 
 destination: _site/
@@ -21,7 +22,7 @@ port: 4010
 output: pdf
 product: mydoc
 print_title: THETITLE
-print_subtitle: Version THEVERSION
+print_subtitle: Release THEVERSION
 output: pdf
 defaults:
   -
@@ -52,6 +53,8 @@ collections:
   release:
     output: true
   spotiq:
+    output: true
+  practice:
     output: true
 
 defaults:
