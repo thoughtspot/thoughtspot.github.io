@@ -8,7 +8,7 @@ You can create custom calendars for different purposes within your company, incl
 - Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
 - Fiscal calendars, where the year or quarter starts on a different date each year
 - Pharmaceutical calendars, where the week runs from Friday through Thursday
-- Calendars for different languages
+- Calendars in different languages
 
 ## Options
 
@@ -16,6 +16,7 @@ In a custom calendar, you can set the following:
 - The starting date of a year
 - The starting dates of quarters
 - The starting day of the week
+- The language used for the days of the week, months or quarters
 
 ## Search features
 You can use your custom calendar to search the following ways:

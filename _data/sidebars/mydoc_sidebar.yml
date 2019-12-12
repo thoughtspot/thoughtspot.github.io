@@ -1171,7 +1171,7 @@ entries:
         - title: Set up ThoughtSpot in AWS
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS,pdf
-      - levelThreeTitle: Azure Installation
+      - levelThreeTitle: Azure
         output: web,appQs,instAzure
         levelThreeItems:
  #       - title: Installing Azure
@@ -1183,7 +1183,7 @@ entries:
         - title: Set up ThoughtSpot in Azure
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs,instAzure
-      - levelThreeTitle: GCP Installation
+      - levelThreeTitle: GCP
         output: web,appQs, instGCP
         levelThreeItems:
   #      - title: Installing GCP
