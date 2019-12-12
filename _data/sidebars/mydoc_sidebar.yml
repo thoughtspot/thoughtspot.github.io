@@ -1129,7 +1129,7 @@ entries:
 #    - title: Set up high availability
 #      url: /appliance/aws/ha-aws-efs.html
 #      output: web,appQs,instAWS,pdf
-  - sectiontitle: Node Setup
+  - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
     - title: Overview
@@ -1162,18 +1162,15 @@ entries:
       - levelThreeTitle: AWS
         output: web,appQs,instAWS,pdf
         levelThreeItems:
-        - title: Installing ThoughtSpot on AWS
-          url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS,pdf
+#        - title: Installing ThoughtSpot on AWS
+#          url: /appliance/aws/installing-aws.html
+#          output: web,appQs,instAWS,pdf
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs,instAWS,pdf
         - title: Set up ThoughtSpot in AWS
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS,pdf
-        - title: Set up high availability
-          url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs,instAWS
       - levelThreeTitle: Azure Installation
         output: web,appQs,instAzure
         levelThreeItems:
