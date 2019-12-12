@@ -1,10 +1,26 @@
 ---
 title: [Installing Google Cloud Platform]
-last_updated: [11/27/2019]
+last_updated: [12/11/2019]
 summary: "Learn how to install a ThoughtSpot cluster on Google Cloud Platform (GCP)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+To install a ThoughtSpot cluster on GCP, complete these steps:
+
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#installation-prerequisites">Installation Prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#configure-nodes">Configure Nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#cluster-install">Install Cluster</a></td>
+  </tr>
+</table>
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
@@ -123,6 +139,7 @@ $ tscli cluster get-config
   }  
 }
 ```
+
 {: id="cluster-install"}
 ## Install Cluster
 Next, install the cluster using the release tarball (est. time 1 hour).

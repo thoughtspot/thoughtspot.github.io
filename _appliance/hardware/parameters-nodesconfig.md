@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [10/30/2019]
+last_updated: [12/11/2019]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,7 +22,7 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 ### Parameters of the nodes.config file
 
-**ClusterId**	The ID of your cluster, in the form yymmX0000, where yymm refers to the year and month you are creating the cluster, X functions as a separator, and 0000 is the number of the cluster, as in 0001 and 0002. For example, 1909X0001.
+**ClusterId**	The ID of your cluster, in the form yymmX0000, where yymm refers to the year and month you are creating the cluster, X functions as a separator, and 0000 is the number of the cluster, as in 0001 and 0002. For example, 1909X0001. If you have multiple clusters, ensure that each has a unique name.
 
 **ClusterName**	Name your cluster, using dashes instead of spaces. For example, TS-Company.
 

@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-last_updated: 12/10/2019
+last_updated: 12/11/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -62,7 +62,7 @@ To install and launch ThoughtSpot, you must have the following:
 <table>
   <tr>
     <td>&#10063;</td>
-    <td>An AWS VPC. For details, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html" target="_blank">VPC and Subnets</a> in Amazon's AWS documentation.</td></tr>
+    <td>An AWS VPC. For details, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html" target="_blank">VPCs and Subnets</a> in Amazon's AWS documentation.</td></tr>
   <tr>
     <td>&#10063;</td>
     <td>A ThoughtSpot AMI. For details, see <a href="launch-an-instance#ec2-setup">Setting up your EC2 instances</a>. </td></tr>
@@ -175,7 +175,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 11. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/5.2/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports that must be opened for your ThoughtSpot appliance.</li></ul>
+    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/5.2/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
 
 12.  Click **Review and Launch**.

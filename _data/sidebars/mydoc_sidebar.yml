@@ -1146,8 +1146,11 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS
-        - title: Installing Amazon Web Services
+        - title: Configure ThoughtSpot Nodes on AWS
           url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS
+        - title: Install ThoughtSpot Clusters on AWS
+          url: /appliance/aws/aws-cluster-install.html
           output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
