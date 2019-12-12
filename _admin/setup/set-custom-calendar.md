@@ -16,7 +16,7 @@ In a custom calendar, you can set the following:
 - The starting date of a year
 - The starting dates of quarters
 - The starting day of the week
-- The language used for the days of the week, months or quarters
+- The language used for the days of the week, months and quarters
 
 ## Search features
 You can use your custom calendar to search the following ways:
