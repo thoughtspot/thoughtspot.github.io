@@ -1171,9 +1171,6 @@ entries:
         - title: Set up ThoughtSpot in AWS
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS,pdf
-        - title: Set up high availability
-          url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs,instAWS
       - levelThreeTitle: Azure Installation
         output: web,appQs,instAzure
         levelThreeItems:
