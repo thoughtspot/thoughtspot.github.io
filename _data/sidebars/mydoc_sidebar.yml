@@ -1117,9 +1117,27 @@ entries:
       - title: Cable networking
         url: /appliance/hardware/cable-networking.html
         output: web,appQs,instSMC
-      - title: SMC Installation
-        url: /appliance/hardware/installing-the-smc.html
+      - levelThreeTitle: Deploying on the SMC appliance
         output: web,appQs,instSMC
+        levelThreeItems:
+        - title: Deploying on the SMC appliance
+          url: /appliance/hardware/installing-the-smc.html
+          output: web,appQs,instSMC
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-smc.html
+          output: web,appQs,instSMC
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-smc.html
+          output: web,appQs,instSMC
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-smc.html
+          output: web,appQs,instSMC
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-smc.html
+          output: web,appQs,instSMC
+        - title: Install cluster
+          url: /appliance/hardware/smc-cluster-install.html
+          output: web,appQs,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
