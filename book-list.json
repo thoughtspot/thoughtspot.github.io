@@ -62,28 +62,28 @@
     },
     {
       "filename": "ThoughtSpot_Azure_Installation_Guide",
-      "title": "Azure Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Azure",
       "codes": [
         "instAzure"
       ]
     },
     {
       "filename": "ThoughtSpot_GCP_Installation_Guide",
-      "title": "GCP Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for GCP",
       "codes": [
         "instGCP"
       ]
     },
     {
       "filename": "ThoughtSpot_VMware_Installation_Guide",
-      "title": "VMware Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for VMware",
       "codes": [
         "instVMware"
       ]
     },
     {
       "filename": "ThoughtSpot_Dell_Installation_Guide",
-      "title": "Dell Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Dell",
       "codes": [
         "instDell"
       ]
