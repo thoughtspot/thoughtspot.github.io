@@ -1,5 +1,5 @@
 {
-  "version": "THEVERSION",
+  "version": "6.0",
   "books": [
     {
       "filename": "ThoughtSpot_Administration_Guide",
@@ -66,18 +66,21 @@
       "codes": [
         "instAzure"
       ]
+    },
     {
       "filename": "ThoughtSpot_GCP_Installation_Guide",
       "title": "GCP Installation Guide",
       "codes": [
         "instGCP"
       ]
+    },
     {
       "filename": "ThoughtSpot_VMware_Installation_Guide",
       "title": "VMware Installation Guide",
       "codes": [
         "instVMware"
       ]
+    },
     {
       "filename": "ThoughtSpot_Dell_Installation_Guide",
       "title": "Dell Installation Guide",
@@ -101,8 +104,8 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_in_Practice"
-      "title": "ThoughtSpot in Practice"
+      "filename": "ThoughtSpot_in_Practice",
+      "title": "ThoughtSpot in Practice",
       "codes": [
         "practGd"
       ]
