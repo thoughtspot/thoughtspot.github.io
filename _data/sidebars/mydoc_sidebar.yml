@@ -1128,8 +1128,11 @@ entries:
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs,instDell
-      - title: Installing the Dell Appliance
+      - title: Configure ThoughtSpot Nodes on your Dell Appliance
         url: /appliance/hardware/installing-dell.html
+        output: web,appQs,instDell
+      - title: Install ThoughtSpot Clusters on your Dell Appliance
+        url: /appliance/hardware/dell-cluster-install.html
         output: web,appQs,instDell
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html
