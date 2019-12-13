@@ -1214,17 +1214,17 @@ entries:
       url: /appliance/contact.html
       output: web,appQs
   - sectiontitle: Data Integration
-    output: web,digBk
+    output: web,pdf
     sectionitems:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
-      output: web,digBk
+      output: web,pdf
     - levelTwoTitle: Embrace
-      output: web,digBk
+      output: web,pdf
       levelTwoItems:
       - title: Overview
         url: /data-integrate/embrace/embrace-intro.html
-        output: web,digBk
+        output: web,pdf
       - title: Add a connection
         url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
         output: web,apgBk
@@ -1239,76 +1239,76 @@ entries:
         output: web,apgBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
-      output: web,digBk
+      output: web,pdf
     - levelTwoTitle: ODBC driver client
-      output: web,digBk
+      output: web,pdf
       levelTwoItems:
        - title: ODBC driver overview
          url: /data-integrate/clients/about-odbc.html
-         output: web,digBk
+         output: web,pdf
        - levelThreeTitle: ODBC on Windows
-         output: web,digBk
+         output: web,pdf
          levelThreeItems:
          - title: Install the ODBC driver on Windows
            url: /data-integrate/clients/install-odbc-windows.html
-           output: web,digBk
+           output: web,pdf
          - title: Configure multiple connections on Windows
            url: /data-integrate/clients/multiple-sources-windows.html
-           output: web,digBk
+           output: web,pdf
          - title: Deploy SSL with ODBC on Windows
            url: /data-integrate/clients/windows-deploy-ssl.html
-           output: web,digBk
+           output: web,pdf
          - title: Set up the ODBC driver for SSIS
            url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
-           output: web,digBk
+           output: web,pdf
        - title: Install the ODBC driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
-         output: web,digBk
+         output: web,pdf
        - title: Best Practices for Using ODBC
          url: /data-integrate/clients/odbc-best-practices.html
-         output: web,digBk
+         output: web,pdf
     - levelTwoTitle: JDBC driver client
-      output: web,digBk
+      output: web,pdf
       levelTwoItems:
       - title: JDBC driver overview
         url: /data-integrate/clients/about-jdbc-driver.html
-        output: web,digBk
+        output: web,pdf
       - title: Use the JDBC driver
         url: /data-integrate/clients/use-jdbc-driver.html
-        output: web,digBk
+        output: web,pdf
     - title: Set up the JDBC driver for Pentaho
       url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
-      output: web,digBk
+      output: web,pdf
     - levelTwoTitle: Troubleshooting
-      output: web,digBk
+      output: web,pdf
       levelTwoItems:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
-        output: web,digBk
+        output: web,pdf
       - title: Enable ODBC logs
         url: /data-integrate/troubleshooting/enable-ODBC-log.html
-        output: web,digBk
+        output: web,pdf
       - title: Enable JDBC logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
-        output: web,digBk
+        output: web,pdf
       - title: Schema not found error with ODBC
         url: /data-integrate/troubleshooting/schema-not-found.html
-        output: web,digBk
+        output: web,pdf
       - title: How to improve throughput
         url: /data-integrate/troubleshooting/how-to-improve-throughput-of-the-load.html
-        output: web,digBk
+        output: web,pdf
       - title: ODBC tracing on Windows
         url: /data-integrate/troubleshooting/windows-odbc-tracing.html
-        output: web,digBk
+        output: web,pdf
     - levelTwoTitle: Reference
-      output: web,digBk
+      output: web,pdf
       levelTwoItems:
       - title: Supported SQL commands
         url: /data-integrate/reference/odbc-commands.html
-        output: web,digBk
+        output: web,pdf
       - title: Connection configuration
         url: /data-integrate/reference/simba-settings.html
-        output: web,digBk
+        output: web,pdf
   - sectiontitle: Disaster Recovery
     output: web,drgBk
     sectionitems:
