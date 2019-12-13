@@ -45,7 +45,7 @@ Note the following parameters:
 * `hostname` is your specific hostname.
 * `file-name` is the name of the tarball file on your local computer.
 
-2. Create the cluster<br>
+2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
 ```
     $ tscli cluster create <release-number>.tar.gz

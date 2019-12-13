@@ -45,7 +45,7 @@ Note the following parameters:
 * `hostname` is your specific hostname.
 * `file-name` is the name of the tarball file on your local computer.
 
-2. Create the cluster<br>
+2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>
 If you are using a gcs bucket for object storage, include the flag `--enable_cloud_storage=gcs`.
 ```

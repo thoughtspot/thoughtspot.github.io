@@ -1,11 +1,34 @@
 ---
-title: [Installing the Dell appliance]
-summary: "Learn how to install the Dell appliance."
-last_updated: 11/27/2019
+title: [Configure ThoughtSpot Nodes on your Dell Appliance]
+summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
+last_updated: 12/12/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{: id="Installation-Prerequisites"}
+Before you can install a ThoughtSpot cluster on your Dell appliance, you must configure your nodes.
+
+Follow these steps to configure nodes.
+
+<table>
+<tr>
+<td>&#10063;</td>
+<td><a href="installing-dell#installation-prerequisites">Step 1: Complete installation prerequisites</a></td></tr>
+<tr>
+<td>&#10063;</td>
+<td><a href="installing-dell#about-hardware">Step 2: Learn about the hardware</a></td></tr>
+<tr>
+<td>&#10063;</td>
+<td><a href="installing-dell#connect-the-appliance">Step 3: Connect the appliance</a></td></tr>
+<tr>
+<td>&#10063;</td>
+<td><a href="installing-dell#management-config">Step 4: Configure the management settings</a></td></tr>
+<tr>
+<td>&#10063;</td>
+<td><a href="installing-dell#configure-nodes">Step 5: Configure nodes on the command line</a></td></tr>
+
+</table>
+
+{: id="installation-prerequisites"}
 ## Installation Prerequisites
 
 Ensure that you have the following items, information, and understanding of policies before you begin installing your Dell 6420 appliance:
@@ -63,11 +86,31 @@ These pictures show the front and back view of the Dell C6420 appliance.
 
 ![The back of the Dell appliance]({{ site.baseurl }}/images/dell-back-view.png "This is the back of the Dell C6420 appliance.")
 
-{: id="Connect-the-Appliance"}
+{: id="connect-the-appliance"}
 ## Connect the Appliance
 
-After you rack and stack the appliance, you can begin to configure it.
+After you rack and stack the appliance, you can begin to configure it. Follow the steps in this checklist.
 
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#appliance-step-1">Step 1: Connect switches to 10GbE ports</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#appliance-step-2">Step 2: Connect iDRAC ports</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#appliance-step-3">Step 3: Connect a keyboard and monitor</a></td>
+  </tr>  
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#appliance-step-4">Step 4: Turn on nodes</a></td>
+  </tr>
+</table>  
+
+{: id="appliance-step-1"}
 ### Step 1: Connect switches to 10GbE ports
 Connect the 10GbE port of each node, as illustrated in [Appliance Port Location](#appliance-port-location), to the 10GbE switches on your own rack using either fiber or DAC cables.
 
@@ -85,9 +128,11 @@ Connect the 10GbE port of each node, as illustrated in [Appliance Port Location]
     {% include note.html content="You need at least three nodes for high availability (HA). Each appliance can have up to four nodes." %}
 * You must connect all nodes, even if using only one node, to a 10GbE switch.
 
+{: id="appliance-step-2"}
 ### Step 2: Connect iDRAC ports
 Connect the iDRAC management ports of each node to the management switch. If you need help finding the ports, see [Appliance Port Location](#appliance-port-location).
 
+{: id="appliance-step-3"}
 ### Step 3: Connect a keyboard and monitor
 Connect a keyboard and monitor to the appliance. You need these to initially configure the appliance, and you can disconnect them later. Use the adapter Dell provides. Plug it into the Display Port shown in [Appliance Port Location](#appliance-port-location), and plug the monitor in on the other side of the adapter.
 
@@ -95,6 +140,7 @@ Connect a keyboard and monitor to the appliance. You need these to initially con
 
 ![Plug the monitor and keyboard into the display port using the adapter.]({{ site.baseurl }}/images/dell-monitor-adapter.png "Plug the monitor and keyboard into the display port using the adapter.")
 
+{: id="appliance-step-4"}
 ### Step 4: Turn on nodes
 Turn on power for the nodes by pressing the power button for each one; see [Appliance Power Button](#appliance-power-button).
 
@@ -105,6 +151,7 @@ Turn on power for the nodes by pressing the power button for each one; see [Appl
 
 {% include note.html content="There is one power button for each node." %}
 
+{: id="management-config"}
 ## Configure the management settings
 Next, input your specific network information to configure the management settings. Refer to [Dell Management Configuration](#dell-idrac-config). If you need additional guidance, view [Dell Support](https://www.dell.com/support/home/us/en/04/product-support/product/dell-xc6420/overview) for this product.
 
@@ -120,112 +167,104 @@ Next, input your specific network information to configure the management settin
 7. **Log into ThoughtSpot** When the system reboots, the login page appears. Log in as an administrator. Ask your network administrator if you do not know the admin credentials.
 
 {: id="dell-idrac-config"}
+{% include image.html file="dell-idrac-config.png" title="Dell iDRAC configuration" alt="Use the monitor and keyboard that you connected earlier to add your network information in the iDRAC network settings modal." caption="Dell Management Configuration" %}
 
-**Dell Management Configuration**
+{: id="configure-nodes"}
+## Configure nodes on the command line
+Once you have connected the appliance, a command line appears on your console. Configure the nodes on this command line. Follow the steps in this checklist.
 
-![Configure the management settings with your monitor and keyboard]({{ site.baseurl }}/images/dell-idrac-config.png "Use the monitor and keyboard that you connected earlier to add your network information in the iDRAC network settings modal.")
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#node-step-1">Step 1: Get a template for network configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#node-step-2">Step 2: Prepare node configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#node-step-3">Step 3: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-dell#node-step-4">Step 4: Confirm node configuration</a></td>
+  </tr>
+</table>
 
-## Configure Nodes on the Command Line
-Once you have connected the appliance, a command line appears on your console. Configure the nodes on this command line.
-
-### Step 1: Get a list of nodes to configure
-Make sure you have logged into your cluster. If you have not, use admin credentials to log into your cluster. Then, run the `tscli cluster get-config` command to get a list of the nodes to configure for the new cluster. Redirect it to the file `nodes.config`. You can find more information on this process in the [nodes.config file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
+{: id="node-step-1"}
+### Step 1: Get a template for network configuration
+Make sure you have logged into your cluster. If you have not, use admin credentials to log into your cluster. Then, run the `tscli cluster get-config` command to get a template for network configuration for the new cluster. Redirect it to the file `nodes.config`.<br>
+You can find more information on this process in the [`nodes.config` file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).
 
     $ tscli cluster get-config |& tee nodes.config
 
-### Step 3: Configure the network of nodes
+{: id="node-step-2"}
+### Step 2: Prepare node configuration
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
-2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
-  * If you have  additional nodes, complete each node within the nodes.config file in the same way.
+2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
+If you have additional nodes, complete each node within the nodes.config file in the same way.
 
-      Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
 
-### Step 4: Configure the nodes
-Configure the nodes in the `nodes.config` file using the [`set-config` command]({{ site.baseurl }}/appliance/hardware/installing-dell.html#set-config-command). Run `$ cat nodes.config | tscli cluster set-config`.
-  * If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/installing-dell.html#set-config-error-recovery).
+{: id="node-step-3"}
+### Step 3: Configure the nodes
+Configure the nodes in the `nodes.config` file using the `set-config` command.
 
-{: id="set-config-command"}
-**Set-config**
-```
-$ cat nodes.config | tscli cluster set-config
+Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}#set-config-error-recovery).<br>
+After you run the node configuration command, your output appears similar to the following:
+    ```
+    $ cat nodes.config | tscli cluster set-config
 
-Connecting to local node-scout  
-Setting up hostnames for all nodes  
-Setting up networking interfaces on all nodes  
-Setting up hosts file on all nodes  
-Setting up IPMI configuration  
-Setting up NTP Servers  
-Setting up Timezone  
-Done setting up ThoughtSpot
-```
+    Connecting to local node-scout
+    Setting up hostnames for all nodes
+    Setting up networking interfaces on all nodes
+    Setting up hosts file on all nodes
+    Setting up IPMI configuration
+    Setting up NTP Servers
+    Setting up Timezone
+    Done setting up ThoughtSpot
+  ```
 
-{: id="set-config-error-recovery"}
-**Set-config error recovery**
-
-If the set-config fails with the following warning, restart the node-scout service by running `sudo systemctl restart node-scout`.
-
-{: id="node-scout-restart"}
-
-**Restart node-scout service**
-
-If you have this error, restart the node-scout:
-```
-Connecting to local node-scout WARNING: Detected 0 nodes, but found configuration for only 1 nodes.  
-Continuing anyway. Error in cluster config validation: [] is not a valid link-local IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
-Please retry or contact support.
-```
-Restart node-scout with the following command, then retry the [set-config command]({{ site.baseurl }}/appliance/hardware/installing-dell.html#set-config-command).
-
-    $ sudo systemctl restart node-scout
-
-The command output should no longer have a warning:
-```
-$ cat nodes.config | tscli cluster set-config
-
-Connecting to local node-scout  
-Setting up hostnames for all nodes  
-Setting up networking interfaces on all nodes  
-Setting up hosts file on all nodes  
-Setting up IPMI configuration  
-Setting up NTP Servers  
-Setting up Timezone  
-Done setting up ThoughtSpot
-```
-
-### Step 5: Confirm node configuration with the `get-config` command
-Run `tscli cluster get-config` on the command line to confirm node configuration.
-
-{: id=confirm-node-config}
-**Confirm node configuration**
+{: id="node-step-4"}
+### Step 4: Confirm node configuration
+Use the `get-config` command to confirm node configuration.<br>
+Your output may look similar to the following:
 ```
 $ tscli cluster get-config
 
-{  
-  "ClusterId": "",  
-  "ClusterName": "",  
-  "DataNetmask": "255.255.252.0",  
-  "DataGateway": "192.168.4.1",  
-  "IPMINetmask": "255.255.252.0",  
-  "IPMIGateway": "192.168.4.1",  
-  "Timezone": "America/Los_Angeles",  
-  "NTPServers": "0.centos.pool.ntp.org,1.centos.pool.ntp.org,2.centos.pool.ntp.org,3.centos.pool.ntp.org",  
-  "DNS": "192.168.2.200,8.8.8.8",  
-  "SearchDomains": "example.company.com",  
-  "Nodes": {  	
-	"ac:1f:6b:8a:77:f6": {  
-  	"NodeId": "ac:1f:6b:8a:77:f6",  
-  	"Hostname": "Thoughtspot-server1",  
-  	"DataIface": {  
-    	"Name": "eth2",  
-    	"IPv4": "192.168.7.70"  
-  	},  
-  	"IPMI": {  
-    	"IPv4": "192.168.5.70"  
-  	}  
-	}  
-  }  
+{
+  "ClusterId": "",
+  "ClusterName": "",
+  "DataNetmask": "255.255.252.0",
+  "DataGateway": "192.168.4.1",
+  "IPMINetmask": "255.255.252.0",
+  "IPMIGateway": "192.168.4.1",
+  "Timezone": "America/Los_Angeles",
+  "NTPServers": "0.centos.pool.ntp.org,1.centos.pool.ntp.org,2.centos.pool.ntp.org,3.centos.pool.ntp.org",
+  "DNS": "192.168.2.200,8.8.8.8",
+  "SearchDomains": "example.company.com",
+  "Nodes": {
+	"ac:1f:6b:8a:77:f6": {
+  	"NodeId": "ac:1f:6b:8a:77:f6",
+  	"Hostname": "Thoughtspot-server1",
+  	"DataIface": {
+    	"Name": "eth2",
+    	"IPv4": "192.168.7.70"
+  	},
+  	"IPMI": {
+    	"IPv4": "192.168.5.70"
+  	}
+	}
+  }
 }
 ```
+
+## Install ThoughtSpot software
+Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/hardware/dell-cluster-install.html).
+
+{% include content/install/install-cluster-error-recovery.md %}
 
 {: id="install-cluster"}
 ## Install Cluster
