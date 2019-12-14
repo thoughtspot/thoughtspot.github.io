@@ -1195,7 +1195,7 @@ entries:
         - title: Set up ThoughtSpot in GCP
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs,instGCP
-    - levelTwoTitle: VMware Installation
+    - levelTwoTitle: VMware
       output: web,appQs,instVMware
       levelTwoItems:
   #      - title: Installing VMware
