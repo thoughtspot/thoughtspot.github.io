@@ -1,5 +1,5 @@
 {
-  "version": "THEVERSION",
+  "version": "6.0",
   "books": [
     {
       "filename": "ThoughtSpot_Administration_Guide",
@@ -18,13 +18,6 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_Data_Connect_Guide",
-      "title": "ThoughtSpot Data Connect Guide",
-      "codes": [
-        "cngBk"
-      ]
-    },
-    {
       "filename": "ThoughtSpot_Data_Integration_Guide",
       "title": "ThoughtSpot Data Integration Guide",
       "codes": [
@@ -36,14 +29,6 @@
       "title": "ThoughtSpot Disaster Recovery Guide",
       "codes": [
         "drgBk"
-      ]
-    },
-    {
-      "filename": "ThoughtSpot_User_Guide",
-      "title": "ThoughtSpot User Guide",
-      "codes": [
-        "ugBk",
-        "refGd"
       ]
     },
     {
@@ -62,25 +47,28 @@
     },
     {
       "filename": "ThoughtSpot_Azure_Installation_Guide",
-      "title": "Azure Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Azure",
       "codes": [
         "instAzure"
       ]
+    },
     {
       "filename": "ThoughtSpot_GCP_Installation_Guide",
-      "title": "GCP Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for GCP",
       "codes": [
         "instGCP"
       ]
+    },
     {
       "filename": "ThoughtSpot_VMware_Installation_Guide",
-      "title": "VMware Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for VMware",
       "codes": [
         "instVMware"
       ]
+    },
     {
       "filename": "ThoughtSpot_Dell_Installation_Guide",
-      "title": "Dell Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Dell",
       "codes": [
         "instDell"
       ]
@@ -101,8 +89,8 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_in_Practice"
-      "title": "ThoughtSpot in Practice"
+      "filename": "ThoughtSpot_in_Practice",
+      "title": "ThoughtSpot in Practice",
       "codes": [
         "practGd"
       ]
