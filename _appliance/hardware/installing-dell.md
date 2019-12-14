@@ -1,7 +1,7 @@
 ---
-title: [Configure ThoughtSpot Nodes on your Dell Appliance]
-summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
-last_updated: 12/12/2019
+title: [Deploying on the Dell appliance]
+summary: "Follow these steps to deploy ThoughtSpot on your Dell appliance."
+last_updated: 12/13/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
