@@ -1,7 +1,11 @@
 repository: thoughtspot/jekyll
 
 # Should always leave this blank
-baseurl:
+
+baseurl: /6.0
+
+plugins:
+  - jekyll-redirect-from
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -34,6 +38,10 @@ exclude:
   - .idea/
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
+
+include:
+  - _redirects.txt
+# these are the files and directories that jekyll will include in the build
 
 timezone: America/Tijuana
 
