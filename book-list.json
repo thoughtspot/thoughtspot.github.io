@@ -18,13 +18,6 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_Data_Connect_Guide",
-      "title": "ThoughtSpot Data Connect Guide",
-      "codes": [
-        "cngBk"
-      ]
-    },
-    {
       "filename": "ThoughtSpot_Data_Integration_Guide",
       "title": "ThoughtSpot Data Integration Guide",
       "codes": [
@@ -36,14 +29,6 @@
       "title": "ThoughtSpot Disaster Recovery Guide",
       "codes": [
         "drgBk"
-      ]
-    },
-    {
-      "filename": "ThoughtSpot_User_Guide",
-      "title": "ThoughtSpot User Guide",
-      "codes": [
-        "ugBk",
-        "refGd"
       ]
     },
     {
