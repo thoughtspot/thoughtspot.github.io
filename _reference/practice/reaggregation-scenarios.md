@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The following scenarios showcase the use of the `group_aggregate` function in the real world. We provide them to demonstrate to you how the function works, and the scenarios where it proved useful.
+The following scenarios showcase the use of the <code>group_aggregate</code> function in the real world. We provide them to demonstrate to you how the function works, and the scenarios where it proved useful.
 
 * [Scenario 1: Supplier tendering by job](#supplier-tendering)
 * [Scenario 2: Average rates of exchange](#average-rates-exchange)
