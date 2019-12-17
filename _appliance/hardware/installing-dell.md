@@ -1,10 +1,39 @@
 ---
 title: [Deploying on the Dell appliance]
 summary: "Follow these steps to deploy ThoughtSpot on your Dell appliance."
-last_updated: 12/13/2019
+last_updated: 12/16/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Follow the steps in this checklist to deploy ThoughtSpot on your Dell appliance.
+
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="prerequisites-dell.html">Step 1: Complete installation prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="hardware-requirements-dell.html">Step 2: Review hardware requirements</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="connect-appliance-dell.html">Step 3: Connect your appliance</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-management-dell.html">Step 4: Configure management settings</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-dell.html">Step 5: Configure nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="install-cluster-dell.html">Step 6: Install cluster</a></td>
+  </tr>
+</table>
+
 Before you can install a ThoughtSpot cluster on your Dell appliance, you must configure your nodes.
 
 Follow these steps to configure nodes.

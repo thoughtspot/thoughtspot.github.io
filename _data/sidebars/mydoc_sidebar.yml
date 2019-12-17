@@ -1143,6 +1143,9 @@ entries:
         - title: Connect the appliance
           url: /appliance/hardware/connect-appliance-dell.html
           output: web,appQs,instDell
+        - title: Configure management settings
+          url: /appliance/hardware/configure-management-dell.html
+          output: web,appQs,instDell
         - title: Configure nodes
           url: /appliance/hardware/configure-nodes-dell.html
           output: web,appQs,instDell
