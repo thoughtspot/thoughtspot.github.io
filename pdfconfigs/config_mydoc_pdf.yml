@@ -21,8 +21,8 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: ThoughtSpot Data Integration Guide
-print_subtitle: Release 6.0
+print_title: THETITLE
+print_subtitle: Version THEVERSION
 output: pdf
 defaults:
   -
