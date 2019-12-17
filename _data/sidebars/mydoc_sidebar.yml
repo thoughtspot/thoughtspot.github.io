@@ -1150,7 +1150,7 @@ entries:
           url: /appliance/hardware/configure-nodes-dell.html
           output: web,appQs,instDell
         - title: Install cluster
-          url: /appliance/hardware/dell-cluster-install.html
+          url: /appliance/hardware/install-cluster-dell.html
           output: web,appQs,instDell
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html
@@ -1178,6 +1178,9 @@ entries:
           output: web,appQs,instAWS
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
+          output: web,appQs,instAWS
+        - title: Prepare AWS VMs for ThoughtSpot
+          url: /appliance/aws/aws-prepare-vms.html
           output: web,appQs,instAWS
         - title: Configure ThoughtSpot Nodes on AWS
           url: /appliance/aws/installing-aws.html

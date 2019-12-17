@@ -1,6 +1,6 @@
 ---
-title: [Set up AWS for ThoughtSpot]
-last_updated: 12/11/2019
+title: [Set up AWS Resources for ThoughtSpot]
+last_updated: 12/17/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -23,10 +23,13 @@ Follow these steps to set up your ThoughtSpot VMs on AWS.
   <td><a href="launch-an-instance#aws-ts-setup-cluster">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#network-ports">5. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+  <td><a href="launch-an-instance#security-groups">5. Configure security groups.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#install-cluster">6. Configure your nodes and install the cluster.</a></td></tr>
+  <td><a href="launch-an-instance#network-ports">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#install-cluster">7. Configure your nodes and install the cluster.</a></td></tr>
 </table>
 
 {: id="prerequisites"}
@@ -62,7 +65,7 @@ To install and launch ThoughtSpot, you must have the following:
 <table>
   <tr>
     <td>&#10063;</td>
-    <td>An AWS VPC. For details, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html" target="_blank">VPCs and Subnets</a> in Amazon's AWS documentation.</td></tr>
+    <td>An AWS Virtual Private Cloud (VPC). An AWS VPC is a virtual network specifically for your AWS account. It exists in all availability zones in your region, but you can specify a local zone for even lower latency. For more details, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html" target="_blank">VPCs and Subnets</a> in Amazon's AWS documentation.</td></tr>
   <tr>
     <td>&#10063;</td>
     <td>A ThoughtSpot AMI. For details, see <a href="launch-an-instance#ec2-setup">Setting up your EC2 instances</a>. </td></tr>
@@ -98,7 +101,7 @@ To install and launch ThoughtSpot, you must have the following:
 {% include note.html content="Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2)." %}
 
 {: id="s3-bucket-setup"}
-## Setting up your Amazon S3 bucket
+## Setting up your Amazon S3 bucket (recommended)
 
 If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the S3 storage option.
 
@@ -162,7 +165,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot sets up the instances to be in the same ThoughtSpot cluster.  
 
-   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. If you want to restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket, and select it instead. For details on that, click **Create new IAM role**.
+   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
    Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
@@ -170,6 +173,9 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 9. When you are done modifying the storage size, Click **Next: Add Tags**.
 
 10. Set a name for tagging your instances. This tag allows you to identify your instance more easily.
+
+{: id="security-groups"}
+## Configure security groups
 
 11. Click **Next: Configure Security Group**.
 
@@ -189,31 +195,4 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 ## Prepare the VMs
 
-Before installing a ThoughtSpot cluster, an administrator must prepare the VMs.
-
-1. SSH into a VM.
-```
-    ssh admin@<VM-IP>
-```
-1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh`.
-
-2. Configure the VM based on your specific network information. Refer to your site-survey or ask your network administrator for that information.
-
-4. Repeat these steps for each of your VMs.
-
-   When complete, your storage is mounted and ready for use with your cluster.
-
-When the setup is complete, you can load data into ThoughtSpot for search analytics.    
-
-{: id="network-ports"}
-## Open the required network ports
-
- If you have not already opened the required network ports, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) to determine which ports to open.
-
-## Install Cluster
-Next, you must configure your nodes and install your cluster. Follow the steps in [Installing AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html).
-
-## Related information  
-
-[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html){:target="_blank"}  
-[Loading data from an AWS S3 bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+Before installing a ThoughtSpot cluster, an administrator must [prepare the VMs.]({{ site.baseurl }}/appliance/aws/aws-prepare-vms.html)

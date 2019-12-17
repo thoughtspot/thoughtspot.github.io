@@ -1,7 +1,7 @@
 ---
 title: [Configure Nodes]
 summary: "Configure ThoughtSpot nodes on your Dell appliance."
-last_updated: 12/16/2019
+last_updated: 12/17/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -49,19 +49,19 @@ Do not edit any part of the `nodes.config` file except the sections described in
 Configure the nodes in the `nodes.config` file using the `set-config` command.
 
 Run `$ cat nodes.config | tscli cluster set-config` in your terminal.<br>
-If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}appliance/hardware/install-cluster-dell#set-config-error-recovery).<br>
-    ```
-    $ cat nodes.config | tscli cluster set-config
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}install-cluster-dell#set-config-error-recovery).<br>
+```
+$ cat nodes.config | tscli cluster set-config
 
-    Connecting to local node-scout
-    Setting up hostnames for all nodes
-    Setting up networking interfaces on all nodes
-    Setting up hosts file on all nodes
-    Setting up IPMI configuration
-    Setting up NTP Servers
-    Setting up Timezone
-    Done setting up ThoughtSpot
-  ```
+Connecting to local node-scout
+Setting up hostnames for all nodes
+Setting up networking interfaces on all nodes
+Setting up hosts file on all nodes
+Setting up IPMI configuration
+Setting up NTP Servers
+Setting up Timezone
+Done setting up ThoughtSpot
+```
 
 {: id="node-step-4"}
 ## Step 4: Confirm node configuration
