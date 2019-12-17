@@ -16,7 +16,7 @@ In a custom calendar, you can set the following:
 - The starting date of a year
 - The starting dates of quarters
 - The starting day of the week
-- The language used for the days of the week, months and quarters
+- The words used for the days of the week, months and quarters
 
 ## Search features
 You can use your custom calendar to search the following ways:
@@ -24,7 +24,7 @@ You can use your custom calendar to search the following ways:
 - Using [date formulas with the `fiscal` option specified]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 - Overriding the calendar used in the search bar by typing your custom calendar's name
 
-## Limitiations
+## Limitations
 - Maximum scope of the date dimension is 90 years
 - Maximum length of a calendar year is 12 months
 
