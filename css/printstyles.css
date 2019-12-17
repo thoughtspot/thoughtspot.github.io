@@ -55,6 +55,9 @@ a[href] {
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
 }
+a[href]::after {
+        content: " [See page " target-counter(attr(href), page) "]"
+}
 
 
 @page {

@@ -3,14 +3,19 @@ type: title
 search: exclude
 permalink: pdfconfigs/titlepage.html
 ---
+<head>
+<script>
+  prince-script()
+  target-counter()
+</script>
 <div class="printTitleArea">
     <div class="printTitleImage">
-        <img style="width:400px;" src="{{ "images/company_logo.png" | absolute_url }}" alt="ThoughtSpot Logo"/>
+        <img style="width:200px;" src="{{ "images/company_logo.png" | absolute_url }}" alt="ThoughtSpot Logo"/>
     </div>
     <hr />
     <div class="printTitle">{{site.print_title}}</div>
     <!-- <div class="printSubtitle">{{site.print_subtitle}}</div> -->
-    <br><div class="lastGeneratedDate">{{site.print_subtitle}} {{ date: '%B, %Y' }}</div>
+    <br><div class="lastGeneratedDate">{{site.print_subtitle}} <br> {{ site.time | date: '%B, %Y' }}</div>
 
 
 
