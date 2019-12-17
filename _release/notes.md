@@ -1,19 +1,33 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: November 7, 2019
+last_updated: December, 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [6.0.1 New Features](#6-0-1-new)
+* [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
+
+{: id="6-0-1-new"}
+## 6.0.1 New Features and Functionality
+tbd
+
+{: id="6-0-1-fixed"}
+## 6.0.1 Fixed Issues
+
+The following issues are fixed in the 6.0.1 release:
+
+- The `tscli cluster download-release` command sometimes did not work correctly.
+
 
 {: id="6-new"}
 ## 6.0 New Features and Functionality
@@ -36,7 +50,7 @@ ThoughtSpot now supports the following features for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### Monitor headlines 
+### Monitor headlines
 
 The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
 
