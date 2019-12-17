@@ -1,6 +1,6 @@
 ---
 title: [Deploying on the SMC appliance]
-last_updated: [12/13/2019]
+last_updated: [12/17/2019]
 summary: "Follow these steps to deploy ThoughtSpot on your Super Micro Computer appliance."
 sidebar: mydoc_sidebar
 toc: false
@@ -38,5 +38,5 @@ Use these references to aid you in successful installation and administration of
 * [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
+* [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

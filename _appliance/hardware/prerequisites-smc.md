@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites]
-last_updated: [12/13/2019]
+last_updated: [12/17/2019]
 summary: "Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,7 +14,7 @@ Ensure that you have the following items, information, and understanding of poli
 <table>
 <tr>
 <td>&#10063;</td>
-<td>Appliance quick start guide, to locate IPMI and data network ports. See <a href="/appliance/hardware/connect-appliance-smc.html#appliance-port-location">Appliance Port Location</a>.</td></tr>
+<td><a href="/appliance/hardware/connect-appliance-smc.html#haswell-port-location">Appliance Port Location</a>, to locate data and IPMI ports.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -29,7 +29,7 @@ Ensure that you have the following items, information, and understanding of poli
 <td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one for each node.</td></tr>
 <tr>
 <td>&#10063;</td>
-<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to <a href="connect-appliance-smc.html#appliance-step-1">Step 1: Connect switches to 10GbE ports</a> for more information to decide between the two types.</td></tr>
+<td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to the <a href="cable-networking.html">Cable reference</a> for more information to decide between the two types.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -61,4 +61,4 @@ Ensure that you have the following items, information, and understanding of poli
 </table>
 
 ## Review hardware requirements
-Next, [review hardware requirements.]({{ site.baseurl }}/appliance/hardware/hardware-requirements-smc.html)
+Next, [review hardware requirements]({{ site.baseurl }}/appliance/hardware/hardware-requirements-smc.html).
