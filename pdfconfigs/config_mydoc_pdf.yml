@@ -22,7 +22,7 @@ port: 4010
 output: pdf
 product: mydoc
 print_title: THETITLE
-print_subtitle: Version THEVERSION
+print_subtitle: Release THEVERSION
 output: pdf
 defaults:
   -
