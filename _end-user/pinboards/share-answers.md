@@ -1,7 +1,8 @@
 ---
 title: [Share answers]
-last_updated: 12/10/2019
-summary: "You do not have to be an administrator or the owner to share saved answers. Any user can share them, based on the access levels the user has."
+last_updated: 12/18/2019
+toc: false
+summary: "When you view an answer in ThoughtSpot, you can share it with others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
