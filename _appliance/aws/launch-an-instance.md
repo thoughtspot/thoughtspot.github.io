@@ -88,10 +88,10 @@ To install and launch ThoughtSpot, you must have the following:
 
 1. Sign into your [AWS account](https://console.aws.amazon.com/console/home).
 2. Copy the following ThoughtSpot public AMI to your AWS region:  
-**AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
-**AMI ID**: ami-0b23846e4761375f1  
-**Region**: N. California
-    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
+**AMI Name**: thoughtspot-image-20190814-dcbd20d0e36-prod   
+**AMI ID**: ami-04b9b321ab752a297  
+**Region**: Oregon
+    {% include note.html content="The AMI is based in the Oregon region. You may have to temporarily switch to the Oregon region on the AWS website to access it. Then you can return to your own region." %}
     {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
 3. Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for help choosing the correct instance type for your cluster.
 4. Networking requirements: 10 GbE network bandwidth is needed between the VMs. Ensure that you have this bandwidth.
