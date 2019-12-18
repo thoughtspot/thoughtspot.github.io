@@ -1,8 +1,6 @@
 ---
 title: [Customize ThoughtSpot Help]
-
-
-last_updated: tbd
+last_updated: 12/18/2019
 summary: "You customize ThoughtSpot Help to be specific to your data, examples, and documentation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
