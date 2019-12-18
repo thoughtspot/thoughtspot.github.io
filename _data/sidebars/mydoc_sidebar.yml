@@ -414,6 +414,9 @@ entries:
           - title: Share uploaded data
             url: /end-user/data-view/share-user-imported-data.html
             output: web,ugBk
+          - title: Request access
+            url: /end-user/pinboards/request-access.html
+            output: web,ugBk
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
@@ -1142,7 +1145,7 @@ entries:
         levelThreeItems:
         - title: Installing Amazon Web Services
           url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS  
+          output: web,appQs,instAWS
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs,instAWS
