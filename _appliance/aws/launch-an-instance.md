@@ -84,15 +84,14 @@ To install and launch ThoughtSpot, you must have the following:
 </table>    
 
 {: id="ec2-setup"}
-<<<<<<< HEAD
 ### Setting up your EC2 instances
 
 1. Sign into your [AWS account](https://console.aws.amazon.com/console/home).
 2. Copy the following ThoughtSpot public AMI to your AWS region:  
-**AMI Name**: thoughtspot-image-20190814-dcbd20d0e36-prod   
-**AMI ID**: ami-04b9b321ab752a297  
-**Region**: Oregon
-    {% include note.html content="The AMI is based in the Oregon region. You may have to temporarily switch to the Oregon region on the AWS website to access it. Then you can return to your own region." %}
+**AMI Name**: thoughtspot-image-20191031-8ae15008336-prod<br>
+**AMI ID**: ami-06276ece42ed96994  
+**Region**: N. California
+    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
     {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
 3. Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for help choosing the correct instance type for your cluster.
 4. Networking requirements: 10 GbE network bandwidth is needed between the VMs. Ensure that you have this bandwidth.
@@ -100,21 +99,6 @@ To install and launch ThoughtSpot, you must have the following:
 6. Determine the number of EC2 instances you need: Based on the datasets, this number will vary. Refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
 
 {% include note.html content="Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2)." %}
-=======
-### Guidelines for setting up your EC2 instances
-
-- Sign in to your [AWS account](https://console.aws.amazon.com/console/home).
-- Copy the following ThoughtSpot public AMI which has been made available in N. California region to your AWS region:  
-**AMI Name**: thoughtspot-image-20190718-dda1cc60a58-prod   
-**AMI ID**: ami-0b23846e4761375f1  
-**Region**: N. California
-  {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 5.2.x." %}
-- Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for supported instance types.
-- Networking requirements: 10 GbE network bandwidth is needed between the VMs. This is the default for the VM type recommended by ThoughtSpot.
-- Security: The VMs that are part of a cluster need to be accessible by each other, which means they need to be on the same Amazon Virtual Private Cloud (VPC) and subnetwork. Additional external access may be required to bring data in/out of the VMs to your network.
-- Number of EC2 instances needed: Based on the datasets, this number varies. Please check [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
-- Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2).
->>>>>>> 03a0fb4124a8f45729754872c891630611fcb563
 
 {: id="s3-bucket-setup"}
 ## Setting up your Amazon S3 bucket (recommended)
@@ -137,13 +121,9 @@ Follow these steps to set up an S3 bucket in AWS.
 
 5. On the **Properties** page, click **Next**.
 
-<<<<<<< HEAD
 6. On the Configure options page, ensure that **Block *all* public access** is selected.
 
 7. Click **Next**.
-=======
-6. On the Configure options page, make sure **Block *all* public access** is selected, and click **Next**.
->>>>>>> 03a0fb4124a8f45729754872c891630611fcb563
 
 7. On the Set permissions page, click **Create bucket**.
 
@@ -185,13 +165,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot sets up the instances to be in the same ThoughtSpot cluster.  
 
-<<<<<<< HEAD
-   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region. ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
-=======
-   **S3 storage setting**: If you are going to use the S3 storage option, you must go to the **IAM role** menu and select **ec2rolewithfulls3access**. This setting gives your instance access to all S3 buckets in your account's region.
-
-   To restrict the access to a specific bucket, you must create a new IAM role that provides access to the specific bucket, and select it instead. For details on that, click **Create new IAM role**.
->>>>>>> 03a0fb4124a8f45729754872c891630611fcb563
+   **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
    Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
@@ -219,38 +193,6 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it appears on the EC2 console.
 
-<<<<<<< HEAD
 ## Prepare the VMs
-=======
-## Prepare the VMs (ThoughtSpot Systems Reliability Team)
-
-{% include important.html content="This procedure is typically done by a
-ThoughtSpot Systems Reliability Engineer (SRE). Please consult
-with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
-
-Before we can install a ThoughtSpot cluster, an administrator must log into
-each VM through SSH as user "admin", and complete the following preparation steps:
-
-1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
-2. Configure each VM based on the site-survey.
-
-   When complete, your storage is mounted and ready for use with your cluster.
-
-## Launch the cluster
-
-Upload the TS tarball to one of the VMs, and proceed with the normal
-cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
-
-If you are going to use S3 as your persistent storage, you must enable it when running this command, using the **enable_cloud_storage** flag. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a`
-
-When the setup is complete, you can load data into ThoughtSpot for search analytics.    
-
-{: id="network-ports"}
-## Open the required network ports
-
-To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
-
-## Related information  
->>>>>>> 03a0fb4124a8f45729754872c891630611fcb563
 
 Before installing a ThoughtSpot cluster, an administrator must [prepare the VMs.]({{ site.baseurl }}/appliance/aws/aws-prepare-vms.html)
