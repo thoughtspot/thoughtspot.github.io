@@ -178,6 +178,9 @@ ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.
 - <strong>Italy:</strong> Region, Province/Territories, and Postal Code
 - <strong>Poland:</strong> Province/Territories, County, Postal Code
 
+### Updated password requirements
+This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, numbers 0-9, special characters !#$ etc. Your password must be at least eight characters long.
+
 {: id="6-fixed"}
 ## 6.0 Fixed Issues
 
