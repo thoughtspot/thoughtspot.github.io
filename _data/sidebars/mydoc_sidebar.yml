@@ -1158,6 +1158,40 @@ entries:
       url: /appliance/gcp/launch-an-instance.html
       output: web,appQs,instGCP
 # -- end of PDF for GCP section
+# -- Uncomment out this section ONLY when generating a PDF for VMware
+  - sectiontitle: VMware Installation
+    output: web,instVMware
+    sectionitems:
+    - title: Installing ThoughtSpot in VMware
+      url: /appliance/vmware/installing-vmware.html
+      output: web,appQs,instVMware
+    - title: Configuration overview
+      url: /appliance/vmware/vmware-intro.html
+      output: web,appQs,instVMware
+    - title: Set up ThoughtSpot in VMware
+      url: /appliance/vmware/vmware-setup.html
+      output: web,appQs,instVMware
+# -- end of PDF for VMware section
+# -- Uncomment out this section ONLY when generating a PDF for Dell
+  - sectiontitle: Dell Installation
+    output: web,appQs,instDell
+    sectionitems:
+    - title: Dell appliance overview
+      url: /appliance/hardware/inthebox.html
+      output: web,appQs,instDell
+    - title: Installing the ThoughtSpot Dell appliance
+      url: /appliance/hardware/installing-dell.html
+      output: web,appQs,instDell
+    - title: Supported hardware
+      url: /appliance/hardware/hardware-and-deployment.html
+      output: web,appQs,instDell
+    - title: Cable networking
+      url: /appliance/hardware/cable-networking.html
+      output: web,appQs,instDell
+    - title: Set up and start the appliance
+      url: /appliance/hardware/appliance-setup.html
+      output: web,appQs
+# -- end of PDF for Dell section
   - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
@@ -1236,25 +1270,6 @@ entries:
       - title: Set up ThoughtSpot in VMware
         url: /appliance/vmware/vmware-setup.html
         output: web,appQs,instVMware
-# -- Uncomment out this section ONLY when generating a PDF for Azure
-  - sectiontitle: VMware Installation
-    output: web,VMware
-    sectionitems:
-    - title: Installing ThoughtSpot in VMware
-      url: /appliance/vmware/installing-vmware.html
-      output: web,appQs,instVMware
-    - title: Configuration overview
-      url: /appliance/vmware/vmware-intro.html
-      output: web,appQs,instVMware
-    - title: Set up ThoughtSpot in VMware
-      url: /appliance/vmware/vmware-setup.html
-      output: web,appQs,instVMware
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs
-    - title: Contact support
-      url: /appliance/contact.html
-      output: web,appQs
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
