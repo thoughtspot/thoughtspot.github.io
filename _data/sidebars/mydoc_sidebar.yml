@@ -1172,18 +1172,18 @@ entries:
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS
 # -- Uncomment out this section ONLY when generating a PDF for Azure
-  - sectiontitle: Azure Installation
-    output: web,instAWS
-    sectionitems:
-    - title: Installing ThoughtSpot in Azure
-      url: /appliance/azure/installing-azure.html
-      output: web,appQs,instAzure
-    - title: Configuration options
-      url: /appliance/azure/configuration-options.html
-      output: web,appQs,instAzure
-    - title: Set up ThoughtSpot in Azure
-      url: /appliance/azure/launch-an-instance.html
-      output: web,appQs,instAzure
+#  - sectiontitle: Azure Installation
+#    output: web,instAWS
+#    sectionitems:
+#    - title: Installing ThoughtSpot in Azure
+#      url: /appliance/azure/installing-azure.html
+#      output: web,appQs,instAzure
+#    - title: Configuration options
+#      url: /appliance/azure/configuration-options.html
+#      output: web,appQs,instAzure
+#    - title: Set up ThoughtSpot in Azure
+#      url: /appliance/azure/launch-an-instance.html
+#      output: web,appQs,instAzure
 #      - levelThreeTitle: Azure
 #        output: web,appQs
 #        levelThreeItems:
