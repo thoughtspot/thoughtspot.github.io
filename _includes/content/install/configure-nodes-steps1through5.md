@@ -1,56 +1,15 @@
----
-title: [Configure ThoughtSpot Nodes on Azure]
-last_updated: [12/12/2019]
-summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
-sidebar: mydoc_sidebar
-permalink: /:collection/:path.html
----
-Before you can install a ThoughtSpot cluster on Azure, you must configure your nodes.
-
-{: id="installation-prerequisites"}
-## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on Azure.
-
-1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
-2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-
-{: id="configure-nodes"}
-## Configure Nodes
-After creating the instance, you must configure the nodes. Follow the steps in this checklist.
-
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-1">Step 1: Log into your cluster</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-2">Step 2: Get a template for network configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-3">Step 3: Prepare node configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-4">Step 4: Configure the nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-5">Step 5: Confirm node configuration</a></td>
-  </tr>
-</table>
-
 {: id="node-step-1"}
 ### Step 1: Log into your cluster
-Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
-If you do not have a private key, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) by email or through the support portal.
+Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
+1. Run `ssh admin@<clusterIP>` or `ssh admin@<hostname>`.<br>
+Replace `clusterIP` or `hostname` with your specific network information.
+```
+$ ssh admin@<clusterIP>
+```
+2. Enter your admin password at the prompt.<br>
+Ask your network administrator if you don't know the password.
 
-To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
-```
-    $ ssh -i <private_key> admin@<public-vm-ip>
-```
+{% include note.html content="The password does not appear on the screen as you type it." %}
 
 {: id="node-step-2"}
 ### Step 2: Get a template for network configuration
@@ -132,18 +91,3 @@ $ tscli cluster get-config
   }
 }
 ```
-
-## Install ThoughtSpot software
-Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/azure/azure-cluster-install.html).
-
-{% include content/install/install-cluster-error-recovery.md %}
-
-## References
-Use these references for successful installation and administration of ThoughtSpot.
-
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
-* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
-* [Contact Support]({{ site.baseurl }}/appliance/contact.html)
