@@ -132,7 +132,7 @@ To edit an existing user, follow these steps:
 
     ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
 
-5.  Click on the username in the list to open the **Edit User** interface.
+5.  Click the username in the list to open the **Edit User** interface.
 
     If you don't immediately see the username you plan to edit, try searching for it.
 

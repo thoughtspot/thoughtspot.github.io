@@ -30,7 +30,8 @@ Follow these steps to set up High Availability (HA) for your ThoughtSpot cluster
    ```
    chmod 777 /home/admin/efs
    ```
-5. On the first cluster, create a snapshot on the EFS mount point.
+
+5. On the first cluster, create a snapshot on to the EFS mount point, and back it up.
 
    ```
    tscli snapshot create EfsTest HA 2
