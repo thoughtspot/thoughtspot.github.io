@@ -72,7 +72,7 @@ When you need to change your password, navigate to **My Profile**, and under **P
   - New Password
   - Confirm Password
 
-  {% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, numbers 0-9, special characters !#$ etc. Your password must be at least eight characters long." %}
+  {% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long." %}
 
 Click **Update**.
 
