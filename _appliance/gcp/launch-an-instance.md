@@ -207,4 +207,4 @@ To install your ThoughtSpot cluster, complete the installation process outlined 
 ## Related information
 
 [Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
-[Loading data from a GCP GCS bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
+[Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)

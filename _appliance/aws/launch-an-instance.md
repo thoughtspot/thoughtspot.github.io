@@ -194,5 +194,4 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it appears on the EC2 console.
 
 ## Prepare the VMs
-
 Before installing a ThoughtSpot cluster, an administrator must [prepare the VMs.]({{ site.baseurl }}/appliance/aws/aws-prepare-vms.html)

@@ -1,9 +1,7 @@
 ---
 title: [Understand formulas in searches]
-
-
-last_updated: tbd
-summary: "To provide richer insights, you can add a formula to your search. "
+last_updated: 11/06/2019
+summary: "To provide richer insights, you can add a formula to your ThoughtSpot search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

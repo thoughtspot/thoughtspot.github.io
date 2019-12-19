@@ -1,9 +1,9 @@
 {
-  "version": "THEVERSION",
+  "version": "6.0",
   "books": [
     {
       "filename": "ThoughtSpot_Administration_Guide",
-      "title": "Administration Guide",
+      "title": "ThoughtSpot Administration Guide",
       "codes": [
         "admBk",
         "refGd",
@@ -12,82 +12,70 @@
     },
     {
       "filename": "ThoughtSpot_Application_Integration_Guide",
-      "title": "Application Integration Guide",
+      "title": "ThoughtSpot Application Integration Guide",
       "codes": [
         "apgBk"
       ]
     },
     {
-      "filename": "ThoughtSpot_Data_Connect_Guide",
-      "title": "Data Connect Guide",
-      "codes": [
-        "cngBk"
-      ]
-    },
-    {
       "filename": "ThoughtSpot_Data_Integration_Guide",
-      "title": "Data Integration Guide",
+      "title": "ThoughtSpot Data Integration Guide",
       "codes": [
         "digBk"
       ]
     },
     {
       "filename": "ThoughtSpot_Disaster_Recovery_Guide",
-      "title": "Disaster Recovery Guide",
+      "title": "ThoughtSpot Disaster Recovery Guide",
       "codes": [
         "drgBk"
       ]
     },
     {
-      "filename": "ThoughtSpot_User_Guide",
-      "title": "Users Guide",
-      "codes": [
-        "ugBk",
-        "refGd"
-      ]
-    },
-    {
       "filename": "ThoughtSpot_Node_Setup_Guide",
-      "title": "Node Setup Guide",
+      "title": "ThoughtSpot Node Setup Guide",
       "codes": [
         "appQs"
       ]
     },
     {
       "filename": "ThoughtSpot_AWS_Installation_Guide",
-      "title": "AWS Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for AWS",
       "codes": [
         "instAWS"
       ]
     },
     {
       "filename": "ThoughtSpot_Azure_Installation_Guide",
-      "title": "Azure Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Azure",
       "codes": [
         "instAzure"
       ]
+    },
     {
       "filename": "ThoughtSpot_GCP_Installation_Guide",
-      "title": "GCP Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for GCP",
       "codes": [
         "instGCP"
       ]
+    },
     {
       "filename": "ThoughtSpot_VMware_Installation_Guide",
-      "title": "VMware Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for VMware",
       "codes": [
         "instVMware"
       ]
+    },
     {
       "filename": "ThoughtSpot_Dell_Installation_Guide",
-      "title": "Dell Installation Guide",
+      "title": "ThoughtSpot Deployment Guide for Dell",
       "codes": [
         "instDell"
       ]
     },
     {
       "filename": "ThoughtSpot_Reference_Guide",
-      "title": "Reference Guide",
+      "title": "ThoughtSpot Reference Guide",
       "codes": [
         "refGd",
         "refGdAdmin"
@@ -95,9 +83,16 @@
     },
     {
       "filename": "ThoughtSpot_Release_Notes",
-      "title": "Release Notes",
+      "title": "ThoughtSpot Release Notes",
       "codes": [
         "rnotes"
+      ]
+    },
+    {
+      "filename": "ThoughtSpot_in_Practice",
+      "title": "ThoughtSpot in Practice",
+      "codes": [
+        "practGd"
       ]
     }
   ]

@@ -8,6 +8,7 @@
 # ThoughtSpot_Reference_Guide_x.x
 # ThoughtSpot_Node_Setup_Guide_x.x
 # ThoughtSpot_AWS_Installation_Guide_x.x
+# ThoughtSpot_in_Practice_x.x
 #
 destination: _site/
 url: "http://127.0.0.1:4010"
@@ -16,7 +17,7 @@ port: 4010
 output: pdf
 product: mydoc
 print_title: THETITLE
-print_subtitle: Version THEVERSION
+print_subtitle: Release THEVERSION
 output: pdf
 defaults:
   -
@@ -49,6 +50,8 @@ collections:
   release:
     output: true
   spotiq:
+    output: true
+  practice:
     output: true
 
 defaults:
