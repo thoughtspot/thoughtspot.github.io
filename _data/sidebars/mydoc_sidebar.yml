@@ -1171,20 +1171,33 @@ entries:
         - title: Set up ThoughtSpot in AWS
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs,instAWS
+# -- Uncomment out this section ONLY when generating a PDF for Azure
+  - sectiontitle: Azure Installation
+    output: web,instAWS
+    sectionitems:
+    - title: Installing ThoughtSpot in Azure
+      url: /appliance/azure/installing-azure.html
+      output: web,appQs,instAzure
+    - title: Configuration options
+      url: /appliance/azure/configuration-options.html
+      output: web,appQs,instAzure
+   - title: Set up ThoughtSpot in Azure
+     url: /appliance/azure/launch-an-instance.html
+     output: web,appQs,instAzure
       - levelThreeTitle: Azure
-        output: web,appQs,instAzure
+        output: web,appQs
         levelThreeItems:
 #       - title: Installing ThoughtSpot in Azure
 #          url: /appliance/azure/installing-azure.html
 #          output: web,appQs,instAzure
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
-          output: web,appQs,instAzure
+          output: web,appQs
         - title: Set up ThoughtSpot in Azure
           url: /appliance/azure/launch-an-instance.html
-          output: web,appQs,instAzure
+          output: web,appQs
       - levelThreeTitle: GCP
-        output: web,appQs, instGCP
+        output: web,appQs,instGCP
         levelThreeItems:
 #        - title: Installing ThoughtSpot in GCP
 #          url: /appliance/gcp/installing-gcp.html
@@ -1195,6 +1208,19 @@ entries:
         - title: Set up ThoughtSpot in GCP
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs,instGCP
+# -- Uncomment out this section ONLY when generating a PDF for Azure
+  - sectiontitle: GCP Installation
+    output: web,instGCP
+    sectionitems:
+    - title: Installing ThoughtSpot in GCP
+      url: /appliance/gcp/installing-gcp.html
+      output: web,appQs,instGCP
+    - title: Configuration options
+      url: /appliance/gcp/configuration-options.html
+      output: web,appQs,instGCP
+   - title: Set up ThoughtSpot in GCP
+     url: /appliance/gcp/launch-an-instance.html
+     output: web,appQs,instGCP
     - levelTwoTitle: VMware
       output: web,appQs,instVMware
       levelTwoItems:
@@ -1207,6 +1233,19 @@ entries:
         - title: Set up ThoughtSpot in VMware
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs,instVMware
+# -- Uncomment out this section ONLY when generating a PDF for Azure
+  - sectiontitle: VMware Installation
+    output: web,instGCP
+    sectionitems:
+    - title: Installing ThoughtSpot in VMware
+      url: /appliance/vmware/installing-vmware.html
+      output: web,appQs,instVMware
+    - title: Configuration overview
+      url: /appliance/vmware/vmware-intro.html
+      output: web,appQs,instVMware
+    - title: Set up ThoughtSpot in VMware
+      url: /appliance/vmware/vmware-setup.html
+      output: web,appQs,instVMware          
     - title: Network policies
       url: /appliance/firewall-ports.html
       output: web,appQs
