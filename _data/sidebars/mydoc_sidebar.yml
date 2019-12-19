@@ -1114,7 +1114,7 @@ entries:
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
 # -- Uncomment out this section ONLY when generating a PDF for AWS
-- sectiontitle: AWS Installation
+  - sectiontitle: AWS Installation
     output: web,instAWS
     sectionitems:
     - title: Installing Amazon Web Services
