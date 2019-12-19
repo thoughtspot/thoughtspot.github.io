@@ -5,9 +5,7 @@
       "filename": "ThoughtSpot_Administration_Guide",
       "title": "ThoughtSpot Administration Guide",
       "codes": [
-        "admBk",
-        "refGd",
-        "refGdAdmin"
+        "admBk"
       ]
     },
     {
@@ -32,42 +30,42 @@
       ]
     },
     {
-      "filename": "ThoughtSpot_Node_Setup_Guide",
-      "title": "ThoughtSpot Node Setup Guide",
+      "filename": "ThoughtSpot_Deployment_Guide",
+      "title": "ThoughtSpot Deployment Guide",
       "codes": [
         "appQs"
       ]
     },
     {
-      "filename": "ThoughtSpot_AWS_Installation_Guide",
+      "filename": "ThoughtSpot_AWS_Deployment_Guide",
       "title": "ThoughtSpot Deployment Guide for AWS",
       "codes": [
         "instAWS"
       ]
     },
     {
-      "filename": "ThoughtSpot_Azure_Installation_Guide",
+      "filename": "ThoughtSpot_Azure_Deployment_Guide",
       "title": "ThoughtSpot Deployment Guide for Azure",
       "codes": [
         "instAzure"
       ]
     },
     {
-      "filename": "ThoughtSpot_GCP_Installation_Guide",
+      "filename": "ThoughtSpot_GCP_Deployment_Guide",
       "title": "ThoughtSpot Deployment Guide for GCP",
       "codes": [
         "instGCP"
       ]
     },
     {
-      "filename": "ThoughtSpot_VMware_Installation_Guide",
+      "filename": "ThoughtSpot_VMware_Deployment_Guide",
       "title": "ThoughtSpot Deployment Guide for VMware",
       "codes": [
         "instVMware"
       ]
     },
     {
-      "filename": "ThoughtSpot_Dell_Installation_Guide",
+      "filename": "ThoughtSpot_Dell_Deployment_Guide",
       "title": "ThoughtSpot Deployment Guide for Dell",
       "codes": [
         "instDell"
