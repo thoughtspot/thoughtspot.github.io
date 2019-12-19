@@ -1227,12 +1227,12 @@ entries:
 #        - title: Installing ThoughtSpot in VMware
 #          url: /appliance/vmware/installing-vmware.html
 #          output: web,appQs,instVMware
-        - title: Configuration overview
-          url: /appliance/vmware/vmware-intro.html
-          output: web,appQs,instVMware
-        - title: Set up ThoughtSpot in VMware
-          url: /appliance/vmware/vmware-setup.html
-          output: web,appQs,instVMware
+      - title: Configuration overview
+        url: /appliance/vmware/vmware-intro.html
+        output: web,appQs,instVMware
+      - title: Set up ThoughtSpot in VMware
+        url: /appliance/vmware/vmware-setup.html
+        output: web,appQs,instVMware
 # -- Uncomment out this section ONLY when generating a PDF for Azure
   - sectiontitle: VMware Installation
     output: web,instGCP
