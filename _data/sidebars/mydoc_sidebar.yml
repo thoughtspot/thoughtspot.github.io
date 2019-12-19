@@ -1128,7 +1128,7 @@ entries:
       output: web,appQs,instAWS
     - title: Set up high availability
       url: /appliance/aws/ha-aws-efs.html
-      output: web,appQs,instAWS,pdf
+      output: web,appQs,instAWS
   - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
@@ -1181,9 +1181,9 @@ entries:
     - title: Configuration options
       url: /appliance/azure/configuration-options.html
       output: web,appQs,instAzure
-   - title: Set up ThoughtSpot in Azure
-     url: /appliance/azure/launch-an-instance.html
-     output: web,appQs,instAzure
+    - title: Set up ThoughtSpot in Azure
+      url: /appliance/azure/launch-an-instance.html
+      output: web,appQs,instAzure
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
@@ -1218,9 +1218,9 @@ entries:
     - title: Configuration options
       url: /appliance/gcp/configuration-options.html
       output: web,appQs,instGCP
-   - title: Set up ThoughtSpot in GCP
-     url: /appliance/gcp/launch-an-instance.html
-     output: web,appQs,instGCP
+    - title: Set up ThoughtSpot in GCP
+      url: /appliance/gcp/launch-an-instance.html
+      output: web,appQs,instGCP
     - levelTwoTitle: VMware
       output: web,appQs,instVMware
       levelTwoItems:
@@ -1245,7 +1245,7 @@ entries:
       output: web,appQs,instVMware
     - title: Set up ThoughtSpot in VMware
       url: /appliance/vmware/vmware-setup.html
-      output: web,appQs,instVMware          
+      output: web,appQs,instVMware
     - title: Network policies
       url: /appliance/firewall-ports.html
       output: web,appQs
