@@ -1157,7 +1157,7 @@ entries:
     - title: Set up ThoughtSpot in GCP
       url: /appliance/gcp/launch-an-instance.html
       output: web,appQs,instGCP
-# -- end of PDF for GCP section      
+# -- end of PDF for GCP section
   - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
@@ -1191,9 +1191,9 @@ entries:
       - levelThreeTitle: AWS
         output: web,appQs,instAWS
         levelThreeItems:
-#       - title: Installing ThoughtSpot in AWS
-#         url: /appliance/aws/installing-aws.html
-#         output: web,appQs,instAWS,pdf
+        - title: Installing ThoughtSpot in AWS
+          url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS,pdf
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs,instAWS
@@ -1203,7 +1203,7 @@ entries:
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
-       - title: Installing ThoughtSpot in Azure
+        - title: Installing ThoughtSpot in Azure
           url: /appliance/azure/installing-azure.html
           output: web,appQs,instAzure
         - title: Configuration options
