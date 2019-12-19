@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 10/28/2019
+last_updated: 12/5/2019
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -14,11 +14,8 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <!--Since 5.2.0-->
 <dt>Australia</dt>
 <dd>
-<details><summary><strong>States</strong></summary>
+<details><summary><strong>State</strong></summary>
 {% include content/geo/au-state.md %}
-</details>
-<details><summary><strong>State Abbreviations</strong></summary>
-{% include content/geo/au-state-abbr.md %}
 </details>
 <details><summary><strong>Suburb</strong></summary>
 {% include content/geo/au-suburb.md %}

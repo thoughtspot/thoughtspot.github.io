@@ -1,8 +1,8 @@
 ---
+
 title: [Deploying on the Dell appliance]
 summary: "Follow these steps to deploy ThoughtSpot on your Dell appliance."
 last_updated: 12/17/2019
-toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

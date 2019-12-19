@@ -13,7 +13,7 @@ information and provide a personalized user experience.
 
 ## Users, groups, and privileges
 
-Data security applies to users and groups. Users can be managed [manually]({{site.baseurl }}/admin/users-groups/about-users-groups.html#) or through
+Data security applies to users and groups. Users can be managed [manually]({{ site.baseurl }}/admin/users-groups/about-users-groups.html#) or through
 [LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html#). Each user can have
 membership in one or more groups. Admins can make security settings that
 determine what users are allowed to do in ThoughtSpot. These settings are
