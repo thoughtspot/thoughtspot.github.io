@@ -1,6 +1,6 @@
 ---
 title: [About your user profile]
-last_updated: 10/07/2019
+last_updated: 12/19/2019
 summary: "The user icon lets you view your profile, adjust language options, specify notification preferenses, revisit onboarding, or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,7 +16,7 @@ Click **Profile** to navigate to your profile, where you can change your icon, p
 Notice that you can now see the **My Profile** interface.
 
 {: id="profile-picture" }
-## Change you profile picture
+## Change your profile picture
 
 You can change your profile picture clicking the user profile in the top right of the interface, clicking **Upload Picture**, and selecting a new image from the file browser.
 
@@ -60,7 +60,7 @@ Select **Email me sharing notifications** to receive emails whenever another use
 
 When you are relatively new to using ThoughtSpot, we help you to become productive faster.
 
-Whenever you need a refresh, navigate to **My Profile*. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughtSpot guides you through onboarding again.
+Whenever you need a refresh, navigate to **My Profile**. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughtSpot guides you through onboarding again.
 
 ![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
 
@@ -71,6 +71,8 @@ When you need to change your password, navigate to **My Profile**, and under **P
   - Current Password
   - New Password
   - Confirm Password
+
+{% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long." %}
 
 Click **Update**.
 

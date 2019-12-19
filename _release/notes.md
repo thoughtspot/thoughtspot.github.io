@@ -24,7 +24,7 @@ fixed issues from the previous releases, and any known issues.
 ## Supported Upgrade Paths
 
 If you are running one of the following versions, you can upgrade to the 5.3.2 release
-directly: 
+directly:
 
 * 5.3 to 5.3.2
 * 5.2.x to 5.3.2
@@ -71,6 +71,9 @@ We enhanced the presentation experience even more. You can now brand the PDF wit
 
 ### Streamlined AWS data loading from an S3 bucket
 You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+
+### Updated password requirements
+This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z,  special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long.
 
 {: id="531-fixed"}
 ## 5.3.1 Fixed Issues

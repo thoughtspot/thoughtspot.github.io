@@ -70,7 +70,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password. Minimum 8 characters, including at least 1 upper-case letter, and 1 number.</td>
+        <td>A password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. When you click on the <strong>change password</strong> box, a tooltip appears to explain these requirements.</td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
