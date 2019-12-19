@@ -1184,18 +1184,18 @@ entries:
     - title: Set up ThoughtSpot in Azure
       url: /appliance/azure/launch-an-instance.html
       output: web,appQs,instAzure
-      - levelThreeTitle: Azure
-        output: web,appQs
-        levelThreeItems:
+#      - levelThreeTitle: Azure
+#        output: web,appQs
+#        levelThreeItems:
 #       - title: Installing ThoughtSpot in Azure
 #          url: /appliance/azure/installing-azure.html
 #          output: web,appQs,instAzure
-        - title: Configuration options
-          url: /appliance/azure/configuration-options.html
-          output: web,appQs
-        - title: Set up ThoughtSpot in Azure
-          url: /appliance/azure/launch-an-instance.html
-          output: web,appQs
+#        - title: Configuration options
+#          url: /appliance/azure/configuration-options.html
+#          output: web,appQs
+#        - title: Set up ThoughtSpot in Azure
+#          url: /appliance/azure/launch-an-instance.html
+#          output: web,appQs
       - levelThreeTitle: GCP
         output: web,appQs,instGCP
         levelThreeItems:
