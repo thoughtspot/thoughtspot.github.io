@@ -81,7 +81,7 @@
     },
     {
       "filename": "ThoughtSpot_SMC_Installation_Guide",
-      "title": "SMC Install Guide",
+      "title": "ThoughtSpot Deployment Guide for SMC",
       "codes": [
         "instSMC"
       ]

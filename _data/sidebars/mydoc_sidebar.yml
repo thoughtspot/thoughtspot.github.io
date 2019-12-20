@@ -1174,36 +1174,68 @@ entries:
   - sectiontitle: VMware Installation
     output: web,instVMware
     sectionitems:
-    - title: Configure ThoughtSpot nodes in VMware
-      url: /appliance/vmware/installing-vmware.html
-      output: web,appQs,instVMware
     - title: Configuration overview
       url: /appliance/vmware/vmware-intro.html
       output: web,appQs,instVMware
     - title: Set up ThoughtSpot in VMware
       url: /appliance/vmware/vmware-setup.html
       output: web,appQs,instVMware
+    - title: Configure ThoughtSpot nodes in VMware
+      url: /appliance/vmware/installing-vmware.html
+      output: web,appQs,instVMware
+    - title: Install ThoughtSpot clusters in VMware
+      url: /appliance/vmware/vmware-cluster-install.html
+      output: web,appQs,instVMware
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
   - sectiontitle: Dell Installation
     output: web,appQs,instDell
     sectionitems:
-    - title: Hardware appliance overview
-      url: /appliance/hardware/inthebox.html
-      output: web,appQs,instDell
-    - title: Installing the ThoughtSpot Dell appliance
+    - title: Deploying on the Dell appliance
       url: /appliance/hardware/installing-dell.html
       output: web,appQs,instDell
-    - title: Supported hardware
-      url: /appliance/hardware/hardware-and-deployment.html
+    - title: Prerequisites
+      url: /appliance/hardware/prerequisites-dell.html
       output: web,appQs,instDell
-    - title: Cable networking
-      url: /appliance/hardware/cable-networking.html
+    - title: Hardware requirements
+      url: /appliance/hardware/hardware-requirements-dell.html
       output: web,appQs,instDell
-    - title: Set up and start the appliance
-      url: /appliance/hardware/appliance-setup.html
-      output: web,appQs
+    - title: Connect the appliance
+      url: /appliance/hardware/connect-appliance-dell.html
+      output: web,appQs,instDell
+    - title: Configure management settings
+      url: /appliance/hardware/configure-management-dell.html
+      output: web,appQs,instDell
+    - title: Configure nodes
+      url: /appliance/hardware/configure-nodes-dell.html
+      output: web,appQs,instDell
+    - title: Install cluster
+      url: /appliance/hardware/install-cluster-dell.html
+      output: web,appQs,instDell
 # -- end of PDF for Dell section
+# -- Uncomment out this section ONLY when generating a PDF for SMC
+  - sectiontitle: SMC Installation
+    output: web,appQs,instSMC
+    sectionitems:
+    - title: Deploying on the SMC appliance
+      url: /appliance/hardware/installing-the-smc.html
+      output: web,appQs,instSMC
+    - title: Prerequisites
+      url: /appliance/hardware/prerequisites-smc.html
+      output: web,appQs,instSMC
+    - title: Hardware requirements
+      url: /appliance/hardware/hardware-requirements-smc.html
+      output: web,appQs,instSMC
+    - title: Connect the appliance
+      url: /appliance/hardware/connect-appliance-smc.html
+      output: web,appQs,instSMC
+    - title: Configure nodes
+      url: /appliance/hardware/configure-nodes-smc.html
+      output: web,appQs,instSMC
+    - title: Install cluster
+      url: /appliance/hardware/smc-cluster-install.html
+      output: web,appQs,instSMC
+# -- end of PDF for SMC section
   - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
