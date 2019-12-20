@@ -1,5 +1,5 @@
 ---
-title: [Configure ThoughtSpot Nodes in VMware]
+title: [Configure ThoughtSpot nodes in VMware]
 last_updated: 12/12/2019
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
