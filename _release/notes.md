@@ -63,13 +63,14 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 
 ### Monitor headlines
 
-The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
+The Monitor feature enables you to follow headline metrics, and get daily updates in your mailbox, on your ThoughtSpot home page, and in the SpotIQ Follow management interface.
 
 For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html)  
 
  **Support for Monitor is in beta**.
 
-* To monitor headlines, click the **Follow** icon in the top right corner of the Pinboard.
+* To monitor headlines, click the **Follow** icon in the top right corner of the insight.
+
   ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
 
 * The **SpotIQ Follow** interface lists all the headlines you follow, and the changes from last run.

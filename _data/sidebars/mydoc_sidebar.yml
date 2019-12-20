@@ -1505,6 +1505,24 @@ entries:
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
+    - levelTwoTitle: Deployment reference
+      output: web,refGd
+      levelTwoItems:
+      - title: Network Policies
+        url: /appliance/firewall-ports.html
+        output: web,refGd
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: web,refGd
+      - title: Parameters of nodes.config
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: web,refGd
+      - title: Using the cluster create command
+        url: /appliance/hardware/cluster-create.html
+        output: web,refGd
+      - title: Parameters of cluster create
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: web,refGd
   - sectiontitle: ThoughtSpot in Practice
     output: web,practGd
     sectionitems:

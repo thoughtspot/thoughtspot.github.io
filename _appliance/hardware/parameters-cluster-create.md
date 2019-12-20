@@ -38,4 +38,4 @@ Make sure that you do not edit any part of the installer file except the section
 * [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
