@@ -7,6 +7,6 @@ apgBk - Application Integration
 cngBk - Data Connect
 ugBk - End User guide
 admBk - Admin guide
-instAWS - Deployment on AWS
+instAWS - Deployment in AWS
 practGd - ThoughtSpot in Practice
 instSMC - Deployment on SMC

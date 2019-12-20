@@ -52,9 +52,9 @@ Do not edit any part of the installer file except the sections specified in [Par
 
 ## Related information
 * [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
-* [Configure ThoughtSpot nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
-* [Configure ThoughtSpot nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
-* [Configure ThoughtSpot nodes on VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
-* [Configure ThoughtSpot nodes on Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Configure ThoughtSpot nodes in AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 * [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)

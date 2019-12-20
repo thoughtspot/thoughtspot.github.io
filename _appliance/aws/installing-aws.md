@@ -1,15 +1,15 @@
 ---
-title: [Configure ThoughtSpot Nodes on AWS]
+title: [Configure ThoughtSpot Nodes in AWS]
 last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can install a ThoughtSpot cluster on AWS, you must configure your nodes.
+Before you can install a ThoughtSpot cluster in AWS, you must configure your nodes.
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in AWS:
 
 1. **Review configuration options** Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up AWS for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your instance.

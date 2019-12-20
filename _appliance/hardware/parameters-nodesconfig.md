@@ -1,10 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-<<<<<<< HEAD
-last_updated: [12/11/2019]
-=======
 last_updated: [12/19/2019]
->>>>>>> bdcd834efb55ae0f2161cc10880e8b88fe2f79d3
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -57,9 +53,9 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 ## Related information
 * [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
-* [Configure ThoughtSpot nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
-* [Configure ThoughtSpot nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
-* [Configure ThoughtSpot nodes on VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
-* [Configure ThoughtSpot nodes on Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Configure ThoughtSpot nodes in AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 * [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)
