@@ -1,12 +1,12 @@
 ---
 title: [Customize ThoughtSpot Help]
-last_updated: 12/18/2019
-summary: "You customize ThoughtSpot Help to be specific to your data, examples, and documentation."
+last_updated: 12/20/2019
+summary: "You can customize ThoughtSpot Help to be specific to your data, examples, and documentation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can customize the Help for your ThoughtSpot application to tailor it to your
-organization. Configuring these Help settings sets system-wide defaults for all your
+You can customize the Help menu for your ThoughtSpot application to tailor it to your
+organization. When you configure these Help settings, you set system-wide defaults for all your
 users.
 
 When your ThoughtSpot users click the Help icon, they see a list of links.
