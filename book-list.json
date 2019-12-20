@@ -38,21 +38,21 @@
     },
     {
       "filename": "ThoughtSpot_AWS_Deployment_Guide",
-      "title": "ThoughtSpot Deployment Guide for AWS",
+      "title": "ThoughtSpot Deployment Guide for Amazon Web Services",
       "codes": [
         "instAWS"
       ]
     },
     {
       "filename": "ThoughtSpot_Azure_Deployment_Guide",
-      "title": "ThoughtSpot Deployment Guide for Azure",
+      "title": "ThoughtSpot Deployment Guide for Microsoft Azure",
       "codes": [
         "instAzure"
       ]
     },
     {
       "filename": "ThoughtSpot_GCP_Deployment_Guide",
-      "title": "ThoughtSpot Deployment Guide for GCP",
+      "title": "ThoughtSpot Deployment Guide for Google Cloud Platform",
       "codes": [
         "instGCP"
       ]
@@ -81,7 +81,7 @@
     },
     {
       "filename": "ThoughtSpot_SMC_Installation_Guide",
-      "title": "SMC Install Guide",
+      "title": "ThoughtSpot Deployment Guide for SMC",
       "codes": [
         "instSMC"
       ]

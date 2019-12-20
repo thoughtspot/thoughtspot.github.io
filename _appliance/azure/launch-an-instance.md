@@ -172,6 +172,7 @@ _Prerequisite_: To log into the VM, you need the private key that is available i
    $ sudo passwd thoughtspot
    Changing password for user thoughtspot
    ```
+   {% include warning.html content="If you do not change the password, you cannot log back into your Azure VMs. Your private key does not work after initial installation." %}
 
 4. Update the file `/etc/hosts` with all the node IP addresses for the other VMs
 that will be part of the ThoughtSpot cluster.

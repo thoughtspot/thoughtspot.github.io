@@ -1,17 +1,17 @@
 ---
-title: [Install ThoughtSpot Clusters on AWS]
+title: [Install ThoughtSpot Clusters in AWS]
 last_updated: [12/12/2019]
-summary: "Learn how to install ThoughtSpot clusters on AWS."
+summary: "Learn how to install ThoughtSpot clusters in AWS."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Prerequisites
-Before you can install your ThoughtSpot clusters on AWS, complete these prerequisites.
+Before you can install your ThoughtSpot clusters in AWS, complete these prerequisites.
 1. **Review configuration options** Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up AWS for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html) to configure your nodes.
+4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes in AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software

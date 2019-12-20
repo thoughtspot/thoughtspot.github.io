@@ -1,17 +1,17 @@
 ---
-title: [Install ThoughtSpot Clusters on GCP]
+title: [Install ThoughtSpot Clusters in GCP]
 last_updated: [12/12/2019]
-summary: "Learn how to install ThoughtSpot clusters on GCP."
+summary: "Learn how to install ThoughtSpot clusters in GCP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Prerequisites
-Before you can install your ThoughtSpot clusters on GCP, complete these prerequisites.
+Before you can install your ThoughtSpot clusters in GCP, complete these prerequisites.
 1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
+4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software

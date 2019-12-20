@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on AWS:
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in AWS:
 
 1. **Review configuration options** Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up AWS for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your instance.

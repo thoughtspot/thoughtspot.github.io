@@ -1,15 +1,15 @@
 ---
-title: [Configure ThoughtSpot Nodes on Azure]
+title: [Configure ThoughtSpot nodes in Azure]
 last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can install a ThoughtSpot cluster on Azure, you must configure your nodes.
+Before you can install a ThoughtSpot cluster in Azure, you must configure your nodes.
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on Azure.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in Azure.
 
 1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
