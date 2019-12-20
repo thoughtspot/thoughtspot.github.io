@@ -1,5 +1,5 @@
 ---
-title: [Install ThoughtSpot Clusters in AWS]
+title: [Install ThoughtSpot clusters in AWS]
 last_updated: [12/12/2019]
 summary: "Learn how to install ThoughtSpot clusters in AWS."
 sidebar: mydoc_sidebar

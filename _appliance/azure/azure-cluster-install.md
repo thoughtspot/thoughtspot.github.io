@@ -1,5 +1,5 @@
 ---
-title: [Install ThoughtSpot Clusters in Azure]
+title: [Install ThoughtSpot clusters in Azure]
 last_updated: [12/12/2019]
 summary: "Learn how to install ThoughtSpot clusters in Azure."
 sidebar: mydoc_sidebar
