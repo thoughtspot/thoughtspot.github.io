@@ -1,5 +1,5 @@
 ---
-title: [Install ThoughtSpot Clusters in VMware]
+title: [Install ThoughtSpot clusters in VMware]
 last_updated: [12/12/2019]
 summary: "Learn how to install ThoughtSpot clusters in VMware."
 sidebar: mydoc_sidebar
@@ -12,7 +12,7 @@ Before you can install your ThoughtSpot clusters in VMware, complete these prere
 1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-5. **Configure nodes** Refer to [Configure ThoughtSpot Nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html) to configure your nodes.
+5. **Configure nodes** Refer to [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software
