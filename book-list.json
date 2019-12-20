@@ -80,6 +80,13 @@
       ]
     },
     {
+      "filename": "ThoughtSpot_SMC_Installation_Guide",
+      "title": "SMC Install Guide",
+      "codes": [
+        "instSMC"
+      ]
+    },
+    {
       "filename": "ThoughtSpot_Release_Notes",
       "title": "ThoughtSpot Release Notes",
       "codes": [

@@ -9,3 +9,4 @@ ugBk - End User guide
 admBk - Admin guide
 instAWS - Deployment on AWS
 practGd - ThoughtSpot in Practice
+instSMC - Deployment on SMC

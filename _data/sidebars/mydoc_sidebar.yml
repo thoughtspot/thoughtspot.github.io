@@ -1203,19 +1203,28 @@ entries:
       levelTwoItems:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
-        output: web,appQs,instDell
-      - title: Installing the ThoughtSpot Dell appliance
-        url: /appliance/hardware/installing-dell.html
-        output: web,appQs,instDell
-      - title: Supported hardware
-        url: /appliance/hardware/hardware-and-deployment.html
-        output: web,appQs,instDell
-      - title: Cable networking
-        url: /appliance/hardware/cable-networking.html
-        output: web,appQs,instDell
-      - title: Set up and start the appliance
-        url: /appliance/hardware/appliance-setup.html
-        output: web,appQs,instDell
+        output: web,appQs,instSMC,instDell
+      - levelThreeTitle: Deploying on the SMC appliance
+        output: web,appQs,instSMC
+        levelThreeItems:
+        - title: Deploying on the SMC appliance
+          url: /appliance/hardware/installing-the-smc.html
+          output: web,appQs,instSMC
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-smc.html
+          output: web,appQs,instSMC
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-smc.html
+          output: web,appQs,instSMC
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-smc.html
+          output: web,appQs,instSMC
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-smc.html
+          output: web,appQs,instSMC
+        - title: Install cluster
+          url: /appliance/hardware/smc-cluster-install.html
+          output: web,appQs,instSMC
       - levelThreeTitle: Deploying on the Dell appliance
         output: web,appQs,instDell
         levelThreeItems:
@@ -1242,16 +1251,16 @@ entries:
           output: web,appQs,instDell
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the nodes.config file
         url: /appliance/hardware/parameters-nodesconfig.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Using the cluster create command
         url: /appliance/hardware/cluster create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the cluster create command
         url: /appliance/hardware/parameters-cluster-create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
