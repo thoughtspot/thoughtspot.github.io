@@ -1120,7 +1120,7 @@ entries:
     - title: Configuration options
       url: /appliance/aws/configuration-options.html
       output: web,appQs,instAWS
-    - title: Set up ThoughtSpot in AWS
+    - title: Set up ThoughtSpot resources in AWS
       url: /appliance/aws/launch-an-instance.html
       output: web,appQs,instAWS
     - title: Prepare AWS VMs for ThoughtSpot

@@ -1,5 +1,5 @@
 ---
-title: [Set up GCP for ThoughtSpot]
+title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
 last_updated: 12/9/2019
 sidebar: mydoc_sidebar
