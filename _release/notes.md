@@ -9,7 +9,6 @@ permalink: /:collection/:path.html
 ThoughtSpot version 6.0.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-* [6.0.1 New Features](#6-0-1-new)
 * [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
@@ -17,25 +16,21 @@ fixed issues from the previous releases, and any known issues.
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
 
-{: id="6-0-1-new"}
-## 6.0.1 New Features and Functionality
-tbd
-
 {: id="6-0-1-fixed"}
 ## 6.0.1 Fixed Issues
 
 The following issues are fixed in the 6.0.1 release:
 
-- Search autocomplete occasionally displays an error when a bulk filter is used.
-- In a custom calendar, sales results for individual years are correct, but when comparing those same years using `versus`, they are incorrect (example: `2019 vs 2018``net sales`).
+- Search autocomplete occasionally displays an error when using a bulk filter.
+- In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using `versus`(example: `2019 vs 2018``net sales`).
 - Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.
-- A yellow bar sometimes appears when doing a search, which causes search not to work.
+- A yellow bar sometimes appears during search, causing search not to work.
 - Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.
-- Delayed search that was enabled for a cluster is disabled after upgrade to release 5.3.x.
+- After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.
 - The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.
 - Common keywords, like `this year`, `date daily`,`last quarter`, and `week of year` do not reflect the settings of a custom calendar.
 - The title page of an exported PDF does not display the full date.
-- The `date` filter of an answer does not work properly when pinned to a pinboard, even if the pinboard `date` filter is applied.
+- The `date` filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard `date` filter.
 - Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
 
 
