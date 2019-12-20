@@ -34,7 +34,7 @@ If you are using an s3 or GCS bucket for object storage, include the flag `--ena
 2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 
 Refer to [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) for further information.
-Refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
+Refer to [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
 
 Do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). If you delete colons, commas, or other parts of the code, setup may fail.
 
@@ -50,11 +50,11 @@ Do not edit any part of the installer file except the sections specified in [Par
 
 **Email alerts**	Enter the email addresses you would like to receive alerts about this cluster, in the form company@example.com. The address prod-alerts@thoughtspot.com appears automatically and should remain, so that ThoughtSpot can be aware of the status of your cluster. Separate email addresses using a space.
 
-## References
+## Related information
 * [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Configure ThoughtSpot nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
 * [Configure ThoughtSpot nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
 * [Configure ThoughtSpot nodes on VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Configure ThoughtSpot nodes on Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)

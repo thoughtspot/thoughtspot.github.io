@@ -203,7 +203,7 @@ Successfully deleted deployer service
 2019-11-03 22:11:54,571 Cannot check for enabled status of unknown service: deploy
 ```
 
-## References
+## Related information
 * [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Configure ThoughtSpot nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
 * [Configure ThoughtSpot nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)

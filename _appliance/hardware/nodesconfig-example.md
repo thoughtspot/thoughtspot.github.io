@@ -12,12 +12,12 @@ As you install your appliance, you must configure the nodes.
 ```
     $ tscli cluster get-config |& tee nodes.config
 ```
-2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information, as shown in [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example).
+2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information, as shown in [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example).
 3. If you have  additional nodes, complete each node within the `nodes.config` file as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). [Autodiscovery of one node]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery) shows the `nodes.config` file before you fill in your specific information.
 
-Do not edit any part of the nodes.config file except the sections explained in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, setup may fail.
+Do not edit any part of the nodes.config file except the sections explained in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, setup may fail.
 
- See [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) to understand the parameters in the file.
+ See [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) to understand the parameters in the file.
 
 {: id="node-autodiscovery"}
 
@@ -82,11 +82,11 @@ $ vim nodes.config
 }
 ```
 
-## References
+## Related information
 * [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 * [Configure ThoughtSpot nodes on AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
 * [Configure ThoughtSpot nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
 * [Configure ThoughtSpot nodes on VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Configure ThoughtSpot nodes on Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
