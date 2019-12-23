@@ -1,6 +1,6 @@
 ---
 title: [More help and support]
-last_updated: 12/20/2019
+last_updated: 12/23/2019
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,7 +26,7 @@ bar. You can see the documentation for the latest version of the product, and fo
 
 You can navigate to this documentation from inside the ThoughtSpot application
 as well. In this case, the application links directly to the documentation
-version that matches your product version.
+version that matches your product version. Click the help icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} next to your profile, and select **Help**.
 
 {% include image.html file="gettingstarted-helptohelp.png" title="The help menu" alt="If you click on the help icon at the top right of your screen, you can click on Help and open the help menu." caption="The help menu" %}
 
@@ -66,6 +66,14 @@ The **Help** dialog box links you to the following:
 At the bottom of the **Help** dialog box, you can see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
+## Getting started
+The **Getting Started** sidebar teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide this sidebar from the help menu.
+
+Refer to [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+
+## Community
+The **Community** link in the **Help** menu takes you to the [ThoughtSpot Community](https://community.thoughtspot.com) website, where you can ask ThoughtSpot expertsquestions, share your own ideas and feedback, and meet others.
+
 ## Learn
 
 Choosing **Learn** from the **Help** menu takes you to the *Learn* center.
@@ -96,6 +104,12 @@ You can search the help directly from the search bar with the `how to` and `help
 
 The `how to` keyword takes you into the documentation only. The `help` keyword
 allows you to jump directly into a product workflow. -->
+
+## Expert requests
+**Expert requests** takes you to the Expert Requests interface, where you can view your own questions or answer other users' questions.
+
+{% include image.html file="expertrequests.png" title="Expert requests" alt="View and answer ask an expert questions by clicking on Expert Requests from the Help menu." caption="Expert requests" %}
+Refer to [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ## Support contact information
 

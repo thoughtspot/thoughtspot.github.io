@@ -1,6 +1,6 @@
 ---
 title: [Getting Started]
-last_updated: 12/17/2019
+last_updated: 12/23/2019
 summary: "The Getting Started sidebar teaches new users to navigate and understand ThoughtSpot."
 sidebar: mydoc_sidebar
 toc: false
@@ -46,6 +46,7 @@ You can always activate **Getting Started** again. To show the Getting Started s
 Click on the **Getting Started** sidebar to expand it and see the **Learning Resources** available to you:
 * [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
 * [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)
+*  [Working with Answers]({{ site.baseurl }}#working-with-answers)
 * [Intro to Pinboards]({{ site.baseurl }}/end-user/introduction/getting-started.html#intro-to-pinboards)
 * [Refining Data Using Filters]({{ site.baseurl }}/end-user/introduction/getting-started.html#refining-data-using-filters)
 * [Automated Insights Using SpotIQ]({{ site.baseurl }}/end-user/introduction/getting-started.html#automated-insights-using-spotiq)
@@ -57,7 +58,7 @@ Click on the **Getting Started** sidebar to expand it and see the **Learning Res
 ## Navigation overview
 The **Navigation Overview** teaches you about the menu bar at the top of the page.
 
-{% include image.html file="getting-started-navoverview.gif" title="Navigation overview" alt="Gif of Navigation Overview: Search, Answers, Pinboards, and Help" caption="Navigation overview" %}
+{% include image.html file="getting-started.gif" title="Navigation overview" alt="Gif of Navigation Overview: Search, Answers, Pinboards, and Help" caption="Navigation overview" %}
 
 1. **Search**<br>
     Search your data in the **Search** tab.<br>
@@ -102,6 +103,14 @@ In **Your First Search**, watch a short video about how to search in ThoughtSpot
 View the [keyword reference]({{ site.baseurl }}/reference/keywords.html).
 
 Click **done** to exit **Your First Search**.
+
+{: id="working-with-answers"}
+## Working with answers
+In **Working with Answers**, watch a short video about saved search results, or **Answers**.
+
+{% include image.html file="gettingstarted-workingwithanswers.png" title="Working with answers" alt="Watch a short video about answers." caption="Working with answers" %}
+
+Click **done** to exit **Working with Answers**.
 
 {: id="intro-to-pinboards"}
 ## Intro to pinboards
