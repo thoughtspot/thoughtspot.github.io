@@ -321,6 +321,9 @@ entries:
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
           output: web,ugBk
+        - title: Answer Explorer
+          url: /end-user/pinboards/answer-explorer.html
+          output: web,ugBk
         - title: Schedule a pinboard job
           url: /admin/manage-jobs/schedule-a-pinboard-job.html
           output: web,ugBk
