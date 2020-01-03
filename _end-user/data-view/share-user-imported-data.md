@@ -70,8 +70,8 @@ To share data from within the dataset, follow these steps.
 {: id="specify-permissions"}
 ## Specify permissions
 7. Configure the level of access by selecting from the dropdown list. You can select:
-    -   **Can View** to provide read-only access. This enables viewing the table data and defining worksheets on the table.
-    -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table and adding or removing its columns.
+    -   **Can View** to provide read-only access. This enables viewing the table or other data source's data, as well as defining worksheets based on that data.
+    -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table or other data source and adding or removing its columns.
 
     {% include image.html file="sharing-data-privileges.png" title="Specify permissions" alt="Configure the user or group's level of access by selecting 'can view' or 'can edit.'" caption="Specify permissions" %}
 
