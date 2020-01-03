@@ -1,7 +1,7 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily explore your data.
-last_updated: 1/2/2020
+last_updated: 1/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -15,7 +15,7 @@ The Answer expands to fill your screen, and the **Explore this data** column app
 
 You can explore your data in several different ways, using [filters]({{ site.baseurl }}#explore-filters), [breakdowns]({{ site.baseurl }}#explore-breakdowns), [metrics]({{ site.baseurl }}#explore-metrics), or [comparisons]({{ site.baseurl }}#explore-comparisons).
 
-You can also Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline}.
+You can also Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline}. You cannot go back one step at a time if you Drill down directly on an Answer, without using Answer Explorer.
 
 Refer to [see the search behind a result]({{ site.baseurl }}/complex-search/drill-down.html).
 

@@ -1,6 +1,6 @@
 ---
 title: [See the search behind a result]
-last_updated: 1/2/2020
+last_updated: 1/3/2020
 summary: "You can use an Answer to learn more about the data used in your search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,7 +10,7 @@ your search. If you own a pinboard or answer, you can drill down to the data ben
 Users you share a pinboard or answer with can also drill down provided they _also_
 have access to the data on which the board was based. See [overview of sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html) to share your answers, pinboards, or data.
 
-You can drill down from both tables and visualizations. Select a column to drill down on, or a particular point. You can drill down from an answer, an answer within a pinboard, or the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature, which allows you to explore an answer within a pinboard. To drill down:
+You can drill down from both tables and visualizations. Select a column to drill down on, or a particular point. You can drill down from an answer, from an answer within a pinboard, or using the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature, which provides AI-guided exploration of an answer within a pinboard. To drill down:
 
 1. Right-click the column or data point of interest in your answer, and select **Drill down**. This limits the data you are exploring to that particular data point or column.
     {% include image.html file="drilldown-table.png" title="Drill down from a data point" alt="You can drill down from just one data point, in either table or visualization mode." caption="Drill down from a data point" %}
@@ -37,4 +37,4 @@ As you drill down on an answer using Answer Explorer, use the back button ![]({{
 If you want to be able to go back one step while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
 
 ## Save your new answer
-When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it, or select **Download** to download an image of your current visualization. Otherwise, when you exit the page, the Answer returns to its original state.
+When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it, or select **Download** to download an image of your current visualization. You can also [share the Answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html) by clicking the sharing icon ![]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}. Otherwise, when you exit the page, the Answer returns to its original state.
