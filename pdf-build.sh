@@ -65,7 +65,7 @@ for book in $(echo "$bookList" | jq -r '.books[] | @base64'); do
     echo "done";
 
     echo "Building the PDF ...";
-    prince --javascript --pdf-keywords=prince-no-fallback --input-list=_site/pdfconfigs/prince-list.txt -o pdf/${theName}_${theVersion}.pdf;
+    prince --javascript --pdf-keywords=prince-no-fallback --input-list=_site/pdfconfigs/prince-list.txt -o pdf/${theName}_${theVersion}.pdf --baseurl=docs.thoughtspot.com/6.0/;
 
 
     ## Reset everything for the next book
