@@ -1,18 +1,18 @@
 ---
-title: [Install ThoughtSpot Clusters on VMware]
+title: [Install ThoughtSpot clusters in VMware]
 last_updated: [12/12/2019]
-summary: "Learn how to install ThoughtSpot clusters on VMware."
+summary: "Learn how to install ThoughtSpot clusters in VMware."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Prerequisites
-Before you can install your ThoughtSpot clusters on VMware, complete these prerequisites.
+Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites.
 1. **Download the OVF** Download the [Open Virtualization Format](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/) (OVF) file.
 1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-5. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html) to configure your nodes.
+5. **Configure nodes** Refer to [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software
@@ -54,12 +54,12 @@ Run `tscli cluster create` to create the cluster.
 
 {% include content/install/cluster-steps1through3.md %}
 
-## References
+## Related information
 Use these references for successful installation and administration of ThoughtSpot:
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

@@ -1,6 +1,6 @@
 ---
 title: [The nodes.config file]
-last_updated: [10/30/2019]
+last_updated: [12/19/2019]
 summary: "Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,13 +8,16 @@ permalink: /:collection/:path.html
 {: id="using-nodes.config"}
 ## Using the nodes.config file
 As you install your appliance, you must configure the nodes.
-1. Run `tscli cluster get-config |& tee nodes.config` in your terminal.
-2. Add network information for the nodes, as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
+1. Run the configuration command in your terminal.
+```
+    $ tscli cluster get-config |& tee nodes.config
+```
+2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information, as shown in [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example).
 3. If you have  additional nodes, complete each node within the `nodes.config` file as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). [Autodiscovery of one node]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery) shows the `nodes.config` file before you fill in your specific information.
 
-Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+Do not edit any part of the nodes.config file except the sections explained in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, setup may fail.
 
- See [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) to understand the parameters in the file.
+ See [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) to understand the parameters in the file.
 
 {: id="node-autodiscovery"}
 
@@ -79,11 +82,11 @@ $ vim nodes.config
 }
 ```
 
-## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
-* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/aws/installing-aws.html)
-* [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
-* [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
-* [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
-* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+## Related information
+* [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
+* [Configure ThoughtSpot nodes in AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)

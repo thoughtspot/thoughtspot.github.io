@@ -1,13 +1,13 @@
 ---
-title: [Set up AWS Resources for ThoughtSpot]
+title: [Set up AWS resources for ThoughtSpot]
 last_updated: 12/17/2019
 sidebar: mydoc_sidebar
-summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
+summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
 ---
 {: id="aws-overview"}
 ## Overview of ThoughtSpot setup in AWS
-Follow these steps to set up your ThoughtSpot VMs on AWS.
+Follow these steps to set up your ThoughtSpot VMs in AWS.
 <table>
 <tr>
   <td>&#10063;</td>

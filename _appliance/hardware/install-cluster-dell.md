@@ -31,7 +31,7 @@ Follow the steps in this checklist to install your cluster.
 ## Step 1: Run the installer
 1. Copy the downloaded release tarball to `/home/admin`:<br>
   Run `scp <release-number> admin@<hostname>:/home/admin/<file-name>`. Note the following parameters:
-* `release-number` is number of version of ThoughtSpot on your cluster, in the form `0.0.tar.gz`. For example, `6.0.tar.gz`.
+* `release-number` is the version of ThoughtSpot on your cluster, in the form `0.0.tar.gz`. For example, `6.0.tar.gz`.
 * `hostname` is your network hostname. Ask your network administrator if you do not know your hostname.
 * `file-name` is the name of the tarball file on your local computer.
 ```
@@ -41,7 +41,7 @@ Follow the steps in this checklist to install your cluster.
 ```
     $ tscli cluster create 0.0.tar.gz
 ```
-3. Edit the ouput using your specific cluster information. For more information on this process, refer to [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+3. Edit the ouput using your specific cluster information. For more information on this process, refer to [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
 The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
 

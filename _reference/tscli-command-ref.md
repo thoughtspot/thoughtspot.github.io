@@ -1800,10 +1800,12 @@ This subcommand has the following options:
   <dd>Sets a new Postmap mapping.</dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailfromname <em>mailfromname</em></code></dt>
-  <dd>Sets the name and an email address from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the name from where email alerts are sent for the cluster.</p>
+  <p>It is the first half of the email address, the part before the @ sign. In <em>example@company.com</em>, it is <em>example</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailname <em>mailname</em></code></dt>
-  <dd>Sets the mailname and a domain from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the domain from where email alerts are sent for the cluster.</p>
+  <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] relayhost</code></dt>
   <dd>

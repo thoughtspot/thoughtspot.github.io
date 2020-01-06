@@ -1,15 +1,15 @@
 ---
-title: [Configure ThoughtSpot Nodes on Azure]
+title: [Configure ThoughtSpot nodes in Azure]
 last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can install a ThoughtSpot cluster on Azure, you must configure your nodes.
+Before you can install a ThoughtSpot cluster in Azure, you must configure your nodes.
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on Azure.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in Azure.
 
 1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
@@ -62,10 +62,10 @@ You can find more information on this process in the [`nodes.config` file refere
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
-2. Fill in the areas specified in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
+2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
-Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
+Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
 
 {: id="node-step-4"}
 ### Step 4: Configure the nodes
@@ -138,12 +138,12 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/azure/azu
 
 {% include content/install/install-cluster-error-recovery.md %}
 
-## References
+## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

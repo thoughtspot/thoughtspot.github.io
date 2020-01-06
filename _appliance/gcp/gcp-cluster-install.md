@@ -1,17 +1,17 @@
 ---
-title: [Install ThoughtSpot Clusters on GCP]
+title: [Install ThoughtSpot clusters in GCP]
 last_updated: [12/12/2019]
-summary: "Learn how to install ThoughtSpot clusters on GCP."
+summary: "Learn how to install ThoughtSpot clusters in GCP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Prerequisites
-Before you can install your ThoughtSpot clusters on GCP, complete these prerequisites.
+Before you can install your ThoughtSpot clusters in GCP, complete these prerequisites.
 1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
-2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
+2. **Create the instance** Refer to [Set up ThoughtSpot in GCP]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
-4. **Configure nodes** Refer to [Configure ThoughtSpot Nodes on GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
+4. **Configure nodes** Refer to [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software
@@ -54,12 +54,12 @@ If you are using a gcs bucket for object storage, include the flag `--enable_clo
 
 {% include content/install/cluster-steps1through3.md %}
 
-## References
+## Related information
 Use these references for successful installation and administration of ThoughtSpot:
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

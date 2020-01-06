@@ -1,15 +1,15 @@
 ---
-title: [Configure ThoughtSpot Nodes on GCP]
+title: [Configure ThoughtSpot nodes in GCP]
 last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can install a ThoughtSpot cluster on GCP, you must configure your nodes.
+Before you can install a ThoughtSpot cluster in GCP, you must configure your nodes.
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on GCP.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in GCP.
 
 1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up GCP for ThoughtSpot]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
@@ -49,12 +49,12 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/gcp/gcp-c
 
 {% include content/install/install-cluster-error-recovery.md %}
 
-## References
+## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

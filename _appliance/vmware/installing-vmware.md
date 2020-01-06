@@ -1,16 +1,16 @@
 ---
-title: [Configure ThoughtSpot Nodes on VMware]
+title: [Configure ThoughtSpot nodes in VMware]
 last_updated: 12/12/2019
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Before you can install a ThoughtSpot cluster on VMware, you must configure your nodes.
+Before you can install a ThoughtSpot cluster in VMware, you must configure your nodes.
 
 {: id="installation-prerequisites"}
 ## Installation Prerequisites
-Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster on VMware.
+Ensure the successful creation of the virtual machines (VMs) before you install the ThoughtSpot cluster in VMware.
 
 1. **Download the OVF** Download the [Open Virtualization Format](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/) (OVF) file.
 1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
@@ -51,12 +51,12 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/vmware/vm
 
 {% include content/install/install-cluster-error-recovery.md %}
 
-## References
+## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [12/11/2019]
+last_updated: [12/19/2019]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,11 +10,14 @@ permalink: /:collection/:path.html
 ## Using the nodes.config file
 As you install your appliance, you must configure the nodes.
 
-1. Run `tscli cluster get-config |& tee nodes.config` in your terminal.
+1. Run the configuration command in your terminal.
+```
+    $ tscli cluster get-config |& tee nodes.config
+```
 2. Add network information for your nodes in the `nodes.config` file output, as demonstrated in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example. Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) with your specific network information.
-3. If you have  additional nodes, complete each node within the nodes.config file in [the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example.
+3. If you have  additional nodes, complete each node within the nodes.config file in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example.
 
-Make sure that you do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). Deleting quotation marks, commas, or other parts of the code could cause setup to fail.
+Do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). If you delete quotation marks, commas, or other parts of the code, setup may fail.
 
 See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.
 
@@ -48,11 +51,11 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 **IPMI IPv4**	A secondary IP address, associated with the IPMINetmask and IPMIGateway, in the form 000.000.000.000. For example, 192.168.5.70.
 
-## References
-* [Installing the Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing%20the%20smc.html)
-* [Installing Amazon Web Services]({{ site.baseurl }}/appliance/aws/installing-aws.html)
-* [Installing Google Cloud Platform]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
-* [Installing VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
-* [Installing Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
-* [Installing the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)
+## Related information
+* [Deploying on the SMC appliance]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
+* [Configure ThoughtSpot nodes in AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html)
+* [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html)
+* [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
+* [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
+* [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
+* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html)

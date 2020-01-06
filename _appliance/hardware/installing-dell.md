@@ -35,12 +35,12 @@ Follow the steps in this checklist to deploy ThoughtSpot on your Dell appliance.
   </tr>
 </table>
 
-## References
+## Related information
 Use these references to aid you in successful installation and administration of ThoughtSpot.
 
-* [The `nodes.config` file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
-* [Parameters of the `nodes.config` file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the `cluster create` command]({{ site.baseurl }}/appliance/hardware/cluster%20create.html)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Cable Reference]({{ site.baseurl }}/appliance/hardware/cable-networking.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
