@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 10/25/2019
+last_updated: 1/6/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -215,12 +215,11 @@ that will be part of the ThoughtSpot cluster.
 
 8. Prepare the disks /dev/sdc and /dev/sdd for ThoughtSpot by issuing the following command:
 
-{% include warning.html content="Do not use the disk <code>/dev/sdb</code>. This disk is reserved
-for ThoughtSpot use." %}
+    {% include warning.html content="Do not use the disk <code>/dev/sdb</code>. This disk is reserved for ThoughtSpot use." %}
 
-   ```
-   $ sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
-   ```
+    ```
+    $ sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
+    ```
 
 9. Check the disks' status by issuing the following command:
 
@@ -261,7 +260,11 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
    ```
 
-4. Repeat this process for each node.
+3. Modify permissions for `/etc/hosts`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
+    ```
+    $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
+    ```
+4. Repeat this process (steps 1 through 4) for each node.
 
 3. Do not reboot any of the nodes, until these changes are made to each node:
 
