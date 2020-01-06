@@ -1,6 +1,6 @@
 ---
 title: [Change result display options]
-last_updated: 1/3/2020
+last_updated: 1/6/2020
 summary: "You can change how your search results (Answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -18,7 +18,7 @@ change the view of your answer:
 
     {% include image.html file="toggle_between_views.png" title="Select table or chart" alt="You can toggle between displaying your results as a table or as a chart." caption="Select table or chart" %}
 
-   When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want.  
+When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
 ## Sort your search
 
@@ -31,7 +31,7 @@ To sort your search:
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 
-* If you are in the chart view, click the axis label of your chart and select **Sort**.
+* If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
 
 
 ## Change the date bucketing (grouping)
@@ -67,7 +67,7 @@ The bucket values are a subset of date and time-period keywords. To change the d
 
 ## Exclude and include row values
 
-You can include or exclude row values from your answer. 
+You can include or exclude row values from your answer.
 
 To exclude or include row values:
 
