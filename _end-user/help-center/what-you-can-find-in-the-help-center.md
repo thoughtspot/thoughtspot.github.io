@@ -1,6 +1,6 @@
 ---
 title: [More help and support]
-last_updated: 12/23/2019
+last_updated: 1/6/2020
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -67,7 +67,7 @@ At the bottom of the **Help** dialog box, you can see a link to contact Support 
 well as the version of ThoughtSpot you are using.
 
 ## Getting started
-The **Getting Started** sidebar teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide this sidebar from the help menu.
+The **Getting Started** sidebar teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide this sidebar from the help menu. To show or hide this sidebar for your whole organization, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 Refer to [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).
 
