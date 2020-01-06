@@ -20,7 +20,7 @@ The following scenarios showcase the use of the <code>group_aggregate</code> fun
 
 We have a fact table at a job or supplier tender response aggregation level. There are many rows for each job, where each row is a single row from a supplier. A competitive tender is a situation when multiple suppliers bid on the same job.
 
-Our objective is to determine what percentage of jobs had more than 1 supplier response. We want to see high numbers, which indicate that many suppliers bid on the job, to we can select the best response.
+Our objective is to determine what percentage of jobs had more than 1 supplier response. We want to see high numbers, which indicate that many suppliers bid on the job, so we can select the best response.
 
 ### Valid solution
 
