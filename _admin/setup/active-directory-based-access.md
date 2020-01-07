@@ -1,5 +1,5 @@
 ---
-title: [Enable Active Directory based access]
+title: [Enable Active Directory based access for ThoughtSpot backend]
 
 
 last_updated: tbd
