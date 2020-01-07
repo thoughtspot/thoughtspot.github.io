@@ -19,7 +19,7 @@
 destination: _site/
 url: "https://docs.thoughtspot.com"
 baseurl: "/6.0"
-port: 4010
+port: 
 output: pdf
 product: mydoc
 print_title: THETITLE
