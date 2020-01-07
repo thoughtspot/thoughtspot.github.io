@@ -199,7 +199,7 @@ potential workarounds.
 
 * On-prem: Not supported yet
 
-* Cloud: Supported on AWS, [See https://aws.amazon.com/], GCP [See https://cloud.google.com/], Azure [See https://azure.microsoft.com/en-us/]
+* Cloud: Supported on AWS [See <a href="https://aws.amazon.com/">https://aws.amazon.com/</a>], GCP [See <a href="https://cloud.google.com/">https://cloud.google.com/</a>], Azure [See <a href="https://azure.microsoft.com/en-us/">https://azure.microsoft.com/en-us/]</a>
 
 ### Secure Erase
-[Current erase guide](https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_){:target="_blank"}
+Current erase guide[See <a href="https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_">https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_</a>
