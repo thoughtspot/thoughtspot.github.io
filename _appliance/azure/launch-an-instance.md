@@ -23,8 +23,7 @@ The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
 configured, on a CentOS base image. Check with your ThoughtSpot contact to
 learn about the latest version of the ThoughtSpot Virtual Machine.
 
-Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the
-administrator users. When you are ready to obtain the password, contact
+Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact
 [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Set up ThoughtSpot in Azure
@@ -42,51 +41,74 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 {: id="create-instance"}
 ### Create an instance
 
-Create a resource group and a resource based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
-on the [Azure
-Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/).
+Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
+on the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/).
 
 1. Log into the Azure portal.
 
     In a browser, go to [http://azure.microsoft.com](http://azure.microsoft.com), and log into your Azure account.
 
-2. Create a Resource Group.
+2. On the Azure portal homepage, hover over **Virtual machines**, and click **Create**.
 
-    Specify a name, subscription type, and the region in which you are creating your VMs.
+    {% include image.html file="azure-createvm.png" title="Create a virtual machine" alt="Hover over Virtual machines and click create." caption="Create a virtual machine" %}
 
-   ![]({{ site.baseurl }}/images/azure_create_resource_group.png "Create a resource group")
+3. Specify information under **Basics**.<br>
+    {% include image.html file="azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." caption="Specify information under Basics" %}
 
-3. Next, create a resource based on the ThoughtSpot Virtual Machine.
+    <table>
+      <tr>
+        <td><strong>1</strong></td>
+        <td>Choose a subscription type from the dropdown menu.</td>
+      </tr>
+      <tr>
+        <td><strong>2</strong></td>
+        <td>If your company already has a resource group, <em>select existing</em>. If not, <em>create new</em>.</td>
+      </tr>
+      <tr>
+        <td><strong>3</strong></td>
+        <td>Specify a name for your virtual machine.</td>
+      </tr>
+      <tr>
+        <td><strong>4</strong></td>
+        <td>Specify the region in which you are creating the VM.</td>
+      </tr>
+      <tr>
+        <td><strong>5</strong></td>
+        <td>Click <strong>Browse all public and private images</strong>, and search for the ThoughtSpot image. Click on it.</td>
+      </tr>
+      <tr>
+        <td><strong>6</strong></td>
+        <td>Choose a disk size that works for your instance. Refer to <a href="/appliance/azure/configuration-options.html">Azure configuration options</a>.</td>
+      </tr>
+      <tr>
+        <td><strong>7</strong></td>
+        <td>Select <strong>SSH public key</strong> and specify a username.</td>
+      </tr>
+      <tr>
+        <td><strong>8</strong></td>
+        <td>Enter your SSH public key. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one.</td>
+      </tr>
+      <tr>
+        <td><strong>9-10</strong></td>
+        <td>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the <a href="#port-requirements">minimum port requirements.</a></td>
+      </tr>
+    </table>
 
-   a. Click **Create a resource**. If you already have a resource within your company, use that one.
+2. Under **Disks**, choose a disk type.
 
-   b. Search the [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/) for the ThoughtSpot Virtual Machine, and select it.
+    {% include image.html file="azure-disktypes.png" title="Choose a disk type" alt="In the Disks menu, choose an OS disk type, either Premium SSD, Standard HDD, or Standard SSD." caption="Choose a disk type" %}
 
-     ![]({{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png "Choose ThoughtSpot in Marketplace")
-
-   b. On the ThoughtSpot Virtual Machine page, click **Create**.
-
-     ![]({{ site.baseurl }}/images/azure_create_ts_vm.png "Choose ThoughtSpot in Marketplace")
-
-### Configure basic settings
-
-1. Provide a username for your new virtual machine.
-
-2. Select either **SSH public key** or **Password**.
-  * If you select **Password**, supply a password and confirm it by typing it again.
-  * If you select **SSH public key**, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for a key.
-
-2. Choose a disk type.
-
-   {% include tip.html content=" The new Standard SSD disk types are only available
-   for particular regions. Make sure this disk type is
-   supported in the region you chose for your VM before selecting it." %}
+    {% include tip.html content=" The new Standard SSD disk types are only available for particular regions. Make sure this disk type is supported in the region you chose for your VM before selecting it." %}
 
    See [Standard SSD Disks for Virtual Machine workloads](https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/) for more on SSD disks. ThoughtSpot recommends the Premium SSD disks.
 
-3. Provide a Resource Group, by clicking `existing` and selecting the one you just created.
+4. Specify information under **Networking**.
 
-4. Select a location.
+    {% include image.html file="azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" caption="Specify networking information" %}
+
+    <table>
+    </table>
+
 
 5. Click **OK** to save the Basics, which should look similar to the following example.
 
