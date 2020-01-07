@@ -1,7 +1,7 @@
 ---
 title: [Configure Nodes]
 summary: "Configure ThoughtSpot nodes on your Dell appliance."
-last_updated: 12/17/2019
+last_updated: 1/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -57,7 +57,6 @@ Connecting to local node-scout
 Setting up hostnames for all nodes
 Setting up networking interfaces on all nodes
 Setting up hosts file on all nodes
-Setting up IPMI configuration
 Setting up NTP Servers
 Setting up Timezone
 Done setting up ThoughtSpot

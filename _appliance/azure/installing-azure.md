@@ -93,7 +93,6 @@ After you run the node configuration command, your output appears similar to the
     Setting up hostnames for all nodes
     Setting up networking interfaces on all nodes
     Setting up hosts file on all nodes
-    Setting up IPMI configuration
     Setting up NTP Servers
     Setting up Timezone
     Done setting up ThoughtSpot

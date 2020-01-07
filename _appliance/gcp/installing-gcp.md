@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in GCP]
-last_updated: [12/12/2019]
+last_updated: [1/7/2020]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -52,7 +52,7 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/gcp/gcp-c
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
