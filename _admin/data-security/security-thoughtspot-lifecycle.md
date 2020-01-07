@@ -202,4 +202,4 @@ potential workarounds.
 * Cloud: Supported on AWS (See <font color="#0000EE">https://aws.amazon.com/</font>), GCP (See <font color="#0000EE">https://cloud.google.com/%2F%5D</font>), Azure (See <font color="#0000EE">https://azure.microsoft.com/en-us/</font>)
 
 ### Secure Erase
-Current erase guide [See <a href="https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_">https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_</a>
+Current erase guide (See <font color="#0000EE">https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_</font>)
