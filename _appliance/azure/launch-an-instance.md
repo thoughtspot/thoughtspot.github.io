@@ -94,7 +94,7 @@ Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/).
 
 ### Choose a machine size
 
-Under **Choose a size**, select `E64S_V3 standard`. For more information, refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html).
+Under **Choose a size**, select  `E64S_V3 standard`. For more information, refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html).
 
 ![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
 
