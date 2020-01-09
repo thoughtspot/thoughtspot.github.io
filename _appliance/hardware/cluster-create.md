@@ -1,12 +1,12 @@
 ---
-title: [Using the cluster create command]
-last_updated: [12/19/2019]
+title: [Using the tscli cluster create command]
+last_updated: [1/8/2020]
 summary: "Learn how to use the cluster create command to install your appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="using-cluster-create"}
-## Using the cluster create command
+## Using the tscli cluster create command
 To install your appliance, you must install the cluster using the release tarball (estimated time 1 hour).
 1. **Download the release tarball** Download the release tarball from the download link sent by ThoughtSpot Support.<br>
 Refer to your welcome letter to find a link to download the release tarball. If you do not have a download link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.  
@@ -23,7 +23,7 @@ Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/
   ```
     $ scp <release-number> admin@<hostname>:/home/admin/<file-name>
   ```
-3. **Run the `cluster create` command** Run `tscli cluster create <release-number>` in your terminal.<br>
+3. **Run the `tscli cluster create` command** Run `tscli cluster create <release-number>` in your terminal.<br>
 If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage=s3` or `--enable_cloud_storage=gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
 ```
     $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3
@@ -31,12 +31,12 @@ If you are using an s3 or GCS bucket for object storage, include the flag `--ena
 ```
     $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=gcs
 ```  
-4. **Specify your installation information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+4. **Specify your installation information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 5. **Wait for output** You may need to wait about 15 seconds before you see any output. The installer is unpacking files and copying them over to the nodes, which can take a few seconds.
 
-Do not edit any part of the installer file except the sections specified in [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html). if you delete colons, commas, or other parts of the code, setup may fail.
+Do not edit any part of the installer file except the sections specified in [Parameters of the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html). if you delete colons, commas, or other parts of the code, setup may fail.
 
-Refer to [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html) for further information.
+Refer to [Parameters of the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html) for further information.
 
 Your `tscli cluster create` output may look something like the following:
 
@@ -210,4 +210,4 @@ Successfully deleted deployer service
 * [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
+* [Parameters of the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)

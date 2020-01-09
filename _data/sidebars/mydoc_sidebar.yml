@@ -1132,9 +1132,6 @@ entries:
     - title: Install ThoughtSpot clusters in AWS
       url: /appliance/aws/aws-cluster-install.html
       output: web,appQs,instAWS
-    - title: Set up high availability
-      url: /appliance/aws/ha-aws-efs.html
-      output: web,appQs,instAWS
 # -- end of PDF for AWS section
 # -- Uncomment out this section ONLY when generating a PDF for Azure
   - sectiontitle: Azure Installation
@@ -1299,10 +1296,10 @@ entries:
       - title: Parameters of the nodes.config file
         url: /appliance/hardware/parameters-nodesconfig.html
         output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
-      - title: Using the cluster create command
+      - title: Using the tscli cluster create command
         url: /appliance/hardware/cluster create.html
         output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
-      - title: Parameters of the cluster create command
+      - title: Parameters of the tscli cluster create command
         url: /appliance/hardware/parameters-cluster-create.html
         output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
     - levelTwoTitle: Cloud

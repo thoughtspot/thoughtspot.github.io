@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 1. SSH into a VM.
 ```
-    ssh admin@<VM-IP>
+    $ ssh -i key.pem admin@<VM-IP>
 ```
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` to configure the VMs.
 

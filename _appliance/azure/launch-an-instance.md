@@ -291,33 +291,3 @@ keep a backup to copy after any subsequent cluster creation or update." %}
     $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
     ```
 4. Repeat this process (steps 1 through 4) for each node.
-
-3. Do not reboot any of the nodes, until these changes are made to each node:
-
-   a. Open the grub file  /update/etc/default/grub in an editor:
-
-      ```
-      $ sudo vi /update/etc/default/grub
-      ```
-
-   b. Change the line:
-
-      ```
-      GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8"
-      ```
-      to:
-
-      ```
-      GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8 net.ifnames=0"
-      ```
-
-    c. Save your changes.
-
-4. Issue these commands:
-
-   ```
-   $ sudo cp /update/etc/default/grub /etc/default/
-   $ rm /usr/local/scaligent/bin/setup-net-devices.sh
-   ```
-
-5. Reboot the nodes.
