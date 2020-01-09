@@ -9,7 +9,7 @@ Before you install the mobile app, ask your ThoughtSpot administrator where you 
 
 ## Set up VPN
 
-Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign into  the app and access your ThoughtSpot cluster:
+Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign into  the app and access your ThoughtSpot cluster: 
 
 ### Per-app VPN [Recommended]
 
