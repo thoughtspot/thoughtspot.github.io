@@ -1,6 +1,6 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [12/10/2019]
+last_updated: [1/8/2020]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -34,6 +34,7 @@ Run the `tscli cluster get-config` command to get a list of the nodes to configu
 
 ### Step 3: Configure the network of nodes
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
+    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.
   * If you have  additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -141,7 +142,7 @@ If you do not have a link to download the release tarball, open a support ticket
 ```
     $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3
 ```  
-3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
   Log into any node to check the current cluster status, using the command `tscli cluster status`.
@@ -204,7 +205,7 @@ Use these references for successful installation and administration of ThoughtSp
 
 * [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

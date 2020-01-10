@@ -44,6 +44,9 @@ Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.
 * `hostname` is your specific hostname.
 * `file-name` is the name of the tarball file on your local computer.
+    
+    {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
+
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>
@@ -59,7 +62,7 @@ Use these references for successful installation and administration of ThoughtSp
 
 * [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

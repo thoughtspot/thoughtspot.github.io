@@ -45,7 +45,7 @@ The ports are on the back of the Dell appliance.
 * Connect to switches **only** the appliances (4 nodes each) that you plan to use in your cluster.
 * You must power off, or disconnect from the switch, any other nodes or appliances.<br>
     This prevents accidental configuration of incorrect nodes.
-* You must connect all nodes, even if using only one node, to a 10GbE switch.<br>
+* Connect all the nodes that you plan to use in your cluster to a 10G switch.<br>
 
   {% include note.html content="You need at least three nodes for high availability (HA). Each appliance can have up to four nodes." %}
 
@@ -69,7 +69,7 @@ Turn on power for the nodes by pressing the power button for each one; see [Dell
 
 {% include image.html file="dell-power-button.png" title="Dell power buttons" alt="The power buttons for the nodes are on the front of the appliance. There is one power button for each node." caption="Dell power buttons" %}
 
-There is one power button for each node.
+There is one power button for each node. The image above shows two of the four power buttons.
 
 ## Configure the management settings
 Next, [configure the management settings.]({{ site.baseurl }}/appliance/hardware/configure-management-dell.html)

@@ -47,13 +47,7 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 * Connect to switches **only** the appliances (4 nodes each) that you plan to use in the cluster.  
 * You must power off, or disconnect from the switch, all other appliances or nodes.<br>
 This prevents accidental configuration of incorrect nodes.  
-* You must connect all nodes, even if using only one node, to a 10G switch.
-* Verify that the connection is valid by pinging the gateway:<br>
-  Enter `ping <default-gateway-IP>`.<br>
-  Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
-```  
-    $ ping <default-gateway-IP>
-```    
+* Connect all the nodes that you plan to use in your cluster to a 10G switch.   
 
 {: id="appliance-step-2"}
 ## Step 2: Connect IPMI ports
@@ -64,17 +58,24 @@ See [Haswell port location]({{ site.baseurl }}/appliance/hardware/connect-applia
 ## Step 3: Turn on nodes
 Turn on the power to the nodes by pressing the power button; see [Appliance Power Button]({{ site.baseurl }}/appliance/hardware/connect-appliance-smc.html#smc-appliance-power-button).
 
-There is one power button for each node.
+There is one power button for each node. The images below show two of the four power buttons.
 
 {: id="smc-appliance-power-button"}
 | Haswell Appliance | &#32; &#32; &#32; | Skylake Appliance |
 | ---- | ---- | ---- |
 | ![The power button is at the front of the Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button on the front of the Haswell SMC appliance")| &#32; | ![The power button is at the front of the Skylake appliance]({{ site.baseurl }}/images/smc-appliance-skylake-power-button.png "The power button on the front of the Skylake SMC appliance") |
 
+Verify that the connection is valid and the nodes are on by pinging the gateway:<br>
+Enter `ping <default-gateway-IP>`.<br>
+Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+```  
+    $ ping <default-gateway-IP>
+```    
+
 {: id="appliance-step-4"}
 ## Step 4: Log in
 1. Connect a keyboard and the mouse to each node on the appliance.
-2. You should see a login prompt on the screen. If you don't see one or the screen isn't responsive, press the key combination **control--alt--F2** on your keyboard to bring up the login prompt.
+2. You should see a login prompt on the screen. If you don't see one or the screen isn't responsive, press the key combination **control--alt--F2** or **alt--F2** on your keyboard to bring up the login prompt.
 2. Log in using the admin user credentials for the console. If you do not know the admin credentials, ask your network administrator.
 
 ## Configure nodes
