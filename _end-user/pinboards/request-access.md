@@ -1,6 +1,6 @@
 ---
 title: [Request Access]
-last_updated: 1/3/2020
+last_updated: 1/10/2020
 summary: "If you cannot view a pinboard on ThoughtSpot, you can request access to it."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,7 +12,7 @@ If a user receives a link to a pinboard for which they have neither view nor edi
 
 {% include image.html file="sharing-requestaccess.png" title="Request access" alt="If you do not have view access to a pinboard, you can send an email requesting access to it." caption="Request access" %}
 
-The user adds an optional message explaining why they need to view or edit the pinboard, and clicks **Request access** to send an email to the pinboard owner.
+The user adds an optional message explaining why they need to view or edit the pinboard, and clicks **Request access** to send an email to the pinboard owner. The email also goes to your administrator, and to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 A message appears, telling the user who owns the pinboard:
 
