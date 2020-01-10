@@ -34,14 +34,14 @@ table.scheduler, th, td {
 }
 
 small-sidebar-version-nav {
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     margin-bottom: 25px;
     text-decoration: underline;
