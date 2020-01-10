@@ -1,7 +1,7 @@
 ---
 title: [Set up Azure for ThoughtSpot]
 keywords: Azure
-last_updated: tbd
+last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -94,7 +94,7 @@ here.
 
 ### Choose a machine size
 
-For **Choose a size**, select `E64S_V3 standard`.
+Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs.
 
 ![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
 
