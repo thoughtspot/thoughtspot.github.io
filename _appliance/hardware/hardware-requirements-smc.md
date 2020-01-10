@@ -1,6 +1,6 @@
 ---
 title: [Hardware Requirements]
-last_updated: [12/13/2019]
+last_updated: [1/9/2020]
 summary: "Learn about your SMC hardware before deploying ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,7 +16,7 @@ You can deploy ThoughtSpot on two different appliance hardware platforms: Haswel
 | <strong># of nodes</strong> | Populated with 1 to 4 nodes | Populated with 1 to 4 nodes |
 | <strong>Node specifications</strong> | Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x 2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240GB SSD, 3x 2TB HDD |
 | <strong>Max power consumption</strong> | 2000 W | 2200 W |
-| <strong>Required power input</strong> | 200-240V / 11.8 - 9.8A / 50-60Hz | 220-240 VAC  50-60 Hz |
+| <strong>Required power input</strong> | 200-240V / 11.8 - 9.8A / 50-60Hz (C13 / C14 power cords)| 220-240 VAC  50-60 Hz (C13 / C14 power cords)|
 
 {: id="haswell-front-back-diagrams"}
 ## Haswell front and back views

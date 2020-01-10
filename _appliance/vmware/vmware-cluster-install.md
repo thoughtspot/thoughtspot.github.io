@@ -46,6 +46,8 @@ Note the following parameters:
 * `hostname` is your specific hostname.
 * `file-name` is the name of the tarball file on your local computer.
 
+    {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
+
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
 ```

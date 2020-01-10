@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in AWS]
-last_updated: [1/8/2020]
+last_updated: [1/9/2020]
 summary: "Learn how to install ThoughtSpot clusters in AWS."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -36,7 +36,7 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
-1. Copy the downloaded release tarball to `/home/admin` using the following command:
+1. Copy the downloaded release tarball to `/home/admin/` using the following command:
 ```
     $ scp -i key.pem <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
 ```
@@ -44,6 +44,8 @@ Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.
 * `hostname` is your specific hostname.
 * `file-name` is the name of the tarball file on your local computer.
+
+    {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>
@@ -93,6 +95,65 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 ```
+
+```
+$ tscli cluster check
+Connecting to hosts...
+[Wed Jan  8 23:15:47 2020] START Diagnosing ssh
+[Wed Jan  8 23:15:47 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:47 2020] START Diagnosing connection
+[Wed Jan  8 23:15:47 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:47 2020] START Diagnosing zookeeper
+[Wed Jan  8 23:15:47 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:47 2020] START Diagnosing sage
+[Wed Jan  8 23:15:48 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:48 2020] START Diagnosing timezone
+[Wed Jan  8 23:15:48 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:48 2020] START Diagnosing disk
+[Wed Jan  8 23:15:48 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:48 2020] START Diagnosing cassandra
+[Wed Jan  8 23:15:48 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:15:48 2020] START Diagnosing hdfs
+[Wed Jan  8 23:16:02 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:02 2020] START Diagnosing orion-oreo
+[Wed Jan  8 23:16:02 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:02 2020] START Diagnosing memcheck
+[Wed Jan  8 23:16:02 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:02 2020] START Diagnosing ntp
+[Wed Jan  8 23:16:08 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:08 2020] START Diagnosing trace_vault
+[Wed Jan  8 23:16:09 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:09 2020] START Diagnosing postgres
+[Wed Jan  8 23:16:11 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:11 2020] START Diagnosing disk-health
+[Wed Jan  8 23:16:11 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:11 2020] START Diagnosing falcon
+[Wed Jan  8 23:16:12 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:12 2020] START Diagnosing orion-cgroups
+[Wed Jan  8 23:16:12 2020] SUCCESS
+################################################################################
+[Wed Jan  8 23:16:12 2020] START Diagnosing callosum
+/usr/lib/python2.7/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+[Wed Jan  8 23:16:12 2020] SUCCESS
+################################################################################
+```
+Your output may look something like the above. Ensure that all tables are in a `READY` state, and all diagnostics show `SUCCESS`.
 
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation

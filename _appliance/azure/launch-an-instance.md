@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 1/7/2020
+last_updated: 1/9/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -13,11 +13,7 @@ To provision ThoughtSpot in the Azure portal, access the ThoughtSpot Virtual Mac
 
 The ThoughtSpot Virtual Machine comes provisioned with the custom ThoughtSpot
 image to make hosting simple. A virtual machine is a preconfigured template that
-provides the information required to launch an instance of ThoughtSpot. It
-includes the following:
-
-- A template for the root volume for the instance (for example, an operating
-system, an appliance server, and applications).
+provides the information required to launch an instance of ThoughtSpot. It includes a root disk for the instance, which contains an operating system, application server, and other necessary software.
 
 The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
 configured, on a CentOS base image. Check with your ThoughtSpot contact to
@@ -36,17 +32,16 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 
 1. Obtain an Azure login account.
 2. Set up usage payment details with Microsoft Azure.
-3. Set up a [Resource Group]({{ site.baseurl }}#create-instance).
+3. Find your company's [Resource Group](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups). (optional--you can also create one while creating your virtual machines.)
 
 {: id="create-instance"}
 ### Create an instance
 
-Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
-on the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/).
+Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine).
 
 1. Log into the Azure portal.
 
-    In a browser, go to [http://azure.microsoft.com](http://azure.microsoft.com), and log into your Azure account.
+    In a browser, go to [https://portal.azure.com/#home](https://portal.azure.com/#home), and log into your Azure account.
 
 2. On the Azure portal homepage, hover over **Virtual machines**, and click **Create**.
 
@@ -78,7 +73,7 @@ on the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketpl
       </tr>
       <tr>
         <td><strong>6</strong></td>
-        <td>Choose <code>E64S_V3 standard</code> for your VM's size. For more information, refer to <a href="/appliance/azure/configuration-options.html">Azure configuration options</a>.</td>
+        <td>Refer to <a href="/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
       </tr>
       <tr>
         <td><strong>7</strong></td>
@@ -155,21 +150,15 @@ on the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketpl
 
 {: id="port-requirements"}
 ### Minimum required ports
-Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
-processes do not get blocked.
+Open the following ports between the User/ETL server and ThoughtSpot nodes. This ensures that the ThoughtSpot processes do not get blocked.
 
    The minimum ports needed are:
 
    | Port    | Protocol   | Service                       |
    | ------- | ---------- | ----------------------------  |
    | 22    | SSH          |  Secure Shell access          |
-   | 80    | HTTP         |  Web access                   |
    | 443   | HTTPS        |  Secure Web access            |
    | 12345 | TCP          |  ODBC and JDBC drivers access |
-   | 2201  | HTTP         |  Cluster Debugging            |
-   | 2101  | HTTP         |  Node daemon Debugging        |
-   | 4001  | HTTP         |  Data Cache Debugging         |
-
 
    {% include note.html content="Nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot requires that these ports be accessible between nodes within a cluster.  Use your discretion about whether to restrict public access or not for all nodes and all ports." %}
 
