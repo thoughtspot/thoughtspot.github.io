@@ -1,7 +1,7 @@
 ---
 title: [Prerequisites]
 summary: "Complete these prerequisites to deploy ThoughtSpot on your Dell appliance."
-last_updated: 12/16/2019
+last_updated: 1/8/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,7 +35,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Cat5 network cables. You need one for each node.</td></tr>
+<td>Cat5 network cables, for iDRAC/ management port use. You need one for each node.</td></tr>
 
 <tr>
 <td>&#10063;</td>
@@ -43,11 +43,11 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Monitor and keyboard</td></tr>
+<td>VGA Monitor and USB keyboard</td></tr>
 
 <tr>
 <td>&#10063;</td>
-<td>Networking information, for data, management IPs, DNS, timezone, and default gateway IP. Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference.</td></tr></table>
+<td>Networking information: IP addresses for data & management NICs, for up to 2 DNS servers, up to 4 NTP servers and for the default gateway. You also need to know the timezone for your cluster. Typically, your timezone is where most of the people who will use the product are. Contact your network administrator for this information, and fill out the ThoughtSpot site survey so that you have a quick reference.</td></tr></table>
 
 ## Review hardware requirements
 Next, [review hardware requirements.]({{ site.baseurl }}/appliance/hardware/hardware-requirements-dell.html)

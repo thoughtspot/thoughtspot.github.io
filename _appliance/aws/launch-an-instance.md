@@ -95,8 +95,8 @@ To install and launch ThoughtSpot, you must have the following:
     {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
 3. Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for help choosing the correct instance type for your cluster.
 4. Networking requirements: 10 GbE network bandwidth is needed between the VMs. Ensure that you have this bandwidth.
-5. Ensure that all your VMs are on the same Amazon Virtual Private Cloud (VPC) and subnetwork. This is necessary because VMs that are part of a cluster need to be accessible by each other.  Additional external access may be required to bring data in/out of the VMs to your network.
-6. Determine the number of EC2 instances you need: Based on the datasets, this number will vary. Refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
+5. Ensure that all your VMs are on the same Amazon Virtual Private Cloud (VPC) and subnetwork. This is necessary because VMs that are part of a cluster need to be accessible by each other.  Additional external access may be required to bring data in/out of the VMs to your network. Add all nodes in the same placement group.
+6. Determine the number of EC2 instances you need: Based on the datasets, this number will vary. Refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for recommended nodes for a given data size.
 
 {% include note.html content="Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2)." %}
 
@@ -158,17 +158,17 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 5. Click **Select**.
 
 5. On the **Choose an Instance Type** page, select a ThoughtSpot-supported instance type.
-   (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).)
+   (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).)
 
 6. Click **Next: Configure Instance Details**.
 
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot sets up the instances to be in the same ThoughtSpot cluster.  
 
-   **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
+   **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides read/write access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
-   Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
+   Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).
 
 9. When you are done modifying the storage size, click **Next: Add Tags**.
 
@@ -181,7 +181,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 11. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/5.2/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
+    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/latest/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
 
 12.  Click **Review and Launch**.
