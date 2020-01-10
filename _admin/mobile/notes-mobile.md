@@ -11,8 +11,8 @@ fixed issues from the previous releases, and any known issues.
 {: id="1-2-new"}
 ## 1.2 New Features and Functionality
 - R charts are now supported.
-- All of your data labels are now available on the iPad version for enhanced chart-viewing experience.
-- Quick support. If you have any issues, you can now go to the profile page and share debug logs with the ThoughtSpot mobile team.
+- Data labels are now available on the iPad version for enhanced chart viewing.
+- Quick support. If you have any issues, you can now share debug logs with the ThoughtSpot mobile team, from the profile page.
 
 {: id="1-2-fixed"}
 ## 1.2 Fixed Issues
