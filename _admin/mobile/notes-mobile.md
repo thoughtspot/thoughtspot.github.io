@@ -5,8 +5,22 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.1.2 is now available. These release notes include information about new features,
+ThoughtSpot mobile 1.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+{: id="1-2-new"}
+## 1.2 New Features and Functionality
+- R charts are now supported.
+- Data labels are now available on the iPad version for enhanced chart viewing.
+- Quick support. If you have any issues, you can now share debug logs with the ThoughtSpot mobile team, from the profile page.
+
+{: id="1-2-fixed"}
+## 1.2 Fixed Issues
+
+The following issues are fixed in the 1.2 release:
+
+- Users can interact with "View Only" filters on Pinboards.
+- Year data labels are off by one year when custom calendar settings are used.
 
 {: id="1-1-2-new"}
 ## 1.1.2 New Features and Functionality
