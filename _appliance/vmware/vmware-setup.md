@@ -6,7 +6,10 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment. Note that older versions of ESXi aren't supported due to hardware/driver incompatibility issues.
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.
+
+{% include note.html content="Older versions of ESXi aren't supported due to hardware/driver incompatibility issues." %}
+
 For each hardware node, you must:
 
 * Complete the prerequisites
