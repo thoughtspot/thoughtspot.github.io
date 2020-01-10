@@ -1,12 +1,15 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: 1/8/2020
+last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page explains how to install a ThoughtSpot cluster in a VMware VSphere
-Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.
+
+{% include note.html content="Older versions of ESXi aren't supported due to hardware/driver incompatibility issues." %}
+
+For each hardware node, you must:
 
 * Complete the prerequisites
 * Use the ThoughtSpot Open Virtualization Format (OVF) file to create
