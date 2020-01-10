@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [12/19/2019]
+last_updated: [1/8/2020]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,6 +15,7 @@ As you install your appliance, you must configure the nodes.
     $ tscli cluster get-config |& tee nodes.config
 ```
 2. Add network information for your nodes in the `nodes.config` file output, as demonstrated in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example. Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) with your specific network information.
+    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
 3. If you have  additional nodes, complete each node within the nodes.config file in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example.
 
 Do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). If you delete quotation marks, commas, or other parts of the code, setup may fail.
@@ -25,9 +26,9 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 ### Parameters of the nodes.config file
 
-**ClusterId**	The ID of your cluster, in the form yymmX0000, where yymm refers to the year and month you are creating the cluster, X functions as a separator, and 0000 is the number of the cluster, as in 0001 and 0002. For example, 1909X0001. If you have multiple clusters, ensure that each has a unique name.
+**ClusterId**	Enter the ID of your cluster that [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) provided for you. Open a ticket with ThoughtSpot Support if you do not have an ID.
 
-**ClusterName**	Name your cluster, using dashes instead of spaces. For example, TS-Company.
+**ClusterName**	Name your cluster based on the ThoughtSpot naming convention, in the form *company-clustertype-location-clusternumber*. For example, *ThoughtSpot-prod-Sunnyvale-12*.
 
 **DataNetmask**	The IP of the data netmask, in the form 000.000.000.000. For example, 255.255.252.0.
 

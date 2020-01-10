@@ -1,13 +1,13 @@
 ---
-title: [Parameters of the cluster create command]
+title: [Parameters of the tscli cluster create command]
 last_updated: [12/19/2019]
-summary: "Learn the parameters of the cluster create command."
+summary: "Learn the parameters of the tscli cluster create command."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {: id="using-cluster-create"}
-## Using the cluster create command
+## Using the tscli cluster create command
 To install your appliance, you must install the cluster.
 
 1. **Copy the release tarball** In your Terminal (Apple) or using [Winscp](https://winscp.net/eng/index.php) (Windows application), copy the downloaded release tarball to /home/admin/ and run the cluster installer as shown below.<br>
@@ -34,7 +34,7 @@ If you are using an s3 or GCS bucket for object storage, include the flag `--ena
 2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 
 Refer to [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) for further information.
-Refer to [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
+Refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) to see the expected output of the install command, `tscli cluster create`.
 
 Do not edit any part of the installer file except the sections specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create). If you delete colons, commas, or other parts of the code, setup may fail.
 
@@ -42,9 +42,9 @@ Do not edit any part of the installer file except the sections specified in [Par
 
 ### Parameters of ThoughtSpot Installer
 
-**Cluster Name** Name your cluster, using only letters and numbers. Instead of spaces, use dashes. For example, thoughtspot-cluster.
+**Cluster Name** Name your cluster based on the ThoughtSpot naming convention, in the form *company-clustertype-location-clusternumber*. For example, *ThoughtSpot-prod-Sunnyvale-12*.
 
-**Cluster ID** Enter the ID of your cluster, in the form yymmX0000, where yymm refers to the year and month you are setting up the cluster, X serves as a separator, and 0000 is the number of your cluster, as in 0001 and 0002.  For example, 1909X0001.
+**Cluster ID** Enter the ID of your cluster that [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) provided for you. Open a ticket with ThoughtSpot Support if you do not have an ID.
 
 **Host IPs**	Enter the IP addresses of all cluster hosts, in the form 000.000.000.000. For example, 192.168.7.70. Use spaces instead of commas to separate multiple IP addresses.
 
@@ -57,4 +57,4 @@ Do not edit any part of the installer file except the sections specified in [Par
 * [Configure ThoughtSpot nodes in VMware]({{ site.baseurl }}/appliance/vmware/installing-vmware.html)
 * [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html)
 * [Deploying on the Dell Appliance]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
-* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
