@@ -12,7 +12,7 @@ After you determine your configuration options, set up your virtual machines
 ## About the ThoughtSpot and Google Cloud Platform
 
 ThoughtSpot uses a custom image to populate VMs in GCP. The base image is a Centos derived
-image. Find the ThoughtSpot custom image under Custom Images in **Boot Disk Options** within your Google Compute Engine project.
+image. To find the ThoughtSpot custom image, refer to step 12 under [create an instance]({{ site.baseurl }}#create-an-instance).
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
