@@ -1,11 +1,11 @@
 ---
-title: [See the search behind a result]
-last_updated: 1/3/2020
-summary: "You can use an Answer to learn more about the data used in your search."
+title: [Drill down into your data]
+last_updated: 1/10/2020
+summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Drilling down allows you to see more information about the columns used within
+When you drill down, you see more information about the columns within
 your search. If you own a pinboard or answer, you can drill down to the data beneath.
 Users you share a pinboard or answer with can also drill down provided they _also_
 have access to the data on which the board was based. See [overview of sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html) to share your answers, pinboards, or data.
