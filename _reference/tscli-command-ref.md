@@ -2093,7 +2093,7 @@ This subcommand uses system security services daemon (SSSD), and has the followi
 
  <dlentry id="tscli-sssd-disable">
    <dt><code>tscli sssd disable</code></dt>
-    <dd></dd>
+    <dd>Disable Active Directory access.</dd>
   </dlentry>
 
   <dlentry id="tscli-sssd-set-sudo-group">
