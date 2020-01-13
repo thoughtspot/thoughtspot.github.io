@@ -12,7 +12,7 @@ After you determine your configuration options, set up your virtual machines
 ## About the ThoughtSpot and Google Cloud Platform
 
 ThoughtSpot uses a custom image to populate VMs in GCP. The base image is a Centos derived
-image. Find the ThoughtSpot custom image under Custom Images in **Boot Disk Options** within your Google Compute Engine project.
+image. To find the ThoughtSpot custom image, refer to step 12 under [create an instance]({{ site.baseurl }}#create-an-instance).
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
@@ -101,7 +101,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     | Cores         | `64 vCPU`            |
     | Memory        | `416 GB`             |
     | Extend memory | Enabled (checkmark)  |
-    | CPU platform  | `Automatic` (or select one of the preferred CPU platforms, `Intel Skylake` or `Intel Broadwell`, if available)|
+    | CPU platform  | `Automatic` (or select either one of the preferred CPU platforms, `Intel Skylake` or `Intel Broadwell`, if available.)|
 
     ![]({{ site.baseurl }}/images/gcp-3-config-machine.png "Configure CPU and memory")
 
@@ -117,7 +117,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     c. Select your ThoughtSpot project under **Show images from**.
 
-    d. Select one of the ThoughtSpot base images. The image at the top of the list is the latest one.
+    d. Select one of the ThoughtSpot base images. The image at the top of the list is the latest one. ThoughtSpot may have directly sent you an image to use through the console. If so, use that image.
 
     e. Configure the boot disk as follows:
 
@@ -145,12 +145,8 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Port    | Protocol   | Service                       |
       | ------- | ---------- | ----------------------------  |
       | 22    | SSH          |  Secure Shell access          |
-      | 80    | HTTP         |  Web access                   |
       | 443   | HTTPS        |  Secure Web access            |
       | 12345 | TCP          |  ODBC and JDBC drivers access |
-      | 2201  | HTTP         |  Cluster Debugging            |
-      | 2101  | HTTP         |  Node daemon Debugging        |
-      | 4001  | HTTP         |  Data Cache Debugging         |
 
 
 7.  Attach two 1 TB SSD drives for data storage. If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB.

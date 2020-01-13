@@ -17,9 +17,9 @@
 #
 
 destination: _site/
-url: "http://127.0.0.1:4010"
-baseurl: ""
-port: 4010
+url: "https://docs.thoughtspot.com"
+baseurl: "/6.0"
+port: 
 output: pdf
 product: mydoc
 print_title: THETITLE

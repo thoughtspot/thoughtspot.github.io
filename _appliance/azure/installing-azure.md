@@ -62,6 +62,7 @@ You can find more information on this process in the [`nodes.config` file refere
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
+    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -93,7 +94,6 @@ After you run the node configuration command, your output appears similar to the
     Setting up hostnames for all nodes
     Setting up networking interfaces on all nodes
     Setting up hosts file on all nodes
-    Setting up IPMI configuration
     Setting up NTP Servers
     Setting up Timezone
     Done setting up ThoughtSpot
@@ -143,7 +143,7 @@ Use these references for successful installation and administration of ThoughtSp
 
 * [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

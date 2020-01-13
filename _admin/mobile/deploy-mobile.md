@@ -11,13 +11,13 @@ Deploying the ThoughtSpot mobile app to your users allows them to access their d
 
 There are two options for your users to download the ThoughtSpot mobile app:
 - App Store for iOS
-- Your MDM or MAM platform
+- Your MDM platform
 
 ### App Store for iOS
 The ThoughtSpot app is available from the App Store for iOS. Your users can download it directly from there.
 
 ### Mobile device or app management platform
-There are two ways to provide the ThoughtSpot app to your users with your MDM or MAM platform:
+There are two ways to provide the ThoughtSpot app to your users with your MDM platform:
 
 #### Option 1 [Recommended]: Provide a link to the app in the App Store for iOS.
 
@@ -48,7 +48,7 @@ To upload the ThoughtSpot .ipa file to your management platform, refer to the fo
 
 #### AppConfig support
 
-The ThoughtSpot mobile app conforms to the industry standard AppConfig community and version 1.1 of the app supports the following keys. You can add these keys while deploying through your MDM or MAM platform.
+The ThoughtSpot mobile app conforms to the industry standard AppConfig community and version 1.1 of the app supports the following keys. You can add these keys while deploying through your MDM platform.
 
   |Key |Format     |Description                   |
   |-----------------|------------|-----------------------------------|
