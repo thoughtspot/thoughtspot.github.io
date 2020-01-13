@@ -2074,7 +2074,6 @@ This subcommand has the following options:
 </dl>
 
 {: id="tscli-sssd"}
-
 ### sssd
 
 ```
@@ -2085,24 +2084,24 @@ This subcommand uses system security services daemon (SSSD), and has the followi
 
 <dl>
 
-<dlentry>
+<dlentry id="tscli-sssd-enable">
   <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
   <dd>Enables system Active Directory (AD) user access on a single node. You will be
    prompted for password credentials. The user must have permission to join a
    computer or VM to the domain.</dd>
  </dlentry>
 
- <dlentry>
+ <dlentry id="tscli-sssd-disable">
    <dt><code>tscli sssd disable</code></dt>
     <dd></dd>
   </dlentry>
 
-  <dlentry>
+  <dlentry id="tscli-sssd-set-sudo-group">
     <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
     <dd>Allows <code>sudo</code> permissions for AD group.</dd>
   </dlentry>
 
-  <dlentry>
+  <dlentry id="tscli-sssd-clear-sudo-group">
     <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
     <dd>Clears any set AD sudo group.</dd>
   </dlentry>
