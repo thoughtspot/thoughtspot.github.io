@@ -15,7 +15,7 @@ Before you can install your ThoughtSpot clusters in Azure, complete these prereq
 
 {: id="cluster-install"}
 ## Install ThoughtSpot Software
-Install the cluster using the release tarball. The estimated installation time is one hour. Follow the steps in this checklist.
+Install the cluster using the ThoughtSpot software release bundle. The estimated installation time is one hour. Follow the steps in this checklist.
 
 <table>
   <tr>
@@ -32,11 +32,11 @@ Install the cluster using the release tarball. The estimated installation time i
   </tr>
 </table>
 
-Refer to your welcome letter from ThoughtSpot to find the link to download the release tarball. If you do not have a link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release tarball.
+Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release bundle.
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
-1. Copy the downloaded release tarball to `/home/admin` using the following command:
+1. Copy the downloaded release bundle to `/home/admin` using the following command:
 ```
     $ scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
 ```

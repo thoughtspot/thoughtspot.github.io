@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 12/9/2019
+last_updated: 1/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -115,9 +115,9 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     b. Click **Custom Images** from the options under **Boot disk**.
 
-    c. Select your ThoughtSpot project under **Show images from**.
+    c. Select **ThoughtSpot-images** under **Show images from**.
 
-    d. Select one of the ThoughtSpot base images. The image at the top of the list is the latest one. ThoughtSpot may have directly sent you an image to use through the console. If so, use that image.
+    d. Select one of the ThoughtSpot base images. Under the name of the image, you can see when it was created. Select the latest image. ThoughtSpot may have directly sent you an image to use through the console. If so, use that image.
 
     e. Configure the boot disk as follows:
 
@@ -127,9 +127,9 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Boot disk type  | `Standard persistent disk`|
       | Size (GB)       | `250`                     |
 
-      ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
+      {% include image.html file="gcp-selecttsimage.png" title="Select the latest ThoughtSpot image" alt="Select the latest ThoughtSpot image by looking at when the images were created to find the latest one." caption="Select the latest ThoughtSpot image" %}
 
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
+      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, select the latest one by looking at the dates of creation. Each image will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
 
     f. Click **Select** to save the boot disk configuration.
 
@@ -138,9 +138,17 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-7. Under **Networking**, open required ports.
+7. Under **Networking**, update the network interface.
 
-    These are the minimum ports you must open.
+    Set a hostname for your project or use the default hostname. Make note of your hostname so you can use it later. This is your permanent hostname.
+
+    {% include image.html file="gcp-sethostname.png" title="Set hostname" alt="Either set a hostname for your project or leave it default. This is your permanent hostname." caption="Set hostname" %}  
+
+    Update the network interface or create a new one.
+
+    {% include image.html file="gcp-setnetworkinterface.png" title="Set your network interface" alt="Update the network interface or create a new one." caption="Set your network interface" %}
+
+    These are the minimum ports you must open. Refer to [network policies]({{ site.baseurl }}/admin/setup/firewall-ports.html#required-ports-for-cluster-communication) for more information on what ports to open for intracluster operation, so that your clusters can communicate.
 
       | Port    | Protocol   | Service                       |
       | ------- | ---------- | ----------------------------  |
@@ -149,7 +157,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | 12345 | TCP          |  ODBC and JDBC drivers access |
 
 
-7.  Attach two 1 TB SSD drives for data storage. If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB.
+7.  Attach two 1 TB SSD drives for data storage. Refer to [SSD-only persistent storage]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-only-storage). If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB. Refer to [GCS and SSD persistent storage]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-and-google-cloud-storage).
 
     a. Click the **Disks** tab, and click **Add new disk**.
 

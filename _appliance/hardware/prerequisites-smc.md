@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites]
-last_updated: [12/17/2019]
+last_updated: [1/13/2020]
 summary: "Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,14 +26,14 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one for each node.</td></tr>
+<td>10GbE switch, with enabled IPv6 broadcast and multicast. You need one switch for each cluster, with one port for each node on the cluster.</td></tr>
 <tr>
 <td>&#10063;</td>
 <td>10GbE network cables, either direct attach copper (DAC) or fiber. Refer to the <a href="cable-networking.html">Cable reference</a> for more information to decide between the two types.</td></tr>
 
 <tr>
 <td>&#10063;</td>
-<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management. You need one for each node.</td></tr>
+<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management. You need one for each cluster.</td></tr>
 
 <tr>
 <td>&#10063;</td>

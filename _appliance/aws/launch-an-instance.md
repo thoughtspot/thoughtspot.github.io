@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 12/17/2019
+last_updated: 1/13/2020
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -26,7 +26,7 @@ Follow these steps to set up your ThoughtSpot VMs in AWS.
   <td><a href="launch-an-instance#security-groups">5. Configure security groups.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#network-ports">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+  <td><a href="launch-an-instance#security-groups">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
 <tr>
   <td>&#10063;</td>
   <td><a href="launch-an-instance#install-cluster">7. Configure your nodes and install the cluster.</a></td></tr>
@@ -43,7 +43,7 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
-The ThoughtSpot AMI has specific applications on a CentOS base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
+The ThoughtSpot AMI has specific applications on a base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
 {: id="prerequisites"}
 ## Prerequisites

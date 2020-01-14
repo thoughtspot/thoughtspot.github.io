@@ -6,9 +6,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="install-cluster"}
-Install the cluster using the release tarball. Installation takes approximately one hour. Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
+Install the cluster using the ThoughtSpot software release bundle. Installation takes approximately one hour. Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
 
-Refer to your welcome letter from ThoughtSpot to find the link to download the release tarball. If you do not have a link to download the release tarball, open a support ticket at [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to access the release tarball.
+Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link to download the release bundle, open a support ticket at [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to access the release bundle.
 
 Follow the steps in this checklist to install your cluster.
 
@@ -29,7 +29,7 @@ Follow the steps in this checklist to install your cluster.
 
 {: id="install-step-1"}
 ## Step 1: Run the installer
-1. Copy the downloaded release tarball to `/home/admin`:<br>
+1. Copy the downloaded release bundle to `/home/admin`:<br>
   Run `scp <release-number> admin@<hostname>:/home/admin/<file-name>`. Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot installation, such as `6.0`, `5.3`, `5.3.1`, and so on.
 * `hostname` is your network hostname. Ask your network administrator if you do not know your hostname.

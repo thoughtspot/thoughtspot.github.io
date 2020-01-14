@@ -5,13 +5,13 @@ summary: "Install your clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Install the cluster using the release tarball. Installation takes approximately one hour. Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
+Install the cluster using the ThoughtSpot software release bundle. Installation takes approximately one hour. Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
 
-Refer to your welcome letter from ThoughtSpot to find the link to download the release tarball. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.
+Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you have not received a link to download the release bundle, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release bundle.
 
 {: id="run-installer"}
 ## Step 1. Run the Installer
-1. Copy the downloaded release tarball to `/home/admin`.
+1. Copy the downloaded release bundle to `/home/admin`.
 Run `scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>`.
 
     Note the following parameters:

@@ -1,12 +1,12 @@
 ---
 title: [Overview]
 
-last_updated: tbd
+last_updated: 1/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can install a ThoughtSpot cluster on a hardware appliance, cloud service, or VMware appliance.
-All ThoughtSpot nodes need to be on the same platform and same subnet with no connectivity blocked between any two nodes. 
+All ThoughtSpot nodes need to be on the same platform and same subnet with no connectivity blocked between any two nodes. You can have multiple clusters on multiple platforms, but you cannot host one cluster on multiple platforms.
 
 This guide instructs you how to prepare each of the following:
 

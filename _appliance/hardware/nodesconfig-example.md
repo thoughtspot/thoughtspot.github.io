@@ -1,6 +1,6 @@
 ---
 title: [The nodes.config file]
-last_updated: [1/8/2020]
+last_updated: [1/13/2020]
 summary: "Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -24,32 +24,32 @@ Do not edit any part of the nodes.config file except the sections explained in [
 
 ### Autodiscovery of one node
 ```
-$ tscli cluster get-config |& tee nodes.config  
+$ tscli cluster get-config |& tee nodes.config 
 {  
- "ClusterId": ""  
- "ClusterName": ""  
- "DataNetmask": ""  
- "DataGateway": "",  
- "IPMINetmask": "",  
- "IPMIGateway": "",  
- "Timezone": "",  
- "NTPServers": "",  
- "DNS": “”,  
-  "SearchDomains": "",  
-  "Nodes": {  	  
-     "ac:1f:6b:8a:77:f6": {  
-   "NodeId": "ac:1f:6b:8a:77:f6",  
-  "Hostname": "",  
-   "DataIface": {  
-   "Name": "eth2",  
-    "IPv4": "",  
-  },  
-  "IPMI": {  
-    "IPv4": ""  
-  }
-  }
-}
-}
+  "ClusterId": "",
+   "ClusterName": "",
+   "DataNetmask": "",
+   "DataGateway": "",
+   "IPMINetmask": "",
+   "IPMIGateway": "",
+   "Timezone": "",
+   "NTPServers": ",
+   "DNS": "",
+   "SearchDomains": "",
+   "Nodes": {
+     "06:83:1f:f8:99:9e": {
+       "NodeId": "06:83:1f:f8:99:9e",
+       "Hostname": "",
+       "DataIface": {
+         "Name": "eth0",
+         "IPv4": ""
+       },
+       "IPMI": {
+         "IPv4": ""
+       }
+     }
+   }
+ }
 ```
 {: id="example-node-autodiscovery"}
 
@@ -57,8 +57,8 @@ $ tscli cluster get-config |& tee nodes.config
 ```
 $ vim nodes.config    
 {  
-"ClusterId": "190905X0001",  
-  "ClusterName": "TS-Company",  
+"ClusterId": "",  
+  "ClusterName": "",  
   "DataNetmask": "255.255.252.0",  
   "DataGateway": "192.168.4.1",  
   "IPMINetmask": "255.255.252.0",  

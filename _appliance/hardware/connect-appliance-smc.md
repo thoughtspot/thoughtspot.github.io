@@ -65,7 +65,7 @@ There is one power button for each node. The images below show two of the four p
 | ---- | ---- | ---- |
 | ![The power button is at the front of the Haswell appliance.]({{ site.baseurl }}/images/smc-haswell-power-button-new.png "The power button on the front of the Haswell SMC appliance")| &#32; | ![The power button is at the front of the Skylake appliance]({{ site.baseurl }}/images/smc-appliance-skylake-power-button.png "The power button on the front of the Skylake SMC appliance") |
 
-Check the health of the NIC by inspecting your appliance's LEDs. There should be a steady green light for the 100MB/s connection, a steady amber or orange light for the 10G/s connection, and a blinking LED to indicate traffic.<br>
+Check the health of the NIC by inspecting your appliance's LEDs. There should be a steady green light for the 100MB/s or 1Gb/s management NIC connection, a steady amber or orange light for the 10G/s connection, and a blinking LED on both NICs to indicate live traffic.<br>
 
 After the LEDs are the correct colors, verify that the connection is valid and the nodes are on by pinging the gateway:<br>
 Enter `ping <default-gateway-IP>`.<br>
