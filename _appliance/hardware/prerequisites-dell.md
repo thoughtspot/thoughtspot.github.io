@@ -1,7 +1,7 @@
 ---
 title: [Prerequisites]
 summary: "Complete these prerequisites to deploy ThoughtSpot on your Dell appliance."
-last_updated: 1/8/2020
+last_updated: 1/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ Ensure that you have the following items, information, and understanding of poli
 <table>
 <tr>
 <td>&#10063;</td>
-<td>10gbE switch with IPv6 broadcast and multicast enabled. You need one switch for each node.</td></tr>
+<td>10gbE switch with IPv6 broadcast and multicast enabled. You need one switch for each cluster, with one port for each node on the cluster.</td></tr>
 
 <tr>
 <td>&#10063;</td>

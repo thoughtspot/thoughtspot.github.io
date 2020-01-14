@@ -16,7 +16,7 @@ image to make hosting simple. A virtual machine is a preconfigured template that
 provides the information required to launch an instance of ThoughtSpot. It includes a root disk for the instance, which contains an operating system, application server, and other necessary software.
 
 The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
-configured, on a CentOS base image. Check with your ThoughtSpot contact to
+configured, on a base image. Check with your ThoughtSpot contact to
 learn about the latest version of the ThoughtSpot Virtual Machine.
 
 Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact

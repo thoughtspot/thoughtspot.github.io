@@ -78,7 +78,10 @@ Run the `tscli cluster get-config` command to get a template for network configu
 
 {: id="node-step-4"}
 ## Step 4: Prepare node configuration
-1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
+    ```
+    $ vim nodes.config
+    ```
     {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
