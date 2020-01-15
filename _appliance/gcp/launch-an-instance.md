@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 1/13/2020
+last_updated: 1/14/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -119,6 +119,10 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     d. Select one of the ThoughtSpot base images. Under the name of the image, you can see when it was created. Select the latest image. ThoughtSpot may have directly sent you an image to use through the console. If so, use that image.
 
+    {% include image.html file="gcp-selecttsimage.png" title="Select the latest ThoughtSpot image" alt="Select the latest ThoughtSpot image by looking at when the images were created to find the latest one." caption="Select the latest ThoughtSpot image" %}
+
+    {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, select the latest one by looking at the dates of creation. Each image will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches. Contact ThoughtSpot Support if you are unsure which image to use." %}
+
     e. Configure the boot disk as follows:
 
       | Setting         | Value                     |
@@ -127,10 +131,6 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Boot disk type  | `Standard persistent disk`|
       | Size (GB)       | `250`                     |
 
-      {% include image.html file="gcp-selecttsimage.png" title="Select the latest ThoughtSpot image" alt="Select the latest ThoughtSpot image by looking at when the images were created to find the latest one." caption="Select the latest ThoughtSpot image" %}
-
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, select the latest one by looking at the dates of creation. Each image will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
-
     f. Click **Select** to save the boot disk configuration.
 
 6.  Back on the main configuration page, click to expand the advanced configuration options
@@ -138,11 +138,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-7. Under **Networking**, update the network interface.
-
-    Set a hostname for your project or use the default hostname. Make note of your hostname so you can use it later. This is your permanent hostname.
-
-    {% include image.html file="gcp-sethostname.png" title="Set hostname" alt="Either set a hostname for your project or leave it default. This is your permanent hostname." caption="Set hostname" %}  
+7. Under **Networking**, update the network interface. 
 
     Update the network interface or create a new one.
 
