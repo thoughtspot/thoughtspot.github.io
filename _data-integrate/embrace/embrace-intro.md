@@ -6,7 +6,7 @@ summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot's analysis and visualization features, without moving the data into ThoughtSpot. If you decide later you want to copy your data into ThoughtSpot, you can also do that with Embrace.
+If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot's analysis and visualization features, without moving the data into ThoughtSpot.
 
 Embrace supports the following external databases:
 - Snowflake
@@ -22,40 +22,32 @@ You create a connection to the external database, choosing the columns from each
 - Eliminate the need to move data into ThoughtSpot for analysis.
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
-- Set up and schedule sync of data into ThoughtSpot.
 - Connect to multiple external databases.
 
-## Embrace modes
+### Features in Embrace
 
-Embrace has two operating modes:
-- **Linked**: ThoughtSpot queries your data in the external database.
-- **Synced**: ThoughtSpot queries a copy of your data stored in ThoughtSpot.
+The following features are available in Embrace:
 
-When you create your connection to an external database, by default, it is a **Linked** connection. If you want to copy the external data into ThoughtSpot, you must sync the data. The features available with Linked and Synced tables are slightly different.
+- *Simple Search*
+- *Complex searches like Versus, Inline Subquerying, Growth*
+- *Search Suggestions for column names*
+- *Search Suggestions for column values*
+- *Headlines at the bottom that summarize tables*
+- *All Chart Types & Configurations*
+- *Table and Column Remapping*
+- *Indexing of table columns*
 
-### Features in Embrace modes
+The following features are NOT available in Embrace:
 
-| Feature |  Linked Tables | Synced Tables |
-|---|---|---|
-| *Simple Search* | Yes | Yes |
-| *Complex searches like Versus, Inline Subquerying, Growth* | Yes | Yes |
-| *Search Suggestions for column names* | Yes | Yes |
-| *Search Suggestions for column values* | Yes | Yes |
-| *Headlines at the bottom that summarize tables* | Yes | Yes |
-| *All Chart Types & Configurations* | Yes | Yes |
-| *SpotIQ Instant Insights* | No | Yes |
-| *SpotIQ pre-computed insights* | No | Yes |
-| *Table and Column Remapping* | Yes | N/A |
-| *Custom Calendar* | No | Yes |
-| *Materialized Views* | No | Yes |
-| *Indexing of table columns* | Yes | Yes |
+- *SpotIQ Instant Insights*
+- *SpotIQ pre-computed insights*
+- *Custom Calendar*
+- *Materialized Views*
 
 ## Next steps
 
 -   **[Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external database.
-- **[Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html)**
-Set your connection to copy tables from the external database into ThoughtSpot.
 -   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
 Edit, remap or delete a connection to tables in an external database.
 - **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  

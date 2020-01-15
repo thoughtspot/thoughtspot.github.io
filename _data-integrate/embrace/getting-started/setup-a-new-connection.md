@@ -33,8 +33,6 @@ To add a new connection:
 
    Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
    - Search your external database, by clicking **Search now**.
-   - Sync the data from your external database into ThoughtSpot, by clicking **Sync now**.
-   - Schedule a regular time to sync the data from your external database, by clicking **Schedule sync**.
 
    No matter which option you choose here, you can do any of them at any time later.
 
@@ -42,7 +40,7 @@ To add a new connection:
 
 The connection you just created is a link to the external data source. If there are any joins in the selected tables of the external data source, those are imported into ThoughtSpot.
 
-You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database. To copy your external tables into ThoughtSpot, you must sync them. For details on how to sync tables and columns, see: [Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html#).
+You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database. 
 
 Not all of ThoughtSpot's features are supported with linked tables. For details, see: [features available in embrace modes]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html#features-available-in-embrace-modes).
 
