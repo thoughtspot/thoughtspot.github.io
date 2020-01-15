@@ -1,15 +1,15 @@
 ---
 title: Answer Explorer
-summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily explore your data.
-last_updated: 1/3/2020
+summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
+last_updated: 1/14/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can access Answer Explorer from any Answer in a Pinboard. Answer Explorer is only available for answers within Pinboards. Click the **Explore** button that appears when you hover over any Answer.
+You can access Answer Explorer from any Answer in a Pinboard. Click the **Explore** button that appears when you hover over any Answer.
 
 {% include image.html file="explore-button.png" title="The Explore button" alt="The Explore button appears when you hover over an Answer in a Pinboard." caption="The Explore button" %}
 
-The Answer expands to fill your screen, and the **Explore this data** column appears.
+The Answer expands to fill your screen, and the **Explore this data** menu appears.
 
 {% include image.html file="explore-fullscreen.png" title="Explore this data" alt="After you click Explore, the Answer expands to full screen." caption="Explore this data" %}
 
@@ -17,7 +17,7 @@ You can explore your data in several different ways, using [filters]({{ site.bas
 
 You can also Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline}. You cannot go back one step at a time if you Drill down directly on an Answer, without using Answer Explorer.
 
-Refer to [see the search behind a result]({{ site.baseurl }}/complex-search/drill-down.html).
+See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 
 {: id="explore-filters"}
 ## Filters
@@ -45,7 +45,14 @@ If you want to see *quantity* instead of *sales*, click **Show more** and select
 
 {: id="explore-comparisons"}
 ## Comparisons
-Use **Comparisons** to easily perform a *versus* analysis. Answer Explorer might suggest you compare your best- and worst-performing products, for example.
+Use **Comparisons** to easily perform a *versus* analysis. For example, Answer Explorer might suggest you compare your best- and worst-performing products.
 
 ## Save your new answer
-When you find a valuable insight using Answer Explorer, you may want to save that Answer instead of trying to recreate it in the **Search** bar. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it, or select **Download** to download an image of your current visualization. Otherwise, when you exit the **Explore** menu by clicking the *X* icon, the Answer returns to its original state.
+When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the **Search** bar.
+1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}.
+2. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it.
+3. Alternatively, select **Download** to download an image of your current visualization.
+
+You can also **pin** the current Answer to any Pinboard you have **edit** access to. Click the **pin** icon ![]({{ site.baseurl }}/images/icon-pin.png){: .inline} and select a Pinboard.
+
+Otherwise, the Answer returns to its original state when you exit the **Explore** menu by clicking the *X* icon.
