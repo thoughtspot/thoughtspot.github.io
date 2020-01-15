@@ -39,6 +39,7 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 ```
+Ensure that the cluster is `RUNNING` and that the Database and Search Engine are `READY`.
 
 ```
 $ tscli cluster check
@@ -97,7 +98,7 @@ Connecting to hosts...
 [Wed Jan  8 23:16:12 2020] SUCCESS
 ################################################################################
 ```
-Your output may look something like the above. Ensure that all tables are in a `READY` state, and all diagnostics show `SUCCESS`.
+Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
 
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation

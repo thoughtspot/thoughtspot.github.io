@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in GCP]
-last_updated: [12/12/2019]
+last_updated: [1/14/2020]
 summary: "Learn how to install ThoughtSpot clusters in GCP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -36,9 +36,14 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
-1. Copy the downloaded release bundle to `/home/admin` using the following command:
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
+
+1. Copy the downloaded release bundle to `/export/sdc1/TS_TASKS/install` using the following command:
 ```
-    $ scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
+    $ scp <release-number>.tar.gz admin@<hostname>:/export/sdc1/TS_TASKS/install/<file-name>
 ```
 Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.
@@ -47,6 +52,23 @@ Note the following parameters:
 
     {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
 
+2. Alternatively, use `tscli fileserver download-release` to download the release bundle.<br>
+You must [configure the fileserver]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-fileserver) by running `tscli fileserver configure` before you can download the release.<br>
+    ```
+    $ tscli fileserver download-release <release-number> --user <username> --out <release-location>
+    ```
+Note the following parameters:
+* `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 5.3.1, 6.0, and so on.
+* `username` is the username for the fileserver that you set up earlier, when configuring the fileserver.
+* `release-location` is the location path of the release bundle on your local machine. For example, `/export/sdc1/TS_TASKS/install/6.0.tar.gz`.
+
+3. Verify the checksum to ensure you have the correct release.<br>
+Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
+    ```
+    $ md5sum -c <release-number>.tar.gz.MD5checksum
+    ```
+
+    Your output says `ok` if you have the correct release.
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>

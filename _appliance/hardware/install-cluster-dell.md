@@ -1,7 +1,7 @@
 ---
 title: [Install Cluster]
 summary: "Install your ThoughtSpot cluster(s) on your Dell appliance."
-last_updated: 1/9/2020
+last_updated: 1/14/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,17 +29,39 @@ Follow the steps in this checklist to install your cluster.
 
 {: id="install-step-1"}
 ## Step 1: Run the installer
-1. Copy the downloaded release bundle to `/home/admin`:<br>
-  Run `scp <release-number> admin@<hostname>:/home/admin/<file-name>`. Note the following parameters:
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
+
+1. Copy the downloaded release bundle to `/export/sdb1/TS_TASKS/install`:<br>
+  Run `scp <release-number> admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>`. Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot installation, such as `6.0`, `5.3`, `5.3.1`, and so on.
 * `hostname` is your network hostname. Ask your network administrator if you do not know your hostname.
 * `file-name` is the name of the tarball file on your local computer.
 ```
-  $ scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
+  $ scp <release-number>.tar.gz admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>
 ```
 
     {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
 
+2. Alternatively, use `tscli fileserver download-release` to download the release bundle.<br>
+You must [configure the fileserver]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-fileserver) by running `tscli fileserver configure` before you can download the release.<br>
+    ```
+    $ tscli fileserver download-release <release-number> --user <username> --out <release-location>
+    ```
+Note the following parameters:
+* `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 5.3.1, 6.0, and so on.
+* `username` is the username for the fileserver that you set up earlier, when configuring the fileserver.
+* `release-location` is the location path of the release bundle on your local machine. For example, `/export/sdb1/TS_TASKS/install/6.0.tar.gz`.
+
+3. Verify the checksum to ensure you have the correct release.<br>
+Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
+    ```
+    $ md5sum -c <release-number>.tar.gz.MD5checksum
+    ```
+
+    Your output says `ok` if you have the correct release.
 2. Create the cluster using `tscli cluster create <release-number>`.
 ```
     $ tscli cluster create <release.number>.tar.gz
@@ -80,6 +102,8 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 ```
+Ensure that the cluster is `RUNNING` and that the Database and Search Engine are `READY`.
+
 
 ```
 $ tscli cluster check
@@ -138,7 +162,7 @@ Connecting to hosts...
 [Wed Jan  8 23:16:12 2020] SUCCESS
 ################################################################################
 ```
-Your output may look something like the above. Ensure that all tables are in a `READY` state, and all diagnostics show `SUCCESS`.
+Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
 
 {: id="install-step-3"}
 ## Step 3: Finalize installation

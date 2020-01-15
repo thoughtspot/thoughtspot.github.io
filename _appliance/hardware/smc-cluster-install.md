@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot Clusters on the SMC Appliance]
-last_updated: [1/9/2020]
+last_updated: [1/14/2020]
 summary: "Install your clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,26 +11,49 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 {: id="run-installer"}
 ## Step 1. Run the Installer
-1. Copy the downloaded release bundle to `/home/admin`.
-Run `scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>`.
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
+
+2. Copy the downloaded release bundle to `/export/sdb1/TS_TASKS/install`.
+Run `scp <release-number>.tar.gz admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>`.
 
     Note the following parameters:
     * `release-number` is the release number of your ThoughtSpot installation, such as `6.0`, `5.3`, `5.3.1`, and so on.
     * `hostname` is your specific hostname.
     * `file-name` is the name of the tarball file on your local machine.
     ```
-    $ scp <release-number>.tar.gz admin@<hostname>:/home/admin/<file-name>
+    $ scp <release-number>.tar.gz admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>
     ```
 
     {% include note.html content="You can use another secure copy method, if you prefer a method other than the <code>scp</code> command." %}
 
-2. Create the cluster.<br>
+2. Alternatively, use `tscli fileserver download-release` to download the release bundle.<br>
+You must [configure the fileserver]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-fileserver) by running `tscli fileserver configure` before you can download the release.<br>
+    ```
+    $ tscli fileserver download-release <release-number> --user <username> --out <release-location>
+    ```
+Note the following parameters:
+* `release-number` is the release number of your ThoughtSpot instance, such as 5.3, 5.3.1, 6.0, and so on.
+* `username` is the username for the fileserver that you set up earlier, when configuring the fileserver.
+* `release-location` is the location path of the release bundle on your local machine. For example, `/export/sdb1/TS_TASKS/install/6.0.tar.gz`.
+
+3. Verify the checksum to ensure you have the correct release.<br>
+Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
+    ```
+    $ md5sum -c <release-number>.tar.gz.MD5checksum
+    ```
+
+    Your output says `ok` if you have the correct release.
+
+3. Create the cluster.<br>
 Run `tscli cluster create <release-number>`.
 ```
     $ tscli cluster create <release-number>.tar.gz
 ```
 
-3. Edit the output using your specific cluster information. For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
+4. Edit the output using your specific cluster information. For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
 
@@ -67,6 +90,7 @@ Number of tables in BUILDING_AND_NOT_SERVING state: 0
 Number of tables in BUILDING_AND_SERVING state: 128
 Number of tables in WILL_NOT_INDEX state: 0
 ```
+Ensure that the cluster is `RUNNING` and that the Database and Search Engine are `READY`.
 
 ```
 $ tscli cluster check
@@ -125,7 +149,7 @@ Connecting to hosts...
 [Wed Jan  8 23:16:12 2020] SUCCESS
 ################################################################################
 ```
-Your output may look something like the above. Ensure that all tables are in a `READY` state, and all diagnostics show `SUCCESS`.
+Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
 ## Step 3. Finalize Installation
 
 After the cluster status changes to “Ready,” sign into the ThoughtSpot application on your browser.<br>
