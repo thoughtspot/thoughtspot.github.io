@@ -1114,221 +1114,221 @@ entries:
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
  # -- Uncomment out this section ONLY when generating a PDF for AWS
-  - sectiontitle: AWS Installation
-    output: web,instAWS
-    sectionitems:
-    - title: Configuration options
-      url: /appliance/aws/configuration-options.html
-      output: web,appQs,instAWS
-    - title: Set up ThoughtSpot resources for AWS
-      url: /appliance/aws/launch-an-instance.html
-      output: web,appQs,instAWS
-    - title: Prepare AWS VMs for ThoughtSpot
-      url: /appliance/aws/aws-prepare-vms.html
-      output: web,appQs,instAWS
-    - title: Configure ThoughtSpot nodes in AWS
-      url: /appliance/aws/installing-aws.html
-      output: web,appQs,instAWS
-    - title: Install ThoughtSpot clusters in AWS
-      url: /appliance/aws/aws-cluster-install.html
-      output: web,appQs,instAWS
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instAWS
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instAWS
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instAWS
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instAWS
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instAWS
+#  - sectiontitle: AWS Installation
+#    output: web,instAWS
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/aws/configuration-options.html
+#      output: web,appQs,instAWS
+#    - title: Set up ThoughtSpot resources for AWS
+#      url: /appliance/aws/launch-an-instance.html
+#      output: web,appQs,instAWS
+#    - title: Prepare AWS VMs for ThoughtSpot
+#      url: /appliance/aws/aws-prepare-vms.html
+#      output: web,appQs,instAWS
+#    - title: Configure ThoughtSpot nodes in AWS
+#      url: /appliance/aws/installing-aws.html
+#      output: web,appQs,instAWS
+#    - title: Install ThoughtSpot clusters in AWS
+#      url: /appliance/aws/aws-cluster-install.html
+#      output: web,appQs,instAWS
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAWS
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
 # -- Uncomment out this section ONLY when generating a PDF for Azure
-  - sectiontitle: Azure Installation
-    output: web,instAzure
-    sectionitems:
-    - title: Configuration options
-      url: /appliance/azure/configuration-options.html
-      output: web,appQs,instAzure
-    - title: Set up ThoughtSpot in Azure
-      url: /appliance/azure/launch-an-instance.html
-      output: web,appQs,instAzure
-    - title: Configure ThoughtSpot nodes in Azure
-      url: /appliance/azure/installing-azure.html
-      output: web,appQs,instAzure
-    - title: Install ThoughtSpot clusters in Azure
-      url: /appliance/azure/azure-cluster-install.html
-      output: web,appQs,instAzure
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instAzure
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instAzure
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instAzure
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instAzure
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instAzure
+#  - sectiontitle: Azure Installation
+#    output: web,instAzure
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/azure/configuration-options.html
+#      output: web,appQs,instAzure
+#    - title: Set up ThoughtSpot in Azure
+#      url: /appliance/azure/launch-an-instance.html
+#      output: web,appQs,instAzure
+#    - title: Configure ThoughtSpot nodes in Azure
+#      url: /appliance/azure/installing-azure.html
+#      output: web,appQs,instAzure
+#    - title: Install ThoughtSpot clusters in Azure
+#      url: /appliance/azure/azure-cluster-install.html
+#      output: web,appQs,instAzure
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAzure
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAzure
 # -- end of PDF for Azure section
 # -- Uncomment out this section ONLY when generating a PDF for GCP
-  - sectiontitle: GCP Installation
-    output: web,instGCP
-    sectionitems:
-    - title: Configuration options
-      url: /appliance/gcp/configuration-options.html
-      output: web,appQs,instGCP
-    - title: Set up ThoughtSpot in GCP
-      url: /appliance/gcp/launch-an-instance.html
-      output: web,appQs,instGCP
-    - title: Configure ThoughtSpot nodes in GCP
-      url: /appliance/gcp/installing-gcp.html
-      output: web,appQs,instGCP
-    - title: Install ThoughtSpot clusters in GCP
-      url: /appliance/gcp/gcp-cluster-install.html
-      output: web,appQs,instGCP
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instGCP
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instGCP
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instGCP
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instGCP
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instGCP
+#  - sectiontitle: GCP Installation
+#    output: web,instGCP
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/gcp/configuration-options.html
+#      output: web,appQs,instGCP
+#    - title: Set up ThoughtSpot in GCP
+#      url: /appliance/gcp/launch-an-instance.html
+#      output: web,appQs,instGCP
+#    - title: Configure ThoughtSpot nodes in GCP
+#      url: /appliance/gcp/installing-gcp.html
+#      output: web,appQs,instGCP
+#    - title: Install ThoughtSpot clusters in GCP
+#      url: /appliance/gcp/gcp-cluster-install.html
+#      output: web,appQs,instGCP
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instGCP
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instGCP
 # -- end of PDF for GCP section
 # -- Uncomment out this section ONLY when generating a PDF for VMware
-  - sectiontitle: VMware Installation
-    output: web,instVMware
-    sectionitems:
-    - title: Configuration overview
-      url: /appliance/vmware/vmware-intro.html
-      output: web,appQs,instVMware
-    - title: Set up ThoughtSpot in VMware
-      url: /appliance/vmware/vmware-setup.html
-      output: web,appQs,instVMware
-    - title: Configure ThoughtSpot nodes in VMware
-      url: /appliance/vmware/installing-vmware.html
-      output: web,appQs,instVMware
-    - title: Install ThoughtSpot clusters in VMware
-      url: /appliance/vmware/vmware-cluster-install.html
-      output: web,appQs,instVMware
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instVMware
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instVMware
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instVMware
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instVMware
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instVMware
+#  - sectiontitle: VMware Installation
+#    output: web,instVMware
+#    sectionitems:
+#    - title: Configuration overview
+#      url: /appliance/vmware/vmware-intro.html
+#      output: web,appQs,instVMware
+#    - title: Set up ThoughtSpot in VMware
+#      url: /appliance/vmware/vmware-setup.html
+#      output: web,appQs,instVMware
+#    - title: Configure ThoughtSpot nodes in VMware
+#      url: /appliance/vmware/installing-vmware.html
+#      output: web,appQs,instVMware
+#    - title: Install ThoughtSpot clusters in VMware
+#      url: /appliance/vmware/vmware-cluster-install.html
+#      output: web,appQs,instVMware
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instVMware
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instVMware
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
-  - sectiontitle: Dell Installation
-    output: web,appQs,instDell
-    sectionitems:
-    - title: Deploying on the Dell appliance
-      url: /appliance/hardware/installing-dell.html
-      output: web,appQs,instDell
-    - title: Prerequisites
-      url: /appliance/hardware/prerequisites-dell.html
-      output: web,appQs,instDell
-    - title: Hardware requirements
-      url: /appliance/hardware/hardware-requirements-dell.html
-      output: web,appQs,instDell
-    - title: Connect the appliance
-      url: /appliance/hardware/connect-appliance-dell.html
-      output: web,appQs,instDell
-    - title: Configure management settings
-      url: /appliance/hardware/configure-management-dell.html
-      output: web,appQs,instDell
-    - title: Configure nodes
-      url: /appliance/hardware/configure-nodes-dell.html
-      output: web,appQs,instDell
-    - title: Install cluster
-      url: /appliance/hardware/install-cluster-dell.html
-      output: web,appQs,instDell
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instDell
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instDell
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instDell
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instDell
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instDell
-    - title: Cable reference
-      url: /appliance/hardware/cable-networking.html
-      output: web,appQs,instDell
+#  - sectiontitle: Dell Installation
+#    output: web,appQs,instDell
+#    sectionitems:
+#    - title: Deploying on the Dell appliance
+#      url: /appliance/hardware/installing-dell.html
+#      output: web,appQs,instDell
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-dell.html
+#      output: web,appQs,instDell
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-dell.html
+#      output: web,appQs,instDell
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure management settings
+#      url: /appliance/hardware/configure-management-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-dell.html
+#      output: web,appQs,instDell
+#    - title: Install cluster
+#      url: /appliance/hardware/install-cluster-dell.html
+#      output: web,appQs,instDell
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instDell
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instDell
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instDell
 # -- end of PDF for Dell section
 # -- Uncomment out this section ONLY when generating a PDF for SMC
-  - sectiontitle: SMC Installation
-    output: web,appQs,instSMC
-    sectionitems:
-    - title: Deploying on the SMC appliance
-      url: /appliance/hardware/installing-the-smc.html
-      output: web,appQs,instSMC
-    - title: Prerequisites
-      url: /appliance/hardware/prerequisites-smc.html
-      output: web,appQs,instSMC
-    - title: Hardware requirements
-      url: /appliance/hardware/hardware-requirements-smc.html
-      output: web,appQs,instSMC
-    - title: Connect the appliance
-      url: /appliance/hardware/connect-appliance-smc.html
-      output: web,appQs,instSMC
-    - title: Configure nodes
-      url: /appliance/hardware/configure-nodes-smc.html
-      output: web,appQs,instSMC
-    - title: Install cluster
-      url: /appliance/hardware/smc-cluster-install.html
-      output: web,appQs,instSMC
-    - title: The nodes.config file
-      url: /appliance/hardware/nodesconfig-example.html
-      output: web,appQs,instSMC
-    - title: Parameters of the nodes.config file
-      url: /appliance/hardware/parameters-nodesconfig.html
-      output: web,appQs,instSMC
-    - title: Using the cluster create command
-      url: /appliance/hardware/cluster-create.html
-      output: web,appQs,instSMC
-    - title: Parameters of the cluster create command
-      url: /appliance/hardware/parameters-cluster-create.html
-      output: web,appQs,instSMC
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs,instSMC
-    - title: Cable reference
-      url: /appliance/hardware/cable-networking.html
-      output: web,appQs,instSMC
+#  - sectiontitle: SMC Installation
+#    output: web,appQs,instSMC
+#    sectionitems:
+#    - title: Deploying on the SMC appliance
+#      url: /appliance/hardware/installing-the-smc.html
+#      output: web,appQs,instSMC
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-smc.html
+#      output: web,appQs,instSMC
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-smc.html
+#      output: web,appQs,instSMC
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-smc.html
+#      output: web,appQs,instSMC
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-smc.html
+#      output: web,appQs,instSMC
+#    - title: Install cluster
+#      url: /appliance/hardware/smc-cluster-install.html
+#      output: web,appQs,instSMC
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instSMC
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instSMC
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instSMC
 # -- end of PDF for SMC section
   - sectiontitle: Deploy
     output: web,appQs

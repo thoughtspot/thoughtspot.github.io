@@ -28,21 +28,21 @@ You create a connection to the external database, choosing the columns from each
 
 The following features are available in Embrace:
 
-- *Simple Search*
-- *Complex searches like Versus, Inline Subquerying, Growth*
-- *Search Suggestions for column names*
-- *Search Suggestions for column values*
-- *Headlines at the bottom that summarize tables*
-- *All Chart Types & Configurations*
-- *Table and Column Remapping*
-- *Indexing of table columns*
+- Simple Search
+- Complex searches like Versus, Inline Subquerying, Growth
+- Search Suggestions for column names
+- Search Suggestions for column values
+- Headlines at the bottom that summarize tables
+- All Chart Types & Configurations
+- Table and Column Remapping
+- Indexing of table columns
 
 The following features are NOT available in Embrace:
 
-- *SpotIQ Instant Insights*
-- *SpotIQ pre-computed insights*
-- *Custom Calendar*
-- *Materialized Views*
+- SpotIQ Instant Insights
+- SpotIQ pre-computed insights
+- Custom Calendar
+- Materialized Views
 
 ## Next steps
 
