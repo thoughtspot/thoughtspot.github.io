@@ -13,16 +13,17 @@
 # ThoughtSpot_VMware_Installation_Guide_x.x
 # ThoughtSpot_GCP_Installation_Guide_x.x
 # ThoughtSpot_in_Practice_x.x
+# ThoughtSpot_SMC_Installation_Guide_x.x
 #
 
 destination: _site/
-url: "http://127.0.0.1:4010"
-baseurl: ""
-port: 4010
+url: "https://docs.thoughtspot.com"
+baseurl: "/6.0"
+port: 
 output: pdf
 product: mydoc
-print_title: ThoughtSpot Data Integration Guide
-print_subtitle: Release 6.0
+print_title: THETITLE
+print_subtitle: Release THEVERSION
 output: pdf
 defaults:
   -
