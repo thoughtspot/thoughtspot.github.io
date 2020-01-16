@@ -6,17 +6,17 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.1 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0<!--.1--> is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-* [6.0.1 Fixed Issues](#6-0-1-fixed)
+<!--* [6.0.1 Fixed Issues](#6-0-1-fixed)-->
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
 
-{: id="6-0-1-fixed"}
+<!--{: id="6-0-1-fixed"}
 ## 6.0.1 Fixed Issues
 
 The following issues are fixed in the 6.0.1 release:
@@ -34,7 +34,7 @@ The following issues are fixed in the 6.0.1 release:
 - Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
 
 
-
+-->
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
@@ -47,7 +47,7 @@ See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
 ### Embrace for Snowflake and Amazon Redshift
 
-In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. As with Snowflake, you can sync the data into ThoughtSpot later. **Support for Amazon Redshift is in beta**.
+In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. <!--As with Snowflake, you can sync the data into ThoughtSpot later.--> **Support for Amazon Redshift is in beta**.
 
 ThoughtSpot now supports the following features for linked tables:
   - Search suggestions for column values
@@ -193,16 +193,16 @@ These features are currently in Beta. Please contact us if you are interested in
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.1 release
+If you are running one of the following versions, you can upgrade to the 6.0<!--.1--> release
 directly:
 
-* 5.3.x to 6.0.1
-* 5.2.x to 6.0.1
+* 5.3.x to 6.0
+* 5.2.x to 6.0
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.1 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
