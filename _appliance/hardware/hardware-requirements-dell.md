@@ -24,17 +24,21 @@ This table shows the hardware details and power requirements for your Dell C6420
 
 These pictures show the front and back view of the Dell C6420 appliance.
 
-{% include image.html file="dell-front-view.png" title="Dell front view" alt="This is the front of the Dell C6420 appliance. The node power buttons are on the front of the appliance." caption="Dell front view" %}
+![Dell front view]({{ site.baseurl }}/images/dell-front-view.png "Dell front view")
+<!--{% include image.html file="dell-front-view.png" title="Dell front view" alt="This is the front of the Dell C6420 appliance. The node power buttons are on the front of the appliance." caption="Dell front view" %}-->
 
-{% include image.html file="dell-back-view.png" title="Dell back view" alt="This is the back of the Dell C6420 appliance. The management, data, and display ports are on the back of the appliance." caption="Dell back view" %}
+![Dell back view]({{ site.baseurl }}/images/dell-back-view.png "Dell back view")
+<!--{% include image.html file="dell-back-view.png" title="Dell back view" alt="This is the back of the Dell C6420 appliance. The management, data, and display ports are on the back of the appliance." caption="Dell back view" %}-->
 
 {: id="dell-serial-number"}
 ## Location of serial number
 You may need to know your appliance's serial number, to be able to access online help from your appliance provider. Find your Dell appliance's serial number on the plastic tab next to the control panel for Node 4, on the front right side of your appliance. Pull out the tab to view your service tag and a QR code for Dell support.
 
-{% include image.html file="dell-servicetab.png" title="Serial number location" alt="Find your Dell appliance's serial number on the plastic tab next to the control panel for Node 4, on the front right side of your appliance. Pull out the tab to view your service tag and a QR code for Dell support." caption="Serial number location" %}
+![Serial number location]({{ site.baseurl }}/images/dell-servicetab.png "Serial number location")
+<!--{% include image.html file="dell-servicetab.png" title="Serial number location" alt="Find your Dell appliance's serial number on the plastic tab next to the control panel for Node 4, on the front right side of your appliance. Pull out the tab to view your service tag and a QR code for Dell support." caption="Serial number location" %}-->
 
-{% include image.html file="dell-servicetag-open.png" title="View your service tag" alt="Pull out the plastic tab to view your service tag and a QR code for Dell support." caption="View your service tag" %}
+![View your service tag]({{ site.baseurl }}/images/dell-servicetag-open.png "View your service tag")
+<!--{% include image.html file="dell-servicetag-open.png" title="View your service tag" alt="Pull out the plastic tab to view your service tag and a QR code for Dell support." caption="View your service tag" %}-->
 
 
 ## Connect appliance
