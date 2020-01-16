@@ -50,5 +50,5 @@ The following features are NOT available in Embrace:
 Create the connection between ThoughtSpot and tables in an external database.
 -   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
 Edit, remap or delete a connection to tables in an external database.
-- **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
+-   **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Source cloud data connectors, and their connection credentials, supported by Embrace.
