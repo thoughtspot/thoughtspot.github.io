@@ -45,10 +45,13 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
 
 2. On the Azure portal homepage, hover over **Virtual machines**, and click **Create**.
 
-    {% include image.html file="azure-createvm.png" title="Create a virtual machine" alt="Hover over Virtual machines and click create." caption="Create a virtual machine" %}
+    ![Create a virtual machine]({{ site.baseurl }}/images/azure-createvm.png "Create a virtual machine")
+    <!--{% include image.html file="azure-createvm.png" title="Create a virtual machine" alt="Hover over Virtual machines and click create." caption="Create a virtual machine" %}-->
 
 3. Specify information under **Basics**.<br>
-    {% include image.html file="azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." caption="Specify information under Basics" %}
+
+    ![Specify information under Basics]({{ site.baseurl }}/images/azure-basicsettings.png "Specify information under Basics")
+    <!--{% include image.html file="azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." caption="Specify information under Basics" %}-->
 
     <table>
       <tr>
@@ -95,7 +98,8 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
 
 2. Specify information under **Disks**.
 
-    {% include image.html file="azure-disks.png" title="Specify disk information" alt="In the Disks menu, choose a disk type, add data disks, and select managed disks" caption="Specify disk information" %}
+    ![Specify disk information]({{ site.baseurl }}/images/azure-disks.png "Specify disk information")
+    <!--{% include image.html file="azure-disks.png" title="Specify disk information" alt="In the Disks menu, choose a disk type, add data disks, and select managed disks" caption="Specify disk information" %}-->
 
     <table>
       <tr>
@@ -118,7 +122,8 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
 
 4. Specify information under **Networking**.
 
-    {% include image.html file="azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" caption="Specify networking information" %}
+    ![Specify networking information]({{ site.baseurl }}/images/azure-networking.png "Specify networking information")
+    <!--{% include image.html file="azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" caption="Specify networking information" %}-->
 
     <table>
       <tr>
