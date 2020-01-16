@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 1/14/2020
+last_updated: 1/15/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,8 +11,7 @@ After you determine your configuration options, set up your virtual machines
 
 ## About the ThoughtSpot and Google Cloud Platform
 
-ThoughtSpot uses a custom image to populate VMs in GCP. The base image is a Centos derived
-image. To find the ThoughtSpot custom image, refer to step 12 under [create an instance]({{ site.baseurl }}#create-an-instance).
+ThoughtSpot uses a custom image to populate VMs in GCP. To find the ThoughtSpot custom image, refer to step 14 under [create an instance]({{ site.baseurl }}#create-an-instance).
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
@@ -33,9 +32,9 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
-2. Go to the Storage dashboard from the navigation bar on the side of your screen.
+2. Go to the **Storage** dashboard from the navigation bar on the side of your screen.
 
-3. Click **CREATE BUCKET**.
+3. Click **CREATE BUCKET** on the top menu bar.
 
 4. Enter a name for your bucket, and click **CONTINUE**.
 
@@ -45,11 +44,11 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 7. Click **CONTINUE**.
 
-6. For default storage class, make sure **Standard** is selected.
+6. For default storage class, select **Standard**.
 
 9. Click **CONTINUE**.
 
-7. For access control model, make sure **Set permissions uniformly at bucket-level** is selected.
+7. Under **Access Control**, select **Uniform** to ensure uniform access to all objects in the storage bucket.
 
 10. Click **CONTINUE**.
 
@@ -66,33 +65,35 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 
 2. Click **Select a Project** from the top bar.
 
-    ![Click Select a Project.]({{ site.baseurl }}/images/gcp-selectproj.png "Click Select a Project.")
+    {% include image.html file="gcp-selectproj.png" title="Select a project" alt="Click select a project from the top menu bar." caption="Select a project" %}
 
 3. Under **Select From** pick THOUGHTSPOT.COM.
 
 4. Select the **thoughtspot.com** project.
 
-    ![Select the ThoughtSpot project.]({{ site.baseurl }}/images/gcp-selectthoughtspot.png "Select the ThoughtSpot project.")
+    {% include image.html file="gcp-selectthoughtspot.png" title="Select the ThoughtSpot project" alt="Search for and select the ThoughtSpot project." caption="Select the ThoughtSpot project" %}
 
 2. Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.
 
-    ![]({{ site.baseurl }}/images/gcp-select-compute-engine-dash.png)
+    {% include image.html file="gcp-computeenginedash.png" title="Go to the Compute Engine Dashboard" alt="Click on the Compute Engine icon to go to the Compute Engine dashboard." caption="Go to the Compute Engine Dashboard" %}
 
-2. Select **VM instances** on the left panel and click **CREATE INSTANCE**.
+2. Select **VM instances** on the left panel.
+
+3. Click **CREATE INSTANCE** from the top menu bar.
 
 3. Provide a name for the instance.
 
 4. Select the region you are creating the instance in.
 
-5. Select the number of CPUs you need.<br>
+5. Select a zone.
+
+5. Under **Machine type**, select **custom**.
+
+6. Select the number of CPUs you need.<br>
 Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the number of CPUs your cluster needs.
 
-6. Click **Customize** to further configure CPUs and memory.
-
-    ![]({{ site.baseurl }}/images/gcp-1-create-instance.png "Create GCP VM instance")
-
-4. Under **Machine type**, specify your configuration information.
-Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types).
+6. Specify your memory requirements and CPU platform.
+Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the memory your cluster needs.
 
     Your configuration may look something like the following, but with your specific information.
 
@@ -103,15 +104,15 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     | Extend memory | Enabled (checkmark)  |
     | CPU platform  | `Automatic` (or select either one of the preferred CPU platforms, `Intel Skylake` or `Intel Broadwell`, if available.)|
 
-    ![]({{ site.baseurl }}/images/gcp-3-config-machine.png "Configure CPU and memory")
+    {% include image.html file="gcp-machineconfig.png" title="Specify machine configuration" alt="Select the number of CPUs, memory requirements, and CPU platform. You can select Extend memory." caption="Specify machine configuration" %}
 
-    ![]({{ site.baseurl }}/images/gcp-3-preferred-CPUs.png "Preferred CPU platforms")
+    {% include image.html file="gcp-3-preferred-CPUs.png" title="Preferred CPU platforms" alt="Either Intel Skylake or Intel Broadwell are preferred platforms." caption="Preferred CPU platforms" %}
 
 5. Configure the Boot disk.
 
     a. Scroll down to the **Boot disk** section and click **Change**.
 
-      ![]({{ site.baseurl }}/images/gcp-4-change-boot-disk.png "Change boot disk")
+      {% include image.html file="gcp-4-change-boot-disk.png" title="Change boot disk" alt="Click Change under Boot disk to find the ThoughtSpot image." caption="Change boot disk" %}
 
     b. Click **Custom Images** from the options under **Boot disk**.
 
@@ -136,32 +137,17 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 6.  Back on the main configuration page, click to expand the advanced configuration options
     (**Management, security, disks, networking, sole tenancy**).
 
-    ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
-
-7. Under **Networking**, update the network interface. 
-
-    Update the network interface or create a new one.
-
-    {% include image.html file="gcp-setnetworkinterface.png" title="Set your network interface" alt="Update the network interface or create a new one." caption="Set your network interface" %}
-
-    These are the minimum ports you must open. Refer to [network policies]({{ site.baseurl }}/admin/setup/firewall-ports.html#required-ports-for-cluster-communication) for more information on what ports to open for intracluster operation, so that your clusters can communicate.
-
-      | Port    | Protocol   | Service                       |
-      | ------- | ---------- | ----------------------------  |
-      | 22    | SSH          |  Secure Shell access          |
-      | 443   | HTTPS        |  Secure Web access            |
-      | 12345 | TCP          |  ODBC and JDBC drivers access |
-
+    {% include image.html file="gcp-6-save-boot-disk-expand-mgmt.png" title="Advanced configuration options" alt="Click on 'management, security, disks, networking, sole tenancy' to see advanced configuration." caption="Advanced configuration options" %}
 
 7.  Attach two 1 TB SSD drives for data storage. Refer to [SSD-only persistent storage]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-only-storage). If you are using GCS, attach only 1 SSD drive, with 500 GB instead of 1 TB. Refer to [GCS and SSD persistent storage]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-and-google-cloud-storage).
 
     a. Click the **Disks** tab, and click **Add new disk**.
 
-      ![]({{ site.baseurl }}/images/gcp-7-advanced-disk-config.png "Advanced disk config")
+      {% include image.html file="gcp-7-advanced-disk-config.png" title="Add new disk" alt="Click the Disks tab and add a new disk." caption="Add new disk" %}
 
       You can select or unselect the **Deletion rule**, depending on your preferences.
 
-    b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the size in GB when you have GCS.
+    b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the size in GB when you have GCS. Ensure the disks have read/write access.
 
       | Setting      | Value                  |
       |------------  | ---------------------- |
@@ -171,20 +157,32 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
       Under **Deletion rule**, select either **keep disk** or **delete disk**, depending on your preference.
 
-      ![]({{ site.baseurl }}/images/gcp-8-advanced-blank-disk-config.png "Advanced disk config")
+      {% include image.html file="gcp-8-advanced-blank-disk-config.png" title="Configure your disk" alt="Specify the type of disk, source type, size, and level of access." caption="Configure your disk" %}
 
-      ![]({{ site.baseurl }}/images/gcp-10-additional-disks.png "Additional data storage disks")
-
-8. (For use with GCS only) In the Identity and API access section, make sure Service account is set to **Compute Engine default service account**, and under Access scopes, select **Set access for each API**.
+8. (For use with GCS only) In the Identity and API access section, make sure Service account is set to **Compute Engine default service account**. Under Access scopes, select **Set access for each API**.
 
 9. (For use with GCS only) Scroll down to the Storage setting, and set it to one of the following options:
    - To use Google Cloud Storage (GCS) as persistent storage for your instance, select **Read Write**.
    - To only use GCS to load data into ThoughtSpot, select **Read Only**.
 
-10. Customize the network settings as needed. Use your default VPC settings, if you know them. Ask your network administrator if you do not know your default VPC settings.
+10. Under **Networking**, customize the network settings as needed.  Use your default VPC settings, if you know them. Ask your network administrator if you do not know your default VPC settings.
+
+    Update the network interface with your specific information or create a new one. Ensure that **network service tier** is set to **premium**.
+
+    {% include image.html file="gcp-setnetworkinterface.png" title="Set your network interface" alt="Update the network interface or create a new one." caption="Set your network interface" %}
 
 11. Repeat these steps to create the necessary number of VMs for your cluster.
 
+<!-- Trying to determine how/if user opens ports during VM creation for GCP. For now, leaving that step out.
+    These are the minimum ports you must open. Refer to [network policies]({{ site.baseurl }}/admin/setup/firewall-ports.html#required-ports-for-cluster-communication) for more information on what ports to open for intracluster operation, so that your clusters can communicate.
+
+      | Port    | Protocol   | Service                       |
+      | ------- | ---------- | ----------------------------  |
+      | 22    | SSH          |  Secure Shell access          |
+      | 443   | HTTPS        |  Secure Web access            |
+      | 12345 | TCP          |  ODBC and JDBC drivers access |
+
+-->
 ## Prepare the VMs
 
 Before you can install your ThoughtSpot cluster, an administrator must log into
