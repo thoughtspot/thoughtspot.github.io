@@ -108,7 +108,7 @@ To enable remote support, follow these steps:
     $ tscli support stop-remote
     ```
 
-    You can repeat the steps to start and stop the remote tunnel as needed for future support operations.
+    You can repeat the steps to start and stop the remote tunnel as needed for future support operations. 
 
 9. Ensure that the remote tunnel is disabled:
 
