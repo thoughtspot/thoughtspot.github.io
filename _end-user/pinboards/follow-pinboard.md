@@ -1,7 +1,7 @@
 ---
-title: [Following pinboads]
-last_updated: 07/16/2019
-summary: "In ThoughtSpot, you can follow pinboards to regularly review the visuals that represent dynamic data. For example, you can follow a pinboard that tracks sales revenue, and schedule to receive its email notifications weekly."
+title: [Following pinboards]
+last_updated: 1/17/2020
+summary: "In ThoughtSpot, you can follow Pinboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
