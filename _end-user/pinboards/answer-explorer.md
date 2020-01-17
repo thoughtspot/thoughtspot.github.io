@@ -1,17 +1,19 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 1/14/2020
+last_updated: 1/16/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can access Answer Explorer from any Answer in a Pinboard. Click the **Explore** button that appears when you hover over any Answer.
 
-{% include image.html file="explore-button.png" title="The Explore button" alt="The Explore button appears when you hover over an Answer in a Pinboard." caption="The Explore button" %}
+![The Explore button]({{ site.baseurl }}/images/explore-button.png "The Explore button")
+<!--{% include image.html file="explore-button.png" title="The Explore button" alt="The Explore button appears when you hover over an Answer in a Pinboard." caption="The Explore button" %}-->
 
 The Answer expands to fill your screen, and the **Explore this data** menu appears.
 
-{% include image.html file="explore-fullscreen.png" title="Explore this data" alt="After you click Explore, the Answer expands to full screen." caption="Explore this data" %}
+![Explore this data]({{ site.baseurl }}/images/explore-fullscreen.png "Explore this data")
+<!--{% include image.html file="explore-fullscreen.png" title="Explore this data" alt="After you click Explore, the Answer expands to full screen." caption="Explore this data" %}-->
 
 You can explore your data in several different ways, using [filters]({{ site.baseurl }}#explore-filters), [breakdowns]({{ site.baseurl }}#explore-breakdowns), [metrics]({{ site.baseurl }}#explore-metrics), or [comparisons]({{ site.baseurl }}#explore-comparisons).
 
@@ -31,17 +33,20 @@ After you add a filter or make any other change to your Answer, you may want to 
 ## Breakdowns
 Use **Breakdowns** to visualize your data, separated by an attribute. For example, break by *Store State* to see which states have the best sales. If your Answer has a time attribute, you can easily change from *daily* to *quarterly*, and so on.
 
-{% include image.html file="explore-breakdown.png" title="Break by store state" alt="Visually separate your data by store state using the Breakdown feature" caption="Break by store state" %}
+![Break by store state]({{ site.baseurl }}/images/explore-breakdown.png "Break by store state")
+<!--{% include image.html file="explore-breakdown.png" title="Break by store state" alt="Visually separate your data by store state using the Breakdown feature" caption="Break by store state" %}-->
 
 {: id="explore-metrics"}
 ## Metrics
 Use **Metrics** to add other available measures. For example, you can add *quantity* to view both total sales and total quantity by store region.
 
-{% include image.html file="explore-metricsboth.png" title="Total sales and total quantity" alt="You can add another measure to your visualization." caption="Total sales and total quantity" %}
+![Total sales and total quantity]({{ site.baseurl }}/images/explore-metricsboth.png "Total sales and total quantity")
+<!--{% include image.html file="explore-metricsboth.png" title="Total sales and total quantity" alt="You can add another measure to your visualization." caption="Total sales and total quantity" %}-->
 
 If you want to see *quantity* instead of *sales*, click **Show more** and select **Change sales to quantity**.
 
-{% include image.html file="explore-metricsquantity.png" title="Total quantity by store region" alt="You can replace one measure with another in your visualization." caption="Total quantity by store region" %}
+![Total quantity by store region]({{ site.baseurl }}/images/explore-metricsquantity.png "Total quantity by store region")
+<!--{% include image.html file="explore-metricsquantity.png" title="Total quantity by store region" alt="You can replace one measure with another in your visualization." caption="Total quantity by store region" %}-->
 
 {: id="explore-comparisons"}
 ## Comparisons

@@ -1,6 +1,6 @@
 ---
 title: [Change result display options]
-last_updated: 1/6/2020
+last_updated: 1/16/2020
 summary: "You can change how your search results (Answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,9 +14,10 @@ You can change the view of your answer so it appears as either a table or a char
 change the view of your answer:
 
 1. View your answer.
-2. Select either table or a chart type.
+2. Toggle between either a table or a chart type.
 
-    {% include image.html file="toggle_between_views.png" title="Select table or chart" alt="You can toggle between displaying your results as a table or as a chart." caption="Select table or chart" %}
+    ![Select table or chart]({{ site.baseurl }}/images/toggle_between_views.png "Select table or chart")
+    <!--{% include image.html file="toggle_between_views.png" title="Select table or chart" alt="You can toggle between displaying your results as a table or as a chart." caption="Select table or chart" %}-->
 
 When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
