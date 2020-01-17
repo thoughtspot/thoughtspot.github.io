@@ -3255,7 +3255,7 @@ activities.</p>
   <tbody>
     <tr>
       <td>Driver name</td>
-      <td><code class="highlighter-rouge">com.simba.client.core.jdbc4.SCJDBC4Driver</code></td>
+      <td><code class="highlighter-rouge">com.simba.client.core.jdbc42.SCJDBC42Driver</code></td>
     </tr>
     <tr>
       <td>Server IP address</td>
@@ -3349,7 +3349,7 @@ ThoughtSpot instance.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" -&gt;
 "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" -&gt;
-"com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -&gt; "Movies", "user" -&gt;
+"com.simba.client.core.jdbc42.SCJDBC42Driver", "dbtable" -&gt; "Movies", "user" -&gt;
 "tsadmin", "password" -&gt; "admin")).load()
 </code></pre></div></div>
 
@@ -3363,7 +3363,7 @@ import java.sql.SQLException;
 public class InsertData {
 
   // JDBC class to use.
-  private static final String DB_DRIVER = "com.simba.client.core.jdbc4.SCJDBC4Driver";
+  private static final String DB_DRIVER = "com.simba.client.core.jdbc42.SCJDBC42Driver";
   // jdbc_example should be an existing database.
 
   private static final String DB_CONNECTION = "jdbc:simba://192.168.2.129:12345;
@@ -3481,7 +3481,7 @@ public class InsertData {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 9, 2020 <br />
+        Generated: Jan 17, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
