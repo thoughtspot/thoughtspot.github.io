@@ -15,6 +15,7 @@ You can create custom calendars for different purposes within your company, incl
 In a custom calendar, you can set the following:
 - The starting date of a year
 - The starting dates of quarters
+- The starting day of the month
 - The starting day of the week
 - The words used for the days of the week, months and quarters
 
