@@ -1,6 +1,6 @@
 ---
 title: [More help and support]
-last_updated: 1/6/2020
+last_updated: 1/17/2020
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,7 +28,8 @@ You can navigate to this documentation from inside the ThoughtSpot application
 as well. In this case, the application links directly to the documentation
 version that matches your product version. Click the help icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} next to your profile, and select **Help**.
 
-{% include image.html file="gettingstarted-helptohelp.png" title="The help menu" alt="If you click on the help icon at the top right of your screen, you can click on Help and open the help menu." caption="The help menu" %}
+![The help menu]({{ site.baseurl }}/images/gettingstarted-helptohelp.png "The help menu")
+<!--{% include image.html file="gettingstarted-helptohelp.png" title="The help menu" alt="If you click on the help icon at the top right of your screen, you can click on Help and open the help menu." caption="The help menu" %}-->
 
 The **Help** dialog box links you to the following:
 
@@ -72,7 +73,7 @@ The **Getting Started** sidebar teaches you about ThoughtSpot through a navigati
 Refer to [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).
 
 ## Community
-The **Community** link in the **Help** menu takes you to the [ThoughtSpot Community](https://community.thoughtspot.com) website, where you can ask ThoughtSpot expertsquestions, share your own ideas and feedback, and meet others.
+The **Community** link in the **Help** menu takes you to the [ThoughtSpot Community](https://community.thoughtspot.com) website, where you can ask ThoughtSpot experts questions, share your own ideas and feedback, and meet others.
 
 ## Learn
 
@@ -90,11 +91,13 @@ the following:
    The system lists the pinboards you can pin to.
 3. Select the **Learn how to use ThoughtSpot** pinboard.
 
-   {% include image.html file="gettingstarted-learn.png" title="Add to the Learn pinboard" alt="As an administrator, you can pin any answer to the Learn how to use ThoughtSpot pinboard, allowing users to watch a replay of that search." caption="Add to the Learn pinboard" %}
+   ![Add to the Learn pinboard]({{ site.baseurl }}/images/gettingstarted-learn.png "Add to the Learn pinboard")
+   <!--{% include image.html file="gettingstarted-learn.png" title="Add to the Learn pinboard" alt="As an administrator, you can pin any answer to the Learn how to use ThoughtSpot pinboard, allowing users to watch a replay of that search." caption="Add to the Learn pinboard" %}-->
 
 4. Navigate to the *Learn* center to replay your search.
 
-    {% include image.html file="gettingstarted-learnpage.png" title="The Learn center" alt="Navigate to the Learn center to replay a search." caption="The Learn center" %}
+    ![The Learn center]({{ site.baseurl }}/images/gettingstarted-learnpage.png "The Learn center")
+    <!--{% include image.html file="gettingstarted-learnpage.png" title="The Learn center" alt="Navigate to the Learn center to replay a search." caption="The Learn center" %}-->
 
 <!-- ## Search the help in search bar
 
@@ -108,11 +111,14 @@ allows you to jump directly into a product workflow. -->
 ## Expert requests
 **Expert requests** takes you to the Expert Requests interface, where you can view your own questions or answer other users' questions.
 
-{% include image.html file="expertrequests.png" title="Expert requests" alt="View and answer ask an expert questions by clicking on Expert Requests from the Help menu." caption="Expert requests" %}
+![Expert requests]({{ site.baseurl }}/images/expertrequests.png "Expert requests")
+<!--{% include image.html file="expertrequests.png" title="Expert requests" alt="View and answer ask an expert questions by clicking on Expert Requests from the Help menu." caption="Expert requests" %}-->
+
 Refer to [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ## Support contact information
 
 If you still can't find what you're looking for, you can contact support.
 
-{% include image.html file="gettingstarted-contactsupport.png" title="Contact support" alt="You can contact support from the Help menu." caption="Contact support"%}
+![Contact support]({{ site.baseurl }}/images/gettingstarted-contactsupport.png "Contact support")
+<!--{% include image.html file="gettingstarted-contactsupport.png" title="Contact support" alt="You can contact support from the Help menu." caption="Contact support"%}-->
