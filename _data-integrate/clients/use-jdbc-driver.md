@@ -20,7 +20,7 @@ activities.
 
 | Information | Description |
 |-------------|-------------|
-|Driver name | `com.simba.client.core.jdbc4.SCJDBC4Driver` |
+|Driver name | `com.simba.client.core.jdbc42.SCJDBC42Driver` |
 |Server IP address | The ThoughtSpot appliance URL or IP address.|
 |Simba port | The simba port, which is `12345` by default.|
 |Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
@@ -78,7 +78,7 @@ As shown, the `DATABASE` and `SCHEMA` parameters need to be in all caps. For the
 ```
 val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" ->
 "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" ->
-"com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -> "Movies", "user" ->
+"com.simba.client.core.jdbc42.SCJDBC42Driver", "dbtable" -> "Movies", "user" ->
 "tsadmin", "password" -> "admin")).load()
 ```
 
@@ -94,7 +94,7 @@ import java.sql.SQLException;
 public class InsertData {
 
   // JDBC class to use.
-  private static final String DB_DRIVER = "com.simba.client.core.jdbc4.SCJDBC4Driver";
+  private static final String DB_DRIVER = "com.simba.client.core.jdbc42.SCJDBC42Driver";
   // jdbc_example should be an existing database.
 
   private static final String DB_CONNECTION = "jdbc:simba://192.168.2.129:12345;
