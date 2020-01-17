@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 1/9/2020
+last_updated: 1/16/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -112,7 +112,7 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
       </tr>
       <tr>
         <td><strong>3</strong></td>
-        <td>Under **Advanced**, click **yes** to **use managed disks**.</td>
+        <td>Under <strong>Advanced</strong>, click <strong>yes</strong> to <strong>use managed disks</strong>.</td>
       </tr>
     </table>
 
@@ -280,7 +280,7 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
    ```
 
-3. Modify permissions for `/etc/hosts`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
+3. Modify permissions for `/etc/sysconfig/network-scripts/ifcfg-eth0`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
     ```
     $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
     ```

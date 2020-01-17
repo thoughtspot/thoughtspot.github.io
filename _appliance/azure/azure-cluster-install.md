@@ -36,11 +36,6 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
-1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
-    ```
-    $ screen -S DEPLOYMENT
-    ```
-
 1. Copy the downloaded release bundle to `/export/sdc1/TS_TASKS/install` using the following command:
 ```
     $ scp <release-number>.tar.gz admin@<hostname>:/export/sdc1/TS_TASKS/install/<file-name>
@@ -69,6 +64,11 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
     ```
 
     Your output says `ok` if you have the correct release.
+
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
@@ -228,6 +228,9 @@ Follow these steps:
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
 <!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+
+## Lean configuration
+**(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
 
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot:

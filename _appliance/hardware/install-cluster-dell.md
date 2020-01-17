@@ -1,7 +1,7 @@
 ---
 title: [Install Cluster]
 summary: "Install your ThoughtSpot cluster(s) on your Dell appliance."
-last_updated: 1/14/2020
+last_updated: 1/16/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,11 +29,6 @@ Follow the steps in this checklist to install your cluster.
 
 {: id="install-step-1"}
 ## Step 1: Run the installer
-1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
-    ```
-    $ screen -S DEPLOYMENT
-    ```
-
 1. Copy the downloaded release bundle to `/export/sdb1/TS_TASKS/install`:<br>
   Run `scp <release-number> admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>`. Note the following parameters:
 * `release-number` is the release number of your ThoughtSpot installation, such as `6.0`, `5.3`, `5.3.1`, and so on.
@@ -62,6 +57,12 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
     ```
 
     Your output says `ok` if you have the correct release.
+
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
+
 2. Create the cluster using `tscli cluster create <release-number>`.
 ```
     $ tscli cluster create <release.number>.tar.gz
@@ -183,5 +184,8 @@ Follow these steps:
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
 <!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+
+## Lean configuration
+**(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
 
 {% include content/install/install-cluster-error-recovery.md %}
