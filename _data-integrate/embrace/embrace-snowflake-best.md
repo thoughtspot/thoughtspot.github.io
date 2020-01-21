@@ -1,7 +1,7 @@
 ---
 title: [Best practices for Embrace with Snowflake]
 last_updated: 01/15/2020
-summary: "It is easy to connect to Snowflake using ThoughtSpot Embrace, and to start searching your data."
+summary: "You can connect to Snowflake using ThoughtSpot Embrace, and to start searching your data. This article contains helpful pointers on data modeling."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -83,11 +83,11 @@ When you subsequently search in ThoughtSpot against the Snowflake view, you can 
 
 ## Add joins between tables
 
-To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying which columns represent the matching data across two tables. These columns represent the 'primary key' and 'foreign key' of the join.
+To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the  columns that contain matching data across two tables. These columns represent the 'primary key' and 'foreign key' of the join.
 
-In Snowflake, you can  query the schema to get a list of its existing foreign key constraints with referenced constraints.
+In Snowflake, you can query the schema to get a list of its existing foreign key constraints with referenced constraints.
 
-To determine what foreign keys already exist in your Snowflake schema, issue the following `SELECT ... AS` statement:
+To determine which foreign keys already exist in your Snowflake schema, issue the following `SELECT ... AS` statement:
 
 ```
 select
@@ -137,7 +137,7 @@ To search multi-table Snowflake data in ThoughtSpot, you must explicitly create 
 
 There are two ways to do this:
 
-1. ThoughtSpot recommends that you add the necessary foreign key constraints by creating a join in Snowflake. We demonstrate how you can do in in [Create joins in Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html#join-snowflake).
+1. ThoughtSpot recommends that you add the necessary foreign key constraints by creating a join in Snowflake. We demonstrate how you can do in [Create joins in Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html#join-snowflake).
 
    For in-depth information from Snowflake, see [CREATE or ALTER TABLE … CONSTRAINT](https://docs.snowflake.net/manuals/sql-reference/sql/create-table-constraint.html).
 
@@ -192,7 +192,7 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
 {: id="add-fk-snowflake"}
 **Example 1: adding a foreign key in Snowlake**
 
-For example, add a foreign key to Retail Sales schema in Snowflake by running the following `ALTER TABLE` statement. Also, contrast it with [Example 2](#add-fk-thoughtspot):
+For example, you can add a foreign key to Retail Sales schema in Snowflake by running the following `ALTER TABLE` statement. Also, contrast it with [Example 2](#add-fk-thoughtspot):
 
 ```
 ALTER TABLE "HO_RETAIL"."PUBLIC"."HO_Retail_Sales_Fact"
@@ -238,7 +238,7 @@ If you cannot find your **Full account name** in Snowflake, see the following ex
 <td>xy12345.us-east-1</td>
 </tr>
 <tr>
-<td>US EAst (Ohio)</td>
+<td>US East (Ohio)</td>
 <td>xy12345.us-east-2.aws</td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ If you cannot find your **Full account name** in Snowflake, see the following ex
 </tr>
 <tr>
 <th>GCP - <em>Preview</em></th>
-<td>&nbsp;us-cenjtral1 (Iowa)</td>
+<td>us-central1 (Iowa)</td>
 <td>xy12345.us-central1.gcp</td>
 </tr>
 <tr>
@@ -288,7 +288,7 @@ If you cannot find your **Full account name** in Snowflake, see the following ex
 <td>xy12345.west-europe.azure</td>
 </tr>
 <tr>
-<td>Astralia East</td>
+<td>Australia East</td>
 <td>xy12345.australia-east.azure</td>
 </tr>
 <tr>
