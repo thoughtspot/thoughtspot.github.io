@@ -1,6 +1,6 @@
 ---
-title: [Enable access through Active Directory]
-last_updated: 01-07-2020
+title: [Enable SSH access through Active Directory]
+last_updated: 01-13-2020
 summary: "You can enable Active Directory (AD) access on each ThoughtSpot node."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

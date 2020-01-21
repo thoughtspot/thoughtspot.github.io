@@ -498,7 +498,7 @@ entries:
       - title: Configure SAML
         url: /admin/setup/configure-SAML-with-tscli.html
         output: web,admBk
-      - title: Enable access through Active Directory
+      - title: Enable SSH through Active Directory
         url: /admin/setup/active-directory-based-access.html
         output: web,admBk
       - levelThreeTitle: Integrate LDAP
