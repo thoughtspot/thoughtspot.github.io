@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-last_updated: 10/10/2019
+last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -145,7 +145,7 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 15. SSH as `admin` into the IP address of the instance. Your ThoughtSpot contact can provide you with the password.
 
 16. Prepare your storage for use with your cluster, by running this command:  
-`sudo /usr/local/scaligent/bin/prepare_disks.sh`. 
+`sudo /usr/local/scaligent/bin/prepare_disks.sh`.
 
     When complete, your storage is mounted and ready for use with your cluster.
 
@@ -158,6 +158,14 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 ## Open the required network ports
 
 To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+
+These are the minimum ports required for operations and debugging:
+
+|Port|Protocol|Service|
+|----|--------|------------|
+|22|SSH|Secure Shell access|
+|443|HTTPS|Secure Web access|
+|12345|TCP|ODBC and JDBC drivers access|
 
 ## Related information  
 
