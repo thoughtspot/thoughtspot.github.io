@@ -2,6 +2,7 @@
 title: [Get your configuration and logs]
 keywords: tbd
 tags: [logs]
+last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
