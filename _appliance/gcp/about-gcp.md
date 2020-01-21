@@ -13,12 +13,21 @@ Your database capacity determine the number of instances you must have, and
 the instance network/storage requirements. In addition, you can choose multiple
 virtual machines (VMs) based on your dataset size.
 
-You must setup the appropriate Firewall Rules in your GCP environment
+You must set up the appropriate Firewall Rules, with the necessary ports open, in your GCP environment
 for your ThoughtSpot deployment. See the [GCP Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)
 article for configuration details.
 
 You can find more information about appropriate network policies for your
 ThoughtSpot deployment in the [network ports reference]({{ site.baseurl}}/appliance/firewall-ports.html#).
+
+These are the minimum ports required for operations and debugging:
+
+|Port|Protocol|Service|
+|----|--------|------------|
+|22|SSH|Secure Shell access|
+|443|HTTPS|Secure Web access|
+|12345|TCP|ODBC and JDBC drivers access|
+
 
 ## A little about GCP
 
