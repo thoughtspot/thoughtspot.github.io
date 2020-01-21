@@ -1,7 +1,7 @@
 ---
 title: [Set up Azure for ThoughtSpot]
 keywords: Azure
-last_updated: 1/10/2020
+last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -113,18 +113,13 @@ network.
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
-   The minimum ports needed are:
+   These are the minimum ports required for operations and debugging:
 
-   | Port    | Protocol   | Service                       |
-   | ------- | ---------- | ----------------------------  |
-   | 22    | SSH          |  Secure Shell access          |
-   | 80    | HTTP         |  Web access                   |
-   | 443   | HTTPS        |  Secure Web access            |
-   | 12345 | TCP          |  ODBC and JDBC drivers access |
-   | 2201  | HTTP         |  Cluster Debugging            |
-   | 2101  | HTTP         |  Node daemon Debugging        |
-   | 4001  | HTTP         |  Data Cache Debugging         |
-
+   |Port|Protocol|Service|
+   |----|--------|------------|
+   |22|SSH|Secure Shell access|
+   |443|HTTPS|Secure Web access|
+   |12345|TCP|ODBC and JDBC drivers access|
 
    {% include note.html content="ThoughtSpot requires that nodes purchased from
 Azure must be reachable to each other so that they can communicate and form a
