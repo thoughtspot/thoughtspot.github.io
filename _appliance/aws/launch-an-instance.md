@@ -1,7 +1,7 @@
 ---
 title: [Set up AWS for ThoughtSpot]
 keywords: AWS, AMI
-last_updated: tbd
+last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -90,6 +90,15 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 ## Open the required network ports
 
 See [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for a complete list of network ports that must be open for traffic from end users as well as between ThoughtSpot nodes in a cluster.
+
+These are the minimum ports required for operations and debugging:
+
+|Port|Protocol|Service|
+|----|--------|------------|
+|22|SSH|Secure Shell access|
+|443|HTTPS|Secure Web access|
+|12345|TCP|ODBC and JDBC drivers access|
+
 
 ## Related information  
 
