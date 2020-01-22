@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites]
-last_updated: [1/17/2020]
+last_updated: [1/22/2020]
 summary: "Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -57,7 +57,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td><a href="/appliance/firewall-ports.html">Network policies</a>, to determine the ports you need to have open for your cluster.</td></tr>
+<td><a href="{{ site.baseurl }}/appliance/firewall-ports.html">Network policies</a>, to determine the ports you need to have open for your cluster.</td></tr>
 </table>
 
 ## Review hardware requirements

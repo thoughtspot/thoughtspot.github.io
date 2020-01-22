@@ -164,7 +164,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot sign-in page appears.
-5. In the [ThoughtSpot sign-in window]({{ site.baseurl }}#ts-login), enter admin credentials, and click **Sign in**. If you do not know the admin credentials, ask your network administrator.
+5. In the [ThoughtSpot sign-in window]({{ site.baseurl }}/appliance/hardware/smc-cluster-install.html#ts-login), enter admin credentials, and click **Sign in**. If you do not know the admin credentials, ask your network administrator.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

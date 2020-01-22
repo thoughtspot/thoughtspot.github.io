@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in Azure]
-last_updated: [1/16/2020]
+last_updated: [1/22/2020]
 summary: "Learn how to install ThoughtSpot clusters in Azure."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -222,7 +222,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot sign-in page appears.
-5. In the [ThoughtSpot sign-in window]({{ site.baseurl }}#ts-login), enter admin credentials, and click **Sign in**.
+5. In the [ThoughtSpot sign-in window](#ts-login), enter admin credentials, and click **Sign in**.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 1/16/2020
+last_updated: 1/22/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ After you determine your configuration options, set up your virtual machines
 
 ## About the ThoughtSpot and Google Cloud Platform
 
-ThoughtSpot uses a custom image to populate VMs in GCP. To find the ThoughtSpot custom image, refer to step 13 under [create an instance]({{ site.baseurl }}#create-an-instance).
+ThoughtSpot uses a custom image to populate VMs in GCP. To find the ThoughtSpot custom image, refer to step 13 under [create an instance](#create-an-instance).
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
@@ -28,7 +28,7 @@ The following topics walk you through this process.
 
 ## Setting up your Google Cloud Storage (GCS) bucket
 
-If you are going to deploy your cluster using the GCS-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the GCS storage option. If you are not using GCS, skip this step and [create an instance]({{ site.baseurl }}#create-an-instance).
+If you are going to deploy your cluster using the GCS-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the GCS storage option. If you are not using GCS, skip this step and [create an instance](#create-an-instance).
 
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
@@ -150,7 +150,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
       You can select or unselect the **Deletion rule**, depending on your preferences.
 
-    b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the size in GB when you have GCS. Ensure the disks have read/write access.
+    b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-and-google-cloud-storage) to determine the size in GB when you have GCS. Ensure the disks have read/write access.
 
       | Setting      | Value                  |
       |------------  | ---------------------- |

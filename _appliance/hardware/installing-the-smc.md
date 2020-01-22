@@ -1,6 +1,6 @@
 ---
 title: [Deploying on the SMC appliance]
-last_updated: [12/17/2019]
+last_updated: [1/22/2020]
 summary: "Follow these steps to deploy ThoughtSpot on your Super Micro Computer appliance."
 sidebar: mydoc_sidebar
 toc: false
@@ -11,23 +11,23 @@ Follow these steps to deploy ThoughtSpot on your Super Micro Computer (SMC) appl
 <table>
   <tr>
     <td>&#10063;</td>
-    <td><a href="/appliance/hardware/prerequisites-smc.html">Step 1: Complete prerequisites</a></td>  
+    <td><a href="prerequisites-smc.html">Step 1: Complete prerequisites</a></td>  
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="/appliance/hardware/hardware-requirements-smc.html">Step 2: Review hardware requirements</a></td>  
+    <td><a href="hardware-requirements-smc.html">Step 2: Review hardware requirements</a></td>  
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="/appliance/hardware/connect-appliance-smc.html">Step 3: Connect the SMC appliance</a></td>  
+    <td><a href="connect-appliance-smc.html">Step 3: Connect the SMC appliance</a></td>  
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="/appliance/hardware/configure-nodes-smc.html">Step 4: Configure nodes</a></td>  
+    <td><a href="configure-nodes-smc.html">Step 4: Configure nodes</a></td>  
   </tr>
   <tr>
     <td>&#10063;</td>
-    <td><a href="/appliance/hardware/smc-cluster-install.html">Step 5: Install cluster</a></td>  
+    <td><a href="smc-cluster-install.html">Step 5: Install cluster</a></td>  
   </tr>
 </table>  
 

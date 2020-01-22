@@ -139,8 +139,8 @@ additional, larger capacity disks.
 7. Power on the VM
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
-    ```shell
-    sudo /usr/local/scaligent/bin/prepare_disks.sh
+    ```
+    $ sudo /usr/local/scaligent/bin/prepare_disks.sh
     ```
 
 ## Next steps
