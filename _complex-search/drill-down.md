@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 1/21/2020
+last_updated: 1/22/2020
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -23,17 +23,15 @@ This limits the data you are exploring to that particular data point or chart ob
 
 2. A list of dimensions appears. You can only drill down on dimensions, not on measures. Click any of the options to gain deeper insight into your data.
 
-    ![Drill down dimensions]({{ site.baseurl }}/images/drilldown-diettype.png "Drill down dimensions")
-    <!--{% include image.html file="drilldown-diettype.png" title="Drill down dimensions" alt="A list of dimensions, or column names, that you can drill down on appears. Select one to drill down." caption="Drill down dimensions" %}-->
+    ![Drill down dimensions]({{ site.baseurl }}/images/drilldown-productfullname.png "Drill down dimensions")
+    <!--{% include image.html file="drilldown-productfullname.png" title="Drill down dimensions" alt="A list of dimensions, or column names, that you can drill down on appears. Select one to drill down." caption="Drill down dimensions" %}-->
 
     For example, if you choose to drill down on *dairy* by *product full name*, the following chart appears, showing dairy sales by product:
-    
+
     ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
     <!--{% include image.html file="drilldown-example.png" title="Dairy sales by diet type" alt="Drill down on the dairy column and select diet type to see a chart showing dairy sales by diet type" caption="Dairy sales by diet type" %}-->
 
     You can continue to drill down in the data until you run out of relevant dimensions.
-
-    To change the Answer to a previous version, you can remove the corresponding filter.
 
 {: id="pinboard-drilldown"}
 ## Drill down within a pinboard
@@ -53,7 +51,8 @@ If you want to go back one step while drilling down, [add your answer to a pinbo
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.
 1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}.
-2. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it.
+2. Select **copy and edit**.
+3. **Save** your new Answer and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.
 
 You can also [share the Answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html) by clicking the sharing icon ![]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}. Otherwise, the Answer returns to its original state when you exit the page.
