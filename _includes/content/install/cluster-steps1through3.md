@@ -115,7 +115,7 @@ Follow these steps:
   * Click **Advanced**
   * Click **Proceed**
 4. The ThoughtSpot sign-in page appears.
-5. In the [ThoughtSpot sign-in window]({{ site.baseurl }}#ts-login), enter admin credentials, and click **Sign in**.
+5. In the [ThoughtSpot sign-in window](#ts-login), enter admin credentials, and click **Sign in**.
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}

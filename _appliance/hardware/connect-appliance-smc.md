@@ -1,6 +1,6 @@
 ---
 title: [Connect the SMC appliance]
-last_updated: [1/16/2020]
+last_updated: [1/22/2020]
 summary: "Connect the SMC appliance before you can deploy ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -30,9 +30,9 @@ After you rack and stack the appliance, it is time to configure it. If necessary
 ## Step 1: Connect switches to 10GbE ports
 Connect the 10GbE port of each node, as illustrated in [Haswell port location]({{ site.baseurl }}/appliance/hardware/connect-appliance-smc.html#haswell-port-location) and [Skylake port location]({{ site.baseurl }}/appliance/hardware/connect-appliance-smc.html#skylake-port-location), to the 10GbE switches on your own rack, using either fiber or DAC cables.
 
- Refer to the [Cable reference]({{ site.baseurl }}/appliance/hardware/cable-reference.html) for information on the cable types:
- * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#fiber-cables)
- * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-reference.html#dac-cables)
+ Refer to the [Cable reference]({{ site.baseurl }}/appliance/hardware/cable-networking.html) for information on the cable types:
+ * [Fiber Cables]({{ site.baseurl }}/appliance/hardware/cable-networking.html#fiber-cables)
+ * [DAC Cables]({{ site.baseurl }}/appliance/hardware/cable-networking.html#dac-cables)
 
  {% include note.html content="Ask your hardware vendor for more details about what they supply and what you need to buy." %}
 
@@ -43,7 +43,7 @@ Depending on which version of the SMC appliance you have, Haswell or Skylake, yo
 <!--{% include image.html file="smc-haswell-location-ports-new.png" title="Haswell port location" alt="The data and management ports are on the back of the SMC Haswell appliance." caption="Haswell port location" %}-->
 
 {: id="skylake-port-location"}
-![Skylake port location]({{ site.baseurl }}/images/dsmc-appliance-skylake-location-ports.png "Skylake port location")
+![Skylake port location]({{ site.baseurl }}/images/smc-appliance-skylake-location-ports.png "Skylake port location")
 <!--{% include image.html file="smc-appliance-skylake-location-ports.png" title="Skylake port location" alt="The data and management ports are on the back of the SMC Skylake appliance." caption="Skylake port location" %}-->
 
 * Connect to switches **only** the appliances (4 nodes each) that you plan to use in the cluster.  

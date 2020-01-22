@@ -1,6 +1,6 @@
 ---
 title: [Hardware Requirements]
-last_updated: [1/15/2020]
+last_updated: [1/22/2020]
 summary: "Learn about your SMC hardware before deploying ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -32,6 +32,7 @@ The nodes on the front of both appliances go from A-D left to right. For this Ha
 The nodes on the back of both appliances are in a reverse N shape, with Node A at the bottom right and Node D at the top left.
 ![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-back-view.png "The back of the Haswell appliance")
 <!--{% include image.html file="smc-haswell-back-view.png" title="The back of the Haswell appliance" alt="The back of the Haswell appliance" caption="Haswell back view" %}-->
+
 The Haswell appliance shown here is not fully populated, as it only has three nodes. Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If you order less than four nodes, ThoughtSpot fills the empty slot with a filler panel.
 
 {: id="skylake-front-back-diagrams"}
@@ -42,8 +43,9 @@ The Haswell appliance shown here is not fully populated, as it only has three no
 <!--{% include image.html file="smc-skylake-front-view.png" title="The front of the Skylake appliance" alt="The front of the Skylake appliance" caption="Skylake front view" %}-->
 
 ![The back of the Skylake appliance]({{ site.baseurl }}/images/smc-skylake-back-view.png "The back of the Skylake appliance")
-<!--{% include image.html file="smc-skylake-back-view.png" title="The back of the Skylake appliance" alt="The back of the Skylake appliance" caption="Skylake back view" %}
-The Skylake appliance shown here is fully populated with four nodes.-->
+<!--{% include image.html file="smc-skylake-back-view.png" title="The back of the Skylake appliance" alt="The back of the Skylake appliance" caption="Skylake back view" %}-->
+
+The Skylake appliance shown here is fully populated with four nodes.
 
 {: id="smc-serial-number"}
 ## Location of serial number

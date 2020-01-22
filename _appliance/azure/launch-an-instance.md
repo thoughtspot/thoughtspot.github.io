@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 1/16/2020
+last_updated: 1/22/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -76,7 +76,7 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
       </tr>
       <tr>
         <td><strong>6</strong></td>
-        <td>Refer to <a href="/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
+        <td>Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
       </tr>
       <tr>
         <td><strong>7</strong></td>
@@ -108,7 +108,7 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
       </tr>
       <tr>
         <td><strong>2</strong></td>
-        <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
+        <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
       </tr>
       <tr>
         <td><strong>3</strong></td>

@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot Nodes on the SMC Appliance]
-last_updated: [1/16/2020]
+last_updated: [1/22/2020]
 summary: "Configure your nodes before you can install your cluster(s)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -94,7 +94,7 @@ Edit only the parts of the nodes.config file that are explicitly discussed in [P
 Configure the nodes in the `nodes.config` file using the `set-config` command.
 
 Run `$ cat nodes.config | tscli cluster set-config` in your terminal.<br>
-If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}smc-cluster-install.html#set-config-error-recovery).
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/smc-cluster-install.html#set-config-error-recovery).
 
 ```
 $ cat nodes.config | tscli cluster set-config

@@ -47,7 +47,7 @@ Configure the nodes in the `nodes.config` file using the `set-config` command.
 ```
 
 2. Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
-If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}#set-config-error-recovery).<br>
+If the command returns an error, refer to [set-config error recovery](#set-config-error-recovery).<br>
     After you run the node configuration command, your output appears similar to the following:
 
     ```
