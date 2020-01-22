@@ -31,6 +31,9 @@ This limits the data you are exploring to that particular data point or chart ob
     ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
     <!--{% include image.html file="drilldown-example.png" title="Dairy sales by diet type" alt="Drill down on the dairy column and select diet type to see a chart showing dairy sales by diet type" caption="Dairy sales by diet type" %}-->
 
+    Use your internet browser's back button to go back one step at a time.
+    {% include note.html content="Your browser's back button only goes back one step on unsaved Answers. If you are working with a saved Answer, clicking your browser's back button prompts you to save your unsaved changes, and does not take you back to the previous step in your Drill down." %}
+
     You can continue to drill down in the data until you run out of relevant dimensions.
 
 {: id="pinboard-drilldown"}
@@ -46,7 +49,7 @@ You can also drill down using the [Answer Explorer]({{ site.baseurl }}/end-user/
 
 As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
 
-If you want to go back one step while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
+If you want to go back one step at a time while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
 
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.

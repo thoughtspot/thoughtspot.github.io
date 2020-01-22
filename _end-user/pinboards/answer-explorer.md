@@ -1,7 +1,7 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 1/16/2020
+last_updated: 1/22/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,7 +17,7 @@ The Answer expands to fill your screen, and the **Explore this data** menu appea
 
 You can explore your data in several different ways, using [filters]({{ site.baseurl }}#explore-filters), [breakdowns]({{ site.baseurl }}#explore-breakdowns), [metrics]({{ site.baseurl }}#explore-metrics), or [comparisons]({{ site.baseurl }}#explore-comparisons).
 
-You can also Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline}. You cannot go back one step at a time if you Drill down directly on an Answer, without using Answer Explorer.
+You can also Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline}. You cannot go back one step at a time if you Drill down on an Answer in a Pinboard, without using Answer Explorer.
 
 See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 
@@ -25,7 +25,7 @@ See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 ## Filters
 Use the **Filters** search bar to filter your data. Specify the column values you wish to see, such as *Age group=65+*, and press **Enter** or click **Add**.
 
-You can also use the filtering suggestions Answer Explorer provides, if you do not know which filters to use. You can click **Show more** to see even more suggestions. If you click on a suggested filter, Answer Explorer adds that filter to your visualization.
+You can also use the filtering suggestions Answer Explorer provides, if you do not know which filters you want to use. You can click **Show more** to see even more suggestions. If you click on a suggested filter, Answer Explorer adds that filter to your visualization.
 
 After you add a filter or make any other change to your Answer, you may want to go back to an earlier version of your Answer. You can click the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline} to go back one step, or the Reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
 
@@ -55,7 +55,8 @@ Use **Comparisons** to easily perform a *versus* analysis. For example, Answer E
 ## Save your new answer
 When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the **Search** bar.
 1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline}.
-2. Select **copy and edit** to save your new Answer within ThoughtSpot and continue working with it.
+2. Select **copy and edit**.
+3. **Save** your new Answer within ThoughtSpot and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.
 
 You can also **pin** the current Answer to any Pinboard you have **edit** access to. Click the **pin** icon ![]({{ site.baseurl }}/images/icon-pin.png){: .inline} and select a Pinboard.
