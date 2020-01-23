@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Configure your nodes and install the cluster." />
-<meta property="og:description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Configure your nodes and install the cluster." />
+<meta name="description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs." />
+<meta property="og:description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-20T22:36:38-08:00" />
+<meta property="article:published_time" content="2020-01-22T17:39:05-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-01-20T22:36:38-08:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-01-20T22:36:38-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Configure your nodes and install the cluster.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-01-22T17:39:05-08:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-01-22T17:39:05-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1375,7 +1375,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/latest/admin/setup/active-directory-based-access.html">Enable access through Active Directory</a></li>
+                          <li><a href="/latest/admin/setup/active-directory-based-access.html">Enable SSH through Active Directory</a></li>
                       
                    
                 
@@ -3528,7 +3528,7 @@ $('#toc').on('click', 'a', function() {
   <td><a href="launch-an-instance#security-groups">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#install-cluster">7. Configure your nodes and install the cluster.</a></td></tr>
+  <td><a href="launch-an-instance#prepare-vms">7. Prepare the VMs.</a></td></tr>
 </table>
 
 <h2 id="prerequisites">About the ThoughtSpot AMI</h2>
@@ -3728,7 +3728,7 @@ Add the required storage based on your instance type (either EBS volumes or S3),
   </li>
 </ol>
 
-<h2 id="prepare-the-vms">Prepare the VMs</h2>
+<h2 id="prepare-vms">Prepare the VMs</h2>
 <p>Before installing a ThoughtSpot cluster, an administrator must <a href="/latest/appliance/aws/aws-prepare-vms.html">prepare the VMs.</a></p>
 
   <div class="tags">
@@ -3756,7 +3756,7 @@ Add the required storage based on your instance type (either EBS volumes or S3),
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jan 20, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 1/13/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
