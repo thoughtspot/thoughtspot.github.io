@@ -3229,7 +3229,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    13 minutes
+    12 minutes
   
 </span>-->
 
@@ -3264,15 +3264,6 @@ $('#toc').on('click', 'a', function() {
       <td>Secure shell access. Also used for scp (secure copy).</td>
     </tr>
     <tr>
-      <td>80</td>
-      <td>HTTP</td>
-      <td>HTTP</td>
-      <td>bidirectional</td>
-      <td>All users IP addresses</td>
-      <td>All nodes</td>
-      <td>Hypertext Transfer Protocol for website traffic.</td>
-    </tr>
-    <tr>
       <td>443</td>
       <td>HTTPS</td>
       <td>HTTPS</td>
@@ -3289,42 +3280,6 @@ $('#toc').on('click', 'a', function() {
       <td>Administrators IP addresses</td>
       <td>All nodes</td>
       <td>Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.</td>
-    </tr>
-    <tr>
-      <td>2201</td>
-      <td>HTTP</td>
-      <td>Orion master HTTP</td>
-      <td>bidirectional</td>
-      <td>Administrator IP addresses</td>
-      <td>All nodes</td>
-      <td>Port used to debug the cluster manager.</td>
-    </tr>
-    <tr>
-      <td>2101</td>
-      <td>HTTP</td>
-      <td>Oreo HTTP</td>
-      <td>bidirectional</td>
-      <td>Administrator IP addresses</td>
-      <td>All nodes</td>
-      <td>Port used to debug the node daemon.</td>
-    </tr>
-    <tr>
-      <td>4001</td>
-      <td>HTTP</td>
-      <td>Falcon worker HTTP</td>
-      <td>bidirectional</td>
-      <td>Administrator IP addresses</td>
-      <td>All nodes</td>
-      <td>Port used to debug the data cache.</td>
-    </tr>
-    <tr>
-      <td>4251</td>
-      <td>HTTP</td>
-      <td>Sage master HTTP</td>
-      <td>bidirectional</td>
-      <td>Administrator IP addresses</td>
-      <td>All nodes</td>
-      <td>Port used to debug the search engine.</td>
     </tr>
   </tbody>
 </table>
@@ -3390,30 +3345,30 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td>2181</td>
-      <td>RPC</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>TCP</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
       <td>bidirectional</td>
       <td>All nodes</td>
       <td>All nodes</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
     </tr>
     <tr>
       <td>3181</td>
-      <td>RPC</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>TCP</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
       <td>bidirectional</td>
       <td>All nodes</td>
       <td>All nodes</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
     </tr>
     <tr>
       <td>4181</td>
-      <td>RPC</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>TCP</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
       <td>bidirectional</td>
       <td>All nodes</td>
       <td>All nodes</td>
-      <td>Zookeeper servers listen on this port for client connections</td>
+      <td>Zookeeper servers listen on this RPC port for client connections</td>
     </tr>
     <tr>
       <td>2200</td>
@@ -4280,9 +4235,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 17, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 1/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
