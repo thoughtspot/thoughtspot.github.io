@@ -1657,6 +1657,10 @@ entries:
       - title: Parameters of cluster create
         url: /appliance/hardware/parameters-cluster-create.html
         output: web,refGd
+      - title: Site Survey
+        url: /site-survey.pdf
+        output: web,refGd
+
   - sectiontitle: ThoughtSpot in Practice
     output: web,practGd
     sectionitems:
