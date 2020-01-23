@@ -2814,7 +2814,7 @@ supported on the region you chose for your VM.</div>
 
 <h3 id="choose-a-machine-size">Choose a machine size</h3>
 
-<p>For <strong>Choose a size</strong>, select <code class="highlighter-rouge">E64S_V3 standard</code>.</p>
+<p>Refer to <a href="/4.5/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a VM size that suits your cluster needs.</p>
 
 <p><img src="/4.5/images/azure_choose_disk_size.png" alt="" title="Choose a disk size" /></p>
 
@@ -2829,14 +2829,14 @@ Subnet, and Network Security Group from your Azure support team.</p>
   </li>
   <li>
     <p>Under <strong>Network</strong>, select <strong>Virtual network</strong>, then <strong>Subnet</strong>, then <strong>Public
-IP addresses</strong>, and set those names, addresses, and ranges approriately for your
+IP addresses</strong>, and set those names, addresses, and ranges appropriately for your
 network.</p>
   </li>
   <li>
     <p>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.</p>
 
-    <p>The minimum ports needed are:</p>
+    <p>These are the minimum ports required for operations and debugging:</p>
 
     <table>
       <thead>
@@ -2853,11 +2853,6 @@ processes do not get blocked.</p>
           <td>Secure Shell access</td>
         </tr>
         <tr>
-          <td>80</td>
-          <td>HTTP</td>
-          <td>Web access</td>
-        </tr>
-        <tr>
           <td>443</td>
           <td>HTTPS</td>
           <td>Secure Web access</td>
@@ -2866,21 +2861,6 @@ processes do not get blocked.</p>
           <td>12345</td>
           <td>TCP</td>
           <td>ODBC and JDBC drivers access</td>
-        </tr>
-        <tr>
-          <td>2201</td>
-          <td>HTTP</td>
-          <td>Cluster Debugging</td>
-        </tr>
-        <tr>
-          <td>2101</td>
-          <td>HTTP</td>
-          <td>Node daemon Debugging</td>
-        </tr>
-        <tr>
-          <td>4001</td>
-          <td>HTTP</td>
-          <td>Data Cache Debugging</td>
         </tr>
       </tbody>
     </table>
@@ -3083,9 +3063,9 @@ IPV6INIT=no
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 9, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 1/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

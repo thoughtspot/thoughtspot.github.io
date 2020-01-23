@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/appliance/gcp/about-gcp.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-20T22:28:54-08:00" />
+<meta property="article:published_time" content="2020-01-22T17:30:20-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/gcp/about-gcp.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/gcp/about-gcp.html","headline":"[“GCP node overview”]","dateModified":"2020-01-20T22:28:54-08:00","datePublished":"2020-01-20T22:28:54-08:00","description":"Google Cloud Platform (GCP) can provide memory and CPU for your ThoughtSpot instance.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/appliance/gcp/about-gcp.html"},"url":"https://docs.thoughtspot.com/5.3/appliance/gcp/about-gcp.html","headline":"[“GCP node overview”]","dateModified":"2020-01-22T17:30:20-08:00","datePublished":"2020-01-22T17:30:20-08:00","description":"Google Cloud Platform (GCP) can provide memory and CPU for your ThoughtSpot instance.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3297,12 +3297,41 @@ instance.</p>
 the instance network/storage requirements. In addition, you can choose multiple
 virtual machines (VMs) based on your dataset size.</p>
 
-<p>You must setup the appropriate Firewall Rules in your GCP environment
+<p>You must set up the appropriate Firewall Rules, with the necessary ports open, in your GCP environment
 for your ThoughtSpot deployment. See the <a href="https://cloud.google.com/vpc/docs/firewalls">GCP Firewall Rules</a>
 article for configuration details.</p>
 
 <p>You can find more information about appropriate network policies for your
 ThoughtSpot deployment in the <a href="/5.3/appliance/firewall-ports.html#">network ports reference</a>.</p>
+
+<p>These are the minimum ports required for operations and debugging:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Port</th>
+      <th>Protocol</th>
+      <th>Service</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>22</td>
+      <td>SSH</td>
+      <td>Secure Shell access</td>
+    </tr>
+    <tr>
+      <td>443</td>
+      <td>HTTPS</td>
+      <td>Secure Web access</td>
+    </tr>
+    <tr>
+      <td>12345</td>
+      <td>TCP</td>
+      <td>ODBC and JDBC drivers access</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="a-little-about-gcp">A little about GCP</h2>
 
@@ -3350,7 +3379,7 @@ must be in the same zone to work together.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 20, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

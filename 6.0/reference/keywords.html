@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/reference/keywords.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-20T22:32:45-08:00" />
+<meta property="article:published_time" content="2020-01-22T17:34:22-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Keyword reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Keyword reference”]","dateModified":"2020-01-20T22:32:45-08:00","url":"https://docs.thoughtspot.com/6.0/reference/keywords.html","datePublished":"2020-01-20T22:32:45-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/keywords.html"},"description":"You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Keyword reference”]","dateModified":"2020-01-22T17:34:22-08:00","url":"https://docs.thoughtspot.com/6.0/reference/keywords.html","datePublished":"2020-01-22T17:34:22-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/keywords.html"},"description":"You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1375,7 +1375,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/admin/setup/active-directory-based-access.html">Enable access through Active Directory</a></li>
+                          <li><a href="/6.0/admin/setup/active-directory-based-access.html">Enable SSH through Active Directory</a></li>
                       
                    
                 
@@ -3556,30 +3556,20 @@ examples from within the help center.</p>
    </thead>
    <tbody class="tbody">
       <tr>
-         <td>top</td>
+         <td>top <i>n</i></td>
          <td>
-          <ul><li><code><b>top</b> sales rep by count sales for average revenue &gt; 10000</code></li>
+          <ul><li><code><b>top 10</b> sales rep revenue</code></li>
+          <li><code><b>top</b> sales rep by count sales for average revenue &gt; 10000</code></li>
           <li><code>sales rep average revenue for each region <b>top</b> </code></li> </ul>
          </td>
       </tr>
       <tr>
-         <td>bottom</td>
+         <td>bottom <i>n</i></td>
          <td>
-            <ul><li><code><b>bottom</b> revenue average</code></li>
+            <ul><li><code><b>bottom 25</b> customer by revenue for each sales rep</code></li>
+            <li><code><b>bottom</b> revenue average</code></li>
             <li><code><b>bottom</b> revenue by state</code></li>
             <li><code>customer by revenue for each sales rep <b>bottom</b></code></li></ul>
-         </td>
-      </tr>
-      <tr>
-         <td><i>n</i></td>
-         <td>
-            <code><b>top 10</b> sales rep revenue</code>
-         </td>
-      </tr>
-      <tr>
-         <td><i>n</i></td>
-         <td>
-            <code><b>bottom 25</b> customer by revenue for each sales rep</code>
          </td>
       </tr>
       <tr>
@@ -3593,6 +3583,7 @@ examples from within the help center.</p>
       </tr>
    </tbody>
 </table>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When using the <b>top</b> or <b>bottom</b> keywords without specifying a number (<b><i>n</i></b>), the number defaults to 10.</div>
 
 <h2 id="date">Date</h2>
 
@@ -4282,8 +4273,9 @@ days</code>
      <th>Example</th>
    </tr>
    <tr>
-     <td>in (<i>subsearch</i>)</td>
-     <td><code><b>in</b> (top 10 store name by sales footwear)</code></td>
+     <td><em>attribute</em> in (<em>attribute</em> <em>subsearch</em>)</td>
+     <td><code><em>store name</em> <strong>in</strong> (top 10 <em>store name</em> by sales footwear)</code><br />
+     Must match last attribute before keyword with first attribute inside subsearch.</td>
    </tr>
 </table>
 
@@ -4336,7 +4328,7 @@ days</code>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jan 20, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
