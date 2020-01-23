@@ -3273,7 +3273,7 @@ supported on the region you chose for your VM.</div>
 
 <h3 id="choose-a-machine-size">Choose a machine size</h3>
 
-<p>For <strong>Choose a size</strong>, select <code class="highlighter-rouge">E64S_V3 standard</code>.</p>
+<p>Refer to <a href="/5.0/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</p>
 
 <p><img src="/5.0/images/azure_choose_disk_size.png" alt="" title="Choose a disk size" /></p>
 
@@ -3295,7 +3295,7 @@ network.</p>
     <p>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.</p>
 
-    <p>The minimum ports needed are:</p>
+    <p>These are the minimum ports required for operations and debugging:</p>
 
     <table>
       <thead>
@@ -3312,11 +3312,6 @@ processes do not get blocked.</p>
           <td>Secure Shell access</td>
         </tr>
         <tr>
-          <td>80</td>
-          <td>HTTP</td>
-          <td>Web access</td>
-        </tr>
-        <tr>
           <td>443</td>
           <td>HTTPS</td>
           <td>Secure Web access</td>
@@ -3325,21 +3320,6 @@ processes do not get blocked.</p>
           <td>12345</td>
           <td>TCP</td>
           <td>ODBC and JDBC drivers access</td>
-        </tr>
-        <tr>
-          <td>2201</td>
-          <td>HTTP</td>
-          <td>Cluster Debugging</td>
-        </tr>
-        <tr>
-          <td>2101</td>
-          <td>HTTP</td>
-          <td>Node daemon Debugging</td>
-        </tr>
-        <tr>
-          <td>4001</td>
-          <td>HTTP</td>
-          <td>Data Cache Debugging</td>
         </tr>
       </tbody>
     </table>
@@ -3536,9 +3516,9 @@ $ rm /usr/local/scaligent/bin/setup-net-devices.sh
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Nov 18, 2019 <br />
-         &copy; 2015, 2019 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+        Generated: Jan 22, 2020 <br />
+         &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
+         <!-- <span>Page last updated:</span> 1/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
