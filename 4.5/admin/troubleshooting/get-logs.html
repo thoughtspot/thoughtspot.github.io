@@ -2800,7 +2800,7 @@ collect and from what time periods.</p>
 
 <p>This command collects logs from a specific time window:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli logs collect --include system,orion --from 20150520-12:00:00 --to 20150522-12:30:00
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli logs collect --include system,orion --from 20150520-12:00 --to 20150522-12:30
 </code></pre></div></div>
 
 <p>Advanced usage alert! You can also use <code class="highlighter-rouge">--include</code> and <code class="highlighter-rouge">--exclude</code> to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in <code class="highlighter-rouge">--include</code> starting with <code class="highlighter-rouge">/</code> to find(1), and all entries in <code class="highlighter-rouge">--exclude</code> which are not selectors to find(1) using the <code class="highlighter-rouge">-not -path</code> flag.</p>
@@ -2841,9 +2841,9 @@ collect and from what time periods.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Jan 9, 2020 <br />
+        Generated: Jan 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 1/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
