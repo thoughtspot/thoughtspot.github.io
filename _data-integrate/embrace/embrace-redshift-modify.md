@@ -1,22 +1,22 @@
 ---
-title: [Modify a connection]
+title: [Modify a Redshift connection]
 last_updated: 11/12/2019
 summary: Learn how to modify a connection and its tables after creating a new Embrace database connection.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify an Embrace database connection in the following ways:
+You can modify an Embrace Redshift connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
 - Delete a table
 - Delete a connection
 
-## Editing a connection
+## Editing a Redshift connection
 
 You can edit a connection to add tables and columns.
 
-To edit a connection:
+To edit a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -36,7 +36,7 @@ To edit a connection:
 
 6. Click **Update** to save the connection details.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
+To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-modify.html#delete-a-table).
 
 ## Remapping a connection
 
