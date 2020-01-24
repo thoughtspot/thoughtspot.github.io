@@ -113,6 +113,8 @@ To quickly onboard new users and teach them how to effectively use ThoughtSpot, 
 <br>
 <script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
+See [the Getting Started sidebar]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+
 ### Sharing
 
 We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.
