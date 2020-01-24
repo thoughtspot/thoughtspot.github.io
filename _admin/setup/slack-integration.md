@@ -19,7 +19,7 @@ authorization.
 
 Here are the high level steps:
 
-1. Work with <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>
+1. Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html)
  to install the Spot Slack bot on your cluster.
 2. Log into ThoughtSpot.
 3. Label answers, pinboards, and other objects with the spot sticker.
@@ -29,6 +29,6 @@ Here are the high level steps:
 
 ## Related Information
 
-Relevant `tscli` commands are [here]({{ site.baseurl }}/reference/tscli-command-ref.html#spot), but these will not work until Spot is enabled by ThoughtSpot Support. Support
+Relevant `tscli` commands are in the tscli command reference (See https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html#spot), but these will not work until Spot is enabled by ThoughtSpot Support. Support
 will work with you to install Spot, and then provide the rest of the workflow to
 you, including `tscli` command usage.

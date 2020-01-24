@@ -133,7 +133,7 @@ Follow these instructions to install the SSL certificate using tscli:
     $ tscli ssl add-cert <key> <certificate>
     ```
 
-6. To test that the certificate is correctly installed, [log into the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
+6. To test that the certificate is correctly installed, sign into the ThoughtSpot application (https://docs.thoughtspot.com/6.0/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
 
      You should see that the application's URL begins with `https://`.
 

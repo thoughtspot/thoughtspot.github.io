@@ -1,20 +1,40 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: November 7, 2019
+last_updated: December, 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0<!--.1--> is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+<!--* [6.0.1 Fixed Issues](#6-0-1-fixed)-->
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
 
+<!--{: id="6-0-1-fixed"}
+## 6.0.1 Fixed Issues
+
+The following issues are fixed in the 6.0.1 release:
+
+- Search autocomplete occasionally displays an error when using a bulk filter.
+- In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using `versus`(example: `2019 vs 2018``net sales`).
+- Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.
+- A yellow bar sometimes appears during search, causing search not to work.
+- Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.
+- After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.
+- The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.
+- Common keywords, like `this year`, `date daily`,`last quarter`, and `week of year` do not reflect the settings of a custom calendar.
+- The title page of an exported PDF does not display the full date.
+- The `date` filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard `date` filter.
+- Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
+
+
+-->
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
@@ -27,7 +47,7 @@ See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
 ### Embrace for Snowflake and Amazon Redshift
 
-In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. As with Snowflake, you can sync the data into ThoughtSpot later. **Support for Amazon Redshift is in beta**.
+In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. <!--As with Snowflake, you can sync the data into ThoughtSpot later.--> **Support for Amazon Redshift is in beta**.
 
 ThoughtSpot now supports the following features for linked tables:
   - Search suggestions for column values
@@ -38,12 +58,17 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 
 ### Monitor headlines
 
-The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
+The Monitor feature enables you to follow headline metrics, and get daily updates in your mailbox, on your ThoughtSpot home page, and in the SpotIQ Follow management interface.
 
-* To monitor headlines, click the **Follow** icon in the top right corner of the Pinboard.
+For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html)  
+
+ **Support for Monitor is in beta**.
+
+* To monitor headlines, click the **Follow** icon in the top right corner of the insight.
+
   ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
 
-* The **SpotIQ Follow** interface lists all the headlines you follow, and the change from last run.
+* The **SpotIQ Follow** interface lists all the headlines you follow, and the changes from last run.
   ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
 
 * Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose. And you can change to table view, or to another chart type to better visualize your changing metric.
@@ -170,7 +195,7 @@ These features are currently in Beta. Please contact us if you are interested in
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0 release
+If you are running one of the following versions, you can upgrade to the 6.0<!--.1--> release
 directly:
 
 * 5.3.x to 6.0
