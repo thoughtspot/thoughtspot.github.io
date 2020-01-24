@@ -2,7 +2,7 @@
 title: [GCP configuration options]
 
 
-last_updated: tbd
+last_updated: 1/9/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -10,12 +10,12 @@ ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) in
 - Mode 1: Compute VMs + SSD Persistent Disk storage-only
 - Mode 2: Compute VMs + SSD Persistent Disk and Google Cloud Storage (GCS).
 
-For more information about Persistant Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
+For more information about Persistent Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
 
 For more information about Google Cloud Storage, see [Cloud Storage Buckets](https://cloud.google.com/compute/docs/disks/#gcsbuckets){:target="_blank"} in Google's Cloud documentation.
 
 All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
-(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
+(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across different zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
 
 ## ThoughtSpot GCP instance types
 

@@ -75,7 +75,7 @@ You may choose to disable the access after ThoughtSpot Support finishes the trou
 
 To enable remote support, follow these steps:
 
-1. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and open a support ticket for making the appropriate reverse tunnel settings on our end.
+1. Contact ThoughtSpot Support (https://docs.thoughtspot.com/6.0/admin/misc/contact.html) and open a support ticket for making the appropriate reverse tunnel settings on our end.
     Provide the cluster name of the cluster for which you want to enable remote support.
 2. After the ticket is completed, continue with the remaining steps in this procedure to make the settings on your side.
 3. Log into the Linux shell using SSH.
@@ -101,7 +101,7 @@ To enable remote support, follow these steps:
     $ tscli support start-remote
     ```
 
-7. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and test the setup with your ThoughtSpot Support contact.
+7. Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) and test your setup.
 8. After your remote session with ThoughtSpot Support is over, turn the remote tunnel off until you need to use it again:
 
     ```
