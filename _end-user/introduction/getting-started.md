@@ -48,7 +48,10 @@ You can always activate **Getting Started** again. To show the Getting Started s
 
 ## Learning resources
 
-Click on the **Getting Started** sidebar to expand it and see the **Learning Resources** available to you:
+Click on the **Getting Started** sidebar to expand it and see the **Learning Resources** available to you. **Getting Started** contains information for new users on ThoughtSpot's main features, such as **Answers** and **Pinboards**. It also includes a **Navigation Overview**, which walks you through the options on ThoughtSpot's top menu bar.
+
+<!--
+Commenting out after discussion with Roza and Adi. Will probably delete. If kept, ensure only one version of pictures remains (markdown or html) 
 * [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
 * [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)
 *  [Working with Answers]({{ site.baseurl }}#working-with-answers)
@@ -58,21 +61,21 @@ Click on the **Getting Started** sidebar to expand it and see the **Learning Res
 * [Hide Getting Started Menu]({{ site.baseurl }}/end-user/introduction/getting-started.html#hide-getting-started-menu)
 
 ![Learning Resources]({{ site.baseurl }}/images/gettingstarted-open-menu.png "Learning resources")
-<!--{% include image.html file="gettingstarted-open-menu.png" title="Learning resources" alt="Open the Getting Started menu to see the Learning Resources." caption="Learning resources" %}-->
+<!--{% include image.html file="gettingstarted-open-menu.png" title="Learning resources" alt="Open the Getting Started menu to see the Learning Resources." caption="Learning resources" %}
 
 {: id="navigation-overview"}
 ## Navigation overview
 The **Navigation Overview** teaches you about the menu bar at the top of the page.
 
 ![Navigation Overview]({{ site.baseurl }}/images/getting-started.gif "Navigation Overview")
-<!--{% include image.html file="getting-started.gif" title="Navigation overview" alt="Gif of Navigation Overview: Search, Answers, Pinboards, and Help" caption="Navigation overview" %}-->
+<!--{% include image.html file="getting-started.gif" title="Navigation overview" alt="Gif of Navigation Overview: Search, Answers, Pinboards, and Help" caption="Navigation overview" %}
 
 1. **Search**<br>
     Search your data in the **Search** tab.<br>
     Click **next** when you are ready to move on to the next topic, or click the **x** at the top right of the box to leave the navigation overview.
 
     ![Navigation Overview - Search]({{ site.baseurl }}/images/gettingstarted-searchnext.png "Navigation Overview - Search")
-    <!--{% include image.html file="gettingstarted-searchnext.png" title="Navigation overview - search" alt="Click next to move on or click x to leave." caption="Navigation overview - search" %}-->
+    <!--{% include image.html file="gettingstarted-searchnext.png" title="Navigation overview - search" alt="Click next to move on or click x to leave." caption="Navigation overview - search" %}
 
     For more information on Search, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#search).
 
@@ -81,7 +84,7 @@ The **Navigation Overview** teaches you about the menu bar at the top of the pag
     Click **next** to move on, or click **back** if you want to review **Search** again.
 
     ![Navigation Overview - Answers]({{ site.baseurl }}/images/gettingstarted-answers-backnext.png "Navigation Overview - Answers")
-    <!--{% include image.html file="gettingstarted-answers-backnext.png" title="Navigation overview - answers" alt="Click next to move on or click back to go back to search." caption="Navigation overview - answers" %}-->   
+    <!--{% include image.html file="gettingstarted-answers-backnext.png" title="Navigation overview - answers" alt="Click next to move on or click back to go back to search." caption="Navigation overview - answers" %}   
 
     For more information on Answers, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#answers).
 
@@ -90,7 +93,7 @@ The **Navigation Overview** teaches you about the menu bar at the top of the pag
     Click **next** to move on.
 
     ![Navigation Overview - Pinboards]({{ site.baseurl }}/images/gettingstarted-pinboard.png "Navigation Overview - Pinboards")
-    <!--{% include image.html file="gettingstarted-pinboard.png" title="Navigation Overview - Pinboards" alt="View saved Pinboards in the Pinboards tab." caption="Navigation Overview - Pinboards" %}-->
+    <!--{% include image.html file="gettingstarted-pinboard.png" title="Navigation Overview - Pinboards" alt="View saved Pinboards in the Pinboards tab." caption="Navigation Overview - Pinboards" %}
 
     For more information on Pinboards, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#pinboards).
 
@@ -99,7 +102,7 @@ The **Navigation Overview** teaches you about the menu bar at the top of the pag
     Click **done** to exit the navigation overview.
 
     ![Navigation Overview - help]({{ site.baseurl }}/images/gettingstarted-help.png "Navigation Overview - help")
-    <!--{% include image.html file="gettingstarted-help.png" title="Navigation overview - help" alt="Click done to exit the navigation overview." caption="Navigation overview - help" %}-->
+    <!--{% include image.html file="gettingstarted-help.png" title="Navigation overview - help" alt="Click done to exit the navigation overview." caption="Navigation overview - help" %}
 
     For more information on Help, see [Finding your way around]({{ site.baseurl }}/end-user/introduction/about-navigating-thoughtspot.html#help-icon).
 
@@ -110,7 +113,7 @@ When you click **Getting Started** again, notice that the **Navigation Overview*
 In **Your First Search**, watch a short video about how to search in ThoughtSpot.
 
 ![Your first search]({{ site.baseurl }}/images/gettingstarted-searchvideo.png "Your first search")
-<!--{% include image.html file="gettingstarted-searchvideo.png" title="Your first search" alt="Watch a short video to learn how to search ThoughtSpot." caption="Your first search" %}-->
+<!--{% include image.html file="gettingstarted-searchvideo.png" title="Your first search" alt="Watch a short video to learn how to search ThoughtSpot." caption="Your first search" %}
 
 View the [keyword reference]({{ site.baseurl }}/reference/keywords.html).
 
@@ -121,7 +124,7 @@ Click **done** to exit **Your First Search**.
 In **Working with Answers**, watch a short video about saved search results, or **Answers**.
 
 ![Working with answers]({{ site.baseurl }}/images/gettingstarted-workingwithanswers.png "Working with answers")
-<!--{% include image.html file="gettingstarted-workingwithanswers.png" title="Working with answers" alt="Watch a short video about answers." caption="Working with answers" %}-->
+<!--{% include image.html file="gettingstarted-workingwithanswers.png" title="Working with answers" alt="Watch a short video about answers." caption="Working with answers" %}
 
 Click **done** to exit **Working with Answers**.
 
@@ -130,7 +133,7 @@ Click **done** to exit **Working with Answers**.
 In **Intro to Pinboards**, watch a short video about pinboards.
 
 ![Intro to Pinboards]({{ site.baseurl }}/images/gettingstarted-pinboardvideo.png "Intro to Pinboards")
-<!--{% include image.html file="gettingstarted-pinboardvideo.png" title="Intro to pinboards" alt="Watch a short video to learn how to use pinboards." caption="Intro to pinboards" %}-->
+<!--{% include image.html file="gettingstarted-pinboardvideo.png" title="Intro to pinboards" alt="Watch a short video to learn how to use pinboards." caption="Intro to pinboards" %}
 
 Click **done** to exit **Intro to Pinboards**.
 
@@ -139,7 +142,7 @@ Click **done** to exit **Intro to Pinboards**.
 In **Refining Data Using Filters**, watch a short video about filters.
 
 ![Refining data using filters]({{ site.baseurl }}/images/gettingstarted-filtervideo.png "Refining data using filters")
-<!--{% include image.html file="gettingstarted-filtervideo.png" title="Refining data using filters" alt="Watch a short video to learn how to use filters." caption="Refining data using filters" %}-->
+<!--{% include image.html file="gettingstarted-filtervideo.png" title="Refining data using filters" alt="Watch a short video to learn how to use filters." caption="Refining data using filters" %}
 
 For more information on filters, see [Understand Filters]({{ site.baseurl }}/complex-search/about-filters.html).
 
@@ -150,8 +153,10 @@ Click **done** to exit **Refining Data Using Filters**.
 In **Automated Insights Using SpotIQ**, watch a short video about SpotIQ.
 
 ![Automated insights using SpotIQ]({{ site.baseurl }}/images/gettingstarted-spotiqvideo.png "Automated insights using SpotIQ")
-<!--{% include image.html file="gettingstarted-spotiqvideo.png" title="Automated insights using SpotIQ" alt="Watch a short video to learn how to use SpotIQ for automated insights into your data." caption="Automated insights using SpotIQ" %}-->
+<!--{% include image.html file="gettingstarted-spotiqvideo.png" title="Automated insights using SpotIQ" alt="Watch a short video to learn how to use SpotIQ for automated insights into your data." caption="Automated insights using SpotIQ" %}
 
 Click **done** to exit **Automated Insights Using SpotIQ**.
 
 For more information on SpotIQ, see [What is SpotIQ?]({{ site.baseurl }}/spotiq/whatisspotiq.html).
+
+-->
