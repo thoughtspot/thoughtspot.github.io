@@ -121,6 +121,8 @@ We improved the experience of sharing Answers and Pinboards through better email
 <br>
 <script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
+See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
+
 ### Access request and grant
 
 To enhance the ease of sharing, we simplified and reinforced the workflow for access request and grant of privileges to Pinboards, Answers, and Data sources.
