@@ -49,7 +49,7 @@ To share a pinboard from within the pinboard, follow these steps.
 
 {: id="specify-permissions"}
 ## Specify permissions
-5. After you click **Share**, the sharing dialog box appears.
+5. After you click the **Share** icon, the sharing dialog box appears.
 
     ![The sharing dialog box]({{ site.baseurl }}/images/sharing-modal.png "The sharing dialog box")
     <!--{% include image.html file="sharing-modal.png" title="The sharing dialog box" alt="The sharing window pops up once you save your pinboard and click share." caption="The sharing dialog box" %}-->
