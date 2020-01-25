@@ -1486,27 +1486,63 @@ entries:
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs
+  - sectiontitle: Embrace
+    output: web,pdf
+    sectionitems:
+    - title: Overview
+      url: /data-integrate/embrace/embrace-intro.html
+      output: web,embraceGd
+    - levelTwoTitle: Snowflake
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-snowflake-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-snowflake-modify.html
+        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-snowflake-best.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-snowflake-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: Redshift
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-redshift-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-redshift-modify.html
+        output: web,embraceGd
+#      - title: Best practices
+#        url: /data-integrate/embrace/embrace-redshift-best.html
+#        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-redshift-reference.html
+        output: web,embraceGd
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-    - levelTwoTitle: Embrace
-      output: web,digBk
-      levelTwoItems:
-      - title: Overview
-        url: /data-integrate/embrace/embrace-intro.html
-        output: web,digBk
-      - title: Add a connection
-        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
-        output: web,digBk
-      - title: Modify a connection
-        url: /data-integrate/embrace/getting-started/modify-a-connection.html
-        output: web,apgBk
-      - title: Connectors reference
-        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
-        output: web,digBk
+#    - levelTwoTitle: Embrace
+#      output: web,digBk
+#      levelTwoItems:
+#      - title: Overview
+#        url: /data-integrate/embrace/embrace-intro.html
+#        output: web,digBk
+#      - title: Add a connection
+#        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+#        output: web,digBk
+#      - title: Modify a connection
+#        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+#        output: web,apgBk
+#      - title: Connectors reference
+#        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+#        output: web,digBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
       output: web,digBk

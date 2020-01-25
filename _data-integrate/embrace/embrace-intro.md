@@ -46,9 +46,7 @@ The following features are NOT available in Embrace:
 
 ## Next steps
 
--   **[Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)**  
-Create the connection between ThoughtSpot and tables in an external database.
--   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
-Edit, remap or delete a connection to tables in an external database.
--   **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
-Source cloud data connectors, and their connection credentials, supported by Embrace.
+-   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
+Create the connection between ThoughtSpot and tables in an external Snowflake database.
+-   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
+Create the connection between ThoughtSpot and tables in an external Redshift database.
