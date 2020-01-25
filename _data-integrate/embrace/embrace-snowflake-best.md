@@ -217,7 +217,7 @@ TQL&gt; ALTER TABLE "HO_Retail_Sales_Fact"
 {: id="connect-snowflake"}
 ## Connect to Snowflake through Embrace
 
-Follow the general steps in [Add a connection to Snowflake]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html#snowflake).
+Follow the general steps in [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html).
 
 In the following screen, the **Account name** is the first part of the URL that you use to access Snowflake.
 

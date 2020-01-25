@@ -1,6 +1,6 @@
 ---
 title: [Snowflake connection reference]
-summary: Learn about the external database connectors necessary for ThoughtSpot Embrace.
+summary: Learn about the fields used to create a Snowflake connection with ThoughtSpot Embrace.
 last_updated: 01/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
