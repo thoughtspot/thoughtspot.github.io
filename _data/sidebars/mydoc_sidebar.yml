@@ -1522,6 +1522,9 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-redshift-reference.html
         output: web,embraceGd
+    - title: Cloud Express for Embrace
+      url: /data-integrate/embrace/embrace-cloud-express.html
+      output: web,embraceGd
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
