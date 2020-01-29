@@ -9,8 +9,8 @@ permalink: /:collection/:path.html
 Here is a list of the fields of a Snowflake connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
 
  - **Connection name**: Mandatory. Enter a new Snowflake connection name.
- - **Description**: Optional. Provide a short description about the connection.
- - **Account Name**: Mandatory. Enter the account name associated with the Snowflake connection.
+ - **Connection description**: Optional. Provide a short description about the connection.
+ - **Account name**: Mandatory. Enter the account name associated with the Snowflake connection.
  - **User**: Mandatory. Enter the Snowflake account username.
  - **Password**: Mandatory. Enter the Snowflake account password.
  - **Role**: Mandatory. Specify the privilege of the user.

@@ -10,8 +10,5 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
 
  - **Connection name**: Mandatory. Enter a name for your BigQuery connection.
  - **Connection description**: Optional. Provide a short description about the connection.
- - **Host**: Mandatory. Enter the host name associated with the BigQuery database.
- - **Port**: Mandatory. Enter the port number associated with the BigQuery database.
- - **User**: Mandatory. Enter the BigQuery account username.
- - **Password**: Mandatory. Enter the BigQuery account password.
- - **Database**: Mandatory. Specify the database associated with the account.
+ - **Project id**: Mandatory. Enter the project ID associated with the BigQuery database.
+ - **Service account**: Mandatory. Enter the service account associated with the BigQuery database.
