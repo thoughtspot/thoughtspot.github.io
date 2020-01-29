@@ -15,7 +15,7 @@ To add a new connection to Snowflake:
 
      ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
 
-3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Next**.
+3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Continue**.
 
      ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type")
 

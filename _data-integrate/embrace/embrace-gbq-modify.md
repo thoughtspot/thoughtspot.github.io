@@ -36,7 +36,7 @@ To edit a BigQuery connection:
 
 6. Click **Update** to save the connection details.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-bigquery-modify.html#deleting-a-table-from-a-bigquery-connection).
+To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-modify.html#deleting-a-table-from-a-bigquery-connection).
 
 ## Remapping a BigQuery connection
 

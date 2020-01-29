@@ -52,7 +52,7 @@ The following features are NOT available in Embrace:
 Create the connection between ThoughtSpot and tables in an external Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
 Create the connection between ThoughtSpot and tables in an external BigQuery database.
--   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-bigquery-add.html)**  
+-   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
 Create the connection between ThoughtSpot and tables in an external Synapse database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
 Create the connection between ThoughtSpot and tables in an external Redshift database.

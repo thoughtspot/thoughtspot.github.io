@@ -30,11 +30,15 @@ To edit a connection:
 
    ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
 
-5. Expand the database table drop-down menu, and select the tables and columns you want to add.
+5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
-   ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+6. On the Redshift connection details page, make any changes needed, and then click **Continue**.
 
-6. Click **Update** to save the connection details.
+7. Expand the database table drop-down menu, and select the tables and columns you want to add.
+
+   <!-- ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
+
+8. Click **Update** to save the connection details.
 
 To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection).
 

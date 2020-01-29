@@ -1526,13 +1526,13 @@ entries:
       output: web,embraceGd
       levelTwoItems:
       - title: Add a connection
-        url: /data-integrate/embrace/embrace-bigquery-add.html
+        url: /data-integrate/embrace/embrace-gbq-add.html
         output: web,embraceGd
       - title: Modify a connection
-        url: /data-integrate/embrace/embrace-bigquery-modify.html
+        url: /data-integrate/embrace/embrace-gbq-modify.html
         output: web,embraceGd
       - title: Reference
-        url: /data-integrate/embrace/embrace-bigquery-reference.html
+        url: /data-integrate/embrace/embrace-gbq-reference.html
         output: web,embraceGd
     - levelTwoTitle: Synapse
       output: web,embraceGd
