@@ -1,6 +1,6 @@
 ---
 title: [Modify a Snowflake connection]
-last_updated: 11/12/2019
+last_updated: 1/29/2020
 summary: Learn how to modify a Snowflake connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,11 +28,11 @@ To edit a connection:
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+   ![Edit connection]({{ site.baseurl }}/images/snowflake-editconnection.png "Edit connection")
 
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
-6. On the Redshift connection details page, make any changes needed, and then click **Continue**.
+6. On the Snowflake connection details page, make any changes needed, and then click **Continue**.
 
 7. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
@@ -58,11 +58,11 @@ To remap a connection:
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
+    ![Remap a connection]({{ site.baseurl }}/images/snowflake-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
+    !["Download the source mapping file"]({{ site.baseurl }}/images/snowflake-downloadyaml.png "Download the source mapping file")
 
 6. Edit and update the file as required.
 
@@ -87,7 +87,7 @@ To delete a table:
 
 5. Click **Delete**.
 
-    ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
+    ![Delete a connection table]({{ site.baseurl }}/images/snowflake-deletetable.png "Delete a connection table")
 
     {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
 

@@ -15,7 +15,7 @@ The Snowflake warehouse uses more flexible requirements for storing data, such a
 
 For example, if you connect to the Snowflake Free Trail sample WEATHER dataset, and search it in ThoughtSpot, the `DAILY_14_TOTAL` table features JSON data.
 
-![JSON data in Snowflake]({{ site.baseurl }}/images/snowflake-json-data.png "JSON data in Snowflake")
+![JSON data in Snowflake]({{ site.baseurl }}/images/snowflake-jsondata.png "JSON data in Snowflake")
 
 To make this data searchable in ThoughtSpot, you must first create a view in Snowflake, which effectively makes the JSON data into relational (table) data. You can then search this data in ThoughtSpot, and generate chart and table results from your searches. This process is called “schema on read”.
 
@@ -190,7 +190,7 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
 </dl>
 
 {: id="add-fk-snowflake"}
-**Example 1: adding a foreign key in Snowlake**
+**Example 1: adding a foreign key in Snowflake**
 
 For example, you can add a foreign key to Retail Sales schema in Snowflake by running the following `ALTER TABLE` statement. Also, contrast it with [Example 2](#add-fk-thoughtspot):
 
@@ -221,7 +221,7 @@ Follow the general steps in [Add a Snowflake connection]({{ site.baseurl }}/data
 
 In the following screen, the **Account name** is the first part of the URL that you use to access Snowflake.
 
-![Snowflake connection details]({{ site.baseurl }}/images/snowflake-connection-details.png "Snowflake connection details")
+![Snowflake connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Snowflake connection details")
 
 If you cannot find your **Full account name** in Snowflake, see the following examples for determining your account based on the account name, cloud platform, and region. Assume that the **account name** is `xy12345`.
 
