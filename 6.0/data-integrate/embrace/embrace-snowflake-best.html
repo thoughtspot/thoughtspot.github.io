@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-best.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-25T08:53:18-08:00" />
+<meta property="article:published_time" content="2020-01-30T09:49:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Best practices for Embrace with Snowflake”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Best practices for Embrace with Snowflake”]","dateModified":"2020-01-25T08:53:18-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-best.html","datePublished":"2020-01-25T08:53:18-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-best.html"},"description":"After connecting to Snowflake through ThoughtSpot Embrace, you may notice that some things don’t work as you expect. This article lists best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Best practices for Embrace with Snowflake”]","dateModified":"2020-01-30T09:49:09-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-best.html","datePublished":"2020-01-30T09:49:09-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-best.html"},"description":"After connecting to Snowflake through ThoughtSpot Embrace, you may notice that some things don’t work as you expect. This article lists best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3107,6 +3107,60 @@ var ss360Config = {
                   </li>
               
             
+              
+              <li class="levelTwo">
+                  <a href="#">BigQuery</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-add.html">Add a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-modify.html">Modify a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-reference.html">Reference</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Synapse</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-add.html">Add a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-modify.html">Modify a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-reference.html">Reference</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
         </ul>
      </li>
      
@@ -3575,7 +3629,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>For example, if you connect to the Snowflake Free Trail sample WEATHER dataset, and search it in ThoughtSpot, the <code class="language-plaintext highlighter-rouge">DAILY_14_TOTAL</code> table features JSON data.</p>
 
-<p><img src="/6.0/images/snowflake-json-data.png" alt="JSON data in Snowflake" title="JSON data in Snowflake" /></p>
+<p><img src="/6.0/images/snowflake-jsondata.png" alt="JSON data in Snowflake" title="JSON data in Snowflake" /></p>
 
 <p>To make this data searchable in ThoughtSpot, you must first create a view in Snowflake, which effectively makes the JSON data into relational (table) data. You can then search this data in ThoughtSpot, and generate chart and table results from your searches. This process is called “schema on read”.</p>
 
@@ -3757,7 +3811,7 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
   </dlentry>
 </dl>
 
-<p id="add-fk-snowflake"><strong>Example 1: adding a foreign key in Snowlake</strong></p>
+<p id="add-fk-snowflake"><strong>Example 1: adding a foreign key in Snowflake</strong></p>
 
 <p>For example, you can add a foreign key to Retail Sales schema in Snowflake by running the following <code class="language-plaintext highlighter-rouge">ALTER TABLE</code> statement. Also, contrast it with <a href="#add-fk-thoughtspot">Example 2</a>:</p>
 
@@ -3785,7 +3839,7 @@ TQL&gt; ALTER TABLE "HO_Retail_Sales_Fact"
 
 <p>In the following screen, the <strong>Account name</strong> is the first part of the URL that you use to access Snowflake.</p>
 
-<p><img src="/6.0/images/snowflake-connection-details.png" alt="Snowflake connection details" title="Snowflake connection details" /></p>
+<p><img src="/6.0/images/snowflake-connectiondetails.png" alt="Snowflake connection details" title="Snowflake connection details" /></p>
 
 <p>If you cannot find your <strong>Full account name</strong> in Snowflake, see the following examples for determining your account based on the account name, cloud platform, and region. Assume that the <strong>account name</strong> is <code class="language-plaintext highlighter-rouge">xy12345</code>.</p>
 
@@ -3887,7 +3941,7 @@ TQL&gt; ALTER TABLE "HO_Retail_Sales_Fact"
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jan 25, 2020 <br />
+        Generated: Jan 30, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 01/15/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
