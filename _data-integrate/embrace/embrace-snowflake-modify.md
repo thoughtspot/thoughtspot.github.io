@@ -32,15 +32,15 @@ To edit a connection:
 
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
-6. On the Redshift connection details page, make any changes needed, and then click **Continue**.
+6. On the Snowflake connection details page, make any changes needed, and then click **Continue**.
 
 7. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
    <!-- ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
 
-8. Click **Update** to save the connection details.
+8. Click **Update**, and then click **Confirm** to save the updated connection detail.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection).
+To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection).
 
 ## Remapping a Snowflake connection
 
@@ -64,7 +64,7 @@ To remap a connection:
 
     ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
 
-6. Edit and update the file as required.
+6. Edit the file, as required, and save it.
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
@@ -89,9 +89,11 @@ To delete a table:
 
     ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
 
-    {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
+    If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-with-dependent-objects)
 
-6. Click the link for each object to modify or delete it.
+### Deleting a table with dependent objects
+
+- In the *Cannot delete* window, click the link for each object to modify or delete it.
 
    When all dependencies are removed, you can delete the table.
 
@@ -110,7 +112,7 @@ To delete a connection:
 
 3. Check the box next to the connection you want to delete.
 
-4. Click **Delete**.
+4. Click **Delete**, and then click **Delete** again to confirm.
 
    ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
 
@@ -120,4 +122,4 @@ To delete a connection:
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
-6. When all its dependencies are removed, delete the connection by clicking **Delete**.
+6. When all its dependencies are removed, delete the connection by clicking **Delete**, and then click **Delete** to confirm.

@@ -19,7 +19,7 @@ To add a new connection to Snowflake:
 
      ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type")
 
-4. Enter the connection details for your Snowflake data source, and click **Next**.
+4. Enter the connection details for your Snowflake data source, and click **Continue**.
 
     ![]({{ site.baseurl }}/images/new-connection-creds.png "Select a connection type")
 
@@ -29,10 +29,7 @@ To add a new connection to Snowflake:
 
     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
 
-   Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
-   - Search your external database, by clicking **Search now**.
-
-   No matter which option you choose here, you can do any of them at any time later.
+   Once the connection is added, you can search your Snowflake database right away by clicking **Search now**.
 
    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
