@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-modify.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-25T08:53:18-08:00" />
+<meta property="article:published_time" content="2020-01-30T09:49:09-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Modify a Snowflake connection”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Modify a Snowflake connection”]","dateModified":"2020-01-25T08:53:18-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-modify.html","datePublished":"2020-01-25T08:53:18-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-modify.html"},"description":"You can modify an Embrace Snowflake connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Modify a Snowflake connection”]","dateModified":"2020-01-30T09:49:09-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-modify.html","datePublished":"2020-01-30T09:49:09-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-modify.html"},"description":"You can modify an Embrace Snowflake connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3107,6 +3107,60 @@ var ss360Config = {
                   </li>
               
             
+              
+              <li class="levelTwo">
+                  <a href="#">BigQuery</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-add.html">Add a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-modify.html">Modify a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-gbq-reference.html">Reference</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
+                  <a href="#">Synapse</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-add.html">Add a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-modify.html">Modify a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.0/data-integrate/embrace/embrace-synapse-reference.html">Reference</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
         </ul>
      </li>
      
@@ -3558,7 +3612,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span>
  -->
@@ -3594,19 +3648,26 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Click <strong>Edit connection</strong> at the upper-right-hand side of the page.</p>
 
-    <p><img src="/6.0/images/edit-connection.png" alt="" title="edit Sources tab" /></p>
+    <p><img src="/6.0/images/snowflake-editconnection.png" alt="Edit connection" title="Edit connection" /></p>
+  </li>
+  <li>
+    <p>On the Choose connection type page, change the connection name or description (if needed), and then click <strong>Continue</strong>.</p>
+  </li>
+  <li>
+    <p>On the Snowflake connection details page, make any changes needed, and then click <strong>Continue</strong>.</p>
   </li>
   <li>
     <p>Expand the database table drop-down menu, and select the tables and columns you want to add.</p>
 
-    <p><img src="/6.0/images/connection-update.png" alt="" title="Edit connection dialog box" /></p>
+    <p><img src="/6.0/images/redshift-edittables.png" alt="Select tables and columns" title="Select tables and columns" />
+<!-- ![](/6.0/images/connection-update.png "Edit connection dialog box") --></p>
   </li>
   <li>
-    <p>Click <strong>Update</strong> to save the connection details.</p>
+    <p>Click <strong>Update</strong>, and then click <strong>Confirm</strong> to save the updated connection detail.</p>
   </li>
 </ol>
 
-<p>To remove a table from a connection, delete it from the connection details page. For more information, see <a href="/6.0/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection">Delete a table</a>.</p>
+<p>To remove a table from a connection, delete it from the connection details page. For more information, see <a href="/6.0/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection">Deleting a table</a>.</p>
 
 <h2 id="remapping-a-snowflake-connection">Remapping a Snowflake connection</h2>
 
@@ -3629,15 +3690,15 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Click the More Info icon <img src="/6.0/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> and select <strong>Remapping</strong> on the upper-right-hand side of the page.</p>
 
-    <p><img src="/6.0/images/embrace-remapping.png" alt="" title="remap a connection" /></p>
+    <p><img src="/6.0/images/snowflake-remapping.png" alt="Remap a connection" title="Remap a connection" /></p>
   </li>
   <li>
     <p>Click <strong>Download</strong> to download the source mapping file.</p>
 
-    <p><img src="/6.0/images/embrace-remapping-download.png" alt="" title="remap connection" /></p>
+    <p><img src="/6.0/images/snowflake-downloadyaml.png" alt="&quot;Download the source mapping file&quot;" title="Download the source mapping file" /></p>
   </li>
   <li>
-    <p>Edit and update the file as required.</p>
+    <p>Edit the file, as required, and save it.</p>
 
     <p><img src="/6.0/images/embrace-yaml.png" alt="" title="Edit yaml" /></p>
   </li>
@@ -3667,20 +3728,25 @@ $('#toc').on('click', 'a', function() {
     <p>Find the table you want to delete in the list, and check the box next to its name.</p>
   </li>
   <li>
-    <p>Click <strong>Delete</strong>.</p>
+    <p>Click <strong>Delete</strong>, and then click <strong>Delete</strong> again to confirm.</p>
 
-    <p><img src="/6.0/images/delete-table.png" alt="" title="delete a connection table" /></p>
+    <p><img src="/6.0/images/snowflake-deletetable.png" alt="Delete a connection table" title="Delete a connection table" /></p>
 
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects.</div>
+    <p>If you attempt to delete a table with dependent objects, the operation is blocked. A <em>Cannot delete</em> window appears, with a list of links to dependent objects. See <a href="/6.0/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-with-dependent-objects">Deleting a table with dependent objects</a></p>
   </li>
+</ol>
+
+<h3 id="deleting-a-table-with-dependent-objects">Deleting a table with dependent objects</h3>
+
+<ul>
   <li>
-    <p>Click the link for each object to modify or delete it.</p>
+    <p>In the <em>Cannot delete</em> window, click the link for each object to modify or delete it.</p>
 
     <p>When all dependencies are removed, you can delete the table.</p>
 
     <p><img src="/6.0/images/delete-warning.png" alt="" title="Dependent objects warning" /></p>
   </li>
-</ol>
+</ul>
 
 <p>You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.</p>
 
@@ -3700,7 +3766,7 @@ $('#toc').on('click', 'a', function() {
     <p>Check the box next to the connection you want to delete.</p>
   </li>
   <li>
-    <p>Click <strong>Delete</strong>.</p>
+    <p>Click <strong>Delete</strong>, and then click <strong>Delete</strong> again to confirm.</p>
 
     <p><img src="/6.0/images/delete-a-connection.png" alt="" title="delete a connection type" /></p>
 
@@ -3712,7 +3778,7 @@ $('#toc').on('click', 'a', function() {
     <p>If the “Cannot delete” warning appears, click the link for each object to delete it, and then click <strong>Ok</strong>. Otherwise, go to the next step.</p>
   </li>
   <li>
-    <p>When all its dependencies are removed, delete the connection by clicking <strong>Delete</strong>.</p>
+    <p>When all its dependencies are removed, delete the connection by clicking <strong>Delete</strong>, and then click again <strong>Delete</strong> to confirm.</p>
   </li>
 </ol>
 
@@ -3741,9 +3807,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jan 25, 2020 <br />
+        Generated: Jan 30, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/12/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 1/29/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
