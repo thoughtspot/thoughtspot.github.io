@@ -32,7 +32,7 @@ To edit a Redshift connection:
 
 5. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
-   ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+    ![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns")
 
 6. Click **Update** to save the connection details.
 
@@ -54,7 +54,7 @@ To remap a connection:
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
+    ![Remap a connection]({{ site.baseurl }}/images/redshift-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 
@@ -83,7 +83,7 @@ To delete a table:
 
 5. Click **Delete**.
 
-    ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
+    ![Delete a connection table]({{ site.baseurl }}/images/redshift-deletetable.png "Delete a connection table")
 
     {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
 

@@ -1,6 +1,6 @@
 ---
 title: [Add a Redshift connection]
-last_updated: tbd
+last_updated: 1/29/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,22 +13,27 @@ To add a new connection to Redshift:
 
 2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
+    ![Click "+ add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 3. Create a name for your connection, a description (optional), then select the Redshift connection type, and click **Continue**.
 
+    ![Choose connection type]({{ site.baseurl }}/images/redshift-choosetype.png "Choose connection type")
      <!-- ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type") -->
-4. Enter the connection details for your external data source, and click **Next**.
+4. Enter the connection details for your external data source, and click **Continue**.
 
+    ![Enter connection details]({{ site.baseurl }}/images/redshift-connectiondetails.png "Enter connection details")
      <!-- ![]({{ site.baseurl }}/images/new-connection-creds.png "Select a connection type") -->
 
      Refer to the [Redshift connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
-     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
+     ![Select tables and columns]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns")
 
    Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
    - Search your external database, by clicking **Search now**.
+
+   ![The "connection created" screen]({{ site.baseurl }}/images/redshift-connectioncreated.png "The "connection created" screen")
 
    No matter which option you choose here, you can do any of them at any time later.
 
