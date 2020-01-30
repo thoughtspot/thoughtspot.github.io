@@ -1,20 +1,20 @@
 ---
-title: [Modify a connection]
-last_updated: 11/12/2019
-summary: Learn how to modify a connection and its tables after creating a new Embrace database connection.
+title: [Modify a Snowflake connection]
+last_updated: 1/29/2020
+summary: Learn how to modify a Snowflake connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify an Embrace database connection in the following ways:
+You can modify an Embrace Snowflake connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
 - Delete a table
 - Delete a connection
 
-## Editing a connection
+## Editing a Snowflake connection
 
-You can edit a connection to add tables and columns.
+You can edit a Snowflake connection to add tables and columns.
 
 To edit a connection:
 
@@ -28,17 +28,22 @@ To edit a connection:
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+   ![Edit connection]({{ site.baseurl }}/images/snowflake-editconnection.png "Edit connection")
 
-5. Expand the database table drop-down menu, and select the tables and columns you want to add.
+5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
-   ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+6. On the Snowflake connection details page, make any changes needed, and then click **Continue**.
 
-6. Click **Update** to save the connection details.
+7. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html#delete-a-table).
+    ![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns")
+   <!-- ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
 
-## Remapping a connection
+8. Click **Update**, and then click **Confirm** to save the updated connection detail.
+
+To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-from-a-snowflake-connection).
+
+## Remapping a Snowflake connection
 
 Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
@@ -54,19 +59,19 @@ To remap a connection:
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
+    ![Remap a connection]({{ site.baseurl }}/images/snowflake-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
+    !["Download the source mapping file"]({{ site.baseurl }}/images/snowflake-downloadyaml.png "Download the source mapping file")
 
-6. Edit and update the file as required.
+6. Edit the file, as required, and save it.
 
     ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
-## Deleting a table
+## Deleting a table from a Snowflake connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
 
 To delete a table:
@@ -81,13 +86,15 @@ To delete a table:
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
-5. Click **Delete**.
+5. Click **Delete**, and then click **Delete** again to confirm.
 
-    ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
+    ![Delete a connection table]({{ site.baseurl }}/images/snowflake-deletetable.png "Delete a connection table")
 
-    {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
+    If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html#deleting-a-table-with-dependent-objects)
 
-6. Click the link for each object to modify or delete it.
+### Deleting a table with dependent objects
+
+- In the *Cannot delete* window, click the link for each object to modify or delete it.
 
    When all dependencies are removed, you can delete the table.
 
@@ -95,7 +102,7 @@ To delete a table:
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
-## Deleting a connection
+## Deleting a Snowflake connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
 To delete a connection:
@@ -106,7 +113,7 @@ To delete a connection:
 
 3. Check the box next to the connection you want to delete.
 
-4. Click **Delete**.
+4. Click **Delete**, and then click **Delete** again to confirm.
 
    ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
 
@@ -116,4 +123,4 @@ To delete a connection:
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
-6. When all its dependencies are removed, delete the connection by clicking **Delete**.
+6. When all its dependencies are removed, delete the connection by clicking **Delete**, and then click again **Delete** to confirm.
