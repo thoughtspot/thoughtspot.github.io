@@ -22,9 +22,16 @@ fixed issues from the previous releases, and any known issues.
 ## 6.0.2 New Features and Functionality
 
 ### Embrace for Google BigQuery and Microsoft Azure Synapse
-In addition to Snowflake and Redshift, you can now perform live queries against a Google BigQuery or Microsoft Azure Synapse database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards.
+
+In addition to Snowflake and Redshift, you can now connect to Google BigQuery or Microsoft Azure Synapse, and perform live queries against them without moving data into ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
 
 See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+### Data Search APIs
+
+To use the data that we retrieve from a query programmatically, you can use the ThoughtSpot Search Data API.
+
+See [Embrace overview]({{ site.baseurl }}/app-integrate/reference/search-data-api.md).
 
 {: id="6-0-2-fixed"}
 ## 6.0.2 Fixed Issues
