@@ -13,7 +13,7 @@ To add a new connection to Redshift:
 
 2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
-    ![Click "+ add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
+    ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 3. Create a name for your connection, a description (optional), then select the Redshift connection type, and click **Continue**.
 
@@ -30,12 +30,9 @@ To add a new connection to Redshift:
 
      ![Select tables and columns]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns")
 
-   Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
-   - Search your external database, by clicking **Search now**.
+   Once the connection is added, you can search your Redshift database right away by clicking **Search now**.
 
    ![The "connection created" screen]({{ site.baseurl }}/images/redshift-connectioncreated.png "The "connection created" screen")
-
-   No matter which option you choose here, you can do any of them at any time later.
 
    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 

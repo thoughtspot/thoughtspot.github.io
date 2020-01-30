@@ -10,9 +10,9 @@ If your company stores source data externally in data warehouses, you can use Th
 
 Embrace supports the following external databases:
 - Snowflake
-- Amazon Redshift (*in beta*)
-- Google BigQuery (*in beta*)
-- Azure Synapse (*in beta*)
+- Amazon Redshift
+- Google BigQuery
+- Microsoft Azure Synapse
 
 To enable Embrace, contact ThoughtSpot support.
 
@@ -54,5 +54,5 @@ Create the connection between ThoughtSpot and tables in an external Snowflake da
 Create the connection between ThoughtSpot and tables in an external BigQuery database.
 -   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
 Create the connection between ThoughtSpot and tables in an external Synapse database.
--   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
+-   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
 Create the connection between ThoughtSpot and tables in an external Redshift database.
