@@ -1,7 +1,7 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 1/24/2020
+last_updated: 1/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -18,9 +18,9 @@ The Answer expands to fill your screen, and the **Explore this data** menu appea
 ![Explore this data]({{ site.baseurl }}/images/explore-fullscreen.png "Explore this data")
 <!--{% include image.html file="explore-fullscreen.png" title="Explore this data" alt="After you click Explore, the Answer expands to full screen." caption="Explore this data" %}-->
 
-You can explore your data in several different ways, using [filters]({{ site.baseurl }}#explore-filters), [breakdowns]({{ site.baseurl }}#explore-breakdowns), [metrics]({{ site.baseurl }}#explore-metrics), or [comparisons]({{ site.baseurl }}#explore-comparisons).
+You can explore your data in several different ways, using [filters](#explore-filters), [breakdowns](#explore-breakdowns), [metrics](#explore-metrics), or [comparisons](#explore-comparisons).
 
-Answer Explorer's AI updates its suggestions every time you add something new to your visualization. If you add a suggested filter, Answer Explorer then suggests new filters, breakdowns, metrics, and comparisons, based on that new filter in your chart.
+Answer Explorer's AI updates its suggestions every time you add something new to your visualization. If you add a suggested filter, Answer Explorer then suggests new filters, breakdowns, metrics, and comparisons, based on that new filter in your chart. In this way, Answer Explorer's suggestions become more relevant for you as you continue to use the feature.
 
 {: id="explore-filters"}
 ## Filters
