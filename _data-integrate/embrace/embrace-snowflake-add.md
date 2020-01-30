@@ -20,6 +20,7 @@ To add a new connection to Snowflake:
      ![Add a Snowflake connection]({{ site.baseurl }}/images/snowflake-connectiontype.png "Add a Snowflake connection")
 
 4. Enter the connection details for your Snowflake data source, and click **Continue**.
+
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-reference.html#) for more information on each of the specific attributes you must enter for your connection.
@@ -28,12 +29,10 @@ To add a new connection to Snowflake:
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
-   Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
-   - Search your external database, by clicking **Search now**.
+   Once the connection is added, you can search your Snowflake database right away by clicking **Search now**.
 
    ![The "Connection created" screen]({{ site.baseurl }}/images/snowflake-connectioncreated.png "The "Connection created" screen")
 
-   No matter which option you choose here, you can do any of them at any time later.
 
    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
