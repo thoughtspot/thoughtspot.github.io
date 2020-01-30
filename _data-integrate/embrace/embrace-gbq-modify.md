@@ -14,9 +14,9 @@ You can modify an Embrace BigQuery connection in the following ways:
 
 ## Editing a BigQuery connection
 
-You can edit a connection to add tables and columns.
+You can edit a BigQuery connection to add tables and columns.
 
-To edit a BigQuery connection:
+To edit a connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -24,19 +24,24 @@ To edit a BigQuery connection:
 
 3. Click the name of the connection you want to edit.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "select Connection")
+   <!--![]({{ site.baseurl }}/images/select-connection.png "select Connection") -->
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   ![]({{ site.baseurl }}/images/edit-connection.png "edit Sources tab")
+   <!--![Edit connection]({{ site.baseurl }}/images/gbq-editconnection.png "Edit connection") -->
 
-5. Expand the database table drop-down menu, and select the tables and columns you want to add.
+5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
-   ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box")
+6. On the BigQuery connection details page, make any changes needed, and then click **Continue**.
 
-6. Click **Update** to save the connection details.
+7. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Delete a table]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-modify.html#deleting-a-table-from-a-bigquery-connection).
+   <!--![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns") -->
+   <!--![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
+
+8. Click **Update**, and then click **Confirm** to save the updated connection detail.
+
+To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-modify.html#deleting-a-table-from-a-gbq-connection).
 
 ## Remapping a BigQuery connection
 
@@ -49,20 +54,17 @@ To remap a connection:
 2. Click the **Connections** tab at the top of the page.
 
 3. Click the name of the connection you want to remap.
-
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+   <!--![]({{ site.baseurl }}/images/select-connection.png "Select a connection type") -->
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
-
-    ![]({{ site.baseurl }}/images/embrace-remapping.png "remap a connection")
+   <!--![Remap a connection]({{ site.baseurl }}/images/gbq-remapping.png "Remap a connection") -->
 
 5. Click **Download** to download the source mapping file.
 
-    ![]({{ site.baseurl }}/images/embrace-remapping-download.png "remap connection")
+   <!--!["Download the source mapping file"]({{ site.baseurl }}/images/gbq-downloadyaml.png "Download the source mapping file") -->
 
-6. Edit and update the file as required.
-
-    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
+6. Edit the file, as required, and save it.
+   <!--![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
@@ -77,21 +79,23 @@ To delete a table:
 
 3. Click the name of the connection that contains the table you want to delete.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+   <!--![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")-->
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
-5. Click **Delete**.
+5. Click **Delete**, and then click **Delete** again to confirm.
 
-    ![]({{ site.baseurl }}/images/delete-table.png "delete a connection table")
+   <!--![Delete a connection table]({{ site.baseurl }}/images/gbq-deletetable.png "Delete a connection table") -->
 
-    {% include note.html content="If you attempt to delete a table with dependent objects, the operation is blocked. A warning appears, with a list of links to dependent objects." %}
+   If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-modify.html#deleting-a-table-with-dependent-objects)
 
-6. Click the link for each object to modify or delete it.
+### Deleting a table with dependent objects
 
-   When all dependencies are removed, you can delete the table.
+- In the *Cannot delete* window, click the link for each object to modify or delete it.
 
-   ![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning")
+  When all dependencies are removed, you can delete the table.
+
+  <!--![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning") -->
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
@@ -106,14 +110,14 @@ To delete a connection:
 
 3. Check the box next to the connection you want to delete.
 
-4. Click **Delete**.
+4. Click **Delete**, and then click **Delete** again to confirm.
 
-   ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
+   <!--![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type") -->
 
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
-   ![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type")
+   <!--![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type") -->
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
-6. When all its dependencies are removed, delete the connection by clicking **Delete**.
+6. When all its dependencies are removed, delete the connection by clicking **Delete**, and then click again **Delete** to confirm.

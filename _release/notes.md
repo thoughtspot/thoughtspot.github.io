@@ -6,15 +6,35 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.1 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [6.0.2 New Features](#6-0-2-new)
+* [6.0.2 Fixed Issues](#6-0-2-fixed)
 * [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
+
+{: id="6-0-2-new"}
+## 6.0.2 New Features and Functionality
+
+### Embrace for Google BigQuery and Microsoft Azure Synapse
+In addition to Snowflake and Redshift, you can now perform live queries against a Google BigQuery or Microsoft Azure Synapse database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards.
+
+See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+{: id="6-0-2-fixed"}
+## 6.0.2 Fixed Issues
+
+The following issues are fixed in the 6.0.2 release:
+
+- Updating a formula causes a blank screen and corrupts a worksheet when it is saved.
+- Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.
+- After upgrade to release 5.3.2, users cannot sign in using SSO.
+- Disk alerts occur when drives are functioning normally.
 
 {: id="6-0-1-fixed"}
 ## 6.0.1 Fixed Issues
@@ -200,13 +220,13 @@ These features are currently in Beta. Please contact us if you are interested in
 If you are running one of the following versions, you can upgrade to the 6.0.1 release
 directly:
 
-* 5.3.x to 6.0.1
-* 5.2.x to 6.0.1
+* 5.3.x to 6.0.2
+* 5.2.x to 6.0.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.1 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 

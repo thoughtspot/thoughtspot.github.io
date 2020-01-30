@@ -86,7 +86,7 @@ To delete a table:
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
-5. Click **Delete**.
+5. Click **Delete**, and then click **Delete** again to confirm.
 
     ![Delete a connection table]({{ site.baseurl }}/images/snowflake-deletetable.png "Delete a connection table")
 
@@ -123,4 +123,4 @@ To delete a connection:
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
-6. When all its dependencies are removed, delete the connection by clicking **Delete**, and then click **Delete** to confirm.
+6. When all its dependencies are removed, delete the connection by clicking **Delete**, and then click again **Delete** to confirm.
