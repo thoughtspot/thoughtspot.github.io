@@ -1,22 +1,48 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: December, 2019
+last_updated: January, 2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0<!--.1--> is now available. These release notes include information about new features,
+ThoughtSpot version 6.0.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-<!--* [6.0.1 Fixed Issues](#6-0-1-fixed)-->
+* [6.0.2 New Features](#6-0-2-new)
+* [6.0.2 Fixed Issues](#6-0-2-fixed)
+* [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
 
-<!--{: id="6-0-1-fixed"}
+{: id="6-0-2-new"}
+## 6.0.2 New Features and Functionality
+
+### Embrace for Google BigQuery and Microsoft Azure Synapse
+In addition to Snowflake and Redshift, you can now perform live queries against Google BigQuery or Microsoft Azure Synapse, without caching data in ThoughtSpot. You can then analyze this data, and create visualizations and Pinboards.
+
+See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+### Data Search APIs
+
+To use the data that we retrieve from a query programmatically, you can use ThoughtSpot Search Data API.
+
+See [Embrace overview]({{ site.baseurl }}/app-integrate/reference/search-data-api.md).
+
+{: id="6-0-2-fixed"}
+## 6.0.2 Fixed Issues
+
+The following issues are fixed in the 6.0.2 release:
+
+- Updating a formula causes a blank screen and corrupts a worksheet when it is saved.
+- Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.
+- After upgrade to release 5.3.2, users cannot sign in using SSO.
+- Disk alerts occur when drives are functioning normally.
+
+{: id="6-0-1-fixed"}
 ## 6.0.1 Fixed Issues
 
 The following issues are fixed in the 6.0.1 release:
@@ -33,8 +59,6 @@ The following issues are fixed in the 6.0.1 release:
 - The `date` filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard `date` filter.
 - Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
 
-
--->
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
@@ -113,6 +137,8 @@ To quickly onboard new users and teach them how to effectively use ThoughtSpot, 
 <br>
 <script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
+See [the Getting Started sidebar]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+
 ### Sharing
 
 We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.
@@ -120,6 +146,8 @@ We improved the experience of sharing Answers and Pinboards through better email
 <strong>Sharing Pinboards and Answers</strong>
 <br>
 <script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
 ### Access request and grant
 
@@ -150,6 +178,8 @@ Answer Explorer includes the following features:
 * <strong>Breakdowns</strong> make it easy to add a new attribute or replace an existing one, and let you change buckets for time series: monthly, weekly, daily, or quarterly.
 * <strong>Metrics</strong> "Also include" feature enables you to add other available metrics, and changing a column replaces a metric.
 * <strong>Navigation</strong>: Column names appear separately from search values. Undo steps back to the last change. Copy and edit retains all changes. Seamlessly switch from Answer Explorer to search.
+
+Refer to [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html).
 
 ### Homepage Insights for everyone
 
@@ -193,16 +223,16 @@ These features are currently in Beta. Please contact us if you are interested in
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0<!--.1--> release
+If you are running one of the following versions, you can upgrade to the 6.0.1 release
 directly:
 
-* 5.3.x to 6.0
-* 5.2.x to 6.0
+* 5.3.x to 6.0.2
+* 5.2.x to 6.0.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 

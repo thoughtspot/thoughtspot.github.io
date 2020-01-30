@@ -1113,6 +1113,9 @@ entries:
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
+      - title: Search Data API
+        url: /app-integrate/reference/search-data-api.html
+        output: web,apgBk
  # -- Uncomment out this section ONLY when generating a PDF for AWS
 #  - sectiontitle: AWS Installation
 #    output: web,instAWS
