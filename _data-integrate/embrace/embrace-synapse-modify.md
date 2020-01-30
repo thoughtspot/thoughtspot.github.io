@@ -1,6 +1,6 @@
 ---
 title: [Modify a Synapse connection]
-last_updated: 11/12/2019
+last_updated: 1/30/2020
 summary: Learn how to modify a Synapse connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -24,11 +24,11 @@ To edit a connection:
 
 3. Click the name of the connection you want to edit.
 
-   <!--![]({{ site.baseurl }}/images/select-connection.png "select Connection") -->
+   ![Select a connection to edit]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to edit")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   <!--![Edit connection]({{ site.baseurl }}/images/synapse-editconnection.png "Edit connection") -->
+   ![Edit connection]({{ site.baseurl }}/images/synapse-editconnection.png "Edit connection")
 
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
@@ -36,7 +36,7 @@ To edit a connection:
 
 7. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
-   <!--![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns") -->
+   ![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns")
    <!--![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
 
 8. Click **Update**, and then click **Confirm** to save the updated connection detail.
@@ -55,19 +55,19 @@ To remap a connection:
 
 3. Click the name of the connection you want to remap.
 
-   <!--![]({{ site.baseurl }}/images/select-connection.png "Select a connection type") -->
+   ![Select a connection to remap]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to remap")
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-   <!--![Remap a connection]({{ site.baseurl }}/images/synapse-remapping.png "Remap a connection") -->
+   ![Remap a connection]({{ site.baseurl }}/images/synapse-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 
-   <!--!["Download the source mapping file"]({{ site.baseurl }}/images/synapse-downloadyaml.png "Download the source mapping file") -->
+   !["Download the source mapping file"]({{ site.baseurl }}/images/synapse-downloadyaml.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
 
-   <!--![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
+   ![Edit the yaml file]({{ site.baseurl }}/images/synapse-yaml.png "Edit the yaml file")
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
@@ -82,15 +82,15 @@ To delete a table:
 
 3. Click the name of the connection that contains the table you want to delete.
 
-   <!-- ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type") -->
+    ![Select a connection]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection")
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
 5. Click **Delete**, and then click **Delete** again to confirm.
 
-   <!--![Delete a connection table]({{ site.baseurl }}/images/synapse-deletetable.png "Delete a connection table") -->
+   ![Delete a connection table]({{ site.baseurl }}/images/synapse-deletetable.png "Delete a connection table")
 
-   If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-modify.html#deleting-a-table-with-dependent-objects)
+   If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-modify.html#deleting-a-table-with-dependent-objects).
 
 ### Deleting a table with dependent objects
 
@@ -98,7 +98,7 @@ To delete a table:
 
   When all dependencies are removed, you can delete the table.
 
-  <!--![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning") -->
+  ![Dependent objects warning]({{ site.baseurl }}/images/synapse-demoremapping.png "Dependent objects warning")
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
@@ -115,11 +115,11 @@ To delete a connection:
 
 4. Click **Delete**, and then click **Delete** again to confirm.
 
-   <!--![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type") -->
+   ![Delete a connection]({{ site.baseurl }}/images/synapse-deleteconnection.png "Delete a connection") -->
 
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
-   <!--![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type") -->
+   ![Dependent objects warning]({{ site.baseurl }}/images/connection-delete-warning.png "Dependent objects warning")
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
