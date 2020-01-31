@@ -5,7 +5,7 @@ When you share a pinboard, you share a live link to the pinboard that reflects t
 
 You do not have to be an administrator or the owner to share saved pinboards. Any user can share them, based on the access levels the user has.
 
-You can share a pinboard from the list of pinboards on [the main pinboards page]({{ site.baseurl }}#share-mainpinboardpage), or from [the pinboard itself]({{ site.baseurl }}#share-pinboardpage).
+You can share a pinboard from the list of pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage).
 
 {: id="share-mainpinboardpage"}
 ## Share from the Pinboards page
@@ -30,7 +30,7 @@ To share a pinboard from the main pinboard page, follow these steps.
     ![Share the pinboard]({{ site.baseurl }}/images/sharing-pinboard-mainpageshare.png "Share the pinboard")
     <!--{% include image.html file="sharing-pinboard-mainpageshare.png" title="Share the pinboard" alt="Select the pinboard you want to share and click the share button at the top left of the page." caption="Share the pinboard" %}-->
 
-6. [Specify permissions]({{ site.baseurl }}#specify-permissions).  
+6. [Specify permissions](#specify-permissions).  
 
 {: id="share-pinboardpage"}
 ## Share from within a pinboard
@@ -45,7 +45,7 @@ To share a pinboard from within the pinboard, follow these steps.
     ![Click the sharing icon]({{ site.baseurl }}/images/sharing-pinboardshareicon.png "Click the sharing icon")
     <!--{% include image.html file="sharing-pinboardshareicon.png" title="Click the sharing icon" alt="Click the sharing icon to open the sharing dialog box." caption="Click the sharing icon" %}-->
 
-5. [Specify permissions]({{ site.baseurl }}#specify-permissions).
+5. [Specify permissions](#specify-permissions).
 
 {: id="specify-permissions"}
 ## Specify permissions

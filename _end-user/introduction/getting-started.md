@@ -1,6 +1,6 @@
 ---
 title: [Getting Started]
-last_updated: 1/17/2020
+last_updated: 1/31/2020
 summary: "The Getting Started sidebar teaches new users to navigate and understand ThoughtSpot."
 sidebar: mydoc_sidebar
 toc: false
@@ -51,10 +51,10 @@ You can always activate **Getting Started** again. To show the Getting Started s
 Click on the **Getting Started** sidebar to expand it and see the **Learning Resources** available to you. **Getting Started** contains information for new users on ThoughtSpot's main features, such as **Answers** and **Pinboards**. It also includes a **Navigation Overview**, which walks you through the options on ThoughtSpot's top menu bar.
 
 <!--
-Commenting out after discussion with Roza and Adi. Will probably delete. If kept, ensure only one version of pictures remains (markdown or html) 
+Commenting out after discussion with Roza and Adi. Will probably delete. If kept, ensure only one version of pictures remains (markdown or html)
 * [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
 * [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)
-*  [Working with Answers]({{ site.baseurl }}#working-with-answers)
+*  [Working with Answers](#working-with-answers)
 * [Intro to Pinboards]({{ site.baseurl }}/end-user/introduction/getting-started.html#intro-to-pinboards)
 * [Refining Data Using Filters]({{ site.baseurl }}/end-user/introduction/getting-started.html#refining-data-using-filters)
 * [Automated Insights Using SpotIQ]({{ site.baseurl }}/end-user/introduction/getting-started.html#automated-insights-using-spotiq)
