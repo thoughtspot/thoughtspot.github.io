@@ -33,6 +33,7 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 1. Obtain an Azure login account.
 2. Set up usage payment details with Microsoft Azure.
 3. Find your company's [Resource Group](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups). (optional--you can also create one while creating your virtual machines.)
+4. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for any networking information you may need to fill out. Ask your network administrator if you need help filling out the site survey.
 
 {: id="create-instance"}
 ### Create an instance
