@@ -31,6 +31,9 @@ Through this menu, you can perform a number of customizations:
 3. [Axes]({{ site.baseurl }}/end-user/search/chart-axes-options.html)
    * Grouping and ungrouping of axes
    * Axis renaming
+   * Changing the position of an axis
+   * Changing the axis minimum and maximum values
+   * Changing number formatting on the axis.
 
    See [Change the options on an axis]({{ site.baseurl }}/end-user/search/chart-axes-options.html)
 

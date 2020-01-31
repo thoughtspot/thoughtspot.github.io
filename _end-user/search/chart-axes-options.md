@@ -16,7 +16,7 @@ You can make the following changes to the axis:
 * [Grouping](#grouping)
 * [Position](#position)
 * [Rename](#rename)
-* [Edit](#redirect)
+* [Edit](#edit)
 * [Remove](#remove)
 
 ![Change axis]({{ site.baseurl }}/images/edit-axis.gif "Change Axis for Total Sales")
@@ -150,7 +150,7 @@ Here, you can compare the original chart that was not sorted on the _Total Sales
 ![Compare unsorted chart and chart sorted in Descending order]({{ site.baseurl }}/images/edit-axis-sort-applied.png "Compare unsorted chart and chart sorted in Descending order")
 
 {: id="position"}
-## Change the Postion of the axis
+## Change the postion of the axis
 
 It is generally easier to interpret a chart if axes that use the same units of measurement or scale appear on the same side of the chart. In our example, we can best visualize _Item Cost_ and _Item Price_ on the same side of chart.
 
@@ -197,9 +197,9 @@ To rename an axis, select the **Rename** option in the axis menu, type the new n
 {: id="edit"}
 ## Edit the axis
 
-| When you choose to edit the axis, you get the comprehensive view of everything that can be changed on the axis: you can **Configure** the axis name, position (left or right), and the minimum and maximum values, and you can **Format** the category of the column, its units, and the representation of negative values. |
+When you choose to edit the axis, you get the comprehensive view of everything that can be changed on the axis: you can **Configure** the axis name, position (left or right), and the minimum and maximum values, and you can **Format** the category of the column, its units, and the representation of negative values.
 
-![Edit the axis]({{ site.baseurl }}/images/edit-axis-options.gif "Edit the Axis") |
+![Edit the axis]({{ site.baseurl }}/images/edit-axis-options.gif "Edit the Axis")
 
 To edit this axis (in this example, _Item Price_), follow these steps:
 
@@ -209,8 +209,52 @@ To edit this axis (in this example, _Item Price_), follow these steps:
 
 3. The **Edit Axis** menu appears.
 
+4. In the **Edit Axis** menu, make the changes to the axis configuration and number format:
 
-
+   <dl>
+   <dlentry>
+     <dt>Configure</dt>
+     <dd>
+       <dl>
+         <dlentry>
+           <dt>Name</dt>
+           <dd>Change the name of the axis. Also see <a href="#rename">Rename the axis</a>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Position</dt>
+           <dd>Change the position of the axis relative to the chart. The options are <em>Right</em> and <em>Left</em>. Also see <a href="#position">Change the position of the axis</a>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Min</dt>
+           <dd>Change the minimum value on the axis. For example, most charts default to 0-based axis representation for numerical values; this setting overrides it.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Max</dt>
+           <dd>Change the maximum value on the axis. Similar to <em>Min</em> limit. </dd>
+         </dlentry>
+       </dl>
+     </dd>
+   </dlentry>
+   <dlentry>
+     <dt>Format</dt>
+     <dd>
+       <dl>
+         <dlentry>
+           <dt>Category</dt>
+           <dd>This specifies the format of the axis measurements. Options include <em>Number</em>, <em>Percentage</em>, and <em>Currency</em>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Unit</dt>
+           <dd>Unit choice specifies the representation of numbers on the axis. Options include <em>Auto</em> (ThoughtSpot uses abbreviations for really large numbers only), <em>None</em>, <em>Thousand (K)</em>, <em>Million (M)</em>, <em>Billion (B)</em>, and <em>Trillion (T)</em>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Negative values</dt>
+           <dd>Specify the representation of negative numbers in one of these formats: <em>-1234</em>, <em>1234-</em>, or <em>(1234)</em>.</dd>
+         </dlentry>
+       </dl>
+     </dd>
+   </dlentry>
+   </dl>
 
 {: id="remove"}
 ## Remove the axis
