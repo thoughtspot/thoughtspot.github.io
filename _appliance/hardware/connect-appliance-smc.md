@@ -1,6 +1,6 @@
 ---
 title: [Connect the SMC appliance]
-last_updated: [1/22/2020]
+last_updated: [1/31/2020]
 summary: "Connect the SMC appliance before you can deploy ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -71,7 +71,7 @@ Check the health of the NIC by inspecting your appliance's LEDs. There should be
 
 After the LEDs are the correct colors, verify that the connection is valid and the nodes are on by pinging the gateway:<br>
 Enter `ping <default-gateway-IP>`.<br>
-Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"}.
 ```  
     $ ping <default-gateway-IP>
 ```    
