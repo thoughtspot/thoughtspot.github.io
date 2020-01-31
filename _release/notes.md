@@ -224,7 +224,7 @@ These features are currently in Beta. Please contact us if you are interested in
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.1 release
+If you are running one of the following versions, you can upgrade to the 6.0.2 release
 directly:
 
 * 5.3.x to 6.0.2
