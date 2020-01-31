@@ -1,24 +1,25 @@
 ---
 title: [Change result display options]
-
-
-summary: "You can change how your search results (answers) appear."
+last_updated: 1/16/2020
+summary: "You can change how your search results (Answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Your search answer (results) have various display options. You can change the
-visualization used to display your results, their sort oder, and how they are
-grouped or grouped.
+Your search results, or Answers, have various display options. You can change the
+visualization used to display your results, their sort order, how ThoughtSpot groups the data, and what data ThoughtSpot includes.
 
 ## Change the view
 
-You can change the view of your answer so it appears as a table or a chart. To
+You can change the view of your answer so it appears as either a table or a chart. To
 change the view of your answer:
 
 1. View your answer.
-2. Select either table or a chart type.
+2. Toggle between either a table or a chart type.
 
-   ![]({{ site.baseurl }}/images/toggle_between_views.png "Toggle between the two views")
+    ![Select table or chart]({{ site.baseurl }}/images/toggle_between_views.png "Select table or chart")
+    <!--{% include image.html file="toggle_between_views.png" title="Select table or chart" alt="You can toggle between displaying your results as a table or as a chart." caption="Select table or chart" %}-->
+
+When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
 ## Sort your search
 
@@ -27,11 +28,11 @@ To sort your search:
 
 * If you are in the data (table) view, click the column header you would like to sort on.
 
-   By default, sorting applies in descending order. You can click a column header to sort again to sort in ascending order.
+   By default, sorting applies in descending order. For example, if the column has numerical values, it would start at the highest number and decrease. Click the column header again to sort in ascending order.
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 
-* If you are in the chart view, click the axis label of your chart and select **Sort**.
+* If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
 
 
 ## Change the date bucketing (grouping)
@@ -71,7 +72,7 @@ You can include or exclude row values from your answer.
 
 To exclude or include row values:
 
-1. Right-click the visualization or table cell of interest
-2. Select **Exclude "value"** or **Include "value"** if available.
+1. Right-click the visualization or table cell of interest.
+2. Select **Exclude "value"** or **Only Include "value"** if available.
 
      ![]({{ site.baseurl }}/images/exclude.png "Exclude value option")
