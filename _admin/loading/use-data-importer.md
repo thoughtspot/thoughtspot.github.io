@@ -108,7 +108,7 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
     * `--aws_s3_bucket_name "<bucket name>"` <br>
-    * `--aws_s3_region_name "<region name>"` <br>
+    * `--aws_s3_region "<region name>"` <br>
     * `--aws_s3_credentials "<credentials>"`__*__ <br>
     * `--aws_s3_root "<search path>"`
 
