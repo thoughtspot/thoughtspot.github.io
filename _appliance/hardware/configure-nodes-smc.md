@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot Nodes on the SMC Appliance]
-last_updated: [1/22/2020]
+last_updated: [1/31/2020]
 summary: "Configure your nodes before you can install your cluster(s)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -34,7 +34,7 @@ After you connect the appliance, configure the nodes in your Mac or Windows term
   </tr>
 </table>
 
-If you completed ThoughtSpot's site survey form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
+If you completed ThoughtSpot's [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
 
 If the network configuration was not pre-set, then this step must be done as part of the installation process.
 

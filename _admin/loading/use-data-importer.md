@@ -110,7 +110,7 @@ To load data from an AWS S3 bucket, do the following:
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
     * `--aws_s3_bucket_name "<bucket name>"` <br>
-    * `--aws_s3_region_name "<region name>"` <br>
+    * `--aws_s3_region "<region name>"` <br>
     * `--aws_s3_credentials "<credentials>"`__*__ <br>
     * `--aws_s3_root "<search path>"`
 

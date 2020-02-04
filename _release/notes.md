@@ -22,6 +22,7 @@ fixed issues from the previous releases, and any known issues.
 ## 6.0.2 New Features and Functionality
 
 ### Embrace for Google BigQuery and Microsoft Azure Synapse
+
 In addition to Snowflake and Redshift, you can now run live queries against Google BigQuery or Microsoft Azure Synapse Analytics, without caching data in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
 
 See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
@@ -222,7 +223,7 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.1 release
+If you are running one of the following versions, you can upgrade to the 6.0.2 release
 directly:
 
 * 5.3.x to 6.0.2

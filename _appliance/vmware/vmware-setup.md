@@ -33,6 +33,8 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
+3. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
+
 ## Use the OVF to Create a VM
 
 1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
