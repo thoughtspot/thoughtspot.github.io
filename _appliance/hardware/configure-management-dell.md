@@ -1,7 +1,7 @@
 ---
 title: [Configure the Dell Management Settings]
 summary: "Configure the management settings for Dell before you can deploy ThoughtSpot."
-last_updated: 1/31/2020
+last_updated: 2/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,6 +12,7 @@ Input your specific network information to configure the management settings for
 3. **Select iDRAC** In the Bios setup screen, there are several options. Select **iDRAC** to configure your iDRAC management settings.
 4. **Select network configuration** From the iDRAC settings options, select **network**.  
 5. **Fill out the iDRAC settings form** Add your specific network information for the IP address, Gateway, and Netmask in the empty boxes. DNS information is optional. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey for a quick reference, and ask your network administrator for help if you have not filled out the site survey yet.
+    {% include warning.html content="If you configure DNS servers, you must only configure two servers. ThoughtSpot does not support configuration of three DNS servers." %}
 * For **Enable IPv4**, select **enabled**.
 * For **Enable DHCP**, select **disabled**.
 * For **Enable IPv6**, select **disabled**.

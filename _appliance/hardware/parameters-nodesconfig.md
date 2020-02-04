@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [1/13/2020]
+last_updated: [2/4/2020]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -47,6 +47,8 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 **NTPServers**	The address of your company’s Network Time Protocol (NTP) server. If your company does not have an NTP server, you can use one of ThoughtSpot’s, as listed in [the nodes.config]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) example under NTPServers. For example, 0.centos.pool.ntp.org.  
 
 **DNS**	The address of your company’s Domain Name Server (DNS). For example, 192.168.2.200,8.8.8.8.  
+
+{% include warning.html content="Configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers." %}
 
 {% include note.html content="You can only edit DNS settings with this command if you are deploying ThoughtSpot on hardware. ThoughtSpot does not support using <code>set-config</code> to edit your DNS settings for cloud deployment." %}
 
