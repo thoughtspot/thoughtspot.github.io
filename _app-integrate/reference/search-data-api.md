@@ -39,7 +39,7 @@ When issuing a query through the ThoughtSpot UI, users make selections to disamb
      <tr>
          <td><code>data_source_guid</code></td>
          <td>string</td>
-         <td>The GUID of the data source, either a worksheet or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1", "......"]</code></p>
+         <td>The GUID of the data source, either a worksheet, a view, or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1"]</code></p>
          </td>
       </tr>
       <tr>
@@ -96,7 +96,7 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
 <dd><p>All user-defined column values and constants must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. </p>
   <p>When using multiple values, separate them by a comma, <code>,</code>.</p>
   <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API is:</p>
-  <pre>[revenue] top &lsquo;2&rsquo; [ship mode]</pre>
+  <pre>[revenue] top 2 [ship mode]</pre>
   <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API is:</p>
   <pre>[revenue] [ship mode] = &lsquo;air&rsquo;,&rsquo;ship mode&rsquo;</pre></dd>
   </dlentry>
@@ -105,8 +105,11 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
     <dt>Date Bucket</dt>
 <dd>
 <p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. The column with which the date bucket is bound, and the date bucket token, must be separated by a period, <code>.</code>.</p>
+<p>Single word date buckets can be expressed <em>as is</em>. Multi-word date buckets must be enclosed within quotes.</p>
+<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API is:</p>
+<pre>[revenue] [commit date].monthly</pre>
 <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API is:</p>
-<pre>[revenue] [commit date].day of week = &lsquo;5&rsquo;</pre>
+<pre>[revenue] [commit date].'day of week' = 5</pre>
 </dd>
   </dlentry>
 
@@ -120,26 +123,37 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
   <dlentry id="calendar">
     <dt>Calendar</dt>
     <dd><p>You can specify a custom calendar in the query. Use the <code>calendar.<em>calendar_name</em></code> format explicitly.</p>
-  <p>When the calendar name contains multiple words, these words must be separated by an underscore character, <code>_</code>.</p>
+  <p>When the calendar name contains multiple words, these words must be enclosed in single quotes.</p>
 <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API is:</p>
   <pre>[revenue] by [commit date] calendar.fiscal</pre>
   <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API is:</p>
-  <pre>[revenue] by [commit date] calendar.my_calendar</pre></dd>
+  <pre>[revenue] by [commit date] calendar.'my calendar'</pre></dd>
   </dlentry>
 </dl>
 
 ## Request example
 
-##### cURL
+##### cURL - COMPACT
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
 ```
 
-##### Request URL
+##### Request URL - COMPACT
 
 ```
 https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
+```
+
+##### cURL - FULL
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL’
+```
+
+##### Request URL - FULL
+```
+https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL
 ```
 
 ## Response example
@@ -216,7 +230,7 @@ To test the search query API, follow these steps:
 1. In another browser, navigate to the following address:
 
   ```
-  go here: https://<instance>/external/swagger/#!/tspublic%2Fv1/searchData
+  https://<instance>/external/swagger/#!/tspublic%2Fv1/searchData
   ```
 
 2. Click on `POST /tspublic/v1/searchdataTS`.
