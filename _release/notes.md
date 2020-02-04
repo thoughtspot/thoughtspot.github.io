@@ -22,22 +22,13 @@ fixed issues from the previous releases, and any known issues.
 ## 6.0.2 New Features and Functionality
 
 ### Embrace for Google BigQuery and Microsoft Azure Synapse
-<<<<<<< HEAD
-In addition to Snowflake and Redshift, you can now perform live queries against Google BigQuery or Microsoft Azure Synapse Analytics, without caching data in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
-=======
-
-In addition to Snowflake and Redshift, you can now connect to Google BigQuery or Microsoft Azure Synapse, and perform live queries against them without moving data into ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
->>>>>>> c9142617a251b619c834d50b377fa35d87e456f9
+In addition to Snowflake and Redshift, you can now run live queries against Google BigQuery or Microsoft Azure Synapse Analytics, without caching data in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
 
 See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Data Search APIs
 
-<<<<<<< HEAD
 To programmatically use the data that we retrieve from a query, you can use ThoughtSpot Search Data API.
-=======
-To use the data that we retrieve from a query programmatically, you can use the ThoughtSpot Search Data API.
->>>>>>> c9142617a251b619c834d50b377fa35d87e456f9
 
 See [Search Data API]({{ site.baseurl }}/app-integrate/reference/search-data-api.html).
 
@@ -80,7 +71,7 @@ See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
 ### Embrace for Snowflake and Amazon Redshift
 
-In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. <!--As with Snowflake, you can sync the data into ThoughtSpot later.--> **Support for Amazon Redshift is in beta**.
+In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.  **Support for Amazon Redshift is in beta in Release 6.0.**
 
 ThoughtSpot now supports the following features for linked tables:
   - Search suggestions for column values
@@ -225,9 +216,8 @@ The following issues are fixed in the 6.0 release:
 ## Beta Programs
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-These features are currently in Beta. Please contact us if you are interested in participating:
-- <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a> for monitoring selected metrics over time.
-- <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program for Redshift</a> to query the new supported external database, Amazon Redshift.
+
+Please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a>, for monitoring selected metrics over time.
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
