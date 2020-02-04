@@ -86,7 +86,7 @@ Here is a list of all of the source connectors, and their connection credentials
 - Password: Required. Enter the Oracle account password.
 - Host: Required. Enter the host number. For example, `192.156.3.123`.
 
-  {% include note.html content="If your connection fails, check if the Single Client Access Name (SCAN) feature is enabled on the Oracle Database. Informatica drivers cannot establish connectivity with the database if this feature is enabled. SCAN is a domain name registered to at least one and up to three IP addresses, either in Domain Naming Service (DNS) or Grid Naming Service (GNS). To resolve this issue, get the Virtual IP of the Oracle Database and its corresponding hostname using nslookup on IP. Use this host name in the connection properties." %}
+  {% include note.html content="If your connection fails, check if the Single Client Access Name (SCAN) feature is enabled on the Oracle Database. Informatica drivers cannot establish connectivity with the database if this feature is enabled. SCAN is a domain name registered to at least one and up to three IP addresses, either in Domain Naming Service (DNS) or Grid Naming Service (GNS). If you use DNS, configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers. To resolve this connection issue, get the Virtual IP of the Oracle Database and its corresponding hostname using nslookup on IP. Use this host name in the connection properties." %}
 
 - Port: Required. Enter the port number. For example, `3305`.
 - Service Name: Required. Enter the service name. You can find the service name by connecting to the server as "system" using SID, then executing the query: `select value from v$parameter where name like '%service_name%';`.
