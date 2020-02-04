@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites]
-last_updated: [1/31/2020]
+last_updated: [2/4/2020]
 summary: "Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -53,7 +53,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>Networking information: IP addresses for data & management NICs, for up to 2 DNS servers, up to 4 NTP servers and for the default gateway. You also need to know the timezone for your cluster. Typically, your timezone is where most of the people who will use the product are. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey so that you have a quick reference before beginning the install process. Ask your network administrator if you need help filling out the site survey.</td></tr>
+<td>Networking information: IP addresses for data & management NICs, for up to 2 DNS servers, up to 4 NTP servers and for the default gateway. Ensure that you configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers. You also need to know the timezone for your cluster. Typically, your timezone is where most of the people who will use the product are. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey so that you have a quick reference before beginning the install process. Ask your network administrator if you need help filling out the site survey.</td></tr>
 
 <tr>
 <td>&#10063;</td>
