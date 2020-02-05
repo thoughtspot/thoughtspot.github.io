@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/app-integrate/reference/search-data-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-03T10:50:51-08:00" />
+<meta property="article:published_time" content="2020-02-05T15:48:49-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Search Data API”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Search Data API”]","dateModified":"2020-02-03T10:50:51-08:00","url":"https://docs.thoughtspot.com/latest/app-integrate/reference/search-data-api.html","datePublished":"2020-02-03T10:50:51-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/reference/search-data-api.html"},"description":"It is often difficult to programmatically use the result set of a query that runs in the ThoughtSpot UI search bar. To use the data that we retrieve from a query programmatically, you can use ThoughtSpot Search Data API.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Search Data API”]","dateModified":"2020-02-05T15:48:49-08:00","url":"https://docs.thoughtspot.com/latest/app-integrate/reference/search-data-api.html","datePublished":"2020-02-05T15:48:49-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/reference/search-data-api.html"},"description":"It is often difficult to programmatically use the result set of a query that runs in the ThoughtSpot UI search bar. To use the data that we retrieve from a query programmatically, you can use ThoughtSpot Search Data API.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3664,7 +3664,7 @@ $('#toc').on('click', 'a', function() {
      <tr>
          <td><code>data_source_guid</code></td>
          <td>string</td>
-         <td>The GUID of the data source, either a worksheet or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1", "......"]</code></p>
+         <td>The GUID of the data source, either a worksheet, a view, or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1"]</code></p>
          </td>
       </tr>
       <tr>
@@ -3720,7 +3720,7 @@ $('#toc').on('click', 'a', function() {
 <dd><p>All user-defined column values and constants must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. </p>
   <p>When using multiple values, separate them by a comma, <code>,</code>.</p>
   <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API is:</p>
-  <pre>[revenue] top &lsquo;2&rsquo; [ship mode]</pre>
+  <pre>[revenue] top 2 [ship mode]</pre>
   <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API is:</p>
   <pre>[revenue] [ship mode] = &lsquo;air&rsquo;,&rsquo;ship mode&rsquo;</pre></dd>
   </dlentry>
@@ -3729,8 +3729,11 @@ $('#toc').on('click', 'a', function() {
     <dt>Date Bucket</dt>
 <dd>
 <p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. The column with which the date bucket is bound, and the date bucket token, must be separated by a period, <code>.</code>.</p>
+<p>Single word date buckets can be expressed <em>as is</em>. Multi-word date buckets must be enclosed within quotes.</p>
+<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API is:</p>
+<pre>[revenue] [commit date].monthly</pre>
 <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API is:</p>
-<pre>[revenue] [commit date].day of week = &lsquo;5&rsquo;</pre>
+<pre>[revenue] [commit date].'day of week' = 5</pre>
 </dd>
   </dlentry>
 
@@ -3744,24 +3747,33 @@ $('#toc').on('click', 'a', function() {
   <dlentry id="calendar">
     <dt>Calendar</dt>
     <dd><p>You can specify a custom calendar in the query. Use the <code>calendar.<em>calendar_name</em></code> format explicitly.</p>
-  <p>When the calendar name contains multiple words, these words must be separated by an underscore character, <code>_</code>.</p>
+  <p>When the calendar name contains multiple words, these words must be enclosed in single quotes.</p>
 <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API is:</p>
   <pre>[revenue] by [commit date] calendar.fiscal</pre>
   <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API is:</p>
-  <pre>[revenue] by [commit date] calendar.my_calendar</pre></dd>
+  <pre>[revenue] by [commit date] calendar.'my calendar'</pre></dd>
   </dlentry>
 </dl>
 
 <h2 id="request-example">Request example</h2>
 
-<h5 id="curl">cURL</h5>
+<h5 id="curl---compact">cURL - COMPACT</h5>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&amp;data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&amp;batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT'
 </code></pre></div></div>
 
-<h5 id="request-url">Request URL</h5>
+<h5 id="request-url---compact">Request URL - COMPACT</h5>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&amp;data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&amp;batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT
+</code></pre></div></div>
+
+<h5 id="curl---full">cURL - FULL</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&amp;data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&amp;batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=FULL’
+</code></pre></div></div>
+
+<h5 id="request-url---full">Request URL - FULL</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&amp;data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&amp;batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=FULL
 </code></pre></div></div>
 
 <h2 id="response-example">Response example</h2>
@@ -3842,7 +3854,7 @@ $('#toc').on('click', 'a', function() {
   <li>In another browser, navigate to the following address:</li>
 </ol>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  go here: https://&lt;instance&gt;/external/swagger/#!/tspublic%2Fv1/searchData
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  https://&lt;instance&gt;/external/swagger/#!/tspublic%2Fv1/searchData
 </code></pre></div></div>
 
 <ol>
@@ -3921,7 +3933,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 3, 2020 <br />
+        Generated: Feb 5, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 01/28/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
