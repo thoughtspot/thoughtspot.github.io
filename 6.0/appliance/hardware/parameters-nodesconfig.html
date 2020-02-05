@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-03T10:36:23-08:00" />
+<meta property="article:published_time" content="2020-02-05T15:46:07-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Parameters of the nodes.config file”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Parameters of the nodes.config file”]","dateModified":"2020-02-03T10:36:23-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html","datePublished":"2020-02-03T10:36:23-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html"},"description":"Using the nodes.config file As you install your appliance, you must configure the nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Parameters of the nodes.config file”]","dateModified":"2020-02-05T15:46:07-08:00","url":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html","datePublished":"2020-02-05T15:46:07-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/hardware/parameters-nodesconfig.html"},"description":"Using the nodes.config file As you install your appliance, you must configure the nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3624,7 +3624,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3670,6 +3670,8 @@ Run <code class="language-plaintext highlighter-rouge">vim nodes.config</code> t
 <p><strong>NTPServers</strong>	The address of your company’s Network Time Protocol (NTP) server. If your company does not have an NTP server, you can use one of ThoughtSpot’s, as listed in <a href="/6.0/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example">the nodes.config</a> example under NTPServers. For example, 0.centos.pool.ntp.org.</p>
 
 <p><strong>DNS</strong>	The address of your company’s Domain Name Server (DNS). For example, 192.168.2.200,8.8.8.8.</p>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers.</div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can only edit DNS settings with this command if you are deploying ThoughtSpot on hardware. ThoughtSpot does not support using <code>set-config</code> to edit your DNS settings for cloud deployment.</div>
 
@@ -3717,9 +3719,9 @@ Run <code class="language-plaintext highlighter-rouge">vim nodes.config</code> t
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 3, 2020 <br />
+        Generated: Feb 5, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 1/13/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 2/4/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
