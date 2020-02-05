@@ -124,7 +124,7 @@ where the formula `monthly_sales` is written as:
 ```
 group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
 ```
-For more extensive examples of using the `group-aggregate` function, we encourage you to see [Reaggreggation scenarios in practice]({{site.baseurl}}/reference/reaggregation-scenarios.html)
+For more extensive examples of using the `group-aggregate` function, we encourage you to see [Reaggreggation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)
 
 ## Groups and filters
 
