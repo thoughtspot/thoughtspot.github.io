@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in AWS]
-last_updated: [1/22/2020]
+last_updated: [2/6/2020]
 summary: "Learn how to install ThoughtSpot clusters in AWS."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -178,6 +178,8 @@ Connecting to hosts...
 ################################################################################
 ```
 Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
+
+{% include warning.html content="If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster." %}
 
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation
