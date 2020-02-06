@@ -38,7 +38,7 @@ To re-brand the interface:
 
 3. In the **Admin** panel, click **Style Customization**.
 
-     ![Style customization menu]({{ site.baseurl }}/images/stylecustomizationmenu.png "Style Customization menu”)
+    ![Style customization menu]({{ site.baseurl }}/images/stylecustomizationmenu.png "Style customization menu")
 
     Once in the menu page, you can:
 
