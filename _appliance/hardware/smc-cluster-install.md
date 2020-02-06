@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot Clusters on the SMC Appliance]
-last_updated: [1/16/2020]
+last_updated: [2/6/2020]
 summary: "Install your clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -150,6 +150,9 @@ Connecting to hosts...
 ################################################################################
 ```
 Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
+
+{% include warning.html content="If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster." %}
+
 ## Step 3. Finalize Installation
 
 After the cluster status changes to “Ready,” sign into the ThoughtSpot application on your browser.<br>
