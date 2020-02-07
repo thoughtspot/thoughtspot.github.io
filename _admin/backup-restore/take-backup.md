@@ -1,11 +1,11 @@
 ---
 title: [Create a manual backup]
-
-last_updated: tbd
+summary: Learn how to manually create a backup.
+last_updated: 11/11/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state, a differently configured appliance, or move the backup from an appliance to a virtual cluster or vice versa. For restoring a cluster from a backup, [contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#).
+ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state or a differently configured appliance. You can also move the backup from an appliance to a virtual cluster or vice versa. To restore a cluster from a backup, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
@@ -70,10 +70,10 @@ To manually create a backup using the admin UI:
 You can see the newly created backup file in the backup dashboard.
 -->
 ## Using tscli
-To manually create a backup using the tscli:
+To manually create a backup using ThoughtSpot's command line interface, tscli:
 1. Log in to the Linux shell using SSH.
 2. Create a manual snapshot or find a snapshot you want to use.
-   To find a snapshot you want to back up use the following command:
+   To find a snapshot you want to back up, use the following command:
 
     ```
     $ tscli snapshot ls
@@ -103,7 +103,7 @@ To manually create a backup using the tscli:
 
 4. Create the backup, designating the [type of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name
+    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name of the backup.
 
     ```
     $ tscli backup create [-h]
@@ -114,7 +114,7 @@ To manually create a backup using the tscli:
          <name> <directory>
     ```
 
-5. Check that the backup was created:
+5. Check that the backup was created by listing all backups:
 
     ```
     $ tscli backup ls

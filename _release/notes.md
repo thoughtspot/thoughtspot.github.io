@@ -1,33 +1,78 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: November 7, 2019
+last_updated: January, 2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [6.0.2 New Features](#6-0-2-new)
+* [6.0.2 Fixed Issues](#6-0-2-fixed)
+* [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
 * [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
 
+{: id="6-0-2-new"}
+## 6.0.2 New Features and Functionality
+
+### Embrace for Google BigQuery and Microsoft Azure Synapse
+
+In addition to Snowflake and Redshift, you can now run live queries against Google BigQuery or Microsoft Azure Synapse Analytics, without caching data in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.
+
+See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+### Data Search APIs
+
+To programmatically use the data that we retrieve from a query, you can use ThoughtSpot Search Data API.
+
+See [Search Data API]({{ site.baseurl }}/app-integrate/reference/search-data-api.html).
+
+{: id="6-0-2-fixed"}
+## 6.0.2 Fixed Issues
+
+The following issues are fixed in the 6.0.2 release:
+
+- Updating a formula causes a blank screen and corrupts a worksheet when it is saved.
+- Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.
+- After upgrade to release 5.3.2, users cannot sign in using SSO.
+- Disk alerts occur when drives are functioning normally.
+
+{: id="6-0-1-fixed"}
+## 6.0.1 Fixed Issues
+
+The following issues are fixed in the 6.0.1 release:
+
+- Search autocomplete occasionally displays an error when using a bulk filter.
+- In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using `versus`(example: `2019 vs 2018``net sales`).
+- Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.
+- A yellow bar sometimes appears during search, causing search not to work.
+- Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.
+- After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.
+- The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.
+- Common keywords, like `this year`, `date daily`,`last quarter`, and `week of year` do not reflect the settings of a custom calendar.
+- The title page of an exported PDF does not display the full date.
+- The `date` filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard `date` filter.
+- Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
+
 {: id="6-new"}
 ## 6.0 New Features and Functionality
 
-<!-- ### Mobile 
+### Mobile
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
 
-Mobile now includes supports auto-redirect Single Sign-On (SSO) for configured clusters.
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
-See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).-->
+See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
 ### Embrace for Snowflake and Amazon Redshift
 
-In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. As with Snowflake, you can sync the data into ThoughtSpot later. **Support for Amazon Redshift is in beta**.
+In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create Answers and Pinboards.  **Support for Amazon Redshift is in beta in Release 6.0.**
 
 ThoughtSpot now supports the following features for linked tables:
   - Search suggestions for column values
@@ -38,12 +83,17 @@ For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/e
 
 ### Monitor headlines
 
-The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
+The Monitor feature enables you to follow headline metrics, and get daily updates in your mailbox, on your ThoughtSpot home page, and in the SpotIQ Follow management interface.
 
-* To monitor headlines, click the **Follow** icon in the top right corner of the Pinboard.
+For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html)  
+
+ **Support for Monitor is in beta**.
+
+* To monitor headlines, click the **Follow** icon in the top right corner of the insight.
+
   ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
 
-* The **SpotIQ Follow** interface lists all the headlines you follow, and the change from last run.
+* The **SpotIQ Follow** interface lists all the headlines you follow, and the changes from last run.
   ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
 
 * Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose. And you can change to table view, or to another chart type to better visualize your changing metric.
@@ -65,10 +115,10 @@ This release introduces a complete new approach that makes chart configuration m
 * <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
 * <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
 
-### Worksheet scriptability
+### Scriptable Worksheets
 You can now **Export** Worksheets by downloading them to a `*.yaml` file, make changes, and then **Update** the Worksheet from the changed file either to the same cluster, or to a new cluster.
 
-Worksheet scriptability supports metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
+Scriptable Worksheets support metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
 
 See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html).
 
@@ -88,6 +138,8 @@ To quickly onboard new users and teach them how to effectively use ThoughtSpot, 
 <br>
 <script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
+See [the Getting Started sidebar]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+
 ### Sharing
 
 We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.
@@ -95,6 +147,8 @@ We improved the experience of sharing Answers and Pinboards through better email
 <strong>Sharing Pinboards and Answers</strong>
 <br>
 <script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
 ### Access request and grant
 
@@ -125,6 +179,8 @@ Answer Explorer includes the following features:
 * <strong>Breakdowns</strong> make it easy to add a new attribute or replace an existing one, and let you change buckets for time series: monthly, weekly, daily, or quarterly.
 * <strong>Metrics</strong> "Also include" feature enables you to add other available metrics, and changing a column replaces a metric.
 * <strong>Navigation</strong>: Column names appear separately from search values. Undo steps back to the last change. Copy and edit retains all changes. Seamlessly switch from Answer Explorer to search.
+
+Refer to [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html).
 
 ### Homepage Insights for everyone
 
@@ -161,23 +217,22 @@ The following issues are fixed in the 6.0 release:
 ## Beta Programs
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-These features are currently in Beta. Please contact us if you are interested in participating:
-- <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a> for monitoring selected metrics over time.
-- <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program for Redshift</a> to query the new supported external database, Amazon Redshift.
+
+Please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a>, for monitoring selected metrics over time.
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0 release
+If you are running one of the following versions, you can upgrade to the 6.0.2 release
 directly:
 
-* 5.3.x to 6.0
-* 5.2.x to 6.0
+* 5.3.x to 6.0.2
+* 5.2.x to 6.0.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 

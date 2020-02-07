@@ -28,9 +28,9 @@ entries:
     - title: Downloads
       url: /release/downloads.html
       output: web
-    - title: PDF Guides
-      url: /release/pdfs.html
-      output: web
+#    - title: PDF Guides
+#      url: /release/pdfs.html
+#      output: web
   - sectiontitle: Users
     output: web,ugBk
     sectionitems:
@@ -48,6 +48,9 @@ entries:
         output: web,ugBk
       - title: ThoughtSpot browser access
         url: /end-user/accessing.html
+        output: web,ugBk
+      - title: The Getting Started sidebar
+        url: /end-user/introduction/getting-started.html
         output: web,ugBk
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
@@ -321,6 +324,9 @@ entries:
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
           output: web,ugBk
+        - title: Answer Explorer
+          url: /end-user/pinboards/answer-explorer.html
+          output: web,ugBk
         - title: Schedule a pinboard job
           url: /admin/manage-jobs/schedule-a-pinboard-job.html
           output: web,ugBk
@@ -366,8 +372,11 @@ entries:
         - title: "Best SpotIQ practices"
           url: /spotiq/special-topics.html
           output: web,ugBk
+        - title: "Monitor Headlines"
+          url: /spotiq/monitor-headlines.html
+          output: web,ugBk
         - title: "Comparative Analysis"
-          url: /spotiq/comparative-anaysis.html
+          url: /spotiq/comparative-analysis.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
@@ -413,6 +422,9 @@ entries:
             output: web,ugBk
           - title: Share uploaded data
             url: /end-user/data-view/share-user-imported-data.html
+            output: web,ugBk
+          - title: Request access
+            url: /end-user/pinboards/request-access.html
             output: web,ugBk
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
@@ -483,7 +495,7 @@ entries:
       - title: Set the relay host for SMTP
         url: /admin/setup/set-up-relay-host.html
         output: web,admBk
-      - title: Set up a custom calendar
+      - title: Set up custom calendars
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
       - title: Configure internal authentication
@@ -495,7 +507,7 @@ entries:
       - title: Configure SAML
         url: /admin/setup/configure-SAML-with-tscli.html
         output: web,admBk
-      - title: Enable Active Directory based access
+      - title: Enable SSH through Active Directory
         url: /admin/setup/active-directory-based-access.html
         output: web,admBk
       - levelThreeTitle: Integrate LDAP
@@ -689,10 +701,10 @@ entries:
           output: web,admBk
       - title: ThoughtSpot Lifecycle
         url: /admin/data-security/security-thoughtspot-lifecycle.html
-        output: web, admBk
+        output: web,admBk
       - title: Encryption of data in transit
         url: /admin/data-security/encryption-of-data.html
-        output: web, admBk
+        output: web,admBk
     - levelTwoTitle: System administration
       output: web,admBk
       levelTwoItems:
@@ -736,7 +748,7 @@ entries:
           url: /admin/backup-restore/restore.html
           output: web,admBk
     - levelTwoTitle: Improve search with modeling
-      output: web,admBk
+      output: web,pdf
       levelTwoItems:
       - title: About data modeling
         url: /admin/data-modeling/about-data-modeling-intro.html
@@ -785,7 +797,7 @@ entries:
           output: web,admBk
         - title: Create a relationship
           url: /admin/data-modeling/create-new-relationship.html
-          output: web
+          output: web,admBk
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
@@ -829,35 +841,35 @@ entries:
         url: /admin/worksheets/yaml-worksheet.html
         output: web,admBk
     - levelTwoTitle: Work with views
-      output: web,ugBk
+      output: web,admBk
       levelTwoItems:
       - title: Understand views
         url: /complex-search/about-query-on-query.html
-        output: web,ugBk
+        output: web,admBk
       - title: Save a search as a view
         url: /complex-search/create-aggregated-worksheet.html
-        output: web,ugBk
+        output: web,admBk
       - title: Create a search from a view
         url: /complex-search/do-query-on-query.html
-        output: web,ugBk
+        output: web,admBk
       - title: View example scenarios
         url: /complex-search/more-example-scenarios.html
-        output: web,ugBk
+        output: web,admBk
       - title: About materialized views
         url: /admin/loading/materialized-views.html
-        output: web,ugBk
+        output: web,admBk
       - title: Materialize a view
         url: /admin/loading/materialize-a-view.html
-        output: web,ugBk
+        output: web,admBk
       - title: Dematerialize a view
         url: /admin/loading/dematerialize-a-view.html
-        output: web,ugBk
+        output: web,admBk
       - title: Refresh a view
         url: /admin/loading/refresh-view.html
-        output: web,ugBk
+        output: web,admBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
-        output: web,ugBk
+        output: web,admBk
     - levelTwoTitle: Set up SearchIQ
       output: web,admBk
       levelTwoItems:
@@ -868,7 +880,7 @@ entries:
         url: /end-user/search/searchiq-optimize.html
         output: web,admBk
       - levelThreeTitle: Search IQ Optimization Steps
-        output: web,apgBk
+        output: web,admBk
         levelThreeItems:
         - title: Enabling Columns in SearchIQ
           url: /end-user/search/searchiq-optimize-columns.html
@@ -955,20 +967,23 @@ entries:
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
   - sectiontitle: Mobile
-    output: web,apgBk
+    output: web
     sectionitems:
     - title: Overview
       url: /admin/mobile/use-mobile.html
-      output: web,apgBk
+      output: web
     - title: Deploy
       url: /admin/mobile/deploy-mobile.html
-      output: web,admBk
+      output: web
     - title: Install and set up
       url: /admin/mobile/install-mobile.html
-      output: web,admBk
+      output: web
     - title: FAQ
       url: /admin/mobile/faq-mobile.html
-      output: web,admBk
+      output: web
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1107,7 +1122,227 @@ entries:
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
-  - sectiontitle: Node Setup
+      - title: Search Data API
+        url: /app-integrate/reference/search-data-api.html
+        output: web,apgBk
+ # -- Uncomment out this section ONLY when generating a PDF for AWS
+#  - sectiontitle: AWS Installation
+#    output: web,instAWS
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/aws/configuration-options.html
+#      output: web,appQs,instAWS
+#    - title: Set up ThoughtSpot resources for AWS
+#      url: /appliance/aws/launch-an-instance.html
+#      output: web,appQs,instAWS
+#    - title: Prepare AWS VMs for ThoughtSpot
+#      url: /appliance/aws/aws-prepare-vms.html
+#      output: web,appQs,instAWS
+#    - title: Configure ThoughtSpot nodes in AWS
+#      url: /appliance/aws/installing-aws.html
+#      output: web,appQs,instAWS
+#    - title: Install ThoughtSpot clusters in AWS
+#      url: /appliance/aws/aws-cluster-install.html
+#      output: web,appQs,instAWS
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAWS
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAWS
+
+# -- end of PDF for AWS section
+# -- Uncomment out this section ONLY when generating a PDF for Azure
+#  - sectiontitle: Azure Installation
+#    output: web,instAzure
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/azure/configuration-options.html
+#      output: web,appQs,instAzure
+#    - title: Set up ThoughtSpot in Azure
+#      url: /appliance/azure/launch-an-instance.html
+#      output: web,appQs,instAzure
+#    - title: Configure ThoughtSpot nodes in Azure
+#      url: /appliance/azure/installing-azure.html
+#      output: web,appQs,instAzure
+#    - title: Install ThoughtSpot clusters in Azure
+#      url: /appliance/azure/azure-cluster-install.html
+#      output: web,appQs,instAzure
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAzure
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAzure
+# -- end of PDF for Azure section
+# -- Uncomment out this section ONLY when generating a PDF for GCP
+#  - sectiontitle: GCP Installation
+#    output: web,instGCP
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/gcp/configuration-options.html
+#      output: web,appQs,instGCP
+#    - title: Set up ThoughtSpot in GCP
+#      url: /appliance/gcp/launch-an-instance.html
+#      output: web,appQs,instGCP
+#    - title: Configure ThoughtSpot nodes in GCP
+#      url: /appliance/gcp/installing-gcp.html
+#      output: web,appQs,instGCP
+#    - title: Install ThoughtSpot clusters in GCP
+#      url: /appliance/gcp/gcp-cluster-install.html
+#      output: web,appQs,instGCP
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instGCP
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instGCP
+# -- end of PDF for GCP section
+# -- Uncomment out this section ONLY when generating a PDF for VMware
+#  - sectiontitle: VMware Installation
+#    output: web,instVMware
+#    sectionitems:
+#    - title: Configuration overview
+#      url: /appliance/vmware/vmware-intro.html
+#      output: web,appQs,instVMware
+#    - title: Set up ThoughtSpot in VMware
+#      url: /appliance/vmware/vmware-setup.html
+#      output: web,appQs,instVMware
+#    - title: Configure ThoughtSpot nodes in VMware
+#      url: /appliance/vmware/installing-vmware.html
+#      output: web,appQs,instVMware
+#    - title: Install ThoughtSpot clusters in VMware
+#      url: /appliance/vmware/vmware-cluster-install.html
+#      output: web,appQs,instVMware
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instVMware
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instVMware
+# -- end of PDF for VMware section
+# -- Uncomment out this section ONLY when generating a PDF for Dell
+#  - sectiontitle: Dell Installation
+#    output: web,appQs,instDell
+#    sectionitems:
+#    - title: Deploying on the Dell appliance
+#      url: /appliance/hardware/installing-dell.html
+#      output: web,appQs,instDell
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-dell.html
+#      output: web,appQs,instDell
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-dell.html
+#      output: web,appQs,instDell
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure management settings
+#      url: /appliance/hardware/configure-management-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-dell.html
+#      output: web,appQs,instDell
+#    - title: Install cluster
+#      url: /appliance/hardware/install-cluster-dell.html
+#      output: web,appQs,instDell
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instDell
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instDell
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instDell
+# -- end of PDF for Dell section
+# -- Uncomment out this section ONLY when generating a PDF for SMC
+#  - sectiontitle: SMC Installation
+#    output: web,appQs,instSMC
+#    sectionitems:
+#    - title: Deploying on the SMC appliance
+#      url: /appliance/hardware/installing-the-smc.html
+#      output: web,appQs,instSMC
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-smc.html
+#      output: web,appQs,instSMC
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-smc.html
+#      output: web,appQs,instSMC
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-smc.html
+#      output: web,appQs,instSMC
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-smc.html
+#      output: web,appQs,instSMC
+#    - title: Install cluster
+#      url: /appliance/hardware/smc-cluster-install.html
+#      output: web,appQs,instSMC
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instSMC
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instSMC
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instSMC
+# -- end of PDF for SMC section
+  - sectiontitle: Deploy
     output: web,appQs
     sectionitems:
     - title: Overview
@@ -1118,16 +1353,64 @@ entries:
       levelTwoItems:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
-        output: web,appQs
-      - title: Supported hardware
-        url: /appliance/hardware/hardware-and-deployment.html
-        output: web,appQs
-      - title: Cable networking
-        url: /appliance/hardware/cable-networking.html
-        output: web,appQs
-      - title: Set up and start the appliance
-        url: /appliance/hardware/appliance-setup.html
-        output: web,appQs
+        output: web,appQs,instSMC,instDell
+      - levelThreeTitle: Deploying on the SMC appliance
+        output: web,appQs,instSMC
+        levelThreeItems:
+        - title: Deploying on the SMC appliance
+          url: /appliance/hardware/installing-the-smc.html
+          output: web,appQs,instSMC
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-smc.html
+          output: web,appQs,instSMC
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-smc.html
+          output: web,appQs,instSMC
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-smc.html
+          output: web,appQs,instSMC
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-smc.html
+          output: web,appQs,instSMC
+        - title: Install cluster
+          url: /appliance/hardware/smc-cluster-install.html
+          output: web,appQs,instSMC
+      - levelThreeTitle: Deploying on the Dell appliance
+        output: web,appQs,instDell
+        levelThreeItems:
+        - title: Deploying on the Dell appliance
+          url: /appliance/hardware/installing-dell.html
+          output: web,appQs,instDell
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-dell.html
+          output: web,appQs,instDell
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-dell.html
+          output: web,appQs,instDell
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-dell.html
+          output: web,appQs,instDell
+        - title: Configure management settings
+          url: /appliance/hardware/configure-management-dell.html
+          output: web,appQs,instDell
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-dell.html
+          output: web,appQs,instDell
+        - title: Install cluster
+          url: /appliance/hardware/install-cluster-dell.html
+          output: web,appQs,instDell
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Parameters of the nodes.config file
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Using the tscli cluster create command
+        url: /appliance/hardware/cluster create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Parameters of the tscli cluster create command
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
@@ -1135,74 +1418,161 @@ entries:
         url: /appliance/cloud.html
         output: web,appQs
       - levelThreeTitle: AWS
-        output: web,appQs
+        output: web,appQs,instAWS
         levelThreeItems:
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
-          output: web,appQs
-        - title: Set up AWS for ThoughtSpot
+          output: web,appQs,instAWS
+        - title: Set up AWS resources for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs
+          output: web,appQs,instAWS
+        - title: Prepare AWS VMs for ThoughtSpot
+          url: /appliance/aws/aws-prepare-vms.html
+          output: web,appQs,instAWS
+        - title: Configure ThoughtSpot nodes in AWS
+          url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS
+        - title: Install ThoughtSpot clusters in AWS
+          url: /appliance/aws/aws-cluster-install.html
+          output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs
+          output: web,appQs,instAWS
       - levelThreeTitle: Azure
-        output: web,appQs
+        output: web,appQs,instAzure
         levelThreeItems:
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs
-        - title: Set up Azure for ThoughtSpot
+        - title: Set up ThoughtSpot in Azure
           url: /appliance/azure/launch-an-instance.html
-          output: web,appQs
+          output: web,appQs,instAzure
+        - title: Configure ThoughtSpot nodes in Azure
+          url: /appliance/azure/installing-azure.html
+          output: web,appQs,instAzure
+        - title: Install ThoughtSpot clusters in Azure
+          url: /appliance/azure/azure-cluster-install.html
+          output: web,appQs,instAzure
       - levelThreeTitle: GCP
-        output: web,appQs
+        output: web,appQs, instGCP
         levelThreeItems:
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
-          output: web,appQs
-        - title: Set up GCP for ThoughtSpot
+          output: web,appQs,instGCP
+        - title: Set up ThoughtSpot in GCP
           url: /appliance/gcp/launch-an-instance.html
-          output: web,appQs
+          output: web,appQs,instGCP
+        - title: Configure ThoughtSpot nodes in GCP
+          url: /appliance/gcp/installing-gcp.html
+          output: web,appQs,instGCP
+        - title: Install ThoughtSpot clusters in GCP
+          url: /appliance/gcp/gcp-cluster-install.html
+          output: web,appQs,instGCP
     - levelTwoTitle: VMware
-      output: web,appQs
+      output: web,appQs,instVMware
       levelTwoItems:
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
-          output: web,appQs
-        - title: Set up VMware for ThoughtSpot
+          output: web,appQs,instVMware
+        - title: Set up ThoughtSpot in VMware
           url: /appliance/vmware/vmware-setup.html
-          output: web,appQs
+          output: web,appQs,instVMware
+        - title: Configure ThoughtSpot nodes in VMware
+          url: /appliance/vmware/installing-vmware.html
+          output: web,appQs,instVMware
+        - title: Install ThoughtSpot clusters in VMware
+          url: /appliance/vmware/vmware-cluster-install.html
+          output: web,appQs,instVMware
     - title: Network policies
       url: /appliance/firewall-ports.html
       output: web,appQs
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs
+  - sectiontitle: Embrace
+    output: web,pdf
+    sectionitems:
+    - title: Overview
+      url: /data-integrate/embrace/embrace-intro.html
+      output: web,embraceGd
+    - levelTwoTitle: Snowflake
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-snowflake-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-snowflake-modify.html
+        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-snowflake-best.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-snowflake-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: Redshift
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-redshift-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-redshift-modify.html
+        output: web,embraceGd
+#      - title: Best practices
+#        url: /data-integrate/embrace/embrace-redshift-best.html
+#        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-redshift-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: BigQuery
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-gbq-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-gbq-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-gbq-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: Synapse
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-synapse-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-synapse-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-synapse-reference.html
+        output: web,embraceGd
+#    - title: Cloud Express for Embrace
+#      url: /data-integrate/embrace/embrace-cloud-express.html
+#      output: web,embraceGd        
   - sectiontitle: Data Integration
-    output: web,digBk
+    output: web,pdf
     sectionitems:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-    - levelTwoTitle: Embrace
-      output: web,digBk
-      levelTwoItems:
-      - title: Overview
-        url: /data-integrate/embrace/embrace-intro.html
-        output: web,digBk
-      - title: Add a connection
-        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
-        output: web,apgBk
-      - title: Modify a connection
-        url: /data-integrate/embrace/getting-started/modify-a-connection.html
-        output: web,apgBk
-      - title: Sync
-        url: /data-integrate/embrace/embrace-sync.html
-        output: web,apgBk
-      - title: Connectors reference
-        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
-        output: web,apgBk
+#    - levelTwoTitle: Embrace
+#      output: web,digBk
+#      levelTwoItems:
+#      - title: Overview
+#        url: /data-integrate/embrace/embrace-intro.html
+#        output: web,digBk
+#      - title: Add a connection
+#        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+#        output: web,digBk
+#      - title: Modify a connection
+#        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+#        output: web,apgBk
+#      - title: Connectors reference
+#        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+#        output: web,digBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
       output: web,digBk
@@ -1304,19 +1674,19 @@ entries:
     sectionitems:
     - title: About this reference
       url: /reference/intro-reference.html
-      output: web
+      output: web,refGd
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
     - title: TQL reference
       url: /reference/sql-cli-commands.html
-      output: web,refGdAdmin
+      output: web,refGd
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
-      output: web,refGdAdmin
+      output: web,refGd
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
-      output: web,refGdAdmin
+      output: web,refGd
     - title: Date and time formats reference
       url: /reference/date-formats-for-loading.html
       output: web,refGd
@@ -1328,22 +1698,53 @@ entries:
       output: web,refGd
     - title: Alert codes reference
       url: /reference/alerts-reference.html
-      output: web,refGdAdmin
+      output: web,refGd
     - title: User action codes reference
       url: /reference/action-codes.html
-      output: web,refGdAdmin
+      output: web,refGd
     - title: Stop word reference
       url: /reference/stop-words.html
-      output: web,refGD
+      output: web,refGd
     - title: Geo map reference
       url: /reference/geomap-reference.html
-      output: web,refGD
+      output: web,refGd
     - title: Glossary
       url: /reference/glossary.html
-      output: web
+      output: web,refGd
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
+    - levelTwoTitle: Deployment reference
+      output: web,refGd
+      levelTwoItems:
+      - title: Network Policies
+        url: /appliance/firewall-ports.html
+        output: web,refGd
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: web,refGd
+      - title: Parameters of nodes.config
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: web,refGd
+      - title: Using the cluster create command
+        url: /appliance/hardware/cluster-create.html
+        output: web,refGd
+      - title: Parameters of cluster create
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: web,refGd
+      - title: Site Survey
+        url: /site-survey.pdf
+        output: web,refGd
+
+  - sectiontitle: ThoughtSpot in Practice
+    output: web,practGd
+    sectionitems:
+    - title: Introduction
+      url: /reference/practice/intro.html
+      output: web,practGd
+    - title: Reaggregation in practice
+      url: /reference/practice/reaggregation-scenarios.html
+      output: web,practGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web

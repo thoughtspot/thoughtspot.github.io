@@ -70,7 +70,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password.</td>
+        <td>A password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. When you click on the <strong>change password</strong> field, a tooltip appears to tell you these requirements.</td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
@@ -132,7 +132,7 @@ To edit an existing user, follow these steps:
 
     ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
 
-5.  Click on the username in the list to open the **Edit User** interface.
+5.  Click the username in the list to open the **Edit User** interface.
 
     If you don't immediately see the username you plan to edit, try searching for it.
 

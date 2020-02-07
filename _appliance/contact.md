@@ -1,5 +1,5 @@
 ---
-title: [Contact support]
+title: [Contact ThoughtSpot support]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

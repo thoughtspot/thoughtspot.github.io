@@ -1497,8 +1497,7 @@ This subcommand has the following options:
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
       <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
-      <p>If you don't have interest access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
-
+      <p>If you don't have internett access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
       <dl>
         <dlentry>
           <dt><code>--online</code></dt>
@@ -2325,10 +2324,15 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd>
   </dlentry>
 
-  <dlentry>
-    <dt><code>tscli ssl add-valid-hosts <em>valid_hosts</em></code></dt>
-    <dd>Adds valid hosts. Requires a comma-separated host list. Nginx will reject if the hosts are not valid.</dd></dlentry>
-
+ <dlentry>
+    <dt><code>tscli ssl add-valid-hosts [-h] <em>VALID_HOSTS</em></code></dt>
+    <dd>Enables host validation for the specified host(s). Helps improve security. This feature is for all customers that have or are planning to enable SSL. Multiple hosts must be separated by a comma (,).</dd>
+    <dd>Examples:</dd>
+    <dd>1. If you want to make sure the valid host is <b>cluster1.corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts cluster1.corp.example.com</code></dd>
+    <dd>2. If you want to allow all hosts which have the suffix <b>corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.example.com</code>. This wild card should be used within the hostname.</dd>
+    <dd>3. If you want to allow multiple valid hosts, for example both <b>*.corp.example.com</b> and <b>cluster1</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.thoughtspot.com,cluster1</code></dd>
+  </dlentry>
+  
   <dlentry>
     <dt><code>tscli ssl clear-min-tls-version [-h]</code></dt>
     <dd>Clears any customizations for the minimum TLS version to support.</dd>
@@ -2380,7 +2384,6 @@ This subcommand has the following options:
 </dl>
 
 {: id="tscli-sssd"}
-
 ### sssd
 
 ```
@@ -2391,7 +2394,7 @@ This subcommand uses system security services daemon (SSSD), and has the followi
 
 <dl>
 
-<dlentry>
+<dlentry id="tscli-sssd-enable">
   <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
   <dd>Enables system Active Directory (AD) user access on a single node. You will be
    prompted for password credentials. The user must have permission to join a
@@ -2409,17 +2412,17 @@ This subcommand uses system security services daemon (SSSD), and has the followi
    </dd>
  </dlentry>
 
- <dlentry>
+ <dlentry id="tscli-sssd-disable">
    <dt><code>tscli sssd disable</code></dt>
-    <dd>Leaves identity domain and removes AD sudo group.</dd>
+    <dd>Disables Active Directory access. Leaves identity domain and removes AD sudo group.</dd>
   </dlentry>
 
-  <dlentry>
+  <dlentry id="tscli-sssd-set-sudo-group">
     <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
     <dd>Allows <code>sudo</code> permissions for a specified AD group.</dd>
   </dlentry>
 
-  <dlentry>
+  <dlentry id="tscli-sssd-clear-sudo-group">
     <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
     <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
   </dlentry>

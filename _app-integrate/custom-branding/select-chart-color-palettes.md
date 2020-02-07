@@ -1,7 +1,7 @@
 ---
 title: [Select chart color palettes]
 
-last_updated: tbd
+last_updated: 2/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ To select the chart color palettes:
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
-     ![]({{ site.baseurl }}/images/chart_color_palettes.png "Chart Color Palettes section")
+     ![]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
 
 2. Click the color you would like to change in the primary color palette, and use the color menu to choose your new color.
 

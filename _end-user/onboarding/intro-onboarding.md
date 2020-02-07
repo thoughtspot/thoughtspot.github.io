@@ -1,7 +1,6 @@
 ---
 title: [Onboarding Users]
 last_updated: 10/07/2019
-toc: true
 summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -29,7 +28,8 @@ When you create a new user, we recommend that you add them to a user group immed
 
 The key workflows that enable successful onboarding include the following:
 
-1. Configure and save a default pinboard that you plan to use for new users.
+1. Configure and save a default Pinboard (or Pinboards) for new users. Alternatively, determine what default Pinboards you plan to use for each user group.
+
    See steps for [creating a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#create-a-pinboard).
 
 2. Create a new user group, or edit an existing user group to which new users belong:
@@ -48,3 +48,18 @@ The key workflows that enable successful onboarding include the following:
    See [User onboarding experience]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
 
 5. **\[Optional\]** Any user can repeat their onboarding experience at any time. Simply select **Profile** from user icon on the top right corner of the page. Under **Preferences > New user onboarding**, click **Revisit**.  See [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).
+
+{: id="data-source-recommendation"}
+<!--SCAL-51041-->
+## Notes on Data Source recommendation
+
+User groups in ThoughtSpot can be hierarchical, and each user can belong to multiple groups. Because of this, the choice of the Recommended Data Source may be be surprising, both to users and admins.
+
+We determine the default Data Source for **each user** based on these criteria:
+
+* Consider all default Pinboards, across all Groups
+* Identify Data Sources associated with these Pinboards
+* Rank the Data Sources on frequency of use
+* Select the highest ranked Data Source
+
+Admins can preview onboarding flow for any given user, and adjust the selection of default Pinboards.

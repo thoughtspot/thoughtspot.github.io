@@ -13,7 +13,7 @@ Ask your ThoughtSpot administrator, which of the following methods you should us
 
 ### Per-app VPN [Recommended]
 
-If you download the app from your company's internal app store (mobile device or app management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
+If you download the app from your company's internal app store (mobile device management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
 
 - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-iOS-Device-Management/GUID-AWT-IOS-PROFILEVPN.html){:target="_blank"}
 - [MobileIron](http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/Per-App_VPN_Configuration.htm){:target="_blank"}

@@ -1,12 +1,15 @@
 ---
-title: [Set up VMware for ThoughtSpot]
+title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: tbd
+last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page explains how to install a ThoughtSpot cluster in a VMware VSphere
-Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.
+
+{% include note.html content="Older versions of ESXi aren't supported due to hardware/driver incompatibility issues." %}
+
+For each hardware node, you must:
 
 * Complete the prerequisites
 * Use the ThoughtSpot Open Virtualization Format (OVF) file to create
@@ -29,6 +32,8 @@ for a sandbox environment but is insufficient for a production environment. You 
    You should aim to allocate 490 GB or more RAM.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
+
+3. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
 
 ## Use the OVF to Create a VM
 
@@ -136,8 +141,8 @@ additional, larger capacity disks.
 7. Power on the VM
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
-    ```shell
-    sudo /usr/local/scaligent/bin/prepare_disks.sh
+    ```
+    $ sudo /usr/local/scaligent/bin/prepare_disks.sh
     ```
 
 ## Next steps
@@ -147,5 +152,3 @@ There is no network at this point on your VMs. As a prerequisite:
 1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
-
-After you finish, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
