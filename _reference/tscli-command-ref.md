@@ -330,8 +330,8 @@ tscli backup [-h] {create,delete,ls,restore}
       </dlentry>
 
     <dlentry>
-      <dt><code>tscli backup delete <em>name</em></code></dt>
-      <dd>Deletes the named backup.</dd>
+      <dt><code>tscli backup delete <em>ID</em></code></dt>
+      <dd>Deletes the backup with the specified ID.</dd>
     </dlentry>
 
     <dlentry>
@@ -358,7 +358,7 @@ tscli backup [-h] {create,delete,ls,restore}
         </dlentry>
         <dlentry>
         <dt><code>--enable_cloud_storage</code></dt>
-          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>.</dd>
+          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd>
         </dlentry>
         <dlentry>
         <dt>--heterogeneous</dt>
@@ -421,7 +421,12 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli backup-policy update <em>NAME</em></code></dt>
-    <dd>Prompts an editor for you to edit the backup policy <code>name</code>.</dd></dlentry>
+    <dd>Prompts an editor for you to edit the backup policy <code>name</code>, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--config <em>CONFIG</em></code></dt>
+    <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
+    </dd></dlentry>
 </dl>
 
 {: id="tscli-calendar"}
@@ -439,13 +444,11 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--file_path <em>FILE_PATH</em></code></dt>
-<dd><p>Path to the CSV file holding custom calendar data.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Path to the CSV file holding custom calendar data.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--name <em>NAME</em></code></dt>
-<dd><p>Custom calendar name.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Custom calendar name.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--separator <em>SEPARATOR</em></code></dt>
@@ -459,8 +462,7 @@ This subcommand has the following options:
 </dlentry>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>The admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The admin username for ThoughtSpot login.</dd>
 </dlentry>
 </dl></dd>
 </dlentry>
@@ -470,13 +472,11 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--name <em>NAME</em></code></dt>
-<dd><p>Deletes the custom calendar <em>NAME</em>.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Deletes the custom calendar <em>NAME</em>.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>The admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The admin username for ThoughtSpot login.</dd>
 </dlentry></dl></dd>
 </dlentry>
 <dlentry>
@@ -493,18 +493,15 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--name <em>NAME</em></code></dt>
-<dd><p>A name to create the custom calendar CSV file with.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>A name to create the custom calendar CSV file with.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--start_date <em>START_DATE</em></code></dt>
-<dd><p>The start date to begin the custom calendar with in the form mm/dd/yyyy.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The start date to begin the custom calendar with in the form mm/dd/yyyy.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--end_date <em>END_DATE</em></code></dt>
-<dd><p>The end date to end the custom calendar with in the form mm/dd/yyyy.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The end date to end the custom calendar with in the form mm/dd/yyyy.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--calendar_type {MONTH_OFFSET,4-4-5,4-5-4,5-4-4}</code></dt>
@@ -531,8 +528,7 @@ This subcommand has the following options:
 </dlentry>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>The admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The admin username for ThoughtSpot login.</dd>
 </dlentry>
 </dl></dd>
 </dlentry>
@@ -541,13 +537,11 @@ This subcommand has the following options:
 <dd>Procures data of a custom calendar as a CSV file, with the following parameters:
 <dl><dlentry>
 <dt><code>--name <em>NAME</em></code></dt>
-<dd><p>Procures data of custom calendar <code>NAME</code></p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Procures data of custom calendar <code>NAME</code></dd>
 </dlentry>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>Admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Admin username for ThoughtSpot login.</dd>
 </dlentry></dl></dd></dlentry>
 <dlentry>
 <dt><code>tscli calendar list</code></dt>
@@ -555,8 +549,7 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>Admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Admin username for ThoughtSpot login.</dd>
 </dlentry></dl></dd></dlentry>
 <dlentry>
 <dt><code>tscli calendar update</code></dt>
@@ -564,13 +557,11 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--file_path <em>FILE_PATH</em></code></dt>
-<dd><p>Path to the CSV file holding custom calendar data.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Path to the CSV file holding custom calendar data.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--name <em>NAME</em></code></dt>
-<dd><p>Custom calendar name.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>Custom calendar name.</dd>
 </dlentry>
 <dlentry>
 <dt><code>--separator <em>SEPARATOR</em></code></dt>
@@ -584,8 +575,7 @@ This subcommand has the following options:
 </dlentry>
 <dlentry>
 <dt><code>--username <em>USERNAME</em></code></dt>
-<dd><p>The admin username for ThoughtSpot login.</p>
-<p>The default is <code>None</code>.</p></dd>
+<dd>The admin username for ThoughtSpot login.</dd>
 </dlentry>
 </dl></dd>
 </dlentry>
@@ -611,7 +601,7 @@ This subcommand has the following options:
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
       <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
-      <p>The default is <code>None</code>.</p></dd></dlentry>
+      </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
@@ -653,12 +643,10 @@ This subcommand has the following options:
   <dl>
   <dlentry>
   <dt><code>--keyspaces <em>KEYSPACES</em></code></dt>
-  <dd><p>Comma separated list of keyspaces to take a backup of.</p>
-  <p>The default is <code>None</code>.</p></dd></dlentry>
+  <dd>Comma separated list of keyspaces to take a backup of.</dd></dlentry>
   <dlentry>
   <dt><code>backup_dir <em>BACKUP_DIR</em></code></dt>
-  <dd><p>The path to the backup directory to write the backup.</p>
-  <p>The default is <code>None</code>.</p></dd>
+  <dd>The path to the backup directory to write the backup to.</dd>
   </dlentry></dl></dd></dlentry>
 <dlentry>
     <dt><code>tscli cassandra restore</code></dt>
@@ -666,8 +654,7 @@ This subcommand has the following options:
     <dl>
     <dlentry>
     <dt><code>--backup_dir <em>BACKUP_DIR</em></code></dt>
-    <dd><p>The path to the backup directory to write the backup.</p>
-    <p>The default is <code>None</code>.</p></dd>
+    <dd>The path to the backup directory to restore the backup to.</dd>
     </dlentry></dl></dd></dlentry>
 </dl>
 
@@ -756,8 +743,7 @@ This subcommand has the following options:
       <p>The default is <code>False</code>.</p></dd></dlentry>
       <dlentry>
       <dt><code>--nodes <em>NODES</em></code></dt>
-      <dd><p>A comma separated list of specified nodes to get the config for.</p>
-      <p>The default is <code>None</code>.</p></dd></dlentry>
+      <dd>A comma separated list of specified nodes to get the config for.</dd></dlentry>
       </dl></dd></dlentry>
 
   <dlentry>
@@ -770,7 +756,7 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli cluster load <em>backupdir</em></code></dt>
-    <dd>Loads the state from a specified backup directory onto an existing cluster.</dd></dlentry>
+    <dd>Loads the state from a specified backup directory onto an existing cluster. Add <code>--reuse_cluster</code> to reuse the cluster service configs rather than restoring from the backup directory.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster reinstall-os</code></dt>
@@ -796,7 +782,7 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
@@ -813,8 +799,7 @@ This subcommand has the following options:
     <dl>
     <dlentry>
     <dt><code>--ignore_if_unhealthy</code></dt>
-    <dd><p>Comma separated list of node IPs on which upgrade is not attempted if they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</p>
-    <p>The default is <code>None</code>.</p></dd></dlentry></dl>
+    <dd>Comma separated list of node IPs on which upgrade is not attempted if they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</dd></dlentry></dl>
     </dd></dlentry>
 
   <dlentry>
@@ -876,8 +861,7 @@ This subcommand has the following options:
   <p>The default is <code>False</code>.</p></dd></dlentry>
   <dlentry>
   <dt><code>--includes <em>INCLUDES</em></code></dt>
-  <dd><p>The name of the service to check the status of, either falcon or sage.</p>
-  <p>The default is <code>None</code>.</p></dd></dlentry></dl></dd></dlentry>
+  <dd>The name of the service to check the status of, either falcon or sage.</dd></dlentry></dl></dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster stop</code></dt>
@@ -912,8 +896,7 @@ This subcommand has the following options:
   <dd>Only updates orion.</dd></dlentry>
   <dlentry>
   <dt><code>--ignore_if_unhealthy</code></dt>
-  <dd><p>A comma separated list of node IPs on which upgrade is not attempted in case they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</p>
-  <p>The default is <code>None</code>.</p></dd></dlentry></dl>
+  <dd>A comma separated list of node IPs on which upgrade is not attempted in case they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</dd></dlentry></dl>
     </dd></dlentry>
 
   <dlentry>
@@ -1019,20 +1002,16 @@ This subcommand has the following options:
       <dl>
         <dlentry>
           <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
-          <dd><p>Specifies the Administrator username for ThoughtSpot.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Specifies the Administrator username for ThoughtSpot.</dd></dlentry>
         <dlentry>
           <dt><code>--username <em>USERNAME</em></code></dt>
-          <dd><p>Specifies the username for Informatica Cloud.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Specifies the username for Informatica Cloud.</dd></dlentry>
         <dlentry>
           <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
-          <dd><p>The maximum time in seconds to wait for the Data Connect agent to start.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>The maximum time in seconds to wait for the Data Connect agent to start.</dd></dlentry>
         <dlentry>
           <dt><code>--isIICS</code></dt>
-          <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
-          <p>The default is <code>False</code>.</p></dd>
+          <dd>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</dd>
           </dlentry>
       </dl></dd></dlentry>
 
@@ -1077,30 +1056,24 @@ This subcommand has the following options:
       <dl>
         <dlentry>
           <dt><code>--username <em>USERNAME</em></code></dt>
-          <dd><p>Username for Informatica Cloud</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Username for Informatica Cloud</dd></dlentry>
         <dlentry>
           <dt><code>--thoughtspot_url THOUGHTSPOT_URL</code></dt>
-          <dd><p>URL to reach ThoughtSpot.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>URL to reach ThoughtSpot.</dd></dlentry>
         <dlentry>
           <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
-          <dd><p>Admin username for ThoughtSpot</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Admin username for ThoughtSpot</dd></dlentry>
         <dlentry>
           <dt><code>--groupname <em>GROUPNAME</em></code></dt>
-          <dd><p>Name of the secure agent group to use.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Name of the secure agent group to use.</dd></dlentry>
         <dlentry>
           <dt><code>--org_id <em>ORG_ID</em></code></dt>
-          <dd><p>Specifies the Informatica <code>id</code> of the company.</p>
-          <p>The default is <code>None</code>.</p><!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
+          <dd>Specifies the Informatica <code>id</code> of the company.<!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
         <dlentry>
           <dt><code>--pin_to <em>PIN_TO</em></code></dt>
-          <dd><p>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
+          <dd>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
       to the Informatica agent, and will always be used. Defaults to the public IP
-      address of the localhost where this command was run.</p>
-      <p>The default is <code>None</code>.</p></dd></dlentry>
+      address of the localhost where this command was run.</dd></dlentry>
         <dlentry>
           <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
           <dd>Proxy server host for network access.</dd></dlentry>
@@ -1112,8 +1085,7 @@ This subcommand has the following options:
           <dd>Proxy server username.</dd></dlentry>
         <dlentry>
           <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
-          <dd><p>Maximum time in seconds to wait for Data Connect agent to start.</p>
-          <p>The default is <code>None</code>.</p></dd></dlentry>
+          <dd>Maximum time in seconds to wait for Data Connect agent to start.</dd></dlentry>
         <dlentry>
           <dt><code>--isIICS</code></dt>
           <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
@@ -1197,7 +1169,8 @@ This subcommand has the following option:
     <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding, Data Connect, and callhome, and informs whether they are enabled or disabled. This subcommand has the following parameter:
     <dl><dlentry>
     <dt><code>--proto</code></dt>
-    <dd>Shows the output as a serialized proto.</dd></dlentry></dl></dd></dlentry>
+    <dd><p>Shows the output as a serialized proto.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
 </dl>
 
 {: id="tscli-fileserver"}
