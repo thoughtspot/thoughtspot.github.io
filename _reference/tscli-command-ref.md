@@ -1338,7 +1338,7 @@ This subcommand has the following options:
     <dt><code>tscli ldap add-cert <em>name</em> <em>cert_file</em></code></dt>
     <dd>Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
   SSL and you wish to add it. Use <code>name</code> to supply an alias for the
-  certificate you are installing. Specify the file where the certificate is.</dd></dlentry>
+  certificate you are installing. Use <code>cert-file</code> to specify the file where the certificate is.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli ldap configure</code></dt>
@@ -1384,8 +1384,7 @@ This subcommand has the following options:
 
        <dlentry>
          <dt><code>--since <em>SINCE</em></code></dt>
-         <dd><p>Grabs logs from the specified time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
-         <p>The default is <code>None</code>.</p></dd></dlentry>
+         <dd>Grabs logs from the specified time window in the past. Should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</dd></dlentry>
 
       <dlentry>
         <dt><code>--from <em>FROM</em></code></dt>
@@ -1426,11 +1425,11 @@ This subcommand has the following options:
         <p>Unix-Command to be run on the selected logs. Use single quotes to escape
     spaces etc. Note the language used to specify CMDSTR has the following rules.</p>
         <ul>
-          <li>A logfile and its corresponding result file can be referred by keywords <code>SRCFILE</code> and
+          <li>A logfile and its corresponding result file can be referred to by the keywords <code>SRCFILE</code> and
     <code>DSTFILE</code>. For example, <code>cp SRCFILE DSTFILE</code>.</li>
-          <li>Without any reference to <code>DSTFILE</code> in CMDSTR, <code>DSTFILE</code> will be appended to CMDSTR for output redirection. For example, <code>du -sch SRCFILE</code> gets auto-transtalted to <code>du -sch SRCFILE > DSTFILE</code>.</li>
-          <li>Without any reference to SRCFILE, content of log is streamed to CMDSTR by pipe. For example,
-    <code>tail -n100 | grep ERROR</code> gets auto-transtalted to <code>cat SRCFILE | tail -n100 |
+          <li>Without any reference to <code>DSTFILE</code> in CMDSTR, <code>DSTFILE</code> will be appended to CMDSTR for output redirection. For example, <code>du -sch SRCFILE</code> gets auto-translated to <code>du -sch SRCFILE > DSTFILE</code>.</li>
+          <li>Without any reference to <code>SRCFILE</code>, the contents of the log are streamed to CMDSTR by pipe. For example,
+    <code>tail -n100 | grep ERROR</code> gets auto-translated to <code>cat SRCFILE | tail -n100 |
     grep ERROR > DSTFILE</code>.</li></ul></dd></dlentry>
 
     <dlentry>
@@ -1509,7 +1508,7 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--offline</code></dt>
           <dd>
-            <p>Specifies that you are using <code>maptiles</code> tar from local disk.</p>
+            <p>Specifies that you are using <code>maptiles</code> tar from a local disk.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
@@ -1614,7 +1613,7 @@ This subcommand has the following options:
      <dlentry>
        <dt><code>--mount_point <em>MOUNT_POINT</em></code></dt>
        <dd>
-         <p>Directory on all cluster nodes where to mount the NFS filesystem on the target.</p>
+         <p>Directory on all cluster nodes where the NFS filesystem should be mounted on the target.</p>
          <p>If this directory does not exist, the command creates it. If this directory already exists, the command uses it for mounting.</p>
          <p>For example, <code>/mnt/external</code>.</p></dd></dlentry>
 
@@ -1829,12 +1828,9 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli patch apply [-h] [<em>release</em>]</code></dt>
     <dd>
-      <p>Applies the patch on an existing cluster.</p>
-      <p>Accepts the following flags:</p>
+      <p>Applies the patch on an existing cluster, with the specified <code><em>release</em></code>.</p>
+      <p>Accepts the following flag:</p>
       <dl>
-        <dlentry>
-          <dt><code>release</code></dt>
-          <dd>The relative path to the patch tar ball.</dd></dlentry>
         <dlentry>
           <dt><code>--skip-check</code></dt>
           <dd><p>When set, skips all pre-apply checks.</p>
@@ -1862,17 +1858,15 @@ This subcommand has the following options:
           <dlentry>
             <dt><code>--service <em>SERVICE</em></code></dt>
             <dd>
-              <p>Shows patches filtered by service.</p>
-              <p>The default setting is <code>None</code>.</p></dd></dlentry>
+              Shows patches filtered by service.</dd></dlentry>
           <dlentry>
             <dt><code>--md5 <em>MD5</em></code></dt>
             <dd>
-              <p>Shows the details of the patch specified.</p>
-              <p>The default setting is <code>None</code>.</p></dd></dlentry>
+              Shows the details of the patch specified.</dd></dlentry>
           <dlentry>
             <dt><code>--history</code></dt>
             <dd>
-              <p>Shows the history of all patch apply/rollback release.</p>
+              <p>Shows the history of all patches applied/rollback releases.</p>
               <p>The default setting is <code>False</code>.</p></dd></dlentry>
         </dl>
         </dd></dlentry>
@@ -1883,11 +1877,11 @@ This subcommand has the following options:
 
     <dlentry>
       <dt><code>tscli patch resume-rollback [-h]</code></dt>
-      <dd>Resumes patch roll-back</dd></dlentry>
+      <dd>Resumes patch roll-back.</dd></dlentry>
 
     <dlentry>
-      <dt><code>tscli patch rollback [-h]</code></dt>
-      <dd>Rolls back the patch from an existing cluster, with the following parameters:
+      <dt><code>tscli patch rollback <em>md5</em> [-h]</code></dt>
+      <dd>Rolls back a specified patch from an existing cluster with the following parameters:
       <dl>
       <dlentry>
       <dt><code>md5</code></dt>
@@ -1924,21 +1918,22 @@ This subcommand has the following options:
 <dl>
 <dlentry>
 <dt><code>--repo <em>REPO</em></code></dt>
-<dd>Specify the url of a specific repository to download packages.</dd></dlentry>
+<dd><p>Specifies the url of a specific repository to download packages from.</p>
+<p>The default is <code>http://cran.rstudio.com/</code>.</p></dd></dlentry>
 <dlentry>
 <dt><code>-timeout  <em>REPO</em></code></dt>
 <dd><p>Timeout waiting for the R Package to be installed.</p>
 <p>The default is <code>60</code>.</p></dd>
 <dt><code>--dest_dir <em>REPO</em></code></dt>
-<dd>Directory where output of this command will be placed</dd></dlentry>
+<dd>Directory where output of this command will be placed.</dd></dlentry>
 <dlentry>
 <dt><code>--nodes <em>NODES</em></code></dt>
 <dd>
-<p>Space-separated list of IPs for nodes where to run the command.</p>
+<p>Space-separated list of IPs for nodes to run the command on.</p>
 <p>The default setting is <code>all</code>.</p>
 </dd></dlentry></dl></dd></dlentry>
 <dlentry>
-<dt><code>tscli rpackage add [-h] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
+<dt><code>tscli rpackage delete [-h] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
 <dd>
 <p>Command to delete an installed R package from the cluster.</p>
 <p>Accepts the following flags:</p>
@@ -1946,23 +1941,28 @@ This subcommand has the following options:
 <dlentry>
 <dt><code>--timeout <em>REPO</em></code></dt>
 <dd>
-<p>Timeout waiting before removing the R package.</p>
-<p>The default is 60</p>
+<p>Timeout waiting for the R Package to be removed.</p>
+<p>The default is 60.</p>
 </dd></dlentry>
 <dlentry>
 <dt><code>--dest_dir <em>REPO</em></code></dt>
-<dd>Directory where to save the output of this command.</dd></dlentry>
+<dd>Directory where the output of this command should be saved.</dd></dlentry>
 <dlentry>
 <dt><code>--nodes <em>NODES</em></code></dt>
 <dd>
-<p>Space-separated list of node IPs where to run the command.</p>
+<p>Space-separated list of node IPs on which to run the command.</p>
 <p>The default setting is <code>all</code>.</p>
 </dd></dlentry>
 </dl>
 </dd></dlentry>
 <dlentry>
 <dt><code>tscli rpackage list [-h] [--detailed]</code></dt>
-<dd>List all R packages installed on the cluster.</dd></dlentry>
+<dd>List all R packages installed on the cluster, with the following parameter:
+<dl><dlentry>
+<dt><code>--detailed</code></dt>
+<dd><p>Command to get install information as well as package names.</p>
+<p>The default is <code>False</code>.</p></dd></dlentry></dl>
+</dd></dlentry>
 </dl>
 
 
@@ -2001,7 +2001,7 @@ This subcommand has the following options:
     <dd>Disables scheduled pinboards for the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli scheduled-pinboards enable [-h]</code></dt>
-    <dd>Enables scheduled pinboards, which is disabled in prod clusters by default.</dd></dlentry>
+    <dd>Enables scheduled pinboards, which are disabled in prod clusters by default.</dd></dlentry>
   </dl>
 
 {% include note.html content="When you enable scheduled pinboards, you should
@@ -2029,7 +2029,7 @@ This subcommand has the following option:
     <dlentry>
       <dt><code>--unset</code></dt>
       <dd><p>Marks the cluster homogeneous.</p>
-      <p>The default is <code>True</code>.</p></dd></dlentry>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
   </dl></dd></dlentry></dl>
 
 {: id="tscli-smtp"}
@@ -2044,10 +2044,12 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli smtp remove-mailfromname</code></dt>
-    <dd>Removes current cluster mail from name.</dd></dlentry>
+    <dd><p>Removes current cluster mail from name.</p>
+    <p>It is the first half of the email address, the part before the @ sign. In <em>example@company.com</em>, it is <em>example</em>.</p></dd></dlentry>
   <dlentry>
     <dt><code>tscli smtp remove-mailname</code></dt>
-    <dd>Removes current cluster mail name.</dd></dlentry>
+    <dd><p>Removes current cluster mail name.</p>
+    <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp remove-relayhost</code></dt>
   <dd>Removes current cluster relay host.</dd></dlentry>
@@ -2071,9 +2073,9 @@ This subcommand has the following options:
   <dd><p>Sets the domain from where email alerts are sent for the cluster.</p>
   <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
 <dlentry>
-  <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] relayhost</code></dt>
+  <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] <em>relayhost</em></code></dt>
   <dd>
-    <p>Sets the Relay Host for SMTP (email) sent from the cluster.</p>
+    <p>Sets the specified <code>relayhost</code> for SMTP (email) sent from the cluster.</p>
     <p>Accepts the following flag:</p>
       <dl>
         <dlentry>
@@ -2094,7 +2096,7 @@ This subcommand has the following options:
   <dd>Shows the mailname, from which email alerts are sent, for the cluster.</dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp show-mailname</code></dt>
-  <dd>Shows the mailname, where email alerts are sent, for the cluster.</dd></dlentry>
+  <dd>Shows the mailname, from which email alerts are sent, for the cluster.</dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp show-relayhost</code></dt>
   <dd>
@@ -2152,7 +2154,11 @@ This subcommand has the following options:
       <dlentry>
         <dt><code>--remote</code></dt>
         <dd><p>Takes backup through orion master.</p>
-        <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+        <p>The default is <code>False</code>.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--no-orion-master</code></dt>
+          <dd><p>Specifies whether orion master is available during backup</p>
+          <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot create [-h] <em>name</em> <em>reason</em> <em>ttl</em></code></dt>
@@ -2311,13 +2317,17 @@ This subcommand has the following options:
 <dl>
 
   <dlentry>
-    <dt><code>tscli ssl add-cert [-h] <em>key</em> <em>certificate</em></code></dt>
-    <dd>Adds an SSL certificate, key pair.</dd>
+    <dt><code>tscli ssl add-cert [-h] <em>key</em> <em>certificate valid_hosts</em></code></dt>
+    <dd>Adds a specified SSL certificate and key pair. Requires a comma-separated host list. Nginx will reject if the hosts are not valid. This command has the following optional flag:
+    <dl><dlentry>
+    <dt><code>--force</code></dt>
+    <dd><p>Forces setting of key and certification without validation.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd>
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli ssl add-valid-hosts</code></dt>
-    <dd>Adds valid hosts.</dd></dlentry>
+    <dt><code>tscli ssl add-valid-hosts <em>valid_hosts</em></code></dt>
+    <dd>Adds valid hosts. Requires a comma-separated host list. Nginx will reject if the hosts are not valid.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli ssl clear-min-tls-version [-h]</code></dt>
@@ -2347,13 +2357,14 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli ssl set-alert-days</code></dt>
-    <dd>Sets alert threshold for number of days to check before SSL certificate expires.</dd>
+    <dt><code>tscli ssl set-alert-days <em>days</em></code></dt>
+    <dd><p>Sets alert threshold for a specifed number of days to check before SSL certificate expires.</p>
+    <p>The default is <code>30 days</code>.</p></dd>
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli ssl set-min-tls-version</code></dt>
-    <dd>Sets the minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. You must ensure that client browsers are enabled for this version or newer.</dd>
+    <dt><code>tscli ssl set-min-tls-version <em>{1.0,1.1,1.2}</em></code></dt>
+    <dd>Sets a specified minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. You must ensure that client browsers are enabled for this version or newer.</dd>
   </dlentry>
 
   <dlentry>
@@ -2574,23 +2585,18 @@ This subcommand has the following options:
 </dlentry>
 
 <dlentry>
-  <dt><code>tscli support rm-feedback-email</code></dt>
-  <dd>Removes the email for sending feedback out of the system. To set a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
-</dlentry>
-
-<dlentry>
   <dt><code>tscli support set-admin-email <em>email</em></code></dt>
-  <dd>Sets the specified email address for contacting the customer administrator. To display a blank email address, issue the command <code>tscli support set-admin-email</code>.</dd>
+  <dd>Sets the specified email address for contacting the customer administrator.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support set-feedback-email <em>email</em></code></dt>
-  <dd>Sets the specified email address for sending feedback. To display a blank email address, issue the command <code>tscli support set-feedback-email</code>.</dd>
+  <dd>Sets the specified email address for sending feedback.</dd>
 </dlentry>
 
 <dlentry>
   <dt><code>tscli support set-admin-phone <em>phone_number</em></code></dt>
-  <dd>Sets the specified phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>. To display a blank phone number, issue the command <code>tscli support set-admin-phone</code>.</dd>
+  <dd>Sets the specified phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>.</dd>
 </dlentry>
 
 <dlentry>
