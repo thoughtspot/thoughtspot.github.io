@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="Learn how to configure ADFS to work with ThoughtSpot."> -->
 <meta name="keywords" content=",  ">
 <title>Configure Active Directory Federated Services | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Configure Active Directory Federated Services”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You can configure Active Directory Federated Services (AD FS) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS." />
-<meta property="og:description" content="You can configure Active Directory Federated Services (AD FS) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS." />
+<meta name="description" content="You can configure Active Directory Federated Services (ADFS) to work with ThoughtSpot." />
+<meta property="og:description" content="You can configure Active Directory Federated Services (ADFS) to work with ThoughtSpot." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T15:46:07-08:00" />
+<meta property="article:published_time" content="2020-02-07T20:40:08-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Configure Active Directory Federated Services”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Configure Active Directory Federated Services”]","dateModified":"2020-02-05T15:46:07-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html","datePublished":"2020-02-05T15:46:07-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html"},"description":"You can configure Active Directory Federated Services (AD FS) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Configure Active Directory Federated Services”]","dateModified":"2020-02-07T20:40:08-08:00","url":"https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html","datePublished":"2020-02-07T20:40:08-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/app-integrate/SAML/integrate-ADFS.html"},"description":"You can configure Active Directory Federated Services (ADFS) to work with ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2484,36 +2484,9 @@ var ss360Config = {
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Active Directory</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li class="active"><a href="/6.0/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/initialize-IDP.html">Initialize the Identity Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/initialize-SP.html">Initialize the Service Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/test-ADFS.html">Test the ADFS Integration</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li class="active"><a href="/6.0/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
+                      
                    
                 
                     </ul>
@@ -3587,6 +3560,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">Learn how to configure ADFS to work with ThoughtSpot.</div>
+   
 
     
     
@@ -3622,31 +3597,108 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    3 minutes
   
 </span>
  -->
 
     
 
-  <p>You can configure Active Directory Federated Services (AD FS) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS.</p>
+  <p>You can configure Active Directory Federated Services (ADFS) to work with ThoughtSpot.</p>
 
-<ul>
-  <li><a href="configure-SAML-with-tscli#">Configure SAML in ThoughtSpot</a>.</li>
-  <li>Install AD FS 2.0.</li>
-  <li>Make sure you can run AD FS 2.0 Federation Server Configuration Wizard from the AD FS 2.0 Management Console.</li>
-  <li>Make sure that DNS name of your Windows Server is available at your service provider (SP) and vice versa. You can do this by running the command <code class="language-plaintext highlighter-rouge">nslookup</code> on both machines, supplying the DNS of the other server.</li>
-</ul>
-
-<p>AD FS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily integrated with the SAML Extension for both SSO (Single Sign-On) and SLO (Single Log Out).</p>
-
-<p>After completing the prerequisites, use these procedures to configure AD FS for use with ThoughtSpot.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you configure ADFS, complete these prerequisites.</p>
 
 <ol>
-  <li><a href="initialize-IDP.html">Initialize IdP metadata.</a></li>
-  <li><a href="initialize-SP.html">Initialize the Service Provider metadata.</a></li>
-  <li><a href="test-ADFS.html">Test your ADFS integration.</a></li>
+  <li><a href="configure-SAML-with-tscli#">Configure SAML in ThoughtSpot</a>.</li>
+  <li>Install <a href="https://www.microsoft.com/en-us/download/details.aspx?id=10909">ADFS 2.0</a>. ThoughtSpot supports ADFS 3.0, but recommends ADFS 2.0.</li>
+  <li>Make sure you can run ADFS 2.0 Federation Server Configuration Wizard from the ADFS 2.0 Management Console.</li>
+  <li>Make sure that the DNS name of your Windows Server is available at your service provider (SP) and vice versa. You can do this by running the command <code class="language-plaintext highlighter-rouge">nslookup</code> in the command line on both machines, supplying the DNS of the other server. The syntax is <code class="language-plaintext highlighter-rouge">nslookup [HOST] [SERVER]</code>. Replace HOST and SERVER with your specific information.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ nslookup [HOST] [SERVER]
+</code></pre></div>    </div>
+  </li>
 </ol>
+
+<p>ADFS 2.0 supports SAML 2.0 in IdP (Identity Provider) mode and can be easily integrated with the SAML Extension for both SSO (Single Sign-On) and SLO (Single Log Out).</p>
+
+<h2 id="step-1-initialize-idp-metadata">Step 1: Initialize IdP metadata</h2>
+<ol>
+  <li>
+    <p><strong>Download the IdP metadata</strong> Download the ADFS 2.0 IdP metadata from the ADFS server.
+You can reference this file by its URL:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://&lt;adfsserver&gt;/FederationMetadata/2007-06/FederationMetadata.xml
+</code></pre></div>    </div>
+  </li>
+  <li><strong>SSH into your cluster</strong> Log into the Linux shell using SSH.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Change directories to the SAML directory</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd /usr/local/scaligent/release/production/orion/tomcat/callosum/saml
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Update the metadata</strong> Replace the contents of the file <code class="language-plaintext highlighter-rouge">idp-meta.xml</code> with the metadata of the IdP that you downloaded.
+Do not change the name of the file.</li>
+  <li><strong>Restart Tomcat</strong> Contact <a href="/6.0/appliance/contact.html">ThoughtSpot Support</a> for help restarting ThoughtSpot’s Tomcat instance.</li>
+</ol>
+
+<h2 id="step-2-initialize-the-service-provider-metadata">Step 2: Initialize the Service Provider metadata</h2>
+
+<h3 id="1-import-metadata">1: Import metadata</h3>
+<ol>
+  <li>Open the ADFS 2.0 Management Console.</li>
+  <li>Select <strong>Relying Party Trusts &gt; Add Relying Party Trust</strong>.</li>
+  <li>Select <strong>Import data about the relying party from a file</strong>.</li>
+  <li>Upload the <code class="language-plaintext highlighter-rouge">metadata.xml</code> file that you downloaded from ThoughtSpot earlier.</li>
+  <li>Select <strong>Next</strong>.
+    <ul>
+      <li>There may be a warning that some of the content of the metadata is not supported. You can safely ignore this warning.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="2-edit-claim-rules">2: Edit claim rules</h3>
+<ol>
+  <li>In the <strong>Ready to Add Trust</strong> section, make sure that the tab endpoints contain multiple endpoint values.
+    <ul>
+      <li>If not, verify that your metadata was generated with the HTTPS protocol URLs.</li>
+    </ul>
+  </li>
+  <li>Ensure that the <strong>Open the Edit Claim Rules dialog</strong> checkbox is checked.</li>
+  <li>Click <strong>Next</strong>.</li>
+  <li>Select <strong>Add Rule</strong>.</li>
+  <li>Choose <strong>Send LDAP Attributes as Claims</strong>.</li>
+  <li>Click <strong>Next</strong>.</li>
+  <li>For <strong>NameID</strong> enter the name of your claim rule.</li>
+  <li>For <strong>Attribute store</strong>, choose “Active Directory”.</li>
+  <li>For <strong>LDAP Attribute</strong>, choose “SAM-Account-Name”.</li>
+  <li>For <strong>Outgoing claim type</strong>, choose “Name ID”.
+    <ul>
+      <li>If you are using ADFS 3.0, you might need to configure the Name ID as a Pass Through claim.</li>
+    </ul>
+  </li>
+  <li>Finish the wizard.</li>
+  <li>Confirm that all information is correct in the claim rules window.</li>
+</ol>
+
+<h3 id="3-specify-your-level-of-security">3. Specify your level of security</h3>
+<ol>
+  <li>Open the provider by double-clicking it.</li>
+  <li>Select the <strong>Advanced</strong> tab.</li>
+  <li>Under <strong>Secure hash algorithm</strong>, choose “SHA-256”.
+    <ul>
+      <li>If you have trouble with SHA-256, try SHA-1 instead.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>You can now use ADFS.</p>
+
+<h2 id="step-3-test-your-adfs-integration">Step 3: Test your ADFS integration</h2>
+<p>After setting up the ADFS integration, make sure it works properly. To test your ADFS integration, go to the ThoughtSpot login page using a Web browser and try to login with SAML.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3673,9 +3725,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 11/25/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
