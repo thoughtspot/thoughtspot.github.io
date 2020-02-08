@@ -1,6 +1,7 @@
 ---
 title: [SpotIQ preferences]
-last_updated: tbd
+summary: Change your SpotIQ basic preferences.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

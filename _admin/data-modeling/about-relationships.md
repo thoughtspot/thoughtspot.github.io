@@ -1,6 +1,7 @@
 ---
 title: [Link tables using relationships]
-last_updated: 01/06/2020
+summary: Learn how to link tables using relationships.
+last_updated: 1/6/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

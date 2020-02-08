@@ -1,6 +1,7 @@
 ---
 title: [Bar charts]
-last_updated: tbd
+last_updated: 11/15/2019
+summary: Bar charts are like column charts, but oriented horizontally.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

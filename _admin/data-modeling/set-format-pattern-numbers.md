@@ -1,8 +1,8 @@
 ---
 title: [ "Set number, date, and currency formats" ]
 
-last_updated: tbd
-summary: "Explains how to set key formats for column values."
+last_updated: 11/15/2019
+summary: "Learn how to set key formats for column values."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

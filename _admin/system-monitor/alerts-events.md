@@ -1,16 +1,15 @@
 ---
 title: [Alerts and Events board]
-
-
+last_updated: 11/18/2019
+summary: "The Alerts and Events section shows notifications, alerts, and an audit
+trail of cluster configuration changes."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The **Alerts and Events** section shows notifications, alerts, and an audit
-trail of cluster configuration changes.
 
- ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the **System Health** center: Events and Alerts")
+ ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the System Health center: Events and Alerts")
 
 
 ## Alerts
@@ -57,7 +56,7 @@ system. This list can contain the same types of information available on the **A
 
 ## Notification events
 
-This answer displays notifications of data loads. The display the **Time**, the
+This answer displays notifications of data loads. The answer displays the **Time**, the
 **User** that performed the action, and a **Summary** of the action.
 Notifications are kept for 90 days before being discarded.
 

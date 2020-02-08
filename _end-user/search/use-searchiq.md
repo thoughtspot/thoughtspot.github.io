@@ -1,13 +1,13 @@
 ---
 title: ["Use SearchIQ"]
-last_updated: 09/23/2019
+last_updated: 11/19/2019
 summary: "Use SearchIQ to do a natural language search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 **SearchIQ is in Beta.**
 
-{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
+{% include note.html content="SearchIQ is turned off by default.ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
 
 To search using SearchIQ, follow these steps:
 

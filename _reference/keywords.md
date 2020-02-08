@@ -1,9 +1,8 @@
 ---
 title: [Keyword reference]
-
-
+summary: Use keywords to help define a search.
 toc: true
-last_updated: tbd
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

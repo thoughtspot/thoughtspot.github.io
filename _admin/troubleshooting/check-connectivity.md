@@ -1,12 +1,10 @@
 ---
 title: [Network connectivity issues]
-
-
-last_updated: tbd
+summary: "If network connectivity to and from ThoughtSpot is not working, try using these steps to find and correct the issue."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If network connectivity to and from ThoughtSpot is not working, try using these steps to find and correct the issue.
 
 To troubleshoot network connectivity for ThoughtSpot:
 

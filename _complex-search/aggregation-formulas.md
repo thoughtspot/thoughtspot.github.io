@@ -1,8 +1,7 @@
 ---
 title: [Overview of aggregate formulas]
-
-
-last_updated: tbd
+summary: Learn about aggregate formulas.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,8 +10,8 @@ regular (or row-wise) formulas and aggregation formulas.
 
 ## Standard and aggregation formulas
 
-Formulas can be broken down into two types standard and aggregation formulas.
-Standard formulas act on individual rows and returns one result per row.
+Formulas can be broken down into two types: standard formulas and aggregation formulas.
+Standard formulas act on individual rows and return one result per row.
 Standard formulas use functions like:
 
 * `add`
@@ -22,9 +21,8 @@ Standard formulas use functions like:
 * `contains`
 * `if...then...else`
 
-Aggregation formulas combine rows together and returns a single result for a
-group of rows. Aggregation formulas use functions, some examples of functions
-you find in aggregation formulas are:
+Aggregation formulas combine rows together and return a single result for a
+group of rows. Some examples of functions you find in aggregation formulas are:
 
 * `average`
 * `cumulative_sum`

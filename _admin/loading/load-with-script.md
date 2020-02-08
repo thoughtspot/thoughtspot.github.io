@@ -1,8 +1,8 @@
 ---
 title: [Use a script to load data]
 
-last_updated: tbd
-summary: "Learn how to load one or files in bulk with a script."
+last_updated: 11/15/2019
+summary: "Learn how to load files in bulk with a script."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

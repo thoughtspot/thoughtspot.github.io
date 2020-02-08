@@ -1,8 +1,8 @@
 ---
 title: [Set up the JDBC driver for Pentaho]
 
-last_updated: tbd
-summary: "JDBC to connect to the ThoughtSpot Simba server from Pentaho."
+last_updated: 11/19/2019
+summary: "Use Pentaho to create a JDBC connection to ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

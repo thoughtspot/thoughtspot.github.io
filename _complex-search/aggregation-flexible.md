@@ -1,6 +1,6 @@
 ---
 title: [Flexible aggregation functions]
-summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities then the dimensions used in the search columns."
+summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities than the dimensions used in the search columns."
 last_updated: 11/05/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -57,7 +57,7 @@ This is helpful to include the main query groups that are not known at formula
 creation time. You can use `+/-` to modify the set of groups included from
 the query.
 
-{% include note.html content="`+/-` is currently supported only for  `query_groups`, not `query_filters`."%}
+{% include note.html content="`+/-` is currently supported only for `query_groups`, not `query_filters`."%}
 
 ## When group formula results are finer-grained than the search
 

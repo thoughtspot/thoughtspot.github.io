@@ -2,7 +2,7 @@
 title: [Apply conditional formatting]
 
 last_updated: tbd
-summary: "Use conditional formatting to make portiosn of your results stand  out"
+summary: "Use conditional formatting to make portions of your results stand  out."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

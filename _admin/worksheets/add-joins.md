@@ -1,8 +1,8 @@
 ---
 title: [Join a worksheet to another data source]
 
-last_updated: 6/24/2019
-summary: "Learn how to define joins between a worksheet and a table or view"
+last_updated: 11/18/2019
+summary: "Learn how to define joins between a worksheet and a table or view."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

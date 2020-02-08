@@ -1,14 +1,14 @@
 ---
 title: [Start a new search]
 
-last_updated: tbd
+last_updated: 11/19/2019
 summary: "Starting a new ThoughtSpot search is simple, like starting a new Google search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 To start a new search:
 
-1. Click **Search +** on the top navigation bar. You can also click **Search your data** at the top of the home page.
+1. Click **Search** on the top navigation bar. You can also click **Search your data** at the top of the home page.
 
      ![]({{ site.baseurl }}/images/start_a_new_search.png "Start a new search")
 2. Click the Data button, to the left of the search field.

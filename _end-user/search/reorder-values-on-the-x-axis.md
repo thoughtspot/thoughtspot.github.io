@@ -1,7 +1,7 @@
 ---
 title: [Reorder labels on the axis or legend]
-
-last_updated: tbd
+summary: Learn how to reorder labels on the chart legend or axes.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

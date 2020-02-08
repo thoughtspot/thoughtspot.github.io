@@ -1,16 +1,14 @@
 ---
 title: [Group API]
-
-last_updated: tbd
+summary: The Group APIs enable you to set or remove a privilege to or from a group or multiple groups.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Group APIs enable you to set or remove a privilege to or from a group or multiple groups.
-
 ## Add a privilege
 
-Use this API to add a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default `ALL_GROUP`group. All users in the system are always a part of `ALL_GROUP` group. By default, this group does not have either permission.
+Use this API to add a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default `ALL_GROUP` group. All users in the system are always a part of the `ALL_GROUP` group. By default, this group does not have either permission.
 
 All the data sources which the `ALL_GROUP` group has permissions to are downloadable when `DATADOWNLOADING` is applied.
 

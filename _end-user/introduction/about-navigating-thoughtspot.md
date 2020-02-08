@@ -1,7 +1,7 @@
 ---
 title: [Finding your way around]
-last_updated: 09/23/2009
-toc: false
+last_updated: 11/15/2019
+toc: true
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

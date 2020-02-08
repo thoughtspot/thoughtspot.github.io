@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot Data Connect]
-
-last_updated: tbd
+summary: "Set up Data Connect with tscli."
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,7 +9,7 @@ The ThoughtSpot team will assist you in the initial setup and configuration of T
 
 Your purchase of ThoughtSpot Data Connect includes the necessary credentials for connecting to Informatica. ThoughtSpot Support will supply the Informatica credentials, if you do not already have an account. You can change the Informatica credentials later, if you would like. You need these credentials when issuing the command to enable ThoughtSpot Data Connect.
 
-To set up ThoughtSpot Data Connect. firts check with ThoughtSpot Support to ensure they have provisioned an account for you with the appropriate connectivity licenses. A full list of supported connectivity licenses is available in the [Data Connect connectors reference]({{ site.baseurl }}/data-connect/reference/data-connect-connection-credentials.html#).
+To set up ThoughtSpot Data Connect. First, check with ThoughtSpot Support to ensure they have provisioned an account for you with the appropriate connectivity licenses. A full list of supported connectivity licenses is available in the [Data Connect connectors reference]({{ site.baseurl }}/data-connect/reference/data-connect-connection-credentials.html#).
 
 Enable ThoughtSpot Data Connect by completing the following steps:
 

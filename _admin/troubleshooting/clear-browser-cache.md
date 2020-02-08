@@ -1,7 +1,7 @@
 ---
 title: [Clear the browser cache]
-
-last_updated: tbd
+summary: "Clear the browser cache if you have unexpected network issues."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

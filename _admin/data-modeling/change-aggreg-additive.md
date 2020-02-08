@@ -1,8 +1,8 @@
 ---
 title: [Set ADDITIVE or AGGREGATION ]
 
-last_updated: tbd
-summary: "You can allow aggregate on MEASURE columns and some ATTRIBUTE columns."
+last_updated: 11/15/2019
+summary: "You can allow aggregation on MEASURE columns and some ATTRIBUTE columns."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
