@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="Learn the operators and functions you can use to create rules for row level security."> -->
 <meta name="keywords" content=",  ">
 <title>Row level security rules reference | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/reference/rls-rule-builder-reference.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T15:48:49-08:00" />
+<meta property="article:published_time" content="2020-02-07T20:44:06-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Row level security rules reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Row level security rules reference”]","dateModified":"2020-02-05T15:48:49-08:00","url":"https://docs.thoughtspot.com/latest/reference/rls-rule-builder-reference.html","datePublished":"2020-02-05T15:48:49-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/rls-rule-builder-reference.html"},"description":"ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Row level security rules reference”]","dateModified":"2020-02-07T20:44:06-08:00","url":"https://docs.thoughtspot.com/latest/reference/rls-rule-builder-reference.html","datePublished":"2020-02-07T20:44:06-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/rls-rule-builder-reference.html"},"description":"ThoughtSpot allows you to create row level security rules using expressions. If an expression evaluates to “true” for a particular row and group combination, that group will be able to see that row. This reference lists the various operators and functions you can use to create rules.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2484,36 +2484,9 @@ var ss360Config = {
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Active Directory</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-IDP.html">Initialize the Identity Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-SP.html">Initialize the Service Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/test-ADFS.html">Test the ADFS Integration</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
+                      
                    
                 
                     </ul>
@@ -3587,6 +3560,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">Learn the operators and functions you can use to create rules for row level security.</div>
+   
 
     
     
@@ -3636,9 +3611,9 @@ operators and functions you can use to create rules.</p>
 
 <p>For information on how to use the row level security functions and operators,
 see <a href="/latest/admin/data-security/row-level-security.html#">About Rule-Based Row Level Security</a>. There is a special variable
-called ts_groups, which you can use when creating row level security rules. It
+called <code class="language-plaintext highlighter-rouge">ts_groups</code>, which you can use when creating row level security rules. It
 fetches a list of the groups that the currently logged in user belongs to. For
-each row, f the expression in the rule evaluates to ‘true’ for any one of these
+each row, if the expression in the rule evaluates to ‘true’ for any one of these
 groups, that row will be shown to the user.</p>
 
 <p>You can also see this list of operators and examples from within the Rule Builder by selecting <strong>Rule Assistant</strong>.</p>
@@ -4349,9 +4324,9 @@ groups, that row will be shown to the user.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 11/19/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/azure/azure-cluster-install.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T15:48:49-08:00" />
+<meta property="article:published_time" content="2020-02-07T20:44:06-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install ThoughtSpot clusters in Azure”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Install ThoughtSpot clusters in Azure”]","dateModified":"2020-02-05T15:48:49-08:00","url":"https://docs.thoughtspot.com/latest/appliance/azure/azure-cluster-install.html","datePublished":"2020-02-05T15:48:49-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/azure-cluster-install.html"},"description":"Prerequisites Before you can install your ThoughtSpot clusters in Azure, complete these prerequisites. Review configuration options Refer to Azure configuration options for detailed instance specs. Create the instance Refer to Set up Azure for ThoughtSpot to create and launch your instance. Review required ports Refer to Network Policies to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in Azure to configure your nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Install ThoughtSpot clusters in Azure”]","dateModified":"2020-02-07T20:44:06-08:00","url":"https://docs.thoughtspot.com/latest/appliance/azure/azure-cluster-install.html","datePublished":"2020-02-07T20:44:06-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/azure-cluster-install.html"},"description":"Prerequisites Before you can install your ThoughtSpot clusters in Azure, complete these prerequisites. Review configuration options Refer to Azure configuration options for detailed instance specs. Create the instance Refer to Set up Azure for ThoughtSpot to create and launch your instance. Review required ports Refer to Network Policies to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in Azure to configure your nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2484,36 +2484,9 @@ var ss360Config = {
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Active Directory</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-IDP.html">Initialize the Identity Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-SP.html">Initialize the Service Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/test-ADFS.html">Test the ADFS Integration</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
+                      
                    
                 
                     </ul>
@@ -3830,6 +3803,8 @@ Connecting to hosts...
 </code></pre></div></div>
 <p>Your output may look something like the above. Ensure that all diagnostics show <code class="language-plaintext highlighter-rouge">SUCCESS</code>.</p>
 
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster.</div>
+
 <h3 id="cluster-step-3">Step 3: Finalize installation</h3>
 
 <p>After the cluster status changes to <code class="language-plaintext highlighter-rouge">READY</code>, sign into ThoughtSpot on your browser.
@@ -3896,9 +3871,9 @@ Follow these steps:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 1/22/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 2/6/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
