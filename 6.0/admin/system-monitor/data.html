@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="The Data page shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, and so forth."> -->
 <meta name="keywords" content=",  ">
 <title>Data board | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Data board”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The Data page shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, and so forth." />
-<meta property="og:description" content="The Data page shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, and so forth." />
+<meta name="description" content="Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily." />
+<meta property="og:description" content="Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T15:46:07-08:00" />
+<meta property="article:published_time" content="2020-02-07T20:40:08-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Data board”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Data board”]","dateModified":"2020-02-05T15:46:07-08:00","url":"https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html","datePublished":"2020-02-05T15:46:07-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html"},"description":"The Data page shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, and so forth.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Data board”]","dateModified":"2020-02-07T20:40:08-08:00","url":"https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html","datePublished":"2020-02-07T20:40:08-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/system-monitor/data.html"},"description":"Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2484,36 +2484,9 @@ var ss360Config = {
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Active Directory</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/initialize-IDP.html">Initialize the Identity Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/initialize-SP.html">Initialize the Service Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/6.0/app-integrate/SAML/test-ADFS.html">Test the ADFS Integration</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/6.0/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
+                      
                    
                 
                     </ul>
@@ -3587,6 +3560,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">The Data page shows all the stored tables with details on the last update time, time taken for auto-indexing, number of rows, and so forth.</div>
+   
 
     
 
@@ -3597,20 +3572,17 @@ var ss360Config = {
   Estimated reading time:
   
   
-    2 minutes
+    1 minute
   
 </span>
  -->
 
     
 
-  <p>The <strong>Data</strong> page shows all the stored tables with details on the last update
-time, time taken for auto-indexing, number of rows, and so forth.</p>
-
-<p><img src="/6.0/images/control_center_data.png" alt="" title="Partial view of the **System Health** center: Data" /></p>
+  <p><img src="/6.0/images/control_center_data.png" alt="" title="Partial view of the System Health center: Data" /></p>
 
 <p>You can click a column name to sort by table name. This table information is
- based on an underlying system data, you can present it or copy the link, but
+ based on an underlying system data. You can present it or copy the link, but
  you cannot access the underlying query.</p>
 
 <h2 id="database-status">Database Status</h2>
@@ -3654,7 +3626,7 @@ time, time taken for auto-indexing, number of rows, and so forth.</p>
 
 <p>The <strong>Replicated</strong> column indicates if the table has been replicated or sharded. This can be used in conjunction with the <strong>Total Shards</strong> column to see how your data is distributed.</p>
 
-<p>If the table is replicated on a multi node system, the <strong>Used Capacity (MB)</strong> column will indicate the total space used on all nodes. a 10MB table replicated on a 4 node system will show 40MB used capacity for example.</p>
+<p>If the table is replicated on a multi node system, the <strong>Used Capacity (MB)</strong> column will indicate the total space used on all nodes. For example, a 10MB table replicated on a 4 node system will show 40MB used capacity.</p>
 
 <h2 id="search-status">Search Status</h2>
 
@@ -3733,9 +3705,9 @@ time, time taken for auto-indexing, number of rows, and so forth.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

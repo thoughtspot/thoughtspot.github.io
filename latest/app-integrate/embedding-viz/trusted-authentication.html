@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
+<!-- <meta name="description" content="Learn how to configure trusted authentication."> -->
 <meta name="keywords" content=",  ">
 <title>Configure trusted authentication | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/trusted-authentication.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T15:48:49-08:00" />
+<meta property="article:published_time" content="2020-02-07T20:44:06-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Configure trusted authentication”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Configure trusted authentication”]","dateModified":"2020-02-05T15:48:49-08:00","url":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/trusted-authentication.html","datePublished":"2020-02-05T15:48:49-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/trusted-authentication.html"},"description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate one time, with the trusted authentication server.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Configure trusted authentication”]","dateModified":"2020-02-07T20:44:06-08:00","url":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/trusted-authentication.html","datePublished":"2020-02-07T20:44:06-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/trusted-authentication.html"},"description":"If your organization has a trusted authentication server, you can use this server to authenticate users of the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server or service obtains an authentication token from ThoughtSpot on the user’s behalf. In this way, the user need only authenticate one time, with the trusted authentication server.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2484,36 +2484,9 @@ var ss360Config = {
                    
                 
                   
-                   <li class="levelThree">
-                       <a href="#">Active Directory</a>
-                       <ul>
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-IDP.html">Initialize the Identity Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/initialize-SP.html">Initialize the Service Provider Metadata</a></li>
-                              
-                            
-                        
-                          
-                              
-                                  <li><a href="/latest/app-integrate/SAML/test-ADFS.html">Test the ADFS Integration</a></li>
-                              
-                            
-                        
-                      </ul>
-                    </li>
+                      
+                          <li><a href="/latest/app-integrate/SAML/integrate-ADFS.html">Configure Active Directory Federated Services</a></li>
+                      
                    
                 
                     </ul>
@@ -3587,6 +3560,8 @@ var ss360Config = {
 <div class="post-content">
 
    
+    <div class="summary">Learn how to configure trusted authentication.</div>
+   
 
     
 
@@ -3617,7 +3592,7 @@ data from client applications to ThoughtSpot.</p>
 
 <p><img src="/latest/images/authentication.png" alt="" title="Authentication flow" /></p>
 
-<p>A user already logged into client-application interacts with a ThoughtSpot embed
+<p>A user already logged into the client application interacts with a ThoughtSpot embed
 point which launches the following sequence:</p>
 
 <ol>
@@ -3629,8 +3604,8 @@ authenticated server.</p>
   </li>
   <li>The trusted server authenticates the user and requests a token from ThoughtSpot on the user’s behalf.</li>
   <li>ThoughtSpot verifies the authenticator server’s request and returns a user token.</li>
-  <li>The authenticator returns the user token to the client which it uses to complete the user request.</li>
-  <li>The client forwards the request together with the user token to ThoughtSpot.</li>
+  <li>The authenticator returns the user token to the client, which it uses to complete the user request.</li>
+  <li>The client forwards the request and the user token to ThoughtSpot.</li>
   <li>ThoughtSpot validates the token and returns information commensurate with that authenticated user’s authorization.</li>
 </ol>
 
@@ -3654,7 +3629,7 @@ authenticated server.</p>
   </li>
 </ol>
 
-<p>Tokens are like any other password, you should store them securely and protect
+<p>Tokens are like any other password. You should store them securely and protect
 knowledge of them.  At any point in time, your installation can have a single
 authentication token. Repeated calls to enable overwrite the existing token and
 return a new one. To disable a token and not overwrite it:</p>
@@ -3668,7 +3643,7 @@ return a new one. To disable a token and not overwrite it:</p>
 
 <ol>
   <li>
-    <p>User in another application or web page requests access to embedded ThoughtSpot.</p>
+    <p>A user in another application or web page requests access to embedded ThoughtSpot.</p>
 
     <p>This is a REST request for an embedded ThoughtSpot object, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:</p>
 
@@ -3715,7 +3690,7 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <p>The token can be managed in any way you see fit. Tokens expire in XXX minutes/hours/day.</p>
   </li>
-  <li>The trusted authenticator server returns token to the original requestor.</li>
+  <li>The trusted authenticator server returns a token to the original requestor.</li>
   <li>
     <p>Client completes the user’s request providing the token along with the request.</p>
 
@@ -3753,9 +3728,9 @@ return a new one. To disable a token and not overwrite it:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

@@ -3171,7 +3171,7 @@ $('#toc').on('click', 'a', function() {
     
 
   <p>The <code class="highlighter-rouge">growth of</code> keyword compares the data from different date periods, and
-returns a percentage of growth.</p>
+returns a percentage of growth. Enter <code class="highlighter-rouge">growth of</code> at the beginning of your query. You can only use the <code class="highlighter-rouge">growth of</code> keyword once in your query.</p>
 
 <h2 id="growth-of-measure-by-year">Growth of measure by year</h2>
 
@@ -3181,52 +3181,46 @@ returns a percentage of growth.</p>
   <li>
     <p>Type <code class="highlighter-rouge">growth of</code> into the search bar, and choose a measure you’re interested in seeing the growth of.</p>
 
-    <p><img src="/5.0/images/growth_of_suggestions.png" alt="" title="Growth of suggestions" /></p>
+    <p><img src="/5.0/images/growthofkeyword.png" alt="Suggestions for the 'growth of' keyword" title="Growth of suggestions" /></p>
 
-    <p>You will see a list of suggestions to choose from based on your sources. You
+    <p>You see a list of suggestions to choose from, based on your data sources. You
  can also type a different column name containing numeric data to compare.</p>
   </li>
   <li>
     <p>Type <code class="highlighter-rouge">by</code>, followed by a date column name.</p>
 
-    <p>The growth is calculated as a positive or negative percentage, for each
- period relative to the last period in the series. A line chart is a good
- way to display your data, but the waterfall chart is especially effective
- to show growth.</p>
+    <p>ThoughtSpot calculates growth of a measure as a positive or negative percentage, for each
+ period relative to the last period in the series. The difference between the value of a measure at two dates is divided by the value of the earlier date, and then multipled by 100 to get a percentage.</p>
 
-    <p><img src="/5.0/images/growth_of_waterfall_chart.png" alt="" title="Growth of  total sales waterfall chart" /></p>
+    <p>A line chart is a good way to display your data, but the waterfall chart is especially effective to show growth.</p>
+
+    <p><img src="/5.0/images/growthof-waterfall.png" alt="Growth of total sales by monthly date waterfall chart" title="Growth of total sales by monthly date waterfall chart" /></p>
   </li>
   <li>
     <p>You can also do year-over-year analysis, which compares each time period to the corresponding time period in the prior year.</p>
 
     <p>This type of growth analysis is more common in retail and other seasonal
- businesses. To do this, type monthly year-over-year after your growth of phrase
+ businesses. To do this, type <code class="highlighter-rouge">monthly year-over-year</code> after your <code class="highlighter-rouge">growth of</code> phrase
  in the search bar.</p>
 
-    <p><img src="/5.0/images/growth_of_year_over_year.png" alt="" title="Growth of by monthly year-over-year" /></p>
+    <p><img src="/5.0/images/growthof-yearoveryear.png" alt="Growth of sales by monthly year-over-year" title="Growth of sales by monthly year-over-year" /></p>
 
-    <p>This compares data between the same month from different years. For example,
- it will allow you to compare sales from June of this year to the sales from
- June of last year. Note that for the first year, values are labeled as
- “{Blank}” in the Data View since there are no previous data to compare
- them to.</p>
-
-    <p>Add an attribute to your search see the breakdown of how each grouping of
- the attribute contributed to the overall growth of your measure.</p>
+    <p>The <code class="highlighter-rouge">year-over-year</code> keyword compares data between the same time period from different years. For example, it will allow you to compare sales from June of this year to the sales from
+ June of last year. Note that for the first year, values are labeled as “{Blank}” in the Data View since there are no previous data to compare them to.</p>
   </li>
   <li>
-    <p>Click <strong>Configure Chart</strong> and add your attribute to the Legend field.</p>
+    <p>Add an attribute to your search to see the breakdown of how each grouping of
+the attribute contributed to the overall growth of your measure.</p>
 
-    <p><img src="/5.0/images/growth_of_attribute_breakdown.png" alt="" title="Growth of broken up by category" /></p>
+    <p>Click <strong>Configure Chart</strong> and drag your attribute to <strong>Slice with color</strong>.</p>
 
-    <p>It looks like Q4, FY 15 was a much more productive period for a number of
- categories compared to a year ago.</p>
+    <p><img src="/5.0/images/growthof-addattribute.png" alt="Growth of sales broken up by department" title="Growth of sales broken up by department" /></p>
   </li>
 </ol>
 
 <h2 id="display-periods-daily-over-time-year-over-year">Display periods (daily) over time (year-over-year)</h2>
 
-<p>Growth query now supports more hierarchical date buckets and period
+<p>The <code class="highlighter-rouge">growth of</code> keyword also supports more hierarchical date buckets and period
 calculations. The growth query syntax is as follows:</p>
 
 <p><code class="highlighter-rouge">growth of &lt;measure_column&gt; by &lt;date_column&gt; &lt;bucket&gt; &lt;period-over-period&gt;</code></p>
@@ -3279,9 +3273,9 @@ combine:</p>
   </tr>
 </table>
 
-<p>For example, the following query <code class="highlighter-rouge">growth of sales by date daily month-over-month</code>:</p>
+<p>For example, see the query <code class="highlighter-rouge">growth of sales by date daily month-over-month</code>:</p>
 
-<p><img src="/5.0/images/date-period-over-period.png" alt="" /></p>
+<p><img src="/5.0/images/growthof-monthovermonth.png" alt="Growth of sales by date daily month-over-month" title="Growth of sales by date daily month-over-month" /></p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3318,9 +3312,9 @@ combine:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Feb 5, 2020 <br />
+        Generated: Feb 7, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 2/6/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
