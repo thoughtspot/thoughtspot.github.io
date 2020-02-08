@@ -21,7 +21,7 @@ In a custom calendar, you can set the following:
 
 ## Search features
 You can use your custom calendar to search the following ways:
-- Using date keywords, like `this quarter` and `q3` 
+- Using date keywords, like `this quarter` and `q3`
 - Using date formulas with the `fiscal` option specified (See https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 - Overriding the calendar used in the search bar by typing your custom calendar's name
 

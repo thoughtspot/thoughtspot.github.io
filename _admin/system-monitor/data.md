@@ -1,18 +1,17 @@
 ---
 title: [Data board]
-
-
+last_updated: 11/18/2019
+summary: "The Data page shows all the stored tables with details on the last update
+time, time taken for auto-indexing, number of rows, and so forth."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The **Data** page shows all the stored tables with details on the last update
-time, time taken for auto-indexing, number of rows, and so forth.
 
- ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the **System Health** center: Data")
+ ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the System Health center: Data")
 
  You can click a column name to sort by table name. This table information is
- based on an underlying system data, you can present it or copy the link, but
+ based on an underlying system data. You can present it or copy the link, but
  you cannot access the underlying query.
 
 ## Database Status
@@ -56,7 +55,7 @@ The **Database Status** column can have the following possible values:
 
 The **Replicated** column indicates if the table has been replicated or sharded. This can be used in conjunction with the **Total Shards** column to see how your data is distributed.
 
-If the table is replicated on a multi node system, the **Used Capacity (MB)** column will indicate the total space used on all nodes. a 10MB table replicated on a 4 node system will show 40MB used capacity for example.
+If the table is replicated on a multi node system, the **Used Capacity (MB)** column will indicate the total space used on all nodes. For example, a 10MB table replicated on a 4 node system will show 40MB used capacity.
 
 ## Search Status
 

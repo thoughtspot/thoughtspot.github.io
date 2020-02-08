@@ -1,7 +1,7 @@
 ---
 title: [Date and time formats reference]
-
-last_updated: tbd
+summary: ThoughtSpot supports several date and time formats.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

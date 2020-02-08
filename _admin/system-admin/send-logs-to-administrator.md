@@ -1,7 +1,7 @@
 ---
 title: [Send logs when reporting problems]
-
-
+last_updated: 11/18/2019
+summary: You can report problems to ThoughtSpot support or your administrator by sending logs.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

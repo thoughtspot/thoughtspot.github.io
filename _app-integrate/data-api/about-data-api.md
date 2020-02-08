@@ -1,8 +1,8 @@
 ---
 title: [About the Data REST API]
 
-last_updated: tbd
-summary: "The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
+last_updated: 11/18/2019
+summary: "The REST API allows you to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

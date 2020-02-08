@@ -1,6 +1,7 @@
 ---
 title: ["SpotIQ 101: Review insights"]
-last_updated: tbd
+summary: Review your SpotIQ insights.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

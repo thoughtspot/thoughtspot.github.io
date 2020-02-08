@@ -1,7 +1,7 @@
 ---
 title: [Mobile FAQ]
-
-last_updated: tbd
+summary: These are a few frequently asked questions about ThoughtSpot mobile.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

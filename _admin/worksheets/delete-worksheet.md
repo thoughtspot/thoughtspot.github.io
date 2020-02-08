@@ -1,8 +1,8 @@
 ---
 title: [Delete a worksheet or table]
 
-last_updated: tbd
-summary: "When you try to delete a worksheet or atable, you can see a message listing any dependent objects that must be removed first."
+last_updated: 11/18/2019
+summary: "When you try to delete a worksheet or a table, you see a message listing any dependent objects that must be removed first."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

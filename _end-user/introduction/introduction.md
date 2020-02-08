@@ -1,10 +1,10 @@
 ---
 title: [Introduction to the User Guide]
-last_updated: tbd
+summary: This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
 
 ThoughtSpot enables you to view and analyze your data through a search-based user interface. You can create your searches quickly and easily, just by typing them into a search bar, like you do when using an Internet search engine. ThoughtSpot makes it easy to see your data, get your questions answered, create interactive graphs, and customize pinboards. You don't need to understand how ThoughtSpot stores information, attend days of training, or know SQL to do these things. Collaboration and security features make it easy to protect sensitive data, and safely share information with others.
 

@@ -1,9 +1,9 @@
 ---
 title: [Configure NAS file system]
-last_updated: 10/10/2019
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 summary: "Some operations, like backup, restore, and data loading, require either
-reading or writing very large files. You can mount a network attached storage (NAS)) file
+reading or writing very large files. You can mount a network attached storage (NAS) file
 system to support these operations. Your NAS storage can be in the drive format you choose."
 permalink: /:collection/:path.html
 ---

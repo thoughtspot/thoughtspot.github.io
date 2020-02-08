@@ -1,7 +1,7 @@
 ---
 title: [Create a bulk filter]
-
-last_updated: tbd
+summary: Learn how to create a bulk filter.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

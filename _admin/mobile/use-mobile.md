@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot mobile overview]
-
-last_updated: tbd
+summary: ThoughtSpot mobile provides access to ThoughtSpot from your phone.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

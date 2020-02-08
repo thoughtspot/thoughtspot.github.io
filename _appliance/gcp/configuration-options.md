@@ -1,8 +1,7 @@
 ---
 title: [GCP configuration options]
-
-
-last_updated: 1/9/2020
+summary: "ThoughtSpot can be deployed using several different GCP instance types."
+last_updated: 1/9/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

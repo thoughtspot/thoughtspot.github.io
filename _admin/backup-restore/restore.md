@@ -1,7 +1,7 @@
 ---
 title: [About restore operations]
-
-last_updated: tbd
+summary: Learn how to restore ThoughtSpot from a snapshot or backup.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

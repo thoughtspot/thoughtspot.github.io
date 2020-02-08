@@ -1,7 +1,7 @@
 ---
 title: [Data loading too slowly]
-
-last_updated: tbd
+summary: If your data is loading slowly, there are a few things you can do to fix it.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
