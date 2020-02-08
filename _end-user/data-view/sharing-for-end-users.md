@@ -1,6 +1,7 @@
 ---
 title: [Overview of sharing]
-last_updated: 12/10/2019
+summary: Learn how to share answers and pinboards.
+last_updated: 2/7/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

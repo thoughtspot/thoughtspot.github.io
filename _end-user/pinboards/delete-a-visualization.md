@@ -1,6 +1,7 @@
 ---
 title: [Delete a visualization]
-last_updated: tbd
+last_updated: 11/15/2019
+summary: Learn how to delete a visualization from your pinboard.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

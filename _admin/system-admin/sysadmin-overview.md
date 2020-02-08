@@ -1,7 +1,7 @@
 ---
 title: [System administration]
-
-last_updated: tbd
+summary: Learn tools to help administer ThoughtSpot.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

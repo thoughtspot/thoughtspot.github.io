@@ -1,7 +1,7 @@
 ---
 title: [Overview board]
-
-
+summary: The Overview pinboard provides useful information about your cluster.
+last_updated: 11/18/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -319,7 +319,7 @@ system. This panel displays configuration events related to:
         <th>
         Cluster Configuration
         </th>
-        <td>Reports configuration actions from the `tscli` and `tql` commands. </td>
+        <td>Reports configuration actions from the <code>tscli</code> and <code>tql</code> commands. </td>
        </tr>
        <tr>
         <th>
@@ -358,9 +358,9 @@ specify a time period or even a type of command to include.
 ## About deprecated boards
 
 There are a number of deprecated boards on this page. They are there to support
-older installations that relied on them. New installations, should not use or
+older installations that relied on them. New installations should not use or
 rely on deprecated boards. Older installations that have used these boards in
-some way, should use the new boards and remove any dependencies.
+some way should use the new boards and remove any dependencies.
 
 ## Related information
 

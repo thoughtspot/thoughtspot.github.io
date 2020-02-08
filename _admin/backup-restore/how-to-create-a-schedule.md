@@ -1,8 +1,8 @@
 ---
 title: [Understand backup/snapshot schedules]
 
-last_updated: tbd
-summary: "Explains how schedules and gives examples."
+last_updated: 11/15/2019
+summary: "Learn about backup and snapshot schedules."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

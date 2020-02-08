@@ -1,7 +1,7 @@
 ---
 title: [Install and set up mobile app]
-
-last_updated: tbd
+summary: Learn how to install and set up ThoughtSpot's mobile app.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

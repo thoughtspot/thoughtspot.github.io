@@ -5,7 +5,7 @@ summary: "ThoughtSpot has intuitive and powerful user group management for assig
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before adding users, create the groups to which they  belong. Each group includes a set of privileges for its users.
+Before adding users, create the groups to which they belong. Each group includes a set of privileges for its users.
 
 {: id="add-group"}
 ## Create a group

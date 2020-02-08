@@ -1,11 +1,11 @@
 ---
 title: [Column charts]
-last_updated: tbd
-summary: "A column chart is the most versatile chart type"
+last_updated: 11/15/2019
+summary: "A column chart is the most versatile chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not, the column chart will be chosen as your default chart type.
+The column chart is one of ThoughtSpot's simplest, yet most versatile chart types. More often than not, the column chart is your default chart type.
 
 Column charts are vertical bar charts that display your data using rectangular bars. The length of the bar is proportional to the data value.
 

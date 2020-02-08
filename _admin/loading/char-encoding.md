@@ -1,7 +1,7 @@
 ---
 title: [Characters not displaying correctly]
-
-last_updated: tbd
+summary: If characters in your data do not display correctly in ThoughtSpot, make sure they are UTF-8 encoded.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

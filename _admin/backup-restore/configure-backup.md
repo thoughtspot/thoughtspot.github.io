@@ -1,7 +1,7 @@
 ---
 title: [Configure periodic backups]
-
-last_updated: tbd
+summary: Learn how to configure automatic periodic backups.
+last_updated: 11/15/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

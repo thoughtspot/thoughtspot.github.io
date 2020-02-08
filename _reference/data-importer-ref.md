@@ -1,7 +1,7 @@
 ---
 title: [tsload flag reference]
-
-last_updated: tbd
+summary: You can modify the behavior of tsload with flags.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

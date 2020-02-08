@@ -1,8 +1,7 @@
 ---
 title: [VMware configuration overview]
-
-
-last_updated: 1/9/2020
+summary: "You can host ThoughtSpot on VMware."
+last_updated: 1/9/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

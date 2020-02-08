@@ -1,7 +1,7 @@
 ---
 title: [View a data profile]
-
-last_updated: tbd
+summary: View your data profile.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

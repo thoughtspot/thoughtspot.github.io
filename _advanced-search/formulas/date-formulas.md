@@ -1,9 +1,7 @@
 ---
 title: [About date formulas]
-
-
-last_updated: tbd
-toc: true
+summary: Learn about date formulas.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

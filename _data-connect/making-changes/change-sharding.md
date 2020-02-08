@@ -1,7 +1,7 @@
 ---
 title: [Change sharding for a data source]
-
-last_updated: tbd
+summary: "Learn how to change the way ThoughtSpot shards a data source."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
