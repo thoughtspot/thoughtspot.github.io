@@ -28,11 +28,7 @@ To sort your search:
 
 * If you are in the data (table) view, click the column header you would like to sort on.
 
-<<<<<<< HEAD
    By default, sorting applies in descending order. For example, if the column has numerical values, it would start at the highest number and decrease. Click the column header again to sort in ascending order.
-=======
-   By default, sorting applies in descending order. To sort in ascending order, click the column header again.
->>>>>>> 591e83c71a96855b94e219571fb71c75f0255e9e
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 
