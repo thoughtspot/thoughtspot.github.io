@@ -16,6 +16,22 @@ Cloud Express benefits:
 - No or minimal data modeling
 - Successful search-driven insights in 45 minutes from launch
 
+## Supported features
+
+- 5 Users
+- 20 million rows
+- Snowflake, AWS Redshift data warehouses
+- SAML (through the ThoughtSpot Management Console)
+- Restore from snapshot (through the ThoughtSpot Management Console)
+- Self-service upgrade (Download and access for new release)
+- Measure usage (#users created, # rows, queries, objects created, other) via MixPanel
+
+## Unsupported features
+
+- User data upload
+- Backup
+- Restore from backup
+
 ## Sign up for Cloud Express
 
 To sign up for Cloud Express, do the following:
