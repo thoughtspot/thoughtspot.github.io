@@ -16,8 +16,7 @@ change the view of your answer:
 1. View your answer.
 2. Toggle between either a table or a chart type.
 
-    ![Select table or chart]({{ site.baseurl }}/images/toggle_between_views.png "Select table or chart")
-    <!--{% include image.html file="toggle_between_views.png" title="Select table or chart" alt="You can toggle between displaying your results as a table or as a chart." caption="Select table or chart" %}-->
+    ![Select table or chart]({{ site.baseurl }}/images/changeview-chartortable.png "Select table or chart")
 
 When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
@@ -34,37 +33,20 @@ To sort your search:
 
 * If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
 
-
 ## Change the date bucketing (grouping)
 
 You can change the date _bucketing_ on tables and charts for columns with date
-values.  Bucketing is a method for grouping a column in your data. For example,
-if you have a column of orders, you can use the date of each order
-(**NO_BUCKET**).
+values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline} that appears when you hover over a column name on a table.
 
-![]({{ site.baseurl }}/images/bucket_none.png "Date bucketing chooser")
+![Choose a date bucket on a table]({{ site.baseurl }}/images/changeview-bucket.png "Choose a date bucket on a table")
 
-Alternatively, you can group these **MONTHLY**:
+To bucket your data in a chart view, click the dropdown icon ![]({{ site.baseurl }}/images/icon-dropdown-down-20px.png){: .inline} that appears when you hover near the axis labels on a chart.
 
-![]({{ site.baseurl }}/images/bucket_monthly.png "Date bucketing chooser")
+![Choose a date bucket on a chart]({{ site.baseurl }}/images/changeview-chartbucket.png "Choose a date bucket on a chart")
 
 ThoughtSpot chooses a default date bucket for you when you search. This default
 takes the entire search result into account. For example, if your search
 includes last month, dates are bucketed daily instead of monthly.
-
-* In a table view, use the date bucket drop-down, under the column header.
-* On a chart, you can change the change the axis label.
-
-![]({{ site.baseurl }}/images/bucket_change.png "Chooser location")
-
-
-The bucket values are a subset of date and time-period keywords. To change the date bucketing, follow these steps:
-
-1. Go to the table or chart you want to change.
-2. Locate the column or axis value with the date value you want to change.
-3. Click the column's bucket menu.
-4. Select a date bucket.
-
 
 ## Exclude and include row values
 
@@ -75,4 +57,4 @@ To exclude or include row values:
 1. Right-click the visualization or table cell of interest.
 2. Select **Exclude "value"** or **Only Include "value"** if available.
 
-     ![]({{ site.baseurl }}/images/exclude.png "Exclude value option")
+     ![Exclude or include a value]({{ site.baseurl }}/images/changeview-exclude.png "Exclude or include a value")
