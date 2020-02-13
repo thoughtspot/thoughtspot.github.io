@@ -32,46 +32,201 @@ You create a connection to the external database, choosing the columns from each
 
 The following matrix compares the features that are available in our internal high-performance database, Falcon, and the ones available in Embrace:
 
-| Feature Name | Falcon | Embrace |
-| --- | --- | --- |
-| Simple Search and Complex searches:<br>Versus, Inline Subquerying, Growth | &check; | &check;  |
-| Search Suggestions for column names & column values | &check;  | &check;  |
-| Headlines at the bottom that summarize tables | &check;  | &check;  |
-| All chart types and configurations | &check;  | &check;  |
-| Spot IQ - Instant insights, Did you know?, Pinboard insights, Analyze | &check;  | &cross; |
-| Monitor | &check;  | &cross;  |
-| Table & Column Remapping through Scriptability | &cross; | &check; |
-| Custom Calendar | &check; | &cross; |
-| Materialized View | &check;  |  &cross; |
+<table>
+<tbody>
+<tr>
+<th>Feature Name</th>
+<th>Falcon</th>
+<th>Embrace</th>
+</tr>
+<tr>
+<td>Simple Search and Complex searches:<br />Versus, Inline Subquerying, Growth</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Search Suggestions for column names and values</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Headlines that summarize tables</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>All chart types and configurations</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Spot IQ: Instant insights, Did you know?,<br>Pinboard insights, Analyze</td>
+<td>&check;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td>Monitor</td>
+<td>&check;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td>Table and Column remapping through Scriptability</td>
+<td>&cross;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Custom calendar</td>
+<td>&check;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td>Materialized view</td>
+<td>&check;</td>
+<td>&cross;</td>
+</tr>
+</tbody>
+</table>
 
 ### Function availability in Embrace
 
 The following matrix compares the specific function support across the different databases of Embrace. Functions not listed here have full support.
 
-| Function<br> | Snowflake<br> | Amazon<br>Redshift | Google<br>BigQuery | Azure<br>Synapse |
-| --- | --- | --- | --- | --- |
-| `SOUNDS_LIKE`| &cross; | &cross; | &cross; | &cross; |
-| `STRING_ MATCH_SCORE`| &cross; | &cross; | &cross; | &cross; |
-| `EDIT_DISTANCE_WITH_CAP`| &cross; | &cross; | &cross; | &cross; |
-| `APPROX_SET_CARDINALITY`| &cross; | &cross; | &cross; | &cross; |
-| `COUNT_NOT_NULL`| &cross; | &cross; | &cross; | &cross; |
-| `SPELLS_LIKE` | &check; | &cross; | &cross; | &cross; |
-| `EDIT_DISTANCE` | &check; | &cross; | &cross; | &cross; |
-| `MEDIAN` | &check; | &check; | &cross; | &check; |
-| `PERCENTILE` | &check; | &check; | &cross; | &check; |  
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Snowflake</th>
+<th>Amazon<br />Redshift</th>
+<th>Google<br />BigQuery</th>
+<th>Azure<br />Synapse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>STRING_ MATCH_SCORE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>APPROX_SET_CARDINALITY</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>SPELLS_LIKE</code></td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>EDIT_DISTANCE</code></td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>MEDIAN</code></td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td><code>PERCENTILE</code></td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&check;</td>
+</tr>
+</tbody>
+</table>
 
 ### Data type availability in Embrace
 
 The following matrix captures the specific data type support limitations across the different databases of Embrace. Data types not listed here have full support.
 
-| Data Type<br> | Snowflake<br> | Amazon<br>Redshift | Google<br>BigQuery | Azure<br>Synapse |
-| --- | --- | --- | --- | --- |
-| `BINARY`| &cross; | &check; | &check; | &cross; |
-| `VARBINARY` | &cross; | &check; | &check; | &cross; |
-| `TIMESTAMPTZ`| &check; | &cross; | &check; | &check; |
-| `GEOMETRY`| &check; | &cross; | &check; | &check; |
-| `BYTES` | &check; | &check; | &cross; | &check; |
-| `DATETIMEOFFSET`| &check; | &check; | &check; | &cross; |
+<table>
+  <thead>
+    <tr>
+      <th>Data Type<br></th>
+      <th>Snowflake<br></th>
+      <th>Amazon<br>Redshift</th>
+      <th>Google<br>BigQuery</th>
+      <th>Azure<br>Synapse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>BINARY</code></td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+    </tr>
+    <tr>
+      <td><code>VARBINARY</code></td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+    </tr>
+    <tr>
+      <td><code>TIMESTAMPTZ</code></td>
+      <td>&check;</td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td><code>GEOMETRY</code></td>
+      <td>&check;</td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td><code>BYTES</code></td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td><code>DATETIMEOFFSET</code></td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Additional specific exceptions
 
@@ -118,8 +273,8 @@ The following list captures the specific limitations across the different databa
 -   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
 Create the connection between ThoughtSpot and tables in an external Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
-Create the connection between ThoughtSpot and tables in an external BigQuery database.
+Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
 -   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Synapse database.
+Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
 -   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Redshift database.
+Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
