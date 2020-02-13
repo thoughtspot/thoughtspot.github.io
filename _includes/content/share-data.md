@@ -1,17 +1,17 @@
 {: id="share-datatab"}
 ## Share from the Data tab
-To share data from the **Data** tab, follow these steps.
+To share a table, worksheet, or View from the **Data** tab, follow these steps.
 
 1. Click **Data** on the top navigation bar.
 
-2. Hover over the data you want to share and select it by clicking the empty checkbox that appears.
+2. Hover over the dataset you want to share and select it by clicking the empty checkbox that appears.
 
 3. Click **Share**.
 
     ![Share the data]({{ site.baseurl }}/images/sharing-data.png "Share the data")
     <!--{% include image.html file="sharing-data.png" title="Share the data" alt="Select the data you want to share and click the share icon." caption="Share the data" %}-->
 
-4. Select **Entire Table** or **Specific Columns**.
+4. If you are sharing a table, select **Entire Table** or **Specific Columns**.
 
     ![Specify sharing type]({{ site.baseurl }}/images/sharing-datacolumns.png "Specify sharing type")
     <!--{% include image.html file="sharing-datacolumns.png" title="Specify sharing type" alt="Select either entire table or specific columns." caption="Specify sharing type" %}-->
@@ -29,7 +29,7 @@ To share data from the **Data** tab, follow these steps.
 
 {: id="share-dataset"}
 ## Share from within the dataset
-To share data from within the dataset, follow these steps.
+To share a table, worksheet, or View from within the dataset, follow these steps.
 1. Navigate to the dataset you want to share.
 
 2. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and then click **Share**.
@@ -38,24 +38,8 @@ To share data from within the dataset, follow these steps.
     <!--{% include image.html file="sharing-data-in-dataset.png" title="Share the data" alt="Click the three-dot ellipsis icon and then click Share." caption="Share the data" %}-->
 
 3. Select the users or groups with whom you want to share.<br>
-    You can only share the entire table, worksheet, or view. You cannot share individual columns. To share individual columns, share [from the **Data** tab]({{site.baseurl }}#share-datatab).
+    You can only share the entire dataset. You cannot share individual columns. To share individual columns, share a table [from the **Data** tab]({{site.baseurl }}#share-datatab). You cannot share individual columns for worksheets or Views.
 
 4. [Specify permissions](#specify-permissions).
 
-{: id="specify-permissions"}
-## Specify permissions
-7. Configure the level of access by selecting from the dropdown list. You can select:
-    -   **Can View** to provide read-only access. This enables viewing the table or other data source's data, as well as defining worksheets based on that data.
-    -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table or other data source and adding or removing its columns.
-
-    ![Specify permissions]({{ site.baseurl }}/images/sharing-data-privileges.png "Specify permissions")
-    <!--{% include image.html file="sharing-data-privileges.png" title="Specify permissions" alt="Configure the user or group's level of access by selecting 'can view' or 'can edit.'" caption="Specify permissions" %}-->
-
-8. Click **Add**.
-
-9. Click **Done**.
-
-10. The **Share settings updated** notification appears on the bottom of your screen.
-
-    ![Share settings updated]({{ site.baseurl }}/images/sharing-settingsupdated.png "Share settings updated")
-    <!--{% include image.html file="sharing-settingsupdated.png" title="Share settings updated" alt="After you click Done, the 'Share settings updated' notification appears." caption="Share settings updated" %}-->
+{% include content/share-data-specify-permissions.md %}
