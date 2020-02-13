@@ -27,6 +27,16 @@ In addition to Snowflake and Redshift, you can now run live queries against Goog
 
 See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
+### Embrace enhancements
+
+- **Search indexing** Starting with release 6.0.2, we enabled search indexing of columns by default, in all Embrace connections. This shows values of columns in the search bar as you type.
+
+  ThoughtSpot re-indexes columns daily; this can be changed to an hourly schedule.
+
+- **UI/UX for creating and editing** Embrace connections now includes a built-in workflow.
+
+- **Headline optimization** We changed the behavior for loading headlines with tabular reports. The primary table now loads immediately, and headlines appear when the queries that populate them complete.
+
 ### Data Search APIs
 
 To programmatically use the data that we retrieve from a query, you can use ThoughtSpot Search Data API.
