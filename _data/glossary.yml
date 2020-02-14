@@ -24,7 +24,7 @@ entries:
   - word: reportbook
     definition: "This is an internal name for a *visualization*."
   - word: user
-    definition: "Individuals that can log into ThoughtSpot. See *authentication*."
+    definition: "Individuals that can log in to ThoughtSpot. See *authentication*."
   - word: formula
     definition: "This is an expression that applies a calculation, usually a mathematical calculation, to data."
     
