@@ -33,7 +33,7 @@ See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.h
 
   ThoughtSpot re-indexes columns daily; this can be changed to an hourly schedule.
 
-- **UI/UX for creating and editing** Embrace connections now includes a built-in workflow.
+- **UI/UX for creating and editing** Embrace connections now include a built-in workflow.
 
 - **Headline optimization** We changed the behavior for loading headlines with tabular reports. The primary table now loads immediately, and headlines appear when the queries that populate them complete.
 
