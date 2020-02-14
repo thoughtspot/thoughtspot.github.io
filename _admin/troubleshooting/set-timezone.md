@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot comes configured with the timezone where it is to be installed. Data
 is imported based on the timezone of the node from which `tsload` or `tql` is
-run. To see the timezone your ThoughtSpot node is running under, log into the
+run. To see the timezone your ThoughtSpot node is running under, log in to the
 server as the `thoughtspot` user and run the `date` command:
 
 ```
