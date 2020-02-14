@@ -110,7 +110,7 @@ to recall that the username/password you use belongs to a ThoughtSpot applicatio
 user. Typically, this user is a user with data management or administrative
 privileges on the application.
 
-1. Before trying the ODBC connection, confirm a username/password that can log into the ThoughtSpot applications.
+1. Before trying the ODBC connection, confirm a username/password that can log in to the ThoughtSpot applications.
 2. Click the **Data** tab, and confirm the user's privileges.
 3. Return to your workstation.
 4. Locate and open the **ODBC Data Source Administrator (64-bit)** application.

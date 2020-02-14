@@ -21,7 +21,7 @@ Here are the high level steps:
 
 1. Work with <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>
  to install the Spot Slack bot on your cluster.
-2. Log into ThoughtSpot.
+2. Log in to ThoughtSpot.
 3. Label answers, pinboards, and other objects with the spot sticker.
 4. Start Spot Bot.
 5. Register Spot bot with your company's Slack instance.

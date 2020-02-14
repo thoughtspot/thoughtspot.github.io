@@ -45,7 +45,7 @@ When you buy ThoughtSpot Extended Enterprise, the following rights and obligatio
 ## Section Contents ##
 Here are the main topics for Embedding with Extended Enterprise:
 
-* [Log into the Linux shell using SSH]({{ site.baseurl }}/app-integrate/introduction/login-console.html)
+* [Log in to the Linux shell using SSH]({{ site.baseurl }}/app-integrate/introduction/login-console.html)
 * [Login credentials]({{ site.baseurl }}/app-integrate/introduction/logins.html)
 * [Using the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/about-JS-API.html)
 * [SAML]({{ site.baseurl }}/app-integrate/SAML/about-SAML-integrations.html)

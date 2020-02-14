@@ -1,6 +1,6 @@
 Any user who belongs to a group that has the privilege **Has administration privileges** or **Can upload user data** can upload their own data from the browser. To load the CSV or Excel file into ThoughtSpot:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click **Data**, on the top navigation bar.
 
