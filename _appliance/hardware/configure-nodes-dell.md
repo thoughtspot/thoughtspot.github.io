@@ -29,7 +29,7 @@ After you connect the appliance, a command line appears on your console. Configu
 
 {: id="node-step-1"}
 ## Step 1: Get a template for network configuration
-Make sure you have logged into your cluster. If you have not, use admin credentials to log into your cluster.
+Make sure you have logged into your cluster. If you have not, use admin credentials to log in to your cluster.
 
 Run the `tscli cluster get-config` command to get a template for network configuration. Redirect it to the file `nodes.config`.<br>
 You can find more information on this process in the [`nodes.config` file reference]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html).

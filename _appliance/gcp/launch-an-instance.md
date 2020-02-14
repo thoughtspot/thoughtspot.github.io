@@ -208,7 +208,7 @@ Open the following ports between the User/ETL server and ThoughtSpot nodes. This
 
 ## Prepare the VMs
 
-Before you can install your ThoughtSpot cluster, an administrator must log into
+Before you can install your ThoughtSpot cluster, an administrator must log in to
 each VM through SSH as user "admin", and complete the following preparation steps:
 
 1. Open a terminal application on your machine and ssh into one of your VMs.

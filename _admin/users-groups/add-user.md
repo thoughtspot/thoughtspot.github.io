@@ -18,7 +18,7 @@ Note that all users automatically belong to the group **All**.
 
 To create a new user and assign that user to groups, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
@@ -118,7 +118,7 @@ As an administrator, you can edit a user account, and change the user's groups. 
 
 To edit an existing user, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 
@@ -202,7 +202,7 @@ Follow these steps to configure group-wide emails:
 
 To delete users, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 

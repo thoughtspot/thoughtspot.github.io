@@ -15,7 +15,7 @@ If you have been using ThoughtSpot with users you created manually, and you now 
 <!--
 ## Configure internal authentication
 To authenticate users using ThoughtSpot internal who are not available in the LDAP or AD system:
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)

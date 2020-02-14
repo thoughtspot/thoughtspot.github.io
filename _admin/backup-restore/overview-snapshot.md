@@ -24,7 +24,7 @@ ThughtSpot generates a snapshot in approximately 20 seconds, depending on the si
 
 To manually create a snapshot using the Admin UI, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** menu on the top navigation bar.
 
@@ -59,7 +59,7 @@ You can see the new snapshot file in the snapshot dashboard.
 
 To create a snapshot using the `tscli`, follow these steps:
 
-1. Log into the Linux shell using SSH.
+1. Log in to the Linux shell using SSH.
 
 2. Create a snapshot, specifying its name and the reason for creating it.
 
@@ -87,7 +87,7 @@ You can change this policy.
 
 To view your current periodic snapshot policy, follow these steps:
 
-1. Log into the Linux shell using SSH.
+1. Log in to the Linux shell using SSH.
 2. Enter `tscli snapshot-policy show` command to view the policy.
 
 In the following example, the policy starts at midnight on Sunday. It retains the snapshots from the previous three 4-hour intervals, and two snapshots from two of the previous 4-hour
@@ -157,7 +157,7 @@ You cannot delete the snapshot policy. However, you can either disable or enable
 
 To disable your current periodic snapshot policy, follow these steps:
 
-1. Log into the Linux shell using SSH.
+1. Log in to the Linux shell using SSH.
 2. Enter `tscli snapshot-policy disable`.
 
 {: id="snapshot-policy-enable"}
@@ -165,5 +165,5 @@ To disable your current periodic snapshot policy, follow these steps:
 
 To enable a specific periodic snapshot policy, follow these steps:  
 
-1. Log into the Linux shell using SSH.
+1. Log in to the Linux shell using SSH.
 2. Enter `tscli snapshot-policy enable`.

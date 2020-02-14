@@ -39,7 +39,7 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
 
-2. Log into the ESXi web portal.
+2. Log in to the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
 

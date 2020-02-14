@@ -12,7 +12,7 @@ Before adding users, create the groups to which they  belong. Each group include
 
 To create a group and add privileges for the group, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
@@ -112,7 +112,7 @@ revoke privileges. The new settings apply to all group members.
 
 To edit an existing group, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 
@@ -224,7 +224,7 @@ Follow these steps to configure group-wide emails:
 
 To delete existing groups, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 
@@ -258,7 +258,7 @@ When browsing through users or subgroups, you can often see only a limited list.
 
 To add multiple users to a group, you must be on the **Users** interface. Follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 

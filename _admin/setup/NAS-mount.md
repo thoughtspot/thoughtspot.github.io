@@ -33,7 +33,7 @@ will not function normally.
 
 To mount a NAS file system using the admin UI:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)

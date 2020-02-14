@@ -62,7 +62,7 @@ If 'y', then ThoughtSpot local/internal users (including local administrative us
 
 To set up SAML on ThoughtSpot for user authentication, follow these steps:
 
-1. Log into the Linux shell using SSH.
+1. Log in to the Linux shell using SSH.
 
 2. Run the `saml configure` command to launch the interactive SAML configuration:
 

@@ -109,7 +109,7 @@ For more information on this process, refer to [Using the tscli cluster create c
      $ rm /usr/local/scaligent/bin/setup-net-devices.sh
      ```
 
-  Log into any node to check the current cluster status:
+  Log in to any node to check the current cluster status:
   ```
     $ tscli cluster status
   ```
@@ -210,7 +210,7 @@ Your output may look something like the above. Ensure that all diagnostics show 
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation
 
-After the cluster status changes to `READY`, sign into ThoughtSpot on your browser.
+After the cluster status changes to `READY`, sign in to ThoughtSpot on your browser.
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -227,7 +227,7 @@ Follow these steps:
 
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
-<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
 
 ## Lean configuration
 **(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.

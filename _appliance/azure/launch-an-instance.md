@@ -40,9 +40,9 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 
 Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine).
 
-1. Log into the Azure portal.
+1. Log in to the Azure portal.
 
-    In a browser, go to [https://portal.azure.com/#home](https://portal.azure.com/#home), and log into your Azure account.
+    In a browser, go to [https://portal.azure.com/#home](https://portal.azure.com/#home), and log in to your Azure account.
 
 2. On the Azure portal homepage, hover over **Virtual machines**, and click **Create**.
 
@@ -172,7 +172,7 @@ Open the following ports between the User/ETL server and ThoughtSpot nodes. This
 
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log into the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 

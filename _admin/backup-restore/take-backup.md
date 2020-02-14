@@ -15,7 +15,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
 To manually create a backup using the admin UI:
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)

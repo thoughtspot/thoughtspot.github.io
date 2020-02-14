@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 The **Getting Started** sidebar teaches new users about ThoughtSpot with a brief lesson on navigation and several quick videos on ThoughtSpot's main features.
 
-When you sign into ThoughtSpot, the **Getting Started** sidebar appears on the right edge of the screen. It looks like this:
+When you sign in to ThoughtSpot, the **Getting Started** sidebar appears on the right edge of the screen. It looks like this:
 
 ![The Getting Started sidebar]({{ site.baseurl }}/images/gettingstarted-main.png "The Getting Started sidebar")
 <!--{% include image.html file="gettingstarted-main.png" title="The Getting Started sidebar" alt="The Getting Started sidebar is on the right edge of the screen." caption="The Getting Started sidebar" %}-->

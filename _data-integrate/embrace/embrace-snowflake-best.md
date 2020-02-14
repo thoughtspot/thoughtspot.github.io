@@ -23,7 +23,7 @@ To make this data searchable in ThoughtSpot, you must first create a view in Sno
 
 To create a view from a Snowflake table that contains JSON, follow these steps:
 
-1. Log into your Snowflake instance.
+1. Log in to your Snowflake instance.
 
 2. If necessary, change your role so you can issue `CREATE VIEW` DDL statement in the target schema. See [CREATE VIEW](https://docs.snowflake.net/manuals/sql-reference/sql/create-view.html) in Snowflake.
 
