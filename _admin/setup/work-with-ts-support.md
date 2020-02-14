@@ -33,7 +33,7 @@ To enable remote support:
 1. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and open a support ticket for making the appropriate reverse tunnel settings on our end.
     Provide the cluster name of the cluster for which you want to enable remote support.
 2. After the ticket is completed, continue with the remaining steps in this procedure to make the settings on your side.
-3. Log into the Linux shell using SSH.
+3. Log in to the Linux shell using SSH.
 4. Issue the command to configure the destination for the remote tunnel.
 
     You only need to do this once, when you are enabling the tunnel for the very
@@ -112,7 +112,7 @@ rest on the server.
 By default, call home is enabled on your cluster. You can disable call home in
 by doing the following:
 
-1. Log into the ThoughtSpot server as `admin` user.
+1. Log in to the ThoughtSpot server as `admin` user.
 2. Use the `tscli` command to disable.
 
     ```

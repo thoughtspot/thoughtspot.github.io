@@ -15,7 +15,7 @@ You can edit manually created users through the interface. If a manually-created
 
 This procedure shows how to creating a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Any user you create will be added to the group **All** automatically.
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
@@ -93,7 +93,7 @@ As an administrator, you can edit a user and change the groups the user belongs 
 
 To edit an existing user:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
