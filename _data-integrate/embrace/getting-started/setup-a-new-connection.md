@@ -1,15 +1,13 @@
 ---
 title: [Add a connection]
-last_updated: tbd
+last_updated: 10/17/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Embrace is enabled, you can add a connection to a supported database source. Database sources are the external source systems to which you want to perform a live query to create answers and pinboards, without having to bring the data into ThoughtSpot.
+After enabling ThoughtSpot Embrace, you can add connection to supported database sources. Database sources are the external source systems where a live query runs to create answers and pinboards.
 
-## Add a connection
-
-To add a new connection:
+To add a new connection, follow these steps:
 
 1. Click **Data** in the top navigation bar.
 
