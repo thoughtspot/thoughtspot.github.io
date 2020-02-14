@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-cloud-express.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-11T15:18:02-08:00" />
+<meta property="article:published_time" content="2020-02-14T07:42:39-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Cloud Express for Embrace”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Cloud Express for Embrace”]","dateModified":"2020-02-11T15:18:02-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-cloud-express.html","datePublished":"2020-02-11T15:18:02-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-cloud-express.html"},"description":"With Cloud Express, you can easily connect your production data in an existing cloud data warehouse to ThoughtSpot using ThoughtSpot Embrace.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Cloud Express for Embrace”]","dateModified":"2020-02-14T07:42:39-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-cloud-express.html","datePublished":"2020-02-14T07:42:39-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-cloud-express.html"},"description":"With Cloud Express, you can easily connect your production data in an existing cloud data warehouse to ThoughtSpot using ThoughtSpot Embrace.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1764,19 +1764,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/admin/data-security/share-pinboards.html">Share a pinboard</a></li>
+                                  <li><a href="/6.0/admin/data-security/share-views.html">Share Views</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/6.0/admin/data-security/spotiq-admin.html">Security for SpotIQ functions</a></li>
+                                  <li><a href="/6.0/admin/data-security/share-pinboards.html">Share Pinboard</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-security/share-answers.html">Share Answers</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/6.0/admin/data-security/unshare.html">Revoke access (unshare)</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-security/spotiq-admin.html">Security for SpotIQ functions</a></li>
                               
                             
                         
@@ -3597,7 +3609,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3616,12 +3628,64 @@ $('#toc').on('click', 'a', function() {
   <li>Successful search-driven insights in 45 minutes from launch</li>
 </ul>
 
+<h2 id="features">Features</h2>
+
+<table width="100%" border="0">
+  <tbody>
+	<tr>
+      <td>&#9989;</td>
+      <td>5 Users</td>
+    </tr>  
+    <tr>
+      <td>&#9989;</td>
+      <td>20 million rows</td>
+    </tr>
+    <tr>
+      <td>&#9989;</td>
+      <td>Snowflake, AWS Redshift data warehouses</td>
+    </tr>
+    <tr>
+      <td>&#9989;</td>
+      <td>Self-service upgrade (Download and access for new release)</td>
+    </tr>
+    <tr>
+      <td>&#9989;</td>
+      <td>Measure usage using MixPanel: number of users created, number of rows, queries, objects created, and more</td>
+    </tr>
+    <tr>
+      <td>&#9989;</td>
+      <td>SAML*</td>
+    </tr>
+    <tr>
+      <td>&#9989;</td>
+      <td>Restore from snapshot*</td>
+    </tr>
+    <tr>
+      <td>&#10060;</td>
+      <td>Upload user data</td>
+    </tr>
+    <tr>
+      <td>&#10060;</td>
+      <td>Backup</td>
+    </tr>
+    <tr>
+      <td>&#10060;</td>
+      <td>Restore from backup</td>
+    </tr>
+    <tr>
+      <td colspan="2"><i>*Available through the ThoughtSpot Management Console ( <b>Admin &gt; Settings</b> )</i></td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="sign-up-for-cloud-express">Sign up for Cloud Express</h2>
 
 <p>To sign up for Cloud Express, do the following:</p>
 
 <ol>
-  <li>Go to the ThoughtSpot marketing site [URL TBD].</li>
+  <li>
+    <p>Go to the ThoughtSpot marketing site [URL TBD].</p>
+  </li>
   <li>Sign up by providing the following information:
     <ul>
       <li>Name</li>
@@ -3645,9 +3709,21 @@ $('#toc').on('click', 'a', function() {
   <li>Sign in to AWS using your corporate account.</li>
   <li>Click the <strong>Continue to Subscribe</strong> button.</li>
   <li>Accept the terms and conditions, by clicking <strong>Accept Terms</strong>, and then click <strong>Continue to Configuration</strong>.</li>
-  <li>Enter the environmental details for your infrastructure (VPC, Subnet, Security Group).</li>
-  <li>Enable AWS Private Link for Snowflake. See Snowflake’s documentation <a href="https://docs.snowflake.net/manuals/user-guide/admin-security-privatelink.html#enabling-aws-privatelink" target="_blank">Enabling AWS PrivateLink</a> for details.</li>
-  <li>Launch your Snowflake instance in AWS.</li>
+  <li>On the <em>Configure this software</em> page, select software version 6.0, your region, and click <strong>Continue to Launch</strong>.</li>
+  <li>On the <em>Launch this software</em> page, if you have not signed up yet, click <strong>Usage Instructions</strong> and follow the instructions in step 2 of <a href="/6.0/data-integrate/embrace/embrace-cloud-express.html#sign-up-for-cloud-express">Sign up for Cloud Express</a>. Once you’re signed up, go to the next step.</li>
+  <li>On the <em>Launch this software</em> page, work with your IT group to select the VPC, Subnet and Keypair settings, and then click <strong>Launch</strong>. Once your ThoughtSpot instance launches, the <em>Launch this software</em> page appears.</li>
+  <li>Click the <strong>EC2 Console</strong> link to view the status of your instance.</li>
+  <li>Save the <strong>Instance ID</strong>, and, under the <em>Description</em> tab at the bottom of the page, the <strong>IPv4 Public IP</strong>. You use the Instance ID to sign in to your instance. The IPv4 Public IP is the URL of your instance.</li>
+  <li>Once your instance is up and running, go to the URL you copied in the previous step and sign in to your ThoughtSpot instance, using the following credentials:
+    <ul>
+      <li>Username: <strong>tsadmin</strong></li>
+      <li>Password: <strong>&lt;Instance-ID&gt;-TS</strong> <em>(example: i-035ab9c2900ed9fbf-TS)</em>
+  After you sign in, the <em>Upload the license key file</em> page appears.</li>
+    </ul>
+  </li>
+  <li>Upload the license key file you received from ThoughtSpot.</li>
+  <li>After the license key file is uploaded, you are interactively guided through onboarding into ThoughtSpot.</li>
+  <li>If you are going to connect to a Snowflake data warehouse, be sure to enable AWS Private Link for Snowflake. For details, see Snowflake’s documentation <a href="https://docs.snowflake.net/manuals/user-guide/admin-security-privatelink.html#enabling-aws-privatelink" target="_blank">Enabling AWS PrivateLink</a> for details.</li>
 </ol>
 
 <h2 id="connect-to-your-data-warehouse">Connect to your data warehouse</h2>
@@ -3699,7 +3775,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 11, 2020 <br />
+        Generated: Feb 14, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 10/21/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
