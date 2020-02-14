@@ -46,13 +46,6 @@
          </td>
       </tr>
       <tr>
-         <td>hourly</td>
-         <td>
-            <code>visitors by page name <b>hourly</b>
-            </code>
-         </td>
-      </tr>
-      <tr>
          <td><i>n</i> minutes ago</td>
          <td>
             <code>sum inventory by product <b>10 minutes ago</b>
