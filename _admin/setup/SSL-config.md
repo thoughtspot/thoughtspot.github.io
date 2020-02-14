@@ -9,16 +9,14 @@ You can use your own SSL certificate to secure ThoughtSpot HTTP(S) traffic.
 
 {: id="ssl-about"}
 ## About SSL
-To enable SSL for ThoughtSpot web service, you need to provide your organization's SSL certificate tailored to ThoughtSpot service URL.  If you do not have an SSL certificate, there are options:
+To enable SSL for the ThoughtSpot web service, you must provide your organization's SSL certificate for the ThoughtSpot service URL.  If you do not have this certificate, you have the following options:
 
 -   Check with your IT department if they have an SSL certificate you can use.
 -   Obtain the certificate from an issuing authority.
--   Use the default SSL certificate installed in ThoughtSpot nodes.
--   Disable SSL (but lose the security it provides). Use the following command:
-    ```
-    tscli ssl off
-    ```
-ThoughtSpot works with a wide variety of SSL types, from a wide variety of vendors.
+-   Use the default SSL certificate on the ThoughtSpot nodes.
+-   Disable SSL using the `tscli ssl off` command.
+
+ThoughtSpot supports a wide variety of SSL types.
 
 {: id="ssl-ports"}
 ## Required ports
