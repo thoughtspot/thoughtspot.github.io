@@ -678,14 +678,20 @@ entries:
         - title: Share worksheets
           url: /admin/data-security/share-worksheets.html
           output: web,admBk
-        - title: Share a pinboard
+        - title: Share Views
+          url: /admin/data-security/share-views.html
+          output: web,admBk
+        - title: Share Pinboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
-        - title: Security for SpotIQ functions
-          url: /admin/data-security/spotiq-admin.html
+        - title: Share Answers
+          url: /admin/data-security/share-answers.html
           output: web,admBk
         - title: Revoke access (unshare)
           url: /admin/data-security/unshare.html
+          output: web,admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
           output: web,admBk
       - levelThreeTitle: Row level security (RLS)
         output: web,admBk
