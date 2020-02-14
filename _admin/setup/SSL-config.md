@@ -71,7 +71,7 @@ The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standa
 
 ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default.
 
-To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
+To discover supported TLS versions, log in to any ThoguhtSpot node using SSH and issue the following commands.
     ```
     tscli ssl set-min-tls-version --help
     ```

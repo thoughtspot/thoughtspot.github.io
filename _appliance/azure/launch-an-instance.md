@@ -45,7 +45,7 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 
 ### Create an instance
 
-To get started, you need to log into the Azure portal, create a resource group,
+To get started, you need to log in to the Azure portal, create a resource group,
 get the [ThoughtSpot Virtual
 Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
 on the [Azure
