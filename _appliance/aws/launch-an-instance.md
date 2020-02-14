@@ -90,7 +90,7 @@ To install and launch ThoughtSpot, you must have the following:
 {: id="ec2-setup"}
 ### Setting up your EC2 instances
 
-1. Sign into your [AWS account](https://console.aws.amazon.com/console/home).
+1. Sign in to your [AWS account](https://console.aws.amazon.com/console/home).
 2. Copy the following ThoughtSpot public AMI to your AWS region:  
 **AMI Name**: thoughtspot-image-20191031-8ae15008336-prod<br>
 **AMI ID**: ami-06276ece42ed96994  

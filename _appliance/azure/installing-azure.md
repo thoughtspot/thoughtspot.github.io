@@ -22,7 +22,7 @@ After creating the instance, you must configure the nodes. Follow the steps in t
 <table>
   <tr>
     <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-1">Step 1: Log into your cluster</a></td>
+    <td><a href="installing-azure#node-step-1">Step 1: Log in to your cluster</a></td>
   </tr>
   <tr>
     <td>&#10063;</td>
@@ -43,11 +43,11 @@ After creating the instance, you must configure the nodes. Follow the steps in t
 </table>
 
 {: id="node-step-1"}
-### Step 1: Log into your cluster
-Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
+### Step 1: Log in to your cluster
+Use Terminal on a Mac or a terminal emulator on Windows to log in to your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
 If you do not have a private key, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) by email or through the support portal.
 
-To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
+To log in to your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
 ```
     $ ssh -i <private_key> admin@<public-vm-ip>
 ```

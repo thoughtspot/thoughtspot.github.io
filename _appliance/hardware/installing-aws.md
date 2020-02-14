@@ -18,8 +18,8 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 ## Configure Nodes
 After creating the instance, you must configure the nodes.
 
-### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. The admin password is th0ughtSp0t.
+### Step 1: Log in to your cluster
+Log in to your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. The admin password is th0ughtSp0t.
 1. Run `ssh admin@clusterIP` or `ssh admin@hostname`, replacing 'clusterIP' or 'hostname' with your specific network information.
 2. Enter your admin password.
   * Ask your network administrator if you don't know the password.
@@ -145,7 +145,7 @@ If you do not have a link to download the release tarball, open a support ticket
 3. Edit the output with your specific cluster information. For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
-  Log into any node to check the current cluster status, using the command `tscli cluster status`.
+  Log in to any node to check the current cluster status, using the command `tscli cluster status`.
 
 ### Step 2. Check Cluster Health
 Once the cluster is installed, check its status with the `tscli cluster status` command [(Cluster Status)]({{ site.baseurl }}/appliance/hardware/installing-aws.html#check-cluster-health).
@@ -182,7 +182,7 @@ Number of tables in WILL_NOT_INDEX state: 0
 ```
 ### Step 3. Finalize Installation
 
-After the cluster status changes to “Ready,” log into the ThoughtSpot application on your browser.
+After the cluster status changes to “Ready,” log in to the ThoughtSpot application on your browser.
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -198,7 +198,7 @@ Follow these steps:
   ThoughtSpot recommends changing the default admin password.
 
 {: id="ts-login"}
-![ThoughtSpot's login window]({{ site.baseurl }}/images/ts-login-page.png "Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option.")
+![ThoughtSpot's login window]({{ site.baseurl }}/images/ts-login-page.png "Log in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option.")
 
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.

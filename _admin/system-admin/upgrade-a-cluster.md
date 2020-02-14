@@ -27,7 +27,7 @@ Upgrading a cluster typically involves three steps:
 {% include note.html content="Ensure that you perform all pre-update checks well in advance to avoid any unforeseen issues before the scheduled maintenance window." %}
 
 To update a cluster:
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)

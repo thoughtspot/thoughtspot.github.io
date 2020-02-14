@@ -2,7 +2,7 @@
 For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
   The cluster installer automatically reboots all the nodes after a successful install. The `firewalld` service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br>
-  Log into any node to check the current cluster status:
+  Log in to any node to check the current cluster status:
   ```
     $ tscli cluster status
   ```
@@ -105,7 +105,7 @@ Your output may look something like the above. Ensure that all diagnostics show 
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation
 
-After the cluster status changes to `READY`, sign into ThoughtSpot on your browser.
+After the cluster status changes to `READY`, sign in to ThoughtSpot on your browser.
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -122,4 +122,4 @@ Follow these steps:
 
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
-<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->

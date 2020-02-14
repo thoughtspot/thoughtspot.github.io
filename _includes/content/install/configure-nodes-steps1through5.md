@@ -1,6 +1,6 @@
 {: id="node-step-1"}
-### Step 1: Log into your cluster
-Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
+### Step 1: Log in to your cluster
+Log in to your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
 1. Run `ssh admin@<nodeIP>`.<br>
 Replace `nodeIP` with your specific network information.
 ```

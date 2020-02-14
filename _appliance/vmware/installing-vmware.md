@@ -24,7 +24,7 @@ After creating the instance, you must configure the nodes. Follow the steps in t
 <table>
   <tr>
     <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-1">Step 1: Log into your cluster</a></td>
+    <td><a href="installing-vmware#node-step-1">Step 1: Log in to your cluster</a></td>
   </tr>
   <tr>
     <td>&#10063;</td>

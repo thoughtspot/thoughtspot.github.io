@@ -57,7 +57,7 @@ Run `tscli cluster create <release-number>`.
 
   The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes.
 
-  Log into any node to check the current cluster status, using the command `tscli cluster status`.
+  Log in to any node to check the current cluster status, using the command `tscli cluster status`.
 
 ## Step 2. Check Cluster Health
 After you install the cluster, check its status using the `tscli cluster status` and `tscli cluster check` commands.
@@ -155,7 +155,7 @@ Your output may look something like the above. Ensure that all diagnostics show 
 
 ## Step 3. Finalize Installation
 
-After the cluster status changes to “Ready,” sign into the ThoughtSpot application on your browser.<br>
+After the cluster status changes to “Ready,” sign in to the ThoughtSpot application on your browser.<br>
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -172,7 +172,7 @@ Follow these steps:
 
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
-<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Log in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
 
 ## Lean configuration
 **(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
