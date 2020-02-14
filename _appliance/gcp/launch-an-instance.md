@@ -109,7 +109,7 @@ The following topics walk you through this process.
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
 with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-Before we can install a ThoughtSpot cluster, an administrator must log into
+Before we can install a ThoughtSpot cluster, an administrator must log in to
 each VM through SSH as user "admin", and complete the following preparation steps:
 
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.

@@ -49,7 +49,7 @@ The private key must be in compatible `.PEM` format. It cannot be password or pa
 
 To install and configure the SSL certificate using the admin UI:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)
@@ -119,7 +119,7 @@ Follow these instructions to install the SSL certificate using tscli:
       $ scp <key> <certificate> admin@<IP_address>:<certificate-path>
       ```
 
-3. Log into the Linux shell using SSH.
+3. Log in to the Linux shell using SSH.
 
 4. Change to the directory where you copied the files:
 
@@ -133,7 +133,7 @@ Follow these instructions to install the SSL certificate using tscli:
     $ tscli ssl add-cert <key> <certificate>
     ```
 
-6. To test that the certificate is correctly installed, [log into the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
+6. To test that the certificate is correctly installed, [log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
 
      You should see that the application's URL begins with `https://`.
 
