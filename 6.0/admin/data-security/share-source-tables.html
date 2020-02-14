@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can share an entire table, or only some of its columns."> -->
+<!-- <meta name="description" content="As an administrator, you can share view or edit access to any table."> -->
 <meta name="keywords" content=",  ">
-<title>Share tables and columns | ThoughtSpot</title>
+<title>Sharing tables and columns | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Share tables and columns”] | thoughtspot.github.io</title>
+<title>[“Sharing tables and columns”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Share tables and columns”]" />
+<meta property="og:title" content="[“Sharing tables and columns”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Data imported from a Web browser is visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others." />
-<meta property="og:description" content="By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Data imported from a Web browser is visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others." />
+<meta name="description" content="By default, when a table is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Tables imported from a Web browser are visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others." />
+<meta property="og:description" content="By default, when a table is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Tables imported from a Web browser are visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-11T15:18:02-08:00" />
+<meta property="article:published_time" content="2020-02-14T07:42:39-08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Share tables and columns”]" />
+<meta property="twitter:title" content="[“Sharing tables and columns”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Share tables and columns”]","dateModified":"2020-02-11T15:18:02-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html","datePublished":"2020-02-11T15:18:02-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html"},"description":"By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Data imported from a Web browser is visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Sharing tables and columns”]","dateModified":"2020-02-14T07:42:39-08:00","url":"https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html","datePublished":"2020-02-14T07:42:39-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-security/share-source-tables.html"},"description":"By default, when a table is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Tables imported from a Web browser are visible to administrators and the user who uploaded it. Administrators and owners can share Can View or Can Edit privileges on tables with other users, who can further share them with others.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1764,19 +1764,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/admin/data-security/share-pinboards.html">Share a pinboard</a></li>
+                                  <li><a href="/6.0/admin/data-security/share-views.html">Share Views</a></li>
                               
                             
                         
                           
                               
-                                  <li><a href="/6.0/admin/data-security/spotiq-admin.html">Security for SpotIQ functions</a></li>
+                                  <li><a href="/6.0/admin/data-security/share-pinboards.html">Share Pinboard</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-security/share-answers.html">Share Answers</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/6.0/admin/data-security/unshare.html">Revoke access (unshare)</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-security/spotiq-admin.html">Security for SpotIQ functions</a></li>
                               
                             
                         
@@ -3552,7 +3564,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Share tables and columns</h1>
+   <h1 class="post-title-main">Sharing tables and columns</h1>
 </div>
 
 
@@ -3560,7 +3572,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can share an entire table, or only some of its columns.</div>
+    <div class="summary">As an administrator, you can share view or edit access to any table.</div>
    
 
     
@@ -3572,70 +3584,118 @@ var ss360Config = {
   Estimated reading time:
   
   
-    1 minute
+    3 minutes
   
 </span>
  -->
 
     
 
-  <p>By default, when data is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it
-is only visible to administrators. Data imported from a Web browser is visible
+  <p>By default, when a table is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it
+is only visible to administrators. Tables imported from a Web browser are visible
 to administrators and the user who uploaded it. Administrators and owners can
-share <strong>Can View</strong> or <strong>Can Edit</strong> privileges on tables with other users, who
-can further share them with others.</p>
+share <strong>Can View</strong> or <strong>Can Edit</strong> privileges on tables with other users, who can further share them with others.</p>
+
+<p>When you share a table, you can share the entire table, or specific columns.</p>
 
 <h2 id="permissive-or-strict-sharing">Permissive or strict sharing</h2>
 
-<p>Use caution when sharing tables, because any objects created from them will have
-dependencies on the tables and their underlying structure. Objects created from
-tables can include worksheets, answers, and pinboards. This means that if a user
-wants to drop or modify a table, any object that depends upon it must be edited
-or removed first, to remove the dependency.</p>
+<p>Use caution when sharing tables, because any objects created from that table will have
+dependencies on it and its underlying structure. Objects created from
+tables can include worksheets, Views, Answers, and Pinboards. This means that if a user
+wants to drop or modify a table, any object that depends upon it must be edited or removed first, to remove the dependency.</p>
 
 <p>For this reason, it is a best practice to only grant the <strong>Edit</strong> permission on
-tables to a small number of users. If you want to prevent shares from also
+a table to a small number of users. If you want to prevent shares from also
 revealing the columns regardless of where it appears (worksheets, answers, and
-pinboards), you can ask ThoughtSpot Customer Support to enable a stricter
-behavior.</p>
+pinboards), you can ask <a href="/6.0/appliance/contact.html">ThoughtSpot Support</a> to enable a stricter behavior.</p>
 
-<h2 id="how-to-share">How to share</h2>
+<p>You can share a table <a href="#share-datatab">from the <strong>Data</strong> tab</a>, or <a href="#share-dataset">from within the table</a> that you want to share.</p>
 
-<p>Share a table or imported data by following these steps:</p>
+<h2 id="share-datatab">Share from the Data tab</h2>
+<p>To share a table, worksheet, or View from the <strong>Data</strong> tab, follow these steps.</p>
 
 <ol>
   <li>
-    <p>Click <strong>Data</strong> in the top navigation bar.</p>
+    <p>Click <strong>Data</strong> on the top navigation bar.</p>
   </li>
   <li>
-    <p>Click <strong>Tables</strong>.</p>
+    <p>Hover over the dataset you want to share and select it by clicking the empty checkbox that appears.</p>
+  </li>
+  <li>
+    <p>Click <strong>Share</strong>.</p>
 
-    <p><img src="/6.0/images/data_icon_and_tables.png" alt="" /></p>
+    <p><img src="/6.0/images/sharing-data.png" alt="Share the data" title="Share the data" />
+ <!--<figure><img class="docimage" src="/images/sharing-data.png" title="Share the data" alt="Select the data you want to share and click the share icon." /> <figcaption>Share the data</figcaption></figure>
+--></p>
   </li>
   <li>
-    <p>Select one or more tables to share, and click the <strong>Share</strong> icon.</p>
-  </li>
-  <li>
-    <p>Select <strong>Entire Table</strong> or <strong>Specific Columns</strong>.</p>
+    <p>If you are sharing a table, select <strong>Entire Table</strong> or <strong>Specific Columns</strong>.</p>
 
-    <p><img src="/6.0/images/share_tables.png" alt="" /></p>
+    <p><img src="/6.0/images/sharing-datacolumns.png" alt="Specify sharing type" title="Specify sharing type" />
+ <!--<figure><img class="docimage" src="/images/sharing-datacolumns.png" title="Specify sharing type" alt="Select either entire table or specific columns." /> <figcaption>Specify sharing type</figcaption></figure>
+--></p>
   </li>
   <li>
-    <p>If you selected <strong>Specific Columns</strong>, select the column to share.</p>
+    <p>If you select <strong>Specific Columns</strong>, select the column(s) you want to share. If you select <strong>Entire Table</strong>, skip to step 6.</p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You cannot click multiple columns at once. You must input the users or groups with whom you want to share for each column.</div>
   </li>
   <li>
-    <p>Click <strong>+</strong> and select the users and groups with whom you want to share.</p>
+    <p>Click <strong>+ Add users or groups</strong> and select the users and groups with whom you want to share.</p>
+
+    <p><img src="/6.0/images/sharing-data-addusers.png" alt="Add users or groups" title="Add users or groups" />
+ <!--<figure><img class="docimage" src="/images/sharing-data-addusers.png" title="Add users or groups" alt="Add the users and groups you want to have access to the dataset." /> <figcaption>Add users or groups</figcaption></figure>
+--></p>
   </li>
+  <li>
+    <p><a href="#specify-permissions">Specify permissions</a>.</p>
+  </li>
+</ol>
+
+<h2 id="share-dataset">Share from within the dataset</h2>
+<p>To share a table, worksheet, or View from within the dataset, follow these steps.</p>
+<ol>
+  <li>
+    <p>Navigate to the dataset you want to share.</p>
+  </li>
+  <li>
+    <p>Click the ellipsis icon <img src="/6.0/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and then click <strong>Share</strong>.</p>
+
+    <p><img src="/6.0/images/sharing-data-in-dataset.png" alt="Share the data" title="Share the data" />
+ <!--<figure><img class="docimage" src="/images/sharing-data-in-dataset.png" title="Share the data" alt="Click the three-dot ellipsis icon and then click Share." /> <figcaption>Share the data</figcaption></figure>
+--></p>
+  </li>
+  <li>
+    <p>Select the users or groups with whom you want to share.<br />
+ You can only share the entire dataset. You cannot share individual columns. To share individual columns, share a table <a href="/6.0#share-datatab">from the <strong>Data</strong> tab</a>. You cannot share individual columns for worksheets or Views.</p>
+  </li>
+  <li>
+    <p><a href="#specify-permissions">Specify permissions</a>.</p>
+  </li>
+</ol>
+
+<h2 id="specify-permissions">Specify permissions</h2>
+<ol>
   <li>Configure the level of access by selecting from the dropdown list. You can select:
     <ul>
-      <li><strong>Can View</strong> to provide read-only access. This enables viewing the table data and defining worksheets on the table.</li>
-      <li><strong>Can Edit</strong> to allow modification. This enables renaming, modifying, or deleting the entire table and adding or removing its columns.</li>
+      <li><strong>Can View</strong> to provide read-only access. This enables viewing the data source’s data, as well as defining worksheets based on that data.</li>
+      <li><strong>Can Edit</strong> to allow modification. This enables renaming, modifying, or deleting the entire data source and adding or removing its columns.</li>
     </ul>
+
+    <p><img src="/6.0/images/sharing-data-privileges.png" alt="Specify permissions" title="Specify permissions" /></p>
   </li>
   <li>
-    <p>Click <strong>Add and Save</strong>.</p>
+    <p>Click <strong>Add</strong>.</p>
   </li>
-  <li>Click <strong>Done</strong>.</li>
+  <li>
+    <p>Click <strong>Done</strong>.</p>
+  </li>
+  <li>
+    <p>The <strong>Share settings updated</strong> notification appears on the bottom of your screen.</p>
+
+    <p><img src="/6.0/images/sharing-settingsupdated.png" alt="Share settings updated" title="Share settings updated" /></p>
+  </li>
 </ol>
 
 
@@ -3664,9 +3724,9 @@ behavior.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 11, 2020 <br />
+        Generated: Feb 14, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 2/12/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
