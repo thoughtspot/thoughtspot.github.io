@@ -10,7 +10,7 @@ For troubleshooting on specific incidents or cluster problems, two things are im
 
 ## Check your configuration
 
-1. Log into the ThoughtSpot cluster as the `admin` user.
+1. Log in to the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```

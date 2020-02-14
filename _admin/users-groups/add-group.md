@@ -13,7 +13,7 @@ a set of privileges for its users.
 
 To create a group and add privileges for the group:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
@@ -94,7 +94,7 @@ parent group it may have. Keep this in mind when adding users.
 
 To edit or delete an existing group:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 3. In the **Admin** panel, click on **User Management** and **Groups**.
 
@@ -132,7 +132,7 @@ users are present, you must search for the specific user name.
 
 You can add multiple users to a group using one button. To add multiple users to a group:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click on the **Admin** icon, on the top navigation bar.
 3.  In the **Admin** panel, click on **User Management** and **Users**.
 

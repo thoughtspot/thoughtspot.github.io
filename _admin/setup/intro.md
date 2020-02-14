@@ -19,7 +19,7 @@ some common problems, finding additional resources, and contacting ThoughtSpot.
 To perform the set up and configuration, you must first learn how to [gain
 administrative access]({{ site.baseurl }}/admin/setup/logins.html).
 
-1. Log into the ThoughtSpot cluster as the `admin` user.
+1. Log in to the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```
