@@ -577,10 +577,10 @@ TQL&gt; ALTER TABLE "fruit_dim"
          </td>
          <td>
             <code>TQL&gt; INSERT INTO "vendor"
-     VALUES 'helen rose',
+     VALUES ('helen rose',
      'jacob norse',
      'eileen ruff',
-     'manny gates';</code>
+     'manny gates');</code>
          </td>
       </tr>
       <tr>
