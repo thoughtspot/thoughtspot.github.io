@@ -1,85 +1,40 @@
 ---
-title: [Cloud Express for Embrace]
+title: [Snowflake Partner Connect]
 last_updated: 2/21/2019
 toc: true
-summary: "With Cloud Express, you can easily try ThoughtSpot Embrace through a simple cloud-based deployment."
+summary: "With Snowflake Partner Connect you can easily create a Snowflake trial account with ThoughtSpot to try ThoughtSpot Embrace through a simple cloud-based deployment."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-With Cloud Express, you can easily connect your production data in an existing cloud data warehouse to ThoughtSpot using ThoughtSpot Embrace.  
+With Snowflake Partner Connect, you can quickly and easily try out using Snowflake connected to ThoughtSpot with ThoughtSpot Embrace.
 
-Cloud Express benefits:
+Snowflake Partner Connect benefits:
 - Easy to sign up
 - Up and running in 5 minutes
 - Zero ThoughtSpot software cost
-- No more than $100 to $150 per month infrastructure cost
+- Trial data already loaded into Snowflake
 - No or minimal data modeling
-- Successful search-driven insights in 45 minutes from launch
+- Successful search-driven insights within minutes of launch
 
 ## Features
 
-<table width="100%" border="0">
-  <tbody>
-	<tr>
-      <td>&#9989;</td>
-      <td>5 Users</td>
-    </tr>  
-    <tr>
-      <td>&#9989;</td>
-      <td>20 million rows</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Snowflake, AWS Redshift data warehouses</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Self-service upgrade (Download and access for new release)</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Measure usage using MixPanel: number of users created, number of rows, queries, objects created, and more</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>SAML*</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Restore from snapshot*</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Upload user data</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Backup</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Restore from backup</td>
-    </tr>
-    <tr>
-      <td colspan="2"><i>*Available through the ThoughtSpot Management Console ( <b>Admin > Settings</b> )</i></td>
-    </tr>
-  </tbody>
-</table>
+TBD
 
+## Sign up for Partner Connect
 
+To sign up for Partner Connect, do the following:
 
-## Sign up for Cloud Express
+1. Log in to your Snowflake account, or sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
 
-To sign up for Cloud Express, do the following:
+2. Click **Partner Connect**.
 
-1. Go to the ThoughtSpot marketing site [URL TBD].
+3. Click **ThoughtSpot**.
+   The _Connect to ThoughtSpot_ window appears.
 
-2. Sign up by providing the following information:
-   - Name
-   - Email address
-   - Company name
-   - Phone number
-3. After you sign up, you receive an email that contains a license key and instructions.
+4. Click **Connect**.
+    A ThoughtSpot account is created for you and an email with activation instructions is sent to the email address associated with your Snowflake account.
+
+5.      
 
 ## Deploy Cloud Express
 
@@ -117,8 +72,8 @@ To connect to your data warehouse, do the following:
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)
 - [Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)
-- [Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)  
+- [Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)
 
    When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
 
-3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.  
+3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.
