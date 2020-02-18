@@ -25,15 +25,29 @@ To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to acco
 
 {: id="ssl-configure"}
 ## Configure SSL for web traffic
-To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key). The steps below are suitable for installing a fresh SSL certificate/key pair and for all subsequent operations, including reinstalling & updating/replacing these.
+To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key). 
+
+You can then proceed to [Configure SSL using tscli]({{ site.baseurl
+}} #ssl-configure-tscli), and [Test the SSL certificate]({{ site.baseurl
+}} #ssl-configure-test).
 
 {: id="ssl-certificate-chain"}
 ### SSL certificate chain
-The SSL certificate chain must be in PEM format. This is an `X.509v3` file that contains ASCII (Base64) armored data, packed between `BEGIN` and `END` directives. The chain can contain a series of certificates with root certificate at the bottom and user-facing, ThoughtSpot-specific SSL certificate at the top.
+The SSL certificate chain must be in PEM format, which is an `X.509v3` file that contains ASCII (Base64) armored data, packed between `BEGIN` and `END` directives. The certificate chain may contain a series of certificates, with the root certificate at the bottom and user-facing, while the ThoughtSpot-specific SSL certificate is at the top.
 
 {: id="key"}
 ### Private key
-The private key must also be in compatible PEM format. It cannot be password or passphrase protected. {% include note.html content="Do not use a passphrase when creating certificates.<br>To verify if you're prompted to specify a passphrase, invoke the command `openssl rsa -check -in pk.key`. If the answer is 'yes', you'll need to first remove the passphrase to use the private key with ThoughtSpot." %}
+The private key must also be in compatible PEM format. It cannot be password-protected, or passphrase-protected. 
+
+{% include note.html content="Do not use a passphrase when creating certificates with ThoughtSpot." %}
+
+If you are prompted to specify a passphrase, first check if it exists by invoking the following command:
+
+```
+openssl rsa -check -in pk.key`
+```
+
+If the answer is 'yes', you must remove the passphrase first, and then proceed to use the private key with ThoughtSpot.
 
 <!--### Using Management Console
 
@@ -183,7 +197,8 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
 You must ensure that your load balancer supports these ciphers.
 
-## Testing the SSL certificate
+{: id="ssl-configure-test"}
+## Test the SSL certificate
 
 To test if the certificate is installed correctly, see [Sign in to the ThoughtSpot application]({{ site.baseurl
 }}//admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
