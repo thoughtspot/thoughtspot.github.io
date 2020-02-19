@@ -9,7 +9,7 @@ If you encounter a technical issue, file a support ticket using the Support Port
 
 Please provide as much detail as possible about your issue, to help us resolve it quickly.
 
-You need a Support Portal login to file a ticket. Please contact ThoughtSpot to get an account, if necessary.
+You need a Support Portal login to file a ticket. If you do not have one, contact your ThoughtSpot liaison or email ThoughtSpot support using the details provided [below](#email).
 
 {: id="address"}
 ## Address
