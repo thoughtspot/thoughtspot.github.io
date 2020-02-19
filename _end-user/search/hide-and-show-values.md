@@ -8,16 +8,10 @@ permalink: /:collection/:path.html
 ---
 Clicking on a legend item will hide it from the chart. You can click it again to show it. To hide and show values:
 
-1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
+On the chart, click the legend value you would like to hide. Click the hidden legend value again to show it.
 
-     ![]({{ site.baseurl }}/images/edit_chart_configuration_bar.png "Edit chart configuration icon")
+![Click a legend value to hide or show it]({{ site.baseurl }}/images/chart-config-hide-value.gif "Click a legend value to hide or show it")
 
-2. Make sure you have a column in the **Legend** field.
+To exclude an item from a chart, such as a column or a pie wedge, right-click on the item and click **Exclude "value"**.
 
-     ![]({{ site.baseurl }}/images/legend_field.png "Legend field")
-
-3. On the chart, click the legend value you would like to hide. Click the hidden legend value again to show it.
-
-    In the following example, we clicked `northwest` to hide it.
-
-    ![]({{ site.baseurl }}/images/legend_hide_this_value.png "Hide a legend value from the chart")
+![Exclude a chart item]({{ site.baseurl }}/images/chartconfig-excludevalue.png "Exclude a chart item")

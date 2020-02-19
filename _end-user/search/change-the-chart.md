@@ -1,6 +1,6 @@
 ---
 title: [Change a chart]
-last_updated: 11/15/2019
+last_updated: 2/13/2020
 summary: "You can adjust all aspects of ThoughtSpot charts: color, legends, axis, number format, and many more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -35,9 +35,9 @@ Through this menu, you can perform a number of customizations:
    * Changing the axis minimum and maximum values
    * Changing number formatting on the axis.
 
-   See [Change the options on an axis]({{ site.baseurl }}/end-user/search/chart-axes-options.html)
+   See [Change the options on an axis]({{ site.baseurl }}/end-user/search/chart-axes-options.html).
 
-4. Color configuration
+4. [Color configuration]({{ site.baseurl }}/end-user/search/change-chart-colors.html)
 
 5. Tables
    * Column renaming for chart and pivot tables
