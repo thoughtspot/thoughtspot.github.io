@@ -1,7 +1,7 @@
 ---
 title: [Best practices for Embrace with Snowflake]
 last_updated: 01/15/2020
-summary: "You can connect to Snowflake using ThoughtSpot Embrace, and to start searching your data. This article contains helpful pointers on data modeling."
+summary: "You can connect to Snowflake using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

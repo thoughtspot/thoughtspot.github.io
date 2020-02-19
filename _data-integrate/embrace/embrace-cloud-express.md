@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 With Cloud Express, you can easily connect your production data in an existing cloud data warehouse to ThoughtSpot using ThoughtSpot Embrace.  
 
-Cloud Express benefits:
+## Benefits
 - Easy to sign up
 - Up and running in 5 minutes
 - Zero ThoughtSpot software cost
@@ -16,7 +16,7 @@ Cloud Express benefits:
 - No or minimal data modeling required
 - Successful search-driven insights in 45 minutes from launch
 
-## Features
+## Limitations
 
 <table width="100%" border="0">
   <tbody>
@@ -89,7 +89,7 @@ To deploy Cloud Express, do the following:
 
 2. Click the link in the email to go to the [AWS marketplace](https://aws.amazon.com/marketplace){:target="_blank"}.
 
-3. Search for ThoughtSpot in AWS marketplace
+3. Search for ThoughtSpot in the AWS marketplace.
 
 4. In the search results, click the free trial for Cloud Express.
 
@@ -137,4 +137,8 @@ To connect to your data warehouse, do the following:
 
    When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
 
-3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.  
+3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.
+
+## Related information
+
+- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html) 

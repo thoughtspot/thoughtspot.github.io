@@ -1,12 +1,12 @@
 ---
 title: [Snowflake Partner Connect]
-last_updated: 2/21/2019
+last_updated: 2/19/2020
 toc: true
-summary: "Snowflake Partner Connect allows you to try out using ThoughtSpot Embrace to connect ThoughtSpot to Snowflake for free."
+summary: "With Snowflake Partner Connect you get a free trial of ThoughtSpot that allows you to try out ThoughtSpot Embrace to connect to Snowflake."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-With Snowflake Partner Connect, you can quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
+Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
 
 Snowflake Partner Connect benefits:
 - Easy to sign up
@@ -21,7 +21,7 @@ Snowflake Partner Connect benefits:
 - A Snowflake account
 
   If you don't have an account, you can sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
-- Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html).  
+- Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html).  
 
 ## Sign up for Partner Connect
 
@@ -37,11 +37,11 @@ To sign up for Partner Connect, do the following:
 4. Click **Connect**.
     A ThoughtSpot account is created for you and an email titled _Activate Your ThoughtSpot Trial_ is sent to the email address associated with your Snowflake account. This email contains activation instructions.
 
-5. Click **Activate**. Your browser will redirect to [try.thoughtspot.com](https://try.thoughtspot.com/){:target="_blank"}.
+5. Click **Activate**. Your browser redirects to [try.thoughtspot.com](https://try.thoughtspot.com/){:target="_blank"}.
 
-   If you choose **Activate Later**, you can navigate to try.thoughtspot.com by clicking **Start Trial Now** in the email.  
+   If you choose **Activate Later**, you can open the email and click **Start Trial Now** to navigate to try.thoughtspot.com.  
 
-6. On _try.thoughtspot.com_, do the following:
+6. At try.thoughtspot.com, do the following:
    - For **Username**, enter the email address associated with your Snowflake account.
    - Enter your **Company Name**.
    - Create a **Password**.
@@ -55,11 +55,12 @@ To sign up for Partner Connect, do the following:
 
 1. From the ThoughtSpot home page, a _Connect to Snowflake_ guided tutorial appears at the bottom-right of the page. You can play the video, which shows you the entire workflow of using Embrace to connect to Snowflake.
 
-2. Click **Next**, to be guided, step-by-step, through the process of connecting ThoughtSpot to Snowflake, selecting and searching a data source, changing a chart configuration and more.
+2. Click **Next**, to be guided, step-by-step, through the process of connecting ThoughtSpot to Snowflake, selecting and searching a data source, changing a chart configuration, and more.
 
 3. Once you finish the tutorials, you are ready to try out your own searches, chart configurations, pinboard filters, and more.
 
 ## Related information
 
+- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Modify a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html)
