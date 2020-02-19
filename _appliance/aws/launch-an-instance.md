@@ -157,9 +157,11 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
      ![]({{ site.baseurl }}/images/launch_instance.png "Launch an instance")
 
-4. Click the **My AMIs** tab and search **ThoughtSpot** to find the ThoughtSpot AMI.
+4. In the **My AMIs** tab under **1. Choose AMI**, search **ThoughtSpot** to find the ThoughtSpot AMI.
 
-5. Click **Select**.
+5. Click **Select**. Ensure that you select the ThoughtSpot AMI listed [above](#ec2-setup), which you entered earlier in this process.
+
+    ![Select the ThoughtSpot AMI]({{ site.baseurl }}/images/aws-choose-ami.png "Select the ThoughtSpot AMI")
 
 5. On the **Choose an Instance Type** page, select a ThoughtSpot-supported instance type.
    (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).)
@@ -173,6 +175,27 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 8. Click **Next: Add Storage**.
    Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).
+
+   ![Add storage volumes]({{ site.baseurl }}/images/aws-add-storage.png "Add storage volumes")
+
+   <table>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Click <strong>Add new volume</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Specify the type of storage, either EBS or S3.</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Specify the size of the volume.</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Ensure that you leave <strong>Delete on termination</strong> unchecked, to prevent potential loss of data if the VM is accidentally terminated.</td>
+    </tr>
+   </table>
 
 9. When you are done modifying the storage size, click **Next: Add Tags**.
 
