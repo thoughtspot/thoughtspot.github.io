@@ -1,13 +1,11 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 1/9/2019
+last_updated: 2/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing the ThoughtSpot instance. This section is an
-overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
-vSphere Hypervisor (ESXi) 6.5 environment.
+This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot in VMware
 
@@ -87,4 +85,4 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by filing a support ticket, email or phone.
+site.baseurl }}/appliance/contact.html) by email, phone, or by filing a support ticket.
