@@ -1,15 +1,12 @@
 ---
 title: [Overview]
 keywords: setup,cluster,appliance,aws,vmware,ec2
-last_updated: tbd
+last_updated: 2/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing ThoughtSpot. You can install a ThoughtSpot cluster
-on a hardware appliance, cloud service, or VMware appliance. Your ThoughtSpot
-installation cannot mix node types, your installation must be homogenous, so,
-for example either hardware or VMware nodes. You can, however, have an AWS cluster for
-development and use an appliance for production.
+You can install a ThoughtSpot cluster
+on a hardware appliance, cloud service, or VMware appliance. All ThoughtSpot nodes need to be on the same platform and same subnet with no connectivity blocked between any two nodes. You can have multiple clusters on multiple platforms, but you cannot host one cluster on multiple platforms.
 
 This guide instructs you how to prepare each of the following:
 
