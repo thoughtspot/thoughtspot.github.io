@@ -2,13 +2,11 @@
 title: [VMware configuration overview]
 
 
-last_updated: tbd
+last_updated: 2/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing the ThoughtSpot instance. This section is an
-overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
-vSphere Hypervisor (ESXi) 6.5 environment.
+This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot on VMware
 
