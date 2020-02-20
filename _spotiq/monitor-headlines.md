@@ -33,9 +33,9 @@ To stop monitoring a Headline, follow these steps:
 ![Unfollow a monitored Headline]({{ site.baseurl }}/images/unfollow-headline.gif "Unfollow a monitored Headline")
 
 {: id="headline-rename"}
-## Rename monitored Headline
+## Rename monitored Headlines
 
-To rename a followed Headlin, follow these steps:
+To rename a followed Headline, follow these steps:
 
 1. Click the **SpotIQ** tab.
 2. Click **Follow**.
