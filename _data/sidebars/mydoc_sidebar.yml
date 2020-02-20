@@ -109,7 +109,7 @@ entries:
       - levelThreeTitle: Use keywords in search
         output: web,ugBk
         levelThreeItems:
-        - title: Overview of keyword searchess
+        - title: Overview of keyword searches
           url: /complex-search/about-keyword-searches.html
           output: web,ugBk
         - title: Time series analysis
