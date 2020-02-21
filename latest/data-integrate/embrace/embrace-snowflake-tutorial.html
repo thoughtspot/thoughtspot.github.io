@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface. "> -->
+<!-- <meta name="description" content="Explore this tutorial to learn how to model your data after connecting to your Snowflake database."> -->
 <meta name="keywords" content=",  ">
-<title>Load CSV files with the UI | ThoughtSpot</title>
+<title>Snowflake Partner Connect Tutorial | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Load CSV files with the UI”] | thoughtspot.github.io</title>
+<title>[“Snowflake Partner Connect Tutorial”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Load CSV files with the UI”]" />
+<meta property="og:title" content="[“Snowflake Partner Connect Tutorial”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table." />
-<meta property="og:description" content="Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table." />
-<link rel="canonical" href="https://docs.thoughtspot.com/latest/admin/loading/load-from-web-browser.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/loading/load-from-web-browser.html" />
+<meta name="description" content="If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away." />
+<meta property="og:description" content="If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away." />
+<link rel="canonical" href="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-21T10:22:27-08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Load CSV files with the UI”]" />
+<meta property="twitter:title" content="[“Snowflake Partner Connect Tutorial”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Load CSV files with the UI”]","dateModified":"2020-02-21T10:22:27-08:00","url":"https://docs.thoughtspot.com/latest/admin/loading/load-from-web-browser.html","datePublished":"2020-02-21T10:22:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/load-from-web-browser.html"},"description":"Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically. Any user who belongs to a group that has the privilege Has administration privileges or Can upload user data can upload their own data from the browser. Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-02-21T10:22:27-08:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-02-21T10:22:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -327,13 +327,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /admin/loading/load-from-web-browser.html.</li>
+         <li class="small-sidebar-link">Current page URL is /data-integrate/embrace/embrace-snowflake-tutorial.html.</li>
          <li class="small-sidebar-link">Current version is 6.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is admin.</li>
-           <li class="small-sidebar-link">url_chunks[2] is loading.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is load-from-web-browser.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is embrace.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is embrace-snowflake-tutorial.html.</li>
  -->
 
        
@@ -353,8 +353,8 @@ var ss360Config = {
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.0/admin/loading/load-from-web-browser.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/6.0/admin/loading/load-from-web-browser.html</li>
+<li class="small-sidebar-link">newURL is /6.0/data-integrate/embrace/embrace-snowflake-tutorial.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html</li>
  -->
 
     <!-- End add link to latest version
@@ -1507,7 +1507,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/latest/admin/loading/load-from-web-browser.html">Load CSV files with the UI</a></li>
+                          <li><a href="/latest/admin/loading/load-from-web-browser.html">Load CSV files with the UI</a></li>
                       
                    
                 
@@ -3564,7 +3564,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Load CSV files with the UI</h1>
+   <h1 class="post-title-main">Snowflake Partner Connect Tutorial</h1>
 </div>
 
 
@@ -3572,7 +3572,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface. </div>
+    <div class="summary">Explore this tutorial to learn how to model your data after connecting to your Snowflake database.</div>
    
 
     
@@ -3609,164 +3609,61 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    1 minute
   
 </span>
  -->
 
     
 
-  <p>Loading data through the Web browser is recommended for smaller tables (under 50MB) with simple relationships between them. This method is recommended for small, one time data loads. Using this method, the data schema is created for you automatically.</p>
+  <p>If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.</p>
 
-<p>Any user who belongs to a group that has the privilege <strong>Has administration privileges</strong> or <strong>Can upload user data</strong> can upload their own data from the browser.</p>
+<h2 id="joining-tables-in-a-snowflake-connection">Joining tables in a Snowflake connection</h2>
 
-<p>Your data should be in a CSV (comma separated values) before you load it. A CSV file is a text file made up of data fields separated by a delimiter and optionally enclosed with an enclosing character. If your data contains multiple tables, you can have a separate CSV for each table.</p>
+<p>To join tables in a Snowflake connection, do the following:</p>
 
-<h2 id="formatting-the-csv">Formatting the CSV</h2>
+<ol>
+  <li>
+    <p>Click <strong>Data</strong> in the top navigation bar.</p>
+  </li>
+  <li>
+    <p>Click the <strong>Connections</strong> tab at the top of the page.</p>
+  </li>
+  <li>
+    <p>Click the name of your Snowflake connection.</p>
 
-<p>Your ETL (extract, transform, load) process will typically generate CSV files. You can also create a CSV file from a Microsoft Excel spreadsheet by opening the spreadsheet in Excel, choosing <strong>Save As</strong> and selecting CSV.</p>
+    <p><img src="/latest/images/select-connection.png" alt="" title="select Connection" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Edit connection</strong> at the upper-right-hand side of the page.</p>
 
-<p>A CSV file contains a delimiter that marks the separation between fields in the data. The delimiter is usually comma, but it can be any character.
-The file also contains fields optionally enclosed with double quotes. Use these guidelines when creating the CSV file:</p>
+    <p><img src="/latest/images/snowflake-editconnection.png" alt="Edit connection" title="Edit connection" /></p>
+  </li>
+  <li>
+    <p>On the Choose connection type page, change the connection name or description (if needed), and then click <strong>Continue</strong>.</p>
+  </li>
+  <li>
+    <p>On the Snowflake connection details page, make any changes needed, and then click <strong>Continue</strong>.</p>
+  </li>
+  <li>
+    <p>TBD . . .</p>
+  </li>
+</ol>
+
+<h2 id="related-information">Related information</h2>
 
 <ul>
-  <li>If the CSV contains column headers, they must match the column names in the database exactly.</li>
-  <li>Often a <code class="language-plaintext highlighter-rouge">|</code> (pipe) or tab is used as the delimiter, because it may be less likely to occur within the data values.</li>
-  <li>When a field contains a double quote, it must be escaped with the character specified in the escape character argument in <code class="language-plaintext highlighter-rouge">tsload</code>.</li>
-  <li>When a field contains the delimiter, the field must be enclosed in double quotes.</li>
+  <li><a href="/latest/data-integrate/embrace/embrace-intro.html">Embrace overview</a></li>
+  <li><a href="/latest/data-integrate/embrace/embrace-snowflake-add.html">Add a Snowflake connection</a></li>
+  <li><a href="/latest/data-integrate/embrace/embrace-snowflake-modify.html">Modify a Snowflake connection</a></li>
 </ul>
-
-<p>ThoughtSpot supports a wide range of date and timestamp formats (See https://docs.thoughtspot.com/6.0/reference/date-formats-for-loading.html#) in the CSV file. Blank values in user uploaded CSV files are interpreted as NULL values. These include the values (case insensitive):</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">NULL</code></li>
-  <li><code class="language-plaintext highlighter-rouge">\N</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NA</code></li>
-  <li><code class="language-plaintext highlighter-rouge">N/A</code></li>
-  <li>[space]</li>
-</ul>
-
-<p>If you are appending data to an existing schema or table, columns in the CSV file must be in the same order as defined in the target table.</p>
-
-<p>If you are loading a fact table that joins to dimension tables, you must load the fact table first, and then the dimension tables. The joining key must be a single column of unique values in the dimension table. <code class="language-plaintext highlighter-rouge">NULL</code> values in the fact table cannot be joined.</p>
-
-<h2 id="create-a-csv-file">Create a CSV file</h2>
-
-<p>The first step in loading data is to obtain or create one or more CSV files that contain the data to be loaded into ThoughtSpot.
-CSV is a common format for transferring data between databases. ThoughtSpot requires this format.</p>
-
-<p>Most applications such as Microsoft Excel or Google Sheets can output CSV formatted files. If your source is an Excel spreadsheet or Google Sheet:</p>
-
-<ol>
-  <li>Save, export, or download the file in CSV format.
-The exact procedure you use will depend on the source application.</li>
-  <li>
-    <p>Review the file’s format before uploading it to ThoughtSpot.</p>
-
-    <p>Your source data may be in another database. If this is the case, your company’s ETL (extract, transform, load) process will typically generate CSV files. If your source is another database:</p>
-  </li>
-  <li>Connect to the source database.</li>
-  <li>
-    <p>Extract each table you wish to import into ThoughtSpot as a CSV file.</p>
-
-    <p>The column delimiter should be a <code class="language-plaintext highlighter-rouge">,</code> (comma), <code class="language-plaintext highlighter-rouge">|</code> (pipe), or tab.</p>
-  </li>
-</ol>
-
-<p>For general information about CSV files and the rules for creating them, see the Comma-separated_values on Wikipedia (http://en.wikipedia.org/wiki/Comma-separated_values).</p>
-
-<h2 id="load-the-csv-file">Load the CSV File</h2>
-
-<p>Any user who belongs to a group that has the privilege <strong>Has administration privileges</strong> or <strong>Can upload user data</strong> can upload their own data from the browser. To load the CSV or Excel file into ThoughtSpot:</p>
-
-<ol>
-  <li>
-    <p>Log in to ThoughtSpot from a browser.</p>
-  </li>
-  <li>
-    <p>Click <strong>Data</strong>, on the top navigation bar.</p>
-  </li>
-  <li>
-    <p>Click the ellipses icon
-<img src="/latest/images/icon-ellipses.png" alt="more options menu icon" class="inline" />,
-in the upper right corner, and select <strong>Upload Data</strong>.</p>
-
-    <p><img src="/latest/images/new_imported_data.png" alt="" title="Upload data" /></p>
-  </li>
-  <li>Upload the CSV or Excel file by doing one of these options:
-    <ol>
-      <li>Click <strong>Browse your files</strong> and select the file.</li>
-      <li>Drag and drop the file into the drop area.</li>
-    </ol>
-  </li>
-  <li>
-    <p>Answer the question <strong>Are the column names already defined in the file header?</strong></p>
-  </li>
-  <li>
-    <p>Answer the question <strong>Are the fields separated by?</strong> Click <strong>Next</strong>.</p>
-  </li>
-  <li>
-    <p>Click the column header names to change them to more useful names, if you’d like. Click <strong>Next</strong>.</p>
-  </li>
-  <li>
-    <p>Review the automatically generated data types for each column, and make any changes you want.</p>
-
-    <p>There are four data types: Text, Integer, Decimal, and Date.</p>
-  </li>
-  <li>
-    <p>Click <strong>Import</strong>.</p>
-
-    <p>When an upload is complete, the system reports the results and offers you some further actions.</p>
-
-    <p><img src="/latest/images/spotiq-upload.png" alt="" title="Auto analyze" /></p>
-
-    <ul>
-      <li>Click <strong>Link to Existing Data</strong> if you want to link the data you uploaded to the data in another table or worksheet.</li>
-      <li>Click <strong>Search</strong> if you want to begin a new search.</li>
-      <li>Click <strong>Auto analyze</strong> if you want to use the SpotIQ feature to find insights in your new data.</li>
-    </ul>
-  </li>
-</ol>
-
-<h2 id="append-to-an-existing-table">Append to an existing table</h2>
-
-<p>You can append data to your existing system tables through the ThoughtSpot application, even if the tables were initially loaded using <code class="language-plaintext highlighter-rouge">tsload</code>. The CSV file must have the same structure as the table it is being loaded into, including number and type of columns, in the same order as the target table.</p>
-
-<p>To append data into ThoughtSpot:</p>
-
-<ol>
-  <li>Log in to ThoughtSpot from a browser.</li>
-  <li>
-    <p>Click <strong>Data</strong> on the top navigation bar.</p>
-
-    <p><img src="/latest/images/data_icon.png" alt="" title="Data" /></p>
-  </li>
-  <li>Click the name of the table you would like to append data to.</li>
-  <li>
-    <p>Click the <strong>Load Data</strong> button.</p>
-
-    <p><img src="/latest/images/load_data_icon_2.png" alt="" title="Load data" /></p>
-  </li>
-  <li>Upload the CSV or Excel file by doing one of these options:
-    <ul>
-      <li>Click <strong>Browse your files</strong> and select the file.</li>
-      <li>Drag and drop the file into the drop area.</li>
-    </ul>
-  </li>
-  <li>Answer the question <strong>Are the column names already defined in the file header?</strong>.</li>
-  <li>For the question <strong>Do you want to append to the existing data or overwrite it?</strong>, select <strong>Append</strong>.</li>
-  <li>Answer the question <strong>Are the fields separated by?</strong>, and click <strong>Next</strong>.</li>
-  <li>Click <strong>Upload</strong>.</li>
-  <li>Click <strong>Link to existing data</strong> if you want to link the data you uploaded to the data in another table or worksheet. Or click <strong>Ask a question</strong> if you want to begin a new search.</li>
-</ol>
-
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.0/_admin/loading/load-from-web-browser.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.0/_data-integrate/embrace/embrace-snowflake-tutorial.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -3788,7 +3685,7 @@ in the upper right corner, and select <strong>Upload Data</strong>.</p>
       <div class="col-lg-12 footer">
         Generated: Feb 21, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 2/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
