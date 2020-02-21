@@ -1504,9 +1504,9 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-snowflake-reference.html
         output: web,embraceGd
-      - title: Snowflake Partner Connect
-        url: /data-integrate/embrace/embrace-snowflake-partner.html
-        output: web,embraceGd
+#      - title: Snowflake Partner Connect
+#        url: /data-integrate/embrace/embrace-snowflake-partner.html
+#        output: web,embraceGd
     - levelTwoTitle: Redshift
       output: web,embraceGd
       levelTwoItems:
@@ -1546,9 +1546,9 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-synapse-reference.html
         output: web,embraceGd
-    - title: Cloud Express for Embrace
-      url: /data-integrate/embrace/embrace-cloud-express.html
-      output: web,embraceGd
+#    - title: Cloud Express for Embrace
+#      url: /data-integrate/embrace/embrace-cloud-express.html
+#      output: web,embraceGd
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
