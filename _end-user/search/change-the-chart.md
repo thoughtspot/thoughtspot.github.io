@@ -20,9 +20,9 @@ You can edit some of the elements of the chart directly, by clicking on them. Fo
 Through this menu, you can perform a number of customizations:
 
 1. Editable 'drag and drop' chips
-   * 'Not Visualized' section
+   * [Make changes to the 'Not Visualized' section]({{ site.baseurl }}/end-user/search/show-data-labels.html#not-visualized)
 
-2. Number formatting for all data labels
+2. [Number formatting for all data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html#labels-one)
    * Category (Number, Percentage, Currency)
    * Units (K, M, B)
    * Decimals

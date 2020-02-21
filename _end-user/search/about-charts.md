@@ -1,6 +1,6 @@
 ---
 title: [Understand charts]
-last_updated: tbd
+last_updated: 2/20/2020
 summary: "Charts display your search answer in a visual way."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -84,7 +84,7 @@ You can have multiple measures on the y-axis of many charts, which is a great ad
 
 Example of multiple measures on the y-axis of a stacked column chart.
 
-The folloing charts support multiple measures on the y-axis:
+The following charts support multiple measures on the y-axis:
 * Column
 * Stacked Column
 * Bar
@@ -96,4 +96,4 @@ The folloing charts support multiple measures on the y-axis:
 * Line Column
 * Line Stacked Column
 
-To learn more, see [Stack multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/show-data-labels.html#stack-multiple-measures-on-the-y-axis).
+To learn more, see [Stack multiple columns on the x and y axes]({{ site.baseurl }}/end-user/search/show-data-labels.html#not-visualized).

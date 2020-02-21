@@ -1,7 +1,7 @@
 ---
 title: [Additional chart options]
 
-last_updated: tbd
+last_updated: 2/20/2020
 summary: "On charts, you can configure data labels, grid lines, regression lines, legends, values for x or y axis, and lock or unlock."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -55,6 +55,8 @@ You can show detail labels for [every measure](#labels-all) in your chart, or co
 
 For some charts, like line charts, you can show data markers. To show data markers:
 
+![Show data markers]({{ site.baseurl }}/images/chart-config-data-markers.gif "Show data markers")
+
 1. While viewing your search or answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} on the top right.
 
 2. Click **Settings** at the bottom of the **Customize** menu.
@@ -92,9 +94,10 @@ Charts with X and Y axes can display gridlines. To display them:
 
      ![Select x- or y-axis gridlines]({{ site.baseurl }}/images/chartconfig-gridlines.png "Select x- or y-axis gridlines")
 
-## Configure columns for X and Y axis
+{: id="not-visualized"}
+## Stack multiple columns on the X and Y axes
 
-You can specify which fields to show on the X axis and Y axis of a chart. For example, when you first run a search, some measures or attributes may not be visualized. You can add them to the chart.
+You can specify which fields to show on the X axis and Y axis of a chart. When you first run a search, some measures or attributes may not be visualized. You can add them to the other measures or attributes on the axes of a chart by dragging these columns from the **not visualized** section to the correct axis. You can also drop attributes and measures to the **not visualized** section. This removes them from the visualization, but not from your search.
 
 1. Click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} on the top right.
 
@@ -102,27 +105,9 @@ You can specify which fields to show on the X axis and Y axis of a chart. For ex
 
    ![Configure x and y axis]({{ site.baseurl }}/images/chart-config-not-visualized.gif "Configure x and y axis")
 
-## Stack multiple measures on the y-axis
+In some cases, the y-axis labels appear on either side of the chart (left and right) instead of stacked on the same side, depending on the parameters of the analysis. Refer to  [change the position of the axis]({{ site.baseurl }}/end-user/search/chart-axes-options.html#position) and [change the grouping]({{ site.baseurl }}/end-user/search/chart-axes-options.html#grouping).
 
-You can have multiple measures on the y-axis of most (but not all) chart types, as follows:
-
-1. Create a chart.
-2. Click **Edit chart configuration** on the right.
-3. Click into the **Y-Axis** field and start typing the name of a measure used in the search.
-4. Select the measure you want.
-
-    The chart updates to show multiple measures on the Y-Axis.
-
-    ![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis-annotated.png "Stacked column chart example: "Show multiple measures on Y-Axis")
-
-    * If your original chart had a legend, you will get a message stating _"When
-    there are multiple columns on the y-axis, you cannot add a legend.
-    `<Measure>` is already in use."_ If so, remove the legend and the chart will
-    update to show multiple measures on the y-axis.
-
-    * In some cases, the y-axis measures will show one on either side of the chart (left and right) instead of stacked on the same side, depending on the parameters of the analysis.
-
-    * For a list of chart types to which this applies, see [Charts with multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis).
+For a list of chart types to which this applies, see [Charts with multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis).
 
 ## Add columns to a chart legend
 
