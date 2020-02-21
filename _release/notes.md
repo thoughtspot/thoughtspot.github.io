@@ -8,10 +8,11 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.3.2 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3.2 CU3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
 * [Supported Upgrade Paths](#upgrade-paths)
+* [5.3.2 CU3 Fixed Issues](#532-cu3-fixed)
 * [5.3.2 Fixed Issues](#532-fixed)
 * [5.3.1 New Features](#531-new)
 * [5.3.1 Fixed Issues](#531-fixed)
@@ -26,16 +27,28 @@ fixed issues from the previous releases, and any known issues.
 If you are running one of the following versions, you can upgrade to the 5.3.2 release
 directly:
 
-* 5.3 to 5.3.2
-* 5.2.x to 5.3.2
-* 5.1.x to 5.3.2
+* 5.3 to 5.3.2 CU3
+* 5.2.x to 5.3.2 CU3
+* 5.1.x to 5.3.2 CU3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 release.
+First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 CU3 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
+
+{: id="532-cu3-fixed"}
+## 5.3.2 CU3 Fixed Issues
+
+The following issues are fixed in the 5.3.2 CU3 release:
+
+- Exported PDF, CSV, and XLSX files display caption tags.
+- Administrators are not able to edit a worksheet.
+- A legend in a chart is not displayed correctly when the _monthly_ attribute is used in a search.
+- After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.
+- Users cannot sign in to a ThoughtSpot instance through SSO.
+- Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.
 
 {: id="532-fixed"}
 ## 5.3.2 Fixed Issues
