@@ -13,6 +13,8 @@ fixed issues from the previous releases, and any known issues.
 
 * [Supported Upgrade Paths](#upgrade-paths)
 * [5.3.2 CU3 Fixed Issues](#532-cu3-fixed)
+* [5.3.2 CU2 Fixed Issues](#532-cu2-fixed)
+* [5.3.2 CU1 Fixed Issues](#532-cu1-fixed)
 * [5.3.2 Fixed Issues](#532-fixed)
 * [5.3.1 New Features](#531-new)
 * [5.3.1 Fixed Issues](#531-fixed)
@@ -49,6 +51,20 @@ The following issues are fixed in the 5.3.2 CU3 release:
 - After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.
 - Users cannot sign in to a ThoughtSpot instance through SSO.
 - Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.
+
+{: id="532-cu2-fixed"}
+## 5.3.2 CU2 Fixed Issues
+
+The following issues are fixed in the 5.3.2 CU2 release:
+
+- Visualizations that worked in the past, display an error message.
+
+{: id="532-cu1-fixed"}
+## 5.3.2 CU1 Fixed Issues
+
+The following issues are fixed in the 5.3.2 CU1 release:
+
+- Rows that don't exist in TQL appear when filtering in the ThoughtSpot UI.
 
 {: id="532-fixed"}
 ## 5.3.2 Fixed Issues
