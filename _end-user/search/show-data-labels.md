@@ -1,7 +1,7 @@
 ---
 title: [Additional chart options]
 
-last_updated: 2/20/2020
+last_updated: 2/21/2020
 summary: "On charts, you can configure data labels, grid lines, regression lines, legends, values for x or y axis, and lock or unlock."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -97,7 +97,13 @@ Charts with X and Y axes can display gridlines. To display them:
 {: id="not-visualized"}
 ## Stack multiple columns on the X and Y axes
 
-You can specify which fields to show on the X axis and Y axis of a chart. When you first run a search, some measures or attributes may not be visualized. You can add them to the other measures or attributes on the axes of a chart by dragging these columns from the **not visualized** section to the correct axis. You can also drop attributes and measures to the **not visualized** section. This removes them from the visualization, but not from your search.
+You can specify which fields to show on the X axis and Y axis of a chart. When you first run a search, some measures or attributes may not be visualized. You can add them to the other measures or attributes on the axes of a chart by dragging these columns from the **not visualized** section to the correct axis.
+
+You can only add attributes to the X axis, and measures to the Y axis. If you cannot add a column to a specific axis, the option to do so does not appear to you when you attempt to drag and drop the column. Attributes appear blue in the search bar and in the **Customize** menu, while measures appear green.
+
+{% include note.html content="The X and Y axes on a bar chart work in a different way than other charts. In bar charts, attributes are on the Y axis, and measures are on the X axis." %}
+
+You can also drop attributes and measures to the **not visualized** section. This removes them from the visualization, but not from your search.
 
 1. Click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} on the top right.
 
@@ -109,33 +115,26 @@ In some cases, the y-axis labels appear on either side of the chart (left and ri
 
 For a list of chart types to which this applies, see [Charts with multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis).
 
-## Add columns to a chart legend
+## Hide and show values
 
-You can add to or edit the legend from the chart configuration panel.
+Clicking on a legend item hides it from the chart, but does not delete it from your search. The legend appears when you have more than one column on an axis, or when you **slice with color**.
 
-1. Click **Edit chart configuration** on the right.
+![Click a sliced value to hide or show it]({{ site.baseurl }}/images/chart-config-hide-sliced-value.gif "Click a sliced value to hide or show it")
 
-2. Click into the legend field to add one or more columns used in the search.
+Refer to [hide and show values]({{ site.baseurl }}/end-user/search/hide-and-show-values.html).
 
-    ![]({{ site.baseurl }}/images/legend_add_fields.png "Add fields to a legend")
+## Disable auto-selection of chart types
 
-    Your changes are saved automatically.
+You can prevent ThoughtSpot from recommending other chart
+options or configurations. For example, if you want to view an Answer as a line chart, you can lock that
+display and stop ThoughtSpot from recommending an alternative visualization, such as a funnel or pie chart. A lock persists as you make changes to the columns in your Answer, and persists if you save the Answer and come back to it later.
 
-3. View the updated chart.
+To disable auto-selection of chart types:
 
-   ![]({{ site.baseurl }}/images/legend_on_chart.png "Legend on chart")
+1. Pick the chart type you want to use for your visualization.
 
+2. Click the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png) at the top right.
 
-## Lock the chart
+3. In the bottom right corner, turn off **auto-select my chart**.
 
-You can use the lock icon to prevent ThoughtSpot from recommending other chart
-options or configurations. For example, you want a line chart, you can lock that
-display and stop TS from recommending an alternative visualization such as a
-funnel/pie/column and so forth. A lock applies for all subsequent answers that
-have the same column set.
-
-![]({{ site.baseurl }}/images/chart_lock.png "Lock chart")
-
-## Related information
-
-[Change chart colors]({{ site.baseurl }}/end-user/search/change-chart-colors.html)  
+    ![Turn off auto-selection of chart type]({{ site.baseurl }}/images/chart-config-autoselect.png "Turn off auto-selection of chart type")

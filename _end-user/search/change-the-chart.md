@@ -1,6 +1,6 @@
 ---
-title: [Change a chart]
-last_updated: 2/13/2020
+title: [Changing charts]
+last_updated: 2/21/2020
 summary: "You can adjust all aspects of ThoughtSpot charts: color, legends, axis, number format, and many more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

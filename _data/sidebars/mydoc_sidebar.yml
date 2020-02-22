@@ -229,10 +229,10 @@ entries:
         - title: Candlestick Charts
           url: /end-user/search/candlestick-charts.html
           output: web,ugBk
-      - levelThreeTitle: Changing a chart
+      - levelThreeTitle: Changing charts
         output: web,ugBk
         levelThreeItems:
-        - title: Change the chart
+        - title: Changing charts
           url: /end-user/search/change-the-chart.html
           output: web,ugBk
         # new with ChartConfig changes
