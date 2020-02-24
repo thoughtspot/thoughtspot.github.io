@@ -1,13 +1,13 @@
 ---
 title: [Change the footer text]
 keywords: tbd
-last_updated: tbd
+last_updated: 2/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The ThoughtSpot footer appears by default in the ThoughtSpot application. It
 also appears with an embed application that encompasses an individual pinboard
-or a full application. In embed applications that are have a single
+or a full application. In embed applications that have a single
 visualization, you can ask your ThoughtSpot support engineer to disable the
 footer.
 
@@ -27,5 +27,5 @@ footer text:
     Your new text message will automatically be displayed in the footer.
 
      ![Footer text display]({{ site.baseurl }}/images/style-newfootertext.png "Footer text display")
-     
+
 3. Click the **Reset** button on the upper right hand side of the section if you would like to bring back the default footer text.
