@@ -7,11 +7,15 @@ summary: "Make sure you understand the performance considerations in your instal
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot configuration and licensing varies by memory availability. Other considerations also impact the performance of your solution. Because some
-solutions perform better than others, think about the following issues before implementation.
+ThoughtSpot configuration and licensing varies by memory availability. Other considerations also impact the performance of your solution. Because some solutions perform better than others, think about the following issues before implementation.
 
-Each node in a ThoughtSpot cluster performs ideally when it has less than 250GB of data and fewer than 0.25 billion total rows of data. For more complex schemas, we recommend even fewer rows of data per node for optimal performance. To reduce the total amount of data and rows of data, you can
-limit the data range to the relevant years or months, or combine long and narrow tables into wider tables when possible.
+Nodes that have 250GB of memory capacity perform optimally with less than 250GB of data, and less than 250 million rows of data in each node in a ThoughtSpot cluster. Smaller nodes, like nodes with 200GB memory capacity, serve proportionally smaller loads.
+
+To optimise performance for more complex schemas, we recommend fewer rows of data for each node. 
+To reduce the total amount of data and rows of data, we recommend the following approaches:
+
+- Limit the data range to the relevant years or months.
+- Combine long and narrow tables into wider tables whenever possible.
 
 ## Data Boundaries
 
