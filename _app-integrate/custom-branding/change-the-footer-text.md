@@ -1,13 +1,13 @@
 ---
 title: [Change the footer text]
 summary: You can customize ThoughtSpot's footer test to add a company-specific message.
-last_updated: 2/4/2020
+last_updated: 2/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The ThoughtSpot footer appears by default in the ThoughtSpot application. It
 also appears with an embed application that encompasses an individual pinboard
-or a full application. In embed applications that are have a single
+or a full application. In embed applications that have a single
 visualization, you can ask your ThoughtSpot support engineer to disable the
 footer.
 
