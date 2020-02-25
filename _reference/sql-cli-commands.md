@@ -1,7 +1,7 @@
 ---
 title: [TQL reference]
 summary: Learn the TQL commands.
-last_updated: 2/10/2020
+last_updated: 2/25/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -588,7 +588,7 @@ ThoughtSpot supports a simplified list of data types:
                <li>VARCHAR(<em class="ph i">n</em>)</li>
             </ul>
          </td>
-         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 1GB for
+         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 64MB for
             VARCHAR values.
          </td>
       </tr>
