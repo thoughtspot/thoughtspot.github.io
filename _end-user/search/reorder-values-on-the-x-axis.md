@@ -11,7 +11,7 @@ The order in which columns appear on the axis or legend is based on the sequence
 
 This example shows you how to reorder the y-axis columns.
 
-1. While viewing your answer as a chart, click the **chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} near the top right.
+1. While viewing your answer as a chart, click the **chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} near the top right.
 
 2. Under **Y-axis**, drag and drop the column chips into your preferred order.
 

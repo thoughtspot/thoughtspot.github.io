@@ -1,7 +1,7 @@
 ---
 title: [Set the y-axis range]
 
-last_updated: 2/20/2020
+last_updated: 2/25/2020
 summary: "On charts, you can manually configure the y-axis range to be different from the search default. You can have multiple measures on the y-axis of many charts."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -27,8 +27,6 @@ To set the y-axis range:
 
     The chart reorganizes itself to reflect the new y-axis range.
 
-    ![Set the y-axis range]({{ site.baseurl }}/images/chartconfig-minmax.png "Set the y-axis range")
-
     To change the range for **gross profit margin**, click the dropdown menu icon next to the **gross profit margin** axis label.
 
 ![Change the axis range gif]({{ site.baseurl }}/images/chart-config-axis-range.gif "Change the axis range gif")    
@@ -38,7 +36,7 @@ To set the y-axis range:
 
 To set the y-axis range:
 
-1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} on the top right.
+1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
 
 2. Click the **edit** button ![]({{ site.baseurl }}/images/icon-edit-20px.png) that appears when you hover over **y-axis**.
 
@@ -52,8 +50,6 @@ To set the y-axis range:
 
     The chart reorganizes itself to reflect the new y-axis range.
 
-    ![Set the y-axis range]({{ site.baseurl }}/images/chartconfig-minmax.png "Set the y-axis range")
-
 ![Change the axis range gif]({{ site.baseurl }}/images/chart-config-y-axis.gif "Change the axis range gif")
 
 ## Create charts with multiple measures on the y-axis
@@ -61,6 +57,6 @@ To set the y-axis range:
 You can have multiple measures on the y-axis of most (but not all) chart types.
 You can configure this in the **chart configuration** panel, by dragging and dropping measures out of the **not visualized** section. To learn more, see these topics:
 
-* [Stack multiple columns on the X and Y axes]({{ site.baseurl }}/end-user/search/show-data-labels.html#not-visualized)
+* [Customize columns for the X and Y axes]({{ site.baseurl }}/end-user/search/drag-and-drop.html)
 
 * [Charts with multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis)

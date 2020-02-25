@@ -1,6 +1,6 @@
 ---
 title: [Changing charts]
-last_updated: 2/21/2020
+last_updated: 2/25/2020
 summary: "You can adjust all aspects of ThoughtSpot charts: color, legends, axis, number format, and many more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,8 +19,8 @@ You can edit some of the elements of the chart directly, by clicking on them. Fo
 
 Through this menu, you can perform a number of customizations:
 
-1. Editable 'drag and drop' chips
-   * [Make changes to the 'Not Visualized' section]({{ site.baseurl }}/end-user/search/show-data-labels.html#not-visualized)
+1. [Editable 'drag and drop' chips]({{ site.baseurl }}/end-user/search/drag-and-drop.html)
+   * Make changes to the 'Not Visualized' section
 
 2. [Number formatting for all data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html#labels-one)
    * Category (Number, Percentage, Currency)
@@ -39,22 +39,30 @@ Through this menu, you can perform a number of customizations:
 
 4. [Color configuration]({{ site.baseurl }}/end-user/search/change-chart-colors.html)
 
-5. Tables
-   * Column renaming for chart and pivot tables
-   * Wrap or clip options for long text
+5. [Tables]({{ site.baseurl }}/end-user/search/about-tables.html)
+   * [Column renaming for charts, tables, and pivot tables]({{ site.baseurl }}/end-user/search/column-renaming.html)
+   * [Wrap or clip options for long text]({{ site.baseurl }}/end-user/search/about-tables.html#clip-wrap-text)
    * No line limit for headers in wrap mode
 
-Use the configuration options to perform any chart adjustments, such as:
+Use the configuration options to perform any other chart adjustments, such as:
 
 -   **[Reorder labels on the axis or legend]({{ site.baseurl }}/end-user/search/reorder-values-on-the-x-axis.html)**  
-When there are multiple columns on the x- or y-axis or legend of a chart, you can reorder them by using the **Configure Chart** icon.
+When there are multiple columns on the x- or y-axis or legend of a chart, you can change their position in the chart by using the **chart configuration** icon.
 -   **[Set the y-axis range]({{ site.baseurl }}/end-user/search/set-the-y-axis-scale.html)**  
-You can manually set the y-axis range by using the **Edit chart configuration** icon.
+You can manually set the y-axis range by using the **chart configuration** icon.
 -   **[Hide and show values]({{ site.baseurl }}/end-user/search/hide-and-show-values.html)**  
 You can hide and show values on the chart using the legend.
--   **[Change chart colors]({{ site.baseurl }}/end-user/search/change-chart-colors.html)**  
-You can easily change the legend colors in a chart.
--   **[Additional chart options]({{ site.baseurl }}/end-user/search/show-data-labels.html)**  
+-   **[Show data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html)**  
 You can configure charts to show the y-axis data values.
+-   **[Show data markers]({{ site.baseurl }}/end-user/search/show-data-markers.html)**<br>
+You can show data markers for line charts.
+- **[Specify time bucketing]({{ site.baseurl }}/complex-search/change-the-view.html#change-the-date-bucketing-grouping)**<br>
+You can easily change the date bucketing on a chart or table, from *weekly* to *month of quarter*, for example.
+-   **[Add regression lines]({{ site.baseurl }}/end-user/search/regression-line.html)**<br>
+You can add a regression line to your chart.
+-   **[Display gridlines]({{ site.baseurl }}/end-user/search/gridlines.html)**<br>
+You can add X and Y gridlines to your chart.
+-   **[Disable automatic selection of chart type]({{ site.baseurl }}/end-user/search/lock-chart-type.html)**<br>
+You can turn off 'automatically select my chart' if you want a specific chart type to persist throughout a search
 -   **[Zoom into a chart]({{ site.baseurl }}/end-user/search/zoom-into-a-chart.html)**  
 You can zoom into your chart by selecting an area with your mouse.

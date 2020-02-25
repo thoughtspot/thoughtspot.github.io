@@ -1,12 +1,12 @@
 ---
 title: [Hide and show values]
 
-last_updated: 2/21/2020
+last_updated: 2/25/2020
 summary: "You can hide and show values on the chart using the legend."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Clicking on a legend item will hide it from the chart. You can click it again to show it. The legend appears when you have more than one column on an axis, or when you **slice with color**. To hide and show values:
+Clicking on a legend item will hide it from the chart, but does not delete it from your search. You can click the legend item again to show it. The legend appears when you have more than one column on an axis, or when you **slice with color**. To hide and show values:
 
 On the chart, click the legend value you would like to hide. Click the hidden legend value again to show it.
 
