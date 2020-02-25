@@ -18,3 +18,7 @@ You can access ThoughtSpot through SSH at the command prompt, and from a Web bro
 ## Sign in to the ThoughtSpot application
 
 {% include content/login.md %}
+
+## Change password for the shell users
+
+{% include content/change-password.md %}
