@@ -18,7 +18,7 @@ change the view of your answer:
 
     ![Select table or chart]({{ site.baseurl }}/images/changeview-chartortable.png "Select table or chart")
 
-When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
+When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
 ## Sort your search
 
@@ -36,7 +36,9 @@ To sort your search:
 ## Change the date bucketing (grouping)
 
 You can change the date _bucketing_ on tables and charts for columns with date
-values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline} that appears when you hover over a column name on a table.
+values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} that appears when you hover over a column name on a table.
+
+You can specify date bucketing at many granularities, from **detailed** (to the minute or second) to **yearly**, depending on your data. You can also specify bucketing based on the position of a bucket relative to another, larger bucket. For example, you can group data by **month of quarter**, or **week of month**.
 
 ![Choose a date bucket on a table]({{ site.baseurl }}/images/changeview-bucket.png "Choose a date bucket on a table")
 

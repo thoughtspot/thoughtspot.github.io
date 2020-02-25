@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can zoom into your chart by selecting an area with your mouse. To zoom into a chart:
 
-1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-20px.png) on the right.
+1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png) on the right.
 
      ![]({{ site.baseurl }}/images/chartconfig-zoom-customizemenu.png "Edit chart configuration icon")
 

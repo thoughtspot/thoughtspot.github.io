@@ -1,8 +1,6 @@
 ---
 title: [Results that are tables]
-
-
-last_updated: tbd
+last_updated: 2/25/2020
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,6 +37,16 @@ when you pin the table to a pinboard. To resize the column widths:
 1. While viewing your answer as a table, hover over a column border in the column header row.
 2. Click and drag the border to create your preferred column width.
 
+{: id="clip-wrap-text"}
+## Clip or wrap text
+You can clip or wrap long text in a table cell, or on a table header.
+
+When you clip long text, the table cells show only the beginning of the text. The rest appears if you increase the column width.
+
+When you wrap long text, the table shows all the text in its cells by increasing the number of lines in the cells.
+
+![Wrap or clip long text]({{ site.baseurl }}/images/chart-config-text.gif "Wrap or clip long text")
+
 ## Sort columns
 
 You can sort a table by column values by clicking on the column title. If you
@@ -55,7 +63,7 @@ Headlines display summary information of a table result. Headlines contain
 summary information for each column of a table. They appear at the bottom of the
 table in individual boxes.
 
- ![]({{ site.baseurl }}/images/headlines.png "Headlines at the bottom of a table")
+ ![]({{ site.baseurl }}/images/chartconfig-headlines.png "Headlines at the bottom of a table")
 
 ThoughtSpot automatically creates up to 20 headlines for each table. Your
 ThoughtSpot configuration can be changed to accommodate more if needed.
@@ -79,4 +87,4 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
 
  In the following example, the table aggregate is shown as a result of the Average Profit formula `sum ( profit ) / count ( ship mode )` which divides the total profit of each ship mode by the sum total count for that ship mode. Table Aggregate, recalculates that function for the entire table taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes, providing a table aggregate average profit of 181. This a more useful result compared to the Avg headline option which would simply sum the the average profit for all ship modes and divide it by the number of ship modes (3), providing an average of 187.
 
-![]({{ site.baseurl }}/images/headlines_table_agg.png "Table aggregate headline")
+![]({{ site.baseurl }}/images/chartconfig-aggregate-headlines.png "Table aggregate headline")

@@ -61,6 +61,6 @@ use size to measure data, and instead requires an additional attribute.
 
  ![]({{ site.baseurl }}/images/new_heatmap_look.png "Heatmap chart example")
 
-The value of each cell depends on the measure you choose under **Edit char configuration**.
+The value of each cell depends on the measure you choose under **Edit chart configuration**.
 
  ![]({{ site.baseurl }}/images/heatmap_value.png "Heatmap value dropdown")

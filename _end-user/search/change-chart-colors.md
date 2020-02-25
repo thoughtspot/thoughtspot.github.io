@@ -21,7 +21,7 @@ if you change the search or chart type.
 
 ## Set colors on a chart
 
-1. While viewing your search or answer as a chart, click the **chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline} to open the chart configuration menu.
+1. While viewing your search or answer as a chart, click the **chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to open the chart configuration menu.
 
     ![Edit chart configuration menu]({{ site.baseurl }}/images/chartconfig-customizemenu.png "Edit chart configuration menu")
 

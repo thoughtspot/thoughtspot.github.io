@@ -1,6 +1,6 @@
 ---
 title: [Understand charts]
-last_updated: tbd
+last_updated: 2/25/2020
 summary: "Charts display your search answer in a visual way."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,13 +19,11 @@ You can choose from a large number of chart types in ThoughtSpot. Each chart typ
 
 To change the chart type of your answer:
 
-1. Click **Change visualization** to get a palette of charts, maps, pivot table, and so on (scroll down to see more.)
+1. Click the **Change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png) to get a palette of chart types you can choose from (scroll down to see more.)
 
-   ![]({{ site.baseurl }}/images/chart_type_icons_change_viz.png "ThoughtSpot chart types")
+   ![Click 'change visualization' to choose a different chart type.]({{ site.baseurl }}/images/chartconfig-choosevisualization.png "Click 'change visualization' to choose a different chart type.")
 
 2. Click a different chart or visualization type.
-
-   ![]({{ site.baseurl }}/images/chart_type_icons.png "ThoughtSpot chart types")
 
 ## Choosing a chart ##
 
@@ -34,7 +32,7 @@ To change the chart type of your answer:
 Hovering over a chart type icon tell you what columns you require before you can use it.
 
 -   **[Column charts]({{ site.baseurl }}/end-user/search/about-column-charts.html)**  
-The column chart is one of ThoughtSpot's simplest, yet most versatile chart type. The column chart is often the chosen default chart type, and displays data as vertical columns.
+The column chart is one of ThoughtSpot's simplest, yet most versatile chart types. The column chart is often the chosen default chart type, and displays data as vertical columns.
 -  **[Stacked columns]({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**
 The stacked column combines the different secondary dimensions into a single column, stacking them. Note that the dimensions retain their relative size and color.
 -   **[Bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html)**  
@@ -42,7 +40,7 @@ The bar chart is nearly identical to the column chart. The primary difference is
 -  **[Stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html#stacked-bar-charts)**
 Just like stacked columns, stacked bars combine the different secondary dimensions into a single stacked bar.
 -   **[Line charts]({{ site.baseurl }}/end-user/search/about-line-charts.html)**  
-Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart type. More often than not the line chart will be chosen as your default chart type.
+Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart types. More often than not the line chart will be chosen as your default chart type.
 -   **[Pie charts]({{ site.baseurl }}/end-user/search/pie-charts.html)**  
 The pie chart is a classic chart type that displays your search in a circle. The pie chart ThoughtSpot shows is in the shape of a doughnut.
 -   **[Area charts]({{ site.baseurl }}/end-user/search/area-charts.html)**  
@@ -78,13 +76,11 @@ Candlestick charts efficiently collapse financial information, such as price mov
 
 ## Charts with multiple measures on the y-axis
 
-You can have multiple measures on the y-axis of many charts, which is a great additional way of presenting information in a chart.
+You can have multiple measures on the y-axis of many charts, which is a great additional way of presenting information in a chart. A stacked column chart displays the measures stacked in the same column, while a column chart displays the measures side by side.
 
-![]({{ site.baseurl }}/images/stacked_column_chart_multi_y_axis.png "Stacked column chart example: "Show multiple measures on Y-Axis")
+![Stacked column chart example: multiple measures on the y axis]({{ site.baseurl }}/images/chartconfig-multiplemeasures.png "Stacked column chart example: multiple measures on the y axis")
 
-Example of multiple measures on the y-axis of a stacked column chart.
-
-The folloing charts support multiple measures on the y-axis:
+The following charts support multiple measures on the y-axis:
 * Column
 * Stacked Column
 * Bar
@@ -96,4 +92,4 @@ The folloing charts support multiple measures on the y-axis:
 * Line Column
 * Line Stacked Column
 
-To learn more, see [Stack multiple measures on the y-axis]({{ site.baseurl }}/end-user/search/show-data-labels.html#stack-multiple-measures-on-the-y-axis).
+To learn more, see [Configure columns for the x and y axes]({{ site.baseurl }}/end-user/search/drag-and-drop.html).

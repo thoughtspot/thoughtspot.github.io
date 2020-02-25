@@ -118,12 +118,13 @@ This release introduces a complete new approach that makes chart configuration m
 <br>
 <script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_v408bchsqf popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
-* <strong>Add drag-and-drop chips</strong> automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
-* <strong>Improve number formatting</strong> for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
+* **[Add drag-and-drop chips]({{ site.baseurl }}/end-user/search/drag-and-drop.html)** automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
+* **[Improve number formatting]({{ site.baseurl}}/end-user/search/show-data-labels.html#labels-one)** for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
 * <strong>Independent control of each measure</strong> in a chart helps you reduce noise by applying labels only where you need it.
-* <strong>Simple time bucketing</strong> lets you change granularity of time series.
-* <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
-* <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
+* **[Simple time bucketing]({{ site.baseurl }}/complex-search/change-the-view.html#change-the-date-bucketing-grouping)** lets you change granularity of time series.
+* **[Intuitive color configuration]({{ site.baseurl }}/end-user/search/change-chart-colors.html)** enables you to quickly change color on the element or in the legend.
+* **[Column renaming]({{ site.baseurl }}/end-user/search/column-renaming.html)** for pivot tables and regular chart tables
+* **[Wrapping and clipping]({{ site.baseurl }}/end-user/search/about-tables.html#clip-wrap-text)** of text in a table.
 
 ### Scriptable Worksheets
 You can now **Export** Worksheets by downloading them to a `*.yaml` file, make changes, and then **Update** the Worksheet from the changed file either to the same cluster, or to a new cluster.
