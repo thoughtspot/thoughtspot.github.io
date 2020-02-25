@@ -252,8 +252,17 @@ entries:
         - title: Change chart colors
           url: /end-user/search/change-chart-colors.html
           output: web,ugBk
-        - title: Additional chart options
+        - title: Show detail labels
           url: /end-user/search/show-data-labels.html
+          output: web,ugBk
+        - title: Show data markers
+          url: /end-user/search/show-data-markers.html
+          output: web,ugBk
+        - title: Add regression lines
+          url: /end-user/search/regression-line.html
+          output: web,ugBk
+        - title: Display gridlines
+          url: /end-user/search/gridlines.html
           output: web,ugBk
         - title: Zoom into a chart
           url: /end-user/search/zoom-into-a-chart.html
