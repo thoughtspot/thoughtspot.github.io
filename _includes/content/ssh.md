@@ -7,4 +7,5 @@ In the following procedure, replace `<hostname_or_IP>` with the hostname or IP a
   ```
   ssh admin@<hostname_or_IP>
   ```
-3. Enter the password for the admin user.
+3. Enter the password for the admin user.<br>
+    ThoughtSpot provides a default password for both the `admin` and `thoughtspot` shell users. ThoughtSpot recommends that you change the passwords for both these users on first login. Follow your company's policies on password security.
