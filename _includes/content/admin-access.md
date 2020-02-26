@@ -37,7 +37,7 @@ the passwords.
 Both the [`admin`](#admin) and [`thoughtspot`](#thoughtspot) user can SSH into the cluster. After
 authenticating, either user can use and and all of the following utilities:
 
-* tscli (See https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html); [`thoughtspot`](#thoughtspot) user cannot use commands that require
+* [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html); [`thoughtspot`](#thoughtspot) user cannot use commands that require
 `sudo` or `root` privileges
-* tsload (See https://docs.thoughtspot.com/6.0/reference/sql-cli-commands.html)
-* [tql]({{ site.baseurl }}/admin/loading/use-data-importer.html)
+* [tsload]({{ site.baseurl }}/admin/loading/use-data-importer.html)
+* [tql]({{ site.baseurl }}/reference/sql-cli-commands.html)
