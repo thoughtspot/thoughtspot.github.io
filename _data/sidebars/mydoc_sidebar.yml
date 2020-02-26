@@ -1168,8 +1168,20 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instAWS
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instAWS
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAWS
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instAWS
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instAWS
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
@@ -1204,6 +1216,18 @@ entries:
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
 #      output: web,appQs,instAzure
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instAzure
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instAzure
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instAzure
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instAzure
 # -- end of PDF for Azure section
 # -- Uncomment out this section ONLY when generating a PDF for GCP
 #  - sectiontitle: GCP Installation
@@ -1236,6 +1260,18 @@ entries:
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
 #      output: web,appQs,instGCP
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instGCP
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instGCP
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instGCP
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instGCP
 # -- end of PDF for GCP section
 # -- Uncomment out this section ONLY when generating a PDF for VMware
 #  - sectiontitle: VMware Installation
@@ -1267,6 +1303,18 @@ entries:
 #      output: web,appQs,instVMware
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
+#      output: web,appQs,instVMware
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instVMware
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instVMware
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instVMware
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instVMware
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
@@ -1312,6 +1360,15 @@ entries:
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
 #      output: web,appQs,instDell
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instDell
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instDell
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instDell
 # -- end of PDF for Dell section
 # -- Uncomment out this section ONLY when generating a PDF for SMC
 #  - sectiontitle: SMC Installation
@@ -1352,6 +1409,15 @@ entries:
 #      output: web,appQs,instSMC
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instSMC
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instSMC
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instSMC
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instSMC
 # -- end of PDF for SMC section
   - sectiontitle: Deploy

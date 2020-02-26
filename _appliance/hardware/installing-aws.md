@@ -1,6 +1,6 @@
 ---
 title: [Installing Amazon Web Services]
-last_updated: [1/8/2020]
+last_updated: [2/26/2020]
 summary: "Learn how to install Amazon Web Services (AWS)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -203,9 +203,8 @@ Follow these steps:
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
+* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

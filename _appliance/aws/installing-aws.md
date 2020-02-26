@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in AWS]
-last_updated: [1/13/2020]
+last_updated: [2/26/2020]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -55,6 +55,5 @@ Use these references for successful installation and administration of ThoughtSp
 * [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
+* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)
