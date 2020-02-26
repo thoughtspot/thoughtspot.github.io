@@ -1009,134 +1009,134 @@ entries:
       url: /admin/mobile/notes-mobile.html
       output: web
   - sectiontitle: Embedding
-    output: web,pdf
+    output: web,apgBk
     sectionitems:
     - title: Introduction to Embedding
       url: /app-integrate/introduction/introduction.html
-      output: web,pdf
+      output: web,apgBk
     - title: Log in to the Linux shell using SSH
       url: /app-integrate/introduction/login-console.html
-      output: web,pdf
+      output: web,apgBk
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
-      output: web,pdf
+      output: web,apgBk
     - title: Use the JavaScript API
       url: /app-integrate/JSAPI/about-JS-API.html
-      output: web,pdf
+      output: web,apgBk
     - levelTwoTitle: SAML
-      output: web,pdf
+      output: web,apgBk
       levelTwoItems:
       - title: About SAML
         url: /app-integrate/SAML/about-SAML-integrations.html
-        output: web,pdf
+        output: web,apgBk
       - title: Configure SAML
         url: /app-integrate/SAML/configure-SAML-with-tscli.html
-        output: web,pdf
+        output: web,apgBk
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
-        output: web,pdf
+        output: web,apgBk
       - title: Configure Active Directory Federated Services
         url: /app-integrate/SAML/integrate-ADFS.html
-        output: web,pdf
+        output: web,apgBk
     - levelTwoTitle: REST API
-      output: web,pdf
+      output: web,apgBk
       levelTwoItems:
       - title: About the REST API
         url: /app-integrate/data-api/about-data-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: Calling the REST API
         url: /app-integrate/data-api/calling-rest-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: REST API pagination
         url: /app-integrate/data-api/response-pagination.html
-        output: web,pdf
+        output: web,apgBk
       - title: Use the REST API to get data
         url: /app-integrate/data-api/use-data-api-read.html
-        output: web,pdf
+        output: web,apgBk
       - title: Use the Embedded Search API
         url: /app-integrate/data-api/direct-search-to-embed.html
-        output: web,pdf
+        output: web,apgBk
       - title: Use the Data Push API
         url: /app-integrate/data-api/push-data-to-external-app.html
-        output: web,pdf
+        output: web,apgBk
     - levelTwoTitle: Embed ThoughtSpot
-      output: web,pdf
+      output: web,apgBk
       levelTwoItems:
       - title: Understand embedding
         url: /app-integrate/embedding-viz/about-embedding-viz.html
-        output: web,pdf
+        output: web,apgBk
       - title: Embed pinboard or visualization
         url: /app-integrate/embedding-viz/embed-a-viz.html
-        output: web,pdf
+        output: web,apgBk
       - title: Authentication flow with embed
         url: /app-integrate/JSAPI/enable-JS-API.html
-        output: web,pdf
+        output: web,apgBk
       - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
-        output: web,pdf
+        output: web,apgBk
       - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
         output: web,pdf
     - levelTwoTitle: Runtime Filters
-      output: web,pdf
+      output: web,apgBk
       levelTwoItems:
       - title: About Runtime Filters
         url: /app-integrate/runtime-filters/about-runtime-filters.html
-        output: web,pdf
+        output: web,apgBk
       - title: Apply a Runtime Filter
         url: /app-integrate/runtime-filters/apply-runtime-filter.html
-        output: web,pdf
+        output: web,apgBk
       - title: Runtime Filter Operators
         url: /app-integrate/runtime-filters/runtime-filter-operators.html
-        output: web,pdf
+        output: web,apgBk
     - levelTwoTitle: Style Customization
       output: web,pdf
       levelTwoItems:
       - title: Customize the application style
         url: /app-integrate/custom-branding/perform-style-customization.html
-        output: web,pdf
+        output: web,apgBk
       - title: Upload application logos
         url: /app-integrate/custom-branding/upload-application-logos.html
-        output: web,pdf
+        output: web,apgBk
       - title: Set chart and table visualization fonts
         url: /app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html
-        output: web,pdf
+        output: web,apgBk
       - title: Choose a background color
         url: /app-integrate/custom-branding/choose-background-color.html
-        output: web,pdf
+        output: web,apgBk
       - title: Select chart color palettes
         url: /app-integrate/custom-branding/select-chart-color-palettes.html
-        output: web,pdf
+        output: web,apgBk
       - title: Change the footer text
         url: /app-integrate/custom-branding/change-the-footer-text.html
-        output: web,pdf
+        output: web,apgBk
     - levelTwoTitle: API Reference
-      output: web,pdf
+      output: web,apgBk
       levelTwoItems:
       - title: Introduction
         url: /app-integrate/reference/public-api-reference.html
-        output: web,pdf
+        output: web,apgBk
       - title: Pinboard Data API
         url: /app-integrate/reference/pinboarddata.html
-        output: web,pdf
+        output: web,apgBk
       - title: Metadata API
         url: /app-integrate/reference/metadata-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: Session API
         url: /app-integrate/reference/session-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: User API
         url: /app-integrate/reference/user-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: Group API
         url: /app-integrate/reference/group-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
-        output: web,pdf
+        output: web,apgBk
       - title: Search Data API
         url: /app-integrate/reference/search-data-api.html
-        output: web,pdf
+        output: web,apgBk
  # -- Uncomment out this section ONLY when generating a PDF for AWS
   - sectiontitle: AWS Installation
     output: web,instAWS
