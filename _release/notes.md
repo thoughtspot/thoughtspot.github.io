@@ -91,28 +91,23 @@ ThoughtSpot now supports the following features for linked tables:
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### Monitor headlines
+### Monitor Headlines
 
 The Monitor feature enables you to follow headline metrics, and get daily updates in your mailbox, on your ThoughtSpot home page, and in the SpotIQ Follow management interface.
 
-For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html)  
+For more information, see [Monitor headlines]({{ site.baseurl }}/spotiq/monitor-headlines.html).
 
  **Support for Monitor is in beta**.
 
 * To monitor headlines, click the **Follow** icon in the top right corner of the insight.
 
-  ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
-
 * The **SpotIQ Follow** interface lists all the headlines you follow, and the changes from last run.
-  ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
 
 * Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose. And you can change to table view, or to another chart type to better visualize your changing metric.
 
-  ![Metric performance over time]({{ site.baseurl }}/images/spotiq-monitor-detail.png "Metric performance over time")
-
 ### Chart Configuration
 
-This release introduces a complete new approach that makes chart configuration much easier and more intuitive.
+This release introduces a complete new approach that makes chart configuration much easier and more intuitive. For more information, see [Changing Charts]({{ site.baseurl }}end-user/search/change-the-chart.html).
 
 <strong>Chart configuration overview</strong>
 <br>
@@ -174,7 +169,7 @@ To enhance the ease of sharing, we simplified and reinforced the workflow for ac
 You can now reduce the cost of a GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
 
 ### Streamlined GCP data loading from a GCS bucket
-You can now load data from a Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
+You can now load data from a Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket).
 
 ### Answer Explorer
 
