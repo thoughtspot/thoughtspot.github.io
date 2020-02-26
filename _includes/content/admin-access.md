@@ -39,5 +39,5 @@ authenticating, either user can use and and all of the following utilities:
 
 * [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html); [`thoughtspot`](#thoughtspot) user cannot use commands that require
 `sudo` or `root` privileges
-* [tsload]({{ site.baseurl }}/reference/sql-cli-commands.html)
-* [tql]({{ site.baseurl }}/admin/loading/use-data-importer.html)
+* [tsload]({{ site.baseurl }}/admin/loading/use-data-importer.html)
+* [tql]({{ site.baseurl }}/reference/sql-cli-commands.html)
