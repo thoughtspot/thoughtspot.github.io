@@ -245,7 +245,7 @@ entries:
           output: web,ugBk
         - title: Rename columns and axes
           url: /end-user/search/column-renaming.html
-          output: web,ugBk          
+          output: web,ugBk
         - title: Reorder the labels
           url: /end-user/search/reorder-values-on-the-x-axis.html
           output: web,ugBk
@@ -1009,168 +1009,168 @@ entries:
       url: /admin/mobile/notes-mobile.html
       output: web
   - sectiontitle: Embedding
-    output: web,apgBk
+    output: web,pdf
     sectionitems:
     - title: Introduction to Embedding
       url: /app-integrate/introduction/introduction.html
-      output: web,apgBk
+      output: web,pdf
     - title: Log in to the Linux shell using SSH
       url: /app-integrate/introduction/login-console.html
-      output: web,apgBk
+      output: web,pdf
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
-      output: web,apgBk
+      output: web,pdf
     - title: Use the JavaScript API
       url: /app-integrate/JSAPI/about-JS-API.html
-      output: web,apgBk
+      output: web,pdf
     - levelTwoTitle: SAML
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: About SAML
         url: /app-integrate/SAML/about-SAML-integrations.html
-        output: web,apgBk
+        output: web,pdf
       - title: Configure SAML
         url: /app-integrate/SAML/configure-SAML-with-tscli.html
-        output: web,apgBk
+        output: web,pdf
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
-        output: web,apgBk
+        output: web,pdf
       - title: Configure Active Directory Federated Services
         url: /app-integrate/SAML/integrate-ADFS.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: REST API
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: About the REST API
         url: /app-integrate/data-api/about-data-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: Calling the REST API
         url: /app-integrate/data-api/calling-rest-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: REST API pagination
         url: /app-integrate/data-api/response-pagination.html
-        output: web,apgBk
+        output: web,pdf
       - title: Use the REST API to get data
         url: /app-integrate/data-api/use-data-api-read.html
-        output: web,apgBk
+        output: web,pdf
       - title: Use the Embedded Search API
         url: /app-integrate/data-api/direct-search-to-embed.html
-        output: web,apgBk
+        output: web,pdf
       - title: Use the Data Push API
         url: /app-integrate/data-api/push-data-to-external-app.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: Embed ThoughtSpot
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: Understand embedding
         url: /app-integrate/embedding-viz/about-embedding-viz.html
-        output: web,apgBk
+        output: web,pdf
       - title: Embed pinboard or visualization
         url: /app-integrate/embedding-viz/embed-a-viz.html
-        output: web,apgBk
+        output: web,pdf
       - title: Authentication flow with embed
         url: /app-integrate/JSAPI/enable-JS-API.html
-        output: web,apgBk
+        output: web,pdf
       - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
-        output: web,apgBk
+        output: web,pdf
       - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: Runtime Filters
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: About Runtime Filters
         url: /app-integrate/runtime-filters/about-runtime-filters.html
-        output: web,apgBk
+        output: web,pdf
       - title: Apply a Runtime Filter
         url: /app-integrate/runtime-filters/apply-runtime-filter.html
-        output: web,apgBk
+        output: web,pdf
       - title: Runtime Filter Operators
         url: /app-integrate/runtime-filters/runtime-filter-operators.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: Style Customization
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: Customize the application style
         url: /app-integrate/custom-branding/perform-style-customization.html
-        output: web,apgBk
+        output: web,pdf
       - title: Upload application logos
         url: /app-integrate/custom-branding/upload-application-logos.html
-        output: web,apgBk
+        output: web,pdf
       - title: Set chart and table visualization fonts
         url: /app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html
-        output: web,apgBk
+        output: web,pdf
       - title: Choose a background color
         url: /app-integrate/custom-branding/choose-background-color.html
-        output: web,apgBk
+        output: web,pdf
       - title: Select chart color palettes
         url: /app-integrate/custom-branding/select-chart-color-palettes.html
-        output: web,apgBk
+        output: web,pdf
       - title: Change the footer text
         url: /app-integrate/custom-branding/change-the-footer-text.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: API Reference
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: Introduction
         url: /app-integrate/reference/public-api-reference.html
-        output: web,apgBk
+        output: web,pdf
       - title: Pinboard Data API
         url: /app-integrate/reference/pinboarddata.html
-        output: web,apgBk
+        output: web,pdf
       - title: Metadata API
         url: /app-integrate/reference/metadata-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: Session API
         url: /app-integrate/reference/session-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: User API
         url: /app-integrate/reference/user-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: Group API
         url: /app-integrate/reference/group-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
-        output: web,apgBk
+        output: web,pdf
       - title: Search Data API
         url: /app-integrate/reference/search-data-api.html
-        output: web,apgBk
+        output: web,pdf
  # -- Uncomment out this section ONLY when generating a PDF for AWS
-#  - sectiontitle: AWS Installation
-#    output: web,instAWS
-#    sectionitems:
-#    - title: Configuration options
-#      url: /appliance/aws/configuration-options.html
-#      output: web,appQs,instAWS
-#    - title: Set up ThoughtSpot resources for AWS
-#      url: /appliance/aws/launch-an-instance.html
-#      output: web,appQs,instAWS
-#    - title: Prepare AWS VMs for ThoughtSpot
-#      url: /appliance/aws/aws-prepare-vms.html
-#      output: web,appQs,instAWS
-#    - title: Configure ThoughtSpot nodes in AWS
-#      url: /appliance/aws/installing-aws.html
-#      output: web,appQs,instAWS
-#    - title: Install ThoughtSpot clusters in AWS
-#      url: /appliance/aws/aws-cluster-install.html
-#      output: web,appQs,instAWS
-#    - title: The nodes.config file
-#      url: /appliance/hardware/nodesconfig-example.html
-#      output: web,appQs,instAWS
-#    - title: Parameters of the nodes.config file
-#      url: /appliance/hardware/parameters-nodesconfig.html
-#      output: web,appQs,instAWS
-#    - title: Using the cluster create command
-#      url: /appliance/hardware/cluster-create.html
-#      output: web,appQs,instAWS
-#    - title: Parameters of the cluster create command
-#      url: /appliance/hardware/parameters-cluster-create.html
-#      output: web,appQs,instAWS
-#    - title: Network policies
-#      url: /appliance/firewall-ports.html
-#      output: web,appQs,instAWS
+  - sectiontitle: AWS Installation
+    output: web,instAWS
+    sectionitems:
+    - title: Configuration options
+      url: /appliance/aws/configuration-options.html
+      output: web,appQs,instAWS
+    - title: Set up ThoughtSpot resources for AWS
+      url: /appliance/aws/launch-an-instance.html
+      output: web,appQs,instAWS
+    - title: Prepare AWS VMs for ThoughtSpot
+      url: /appliance/aws/aws-prepare-vms.html
+      output: web,appQs,instAWS
+    - title: Configure ThoughtSpot nodes in AWS
+      url: /appliance/aws/installing-aws.html
+      output: web,appQs,instAWS
+    - title: Install ThoughtSpot clusters in AWS
+      url: /appliance/aws/aws-cluster-install.html
+      output: web,appQs,instAWS
+    - title: The nodes.config file
+      url: /appliance/hardware/nodesconfig-example.html
+      output: web,appQs,instAWS
+    - title: Parameters of the nodes.config file
+      url: /appliance/hardware/parameters-nodesconfig.html
+      output: web,appQs,instAWS
+    - title: Using the cluster create command
+      url: /appliance/hardware/cluster-create.html
+      output: web,appQs,instAWS
+    - title: Parameters of the cluster create command
+      url: /appliance/hardware/parameters-cluster-create.html
+      output: web,appQs,instAWS
+    - title: Network policies
+      url: /appliance/firewall-ports.html
+      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
 # -- Uncomment out this section ONLY when generating a PDF for Azure
@@ -1584,7 +1584,7 @@ entries:
 #        output: web,digBk
 #      - title: Modify a connection
 #        url: /data-integrate/embrace/getting-started/modify-a-connection.html
-#        output: web,apgBk
+#        output: web,pdf
 #      - title: Connectors reference
 #        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
 #        output: web,digBk
