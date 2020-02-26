@@ -6,7 +6,7 @@ summary: "You can change the colors used in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To change the colors used in a chart, use the color picker in the **Chart configuration** menu. You can set colors for:
+To change the colors used in a chart, use the **Customize** menu to dive into the chip for the column or value you would like to change. You can set colors for:
 
 * bars, lines, areas, bubbles, maps, and other visuals on charts
 * legends on charts
