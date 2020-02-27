@@ -20,11 +20,11 @@ entries:
       type: frontmatter
 # end PDF output defs
   - sectiontitle: About this Release
-    output: web,rnotes
+    output: web,pdf
     sectionitems:
     - title: Release notes
       url: /release/notes.html
-      output: web,rnotes
+      output: web,pdf
     - title: Downloads
       url: /release/downloads.html
       output: web
@@ -1177,9 +1177,9 @@ entries:
     - title: Contact ThoughtSpot support
       url: /appliance/contact.html
       output: web,appQs,instAWS
-    - title: Site survey
-      url: /site-survey.pdf
-      output: web,appQs,instAWS
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instAWS
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
       output: web,appQs,instAWS
