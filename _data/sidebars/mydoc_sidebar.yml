@@ -1138,51 +1138,51 @@ entries:
         url: /app-integrate/reference/search-data-api.html
         output: web,apgBk
  # -- Uncomment out this section ONLY when generating a PDF for AWS
-#  - sectiontitle: AWS Installation
-#    output: web,instAWS
-#    sectionitems:
-#    - title: Configuration options
-#      url: /appliance/aws/configuration-options.html
-#      output: web,appQs,instAWS
-#    - title: Set up ThoughtSpot resources for AWS
-#      url: /appliance/aws/launch-an-instance.html
-#      output: web,appQs,instAWS
-#    - title: Prepare AWS VMs for ThoughtSpot
-#      url: /appliance/aws/aws-prepare-vms.html
-#      output: web,appQs,instAWS
-#    - title: Configure ThoughtSpot nodes in AWS
-#      url: /appliance/aws/installing-aws.html
-#      output: web,appQs,instAWS
-#    - title: Install ThoughtSpot clusters in AWS
-#      url: /appliance/aws/aws-cluster-install.html
-#      output: web,appQs,instAWS
-#    - title: The nodes.config file
-#      url: /appliance/hardware/nodesconfig-example.html
-#      output: web,appQs,instAWS
-#    - title: Parameters of the nodes.config file
-#      url: /appliance/hardware/parameters-nodesconfig.html
-#      output: web,appQs,instAWS
-#    - title: Using the cluster create command
-#      url: /appliance/hardware/cluster-create.html
-#      output: web,appQs,instAWS
-#    - title: Parameters of the cluster create command
-#      url: /appliance/hardware/parameters-cluster-create.html
-#      output: web,appQs,instAWS
-#    - title: Cloud overview
-#      url: /appliance/cloud.html
-#      output: web,appQs,instAWS
-#    - title: Network policies
-#      url: /appliance/firewall-ports.html
-#      output: web,appQs,instAWS
-#    - title: Contact ThoughtSpot support
-#      url: /appliance/contact.html
-#      output: web,appQs,instAWS
-#    - title: Site survey
-#      url: /site-survey.pdf
-#      output: web,appQs,instAWS
-#    - title: tscli command reference
-#      url: /reference/tscli-command-ref.html
-#      output: web,appQs,instAWS
+  - sectiontitle: AWS Installation
+    output: web,instAWS
+    sectionitems:
+    - title: Configuration options
+      url: /appliance/aws/configuration-options.html
+      output: web,appQs,instAWS
+    - title: Set up ThoughtSpot resources for AWS
+      url: /appliance/aws/launch-an-instance.html
+      output: web,appQs,instAWS
+    - title: Prepare AWS VMs for ThoughtSpot
+      url: /appliance/aws/aws-prepare-vms.html
+      output: web,appQs,instAWS
+    - title: Configure ThoughtSpot nodes in AWS
+      url: /appliance/aws/installing-aws.html
+      output: web,appQs,instAWS
+    - title: Install ThoughtSpot clusters in AWS
+      url: /appliance/aws/aws-cluster-install.html
+      output: web,appQs,instAWS
+    - title: The nodes.config file
+      url: /appliance/hardware/nodesconfig-example.html
+      output: web,appQs,instAWS
+    - title: Parameters of the nodes.config file
+      url: /appliance/hardware/parameters-nodesconfig.html
+      output: web,appQs,instAWS
+    - title: Using the cluster create command
+      url: /appliance/hardware/cluster-create.html
+      output: web,appQs,instAWS
+    - title: Parameters of the cluster create command
+      url: /appliance/hardware/parameters-cluster-create.html
+      output: web,appQs,instAWS
+    - title: Cloud overview
+      url: /appliance/cloud.html
+      output: web,appQs,instAWS
+    - title: Network policies
+      url: /appliance/firewall-ports.html
+      output: web,appQs,instAWS
+    - title: Contact ThoughtSpot support
+      url: /appliance/contact.html
+      output: web,appQs,instAWS
+    - title: Site survey
+      url: /site-survey.pdf
+      output: web,appQs,instAWS
+    - title: tscli command reference
+      url: /reference/tscli-command-ref.html
+      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
 # -- Uncomment out this section ONLY when generating a PDF for Azure
