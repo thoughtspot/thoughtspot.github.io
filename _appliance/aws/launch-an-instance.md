@@ -11,25 +11,25 @@ Follow these steps to set up your ThoughtSpot VMs in AWS.
 <table>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
+  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
+  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#s3-bucket-setup">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
+  <td><a href="launch-an-instance#s3-bucket-setup" class="noCrossRef">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#aws-ts-setup-cluster">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
+  <td><a href="launch-an-instance#aws-ts-setup-cluster" class="noCrossRef">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups">5. Configure security groups.</a></td></tr>
+  <td><a href="launch-an-instance#security-groups" class="noCrossRef">5. Configure security groups.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+  <td><a href="launch-an-instance#security-groups" class="noCrossRef">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
 <tr>
   <td>&#10063;</td>
-  <td><a href="launch-an-instance#prepare-vms">7. Prepare the VMs.</a></td></tr>
+  <td><a href="launch-an-instance#prepare-vms" class="noCrossRef">7. Prepare the VMs.</a></td></tr>
 </table>
 
 {: id="prerequisites"}
