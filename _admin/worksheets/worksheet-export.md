@@ -16,6 +16,7 @@ In ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, mod
 
 You must have **Edit** permissions for the worksheet.
 
+{: id="worksheet-export"}
 ## Export Worksheet
 
 To export a worksheet, follow these steps:
@@ -38,10 +39,12 @@ To export a worksheet, follow these steps:
 
     ![Open downloaded worksheet file]({{ site.baseurl }}/images/worksheet-export-complete.png "Open downloaded worksheet file")
 
+{: id="worksheet-change"}
 ## Working with the Worksheet yaml file
 
 You can change the yaml file that represents the Worksheet by editing its content. See [YAML Worksheet specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) for the full syntax of the YAML file.
 
+{: id="worksheet-update"}
 ## Update a Worksheet
 
 To update an existing worksheet, follow these steps:
