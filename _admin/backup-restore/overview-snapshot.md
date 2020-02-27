@@ -20,40 +20,6 @@ ThughtSpot generates a snapshot in approximately 20 seconds, depending on the si
 
 {% include note.html content="During an upgrade, all snapshots from the previous version of ThoughtSpot become manual snapshots." %}
 
-<!--### Using Management Console
-
-To manually create a snapshot using the Admin UI, follow these steps:
-
-1. Log in to ThoughtSpot from a browser.
-
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the Management Console.
-
-3. Click the **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the **Settings** panel, click **Snapshot**, and select the   **Configure** option.
-
-   ![]({{ site.baseurl }}/images/snapshot.png)  
-
-5. Enter the snapshot configuration details:
-
-   ![]({{ site.baseurl }}/images/snapshot-create.png)
-
-   | Field | Description |
-   | --- | --- |
-   | Snapshot Name | Specify the name of the snapshot. |
-   | Time to Live | Specify the day counter after which the snapshot automatically expires from the system. |
-
-6. Click **Save** to create a snapshot.
-
-You can see the new snapshot file in the snapshot dashboard.
--->
-
 {: id="snapshot-tscli"}
 ### Create a snapshot using tscli
 

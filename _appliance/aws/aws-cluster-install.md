@@ -17,20 +17,9 @@ Before you can install your ThoughtSpot clusters in AWS, complete these prerequi
 ## Install ThoughtSpot Software
 Install the cluster using the ThoughtSpot software release bundle. The estimated installation time is one hour. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-1">Step 1: Run the installer</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-2">Step 2: Check cluster health</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="aws-cluster-install#cluster-step-3">Step 3: Finalize installation</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Run the installer](#cluster-step-1) |
+| &#10063; | [Step 2: Check cluster health](#cluster-step-2) |
+| &#10063; | [Step 3: Finalize installation](#cluster-step-3) |
 
 Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release bundle.
 
