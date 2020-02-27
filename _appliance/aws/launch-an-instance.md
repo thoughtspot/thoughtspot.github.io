@@ -58,10 +58,10 @@ To install and launch ThoughtSpot, you must have the following:
     <td>The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.</td></tr>
   <tr>
     <td>&#10063;</td>
-    <td>Networking information: <a href="{{ site.baseurl }}/site-survey.pdf" download>download</a> and fill out the ThoughtSpot site survey to have a quick reference point. Ask your network administrator if you need help filling out the site survey.</td>
+    <td>Networking information: <a href="{{ site.baseurl }}/site-survey.pdf">download</a> and fill out the ThoughtSpot site survey to have a quick reference point. Ask your network administrator if you need help filling out the site survey.</td>
   </tr>
 </table>
-  For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
+  For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:class="noCrossRef" target="_blank"} in Amazon's AWS documentation.
 
 {: id="aws-required"}
 ### Required AWS components

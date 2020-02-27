@@ -1177,9 +1177,9 @@ entries:
     - title: Contact ThoughtSpot support
       url: /appliance/contact.html
       output: web,appQs,instAWS
-#    - title: Site survey
-#      url: /site-survey.pdf
-#      output: web,appQs,instAWS
+    - title: Site survey
+      url: /site-survey.pdf
+      output: web,appQs,instAWS
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
       output: web,appQs,instAWS
