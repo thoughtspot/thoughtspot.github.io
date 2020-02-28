@@ -1,6 +1,6 @@
 ---
 title: [Change axis options]
-last_updated: 11/06/2019
+last_updated: 2/28/2020
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -24,7 +24,7 @@ You can make the following changes to the axis:
 {: id="aggregate"}
 ## Change the axis aggregate
 
-To change the axis aggregate, click the **Aggregate** option in the axis menu, and select an alternative from the list of options.
+To change the axis aggregation, click the **Aggregate** option in the axis menu, and select an alternative from the list of options.
 
 Depending on the type of data type and other settings, the aggregation options include _Total_, _Avg_, _Min_, _Max_, _Total Count_, _Unique Count_, _Std Deviation_, and _Variance_.
 
