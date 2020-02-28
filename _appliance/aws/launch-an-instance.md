@@ -41,7 +41,6 @@ Follow these steps to set up your ThoughtSpot VMs in AWS.
 | &#10063; | [5. Configure security groups.](#security-groups) |
 | &#10063; | [6. Open the required network ports for communication for the nodes in your cluster and end users.](#security-groups) |
 | &#10063; | [7. Prepare the VMs.](#prepare-vms) |
->>>>>>> pdf convert html to md, fixing commented out management console
 
 {: id="prerequisites"}
 ## About the ThoughtSpot AMI
