@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 1/31/2020
+last_updated: 2/27/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -177,20 +177,9 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     ![Set your network interface]({{ site.baseurl }}/images/gcp-setnetworkinterface.png "Set your network interface")
     <!--{% include image.html file="gcp-setnetworkinterface.png" title="Set your network interface" alt="Update the network interface or create a new one." caption="Set your network interface" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Add an existing VPC network, or create a new one by clicking <strong>VPC network</strong> from the main menu. Ensure that this network has a <strong>firewall rule</strong> attached, with the minimum ports required for ThoughtSpot operation open. Refer to the <a href="#port-requirements">minimum port requirements.</a> See Google's <a href="https://cloud.google.com/vpc/docs/using-firewalls">using firewalls</a> and <a href="https://cloud.google.com/vpc/docs/using-vpc">using VPCs</a> documentation for assistance creating a firewall rule and a VPC network.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>Set the external IP as either ephemeral or static, depending on your preference.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Ensure that <strong>network service tier</strong> is set to <strong>premium</strong>.</td>
-      </tr>
-    </table>
+    | **1** | Add an existing VPC network, or create a new one by clicking **VPC network** from the main menu. Ensure that this network has a **firewall rule** attached, with the minimum ports required for ThoughtSpot operation open. Refer to the [minimum port requirements](#port-requirements). See Google's [using firewalls](https://cloud.google.com/vpc/docs/using-firewalls){:target="_blank"} and [using VPCs](https://cloud.google.com/vpc/docs/using-vpc){:target="_blank"} documentation for assistance creating a firewall rule and a VPC network. |
+    | **2** | Set the external IP as either ephemeral or static, depending on your preference. |
+    | **3** | Ensure that **network service tier** is set to **premium**. |
 
 11. Repeat these steps to create the necessary number of VMs for your cluster.
 

@@ -1,6 +1,6 @@
 ---
 title: [AWS configuration options]
-last_updated: 10/09/2019
+last_updated: 2/27/2020
 summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -51,7 +51,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 {: id="related"}
 ## Related information
 
-- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
-- [EC2 pricing](https://aws.amazon.com/ec2/pricing/)
-- [EBS pricing](https://aws.amazon.com/ebs/pricing/)
-- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/){:target="_blank"}
+- [EC2 pricing](https://aws.amazon.com/ec2/pricing/){:target="_blank"}
+- [EBS pricing](https://aws.amazon.com/ebs/pricing/){:target="_blank"}
+- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html){:target="_blank"}

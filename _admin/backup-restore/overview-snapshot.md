@@ -54,6 +54,7 @@ To manually create a snapshot using the Admin UI, follow these steps:
 You can see the new snapshot file in the snapshot dashboard.
 -->
 
+
 {: id="snapshot-tscli"}
 ### Create a snapshot using tscli
 
