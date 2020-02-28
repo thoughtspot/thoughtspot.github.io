@@ -21,9 +21,9 @@ To join tables in a Snowflake connection, do the following:
 
    ![]({{ site.baseurl }}/images/select-connection.png "select Connection")
 
-4. Click **Edit connection** at the upper-right-hand side of the page.
+4. Click the **Sales** table.
 
-   ![Edit connection]({{ site.baseurl }}/images/snowflake-editconnection.png "Edit connection")
+   The Columns view of the Sales table appears.
 
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
