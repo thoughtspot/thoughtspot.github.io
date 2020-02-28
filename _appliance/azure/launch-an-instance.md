@@ -54,68 +54,25 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     ![Specify information under Basics]({{ site.baseurl }}/images/azure-basicsettings.png "Specify information under Basics")
     <!--{% include image.html file="azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." caption="Specify information under Basics" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Choose a subscription type from the dropdown menu.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>If your company already has a resource group, <em>select existing</em>. If not, <em>create new</em>.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Specify a name for your virtual machine.</td>
-      </tr>
-      <tr>
-        <td><strong>4</strong></td>
-        <td>Specify the region in which you are creating the VM.</td>
-      </tr>
-      <tr>
-        <td><strong>5</strong></td>
-        <td>Click <strong>Browse all public and private images</strong>, and search for the ThoughtSpot image. Click on it.</td>
-      </tr>
-      <tr>
-        <td><strong>6</strong></td>
-        <td>Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
-      </tr>
-      <tr>
-        <td><strong>7</strong></td>
-        <td>Select <strong>SSH public key</strong> and specify a username.</td>
-      </tr>
-      <tr>
-        <td><strong>8</strong></td>
-        <td>Enter your SSH public key. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line.</td>
-      </tr>
-      <tr>
-        <td><strong>9</strong></td>
-        <td>Choose <strong>allow selected ports</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>10</strong></td>
-        <td>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the <a href="#port-requirements">minimum port requirements.</a></td>
-      </tr>
-    </table>
+    | **1** | Choose a subscription type from the dropdown menu. |
+    | **2** | If your company already has a resource group, *select existing*. If not, *create new*. |
+    | **3** | Specify a name for your virtual machine. |
+    | **4** | Specify the region in which you are creating the VM. |
+    | **5** | Click **Browse all public and private images**, and search for the ThoughtSpot image. Click on it. |
+    | **6** | Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs. |
+    | **7** | Select **SSH public key** and specify a username. |
+    | **8** | Enter your SSH public key. [Contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line. |
+    | **9** | Choose **allow selected ports**. |
+    | **10** | Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the [minimum port requirements](#port-requirements). |
 
 2. Specify information under **Disks**.
 
     ![Specify disk information]({{ site.baseurl }}/images/azure-disks.png "Specify disk information")
     <!--{% include image.html file="azure-disks.png" title="Specify disk information" alt="In the Disks menu, choose a disk type, add data disks, and select managed disks" caption="Specify disk information" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Under <strong>Advanced</strong>, click <strong>yes</strong> to <strong>use managed disks</strong>.</td>
-      </tr>
-    </table>
+    | **1** | Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks. |
+    | **2** | Click **Create and attach a new disk**. Add two data disks. Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html) to see what size they should be. |
+    | **3** | Under **Advanced**, click **yes** to **use managed disks**. |
 
     {% include tip.html content=" The new Standard SSD disk types are only available for particular regions. Make sure this disk type is supported in the region you chose for your VM before selecting it." %}
 
@@ -126,24 +83,11 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     ![Specify networking information]({{ site.baseurl }}/images/azure-networking.png "Specify networking information")
     <!--{% include image.html file="azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" caption="Specify networking information" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Find your company's virtual network and select it, or <strong>create new</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>Find your company's public IP, or <strong>create new</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Select <strong>Advanced</strong> for <em>NIC network security group</em>.</td>
-      </tr>
-      <tr>
-        <td><strong>4</strong></td>
-        <td>After you select <strong>Advanced</strong>, the <strong>Configure network security group</strong> option appears. Find your company's security group, or <strong>create new</strong>. When creating your security group, ensure that the required ports are open. Refer to the <a href="#port-requirements">minimum port requirements.</a></td>
-      </tr>
-    </table>
+    | **1** | Find your company's virtual network and select it, or **create new**. |
+    | **2** | Find your company's public IP, or **create new**. |
+    | **3** | Select **Advanced** for *NIC network security group*. |
+    | **4** | After you select **Advanced**, the **Configure network security group** option appears. Find your company's security group, or **create new**. When creating your security group, ensure that the required ports are open. Refer to the [minimum port requirements](#port-requirements). |
+    
 5. Under **Management**, configure your monitoring and management preferences. If you have no preferences, you can leave them at their default settings.
 
 6. Under **Advanced**, configure your advanced settings preferences. If you have no preferences, you can leave them at their default settings.
