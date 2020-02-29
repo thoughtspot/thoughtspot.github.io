@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/complex-search/change-the-view.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:57:27-08:00" />
+<meta property="article:published_time" content="2020-02-28T18:20:26-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Change result display options”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Change result display options”]","dateModified":"2020-02-25T11:57:27-08:00","url":"https://docs.thoughtspot.com/latest/complex-search/change-the-view.html","datePublished":"2020-02-25T11:57:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/complex-search/change-the-view.html"},"description":"Your search results, or Answers, have various display options. You can change the visualization used to display your results, their sort order, how ThoughtSpot groups the data, and what data ThoughtSpot includes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Change result display options”]","dateModified":"2020-02-28T18:20:26-08:00","url":"https://docs.thoughtspot.com/latest/complex-search/change-the-view.html","datePublished":"2020-02-28T18:20:26-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/complex-search/change-the-view.html"},"description":"Your search results, or Answers, have various display options. You can change the visualization used to display your results, their sort order, how ThoughtSpot groups the data, and what data ThoughtSpot includes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -802,18 +802,30 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Changing a chart</a>
+                       <a href="#">Changing charts</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/change-the-chart.html">Change the chart</a></li>
+                                  <li><a href="/latest/end-user/search/change-the-chart.html">Changing charts</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/latest/end-user/search/chart-axes-options.html">Change axes options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/drag-and-drop.html">Configure the columns</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/column-renaming.html">Rename columns and axes</a></li>
                               
                             
                         
@@ -843,7 +855,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                                  <li><a href="/latest/end-user/search/show-data-labels.html">Show data labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/show-data-markers.html">Show data markers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/regression-line.html">Add regression lines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/gridlines.html">Display gridlines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/lock-chart-type.html">Disable automatic selection of chart type</a></li>
                               
                             
                         
@@ -3609,7 +3645,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3633,7 +3669,7 @@ change the view of your answer:</p>
   </li>
 </ol>
 
-<p>When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon <img src="/latest/images/icon-chart-type-20px.png" alt="" class="inline" /> and select the type of chart you want. Refer to <a href="/latest/end-user/search/about-charts.html">understand charts</a>.</p>
+<p>When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon <img src="/latest/images/icon-chart-type-10px.png" alt="" class="inline" /> and select the type of chart you want. Refer to <a href="/latest/end-user/search/about-charts.html">understand charts</a>.</p>
 
 <h2 id="sort-your-search">Sort your search</h2>
 
@@ -3656,7 +3692,9 @@ To sort your search:</p>
 <h2 id="change-the-date-bucketing-grouping">Change the date bucketing (grouping)</h2>
 
 <p>You can change the date <em>bucketing</em> on tables and charts for columns with date
-values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon <img src="/latest/images/icon-more-20px.png" alt="" class="inline" /> that appears when you hover over a column name on a table.</p>
+values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon <img src="/latest/images/icon-more-10px.png" alt="" class="inline" /> that appears when you hover over a column name on a table.</p>
+
+<p>You can specify date bucketing at many granularities, from <strong>detailed</strong> (to the minute or second) to <strong>yearly</strong>, depending on your data. You can also specify bucketing based on the position of a bucket relative to another, larger bucket. For example, you can group data by <strong>month of quarter</strong>, or <strong>week of month</strong>.</p>
 
 <p><img src="/latest/images/changeview-bucket.png" alt="Choose a date bucket on a table" title="Choose a date bucket on a table" /></p>
 
@@ -3708,7 +3746,7 @@ includes last month, dates are bucketed daily instead of monthly.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Feb 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 1/16/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>

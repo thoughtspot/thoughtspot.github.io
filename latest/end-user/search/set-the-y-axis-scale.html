@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set the y-axis range”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You can manually set the y-axis range by using the Edit chart styles icon." />
-<meta property="og:description" content="You can manually set the y-axis range by using the Edit chart styles icon." />
+<meta name="description" content="You can manually set the y-axis range by clicking edit from the y-axis label drop-down, or from the chart configuration menu." />
+<meta property="og:description" content="You can manually set the y-axis range by clicking edit from the y-axis label drop-down, or from the chart configuration menu." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:57:27-08:00" />
+<meta property="article:published_time" content="2020-02-28T18:20:26-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set the y-axis range”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set the y-axis range”]","dateModified":"2020-02-25T11:57:27-08:00","url":"https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html","datePublished":"2020-02-25T11:57:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html"},"description":"You can manually set the y-axis range by using the Edit chart styles icon.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set the y-axis range”]","dateModified":"2020-02-28T18:20:26-08:00","url":"https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html","datePublished":"2020-02-28T18:20:26-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/end-user/search/set-the-y-axis-scale.html"},"description":"You can manually set the y-axis range by clicking edit from the y-axis label drop-down, or from the chart configuration menu.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -802,18 +802,30 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Changing a chart</a>
+                       <a href="#">Changing charts</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/change-the-chart.html">Change the chart</a></li>
+                                  <li><a href="/latest/end-user/search/change-the-chart.html">Changing charts</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/latest/end-user/search/chart-axes-options.html">Change axes options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/drag-and-drop.html">Configure the columns</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/column-renaming.html">Rename columns and axes</a></li>
                               
                             
                         
@@ -843,7 +855,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                                  <li><a href="/latest/end-user/search/show-data-labels.html">Show data labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/show-data-markers.html">Show data markers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/regression-line.html">Add regression lines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/gridlines.html">Display gridlines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/lock-chart-type.html">Disable automatic selection of chart type</a></li>
                               
                             
                         
@@ -3609,47 +3645,78 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>
  -->
 
     
 
-  <p>You can manually set the y-axis range by using the <strong>Edit chart styles</strong> icon.</p>
+  <p>You can manually set the y-axis range by clicking <strong>edit</strong> from the <a href="#y-axis">y-axis label drop-down</a>, or from the <a href="#chart-config-edit"><strong>chart configuration</strong> menu</a>.</p>
 
-<h2 id="setting-the-y-axis-range">Setting the y-axis range</h2>
+<h2 id="y-axis">Setting the y-axis range from the axis label</h2>
 
-<p>The style  panel includes the option to manually set the y-axis range. To set
-the y-axis range:</p>
+<p>To set the y-axis range:</p>
 
 <ol>
   <li>
-    <p>While viewing your answer as a chart, click <strong>Edit chart styles</strong>.</p>
-
-    <p><img src="/latest/images/y_axis_range_select_styles.png" alt="" title="Edit chart styles icon" /></p>
+    <p>While viewing your answer as a chart, click the dropdown menu icon <img src="/latest/images/icon-caret-right-20px.png" alt="" class="inline" /> next to the y-axis label you want to change.</p>
   </li>
   <li>
-    <p>Under <strong>Y-Axis Range</strong> enter your preferred start and end values.</p>
+    <p>Click <strong>edit</strong>.</p>
 
-    <p>In this example, our original chart is showing sales values by department
- from 0 to over $10M. We can enter a y-axis range of <code class="language-plaintext highlighter-rouge">5000000</code> to <code class="language-plaintext highlighter-rouge">9000000</code> to
- show only sales between $5M and $10M.</p>
+    <p><img src="/latest/images/chartconfig-edityaxis.png" alt="Click edit" title="Click edit" /></p>
+  </li>
+  <li>
+    <p>Under <strong>Min</strong> and <strong>Max</strong>, set the y-axis range by specifying start and end values.</p>
 
-    <p>The chart will reorganize itself to reflect the new y-axis range.</p>
+    <p>In this example, the original chart shows <strong>sales</strong> values by <strong>department</strong>
+ from 0 to over $5M. We can enter a y-axis range of <code class="language-plaintext highlighter-rouge">2500000</code> to <code class="language-plaintext highlighter-rouge">5000000</code> to
+ show only sales between $2.5M and $5M.</p>
 
-    <p><img src="/latest/images/y_axis_range.png" alt="" title="Y-Axis Range details" /></p>
+    <p>The chart reorganizes itself to reflect the new y-axis range.</p>
+
+    <p>To change the range for <strong>gross profit margin</strong>, click the dropdown menu icon next to the <strong>gross profit margin</strong> axis label.</p>
   </li>
 </ol>
+
+<p><img src="/latest/images/chart-config-axis-range.gif" alt="Change the axis range gif" title="Change the axis range gif" /></p>
+
+<h2 id="chart-config-edit">Setting the y-axis range from the chart configuration menu</h2>
+
+<p>To set the y-axis range:</p>
+
+<ol>
+  <li>
+    <p>While viewing your answer as a chart, click the <strong>chart configuration</strong> icon <img src="/latest/images/icon-gear-10px.png" alt="" class="inline" /> on the top right.</p>
+  </li>
+  <li>
+    <p>Click the <strong>edit</strong> button <img src="/latest/images/icon-edit-20px.png" alt="" /> that appears when you hover over <strong>y-axis</strong>.</p>
+  </li>
+  <li>
+    <p>If you have multiple measures on the y-axis, select the measure you want to set the range for.</p>
+  </li>
+  <li>
+    <p>Under <strong>Min</strong> and <strong>Max</strong>, set the y-axis range by specifying start and end values.</p>
+
+    <p>In this example, the original chart shows <strong>sales</strong> values by <strong>department</strong>
+ from 0 to over $5M. We can enter a y-axis range of <code class="language-plaintext highlighter-rouge">2500000</code> to <code class="language-plaintext highlighter-rouge">5000000</code> to
+ show only sales between $2.5M and $5M.</p>
+
+    <p>The chart reorganizes itself to reflect the new y-axis range.</p>
+  </li>
+</ol>
+
+<p><img src="/latest/images/chart-config-y-axis.gif" alt="Change the axis range gif" title="Change the axis range gif" /></p>
 
 <h2 id="create-charts-with-multiple-measures-on-the-y-axis">Create charts with multiple measures on the y-axis</h2>
 
 <p>You can have multiple measures on the y-axis of most (but not all) chart types.
-You can configure this on the chart styles panel. To learn more, see these topics:</p>
+You can configure this in the <strong>chart configuration</strong> panel, by dragging and dropping measures out of the <strong>not visualized</strong> section. To learn more, see these topics:</p>
 
 <ul>
   <li>
-    <p><a href="/latest/end-user/search/show-data-labels.html#stack-multiple-measures-on-the-y-axis">Configure columns for X and Y axis</a></p>
+    <p><a href="/latest/end-user/search/drag-and-drop.html">Customize columns for the X and Y axes</a></p>
   </li>
   <li>
     <p><a href="/latest/end-user/search/about-charts.html#charts-with-multiple-measures-on-the-y-axis">Charts with multiple measures on the y-axis</a></p>
@@ -3681,9 +3748,9 @@ You can configure this on the chart styles panel. To learn more, see these topic
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Feb 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
