@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:57:27-08:00" />
+<meta property="article:published_time" content="2020-02-28T18:20:26-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up ThoughtSpot in Azure”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up ThoughtSpot in Azure”]","dateModified":"2020-02-25T11:57:27-08:00","url":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html","datePublished":"2020-02-25T11:57:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html"},"description":"About the ThoughtSpot image","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up ThoughtSpot in Azure”]","dateModified":"2020-02-28T18:20:26-08:00","url":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html","datePublished":"2020-02-28T18:20:26-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html"},"description":"About the ThoughtSpot image","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -802,18 +802,30 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Changing a chart</a>
+                       <a href="#">Changing charts</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/change-the-chart.html">Change the chart</a></li>
+                                  <li><a href="/latest/end-user/search/change-the-chart.html">Changing charts</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/latest/end-user/search/chart-axes-options.html">Change axes options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/drag-and-drop.html">Configure the columns</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/column-renaming.html">Rename columns and axes</a></li>
                               
                             
                         
@@ -843,7 +855,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                                  <li><a href="/latest/end-user/search/show-data-labels.html">Show data labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/show-data-markers.html">Show data markers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/regression-line.html">Add regression lines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/gridlines.html">Display gridlines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/lock-chart-type.html">Disable automatic selection of chart type</a></li>
                               
                             
                         
@@ -3609,7 +3645,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    9 minutes
+    10 minutes
   
 </span>
  -->
@@ -3671,47 +3707,49 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
 --></p>
 
     <table>
-   <tr>
-     <td><strong>1</strong></td>
-     <td>Choose a subscription type from the dropdown menu.</td>
-   </tr>
-   <tr>
-     <td><strong>2</strong></td>
-     <td>If your company already has a resource group, <em>select existing</em>. If not, <em>create new</em>.</td>
-   </tr>
-   <tr>
-     <td><strong>3</strong></td>
-     <td>Specify a name for your virtual machine.</td>
-   </tr>
-   <tr>
-     <td><strong>4</strong></td>
-     <td>Specify the region in which you are creating the VM.</td>
-   </tr>
-   <tr>
-     <td><strong>5</strong></td>
-     <td>Click <strong>Browse all public and private images</strong>, and search for the ThoughtSpot image. Click on it.</td>
-   </tr>
-   <tr>
-     <td><strong>6</strong></td>
-     <td>Refer to <a href="/latest/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
-   </tr>
-   <tr>
-     <td><strong>7</strong></td>
-     <td>Select <strong>SSH public key</strong> and specify a username.</td>
-   </tr>
-   <tr>
-     <td><strong>8</strong></td>
-     <td>Enter your SSH public key. <a href="/latest/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line.</td>
-   </tr>
-   <tr>
-     <td><strong>9</strong></td>
-     <td>Choose <strong>allow selected ports</strong>.</td>
-   </tr>
-   <tr>
-     <td><strong>10</strong></td>
-     <td>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the <a href="#port-requirements">minimum port requirements.</a></td>
-   </tr>
- </table>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Choose a subscription type from the dropdown menu.</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>If your company already has a resource group, <em>select existing</em>. If not, <em>create new</em>.</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Specify a name for your virtual machine.</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td>Specify the region in which you are creating the VM.</td>
+        </tr>
+        <tr>
+          <td><strong>5</strong></td>
+          <td>Click <strong>Browse all public and private images</strong>, and search for the ThoughtSpot image. Click on it.</td>
+        </tr>
+        <tr>
+          <td><strong>6</strong></td>
+          <td>Refer to <a href="/latest/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
+        </tr>
+        <tr>
+          <td><strong>7</strong></td>
+          <td>Select <strong>SSH public key</strong> and specify a username.</td>
+        </tr>
+        <tr>
+          <td><strong>8</strong></td>
+          <td>Enter your SSH public key. <a href="/latest/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line.</td>
+        </tr>
+        <tr>
+          <td><strong>9</strong></td>
+          <td>Choose <strong>allow selected ports</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>10</strong></td>
+          <td>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the <a href="#port-requirements">minimum port requirements</a>.</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
   <li>
     <p>Specify information under <strong>Disks</strong>.</p>
@@ -3721,19 +3759,21 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
 --></p>
 
     <table>
-   <tr>
-     <td><strong>1</strong></td>
-     <td>Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks.</td>
-   </tr>
-   <tr>
-     <td><strong>2</strong></td>
-     <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="/latest/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
-   </tr>
-   <tr>
-     <td><strong>3</strong></td>
-     <td>Under <strong>Advanced</strong>, click <strong>yes</strong> to <strong>use managed disks</strong>.</td>
-   </tr>
- </table>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks.</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="/latest/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Under <strong>Advanced</strong>, click <strong>yes</strong> to <strong>use managed disks</strong>.</td>
+        </tr>
+      </tbody>
+    </table>
 
     <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b>  The new Standard SSD disk types are only available for particular regions. Make sure this disk type is supported in the region you chose for your VM before selecting it.</div>
 
@@ -3747,23 +3787,25 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
 --></p>
 
     <table>
-   <tr>
-     <td><strong>1</strong></td>
-     <td>Find your company's virtual network and select it, or <strong>create new</strong>.</td>
-   </tr>
-   <tr>
-     <td><strong>2</strong></td>
-     <td>Find your company's public IP, or <strong>create new</strong>.</td>
-   </tr>
-   <tr>
-     <td><strong>3</strong></td>
-     <td>Select <strong>Advanced</strong> for <em>NIC network security group</em>.</td>
-   </tr>
-   <tr>
-     <td><strong>4</strong></td>
-     <td>After you select <strong>Advanced</strong>, the <strong>Configure network security group</strong> option appears. Find your company's security group, or <strong>create new</strong>. When creating your security group, ensure that the required ports are open. Refer to the <a href="#port-requirements">minimum port requirements.</a></td>
-   </tr>
- </table>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Find your company’s virtual network and select it, or <strong>create new</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>Find your company’s public IP, or <strong>create new</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Select <strong>Advanced</strong> for <em>NIC network security group</em>.</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td>After you select <strong>Advanced</strong>, the <strong>Configure network security group</strong> option appears. Find your company’s security group, or <strong>create new</strong>. When creating your security group, ensure that the required ports are open. Refer to the <a href="#port-requirements">minimum port requirements</a>.</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
   <li>
     <p>Under <strong>Management</strong>, configure your monitoring and management preferences. If you have no preferences, you can leave them at their default settings.</p>
@@ -3973,7 +4015,7 @@ DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=&lt;Add eth0 MAC&gt; TYPE=Ethernet 
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Feb 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 1/22/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>

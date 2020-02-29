@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:57:27-08:00" />
+<meta property="article:published_time" content="2020-02-28T18:20:26-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Snowflake Partner Connect Tutorial”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-02-25T11:57:27-08:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-02-25T11:57:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-02-28T18:20:26-08:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-02-28T18:20:26-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -802,18 +802,30 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Changing a chart</a>
+                       <a href="#">Changing charts</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/change-the-chart.html">Change the chart</a></li>
+                                  <li><a href="/latest/end-user/search/change-the-chart.html">Changing charts</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/latest/end-user/search/chart-axes-options.html">Change axes options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/drag-and-drop.html">Configure the columns</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/column-renaming.html">Rename columns and axes</a></li>
                               
                             
                         
@@ -843,7 +855,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/latest/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                                  <li><a href="/latest/end-user/search/show-data-labels.html">Show data labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/show-data-markers.html">Show data markers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/regression-line.html">Add regression lines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/gridlines.html">Display gridlines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/search/lock-chart-type.html">Disable automatic selection of chart type</a></li>
                               
                             
                         
@@ -3609,7 +3645,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    3 minutes
   
 </span>
  -->
@@ -3635,28 +3671,134 @@ $('#toc').on('click', 'a', function() {
     <p><img src="/latest/images/select-connection.png" alt="" title="select Connection" /></p>
   </li>
   <li>
-    <p>Click <strong>Edit connection</strong> at the upper-right-hand side of the page.</p>
+    <p>Click the <strong>Sales</strong> table.</p>
 
-    <p><img src="/latest/images/snowflake-editconnection.png" alt="Edit connection" title="Edit connection" /></p>
+    <p>The Columns view of the Sales table appears.</p>
   </li>
   <li>
-    <p>On the Choose connection type page, change the connection name or description (if needed), and then click <strong>Continue</strong>.</p>
+    <p>Click the <strong>Schema</strong> tab.</p>
   </li>
   <li>
-    <p>On the Snowflake connection details page, make any changes needed, and then click <strong>Continue</strong>.</p>
+    <p>Click <strong>+Add join</strong>.</p>
+
+    <p>The Add Join window appears.</p>
+  </li>
+  <li>In the Add Join window, use the drop-down menus to make the following selections:
+    <ul>
+      <li>For Destination Table, select <strong>Products</strong>.</li>
+      <li>For Source Columns, select <strong>Product_Key</strong>.</li>
+      <li>For Destination Columns, select <strong>Product_Key</strong>.</li>
+    </ul>
   </li>
   <li>
-    <p>TBD . . .</p>
+    <p>Click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Enter the name <em>Product Key - Product key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p>The first join is created. Now you will add the other joins.</p>
+  </li>
+  <li>
+    <p>Click <strong>+Add join</strong>.</p>
+  </li>
+  <li>In the Add Join window, use the drop-down menus to make the following selections:
+    <ul>
+      <li>For Destination Table, select <strong>Customers</strong>.</li>
+      <li>For Source Columns, select <strong>Customer_Key</strong>.</li>
+      <li>For Destination Columns, select <strong>Customer_Key</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Enter the name <em>Customer Key - Customer key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>+Add join</strong>.</p>
+  </li>
+  <li>In the Add Join window, use the drop-down menus to make the following selections:
+    <ul>
+      <li>For Destination Table, select <strong>Stores</strong>.</li>
+      <li>For Source Columns, select <strong>Store_Key</strong>.</li>
+      <li>For Destination Columns, select <strong>Store_Key</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Enter the name <em>Store Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>+Add join</strong>.</p>
+  </li>
+  <li>In the Add Join window, use the drop-down menus to make the following selections:
+    <ul>
+      <li>For Destination Table, select <strong>Dates</strong>.</li>
+      <li>For Source Columns, select <strong>Date_Key</strong>.</li>
+      <li>For Destination Columns, select <strong>Date_Key</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Click <strong>Next</strong>.</p>
+  </li>
+  <li>
+    <p>Enter the name <em>Sales - Date</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p>Now that all four table joins are created, the schema looks like this:</p>
+
+    <insert screenshot="" of="" schema="">
+
+</insert>
+  </li>
+</ol>
+<h3 id="searching-joined-tables">Searching joined tables</h3>
+
+<p>You can easily search the joined tables.</p>
+
+<p>To search the tables, do the following:</p>
+
+<ol>
+  <li>
+    <p>Click <strong>Search</strong>.</p>
+  </li>
+  <li>
+    <p>Click the <em>Retail Sales</em> data source, and click <strong>Choose sources</strong>.</p>
+  </li>
+  <li>
+    <p>Select all the tables you just joined (Customers, Dates, Products, Sales, and Stores) and click <strong>Close</strong>.</p>
+  </li>
+  <li>
+    <p>In the search bar, enter <strong>sales_dollar_amount</strong>, <strong>store_region</strong>, and <strong>monthly</strong>.</p>
   </li>
 </ol>
 
-<h2 id="related-information">Related information</h2>
+<screenshot example="" of="" search="" results="">
 
-<ul>
-  <li><a href="/latest/data-integrate/embrace/embrace-intro.html">Embrace overview</a></li>
-  <li><a href="/latest/data-integrate/embrace/embrace-snowflake-add.html">Add a Snowflake connection</a></li>
-  <li><a href="/latest/data-integrate/embrace/embrace-snowflake-modify.html">Modify a Snowflake connection</a></li>
-</ul>
+### Best practices for data modeling
+
+Here are some examples of how you can model your data to enhance searchability:
+
+- Change column names
+- Add synonyms for columns
+
+In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.
+
+<screenshot example="">
+
+These are just a couple of examples of things you can do.
+
+For more information about data modeling, see:
+- [Overview of data modeling settings](/latest/admin/data-modeling/data-modeling-settings.html)
+
+
+## Related information
+
+- [Embrace overview](/latest/data-integrate/embrace/embrace-intro.html)
+- [Add a Snowflake connection](/latest/data-integrate/embrace/embrace-snowflake-add.html)
+- [Modify a Snowflake connection](/latest/data-integrate/embrace/embrace-snowflake-modify.html)
+</screenshot></screenshot>
 
   <div class="tags">
     <div style="float:right;">
@@ -3683,7 +3825,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Feb 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 2/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
