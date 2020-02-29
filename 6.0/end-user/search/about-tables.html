@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Results that are tables”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Your search results are not limited by the number of attributes or columns in order to be presented as a table. You can have a table with just one attribute or measure. When you choose to display your answer as a table, ThoughtSpot will create the columns for you and any relevant headlines." />
-<meta property="og:description" content="Your search results are not limited by the number of attributes or columns in order to be presented as a table. You can have a table with just one attribute or measure. When you choose to display your answer as a table, ThoughtSpot will create the columns for you and any relevant headlines." />
+<meta name="description" content="In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type revenue, you see the total sum of revenue as a single number. If you include the keyword monthly, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns. You can also change the column widths." />
+<meta property="og:description" content="In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type revenue, you see the total sum of revenue as a single number. If you include the keyword monthly, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns. You can also change the column widths." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:53:19-08:00" />
+<meta property="article:published_time" content="2020-02-28T18:10:01-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Results that are tables”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Results that are tables”]","dateModified":"2020-02-25T11:53:19-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html","datePublished":"2020-02-25T11:53:19-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html"},"description":"Your search results are not limited by the number of attributes or columns in order to be presented as a table. You can have a table with just one attribute or measure. When you choose to display your answer as a table, ThoughtSpot will create the columns for you and any relevant headlines.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Results that are tables”]","dateModified":"2020-02-28T18:10:01-08:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html","datePublished":"2020-02-28T18:10:01-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/about-tables.html"},"description":"In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type revenue, you see the total sum of revenue as a single number. If you include the keyword monthly, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns. You can also change the column widths.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -802,18 +802,30 @@ var ss360Config = {
                 
                   
                    <li class="levelThree">
-                       <a href="#">Changing a chart</a>
+                       <a href="#">Changing charts</a>
                        <ul>
                         
                           
                               
-                                  <li><a href="/6.0/end-user/search/change-the-chart.html">Change the chart</a></li>
+                                  <li><a href="/6.0/end-user/search/change-the-chart.html">Changing charts</a></li>
                               
                             
                         
                           
                               
                                   <li><a href="/6.0/end-user/search/chart-axes-options.html">Change axes options</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/drag-and-drop.html">Configure the columns</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/column-renaming.html">Rename columns and axes</a></li>
                               
                             
                         
@@ -843,7 +855,31 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/end-user/search/show-data-labels.html">Additional chart options</a></li>
+                                  <li><a href="/6.0/end-user/search/show-data-labels.html">Show data labels</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/show-data-markers.html">Show data markers</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/regression-line.html">Add regression lines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/gridlines.html">Display gridlines</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/end-user/search/lock-chart-type.html">Disable automatic selection of chart type</a></li>
                               
                             
                         
@@ -3609,26 +3645,14 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span>
  -->
 
     
 
-  <p>Your search results are not limited by the number of attributes or columns in
-order to be presented as a table. You can have a table with just one attribute
-or measure. When you choose to display your answer as a table, ThoughtSpot will
-create the columns for you and any relevant headlines.</p>
-
-<p>Sometimes when you view a table, the results will be aggregated (combined). For
-example, if you only type “revenue”, you can see the total sum of all the revenue
-the table contains as one combined number. If you include the keyword <code class="language-plaintext highlighter-rouge">monthly</code>,
-the results will be aggregated by month. You can rearrange the column order of
-your table among other search actions.</p>
-
-<p>Every table gives you the option to rearrange the column order and change the
-column widths.</p>
+  <p>In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type <code class="language-plaintext highlighter-rouge">revenue</code>, you see the total sum of revenue as a single number. If you include the keyword <code class="language-plaintext highlighter-rouge">monthly</code>, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns. You can also change the column widths.</p>
 
 <h2 id="rearrange-column-order">Rearrange column order</h2>
 
@@ -3652,6 +3676,15 @@ when you pin the table to a pinboard. To resize the column widths:</p>
   <li>Click and drag the border to create your preferred column width.</li>
 </ol>
 
+<h2 id="clip-wrap-text">Clip or wrap text</h2>
+<p>You can clip or wrap long text in a table cell, or on a table header.</p>
+
+<p>When you clip long text, the table cells show only the beginning of the text. The rest appears if you increase the column width.</p>
+
+<p>When you wrap long text, the table shows all the text in its cells by increasing the number of lines in the cells.</p>
+
+<p><img src="/6.0/images/chart-config-text.gif" alt="Wrap or clip long text" title="Wrap or clip long text" /></p>
+
 <h2 id="sort-columns">Sort columns</h2>
 
 <p>You can sort a table by column values by clicking on the column title. If you
@@ -3668,7 +3701,7 @@ sortable in this manner.</div>
 summary information for each column of a table. They appear at the bottom of the
 table in individual boxes.</p>
 
-<p><img src="/6.0/images/headlines.png" alt="" title="Headlines at the bottom of a table" /></p>
+<p><img src="/6.0/images/chartconfig-headlines.png" alt="" title="Headlines at the bottom of a table" /></p>
 
 <p>ThoughtSpot automatically creates up to 20 headlines for each table. Your
 ThoughtSpot configuration can be changed to accommodate more if needed.</p>
@@ -3692,7 +3725,7 @@ appropriate columns.</p>
 
 <p>In the following example, the table aggregate is shown as a result of the Average Profit formula <code class="language-plaintext highlighter-rouge">sum ( profit ) / count ( ship mode )</code> which divides the total profit of each ship mode by the sum total count for that ship mode. Table Aggregate, recalculates that function for the entire table taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes, providing a table aggregate average profit of 181. This a more useful result compared to the Avg headline option which would simply sum the the average profit for all ship modes and divide it by the number of ship modes (3), providing an average of 187.</p>
 
-<p><img src="/6.0/images/headlines_table_agg.png" alt="" title="Table aggregate headline" /></p>
+<p><img src="/6.0/images/chartconfig-aggregate-headlines.png" alt="" title="Table aggregate headline" /></p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3719,9 +3752,9 @@ appropriate columns.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Feb 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
