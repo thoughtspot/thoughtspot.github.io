@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 ThoughtSpot version 6.0.3 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.
+fixed issues from previous releases, and any known issues.
 
 * [6.0.3 Fixed Issues](#6-0-3-fixed)
 * [6.0.2 New Features](#6-0-2-new)
@@ -22,7 +22,7 @@ fixed issues from the previous releases, and any known issues.
 {: id="6-0-3-fixed"}
 ## 6.0.3 Fixed Issues
 
-The following issues are fixed in the 6.0.3 release:
+The following issue is fixed in the 6.0.3 release:
 
 - Dates shown in the ThoughtSpot UI may be shifted by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.
 
