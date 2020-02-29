@@ -1,14 +1,15 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: January, 2020
+last_updated: February 29, 2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.2 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.
+ThoughtSpot version 6.0.3 is now available. These release notes include information about new features,
+fixed issues from previous releases, and any known issues.
 
+* [6.0.3 Fixed Issues](#6-0-3-fixed)
 * [6.0.2 New Features](#6-0-2-new)
 * [6.0.2 Fixed Issues](#6-0-2-fixed)
 * [6.0.1 Fixed Issues](#6-0-1-fixed)
@@ -17,6 +18,13 @@ fixed issues from the previous releases, and any known issues.
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
+
+{: id="6-0-3-fixed"}
+## 6.0.3 Fixed Issues
+
+The following issue is fixed in the 6.0.3 release:
+
+- Dates shown in the ThoughtSpot UI may be shifted by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.
 
 {: id="6-0-2-new"}
 ## 6.0.2 New Features and Functionality
@@ -229,16 +237,16 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.2 release
+If you are running one of the following versions, you can upgrade to the 6.0.3 release
 directly:
 
-* 5.3.x to 6.0.2
-* 5.2.x to 6.0.2
+* 5.3.x to 6.0.3
+* 5.2.x to 6.0.3
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.2 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.3 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
