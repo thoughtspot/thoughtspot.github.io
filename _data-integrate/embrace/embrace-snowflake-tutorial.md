@@ -7,83 +7,97 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.
+Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot.  
 
-## Joining tables in a Snowflake connection
+The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your try.thoughtspot.com account.
 
-To join tables in a Snowflake connection, do the following:
+## Creating table joins
+
+The joins in the Sales table were created by doing the following:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Tables** tab at the top of the page.
 
-3. Click the name of your Snowflake connection.
-
-   ![]({{ site.baseurl }}/images/select-connection.png "select Connection")
-
-4. Click the **Sales** table.
+3. Click the **Sales** table.
 
    The Columns view of the Sales table appears.
 
-5. Click the **Schema** tab.  
+4. Click the **Schema** tab.  
 
-6. Click **+Add join**.
+5. Click **+Add join**.
 
    The Add Join window appears.
 
-7. In the Add Join window, use the drop-down menus to make the following selections:
+6. In the Add Join window, use the drop-down menus to make the following selections:
    - For Destination Table, select **Products**.
    - For Source Columns, select **Product_Key**.
    - For Destination Columns, select **Product_Key**.
 
-8. Click **Next**.
+   ![]({{ site.baseurl }}/images/snow-add-join.png "Add Join for Products")
 
-9. Enter the name _Product Key - Product key_, a description for your join (optional), and click **Next**.
+7. Click **Next**.
+
+8. Enter the name _Product_Key - Product_Key_, a description for your join (optional), and click **Next**.
+
+   ![]({{ site.baseurl }}/images/snow-add-join-name.png "Join Name Products")
 
    The first join is created. Now you will add the other joins.
 
-10. Click **+Add join**.
+9. Click **+Add join**.
 
-11. In the Add Join window, use the drop-down menus to make the following selections:
-   - For Destination Table, select **Customers**.
-   - For Source Columns, select **Customer_Key**.
-   - For Destination Columns, select **Customer_Key**.
+10. In the Add Join window, use the drop-down menus to make the following selections:
+    - For Destination Table, select **Customers**.
+    - For Source Columns, select **Customer_Key**.
+    - For Destination Columns, select **Customer_Key**.
 
-12. Click **Next**.
+    ![]({{ site.baseurl }}/images/snow-add-join2.png "Add Join for Customers")
 
-13. Enter the name _Customer Key - Customer key_, a description for your join (optional), and click **Next**.
+11. Click **Next**.
 
-14. Click **+Add join**.
+12. Enter the name _Customer_Key - Customer_Key_, a description for your join (optional), and click **Next**.
 
-15. In the Add Join window, use the drop-down menus to make the following selections:
-   - For Destination Table, select **Stores**.
-   - For Source Columns, select **Store_Key**.
-   - For Destination Columns, select **Store_Key**.
+    ![]({{ site.baseurl }}/images/snow-add-join-name2.png "Join Name Customers")
 
-16. Click **Next**.
+13. Click **+Add join**.
 
-17. Enter the name _Store Key_, a description for your join (optional), and click **Next**.
+14. In the Add Join window, use the drop-down menus to make the following selections:
+    - For Destination Table, select **Stores**.
+    - For Source Columns, select **Store_Key**.
+    - For Destination Columns, select **Store_Key**.
 
-18. Click **+Add join**.
+    ![]({{ site.baseurl }}/images/snow-add-join3.png "Add Join for Stores")
 
-19. In the Add Join window, use the drop-down menus to make the following selections:
-   - For Destination Table, select **Dates**.
-   - For Source Columns, select **Date_Key**.
-   - For Destination Columns, select **Date_Key**.
+15. Click **Next**.
 
-20. Click **Next**.
+16. Enter the name _Store_Key-Store_Key_, a description for your join (optional), and click **Next**.
 
-21. Enter the name _Sales - Date_, a description for your join (optional), and click **Next**.
+    ![]({{ site.baseurl }}/images/snow-add-join-name3.png "Join Name Stores")
+
+17. Click **+Add join**.
+
+18. In the Add Join window, use the drop-down menus to make the following selections:
+    - For Destination Table, select **Dates**.
+    - For Source Columns, select **Date_Key**.
+    - For Destination Columns, select **Date_Key**.
+
+    ![]({{ site.baseurl }}/images/snow-add-join4.png "Add Join for Dates")
+
+19. Click **Next**.
+
+20. Enter the name _Date_Key - Date_Key_, a description for your join (optional), and click **Next**.
+
+    ![]({{ site.baseurl }}/images/snow-add-join-name4.png "Join Name Dates")
 
     Now that all four table joins are created, the schema looks like this:
 
-    <insert screenshot of schema>
+    ![]({{ site.baseurl }}/images/snow-schema.png "schema")
 
 ### Searching joined tables
 
-You can easily search the joined tables.
+You can easily search the joined tables, without having to create a worksheet.
 
-To search the tables, do the following:
+To search the joined tables, do the following:
 
 1. Click **Search**.
 
@@ -93,7 +107,7 @@ To search the tables, do the following:
 
 4. In the search bar, enter **sales_dollar_amount**, **store_region**, and **monthly**.
 
-<screenshot example of search results>
+   ![]({{ site.baseurl }}/images/snow-search-results.png "search results")
 
 ### Best practices for data modeling
 
@@ -104,13 +118,13 @@ Here are some examples of how you can model your data to enhance searchability:
 
 In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.
 
-<screenshot example>
+   ![]({{ site.baseurl }}/images/snow-model-best.png "search results")
 
 These are just a couple of examples of things you can do.
 
 For more information about data modeling, see:
-- [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
 
+- [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
 
 ## Related information
 
