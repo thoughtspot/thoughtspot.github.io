@@ -24,7 +24,7 @@ fixed issues from previous releases, and any known issues.
 
 The following issue is fixed in the 6.0.3 release:
 
-- Dates shown in the ThoughtSpot UI may be shifted by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.
+- Dates shown in the ThoughtSpot UI may be offset by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.
 
 {: id="6-0-2-new"}
 ## 6.0.2 New Features and Functionality
