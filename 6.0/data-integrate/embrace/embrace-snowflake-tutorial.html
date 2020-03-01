@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Snowflake Partner Connect Tutorial”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away." />
-<meta property="og:description" content="If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away." />
+<meta name="description" content="Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot." />
+<meta property="og:description" content="Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-29T10:35:31-08:00" />
+<meta property="article:published_time" content="2020-02-29T18:25:36-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Snowflake Partner Connect Tutorial”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-02-29T10:35:31-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-02-29T10:35:31-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-02-29T18:25:36-08:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-02-29T18:25:36-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3652,23 +3652,20 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If the tables in your Snowflake connection do not have joins, you can easily create joins in ThoughtSpot. This allows you to build a relationship between those tables, and use ThoughtSpot to ask questions and get answers, right away.</p>
+  <p>Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot.</p>
 
-<h2 id="joining-tables-in-a-snowflake-connection">Joining tables in a Snowflake connection</h2>
+<p>The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your try.thoughtspot.com account.</p>
 
-<p>To join tables in a Snowflake connection, do the following:</p>
+<h2 id="creating-table-joins">Creating table joins</h2>
+
+<p>The joins in the Sales table were created by doing the following:</p>
 
 <ol>
   <li>
     <p>Click <strong>Data</strong> in the top navigation bar.</p>
   </li>
   <li>
-    <p>Click the <strong>Connections</strong> tab at the top of the page.</p>
-  </li>
-  <li>
-    <p>Click the name of your Snowflake connection.</p>
-
-    <p><img src="/6.0/images/select-connection.png" alt="" title="select Connection" /></p>
+    <p>Click the <strong>Tables</strong> tab at the top of the page.</p>
   </li>
   <li>
     <p>Click the <strong>Sales</strong> table.</p>
@@ -3689,12 +3686,16 @@ $('#toc').on('click', 'a', function() {
       <li>For Source Columns, select <strong>Product_Key</strong>.</li>
       <li>For Destination Columns, select <strong>Product_Key</strong>.</li>
     </ul>
+
+    <p><img src="/6.0/images/snow-add-join.png" alt="" title="Add Join for Products" /></p>
   </li>
   <li>
     <p>Click <strong>Next</strong>.</p>
   </li>
   <li>
-    <p>Enter the name <em>Product Key - Product key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+    <p>Enter the name <em>Product_Key - Product_Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p><img src="/6.0/images/snow-add-join-name.png" alt="" title="Join Name Products" /></p>
 
     <p>The first join is created. Now you will add the other joins.</p>
   </li>
@@ -3707,12 +3708,16 @@ $('#toc').on('click', 'a', function() {
       <li>For Source Columns, select <strong>Customer_Key</strong>.</li>
       <li>For Destination Columns, select <strong>Customer_Key</strong>.</li>
     </ul>
+
+    <p><img src="/6.0/images/snow-add-join2.png" alt="" title="Add Join for Customers" /></p>
   </li>
   <li>
     <p>Click <strong>Next</strong>.</p>
   </li>
   <li>
-    <p>Enter the name <em>Customer Key - Customer key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+    <p>Enter the name <em>Customer_Key - Customer_Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p><img src="/6.0/images/snow-add-join-name2.png" alt="" title="Join Name Customers" /></p>
   </li>
   <li>
     <p>Click <strong>+Add join</strong>.</p>
@@ -3723,12 +3728,16 @@ $('#toc').on('click', 'a', function() {
       <li>For Source Columns, select <strong>Store_Key</strong>.</li>
       <li>For Destination Columns, select <strong>Store_Key</strong>.</li>
     </ul>
+
+    <p><img src="/6.0/images/snow-add-join3.png" alt="" title="Add Join for Stores" /></p>
   </li>
   <li>
     <p>Click <strong>Next</strong>.</p>
   </li>
   <li>
-    <p>Enter the name <em>Store Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+    <p>Enter the name <em>Store_Key-Store_Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p><img src="/6.0/images/snow-add-join-name3.png" alt="" title="Join Name Stores" /></p>
   </li>
   <li>
     <p>Click <strong>+Add join</strong>.</p>
@@ -3739,25 +3748,28 @@ $('#toc').on('click', 'a', function() {
       <li>For Source Columns, select <strong>Date_Key</strong>.</li>
       <li>For Destination Columns, select <strong>Date_Key</strong>.</li>
     </ul>
+
+    <p><img src="/6.0/images/snow-add-join4.png" alt="" title="Add Join for Dates" /></p>
   </li>
   <li>
     <p>Click <strong>Next</strong>.</p>
   </li>
   <li>
-    <p>Enter the name <em>Sales - Date</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+    <p>Enter the name <em>Date_Key - Date_Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
+
+    <p><img src="/6.0/images/snow-add-join-name4.png" alt="" title="Join Name Dates" /></p>
 
     <p>Now that all four table joins are created, the schema looks like this:</p>
 
-    <insert screenshot="" of="" schema="">
-
-</insert>
+    <p><img src="/6.0/images/snow-schema.png" alt="" title="schema" /></p>
   </li>
 </ol>
+
 <h3 id="searching-joined-tables">Searching joined tables</h3>
 
-<p>You can easily search the joined tables.</p>
+<p>You can easily search the joined tables, without having to create a worksheet.</p>
 
-<p>To search the tables, do the following:</p>
+<p>To search the joined tables, do the following:</p>
 
 <ol>
   <li>
@@ -3771,34 +3783,39 @@ $('#toc').on('click', 'a', function() {
   </li>
   <li>
     <p>In the search bar, enter <strong>sales_dollar_amount</strong>, <strong>store_region</strong>, and <strong>monthly</strong>.</p>
+
+    <p><img src="/6.0/images/snow-search-results.png" alt="" title="search results" /></p>
   </li>
 </ol>
 
-<screenshot example="" of="" search="" results="">
+<h3 id="best-practices-for-data-modeling">Best practices for data modeling</h3>
 
-### Best practices for data modeling
+<p>Here are some examples of how you can model your data to enhance searchability:</p>
 
-Here are some examples of how you can model your data to enhance searchability:
+<ul>
+  <li>Change column names</li>
+  <li>Add synonyms for columns</li>
+</ul>
 
-- Change column names
-- Add synonyms for columns
+<p>In the following example, the <em>Sales_Dollar_Amount</em> column was renamed to Sales and the synonyms of <em>Revenue</em> and <em>Dollars</em> were added.</p>
 
-In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.
+<p><img src="/6.0/images/snow-model-best.png" alt="" title="search results" /></p>
 
-<screenshot example="">
+<p>These are just a couple of examples of things you can do.</p>
 
-These are just a couple of examples of things you can do.
+<p>For more information about data modeling, see:</p>
 
-For more information about data modeling, see:
-- [Overview of data modeling settings](/6.0/admin/data-modeling/data-modeling-settings.html)
+<ul>
+  <li><a href="/6.0/admin/data-modeling/data-modeling-settings.html">Overview of data modeling settings</a></li>
+</ul>
 
+<h2 id="related-information">Related information</h2>
 
-## Related information
-
-- [Embrace overview](/6.0/data-integrate/embrace/embrace-intro.html)
-- [Add a Snowflake connection](/6.0/data-integrate/embrace/embrace-snowflake-add.html)
-- [Modify a Snowflake connection](/6.0/data-integrate/embrace/embrace-snowflake-modify.html)
-</screenshot></screenshot>
+<ul>
+  <li><a href="/6.0/data-integrate/embrace/embrace-intro.html">Embrace overview</a></li>
+  <li><a href="/6.0/data-integrate/embrace/embrace-snowflake-add.html">Add a Snowflake connection</a></li>
+  <li><a href="/6.0/data-integrate/embrace/embrace-snowflake-modify.html">Modify a Snowflake connection</a></li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
