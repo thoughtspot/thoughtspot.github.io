@@ -8,31 +8,6 @@ permalink: /:collection/:path.html
 {: id="aws-overview"}
 ## Overview of ThoughtSpot setup in AWS
 Follow these steps to set up your ThoughtSpot VMs in AWS.
-<<<<<<< HEAD
-<table>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#s3-bucket-setup" class="noCrossRef">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#aws-ts-setup-cluster" class="noCrossRef">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups" class="noCrossRef">5. Configure security groups.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups" class="noCrossRef">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#prepare-vms" class="noCrossRef">7. Prepare the VMs.</a></td></tr>
-</table>
-=======
 
 | &#10063; | [1. Get access to ThoughtSpot's AMI](#ami). |
 | &#10063; | [2. Choose a VM instance configuration recommended by ThoughtSpot.](#ec2-setup) |
@@ -64,24 +39,7 @@ To install and launch ThoughtSpot, you must have the following:
 | &#10063; | The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows. |
 | &#10063; | Networking information: Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf) to have a quick reference point. Ask your network administrator if you need help filling out the site survey. |
 
-<!--<table>
-  <tr>
-    <td>&#10063;</td>
-    <td>Familiarity with Linux administration, and a general understanding of cloud deployment models.</td></tr>
-  <tr>
-    <td>&#10063;</td>
-    <td>The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.</td></tr>
-  <tr>
-    <td>&#10063;</td>
-    <td>Networking information: <a href="{{ site.baseurl }}/site-survey.pdf">download</a> and fill out the ThoughtSpot site survey to have a quick reference point. Ask your network administrator if you need help filling out the site survey.</td>
-  </tr>
-<<<<<<< HEAD
-</table>
-  For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:class="noCrossRef" target="_blank"} in Amazon's AWS documentation.
-=======
-</table>-->
   For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
->>>>>>> pdf convert html to md, fixing commented out management console
 
 {: id="aws-required"}
 ### Required AWS components
