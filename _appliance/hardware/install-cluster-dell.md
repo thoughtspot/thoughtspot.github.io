@@ -1,7 +1,7 @@
 ---
 title: [Install Cluster]
 summary: "Install your ThoughtSpot cluster(s) on your Dell appliance."
-last_updated: 2/6/2020
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,20 +12,9 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 Follow the steps in this checklist to install your cluster.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-1">Step 1: Run the installer</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-2">Step 2: Check cluster health</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-3">Step 3: Finalize installation</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Run the installer](#install-step-1) |
+| &#10063; | [Step 2: Check cluster health](#install-step-2) |
+| &#10063; | [Step 3: Finalize installation](#install-step-3) |
 
 {: id="install-step-1"}
 ## Step 1: Run the installer

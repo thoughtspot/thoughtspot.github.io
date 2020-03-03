@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: 1/10/2020
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -33,7 +33,7 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
-3. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
+3. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
 
 ## Use the OVF to Create a VM
 

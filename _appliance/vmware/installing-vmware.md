@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in VMware]
-last_updated: 12/12/2019
+last_updated: 3/3/2020
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,28 +21,11 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 ## Configure Nodes
 After creating the instance, you must configure the nodes. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-1">Step 1: Log in to your cluster</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-2">Step 2: Get a template for network configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-3">Step 3: Prepare node configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-4">Step 4: Configure the nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-vmware#node-step-5">Step 5: Confirm node configuration</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Log in to your cluster](#node-step-1) |
+| &#10063; | [Step 2: Get a template for network configuration](#node-step-2) |
+| &#10063; | [Step 3: Prepare node configuration](#node-step-3) |
+| &#10063; | [Step 4: Configure the nodes](#node-step-4) |
+| &#10063; | [Step 5: Confirm node configuration](#node-step-5) |
 
 {% include content/install/configure-nodes-steps1through5.md %}
 

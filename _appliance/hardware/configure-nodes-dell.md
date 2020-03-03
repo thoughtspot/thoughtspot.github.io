@@ -1,31 +1,17 @@
 ---
 title: [Configure Nodes]
 summary: "Configure ThoughtSpot nodes on your Dell appliance."
-last_updated: 1/22/2020
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="configure-nodes"}
 After you connect the appliance, a command line appears on your console. Configure the nodes on this command line. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-dell#node-step-1">Step 1: Get a template for network configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-dell#node-step-2">Step 2: Prepare node configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-dell#node-step-3">Step 3: Configure the nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-dell#node-step-4">Step 4: Confirm node configuration</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Get a template for network configuration](#node-step-1) |
+| &#10063; | [Step 2: Prepare node configuration](#node-step-2) |
+| &#10063; | [Step 3: Configure the nodes](#node-step-3) |
+| &#10063; | [Step 4: Confirm node configuration](#node-step-4) |
 
 {: id="node-step-1"}
 ## Step 1: Get a template for network configuration

@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 1/22/2020
+last_updated: 3/3/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -33,7 +33,7 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 1. Obtain an Azure login account.
 2. Set up usage payment details with Microsoft Azure.
 3. Find your company's [Resource Group](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups). (optional--you can also create one while creating your virtual machines.)
-4. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for any networking information you may need to fill out. Ask your network administrator if you need help filling out the site survey.
+4. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out. Ask your network administrator if you need help filling out the site survey.
 
 {: id="create-instance"}
 ### Create an instance
@@ -87,7 +87,7 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     | **2** | Find your company's public IP, or **create new**. |
     | **3** | Select **Advanced** for *NIC network security group*. |
     | **4** | After you select **Advanced**, the **Configure network security group** option appears. Find your company's security group, or **create new**. When creating your security group, ensure that the required ports are open. Refer to the [minimum port requirements](#port-requirements). |
-    
+
 5. Under **Management**, configure your monitoring and management preferences. If you have no preferences, you can leave them at their default settings.
 
 6. Under **Advanced**, configure your advanced settings preferences. If you have no preferences, you can leave them at their default settings.
