@@ -1321,6 +1321,9 @@ entries:
 #  - sectiontitle: Dell Installation
 #    output: web,appQs,instDell
 #    sectionitems:
+#    - title: Hardware appliance overview
+#      url: /appliance/hardware/inthebox.html
+#      output: web,appQs,instDell
 #    - title: Deploying on the Dell appliance
 #      url: /appliance/hardware/installing-dell.html
 #      output: web,appQs,instDell
@@ -1374,6 +1377,9 @@ entries:
 #  - sectiontitle: SMC Installation
 #    output: web,appQs,instSMC
 #    sectionitems:
+#    - title: Hardware appliance overview
+#      url: /appliance/hardware/inthebox.html
+#      output: web,appQs,instSMC
 #    - title: Deploying on the SMC appliance
 #      url: /appliance/hardware/installing-the-smc.html
 #      output: web,appQs,instSMC
@@ -1798,6 +1804,9 @@ entries:
     - levelTwoTitle: Deployment reference
       output: web,refGd
       levelTwoItems:
+      - title: Cable reference
+        url: /appliance/hardware/cable-networking.html
+        output: web,appQs,instDell,instSMC
       - title: Network Policies
         url: /appliance/firewall-ports.html
         output: web,refGd

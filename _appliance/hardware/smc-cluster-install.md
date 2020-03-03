@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot Clusters on the SMC Appliance]
-last_updated: [2/6/2020]
+last_updated: [3/3/2020]
 summary: "Install your clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,7 +9,13 @@ Install the cluster using the ThoughtSpot software release bundle. Installation 
 
 Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you have not received a link to download the release bundle, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release bundle.
 
-{: id="run-installer"}
+Follow the steps in this checklist to install your cluster.
+
+| &#10063; | [Step 1: Run the installer](#install-step-1) |
+| &#10063; | [Step 2: Check cluster health](#install-step-2) |
+| &#10063; | [Step 3: Finalize installation](#install-step-3) |
+
+{: id="install-step-1"}
 ## Step 1. Run the Installer
 2. Copy the downloaded release bundle to `/export/sdb1/TS_TASKS/install`.
 Run `scp <release-number>.tar.gz admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>`.
@@ -59,6 +65,7 @@ Run `tscli cluster create <release-number>`.
 
   Log in to any node to check the current cluster status, using the command `tscli cluster status`.
 
+{: id="install-step-2"}
 ## Step 2. Check Cluster Health
 After you install the cluster, check its status using the `tscli cluster status` and `tscli cluster check` commands.
 
@@ -153,6 +160,7 @@ Your output may look something like the above. Ensure that all diagnostics show 
 
 {% include warning.html content="If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster." %}
 
+{: id="install-step-3"}
 ## Step 3. Finalize Installation
 
 After the cluster status changes to “Ready,” sign in to the ThoughtSpot application on your browser.<br>

@@ -7,32 +7,12 @@ permalink: /:collection/:path.html
 ---
 After you connect the appliance, configure the nodes in your Mac or Windows terminal emulator. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-1">Step 1: SSH into your cluster</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-2">Step 2: Change to the <code>install</code> directory</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-3">Step 3: Get a template for network configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-4">Step 4: Prepare node configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-5">Step 5: Configure the nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="configure-nodes-smc#node-step-6">Step 6: Confirm node configuration</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: SSH into your cluster](#node-step-1) |
+| &#10063; | [Step 2: Change to the `install` directory](#node-step-2) |
+| &#10063; | [Step 3: Get a template for node configuration](#node-step-3) |
+| &#10063; | [Step 4: Prepare node configuration](#node-step-4) |
+| &#10063; | [Step 5: Configure the nodes](#node-step-5) |
+| &#10063; | [Step 6: Confirm node configuration](#node-step-6) | 
 
 If you completed ThoughtSpot's [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
 

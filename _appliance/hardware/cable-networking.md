@@ -1,7 +1,7 @@
 ---
 title: [Cable networking]
-summary: This section reviews the types of cables needed for 10GbE networking and how to plug them in.
-last_updated: 12/12/2019
+summary: This section reviews the types of cables needed for 10GbE networking with your Dell or SMC appliance, and how to plug them in.
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,7 +20,7 @@ Fiber can be run long distances to the switch.
 
 These cables require gigabit interface converters (GBICs), SFP+ form factor.
 
-**Remember:** ThoughtSpot does not supply cables or GBICs
+**Remember:** ThoughtSpot does not supply cables. Your Dell appliance may come with one appliance-side SFP+ per node, but not the switch-side SFP+'s.
 
 ![]({{ site.baseurl }}/images/gbics.png "GBICs")
 

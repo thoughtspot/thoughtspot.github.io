@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 2/27/2020
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ The following topics walk you through this process.
 
 1. Ensure that your **Network Service Tier** on the [Google Cloud Console](https://console.cloud.google.com/) is set to **Premium** for the best performance of all your VMs.
 2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. You must ensure this *before* creating a new cluster.
-3. <a href="{{ site.baseurl }}/site-survey.pdf" download>Download</a> and fill out the ThoughtSpot site survey to have a quick reference for your networking information. Ask your network administrator if you need help filling out the site survey.
+3. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for your networking information. Ask your network administrator if you need help filling out the site survey.
 
 ## Setting up your Google Cloud Storage (GCS) bucket
 

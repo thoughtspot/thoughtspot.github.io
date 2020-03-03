@@ -7,24 +7,10 @@ permalink: /:collection/:path.html
 ---
 After you rack and stack the appliance, it is time to configure it. If necessary, review the [Hardware Appliance Overview]({{ site.baseurl }}/appliance/hardware/inthebox.html). Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-1">Step 1: Connect switches to 10GbE ports</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-2">Step 2: Connect IPMI ports</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-3">Step 3: Turn on nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-4">Step 4: Log in</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Connect switches to 10GbE ports](#appliance-step-1) |
+| &#10063; | [Step 2: Connect IPMI ports](#appliance-step-2) |
+| &#10063; | [Step 3: Turn on nodes](#appliance-step-3) |
+| &#10063; | [Step 4: Log in](#appliance-step-4) |
 
 {: id="appliance-step-1"}
 ## Step 1: Connect switches to 10GbE ports
