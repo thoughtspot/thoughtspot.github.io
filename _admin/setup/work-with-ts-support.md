@@ -1,6 +1,6 @@
 ---
 title: [Configure support services]
-last_updated: 10/11/2019
+last_updated: 3/4/2020
 summary: "There are several configurations you can set up in your installation to ensure
 your company's support from ThoughtSpot works smoothly."
 sidebar: mydoc_sidebar
@@ -24,51 +24,6 @@ company's security policies allow reverse tunneling.
 
 {% include note.html content="Before you set up a reverse tunnel, open port `22`
 in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %}
-<!--### Using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-1. Log in to ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Edit** option.
-
-   ![]({{ site.baseurl }}/images/ssh.png)  
-
-5. Enter the reverse tunnel details:
-
-      ![]({{ site.baseurl }}/images/ssh-configure.png)
-
-      <table>
-      <colgroup>
-      <col width="20%" />
-      <col width="80%" />
-      </colgroup>
-      <tr>
-      <th>Field</th>
-      <th>Description</th>
-      </tr>
-      <tr>
-      <th>Have you whitelisted tunnelrelay.thoughtspot.com?</th>
-      <td>Ensure that this has been done before you enable the SSH tunnel. Select <b> Yes </b> to continue.</td>
-      </tr>
-      <tr>
-      <th>Reverse SSH Tunnel</th>
-      <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
-      </tr>
-      </table>
-
-6. Click **Save** to configure the SSH tunnel.
-
-You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
--->
 
 {: id="remote-support-tscli"}
 ## Using remote support with tscli
