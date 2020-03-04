@@ -10,7 +10,7 @@ ThoughtSpot is installed or updated from a release tarball that contains the Tho
 
 ThoughtSpot patches the Operating System at the time of upgrades. Installation and upgrade use the same process, replacing the older OS image on a node by the new image delivered in the release tarball.
 
-{% include note.html content="ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available." %}
+{% include note.html content="ThoughtSpot Support may contact you to schedule an update when a minor or major upgrade becomes available. You can also ask for your cluster to be upgraded whenever one is justified by your business requirements. Work with ThoughtSpot support team to schedule your upgrade so that they can confirm good health of the cluster before proceeding." %}
 
 <!--## Upgrade using Management Console
 
