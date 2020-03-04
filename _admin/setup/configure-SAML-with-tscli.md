@@ -1,12 +1,12 @@
 ---
 title: [Configure SAML]
-last_updated: 10/11/2019
+last_updated: 3/4/2020
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
+ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
 
 {: id="prerequisites"}
 ## Configuration prerequisites
