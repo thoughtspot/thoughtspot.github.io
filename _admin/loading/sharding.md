@@ -48,19 +48,23 @@ dimension table is known as _co-sharding_.
 ## How to shard
 
 Sharding is a type partitioning and is sometimes called _Horizontal
-partitioning_. The term sharding is particular to situations where data is
-distributed not only among tables but across nodes in a system. To create a
-sharded table add the add `PARTITION BY HASH ( )` clause to your `CREATE TABLE`
-statement.
+partitioning_. The term _sharding_ is particular to situations where data is
+distributed not only among tables, but also across nodes in the system. To create a sharded tablem add the `PARTITION BY HASH ( )` clause to your `CREATE TABLE` statement.
 
 ```
-TQL> CREATE TABLE ...
-...PARTITION BY HASH (96) KEY ("customer_id");
+TQL> CREATE TABLE
+...
+PARTITION BY HASH (96) KEY ("customer_id");
 ```
 
-The `HASH` parameter determines the number of shards and the `KEY` parameter the
-sharding key. The recommended number of shards depends upon the number of nodes
-in your cluster:
+Here,
+<dl>
+  <dlentry><dt>HASH</dt><dd>Determines the number of shards.</dd></dlentry>
+  <dlentry><dt>KEY</dt><dd>Specifies how to assign data into the shards (sharding key).</dd></dlentry>
+</dl>
+
+The recommended number of shards depends on the number of nodes
+in the cluster:
 
 |Number of Nodes|Number of Shards|
 |---------------|----------------|
@@ -92,13 +96,33 @@ TQL> CREATE TABLE "supplier" (
   )  PARTITION BY HASH (96) KEY ("s_suppkey");
 ```
 
-The system does not use primary keys as sharding keys by default. If you specify
-the `PARTITION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
-`KEY` parameter_ ThoughtSpot shards the table randomly. This is not recommended;
-avoid this by always ensuring you specify the `KEY` parameter with a HASH
-greater than 1 (one).
-
 ## How to choose a shard key
+
+{% include tip.html content="We recommended that you always specify the KEY parameter when `HASH` is greater than 1. If you omit the `KEY` parameter, ThoughtSpot shards the table randomly." %}
+
+ThoughtSpot does not have a default sharding key.
+
+If the table has a primary key, you must still specify it in the `KEY` parameter of the `PARTITION BY HASH` statement. This key ***must*** be a subset of the primary key.
+
+***DO***
+```
+...
+CONSTRAINT PRIMARY KEY("saleid,vendorid”))
+PARTITION BY HASH(n) KEY ("saleid");
+```
+
+```
+...
+CONSTRAINT PRIMARY KEY("saleid,vendorid”))
+PARTITION BY HASH(n) KEY ("vendorid");
+```
+
+***AVOID***
+```
+...
+CONSTRAINT PRIMARY KEY("saleid,vendorid”))
+PARTITION BY HASH(n) KEY ("locationid");
+```
 
 When you shard a large table, you select a _shard key_ from the table. This key
 exists in every shard. You can use any data type that is valid for use as the
