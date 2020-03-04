@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/data-security/set-rls.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-25T11:50:59-08:00" />
+<meta property="article:published_time" content="2020-03-03T19:02:25-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/data-security/set-rls.html"},"url":"https://docs.thoughtspot.com/5.3/admin/data-security/set-rls.html","headline":"[“Set row level security rules”]","dateModified":"2020-02-25T11:50:59-08:00","datePublished":"2020-02-25T11:50:59-08:00","description":"When rule-based row level security (RLS) is set, it prevents users from seeing data they shouldn’t in tables and the objects derived from them. You must have administrative rights on ThoughtSpot to set RLS rules.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/data-security/set-rls.html"},"url":"https://docs.thoughtspot.com/5.3/admin/data-security/set-rls.html","headline":"[“Set row level security rules”]","dateModified":"2020-03-03T19:02:25-08:00","datePublished":"2020-03-03T19:02:25-08:00","description":"When rule-based row level security (RLS) is set, it prevents users from seeing data they shouldn’t in tables and the objects derived from them. You must have administrative rights on ThoughtSpot to set RLS rules.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3325,8 +3325,8 @@ do the following:</p>
     <p>Enter an expression for your rule.</p>
 
     <p>The rule gets evaluated against an authenticated user for every row and group
-combination. If the rule evaluates to true, the user can’t see that row’s
-data. Use the variable <strong>ts_groups</strong> to refer to the group name.</p>
+combination. If the rule evaluates to <code class="highlighter-rouge">FALSE</code>, the user cannot see that row’s
+data. Instead, they see the message <code class="highlighter-rouge">No data to display.</code> Use the variable <strong>ts_groups</strong> to refer to the group name.</p>
 
     <p><img src="/5.3/images/rls_enter_expression.png" alt="" title="Enter an expression" /></p>
 
@@ -3350,8 +3350,8 @@ rules by clicking <strong>+ Add</strong>.</p>
 <h2 id="test-your-rule-with-restricted-and-unrestricted-users">Test your rule with restricted and unrestricted users</h2>
 
 <p>To test your rule, log in as users in different groups. Search within the table
-for data both that you test user can and can’t access. Make sure your test users
-are seeing the appropriate rows.</p>
+for data both that your test user can and can’t access. Make sure your test users
+can see the appropriate rows.</p>
 
 <h2 id="related-information">Related information</h2>
 
@@ -3391,9 +3391,9 @@ documentation for more information.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Feb 25, 2020 <br />
+        Generated: Mar 3, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 3/3/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
