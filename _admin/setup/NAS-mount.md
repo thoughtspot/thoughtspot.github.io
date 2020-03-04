@@ -1,6 +1,6 @@
 ---
 title: [Configure NAS file system]
-last_updated: 11/18/2019
+last_updated: 3/4/2020
 sidebar: mydoc_sidebar
 summary: "Some operations, like backup, restore, and data loading, require either
 reading or writing very large files. You can mount a network attached storage (NAS) file
@@ -26,67 +26,6 @@ name node. It is used internally by Hadoop Distributed File System (HDFS) and if
 this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
-
-<!--## Mount using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-To mount a NAS file system using the admin UI:
-
-1. Log in to ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **NAS Mount** and then  **Configure** option.
-
-   ![]({{ site.baseurl }}/images/nas.png)  
-
-
-5. Enter the mount point details:
-
-   ![]({{ site.baseurl }}/images/nas-mount.png)
-
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>Mount Type</th>
-   <td>Select the mount protocol. Supported types are network file system (NFS) and common internet file system (CIFS).</td>
-   </tr>
-   <tr>
-   <th>Server Address</th>
-   <td>Specify the IP of NFS or CIFS directory.</td>
-   </tr>
-   <tr>
-   <th>Path on Server</th>
-   <td>Specify the mount path on the server.</td>
-   </tr>
-   <tr>
-   <th>Local Mount Point</th>
-   <td>Specify the target mount point as the directory to use.</td>
-   </tr>
-   <tr>
-   <th>Optional Mount Parameters</th>
-   <td>Specify other command-line options if you wish to add. The default is <code>noexec</code>.
-   </td>
-   </tr>
-   </table>
-
-6. Click **Save** to mount a NAS file system.
-
--->
 
 {: id="mount-nas-tscli"}
 ## Mount NAS using tscli
