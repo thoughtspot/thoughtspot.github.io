@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. «««&lt; HEAD &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs. =======" />
-<meta property="og:description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. «««&lt; HEAD &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs. =======" />
+<meta name="description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS." />
+<meta property="og:description" content="Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-29T18:38:45-08:00" />
+<meta property="article:published_time" content="2020-03-03T19:25:16-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-02-29T18:38:45-08:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-02-29T18:38:45-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS. «««&lt; HEAD &#10063; 1. Gain access to ThoughtSpot&#39;s AMI. &#10063; 2. Choose a VM instance configuration recommended by ThoughtSpot. &#10063; 3. Set up your Amazon S3 bucket (optional). &#10063; 4. Set up your ThoughtSpot cluster in AWS. &#10063; 5. Configure security groups. &#10063; 6. Open the required network ports for communication for the nodes in your cluster and end users. &#10063; 7. Prepare the VMs. =======","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-03-03T19:25:16-08:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-03-03T19:25:16-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3516,6 +3516,12 @@ var ss360Config = {
                 
                   
                       
+                          <li><a href="/latest/appliance/hardware/cable-networking.html">Cable reference</a></li>
+                      
+                   
+                
+                  
+                      
                           <li><a href="/latest/appliance/firewall-ports.html">Network Policies</a></li>
                       
                    
@@ -3645,7 +3651,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    10 minutes
+    9 minutes
   
 </span>
  -->
@@ -3653,32 +3659,7 @@ $('#toc').on('click', 'a', function() {
     
 
   <h2 id="aws-overview">Overview of ThoughtSpot setup in AWS</h2>
-<p>Follow these steps to set up your ThoughtSpot VMs in AWS.
-«««&lt; HEAD</p>
-<table>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#ec2-setup" class="noCrossRef">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#s3-bucket-setup" class="noCrossRef">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#aws-ts-setup-cluster" class="noCrossRef">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups" class="noCrossRef">5. Configure security groups.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#security-groups" class="noCrossRef">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
-<tr>
-  <td>&#10063;</td>
-  <td><a href="launch-an-instance#prepare-vms" class="noCrossRef">7. Prepare the VMs.</a></td></tr>
-</table>
-<p>=======</p>
+<p>Follow these steps to set up your ThoughtSpot VMs in AWS.</p>
 
 <table>
   <tbody>
@@ -3748,38 +3729,7 @@ $('#toc').on('click', 'a', function() {
   </tbody>
 </table>
 
-<!--<table>
-  <tr>
-    <td>&#10063;</td>
-    <td>Familiarity with Linux administration, and a general understanding of cloud deployment models.</td></tr>
-  <tr>
-    <td>&#10063;</td>
-    <td>The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.</td></tr>
-  <tr>
-    <td>&#10063;</td>
-    <td>Networking information: <a href="/latest/site-survey.pdf">download</a> and fill out the ThoughtSpot site survey to have a quick reference point. Ask your network administrator if you need help filling out the site survey.</td>
-  </tr>
-<<<<<<< HEAD
-</table>
-  For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:class="noCrossRef" target="_blank"} in Amazon's AWS documentation.
-=======
-</table>-->
 <p>For more information about IAM, see: <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html" target="_blank">What Is IAM?</a> in Amazon’s AWS documentation.</p>
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <p>pdf convert html to md, fixing commented out management console</p>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </blockquote>
-</blockquote>
 
 <h3 id="aws-required">Required AWS components</h3>
 
@@ -4016,7 +3966,7 @@ Add the required storage based on your instance type (either EBS volumes or S3),
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Feb 29, 2020 <br />
+        Generated: Mar 3, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 2/27/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
