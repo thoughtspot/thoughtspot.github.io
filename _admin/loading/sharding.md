@@ -96,13 +96,15 @@ TQL> CREATE TABLE "supplier" (
   )  PARTITION BY HASH (96) KEY ("s_suppkey");
 ```
 
-## How to choose a shard key
+## How to choose a sharding key
 
 {% include tip.html content="We recommended that you always specify the KEY parameter when `HASH` is greater than 1. If you omit the `KEY` parameter, ThoughtSpot shards the table randomly." %}
 
 ThoughtSpot does not have a default sharding key.
 
-If the table has a primary key, you must still specify it in the `KEY` parameter of the `PARTITION BY HASH` statement. This key ***must*** be a subset of the primary key.
+- If the table has no primary key, the sharding is unconstrained. You can choose ***any*** subset of columns as the sharding key. If you do not specify the sharding key, ThoughtSpot implements random sharding.
+
+- If the table has a primary key, you must specify the `KEY` parameter of the `PARTITION BY HASH` statement. This sharding key ***must*** be a subset of the primary key.
 
 ***DO***
 ```
