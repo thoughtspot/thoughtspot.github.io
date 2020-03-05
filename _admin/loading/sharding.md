@@ -96,7 +96,7 @@ TQL> CREATE TABLE "supplier" (
   )  PARTITION BY HASH (96) KEY ("s_suppkey");
 ```
 
-## How to choose a shard key
+## How to choose a sharding key
 
 {% include tip.html content="We recommended that you always specify the KEY parameter when `HASH` is greater than 1. If you omit the `KEY` parameter, ThoughtSpot shards the table randomly." %}
 
