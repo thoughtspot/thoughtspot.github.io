@@ -1,29 +1,26 @@
 ---
 title: [Sharding]
-
-
-last_updated: tbd
+last_updated: 3/4/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot tables can be replicated or sharded. Replicated tables exist in
-their entirety, the complete data set, on each node. Sharded tables consist of a
-single data set divided into multiple tables or shards. The shards have
-identical schemas but different sets of data.
+their entirety, as the complete data set, on each node. Sharded tables consist of a
+single data set, divided into multiple tables, or *shards*. The shards have
+identical schemas, but different sets of data.
 
 ## When to use sharding
 
-By default, ThoughtSpot tables are replicated, you must explicitly shard tables.
-Sharding your tables impacts the total amount of memory used by the table as
+By default, ThoughtSpot replicates tables. To shard tables, you must add the `PARTITION BY HASH ( )` clause to your `CREATE TABLE` statement.
+
+Sharding your tables impacts the total amount of memory used by the table, as
 well as its performance.
 
-For example, you might shard a large table of sales data. So, you could divide a
-single sales table into shards each of which contains only the data falling
-within a single year. These shards are then distributed across several nodes.
+For example, you might shard a large table of sales data. You could divide a
+single sales table into shards that each contain only the data for a single year. The system then distributes these shards across several nodes.
 Requests for sales data are dispersed both by the year and the location of the
-shard in the node cluster. No single table or node is overloaded, and so the
-performance of a query and the system load are both improved.
+shard in the node cluster. No single table or node is overloaded, improving both query performance and system load.
 
 To optimize ThoughtSpot performance, you should _shard_ very large fact tables
 whenever possible. If you have a large dimension table, you might choose to
@@ -42,14 +39,14 @@ dimension table is known as _co-sharding_.
 |---------------           | ----------------               |
 | Number of rows in table  | 1.1 billion                    |
 | CPUS in cluster          | 256                            |   
-| HASH (128)               | ~50% of total CPUs            |
-|                          | 8.6 million rows per shard    |
+| HASH (128)               | ~50% of total CPUs             |
+| Rows per shard           | 8.6 million                    |
 
 ## How to shard
 
-Sharding is a type partitioning and is sometimes called _Horizontal
+Sharding is a type of partitioning. It is sometimes called _Horizontal
 partitioning_. The term _sharding_ is particular to situations where data is
-distributed not only among tables, but also across nodes in the system. To create a sharded tablem add the `PARTITION BY HASH ( )` clause to your `CREATE TABLE` statement.
+distributed not only among tables, but also across nodes in the system. To create a sharded table, add the `PARTITION BY HASH ( )` clause to your `CREATE TABLE` statement.
 
 ```
 TQL> CREATE TABLE
@@ -57,7 +54,7 @@ TQL> CREATE TABLE
 PARTITION BY HASH (96) KEY ("customer_id");
 ```
 
-Here,
+Note the following parameters, specifed above as `96` and `"customer_id"`: 
 <dl>
   <dlentry><dt>HASH</dt><dd>Determines the number of shards.</dd></dlentry>
   <dlentry><dt>KEY</dt><dd>Specifies how to assign data into the shards (sharding key).</dd></dlentry>
