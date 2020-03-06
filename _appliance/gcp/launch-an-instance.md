@@ -78,7 +78,7 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 
 2. Select **VM instances** on the left panel.
 
-3. Click **CREATE INSTANCE** from the top menu bar.
+3. Click the **+** icon from the top menu bar to create an instance.
 
 3. Provide a name for the instance.
 
@@ -88,8 +88,8 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 
 5. Under **Machine type**, select **custom**.
 
-6. Select the number of CPUs you need.<br>
-Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the number of CPUs your cluster needs.
+6. Select the number of vCPU cores you need.<br>
+Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the number of vCPU cores your cluster needs.
 
 6. Specify your memory requirements and CPU platform.
 Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#thoughtspot-gcp-instance-types) to determine the memory your cluster needs.
