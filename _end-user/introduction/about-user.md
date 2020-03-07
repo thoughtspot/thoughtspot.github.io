@@ -39,11 +39,6 @@ To change your email, navigate to **My Profile**. Under **Information**, enter a
 
 {: id="language" }
 ## Change language and data format settings ##
-
-To change your language, navigate to **My Profile**. Under **Preferences**, see the **Language** option to set the language.
-
-![Specify language]({{ site.baseurl }}/images/profile-locale.png "Specify language")
-
 {% include content/set_locale.md %}
 
 {: id="notifications" }
