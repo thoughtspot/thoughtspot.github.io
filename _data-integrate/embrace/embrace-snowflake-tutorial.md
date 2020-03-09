@@ -8,9 +8,9 @@ permalink: /:collection/:path.html
 ---
 When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically.
 
-If there are no joins in your Snowflake connection, you can easily create them in ThoughtSpot.  
+If there are no table joins in your Snowflake connection, you can easily create them in ThoughtSpot.  
 
-The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
+The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
 
 ## Creating table joins
 
