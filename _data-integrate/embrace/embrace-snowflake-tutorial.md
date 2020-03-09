@@ -1,8 +1,8 @@
 ---
 title: [Snowflake Partner Connect Tutorials]
-last_updated: 2/21/2020
+last_updated: 3/9/2020
 toc: true
-summary: "Explore this tutorial to learn how to model your data after connecting to your Snowflake database."
+summary: "Explore these tutorials to learn how to model your data after connecting to your Snowflake database."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
