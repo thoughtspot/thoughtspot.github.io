@@ -1,5 +1,5 @@
 ---
-title: [Snowflake Partner Connect Tutorial]
+title: [Snowflake Partner Connect Tutorials]
 last_updated: 2/21/2020
 toc: true
 summary: "Explore this tutorial to learn how to model your data after connecting to your Snowflake database."
@@ -8,9 +8,9 @@ permalink: /:collection/:path.html
 ---
 When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically.
 
-Though it is recommended to create your table joins in Snowflake, you can easily create joins in ThoughtSpot.  
+If there are no joins in your Snowflake connection, you can easily create them in ThoughtSpot.  
 
-The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your try.thoughtspot.com account.
+The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
 
 ## Creating table joins
 
@@ -140,9 +140,7 @@ In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales 
 
 These are just a couple of examples of things you can do.
 
-For more information about data modeling, see:
-
-- [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
+For more information about data modeling, see: [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
 
 ## Creating a worksheet
 
@@ -153,7 +151,7 @@ Examples of things you can do in a worksheet include:
 - Adding data labels and synonyms
 - Adding calculations, such as margin
 
-The worksheet based on the Sales table was created by doing the following:
+The worksheet based on the Sales table on **try.thoughtspot.com** was created by doing the following:
 
 1. Click **Data**.
 
@@ -169,13 +167,13 @@ The worksheet based on the Sales table was created by doing the following:
 
    ![]({{ site.baseurl }}/images/partner-connect-tables-worksheet.png)
 
-5. Make sure the default setting of **Apply joins progressively** is selected, to ensure that only the tables needed in the search are used.
+5. Make sure the default setting of **Apply joins progressively** is selected. This ensures that the search uses only the tables that are required.
 
 6. Click **Close**.
 
 7. In the Data view, click the name of the Customers table to reveal all of the columns in that table.
 
-8. Double-click each column from the Customers table you want to include in the worksheet.
+8. Double-click each column from the Customers table that you want to include in the worksheet.
 
    Include these columns:
    - Customer_Type
@@ -212,7 +210,7 @@ The worksheet based on the Sales table was created by doing the following:
 
    ![]({{ site.baseurl }}/images/partner-connect-columns-worksheet.png)
 
-   {% include note.html content="As a best practice, you would not select a key from a table, when creating a worksheet, because you would not searching for the key." %}
+   {% include note.html content="As a best practice, you would not select a key from a table when creating a worksheet, because you would not want to search for the key." %}
 
 10. Click the pencil icon ![edit icon]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} next to the current name of your worksheet, enter the name **Retail Sales**, and click **Done**.
 
@@ -264,13 +262,13 @@ The example here includes:
 
 ### Adding a currency and geo map to a worksheet
 
-To further enhance the usability of a worksheet, you can add specific a currency to monetary values and a geographic map to regions in your data.
+To further enhance the usability of a worksheet, you can add a specific currency type to monetary values, and a geographic map to regions in your data.
 
 Using the Retail Sales worksheet example, here's how geo maps and currency could be added:
 
 1. Click **Data**, and click the **Retail Sales** worksheet.
 
-2. In the Columns view, find the Sales column and click **None** the Currency Type column.
+2. In the Columns view, find the Sales column and click **None** in the Currency Type column.
 
 3. In the Specify Currency Type window, select **Specify ISO Code** and, then select **USD** from the drop-down menu.
 
@@ -280,9 +278,11 @@ Using the Retail Sales worksheet example, here's how geo maps and currency could
 
 5. In the Specify Geographic Configuration window, select **Specify Sub-nation region**, keep the default country of United States, and then select **State**.
 
+   ![]({{ site.baseurl }}/images/partner-connect-geo-config.png)
+
 6. Click **Save Changes**.
 
-Now that both currency and geographic types are set, you can see those changes reflected when you search the Retail Sales worksheet.
+   Now that both currency and geographic types are set, you can see those changes reflected when you search the Retail Sales worksheet.
 
 7. Click **Search**.
 
@@ -292,15 +292,21 @@ Now that both currency and geographic types are set, you can see those changes r
 
 10. In the search bar, enter: **sales** **store state** and press tab.
 
+    The initial search results appear, but without labels for each state.
+
+    ![]({{ site.baseurl }}/images/partner-connect-geo-curr-search-nolabels.png)
+
+    The final step is to add the labels.
+
 11. Click the Edit chart configuration icon ![gear icon]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline}
 
 12. In the Customize panel, click the **Total Sales** tile.
 
 13. In the Edit column panel, select the **Data Labels** checkbox.
 
-Now you can see currency and geographic information in your search results.
+    Now in the search results, you can see labels with the state name and total sales in US dollars.
 
-![]({{ site.baseurl }}/images/partner-connect-geo-curr-search.png)
+    ![]({{ site.baseurl }}/images/partner-connect-geo-curr-search.png)
 
 ## Related information
 
