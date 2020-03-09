@@ -1,4 +1,6 @@
-The language that ThoughtSpot displays depends on the system locale. The default locale is US English. It is simple to change this locale using the **Profile** interface.
+The language that ThoughtSpot displays depends on the system locale. If you set your browser locale or OS locale to one of ThoughtSpot's supported locales, ThoughtSpot automatically defaults to that locale. If your browser locale is not one of ThoughtSpot's supported locales, ThoughtSpot defaults to US English.
+
+It is simple to change this locale using the **Profile** interface.
 
 1. Navigate to your user profile:
 * Select your user icon next to the **help** button.
