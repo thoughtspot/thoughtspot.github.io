@@ -85,6 +85,7 @@ Depending on your situation and your goals, you can choose to use either a snaps
                         <ul>
                             <li>Include all data, state, and metadata created between
                                 snapshot create and restore.</li>
+                            <li>Snapshots do not copy over anything that is in the home directories or root partitions of an instance. If you routinely add flat files or scripts directly, make separate copies of these flat files and scripts.</li>
                             <li>Lost if the HDFS name node fails, if you lose multiple disks, or if the entire cluster is destroyed</li>
                             <li>Can be restored only to the cluster were they are taken</li>
                         </ul>
