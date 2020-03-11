@@ -9,18 +9,19 @@ permalink: /:collection/:path.html
 Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
 
 Snowflake Partner Connect benefits:
+- 30-day trial
 - Easy to sign up
 - Up and running in 5 minutes
-- Zero ThoughtSpot software cost
 - Trial data already loaded into Snowflake
 - No data modeling required
-- Successful search-driven insights within minutes of launch
+- Gain first-hand experience of the power of ThoughtSpot search-driven insights
 
 ## Prerequisites
 
 - A Snowflake account
 
   If you don't have an account, you can sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
+- Whitelist the try.thoughtspot.com IP address in your Snowflake account: `35.164.213.211`   
 - Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html).  
 
 ## Sign up for Partner Connect
