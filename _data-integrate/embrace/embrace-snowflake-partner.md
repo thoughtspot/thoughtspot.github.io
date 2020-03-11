@@ -1,5 +1,5 @@
 ---
-title: [Snowflake Partner Connect]
+title: [ThoughtSpot in Snowflake Partner Connect]
 last_updated: 2/19/2020
 toc: true
 summary: "With Snowflake Partner Connect you get a free trial of ThoughtSpot that allows you to try out ThoughtSpot Embrace to connect to Snowflake."
@@ -21,7 +21,7 @@ Snowflake Partner Connect benefits:
 - A Snowflake account
 
   If you don't have an account, you can sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
-- Whitelist the try.thoughtspot.com IP address in your Snowflake account: `35.164.213.211`   
+- Whitelist the **try.thoughtspot.com** IP address in your Snowflake account: `35.164.213.211`   
 - Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html).  
 
 ## Sign up for Partner Connect
@@ -62,6 +62,7 @@ To sign up for Partner Connect, do the following:
 
 ## Related information
 
+- [Snowflake Partner Connect Tutorials]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-tutorial.html#creating-table-joins
 - [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Modify a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html)
