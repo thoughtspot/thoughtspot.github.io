@@ -29,8 +29,7 @@ You may have view only access to a Pinboard. If you don't have edit privileges, 
 
 If you click on that icon, it tells you to request access to the Pinboard to edit it.
 
-![Request edit access]({{ site.baseurl }}/images/sharing-viewonly.png "Request edit access")
-<!--{% include image.html file="sharing-viewonly.png" title="Request edit access" alt="If you have view only access to a Pinboard, you must request edit access or request access to the underlying data source." caption="Request edit access" %}-->
+![Request edit access]({{ site.baseurl }}/images/sharing-nodataaccess.png "Request edit access")
 
 To request edit access to a Pinboard, email the owner of the Pinboard.
 
@@ -44,7 +43,6 @@ If you don't have access to a Pinboard's underlying data source, you cannot use 
 
 If you click on that icon, it tells you to request access to the data source to interact with the Pinboard. It specifies which data source you need access to. In the image below, you need access to the **Retail Sales** data source.
 
-![Request data access]({{ site.baseurl }}/images/sharing-nodataaccess.png "Request data access")
-<!--{% include image.html file="sharing-viewonly.png" title="Request edit access" alt="If you have view only access to a Pinboard, you must request edit access or request access to the underlying data source." caption="Request edit access" %}-->
+![Request data access]({{ site.baseurl }}/images/sharing-viewonly.png "Request data access")
 
 To request access to a data source, email your administrator.
