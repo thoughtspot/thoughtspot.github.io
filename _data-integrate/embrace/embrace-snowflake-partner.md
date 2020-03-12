@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
 
-Snowflake Partner Connect benefits:
+ThoughtSpot in Snowflake Partner Connect benefits:
 - 30-day trial
 - Easy to sign up
 - Up and running in 5 minutes
