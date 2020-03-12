@@ -382,29 +382,36 @@ Manages the backup policy.
 This subcommand has the following options:
 
 <dl>
+<dlentry>
 <dt><code>tscli backup-policy create</code></dt>
 <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameters:
 <dl>
+<dlentry>
 <dt><code>name</code></dt>
-<dd>Specify a name for your backup.</dd>
+<dd>Specify a name for your backup.</dd></dlentry>
+<dlentry>
 <dt><code>mode {full,light,dataless}</code></dt>
 <dd>
 <p>The backup mode. A `FULL` backup is required for restoring a cluster.</p>
 <p>The default is <code>full.</code></p>
-</dd>
+</dd></dlentry>
+<dlentry>
 <dt><code>type</code></dt>
 <dd>The backup type. Only <code>STANDALONE</code> is supported.</dd>
 <dt><code>directory</code></dt>
-<dd>The location on the disk to place the backup. You specify an existing directory path, but the folder (the last part of the path: <code>home/admin/folder</code>) must not already exist. ThoughtSpot creates the folder when it runs a backup.</dd>
+<dd>The location on the disk to place the backup. You specify an existing directory path, but the folder (the last part of the path: <code>home/admin/folder</code>) must not already exist. ThoughtSpot creates the folder when it runs a backup.</dd></dlentry>
+<dlentry>
 <dt><code>storage_type {NAS,local}</code></dt>
-<dd>The type of storage you are using. <code>NAS</code> storage is recommended for <code>FULL</code> backups.</dd>
+<dd>The type of storage you are using. <code>NAS</code> storage is recommended for <code>FULL</code> backups.</dd></dlentry>
+<dlentry>
 <dt><code>--config <em>CONFIG</em></code></dt>
-<dd>Specifies the text format of the periodic backup policy config.</dd>
+<dd>Specifies the text format of the periodic backup policy config.</dd></dlentry>
 </dl>
-</dd>
+</dd></dlentry>
+<dlentry>
 <dt><code>tscli backup-policy delete <em>NAME</em></code></dt>
-<dd>Deletes the backup policy <code>name</code>.</dd>
-</dl>
+<dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
+
   <dlentry>
     <dt><code>tscli backup-policy disable NAME</code></dt>
     <dd>Disables the policy <code>name</code>.</dd></dlentry>
