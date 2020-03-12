@@ -1,7 +1,7 @@
 ---
 title: [Configure periodic backups]
 summary: Learn how to configure automatic periodic backups.
-last_updated: 3/10/2020
+last_updated: 3/11/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,13 +12,13 @@ A periodic backup uses the same steps as creating a backup manually. However, yo
 
 ## Default policy format
 
-This is the format for a backup policy:
+This is the format for a backup policy. Note that the command populates several parameters with their defaults. The default `mode` is `FULL`, the `type` is `STANDALONE`, and the `storage_type` is `NAS`. You can change the `mode` and `storage_type`, and you must specify a `directory` and a `name`. 
 
 ```
 name: "name_for_backup"
 param {
     mode: FULL | DATALESS | LIGHTWEIGHT
-    type: FULL
+    type: STANDALONE
 }
 schedule {
     period {
@@ -46,9 +46,10 @@ schedules](how-to-create-a-schedule.html) for information on configuring a
 
 |Element|Description|
 |-------|-----------|
+|`name`|Specify a name for your backup, so you can identify it later.|
 |`mode`|The backup mode. `FULL` backups are necessary for restoring a cluster. See [understand backup modes](backup-modes.html) for details on each backup mode.|
-|`type`|Currently, only `FULL` is supported.|
-|`directory`|The location on the disk to place the backup.|
+|`type`|Only `STANDALONE` is supported.|
+|`directory`|The location on the disk to place the backup. You specify an existing directory path, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup.|
 |`storage_type`|The type of storage you are using. `NAS` storage is recommended for `FULL` backups.|
 
 ## Create a backup policy
