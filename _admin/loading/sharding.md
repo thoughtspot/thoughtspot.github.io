@@ -150,7 +150,7 @@ KEY ("saleid");
 
 The shard key is a subset of the primary key. However, that is not the only guideline to follow when choosing a shard key.
 
-1. If the table has a primary key, the shard key ***must*** be a subset of the primary key.
+1. **If the table has a primary key, the shard key must be a subset of the primary key.**
 
     If the shard key is ***not*** a subset of the primary key, and the shard key changes, data with the same primary key may reside in different nodes. This impacts ThoughtSpot's performance.
 
@@ -163,7 +163,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
 
     If you try to use a shard key that is not a subset of the primary key, your `CREATE TABLE` command returns an error.
 
-2. Choose a shard key that distributes data well across keys.
+2. **Choose a shard key that distributes data well across keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
     `saleid`,`custid`,and `locationid`. The table has 10K sales, 400 locations,
@@ -171,22 +171,26 @@ The shard key is a subset of the primary key. However, that is not the only guid
 
     As a more concrete example, suppose you want to shard a table of retail data. Many retailers have an increase in sales around the winter holidays. You should not use `date` as your shard key, because you may have five or ten times your usual number of daily transactions during the month of December. Using `date` as your shard key would result in data skew, and would impact performance.
 
+    Here is an example of data skew, where `Los Angeles` has many more transactions than the average, so you should not use `store county` as your sharding key.
+
+    ![Skew example]({{ site.baseurl }}/images/sharding-skew.png "Skew example")
+
     You may also have to clean up your data and any null values before sharding. For example, your retail data may have a `customer` column. One of the values for `customer` may be `unknown`. A value like `unknown` would exist in many more transactions than a single customer name. A value like `unknown`, or any null values, result in data skew, and impact performance.
 
-3. Choose a shard key that results in a wide variety of keys.
+3. **Choose a shard key that results in a wide variety of keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
     `saleid`,`productid`,and `locationid`. The table has 10K sales, 40
     locations, and 200 products. Even if the sales are evenly distributed across
     locations, you should not use `locationid` in your shard key, because there are only 40 possible keys. Instead, use `saleid` or `productid` for more variety.
 
-4. If you plan to join two or more tables that are both sharded, both tables must use the same shard key.
+4. **If you plan to join two or more tables that are both sharded, both tables must use the same shard key.**
 
     This guideline ensures better join performance. For example, if you have two tables
     and the primary keys are:
 
     `PRIMARY KEY("saleid,vendorid")` on A<br>
-    `PRIMARY KEY("saleid,custerid")` on B
+    `PRIMARY KEY("saleid,customerid")` on B
 
     Use `saleid` as the shard key when you shard both tables.
 
