@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Explore this tutorial to learn how to model your data after connecting to your Snowflake database."> -->
+<!-- <meta name="description" content="Explore these tutorials to learn how to model your data after connecting to your Snowflake database."> -->
 <meta name="keywords" content=",  ">
-<title>Snowflake Partner Connect Tutorial | ThoughtSpot</title>
+<title>ThoughtSpot Tutorials for Snowflake Partner Connect | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Snowflake Partner Connect Tutorial”] | thoughtspot.github.io</title>
+<title>[“ThoughtSpot Tutorials for Snowflake Partner Connect”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Snowflake Partner Connect Tutorial”]" />
+<meta property="og:title" content="[“ThoughtSpot Tutorials for Snowflake Partner Connect”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot." />
-<meta property="og:description" content="Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot." />
+<meta name="description" content="When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically." />
+<meta property="og:description" content="When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:31:38-08:00" />
+<meta property="article:published_time" content="2020-03-11T20:02:29-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Snowflake Partner Connect Tutorial”]" />
+<meta property="twitter:title" content="[“ThoughtSpot Tutorials for Snowflake Partner Connect”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Snowflake Partner Connect Tutorial”]","dateModified":"2020-03-04T19:31:38-08:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-03-04T19:31:38-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“ThoughtSpot Tutorials for Snowflake Partner Connect”]","dateModified":"2020-03-11T20:02:29-07:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html","datePublished":"2020-03-11T20:02:29-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-snowflake-tutorial.html"},"description":"When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3606,7 +3606,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Snowflake Partner Connect Tutorial</h1>
+   <h1 class="post-title-main">ThoughtSpot Tutorials for Snowflake Partner Connect</h1>
 </div>
 
 
@@ -3614,7 +3614,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Explore this tutorial to learn how to model your data after connecting to your Snowflake database.</div>
+    <div class="summary">Explore these tutorials to learn how to model your data after connecting to your Snowflake database.</div>
    
 
     
@@ -3651,16 +3651,18 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    9 minutes
   
 </span>
  -->
 
     
 
-  <p>Though it is recommended to create your table joins in Snowflake, before you create a connection in ThoughtSpot, you can easily create joins in ThoughtSpot.</p>
+  <p>When you create a connection to Snowflake in ThoughtSpot, any data modeling or table joins are inherited automatically.</p>
 
-<p>The following example shows how the joins were created in the Sales table of the Retail Sales worksheet, available in your try.thoughtspot.com account.</p>
+<p>If there are no table joins in your Snowflake connection, you can easily create them in ThoughtSpot.</p>
+
+<p>The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your <strong>try.thoughtspot.com</strong> account created through Snowflake Partner Connect.</p>
 
 <h2 id="creating-table-joins">Creating table joins</h2>
 
@@ -3702,6 +3704,8 @@ $('#toc').on('click', 'a', function() {
     <p>Enter the name <em>Product_Key - Product_Key</em>, a description for your join (optional), and click <strong>Next</strong>.</p>
 
     <p><img src="/latest/images/snow-add-join-name.png" alt="" title="Join Name Products" /></p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can use any name you want. The names we’ve chosen for this tutorial match those in the actual schema for this dataset on try.thoughtspot.com.</div>
 
     <p>The first join is created. Now you will add the other joins.</p>
   </li>
@@ -3788,9 +3792,25 @@ $('#toc').on('click', 'a', function() {
     <p>Select all the tables you just joined (Customers, Dates, Products, Sales, and Stores) and click <strong>Close</strong>.</p>
   </li>
   <li>
-    <p>In the search bar, enter <strong>sales_dollar_amount</strong>, <strong>store_region</strong>, and <strong>monthly</strong>.</p>
+    <p>In the search bar, enter <strong>sales_dollar_amount</strong>, <strong>store_region</strong>, and <strong>monthly <em>Date in Dates</em></strong>.</p>
+
+    <p><img src="/latest/images/date-in-dates.png" alt="" title="search results" /></p>
+
+    <p>The search results look like this:</p>
 
     <p><img src="/latest/images/snow-search-results.png" alt="" title="search results" /></p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When Monthly is a native keyword, it will work on any timestamp. For the purposes of this example, we’re using monthly as the date, from the Dates table.</div>
+  </li>
+  <li>
+    <p>To confirm that the search is honoring the table joins, click the Query details icon <img src="/latest/images/icon-information-20px.png" alt="query details icon" class="inline" />, to the right of the chart.</p>
+
+    <p><img src="/latest/images/partner-connect-query-details.png" alt="" title="query details" /></p>
+  </li>
+  <li>
+    <p>To confirm the search is bridging three different tables to create a result, click <strong>Query visualizer</strong>.</p>
+
+    <p><img src="/latest/images/partner-connect-query-visualizer.png" alt="" title="query visualizer" /></p>
   </li>
 </ol>
 
@@ -3809,11 +3829,223 @@ $('#toc').on('click', 'a', function() {
 
 <p>These are just a couple of examples of things you can do.</p>
 
-<p>For more information about data modeling, see:</p>
+<p>For more information about data modeling, see: <a href="/latest/admin/data-modeling/data-modeling-settings.html">Overview of data modeling settings</a></p>
+
+<h2 id="creating-a-worksheet">Creating a worksheet</h2>
+
+<p>A worksheet is a curated dataset built for ad-hoc analysis, that allows you to translate data from a database into the language of your business users.</p>
+
+<p>Examples of things you can do in a worksheet include:</p>
+<ul>
+  <li>Removing columns that aren’t needed</li>
+  <li>Adding data labels and synonyms</li>
+  <li>Adding calculations, such as margin</li>
+</ul>
+
+<p>The worksheet based on the Sales table on <strong>try.thoughtspot.com</strong> was created by doing the following:</p>
+
+<ol>
+  <li>
+    <p>Click <strong>Data</strong>.</p>
+  </li>
+  <li>
+    <p>Click the more options icon <img src="/latest/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and select <strong>Create worksheet</strong>.</p>
+
+    <p><img src="/latest/images/worksheet_create_icon.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click the plus icon <img src="/latest/images/icon-add-20px.png" alt="plus icon" class="inline" />.</p>
+
+    <p><img src="/latest/images/worksheet_add_sources_link.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Check the box next to all five of the tables from the Retail dataset in your schema.</p>
+
+    <p><img src="/latest/images/partner-connect-tables-worksheet.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Make sure the default setting of <strong>Apply joins progressively</strong> is selected. This ensures that the search uses only the tables that are required.</p>
+  </li>
+  <li>
+    <p>Click <strong>Close</strong>.</p>
+  </li>
+  <li>
+    <p>In the Data view, click the name of the Customers table to reveal all of the columns in that table.</p>
+  </li>
+  <li>
+    <p>Double-click each column from the Customers table that you want to include in the worksheet.</p>
+
+    <p>Include these columns:</p>
+    <ul>
+      <li>Customer_Type</li>
+      <li>Customer Name</li>
+      <li>Customer_Gender</li>
+      <li>Customer Region</li>
+      <li>Customer State</li>
+      <li>Customer City</li>
+      <li>Customer Zip Code</li>
+      <li>Customer County</li>
+    </ul>
+  </li>
+  <li>
+    <p>Use the same process to select columns from the other tables to include in the worksheet.</p>
+
+    <p>From the Dates table, include this column:</p>
+    <ul>
+      <li>Date</li>
+    </ul>
+
+    <p>From the Products table, include these columns:</p>
+    <ul>
+      <li>Product_Description</li>
+      <li>Category_Description</li>
+      <li>Department_Description</li>
+    </ul>
+
+    <p>From the Sales table, include these columns:</p>
+    <ul>
+      <li>Sales_Dollar_Amount</li>
+      <li>Cost_Dollar_Amount</li>
+      <li>Gross_Profit_Dollar_Amount</li>
+    </ul>
+
+    <p>From the Stores table, include these columns:</p>
+    <ul>
+      <li>Store_Name</li>
+      <li>Store_Region</li>
+      <li>Store_State</li>
+      <li>Store_City</li>
+      <li>Store_Zip_Code</li>
+      <li>Store_County</li>
+    </ul>
+
+    <p><img src="/latest/images/partner-connect-columns-worksheet.png" alt="" /></p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> As a best practice, you would not select a key from a table when creating a worksheet, because you would not want to search for the key.</div>
+  </li>
+  <li>
+    <p>Click the pencil icon <img src="/latest/images/icon-edit-20px.png" alt="edit icon" class="inline" /> next to the current name of your worksheet, enter the name <strong>Retail Sales</strong>, and click <strong>Done</strong>.</p>
+
+    <p><img src="/latest/images/partner-connect-worksheet-title.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click the more options icon <img src="/latest/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and select <strong>Save</strong>.</p>
+
+    <p><img src="/latest/images/partner-connect-worksheet-save.png" alt="" /></p>
+
+    <p>Now, let’s add a percent gross margin formula to the worksheet.</p>
+  </li>
+  <li>
+    <p>Click <strong>Edit Worksheet</strong>.</p>
+  </li>
+  <li>
+    <p>Next to Formulas, click the plus icon <img src="/latest/images/icon-add-20px.png" alt="plus icon" class="inline" />.</p>
+  </li>
+  <li>In the formula window, do the following:
+    <ol>
+      <li>In the top field, enter the formula title: <strong>% Gross Margin</strong>.</li>
+      <li>In the next field, enter this formula:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum ( gross_profit_dollar_amount ) / sum ( sales_dollar_amount ) * 100
+</code></pre></div>        </div>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+
+    <p><img src="/latest/images/partner-connect-worksheet-formula.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Save the worksheet with the formula added, by clicking the more options icon <img src="/latest/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and selecting <strong>Save</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Data</strong>, and click the Retail Sales worksheet.</p>
+  </li>
+  <li>In the Columns view, make sure that the % Gross Margin formula has the following settings:
+    <ul>
+      <li>For DATA TYPE: <strong>DOUBLE</strong></li>
+      <li>For COLUMN TYPE: <strong>MEASURE</strong></li>
+      <li>For AGGREGATION: <strong>AVERAGE</strong></li>
+    </ul>
+  </li>
+  <li>Save the worksheet with the updated formula settings, by clicking the more options icon <img src="/latest/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and selecting <strong>Save</strong>.</li>
+</ol>
+
+<h3 id="best-practices-for-worksheets">Best practices for worksheets</h3>
+
+<p>The best practices for data modeling also apply to worksheets.</p>
+
+<p>The example here includes:</p>
 
 <ul>
-  <li><a href="/latest/admin/data-modeling/data-modeling-settings.html">Overview of data modeling settings</a></li>
+  <li>Changed column names</li>
+  <li>Synonyms for columns</li>
+  <li>% Gross Margin formula</li>
 </ul>
+
+<p><img src="/latest/images/partner-connect-worksheet-best.png" alt="" /></p>
+
+<h3 id="adding-a-currency-and-geo-map-to-a-worksheet">Adding a currency and geo map to a worksheet</h3>
+
+<p>To further enhance the usability of a worksheet, you can add a specific currency type to monetary values, and a geographic map to regions in your data.</p>
+
+<p>Using the Retail Sales worksheet example, here’s how geo maps and currency could be added:</p>
+
+<ol>
+  <li>
+    <p>Click <strong>Data</strong>, and click the <strong>Retail Sales</strong> worksheet.</p>
+  </li>
+  <li>
+    <p>In the Columns view, find the Sales column and click <strong>None</strong> in the Currency Type column.</p>
+  </li>
+  <li>
+    <p>In the Specify Currency Type window, select <strong>Specify ISO Code</strong> and, then select <strong>USD</strong> from the drop-down menu.</p>
+
+    <p><img src="/latest/images/partner-connect-currency.png" alt="" /></p>
+  </li>
+  <li>
+    <p>In the Columns view, find the Store_State column, and click <strong>None</strong> in the Geo Config column.</p>
+  </li>
+  <li>
+    <p>In the Specify Geographic Configuration window, select <strong>Specify Sub-nation region</strong>, keep the default country of United States, and then select <strong>State</strong>.</p>
+
+    <p><img src="/latest/images/partner-connect-geo-config.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Save Changes</strong>.</p>
+
+    <p>Now that both currency and geographic types are set, you can see those changes reflected when you search the Retail Sales worksheet.</p>
+  </li>
+  <li>
+    <p>Click <strong>Search</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Choose sources</strong>.</p>
+  </li>
+  <li>
+    <p>Deselect any tables previously selected (if needed), select only the <strong>Retail Sales</strong> worksheet, and click <strong>Close</strong>.</p>
+  </li>
+  <li>
+    <p>In the search bar, enter: <strong>sales</strong> <strong>store state</strong> and press tab.</p>
+
+    <p>The initial search results appear, but without labels for each state.</p>
+
+    <p><img src="/latest/images/partner-connect-geo-curr-search-nolabels.png" alt="" /></p>
+
+    <p>The final step is to add the labels.</p>
+  </li>
+  <li>
+    <p>Click the Edit chart configuration icon <img src="/latest/images/icon-gear-20px.png" alt="gear icon" class="inline" /></p>
+  </li>
+  <li>
+    <p>In the Customize panel, click the <strong>Total Sales</strong> tile.</p>
+  </li>
+  <li>
+    <p>In the Edit column panel, select the <strong>Data Labels</strong> checkbox.</p>
+
+    <p>Now in the search results, you can see labels with the state name and total sales in US dollars.</p>
+
+    <p><img src="/latest/images/partner-connect-geo-curr-search.png" alt="" /></p>
+  </li>
+</ol>
 
 <h2 id="related-information">Related information</h2>
 
@@ -3848,9 +4080,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 11, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 2/21/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 3/9/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

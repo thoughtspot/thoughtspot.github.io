@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/backup-restore/overview-snapshot.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:31:38-08:00" />
+<meta property="article:published_time" content="2020-03-11T20:02:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Work with snapshots”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Work with snapshots”]","dateModified":"2020-03-04T19:31:38-08:00","url":"https://docs.thoughtspot.com/latest/admin/backup-restore/overview-snapshot.html","datePublished":"2020-03-04T19:31:38-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/backup-restore/overview-snapshot.html"},"description":"To work with snapshots, use the tscli command line interface.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Work with snapshots”]","dateModified":"2020-03-11T20:02:29-07:00","url":"https://docs.thoughtspot.com/latest/admin/backup-restore/overview-snapshot.html","datePublished":"2020-03-11T20:02:29-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/backup-restore/overview-snapshot.html"},"description":"To work with snapshots, use the tscli command line interface.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3614,7 +3614,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how make manual snapshots.</div>
+    <div class="summary">A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how to make manual snapshots.</div>
    
 
     
@@ -3651,7 +3651,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span>
  -->
@@ -3664,7 +3664,7 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="manual-snapshot">Create a manual snapshot</h2>
 
-<p>You must create a snapshot before making any changes to the environment,
+<p>You must create a snapshot before making any changes to your cluster’s environment,
 loading a large amount of data, or changing the structure of a table. ThoughtSpot supports up to 20 manual snapshots. You must clear them to create new snapshots. To delete a snapshot, contact <a href="/latest/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
 
 <p>ThughtSpot generates a snapshot in approximately 20 seconds, depending on the size of the cluster. To restore from a snapshot, contact <a href="/latest/admin/misc/contact.html#">ThoughtSpot Support</a>.</p>
@@ -3673,16 +3673,20 @@ loading a large amount of data, or changing the structure of a table. ThoughtSpo
 
 <h3 id="snapshot-tscli">Create a snapshot using tscli</h3>
 
-<p>To create a snapshot using the <code class="language-plaintext highlighter-rouge">tscli</code>, follow these steps:</p>
+<p>To create a snapshot using <code class="language-plaintext highlighter-rouge">tscli</code>, follow these steps:</p>
 
 <ol>
   <li>
     <p>Log in to the Linux shell using SSH.</p>
   </li>
   <li>
-    <p>Create a snapshot, specifying its name and the reason for creating it.</p>
+    <p>Create a snapshot with the command <code class="language-plaintext highlighter-rouge">tscli snapshot create</code>, specifying the following parameters:</p>
 
-    <p>Note that snapshot names must not exceed 44 characters.</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">name</code>: Specify a name for the snapshot. Note that snapshot names must not exceed 44 characters.</li>
+      <li><code class="language-plaintext highlighter-rouge">reason</code>: Specify a reason for creating the snapshot.</li>
+      <li><code class="language-plaintext highlighter-rouge">ttl</code>: Specify the snapshot’s time to live, in days. If you specify <code class="language-plaintext highlighter-rouge">ttl</code> as <code class="language-plaintext highlighter-rouge">4</code>, the system deletes the snapshot after four days.</li>
+    </ul>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;name&gt; &lt;reason&gt; &lt;ttl&gt;
 </code></pre></div>    </div>
@@ -3692,22 +3696,30 @@ loading a large amount of data, or changing the structure of a table. ThoughtSpo
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
 </code></pre></div>    </div>
+    <p>Your snapshot should appear in the list of snapshots that <code class="language-plaintext highlighter-rouge">tscli snapshot ls</code> generates.</p>
   </li>
 </ol>
 
 <h2 id="snapshot-policy">Configure periodic snapshots with snapshot policy</h2>
 
-<p>Each ThoughtSpot cluster automatically makes periodic snapshots based on its default snapshot policy.
+<p>Each ThoughtSpot cluster automatically creates periodic snapshots, based on its default snapshot policy.
 The default snapshot policy is enabled for every cluster. You can display the current policy for periodic snapshots.
-You can change this policy.</p>
+You can also change this policy.</p>
 
 <h3 id="snapshot-policy-view">View snapshot policy</h3>
 
 <p>To view your current periodic snapshot policy, follow these steps:</p>
 
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy show</code> command to view the policy.</li>
+  <li>
+    <p>Log in to the Linux shell using SSH.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy show &lt;name&gt;</code> command to view the policy.</p>
+  </li>
 </ol>
 
 <p>In the following example, the policy starts at midnight on Sunday. It retains the snapshots from the previous three 4-hour intervals, and two snapshots from two of the previous 4-hour
@@ -3765,8 +3777,14 @@ enabled: true
 
 <p>To update your current periodic snapshot policy, follow these steps:</p>
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy update</code>.</li>
+  <li>Log in to the Linux shell using SSH.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy update</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot-policy update
+</code></pre></div>    </div>
+  </li>
   <li>In the editor, make changes to the current policy, and save them.</li>
 </ol>
 
@@ -3777,8 +3795,14 @@ enabled: true
 <p>To disable your current periodic snapshot policy, follow these steps:</p>
 
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy disable</code>.</li>
+  <li>Log in to the Linux shell using SSH.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy disable</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot-policy disable
+</code></pre></div>    </div>
+  </li>
 </ol>
 
 <h3 id="snapshot-policy-enable">Enable the snapshot policy</h3>
@@ -3786,8 +3810,14 @@ enabled: true
 <p>To enable a specific periodic snapshot policy, follow these steps:</p>
 
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy enable</code>.</li>
+  <li>Log in to the Linux shell using SSH.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy enable</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot-policy disable
+</code></pre></div>    </div>
+  </li>
 </ol>
 
   <div class="tags">
@@ -3815,9 +3845,9 @@ enabled: true
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 11, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/4/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 3/10/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
