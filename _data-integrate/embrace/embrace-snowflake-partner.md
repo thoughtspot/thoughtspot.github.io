@@ -62,7 +62,7 @@ To sign up for Partner Connect, do the following:
 
 ## Related information
 
-- [Snowflake Partner Connect Tutorials]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-tutorial.html#creating-table-joins
+- [Snowflake Partner Connect Tutorials]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-tutorial.html)
 - [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Modify a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html)
