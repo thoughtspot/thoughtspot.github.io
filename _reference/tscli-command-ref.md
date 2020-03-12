@@ -293,11 +293,8 @@ tscli backup [-h] {create,delete,ls,restore}
               The default is <code>full</code>.
               </p></dd></dlentry>
           <dlentry>
-            <dt><code>--type {full,incremental}</code></dt>
-            <dd>
-              <p>Type of backup.</p>
-              <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
-              <p>The default setting is <code>full</code>.</p></dd></dlentry>
+            <dt><code>--type</code></dt>
+            <dd>Type of backup. Only <code>STANDALONE</code> is supported.</dd></dlentry>
           <dlentry>
             <dt><code>--base <em>BASE</em></code></dt>
             <dd>
@@ -313,7 +310,7 @@ tscli backup [-h] {create,delete,ls,restore}
             <dt><code>--remote</code></dt>
             <dd>
               <p>Takes backup through orion master.</p>
-              <p>The default setting is <code>True</code>.</p></dd>
+              <p>The default setting is <code>True</code>.</p></dd></dlentry>
             <dlentry>
             <dt><code>--no-orion-master</code></dt>
              <dd> <p>
@@ -323,7 +320,6 @@ tscli backup [-h] {create,delete,ls,restore}
                  The default is <code>False</code>.
                </p></dd>
             </dlentry>
-          </dlentry>
           </dl>
       </dd>
 
@@ -386,19 +382,29 @@ Manages the backup policy.
 This subcommand has the following options:
 
 <dl>
-  <dlentry>
-    <dt><code>tscli backup-policy create</code></dt>
-    <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameter:
-    <dl>
-    <dlentry>
-    <dt><code>--config <em>CONFIG</em></code></dt>
-    <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
-    </dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli backup-policy delete <em>NAME</em></code></dt>
-    <dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
-
+<dt><code>tscli backup-policy create</code></dt>
+<dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameters:
+<dl>
+<dt><code>name</code></dt>
+<dd>Specify a name for your backup.</dd>
+<dt><code>mode {full,light,dataless}</code></dt>
+<dd>
+<p>The backup mode. A `FULL` backup is required for restoring a cluster.</p>
+<p>The default is <code>full.</code></p>
+</dd>
+<dt><code>type</code></dt>
+<dd>The backup type. Only <code>STANDALONE</code> is supported.</dd>
+<dt><code>directory</code></dt>
+<dd>The location on the disk to place the backup. You specify an existing directory path, but the folder (the last part of the path: <code>home/admin/folder</code>) must not already exist. ThoughtSpot creates the folder when it runs a backup.</dd>
+<dt><code>storage_type {NAS,local}</code></dt>
+<dd>The type of storage you are using. <code>NAS</code> storage is recommended for <code>FULL</code> backups.</dd>
+<dt><code>--config <em>CONFIG</em></code></dt>
+<dd>Specifies the text format of the periodic backup policy config.</dd>
+</dl>
+</dd>
+<dt><code>tscli backup-policy delete <em>NAME</em></code></dt>
+<dd>Deletes the backup policy <code>name</code>.</dd>
+</dl>
   <dlentry>
     <dt><code>tscli backup-policy disable NAME</code></dt>
     <dd>Disables the policy <code>name</code>.</dd></dlentry>
@@ -2332,7 +2338,7 @@ This subcommand has the following options:
     <dd>2. If you want to allow all hosts which have the suffix <b>corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.example.com</code>. This wild card should be used within the hostname.</dd>
     <dd>3. If you want to allow multiple valid hosts, for example both <b>*.corp.example.com</b> and <b>cluster1</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.thoughtspot.com,cluster1</code></dd>
   </dlentry>
-  
+
   <dlentry>
     <dt><code>tscli ssl clear-min-tls-version [-h]</code></dt>
     <dd>Clears any customizations for the minimum TLS version to support.</dd>

@@ -1,7 +1,7 @@
 ---
 title: [Create a manual backup]
 summary: Learn how to manually create a backup.
-last_updated: 3/10/2020
+last_updated: 3/11/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -46,7 +46,7 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 
 4. Create the backup, designating the [type of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. The destination directory is created for you; do not specify an existing directory. The BASE value is the name of the backup.
+    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. You specify an existing directory path, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. The BASE value is the name of the backup.
 
     ```
     $ tscli backup create [-h]
