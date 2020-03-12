@@ -1,5 +1,5 @@
 ---
-title: [Snowflake Partner Connect Tutorials]
+title: [ThoughtSpot Tutorials for Snowflake Partner Connect]
 last_updated: 3/9/2020
 toc: true
 summary: "Explore these tutorials to learn how to model your data after connecting to your Snowflake database."
@@ -10,7 +10,7 @@ When you create a connection to Snowflake in ThoughtSpot, any data modeling or t
 
 If there are no table joins in your Snowflake connection, you can easily create them in ThoughtSpot.  
 
-The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
+The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account created through Snowflake Partner Connect.
 
 ## Creating table joins
 
