@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/backup-restore/take-backup.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:27:46-08:00" />
+<meta property="article:published_time" content="2020-03-11T19:06:26-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Create a manual backup”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Create a manual backup”]","dateModified":"2020-03-04T19:27:46-08:00","url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/take-backup.html","datePublished":"2020-03-04T19:27:46-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/take-backup.html"},"description":"ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state or a differently configured appliance. You can also move the backup from an appliance to a virtual cluster or vice versa. To restore a cluster from a backup, contact ThoughtSpot Support.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Create a manual backup”]","dateModified":"2020-03-11T19:06:26-07:00","url":"https://docs.thoughtspot.com/6.0/admin/backup-restore/take-backup.html","datePublished":"2020-03-11T19:06:26-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/backup-restore/take-backup.html"},"description":"ThoughtSpot enables you to manually create a backup to restore a cluster to a prior state or a differently configured appliance. You can also move the backup from an appliance to a virtual cluster or vice versa. To restore a cluster from a backup, contact ThoughtSpot Support.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3665,10 +3665,13 @@ $('#toc').on('click', 'a', function() {
 <h2 id="using-tscli">Using tscli</h2>
 <p>To manually create a backup using ThoughtSpot’s command line interface, tscli:</p>
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
+  <li>Log in to the Linux shell using SSH.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ssh admin@&lt;cluster-IP&gt;
+</code></pre></div>    </div>
+  </li>
   <li>
-    <p>Create a manual snapshot or find a snapshot you want to use.
-To find a snapshot you want to back up, use the following command:</p>
+    <p><a href="/6.0/admin/backup-restore/overview-snapshot.html#snapshot-tscli">Create a manual snapshot</a> or find a snapshot you want to use.
+To find a snapshot you want to use for your backup, run <code class="language-plaintext highlighter-rouge">tscli snapshot ls</code>:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
 
@@ -3690,7 +3693,7 @@ To find a snapshot you want to back up, use the following command:</p>
   <li>
     <p>Make sure you have enough room on the target disk.</p>
 
-    <p>In addition to the size of the snapshot, you must have 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the <code class="language-plaintext highlighter-rouge">df</code> command to check disk size.</p>
+    <p>In addition to the size of the snapshot, you must have 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the <code class="language-plaintext highlighter-rouge">df -h</code> command to check disk size.</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ df -h
 </code></pre></div>    </div>
@@ -3698,7 +3701,7 @@ To find a snapshot you want to back up, use the following command:</p>
   <li>
     <p>Create the backup, designating the <a href="/6.0/admin/backup-restore/backup-modes.html#">type of backup</a>, the snapshot name, and a directory:</p>
 
-    <p>Choose the <a href="/6.0/admin/backup-restore/backup-modes.html#">mode of backup</a> you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name of the backup.</p>
+    <p>Choose the <a href="/6.0/admin/backup-restore/backup-modes.html#">mode of backup</a> you want to create, either <code class="language-plaintext highlighter-rouge">full</code>, <code class="language-plaintext highlighter-rouge">lightweight</code>, or <code class="language-plaintext highlighter-rouge">dataless</code>. You specify an existing directory path, but the folder (the last part of the path: <code class="language-plaintext highlighter-rouge">/home/admin/&lt;folder&gt;</code>) <strong>must not</strong> already exist. ThoughtSpot creates the folder when it runs a backup. The BASE value is the name of the backup.</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create [-h]
      [--mode {full|light|dataless}]
@@ -3741,9 +3744,9 @@ To find a snapshot you want to back up, use the following command:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 11, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/4/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 3/11/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
