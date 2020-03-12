@@ -1594,15 +1594,15 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-snowflake-reference.html
         output: web,embraceGd
-#      - levelThreeTitle: Snowflake Partner Connect
-#        output: web,embraceGd
-#        levelThreeItems:
-#        - title: Overview
-#          url: /data-integrate/embrace/embrace-snowflake-partner.html
-#          output: web,embraceGd
-#        - title: Snowflake Partner Connect Tutorials
-#          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-#          output: web,embraceGd
+      - levelThreeTitle: Snowflake Partner Connect
+        output: web,embraceGd
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/embrace/embrace-snowflake-partner.html
+          output: web,embraceGd
+        - title: ThoughtSpot Tutorials for Snowflake Partner Connect
+          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
+          output: web,embraceGd
     - levelTwoTitle: Redshift
       output: web,embraceGd
       levelTwoItems:
