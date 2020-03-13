@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 2/27/2020
+last_updated: 3/13/2020
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -55,11 +55,18 @@ To install and launch ThoughtSpot, you must have the following:
 ## Get access to ThoughtSpot AMI
 
 1. Sign in to your [AWS account](https://console.aws.amazon.com/console/home){:target="_blank"}.
-2. Copy the following ThoughtSpot public AMI to your AWS region:  
-**AMI Name**: thoughtspot-image-20191031-8ae15008336-prod<br>
-**AMI ID**: ami-06276ece42ed96994  
-**Region**: N. California
-    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region. The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
+2. Copy the correct ThoughtSpot public AMI to your AWS region. Refer to the chart below to find the AMI you should use, depending on your release number.
+
+    | Release Number | AMI Name | AMI ID | Region |
+    | --- | --- | --- | --- |
+    | 6.0 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
+    | 6.0.1 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
+    | 6.0.2 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
+    | 6.0.3 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-0558406087e3b80d7 | N. California |
+    | 6.0.4 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-0558406087e3b80d7 | N. California |
+
+
+    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
 
 {: id="ec2-setup"}
 ## Choose VM instances
