@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/12/2020
+last_updated: 3/13/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,7 +10,7 @@ their entirety, as the complete data set, on each node. Sharded tables consist o
 single data set, divided into multiple tables, or *shards*. The shards have
 identical schemas, but different sets of data.
 
-Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memroy database. If you use [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
+Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memory database. If you use [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
 
 ## When to shard your data
 
@@ -56,7 +56,7 @@ TQL> CREATE TABLE
 PARTITION BY HASH (96) KEY ("customer_id");
 ```
 
-Note the following parameters, specifed above as `96` and `"customer_id"`:
+Note the following parameters, specified above as `96` and `"customer_id"`:
 <dl>
   <dlentry><dt>HASH</dt><dd>Determines the number of shards. In this case, <code>96</code>.</dd></dlentry>
   <dlentry><dt>KEY</dt><dd>Specifies how to assign data into the shards (shard key). In this case, <code>customer_id</code>.</dd></dlentry>
@@ -152,13 +152,13 @@ The shard key is a subset of the primary key. However, that is not the only guid
 
 1. **If the table has a primary key, the shard key must be a subset of the primary key.**
 
-    If the shard key is ***not*** a subset of the primary key, and the shard key changes, data with the same primary key may reside in different nodes. This impacts ThoughtSpot's performance.
+    If the shard key is ***not*** a subset of the primary key, and the shard key changes, data with the same primary key may reside in different nodes. This impacts ThoughtSpot's performance, and may result in incorrect query results.
 
     You should not use a shard key that is not a subset of the
     primary key. If you use a shard key that is not a subset of the primary key, it is
     possible to get two versions of a record if the shard key for a record changes,
     but the primary key does not. In the absence of
-    a unique shard key, the system create a secondary record rather than doing a SQL
+    a unique shard key, the system creates a secondary record rather than doing a SQL
     MERGE (`upsert`). These two versions of a record may result in incorrect results when you search your data in ThoughtSpot.
 
     If you try to use a shard key that is not a subset of the primary key, your `CREATE TABLE` command returns an error.
@@ -180,7 +180,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
 3. **Choose a shard key that results in a wide variety of keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
-    `saleid`,`productid`,and `locationid`. The table has 10K sales, 40
+    `saleid`, `productid`, and `locationid`. The table has 10K sales, 40
     locations, and 200 products. Even if the sales are evenly distributed across
     locations, you should not use `locationid` in your shard key, because there are only 40 possible keys. Instead, use `saleid` or `productid` for more variety.
 
