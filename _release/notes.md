@@ -9,6 +9,8 @@ permalink: /:collection/:path.html
 ThoughtSpot version 6.0.3 is now available. These release notes include information about new features,
 fixed issues from previous releases, and any known issues.
 
+* [6.0.4 New Features](#6-0-4-new)
+* [6.0.4 Fixed Issues](#6-0-4-fixed)
 * [6.0.3 Fixed Issues](#6-0-3-fixed)
 * [6.0.2 New Features](#6-0-2-new)
 * [6.0.2 Fixed Issues](#6-0-2-fixed)
@@ -18,6 +20,18 @@ fixed issues from previous releases, and any known issues.
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 * [Notes from Older Versions](#notes-for-older-versions)
+
+{: id="6-0-4-new"}
+## 6.0.4 New Features and Functionality
+
+Support for Red Hat Enterprise Linux (RHEL). Contact ThoughtSpot support for details.
+
+{: id="6-0-4-fixed"}
+## 6.0.4 Fixed Issues
+
+The following issues are fixed in the 6.0.4 release:
+
+- 
 
 {: id="6-0-3-fixed"}
 ## 6.0.3 Fixed Issues
