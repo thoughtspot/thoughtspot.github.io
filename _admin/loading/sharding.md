@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/12/2020
+last_updated: 3/13/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,7 +10,7 @@ their entirety, as the complete data set, on each node. Sharded tables consist o
 single data set, divided into multiple tables, or *shards*. The shards have
 identical schemas, but different sets of data.
 
-Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memroy database. If you use [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
+Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memory database. If you use [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
 
 ## When to shard your data
 
@@ -56,7 +56,7 @@ TQL> CREATE TABLE
 PARTITION BY HASH (96) KEY ("customer_id");
 ```
 
-Note the following parameters, specifed above as `96` and `"customer_id"`:
+Note the following parameters, specified above as `96` and `"customer_id"`:
 <dl>
   <dlentry><dt>HASH</dt><dd>Determines the number of shards. In this case, <code>96</code>.</dd></dlentry>
   <dlentry><dt>KEY</dt><dd>Specifies how to assign data into the shards (shard key). In this case, <code>customer_id</code>.</dd></dlentry>
@@ -152,13 +152,13 @@ The shard key is a subset of the primary key. However, that is not the only guid
 
 1. **If the table has a primary key, the shard key must be a subset of the primary key.**
 
-    If the shard key is ***not*** a subset of the primary key, and the shard key changes, data with the same primary key may reside in different nodes. This impacts ThoughtSpot's performance.
+    If the shard key is ***not*** a subset of the primary key, and the shard key changes, data with the same primary key may reside in different nodes. This impacts ThoughtSpot's performance, and may result in incorrect query results.
 
     You should not use a shard key that is not a subset of the
     primary key. If you use a shard key that is not a subset of the primary key, it is
     possible to get two versions of a record if the shard key for a record changes,
     but the primary key does not. In the absence of
-    a unique shard key, the system create a secondary record rather than doing a SQL
+    a unique shard key, the system creates a secondary record rather than doing a SQL
     MERGE (`upsert`). These two versions of a record may result in incorrect results when you search your data in ThoughtSpot.
 
     If you try to use a shard key that is not a subset of the primary key, your `CREATE TABLE` command returns an error.
@@ -166,7 +166,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
 2. **Choose a shard key that distributes data well across keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
-    `saleid`,`custid`,and `locationid`. The table has 10K sales, 400 locations,
+    `saleid`, `custid`, and `locationid`. The table has 10K sales, 400 locations,
     and 2000 customers. If 5K sales are in just two locations, you should not use `locationid` as your shard key. If you use `locationid` as your shard key, you have data in fewer shards, which impacts performance. Instead, you should use `custid` or `locationid`.
 
     As a more concrete example, suppose you want to shard a table of retail data. Many retailers have an increase in sales around the winter holidays. You should not use `date` as your shard key, because you may have five or ten times your usual number of daily transactions during the month of December. Using `date` as your shard key would result in data skew, and would impact performance.
