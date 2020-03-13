@@ -263,6 +263,20 @@ There are several best practices related to sharding.
 
 2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance about once a year.
 
+    To evaluate your sharding strategy, run the following script. It checks for over- or under-sharded tables on your cluster.
+
+    1. Log into your cluster on the command line.
+        ```
+        $ ssh admin@<cluster-IP>
+        ```
+
+    2. Run the following script to check for over- or under-sharded tables.
+        ```
+        $ /usr/local/scaligent/release/bin/sharding_diagnostics.sh
+        ```
+
+    3. Adjust your sharding strategy appropriately.
+
 3. Check your `row count skew` ratio when you re-evaluate sharding.
 
     You can view your `row count skew` from the ThoughtSpot application. Go to **admin**, then **System health**, then **data**. Choose the table you would like to view, and scroll to `row count skew`. Use this number to calculate your row count skew ratio: row count skew / (total row count / number of partitions). A row count skew ratio higher than 1 may require changes to your data modeling.
