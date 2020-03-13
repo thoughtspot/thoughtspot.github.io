@@ -1,12 +1,12 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: February 29, 2020
+last_updated: March 13, 2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.3 is now available. These release notes include information about new features,
+ThoughtSpot version 6.0.4 is now available. These release notes include information about new features,
 fixed issues from previous releases, and any known issues.
 
 * [6.0.4 New Features](#6-0-4-new)
@@ -24,14 +24,25 @@ fixed issues from previous releases, and any known issues.
 {: id="6-0-4-new"}
 ## 6.0.4 New Features and Functionality
 
-Support for Red Hat Enterprise Linux (RHEL). Contact ThoughtSpot support for details.
+### Red Hat Enterprise Linux (RHEL)
+
+This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
+ThoughtSpot certifies RHEL 7.7 on the following platforms:
+- ThoughtSpot-configured appliances, both DELL hardware and SMC hardware
+- Cloud deployments: AWS and GCP
+- VMware
+RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
 
 {: id="6-0-4-fixed"}
 ## 6.0.4 Fixed Issues
 
 The following issues are fixed in the 6.0.4 release:
 
-- 
+- Under certain conditions, worksheet filters provide different answers than search filters.
+- Total amounts in a stacked bar chart do not account for negative amounts.
+- Management console displays incorrect information about SSL status.
+- Management console displays incorrect information about SMTP status.
+- Upgrading from release 5.2.3 to 6.0.3 causes HDFS to go into safe mode and cause missing data volumes.
 
 {: id="6-0-3-fixed"}
 ## 6.0.3 Fixed Issues
@@ -251,16 +262,16 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.3 release
+If you are running one of the following versions, you can upgrade to the 6.0.4 release
 directly:
 
-* 5.3.x to 6.0.3
-* 5.2.x to 6.0.3
+* 5.3.x to 6.0.4
+* 5.2.x to 6.0.4
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.3 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
