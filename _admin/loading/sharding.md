@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/13/2020
+last_updated: 3/16/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -262,6 +262,8 @@ There are several best practices related to sharding.
     Your data loads faster if you have already sharded the tables. Use the `CREATE TABLE` command to specify how you want your tables sharded, but do not load any data. After you shard the tables, your data loads faster.
 
 2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance about once a year.
+
+    Note that resharding automatically loads data into a new incarnation of the table you sharded. You do not need to reload the table's data.
 
 3. Check your `row count skew` ratio when you re-evaluate sharding.
 
