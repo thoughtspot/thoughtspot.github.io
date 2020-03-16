@@ -29,7 +29,7 @@ whenever possible. If you have a large dimension table, you might choose to
 shard it along with the fact table it is joined with. Sharding both the fact and
 dimension table(s) is known as _co-sharding_.
 
-Note that resharding automatically loads data into a new incarnation of the table with the modified sharding strategy.
+Note that resharding automatically loads data into a new incarnation of the table you sharded. You do not need to reload the table's data.
 
 ### Table sizes and sharding recommendations
 
