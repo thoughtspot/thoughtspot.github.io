@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 12/5/2019
+last_updated: 3/17/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -128,6 +128,22 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--Since 6.1.0-->
+<dlentry>
+<dt>Norway</dt>
+<dd>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/norway-county.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/norway-municipality.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/norway-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Poland</dt>
@@ -156,6 +172,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <!-- Since 5.3.0 -->
 <details><summary><strong>Post Code</strong></summary>
 {% include content/geo/se-post-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Switzerland</dt>
+<dd>
+<details><summary><strong>Canton</strong></summary>
+{% include content/geo/switzerland-canton.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/switzerland-district.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/switzerland-postcode.md %}
 </details>
 </dd>
 </dlentry>
