@@ -22,7 +22,7 @@ fixed issues from previous releases, and any known issues.
 
 Now you can back up your ThoughtSpot cluster to and restore from an Amazon S3 bucket.
 
-For details, see: [Create a manual backup]({{ site.baseurl }}/backup-restore/take-backup.html#) and [About restore operations]({{ site.baseurl }}/backup-restore/restore.html#)
+For details, see: [Create a manual backup]({{ site.baseurl }}/admin/backup-restore/take-backup.html#) and [About restore operations]({{ site.baseurl }}/admin/backup-restore/restore.html#)
 
 ### Geomap support for Norway and Switzerland
 
