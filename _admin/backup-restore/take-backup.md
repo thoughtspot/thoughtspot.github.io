@@ -9,6 +9,8 @@ ThoughtSpot enables you to manually create a backup to restore a cluster to a pr
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
+Beginning with release 6.1, you can back up to an Amazon S3 bucket.
+
 ## Using tscli
 To manually create a backup using ThoughtSpot's command line interface, tscli:
 1. Log in to the Linux shell using SSH.
@@ -53,7 +55,8 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
         [--mode {full|light|dataless}]
         [--type {full}]
         [--base snapshot_name>]
-        [--storage_type {local|nas}][--remote]
+        [--storage_type {local|nas|cloud}][--remote]
+        [--bucket_name]
          <name> <directory>
     ```
 
@@ -62,3 +65,11 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
     ```
     $ tscli backup ls
     ```
+
+### Backing up to an Amazon S3 bucket
+
+To back up to an Amazon S3 bucket, do the following when creating your backup:
+- For `--storage_type`, specify `cloud`
+- For `--bucket_name`, specify your Amazon S3 bucket name
+
+If you are backing up a cluster hosted in AWS, make sure to back up to an S3 bucket in the same region as your cluster. By doing this, you avoid the additional cross-region data transfer costs.
