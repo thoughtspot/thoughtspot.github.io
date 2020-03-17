@@ -37,24 +37,28 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	      <th scope="col">Per VM user data capacity</th>
 	      <th scope="col">CPU/RAM</th>
 	      <th scope="col">Data disk</th>
+				<th scopt="col">Required root volume capacity</th>
         </tr>
 	    <tr>
 	      <td>20 GB</td>
 	      <td>16/128 GB</td>
 	      <td>800 GB</td>
+				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>100 GB</td>
 	      <td>32/256 GB</td>
 	      <td>800 GB</td>
+				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
 	      <td>6 TB</td>
+				<td>200 GB for each node</td>
         </tr>
 		<tr>
-	      <td colspan="3"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
 	      <td></td>
 	      <td></td>
         </tr>

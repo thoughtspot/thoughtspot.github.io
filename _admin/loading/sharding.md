@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/13/2020
+last_updated: 3/17/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -261,7 +261,7 @@ There are several best practices related to sharding.
 
     Your data loads faster if you have already sharded the tables. Use the `CREATE TABLE` command to specify how you want your tables sharded, but do not load any data. After you shard the tables, your data loads faster.
 
-2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance about once a year.
+2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance after you change your data significantly. Data also changes naturally over time, so you should re-evaluate sharding at a regular cadence.
 
     To evaluate your sharding strategy, run the following script. It checks for over- or under-sharded tables on your cluster.
 
@@ -272,7 +272,7 @@ There are several best practices related to sharding.
 
     2. Run the following script to check for over- or under-sharded tables.
         ```
-        $ /usr/local/scaligent/release/bin/sharding_diagnostics.sh
+        $ /usr/local/scaligent/release/bin/sharding_diagnostics.sh 
         ```
 
     3. Adjust your sharding strategy appropriately.
