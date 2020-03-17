@@ -2,12 +2,14 @@
 title: [Geo Map Reference]
 tags: [Geo map subdivisions]
 keywords: geo map divisons subdivisions
-last_updated: 06/17/2019
+last_updated: 3/17/2020
 summary: "ThoughtSpot recognizes a broad list geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 This reference lists supported countries and their subdivisions that are available in geo maps.
+
+You may have to make changes to your data to support geo maps. For example, you may have store locations in both Kansas City, Kansas and Kansas City, Missouri. In order to account for two different locations having the same name, you must be specific within your data. A value of **Kansas City** without a state attached to it may result in incorrect or incomplete geo maps.
 
 ### Supported geo maps in ThoughtSpot
 
