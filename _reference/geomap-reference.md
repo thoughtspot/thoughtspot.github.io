@@ -1,12 +1,14 @@
 ---
 title: [Geo Map Reference]
-last_updated: 12/5/2019
+last_updated: 3/17/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
 This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.
+
+You may have to make changes to your data to support geo maps. For example, you may have locations in both Kansas City, Kansas and Kansas City, Missouri. In order to account for two different locations having the same name, you must be specific within your data. A value of **Kansas City** without a state attached to it may result in incorrect or incomplete geo maps.
 
 ThoughtSpot supports the following countries and their associated subdivisions:
 <dl>
@@ -128,6 +130,22 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--Since 6.1.0-->
+<dlentry>
+<dt>Norway</dt>
+<dd>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/norway-county.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/norway-municipality.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/norway-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Poland</dt>
@@ -156,6 +174,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <!-- Since 5.3.0 -->
 <details><summary><strong>Post Code</strong></summary>
 {% include content/geo/se-post-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Switzerland</dt>
+<dd>
+<details><summary><strong>Canton</strong></summary>
+{% include content/geo/switzerland-canton.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/switzerland-district.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/switzerland-postcode.md %}
 </details>
 </dd>
 </dlentry>
