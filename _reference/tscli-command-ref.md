@@ -675,7 +675,7 @@ This subcommand has the following options:
 ### cluster
 
 ```
-tscli cluster [-h] abort-reinstall-os,abort-update,bucket-  name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
+tscli cluster [-h] abort-reinstall-os,abort-update,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
 ```
 
 This subcommand has the following options:

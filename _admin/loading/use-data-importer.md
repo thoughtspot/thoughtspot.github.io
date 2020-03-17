@@ -118,8 +118,8 @@ To load data from an AWS S3 bucket, do the following:
     * AWS S3a secret key
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
-    * `--s3a_bucket_name "<Name of bucket that contains the source CSV file>"` <br>
-    * `--s3a_region "<Region where the bucket is located>"` <br>
+    * `--s3a_bucket_name "<Name of bucket that contains the source CSV file>"`<br>
+    * `--s3a_region "<Region where the bucket is located>"`<br>
     * `--s3a_access_key "<AWS S3 access key>"`<br>
     * `--s3a_secret_key "<AWS S3 secret key>"`<br>
 
@@ -169,7 +169,7 @@ To load data from an GCP GCS bucket, do the following:
    $ tsload --source_file /gs/default/team.csv
            --target_database temp
            --target_table teams
-           --gs_bucket_name "my_gcs_bucket"
+           --bucket_name "my_gcs_bucket"
            --has_header_row 2>/dev/null
 
    $ Header row read successfully

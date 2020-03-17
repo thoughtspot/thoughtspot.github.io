@@ -18,9 +18,11 @@ fixed issues from previous releases, and any known issues.
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
 
-### Backup and Restore from and S3 bucket
+### Back up and Restore from an S3 bucket
 
-This release of ThoughtSpot introduces . . .
+Now you can back up your ThoughtSpot cluster to and restore from an Amazon S3 bucket.
+
+For details, see: [Create a manual backup]({{ site.baseurl }}/backup-restore/take-backup.html#) and [About restore operations]({{ site.baseurl }}/backup-restore/restore.html#)
 
 ### Geomap support for Norway and Switzerland
 
