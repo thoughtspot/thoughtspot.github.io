@@ -22,6 +22,10 @@ fixed issues from previous releases, and any known issues.
 
 This release of ThoughtSpot introduces . . .
 
+### Geomap support for Norway and Switzerland
+
+For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
+
 {: id="6-1-fixed"}
 ## 6.1 Fixed Issues
 

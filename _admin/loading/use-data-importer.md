@@ -77,10 +77,12 @@ You can integrate tsload into your ETL environment for more automated data loads
 
 If you have data in .csv format stored in an AWS bucket, you can load it directly to ThoughtSpot.
 
-### (5.3.1 and later) Assigning S3 read-only role to your EC2 instance
+### Assigning S3 read-only role to your EC2 instance
 If your cluster is running 5.3.1 or later, you can assign an S3 read-only role to your ThoughtSpot EC2 instance(s) so the instance(s) can access the S3 bucket from which you want to load the data. This eliminates the need to enter the AWS S3 credentials when loading your data. For details, see: [Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html){:target="_blank"} in Amazon's AWS documentation.
 
 {% include note.html content="If you are using S3 for persistent storage, and assigned the *ec2rolewithfulls3access* IAM role to your instance, you do not need to complete this step." %}
+
+If an IAM an role is configured, there is no need to supply the `--s3a_access_key`, `--s3a_secret_key` and `--s3a_region` parameters.
 
 To load data from an AWS S3 bucket, do the following:
 
@@ -89,32 +91,37 @@ To load data from an AWS S3 bucket, do the following:
 2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
     ```
-    $ tsload --source_file "/aws/default/<my_file_in_aws>"
-           --target_database "<my_database_in_ThoughtSpot>" --target_table "<my_table_in_the_database_in_ThoughtSpot>"
-    ```       
+    $ tsload --source_file "/s3a/default/<my_file_in_aws>"
+           --target_database "<my_database_in_ThoughtSpot>" --target_table "<my_table_in_the_database_in_ThoughtSpot>" --s3a_bucket_name <bucket_name>
+    ```   
+    {% include important.html content="--source_file should contain the file path inside the bucket and must be prefixed by “/s3a/default”. For example, to load from a file named “directory/file.csv”, the --source_file should be “/s3a/default/directory/file.csv”." %}
+
+    {% include note.html content="If you do not supply the --s3a_bucket_name, there will be a prompt asking you to enter it." %}
+
     This example imports the CSV file `teams.csv` into the table `teams` in the database `temp`:
 
     ```
     $ tsload --source_file "/aws/default/teams.csv"
            --target_database "temp" --target_table "teams"
-    ```       
+    ```    
+
 3. After running the `tsload` command, you are prompted to enter additional AWS S3 information:
 
-    * AWS S3 bucket name
+    * AWS S3a bucket name
 
-    * AWS S3 region
+    You only need to enter these, if you have no IAM role configured:
 
-    * AWS S3 credentials (accesskey;secret_key)__*__
+    * AWS S3a region
 
-    * AWS S3 root (prefix for S3 object search path)
+    * AWS S3a access key
+
+    * AWS S3a secret key
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
-    * `--aws_s3_bucket_name "<bucket name>"` <br>
-    * `--aws_s3_region "<region name>"` <br>
-    * `--aws_s3_credentials "<credentials>"`__*__ <br>
-    * `--aws_s3_root "<search path>"`
-
-    {% include note.html content="<b>*<b>AWS S3 credentials is not used in the 5.3.1 release, if an S3 read-only role is assigned to your instance." %}
+    * `--s3a_bucket_name "<Name of bucket that contains the source CSV file>"` <br>
+    * `--s3a_region "<Region where the bucket is located>"` <br>
+    * `--s3a_access_key "<AWS S3 access key>"`<br>
+    * `--s3a_secret_key "<AWS S3 secret key>"`<br>
 
 4.  After the processing begins, progress messages appear, and then source and load summary messages after the load is complete.
 
