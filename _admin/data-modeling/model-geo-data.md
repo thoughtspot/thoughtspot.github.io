@@ -1,7 +1,7 @@
 ---
 title: [Add a geographical data setting]
 summary: Learn how to model your geographical data.
-last_updated: 11/15/2019
+last_updated: 3/17/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,7 +34,7 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 1. Find the **GEO CONFIG** for the column that contains the geographical data.
 2. Select the column to display the **Specify Geographic Configuration** dialog.
 
-    ![]({{ site.baseurl }}/images/set_geo_config.png "Configure geo data")
+    ![Configure geo data]({{ site.baseurl }}/images/geomap-config.png "Configure geo data")
 
 3. Change the value to the appropriate **GEO CONFIG**, depending on the kind of geo data the column contains.
 
