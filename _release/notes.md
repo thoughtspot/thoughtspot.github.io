@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.1is now available. These release notes include information about new features,
+ThoughtSpot version 6.1 is now available. These release notes include information about new features,
 fixed issues from previous releases, and any known issues.
 
 * [6.1 New Features](#6-new)
@@ -18,14 +18,13 @@ fixed issues from previous releases, and any known issues.
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
 
-### Backup and Restore from and S3 buckect
+### Backup and Restore from and S3 bucket
 
-This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
-ThoughtSpot certifies RHEL 7.7 on the following platforms:
-- ThoughtSpot-configured appliances, both DELL hardware and SMC hardware
-- Cloud deployments: AWS and GCP
-- VMware
-RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
+This release of ThoughtSpot introduces . . .
+
+### Geomap support for Norway and Switzerland
+
+For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
 
 {: id="6-1-fixed"}
 ## 6.1 Fixed Issues
@@ -33,7 +32,6 @@ RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you mu
 The following issues are fixed in the 6.1 release:
 
 - tbd.
-
 
 {: id="beta-program"}
 ## Beta Programs
