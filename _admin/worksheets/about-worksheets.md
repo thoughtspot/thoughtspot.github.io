@@ -28,7 +28,7 @@ The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
 
-2.  Create a new worksheet.
+2.  Create a new Worksheet. You can create a Worksheet [from the UI](#create-worksheet-UI), or by [uploading the worksheet](#create-worksheet-yaml) in `yaml` file format.
 
 3.  Add sources (tables) to the worksheet.
 
@@ -46,19 +46,22 @@ The process for creating a worksheet is:
 
 10.  [Share the worksheet with groups or users]({{ site.baseurl }}/admin/data-security/share-worksheets.html#).
 
-## Create a worksheet
+{: id="create-worksheet-UI"}
+## Create a worksheet from the UI
 
-Create a worksheet to make the data easy for users to search. This process includes adding a new worksheet, after which you will choose the data sources to include in it.
+Create a worksheet to make your data easy for users to search. This process includes adding a new worksheet, after which you will choose the data sources to include in it.
 
 To create a new worksheet:
 
 1. Click **Data**, on the top navigation bar.
 
-2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
+2. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
 
-    ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
+    ![Create a worksheet]({{ site.baseurl }}/images/worksheet-create.png "Create a worksheet")
 
+3. [Add sources and columns](#worksheet-sources-columns)
 
+{: id="worksheet-sources-columns"}
 ## Add sources and columns to a worksheet
 
 After creating a worksheet, you need to add the sources that contain the data. Sources is another name for tables. The sources you choose are typically related to one another by foreign keys.
@@ -114,6 +117,36 @@ To add the sources to the worksheet:
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
 
 16.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
+
+{: id="create-worksheet-yaml"}
+## Create a Worksheet from a yaml file
+To create a Worksheet from a `yaml` file, follow these steps:
+
+1. Create the `yaml` file. Refer to [YAML Worksheet specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) for the full syntax of the YAML file.
+
+3. Click **Data** on the top navigation bar.
+
+4. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+
+5. Select **Create worksheet from file**.
+
+    ![Create worksheet from file]({{ site.baseurl }}/images/worksheet-create-from-file.png "Create worksheet from file")
+
+6. In the **Create Worksheet** interface, click **Browse your files.**
+
+    ![Browse your files]({{ site.baseurl }}/images/worksheet-create-browse-files.png "Browse your files")
+
+6. In your file system, find and select the YAML file.
+
+7. Click **Upload**.
+
+   ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-create-upload.png "Upload the Worksheet")
+
+8. If you constructed the Worksheet file correctly, the **Create Worksheet** interface displays an *Upload successful* message.
+
+9. To examine the new Worksheet, click **Go to Worksheet**.
+
+   ![Go to new Worksheet]({{ site.baseurl }}/images/worksheet-create-go-to-worksheet.png "Go to new Worksheet")
 
 ## Where to go next
 
