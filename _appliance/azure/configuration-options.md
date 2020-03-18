@@ -2,7 +2,7 @@
 title: [Azure configuration options]
 keywords: Azure, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,6 +20,7 @@ The following Azure resources are required for provisioning a Thoughtspot image
 in Azure:
 - Virtual Machine Size: Standard E64s v3 (64 vcpus, 432 GB memory)
 - Storage: Two 1TB SSD disks
+- 200 GB required root volume capacity for each node
 - Network Ports: See PORTS SETTINGS
 
 ## Data capacity per node
