@@ -2,7 +2,7 @@
 title: [AWS configuration options]
 keywords: AWS, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -41,7 +41,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
       <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
       <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
-	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume for each node</strong></p></td>
 	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr">250 GB</p></td>
       <td><p dir="ltr">r4.16xlarge<sup>a</sup></p></td>
       <td><p dir="ltr">64/488</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
     <tr>
@@ -61,7 +61,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr">384 GB (Large)</p></td>
       <td><p dir="ltr">r5.24xlarge</p></td>
       <td><p dir="ltr">96/768</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 1.5 TB</p></td>
     </tr>
     <tr>
@@ -71,7 +71,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr">100 GB</p></td>
       <td><p dir="ltr">r4.8xlarge<sup>b</sup></p></td>
       <td><p dir="ltr">32/244</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -81,7 +81,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr">20 GB</p></td>
       <td><p dir="ltr">r4.4xlarge<sup>b</sup></p></td>
       <td><p dir="ltr">16/122</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@ details on how to configure your placement groups.
       <td><p dir="ltr">192 GB</p></td>
       <td><p dir="ltr">m5.24xlarge</p></td>
       <td><p dir="ltr">96/384</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
 	<tr>

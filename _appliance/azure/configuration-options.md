@@ -2,7 +2,7 @@
 title: [Azure configuration options]
 keywords: Azure, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -49,7 +49,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr">200 GB</p></td>
       <td><p dir="ltr">E64sv3</p></td>
       <td><p dir="ltr">64/432</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
     <tr>
@@ -59,7 +59,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr">100 GB</p></td>
       <td><p dir="ltr">E32sv3<sup>b</sup></p></td>
       <td><p dir="ltr">32/256</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr">20 GB</p></td>
       <td><p dir="ltr">E16sv3<sup>b</sup></p></td>
       <td><p dir="ltr">16/128</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
 
@@ -81,7 +81,7 @@ details on how to configure your scope and permissions.
       <td><p dir="ltr">120 GB</p></td>
       <td><p dir="ltr">D64v3</p></td>
       <td><p dir="ltr">64/256</p></td>
-		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">200 GB for each node</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
 	<tr>
