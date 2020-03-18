@@ -96,9 +96,9 @@ To connect to your data warehouse, do the following:
 
 2. Connect to your data warehouse. For details, see:
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
-- [Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)
+- [Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)  
 
- When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
+    When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
 
 3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.
 
@@ -114,6 +114,7 @@ ThoughtSpot recommends that you start with the following:
   - Removing columns that aren't needed
   - Adding data labels and synonyms
   - Adding calculations, such as margin  
+
 For more information about data modeling, see: [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
 
 ## Search
