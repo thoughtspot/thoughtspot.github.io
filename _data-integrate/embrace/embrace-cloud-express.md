@@ -23,14 +23,14 @@ With Cloud Express, you can easily connect your production data in an existing c
 - 5 users
 - 20 million rows of Embrace data
 - No Falcon data upload
-- No access to ThoughtSpot support. Use ThoughtSpot documentation and documentation to help setup and maintain your Cloud Express deployment
+- No access to ThoughtSpot support. Use ThoughtSpot documentation to set up and maintain your Cloud Express deployment.
 
 ## Workflow
 
-<image>
+There are five steps in the Cloud Express workflow:  
+![]({{ site.baseurl }}/images/workflow.svg)
 
-We can roughly divide the Cloud Express workflow into five steps as shown above. The below sections go into the details of each step
-
+These steps are detailed in the sections that follow.
 
 ## Sign up for Cloud Express
 
@@ -76,7 +76,8 @@ To deploy Cloud Express, do the following:
 13. Once your instance is up and running, go to the URL you copied in the previous step and sign in to your ThoughtSpot instance, using the following credentials:
   - Username: **tsadmin**
   - Password: **\<Instance-ID>-TS** _(example: i-035ab9c2900ed9fbf-TS)_
-      After you sign in, the _Upload the license key file_ page appears.
+
+    After you sign in, the _Upload the license key file_ page appears.
 
 14. Upload the license key file you received from ThoughtSpot.
 
@@ -84,7 +85,7 @@ To deploy Cloud Express, do the following:
 
 16. If you are going to connect to a Snowflake data warehouse, be sure to enable AWS Private Link for Snowflake. For details, see Snowflake's documentation [Enabling AWS PrivateLink](https://docs.snowflake.net/manuals/user-guide/admin-security-privatelink.html#enabling-aws-privatelink){:target="_blank"} for details.
 
-## Connect to your data warehouse
+## Sign in and connect to your data warehouse
 
 Before you begin, read the available best practices for your data warehouse:
 - [Snowflake best practices]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
@@ -96,12 +97,30 @@ To connect to your data warehouse, do the following:
 2. Connect to your data warehouse. For details, see:
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)
-- [Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)
-- [Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)  
 
-   When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
+ When you create a connection to your data warehouse, you specify the tables and columns you want to link to.
 
 3. Once you create your connection, you can search the connected tables and columns of your data warehouse right away, as you would any tables and columns in ThoughtSpot's internal database.
+
+## Model Data
+
+To benefit from the full power of ThoughtSpot, you can model your data in many ways.
+
+ThoughtSpot recommends that you start with the following:
+- Create table joins (if needed). For details, see: [Join a table or view to another data source]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html)
+- Create a worksheet. For details, see: [Create and use worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html)
+
+  Examples of data modeling that you can do in a worksheet include:
+  - Removing columns that aren't needed
+  - Adding data labels and synonyms
+  - Adding calculations, such as margin  
+For more information about data modeling, see: [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)
+
+## Search
+
+Once you've modeled your data, you're ready to search your dataset.
+
+For search basics, see: [Start a new search]({{ site.baseurl }}/end-user/search/start-a-new-search.html)
 
 ## Related information
 
