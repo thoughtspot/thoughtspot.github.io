@@ -2,7 +2,7 @@
 title: [VMware configuration overview]
 keywords: vmware
 tags: [vm, performance]
-last_updated: 2/20/2020
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -33,7 +33,7 @@ and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine:
 
 * 512GB Memory
-* 200GB SSD
+* 200GB SSD for each node
 * 3X 2TB Hard disks (6TB in total in hard disk space)
 * 72 Hyper-threaded Cores (Additional spare cores can also be added).
 * Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).

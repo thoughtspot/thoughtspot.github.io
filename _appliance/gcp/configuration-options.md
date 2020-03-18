@@ -2,7 +2,7 @@
 title: [GCP configuration options]
 keywords: GCP, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,9 +20,9 @@ GCP provides several storage types and media options. ThoughtSpot requires [atta
 The following table summarizes the reference implementation machine type, along with minimum required CPU, memory capacity, and storage.
 
 
-|Machine Type | Storage Type           | Data Capacity             |vCPUs|System Memory |
-|-------------|---------------------   | -----------------         |-----|--------------|
-|n1-highmem-64|zonal SSD attached disks|1x250GB plus two 1TB disks | 64  |416 GB        |
+| Machine Type | Storage Type | Data Capacity |vCPUs|System Memory | Required root volume capacity |
+| --- | --- | --- | --- | --- | --- |
+|n1-highmem-64|zonal SSD attached disks|1x250GB plus two 1TB disks | 64 |416 GB | 200 GB for each node |
 
 ThoughtSpot uses only persistent storage options. Instance storage (also known
 as "local storage") is not used for ThoughtSpot deployments on GCP.
