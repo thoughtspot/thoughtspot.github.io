@@ -1,6 +1,6 @@
 ---
 title: [Cloud Express for Embrace]
-last_updated: 2/14/2020
+last_updated: 2/18/2020
 toc: true
 summary: "With Cloud Express, you can easily try ThoughtSpot Embrace through a simple cloud-based deployment."
 sidebar: mydoc_sidebar
@@ -10,62 +10,26 @@ With Cloud Express, you can easily connect your production data in an existing c
 
 ## Benefits
 - Easy to sign up
-- Up and running in 5 minutes
+- Deploy with a few clicks in your secure cloud environment
 - Zero ThoughtSpot software cost
 - No more than $100 to $150 per month infrastructure cost
 - No or minimal data modeling required
 - Successful search-driven insights in 45 minutes from launch
 
-## Limitations
+## Supported capabilities and restrictions
 
-<table width="100%" border="0">
-  <tbody>
-	<tr>
-      <td>&#9989;</td>
-      <td>5 Users</td>
-    </tr>  
-    <tr>
-      <td>&#9989;</td>
-      <td>20 million rows</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Snowflake, AWS Redshift data warehouses</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Self-service upgrade (Download and access for new release)</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Measure usage using MixPanel: number of users created, number of rows, queries, objects created, and more</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>SAML*</td>
-    </tr>
-    <tr>
-      <td>&#9989;</td>
-      <td>Restore from snapshot*</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Upload user data</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Backup</td>
-    </tr>
-    <tr>
-      <td>&#10060;</td>
-      <td>Restore from backup</td>
-    </tr>
-    <tr>
-      <td colspan="2"><i>*Available through the ThoughtSpot Management Console ( <b>Admin > Settings</b> )</i></td>
-    </tr>
-  </tbody>
-</table>
+- AWS marketplace driven deployment
+- Embrace support for Snowflake and AWS Redshift
+- 5 users
+- 20 million rows of Embrace data
+- No Falcon data upload
+- No access to ThoughtSpot support. Use ThoughtSpot documentation and documentation to help setup and maintain your Cloud Express deployment
 
+## Workflow
+
+<image>
+
+We can roughly divide the Cloud Express workflow into five steps as shown above. The below sections go into the details of each step
 
 
 ## Sign up for Cloud Express
@@ -141,4 +105,4 @@ To connect to your data warehouse, do the following:
 
 ## Related information
 
-- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html) 
+- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
