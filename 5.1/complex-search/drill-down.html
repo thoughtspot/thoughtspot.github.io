@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can use your answer to learn more about the data used in your search."> -->
-<meta name="keywords" content=",  tbd">
-<title>See the search behind a result | ThoughtSpot</title>
+<!-- <meta name="description" content="Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."> -->
+<meta name="keywords" content=",  ">
+<title>Drill down into your data | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -3185,7 +3185,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">See the search behind a result</h1>
+   <h1 class="post-title-main">Drill down into your data</h1>
 </div>
 
 
@@ -3193,7 +3193,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can use your answer to learn more about the data used in your search.</div>
+    <div class="summary">Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data.</div>
    
 
     
@@ -3229,31 +3229,64 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    3 minutes
   
 </span>-->
 
     
 
-  <p>Drilling down allows you to see more information about the columns used within
-your search. If you own the pinboard you can drill down to the data beneath.
-Users you share the pinboard with can also drill down provide they <em>also</em>
-have access to the data on which the board was based.</p>
+  <p>When you drill down, you can see more information about the data within your search. You can drill down into a datapoint to get a finer grained view of that datapoint and the data behind it. Move easily from a general view of your information to a more specific representation of the data behind a datapoint at a click. For example, in a <strong>revenue by department</strong> search, you may notice that your <strong>clothing</strong> department has the highest revenue. You can drill down on <strong>clothing</strong> by <strong>product name</strong> to find out which products contribute to those high sales. There is no limit to how deep you can drill down.</p>
 
-<p>To drill down:</p>
+<p>You can drill down in both tables and chart visualizations, on both <a href="#answer-drilldown">standalone Answers</a> and on <a href="#pinboard-drilldown">Answers within Pinboards</a>.</p>
+
+<h2 id="answer-drilldown">Drill down on an Answer</h2>
 
 <ol>
   <li>
-    <p>Right-click the visualization or table cell of interest, and select <strong>Drill down</strong>.</p>
-
-    <p><img src="/5.1/images/drill_down.png" alt="" title="Drill down option" /></p>
+    <p>Right-click the chart object (such as a column on a bar chart, or a section of a pie chart) or data point of interest in your answer.</p>
   </li>
   <li>
-    <p>Click any of the listed data to recreate the search with that data included.</p>
+    <p>Select <strong>Drill down</strong>.<br />
+This limits the data you are exploring to that particular data point or chart object.
+ <img src="/5.1/images/drilldown-table.png" alt="Drill down from a data point" title="Drill down from a data point in a table" />
+ <img src="/5.1/images/drilldown-chart.png" alt="Drill down from a chart object" title="Drill down from a data point in a chart" /></p>
+  </li>
+  <li>
+    <p>A list of dimensions appears. You can only drill down on dimensions, not on measures. Click any of the options to gain deeper insight into your data.</p>
 
-    <p><img src="/5.1/images/drill_down_list.png" alt="" title="Drill down list" /></p>
+    <p><img src="/5.1/images/drilldown-productfullname.png" alt="Drill down dimensions" title="Drill down dimensions" /></p>
+
+    <p>For example, if you choose to drill down on <em>dairy</em> by <em>product full name</em>, the following chart appears, showing dairy sales by product:</p>
+
+    <p><img src="/5.1/images/drilldown-example.png" alt="Dairy sales by diet type" title="Dairy sales by diet type" /></p>
+
+    <p>Use your internet browser’s back button to go back one step at a time.</p>
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Your browser’s back button only goes back one step on unsaved Answers. If you are working with a saved Answer, clicking your browser’s back button prompts you to save your unsaved changes, and does not take you back to the previous step in your Drill down.</div>
+
+    <p>You can continue to drill down in the data until you run out of relevant dimensions.</p>
   </li>
 </ol>
+
+<h2 id="pinboard-drilldown">Drill down within a pinboard</h2>
+<p>When you drill down on an Answer within a pinboard, it works similarly to drilling down on the Answer itself. You cannot go back one step at a time, but you can reset the Answer when you finish drilling down. To return to the original answer, click the blue reset icon <img src="/5.1/images/icon-drill-down-20px.png" alt="" class="inline" /> at the bottom right corner of the Answer.</p>
+
+<p><img src="/5.1/images/drilldown-pinboard.png" alt="Reset your Answer" title="Reset your Answer" /></p>
+
+<h2 id="save-and-share-your-new-answer">Save and share your new answer</h2>
+<p>When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the <strong>Search</strong> bar later.</p>
+<ol>
+  <li>Click the ellipsis icon <img src="/5.1/images/icon-more-10px.png" alt="" class="inline" />.</li>
+  <li>Select <strong>copy and edit</strong>.</li>
+  <li><strong>Save</strong> your new Answer and continue working with it.</li>
+  <li>Alternatively, select <strong>Download</strong> to download an image of your current visualization.</li>
+</ol>
+
+<p>You can also <a href="/5.1/end-user/pinboards/share-answers.html">share the Answer</a> by clicking the sharing icon <img src="/5.1/images/icon-share copy-20px.png" alt="" class="inline" />. Otherwise, the Answer returns to its original state when you exit the page.</p>
+
+<h2 id="share-your-data">Share your data</h2>
+<p>If you own a pinboard or answer, you can drill down to the data beneath.
+Users you share a pinboard or answer with can also drill down provided they <em>also</em>
+have access to the data on which the board was based. If you do not have access to a pinboard or answer’s underlying data source, you cannot drill down. See [overview of sharing](/5.1/end-user/data-view/sha</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3279,9 +3312,9 @@ have access to the data on which the board was based.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 3, 2020 <br />
+        Generated: Mar 19, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 3/12/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
