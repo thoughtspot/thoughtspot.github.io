@@ -12,9 +12,6 @@ With Cloud Express, you can easily connect your production data in an existing c
 - Easy to sign up
 - Deploy with a few clicks in your secure cloud environment
 - Zero ThoughtSpot software cost
-- No more than $100 to $150 per month infrastructure cost
-- No or minimal data modeling required
-- Successful search-driven insights in 45 minutes from launch
 
 ## Supported capabilities and restrictions
 
