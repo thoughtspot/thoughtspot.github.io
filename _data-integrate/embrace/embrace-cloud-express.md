@@ -16,7 +16,7 @@ With Cloud Express, you can easily connect your production data in an existing c
 ## Supported capabilities and restrictions
 
 - AWS marketplace driven deployment
-- Embrace support for Snowflake and AWS Redshift
+- Embrace support for Snowflake and Amazon Redshift
 - 5 users
 - 20 million rows of Embrace data
 - No Falcon data upload
