@@ -2,7 +2,7 @@
 title: [GCP configuration options]
 keywords: GCP, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -48,7 +48,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">208 GB</p></td>
       <td><p dir="ltr">n1-highmem-64</p></td>
       <td><p dir="ltr">64/416</p></td>
-		<td><p dir="ltr">250 GB</p></td>
+		<td><p dir="ltr">250 GB for each ndoe</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">312 GB</p></td>
       <td><p dir="ltr">n1-highmem-96</p></td>
       <td><p dir="ltr">96/624</p></td>
-		<td><p dir="ltr">250 GB</p></td>
+		<td><p dir="ltr">250 GB for each node</p></td>
 		<td><p dir="ltr">2X 1.5 TB</p></td>
     </tr>
     <tr>
@@ -68,7 +68,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">100 GB</p></td>
       <td><p dir="ltr">n1-highmem-32<sup>b</sup></p></td>
       <td><p dir="ltr">32/208</p></td>
-		<td><p dir="ltr">250 GB</p></td>
+		<td><p dir="ltr">250 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -78,7 +78,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">20 GB</p></td>
       <td><p dir="ltr">n1-highmem-16<sup>b</sup></p></td>
       <td><p dir="ltr">16/122</p></td>
-		<td><p dir="ltr">250 GB</p></td>
+		<td><p dir="ltr">250 GB for each node</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">180 GB</p></td>
       <td><p dir="ltr">n1-standard-96</p></td>
       <td><p dir="ltr">96/360</p></td>
-		<td><p dir="ltr">250 GB</p></td>
+		<td><p dir="ltr">250 GB for each node</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>
 	<tr>
