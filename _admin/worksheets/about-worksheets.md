@@ -1,7 +1,7 @@
 ---
 title: [Create and use worksheets]
 
-last_updated: 3/19/2020
+last_updated: 3/20/2020
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,7 +28,7 @@ The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
 
-2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another format, you can migrate it [using a flat `yaml` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html#worksheet-migrate).
+2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `yaml` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html#worksheet-migrate).
 
 3.  Add sources (tables) to the worksheet.
 

@@ -1,7 +1,7 @@
 ---
 title: [Create a formula in a worksheet]
 
-last_updated: 3/19/2020
+last_updated: 3/20/2020
 summary: "You can define formulas and use them to create derived columns in worksheets. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,7 +21,7 @@ You can create a formula in a worksheet by using the Formula Builder. When you d
 
      ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Builder")
 
-    **Note:** Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
+    **Note:** Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
 
 5.  You can see a list of formula operators with examples by clicking on **Formula Assistant.**
 
