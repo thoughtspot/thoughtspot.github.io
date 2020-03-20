@@ -37,7 +37,9 @@ For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-refere
 
 The following issues are fixed in the 6.1 release:
 
-- tbd.
+  - When using the `tscli fileserver upload` command to upload a file that is larger than the maximum supported file size, an error message with an incorrect maximum file size appears.
+  - The tscli event list displays mesages for creation, modification, and deletion that are not user friendly.
+  - Sorting or filtering a column in a chart does not work.
 
 {: id="beta-program"}
 ## Beta Programs
