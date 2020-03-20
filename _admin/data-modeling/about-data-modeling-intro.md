@@ -13,7 +13,7 @@ can be explored and aggregated. Metadata include such information as **Column
 Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
 Rank** and so forth.
 
-When you load data, ThoughtSpot has defaults for data modeling metadata. After
+When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users. After
 loading data, you can start searching your data without doing any data modeling,
 creating relationships, or tagging. However, since you know your data best, you
 can customize the modeling settings. Putting some thought into these will make
@@ -23,8 +23,7 @@ the data even easier and more intuitive to search for your end users.
 ## User interfaces for modeling data
 
 Data modeling is a very lightweight process compared to what you may have
-experienced in other tools.  You can configure the model for an individual data
-table or you can view and configure all the system data using a modeling file.
+experienced in other tools. It enables you to change some of the settings (or properties) of the data so that it becomes more searchable. You can configure the model [for an individual data table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or you can view and configure all the system data [using a modeling file]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
 Editing the data model file requires that you have administrative privileges.
 
 The model file contains a row for each column in your data set. It isn't unusual
@@ -32,7 +31,7 @@ to have tens of thousand of rows in this file. This means that editing this file
 equivalent to editing all the tables simultaneously. When you add new data to your
 system, this file expands to accommodate the new data columns you have added.
 
-Both of these methods, have the same effect, they improve search. Moreover,
+Both of these methods have the same effect: they improve search. Moreover,
 while they have different effects of scale, they use the same mechanisms to
 accomplish these effects.
 
@@ -50,3 +49,4 @@ Explains the possible data model settings and their accepted values. These are t
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
 - **[About stickers]({{ site.baseurl }}/admin/data-modeling/stickers-concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.
+- **[Manage experts or add an expert to your data]({{ site.baseurl }}/admin/data-modeling/add-expert.html)**
