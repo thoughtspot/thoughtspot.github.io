@@ -1,5 +1,5 @@
 ---
-title: [Back up and Restore]
+title: [Back up and Restore a cluster in AWS]
 last_updated: 3/13/2020
 sidebar: mydoc_sidebar
 summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in AWS."
@@ -20,6 +20,7 @@ To back up your cluster to an S3 bucket, use the ThoughtSpot tscli:
 2. Run the backup command using the following syntax:  
 
     `tscli backup create --storage_type=cloud <SNAPSHOT NAME> <PATH TO BACKUP IN CLOUD>`
+
     Example:
     ```
     $ tscli backup create --storage_type=cloud snapshot_1 my_backup001
@@ -39,5 +40,5 @@ To restore your cluster from an S3 bucket, use the ThoughtSpot tscli:
 
     Example:
     ```
-    $ tscli cluster restore s3://bucket0001/backup/my_backup001
+    $ tscli cluster restore s3://bucket0001/backup/my_backup001 --enable_cloud_storage=s3a
     ```

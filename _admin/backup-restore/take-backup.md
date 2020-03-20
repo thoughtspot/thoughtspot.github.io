@@ -69,5 +69,5 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 ## Backing up a ThoughtSpot cloud deployment
 
 For details on how to back up a ThoughtSpot cluster hosted in the cloud, see:
-- [AWS Backup and Restore]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
-- [GCP Backup and Restore]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
+- [Backup and Restore with AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [Backup and Restore with GCP]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
