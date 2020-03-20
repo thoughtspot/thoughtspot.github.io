@@ -813,6 +813,9 @@ entries:
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
           output: web,pdf
+        - title: Add or manage experts
+          url: /admin/data-modeling/add-expert.html
+          output: web,pdf
       - levelThreeTitle: Link tables using relationships
         output: web,pdf
         levelThreeItems:
