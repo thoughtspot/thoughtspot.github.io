@@ -22,7 +22,7 @@ fixed issues from previous releases, and any known issues.
 
 Now you can back up and restore your ThoughtSpot cluster hosted in either AWS or GCP.
 
-For AWS, you can use an S3 bucket. For GCP, you can use a GCS bucket.
+For AWS, you use an S3 bucket. For GCP, you use a GCS bucket.
 
 For details, see:
 - [Back up and restore a cluster in AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
