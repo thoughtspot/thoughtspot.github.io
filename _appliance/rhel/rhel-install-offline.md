@@ -21,7 +21,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
    - checks that the partitions meet minimum size requirements
 
 | &#10063; | [1. Configure the Ansible Playbook](#configure-ansible) |
-| &#10063; | [2. Redirect the mirror repository] (#redirect-mirror) |
+| &#10063; | [2. Redirect the mirror repository](#redirect-mirror) |
 | &#10063; | [3. Run the Ansible Playbook](#run-ansible) |
 | &#10063; | [4. Install ThoughtSpot](#install-thoughtspot) |
 
