@@ -1,7 +1,7 @@
 ---
 title: [Configure periodic backups]
 
-last_updated: tbd
+last_updated: 3/4/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -63,79 +63,6 @@ The retention system deletes the oldest stored backup and the corresponding
 snapshot on a first-in-first-out basis (FIFO). This means that if you set a
 bucket retention of 1 the system stores a single backup at any one time. The
 system  deletes the older backup after the new full backup is successful.
-<!--
-### Configure using Management Console
-
-{% include note.html content="The Management Console is now available in **beta** for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-To configure periodic backups using the admin UI:
-1. Log in to ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **Backup Policy** and then **Configure** option.
-
-   ![]({{ site.baseurl }}/images/backup-policy.png)  
-
-
-5. Update the backup policy details:
-
-   ![]({{ site.baseurl }}/images/backup-policy-configure.png)
-
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>Backup Policy Name</th>
-   <td>Specify the name of the backup policy.</td>
-   </tr>
-   <tr>
-   <th>Location</th>
-   <td>Specify the backup location.</td>
-   </tr>
-   <tr>
-   <th>NAS Path</th>
-   <td>If you choose NAS, select the NAS path or configure a new NAS mount.</td>
-   </tr>
-   <tr>
-   <th>Mode</th>
-   <td>Select the backup mode. Allowed type are <code>full</code>, <code>light weight</code> or <code>dataless</code>.</td>
-   </tr>
-   <tr>
-   <th>Directory Name</th>
-   <td>Specify the location on the disk to place the backup.</td>
-   </tr>
-   <tr>
-   <th>Period</th>
-   <td>Specify the frequency in the chosen unit. Allowed unit types are Minutes, Hours, or Days.</td>
-   </tr>
-   <tr>
-   <th>Retention Policy</th>
-   <td>Specify the retention intervals in the chosen unit. Allowed unit types are Minutes, Hours, or Days. Retention is on a first-in-first-out (FIFO) basis. So, the oldest backup is always deleted after the new full backup is successful.</td>
-   </tr>
-   <tr>
-   <th>Capacity</th>
-   <td>Specify the retention capacity.
-
-   <p><b>Note:</b> You can add multiple retention buckets with different retention policies. Click <b>Add Retention Policy</b> to specify more policies.</p></td>
-   </tr>
-   </table>
-
-6. Click **Save** to update the backup policy.
-
--->
 
 ### Configure using tscli
 

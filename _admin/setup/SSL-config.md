@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 10/11/2019
+last_updated: 3/4/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -43,67 +43,6 @@ The SSL certificate chain must be in `.PEM` format. This is an `X.509v3` file th
 ### Private key
 The private key must be in compatible `.PEM` format. It cannot be password or passphrase protected.
 
-<!--### Using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-To install and configure the SSL certificate using the admin UI:
-
-1. Log in to ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **SSL** and then  **Configure** option.
-
-   ![]({{ site.baseurl }}/images/ssl.png)  
-
-5. Enter the SSL details:
-
-   ![]({{ site.baseurl }}/images/ssl-configure.png)
-
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <th>SSL Status</th>
-      <td>Enable the SSL. If you want to disable the LDAP configuration, select Disable and then click Save to exit the setup.</td>
-    </tr>
-    <tr>
-      <th>Algorithm</th>
-      <td>Choose the algorithm as RSA.</td>
-    </tr>
-    <tr>
-      <th>Minimum TLS Version</th>
-      <td>Set the recommended TLS version as TLS v1.2. <p><b>Note</b>: Choose SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.</p></td>
-    </tr>
-    <tr>
-      <th>Private Key</th>
-      <td>Browse and copy the private key to ThoughtSpot.</td>
-    </tr>
-    <tr>
-      <th>Public Certificate</th>
-      <td>Browse and copy the public cert to ThoughtSpot.</td>
-    </tr>
-   </table>
-
-6. Click **Save** to configure the SSL.
-
-You can now test the SSL setup by log in to the ThoughtSpot application. You should see the application URL begins with `https://`.
-
-
--->
 {: id="ssl-configure-tscli"}
 ## Configure SSL using tscli
 

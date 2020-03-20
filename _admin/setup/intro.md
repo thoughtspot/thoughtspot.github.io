@@ -1,6 +1,6 @@
 ---
 title: [About installation and upgrades]
-last_updated: 10/09/2019
+last_updated: 3/4/2020
 summary: "As administrator, you are responsible for setting up and configuring ThoughtSpot. This guide explains how. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -42,26 +42,6 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
-<!--
-{: id="management-console" }
-## About Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later.  If you want to try it, please contact ThoughtSpot Support." %}
-
-ThoughtSpot now comes with a Management Console, a self-service portal that enables network administrators to manage and monitor ThoughtSpot clusters. This console  compliments the existing tscli-based configuration. The Management Console is broadly classified into three functional areas, namely:
-- **Admin**: The existing admin-related functions such as user, data, jobs, system monitoring, styling and many more reside here.
-- **Settings**: This section allows you to configure a series of system administration modules such as SAML, SSL, LDAP, AD, SMTP and many more.
-  - [Configure SSL]({{ site.baseurl }}/admin/setup/SSL-config.html)
-  - [Configure internal authentication]({{ site.baseurl }}/admin/setup/internal-auth.html)
-  - [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html)
-  - [Configure NAS file system]({{ site.baseurl }}/admin/setup/NAS-mount.html)
-  - [Create a backup]({{ site.baseurl }}/admin/backup-restore/take-backup.html)
-  - [Create a snapshot]({{ site.baseurl }}/admin/backup-restore/overview-snapshot.html)
-  - [Configure SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
-  - [Configure reverse SSH tunnel]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#set-up-a-reverse-tunnel-for-support)
-- **Update**: This section allows you to [upgrade your cluster.]({{ site.baseurl }}/admin/system-admin/upgrade-a-cluster.html#)
-
--->
 {: id="related" }
 ## Related information
 
