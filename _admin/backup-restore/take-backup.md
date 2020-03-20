@@ -66,10 +66,8 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
     $ tscli backup ls
     ```
 
-### Backing up to an Amazon S3 bucket
+## Backing up a ThoughtSpot cloud deployment
 
-To back up to an Amazon S3 bucket, do the following when creating your backup:
-- For `--storage_type`, specify `cloud`
-- For `--bucket_name`, specify your Amazon S3 bucket name
-
-If you are backing up a cluster hosted in AWS, make sure to back up to an S3 bucket in the same region as your cluster. By doing this, you avoid the additional cross-region data transfer costs.
+For details on how to back up a ThoughtSpot cluster hosted in the cloud, see:
+- [AWS Backup and Restore]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [GCP Backup and Restore]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)

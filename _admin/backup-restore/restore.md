@@ -14,3 +14,9 @@ Restoring from backup require that you first delete the old cluster. Changes to 
 -   Restoring to a cluster running a different release from the one where the snapshot/backup was taken.
 
 You should never restore from a snapshot or backup yourself. To restore from a snapshot or backup, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+## Restoring a ThoughtSpot cloud deployment
+
+For details on how to restore a ThoughtSpot cluster hosted in the cloud, see:
+- [AWS Backup and Restore]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [GCP Backup and Restore]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
