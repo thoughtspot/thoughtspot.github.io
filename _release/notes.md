@@ -32,6 +32,7 @@ ThoughtSpot certifies RHEL 7.7 on the following platforms:
 - Cloud deployments: AWS and GCP
 - VMware
 RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
+For more information, see [RHEL Deployment Overview]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 {: id="6-0-4-fixed"}
 ## 6.0.4 Fixed Issues
