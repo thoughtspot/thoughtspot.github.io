@@ -18,11 +18,15 @@ fixed issues from previous releases, and any known issues.
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
 
-### Back up and Restore from an S3 bucket
+### Back up and restore ThoughtSpot AWS and GCP clusters
 
-Now you can back up your ThoughtSpot cluster to and restore from an Amazon S3 bucket.
+Now you can back up and restore your ThoughtSpot cluster hosted in either AWS or GCP.
 
-For details, see: [Create a manual backup]({{ site.baseurl }}/admin/backup-restore/take-backup.html#) and [About restore operations]({{ site.baseurl }}/admin/backup-restore/restore.html#)
+For AWS, you use an S3 bucket. For GCP, you use a GCS bucket.
+
+For details, see:
+- [Back up and restore a cluster in AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [Back up and restore a cluster in GCP]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
 
 ### Geomap support for Norway and Switzerland
 
