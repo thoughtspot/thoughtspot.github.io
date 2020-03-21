@@ -38,8 +38,23 @@ For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-refere
 The following issues are fixed in the 6.1 release:
 
   - When using the `tscli fileserver upload` command to upload a file that is larger than the maximum supported file size, an error message with an incorrect maximum file size appears.
-  - The tscli event list displays mesages for creation, modification, and deletion that are not user friendly.
+  - The tscli event list displays messages for creation, modification, and deletion that are not user friendly.
   - Sorting or filtering a column in a chart does not work.
+  - The column order in the PDF of a visualization is different than the order in shown in ThoughtSpot.
+  - Removing a key from a table is not possible because multiple joins for an old column cannot be detected.
+  - Intermittent slow search response time.
+  - Entering a search causes results from columns outside the selected data source.
+  - An incorrect result is displayed when a filter is created on Group_Max aggregation function.
+  - Backup policy names are not validated to ensure they won't cause backups to fail.
+  - The headline table aggregate summary is not available when group aggregate functions are used.
+  - Removing a column from a search increases the number of rows shown.
+  - Multiple variables cannot be added to a single map visualization.
+  - Drilling down on a visualization causes the date format to change.
+  - Double-clicking on the legend of a stacked column chart does not showing hidden values.
+  - Data load fails due to a primary key having multiple rows.
+  - Filtering on a pinboard card causes a NullPointerException error.
+  - Pre-update check of self-service upgrade runs indefinitely.
+  - A formula with Group_Max function doesn't work with Growth key word.
 
 {: id="beta-program"}
 ## Beta Programs
