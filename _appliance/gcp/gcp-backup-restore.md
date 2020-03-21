@@ -9,7 +9,7 @@ You can back up and restore your ThoughtSpot cluster hosted in GCP using a GCS b
 
 It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.
 
-## Backing up to an GCS bucket
+## Backing up to a GCS bucket
 
 To back up your cluster to a GCS bucket, use the ThoughtSpot tscli:
 
@@ -26,9 +26,9 @@ To back up your cluster to a GCS bucket, use the ThoughtSpot tscli:
     $ tscli backup create --storage_type=cloud snapshot_1 my_backup001
     ```
 
-## Restoring from an GCS bucket
+## Restoring from a GCS bucket
 
-To restore your cluster from an GCS bucket, use the ThoughtSpot tscli:
+To restore your cluster from a GCS bucket, use the ThoughtSpot tscli:
 
 1. Log in to the Linux shell of your cluster using SSH.
     ```
