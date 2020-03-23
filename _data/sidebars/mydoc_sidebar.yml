@@ -772,6 +772,9 @@ entries:
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
           output: web,admBk
+        - title: Add or manage experts
+          url: /admin/data-modeling/add-expert.html
+          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
