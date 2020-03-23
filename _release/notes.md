@@ -28,7 +28,7 @@ For details, see:
 - [Back up and restore a cluster in AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
 - [Back up and restore a cluster in GCP]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
 
-### Geomap support for Norway and Switzerland
+### Geo map support for Norway and Switzerland
 
 For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
 
@@ -43,18 +43,39 @@ The following issues are fixed in the 6.1 release:
   - The column order in the PDF of a visualization is different than the order in shown in ThoughtSpot.
   - Removing a key from a table is not possible because multiple joins for an old column cannot be detected.
   - Intermittent slow search response time.
-  - Entering a search causes results from columns outside the selected data source.
-  - An incorrect result is displayed when a filter is created on Group_Max aggregation function.
+  - Entering a search generates results from columns outside the selected data source.
+  - An incorrect result is displayed when a filter is created on the Group_Max aggregation function.
   - Backup policy names are not validated to ensure they won't cause backups to fail.
   - The headline table aggregate summary is not available when group aggregate functions are used.
   - Removing a column from a search increases the number of rows shown.
   - Multiple variables cannot be added to a single map visualization.
   - Drilling down on a visualization causes the date format to change.
-  - Double-clicking on the legend of a stacked column chart does not showing hidden values.
+  - Double-clicking on the legend of a stacked column chart does not show hidden values.
   - Data load fails due to a primary key having multiple rows.
   - Filtering on a pinboard card causes a NullPointerException error.
-  - Pre-update check of self-service upgrade runs indefinitely.
   - A formula with Group_Max function doesn't work with Growth key word.
+  - The confirmation message for deleting a restored cluster indicates the wrong cluster name.
+  - Modifying a date filter of a pinboard from a set date range to none, causes the filter to disappear.
+  - R visualization downloads fail when exporting to PDF.
+  - A pinboard with filters cannot be saved.
+  - Using a weekly date aggregation with a custom calendar, causes the days to be split at the end of the month if the month ends in the middle of the week.
+  - Worksheet filters provide different answers than search filters.
+  - Drilling down on a date in a custom calendar displays an incorrect epoch.
+  - Menu items, including Share, Copy a Link, and Send Feedback, cannot be disabled when ThoughtSpot is embedded.
+  - ThoughtSpot instances hosted in GCP have a 127.0.0.1 address for eth0.
+  - Keywords do not provide correct results when using a custom calendar.
+  - A worksheet cannot be saved after changing a join type.
+  - Top and Bottom keywords do not work on a measure with the `unique_count_if` formula applied.
+  - Non-admin users are unable to search for a newly added column in the worksheet.
+  - Colors of slices in pie chart change when you filter on the pie chart.
+  - Total labels in a Stacked Bar chart do not account for negative amounts.
+  - When adding a connection in Embrace, not all tables in the external database are displayed.
+  - ThoughtSpot TQL does not list tables that don't exist in the default Falcon schema.
+  - The date format in a PDF is not correct for the user's locale.
+  - Various display issues with Admin Portal.
+  - Periodic backups fail after upgrade.
+  - Geo maps allow regional German names for states.
+  - In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate large_files.
 
 {: id="beta-program"}
 ## Beta Programs

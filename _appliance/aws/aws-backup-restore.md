@@ -19,11 +19,11 @@ To back up your cluster to an S3 bucket, use the ThoughtSpot tscli:
     ```
 2. Run the backup command using the following syntax:  
 
-    `tscli backup create --storage_type=cloud <SNAPSHOT NAME> <PATH TO BACKUP IN CLOUD>`
+    `tscli backup create --storage_type=cloud <SNAPSHOT NAME> <PATH TO BACKUP> --bucket_name=<BUCKET NAME>`
 
     Example:
     ```
-    $ tscli backup create --storage_type=cloud snapshot_1 my_backup001
+    $ tscli backup create --storage_type=cloud snapshot_1 my_backup001 --bucket_name=new_bucket
     ```
 
 ## Restoring from an Amazon S3 bucket
