@@ -55,6 +55,7 @@ The following issues are fixed in the 6.1 release:
   - Filtering on a pinboard card causes a NullPointerException error.
   - Pre-update check of self-service upgrade runs indefinitely.
   - A formula with Group_Max function doesn't work with Growth key word.
+  - The confirmation message for deleting a restored cluster indicates the cluster name.
 
 {: id="beta-program"}
 ## Beta Programs
