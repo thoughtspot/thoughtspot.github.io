@@ -1,6 +1,6 @@
 ---
 title: ["Manage expert requests"]
-last_updated: 3/20/2020
+last_updated: 3/23/2020
 summary: "You can monitor and manage Ask an Expert requests, both as a requester and as an expert."
 sidebar: mydoc_sidebar
 toc: true
@@ -53,7 +53,7 @@ Note these features of the interface:
 | --- | --- |
 |1. | <strong>I am a requester:</strong> for all requests where you are a requester |
 | 2. | <strong>I am an expert:</strong> for all requests where you are an expert |
-| 3. | <strong>All:</strong> all requests, both <em>Resolved</span> and <em>Unresolved</em> |
+| 3. | <strong>All:</strong> all requests, both <em>Resolved</em> and <em>Unresolved</em> |
 | 4. | <strong>Resolved:</strong> all resolved requests |
 | 5. | <strong>Unresolved:</strong> for all unresolved requests |
 | 6. | <strong>Search:</strong> find requests |
