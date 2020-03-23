@@ -1,7 +1,7 @@
 ---
 title: [Create and use worksheets]
 
-last_updated: tbd
+last_updated: 3/20/2020
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -75,9 +75,7 @@ To add the sources to the worksheet:
 
     ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png)
 
-3. If you want to see what the data inside the sources looks like, click **Explore all data**.
-
-4. Choose the [worksheet join rule](progressive-joins.html#).
+4. Choose the [worksheet join rule](progressive-joins.html#). You can either **apply joins progressively**, or **apply all joins**. Applying joins progressively improves performance.
 
 5. If you want to disable [Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#), for this worksheet, check the checkbox to disable it.
 
@@ -93,11 +91,11 @@ To add the sources to the worksheet:
 
     Note that after you add a column, non-related tables (those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
-8.  (Optional) [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
+8.  (Optional) [Modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
-9.  (Optional) [create formulas](create-formula.html#).
+9.  (Optional) [Create formulas](create-formula.html#).
 
-10.  (Optional) [create worksheet filters](create-ws-filter.html#).
+10.  (Optional) [Create worksheet filters](create-ws-filter.html#).
 
 11. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
