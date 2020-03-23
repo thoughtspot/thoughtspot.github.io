@@ -1,15 +1,15 @@
 ---
 title: ["Ask an expert"]
 keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
-last_updated: 4/16/2019
+last_updated: 3/23/2020
 summary: "Need help finding something in your data? Ask an expert to create the search for you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use **Ask an expert** to request help from someone in your organization. Your request will go to the person in your company who best know the data source you're using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the **Answers** listing in ThoughtSpot.
+At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use **Ask an expert** to request help from someone in your organization. Your request goes to the person in your company who best knows the data source you're using and how to search it in ThoughtSpot. When the expert responds, you can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
-{% include note.html content="If you don't see **Ask an expert** it's possible that your company has chosen to disable this capability. If you want to try it out, ask your administrator to consider enabling it ." %}
+{% include note.html content="If you don't see **Ask an expert** it's possible that your company has chosen to disable this capability. If you want to try it out, ask your administrator to consider enabling it." %}
 
 **Ask an expert** can help in these ways:
 
