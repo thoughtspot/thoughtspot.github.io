@@ -23,7 +23,7 @@ To back up your cluster to a GCS bucket, use the ThoughtSpot tscli:
 
     Example:
     ```
-    $ tscli backup create --storage_type=cloud snapshot_1 my_backup001 --bucket_name=new_bucket
+    $ tscli backup create --storage_type=cloud snapshot_1 my_backup001 --bucket_name=my_bucket
     ```
 
 ## Restoring from a GCS bucket
