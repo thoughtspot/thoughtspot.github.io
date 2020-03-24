@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Answer an expert question”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="When a user struggles to answer a specific question, build a chart you have in mind, or find something in the data, they can use Ask an expert to request help. The request will go to the designated expert for the data source they were searching. The user will be able to see the result in the Answers listing in ThoughtSpot." />
-<meta property="og:description" content="When a user struggles to answer a specific question, build a chart you have in mind, or find something in the data, they can use Ask an expert to request help. The request will go to the designated expert for the data source they were searching. The user will be able to see the result in the Answers listing in ThoughtSpot." />
+<meta name="description" content="When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use Ask an Expert to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert’s answer in the Ask an Expert interface in ThoughtSpot." />
+<meta property="og:description" content="When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use Ask an Expert to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert’s answer in the Ask an Expert interface in ThoughtSpot." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-20T08:02:51-07:00" />
+<meta property="article:published_time" content="2020-03-24T14:12:55-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Answer an expert question”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Answer an expert question”]","dateModified":"2020-03-20T08:02:51-07:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html","datePublished":"2020-03-20T08:02:51-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html"},"description":"When a user struggles to answer a specific question, build a chart you have in mind, or find something in the data, they can use Ask an expert to request help. The request will go to the designated expert for the data source they were searching. The user will be able to see the result in the Answers listing in ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Answer an expert question”]","dateModified":"2020-03-24T14:12:55-07:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html","datePublished":"2020-03-24T14:12:55-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/answer-expert-question.html"},"description":"When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use Ask an Expert to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert’s answer in the Ask an Expert interface in ThoughtSpot.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -564,7 +564,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/complex-search/in-keyword-searches.html">Using the in keyword for nested searches</a></li>
+                                  <li><a href="/6.0/complex-search/in-keyword-searches.html">Subquery search</a></li>
                               
                             
                         
@@ -2047,6 +2047,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/6.0/admin/data-modeling/attributable-dimension.html">Change the Attribution Dimension setting</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-modeling/add-expert.html">Add or manage experts</a></li>
                               
                             
                         
@@ -3736,42 +3742,42 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>When a user struggles to answer a specific question, build a chart you have in mind, or find something in the data, they can use <strong>Ask an expert</strong> to request help. The request will go to the designated expert for the data source they were searching. The user will be able to see the result in the <strong>Answers</strong> listing in ThoughtSpot.</p>
+  <p>When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use <strong>Ask an Expert</strong> to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert’s answer in the <strong>Ask an Expert</strong> interface in ThoughtSpot.</p>
 
 <h2 id="how-do-i-answer-a-question-from-ask-an-expert">How do I answer a question from Ask an Expert?</h2>
 
 <ol>
   <li>You receive an email stating that your help is needed, with a link to the request.<br />
-If you do not have an email set up in ThoughtSpot, you must do this to check for requests:
+If you do not have an email set up in ThoughtSpot, follow these steps to check for requests:
     <ol>
       <li>Log in to ThoughtSpot.</li>
-      <li>Click <strong>Answers</strong> in the top menu.</li>
-      <li>On the top right hand side, click the ellipses and choose <strong>View Requested Answers</strong>. You can see a listing of all requests for help.</li>
+      <li>In the top right corner of the ThoughtSpot interface, click the <img src="/6.0/images/icon-help-20px.png" alt="help menu icon" class="inline" /> (help) icon menu.</li>
+      <li>
+        <p>In the drop-down, select <strong>Expert Requests</strong>.</p>
+
+        <p><img src="/6.0/images/ask-an-expert.png" alt="Click Expert requests" title="Click Expert requests" /></p>
+      </li>
+      <li>Click <strong>I am an expert</strong> on the top left side of the screen.</li>
+      <li>You can see a list of all requests for which you are an expert.</li>
     </ol>
   </li>
-  <li>When you choose a request to answer, you can see the answer the user was working on. You are now in “expert mode”. If the user provided an explanation of what they were looking for, you can see that under the visualization.</li>
-</ol>
+  <li>
+    <p>When you choose a request to answer, you can see the Answer the user was working on. If the user provided an explanation of what they were looking for, you can see that under the visualization.</p>
 
-<p><img src="/6.0/images/ask_an_expert_request.png" alt="" title="Ask an expert request" /></p>
-
-<ol>
+    <p><img src="/6.0/images/ask-an-expert-resolve.png" alt="Answer an expert request" title="Answer an expert request" /></p>
+  </li>
   <li>
     <p>Work on the answer until it looks like what the user wanted to see. Then click <strong>Close</strong>.</p>
   </li>
   <li>
     <p>If the requester has an email address in ThoughtSpot, an email will be sent to them with a link to the answer. If not, you must share a link to the answer with them using email or a direct message. A link to the answer is provided, so you can easily share the answer.</p>
-  </li>
-</ol>
 
-<p><img src="/6.0/images/ask_an_expert_share.png" alt="" title="Ask an expert share link" /></p>
-
-<ol>
-  <li>
-    <p>When you’ve answered the question (and copied the link, if needed), you can mark the request answered by clicking <strong>Mark as Answered</strong>.</p>
+    <p><img src="/6.0/images/ask-an-expert-mark-as-resolved.png" alt="Resolve your expert request" title="Resolve your expert request" /></p>
   </li>
   <li>
-    <p>If you want to see the answer again, you can find it listed along with the other answers. Click <strong>Answers</strong> in the top menu to see the list of saved answers.</p>
+    <p>When you’ve answered the question (and copied the link, if needed), you can mark the request answered by clicking <strong>Mark as resolved</strong>.</p>
   </li>
+  <li>If you want to see the answer again, you can find it listed along with the other Answers. Click <strong>Answers</strong> in the top menu to see the list of saved Answers, or click <strong>Expert requests</strong> from the help menu to see Answers specific to <strong>Ask an Expert</strong>.</li>
 </ol>
 
 <h2 id="related-information">Related information</h2>
@@ -3806,9 +3812,9 @@ If you do not have an email set up in ThoughtSpot, you must do this to check for
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 20, 2020 <br />
+        Generated: Mar 24, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 4/16/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 3/23/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
