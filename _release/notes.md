@@ -18,6 +18,12 @@ fixed issues from previous releases, and any known issues.
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
 
+### Updating ThoughtSpot UI through CDN
+
+Starting with this release, you can configure automatic updates of the front end of the ThoughtSpot application by uploading from CDN (Amazon Cloudfront). This enables your organization to get many new features of ThoughtSpot and get many critical bug fixes without experiencing the traditional upgrade downtime.
+
+UI auto-update is in the Early Access phase. Please contact us if you are interested in participating in the Auto-update Early Access Program.
+
 ### Back up and restore ThoughtSpot AWS and GCP clusters
 
 Now you can back up and restore your ThoughtSpot cluster hosted in either AWS or GCP.
