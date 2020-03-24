@@ -128,7 +128,7 @@ ThoughtSpot now supports the following features for linked tables:
 <strong>Embrace overview</strong>
 <br>
 
-<div class="wistia_responsive_padding" style="padding:37% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:252px;left:0;position:absolute;top:0;width:450px;"><iframe src="//fast.wistia.net/embed/iframe/1n7ei0tqr4?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<div class="wistia_responsive_padding" style="padding:35% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:252px;left:0;position:absolute;top:0;width:450px;"><iframe src="//fast.wistia.net/embed/iframe/1n7ei0tqr4?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
@@ -153,7 +153,9 @@ This release introduces a complete new approach that makes chart configuration m
 
 <strong>Chart configuration overview</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_v408bchsqf popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+<div class="wistia_responsive_padding" style="padding:37% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:252px;left:0;position:absolute;top:0;width:450px;"><iframe src="//fast.wistia.net/embed/iframe/u5rc5qsv4x?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 * **[Add drag-and-drop chips]({{ site.baseurl }}/end-user/search/drag-and-drop.html)** automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
 * **[Improve number formatting]({{ site.baseurl}}/end-user/search/show-data-labels.html#labels-one)** for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
@@ -176,6 +178,7 @@ Administrators can configure a welcoming experience for new users. In addition t
 
 <strong>Configure new user welcome experience and emails</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/bo6xskh8x0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_bo6xskh8x0 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ### Getting started
@@ -184,6 +187,7 @@ To quickly onboard new users and teach them how to effectively use ThoughtSpot, 
 
 <strong>Getting started with ThoughtSpot</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 See [the Getting Started sidebar]({{ site.baseurl }}/end-user/introduction/getting-started.html).
@@ -194,7 +198,9 @@ We improved the experience of sharing Answers and Pinboards through better email
 
 <strong>Sharing Pinboards and Answers</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+<div class="wistia_responsive_padding" style="padding:35% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:252px;left:0;position:absolute;top:0;width:450px;"><iframe src="//fast.wistia.net/embed/iframe/nb9t69l8nd?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
@@ -204,6 +210,7 @@ To enhance the ease of sharing, we simplified and reinforced the workflow for ac
 
 <strong>Requesting and granting access to Pinboards and Answers</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/34nrrb385a.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_34nrrb385a popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ### Google Cloud Platform GCS persistent storage
