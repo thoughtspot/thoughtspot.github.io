@@ -28,9 +28,11 @@ fixed issues from previous releases, and any known issues.
 
 This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
 ThoughtSpot certifies RHEL 7.7 on the following platforms:
+
 - ThoughtSpot-configured appliances, both DELL hardware and SMC hardware
 - Cloud deployments: AWS and GCP
 - VMware
+
 RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
 For more information, see [RHEL Deployment Overview]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
