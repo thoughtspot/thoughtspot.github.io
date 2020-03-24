@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/worksheets/worksheet-export.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-20T08:02:51-07:00" />
+<meta property="article:published_time" content="2020-03-24T14:12:55-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Migrate or restore Worksheets”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Migrate or restore Worksheets”]","dateModified":"2020-03-20T08:02:51-07:00","url":"https://docs.thoughtspot.com/6.0/admin/worksheets/worksheet-export.html","datePublished":"2020-03-20T08:02:51-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/worksheets/worksheet-export.html"},"description":"In ThoughtSpot, you can download Worksheets to a flat file in yaml format, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster. This mechanism supports several scenarios that you may encounter:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Migrate or restore Worksheets”]","dateModified":"2020-03-24T14:12:55-07:00","url":"https://docs.thoughtspot.com/6.0/admin/worksheets/worksheet-export.html","datePublished":"2020-03-24T14:12:55-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/worksheets/worksheet-export.html"},"description":"In ThoughtSpot, you can download Worksheets to a flat file in yaml format, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster. This mechanism supports several scenarios that you may encounter:","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -564,7 +564,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/6.0/complex-search/in-keyword-searches.html">Using the in keyword for nested searches</a></li>
+                                  <li><a href="/6.0/complex-search/in-keyword-searches.html">Subquery search</a></li>
                               
                             
                         
@@ -2047,6 +2047,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/6.0/admin/data-modeling/attributable-dimension.html">Change the Attribution Dimension setting</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.0/admin/data-modeling/add-expert.html">Add or manage experts</a></li>
                               
                             
                         
@@ -3729,7 +3735,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3794,7 +3800,7 @@ $('#toc').on('click', 'a', function() {
     <p>Click the name of the worksheet you want to edit.</p>
   </li>
   <li>
-    <p>Click the ellipses <img src="/6.0/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen.</p>
+    <p>Click the ellipsis <img src="/6.0/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen.</p>
   </li>
   <li>
     <p>From the menu, select <strong>Update Worksheet from file</strong>.</p>
@@ -3823,6 +3829,52 @@ $('#toc').on('click', 'a', function() {
     <p>To examine the updated Worksheet, click <strong>Go to Worksheet</strong>.</p>
 
     <p><img src="/6.0/images/worksheet-update-success.png" alt="Go to updated Worksheet" title="Go to updated Worksheet" /></p>
+  </li>
+</ol>
+
+<h2 id="worksheet-migrate">Migrate a Worksheet</h2>
+<p>To migrate a Worksheet from one cluster to another, follow these steps:</p>
+
+<ol>
+  <li>
+    <p><a href="#worksheet-export">Export the Worksheet</a> you want to move, as in steps 1 to 5 of the Export Worksheet section above.</p>
+
+    <p>The Worksheet remains on the original cluster as well, unless you delete it.</p>
+  </li>
+  <li>
+    <p>Navigate to the cluster you want to add the worksheet to.</p>
+  </li>
+  <li>
+    <p>Click <strong>Data</strong> on the top navigation bar.</p>
+  </li>
+  <li>
+    <p>Click the ellipsis <img src="/6.0/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen.</p>
+  </li>
+  <li>
+    <p>Select <strong>Create worksheet from file</strong>.</p>
+
+    <p><img src="/6.0/images/worksheet-create-from-file.png" alt="Create worksheet from file" title="Create worksheet from file" /></p>
+  </li>
+  <li>
+    <p>In the <strong>Create Worksheet</strong> interface, click <strong>Browse your files</strong>.</p>
+
+    <p><img src="/6.0/images/worksheet-create-browse-files.png" alt="Browse your files" title="Browse your files" /></p>
+  </li>
+  <li>
+    <p>In your file system, find and select the YAML file.</p>
+  </li>
+  <li>
+    <p>Click <strong>Upload</strong>.</p>
+
+    <p><img src="/6.0/images/worksheet-create-upload.png" alt="Upload the Worksheet" title="Upload the Worksheet" /></p>
+  </li>
+  <li>
+    <p>If you constructed the Worksheet file correctly, the <strong>Create Worksheet</strong> interface displays an <em>Upload successful</em> message.</p>
+  </li>
+  <li>
+    <p>To examine the new Worksheet, click <strong>Go to Worksheet</strong>.</p>
+
+    <p><img src="/6.0/images/worksheet-create-go-to-worksheet.png" alt="Go to new Worksheet" title="Go to new Worksheet" /></p>
   </li>
 </ol>
 
@@ -3856,9 +3908,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 20, 2020 <br />
+        Generated: Mar 24, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 10/28/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 3/20/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
