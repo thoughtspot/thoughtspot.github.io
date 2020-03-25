@@ -81,5 +81,5 @@ To change the column type:
 
 ## Related information  
 
-- [Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Hide column or define a column synonym](change-visibility-synonym.html#)
