@@ -2,7 +2,7 @@
 title: [About data modeling]
 tags: [overview]
 keywords: modeling,data,Search
-last_updated: tbd
+last_updated: 3/25/2020
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,7 +13,7 @@ can be explored and aggregated. Metadata include such information as **Column
 Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
 Rank** and so forth.
 
-When you load data, ThoughtSpot has defaults for data modeling metadata. After
+When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users. After
 loading data, you can start searching your data without doing any data modeling,
 creating relationships, or tagging. However, since you know your data best, you
 can customize the modeling settings. Putting some thought into these will make
@@ -23,16 +23,15 @@ the data even easier and more intuitive to search for your end users.
 ## User interfaces for modeling data
 
 Data modeling is a very lightweight process compared to what you may have
-experienced in other tools.  You can configure the model for an individual data
-table or you can view and configure all the system data using a modeling file.
+experienced in other tools. It enables you to change some of the settings (or properties) of the data so that it becomes more searchable. You can configure the model [for an individual data table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or you can view and configure all the system data [using a modeling file]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html).
 Editing the data model file requires that you have administrative privileges.
 
 The model file contains a row for each column in your data set. It isn't unusual
-to have tens of thousand of rows in this file. This means editing this file is
-equivalent to editing all the tables at once. When you add new data to your
+to have tens of thousand of rows in this file. This means that editing this file is
+equivalent to editing all the tables simultaneously. When you add new data to your
 system, this file expands to accommodate the new data columns you have added.
 
-Both of these methods, have the same effect, they improve search. Moreover,
+Both of these methods have the same effect: they improve search. Moreover,
 while they have different effects of scale, they use the same mechanisms to
 accomplish these effects.
 
