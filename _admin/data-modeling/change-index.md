@@ -175,5 +175,5 @@ priority you want to use.
 
 ## Related information  
 
-- [Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Usage based rankings (UBR)]({{ site.baseurl}}/end-user/search/recent-searches.html#usage-based-ranking).
