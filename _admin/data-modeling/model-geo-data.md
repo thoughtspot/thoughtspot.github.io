@@ -54,4 +54,4 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)

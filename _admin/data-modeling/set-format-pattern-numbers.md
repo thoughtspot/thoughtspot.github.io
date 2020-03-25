@@ -129,7 +129,7 @@ ThoughtSpot Application Integration Guide for more information on the API.
     | Option                  | Description |
     | ------------------------|----------|
     | **Infer From Browser** | Your currency data will be modeled upon the locale of your browser setting. |
-    | **From a column** | Your currency data will be modeled upon the existing currency information in the selected column This option is disabled if there is no `VARCHAR` column to choose from.
+    | **From a column** | Your currency data will be modeled upon the existing currency information in the selected column. This option is disabled if there is no `VARCHAR` column to choose from.
     | **Specify ISO Code** | Your currency data will be modeled upon your selection from the available currency code choices. |
 
 4. Click **Ok** to save your changes.
@@ -137,4 +137,4 @@ ThoughtSpot Application Integration Guide for more information on the API.
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
