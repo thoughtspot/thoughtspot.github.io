@@ -175,6 +175,7 @@ Administrators can configure a welcoming experience for new users. In addition t
 
 <strong>Configure new user welcome experience and emails</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/bo6xskh8x0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_bo6xskh8x0 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ### Getting started
@@ -183,6 +184,7 @@ To quickly onboard new users and teach them how to effectively use ThoughtSpot, 
 
 <strong>Getting started with ThoughtSpot</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 See [the Getting Started sidebar]({{ site.baseurl }}/end-user/introduction/getting-started.html).
@@ -193,7 +195,7 @@ We improved the experience of sharing Answers and Pinboards through better email
 
 <strong>Sharing Pinboards and Answers</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/qph9pmyzub.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_qph9pmyzub popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
@@ -203,6 +205,7 @@ To enhance the ease of sharing, we simplified and reinforced the workflow for ac
 
 <strong>Requesting and granting access to Pinboards and Answers</strong>
 <br>
+
 <script src="https://fast.wistia.com/embed/medias/34nrrb385a.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_34nrrb385a popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ### Google Cloud Platform GCS persistent storage
