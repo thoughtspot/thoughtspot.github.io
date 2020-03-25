@@ -128,8 +128,7 @@ ThoughtSpot now supports the following features for linked tables:
 <strong>Embrace overview</strong>
 <br>
 
-<div class="wistia_responsive_padding" style="padding:37% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:252px;left:0;position:absolute;top:0;width:450px;"><iframe src="//fast.wistia.net/embed/iframe/1n7ei0tqr4?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+<script src="https://fast.wistia.com/embed/medias/1n7ei0tqr4.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_1n7ei0tqr4 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
@@ -153,7 +152,7 @@ This release introduces a complete new approach that makes chart configuration m
 
 <strong>Chart configuration overview</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_v408bchsqf popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+<script src="https://fast.wistia.com/embed/medias/y633w03qzm.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_y633w03qzm popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 * **[Add drag-and-drop chips]({{ site.baseurl }}/end-user/search/drag-and-drop.html)** automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
 * **[Improve number formatting]({{ site.baseurl}}/end-user/search/show-data-labels.html#labels-one)** for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
@@ -194,7 +193,7 @@ We improved the experience of sharing Answers and Pinboards through better email
 
 <strong>Sharing Pinboards and Answers</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+<script src="https://fast.wistia.com/embed/medias/qph9pmyzub.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_qph9pmyzub popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
