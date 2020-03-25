@@ -965,6 +965,7 @@ code {
 .video-js {
     margin: 30px 0px;
 }
+
 /* commenting out the next style, because it cause a black bar to appear at the top of all embedded wistia videos
 /* video {
     display: block;
