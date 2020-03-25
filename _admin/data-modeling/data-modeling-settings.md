@@ -50,5 +50,5 @@ If you want the worksheet to have the changes you made at the table level, you'l
 
 ## Related information  
 
-- [Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Add a geographical data setting for a column]({{ site.baseurl }}/admin/data-modeling/model-geo-data.html)  
