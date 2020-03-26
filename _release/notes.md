@@ -195,7 +195,7 @@ We improved the experience of sharing Answers and Pinboards through better email
 
 <strong>Sharing Pinboards and Answers</strong>
 <br>
-<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+<script src="https://fast.wistia.com/embed/medias/7heqb1ujsx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_7heqb1ujsx popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 See [Overview of Sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html).
 
