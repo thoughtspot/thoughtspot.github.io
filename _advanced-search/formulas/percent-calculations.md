@@ -69,12 +69,14 @@ division.
 ## Calculate percentages
 
 Calculating percentages is useful when you want to see, for example, the
-percentage revenue generated from each channel (online, stores, partner, etc.).
-For example, you can figure out the percentage revenue generated from each
-channel (online, stores, partners, etc.).
+percentage of revenue that each retail department generates (gifts, bakery, canned goods, etc.).
 
-Create a formula called `Percent Revenue`  in the **Formula Assistant**:
+Create a formula called `Percent Revenue` in the [**Formula Assistant**]({{ site.baseurl }}/complex-search/how-to-add-formula.html):
 
-`( sum ( revenue ) / group sum ( revenue ) ) \* 100`
+`( sum ( revenue ) / group_sum ( revenue ) ) * 100`
 
-Now you can search by each channel, using the percent revenue formula that you just created.
+Replace `revenue` with your company's name for their `revenue` column, such as `revenue_dollar_amount`.
+
+Now you can see the percentage of your total revenue that each department contributes, using the percent revenue formula that you just created. See the example below.
+
+![Percent revenue per department]({{ site.baseurl }}/images/formula-percent-revenue.png "Percent revenue per department")
