@@ -2,7 +2,7 @@
 title: [Data types]
 
 
-last_updated: 2/25/2020
+last_updated: 3/26/2020
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

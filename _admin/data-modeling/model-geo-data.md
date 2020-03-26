@@ -1,7 +1,7 @@
 ---
 title: [Add a geographical data setting]
 summary: Learn how to model your geographical data.
-last_updated: 3/17/2020
+last_updated: 3/26/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -19,6 +19,8 @@ Columns that can be designated as `Geo` columns need to contain text (`VARCHAR`)
 data unless they contain latitude/longitude data. Latitude and longitude columns
 can contain numeric data (`DOUBLE`) or text.
 
+If you import `geo` columns as numeric values, the data type defaults to `INT64`. ThoughtSpot recommends that you import `geo` columns, such as zipcodes as text values. The `column type` defaults to  `measure` when you import numeric values. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. For geo data, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
+
 If you are using a column with the data type `DOUBLE` for latitude and
 longitude, you will also need to change the following settings for those
 columns:
@@ -27,7 +29,7 @@ columns:
 -   set **Additive** to `NO`
 -   set **Aggregation Type** to `NONE`
 
-For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-additive.html).
+For information on these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-additive.html).
 
 ## How to edit geographic columns
 

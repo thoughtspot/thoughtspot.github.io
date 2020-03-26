@@ -7,18 +7,17 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Basic information for a data column is its **NAME**, **DESCRIPTION**, and
+When you model your data, you set basic information for data columns, such as a column's **NAME**, **DESCRIPTION**, and
 **TYPE**. All of these can influence how a user experiences your data. For
 example, the **DESCRIPTION** appears as a "tip" when a user hovers over a
-column. So it is the means for helping users understand where the data comes
+column. It helps users understand where the data they are searching comes
 from.
 
 ## Change the column name
 
-**Column Name** (UI)/**ColumnName** (model file) is the name that displayed to
-users for that column in ThoughtSpot. The column name is what users type to add
-that column to their search. Change the text that is shown for the column names
-in ThoughtSpot to make the names more meaningful to users.
+**Column Name** (UI)/ **ColumnName** (model file) is what users type to add
+a column to their search. Change these column names
+in ThoughtSpot to make them more meaningful to users.
 
 The model file contains a row for each column in your data set. It isn't unusual
 to have tens of thousand of rows in this file. You can change all or a subset of
