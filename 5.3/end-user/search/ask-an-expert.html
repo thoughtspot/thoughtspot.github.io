@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Do you need help finding something in your data? Ask an expert to create the search for you."> -->
+<!-- <meta name="description" content="You can designate experts for each data source, so users won't get stuck if they need help."> -->
 <meta name="keywords" content=",  ">
-<title>Ask an expert | ThoughtSpot</title>
+<title>Add or manage experts | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,21 +47,21 @@
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Ask an expert”] | thoughtspot.github.io</title>
+<title>[“Add or manage experts”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="[“Ask an expert”]" />
+<meta property="og:title" content="[“Add or manage experts”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use Ask an expert to request help from someone in your organization. Your request will go to the person in your company who best know the data source you’re using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the Answers listing in ThoughtSpot." />
-<meta property="og:description" content="At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use Ask an expert to request help from someone in your organization. Your request will go to the person in your company who best know the data source you’re using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the Answers listing in ThoughtSpot." />
+<meta name="description" content="If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable Ask an Expert. This lets them request help from someone in your organization." />
+<meta property="og:description" content="If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable Ask an Expert. This lets them request help from someone in your organization." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:21:15-08:00" />
+<meta property="article:published_time" content="2020-03-26T09:50:02-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html","headline":"[“Ask an expert”]","dateModified":"2020-03-04T19:21:15-08:00","datePublished":"2020-03-04T19:21:15-08:00","description":"At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use Ask an expert to request help from someone in your organization. Your request will go to the person in your company who best know the data source you’re using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the Answers listing in ThoughtSpot.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/ask-an-expert.html","headline":"[“Add or manage experts”]","dateModified":"2020-03-26T09:50:02-07:00","datePublished":"2020-03-26T09:50:02-07:00","description":"If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable Ask an Expert. This lets them request help from someone in your organization.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -563,7 +563,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/5.3/complex-search/in-keyword-searches.html">Using the in keyword for nested searches</a></li>
+                                  <li><a href="/5.3/complex-search/in-keyword-searches.html">Subquery search</a></li>
                               
                             
                         
@@ -1977,6 +1977,12 @@ var ss360Config = {
                               
                             
                         
+                          
+                              
+                                  <li><a href="/5.3/admin/data-modeling/add-expert.html">Add or manage experts</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -3240,7 +3246,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Ask an expert</h1>
+   <h1 class="post-title-main">Add or manage experts</h1>
 </div>
 
 
@@ -3248,7 +3254,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Do you need help finding something in your data? Ask an expert to create the search for you.</div>
+    <div class="summary">You can designate experts for each data source, so users won't get stuck if they need help.</div>
    
 
     
@@ -3285,60 +3291,50 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    1 minute
   
 </span>
  -->
 
     
 
-  <p>At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use <strong>Ask an expert</strong> to request help from someone in your organization. Your request will go to the person in your company who best know the data source you’re using and how to search it in ThoughtSpot. When your request is answered, you will be able to see the result in the <strong>Answers</strong> listing in ThoughtSpot.</p>
+  <p>If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable <strong>Ask an Expert</strong>. This lets them request help from someone in your organization.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you don’t see <strong>Ask an expert</strong> it’s possible that your company has chosen to disable this capability. If you want to try it out, ask your administrator to consider enabling it .</div>
+<p>The request goes to the person in your company who knows the data source very well, and how to search it in ThoughtSpot. The user can see the expert’s answer in the <strong>Ask an Expert</strong> interface in ThoughtSpot.</p>
 
-<p><strong>Ask an expert</strong> can help in these ways:</p>
+<p>You can see how an end user experiences <strong>Ask an Expert</strong> <a href="/5.3/end-user/search/ask-an-expert.html">here</a>.</p>
 
-<ol>
-  <li>You can get an answer to your tough question, even when you’re stuck.</li>
-  <li>The expert gets to see what people have trouble with, so he or she can make it easier.</li>
-  <li>You can use the answer from the expert to understand the data better.</li>
-</ol>
+<h2 id="add-an-expert-to-a-data-source">Add an expert to a data source</h2>
 
-<h2 id="how-do-i-use-ask-an-expert">How do I use Ask an expert?</h2>
+<p>Adding an expert for a data source enables <strong>Ask an Expert</strong> in your ThoughtSpot instance. Until you add an expert, users won’t see the prompt to <strong>Ask an Expert</strong> when using that data source.</p>
+
+<p>To add an expert to a data source:</p>
 
 <ol>
   <li>
-    <p>When you’re doing a search, you can see a link under your search that says <strong>Ask an expert</strong>. Click that if you’re stuck and need help.</p>
+    <p>Let the expert(s) know to expect user questions to start coming their way in email.
+If your expert(s) don’t have an email in ThoughtSpot, they must <a href="/5.3/end-user/search/answer-expert-question.html">check in ThoughtSpot for requested answers</a>.</p>
   </li>
   <li>
-    <p>The search you were working on is captured and shown back to you, with a text box for your message. Send a message describing what you were looking for, along with any information that makes it easy for the expert to understand what problem you were having.</p>
+    <p>Click the name of the worksheet or table from the <strong>Data</strong> page.</p>
+  </li>
+  <li>
+    <p>Click the three dot icon in the upper right side of the page and select <strong>Manage experts</strong>.</p>
+
+    <p><img src="/5.3/images/ask-an-expert-manage.png" alt="Manage experts" title="Manage experts" /></p>
+  </li>
+  <li>
+    <p>Make your selections and click <strong>Done</strong>.</p>
+
+    <p><img src="/5.3/images/ask-an-expert-add-expert.png" alt="Add experts" title="Add experts" /></p>
   </li>
 </ol>
-
-<p><img src="/5.3/images/ask_an_expert_form.png" alt="" title="Ask an expert form" /></p>
-
-<p>An example would be:</p>
-
-<p>“I’m having trouble getting this search to show as a stacked column, with each department shown as a separate color.”</p>
-
-<ol>
-  <li>
-    <p>Then click <strong>Send</strong>, so your request will go to the expert.</p>
-  </li>
-  <li>
-    <p>The expert will share their answer with you. You can then <a href="/5.3/end-user/search/retrieve-expert-answer.html">Review answers from Ask an expert</a>.</p>
-  </li>
-</ol>
-
-<h2 id="what-kinds-of-things-can-i-ask">What kinds of things can I ask?</h2>
-
-<p>You can use <strong>Ask an expert</strong> to ask any kind of question you like. Even if your question is about some data that isn’t in ThoughtSpot at all, the expert may be able to help, so it’s  always worth asking.</p>
 
 <h2 id="related-information">Related information</h2>
 
 <ul>
-  <li><a href="/5.3/end-user/search/retrieve-expert-answer.html">Review answers from Ask an expert</a></li>
-  <li><a href="/5.3/end-user/search/answer-expert-question.html">Answer Ask an expert questions</a></li>
+  <li><a href="/5.3/admin/data-modeling/about-data-modeling-intro.html">Model the data for searching</a></li>
+  <li><a href="/5.3/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
 </ul>
 
   <div class="tags">
@@ -3365,9 +3361,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 26, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 09/23/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 3/23/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
