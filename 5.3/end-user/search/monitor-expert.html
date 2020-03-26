@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can monitor and manage Ask and Expert requests, both as a requester and as an expert."> -->
+<!-- <meta name="description" content="You can monitor and manage Ask an Expert requests, both as a requester and as an expert."> -->
 <meta name="keywords" content=",  ">
 <title>Manage expert requests | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/end-user/search/monitor-expert.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:21:15-08:00" />
+<meta property="article:published_time" content="2020-03-26T09:50:02-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/monitor-expert.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/monitor-expert.html","headline":"[“Manage expert requests”]","dateModified":"2020-03-04T19:21:15-08:00","datePublished":"2020-03-04T19:21:15-08:00","description":"Within ThoughtSpot, you can keep track of your Ask an Expert requests.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/end-user/search/monitor-expert.html"},"url":"https://docs.thoughtspot.com/5.3/end-user/search/monitor-expert.html","headline":"[“Manage expert requests”]","dateModified":"2020-03-26T09:50:02-07:00","datePublished":"2020-03-26T09:50:02-07:00","description":"Within ThoughtSpot, you can keep track of your Ask an Expert requests.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -563,7 +563,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li><a href="/5.3/complex-search/in-keyword-searches.html">Using the in keyword for nested searches</a></li>
+                                  <li><a href="/5.3/complex-search/in-keyword-searches.html">Subquery search</a></li>
                               
                             
                         
@@ -1977,6 +1977,12 @@ var ss360Config = {
                               
                             
                         
+                          
+                              
+                                  <li><a href="/5.3/admin/data-modeling/add-expert.html">Add or manage experts</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -3248,7 +3254,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can monitor and manage Ask and Expert requests, both as a requester and as an expert.</div>
+    <div class="summary">You can monitor and manage Ask an Expert requests, both as a requester and as an expert.</div>
    
 
     
@@ -3303,7 +3309,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>In the drop-down, select <strong>Expert Requests</strong>.</p>
 
-    <p><img src="/5.3/images/ask-expert-requests.png" alt="" title="Click Expert requests" /></p>
+    <p><img src="/5.3/images/ask-an-expert.png" alt="Click Expert requests" title="Click Expert requests" /></p>
   </li>
   <li>The <strong>Expert</strong> interface appears, with information for you both as a <strong>Requester</strong>, and as an <strong>Expert</strong>.</li>
 </ol>
@@ -3312,7 +3318,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>This is what you see when you are a requester:</p>
 
-<p><img src="/5.3/images/ask-expert-manage-requester.png" alt="" title="Expert interface" /></p>
+<p><img src="/5.3/images/ask-an-expert-request-list.png" alt="Ask an Expert interface" title="Ask an Expert interface" /></p>
 
 <p>Note these features of the interface:</p>
 
@@ -3326,11 +3332,11 @@ $('#toc').on('click', 'a', function() {
   <tbody>
     <tr>
       <td>1.</td>
-      <td><strong>I am Requester:</strong> for all requests where you are a requester</td>
+      <td><strong>I am a requester:</strong> for all requests where you are a requester</td>
     </tr>
     <tr>
       <td>2.</td>
-      <td><strong>I am Expert:</strong> for all requests where you are an expert</td>
+      <td><strong>I am an expert:</strong> for all requests where you are an expert</td>
     </tr>
     <tr>
       <td>3.</td>
@@ -3362,7 +3368,7 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td>10.</td>
-      <td><strong>Experts:</strong> users who are experts for your requests</td>
+      <td><strong>Author:</strong> the user who created the request</td>
     </tr>
   </tbody>
 </table>
@@ -3371,7 +3377,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>This is what you see when you are an expert:</p>
 
-<p><img src="/5.3/images/ask-expert-manage-expert.png" alt="" title="Expert interface" /></p>
+<p><img src="/5.3/images/ask-an-expert-expert-view.png" alt="Ask an Expert interface" title="Ask an Expert interface" /></p>
 
 <p>Note these features of the interface:</p>
 
@@ -3385,15 +3391,15 @@ $('#toc').on('click', 'a', function() {
   <tbody>
     <tr>
       <td>1.</td>
-      <td><strong>I am Requester:</strong> for all requests where you are a requester</td>
+      <td><strong>I am a requester:</strong> for all requests where you are a requester</td>
     </tr>
     <tr>
       <td>2.</td>
-      <td><strong>I am Expert:</strong> for all requests where you are an expert</td>
+      <td><strong>I am an expert:</strong> for all requests where you are an expert</td>
     </tr>
     <tr>
       <td>3.</td>
-      <td><strong>All:</strong> all requests, both <em>Resolved&lt;/span&gt; and <em>Unresolved</em></em></td>
+      <td><strong>All:</strong> all requests, both <em>Resolved</em> and <em>Unresolved</em></td>
     </tr>
     <tr>
       <td>4.</td>
@@ -3456,9 +3462,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 26, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 08/01/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 3/23/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

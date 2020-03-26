@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can use the in keyword to do a search on the result of another search."> -->
+<!-- <meta name="description" content="You can use the IN keyword to complete a nested search"> -->
 <meta name="keywords" content=",  ">
-<title>Using the in keyword for nested searches | ThoughtSpot</title>
+<title>Subquery search | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.3/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,21 +47,21 @@
 
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>[“Using the in keyword for nested searches”] | thoughtspot.github.io</title>
+<title>[“Subquery search”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="[“Using the in keyword for nested searches”]" />
+<meta property="og:title" content="[“Subquery search”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search. You can use the “in” keyword instead." />
-<meta property="og:description" content="Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search. You can use the “in” keyword instead." />
+<meta name="description" content="Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search, commonly known as a subquery. You can use the IN keyword instead." />
+<meta property="og:description" content="Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search, commonly known as a subquery. You can use the IN keyword instead." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-04T19:21:15-08:00" />
+<meta property="article:published_time" content="2020-03-26T09:50:02-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html"},"url":"https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html","headline":"[“Using the in keyword for nested searches”]","dateModified":"2020-03-04T19:21:15-08:00","datePublished":"2020-03-04T19:21:15-08:00","description":"Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search. You can use the “in” keyword instead.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html"},"url":"https://docs.thoughtspot.com/5.3/complex-search/in-keyword-searches.html","headline":"[“Subquery search”]","dateModified":"2020-03-26T09:50:02-07:00","datePublished":"2020-03-26T09:50:02-07:00","description":"Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search, commonly known as a subquery. You can use the IN keyword instead.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -563,7 +563,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li class="active"><a href="/5.3/complex-search/in-keyword-searches.html">Using the in keyword for nested searches</a></li>
+                                  <li class="active"><a href="/5.3/complex-search/in-keyword-searches.html">Subquery search</a></li>
                               
                             
                         
@@ -1977,6 +1977,12 @@ var ss360Config = {
                               
                             
                         
+                          
+                              
+                                  <li><a href="/5.3/admin/data-modeling/add-expert.html">Add or manage experts</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -3240,7 +3246,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Using the in keyword for nested searches</h1>
+   <h1 class="post-title-main">Subquery search</h1>
 </div>
 
 
@@ -3248,7 +3254,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can use the in keyword to do a search on the result of another search.</div>
+    <div class="summary">You can use the IN keyword to complete a nested search</div>
    
 
     
@@ -3292,11 +3298,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search. You can use the “in” keyword instead.</p>
+  <p>Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search, commonly known as a subquery. You can use the <code class="highlighter-rouge">IN</code> keyword instead.</p>
 
 <p><img src="/5.3/images/in_search_bar_example.png" alt="" title="In search example" /></p>
 
-<p>Suppose you wanted to narrow down a result set based on criteria defined using a search. For example:</p>
+<p>Suppose you must narrow a result set based on criteria defined using a search. For example:</p>
 
 <p>Find the top 5 stores by sales in the bakery department</p>
 
@@ -3336,21 +3342,21 @@ $('#toc').on('click', 'a', function() {
    </tr>
 </table>
 
-<h2 id="create-an-in-search">Create an in search</h2>
+<h2 id="create-an-in-search">Create an IN search</h2>
 
 <ol>
   <li>
     <p>Start a new search.</p>
   </li>
   <li>
-    <p>Do the search you plan to use for the in clause. That is, the first level search.</p>
+    <p>Run the search you plan to use for the `in clause. That is, the first level search.</p>
 
     <p>Check that the result is what you’re looking for.</p>
 
     <p><img src="/5.3/images/in_search_first_step.png" alt="" title="In search example" /></p>
   </li>
   <li>
-    <p>Copy that search, and paste it into your new search as the in clause.</p>
+    <p>Copy that search, and paste it into your new search as the <code class="highlighter-rouge">in</code> clause.</p>
 
     <p><img src="/5.3/images/in_search_example.png" alt="" title="In search example" /></p>
   </li>
@@ -3380,9 +3386,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 4, 2020 <br />
+        Generated: Mar 26, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 03/23/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
