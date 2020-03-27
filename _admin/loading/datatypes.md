@@ -2,7 +2,7 @@
 title: [Data types]
 
 
-last_updated: 2/25/2020
+last_updated: 3/27/2020
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -41,8 +41,8 @@ The tables you create to receive the data must have the same number of columns a
   </tr>
   <tr>
     <td>Integer</td>
-    <td><code>INT</code> or <code>BIGINT</code></td>
-    <td><code>INT</code> holds 32 bits. <code>BIGINT</code> holds 64 bits. <code>INT</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>BIGINT</code> range is <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
+    <td><code>INT32</code> or <code>INT64</code></td>
+    <td><code>INT32</code> holds 32 bits. <code>INT64</code> holds 64 bits. <code>INT32</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>INT64</code> has a range of <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
   </tr>
   <tr>
     <td>Date or time</td>
@@ -55,7 +55,15 @@ The tables you create to receive the data must have the same number of columns a
 
 ## Geographical data types
 
-For geographical data types, use VARCHAR. For latitude and longitude, you can use either `VARCHAR` or `DOUBLE`. After loading the data, designate it as a geographical data type when you [Edit the system-wide data model]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html#). Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.
+For geographical data types, use `VARCHAR`. Use `VARCHAR` as the data type for zipcodes and other geographical data so that the geographical data in your table defaults to the correct configuration. See the following example:
+
+![Geo data example]({{ site.baseurl }}/images/geoconfig-zipcodes.png "Geo data example")
+
+In the above example, the zipcodes were imported as text values. By default, the `data type` is `VARCHAR`, the `column type` is `attribute`, and `additive` is `no`. You must specify the `geo config` for your data yourself. ThoughtSpot does not specify geo config automatically.
+
+If you import zipcodes as numeric values, the data type defaults to `INT64`. ThoughtSpot recommends that you import zipcodes as text values. The `column type` defaults to  `measure` when you import numeric values. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. For zipcodes, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
+
+For latitude and longitude, you can use either `VARCHAR` or `DOUBLE`. After loading the data, designate it as a geographical data type when you [Edit the system-wide data model]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html#). Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.
 
 These data types can be designated as geographical data, which enables them to be visualized using the Geo chart types:
 
