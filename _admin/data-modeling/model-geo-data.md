@@ -22,7 +22,7 @@ can contain numeric data (`DOUBLE`) or text.
 If you import `geo` columns as numeric values, the data type defaults to `INT64`. ThoughtSpot recommends that you import `geo` columns, such as zipcodes as text values. The `column type` defaults to  `measure` when you import numeric values. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. For geo data, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
 
 If you are using a column with the data type `DOUBLE` for latitude and
-longitude, you will also need to change the following settings for those
+longitude, change the following settings for those
 columns:
 
 -   set **Column Type** to `ATTRIBUTE`
@@ -30,6 +30,15 @@ columns:
 -   set **Aggregation Type** to `NONE`
 
 For information on these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-additive.html).
+
+As a best practice, you should make the following changes to your geographical data ***before*** importing it to ThoughtSpot:
+
+1. Specify `geo` columns as text values, and not numeric.
+
+2. Make sure your data is specific, and does not contain duplicates.
+
+    | For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin.<br/><br/>According to the 2010 Census, there are 31 distinct Washington Counties in the United States.<br/><br/>To account for multiple different geographical entities with the same name, you must be specific within your data.<br/><br/>A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps. | ![Washington Counties in United States]({{ site.baseurl }}/images/wa-county.png "Washington Counties in United States") |
+
 
 ## How to edit geographic columns
 
