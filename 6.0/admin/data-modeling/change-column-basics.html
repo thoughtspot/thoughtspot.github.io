@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“Set column name, description, and type”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from." />
-<meta property="og:description" content="Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from." />
+<meta name="description" content="When you model your data, you set basic information for data columns, such as a column’s NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. It helps users understand where the data they are searching comes from." />
+<meta property="og:description" content="When you model your data, you set basic information for data columns, such as a column’s NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. It helps users understand where the data they are searching comes from." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-27T08:58:30-07:00" />
+<meta property="article:published_time" content="2020-03-30T16:33:47-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set column name, description, and type”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set column name, description, and type”]","dateModified":"2020-03-27T08:58:30-07:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html","datePublished":"2020-03-27T08:58:30-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html"},"description":"Basic information for a data column is its NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. So it is the means for helping users understand where the data comes from.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set column name, description, and type”]","dateModified":"2020-03-30T16:33:47-07:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html","datePublished":"2020-03-30T16:33:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/change-column-basics.html"},"description":"When you model your data, you set basic information for data columns, such as a column’s NAME, DESCRIPTION, and TYPE. All of these can influence how a user experiences your data. For example, the DESCRIPTION appears as a “tip” when a user hovers over a column. It helps users understand where the data they are searching comes from.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3742,63 +3742,76 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Basic information for a data column is its <strong>NAME</strong>, <strong>DESCRIPTION</strong>, and
+  <p>When you model your data, you set basic information for data columns, such as a column’s <strong>NAME</strong>, <strong>DESCRIPTION</strong>, and
 <strong>TYPE</strong>. All of these can influence how a user experiences your data. For
 example, the <strong>DESCRIPTION</strong> appears as a “tip” when a user hovers over a
-column. So it is the means for helping users understand where the data comes
+column. It helps users understand where the data they are searching comes
 from.</p>
+
+<h2 id="data-modeling-from-the-ui">Data modeling from the UI</h2>
+<p>To model your data columns from the ThoughtSpot UI, follow these steps:</p>
+<ol>
+  <li>Navigate to the <strong>Data</strong> tab from the top navigation bar.</li>
+  <li>Click on the data source that you would like to update.</li>
+  <li>
+    <p>Click <strong>Edit Worksheet</strong> in the top right corner of the screen.</p>
+
+    <p><img src="/6.0/images/worksheet-edit.png" alt="Edit worksheet" title="Edit worksheet" /></p>
+  </li>
+  <li>Update your data columns.</li>
+</ol>
 
 <h2 id="change-the-column-name">Change the column name</h2>
 
-<p><strong>Column Name</strong> (UI)/<strong>ColumnName</strong> (model file) is the name that displayed to
-users for that column in ThoughtSpot. The column name is what users type to add
-that column to their search. Change the text that is shown for the column names
-in ThoughtSpot to make the names more meaningful to users.</p>
+<p>The <strong>Column Name</strong> (UI)/ <strong>ColumnName</strong> (model file) parameter is the name users type to add
+a column to their search. Change these column names
+in ThoughtSpot to make them more meaningful to users.</p>
 
 <p>The model file contains a row for each column in your data set. It isn’t unusual
 to have tens of thousand of rows in this file. You can change all or a subset of
 rows. You can edit the file to leave the heading rows and only those rows you
 want to change. This can make the file more convenient to work with.</p>
 
-<p>The default is the name you gave the column when you defined the table in the
+<p>The default column name is the name you gave the column when you defined the table in the
 database or imported the CSV file from the browser.</p>
 
+<p>To update the column name, follow these steps:</p>
+
 <ol>
-  <li>Find the column name you want to change.</li>
+  <li>Find the column name you want to change, either on the ThoughtSpot application or in the model file.</li>
   <li>Type in the new column name.</li>
   <li>Save your changes.</li>
 </ol>
 
 <h2 id="change-column-description">Change column description</h2>
 
-<p><strong>Description</strong> (UI)/<strong>ColumnDescription</strong> (model file) an optional description
-for the corresponding column. You can provide a description for a specific
+<p>The <strong>Description</strong> (UI)/ <strong>ColumnDescription</strong> (model file) parameter is an optional description
+for a column. You can provide a description for a specific
 column, to provide additional information for users about the data it contains.
 When a user hovers over the column, a tooltip will show this description.</p>
 
 <p>To create a column description:</p>
 
 <ol>
-  <li>Find the column description you want to change.</li>
+  <li>Find the column description you want to change, either on the ThoughtSpot application or in the model file.</li>
   <li>Enter a new description.</li>
-  <li>Repeat for all columns where you want to add a description.</li>
   <li>Save your changes.</li>
 </ol>
 
 <h2 id="change-column-type">Change column type</h2>
 
-<p><strong>Column Type</strong> (UI)/<strong>ColumnType</strong> (model file) describes the kind of data a
+<p>The <strong>Column Type</strong> (UI)/ <strong>ColumnType</strong> (model file) parameter describes the kind of data a
 column stores. This is set automatically upon defining the table, but in some
 cases, you may want to change the type. There are two types of columns:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">ATTRIBUTE</code> contains a property, like name, address, or id number.</li>
-  <li><code class="language-plaintext highlighter-rouge">MEASURE</code> contains a numeric value that can be compared in a meaningful way using math, such as a count or measurement.</li>
+  <li><code class="language-plaintext highlighter-rouge">ATTRIBUTE</code> contains a characteristic or trait associated with your data, such as <code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">address</code>, or <code class="language-plaintext highlighter-rouge">id number</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">MEASURE</code> contains a numeric value that can be compared in a meaningful way using math, such as a count or measurement, like <code class="language-plaintext highlighter-rouge">sales</code>.</li>
 </ul>
 
-<p>When a new table is created, the default column type is set according to the
-<strong>Data Type</strong> (UI)/<strong>DataType</strong> (model file) defined for each column. By default,
-columns with the numeric data types (<code class="language-plaintext highlighter-rouge">FLOAT</code>, <code class="language-plaintext highlighter-rouge">DOUBLE</code>, <code class="language-plaintext highlighter-rouge">INT</code>, or <code class="language-plaintext highlighter-rouge">BIGINT</code>) are
+<p>When you create a new table, the default column type is set according to the
+<strong>Data Type</strong> defined for each column. By default,
+columns with numeric data types (<code class="language-plaintext highlighter-rouge">FLOAT</code>, <code class="language-plaintext highlighter-rouge">DOUBLE</code>, <code class="language-plaintext highlighter-rouge">INT</code>, or <code class="language-plaintext highlighter-rouge">BIGINT</code>) are
 assigned the type <code class="language-plaintext highlighter-rouge">MEASURE</code>. Columns with <code class="language-plaintext highlighter-rouge">VARCHAR</code>, <code class="language-plaintext highlighter-rouge">BOOL</code>, or date/time data
 types are assigned the type <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>.</p>
 
@@ -3811,12 +3824,15 @@ which mathematical operations are not meaningful include:</p>
   <li>Product number or SKU</li>
   <li>Sports team member jersey number</li>
   <li>Year, when separate from a date (e.g. 1999, 2000)</li>
+  <li>Zipcodes</li>
 </ul>
+
+<p>These values are numbers, but you would not do math on them. For example, it is not meaningful to add two zipcodes together.</p>
 
 <p>To change the column type:</p>
 
 <ol>
-  <li>Find the column type you want to change.</li>
+  <li>Find the column type you want to change, either on the ThoughtSpot application, or in the model file.</li>
   <li>Change it to either <code class="language-plaintext highlighter-rouge">MEASURE</code> or <code class="language-plaintext highlighter-rouge">ATTRIBUTE</code>.</li>
   <li>Save your changes.</li>
 </ol>
@@ -3853,9 +3869,9 @@ which mathematical operations are not meaningful include:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 27, 2020 <br />
+        Generated: Mar 30, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 3/27/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
