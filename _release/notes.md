@@ -32,6 +32,20 @@ For details, see:
 
 For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
 
+### Additional SQL commands for ODBC drivers
+
+For developers creating tools to connect to ThoughtSpot through the ODBC or JDBC driver, the following new commands are available:
+
+- `ALTER TABLE`
+- `CREATE DATABASE`
+- `CREATE SCHEMA`
+- `DROP`
+- `SCRIPT`
+- `SHOW`
+- `TRUNCATE`
+
+For details, see: [Supported SQL commands]({{ site.baseurl }}/data-integrate/reference/odbc-commands.html)
+
 {: id="6-1-fixed"}
 ## 6.1 Fixed Issues
 
