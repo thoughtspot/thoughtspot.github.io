@@ -70,17 +70,7 @@ To deploy Cloud Express, do the following:
 
 12. Save the **Instance ID**, and, under the _Description_ tab at the bottom of the page, the **IPv4 Public IP**. You use the Instance ID to sign in to your instance. The IPv4 Public IP is the URL of your instance.
 
-13. Once your instance is up and running, go to the URL you copied in the previous step and sign in to your ThoughtSpot instance, using the following credentials:
-  - Username: **tsadmin**
-  - Password: **\<Instance-ID>-TS** _(example: i-035ab9c2900ed9fbf-TS)_
-
-    After you sign in, the _Upload the license key file_ page appears.
-
-14. Upload the license key file you received from ThoughtSpot.
-
-15. After the license key file is uploaded, you are interactively guided through onboarding into ThoughtSpot.
-
-16. If you are going to connect to a Snowflake data warehouse, be sure to enable AWS Private Link for Snowflake. For details, see Snowflake's documentation [Enabling AWS PrivateLink](https://docs.snowflake.net/manuals/user-guide/admin-security-privatelink.html#enabling-aws-privatelink){:target="_blank"} for details.
+    {% include note.html content="If you are using Snowflake Business Critical (or higher) and wish to use PrivateLink with your account to directly connect your Snowflake account to one or more AWS VPCs, please contact Snowflake Support and request it to be enabled." %} 
 
 ## Sign in and connect to your data warehouse
 
@@ -89,9 +79,17 @@ Before you begin, read the available best practices for your data warehouse:
 
 To connect to your data warehouse, do the following:
 
-1. Sign in to your ThoughtSpot instance.
+1. Once your instance is up and running, go to the URL you copied in the previous section and sign in to your ThoughtSpot instance, using the following credentials:
+  - Username: **tsadmin**
+  - Password: **\<Instance-ID>-TS** _(example: i-035ab9c2900ed9fbf-TS)_
 
-2. Connect to your data warehouse. For details, see:
+    After you sign in, the _Upload the license key file_ page appears.
+
+2. Upload the license key file you received from ThoughtSpot.
+
+3. After the license key file is uploaded, you are interactively guided through onboarding into ThoughtSpot.
+
+4. Connect to your data warehouse. For details, see:
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)  
 
