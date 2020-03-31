@@ -1435,6 +1435,33 @@ entries:
     - title: Overview
       url: /appliance/welcome-intro.html
       output: web,appQs
+    - levelTwoTitle: RHEL Support
+      output: web,appQs
+      levelTwoItems:
+      - title: RHEL overview
+        url: /appliance/rhel/rhel.html
+        output: web,appQs
+      - title: RHEL prerquisites
+        url: /appliance/rhel/rhel-prerequisites.html
+        output: web,appQs
+      - title: ThoughtSpot artifacts
+        url: /appliance/rhel/rhel-ts-artifacts.html
+        output: web,appQs
+      - title: Online RHEL install
+        url: /appliance/rhel/rhel-install-online.html
+        output: web,appQs
+      - title: Offline RHEL install
+        url: /appliance/rhel/rhel-install-offline.html
+        output: web,appQs
+      - title: RHEL upgrade
+        url: /appliance/rhel/rhel-upgrade.html
+        output: web,appQs
+      - title: Adding new nodes to clusters in RHEL
+        url: /appliance/rhel/rhel-add-node.html
+        output: web,appQs
+      - title: Packages installed with RHEL
+        url: /appliance/rhel/rhel-packages.html
+        output: web,appQs
     - levelTwoTitle: Hardware appliance
       output: web,appQs
       levelTwoItems:
