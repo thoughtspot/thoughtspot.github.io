@@ -1,7 +1,7 @@
 ---
 title: ["6.1 Release Notes"]
 toc: false
-last_updated: March 17, 2020
+last_updated: March 30, 2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,6 +17,12 @@ fixed issues from previous releases, and any known issues.
 
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
+
+### Updating ThoughtSpot UI through CDN
+
+Starting with this release, you can configure automatic updates of the front end of the ThoughtSpot application by uploading from CDN (Amazon Cloudfront). This enables your organization to get many new features of ThoughtSpot and get many critical bug fixes without experiencing the traditional upgrade downtime.
+
+UI auto-update is in the Early Access phase. Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
 
 ### Back up and restore ThoughtSpot AWS and GCP clusters
 
@@ -89,14 +95,27 @@ The following issues are fixed in the 6.1 release:
   - Various display issues with Admin Portal.
   - Periodic backups fail after upgrade.
   - Geo maps allow regional German names for states.
-  - In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate large_files.
+  - In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate `large_files`.
+
+{: id="early-access"}
+## Early Access Programs
+
+### UI update
+
+Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
+
+### RHEL support
+RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>. For more information, see [RHEL Deployment Overview]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 {: id="beta-program"}
 ## Beta Programs
+
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
 
-Please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a>, for monitoring selected metrics over time.
+### Monitor
+
+Please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=Monitor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a>, for monitoring selected metrics over time.
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
