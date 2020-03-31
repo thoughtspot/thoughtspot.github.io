@@ -70,7 +70,7 @@ To deploy Cloud Express, do the following:
 
 12. Save the **Instance ID**, and, under the _Description_ tab at the bottom of the page, the **IPv4 Public IP**. You use the Instance ID to sign in to your instance. The IPv4 Public IP is the URL of your instance.
 
-    {% include note.html content="If you are using Snowflake Business Critical (or higher) and wish to use PrivateLink with your account to directly connect your Snowflake account to one or more AWS VPCs, please contact Snowflake Support and request it to be enabled." %} 
+    {% include note.html content="If you are using Snowflake Business Critical (or higher) and wish to use PrivateLink with your account to directly connect your Snowflake account to one or more AWS VPCs, please contact Snowflake Support and request it to be enabled." %}
 
 ## Sign in and connect to your data warehouse
 
@@ -120,4 +120,5 @@ For search basics, see: [Start a new search]({{ site.baseurl }}/end-user/search/
 
 ## Related information
 
+- [ThoughtSpot Cloud Express Tutorials]({{ site.baseurl }}/data-integrate/embrace/embrace-cloud-express-tutorial.html)
 - [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)

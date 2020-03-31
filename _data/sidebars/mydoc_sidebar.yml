@@ -1636,7 +1636,7 @@ entries:
         - title: Overview
           url: /data-integrate/embrace/embrace-snowflake-partner.html
           output: web,embraceGd
-        - title: ThoughtSpot Tutorials for Snowflake Partner Connect
+        - title: Tutorials
           url: /data-integrate/embrace/embrace-snowflake-tutorial.html
           output: web,embraceGd
     - levelTwoTitle: Redshift
@@ -1678,6 +1678,15 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-synapse-reference.html
         output: web,embraceGd
+#    - levelTwoTitle: Cloud Express for Embrace
+#      output: web,embraceGd
+#      levelTwoItems:
+#      - title: Overview
+#        url: /data-integrate/embrace/embrace-cloud-express.html
+#        output: web,embraceGd
+#      - title: Tutorials
+#        url: /data-integrate/embrace/embrace-cloud-express-tutorial.html
+#        output: web,embraceGd
 #    - title: Cloud Express for Embrace
 #      url: /data-integrate/embrace/embrace-cloud-express.html
 #      output: web,embraceGd
