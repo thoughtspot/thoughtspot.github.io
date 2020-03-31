@@ -135,13 +135,13 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <dt>Norway</dt>
 <dd>
 <details><summary><strong>County</strong></summary>
-{% include content/geo/norway-county.md %}
+{% include content/geo/no-county.md %}
 </details>
 <details><summary><strong>Municipality</strong></summary>
-{% include content/geo/norway-municipality.md %}
+{% include content/geo/no-municipality.md %}
 </details>
 <details><summary><strong>Post Code</strong></summary>
-{% include content/geo/norway-postcode.md %}
+{% include content/geo/no-postcode.md %}
 </details>
 </dd>
 </dlentry>
@@ -182,13 +182,13 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <dt>Switzerland</dt>
 <dd>
 <details><summary><strong>Canton</strong></summary>
-{% include content/geo/switzerland-canton.md %}
+{% include content/geo/ch-canton.md %}
 </details>
 <details><summary><strong>District</strong></summary>
-{% include content/geo/switzerland-district.md %}
+{% include content/geo/ch-district.md %}
 </details>
 <details><summary><strong>Post Code</strong></summary>
-{% include content/geo/switzerland-postcode.md %}
+{% include content/geo/ch-postcode.md %}
 </details>
 </dd>
 </dlentry>
