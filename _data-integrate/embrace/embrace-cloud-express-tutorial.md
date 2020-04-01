@@ -10,9 +10,9 @@ When you create a connection to an external database in ThoughtSpot, any data mo
 
 If there are no table joins in your external database, you can easily create them in ThoughtSpot.
 
-The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
+The following example shows how the table joins were created in the SALES_FACT and BASKETS_FACT tables of the Retail_Snowflake worksheet, available in your **try.thoughtspot.com** account.
 
-## Creating table joins
+## Creating table joins in the SALES_FACT table
 
 The joins in the Sales table were created by doing the following:
 
