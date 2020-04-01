@@ -21,19 +21,16 @@
     If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A yellow warning symbol ![]({{ site.baseurl }}/images/icon-warning-yellow-20px.png){: .inline} appears. If you click on it, it tells you to enable access:
 
     ![Enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Enable data access")
-    <!--{% include image.html file="sharing-enabledata.png" title="Enable data access" alt="ThoughtSpot advises you to enable data access." caption="Enable data access" %}-->
 
-    Refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html).
+    If you own the underlying data source, refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html). If you do not own the data source, ThoughtSpot emails the owner of the data source or your ThoughtSpot administrator to ask them to share the data.
 
 6. To stop sharing with a user or group, click the **x** icon ![]({{ site.baseurl }}/images/icon-delete-20px.png){: .inline}.
 
     ![Stop sharing]({{ site.baseurl }}/images/sharing-delete.png "Stop sharing")
-    <!--{% include image.html file="sharing-delete.png" title="Stop sharing" alt="Click the 'x' icon to delete a user or group." caption="Stop sharing" %}-->
 
 6. You can send an email notification and an optional message:
 
     ![Send notification]({{ site.baseurl }}/images/sharing-notifmessage.png "Send notification")
-    <!--{% include image.html file="sharing-notifmessage.png" title="Send notification" alt="Send a notification email and add an optional message." caption="Send notification" %}-->
 
 6. Click **Share**.
 
