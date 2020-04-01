@@ -14,15 +14,15 @@ The following example shows how the table joins were created in the SALES_FACT a
 
 ## Creating table joins in the SALES_FACT table
 
-The joins in the Sales table were created by doing the following:
+The joins in the SALES_FACT table were created by doing the following:
 
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Tables** tab at the top of the page.
 
-3. Click the **Sales** table.
+3. Click the **SALES_FACT** table.
 
-   The Columns view of the Sales table appears.
+   The Columns view of the SALES_FACT table appears.
 
 4. Click the **Schema** tab.
 
@@ -31,15 +31,15 @@ The joins in the Sales table were created by doing the following:
    The Add Join window appears.
 
 6. In the Add Join window, use the drop-down menus to make the following selections:
-   - For Destination Table, select **Products**.
-   - For Source Columns, select **Product_Key**.
-   - For Destination Columns, select **Product_Key**.
+   - For Destination Table, select **STORE_DIMENSION**.
+   - For Source Columns, select **STORE_KEY**.
+   - For Destination Columns, select **STORE_KEY**.
 
-   ![]({{ site.baseurl }}/images/snow-add-join.png "Add Join for Products")
+   ![]({{ site.baseurl }}/images/cloud-add-join.png "Add Join for Products")
 
 7. Click **Next**.
 
-8. Enter the name _Product_Key - Product_Key_, a description for your join (optional), and click **Next**.
+8. Enter the name _Store_Key - Store_Key_, a description for your join (optional), and click **Next**.
    ![]({{ site.baseurl }}/images/snow-add-join-name.png "Join Name Products")
 
    {% include note.html content="You can use any name you want. The names we've chosen for this tutorial match those in the actual schema for this dataset on try.thoughtspot.com." %}
