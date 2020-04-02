@@ -10,19 +10,19 @@ When you create a connection to an external database in ThoughtSpot, any data mo
 
 If there are no table joins in your external database, you can easily create them in ThoughtSpot.
 
-The following example shows how the table joins were created in the Sales table of the Retail Sales worksheet, available in your **try.thoughtspot.com** account.
+The following example shows how the table joins were created in the SALES_FACT and BASKETS_FACT tables of the Retail_Snowflake worksheet, available in your **try.thoughtspot.com** account.
 
-## Creating table joins
+## Creating table joins in the SALES_FACT table
 
-The joins in the Sales table were created by doing the following:
+The two joins in the SALES_FACT table were created by doing the following:
 
 1. Click **Data** in the top navigation bar.
 
 2. Click the **Tables** tab at the top of the page.
 
-3. Click the **Sales** table.
+3. Click the **SALES_FACT** table.
 
-   The Columns view of the Sales table appears.
+   The Columns view of the SALES_FACT table appears.
 
 4. Click the **Schema** tab.
 
@@ -31,65 +31,88 @@ The joins in the Sales table were created by doing the following:
    The Add Join window appears.
 
 6. In the Add Join window, use the drop-down menus to make the following selections:
-   - For Destination Table, select **Products**.
-   - For Source Columns, select **Product_Key**.
-   - For Destination Columns, select **Product_Key**.
+   - For Destination Table, select **STORE_DIMENSION**.
+   - For Source Columns, select **STORE_KEY**.
+   - For Destination Columns, select **STORE_KEY**.
 
-   ![]({{ site.baseurl }}/images/snow-add-join.png "Add Join for Products")
+   ![]({{ site.baseurl }}/images/cloud-add-join.png "Add Join for Stores")
 
 7. Click **Next**.
 
-8. Enter the name _Product_Key - Product_Key_, a description for your join (optional), and click **Next**.
-   ![]({{ site.baseurl }}/images/snow-add-join-name.png "Join Name Products")
+8. Enter the name _Mapping between STORE_DIMENSION and SALES_FACT_, a description for your join (optional), and click **Next**.
+   ![]({{ site.baseurl }}/images/cloud-add-join-name.png "Join Name Stores")
 
    {% include note.html content="You can use any name you want. The names we've chosen for this tutorial match those in the actual schema for this dataset on try.thoughtspot.com." %}
 
-   The first join is created. Now you will add the other joins.
+   The first join is created. Now you will add the second join to the CUSTOMER_DIMENSION table.
 
 9. Click **+Add join**.
 
 10. In the Add Join window, use the drop-down menus to make the following selections:
-    - For Destination Table, select **Customers**.
-    - For Source Columns, select **Customer_Key**.
-    - For Destination Columns, select **Customer_Key**.
+    - For Destination Table, select **CUSTOMER_DIMENSION**.
+    - For Source Columns, select **CUSTOMER_KEY**.
+    - For Destination Columns, select **CUSTOMER_KEY**.
 
-    ![]({{ site.baseurl }}/images/snow-add-join2.png "Add Join for Customers")
+    ![]({{ site.baseurl }}/images/cloud-add-join2.png "Add Join for Customers")
 
 11. Click **Next**.
 
-12. Enter the name _Customer_Key - Customer_Key_, a description for your join (optional), and click **Next**.
-    ![]({{ site.baseurl }}/images/snow-add-join-name2.png "Join Name Customers")
+12. Enter the name _Mapping between CUSTOMER_DIMENSION and SALES_FACT_, a description for your join (optional), and click **Next**.  
+    ![]({{ site.baseurl }}/images/cloud-add-join-name2.png "Join Name Customers")
 
-13. Click **+Add join**.
+    Now that both table joins are created, the schema looks like this:
+    ![]({{ site.baseurl }}/images/cloud-schema1.png "schema")
 
-14. In the Add Join window, use the drop-down menus to make the following selections:
-    - For Destination Table, select **Stores**.
-    - For Source Columns, select **Store_Key**.
-    - For Destination Columns, select **Store_Key**.
+## Creating table joins in the BASKETS_FACT table
 
-    ![]({{ site.baseurl }}/images/snow-add-join3.png "Add Join for Stores")
+The two joins in the BASKETS_FACT table were created by doing the following:
 
-15. Click **Next**.
+1. Click **Data** in the top navigation bar.
 
-16. Enter the name _Store_Key-Store_Key_, a description for your join (optional), and click **Next**.
-    ![]({{ site.baseurl }}/images/snow-add-join-name3.png "Join Name Stores")
+2. Click the **Tables** tab at the top of the page.
 
-17. Click **+Add join**.
+3. Click the **BASKETS_FACT** table.
 
-18. In the Add Join window, use the drop-down menus to make the following selections:
-    - For Destination Table, select **Dates**.
-    - For Source Columns, select **Date_Key**.
-    - For Destination Columns, select **Date_Key**.
+   The Columns view of the BASKETS_FACT table appears.
 
-    ![]({{ site.baseurl }}/images/snow-add-join4.png "Add Join for Dates")
+4. Click the **Schema** tab.
 
-19. Click **Next**.
+5. Click **+Add join**.
 
-20. Enter the name _Date_Key - Date_Key_, a description for your join (optional), and click **Next**.
-    ![]({{ site.baseurl }}/images/snow-add-join-name4.png "Join Name Dates")
+   The Add Join window appears.
 
-    Now that all four table joins are created, the schema looks like this:
-    ![]({{ site.baseurl }}/images/snow-schema.png "schema")
+6. In the Add Join window, use the drop-down menus to make the following selections:
+   - For Destination Table, select **PRODUCT_DIMENSION**.
+   - For Source Columns, select **PRODUCT_KEY**.
+   - For Destination Columns, select **PRODUCT_KEY**.
+
+   ![]({{ site.baseurl }}/images/cloud-add-join3.png "Add Join for Products")
+
+7. Click **Next**.
+
+8. Enter the name _Mapping between PRODUCT_DIMENSION and BASKETS_FACT_, a description for your join (optional), and click **Next**.  
+   ![]({{ site.baseurl }}/images/cloud-add-join-name3.png "Join Name Products")
+
+   {% include note.html content="You can use any name you want. The names we've chosen for this tutorial match those in the actual schema for this dataset on try.thoughtspot.com." %}
+
+   The first join is created. Now you will add the second join to the SALES_FACT table.
+
+9. Click **+Add join**.
+
+10. In the Add Join window, use the drop-down menus to make the following selections:
+    - For Destination Table, select **SALES_FACT**.
+    - For Source Columns, select **POS_TRANSACTION_NUMBER**.
+    - For Destination Columns, select **POS_TRANSACTION_NUMBER**.
+
+    ![]({{ site.baseurl }}/images/cloud-add-join4.png "Add Join for Customers")
+
+11. Click **Next**.
+
+12. Enter the name _Mapping between SALES_FACT and BASKETS_FACT_, a description for your join (optional), and click **Next**.  
+    ![]({{ site.baseurl }}/images/cloud-add-join-name4.png "Join Name Customers")
+
+    Now that both table joins are created, the schema looks like this:
+    ![]({{ site.baseurl }}/images/cloud-schema2.png "schema")    
 
 ### Searching joined tables
 
@@ -101,22 +124,21 @@ To search the joined tables, do the following:
 
 2. Click the _Retail Sales_ data source, and click **Choose sources**.
 
-3. Select all the tables you just joined (Customers, Dates, Products, Sales, and Stores) and click **Close**.
+3. Select all the tables you just joined (BASKETS_FACT, CUSTOMER_DIMENSION, PRODUCT_DIMENSION, SALES_FACT, and STORE_DIMENSION) and click **Close**.
 
-4. In the search bar, enter **sales_dollar_amount**, **store_region**, and **monthly _Date in Dates_**.
-   ![]({{ site.baseurl }}/images/date-in-dates.png "search results")
+4. In the search bar, enter **sales_dollar_amount**, **product**, **store_region**, and **monthly _Customer_Since in Customer_dimension_**.  
+   ![]({{ site.baseurl }}/images/search_bar_specifics_cloud.png "search results")
 
    The search results look like this:
-   ![]({{ site.baseurl }}/images/snow-search-results.png "search results")
+   ![]({{ site.baseurl }}/images/cloud-search-results.png "search results")
 
-   {% include note.html content="When Monthly is a native keyword, it will work on any timestamp. For the purposes of this example, we're using monthly as the date, from the Dates table." %}
+   {% include note.html content="When Monthly is a native keyword, it will work on any timestamp. For the purposes of this example, we're using monthly as the date, from the Customer_dimension table." %}
 
 5. To confirm that the search is honoring the table joins, click the Query details icon ![query details icon]({{ site.baseurl }}/images/icon-information-20px.png){: .inline}, to the right of the chart.
-   ![]({{ site.baseurl }}/images/partner-connect-query-details.png "query details")
+   ![]({{ site.baseurl }}/images/cloud-express-query-details.png "query details")
 
-6. To confirm the search is bridging three different tables to create a result, click **Query visualizer**.
-   ![]({{ site.baseurl }}/images/partner-connect-query-visualizer.png "query visualizer")
-
+6. To confirm the search is bridging five different tables to create a result, scroll to the bottom of the Query details pane, and click **Query visualizer**.  
+   ![]({{ site.baseurl }}/images/cloud-express-query-visualizer.png "query visualizer")
 
 ### Best practices for data modeling
 
@@ -125,7 +147,7 @@ Here are some examples of how you can model your data to enhance searchability:
 - Change column names
 - Add synonyms for columns
 
-In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.
+In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.  
    ![]({{ site.baseurl }}/images/snow-model-best.png "search results")
 
 These are just a couple of examples of things you can do.
@@ -145,10 +167,10 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 
 1. Click **Data**.
 
-2. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
+2. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.  
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-3. Click the plus icon ![plus icon]({{ site.baseurl }}/images/icon-add-20px.png){: .inline}.
+3. Click the plus icon ![plus icon]({{ site.baseurl }}/images/icon-add-20px.png){: .inline}.  
    ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
 4. Check the box next to all five of the tables from the Retail dataset in your schema.
@@ -201,7 +223,7 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 10. Click the pencil icon ![edit icon]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} next to the current name of your worksheet, enter the name **Retail Sales**, and click **Done**.
     ![]({{ site.baseurl }}/images/partner-connect-worksheet-title.png)
 
-11. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+11. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.  
     ![]({{ site.baseurl }}/images/partner-connect-worksheet-save.png)
 
     Now, let's add a percent gross margin formula to the worksheet.
@@ -257,7 +279,7 @@ Using the Retail Sales worksheet example, here's how geo maps and currency could
 
 4. In the Columns view, find the Store_State column, and click **None** in the Geo Config column.
 
-5. In the Specify Geographic Configuration window, select **Specify Sub-nation region**, keep the default country of United States, and then select **State**.
+5. In the Specify Geographic Configuration window, select **Specify Sub-nation region**, keep the default country of United States, and then select **State**.  
    ![]({{ site.baseurl }}/images/partner-connect-geo-config.png)
 
 6. Click **Save Changes**.
