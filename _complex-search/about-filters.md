@@ -1,9 +1,7 @@
 ---
 title: [Understand filters]
-
-
-last_updated: tbd
-summary: "Filters narrow down the search result to only include the data you want to see."
+last_updated: 4/2/2020
+summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,13 +9,13 @@ When you add a value to your search, it becomes a filter. You can define filters
 
 To add a filter from the search bar:
 
-1. Click in the search bar and type the values you want to include in the search.
+1. Click in the search bar and type the value or values you want to include in the search.
 
     Typing a value in the search bar acts as a filter.
 
-    ![]({{ site.baseurl }}/images/filter_from_the_search_bar.png "Filter from the search bar")
+    ![Filter from the search bar]({{ site.baseurl }}/images/filter-in-search-bar.png "Filter from the search bar")
 
-    You can also use keywords like `yesterday`, `after`, and `next month` to
+    You can also use date- and time-related keywords like `yesterday`, `after`, and `next month` to
     filter your search. To see more keywords, refer to the [keyword
     reference]({{ site.baseurl }}/reference/keywords.html#).
 
@@ -33,12 +31,12 @@ applied to all visualizations of a pinboard. You can find out more about
 
 As you have seen with search, filters appear in grey boxes in the search bar.
 
- ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with filters")
+ ![Search bar with filters]({{ site.baseurl }}/images/search-bar-basics.png "Search bar with filters")
 
 In an answer or a pinboard, filters appear just under the title. For pinboards,
 your filters apply to all worksheet-based visualizations in the pinboard.
 
- ![]({{ site.baseurl }}/images/filter_appears.png "Pinboard filters")
+ ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
 If you ever find that your search or pinboard does not appear to contain all the
 data you want to see, check for any existing filters and remove them by clicking
@@ -57,7 +55,7 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the ellipses icon
+When adding a filter from the ellipsis icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the column header or by clicking on a chart axis, numeric columns and
 text columns provide you with the ability to include or exclude values, and
