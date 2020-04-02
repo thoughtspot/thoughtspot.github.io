@@ -148,7 +148,7 @@ Here are some examples of how you can model your data to enhance searchability:
 - Add synonyms for columns
 
 In the following example, the _Sales_Dollar_Amount_ column was renamed to Sales and the synonyms of _Revenue_ and _Dollars_ were added.  
-   ![]({{ site.baseurl }}/images/snow-model-best.png "search results")
+   ![]({{ site.baseurl }}/images/cloud-model-best.png "search results")
 
 These are just a couple of examples of things you can do.
 
@@ -170,11 +170,11 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 2. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.  
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-3. Click the plus icon ![plus icon]({{ site.baseurl }}/images/icon-add-20px.png){: .inline}.  
+3. Click the plus icon next to Sources.    
    ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
-4. Check the box next to all five of the tables from the Retail dataset in your schema.
-   ![]({{ site.baseurl }}/images/partner-connect-tables-worksheet.png)
+4. Check the box next to all five of the tables in your schema.
+   ![]({{ site.baseurl }}/images/cloud-express-tables-worksheet.png)
 
 5. Make sure the default setting of **Apply joins progressively** is selected. This ensures that the search uses only the tables that are required.
 
@@ -182,7 +182,7 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 
 7. In the Data view, click the name of the Customers table to reveal all of the columns in that table.
 
-8. Double-click each column from the Customers table that you want to include in the worksheet.
+8. Double-click each column from the CUSTOMER_DIMENSION table that you want to include in the worksheet.
 
    Include these columns:
    - Customer_Type
@@ -200,9 +200,9 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
    - Date
 
    From the Products table, include these columns:
-   - Product_Description
-   - Category_Description
-   - Department_Description
+   - Product
+   - Category
+   - Brand
 
    From the Sales table, include these columns:
    - Sales_Dollar_Amount
