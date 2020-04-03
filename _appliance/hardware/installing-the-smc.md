@@ -14,7 +14,7 @@ Follow these steps to deploy ThoughtSpot on your Super Micro Computer (SMC) appl
 | &#10063; | [Step 4: Configure nodes]({{ site.baseurl }}/appliance/hardware/configure-nodes-smc.html) |
 | &#10063; | [Step 5: Install cluster]({{ site.baseurl }}/appliance/hardware/smc-cluster-install.html) |
 
-This guide explains how to deploy ThoughtSpot on an SMC appliance, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on an SMC appliance, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on an SMC appliance using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 
 ## Related information
