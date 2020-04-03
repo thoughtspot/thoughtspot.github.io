@@ -196,20 +196,29 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 
 9. Use the same process to select columns from the other tables to include in the worksheet.
 
-   From the Dates table, include this column:
-   - Date
-
-   From the Products table, include these columns:
-   - Product
-   - Category
-   - Brand
-
-   From the Sales table, include these columns:
+   From the BASKETS_FACT table, include these columns:
    - Sales_Dollar_Amount
    - Cost_Dollar_Amount
    - Gross_Profit_Dollar_Amount
 
-   From the Stores table, include these columns:
+   From the CUSTOMER_DIMENSION table, include these columns:
+   - Customer_Type
+   - Customer_Name
+   - Customer_Gender
+   - Customer_Region
+   - Customer_State
+   - Customer_City
+   - Customer_County
+
+   From the PRODUCT_DIMENSION table, include these columns:
+   - Product
+   - Category
+   - Brand
+
+   From the SALES_FACT table, include this column:
+   - Timestamp
+
+   From the STORE_DIMENSION table, include these columns:
    - Store_Name
    - Store_Region
    - Store_State

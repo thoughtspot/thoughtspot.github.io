@@ -1,12 +1,10 @@
 ---
-title: [Back up and Restore a cluster in AWS]
+title: [Back up and Restore an AWS cluster using S3]
 last_updated: 3/13/2020
 sidebar: mydoc_sidebar
-summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in AWS."
+summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in AWS using an S3 bucket."
 permalink: /:collection/:path.html
 ---
-You can back up and restore your ThoughtSpot cluster hosted in AWS using an S3 bucket.
-
 It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.
 
 ## Backing up to an Amazon S3 bucket

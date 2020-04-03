@@ -24,15 +24,13 @@ Starting with this release, you can configure automatic updates of the front end
 
 UI auto-update is in the Early Access phase. Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
 
-### Back up and restore ThoughtSpot AWS and GCP clusters
+### Back up and restore ThoughtSpot AWS and GCP clusters using cloud storage
 
-Now you can back up and restore your ThoughtSpot cluster hosted in either AWS or GCP.
-
-For AWS, you use an S3 bucket. For GCP, you use a GCS bucket.
+With AWS, you can back up and restore using an S3 bucket. With GCP, you can back up and restore using a GCS bucket.
 
 For details, see:
-- [Back up and restore a cluster in AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
-- [Back up and restore a cluster in GCP]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
+- [Back up and restore an AWS cluster using S3]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [Back up and restore a GCP cluster using GCS]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
 
 ### Geo map support for Norway and Switzerland
 
