@@ -6,10 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
-| &#10063; | [2. Install RHEL version 7.7 on all hosts](#install-rhel) |
-| &#10063; | [3. Enable the hosts to download RHEL packages](#enable-hosts) |
-| &#10063; | [4. Enable an Ansible Control Server](#enable-ansible) |
-| &#10063; | [5. Partition the hosts](#partition-hosts) |
+| &#10063; | [2. Partition the hosts](#partition-hosts) |
+| &#10063; | [3. Install RHEL version 7.7 on all hosts](#install-rhel) |
+| &#10063; | [4. Enable the hosts to download RHEL packages](#enable-hosts) |
+| &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux](#disable-selinux) |
 
 {: id="set-up-hosts"}
@@ -20,9 +20,53 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 - ThoughtSpot-certified hardware appliance manufactured by  [DELL]({{ site.baseurl }}/appliance/hardware/installing-dell.html)
 - ThoughtSpot-certified hardware appliance manufactured by [SMC ]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
-- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
+
+{: id="partition-hosts"}
+## Partition the hosts
+
+Ensure that all ThoughtSpot hosts have the following partitions on the root drive.
+
+Note that the size of the root drive on appliances is limited to 200GB; the partition requirements are therefore somewhat different when compared to the other environments.
+
+<table>
+<tbody>
+<tr>
+<th>Platform</th>
+<th>Partition</th>
+<th>Drive type</th>
+<th>Description</th>
+<th>Minimum size</th>
+</tr>
+<tr>
+<th rowspan="2">Hosts in AWS, GCP, and VMWare&nbsp;</th>
+<td>OS partition</td>
+<td>SSD (root drive)</td>
+<td>Root partition for OS, <code>/tmp</code></td>
+<td>100GB<br />Allocate at least 50GB to <code>/tmp</code></td>
+</tr>
+<tr>
+<td>Export partition</td>
+<td>SSD (root drive)&nbsp;</td>
+<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
+<td>200GB</td>
+</tr>
+<tr>
+<th rowspan="2">Hosts on ThoughtSpot-certified hardware appliances</th>
+<td>OS partition</td>
+<td>SSD (root drive)</td>
+<td>Root partition for OS, <code>/tmp</code></td>
+<td>80GB<br />Allocate at least 50GB to <code>/tmp</code></td>
+</tr>
+<tr>
+<td>Export partition</td>
+<td>SSD (root drive)&nbsp;</td>
+<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
+<td>100GB</td>
+</tr>
+</tbody>
+</table>
 
 {: id="install-rhel"}
 ## Install RHEL on hosts
@@ -39,7 +83,7 @@ If the cluster is offline, and there is no mirror repository in your organizatio
 {: id="official-repositories"}
 **Official package repositories**
 
-If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. When the Ansible Playbook runs, it downloads the necessary [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
+If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
 
 {: id="mirror-repositories"}
 **Internal mirror repository**
@@ -63,51 +107,6 @@ If the hosts of your ThoughtSpot cluster have access to an internal repository t
 ## Enable an Ansible Control Server
 
 Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both `rsync` and Ansible on the Ansible Control Server host.
-
-{: id="partition-hosts"}
-## Partition the hosts
-
-Ensure that all ThoughtSpot hosts have the following partitions on the root drive.
-
-Note that the size of the root drive on appliances is limited to 200GB; the partition requirements are therefore somewhat different when compared to the other environments.
-
-<table>
-<tbody>
-<tr>
-<th>Platform</th>
-<th>Partition</th>
-<th>Drive type</th>
-<th>Description</th>
-<th>Minimum size</th>
-</tr>
-<tr>
-<th rowspan="2">Hosts in AWS, GCP, Azure, and VMWare&nbsp;</th>
-<td>OS partition</td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>100GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td>Export partition</td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
-<td>200GB</td>
-</tr>
-<tr>
-<th rowspan="2">Hosts on ThoughtSpot-certified hardware appliances</th>
-<td>OS partition</td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>80GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td>Export partition</td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on.<br/>The Ansible Playbook creates the filesystem in the <code>/export</code> partition.</td>
-<td>100GB</td>
-</tr>
-</tbody>
-</table>
 
 {: id="disable-selinux"}
 ## Disable SELinux
