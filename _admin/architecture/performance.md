@@ -58,4 +58,4 @@ Maximum number of unique RLS rules with search data suggestions should not excee
 
 ## Scheduled Pinboards
 
-For ideal performance of scheduled pinboards, do not exceed 50 scheduled pinboard jobs.
+For ideal performance of scheduled pinboards, do not exceed 50 scheduled pinboard jobs. 
