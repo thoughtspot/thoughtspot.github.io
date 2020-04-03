@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 3/13/2020
+last_updated: 4/3/2020
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -29,6 +29,8 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 -   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
 The ThoughtSpot AMI has specific applications on a base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
+
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 {: id="prerequisites"}
 ## Prerequisites
