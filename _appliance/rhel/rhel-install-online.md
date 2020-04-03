@@ -127,7 +127,8 @@ To set up the Ansible, follow these steps:
     </dlentry>
     <dlentry id="ssh_user">
       <dt>ssh_user</dt>
-      <dd><dl>
+      <dd><p>The <code>ssh_user</code> must exist on the ThoughtSpot host, and it must have <code>sudo</code> privileges.</p>
+      <dl>
       <dlentry>
         <dt>On-premise deployments</dt>
         <dd>The <code>ssh_user</code> is the user who runs the playbook, and who is connected to the hosts.</dd>
@@ -150,7 +151,7 @@ To set up the Ansible, follow these steps:
     </dlentry>
     <dlentry id="ssh_public_key">
       <dt>ssh_public_key</dt>
-      <dd>Add the public key to the <code>ssh_authorized_key</code> file for each host, and add the private key to the <code>hosts.yaml</code> file. You can use an existing key pair, or generate a new key pair in the Ansible Control server.<br/>
+      <dd>Add the public key to the <code>ssh authorized_keys</code> file for each host, and add the private key to the <code>hosts.yaml</code> file. You can use an existing key pair, or generate a new key pair in the Ansible Control server.<br/>
       Run the following command to verify that the Ansible Control Server can connect to the hosts over <code>ssh</code>:<br/><pre><code>ansible -m ping -i hosts.yaml all</code></pre></dd>
     </dlentry>
     <dlentry id="extra_admin_ssh_key">
@@ -176,7 +177,7 @@ To set up the Ansible, follow these steps:
 Run the Ansible Playbook from your local machine by entering the following command:
 
 ```
-ansible-playbook -i <Ansible inventory file> ts-rhel.yaml
+ansible-playbook -i hosts.yaml ts-rhel.yaml
 ```
 
 As the Ansible Playbook runs, it will perform these tasks:

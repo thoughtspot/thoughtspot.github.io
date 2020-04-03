@@ -39,7 +39,7 @@ If the cluster is offline, and there is no mirror repository in your organizatio
 {: id="official-repositories"}
 **Official package repositories**
 
-If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
+If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. When the Ansible Playbook runs, it downloads the necessary [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
 
 {: id="mirror-repositories"}
 **Internal mirror repository**
@@ -103,7 +103,7 @@ Note that the size of the root drive on appliances is limited to 200GB; the part
 <tr>
 <td>Export partition</td>
 <td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
+<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on.<br/>The Ansible Playbook creates the filesystem in the <code>/export</code> partition.</td>
 <td>100GB</td>
 </tr>
 </tbody>

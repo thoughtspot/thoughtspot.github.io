@@ -1441,7 +1441,7 @@ entries:
       - title: RHEL overview
         url: /appliance/rhel/rhel.html
         output: web,appQs
-      - title: RHEL prerquisites
+      - title: RHEL prerequisites
         url: /appliance/rhel/rhel-prerequisites.html
         output: web,appQs
       - title: ThoughtSpot artifacts
