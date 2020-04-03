@@ -22,8 +22,7 @@ This access can be granted and revoked easily, so you can enable it for a troubl
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-{% include note.html content="Before you set up a reverse tunnel, open port `22`
-in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %}
+{% include note.html content="Your ThoughtSpot instance must be able to connect to `tunnelrelay.thoughtspot.com` on TCP port 22. To verify connectivity to this port, run: `telnet tunnelrelay.thoughtspot.com 22`. Without connectivity to port 22, the tunnel will not work." %}
 
 {: id="remote-support-tscli"}
 ## Using remote support with tscli
