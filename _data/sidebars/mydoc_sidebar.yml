@@ -1552,7 +1552,7 @@ entries:
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
           output: web,appQs,instAWS
-        - title: Back up and Restore
+        - title: Back up and Restore using S3
           url: /appliance/aws/aws-backup-restore.html
           output: web,appQs,instAWS
       - levelThreeTitle: Azure
@@ -1585,7 +1585,7 @@ entries:
         - title: Install ThoughtSpot clusters in GCP
           url: /appliance/gcp/gcp-cluster-install.html
           output: web,appQs,instGCP
-        - title: Back up and Restore
+        - title: Back up and Restore using GCS
           url: /appliance/gcp/gcp-backup-restore.html
           output: web,appQs,instGCP
     - levelTwoTitle: VMware
