@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-30T16:51:32-07:00" />
+<meta property="article:published_time" content="2020-04-03T18:06:50-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-03-30T16:51:32-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html","datePublished":"2020-03-30T16:51:32-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-04-03T18:06:50-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html","datePublished":"2020-04-03T18:06:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2788,7 +2788,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerquisites</a></li>
+                          <li><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerequisites</a></li>
                       
                    
                 
@@ -3792,6 +3792,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>The ThoughtSpot AMI has specific applications on a base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.</p>
 
+<p>This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot’s CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the <a href="/6.0/appliance/rhel/rhel.html">RHEL deployment guide</a>.</p>
+
 <h2 id="prerequisites">Prerequisites</h2>
 
 <p>To install and launch ThoughtSpot, you must have the following:</p>
@@ -4092,9 +4094,9 @@ Add the required storage based on your instance type (either EBS volumes or S3),
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 3, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/13/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 4/3/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
