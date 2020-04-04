@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“RHEL installation prerequisites”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Install RHEL version 7.7 on all hosts ❏ 3. Enable the hosts to download RHEL packages ❏ 4. Enable an Ansible Control Server ❏ 5. Partition the hosts ❏ 6. Disable SELinux" />
-<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Install RHEL version 7.7 on all hosts ❏ 3. Enable the hosts to download RHEL packages ❏ 4. Enable an Ansible Control Server ❏ 5. Partition the hosts ❏ 6. Disable SELinux" />
+<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.7 on all hosts ❏ 4. Enable the hosts to download RHEL packages ❏ 5. Enable an Ansible Control Server ❏ 6. Disable SELinux" />
+<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.7 on all hosts ❏ 4. Enable the hosts to download RHEL packages ❏ 5. Enable an Ansible Control Server ❏ 6. Disable SELinux" />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-30T16:51:32-07:00" />
+<meta property="article:published_time" content="2020-04-03T18:06:50-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“RHEL installation prerequisites”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“RHEL installation prerequisites”]","dateModified":"2020-03-30T16:51:32-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html","datePublished":"2020-03-30T16:51:32-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html"},"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Install RHEL version 7.7 on all hosts ❏ 3. Enable the hosts to download RHEL packages ❏ 4. Enable an Ansible Control Server ❏ 5. Partition the hosts ❏ 6. Disable SELinux","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“RHEL installation prerequisites”]","dateModified":"2020-04-03T18:06:50-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html","datePublished":"2020-04-03T18:06:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-prerequisites.html"},"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.7 on all hosts ❏ 4. Enable the hosts to download RHEL packages ❏ 5. Enable an Ansible Control Server ❏ 6. Disable SELinux","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2788,7 +2788,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerquisites</a></li>
+                          <li class="active"><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerequisites</a></li>
                       
                    
                 
@@ -3750,19 +3750,19 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#install-rhel">2. Install RHEL version 7.7 on all hosts</a></td>
+      <td><a href="#partition-hosts">2. Partition the hosts</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#enable-hosts">3. Enable the hosts to download RHEL packages</a></td>
+      <td><a href="#install-rhel">3. Install RHEL version 7.7 on all hosts</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#enable-ansible">4. Enable an Ansible Control Server</a></td>
+      <td><a href="#enable-hosts">4. Enable the hosts to download RHEL packages</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#partition-hosts">5. Partition the hosts</a></td>
+      <td><a href="#enable-ansible">5. Enable an Ansible Control Server</a></td>
     </tr>
     <tr>
       <td>❏</td>
@@ -3782,43 +3782,6 @@ $('#toc').on('click', 'a', function() {
   <li><a href="/6.0/appliance/gcp/configuration-options.html">Google Cloud Platform (GCP)</a></li>
   <li><a href="/6.0/appliance/vmware/vmware-intro.html">VMware</a></li>
 </ul>
-
-<h2 id="install-rhel">Install RHEL on hosts</h2>
-
-<p>ThoughtSpot is certified with RHEL version 7.7; we <strong>do not</strong> support other versions of RHEL, including 8 and 8.1.</p>
-
-<h2 id="enable-hosts">Enable the hosts to download RHEL packages</h2>
-
-<p>Make sure that you can download RHEL packages to all hosts, either from the <a href="#official-repositories">official package repositories</a>, or from a <a href="#mirror-repositories">mirror repository</a> owned and managed by your organization.</p>
-
-<p>If the cluster is offline, and there is no mirror repository in your organization, please contact ThoughtSpot Support.</p>
-
-<p id="official-repositories"><strong>Official package repositories</strong></p>
-
-<p>If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download <a href="#yum-repositories">Yum</a>, <a href="#python-repositories">Python</a>, and <a href="#r-repositories">R</a> package repositories.</p>
-
-<p id="mirror-repositories"><strong>Internal mirror repository</strong></p>
-
-<p>If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the <a href="#yum-repositories">Yum
-</a>, <a href="#python-repositories">Python</a>, and <a href="#r-repositories">R</a> package repositories to your hosts.</p>
-
-<p id="repositories"><strong>Repositories</strong></p>
-
-<ul id="yum-repositories">
-  <li><strong>Yum repositories</strong>: you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
-</ul>
-
-<ul id="python-repositories">
-  <li><strong>Python repository</strong>: for Python, enable the <code class="language-plaintext highlighter-rouge">PyPI</code> repository.</li>
-</ul>
-
-<ul id="r-repositories">
-  <li><strong>R repository</strong>: for R, enable the <code class="language-plaintext highlighter-rouge">CRAN</code> repository.</li>
-</ul>
-
-<h2 id="enable-ansible">Enable an Ansible Control Server</h2>
-
-<p>Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both <code class="language-plaintext highlighter-rouge">rsync</code> and Ansible on the Ansible Control Server host.</p>
 
 <h2 id="partition-hosts">Partition the hosts</h2>
 
@@ -3864,6 +3827,43 @@ $('#toc').on('click', 'a', function() {
 </tbody>
 </table>
 
+<h2 id="install-rhel">Install RHEL on hosts</h2>
+
+<p>ThoughtSpot is certified with RHEL version 7.7; we <strong>do not</strong> support other versions of RHEL, including 8 and 8.1.</p>
+
+<h2 id="enable-hosts">Enable the hosts to download RHEL packages</h2>
+
+<p>Make sure that you can download RHEL packages to all hosts, either from the <a href="#official-repositories">official package repositories</a>, or from a <a href="#mirror-repositories">mirror repository</a> owned and managed by your organization.</p>
+
+<p>If the cluster is offline, and there is no mirror repository in your organization, please contact ThoughtSpot Support.</p>
+
+<p id="official-repositories"><strong>Official package repositories</strong></p>
+
+<p>If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download <a href="#yum-repositories">Yum</a>, <a href="#python-repositories">Python</a>, and <a href="#r-repositories">R</a> package repositories.</p>
+
+<p id="mirror-repositories"><strong>Internal mirror repository</strong></p>
+
+<p>If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the <a href="#yum-repositories">Yum
+</a>, <a href="#python-repositories">Python</a>, and <a href="#r-repositories">R</a> package repositories to your hosts.</p>
+
+<p id="repositories"><strong>Repositories</strong></p>
+
+<ul id="yum-repositories">
+  <li><strong>Yum repositories</strong>: you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
+</ul>
+
+<ul id="python-repositories">
+  <li><strong>Python repository</strong>: for Python, enable the <code class="language-plaintext highlighter-rouge">PyPI</code> repository.</li>
+</ul>
+
+<ul id="r-repositories">
+  <li><strong>R repository</strong>: for R, enable the <code class="language-plaintext highlighter-rouge">CRAN</code> repository.</li>
+</ul>
+
+<h2 id="enable-ansible">Enable an Ansible Control Server</h2>
+
+<p>Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both <code class="language-plaintext highlighter-rouge">rsync</code> and Ansible on the Ansible Control Server host.</p>
+
 <h2 id="disable-selinux">Disable SELinux</h2>
 <p>We recommend that you disable SELinux if your organization permits it.</p>
 
@@ -3892,7 +3892,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 3, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 3/20/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>

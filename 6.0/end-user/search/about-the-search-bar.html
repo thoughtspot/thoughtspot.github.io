@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/end-user/search/about-the-search-bar.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-30T16:51:32-07:00" />
+<meta property="article:published_time" content="2020-04-03T18:06:50-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Search bar features”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Search bar features”]","dateModified":"2020-03-30T16:51:32-07:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/about-the-search-bar.html","datePublished":"2020-03-30T16:51:32-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/about-the-search-bar.html"},"description":"A lot of work has gone into making ThoughtSpot’s search bar intuitive and easy to use. However, it still helps to know some details of how the search bar works.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Search bar features”]","dateModified":"2020-04-03T18:06:50-07:00","url":"https://docs.thoughtspot.com/6.0/end-user/search/about-the-search-bar.html","datePublished":"2020-04-03T18:06:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/end-user/search/about-the-search-bar.html"},"description":"A lot of work has gone into making ThoughtSpot’s search bar intuitive and easy to use. However, it still helps to know some details of how the search bar works.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2788,7 +2788,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerquisites</a></li>
+                          <li><a href="/6.0/appliance/rhel/rhel-prerequisites.html">RHEL prerequisites</a></li>
                       
                    
                 
@@ -3746,18 +3746,17 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="boxed-search-phrases">Boxed search phrases</h2>
 
-<p>The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. Search phrases have blue boxes, and <a href="/6.0/complex-search/about-filters.html#">filters</a> have white boxes.</p>
+<p>The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. <a href="/6.0/end-user/search/about-attributes-and-measures.html#measures">Measures</a> are green, <a href="/6.0/end-user/search/about-attributes-and-measures.html#attributes">attributes</a> are blue, and <a href="/6.0/complex-search/about-filters.html#">filters</a> are gray.</p>
 
-<p><img src="/6.0/images/search_bar_with_phrases_boxed.png" alt="" title="Search bar with boxed phrases" /></p>
+<p><img src="/6.0/images/search-bar-basics.png" alt="Measures, attributes, and filters in the search bar" title="Measures, attributes, and filters in the search bar" /></p>
 
 <h2 id="editing-a-search">Editing a search</h2>
 
 <p>You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an <strong>x</strong>, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.</p>
 
-<p>If you find yourself looking at a table or chart, but it doesn’t seem to contain all the data you expect, try looking in the search bar for white boxes (filters). If you remove all the filters, you will again see all the available data for that search.</p>
+<p>If you find yourself looking at a table or chart, but it doesn’t seem to contain all the data you expect, try looking in the search bar for filters in gray boxes. If you remove all the filters, you will again see all the available data for that search.</p>
 
 <h2 id="quick-select-search-results">Quick select search results</h2>
-
 <p>When you type search phrases in the search bar, the first suggestion is automatically highlighted and you can use tab to navigate further. In addition, after you type a phrase or a letter and press <strong>Enter</strong>, the highlighted suggestion is automatically selected. Suggestions can be an attribute, measures, value, keyword, historic query, or exactly what you typed as the search phrase. You can also press <strong>Enter</strong> or <strong>Tab</strong> to select the first suggestion. If there are no suggestions, the suggestion list will not be displayed.
 Historic suggestions always display on top with the first suggestion highlighted as default.</p>
 
@@ -3769,19 +3768,19 @@ Historic suggestions always display on top with the first suggestion highlighted
 
 <h2 id="dictionary-synonyms">Dictionary synonyms</h2>
 
-<p>A dictionary of common word synonyms is bundled with ThoughtSpot. The dictionary contains synonyms for common terms that occur in data. For example, if you type in “gross”, and that word is not found, ThoughtSpot will consider it a synonym for “revenue”. We use the WordNet library of terms, which takes word proximity into account, and weights words by similarity to the target term.</p>
+<p>A dictionary of common word synonyms is bundled with ThoughtSpot. The dictionary contains synonyms for common terms that occur in data. For example, if you type in “gross”, and that word is not found, ThoughtSpot will consider it a synonym for “revenue”. We use the <a href="https://wordnet.princeton.edu/" target="_blank">WordNet</a> library of terms, which takes word proximity into account, and weights words by similarity to the target term.</p>
 
 <p>This frees you from having to know the exact term or column name used in a data source. You can still find the answer in many cases, if you type a word with the same meaning as a different word that occurs in the data.</p>
 
 <h2 id="search-help">Search help</h2>
 
-<p>If you type an unrecognized search term, you will be offered tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.</p>
+<p>If you type an unrecognized search term, ThoughtSpot offers you tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.</p>
 
 <p><img src="/6.0/images/search_help.png" alt="" title="Search help box" /></p>
 
-<h2 id="related-searches">Related searches</h2>
+<h2 id="related-answers">Related Answers</h2>
 
-<p>At the end of the <strong>Search</strong> page is the system provides searches you might find useful. These are quick searches you can load into the search bar by simply click the provided link.</p>
+<p>If you scroll down the <strong>Search</strong> page, the system provides Related Answers that you might find useful. These are quick searches you can load into the search bar by simply clicking the provided link.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3808,9 +3807,9 @@ Historic suggestions always display on top with the first suggestion highlighted
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 3, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 4/2/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
