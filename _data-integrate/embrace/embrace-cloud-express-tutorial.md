@@ -201,15 +201,6 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
    - Cost_Dollar_Amount
    - Gross_Profit_Dollar_Amount
 
-   From the CUSTOMER_DIMENSION table, include these columns:
-   - Customer_Type
-   - Customer_Name
-   - Customer_Gender
-   - Customer_Region
-   - Customer_State
-   - Customer_City
-   - Customer_County
-
    From the PRODUCT_DIMENSION table, include these columns:
    - Product
    - Category
@@ -225,12 +216,12 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
    - Store_City
    - Store_Zip_Code
    - Store_County
-   ![]({{ site.baseurl }}/images/partner-connect-columns-worksheet.png)
+   ![]({{ site.baseurl }}/images/cloud-express-columns-worksheet.png)
 
    {% include note.html content="As a best practice, you would not select a key from a table when creating a worksheet, because you would not want to search for the key." %}
 
-10. Click the pencil icon ![edit icon]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} next to the current name of your worksheet, enter the name **Retail Sales**, and click **Done**.
-    ![]({{ site.baseurl }}/images/partner-connect-worksheet-title.png)
+10. Click the pencil icon ![edit icon]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} next to the current name of your worksheet, enter the name **Retail_Snowflake**, and click **Done**.
+    ![]({{ site.baseurl }}/images/cloud-express-worksheet-title.png)
 
 11. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.  
     ![]({{ site.baseurl }}/images/partner-connect-worksheet-save.png)
@@ -252,14 +243,14 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 
 15. Save the worksheet with the formula added, by clicking the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
-16. Click **Data**, and click the Retail Sales worksheet.
+16. Click **Data**, and click the **Retail_Snowflake** worksheet.
 
 17. In the Columns view, make sure that the % Gross Margin formula has the following settings:
     - For DATA TYPE: **DOUBLE**
     - For COLUMN TYPE: **MEASURE**
     - For AGGREGATION: **AVERAGE**
 
-18. Save the worksheet with the updated formula settings, by clicking the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+18. If you modified any of the settings, save the worksheet by clicking the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
 
 ### Best practices for worksheets
