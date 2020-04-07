@@ -1,7 +1,7 @@
 ---
 title: [Import CSV files with tsload]
 last_updated: 03/07/2020
-summary: "Use the `tsload` command to import data from a CSV file."
+summary: "Use the <code>tsload</code> command to import data from a CSV file."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,26 +12,39 @@ Use ThoughtSpot Loader (`tsload`) to load data from a CSV text file into an exis
 
 The `tsload` command accepts flags that enable you to specify column and row separators, date or timestamp formats, null value representations, and similar parameters. Many of these options have defaults that you can override.
 
-Before importing data, you need to [Build the schema](create-schema.html#).
+Before importing data, you need to [build the schema](create-schema.html#).
+
+After importing data, you can see it in the **Data** tab.
+
+![Click on the Data tab from the top navigation bar]({{ site.baseurl }}/images/data-tab.png "Click on the Data tab from the top navigation bar")
 
 ## ThoughtSpot Loader
 
-To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference]({{ site.baseurl }}/reference/data-importer-ref.html#), or by issuing `tsload -help` command.
+To use ThoughtSpot Loader, type the command `tsload` followed by the appropriate flags. You can see the list of the flags it accepts in the [ThoughtSpot Loader flag reference]({{ site.baseurl }}/reference/data-importer-ref.html#), or by issuing `tsload -help` on the command line.
 
 The `tsload` feature supports both full and incremental data loads. For incremental loads, it performs an upsert (insert or update). If an incoming row has the same primary key as an existing row, it updates the existing row with new values.
 
 You can integrate `tsload` into your ETL environment for more automated data loads. Most ETL tools enable you to write target data into files, and support scripted post-transformation actions that include loading data into ThoughtSpot.
 
-The following steps describe how to manually load data. However, you can save the `tsload` commands to a script, for reuse.
+### Load data using tsload
+To manually load data into ThoughtSpot, follow these steps.
+
+You can also save the `tsload` commands to a script, for reuse.
 
 1.  Log in to the Linux shell using SSH.
+    ```
+    $ ssh admin@<cluster-IP>
+    ```
 2.  Change to the directory that contains the staged CSV files.
+    ```
+    $ cd <directory>
+    ```
 3.  Use the following syntax to invoke `tsload`, specifying the appropriate flags, and your data source file:
 
     ```
-    $ tsload --target_database=my_database
-           --target_table=my_table --alsologtostderr
-           --empty_target --source_file=my_file.csv --v 1
+    $ tsload --target_database=<my_database>
+           --target_table=<my_table> --alsologtostderr
+           --empty_target --source_file=<my_file.csv> --v 1
            --field_separator="separator_char"
     ```
 
@@ -43,7 +56,7 @@ The following steps describe how to manually load data. However, you can save th
            --empty_target --source_file=ssbm_customer.csv
            --v 1 --field_separator "|"
     ```
-4. After the processing begins, you can see messages that indicate the progress, and then two summary messages after the load is complete.
+4. Once `tsload` starts processing the data, you can see messages that indicate the progress. When the load is complete, you can see two summary messages: `source summary` and `load summary`.
 
     ```
     Started processing data row
@@ -77,34 +90,36 @@ The following steps describe how to manually load data. However, you can save th
     Total load time = 1.13 seconds = 0.02 minutes = 0.00 hours
     Data size = 50 bytes = 0.06 KB = 0.00 MB
     ```
-5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were omitted, review your CSV file, make the required adjustments, and then load it again.
+5. In the load summary, check the **Rows duplicate/omitted** number.
+
+    This indicates the number of rows (if any) that `tsload` did not load because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If `tsload` omitted any rows, review your CSV file, make the required adjustments, and then load it again.
+
+    In the example above, `tsload` omitted two rows. This data needs to be cleaned and reloaded.
 
 6. After correctly loading your file, repeat this process to load data from any additional CSV files.
 
 ## Loading data from an AWS S3 bucket
 
-If you have data in .csv format stored in an AWS bucket, you can load it directly to ThoughtSpot.
+If you have data in `.csv` format stored in an AWS bucket, you can load it directly to ThoughtSpot.
 
 ### Assigning S3 read-only role to your EC2 instance
-If your cluster is running 5.3.1 or later, you can assign an S3 read-only role to your ThoughtSpot EC2 instance(s) so the instance(s) can access the S3 bucket from which you want to load the data. This eliminates the need to enter the AWS S3 credentials when loading your data. For details, see: [Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html){:target="_blank"} in Amazon's AWS documentation.
+If your cluster is on version 5.3.1 or later, you can assign an S3 read-only role to your ThoughtSpot EC2 instance(s) so the instance(s) can access the S3 bucket from which you want to load the data. This eliminates the need to enter the AWS S3 credentials when loading your data. For details, see: [Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html){:target="_blank"} in Amazon's AWS documentation.
 
-{% include note.html content="If you are using S3 for persistent storage, and assigned the *ec2rolewithfulls3access* IAM role to your instance, you do not need to complete this step." %}
+If you are using S3 for persistent storage, and assigned the *ec2rolewithfulls3access* IAM role to your instance, you do ***not*** need to complete this step in order to load data with S3.
 
-If an IAM an role is configured, there is no need to supply the `--s3a_access_key`, `--s3a_secret_key` and `--s3a_region` parameters.
+If you already configured the IAM role, you do not need to supply the `--s3a_access_key`, `--s3a_secret_key` and `--s3a_region` parameters when loading data with `tsload`.
 
 To load data from an AWS S3 bucket, do the following:
 
 1.  Log in to the Linux shell of your AWS instance using SSH.
 
-2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
+2.  Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file. If you do not supply the `--s3a_bucket_name`, `tsload` prompts you to enter it.
 
     ```
     $ tsload --source_file "/s3a/default/<my_file_in_aws>"
            --target_database "<my_database_in_ThoughtSpot>" --target_table "<my_table_in_the_database_in_ThoughtSpot>" --s3a_bucket_name <bucket_name>
     ```   
-    {% include important.html content="--source_file should contain the file path inside the bucket and must be prefixed by “/s3a/default”. For example, to load from a file named “directory/file.csv”, the --source_file should be “/s3a/default/directory/file.csv”." %}
-
-    {% include note.html content="If you do not supply the --s3a_bucket_name, there will be a prompt asking you to enter it." %}
+    {% include important.html content="--source_file should contain the file path inside the bucket and <strong><em>must</em></strong> be prefixed by <code>/s3a/default</code>. For example, to load from a file named “directory/file.csv”, the --source_file should be “/s3a/default/directory/file.csv”." %}
 
     This example imports the CSV file `teams.csv` into the table `teams` in the database `temp`:
 
@@ -117,7 +132,7 @@ To load data from an AWS S3 bucket, do the following:
 
     * AWS S3a bucket name
 
-    You only need to enter these, if you have no IAM role configured:
+    If you have no IAM role configured, you must enter the following information as well:
 
     * AWS S3a region
 
@@ -135,12 +150,12 @@ To load data from an AWS S3 bucket, do the following:
 
 ## Loading data from a GCP GCS bucket
 
-If you have data in .csv format stored in a GCS bucket, you can load it directly to ThoughtSpot.
+If you have data in `.csv` format stored in a GCS bucket, you can load it directly to ThoughtSpot.
 
 ### Assigning GCS read-only role to your GCP instance
 You can assign a read-only role to your ThoughtSpot GCP instance(s) so the instance(s) can access the GCS bucket from which you want to load the data. This eliminates the need to enter the GCP GCS credentials when loading your data. For details, refer to the storage setting detailed in the GCP [Create an instance]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html#create-an-instance) section.
 
-{% include note.html content="If you are using GCS for persistent storage, you already assigned the *Set access for each API* scope to your instance, and specified *Full* storage access, so you do not need to complete this step." %}
+If you are using GCS for persistent storage, you already assigned the **Set access for each API** scope to your instance and specified **Full** storage access, so you do ***not*** need to complete this step in order to load data with GCS.
 
 ### Create the database and table
 
@@ -169,45 +184,45 @@ You can assign a read-only role to your ThoughtSpot GCP instance(s) so the insta
     TQL> exit;
     ```
 
-To load data from an GCP GCS bucket, do the following:
+### Load data
 
-- Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
+Use the following syntax to invoke `tsload`, specifying the appropriate flags and your data source file:
 
-   ```
-   $ tsload --source_file /gs/default/team.csv
-           --target_database temp
-           --target_table teams
-           --bucket_name "my_gcs_bucket"
-           --has_header_row 2>/dev/null
+```
+$ tsload --source_file /gs/default/team.csv
+       --target_database temp
+       --target_table teams
+       --bucket_name "my_gcs_bucket"
+       --has_header_row 2>/dev/null
 
-   $ Header row read successfully
-     Source has 2 data rows, has header row, ignored row count 0
-     Waiting for rows to commit...(please wait)
-     Source summary
-     --------------
-     Data source:                 /gs/default/team.csv
-     Source data format           csv
-     Header row?                  yes
-     Tokenizer Options:           escape_char: "" field_separator: "," enclosing_char: "\"" null_value: "(null)" trailing_field_separator: false
-     Date format:                 %Y%m%d
-     Date time format:            %Y%m%d %H:%M:%S
-     Flexible mode?               no
-     Load summary
-     ------------
-     Target table:                teams
-     Should empty target?         no
-     Status:                      Successful
-     Rows total:                  2
-     Rows successfully loaded:    2
-     Rows failed to load:         0
-     % of Rows successfully loaded: 100.00 %
-     Load Rate (MB/s):             0.00 MB/s
-     Load Rate (Rows/s):           1.13 Rows/s
-     Start time (Wallclock):       Wed Oct 30 23:30:11
-     End time (Wallclock):         Wed Oct 30 23:30:13
-     Total load time = 1.78 seconds = 0.03 minutes = 0.00 hours
-     Data size = 19 bytes = 0.02 KB = 0.00 MB
-     ```
+$ Header row read successfully
+Source has 2 data rows, has header row, ignored row count 0
+Waiting for rows to commit...(please wait)
+Source summary
+--------------
+Data source:                 /gs/default/team.csv
+Source data format           csv
+Header row?                  yes
+Tokenizer Options:           escape_char: "" field_separator: "," enclosing_char: "\"" null_value: "(null)" trailing_field_separator: false
+Date format:                 %Y%m%d
+Date time format:            %Y%m%d %H:%M:%S
+Flexible mode?               no
+Load summary
+------------
+Target table:                teams
+Should empty target?         no
+Status:                      Successful
+Rows total:                  2
+Rows successfully loaded:    2
+Rows failed to load:         0
+% of Rows successfully loaded: 100.00 %
+Load Rate (MB/s):             0.00 MB/s
+Load Rate (Rows/s):           1.13 Rows/s
+Start time (Wallclock):       Wed Oct 30 23:30:11
+End time (Wallclock):         Wed Oct 30 23:30:13
+Total load time = 1.78 seconds = 0.03 minutes = 0.00 hours
+Data size = 19 bytes = 0.02 KB = 0.00 MB
+```
 
 ### Verify the table contents
 
@@ -228,6 +243,7 @@ To load data from an GCP GCS bucket, do the following:
    ```
    TQL> select * from teams;
    ```
+
    Table contents are displayed:
 
    ```
