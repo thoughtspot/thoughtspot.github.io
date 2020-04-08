@@ -1,6 +1,6 @@
 ---
 title: [Search Data API]
-last_updated: 01/28/2020
+last_updated: 4/8/2020
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -264,3 +264,5 @@ To test the search query API, follow these steps:
 - The API does not support **in-query formula** definitions. To use a formula, first create it on the worksheet or a table using the ThoughtSpot UI, and then use the named formula inside the API query.
 
 - Users must be **authenticated** and have **read access** to the data source.
+
+- Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. You can change your preferred locale in your browser settings.
