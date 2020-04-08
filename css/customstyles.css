@@ -814,6 +814,20 @@ li.activeSeries {
     color: #444;
 }
 
+.alert-access {
+    color: #234142;
+    background-color: #E4F7F8;
+    border-color: #85DCDF
+}
+
+.alert-access hr {
+    border-top-color: #A0E4E7
+}
+
+.alert-access .alert-link {
+    color: #3C6C6F
+}
+
 div.alert code, h2 code {
     background-color: transparent !important;
     color: #333 !important;
