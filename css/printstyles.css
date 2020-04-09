@@ -41,8 +41,7 @@ table.wide_table {
 
 
 a[href]::after {
-   /* " (page " target-counter(attr(href), page) ")" */
-   content: "";
+    content: " (page " target-counter(attr(href), page) ")"
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
@@ -52,13 +51,18 @@ a[href^="http:"]::after, a[href^="https:"]::after {
 a[href] {
     color: #373BB1 !important;
 }
+
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
 }
+
 a[href]::after {
         content: " [See page " target-counter(attr(href), page) "]"
 }
 
+a[href^="http:"]::after, a[href^="https:"]::after {
+    content: " (" attr(href) ")";
+}
 
 @page {
     margin: 60pt 90pt 60pt 90pt;
