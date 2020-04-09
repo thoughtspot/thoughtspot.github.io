@@ -1869,14 +1869,14 @@ entries:
         output: web,refGd
 
   - sectiontitle: ThoughtSpot in Practice
-    output: web,practGd
+    output: web,pdf
     sectionitems:
     - title: Introduction
       url: /reference/practice/intro.html
-      output: web,practGd
+      output: web,pdf
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
-      output: web,practGd
+      output: web,pdf
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
