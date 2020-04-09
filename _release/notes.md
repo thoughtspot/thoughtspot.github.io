@@ -38,7 +38,7 @@ For details, see:
 
 For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
 
-### Additional SQL commands for ODBC drivers
+### New SQL commands for ODBC and JDBC drivers
 
 For developers creating tools to connect to ThoughtSpot through the ODBC or JDBC driver, the following new commands are available:
 
