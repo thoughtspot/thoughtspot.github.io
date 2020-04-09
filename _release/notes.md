@@ -2,24 +2,19 @@
 title: ["5.1 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: Jun 2019
+last_updated: 04/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## What's in the Release Notes
+ThoughtSpot version 5.1.4 is now available. These release notes include information about new and enhanced features.
 
-ThoughtSpot version 5.1.4 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [5.1.4 Fixed Issues](#514-fixed)
-* [5.1.3 Fixed Issues](#513-fixed)
-* [5.1.2 Fixed Issues](#512-fixed)
+* [Supported Upgrade Paths](#supported-upgrade-paths)
+* [Mobile App](#mobile-app)
 * [5.1.1 New Features](#511-new)
-* [5.1.1 Fixed Issues](#511-fixed)
 * [5.1 New Features](#51-new)
-* [5.1 Fixed Issues](#51-fixed)
-* [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
@@ -42,97 +37,19 @@ Version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for clusters with 
 
 For more information, see [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
 
-{: id="514-fixed"}
-## 5.1.4 Fixed Issues
-
-An error that occurred when saving changes to the title of a visualization is now fixed.
-
-An issue where some worksheets became uneditable after an upgrade, due to corrupted metadata, is now fixed.
-
-A problem with date filters in the Japanese locale is now fixed.
-
-An issue with refreshing materialization of views is now fixed.
-
-{: id="513-fixed"}
-## 5.1.3 Fixed Issues
-
-Downloading an R visualization no longer causes an empty page to be displayed.
-
-A problem where tables in a Google Chrome tab become misaligned is now fixed.
-
-Custom scatter charts no longer disappear from pinboards after an upgrade.
-
-An issue where the Copy-and-edit button incorrectly appears on embedded visuals is now fixed.
-
-Occasional slow navigation between the Answer and Pinboard pages has been fixed.
-
-A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.
-
-A problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
-
-Usage-based indexing of search has been improved.
-
-A problem where the `tscli ssl rm-cert` command was used to remove a cert, but did not revert it back to the default cert is now fixed.
-
-When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.
-
-A problem where some users could not log in through SSO after an upgrade has been fixed.
-
-Fan-trap queries no longer have more grouping columns than necessary.
-
-An issue with worksheets showing incomplete compound-column joins has been fixed.
-
-A problem where the user interface becomes slow during a data load has been fixed.
-
-CSVs downloaded by certain row-level-security users are no longer empty.
-
-{: id="512-fixed"}
-## 5.1.2 Fixed Issues
-
-Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.
-
-Selecting 'Copy and Edit' in an answer, pinboard visualization, insight, SpotIQ pinboard or view, no longer causes the user to be signed out.
-
-HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.
-
-When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
-
-Permissions issues with `tsload` and `tql` are now fixed, so the **thoughtspot** user can load data.
-
-Database stability has been improved.
-
 {: id="511-new"}
 ## 5.1.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [5.1.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-1-1).
 
 ### Data visualization color refinements
 
 Visualization colors have been refined to match ThoughtSpot's fresh, new look. You can still customize colors, and reset them to the default color palette later, if needed.
 
-{: id="511-fixed"}
-## 5.1.1 Fixed Issues
-
-Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
-
-Filter panel failure to open during formula creation has been fixed.
-
-Custom R analysis failure when run from Custom Analyze has been fixed.
-
-Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.
-
-Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point.
-
-Microsoft Internet Explorer problem with saving the name of an answer has been fixed.
-
-Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.
-
-Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.
-
-Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.
-
-Zoom on Geo maps can now be done using a mouse scroll wheel.
-
 {: id="51-new"}
 ## 5.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [5.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-1).
 
 ### Quick Select
 
@@ -269,18 +186,3 @@ Beta mode [internationalization (I18N) keywords support]({{ site.baseurl}}/refer
 * Svenska
 * Norsk
 * Nederland
-
-{: id="51-fixed"}
-## 5.1 Fixed Issues
-
-The X and Y axes were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
-
-
-{: id="notes-for-older-versions"}
-## Notes from older versions
-
-* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
-* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
-* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
-* [4.2 Release Notes](/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf)
-* [3.5 Release Notes](/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf)
