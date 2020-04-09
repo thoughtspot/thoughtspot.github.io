@@ -1,28 +1,25 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: March 13, 2020
+last_updated: 04/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.4 is now available. These release notes include information about new features,
-fixed issues from previous releases, and any known issues.
+ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.
+
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html)
 
 * [6.0.4 New Features](#6-0-4-new)
-* [6.0.4 Fixed Issues](#6-0-4-fixed)
-* [6.0.3 Fixed Issues](#6-0-3-fixed)
 * [6.0.2 New Features](#6-0-2-new)
-* [6.0.2 Fixed Issues](#6-0-2-fixed)
-* [6.0.1 Fixed Issues](#6-0-1-fixed)
 * [6.0 New Features](#6-new)
-* [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
-* [Notes from Older Versions](#notes-for-older-versions)
 
 {: id="6-0-4-new"}
 ## 6.0.4 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [6.0.4 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-0-4).
 
 ### Red Hat Enterprise Linux (RHEL)
 
@@ -36,26 +33,10 @@ ThoughtSpot certifies RHEL 7.7 on the following platforms:
 RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
 For more information, see [RHEL Deployment Overview]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
-{: id="6-0-4-fixed"}
-## 6.0.4 Fixed Issues
-
-The following issues are fixed in the 6.0.4 release:
-
-- Under certain conditions, worksheet filters provide different answers than search filters.
-- Total amounts in a stacked bar chart do not account for negative amounts.
-- Management console displays incorrect information about SSL status.
-- Management console displays incorrect information about SMTP status.
-- Upgrading from release 5.2.3 to 6.0.3 causes HDFS to go into safe mode and cause missing data volumes.
-
-{: id="6-0-3-fixed"}
-## 6.0.3 Fixed Issues
-
-The following issue is fixed in the 6.0.3 release:
-
-- Dates shown in the ThoughtSpot UI may be offset by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.
-
 {: id="6-0-2-new"}
 ## 6.0.2 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [6.0.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-0-2).
 
 ### Embrace for Google BigQuery and Microsoft Azure Synapse
 
@@ -79,35 +60,10 @@ To programmatically use the data that we retrieve from a query, you can use Thou
 
 See [Search Data API]({{ site.baseurl }}/app-integrate/reference/search-data-api.html).
 
-{: id="6-0-2-fixed"}
-## 6.0.2 Fixed Issues
-
-The following issues are fixed in the 6.0.2 release:
-
-- Updating a formula causes a blank screen and corrupts a worksheet when it is saved.
-- Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.
-- After upgrade to release 5.3.2, users cannot sign in using SSO.
-- Disk alerts occur when drives are functioning normally.
-
-{: id="6-0-1-fixed"}
-## 6.0.1 Fixed Issues
-
-The following issues are fixed in the 6.0.1 release:
-
-- Search autocomplete occasionally displays an error when using a bulk filter.
-- In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using `versus`(example: `2019 vs 2018``net sales`).
-- Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.
-- A yellow bar sometimes appears during search, causing search not to work.
-- Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.
-- After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.
-- The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.
-- Common keywords, like `this year`, `date daily`,`last quarter`, and `week of year` do not reflect the settings of a custom calendar.
-- The title page of an exported PDF does not display the full date.
-- The `date` filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard `date` filter.
-- Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.
-
 {: id="6-new"}
 ## 6.0 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [6.0 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-0).
 
 ### Mobile
 You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
@@ -247,23 +203,11 @@ We improved the Expert feature by adding more email notifications, enriching ema
 * When a user creates a request, both that user and designated experts get an email notification. The **Open request** link in the expert's leads directly to ThoughtSpot, to review and manage the request.
 * When an expert resolves the request, both the expert and the user receive an email notification. The user can then follow the supplied link to navigate directly to the resolved answer.
 
-<!-- ### New group functions
-- [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
-- [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
-
 ### GeoMaps
 ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html) visualizations for these new locales:
 - <strong>Austria:</strong> State, District, and Postal
 - <strong>Italy:</strong> Region, Province/Territories, and Postal Code
 - <strong>Poland:</strong> Province/Territories, County, Postal Code
-
-{: id="6-fixed"}
-## 6.0 Fixed Issues
-
-The following issues are fixed in the 6.0 release:
-
-- The `tscli cluster download-release` command sometimes did not work correctly.
-- The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.
 
 {: id="beta-program"}
 ## Beta Programs
@@ -281,19 +225,9 @@ directly:
 * 5.3.x to 6.0.4
 * 5.2.x to 6.0.4
 
-(This includes any hotfixes or customer patches on these branches.)
+This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
-
-{: id="notes-for-older-versions"}
-## Notes for earlier releases
-
-* [5.3 Release Notes](/5.3/pdf/ThoughtSpot_Release_Notes_5.3.pdf)
-* [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
-* [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
-* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
-* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
-* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
