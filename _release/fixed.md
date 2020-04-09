@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
-<!-- <ul>
+<ul>
   <li><a href="#6-1">6.1 Fixed issues</a></li>
   <li>
    <details>
@@ -82,7 +82,7 @@ These are the issues we fixed in recent ThoughtSpot Releases.
         </li>
       </ul>
 
-<a id="6-1"></a> -->
+<a id="6-1"></a>
 ## 6.1 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 6.1.
