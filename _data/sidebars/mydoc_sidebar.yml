@@ -24,13 +24,13 @@ entries:
     sectionitems:
     - title: Release notes
       url: /release/notes.html
-      output: web
+      output: web,rnotes
     - title: Fixed issues
       url: /release/fixed.html
-      output: web
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
-      output: web
+      output: web,rnotes
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
@@ -1325,59 +1325,59 @@ entries:
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
 #  - sectiontitle: Dell Installation
-#    output: web,appQs,instDell
+#    output: web,appQs,pdf
 #    sectionitems:
 #    - title: Hardware appliance overview
 #      url: /appliance/hardware/inthebox.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Deploying on the Dell appliance
 #      url: /appliance/hardware/installing-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Prerequisites
 #      url: /appliance/hardware/prerequisites-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Hardware requirements
 #      url: /appliance/hardware/hardware-requirements-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Connect the appliance
 #      url: /appliance/hardware/connect-appliance-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Configure management settings
 #      url: /appliance/hardware/configure-management-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Configure nodes
 #      url: /appliance/hardware/configure-nodes-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Install cluster
 #      url: /appliance/hardware/install-cluster-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: The nodes.config file
 #      url: /appliance/hardware/nodesconfig-example.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Parameters of the nodes.config file
 #      url: /appliance/hardware/parameters-nodesconfig.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Using the cluster create command
 #      url: /appliance/hardware/cluster-create.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Contact ThoughtSpot support
 #      url: /appliance/contact.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Site survey
 #      url: /site-survey.pdf
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: tscli command reference
 #      url: /reference/tscli-command-ref.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 # -- end of PDF for Dell section
 # -- Uncomment out this section ONLY when generating a PDF for SMC
 #  - sectiontitle: SMC Installation
@@ -1470,7 +1470,7 @@ entries:
       levelTwoItems:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
-        output: web,appQs,instSMC,instDell
+        output: web,appQs,instSMC,pdf
       - levelThreeTitle: Deploying on the SMC appliance
         output: web,appQs,instSMC
         levelThreeItems:
@@ -1493,41 +1493,41 @@ entries:
           url: /appliance/hardware/smc-cluster-install.html
           output: web,appQs,instSMC
       - levelThreeTitle: Deploying on the Dell appliance
-        output: web,appQs,instDell
+        output: web,appQs,pdf
         levelThreeItems:
         - title: Deploying on the Dell appliance
           url: /appliance/hardware/installing-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Prerequisites
           url: /appliance/hardware/prerequisites-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Hardware requirements
           url: /appliance/hardware/hardware-requirements-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Connect the appliance
           url: /appliance/hardware/connect-appliance-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Configure management settings
           url: /appliance/hardware/configure-management-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Configure nodes
           url: /appliance/hardware/configure-nodes-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Install cluster
           url: /appliance/hardware/install-cluster-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the nodes.config file
         url: /appliance/hardware/parameters-nodesconfig.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Using the tscli cluster create command
         url: /appliance/hardware/cluster create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the tscli cluster create command
         url: /appliance/hardware/parameters-cluster-create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
@@ -1848,7 +1848,7 @@ entries:
       levelTwoItems:
       - title: Cable reference
         url: /appliance/hardware/cable-networking.html
-        output: web,appQs,instDell,instSMC
+        output: web,appQs,pdf,instSMC
       - title: Network Policies
         url: /appliance/firewall-ports.html
         output: web,refGd
