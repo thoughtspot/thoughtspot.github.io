@@ -20,14 +20,14 @@ entries:
       type: frontmatter
 # end PDF output defs
   - sectiontitle: About this Release
-    output: web,pdf
+    output: web
     sectionitems:
     - title: Release notes
       url: /release/notes.html
       output: web,pdf
     - title: Fixed issues
       url: /release/fixed.html
-      output: web,pdf  
+      output: web 
     - title: Downloads
       url: /release/downloads.html
       output: web
