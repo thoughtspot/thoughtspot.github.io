@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot version 6.1 is now available. These release notes include information about new and enhanced features.
 
-For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html)
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
 * [6.1 New Features](#6-1-new)
 * [Early Access Programs](#early-access)
