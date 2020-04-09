@@ -34,9 +34,6 @@ permalink: /:collection/:path.html
 </div>
 
 <div>
-  <div class="linksChild">
-    &nbsp;
-  </div>
    <div class="linksChild">
      <a class="helpLink" href="videos-list.html">
      <img class="helpImg" alt="more_videos.png" src="{{ "/images/more_videos.png" | prepend: site.baseurl }}"></a>
@@ -54,6 +51,12 @@ permalink: /:collection/:path.html
      <img class="helpImg" alt="releasenotes.png" src="{{ "/images/releasenotes.png" | prepend: site.baseurl }}"></a>
      <br>
      <a class="linktext link-https" title="Release Notes" href="notes.html">Release notes</a>
+   </div>
+   <div class="linksChild">
+     <a class="helpLink" class="link-https" title="Fixed Issues" href="/release/fixed.html">
+     <img class="helpImg" alt="fixedissues.png" src="{{ "/images/fixedissues.png" | prepend: site.baseurl }}"></a>
+     <br>
+     <a class="linktext link-https" title="Fixed Issues" href="fixed.html">Fixed issues</a>
    </div>
    <div class="linksChild">
    <a class="helpLink"  href="/release/downloads.html">
