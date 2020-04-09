@@ -1,27 +1,20 @@
 ---
 title: ["5.3 Release Notes"]
 toc: false
-last_updated: July 2019
+last_updated: 04/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## What's in the Release Notes
+ThoughtSpot version 5.3.2 CU3 is now available.
+These are the new and enhanced features in this release.
 
-ThoughtSpot version 5.3.2 CU3 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
 * [Supported Upgrade Paths](#upgrade-paths)
-* [5.3.2 CU3 Fixed Issues](#532-cu3-fixed)
-* [5.3.2 CU2 Fixed Issues](#532-cu2-fixed)
-* [5.3.2 CU1 Fixed Issues](#532-cu1-fixed)
-* [5.3.2 Fixed Issues](#532-fixed)
 * [5.3.1 New Features](#531-new)
-* [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
-* [5.3 Fixed Issues](#53-fixed)
 * [Beta Programs](#beta-program)
-* [Notes from Older Versions](#notes-for-older-versions)
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
@@ -33,55 +26,17 @@ directly:
 * 5.2.x to 5.3.2 CU3
 * 5.1.x to 5.3.2 CU3
 
-(This includes any hotfixes or customer patches on these branches.)
+This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 CU3 release.
 
-{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
-
-{: id="532-cu3-fixed"}
-## 5.3.2 CU3 Fixed Issues
-
-The following issues are fixed in the 5.3.2 CU3 release:
-
-- Exported PDF, CSV, and XLSX files display caption tags.
-- Administrators are not able to edit a worksheet.
-- A legend in a chart is not displayed correctly when the _monthly_ attribute is used in a search.
-- After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.
-- Users cannot sign in to a ThoughtSpot instance through SSO.
-- Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.
-
-{: id="532-cu2-fixed"}
-## 5.3.2 CU2 Fixed Issues
-
-The following issues are fixed in the 5.3.2 CU2 release:
-
-- Visualizations that worked in the past, display an error message.
-
-{: id="532-cu1-fixed"}
-## 5.3.2 CU1 Fixed Issues
-
-The following issues are fixed in the 5.3.2 CU1 release:
-
-- Rows that don't exist in TQL appear when filtering in the ThoughtSpot UI.
-
-{: id="532-fixed"}
-## 5.3.2 Fixed Issues
-
-The following issues are fixed in the 5.3.2 release:
-
-- Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.
-- Pop-up messages sometimes cover the entire width of the screen.
-- _Share_, _Copy a link_, and _Send feedback_ cannot be disabled when ThoughtSpot is embedded.
-- An error in the date range occurs when drilling down in a custom calendar.
-- When the network check fails during a self-service upgrade, it retries indefinitely.
-- If formulas have a less-than sign (<) followed by text, the text following the less-than sign does not display in a table.
-- Removing a column from a search query increases the number of rows displayed.
-- A search that uses the `group_max` function displays an incorrect result when filtering is applied.
+{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade blocks." %}
 
 {: id="531-new"}
 ## 5.3.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [5.3.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3-1).
 
 ### Onboarding
 In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group) and
@@ -94,34 +49,16 @@ In Release 5.3.1, you can connect to multiple Snowflake databases, and get faste
 ### Pinboard export in PDF format has branding, and more
 We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
 
-<!-- ### New group functions
-- [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
-- [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
-
 ### Streamlined AWS data loading from an S3 bucket
 You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
 
 ### Updated password requirements
 This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z,  special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long.
 
-{: id="531-fixed"}
-## 5.3.1 Fixed Issues
-
-The following issues are fixed in the 5.3.1 release:
-
-- Using a custom calendar, and doing a query that filters on a date field causes a database error.
-- Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.
-- When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.
-- Opening certain pinboards can cause the Google Chrome browser to freeze.
-- Columns renamed in a worksheet revert back to their original names later.
-- Columns cannot be deleted from a worksheet.
-- Using a custom calendar and filtering date values by year, month or quarter does not work.
-- Canadian postal codes do not appear on maps.
-- The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
-- Certain HTTP security headers are not implemented.
-
 {: id="53-new"}
 ## 5.3 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [5.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3).
 
 ### Onboarding
 In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
@@ -210,44 +147,6 @@ Starting with this release, ThoughtSpot supports geo maps for these countries an
 As of this release, ThoughtSpot no longer supports Solaris installations.  
 We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
 
-{: id="53-fixed"}
-## 5.3 Fixed Issues
-
-### Display and Rendering
-
-- A problem where dates do not display properly in the query details pane of an answer is now fixed.  
-- An issue where the color coding of columns is not displayed in a PDF downloaded from a worksheet is fixed.  
-- A problem where using **Copy and edit** in a saved answer causes the screen to go blank has been fixed.  
-- An issue where axis labels are missing from some visualizations is now fixed.  
-- A problem where URLs that appear within an Answer are red, instead of blue, is now fixed.  
-- An issue where an answer that has no measures causes it to display blank is now fixed.  
-- A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.
-
-### Pinboards
-
-- A problem where the column tooltip in a pinboard does not show last updated information has been fixed.  
-- An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.  
-- A problem when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.  
-- An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.  
-- A problem where a stacked bar chart does not work in a pinboard is now fixed.  
-- An issue where an exclude filter does not work properly on a pinboard is now fixed.  
-- A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.  
-- An issue where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.
-
-### Search
-
-- A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.  
-- An issue where searches on a pinboard don’t include cached queries has been fixed.  
-
-### Administration
-
-- An issue where running the `tscli cluster` command causes a failed security check is now fixed.   
-- A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.<br>
-
-### Answers
-
-- A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
-
 {: id="beta-program"}
 ## Beta Programs
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
@@ -255,14 +154,3 @@ We like to have a diversity of experience and perspective, and want to hear from
 These features are currently in Beta. Please contact us if you are interested in participating:
 - Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
 - Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
-
-{: id="notes-for-older-versions"}
-## Notes from Older Versions
-
-* [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
-* [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
-* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
-* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
-* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
-* [4.2 Release Notes](/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf)
-* [3.5 Release Notes](/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf)
