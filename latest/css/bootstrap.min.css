@@ -5920,6 +5920,20 @@ a.thumbnail:hover {
     color: #843534
 }
 
+.alert-access {
+    color: #6CC2C6;
+    background-color: #E4F7F8;
+    border-color: #E4F7F8
+}
+
+.alert-access hr {
+    border-top-color: #A0E4E7
+}
+
+.alert-access .alert-link {
+    color: #3C6C6F
+}
+
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 40px 0
