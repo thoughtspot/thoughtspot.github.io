@@ -1,0 +1,1 @@
+Sitemap: https://docs.thoughtspot.com/6.1/sitemap.xml
