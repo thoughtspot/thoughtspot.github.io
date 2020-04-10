@@ -44,7 +44,7 @@ possible. If you want to do this, here are the steps at a high level:
 
 ## Best practices for using views
 
-{% include access.html content="Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them." %}
+{% include access.html content="Only users with the **Can administrator ThoughtSpot** or the **Can manage data** privilege can create views and link them." %}
 
 {% include important.html content="Views do not support row level security (RLS), so all users of a view will be able to see all the data it contains." %}
 
