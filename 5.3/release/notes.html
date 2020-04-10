@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“5.3 Release Notes”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="What’s in the Release Notes" />
-<meta property="og:description" content="What’s in the Release Notes" />
+<meta name="description" content="ThoughtSpot version 5.3.2 CU3 is now available. These are the new and enhanced features in this release." />
+<meta property="og:description" content="ThoughtSpot version 5.3.2 CU3 is now available. These are the new and enhanced features in this release." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/release/notes.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/release/notes.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-30T16:30:42-07:00" />
+<meta property="article:published_time" content="2020-04-10T16:00:01-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/release/notes.html"},"url":"https://docs.thoughtspot.com/5.3/release/notes.html","headline":"[“5.3 Release Notes”]","dateModified":"2020-03-30T16:30:42-07:00","datePublished":"2020-03-30T16:30:42-07:00","description":"What’s in the Release Notes","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/release/notes.html"},"url":"https://docs.thoughtspot.com/5.3/release/notes.html","headline":"[“5.3 Release Notes”]","dateModified":"2020-04-10T16:00:01-07:00","datePublished":"2020-04-10T16:00:01-07:00","description":"ThoughtSpot version 5.3.2 CU3 is now available. These are the new and enhanced features in this release.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -225,7 +225,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
             </button>
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/5.3/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -253,7 +253,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                         <li><a href="/6.1/index.html">latest</a></li><li><a href="/6.0/index.html">6.0</a></li>
+                          <li><a href="/6.0/index.html">latest (6.0)</a></li>
                         
                         
                         
@@ -371,6 +371,12 @@ var ss360Config = {
               
                 
                   <li class="active"><a href="/5.3/release/notes.html">Release notes</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/5.3/release/fixed.html">Fixed issues</a></li>
                 
               
             
@@ -3264,30 +3270,23 @@ var ss360Config = {
   Estimated reading time:
   
   
-    11 minutes
+    6 minutes
   
 </span>
  -->
 
     
 
-  <h2 id="whats-in-the-release-notes">What’s in the Release Notes</h2>
+  <p>ThoughtSpot version 5.3.2 CU3 is now available.
+These are the new and enhanced features in this release.</p>
 
-<p>ThoughtSpot version 5.3.2 CU3 is now available. These release notes include information about new features,
-fixed issues from the previous releases, and any known issues.</p>
+<p>For a complete list of issues that we fixed in this release, see <a href="/5.3/release/fixed.html">Fixed issues</a>.</p>
 
 <ul>
   <li><a href="#upgrade-paths">Supported Upgrade Paths</a></li>
-  <li><a href="#532-cu3-fixed">5.3.2 CU3 Fixed Issues</a></li>
-  <li><a href="#532-cu2-fixed">5.3.2 CU2 Fixed Issues</a></li>
-  <li><a href="#532-cu1-fixed">5.3.2 CU1 Fixed Issues</a></li>
-  <li><a href="#532-fixed">5.3.2 Fixed Issues</a></li>
   <li><a href="#531-new">5.3.1 New Features</a></li>
-  <li><a href="#531-fixed">5.3.1 Fixed Issues</a></li>
   <li><a href="#53-new">5.3 New Features</a></li>
-  <li><a href="#53-fixed">5.3 Fixed Issues</a></li>
   <li><a href="#beta-program">Beta Programs</a></li>
-  <li><a href="#notes-for-older-versions">Notes from Older Versions</a></li>
 </ul>
 
 <h2 id="upgrade-paths">Supported Upgrade Paths</h2>
@@ -3301,58 +3300,16 @@ directly:</p>
   <li>5.1.x to 5.3.2 CU3</li>
 </ul>
 
-<p>(This includes any hotfixes or customer patches on these branches.)</p>
+<p>This includes any hotfixes or customer patches on these branches.</p>
 
 <p>If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 CU3 release.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked.</div>
-
-<h2 id="532-cu3-fixed">5.3.2 CU3 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 5.3.2 CU3 release:</p>
-
-<ul>
-  <li>Exported PDF, CSV, and XLSX files display caption tags.</li>
-  <li>Administrators are not able to edit a worksheet.</li>
-  <li>A legend in a chart is not displayed correctly when the <em>monthly</em> attribute is used in a search.</li>
-  <li>After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.</li>
-  <li>Users cannot sign in to a ThoughtSpot instance through SSO.</li>
-  <li>Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.</li>
-</ul>
-
-<h2 id="532-cu2-fixed">5.3.2 CU2 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 5.3.2 CU2 release:</p>
-
-<ul>
-  <li>Visualizations that worked in the past, display an error message.</li>
-</ul>
-
-<h2 id="532-cu1-fixed">5.3.2 CU1 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 5.3.2 CU1 release:</p>
-
-<ul>
-  <li>Rows that don’t exist in TQL appear when filtering in the ThoughtSpot UI.</li>
-</ul>
-
-<h2 id="532-fixed">5.3.2 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 5.3.2 release:</p>
-
-<ul>
-  <li>Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.</li>
-  <li>Pop-up messages sometimes cover the entire width of the screen.</li>
-  <li><em>Share</em>, <em>Copy a link</em>, and <em>Send feedback</em> cannot be disabled when ThoughtSpot is embedded.</li>
-  <li>An error in the date range occurs when drilling down in a custom calendar.</li>
-  <li>When the network check fails during a self-service upgrade, it retries indefinitely.</li>
-  <li>If formulas have a less-than sign (&lt;) followed by text, the text following the less-than sign does not display in a table.</li>
-  <li>Removing a column from a search query increases the number of rows displayed.</li>
-  <li>A search that uses the <code class="highlighter-rouge">group_max</code> function displays an incorrect result when filtering is applied.</li>
-</ul>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade blocks.</div>
 
 <h2 id="531-new">5.3.1 New Features and Functionality</h2>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/5.3/release/fixed.html#5-3-1">5.3.1 Fixed issues</a>.</p>
 
 <h3 id="onboarding">Onboarding</h3>
 <p>In this release, administrators can configure ‘Welcome’ emails to send to both new and existing users, and to existing groups. See <a href="/5.3/admin/users-groups/add-group.html#edit-group">Edit a group</a> and
@@ -3365,34 +3322,15 @@ In Release 5.3.1, you can connect to multiple Snowflake databases, and get faste
 <h3 id="pinboard-export-in-pdf-format-has-branding-and-more">Pinboard export in PDF format has branding, and more</h3>
 <p>We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the <em>Visualizations</em> mode, you can de-select some of the visuals. See <a href="/5.3/end-user/pinboards/download-pinboard-pdf.html">Download a Pinboard as PDF</a>.</p>
 
-<!-- ### New group functions
-- [median function](/5.3/reference/formula-reference.html#median)
-- [nth_percentile function](/5.3/reference/formula-reference.html#nth_percentile) -->
-
 <h3 id="streamlined-aws-data-loading-from-an-s3-bucket">Streamlined AWS data loading from an S3 bucket</h3>
 <p>You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see <a href="/5.3/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket">Loading data from an AWS S3 bucket</a></p>
 
 <h3 id="updated-password-requirements">Updated password requirements</h3>
 <p>This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z,  special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long.</p>
 
-<h2 id="531-fixed">5.3.1 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 5.3.1 release:</p>
-
-<ul>
-  <li>Using a custom calendar, and doing a query that filters on a date field causes a database error.</li>
-  <li>Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.</li>
-  <li>When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.</li>
-  <li>Opening certain pinboards can cause the Google Chrome browser to freeze.</li>
-  <li>Columns renamed in a worksheet revert back to their original names later.</li>
-  <li>Columns cannot be deleted from a worksheet.</li>
-  <li>Using a custom calendar and filtering date values by year, month or quarter does not work.</li>
-  <li>Canadian postal codes do not appear on maps.</li>
-  <li>The Admin &gt; Style Customization page indicates the wrong pixel dimensions required for a wide application logo.</li>
-  <li>Certain HTTP security headers are not implemented.</li>
-</ul>
-
 <h2 id="53-new">5.3 New Features and Functionality</h2>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/5.3/release/fixed.html#5-3">5.3 Fixed issues</a>.</p>
 
 <h3 id="onboarding-1">Onboarding</h3>
 <p>In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.</p>
@@ -3489,53 +3427,6 @@ In Release 5.3.1, you can connect to multiple Snowflake databases, and get faste
 <p>As of this release, ThoughtSpot no longer supports Solaris installations.<br />
 We also updated our drivers; see <a href="/5.3/release/downloads.html">Downloads</a>.</p>
 
-<h2 id="53-fixed">5.3 Fixed Issues</h2>
-
-<h3 id="display-and-rendering">Display and Rendering</h3>
-
-<ul>
-  <li>A problem where dates do not display properly in the query details pane of an answer is now fixed.</li>
-  <li>An issue where the color coding of columns is not displayed in a PDF downloaded from a worksheet is fixed.</li>
-  <li>A problem where using <strong>Copy and edit</strong> in a saved answer causes the screen to go blank has been fixed.</li>
-  <li>An issue where axis labels are missing from some visualizations is now fixed.</li>
-  <li>A problem where URLs that appear within an Answer are red, instead of blue, is now fixed.</li>
-  <li>An issue where an answer that has no measures causes it to display blank is now fixed.</li>
-  <li>A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.</li>
-</ul>
-
-<h3 id="pinboards">Pinboards</h3>
-
-<ul>
-  <li>A problem where the column tooltip in a pinboard does not show last updated information has been fixed.</li>
-  <li>An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.</li>
-  <li>A problem when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.</li>
-  <li>An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.</li>
-  <li>A problem where a stacked bar chart does not work in a pinboard is now fixed.</li>
-  <li>An issue where an exclude filter does not work properly on a pinboard is now fixed.</li>
-  <li>A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.</li>
-  <li>An issue where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.</li>
-</ul>
-
-<h3 id="search">Search</h3>
-
-<ul>
-  <li>A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.</li>
-  <li>An issue where searches on a pinboard don’t include cached queries has been fixed.</li>
-</ul>
-
-<h3 id="administration">Administration</h3>
-
-<ul>
-  <li>An issue where running the <code class="highlighter-rouge">tscli cluster</code> command causes a failed security check is now fixed.</li>
-  <li>A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.<br /></li>
-</ul>
-
-<h3 id="answers">Answers</h3>
-
-<ul>
-  <li>A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.</li>
-</ul>
-
 <h2 id="beta-program">Beta Programs</h2>
 <p>If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators…
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
@@ -3543,18 +3434,6 @@ These features are currently in Beta. Please contact us if you are interested in
 <ul>
   <li>Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.</li>
   <li>Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.</li>
-</ul>
-
-<h2 id="notes-for-older-versions">Notes from Older Versions</h2>
-
-<ul>
-  <li><a href="/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf">5.2 Release Notes</a></li>
-  <li><a href="/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf">5.1 Release Notes</a></li>
-  <li><a href="/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf">5.0 Release Notes</a></li>
-  <li><a href="/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf">4.5 Release Notes</a></li>
-  <li><a href="/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf">4.4 Release Notes</a></li>
-  <li><a href="/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf">4.2 Release Notes</a></li>
-  <li><a href="/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf">3.5 Release Notes</a></li>
 </ul>
 
   <div class="tags">
@@ -3581,9 +3460,9 @@ These features are currently in Beta. Please contact us if you are interested in
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> July 2019<br/>  -->
+         <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

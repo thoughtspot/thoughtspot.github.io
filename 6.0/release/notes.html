@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“6.0 Release Notes”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues." />
-<meta property="og:description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues." />
+<meta name="description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features." />
+<meta property="og:description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/release/notes.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/release/notes.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-03T18:06:50-07:00" />
+<meta property="article:published_time" content="2020-04-10T16:03:42-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“6.0 Release Notes”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“6.0 Release Notes”]","dateModified":"2020-04-03T18:06:50-07:00","url":"https://docs.thoughtspot.com/6.0/release/notes.html","datePublished":"2020-04-03T18:06:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/release/notes.html"},"description":"ThoughtSpot version 6.0.4 is now available. These release notes include information about new features, fixed issues from previous releases, and any known issues.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“6.0 Release Notes”]","dateModified":"2020-04-10T16:03:42-07:00","url":"https://docs.thoughtspot.com/6.0/release/notes.html","datePublished":"2020-04-10T16:03:42-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/release/notes.html"},"description":"ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -226,7 +226,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
             </button>
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/6.0/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -254,7 +254,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.1/index.html">latest</a></li><li><a href="/6.0/index.html">6.0</a></li>
+                          <li><a href="/6.0/index.html">latest</a></li>
                         
                         
                         
@@ -372,6 +372,12 @@ var ss360Config = {
               
                 
                   <li class="active"><a href="/6.0/release/notes.html">Release notes</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/6.0/release/fixed.html">Fixed issues</a></li>
                 
               
             
@@ -3708,31 +3714,28 @@ var ss360Config = {
   Estimated reading time:
   
   
-    12 minutes
+    9 minutes
   
 </span>
  -->
 
     
 
-  <p>ThoughtSpot version 6.0.4 is now available. These release notes include information about new features,
-fixed issues from previous releases, and any known issues.</p>
+  <p>ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.</p>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html">Fixed issues</a></p>
 
 <ul>
   <li><a href="#6-0-4-new">6.0.4 New Features</a></li>
-  <li><a href="#6-0-4-fixed">6.0.4 Fixed Issues</a></li>
-  <li><a href="#6-0-3-fixed">6.0.3 Fixed Issues</a></li>
   <li><a href="#6-0-2-new">6.0.2 New Features</a></li>
-  <li><a href="#6-0-2-fixed">6.0.2 Fixed Issues</a></li>
-  <li><a href="#6-0-1-fixed">6.0.1 Fixed Issues</a></li>
   <li><a href="#6-new">6.0 New Features</a></li>
-  <li><a href="#6-fixed">6.0 Fixed Issues</a></li>
   <li><a href="#beta-program">Beta Programs</a></li>
   <li><a href="#upgrade-paths">Supported Upgrade Paths</a></li>
-  <li><a href="#notes-for-older-versions">Notes from Older Versions</a></li>
 </ul>
 
 <h2 id="6-0-4-new">6.0.4 New Features and Functionality</h2>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html#6-0-4">6.0.4 Fixed issues</a>.</p>
 
 <h3 id="red-hat-enterprise-linux-rhel">Red Hat Enterprise Linux (RHEL)</h3>
 
@@ -3748,27 +3751,9 @@ ThoughtSpot certifies RHEL 7.7 on the following platforms:</p>
 <p>RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>.
 For more information, see <a href="/6.0/appliance/rhel/rhel.html">RHEL Deployment Overview</a>.</p>
 
-<h2 id="6-0-4-fixed">6.0.4 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 6.0.4 release:</p>
-
-<ul>
-  <li>Under certain conditions, worksheet filters provide different answers than search filters.</li>
-  <li>Total amounts in a stacked bar chart do not account for negative amounts.</li>
-  <li>Management console displays incorrect information about SSL status.</li>
-  <li>Management console displays incorrect information about SMTP status.</li>
-  <li>Upgrading from release 5.2.3 to 6.0.3 causes HDFS to go into safe mode and cause missing data volumes.</li>
-</ul>
-
-<h2 id="6-0-3-fixed">6.0.3 Fixed Issues</h2>
-
-<p>The following issue is fixed in the 6.0.3 release:</p>
-
-<ul>
-  <li>Dates shown in the ThoughtSpot UI may be offset by one day in version 80 or later of the Google Chrome browser. Actual search results are not affected by this issue.</li>
-</ul>
-
 <h2 id="6-0-2-new">6.0.2 New Features and Functionality</h2>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html#6-0-2">6.0.2 Fixed issues</a>.</p>
 
 <h3 id="embrace-for-google-bigquery-and-microsoft-azure-synapse">Embrace for Google BigQuery and Microsoft Azure Synapse</h3>
 
@@ -3798,36 +3783,9 @@ For more information, see <a href="/6.0/appliance/rhel/rhel.html">RHEL Deploymen
 
 <p>See <a href="/6.0/app-integrate/reference/search-data-api.html">Search Data API</a>.</p>
 
-<h2 id="6-0-2-fixed">6.0.2 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 6.0.2 release:</p>
-
-<ul>
-  <li>Updating a formula causes a blank screen and corrupts a worksheet when it is saved.</li>
-  <li>Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.</li>
-  <li>After upgrade to release 5.3.2, users cannot sign in using SSO.</li>
-  <li>Disk alerts occur when drives are functioning normally.</li>
-</ul>
-
-<h2 id="6-0-1-fixed">6.0.1 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 6.0.1 release:</p>
-
-<ul>
-  <li>Search autocomplete occasionally displays an error when using a bulk filter.</li>
-  <li>In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using <code class="language-plaintext highlighter-rouge">versus</code>(example: <code class="language-plaintext highlighter-rouge">2019 vs 2018</code><code class="language-plaintext highlighter-rouge">net sales</code>).</li>
-  <li>Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.</li>
-  <li>A yellow bar sometimes appears during search, causing search not to work.</li>
-  <li>Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.</li>
-  <li>After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.</li>
-  <li>The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.</li>
-  <li>Common keywords, like <code class="language-plaintext highlighter-rouge">this year</code>, <code class="language-plaintext highlighter-rouge">date daily</code>,<code class="language-plaintext highlighter-rouge">last quarter</code>, and <code class="language-plaintext highlighter-rouge">week of year</code> do not reflect the settings of a custom calendar.</li>
-  <li>The title page of an exported PDF does not display the full date.</li>
-  <li>The <code class="language-plaintext highlighter-rouge">date</code> filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard <code class="language-plaintext highlighter-rouge">date</code> filter.</li>
-  <li>Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.</li>
-</ul>
-
 <h2 id="6-new">6.0 New Features and Functionality</h2>
+
+<p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html#6-0">6.0 Fixed issues</a>.</p>
 
 <h3 id="mobile">Mobile</h3>
 <p>You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.</p>
@@ -3995,25 +3953,12 @@ For more information, see <a href="/6.0/appliance/rhel/rhel.html">RHEL Deploymen
   <li>When an expert resolves the request, both the expert and the user receive an email notification. The user can then follow the supplied link to navigate directly to the resolved answer.</li>
 </ul>
 
-<!-- ### New group functions
-- [median function](/6.0/reference/formula-reference.html#median)
-- [nth_percentile function](/6.0/reference/formula-reference.html#nth_percentile) -->
-
 <h3 id="geomaps">GeoMaps</h3>
 <p>ThoughtSpot now supports <a href="/6.0/reference/geomap-reference.html">GeoMap</a> visualizations for these new locales:</p>
 <ul>
   <li><strong>Austria:</strong> State, District, and Postal</li>
   <li><strong>Italy:</strong> Region, Province/Territories, and Postal Code</li>
   <li><strong>Poland:</strong> Province/Territories, County, Postal Code</li>
-</ul>
-
-<h2 id="6-fixed">6.0 Fixed Issues</h2>
-
-<p>The following issues are fixed in the 6.0 release:</p>
-
-<ul>
-  <li>The <code class="language-plaintext highlighter-rouge">tscli cluster download-release</code> command sometimes did not work correctly.</li>
-  <li>The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.</li>
 </ul>
 
 <h2 id="beta-program">Beta Programs</h2>
@@ -4032,23 +3977,13 @@ directly:</p>
   <li>5.2.x to 6.0.4</li>
 </ul>
 
-<p>(This includes any hotfixes or customer patches on these branches.)</p>
+<p>This includes any hotfixes or customer patches on these branches.</p>
 
 <p>If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked.</div>
 
-<h2 id="notes-for-older-versions">Notes for earlier releases</h2>
-
-<ul>
-  <li><a href="/5.3/pdf/ThoughtSpot_Release_Notes_5.3.pdf">5.3 Release Notes</a></li>
-  <li><a href="/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf">5.2 Release Notes</a></li>
-  <li><a href="/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf">5.1 Release Notes</a></li>
-  <li><a href="/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf">5.0 Release Notes</a></li>
-  <li><a href="/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf">4.5 Release Notes</a></li>
-  <li><a href="/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf">4.4 Release Notes</a></li>
-</ul>
 
   <div class="tags">
     <div style="float:right;">
@@ -4075,9 +4010,9 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Apr 3, 2020 <br />
+        Generated: Apr 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> March 13, 2020<br/>  -->
+         <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
