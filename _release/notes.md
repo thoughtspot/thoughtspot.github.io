@@ -79,7 +79,7 @@ If you are running one of the following versions, you can upgrade to the 6.1 rel
 directly:
 
 * 5.3.x to 6.1
-* 5.2.x to 6.1
+* 6.0.x to 6.1
 
 This includes any hotfixes or customer patches on these branches.
 
