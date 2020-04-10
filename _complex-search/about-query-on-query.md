@@ -1,21 +1,16 @@
 ---
-title: [Understand views]
-
-
-last_updated: 11/2/2018
-summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
+title: [Understanding views]
+last_updated: 04/10/2020
+summary: "If you want to perform a search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ## Introduction to views
 
-{% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as Aggregated Worksheets. When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
-
 You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one
 column by one other column. Because of this, you may come across searches you
 can't do in one pass, because they are essentially nested queries. But you can
-create the equivalent of nested queries using a view, which is
-an answer that you have saved for the purpose of building other searches on top of it.
+create the equivalent of nested queries using a view, which is an answer that you have saved for the purpose of building other searches on top of it.
 
 You can use a view just like any other data source. You
 can even link it to other sources by defining a relationship. When you save an
@@ -49,27 +44,21 @@ possible. If you want to do this, here are the steps at a high level:
 
 ## Best practices for using views
 
-Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
-worksheet size.
+{% include access.html content="Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them." %}
 
-{% include note.html content="Views do not support row level security, so all users of a view will be able to see all the data it contains." %}
+{% include important.html content="Views do not support row level security (RLS), so all users of a view will be able to see all the data it contains." %}
 
-To be able to join a view with a base table, your installation
-must be configured to allow this. The view cannot have
-more than 5 tables involved, and the number of rows in the
-view cannot be greater than 1000.
+- When creating views, keep in mind the sizing recommendations for worksheets, for the final worksheet that you plan to use in modeling you data.
 
-The order of the objects being linked (joined) matters, this is because joins are
-directional. The table or view with the foreign key needs to occur
-in the first (left) position. The table or view with the primary key should be in the
-second (right) position.
+- To be able to join a view with a base table, your installation must be configured to allow this. The view cannot have more than 5 tables, and the number of rows in the view cannot exceed 10 million rows.
 
-For the best performance, views should have 50 or fewer
-columns and no more than 10 million rows. Exceeding these boundaries can make
-your view slow. You can remedy this by materializing it.
+- The order of the objects being linked (joined) matters, because joins are directional. The table or view with the foreign key must be in the the first (left) position. The table or view with the primary key must be in the second (right) position.
 
-You can use an ETL (extract, transform, load) process to circumvent these
-limitations.
+- For best performance, views should have 50 or fewer columns, and no more than 10 million rows. Exceeding these boundaries may make queries against this view run slow.
+
+- To improve performance, you can materialize the views.
+
+- You can use an ETL (extract, transform, load) processes to circumvent these limitations.
 
 ## Related Information
 
