@@ -64,6 +64,10 @@ a[href^="http:"]::after, a[href^="https:"]::after,  {
     content: " (" attr(href) ")";
 }
 
+a[href^="http:"]::after, a[href^="https:"]::after {
+    content: " (" attr(href) ")";
+}
+
 @page {
     margin: 60pt 90pt 60pt 90pt;
     font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
