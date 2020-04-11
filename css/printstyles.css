@@ -44,7 +44,7 @@ a[href]::after {
     content: " (page " target-counter(attr(href), page) ")"
 }
 
-a[href^="http:"]::after, a[href^="https:"]::after {
+a[href^="http:"]::after, a[href^="https:"]::after, a[href^="https:"].noCrossRef::after {
     content: "";
 }
 
@@ -60,7 +60,7 @@ a[href]::after {
         content: " [See page " target-counter(attr(href), page) "]"
 }
 
-a[href^="http:"]::after, a[href^="https:"]::after {
+a[href^="http:"]::after, a[href^="https:"]::after,  {
     content: " (" attr(href) ")";
 }
 
