@@ -50,7 +50,11 @@ For developers creating tools to connect to ThoughtSpot through the ODBC or JDBC
 - `SHOW`
 - `TRUNCATE`
 
-For details, see: [Supported SQL commands]({{ site.baseurl }}/data-integrate/reference/odbc-commands.html)
+For details, see: [Supported SQL commands]({{ site.baseurl }}/data-integrate/reference/odbc-commands.html).
+
+### Upgrade to Python 3
+
+Starting with this release, ThoughtSpot uses Python 3 packages. For example, to invoke the `syncUsersAndGroups.py` script the script, you must now use the `python3` command; see [Sync users and groups from LDAP]({{ site.baseurl }}/admin/setup/sync-users-and-groups-from-ldap.html).
 
 {: id="early-access"}
 ## Early Access Programs

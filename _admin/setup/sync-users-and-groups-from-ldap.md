@@ -1,8 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-
-
-last_updated: tbd
+last_updated: 04/11/2020
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -23,7 +21,10 @@ Before synchronizing users and groups, you need this information:
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
--   Location of the Python synchronization script, in case you want to modify it or create your own: `/usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py`
+-   Location of the Python synchronization script, in case you want to modify it or create your own, is here:
+  ```
+  /usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py
+    ````
 
 There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
@@ -37,7 +38,7 @@ To run the LDAP sync script in interactive mode:
 2. Run the command to start the script:
 
     ```
-    python syncUsersAndGroups.py interactive
+    python3 syncUsersAndGroups.py interactive
     ```
 
 3. Answer the prompts using the information you collected above. For example:
@@ -76,7 +77,7 @@ To run the LDAP sync script in interactive mode:
     Issue the Python script commands, supplying all this information, following this format example:
 
     ```
-    python syncUsersAndGroups.py script \
+    python3 syncUsersAndGroups.py script \
     –-ts_hostport <ts_hostport> \
     --disable_ssl \
     --ts_uname <ts_username> \
