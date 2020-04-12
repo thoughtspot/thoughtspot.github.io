@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content=""> -->
-<meta name="keywords" content=",  tbd">
+<!-- <meta name="description" content="Learn how to model your geographical data."> -->
+<meta name="keywords" content=",  ">
 <title>Add a geographical data setting | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/syntax.css">
 
@@ -209,7 +209,7 @@ var ss360Config = {
             </button>
 
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/5.1/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -243,7 +243,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                         <li><a href="/6.1/index.html">latest</a></li><li><a href="/6.0/index.html">6.0</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.0/index.html">6.0</a></li>
                         
                         
                         
@@ -317,7 +321,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/data-modeling/model-geo-data.html.</li>
-         <li class="small-sidebar-link">Current version is 6.0.</li>
+         <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -338,12 +342,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.0/admin/data-modeling/model-geo-data.html">Switch to version 6.0 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.1/admin/data-modeling/model-geo-data.html">Switch to version 6.1 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.0/admin/data-modeling/model-geo-data.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.0/admin/data-modeling/model-geo-data.html</li>
+<li class="small-sidebar-link">newURL is /6.1/admin/data-modeling/model-geo-data.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.1/admin/data-modeling/model-geo-data.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3144,6 +3148,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.1/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.1/release/downloads.html">Downloads</a></li>
                 
               
@@ -3192,6 +3202,8 @@ var ss360Config = {
 
 <div class="post-content">
 
+   
+    <div class="summary">Learn how to model your geographical data.</div>
    
 
     
@@ -3247,8 +3259,10 @@ in the <code class="highlighter-rouge">model.xls</code> file.</p>
 data unless they contain latitude/longitude data. Latitude and longitude columns
 can contain numeric data (<code class="highlighter-rouge">DOUBLE</code>) or text.</p>
 
+<p>If you import <code class="highlighter-rouge">geo</code> columns as numeric values, the data type defaults to <code class="highlighter-rouge">INT64</code>. ThoughtSpot recommends that you import <code class="highlighter-rouge">geo</code> columns, such as zipcodes as text values. The <code class="highlighter-rouge">column type</code> defaults to  <code class="highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For geo data, you <strong><em>must</em></strong> change the <code class="highlighter-rouge">column type</code> to <code class="highlighter-rouge">attribute</code> and specify <code class="highlighter-rouge">additive</code> as <code class="highlighter-rouge">no</code>.</p>
+
 <p>If you are using a column with the data type <code class="highlighter-rouge">DOUBLE</code> for latitude and
-longitude, you will also need to change the following settings for those
+longitude, change the following settings for those
 columns:</p>
 
 <ul>
@@ -3257,7 +3271,27 @@ columns:</p>
   <li>set <strong>Aggregation Type</strong> to <code class="highlighter-rouge">NONE</code></li>
 </ul>
 
-<p>For information these settings, see <a href="change-aggreg-additive.html">Set ADDITIVE or AGGREGATION</a>.</p>
+<p>For information on these settings, see <a href="change-aggreg-additive.html">Set ADDITIVE or AGGREGATION</a>.</p>
+
+<p>As a best practice, you should make the following changes to your geographical data <strong><em>before</em></strong> importing it to ThoughtSpot:</p>
+
+<ol>
+  <li>
+    <p>Specify <code class="highlighter-rouge">geo</code> columns as text values, and not numeric.</p>
+  </li>
+  <li>
+    <p>Make sure your data is specific, and does not contain duplicates.</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin.<br /><br />According to the 2010 Census, there are 31 distinct Washington Counties in the United States.<br /><br />To account for multiple different geographical entities with the same name, you must be specific within your data.<br /><br />A value of <em>Washington County</em> without a state attached to it may result in incorrect or incomplete geo maps.</td>
+          <td><img src="/5.1/images/wa-county.png" alt="Washington Counties in United States" title="Washington Counties in United States" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
 
 <h2 id="how-to-edit-geographic-columns">How to edit geographic columns</h2>
 
@@ -3266,7 +3300,7 @@ columns:</p>
   <li>
     <p>Select the column to display the <strong>Specify Geographic Configuration</strong> dialog.</p>
 
-    <p><img src="/5.1/images/set_geo_config.png" alt="" title="Configure geo data" /></p>
+    <p><img src="/5.1/images/geomap-config.png" alt="Configure geo data" title="Configure geo data" /></p>
   </li>
   <li>
     <p>Change the value to the appropriate <strong>GEO CONFIG</strong>, depending on the kind of geo data the column contains.</p>
@@ -3282,109 +3316,9 @@ columns:</p>
   <li>Save your changes.</li>
 </ol>
 
-<h2 id="list-of-geotypes">List of geotypes</h2>
+<h2 id="supported-geo-maps">Supported geo maps</h2>
 
-<table>
-   <colgroup>
-      <col style="width:20%" />
-      <col style="width:40%" />
-      <col style="width:40%" />
-   </colgroup>
-   <tbody>
-     <tr>
-        <th>GeoType</th>
-        <th>Description</th>
-        <th>Type: Example</th>
-     </tr>
-      <tr>
-         <td><code>COUNTRY_REGION</code></td>
-         <td>Countries</td>
-         <td>
-            <ul>
-               <li>name: United States</li>
-               <li>long name: United States </li>
-               <li>name_sort: United States of America</li>
-               <li>abbreviation: U.S.A.</li>
-               <li>adm0_a3: USA</li>
-               <li>adm0_a3_is: USA</li>
-               <li>adm0_a3_us: USA</li>
-               <li>admin: United States of America</li>
-               <li>brk_a3: USA</li>
-               <li>brk_name: United States</li>
-               <li>formal_en: United States of America</li>
-               <li>iso_a2: US</li>
-               <li>iso_a3: USA</li>
-               <li>iso_n3: 840</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td><code>COUNTY</code></td>
-         <td>Counties in the United States</td>
-         <td>
-            <ul class="ul">
-               <li>santa clara county</li>
-               <li>pike county, ohio</li>
-               <li>pike county, OH</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td><code>STATE_PROVINCE</code></td>
-         <td>States in the United States</td>
-         <td>
-            <ul>
-               <li>name: California</li>
-               <li>US Postal Service abbreviation: CA</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td><code>LATITUDE</code></td>
-         <td>Must be used with <code>LONGITUDE</code></td>
-         <td>
-            <ul>
-               <li>37.421023</li>
-               <li>1.282911</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td><code>LONGITUDE</code></td>
-         <td>Must be used with <code>LATITUDE</code></td>
-         <td>
-            <ul>
-               <li>−122.142103</li>
-               <li>103.848865</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td><code>ZIP_CODE</code></td>
-         <td>Zip codes in the United States</td>
-         <td>
-            <ul>
-               <li>po_name: MT MEADOWS AREA </li>
-               <li>ZIP: "00012" </li>
-               <li>zip2: 12</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td>Other Sub-nation Regions</td>
-         <td>Administrative regions found in countries other than the United
-            States
-         </td>
-         <td>
-            <ul class="ul">
-               <li>bremen</li>
-               <li>normandy</li>
-               <li>west midlands</li>
-            </ul>
-         </td>
-      </tr>
-   </tbody>
-</table>
+<p>For a complete list of supported geo maps in ThoughtSpot, refer to: <a href="/5.1/reference/geomap-reference#">Geo Map Reference</a></p>
 
 <h2 id="related-information">Related information</h2>
 
@@ -3414,9 +3348,9 @@ columns:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 12, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 3/26/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

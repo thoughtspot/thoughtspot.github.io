@@ -207,7 +207,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
             </button>
             <!-- OLD HOME NAV removed in favor of logo image
-                       <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+                       <a class="fa fa-home fa-lg navbar-brand" href="/5.0/index.html">&nbsp;<span class="projectTitle"> </span></a>
             -->
 
             <div class="logo">
@@ -241,7 +241,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                         <li><a href="/6.1/index.html">latest</a></li><li><a href="/6.0/index.html">6.0</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.0/index.html">6.0</a></li>
                         
                         
                         
@@ -315,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/loading/datatypes.html.</li>
-         <li class="small-sidebar-link">Current version is 6.0.</li>
+         <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -336,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.0/admin/loading/datatypes.html">Switch to version 6.0 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.1/admin/loading/datatypes.html">Switch to version 6.1 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.0/admin/loading/datatypes.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.0/6.0/admin/loading/datatypes.html</li>
+<li class="small-sidebar-link">newURL is /6.1/admin/loading/datatypes.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.0/6.1/admin/loading/datatypes.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3079,6 +3083,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.0/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.0/release/downloads.html">Downloads</a></li>
                 
               
@@ -3164,7 +3174,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    2 minutes
+    3 minutes
   
 </span>
 
@@ -3204,8 +3214,8 @@ $('#toc').on('click', 'a', function() {
   </tr>
   <tr>
     <td>Integer</td>
-    <td><code>INT</code> or <code>BIGINT</code></td>
-    <td><code>INT</code> holds 32 bits. <code>BIGINT</code> holds 64 bits. <code>INT</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>BIGINT</code> range is <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
+    <td><code>INT32</code> or <code>INT64</code></td>
+    <td><code>INT32</code> holds 32 bits. <code>INT64</code> holds 64 bits. <code>INT32</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>INT64</code> has a range of <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
   </tr>
   <tr>
     <td>Date or time</td>
@@ -3218,7 +3228,15 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="geographical-data-types">Geographical data types</h2>
 
-<p>For geographical data types, use VARCHAR. For latitude and longitude, you can use either <code class="highlighter-rouge">VARCHAR</code> or <code class="highlighter-rouge">DOUBLE</code>. After loading the data, designate it as a geographical data type when you <a href="/5.0/admin/data-modeling/edit-model-file.html#">Edit the system-wide data model</a>. Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.</p>
+<p>For geographical data types, use <code class="highlighter-rouge">VARCHAR</code>. Use <code class="highlighter-rouge">VARCHAR</code> as the data type for zipcodes and other geographical data so that the geographical data in your table defaults to the correct configuration. See the following example:</p>
+
+<p><img src="/5.0/images/geoconfig-zipcodes.png" alt="Geo data example" title="Geo data example" /></p>
+
+<p>In the above example, the zipcodes were imported as text values. By default, the <code class="highlighter-rouge">data type</code> is <code class="highlighter-rouge">VARCHAR</code>, the <code class="highlighter-rouge">column type</code> is <code class="highlighter-rouge">attribute</code>, and <code class="highlighter-rouge">additive</code> is <code class="highlighter-rouge">no</code>. You must specify the <code class="highlighter-rouge">geo config</code> for your data yourself. ThoughtSpot does not specify geo config automatically.</p>
+
+<p>If you import zipcodes as numeric values, the data type defaults to <code class="highlighter-rouge">INT64</code>. ThoughtSpot recommends that you import zipcodes as text values. The <code class="highlighter-rouge">column type</code> defaults to  <code class="highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For zipcodes, you <strong><em>must</em></strong> change the <code class="highlighter-rouge">column type</code> to <code class="highlighter-rouge">attribute</code> and specify <code class="highlighter-rouge">additive</code> as <code class="highlighter-rouge">no</code>.</p>
+
+<p>For latitude and longitude, you can use either <code class="highlighter-rouge">VARCHAR</code> or <code class="highlighter-rouge">DOUBLE</code>. After loading the data, designate it as a geographical data type when you <a href="/5.0/admin/data-modeling/edit-model-file.html#">Edit the system-wide data model</a>. Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.</p>
 
 <p>These data types can be designated as geographical data, which enables them to be visualized using the Geo chart types:</p>
 
@@ -3329,9 +3347,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Mar 30, 2020 <br />
+        Generated: Apr 12, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 3/30/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
