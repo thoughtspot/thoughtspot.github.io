@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Whenever you view a pinboard you have the option of sharing it with others. "> -->
-<meta name="keywords" content=",  tbd">
-<title>Share a pinboard | ThoughtSpot</title>
+<!-- <meta name="description" content=""> -->
+<meta name="keywords" content=",  fixed issues">
+<title>Fixed issues | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/4.4/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -318,13 +318,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /admin/data-security/share-pinboards.html.</li>
+         <li class="small-sidebar-link">Current page URL is /release/fixed.html.</li>
          <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is admin.</li>
-           <li class="small-sidebar-link">url_chunks[2] is data-security.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is share-pinboards.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is release.</li>
+           <li class="small-sidebar-link">url_chunks[2] is fixed.html.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is .</li>
  -->
 
        
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/data-security/share-pinboards.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.1/release/fixed.html">Switch to version 6.1 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/data-security/share-pinboards.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/data-security/share-pinboards.html</li>
+<li class="small-sidebar-link">newURL is /6.1/release/fixed.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/release/fixed.html</li>
  -->
 
     <!-- End add link to latest version
@@ -969,7 +969,7 @@ var ss360Config = {
                         
                           
                               
-                                  <li class="active"><a href="/4.4/admin/data-security/share-pinboards.html">Share a pinboard</a></li>
+                                  <li><a href="/4.4/admin/data-security/share-pinboards.html">Share a pinboard</a></li>
                               
                             
                         
@@ -2785,7 +2785,7 @@ var ss360Config = {
             
               
                 
-                  <li><a href="/4.4/release/fixed.html">Fixed issues</a></li>
+                  <li class="active"><a href="/4.4/release/fixed.html">Fixed issues</a></li>
                 
               
             
@@ -2820,7 +2820,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Share a pinboard</h1>
+   <h1 class="post-title-main">Fixed issues</h1>
 </div>
 
 
@@ -2828,69 +2828,95 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Whenever you view a pinboard you have the option of sharing it with others. </div>
-   
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the
-on-page minitoc. if you use html tags, you must supply an ID for the heading
-element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-
-});
-</script>
-
-<div id="toc"></div>
 
     
 
-  <p>When you share a pinboard what you are really sharing is a live link to the pinboard, when you click <strong>Share with…</strong>. So whenever someone else views it, they will see the most recently saved version with the most recent data. You do not have to be an administrator or the owner to share saved pinboards. Any user can share them, based on the access levels the user has.</p>
+  <p>These are the issues we fixed in ThoughtSpot Release 4.4. For a complete list of new and enhanced features in this release, see <a href="/4.4/release/notes.html">Release notes</a>.</p>
 
-<p>To share a pinboard:</p>
-
-<ol>
-  <li>Configure the pinboard to look as you’ll want it to appear when shared.</li>
+<ul>
   <li>
-    <p>Click the <strong>Share</strong> icon.</p>
-
-    <p><img src="/4.4/images/share_pinboard_with.png" alt="" /></p>
+    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="highlighter-rouge">group_max</code> function.</p>
   </li>
   <li>
-    <p>Click <strong>+ Add users or groups</strong> and select users or groups that you want to share with.</p>
-
-    <p><img src="/4.4/images/share_pinboard.png" alt="" /></p>
+    <p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
   </li>
-  <li>Configure the level of access by selecting from the dropdown list. You will only see options available, based on your own access level. For example, if you have only <strong>View</strong> access, you cannot share as <strong>Edit</strong>. You can select:
-    <ul>
-      <li><strong>Can View</strong> to provide read-only access. If the person doesn’t have access to the underlying data, they can only view a shared pinboard. If they change anything on the pinboard, their changes are not saved. In order to persist the changes, the user would need to make a copy of the modified pinboard.</li>
-      <li><strong>Can Edit</strong> to allow modification. Enables renaming or deleting the shared pinboard. If a person with edit privileges modifies a shared pinboard, their changes will be saved to it.</li>
-    </ul>
+  <li>
+    <p>An issue was resolved where a bar on the chart label did not match the underlying data. The data was correct, the label was not.</p>
   </li>
-  <li>Click <strong>Add and Save</strong>.</li>
-  <li>Click <strong>Add Permissions</strong>.</li>
-</ol>
-
+  <li>
+    <p>An issue was corrected where, if one snapshot deletion failed in any fashion, any subsequent attempts to delete a snapshot failed.</p>
+  </li>
+  <li>
+    <p>Users were unable to edit a KPI formula if the KPI formula was pinned to a pinboard.</p>
+  </li>
+  <li>
+    <p>Users were able to <strong>Select All</strong> for 1000+ items in a pinboard filter. This action was available but not supported and caused users to believe pinboard filters were not working. Now, the option to <strong>Select All</strong> no longer functions when there are 1000+ items in a filter.</p>
+  </li>
+  <li>
+    <p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
+  </li>
+  <li>
+    <p>Creating a formula on <code class="highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
+  </li>
+  <li>
+    <p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
+  </li>
+  <li>
+    <p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
+  </li>
+  <li>
+    <p>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</p>
+  </li>
+  <li>
+    <p>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</p>
+  </li>
+  <li>
+    <p>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</p>
+  </li>
+  <li>
+    <p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
+  </li>
+  <li>
+    <p>Using <code class="highlighter-rouge">safe_divide</code> and <code class="highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
+  </li>
+  <li>
+    <p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
+  </li>
+  <li>
+    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
+  </li>
+  <li>
+    <p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
+  </li>
+  <li>
+    <p>An issue was fixed where an unnecessary right-outer join was being applied to row-level security RLS-introduced joins. This situation led to impacts on query performance.</p>
+  </li>
+  <li>
+    <p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
+  </li>
+  <li>
+    <p>Resolved an issue with a chasm trap that used <code class="highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
+  </li>
+  <li>
+    <p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
+  </li>
+  <li>
+    <p>An issue was resolved where filters could only be edited in the search bar.</p>
+  </li>
+  <li>
+    <p>Intermittent, ambiguous red bar errors related to chasm trap situations were resolved.</p>
+  </li>
+  <li>
+    <p>The help for row-level security rules was complicated and hard to parse. This text was improved and moved into the Query Visualizer.</p>
+  </li>
+</ul>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/data-security/share-pinboards.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_release/fixed.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -2915,7 +2941,7 @@ $('#toc').on('click', 'a', function() {
       <div class="col-lg-12 footer">
         Generated: Apr 12, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 04/08/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
