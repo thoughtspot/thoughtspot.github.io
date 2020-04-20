@@ -1,6 +1,6 @@
 ---
 title: [Search Data API]
-last_updated: 4/8/2020
+last_updated: 4/20/2020
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -265,4 +265,4 @@ To test the search query API, follow these steps:
 
 - Users must be **authenticated** and have **read access** to the data source.
 
-- Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. You can change your preferred locale in your browser settings.
+- Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. Your search keywords must also be in American English. Your column names and other data values do **not** need to be in American English. You can change your preferred locale to `en-US` in your browser settings.
