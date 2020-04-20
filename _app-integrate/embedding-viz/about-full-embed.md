@@ -71,7 +71,7 @@ embed app the application.
       <button onclick="updateIframeUrl('answerList')">Answer list</button>
       <button onclick="updateIframeUrl('pinboardList')">Pinboard list</button>
       <button onclick="updateIframeUrl('data')">Data</button>
-      <iframe id="ts-embed" src="/?embedApp=true#/" height="80%" width="80%"></iframe>
+      <iframe id="ts-embed" allow=“fullscreen” src="/?embedApp=true#/" height="80%" width="80%"></iframe>
    </body>
 </html>
 ```
