@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."> -->
+<!-- <meta name="description" content="If you want to perform a search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."> -->
 <meta name="keywords" content=",  ">
-<title>Understand views | ThoughtSpot</title>
+<title>Understanding views | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Understand views”] | thoughtspot.github.io</title>
+<title>[“Understanding views”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Understand views”]" />
+<meta property="og:title" content="[“Understanding views”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Introduction to views" />
-<meta property="og:description" content="Introduction to views" />
+<meta name="description" content="Access: Only users with the Can administrator ThoughtSpot or the Can manage data privilege can create views and link them." />
+<meta property="og:description" content="Access: Only users with the Can administrator ThoughtSpot or the Can manage data privilege can create views and link them." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-12T11:13:37-07:00" />
+<meta property="article:published_time" content="2020-04-20T10:37:48-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Understand views”]" />
+<meta property="twitter:title" content="[“Understanding views”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Understand views”]","dateModified":"2020-04-12T11:13:37-07:00","url":"https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html","datePublished":"2020-04-12T11:13:37-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html"},"description":"Introduction to views","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Access: Only users with the Can administrator ThoughtSpot or the Can manage data privilege can create views and link them.","headline":"[“Understanding views”]","dateModified":"2020-04-20T10:37:48-07:00","datePublished":"2020-04-20T10:37:48-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html"},"url":"https://docs.thoughtspot.com/6.0/complex-search/about-query-on-query.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3700,7 +3700,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Understand views</h1>
+   <h1 class="post-title-main">Understanding views</h1>
 </div>
 
 
@@ -3708,7 +3708,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search.</div>
+    <div class="summary">If you want to perform a search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search.</div>
    
 
     
@@ -3752,76 +3752,62 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="introduction-to-views">Introduction to views</h2>
+  <div class="alert alert-access" role="alert"><i class="fa fa-key"></i> <b>Access:</b> Only users with the <strong>Can administrator ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege can create views and link them.</div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Prior to ThoughtSpot version 5.0, Views were known as Aggregated Worksheets. When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Views do not support row level security (RLS), so all users of a view can see all the data it contains.</div>
 
-<p>You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one
-column by one other column. Because of this, you may come across searches you
-can’t do in one pass, because they are essentially nested queries. But you can
-create the equivalent of nested queries using a view, which is
-an answer that you have saved for the purpose of building other searches on top of it.</p>
+<h2 id="introduction-to-views">Introduction to views</h2>
 
-<p>You can use a view just like any other data source. You
-can even link it to other sources by defining a relationship. When you save an
-answer as a view, and then use it as a source in a new search, it is
-similar to doing a nested query in SQL, only much easier to create.</p>
+<p>You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one column by one other column. Because of this, you may come across searches you can’t do in one pass, because they are essentially nested queries. But you can create the equivalent of nested queries using a view, which is an answer that you have saved for the purpose of building other searches on top of it.</p>
 
-<p>To create a view, you must belong to a group that has the
-privilege <strong>Can administer ThoughtSpot</strong> or <strong>Can manage data</strong>. If you are
-not able to create views, contact your administrator and request
-the <strong>Can manage data</strong> privilege.</p>
+<p>You can use a view just like any other data source. You can even link it to other sources by defining a relationship. When you save an
+answer as a view, and then use it as a source in a new search, it is similar to doing a nested query in SQL, only much easier to create.</p>
 
 <h2 id="view-workflow">View workflow</h2>
 
-<p>Suppose you have created a search on the sales fact table that shows the top ten
-Sales Reps by revenue for the first quarter. Then you want to do some further
-investigations on that set of data, like ranking them by how much they
-discounted a specific product using data from the orders fact table. Unless you
-save your first answer as a view, certain explorations like this won’t be
-possible. If you want to do this, here are the steps at a high level:</p>
+<p>Suppose you created a search on the sales fact table that shows the top ten Sales Reps by revenue, for the first quarter. Then you want to do some further investigation on that subset of data, such as ranking them by how much they discounted a specific product based on data from the orders fact table. Unless you save your first answer as a view, and then search over that view, you cannot get your answers.</p>
+
+<p>Here are the high-level steps for creating and using views:</p>
 
 <ol>
   <li>
     <p>Create the first search, and <a href="/6.0/complex-search/create-aggregated-worksheet.html#">save it as a view</a>.</p>
   </li>
   <li>
-    <p><a href="/6.0/admin/data-modeling/create-new-relationship.html#">Create relationships</a> or <a href="/6.0/admin/loading/constraints.html#">define joins</a> to connect your view with any other data sources you need.</p>
+    <p><a href="/6.0/admin/data-modeling/create-new-relationship.html#">Create relationships</a> or <a href="/6.0/admin/loading/constraints.html#">define joins</a> to connect your view with any other data source.</p>
   </li>
   <li>
-    <p>Create a new search that includes your view and the other sources you linked with it.</p>
+    <p>Create a new search that includes your view and the other sources linked with it.</p>
   </li>
   <li>
-    <p>You may want to <a href="/6.0/admin/worksheets/about-worksheets.html#">create a new worksheet</a> that includes all these data sources.</p>
+    <p>We recommend that you <a href="/6.0/admin/worksheets/about-worksheets.html#">create a new worksheet</a> that includes all these data sources.</p>
 
-    <p>Creating a worksheet will make it easier for people to search using your
- view and any related tables.</p>
+    <p>Creating a worksheet makes it easier for people to search using your view and any related tables.</p>
   </li>
 </ol>
 
 <h2 id="best-practices-for-using-views">Best practices for using views</h2>
 
-<p>Only users with the <a href="/6.0/admin/users-groups/about-users-groups.html"><strong>Can administrator ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege</a> can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
-worksheet size.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Views do not support row level security, so all users of a view will be able to see all the data it contains.</div>
-
-<p>To be able to join a view with a base table, your installation
-must be configured to allow this. The view cannot have
-more than 5 tables involved, and the number of rows in the
-view cannot be greater than 1000.</p>
-
-<p>The order of the objects being linked (joined) matters, this is because joins are
-directional. The table or view with the foreign key needs to occur
-in the first (left) position. The table or view with the primary key should be in the
-second (right) position.</p>
-
-<p>For the best performance, views should have 50 or fewer
-columns and no more than 10 million rows. Exceeding these boundaries can make
-your view slow. You can remedy this by materializing it.</p>
-
-<p>You can use an ETL (extract, transform, load) process to circumvent these
-limitations.</p>
+<ul>
+  <li>
+    <p>When creating views, keep in mind the sizing recommendations for worksheets, for the final worksheet that you plan to use in modeling you data.</p>
+  </li>
+  <li>
+    <p>To be able to join a view with a base table, your installation must be configured to allow this. The view cannot have more than 5 tables, and the number of rows in the view cannot exceed 10 million rows.</p>
+  </li>
+  <li>
+    <p>The order of the objects being linked (joined) matters, because joins are directional. The table or view with the foreign key must be in the the first (left) position. The table or view with the primary key must be in the second (right) position.</p>
+  </li>
+  <li>
+    <p>For best performance, views should have 50 or fewer columns, and no more than 10 million rows. Exceeding these boundaries may make queries against this view run slow.</p>
+  </li>
+  <li>
+    <p>To improve performance, you can materialize the views.</p>
+  </li>
+  <li>
+    <p>You can use an ETL (extract, transform, load) processes to circumvent these limitations.</p>
+  </li>
+</ul>
 
 <h2 id="related-information">Related Information</h2>
 
@@ -3857,9 +3843,9 @@ limitations.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Apr 12, 2020 <br />
+        Generated: Apr 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
+         <!-- <span>Page last updated:</span> 04/12/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
