@@ -5,8 +5,6 @@ summary: "If you want to perform a search on top of another search, try saving y
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include access.html content="Only users with the **Can administrator ThoughtSpot** or the **Can manage data** privilege can create views and link them." %}
-
 {% include important.html content="Views do not support row level security (RLS), so all users of a view can see all the data it contains." %}
 
 ## Introduction to views
@@ -20,6 +18,11 @@ You can use a view just like any other data source. You
 can even link it to other sources by defining a relationship. When you save an
 answer as a view, and then use it as a source in a new search, it is
 similar to doing a nested query in SQL, only much easier to create.
+
+To create a view, you must belong to a group that has the
+privilege **Can administer ThoughtSpot** or **Can manage data**. If you are
+not able to create views, contact your administrator and request
+the **Can manage data** privilege.
 
 ## View workflow
 
