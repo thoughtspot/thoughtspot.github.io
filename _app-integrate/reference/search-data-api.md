@@ -1,6 +1,6 @@
 ---
 title: [Search Data API]
-last_updated: 4/20/2020
+last_updated: 4/21/2020
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -93,12 +93,12 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
 
   <dlentry id="value">
   <dt>Value</dt>
-<dd><p>All user-defined column values and constants must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. </p>
+<dd><p>String (text) and date values must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. Do not use quotes for numeric values, except for dates. </p>
   <p>When using multiple values, separate them by a comma, <code>,</code>.</p>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API is:</p>
+  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API query is:</p>
   <pre>[revenue] top 2 [ship mode]</pre>
-  <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API is:</p>
-  <pre>[revenue] [ship mode] = &lsquo;air&rsquo;,&rsquo;ship mode&rsquo;</pre></dd>
+  <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API query is:</p>
+  <pre>[revenue] [ship mode] = &lsquo;air&rsquo;</pre></dd>
   </dlentry>
 
   <dlentry id="date-bucket">
@@ -106,9 +106,9 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
 <dd>
 <p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. The column with which the date bucket is bound, and the date bucket token, must be separated by a period, <code>.</code>.</p>
 <p>Single word date buckets can be expressed <em>as is</em>. Multi-word date buckets must be enclosed within quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API is:</p>
+<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
 <pre>[revenue] [commit date].monthly</pre>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API is:</p>
+<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
 <pre>[revenue] [commit date].'day of week' = 5</pre>
 </dd>
   </dlentry>
@@ -116,7 +116,7 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
   <dlentry id="keyword">
     <dt>Keyword</dt>
     <dd><p>Use keywords in the API query in the same manner as in the UI.</p>
-    <p><strong>Example</strong> When a ThoughtSpot UI query uses keywords <code>growth of</code> and <code>sort by</code>, the equivalent API form is:</p>
+    <p><strong>Example</strong> When a ThoughtSpot UI query uses keywords <code>growth of</code> and <code>sort by</code>, the equivalent API query is:</p>
     <pre>growth of [revenue] by [commit date]</pre></dd>
   </dlentry>
 
@@ -124,9 +124,9 @@ In ThoughtSpot Query Language, we classify components of a query into various ty
     <dt>Calendar</dt>
     <dd><p>You can specify a custom calendar in the query. Use the <code>calendar.<em>calendar_name</em></code> format explicitly.</p>
   <p>When the calendar name contains multiple words, these words must be enclosed in single quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API is:</p>
+<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API query is:</p>
   <pre>[revenue] by [commit date] calendar.fiscal</pre>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API is:</p>
+  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API query is:</p>
   <pre>[revenue] by [commit date] calendar.'my calendar'</pre></dd>
   </dlentry>
 </dl>
