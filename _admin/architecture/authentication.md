@@ -1,24 +1,22 @@
 ---
 title: [Authentication]
-
+last_updated: 4/22/2020
 summary: "ThoughtSpot provides LDAP/AD, SAML, and ThoughtSpot login to authenticate users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and
-ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or
-SAML if possible since ThoughtSpot provides only basic authentication with no
+ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and
+ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or
+SAML, since ThoughtSpot provides only basic authentication, with no
 restrictions on passwords, timeouts, failed logins, etc.
 
-
-The following table shows each of the options and the items to consider for each.
-
+Use the following table to help you choose an authentication option.
 
 <table>
   <tr>
-    <th>SAML</th>
-    <th>LDAP/AD</th>
-    <th>ThoughtSpot</th>
+    <th><a href="{{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html">SAML</a></th>
+    <th><a href="{{ site.baseurl }}/admin/setup/about-LDAP.html">LDAP/AD</a></th>
+    <th><a href="{{ site.baseurl }}/admin/users-groups/add-user.html">ThoughtSpot</a></th>
   </tr>
   <tr>
     <td>
@@ -39,7 +37,8 @@ The following table shows each of the options and the items to consider for each
     <td>
     <ul>
     <li>User created and managed in ThoughtSpot.</li>
-    <li>No enterprise password control (expiration, password strength, etc.).</li>
+    <li><a href="{{ site.baseurl }}/admin/users-groups/add-user.html#password">Password strength control</a></li>
+    <li>No other enterprise password control (expiration, failed logins, etc.).</li>
     <li>Only recommended when SAML and LDAP are not options.</li>
     </ul>
     </td>
@@ -52,7 +51,7 @@ first logs in. However, this user is assigned to the `All` group and can only
 see content available for all users.
 
 Groups are the primary way that security is managed. Groups are not
-automatically created. You can create groups and users manually or you must
+automatically created. You can create [groups]({{ site.baseurl }}/admin/users-groups/add-group.html) and [users]({{ site.baseurl }}/admin/users-groups/add-user.html) manually, or you must
 automate the assignment from a source system. ThoughtSpot has an assignment
 script that works with most LDAP / AD stores. It also has public APIs that you
 can use to sync users and groups between source systems and your ThoughtSpot
