@@ -2,7 +2,7 @@
 title: [Data types]
 
 
-last_updated: 3/27/2020
+last_updated: 4/21/2020
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -55,7 +55,11 @@ The tables you create to receive the data must have the same number of columns a
 
 ## Geographical data types
 
-Import your geographical data as text values. This ensures that the data defaults to the correct configuration, where the data type is `VARCHAR`. You can use `DOUBLE` or `VARCHAR` for latitude and longitude data. See the following example:
+ThoughtSpot supports geographical data.
+
+### How to import geographical data
+
+Import your geographical data as **text** values. This ensures that the data defaults to the correct configuration, where the data type is `VARCHAR`. You can use `DOUBLE` or `VARCHAR` for latitude and longitude data. See the following example:
 
 ![Geo data example]({{ site.baseurl }}/images/geoconfig-zipcodes.png "Geo data example")
 
@@ -63,7 +67,11 @@ In the above example, the zipcodes were imported as text values. By default, the
 
 If you import zipcodes as numeric values, the `column type` defaults to  `measure`. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. If you import your geographical data as numeric values, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
 
+### Latitude and longitude
+
 For latitude and longitude, you can use either `VARCHAR` or `DOUBLE`. Note that your latitude and longitude data must be in the form of positive and negative numbers, and not in the form of degrees. North of the Equator, latitude values are **positive**, and south of the Equator, latitude values are **negative**. East of the Prime Meridian, longitude values are **positive**, and West of the Prime Meridian, longitude values are **negative**.
+
+### Designate your geographical data in ThoughtSpot
 
 After loading the data, designate it as a geographical data type when you [Edit the system-wide data model]({{ site.baseurl }}/admin/data-modeling/edit-model-file.html#). Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.
 
@@ -97,11 +105,11 @@ These data types can be designated as geographical data, which enables them to b
 * `LONGITUDE`, which must be used with `LATITUDE`, for example:
   -   122.142103
   -   -103.848865
-* `ZIP_CODE` for zip codes in the United States
+* `ZIP_CODE` for zip codes in the United States, for example:
   -   `po_name`: MT MEADOWS AREA
   -   `ZIP`: "00012"
   -   `zip2`: 12
-* Other Sub-nation Regions which are administrative regions found in countries other than the United States, for example:
+* Other Sub-nation Regions, which are administrative regions found in countries other than the United States, for example:
   -   bremen
   -   normandy
   -   west midlands
