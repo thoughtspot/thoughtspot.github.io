@@ -15,7 +15,9 @@ Here is a list of all of the external database connectors, and their connection 
 ## Snowflake
  - **Connection name**: Mandatory. Enter a new Snowflake connection name.
  - **Description**: Optional. Provide a short description about the connection.
- - **AccountName**: Mandatory. Enter the account name associated with the Snowflake connection.
+ - **AccountName**: Mandatory. Enter the account name associated with your Snowflake connection.
+The account name is part of the URL that you use to access the Snowflake UI. It is the portion of the URL before **snowflakecomputing.com**.  
+  *Example*: If your URL is **https://abcd.xyz.efg.snowflakecomputing.com**, your account name is **abcd.xyz.efg**.
  - **User**: Mandatory. Enter the Snowflake account username.
  - **Password**: Mandatory. Enter the Snowflake account password.
  - **Role**: Mandatory. Specify the privilege of the user.
