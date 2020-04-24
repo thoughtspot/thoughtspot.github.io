@@ -187,7 +187,7 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli backup ls</code></dt>
-    <dd>List all backups taken by the system.</dd>
+    <dd>List all backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
   </dlentry>
 
   <dlentry>
