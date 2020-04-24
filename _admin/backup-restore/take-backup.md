@@ -60,10 +60,9 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
          <name> <directory>
     ```
 
-5. Check that the backup was created by listing all backups:
-
+    Here is a sample `tscli backup create` command:
     ```
-    $ tscli backup ls
+    $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```
 
 ## Backing up a ThoughtSpot cloud deployment
