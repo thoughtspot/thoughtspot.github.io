@@ -53,9 +53,7 @@ To manually create a backup using the tscli:
         [--storage_type {local|nas}][--remote]
          <name> <directory>
     ```
-
-5. Check that the backup was created:
-
+    Here is a sample `tscli backup create` command:
     ```
-    $ tscli backup ls
+    $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```
