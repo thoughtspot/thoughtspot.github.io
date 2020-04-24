@@ -125,7 +125,7 @@ Use this subcommand to do the following:
         Take backup through orion master. (default: True)
 
 * `tscli backup delete *`name`*` Deletes the named backup.
-* `tscli backup ls` List all backups taken by the system.
+* `tscli backup ls` List all backups taken by the system. Note that this command only shows periodic backups, and not manual backups.
 * `tscli backup restore` Restore cluster using backup.
 
 
