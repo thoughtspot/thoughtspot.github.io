@@ -46,19 +46,20 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 
 4. Create the backup, designating the [type of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. You specify an existing directory path, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. The BASE value is the name of the backup.
+    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. Specify an existing directory path for the backup to go, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. Refer to the [tscli command reference]({{ site.baseurl }}/reference/tscli-command-ref.html#backup) for help, or run `tscli backup create -h` on the command line to see the help for this command.
 
     ```
     $ tscli backup create [-h]
         [--mode {full|light|dataless}]
         [--type {full}]
-        [--base snapshot_name>]
-        [--storage_type {local|nas}][--remote]
-         <name> <directory>
+        [--storage_type {local|nas}]
+        [--remote]
+        [--no-orion-master]
+        [--bucket_name <bucket_name>]
+        [--staging_dir <staging_dir_name]
+         <snapshot_name> <directory>
     ```
-
-5. Check that the backup was created by listing all backups:
-
+    Here is a sample `tscli backup create` command:
     ```
-    $ tscli backup ls
+    $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```

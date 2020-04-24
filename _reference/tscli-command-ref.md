@@ -332,7 +332,7 @@ tscli backup [-h] {create,delete,ls,restore}
 
     <dlentry>
       <dt><code>tscli backup ls</code></dt>
-      <dd>Lists all backups taken by the system.</dd>
+      <dd>Lists all backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
 
     <dlentry>
