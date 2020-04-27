@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-24T10:53:43-07:00" />
+<meta property="article:published_time" content="2020-04-27T14:26:45-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“tscli command reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“tscli command reference”]","dateModified":"2020-04-24T10:53:43-07:00","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","datePublished":"2020-04-24T10:53:43-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“tscli command reference”]","dateModified":"2020-04-27T14:26:45-07:00","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","datePublished":"2020-04-27T14:26:45-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -4010,9 +4010,9 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <dl>
     <dlentry>
-      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br />[--storage_type {local,nas}] [--remote] [--no-orion-master]</code></dt>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br />[--storage_type {local,nas}] [--remote] [--no-orion-master] name out </code></dt>
       <dd>
-        <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
+        <p>Pulls a snapshot and saves it as a backup. You must specify the snapshot name (<code>name</code>) and the directory to send the backup to (<code>out</code>). The command has the following optional parameters:</p>
 
         <dl>
           <dlentry>
@@ -4031,7 +4031,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
               <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
               <p>There is no default setting.</p></dd></dlentry>
           <dlentry>
-            <dt><code>--storage_type {local,nas}</code></dt>
+            <dt><code>--storage_type {local,nas,cloud}</code></dt>
             <dd>
               <p>Storage type of output directory.</p>
               <p>The default setting is <code>local</code>.</p></dd></dlentry>
@@ -4049,6 +4049,14 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
                  The default is <code>False</code>.
                </p></dd>
             </dlentry>
+            <dlentry>
+            <dt><code>--bucket_name BUCKET_NAME</code></dt>
+             <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+            </dlentry>
+            <dlentry>
+            <dt><code>--staging_dir STAGING_DIR</code></dt>
+             <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+            </dlentry>
           </dl>
       </dd>
 
@@ -4061,7 +4069,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
     <dlentry>
       <dt><code>tscli backup ls</code></dt>
-      <dd>Lists all backups taken by the system.</dd>
+      <dd>Lists all periodic backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
 
     <dlentry>
@@ -4394,19 +4402,26 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <h3 id="tscli-cluster">cluster</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster [-h] abort-reinstall-os,abort-update,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster [-h] {abort-update,bucket-migrate,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,restore,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
 
 <dl>
-  <dlentry>
-    <dt><code>tscli cluster abort-reinstall-os</code></dt>
-    <dd>Aborts in-progress reinstall.</dd></dlentry>
 
     <dlentry>
       <dt><code>tscli cluster abort-update</code></dt>
       <dd>Aborts an ongoing cluster update, if safe.</dd></dlentry>
+
+      <dlentry>
+        <dt><code>tscli cluster bucket-migrate</code></dt>
+        <dd>Migrates the cluster to use another S3/GCS bucket, also migrating the data from the current s3 bucket to the new bucket. This command has the following optional parameter:
+        <dl>
+        <dlentry>
+        <dt><code>--name NAME</code></dt>
+        <dd>Name of the new bucket.</dd>
+        </dlentry></dl>
+        </dd></dlentry>
 
     <dlentry>
       <dt><code>tscli cluster bucket-name</code></dt>
@@ -4488,20 +4503,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
   <dlentry>
     <dt><code>tscli cluster load <em>backupdir</em></code></dt>
-    <dd>Loads the state from a specified backup directory onto an existing cluster. Add <code>--reuse_cluster</code> to reuse the cluster service configs rather than restoring from the backup directory.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli cluster reinstall-os</code></dt>
-    <dd>Reinstalls OS on all nodes of the cluster, with the following parameters:
-    <dl>
-    <dlentry>
-    <dt><code>--secondary <em>SECONDARY</em></code></dt>
-    <dd><p>A secondary drive for reinstall.</p>
-    <p>The default is <code>sdd</code>.</p></dd></dlentry>
-    <dlentry>
-    <dt><code>--stdin</code></dt>
-    <dd>Command to take JSON configuration from stdin.</dd></dlentry></dl>
-    </dd></dlentry>
+    <dd>Loads the state from a specified backup directory onto an existing cluster. Add <code>--reuse_cluster</code> to reuse the cluster service configs rather than restoring from the backup directory. Add <code>--cloud_data_dir<em>CLOUD_DATA_DIR</em></code> to specify the cloud path to the restore.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster restore --release <em>RELEASE</em> <em>backupdir</em></code></dt>
@@ -4520,10 +4522,6 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
     <dd><p>Should be set for heterogeneous clusters.</p>
     <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli cluster resume-reinstall-os</code></dt>
-    <dd>Resumes in-progress reinstall.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-update</code></dt>
@@ -4547,6 +4545,11 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
     <dlentry>
     <dt><code>--no-network-change</code></dt>
     <dd><p>This flag ensures that a change made with set-config does not update network settings.</p>
+    <p>The default is <code>False</code>.</p>
+    </dd></dlentry>
+    <dlentry>
+    <dt><code>--allow_network_gateway_mismatch</code></dt>
+    <dd><p>Allows a network and gateway mismatch.</p>
     <p>The default is <code>False</code>.</p>
     </dd></dlentry></dl>
     </dd></dlentry>
@@ -5398,7 +5401,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <h3 id="tscli-node">node</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli node [-h] {check,ls,status}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -5433,29 +5436,18 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
       <p>The default setting is <code>all</code>.</p></dd></dlentry></dl>
       </dd></dlentry>
 
-   <dlentry>
-      <dt><code>tscli node reinstall-os [-h] [--secondary <em>SECONDARY</em>] [--cluster]</code></dt>
-      <dd>
-        <p>Reinstalls OS on a node.</p>
-        <p>Accepts the following flags:</p>
+  <dlentry>
+    <dt><code>tscli node status</code></dt>
+    <dd>Get Node status for operation specified by mode, with the following paramaters:
+    <dl><dlentry>
+    <dt><code>--mode {reinstall-os}</code></dt>
+    <dd>Mode to run node status in.</dd></dlentry>
+    <dlentry>
+    <dt><code>--tail</code></dt>
+    <dd><p>Prints the details of create and update progress.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
-        <dl>
-          <dlentry>
-            <dt><code>--secondary <em>SECONDARY</em></code></dt>
-            <dd>
-              <p>Secondary drive for reinstall.</p>
-              <p>The default setting is <code>sdd</code>.</p></dd></dlentry>
-          <dlentry>
-          <dt><code>--cluster</code></dt>
-          <dd>
-            <p>Use this flag to specify if the node is part of a cluster.</p>
-            <p>The default setting is <code>False</code>.</p></dd></dlentry>
-        </dl>
-     </dd></dlentry>
-
-   <dlentry>
-    <dt><code>tscli node resume-reinstall-os</code></dt>
-    <dd>Resumes in-progress reinstall</dd></dlentry>
 
 </dl>
 
@@ -5840,6 +5832,14 @@ Support for help on how to configure a whitelist.</div>
           <dt><code>--no-orion-master</code></dt>
           <dd><p>Specifies whether orion master is available during backup</p>
           <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+          <dlentry>
+          <dt><code>--bucket_name BUCKET_NAME</code></dt>
+           <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+          </dlentry>
+          <dlentry>
+          <dt><code>--staging_dir STAGING_DIR</code></dt>
+           <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+          </dlentry>&lt;/dl&gt;
     </dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot create [-h] <em>name</em> <em>reason</em> <em>ttl</em></code></dt>
@@ -6350,9 +6350,9 @@ Support for help on how to configure a whitelist.</div>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Apr 24, 2020 <br />
+        Generated: Apr 27, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/13/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 4/24/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
