@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="ThoughtSpot provides LDAP/AD, SAML, and ThoughtSpot login to authenticate users."> -->
-<meta name="keywords" content=",  data,cluster,memory,import,tsload,SAML,LDAP,"active directory"">
+<meta name="keywords" content=",  ">
 <title>Authentication | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/syntax.css">
 
@@ -51,17 +51,17 @@
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="[“Authentication”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot provides three ways to authenticate users LDAP/AD, SAML, and ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or SAML if possible since ThoughtSpot provides only basic authentication with no restrictions on passwords, timeouts, failed logins, etc." />
-<meta property="og:description" content="ThoughtSpot provides three ways to authenticate users LDAP/AD, SAML, and ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or SAML if possible since ThoughtSpot provides only basic authentication with no restrictions on passwords, timeouts, failed logins, etc." />
+<meta name="description" content="ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or SAML, since ThoughtSpot provides only basic authentication, with no restrictions on passwords, timeouts, failed logins, etc." />
+<meta property="og:description" content="ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or SAML, since ThoughtSpot provides only basic authentication, with no restrictions on passwords, timeouts, failed logins, etc." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-12T11:01:05-07:00" />
+<meta property="article:published_time" content="2020-04-28T18:29:32-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html"},"url":"https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html","headline":"[“Authentication”]","dateModified":"2020-04-12T11:01:05-07:00","datePublished":"2020-04-12T11:01:05-07:00","description":"ThoughtSpot provides three ways to authenticate users LDAP/AD, SAML, and ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or SAML if possible since ThoughtSpot provides only basic authentication with no restrictions on passwords, timeouts, failed logins, etc.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html"},"url":"https://docs.thoughtspot.com/5.2/admin/architecture/authentication.html","headline":"[“Authentication”]","dateModified":"2020-04-28T18:29:32-07:00","datePublished":"2020-04-28T18:29:32-07:00","description":"ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or SAML, since ThoughtSpot provides only basic authentication, with no restrictions on passwords, timeouts, failed logins, etc.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3205,18 +3205,18 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and
-ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or
-SAML if possible since ThoughtSpot provides only basic authentication with no
+  <p>ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and
+ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or
+SAML, since ThoughtSpot provides only basic authentication, with no
 restrictions on passwords, timeouts, failed logins, etc.</p>
 
-<p>The table below shows each of the options and the items to consider for each.</p>
+<p>Use the following table to help you choose an authentication option.</p>
 
 <table>
   <tr>
-    <th>SAML</th>
-    <th>LDAP/AD</th>
-    <th>ThoughtSpot</th>
+    <th><a href="/5.2/admin/setup/configure-SAML-with-tscli.html">SAML</a></th>
+    <th><a href="/5.2/admin/setup/about-LDAP.html">LDAP/AD</a></th>
+    <th><a href="/5.2/admin/users-groups/add-user.html">ThoughtSpot</a></th>
   </tr>
   <tr>
     <td>
@@ -3246,11 +3246,11 @@ restrictions on passwords, timeouts, failed logins, etc.</p>
 
 <p>All users and groups must be known to ThoughtSpot. If you are using LDAP/AD or
 SAML and don’t create users in ThoughtSpot, a user is created when the user
-first logs in. However, this user is assigned to the <code class="highlighter-rouge">All</code> group and will only
+first logs in. However, this user is assigned to the <code class="highlighter-rouge">All</code> group and can only
 see content available for all users.</p>
 
 <p>Groups are the primary way that security is managed. Groups are not
-automatically created. You can create groups and users manually or you need to
+automatically created. You can create <a href="/5.2/admin/users-groups/add-group.html">groups</a> and <a href="/5.2/admin/users-groups/add-user.html">users</a> manually, or you must
 automate the assignment from a source system. ThoughtSpot has an assignment
 script that works with most LDAP / AD stores. It also has public APIs that you
 can use to sync users and groups between source systems and your ThoughtSpot
@@ -3281,9 +3281,9 @@ appliance.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback&body=I have feedback for this page (URL)%20%3A%0D%0A%0D%0A%0D%0AMy%20Feedback%20%3A%0D%0A%0D%0A%0D%0A">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Apr 12, 2020 <br />
+        Generated: Apr 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!--   -->
+         <!-- <span>Page last updated:</span> 4/22/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

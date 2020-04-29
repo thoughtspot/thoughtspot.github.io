@@ -3245,18 +3245,18 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughtSpot provides three ways to authenticate users  LDAP/AD, SAML, and
-ThoughtSpot login. In general, ThoughtSpot recommends that you use LDAP/AD or
-SAML if possible since ThoughtSpot provides only basic authentication with no
+  <p>ThoughtSpot provides three ways to authenticate users: LDAP/AD, SAML, and
+ThoughtSpot login. If possible, ThoughtSpot recommends that you use LDAP/AD or
+SAML, since ThoughtSpot provides only basic authentication, with no
 restrictions on passwords, timeouts, failed logins, etc.</p>
 
-<p>The table below shows each of the options and the items to consider for each.</p>
+<p>Use the following table to help you choose an authentication option.</p>
 
 <table>
   <tr>
-    <th>SAML</th>
-    <th>LDAP/AD</th>
-    <th>ThoughtSpot</th>
+    <th><a href="/5.1/admin/setup/configure-SAML-with-tscli.html">SAML</a></th>
+    <th><a href="/5.1/admin/setup/about-LDAP.html">LDAP/AD</a></th>
+    <th><a href="/5.1/admin/users-groups/add-user.html">ThoughtSpot</a></th>
   </tr>
   <tr>
     <td>
@@ -3286,11 +3286,11 @@ restrictions on passwords, timeouts, failed logins, etc.</p>
 
 <p>All users and groups must be known to ThoughtSpot. If you are using LDAP/AD or
 SAML and don’t create users in ThoughtSpot, a user is created when the user
-first logs in. However, this user is assigned to the <code class="highlighter-rouge">All</code> group and will only
+first logs in. However, this user is assigned to the <code class="highlighter-rouge">All</code> group and can only
 see content available for all users.</p>
 
 <p>Groups are the primary way that security is managed. Groups are not
-automatically created. You can create groups and users manually or you need to
+automatically created. You can create <a href="/5.1/admin/users-groups/add-group.html">groups</a> and <a href="/5.1/admin/users-groups/add-user.html">users</a> manually, or you must
 automate the assignment from a source system. ThoughtSpot has an assignment
 script that works with most LDAP / AD stores. It also has public APIs that you
 can use to sync users and groups between source systems and your ThoughtSpot
@@ -3320,7 +3320,7 @@ appliance.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Apr 12, 2020 <br />
+        Generated: Apr 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
