@@ -3290,11 +3290,9 @@ To find a snapshot you want to back up use the following command:</p>
      [--storage_type {local|nas}][--remote]
       &lt;name&gt; &lt;directory&gt;
 </code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Check that the backup was created:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup ls
+    <p>Here is a sample <code class="highlighter-rouge">tscli backup create</code> command:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create --mode dataless &lt;my_snapshot&gt; &lt;directory_path&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3323,7 +3321,7 @@ To find a snapshot you want to back up use the following command:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Apr 12, 2020 <br />
+        Generated: Apr 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
