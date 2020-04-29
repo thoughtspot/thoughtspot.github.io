@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="There are three geo charts that let you visualize geographical data in ThoughtSpot."> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content=",  ">
 <title>Geo charts | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
 
@@ -3182,22 +3182,20 @@ $('#toc').on('click', 'a', function() {
 
   <p>Geo charts show data on a map by location. They are geo area, geo bubble, and
 geo heatmap charts. And these geo charts can display six types of geographical
-data, which are:</p>
+data, depending on territory:</p>
 
 <ul>
   <li>Country</li>
   <li>State</li>
   <li>County</li>
-  <li>Zipcode</li>
+  <li>Zip code</li>
   <li>Point (latitude/longitude)</li>
   <li>Other sub-nation regions (for international countries)</li>
 </ul>
 
-<p>In addition to the United States, ThoughtSpot also supports maps for the
-Canadian province/count maps, United Kingdom, Germany, Sweden, South Africa, and
-France.</p>
+<p>ThoughtSpot supports maps many countries. Please see the complete list in <a href="/5.0/reference/geomap-reference.html">Geo Map Reference</a>.</p>
 
-<h2 id="geo-data-that-can-be-displayed">Geo data that can be displayed</h2>
+<h2 id="displayed-geo-data">Displayed Geo data</h2>
 
 <p>Here is a table that shows which GeoType data can be displayed using which geo chart type.</p>
 
@@ -3205,6 +3203,7 @@ France.</p>
   <thead>
     <tr>
       <th>GeoType</th>
+      <th>Data Type</th>
       <th>Geo chart type</th>
       <th>Notes</th>
     </tr>
@@ -3212,71 +3211,80 @@ France.</p>
   <tbody>
     <tr>
       <td>Country</td>
+      <td>VARCHAR</td>
       <td>Geo area (default), geo bubble, geo heatmap</td>
       <td>Can also be regions.</td>
     </tr>
     <tr>
       <td>County</td>
+      <td>VARCHAR</td>
       <td>Geo area (default), geo bubble, geo heatmap</td>
       <td>Only for counties in the United States.</td>
     </tr>
     <tr>
-      <td>Point</td>
+      <td>Latitude (point)</td>
+      <td>VARCHAR or DOUBLE</td>
+      <td>Geo bubble (default), geo heatmap</td>
+      <td>Must use both latitude and longitude columns.</td>
+    </tr>
+    <tr>
+      <td>Longitude (point)</td>
+      <td>VARCHAR or DOUBLE</td>
       <td>Geo bubble (default), geo heatmap</td>
       <td>Must use both latitude and longitude columns.</td>
     </tr>
     <tr>
       <td>State</td>
+      <td>VARCHAR</td>
       <td>Geo area (default), geo bubble, geo heatmap</td>
       <td>Only for states in the United States.</td>
     </tr>
     <tr>
       <td>Zipcode</td>
+      <td>VARCHAR</td>
       <td>Geo bubble (default), geo heatmap</td>
-      <td>Zip codes in the United States.</td>
+      <td>Refer to the <a href="/5.0/reference/geomap-reference.html">Geo Map reference</a> to see which countries have supported zip codes.</td>
     </tr>
     <tr>
       <td>Other sub-nation regions</td>
+      <td>VARCHAR</td>
       <td>Geo area (default), geo bubble, geo heatmap</td>
-      <td>The display will depend on the type of administrative region chosen.</td>
+      <td>The display depends on the type of administrative region.</td>
     </tr>
   </tbody>
 </table>
 
-<p>For data to be displayed using geo charts, your administrator must configure it
-as geographical data. If you are expecting to be able to get a map
-visualization, but it isn’t available, contact your administrator so they can
-make the configuration.</p>
+<p>For data to display in geo charts, your administrator must configure it
+as geographical data. If you you don’t get an expected map
+visualization, contact your administrator so they can configure the system correctly.</p>
 
 <h2 id="area-charts">Area charts</h2>
 
-<p>Geo area charts highlight the regions of interest. Point data
-(longitude/latitude) doesn’t work on geo area charts. Also, only geo area charts
-display boundaries for counties.</p>
+<p>Geo area charts highlight the regions of interest, and
+display boundaries for various regions.</p>
 
 <p><img src="/5.0/images/state_level_geo_area_chart.png" alt="" title="Geo area chart example" /></p>
 
-<p>Your search needs one geographical column of granularity to be represented as a geo area chart.</p>
+<p>To paint a geo area chart, your search must include a geographical column with appropriate granularity. See <a href="/5.0/reference/geomap-reference.html">Geo Map Reference</a>.</p>
 
 <h2 id="geo-bubble-charts">Geo bubble charts</h2>
 
-<p>Geo bubble charts, like bubble charts, display the value of the measure by the
-size of the bubble. Zip code data makes the most sense for geo bubble charts.</p>
+<p>Geo bubble charts, like bubble charts, display the value of the measure through the relative
+size of the bubble. Zip code data is a good choice for geo bubble charts.</p>
 
 <p><img src="/5.0/images/geo_bubble_chart_example.png" alt="" title="Geo bubble chart example" /></p>
 
-<p>Your search needs one geographical column or a pair of latitude and longitude
-columns to be represented as a geo bubble chart.</p>
+<p>To paint a geo bubble chart, your search must include a geographical column, or a  latitude and longitude pair.</p>
 
 <h2 id="heatmap-charts">Heatmap charts</h2>
 
-<p>Heatmap charts are similar to treemap charts in that they both use a similar
+<p>Heatmap charts are similar to treemap charts: they both use a similar
 system of color-coding to represent data values. However, the heatmap does not
 use size to measure data, and instead requires an additional attribute.</p>
 
 <p><img src="/5.0/images/new_heatmap_look.png" alt="" title="Heatmap chart example" /></p>
 
-<p>The value of each cell depends on the measure you choose under <strong>Edit char configuration</strong>.</p>
+<p>The value of each cell depends on the measure you choose under <strong>Edit chart configuration</strong>.</p>
 
 <p><img src="/5.0/images/heatmap_value.png" alt="" title="Heatmap value dropdown" /></p>
 
@@ -3304,9 +3312,9 @@ use size to measure data, and instead requires an additional attribute.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Apr 12, 2020 <br />
+        Generated: Apr 28, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 09/23/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
