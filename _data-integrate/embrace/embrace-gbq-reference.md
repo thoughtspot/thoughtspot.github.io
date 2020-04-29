@@ -15,7 +15,7 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
 
 {: id="custom-role"}
 ## Create a custom role
-In order for ThoughtSpot Embrace to successfully query your GBQ database, you must create a custom role with specific permssions and then assign it to  your service account.
+In order to use ThoughtSpot Embrace to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.
 1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), and sign in.  
 2. Hover over **IAM & admin**.  
 3. Click **Roles**.  
