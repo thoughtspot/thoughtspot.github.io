@@ -1,7 +1,7 @@
 ---
 title: [Change chart colors]
 
-last_updated: 2/13/2020
+last_updated: 4/29/2020
 summary: "You can change the colors used in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,14 +9,14 @@ permalink: /:collection/:path.html
 To change the colors used in a chart, use the **Customize** menu to dive into the chip for the column or value you would like to change. You can set colors for:
 
 * bars, lines, areas, bubbles, maps, and other visuals on charts
+* slice with color
 * legends on charts
 * tables for conditional formatting
-* tags and editing the colors
 
 You can also [apply a conditional format]({{site.baseurl}}/end-user/search/apply-conditional-formatting.html) to change the color, based on specified criteria. This type of conditional formatting does not work with Line charts.
 
 Colors are maintained across searches within a session. For example, when doing
-a search on revenue by state, each state will keep its color assigned to it even
+a search on `revenue by state`, each state will keep the color assigned to it even
 if you change the search or chart type.
 
 ## Set colors on a chart
@@ -29,10 +29,12 @@ if you change the search or chart type.
 
 2. Use the color picker to choose a new color to represent that value.
 
-   You can also enter a HEX value directly.
+    You can also enter a HEX value directly.
 
     Your changes are saved immediately.
 
-3. Click the **X** at top right to dismiss the styles panel.
+3. Click the **X** at the top right to dismiss the chart configuration panel.
+
+    In the following example, we edited the colors used to **slice with color**.
 
     ![Change the chart color]({{ site.baseurl }}/images/chart-config.gif "Change the chart color")
