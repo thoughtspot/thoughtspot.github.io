@@ -22,7 +22,7 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | *en-CA* | English (Canada)  |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
-| *es-US* | Español (latín)  |
+| *es-US* | Español (Latinoamérica)  |
 | *es-ES* | Español (España)  |
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |

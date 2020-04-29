@@ -1,5 +1,5 @@
 ---
-title: [Español (latín) Keyword reference]
+title: [Español (Latinoamérica) Keyword reference]
 summary: Use keywords to help define a search.
 last_updated: 11/19/2019
 sidebar: mydoc_sidebar
