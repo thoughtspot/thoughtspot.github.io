@@ -1,5 +1,5 @@
 ---
-title: [Español (latín) Keyword reference]
+title: [Español (Latinoamérica) Keyword reference]
 
 
 last_updated: tbd
