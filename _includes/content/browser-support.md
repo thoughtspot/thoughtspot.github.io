@@ -10,7 +10,7 @@
     <dd>11.x, and later</dd></dlentry>
   <dlentry>
     <dt>Edge</dt>
-    <dd>44.x, and later</dd></dlentry>
+    <dd>81.0.416.53, and later</dd></dlentry>
   <dlentry>
     <dt>Safari</dt>
     <dd>13.x, and later</dd></dlentry>
