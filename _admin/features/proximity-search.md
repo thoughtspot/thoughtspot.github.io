@@ -1,17 +1,15 @@
 ---
 title: [Proximity searches "near" and "farther than"]
 
-last_updated: tbd
+last_updated: 4/29/2020
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Proximity keywords allow you to search and show the results on a map.  Using
-proximity keywords causes ThoughtSpot to display a circle that represents your
-set distance on the geo charts.
+Proximity keywords allow you to search for data on locations `near` or `farther than` *n* number of miles from a specified location. For example, you could search for `sales` by `store county near santa clara county within 50 miles`, or `sales` by `store city farther than 50 miles from santa clara county`.
 
-![]({{ site.baseurl }}/images/geospatial_search.png "Geospatial search on a geo area map")
+![Proximity search with the near keyword]({{ site.baseurl }}/images/geo-proximity-search-example.png "Proximity search with the near keyword")
 
 The proximity keywords are:
 
