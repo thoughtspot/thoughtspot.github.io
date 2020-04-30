@@ -16,7 +16,7 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
 {: id="custom-role"}
 ## Create a custom role
 In order to use ThoughtSpot Embrace to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.
-1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), and sign in.  
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.  
 2. Hover over **IAM & admin**.  
 3. Click **Roles**.  
 4. Click **+CREATE ROLE**.  
@@ -43,8 +43,8 @@ In order to use ThoughtSpot Embrace to query your GBQ database, you must create 
 {: id="service-account"}
 ## Set up service account
 You may already have a service account for GBQ with the proper permissions in place. If not, follow these steps to create a service account.
-1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), and sign in.
-2. Click the left menu button, if the menu is not already open.
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.
+2. Click the navigation menu in the upper left, if it is not already open.
 3. Hover over **IAM & Admin**.
 4. Click **Service Accounts**.
 
@@ -54,14 +54,31 @@ You may already have a service account for GBQ with the proper permissions in pl
 7. Click **CREATE**.
 
     ![Create your service account]({{ site.baseurl }}/images/gcp-createserviceaccount.png "Create your service account")
-8. Specify permissions. Under **Select a role**, choose **BigQuery > BigQuery Data Viewer**.
+8. On the Service account permissions page, click **Select a role**, and choose **Project > Owner**.
+9. Click **+ADD ANOTHER ROLE**, then click **Select a role**, choose **Custom**, and select the custom role you created in [Create a custom role](#custom-role).
+<!--  ![Specify permissions]({{ site.baseurl }}/images/gbq-serviceaccountpermissions.png "Specify permissions") -->
+10. Click **CONTINUE**.  
+11. On the Create service account page, click **+ CREATE KEY**.
+12. For **Key type**, choose **JSON**.
+13. Click **CREATE**. The key downloads to your computer.<br>
+    When the download is complete, the message: "Private key saved to your computer" appears.
+14. Make note of the name of the filename, so you can find it on your computer, and then click **CLOSE**.
+15. When you are ready to add a connection to BigQuery in ThoughtSpot, open the private key file in a text editor, and copy the entire contents of the file.
+16. In the connection details page of your BigQuery connection in ThoughtSpot, paste this key into the **Service account** field.  
+    For details on how to add a connection to BigQuery in ThoughtSpot, see [Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html).
 
-    ![Specify permissions]({{ site.baseurl }}/images/gbq-serviceaccountpermissions.png "Specify permissions")
-9.  Click **+ADD ANOTHER ROLE**.
-10. Under **Select a role**, choose **Custom**, and then select the custom role you created in [Create a custom role](#custom-role).
-11. Click **CONTINUE**  
-12. On the Create service account page, click **+ CREATE KEY**.
-13. For **Key type**, choose **JSON**.
-14. Click **CREATE**. The key downloads to your computer.<br>
-    Copy and paste this key under **Service account** when connecting to Google BigQuery in ThoughtSpot.
-15. Click **DONE**.    
+{: id="share-dataset"}
+## Share dataset
+
+To make your dataset available for your Google BigQuery connection in ThoughtSpot, you must share it with your service account in Google BigQuery in an owner role.
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.
+2. Click the navigation menu in the upper left, if it is not already open.
+3. Scroll down in the navigation menu into the BIG DATA section, and click **BigQuery**.  
+   Your project should be listed on the left side of the page under the search box.
+4. Click your project to reveal its available datasets.
+5. Click the dataset that you want to share.
+6. Click **SHARE DATASET**.
+7. Click **Owner** to reveal the complete list of project owners.
+8. In the Add members box, enter the member email address of the service account you want to share the dataset with.
+9. Click **Select a role**, select **Project > Owner**, and click **Add**.
+10. Click **Done**.
