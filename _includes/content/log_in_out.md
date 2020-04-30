@@ -41,6 +41,11 @@ The following browsers are verified to work well with the ThoughtSpot applicatio
       <td>10 or greater</td>
       <td>MacOS</td>
     </tr>
+    <tr>
+      <td>Microsoft Edge</td>
+      <td>81.0.416.53 and later</td>
+      <td>Windows 7 or later, MacOS</td>
+    </tr>
   </tbody>
 </table>
 
