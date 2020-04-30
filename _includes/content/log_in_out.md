@@ -24,7 +24,7 @@ To sign in to ThoughtSpot from a browser:
 1. Open the browser and type in the Web address for ThoughtSpot: `http://HOSTNAME_OR_IP`
 2. Enter your username and password and click **Sign In**.
 
-   ![]({{ site.baseurl }}/images/log_in.png "Log in")
+   ![Log in to ThoughtSpot]({{ site.baseurl }}/images/ts-login-page.png "Log in to ThoughtSpot")
 
 
 ## Sign out
@@ -35,4 +35,4 @@ ThoughtSpot. To sign out of ThoughtSpot from a browser:
 1. Click your user icon at the top right hand corner of the screen.
 2. Click **Sign out**.
 
-      ![]({{ site.baseurl }}/images/log_out.png "Log out")
+      ![Log out]({{ site.baseurl }}/images/log-out-new.png "Log out")
