@@ -1,6 +1,6 @@
 ---
 title: [Configure columns for the X and Y axes]
-last_updated: 4/29/2020
+last_updated: 5/1/2020
 summary: "You can configure specific columns to be on the X and Y axes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,7 +13,7 @@ You can only add attributes to the X axis, and measures to the Y axis. If you ca
 
 You can also drop attributes and measures to the **not visualized** section. This removes them from the visualization, but not from your search.
 
-You can also drag and drop attributes into the **slice with color** section, which appears for certain chart types, such as column or bar charts, if you have more than one measure in a search. **Slicing with color** enables you to separate your data based on an additional attribute. In the following example, we sliced sales for each department by `store region`:
+You can also drag and drop attributes into the **slice with color** section, which appears for certain chart types, such as column or bar charts, if you have more than one measure in a search. **Slicing with color** enables you to separate data already sorted by an attribute into subcategories, based on another attribute in your search. In the following example, we sliced `sales` for each `department` by `store region`.
 
 ![Slice with color]({{ site.baseurl }}/images/chartconfig-customizemenu.png "Slice with color")
 
