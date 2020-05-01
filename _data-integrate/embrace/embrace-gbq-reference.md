@@ -16,7 +16,7 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
 {: id="custom-role"}
 ## Create a custom role
 In order to use ThoughtSpot Embrace to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.
-1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.  
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com){:target="_blank"}, sign in, and select your project.  
 2. Hover over **IAM & admin**.  
 3. Click **Roles**.  
 4. Click **+CREATE ROLE**.  
@@ -37,13 +37,15 @@ In order to use ThoughtSpot Embrace to query your GBQ database, you must create 
 - bigquery.tables.getData
 - bigquery.tables.list
 - resourcemanager.projects.get
+
+   ![]({{ site.baseurl }}/images/gbq-role-permissions.png)
 7. Click **ADD**.
 8. Click **CREATE**.
 
 {: id="service-account"}
 ## Set up service account
 You may already have a service account for GBQ with the proper permissions in place. If not, follow these steps to create a service account.
-1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com){:target="_blank"}, sign in, and select your project.
 2. Click the navigation menu in the upper left, if it is not already open.
 3. Hover over **IAM & Admin**.
 4. Click **Service Accounts**.
@@ -54,8 +56,7 @@ You may already have a service account for GBQ with the proper permissions in pl
 7. Click **CREATE**.
 
     ![Create your service account]({{ site.baseurl }}/images/gcp-createserviceaccount.png "Create your service account")
-8. On the Service account permissions page, click **Select a role**, and choose **Project > Owner**.
-9. Click **+ADD ANOTHER ROLE**, then click **Select a role**, choose **Custom**, and select the custom role you created in [Create a custom role](#custom-role).
+8. On the Service account permissions page, click **Select a role**, choose **Custom**, and select the custom role you created in [Create a custom role](#custom-role).
 <!--  ![Specify permissions]({{ site.baseurl }}/images/gbq-serviceaccountpermissions.png "Specify permissions") -->
 10. Click **CONTINUE**.  
 11. On the Create service account page, click **+ CREATE KEY**.
@@ -71,7 +72,7 @@ You may already have a service account for GBQ with the proper permissions in pl
 ## Share dataset
 
 To make your dataset available for your Google BigQuery connection in ThoughtSpot, you must share it with your service account in Google BigQuery in an owner role.
-1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), sign in, and select your project.
+1. Navigate to [console.cloud.google.com](https://console.cloud.google.com){:target="_blank"}, sign in, and select your project.
 2. Click the navigation menu in the upper left, if it is not already open.
 3. Scroll down in the navigation menu into the BIG DATA section, and click **BigQuery**.  
    Your project should be listed on the left side of the page under the search box.
