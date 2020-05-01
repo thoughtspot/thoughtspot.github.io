@@ -1,7 +1,7 @@
 ---
 title: [Change chart colors]
 
-last_updated: 4/29/2020
+last_updated: 5/1/2020
 summary: "You can change the colors used in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -38,3 +38,10 @@ if you change the search or chart type.
     In the following example, we edited the colors used to **slice with color**.
 
     ![Change the chart color]({{ site.baseurl }}/images/chart-config.gif "Change the chart color")
+
+## Set colors from the legend
+When you **slice with color**, or when you have more than one column on an axis, a legend appears next to or below your chart. The legend tells you the value each color in your chart stands for. You can change the colors in your chart directly from the legend. Simply click on the color circle next to a legend item, and click on a different color, or input a HEX value.
+
+![Change the chart color from the legend]({{ site.baseurl }}/images/chart-config-legend-color.gif "Change the chart color from the legend")
+
+Note that you must click on the color circle ***next to*** the legend item to change the color. If you click on the legend item itself, you temporarily [hide it from the visualization]({{ site.baseurl }}/end-user/search/hide-and-show-values.html).
