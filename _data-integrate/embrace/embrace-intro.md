@@ -26,6 +26,10 @@ You create a connection to the external database, choosing the columns from each
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
 
+## New features in 6.0
+
+<script src="https://fast.wistia.com/embed/medias/1n7ei0tqr4.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_1n7ei0tqr4 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
 ## Limitations
 
 ### Feature availability in Embrace
