@@ -53,10 +53,6 @@ Some examples of valid searches are:
 
 `Store city` in these queries refers to the name of the column that `tokyo` falls under in the data. You must specify the name of the column for the location you are searching on ***before*** entering the `near` or `farther than` keyword.
 
-You can filter your search only with actual values found in the data. For example,
-`longitude between -125.000000 and -115.316670` may work for you, but not
- `longitude between -125 and -115`, if your latitude and longitude data values always have six decimal places.
-
 ## Proximity search configuration requirements
 
 * All your data must be in the same data set. You cannot search on two different tables, related by a join, like you can in a typical ThoughtSpot search. To search on two (or more) different tables, [create a Worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) that contains data from those tables and use the Worksheet as your data source.
