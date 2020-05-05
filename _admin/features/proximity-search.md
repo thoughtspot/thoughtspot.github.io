@@ -53,6 +53,8 @@ Some examples of valid searches are:
 
 `Store city` in these queries refers to the name of the column that `tokyo` falls under in the data. You must specify the name of the column for the location you are searching on ***before*** entering the `near` or `farther than` keyword.
 
+You can filter your search by latitude or longitude with a `between` filter, like `latitude between 36 and 40`. However, you can't run a `between` filter that would exclude the location you’re using for the geo filter. For example, Santa Clara County's latitude is 37.38, so you couldn't search for `store county near santa clara county` and filter by `latitude between 39 and 42`. Instead, you should filter by `latitude between 37 and 42`.
+
 ## Proximity search configuration requirements
 
 * All your data must be in the same data set. You cannot search on two different tables, related by a join, like you can in a typical ThoughtSpot search. To search on two (or more) different tables, [create a Worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) that contains data from those tables and use the Worksheet as your data source.
