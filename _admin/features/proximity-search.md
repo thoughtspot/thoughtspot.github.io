@@ -37,8 +37,6 @@ Given a location and an optional distance, the search returns all instances of a
 
 To increase the number of latitude/ longitude pairs that the system will accept, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html).
 
-A latitude/ longitude pair can be associated with more than one geographical value.
-
 You can add any additional filtering to your query.
 
 ## Proximity search examples
