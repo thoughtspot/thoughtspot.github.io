@@ -228,7 +228,7 @@ If you cannot find your **Full account name** in Snowflake, see the following ex
 <table>
 <tbody>
 <tr>
-<th>Cloud plafrom</th>
+<th>Cloud platform</th>
 <th>Region</th>
 <th>Full account name</th>
 </tr>
