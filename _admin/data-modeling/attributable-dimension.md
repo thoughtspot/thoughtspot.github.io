@@ -2,7 +2,7 @@
 title: [Change the Attribution Dimension]
 
 toc: true
-last_updated: 11/15/2019
+last_updated: 5/6/2020
 summary: "The Attribution Dimension setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -60,7 +60,6 @@ dimension (not producing any meaningful attribution across a chasm trap):
 1. Find the column that is not an attribution dimension.
 2. Select its **Attribution Dimension**.
 3. Set the value to `NO`.
-  If you're using the modeling file, set it to **FALSE**.
 4. Save your changes.
 
 

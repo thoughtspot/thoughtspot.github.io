@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 3/4/2020
+last_updated: 5/6/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -27,9 +27,7 @@ To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to acco
 ## Configure SSL for web traffic
 To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
 
-You can then proceed to [Configure SSL using tscli]({{ site.baseurl
-}} #ssl-configure-tscli), and [Test the SSL certificate]({{ site.baseurl
-}} #ssl-configure-test).
+You can then proceed to [Configure SSL using tscli](#ssl-configure-tscli), and [Test the SSL certificate](#ssl-configure-test).
 
 {: id="ssl-certificate-chain"}
 ### SSL certificate chain
