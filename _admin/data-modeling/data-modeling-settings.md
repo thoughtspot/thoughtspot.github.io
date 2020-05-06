@@ -1,7 +1,7 @@
 ---
 title: [Overview of data modeling settings]
 keywords: tbd
-last_updated: tbd
+last_updated: 5/6/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,7 +35,7 @@ This index lists the editable data modeling settings. You can apply these settin
 | [Index Priority](change-index.html#) | Changes the priority of a column in search suggestions. |
 | [Format Pattern](set-format-pattern-numbers.html#) | Specifies the format to use for numeric values or dates that show in the column. |
 | [Currency Format](set-format-pattern-numbers.html#set-currency-format) | Specifies the format to use when showing the currencies in a column. |
-| [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. |
+| [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
 | [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.|
 
 ## Data modeling best practices
