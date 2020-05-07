@@ -5,6 +5,9 @@ summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+## Prerequisites
+
 Before synchronizing users and groups, [set up integration with LDAP using Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html). Then, collect the following information:
 
 -   IP address and port of the server where your ThoughtSpot instance is running.
@@ -30,6 +33,8 @@ Before synchronizing users and groups, [set up integration with LDAP using Activ
   /usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py
   ````
 
+## Fetch users and groups from LDAP with Active Directory
+
 There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
 
@@ -37,6 +42,8 @@ into your ThoughtSpot system:
 -   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). If you choose this method, you can run the script periodically using a cron job.
 
 {% include note.html content="When you run the synchronization script, you perform a one-time sync. You must schedule a recurring sync using a cron job or your own scheduling tool to keep your ThoughtSpot users up to date with your users in LDAP." %}
+
+### Run the sync script
 
 To run the LDAP sync script in interactive mode:
 
