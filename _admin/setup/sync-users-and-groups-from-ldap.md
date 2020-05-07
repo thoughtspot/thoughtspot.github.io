@@ -51,7 +51,7 @@ To run the LDAP sync script in interactive mode:
 2. Run the command to start the script:
 
     ```
-    python3 syncUsersAndGroups.py interactive
+    python syncUsersAndGroups.py interactive
     ```
 
 3. Answer the prompts using the information you collected above. Specify `2` for the `scope` if you would like to sync all groups, including subgroups. For example:
@@ -90,7 +90,7 @@ To run the LDAP sync script in interactive mode:
     Issue the Python script commands, supplying all this information, following this format example:
 
     ```
-    python3 syncUsersAndGroups.py script \
+    python syncUsersAndGroups.py script \
     –-ts_hostport <ts_hostport> \
     --disable_ssl \
     --ts_uname <ts_username> \
