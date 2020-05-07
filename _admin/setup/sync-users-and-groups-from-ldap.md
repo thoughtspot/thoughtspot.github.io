@@ -91,7 +91,7 @@ To run the LDAP sync script in interactive mode:
     Issue the Python script commands, supplying all this information, following this format example:
 
     ```
-    python3 syncUsersAndGroups.py script \
+    python syncUsersAndGroups.py script \
     –-ts_hostport <ts_hostport> \
     --disable_ssl \
     --ts_uname <ts_username> \
