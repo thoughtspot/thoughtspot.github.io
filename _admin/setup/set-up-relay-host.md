@@ -1,6 +1,6 @@
 ---
 title: [Set the relay host for SMTP (email)]
-last_updated: 3/4/2020
+last_updated: 5/8/2020
 summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,10 +14,20 @@ Set up SMTP rules to send critical email notifications to ThoughtSpot Support.
 To set up a relay host:
 
 1. Log in to the Linux shell using SSH.
-2. Issue the setup command, providing the IP address of the relay host:
+2. Issue the setup command, providing the IP address of the relay host.
+
+    Starting with ThoughtSpot release 6.0.5, you can specify a custom port to use to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment. For example, port 25 is blocked in GCP environments.
+
+    To use the default port, run the setup command:
 
     ```
     $ tscli smtp set-relayhost <IP_address>
+    ```
+
+    To use a custom port instead of port 25, run the setup command, specifying the port you want to use:
+
+    ```
+    $ tscli smtp set-relayhost <IP_address>:<custom_port>
     ```
 
 3. Verify your settings:
