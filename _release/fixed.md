@@ -1,13 +1,14 @@
 ---
 title: ["Fixed issues"]
 keywords: "fixed issues"
-last_updated: 04/09/2020
+last_updated: 05/08/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
 <ul>
+  <li><a href="#6-0-5">6.0.5 Fixed issues</a></li>
   <li><a href="#6-0-4">6.0.4 Fixed issues</a></li>
   <li><a href="#6-0-3">6.0.3 Fixed issue</a></li>
   <li><a href="#6-0-2">6.0.2 Fixed issues</a></li>
@@ -74,6 +75,19 @@ These are the issues we fixed in recent ThoughtSpot Releases.
           </details>
         </li>
       </ul>
+
+<a id="6-0-5"></a>
+## 6.0.5 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.0.4.
+
+  - Disable Copy Link flag is not respected in pinboard action items.
+
+  - Management console is not accessible.
+
+  - A pinboard with an advanced formula can be viewed by an administrator, but not by a regular user they share it with.
+
+  - A cluster that is using a customer logo, still shows the ThoughtSpot logo on downloaded PDFs.
 
 <a id="6-0-4"></a>
 ## 6.0.4 Fixed issues

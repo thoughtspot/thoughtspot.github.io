@@ -1,20 +1,26 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: 04/09/2020
+last_updated: 05/08/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html)
 
 * [6.0.4 New Features](#6-0-4-new)
+* [6.0.5 New Features](#6-0-5-new)
 * [6.0.2 New Features](#6-0-2-new)
 * [6.0 New Features](#6-new)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-0-5-new"}
+## 6.0.5 New Features and Functionality
+
+When an IT Ops admin sets up their SMTP relay host, they can now specify a custom port when they set up their smtp relay host.
 
 {: id="6-0-4-new"}
 ## 6.0.4 New Features and Functionality
@@ -219,15 +225,15 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.4 release
+If you are running one of the following versions, you can upgrade to the 6.0.5 release
 directly:
 
-* 5.3.x to 6.0.4
-* 5.2.x to 6.0.4
+* 5.3.x to 6.0.5
+* 5.2.x to 6.0.5
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.5 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
