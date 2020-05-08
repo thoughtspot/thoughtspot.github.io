@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 11/13/2019
+last_updated: 5/8/2020
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
@@ -2095,7 +2095,7 @@ This subcommand has the following options:
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
-    <p>Starting with ThoughtSpot release 6.0.5, you can specify a custom port to use to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment. For example, port 25 is blocked in GCP environments.</p>
+    <p>Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
     <p>To use the default port, run the setup command normally:</p>
     <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
     <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
