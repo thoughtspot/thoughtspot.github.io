@@ -1,20 +1,49 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: 04/09/2020
+last_updated: 05/08/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html)
 
+* [6.0.5 New Features](#6-0-5-new)
 * [6.0.4 New Features](#6-0-4-new)
 * [6.0.2 New Features](#6-0-2-new)
 * [6.0 New Features](#6-new)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-0-5-new"}
+## 6.0.5 New Features and Functionality
+
+### Set a relay host for SMTP
+
+You can now specify a custom port to connect to the SMTP relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
+
+See [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
+
+### Red Hat Enterprise Linux (RHEL)
+The 6.0.5 release of ThoughtSpot runs with RHEL 7.8 only; starting with this release, we no longer support RHEL 7.7. See <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.8_release_notes/index" target="_blank">RHEL 7.8 Release notes</a>.
+
+### Disable items in embedded ThoughtSpot
+
+You can now disable any of the following items when ThoughtSpot is embedded:
+
+- Share
+- Copy a link
+- Send feedback
+
+Contact ThoughtSpot support to enable this feature.
+
+### Set limits on the number of rows that ThoughtSpot loads
+
+In this release, you can now set a limit on the number of rows ThoughtSpot loads initially for visualizations. This can reduce the load time of visualizations that have many rows, and tend to load slowly.
+
+Contact ThoughtSpot support to enable this feature.
 
 {: id="6-0-4-new"}
 ## 6.0.4 New Features and Functionality
@@ -219,15 +248,15 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.0.4 release
+If you are running one of the following versions, you can upgrade to the 6.0.5 release
 directly:
 
-* 5.3.x to 6.0.4
-* 5.2.x to 6.0.4
+* 5.3.x to 6.0.5
+* 5.2.x to 6.0.5
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.5 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
