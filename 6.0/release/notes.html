@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[“6.0 Release Notes”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features." />
-<meta property="og:description" content="ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features." />
+<meta name="description" content="ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features." />
+<meta property="og:description" content="ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.0/release/notes.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/release/notes.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-05T22:50:24-07:00" />
+<meta property="article:published_time" content="2020-05-08T22:01:53-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“6.0 Release Notes”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“6.0 Release Notes”]","dateModified":"2020-05-05T22:50:24-07:00","url":"https://docs.thoughtspot.com/6.0/release/notes.html","datePublished":"2020-05-05T22:50:24-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/release/notes.html"},"description":"ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“6.0 Release Notes”]","dateModified":"2020-05-08T22:01:53-07:00","url":"https://docs.thoughtspot.com/6.0/release/notes.html","datePublished":"2020-05-08T22:01:53-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/release/notes.html"},"description":"ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3718,18 +3718,19 @@ var ss360Config = {
   Estimated reading time:
   
   
-    9 minutes
+    11 minutes
   
 </span>
  -->
 
     
 
-  <p>ThoughtSpot version 6.0.4 is now available. These release notes include information about new and enhanced features.</p>
+  <p>ThoughtSpot version 6.0.5 is now available. These release notes include information about new and enhanced features.</p>
 
 <p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html">Fixed issues</a></p>
 
 <ul>
+  <li><a href="#6-0-5-new">6.0.5 New Features</a></li>
   <li><a href="#6-0-4-new">6.0.4 New Features</a></li>
   <li><a href="#6-0-2-new">6.0.2 New Features</a></li>
   <li><a href="#6-new">6.0 New Features</a></li>
@@ -3737,13 +3738,42 @@ var ss360Config = {
   <li><a href="#upgrade-paths">Supported Upgrade Paths</a></li>
 </ul>
 
+<h2 id="6-0-5-new">6.0.5 New Features and Functionality</h2>
+
+<h3 id="set-a-relay-host-for-smtp">Set a relay host for SMTP</h3>
+
+<p>You can now specify a custom port to connect to the SMTP relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
+
+<p>See <a href="/6.0/admin/setup/set-up-relay-host.html">Set the relay host for SMTP</a>.</p>
+
+<h3 id="red-hat-enterprise-linux-rhel">Red Hat Enterprise Linux (RHEL)</h3>
+<p>The 6.0.5 release of ThoughtSpot runs with RHEL 7.8 only; starting with this release, we no longer support RHEL 7.7. See <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.8_release_notes/index" target="_blank">RHEL 7.8 Release notes</a>.</p>
+
+<h3 id="disable-items-in-embedded-thoughtspot">Disable items in embedded ThoughtSpot</h3>
+
+<p>You can now disable any of the following items when ThoughtSpot is embedded:</p>
+
+<ul>
+  <li>Share</li>
+  <li>Copy a link</li>
+  <li>Send feedback</li>
+</ul>
+
+<p>Contact ThoughtSpot support to enable this feature.</p>
+
+<h3 id="set-limits-on-the-number-of-rows-that-thoughtspot-loads">Set limits on the number of rows that ThoughtSpot loads</h3>
+
+<p>In this release, you can now set a limit on the number of rows ThoughtSpot loads initially for visualizations. This can reduce the load time of visualizations that have many rows, and tend to load slowly.</p>
+
+<p>Contact ThoughtSpot support to enable this feature.</p>
+
 <h2 id="6-0-4-new">6.0.4 New Features and Functionality</h2>
 
 <p>For a complete list of issues that we fixed in this release, see <a href="/6.0/release/fixed.html#6-0-4">6.0.4 Fixed issues</a>.</p>
 
-<h3 id="red-hat-enterprise-linux-rhel">Red Hat Enterprise Linux (RHEL)</h3>
+<h3 id="red-hat-enterprise-linux-rhel-1">Red Hat Enterprise Linux (RHEL)</h3>
 
-<p>This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
+<p>This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL image that your organization manages internally.
 ThoughtSpot certifies RHEL 7.7 on the following platforms:</p>
 
 <ul>
@@ -3973,18 +4003,19 @@ We like to have a diversity of experience and perspective, and want to hear from
 
 <h2 id="upgrade-paths">Supported Upgrade Paths</h2>
 
-<p>If you are running one of the following versions, you can upgrade to the 6.0.4 release
+<p>If you are running one of the following versions, you can upgrade to the 6.0.5 release
 directly:</p>
 
 <ul>
-  <li>5.3.x to 6.0.4</li>
-  <li>5.2.x to 6.0.4</li>
+  <li>6.0.x to 6.0.5</li>
+  <li>5.3.x to 6.0.5</li>
+  <li>5.2.x to 6.0.5</li>
 </ul>
 
 <p>This includes any hotfixes or customer patches on these branches.</p>
 
 <p>If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release.</p>
+First, upgrade to version 5.2.x, 5.3.x, or 6.0.x, and then to the 6.0.5 release.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked.</div>
 
@@ -4014,9 +4045,9 @@ First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.4 release
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: May 5, 2020 <br />
+        Generated: May 8, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 05/08/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
