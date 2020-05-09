@@ -23,7 +23,7 @@ For a complete list of issues that we fixed in this release, see [6.0.4 Fixed is
 
 ### Red Hat Enterprise Linux (RHEL)
 
-This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
+This release of ThoughtSpot introduces deployment support for <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank">RHEL 7.7</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an RHEL image that your organization manages internally.
 ThoughtSpot certifies RHEL 7.7 on the following platforms:
 
 - ThoughtSpot-configured appliances, both DELL hardware and SMC hardware

@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
 | &#10063; | [2. Partition the hosts](#partition-hosts) |
-| &#10063; | [3. Install RHEL version 7.7 on all hosts](#install-rhel) |
+| &#10063; | [3. Install RHEL on all hosts](#install-rhel) |
 | &#10063; | [4. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux](#disable-selinux) |
@@ -71,7 +71,9 @@ Note that the size of the root drive on appliances is limited to 200GB; the part
 {: id="install-rhel"}
 ## Install RHEL on hosts
 
-ThoughtSpot is certified with RHEL version 7.7; we **do not** support other versions of RHEL, including 8 and 8.1.
+We certify ThoughtSpot Release 6.0.4 with RHEL version 7.7 only, and ThoughtSpot Release 6.0.5 with RHEL version 7.8 only.
+
+We **do not** support other versions of RHEL, including 8 and 8.1.
 
 {: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
