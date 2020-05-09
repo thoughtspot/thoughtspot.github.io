@@ -24,7 +24,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 You can now specify a custom port to connect to the SMTP relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
 
-See [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
+See [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html).
 
 ### Red Hat Enterprise Linux (RHEL)
 The 6.0.5 release of ThoughtSpot runs with RHEL 7.8 only; starting with this release, we no longer support RHEL 7.7. See <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.8_release_notes/index" target="_blank">RHEL 7.8 Release notes</a>.
@@ -251,12 +251,13 @@ Please contact us if you are interested in participating in the <a href="mailto:
 If you are running one of the following versions, you can upgrade to the 6.0.5 release
 directly:
 
+* 6.0.x to 6.0.5
 * 5.3.x to 6.0.5
 * 5.2.x to 6.0.5
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0.5 release.
+First, upgrade to version 5.2.x, 5.3.x, or 6.0.x, and then to the 6.0.5 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
