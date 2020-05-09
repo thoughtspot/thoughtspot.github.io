@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-05T22:50:24-07:00" />
+<meta property="article:published_time" content="2020-05-08T22:01:53-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“tscli command reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“tscli command reference”]","dateModified":"2020-05-05T22:50:24-07:00","url":"https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html","datePublished":"2020-05-05T22:50:24-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“tscli command reference”]","dateModified":"2020-05-08T22:01:53-07:00","url":"https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html","datePublished":"2020-05-08T22:01:53-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5746,7 +5746,7 @@ Support for help on how to configure a whitelist.</div>
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] <em>relayhost</em></code></dt>
   <dd>
-    <p>Sets the specified <code>relayhost</code> for SMTP (email) sent from the cluster.</p>
+    <p>Sets the specified <code>relayhost</code>, in the form of an IP address, for SMTP (email) sent from the cluster.</p>
     <p>Accepts the following flag:</p>
       <dl>
         <dlentry>
@@ -5754,6 +5754,11 @@ Support for help on how to configure a whitelist.</div>
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
+    <p>Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
+    <p>To use the default port, run the setup command normally:</p>
+    <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
+    <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
+    <p><code>$ tscli smtp set-relayhost <em>IP_address</em>:<em>custom_port</em></code></p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>
@@ -6338,9 +6343,9 @@ Support for help on how to configure a whitelist.</div>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: May 5, 2020 <br />
+        Generated: May 8, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/13/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 5/8/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
