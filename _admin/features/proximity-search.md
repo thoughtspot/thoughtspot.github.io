@@ -1,7 +1,7 @@
 ---
 title: [Proximity searches "near" and "farther than"]
 
-last_updated: 5/6/2020
+last_updated: 5/11/2020
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 toc: false
 sidebar: mydoc_sidebar
@@ -21,11 +21,23 @@ Note that you can ***only*** use the `near` and `farther than` keywords on data 
 
 ![Proximity search with the farther than keyword]({{ site.baseurl }}/images/geo-proximity-search-farther-than.png "Proximity search with the farther than keyword")
 
-The proximity keywords are:
+## Proximity search syntax
 
--   `near`
--   `near…within n miles` \| `km` \| `meters`
--   `farther than n miles` \| `km` \| `meters from`
+There are two proximity search keywords: `near` and `farther than`. Here is the syntax for these keywords:
+
+-   `<column> near <location>`<br>
+
+    example: `store city near tokyo`
+
+-   `<column> near <location> within <n> (miles | km | meters)`<br>
+
+    example: `store city near tokyo within 50 miles`
+
+-   `<column> farther than <n> (miles | km | meters) from <location>`<br>
+
+    example: `store city farther than 50 miles from tokyo`
+
+`Store city` in these examples refers to the name of the column that `tokyo` falls under in the data. You must specify the name of the column for the location you are searching on ***before*** entering the `near` or `farther than` keyword.
 
 ## How proximity search works
 
@@ -35,26 +47,14 @@ To increase the 10 km default, [contact ThoughtSpot support]({{ site.baseurl }}/
 
 Given a location and an optional distance, the search returns all instances of a geotype column that fall within the parameters. For example, for the `near santa clara county` search shown above, the system searches for rows with `santa clara county` in it and finds the corresponding latitude and longitude columns. The system can handle up to 30 latitude/ longitude pairs for a given geographical value, like a city, country, or county. Then, ThoughtSpot finds all latitude/ longitude pairs with a direct distance of less than 10 km or a specified distance from the `santa clara county` latitude/ longitude pairs.
 
-To increase the number of latitude/ longitude pairs that the system will accept, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html).
+To increase the maximum number of latitude/ longitude pairs that can be associated with a given geographical value, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html).
 
 You can add any additional filtering to your query.
 
-## Proximity search examples
-
-Some examples of valid searches are:
-
-`sales store city near tokyo`
-
-`sales store city near tokyo within 50 miles`
-
-`sales store city farther than 50 miles from tokyo`
-
-`Store city` in these queries refers to the name of the column that `tokyo` falls under in the data. You must specify the name of the column for the location you are searching on ***before*** entering the `near` or `farther than` keyword.
-
 ## Proximity search configuration requirements
 
-* All your data must be in the same data set. You cannot search on two different tables, related by a join, like you can in a typical ThoughtSpot search. To search on two (or more) different tables, [create a Worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) that contains data from those tables and use the Worksheet as your data source.
-* The Worksheet or one of the tables in your data source must contain a column of type `longitude` and a column of type `latitude`.
-* The latitude and longitude data must be on the same table. If your data source is a Worksheet or View, the latitude and longitude columns can be on different underlying tables, as long as they are in the same Worksheet or View.
+* You must use a single data source, like a table, Worksheet, or View, to run a proximity search. You cannot search on two different tables, related by a join, like you can in a typical ThoughtSpot search. To search on two (or more) different tables, [create a Worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) that contains data from those tables and use the Worksheet as your data source.
+* Your data source must contain a column of type `longitude` and a column of type `latitude`.
 * Your administrators must [configure the latitude and longitude columns]({{ site.baseurl }}/admin/loading/datatypes.html#how-to-import-geographical-data) using the
 appropriate GeoType.
+* Your administrators must enable this feature. If you are having trouble using proximity search, and all other configuration requirements are met, the feature may be turned off. Ask your administrator to [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn the feature on.
