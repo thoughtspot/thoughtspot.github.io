@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/app-integrate/reference/user-api.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-05T23:00:26-07:00" />
+<meta property="article:published_time" content="2020-05-10T18:13:26-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“User API”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“User API”]","dateModified":"2020-05-05T23:00:26-07:00","url":"https://docs.thoughtspot.com/latest/app-integrate/reference/user-api.html","datePublished":"2020-05-05T23:00:26-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/reference/user-api.html"},"description":"You can use the User APIs to manage your users and groups in ThoughtSpot. For example, you may want to view all users and groups in your ThoughtSpot cluster.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“User API”]","dateModified":"2020-05-10T18:13:26-07:00","url":"https://docs.thoughtspot.com/latest/app-integrate/reference/user-api.html","datePublished":"2020-05-10T18:13:26-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/reference/user-api.html"},"description":"You can use the User APIs to manage your users and groups in ThoughtSpot. For example, you may want to view all users and groups in your ThoughtSpot cluster.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3757,7 +3757,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    5 minutes
+    6 minutes
   
 </span>
  -->
@@ -3837,38 +3837,35 @@ $('#toc').on('click', 'a', function() {
 <p>This API uses <code class="language-plaintext highlighter-rouge">multipart/form-data</code> content type.</p>
 
 <table>
-   <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
-   </colgroup>
-   <thead>
-      <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-   <tr>
-      <td><code>principals</code></td><td>string</td>
+  <thead>
+    <tr>
+      <th>Form Parameter</th>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">principals</code></td>
+      <td>string</td>
       <td>Specifies a list of principal objects. This is ideally a JSON file containing containing all users and groups present in the external database.</td>
-   </tr>
-      <tr>
-         <td><code>applyChanges</code></td><td>boolean</td>
-         <td>A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated. <p><b>Note</b>: Use this parameter to validate a difference before applying changes.</p>
-         </td>
-      </tr>
-
-      <tr>
-         <td><code>removeDeleted</code></td><td>boolean</td>
-         <td>A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.</td>
-      </tr>
-      <tr>
-         <td><code>password</code></td><td>string</td>
-         <td>Specifies a password.</td>
-      </tr>
-   </tbody>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">applyChanges</code></td>
+      <td>boolean</td>
+      <td>A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated.  Use this parameter to validate a difference before applying changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">removeDeleted</code></td>
+      <td>boolean</td>
+      <td>A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">password</code></td>
+      <td>string</td>
+      <td>Specifies a password.</td>
+    </tr>
+  </tbody>
 </table>
 
 <h3 id="request-example-1">Request Example</h3>
@@ -3883,14 +3880,65 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="response-example-1">Response Example</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-  'usersAdded': ['username1','username2'],
-  'usersDeleted': ['username3'],
-  'usersUpdated': ['username4'],
-  'groupsAdded': ['groupname1'],
-  'groupsDeleted': ['groupname2','groupname3'],
-  'groupsUpdated': ['groupname4']
-}
+<p>This example covers user objects (with emails), group objects, and their relationships.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">created</code> and <code class="language-plaintext highlighter-rouge">modified</code> dates may be left blank for new users.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">principalTypeEnum</code> value specifies if the principal is a user or a group.</p>
+  </li>
+</ul>
+
+<p>Here, <code class="language-plaintext highlighter-rouge">test1</code> user belongs to two groups - <code class="language-plaintext highlighter-rouge">Customer Success</code> and <code class="language-plaintext highlighter-rouge">Marketing</code>. <code class="language-plaintext highlighter-rouge">test2</code> belongs to the group <code class="language-plaintext highlighter-rouge">Administrator</code>. <code class="language-plaintext highlighter-rouge">All</code> is a default group to which every user belongs; you may omit it from the input.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  { "name": "Customer Success",
+    "displayName": "Customer Success",
+    "description": "CS",
+    "created": 1568926267025,
+    "modified": 1568926982242,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "All",
+    "displayName": "All Group",
+    "created": 1354006445722,
+    "modified": 1354006445722,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "Marketing",
+    "displayName": "Marketing",
+    "description": "Marketing Group",
+    "created": 1587573582931,
+    "modified": 1587573583003,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "test1",
+    "displayName": "test one",
+    "description": "",
+    "created": 1587573554475,
+    "modified": 1587573589986,
+    "mail": "test1@test.com",
+    "principalTypeEnum": "LOCAL_USER",
+    "groupNames": [ "All", "Customer Success", "Marketing" ],
+    "visibility": "DEFAULT" },
+
+  { "name": "test2",
+    "displayName": "test two",
+    "created": 1587573621279,
+    "modified": 1587573621674,
+    "mail": "test2@test.com",
+    "principalTypeEnum": "LOCAL_USER",
+    "groupNames": [ "Administrator", "All" ],
+    "visibility": "DEFAULT" }
+]
 </code></pre></div></div>
 
 <h2 id="change-password">Change password</h2>
@@ -4096,9 +4144,9 @@ of principal objects. A typical principal object contains the following properti
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: May 5, 2020 <br />
+        Generated: May 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 05/04/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
