@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/release/fixed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-05T22:56:36-07:00" />
+<meta property="article:published_time" content="2020-05-10T18:08:14-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Fixed issues”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Fixed issues”]","dateModified":"2020-05-05T22:56:36-07:00","url":"https://docs.thoughtspot.com/6.1/release/fixed.html","datePublished":"2020-05-05T22:56:36-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/release/fixed.html"},"description":"These are the issues we fixed in recent ThoughtSpot releases.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Fixed issues”]","dateModified":"2020-05-10T18:08:14-07:00","url":"https://docs.thoughtspot.com/6.1/release/fixed.html","datePublished":"2020-05-10T18:08:14-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/release/fixed.html"},"description":"These are the issues we fixed in recent ThoughtSpot releases.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3755,7 +3755,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    35 minutes
+    37 minutes
   
 </span>
  -->
@@ -3770,6 +3770,7 @@ $('#toc').on('click', 'a', function() {
    <details>
      <summary>6.0.X Releases</summary>
       <ul>
+        <li><a href="#6-0-5">6.0.5 Fixed issues</a></li>      
         <li><a href="#6-0-4">6.0.4 Fixed issues</a></li>
         <li><a href="#6-0-3">6.0.3 Fixed issue</a></li>
         <li><a href="#6-0-2">6.0.2 Fixed issues</a></li>
@@ -3961,6 +3962,47 @@ $('#toc').on('click', 'a', function() {
   </li>
   <li>
     <p>In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate <code class="language-plaintext highlighter-rouge">large_files</code>.</p>
+  </li>
+</ul>
+
+<p><a id="6-0-5"></a></p>
+<h2 id="605-fixed-issues">6.0.5 Fixed issues</h2>
+
+<p>These are the issues we fixed in ThoughtSpot Release 6.0.5.</p>
+
+<ul>
+  <li>
+    <p>When <strong>Copy link</strong> has been disabled, it still appears in the More menu <img src="/6.1/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> of pinboards.</p>
+  </li>
+  <li>
+    <p>The management console is not accessible.</p>
+  </li>
+  <li>
+    <p>A pinboard with an advanced formula can be viewed by an administrator, but not by a regular user they share it with.</p>
+  </li>
+  <li>
+    <p>A cluster that is using a customer logo, still shows the ThoughtSpot logo on downloaded PDFs.</p>
+  </li>
+  <li>
+    <p>Filter values overlap and are unreadable in the filter picker.</p>
+  </li>
+  <li>
+    <p>Attempting to sign in using SSO causes a 500 Internal Server Error.</p>
+  </li>
+  <li>
+    <p>Clusters with many scheduled pinboards cause the Falcon database to be slower than normal.</p>
+  </li>
+  <li>
+    <p>Dates in PDFs are only displayed in the United States date format.</p>
+  </li>
+  <li>
+    <p>The Google Chrome 80 browser is not supported, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.</p>
+  </li>
+  <li>
+    <p>The <strong>group aggregate</strong> function does not work after upgrade to release 5.3.1.</p>
+  </li>
+  <li>
+    <p>A user who edits a worksheet is not able to save their changes.</p>
   </li>
 </ul>
 
@@ -4904,7 +4946,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: May 5, 2020 <br />
+        Generated: May 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
