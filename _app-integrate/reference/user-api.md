@@ -1,7 +1,7 @@
 ---
 title: [User API]
 summary: "The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system."
-last_updated: 11/18/2019
+last_updated: 05/04/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -79,40 +79,12 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 
 This API uses `multipart/form-data` content type.
 
-<table>
-   <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
-   </colgroup>
-   <thead>
-      <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-   <tr>
-      <td><code>principals</code></td><td>string</td>
-      <td>Specifies a list of principal objects. This is ideally a JSON file containing containing all users and groups present in the external database.</td>
-   </tr>
-      <tr>
-         <td><code>applyChanges</code></td><td>boolean</td>
-         <td>A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated. <p><b>Note</b>: Use this parameter to validate a difference before applying changes.</p>
-         </td>
-      </tr>
-
-      <tr>
-         <td><code>removeDeleted</code></td><td>boolean</td>
-         <td>A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.</td>
-      </tr>
-      <tr>
-         <td><code>password</code></td><td>string</td>
-         <td>Specifies a password.</td>
-      </tr>
-   </tbody>
-</table>
+| Form Parameter | Data Type | Description |
+| --- | --- | --- |
+| `principals` | string | Specifies a list of principal objects. This is ideally a JSON file containing containing all users and groups present in the external database.|
+| `applyChanges` | boolean | A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated.  Use this parameter to validate a difference before applying changes. |
+| `removeDeleted` | boolean | A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups. |
+| `password` | string | Specifies a password.|
 
 ### Request Example
 ##### cURL
@@ -128,17 +100,62 @@ https://<instance>/callosum/v1/tspublic/v1/user/sync
 
 ### Response Example
 
-```
-{
-  'usersAdded': ['username1','username2'],
-  'usersDeleted': ['username3'],
-  'usersUpdated': ['username4'],
-  'groupsAdded': ['groupname1'],
-  'groupsDeleted': ['groupname2','groupname3'],
-  'groupsUpdated': ['groupname4']
-}
-```
+This example covers user objects (with emails), group objects, and their relationships.
 
+- `created` and `modified` dates may be left blank for new users.
+
+- `principalTypeEnum` value specifies if the principal is a user or a group.
+
+ Here, `test1` user belongs to two groups - `Customer Success` and `Marketing`. `test2` belongs to the group `Administrator`. `All` is a default group to which every user belongs; you may omit it from the input.
+
+```
+[
+  { "name": "Customer Success",
+    "displayName": "Customer Success",
+    "description": "CS",
+    "created": 1568926267025,
+    "modified": 1568926982242,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "All",
+    "displayName": "All Group",
+    "created": 1354006445722,
+    "modified": 1354006445722,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "Marketing",
+    "displayName": "Marketing",
+    "description": "Marketing Group",
+    "created": 1587573582931,
+    "modified": 1587573583003,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT" },
+
+  { "name": "test1",
+    "displayName": "test one",
+    "description": "",
+    "created": 1587573554475,
+    "modified": 1587573589986,
+    "mail": "test1@test.com",
+    "principalTypeEnum": "LOCAL_USER",
+    "groupNames": [ "All", "Customer Success", "Marketing" ],
+    "visibility": "DEFAULT" },
+
+  { "name": "test2",
+    "displayName": "test two",
+    "created": 1587573621279,
+    "modified": 1587573621674,
+    "mail": "test2@test.com",
+    "principalTypeEnum": "LOCAL_USER",
+    "groupNames": [ "Administrator", "All" ],
+    "visibility": "DEFAULT" }
+]
+```
 
 ## Change password
 Use this API to change the password of a user.

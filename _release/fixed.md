@@ -13,6 +13,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
    <details>
      <summary>6.0.X Releases</summary>
       <ul>
+        <li><a href="#6-0-5">6.0.5 Fixed issues</a></li>      
         <li><a href="#6-0-4">6.0.4 Fixed issues</a></li>
         <li><a href="#6-0-3">6.0.3 Fixed issue</a></li>
         <li><a href="#6-0-2">6.0.2 Fixed issues</a></li>
@@ -164,6 +165,33 @@ These are the issues we fixed in ThoughtSpot Release 6.1.
 - Geo maps allow regional German names for states.
 
 - In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate `large_files`.
+
+<a id="6-0-5"></a>
+## 6.0.5 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.0.5.
+
+  - When **Copy link** has been disabled, it still appears in the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} of pinboards.
+
+  - The management console is not accessible.
+
+  - A pinboard with an advanced formula can be viewed by an administrator, but not by a regular user they share it with.
+
+  - A cluster that is using a customer logo, still shows the ThoughtSpot logo on downloaded PDFs.
+
+  - Filter values overlap and are unreadable in the filter picker.
+
+  - Attempting to sign in using SSO causes a 500 Internal Server Error.
+
+  - Clusters with many scheduled pinboards cause the Falcon database to be slower than normal.
+
+  - Dates in PDFs are only displayed in the United States date format.
+
+  - The Google Chrome 80 browser is not supported, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.
+
+  - The **group aggregate** function does not work after upgrade to release 5.3.1.
+
+  - A user who edits a worksheet is not able to save their changes.
 
 <a id="6-0-4"></a>
 ## 6.0.4 Fixed issues
