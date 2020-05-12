@@ -37,6 +37,7 @@ In order to use ThoughtSpot Embrace to query your GBQ database, you must create 
 - bigquery.tables.getData
 - bigquery.tables.list
 - resourcemanager.projects.get
+
    ![]({{ site.baseurl }}/images/gbq-role-permissions.png)
 7. Click **ADD**.
 8. Click **CREATE**.
