@@ -13,7 +13,7 @@ Ask your ThoughtSpot administrator, which of the following methods you should us
 
 ### Per-app VPN [Recommended]
 
-If you download the app from your company's internal app store (mobile device management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
+If you download the app from your company's internal app store (mobile device management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one of the following resources to configure the VPN options:
 
 - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-iOS-Device-Management/GUID-AWT-IOS-PROFILEVPN.html){:target="_blank"}
 - [MobileIron](http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/Per-App_VPN_Configuration.htm){:target="_blank"}
@@ -22,19 +22,19 @@ If you download the app from your company's internal app store (mobile device ma
 
 ### Standard VPN
 
-If you download the app from the App Store for iOS, you can use standard VPN to sign in.
+If you download the app from the App Store for iOS or Google Play for Android, you can use standard VPN to sign in.
 
-- Open the VPN app on your iOS device and authenticate.
+- Open the VPN app on your iOS/Android device and authenticate.
 
 ## Install the app
 
 Contact your ThoughtSpot administrator, to determine where to get the app.
 
-### App Store for iOS
+### App Store or Google Play
 
-If your company allows you to download it from the App Store for iOS, download it from here:
+If your company allows you to download it from the App Store for iOS or Google Play, download it from here:
 
-[![Download ThougtSpot app]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apps.apple.com/app/id1437983463){:target="_blank"}
+[![Download ThoughtSpot app for iOS]({{ site.baseurl }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apps.apple.com/app/id1437983463){:target="_blank"}  &nbsp;&nbsp;&nbsp;[![Download ThoughtSpot app for Android]({{ site.baseurl }}/images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.thoughtspot.client&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1){:target="_blank"}
 
 ### Your company's internal app store (if applicable)
 

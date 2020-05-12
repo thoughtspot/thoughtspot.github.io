@@ -37,7 +37,6 @@ In order to use ThoughtSpot Embrace to query your GBQ database, you must create 
 - bigquery.tables.getData
 - bigquery.tables.list
 - resourcemanager.projects.get
-
    ![]({{ site.baseurl }}/images/gbq-role-permissions.png)
 7. Click **ADD**.
 8. Click **CREATE**.
@@ -71,7 +70,6 @@ You may already have a service account for GBQ with the proper permissions in pl
 
 {: id="share-dataset"}
 ## Share dataset
-
 To make your dataset available for your Google BigQuery connection in ThoughtSpot, you must share it with your service account in Google BigQuery in an owner role.
 1. Navigate to [console.cloud.google.com](https://console.cloud.google.com){:target="_blank"}, sign in, and select your project.
 2. Click the navigation menu in the upper left, if it is not already open.
