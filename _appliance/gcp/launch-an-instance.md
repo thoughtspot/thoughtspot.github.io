@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 3/16/2020
+last_updated: 5/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,7 +35,7 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
-2. Go to the **Storage** dashboard from the navigation bar on the side of your screen.
+2. Go to the __Storage__ dashboard from the navigation bar on the side of your screen.
 
 3. Click **CREATE BUCKET** on the top menu bar.
 
@@ -154,7 +154,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
       ![Add new disk]({{ site.baseurl }}/images/gcp-7-advanced-disk-config.png "Add new disk")
 
-      You can select or unselect the **Deletion rule**, depending on your preferences.
+      Unselect the **Deletion rule**, to prevent potential loss of data if your instance is deleted accidentally.
 
     b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-and-google-cloud-storage) to determine the size in GB when you have GCS. Ensure the disks have read/write access.
 
@@ -164,7 +164,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Source type  | `Blank disk`           |
       | Size (GB)    | `1024`                 |
 
-      Under **Deletion rule**, select either **keep disk** or **delete disk**, depending on your preference.
+      Under **Deletion rule**, select **keep disk**, to prevent potential loss of data if your instance is deleted accidentally.
 
       ![Configure your disk]({{ site.baseurl }}/images/gcp-8-advanced-blank-disk-config.png "Configure your disk")
 
@@ -181,7 +181,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     ![Set your network interface]({{ site.baseurl }}/images/gcp-setnetworkinterface.png "Set your network interface")
 
     | **1** | Add an existing VPC network, or create a new one by clicking **VPC network** from the main menu. Ensure that this network has a **firewall rule** attached, with the minimum ports required for ThoughtSpot operation open. Refer to the [minimum port requirements](#port-requirements). See Google's [using firewalls](https://cloud.google.com/vpc/docs/using-firewalls){:target="_blank"} and [using VPCs](https://cloud.google.com/vpc/docs/using-vpc){:target="_blank"} documentation for assistance creating a firewall rule and a VPC network. |
-    | **2** | Set the external IP as either ephemeral or static, depending on your preference. |
+    | __2__ | Set the external IP as either ephemeral or static, depending on your preference. |
     | **3** | Ensure that **network service tier** is set to **premium**. |
 
 11. Repeat these steps to create the necessary number of VMs for your cluster.
