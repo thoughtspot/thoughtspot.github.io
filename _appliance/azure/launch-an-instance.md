@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 4/3/2020
+last_updated: 5/13/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -116,6 +116,7 @@ Open the following ports between the User/ETL server and ThoughtSpot nodes. This
 
    Refer to [network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for more information.
 
+{: id="prepare-for-startup"}
 ### Prepare for starting up ThoughtSpot
 
 _Prerequisite_: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
@@ -125,12 +126,12 @@ _Prerequisite_: To log in to the VM, you need the private key that is available 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
    - To see the private IP, select **more services** from the Microsoft Azure homepage. Select **Networking** from the list on the left side of the screen.
 
-2. In a terminal application, connect to the VM through SSH. When prompted, enter the private key provided for the admin user.
+2. In a terminal application, connect to the VM through SSH. Enter the private key provided for the admin user.
 
    - You must file a support ticket to obtain this private key; it is necessary for the first login.
    - This key is different from the credentials, or the public keys supplied in earlier steps, which do not work in this context.
 ```
-   $ ssh admin@<VM-IP>
+    $ ssh -i <path_to_private_key> admin@<public_VM_IP>
 ```   
 
 3. Update the password for both the `admin` and the `thoughtspot` users.<br>
@@ -203,10 +204,11 @@ time after a cluster is created or updated. If these changes are not present, a
 reboot of the VMs will not have network access. So when updating these files,
 keep a backup to copy after any subsequent cluster creation or update." %}
 
-1. SSH into one of your VMs.
-```
+1. SSH into one of your VMs, using the new password you created for the *admin* user in step two of [Prepare for starting up ThoughtSpot](#prepare-for-startup).
+
+    ```
     ssh admin@<VM-IP>
-```
+    ```
 1. Update the VM's hostname:
 
    ```
