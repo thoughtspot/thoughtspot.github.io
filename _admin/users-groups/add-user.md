@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a user"]
-last_updated: 10/08/2019
+last_updated: 5/14/2020
 summary: "For each unique person who accesses ThoughtSpot, you must create a user account. When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -80,8 +80,8 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="email">
         <th>Email</th>
         <td>Yes</td>
-        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.
-        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
+        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Expert</strong> feature, and others.
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to whitelist domains.</p></td>
       </tr>    
       <tr id="welcome-email">     
         <th>Send a welcome email</th>
