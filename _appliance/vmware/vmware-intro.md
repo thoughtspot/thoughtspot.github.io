@@ -28,7 +28,7 @@ ThoughtSpot VMs as your dataset size grows.
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-_minimum specifications_ for an individual VMware ESXi host machine:
+_minimum specifications_ for an individual VMware ESXi guest machine:
 
 <table width="100%" border="0">
 	  <tbody>
