@@ -57,7 +57,7 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 				<td>200 GB for each node</td>
         </tr>
 		<tr>
-	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
 	      <td></td>
 	      <td></td>
         </tr>
