@@ -53,7 +53,7 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>3X 1TB</td>
+	      <td>3X1 TB</td>
 				<td>200 GB for each node</td>
         </tr>
 		<tr>
