@@ -31,7 +31,7 @@ tscli [-h]
        cluster, command, dr-mirror, etl, event, feature, fileserver,
        firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
        node, patch, rpackage, saml, scheduled-pinboards, smtp, snapshot,
-       snapshot-policy, spot, sssd, ssl, storage, support,
+       snapshot-policy, sssd, ssl, storage, support,
        tokenauthentication}
 </pre>
 
@@ -1575,42 +1575,6 @@ This subcommand has the following options:
           <dt><code>--config <em>CONFIG</em></code></dt>
           <dd>Text format of periodic backup policy config.</dd></dlentry></dl>
     </dd></dlentry>          
-</dl>
-
-{: id="tscli-spot"}
-### spot
-
-```
-tscli spot [-h] {enable}
-```
-
-Enables Spot integration.  
-
-This subcommand has the following option:
-
-<dl>
-  <dlentry>
-    <dt><code>tscli spot enable [-h] --token <em>TOKEN</em> --thoughtspot_url <em>THOUGHTSPOT_URL</em> [--cache_timeout <em>CACHE_TIMEOUT</em>]</code></dt>
-    <dd>
-      <p>The <code>spot</code> subcommand accepts the following optional flags:</p>
-
-      <dl>
-        <dlentry>
-          <dt><code>--token <em>TOKEN</em></code></dt>
-          <dd>Slack authorization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.</dd></dlentry>
-
-      <dlentry>
-        <dt><code>--thoughtspot_url <em>THOUGHTSPOT_URL</em></code></dt>
-        <dd>
-          <p>URL for the ThoughtSpot application.</p>
-          <p>This is required.</p></dd></dlentry>
-      <dlentry>
-        <dt><code>--cache_timeout <em>CACHE_TIMEOUT</em></code></dt>
-        <dd>
-          <p>Internal cache timeout.</p>
-          <p>The default setting is <code>60000</code>.</p></dd></dlentry>
-     </dl></dd></dlentry>
-
 </dl>
 
 {: id="tscli-ssl"}
