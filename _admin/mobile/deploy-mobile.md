@@ -5,7 +5,7 @@ last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Deploying the ThoughtSpot mobile app to your users allows them to access their data and make decisions remotely from their Apple iOS device. For more information about features in the mobile app, refer to [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+Deploying the ThoughtSpot mobile app to your users allows them to access their data and make decisions remotely from their mobile device. For more information about features in the mobile app, refer to [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
 
 ## Deployment options
 
@@ -37,7 +37,7 @@ To add a link to the ThoughtSpot app on your management platform, refer to the f
 
 ##### Before you begin
   - Your company must have an Apple/Android developer enterprise account.
-  - Contact ThoughtSpot at [mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=ThoughtSpot%20Mobile%20App%20.IPA%20Request) to get the ThoughtSpot .ipa file.
+  - Contact ThoughtSpot at [mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=ThoughtSpot%20Mobile%20App%20.IPA%20Request) to get the ThoughtSpot .ipa/.apk file.
 
 To upload the ThoughtSpot .ipa/.apk file to your management platform, refer to the following platform-specific information:
   - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL.html#GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL){:target="_blank"}
