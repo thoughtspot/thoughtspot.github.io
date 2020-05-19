@@ -28,7 +28,7 @@ To add a new connection to Snowflake:
 5. (Optional) Provide custom parameters to pass to the database, by doing the following:
 - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
 - Enter your key and value information.
-- Click the plus sign (+) to add more key and value fields, as needed.
+- To add more keys and values, click the plus sign (+), and enter them.
 
     For example, if you wanted to use a proxy server for all of your connections, you would enter the following:
 
@@ -38,8 +38,6 @@ To add a new connection to Snowflake:
     | `proxyPort`               |*Enter proxy server hostname.* *example:* `1234` |
     | `proxyUser` | *Enter the username of the proxy user.* *example:* `test_user`|
     |`proxyPassword`| *Enter the password of the proxy user.* *example:* `test`|
-
-
 
 6. Click **Continue**.
 
