@@ -25,19 +25,12 @@ To add a new connection to Snowflake:
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. (Optional) Provide custom parameters to pass to the database, by doing the following:
+5. (Optional) Provide additional key-value pairs that you need to set up your connection to Snowflake, by doing the following:
 - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
 - Enter your key and value information.
 - To add more keys and values, click the plus sign (+), and enter them.
 
-    For example, if you wanted to use a proxy server for all of your connections, you would enter the following:
-
-    | Key     | Value    |
-    | :------------- | :------------- |
-    | `proxyHost`      | *Enter proxy server hostname.* *example:* `subdomain1.company2.com`      |
-    | `proxyPort`               |*Enter proxy server hostname.* *example:* `1234` |
-    | `proxyUser` | *Enter the username of the proxy user.* *example:* `test_user`|
-    |`proxyPassword`| *Enter the password of the proxy user.* *example:* `test`|
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.
 

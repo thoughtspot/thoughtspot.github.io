@@ -39,6 +39,20 @@ You can now disable any of the following items when ThoughtSpot is embedded:
 
 Contact ThoughtSpot support to enable this feature.
 
+### Embrace advanced configuration
+
+In this release, on the connection details page, you can provide additional key-value pairs that you need to set up the connection to your external data source. Any key-value pairs that you enter must be defined in the external data source. Key-value pairs are case-sensitive.
+
+Some examples of key-value pairs for Snowflake, include the following:
+
+Setting up a proxy connection:
+
+![]({{ site.baseurl }}/images/snowflake-adv-config-1.png)
+
+Applying a filter on the schema:
+
+![]({{ site.baseurl }}/images/snowflake-adv-config-2.png)
+
 ### Set limits on the number of rows that ThoughtSpot loads
 
 In this release, you can now set a limit on the number of rows ThoughtSpot loads initially for visualizations. This can reduce the load time of visualizations that have many rows, and tend to load slowly.

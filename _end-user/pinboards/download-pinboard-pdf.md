@@ -24,7 +24,7 @@ You can download a Pinboard in PDF format, without downloading each visualizatio
    ![Choose PDF format: Pinboard or Visualizations]({{ site.baseurl }}/images/pinboard-formats.png "Choose PDF format: Pinboard or Visualizations")
 
 {: id="pdf-pinboard"}
-## Download PDG as Pinboard
+## Download PDF as Pinboard
 
 The Pinboard mode produces a PDF file that looks very similar to the Pinboard inside ThoughtSpot. The highlights and insights appear at the top, and the rest of the Pinboard is on a rectangular grid, with natural page breaks.
 
