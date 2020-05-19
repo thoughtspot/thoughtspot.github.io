@@ -24,7 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,support,tokenauthentication}
+           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -823,22 +823,6 @@ This subcommand supports the following actions:
 * `tscli snapshot-policy update [-h] [--config` *`CONFIG`*`]` Update periodic snapshot config. This takes the following parameter:
 
    *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
-
-
-### spot
-
-```
-tscli spot [-h] {enable} ...
-```
-
-Enables Spot integration.  This subcommand supports the following actions:
-
-`tscli spot enable [-h] --token ` *`TOKEN`* `--thoughtspot_url` *`THOUGHTSPOT_URL`* `[--cache_timeout` *`CACHE_TIMEOUT`* `]`
-
-
-* `--token ` *`TOKEN`*  Slack authroization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.
-* `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
-* `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
 
 
 ### ssl

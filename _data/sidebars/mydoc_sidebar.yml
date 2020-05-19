@@ -382,15 +382,6 @@ entries:
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
           output: web,ugBk
-    - levelTwoTitle: Slack and ThoughtSpot
-      output: web,ugBk
-      levelTwoItems:
-        - title: Slack and Spot
-          url: /end-user/slack/intro.html
-          output: web,ugBk
-        - title: How to use Spot
-          url: /end-user/slack/use-spot.html
-          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -486,9 +477,6 @@ entries:
         output: web,admBk
       - title: Enable SearchIQ
         url: /admin/setup/enable-searchiq.html
-        output: web,admBk
-      - title: Add the Slack integration
-        url: /admin/setup/slack-integration.html
         output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
@@ -1284,7 +1272,7 @@ entries:
       output: web,rnotes
     - title: Fixed issues
       url: /release/fixed.html
-      output: web,rnotes   
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web
