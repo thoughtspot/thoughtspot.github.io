@@ -737,16 +737,6 @@ This subcommand supports the following actions:
    *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
 
 
-### spot
-
-```
-tscli spot [-h] {enable}
-```
-
-This subcommand supports the following actions:
-
-`tscli spot [-h] {enable}` Enableds Spot integrtion.
-
 ### ssl
 
 ```
