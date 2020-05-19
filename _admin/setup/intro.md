@@ -58,4 +58,3 @@ The following tasks are available  needed:
 * [Network ports]({{ site.baseurl }}/admin/setup/firewall-ports.html)
 * [Configure load balancing and proxies]({{ site.baseurl }}/admin/setup/about-load-balancer-configuration.html)
 * [Customize look and feel]({{ site.baseurl }}/admin/setup/customize-style.html)
-* [Add the Slack integration]({{ site.baseurl }}/admin/setup/slack-integration.html)
