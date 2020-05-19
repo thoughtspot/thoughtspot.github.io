@@ -19,13 +19,31 @@ To add a new connection to Snowflake:
 
      ![Add a Snowflake connection]({{ site.baseurl }}/images/snowflake-connectiontype.png "Add a Snowflake connection")
 
-4. Enter the connection details for your Snowflake data source, and click **Continue**.
+4. Enter the connection details for your Snowflake data source.
 
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+5. (Optional) Provide custom parameters to pass to the database, by doing the following:
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- Click the plus sign (+) to add more key and value fields, as needed.
+
+    For example, if you wanted to use a proxy server for all of your connections, you would enter the following:
+
+    | Key     | Value    |
+    | :------------- | :------------- |
+    | `proxyHost`      | *Enter proxy server hostname.* *example:* `subdomain1.company2.com`      |
+    | `proxyPort`               |*Enter proxy server hostname.* *example:* `1234` |
+    | `proxyUser` | *Enter the username of the proxy user.* *example:* `test_user`|
+    |`proxyPassword`| *Enter the password of the proxy user.* *example:* `test`|
+
+
+
+6. Click **Continue**.
+
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
