@@ -2,7 +2,7 @@
 title: [Geo Map Reference]
 tags: [Geo map subdivisions]
 keywords: geo map divisons subdivisions
-last_updated: 3/20/2020
+last_updated: 5/20/2020
 summary: "ThoughtSpot recognizes a broad list geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,8 +13,8 @@ This reference lists the countries and their subdivisions that ThoughtSpot suppo
 
 <details>
 <summary><b>United States</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;County<br>
+&nbsp;&nbsp;&nbsp;&nbsp;State, State abbreviations, State FIPS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;County, County FIPS<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Zip Code<br>
 </details>
 <details>
@@ -24,7 +24,7 @@ This reference lists the countries and their subdivisions that ThoughtSpot suppo
 </details>
 <details>
 <summary><b>Canada</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territories<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territories, Province and Territory abbreviations<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Census Divisions<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
 </details>
@@ -46,7 +46,7 @@ This reference lists the countries and their subdivisions that ThoughtSpot suppo
 </details>
 <details>
 <summary><b>Australia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
+&nbsp;&nbsp;&nbsp;&nbsp;State, State abbreviations<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Suburb<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postcode<br>
 </details>
