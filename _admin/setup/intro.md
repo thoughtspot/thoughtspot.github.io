@@ -5,11 +5,8 @@ summary: "As administrator, you are responsible for setting up and configuring T
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Your ThoughtSpot application software is already installed for you in a
-ThoughtSpot appliance. This is true for both physical and virtual appliances.
 
-The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
-will contact you to schedule an update when one becomes available.
+Both ThoughtSpot physical appliances and virtual machines are shipped with a base OS image (Unless it is RHEL or Amazon Linux image provided by the customer). The ThoughtSpot software is then insalled (and later, upgraded) by ThoughtSpot Support. ThoughtSpot Support will contact you to schedule an update when one becomes available. On the other hand, ThoughtSpot customer success team will work with you to schedule upgrades as required by the enhancements desired by your use cases. 
 
 As administrator, you are responsible for setting up and configuring
 ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
