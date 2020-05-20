@@ -1124,27 +1124,6 @@ var ss360Config = {
               
             
               
-              <li class="levelTwo">
-                  <a href="#">Slack and ThoughtSpot</a>
-                  <ul>
-                
-                  
-                      
-                          <li><a href="/5.0/end-user/slack/intro.html">Slack and Spot</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/5.0/end-user/slack/use-spot.html">How to use Spot</a></li>
-                      
-                   
-                
-                    </ul>
-                  </li>
-              
-            
-              
                 
                   <li><a href="/5.0/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a></li>
                 
@@ -1341,12 +1320,6 @@ var ss360Config = {
                   
                       
                           <li><a href="/5.0/admin/setup/enable-searchiq.html">Enable SearchIQ</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/5.0/admin/setup/slack-integration.html">Add the Slack integration</a></li>
                       
                    
                 
@@ -3172,7 +3145,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    38 minutes
+    37 minutes
   
 </span>
 
@@ -3195,7 +3168,7 @@ attempts to save errors to the <code class="highlighter-rouge">stderr</code> dir
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster &lt;cluster&gt;]
            [--zoo &lt;zookeeper&gt;] [--username username] [--identity_file identity_file]
-           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,support,tokenauthentication}
+           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,ssl,storage,support,tokenauthentication}
 </code></pre></div></div>
 
 <p>The <code class="highlighter-rouge">tscli</code> command has several subcommands such as <code class="highlighter-rouge">alert</code>, <code class="highlighter-rouge">backup</code>, and so forth. You issue a subcommand using the following format:</p>
@@ -4128,21 +4101,6 @@ override any <code class="highlighter-rouge">ttl</code> value. (default: False)<
   </li>
 </ul>
 
-<h3 id="spot">spot</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli spot [-h] {enable} ...
-</code></pre></div></div>
-
-<p>Enables Spot integration.  This subcommand supports the following actions:</p>
-
-<p><code class="highlighter-rouge">tscli spot enable [-h] --token </code> <em><code class="highlighter-rouge">TOKEN</code></em> <code class="highlighter-rouge">--thoughtspot_url</code> <em><code class="highlighter-rouge">THOUGHTSPOT_URL</code></em> <code class="highlighter-rouge">[--cache_timeout</code> <em><code class="highlighter-rouge">CACHE_TIMEOUT</code></em> <code class="highlighter-rouge">]</code></p>
-
-<ul>
-  <li><code class="highlighter-rouge">--token </code> <em><code class="highlighter-rouge">TOKEN</code></em>  Slack authroization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.</li>
-  <li><code class="highlighter-rouge">--thoughtspot_url</code> <em><code class="highlighter-rouge">THOUGHTSPOT_URL</code></em> URL for the ThoughtSpot application. This is required.</li>
-  <li><code class="highlighter-rouge">--cache_timeout</code> <em><code class="highlighter-rouge">CACHE_TIMEOUT</code></em>  Internal cache timeout (default: <code class="highlighter-rouge">60000</code>)</li>
-</ul>
-
 <h3 id="ssl">ssl</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status} ...
@@ -4338,7 +4296,7 @@ nodes. (default: None)</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 1, 2020 <br />
+        Generated: May 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
