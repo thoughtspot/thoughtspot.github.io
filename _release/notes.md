@@ -2,7 +2,7 @@
 title: ["4.5 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: 04/09/2020
+last_updated: 5/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,14 +34,6 @@ directly:
 
 These are the new and enhanced features in this release. For a complete list of issues that we fixed in this release, see [4.5.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#4-5-1).
 
-
-<h4><a name="ProvidedfullintegrationwithSlackviaSpot"></a>Provided full integration with Slack via Spot</h4>
-<p>Slack is an enterprise software platform for team communication through a messaging
-application. Slack also allows users to communicate with applications like ThoughtSpot
-through chat. ThoughtSpot implemented full Slack integration in version 4.5.1.
-Administrators can follow setup steps in <a href="{{"/4.5/admin/setup/slack-integration.html" | prepend: site.url }}">Add the Slack integration</a>, and ThoughtSpot users can learn how to use Spot in
-<a href="{{"/4.5/end-user/slack/intro.html" | prepend: site.url }}">Slack and Spot</a>
-and <a href="{{"/4.5/end-user/slack/use-spot.html" | prepend: site.url }}">How to use Spot</a></p>
 
 <h4><a name="AddedtheabilitytoaddcustomHelplinks"></a>Added the ability to add custom Help links</h4>
 <p>When users click the help icon, they see a list of links. You can now add your own links to this list. This allows you to include documentation specific to your company, such as information about the data available in ThoughtSpot, where to get support internally, or company-specific training.</p>
