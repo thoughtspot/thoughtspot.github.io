@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 03/20/2020
+last_updated: 5/20/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -13,8 +13,8 @@ This reference lists supported countries and their subdivisions. ThoughtSpot ren
 We support the following countries and their associated subdivisions in geo maps:
 <details>
 <summary><b>United States</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
-&nbsp;&nbsp;&nbsp;&nbsp;County<br>
+&nbsp;&nbsp;&nbsp;&nbsp;State, State abbreviations, State FIPS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;County, County FIPS<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Zip Code<br>
 </details>
 <details>
@@ -26,13 +26,13 @@ We support the following countries and their associated subdivisions in geo maps
 <!--Since 5.2.0-->
 <details>
 <summary><b>Australia</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;State<br>
+&nbsp;&nbsp;&nbsp;&nbsp;State, State abbreviations<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Suburb<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postcode<br>
 </details>
 <details>
 <summary><b>Canada</b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Province and Territory, Province and Territory abbreviations<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Census Divisions<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Postal Code<br>
 </details>
