@@ -6,11 +6,13 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Both ThoughtSpot physical appliances and virtual machines are shipped with a base OS image (Unless it is RHEL or Amazon Linux image provided by the customer). The ThoughtSpot software is then insalled (and later, upgraded) by ThoughtSpot Support. ThoughtSpot Support will contact you to schedule an update when one becomes available. On the other hand, ThoughtSpot customer success team will work with you to schedule upgrades as required by the enhancements desired by your use cases. 
+In ThoughtSpot, both physical appliances and virtual machines ship with a base OS image. ThoughtSpot Support then helps you to install, and subsequently update the software. Note the exception of RHEL installations, where the customer provides the OS image themselves, and uses a slightly different installation protocol. 
+
+The ThoughtSpot Support team contacts all clients to schedule updates as we release new versions of ThoughtSpot. To schedule upgrades to patch releases that support your use cases, work with our Customer Success team.
 
 As administrator, you are responsible for setting up and configuring
-ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
-some common problems, finding additional resources, and contacting ThoughtSpot.
+ThoughtSpot. This guide helps you with these tasks, and also assists in troubleshooting
+some common problems and finding additional resources.
 
 {: id="display-current-config"}
 ## Display your current configuration
