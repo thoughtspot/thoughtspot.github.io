@@ -32,11 +32,39 @@ platform on VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine:
 
-* 512GB Memory
-* 200GB SSD for each node
-* 3X 2TB Hard disks (6TB in total in hard disk space)
-* 72 Hyper-threaded Cores (Additional spare cores can also be added).
-* Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
+<table width="100%" border="0">
+	  <tbody>
+	    <tr>
+	      <th scope="col">Per VM user data capacity</th>
+	      <th scope="col">CPU/RAM</th>
+	      <th scope="col">Data disk</th>
+				<th scope="col">Required root volume capacity</th>
+        </tr>
+	    <tr>
+	      <td>20 GB</td>
+	      <td>16/128 GB</td>
+	      <td>2x400 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>100 GB</td>
+	      <td>32/256 GB</td>
+	      <td>2X400 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>256 GB</td>
+	      <td>72/512 GB</td>
+	      <td>3X1 TB</td>
+				<td>200 GB for each node</td>
+        </tr>
+		<tr>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
+	      <td></td>
+	      <td></td>
+        </tr>
+  </tbody>
+</table>
 
 Locally attached storage provides the best performance.
 
