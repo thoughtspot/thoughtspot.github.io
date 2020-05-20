@@ -110,4 +110,4 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 
 {: id="disable-selinux"}
 ## Disable SELinux
-We recommend that you disable SELinux if your organization permits it.
+ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
