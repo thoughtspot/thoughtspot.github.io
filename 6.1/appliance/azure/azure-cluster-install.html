@@ -3831,6 +3831,10 @@ Run <code class="language-plaintext highlighter-rouge">md5sum -c &lt;release-num
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ screen -S DEPLOYMENT
 </code></pre></div>    </div>
   </li>
+  <li>Manually update tscli.<br />
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tar -C /usr/local/scaligent -zxpf &lt;release-number&gt;.tar.gz './bin/tscli'</code></pre></div>
+  
+  </li>
   <li>Create the cluster.<br />
 Run <code class="language-plaintext highlighter-rouge">tscli cluster create</code> to create the cluster.
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli cluster create &lt;release-number&gt;.tar.gz
@@ -3842,33 +3846,7 @@ For more information on this process, refer to <a href="/6.1/appliance/hardware/
 
     <p>The cluster installer automatically reboots all the nodes after a successful install. The <code class="language-plaintext highlighter-rouge">firewalld</code> service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br /></p>
   </li>
-  <li>
-    <p>Make this change to each node to ensure that you can log back in:</p>
 
-    <p>a. Open the grub file  <code class="language-plaintext highlighter-rouge">/update/etc/default/grub</code>:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ sudo vi /update/etc/default/grub
-</code></pre></div>    </div>
-
-    <p>b. Change the line:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8"
-</code></pre></div>    </div>
-
-    <p>to:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8 net.ifnames=0"
-</code></pre></div>    </div>
-
-    <p>c. Save your changes.</p>
-  </li>
-  <li>
-    <p>Issue these commands:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp /update/etc/default/grub /etc/default/
-$ rm /usr/local/scaligent/bin/setup-net-devices.sh
-</code></pre></div>    </div>
-  </li>
 </ol>
 
 <p>Log in to any node to check the current cluster status:</p>

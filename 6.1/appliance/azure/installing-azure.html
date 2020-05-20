@@ -3912,9 +3912,7 @@ Please retry or contact support.
 </code></pre></div></div>
 <p>Restart the node-scout service with the following set of commands.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo vim /etc/systemd/system/node-scout.service
-$ sudo systemctl daemon-reload
-$ sudo systemctl restart node-scout
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl restart node-scout
 </code></pre></div></div>
 
 <p>Ensure that you restarted the node-scout by running <code class="language-plaintext highlighter-rouge">sudo systemctl status node-scout</code>. Your output should specify that the node-scout service is active. It may look something like the following:</p>

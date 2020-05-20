@@ -3988,13 +3988,14 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
     </ul>
   </li>
   <li>
-    <p>In a terminal application, connect to the VM through SSH. Enter the private key provided for the admin user.</p>
+    <p>In a terminal application, connect to the VM through SSH.</p>
 
     <ul>
-      <li>You must file a support ticket to obtain this private key; it is necessary for the first login.</li>
-      <li>This key is different from the credentials, or the public keys supplied in earlier steps, which do not work in this context.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh -i &lt;path_to_private_key&gt; admin@&lt;public_VM_IP&gt;
+      <li>Log in as the user specified in the previous steps and use the private key that belongs to the public key specified for that user.
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh -i &lt;path_to_private_key&gt; &lt;the_user_specified_when_created_the_vm&gt;@&lt;public_VM_IP&gt;
 </code></pre></div>        </div>
+        <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>If the SSH key is not accepted or lost, it can be reset by going to <i>Reset password</i> under <i>Support + troubleshooting</i> on the Azure Virtual Machine page. Please note this only works before the cluster had been deployed.</div>
+
       </li>
     </ul>
   </li>
@@ -4090,11 +4091,9 @@ keep a backup to copy after any subsequent cluster creation or update.</div>
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Update <code class="language-plaintext highlighter-rouge">/etc/sysconfig/network-scripts/ifcfg-eth0</code> with the IP and hostname:</p>
+    <p>Create <code class="language-plaintext highlighter-rouge">/etc/sysconfig/network-scripts/ifcfg-eth0</code>:</p>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
-
-DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=&lt;Add eth0 MAC&gt; TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo sh -c 'echo "DEVICE=eth0" > /etc/sysconfig/network-scripts/ifcfg-eth0'
 </code></pre></div>    </div>
   </li>
   <li>Modify permissions for <code class="language-plaintext highlighter-rouge">/etc/sysconfig/network-scripts/ifcfg-eth0</code>. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
@@ -4103,6 +4102,7 @@ DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=&lt;Add eth0 MAC&gt; TYPE=Ethernet 
   </li>
   <li>Repeat this process (steps 1 through 4) for each node.</li>
 </ol>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>If the VM gets rebooted at this stage the above steps must be repeated.</div>
 
   <div class="tags">
     <div style="float:right;">
