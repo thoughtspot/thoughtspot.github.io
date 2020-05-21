@@ -1,7 +1,7 @@
 ---
 title: [Data security]
 keywords: tbd
-last_updated: tbd
+last_updated: 5/21/2020
 tags: [groups,rls,security]
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
@@ -46,12 +46,12 @@ settings and rules.
   <tr>
     <td>Tables</td>
     <td>The source data tables that have been loaded using ThoughtSpot Loader.</td>
-    <td>Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Administrator users have access to source tables. They can share a table with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Columns</td>
     <td>The columns in the source data tables that have been loaded using ThoughtSpot Loader.</td>
-    <td>Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Rows</td>
@@ -61,33 +61,33 @@ settings and rules.
   <tr>
     <td>Imported data</td>
     <td>Data that was imported using a Web browser.</td>
-    <td>Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Worksheets</td>
     <td>A worksheet created using a Web browser.</td>
-    <td>Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)</td>
+    <td>Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See <a href="share-worksheets.html">Share Worksheets</a>.</td>
   </tr>
   <tr>
     <td>Pinboards</td>
     <td>A pinboard of saved search results.</td>
-    <td>Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)</td>
+    <td>Anyone who can view a pinboard can share it. See <a href="share-pinboards.html">Share a Pinboard</a>.</td>
   </tr>
 </table>
 
-## Understanding SHAREABLE
+## Understanding SHARABLE
 
-When you share an object, only the users and groups that have **SHAREABLE** set
+When you share an object, only the users and groups that have **SHARABLE** set
 for the **Sharing visibility** option appear on the dialog.
 
 ![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
 
 Only users in the **Administrators** group or users with **Admin** privileges
-can share with groups marked as **NOT SHAREABLE**. Members of a group with
+can share with groups marked as **NOT SHARABLE**. Members of a group with
 **Can share with all users** authorization can also share with groups marked as
-**NOT SHAREABLE**.
+**NOT SHARABLE**.
 
-Users in groups marked **NOT SHAREABLE** cannot share objects among themselves.
+Users in groups marked **NOT SHARABLE** cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.
@@ -102,7 +102,7 @@ objects users see based on conditions you set at the level of row values in base
 data tables.
 
 You may find it useful to create groups for RLS. To prevent these groups from
-appearing in the **Share** dialog, create a **NOT SHAREABLE** group with a single
+appearing in the **Share** dialog, create a **NOT SHARABLE** group with a single
 user and an RLS group with another single user (1-to-1).
 
 ## Related information
