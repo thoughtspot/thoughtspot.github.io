@@ -25,7 +25,7 @@
     <tr>
       <td><strong>Can share with all users</strong></td>
       <td>Can see the names of and share with users outside of the groups the user belongs to. Members of groups with this privilege can also share with groups marked as
-      <strong>NOT SHAREABLE</strong>.</td>
+      <strong>NOT SHARABLE</strong>.</td>
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
