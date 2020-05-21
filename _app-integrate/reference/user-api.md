@@ -72,6 +72,8 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 - Objects present in ThoughtSpot, and present in the external list - will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
 - Objects not present in ThoughtSpot, and present in the external list - will be created in ThoughtSpot.
 
+Set `visibility` to `NON_SHARABLE` if you do not want users to be able to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with users in this group.
+
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/user/sync
 
