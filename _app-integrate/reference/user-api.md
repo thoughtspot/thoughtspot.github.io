@@ -1,7 +1,7 @@
 ---
 title: [User API]
 keywords: REST,API,data,"REST API"
-last_updated: tbd
+last_updated: 5/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -71,6 +71,8 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 - Objects (users or groups) present in ThoughtSpot, but not present in the external list -  will be deleted in ThoughtSpot.
 - Objects present in ThoughtSpot, and present in the external list - will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
 - Objects not present in ThoughtSpot, and present in the external list - will be created in ThoughtSpot.
+
+Set `visibility` to `NON_SHARABLE` if you do not want users to be able to share objects with users in this group.
 
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/user/sync

@@ -49,7 +49,7 @@ To create a group and add privileges for the group:
      </tr>
      <tr>
        <th>Sharing visibility</th>
-       <td>Indicate whether objects can be shared with this group. When set to <b>SHAREABLE</b>,
+       <td>Indicate whether objects can be shared with this group. When set to <b>SHARABLE</b>,
        this group is an option in the <b>Share</b> dialog.</td>
      </tr>
      <tr>
