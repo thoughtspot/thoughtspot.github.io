@@ -64,7 +64,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="sharing-visibility">
         <th>Sharing visibility</th>
         <td>Yes</td>
-        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHARABLE</b>,
         this user is an option in the <b>Share</b> dialog.</td>
       </tr>
       <tr id="password">
