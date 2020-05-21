@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 3/20/2020
+last_updated: 5/21/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -120,9 +120,6 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <dd>
 <details><summary><strong>Prefecture</strong></summary>
 {% include content/geo/jp-prefecture.md %}
-</details>
-<details><summary><strong>City</strong></summary>
-{% include content/geo/jp-city.md %}
 </details>
 <details><summary><strong>PMC</strong></summary>
 {% include content/geo/jp-pmc.md %}
