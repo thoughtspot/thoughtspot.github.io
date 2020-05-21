@@ -1,7 +1,7 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 2/20/2020
+last_updated: 5/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -83,7 +83,7 @@ extensible, and open packaging distribution format for virtual machines.
 
 The ThoughtSpot VM configuration uses thin provisioning and sets the recommended
 reserved memory, among other important specifications. You can obtain these
-files from your ThoughtSpot Customer Success Engineer.
+files from your ThoughtSpot contact.
 
 ## Questions or comments?
 
