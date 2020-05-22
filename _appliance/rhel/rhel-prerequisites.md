@@ -22,6 +22,7 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
+- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 
 {: id="partition-hosts"}
 ## Partition the hosts

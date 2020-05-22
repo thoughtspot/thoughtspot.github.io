@@ -83,7 +83,7 @@ extensible, and open packaging distribution format for virtual machines.
 
 The ThoughtSpot VM configuration uses thin provisioning and sets the recommended
 reserved memory, among other important specifications. You can obtain these
-files from your ThoughtSpot contact.
+files from [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Questions or comments?
 
