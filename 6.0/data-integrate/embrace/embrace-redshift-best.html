@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can modify tables that have been selected for load in Data Connect by adding or removing columns."> -->
+<!-- <meta name="description" content="You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."> -->
 <meta name="keywords" content=",  ">
-<title>Add/remove columns in a loaded table | ThoughtSpot</title>
+<title>Best practices for Embrace with Redshift | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.0/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Add/remove columns in a loaded table”] | thoughtspot.github.io</title>
+<title>[“Best practices for Embrace with Redshift”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Add/remove columns in a loaded table”]" />
+<meta property="og:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="In addition to adding more tables while editing a data source, you can also add or remove columns from loaded tables. This makes it easier to include new source columns with your job, edit the data source definition to add or remove columns, and adapt existing jobs to change source schemas." />
-<meta property="og:description" content="In addition to adding more tables while editing a data source, you can also add or remove columns from loaded tables. This makes it easier to include new source columns with your job, edit the data source definition to add or remove columns, and adapt existing jobs to change source schemas." />
-<link rel="canonical" href="https://docs.thoughtspot.com/6.0/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html" />
+<meta name="description" content="Configuring your ThoughtSpot server" />
+<meta property="og:description" content="Configuring your ThoughtSpot server" />
+<link rel="canonical" href="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-redshift-best.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-redshift-best.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-27T10:31:04-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Add/remove columns in a loaded table”]" />
+<meta property="twitter:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Add/remove columns in a loaded table”]","dateModified":"2020-05-27T10:31:04-07:00","url":"https://docs.thoughtspot.com/6.0/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html","datePublished":"2020-05-27T10:31:04-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html"},"description":"In addition to adding more tables while editing a data source, you can also add or remove columns from loaded tables. This makes it easier to include new source columns with your job, edit the data source definition to add or remove columns, and adapt existing jobs to change source schemas.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Best practices for Embrace with Redshift”]","dateModified":"2020-05-27T10:31:04-07:00","url":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-redshift-best.html","datePublished":"2020-05-27T10:31:04-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/data-integrate/embrace/embrace-redshift-best.html"},"description":"Configuring your ThoughtSpot server","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -331,13 +331,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html.</li>
+         <li class="small-sidebar-link">Current page URL is /data-integrate/embrace/embrace-redshift-best.html.</li>
          <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is data-connect.</li>
-           <li class="small-sidebar-link">url_chunks[2] is making-changes.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is add-remove-columns-in-a-loaded-table.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is embrace.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is embrace-redshift-best.html.</li>
  -->
 
        
@@ -353,12 +353,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.1/data-integrate/embrace/embrace-redshift-best.html">Switch to version 6.1 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.0/6.1/data-connect/making-changes/add-remove-columns-in-a-loaded-table.html</li>
+<li class="small-sidebar-link">newURL is /6.1/data-integrate/embrace/embrace-redshift-best.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.0/6.1/data-integrate/embrace/embrace-redshift-best.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3193,7 +3193,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
+                          <li class="active"><a href="/6.0/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
                       
                    
                 
@@ -3679,7 +3679,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Add/remove columns in a loaded table</h1>
+   <h1 class="post-title-main">Best practices for Embrace with Redshift</h1>
 </div>
 
 
@@ -3687,7 +3687,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">You can modify tables that have been selected for load in Data Connect by adding or removing columns.</div>
+    <div class="summary">You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling.</div>
    
 
     
@@ -3724,43 +3724,71 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>
  -->
 
     
 
-  <p>In addition to adding more tables while editing a data source, you can also add or remove columns from loaded tables. This makes it easier to include new source columns with your job, edit the data source definition to add or remove columns, and adapt existing jobs to change source schemas.</p>
+  <h2 id="configuring-your-thoughtspot-server">Configuring your ThoughtSpot server</h2>
 
-<p>This feature captures all relationships. The relationships are automatically created for you when you add a primary key column.</p>
+<p>We recommend configuring the following settings when creating Embrace connections:</p>
+<ul>
+  <li>Turn on ‘Search on Enter’ to reduce the number of queries run against Redshift.</li>
+  <li>Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.</li>
+</ul>
 
-<p>Do not edit the schema when altering tables.</p>
+<p>Contact ThoughtSpot support to do this configuration.</p>
 
-<p>To add/remove columns in a loaded table:</p>
+<h2 id="optimizing-query-performance">Optimizing query performance</h2>
 
-<ol>
-  <li>
-    <p>While viewing the <strong>Selected Tables</strong> section of the <strong>Select Tables</strong> step, expand one or more tables.</p>
+<p>User experience in ThoughtSpot Embrace is strongly impacted by the performance of queries in the underlying database. Redshift is a columnar MPP database built for analytic workloads, and proper tuning can have a significant impact on query performance.</p>
 
-    <p><img src="/6.0/images/select_tables.png" alt="" title="Selected Tables" /></p>
-  </li>
-  <li>
-    <p>Click the checkboxes to select/deselect tables columns for import.</p>
+<p>You should always follow AWS best practices to optimize query performance. For details, see
+<a href="https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html" target="_blank">Tuning query performance</a> in Amazon’s Redshift documentation.</p>
 
-    <p>You cannot deselect all columns and tables in the job.</p>
-  </li>
-  <li>
-    <p>Click <strong>Next</strong> and complete the import.</p>
-  </li>
-</ol>
+<h2 id="workload-management-and-monitoring">Workload management and monitoring</h2>
+
+<p>We recommend that you implement workload management (WLM) within Redshift to prioritize queries appropriately.
+For more information, refer to the following links in Amazon’s Redshift documentation:</p>
+<ul>
+  <li>Implementation: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html" target="_blank">Implementing workload management</a></li>
+  <li>Workload and performance data: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html#cm-c-wlm-query-monitoring-metrics" target="_blank">System monitoring tables</a></li>
+</ul>
+
+<h2 id="concurrency-scaling">Concurrency scaling</h2>
+
+<p>ThoughtSpot may generate large numbers of concurrent queries. Redshift’s concurrency scaling feature can be enabled to provide consistent query performance during periods of high activity.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html" target="_blank">Working with concurrency scaling</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="data-modeling">Data modeling</h2>
+
+<p>In Redshift, query performance can be improved significantly using Sort and Distribution keys on large tables. Selecting an optimized compression type can also have a big impact on query performance.</p>
+
+<p>These and other important topics are covered in <a href="https://docs.aws.amazon.com/redshift/latest/dg/c_designing-tables-best-practices.html" target="_blank">Amazon Redshift best practices for table design</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="materialized-views">Materialized views</h2>
+
+<p>Redshift now supports materialized views, and it is recommended to create a materialized view and use it in place of any complex views or poor performing table joins.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html" target="_blank">Creating materialized views in Amazon Redshift</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="defining-joins-between-tables">Defining joins between tables</h2>
+
+<p>To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the columns that contain matching data across two tables. These columns represent the ‘primary key’ and ‘foreign key’ of the join. You can define them in either Redshift or ThoughtSpot.</p>
+
+<p>For details on the syntax for defining primary and foreign keys in Redshift, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html" target="_blank">ALTER TABLE</a> in Amazon’s Redshift documentation.</p>
+
+<p>For details on defining joins in ThoughtSpot, see <a href="/6.0/admin/data-modeling/create-new-relationship.html">Join a table or view to another data source</a>.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.0/_data-connect/making-changes/add-remove-columns-in-a-loaded-table.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.0/_data-integrate/embrace/embrace-redshift-best.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -3782,7 +3810,7 @@ $('#toc').on('click', 'a', function() {
       <div class="col-lg-12 footer">
         Generated: May 27, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 05/26/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
