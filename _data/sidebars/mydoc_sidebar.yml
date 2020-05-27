@@ -1639,9 +1639,9 @@ entries:
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-redshift-modify.html
         output: web,embraceGd
-#      - title: Best practices
-#        url: /data-integrate/embrace/embrace-redshift-best.html
-#        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-redshift-best.html
+        output: web,embraceGd
       - title: Reference
         url: /data-integrate/embrace/embrace-redshift-reference.html
         output: web,embraceGd
