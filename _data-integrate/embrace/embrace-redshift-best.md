@@ -47,8 +47,8 @@ For details, see [Creating materialized views in Amazon Redshift](https://docs.a
 
 ## Defining joins between tables
 
-To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the columns that contain matching data across two tables. These columns represent the ‘primary key’ and ‘foreign key’ of the join.
+To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the columns that contain matching data across two tables. These columns represent the ‘primary key’ and ‘foreign key’ of the join. You can define them in either Redshift or ThoughtSpot.
 
 For details on the syntax for defining primary and foreign keys in Redshift, see [ALTER TABLE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html){:target="_blank"} in Amazon's Redshift documentation.
 
-If you don't define joins in Redshift, you can define them in ThoughtSpot. For details, see [Join a table or view to another data source]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html). 
+For details on defining joins in ThoughtSpot, see [Join a table or view to another data source]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
