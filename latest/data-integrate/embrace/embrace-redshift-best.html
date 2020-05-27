@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Learn how to install ThoughtSpot clusters in VMware."> -->
+<!-- <meta name="description" content="You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."> -->
 <meta name="keywords" content=",  ">
-<title>Install ThoughtSpot clusters in VMware | ThoughtSpot</title>
+<title>Best practices for Embrace with Redshift | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Install ThoughtSpot clusters in VMware”] | thoughtspot.github.io</title>
+<title>[“Best practices for Embrace with Redshift”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Install ThoughtSpot clusters in VMware”]" />
+<meta property="og:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Prerequisites Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites. Download the OVF Download the Open Virtualization Format (OVF) file. Review configuration overview Refer to VMware configuration overview for detailed instance specs. Create the instance Refer to Set up VMware for ThoughtSpot to create and launch your instance. Review required ports Refer to Network Policies to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in VMware to configure your nodes." />
-<meta property="og:description" content="Prerequisites Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites. Download the OVF Download the Open Virtualization Format (OVF) file. Review configuration overview Refer to VMware configuration overview for detailed instance specs. Create the instance Refer to Set up VMware for ThoughtSpot to create and launch your instance. Review required ports Refer to Network Policies to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in VMware to configure your nodes." />
-<link rel="canonical" href="https://docs.thoughtspot.com/latest/appliance/vmware/vmware-cluster-install.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/vmware/vmware-cluster-install.html" />
+<meta name="description" content="Configuring your ThoughtSpot server" />
+<meta property="og:description" content="Configuring your ThoughtSpot server" />
+<link rel="canonical" href="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-redshift-best.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-redshift-best.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-27T10:44:37-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Install ThoughtSpot clusters in VMware”]" />
+<meta property="twitter:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Install ThoughtSpot clusters in VMware”]","dateModified":"2020-05-27T10:44:37-07:00","url":"https://docs.thoughtspot.com/latest/appliance/vmware/vmware-cluster-install.html","datePublished":"2020-05-27T10:44:37-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/vmware/vmware-cluster-install.html"},"description":"Prerequisites Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites. Download the OVF Download the Open Virtualization Format (OVF) file. Review configuration overview Refer to VMware configuration overview for detailed instance specs. Create the instance Refer to Set up VMware for ThoughtSpot to create and launch your instance. Review required ports Refer to Network Policies to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in VMware to configure your nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Best practices for Embrace with Redshift”]","dateModified":"2020-05-27T10:44:37-07:00","url":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-redshift-best.html","datePublished":"2020-05-27T10:44:37-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/data-integrate/embrace/embrace-redshift-best.html"},"description":"Configuring your ThoughtSpot server","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -331,13 +331,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /appliance/vmware/vmware-cluster-install.html.</li>
+         <li class="small-sidebar-link">Current page URL is /data-integrate/embrace/embrace-redshift-best.html.</li>
          <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is appliance.</li>
-           <li class="small-sidebar-link">url_chunks[2] is vmware.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is vmware-cluster-install.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is embrace.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is embrace-redshift-best.html.</li>
  -->
 
        
@@ -357,8 +357,8 @@ var ss360Config = {
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/appliance/vmware/vmware-cluster-install.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/6.1/appliance/vmware/vmware-cluster-install.html</li>
+<li class="small-sidebar-link">newURL is /6.1/data-integrate/embrace/embrace-redshift-best.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/6.1/data-integrate/embrace/embrace-redshift-best.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3097,7 +3097,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/latest/appliance/vmware/vmware-cluster-install.html">Install ThoughtSpot clusters in VMware</a></li>
+                          <li><a href="/latest/appliance/vmware/vmware-cluster-install.html">Install ThoughtSpot clusters in VMware</a></li>
                       
                    
                 
@@ -3205,7 +3205,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/latest/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
+                          <li class="active"><a href="/latest/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
                       
                    
                 
@@ -3691,7 +3691,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Install ThoughtSpot clusters in VMware</h1>
+   <h1 class="post-title-main">Best practices for Embrace with Redshift</h1>
 </div>
 
 
@@ -3699,7 +3699,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Learn how to install ThoughtSpot clusters in VMware.</div>
+    <div class="summary">You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling.</div>
    
 
     
@@ -3736,234 +3736,71 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    7 minutes
+    2 minutes
   
 </span>
  -->
 
     
 
-  <h2 id="prerequisites">Prerequisites</h2>
-<p>Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites.</p>
-<ol>
-  <li><strong>Download the OVF</strong> Download the <a href="https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/">Open Virtualization Format</a> (OVF) file.</li>
-  <li><strong>Review configuration overview</strong> Refer to <a href="/latest/appliance/vmware/vmware-intro.html">VMware configuration overview</a> for detailed instance specs.</li>
-  <li><strong>Create the instance</strong> Refer to <a href="/latest/appliance/vmware/vmware-setup.html">Set up VMware for ThoughtSpot</a> to create and launch your instance.</li>
-  <li><strong>Review required ports</strong> Refer to <a href="/latest/appliance/firewall-ports.html">Network Policies</a> to view the required ports for successful operation of ThoughtSpot.</li>
-  <li><strong>Configure nodes</strong> Refer to <a href="/latest/appliance/vmware/installing-vmware.html">Configure ThoughtSpot nodes in VMware</a> to configure your nodes.</li>
-</ol>
+  <h2 id="configuring-your-thoughtspot-server">Configuring your ThoughtSpot server</h2>
 
-<h2 id="cluster-install">Install ThoughtSpot Software</h2>
-<p>Install the cluster using the ThoughtSpot software release bundle. The estimated installation time is one hour. Follow the steps in this checklist.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>❏</td>
-      <td><a href="#cluster-step-1">Step 1: Run the installer</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="#cluster-step-2">Step 2: Check cluster health</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="#cluster-step-3">Step 3: Finalize installation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket at <a href="https://support.thoughtspot.com">ThoughtSpot Support</a> to request access to the release bundle.</p>
-
-<h3 id="cluster-step-1">Step 1: Run the installer</h3>
-<ol>
-  <li>Copy the downloaded release bundle to <code class="language-plaintext highlighter-rouge">/export/sdb1/TS_TASKS/install</code> using the following command:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ scp &lt;release-number&gt;.tar.gz admin@&lt;hostname&gt;:/export/sdb1/TS_TASKS/install/&lt;file-name&gt;
-</code></pre></div>    </div>
-    <p>Note the following parameters:</p>
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">release-number</code> is the release number of your ThoughtSpot instance, such as 5.3, 6.0, and so on.</li>
-      <li><code class="language-plaintext highlighter-rouge">hostname</code> is your specific hostname.</li>
-      <li><code class="language-plaintext highlighter-rouge">file-name</code> is the name of the tarball file on your local computer.</li>
-    </ul>
-
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can use another secure copy method, if you prefer a method other than the <code>scp</code> command.</div>
-  </li>
-  <li>Alternatively, use <code class="language-plaintext highlighter-rouge">tscli fileserver download-release</code> to download the release bundle.<br />
-You must <a href="/latest/reference/tscli-command-ref.html#tscli-fileserver">configure the fileserver</a> by running <code class="language-plaintext highlighter-rouge">tscli fileserver configure</code> before you can download the release.<br />
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli fileserver download-release &lt;release-number&gt; --user &lt;username&gt; --out &lt;release-location&gt;
-</code></pre></div>    </div>
-    <p>Note the following parameters:</p>
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">release-number</code> is the release number of your ThoughtSpot instance, such as 5.3, 5.3.1, 6.0, and so on.</li>
-      <li><code class="language-plaintext highlighter-rouge">username</code> is the username for the fileserver that you set up earlier, when configuring the fileserver.</li>
-      <li><code class="language-plaintext highlighter-rouge">release-location</code> is the location path of the release bundle on your local machine. For example, <code class="language-plaintext highlighter-rouge">/export/sdb1/TS_TASKS/install/6.0.tar.gz</code>.</li>
-    </ul>
-  </li>
-  <li>Verify the checksum to ensure you have the correct release.<br />
-Run <code class="language-plaintext highlighter-rouge">md5sum -c &lt;release-number&gt;.tar.gz.MD5checksum</code>.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ md5sum -c &lt;release-number&gt;.tar.gz.MD5checksum
-</code></pre></div>    </div>
-
-    <p>Your output says <code class="language-plaintext highlighter-rouge">ok</code> if you have the correct release.</p>
-  </li>
-  <li>Launch a <a href="https://linux.die.net/man/1/screen">screen</a> session. Use screen to ensure that your installation does not stop if you lose network connectivity.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ screen -S DEPLOYMENT
-</code></pre></div>    </div>
-  </li>
-  <li>Create the cluster.<br />
-Run <code class="language-plaintext highlighter-rouge">tscli cluster create</code> to create the cluster.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli cluster create &lt;release-number&gt;.tar.gz
-</code></pre></div>    </div>
-  </li>
-  <li>Edit the output with your specific cluster information.<br />
-For more information on this process, refer to <a href="/latest/appliance/hardware/cluster-create.html">Using the tscli cluster create command</a> and <a href="/latest/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a>.</li>
-</ol>
-
-<p>The cluster installer automatically reboots all the nodes after a successful install. The <code class="language-plaintext highlighter-rouge">firewalld</code> service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br />
-  Log in to any node to check the current cluster status:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ tscli cluster status
-</code></pre></div></div>
-
-<h3 id="cluster-step-2">Step 2: Check cluster health</h3>
-<p>After the cluster installs, check its status using the <code class="language-plaintext highlighter-rouge">tscli cluster status</code> command.</p>
-
-<p>Your output may look similar to the following:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster status
-Cluster: RUNNING
-Cluster name    : thoughtspot
-Cluster id      : 1234X11111
-Number of nodes : 3
-Release         : 6.0
-Last update     = Wed Oct 16 02:24:18 2019
-Heterogeneous Cluster : False
-Storage Type    : HDFS
-
-Database: READY
-Number of tables in READY state: 2185
-Number of tables in OFFLINE state: 0
-Number of tables in INPROGRESS state: 0
-Number of tables in STALE state: 0
-Number of tables in ERROR state: 0
-
-Search Engine: READY
-Has pending tables. Pending time = 1601679ms
-Number of tables in KNOWN_TABLES state: 1934
-Number of tables in READY state: 1928
-Number of tables in WILL_REMOVE state: 0
-Number of tables in BUILDING_AND_NOT_SERVING state: 0
-Number of tables in BUILDING_AND_SERVING state: 128
-Number of tables in WILL_NOT_INDEX state: 0
-</code></pre></div></div>
-<p>Ensure that the cluster is <code class="language-plaintext highlighter-rouge">RUNNING</code> and that the Database and Search Engine are <code class="language-plaintext highlighter-rouge">READY</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli cluster check
-Connecting to hosts...
-[Wed Jan  8 23:15:47 2020] START Diagnosing ssh
-[Wed Jan  8 23:15:47 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:47 2020] START Diagnosing connection
-[Wed Jan  8 23:15:47 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:47 2020] START Diagnosing zookeeper
-[Wed Jan  8 23:15:47 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:47 2020] START Diagnosing sage
-[Wed Jan  8 23:15:48 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:48 2020] START Diagnosing timezone
-[Wed Jan  8 23:15:48 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:48 2020] START Diagnosing disk
-[Wed Jan  8 23:15:48 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:48 2020] START Diagnosing cassandra
-[Wed Jan  8 23:15:48 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:15:48 2020] START Diagnosing hdfs
-[Wed Jan  8 23:16:02 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:02 2020] START Diagnosing orion-oreo
-[Wed Jan  8 23:16:02 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:02 2020] START Diagnosing memcheck
-[Wed Jan  8 23:16:02 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:02 2020] START Diagnosing ntp
-[Wed Jan  8 23:16:08 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:08 2020] START Diagnosing trace_vault
-[Wed Jan  8 23:16:09 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:09 2020] START Diagnosing postgres
-[Wed Jan  8 23:16:11 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:11 2020] START Diagnosing disk-health
-[Wed Jan  8 23:16:11 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:11 2020] START Diagnosing falcon
-[Wed Jan  8 23:16:12 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:12 2020] START Diagnosing orion-cgroups
-[Wed Jan  8 23:16:12 2020] SUCCESS
-################################################################################
-[Wed Jan  8 23:16:12 2020] START Diagnosing callosum
-/usr/lib/python2.7/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-  InsecureRequestWarning)
-[Wed Jan  8 23:16:12 2020] SUCCESS
-################################################################################
-</code></pre></div></div>
-<p>Your output may look something like the above. Ensure that all diagnostics show <code class="language-plaintext highlighter-rouge">SUCCESS</code>.</p>
-
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster.</div>
-
-<h3 id="cluster-step-3">Step 3: Finalize installation</h3>
-
-<p>After the cluster status changes to <code class="language-plaintext highlighter-rouge">READY</code>, sign in to ThoughtSpot on your browser.
-Follow these steps:</p>
-
-<ol>
-  <li>Start a browser from your computer.</li>
-  <li>Enter your secure IP information on the address line.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://&lt;IP-address&gt;
-</code></pre></div>    </div>
-  </li>
-  <li>If you don’t have a security certificate for ThoughtSpot, you must bypass the security warning:
-    <ul>
-      <li>Click <strong>Advanced</strong></li>
-      <li>Click <strong>Proceed</strong></li>
-    </ul>
-  </li>
-  <li>The ThoughtSpot sign-in page appears.</li>
-  <li>In the <a href="#ts-login">ThoughtSpot sign-in window</a>, enter admin credentials, and click <strong>Sign in</strong>.
-  ThoughtSpot recommends changing the default admin password.</li>
-</ol>
-
-<p id="ts-login"><img src="/latest/images/ts-login-page.png" alt="ThoughtSpot's sign-in window" title="ThoughtSpot's sign-in window" />
-<!--<figure><img class="docimage" src="/images/ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." /> <figcaption>ThoughtSpot's sign-in window</figcaption></figure>
---></p>
-
-<h2 id="lean-configuration">Lean configuration</h2>
-<p><strong>(For use with thin provisioning only)</strong> If you have a <a href="/latest/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable">small or medium instance type</a>, with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact <a href="/latest/appliance/contact.html">ThoughtSpot Support</a> for assistance with this configuration.</p>
-
-<h2 id="related-information">Related information</h2>
-<p>Use these references for successful installation and administration of ThoughtSpot:</p>
-
+<p>We recommend configuring the following settings when creating Embrace connections:</p>
 <ul>
-  <li><a href="/latest/appliance/hardware/nodesconfig-example">The nodes.config file</a></li>
-  <li><a href="/latest/appliance/hardware/parameters-nodesconfig.html">Parameters of the nodes.config file</a></li>
-  <li><a href="/latest/appliance/hardware/cluster-create.html">Using the tscli cluster create command</a></li>
-  <li><a href="/latest/appliance/hardware/parameters-cluster-create.html">Parameters of the <code class="language-plaintext highlighter-rouge">cluster create</code> command</a></li>
-  <li><a href="/latest/appliance/welcome-intro.html">Deployment Overview</a></li>
-  <li><a href="/latest/appliance/contact.html">Contact Support</a></li>
+  <li>Turn on ‘Search on Enter’ to reduce the number of queries run against Redshift.</li>
+  <li>Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.</li>
 </ul>
+
+<p>Contact ThoughtSpot support to do this configuration.</p>
+
+<h2 id="optimizing-query-performance">Optimizing query performance</h2>
+
+<p>User experience in ThoughtSpot Embrace is strongly impacted by the performance of queries in the underlying database. Redshift is a columnar MPP database built for analytic workloads, and proper tuning can have a significant impact on query performance.</p>
+
+<p>You should always follow AWS best practices to optimize query performance. For details, see
+<a href="https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html" target="_blank">Tuning query performance</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="workload-management-and-monitoring">Workload management and monitoring</h2>
+
+<p>We recommend that you implement workload management (WLM) within Redshift to prioritize queries appropriately.
+For more information, refer to the following links in Amazon’s Redshift documentation:</p>
+<ul>
+  <li>Implementation: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html" target="_blank">Implementing workload management</a></li>
+  <li>Workload and performance data: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html#cm-c-wlm-query-monitoring-metrics" target="_blank">System monitoring tables</a></li>
+</ul>
+
+<h2 id="concurrency-scaling">Concurrency scaling</h2>
+
+<p>ThoughtSpot may generate large numbers of concurrent queries. Redshift’s concurrency scaling feature can be enabled to provide consistent query performance during periods of high activity.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html" target="_blank">Working with concurrency scaling</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="data-modeling">Data modeling</h2>
+
+<p>In Redshift, query performance can be improved significantly using Sort and Distribution keys on large tables. Selecting an optimized compression type can also have a big impact on query performance.</p>
+
+<p>These and other important topics are covered in <a href="https://docs.aws.amazon.com/redshift/latest/dg/c_designing-tables-best-practices.html" target="_blank">Amazon Redshift best practices for table design</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="materialized-views">Materialized views</h2>
+
+<p>Redshift now supports materialized views, and it is recommended to create a materialized view and use it in place of any complex views or poor performing table joins.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html" target="_blank">Creating materialized views in Amazon Redshift</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="defining-joins-between-tables">Defining joins between tables</h2>
+
+<p>To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the columns that contain matching data across two tables. These columns represent the ‘primary key’ and ‘foreign key’ of the join. You can define them in either Redshift or ThoughtSpot.</p>
+
+<p>For details on the syntax for defining primary and foreign keys in Redshift, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html" target="_blank">ALTER TABLE</a> in Amazon’s Redshift documentation.</p>
+
+<p>For details on defining joins in ThoughtSpot, see <a href="/latest/admin/data-modeling/create-new-relationship.html">Join a table or view to another data source</a>.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.1/_appliance/vmware/vmware-cluster-install.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.1/_data-integrate/embrace/embrace-redshift-best.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -3985,7 +3822,7 @@ Follow these steps:</p>
       <div class="col-lg-12 footer">
         Generated: May 27, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/3/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 05/26/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
