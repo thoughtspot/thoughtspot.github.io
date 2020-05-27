@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Run ThoughtSpot on a RedHat Enterprise Linux (RHEL) 7.7 image that your organization manages internally."> -->
+<!-- <meta name="description" content="You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."> -->
 <meta name="keywords" content=",  ">
-<title>RHEL Deployment Overview | ThoughtSpot</title>
+<title>Best practices for Embrace with Redshift | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,22 +47,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“RHEL Deployment Overview”] | thoughtspot.github.io</title>
+<title>[“Best practices for Embrace with Redshift”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“RHEL Deployment Overview”]" />
+<meta property="og:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. ThoughtSpot certifies RHEL 7.7 on the following platforms: ThoughtSpot-configured appliances, both DELL hardware and SMC hardware Cloud deployments: Amazon Web Services (AWS) EC2, Microsoft Azure, and Google Cloud Platform (GCP) VMware" />
-<meta property="og:description" content="Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. ThoughtSpot certifies RHEL 7.7 on the following platforms: ThoughtSpot-configured appliances, both DELL hardware and SMC hardware Cloud deployments: Amazon Web Services (AWS) EC2, Microsoft Azure, and Google Cloud Platform (GCP) VMware" />
-<link rel="canonical" href="https://docs.thoughtspot.com/6.1/appliance/rhel/rhel.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/6.1/appliance/rhel/rhel.html" />
+<meta name="description" content="Configuring your ThoughtSpot server" />
+<meta property="og:description" content="Configuring your ThoughtSpot server" />
+<link rel="canonical" href="https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-best.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-best.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-27T10:37:15-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“RHEL Deployment Overview”]" />
+<meta property="twitter:title" content="[“Best practices for Embrace with Redshift”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“RHEL Deployment Overview”]","dateModified":"2020-05-27T10:37:15-07:00","url":"https://docs.thoughtspot.com/6.1/appliance/rhel/rhel.html","datePublished":"2020-05-27T10:37:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/rhel/rhel.html"},"description":"Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. ThoughtSpot certifies RHEL 7.7 on the following platforms: ThoughtSpot-configured appliances, both DELL hardware and SMC hardware Cloud deployments: Amazon Web Services (AWS) EC2, Microsoft Azure, and Google Cloud Platform (GCP) VMware","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Best practices for Embrace with Redshift”]","dateModified":"2020-05-27T10:37:15-07:00","url":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-best.html","datePublished":"2020-05-27T10:37:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-best.html"},"description":"Configuring your ThoughtSpot server","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -331,13 +331,13 @@ var ss360Config = {
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /appliance/rhel/rhel.html.</li>
+         <li class="small-sidebar-link">Current page URL is /data-integrate/embrace/embrace-redshift-best.html.</li>
          <li class="small-sidebar-link">Current version is 6.1.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is appliance.</li>
-           <li class="small-sidebar-link">url_chunks[2] is rhel.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is rhel.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is embrace.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is embrace-redshift-best.html.</li>
  -->
 
        
@@ -357,8 +357,8 @@ var ss360Config = {
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/appliance/rhel/rhel.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.1/6.1/appliance/rhel/rhel.html</li>
+<li class="small-sidebar-link">newURL is /6.1/data-integrate/embrace/embrace-redshift-best.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.1/6.1/data-integrate/embrace/embrace-redshift-best.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2765,7 +2765,7 @@ var ss360Config = {
                 
                   
                       
-                          <li class="active"><a href="/6.1/appliance/rhel/rhel.html">RHEL overview</a></li>
+                          <li><a href="/6.1/appliance/rhel/rhel.html">RHEL overview</a></li>
                       
                    
                 
@@ -3205,7 +3205,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.1/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
+                          <li class="active"><a href="/6.1/data-integrate/embrace/embrace-redshift-best.html">Best practices</a></li>
                       
                    
                 
@@ -3691,7 +3691,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">RHEL Deployment Overview</h1>
+   <h1 class="post-title-main">Best practices for Embrace with Redshift</h1>
 </div>
 
 
@@ -3699,7 +3699,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Run ThoughtSpot on a RedHat Enterprise Linux (RHEL) 7.7 image that your organization manages internally.</div>
+    <div class="summary">You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling.</div>
    
 
     
@@ -3736,53 +3736,71 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>
  -->
 
     
 
-  <p>Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. ThoughtSpot certifies RHEL 7.7 on the following platforms:</p>
+  <h2 id="configuring-your-thoughtspot-server">Configuring your ThoughtSpot server</h2>
+
+<p>We recommend configuring the following settings when creating Embrace connections:</p>
 <ul>
-  <li>ThoughtSpot-configured appliances, both <a href="/6.1/appliance/hardware/installing-dell.html">DELL hardware</a> and <a href="/6.1/appliance/hardware/installing-the-smc.html">SMC hardware</a></li>
-  <li>Cloud deployments: <a href="/6.1/appliance/aws/configuration-options.html">Amazon Web Services (AWS) EC2</a>, <a href="/6.1/appliance/azure/configuration-options.html">Microsoft Azure</a>, and <a href="/6.1/appliance/gcp/configuration-options.html">Google Cloud Platform (GCP)</a></li>
-  <li><a href="/6.1/appliance/vmware/vmware-intro.html">VMware</a></li>
+  <li>Turn on ‘Search on Enter’ to reduce the number of queries run against Redshift.</li>
+  <li>Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.</li>
 </ul>
 
-<p>Follow these steps to deploy ThoughtSpot through RHEL:</p>
+<p>Contact ThoughtSpot support to do this configuration.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>❏</td>
-      <td><a href="/6.1/appliance/rhel/rhel-prerequisites.html">Complete installation prerequisites</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="/6.1/appliance/rhel/rhel-ts-artifacts.html">Get ThoughtSpot artifacts</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="/6.1/appliance/rhel/rhel-install-online.html">Install ThoughtSpot in RHEL online clusters</a>, or<br /><a href="/6.1/appliance/rhel/rhel-install-offline.html">Install ThoughtSpot in RHEL offline clusters</a></td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="optimizing-query-performance">Optimizing query performance</h2>
 
-<p>Additionally, learn how you can:</p>
+<p>User experience in ThoughtSpot Embrace is strongly impacted by the performance of queries in the underlying database. Redshift is a columnar MPP database built for analytic workloads, and proper tuning can have a significant impact on query performance.</p>
+
+<p>You should always follow AWS best practices to optimize query performance. For details, see
+<a href="https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html" target="_blank">Tuning query performance</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="workload-management-and-monitoring">Workload management and monitoring</h2>
+
+<p>We recommend that you implement workload management (WLM) within Redshift to prioritize queries appropriately.
+For more information, refer to the following links in Amazon’s Redshift documentation:</p>
 <ul>
-  <li><a href="/6.1/appliance/rhel/rhel-upgrade.html">Upgrade ThoughtSpot for RHEL to a new release</a></li>
-  <li><a href="/6.1/appliance/rhel/rhel-add-node.html">Add a new node to an existing ThoughtSpot cluster in RHEL</a></li>
+  <li>Implementation: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html" target="_blank">Implementing workload management</a></li>
+  <li>Workload and performance data: <a href="https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html#cm-c-wlm-query-monitoring-metrics" target="_blank">System monitoring tables</a></li>
 </ul>
 
-<p>Finally, to see what additional 3rd-party RPM packages your ThoughtSpot installation includes by default, see <a href="/6.1/appliance/rhel/rhel-packages.html">Packages installed with ThoughtSpot for RHEL</a></p>
+<h2 id="concurrency-scaling">Concurrency scaling</h2>
+
+<p>ThoughtSpot may generate large numbers of concurrent queries. Redshift’s concurrency scaling feature can be enabled to provide consistent query performance during periods of high activity.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html" target="_blank">Working with concurrency scaling</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="data-modeling">Data modeling</h2>
+
+<p>In Redshift, query performance can be improved significantly using Sort and Distribution keys on large tables. Selecting an optimized compression type can also have a big impact on query performance.</p>
+
+<p>These and other important topics are covered in <a href="https://docs.aws.amazon.com/redshift/latest/dg/c_designing-tables-best-practices.html" target="_blank">Amazon Redshift best practices for table design</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="materialized-views">Materialized views</h2>
+
+<p>Redshift now supports materialized views, and it is recommended to create a materialized view and use it in place of any complex views or poor performing table joins.</p>
+
+<p>For details, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html" target="_blank">Creating materialized views in Amazon Redshift</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="defining-joins-between-tables">Defining joins between tables</h2>
+
+<p>To search more than one table at the same time in ThoughtSpot, you must define joins between these tables by specifying the columns that contain matching data across two tables. These columns represent the ‘primary key’ and ‘foreign key’ of the join. You can define them in either Redshift or ThoughtSpot.</p>
+
+<p>For details on the syntax for defining primary and foreign keys in Redshift, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html" target="_blank">ALTER TABLE</a> in Amazon’s Redshift documentation.</p>
+
+<p>For details on defining joins in ThoughtSpot, see <a href="/6.1/admin/data-modeling/create-new-relationship.html">Join a table or view to another data source</a>.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.1/_appliance/rhel/rhel.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.1/_data-integrate/embrace/embrace-redshift-best.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         
       
@@ -3804,7 +3822,7 @@ $('#toc').on('click', 'a', function() {
       <div class="col-lg-12 footer">
         Generated: May 27, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/20/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 05/26/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
