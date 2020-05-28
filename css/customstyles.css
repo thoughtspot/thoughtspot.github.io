@@ -86,7 +86,7 @@ p.iconTitle {
 /* Topic or Form Factor introduction. Container with 1:5 ratio, image on left, text on right */
 .grid-container-opener {
     display: grid;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1fr 5fr 2fr;
     grid-gap: 20px;
 }
 

@@ -12,6 +12,7 @@ permalink: /:collection/:path.html
   <div class="grid-child">
     <p class="text-opener">ThoughtSpot Cloud is our managed service offering. We host, manage, and maintain the service. In addition to the powerful insights over many billion rows of data, ThoughtSpot Cloud offers multiple advantages.</p>
     </div>
+  <div class="grid-child">&nbsp;</div>  
 </div>
 
 <div>&nbsp;</div>
