@@ -81,6 +81,46 @@ p.iconTitle {
   text-align: center;
 }
 
+/*/* Sub-site landing page */
+
+/* Topic or Form Factor introduction. Container with 1:5 ratio, image on left, text on right */
+.grid-container-opener {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-gap: 20px;
+}
+
+.text-opener {
+  text-align: left;
+  /*font-size: larger;*/
+}
+
+/* Summary of topics by persona. Optimized for 4 across */
+
+.grid-container-persona {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+img.personaImg {
+  text-align: left !important;
+  vertical-align: text-bottom;
+  margin-bottom: 27px;
+}
+
+p.personaTitle {
+  text-align: left;
+  /*font-size: large;*/
+  font-weight: bold;
+}
+
+p.topicLink {
+  text-align: left;
+  /*font-size: larger;*/
+}
+
+
 p.bookLink {
   font-size: 97%;
   font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -88,6 +128,7 @@ p.bookLink {
   padding-top: 10px;
   text-align: center;
 }
+
 
 img.indexImg {
   text-align: center !important;

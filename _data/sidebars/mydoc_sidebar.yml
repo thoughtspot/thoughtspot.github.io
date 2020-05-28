@@ -34,6 +34,78 @@ entries:
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
+  - sectiontitle: ThoughtSpot Cloud
+    output: web,ugBk
+    sectionitems:
+    - title: About ThoughtSpot Cloud
+      url: /admin/ts-cloud/ts-cloud.html
+      output: web
+    - levelTwoTitle: For Business Users
+      output: web
+      levelTwoItems:
+      - title: Business User onboarding
+        url: /admin/ts-cloud/business-user-onboarding.html
+        output: web
+      - title: Get started
+        url: /admin/ts-cloud/business-user-get-started.html
+        output: web
+      - title: Data source
+        url: /admin/ts-cloud/business-user-datasource-confirm.html
+        output: web
+      - title: Select a Pinboard
+        url: /admin/ts-cloud/business-user-pinboard-select.html
+        output: web
+      - title: Explore your Pinboard
+        url: /admin/ts-cloud/business-user-pinboard-view.html
+        output: web
+      - title: Pinboards
+        url: /admin/ts-cloud/pinboards.html
+        output: web
+      - title: Search Assist
+        url: /admin/ts-cloud/search-assist.html
+        output: web
+    - levelTwoTitle: For Analysts
+      output: web
+      levelTwoItems:
+      - title: Analyst onboarding
+        url: /admin/ts-cloud/analyst-onboarding.html
+        output: web
+      - title: Connect to data
+        url: /admin/ts-cloud/connect-data.html
+        output: web
+      - title: Join tables
+        url: /admin/ts-cloud/tables-join.html
+        output: web
+      - title: Create Worksheets
+        url: /admin/ts-cloud/worksheet-create.html
+        output: web
+      - title: Visualize Search Results
+        url: /admin/ts-cloud/visualize-search.html
+        output: web
+      - title: Compose Pinboards from Answers
+        url: /admin/ts-cloud/pinboard-compose.html
+        output: web
+      - title: SpotApps Scriptability
+        url: /admin/ts-cloud/scriptability.html
+        output: web
+      - title: SpotApps Templates
+        url: /admin/ts-cloud/app-templates.html
+        output: web
+    - levelTwoTitle: For IT Operations
+      output: web
+      levelTwoItems:
+      - title: User management
+        url: /admin/ts-cloud/users.html
+        output: web
+      - title: Group management
+        url: /admin/ts-cloud/groups.html
+        output: web
+      - title: Local Authentication
+        url: /admin/ts-cloud/authentication-local.html
+        output: web
+      - title: Authentication through SAML
+        url: /admin/ts-cloud/authentication-integration.html
+        output: web
   - sectiontitle: Users
     output: web,ugBk
     sectionitems:
