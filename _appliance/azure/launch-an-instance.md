@@ -220,16 +220,23 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    sudo hostnamectl set-hostname <HOSTNAME> --static
    ```
 
-2. Update `/etc/sysconfig/network-scripts/ifcfg-eth0` with the IP and hostname:
+2. Create `/etc/sysconfig/network-scripts/ifcfg-eth0` with the IP and hostname:
 
    ```
    $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
-   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
+   DEVICE=eth0
+   ONBOOT=yes
+   BOOTPROTO=dhcp
+   HWADDR=<Add hardware/MAC address for eth0>
+   TYPE=Ethernet
+   USERCTL=no
+   PEERDNS=yes
+   IPV6INIT=no
    ```
 
 3. Modify permissions for `/etc/sysconfig/network-scripts/ifcfg-eth0`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
     ```
     $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
     ```
-4. Repeat this process (steps 1 through 4) for each node.
+4. Repeat this process (steps 1 through 4) for each node in the cluster.
