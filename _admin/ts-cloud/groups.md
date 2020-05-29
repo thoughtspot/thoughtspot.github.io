@@ -19,4 +19,7 @@ You can use the Admin Portal to accomplish the following tasks:
 * **Manage an existing group** by clicking on the group you would like to edit: change the group's default Pinboard, add an existing group to the group, add a user to the group, or resend or test the welcome email
 * **Delete a group** by hovering over a group name, clicking the checkbox that appears, and selecting the **Delete** button
 
+<hr>
+**Related information**
+
 Refer to [Create, edit, or delete a group]({{ site.baseurl }}/admin/users-groups/add-group.html) for more detail on how to create and manage groups.
