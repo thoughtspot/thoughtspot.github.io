@@ -10,11 +10,9 @@ https://try-internal.thoughtspot.com/#/onboarding
 adi1
 Abcd1234! -->
 
-[replace following text]
+[Add information as neccesary]
 
-Your job is vital to your organization, and using ThoughtSpot makes it easier.
-
-So here is a quick introduction to what you need:
+Here is a quick introduction to what you need:
 
 | 1. | ![]({{ site.baseurl }}/images/getting-started-with-your-data.png "Get started") | [Get started]({{ site.baseurl }}/admin/ts-cloud/business-user-get-started.html) |
 | 2. | ![]({{ site.baseurl }}/images/datasource-recommended.png "Recommended data sourced") | [Confirm your datasource]({{ site.baseurl }}/admin/ts-cloud/business-user-datasource-confirm.html) |

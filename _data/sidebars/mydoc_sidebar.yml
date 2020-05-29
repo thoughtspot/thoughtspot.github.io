@@ -43,9 +43,12 @@ entries:
     - title: Starting with TS Cloud
       url:  /admin/ts-cloud/starting.html
       output: web
-    - levelTwoTitle: For Business Users
+    - levelTwoTitle: Business Users
       output: web
       levelTwoItems:
+      - title: For Business Users
+        url: /admin/ts-cloud/business-user.html
+        output: web
       - title: Business User onboarding
         url: /admin/ts-cloud/business-user-onboarding.html
         output: web
@@ -61,15 +64,18 @@ entries:
       - title: Explore your Pinboard
         url: /admin/ts-cloud/business-user-pinboard-view.html
         output: web
-      - title: Pinboards
+      - title: More on Pinboards and Answers
         url: /admin/ts-cloud/pinboards.html
         output: web
       - title: Search Assist
         url: /admin/ts-cloud/search-assist.html
         output: web
-    - levelTwoTitle: For Analysts
+    - levelTwoTitle: Analysts
       output: web
       levelTwoItems:
+      - title: For Analysts
+        url: /admin/ts-cloud/analyst.html
+        output: web
       - title: Analyst onboarding
         url: /admin/ts-cloud/analyst-onboarding.html
         output: web
@@ -97,11 +103,11 @@ entries:
       - title: ThoughtSpot Scripting Language
         url: /admin/ts-cloud/tsl.html
         output: web
-    - levelTwoTitle: For IT Operations
+    - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
-      - title: Administrators
-        url: /admin/ts-cloud/it-ops-onboarding.html
+      - title: For IT and Ops
+        url: /admin/ts-cloud/it-ops.html
         output: web
       - title: User management
         url: /admin/ts-cloud/users.html
