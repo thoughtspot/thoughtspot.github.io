@@ -12,8 +12,7 @@ permalink: /:collection/:path.html
 | 4. | ![]({{ site.baseurl }}/images/visualize-data-answers.png "Visualize data Search as Answers") | [Visualize and save Search Results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html)  |
 | 5. | ![]({{ site.baseurl }}/images/publish-in-pinboards.png "Publish Answers as Pinboards") | [Publish collections of Answers as Pinboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html)  |
 
-<hr>
-**Related information**
+## Related information
 
 - [Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
 - [Present a pinboard]({{ site.baseurl }}/pinboards/start-a-slideshow.html)
