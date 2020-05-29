@@ -19,11 +19,11 @@ You can download these objects in the form of a scriptable file in the [ThoughtS
 
 ## Prerequisites
 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Export | Import  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Export | Import  |
 | ---------- | ---- | --- |
-| Pinboards | Read permission for the Pinboard and all underlying tables and Worksheets | n/a |
-| Answers | Read permission for the Answer and all underlying tables and Worksheets | n/a |
-| Worksheets | **Can view** permission on the Worksheet and all underlying tables | **Can manage data** permission. If updating a previously existing Worksheet, you must have **can edit** permission for the Worksheet. |
+| **Pinboards** | Read permission for the Pinboard and all underlying tables and Worksheets | n/a |
+| **Answers** | Read permission for the Answer and all underlying tables and Worksheets | n/a |
+| **Worksheets** | **Can view** permission on the Worksheet and all underlying tables | **Can manage data** permission. If updating a previously existing Worksheet, you must have **can edit** permission for the Worksheet. |
 
 {: id="export-object"}
 ## Export an object
