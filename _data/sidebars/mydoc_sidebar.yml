@@ -40,6 +40,9 @@ entries:
     - title: About ThoughtSpot Cloud
       url: /admin/ts-cloud/ts-cloud.html
       output: web
+    - title: Starting with TS Cloud
+      url:  /admin/ts-cloud/starting.html
+      output: web
     - levelTwoTitle: For Business Users
       output: web
       levelTwoItems:
@@ -50,7 +53,7 @@ entries:
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
       - title: Data source
-        url: /admin/ts-cloud/business-user-datasource-confirm.html
+        url: /admin/ts-cloudbusiness-user-datasource-confirm.html
         output: web
       - title: Select a Pinboard
         url: /admin/ts-cloud/business-user-pinboard-select.html
@@ -91,9 +94,15 @@ entries:
       - title: SpotApps Templates
         url: /admin/ts-cloud/app-templates.html
         output: web
+      - title: ThoughtSpot Scripting Language
+        url: /admin/ts-cloud/tsl.html
+        output: web
     - levelTwoTitle: For IT Operations
       output: web
       levelTwoItems:
+      - title: Administrators
+        url: /admin/ts-cloud/it-ops-onboarding.html
+        output: web
       - title: User management
         url: /admin/ts-cloud/users.html
         output: web

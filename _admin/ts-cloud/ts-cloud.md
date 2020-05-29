@@ -11,6 +11,7 @@ permalink: /:collection/:path.html
     <img src="{{ "/images/ts-cloud-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Cloud" height="250"></div>
   <div class="grid-child">
     <p class="text-opener">ThoughtSpot Cloud is our managed service offering. We host, manage, and maintain the service. In addition to the powerful insights over many billion rows of data, ThoughtSpot Cloud offers multiple advantages.</p>
+
     </div>
   <div class="grid-child">&nbsp;</div>  
 </div>
@@ -47,7 +48,8 @@ permalink: /:collection/:path.html
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>
       <a href="analyst-onboarding.html">Onboard as Analyst</a><br>
       <a href="scriptability.html">SpotApps Migration</a><br>
-      <a href="app-templates.html">SpotApp Templates</a></p>
+      <a href="app-templates.html">SpotApp Templates</a><br>
+      <a href="tsl.html">TS Scripting Language</a></p>
   </div>
   <div class="grid-child">
     <img class="personaImg" src="{{ "/images/persona-it-ops.png" | prepend: site.baseurl  }}" alt="IT and Operations" height="150">
