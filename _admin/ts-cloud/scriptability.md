@@ -128,7 +128,6 @@ To migrate an Answer, Pinboard, or Worksheet from one cluster to another, follow
 
    ![Upload successful]({{ site.baseurl }}/images/scriptability-cloud-successful-import.png "Upload successful")
 
-<hr>
-**Related information**
+## Related information
 
 - [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html)   
