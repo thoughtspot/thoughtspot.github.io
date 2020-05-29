@@ -56,7 +56,7 @@ entries:
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
       - title: Data source
-        url: /admin/ts-cloudbusiness-user-datasource-confirm.html
+        url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
       - title: Select a Pinboard
         url: /admin/ts-cloud/business-user-pinboard-select.html
