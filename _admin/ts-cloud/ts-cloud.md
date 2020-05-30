@@ -10,13 +10,11 @@ permalink: /:collection/:path.html
   <div class="grid-child">
     <img src="{{ "/images/ts-cloud-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Cloud" height="250"></div>
   <div class="grid-child">
-    <p class="text-opener">ThoughtSpot Cloud is our managed service offering. We host, manage, and maintain the service. In addition to the powerful insights over many billion rows of data, ThoughtSpot Cloud offers multiple advantages.</p>
-
+    <p class="text-opener">ThoughtSpot Cloud is our managed service offering. We host, manage, and maintain the service. In addition to the powerful insights over many billion rows of data, ThoughtSpot Cloud offers multiple advantages.</p><p class="text-opener">ThoughtSpot Cloud is now available as a free trial! For information on supported features, and how to sign up, see <a href="{{ "/admin/ts-cloud/cloud-getting-started.html "| prepend: site.baseurl }}">Getting Started.</a></p>
     </div>
-  <div class="grid-child">&nbsp;</div>  
+  <div class="grid-child">&nbsp;</div>  <br>
 </div>
-
-<div>&nbsp;</div>
+<div></div>
 
 <div class="text-opener">
   <dl>

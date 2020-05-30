@@ -40,8 +40,8 @@ entries:
     - title: About ThoughtSpot Cloud
       url: /admin/ts-cloud/ts-cloud.html
       output: web
-    - title: Starting with TS Cloud
-      url:  /admin/ts-cloud/starting.html
+    - title: Getting Started
+      url:  /admin/ts-cloud/cloud-getting-started.html
       output: web
     - levelTwoTitle: Business Users
       output: web
