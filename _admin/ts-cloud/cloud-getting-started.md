@@ -9,12 +9,11 @@ permalink: /:collection/:path.html
 
 The free trial of ThoughtSpot Cloud supports the following:
 - Embrace connections to the Snowflake and Redshift data warehouses
-- Ability to export worksheets
 
 ## Unsupported features
 
 The free trial of ThoughtSpot Cloud does not support the following:
-- Loading data using TSload
+- Loading data using tsload
 - Custom calendar
 - Data cannot be migrated to another ThoughtSpot cluster, but you can migrate worksheets. For details, see [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html)
 
