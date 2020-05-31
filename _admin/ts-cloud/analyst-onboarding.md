@@ -12,6 +12,10 @@ permalink: /:collection/:path.html
 | 4. | ![]({{ site.baseurl }}/images/visualize-data-answers.png "Visualize data Search as Answers") | [Visualize and save Search Results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html)  |
 | 5. | ![]({{ site.baseurl }}/images/publish-in-pinboards.png "Publish Answers as Pinboards") | [Publish collections of Answers as Pinboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html)  |
 
+## Onboarding video
+
+<script src="https://fast.wistia.com/embed/medias/dmue1pc6fp.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_dmue1pc6fp popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
 ## Related information
 
 - [Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
