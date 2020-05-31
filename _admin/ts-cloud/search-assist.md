@@ -17,7 +17,7 @@ The search then returns the Answer as a table.
 
 The additional searches also return Answers, either in table form or as chart, to these questions:
 
-- ***What were sales for shirts in 2019, per quarter?***;<br>The correct search here is, ***sales shirts 2019 quaterly***.
+- ***What were sales for shirts in 2019, per quarter?***;<br>The correct search here is, ***sales shirts 2019 quarterly***.
 
 - ***What were the top-selling products during the last quarter?***;<br>The search here is, ***sales product last quarter top***.
 
