@@ -22,7 +22,11 @@ Here is a quick introduction to what you need to leverage ThoughtSpot as a busin
 3. [Select a Pinboard]({{ site.baseurl }}/admin/ts-cloud/business-user-pinboard-select.html): Choose a Pinboard to follow or explore <br>
     ![]({{ site.baseurl }}/images/pinboard-select.png "Select Pinboard")
 4. [Explore your first Pinboard]({{ site.baseurl }}/admin/ts-cloud/business-user-pinboard-view.html): Explore the valuable insights ThoughtSpot Pinboards can provide <br>
-    ![]({{ site.baseurl }}/images/pinboard-view.png "View the Pinboard")  
+    ![]({{ site.baseurl }}/images/pinboard-view.png "View the Pinboard")
+
+## Onboarding video
+
+<script src="https://fast.wistia.com/embed/medias/jozu0yadg7.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_jozu0yadg7 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ## Repeating the onboarding process
 
