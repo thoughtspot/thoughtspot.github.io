@@ -15,7 +15,8 @@ The free trial of ThoughtSpot Cloud supports the following:
 The free trial of ThoughtSpot Cloud does not support the following:
 - Loading data using tsload
 - Custom calendar
-- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate worksheets. For details, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate pinboards, answers, and worksheets.  
+For details, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 ## How to sign up
 
