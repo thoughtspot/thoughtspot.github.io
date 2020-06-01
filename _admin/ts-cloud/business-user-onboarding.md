@@ -9,11 +9,32 @@ permalink: /:collection/:path.html
 
 When you begin using ThoughtSpot, the onboarding process starts automatically and guides you through a few basic scenarios.
 
-Usually, you receive an email welcoming you to the onboarding process at ThoughtSpot.
-
-To repeat user onboarding, see [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).
+To repeat user onboarding, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
 
 Here is a quick introduction to what you need to leverage ThoughtSpot as a business user:
+
+<div class="grid-container-li-img">
+  <div class="grid-child">
+    <script src="https://fast.wistia.com/embed/medias/jozu0yadg7.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_jozu0yadg7 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></div>
+  <div class="grid-child">
+
+    <ol>
+     <li>
+       <a href="{{ "/admin/ts-cloud/business-user-get-started.html "| prepend: site.baseurl }}">Get started</a>: learn about one of the many methods for analyzing data in ThoughtSpot, through a Pinboard</li>
+     <li>
+       <a href="{{ "/admin/ts-cloud/business-user-datasource-confirm.html "| prepend: site.baseurl }}">Confirm your datasource</a>: get insights to this data source through Search</li>
+     <li>
+       <a href="{{ "/admin/ts-cloud/business-user-pinboard-select.html "| prepend: site.baseurl }}">Select Pinboard</a>: choose a Pinboard to follow or explore</li>
+     <li>
+       <a href="{{ "/admin/ts-cloud/business-user-pinboard-view.html "| prepend: site.baseurl }}">View the Pinboard</a>: explore valuable insights through Pinboards</li>   
+    </ol>
+  </div>
+</div>    
+<!--
+<hr>
+
+Here is a quick introduction to what you need to leverage ThoughtSpot as a business user:
+
 
 1. [Get started]({{ site.baseurl }}/admin/ts-cloud/business-user-get-started.html): Learn about one way to analyze data in ThoughtSpot, through a Pinboard <br>
     ![]({{ site.baseurl }}/images/getting-started-with-your-data.png "Get started")
@@ -28,6 +49,4 @@ Here is a quick introduction to what you need to leverage ThoughtSpot as a busin
 
 <script src="https://fast.wistia.com/embed/medias/jozu0yadg7.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_jozu0yadg7 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
-## Repeating the onboarding process
-
-***\[Optional\]*** Any user can repeat their onboarding experience at any time. Simply select **Profile** from the user icon on the top right corner of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**. See [Revisit onboarding]({{ site.baseurl }}/end-user/introduction/about-user.html#onboarding).
+-->
