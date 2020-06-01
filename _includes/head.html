@@ -32,6 +32,75 @@
 <script src="{{ "js/toc.js" | absolute_url }}"></script>
 <script src="{{ "js/customscripts.js" | absolute_url }}"></script>
 
+<!-- BEGIN new Cloud styles -->
+<style>
+  /*/* Sub-site landing page */
+
+  /* Topic or Form Factor introduction. Container with 1:5 ratio, image on left, text on right */
+  .grid-container-opener {
+      display: grid;
+      grid-template-columns: 1fr 5fr 2fr;
+      grid-gap: 20px;
+  }
+
+  .text-opener {
+    text-align: left;
+    /*font-size: larger;*/
+  }
+
+  /* Summary of topics by persona. Optimized for 4 across */
+
+  .grid-container-persona {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+
+  img.personaImg {
+    text-align: left !important;
+    vertical-align: text-bottom;
+    margin-bottom: 27px;
+  }
+
+  p.personaTitle {
+    text-decoration: none;
+    text-align: left;
+    /*font-size: large;*/
+    font-weight: bold;
+  }
+  a.personaTitle {
+    text-decoration: none;
+
+  }
+
+  p.topicLink {
+    text-align: left;
+    margin-top: 0em;
+  }
+
+  /* for side by side video on left, steps on right, for onboarding */
+  .grid-container-li-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+  /* Style Elements
+     -Line above Related inofrmation */
+  hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    width:50%;
+  }
+  </style>
+<!-- END new Cloud styles -->
+
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | absolute_url }}">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
