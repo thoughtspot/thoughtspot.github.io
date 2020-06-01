@@ -82,6 +82,8 @@ p.iconTitle {
   font-weight: bold;
 }
 
+/* BEGIN new Cloud styles */
+
 /*/* Sub-site landing page */
 
 /* Topic or Form Factor introduction. Container with 1:5 ratio, image on left, text on right */
@@ -118,7 +120,7 @@ p.personaTitle {
 }
 a.personaTitle {
   text-decoration: none;
-  
+
 }
 
 p.topicLink {
@@ -147,6 +149,7 @@ hr {
   width:50%;
 }
 
+/* END new Cloud styles */
 
 p.bookLink {
   font-size: 97%;
