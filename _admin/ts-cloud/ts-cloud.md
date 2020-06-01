@@ -16,7 +16,7 @@ permalink: /:collection/:path.html
 </div>
 <div></div>
 
-<div class="text-opener">
+<!--<div class="text-opener">
   <dl>
     <dlentry>
     <dt>Faster time to business value</dt>
@@ -28,7 +28,7 @@ permalink: /:collection/:path.html
     <dt>Rapid innovation</dt>
     <dd>Experience fast release cycles, and get early  access to powerful new features.</dd></dlentry>
   </dl>
-</div>  
+</div>  -->
 
 <div class="grid-container-persona">
   <div class="grid-child">
