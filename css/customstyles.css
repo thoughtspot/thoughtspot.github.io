@@ -111,15 +111,28 @@ img.personaImg {
 }
 
 p.personaTitle {
+  text-decoration: none;
   text-align: left;
   /*font-size: large;*/
   font-weight: bold;
+}
+a.personaTitle {
+  text-decoration: none;
+  
 }
 
 p.topicLink {
   text-align: left;
   margin-top: 0em;
 }
+
+/* for side by side video on left, steps on right, for onboarding */
+.grid-container-li-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 
 /* Style Elements
    -Line above Related inofrmation */
