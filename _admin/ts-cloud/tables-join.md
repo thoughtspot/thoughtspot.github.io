@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 
 With joins, you can make a single search retrieve rich data and dimensional information across multiple tables of your database.
 
+If your database uses any table joins, they appear in ThoughtSpot.
+
 ## About joins
 
 <script src="https://fast.wistia.com/embed/medias/vyffltai66.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_vyffltai66 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
@@ -59,7 +61,10 @@ You can also see the detailed information about all **Joins**. Note that you can
 
 Proceed to create all necessary table joins, to support your data requirements.
 
-Congratulations! Your search can now pull data from all joined tables.
+**Congratulations!** Your search can now pull data from all joined tables.
+
+## Next steps
+Next, [create Worksheets]({{ site.baseurl }}/admin/ts-cloud/worksheet-create.html).
 
 ## Additional resources
 
