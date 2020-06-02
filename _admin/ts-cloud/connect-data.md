@@ -11,7 +11,7 @@ This release of ThoghtSpot Cloud supports Snowflake and RedShift databases on AW
 
 ## Connect to a Snowflake database
 
-![Connect to your data]({{ site.baseurl }}/images/connect-data.gif "Connect to your data")
+![Connect to your data]({{ site.baseurl }}/images/connect-data-snowflake.gif "Connect to your data")
 
 Follow these steps to create a new Snowflake connection:
 
