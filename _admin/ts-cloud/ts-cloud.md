@@ -12,9 +12,9 @@ permalink: /:collection/:path.html
   <div class="grid-child">
     <p class="text-opener">ThoughtSpot Cloud&trade; is our hosted and managed service offering. ThoughtSpot Cloud offers multiple advantages over deployment form factors that you have to manage and maintain within your own organization.</p><p class="text-opener">ThoughtSpot Cloud is now available as a free trial! For information on supported features, and how to sign up, see <a href="{{ "/admin/ts-cloud/cloud-getting-started.html "| prepend: site.baseurl }}">Getting Started.</a></p>
     </div>
-  <div class="grid-child">&nbsp;</div>  <br>
+  <div class="grid-child">&nbsp;</div>
 </div>
-<div></div>
+<!-- <div></div> -->
 
 <!--<div class="text-opener">
   <dl>
@@ -42,7 +42,7 @@ permalink: /:collection/:path.html
   </div>
   <div class="grid-child">
     <a href="{{ "/admin/ts-cloud/analyst.html "| prepend: site.baseurl }}">
-      <img class="personaImg" src="{{ "/images/persona-analyst.png" | prepend: site.baseurl  }}" alt="Analyst" height="150"></a>
+      <img src="{{ "/images/persona-analyst.png" | prepend: site.baseurl  }}" alt="Analyst"></a>
     <p class="personaTitle"><a href="{{ "/admin/ts-cloud/analyst.html "| prepend: site.baseurl }}">Analyst</a></p>
     <p class="topicLink">
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>
@@ -53,7 +53,7 @@ permalink: /:collection/:path.html
   </div>
   <div class="grid-child">
     <a href="{{ "/admin/ts-cloud/it-ops.html "| prepend: site.baseurl }}">
-      <img class="personaImg" src="{{ "/images/persona-it-ops.png" | prepend: site.baseurl  }}" alt="IT and Operations" height="150"></a>
+      <img src="{{ "/images/persona-it-ops.png" | prepend: site.baseurl  }}" alt="IT and Operations"></a>
     <p class="personaTitle"><a href="{{ "/admin/ts-cloud/it-ops.html "| prepend: site.baseurl }}">IT and Operations</a></p>
     <p class="topicLink">
       <a href="users.html">Users</a><br>
