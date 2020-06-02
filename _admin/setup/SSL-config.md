@@ -25,9 +25,13 @@ To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to acco
 
 {: id="ssl-configure"}
 ## Configure SSL for web traffic
-To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
+To add SSL and enable HTTPS in ThoughtSpot, generate the [Certificate Signing Request (CSR)](#csr) and obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
 
 You can then proceed to [Configure SSL using tscli](#ssl-configure-tscli), and [Test the SSL certificate](#ssl-configure-test).
+
+{: id="csr"}
+### Certificate Signing Request
+
 
 {: id="ssl-certificate-chain"}
 ### SSL certificate chain
