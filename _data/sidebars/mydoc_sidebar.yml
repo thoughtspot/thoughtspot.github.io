@@ -627,9 +627,12 @@ entries:
         - title: Import CSV files with tsload
           url: /admin/loading/use-data-importer.html
           output: web,admBk
-        - title: Use a script to load data
+        - title: Use a script
           url: /admin/loading/load-with-script.html
           output: web,admBk
+        - title: Use the tsload service
+          url: /admin/loading/load-with-service.html
+          output: web,admBk  
       - levelThreeTitle: Delete a data source
         output: web,admBk
         levelThreeItems:
