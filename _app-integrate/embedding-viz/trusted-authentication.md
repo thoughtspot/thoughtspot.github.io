@@ -1,7 +1,7 @@
 ---
 title: [Configure trusted authentication]
 summary: "Learn how to configure trusted authentication."
-last_updated: 11/18/2019
+last_updated: 05/03/2020
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -77,7 +77,7 @@ Generated tokens do not expire.
 
 2. The trusted web server requests an authentication token on the user's behalf from ThoughtSpot.
 
-    `POST https://<instance>/callosum/v1/tspublic/v1/session/auth/token`
+    `POST https://<instance>/callosum/v1/session/auth/token`
 
     This post takes the following parameters:
 
