@@ -63,7 +63,7 @@ To shut down and restart your cluster, do the following in the tscli:
 
    You should see the message: ”Started pre-existing cluster”
 
-   Depending on the size of your cluster, you may need to wait several minutes before the system is up and running. Make sure you budget for this startup time to ensure that the system is fully operational before you expect people to use it.
+   Depending on the size of your cluster, you may need to wait several minutes before the system is fully usable again. For massive clusters with hundreds of GBs worth of data, the time to readiness may be in hours. This needs to be assessed on a per-cluster basis and timings differ. Make sure you budget for this startup time to ensure that the system is fully operational before advertising it as ready and usable.
 
 6. Ensure that your cluster is ready for use by running:
 	`$ tscli cluster status`
