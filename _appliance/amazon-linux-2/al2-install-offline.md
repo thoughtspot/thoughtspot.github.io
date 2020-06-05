@@ -143,7 +143,7 @@ Run the Ansible Playbook from your local machine by entering the following comma
 ansible-playbook -i hosts.yaml ts-amzn.yaml
 ```
 
-As the Ansible Playbook runs, it will perform these tasks:
+As the Ansible Playbook runs, it performs these tasks:
 
   1. Trigger the installation of [RPM packages]({{ site.baseurl }}/appliance/amazon-linux-2/al2-packages.html).
   2. Configure the local user accounts that the ThoughtSpot application uses

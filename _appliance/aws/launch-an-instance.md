@@ -82,7 +82,7 @@ If you are going to deploy your cluster using the S3-storage option, you must se
 
 Follow these steps to set up an S3 bucket in AWS.
 
-1. On the AWS website, navigate to the S3 service dashboard by clicking **Services**, then **S3**.
+1. On the AWS website, navigate to the S3 service dashboard by clicking __Services__, then **S3**.
 
 2. Make sure the selected region in the top-right corner of the dashboard is the same region in which you plan to set up your cluster.
 
@@ -117,7 +117,7 @@ For more information on encryption supported with AWS:
 
 To set up a ThoughtSpot cluster in AWS, follow these steps:
 
-1. On the AWS website, navigate to the EC2 service dashboard by clicking **Services**, then **EC2**.
+1. On the AWS website, navigate to the EC2 service dashboard by clicking __Services__, then **EC2**.
 
      ![]({{ site.baseurl }}/images/navigate_to_ec2_dashboard.png "Navigate to the EC2 Dashboard")
 
@@ -144,7 +144,9 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
    **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides read/write access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
-8. Click **Next: Add Storage**.
+   **AWS Systems Manager Agent**: If you plan to use the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, create a new IAM role with an SSM policy to grant AWS SSM permission to perform actions on your instances. Refer to [Create an IAM instance profile for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html){:target="_blank"}.
+
+8. Click __Next: Add Storage__.
    Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).
 
    ![Add storage volumes]({{ site.baseurl }}/images/aws-add-storage.png "Add storage volumes")

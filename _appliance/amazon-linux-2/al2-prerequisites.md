@@ -65,8 +65,7 @@ If the hosts of your ThoughtSpot cluster can access external repositories, eithe
 {: id="mirror-repositories"}
 **Internal mirror repository**
 
-If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the [Yum
-](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories to your hosts.
+If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories to your hosts.
 
 {: id="repositories"}
 **Repositories**
@@ -88,6 +87,9 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux
 ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
+
+## [Optional] Set up AWS Systems Manager Agent
+If you plan to use the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, create a new IAM role with an SSM policy to grant AWS SSM permission to perform actions on your instances. Refer to [Create an IAM instance profile for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html){:target="_blank"}.
 
 ## Next steps
 Next, [get ThoughtSpot artifacts]({{ site.baseurl }}/appliance/amazon-linux-2/al2-ts-artifacts.html).
