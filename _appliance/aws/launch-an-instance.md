@@ -30,7 +30,13 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 
 The ThoughtSpot AMI has specific applications on a CentOS-based image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
-This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+{: id='rhel-ami'}
+### RHEL AMI
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
+
+{: id='al2-ami'}
+### Amazon Linux 2 AMI
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.1.1, you can also deploy ThoughtSpot on AWS using Amazon Linux 2, allowing you to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. To install ThoughtSpot using Amazon Linux 2, choose your own Amazon Linux 2-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [Amazon Linux 2 deployment guide]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html) after you launch your virtual machines.
 
 {: id="prerequisites"}
 ## Prerequisites

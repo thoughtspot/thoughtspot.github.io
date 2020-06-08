@@ -1,11 +1,11 @@
 ---
 title: [Install the ThoughtSpot application on online clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 online clusters."
-last_updated: 6/4/2020
+last_updated: 6/8/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before starting the install, complete the [pre-installation steps]({{ site.baseurl }}/appliance/amazon-linux-2/al2-prerequisites.html).
+Before starting the install, complete the [pre-installation steps]({{ site.baseurl }}/appliance/amazon-linux-2/al2-prerequisites.html). If you are using the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, you must run the Ansible playbook and all commands on the __SSM console__.
 
 In an online cluster, the hosts can access the public repositories to download the required packages.
 
@@ -130,7 +130,7 @@ To set up the Ansible, follow these steps:
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-Run the Ansible Playbook from your local machine by entering the following command:
+Run the Ansible Playbook from your local machine or the SSM console by entering the following command:
 
 ```
 ansible-playbook -i hosts.yaml ts-amzn.yaml

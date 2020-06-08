@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 Deployment Overview]
 summary: "Run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally."
-last_updated: 6/4/2020
+last_updated: 6/8/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,7 +13,7 @@ Follow these steps to deploy ThoughtSpot through Amazon Linux 2:
 
 | &#10063; | [Complete installation prerequisites]({{ site.baseurl }}/appliance/amazon-linux-2/al2-prerequisites.html) |
 | &#10063; | [Get ThoughtSpot artifacts]({{ site.baseurl }}/appliance/amazon-linux-2/al2-ts-artifacts.html)|
-| &#10063; | [Install ThoughtSpot in Amazon Linux 2 online clusters]({{ site.baseurl }}/appliance/amazon-linux-2/al2-install-online.html), or<br/>[Install ThoughtSpot in Amazon Linux 2 offline clusters]({{ site.baseurl }}/appliance/amazon-linux-2/al2-install-offline.html) |
+| &#10063; | [Install ThoughtSpot in Amazon Linux 2 online clusters]({{ site.baseurl }}/appliance/amazon-linux-2/al2-install-online.html), where the hosts can connect to the public repositories to download the required packages, or<br/>[Install ThoughtSpot in Amazon Linux 2 offline clusters]({{ site.baseurl }}/appliance/amazon-linux-2/al2-install-offline.html), where the hosts cannot connect to the public repositories to download the required packages. |
 
 Additionally, learn how you can:
 - [Upgrade ThoughtSpot for Amazon Linux 2 to a new release]({{ site.baseurl }}/appliance/amazon-linux-2/al2-upgrade.html)

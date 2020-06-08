@@ -5,7 +5,7 @@ last_updated: 6/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before starting the install, complete the [pre-installation steps]({{ site.baseurl }}/appliance/amazon-linux-2/al2-prerequisites.html).
+Before starting the install, complete the [pre-installation steps]({{ site.baseurl }}/appliance/amazon-linux-2/al2-prerequisites.html). If you are using the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, you must run the Ansible playbook and all commands on the __SSM console__.
 
 In an offline cluster, the hosts cannot connect to the public repositories to download the required packages. Instead, you must download the packages from your organization’s mirror repository to each host. Otherwise, the steps for installing on offline clusters are practically the same as the steps for installing on online cluster.
 
@@ -31,7 +31,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li>Obtain the Ansible tarball by joining our Amazon Linux 2 Early Access program, and email us your <a href="mailto:early_access@thoughtspot.com?subject=Amazon%20Linux%202%20Early%20Access%20Program%20Ansible%20File%20Request" target="_blank">Ansible request</a>. Download it to your local machine.</li>
+  <li>Obtain the Ansible tarball by joining our Amazon Linux 2 Early Access program, and email us your <a href="mailto:early_access@thoughtspot.com?subject=Amazon%20Linux%202%20Early%20Access%20Program%20Ansible%20File%20Request">Ansible request</a>. Download it to your local machine.</li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
@@ -137,7 +137,7 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-Run the Ansible Playbook from your local machine by entering the following command:
+Run the Ansible Playbook from your local machine or from the SSM console by entering the following command:
 
 ```
 ansible-playbook -i hosts.yaml ts-amzn.yaml
