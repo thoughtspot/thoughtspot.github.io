@@ -40,19 +40,51 @@ Follow these steps to create Worksheets:
 
 ![Create a Worksheet]({{ site.baseurl }}/images/worksheet-create.gif "Create a Worksheet")
 
-1. **Select the connection**:
+1. Under **Data**, see **Sources**. Click **+**.
 
-   - On the top bar, click **Data**.
-   - Click **Connections**.
-   - Select and click on your connection.
+2. The **Choose sources** interface appears.
 
-[Add text here]
+   It contains the list of tables that in the connection.
 
+3. Click on each table you plan to include in the Worksheet.
 
-**Congratulations!**
+4. At the top right corner of the interface, click **Close**.
 
+5. Back on the **Data** interface, under **Sources**, note that the list of tables you selected appears.
 
-**Next**, proceed to [Visualize and save Search Results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html).
+6. Expand one of the tables by clicking the toggle icon.
+
+7. Select the columns to include in the Worksheet.
+
+8. Click **+ Add columns**.
+
+9. Notice that the table and its columns appear on the main pane of the interface.
+
+10. Repeat for each table you plan to include in the worksheet.
+
+    You can always navigate to a table you identified, and change the column selections.
+
+11. After you finish selecting the tables and columns, click the **More** menu at the top right corner of the interface.
+
+    Click **Save**.
+
+12. In the **Save Worksheet** interface, enter the following values:
+
+    - **Name** is the name of the Worksheet. You can select it as a data source in your searches.
+
+    - **Description** is optional; we recommend that you identify the supported use case here.
+
+    Click **Save**.
+
+13. **Congratulations!** You now have a Worksheet to use as a data source for Searching and building standard formulas.
+
+    We recommend that you customize the worksheet in the following manner:
+
+    - **Rename columns** to make them user-readable.
+    - **Change column type** default settings of numeric fields from measurement to attribute, when these numbers represent categorical information instead of measurements that are aggregated.
+    - **Change aggregation** function for measurement columns. For example, columns that track life expectancy should use `AVERAGE` or `MAX`, and never use `SUM`.
+
+***Next***, you can proceed to [Visualize and save Search Results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html).
 
 
 ## Introduction to formulas

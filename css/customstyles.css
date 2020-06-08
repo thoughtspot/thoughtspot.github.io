@@ -134,6 +134,11 @@ p.topicLink {
   padding-top: 0em;
 }
 
+img.gif-standard {
+  height: 250px;
+  width: 450px;
+}
+
 /* for side by side video on left, steps on right, for onboarding */
 .grid-container-li-img {
   display: grid;

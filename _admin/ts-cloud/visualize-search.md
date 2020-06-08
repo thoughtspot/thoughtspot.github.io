@@ -50,4 +50,4 @@ To create a Search, and save it as an Answer, follow these steps:
 
 <script src="https://fast.wistia.com/embed/medias/i8smdu5gws.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_i8smdu5gws popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
-***Next steps:***, proceed to [Publish collections of Answers as Pinboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).
+***Next steps:*** proceed to [Publish collections of Answers as Pinboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).
