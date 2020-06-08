@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 <div class="grid-container-opener">
 
   <div class="grid-child">
-    <img src="{{ "/images/ts-cloud-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Cloud" height="250"></div>
+    <img src="{{ "/images/ts-cloud-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Cloud"></div>
   <div class="grid-child">
     <p class="text-opener">ThoughtSpot Cloud&trade; is our hosted and managed service offering. ThoughtSpot Cloud offers multiple advantages over deployment form factors that you have to manage and maintain within your own organization.</p><p class="text-opener">ThoughtSpot Cloud is now available as a free trial! For information on supported features, and how to sign up, see <a href="{{ "/admin/ts-cloud/cloud-getting-started.html "| prepend: site.baseurl }}">Getting Started.</a></p>
     </div>
