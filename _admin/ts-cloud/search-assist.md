@@ -1,7 +1,7 @@
 ---
 title: [Search Assist]
 last_updated: 5/22/2020
-summary: "ThoughtSpot is unique in the BI space because it uses a simple search approach to generate tables and visualizations. Use Search Assist to learn how to get original Answers to all your business questions."
+summary: "ThoughtSpot uses a simple search approach to generate tables and visualizations. Use Search Assist to learn how to get original Answers to all your business questions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
