@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
-| &#10063; | [Optional] [2. Set up AWS Systems Manager Agent](#aws-ssm) |
+| &#10063; | [[Optional] 2. Set up AWS Systems Manager Agent](#aws-ssm) |
 | &#10063; | [3. Partition the hosts](#partition-hosts) |
 | &#10063; | [4. Enable the hosts to download Amazon Linux 2 packages](#enable-hosts) |
 | &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
@@ -71,7 +71,7 @@ If the hosts of your ThoughtSpot cluster have access to an internal repository t
 **Repositories**
 
 {: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.
+- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95-amzn`, `google-cloud-sdk`, and `azure-cli`.
 
 {: id="python-repositories"}
 - **Python repository**: for Python, enable the `PyPI` repository.

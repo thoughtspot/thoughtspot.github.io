@@ -20,9 +20,53 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
    - checks that customization scripts can execute on the nodes
    - checks that the partitions meet minimum size requirements
 
-   | &#10063; | [1. Configure the Ansible Playbook](#configure-ansible) |
-   | &#10063; | [2. Run the Ansible Playbook](#run-ansible) |
-   | &#10063; | [3. Install ThoughtSpot](#install-thoughtspot) |
+   | &#10063; | [1. Prepare the `/tmp` disk](#tmp) |
+   | &#10063; | [2. Configure the Ansible Playbook](#configure-ansible) |
+   | &#10063; | [3. Run the Ansible Playbook](#run-ansible) |
+   | &#10063; | [4. Install ThoughtSpot](#install-thoughtspot) |
+
+{: id="tmp"}
+## Prepare the `/tmp` disk
+1. Run the following script to set the disk name:
+    ```
+    set -e
+    DISK=dev/<disk_name>
+    PART=$<DISK>1
+    ```
+2. Unmount `/tmp` if necessary:
+    ```
+    sudo umount /tmp || true
+    ```
+3. Remove `/tmp` from `/etc/fstab`:
+    ```
+    sudo sed -i "/.*tmp.*/d" /etc/fstab
+    ```
+4. Remove `/tmp` from the partition table:
+    ```
+    echo -e "d\nw\n" | sudo fdisk $<DISK>
+    ```
+5. Partition the disk:
+    ```
+    sudo parted -s $<DISK> mklabel gpt
+    sudo parted -s $<DISK> mkpart primary xfs 0% 100%
+    ```
+
+6. Create the file system:
+    ```
+    sudo mkfs.xfs -f $PART
+    echo "UUID=$(sudo blkid -o value -s UUID $PART) /tmp xfs defaults,nofail 0 1" | sudo tee -a /etc/fstab
+    sudo mount /tmp
+    sudo chmod 777 /tmp
+    ```
+
+7. Create a working directory for Ansible:
+    ```
+    set -e
+    WORKDIR=/tmp/ansible
+    rm -rf $WORKDIR
+    mkdir -p $WORKDIR
+    cd $WORKDIR
+    ```
 
 
 {: id="configure-ansible"}
@@ -31,7 +75,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li>Obtain the Ansible tarball by joining our Amazon Linux 2 Early Access program, and email us your <a href="mailto:early_access@thoughtspot.com?subject=Amazon%20Linux%202%20Early%20Access%20Program%20Ansible%20File%20Request">Ansible request</a>. Download it to your local machine.</li>
+  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the following command: <code>current_tarball-location cp new_tarball_path ./</code>. For example, <code>aws s3 cp s3://example_path/6.1.1-2.offline.ansible.tar.gz ./</code>.</p></li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
@@ -53,7 +97,7 @@ To set up the Ansible, follow these steps:
     </dlentry>
     <dlentry>
       <dt>rpm_gpg</dt>
-      <dd>This directory contains the <a href="https://access.redhat.com/documentation/en-us/red_hat_network/5.0.0/html/client_configuration_guide/ch-gpg-keys" target="_blank">GPG keys</a> that authenticate the public repository.</dd>
+      <dd>This directory contains the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rl_verify.html" target="_blank">GPG keys</a> that authenticate the public repository.</dd>
     </dlentry>
     <dlentry>
       <dt>toolchain</dt>
@@ -78,7 +122,12 @@ To set up the Ansible, follow these steps:
   </dl>
   </li>
 
-  <li>Copy the Ansible inventory file <code>hosts.sample</code> to <code>hosts.yaml</code>, and using a text editor of your choice, update the file to include your host configuration:<br/>
+  <li><p>Copy the Ansible inventory file <code>hosts.sample</code> to <code>hosts.yaml</code>, and using a text editor of your choice, update the file to include your host configuration.</p> <p>Copy the file by running this command: <code>cp hosts.sample hosts.yaml</code>. </p>
+  <p>If you are using SSM, you must additionally run a command to replace the <code>ts_partition_name</code>, and run a command to create a single partition on the disk mounted under <code>/export</code>. Run the following command to replace the <code>ts_partition_name</code>:<br> <pre><code>TS_DISK=disk_name_for_export_partition
+  TS_PARTITION_NAME=${TS_DISK}1
+sed -i "s/xvda9/$TS_PARTITION_NAME/g" hosts.yaml</code></pre> Then run this command to create a single partition on the disk mounted under <code>/export</code>: <br> <pre><code>sudo parted -s /dev/$TS_DISK mklabel gpt
+sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
+  <br/>
 
       <dl>
        <dlentry id="hosts">
@@ -87,32 +136,36 @@ To set up the Ansible, follow these steps:
     </dlentry>
     <dlentry id="admin_uid">
       <dt>admin_uid</dt>
-      <dd>The admin user ID parameter. Use the default values.<br/>
+      <dd>The admin user ID parameter. Use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br/>
 </dd>
     </dlentry>
     <dlentry id="admin-gid">
       <dt>admin_gid</dt>
-      <dd>The admin user group ID. Use the default values.<br/>
+      <dd>The admin user group ID. Use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br/>
 </dd>
     </dlentry>
     <dlentry id="ssh_user">
       <dt>ssh_user</dt>
       <dd><p>The <code>ssh_user</code> must exist on the ThoughtSpot host, and it must have <code>sudo</code> privileges. This user is the same as the <code>ec2_user</code>.</p>
+      <p>If you are using AWS SSM instead of ssh, there is no need to fill out this parameter.</p>
 </dd>
     </dlentry>
     <dlentry id="ssh_private_key">
       <dt>ssh_private_key</dt>
       <dd>Add the private key for <code>ssh</code> access to the <code>hosts.yaml</code> file. You can use an existing key pair, or generate a new key pair in the Ansible Control server.<br/>
-      Run the following command to verify that the Ansible Control Server can connect to the hosts over <code>ssh</code>:<br/><pre><code>ansible -m ping -i hosts.yaml all</code></pre></dd>
+      Run the following command to verify that the Ansible Control Server can connect to the hosts over <code>ssh</code>:<br/><pre><code>ansible -m ping -i hosts.yaml all</code></pre>
+      <p>If you are using AWS SSM instead of ssh, there is no need to fill out this parameter or run the above command.</p></dd>
     </dlentry>
     <dlentry id="ssh_public_key">
       <dt>ssh_public_key</dt>
       <dd>Add the public key to the <code>ssh authorized_keys</code> file for each host, and add the private key to the <code>hosts.yaml</code> file. You can use an existing key pair, or generate a new key pair in the Ansible Control server.<br/>
-      Run the following command to verify that the Ansible Control Server can connect to the hosts over <code>ssh</code>:<br/><pre><code>ansible -m ping -i hosts.yaml all</code></pre></dd>
+      Run the following command to verify that the Ansible Control Server can connect to the hosts over <code>ssh</code>:<br/><pre><code>ansible -m ping -i hosts.yaml all</code></pre>
+      <p>If you are using AWS SSM instead of ssh, there is no need to fill out this parameter or run the above command.</p></dd>
     </dlentry>
     <dlentry id="extra_admin_ssh_key">
       <dt>extra_admin_ssh_key</dt>
-      <dd>[Optional] An additional or extra key may be required by your security application, such as Qualys, to connect to the hosts.</dd>
+      <dd>[Optional] An additional or extra key may be required by your security application, such as Qualys, to connect to the hosts.
+      <p>If you are using AWS SSM instead of ssh, there is no need to fill out this parameter.</p></dd>
     </dlentry>
     <dlentry id="http(s)_proxy">
       <dt>http(s)_proxy</dt>
@@ -150,7 +203,7 @@ After the Ansible Playbook finishes, your hosts are ready for installing the Tho
 {: id="install-thoughtspot"}
 ## Install the ThoughtSpot cluster and the application
 
-Refer to the [Amazon Web Services (AWS) EC2 deployment guide]({{ site.baseurl }}/appliance/aws/configuration-options.html) for the detailed steps to install the ThoughtSpot cluster.
+Refer to [Install ThoughtSpot clusters in AWS]({{ site.baseurl }}/appliance/aws/aws-cluster-install.html) for more detailed information on installing the ThoughtSpot cluster.
 
 Follow these general steps to install ThoughtSpot on the prepared hosts:
 
