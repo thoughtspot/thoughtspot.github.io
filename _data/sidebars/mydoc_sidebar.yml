@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Version
-  version: 6.1 Guides
+  product: ThoughtSpot Cloud
+#  version: 6.1 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -25,21 +25,21 @@ entries:
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes
-    - title: Fixed issues
-      url: /release/fixed.html
-      output: web,rnotes
-    - title: Downloads
-      url: /release/downloads.html
-      output: web,rnotes
+#    - title: Fixed issues
+#      url: /release/fixed.html
+#      output: web,rnotes
+#    - title: Downloads
+#      url: /release/downloads.html
+#      output: web,rnotes
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
-  - sectiontitle: ThoughtSpot Cloud
+  - sectiontitle: Overview
     output: web,ugBk
     sectionitems:
-    - title: About ThoughtSpot Cloud
-      url: /admin/ts-cloud/ts-cloud.html
-      output: web
+#    - title: About ThoughtSpot Cloud
+#      url: /admin/ts-cloud/ts-cloud.html
+#      output: web
     - title: Getting Started
       url:  /admin/ts-cloud/cloud-getting-started.html
       output: web
@@ -1507,186 +1507,186 @@ entries:
 #      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instSMC
 # -- end of PDF for SMC section
-  - sectiontitle: Deploy
-    output: web,appQs
-    sectionitems:
-    - title: Overview
-      url: /appliance/welcome-intro.html
-      output: web,appQs
-    - levelTwoTitle: RHEL Support
-      output: web,appQs
-      levelTwoItems:
-      - title: RHEL overview
-        url: /appliance/rhel/rhel.html
-        output: web,appQs
-      - title: RHEL prerequisites
-        url: /appliance/rhel/rhel-prerequisites.html
-        output: web,appQs
-      - title: ThoughtSpot artifacts
-        url: /appliance/rhel/rhel-ts-artifacts.html
-        output: web,appQs
-      - title: Online RHEL install
-        url: /appliance/rhel/rhel-install-online.html
-        output: web,appQs
-      - title: Offline RHEL install
-        url: /appliance/rhel/rhel-install-offline.html
-        output: web,appQs
-      - title: RHEL upgrade
-        url: /appliance/rhel/rhel-upgrade.html
-        output: web,appQs
-      - title: Adding new nodes to clusters in RHEL
-        url: /appliance/rhel/rhel-add-node.html
-        output: web,appQs
-      - title: Packages installed with RHEL
-        url: /appliance/rhel/rhel-packages.html
-        output: web,appQs
-    - levelTwoTitle: Hardware appliance
-      output: web,appQs
-      levelTwoItems:
-      - title: Hardware appliance overview
-        url: /appliance/hardware/inthebox.html
-        output: web,appQs,instSMC,pdf
-      - levelThreeTitle: Deploying on the SMC appliance
-        output: web,appQs,instSMC
-        levelThreeItems:
-        - title: Deploying on the SMC appliance
-          url: /appliance/hardware/installing-the-smc.html
-          output: web,appQs,instSMC
-        - title: Prerequisites
-          url: /appliance/hardware/prerequisites-smc.html
-          output: web,appQs,instSMC
-        - title: Hardware requirements
-          url: /appliance/hardware/hardware-requirements-smc.html
-          output: web,appQs,instSMC
-        - title: Connect the appliance
-          url: /appliance/hardware/connect-appliance-smc.html
-          output: web,appQs,instSMC
-        - title: Configure nodes
-          url: /appliance/hardware/configure-nodes-smc.html
-          output: web,appQs,instSMC
-        - title: Install cluster
-          url: /appliance/hardware/smc-cluster-install.html
-          output: web,appQs,instSMC
-      - levelThreeTitle: Deploying on the Dell appliance
-        output: web,appQs,pdf
-        levelThreeItems:
-        - title: Deploying on the Dell appliance
-          url: /appliance/hardware/installing-dell.html
-          output: web,appQs,pdf
-        - title: Prerequisites
-          url: /appliance/hardware/prerequisites-dell.html
-          output: web,appQs,pdf
-        - title: Hardware requirements
-          url: /appliance/hardware/hardware-requirements-dell.html
-          output: web,appQs,pdf
-        - title: Connect the appliance
-          url: /appliance/hardware/connect-appliance-dell.html
-          output: web,appQs,pdf
-        - title: Configure management settings
-          url: /appliance/hardware/configure-management-dell.html
-          output: web,appQs,pdf
-        - title: Configure nodes
-          url: /appliance/hardware/configure-nodes-dell.html
-          output: web,appQs,pdf
-        - title: Install cluster
-          url: /appliance/hardware/install-cluster-dell.html
-          output: web,appQs,pdf
-      - title: The nodes.config file
-        url: /appliance/hardware/nodesconfig-example.html
-        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
-      - title: Parameters of the nodes.config file
-        url: /appliance/hardware/parameters-nodesconfig.html
-        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
-      - title: Using the tscli cluster create command
-        url: /appliance/hardware/cluster create.html
-        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
-      - title: Parameters of the tscli cluster create command
-        url: /appliance/hardware/parameters-cluster-create.html
-        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
-    - levelTwoTitle: Cloud
-      output: web,appQs
-      levelTwoItems:
-      - title: Cloud overview
-        url: /appliance/cloud.html
-        output: web,appQs
-      - levelThreeTitle: AWS
-        output: web,appQs,instAWS
-        levelThreeItems:
-        - title: Configuration options
-          url: /appliance/aws/configuration-options.html
-          output: web,appQs,instAWS
-        - title: Set up AWS resources for ThoughtSpot
-          url: /appliance/aws/launch-an-instance.html
-          output: web,appQs,instAWS
-        - title: Prepare AWS VMs for ThoughtSpot
-          url: /appliance/aws/aws-prepare-vms.html
-          output: web,appQs,instAWS
-        - title: Configure ThoughtSpot nodes in AWS
-          url: /appliance/aws/installing-aws.html
-          output: web,appQs,instAWS
-        - title: Install ThoughtSpot clusters in AWS
-          url: /appliance/aws/aws-cluster-install.html
-          output: web,appQs,instAWS
-        - title: Set up high availability
-          url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs,instAWS
-        - title: Back up and Restore using S3
-          url: /appliance/aws/aws-backup-restore.html
-          output: web,appQs,instAWS
-      - levelThreeTitle: Azure
-        output: web,appQs,instAzure
-        levelThreeItems:
-        - title: Configuration options
-          url: /appliance/azure/configuration-options.html
-          output: web,appQs
-        - title: Set up ThoughtSpot in Azure
-          url: /appliance/azure/launch-an-instance.html
-          output: web,appQs,instAzure
-        - title: Configure ThoughtSpot nodes in Azure
-          url: /appliance/azure/installing-azure.html
-          output: web,appQs,instAzure
-        - title: Install ThoughtSpot clusters in Azure
-          url: /appliance/azure/azure-cluster-install.html
-          output: web,appQs,instAzure
-      - levelThreeTitle: GCP
-        output: web,appQs, instGCP
-        levelThreeItems:
-        - title: Configuration options
-          url: /appliance/gcp/configuration-options.html
-          output: web,appQs,instGCP
-        - title: Set up ThoughtSpot in GCP
-          url: /appliance/gcp/launch-an-instance.html
-          output: web,appQs,instGCP
-        - title: Configure ThoughtSpot nodes in GCP
-          url: /appliance/gcp/installing-gcp.html
-          output: web,appQs,instGCP
-        - title: Install ThoughtSpot clusters in GCP
-          url: /appliance/gcp/gcp-cluster-install.html
-          output: web,appQs,instGCP
-        - title: Back up and Restore using GCS
-          url: /appliance/gcp/gcp-backup-restore.html
-          output: web,appQs,instGCP
-    - levelTwoTitle: VMware
-      output: web,appQs,instVMware
-      levelTwoItems:
-        - title: Configuration overview
-          url: /appliance/vmware/vmware-intro.html
-          output: web,appQs,instVMware
-        - title: Set up ThoughtSpot in VMware
-          url: /appliance/vmware/vmware-setup.html
-          output: web,appQs,instVMware
-        - title: Configure ThoughtSpot nodes in VMware
-          url: /appliance/vmware/installing-vmware.html
-          output: web,appQs,instVMware
-        - title: Install ThoughtSpot clusters in VMware
-          url: /appliance/vmware/vmware-cluster-install.html
-          output: web,appQs,instVMware
-    - title: Network policies
-      url: /appliance/firewall-ports.html
-      output: web,appQs
-    - title: Contact support
-      url: /appliance/contact.html
-      output: web,appQs
+#  - sectiontitle: Deploy
+#    output: web,appQs
+#    sectionitems:
+#    - title: Overview
+#      url: /appliance/welcome-intro.html
+#      output: web,appQs
+#    - levelTwoTitle: RHEL Support
+#      output: web,appQs
+#      levelTwoItems:
+#      - title: RHEL overview
+#        url: /appliance/rhel/rhel.html
+#        output: web,appQs
+#      - title: RHEL prerequisites
+#        url: /appliance/rhel/rhel-prerequisites.html
+#        output: web,appQs
+#      - title: ThoughtSpot artifacts
+#        url: /appliance/rhel/rhel-ts-artifacts.html
+#        output: web,appQs
+#      - title: Online RHEL install
+#        url: /appliance/rhel/rhel-install-online.html
+#        output: web,appQs
+#      - title: Offline RHEL install
+#        url: /appliance/rhel/rhel-install-offline.html
+#        output: web,appQs
+#      - title: RHEL upgrade
+#        url: /appliance/rhel/rhel-upgrade.html
+#        output: web,appQs
+#      - title: Adding new nodes to clusters in RHEL
+#        url: /appliance/rhel/rhel-add-node.html
+#        output: web,appQs
+#      - title: Packages installed with RHEL
+#        url: /appliance/rhel/rhel-packages.html
+#        output: web,appQs
+#    - levelTwoTitle: Hardware appliance
+#      output: web,appQs
+#      levelTwoItems:
+#      - title: Hardware appliance overview
+#        url: /appliance/hardware/inthebox.html
+#        output: web,appQs,instSMC,pdf
+#      - levelThreeTitle: Deploying on the SMC appliance
+#        output: web,appQs,instSMC
+#        levelThreeItems:
+#        - title: Deploying on the SMC appliance
+#          url: /appliance/hardware/installing-the-smc.html
+#          output: web,appQs,instSMC
+#        - title: Prerequisites
+#          url: /appliance/hardware/prerequisites-smc.html
+#          output: web,appQs,instSMC
+#        - title: Hardware requirements
+#          url: /appliance/hardware/hardware-requirements-smc.html
+#          output: web,appQs,instSMC
+#        - title: Connect the appliance
+#          url: /appliance/hardware/connect-appliance-smc.html
+#          output: web,appQs,instSMC
+#        - title: Configure nodes
+#          url: /appliance/hardware/configure-nodes-smc.html
+#          output: web,appQs,instSMC
+#        - title: Install cluster
+#          url: /appliance/hardware/smc-cluster-install.html
+#          output: web,appQs,instSMC
+#      - levelThreeTitle: Deploying on the Dell appliance
+#        output: web,appQs,pdf
+#        levelThreeItems:
+#        - title: Deploying on the Dell appliance
+#          url: /appliance/hardware/installing-dell.html
+#          output: web,appQs,pdf
+#        - title: Prerequisites
+#          url: /appliance/hardware/prerequisites-dell.html
+#          output: web,appQs,pdf
+#        - title: Hardware requirements
+#          url: /appliance/hardware/hardware-requirements-dell.html
+#          output: web,appQs,pdf
+#        - title: Connect the appliance
+#          url: /appliance/hardware/connect-appliance-dell.html
+#          output: web,appQs,pdf
+#        - title: Configure management settings
+#          url: /appliance/hardware/configure-management-dell.html
+#          output: web,appQs,pdf
+#        - title: Configure nodes
+#          url: /appliance/hardware/configure-nodes-dell.html
+#          output: web,appQs,pdf
+#        - title: Install cluster
+#          url: /appliance/hardware/install-cluster-dell.html
+#          output: web,appQs,pdf
+#      - title: The nodes.config file
+#        url: /appliance/hardware/nodesconfig-example.html
+#        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
+#      - title: Parameters of the nodes.config file
+#        url: /appliance/hardware/parameters-nodesconfig.html
+#        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
+#      - title: Using the tscli cluster create command
+#        url: /appliance/hardware/cluster create.html
+#        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
+#      - title: Parameters of the tscli cluster create command
+#        url: /appliance/hardware/parameters-cluster-create.html
+#        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
+#    - levelTwoTitle: Cloud
+#      output: web,appQs
+#      levelTwoItems:
+#      - title: Cloud overview
+#        url: /appliance/cloud.html
+#        output: web,appQs
+#      - levelThreeTitle: AWS
+#        output: web,appQs,instAWS
+#        levelThreeItems:
+#        - title: Configuration options
+#          url: /appliance/aws/configuration-options.html
+#          output: web,appQs,instAWS
+#        - title: Set up AWS resources for ThoughtSpot
+#          url: /appliance/aws/launch-an-instance.html
+#          output: web,appQs,instAWS
+#        - title: Prepare AWS VMs for ThoughtSpot
+#          url: /appliance/aws/aws-prepare-vms.html
+#          output: web,appQs,instAWS
+#        - title: Configure ThoughtSpot nodes in AWS
+#          url: /appliance/aws/installing-aws.html
+#          output: web,appQs,instAWS
+#        - title: Install ThoughtSpot clusters in AWS
+#          url: /appliance/aws/aws-cluster-install.html
+#          output: web,appQs,instAWS
+#        - title: Set up high availability
+#          url: /appliance/aws/ha-aws-efs.html
+#          output: web,appQs,instAWS
+#        - title: Back up and Restore using S3
+#          url: /appliance/aws/aws-backup-restore.html
+#          output: web,appQs,instAWS
+#      - levelThreeTitle: Azure
+#        output: web,appQs,instAzure
+#        levelThreeItems:
+#        - title: Configuration options
+#          url: /appliance/azure/configuration-options.html
+#          output: web,appQs
+#        - title: Set up ThoughtSpot in Azure
+#          url: /appliance/azure/launch-an-instance.html
+#          output: web,appQs,instAzure
+#        - title: Configure ThoughtSpot nodes in Azure
+#          url: /appliance/azure/installing-azure.html
+#          output: web,appQs,instAzure
+#        - title: Install ThoughtSpot clusters in Azure
+#          url: /appliance/azure/azure-cluster-install.html
+#          output: web,appQs,instAzure
+#      - levelThreeTitle: GCP
+#        output: web,appQs, instGCP
+#        levelThreeItems:
+#        - title: Configuration options
+#          url: /appliance/gcp/configuration-options.html
+#          output: web,appQs,instGCP
+#        - title: Set up ThoughtSpot in GCP
+#          url: /appliance/gcp/launch-an-instance.html
+#          output: web,appQs,instGCP
+#        - title: Configure ThoughtSpot nodes in GCP
+#          url: /appliance/gcp/installing-gcp.html
+#          output: web,appQs,instGCP
+#        - title: Install ThoughtSpot clusters in GCP
+#          url: /appliance/gcp/gcp-cluster-install.html
+#          output: web,appQs,instGCP
+#        - title: Back up and Restore using GCS
+#          url: /appliance/gcp/gcp-backup-restore.html
+#          output: web,appQs,instGCP
+#    - levelTwoTitle: VMware
+#      output: web,appQs,instVMware
+#      levelTwoItems:
+#        - title: Configuration overview
+#          url: /appliance/vmware/vmware-intro.html
+#          output: web,appQs,instVMware
+#        - title: Set up ThoughtSpot in VMware
+#          url: /appliance/vmware/vmware-setup.html
+#          output: web,appQs,instVMware
+#        - title: Configure ThoughtSpot nodes in VMware
+#          url: /appliance/vmware/installing-vmware.html
+#          output: web,appQs,instVMware
+#        - title: Install ThoughtSpot clusters in VMware
+#          url: /appliance/vmware/vmware-cluster-install.html
+#          output: web,appQs,instVMware
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs
+#    - title: Contact support
+#      url: /appliance/contact.html
+#      output: web,appQs
   - sectiontitle: Embrace
     output: web,pdf
     sectionitems:
@@ -1849,30 +1849,30 @@ entries:
       - title: Connection configuration
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
-  - sectiontitle: Disaster Recovery
-    output: web,drgBk
-    sectionitems:
-    - title: About disaster recovery
-      url: /disaster-recovery/about-disaster-recovery.html
-      output: web,drgBk
-    - title: Disk failure
-      url: /disaster-recovery/disk-failure.html
-      output: web,drgBk
-    - title: Node failure
-      url: /disaster-recovery/node-failure.html
-      output: web,drgBk
-    - levelTwoTitle: Cluster replacement
-      output: web,drgBk
-      levelTwoItems:
-      - title: Overview of cluster replacement
-        url: /disaster-recovery/cluster-replacement.html
-        output: web,drgBk
-      - title: Mount a NAS file system
-        url: /disaster-recovery/nas-mount.html
-        output: web,drgBk
-      - title: Configure disaster recovery
-        url: /disaster-recovery/set-up-DR-config.html
-        output: web,drgBk
+#  - sectiontitle: Disaster Recovery
+#    output: web,drgBk
+#    sectionitems:
+#    - title: About disaster recovery
+#      url: /disaster-recovery/about-disaster-recovery.html
+#      output: web,drgBk
+#    - title: Disk failure
+#      url: /disaster-recovery/disk-failure.html
+#      output: web,drgBk
+#    - title: Node failure
+#      url: /disaster-recovery/node-failure.html
+#      output: web,drgBk
+#    - levelTwoTitle: Cluster replacement
+#      output: web,drgBk
+#      levelTwoItems:
+#      - title: Overview of cluster replacement
+#        url: /disaster-recovery/cluster-replacement.html
+#        output: web,drgBk
+#      - title: Mount a NAS file system
+#        url: /disaster-recovery/nas-mount.html
+#        output: web,drgBk
+#      - title: Configure disaster recovery
+#        url: /disaster-recovery/set-up-DR-config.html
+#        output: web,drgBk
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:
@@ -1918,30 +1918,30 @@ entries:
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
-    - levelTwoTitle: Deployment reference
-      output: web,refGd
-      levelTwoItems:
-      - title: Cable reference
-        url: /appliance/hardware/cable-networking.html
-        output: web,appQs,pdf,instSMC
-      - title: Network Policies
-        url: /appliance/firewall-ports.html
-        output: web,refGd
-      - title: The nodes.config file
-        url: /appliance/hardware/nodesconfig-example.html
-        output: web,refGd
-      - title: Parameters of nodes.config
-        url: /appliance/hardware/parameters-nodesconfig.html
-        output: web,refGd
-      - title: Using the cluster create command
-        url: /appliance/hardware/cluster-create.html
-        output: web,refGd
-      - title: Parameters of cluster create
-        url: /appliance/hardware/parameters-cluster-create.html
-        output: web,refGd
-      - title: Site Survey
-        url: /site-survey.pdf
-        output: web,refGd
+#    - levelTwoTitle: Deployment reference
+#      output: web,refGd
+#      levelTwoItems:
+#      - title: Cable reference
+#        url: /appliance/hardware/cable-networking.html
+#        output: web,appQs,pdf,instSMC
+#      - title: Network Policies
+#        url: /appliance/firewall-ports.html
+#        output: web,refGd
+#      - title: The nodes.config file
+#        url: /appliance/hardware/nodesconfig-example.html
+#        output: web,refGd
+#      - title: Parameters of nodes.config
+#        url: /appliance/hardware/parameters-nodesconfig.html
+#        output: web,refGd
+#      - title: Using the cluster create command
+#        url: /appliance/hardware/cluster-create.html
+#        output: web,refGd
+#      - title: Parameters of cluster create
+#        url: /appliance/hardware/parameters-cluster-create.html
+#        output: web,refGd
+#      - title: Site Survey
+#        url: /site-survey.pdf
+#        output: web,refGd
 
   - sectiontitle: ThoughtSpot in Practice
     output: web,practGd
