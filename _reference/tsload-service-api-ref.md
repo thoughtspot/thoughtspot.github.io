@@ -1,268 +1,451 @@
 ---
 title: [tsload service API]
-last_updated: 4/21/2020
-summary: "To use the tsload service API. . . ."
+summary: "The tsload service APIs enable you to load data into ThoughtSpot."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-It is often difficult to programmatically use the result set of a query that runs in the ThoughtSpot UI search  bar.  To use the data that we retrieve from a query programmatically, you can use ThoughtSpot Search Data API.
+## Login
+Use this API to authenticate and log in a user.
 
-When issuing a query through the ThoughtSpot UI, users make selections to disambiguate a query. Because selection is not possible with an API approach, we modified the API query language to include query disambiguation. See [Components of a search query](#components).
-
-## Resource URL
-
-<code class="api-method-post">post</code>/tspublic/v1/searchdata
-
-## Request Parameters
+### Request Parameters
 
 <table>
    <colgroup>
-      <col style="width:20%" />
-      <col style="width:15%" />
-      <col style="width:65%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
-   <thead>
+   <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Query Parameter</th>
+         <th>Form Parameter</th>
          <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
-      <tr>
-         <td><code>query_string</code></td>
-         <td>string</td>
-         <td>The data search query.<p>See <a href="#components">Components of a search query</a>.</p></td>
-
-      </tr>
-     <tr>
-         <td><code>data_source_guid</code></td>
-         <td>string</td>
-         <td>The GUID of the data source, either a worksheet, a view, or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1"]</code></p>
-         </td>
-      </tr>
-      <tr>
-         <td><code>batchsize</code></td>
-         <td>integer</td>
-         <td>The batch size for loading search objects.<p>The system default is <code>-1</code>.</p></td>
-
-      </tr>
-      <tr>
-         <td><code>pagenumber</code></td>
-         <td>integer</td>
-         <td>Alternate way to specify <code>1</code>-based offset:
-         <p><code>indexingOffset = (pageNumber - 1) * batchSize</code></p>
-         <p>The system default is <code>-1</code>.</p></td></tr>
-     <tr>
-         <td><code>offset</code></td>
-         <td>integer</td>
-         <td>Specify a <code>1</code>-based offset.
-         <p>The system default is <code>-1</code>.</p></td>
-
-      </tr>
-      <tr>
-         <td><code>formattype</code></td>
-         <td>string</td>
-         <td>The format of the data.<p>Valid values are <code>COMPACT</code> (default) or <code>FULL</code> JSON.</p></td>
-      </tr>
-   </tbody>
+    <tr> <td><code>username</code></td> <td>string</td> <td>ThoughtSpot username</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>ThoughtSpot password</td> </tr>
+  </tbody>
 </table>
 
-{: id="components"}
-## Components of a search query
-
-In ThoughtSpot Query Language, we classify components of a query into various types of tokens: _[Column](#column)_, _[Operator](#operator)_, _[Value](#value)_, _[Date Bucket](#date-bucket)_, _[Keyword](#keyword)_, and _[Calendar](#calendar)_:
-
-<dl>
-<dlentry id="column">
-<dt>Column</dt>
-<dd>
-<p>Columns must be enclosed in square brackets, <code>[ ]</code>.</p>
-<p><strong>Example</strong> In the query <code>revenue by ship mode</code>, both <code>revenue</code> and <code>ship mode</code> are columns. A valid query for the API is:</p>
-<pre>[revenue] by [ship mode]</pre>
-</dd>
-</dlentry>
-<dlentry id="operator">
-<dt>Operator</dt>
-<dd>
-<p>ThoughtSpot supports various operators such as <code>=</code>, <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>&lt;</code>, <code>contains</code>, <code>not contains</code>, and so on. Use these operators in the API query in the same manner as in the UI.</p>
-<p><strong>Example</strong> Specify <code>revenue</code> over 1000, and limit <code>ship mode</code> to 'air':</p>
-<pre>[revenue] &gt; 1000 [ship mode] = &lsquo;air&rsquo;</pre>
-</dd></dlentry>
-
-  <dlentry id="value">
-  <dt>Value</dt>
-<dd><p>String (text) and date values must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. Do not use quotes for numeric values, except for dates. </p>
-  <p>When using multiple values, separate them by a comma, <code>,</code>.</p>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API query is:</p>
-  <pre>[revenue] top 2 [ship mode]</pre>
-  <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API query is:</p>
-  <pre>[revenue] [ship mode] = &lsquo;air&rsquo;</pre></dd>
-  </dlentry>
-
-  <dlentry id="date-bucket">
-    <dt>Date Bucket</dt>
-<dd>
-<p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. The column with which the date bucket is bound, and the date bucket token, must be separated by a period, <code>.</code>.</p>
-<p>Single word date buckets can be expressed <em>as is</em>. Multi-word date buckets must be enclosed within quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
-<pre>[revenue] [commit date].monthly</pre>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
-<pre>[revenue] [commit date].'day of week' = 5</pre>
-</dd>
-  </dlentry>
-
-  <dlentry id="keyword">
-    <dt>Keyword</dt>
-    <dd><p>Use keywords in the API query in the same manner as in the UI.</p>
-    <p><strong>Example</strong> When a ThoughtSpot UI query uses keywords <code>growth of</code> and <code>sort by</code>, the equivalent API query is:</p>
-    <pre>growth of [revenue] by [commit date]</pre></dd>
-  </dlentry>
-
-  <dlentry id="calendar">
-    <dt>Calendar</dt>
-    <dd><p>You can specify a custom calendar in the query. Use the <code>calendar.<em>calendar_name</em></code> format explicitly.</p>
-  <p>When the calendar name contains multiple words, these words must be enclosed in single quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API query is:</p>
-  <pre>[revenue] by [commit date] calendar.fiscal</pre>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API query is:</p>
-  <pre>[revenue] by [commit date] calendar.'my calendar'</pre></dd>
-  </dlentry>
-</dl>
-
-## Request example
-
-##### cURL - COMPACT
+### Request
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
-```
-
-##### Request URL - COMPACT
-
-```
-https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
-```
-
-##### cURL - FULL
-
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL’
-```
-
-##### Request URL - FULL
-```
-https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL
-```
-
-## Response example
-
-```
+POST /ts_dataservice/v1/public/session HTTP/1.1  
+Host: client.mydomain.com Accept: application/json Content-type: application/json
 {
-  "columnNames": [
-    "Store Region",
-    "Total Sales"
-  ],
-  "data": [
-    [
-      "east",
-      18934491.05134509
-    ],
-    [
-      "midwest",
-      29157090.327609923
-    ],
-    [
-      "south",
-      25484693.074720126
-    ],
-    [
-      "southwest",
-      34241076.52103955
-    ],
-    [
-      "west",
-      30848491.458509445
-    ]
-  ],
-  "samplingRatio": 1,
-  "totalRowCount": 5,
-  "rowCount": 5,
-  "pageSize": 100000,
-  "offset": 0
+"username":"<thoughtspot user name>",
+"password":"<thoughtspot password>"
+}
+```
+### Response
+```
+Status: 200 OK
+Set-cookie: token
+```
+### Failure responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+{% include note.html content="To indicate a new login, we use session (noun), instead of login (verb). If the cookie is not passed in subsequent calls, then requests fail." %}
+
+## StartLoad
+
+Use this API to start loading data.
+
+### Request
+```
+POST /ts_dataservice/v1/public/loads  HTTP/1.1  
+Cookie: token
+{
+<load params here. For creating data load. This is a json object.>
 }
 ```
 
-## Using the Search Data API
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+{
+  "node_address": {
+    "host": "host",
+    "port": port
+  },
+  "cycle_id": "cycle_id"
+}
+```
+### Failure Responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 400 BAD REQUEST
+Invalid input params for starting data load: Request body
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+## Load
 
-To test the search query API, follow these steps:
+Use this API to load data.
 
-{: id="get-guid"}
-##### Determine the GUID of the data source
+### Request Parameters
 
-1. In a Web Browser tab, navigate to the following address, and log in as admin user:
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>X-ts-chunk-id</code></td> <td>string</td> <td>ThoughtSpot chunk ID</td> </tr>
+    <tr> <td><code>X-ts-chunk-checksum</code></td> <td>string</td> <td>ThoughtSpot chunk checksum</td> </tr>
+  </tbody>
+</table>
 
-   ```
-   https://<instance>/
-   ```
 
-2. In the top navigation, click **Data**.
+### Request
+```
+POST /ts_dataservice/v1/public/loads/cycle_id
+Cookie: <token>
+Content-Type: multipart/form-data; boundary=bndry
+X-ts-chunk-id: 1
+X-ts-chunk-checksum: XXXXXX (optional)
+--bndry
+Content-Disposition: form-data; name="file"; filename="sample.csv"
 
-   Alternatively, navigate to the following address:
+<CSV Data>
+--bndry--
+```
+{% include note.html content="We support multipart form/data, as well as direct data upload." %}
 
-   ```
-   https://<instance>/#/data/tables/
-   ```
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+Connection: Close
+Upload Complete.
+```
+### Failure responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 400 BAD REQUEST
+Unable to find table in Falcon. Cannot load data.
+```
+```
+Status: 400 BAD REQUEST
+Cycle_id=[cycle_id] does not exist.
+```
+```
+Status: 400 BAD REQUEST
+Cannot not connect to falcon_manager.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
 
-3. Select a data source that you plan to query: a worksheet, a table, or a view.
+## CommitLoad
 
-4. In the address bar of the Web Browse, note the GUID of the selected data source; it is the last string of the address.  For example, in the following address string, the GUID is `9d93a6b8-ca3a-4146-a1a1-e908b71b963f`:
+(description TBD)
 
-    ```
-    https://<instance>/#/data/tables/9d93a6b8-ca3a-4146-a1a1-e908b71b963f
-    ```
+### Request Parameters
 
-5. Copy and save the GUID.
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>X-ts-chunks</code></td> <td>string</td> <td>Number of chunks</td> </tr>
+    <tr> <td><code>X-ts-load-checksum</code></td> <td>string</td> <td>Checksum of full data</td> </tr>
+  </tbody>
+</table>
 
-##### Run the Search Data API
+### Request
 
-1. In another browser, navigate to the following address:
+```
+POST /ts_dataservice/v1/public/loads/cycle_id/commit
+Cookie: <token>
+X-ts-chunks: N
+X-ts-load-checksum: XXXXXX (optional)
+```
+{% include note.html content="Data should be empty. We also check that the tsload service has received all of the chunks before doing endload." %}
 
-  ```
-  https://<instance>/external/swagger/#!/tspublic%2Fv1/searchData
-  ```
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+Commit load cycle request made.
+```
 
-2. Click on `POST /tspublic/v1/searchdataTS`.
+### Failure Responses
 
-   The parameter interface appears.
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+Commit load cycle failed. Error ending load. Unknown cycle_id 'cycle_id'
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+## AbortLoad
 
-3. In the **Parameters** interface, enter the values for the following:
+Use this API to stop loading data.
 
-    - `query_string` is the actual search query. See [Components of a search query](#components).
-    - `data_source_guid` is the identifier you  obtained earlier, in [Determine the GUID of the data sources](#get-guid).
+### Request
+```
+POST /ts_dataservice/v1/public/loads/cycle_id/cancel
+Cookie: token
+```
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+```
+### Failure responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+## Status of load
 
-    You can leave other parameters at their default value.
+Use the api to get the current status of a load.
 
-4. Click **Try it out!**, and note the results.
+### REQUEST
 
-   You may wish to check that the same query, when you run it in the ThoughtSpot UI search bar (with slightly different syntax), returns the same data.
+```
+GET /ts_dataservice/v1/loads/cycle_id
+Cookie: token
+```
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+Return the URL of the bad records file if any (in JSON).
+{
+   Status: status of load - this could itself be json.
+   Bad_records: /ts_dataservice/v1/public/loads/cycle_id/bad_records_file
+}
+```
+### Failure Responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+## Status of all loads
 
-## Limitations of Search Query API
+Use this api to get the status of all current data loads.
 
-- To avoid join path ambiguities, a query can use only a **single data source**.
+### Request
+```
+GET /ts_dataservice/v1/public/loads
+Cookie: token
+```
+Response
+```
+Status: 200  OK
+Content-Type: text/plain
+Content-Length: xx
+[
+  {
+    Cycle_id: XXX,
+    Status: XXX,
+    BadRecordsUrl: XXX
+  },
+  {
+    Cycle_id: XXX,
+    Status: XXX,
+    BadRecordsUrl: XXX,
+  },
+  ....
+]
+```
+### Failure responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+## Bad records
 
-- Search execution of query strings is **case insensitive**.
+Use this api to view the bad records file data.
 
-- All Column names in the data source must have **unique names** that also pass the "case insensitivity" test.
+### Response
+```
+Status: 200 OK
+Content-Type: text/plain
+Content-Length: xx
+Bad Records file data
+```
+### Failure responses
+```
+Status: 401 UNAUTHORIZED
+Unable to verify user. Please login again.
+```
+```
+Status: 403 FORBIDDEN
+User does not have required privileges. Please contact your administrator.
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+Node does not exist: /tmp/cycle_id.bad_record
+```
+```
+Status: 500 INTERNAL SERVER ERROR
+error code = INTERNAL, message = Couldn't resolve the authentication service.
+```
+## Monitoring
 
-  For example, Columns `[Revenue]` and `[revenue]` are not unique.
-- Column names cannot contain square brackets, `[` or `]`.
+An administrator can monitor the following:
+- Active sessions: `GET /ts_dataservice/v1/public/sessions`
+- Status of all loads: `GET /ts_dataservice/v1/public/loads`
 
-- Values must be enclosed in quotes, `‘’`, but they cannot contain quotes.
+## Loading data from Amazon AWS and Microsoft Azure
 
-- The API does not support **in-query formula** definitions. To use a formula, first create it on the worksheet or a table using the ThoughtSpot UI, and then use the named formula inside the API query.
+Loading data from both AWS and Azure can be done using their respective APIs.
 
-- Users must be **authenticated** and have **read access** to the data source.
+### AWS multipart uploads
 
-- Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. Your search keywords must also be in American English. Your column names and other data values do **not** need to be in American English. You can change your preferred locale to `en-US` in your browser settings.
+#### Request
+```
+POST /-/vaults/examplevault/multipart-uploads
+Host: glacier.us-west-2.amazonaws.com
+x-amz-Date: 20170210T120000Z
+x-amz-archive-description: MyArchive-101
+x-amz-part-size: 4194304
+x-amz-glacier-version: 2012-06-01
+Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20141123/us-west-2/glacier/aws4_request,SignedHeaders=host;x-amz-date;x-amz-glacier-version,Signature=9257c16da6b25a715ce900a5b45b03da0447acf430195dcb540091b12966f2a2
+```
+#### Response
+```
+HTTP/1.1 201 Created
+x-amzn-RequestId: AAABZpJrTyioDC_HsOmHae8EZp_uBSJr6cnGOLKp_XJCl-Q
+Date: Wed, 10 Feb 2017 12:00:00 GMT
+Location: /111122223333/vaults/examplevault/multipart-uploads/OW2fM5iVylEpFEMM9_HpKowRapC3vn5sSL39_396UW9zLFUWVrnRHaPjUJddQ5OxSHVXjYtrN47NBZ-khxOjyEXAMPLE
+x-amz-multipart-upload-id: OW2fM5iVylEpFEMM9_HpKowRapC3vn5sSL39_396UW9zLFUWVrnRHaPjUJddQ5OxSHVXjYtrN47NBZ-khxOjyEXAMPLE
+```
+#### Completing a multipart AWS upload
+
+To complete a multipart upload, you send an HTTP POST request to the URI of the upload ID that S3 Glacier created in response to your Initiate Multipart Upload request. This is the same URI you used when uploading parts. In addition to the common required headers, you must include the result of the SHA256 tree hash of the entire archive and the total size of the archive in bytes.
+
+#### Request
+```
+End load
+POST /-/vaults/examplevault/multipart-uploads/OW2fM5iVylEpFEMM9_HpKowRapC3vn5sSL39_396UW9zLFUWVrnRHaPjUJddQ5OxSHVXjYtrN47NBZ-khxOjyEXAMPLE HTTP/1.1
+Host: glacier.us-west-2.amazonaws.com
+z-amz-Date: 20170210T120000Z
+x-amz-sha256-tree-hash:1ffc0f54dd5fdd66b62da70d25edacd0
+x-amz-archive-size:8388608
+x-amz-glacier-version: 2012-06-01
+Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20141123/us-west-2/glacier/aws4_request,SignedHeaders=host;x-amz-date;x-amz-glacier-version,Signature=9257c16da6b25a715ce900a5b45b03da0447acf430195dcb540091b12966f2a2
+<CompleteMultipartUpload>
+             <Part>
+                <PartNumber>1</PartNumber>
+               <ETag>"a54357aff0632cce46d942af68356b38"</ETag>
+             </Part>
+             <Part>
+                <PartNumber>2</PartNumber>
+               <ETag>"0c78aef83f66abc1fa1e8477f296d394"</ETag>
+             </Part>
+             <Part>
+               <PartNumber>3</PartNumber>
+               <ETag>"acbd18db4cc2f85cedef654fccc4a4d8"</ETag>
+             </Part>
+            </CompleteMultipartUpload>
+```
+For more information on multipart uploads from AWS, see Amazon's [AWS multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRESTAPImpUpload.html){:target="_blank"} documentation.
+
+### AWS single uploads
+
+#### Request
+```
+PUT /-/vaults/examplevault/multipart-uploads/OW2fM5iVylEpFEMM9_HpKowRapC3vn5sSL39_396UW9zLFUWVrnRHaPjUJddQ5OxSHVXjYtrN47NBZ-khxOjyEXAMPLE HTTP/1.1
+Host: glacier.us-west-2.amazonaws.com
+Date: Wed, 10 Feb 2017 12:00:00 GMT
+Content-Range:bytes 4194304-8388607/*
+Content-Length: 4194304
+x-amz-sha256-tree-hash:f10e02544d651e2c3ce90a4307427493
+x-amz-content-sha256:726e392cb4d09924dbad1cc0ba3b00c3643d03d14cb4b823e2f041cff612a628
+x-amz-glacier-version: 2012-06-01
+Authorization: Authorization=AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20120525/us-west-2/glacier/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date;x-amz-glacier-version, Signature=16b9a9e220a37e32f2e7be196b4ebb87120ca7974038210199ac5982e792cace
+```
+
+#### Response
+```
+HTTP/1.1 204 No Content
+x-amzn-RequestId: AAABZpJrTyioDC_HsOmHae8EZp_uBSJr6cnGOLKp_XJCl-Q
+x-amz-sha256-tree-hash: c06f7cd4baacb087002a99a5f48bf953
+Date: Wed, 10 Feb 2017 12:00:00 GMT
+End load
+```
+### Azure multipart uploads
+
+For more information on uploads from Azure, see Microsoft's Azure [Put Range](https://docs.microsoft.com/en-us/rest/api/storageservices/put-range){:target="_blank"} documentation.
