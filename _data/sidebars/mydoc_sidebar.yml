@@ -238,11 +238,9 @@ entries:
         - title: Changing charts
           url: /end-user/search/change-the-chart.html
           output: web,ugBk
-        # new with ChartConfig changes
         - title: Change axes options
           url: /end-user/search/chart-axes-options.html
           output: web,ugBk
-        # older topics
         - title: Configure the columns
           url: /end-user/search/drag-and-drop.html
           output: web,ugBk
@@ -257,6 +255,9 @@ entries:
           output: web,ugBk
         - title: Hide and show values
           url: /end-user/search/hide-and-show-values.html
+          output: web,ugBk
+        - title: High cardinality charts and tables
+          url: /end-user/search/high-cardinality.html
           output: web,ugBk
         - title: Change chart colors
           url: /end-user/search/change-chart-colors.html
