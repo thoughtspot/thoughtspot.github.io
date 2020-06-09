@@ -1,4 +1,4 @@
-baseurl : /6.1
+baseurl : /Cloud
 exclude :
   - 6.1
-branch_url : /6.1
+branch_url : /Cloud

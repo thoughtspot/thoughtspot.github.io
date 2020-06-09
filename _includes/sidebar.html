@@ -40,11 +40,11 @@
        {% assign newURL = newURL | append:"/" | append:url_chunks[5] %}
        {% endif %}
 
-  {% if sidebar[0].version < site.current_version %}
+  <!-- {% if sidebar[0].version < site.current_version %}
   <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
   {% else %}
       <li class="small-sidebar-version-nav">This is the latest version.</li>
-  {% endif %}
+  {% endif %} -->
 
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is {{ newURL }}</li>
