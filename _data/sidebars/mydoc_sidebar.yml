@@ -1071,24 +1071,24 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
-  - sectiontitle: Mobile
-    output: web
-    sectionitems:
-    - title: Overview
-      url: /admin/mobile/use-mobile.html
-      output: web
-    - title: Deploy
-      url: /admin/mobile/deploy-mobile.html
-      output: web
-    - title: Install and set up
-      url: /admin/mobile/install-mobile.html
-      output: web
-    - title: FAQ
-      url: /admin/mobile/faq-mobile.html
-      output: web
-    - title: Release notes
-      url: /admin/mobile/notes-mobile.html
-      output: web
+#  - sectiontitle: Mobile
+#    output: web
+#    sectionitems:
+#    - title: Overview
+#      url: /admin/mobile/use-mobile.html
+#      output: web
+#    - title: Deploy
+#      url: /admin/mobile/deploy-mobile.html
+#      output: web
+#    - title: Install and set up
+#      url: /admin/mobile/install-mobile.html
+#      output: web
+#    - title: FAQ
+#      url: /admin/mobile/faq-mobile.html
+#      output: web
+#    - title: Release notes
+#      url: /admin/mobile/notes-mobile.html
+#      output: web
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
