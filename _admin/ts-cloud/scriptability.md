@@ -1,6 +1,6 @@
 ---
 title: [SpotApps Scriptability]
-last_updated: 5/28/2020
+last_updated: 6/9/2020
 summary: "Use SpotApps to export Worksheets, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,11 +19,17 @@ You can download these objects in the form of a scriptable file in the [ThoughtS
 
 ## Prerequisites
 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Export | Import  |
+**Pinboards and Answers**
+
+| Export with dependents | Export without dependents | Import with dependents | Import without dependents |
 | ---------- | ---- | --- |
-| **Pinboards** | Read permission for the Pinboard and all underlying tables and Worksheets | n/a |
-| **Answers** | Read permission for the Answer and all underlying tables and Worksheets | n/a |
-| **Worksheets** | **Can view** permission on the Worksheet and all underlying tables | **Can manage data** permission. If updating a previously existing Worksheet, you must have **can edit** permission for the Worksheet. |
+| **View** permission for the Pinboard or Answer. **View** permission on all underlying tables and Worksheets. For example, if a Pinboard or Answer is built on top of a Worksheet that is built on top of a View, you must have **view** permission for all of these objects. | **View** permission for the Pinboard or Answer. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard or Answer visualizations directly depend on. For example, if a Pinboard or Answer is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
+
+**Worksheets**
+
+| Export | Import |
+| --- | --- |
+| **Can view** permission on the Worksheet and all underlying tables. | When not overwriting an existing Worksheet, you must have the **can manage data** permission. If updating a previously existing Worksheet, you must have the **can manage data** permission and **can edit** permission for the Worksheet. |
 
 {: id="export-object"}
 ## Export an object
