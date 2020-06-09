@@ -1,9 +1,9 @@
 <table>
 <tr><th>Python 3 package</th><th>Minimum version</th></tr>
-<tr><td><code>agate</code></td><td>1.6.1</td></tr>
 <tr><td><code>agate-dbf</code></td><td>0.2.1</td></tr>
 <tr><td><code>agate-excel</code></td><td>0.2.3</td></tr>
 <tr><td><code>agate-sql</code></td><td>0.5.4</td></tr>
+<tr><td><code>agate</code></td><td>1.6.1</td></tr>
 <tr><td><code>ansible</code></td><td>2.8.5</td></tr>
 <tr><td><code>asn1crypto</code></td><td>0.24.0</td></tr>
 <tr><td><code>awscli</code></td><td>1.16.239</td></tr>
@@ -16,7 +16,7 @@
 <tr><td><code>certifi</code></td><td>2019.9.11</td></tr>
 <tr><td><code>cffi</code></td><td>1.12.3</td></tr>
 <tr><td><code>chardet</code></td><td>3.0.4</td></tr>
-<tr><td><code>Click</code></td><td>7</td></tr>
+<tr><td><code>Click</code></td><td>7.0</td></tr>
 <tr><td><code>colorama</code></td><td>0.3.9</td></tr>
 <tr><td><code>configobj</code></td><td>5.0.6</td></tr>
 <tr><td><code>crypto</code></td><td>1.4.1</td></tr>
@@ -38,8 +38,8 @@
 <tr><td><code>idna</code></td><td>2.8</td></tr>
 <tr><td><code>influxdb</code></td><td>5.2.3</td></tr>
 <tr><td><code>ipaddress</code></td><td>1.0.22</td></tr>
-<tr><td><code>ipython</code></td><td>7.8.0</td></tr>
 <tr><td><code>ipython-genutils</code></td><td>0.2.0</td></tr>
+<tr><td><code>ipython</code></td><td>7.8.0</td></tr>
 <tr><td><code>isodate</code></td><td>0.6.0</td></tr>
 <tr><td><code>itsdangerous</code></td><td>1.1.0</td></tr>
 <tr><td><code>jdcal</code></td><td>1.4.1</td></tr>
@@ -69,8 +69,8 @@
 <tr><td><code>psutil</code></td><td>5.6.3</td></tr>
 <tr><td><code>psycopg2</code></td><td>2.8.3</td></tr>
 <tr><td><code>ptyprocess</code></td><td>0.6.0</td></tr>
-<tr><td><code>pyasn1</code></td><td>0.4.7</td></tr>
 <tr><td><code>pyasn1-modules</code></td><td>0.2.6</td></tr>
+<tr><td><code>pyasn1</code></td><td>0.4.7</td></tr>
 <tr><td><code>pycparser</code></td><td>2.19</td></tr>
 <tr><td><code>pycrypto</code></td><td>2.6.1</td></tr>
 <tr><td><code>pydot</code></td><td>1.4.1</td></tr>
@@ -100,6 +100,6 @@
 <tr><td><code>urllib3</code></td><td>1.25.3</td></tr>
 <tr><td><code>wcwidth</code></td><td>0.1.7</td></tr>
 <tr><td><code>Werkzeug</code></td><td>0.15.6</td></tr>
-<tr><td><code>xgboost</code></td><td>0.9</td></tr>
+<tr><td><code>xgboost</code></td><td>0.90</td></tr>
 <tr><td><code>xlrd</code></td><td>1.2.0</td></tr>
 </table>
