@@ -1,6 +1,6 @@
 ---
 title: [Show data labels]
-last_updated: 2/25/2020
+last_updated: 6/9/2020
 summary: "You can show and configure data labels for a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,17 +10,13 @@ You can show data labels for [every measure](#labels-all) in your chart, or conf
 {: id="labels-all"}
 ## Configure all data labels
 
-1. While viewing your search or answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
+To turn on all data labels for a chart, click the **show all data labels** button at the top right.
 
-2. Select **Settings** on the bottom right.
+![Show all data labels]({{ site.baseurl }}/images/chart-config-all-data-labels-shortcut.png "Show all data labels")
 
-     ![Click settings]({{ site.baseurl }}/images/chartconfig-zoom-settings.png "Click settings")
+You can turn the labels off by clicking the same button.
 
-3. Check the **all labels** box.
-
-    ![Check the all labels box]({{ site.baseurl }}/images/chartconfig-labels-all.png "Check the all labels box")
-
-    To further configure the labels, by showing unrounded numbers for example, [configure labels individually](#labels-one).
+To further configure the labels, by showing unrounded numbers for example, [configure labels individually](#labels-one).
 
 {: id="labels-one"}
 ## Configure labels for one measure
