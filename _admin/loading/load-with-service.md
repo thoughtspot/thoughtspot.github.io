@@ -40,10 +40,7 @@ This page highlights the following:
         key: "etl_server_enable_load_balancer"
         value: "false"
       }
-      gflag {
-        key: "etl_server_garbage_collector_interval_min"
-        value: "28800"
-      }
+<!-- The default in the next command will be revised - to be provided by Anand -->
       gflag {
         key: "bad_records_base_filepath"
         value: "<defaults:/tmp, recommended: path in one of mounted HDDs>"
@@ -174,4 +171,6 @@ The typical workflow of the API inside the client is the following:
    1. To monitor the state of the commit.
    2. Wait until it returns “DONE”.
 
-For details on all tsload service APIs, see [tsload service API reference]({{ site.baseurl }}/reference/tsload-service-api-ref.html)   
+## Related information
+
+[tsload service API reference]({{ site.baseurl }}/reference/tsload-service-api-ref.html)   
