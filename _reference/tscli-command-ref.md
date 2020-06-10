@@ -1425,6 +1425,7 @@ This subcommand has the following options:
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
+    <p>ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>
