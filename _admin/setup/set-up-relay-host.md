@@ -27,6 +27,8 @@ To set up a relay host:
     $ tscli smtp set-relayhost <IP_address>:<custom_port>
     ```
 
+    If you are on 6.1 rather than 6.1.1, or an earlier version than 6.0.5, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
+
 3. Verify your settings:
 
     ```
