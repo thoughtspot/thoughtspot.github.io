@@ -1,5 +1,5 @@
 ---
-title: [tsload service API]
+title: [tsload service API reference]
 summary: "The tsload service APIs enable you to load data into ThoughtSpot."
 last_updated: 11/18/2019
 sidebar: mydoc_sidebar
@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 ## Login
-Use this API to authenticate and log in a user.
+Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.
 
 ### Request Parameters
 
@@ -58,7 +58,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 ## StartLoad
 
-Use this API to start loading data.
+After **login**, you use this API start the data load operation. The API call to be used here is “/ts_dataservice/v1/public/loads”. If the load is initiated successfully, the cycle ID, and the load balancer IP are returned. Once complete, you use **Load** to start the actual data load.
 
 ### Request
 ```
@@ -101,7 +101,9 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
 ## Load
 
-Use this API to load data.
+Use this API to load your data.
+Data load can be called for multiple chunks of data for the same cycle ID. All of this data is uploaded to the ThoughtSpot cluster unless a commit load is issued.
+
 
 ### Request Parameters
 
@@ -176,7 +178,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 ## CommitLoad
 
-(description TBD)
+Once the data load is complete, you use **CommitLoad** to commit data to be loaded into the Falcon database.
 
 ### Request Parameters
 
@@ -235,6 +237,7 @@ Commit load cycle failed. Error ending load. Unknown cycle_id 'cycle_id'
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
+
 ## AbortLoad
 
 Use this API to stop loading data.
