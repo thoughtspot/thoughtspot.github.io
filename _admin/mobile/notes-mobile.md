@@ -5,8 +5,23 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.3 is now available. These release notes include information about new features,
+ThoughtSpot mobile 1.4 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+{: id="1-4-new"}
+## 1.4 New Features and Functionality
+- Improved network status messaging to keep you better informed on whether your device is connected to the internet and/or VPN.
+- You can now read the entire description on the visualization details page which originally displayed only one line.
+- First-time users now enter an email address, which allows ThoughtSpot to provide better support to them.
+
+{: id="1-4-fixed"}
+## 1.4 Fixed Issues
+
+The following issues are fixed in the 1.4 release:
+
+- The app crashes when applying filters if the Pinboard has an empty date or measure filter.
+- Year data labels are off by one year when custom calendar settings are used.
+- Applying filters on a Pinboard does not work.
 
 {: id="1-3-new"}
 ## 1.3 New Features and Functionality
