@@ -763,6 +763,7 @@ This subcommand takes supports the following actions:
 * `tscli smtp set-relayhost [-h] [--force FORCE] relayhost` Sets the Relay Host for SMTP (email) sent from the cluster.
 
   * `--force` *`FORCE`*  Set even if relay host is not accessible. (default: `False`)
+  *  ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
 
 * `tscli smtp set-saslcredentials` Sets SASL credentials and enables SMTP AUTH
 
