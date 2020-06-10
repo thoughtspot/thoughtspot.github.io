@@ -1,7 +1,7 @@
 ---
 title: [RHEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 3/20/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,6 +11,7 @@ permalink: /:collection/:path.html
 | &#10063; | [4. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux](#disable-selinux) |
+| &#10063; | [7. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
@@ -112,3 +113,7 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux
 ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
+
+{: id="linux-kernel-version"}
+## Linux kernel version
+Your Linux kernel must be on version 4.4 or later.
