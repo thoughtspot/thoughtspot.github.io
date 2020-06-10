@@ -1,6 +1,6 @@
 ---
 title: [SpotApps Scriptability]
-last_updated: 6/9/2020
+last_updated: 6/10/2020
 summary: "Use SpotApps to export Worksheets, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -89,7 +89,7 @@ To update an existing worksheet, follow these steps:
 
 5. In the upload interface, click **Browse your files**.
 
-   ![Find the Worksheet YAML file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet YAML file")
+   ![Find the Worksheet TSL file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet TSL file")
 
 6. In your file system, find and select the `.tsl` file.
 

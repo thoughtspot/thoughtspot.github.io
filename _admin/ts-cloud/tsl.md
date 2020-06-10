@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 5/28/2020
+last_updated: 6/10/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -708,8 +708,8 @@ See the [Parameters](#parameters) section for details about the keywords used in
 ## Limitations of working with TSL files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, or Pinboard through TSL.
 
-* It is not possible to include Worksheet filters in the YAML script. You cannot export or import a Worksheet with filters.
+* It is not possible to include Worksheet filters in the TSL script. You cannot export or import a Worksheet with filters.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
-* It is not possible to reverse the join direction in the YAML script.
+* It is not possible to reverse the join direction in the TSL script.
