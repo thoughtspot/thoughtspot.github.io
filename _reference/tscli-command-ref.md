@@ -2087,6 +2087,11 @@ This subcommand has the following options:
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
+    <p>On ThoughtSpot release 6.1.1 or later, on on release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
+    <p>To use the default port, run the setup command normally:</p>
+    <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
+    <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
+    <p><code>$ tscli smtp set-relayhost <em>IP_address</em>:<em>custom_port</em></code></p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>
