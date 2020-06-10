@@ -2100,6 +2100,7 @@ This subcommand has the following options:
     <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
     <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
     <p><code>$ tscli smtp set-relayhost <em>IP_address</em>:<em>custom_port</em></code></p>
+    <p>If you are on an earlier version than 6.0.5, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>

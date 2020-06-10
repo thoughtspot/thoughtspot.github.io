@@ -16,7 +16,7 @@ To set up a relay host:
 1. Log in to the Linux shell using SSH.
 2. Issue the setup command, providing the IP address of the relay host.
 
-    Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment. 
+    Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
 
     To use the default port, run the setup command:
 
@@ -29,6 +29,8 @@ To set up a relay host:
     ```
     $ tscli smtp set-relayhost <IP_address>:<custom_port>
     ```
+
+    If you are on an earlier version than 6.0.5, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
 
 3. Verify your settings:
 
