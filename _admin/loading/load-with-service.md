@@ -1,0 +1,173 @@
+---
+title: [Use the tsload service to load data]
+last_updated: 6/2/2020
+summary: "Learn how to load files using the tsload service."
+sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
+---
+Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.
+
+This page highlights the API workflow, including the order in which each API is called for a successful tsload operation.
+
+## Setup
+
+1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
+
+2. Open http port 8442, by running the following command:
+   `tscli firewall open-ports --ports 8442`
+
+3. Validate that the port is open, by running this command:
+   `tscli firewall status`
+
+4. Open the config file at the following location:
+   `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
+
+5. Add the following flags to the file and save it:
+   ```
+      gflag {
+        key: "max_concurrent_target_writers"
+        value: "4"
+      }
+      gflag {
+        key: "max_dml_bytes_per_rpc"
+        value: "1048576"
+      }
+      gflag {
+        key: "etl_server_enable_load_balancer"
+        value: "false"
+      }
+      gflag {
+        key: "etl_server_garbage_collector_interval_min"
+        value: "28800"
+      }
+      gflag {
+        key: "bad_records_base_filepath"
+        value: "<defaults:/tmp, recommended: path in one of mounted HDDs>"
+      }
+```  
+
+## Using the Python3 client
+
+The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
+
+The client includes the following methods:
+- **login**: Requires ThoughtSpot username and password
+- **startLoad**: Prepares the load with parameters that include table, schema, and db. It also includes tokenizing parameters, like : field separator etc.
+  - This returns a new IP address (when the internal load-balancer is enabled)
+  - This also returns a cycle_id. This cycle_id determines the load-session corresponding to the given load parameters. All the successive calls will need to use this cycle_id as a parameter, including the getStatus.
+  - LoadDataParam JSON
+    ```
+  {
+	"target": {
+		"database": "mytest",
+		"schema": "falcon_default_schema",
+		"table": "one"
+	},
+	"format": {
+		"date_time": {
+			"date_format": "%Y%m%d",
+			"time_format": "%H-%M-%S",
+			"date_time_format": "%Y%m%d %H:%M",
+			"converted_to_epoch": false,
+			"second_fraction_start": ".",
+			"skip_second_fraction": false
+		},
+		"boolean": {
+			"true_format": "T",
+			"false_format": "F",
+			"use_bit_values": false
+		},
+		"type": "CSV",
+		"field_separator": ",",
+    "trailing_field_separator": true,
+		"enclosing_character": "^",
+		"escape_character": "^",
+		"has_header_row": true,
+		"null_value": “(null)”,
+		"flexible": false
+  	},
+  	"load_options": {
+  		"empty_target": true,
+  		"max_ignored_rows": 10
+  	}
+  }
+    ```
+- **load**: in this example, a file is being uploaded in a single call. In reality, this could well be a post-call with data directly instead of a file.
+  - This could also be broken into multiple load calls for load data incrementally.
+  - This will simply upload the file and starts processing the file, but the load will not be complete just by calling this method.
+  - This method returns immediately, the actual parsing, etc will be done asynchronously.
+  - To get the status at any point, getStatus method can be used.
+- **commitLoad**: This method commits the ingested data so far into the Falcon DB.
+  - This method returns immediately and the commit will be done asynchronously
+  - Again calling getStatus method can be used for getting the actual status.
+- **getStatus**: Returns the status of the load at that time
+  - getStatus JSON
+    ```
+    {
+    	"buffered_data": "0 Bytes",
+    	"cycle_id": "78aecb14-34c5-4da8-b08f-517de22d9701",
+    	"end_time": "Mon, 08 Jun 2020 20:46:21 IST",
+    	"ignored_row_count": "0",
+    	"ingested_network_bw": "0 Bytes",
+    	"internal_stage": "DONE",
+    	"rows_written": "2",
+    	"size_written": "34 Bytes",
+    	"start_time": "Mon, 08 Jun 2020 20:46:19 IST",
+    	"status": {
+    		"code": "OK"
+    	}
+    }
+    ```
+
+## Details
+
+### Ports and Server
+
+Port number: 8442, HTTPS REST endpoints
+
+The load server resides in a different port as opposed to standard ThoughtSpot services. This is because the service tends to carry heavy file load operations and having a separate web-server creates the needed isolation between standard ThoughtSpot services and TSLoad operations.
+
+By default, this service runs on all the nodes of the ThoughtSpot cluster. Again, this is to enable some load distribution between possible simultaneous loads. The TSLoad server uses its own load balancer. In case an external load-balancer is being used, then the TSLoad requests need to be made sticky and the TSLoad-load balancer should be disabled.
+
+### Client
+
+The remote client is a simple python client that exercises the API mentioned later in the document.
+
+APIs are devised to handle both loading-of-file or loading from a stream. The difference is, the latter might end up sending data in “chunks” to the server before committing it.
+
+### Authorization and Authentication
+
+This uses the existing ThoughtSpot authentication mechanism to authenticate the user, using Login API. Each upload session needs to be authenticated using this API.
+
+TSLoad, for this version, is allowed to only those users who have “Administrator” or “Manage Data” privilege in the ThoughtSpot environment.
+
+### API workflow
+
+The typical workflow of the API inside the client is the following:
+
+1. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
+   ```
+   curl -ik https://localhost:8442/ts_dataservice/v1/public/ping
+   HTTP/1.1 200 OK
+
+   Ping Received.
+   ```
+
+2. `<standard-thoughspot-cluster-url> Login`.
+
+3. `<standard-thoughspot-cluster-url> StartLoad`.
+   If the TSLoad-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
+
+4. `<thoughtspot-node-ip-returned-from-2> Load`.
+   1. Repeat this step until all the rows are sent.
+   2. In the case of a file, you can call this in one operation. In the case of a stream, you call this multiple times, thus avoiding buffering large data on the client side.
+
+5. `<thoughtspot-node-ip-returned-from-2> EndLoad`.
+   1. This will start the commit process.
+   2. It’ll take some time for the data to be committed to Falcon Database.
+
+6. `<thoughtspot-node-ip-returned-from-2> GetStatus`.
+   1. To monitor the state of the commit.
+   2. Wait until it returns “DONE”.
+
+For details on all tsload service APIs, see [tsload service API reference]({{ site.baseurl }}/reference/tsload-service-api-ref.html)   
