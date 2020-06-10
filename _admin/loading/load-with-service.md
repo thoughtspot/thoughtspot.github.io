@@ -54,8 +54,8 @@ The included Python3 client is provided for you to use it as a starting point fo
 The client includes the following methods:
 - **login**: Requires ThoughtSpot username and password
 - **startLoad**: Prepares the load with parameters that include table, schema, and db. It also includes tokenizing parameters, like : field separator etc.
-  - This returns a new IP address (when the internal load-balancer is enabled)
-  - This also returns a cycle_id. This cycle_id determines the load-session corresponding to the given load parameters. All the successive calls will need to use this cycle_id as a parameter, including the getStatus.
+  - This returns a new IP address (when the internal load balancer is enabled)
+  - This also returns a `cycle_id`. This `cycle_id` determines the load-session corresponding to the given load parameters. All the successive calls will need to use this cycle_id as a parameter, including the getStatus.
   - LoadDataParam JSON
     ```
   {
@@ -93,13 +93,13 @@ The client includes the following methods:
   	}
   }
     ```
-- **load**: in this example, a file is being uploaded in a single call. In reality, this could well be a post-call with data directly instead of a file.
+- **load**: in this example, a file is being uploaded in a single call. In reality, this could be a post-call with data directly instead of a file.
   - This can also be broken into multiple load calls for load data incrementally.
   - This simply uploads and starts processing the file, but the load is not complete just by calling this method.
-  - This method returns immediately, the actual parsing, etc will be done asynchronously.
+  - This method returns immediately, and the actual parsing, etc is done asynchronously.
   - To get the status at any point, the **getStatus** method can be used.
-- **commitLoad**: This method commits the ingested data so far into the Falcon database.
-  - This method returns immediately and the commit is done asynchronously.
+- **commitLoad**: This method commits the current ingested data into the Falcon database.
+  - This method returns immediately, and the commit is done asynchronously.
   - Again calling the **getStatus** method can provide the actual status.
 - **getStatus**: Returns the status of the load at that time
   - **getStatus JSON**
@@ -126,9 +126,9 @@ The client includes the following methods:
 
 Port number: 8442, HTTPS REST endpoints
 
-The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and TSLoad operations.
+The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file-load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and tsload operations.
 
-By default, this service runs on all nodes of a ThoughtSpot cluster. This provides load distribution to address possible simultaneous loads. The TSLoad server uses its own load balancer. If an external load balancer is used, the TSLoad requests must be made sticky, and the TSLoad load balancer should be disabled.
+By default, this service runs on all nodes of a ThoughtSpot cluster. This provides load distribution to address possible simultaneous loads. The tsload server uses its own load balancer. If an external load balancer is used, the tsload requests must be sticky, and the tsload load balancer should be disabled.
 
 ### Client
 
@@ -140,7 +140,7 @@ The APIs can load from a file, and load from a stream. The difference is, the la
 
 This uses the existing ThoughtSpot authentication mechanism to authenticate the user, using the **Login** API. Each upload session must be authenticated using this API.
 
-TSLoad is available only to users who have the “Administrator” or “Manage Data” privilege in the ThoughtSpot environment.
+tsload is available only to users who have the “Administrator” or “Manage Data” privilege in the ThoughtSpot environment.
 
 ## API workflow
 
@@ -157,7 +157,7 @@ The typical workflow of the API inside the client is the following:
 2. `<standard-thoughspot-cluster-url> Login`.
 
 3. `<standard-thoughspot-cluster-url> StartLoad`.
-   If the TSLoad-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
+   If the tsload-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
 
 4. `<thoughtspot-node-ip-returned-from-2> Load`.
    1. Repeat this step until all the rows are sent.
