@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on online clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 online clusters."
-last_updated: 6/8/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -104,15 +104,15 @@ To set up the Ansible, follow these steps:
       <dd>The tools that are necessary to compile the instructions you define in the Ansible Playbook, the source code, into executables that can run on your device. The toolchain includes a compiler, a linker, and run-time libraries.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-amzn-new.yaml</dt>
+      <dt>ts-new.yaml</dt>
       <dd>The Ansible Playbook for new installations.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-amzn-update.yaml</dt>
+      <dt>ts-update.yaml</dt>
       <dd>The Ansible Playbook for updates.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-amzn.yaml</dt>
+      <dt>ts.yaml</dt>
       <dd></dd>
     </dlentry>
     <dlentry>
@@ -186,7 +186,7 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
 Run the Ansible Playbook from your local machine or the SSM console by entering the following command:
 
 ```
-ansible-playbook -i hosts.yaml ts-amzn.yaml
+ansible-playbook -i hosts.yaml ts.yaml
 ```
 
 As the Ansible Playbook runs, it will perform these tasks:
