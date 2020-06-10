@@ -7,9 +7,13 @@ permalink: /:collection/:path.html
 ---
 Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.
 
-This page highlights the API workflow, including the order in which each API is called for a successful tsload operation.
+This page highlights the following:
+- Setting up your cluster to use the tsload service
+- Using the Python3 client for writing automated ETL jobs
+- Client, server, and authentication details
+- API workflow inside the client
 
-## Setup
+## Setting up your cluster
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
@@ -93,15 +97,15 @@ The client includes the following methods:
   }
     ```
 - **load**: in this example, a file is being uploaded in a single call. In reality, this could well be a post-call with data directly instead of a file.
-  - This could also be broken into multiple load calls for load data incrementally.
-  - This will simply upload the file and starts processing the file, but the load will not be complete just by calling this method.
+  - This can also be broken into multiple load calls for load data incrementally.
+  - This simply uploads and starts processing the file, but the load is not complete just by calling this method.
   - This method returns immediately, the actual parsing, etc will be done asynchronously.
-  - To get the status at any point, getStatus method can be used.
-- **commitLoad**: This method commits the ingested data so far into the Falcon DB.
-  - This method returns immediately and the commit will be done asynchronously
-  - Again calling getStatus method can be used for getting the actual status.
+  - To get the status at any point, the **getStatus** method can be used.
+- **commitLoad**: This method commits the ingested data so far into the Falcon database.
+  - This method returns immediately and the commit is done asynchronously.
+  - Again calling the **getStatus** method can provide the actual status.
 - **getStatus**: Returns the status of the load at that time
-  - getStatus JSON
+  - **getStatus JSON**
     ```
     {
     	"buffered_data": "0 Bytes",
@@ -119,29 +123,29 @@ The client includes the following methods:
     }
     ```
 
-## Details
+## Client, server, and authentication details
 
 ### Ports and Server
 
 Port number: 8442, HTTPS REST endpoints
 
-The load server resides in a different port as opposed to standard ThoughtSpot services. This is because the service tends to carry heavy file load operations and having a separate web-server creates the needed isolation between standard ThoughtSpot services and TSLoad operations.
+The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and TSLoad operations.
 
-By default, this service runs on all the nodes of the ThoughtSpot cluster. Again, this is to enable some load distribution between possible simultaneous loads. The TSLoad server uses its own load balancer. In case an external load-balancer is being used, then the TSLoad requests need to be made sticky and the TSLoad-load balancer should be disabled.
+By default, this service runs on all nodes of a ThoughtSpot cluster. This provides load distribution to address possible simultaneous loads. The TSLoad server uses its own load balancer. If an external load balancer is used, the TSLoad requests must be made sticky, and the TSLoad load balancer should be disabled.
 
 ### Client
 
-The remote client is a simple python client that exercises the API mentioned later in the document.
+The remote client is a simple Python client that exercises the API mentioned later in the document.
 
-APIs are devised to handle both loading-of-file or loading from a stream. The difference is, the latter might end up sending data in “chunks” to the server before committing it.
+The APIs can load from a file, and load from a stream. The difference is, the latter can send data in “chunks” to the server before committing it.
 
 ### Authorization and Authentication
 
-This uses the existing ThoughtSpot authentication mechanism to authenticate the user, using Login API. Each upload session needs to be authenticated using this API.
+This uses the existing ThoughtSpot authentication mechanism to authenticate the user, using the **Login** API. Each upload session must be authenticated using this API.
 
-TSLoad, for this version, is allowed to only those users who have “Administrator” or “Manage Data” privilege in the ThoughtSpot environment.
+TSLoad is available only to users who have the “Administrator” or “Manage Data” privilege in the ThoughtSpot environment.
 
-### API workflow
+## API workflow
 
 The typical workflow of the API inside the client is the following:
 

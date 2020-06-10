@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 
 ## Login
-Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.
+Use this API to authenticate and log in a user. **Login** establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.
 
 ### Request Parameters
 
