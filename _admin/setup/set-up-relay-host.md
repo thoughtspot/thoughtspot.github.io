@@ -20,6 +20,8 @@ To set up a relay host:
     $ tscli smtp set-relayhost <IP_address>
     ```
 
+    ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
+
 3. Verify your settings:
 
     ```
