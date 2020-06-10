@@ -1,7 +1,7 @@
 ---
 title: [Add a node to a ThoughtSpot cluster on Amazon Linux 2]
 summary: "You can easily configure an additional node for a ThoughtSpot cluster on Amazon Linux 2."
-last_updated: 6/4/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,7 +29,7 @@ Follow the general steps for configuring the Ansible Playbook, either on [online
 Run the Ansible Playbook from your local machine by entering the following command:
 
 ```
-ansible-playbook -i new-host.yaml ts-amzn.yaml
+ansible-playbook -i new-host.yaml ts.yaml
 ```
 
 As the Ansible Playbook runs, it will perform the same tasks on the new node that it completed during the initial cluster set-up, but only for the new node. See [Run Ansible]({{ site.baseurl }}/appliance/amazon-linux-2/al2-install-online.html#run-ansible). It will install all [RPM packages]({{ site.baseurl }}/appliance/amazon-linux-2/al2-packages.html), configure the local user accounts for ThoughtSpot administration, install the ThoughtSpot CLI, and configure the node (create any necessary partitions, formatting the data disks, and running the `prepare disks` command).

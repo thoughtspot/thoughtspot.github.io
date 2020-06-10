@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use RHEL]
 summary: "Install ThoughtSpot on RHEL offline clusters"
-last_updated: 3/20/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -60,15 +60,15 @@ To set up the Ansible, follow these steps:
       <dd>The tools that are necessary to compile the instructions you define in the Ansible Playbook, the source code, into executables that can run on your device. The toolchain includes a compiler, a linker, and run-time libraries.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel-new.yaml</dt>
+      <dt>ts-new.yaml</dt>
       <dd>The Ansible Playbook for new installations.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel-update.yaml</dt>
+      <dt>ts-update.yaml</dt>
       <dd>The Ansible Playbook for updates.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel.yaml</dt>
+      <dt>ts.yaml</dt>
       <dd></dd>
     </dlentry>
     <dlentry>
@@ -184,7 +184,7 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 Run the Ansible Playbook from your local machine by entering the following command:
 
 ```
-ansible-playbook -i hosts.yaml ts-rhel.yaml
+ansible-playbook -i hosts.yaml ts.yaml
 ```
 
 As the Ansible Playbook runs, it will perform these tasks:

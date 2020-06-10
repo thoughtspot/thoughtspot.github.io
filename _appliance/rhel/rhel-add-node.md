@@ -1,7 +1,7 @@
 ---
 title: [Add a node to a ThoughtSpot cluster on RHEL]
 summary: "You can easily configure an additional node for a ThoughtSpot cluster on RHEL."
-last_updated: 3/20/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,7 +29,7 @@ Follow the general steps for configuring the Ansible Playbook, either on [online
 Run the Ansible Playbook from your local machine by entering the following command:
 
 ```
-ansible-playbook -i new-host.yaml ts-rhel.yaml
+ansible-playbook -i new-host.yaml ts.yaml
 ```
 
 As the Ansible Playbook runs, it will perform the same tasks on the new node that it completed during the initial cluster set-up, but only for the new node. See [Run Ansible]({{ site.baseurl }}/appliance/rhel/rhel-online.html#run-ansible}). It will install all RPM [RPM packages]({{ site.baseurl }}/appliance/rhel/rhel-packages.html), configure the local user accounts for ThoughtSpot administration, install the ThoughtSpot CLI, and configure the node (create any necessary partitions, formatting the data disks, and running the `prepare disks` command).
