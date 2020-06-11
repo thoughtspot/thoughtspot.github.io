@@ -19,4 +19,4 @@ Additionally, learn how you can:
 - [Upgrade ThoughtSpot for Amazon Linux 2 to a new release]({{ site.baseurl }}/appliance/amazon-linux-2/al2-upgrade.html)
 - [Add a new node to an existing ThoughtSpot cluster in Amazon Linux 2]({{ site.baseurl }}/appliance/amazon-linux-2/al2-add-node.html)
 
-Finally, to see what additional 3rd-party RPM packages your ThoughtSpot installation includes by default, see [Packages installed with ThoughtSpot for Amazon Linux 2]({{ site.baseurl }}/appliance/amazon-linux-2/al2-packages.html).
+Finally, to see what additional 3rd-party Yum, python, and R packages your ThoughtSpot installation includes by default, see [Packages installed with ThoughtSpot for Amazon Linux 2]({{ site.baseurl }}/appliance/amazon-linux-2/al2-packages.html).

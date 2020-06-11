@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 6/10/2020
+last_updated: 6/11/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,17 +11,25 @@ permalink: /:collection/:path.html
 | &#10063; | [4. Enable the hosts to download Amazon Linux 2 packages](#enable-hosts) |
 | &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux or run it in permissive mode](#disable-selinux) |
-| &#10063; | [7. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
 
-Set up hosts for the ThoughtSpot cluster on Amazon Web Services. Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for the exact specification for the hosts: CPU, memory, and disks. Refer to [Set up AWS resources for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your AWS virtual machines. Ensure that your [AMI]({{ site.baseurl }}/appliance/aws/launch-an-instance.html#al2-ami) is an Amazon Linux 2 image.
+Set up hosts for the ThoughtSpot cluster on Amazon Web Services.
+
+1. Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for the exact specification for the hosts:
+* CPU
+* memory
+* disks
+2. Refer to [Set up AWS resources for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your AWS virtual machines.
+* Ensure that your [AMI]({{ site.baseurl }}/appliance/aws/launch-an-instance.html#al2-ami) is an Amazon Linux 2 image.
 
 {: id="aws-ssm"}
 ## [Optional] Set up AWS Systems Manager Agent
 
 If you plan to use the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, create a new IAM role while creating VMs. This IAM role must have an SSM policy to grant AWS SSM permission to perform actions on your instances. Refer to [Create an IAM instance profile for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html){:target="_blank"}.
+
+You must install the SSM agent on each node. Refer to [Manually install SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-manual-agent-install.html){:target="_blank"}, if the SSM agent is not already on each node.
 
 {: id="partition-hosts"}
 ## Partition the hosts
@@ -72,7 +80,7 @@ If the hosts of your ThoughtSpot cluster have access to an internal repository t
 **Repositories**
 
 {: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95-amzn`, `google-cloud-sdk`, and `azure-cli`.
+- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.
 
 {: id="python-repositories"}
 - **Python repository**: for Python, enable the `PyPI` repository.
@@ -88,10 +96,6 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux or run it in permissive mode
 ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
-
-{: id="linux-kernel-version"}
-## Linux kernel version
-Your Linux kernel must be on version 4.4 or later. 
 
 ## Next steps
 Next, [get ThoughtSpot artifacts]({{ site.baseurl }}/appliance/amazon-linux-2/al2-ts-artifacts.html).

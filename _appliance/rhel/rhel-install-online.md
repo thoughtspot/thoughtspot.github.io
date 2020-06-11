@@ -182,7 +182,7 @@ ansible-playbook -i hosts.yaml ts.yaml
 
 As the Ansible Playbook runs, it will perform these tasks:
 
-  1. Trigger the installation of [RPM packages]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)
+  1. Trigger the installation of [Yum, Python, and R packages]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)
   2. Configure the local user accounts that the ThoughtSpot application uses
   3. Install the ThoughtSpot CLI
   4. Configure all the nodes in the ThoughtSpot cluster:
