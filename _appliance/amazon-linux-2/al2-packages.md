@@ -1,11 +1,11 @@
 ---
 title: [Packages installed with ThoughtSpot for Amazon Linux 2]
-summary: "View the RPM packages necessary to deploy ThoughtSpot with Amazon Linux 2."
-last_updated: 6/10/2020
+summary: "View the packages necessary to deploy ThoughtSpot with Amazon Linux 2."
+last_updated: 6/11/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To successfully deploy ThoughtSpot in your organization, you must have the following RPM packages on each node of your ThoughtSpot cluster: yum, python 3, and R. When the Ansible playbook runs, it automatically installs them.
+To successfully deploy ThoughtSpot in your organization, you must have the following packages on each node of your ThoughtSpot cluster: yum, python 3, and R. When the Ansible playbook runs, it automatically installs them.
 
 ThoughtSpot works with the latest version of each package; see the minimum supported version.
 

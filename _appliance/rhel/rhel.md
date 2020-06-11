@@ -20,4 +20,4 @@ Additionally, learn how you can:
 - [Upgrade ThoughtSpot for RHEL to a new release]({{ site.baseurl }}/appliance/rhel/rhel-upgrade.html)
 - [Add a new node to an existing ThoughtSpot cluster in RHEL]({{ site.baseurl }}/appliance/rhel/rhel-add-node.html)
 
-Finally, to see what additional 3rd-party RPM packages your ThoughtSpot installation includes by default, see [Packages installed with ThoughtSpot for RHEL]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)
+Finally, to see what additional 3rd-party Yum, Python, and R packages your ThoughtSpot installation includes by default, see [Packages installed with ThoughtSpot for RHEL]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)

@@ -16,7 +16,14 @@ permalink: /:collection/:path.html
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
 
-Set up hosts for the ThoughtSpot cluster on Amazon Web Services. Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for the exact specification for the hosts: CPU, memory, and disks. Refer to [Set up AWS resources for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your AWS virtual machines. Ensure that your [AMI]({{ site.baseurl }}/appliance/aws/launch-an-instance.html#al2-ami) is an Amazon Linux 2 image.
+Set up hosts for the ThoughtSpot cluster on Amazon Web Services.
+
+1. Refer to [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html) for the exact specification for the hosts:
+* CPU
+* memory
+* disks
+2. Refer to [Set up AWS resources for ThoughtSpot]({{ site.baseurl }}/appliance/aws/launch-an-instance.html) to create and launch your AWS virtual machines.
+* Ensure that your [AMI]({{ site.baseurl }}/appliance/aws/launch-an-instance.html#al2-ami) is an Amazon Linux 2 image.
 
 {: id="aws-ssm"}
 ## [Optional] Set up AWS Systems Manager Agent
@@ -91,7 +98,7 @@ ThoughtSpot does not support policies that enforce SELinux. We recommend that yo
 
 {: id="linux-kernel-version"}
 ## Linux kernel version
-Your Linux kernel must be on version 4.4 or later. 
+Your Linux kernel must be on version 4.4 or later.
 
 ## Next steps
 Next, [get ThoughtSpot artifacts]({{ site.baseurl }}/appliance/amazon-linux-2/al2-ts-artifacts.html).

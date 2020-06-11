@@ -1,5 +1,5 @@
 <table>
-<tr><th>Python 2 package</th><th>Minimum version</th></tr>
+<tr><th>Python 2 package</th><th>Version</th></tr>
 <tr><td><code>setuptools</code></td><td>27.1.2</td></tr>
 <tr><td><code>aws-cfn-bootstrap</code></td><td>1.4.post31</td></tr>
 <tr><td><code>awscli</code></td><td>1.11.105</td></tr>
