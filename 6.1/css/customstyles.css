@@ -520,11 +520,24 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 
-.nav li > a > span:after {
-    content: '\25be';
+.nav li > a > span:before {
+    content: '\25B8';
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.nav li.active > a > span:after {
-    content: '\25b4';
+
+.nav ul li ul li > a > span:before {
+    content: '\25B8';
+    position: absolute;
+    left: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.nav li.active > a > span::before {
+    content: '\25be';
 }
 
 .nav a:hover, .nav li.active > a {
@@ -560,19 +573,26 @@ ul#mysidebar {
 
 /*Level three list customization*/
 .nav ul li ul li ul li {
-  padding-left:15px;
+  padding-left:25px;
   background-color: #FAFAFA;
+}
+.nav ul li ul li ul li a {
+  padding-left:12px;
 }
 
 /*Level two lists customization*/
 .nav ul li ul li {
   background-color: #FAFAFA;
-  padding-left:5px;
+  padding-left:10px;
 }
 
+.nav ul li ul li a {
+  padding-left:27px;
+}
 
+/* tag for adjusting space between navbar triangle and text */
 .nav li a {
-    padding-right:10px;
+    padding-left:28px;
 }
 
 .nav li a:hover {
@@ -585,7 +605,7 @@ ul#mysidebar {
 
 .nav ul li a {
     border-top:1px solid whitesmoke;
-    /*padding-left:10px;*/
+    padding-left:27px;
 }
 /* end sidebar */
 
