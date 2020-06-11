@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 6/10/2020
+last_updated: 6/11/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -30,9 +30,8 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 
 {: id="tmp"}
 ## Prepare the `/tmp` disk
-1. Run the following script to set the disk name:
+1. Declare the bash variables:
     ```
-    set -e
     DISK=dev/<disk_name>
     PART=$<DISK>1
     ```
@@ -77,7 +76,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the following command: <code>current_tarball-location cp new_tarball_path ./</code>. For example, <code>aws s3 cp s3://example_path/6.1.1-2.offline.ansible.tar.gz ./</code>.</p> </li>
+  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the following command. If the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p> </li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
@@ -87,7 +86,7 @@ To set up the Ansible, follow these steps:
    </dlentry>
     <dlentry>
       <dt>customize.sh</dt>
-      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on.</dd>
+      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on. Additionally, you can include the <code>prepare_disks</code> script here. Add the following line to the <code>customize.sh</code> file: <code>sudo /usr/local/scaligent/bin/prepare_disks.sh</code>.</dd>
     </dlentry>
     <dlentry>
       <dt>hosts.sample</dt>
@@ -237,9 +236,14 @@ As the Ansible Playbook runs, it performs these tasks:
   3. Install the ThoughtSpot CLI
   4. Configure all the nodes in the ThoughtSpot cluster:
      - Format and create export partitions, if they do not exist
-     - Format the data disks, and run `prepare disks`
 
-After the Ansible Playbook finishes, your hosts are ready for installing the ThoughtSpot application.
+After the Ansible Playbook finishes, run the `prepare_disks` script, if you did not include it in the `customize.sh` file:
+
+```
+sudo /usr/local/scaligent/bin/prepare_disks.sh
+```
+
+Your hosts are now ready for installing the ThoughtSpot application.
 
 {: id="install-thoughtspot"}
 ## Install the ThoughtSpot cluster and the application
