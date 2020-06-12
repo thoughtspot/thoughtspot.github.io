@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on online clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 online clusters."
-last_updated: 6/11/2020
+last_updated: 6/12/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -60,7 +60,6 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 
 7. Create a working directory for Ansible:
     ```
-    set -e
     WORKDIR=/tmp/ansible
     rm -rf $WORKDIR
     mkdir -p $WORKDIR
@@ -74,7 +73,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the following command. If the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p></li>
+  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the <code>cp</code> command. For example, if the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p> <p>Note that you only need to copy the tarball to one node.</p></li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
@@ -135,12 +134,12 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
     </dlentry>
     <dlentry id="admin_uid">
       <dt>admin_uid</dt>
-      <dd>The admin user ID parameter. Use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br/>
+      <dd>The admin user ID parameter. If you are using <code>ssh</code> instead of AWS SSM, use the default values. If you are using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value. Note that the <code>thoughtspot</code> user uses <code>1002</code>, so you cannot use <code>1001</code> or <code>1002</code>.<br/>
 </dd>
     </dlentry>
     <dlentry id="admin-gid">
       <dt>admin_gid</dt>
-      <dd>The admin user group ID. Use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br/>
+      <dd>The admin user group ID. If you are using <code>ssh</code> instead of AWS SSM, use the default values. If you are using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value. Note that the <code>thoughtspot</code> user uses <code>1002</code>, so you cannot use <code>1001</code> or <code>1002</code>.<br/>
 </dd>
     </dlentry>
     <dlentry id="ssh_user">
@@ -196,7 +195,7 @@ As the Ansible Playbook runs, it will perform these tasks:
   4. Configure all the nodes in the ThoughtSpot cluster:
      - Format and create export partitions, if they do not exist
 
-After the Ansible Playbook finishes, run the `prepare_disks` script, if you did not include it in the `customize.sh` file:
+After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file:
 
 ```
 sudo /usr/local/scaligent/bin/prepare_disks.sh
