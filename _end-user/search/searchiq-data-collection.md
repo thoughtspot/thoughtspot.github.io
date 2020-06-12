@@ -56,7 +56,7 @@ Yes, we use a third party service provider, Mixpanel (https://mixpanel.com ), to
 
 - The data is stored locally on the customer cluster and is accessible only by customer admins and ThoughtSpot employees authorized by the customer.
 
-- The date is stored on Mixpanel servers.
+- The data is stored on Mixpanel servers.
 
 **How is this data secured?**
 
