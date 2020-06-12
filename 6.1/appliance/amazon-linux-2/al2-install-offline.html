@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/appliance/amazon-linux-2/al2-install-offline.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-11T14:49:45-07:00" />
+<meta property="article:published_time" content="2020-06-12T14:33:12-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]","dateModified":"2020-06-11T14:49:45-07:00","url":"https://docs.thoughtspot.com/6.1/appliance/amazon-linux-2/al2-install-offline.html","datePublished":"2020-06-11T14:49:45-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/amazon-linux-2/al2-install-offline.html"},"description":"Before starting the install, complete the pre-installation steps.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]","dateModified":"2020-06-12T14:33:12-07:00","url":"https://docs.thoughtspot.com/6.1/appliance/amazon-linux-2/al2-install-offline.html","datePublished":"2020-06-12T14:33:12-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/amazon-linux-2/al2-install-offline.html"},"description":"Before starting the install, complete the pre-installation steps.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3736,7 +3736,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    8 minutes
+    9 minutes
   
 </span>
  -->
@@ -3795,9 +3795,8 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="tmp">Prepare the <code class="language-plaintext highlighter-rouge">/tmp</code> disk</h2>
 <ol>
-  <li>Run the following script to set the disk name:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> set -e
- DISK=dev/&lt;disk_name&gt;
+  <li>Declare the bash variables:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> DISK=dev/&lt;disk_name&gt;
  PART=$&lt;DISK&gt;1
 </code></pre></div>    </div>
   </li>
@@ -3826,8 +3825,7 @@ $('#toc').on('click', 'a', function() {
 </code></pre></div>    </div>
   </li>
   <li>Create a working directory for Ansible:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> set -e
- WORKDIR=/tmp/ansible
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> WORKDIR=/tmp/ansible
  rm -rf $WORKDIR
  mkdir -p $WORKDIR
  cd $WORKDIR
@@ -3840,7 +3838,7 @@ $('#toc').on('click', 'a', function() {
 <p>To set up the Ansible, follow these steps:</p>
 
 <ol>
-  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the following command: <code>current_tarball-location cp new_tarball_path ./</code>. For example, <code>aws s3 cp s3://example_path/6.1.1-2.offline.ansible.tar.gz ./</code>.</p> </li>
+  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the <code>cp</code> command. For example, if the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p> <p>Note that you only need to copy the tarball to one node.&lt;/code&gt;.</p> </li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br />
    <dl>
@@ -3850,7 +3848,7 @@ $('#toc').on('click', 'a', function() {
    </dlentry>
     <dlentry>
       <dt>customize.sh</dt>
-      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on.</dd>
+      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on. Additionally, you can include the <code>prepare_disks</code> script here. Add the following line to the <code>customize.sh</code> file: <code>sudo /usr/local/scaligent/bin/prepare_disks.sh</code>.</dd>
     </dlentry>
     <dlentry>
       <dt>hosts.sample</dt>
@@ -3933,12 +3931,12 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
     </dlentry>
     <dlentry id="admin_uid">
       <dt>admin_uid</dt>
-      <dd>The admin user ID parameter. If using ssh, use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br />
+      <dd>The admin user ID parameter. If you are using <code>ssh</code> instead of AWS SSM, use the default values. If you are using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value. Note that the <code>thoughtspot</code> user uses <code>1002</code>, so you cannot use <code>1001</code> or <code>1002</code>.<br />
 </dd>
     </dlentry>
     <dlentry id="admin-gid">
       <dt>admin_gid</dt>
-      <dd>The admin user group ID. Use the default values. If using ssh, use the default values. If using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value.<br />
+      <dd>The admin user group ID. If you are using <code>ssh</code> instead of AWS SSM, use the default values. If you are using SSM, the <code>ssm_user</code> uses the default value, <code>1001</code>. You must choose a new value. Note that the <code>thoughtspot</code> user uses <code>1002</code>, so you cannot use <code>1001</code> or <code>1002</code>.<br />
 </dd>
     </dlentry>
     <dlentry id="ssh_user">
@@ -3993,18 +3991,22 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
 <p>As the Ansible Playbook runs, it performs these tasks:</p>
 
 <ol>
-  <li>Trigger the installation of <a href="/6.1/appliance/amazon-linux-2/al2-packages.html">RPM packages</a>.</li>
+  <li>Trigger the installation of <a href="/6.1/appliance/amazon-linux-2/al2-packages.html">Yum, Python, and R packages</a>.</li>
   <li>Configure the local user accounts that the ThoughtSpot application uses</li>
   <li>Install the ThoughtSpot CLI</li>
   <li>Configure all the nodes in the ThoughtSpot cluster:
     <ul>
       <li>Format and create export partitions, if they do not exist</li>
-      <li>Format the data disks, and run <code class="language-plaintext highlighter-rouge">prepare disks</code></li>
     </ul>
   </li>
 </ol>
 
-<p>After the Ansible Playbook finishes, your hosts are ready for installing the ThoughtSpot application.</p>
+<p>After the Ansible Playbook finishes, run the <code class="language-plaintext highlighter-rouge">prepare_disks</code> script on every node, if you did not include it in the <code class="language-plaintext highlighter-rouge">customize.sh</code> file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /usr/local/scaligent/bin/prepare_disks.sh
+</code></pre></div></div>
+
+<p>Your hosts are now ready for installing the ThoughtSpot application.</p>
 
 <h2 id="install-thoughtspot">Install the ThoughtSpot cluster and the application</h2>
 
@@ -4044,9 +4046,9 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 11, 2020 <br />
+        Generated: Jun 12, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 6/10/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 6/12/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
