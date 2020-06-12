@@ -34,14 +34,14 @@ table.scheduler, th, td {
 }
 
 small-sidebar-version-nav {
-    font-size: 80%;
+    font-size: 80%
     margin-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
-    font-size: 80%;
+    font-size: 80%
     margin-left: 5px;
     margin-bottom: 25px;
     text-decoration: underline;
@@ -376,7 +376,7 @@ div.gsc-control-cse {
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    top: 40px; /* if you change anything about the nav, must reset the top and left values here.*/
     left: 20px;
     z-index: -1;
     width:223px;
@@ -814,20 +814,6 @@ li.activeSeries {
     color: #444;
 }
 
-.alert-access {
-    color: #234142;
-    background-color: #E4F7F8;
-    border-color: #85DCDF
-}
-
-.alert-access hr {
-    border-top-color: #A0E4E7
-}
-
-.alert-access .alert-link {
-    color: #3C6C6F
-}
-
 div.alert code, h2 code {
     background-color: transparent !important;
     color: #333 !important;
@@ -941,6 +927,26 @@ table code {
   background-color: transparent !important;;
   color: #333 !important;}
 
+code.api-method-post {
+  background-color: #10a54a !important;
+  color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
+}
+
+code.api-method-get {
+  background-color: #0f6ab4 !important;
+  color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
+}
+
 .highlight .err {
     color: #a61717;
     background-color: transparent !important;
@@ -972,6 +978,19 @@ code {
     background-color: #f5f5f5 !important;
 }
 
+tab-code {
+  background-color: #17202A !important;
+  color: white !important;
+  width: 150px !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 7px 0 4px;
+  text-indent: 70px;
+}
+
+
+
+
 #json-box-container pre {
     margin: 0px;
 }
@@ -979,6 +998,13 @@ code {
 .video-js {
     margin: 30px 0px;
 }
+/* hidden to fix Wistia video embed issue
+video {
+    display: block;
+    margin: 30px 0px;
+    border: 1px solid #c0c0c0;
+}
+*/
 
 p.required, p.dataType {display: block; color: #c0c0c0; font-size: 80%; margin-left:4px;}
 
