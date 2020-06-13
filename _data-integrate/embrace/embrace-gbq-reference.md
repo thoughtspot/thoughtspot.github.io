@@ -8,10 +8,24 @@ permalink: /:collection/:path.html
 
 Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
 
- - **Connection name**: Mandatory. Enter a name for your BigQuery connection.
- - **Connection description**: Optional. Provide a short description about the connection.
- - **Project id**: Mandatory. Enter the project ID associated with the BigQuery database.
- - **Service account**: Mandatory. Enter the service account associated with the BigQuery database. See [set up service account](#service-account).
+<dl id="embrace-gbq-ref">
+  <dlentry id="embrace-gbq-ref-connection-name">
+    <dt>Connection name</dt>
+    <dd>Enter a new BigQuery connection name.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-connection-description">
+    <dt>Connection description</dt>
+    <dd>Provide a short description of the connection.<br/>Optional field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-project-id">
+    <dt>Project id</dt>
+    <dd>Enter the project ID associated with the BigQuery database.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-service-account">
+    <dt>Service account</dt>
+    <dd>Enter the service account associated with the BigQuery database.<br/>Mandatory field.</dd>
+  </dlentry>
+</dl>  
 
 {: id="custom-role"}
 ## Create a custom role
@@ -27,19 +41,21 @@ In order to use ThoughtSpot Embrace to query your GBQ database, you must create 
   - Select a Role launch stage.
   - Click **+ADD PERMISSIONS**.
 6. In the Add permissions window, select the following permissions:
-- bigquery.config.get
-- bigquery.datasets.getIamPolicy
-- bigquery.jobs.create
-- bigquery.jobs.list
-- bigquery.savedqueries.get
-- bigquery.savedqueries.list
-- bigquery.tables.get
-- bigquery.tables.getData
-- bigquery.tables.list
-- resourcemanager.projects.get
+   - bigquery.config.get
+   - bigquery.datasets.getIamPolicy
+   - bigquery.jobs.create
+   - bigquery.jobs.list
+   - bigquery.savedqueries.get
+   - bigquery.savedqueries.list
+   - bigquery.tables.get
+   - bigquery.tables.getData
+   - bigquery.tables.list
+   - resourcemanager.projects.get
 
    ![]({{ site.baseurl }}/images/gbq-role-permissions.png)
+
 7. Click **ADD**.
+
 8. Click **CREATE**.
 
 {: id="service-account"}
