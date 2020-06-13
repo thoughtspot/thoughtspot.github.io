@@ -25,6 +25,7 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
     <dt>Service account</dt>
     <dd>Enter the service account associated with the BigQuery database.<br/>Mandatory field.</dd>
   </dlentry>  
+</dl>
 
 ## Set up service account
 You may already have a service account for GBQ with the proper permissions in place. If not, follow these steps to create a service account.
