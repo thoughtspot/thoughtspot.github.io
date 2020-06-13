@@ -8,12 +8,24 @@ permalink: /:collection/:path.html
 
 Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
 
- - **Connection name**: Mandatory. Enter a name for your BigQuery connection.
- - **Connection description**: Optional. Provide a short description about the connection.
- - **Project id**: Mandatory. Enter the project ID associated with the BigQuery database.
- - **Service account**: Mandatory. Enter the service account associated with the BigQuery database. See [set up service account](#service-account).
+<dl id="embrace-gbq-ref">
+  <dlentry id="embrace-gbq-ref-connection-name">
+    <dt>Connection name</dt>
+    <dd>Enter a new BigQuery connection name.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-connection-description">
+    <dt>Connection description</dt>
+    <dd>Provide a short description of the connection.<br/>Optional field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-project-id">
+    <dt>Project id</dt>
+    <dd>Enter the project ID associated with the BigQuery database.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-service-account">
+    <dt>Service account</dt>
+    <dd>Enter the service account associated with the BigQuery database.<br/>Mandatory field.</dd>
+  </dlentry>  
 
-{: id="service-account"}
 ## Set up service account
 You may already have a service account for GBQ with the proper permissions in place. If not, follow these steps to create a service account.
 1. Navigate to [console.cloud.google.com](https://console.cloud.google.com), and sign in.
