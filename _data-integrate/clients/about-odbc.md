@@ -91,7 +91,7 @@ are what you require.</p>
 ThoughtSpot data types.</p>
 
 
-| Source SQL Data Types          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
+| Source SQL Data Types          |BOOL |INT |BIGINT |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
 |-------------------------------|-----|------|------|-------|------|------|-----|------|--------|
 |`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
 |`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
