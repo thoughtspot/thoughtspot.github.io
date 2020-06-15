@@ -34,9 +34,11 @@ The ThoughtSpot AMI has specific applications on a CentOS-based image. The AMI i
 ### RHEL AMI
 This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
 
+<!--
 {: id='al2-ami'}
 ### Amazon Linux 2 AMI
 This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.1.1, you can also deploy ThoughtSpot on AWS using Amazon Linux 2, allowing you to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. To install ThoughtSpot using Amazon Linux 2, choose your own Amazon Linux 2-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [Amazon Linux 2 deployment guide]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html) after you launch your virtual machines.
+-->
 
 {: id="prerequisites"}
 ## Prerequisites
