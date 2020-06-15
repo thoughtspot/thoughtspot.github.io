@@ -12,7 +12,7 @@ There are two ways to create relationships between tables:
 1.  [Create a constraint using TQL]({{ site.baseurl }}/admin/loading/constraints.html#)
 2.  [Create a relationship through the web interface.](create-new-relationship.html#)
 
-The two methods create the same kind of relationship. When creating a relationship between two tables, the columns that form the link must have the same data type.  For example, you can build a relationship between two columns that use the `INT32` data type. You can also generate a script in TQL that contains all relationships, both the ones create in the web interface, and the ones defined through TQL.
+The two methods create the same kind of relationship. When creating a relationship between two tables, the columns that form the link must have the same data type.  For example, you can build a relationship between two columns that use the `INT` data type. You can also generate a script in TQL that contains all relationships, both the ones create in the web interface, and the ones defined through TQL.
 
 These relationships can be managed either in TQL, or by going to the **Relationships** page when viewing data in the **Data Modeling** section in the ThoughtSpot application. You can view, modify, or delete relationships in either place.
 
