@@ -2,7 +2,7 @@
 title: [Data types]
 
 
-last_updated: 4/21/2020
+last_updated: 6/15/2020
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -41,8 +41,8 @@ The tables you create to receive the data must have the same number of columns a
   </tr>
   <tr>
     <td>Integer</td>
-    <td><code>INT32</code> or <code>INT64</code></td>
-    <td><code>INT32</code> holds 32 bits. <code>INT64</code> holds 64 bits. <code>INT32</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>INT64</code> has a range of <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
+    <td><code>INT</code> or <code>BIGINT</code></td>
+    <td><code>INT</code> holds 32 bits. <code>BIGINT</code> holds 64 bits. <code>INT</code> has a range of <code>–2,147,483,648</code> to <code>2,147,483,647</code>. <code>BIGINT</code> has a range of <code>–9,223,372,036,854,775,808</code> to <code>9,223,372,036,854,775,807</code>.</td>
   </tr>
   <tr>
     <td>Date or time</td>
