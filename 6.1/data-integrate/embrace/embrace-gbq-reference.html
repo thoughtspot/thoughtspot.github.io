@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-gbq-reference.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-12T14:33:12-07:00" />
+<meta property="article:published_time" content="2020-06-15T11:06:11-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“BigQuery connection reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“BigQuery connection reference”]","dateModified":"2020-06-12T14:33:12-07:00","url":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-gbq-reference.html","datePublished":"2020-06-12T14:33:12-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-gbq-reference.html"},"description":"Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“BigQuery connection reference”]","dateModified":"2020-06-15T11:06:11-07:00","url":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-gbq-reference.html","datePublished":"2020-06-15T11:06:11-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-gbq-reference.html"},"description":"Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3745,12 +3745,24 @@ $('#toc').on('click', 'a', function() {
 
   <p>Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.</p>
 
-<ul>
-  <li><strong>Connection name</strong>: Mandatory. Enter a name for your BigQuery connection.</li>
-  <li><strong>Connection description</strong>: Optional. Provide a short description about the connection.</li>
-  <li><strong>Project id</strong>: Mandatory. Enter the project ID associated with the BigQuery database.</li>
-  <li><strong>Service account</strong>: Mandatory. Enter the service account associated with the BigQuery database. See <a href="#service-account">set up service account</a>.</li>
-</ul>
+<dl id="embrace-gbq-ref">
+  <dlentry id="embrace-gbq-ref-connection-name">
+    <dt>Connection name</dt>
+    <dd>Enter a new BigQuery connection name.<br />Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-connection-description">
+    <dt>Connection description</dt>
+    <dd>Provide a short description of the connection.<br />Optional field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-project-id">
+    <dt>Project id</dt>
+    <dd>Enter the project ID associated with the BigQuery database.<br />Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-ref-service-account">
+    <dt>Service account</dt>
+    <dd>Enter the service account associated with the BigQuery database.<br />Mandatory field.</dd>
+  </dlentry>
+</dl>
 
 <h2 id="custom-role">Create a custom role</h2>
 <p>In order to use ThoughtSpot Embrace to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.</p>
@@ -3784,7 +3796,9 @@ $('#toc').on('click', 'a', function() {
 
     <p><img src="/6.1/images/gbq-role-permissions.png" alt="" /></p>
   </li>
-  <li>Click <strong>ADD</strong>.</li>
+  <li>
+    <p>Click <strong>ADD</strong>.</p>
+  </li>
   <li>Click <strong>CREATE</strong>.</li>
 </ol>
 
@@ -3861,7 +3875,7 @@ Your project should be listed on the left side of the page under the search box.
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 12, 2020 <br />
+        Generated: Jun 15, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 01/30/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
