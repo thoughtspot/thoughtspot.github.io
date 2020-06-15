@@ -12,7 +12,7 @@ There are two ways to create relationships between tables:
 1.  [Create a constraint using TQL.]({{ site.baseurl }}/admin/loading/constraints.html#)
 2.  [Create a relationship through the web interface.](create-new-relationship.html#)
 
-The two methods create the same kind of relationship both from an end user perspective and an administrative perspective. When creating a relationship between two tables, the columns that form the link must be the exact same data type.  For example, a column of type `INT32` to another `INT32` column.
+The two methods create the same kind of relationship both from an end user perspective and an administrative perspective. When creating a relationship between two tables, the columns that form the link must be the exact same data type.  For example, a column of type `INT` to another `INT` column.
 
 Both types of relationships exist within the database. You can also generate a script in TQL that contains all relationships, both the ones create in the web interface and the ones created in TQL.
 
