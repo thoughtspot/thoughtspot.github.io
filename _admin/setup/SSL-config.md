@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 5/6/2020
+last_updated: 6/15/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,9 +25,47 @@ To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to acco
 
 {: id="ssl-configure"}
 ## Configure SSL for web traffic
-To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
+To add SSL and enable HTTPS in ThoughtSpot, generate the [Certificate Signing Request (CSR)](#csr) and obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
 
 You can then proceed to [Configure SSL using tscli](#ssl-configure-tscli), and [Test the SSL certificate](#ssl-configure-test).
+
+{: id="csr"}
+### Certificate Signing Request
+When you generate a CSR, you handle sensitive data. Therefore, ThoughtSpot recommends that its customers generate their own CSRs.
+
+You can generate a CSR in several ways. Most often, you generate a CSR and a new private key [at the same time](#csr-new-private-key). If you already have a private key, [use it to generate a CSR](#csr-existing-private-key).
+
+{: id="csr-new-private-key"}
+Follow these steps to generate a CSR and a private key. You need a computer you can run Linux commands on, and a recent version of *openssl*.
+
+1. `ssh` into one of your ThoughtSpot nodes.
+    ```
+    ssh admin@<node_IP>
+    ```
+2. Run the command to generate a CSR and private key pair:
+    ```
+    openssl req -new -newkey rsa:2048 -nodes -out csr.pem -keyout pk.key[-subj "/key1=value1/key2=value with space/"]
+    ```
+
+    Note the following parameters:
+    * ThoughtSpot supports a 2048 or 4096 bit key.
+    * `subj`: a common subject. Logically equivalent to the `-dname` property of *keytool*. Alternatively, you can skip this flag, and `openssl` prompts you to enter this information interactively.
+    * Optionally, run `add-multivalue-rdn` to allow multiple values to be set for the same key.
+    * Run `man req` for more details.
+
+{: id="csr-existing-private-key"}
+If you already have a private key, you can use it to generate a CSR. Follow these steps to generate a CSR with an existing private key:
+
+1. `ssh` into one of your ThoughtSpot nodes.
+    ```
+    ssh admin@<node_IP>
+    ```
+2. Run the command to generate a CSR and private key pair:
+    ```
+    openssl req -new -key <private_key_file> -nodes -out csr.pem[-subj "/key1=value1/key2=value with space/"]
+    ```
+
+    Specify the existing private key file. Refer to the parameters listed above.
 
 {: id="ssl-certificate-chain"}
 ### SSL certificate chain
