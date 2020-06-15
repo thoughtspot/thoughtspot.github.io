@@ -19,7 +19,7 @@ Columns that can be designated as `Geo` columns need to contain text (`VARCHAR`)
 data unless they contain latitude/longitude data. Latitude and longitude columns
 can contain numeric data (`DOUBLE`) or text.
 
-If you import `geo` columns as numeric values, the data type defaults to `INT64`. ThoughtSpot recommends that you import `geo` columns, such as zipcodes as text values. The `column type` defaults to  `measure` when you import numeric values. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. For geo data, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
+If you import `geo` columns as numeric values, the data type defaults to `BIGINT`. ThoughtSpot recommends that you import `geo` columns, such as zipcodes as text values. The `column type` defaults to  `measure` when you import numeric values. In ThoughtSpot, a `measure` is a numeric value that you can you use in mathematical formulas. For geo data, you ***must*** change the `column type` to `attribute` and specify `additive` as `no`.
 
 If you are using a column with the data type `DOUBLE` for latitude and
 longitude, change the following settings for those
