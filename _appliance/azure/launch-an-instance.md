@@ -126,13 +126,14 @@ _Prerequisite_: To log in to the VM, you need the private key that is available 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
    - To see the private IP, select **more services** from the Microsoft Azure homepage. Select **Networking** from the list on the left side of the screen.
 
-2. In a terminal application, connect to the VM through SSH. Enter the private key provided for the admin user.
+2. In a terminal application, connect to the VM through SSH.
 
-   - You must file a support ticket to obtain this private key; it is necessary for the first login.
-   - This key is different from the credentials, or the public keys supplied in earlier steps, which do not work in this context.
+Log in as the user specified in the previous steps and use the private key that belongs to the public key specified for that user.
+
 ```
-   $ ssh -i <path_to_private_key> admin@<public_VM_IP>
-```   
+   $ ssh -i <path_to_private_key> <the_user_specified_when_created_the_vm>@<public_VM_IP>
+```
+{% include tip.html content="If the SSH key is not accepted or lost, it can be reset by going to Reset password under Support + troubleshooting on the Azure Virtual Machine page. Please note this only works before the cluster had been deployed." %}  
 
 3. Update the password for both the `admin` and the `thoughtspot` users.<br>
   The command prompts you to type in a new password, and then to confirm the password.
@@ -208,7 +209,7 @@ keep a backup to copy after any subsequent cluster creation or update." %}
 ```
     ssh admin@<VM-IP>
 ```
-1. Update the VM's hostname:
+2. Update the VM's hostname:
 
    ```
    $ sudo hostnamectl set-hostname <HOSTNAME>
@@ -219,13 +220,10 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
    sudo hostnamectl set-hostname <HOSTNAME> --static
    ```
-
-2. Update `/etc/sysconfig/network-scripts/ifcfg-eth0` with the IP and hostname:
+3. Create `/etc/sysconfig/network-scripts/ifcfg-eth0`:
 
    ```
-   $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
-
-   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
+$ sudo sh -c 'echo "DEVICE=eth0" > /etc/sysconfig/network-scripts/ifcfg-eth0'
    ```
 
 3. Modify permissions for `/etc/sysconfig/network-scripts/ifcfg-eth0`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
