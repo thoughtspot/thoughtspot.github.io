@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -3545,12 +3545,12 @@ settings and rules.</p>
   <tr>
     <td>Tables</td>
     <td>The source data tables that have been loaded using ThoughtSpot Loader.</td>
-    <td>Administrator users have access to source tables. They can share a table with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Administrator users have access to source tables. They can share a table with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Columns</td>
     <td>The columns in the source data tables that have been loaded using ThoughtSpot Loader.</td>
-    <td>Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Administrator users have access to columns in the source tables. They can share selected columns with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Rows</td>
@@ -3560,33 +3560,33 @@ settings and rules.</p>
   <tr>
     <td>Imported data</td>
     <td>Data that was imported using a Web browser.</td>
-    <td>Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See [Share tables and columns](share-source-tables.html#)</td>
+    <td>Only the user who imported the data (and any user with administrator privileges) has access to it by default. They can share a table (or selected columns) with other users or groups. See <a href="share-source-tables.html">Sharing tables and columns</a>.</td>
   </tr>
   <tr>
     <td>Worksheets</td>
     <td>A worksheet created using a Web browser.</td>
-    <td>Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See [Share worksheets](share-worksheets.html)</td>
+    <td>Only the creator of the worksheet (and any user with administrator privileges) has access to it by default. They can share a worksheet with other users or groups. See <a href="share-worksheets.html">Share Worksheets</a>.</td>
   </tr>
   <tr>
     <td>Pinboards</td>
     <td>A pinboard of saved search results.</td>
-    <td>Anyone who can view a pinboard can share it. See [Share a pinboard](share-pinboards.html)</td>
+    <td>Anyone who can view a pinboard can share it. See <a href="share-pinboards.html">Share Pinboards</a>.</td>
   </tr>
 </table>
 
-<h2 id="understanding-shareable">Understanding SHAREABLE</h2>
+<h2 id="understanding-sharable">Understanding SHARABLE</h2>
 
-<p>When you share an object, only the users and groups that have <strong>SHAREABLE</strong> set
+<p>When you share an object, only the users and groups that have <strong>SHARABLE</strong> set
 for the <strong>Sharing visibility</strong> option appear on the dialog.</p>
 
 <p><img src="/5.1/images/share_dialog.png" alt="" title="Share an object" /></p>
 
 <p>Only users in the <strong>Administrators</strong> group or users with <strong>Admin</strong> privileges
-can share with groups marked as <strong>NOT SHAREABLE</strong>. Members of a group with
+can share with groups marked as <strong>NOT SHARABLE</strong>. Members of a group with
 <strong>Can share with all users</strong> authorization can also share with groups marked as
-<strong>NOT SHAREABLE</strong>.</p>
+<strong>NOT SHARABLE</strong>.</p>
 
-<p>Users in groups marked <strong>NOT SHAREABLE</strong> cannot share objects among themselves.
+<p>Users in groups marked <strong>NOT SHARABLE</strong> cannot share objects among themselves.
 In multi-tenant scenarios, admins can create groups that bring together portions
 of two non-share groups so that they can share. For example, the members of
 group C can share even if they belong to other groups that cannot.</p>
@@ -3598,7 +3598,7 @@ objects users see based on conditions you set at the level of row values in base
 data tables.</p>
 
 <p>You may find it useful to create groups for RLS. To prevent these groups from
-appearing in the <strong>Share</strong> dialog, create a <strong>NOT SHAREABLE</strong> group with a single
+appearing in the <strong>Share</strong> dialog, create a <strong>NOT SHARABLE</strong> group with a single
 user and an RLS group with another single user (1-to-1).</p>
 
 <h2 id="related-information">Related information</h2>
@@ -3647,7 +3647,7 @@ user and an RLS group with another single user (1-to-1).</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Jun 16, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
