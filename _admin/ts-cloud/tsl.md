@@ -542,7 +542,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="oper">
     <dt>oper</dt>
-    <dd>The operator of the Pinboard filter, either <code>in</code> or <code>not in</code>.</dd>
+    <dd>The operator of the Pinboard filter. Accepted operators are <code>in</code>, <code>not in</code>, <code>between</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
   </dlentry>
 
   <dlentry id="ordered_column_ids">
