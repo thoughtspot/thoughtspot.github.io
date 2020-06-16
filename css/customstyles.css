@@ -34,14 +34,14 @@ table.scheduler, th, td {
 }
 
 small-sidebar-version-nav {
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     margin-bottom: 25px;
     text-decoration: underline;
@@ -520,11 +520,21 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 
-.nav li > a > span:after {
-    content: '\25be';
+.nav li > a > span:before {
+    content: '\25B8';
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.nav li.active > a > span:after {
-    content: '\25b4';
+
+.nav ul li ul li > a > span:before {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.nav li.active > a > span::before {
+    content: '\25be';
 }
 
 .nav a:hover, .nav li.active > a {
@@ -560,19 +570,26 @@ ul#mysidebar {
 
 /*Level three list customization*/
 .nav ul li ul li ul li {
-  padding-left:15px;
+  padding-left:25px;
   background-color: #FAFAFA;
+}
+.nav ul li ul li ul li a {
+  padding-left:12px;
 }
 
 /*Level two lists customization*/
 .nav ul li ul li {
   background-color: #FAFAFA;
-  padding-left:5px;
+  padding-left:10px;
 }
 
+.nav ul li ul li a {
+  padding-left:27px;
+}
 
+/* tag for adjusting space between navbar triangle and text */
 .nav li a {
-    padding-right:10px;
+    padding-left:28px;
 }
 
 .nav li a:hover {
@@ -585,7 +602,7 @@ ul#mysidebar {
 
 .nav ul li a {
     border-top:1px solid whitesmoke;
-    /*padding-left:10px;*/
+    padding-left:27px;
 }
 /* end sidebar */
 
@@ -814,6 +831,20 @@ li.activeSeries {
     color: #444;
 }
 
+.alert-access {
+    color: #234142;
+    background-color: #E4F7F8;
+    border-color: #85DCDF
+}
+
+.alert-access hr {
+    border-top-color: #A0E4E7
+}
+
+.alert-access .alert-link {
+    color: #3C6C6F
+}
+
 div.alert code, h2 code {
     background-color: transparent !important;
     color: #333 !important;
@@ -965,13 +996,13 @@ code {
 .video-js {
     margin: 30px 0px;
 }
-
+/*
 video {
     display: block;
     margin: 30px 0px;
     border: 1px solid #c0c0c0;
 }
-
+*/
 
 p.required, p.dataType {display: block; color: #c0c0c0; font-size: 80%; margin-left:4px;}
 
