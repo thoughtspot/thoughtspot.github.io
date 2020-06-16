@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/setup/SSL-config.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-11T20:08:43-07:00" />
+<meta property="article:published_time" content="2020-06-15T20:10:03-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Configure SSL”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Configure SSL”]","dateModified":"2020-06-11T20:08:43-07:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/SSL-config.html","datePublished":"2020-06-11T20:08:43-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/SSL-config.html"},"description":"You can use your own SSL certificate to secure ThoughtSpot HTTP(S) traffic.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Configure SSL”]","dateModified":"2020-06-15T20:10:03-07:00","url":"https://docs.thoughtspot.com/6.0/admin/setup/SSL-config.html","datePublished":"2020-06-15T20:10:03-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/setup/SSL-config.html"},"description":"You can use your own SSL certificate to secure ThoughtSpot HTTP(S) traffic.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -176,7 +176,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -3724,7 +3724,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span>
  -->
@@ -3750,9 +3750,50 @@ $('#toc').on('click', 'a', function() {
 <p>To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to accommodate incoming connections to Thoughtspot nodes and clusters.</p>
 
 <h2 id="ssl-configure">Configure SSL for web traffic</h2>
-<p>To add SSL and enable HTTPS in ThoughtSpot, obtain the <a href="#ssl-certificate-chain">SSL certificate chain</a> and the <a href="#key">private key</a>.</p>
+<p>To add SSL and enable HTTPS in ThoughtSpot, generate the <a href="#csr">Certificate Signing Request (CSR)</a> and obtain the <a href="#ssl-certificate-chain">SSL certificate chain</a> and the <a href="#key">private key</a>.</p>
 
 <p>You can then proceed to <a href="#ssl-configure-tscli">Configure SSL using tscli</a>, and <a href="#ssl-configure-test">Test the SSL certificate</a>.</p>
+
+<h3 id="csr">Certificate Signing Request</h3>
+<p>When you generate a CSR, you handle sensitive data. Therefore, ThoughtSpot recommends that its customers generate their own CSRs.</p>
+
+<p>You can generate a CSR in several ways. Most often, you generate a CSR and a new private key <a href="#csr-new-private-key">at the same time</a>. If you already have a private key, <a href="#csr-existing-private-key">use it to generate a CSR</a>.</p>
+
+<p id="csr-new-private-key">Follow these steps to generate a CSR and a private key. You need a computer you can run Linux commands on, and a recent version of <em>openssl</em>.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Run the command to generate a CSR and private key pair:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -newkey rsa:2048 -nodes -out csr.pem -keyout pk.key[-subj "/key1=value1/key2=value with space/"]
+</code></pre></div>    </div>
+
+    <p>Note the following parameters:</p>
+    <ul>
+      <li>ThoughtSpot supports a 2048 or 4096 bit key.</li>
+      <li><code class="language-plaintext highlighter-rouge">subj</code>: a common subject. Logically equivalent to the <code class="language-plaintext highlighter-rouge">-dname</code> property of <em>keytool</em>. Alternatively, you can skip this flag, and <code class="language-plaintext highlighter-rouge">openssl</code> prompts you to enter this information interactively.</li>
+      <li>Optionally, run <code class="language-plaintext highlighter-rouge">add-multivalue-rdn</code> to allow multiple values to be set for the same key.</li>
+      <li>Run <code class="language-plaintext highlighter-rouge">man req</code> for more details.</li>
+    </ul>
+  </li>
+</ol>
+
+<p id="csr-existing-private-key">If you already have a private key, you can use it to generate a CSR. Follow these steps to generate a CSR with an existing private key:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Run the command to generate a CSR and private key pair:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -key &lt;private_key_file&gt; -nodes -out csr.pem[-subj "/key1=value1/key2=value with space/"]
+</code></pre></div>    </div>
+
+    <p>Specify the existing private key file. Refer to the parameters listed above.</p>
+  </li>
+</ol>
 
 <h3 id="ssl-certificate-chain">SSL certificate chain</h3>
 <p>The SSL certificate chain must be in PEM format, which is an <code class="language-plaintext highlighter-rouge">X.509v3</code> file that contains ASCII (Base64) armored data, packed between <code class="language-plaintext highlighter-rouge">BEGIN</code> and <code class="language-plaintext highlighter-rouge">END</code> directives. The certificate chain may contain a series of certificates, with the root certificate at the bottom and user-facing, while the ThoughtSpot-specific SSL certificate is at the top.</p>
@@ -3888,9 +3929,9 @@ You must ensure that your load balancer supports these ciphers.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 11, 2020 <br />
+        Generated: Jun 15, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 5/6/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 6/15/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
