@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-11T20:08:43-07:00" />
+<meta property="article:published_time" content="2020-06-15T20:10:03-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Add a geographical data setting”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Add a geographical data setting”]","dateModified":"2020-06-11T20:08:43-07:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html","datePublished":"2020-06-11T20:08:43-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html"},"description":"Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Add a geographical data setting”]","dateModified":"2020-06-15T20:10:03-07:00","url":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html","datePublished":"2020-06-15T20:10:03-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/data-modeling/model-geo-data.html"},"description":"Certain attribute columns that contain location data can be used to create GeoMaps. ThoughtSpot supports Latitude, Longitude, Zip Code, US States, US Counties, Countries, and select international sub-nation regions.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -176,7 +176,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -3745,7 +3745,7 @@ in the <code class="language-plaintext highlighter-rouge">model.xls</code> file.
 data unless they contain latitude/longitude data. Latitude and longitude columns
 can contain numeric data (<code class="language-plaintext highlighter-rouge">DOUBLE</code>) or text.</p>
 
-<p>If you import <code class="language-plaintext highlighter-rouge">geo</code> columns as numeric values, the data type defaults to <code class="language-plaintext highlighter-rouge">INT64</code>. ThoughtSpot recommends that you import <code class="language-plaintext highlighter-rouge">geo</code> columns, such as zipcodes as text values. The <code class="language-plaintext highlighter-rouge">column type</code> defaults to  <code class="language-plaintext highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="language-plaintext highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For geo data, you <strong><em>must</em></strong> change the <code class="language-plaintext highlighter-rouge">column type</code> to <code class="language-plaintext highlighter-rouge">attribute</code> and specify <code class="language-plaintext highlighter-rouge">additive</code> as <code class="language-plaintext highlighter-rouge">no</code>.</p>
+<p>If you import <code class="language-plaintext highlighter-rouge">geo</code> columns as numeric values, the data type defaults to <code class="language-plaintext highlighter-rouge">BIGINT</code>. ThoughtSpot recommends that you import <code class="language-plaintext highlighter-rouge">geo</code> columns, such as zipcodes as text values. The <code class="language-plaintext highlighter-rouge">column type</code> defaults to  <code class="language-plaintext highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="language-plaintext highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For geo data, you <strong><em>must</em></strong> change the <code class="language-plaintext highlighter-rouge">column type</code> to <code class="language-plaintext highlighter-rouge">attribute</code> and specify <code class="language-plaintext highlighter-rouge">additive</code> as <code class="language-plaintext highlighter-rouge">no</code>.</p>
 
 <p>If you are using a column with the data type <code class="language-plaintext highlighter-rouge">DOUBLE</code> for latitude and
 longitude, change the following settings for those
@@ -3835,7 +3835,7 @@ columns:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 11, 2020 <br />
+        Generated: Jun 15, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 3/27/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
