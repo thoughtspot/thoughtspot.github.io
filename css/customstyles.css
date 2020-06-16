@@ -529,9 +529,6 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav ul li ul li > a > span:before {
-    content: '\25B8';
-    position: absolute;
-    left: 0px;
     padding-left: 20px;
     padding-right: 10px;
 }

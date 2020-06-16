@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -3167,7 +3167,7 @@ in the <code class="highlighter-rouge">model.xls</code> file.</p>
 data unless they contain latitude/longitude data. Latitude and longitude columns
 can contain numeric data (<code class="highlighter-rouge">DOUBLE</code>) or text.</p>
 
-<p>If you import <code class="highlighter-rouge">geo</code> columns as numeric values, the data type defaults to <code class="highlighter-rouge">INT64</code>. ThoughtSpot recommends that you import <code class="highlighter-rouge">geo</code> columns, such as zipcodes as text values. The <code class="highlighter-rouge">column type</code> defaults to  <code class="highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For geo data, you <strong><em>must</em></strong> change the <code class="highlighter-rouge">column type</code> to <code class="highlighter-rouge">attribute</code> and specify <code class="highlighter-rouge">additive</code> as <code class="highlighter-rouge">no</code>.</p>
+<p>If you import <code class="highlighter-rouge">geo</code> columns as numeric values, the data type defaults to <code class="highlighter-rouge">BIGINT</code>. ThoughtSpot recommends that you import <code class="highlighter-rouge">geo</code> columns, such as zipcodes as text values. The <code class="highlighter-rouge">column type</code> defaults to  <code class="highlighter-rouge">measure</code> when you import numeric values. In ThoughtSpot, a <code class="highlighter-rouge">measure</code> is a numeric value that you can you use in mathematical formulas. For geo data, you <strong><em>must</em></strong> change the <code class="highlighter-rouge">column type</code> to <code class="highlighter-rouge">attribute</code> and specify <code class="highlighter-rouge">additive</code> as <code class="highlighter-rouge">no</code>.</p>
 
 <p>If you are using a column with the data type <code class="highlighter-rouge">DOUBLE</code> for latitude and
 longitude, change the following settings for those
@@ -3237,7 +3237,7 @@ columns:</p>
       
         
 
-        <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.0/_admin/data-modeling/model-geo-data.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/5.0/_admin/data-modeling/model-geo-data.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3256,7 +3256,7 @@ columns:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Jun 16, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 3/30/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
