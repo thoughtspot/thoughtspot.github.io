@@ -57,11 +57,11 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/setup/SSL-config.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-20T18:28:40-07:00" />
+<meta property="article:published_time" content="2020-06-15T19:32:52-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/SSL-config.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/SSL-config.html","headline":"[“Configure SSL”]","dateModified":"2020-05-20T18:28:40-07:00","datePublished":"2020-05-20T18:28:40-07:00","description":"You can use SSL to enable both HTTP and LDAP data security.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/setup/SSL-config.html"},"url":"https://docs.thoughtspot.com/5.3/admin/setup/SSL-config.html","headline":"[“Configure SSL”]","dateModified":"2020-06-15T19:32:52-07:00","datePublished":"2020-06-15T19:32:52-07:00","description":"You can use SSL to enable both HTTP and LDAP data security.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -175,7 +175,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -3274,7 +3274,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    5 minutes
   
 </span>
  -->
@@ -3310,7 +3310,50 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Do not use a passphrase when creating certificates.<br />To verify if you’re prompted to specify a passphrase, invoke the command <code class="highlighter-rouge">openssl rsa -check -in pk.key</code>. If the answer is ‘yes’, remove the passphrase to use the key.</div>
 
-<p>To add SSL and enable HTTPS in ThoughtSpot, obtain the <a href="#ssl-certificate-chain">SSL certificate chain</a> and the <a href="#key">private key</a>.</p>
+<p>To add SSL and enable HTTPS in ThoughtSpot, generate the <a href="#csr">Certificate Signing Request (CSR)</a> and obtain the <a href="#ssl-certificate-chain">SSL certificate chain</a> and the <a href="#key">private key</a>.</p>
+
+<p>You can then proceed to <a href="#ssl-configure-tscli">Configure SSL using tscli</a>.</p>
+
+<h3 id="csr">Certificate Signing Request</h3>
+<p>When you generate a CSR, you handle sensitive data. Therefore, ThoughtSpot recommends that its customers generate their own CSRs.</p>
+
+<p>You can generate a CSR in several ways. Most often, you generate a CSR and a new private key <a href="#csr-new-private-key">at the same time</a>. If you already have a private key, <a href="#csr-existing-private-key">use it to generate a CSR</a>.</p>
+
+<p id="csr-new-private-key">Follow these steps to generate a CSR and a private key. You need a computer you can run Linux commands on, and a recent version of <em>openssl</em>.</p>
+
+<ol>
+  <li><code class="highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Run the command to generate a CSR and private key pair:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -newkey rsa:2048 -nodes -out csr.pem -keyout pk.key[-subj "/key1=value1/key2=value with space/"]
+</code></pre></div>    </div>
+
+    <p>Note the following parameters:</p>
+    <ul>
+      <li>ThoughtSpot supports a 2048 or 4096 bit key.</li>
+      <li><code class="highlighter-rouge">subj</code>: a common subject. Logically equivalent to the <code class="highlighter-rouge">-dname</code> property of <em>keytool</em>. Alternatively, you can skip this flag, and <code class="highlighter-rouge">openssl</code> prompts you to enter this information interactively.</li>
+      <li>Optionally, run <code class="highlighter-rouge">add-multivalue-rdn</code> to allow multiple values to be set for the same key.</li>
+      <li>Run <code class="highlighter-rouge">man req</code> for more details.</li>
+    </ul>
+  </li>
+</ol>
+
+<p id="csr-existing-private-key">If you already have a private key, you can use it to generate a CSR. Follow these steps to generate a CSR with an existing private key:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Run the command to generate a CSR and private key pair:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -key &lt;private_key_file&gt; -nodes -out csr.pem[-subj "/key1=value1/key2=value with space/"]
+</code></pre></div>    </div>
+
+    <p>Specify the existing private key file. Refer to the parameters listed above.</p>
+  </li>
+</ol>
 
 <h3 id="ssl-certificate-chain">SSL certificate chain</h3>
 <p>The SSL certificate chain must be in <code class="highlighter-rouge">.PEM</code> format. This is an <code class="highlighter-rouge">X.509v3</code> file that contains ASCII (Base64) armored data, packed between <code class="highlighter-rouge">BEGIN</code> and <code class="highlighter-rouge">END</code> directives. It can be a bundle of certificates.</p>
@@ -3431,7 +3474,7 @@ You must ensure that your load balancer supports these ciphers.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Jun 15, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 3/4/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
