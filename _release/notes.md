@@ -20,12 +20,6 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-1).
 
-### Redesigned mobile app and new Android version
-
-Release 1.3 brings a fresh, new design, and support for the Android mobile platform.
-
-For more information, see: [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
-
 ### Updating ThoughtSpot UI through CDN
 
 Starting with this release, you can configure automatic updates of the front end of the ThoughtSpot application by uploading from CDN (Amazon Cloudfront). This enables your organization to get many new features of ThoughtSpot and get many critical bug fixes without experiencing the traditional upgrade downtime.
