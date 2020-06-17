@@ -256,9 +256,9 @@ entries:
         - title: Hide and show values
           url: /end-user/search/hide-and-show-values.html
           output: web,ugBk
-#        - title: Charts and tables with a very large number of data values
-#          url: /end-user/search/high-cardinality.html
-#          output: web,ugBk
+        - title: Charts and tables with a very large number of data values
+          url: /end-user/search/high-cardinality.html
+          output: web,ugBk
         - title: Change chart colors
           url: /end-user/search/change-chart-colors.html
           output: web,ugBk
@@ -1430,33 +1430,33 @@ entries:
     - title: Overview
       url: /appliance/welcome-intro.html
       output: web,appQs
-#    - levelTwoTitle: Amazon Linux 2 Support
-#      output: web,appQs
-#      levelTwoItems:
-#      - title: Amazon Linux 2 overview
-#        url: /appliance/amazon-linux-2/al2-overview.html
-#        output: web,appQs
-#      - title: Amazon Linux 2 prerequisites
-#        url: /appliance/amazon-linux-2/al2-prerequisites.html
-#        output: web,appQs
-#      - title: ThoughtSpot artifacts
-#        url: /appliance/amazon-linux-2/al2-ts-artifacts.html
-#        output: web,appQs
-#      - title: Online Amazon Linux 2 install
-#        url: /appliance/amazon-linux-2/al2-install-online.html
-#        output: web,appQs
-#      - title: Offline Amazon Linux 2 install
-#        url: /appliance/amazon-linux-2/al2-install-offline.html
-#        output: web,appQs
-#      - title: Amazon Linux 2 upgrade
-#        url: /appliance/amazon-linux-2/al2-upgrade.html
-#        output: web,appQs
-#      - title: Adding new nodes to clusters in Amazon Linux 2
-#        url: /appliance/amazon-linux-2/al2-add-node.html
-#        output: web,appQs
-#      - title: Packages installed with Amazon Linux 2
-#        url: /appliance/amazon-linux-2/al2-packages.html
-#        output: web,appQs
+    - levelTwoTitle: Amazon Linux 2 Support
+      output: web,appQs
+      levelTwoItems:
+      - title: Amazon Linux 2 overview
+        url: /appliance/amazon-linux-2/al2-overview.html
+        output: web,appQs
+      - title: Amazon Linux 2 prerequisites
+        url: /appliance/amazon-linux-2/al2-prerequisites.html
+        output: web,appQs
+      - title: ThoughtSpot artifacts
+        url: /appliance/amazon-linux-2/al2-ts-artifacts.html
+        output: web,appQs
+      - title: Online Amazon Linux 2 install
+        url: /appliance/amazon-linux-2/al2-install-online.html
+        output: web,appQs
+      - title: Offline Amazon Linux 2 install
+        url: /appliance/amazon-linux-2/al2-install-offline.html
+        output: web,appQs
+      - title: Amazon Linux 2 upgrade
+        url: /appliance/amazon-linux-2/al2-upgrade.html
+        output: web,appQs
+      - title: Adding new nodes to clusters in Amazon Linux 2
+        url: /appliance/amazon-linux-2/al2-add-node.html
+        output: web,appQs
+      - title: Packages installed with Amazon Linux 2
+        url: /appliance/amazon-linux-2/al2-packages.html
+        output: web,appQs
     - levelTwoTitle: RHEL Support
       output: web,appQs
       levelTwoItems:
