@@ -6,14 +6,37 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.1.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.1 New Features](#6-1-new)
+* [6.1.1 New Features](#6-1-1-new)
 * [Early Access Programs](#early-access)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-1-1-new"}
+## 6.1.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [6.1.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-1-1).
+
+### Amazon Linux 2
+
+This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform.To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
+
+### Charts and tables with a very large number of data values
+
+ThoughtSpot now supports charts and tables with more than 1000 data values. You can easily understand how much of the data your chart or table displays.
+* Your search in table form can now have more than 1000 rows.
+* Your charts now come with a horizontal scroll bar, to support up to 35,000 data points.
+* You can select the fit to screen button to see the whole chart at one time.
+* You can have up to 250 distinct legend items on a chart.
+* You can turn on all [data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html#labels-all) using the new shortcut button at the top right corner.
+See [Charts and tables with a very large number of data values]({{ site.baseurl }}/end-user/search/high-cardinality.html).
+
+### tsload as a service
+
+This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
 
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality
