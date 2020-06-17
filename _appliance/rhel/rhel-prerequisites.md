@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
 | &#10063; | [2. Partition the hosts](#partition-hosts) |
-| &#10063; | [3. Install RHEL version 7.7 on all hosts](#install-rhel) |
+| &#10063; | [3. Install RHEL version 7.7 or 7.8 on all hosts](#install-rhel) |
 | &#10063; | [4. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
 | &#10063; | [5. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
