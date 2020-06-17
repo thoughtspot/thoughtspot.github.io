@@ -8,6 +8,7 @@ permalink: /:collection/:path.html
 These are the issues we fixed in recent ThoughtSpot releases.
 
 <ul>
+  <li><a href="#6-1-1">6.1.1 Fixed issues</a></li>
   <li><a href="#6-1">6.1 Fixed issues</a></li>
   <li>
    <details>
@@ -82,6 +83,12 @@ These are the issues we fixed in recent ThoughtSpot releases.
           </details>
         </li>
       </ul>
+<a id="6-1-1"></a>
+## 6.1.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.1.1.
+
+- TBD.
 
 <a id="6-1"></a>
 ## 6.1 Fixed issues
