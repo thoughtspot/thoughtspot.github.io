@@ -120,7 +120,3 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux
 We recommend that you disable SELinux if your organization permits it.
-
-{: id="linux-kernel-version"}
-## Linux kernel version
-Your Linux kernel must be on version 4.4 or later.
