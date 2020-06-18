@@ -88,7 +88,33 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 These are the issues we fixed in ThoughtSpot Release 6.1.1.
 
-- TBD.
+- Queries time out when loading a fact table with as many as 4 billion rows.
+
+- SpotIQ gets stuck in a loop and is unresponsive.
+
+- When multiple filters are used in a worksheet, the searches fail for only specific columns in a table.
+
+- Microsoft Internet Explorer 11 doesn't work with ThoughtSpot embedded in an iframe, displaying an 'access denied' JavaScript error message.
+
+- The time required to use TQL to delete data from fact tables increases until the delete is not successful.
+
+- After upgrade to 6.1, ad sync scripts fail to run.
+
+- Inconsistent naming of disks causes mounting to fail.
+
+- The admin portal fails to load in a cluster, where it loaded before.
+
+- An older version of the ThoughtSpot user interface appears, even though cluster is running newer version.
+
+- Upgrading a cluster from 5.x release to 6.x release is unsuccessful.
+
+- Sender's email displayed in notifications does not use the from-email configured in `tscli smtp`.
+
+- A large number of scheduled pinboards slows down the Falcon database.
+
+- After upgrade to 5.3.2.CU1, all pinboards using a specific variable (adp) do not work.
+
+- An administrator is unable to save a worksheet on the first try.
 
 <a id="6-1"></a>
 ## 6.1 Fixed issues
