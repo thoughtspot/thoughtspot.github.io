@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-last_updated: 10/21/2019
+last_updated: 06/18/2020
 toc: true
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -13,6 +13,8 @@ Embrace supports the following external databases:
 - Amazon Redshift
 - Google BigQuery
 - Microsoft Azure Synapse
+- Teradata
+- SAP HANA (beta)
 
 To enable Embrace, contact ThoughtSpot support.
 
