@@ -29,14 +29,13 @@ This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](h
 ThoughtSpot now supports charts and tables with more than 1000 data values. You can easily understand how much of the data your chart or table displays.
 * Your search in table form can now have more than 1000 rows.
 * Your charts now come with a horizontal scroll bar, to support up to 35,000 data points.
-* You can select the fit to screen button to see the whole chart at one time.
 * You can have up to 250 distinct legend items on a chart.
-* You can turn on all [data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html#labels-all) using the new shortcut button at the top right corner.
+
 See [Charts and tables with a very large number of data values]({{ site.baseurl }}/end-user/search/high-cardinality.html).
 
 ### tsload as a service
 
-This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html). 
+This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
 
 {: id="6-1-new"}
 ## 6.1 New Features and Functionality

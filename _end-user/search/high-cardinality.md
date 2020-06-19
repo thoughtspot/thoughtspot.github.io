@@ -12,17 +12,19 @@ ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly 
 
 ![High cardinality table example]({{ site.baseurl }}/images/cardinality-table-rows.png "High cardinality table example")
 
-Column summaries are not available for tables with more than 1000 rows. 
+Column summaries are not available for tables with more than 1000 rows.
 
 ## High cardinality charts
 
-ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, up to 35,000, you see a horizontal scroll bar at the bottom. If you want to see the whole chart at one time, you can select the **fit to screen** button at the top right corner.
+ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, up to 35,000, you see a horizontal scroll bar at the bottom.
 
-![High cardinality chart example]({{ site.baseurl }}/images/cardinality-chart-options.png "High cardinality chart example")
+![High cardinality chart with scroll bar]({{ site.baseurl }}/images/cardinality-chart-scroll-bar.png "High cardinality chart with scroll bar")
 
-When you **fit to screen**, you see the whole chart. You can easily return to the zoomed-in view, by clicking the **enable scrollbar** button.
+If you want to see the whole chart at one time, you can select the **fit to screen** option. To **fit to screen**, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **fit to screen**.
 
-![Fit to screen or enable scrollbar]({{ site.baseurl }}/images/cardinality-fit-to-screen.png "Fit to screen or enable scrollbar")
+![High cardinality chart example -- fit to screen]({{ site.baseurl }}/images/cardinality-chart-options.png "High cardinality chart example -- fit to screen")
+
+When you **fit to screen**, you see the whole chart. You can easily return to the zoomed-in view, by unselecting the **fit to screen** option.
 
 You can now have more than 40 legend items in your chart. If you attempt to [slice with color]({{ site.baseurl }}/end-user/search/drag-and-drop.html#slice-with-color) using a column that has more than 80 values, the recommended number of values, ThoughtSpot tells you to filter to reduce the number of values, or allows you to **render all**, if the number of values is under 250.
 
