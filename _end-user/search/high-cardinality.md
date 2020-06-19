@@ -1,6 +1,6 @@
 ---
 title: [Charts and tables that display a very large number of data values]
-last_updated: 6/12/2020
+last_updated: 6/19/2020
 summary: "ThoughtSpot's charts and tables can support many data values, and you can easily understand how much of the data your chart or table displays."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,6 +11,8 @@ permalink: /:collection/:path.html
 ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. Here, the table has 2318 rows:
 
 ![High cardinality table example]({{ site.baseurl }}/images/cardinality-table-rows.png "High cardinality table example")
+
+Column summaries are not available for tables with more than 1000 rows. 
 
 ## High cardinality charts
 

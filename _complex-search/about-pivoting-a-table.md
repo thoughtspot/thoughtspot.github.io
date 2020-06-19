@@ -13,7 +13,7 @@ If you would like to visualize your search as a pivot table, click on the **chan
 
 ![Select 'pivot table']({{ site.baseurl }}/images/charts-pivot-table.png "Select 'pivot table'")
 
-You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** []({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
+You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 
 If you right-click a row or column heading, the system displays a contextual sort menu, or allows you to remove all sorting:
 
@@ -34,7 +34,7 @@ When you pin a pivot table to a Pinboard, it retains your expansion settings.
 
 You can see your data as a percent of a row or column total, or as a percent of the grand total. Grand totals aggregate all the data in your pivot table.
 
-To see your data as a percent, click the **edit chart configuration** []({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Click on the dropdown menu to choose whether you want to see your data as a percent of a row or column total, or as a percent of the grand total.
+To see your data as a percent, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Click on the dropdown menu to choose whether you want to see your data as a percent of a row or column total, or as a percent of the grand total.
 
 ![See your data as a percent]({{ site.baseurl }}/images/chart-pivot-table-grand-total.png "See your data as a percent")
 
@@ -66,11 +66,12 @@ others within the table.
 
 ![Heatmap mode]({{ site.baseurl }}/images/chart-pivot-table-heatmap.png "Heatmap mode")
 
-To turn on the heatmap, click the **edit chart configuration** []({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **heatmap mode**.
+To turn on the heatmap, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **heatmap mode**.
 
 ## Pivot table limitations
 
 The pivot table chart type has these limitations:
 
+- The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
 - You cannot show underlying data.
 - You cannot use conditional formatting.
