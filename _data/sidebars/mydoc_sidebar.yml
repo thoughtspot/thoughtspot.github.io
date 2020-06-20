@@ -19,12 +19,12 @@ entries:
       output: pdf
       type: frontmatter
 # end PDF output defs
-  - sectiontitle: About this Release
-    output: web,rnotes
-    sectionitems:
-    - title: Release notes
-      url: /release/notes.html
-      output: web,rnotes
+#  - sectiontitle: About this Release
+#    output: web,rnotes
+#    sectionitems:
+#    - title: Release notes
+#      url: /release/notes.html
+#      output: web,rnotes
 #    - title: Fixed issues
 #      url: /release/fixed.html
 #      output: web,rnotes
