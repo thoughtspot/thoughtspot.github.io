@@ -10,46 +10,36 @@ Another option for loading data in bulk, is to use the tsload service. The tsloa
 This page highlights the following:
 - Setting up your cluster to use the tsload service
 - Using the Python3 client for writing automated ETL jobs
-- Client, server, and authentication details
+- Server and authentication details
 - API workflow inside the client
 
 ## Setting up your cluster
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
-2. Open http port 8442, by running the following command:
-   `tscli firewall open-ports --ports 8442`
-
-3. Validate that the port is open, by running this command:
+3. Validate that port 8442 is open, by running this command:
    `tscli firewall status`
+
+   {% include note.html content="Port 8442 is open by default in ThoughtSpot release 6.1 or later." %}
 
 4. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-5. Add the following flags to the file and save it:
+5. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer by running the following command:
    ```
-      gflag {
-        key: "max_concurrent_target_writers"
-        value: "4"
-      }
-      gflag {
-        key: "max_dml_bytes_per_rpc"
-        value: "1048576"
-      }
-      gflag {
-        key: "etl_server_enable_load_balancer"
-        value: "false"
-      }
-<!-- The default in the next command will be revised - to be provided by Anand -->
-      gflag {
-        key: "bad_records_base_filepath"
-        value: "<defaults:/tmp, recommended: path in one of mounted HDDs>"
-      }
-```  
+    tscli --adv service add-gflag etl_http_server.etl_http_server etl_server_enable_load_balancer false
+   ```
+6. By default, bad-records are saved in one of the mounted drives, or /tmp. You can modify this location by running the following command:
+   ```
+ tscli --adv service add-gflag etl_http_server.etl_http_server bad_records_base_filepath <Location to file path>   
+   ```      
 
-## Using the Python3 client
+## Reference client
 
 The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
+
+A reference python client is located at: <todo-Anand to send the link>
+This requires python3 and the details of the methods are documented within the above client.
 
 The client includes the following methods:
 - **login**: Requires ThoughtSpot username and password
@@ -119,8 +109,7 @@ The client includes the following methods:
     	}
     }
     ```
-
-## Client, server, and authentication details
+## Server and authentication details
 
 ### Ports and Server
 
@@ -129,12 +118,6 @@ Port number: 8442, HTTPS REST endpoints
 The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file-load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and tsload operations.
 
 By default, this service runs on all nodes of a ThoughtSpot cluster. This provides load distribution to address possible simultaneous loads. The tsload server uses its own load balancer. If an external load balancer is used, the tsload requests must be sticky, and the tsload load balancer should be disabled.
-
-### Client
-
-The remote client is a simple Python client that exercises the API mentioned later in the document.
-
-The APIs can load from a file, and load from a stream. The difference is, the latter can send data in “chunks” to the server before committing it.
 
 ### Authorization and Authentication
 
