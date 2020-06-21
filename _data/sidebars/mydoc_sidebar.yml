@@ -20,82 +20,119 @@ entries:
       type: frontmatter
 # end PDF output defs
   - sectiontitle: DataFlow
-    output: web,pdf
+    output: web,dataflowGD
     sectionitems:
     - title: DataFlow Overview
       url: /data-integrate/dataflow/dataflow.html
-      output: web
-
-  - sectiontitle: Embrace
-    output: web,pdf
-    sectionitems:
-    - title: Overview
-      url: /data-integrate/embrace/embrace-intro.html
-      output: web,embraceGd
+      output: web,dataflowGD
+    - levelTwoTitle: Amazon Aurora
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/dataflow/dataflow-amazon-aurora-add.html
+        output: web,dataflowGd
+      - title: Modify a connection
+        url: /data-integrate/dataflow/dataflow-amazon-aurora-modify.html
+        output: web,dataflowGd
+      - title: Best practices
+        url: /data-integrate/dataflow/dataflow-amazon-aurora-best.html
+        output: web,dataflowGd
+      - title: Reference
+        url: /data-integrate/dataflow/dataflow-amazon-aurora-reference.html
+        output: web,dataflowGd
+    - levelTwoTitle: Amazon Redshift
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/dataflow/dataflow-amazon-redshift-add.html
+        output: web,dataflowGd
+      - title: Modify a connection
+        url: /data-integrate/dataflow/dataflow-amazon-redshift-modify.html
+        output: web,dataflowGd
+      - title: Best practices
+        url: /data-integrate/dataflow/dataflow-amazon-redshift-best.html
+        output: web,dataflowGd
+      - title: Reference
+        url: /data-integrate/dataflow/dataflow-amazon-redshift-reference.html
+        output: web,dataflowGd
+    - levelTwoTitle: Amazon S3
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/dataflow/dataflow-amazon-s3-add.html
+        output: web,dataflowGd
+      - title: Modify a connection
+        url: /data-integrate/dataflow/dataflow-amazon-s3-modify.html
+        output: web,dataflowGd
+      - title: Best practices
+        url: /data-integrate/dataflow/dataflow-amazon-s3-best.html
+        output: web,dataflowGd
+      - title: Reference
+        url: /data-integrate/dataflow/dataflow-amazon-s3-reference.html
+        output: web,dataflowGd
+    - levelTwoTitle: Azure Blob Storage
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Azure Blob overview
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage.html
+        output: web,dataflowGd
+      - title: Add a connection
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage-add.html
+        output: web,dataflowGd
+      - title: Sync data
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage-sync.html
+        output: web,dataflowGd
+      - title: Modify a connection
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage-modify.html
+        output: web,dataflowGd
+      - title: Best practices
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage-best.html
+        output: web,dataflowGd
+      - title: Reference
+        url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
+        output: web,dataflowGd
+    - levelTwoTitle: Azure Synapse
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Azure Synapse overview
+        url: /data-integrate/dataflow/dataflow-azure-synapse.html
+        output: web,dataflowGd
+      - title: Add a connection
+        url: /data-integrate/dataflow/dataflow-azure-synapse-add.html
+        output: web,dataflowGd
+      - title: Sync data
+        url: /data-integrate/dataflow/dataflow-azure-synapse-sync.html
+        output: web,dataflowGd
+      - title: Modify a connection
+        url: /data-integrate/dataflow/dataflow-azure-synapse-modify.html
+        output: web,dataflowGd
+      - title: Best practices
+        url: /data-integrate/dataflow/dataflow-azure-synapse-best.html
+        output: web,dataflowGd
+      - title: Reference
+        url: /data-integrate/dataflow/dataflow-azure-synapse-reference.html
+        output: web,dataflowGd
     - levelTwoTitle: Snowflake
-      output: web,embraceGd
+      output: web,dataflowGD
       levelTwoItems:
+      - title: Snowflake overview
+        url: /data-integrate/dataflow/dataflow-snowflake.html
+        output: web,dataflowGd
       - title: Add a connection
-        url: /data-integrate/embrace/embrace-snowflake-add.html
-        output: web,embraceGd
+        url: /data-integrate/dataflow/dataflow-snowflake-add.html
+        output: web,dataflowGd
+      - title: Sync data
+        url: /data-integrate/dataflow/dataflow-snowflake-sync.html
+        output: web,dataflowGd
       - title: Modify a connection
-        url: /data-integrate/embrace/embrace-snowflake-modify.html
-        output: web,embraceGd
+        url: /data-integrate/dataflow/dataflow-snowflake-modify.html
+        output: web,dataflowGd
       - title: Best practices
-        url: /data-integrate/embrace/embrace-snowflake-best.html
-        output: web,embraceGd
+        url: /data-integrate/dataflow/dataflow-snowflake-best.html
+        output: web,dataflowGd
       - title: Reference
-        url: /data-integrate/embrace/embrace-snowflake-reference.html
-        output: web,embraceGd
-      - levelThreeTitle: Snowflake Partner Connect
-        output: web,embraceGd
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/embrace/embrace-snowflake-partner.html
-          output: web,embraceGd
-        - title: Tutorials
-          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-          output: web,embraceGd
-    - levelTwoTitle: Redshift
-      output: web,embraceGd
-      levelTwoItems:
-      - title: Add a connection
-        url: /data-integrate/embrace/embrace-redshift-add.html
-        output: web,embraceGd
-      - title: Modify a connection
-        url: /data-integrate/embrace/embrace-redshift-modify.html
-        output: web,embraceGd
-      - title: Best practices
-        url: /data-integrate/embrace/embrace-redshift-best.html
-        output: web,embraceGd
-      - title: Reference
-        url: /data-integrate/embrace/embrace-redshift-reference.html
-        output: web,embraceGd
-    - levelTwoTitle: BigQuery
-      output: web,embraceGd
-      levelTwoItems:
-      - title: Add a connection
-        url: /data-integrate/embrace/embrace-gbq-add.html
-        output: web,embraceGd
-      - title: Modify a connection
-        url: /data-integrate/embrace/embrace-gbq-modify.html
-        output: web,embraceGd
-      - title: Reference
-        url: /data-integrate/embrace/embrace-gbq-reference.html
-        output: web,embraceGd
-    - levelTwoTitle: Synapse
-      output: web,embraceGd
-      levelTwoItems:
-      - title: Add a connection
-        url: /data-integrate/embrace/embrace-synapse-add.html
-        output: web,embraceGd
-      - title: Modify a connection
-        url: /data-integrate/embrace/embrace-synapse-modify.html
-        output: web,embraceGd
-      - title: Reference
-        url: /data-integrate/embrace/embrace-synapse-reference.html
-        output: web,embraceGd
-
+        url: /data-integrate/dataflow/dataflow-snowflake-reference.html
+        output: web,dataflowGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
