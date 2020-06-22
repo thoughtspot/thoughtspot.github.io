@@ -9,7 +9,7 @@ Another option for loading data in bulk, is to use the tsload service. The tsloa
 
 This page highlights the following:
 - Setting up your cluster to use the tsload service
-- Using the Python3 client for writing automated ETL jobs
+- Using the reference client for writing automated ETL jobs
 - Server and authentication details
 - API workflow inside the client
 
@@ -17,22 +17,17 @@ This page highlights the following:
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
-3. Validate that port 8442 is open, by running this command:
+2. Validate that port 8442 is open, by running this command:
    `tscli firewall status`
 
    {% include note.html content="Port 8442 is open by default in ThoughtSpot release 6.1 or later." %}
 
-4. Open the config file at the following location:
+3. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-5. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer by running the following command:
-   ```
-    tscli --adv service add-gflag etl_http_server.etl_http_server etl_server_enable_load_balancer false
-   ```
-6. By default, bad-records are saved in one of the mounted drives, or /tmp. You can modify this location by running the following command:
-   ```
- tscli --adv service add-gflag etl_http_server.etl_http_server bad_records_base_filepath <Location to file path>   
-   ```      
+4. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer. Contact ThoughtSpot support for assistence with this step.
+
+5. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.    
 
 ## Reference client
 
@@ -108,7 +103,8 @@ The client includes the following methods:
     		"code": "OK"
     	}
     }
-    ```
+    ```  
+
 ## Server and authentication details
 
 ### Ports and Server
@@ -131,7 +127,7 @@ The typical workflow of the API inside the client is the following:
 
 1. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
    ```
-   curl -ik https://localhost:8442/ts_dataservice/v1/public/ping
+   curl -i https://localhost:8442/ts_dataservice/v1/public/ping
    HTTP/1.1 200 OK
 
    Ping Received.
