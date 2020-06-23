@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-23T09:03:55-07:00" />
+<meta property="article:published_time" content="2020-06-23T10:58:52-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Use the tsload service to load data”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Use the tsload service to load data”]","dateModified":"2020-06-23T09:03:55-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html","datePublished":"2020-06-23T09:03:55-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html"},"description":"Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Use the tsload service to load data”]","dateModified":"2020-06-23T10:58:52-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html","datePublished":"2020-06-23T10:58:52-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html"},"description":"Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3812,7 +3812,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span>
  -->
@@ -3840,10 +3840,21 @@ $('#toc').on('click', 'a', function() {
 <code class="language-plaintext highlighter-rouge">/usr/local/scaligent/release/production/orion/etl_http_server/prod.config</code></p>
   </li>
   <li>
-    <p>If you cluster is behind a load-balancer, you must disable the internal etl server’s load-balancer. Contact ThoughtSpot support for assistence with this step.</p>
+    <p>If your cluster is behind a load balancer, you must disable the internal etl server’s load balancer. Contact ThoughtSpot support for assistance with this step.</p>
   </li>
   <li>
     <p>By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to <code class="language-plaintext highlighter-rouge">/tmp</code>. To modify this location, contact ThoughtSpot support.</p>
+  </li>
+  <li>
+    <p>If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to the service. Contact ThoughtSpot support for assistance with this step.</p>
+  </li>
+  <li>
+    <p>Check if the <strong>etl_http_server</strong>, responsible for the tsload service, is accessible by pinging it:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://localhost:8442/ts_dataservice/v1/public/ping
+HTTP/1.1 200 OK
+
+Ping Received.
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -3960,13 +3971,6 @@ This requires python3 and the details of the methods are documented within the a
 <p>The typical workflow of the API inside the client is the following:</p>
 
 <ol>
-  <li>Check if the <strong>etl_http_server</strong>, responsible for the tsload service, is accessible by pinging it:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://localhost:8442/ts_dataservice/v1/public/ping
-HTTP/1.1 200 OK
-
-Ping Received.
-</code></pre></div>    </div>
-  </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">&lt;standard-thoughspot-cluster-url&gt; Login</code>.</p>
   </li>
