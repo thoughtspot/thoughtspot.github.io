@@ -302,8 +302,6 @@ Data load can be called for multiple chunks of data for the same cycle ID. All o
 POST /ts_dataservice/v1/public/loads/cycle_id
 Cookie: <token>
 Content-Type: multipart/form-data; boundary=bndry
-X-ts-chunk-id: 1
-X-ts-chunk-checksum: XXXXXX (optional)
 --bndry
 Content-Disposition: form-data; name="file"; filename="sample.csv"
 
@@ -355,10 +353,7 @@ Once the data load is complete, you use **CommitLoad** to commit data to be load
 ```
 POST /ts_dataservice/v1/public/loads/cycle_id/commit
 Cookie: <token>
-X-ts-chunks: N
-X-ts-load-checksum: XXXXXX (optional)
 ```
-{% include note.html content="Data should be empty. We also check that the tsload service has received all of the chunks before doing endload." %}
 
 ### Response
 ```
@@ -430,7 +425,6 @@ Cookie: token
 Status: 200 OK
 Content-Type: text/plain
 Content-Length: xx
-Return the URL of the bad records file if any (in JSON).
 ```
 ### Example failure responses
 ```
@@ -474,10 +468,6 @@ Node does not exist: /tmp/cycle_id.bad_record
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
-## Monitoring
-
-An administrator can monitor the following:
-- Active sessions: `GET /ts_dataservice/v1/public/sessions`
 
 ## Related information
 
