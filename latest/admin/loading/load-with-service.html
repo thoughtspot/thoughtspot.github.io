@@ -24,6 +24,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://docs.thoughtspot.com/latest/js/copyCode.js"></script>
 <script src="https://docs.thoughtspot.com/latest/js/jquery.navgoco.min.js"></script>
 
 
@@ -57,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-17T10:53:23-07:00" />
+<meta property="article:published_time" content="2020-06-22T23:08:15-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Use the tsload service to load data”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Use the tsload service to load data”]","dateModified":"2020-06-17T10:53:23-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html","datePublished":"2020-06-17T10:53:23-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html"},"description":"Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Use the tsload service to load data”]","dateModified":"2020-06-22T23:08:15-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html","datePublished":"2020-06-22T23:08:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/load-with-service.html"},"description":"Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -859,6 +860,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/latest/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/latest/end-user/search/change-chart-colors.html">Change chart colors</a></li>
                               
                             
@@ -1649,6 +1656,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/latest/admin/loading/load-with-script.html">Use a script</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li class="active"><a href="/latest/admin/loading/load-with-service.html">Use the tsload service</a></li>
                               
                             
                         
@@ -2760,6 +2773,63 @@ var ss360Config = {
             
               
               <li class="levelTwo">
+                  <a href="#">Amazon Linux 2 Support</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2 overview</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-prerequisites.html">Amazon Linux 2 prerequisites</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot artifacts</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-online.html">Online Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-offline.html">Offline Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-upgrade.html">Amazon Linux 2 upgrade</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-add-node.html">Adding new nodes to clusters in Amazon Linux 2</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-packages.html">Packages installed with Amazon Linux 2</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
                   <a href="#">RHEL Support</a>
                   <ul>
                 
@@ -3536,6 +3606,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/latest/reference/tsload-service-api-ref.html">tsload service API reference</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/latest/reference/tscli-command-ref.html">tscli command reference</a></li>
                 
               
@@ -3748,8 +3824,8 @@ $('#toc').on('click', 'a', function() {
 <p>This page highlights the following:</p>
 <ul>
   <li>Setting up your cluster to use the tsload service</li>
-  <li>Using the Python3 client for writing automated ETL jobs</li>
-  <li>Client, server, and authentication details</li>
+  <li>Using the reference client for writing automated ETL jobs</li>
+  <li>Server and authentication details</li>
   <li>API workflow inside the client</li>
 </ul>
 
@@ -3760,43 +3836,29 @@ $('#toc').on('click', 'a', function() {
     <p>SSH as admin into your ThoughtSpot cluster: <code class="language-plaintext highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</p>
   </li>
   <li>
-    <p>Open http port 8442, by running the following command:
-<code class="language-plaintext highlighter-rouge">tscli firewall open-ports --ports 8442</code></p>
-  </li>
-  <li>
-    <p>Validate that the port is open, by running this command:
+    <p>Validate that port 8442 is open, by running this command:
 <code class="language-plaintext highlighter-rouge">tscli firewall status</code></p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Port 8442 is open by default in ThoughtSpot release 6.1 or later.</div>
   </li>
   <li>
     <p>Open the config file at the following location:
 <code class="language-plaintext highlighter-rouge">/usr/local/scaligent/release/production/orion/etl_http_server/prod.config</code></p>
   </li>
   <li>
-    <p>Add the following flags to the file and save it:</p>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   gflag {
-     key: "max_concurrent_target_writers"
-     value: "4"
-   }
-   gflag {
-     key: "max_dml_bytes_per_rpc"
-     value: "1048576"
-   }
-   gflag {
-     key: "etl_server_enable_load_balancer"
-     value: "false"
-   }
-&lt;!-- The default in the next command will be revised - to be provided by Anand --&gt;
-   gflag {
-     key: "bad_records_base_filepath"
-     value: "&lt;defaults:/tmp, recommended: path in one of mounted HDDs&gt;"
-   }
-</code></pre></div>    </div>
+    <p>If you cluster is behind a load-balancer, you must disable the internal etl server’s load-balancer. Contact ThoughtSpot support for assistence with this step.</p>
+  </li>
+  <li>
+    <p>By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to <code class="language-plaintext highlighter-rouge">/tmp</code>. To modify this location, contact ThoughtSpot support.</p>
   </li>
 </ol>
 
-<h2 id="using-the-python3-client">Using the Python3 client</h2>
+<h2 id="reference-client">Reference client</h2>
 
 <p>The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.</p>
+
+<p>A reference python client is located at: <todo-Anand to="" send="" the="" link="">
+This requires python3 and the details of the methods are documented within the above client.</todo-Anand></p>
 
 <p>The client includes the following methods:</p>
 <ul>
@@ -3881,7 +3943,7 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ul>
 
-<h2 id="client-server-and-authentication-details">Client, server, and authentication details</h2>
+<h2 id="server-and-authentication-details">Server and authentication details</h2>
 
 <h3 id="ports-and-server">Ports and Server</h3>
 
@@ -3890,12 +3952,6 @@ $('#toc').on('click', 'a', function() {
 <p>The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file-load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and tsload operations.</p>
 
 <p>By default, this service runs on all nodes of a ThoughtSpot cluster. This provides load distribution to address possible simultaneous loads. The tsload server uses its own load balancer. If an external load balancer is used, the tsload requests must be sticky, and the tsload load balancer should be disabled.</p>
-
-<h3 id="client">Client</h3>
-
-<p>The remote client is a simple Python client that exercises the API mentioned later in the document.</p>
-
-<p>The APIs can load from a file, and load from a stream. The difference is, the latter can send data in “chunks” to the server before committing it.</p>
 
 <h3 id="authorization-and-authentication">Authorization and Authentication</h3>
 
@@ -3909,7 +3965,7 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li>Check if the <strong>etl_http_server</strong>, responsible for the tsload service, is accessible by pinging it:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -ik https://localhost:8442/ts_dataservice/v1/public/ping
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://localhost:8442/ts_dataservice/v1/public/ping
 HTTP/1.1 200 OK
 
 Ping Received.
@@ -3971,7 +4027,7 @@ If the tsload-LoadBalancer is turned on, this returns the new IP address (for on
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 17, 2020 <br />
+        Generated: Jun 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 6/2/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>

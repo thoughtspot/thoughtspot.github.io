@@ -24,6 +24,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://docs.thoughtspot.com/latest/js/copyCode.js"></script>
 <script src="https://docs.thoughtspot.com/latest/js/jquery.navgoco.min.js"></script>
 
 
@@ -57,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/release/fixed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-17T10:53:23-07:00" />
+<meta property="article:published_time" content="2020-06-22T23:08:15-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Fixed issues”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Fixed issues”]","dateModified":"2020-06-17T10:53:23-07:00","url":"https://docs.thoughtspot.com/latest/release/fixed.html","datePublished":"2020-06-17T10:53:23-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/release/fixed.html"},"description":"These are the issues we fixed in recent ThoughtSpot releases.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Fixed issues”]","dateModified":"2020-06-22T23:08:15-07:00","url":"https://docs.thoughtspot.com/latest/release/fixed.html","datePublished":"2020-06-22T23:08:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/release/fixed.html"},"description":"These are the issues we fixed in recent ThoughtSpot releases.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -859,6 +860,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/latest/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/latest/end-user/search/change-chart-colors.html">Change chart colors</a></li>
                               
                             
@@ -1649,6 +1656,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/latest/admin/loading/load-with-script.html">Use a script</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/admin/loading/load-with-service.html">Use the tsload service</a></li>
                               
                             
                         
@@ -2760,6 +2773,63 @@ var ss360Config = {
             
               
               <li class="levelTwo">
+                  <a href="#">Amazon Linux 2 Support</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2 overview</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-prerequisites.html">Amazon Linux 2 prerequisites</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot artifacts</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-online.html">Online Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-offline.html">Offline Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-upgrade.html">Amazon Linux 2 upgrade</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-add-node.html">Adding new nodes to clusters in Amazon Linux 2</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-packages.html">Packages installed with Amazon Linux 2</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
                   <a href="#">RHEL Support</a>
                   <ul>
                 
@@ -3536,6 +3606,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/latest/reference/tsload-service-api-ref.html">tsload service API reference</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/latest/reference/tscli-command-ref.html">tscli command reference</a></li>
                 
               
@@ -3734,7 +3810,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    37 minutes
+    38 minutes
   
 </span>
  -->
@@ -3744,6 +3820,7 @@ $('#toc').on('click', 'a', function() {
   <p>These are the issues we fixed in recent ThoughtSpot releases.</p>
 
 <ul>
+  <li><a href="#6-1-1">6.1.1 Fixed issues</a></li>
   <li><a href="#6-1">6.1 Fixed issues</a></li>
   <li>
    <details>
@@ -3818,6 +3895,55 @@ $('#toc').on('click', 'a', function() {
           </details>
         </li>
       </ul>
+<p><a id="6-1-1"></a></p>
+<h2 id="611-fixed-issues">6.1.1 Fixed issues</h2>
+
+<p>These are the issues we fixed in ThoughtSpot Release 6.1.1.</p>
+
+<ul>
+  <li>
+    <p>Queries time out when loading a fact table with as many as 4 billion rows.</p>
+  </li>
+  <li>
+    <p>SpotIQ gets stuck in a loop and is unresponsive.</p>
+  </li>
+  <li>
+    <p>When multiple filters are used in a worksheet, the searches fail for only specific columns in a table.</p>
+  </li>
+  <li>
+    <p>Microsoft Internet Explorer 11 doesn’t work with ThoughtSpot embedded in an iframe, displaying an ‘access denied’ JavaScript error message.</p>
+  </li>
+  <li>
+    <p>The time required to use TQL to delete data from fact tables increases until the delete is not successful.</p>
+  </li>
+  <li>
+    <p>After upgrade to 6.1, ad sync scripts fail to run.</p>
+  </li>
+  <li>
+    <p>Inconsistent naming of disks causes mounting to fail.</p>
+  </li>
+  <li>
+    <p>The admin portal fails to load in a cluster, where it loaded before.</p>
+  </li>
+  <li>
+    <p>An older version of the ThoughtSpot user interface appears, even though cluster is running newer version.</p>
+  </li>
+  <li>
+    <p>Upgrading a cluster from 5.x release to 6.x release is unsuccessful.</p>
+  </li>
+  <li>
+    <p>Sender’s email displayed in notifications does not use the from-email configured in <code class="language-plaintext highlighter-rouge">tscli smtp</code>.</p>
+  </li>
+  <li>
+    <p>A large number of scheduled pinboards slows down the Falcon database.</p>
+  </li>
+  <li>
+    <p>After upgrade to 5.3.2.CU1, all pinboards using a specific variable (adp) do not work.</p>
+  </li>
+  <li>
+    <p>An administrator is unable to save a worksheet on the first try.</p>
+  </li>
+</ul>
 
 <p><a id="6-1"></a></p>
 <h2 id="61-fixed-issues">6.1 Fixed issues</h2>
@@ -4925,7 +5051,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 17, 2020 <br />
+        Generated: Jun 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>

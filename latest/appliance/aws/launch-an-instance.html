@@ -24,6 +24,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://docs.thoughtspot.com/latest/js/copyCode.js"></script>
 <script src="https://docs.thoughtspot.com/latest/js/jquery.navgoco.min.js"></script>
 
 
@@ -57,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-17T10:53:23-07:00" />
+<meta property="article:published_time" content="2020-06-22T23:08:15-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up AWS resources for ThoughtSpot”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-06-17T10:53:23-07:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-06-17T10:53:23-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up AWS resources for ThoughtSpot”]","dateModified":"2020-06-22T23:08:15-07:00","url":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html","datePublished":"2020-06-22T23:08:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/launch-an-instance.html"},"description":"Overview of ThoughtSpot setup in AWS Follow these steps to set up your ThoughtSpot VMs in AWS.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -859,6 +860,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/latest/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/latest/end-user/search/change-chart-colors.html">Change chart colors</a></li>
                               
                             
@@ -1649,6 +1656,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/latest/admin/loading/load-with-script.html">Use a script</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/admin/loading/load-with-service.html">Use the tsload service</a></li>
                               
                             
                         
@@ -2760,6 +2773,63 @@ var ss360Config = {
             
               
               <li class="levelTwo">
+                  <a href="#">Amazon Linux 2 Support</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2 overview</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-prerequisites.html">Amazon Linux 2 prerequisites</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot artifacts</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-online.html">Online Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-install-offline.html">Offline Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-upgrade.html">Amazon Linux 2 upgrade</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-add-node.html">Adding new nodes to clusters in Amazon Linux 2</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-packages.html">Packages installed with Amazon Linux 2</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
                   <a href="#">RHEL Support</a>
                   <ul>
                 
@@ -3536,6 +3606,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/latest/reference/tsload-service-api-ref.html">tsload service API reference</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/latest/reference/tscli-command-ref.html">tscli command reference</a></li>
                 
               
@@ -3796,11 +3872,8 @@ $('#toc').on('click', 'a', function() {
 <h3 id="rhel-ami">RHEL AMI</h3>
 <p>This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot’s CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot’s image, and refer to the <a href="/latest/appliance/rhel/rhel.html">RHEL deployment guide</a> after you launch your virtual machines.</p>
 
-<!--
-{: id='al2-ami'}
-### Amazon Linux 2 AMI
-This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.1.1, you can also deploy ThoughtSpot on AWS using Amazon Linux 2, allowing you to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. To install ThoughtSpot using Amazon Linux 2, choose your own Amazon Linux 2-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [Amazon Linux 2 deployment guide](/latest/appliance/amazon-linux-2/al2-overview.html) after you launch your virtual machines.
--->
+<h3 id="al2-ami">Amazon Linux 2 AMI</h3>
+<p>This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot’s CentOS-based image. Starting with version 6.1.1, you can also deploy ThoughtSpot on AWS using Amazon Linux 2, allowing you to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. To install ThoughtSpot using Amazon Linux 2, choose your own Amazon Linux 2-based image on the AWS console, instead of ThoughtSpot’s image, and refer to the <a href="/latest/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2 deployment guide</a> after you launch your virtual machines.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -4080,7 +4153,7 @@ Add the required storage based on your instance type (either EBS volumes or S3),
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 17, 2020 <br />
+        Generated: Jun 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 4/3/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/></p>
