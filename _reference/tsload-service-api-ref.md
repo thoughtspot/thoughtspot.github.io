@@ -45,7 +45,7 @@ Host: client.mydomain.com Accept: application/json Content-type: application/jso
 Status: 200 OK
 Set-cookie: token
 ```
-### Failure responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -82,7 +82,7 @@ Content-Length: xx
   "cycle_id": "cycle_id"
 }
 ```
-### Failure Responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again
@@ -150,7 +150,7 @@ Content-Length: xx
 Connection: Close
 Upload Complete.
 ```
-### Failure responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -219,7 +219,7 @@ Content-Length: xx
 Commit load cycle request made.
 ```
 
-### Failure Responses
+### Example failure responses
 
 ```
 Status: 401 UNAUTHORIZED
@@ -253,7 +253,7 @@ Status: 200 OK
 Content-Type: text/plain
 Content-Length: xx
 ```
-### Failure responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -287,7 +287,7 @@ Return the URL of the bad records file if any (in JSON).
    Bad_records: /ts_dataservice/v1/public/loads/cycle_id/bad_records_file
 }
 ```
-### Failure Responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -328,7 +328,7 @@ Content-Length: xx
   ....
 ]
 ```
-### Failure responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -348,7 +348,7 @@ Content-Type: text/plain
 Content-Length: xx
 Bad Records file data
 ```
-### Failure responses
+### Example failure responses
 ```
 Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
