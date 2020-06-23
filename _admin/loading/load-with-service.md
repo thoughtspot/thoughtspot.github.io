@@ -17,17 +17,12 @@ This page highlights the following:
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
-2. Validate that port 8442 is open, by running this command:
-   `tscli firewall status`
-
-   {% include note.html content="Port 8442 is open by default in ThoughtSpot release 6.1 or later." %}
-
-3. Open the config file at the following location:
+2. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-4. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer. Contact ThoughtSpot support for assistence with this step.
+3. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer. Contact ThoughtSpot support for assistence with this step.
 
-5. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.    
+4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.    
 
 ## Reference client
 
@@ -110,6 +105,8 @@ The client includes the following methods:
 ### Ports and Server
 
 Port number: 8442, HTTPS REST endpoints
+
+{% include note.html content="Port 8442 is open by default in ThoughtSpot release 6.1 or later." %}
 
 The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file-load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and tsload operations.
 
