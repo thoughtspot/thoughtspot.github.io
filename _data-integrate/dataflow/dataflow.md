@@ -8,8 +8,12 @@ permalink: /:collection/:path.html
 ---
 If your company maintains large sources of data externally, you can use ThoughtSpot DataFlow to easily ingest just the relevant information, and then query that data and use ThoughtSpot's analysis and visualization features. And after you configure scheduled refresh, your analysis visuals are always current.
 
+We recommend that you perform thse tasks before sharing ThoughtSpot DataFlow access with your organization:
+
+- [Setup DataFlow mail]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mail-setup.html)
+
 DataFlow supports the movement of data from the following external databases:
-- 
+-
 
 
 ## How it works

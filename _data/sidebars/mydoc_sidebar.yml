@@ -25,6 +25,12 @@ entries:
     - title: DataFlow Overview
       url: /data-integrate/dataflow/dataflow.html
       output: web,dataflowGD
+    - levelTwoTitle: DataFlow administration
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: DataFlow mail setup
+        url: /data-integrate/dataflow/dataflow-mail-setup.html
+        output: web,dataflowGD
     - levelTwoTitle: Amazon Aurora
       output: web,dataflowGD
       levelTwoItems:
