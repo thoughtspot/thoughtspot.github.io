@@ -24,6 +24,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://docs.thoughtspot.com/6.1/js/copyCode.js"></script>
 <script src="https://docs.thoughtspot.com/6.1/js/jquery.navgoco.min.js"></script>
 
 
@@ -57,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-17T10:46:59-07:00" />
+<meta property="article:published_time" content="2020-06-22T23:04:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“tsload service API reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“tsload service API reference”]","dateModified":"2020-06-17T10:46:59-07:00","url":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html","datePublished":"2020-06-17T10:46:59-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html"},"description":"Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“tsload service API reference”]","dateModified":"2020-06-22T23:04:35-07:00","url":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html","datePublished":"2020-06-22T23:04:35-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html"},"description":"Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -859,6 +860,12 @@ var ss360Config = {
                         
                           
                               
+                                  <li><a href="/6.1/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a></li>
+                              
+                            
+                        
+                          
+                              
                                   <li><a href="/6.1/end-user/search/change-chart-colors.html">Change chart colors</a></li>
                               
                             
@@ -1649,6 +1656,12 @@ var ss360Config = {
                           
                               
                                   <li><a href="/6.1/admin/loading/load-with-script.html">Use a script</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/6.1/admin/loading/load-with-service.html">Use the tsload service</a></li>
                               
                             
                         
@@ -2760,6 +2773,63 @@ var ss360Config = {
             
               
               <li class="levelTwo">
+                  <a href="#">Amazon Linux 2 Support</a>
+                  <ul>
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2 overview</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-prerequisites.html">Amazon Linux 2 prerequisites</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot artifacts</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-install-online.html">Online Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-install-offline.html">Offline Amazon Linux 2 install</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-upgrade.html">Amazon Linux 2 upgrade</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-add-node.html">Adding new nodes to clusters in Amazon Linux 2</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/6.1/appliance/amazon-linux-2/al2-packages.html">Packages installed with Amazon Linux 2</a></li>
+                      
+                   
+                
+                    </ul>
+                  </li>
+              
+            
+              
+              <li class="levelTwo">
                   <a href="#">RHEL Support</a>
                   <ul>
                 
@@ -3536,6 +3606,12 @@ var ss360Config = {
             
               
                 
+                  <li class="active"><a href="/6.1/reference/tsload-service-api-ref.html">tsload service API reference</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/6.1/reference/tscli-command-ref.html">tscli command reference</a></li>
                 
               
@@ -3736,7 +3812,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    10 minutes
   
 </span>
  -->
@@ -3780,29 +3856,275 @@ Host: client.mydomain.com Accept: application/json Content-type: application/jso
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
 Set-cookie: token
 </code></pre></div></div>
-<h3 id="failure-responses">Failure responses</h3>
+<h3 id="example-failure-responses">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
 </code></pre></div></div>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 </code></pre></div></div>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> To indicate a new login, we use session (noun), instead of login (verb). If the cookie is not passed in subsequent calls, then requests fail.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If the cookie is not passed in subsequent calls, then requests fail.</div>
 
 <h2 id="startload">StartLoad</h2>
 
 <p>After <strong>login</strong>, you use this API start the data load operation. The API call to be used here is “/ts_dataservice/v1/public/loads”. If the load is initiated successfully, the cycle ID, and the load balancer IP are returned. Once complete, you use <strong>Load</strong> to start the actual data load.</p>
 
-<h3 id="request-1">Request</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /ts_dataservice/v1/public/loads  HTTP/1.1  
-Cookie: token
+<h3 id="request-parameters-1">Request Parameters</h3>
+
+<h4 id="target">Target</h4>
+
+<p>Specification of the target. This DB/Schema/Table must pre-exist on the destination ThoughtSpot system.</p>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>database</code></td> <td>string</td> <td>database in ThoughtSpot</td> <td>&nbsp;</td></tr>
+    <tr> <td><code>schema</code>(optional)</td> <td>string</td> <td>schema in ThoughtSpot</td> <td>falcon_default_schema</td></tr>
+    <tr> <td><code>table</code></td> <td>string</td> <td>table in ThoughtSpot</td><td>&nbsp;</td> </tr>
+  </tbody>
+</table>
+
+<h4 id="format">Format</h4>
+
+<p>Format specifiers for parsing the input data.</p>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>type</code>(optional)</td> <td>string</td> <td>field separator character in source data. &nbsp;Either <code>csv</code> or <code>delimited</code> </td> <td>csv</td> </tr>
+    <tr> <td><code>field_separator</code>(optional)</td> <td>string</td> <td>input format. Either <code>.csv</code> or <code>delimited</code> </td> <td>","</td></tr>
+    <tr> <td><code>trailing_field_separator</code>(optional)</td> <td>boolean</td> <td>True if input data has trailing field separator, false otherwise.</td> <td>false</td></tr>
+    <tr> <td><code>enclosing_character</code>(optional)</td> <td>string</td> <td>enclosing character in csv source format. This option applies only to csv format.</td> <td>"\""</td></tr>
+    <tr> <td><code>escape_character</code>(optional)</td> <td>string</td> <td>escape character in source data. This applies only to delimited data format. This option is ignored for other data sources.
+</td> <td>""</td></tr>
+    <tr> <td><code>null_value</code>(optional)</td> <td>string</td> <td>escape character in source data. This applies only to delimited data format. This option is ignored for other data sources.
+    </td> <td>"(null)"</td></tr>
+    <tr> <td><code>has_header_row</code>(optional)</td> <td>boolean</td> <td>True if input data file has header row, false otherwise.</td> <td>false</td> </tr>
+    <tr> <td><code>flexible</code>(optional)</td> <td>boolean</td> <td>Whether input data file exactly matches target schema. When true, attempts to load as follows. If extra columns are present in input file, these are discarded. If fewer columns are  present in input file, missing columns are filled with nulls. When false, load proceeds if input data file exactly matches target schema.</td> <td>false</td> </tr>
+  </tbody>
+</table>
+
+<h5 id="date_time">date_time</h5>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>converted_to_epoch</code>(optional)</td> <td>boolean</td> <td>Whether date or datetime fields are already converted to epoch in source CSV. This option is ignored for other source types.</td> <td>true</td> </tr>
+    <tr> <td><code>date_time_format</code>(optional)</td> <td>string</td> <td>Format string for datetime values. Default is yearmonthday hour:minute:second e.g. Dec 30th, 2001 1:15:12 is represented as 20011230 01:15:12. System accepts date time format specifications supported in strptime datetime library.</td> <td>"%Y%m%d %H:%M:%S"</td> </tr>
+    <tr> <td><code>date_format</code>(optional)</td> <td>string</td> <td>Format string for date values. Default is yearmonthday e.g. Dec 30th, 2001 is represented as 20011230. System accepts date format specifications supported in strptime datetime library.</td> <td>"%Y%m%d"</td> </tr>
+    <tr> <td><code>time_format</code>(optional)</td> <td>string</td> <td>Format string for time values. Default is hour:minute:second System accepts time format specifications supported in strptime datetime library.
+    </td> <td>"%H:%M:%S"</td> </tr>
+    <tr> <td><code>skip_second_fraction</code>(optional)</td> <td>boolean</td> <td>When true, skip fractional part of seconds e.g., milliseconds, microseconds or nanoseconds from datetime or time values if present in source data. This option is ignored for other source types. Note that skipping fractional component (e.g. ms) from input data can impact upsert behavior if input data has non-unique fractional values for same time or datetime values.
+    </td> <td>false</td> </tr>
+  </tbody>
+</table>
+
+<h5 id="boolean">boolean</h5>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>use_bit_values</code>(optional)</td> <td>boolean</td> <td>If true, source csv uses a bit for boolean values. Here in source, false is represented as 0x0 and true as 0x1. If false, boolean values are interpreted using flag boolean_representation. This option is valid for CSV only. Ignored for other types.</td> <td>false</td> </tr>
+    <tr> <td><code>true_format</code>(optional)</td> <td>string</td> <td>Represents True for boolean values in input.</td> <td>T</td> </tr>
+    <tr> <td><code>false_format</code>(optional)</td> <td>string</td> <td>Represents False for boolean values in input.</td> <td>F</td> </tr>
+  </tbody>
+</table>
+
+<h4 id="load_options">load_options</h4>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>empty_target</code>(optional)</td> <td>boolean</td> <td>If true, current rows in target table or file are dropped before loading new data. If false, current rows are appended to target table or file.</td> <td>false</td></tr>
+    <tr> <td><code>max_ignored_rows</code>(optional)</td> <td>integer</td> <td>Max number of rows that can be ignored for successful load. If number of ignored rows exceeds this limit, the load is aborted.
+</td> <td>0</td></tr>
+  </tbody>
+</table>
+
+<h4 id="advanced_options">advanced_options</h4>
+
+<table>
+   <colgroup>
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
+         <th>Description</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>max_reported_parsing_errors</code>(optional)</td> <td>integer</td> <td>Maximum number of parsing errors to report back along with the status.</td> <td>100</td></tr>
+  </tbody>
+</table>
+
+<h4 id="example-use-of-parameters">Example use of parameters</h4>
+<!--  -->
+<!-- <div class="code-header">
+    
+    
+    <div class="copy-code-container">
+        <button class="copy-code-button"
+             aria-label="Copy code block to your clipboard"
+             data-code="--&gt;
+```
 {
-&lt;load params here. For creating data load. This is a json object.&gt;
-}
+      target : {
+          database : &quot;&lt;DB_NAME&gt;&quot;,
+          schema : &quot;falcon_default_schema&quot;,
+          table : &quot;&lt;TABLE_NAME&gt;&quot;
+      },
+      format : {
+          type : &quot;CSV&quot;,
+          field_separator : &quot;,&quot;,
+          trailing_field_separator : false,
+          enclosing_character : &quot;\&quot;&quot;,
+          escape_character : &quot;&quot;,
+          null_value : &quot;(null)&quot;,
+
+          date_time : {
+              converted_to_epoch : false,
+              date_time_format : &quot;%Y%m%d %H:%M:%S&quot;,
+              date_format : &quot;%Y%m%d&quot;,
+              time_format : &quot;%H:%M:%S&quot;,
+              skip_second_fraction : false
+          }
+          boolean : {
+              use_bit_values : false,
+              true_format : &quot;T&quot;,
+              false_format : &quot;F&quot;
+          }
+          has_header_row : false,
+          flexible : false
+    },
+    load_options : {
+        empty_target : false,
+        max_ignored_rows : 0,
+    },
+    advanced_options : {
+        max_reported_parsing_errors : 100
+    }
+  }
+```
+&lt;!-- "
+        ></button>
+    </div>
+    
+</div>
+```javascript
+-->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+      target : {
+          database : "&lt;DB_NAME&gt;",
+          schema : "falcon_default_schema",
+          table : "&lt;TABLE_NAME&gt;"
+      },
+      format : {
+          type : "CSV",
+          field_separator : ",",
+          trailing_field_separator : false,
+          enclosing_character : "\"",
+          escape_character : "",
+          null_value : "(null)",
+
+          date_time : {
+              converted_to_epoch : false,
+              date_time_format : "%Y%m%d %H:%M:%S",
+              date_format : "%Y%m%d",
+              time_format : "%H:%M:%S",
+              skip_second_fraction : false
+          }
+          boolean : {
+              use_bit_values : false,
+              true_format : "T",
+              false_format : "F"
+          }
+          has_header_row : false,
+          flexible : false
+    },
+    load_options : {
+        empty_target : false,
+        max_ignored_rows : 0,
+    },
+    advanced_options : {
+        max_reported_parsing_errors : 100
+    }
+  }
+</code></pre></div></div>
+<!-- 
+```
+ -->
+
+<h3 id="request-1">Request</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i -X POST -b 'JSESSIONID=&lt;GUID-XYZ&gt;' -d '{"target_database": "&lt;DB1&gt;", "target_schema": "&lt;SCHEMA1&gt;", "target_table": "&lt;TABLE1&gt;", "field_separator": ",", "empty_target": false}' https://&lt;TS_CLUSTER&gt;:8442/ts_dataservice/v1/public/loads
 </code></pre></div></div>
 
 <h3 id="response-1">Response</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 202 Accepted
 Content-Type: text/plain
 Content-Length: xx
 {
@@ -3813,7 +4135,7 @@ Content-Length: xx
   "cycle_id": "cycle_id"
 }
 </code></pre></div></div>
-<h3 id="failure-responses-1">Failure Responses</h3>
+<h3 id="example-failure-responses-1">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again
 </code></pre></div></div>
@@ -3831,49 +4153,26 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 <p>Use this API to load your data.
 Data load can be called for multiple chunks of data for the same cycle ID. All of this data is uploaded to the ThoughtSpot cluster unless a commit load is issued.</p>
 
-<h3 id="request-parameters-1">Request Parameters</h3>
-
-<table>
-   <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
-   </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-    <tr> <td><code>X-ts-chunk-id</code></td> <td>string</td> <td>ThoughtSpot chunk ID</td> </tr>
-    <tr> <td><code>X-ts-chunk-checksum</code></td> <td>string</td> <td>ThoughtSpot chunk checksum</td> </tr>
-  </tbody>
-</table>
-
 <h3 id="request-2">Request</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /ts_dataservice/v1/public/loads/cycle_id
 Cookie: &lt;token&gt;
 Content-Type: multipart/form-data; boundary=bndry
-X-ts-chunk-id: 1
-X-ts-chunk-checksum: XXXXXX (optional)
 --bndry
 Content-Disposition: form-data; name="file"; filename="sample.csv"
 
 &lt;CSV Data&gt;
 --bndry--
 </code></pre></div></div>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> We support multipart form/data, as well as direct data upload.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> We only support multipart form/data.</div>
 
 <h3 id="response-2">Response</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 202 Accepted
 Content-Type: text/plain
 Content-Length: xx
 Connection: Close
 Upload Complete.
 </code></pre></div></div>
-<h3 id="failure-responses-2">Failure responses</h3>
+<h3 id="example-failure-responses-2">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
 </code></pre></div></div>
@@ -3897,44 +4196,20 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 <p>Once the data load is complete, you use <strong>CommitLoad</strong> to commit data to be loaded into the Falcon database.</p>
 
-<h3 id="request-parameters-2">Request Parameters</h3>
-
-<table>
-   <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
-   </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-    <tr> <td><code>X-ts-chunks</code></td> <td>string</td> <td>Number of chunks</td> </tr>
-    <tr> <td><code>X-ts-load-checksum</code></td> <td>string</td> <td>Checksum of full data</td> </tr>
-  </tbody>
-</table>
-
 <h3 id="request-3">Request</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /ts_dataservice/v1/public/loads/cycle_id/commit
 Cookie: &lt;token&gt;
-X-ts-chunks: N
-X-ts-load-checksum: XXXXXX (optional)
 </code></pre></div></div>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Data should be empty. We also check that the tsload service has received all of the chunks before doing endload.</div>
 
 <h3 id="response-3">Response</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 202 Accepted
 Content-Type: text/plain
 Content-Length: xx
 Commit load cycle request made.
 </code></pre></div></div>
 
-<h3 id="failure-responses-3">Failure Responses</h3>
+<h3 id="example-failure-responses-3">Example failure responses</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
@@ -3962,7 +4237,7 @@ Cookie: token
 Content-Type: text/plain
 Content-Length: xx
 </code></pre></div></div>
-<h3 id="failure-responses-4">Failure responses</h3>
+<h3 id="example-failure-responses-4">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
 </code></pre></div></div>
@@ -3976,7 +4251,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 <p>Use the api to get the current status of a load.</p>
 
-<h3 id="request-5">REQUEST</h3>
+<h3 id="request-5">Request</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /ts_dataservice/v1/loads/cycle_id
 Cookie: token
@@ -3985,13 +4260,8 @@ Cookie: token
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
 Content-Type: text/plain
 Content-Length: xx
-Return the URL of the bad records file if any (in JSON).
-{
-   Status: status of load - this could itself be json.
-   Bad_records: /ts_dataservice/v1/public/loads/cycle_id/bad_records_file
-}
 </code></pre></div></div>
-<h3 id="failure-responses-5">Failure Responses</h3>
+<h3 id="example-failure-responses-5">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
 </code></pre></div></div>
@@ -4001,39 +4271,7 @@ User does not have required privileges. Please contact your administrator.
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 </code></pre></div></div>
-<h2 id="status-of-all-loads">Status of all loads</h2>
 
-<p>Use this api to get the status of all current data loads.</p>
-
-<h3 id="request-6">Request</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /ts_dataservice/v1/public/loads
-Cookie: token
-</code></pre></div></div>
-<p>Response</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200  OK
-Content-Type: text/plain
-Content-Length: xx
-[
-  {
-    Cycle_id: XXX,
-    Status: XXX,
-    BadRecordsUrl: XXX
-  },
-  {
-    Cycle_id: XXX,
-    Status: XXX,
-    BadRecordsUrl: XXX,
-  },
-  ....
-]
-</code></pre></div></div>
-<h3 id="failure-responses-6">Failure responses</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
-Unable to verify user. Please login again.
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 403 FORBIDDEN
-User does not have required privileges. Please contact your administrator.
-</code></pre></div></div>
 <h2 id="bad-records">Bad records</h2>
 
 <p>Use this api to view the bad records file data.</p>
@@ -4044,7 +4282,7 @@ Content-Type: text/plain
 Content-Length: xx
 Bad Records file data
 </code></pre></div></div>
-<h3 id="failure-responses-7">Failure responses</h3>
+<h3 id="example-failure-responses-6">Example failure responses</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 401 UNAUTHORIZED
 Unable to verify user. Please login again.
 </code></pre></div></div>
@@ -4057,13 +4295,6 @@ Node does not exist: /tmp/cycle_id.bad_record
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 </code></pre></div></div>
-<h2 id="monitoring">Monitoring</h2>
-
-<p>An administrator can monitor the following:</p>
-<ul>
-  <li>Active sessions: <code class="language-plaintext highlighter-rouge">GET /ts_dataservice/v1/public/sessions</code></li>
-  <li>Status of all loads: <code class="language-plaintext highlighter-rouge">GET /ts_dataservice/v1/public/loads</code></li>
-</ul>
 
 <h2 id="related-information">Related information</h2>
 
@@ -4094,7 +4325,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 17, 2020 <br />
+        Generated: Jun 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
