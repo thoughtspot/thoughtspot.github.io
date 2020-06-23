@@ -20,9 +20,19 @@ This page highlights the following:
 2. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-3. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer. Contact ThoughtSpot support for assistence with this step.
+3. If you cluster is behind a load-balancer, you must disable the internal etl server's load-balancer. Contact ThoughtSpot support for assistance with this step.
 
-4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.    
+4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.
+
+5. If the cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to the service. Contact ThoughtSpot support for assistance with this step.
+
+6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
+   ```
+   curl -i https://localhost:8442/ts_dataservice/v1/public/ping
+   HTTP/1.1 200 OK
+
+   Ping Received.
+   ```    
 
 ## Reference client
 
@@ -122,28 +132,20 @@ tsload is available only to users who have the “Administrator” or “Manage 
 
 The typical workflow of the API inside the client is the following:
 
-1. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
-   ```
-   curl -i https://localhost:8442/ts_dataservice/v1/public/ping
-   HTTP/1.1 200 OK
+1. `<standard-thoughspot-cluster-url> Login`.
 
-   Ping Received.
-   ```
-
-2. `<standard-thoughspot-cluster-url> Login`.
-
-3. `<standard-thoughspot-cluster-url> StartLoad`.
+2. `<standard-thoughspot-cluster-url> StartLoad`.
    If the tsload-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
 
-4. `<thoughtspot-node-ip-returned-from-2> Load`.
+3. `<thoughtspot-node-ip-returned-from-2> Load`.
    1. Repeat this step until all the rows are sent.
    2. In the case of a file, you can call this in one operation. In the case of a stream, you call this multiple times, thus avoiding buffering large data on the client side.
 
-5. `<thoughtspot-node-ip-returned-from-2> EndLoad`.
+4. `<thoughtspot-node-ip-returned-from-2> EndLoad`.
    1. This will start the commit process.
    2. It’ll take some time for the data to be committed to Falcon Database.
 
-6. `<thoughtspot-node-ip-returned-from-2> GetStatus`.
+5. `<thoughtspot-node-ip-returned-from-2> GetStatus`.
    1. To monitor the state of the commit.
    2. Wait until it returns “DONE”.
 
