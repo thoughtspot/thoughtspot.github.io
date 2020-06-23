@@ -9,7 +9,7 @@ Another option for loading data in bulk, is to use the tsload service. The tsloa
 
 This page highlights the following:
 - Setting up your cluster to use the tsload service
-- Using the Python3 client for writing automated ETL jobs
+- Using the reference client for writing automated ETL jobs
 - Client, server, and authentication details
 - API workflow inside the client
 
@@ -17,37 +17,25 @@ This page highlights the following:
 
 1. SSH as admin into your ThoughtSpot cluster: `ssh admin@<cluster-ip-address or hostname>`.
 
-2. Open http port 8442, by running the following command:
-   `tscli firewall open-ports --ports 8442`
-
-3. Validate that the port is open, by running this command:
-   `tscli firewall status`
-
-4. Open the config file at the following location:
+2. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-5. Add the following flags to the file and save it:
-   ```
-      gflag {
-        key: "max_concurrent_target_writers"
-        value: "4"
-      }
-      gflag {
-        key: "max_dml_bytes_per_rpc"
-        value: "1048576"
-      }
-      gflag {
-        key: "etl_server_enable_load_balancer"
-        value: "false"
-      }
-<!-- The default in the next command will be revised - to be provided by Anand -->
-      gflag {
-        key: "bad_records_base_filepath"
-        value: "<defaults:/tmp, recommended: path in one of mounted HDDs>"
-      }
-```  
+3. If your cluster is behind a load balancer, you must disable the internal etl server’s load balancer. Contact ThoughtSpot support for assistance with this step.
 
-## Using the Python3 client
+4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to /tmp. To modify this location, contact ThoughtSpot support.
+
+5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to the service. Contact ThoughtSpot support for assistance with this step.
+
+6. Check if the etl_http_server, responsible for the tsload service, is accessible by pinging it:
+
+```
+curl -i https://localhost:8442/ts_dataservice/v1/public/ping
+HTTP/1.1 200 OK
+
+Ping Received.
+```
+
+## Reference client
 
 The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
 
@@ -120,11 +108,13 @@ The client includes the following methods:
     }
     ```
 
-## Client, server, and authentication details
+## Server, and authentication details
 
 ### Ports and Server
 
 Port number: 8442, HTTPS REST endpoints
+
+{% include note.html content="Port 8442 is open by default in ThoughtSpot release 6.1 or later." %}
 
 The load server resides on a different port compared to standard ThoughtSpot services. This is because the service tends to carry heavy file-load operations, and having a separate web server creates the needed isolation between standard ThoughtSpot services and tsload operations.
 
@@ -146,28 +136,20 @@ tsload is available only to users who have the “Administrator” or “Manage 
 
 The typical workflow of the API inside the client is the following:
 
-1. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
-   ```
-   curl -ik https://localhost:8442/ts_dataservice/v1/public/ping
-   HTTP/1.1 200 OK
+1. `<standard-thoughspot-cluster-url> Login`.
 
-   Ping Received.
-   ```
-
-2. `<standard-thoughspot-cluster-url> Login`.
-
-3. `<standard-thoughspot-cluster-url> StartLoad`.
+2. `<standard-thoughspot-cluster-url> StartLoad`.
    If the tsload-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
 
-4. `<thoughtspot-node-ip-returned-from-2> Load`.
+3. `<thoughtspot-node-ip-returned-from-2> Load`.
    1. Repeat this step until all the rows are sent.
    2. In the case of a file, you can call this in one operation. In the case of a stream, you call this multiple times, thus avoiding buffering large data on the client side.
 
-5. `<thoughtspot-node-ip-returned-from-2> EndLoad`.
+4. `<thoughtspot-node-ip-returned-from-2> EndLoad`.
    1. This will start the commit process.
    2. It’ll take some time for the data to be committed to Falcon Database.
 
-6. `<thoughtspot-node-ip-returned-from-2> GetStatus`.
+5. `<thoughtspot-node-ip-returned-from-2> GetStatus`.
    1. To monitor the state of the commit.
    2. Wait until it returns “DONE”.
 
