@@ -42,16 +42,14 @@ To add a new connection to Teradata:
 
 8. Click **Confirm**.
 
-  <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/gbq-selecttables.png "Select tables and columns for your connection") -->
+    Once the connection is added, you can search your Teradata database right away by clicking **Search now**.
+    ![The "Connection created" screen]({{ site.baseurl }}/images/teradata-connectioncreated.png "The "Connection created" screen")
 
-   Once the connection is added, you can search your Teradata database right away by clicking **Search now**.
-  ![The "Connection created" screen]({{ site.baseurl }}/images/teradata-connectioncreated.png "The "Connection created" screen")
+    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
-   Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
+    The connection you just created is a link to the external data source. If there are any joins in the selected tables of the external data source, those are imported into ThoughtSpot.
 
-The connection you just created is a link to the external data source. If there are any joins in the selected tables of the external data source, those are imported into ThoughtSpot.
-
-You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
+    You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
 ## Related information
 - [Modify a Teradata connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-modify.html)
