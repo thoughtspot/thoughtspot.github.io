@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/customstyles.css">
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/boxshadowproperties.css">
+<link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/expand.css">
 <!-- most color styles are extracted out to here -->
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.2/css/theme-new-brand.css">
 
@@ -33,6 +34,48 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="https://docs.thoughtspot.com/5.2/js/toc.js"></script>
 <script src="https://docs.thoughtspot.com/5.2/js/customscripts.js"></script>
+
+<!-- begin feedback form code -->
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+  margin-right: 10px;
+}
+
+#panel {
+  display: none;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#flop").click(function(){
+    $("#panel").slideUp("slow");
+  });
+});
+</script>
+<style>
+#panel, #flop {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+}
+
+#panel {
+  padding: 5px;
+}
+</style>
+<!-- end feedback form code -->
 
 <link rel="shortcut icon" href="https://docs.thoughtspot.com/5.2/images/favicon.ico">
 
