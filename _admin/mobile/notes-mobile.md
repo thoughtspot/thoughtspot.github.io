@@ -5,8 +5,20 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.4 is now available. These release notes include information about new features,
+ThoughtSpot mobile 1.4.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+{: id="1-4-1-fixed"}
+## 1.4.1 Fixed Issues
+
+The following issues are fixed in the 1.4.1 iOS release:
+
+- The app crashes when Pinboard filters are changed.
+
+The following issues are fixed in the 1.4.1 Android release:
+
+- The app crashes when Pinboard filters are changed.
+- Table visualizations cannot be scrolled vertically.
 
 {: id="1-4-new"}
 ## 1.4 New Features and Functionality
