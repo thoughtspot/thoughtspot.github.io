@@ -1,11 +1,11 @@
 ---
-title: [Sync data through Azure Synapse connection]
-last_updated: 6/17/2020
+title: [Sync data through Snowflake connection]
+last_updated: 6/22/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After using ThoughtSpot DataFlow to establish a connection to an Azure Synapse database, you can create automatic data updates, to seamlessly refresh your data.
+After using ThoughtSpot DataFlow to establish a connection to a Snowflake database, you can create automatic data updates, to seamlessly refresh your data.
 
 To sync your data, follow these steps:
 
@@ -13,7 +13,7 @@ To sync your data, follow these steps:
 
 4. Specify the sync properties:
 
-   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-azure-synapse-create.png "Enter connection details")-->
+   <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-azure-snowflake-sync.png "Enter sync details")-->
 
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-data-extraction-mode)<br/>Specify the extraction type.<br/>Mandatory field.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-column-delimiter)<br/>Specify the column delimiter character.<br/>Mandatory field.
