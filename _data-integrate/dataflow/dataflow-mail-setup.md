@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Follow these steps to setup the the mail server for your DataFlow instance.
+Follow these steps to set up the the mail server for your DataFlow instance.
 
 You must have administrator privileges.
 
@@ -40,3 +40,5 @@ You must have administrator privileges.
        <dt>Admin email ID</dt>
        <dd>The email account that receives messages from “Contact admin” form.<br/>Mandatory field.</dd></dlentry>
    </dl>
+
+4. Click **Save**.   
