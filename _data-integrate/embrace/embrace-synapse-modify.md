@@ -57,7 +57,7 @@ To remap a connection:
 
    ![Select a connection to remap]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to remap")
 
-4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
+4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
    ![Remap a connection]({{ site.baseurl }}/images/synapse-remapping.png "Remap a connection")
 
