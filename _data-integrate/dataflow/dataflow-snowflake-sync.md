@@ -7,35 +7,7 @@ permalink: /:collection/:path.html
 ---
 After using ThoughtSpot DataFlow to establish a connection to a Snowflake database, you can create automatic data updates, to seamlessly refresh your data.
 
-To sync your data, perform these tasks:
-
-## Select table
-{% include content/dataflow/select-table.md %}
-
-## Specify sync schedule
-{% include content/dataflow/schedule.md %}
-
-## Map tables
-
-{% include content/dataflow/map-tables.md %}
-
-## Map columns
-
-{% include content/dataflow/map-columns.md %}
-
-## Set sync properties
-
-### Basic sync properties
-
-{% include content/dataflow/sync-properties.md %}
-
-### Scripting for sync
-
-{% include content/dataflow/sync-scripts.md %}
-
-### Connector-specific sync properties
-
-{% include content/dataflow/sync-conn-Properties.md %}
+{% include content/dataflow/sync-for-databases.md %}
 
 4. Specify the sync properties for Snowflake:
 
