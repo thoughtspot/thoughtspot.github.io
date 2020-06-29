@@ -2,11 +2,11 @@ Immediately after creating a new connection, the connection detail page appears.
 
 When you schedule you create a sync, you have the following scheduling options:
 
-- [Hourly](#hourly_sync)
-- [Daily](#daily_sync) (default)
-- [Weekly](#weekly_sync)
-- [Monthly](#monthly_sync)
-- [Does not repeat](#does_not_repeat)
+- Hourly
+- Daily(default)
+- Weekly
+- Monthly
+- Does not repeat
 
 After you specify the sync schedule, click **Save and sync now**. This action saves the schedule, and starts the data sync immediately.
 
