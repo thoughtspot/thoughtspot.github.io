@@ -10,7 +10,7 @@ When you schedule you create a sync, you have the following scheduling options:
 
 After you specify the sync schedule, click **Save and sync now**. This action saves the schedule, and starts the data sync immediately.
 
-Alternatively, if you click **Save**, the system saves the schedule, but does not sync the data. The first sync starts on the specified schedule.
+Alternatively, if you click **Save**, the system saves the schedule, but does not sync the data. This gives you the opportunity to fine-tune the column mapping between external data sources and tables inside ThoughtSpot, such as naming, visibility, data type conversion, conditions, and so on. The first sync starts on the specified schedule.
 
 ### Hourly sync
 
