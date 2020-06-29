@@ -9,6 +9,5 @@ DataFlow enables you to connect to the Snowflake database, to use your data in T
 
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-sync.html)
-- [Modify a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-modify.html)
 - [Best practices]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-best.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html)
