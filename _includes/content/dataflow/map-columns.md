@@ -1,4 +1,4 @@
-To map the tables and columns between the external tables and ThoughtSpot's internal database, follow these steps:
+To map the columns of the external tables to columns in ThoughtSpot's internal tables, follow these steps:
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
 
@@ -6,32 +6,18 @@ To map the tables and columns between the external tables and ThoughtSpot's inte
 
 2. Choose the **Map tables and columns** tab.
 
-3. Notice that the external database and table already appear, under **External data source**.
+3. Scroll down, to **Map the columns...** section.
 
-4. Specify the following information for internal ThoughtSpot storage:
+4. Specify the following information for columns:
 
-   ![Map tables and columns]({{ site.baseurl }}/images/dataflow-map-tables-columns.png "Map tables and columns")
+   ![Map columns]({{ site.baseurl }}/images/dataflow-map-columns.png "Map columns")
 
-   <dl id="ts-target">
-     <dlentry id="ts-target-database">
-    <dt>ThoughtSpot database</dt>
-    <dd>Select an existing ThoughtSpot database from the drop-down menu.
-      <br/>Mandatory field.</dd></dlentry>
-     <dlentry id="ts-target-schema">
-       <dt>ThoughtSpot schema</dt>
-       <dd>Select an existing ThoughtSpot schema from the drop-down menu.
-      <br/>Mandatory fields.</dd></dlentry>
-     <dlentry id="ts-target-new-existing">
-    <dt>New or Existing table</dt>
-    <dd>Mandatory field.<br/>
-      <dl>
-        <dlentry>
-          <dt>Create a new table</dt>
-          <dd>Choose this option when you want to load data into a new table.
-          <br/>Specify the table name. When you <strong>Save</strong> or <strong>Save and sync</strong>, DataFlow automatically creates a new table inside ThoughtSpot.</dd></dlentry>
-        <dlentry><dt>Choose existing table</dt><dd>Choose this option to load data into a table that already exists inside ThoughtSpot. <br/>Select the table name from the drop-down menu.</dd></dlentry></dl>
-      </dd></dlentry>
-     <dlentry id="ts-target-table-name">
-        <dt>ThoughtSpot table</dt>
-        <dd>The name of the target table for data sync, inside ThoughtSpot.
-        <br/>Mandatory field.</dd></dlentry></dl>
+   1. Select (or deselect) **columns** for syncing into ThoughtSpot.<br/>By default, all columns are selected.
+   2. **Search** for columns by name; this is very useful for very wide tables.
+   3. **Rename** columns in the ThoughtSpot table, for easier search.
+   4. **Change the data type** of the column inside the ThoughtSpot table.<br/>For example, if you know you have integer data, change the default **DOUBLE** datatype to **INT32**.
+   5. Set **Primary keys** of the table by toggling the selector to the 'on' position.<br/>Note that several columns may be primary keys.
+   6. Set the **Sharding keys** of the table by toggling the selector to the 'on' position.<br/>Note that sharding key columns must be primary key columns.
+   7. Specify the **Number of shards** in the table.
+
+5. Save your work by clicking **Save**.<br/>Alternatively, click **Save and sync now** to save your work and sync data at the same time.
