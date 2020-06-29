@@ -1,12 +1,12 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 6/10/2020
+last_updated: 6/29/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TSL file
@@ -14,6 +14,8 @@ To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answ
 The `TSL` file for Scriptable Worksheets has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Worksheet.
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -65,6 +67,13 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <a href="#expr">expr</a>: &lt;<em>formula_definition_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;
+  <a href="#filters">filters</a>:
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
   <a href="#worksheet_columns">worksheet_columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#description">description</a>: &lt;<em>optional_column_description</em>&gt;
@@ -117,6 +126,8 @@ See the [Parameters](#parameters) section for details about the keywords used in
 The `TSL` file for Scriptable Answers has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TSL file to specify conditional formatting.
 
 <pre>
 <a href="#answer">answer</a>:
@@ -215,6 +226,8 @@ See the [Parameters](#parameters) section for details about the keywords used in
 The `TSL` file for Scriptable Pinboards has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Pinboard, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Pinboard.
 
 <pre>
 <a href="#pinboard">pinboard</a>:
@@ -377,7 +390,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="filters">
     <dt>filters</dt>
-    <dd>Contains specifications for Pinboard filters.</dd>
+    <dd>Contains specifications for Pinboard and Worksheet filters.</dd>
   </dlentry>
 
   <dlentry id="format_pattern">
@@ -542,7 +555,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="oper">
     <dt>oper</dt>
-    <dd>The operator of the Pinboard filter. Accepted operators are <code>in</code>, <code>not in</code>, <code>between</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
+    <dd>The operator of the Pinboard or Worksheet filter. Accepted operators are <code>in</code>, <code>not in</code>, <code>between</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
   </dlentry>
 
   <dlentry id="ordered_column_ids">
@@ -666,7 +679,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="values">
     <dt>values</dt>
-    <dd>The values being filtered (excluded or included) in a Pinboard.
+    <dd>The values being filtered (excluded or included) in a Pinboard or Worksheet.
     </dd>
   </dlentry>  
 
@@ -707,8 +720,6 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 ## Limitations of working with TSL files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, or Pinboard through TSL.
-
-* It is not possible to include Worksheet filters in the TSL script. You cannot export or import a Worksheet with filters.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
