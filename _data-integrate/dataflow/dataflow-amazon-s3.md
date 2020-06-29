@@ -9,6 +9,5 @@ DataFlow enables you to connect to the Amazon S3 filesystem, to use your data in
 
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-sync.html)
-- [Modify a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-modify.html)
 - [Best practices]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-best.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html)
