@@ -118,7 +118,9 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 
 ### Does not repeat
 
-![Shedule one-time sync]({{ site.baseurl }}/images/dataflow-schedule-no-repeat.png "Shedule one-time sync")
+
+![Schedule one-time sync]({{ site.baseurl }}/images/dataflow-schedule-no-repeat.png "Schedule one-time sync")
+
 
 <dl id="schedule-no-repeat">
   <dlentry id="schedule-no-repeat">
