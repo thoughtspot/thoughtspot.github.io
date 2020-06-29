@@ -7,11 +7,31 @@ permalink: /:collection/:path.html
 ---
 After using ThoughtSpot DataFlow to establish a connection to a Snowflake database, you can create automatic data updates, to seamlessly refresh your data.
 
-To sync your data, follow these steps:
+To sync your data, perform these tasks:
 
-{% include content/dataflow/sync-database.md %}
+## Select table
+{% include content/dataflow/select-table.md %}
 
-4. Specify the sync properties:
+## Specify sync schedule
+{% include content/dataflow/schedule.md %}
+
+## Map tables
+
+{% include content/dataflow/map-tables.md %}
+
+## Map columns
+
+{% include content/dataflow/map-columns.md %}
+
+## Set Sync Properties
+
+{% include content/dataflow/sync-properties.md %}
+
+### Scripting for sync
+
+{% include content/dataflow/sync-scripts.md %}
+
+## Specify the Sync connector properties:
 
    <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-azure-snowflake-sync.png "Enter sync details")-->
 
