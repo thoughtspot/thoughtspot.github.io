@@ -21,7 +21,7 @@ Version 1.3 is now available with a fresh, new design and new support for Androi
 
 |![]({{ site.baseurl }}/images/v1_mobile.gif "Home screen")|<br><br>**Home Pinboard**<br>Add charts and tables to a customizable Home Pinboard.<br><br>**Quick Share**<br>Share KPIs and charts using iMessage, email, and Slack.<br><br>**Offline Exploration**<br>Access your Home Pinboard even when you are offline.<br><br>**Responsive & Interactive Experience**<br>Tap and swipe to see chart details. Filter to pinpoint relevant insights.<br><br>**Favorites**<br>Tag your favorite Pinboards and Answers for quick access.|
 
-## Getting Started
+## Getting Started 
 
 ### For administrators:
 - To deploy the app to users in your company, see [Deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
