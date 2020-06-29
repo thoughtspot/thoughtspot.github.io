@@ -26,4 +26,4 @@ To sync your data, perform these tasks:
 
 ### Connector-specific sync properties
 
-{% include content/dataflow/sync-conn-Properties.md %}
+{% include content/dataflow/sync-conn-properties.md %}
