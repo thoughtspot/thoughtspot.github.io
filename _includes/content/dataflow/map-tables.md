@@ -12,7 +12,7 @@ To map the external tables to ThoughtSpot's internal database, follow these step
 
    ![Map tables]({{ site.baseurl }}/images/dataflow-map-tables.png "Map tables")
 
-   <dl id="ts-target">
+   <dl id="ts-target-tb">
      <dlentry id="ts-target-database">
     <dt>ThoughtSpot database</dt>
     <dd id="database-existing">Select an existing ThoughtSpot database from the drop-down menu.</dd>
