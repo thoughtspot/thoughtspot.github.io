@@ -156,11 +156,17 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <a href="#formulas">formulas</a>:
   - <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_1</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_1</em>&gt;
+      <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
+      <a href="#aggregation">aggregation</a>: [ SUM | COUNT | AVERAGE | MAX | MIN |
+                     COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]       
     [id]: &lt;<em>optional_unique_identifier</em>&gt;
   - <a href="#name">name</a>: &lt;<em>formula_name_2</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_2</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
-    <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;  
+    <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_3</em>&gt;  
   <a href="#search_query">search_query</a>: &lt;<em>search_query_string</em>&gt;
   <a href="#answer_columns">answer_columns</a>:
   - <a href="#id">id</a>: &lt;<em>column_id_1</em>&gt;
@@ -263,7 +269,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="aggregation">
     <dt>aggregation</dt>
-    <dd>The default aggregation of the worksheet column<br>
+    <dd>The default aggregation of the Worksheet column, or the aggregation of a column for a formula within an Answer.<br>
       Aggregation options depend on the data type.<br>
       Possible values: <code>SUM</code>, <code>COUNT</code>, <code>AVERAGE</code>, <code>MAX</code>, <code>MIN</code>, <code>COUNT_DISTINCT</code>, <code>NONE</code>, <code>STD_DEVIATION</code>, and <code>VARIANCE</code><br>
       Default: <code>SUM</code><br>
@@ -570,8 +576,9 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="properties">
     <dt>properties</dt>
-    <dd>The list of properties of the worksheet column<br>
-    Each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.</dd>
+    <dd>The list of properties of a Worksheet column, or the properties of a column for a formula within an Answer.<br>
+    For Worksheets, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
+    For Answers, each formula column can have the following properties, depending on its definition: <code>column_type</code> and <code>aggregation</code>. </dd>
   </dlentry>
 
   <dlentry id="plotAsBand">
