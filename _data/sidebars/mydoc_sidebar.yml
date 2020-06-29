@@ -40,9 +40,6 @@ entries:
       - title: Add a connection
         url: /data-integrate/dataflow/dataflow-amazon-aurora-add.html
         output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-amazon-aurora-modify.html
-        output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-amazon-aurora-best.html
         output: web,dataflowGd
@@ -55,9 +52,6 @@ entries:
       - title: Add a connection
         url: /data-integrate/dataflow/dataflow-amazon-redshift-add.html
         output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-amazon-redshift-modify.html
-        output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-amazon-redshift-best.html
         output: web,dataflowGd
@@ -69,9 +63,6 @@ entries:
       levelTwoItems:
       - title: Add a connection
         url: /data-integrate/dataflow/dataflow-amazon-s3-add.html
-        output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-amazon-s3-modify.html
         output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-amazon-s3-best.html
@@ -91,9 +82,6 @@ entries:
       - title: Sync data
         url: /data-integrate/dataflow/dataflow-azure-blob-storage-sync.html
         output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-azure-blob-storage-modify.html
-        output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-azure-blob-storage-best.html
         output: web,dataflowGd
@@ -112,9 +100,6 @@ entries:
       - title: Sync data
         url: /data-integrate/dataflow/dataflow-azure-synapse-sync.html
         output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-azure-synapse-modify.html
-        output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-azure-synapse-best.html
         output: web,dataflowGd
@@ -132,9 +117,6 @@ entries:
         output: web,dataflowGd
       - title: Sync data
         url: /data-integrate/dataflow/dataflow-snowflake-sync.html
-        output: web,dataflowGd
-      - title: Modify a connection
-        url: /data-integrate/dataflow/dataflow-snowflake-modify.html
         output: web,dataflowGd
       - title: Best practices
         url: /data-integrate/dataflow/dataflow-snowflake-best.html
