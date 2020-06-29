@@ -8,6 +8,10 @@ When you schedule you create a sync, you have the following scheduling options:
 - [Monthly](#monthly_sync)
 - [Does not repeat](#does_not_repeat)
 
+After you specify the sync schedule, click **Save and sync now**. This action saves the schedule, and starts the data sync immediately.
+
+Alternatively, if you click **Save**, the system saves the schedule, but does not sync the data. The first sync starts on the specified schedule.
+
 ### Hourly sync
 
 ![Schedule hourly sync]({{ site.baseurl }}/images/dataflow-schedule-hourly.png "Schedule hourly sync")
