@@ -22,7 +22,7 @@ For a complete list of issues that we fixed in this release, see [6.1.1 Fixed is
 
 ### Amazon Linux 2
 
-This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform.To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
+This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
 
 ### Charts and tables with a very large number of data values
 
