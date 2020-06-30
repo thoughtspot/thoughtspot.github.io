@@ -1,6 +1,6 @@
 ---
 title: [SpotApps Scriptability]
-last_updated: 6/10/2020
+last_updated: 6/29/2020
 summary: "Use SpotApps to export Worksheets, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -33,8 +33,18 @@ You can download these objects in the form of a scriptable file in the [ThoughtS
 
 {: id="export-object"}
 ## Export an object
-You can export one object at a time, or export more than one object as a zip file. The zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file). The zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
+{: id="export-one"}
+To export one object:
+
+1. Navigate to the Pinboard, Answer, or Worksheet you want to export.
+
+2. Click the three-dot icon, and select **Export as .tsl**.
+
+    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
+
+{: id="export-zip-file"}
 To export multiple objects at a time, follow these steps:
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
@@ -58,14 +68,6 @@ To export multiple objects at a time, follow these steps:
 4. Open the downloaded `.tsl` zip file:
 
     ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
-
-To export one object:
-
-1. Navigate to the Pinboard, Answer, or Worksheet you want to export.
-
-2. Click the three-dot icon, and select **Export as .tsl**.
-
-    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
 
 ## Edit the `.tsl` file
 You can edit the `.tsl` file before you import it. Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).

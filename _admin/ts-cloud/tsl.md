@@ -1,12 +1,12 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 6/10/2020
+last_updated: 6/29/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TSL file
@@ -14,6 +14,8 @@ To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answ
 The `TSL` file for Scriptable Worksheets has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Worksheet.
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -65,6 +67,14 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <a href="#expr">expr</a>: &lt;<em>formula_definition_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;
+  <a href="#filters">filters</a>:
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+    - value <em>n</em>
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
   <a href="#worksheet_columns">worksheet_columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#description">description</a>: &lt;<em>optional_column_description</em>&gt;
@@ -118,6 +128,8 @@ The `TSL` file for Scriptable Answers has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TSL file to specify conditional formatting.
+
 <pre>
 <a href="#answer">answer</a>:
   <a href="#name">name</a>: &lt;<em>answer_name</em>&gt;
@@ -143,13 +155,23 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <a href="#join_path">join_path</a>:
     - {}
   <a href="#formulas">formulas</a>:
-  - <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>formula_id_1</em>&gt;
+    <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_1</em>&gt;
-    [id]: &lt;<em>optional_unique_identifier</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>formula_name_2</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_1</em>&gt;
+      <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
+      <a href="#data_type">data_type</a>: [ Boolean | Text | Date | Datetime | Time
+      | Numeric | Decimal ]
+      <a href="#aggregation">aggregation</a>: [ SUM | COUNT | AVERAGE | MAX | MIN |
+                     COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]       
+  - <a href="#id">id</a>: &lt;<em>formula_id_2</em>&gt;
+    <a href="#name">name</a>: &lt;<em>formula_name_2</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_2</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
-    <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;  
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_2</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>formula_id_3</em>&gt;
+    <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
+    <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_3</em>&gt;  
   <a href="#search_query">search_query</a>: &lt;<em>search_query_string</em>&gt;
   <a href="#answer_columns">answer_columns</a>:
   - <a href="#id">id</a>: &lt;<em>column_id_1</em>&gt;
@@ -216,6 +238,8 @@ The `TSL` file for Scriptable Pinboards has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Pinboard, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Pinboard.
+
 <pre>
 <a href="#pinboard">pinboard</a>:
   <a href="#name">name</a>: &lt;<em>pinboard_name</em>&gt;
@@ -250,7 +274,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="aggregation">
     <dt>aggregation</dt>
-    <dd>The default aggregation of the worksheet column<br>
+    <dd>The default aggregation of the Worksheet column, or the aggregation of the output for a formula within an Answer.<br>
       Aggregation options depend on the data type.<br>
       Possible values: <code>SUM</code>, <code>COUNT</code>, <code>AVERAGE</code>, <code>MAX</code>, <code>MIN</code>, <code>COUNT_DISTINCT</code>, <code>NONE</code>, <code>STD_DEVIATION</code>, and <code>VARIANCE</code><br>
       Default: <code>SUM</code><br>
@@ -318,9 +342,10 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="column_type">
     <dt>column_type</dt>
-    <dd>The type of data the column represents<br>
+    <dd>The type of data the column represents. For a formula in an Answer, the <code>column_type</code> refers to the output of the formula. <br>
     Possible values: <code>MEASURE</code> or <code>ATTRIBUTE</code><br>
-    Default: <code>MEASURE</code></dd>
+    For Worksheets, the default is: <code>MEASURE</code> <br>
+    For formulas in Answers, the default depends on the <a href="#data_type">data_type</a>. If the data type is <code>Numeric</code> or <code>Decimal</code>, the formula output’s <code>column_type</code> defaults to <code>Measure</code>. If the data type is <code>Boolean</code>, <code>Text</code>, <code>Date</code>, <code>Datetime</code>, or <code>Time</code>, the formula output’s <code>column_type</code> defaults to <code>Attribute</code>.</dd>
   </dlentry>
 
   <!--<dlentry id="column_width">
@@ -350,6 +375,13 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <dd>Optional display name for a column.</dd>
   </dlentry>
 
+  <dlentry id="data_type">
+    <dt>data_type</dt>
+    <dd>The data type of the formula output. If the data type is <code>Numeric</code> or <code>Decimal</code>, the formula output’s <code>column_type</code> defaults to <code>Measure</code>. If the data type is <code>Boolean</code>, <code>Text</code>, <code>Date</code>, <code>Datetime</code>, or <code>Time</code>, the formula output’s <code>column_type</code> defaults to <code>Attribute</code>.
+	The possible data types are <code>Boolean</code>, <code>Text</code>, <code>Date</code>, <code>Datetime</code>, <code>Time</code>, <code>Numeric</code>, and <code>Decimal</code>.
+</dd>
+  </dlentry>
+
   <dlentry id="description">
     <dt>description</dt>
     <dd>The text that describes an object: a <code>worksheet</code>, a <code>worksheet_column</code>, <code>answer</code>, <code>pinboard</code>, and so on.</dd>
@@ -377,7 +409,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="filters">
     <dt>filters</dt>
-    <dd>Contains specifications for Pinboard filters.</dd>
+    <dd>Contains specifications for Pinboard and Worksheet filters.</dd>
   </dlentry>
 
   <dlentry id="format_pattern">
@@ -420,7 +452,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="id">
     <dt>id</dt>
-    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
   </dlentry>
 
   <dlentry id="index_priority">
@@ -542,7 +574,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="oper">
     <dt>oper</dt>
-    <dd>The operator of the Pinboard filter. Accepted operators are <code>in</code>, <code>not in</code>, <code>between</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
+    <dd>The operator of the Pinboard or Worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
   </dlentry>
 
   <dlentry id="ordered_column_ids">
@@ -557,8 +589,9 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="properties">
     <dt>properties</dt>
-    <dd>The list of properties of the worksheet column<br>
-    Each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.</dd>
+    <dd>The list of properties of a Worksheet column, or the properties of the output for a formula within an Answer.<br>
+    For Worksheets, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
+    For Answers, each formula's output can have the following properties, depending on its definition: <code>column_type</code> and <code>aggregation</code>. </dd>
   </dlentry>
 
   <dlentry id="plotAsBand">
@@ -666,7 +699,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="values">
     <dt>values</dt>
-    <dd>The values being filtered (excluded or included) in a Pinboard.
+    <dd>The values being filtered (excluded or included) in a Pinboard or Worksheet.
     </dd>
   </dlentry>  
 
@@ -707,8 +740,6 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 ## Limitations of working with TSL files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, or Pinboard through TSL.
-
-* It is not possible to include Worksheet filters in the TSL script. You cannot export or import a Worksheet with filters.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
