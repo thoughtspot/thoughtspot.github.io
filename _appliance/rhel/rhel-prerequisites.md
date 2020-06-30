@@ -1,17 +1,17 @@
 ---
 title: [RHEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 6/10/2020
+last_updated: 6/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
 | &#10063; | [2. Partition the hosts](#partition-hosts) |
-| &#10063; | [3. Install RHEL version 7.7 on all hosts](#install-rhel) |
-| &#10063; | [4. Enable the hosts to download RHEL packages](#enable-hosts) |
-| &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
-| &#10063; | [6. Disable SELinux](#disable-selinux) |
-| &#10063; | [7. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
+| &#10063; | [3. Install RHEL version 7.7 or 7.8 on all hosts](#install-rhel) |
+| &#10063; | [4. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
+| &#10063; | [5. Enable the hosts to download RHEL packages](#enable-hosts) |
+| &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
+| &#10063; | [7. Disable SELinux](#disable-selinux) |
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
@@ -73,7 +73,13 @@ Note that the size of the root drive on appliances is limited to 200GB; the part
 {: id="install-rhel"}
 ## Install RHEL on hosts
 
-ThoughtSpot is certified with RHEL version 7.7; we **do not** support other versions of RHEL, including 8 and 8.1.
+ThoughtSpot is certified with RHEL versions 7.7 and 7.8; we **do not** support other versions of RHEL, including 8 and 8.1. Install RHEL version 7.7 or 7.8, and ensure that your [linux kernel version](#linux-kernel-version) is 4.4 or later.
+
+{: id="linux-kernel-version"}
+### Linux kernel version
+Your Linux kernel ***must*** be on version 4.4 or later. RHEL 7.7 and 7.8 come with a Linux kernel of version 3.10, which has a bug that causes nodes to reboot unexpectedly. If you have trouble upgrading your Linux kernel to version 4.4, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
+
+{% include warning.html content="If you do not upgrade your Linux kernel version to 4.4, you may run into unexpected node reboots and possible loss of data." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
@@ -113,7 +119,3 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux
 ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
-
-{: id="linux-kernel-version"}
-## Linux kernel version
-Your Linux kernel must be on version 4.4 or later.
