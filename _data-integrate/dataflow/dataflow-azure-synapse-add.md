@@ -23,6 +23,7 @@ To add a new connection to Azure Synapse, follow these steps:
    * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-conn-password)<br/>Specify the password.<br/>Mandatory field.
    * [JDBC options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-conn-jdbc-options)<br/>Specify JDBC URL for connecting to Azure Synapse, and the neccessary options.<br/>Optional field.
 
+
    See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#connection-properties).
 
 5.  Click **Create connection**.   
