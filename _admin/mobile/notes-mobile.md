@@ -11,10 +11,10 @@ fixed issues from the previous releases, and any known issues.
 {: id="1-4-1-fixed"}
 ## 1.4.1 Fixed Issues
 
-<!-- The following issues are fixed in the 1.4.1 iOS release:
+The following issues are fixed in the 1.4.1 iOS release:
 
 - The app crashes when Pinboard filters are changed.
--->
+
 The following issues are fixed in the 1.4.1 Android release:
 
 - The app crashes when Pinboard filters are changed.
