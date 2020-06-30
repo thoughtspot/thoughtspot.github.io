@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 5/21/2020
+last_updated: 6/30/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -155,6 +155,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </details>
 <details><summary><strong>Postal Code</strong></summary>
 {% include content/geo/pl-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Portugal</dt>
+<dd>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/pt-district.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/pt-municipality.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/pt-postcode.md %}
 </details>
 </dd>
 </dlentry>
