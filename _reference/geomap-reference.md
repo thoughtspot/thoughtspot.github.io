@@ -98,6 +98,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<dlentry>
+<dt>India</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/in-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/in-district.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/in-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Italy</dt>
