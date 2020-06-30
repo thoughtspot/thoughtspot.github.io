@@ -30,6 +30,10 @@ To edit a connection:
 
    ![Edit connection]({{ site.baseurl }}/images/gbq-editconnection.png "Edit connection")
 
+   By default, the Select tables page appears. You have the option, though, to change the connection name and update the connection details, by clicking the appropriate option at the top of the screen, making any changes needed and clicking **Continue**.
+
+   ![]({{ site.baseurl }}/images/edit_connection_btns.png)
+
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
 6. On the Teradata connection details page, make any changes needed, and then click **Continue**.
