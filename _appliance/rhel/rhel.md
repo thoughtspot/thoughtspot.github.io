@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Starting with Release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL image that your organization manages internally.
 
-In Release 6.0.5, ThoughtSpot runs on RHEL 7.8.
+In Release 6.0.5, ThoughtSpot runs on RHEL 7.7 or RHEL 7.8.
 
 ThoughtSpot certifies RHEL on the following platforms:
 - ThoughtSpot-configured appliances, both [DELL hardware]({{ site.baseurl }}/appliance/hardware/installing-dell.html) and [SMC hardware]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html)
