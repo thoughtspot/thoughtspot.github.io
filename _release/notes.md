@@ -1,7 +1,7 @@
 ---
 title: ["6.0 Release Notes"]
 toc: false
-last_updated: 05/08/2020
+last_updated: 7/1/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -27,7 +27,7 @@ You can now specify a custom port to connect to the SMTP relay host. If you do n
 See [Set the relay host for SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html).
 
 ### Red Hat Enterprise Linux (RHEL)
-The 6.0.5 release of ThoughtSpot runs with RHEL 7.8 only; starting with this release, we no longer support RHEL 7.7. See <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.8_release_notes/index" target="_blank">RHEL 7.8 Release notes</a>.
+Starting with the 6.0.5 release, ThoughtSpot runs with RHEL 7.7 or RHEL 7.8. See <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.8_release_notes/index" target="_blank">RHEL 7.8 Release notes</a>.
 
 ### Disable items in embedded ThoughtSpot
 
