@@ -43,6 +43,31 @@
   });
 });
 </script>
+<!-- js smoothScroll for scrolling to bottom of page -->
+<script>
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+</script>
 <style>
 #panel, #flip {
   padding: 5px;
@@ -100,11 +125,11 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/data-integrate/clients/install-odbc-solaris.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T12:20:00-07:00" />
+<meta property="article:published_time" content="2020-07-01T16:46:06-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/data-integrate/clients/install-odbc-solaris.html"},"url":"https://docs.thoughtspot.com/5.2/data-integrate/clients/install-odbc-solaris.html","headline":"[“Install the ODBC Driver on Solaris”]","dateModified":"2020-07-01T12:20:00-07:00","datePublished":"2020-07-01T12:20:00-07:00","description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/data-integrate/clients/install-odbc-solaris.html"},"url":"https://docs.thoughtspot.com/5.2/data-integrate/clients/install-odbc-solaris.html","headline":"[“Install the ODBC Driver on Solaris”]","dateModified":"2020-07-01T16:46:06-07:00","datePublished":"2020-07-01T16:46:06-07:00","description":"ThoughtSpot’s ODBC connection relies on the SimbaEngine X SDK to connect via ODBC or JDBC to ThoughtSpot’s remote data stores. The instructions on this page explain how to configure the Simba ODBC driver on a Solaris workstation.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3647,12 +3672,12 @@ to login into the ThoughtSpot application.</li>
 
 <footer>
    <div class="row" align="right" width="700">
-     <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
+     <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
         Generated: Jul 1, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
-         <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+         <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 </footer>
 
