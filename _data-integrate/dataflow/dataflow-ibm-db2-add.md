@@ -14,30 +14,10 @@ Follow these steps:
 
 4. After you select the IBM Db2 **Connection type**, the rest of the connection properties appear.
 
-   Depending on your choice of authentication mechanism, you may use different properties.
-
    <details>
-     <summary>Create connection interface for IBM Db2, <strong>no authentication</strong></summary>
-     <p>
-      <img src="../../images/dataflow-ibm-db2-no-auth-create.png" alt="add an IBM Db2 connection without authentication" /></p>
-   </details>
-
-   <details>
-     <summary>Create connection interface for IBM Db2, <strong>SSL authentication</strong></summary>
-     <p>
-      <img src="../../images/dataflow-ibm-db2-ssl-create.png" alt="add an IBM Db2 connection with SSL authentication" /></p>
-   </details>    
-
-   <details>
-     <summary>Create connection interface for IBM Db2, <strong>LDAP authentication</strong></summary>
-     <p>
-      <img src="../../images/dataflow-ibm-db2-ldap-create.png" alt="add an IBM Db2 connection with LDAP authentication" /></p>
-   </details>
-
-   <details>
-     <summary>Create connection interface for IBM Db2, <strong>Kerberos authentication</strong></summary>
-     <p>
-      <img src="../../images/dataflow-ibm-db2-kerberos-create.png" alt="add an IBM Db2 connection with Kerberos authentication" /></p>
+     <summary>See the <strong>Create connection</strong> screen for IBM Db2</summary>
+       <p>
+       <img src="../../images/dataflow-ibm-db2-create.png" alt="Create IBM Db2 connection" /></p>
    </details>
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
