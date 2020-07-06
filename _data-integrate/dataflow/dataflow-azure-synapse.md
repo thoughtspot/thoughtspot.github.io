@@ -9,7 +9,6 @@ DataFlow enables you to connect to Azure Synapse database, to use your data in T
 
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-sync.html)
-- [Best practices]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-best.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html)
 
 <!--
