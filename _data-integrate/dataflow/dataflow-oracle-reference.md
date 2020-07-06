@@ -1,12 +1,12 @@
 ---
 title: [Oracle connection reference]
-summary: Learn about the fields used to create a Oracle connection with ThoughtSpot DataFlow.
+summary: Learn about the fields used to create an Oracle connection with ThoughtSpot DataFlow.
 last_updated: 07/6/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields for a Oracle connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
+Here is a list of the fields for an Oracle connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
 
 ## Connection properties
 
@@ -22,7 +22,7 @@ Here is a list of the fields for a Oracle connection in ThoughtSpot DataFlow. Yo
 
 ## Sync properties
 
-<dl id="dataflow-Oracle-sync-properties">
+<dl id="dataflow-oracle-sync-properties">
 <dlentry id="dataflow-oracle-sync-data-extraction-mode"><dt>Data extraction mode</dt><dd id="data-extraction-mode-description">Specify the extraction type.</dd><dd id="data-extraction-mode-required">Mandatory field.</dd><dd id="data-extraction-mode-example"><strong>Example:</strong><br/>JDBC</dd><dd id="data-extraction-mode-valid-values"><strong>Valid Values:</strong><br/>JDBC,OCI</dd><dd id="data-extraction-mode-default"><strong>Default:</strong><br/>JDBC</dd></dlentry>
 <dlentry id="dataflow-oracle-sync-column-delimiter"><dt>Column delimiter</dt><dd id="column-delimiter-description">Specify the column delimiter character.</dd><dd id="column-delimiter-required">Mandatory field.</dd><dd id="column-delimiter-example"><strong>Example:</strong><br/>1</dd><dd id="column-delimiter-valid-values"><strong>Valid Values:</strong><br/>Any printable ASCII character or decimal value for ASCII character</dd><dd id="column-delimiter-default"><strong>Default:</strong><br/>1</dd></dlentry>
 <dlentry id="dataflow-oracle-sync-null-value"><dt>Null value</dt><dd id="null-value-description">Specifies the string literal that should indicate the null value in the extracted data. During the data load the column value matching this string will be loaded as null in the target.</dd><dd id="null-value-required">Optional field.</dd><dd id="null-value-example"><strong>Example:</strong><br/>NULL</dd><dd id="null-value-valid-values"><strong>Valid Values:</strong><br/>Any string literal</dd><dd id="null-value-default"><strong>Default:</strong><br/>NULL</dd></dlentry>
