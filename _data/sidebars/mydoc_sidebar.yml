@@ -100,20 +100,20 @@ entries:
       - title: Reference
         url: /data-integrate/dataflow/dataflow-cassandra-reference.html
         output: web,dataflowGd
-    - levelTwoTitle: Google Big Query
+    - levelTwoTitle: Google BigQuery
       output: web,dataflowGD
       levelTwoItems:
       - title: Overview
-        url: /data-integrate/dataflow/dataflow-google-big-query.html
+        url: /data-integrate/dataflow/dataflow-google bigquery.html
         output: web,dataflowGd
       - title: Connect
-        url: /data-integrate/dataflow/dataflow-google-big-query-add.html
+        url: /data-integrate/dataflow/dataflow-google-bigquery-add.html
         output: web,dataflowGd
       - title: Sync
-        url: /data-integrate/dataflow/dataflow-google-big-query-sync.html
+        url: /data-integrate/dataflow/dataflow-google-bigquery-sync.html
         output: web,dataflowGd
       - title: Reference
-        url: /data-integrate/dataflow/dataflow-google-big-query-reference.html
+        url: /data-integrate/dataflow/dataflow-google-bigquery-reference.html
         output: web,dataflowGd
     - levelTwoTitle: Hive
       output: web,dataflowGD
