@@ -11,9 +11,9 @@ After using ThoughtSpot DataFlow to establish a connection to a Cassandra databa
 
 4. Specify the sync properties for Cassandra:
 
-   ![Enter connection details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter connection details")
+   ![Enter sync details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter sync details")
 
-   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-cassandra-create.png "Enter connection details")-->
+   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-cassandra-sync.png "Enter connection details")-->
 
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-sync-column-delimiter)<br/>Specify the column delimiter character.<br/>Mandatory field.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.<br/>Optional field.
