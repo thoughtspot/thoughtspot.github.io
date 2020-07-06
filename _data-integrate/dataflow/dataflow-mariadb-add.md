@@ -20,6 +20,8 @@ Follow these steps:
         <img src="../../images/dataflow-mariadb-create.png" alt="Create MariaDB connection" /></p>
     </details>
 
+    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
+    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-connection-type)<br/>Choose the MariaDB connection type.<br/>Mandatory field.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-host)<br/>Specify the hostname or the IP address of the MariaDB system<br/>Mandatory field.
     * [Port]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-port)<br/>Specify the port associated to the MariaDB system<br/>Mandatory field.
     * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-user)<br/>Specify the user id that will be used to connect to the MariaDB system. This user should have necessary privileges to access the data in the databases.<br/>Mandatory field.
