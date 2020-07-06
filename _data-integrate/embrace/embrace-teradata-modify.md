@@ -30,18 +30,22 @@ To edit a connection:
 
    ![Edit connection]({{ site.baseurl }}/images/gbq-editconnection.png "Edit connection")
 
+   By default, the Select tables page appears. You have the option, though, to change the connection name and update the connection details, by clicking the appropriate option at the top of the screen, making any changes needed and clicking **Continue** to go to the next page.
+
+   ![]({{ site.baseurl }}/images/edit_connection_btns.png)
+
 5. On the Choose connection type page, change the connection name or description (if needed), and then click **Continue**.  
 
 6. On the Teradata connection details page, make any changes needed, and then click **Continue**.
 
-7. Expand the database table drop-down menu, and select the tables and columns you want to add.
+7. Expand the database table drop-down menu (if needed), and select the tables and columns you want to add.
 
-   ![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns")
+   ![Select tables and columns]({{ site.baseurl }}/images/teradata-edittables.png "Select tables and columns")
    <!--![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
 
 8. Click **Update**, and then click **Confirm** to save the updated connection detail.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-modify.html#deleting-a-table-from-a-Teradata-connection).
+To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-modify.html#deleting-a-table-from-a-Teradata-connection).
 
 ## Remapping a Teradata connection
 
