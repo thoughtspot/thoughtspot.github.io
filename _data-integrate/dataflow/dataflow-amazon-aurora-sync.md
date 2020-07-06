@@ -1,5 +1,5 @@
 ---
-title: [Sync data through a Cassandra connection]
+title: [Sync data through an Amazon Aurora connection]
 last_updated: 7/03/2020
 toc: true
 sidebar: mydoc_sidebar
@@ -11,7 +11,7 @@ After using ThoughtSpot DataFlow to establish a connection to an Amazon Aurora d
 
 4. Specify the sync properties for Amazon Aurora:
 
-   ![Enter connection details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter connection details")
+   ![Enter sync details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter sync details")
 
    <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-cassandra-create.png "Enter connection details")-->
 
