@@ -1,6 +1,6 @@
 ---
 title: [Cassandra connection reference]
-summary: Learn about the fields used to create an Azure Synapse connection with ThoughtSpot DataFlow.
+summary: Learn about the fields used to create an Cassandra connection with ThoughtSpot DataFlow.
 last_updated: 07/03/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -9,5 +9,4 @@ DataFlow enables you to connect to a Cassandra database, to use your data in Tho
 
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-sync.html)
-- [Best practices]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-best.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html)
