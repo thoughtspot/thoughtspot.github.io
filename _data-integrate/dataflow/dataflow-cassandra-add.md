@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can add a connection to a Cassandra database using ThoughtSpot DataFlow.
 
-To add a new connection to Snowflake, follow these steps:
+Follow these steps:
 
 
 {% include content/dataflow/add-database-connection.md %}
