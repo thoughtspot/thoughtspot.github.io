@@ -1,12 +1,14 @@
 ---
 title: [Migrate or restore Worksheets]
-last_updated: 3/18/2020
+last_updated: 7/2/2020
 summary: "You can export an entire ThoughtSpot worksheet in a flat-file format. After optional modification, you can migrate it to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-In ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster. This mechanism supports several scenarios that you may encounter:
+In ThoughtSpot, you can download Worksheets to a flat file in [`TSL`]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), ThoughtSpot's Scripting Language, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster. Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.
+
+This mechanism supports several scenarios that you may encounter:
 
 - <strong>Migrating from a development environment to a production environment</strong> by downloading the file from the development cluster and uploading the same file into the production cluster
 - <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying tables for the entire table, or replacing a single column from one table with a column in another table
@@ -14,7 +16,9 @@ In ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, mod
 
 ## Prerequisites
 
-You must have **Edit** permissions for the worksheet.
+| Export | Import |
+| --- | --- |
+| **Can view** permission on the Worksheet and all underlying tables. | When not overwriting an existing Worksheet, you must have the **can manage data** permission. If updating a previously existing Worksheet, you must have the **can manage data** permission and **can edit** permission for the Worksheet. |
 
 {: id="worksheet-export"}
 ## Export Worksheet
@@ -35,14 +39,14 @@ To export a worksheet, follow these steps:
 
 5. The worksheet downloads into your default directory.
 
-   You can access the downloaded `*.yaml` file, named for your worksheet either through the file system manager, or by clicking on the name of the downloaded file in the left bottom corner of your Internet browser.
+   You can access the downloaded `*.tsl` file, named for your worksheet either through the file system manager, or by clicking on the name of the downloaded file in the left bottom corner of your Internet browser.
 
     ![Open downloaded worksheet file]({{ site.baseurl }}/images/worksheet-export-complete.png "Open downloaded worksheet file")
 
 {: id="worksheet-change"}
-## Working with the Worksheet yaml file
+## Working with the Worksheet TSL file
 
-You can change the yaml file that represents the Worksheet by editing its content. See [YAML Worksheet specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) for the full syntax of the YAML file.
+You can change the TSL file that represents the Worksheet by editing its content. See [TSL Worksheet specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) for the full syntax of the TSL file.
 
 {: id="worksheet-update"}
 ## Update a Worksheet
@@ -63,9 +67,9 @@ To update an existing worksheet, follow these steps:
 
 5. In the upload interface, click **Browse your files**.
 
-   ![Find the Worksheet YAML file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet YAML file")
+   ![Find the Worksheet TSL file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet TSL file")
 
-6. In your file system, find and select the YAML file.
+6. In your file system, find and select the TSL file.
 
 7. In the **Update worksheet** interface, click **Upload**.
 
@@ -99,7 +103,7 @@ To migrate a Worksheet from one cluster to another, follow these steps:
 
     ![Browse your files]({{ site.baseurl }}/images/worksheet-create-browse-files.png "Browse your files")
 
-6. In your file system, find and select the YAML file.
+6. In your file system, find and select the TSL file.
 
 7. Click **Upload**.
 
@@ -112,4 +116,4 @@ To migrate a Worksheet from one cluster to another, follow these steps:
    ![Go to new Worksheet]({{ site.baseurl }}/images/worksheet-create-go-to-worksheet.png "Go to new Worksheet")
 
 ## Related Information
-- [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)
+- [Worksheet TSL specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)
