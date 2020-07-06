@@ -11,6 +11,8 @@ Here is a list of the fields for an IBM Db2 connection in ThoughtSpot DataFlow. 
 ## Connection properties
 
 <dl id="dataflow-ibm-db2-connection-properties">
+<dlentry id="dataflow-ibm-db2-conn-connection-name"><dt>Connection name</dt><dd id="connection-name-description">Name your connection.</dd><dd id="connection-name-required">Mandatory field.</dd><dd id="connection-name-example"><strong>Example:</strong><br/>IBMDb2Connection</dd></dlentry>
+<dlentry id="dataflow-ibm-db2-conn-connection-type"><dt>Connection type</dt><dd id="connection-type-description">Choose the IBM Db2 connection type.</dd><dd id="connection-type-required">Mandatory field.</dd><dd id="connection-type-example"><strong>Example:</strong><br/>IBM Db2</dd></dlentry>
 <dlentry id="dataflow-ibm-db2-conn-platform"><dt>Platform</dt><dd id="platform-description">An environment in which a data point is executed. Specify LUW, iSeries, or Mainframe.</dd><dd id="platform-required">Optional field.</dd><dd id="platform-example"><strong>Example:</strong><br/>platform</dd></dlentry>
 <dlentry id="dataflow-ibm-db2-conn-host"><dt>Host</dt><dd id="host-description">Specify the hostname or the IP address of the Db2 system</dd><dd id="host-required">Mandatory field.</dd><dd id="host-example"><strong>Example:</strong><br/>example.plaform.com</dd></dlentry>
 <dlentry id="dataflow-ibm-db2-conn-port"><dt>Port</dt><dd id="port-description">Specify the port associated to the Db2 system.</dd><dd id="port-required">Mandatory field.</dd><dd id="port-example"><strong>Example:</strong><br/>1234</dd></dlentry>
