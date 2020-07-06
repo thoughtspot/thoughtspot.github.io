@@ -58,7 +58,7 @@ To remap a connection:
 2. Click the **Connections** tab at the top of the page.
 
 3. Click the name of the connection you want to remap.
-    ![Select a connection to remap]({{ site.baseurl }}/images/gbq-chooseconnection.png "Select a connection to remap")
+    ![Select a connection to remap]({{ site.baseurl }}/images/teradata-chooseconnection.png "Select a connection to remap")
 
 4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
    ![Remap a connection]({{ site.baseurl }}/images/gbq-remapping.png "Remap a connection")
