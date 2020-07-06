@@ -16,14 +16,14 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details>
-     <summary><strong>Create connection</strong> interface for Google BiQuery</summary>
+   <details style="hidden-images">
+     <summary>See the <strong>Create connection</strong> screen for Google BigQuery</summary>
      <p>
       <img src="../../images/dataflow-google-bigquery-create.png" alt="add a Google BigQuery connection" /></p>
    </details>
 
    <details>
-     <summary><strong>Create connection</strong> interface for Google BiQuery with proxy</summary>
+     <summary>See the <strong>Create connection</strong> screen for Google BigQuery with proxy</summary>
      <p>
       <img src="../../images/dataflow-google-bigquery-proxy-create.png" alt="add a Google BigQuery connection" /></p>
    </details>
