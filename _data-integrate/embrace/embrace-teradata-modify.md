@@ -24,7 +24,7 @@ To edit a connection:
 
 3. Click the name of the connection you want to edit.
 
-   ![Select a connection to edit]({{ site.baseurl }}/images/gbq-chooseconnection.png "Select a connection to edit")
+   ![Select a connection to edit]({{ site.baseurl }}/images/teradata-chooseconnection.png "Select a connection to edit")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
