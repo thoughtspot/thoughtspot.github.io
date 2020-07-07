@@ -1,6 +1,6 @@
 ---
 title: [Add a PostgreSQL database connection]
-last_updated: 7/6/2020
+last_updated: 7/7/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
