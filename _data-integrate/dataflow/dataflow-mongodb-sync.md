@@ -11,7 +11,9 @@ After using ThoughtSpot DataFlow to establish a connection to a MongoDB database
 
 4. Specify the sync properties for MongoDB:
 
-   ![Enter sync details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter sync details")
+   <details>
+     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
+     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
 
    <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-mongodb-sync.png "Enter connection details")-->
 

@@ -11,7 +11,10 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Synapse d
 
 4. Specify the sync properties for Azure Synapse:
 
-   ![Enter sync details]({{ site.baseurl }}/images/dataflow-set-sync-properties-draft.png "Enter sync details")
+   <details>
+     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
+     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
+   </details>
 
    <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-azure-synapse-sync.png "Enter sync details")-->
 
@@ -21,7 +24,7 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Synapse d
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-enclosing-character)<br/>Specify if text columns in the source data are enclosed in quotes; if yes, single quotes or double quoates.<br/>Optional field.
    * [Escape character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-escape-character)<br/>Specify this character to escpate text qualifiers in source data.<br/>Optional field.
    * [Fetch size]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-fetch-size)<br/>Specify the number of rows fetched into memory at the same time. If the value is 0, system fetches all rows at the same time.<br/>Mandatory field. Available only when <strong>Data extraction mode</strong> is <em>JDBC</em>.
-   * [TS load options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-ts-load-options)<br/>Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code><br/>Optional field. 
+   * [TS load options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-ts-load-options)<br/>Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code><br/>Optional field.
 
 5. Save your work by clicking **Save**.<br/>Alternatively, click **Save and sync now** to save your work and sync data at the same time.
 

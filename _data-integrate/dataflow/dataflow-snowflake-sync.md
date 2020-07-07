@@ -11,7 +11,9 @@ After using ThoughtSpot DataFlow to establish a connection to a Snowflake databa
 
 4. Specify the sync properties for Snowflake:
 
-   ![Sync properties for Snowflake]({{ site.baseurl }}/images/dataflow-set-sync-properties-snowflake.png "Sync properties for Snowflake")
+   <details>
+     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
+     <p><img src="../../images/dataflow-set-sync-properties-snowflake.png" alt="Connection-specific sync properties" /></p></details>
 
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-sync-data-extraction-mode)<br/>Specify the extraction type.<br/>Mandatory field.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-sync-column-delimiter)<br/>Specify the column delimiter character.<br/>Mandatory field.
