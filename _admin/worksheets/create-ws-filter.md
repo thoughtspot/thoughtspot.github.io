@@ -1,16 +1,18 @@
 ---
 title: [Add a filter to a worksheet]
 
-last_updated: 7/2/2020
+last_updated: 7/7/2020
 summary: "You can add filters to a worksheet to limit the data users can access from the worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add filters to a worksheet to limit the data it contains. This is useful when you have underlying tables that store more data than is necessary for the types of analyses the worksheet is intended for. You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
 
-Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `yaml` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), which allows for optional modification of any Worksheet properties, including filters.
+Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `TSL` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), which allows for optional modification of any Worksheet properties, including filters. If you are on a release prior to 6.2, you can migrate Worksheets using a flat file format, but you cannot migrate Worksheets with filters.
 
-To add a filter to a worksheet:
+Refer to [Migrate and restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html) to add a filter to a Worksheet through the TSL file.
+
+To add a filter to a worksheet through the user interface:
 
 1. Click **Data** in the top menu bar, find your worksheet, and click its name.
 

@@ -1,12 +1,14 @@
 ---
 title: [Migrate or restore Worksheets]
-last_updated: 7/2/2020
+last_updated: 7/7/2020
 summary: "You can export an entire ThoughtSpot worksheet in a flat-file format. After optional modification, you can migrate it to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-In ThoughtSpot, you can download Worksheets to a flat file in [`TSL`]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), ThoughtSpot's Scripting Language, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster. Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.
+In ThoughtSpot, you can download Worksheets to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
+
+Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.
 
 This mechanism supports several scenarios that you may encounter:
 
