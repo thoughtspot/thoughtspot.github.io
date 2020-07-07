@@ -1,12 +1,12 @@
 ---
-title: [SAP Adapative Server Enterprise connection reference]
-summary: Learn about the fields used to create an SAP Adapative Server Enterprise connection with ThoughtSpot DataFlow.
+title: [SAP Adaptive Server Enterprise connection reference]
+summary: Learn about the fields used to create an SAP Adaptive Server Enterprise connection with ThoughtSpot DataFlow.
 last_updated: 07/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields for an SAP Adapative Server Enterprise connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
+Here is a list of the fields for an SAP Adaptive Server Enterprise connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
 
 ## Connection properties
 
