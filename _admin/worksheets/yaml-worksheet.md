@@ -1,19 +1,21 @@
 ---
-title: [Worksheet YAML specification]
-last_updated: 11/04/2019
-summary: "ThoughtSpot worksheet specification may be exported as a YAML file, modified, and imported into the same or different cluster. "
+title: [Worksheet TSL specification]
+last_updated: 7/1/2020
+summary: "ThoughtSpot worksheet specification may be exported as a TSL file, modified, and imported into the same or different cluster. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
+To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
 
 {: id="syntax"}
-##  Syntax of the Worksheet YAML file
+##  Syntax of the Worksheet TSL file
 
-The YAML file for Scriptable Worksheets has a specific syntax.
+The TSL file for Scriptable Worksheets has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL file, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Worksheet.
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -64,6 +66,14 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <a href="#expr">expr</a>: &lt;<em>formula_definition_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>formula_name_3</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_3</em>&gt;
+  <a href="#filters">filters</a>:
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+    - value <em>n</em>
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
   <a href="#worksheet_columns">worksheet_columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
@@ -109,7 +119,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 </pre>
 
 {: id="parameters"}
-## Parameters of Worksheet YAML file
+## Parameters of the Worksheet TSL file
 <dl>
 
   <dlentry id="aggregation">
@@ -131,6 +141,11 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <dd>Specifies the calendar used by a date column<br>
     Can be the Gregorian calendar (<code>default</code>), a fiscal calendar, or any custom calendar.<br>
     See <a href="../setup/set-custom-calendar.html">Set up a custom calendar</a></dd>
+  </dlentry>
+
+  <dlentry id="column">
+    <dt>column</dt>
+    <dd>The name of the column being filtered on.</dd>
   </dlentry>
 
   <dlentry id="column_type">
@@ -165,6 +180,11 @@ See the [Parameters](#parameters) section for details about the keywords used in
   <dlentry id="expr">
     <dt>expr</dt>
     <dd>The definition of the formula</dd>
+  </dlentry>
+
+  <dlentry id="filters">
+    <dt>filters</dt>
+    <dd>Contains specifications for Worksheet filters.</dd>
   </dlentry>
 
   <dlentry id="format_pattern">
@@ -301,6 +321,11 @@ See the [Parameters](#parameters) section for details about the keywords used in
     <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, and so on.</dd>
   </dlentry>
 
+  <dlentry id="oper">
+    <dt>oper</dt>
+    <dd>The operator of the Worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
+  </dlentry>
+
   <dlentry id="properties">
     <dt>properties</dt>
     <dd>The list of properties of the worksheet column<br>
@@ -344,6 +369,12 @@ See the [Parameters](#parameters) section for details about the keywords used in
     </dd>
   </dlentry>
 
+  <dlentry id="values">
+    <dt>values</dt>
+    <dd>The values being filtered (excluded or included) in a Worksheet.
+    </dd>
+  </dlentry>
+
   <dlentry id="worksheet">
     <dt>worksheet</dt>
     <dd>Top-level container for all object definitions within the worksheet</dd>
@@ -358,15 +389,13 @@ See the [Parameters](#parameters) section for details about the keywords used in
 </dl>
 
 {: id="limitations"}
-## Limitations of working with Worksheet YAML files
+## Limitations of working with Worksheet TSL files
 
-There are certain limitations to the changes you can apply be editing a Worksheet through YAML.
+There are certain limitations to the changes you can apply be editing a Worksheet through TSL.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
-* It is not possible to reverse the join direction in the YAML script.
-
-* It is not possible to include Worksheet filters in the YAML script.
+* It is not possible to reverse the join direction in the TSL script.
 
 ## Related Information
 - [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html)

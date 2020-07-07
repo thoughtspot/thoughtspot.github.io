@@ -1,16 +1,18 @@
 ---
-title: [Edit or rename worksheet]
+title: [Edit or rename Worksheet]
 
-last_updated: 11/18/2019
-summary: "Anyone with the proper permissions can edit a worksheet."
+last_updated: 7/2/2020
+summary: "Anyone with the proper permissions can edit a Worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If you created a worksheet, or you have edit permissions on it, you can make changes such as adding sources and columns, adding or editing formulas, changing relationships, and changing column names. You can also rename a worksheet or change its description.
+If you created a Worksheet, or you have edit permissions on it, you can make changes such as adding sources and columns, adding or editing formulas, changing relationships, and changing column names. You can also rename a Worksheet or change its description.
 
-## Edit a worksheet
+Alternatively, you can export a Worksheet as a flat file in [TSL]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), ThoughtSpot's Scripting Language, edit the file, and import the file to the same or another cluster. See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
 
-To edit a worksheet:
+## Edit a Worksheet
+
+To edit a Worksheet:
 
 1. Click **Data** on the top navigation bar.
 
