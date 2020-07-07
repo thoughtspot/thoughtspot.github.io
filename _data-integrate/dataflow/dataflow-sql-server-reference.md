@@ -1,6 +1,6 @@
 ---
 title: [SQL Server connection reference]
-summary: Learn about the fields used to create an SQL Server Server Enterprise connection with ThoughtSpot DataFlow.
+summary: Learn about the fields used to create an SQL Server connection with ThoughtSpot DataFlow.
 last_updated: 07/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
