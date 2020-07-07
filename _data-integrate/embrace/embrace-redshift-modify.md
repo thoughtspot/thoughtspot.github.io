@@ -66,10 +66,9 @@ To remap a connection:
     !["Download the source mapping file"]({{ site.baseurl }}/images/embrace-remapping-download.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
+<!--   ![Edit the yaml file]({{ site.baseurl }}/images/redshift-yaml.png "Edit the yaml file") -->
 
-    ![Edit the yaml file]({{ site.baseurl }}/images/redshift-yaml.png "Edit the yaml file")
-
-7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
+7. On the Remapping page, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 ## Deleting a table from a Redshift connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
