@@ -16,7 +16,7 @@ DataFlow enables you to connect to Azure Synapse database, to use your data in T
 
 2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
-    ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
+    ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection")
    []({{ site.baseurl }}/images/new-connection.png "New db connect")
 
 3. Create a name for your connection, a description (optional), then select the Synapse connection type, and click **Continue**.
