@@ -27,7 +27,7 @@ Follow these steps:
     * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-user)<br/>Specify the user id that will be used to connect to the PostgreSQL system. This user should have necessary privileges to access the data in the databases.<br/>Mandatory field.
     * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-password)<br/>Specify the password for the User<br/>Mandatory field.
     * [Database]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-database)<br/>Collection of information that is organized so that it can be easily accessed, managed and updated.<br/>Mandatory field.
-    * [Version]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#)<br/>Specify the PostgreSQL version being connected to<br/>Optional field.
+    * [Version]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-version)<br/>Specify the PostgreSQL version being connected to<br/>Optional field.
 
    See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#connection-properties).
 

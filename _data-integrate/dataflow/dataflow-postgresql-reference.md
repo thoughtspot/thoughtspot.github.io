@@ -18,7 +18,7 @@ Here is a list of the fields for a PostgreSQL connection in ThoughtSpot DataFlow
 <dlentry id="dataflow-postgresql-conn-user"><dt>User</dt><dd id="user-description">Specify the user id that will be used to connect to the PostgreSQL system. This user should have necessary privileges to access the data in the databases.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
 <dlentry id="dataflow-postgresql-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
 <dlentry id="dataflow-postgresql-conn-database"><dt>Database</dt><dd id="database-description">Collection of information that is organized so that it can be easily accessed, managed and updated.</dd><dd id="database-required">Mandatory field.</dd><dd id="database-example"><strong>Example:</strong><br/>ditform</dd></dlentry>
-<dlentry id=""><dt>Version</dt><dd id="version-description">Specify the PostgreSQL version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>9.x</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry></dl>
+<dlentry id="dataflow-postgresql-conn-version"><dt>Version</dt><dd id="version-description">Specify the PostgreSQL version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>9.x</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry></dl>
 
 ## Sync properties
 
