@@ -14,7 +14,7 @@ To add a new connection to Azure Synapse, follow these steps:
 4. After you select the Azure Synapse **Connection type**, the rest of the connection properties appear.
 
   <details>
-     <summary>Create connection interface for Azure Synapse</summary>
+     <summary>See the <strong>Create connection</strong> screen for Azure Synapse</summary>
      <p>
        <img src="../../images/dataflow-azure-synapse-create.png" alt="Create Azure Synapse connection" /></p>
   </details>  

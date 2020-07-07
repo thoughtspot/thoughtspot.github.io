@@ -4,13 +4,17 @@
 
 2. On the connection detail page, click **Add table sync**.
 
-   ![Add table sync]({{ site.baseurl }}/images/dataflow-add-table-sync.png "Add table sync")
+    <details>
+    <summary>See how to initiate a new table sync</summary>
+    <p><img src="../../images/dataflow-add-table-sync.png" alt="Add table sync"></p></details>
 
 3. In the **Add table sync** interface, on the database selector, scroll to select and open the source database.
 
    Note that you can search for the database by name.
 
-   ![Select database]({{ site.baseurl }}/images/dataflow-select-database.png "Select database")
+   <details>
+     <summary>See how to specify the source database on the connection</summary>
+     <p><img src="../../images/dataflow-select-database.png" alt="Select database"></p></details>
 
 4. From the database, select the table you plan to sync. You can also search for the table by name.
 
@@ -20,6 +24,8 @@
 
    For large tables, use the search bar to search column names.
 
-   ![Choose table to sync]({{ site.baseurl }}/images/dataflow-sync-table.png "Choose table to sync")
-
+   <details>
+     <summary>See how to examine the source table and its columns before sync</summary>
+     <p><img src="../../images//dataflow-sync-table.png" alt="Examine table to sync and its columns"></p></details>
+   
 5. Click **Setup sync**.   
