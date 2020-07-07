@@ -27,9 +27,9 @@ Follow these steps:
     * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-user)<br/>Specify the user id that will be used to connect to the SQL Server system. This user should have necessary privileges to access the data in the databases.<br/>Mandatory field.
     * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-password)<br/>Specify the password for the User<br/>Mandatory field.
     * [Instance]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-instance)<br/>Specify an instance with all SQL Server databases run by a single SQL Server service<br/>Optional field.
-    * [Version]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#)<br/>Specify the SQL Server version being connected to<br/>Optional field.
+    * [Version]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-version)<br/>Specify the SQL Server version being connected to<br/>Optional field.
     * [JDBC options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-sync-jdbc-options)<br/>Specify the options associated with the JDBC URL.<br/>Optional field.
-        
+
    See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#connection-properties).
 
 5. Click **Create connection**.   
