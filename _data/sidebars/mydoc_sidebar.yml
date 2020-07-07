@@ -302,13 +302,13 @@ entries:
         url: /data-integrate/dataflow/dataflow-sql-server.html
         output: web,dataflowGd
       - title: Connect
-        url: /data-integrate/dataflow/dataflow-sap-sql-server-add.html
+        url: /data-integrate/dataflow/dataflow-sql-server-add.html
         output: web,dataflowGd
       - title: Sync
-        url: /data-integrate/dataflow/dataflow-sap-sql-server-sync.html
+        url: /data-integrate/dataflow/dataflow-sql-server-sync.html
         output: web,dataflowGd
       - title: Reference
-        url: /data-integrate/dataflow/dataflow-sap-sql-server-reference.html
+        url: /data-integrate/dataflow/dataflow-sql-server-reference.html
         output: web,dataflowGd
     - levelTwoTitle: Snowflake
       output: web,dataflowGD
