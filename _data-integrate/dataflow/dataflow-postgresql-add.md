@@ -1,23 +1,23 @@
 ---
-title: [Add a PostgreSQL database connection]
-last_updated: 7/6/2020
+title: [Add a Presto database connection]
+last_updated: 7/7/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to a PostgreSQL database using ThoughtSpot DataFlow.
+You can add a connection to a Presto database using ThoughtSpot DataFlow.
 
 Follow these steps:
 
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the PostgreSQL **Connection type**, the rest of the connection properties appear.
+4. After you select the Presto **Connection type**, the rest of the connection properties appear.
 
     <details>
-      <summary>See the <strong>Create connection</strong> screen for PostgreSQL</summary>
+      <summary>See the <strong>Create connection</strong> screen for Presto</summary>
         <p>
-        <img src="../../images/dataflow-postgresql-create.png" alt="Create PostgreSQL connection" /></p>
+        <img src="../../images/dataflow-presto-create.png" alt="Create Presto connection" /></p>
     </details>
 
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
