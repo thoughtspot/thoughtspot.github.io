@@ -13,7 +13,11 @@ To add a new connection to Snowflake, follow these steps:
 
 4. After you select the Snowflake **Connection type**, the rest of the connection properties appear.
 
-   ![Enter connection details]({{ site.baseurl }}/images/dataflow-snowflake-create.png "Enter connection details")
+   <details>
+    <summary>See the <strong>Create connection</strong> screen for Snowflake</summary>
+    <p>
+     <img src="../../images/dataflow-snowflake-create.png" alt="Create Snowflake connection" /></p>
+   </details>
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-connection-type)<br/>Choose the Snowflake connection type.<br/>Mandatory field.

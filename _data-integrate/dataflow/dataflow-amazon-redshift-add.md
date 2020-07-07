@@ -15,7 +15,7 @@ Follow these steps:
 4. After you select the Amazon Redshift **Connection type**, the rest of the connection properties appear.
 
    <details>
-     <summary>Create connection interface for Amazon Redshift</summary>
+     <summary>See the <strong>Create connection</strong> screen for Amazon Redshift</summary>
      <p>
       <img src="../../images/dataflow-amazon-redshift-create.png" alt="Create Amazon Redshift connection" /></p>
    </details>

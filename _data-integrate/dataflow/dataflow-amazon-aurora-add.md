@@ -15,7 +15,7 @@ Follow these steps:
 4. After you select the Amazon Aurora **Connection type**, the rest of the connection properties appear.
 
    <details>
-     <summary>Create connection interface for Amazon Aurora</summary>
+     <summary>See the <strong>Create connection</strong> screen for Amazon Aurora</summary>
      <p>
       <img src="../../images/dataflow-amazon-aurora-create.png" alt="Create Amazon Aurora connection" /></p>
    </details>

@@ -15,7 +15,7 @@ Follow these steps:
 4. After you select the Hive **Connection type**, the rest of the connection properties appear.
 
    <details>
-     <summary><strong>Create connection</strong> interface for Hive</summary>
+     <summary>See the <strong>Create connection</strong> screen for Hive</summary>
      <p>
       <img src="../../images/dataflow-hive-create.png" alt="Create Hive connection" /></p>
    </details>

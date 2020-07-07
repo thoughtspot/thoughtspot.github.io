@@ -2,7 +2,11 @@ To map the external tables to ThoughtSpot's internal database, follow these step
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
 
-    ![Open Advanced setup]({{ site.baseurl }}/images/dataflow-advanced-setup.png "Open Advanced setup")
+   <details>
+     <summary>See how to  open <strong>Advanced setup</strong></summary>
+     <p>
+     <img src="../../images/dataflow-advanced-setup.png" alt="Open Advanced setup" /></p>
+    </details>
 
 2. Choose the **Map tables and columns** tab.
 
@@ -10,20 +14,33 @@ To map the external tables to ThoughtSpot's internal database, follow these step
 
 4. Specify the following information for internal ThoughtSpot storage:
 
-   ![Map tables]({{ site.baseurl }}/images/dataflow-map-tables.png "Map tables")
+   <details>
+     <summary>See the elements of the table-naming screen</summary>
+     <p>
+       <img src="../../images/dataflow-map-tables.png" alt="Map tables" /></p>
+   </details>
 
    <dl id="ts-target-tb">
      <dlentry id="ts-target-database">
     <dt>ThoughtSpot database</dt>
     <dd id="database-existing">Select an existing ThoughtSpot database from the drop-down menu.</dd>
     <dd id="database-new">If you wish to create a new database in ThoughtSpot, click <strong>TQL Editor</strong>, enter the <code>CREATE DATABASE <em>my_database</em>;</code> command, and click <strong>Execute</strong>.
-        <br/><img src="../../images/dataflow-new-database.png" alt="add new database in ThoughtSpot"></dd>
+        <br/>
+        <details>
+          <summary>See how to create a new database in <strong>TQL editor</strong></summary>
+          <p>
+          <img src="../../images/dataflow-new-database.png" alt="add new database in ThoughtSpot"></p>
+          </details></dd>
     <dd>Mandatory field.</dd></dlentry>
      <dlentry id="ts-target-schema">
        <dt>ThoughtSpot schema</dt>
        <dd id="schema-exists">Select an existing ThoughtSpot schema from the drop-down menu.</dd>
         <dd id="schema-new">If you wish to create a new schema in your ThoughtSpot database, click <strong>TQL Editor</strong>, enter the <code>CREATE SCHEMA <em>my_schema</em>;</code> command, and click <strong>Execute</strong>.
-          <br/><img src="../../images/dataflow-new-schema.png" alt="add new schema in ThoughtSpot"></dd>
+          <br/>
+          <details>
+            <summary>See how to create a new schema in <strong>TQL editor</strong></summary>
+            <p>
+            <img src="../../images/dataflow-new-schema.png" alt="add new schema in ThoughtSpot"></p></details></dd>
         <dd>Mandatory field.</dd></dlentry>
      <dlentry id="ts-target-new-existing">
     <dt>New or Existing table</dt>
@@ -33,7 +50,11 @@ To map the external tables to ThoughtSpot's internal database, follow these step
           <dt>Create a new table</dt>
           <dd>Choose this option when you want to load data into a new table.
           <br/>Click <strong>TQL Editor</strong>, enter the <code>CREATE TABLE <em>my_table</em> ...;</code> command, and click <strong>Execute</strong>.
-            <br/><img src="../../images/dataflow-new-table.png" alt="add new table in ThoughtSpot">
+            <br/>
+            <details>
+              <summary>See how to create a new table in <strong>TQL editor</strong></summary>
+              <p>
+              <img src="../../images/dataflow-new-table.png" alt="add new table in ThoughtSpot"></p></details>
           <br/>Specify the table name.</dd></dlentry>
         <dlentry><dt>Choose existing table</dt><dd>Choose this option to load data into a table that already exists inside ThoughtSpot. <br/>Select the table name from the drop-down menu.</dd></dlentry></dl>
       </dd></dlentry>
