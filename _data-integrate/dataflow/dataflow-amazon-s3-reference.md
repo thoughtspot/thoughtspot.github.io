@@ -9,6 +9,8 @@ permalink: /:collection/:path.html
 Here is a list of the fields for an Amazon S3 connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
 
 ## Connection properties
+
+<dl id="dataflow-amazon-s3-connection-properties">
 <dlentry id="dataflow-amazon-s3-conn-connection-name"><dt>Connection name</dt><dd id="connection-name-description">Name your connection.</dd><dd id="connection-name-required">Mandatory field.</dd><dd id="connection-name-example"><strong>Example:</strong><br/>AmazonS3Connection</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-connection-type"><dt>Connection type</dt><dd id="connection-type-description">Choose the Amazon S3 connection type.</dd><dd id="connection-type-required">Mandatory field.</dd><dd id="connection-type-example"><strong>Example:</strong><br/>Amnazon S3</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-amazon-s3-url"><dt>Amazon S3 URL</dt><dd id="amazon-s3-url-description">Specify the Amazon S3 hostname link.</dd><dd id="amazon-s3-url-required">Mandatory field.</dd><dd id="amazon-s3-url-example"><strong>Example:</strong><br/>https://example1-amazonaws.com</dd></dlentry>
