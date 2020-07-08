@@ -1,12 +1,12 @@
 ---
 title: [Hive connection reference]
-summary: Learn about the fields used to create an Amazon Aurora connection with ThoughtSpot DataFlow.
+summary: Learn about the fields used to create a Hive connection with ThoughtSpot DataFlow.
 last_updated: 06/19/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields for an Amazon Aurora connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
+Here is a list of the fields for a Hive connection in ThoughtSpot DataFlow. You need specific information to establish a seamless and secure connection.
 
 ## Connection properties
 
