@@ -1,11 +1,11 @@
 ---
-title: [Sync data through Snowflake connection]
+title: [Sync data through Flat files connection]
 last_updated: 7/7/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After using ThoughtSpot DataFlow to establish a connection to a Snowflake database, you can create automatic data updates, to seamlessly refresh your data.
+After using ThoughtSpot DataFlow to establish a connection to a flat files, either local or remote, you can create automatic data updates, to seamlessly refresh your data.
 
 {% include content/dataflow/sync-for-file-systems.md %}
 
