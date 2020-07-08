@@ -28,15 +28,6 @@ entries:
     - title: DataFlow home page
       url: /data-integrate/dataflow/dataflow-home.html
       output: web,dataflowGD
-  - sectiontitle: Administration
-    output: web,dataflowGD
-    sectionitems:
-    - title: Manage DataFlow users
-      url: /data-integrate/dataflow/dataflow-user-management.html
-      output: web,dataflowGD
-    - title: DataFlow mail setup
-      url: /data-integrate/dataflow/dataflow-mail-setup.html
-      output: web,dataflowGD
   - sectiontitle: Database Connections
     output: web,dataflowGD
     sectionitems:
@@ -451,7 +442,15 @@ entries:
       - title: Reference
         url: /data-integrate/dataflow/dataflow-salesforce-reference.html
         output: web,dataflowGd
-
+  - sectiontitle: Administration
+    output: web,dataflowGD
+    sectionitems:
+    - title: Manage DataFlow users
+      url: /data-integrate/dataflow/dataflow-user-management.html
+      output: web,dataflowGD
+    - title: DataFlow mail setup
+      url: /data-integrate/dataflow/dataflow-mail-setup.html
+      output: web,dataflowGD
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
