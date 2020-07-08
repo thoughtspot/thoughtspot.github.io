@@ -4,7 +4,7 @@ To use scripting before or after the sync, follow these steps:
 
    <details>
      <summary>See how to set common <strong>Sync properties</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-properties-open.png" alt="Set sync properties" /></p>
+     <p><img src="../../images/dataflow-set-sync-properties-file-systems.png" alt="Set sync properties" /></p>
    </details>
 
 2. Choose the **Sync properties** tab.
@@ -13,18 +13,21 @@ To use scripting before or after the sync, follow these steps:
 
    <details>
      <summary>See how to expand the interface to see <strong>Advanced scripting options</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-scripts-open.png" alt="Expand scripting options" /></p>
+     <p><img src="../../images/dataflow-set-sync-scripts-file-systems-open.png" alt="Expand scripting options" /></p>
    </details>
 
 4. Specify the following information:
 
      <details>
        <summary>See how to add sync scripts</summary>
-       <p><img src="../../images/dataflow-set-sync-properties-scripts.png" alt="Set sync scripts" /></p>
+       <p><img src="../../images/dataflow-set-sync-properties-scripts-file-system.png" alt="Set sync scripts" /></p>
      </details>
 
     <dl id="set-sync-scripts">
-      <dlentry id="set-sync-pre-script">
+      <dlentry id="set-sync-file-trigger">
+         <dt>Wait for file</dt>
+         <dd>Specify the fully-qualified name of the file (directory path and file name) that must be present before sync can start.</dd></dlentry>
+     <dlentry id="set-sync-pre-script">
        <dt>Pre-script</dt>
        <dd>Add the script that you want to run <strong>before</strong> syncing.<br/>Optional field.<br/>For example, to drop data that is over 1 year old, enter the following expression:<br/><code>DELETE from FACT_TABLE Where DATE < ADD_DAYS(TODAY(),-365)</code>.<br/>To find the correct functions for the script, click <strong>Expression editor</strong>, use it to create a valid command (or several commands), and click <strong>OK</strong>.
          <details>

@@ -26,6 +26,6 @@
 
    <details>
      <summary>See how to examine the source table and its columns before sync</summary>
-     <p><img src="../../images//dataflow-sync-table.png" alt="Examine table to sync and its columns"></p></details>
-   
+     <p><img src="../../images/dataflow-sync-table.png" alt="Examine table to sync and its columns"></p></details>
+
 5. Click **Setup sync**.   
