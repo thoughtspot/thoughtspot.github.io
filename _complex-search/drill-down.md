@@ -47,7 +47,7 @@ When you drill down on an Answer within a pinboard, it works similarly to drilli
 ## Drill down with Answer Explorer
 You can also drill down using the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature. Answer Explorer provides AI-guided exploration of an answer within a pinboard. When you drill down normally, you cannot go back one step at a time to see an earlier version of your visualization. You have to delete filters from the search bar, or start your search again. If you drill down with Answer Explorer, you can use the *go back one step* feature.
 
-As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
+As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
 
 If you want to go back one step at a time while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
 
