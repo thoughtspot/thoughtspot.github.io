@@ -1,12 +1,12 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 7/8/2020
+last_updated: 7/9/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Answer Explorer, ThoughtSpot's AI-guided exploration of Answers and headline metrics within Pinboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria. The Answer Explorer AI considers both popularity and personalization. The feature suggests ways to answer questions that are relevant to many other users, and it takes into account your own ThoughtSpot history. Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
+Answer Explorer, ThoughtSpot's AI-guided exploration of Answers and headline metrics within Pinboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria. The Answer Explorer AI considers both popularity and personalization. The feature suggests ways to answer questions that are relevant to many other users, and takes your own ThoughtSpot history into account. Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
 
 You can access Answer Explorer from any Answer or headline metric in a Pinboard. Click the **Explore** button that appears when you hover over any Answer or headline.
 
@@ -16,7 +16,7 @@ The Answer expands to fill your screen, and the **Explore this data** menu appea
 
 ![Explore this data]({{ site.baseurl }}/images/explore-fullscreen.png "Explore this data")
 
-You can explore your data in several different ways, using [filters](#explore-filters), [adding](#explore-add) or [replacing](#explore-replace) attributes or measures, or [comparing](#explore-comparisons) attributes or measures.
+You can explore your data in several different ways, using [filters](#explore-filters), [adding](#explore-add) or [replacing](#explore-replace) attributes or measures, or [comparing](#explore-comparisons) attribute values.
 
 Note that when you explore a headline, you can only use Answer Explorer to [filter](#explore-filters) on it.
 
@@ -30,13 +30,15 @@ After you make a change to your Answer, you may want to go back to an earlier ve
 ## Filters
 Use **Filters** to narrow down your search result to only include the data you want to see. Answer Explorer uses sophisticated technology to show only the most relevant suggestions. Click on a suggested filter to add it to your visualization.
 
+{% include note.html content="In Answer Explorer, you can only <strong>filter</strong> on attribute columns, not measures." %}
+
 If you want to filter on a column value that Answer Explorer did not suggest, you can add your own filter, using the **Filters** search bar.
 
 1. Click on the search bar under **Add your own**.
 
     ![Click on the filter search bar]({{ site.baseurl }}/images/explore-filter-adhoc.png "Click on the filter search bar")
 
-2. Choose a column to filter on. For example, if you are a store manager for the **east** region, you may want to see monthly sales specific to the east region. You would choose to filter on the **store region** column.
+2. Choose an attribute column to filter on. For example, if you are a store manager for the **east** region, you may want to see monthly sales specific to the east region. You would choose to filter on the **store region** column.
 
     ![Choose a column to filter on]({{ site.baseurl }}/images/explore-filter-choose-column.png "Choose a column to filter on")
 
@@ -77,18 +79,18 @@ If you want to replace an attribute or measure that Answer Explorer did not sugg
 4. Choose an attribute or measure to add to your visualization.
 
 {: id="explore-comparisons"}
-## Compare attributes or measures
+## Compare attribute values
 Under the **compare** tab, you can easily perform a *versus* analysis. For example, Answer Explorer might suggest you compare your best- and worst-performing products, or one store region to another.
 
-![Compare attributes or measures]({{ site.baseurl }}/images/explore-compare.png "Compare attributes or measures")
+![Compare attribute values]({{ site.baseurl }}/images/explore-compare.png "Compare attribute values")
 
-If you want to compare a values that Answer Explorer did not suggest, you can choose your own, using the **comparisons** search bar.
+If you want to compare values that Answer Explorer did not suggest, you can choose your own, using the **comparisons** search bar.
 
 1. Click on the search bar under **Compare your own**.
 
-2. Choose an attribute or measure whose values you would like to compare. For example, choose **department** if you would like to compare your bakery and produce departments.
+2. Choose an attribute column whose values you would like to compare. For example, choose **department** if you would like to compare your bakery and produce departments.
 
-3. Select values to compare.
+3. Select the column values you would like to compare.
 
 ## Drill down with Answer Explorer
 You can Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline}. You cannot go back one step at a time if you Drill down on an Answer in a Pinboard, without using Answer Explorer.
