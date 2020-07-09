@@ -19,12 +19,12 @@ To add a new connection to Salesforce, follow these steps:
      <img src="../../images/dataflow-salesforce-create.png" alt="Create Salesforce connection" /></p>
    </details>
 
-    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
-    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-type)<br/>Choose the Salesforce connection type.<br/>Mandatory field.
-    * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-user)<br/>Specify the user id. This user must have data access privileges.<br/>Mandatory field.
-    * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-password)<br/>Specify the password.<br/>Mandatory field.
-    * [Use sandbox]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-use-sandbox)<br/>Specify if connecting to copy of a production environment.<br/>Optional field.
+    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-name)<br/>Name your connection.
+    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-type)<br/>Choose the Salesforce connection type.
+    * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-user)<br/>Specify the user id. This user must have data access privileges.
+    * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-password)<br/>Specify the password.
+    * [Use sandbox]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-use-sandbox)<br/>Specify if connecting to copy of a production environment.
 
-   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#connection-properties).
+   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#connection-properties) for details, defaults, and examples.
 
 5. Click **Create connection**.   
