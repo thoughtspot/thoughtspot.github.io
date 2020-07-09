@@ -11,7 +11,7 @@ permalink: /:collection/:path.html
 | &#10063; | [4. Ensure that your Linux kernel is on version 4.4 or later](#linux-kernel-version) |
 | &#10063; | [5. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
-| &#10063; | [7. Disable SELinux](#disable-selinux) |
+| &#10063; | [7. Temporarily disable SELinux](#disable-selinux) |
 
 
 {: id="set-up-hosts"}
@@ -119,4 +119,4 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 
 {: id="disable-selinux"}
 ## Disable SELinux
-We recommend that you disable SELinux if your organization permits it.
+We recommend that you temporarily disable SELinux during deployment, if your organization permits it. You can re-enable it after you install ThoughtSpot. 
