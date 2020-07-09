@@ -50,7 +50,7 @@ UI auto-update is in the Early Access phase. Please contact us if you are intere
 
 ### Back up and restore ThoughtSpot AWS and GCP clusters using cloud storage
 
-With AWS, you can back up and restore using an S3 bucket. With GCP, you can back up and restore using a GCS bucket.
+With AWS, you can back up and restore an S3-based cluster using an S3 bucket. With GCP, you can back up and restore a GCS-based cluster using a GCS bucket.
 
 For details, see:
 - [Back up and restore an AWS cluster using S3]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)

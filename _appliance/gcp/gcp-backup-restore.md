@@ -1,11 +1,13 @@
 ---
 title: [Back up and Restore a GCP cluster using GCS]
-last_updated: 3/13/2020
+last_updated: 7/9/2020
 sidebar: mydoc_sidebar
 summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in GCP using a GCS bucket."
 permalink: /:collection/:path.html
 ---
 It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.
+
+{% include note.html content="You can only back up your cluster to a GCS bucket if it is a GCS-based cluster. You cannot back up an HDFS-based cluster to a GCS bucket." %}
 
 ## Backing up to a GCS bucket
 
