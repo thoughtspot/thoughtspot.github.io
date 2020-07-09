@@ -22,18 +22,18 @@ Follow these steps:
       <img src="../../images/dataflow-hdfs-create.png" alt="Add a connection to Azure Blob Storage" /></p>
    </details>
 
-   * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-name)<br/>Name your connection.<br/>Mandatory field.
-   * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-type)<br/>Choose the Google BigQuery connection type.<br/>Mandatory field.
-   * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-user)<br/>Specify the user to connect to HDFS file system. This user must have data access privileges.<br/>Mandatory field. For Hive security with simple, LDAP, and SSL authentication only.
+   * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-name)<br/>Name your connection.
+   * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-type)<br/>Choose the Google BigQuery connection type.
+   * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-user)<br/>Specify the user to connect to HDFS file system. This user must have data access privileges. For Hive security with simple, LDAP, and SSL authentication only.
    * [Hadoop distribution ]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hadoop-distribution-)<br/>Provide the distribution of Hadoop being connected to<br/>Mandatory field.
    * [Distribution version]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-distribution-version)<br/>Provide the version of the Distribution chosen above<br/>Mandatory field.
-   * [Hadoop conf path]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hadoop-conf-path)<br/>By default Diyotta picks the Hadoop configuration files from the HDFS. In order to override this, specify an alternate location to pick the files. This is normally done if Diyotta should use different configuration settings than that set globally for the Hadoop instance.<br/>Mandatory field.
+   * [Hadoop conf path]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hadoop-conf-path)<br/>By default Diyotta picks the Hadoop configuration files from the HDFS. In order to override this, specify an alternate location to pick the files. This is normally done if Diyotta should use different configuration settings than that set globally for the Hadoop instance.
    * [HDFS HA configured]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hdfs-ha-configured)<br/>Enables High Availability for HDFS<br/>Optional field.
    * [HDFS name service]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hdfs-name-service)<br/>The logical name of given to HDFS nameservice. <br/>Mandatory field. For HDFS HA only.
    "* [HDFS name node IDs]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-hdfs-name-node-ids)<br/>Provides the list of NameNode IDs separted by comma and DataNodes use this property to determine all the NameNodes in the cluster.
-   XML property name is <code>dfs.ha.namenodes.<em>dfs.nameservices</em></code>.<br/>Mandatory field. For HDFS HA only."
-   * [RPC address for namenode1]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-rpc-address-for-namenode1)<br/>To specify the fully-qualified RPC address for each listed NameNode and defined as <code>dfs.namenodes.rpc-address.<em>dfs.nameservices</em>.<em>name_node_ID_1></em></code>.<br/>Mandatory field. For HDFS HA only.
-   * [RPC address for namenode2]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-rpc-address-for-namenode2)<br/>To specify the fully-qualified RPC address for each listed NameNode and defined as <code>dfs.namenode.rpc-address.<em>dfs.nameservices</em>.<em>name_node_ID_2</em></code>.<br/>Mandatory field. For HDFS HA only.
+   XML property name is <code>dfs.ha.namenodes.<em>dfs.nameservices</em></code>. For HDFS HA only."
+   * [RPC address for namenode1]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-rpc-address-for-namenode1)<br/>To specify the fully-qualified RPC address for each listed NameNode and defined as <code>dfs.namenodes.rpc-address.<em>dfs.nameservices</em>.<em>name_node_ID_1></em></code>. For HDFS HA only.
+   * [RPC address for namenode2]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-rpc-address-for-namenode2)<br/>To specify the fully-qualified RPC address for each listed NameNode and defined as <code>dfs.namenode.rpc-address.<em>dfs.nameservices</em>.<em>name_node_ID_2</em></code>. For HDFS HA only.
    * [DFS host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-dfs-host)<br/>Specify the DFS hostname or the IP address<br/>Mandatory field. For when <em>not</em> using HDFS HA.
    * [DFS port]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-dfs-port)<br/>Speciffy the associated DFS port<br/>Mandatory field. For when <em>not</em> using HDFS HA.
    * [Default HDFS location]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-default-hdfs-location)<br/>Specify the location for the default source/target location<br/>Mandatory field.
@@ -46,6 +46,6 @@ Follow these steps:
    * [KDC host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-kdc-host)<br/>Specify KDC Host Name where as KDC (Kerberos Key Distribution Center) is a service than runs on a domain controller server role (Configured from Kerbores configuration-/etc/krb5.conf )<br/>Mandatory field.
    * [Default realm]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-default-realm)<br/>A Kerberos realm is the domain over which a Kerberos authentication server has the authority to authenticate a user, host or service (Configured from Kerbores configuration-/etc/krb5.conf )<br/>Mandatory field.
 
-   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdf-reference.html#connection-properties).
+   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdf-reference.html#connection-properties) for details, defaults, and examples.
 
 5. Click **Create connection**.   
