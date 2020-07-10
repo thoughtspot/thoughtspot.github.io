@@ -1,7 +1,7 @@
 ---
 title: [Join a worksheet to another data source]
 
-last_updated: 11/18/2019
+last_updated: 7/10/2020
 summary: "Learn how to define joins between a worksheet and a table or view."
 toc: false
 sidebar: mydoc_sidebar
@@ -9,6 +9,10 @@ permalink: /:collection/:path.html
 ---
 
 Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the  table or view on the column you specify.
+
+See this matrix for information about which joins you can create, and what permissions these joins require.
+
+{% include content/joins-matrix.md %}
 
 Note that creating a [foreign key relationship]({{ site.baseurl }}/admin/loading/constraints.html) is preferred over a generic relationship in most cases, except for when you need to do a range join. Foreign key relationships perform better and protect users from overcounting upon aggregation.
 
