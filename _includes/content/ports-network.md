@@ -31,6 +31,7 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |4241|HTTP|Sage auto complete server HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the search service|
 |4242|RPC|Sage auto complete server RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
+|4249|TCP|Ports used by Enlite/SearchIQ|bidirectional|All nodes|All nodes|Port used for SpotIQ internal communication|
 |4251|RPC|Sage master RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4405|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
 |4500|RPC|Trace vault service RPC port|bidirectional|All nodes|All nodes|Trace collection for ThoughtSpot services|
