@@ -281,7 +281,7 @@ tscli backup [-h] {create,delete,ls,restore}
 
   <dl>
     <dlentry>
-      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] [--no-orion-master] name out </code></dt>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas,cloud}] [--remote] [--no-orion-master] name out </code></dt>
       <dd>
         <p>Pulls a snapshot and saves it as a backup. You must specify the snapshot name (<code>name</code>) and the directory to send the backup to (<code>out</code>). The command has the following optional parameters:</p>
 
