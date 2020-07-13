@@ -1,7 +1,7 @@
 ---
 title: [Constraints]
 
-last_updated: tbd
+last_updated: 7/13/2020
 summary: "Constraints allow you to build relationships and join tables."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,12 +12,17 @@ Constraints include primary keys, foreign keys, and relationships. Relationships
 
 When a primary key is selected for a table, it impacts data loading behavior. When a new row is added:
 
--   If another row already exists with same primary key, it is updated with the values in the new row.
+-   If another row already exists with the same primary key, it is updated with the values in the new row.
 -   If a row with the same primary key does not exist already, the new row is inserted into the table.
 
 This behavior is referred to as “upsert” because it does an `INSERT` or an `UPDATE`, depending on whether a row with the same primary key already exists.
 
 Note that ThoughtSpot does not check for primary key violations across different shards of the table. Therefore, you need to shard the table on the primary key columns if you require this “upsert” behavior.
+
+## Permitted joins and necessary permissions
+See this matrix for information about which joins you can create, and what permissions these joins require.
+
+{% include content/joins-matrix.md %}
 
 ## Foreign key relationships
 
@@ -38,7 +43,7 @@ Foreign keys have to match the primary key of the target table they refer to. So
 
 You may have a schema where there is a fact table that you want to join with another fact table. If there isn't a primary key/foreign key relationship between the tables, you can use many-to-many to enable this. You can do this by using the RELATIONSHIP syntax to add a link between them, that works similarly to the WHERE clause in a SQL join clause.
 
-{% include note.html content="Using generic relationships is not a best practice. In cases where you have two fact tables you want to join, it is better to find a way to create a bridge table between them, so you have a chasm trap. Look at your two fact tables to see if they share some common data that you could use to create a dimension table between them. For example a date or product dimension could be use to join an inventory fact table with a sales fact table. This is best done in your ETL process, before bringing the data into ThoughtSpot." %}
+{% include note.html content="Using many-to-many joins is not a best practice. In cases where you have two fact tables you want to join, it is better to find a way to create a bridge table between them, so you have a chasm trap. Look at your two fact tables to see if they share some common data that you could use to create a dimension table between them. For example, a date or product dimension could join an inventory fact table to a sales fact table." %}
 
 {% include note.html content="A many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows." %}
 
