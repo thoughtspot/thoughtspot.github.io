@@ -22,7 +22,7 @@ To map the columns of the external file columns to columns in ThoughtSpot's inte
    1. Select (or deselect) **columns** for syncing into ThoughtSpot.<br/>By default, all columns are selected.
    2. **Search** for columns by name; this is very useful for very wide tables.
    3. **Rename** columns in the ThoughtSpot table, for easier search.<br/>To make this change, click the pencil (edit) icon next to the name of the column.
-   4. **Change the data type** of the column inside the ThoughtSpot table.<br/>Click the down chevron icon to open the drop-down menu, and select a new data type.<br/>For example, if you know you have integer data, change the default **DOUBLE** datatype to **INT32**.
+   4. **Change the data type** of the column inside the ThoughtSpot table.<br/>Click the down chevron icon to open the drop-down menu, and select a new data type.<br/>For example, if you know you may very large numbers that require extra storage, change the default **FLOAT** datatype to **DOUBLE**.
    5. Set **Primary keys** of the table by toggling the selector to the 'on' position.<br/>Note that several columns may be primary keys.
    6. Set the **Sharding keys** of the table by toggling the selector to the 'on' position.<br/>Note that sharding key columns must be primary key columns.
    7. Specify the **Number of shards** in the table.

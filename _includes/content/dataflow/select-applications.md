@@ -12,7 +12,7 @@
 
 
    <details>
-     <summary>See how to specify the source database on the connection</summary>
+     <summary>See how to specify the source application on the connection</summary>
      <p><img src="../../images/dataflow-select-applications.png" alt="Select application"></p></details>
 
    Note that if you use multiple tables, you have to repeat these steps for each table.
