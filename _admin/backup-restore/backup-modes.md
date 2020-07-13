@@ -1,7 +1,7 @@
 ---
 title: [Understand backup modes]
 summary: Learn about types of backups.
-last_updated: 3/10/2020
+last_updated: 7/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -14,7 +14,7 @@ You can create a manual backup or configure an automated, periodic backup. For m
 
 {% include warning.html content="You should never disable the periodic snapshot system, because backups rely on it. For example, if you have disabled the periodic snapshots system and periodic backups are enabled, then the periodic backup may use a very outdated snapshot or it may fail all together." %}
 
-ThoughtSpot usually stores backups on a [NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) but you can store them on a local disk as well. When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 10 GB of extra space beyond the backup itself. The final backup image is smaller because these extra files are removed after the backup completes successfully. So, make sure you have enough disk space both to _take_ a backup and store the result. Use the `tscli storage df` command to identify the amount of space available.
+ThoughtSpot usually stores backups on a [NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) but you can store them on a local disk as well. You can back up an AWS cluster [using an S3 bucket]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html). You can back up a GCP cluster [using a GCS bucket]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html). When creating a backup, ThoughtSpot copies a release tarball and several supporting files to a disk you specify. Storing these supporting files takes about 10 GB of extra space beyond the backup itself. The final backup image is smaller because these extra files are removed after the backup completes successfully. So, make sure you have enough disk space both to _take_ a backup and store the result. Use the `tscli storage df` command to identify the amount of space available.
 
 You can create a backup using one of three modes: `full`, `lightweight`, or `dataless`.
 

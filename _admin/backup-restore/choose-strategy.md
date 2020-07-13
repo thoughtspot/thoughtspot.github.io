@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-last_updated: 3/10/2020
+last_updated: 7/13/2020
 summary: "Consider the strategies for backing up your ThoughtSpot cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -62,8 +62,15 @@ Depending on your situation and your goals, you can choose to use either a snaps
                 <tr id="storage">
                     <td><strong>Storage</strong></td>
                     <td>In the cluster's HDFS</td>
-                    <td>Outside the cluster on either local or NAS disk.</td>
-                </tr>
+                    <td>Options:
+                      <ul>
+                        <li>Outside the cluster on a local disk</li>
+                        <li>Outside the cluster on an NAS disk</li>
+                        <li>You can back up an AWS cluster using an S3 bucket.</li>
+                        <li>You can back up a GCP cluster using a GCS bucket.</li>
+                      </ul>
+                    </td>
+                  </tr>
                 <tr id="advantages">
                     <td><strong>Advantages</strong></td>
                     <td>

@@ -1,6 +1,6 @@
 ---
 title: [Back up and Restore an AWS cluster using S3]
-last_updated: 3/13/2020
+last_updated: 7/13/2020
 sidebar: mydoc_sidebar
 summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in AWS using an S3 bucket."
 permalink: /:collection/:path.html

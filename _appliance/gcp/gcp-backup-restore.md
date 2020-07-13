@@ -1,6 +1,6 @@
 ---
 title: [Back up and Restore a GCP cluster using GCS]
-last_updated: 3/13/2020
+last_updated: 7/13/2020
 sidebar: mydoc_sidebar
 summary: "Learn how to back up or restore your ThoughtSpot cluster hosted in GCP using a GCS bucket."
 permalink: /:collection/:path.html
