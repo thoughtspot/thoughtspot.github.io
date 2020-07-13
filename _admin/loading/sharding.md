@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/16/2020
+last_updated: 7/17/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -166,8 +166,8 @@ The shard key is a subset of the primary key. However, that is not the only guid
 2. **Choose a shard key that distributes data well across keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
-    `saleid`,`custid`,and `locationid`. The table has 10K sales, 400 locations,
-    and 2000 customers. If 5K sales are in just two locations, you should not use `locationid` as your shard key. If you use `locationid` as your shard key, you have data in fewer shards, which impacts performance. Instead, you should use `custid` or `locationid`.
+    `saleid`, `custid`, and `locationid`. The table has 10K sales, 400 locations,
+    and 2000 customers. If 5K sales are in just two locations, you should not use `locationid` as your shard key. If you use `locationid` as your shard key, you have data in fewer shards, which impacts performance. Instead, you should use `custid` and `locationid`.
 
     As a more concrete example, suppose you want to shard a table of retail data. Many retailers have an increase in sales around the winter holidays. You should not use `date` as your shard key, because you may have five or ten times your usual number of daily transactions during the month of December. Using `date` as your shard key would result in data skew, and would impact performance.
 
@@ -182,7 +182,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
     For example, suppose the table you want to shard has a primary key made up of
     `saleid`, `productid`, and `locationid`. The table has 10K sales, 40
     locations, and 200 products. Even if the sales are evenly distributed across
-    locations, you should not use `locationid` in your shard key, because there are only 40 possible keys. Instead, use `saleid` or `productid` for more variety.
+    locations, you should not use `locationid` in your shard key, because there are only 40 possible keys. Instead, use `saleid` and `productid` for more variety.
 
 4. **If you plan to join two or more tables that are both sharded, both tables must use the same shard key.**
 
@@ -193,6 +193,10 @@ The shard key is a subset of the primary key. However, that is not the only guid
     `PRIMARY KEY("saleid,customerid")` on B
 
     Use `saleid` as the shard key when you shard both tables.
+
+5. **If your primary key includes several columns, use all appropriate columns in the shard key.**
+
+    Your primary key may include several columns. For example, suppose the table you want to shard has a primary key made up of `saleid`, `custid`, and `locationid`, as in the example in guideline three. The table has 10K sales, 40 locations, and 200 products. Based on the best practice outlined in guideline three (**choose a shard key that results in a wide variety of keys**), you should not use `locationid` in your shard key. Both `saleid` and `custid` are good shard keys, based on the four best practices mentioned above. Instead of picking one column to use as your shard key, use both `saleid` and `custid`.
 
 You can always use your primary key as a shard key. If you have trouble picking another shard key based on the above requirements and best practices, use your primary key.
 
