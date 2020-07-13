@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/appliance/gcp/gcp-backup-restore.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T17:06:43-07:00" />
+<meta property="article:published_time" content="2020-07-13T14:03:31-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Back up and Restore a GCP cluster using GCS”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Back up and Restore a GCP cluster using GCS”]","dateModified":"2020-07-01T17:06:43-07:00","url":"https://docs.thoughtspot.com/6.1/appliance/gcp/gcp-backup-restore.html","datePublished":"2020-07-01T17:06:43-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/gcp/gcp-backup-restore.html"},"description":"It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Back up and Restore a GCP cluster using GCS”]","dateModified":"2020-07-13T14:03:31-07:00","url":"https://docs.thoughtspot.com/6.1/appliance/gcp/gcp-backup-restore.html","datePublished":"2020-07-13T14:03:31-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/gcp/gcp-backup-restore.html"},"description":"It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3821,6 +3821,8 @@ $('#toc').on('click', 'a', function() {
 
   <p>It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.</p>
 
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can only back up your cluster to a GCS bucket if it is a GCS-based cluster. You cannot back up an HDFS-based cluster to a GCS bucket.</div>
+
 <h2 id="backing-up-to-a-gcs-bucket">Backing up to a GCS bucket</h2>
 
 <p>To back up your cluster to a GCS bucket, use the ThoughtSpot tscli:</p>
@@ -3886,9 +3888,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jul 1, 2020 <br />
+        Generated: Jul 13, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/13/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 7/9/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
