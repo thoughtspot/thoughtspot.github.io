@@ -1,18 +1,18 @@
 To sync your data, perform these tasks:
 
-## Select table
-{% include content/dataflow/select-table.md %}
+## Select application
+{% include content/dataflow/select-applications.md %}
 
 ## Specify sync schedule
 {% include content/dataflow/schedule.md %}
 
 ## Map tables
 
-{% include content/dataflow/map-tables.md %}
+{% include content/dataflow/map-tables-applications.md %}
 
 ## Map columns
 
-{% include content/dataflow/map-columns.md %}
+{% include content/dataflow/map-columns-applications.md %}
 
 ## Set sync properties
 
