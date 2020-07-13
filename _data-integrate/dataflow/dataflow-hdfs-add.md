@@ -19,7 +19,19 @@ Follow these steps:
    <details>
      <summary>See the <strong>Create connection</strong> screen for HDFS</summary>
      <p>
-      <img src="../../images/dataflow-hdfs-create.png" alt="Add a connection to Azure Blob Storage" /></p>
+      <img src="../../images/dataflow-hdfs-create.png" alt="Add a connection to HDFS" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for HDFS with DFS-HA enabled</summary>
+     <p>
+      <img src="../../images/dataflow-hdfs-dfs-ha-create.png" alt="Add a connection to HDFS with DFS-HA" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for HDFS with DFS-HA enabled, and Kerberos authentication</summary>
+     <p>
+      <img src="../../images/dataflow-hdfs-dfs-ha-kerberos-create.png" alt="Add a connection to HDFS with DFS-HA and Kerberos authentication" /></p>
    </details>
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-name)<br/>Name your connection.
