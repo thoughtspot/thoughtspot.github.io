@@ -7,8 +7,8 @@
     <th>Materialized View</th>
     <th>Imported table (UI)</th>
     <th>Table uploaded from backend (tsload) or through DataFlow</th>
-    <th>Tables from Embrace</th>
-    <th>View on top of table from Embrace</th>
+    <th>Table uploaded through Embrace</th>
+    <th>View on top of table uploaded through Embrace</th>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -77,7 +77,7 @@
     <td>&cross;</td>
   </tr>
   <tr>
-    <td><strong>Table uploaded from Embrace</strong></td>
+    <td><strong>Table uploaded through Embrace</strong></td>
     <td><strong>Can edit</strong> permission on the source table, and <strong>can manage data</strong> permission</td>
     <td>&cross;</td>
     <td>&cross;</td>
@@ -88,7 +88,7 @@
     <td>&check; <br><strong>Note:</strong> The View and the table must be from the same connection.</td>
   </tr>
   <tr>
-    <td><strong>View on top of table uploaded from Embrace</strong></td>
+    <td><strong>View on top of table uploaded through Embrace</strong></td>
     <td><strong>Can edit</strong> permission on the source View</td>
     <td>&cross;</td>
     <td>&cross;</td>
