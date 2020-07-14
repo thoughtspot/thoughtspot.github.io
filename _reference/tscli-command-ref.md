@@ -2009,8 +2009,8 @@ This subcommand has the following options:
   </dl>
 
 {% include note.html content="When you enable scheduled pinboards, you should
-also configure a whitelist of intended email domains. Contact ThoughtSpot
-Support for help on how to configure a whitelist." %}
+also configure a list of intended email domains. Contact ThoughtSpot
+Support for help on how to configure this list." %}
 
 {: id="tscli-set"}
 ### set
