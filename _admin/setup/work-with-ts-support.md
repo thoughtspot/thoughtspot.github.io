@@ -22,8 +22,8 @@ This access can be granted and revoked easily, so you can enable it for a troubl
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-{% include note.html content="Before you set up a reverse tunnel, open port `22`
-in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %}
+{% include note.html content="Before you set up a reverse tunnel, open port <code>22</code>
+in your firewall outgoing rules to add <code>tunnelrelay.thoughtspot.com</code> to your list of allowed domains." %}
 
 {: id="remote-support-tscli"}
 ## Using remote support with tscli
