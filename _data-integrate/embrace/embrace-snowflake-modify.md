@@ -114,8 +114,6 @@ To delete a connection:
 
 4. Click **Delete**, and then click **Delete** again to confirm.
 
-   ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
-
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
    ![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type")

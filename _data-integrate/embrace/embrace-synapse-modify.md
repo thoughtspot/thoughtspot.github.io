@@ -114,8 +114,6 @@ To delete a connection:
 
 4. Click **Delete**, and then click **Delete** again to confirm.
 
-   ![Delete a connection]({{ site.baseurl }}/images/synapse-deleteconnection.png "Delete a connection") -->
-
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
    ![Dependent objects warning]({{ site.baseurl }}/images/connection-delete-warning.png "Dependent objects warning")

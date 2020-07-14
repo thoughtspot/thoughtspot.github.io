@@ -9,20 +9,24 @@ permalink: /:collection/:path.html
 Here is a list of the fields of a Teradata connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
 
 <dl id="embrace-gbq-ref">
-  <dlentry id="embrace-gbq-ref-connection-name">
+  <dlentry id="embrace-teradata-ref-connection-name">
     <dt>Connection name</dt>
     <dd>Enter a new Teradata connection name.<br/>Mandatory field.</dd>
   </dlentry>
-  <dlentry id="embrace-gbq-ref-connection-description">
+  <dlentry id="embrace-teradata-ref-connection-description">
     <dt>Connection description</dt>
     <dd>Provide a short description of the connection.<br/>Optional field.</dd>
   </dlentry>
-  <dlentry id="embrace-gbq-ref-project-id">
-    <dt>Project id</dt>
-    <dd>Enter the project ID associated with the Teradata database.<br/>Mandatory field.</dd>
+  <dlentry id="embrace-teradata-ref-host-id">
+    <dt>Host</dt>
+    <dd>Enter the host associated with the Teradata database.<br/>Mandatory field.</dd>
   </dlentry>
-  <dlentry id="embrace-gbq-ref-service-account">
-    <dt>Service account</dt>
-    <dd>Enter the service account associated with the Teradata database.<br/>Mandatory field.</dd>
+  <dlentry id="embrace-teradata-ref-user-id">
+    <dt>User</dt>
+    <dd>Enter the user account associated with the Teradata database.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-teradata-ref-database">
+    <dt>Database</dt>
+    <dd>Enter the database name associated with the Teradata database.<br/>Optional field.</dd>
   </dlentry>
 </dl>  
