@@ -95,7 +95,7 @@ To delete a table:
 
   When all dependencies are removed, you can delete the table.
 
-  ![]({{ site.baseurl }}/images/gbq-demoremapping.png "Dependent objects warning")
+  ![]({{ site.baseurl }}/images/embrace-delete-table-depend.png "Dependent objects warning")
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
