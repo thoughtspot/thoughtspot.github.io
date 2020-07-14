@@ -41,5 +41,5 @@ Use these references for successful installation and administration of ThoughtSp
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
+* [ThoughtSpot Documentation](https://cloud-docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)
