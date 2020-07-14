@@ -8,9 +8,9 @@
 
     ![Enter users or groups]({{ site.baseurl }}/images/sharing-textbox.png "Enter users or groups")
 
-    Note that you can only enter whitelisted email addresses. Whitelisted email domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-info.png){: .inline}.
+    Note that you can only enter email addresses whose domains are in your list of allowed domains. These email domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-info.png){: .inline}.
 
-    {% include tip.html content="If you want to hide the whitelisted email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
+    {% include tip.html content="If you want to hide the allowed email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
 
 5. Configure the level of access by selecting from the drop-down list. You can select:
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared object.
