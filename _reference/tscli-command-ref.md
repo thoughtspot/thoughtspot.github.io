@@ -739,8 +739,8 @@ This subcommand has the following actions:
 * `tscli scheduled-pinboards enable [-h]` Enables scheduled pinboards, which is disabled in prod clusters by default.
 
 {% include note.html content="When you enable scheduled pinboards, you should
-also configure a whitelist of intended email domains. Contact ThoughtSpot
-Support for help configuring a whitelist." %}
+also configure a list of intended email domains. Contact ThoughtSpot
+Support for help configuring this list." %}
 
 ###  smtp
 
