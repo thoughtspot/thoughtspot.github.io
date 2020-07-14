@@ -16,7 +16,7 @@ The following prequisites and considerstions apply to the data connect feature:
 - If you want to use HTTPS with your URL, you will need to provide a signed certificate when enabling ThoughtSpot Data Connect.
 - You will need outbound HTTPS (port 443 for infaagent) internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/).
 
-    If outbound HTTPS internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/) is not possible, you can instead whitelist the Informatica Cloud IP address ranges `206.80.52.0/24`, `206.80.61.0/24`, `209.34.91.0/24`, and `209.34.80.0/24`.
+    If outbound HTTPS internet access to [https://app.informaticaondemand.com](https://app.informaticaondemand.com/) and [https://app2.informaticacloud.com/](https://app2.informaticacloud.com/) is not possible, you can instead add the Informatica Cloud IP address ranges `206.80.52.0/24`, `206.80.61.0/24`, `209.34.91.0/24`, and `209.34.80.0/24` to your list of allowed domains.
 
 - You will also need any other internet connectivity and credentials required to access any cloud data sources you want to connect to, such as Salesforce. No inbound access is required.
 - Once ThoughtSpot Data Connect is enabled, any user who belongs to a group with **Has administration privileges** or who **Can Manage Data** can use the feature. Before enabling the feature, in sure that these privileges are configured properly.
