@@ -1,13 +1,17 @@
 ---
 title: [Analyst onboarding]
-last_updated: 5/22/2020
-summary: "As an analyst, your create and manage ThoughtSpot Pinboards for everyone in your organization. Let us guide you through the necessary steps."
+last_updated: 7/15/2020
+summary: "As an analyst, you create and manage ThoughtSpot Pinboards for everyone in your organization. Let us guide you through the necessary steps."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To repeat user onboarding, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
+When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, either *analyst* or *business user*. When you select *analyst*, the analyst onboarding begins, and guides you through a few basic scenarios.
+
+![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-analyst.png "Business user or analyst screen")
+
+To repeat user onboarding or change your persona, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
 
 Here is a quick introduction to the workflows you need as an Analyst in ThoughtSpot:
 

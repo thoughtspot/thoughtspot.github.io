@@ -1,15 +1,21 @@
 ---
 title: [Business User onboarding]
-last_updated: 5/29/2020
+last_updated: 7/15/2020
 toc: false
 summary: "Business users view data insights to inform and support critical business decisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you begin using ThoughtSpot, the onboarding process starts automatically and guides you through a few basic scenarios.
+When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, either *analyst* or *business user*. When you select *business user*, the business user onboarding begins, and guides you through a few basic scenarios.
 
-To repeat user onboarding, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
+![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-business-user.png "Business user or analyst screen")
+
+You can select **exit to homepage** at any time.
+
+![Exit to homepage]({{ site.baseurl }}/images/onboarding-business-user-exit.png "Exit to homepage")
+
+To repeat user onboarding or change your persona, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
 
 Here is a quick introduction to what you need to leverage ThoughtSpot as a business user:
 
