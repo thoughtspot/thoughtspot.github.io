@@ -38,7 +38,7 @@ You can export [one object at a time](#export-one), or export [more than one obj
 {: id="export-one"}
 To export one object:
 
-1. Navigate to the Pinboard, Answer, or Worksheet you want to export.
+1. Navigate to the Pinboard, Answer, View, or Worksheet you want to export.
 
 2. Click the three-dot icon, and select **Export as .tsl**.
 
@@ -73,13 +73,13 @@ To export multiple objects at a time, follow these steps:
 You can edit the `.tsl` file before you import it. Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).
 
 ## Update an object
-You can overwrite an existing Worksheet by downloading the `.tsl` file, making any necessary changes, and then reuploading the `.tsl` file. To update an Answer or Pinboard, you must export the `.tsl` file, make any necessary changes, and then upload it as a new object. You cannot overwrite an existing Answer or Pinboard. Instead, you must create a new object.
+You can overwrite an existing Worksheet, Answer, Pinboard, or View by downloading the `.tsl` file, making any necessary changes, and then re-uploading the `.tsl` file.
 
-To update an existing worksheet, follow these steps:
+To update an existing object, follow these steps. In this case, we are updating a Worksheet.
 
 1. Click **Data** on the top navigation bar.
 
-2. Click the name of the worksheet you want to edit.
+2. Click the name of the Worksheet you want to edit.
 
 3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
 
@@ -95,7 +95,7 @@ To update an existing worksheet, follow these steps:
 
 6. In your file system, find and select the `.tsl` file.
 
-7. In the **Update worksheet** interface, click **Upload**.
+7. In the **Update Worksheet** interface, click **Upload**.
 
    ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-upload.png "Upload the Worksheet")
 
@@ -106,7 +106,7 @@ To update an existing worksheet, follow these steps:
    ![Go to updated Worksheet]({{ site.baseurl }}/images/worksheet-update-success.png "Go to updated Worksheet")
 
 ## Migrate an object
-To migrate an Answer, Pinboard, or Worksheet from one cluster to another, follow these steps:
+To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps:
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 

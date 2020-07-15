@@ -1,12 +1,12 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 6/29/2020
-summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+last_updated: 7/15/2020
+summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, View, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TSL file
@@ -120,6 +120,109 @@ You may not see each of these parameters in your own TSL files, depending on whe
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#ijoin_progressive">join_progressive</a>: [ true | false ]
 </pre>
+
+{: id="syntax-views"}
+##  Syntax of the View TSL file
+
+The `TSL` file for Scriptable Views has a specific syntax.
+
+See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TSL file to specify a description for your View.
+
+<pre>
+<a href="#view">view</a>:
+  <a href="#name">name</a>: &lt;<em>view_name</em>&gt;
+  <a href="#description">description</a>:
+    This is a multi-line description of the View.
+    Description line 2
+  <a href="#table">tables</a>:
+    <a href="#identity">identity</a>:  
+    - <a href="#id">id</a>: &lt;<em>table_id_1</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+    - <a href="#fqn">fqn</a>: &lt;<em>table_fqn_1</em>&gt;
+    <a href="#identity">identity</a>:  
+    - <a href="#id">id</a>: &lt;<em>table_id_n</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
+    - <a href="#fqn">fqn</a>: &lt;<em>table_fqn_n</em>&gt;
+  <a href="#joins">joins</a>:
+  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+    <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+    <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+  <a href="#table_paths">table_paths</a>:
+  - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
+    <a href="#join_path">join_path</a>:
+    - {}
+  <a href="#formulas">formulas</a>:
+  - <a href="#id">id</a>: &lt;<em>formula_id_1</em>&gt;
+    <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
+    <a href="#expr">expr</a>: &lt;<em>formula_definition_1</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_1</em>&gt;
+      <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
+      <a href="#data_type">data_type</a>: [ Boolean | Text | Date | Datetime | Time
+          | Numeric | Decimal ]
+      <a href="#aggregation">aggregation</a>: [ SUM | COUNT | AVERAGE | MAX | MIN |
+                         COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]       
+  - <a href="#id">id</a>: &lt;<em>formula_id_n</em>&gt;
+    <a href="#name">name</a>: &lt;<em>formula_name_n</em>&gt;
+    <a href="#expr">expr</a>: &lt;<em>formula_definition_n</em>&gt;
+    <a href="#properties">properties</a>: &lt;<em>formula_properties_n</em>&gt;  
+  <a href="#filters">filters</a>:
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_n</em>&gt;
+  <a href="#view_columns">view_columns</a>:
+  - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
+    <a href="#description">description</a>: &lt;<em>optional_column_description</em>&gt;
+    <a href="#column_id">column_id</a>: &lt;<em>column_id_1</em>&gt;
+    <a href="#phrase">phrase</a>: &lt;<em>phrase_string_1</em>&gt;    
+    <a href="#properties">properties</a>:
+      <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
+      <a href="#aggregation">aggregation</a>: [ SUM | COUNT | AVERAGE | MAX | MIN |
+                     COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]
+      <a href="#index_type">index_type</a>: [ DONT_INDEX | DEFAULT | PREFIX_ONLY |
+                    PREFIX_AND_SUBSTRING | PREFIX_AND_WORD_SUBSTRING ]
+ 	    <a href="#index_priority">index_priority</a>: &lt;<em>index_priority</em>&gt;
+      <a href="#synonyms">synonyms</a> :
+             &lt;<em>synonym_1</em>&gt;
+             &lt;<em>synonym_2</em>&gt;
+      <a href="#is_attribution_dimension">is_attribution_dimension</a> : [true | false]
+      <a href="#is_additive">is_additive</a> : [ true | false ]
+      <a href="#calendar">calendar</a> : [ default | calendar_name ]
+      <a href="#format_pattern">format_pattern</a> : &lt;<em>format_pattern_string</em>&gt;
+      <a href="#currency_type">currency_type</a> :
+        is_browser : true
+          OR
+        column : &lt;<em>column_name</em>&gt;
+          OR
+        iso_code : &lt;<em>valid_ISO_code</em>&gt;
+      <a href="#is_hidden">is_hidden</a>: [ true | false ]
+      <a href="#geo_config">geo_config</a> :
+        latitude : true
+          OR
+        longitude : true
+          OR
+        country : true
+          OR
+        region_name:
+        - country : &lt;<em>name_supported_country</em>&gt;
+        - region_name : &lt;<em>region_name_in_UI</em>&gt;
+      <a href="#spotiq_preference">spotiq_preference</a>: &lt;<em>spotiq_preference_string</em>&gt;
+      <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]      
+    <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
+    <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
+    <a href="#formula_id">formula_id</a>: &lt;<em>formula_name_2</em>&gt;
+    ...  
+  <a href="#query">query</a>: &lt;<em>query_string</em>&gt;
+
+</pre>    
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TSL file
@@ -274,7 +377,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="aggregation">
     <dt>aggregation</dt>
-    <dd>The default aggregation of the Worksheet column, or the aggregation of the output for a formula within an Answer.<br>
+    <dd>The default aggregation of the Worksheet or View column, or the aggregation of the output for a formula.<br>
       Aggregation options depend on the data type.<br>
       Possible values: <code>SUM</code>, <code>COUNT</code>, <code>AVERAGE</code>, <code>MAX</code>, <code>MIN</code>, <code>COUNT_DISTINCT</code>, <code>NONE</code>, <code>STD_DEVIATION</code>, and <code>VARIANCE</code><br>
       Default: <code>SUM</code><br>
@@ -342,10 +445,10 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="column_type">
     <dt>column_type</dt>
-    <dd>The type of data the column represents. For a formula in an Answer, the <code>column_type</code> refers to the output of the formula. <br>
+    <dd>The type of data the column represents. For a formula, the <code>column_type</code> refers to the output of the formula. <br>
     Possible values: <code>MEASURE</code> or <code>ATTRIBUTE</code><br>
     For Worksheets, the default is: <code>MEASURE</code> <br>
-    For formulas in Answers, the default depends on the <a href="#data_type">data_type</a>. If the data type is <code>Numeric</code> or <code>Decimal</code>, the formula output’s <code>column_type</code> defaults to <code>Measure</code>. If the data type is <code>Boolean</code>, <code>Text</code>, <code>Date</code>, <code>Datetime</code>, or <code>Time</code>, the formula output’s <code>column_type</code> defaults to <code>Attribute</code>.</dd>
+    For formulas, the default depends on the <a href="#data_type">data_type</a>. If the data type is <code>Numeric</code> or <code>Decimal</code>, the formula output’s <code>column_type</code> defaults to <code>Measure</code>. If the data type is <code>Boolean</code>, <code>Text</code>, <code>Date</code>, <code>Datetime</code>, or <code>Time</code>, the formula output’s <code>column_type</code> defaults to <code>Attribute</code>.</dd>
   </dlentry>
 
   <!--<dlentry id="column_width">
@@ -384,7 +487,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="description">
     <dt>description</dt>
-    <dd>The text that describes an object: a <code>worksheet</code>, a <code>worksheet_column</code>, <code>answer</code>, <code>pinboard</code>, and so on.</dd>
+    <dd>The text that describes an object: a <code>worksheet</code>, a <code>worksheet_column</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, and so on.</dd>
   </dlentry>
 
   <dlentry id="destination">
@@ -409,7 +512,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="filters">
     <dt>filters</dt>
-    <dd>Contains specifications for Pinboard and Worksheet filters.</dd>
+    <dd>Contains specifications for Pinboard, View, and Worksheet filters.</dd>
   </dlentry>
 
   <dlentry id="format_pattern">
@@ -420,7 +523,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="formulas">
     <dt>formulas</dt>
-    <dd>The list of formulas in the worksheet<br>
+    <dd>The list of formulas in the Worksheet, View, or Answer.<br>
     Each formula is identified by <code>name</code>, the <code>expr</code> (expression), and an optional <code>id</code> attribute.</dd>
   </dlentry>
 
@@ -453,6 +556,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <dlentry id="id">
     <dt>id</dt>
     <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
+  </dlentry>
+
+  <dlentry id="identity">
+    <dt>identity</dt>
+    <dd>Specifies the identity of a table, based on its <code>name</code>, <code>id</code>, and <code>fqn</code>.</dd>
   </dlentry>
 
   <dlentry id="index_priority">
@@ -536,7 +644,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="joins">
     <dt>joins</dt>
-    <dd>List of joins between tables and views, used by the worksheet<br>
+    <dd>List of joins between tables and views, used by the Worksheet or View.<br>
     Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code>
     </dd>
   </dlentry>
@@ -563,7 +671,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code> and so on.<br>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, and so on.<br>
     For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
@@ -574,12 +682,17 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="oper">
     <dt>oper</dt>
-    <dd>The operator of the Pinboard or Worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
+    <dd>The operator of the Pinboard, View or Worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
   </dlentry>
 
   <dlentry id="ordered_column_ids">
     <dt>ordered_column_ids</dt>
     <dd>A list of columns, in the order they appear in the table.</dd>
+  </dlentry>
+
+  <dlentry id="phrase">
+  <dt>phrase</dt>
+  <dd>Phrase associated with a View column.</dd>
   </dlentry>
 
   <dlentry id="pinboard">
@@ -589,8 +702,12 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="properties">
     <dt>properties</dt>
-    <dd>The list of properties of a Worksheet column, or the properties of the output for a formula within an Answer.<br>
-    For Worksheets, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
+    <dd>The list of properties of a Worksheet or View column, a Worksheet or View itself, or the properties of the output for a formula within an Answer, Worksheet, or View.<br>
+
+    For Worksheets and Views, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
+
+    Worksheets and Views themselves can have the following properties that affect query generation: <code>is_bypass_rls</code>, and <code>join_progressive</code>.<br>
+
     For Answers, each formula's output can have the following properties, depending on its definition: <code>column_type</code> and <code>aggregation</code>. </dd>
   </dlentry>
 
@@ -689,7 +806,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="type">
     <dt>type</dt>
-    <dd>For Worksheets, this is the join type<br>
+    <dd>For Worksheets and Views, this is the join type.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
     For Answers, this is the chart type<br>
@@ -699,9 +816,20 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="values">
     <dt>values</dt>
-    <dd>The values being filtered (excluded or included) in a Pinboard or Worksheet.
+    <dd>The values being filtered (excluded or included) in a Pinboard, View, or Worksheet.
     </dd>
+  </dlentry>
+
+  <dlentry id="view">
+    <dt>view</dt>
+    <dd>Top-level container for all object definitions within the View.</dd>
   </dlentry>  
+
+  <dlentry id="view_columns">
+    <dt>view_columns</dt>
+    <dd>The list of columns in the View.<br>
+    Each column is identified by <code>name</code>, <code>description</code>, <code>column_id</code>, <code>phrase</code> and <code>properties</code>.</dd>
+  </dlentry>
 
   <dlentry id="visualizations">
     <dt>visualizations</dt>
