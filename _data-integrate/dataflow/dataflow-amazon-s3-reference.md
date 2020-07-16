@@ -1,7 +1,7 @@
 ---
 title: [Amazon S3 connection reference]
 summary: Learn about the fields used to create an Amazon S3 connection with ThoughtSpot DataFlow.
-last_updated: 06/19/2020
+last_updated: 07/16/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
