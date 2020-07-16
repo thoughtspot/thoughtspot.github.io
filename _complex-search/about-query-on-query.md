@@ -49,7 +49,7 @@ possible. If you want to do this, here are the steps at a high level:
 
 ## Best practices for using views
 
-Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
+Only users with the [**Can administrate ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
 worksheet size.
 
 {% include note.html content="Views do not support row level security, so all users of a view will be able to see all the data it contains." %}
