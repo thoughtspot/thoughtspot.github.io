@@ -13,7 +13,7 @@ When you begin using ThoughtSpot, the onboarding process starts automatically. Y
 
 To repeat user onboarding or change your persona, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
 
-Here is a quick introduction to the workflows you need as an Analyst in ThoughtSpot:
+Here is a quick introduction to the workflows you need as an Analyst in ThoughtSpot. The analyst onboarding guides you through these main workflows.
 
 <div class="grid-container-li-img">
   <div class="grid-child">
@@ -29,7 +29,7 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
      <li>
        <a href="{{ "/admin/ts-cloud/visualize-search.html "| prepend: site.baseurl }}">Visualize Search results as Answers</a>: search your data to get instant Answers as interactive tables and charts</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/pinboard-compose.html "| prepend: site.baseurl }}">Publish Answers in Pinboards</a>: collate all the Answers that support your use case in a single interactive and sharable Pinboard</li>
+       <a href="{{ "/admin/ts-cloud/pinboard-compose.html "| prepend: site.baseurl }}">Publish Answers in Pinboards</a>: collate all the Answers that support your use case in a single interactive and shareable Pinboard</li>
     </ol>
   </div>
 </div>  

@@ -11,7 +11,7 @@ When you begin using ThoughtSpot, the onboarding process starts automatically. Y
 
 ![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-business-user.png "Business user or analyst screen")
 
-You can select **exit to homepage** at any time.
+You can select **exit to homepage** at any time during the onboarding.
 
 ![Exit to homepage]({{ site.baseurl }}/images/onboarding-business-user-exit.png "Exit to homepage")
 
