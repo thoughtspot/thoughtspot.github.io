@@ -17,8 +17,8 @@
 #
 
 destination: _site/
-url: "https://docs.thoughtspot.com"
-baseurl: "/6.1"
+url: "https://dataflow-docs.thoughtspot.com"
+baseurl: "/1.0"
 port:
 output: pdf
 product: mydoc

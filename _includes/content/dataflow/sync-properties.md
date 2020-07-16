@@ -33,6 +33,6 @@ To set the sync properties, follow these steps:
                 <dd>This option adds new rows to the table.</dd></dlentry>
               <dlentry id="overwrite">
                 <dt>Overwrite</dt>
-                <dd>This option removes all existing rows, and then adds new rows to the table.</dd></dlentry>   
+                <dd>This option removes all existing rows, and then adds new rows to the table.</dd></dlentry>               
 
 4. Save your work by clicking **Save**.<br/>Alternatively, click **Save and sync now** to save your work and sync data at the same time.

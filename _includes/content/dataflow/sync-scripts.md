@@ -4,7 +4,7 @@ To use scripting before or after the sync, follow these steps:
 
    <details>
      <summary>See how to set common <strong>Sync properties</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-properties.png" alt="Set sync properties" /></p>
+     <p><img src="../../images/dataflow-set-sync-properties-open.png" alt="Set sync properties" /></p>
    </details>
 
 2. Choose the **Sync properties** tab.
