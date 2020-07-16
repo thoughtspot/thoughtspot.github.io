@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 7/15/2020
+last_updated: 7/16/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, View, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -114,7 +114,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
       <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]      
     <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
     <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
-    <a href="#formula_id">formula_id</a>: &lt;<em>formula_name_2</em>&gt;
+    <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     ...  
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
@@ -218,7 +218,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
       <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]      
     <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
     <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
-    <a href="#formula_id">formula_id</a>: &lt;<em>formula_name_2</em>&gt;
+    <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     ...  
   <a href="#query">query</a>: &lt;<em>query_string</em>&gt;
 
@@ -440,7 +440,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="column_id">
     <dt>column_id</dt>
-    <dd>The <code>id</code> of the worksheet column.<br> For Answers, <code>column_id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>column_id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>The <code>id</code> of the Worksheet or View column.<br> For Answers, <code>column_id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>column_id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <dlentry id="column_type">
@@ -487,7 +487,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="description">
     <dt>description</dt>
-    <dd>The text that describes an object: a <code>worksheet</code>, a <code>worksheet_column</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, and so on.</dd>
+    <dd>The text that describes an object: a <code>worksheet</code>, a <code>worksheet_column</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>view_column</code> and so on.</dd>
   </dlentry>
 
   <dlentry id="destination">
@@ -572,7 +572,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="index_type">
     <dt>index_type</dt>
-    <dd>The indexing option of the worksheet column<br>
+    <dd>The indexing option of the Worksheet or View column<br>
     Possible values: <code>DONT_INDEX</code>, <code>DEFAULT</code> (see <a href="../data-modeling/change-index.html#understand-the-default-indexing-behavior">Understand the default indexing behavior</a>), <code>PREFIX_ONLY</code>, <code>PREFIX_AND_SUBSTRING</code>, and <code>PREFIX_AND_WORD_SUBSTRING</code><br>
     Default: <code>DEFAULT</code><br>
     See <a href="../data-modeling/change-index.html#index-type">Index Type Values</a></dd>
@@ -714,6 +714,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <dlentry id="plotAsBand">
   <dt>plotAsBand</dt>
   <dd>Specifies whether to plot the chart conditional formatting like a band on the Visualization. This is the 'fill chart' option in the UI.</dd>
+  </dlentry>
+
+  <dlentry id="query">
+  <dt>query</dt>
+  <dd>The query that the View is based on.</dd>
   </dlentry>
 
   <dlentry id="range">

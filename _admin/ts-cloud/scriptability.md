@@ -1,7 +1,7 @@
 ---
 title: [SpotApps Scriptability]
-last_updated: 7/15/2020
-summary: "Use SpotApps to export Worksheets, Pinboards, and Answers in a human-readable format."
+last_updated: 7/16/2020
+summary: "Use SpotApps to export Worksheets, Views, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -57,7 +57,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources:
+4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets and Views):
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -77,13 +77,13 @@ You can overwrite an existing Worksheet, Answer, Pinboard, or View by downloadin
 
 To update an existing object, follow these steps. In this case, we are updating a Worksheet.
 
-1. Click **Data** on the top navigation bar.
+1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
-2. Click the name of the Worksheet you want to edit.
+2. Click the name of the object you want to edit.
 
 3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
 
-4. From the menu, select **Update Worksheet from file**.
+4. Select **Update [Object] from TSL**.
 
    Here, we are uploading the edited *Sales* worksheet.
 
@@ -95,13 +95,13 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 6. In your file system, find and select the `.tsl` file.
 
-7. In the **Update Worksheet** interface, click **Upload**.
+7. In the **Update [Object]** interface, click **Upload**.
 
    ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-upload.png "Upload the Worksheet")
 
-8. If you constructed the Worksheet file correctly, the **Upload Worksheet** interface displays an *Upload successful* message.
+8. If you constructed the file correctly, the **Upload [Object]** interface displays an *Upload successful* message.
 
-9. To examine the updated Worksheet, click **Go to Worksheet**.
+9. To examine the updated object, click **Go to [Object]**.
 
    ![Go to updated Worksheet]({{ site.baseurl }}/images/worksheet-update-success.png "Go to updated Worksheet")
 
@@ -114,11 +114,13 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 2. Navigate to the cluster you want to add the object to.
 
-3. Click **Answers**, **Pinboards**, or **Data** on the top navigation bar, depending on the objects you want to export.
+3. Click **Answers**, **Pinboards**, or **Data** on the top navigation bar, depending on the objects you want to migrate.
 
-4. To upload a Worksheet, click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen. Then, select **Create worksheet from file**.
+4. To upload a Worksheet, click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen. Then, select **Import Worksheet TSL**.
 
     ![Create worksheet from file]({{ site.baseurl }}/images/worksheet-create-from-file.png "Create worksheet from file")
+
+5. To upload a View, click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen. Then, select **Import View TSL**.
 
 5. To upload a Pinboard or Answer, click the **Import** button in the upper-right side of the screen.   
 

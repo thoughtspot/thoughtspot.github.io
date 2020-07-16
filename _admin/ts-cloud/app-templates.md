@@ -12,7 +12,7 @@ When you first provision ThoughtSpot, you have to put in some work to load and m
 
 Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable application templates, or SpotApps, which provide an easy way for you to start getting value from your data.
 
-Currently, ThoughtSpot offers three pre-built SpotApps: Salesforce, procurement, and accounts receivable. These templates leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, and Worksheets.
+Currently, ThoughtSpot offers three pre-built SpotApps: Salesforce, procurement, and accounts receivable. These templates leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, and Worksheets.
 
 For example, if you choose to use the Procurement template, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
 
@@ -22,4 +22,4 @@ Your users may want to understand what Answers and Pinboards are before they sta
 
 ![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
 
-When you are ready to move to a production environment, you can migrate these Pinboards, Answers, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
+When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
