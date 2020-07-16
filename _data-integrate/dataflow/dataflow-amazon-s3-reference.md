@@ -1,7 +1,7 @@
 ---
 title: [Amazon S3 connection reference]
 summary: Learn about the fields used to create an Amazon S3 connection with ThoughtSpot DataFlow.
-last_updated: 06/19/2020
+last_updated: 07/16/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ Here is a list of the fields for an Amazon S3 connection in ThoughtSpot DataFlow
 
 <dl id="dataflow-amazon-s3-connection-properties">
 <dlentry id="dataflow-amazon-s3-conn-connection-name"><dt>Connection name</dt><dd id="connection-name-description">Name your connection.</dd><dd id="connection-name-required">Mandatory field.</dd><dd id="connection-name-example"><strong>Example:</strong><br/>AmazonS3Connection</dd></dlentry>
-<dlentry id="dataflow-amazon-s3-conn-choose-connection-type"><dt>Choose connection type</dt><dd id="choose-connection-type-description">Choose the Amazon S3 connection type.</dd><dd id="choose-connection-type-required">Mandatory field.</dd><dd id="choose-connection-type-example"><strong>Example:</strong><br/>Amnazon S3</dd></dlentry>
+<dlentry id="dataflow-amazon-s3-conn-choose-connection-type"><dt>Choose connection type</dt><dd id="choose-connection-type-description">Choose the Amazon S3 connection type.</dd><dd id="choose-connection-type-required">Mandatory field.</dd><dd id="choose-connection-type-example"><strong>Example:</strong><br/>Amazon S3</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-amazon-s3-url"><dt>Amazon S3 URL</dt><dd id="amazon-s3-url-description">Specify the Amazon S3 hostname link.</dd><dd id="amazon-s3-url-required">Mandatory field.</dd><dd id="amazon-s3-url-example"><strong>Example:</strong><br/>https://example1-amazonaws.com</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-bucket"><dt>Bucket</dt><dd id="bucket-description">An Amazon S3 bucket name is globally unique, and the namespace is shared by all AWS accounts</dd><dd id="bucket-required">Mandatory field.</dd><dd id="bucket-example"><strong>Example:</strong><br/>bucket</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-access-key"><dt>Access key</dt><dd id="access-key-description">Access key is an Access key ID created while creating access keys as AWS security credentials</dd><dd id="access-key-required">Mandatory field.</dd><dd id="access-key-example"><strong>Example:</strong><br/>access key</dd></dlentry>

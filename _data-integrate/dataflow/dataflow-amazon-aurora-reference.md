@@ -1,7 +1,7 @@
 ---
 title: [Amazon Aurora connection reference]
 summary: Learn about the fields used to create an Amazon Aurora connection with ThoughtSpot DataFlow.
-last_updated: 06/19/2020
+last_updated: 07/16/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ Here is a list of the fields for an Amazon Aurora connection in ThoughtSpot Data
 
 <dl id="dataflow-amazon-aurora-connection-properties">
 <dlentry id="dataflow-amazon-aurora-conn-connection-name"><dt>Connection name</dt><dd id="connection-name-description">Name your connection.</dd><dd id="connection-name-required">Mandatory field.</dd><dd id="connection-name-example"><strong>Example:</strong><br/>AmazonAuroraConnection</dd></dlentry>
-<dlentry id="dataflow-amazon-aurora-conn-connection-type"><dt>Connection type</dt><dd id="connection-type-description">Choose the Amazon Aurora connection type.</dd><dd id="connection-type-required">Mandatory field.</dd><dd id="connection-type-example"><strong>Example:</strong><br/>Amnazon Aurora</dd></dlentry>
+<dlentry id="dataflow-amazon-aurora-conn-connection-type"><dt>Connection type</dt><dd id="connection-type-description">Choose the Amazon Aurora connection type.</dd><dd id="connection-type-required">Mandatory field.</dd><dd id="connection-type-example"><strong>Example:</strong><br/>Amazon Aurora</dd></dlentry>
 <dlentry id="dataflow-amazon-aurora-conn-host"><dt>Host</dt><dd id="host-description">Specify the hostname or IP address of the Aurora system.</dd><dd id="host-required">Mandatory field.</dd><dd id="host-example"><strong>Example:</strong><br/>example.com</dd></dlentry>
 <dlentry id="dataflow-amazon-aurora-conn-port"><dt>Port</dt><dd id="port-description">Specify the port associated with Amazon Aurora connections.</dd><dd id="port-required">Mandatory field.</dd><dd id="port-example"><strong>Example:</strong><br/>1234</dd></dlentry>
 <dlentry id="dataflow-amazon-aurora-conn-user"><dt>User</dt><dd id="user-description">Specify the user to connect to Amazon Aurora. This user must have data access privileges.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
