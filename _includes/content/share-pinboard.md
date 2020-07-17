@@ -43,3 +43,6 @@ To share a Pinboard from within the Pinboard, follow these steps.
 5. [Specify permissions](#specify-permissions).
 
 {% include content/share-answersandpinboards-specify-permissions.md %}
+
+## Share a Pinboard visualization
+You can also share a specific Pinboard visualization. When you share a Pinboard visualization, the user receives an email with a link to that visualization.
