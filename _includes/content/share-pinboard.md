@@ -26,7 +26,7 @@ To share a Pinboard from the main Pinboard page, follow these steps.
 
     ![Share the pinboard]({{ site.baseurl }}/images/sharing-pinboard-mainpageshare.png "Share the pinboard")
 
-6. [Specify permissions](#specify-permissions).  
+6. [Specify permissions](#specify-permissions).
 
 {: id="share-pinboardpage"}
 ## Share from within a pinboard
@@ -36,13 +36,25 @@ To share a Pinboard from within the Pinboard, follow these steps.
 
 2. Save the Pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
-3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
+3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}.
 
     ![Click the sharing icon]({{ site.baseurl }}/images/sharing-pinboardshareicon.png "Click the sharing icon")
 
 5. [Specify permissions](#specify-permissions).
 
-{% include content/share-answersandpinboards-specify-permissions.md %}
-
 ## Share a Pinboard visualization
-You can also share a specific Pinboard visualization. When you share a Pinboard visualization, the user receives an email with a link to that visualization.
+You can also share a specific visualization within a Pinboard. When you share a Pinboard visualization, the user or group receives an email with a link to that visualization.
+
+Note that sharing a specific visualization within a Pinboard gives users and groups access to the entire Pinboard.
+
+To share a Pinboard visualization, follow these steps:
+
+1. Navigate to the Pinboard visualization that you would like to share.
+
+2. Select the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline} that appears when you hover over the visualization.
+
+    ![Share a Pinboard visualization]({{ site.baseurl }}/images/share-pinboard-viz-button.png "Share a Pinboard visualization")
+
+5. [Specify permissions](#specify-permissions).
+
+{% include content/share-answersandpinboards-specify-permissions.md %}

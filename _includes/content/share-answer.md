@@ -37,7 +37,7 @@ To share an Answer from within the Answer, follow these steps.
     ![Save an answer]({{ site.baseurl }}/images/sharing-save-answer.png "Save an answer")
     <!--{% include image.html file="sharing-save-answer.png" title="Save an answer" alt="Click the ellipsis icon and then click save to save an answer." caption="Save an answer" %}-->
 
-3. Share the answer by clicking the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
+3. Share the answer by clicking the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}.
 
     ![Share an answer]({{ site.baseurl }}/images/sharing-share-icon.png "Share an answer")
     <!--{% include image.html file="sharing-share-icon.png" title="Share an answer" alt="To share an answer, click the share icon at the top right of your screen, next to the ellipsis icon." caption="Share an answer" %}-->
