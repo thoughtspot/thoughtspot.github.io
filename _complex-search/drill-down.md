@@ -58,7 +58,7 @@ When you find a valuable insight using Drill down, you may want to save that Ans
 3. **Save** your new Answer and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.
 
-You can also [share the Answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html) by clicking the sharing icon ![]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}. Otherwise, the Answer returns to its original state when you exit the page.
+You can also [share the Answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html) by clicking the sharing icon ![]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}. Otherwise, the Answer returns to its original state when you exit the page.
 
 ## Share your data
 If you own a pinboard or answer, you can drill down to the data beneath.

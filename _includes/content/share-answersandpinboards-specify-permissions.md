@@ -8,7 +8,7 @@
 
     ![Enter users or groups]({{ site.baseurl }}/images/sharing-textbox.png "Enter users or groups")
 
-    Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-info.png){: .inline}.
+    Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-information-10px.png){: .inline}.
 
     {% include tip.html content="If you want to hide the allowed email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
 
@@ -18,11 +18,17 @@
 
     ![Specify permissions]({{ site.baseurl }}/images/sharing-permissions.png "Specify permissions")
 
-    If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A yellow warning symbol ![]({{ site.baseurl }}/images/icon-warning-yellow-20px.png){: .inline} appears. If you click on it, it tells you to enable access:
+6. If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A black warning symbol appears when you try to share with a user who does not have underlying data access. If you click on it, it tells you to enable access:
 
-    ![Enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Enable data access")
+    ![Warning: enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Warning: enable data access")
 
-    If you own the underlying data source, refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html). If you do not own the data source, ThoughtSpot emails the owner of the data source or your ThoughtSpot administrator to ask them to share the data.
+    If you own the underlying data source, you can enable access through the sharing dialog box. If you do not own the data source, ThoughtSpot emails the owner of the data source or your ThoughtSpot administrator to ask them to share the data.
+
+    To enable access, select **Give view access to underlying data sources** at the bottom of the dialog box. You can click on the arrow to view the data sources.
+
+    ![Enable data access]({{ site.baseurl }}/images/sharing-data-source-access.png "Enable data access")
+
+    After you enable access, the warning symbol turns into a green checkmark.
 
 6. To stop sharing with a user or group, click the **x** icon ![]({{ site.baseurl }}/images/icon-delete-20px.png){: .inline}.
 
@@ -31,6 +37,12 @@
 6. You can send an email notification and an optional message:
 
     ![Send notification]({{ site.baseurl }}/images/sharing-notifmessage.png "Send notification")
+
+5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
+
+    Note that sending users this link does not share the object with them. You must also share the object by clicking the **Share** button at the bottom of the dialog box.
+
+    ![Share an object and send the link to users you shared with]({{ site.baseurl }}/images/share-copy-link.png "Share an object and send the link to users you shared with")
 
 6. Click **Share**.
 

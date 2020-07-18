@@ -1,6 +1,6 @@
 ---
 title: [Request Access]
-last_updated: 4/1/2020
+last_updated: 7/17/2020
 summary: "If you cannot view a Pinboard on ThoughtSpot, you can request access to it."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -23,23 +23,31 @@ ThoughtSpot sends an email notification, requesting view or edit access, to the 
 ## Request edit access
 You may have view only access to a Pinboard. If you don't have edit privileges, you cannot save any changes you make to the Pinboard. You cannot pin an Answer to that Pinboard, change the Pinboard layout, or delete a visualization.
 
- If you have view only access, the locked icon ![]({{ site.baseurl }}/images/icon-locked-10px.png "The locked icon"){: .inline} appears next to the Pinboard name.
+If you have view only access, the locked icon ![]({{ site.baseurl }}/images/icon-locked-10px.png "The locked icon"){: .inline} appears next to the Pinboard name.
 
-If you click on that icon, it tells you to request access to the Pinboard to edit it.
+If you click on that icon, it allows you to request access to the Pinboard to edit it. You can add an optional message.
 
-![Request edit access]({{ site.baseurl }}/images/sharing-nodataaccess.png "Request edit access")
+![Request edit access]({{ site.baseurl }}/images/request-edit-access.png "Request edit access")
 
-To request edit access to a Pinboard, email the owner of the Pinboard.
+After you click **Request access**, the system tells you who it emailed to request access:
+
+![Edit access request sent]({{ site.baseurl }}/images/request-access-edit-sent.png "Edit access request sent")
 
 ## Request data access
 If you don't have access to a Pinboard's underlying data source, you cannot use features that involve columns based on data you do not have access to. For example, you cannot filter on the Pinboard, Drill down on the Answers in the Pinboard, or run SpotIQ on those Answers. If you attempt to use these features, a notification appears, telling you to request access to the underlying data source.
 
 ![Access required]({{ site.baseurl }}/images/sharing-downloadaccessrequired.png "Access required")
 
- If you do not have access to the data source, the locked icon ![]({{ site.baseurl }}/images/icon-locked-10px.png "The locked icon"){: .inline} appears next to the Pinboard name.
+If you do not have access to the data source, the locked icon ![]({{ site.baseurl }}/images/icon-locked-10px.png "The locked icon"){: .inline} appears next to the Pinboard name.
 
-If you click on that icon, it tells you to request access to the data source to interact with the Pinboard. It specifies which data source you need access to. In the image below, you need access to the **Retail Sales** data source.
+If you click on that icon, it allows you to request access to the data source to interact with the Pinboard. You can add an optional message.
 
-![Request data access]({{ site.baseurl }}/images/sharing-viewonly.png "Request data access")
+![Request data access]({{ site.baseurl }}/images/request-data-access.png "Request data access")
 
-To request access to a data source, email your administrator.
+To see which data source you need access to, click the down icon next to **Data sources**:  
+
+![View data sources]({{ site.baseurl }}/images/request-access-data-sources.png "View data sources")
+
+After you click **Request access**, the system tells you who it emailed to request access:
+
+![Data source access request sent]({{ site.baseurl }}/images/request-access-edit-sent.png "Data source access request sent")
