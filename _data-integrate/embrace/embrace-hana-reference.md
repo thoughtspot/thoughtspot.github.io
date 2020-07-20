@@ -17,12 +17,21 @@ Here is a list of the fields of a SAP HANA connection in ThoughtSpot Embrace. Yo
     <dt>Connection description</dt>
     <dd>Provide a short description of the connection.<br/>Optional field.</dd>
   </dlentry>
-  <dlentry id="embrace-HANA-ref-project-id">
-    <dt>Project id</dt>
-    <dd>Enter the project ID associated with the SAP HANA database.<br/>Mandatory field.</dd>
+  <dlentry id="embrace-HANA-ref-host-port">
+    <dt>Host and port</dt>
+    <dd>Enter the host followed by a colon and the port number of the SAP HANA database.<br/>Mandatory field.</dd>
+    <strong>Example</strong>: If your host is <code>192.168.1.1</code>, and your port is <code>8080</code> you would enter <code>192.168.1.1:8080</code>.<br/>Mandatory field.</dd>
   </dlentry>
-  <dlentry id="embrace-HANA-ref-service-account">
-    <dt>Service account</dt>
-    <dd>Enter the service account associated with the SAP HANA database.<br/>Mandatory field.</dd>
+  <dlentry id="embrace-HANA-user-id">
+    <dt>User</dt>
+    <dd>Enter the user associated with the SAP HANA database.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-HANA-password">
+    <dt>User</dt>
+    <dd>Enter the password associated with the user of the SAP HANA database.<br/>Mandatory field.</dd>
+  </dlentry>
+  <dlentry id="embrace-HANA-password">
+    <dt>Database</dt>
+    <dd>Enter the database associated with the SAP HANA database.<br/>Mandatory field.</dd>
   </dlentry>
 </dl>  

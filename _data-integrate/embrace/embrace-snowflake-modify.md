@@ -66,10 +66,9 @@ To remap a connection:
     !["Download the source mapping file"]({{ site.baseurl }}/images/snowflake-downloadyaml.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
+<!--    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
 
-    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
-
-7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
+7. On the Remapping page, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 ## Deleting a table from a Snowflake connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
@@ -98,7 +97,7 @@ To delete a table:
 
    When all dependencies are removed, you can delete the table.
 
-   ![]({{ site.baseurl }}/images/delete-warning.png "Dependent objects warning")
+   ![]({{ site.baseurl }}/images/embrace-delete-table-depend.png "Dependent objects warning")
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
@@ -114,8 +113,6 @@ To delete a connection:
 3. Check the box next to the connection you want to delete.
 
 4. Click **Delete**, and then click **Delete** again to confirm.
-
-   ![]({{ site.baseurl }}/images/delete-a-connection.png "delete a connection type")
 
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
