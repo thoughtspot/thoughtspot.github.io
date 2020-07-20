@@ -1724,6 +1724,15 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-hana-reference.html
         output: web,embraceGd
+  #- sectiontitle: DataFlow
+  #  output: web,dataflowGD
+  #  sectionitems:
+  #  - title: DataFlow Overview
+  #    url: /data-integrate/dataflow/dataflow.html
+  #    output: web,dataflowGD
+  #  - title: DataFlow home page
+  #    url: /data-integrate/dataflow/dataflow-home.html
+  #    output: web,dataflowGD
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
