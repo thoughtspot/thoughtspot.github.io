@@ -20,7 +20,7 @@ To edit a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to edit.
 
@@ -51,7 +51,7 @@ To remap a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to remap.
     ![Select a connection to remap]({{ site.baseurl }}/images/gbq-chooseconnection.png "Select a connection to remap")
@@ -75,7 +75,7 @@ To delete a table:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
 
@@ -106,7 +106,7 @@ To delete a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Check the box next to the connection you want to delete.
 
