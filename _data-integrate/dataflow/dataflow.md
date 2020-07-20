@@ -6,6 +6,21 @@ summary: "With DataFlow, you can move data into ThoughtSpot from most databases.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+<div class="grid-container-opener">
+
+  <div class="grid-child">
+    <img src="{{ "/images/dataflow-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot DataFlow"></div>
+  <div class="grid-child">
+    <p class="text-opener">
+      <strong>Easily load data into ThoughtSpot’s in-memory engine</strong>
+<br/>&bull;&nbsp;&nbsp;Graphical, code-free, analyst-friendly experience
+<br/>&bull;&nbsp;&nbsp;Support for the most popular data sources
+</p>
+    <p class="text-opener">With ThoughtSpot DataFlow, you can schedule sync to refresh your data, and your visuals are always current.</p>
+    </div>
+  <div class="grid-child">&nbsp;</div>
+</div>
+
 If your company maintains large sources of data externally, you can use ThoughtSpot DataFlow to easily ingest just the relevant information, and then query that data and use ThoughtSpot's analysis and visualization features. And after you configure scheduled refresh, your analysis visuals are always current.
 
 ## Key features of DataFlow
