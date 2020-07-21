@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Version
-  version: 6.2 Guides
+  product: Version 6.2
+#  version: 6.2
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:

@@ -1,5 +1,5 @@
 ---
-title: [Modify a SAP HANA connection]
+title: [Modify an SAP HANA connection]
 last_updated: 06/18/2020
 summary: Learn how to modify a SAP HANA connection and its tables.
 sidebar: mydoc_sidebar
@@ -12,15 +12,15 @@ You can modify an Embrace SAP HANA connection in the following ways:
 - Delete a table
 - Delete a connection
 
-## Editing a SAP HANA connection
+## Editing an SAP HANA connection
 
-You can edit a SAP HANA connection to add tables and columns.
+You can edit an SAP HANA connection to add tables and columns.
 
 To edit a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to edit.
 
@@ -43,7 +43,7 @@ To edit a connection:
 
 To remove a table from a connection, delete it from the connection details page. For more information, see [Deleting a table]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-modify.html#deleting-a-table-from-a-SAP HANA-connection).
 
-## Remapping a SAP HANA connection
+## Remapping an SAP HANA connection
 
 Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
@@ -51,10 +51,9 @@ To remap a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to remap.
-    ![Select a connection to remap]({{ site.baseurl }}/images/HANA-chooseconnection.png "Select a connection to remap")
 
 4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
    ![Remap a connection]({{ site.baseurl }}/images/HANA-remapping.png "Remap a connection")
@@ -68,18 +67,16 @@ To remap a connection:
 
 7. On the Remapping page, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
-## Deleting a table from a SAP HANA connection
+## Deleting a table from an SAP HANA connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
 
 To delete a table:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
-
-   ![Select a connection]({{ site.baseurl }}/images/HANA-chooseconnection.png "Select a connection")
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
@@ -99,14 +96,14 @@ To delete a table:
 
 You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
-## Deleting a SAP HANA connection
+## Deleting an SAP HANA connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
 To delete a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Check the box next to the connection you want to delete.
 

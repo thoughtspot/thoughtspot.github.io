@@ -20,7 +20,7 @@ To edit a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to edit.
 
@@ -51,11 +51,9 @@ To remap a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to remap.
-
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
 4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
@@ -77,11 +75,9 @@ To delete a table:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
-
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 
@@ -108,7 +104,7 @@ To delete a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Connections** tab.
 
 3. Check the box next to the connection you want to delete.
 
