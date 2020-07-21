@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [SpotApps Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TSL file
