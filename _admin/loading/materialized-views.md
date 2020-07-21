@@ -40,7 +40,7 @@ These are the statuses a view can have:
 |Unknown|View status could not be determined.|Click **Update status**.|
 |Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
 
-\* You will only have the option to refresh data if you have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) privilege.
+\* You will only have the option to refresh data if you have the [**Can administrate ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) privilege.
 
 ## Freshness of data
 
