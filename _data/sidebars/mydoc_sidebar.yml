@@ -124,7 +124,7 @@ entries:
         - title: Using the in keyword for nested searches
           url: /complex-search/in-keyword-searches.html
           output: web,ugBk
-        - title: Proximity searches "near" and "farther than"
+        - title: "Proximity search: near and farther than"
           url: /admin/features/proximity-search.html
           output: web,ugBk
       - levelThreeTitle: Work with filters
@@ -391,31 +391,31 @@ entries:
         - title: What is SpotIQ
           url: /spotiq/whatisspotiq.html
           output: web,ugBk
-        - title: "Best SpotIQ practices"
+        - title: Best practices
           url: /spotiq/special-topics.html
           output: web,ugBk
-        - title: "Monitor Headlines"
+        - title: Monitor Headlines
           url: /spotiq/monitor-headlines.html
           output: web,ugBk
-        - title: "Comparative Analysis"
+        - title: Comparative Analysis
           url: /spotiq/comparative-analysis.html
           output: web,ugBk
-        - title: "Custom SpotIQ analysis"
+        - title: Custom SpotIQ analysis
           url: /spotiq/customization.html
           output: web,ugBk
-        - title: "Advanced R customizations"
+        - title: Advanced R customizations
           url: /spotiq/adv-customize-withr.html
           output: web,ugBk
-        - title: "Insight feedback"
+        - title: Insight feedback
           url: /spotiq/insight-feedback.html
           output: web,ugBk
-        - title: "SpotIQ preferences"
+        - title: SpotIQ preferences
           url: /spotiq/spotiq-preferences.html
           output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
       levelTwoItems:
-        - title: "Understand data sources"
+        - title: Understand data sources
           url: /end-user/data-view/data-intro-end-user.html
           output: web,ugBk
         - title: Create and load CSV Files
@@ -826,7 +826,7 @@ entries:
         - title: Use stickers
           url: /admin/data-modeling/stickers-concept.html
           output: web,admBk
-    - levelTwoTitle: Simplify search with worksheets
+    - levelTwoTitle: "Worksheets: improve Search"
       output: web,admBk
       levelTwoItems:
       - title: Create and use worksheets
@@ -844,13 +844,13 @@ entries:
       - title: How the worksheet join rule works
         url: /admin/worksheets/progressive-joins.html
         output: web,admBk
-      - title: "Change join rule or RLS for a worksheet"
+      - title: Change join rule or RLS for a worksheet
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
-      - title: "Create a join relationship"
+      - title: Create a join relationship
         url: /admin/worksheets/add-joins.html
         output: web,admBk
-      - title: "Modify joins between Worksheet Tables"
+      - title: Modify joins between Worksheet Tables
         url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
       - title: Delete Worksheets or Tables
@@ -891,6 +891,15 @@ entries:
         output: web,admBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
+        output: web,admBk
+    - levelTwoTitle: Scriptability
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview
+        url: /admin/scriptability/scriptability.html
+        output: web,admBk
+      - title: Migrate or restore Worksheets
+        url: /admin/worksheets/worksheet-export.html
         output: web,admBk
     - levelTwoTitle: Set up SearchIQ
       output: web,admBk
@@ -1724,36 +1733,445 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-hana-reference.html
         output: web,embraceGd
-  #- sectiontitle: DataFlow
-  #  output: web,dataflowGD
-  #  sectionitems:
-  #  - title: DataFlow Overview
-  #    url: /data-integrate/dataflow/dataflow.html
-  #    output: web,dataflowGD
-  #  - title: DataFlow home page
-  #    url: /data-integrate/dataflow/dataflow-home.html
-  #    output: web,dataflowGD
+# DataFlow only in on-prem form factor
+  - sectiontitle: DataFlow
+    output: web,dataflowGD
+    sectionitems:
+    - title: DataFlow Overview
+      url: /data-integrate/dataflow/dataflow.html
+      output: web,dataflowGD
+    - title: DataFlow home page
+      url: /data-integrate/dataflow/dataflow-home.html
+      output: web,dataflowGD
+    - levelTwoTitle: Database Connections
+      output: web,dataflowGD
+      levelTwoItems:
+      - levelThreeTitle: Amazon Aurora
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-amazon-aurora.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-amazon-aurora-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-amazon-aurora-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-amazon-aurora-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Amazon Redshift
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-amazon-redshift.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-amazon-redshift-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-amazon-redshift-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-amazon-redshift-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Azure Synapse
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-azure-synapse.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-azure-synapse-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-azure-synapse-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-azure-synapse-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Cassandra
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-cassandra.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-cassandra-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-cassandra-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-cassandra-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Google BigQuery
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-google-bigquery.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-google-bigquery-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-google-bigquery-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-google-bigquery-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Hive
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-hive.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-hive-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-hive-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-hive-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: IBM Db2
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-ibm-db2.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-ibm-db2-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-ibm-db2-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-ibm-db2-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: MariaDB
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-mariadb.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-mariadb-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-mariadb-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-mariadb-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: MongoDB
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-mongodb.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-mongodb-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-mongodb-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-mongodb-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: MySQL
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-mysql.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-mysql-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-mysql-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-mysql-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Netezza
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-netezza.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-netezza-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-netezza-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-netezza-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Oracle
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-oracle.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-oracle-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-oracle-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-oracle-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: PostgreSQL
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-postgresql.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-postgresql-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-postgresql-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-postgresql-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Presto
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-presto.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-presto-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-presto-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-presto-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: SAP Adaptive Server Enterprise
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: SAP HANA
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sap-hana.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sap-hana-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sap-hana-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sap-hana-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: SAP SQL Anywhere
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sap-sql-anywhere.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sap-sql-anywhere-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sap-sql-anywhere-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: SQL Server
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sql-server.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sql-server-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sql-server-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sql-server-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Snowflake
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-snowflake.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-snowflake-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-snowflake-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-snowflake-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Splice Machine
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-splice-machine.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-splice-machine-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-splice-machine-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-splice-machine-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Teradata
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-teradata.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-teradata-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-teradata-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-teradata-reference.html
+          output: web,dataflowGd
+    - levelTwoTitle: File System Connections
+      output: web,dataflowGD
+      sectionitems:
+      - levelThreeTitle: Amazon S3
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-amazon-s3.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-amazon-s3-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-amazon-s3-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-amazon-s3-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Azure Blob Storage
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-azure-blob-storage.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-azure-blob-storage-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-azure-blob-storage-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Flat Files
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-files.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-files-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-files-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-files-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Google Cloud Storage
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-google-cloud-storage.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-google-cloud-storage-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-google-cloud-storage-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-google-cloud-storage-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: HDFS
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-hdfs.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-hdfs-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-hdfs-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-hdfs-reference.html
+          output: web,dataflowGd
+    - levelTwoTitle: Application Connections
+      output: web,dataflowGD
+      levelTwoItems:
+      - levelThreeTitle: Salesforce
+        output: web,dataflowGD
+        levelThreeItems:
+         - title: Overview
+           url: /data-integrate/dataflow/dataflow-salesforce.html
+           output: web,dataflowGd
+         - title: Connect
+           url: /data-integrate/dataflow/dataflow-salesforce-add.html
+           output: web,dataflowGd
+         - title: Sync
+           url: /data-integrate/dataflow/dataflow-salesforce-sync.html
+           output: web,dataflowGd
+         - title: Reference
+           url: /data-integrate/dataflow/dataflow-salesforce-reference.html
+           output: web,dataflowGd
+    - levelTwoTitle:  Administration
+      output: web,dataflowGD
+      levelTwoItems:
+      - title: Manage DataFlow users
+        url: /data-integrate/dataflow/dataflow-user-management.html
+        output: web,dataflowGD
+      - title: DataFlow mail setup
+        url: /data-integrate/dataflow/dataflow-mail-setup.html
+        output: web,dataflowGD
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-#    - levelTwoTitle: Embrace
-#      output: web,digBk
-#      levelTwoItems:
-#      - title: Overview
-#        url: /data-integrate/embrace/embrace-intro.html
-#        output: web,digBk
-#      - title: Add a connection
-#        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
-#        output: web,digBk
-#      - title: Modify a connection
-#        url: /data-integrate/embrace/getting-started/modify-a-connection.html
-#        output: web,pdf
-#      - title: Connectors reference
-#        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
-#        output: web,digBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
       output: web,digBk
