@@ -391,7 +391,7 @@ You may not see each of these parameters in your own TSL file, depending on whet
 {: id="limitations"}
 ## Limitations of working with Worksheet TSL files
 
-There are certain limitations to the changes you can apply be editing a Worksheet through TSL.
+There are certain limitations to the changes you can apply by editing a Worksheet through TSL.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
