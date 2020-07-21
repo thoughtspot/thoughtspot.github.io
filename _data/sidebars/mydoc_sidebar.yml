@@ -124,7 +124,7 @@ entries:
         - title: Using the in keyword for nested searches
           url: /complex-search/in-keyword-searches.html
           output: web,ugBk
-        - title: Proximity searches "near" and "farther than"
+        - title: "Proximity search: near and farther than"
           url: /admin/features/proximity-search.html
           output: web,ugBk
       - levelThreeTitle: Work with filters
@@ -391,31 +391,31 @@ entries:
         - title: What is SpotIQ
           url: /spotiq/whatisspotiq.html
           output: web,ugBk
-        - title: "Best SpotIQ practices"
+        - title: Best practices
           url: /spotiq/special-topics.html
           output: web,ugBk
-        - title: "Monitor Headlines"
+        - title: Monitor Headlines
           url: /spotiq/monitor-headlines.html
           output: web,ugBk
-        - title: "Comparative Analysis"
+        - title: Comparative Analysis
           url: /spotiq/comparative-analysis.html
           output: web,ugBk
-        - title: "Custom SpotIQ analysis"
+        - title: Custom SpotIQ analysis
           url: /spotiq/customization.html
           output: web,ugBk
-        - title: "Advanced R customizations"
+        - title: Advanced R customizations
           url: /spotiq/adv-customize-withr.html
           output: web,ugBk
-        - title: "Insight feedback"
+        - title: Insight feedback
           url: /spotiq/insight-feedback.html
           output: web,ugBk
-        - title: "SpotIQ preferences"
+        - title: SpotIQ preferences
           url: /spotiq/spotiq-preferences.html
           output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
       levelTwoItems:
-        - title: "Understand data sources"
+        - title: Understand data sources
           url: /end-user/data-view/data-intro-end-user.html
           output: web,ugBk
         - title: Create and load CSV Files
@@ -826,7 +826,7 @@ entries:
         - title: Use stickers
           url: /admin/data-modeling/stickers-concept.html
           output: web,admBk
-    - levelTwoTitle: Simplify search with worksheets
+    - levelTwoTitle: "Worksheets: improve Search"
       output: web,admBk
       levelTwoItems:
       - title: Create and use worksheets
@@ -844,13 +844,13 @@ entries:
       - title: How the worksheet join rule works
         url: /admin/worksheets/progressive-joins.html
         output: web,admBk
-      - title: "Change join rule or RLS for a worksheet"
+      - title: Change join rule or RLS for a worksheet
         url: /admin/worksheets/change-inclusion-rule.html
         output: web,admBk
-      - title: "Create a join relationship"
+      - title: Create a join relationship
         url: /admin/worksheets/add-joins.html
         output: web,admBk
-      - title: "Modify joins between Worksheet Tables"
+      - title: Modify joins between Worksheet Tables
         url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
       - title: Delete Worksheets or Tables
@@ -891,6 +891,15 @@ entries:
         output: web,admBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
+        output: web,admBk
+    - levelTwoTitle: Scriptability
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview
+        url: /admin/scriptability/scriptability.html
+        output: web,admBk
+      - title: Migrate or restore Worksheets
+        url: /admin/worksheets/worksheet-export.html
         output: web,admBk
     - levelTwoTitle: Set up SearchIQ
       output: web,admBk
