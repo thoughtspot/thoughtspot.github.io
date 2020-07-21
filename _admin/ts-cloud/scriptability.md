@@ -1,5 +1,5 @@
 ---
-title: [SpotApps Scriptability]
+title: [Scriptability]
 last_updated: 6/29/2020
 summary: "Use SpotApps to export Worksheets, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
