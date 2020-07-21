@@ -68,8 +68,7 @@ saved.
 A dataless backup saves a backup of the schema (metadata), with no data.
 Dataless backups allow you to send a copy of your cluster metadata to
 ThoughtSpot Support for troubleshooting without compromising data security and
-privacy. The size of a dataless backup is usually within 10's of megabytes
-provided you do not have customized binaries.
+privacy. 
 
 When restoring from a dataless backup, you must supply the correct release
 tarball, since this type of backup does not include the software release.
