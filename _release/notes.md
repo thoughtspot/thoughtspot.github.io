@@ -1,24 +1,24 @@
 ---
-title: ["6.1 Release Notes"]
+title: ["6.2 Release Notes"]
 toc: false
-last_updated: 04/09/2020
+last_updated: 21/07/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.1.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.2 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.1.1 New Features](#6-1-1-new)
+* [6.2 New Features](#6-2-new)
 * [Early Access Programs](#early-access)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 
-{: id="6-1-1-new"}
-## 6.1.1 New Features and Functionality
+{: id="6-2-new"}
+## 6.2 New Features and Functionality
 
-For a complete list of issues that we fixed in this release, see [6.1.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-1-1).
+For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
 
 ### Amazon Linux 2
 
