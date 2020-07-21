@@ -60,7 +60,7 @@ To export multiple Answers at a time, follow these steps:
     ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
 
 ## Edit the Answer `.tsl` file
-You can edit the Answer `.tsl` file before you import it. Refer to [TSL Answer specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html) for the full syntax of the TSL file.
+You can edit the Answer `.tsl` file before you import it. Refer to [Answer TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html) for the full syntax of the TSL file.
 
 {: id="answer-update"}
 ## Update an Answer
@@ -95,4 +95,4 @@ To migrate an Answer from one cluster to another, follow these steps:
    ![Upload successful]({{ site.baseurl }}/images/scriptability-cloud-successful-import.png "Upload successful")
 
 ## Related Information
-- [TSL Answer specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html)
+- [Answer TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html)

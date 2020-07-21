@@ -60,7 +60,7 @@ To export multiple Pinboards at a time, follow these steps:
     ![Zip file]({{ site.baseurl }}/images/scriptability-pinboard-zip-file.png "Zip file")
 
 ## Edit the Pinboard `.tsl` file
-You can edit the Pinboard `.tsl` file before you import it. Refer to [TSL Pinboard specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html) for the full syntax of the TSL file.
+You can edit the Pinboard `.tsl` file before you import it. Refer to [Pinboard TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html) for the full syntax of the TSL file.
 
 {: id="pinboard-update"}
 ## Update a Pinboard
@@ -95,4 +95,4 @@ To migrate a Pinboard from one cluster to another, follow these steps:
    ![Upload successful]({{ site.baseurl }}/images/scriptability-pinboard-successful.png "Upload successful")
 
 ## Related Information
-- [TSL Pinboard specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html)
+- [Pinboard TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html)

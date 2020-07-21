@@ -1,5 +1,5 @@
 ---
-title: [TSL Pinboard specification]
+title: [Pinboard TSL specification]
 last_updated: 7/20/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Pinboard in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
