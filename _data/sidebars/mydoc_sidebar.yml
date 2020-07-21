@@ -94,6 +94,12 @@ entries:
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
           output: web,ugBk
+        - title: Migrate or restore Answers
+          url: /admin/scriptability/scriptability-answer.html
+          output: web,admBk
+        - title: Answer TSL specification
+          url: /admin/scriptability/tsl-answer.html
+          output: web,admBk
         - title: Ask an Expert
           url: /end-user/search/ask-an-expert.html
           output: web,ugBk
@@ -370,6 +376,12 @@ entries:
         - title: Download as PDF
           url: /end-user/pinboards/download-pinboard-pdf.html
           output: web,ugBk
+        - title: Migrate or restore Pinboards
+          url: /admin/scriptability/scriptability-pinboard.html
+          output: web,admBk
+        - title: Pinboard TSL specification
+          url: /admin/scriptability/tsl-pinboard.html
+          output: web,admBk
     - levelTwoTitle: Use custom R scripts
       output: web,ugBk
       levelTwoItems:
