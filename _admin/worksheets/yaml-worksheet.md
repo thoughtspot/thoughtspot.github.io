@@ -40,7 +40,7 @@ You may not see each of these parameters in your own TSL file, depending on whet
   - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#join_path">join_path</a>:
-    - <a href="#join">join</a>join:
+    - <a href="#join">join</a>:
       - &lt;<em>join_name_1</em>&gt;
   - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
