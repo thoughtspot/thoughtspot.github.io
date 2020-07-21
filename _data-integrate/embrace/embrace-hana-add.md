@@ -1,17 +1,17 @@
 ---
-title: [Add a SAP HANA connection]
+title: [Add an SAP HANA connection]
 last_updated: 06/18/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Embrace is enabled, you can add a connection to a SAP HANA database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
+Once ThoughtSpot Embrace is enabled, you can add a connection to an SAP HANA database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
 To add a new connection to SAP HANA:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Connections** tab, and click **+ Add connection** at the upper-right-hand side of the page.
 
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
@@ -36,7 +36,7 @@ To add a new connection to SAP HANA:
 6. Click **Continue**.       
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
-    ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
+    ![Select tables and columns for your connection]({{ site.baseurl }}/images/teradata-selecttables.png "Select tables and columns for your connection")
   <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/HANA-selecttables.png "Select tables and columns for your connection") -->
 
    Once the connection is added, you can search your BiqQuery database right away by clicking **Search now**.
@@ -49,7 +49,7 @@ The connection you just created is a link to the external data source. If there 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
 ## Related information
-- [Modify a SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-modify.html)
+- [Modify an SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-modify.html)
 - [SAP HANA connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-reference.html)
 - [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
 - [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)

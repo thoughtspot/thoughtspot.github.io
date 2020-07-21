@@ -55,8 +55,6 @@ To remap a connection:
 
 3. Click the name of the connection you want to remap.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
-
 4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
     ![Remap a connection]({{ site.baseurl }}/images/redshift-remapping.png "Remap a connection")
@@ -80,8 +78,6 @@ To delete a table:
 2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
-
-    ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
 
 4. Find the table you want to delete in the list, and check the box next to its name.
 

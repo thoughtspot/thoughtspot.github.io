@@ -81,8 +81,6 @@ To delete a table:
 
 3. Click the name of the connection that contains the table you want to delete.
 
-    ![Select a connection]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection")
-
 4. Find the table you want to delete in the list, and check the box next to its name.
 
 5. Click **Delete**, and then click **Delete** again to confirm.
