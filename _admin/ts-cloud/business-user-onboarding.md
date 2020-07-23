@@ -1,13 +1,13 @@
 ---
 title: [Business User onboarding]
-last_updated: 7/15/2020
+last_updated: 7/23/2020
 toc: false
 summary: "Business users view data insights to inform and support critical business decisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, either *analyst* or *business user*. When you select *business user*, the business user onboarding begins, and guides you through a few basic scenarios.
+When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, based on how you use ThoughtSpot. As a *business user*, you use ThoughtSpot to search and analyze data to help inform your business decisions. When you select the *business user* persona, the business user onboarding begins, and guides you through a few basic scenarios.
 
 ![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-business-user.png "Business user or analyst screen")
 

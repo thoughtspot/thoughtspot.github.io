@@ -1,13 +1,13 @@
 ---
 title: [Analyst onboarding]
-last_updated: 7/15/2020
+last_updated: 7/23/2020
 summary: "As an analyst, you create and manage ThoughtSpot Pinboards for everyone in your organization. Let us guide you through the necessary steps."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, either *analyst* or *business user*. When you select *analyst*, the analyst onboarding begins, and guides you through a few basic scenarios.
+When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, based on how you use ThoughtSpot. As an *analyst*, you use ThoughtSpot to set up data connections, define relationships, and create Worksheets to help your team search and analyze data. When you select the *analyst* persona, the analyst onboarding begins, and guides you through a few basic scenarios.
 
 ![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-analyst.png "Business user or analyst screen")
 
@@ -33,6 +33,12 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
     </ol>
   </div>
 </div>  
+
+As you complete these tasks, the progress bar at the bottom of your screen helps to guide you through the steps, and automatically updates when you finish a step. The progress bar is visible from anywhere in ThoughtSpot, except the home hub. Select **next steps** next to the progress bar to learn more about your next task.
+
+![Analyst onboarding progress bar]({{ site.baseurl }}/images/analyst-onboarding-progress-bar.png "Analyst onboarding progress bar")
+
+Note that the progress bar informs you both how many steps you have completed, and what number step you are on. In the image above, the user did not complete step 1, but did complete 2 other steps.
 
 <!--
 1. [Connect to your data]({{ site.baseurl }}/admin/ts-cloud/connect-data.html): Learn how to connect ThoughtSpot to your live data in Snowflake or RedShift databases.<br>
