@@ -101,11 +101,15 @@ The following matrix compares the specific function support across the different
 <th>Amazon<br />Redshift</th>
 <th>Google<br />BigQuery</th>
 <th>Azure<br />Synapse</th>
+<th>Teradata</th>
+<th>SAP<br />HANA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -117,9 +121,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -131,9 +139,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -145,6 +157,8 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
@@ -152,6 +166,8 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>MEDIAN</code></td>
@@ -159,12 +175,16 @@ The following matrix compares the specific function support across the different
 <td>&check;</td>
 <td>&cross;</td>
 <td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>PERCENTILE</code></td>
 <td>&check;</td>
 <td>&check;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 <td>&check;</td>
 </tr>
 </tbody>
@@ -269,8 +289,13 @@ The following list captures the specific limitations across the different databa
      <dd>Azure Synapse supports up to 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
    <dlentry>
      <dd>Azure Synapse does not support foreign keys, so no PK-FK joins can be defined in Synapse.</dd></dlentry>
-     </dl>     
-
+  <dlentry>
+     <dt>Teradata</dt>
+     <dd>Teradata does not support <code>JSON, INTERVAL, BYTE, VARBYTE, BLOB, CLOB, PERIOD, XML, GEOSPATIAL</code>.</dd></dlentry>
+  <dlentry>
+      <dt>SAP HANA</dt>
+      <dd>SAP HANA does not support <code>BLOB, CLOB, VARBINARY, NCLOB, TEXT, GEOMETRY, POINT</code>.</dd></dlentry>   
+</dl>
 
 ## Next steps
 
