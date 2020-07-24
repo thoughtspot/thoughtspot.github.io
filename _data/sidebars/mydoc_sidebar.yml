@@ -2090,7 +2090,7 @@ entries:
           output: web,dataflowGd
     - levelTwoTitle: File System Connections
       output: web,dataflowGD
-      sectionitems:
+      levelTwoItems:
       - levelThreeTitle: Amazon S3
         output: web,dataflowGD
         levelThreeItems:

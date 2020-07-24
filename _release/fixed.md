@@ -88,10 +88,12 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </li>
 </ul>
 
+
 <a id="6-2"></a>
 ## 6.2 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 6.2.
+
 - TBD.
 
 - TBD.
