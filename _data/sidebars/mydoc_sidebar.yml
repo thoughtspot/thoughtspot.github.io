@@ -521,7 +521,7 @@ entries:
         url: /admin/admin-portal/authentication-local.html
         output: web,admBk
       - title: Authentication through SMTP
-        url: /admin/admin-portal/authentication-integration.html
+        url: /admin/admin-portal/authentication-saml.html
         output: web,admBk
     - levelTwoTitle: Installation and setup
       output: web,admBk
