@@ -14,7 +14,7 @@ Embrace supports the following external databases:
 - Google BigQuery
 - Microsoft Azure Synapse
 - Teradata
-- SAP HANA <span class="badge badge-success">Beta</span>
+- SAP HANA&nbsp;&nbsp;<span class="label label-success" style="position: relative; top: -1px">Beta</span>
 
 To enable Embrace, contact ThoughtSpot support.
 
@@ -101,11 +101,15 @@ The following matrix compares the specific function support across the different
 <th>Amazon<br />Redshift</th>
 <th>Google<br />BigQuery</th>
 <th>Azure<br />Synapse</th>
+<th>Teradata</th>
+<th>SAP<br />HANA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -117,9 +121,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -131,9 +139,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -145,6 +157,8 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
@@ -152,6 +166,8 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>MEDIAN</code></td>
@@ -159,12 +175,16 @@ The following matrix compares the specific function support across the different
 <td>&check;</td>
 <td>&cross;</td>
 <td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>PERCENTILE</code></td>
 <td>&check;</td>
 <td>&check;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&check;</td>
 <td>&check;</td>
 </tr>
 </tbody>
@@ -182,6 +202,8 @@ The following matrix captures the specific data type support limitations across 
       <th>Amazon<br>Redshift</th>
       <th>Google<br>BigQuery</th>
       <th>Azure<br>Synapse</th>
+      <th>Teradata</th>
+      <th>SAP<br>HANA</th>
     </tr>
   </thead>
   <tbody>
@@ -191,11 +213,15 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
     <tr>
       <td><code>VARBINARY</code></td>
       <td>&cross;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
       <td>&check;</td>
       <td>&cross;</td>
     </tr>
@@ -205,6 +231,8 @@ The following matrix captures the specific data type support limitations across 
       <td>&cross;</td>
       <td>&check;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
     <tr>
       <td><code>GEOMETRY</code></td>
@@ -212,10 +240,14 @@ The following matrix captures the specific data type support limitations across 
       <td>&cross;</td>
       <td>&check;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>BYTES</code></td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
       <td>&check;</td>
       <td>&cross;</td>
       <td>&check;</td>
@@ -226,6 +258,8 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
   </tbody>
 </table>
@@ -269,8 +303,16 @@ The following list captures the specific limitations across the different databa
      <dd>Azure Synapse supports up to 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
    <dlentry>
      <dd>Azure Synapse does not support foreign keys, so no PK-FK joins can be defined in Synapse.</dd></dlentry>
-     </dl>     
+  <dlentry>
+     <dt>Teradata</dt>
+     <dd>Teradata does not support the function: <code>AGGREGATE_DISTINCT</code>.</dd>
+     <dd>Teradata does not support the following data types: <code>JSON, INTERVAL, VARBYTE, BLOB, CLOB, PERIOD, XML, GEOSPATIAL</code>.</dd></dlentry>
 
+  <dlentry>
+      <dt>SAP HANA</dt>
+      <dd>SAP HANA does not support the following functions: <code>PERCENTILE, AGGREGATE_DISTINCT, SPELLS_LIKE, EDIT_DISTANCE</code>.</dd>
+      <dd>SAP HANA does not support the following data types: <code>BLOB, CLOB, NCLOB, TEXT, POINT</code>.</dd></dlentry>      
+</dl>
 
 ## Next steps
 

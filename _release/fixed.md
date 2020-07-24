@@ -8,90 +8,95 @@ permalink: /:collection/:path.html
 These are the issues we fixed in recent ThoughtSpot releases.
 
 <ul>
-  <li><a href="#6-2">6.2 Fixed issues</a></li>
-  <li><a href="#6-1-1">6.1.1 Fixed issues</a></li>
-  <li><a href="#6-1">6.1 Fixed issues</a></li>
-  <li>
-   <details>
-     <summary>6.0.X Releases</summary>
-      <ul>
-        <li><a href="#6-0-5">6.0.5 Fixed issues</a></li>      
-        <li><a href="#6-0-4">6.0.4 Fixed issues</a></li>
-        <li><a href="#6-0-3">6.0.3 Fixed issue</a></li>
-        <li><a href="#6-0-2">6.0.2 Fixed issues</a></li>
-        <li><a href="#6-0-1">6.0.1 Fixed issues</a></li>
-        <li><a href="#6-0">6.0 Fixed issues</a></li>
-      </ul>
-  </details>      
-  </li>
-    <li>
-     <details>
-       <summary>5.3.X Releases</summary>
-        <ul>
-          <li><a href="#5-3-2-cu3">5.3.2 CU3 Fixed issues</a></li>
-          <li><a href="#5-3-2-cu2">5.3.2 CU2 Fixed issues</a></li>
-          <li><a href="#5-3-2-cu1">5.3.2 CU1 Fixed issues</a></li>
-          <li><a href="#5-3-2">5.3.2 Fixed issues</a></li>
-          <li><a href="#5-3-1">5.3.1 Fixed issues</a></li>
-          <li><a href="#5-3">5.3 Fixed issues</a></li>
-        </ul>
-      </details>
-    </li>      
+<li><a href="#6-2">6.2 Fixed issues</a></li>
+<li>
+<details>
+<summary>6.1.X Releases</summary>
+<ul>
+<li><a href="#6-1-1">6.1.1 Fixed issues</a></li>
+<li><a href="#6-1">6.1 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>6.0.X Releases</summary>
+<ul>
+<li><a href="#6-0-5">6.0.5 Fixed issues</a></li>
+<li><a href="#6-0-4">6.0.4 Fixed issues</a></li>
+<li><a href="#6-0-3">6.0.3 Fixed issue</a></li>
+<li><a href="#6-0-2">6.0.2 Fixed issues</a></li>
+<li><a href="#6-0-1">6.0.1 Fixed issues</a></li>
+<li><a href="#6-0">6.0 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>5.3.X Releases</summary>
+<ul>
+<li><a href="#5-3-2-cu3">5.3.2 CU3 Fixed issues</a></li>
+<li><a href="#5-3-2-cu2">5.3.2 CU2 Fixed issues</a></li>
+<li><a href="#5-3-2-cu1">5.3.2 CU1 Fixed issues</a></li>
+<li><a href="#5-3-2">5.3.2 Fixed issues</a></li>
+<li><a href="#5-3-1">5.3.1 Fixed issues</a></li>
+<li><a href="#5-3">5.3 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>5.2.X Releases</summary>
+<ul>
+<li><a href="#5-2-3">5.2.3 Fixed issues</a></li>
+<li><a href="#5-2-2">5.2.2 Fixed issues</a></li>
+<li><a href="#5-2-1">5.2.1 Fixed issues</a></li>
+<li><a href="#5-2">5.2 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>5.1.X Releases</summary>
+<ul>
+<li><a href="#5-1-4">5.1.4 Fixed issues</a></li>
+<li><a href="#5-1-3">5.1.3 Fixed issues</a></li>
+<li><a href="#5-1-2">5.1.2 Fixed issues</a></li>
+<li><a href="#5-1-1">5.1.1 Fixed issues</a></li>
+<li><a href="#5-1">5.1 Fixed issue</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>5.0.X Releases</summary>
+<ul>
+<li><a href="#5-0-4">5.0.4 Fixed issue</a></li>
+<li><a href="#5-0">5.0 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>4.X Releases</summary>
+<ul>
+<li><a href="4-5-1">4.5.1 Fixed issues</a></li>
+<li><a href="4-5">4.5 Fixed issues</a></li>
+<li><a href="4-4">4.4 Fixed issues</a></li>
+</ul>
+</details>
+</li>
+</ul>
 
-   <li>
-     <details>
-      <summary>5.2.X Releases</summary>
-        <ul>
-          <li><a href="#5-2-3">5.2.3 Fixed issues</a></li>
-          <li><a href="#5-2-2">5.2.2 Fixed issues</a></li>
-          <li><a href="#5-2-1">5.2.1 Fixed issues</a></li>
-          <li><a href="#5-2">5.2 Fixed issues</a></li>
-       </ul>
-     </details>
-   </li>
-
-   <li>
-     <details>
-      <summary>5.1.X Releases</summary>
-        <ul>
-          <li><a href="#5-1-4">5.1.4 Fixed issues</a></li>
-          <li><a href="#5-1-3">5.1.3 Fixed issues</a></li>
-          <li><a href="#5-1-2">5.1.2 Fixed issues</a></li>
-          <li><a href="#5-1-1">5.1.1 Fixed issues</a></li>
-          <li><a href="#5-1">5.1 Fixed issue</a></li>
-        </ul>
-      </details>
-    </li>  
-
-    <li>
-      <details>
-       <summary>5.0.X Releases</summary>
-         <ul>
-           <li><a href="#5-0-4">5.0.4 Fixed issue</a></li>
-           <li><a href="#5-0">5.0 Fixed issues</a></li>
-          </ul>
-        </details>
-      </li>
-
-      <li>
-        <details>
-          <summary>4.X Releases</summary>
-            <ul>
-              <li><a href="4-5-1">4.5.1 Fixed issues</a></li>
-              <li><a href="4-5">4.5 Fixed issues</a></li>
-              <li><a href="4-4">4.4 Fixed issues</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
 
 <a id="6-2"></a>
 ## 6.2 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 6.2.
 
-- 
+- TBD.
 
+- TBD.
 
 <a id="6-1-1"></a>
 ## 6.1.1 Fixed issues

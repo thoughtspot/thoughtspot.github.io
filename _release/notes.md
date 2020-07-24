@@ -1,7 +1,7 @@
 ---
 title: ["6.2 Release Notes"]
 toc: false
-last_updated: 21/07/2020
+last_updated: 07/23/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 ThoughtSpot version 6.2 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
 
 * [6.2 New Features](#6-2-new)
 * [Early Access Programs](#early-access)
@@ -19,6 +20,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ## 6.2 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
+
 
 ### For the  Analyst
 
@@ -129,11 +131,18 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>&nbsp;</dd></dlentry>
 </dl>    
 
-### Amazon Linux 2
+### Embrace supports more data warehouses and new features
 
-This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
+Embrace now supports the following data warehouses:
+- Teradata
+- SAP HANA (version 2.0 or later)&nbsp;&nbsp;<span class="label label-success" style="position: relative; top: -1px">Beta</span>
 
-### Charts and tables with a very large number of data values
+Embrace includes the following new features:
+- Ability to remove columns in a connection.
+- A summary of tables/columns connected is now displayed as part of add/edit connection workflow.
+- Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.
+- Improved performance when editing a connection.
+
 
 ThoughtSpot now supports charts and tables with more than 1000 data values. You can easily understand how much of the data your chart or table displays.
 
@@ -147,6 +156,15 @@ See [Charts and tables with a very large number of data values]({{ site.baseurl 
 
 This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
 
+
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+{: id="early-access"}
+## Early Access Programs
+
+### UI update
+
+Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
 
 
 {: id="beta-program"}
@@ -162,15 +180,15 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.2 release
-directly:
+If you are running one of the following versions, you can upgrade to the 6.2 release directly:
 
-* 5.3.x to 6.2
 * 6.0.x to 6.2
+* 6.1.x to 6.2
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3.x, or version 6.0.x, and then to the 6.2 release.
+
+First, upgrade to version 6.0.x, or version 6.1.x, and then to the 6.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
