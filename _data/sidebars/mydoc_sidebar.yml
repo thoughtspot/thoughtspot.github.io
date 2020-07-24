@@ -505,6 +505,24 @@ entries:
       - title: Performance considerations
         url: /admin/architecture/performance.html
         output: web,admBk
+    - levelTwoTitle: Administration Portal
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview
+        url: /admin/admin-portal/admin-portal.html
+        output: web,admBk
+      - title: Managing users
+        url: /admin/admin-portal/users.html
+        output: web,admBk
+      - title: Managing groups
+        url: /admin/admin-portal/groups.html
+        output: web,admBk
+      - title: Local authentication
+        url: /admin/admin-portal/authentication-local.html
+        output: web,admBk
+      - title: Authentication through SMTP
+        url: /admin/admin-portal/authentication-integration.html
+        output: web,admBk
     - levelTwoTitle: Installation and setup
       output: web,admBk
       levelTwoItems:
