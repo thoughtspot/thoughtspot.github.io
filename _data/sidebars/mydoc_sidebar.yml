@@ -520,8 +520,44 @@ entries:
       - title: Local authentication
         url: /admin/admin-portal/authentication-local.html
         output: web,admBk
-      - title: Authentication through SMTP
+      - title: Authentication through SAML
         url: /admin/admin-portal/authentication-saml.html
+        output: web,admBk
+      - title: Authentication through Active Directory
+        url: /admin/admin-portal/authentication-active-directory.html
+        output: web,admBk
+      - title: Configure SSL
+        url: /admin/admin-portal/ssl-configure.html
+        output: web,admBk
+      - title: Configure a reverse SSH tunnel
+        url: /admin/admin-portal/reverse-ssh-tunnel.html
+        output: web,admBk
+      - title: Set the relay host for SMTP (email)
+        url: /admin/admin-portal/smtp-configure.html
+        output: web,admBk
+      - title: Customize ThoughtSpot Help
+        url: /admin/admin-portal/customize-help.html
+        output: web,admBk
+      - title: Customize actions
+        url: /admin/admin-portal/customize-actions-menu.html
+        output: web,admBk
+      - title: Configure NAS for backup storage
+        url: /admin/admin-portal/nas-mount-configure.html
+        output: web,admBk
+      - title: Manage and create snapshots
+        url: /admin/admin-portal/snapshot-manage.html
+        output: web,admBk
+      - title: System Overview Pinboards
+        url: /admin/admin-portal/system-overview-pinboard.html
+        output: web,admBk
+      - title: System Cluster Pinboards
+        url: /admin/admin-portal/system-cluster-pinboard.html
+        output: web,admBk
+      - title: System Alerts Pinboards
+        url: /admin/admin-portal/system-alerts-pinboard.html
+        output: web,admBk
+      - title: Available cluster updates
+        url: /admin/admin-portal/available-update.html
         output: web,admBk
     - levelTwoTitle: Installation and setup
       output: web,admBk

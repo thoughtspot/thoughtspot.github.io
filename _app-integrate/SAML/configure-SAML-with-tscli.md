@@ -6,8 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate
-users. You can set up SAML through the shell on the ThoughtSpot instance using a
-`tscli` based configurator.
+users. You can set up SAML through the shell on the ThoughtSpot instance [using a
+`tscli` based configurator](#tscli), or [through the Administration Portal](#admin-portal).
 
 Before configuring SAML, you need this information:
 
@@ -18,6 +18,9 @@ Before configuring SAML, you need this information:
 -   Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. `86400` is a popular choice.
 -   The absolute path to identity provider's metadata file. Typically called `idp-meta.xml` or similar. This is needed so that the configuration persists over upgrades. Best to set it up on persistent/HA storage (NAS volumes) else in the same absolute path on all nodes in the cluster.
 -   This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin` and other ThoughtSpot local users. Set it to true by default to let local system/admin users in via the frontend.
+
+{: id="tscli"}
+## Configure SAML using tscli
 
 Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.
 
@@ -31,3 +34,8 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
 3. Complete the configurator prompts with the information you gathered above.
 4. When the configuration is complete, open a Web browser and go to the ThoughtSpot login page.
    It should now show the Single Sign On option.
+
+{: id="admin-portal"}
+## Configure SAML using the Administration Portal
+
+{% include content/admin-portal/authentication-saml.md %}
