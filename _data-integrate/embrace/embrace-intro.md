@@ -14,7 +14,7 @@ Embrace supports the following external databases:
 - Google BigQuery
 - Microsoft Azure Synapse
 - Teradata
-- SAP HANA&nbsp;&nbsp;<span class="label label-success" style="position: relative; top: -1px">Beta</span>
+- SAP HANA <span class="label label-beta">Beta</span>
 
 To enable Embrace, contact ThoughtSpot support.
 
