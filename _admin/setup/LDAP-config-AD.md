@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 {: id="prerequisites"}
 ## Configuration prerequisites
 
-Before you configure ThoughtSpot for Active Directory, collect the following information:
+You can configure LDAP [using tscli](#configure-ldap-tscli) or [through the Administration Portal](#admin-portal). Before you configure ThoughtSpot for Active Directory, collect the following information:
 
 | &#10063; | [URL](#url) |
 | &#10063; | [Domain name](#domain-name) |
@@ -93,3 +93,7 @@ You do not have to create a user called `tsadmin` on your LDAP server. Internal 
     ```
     $ tscli ldap purge-configuration
     ```
+
+{: id="admin-portal"}    
+## Configure LDAP using the Administration Portal
+{% include content/admin-portal/authentication-active-directory.md %}
