@@ -20,6 +20,115 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
 
+### For the  Analyst
+
+<dl id='6-2-analyst'>
+  <dlentry id="geomaps">
+    <dt>Geomaps</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="table-config">
+    <dt>Table configuration</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="high-caridnality">
+    <dt>High cardinality</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="keywords">
+    <dt>New search keywords</dt>
+    <dd>
+      <ul>
+        <li id="top">
+          <strong>The nested ‘top’ keyword</strong>
+          <br/>&nbsp;</li>
+        <li id="not-in">
+          <strong>The ‘not in’ keyword</strong>
+          <br/>&nbsp;</li></ul>
+    </dd></dlentry>
+  <dlentry id="subscribe-others">
+    <dt>Monitor: Subscribe others</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="scriptability">
+    <dt>Scriptability</dt>
+    <dd>This release introduces a more human-readable syntax, in addition to support for expanded ThoughtSpot support for more artifacts.
+     <ul>
+      <li id="answers"><strong>Scriptability for Answers</strong>
+      <br/>&nbsp;</li>
+      <li id="pinboards"><strong>Scriptability for Pinboards</strong><br/>&nbsp;</li>
+      <li id="views"><strong>Scriptability for Views</strong><br/>&nbsp;</li>
+      <li id="filters"><strong>Scriptability for Filters</strong><br/>&nbsp;</li></ul>
+    </dd>
+  </dlentry>
+</dl>    
+
+### For the Business User
+
+<dl id="6-2-business-user">
+  <dlentry id="growth-sharing">
+    <dt>Growth: Sharing</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="answer-explorer">
+    <dt>Answer Explorer v2</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="mobile-android">
+    <dt>Mobile for Android</dt>
+    <dd>&nbsp;</dd></dlentry>
+</dl>
+
+### For the Data Engineer
+
+<dl id="6-2-data-engineer">
+  <dlentry id="dataflow">
+    <dt>DataFlow</dt>
+    <dd>DataFlow is a new graphical, code-free, analyst-friendly approach for easily loading data into ThoughtSpot’s in-memory engine.<br/>
+    In this release, DataFlow supports  a  large number of databases (<a href="{{"/data-integrate/dataflow/dataflow-amazon-aurora.html" | prepend: site.baseurl}}">Amazon Aurora</a>, <a href="{{"/data-integrate/dataflow/dataflow-amazon-redshift.html" | prepend: site.baseurl}}">Amazon Redshift</a>), <a href="{{"/data-integrate/dataflow/dataflow-azure-synapse.html" | prepend: site.baseurl}}">Azure Synapse</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-cassandra.html" | prepend: site.baseurl}}">Cassandra</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-google-bigquery.html" | prepend: site.baseurl}}">Google BigQuery</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-hive.html" | prepend: site.baseurl}}">Hive</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-ibm-db2.html" | prepend: site.baseurl}}">IBM Db2</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-mariadb.html" | prepend: site.baseurl}}">MariaDB</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-mongodb.html" | prepend: site.baseurl}}">MongoDB</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-mysql.html" | prepend: site.baseurl}}">MySQL</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-netezza.html" | prepend: site.baseurl}}">Netezza</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-oracle.html" | prepend: site.baseurl}}">Oracle</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-postgresql.html" | prepend: site.baseurl}}">PostgreSQL</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-presto.html" | prepend: site.baseurl}}">Presto</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise.html" | prepend: site.baseurl}}">SAP Adaptive Server Enterprise</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-sap-hana.html" | prepend: site.baseurl}}">SAP HANA</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-sap-sql-anywhere.html" | prepend: site.baseurl}}">SAP SQL Anywhere</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-sql-server.html" | prepend: site.baseurl}}">SQL Server</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-snowflake.html" | prepend: site.baseurl}}">Snowflake</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-splice-machine.html" | prepend: site.baseurl}}">Splice Machine</a>, and
+<a href="{{"/data-integrate/dataflow/dataflow-teradata.html" | prepend: site.baseurl}}">Teradata</a>), file systems (<a href="{{"/data-integrate/dataflow/dataflow-amazon-s3.html" | prepend: site.baseurl}}">Amazon S3</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-azure-blob-storage.html" | prepend: site.baseurl}}">Azure Blob Storage</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-flat-files.html" | prepend: site.baseurl}}">Flat Files</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-google-cloud-storage.html" | prepend: site.baseurl}}">Google Cloud Storage</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd></dlentry>
+  <dlentry id="embrace">
+    <dt>Embrace</dt>
+    <dd>
+    <ul>
+     <li id="teradata"><strong>Teradata</strong>
+     <br/>&nbsp;</li>
+     <li id="sap-hana"><strong>SAP HANA</strong>
+     <br/>&nbsp;</li></ul></dd></dlentry>
+  <dlentry id="tsload">
+    <dt>TSload connector for ETL tools</dt>   
+    <dd>&nbsp;</dd></dlentry>
+</dl>
+
+### For the IT Ops Engineer
+
+<dl id="6-2-it-ops-engineer">
+  <dlentry id="amazon-linux-2">
+    <dt>Amazon Linux 2 Deployment</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="admin-portal">
+    <dt>Admin Portal</dt>
+    <dd>&nbsp;</dd></dlentry>
+  <dlentry  id="in-memory-data-compression">
+    <dt>In-memory data compression</dt>
+    <dd>&nbsp;</dd></dlentry>
+</dl>    
+
 ### Amazon Linux 2
 
 This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
@@ -38,70 +147,7 @@ See [Charts and tables with a very large number of data values]({{ site.baseurl 
 
 This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
 
-{: id="6-1-new"}
-## 6.1 New Features and Functionality
 
-For a complete list of issues that we fixed in this release, see [6.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-1).
-
-### Updating ThoughtSpot UI through CDN
-
-Starting with this release, you can configure automatic updates of the front end of the ThoughtSpot application by uploading from CDN (Amazon Cloudfront). This enables your organization to get many new features of ThoughtSpot and get many critical bug fixes without experiencing the traditional upgrade downtime.
-
-UI auto-update is in the Early Access phase. Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
-
-### Back up and restore ThoughtSpot AWS and GCP clusters using cloud storage
-
-With AWS, you can back up and restore using an S3 bucket. With GCP, you can back up and restore using a GCS bucket.
-
-For details, see:
-- [Back up and restore an AWS cluster using S3]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
-- [Back up and restore a GCP cluster using GCS]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)
-
-### Geo map support for Norway and Switzerland
-
-For details, see: [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html#)
-
-### New SQL commands for ODBC and JDBC drivers
-
-For developers creating tools to connect to ThoughtSpot through the ODBC or JDBC driver, the following new commands are available:
-
-- `ALTER TABLE`
-- `CREATE DATABASE`
-- `CREATE SCHEMA`
-- `DROP`
-- `SCRIPT`
-- `SHOW`
-- `TRUNCATE`
-
-For details, see: [Supported SQL commands]({{ site.baseurl }}/data-integrate/reference/odbc-commands.html).
-
-### Embrace advanced configuration
-
-In this release, on the connection details page, you can provide additional key-value pairs that you need to set up the connection to your external data source. Any key-value pairs that you enter must be defined in the external data source. Key-value pairs are case-sensitive.
-
-Some examples of key-value pairs for Snowflake, include the following:
-
-Setting up a proxy connection:
-
-![]({{ site.baseurl }}/images/snowflake-adv-config-1.png)
-
-Applying a filter on the schema:
-
-![]({{ site.baseurl }}/images/snowflake-adv-config-2.png)
-
-### Upgrade to Python 3
-
-Starting with this release, ThoughtSpot uses Python 3 packages. For example, to invoke the `syncUsersAndGroups.py` script the script, you must now use the `python3` command; see [Sync users and groups from LDAP]({{ site.baseurl }}/admin/setup/sync-users-and-groups-from-ldap.html).
-
-{: id="early-access"}
-## Early Access Programs
-
-### UI update
-
-Please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=UI%20Update%20Early%20Access%20Program%20Request" target="_blank">UI Update Early Access Program</a>.
-
-### RHEL support
-RHEL support is in the Early Access phase. To deploy ThoughtSpot on RHEL, you must have the Ansible tarball; please contact us if you are interested in participating in the <a href="mailto:early_access@thoughtspot.com?subject=RHEL%20Early%20Access%20Program%20Request" target="_blank">RHEL Early Access Program</a>. For more information, see [RHEL Deployment Overview]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 {: id="beta-program"}
 ## Beta Programs
@@ -116,15 +162,15 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.1 release
+If you are running one of the following versions, you can upgrade to the 6.2 release
 directly:
 
-* 5.3.x to 6.1
-* 6.0.x to 6.1
+* 5.3.x to 6.2
+* 6.0.x to 6.2
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3.x, or version 6.0.x, and then to the 6.1 release.
+First, upgrade to version 5.3.x, or version 6.0.x, and then to the 6.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
