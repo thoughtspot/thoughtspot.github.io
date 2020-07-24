@@ -143,6 +143,7 @@ Embrace includes the following new features:
 - Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.
 - Improved performance when editing a connection.
 
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ThoughtSpot now supports charts and tables with more than 1000 data values. You can easily understand how much of the data your chart or table displays.
 
@@ -151,13 +152,6 @@ ThoughtSpot now supports charts and tables with more than 1000 data values. You 
 * You can have up to 250 distinct legend items on a chart.
 
 See [Charts and tables with a very large number of data values]({{ site.baseurl }}/end-user/search/high-cardinality.html).
-
-### Tsload as a service
-
-This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
-
-
-For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 {: id="early-access"}
 ## Early Access Programs
