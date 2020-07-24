@@ -135,7 +135,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 
 Embrace now supports the following data warehouses:
 - Teradata
-- SAP HANA (version 2.0 or later)&nbsp;&nbsp;<span class="label label-success" style="position: relative; top: -1px">Beta</span>
+- SAP HANA (version 2.0 or later) <span class="label label-beta">Beta</span>
 
 Embrace includes the following new features:
 - Ability to remove columns in a connection.

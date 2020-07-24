@@ -1216,6 +1216,19 @@ span.label.label-default {
 span.label.label-primary {
     background-color: #f0ad4e;
 }
+
+/* begin beta label */
+
+.label-beta {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+/* end beta label */
+
 .col-lg-12 .nav li a {background-color: white}
 
 a code {
