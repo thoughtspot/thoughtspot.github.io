@@ -1,6 +1,6 @@
 ---
 title: [SpotApps Scriptability]
-last_updated: 7/16/2020
+last_updated: 7/24/2020
 summary: "Use SpotApps to export Worksheets, Views, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -40,7 +40,7 @@ To export one object:
 
 1. Navigate to the Pinboard, Answer, View, or Worksheet you want to export.
 
-2. Click the three-dot icon, and select **Export as .tsl**.
+2. Click the three-dot icon, and select **Export as TSL**.
 
     ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
 
@@ -65,15 +65,15 @@ To export multiple objects at a time, follow these steps:
 
     ![Click Export]({{ site.baseurl }}/images/scriptability-cloud-click-export.png "Click Export")
 
-4. Open the downloaded `.tsl` zip file:
+4. Open the downloaded `TSL` zip file:
 
     ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
 
-## Edit the `.tsl` file
-You can edit the `.tsl` file before you import it. Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).
+## Edit the `TSL` file
+You can edit the `TSL` file before you import it. Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).
 
 ## Update an object
-You can overwrite an existing Worksheet, Answer, Pinboard, or View by downloading the `.tsl` file, making any necessary changes, and then re-uploading the `.tsl` file.
+You can overwrite an existing Worksheet, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file. To update a View, you must export the TSL file, make any necessary changes, and then upload it as a new object. You cannot overwrite an existing View. Instead, you must create a new object.
 
 To update an existing object, follow these steps. In this case, we are updating a Worksheet.
 
@@ -83,25 +83,21 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
 
-4. Select **Update [Object] from TSL**.
+4. Select **Update from TSL**.
 
    Here, we are uploading the edited *Sales* worksheet.
 
    ![Start Worksheet update from file]({{ site.baseurl }}/images/worksheet-update-from-file.png "Start Worksheet update from file")
 
-5. In the upload interface, click **Browse your files**.
+5. In the **Import** interface, click **Select .tsl file to upload**.
 
    ![Find the Worksheet TSL file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet TSL file")
 
-6. In your file system, find and select the `.tsl` file.
+6. In your file system, find and select the `TSL` file.
 
-7. In the **Update [Object]** interface, click **Upload**.
+8. If you constructed the file correctly, the **Import** interface displays an *Update successful* message.
 
-   ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-upload.png "Upload the Worksheet")
-
-8. If you constructed the file correctly, the **Upload [Object]** interface displays an *Upload successful* message.
-
-9. To examine the updated object, click **Go to [Object]**.
+9. Click **Done**.
 
    ![Go to updated Worksheet]({{ site.baseurl }}/images/worksheet-update-success.png "Go to updated Worksheet")
 
@@ -130,7 +126,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
     ![Select a file]({{ site.baseurl }}/images/scriptability-cloud-import-page.png "Select a file")
 
-6. In your file system, find and select the `.tsl` file. The file uploads automatically.
+6. In your file system, find and select the `TSL` file. The file uploads automatically.
 
 8. If you constructed the file correctly, the **Import** interface displays an *Upload successful* message.
 
