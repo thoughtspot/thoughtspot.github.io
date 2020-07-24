@@ -1,7 +1,7 @@
 ---
 title: [Modify an SAP HANA connection]
 last_updated: 06/18/2020
-summary: Learn how to modify a SAP HANA connection and its tables.
+summary: Learn how to modify an SAP HANA connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 You can modify an Embrace SAP HANA connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
+- Remove a column
 - Delete a table
 - Delete a connection
 
@@ -67,9 +68,9 @@ To remap a connection:
 
 7. On the Remapping page, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
-## Removing a column from a SAP HANA connection
+## Removing a column from an SAP HANA connection
 
-You can edit a SAP HANA connection to remove a column.
+You can edit an SAP HANA connection to remove a column.
 
 To remove a column:
 

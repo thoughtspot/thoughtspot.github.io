@@ -27,10 +27,12 @@ Embrace now supports the following data warehouses:
 - SAP HANA (version 2.0 or later)&nbsp;&nbsp;<span class="label label-success" style="position: relative; top: -1px">Beta</span>
 
 Embrace includes the following new features:
-- Ability to remove columns a connection.
+- Ability to remove columns in a connection.
 - A summary of tables/columns connected is now displayed as part of add/edit connection workflow.
 - Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.
 - Improved performance when editing a connection.
+
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 {: id="early-access"}
 ## Early Access Programs
@@ -63,6 +65,6 @@ If you are running one of the following versions, you can upgrade to the 6.2 rel
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3.x, or version 6.0.x, and then to the 6.1 release.
+First, upgrade to version 6.0.x, or version 6.1.x, and then to the 6.2 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
