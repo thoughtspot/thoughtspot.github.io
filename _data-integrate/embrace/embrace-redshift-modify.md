@@ -17,7 +17,7 @@ You can modify an Embrace Redshift connection in the following ways:
 
 You can edit a Redshift connection to add tables and columns.
 
-To edit a connection:
+To edit a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -48,7 +48,7 @@ To remove a table from a connection, delete it from the connection details page.
 
 Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
-To remap a connection:
+To remap a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -73,7 +73,7 @@ To remap a connection:
 
 You can edit a Redshift connection to remove a column.
 
-To remove a column:
+To remove a column from a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -100,7 +100,7 @@ To remove a column:
 ## Deleting a table from a Redshift connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
 
-To delete a table:
+To delete a table from a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
@@ -129,7 +129,7 @@ You can also click the name of a table and then click the linked objects to see 
 ## Deleting a Redshift connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
-To delete a connection:
+To delete a Redshift connection:
 
 1. Click **Data** in the top navigation bar.
 
