@@ -39,11 +39,15 @@ To add a new connection to Redshift:
 
      ![Select tables and columns]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns")
 
-   Once the connection is added, you can search your Redshift database right away by clicking **Search now**.
+     A message appears indicating the number of tables and columns that will be added to your connection.
 
-   ![The "connection created" screen]({{ site.baseurl }}/images/redshift-connectioncreated.png "The "connection created" screen")
+ 8. Click **Confirm**.     
 
-   Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
+    Once the connection is added, you can search your Redshift database right away by clicking **Search now**.
+
+    ![The "connection created" screen]({{ site.baseurl }}/images/redshift-connectioncreated.png "The "connection created" screen")
+
+    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
 The connection you just created is a link to the external data source. If there are any joins in the selected tables of the external data source, those are imported into ThoughtSpot.
 

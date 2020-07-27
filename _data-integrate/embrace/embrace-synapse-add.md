@@ -40,11 +40,15 @@ To add a new connection to Synapse:
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
    <!--![Select tables and columns for your connection]({{ site.baseurl }}/images/synapse-selecttables.png "Select tables and columns for your connection") -->
 
-   Once the connection is added, you can search your Synapse database right away by clicking **Search now**.
+    A message appears indicating the number of tables and columns that will be added to your connection.
 
-   ![The "Connection created" screen]({{ site.baseurl }}/images/synapse-connectioncreated.png "The "Connection created" screen")
+8. Click **Confirm**.   
 
-   Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
+    Once the connection is added, you can search your Synapse database right away by clicking **Search now**.
+
+    ![The "Connection created" screen]({{ site.baseurl }}/images/synapse-connectioncreated.png "The "Connection created" screen")
+
+    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
 The connection you just created is a link to the external data source. If there are any joins in the selected tables of the external data source, those are imported into ThoughtSpot.
 
