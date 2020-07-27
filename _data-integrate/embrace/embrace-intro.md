@@ -317,10 +317,14 @@ The following list captures the specific limitations across the different databa
 ## Next steps
 
 -   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Snowflake database.
+Create the connection between ThoughtSpot and tables in a Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
+Create the connection between ThoughtSpot and tables in an Amazon RedShift database.
 -   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
+Create the connection between ThoughtSpot and tables in a Google BigQuery database.
 -   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+Create the connection between ThoughtSpot and tables in an Azure Synapse database.
+-   **[Add a Teradata connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-add.html)**  
+Create the connection between ThoughtSpot and tables in a Teradata database.
+-   **[Add an SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-add.html)**  
+Create the connection between ThoughtSpot and tables in an SAP HANA database.

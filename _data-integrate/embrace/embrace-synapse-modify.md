@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 You can modify an Embrace Synapse connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
+- Remove a column
 - Delete a table
 - Delete a connection
 
@@ -69,6 +70,34 @@ To remap a connection:
 <!--   ![Edit the yaml file]({{ site.baseurl }}/images/synapse-yaml.png "Edit the yaml file") -->
 
 7. On the Remapping page, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
+
+## Removing a column from a Synapse connection
+
+You can edit a Synapse connection to remove a column.
+
+To remove a column:
+
+1. Click **Data** in the top navigation bar.
+
+2. Click the **Connections** tab.
+
+3. Click the name of the connection that contains the column you want to remove.
+
+4. Click **Edit connection** at the upper-right-hand side of the page.
+
+5. In the Select tables page, click the Selected tab.
+
+6. Click the name of the table that contains the column you want to remove.
+
+   !["Select table that contains the column"]({{ site.baseurl }}/images/teradata-select-table-for-col-removal.png "Select table that contains the column")
+
+7. In the list of columns at the right, uncheck the column you want to remove.
+
+8. Click **Update**.
+
+   The Update connection message appears, summarizing the changes that will be made to the connection.
+
+9. Confirm your changes, by clicking **Confirm**.   
 
 ## Deleting a table from a Synapse connection
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
