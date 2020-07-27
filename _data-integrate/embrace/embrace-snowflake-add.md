@@ -38,6 +38,10 @@ To add a new connection to Snowflake:
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
+    A message appears indicating the number of tables and columns that will be added to your connection.
+
+8. Click **Confirm**.
+
    Once the connection is added, you can search your Snowflake database right away by clicking **Search now**.
 
    ![The "Connection created" screen]({{ site.baseurl }}/images/snowflake-connectioncreated.png "The "Connection created" screen")
