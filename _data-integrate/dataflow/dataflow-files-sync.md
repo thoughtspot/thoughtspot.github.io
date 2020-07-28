@@ -22,7 +22,7 @@ After using ThoughtSpot DataFlow to establish a connection to a flat files, eith
      * [Compression]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-compression)<br/>Specify if file uses complression, and compression type.
      * [Skip header rows]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-skip-header-rows)<br/>Specify the number of header rows to skip when loading data.
      * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.
-     * [Escape character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-escape-character)<br/>Specify escape characer if data uses text qualifier is mentioned. This should be the character which escapes the text qualifier character in the source data. Specify if the text columns in the source data needs to be enclosed in quotes.
+     * [Escape character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-escape-character)<br/>Specify the escape character if using a text qualifier in the source data.
      * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-null-value)<br/>Specifies the string literal indicates the null value for a column. During the data load, the column value matching this string will be loaded as null in the target.
      * [Date style]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-date-style)<br/>Specifies how to interpret the date format.
 
