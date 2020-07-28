@@ -1,6 +1,6 @@
 ---
 title: [Alerts and Events board]
-last_updated: 11/18/2019
+last_updated: 7/28/2020
 summary: "The Alerts and Events section shows notifications, alerts, and an audit
 trail of cluster configuration changes."
 toc: false
@@ -8,13 +8,15 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+You can view alert information for your ThoughtSpot cluster from the Administration Portal. The **System Alert Pinboard** contains information on alerts, configuration events, and notification events. To view this Pinboard, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Alert** from the side navigation bar that appears.
 
- ![]({{ site.baseurl }}/images/contro_center_configuration_events.png "Partial view of the System Health center: Events and Alerts")
+![Admin Portal - Alert Pinboard]({{ site.baseurl }}/images/admin-portal-alert-pinboard.png "Admin Portal - Alert Pinboard")
 
+This Pinboard contains three ThoughtSpot Answers: **Alerts**, **Configuration Events**, and **Notification Events**. You can **present** these Answers or copy their embed link.
 
 ## Alerts
 
- The fields on this answer have the following meaning:
+ The fields on this Answer have the following meaning:
 
   <table>
   <colgroup>
@@ -51,7 +53,7 @@ For a full reference of possible alerts, see the [Alert code reference]({{ site.
 ## Configuration Events
 
 This system answer displays recent events that changed the configuration of the
-system. This list can contain the same types of information available on the **Admin System Health > Overview** page. This answer displays the **Time**, the
+system.This answer displays the **Time**, the
 **User** that performed the action, and a **Summary** of the action.  
 
 ## Notification events
@@ -59,7 +61,3 @@ system. This list can contain the same types of information available on the **A
 This answer displays notifications of data loads. The answer displays the **Time**, the
 **User** that performed the action, and a **Summary** of the action.
 Notifications are kept for 90 days before being discarded.
-
-## Related information
-
-[Alert code reference]({{ site.baseurl }}/reference/alerts-reference.html#)

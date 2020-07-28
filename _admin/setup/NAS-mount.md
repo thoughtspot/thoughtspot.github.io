@@ -11,9 +11,9 @@ permalink: /:collection/:path.html
 ## About NAS mount
 
 ThoughtSpot enables you to mount a NAS file system for storing or accessing
-large files. The file system will be mounted at the same location on each node in the cluster automatically. When any node is restarted, the file system will be mounted again automatically, if it can be found.
+large files. The file system mounts at the same location on each node in the cluster automatically. When any node restarts, the file system mounts again automatically, if it can be found.
 
-When supplying a directory for writing or reading a backup, you can specify the a new mount point within `/export` as the directory to use. Likewise, you can stage data there for loading. It is best to have 2 separate NAS volumes, individually dedicated to data loads and backups.
+When supplying a directory for writing or reading a backup, you can specify a new mount point within `/export` as the directory to use. Likewise, you can stage data there for loading. It is best to have 2 separate NAS volumes, individually dedicated to data loads and backups.
 
 Backups are written by the Linux user `admin`. If that user does not have
 permission to write to the NAS file system, you can write the backups to a disk
@@ -26,6 +26,10 @@ name node. It is used internally by Hadoop Distributed File System (HDFS) and if
 this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
+
+You can mount NAS [through the Administration Portal](#admin-portal), or [using tscli](#mount-nas-tscli).
+
+{% include content/admin-portal/nas-mount-configure.md %}
 
 {: id="mount-nas-tscli"}
 ## Mount NAS using tscli
