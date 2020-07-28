@@ -53,7 +53,8 @@ To map the external files to ThoughtSpot's internal database, follow these steps
         <dlentry>
           <dt>Create a new table</dt>
           <dd>Choose this option when you want to load data into a new table.
-          <br/>Click <strong>TQL Editor</strong>, enter the <code>CREATE TABLE <em>my_table</em> ...;</code> command, and click <strong>Execute</strong>.
+          <br/>The system creates a new table automatically.
+          <br/>If you want the new table to have some special properties, create the table using the TQL Editor, proceed to <strong>Choose existing table</strong>, and then select the table you just created. Click <strong>TQL Editor</strong>, enter the <code>CREATE TABLE <em>my_table</em> ...;</code> command, and click <strong>Execute</strong>.
             <br/>
             <details>
               <summary>See how to create a new table in <strong>TQL editor</strong></summary>
