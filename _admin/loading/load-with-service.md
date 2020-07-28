@@ -34,7 +34,8 @@ This page highlights the following:
    HTTP/1.1 200 OK
 
    Ping Received.
-   ```    
+   ```   
+<!-- <button class="btn" data-clipboard-text="1">Copy</button> -->
 
 ## Reference client
 

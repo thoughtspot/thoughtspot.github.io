@@ -134,14 +134,15 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 ### Embrace supports more data warehouses and new features
 
 Embrace now supports the following data warehouses:
-- Teradata
+- Teradata (Vantage version 16.20 or later)
 - SAP HANA (version 2.0 or later) <span class="label label-beta">Beta</span>
 
 Embrace includes the following new features:
+- Improved performance when creating or editing a connection.
 - Ability to remove columns in a connection.
-- A summary of tables/columns connected is now displayed as part of add/edit connection workflow.
 - Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.
-- Improved performance when editing a connection.
+- A summary of tables/columns connected is now displayed as part of add/edit connection workflow.
+
 
 For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
