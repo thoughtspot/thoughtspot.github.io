@@ -1457,6 +1457,21 @@ img.inline {
     display: inline;
 }
 
+/* copy to clipboard style - start */
+
+.code-toolbar .toolbar .toolbar-item button {
+    background: 0 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #0069ff;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+/* copy to clipboard style - end */
+
 
 
 /* BEGIN Localized keywords CSS */
