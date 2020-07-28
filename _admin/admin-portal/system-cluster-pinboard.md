@@ -1,7 +1,7 @@
 ---
-title: [System Cluster Pinboards]
-last_updated: 7/24/2020
-summary: View the System Cluster Pinboards in the Administration Portal.
+title: [System Cluster Pinboard]
+last_updated: 7/27/2020
+summary: View the System Cluster Pinboard in the Administration Portal.
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

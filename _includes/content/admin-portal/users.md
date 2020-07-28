@@ -3,7 +3,7 @@ password, and a membership in one or more groups for them. Use the Admin Portal 
 
 Refer to [Understand groups and privileges]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to learn about the privileges you can assign to a user.
 
-To manage users, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Users** from the side navigation bar that appears.
+To manage users, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Users** from the side navigation bar that appears.
 
 ![Admin Portal - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Portal - Users")
 
