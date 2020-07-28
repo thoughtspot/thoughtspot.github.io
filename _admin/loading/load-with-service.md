@@ -30,18 +30,13 @@ This page highlights the following:
 
 6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
 
-{% capture code %}
    ```
    curl -i https://localhost:8442/ts_dataservice/v1/public/ping
    HTTP/1.1 200 OK
 
    Ping Received.
    ```   
-{% endcapture %}
-
-{% include code.html code=code lang="javascript" %}
-
-
+   
 ## Reference client
 
 The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
