@@ -30,7 +30,7 @@ After you make a change to your Answer, you may want to go back to an earlier ve
 ## Filters
 Use **Filters** to narrow down your search result to only include the data you want to see. Answer Explorer uses sophisticated technology to show only the most relevant suggestions. Click on a suggested filter to add it to your visualization.
 
-{% include note.html content="In Answer Explorer, you can only <strong>filter</strong> on attribute columns, not measures." %}
+{% include note.html content="In Answer Explorer, you can only filter on <strong>attribute</strong> columns, not <strong>measures</strong>." %}
 
 If you want to filter on a column value that Answer Explorer did not suggest, you can add your own filter, using the **Filters** search bar.
 

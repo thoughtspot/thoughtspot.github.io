@@ -5,6 +5,7 @@ summary: "Use SpotApps to gain insights into your Salesforce, accounts receivabl
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="The SpotApps feature is in <strong>beta</strong> for 6.2. Talk to your ThoughtSpot contact if you are interested in SpotApps." %}
 
 SpotApps let you examine your existing Salesforce, accounts receivable, and procurement data, using pre-built applications.
 
