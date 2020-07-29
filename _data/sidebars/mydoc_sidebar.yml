@@ -94,10 +94,10 @@ entries:
       - title: Compose Pinboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
-      - title: SpotApps Scriptability
+      - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
         output: web
-      - title: SpotApps Templates
+      - title: SpotApps
         url: /admin/ts-cloud/app-templates.html
         output: web
       - title: ThoughtSpot Scripting Language
