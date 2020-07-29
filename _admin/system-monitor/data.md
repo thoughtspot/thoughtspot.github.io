@@ -7,6 +7,7 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+You can find the Data board under **Data > Usage > Data**.
 
  ![]({{ site.baseurl }}/images/control_center_data.png "Partial view of the System Health center: Data")
 

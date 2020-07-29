@@ -982,6 +982,9 @@ entries:
       - title: Answer TSL specification
         url: /admin/scriptability/tsl-answer.html
         output: web,admBk
+      - title: SpotApps
+        url: /admin/scriptability/app-templates.html
+        output: web,admBk
     - levelTwoTitle: Set up SearchIQ
       output: web,admBk
       levelTwoItems:

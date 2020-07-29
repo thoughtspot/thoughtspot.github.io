@@ -16,7 +16,7 @@ permalink: /:collection/:path.html
 
 When a user types a term in the SearchIQ search bar, SearchIQ interprets what the user means through language mappings. Users can teach their language to SearchIQ using [Teach SearchIQ your language]({{ site.baseurl }}/end-user/search/teach-searchiq.html).
 
-As an administrator, you can see and change these language mappings by editing the mappings file. You can access the mappings file if you are in the Administrator group, because then you can have access to the **ADMIN > Data Management** page. You can download the mappings file there. This allows you to view and edit all the language mappings users made, in bulk.
+As an administrator, you can see and change these language mappings by editing the mappings file. You can download the mappings file there from **Data > Settings > Language Mappings**. This allows you to view and edit all the language mappings users made, in bulk.
 
 ## Overview of the mapping process
 
@@ -40,8 +40,8 @@ you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click **ADMIN** in the top navigation bar.
-3. Click **Data Management**, then click **Language Mappings**.
+2. Click **Data** in the top navigation bar.
+3. Click **Settings**, then click **Language Mappings**.
 4. Click **Download**.
 
 ## Edit the file and change the settings
@@ -77,9 +77,9 @@ After you have made changes to the mapping file, you must upload it back to
 ThoughtSpot before the changes will take effect. To upload the mapping file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click **ADMIN**, on the top navigation bar.
+2. Click **Data**, on the top navigation bar.
 
-3. Click **Data Management**, then click **Language Mappings**.
+3. Click **Settings**, then click **Language Mappings**.
 4. Click **Browse your files** to upload the mappings.xls file, or drag and drop it in the zone.
 
     If you receive an error message upon uploading the file, check that it does
