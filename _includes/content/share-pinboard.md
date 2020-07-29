@@ -4,7 +4,7 @@ When you share a Pinboard, you share a live link to the Pinboard that reflects t
 
 You do not have to be an administrator or the Pinboard's owner to share saved Pinboards. Any user can share them, based on the access levels the user has.
 
-You can share a Pinboard from the list of Pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage).
+You can share a Pinboard from the list of Pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage). You can also share [a specific visualization](#share-viz) within a Pinboard.
 
 {: id="share-mainpinboardpage"}
 ## Share from the Pinboards page
@@ -42,6 +42,7 @@ To share a Pinboard from within the Pinboard, follow these steps.
 
 5. [Specify permissions](#specify-permissions).
 
+{: id="share-viz"}
 ## Share a Pinboard visualization
 You can also share a specific visualization within a Pinboard. When you share a Pinboard visualization, the user or group receives an email with a link to that visualization.
 

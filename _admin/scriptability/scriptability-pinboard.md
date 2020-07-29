@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 In ThoughtSpot, you can download Pinboards to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
 
-{% include note.html content="Scriptability for Answers and Pinboards is in beta. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support." %}
+{% include note.html content="Scriptability for Answers and Pinboards is in <strong>beta</strong>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support." %}
 
 This mechanism supports several scenarios that you may encounter:
 
