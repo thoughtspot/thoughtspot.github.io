@@ -547,13 +547,13 @@ entries:
       - title: Manage and create snapshots
         url: /admin/admin-portal/snapshot-manage.html
         output: web,admBk
-      - title: System Overview Pinboards
+      - title: System Overview Pinboard
         url: /admin/admin-portal/system-overview-pinboard.html
         output: web,admBk
-      - title: System Cluster Pinboards
+      - title: System Cluster Pinboard
         url: /admin/admin-portal/system-cluster-pinboard.html
         output: web,admBk
-      - title: System Alerts Pinboards
+      - title: System Alerts Pinboard
         url: /admin/admin-portal/system-alerts-pinboard.html
         output: web,admBk
       - title: Available cluster updates
@@ -981,6 +981,9 @@ entries:
         output: web,admBk
       - title: Answer TSL specification
         url: /admin/scriptability/tsl-answer.html
+        output: web,admBk
+      - title: SpotApps
+        url: /admin/scriptability/app-templates.html
         output: web,admBk
     - levelTwoTitle: Set up SearchIQ
       output: web,admBk

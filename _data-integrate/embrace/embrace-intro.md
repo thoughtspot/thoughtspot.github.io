@@ -158,7 +158,7 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&check;</td>
-<td>&check;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
@@ -167,7 +167,7 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&check;</td>
-<td>&check;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>MEDIAN</code></td>
@@ -185,7 +185,7 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&check;</td>
 <td>&check;</td>
-<td>&check;</td>
+<td>&cross;</td>
 </tr>
 </tbody>
 </table>
@@ -224,15 +224,6 @@ The following matrix captures the specific data type support limitations across 
       <td>&cross;</td>
       <td>&check;</td>
       <td>&cross;</td>
-    </tr>
-    <tr>
-      <td><code>TIMESTAMPTZ</code></td>
-      <td>&check;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
     </tr>
     <tr>
       <td><code>GEOMETRY</code></td>
@@ -276,12 +267,6 @@ The following list captures the specific limitations across the different databa
         <dlentry>
           <dt>Sample values</dt>
           <dd>Embrace does not internationalize sample values in tables.</dd></dlentry>
-        <dlentry>
-           <dt>Delayed UI rendering</dt>
-           <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI rendering may take a very long time. These connections may time out.</dd></dlentry>
-        <dlentry>
-          <dt>Deleting columns</dt>
-          <dd>After specifying a connection, columns cannot be deleted from the table. Editing a connection makes it possible to add additional columns, but not to remove them.</dd></dlentry>
       </dl>
     </dd>
   </dlentry>
@@ -311,16 +296,21 @@ The following list captures the specific limitations across the different databa
   <dlentry>
       <dt>SAP HANA</dt>
       <dd>SAP HANA does not support the following functions: <code>PERCENTILE, AGGREGATE_DISTINCT, SPELLS_LIKE, EDIT_DISTANCE</code>.</dd>
-      <dd>SAP HANA does not support the following data types: <code>BLOB, CLOB, NCLOB, TEXT, POINT</code>.</dd></dlentry>      
+      <dd>SAP HANA does not support the following data types: <code>BLOB, CLOB, NCLOB, TEXT, POINT</code>.</dd>
+      <dd>SAP HANA does not support calculation views with mandatory input parameters. If you need to use calculation views in ThoughtSpot, you must remove the mandatory parameter requirement.</dd></dlentry>       
 </dl>
 
 ## Next steps
 
 -   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Snowflake database.
+Create the connection between ThoughtSpot and tables in a Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
+Create the connection between ThoughtSpot and tables in an Amazon RedShift database.
 -   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
+Create the connection between ThoughtSpot and tables in a Google BigQuery database.
 -   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+Create the connection between ThoughtSpot and tables in an Azure Synapse database.
+-   **[Add a Teradata connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-add.html)**  
+Create the connection between ThoughtSpot and tables in a Teradata database.
+-   **[Add an SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-add.html)**  
+Create the connection between ThoughtSpot and tables in an SAP HANA database.

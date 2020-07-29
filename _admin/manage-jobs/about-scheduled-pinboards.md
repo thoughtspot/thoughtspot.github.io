@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The **Jobs Management** page found on the **Admin** section in the ThoughtSpot
+The **Jobs Management** page found in the **Data > Usage** section in the ThoughtSpot
 web application allows you to create and manage jobs, namely scheduled
 pinboards. Scheduled pinboards should help with preparing for recurrent
 meetings, when reviewing the same pinboard is necessary. They should also be
@@ -17,9 +17,7 @@ You can get pinboards emailed to you on a regular basis and do analysis offline.
 This introduces an additional format for you to consume and share pinboards with
 others, including those who don’t have a ThoughtSpot account.
 
-Contact ThoughtSpot Support if scheduled pinboards is not enabled on your
-cluster, or you can run the command `tscli scheduled-pinboards` to enable it
-yourself.
+Run `tscli scheduled-pinboards enable` to enable scheduled pinboards on your cluster.
 
 ## Scheduled pinboard creators
 
@@ -53,7 +51,7 @@ each file format.
 |The CSV file gets data only for table visualizations.|The PDF file gets data for all visualizations.|
 |The email has n CSV attachments, where there are n table visualizations in the pinboard.|The email has only one attachment file, which includes every visualization on its own page.|
 |Table visualizations have all data rows that they're supposed to have.|Table visualizations include only the first 100 rows.|
-|In the case of a corrupted pinboard: no email is sent. An error message indicating failure to export data is visible on the Admin Jobs Management page.|In the case of a corrupted pinboard: the PDF attachment has empty/error screenshots.|
+|In the case of a corrupted pinboard: no email is sent. An error message indicating failure to export data is visible on the Data > Usage > Jobs Management page.|In the case of a corrupted pinboard: the PDF attachment has empty/error screenshots.|
 |In the case of a corrupted visualization: an email with the visualizations whose data can be exported is sent. An error message indicating visualization export error is visible on the Jobs Management page.|In the case of a corrupted visualization: the PDF attachment has empty/error slots for the corrupted visualizations.|
 
 The size of each email is limited to 25 MB, which matches most email services

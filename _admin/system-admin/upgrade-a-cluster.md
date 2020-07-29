@@ -10,4 +10,12 @@ ThoughtSpot is installed or updated from a release tarball that contains the Tho
 
 ThoughtSpot patches the Operating System at the time of upgrades. Installation and upgrade use the same process, replacing the older OS image on a node by the new image delivered in the release tarball.
 
-{% include note.html content="ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available." %}
+ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available.
+
+You can also view available releases from the Administration Portal. To view new releases, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Upgrade** from the side navigation bar that appears.
+
+The **Upgrade** page shows your cluster's current version, and any new releases that are available. If no releases are available, you see the following screen.
+
+![Admin Portal - Upgrade]({{ site.baseurl }}/images/admin-portal-upgrade.png "Admin Portal - Upgrade")
+
+If releases are available, and you would like to upgrade, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to upgrade your cluster.
