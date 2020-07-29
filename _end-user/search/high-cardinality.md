@@ -1,6 +1,6 @@
 ---
 title: [Charts and tables that display a very large number of data values]
-last_updated: 6/29/2020
+last_updated: 7/29/2020
 summary: "ThoughtSpot's charts and tables can support many data values, and you can easily understand how much of the data your chart or table displays."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,7 +20,7 @@ ThoughtSpot charts contain several new features. You are no longer limited to 10
 
 ![High cardinality chart with scroll bar]({{ site.baseurl }}/images/cardinality-chart-scroll-bar.png "High cardinality chart with scroll bar")
 
-If you want to see the whole chart at one time, you can select the **fit to screen** option. To **fit to screen**, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **fit to screen**.
+If you want to see the whole chart at one time, you can select the **fit to screen** option. To **fit to screen**, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and select the **Settings** menu. Select **fit to screen**.
 
 ![High cardinality chart example -- fit to screen]({{ site.baseurl }}/images/cardinality-chart-options.png "High cardinality chart example -- fit to screen")
 

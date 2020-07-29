@@ -1,6 +1,6 @@
 ---
 title: [Changing charts]
-last_updated: 2/26/2020
+last_updated: 7/29/2020
 summary: "You can adjust all aspects of ThoughtSpot charts: color, legends, axis, number format, and many more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,13 +11,13 @@ To make changes to the chart configuration, click the gear icon in the top right
 
  <!--![]({{ site.baseurl }}/images/configure_chart_icons.png "Configure chart icons")-->
 
-This opens the **Customize** menu for the chart. Using this menu, you can drag and drop measure and attribute chips to or from an axis. Click on any measure or attribute chip that has a **more** icon (**>**) to customize it. In the image below, both **Total sales** and **Store Region** are customizable.
+This opens the **Edit chart** panel for the chart, which contains the **Customize** and **Settings** menus. Using this menu, you can drag and drop measure and attribute chips to or from an axis. Click on any measure or attribute chip that has a **more** icon (**>**) to customize it. In the image below, **Total Sales** is customizable.
 
-![Customize chart configuration]({{ site.baseurl }}/images/chartconfig-customize.png "Customize chart configuration")
+![Edit chart configuration]({{ site.baseurl }}/images/chart-config-edit-chart-panel.png "Edit chart configuration")
 
 You can edit some of the elements of the chart directly, by clicking on them. For example, you can change the appearance of a chart [axis]({{ site.baseurl }}/end-user/search/chart-axes-options.html) by clicking it and making selections in the available options.
 
-Through the **Customize** menu, you can perform a number of customizations:
+Through the **Edit chart** menu, you can perform a number of customizations:
 
 1. [Drag and drop measures and attributes to or from an axis]({{ site.baseurl }}/end-user/search/drag-and-drop.html)
    * Set up your chart by dragging and dropping the measures and attributes in your search onto the appropriate axis. If you want a column to be part of your search and show up in the table view, but you do not want to include it in your chart, you can drag it to the ‘Not Visualized’ section.

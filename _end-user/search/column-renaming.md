@@ -28,12 +28,12 @@ To rename an axis, follow these steps.
 
 You can rename a table column, or a pivot table column, in a similar way.
 
-To rename a column, follow these steps.
+To rename a table or pivot table column, follow these steps.
 
 1. While viewing your answer as a table, click the more options menu icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} that appears when you hover over a column name.
 
 2. Click **Rename**.
 
-    ![Rename table column]({{ site.baseurl }}/images/chartconfig-renametable.png "Rename table column")
+    ![Rename table column]({{ site.baseurl }}/images/table-config-rename-column.png "Rename table column")
 
 3. Type the new name in the text box that appears, and either click out or hit **Enter/Return** on your keyboard.

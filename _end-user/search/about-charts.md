@@ -1,6 +1,6 @@
 ---
 title: [Understand charts]
-last_updated: 2/25/2020
+last_updated: 7/29/2020
 summary: "Charts display your search answer in a visual way."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -33,11 +33,11 @@ Hovering over a chart type icon tell you what columns you require before you can
 
 -   **[Column charts]({{ site.baseurl }}/end-user/search/about-column-charts.html)**  
 The column chart is one of ThoughtSpot's simplest, yet most versatile chart types. The column chart is often the chosen default chart type, and displays data as vertical columns.
--  **[Stacked columns]({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**
+-  **[Stacked columns]({{ site.baseurl }}/end-user/search/about-column-charts.html#stacked-columns)**<br>
 The stacked column combines the different secondary dimensions into a single column, stacking them. Note that the dimensions retain their relative size and color.
 -   **[Bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html)**  
 The bar chart is nearly identical to the column chart. The primary difference is that it displays data as horizontal bars.
--  **[Stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html#stacked-bar-charts)**
+-  **[Stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html#stacked-bar-charts)**<br>
 Just like stacked columns, stacked bars combine the different secondary dimensions into a single stacked bar.
 -   **[Line charts]({{ site.baseurl }}/end-user/search/about-line-charts.html)**  
 Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most versatile chart types. More often than not the line chart will be chosen as your default chart type.
@@ -45,7 +45,7 @@ Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most
 The pie chart is a classic chart type that displays your search in a circle. The pie chart ThoughtSpot shows is in the shape of a doughnut.
 -   **[Area charts]({{ site.baseurl }}/end-user/search/area-charts.html)**  
 The area chart is based on the line chart, but has filled in regions.
--   **[Stacked area charts]({{ site.baseurl }}/end-user/search/area-charts.html#stacked-area-charts)**
+-   **[Stacked area charts]({{ site.baseurl }}/end-user/search/area-charts.html#stacked-area-charts)**<br>
 This option stacks the values of one dimension on top of the other, enabling you to clearly see the relative volume of data under the line. Contrast this with the presentation in the area chart, where data for different overlaps.
 -   **[Scatter charts]({{ site.baseurl }}/end-user/search/about-scatter-charts.html)**  
 The scatter chart is useful for finding correlations or outliers in your data.
@@ -69,9 +69,9 @@ There are three geo charts that let you visualize geographical data in ThoughtSp
 Pivot tables in ThoughtSpot use the well known drag-and-drop interface. Creating a pivot table enables exploring alternate visualization of data in a wide table. The basic idea is that some data is easier to consume when laid out horizontally, while others, vertically.
 -   **[Sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)**  
 Sankey charts show a flow from one set of values to another, usually with visual emphasis (brighter colors or larger bandwidths) for comparison of the values (e.g., top cities in terms of sales might be emphasized).
--   **[Radar charts]({{ site.baseurl }}/end-user/search/about-radar-charts.html)**
+-   **[Radar charts]({{ site.baseurl }}/end-user/search/about-radar-charts.html)**<br>
 Radar charts display multivariate data on a two-dimensional chart of three or more quantitative variables that plot on axes (spokes) that originate at the same point.
--   **[Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html)**
+-   **[Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html)**<br>
 Candlestick charts efficiently collapse financial information, such as price movements on a single day, into a unified representation. A single 'candlestick' shows the _open_, _high_, _low_, and _close_ prices for the same day.
 
 ## Charts with multiple measures on the y-axis

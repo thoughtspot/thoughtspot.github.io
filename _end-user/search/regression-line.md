@@ -1,6 +1,6 @@
 ---
 title: [Add regression lines]
-last_updated: 2/24/2020
+last_updated: 7/29/2020
 summary: "You can add a regression line to your chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,5 +17,5 @@ To add a regression line, you need a search with only one attribute and one meas
   bubble, and so on). In the following examples, `sales` is the measure and `department` is
   the attribute.
 
-  ![]({{ site.baseurl }}/images/chartconfig-regression1.png)
-  ![]({{ site.baseurl }}/images/chartconfig-regression2.png)
+  ![Regression line - column chart]({{ site.baseurl }}/images/chart-config-regression-line-bar.png "Regression line - column chart")
+  ![Regression line - line chart]({{ site.baseurl }}/images/chart-config-regression-line-line.png "Regression line - line chart")
