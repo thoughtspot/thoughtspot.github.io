@@ -2,7 +2,7 @@
 
 title: [Scriptability]
 last_updated: 6/29/2020
-summary: "Use Scriptability to export Worksheets, Views, Pinboards, and Answers in a human-readable format."
+summary: "Use Scriptability to export and import Worksheets, Views, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,11 +20,11 @@ You can download these objects in the form of a scriptable file in the [ThoughtS
 
 ## Prerequisites
 
-**Pinboards and Answers**
+**Pinboards, Answers, and Views**
 
 | Export with dependents | Export without dependents | Import with dependents | Import without dependents |
 | ---------- | ---- | --- |
-| **View** permission for the Pinboard or Answer. **View** permission on all underlying tables and Worksheets. For example, if a Pinboard or Answer is built on top of a Worksheet that is built on top of a View, you must have **view** permission for all of these objects. | **View** permission for the Pinboard or Answer. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard or Answer visualizations directly depend on. For example, if a Pinboard or Answer is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
+| **View** permission for the Pinboard, Answer, or View. **View** permission on all underlying tables, Worksheets, and Views. For example, if a Pinboard, Answer, or View is built on top of a Worksheet that is built on top of a View, you must have **view** permission for all of these objects. | **View** permission for the Pinboard, Answer, or View. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard, Answer, or View visualizations directly depend on. For example, if a Pinboard, Answer, or View is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
 
 **Worksheets**
 
