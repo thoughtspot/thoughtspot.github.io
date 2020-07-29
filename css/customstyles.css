@@ -887,6 +887,36 @@ a[data-toggle="tooltip"] {
     text-decoration:none;
 }
 
+/* special tooltip code for copy to clipboard - start */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+// position tooltip
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+/* special tooltip code for copy to clipboard -  */
+
 .seriesNext, .seriesContext {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1331,6 +1361,23 @@ div.content {
 
 button.btn.btn-default.btn-lg.modalButton1 {
     margin-left: -20px;
+}
+
+/* copy to clipboard button - start */
+
+.btn-copy {
+    background-color: transparent;
+    display: inline;
+    float: right;
+    position: relative;
+    top: 50px;
+}
+
+/* copy to clipboard button - end */
+
+button.data-clipboard-text {
+    margin-left: -20px;
+    margin-top:-5px;
 }
 
 div.box.box1 {
