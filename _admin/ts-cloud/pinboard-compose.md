@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Create a Pinboard to view and share multiple related Answers.
 
-![Compose Pinboards]({{ site.baseurl }}/images/pinboard-compose.gif "Compose Pinboards from ansers")
+![Compose Pinboards]({{ site.baseurl }}/images/pinboard-compose.gif "Compose Pinboards from Answers")
 
 1. Click **Create Pinboards**.
 
