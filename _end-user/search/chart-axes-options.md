@@ -1,6 +1,6 @@
 ---
 title: [Change axis options]
-last_updated: 2/28/2020
+last_updated: 7/29/2020
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -179,7 +179,7 @@ Compare the original chart with one that groups _Item Price_ and _Item Cost_ as 
 
 ![Compare ungrouped chart and chart that groups similar measures]({{ site.baseurl }}/images/edit-axis-group-applied.png "Compare ungrouped chart and chart that groups similar measures")
 
-Notice that the **Customize** menu shows a linkage between the two grouped axes.
+Notice that the **Edit chart: Customize** menu shows a linkage between the two grouped axes.
 
 ![Grouped axes]({{ site.baseurl }}/images/edit-axis-group-menu.png "Grouped axes")
 
@@ -259,7 +259,7 @@ To edit this axis (in this example, _Item Price_), follow these steps:
 {: id="remove"}
 ## Remove the axis
 
-Removing the axis removes the data from the display, but not from the answer entirely. Instead, the column that the axis represents appears in the **Not visualized** section of the **Customize** menu.
+Removing the axis removes the data from the display, but not from the answer entirely. Instead, the column that the axis represents appears in the **Not visualized** section of the **Edit chart: Customize** menu.
 
 ![Remove the axis]({{ site.baseurl }}/images/remove-axis.gif "Remove Axis for Item Price")
 
@@ -269,6 +269,6 @@ To remove an axis (in this example, _Item Price_), follow these steps:
 
 2. In the drop-down, select **x Remove**.
 
-3. The **Customize** menu appears.
+3. The **Edit chart: Customize** menu appears.
 
-   Notice that the **Item Price** *axis* and the corresponding data no longer appear on the visual. However, the **Item Price** *column* appears in the **Not visualized** section of the **Customize** menu.
+   Notice that the **Item Price** *axis* and the corresponding data no longer appear on the visual. However, the **Item Price** *column* appears in the **Not visualized** section of the **Edit chart: Customize** menu.
