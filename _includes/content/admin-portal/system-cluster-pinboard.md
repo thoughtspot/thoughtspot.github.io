@@ -4,7 +4,7 @@ You can view cluster information from the Administration Portal. The **System Cl
 
 Only the **Average Latency Last 2 Weeks (sec)** panel contains a standard
 ThoughtSpot visualization. The other visualizations rely on internal queries
-that are not accessible. You can, however, **Present** or **Copy link** on them.
+that are not accessible. You can, however, **Present** them, or **Copy embed link**.
 
 ## Cluster Details
 
