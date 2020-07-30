@@ -20,6 +20,8 @@ The Scriptability feature supports several scenarios that you may encounter:
 
 - **Making bulk changes**, such as mass renaming of objects defined by Worksheets, and managing duplicates.
 
+- **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
+
 You can download these objects in the form of a scriptable file in the ThoughtSpot Scripting Language, or TSL.
 
 Use Scriptability to export Worksheets, Pinboards, and Answers in a human-readable format.
