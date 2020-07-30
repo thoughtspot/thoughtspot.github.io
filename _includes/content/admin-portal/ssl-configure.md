@@ -10,7 +10,7 @@ Fill out the following parameters:
 ![Configure WebServer SSL]({{ site.baseurl }}/images/admin-portal-ssl-config.png "Configure WebServer SSL")
 
 | **1** | Select **Enable**. |
-| **2** | ThoughtSpot supports either 2048 or 4096. |
+| **2** | Choose **RSA**. |
 | **3** | Choose TLS 1.2 as a best practice. ThoughtSpot also supports TLS 1.1 and 1.0; set the minimum supported version to 1.1 or 1.0 to use these versions. |
 | **4** | Attach your private key file. |
 | **5** | Attach your SSL certificate bundle file. |
