@@ -11,7 +11,7 @@ To add a new connection to Salesforce, follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the Snowflake **Connection type**, the rest of the connection properties appear.
+4. After you select the Salesforce **Connection type**, the rest of the connection properties appear.
 
    <details>
     <summary>See the <strong>Create connection</strong> screen for Salesforce</summary>
