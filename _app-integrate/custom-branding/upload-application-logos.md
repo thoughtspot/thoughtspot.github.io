@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 To upload your own default and wide application logos:
 
+1. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/?showOnboarding=false&customBrandingEnabled=true#/admin/settings/style-customization`.
+
 1. Click the default icon under **Application Logo (Default)** to browse for and select your own default logo.
 
      ![Default application logo]({{ site.baseurl }}/images/style-applogo.png "Application Logo (Default)")

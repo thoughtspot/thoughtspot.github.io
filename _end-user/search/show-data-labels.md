@@ -10,7 +10,7 @@ You can show data labels for [every measure](#labels-all) in your chart, or conf
 {: id="labels-all"}
 ## Configure all data labels
 
-To turn on all data labels for a chart, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and select the **Settings** menu. Select **all labels**.
+To turn on all data labels for a chart, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and select the **Settings** menu. Select **all labels**. Note that you cannot select **all labels** when you **fit to screen**, unless the visualization does not have enough data points to require a scroll bar, and thus defaults to **fit to screen** mode.
 
 ![Configure all data labels]({{ site.baseurl }}/images/chart-config-all-labels.png "Configure all data labels")
 

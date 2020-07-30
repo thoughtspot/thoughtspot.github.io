@@ -31,13 +31,9 @@ To re-brand the interface:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Click the **Admin** tab, on the top navigation bar.
+2. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/?showOnboarding=false&customBrandingEnabled=true#/admin/settings/style-customization`.
 
-    ![Select the admin tab]({{ site.baseurl }}/images/topnavbar-admin.png "Select the admin tab")
-
-3. In the **Admin** panel, click **Style Customization**.
-
-     ![Style customization menu]({{ site.baseurl }}/images/stylecustomizationmenu.png "Style Customization menu")
+     ![Style Customization menu]({{ site.baseurl }}/images/style-customization-menu.png "Style Customization menu")
 
     In the menu page, you can perform the following actions:
 

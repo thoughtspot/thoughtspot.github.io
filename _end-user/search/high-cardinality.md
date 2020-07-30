@@ -26,6 +26,8 @@ If you want to see the whole chart at one time, you can select the **fit to scre
 
 When you **fit to screen**, you see the whole chart. You can easily return to the zoomed-in view, by unselecting the **fit to screen** option.
 
+Note that when you enable **fit to screen**, the **all labels** option is grayed out. You cannot turn on all labels when you **fit to screen**, unless the visualization does not have enough data points to require a scroll bar, and thus defaults to **fit to screen** mode.
+
 You can now have more than 40 legend items in your chart. If you attempt to [slice with color]({{ site.baseurl }}/end-user/search/drag-and-drop.html#slice-with-color) using a column that has more than 80 values, the recommended number of values, ThoughtSpot tells you to filter to reduce the number of values, or allows you to **render all**, if the number of values is under 250.
 
 ![Render all, or filter to reduce number of values]({{ site.baseurl }}/images/cardinality-render-all.png "Render all or filter to reduce number of values")

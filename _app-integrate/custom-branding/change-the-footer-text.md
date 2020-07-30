@@ -19,6 +19,8 @@ company-specific message.
 You can change the footer text to reflect your company's message. To change the
 footer text:
 
+1. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/?showOnboarding=false&customBrandingEnabled=true#/admin/settings/style-customization`.
+
 1. Click the text box under **Footer text**.
 2. Enter your new text message.
 
