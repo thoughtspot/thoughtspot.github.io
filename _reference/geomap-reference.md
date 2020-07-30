@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 3/20/2020
+last_updated: 7/30/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -98,6 +98,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<dlentry>
+<dt>India</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/in-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/in-district.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/in-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Italy</dt>
@@ -158,6 +173,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </details>
 <details><summary><strong>Postal Code</strong></summary>
 {% include content/geo/pl-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Portugal</dt>
+<dd>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/pt-district.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/pt-municipality.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/pt-postcode.md %}
 </details>
 </dd>
 </dlentry>
