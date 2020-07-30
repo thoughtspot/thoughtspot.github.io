@@ -16,7 +16,7 @@ Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/
 * `hostname` is your network hostname. Ask your network administrator if you do not know your hostname.
 * `file-name` is the name of the tarball file on your local machine.
       For example:
-      <button type="button" class="btn btn-copy" data-clipboard-text="$ scp 6.0.tar.gz admin@ThoughtSpot:/home/admin/TS-tarball"><ion-icon name="copy-outline"></ion-icon></button>
+      <button type="button" class="btn btn-copy" data-toggle="tooltip" title="Copy" data-clipboard-text="$ scp 6.0.tar.gz admin@ThoughtSpot:/home/admin/TS-tarball"><ion-icon name="copy-outline"></ion-icon></button>
 ```
     $ scp 6.0.tar.gz admin@ThoughtSpot:/home/admin/TS-tarball
 ```
@@ -27,7 +27,7 @@ Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/
 3. **Run the `tscli cluster create` command** Run `tscli cluster create <release-number>` in your terminal.<br>
 If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage=s3` or `--enable_cloud_storage=gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
 For example:
-<button type="button" class="btn btn-copy" data-clipboard-text="$ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3"><ion-icon name="copy-outline"></ion-icon></button>
+<button type="button" class="btn btn-copy" data-toggle="tooltip" title="Copy" data-clipboard-text="$ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3"><ion-icon name="copy-outline"></ion-icon></button>
 ```
     $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3
 ```  
