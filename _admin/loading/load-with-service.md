@@ -29,14 +29,14 @@ This page highlights the following:
    {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to the service by default." %}
 
 6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
-
+<button rel='tipsy' id="btn-copy" class="btn btn-copy" data-copied-hint="Copied!" title="Copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><ion-icon name="copy-outline"></ion-icon></button>
    ```
    curl -i https://localhost:8442/ts_dataservice/v1/public/ping
    HTTP/1.1 200 OK
 
    Ping Received.
    ```   
-   
+
 ## Reference client
 
 The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
