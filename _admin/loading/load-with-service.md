@@ -29,7 +29,7 @@ This page highlights the following:
    {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to the service by default." %}
 
 6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
-<button rel='tipsy' id="btn-copy" class="btn btn-copy" data-copied-hint="Copied!" title="Copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><ion-icon name="copy-outline"></ion-icon></button>
+<button rel='tipsy' id="btn-copy" class="btn btn-copy" data-copied-hint="Copied!" data-toggle="tooltip" title="Copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><ion-icon name="copy-outline"></ion-icon></button>
    ```
    curl -i https://localhost:8442/ts_dataservice/v1/public/ping
    HTTP/1.1 200 OK
