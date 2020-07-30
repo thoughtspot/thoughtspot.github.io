@@ -15,6 +15,7 @@ The Scriptability feature supports several scenarios that you may encounter:
 - **Migrating from a development environment to a production environment** by downloading files from the development cluster and uploading the same files into the production cluster
 - **Implementing metadata changes outside ThoughtSpot UI**, such as replacing the underlying tables for an object, or replacing a single column from one table with a column in another table
 - **Making bulk changes**, such as mass renaming of objects defined by Worksheets, and managing duplicates
+- **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
 
 You can download these objects in the form of a scriptable file in the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html), or `TSL`.
 
