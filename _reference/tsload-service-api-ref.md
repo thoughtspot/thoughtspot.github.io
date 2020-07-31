@@ -31,7 +31,12 @@ Use this API to authenticate and log in a user. **Login** establishes a session 
 </table>
 
 ### Request
-
+<button id="copy" title="Copy" onclick="sayCopied()" type="button" class="btn btn-copy" data-clipboard-text="POST /ts_dataservice/v1/public/session HTTP/1.1  
+Host: client.mydomain.com Accept: application/json Content-type: application/json
+{
+"username":"<thoughtspot user name>",
+"password":"<thoughtspot password>"
+}"><img class="copy-img"/>Copy</button>
 ```
 POST /ts_dataservice/v1/public/session HTTP/1.1  
 Host: client.mydomain.com Accept: application/json Content-type: application/json
