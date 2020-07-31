@@ -29,7 +29,7 @@ This page highlights the following:
    {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to the service by default." %}
 
 6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
-<button rel='tipsy' id="btn-copy" class="btn btn-copy" data-copied-hint="Copied!" data-toggle="tooltip" title="Copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><ion-icon name="copy-outline"></ion-icon></button>
+<button id="copy" title="Copy" onclick="sayCopied()" type="button" class="btn btn-copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><img class="copy-img"/>Copy</button>
    ```
    curl -i https://localhost:8442/ts_dataservice/v1/public/ping
    HTTP/1.1 200 OK
@@ -39,9 +39,8 @@ This page highlights the following:
 
 ## Reference client
 
-The included Python3 client is provided for you to use it as a starting point for writing automated ETL jobs in Python.
+The included Python3 client is available for you to use it as a starting point for writing automated ETL jobs in Python. Contact ThoughtSpot for more information.
 
-A reference python client is located at: <todo-Anand to send the link>
 This requires python3 and the details of the methods are documented within the above client.
 
 The client includes the following methods:

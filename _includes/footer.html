@@ -19,39 +19,18 @@
         console.log(e);
     });
     </script>
-  <script>
-    var last_clicked_el = null;
 
-    function tipsyToolTipText() {
-        if (this === last_clicked_el) {
-            last_clicked_el = null;
-            return this.getAttribute('data-copied-hint');
-        } else {
-            return this.getAttribute('original-title');
-        }
-    }
+    <script>
 
-    // Setup tooltips
-    $(function () {
-        $('#btn-copy').tipsy({
-            fade: true,
-            gravity: 'n',
-            title: tipsyToolTipText
-        });
-    });
+          $('[data-toggle="tooltip"]').tooltip({
+        trigger : 'hover'
+    })
+</script>
 
-    // Click hander for button
-    $("#btn-copy").click(function (e) {
-        last_clicked_el = e.delegateTarget;
-        $('#btn-copy').tipsy("hide");
-        $('#btn-copy').tipsy("show");
-    });
-  </script>
-
-  <script>
-      $('[data-toggle="tooltip"]').on('click', function () {
-          $(this).tooltip('hide')
-      })
+<script>
+function sayCopied (id) {
+  document.getElementById(id).innerHTML = "Copied! ";
+}
 </script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </footer>
