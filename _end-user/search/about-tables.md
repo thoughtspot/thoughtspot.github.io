@@ -1,6 +1,6 @@
 ---
 title: [Results that are tables]
-last_updated: 7/29/2020
+last_updated: 7/31/2020
 toc: true
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar
@@ -74,7 +74,7 @@ To change the number formatting:
 
     ![Unit, decimal places, thousand separator]({{ site.baseurl }}/images/table-config-unit.png "Unit, decimal places, thousand separator")
 
-6. Specify the method for writing **negative values**: -1234, 1234-, or (1234).
+6. Specify the method for writing **negative values**: -1234, 1234-, or (1234). The default is -1234.
 
 ![Number formatting gif]({{ site.baseurl }}/images/table-config-number-formatting.gif "Number formatting gif")
 
