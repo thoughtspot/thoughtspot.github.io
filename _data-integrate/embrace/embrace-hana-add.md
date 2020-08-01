@@ -33,6 +33,8 @@ To add a new connection to SAP HANA:
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your SAP HANA data source. Key-value pairs are case-sensitive." %}
 
+    For more information about the advanced properties for SAP HANA, see: [SAP HANA Client Interface Programming Reference](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.03/en-US/109397c2206a4ab2a5386d494f4cf75e.html){:target="_blank"}, in the SAP's documentation.
+
 6. Click **Continue**.       
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.

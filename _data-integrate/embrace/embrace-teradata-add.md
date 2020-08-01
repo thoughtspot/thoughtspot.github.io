@@ -24,7 +24,7 @@ To add a new connection to Teradata:
     ![Enter connection details]({{ site.baseurl }}/images/teradata-connectiondetails.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
 
-    Refer to the [Teradata connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-reference.html#) for more information on each of the specific attributes you must enter for your connection.
+    Refer to the [Teradata connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Teradata, by doing the following:
 - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
@@ -43,7 +43,7 @@ To add a new connection to Teradata:
 8. Click **Confirm**.
 
     Once the connection is added, you can search your Teradata database right away by clicking **Search now**.
-    
+
     ![The "Connection created" screen]({{ site.baseurl }}/images/teradata-connectioncreated.png "The "Connection created" screen")
 
     Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
