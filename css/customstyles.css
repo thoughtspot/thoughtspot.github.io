@@ -860,6 +860,18 @@ div.tags {padding: 10px 5px;}
     font-weight: normal;
 }
 
+/* begin beta label */
+
+.label-beta {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+/* end beta label */
+
 hr {
     background: #999;
     margin: 30px 0px;
