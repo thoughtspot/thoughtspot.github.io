@@ -868,6 +868,54 @@ div.tags {padding: 10px 5px;}
     margin-left: 2px;
     position: relative;
     top: -1px;
+    padding-top: 3px;
+}
+
+.label-beta-small {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-update {
+    display: inline-block;
+    background-color: #373BB1;
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+.badge-update {
+    display: inline-block;
+    background-color: #D3D4FE;
+    color: #4E55FD;
+    font-size: 9px;
+    margin-left: 2px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    vertical-align: top;
+    padding-top: 2px;
+/*   display: inline-block;
+   min-width: 10px;
+   padding: 3px 7px;
+ font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #ebebeb;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #373BB1;
+   border-radius: 5px;
+   position: relative;
+   top: -1px; */
 }
 
 /* end beta label */
