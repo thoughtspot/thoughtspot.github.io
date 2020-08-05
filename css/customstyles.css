@@ -862,18 +862,31 @@ div.tags {padding: 10px 5px;}
 
 /* begin beta label */
 
-.label-beta {
-    background-color: #f4bb00;
-    color: #0e1e24;
+.label-beta-cloud {
+/*    background-color: #66CFEB; */
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
     margin-left: 2px;
     position: relative;
     top: -1px;
     padding-top: 3px;
 }
 
-.label-beta-small {
+.label-beta {
     background-color: #f4bb00;
     color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-beta-cloud-small {
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
     margin-left: 2px;
     position: relative;
     top: -1px;
