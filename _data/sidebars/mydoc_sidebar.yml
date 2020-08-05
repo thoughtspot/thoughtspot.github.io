@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot Cloud <span class="label label-beta">Beta</span>
+  product: ThoughtSpot Cloud <span class="label label-beta-cloud">Beta</span>
 #  version: 6.1 Guides
   sections:
 # Needed for PDF output only; no titles in this section
