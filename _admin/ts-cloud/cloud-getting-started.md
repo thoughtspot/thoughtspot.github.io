@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 ## Supported features
 
-The free trial of ThoughtSpot Cloud <span class="label label-beta">Beta</span> supports the following:
+The free trial of ThoughtSpot Cloud <span class="label label-beta-cloud-small">Beta</span> supports the following:
 - Embrace connections to the Snowflake and Redshift data warehouses
 
 ## Unsupported features
