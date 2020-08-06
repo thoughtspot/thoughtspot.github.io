@@ -622,6 +622,7 @@ This subcommand has the following options:
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
       <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+      <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Statistics uploads occur daily.</div></p>
       </dd></dlentry>
 
   <dlentry>
@@ -639,7 +640,7 @@ This subcommand has the following options:
             <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
       writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
-            <p>The default is <code>1d</code>.</p></dd>
+            <p>There is no default setting.</p></dd>
             </dlentry>
             </dl>
             </dd>
