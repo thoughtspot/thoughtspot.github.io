@@ -639,7 +639,7 @@ This subcommand has the following options:
             <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
       writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
-            <p>There is no default setting.</p></dd>
+            <p>The default is <code>1d</code>.</p></dd>
             </dlentry>
             </dl>
             </dd>
