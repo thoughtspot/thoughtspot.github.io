@@ -1824,12 +1824,24 @@ entries:
     - title: DataFlow Overview
       url: /data-integrate/dataflow/dataflow.html
       output: web,dataflowGD
+    - title: Key features
+      url: /data-integrate/dataflow/dataflow-key-features.html
+      output: web,dataflowGD
+    - title: How DataFlow works
+      url: /data-integrate/dataflow/dataflow-workflow.html
+      output: web,dataflowGD
     - title: DataFlow home page
       url: /data-integrate/dataflow/dataflow-home.html
+      output: web,dataflowGD
+    - title: DataFlow best practices
+      url: /data-integrate/dataflow/dataflow-best-practices.html
       output: web,dataflowGD
     - levelTwoTitle: Database Connections
       output: web,dataflowGD
       levelTwoItems:
+      - title: Supported database connections
+        url: /data-integrate/dataflow/dataflow-databases.html
+        output: web,dataflowGD
       - levelThreeTitle: Amazon Aurora
         output: web,dataflowGD
         levelThreeItems:
@@ -2148,6 +2160,9 @@ entries:
     - levelTwoTitle: File System Connections
       output: web,dataflowGD
       levelTwoItems:
+      - title: Supported file system connections
+        url: /data-integrate/dataflow/dataflow-filesystems.html
+        output: web,dataflowGD
       - levelThreeTitle: Amazon S3
         output: web,dataflowGD
         levelThreeItems:
@@ -2226,6 +2241,9 @@ entries:
     - levelTwoTitle: Application Connections
       output: web,dataflowGD
       levelTwoItems:
+      - title: Supported application connections
+        url: /data-integrate/dataflow/dataflow-applications.html
+        output: web,dataflowGD
       - levelThreeTitle: Salesforce
         output: web,dataflowGD
         levelThreeItems:
@@ -2244,6 +2262,9 @@ entries:
     - levelTwoTitle:  Administration
       output: web,dataflowGD
       levelTwoItems:
+      - title: Administration overview
+        url: /data-integrate/dataflow/dataflow-administration.html
+        output: web,dataflowGD
       - title: Manage DataFlow users
         url: /data-integrate/dataflow/dataflow-user-management.html
         output: web,dataflowGD
