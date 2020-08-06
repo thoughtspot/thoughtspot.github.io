@@ -622,6 +622,7 @@ This subcommand has the following options:
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
       <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+      <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Statistics uploads occur daily.</div></p>
       </dd></dlentry>
 
   <dlentry>
