@@ -7,6 +7,10 @@
 <META NAME="robots" CONTENT="noindex,nofollow">
 <!-- <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}"> -->
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
+
+<!-- prevent google from crawling/indexing site -->
+<meta name='robots' content='noindex,follow' />
+
 <title>{{ page.title }} | {{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ 'css/syntax.css' | absolute_url }}">
 
