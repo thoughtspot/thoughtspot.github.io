@@ -447,18 +447,6 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
-    - levelTwoTitle: Use SearchIQ
-      output: web,ugBk
-      levelTwoItems:
-        - title: About SearchIQ
-          url: /end-user/search/about-searchiq.html
-          output: web,ugBk
-        - title: Use SearchIQ for natural searches
-          url: /end-user/search/use-searchiq.html
-          output: web,ugBk
-        - title: Teach SearchIQ your language
-          url: /end-user/search/teach-searchiq.html
-          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -881,33 +869,6 @@ entries:
         output: web,admBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
-        output: web,admBk
-    - levelTwoTitle: Set up SearchIQ
-      output: web,admBk
-      levelTwoItems:
-      - title: Enable SearchIQ
-        url: /admin/setup/enable-searchiq.html
-        output: web,admBk
-      - title: Optimize SearchIQ
-        url: /end-user/search/searchiq-optimize.html
-        output: web,admBk
-      - levelThreeTitle: Search IQ Optimization Steps
-        output: web,admBk
-        levelThreeItems:
-        - title: Enabling Columns in SearchIQ
-          url: /end-user/search/searchiq-optimize-columns.html
-          output: web,admBk
-        - title: Add Experts for SearchIQ
-          url: /end-user/search/searchiq-optimize-experts.html
-          output: web,admBk
-        - title: Train SearchIQ
-          url: /end-user/search/searchiq-optimize-train.html
-          output: web,admBk
-      - title: Set entity categories for SearchIQ
-        url: /admin/data-modeling/set-entity-category.html
-        output: web,admBk
-      - title: Change SearchIQ mappings
-        url: /admin/data-modeling/searchiq-mappings.html
         output: web,admBk
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
@@ -1648,30 +1609,6 @@ entries:
       - title: Connection configuration
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
-  - sectiontitle: Disaster Recovery
-    output: web,drgBk
-    sectionitems:
-    - title: About disaster recovery
-      url: /disaster-recovery/about-disaster-recovery.html
-      output: web,drgBk
-    - title: Disk failure
-      url: /disaster-recovery/disk-failure.html
-      output: web,drgBk
-    - title: Node failure
-      url: /disaster-recovery/node-failure.html
-      output: web,drgBk
-    - levelTwoTitle: Cluster replacement
-      output: web,drgBk
-      levelTwoItems:
-      - title: Overview of cluster replacement
-        url: /disaster-recovery/cluster-replacement.html
-        output: web,drgBk
-      - title: Mount a NAS file system
-        url: /disaster-recovery/nas-mount.html
-        output: web,drgBk
-      - title: Configure disaster recovery
-        url: /disaster-recovery/set-up-DR-config.html
-        output: web,drgBk
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:
@@ -1704,9 +1641,6 @@ entries:
       output: web,refGd
     - title: User action codes reference
       url: /reference/action-codes.html
-      output: web,refGd
-    - title: Stop word reference
-      url: /reference/stop-words.html
       output: web,refGd
     - title: Geo map reference
       url: /reference/geomap-reference.html

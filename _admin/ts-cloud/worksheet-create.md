@@ -93,9 +93,10 @@ Follow these steps to create Worksheets:
 
 ## Additional resources
 
-[![ThoughtSpot University]({{ site.baseurl }}/images/ts-u.png)](https://training.thoughtspot.com/)
+
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
 
 As you develop your expertise with Worksheets, we recommend the following courses:
 
-- <a href="https://training.thoughtspot.com/2-worksheet-design">Worksheet Design</a>
-- <a href="https://training.thoughtspot.com/series/business-analyst/2-using-formulas">Using Formulas</a>
+- <a href="https://training.thoughtspot.com/2-worksheet-design" target="_blank">Worksheet Design</a>
+- <a href="https://training.thoughtspot.com/series/business-analyst/2-using-formulas" target="_blank">Using Formulas</a>
