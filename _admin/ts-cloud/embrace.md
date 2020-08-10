@@ -86,16 +86,6 @@ The following matrix compares the specific function support across the different
 <td>&check;</td>
 <td>&cross;</td>
 </tr>
-<tr>
-<td><code>MEDIAN</code></td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td><code>PERCENTILE</code></td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
 </tbody>
 </table>
 
@@ -131,16 +121,6 @@ The following matrix captures the specific data type support limitations across 
       <td><code>GEOMETRY</code></td>
       <td>&check;</td>
       <td>&cross;</td>
-    </tr>
-    <tr>
-      <td><code>BYTES</code></td>
-      <td>&check;</td>
-      <td>&check;</td>
-    </tr>
-    <tr>
-      <td><code>DATETIMEOFFSET</code></td>
-      <td>&check;</td>
-      <td>&check;</td>
     </tr>
   </tbody>
 </table>
