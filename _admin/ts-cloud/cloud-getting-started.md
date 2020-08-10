@@ -1,5 +1,5 @@
 ---
-title: [Getting Started with ThoughtSpot Cloud]
+title: [ThoughtSpot Cloud free trial]
 last_updated: 5/27/2020
 summary: "Information about features of the free trial, and how to sign up."
 toc: false

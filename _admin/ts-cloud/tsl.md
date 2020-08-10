@@ -731,12 +731,6 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <dd>A conditional formatting rule.</dd>
   </dlentry>
 
-  <dlentry id="search_iq_preferred">
-    <dt>search_iq_preferred</dt>
-    <dd>Specifies whether the column is enabled for SearchIQ. Specify <code>TRUE</code> or <code>FALSE</code>.<br>
-    Refer to <a href="{{ site.baseurl }}/end-user/search/searchiq-optimize-columns.html">Enable columns for SearchIQ</a>.</dd>
-  </dlentry>
-
   <dlentry id="search_query">
     <dt>search_query</dt>
     <dd>A string that represents the fully disambiguated search query. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
