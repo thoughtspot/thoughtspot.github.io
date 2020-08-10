@@ -29,6 +29,7 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Blob Stor
      * [Time delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-time-delimiter)<br/>Specifies the character used as separate the time components.
      * [Skip trailer rows]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-skip-trailer-rows)<br/>Skip the number of trailer rows specified while loading the data<br/>Optional field.
      * [TS load options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-ts-load-options)<br/>Specify the parameters passed with the <code>tsload</code> command, in addition to the commands already included by the application.
+     * [Boolean representation]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-boolean-representation)<br/>Specifies the representation of data in the boolean field.
 
      See [Sync properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#sync-properties) for details, defaults, and examples.
 
