@@ -1,13 +1,13 @@
 ---
 title: [Authentication through Active Directory integration]
 last_updated: 7/24/2020
-summary: ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server.
 toc: true
+summary: ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can use ThoughtSpot's integration with Active Directory for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/admin-portal/authentication-local.html) is enabled. You can also configure integration with LDAP through Active Directory, allowing you to authenticate users against an LDAP server.
+You can use ThoughtSpot's integration with Active Directory for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/admin-portal/authentication-local.html) is enabled. You can also configure integration with LDAP through Active Directory, allowing you to authenticate users against an LDAP server. ThoughtSpot does not support any other LDAP authentication.
 
 You can configure the Active Directory integration through the Admin Portal.
 
@@ -63,3 +63,6 @@ If AD servers are behind a load balancer, you must procure the SSL certificate t
 ## Configure Active Directory
 
 {% include content/admin-portal/authentication-active-directory.md %}
+
+## Next steps
+Next, [sync users and groups from LDAP through Active Directory]({{ site.baseurl }}/admin/setup/sync-users-and-groups-from-ldap.html).

@@ -2,6 +2,8 @@ You can use ThoughtSpot's integration with SAML for user authentication. By defa
 
 You can configure the SAML integration through the Admin Portal.
 
+{% include note.html content="If you configure authentication through SAML, you cannot also configure authentication through Active Directory." %}
+
 Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **SAML** from the side navigation bar that appears.
 
 ![Admin Portal - SAML]({{ site.baseurl }}/images/admin-portal-saml.png "Admin Portal - SAML")
@@ -22,3 +24,5 @@ Fill in the following parameters:
 If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/admin-portal/users.html).
 
 After you fill in all parameters, click **OK**.
+
+{% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. You must manually assign them to ThoughtSpot groups." %}
