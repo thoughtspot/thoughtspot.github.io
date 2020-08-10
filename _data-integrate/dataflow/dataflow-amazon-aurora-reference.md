@@ -17,6 +17,7 @@ Here is a list of the fields for an Amazon Aurora connection in ThoughtSpot Data
 <dlentry id="dataflow-amazon-aurora-conn-port"><dt>Port</dt><dd id="port-description">Specify the port associated with Amazon Aurora connections.</dd><dd id="port-required">Mandatory field.</dd><dd id="port-example"><strong>Example:</strong><br/>1234</dd></dlentry>
 <dlentry id="dataflow-amazon-aurora-conn-user"><dt>User</dt><dd id="user-description">Specify the user to connect to Amazon Aurora. This user must have data access privileges.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
 <dlentry id="dataflow-amazon-aurora-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User.</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
+<dlentry id="dataflow-amazon-aurora-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code></dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
 </dl>
 
 

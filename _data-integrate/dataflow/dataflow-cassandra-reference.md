@@ -35,6 +35,8 @@ Here is a list of the fields for a Cassandra connection in ThoughtSpot DataFlow.
 <dlentry id="dataflow-cassandra-conn-trust-store-password"><dt>Trust store password</dt><dd id="trust-store-password-description">Specify the password for the TLS/SSL client certificate.</dd><dd id="trust-store-password-required">Mandatory field.<br/>For SSL authentication only.</dd><dd id="trust-store-password-example"><strong>Example:</strong><br/>password</dd></dlentry>
 <dlentry id="dataflow-cassandra-conn-certificate-type"><dt>Certificate type</dt><dd id="certificate-type-description">Specify the type of key store containing the TLS/SSL client certificate.</dd><dd id="certificate-type-required">Mandatory field.<br/>For SSL authentication only.</dd><dd id="certificate-type-example"><strong>Example:</strong><br/>JKSFILE</dd></dlentry>
 <dlentry id="dataflow-cassandra-conn-certificate-subject"><dt>Certificate subject</dt><dd id="certificate-subject-description">Specify the subject of the TLS/SSL client certificate.</dd><dd id="certificate-subject-required">Mandatory field.<br/>For SSL authentication only.</dd><dd id="certificate-subject-example"><strong>Example:</strong><br/>CN=www.example.com</dd><dd id="certificate-subject-default"><strong>Default:</strong><br/>*</dd></dlentry>
+<dlentry id="dataflow-cassandra-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code>
+</dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
 </dl>
 
 

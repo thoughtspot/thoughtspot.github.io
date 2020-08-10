@@ -17,7 +17,9 @@ Here is a list of the fields for an SAP HANA connection in ThoughtSpot DataFlow.
 <dlentry id="dataflow-sap-hana-conn-port"><dt>Port</dt><dd id="port-description">Specify the port associated with the SAP HANA system</dd><dd id="port-required">Mandatory field.</dd><dd id="port-example"><strong>Example:</strong><br/>1234</dd></dlentry>
 <dlentry id="dataflow-sap-hana-conn-user"><dt>User</dt><dd id="user-description">Specify the user id that will be used to connect to the SAP HANA system. This user should have necessary privileges to access the data in the databases.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
 <dlentry id="dataflow-sap-hana-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
-<dlentry id="dataflow-sap-hana-conn-database"><dt>Database</dt><dd id="database-description">Collection of information that is organized so that it can be easily accessed, managed and updated.</dd><dd id="database-required">Mandatory field.</dd><dd id="database-example"><strong>Example:</strong><br/>SYSTEMDB</dd></dlentry></dl>
+<dlentry id="dataflow-sap-hana-conn-database"><dt>Database</dt><dd id="database-description">Collection of information that is organized so that it can be easily accessed, managed and updated.</dd><dd id="database-required">Mandatory field.</dd><dd id="database-example"><strong>Example:</strong><br/>SYSTEMDB</dd></dlentry>
+<dlentry id="dataflow-sap-hana-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code></dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
+</dl>
 
 ## Sync properties
 
