@@ -43,8 +43,6 @@ collections:
     output: true
   data-integrate:
     output: true
-  disaster-recovery:
-    output: true
   end-user:
     output: true
   error-codes:
