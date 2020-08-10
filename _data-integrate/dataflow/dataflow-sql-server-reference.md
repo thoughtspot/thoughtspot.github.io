@@ -19,8 +19,8 @@ Here is a list of the fields for an SQL Server connection in ThoughtSpot DataFlo
 <dlentry id="dataflow-sql-server-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
 <dlentry id="dataflow-sql-server-conn-instance"><dt>Instance</dt><dd id="instance-description">Specify an instance with all SQL Server databases run by a single SQL Server service</dd><dd id="instance-required">Optional field.</dd><dd id="instance-example"><strong>Example:</strong><br/>diazsql </dd><dd id="instance-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
 <dlentry id="dataflow-sql-server-conn-version"><dt>Version</dt><dd id="version-description">Specify the SQL Server version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>2016</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
-<dlentry id="dataflow-sql-server-sync-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]
-</dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry></dl>
+<dlentry id="dataflow-sql-server-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code></dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
+</dl>
 
 ## Sync properties
 

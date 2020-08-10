@@ -17,7 +17,10 @@ Here is a list of the fields for a Netezza connection in ThoughtSpot DataFlow. Y
 <dlentry id="dataflow-netezza-conn-port"><dt>Port</dt><dd id="port-description">Specify the port associated to the Netezza system</dd><dd id="port-required">Mandatory field.</dd><dd id="port-example"><strong>Example:</strong><br/>1234</dd></dlentry>
 <dlentry id="dataflow-netezza-conn-user"><dt>User</dt><dd id="user-description">Specify the user id that will be used to connect to the Netezza system. This user should have necessary privileges to access the data in the databases.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
 <dlentry id="dataflow-netezza-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
-<dlentry id="dataflow-netezza-conn-version"><dt>Version</dt><dd id="version-description">Specify the Netezza version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>7.x</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced Configuration</dd></dlentry></dl>
+<dlentry id="dataflow-netezza-conn-version"><dt>Version</dt><dd id="version-description">Specify the Netezza version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>7.x</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced Configuration</dd></dlentry>
+<dlentry id="dataflow-netezza-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code></dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
+
+</dl>
 
 ## Sync properties
 

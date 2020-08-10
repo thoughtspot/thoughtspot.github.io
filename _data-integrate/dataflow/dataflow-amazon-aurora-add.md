@@ -9,7 +9,6 @@ You can add a connection to an Amazon Aurora database using ThoughtSpot DataFlow
 
 Follow these steps:
 
-
 {% include content/dataflow/add-database-connection.md %}
 
 4. After you select the Amazon Aurora **Connection type**, the rest of the connection properties appear.
@@ -26,6 +25,7 @@ Follow these steps:
    * [Port]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-port)<br/>Specify the port associated with Amazon Aurora connections.
    * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-user)<br/>Specify the user to connect to Amazon Aurora. This user must have data access privileges.
    * [Password]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-password)<br/>Specify the password for the User.
+   * [JDBC options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-jdbc-options)<br/>Specify the options associated with the JDBC URL.
 
    See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#connection-properties) for details, defaults, and examples.
 

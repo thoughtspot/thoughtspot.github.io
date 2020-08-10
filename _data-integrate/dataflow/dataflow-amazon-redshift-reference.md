@@ -18,6 +18,7 @@ Here is a list of the fields for an Amazon Redshift connection in ThoughtSpot Da
 <dlentry id="dataflow-amazon-redshift-conn-user"><dt>User</dt><dd id="user-description">Specify the user to connect to Amazon Redshift. This user must have data access privileges.</dd><dd id="user-required">Mandatory field.</dd><dd id="user-example"><strong>Example:</strong><br/>userdi</dd></dlentry>
 <dlentry id="dataflow-amazon-redshift-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User.</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
 <dlentry id="dataflow-amazon-redshift-conn-database"><dt>Database</dt><dd id="database-description">Collection of information that is organized so that it can be easily accessed, managed and updated.</dd><dd id="database-required">Mandatory field.</dd><dd id="database-example"><strong>Example:</strong><br/>database</dd></dlentry>
+<dlentry id="dataflow-amazon-redshift-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/><code>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]</code></dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
 </dl>
 
 

@@ -27,7 +27,7 @@ To add a new connection to Snowflake, follow these steps:
    * [Warehouse]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-warehouse)<br/>Choose the warehouse of databases.
    * [Role]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-role)<br/>Specify the role that defines the set of privelleges assigned to a user or a user group.
    * [Keep connection alive]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-keep-connection-alive)<br/>Specify if system must force the user to log in again after a period of inactivity.<br/>&bull; When <code>TRUE</code>, Snowflake keeps the session active indefinitely, even if there is no user activity.<br/>&bull;  When set to <code>FALSE</code> user must log in after four hours of inactivity. Under **Advanced Options**.
-   * [JDBC options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-jdbc-options)<br/>Specify the options that should be used along with JDBC URL to connect to Snowflake<br/>Optional field. Under **Advanced Options**.
+   * [JDBC options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#dataflow-snowflake-conn-jdbc-options)<br/>Specify the options associated with the JDBC URL.
 
    See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-snowflake-reference.html#connection-properties) for details, defaults, and examples.
 
