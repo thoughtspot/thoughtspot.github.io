@@ -22,7 +22,7 @@ ThoughtSpot in Snowflake Partner Connect benefits:
 
   If you don't have an account, you can sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
 - Whitelist the **try.thoughtspot.com** IP address in your Snowflake account: `35.164.213.211`   
-- Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html).  
+- Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html#best-practices).  
 
 ## Sign up for the ThoughtSpot free trial in Snowflake Partner Connect
 
@@ -58,11 +58,10 @@ To sign up for the free trial, do the following:
 
 2. Click **Next**, to be guided, step-by-step, through the process of connecting ThoughtSpot to Snowflake, selecting and searching a data source, changing a chart configuration, and more.
 
-3. Once you finish the tutorials, you are ready to try out your own searches, chart configurations, pinboard filters, and more.
+3. After you finish the tutorials, you are ready to try out your own searches, chart configurations, Pinboard filters, and more.
 
 ## Related information
 
 - [ThoughtSpot Tutorials for Snowflake Partner Connect]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-tutorial.html)
-- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
-- [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
-- [Modify a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html)
+- [Embrace overview]({{ site.baseurl }}/admin/ts-cloud/embrace.html)
+- [Connect to Snowflake]({{ site.baseurl }}//admin/ts-cloud/ts-cloud-embrace-snowflake.html)
