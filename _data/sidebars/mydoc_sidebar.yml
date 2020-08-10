@@ -45,7 +45,7 @@ entries:
     - title: Use stickers to organize
       url: /end-user/stickers.html
       output: web,ugBk
-  - sectiontitle: What do you do?
+  - sectiontitle: How do use ThoughtSpot?
     output: web,ugBk
     sectionitems:
     - levelTwoTitle: Business Users

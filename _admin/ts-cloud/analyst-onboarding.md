@@ -63,5 +63,5 @@ Note that the progress bar informs you both how many steps you have completed, a
 
 ## Related information
 
-- [Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
-- [Present a pinboard]({{ site.baseurl }}/pinboards/start-a-slideshow.html)
+- [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-url.html)
+- [Present a pinboard]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html)

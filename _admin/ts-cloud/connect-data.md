@@ -28,7 +28,7 @@ Follow these steps to create a new Snowflake connection:
 
 4. On the **Snowflake connection details** interface, enter the information for your Snowflake data source.
 
-    Refer to the [Snowflake connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-reference.html#) for more information on each of the specific attributes you must enter for your connection.
+    See [Connect to Snowflake from ThoughtSpot Cloud]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html#connection-properties) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you must have to set up your connection to Snowflake:
 
@@ -65,7 +65,7 @@ Follow these steps to create a new Redshift connection:
 
 4. On the **Amazon Redshift connection details** interface, enter the information for your Redshift data source.
 
-    Refer to the [Redshift connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-reference.html) for more information on each of the specific attributes you must enter for your connection.
+    See [Connect to Amazon Redshift from ThoughtSpot Cloud]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html#connection-properties) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you must have to set up your connection to Redshift:
 
