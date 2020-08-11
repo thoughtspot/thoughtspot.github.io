@@ -120,53 +120,59 @@ entries:
       - levelThreeTitle: Connect to Snowflake
         output: web
         levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html
+          output: web
         - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#add-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html
           output: web
         - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#edit-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html
           output: web
         - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#remap-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html
           output: web
         - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#delete-table
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html
           output: web
         - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#delete-table-dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html
           output: web
         - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#delete-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
           output: web
         - title: Best practices
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#best-practices
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
           output: web
         - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html#connection-reference
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html
           output: web
       - levelThreeTitle: Connect to Amazon Redshift
         output: web
         levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html
+          output: web
         - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#add-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html
           output: web
         - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#edit-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-edit-connection.html
           output: web
         - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#remap-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-remap-connection.html
           output: web
         - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#delete-table
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-table.html
           output: web
         - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#delete-table-dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-table-dependencies.html
           output: web
         - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#delete-connection
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-connection.html
           output: web
         - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html#connection-reference
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
           output: web
     - levelTwoTitle: IT and Ops
       output: web
