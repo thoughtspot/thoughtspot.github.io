@@ -1,5 +1,5 @@
 ---
-title: ["Answer an expert question"]
+title: ["Answer Ask an expert question"]
 
 last_updated: 4/16/2019
 summary: "You're the expert. Now what? Here's how to answer a request from Ask an Expert."
@@ -39,5 +39,5 @@ When a user struggles to answer a specific question, build a chart they have in 
 
 ## Related information
 
--   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
+-   [View answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
 -   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)

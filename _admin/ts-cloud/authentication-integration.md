@@ -1,5 +1,5 @@
 ---
-title: [Authentication through SAML integration]
+title: [Managing authentication with SAML]
 last_updated: 5/28/2020
 summary: "ThoughtSpot integrates with SAML for authentication."
 sidebar: mydoc_sidebar

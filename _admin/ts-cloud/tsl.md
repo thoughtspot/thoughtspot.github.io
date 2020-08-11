@@ -440,7 +440,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="column_id">
     <dt>column_id</dt>
-    <dd>The <code>id</code> of the Worksheet or View column.<br> For Answers, <code>column_id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>column_id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>The <code>id</code> of the Worksheet or View column.<br> For Answers, <code>column_id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>column_id</code> of the column is <code>Quarter(Commit Date)</code>.</dd>
   </dlentry>
 
   <dlentry id="column_type">
