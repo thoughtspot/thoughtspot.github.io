@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 SpotApps let you examine your existing Salesforce, accounts receivable, and procurement data, using pre-built applications.
 
-When you first provision ThoughtSpot, you have to put in some work to load and model your data, and prepare it for your users. ThoughtSpot Cloud streamlines this process in several ways. You can create a connection to your data in Snowflake or Amazon Redshift, without bringing it into ThoughtSpot, through [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+When you first provision ThoughtSpot, you have to put in some work to load and model your data, and prepare it for your users. ThoughtSpot Cloud streamlines this process in several ways. You can create a connection to your data in Snowflake or Amazon Redshift, without bringing it into ThoughtSpot, through [Embrace]({{ site.baseurl }}/admin/ts-cloud/embrace.html).
 
 Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable applications, or SpotApps, which provide an easy way for you to start getting value from your data.
 

@@ -21,7 +21,7 @@ This is an example of a Pinboard you might create or view, as a member of a reta
 Notice that you can explore any visualization, follow any headline, or perform a number of other actions using the **more options menu** at the top right corner of a visualization ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 
 ### Using filters
-You can filter a Pinboard to only see the relevant data. Click the **ellipsis icon** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, next to the **Follow** and **Share** buttons. Select **Add filters**. Note that you need access to the underlying data source to be able to filter a Pinboard.
+You can filter a Pinboard to only see the relevant data. Click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, next to the **Follow** and **Share** buttons. Select **Add filters**. Note that you need access to the underlying data source to be able to filter a Pinboard.
 
 Choose a column to filter on, and select values to **include** or **exclude**.
 
@@ -43,16 +43,16 @@ You can drill down from within the **Answer Explorer** view in a Pinboard. This 
 ### Presenting
 Use the **Present** feature to present a Pinboard as a live slideshow with the latest data. You can answer questions instantly during your presentation by editing an Answer, drilling down, filtering a visualization, or using Answer Explorer.
 
-To present a Pinboard, click the **ellipsis icon** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Present**.
+To present a Pinboard, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Present**.
 
 Edit an Answer during a presentation by clicking the **edit** ![]({{ site.baseurl }}/images/icon-edit-10px.png){: .inline} icon that appears in the upper right corner when you move your mouse.
 
 ### Downloading
 You can download a Pinboard as a PDF, or as a [scriptable file]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for migration to another environment.
 
-To download a Pinboard, click the **ellipsis icon** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Download as PDF**. You can download the whole Pinboard, or just certain visualizations.
+To download a Pinboard, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Download as PDF**. You can download the whole Pinboard, or just certain visualizations.
 
-To export a scriptable file, click the **ellipsis icon** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Export as .tsl**. You can export Pinboard and the underlying data source, or Worksheet, or just the Pinboard.
+To export a scriptable file, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Export as .tsl**. You can export Pinboard and the underlying data source, or Worksheet, or just the Pinboard.
 
 ### Sharing Pinboards and Answers
 You can share Pinboards and Answers with other ThoughtSpot users and groups, and send them a notification email. See the following video for details.

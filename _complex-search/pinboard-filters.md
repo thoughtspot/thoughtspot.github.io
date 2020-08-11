@@ -34,7 +34,7 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
      ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
 

@@ -16,4 +16,4 @@ Watch this video on how to get started:
 <script src="https://fast.wistia.com/embed/medias/wykwdrk2em.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_wykwdrk2em popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
 ## Next steps
-Next, [confirm your datasource]({{ site.baseurl }}/admin/ts-cloud/business-user-datasource-confirm.html).
+Next, [confirm your data source]({{ site.baseurl }}/admin/ts-cloud/business-user-datasource-confirm.html).

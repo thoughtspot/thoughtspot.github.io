@@ -84,7 +84,7 @@ Follow these steps to create Worksheets:
     - **Change column type** default settings of numeric fields from measurement to attribute, when these numbers represent categorical information instead of measurements that are aggregated.
     - **Change aggregation** function for measurement columns. For example, columns that track life expectancy should use `AVERAGE` or `MAX`, and never use `SUM`.
 
-***Next***, you can proceed to [Visualize and save Search Results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html).
+***Next***, you can proceed to [Visualize Search results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html).
 
 
 ## Introduction to formulas

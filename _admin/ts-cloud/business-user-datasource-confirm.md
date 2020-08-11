@@ -1,5 +1,5 @@
 ---
-title: [Confirm datasource]
+title: [Confirm data source]
 last_updated: 5/29/2020
 toc: false
 summary: "Choose a data source to use to gain insights through Search."

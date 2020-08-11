@@ -60,7 +60,7 @@ entries:
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
-      - title: Data source
+      - title: Confirm data source
         url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
       - title: Select a Pinboard
