@@ -28,11 +28,9 @@ When you **fit to screen**, you see the whole chart. You can easily return to th
 
 Note that when you enable **fit to screen**, the **all labels** option is grayed out. You cannot turn on all labels when you **fit to screen**, unless the visualization does not have enough data points to require a scroll bar, and thus defaults to **fit to screen** mode.
 
-You can now have more than 40 legend items in your chart. If you attempt to [slice with color]({{ site.baseurl }}/end-user/search/drag-and-drop.html#slice-with-color) using a column that has more than 80 values, the recommended number of values, ThoughtSpot tells you to filter to reduce the number of values, or allows you to **render all**, if the number of values is under 250.
+You can now have more than 40 legend items in your chart. You can [slice with color]({{ site.baseurl }}/end-user/search/drag-and-drop.html#slice-with-color) using a column that has up to 250 values.
 
-![Render all, or filter to reduce number of values]({{ site.baseurl }}/images/cardinality-render-all.png "Render all or filter to reduce number of values")
-
-If you attempt to **slice with color** using a column that has more than 250 values, ThoughtSpot tells you to filter to reduce the number of values:
+If you attempt to **slice with color** using a column that has more than 250 values, ThoughtSpot does not display the chart. You receive this error message, telling you to filter to reduce the number of values:
 
 ![Filter to reduce number of values]({{ site.baseurl }}/images/cardinality-filter.png "Filter to reduce number of values")
 
