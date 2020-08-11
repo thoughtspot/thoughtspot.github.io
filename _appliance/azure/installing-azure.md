@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in Azure]
-last_updated: [5/13/2020]
+last_updated: [2/27/2020]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -18,7 +18,9 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 
 {: id="configure-nodes"}
 ## Configure Nodes
-After creating the instance, you must configure the nodes. Follow the steps in this checklist.
+After creating the instance, you must configure the nodes, one node at a time.
+
+Follow the steps in this checklist to configure each node.
 
 | &#10063; | [Step 1: Log in to your cluster](#node-step-1) |
 | &#10063; | [Step 2: Get a template for network configuration](#node-step-2) |
@@ -44,6 +46,9 @@ You can find more information on this process in the [`nodes.config` file refere
 
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
+
+{% include warning.html content="<em>DNS server</em> and <em>IP address</em> values must be set in the Azure cloud backend. It then populates them into the VM configuration. If you specify different values during this step, it can create a temporary mismatch and lead to connectivity issues." %}
+
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
     ```
     $ vim nodes.config
