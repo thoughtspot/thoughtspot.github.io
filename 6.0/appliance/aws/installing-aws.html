@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-11T12:10:35-07:00" />
+<meta property="article:published_time" content="2020-08-11T16:07:50-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Configure ThoughtSpot nodes in AWS”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Configure ThoughtSpot nodes in AWS”]","dateModified":"2020-08-11T12:10:35-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html","datePublished":"2020-08-11T12:10:35-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html"},"description":"Before you can install a ThoughtSpot cluster in AWS, you must configure your nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Configure ThoughtSpot nodes in AWS”]","dateModified":"2020-08-11T16:07:50-07:00","url":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html","datePublished":"2020-08-11T16:07:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/aws/installing-aws.html"},"description":"Before you can install a ThoughtSpot cluster in AWS, you must configure your nodes.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3724,7 +3724,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    5 minutes
+    6 minutes
   
 </span>
  -->
@@ -3792,6 +3792,8 @@ You can find more information on this process in the <a href="/6.0/appliance/har
 </code></pre></div></div>
 
 <h3 id="node-step-3">Step 3: Prepare node configuration</h3>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> <em>DNS server</em> and <em>IP address</em> values must be set in the cloud backend. It then populates them into the VM configuration. If you specify different values during this step, it can create a temporary mismatch and lead to connectivity issues.</div>
+
 <ol>
   <li>Add your specific network information for the nodes in the <code class="language-plaintext highlighter-rouge">nodes.config</code> file, as demonstrated in the <a href="/6.0/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example">autodiscovery of one node example</a>. Run <code class="language-plaintext highlighter-rouge">vim nodes.config</code> to edit the file.
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ vim nodes.config
