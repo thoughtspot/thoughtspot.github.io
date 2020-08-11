@@ -582,6 +582,9 @@ entries:
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
+    - title: Contact support
+      url: /end-user/help-center/contact.html
+      output: web,ugBk
   - sectiontitle: Administration
     output: web,admBk
     sectionitems:

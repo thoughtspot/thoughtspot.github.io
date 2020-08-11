@@ -34,7 +34,7 @@ It also changes the language of the **back** and **next** buttons. It does not c
 ## Hide the Getting Started menu
 After you go through the navigation overview and watch the short videos, you may want to hide the **Getting Started** sidebar.  
 
-**Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+**Hide Getting Started Menu** shows you how to hide the Getting Started sidebar for an individual user. If you want to hide it for your whole company, contact [ThoughtSpot Support]({{ site.baseurl }}/end-user/help-center/contact.html).
 
 ![Hide the Getting Started menu]({{ site.baseurl }}/images/gettingstarted-hide.png "Hide the Getting Started menu")
 <!--{% include image.html file="gettingstarted-hide.png" title="Hide the Getting Started menu" alt="Hide the Getting Started Menu from the help menu." caption="Hide the Getting Started menu" %}-->
