@@ -605,6 +605,8 @@ This subcommand has the following options:
 {: id="tscli-callhome"}
 ### callhome
 
+Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.
+
 ```
 tscli callhome [-h] {disable,enable,generate-bundle}
 ```
@@ -612,18 +614,17 @@ tscli callhome [-h] {disable,enable,generate-bundle}
 This subcommand has the following options:
 
 <dl>
-  <dlentry>
-    <dt><code>tscli callhome disable</code></dt>
-    <dd>Turns off the periodic call home feature.</dd></dlentry>
+<dlentry>
+  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+  <dd>
+    <p>Enables the callhome feature.</p>
+    <p>This feature is enabled by default.</p>
+    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+    </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
-    <dd>
-      <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
-      <p>This feature is enabled by default.</p>
-      <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
-      <p><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Statistics uploads occur daily.</div></p>
-      </dd></dlentry>
+    <dt><code>tscli callhome disable</code></dt>
+    <dd>Turns off the callhome feature.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
