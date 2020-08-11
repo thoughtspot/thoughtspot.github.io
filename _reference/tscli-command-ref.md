@@ -244,6 +244,8 @@ This subcommand has the following options:
 {: id="tscli-callhome"}
 ### callhome
 
+Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.
+
 ```
 tscli callhome [-h] {disable,enable,generate-bundle}
 ```
@@ -251,34 +253,34 @@ tscli callhome [-h] {disable,enable,generate-bundle}
 This subcommand has the following options:
 
 <dl>
+<dlentry>
+  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+  <dd>
+    <p>Enables the callhome feature.</p>
+    <p>This feature is enabled by default.</p>
+    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+    </dd></dlentry>
+
   <dlentry>
     <dt><code>tscli callhome disable</code></dt>
-    <dd>Turns off the periodic call home feature.</dd></dlentry>
+    <dd>Turns off the callhome feature.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome enable --customer_name <em>customer_name</em></code></dt>
-    <dd>
-      <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
-      <p>This feature is enabled by default.</p>
-      <p>The parameter <code>customer_name</code> takes the form  <code>Shared/<em>customer_name</em>/stats</code>.</p></dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli callhome generate-bundle  --d <em>directory</em> --since <em>DAYS</em></code></dt>
-    <dd>
-      <p>These are the parameters:</p>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
       <dl>
         <dlentry>
-          <dt><code>--d D</code></dt>
+          <dt><code>--d <em>D</em></code></dt>
           <dd><p>Destination folder for the tar file.</p>
             <p>There is no default setting.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--since <em>DAYS</em></code></dt>
+          <dt><code>--since <em>SINCE</em></code></dt>
           <dd>
-            <p>Grab <code>callhome</code> data from this time window in the past.</p>
-            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1day).</p>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
-      writes it to the specified directory, where  <code>DAYS</code> is how many days back the file must start.</p>
-            <p>The default setting is <code>7</code> days.</p></dd>
+      writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
             </dlentry>
             </dl>
             </dd>
