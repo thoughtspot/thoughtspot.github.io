@@ -22,7 +22,7 @@ In a custom calendar, you can set the following:
 ## Search features
 You can use your custom calendar to search the following ways:
 - Using date keywords, like `this quarter` and `q3`
-- Using date formulas with the `fiscal` option specified (See https://docs.thoughtspot.com/6.0/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
+- Using date formulas with the `fiscal` option specified See [fiscal and gregorian calendars]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)
 - Overriding the calendar used in the search bar by typing your custom calendar's name
 
 ## Limitations
@@ -39,7 +39,7 @@ To set up a custom calendar for your cluster, you must do the following:
 
 ### Enable the custom calendar feature
 
-To enable the custom calendar feature for your cluster, contact ThoughtSpot Support (See https://docs.thoughtspot.com/latest/admin/misc/contact.html).
+To enable the custom calendar feature for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/end-user/help-center/contact.html).
 
 ### Generate a calendar template
 
@@ -107,7 +107,7 @@ To use your edited calendar template as a custom calendar, you must upload it to
 
 ### (Optional) Set a custom calendar as the default calendar for your cluster
 
-To set your custom calendar as the default calendar for your cluster, contact ThoughtSpot Support (See https://docs.thoughtspot.com/latest/admin/misc/contact.html).
+To set your custom calendar as the default calendar for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/end-user/help-center/contact.html).
 
 ## Setting a worksheet, table or view to use your custom calendar
 

@@ -1,11 +1,11 @@
 ---
-title: [Authentication]
+title: [Managing local authentication]
 last_updated: 5/28/2020
 summary: "ThoughtSpot has robust local authentication, and integrates with SAML."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Local authentication is enabled by default in your ThoughtSpot Cloud environment. This means that any local user you [create]({{ site.baseurl }}/admin/ts-cloud/users.html) can log into ThoughtSpot with the specific ThoughtSpot credentials you set up for them when creating the user.
+Local authentication is enabled by default in your ThoughtSpot Cloud environment. This means that any local user you [create]({{ site.baseurl }}/admin/ts-cloud/users.html) can sign into ThoughtSpot with the specific ThoughtSpot credentials you set up for them when creating the user.
 
 If you disable local authentication, no local user can log into ThoughtSpot.
 

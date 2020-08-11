@@ -151,7 +151,7 @@ The following list captures the specific limitations across the different databa
 
 ## Next steps
 
--   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/embrace-snowflake-add.html)**  
+-   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Snowflake database.
--   **[Add a Redshift connection]({{ site.baseurl }}/admin/ts-cloud/embrace-redshift-add.html)**  
+-   **[Add a Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.

@@ -12,8 +12,8 @@ These are the main tasks you must complete to connect to your data.
   <li><p><a href="{{ "/admin/ts-cloud/embrace.html "| prepend: site.baseurl }}">About Embrace</a></p></li>
   <li><p><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake.html "| prepend: site.baseurl }}">Connect to Snowflake databases</a></p>
   <ol>
-    <li><a href="{{ "admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html "| prepend: site.baseurl }}">Add connection</a></li>
-    <li><a href="{{ "admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html "| prepend: site.baseurl }}">Edit connection</a></li>
+    <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html "| prepend: site.baseurl }}">Add connection</a></li>
+    <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html "| prepend: site.baseurl }}">Edit connection</a></li>
     <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html "| prepend: site.baseurl }}">Remap connection</a></li>
     <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html "| prepend: site.baseurl }}">Delete a table</a></li>
     <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html "| prepend: site.baseurl }}">Delete a table with object dependencies </a></li>

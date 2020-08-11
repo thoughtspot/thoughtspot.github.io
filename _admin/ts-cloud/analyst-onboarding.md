@@ -21,7 +21,7 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
   <div class="grid-child">
     <ol>
      <li>
-       <a href="{{ "/admin/ts-cloud/connect-data.html "| prepend: site.baseurl }}">Connect to your data</a>: learn how to connect ThoughtSpot to your live data in Snowflake or RedShift databases</li>
+       <a href="{{ "/admin/ts-cloud/connect-data.html "| prepend: site.baseurl }}">Connect to data</a>: learn how to connect ThoughtSpot to your live data in Snowflake or RedShift databases</li>
      <li>
        <a href="{{ "/admin/ts-cloud/tables-join.html "| prepend: site.baseurl }}">Join tables</a>: join the related tables in your database, to search across all your data</li>
      <li>
@@ -29,7 +29,7 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
      <li>
        <a href="{{ "/admin/ts-cloud/visualize-search.html "| prepend: site.baseurl }}">Visualize Search results as Answers</a>: search your data to get instant Answers as interactive tables and charts</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/pinboard-compose.html "| prepend: site.baseurl }}">Publish Answers in Pinboards</a>: collate all the Answers that support your use case in a single interactive and shareable Pinboard</li>
+       <a href="{{ "/admin/ts-cloud/pinboard-compose.html "| prepend: site.baseurl }}">Compose Pinboards from Answers</a>: collate all the Answers that support your use case in a single interactive and shareable Pinboard</li>
     </ol>
   </div>
 </div>  

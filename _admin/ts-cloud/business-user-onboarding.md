@@ -28,11 +28,11 @@ Here is a quick introduction to what you need to leverage ThoughtSpot as a busin
      <li>
        <a href="{{ "/admin/ts-cloud/business-user-get-started.html "| prepend: site.baseurl }}">Get started</a>: learn about one of the many methods for analyzing data in ThoughtSpot, through a Pinboard</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/business-user-datasource-confirm.html "| prepend: site.baseurl }}">Confirm your datasource</a>: get insights to this data source through Search</li>
+       <a href="{{ "/admin/ts-cloud/business-user-datasource-confirm.html "| prepend: site.baseurl }}">Confirm your data source</a>: get insights to this data source through Search</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/business-user-pinboard-select.html "| prepend: site.baseurl }}">Select Pinboard</a>: choose a Pinboard to follow or explore</li>
+       <a href="{{ "/admin/ts-cloud/business-user-pinboard-select.html "| prepend: site.baseurl }}">Select a Pinboard</a>: choose a Pinboard to follow or explore</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/business-user-pinboard-view.html "| prepend: site.baseurl }}">View the Pinboard</a>: explore valuable insights through Pinboards</li>   
+       <a href="{{ "/admin/ts-cloud/business-user-pinboard-view.html "| prepend: site.baseurl }}">Explore your Pinboard</a>: explore valuable insights through Pinboards</li>   
     </ol>
   </div>
 </div>    

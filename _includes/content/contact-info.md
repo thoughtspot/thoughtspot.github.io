@@ -1,4 +1,4 @@
-You can contact ThoughtSpot by [phone](#phone), [mail](#mail), [email](#email), or by [filing a support ticket](#file-ticket).
+You can contact ThoughtSpot by [phone](#phone), [email](#email), or by [filing a support ticket](#file-ticket).
 
 {: id="file-ticket"}
 ## File a support ticket

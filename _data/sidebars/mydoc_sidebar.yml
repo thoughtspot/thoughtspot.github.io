@@ -60,7 +60,7 @@ entries:
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
-      - title: Data source
+      - title: Confirm data source
         url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
       - title: Select a Pinboard
@@ -180,16 +180,16 @@ entries:
       - title: For IT and Ops
         url: /admin/ts-cloud/it-ops.html
         output: web
-      - title: User management
+      - title: Managing users
         url: /admin/ts-cloud/users.html
         output: web
-      - title: Group management
+      - title: Managing groups
         url: /admin/ts-cloud/groups.html
         output: web
-      - title: Local Authentication
+      - title: Managing local authentication
         url: /admin/ts-cloud/authentication-local.html
         output: web
-      - title: Authentication through SAML
+      - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
         output: web
   - sectiontitle: Search
@@ -228,10 +228,10 @@ entries:
       - title: Manage Ask an Expert requests
         url: /end-user/search/monitor-expert.html
         output: web,ugBk
-      - title: Retrieve Ask an Expert answers
+      - title: View Ask an Expert answers
         url: /end-user/search/retrieve-expert-answer.html
         output: web,ugBk
-      - title: Answer an Ask an Expert question
+      - title: Answer Ask an Expert question
         url: /end-user/search/answer-expert-question.html
         output: web,ugBk
       - title: Results that are tables
@@ -581,6 +581,9 @@ entries:
     sectionitems:
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
+      output: web,ugBk
+    - title: Contact support
+      url: /end-user/help-center/contact.html
       output: web,ugBk
   - sectiontitle: Administration
     output: web,admBk
