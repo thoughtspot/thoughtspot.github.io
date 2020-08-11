@@ -20,6 +20,8 @@ You can find more information on this process in the [`nodes.config` file refere
 
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
+{% include warning.html content="<em>DNS server</em> and <em>IP address</em> values must be set in the cloud backend. It then populates them into the VM configuration. If you specify different values during this step, it can create a temporary mismatch and lead to connectivity issues." %}
+
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
     ```
     $ vim nodes.config
