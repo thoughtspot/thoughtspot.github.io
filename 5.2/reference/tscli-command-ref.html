@@ -125,11 +125,11 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-16T17:17:59-07:00" />
+<meta property="article:published_time" content="2020-08-11T12:05:14-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/tscli-command-ref.html"},"url":"https://docs.thoughtspot.com/5.2/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2020-07-16T17:17:59-07:00","datePublished":"2020-07-16T17:17:59-07:00","description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/tscli-command-ref.html"},"url":"https://docs.thoughtspot.com/5.2/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2020-08-11T12:05:14-07:00","datePublished":"2020-08-11T12:05:14-07:00","description":"The tscli command line interface is an administration interface for the ThoughtSpot instance. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3397,40 +3397,47 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code> for 
 
 <h3 id="callhome">callhome</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle} ...
+<p>Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle}
 </code></pre></div></div>
 
-<p>Use this subcommand to do the following:</p>
+<p>This subcommand has the following options:</p>
 
-<ul>
-  <li><code class="highlighter-rouge">tscli callhome disable</code> Turns off the periodic call home feature.</li>
-  <li>
-    <p><code class="highlighter-rouge">tscli callhome enable --customer_name</code> <em><code class="highlighter-rouge">customer_name</code></em>`</p>
+<dl>
+<dlentry>
+  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+  <dd>
+    <p>Enables the callhome feature.</p>
+    <p>This feature is enabled by default.</p>
+    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+    </dd></dlentry>
 
-    <p>Enables the “call home” feature, which sends usage statistics to ThoughtSpot
-  This feature is enabled by default.</p>
+  <dlentry>
+    <dt><code>tscli callhome disable</code></dt>
+    <dd>Turns off the callhome feature.</dd></dlentry>
 
-    <p>The parameter <em><code class="highlighter-rouge">customer_name</code></em> takes the form  <code class="highlighter-rouge">Shared/*`customer_name`*/stats</code>.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">tscli callhome generate-bundle</code>   –d <em><code class="highlighter-rouge">directory</code></em> <code class="highlighter-rouge">--since</code> <em><code class="highlighter-rouge">DAYS</code></em></p>
-
-    <ul>
-      <li><code class="highlighter-rouge">--d D</code> Dest folder where tar file will be created. (default: None)</li>
-      <li>
-        <p><code class="highlighter-rouge"> --since</code>  <em><code class="highlighter-rouge">DAYS</code></em></p>
-
-        <p>Grab callhome data from this time window in the past. Should be a human
- readable duration string, e.g. <code class="highlighter-rouge">4h</code> (4 hours), <code class="highlighter-rouge">30m</code> (30 minutes), <code class="highlighter-rouge">1d</code> (1
- day). (default: None) Generates a tar file of the cluster metrics and
- writes it to the specified directory where  <em><code class="highlighter-rouge">DAYS</code></em> is how far back you’d
- like to generate the tar file from in days. For example, <code class="highlighter-rouge">30</code>. If this
- parameter is not specified, the command will collect the stats from the
- last <code class="highlighter-rouge">7</code> days by default.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
+  <dlentry>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
+      <dl>
+        <dlentry>
+          <dt><code>--d <em>D</em></code></dt>
+          <dd><p>Destination folder for the tar file.</p>
+            <p>There is no default setting.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--since <em>SINCE</em></code></dt>
+          <dd>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+            <p>This option generates a <code>tar</code> file of the cluster metrics and
+      writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
+            </dlentry>
+            </dl>
+            </dd>
+  </dlentry>
+</dl>
 
 <h3 id="cassandra">cassandra</h3>
 
@@ -4446,7 +4453,7 @@ nodes. (default: None)</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jul 16, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 11, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
