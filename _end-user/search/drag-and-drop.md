@@ -14,15 +14,18 @@ You can only add attributes to the X axis, and measures to the Y axis. If you ca
 You can also drop attributes and measures to the **not visualized** section. This removes them from the visualization, but not from your search. Move items to the **not visualized** section either by dragging and dropping them, or by clicking the **x** that appears when you hover over an attribute or measure.
 
 {: id="slice-with-color"}
-You can also drag and drop attributes into the **slice with color** section, which appears for certain chart types, such as column or bar charts, if you have more than one measure in a search. **Slicing with color** enables you to separate data already sorted by an attribute into subcategories, based on another attribute in your search. In the following example, we sliced `sales` for each `department` by `store region`.
+You can also drag and drop attributes into the **slice with color** section, which appears for certain chart types, such as column or bar charts, if you have more than one measure in a search. **Slicing with color** enables you to separate data already sorted by an attribute into subcategories denoted by color, based on another attribute in your search. In the following example, we sliced `sales` for each `department` by `store region`.
 
 ![Slice with color]({{ site.baseurl }}/images/chartconfig-customizemenu.png "Slice with color")
 
-To drag and drop columns to the correct axis, or to the **slice with color** section, follow these steps:
+{: id="slice-scatter-bubble"}
+You can also drag and drop attributes into the **slice** section, which only appears for [scatter]({{ site.baseurl }}/end-user/search/about-scatter-charts.html) and [bubble charts]({{ site.baseurl }}/end-user/search/about-bubble-charts.html). It allows you to break up data based on an additional column in your data. For scatter and bubble charts, you can both **slice** and **slice with color**.
+
+To drag and drop columns to the correct axis, or to the **slice with color** or **slice** section, follow these steps:
 
 1. Click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
 
-2. Drag and drop a measure or attribute from the **not visualized** section to the correct axis, or from an axis to the **not visualized** section. You can also move something to the **not visualized** section by clicking the **x** that appears when you hover over an attribute or measure. Or, drag an attribute to the **slice with color** section. 
+2. Drag and drop a measure or attribute from the **not visualized** section to the correct axis, or from an axis to the **not visualized** section. You can also move something to the **not visualized** section by clicking the **x** that appears when you hover over an attribute or measure. Or, drag an attribute to the **slice with color** or **slice** section.
 
    ![Configure x and y axis]({{ site.baseurl }}/images/chart-config-not-visualized.gif "Configure x and y axis")
 

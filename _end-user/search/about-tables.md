@@ -81,8 +81,15 @@ To change the number formatting:
 ## Sort columns
 
 You can sort a table by column values by clicking on the column title. If you
-hold down the SHIFT key you can click multiple heads and sort on them in
-turn.
+hold down the SHIFT key, you can sort on multiple column titles at a time. This is especially useful for date columns. For example, if you search for `sales` by `week` and by `quarter`,  and just sort the `quarterly` column, the weeks are not in order:
+
+![Sort - quarterly]({{ site.baseurl }}/images/sort-one-column.png "Sort - quarterly")
+
+If you press SHIFT and then click on the `weekly` column header, the weeks are in order, by quarter:
+
+![Sort - weekly]({{ site.baseurl }}/images/sort-two-columns.png "Sort - weekly")
+
+You can achieve this from the search bar, as well, by adding `sort by date quarterly` and `sort by date weekly`.
 
 {% include tip.html content="This same functionality is available on tables you
 see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also
