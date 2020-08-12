@@ -14,4 +14,4 @@ If you select **yes** for **SSL required**, ThoughtSpot prompts you to enter the
 
 After you add all your information, click **OK**.
 
-{% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. You must manually assign them to ThoughtSpot groups." %}
+{% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>." %}
