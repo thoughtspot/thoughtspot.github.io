@@ -389,7 +389,7 @@ When you see an error code, you will also see a message with a brief summary of 
 |TS-12711|ERROR|Configuration information unavailable.|None|None|
 |TS-12712|ERROR|There are too many recipients.|The max number of recipients is 1000.|None|
 |TS-12713|ERROR|Attachment size limit exceeded.|None|None|
-|TS-12714|ERROR|Recipient domain is not whitelisted.|None|None|
+|TS-12714|ERROR|Recipient domain is not on your list of allowed domains.|None|None|
 
 ## More Metadata Errors (13000 - 13099)
 
