@@ -58,7 +58,7 @@ volume. To find out, use the `telnet` command.
 ## Configure and test your shared volume
 
 Your shared volume should have a minimum of 15GB free and at least 20GB for a
-full backup. Do the following to configure and mount the shared volume.
+full backup. To configure and mount the shared volume on the primary and mirror appliances, complete the following steps:
 
 1. SSH into the primary appliance.
 
@@ -67,7 +67,7 @@ full backup. Do the following to configure and mount the shared volume.
    The primary appliance contains the cluster you are protecting with the
    recovery plan.
 
-3. Create a directory to act as your  _<mount_point>_.
+3. Create a directory to act as your _mount_point_.
 
    ```
    sudo mkdir <mount_point>
@@ -78,9 +78,9 @@ full backup. Do the following to configure and mount the shared volume.
    ```
    sudo chown -R admin:admin <mount_point>
    ```
-5.  Use the `tscli nas` subcommand to create a NAS is mount on all of the cluster nodes.
+5.  Use the `tscli nas` subcommand to create a NAS mount on all of the cluster nodes. Run `tscli nas mount-nfs` or `tscli nas mount-cifs`.
 
-    Use the command-line help or the documentation to view all the [nas subcommand]({{ site.baseurl }}/reference/tscli-command-ref.html#nas) options. Below are some samples to help you:
+    Use the command-line help (`tscli nas -h`) or the documentation to view all the [nas subcommand options]({{ site.baseurl }}/reference/tscli-command-ref.html#nas). Below are some samples to help you:
 
     <table>
     <tr>
@@ -100,13 +100,13 @@ full backup. Do the following to configure and mount the shared volume.
     </tr>
     </table>
 
-8. Log in to the target machine.
-9. Ensure that the target machine is not running a ThoughtSpot cluster.
+8. Log into the target machine.
+9. Ensure that the target machine is running a ThoughtSpot cluster.
 
-   If a cluster is running on the target machine, contact please contact
-   ThoughtSpot Support to delete the cluster.
+   If a cluster is not running on the target machine, [contact
+   ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to create a cluster.
 
-10. Ensure you have the `tscli` command on the target appliance.
+10. Ensure that you have `tscli` on the target appliance.
 11. Repeat steps 3-5 on the target machine.
 
     The target machine and the primary machine should both be accessing the
