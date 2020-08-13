@@ -37,7 +37,7 @@ To edit a Redshift connection:
 
 5. Expand the database table drop-down menu, and select the tables and columns you want to add.
 
-    ![Select tables and columns]({{ site.baseurl }}/images/redshift-edittables.png "Select tables and columns")
+    ![Select tables and columns]({{ site.baseurl }}/images/teradata-edittables.png "Select tables and columns")
    <!-- ![]({{ site.baseurl }}/images/connection-update.png "Edit connection dialog box") -->
 
 6. Click **Update**, and then click **Confirm** to save the updated connection detail.
