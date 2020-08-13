@@ -43,16 +43,20 @@ To set up a relay host:
 
 4. Verify that email is working.
 
+{: id="configure-email"}
 ### Configure an email to receive alerts
 
-ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts are sent. You should add an email to receive alerts by issuing:
+ThoughtSpot sends alerts to the email address specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
+
+{% include note.html content="Add the ThoughtSpot Support alert email, <code>prod-alerts@thoughtspot.com</code>, to allow ThoughtSpot Support to receive alerts. ThoughtSpot Support monitors these alerts to ensure your cluster's health. Do not add this email to POC or demo environments." %}
 
 ```
-$ tscli monitoring set-config --email <your_email>
+$ tscli monitoring set-config --email <prod-alerts@thoughtspot.com>,<your_email>
 ```
 
 To send to multiple emails, provide a comma-separated list with no spaces.
 
+{: id="verify-email"}
 ### Verify the relay with an email
 
 Check if the email settings are working properly by using this procedure.
@@ -68,3 +72,5 @@ Check if the email settings are working properly by using this procedure.
 
 {: id="admin-portal"}
 {% include content/admin-portal/smtp-configure.md %}
+
+After you configure SMTP through the Administration Portal, use `tscli` to [configure an email to receive monitoring alerts](#configure-email) and [verify the relay with an email](#verify-email).
