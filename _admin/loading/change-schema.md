@@ -116,7 +116,7 @@ You can use these steps to do any of these operations:
 
 -   shard a table that was previously replicated.
 -   change a replicated table to a sharded table.
--   change the number of shards to use for a sharded table.
+-   change the number of shards to use for a sharded table. This is useful if the size of your cluster has increased.
 
 To change the sharding on a table:
 
@@ -148,6 +148,8 @@ To change the sharding on a table:
            SET FACT PARTITION BY HASH (96)
            KEY ("productID");
         ```
+
+        {% include note.html content="When you re-shard the table, the system re-shards all the existing data. You do not need to force reload." %}
 
 4. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
 5. Delete the snapshot you created earlier using the command:
