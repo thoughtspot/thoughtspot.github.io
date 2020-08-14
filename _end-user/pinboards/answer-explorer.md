@@ -1,7 +1,7 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 7/9/2020
+last_updated: 8/14/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -32,6 +32,8 @@ Use **Filters** to narrow down your search result to only include the data you w
 
 {% include note.html content="In Answer Explorer, you can only filter on <strong>attribute</strong> columns, not <strong>measures</strong>." %}
 
+### Add your own filters
+
 If you want to filter on a column value that Answer Explorer did not suggest, you can add your own filter, using the **Filters** search bar.
 
 1. Click on the search bar under **Add your own**.
@@ -56,6 +58,8 @@ Under the **add** tab, add attributes or measures to visualize your data with mo
 
 ![Add attributes or measures]({{ site.baseurl }}/images/explore-add-measure.png "Add attributes or measures")
 
+### Add your own attributes or measures
+
 If you want to add an attribute or measure that Answer Explorer did not suggest, you can add your own, using the **Add column** search bar.
 
 1. Click on the search bar under **Add your own**.
@@ -67,6 +71,8 @@ If you want to add an attribute or measure that Answer Explorer did not suggest,
 Under the **replace** tab, replace one attribute or measure with another. For example, if your Answer has a time attribute, you can easily change from *monthly* to *quarterly*, and so on.
 
 ![Change time attribute]({{ site.baseurl }}/images/explore-replace-time.png "Change time attribute")
+
+### Choose your own attributes or measures to replace
 
 If you want to replace an attribute or measure that Answer Explorer did not suggest, you can choose your own, using the **Replace column** search bar.
 
@@ -83,6 +89,8 @@ If you want to replace an attribute or measure that Answer Explorer did not sugg
 Under the **compare** tab, you can easily perform a *versus* analysis. For example, Answer Explorer might suggest you compare your best- and worst-performing products, or one store region to another.
 
 ![Compare attribute values]({{ site.baseurl }}/images/explore-compare.png "Compare attribute values")
+
+### Choose your own values to compare
 
 If you want to compare values that Answer Explorer did not suggest, you can choose your own, using the **comparisons** search bar.
 
