@@ -48,7 +48,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>&nbsp;</dd></dlentry>
   <dlentry id="insights">
     <dt>Insights</dt>
-    <dd>Insights no longer appear on Home page and Pinboard by default, unless feature is turned on for the cluster.</dd></dlentry>  
+    <dd>Insights no longer appear on Home page and Pinboard by default, unless feature is turned on for the cluster. See <a href="{{"/end-user/introduction/about-navigating-thoughtspot.html#insights" | prepend: site.baseurl}}">Finding your way around, Insights</a>.</dd></dlentry>  
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
     <dd>This release introduces a more human-readable syntax, in addition to support for expanded ThoughtSpot support for more artifacts.
