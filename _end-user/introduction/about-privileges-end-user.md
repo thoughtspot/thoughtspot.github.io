@@ -1,8 +1,7 @@
 ---
 title: [Understanding privileges]
 last_updated: 07/31/2019
-summary: "The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership.
-"
+summary: "The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
