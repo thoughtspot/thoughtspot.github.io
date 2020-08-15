@@ -1,5 +1,5 @@
 ---
-title: [Add a Synapse connection]
+title: [Add an Azure Synapse connection]
 last_updated: 1/30/2020
 toc: true
 sidebar: mydoc_sidebar

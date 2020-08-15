@@ -1,5 +1,5 @@
 ---
-title: [Add a Redshift connection]
+title: [Add an Amazon Redshift connection]
 last_updated: 1/29/2020
 toc: true
 sidebar: mydoc_sidebar
