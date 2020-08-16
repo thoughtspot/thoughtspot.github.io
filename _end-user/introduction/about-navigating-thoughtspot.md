@@ -8,8 +8,6 @@ permalink: /:collection/:path.html
 ---
 These are the different sections in ThoughtSpot:
 
-![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
-
 ## Home
 
 Click the ThoughtSpot logo to go to the application home page. At the top of the

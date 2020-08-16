@@ -13,8 +13,6 @@ To search using SearchIQ, follow these steps:
 
 1. Click the ThoughtSpot search bar on the homepage or select **Search** from the top menu.
 
-   ![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
-
 2. Click the SearchIQ toggle button to go into SearchIQ mode.
 
    ![]({{ site.baseurl }}/images/choose_searchiq_on.png "SearchIQ toggle button")
