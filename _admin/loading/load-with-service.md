@@ -1,14 +1,14 @@
 ---
-title: [Use the tsload service to load data]
+title: [Use the tsload connector to load data]
 last_updated: 6/2/2020
-summary: "Learn how to load files using the tsload service."
+summary: "Learn how to load files using the tsload connector."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Another option for loading data in bulk, is to use the tsload service. The tsload service is a collection of APIs.
+Another option for loading data in bulk, is to use tsload connector. tsload connector is a collection of APIs.
 
 This page highlights the following:
-- Setting up your cluster to use the tsload service
+- Setting up your cluster to use tsload connector
 - Using the reference client for writing automated ETL jobs
 - Server and authentication details
 - API workflow inside the client
@@ -24,11 +24,11 @@ This page highlights the following:
 
 4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.
 
-5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to the service. Contact ThoughtSpot support for assistance with this step.
+5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to tsload connector. Contact ThoughtSpot support for assistance with this step.
 
-   {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to the service by default." %}
+   {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to tsload connector by default." %}
 
-6. Check if the **etl_http_server**, responsible for the tsload service, is accessible by pinging it:
+6. Check if the **etl_http_server**, responsible for tsload connector, is accessible by pinging it:
 <button id="ping-tsload" title="Copy" onclick="sayCopied(this.id)" type="button" class="btn btn-copy" data-clipboard-text="curl -i https://localhost:8442/ts_dataservice/v1/public/ping"><img class="copy-img"/>Copy &#128203;</button>
    ```
    curl -i https://localhost:8442/ts_dataservice/v1/public/ping
@@ -153,4 +153,4 @@ The typical workflow of the API inside the client is the following:
 
 ## Related information
 
-[tsload service API reference]({{ site.baseurl }}/reference/tsload-service-api-ref.html)   
+[tsload connector API reference]({{ site.baseurl }}/reference/tsload-service-api-ref.html)   
