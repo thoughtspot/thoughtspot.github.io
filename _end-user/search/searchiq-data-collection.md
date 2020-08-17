@@ -5,7 +5,7 @@ summary: "Learn what data SearchIQ collects about usage and language mappings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-**SearchIQ is in Beta.**
+**SearchIQ is in <span class="label label-beta">Beta</span>.**
 
 {% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
 

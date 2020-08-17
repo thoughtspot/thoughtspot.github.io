@@ -5,10 +5,9 @@ summary: "You can export an entire ThoughtSpot Answer in a flat-file format. Aft
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
 
 In ThoughtSpot, you can download Answers to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/tsl-answer.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
-
-{% include note.html content="Scriptability for Answers and Pinboards is in <strong>beta</strong>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support." %}
 
 This mechanism supports several scenarios that you may encounter:
 

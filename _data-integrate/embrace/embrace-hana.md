@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Embrace enables you to connect to SAP HANA databases, to use your data in ThoughtSpot.
+Embrace enables you to connect to SAP HANA <span class="label label-beta">Beta</span> databases, to use your data in ThoughtSpot.
 
 - [Add a connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-add.html)
 - [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-modify.html)

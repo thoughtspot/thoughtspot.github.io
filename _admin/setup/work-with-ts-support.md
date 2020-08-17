@@ -158,8 +158,7 @@ To designate the custom support contact, follow these steps:
 {: id="feedback contact"}
 ## Manage the feedback contact
 
-Users in ThoughtSpot may be asked for feedback for new or BETA features in the
-system. By default, feedback goes directly to ThoughtSpot support.
+Users in ThoughtSpot may be asked for feedback for new or <span class="label label-beta">Beta</span> features in the system. By default, feedback goes directly to ThoughtSpot support.
 
 Alternatively, and especially in cases of using ThoughtSpot in embedded mode, you can send feedback to someone in your company.
 
