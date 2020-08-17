@@ -120,8 +120,8 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
        <li id="sap-hana"><strong>SAP HANA</strong> <span class="label label-beta">Beta</span>
         <br/>We certify Embrace with SAP HANA Version 2.0 or later; see <a href="{{"/data-integrate/embrace/embrace-hana.html" | prepend: site.baseurl}}">SAP HANA connections in Embrace</a></li></ul></dd></dlentry>
   <dlentry id="tsload">
-    <dt>TSload connector for ETL tools; TSload as a service</dt>   
-    <dd>This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly, load your data into the ThoughtSpot Falcon database. For more information, see <a href="{{"/admin/loading/load-with-service.html" | prepend: site.baseurl}}">Use the tsload service to load data</a>.</dd></dlentry>
+    <dt>tsload connector for ETL tools</dt>   
+    <dd>This release introduces a new option for loading data in bulk, called tsload connector. The tsload connector is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="https://docs.thoughtspot.com/6.2/admin/loading/load-with-service.html">Use the tsload connector to load data</a>.</dd></dlentry>
 </dl>
 
 ### For the IT Ops Engineer
@@ -147,10 +147,6 @@ ThoughtSpot now supports charts and tables with more than 1000 data values. You 
 * You can have up to 250 distinct legend items on a chart.
 
 See [Charts and tables with a very large number of data values]({{ site.baseurl }}/end-user/search/high-cardinality.html).
-
-### Tsload as a service
-
-This release introduces a new option for loading data in bulk, called tsload as a service. The tsload service is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see [Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html).
 
 {: id="beta-program"}
 ## Beta Programs

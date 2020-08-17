@@ -1,6 +1,11 @@
 ## Configure SMTP through the Administration Portal
 
-To configure SMTP, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **SMTP** from the side navigation bar that appears.
+You can set up the relay host for SMTP from the Administration Portal.
+
+{% include note.html content="If you would like to use a custom port, rather than the default, port 25, you must configure SMTP using <code>tscli</code>." %}
+
+### Set up relay host
+Navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **SMTP** from the side navigation bar that appears.
 
 ![Admin Portal - SMTP]({{ site.baseurl }}/images/admin-portal-smtp.png "Admin Portal - SMTP")
 

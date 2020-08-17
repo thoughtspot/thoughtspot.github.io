@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 7/17/2020
+last_updated: 8/13/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -279,7 +279,7 @@ There are several best practices related to sharding.
         $ /usr/local/scaligent/release/bin/sharding_diagnostics.sh 
         ```
 
-    3. Adjust your sharding strategy appropriately.
+    3. Adjust your sharding strategy appropriately. See [Change sharding on a table]({{ site.baseurl }}/admin/loading/change-schema.html#change-sharding-on-a-table).
 
     Note that resharding automatically loads data into a new incarnation of the table you sharded. You do not need to reload the table's data.
 

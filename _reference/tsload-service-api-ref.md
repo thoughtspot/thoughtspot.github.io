@@ -1,6 +1,6 @@
 ---
-title: [tsload service API reference]
-summary: "The tsload service APIs enable you to load data into ThoughtSpot."
+title: [tsload connector reference]
+summary: "The tsload connector APIs enable you to load data into ThoughtSpot."
 last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -468,4 +468,4 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 ## Related information
 
-[Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html)
+[Use the tsload connector to load data]({{ site.baseurl }}/admin/loading/load-with-service.html)
