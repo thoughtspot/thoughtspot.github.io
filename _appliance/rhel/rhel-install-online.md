@@ -61,15 +61,15 @@ To set up the Ansible, follow these steps:
     </dlentry>
     <dlentry>
       <dt>ts-new.yaml</dt>
-      <dd>The Ansible Playbook for new installations.</dd>
+      <dd>The Ansible Playbook for new installations. Note that this is called <code>ts-rhel-new.yaml</code> in ThoughtSpot release 6.1. It is <code>ts-new.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
       <dt>ts-update.yaml</dt>
-      <dd>The Ansible Playbook for updates.</dd>
+      <dd>The Ansible Playbook for updates. Note that this is called <code>ts-rhel-update.yaml</code> in ThoughtSpot release 6.1. It is <code>ts-update.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
       <dt>ts.yaml</dt>
-      <dd></dd>
+      <dd>Note that this is called <code>ts-rhel.yaml</code> in ThoughtSpot release 6.1. It is <code>ts.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
       <dt>yum.repos.d</dt>
@@ -204,6 +204,7 @@ Refer to the ThoughtSpot documentation for the detailed steps to install the Tho
 
 Follow these general steps to install ThoughtSpot on the prepared hosts:
 
+1. Connect to the host as an admin user.
 1. Download the release artifact from the ThoughtSpot file sharing system.
 2. Upload the release artifact to the first host.
 3. Run the `tscli cluster create` command. This script prompts for user input.
