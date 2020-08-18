@@ -1,7 +1,5 @@
 ---
 title: [How to change a schema]
-
-
 last_updated: tbd
 summary: "After you've created a schema and loaded data, you may find yourself wishing you'd set things up a little differently. You can make changes to the schema, such as changing the primary key, relationships to other tables, and sharding."
 sidebar: mydoc_sidebar

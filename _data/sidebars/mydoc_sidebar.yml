@@ -2382,6 +2382,9 @@ entries:
     - title: Node failure
       url: /disaster-recovery/node-failure.html
       output: web,drgBk
+    - title: HA and resilience
+      url: /disaster-recovery/ha-resilience.html
+      output: web,drgBk
     - levelTwoTitle: Cluster replacement
       output: web,drgBk
       levelTwoItems:
