@@ -505,6 +505,9 @@ entries:
       - title: Performance considerations
         url: /admin/architecture/performance.html
         output: web,admBk
+      - title: In-memory data compression
+        url: /admin/architecture/data-compression.html
+        output: web,admBk
     - levelTwoTitle: Administration Portal
       output: web,admBk
       levelTwoItems:
