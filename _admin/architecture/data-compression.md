@@ -11,7 +11,9 @@ In release 6.2, ThoughtSpot added two new compression algorithms to the Dictiona
 
 These improvements to in-memory data compression may result in up to 20-50% compression of your in-memory data, reducing your cloud and appliance costs.
 
-In-memory data compression is turned on by default for release 6.2. If you upgrade from an older release to 6.2, this feature is ***not*** on by default. To enable it, or to find out if it could lower your data costs, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+In-memory data compression is turned on by default for new clusters on release 6.2. If you upgrade from an older release to 6.2, this feature is ***not*** on by default. After you upgrade to 6.2, ThoughtSpot compresses any new tables you create, but does not compress your existing tables. To enable compression of your existing in-memory data after you upgrade to 6.2, or to find out if it could lower your data costs, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+{% include note.html content="ThoughtSpot compresses <strong><em>only</em></strong> your fact tables, not your dimension tables." %}
 
 ## View your in-memory data compression information
 You can view compression ratios for your overall system, and for each table individually.
