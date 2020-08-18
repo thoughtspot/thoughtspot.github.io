@@ -22,6 +22,7 @@
 
     ![Warning: enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Warning: enable data access")
 
+    {: id="share-underlying-data"}
     If you own the underlying data source, you can enable access through the sharing dialog box. If you do not own the data source, ThoughtSpot emails the owner of the data source or your ThoughtSpot administrator to ask them to share the data.
 
     To enable access, select **Give view access to underlying data sources** at the bottom of the dialog box. You can click on the arrow to view the data sources.
@@ -40,6 +41,7 @@
 
 5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 
+    {: id="share-direct-link"}
     Note that sending users this link does not share the object with them. You must also share the object by clicking the **Share** button at the bottom of the dialog box.
 
     ![Share an object and send the link to users you shared with]({{ site.baseurl }}/images/share-copy-link.png "Share an object and send the link to users you shared with")
