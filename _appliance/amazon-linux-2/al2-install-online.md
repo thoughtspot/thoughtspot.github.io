@@ -210,6 +210,7 @@ Refer to [Install ThoughtSpot clusters in AWS]({{ site.baseurl }}/appliance/aws/
 
 Follow these general steps to install ThoughtSpot on the prepared hosts:
 
+1. Connect to the host as an admin user.
 1. Download the release artifact from the ThoughtSpot file sharing system.
 2. Upload the release artifact to the first host.
 3. Run the `tscli cluster create` command. This script prompts for user input.
