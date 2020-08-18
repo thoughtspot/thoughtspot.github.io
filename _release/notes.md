@@ -31,7 +31,12 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>&nbsp;</dd></dlentry>
   <dlentry id="high-caridnality">
     <dt>High cardinality</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>In this release, ThoughtSpot supports charts and tables with a very large number of data values, and shows how much of the data your chart or table displays.<br/>
+      <ul>
+        <li>Your search in table form can now have more than 1000 rows.</li>
+        <li>Your charts now come with a horizontal scroll bar, to support up to 35,000 data points.</li>
+        <li>You can have up to 250 distinct legend items on a chart.</li></ul>
+      <p>See <a href="{{"/end-user/search/high-cardinality.html#insights" | prepend: site.baseurl}}"Charts and tables with a very large number of data values</a>.</dd></dlentry>
   <dlentry id="keywords">
     <dt>New search keywords</dt>
     <dd>
@@ -137,16 +142,6 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dt>In-memory data compression</dt>
     <dd>&nbsp;</dd></dlentry>
 </dl>    
-
-### Charts and tables with a very large number of data values
-
-ThoughtSpot now supports charts and tables with more than 1000 data values. You can easily understand how much of the data your chart or table displays.
-
-* Your search in table form can now have more than 1000 rows.
-* Your charts now come with a horizontal scroll bar, to support up to 35,000 data points.
-* You can have up to 250 distinct legend items on a chart.
-
-See [Charts and tables with a very large number of data values]({{ site.baseurl }}/end-user/search/high-cardinality.html).
 
 {: id="beta-program"}
 ## Beta Programs
