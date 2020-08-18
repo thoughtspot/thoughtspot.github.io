@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 6/12/2020
+last_updated: 8/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -251,6 +251,7 @@ Refer to [Install ThoughtSpot clusters in AWS]({{ site.baseurl }}/appliance/aws/
 
 Follow these general steps to install ThoughtSpot on the prepared hosts:
 
+1. Connect to the host as an admin user.
 1. Download the release artifact from the ThoughtSpot file sharing system.
 2. Upload the release artifact to your organization's mirror repository.
 3. Run the `tscli cluster create` command. This script prompts for user input.
