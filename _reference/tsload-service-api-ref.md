@@ -468,4 +468,4 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 ## Related information
 
-[Use the tsload connector to load data]({{ site.baseurl }}/admin/loading/load-with-service.html)
+[Use the tsload connector to load data]({{ site.baseurl }}/admin/loading/load-with-tsload.html)

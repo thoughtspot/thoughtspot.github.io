@@ -121,7 +121,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
         <br/>We certify Embrace with SAP HANA Version 2.0 or later; see <a href="{{"/data-integrate/embrace/embrace-hana.html" | prepend: site.baseurl}}">SAP HANA connections in Embrace</a></li></ul></dd></dlentry>
   <dlentry id="tsload">
     <dt>tsload connector for ETL tools</dt>   
-    <dd>This release introduces a new option for loading data in bulk, called tsload connector. The tsload connector is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="https://docs.thoughtspot.com/6.2/admin/loading/load-with-service.html">Use the tsload connector to load data</a>.</dd></dlentry>
+    <dd>This release introduces a new option for loading data in bulk, called tsload connector. The tsload connector is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="{{"/admin/loading/load-with-tsload.html" | prepend: site.baseurl}}">Use the tsload connector to load data</a>.</dd></dlentry>
 </dl>
 
 ### For the IT Ops Engineer
