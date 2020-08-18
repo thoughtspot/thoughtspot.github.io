@@ -178,7 +178,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     </dd></dlentry>
   <dlentry  id="in-memory-data-compression">
     <dt>In-memory data compression</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>ThoughtSpot release 6.2 includes improvements to in-memory data compression. These improvements lower your RAM requirements and reduce the number of VMs you need for in-memory data, when deploying on a cloud platform. In release 6.2, ThoughtSpot added two new compression algorithms to the Dictionary compression that ThoughtSpot already supports. ThoughtSpot now supports <strong>LZ4</strong>, for <code>INT</code>, <code>BIGINT</code>, <code>DOUBLE</code>, and <code>FLOAT</code> data types, and <strong>RLE</strong>, for strings. See <a href="{{ site.baseurl }}/admin/architecture/data-compression.html">In-memory data compression</a> for more information. </dd></dlentry>
 </dl>    
 
 {: id="beta-program"}
