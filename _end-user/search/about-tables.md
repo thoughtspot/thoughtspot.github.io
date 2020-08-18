@@ -32,15 +32,21 @@ when you pin the table to a pinboard. To resize the column widths:
 
 {: id="clip-wrap-text"}
 ## Clip or wrap text
-You can clip or wrap long text in a table cell, or on a table header.
+You can clip or wrap long text in a table cell, or on a table header. You can configure clipped or wrapped text [for the entire table](#clip-entire-table), or [for each column individually](#clip-one-column).
 
 When you clip long text, the table cells show only the beginning of the text. The rest appears if you increase the column width.
 
 When you wrap long text, the table shows all the text in its cells by increasing the number of lines in the cells.
 
-To clip or wrap text, click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}. Select **Settings**. Under **text wrapping**, choose **wrap** or **clip**.
+{: id="clip-entire-table"}
+To clip or wrap text for the entire table, click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}. Select **Settings**. Under **text wrapping**, choose **wrap** or **clip**.
 
 ![Wrap or clip long text]({{ site.baseurl }}/images/table-config-text.gif "Wrap or clip long text")
+
+{: id="clip-one-column"}
+To clip or wrap text for each column individually, hover over the column name and click the **more options menu** icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}. Select **text wrapping,** and choose wrap or clip.
+
+![Clip or wrap an individual column]({{ site.baseurl }}/images/table-config-clip-individual-column.png "Clip or wrap an individual column")
 
 {: id="number-formatting"}
 ## Number formatting

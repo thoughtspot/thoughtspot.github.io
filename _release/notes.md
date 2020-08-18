@@ -25,11 +25,26 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <dl id='6-2-analyst'>
   <dlentry id="geomaps">
     <dt>Geomaps</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for these new locales:
+        <ul>
+          <li><strong>India</strong>: State, District, Postcode</li>
+          <li><strong>Portugal</strong>: District, Municipality, Postcode</li>
+          <li><strong>Italy</strong>: Improved regional name support</li>
+        </ul>
+          </dd></dlentry>
   <dlentry id="table-config">
     <dt>Table configuration</dt>
-    <dd>&nbsp;</dd></dlentry>
-  <dlentry id="high-caridnality">
+    <dd>This release introduces a more intuitive way to configure your tables, including these new features:
+        <ul>
+            <li><strong><a href="{{ site.baseurl }}/end-user/search/about-tables.html#rearrange-column-order">Drag and drop chips</a></strong> allow you to easily rearrange the order of the columns in your table</li>
+            <li><strong><a href="{{ site.baseurl }}/end-user/search/about-tables.html#clip-wrap-text">Clip or wrap text</a></strong> for the entire table from the <strong>Edit table: Settings</strong> menu, or by column from the column's <strong>more options menu</strong></li>
+            <li><strong><a href="{{ site.baseurl }}/end-user/search/about-tables.html#number-formatting">Number formatting</a></strong> for any table column based on a measure, allowing you to change the category (number, percentage, or currency), units (auto, none, thousand, million, billion, or trillion), or method of writing negative values (-1234, 1234-, or (1234))</li>
+            <li><strong><a href="{{ site.baseurl }}/end-user/search/about-tables.html#table-footer">Enable or disable the table footer</a></strong> from the <strong>Edit table: Settings</strong> menu</li>
+            <li><strong><a href="{{ site.baseurl }}/end-user/search/about-tables.html#column-summaries">Enable or disable column summaries</a></strong> from the <strong>Edit table: Settings</strong> menu</li>
+        </ul>
+      <p>For more information, see <a href="{{ site.baseurl }}/end-user/search/about-tables.html">Results that are tables</a>.</p>
+        </dd></dlentry>
+  <dlentry id="high-cardinality">
     <dt>High cardinality</dt>
     <dd>In this release, ThoughtSpot supports charts and tables with a very large number of data values, and shows how much of the data your chart or table displays.<br/>
       <ul>
@@ -53,16 +68,15 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>&nbsp;</dd></dlentry>
   <dlentry id="insights">
     <dt>Insights</dt>
-    <dd>Insights no longer appear on Home page and Pinboard by default, unless feature is turned on for the cluster. See <a href="{{"/end-user/introduction/about-navigating-thoughtspot.html#insights" | prepend: site.baseurl}}">Finding your way around, Insights</a>.</dd></dlentry>  
+    <dd>Insights no longer appear on Home page and Pinboard by default, unless that feature is turned on for the cluster. See <a href="{{"/end-user/introduction/about-navigating-thoughtspot.html#insights" | prepend: site.baseurl}}">Finding your way around, Insights</a>.</dd></dlentry>  
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
-    <dd>This release introduces a more human-readable syntax, in addition to support for expanded ThoughtSpot support for more artifacts.
+    <dd>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability.html">exporting and importing ThoughtSpot objects</a>. You can now export and import the following scriptable objects:
      <ul>
-      <li id="answers"><strong>Scriptability for Answers</strong>
-      <br/>&nbsp;</li>
-      <li id="pinboards"><strong>Scriptability for Pinboards</strong><br/>&nbsp;</li>
-      <li id="views"><strong>Scriptability for Views</strong><br/>&nbsp;</li>
-      <li id="filters"><strong>Scriptability for Filters</strong><br/>&nbsp;</li></ul>
+      <li><a href="{{ site.baseurl }}/admin/worksheets/worksheet-export.html">Worksheets with filters</a></li>
+      <li><a href="{{ site.baseurl }}/admin/scriptability/scriptability-answer.html">Answers</a> <span class="label label-beta">Beta</span></li>
+      <li><a href="{{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html">Pinboards</a> <span class="label label-beta">Beta</span></li>
+    </ul>
     </dd>
   </dlentry>
 </dl>    
@@ -72,10 +86,17 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <dl id="6-2-business-user">
   <dlentry id="growth-sharing">
     <dt>Growth: Sharing</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>Updates to <a href="{{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html">sharing</a> in 6.2 make the feature more intuitive, and remove moments of friction that can occur when sharing, or trying to access objects for which you have limited permissions.
+      <ul>
+        <li><strong><a href="{{ site.baseurl }}/end-user/pinboards/share-pinboards.html#share-viz">Share a specific visualization within a Pinboard</a></strong> so that the email link opens up to that visualization in Explore mode</li>
+        <li><strong><a href="{{ site.baseurl }}/end-user/pinboards/share-pinboards.html#share-direct-link">Copy a direct link to the Pinboard, Answer, or visualization within a Pinboard</a></strong> that you are sharing, so you can separately send that link to users after you share the object with them</li>  
+        <li><strong><a href="{{ site.baseurl }}/end-user/pinboards/request-access">Request access within a Pinboard or Answer</a></strong> if you need edit or underlying data access to the Pinboard or Answer</li>        
+        <li><strong><a href="{{ site.baseurl }}/end-user/pinboards/share-pinboards.html#share-underlying-data">Share underlying data access</a></strong> within the sharing modal if the user does not have data access</li>        
+      </ul>
+    </dd></dlentry>
   <dlentry id="answer-explorer">
     <dt>Answer Explorer v2</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>Updates to Answer Explorer in 6.2 allow users to add their own filters, comparisons, and measures and attributes to a visualization while in Explore mode. See <a href="{{ site.baseurl }}/end-user/pinboards/answer-explorer.html">Answer Explorer</a> for more information.</dd></dlentry>
   <dlentry id="mobile-android">
     <dt>Mobile for Android</dt>
     <dd>&nbsp;</dd></dlentry>
@@ -137,7 +158,24 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>This release of ThoughtSpot introduces deployment support for <a href="https://aws.amazon.com/amazon-linux-2/" target="_blank" >Amazon Linux 2</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{"/appliance/amazon-linux-2/al2-overview.html" | prepend: site.baseurl}}">Amazon Linux 2 Deployment Overview</a>.</dd></dlentry>
   <dlentry id="admin-portal">
     <dt>Admin Portal</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>This release of ThoughtSpot introduces the <a href="{{ site.baseurl }}/admin/admin-portal/admin-portal.html">Administration Portal</a>, providing you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot. You can accomplish the following tasks from the Administration Portal:
+    <ul>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/users.html">Manage ThoughtSpot users</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/groups.html">Manage ThoughtSpot groups</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/authentication-local.html">Manage local authentication</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/authentication-saml.html">Configure SAML authentication</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/authentication-active-directory.html">Configure LDAP authentication through Active Directory</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/ssl-configure.html">Configure SSL</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/reverse-ssh-tunnel.html">Configure a reverse SSH tunnel for Support</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/smtp-configure.html">Set the relay host for SMTP (email)</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/customize-help.html">Customize ThoughtSpot help</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/customize-actions-menu.html">Customize Answer actions menu</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/system-overview-pinboard.html">View System Overview Pinboard</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html">View System Cluster Pinboard</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">View System Alerts Pinboard</a></li>
+      <li><a href="{{ site.baseurl }}/admin/admin-portal/available-update.html">Monitor available cluster updates</a></li>
+    </ul>
+    </dd></dlentry>
   <dlentry  id="in-memory-data-compression">
     <dt>In-memory data compression</dt>
     <dd>&nbsp;</dd></dlentry>
