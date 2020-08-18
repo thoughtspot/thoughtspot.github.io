@@ -46,6 +46,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
   <dlentry id="subscribe-others">
     <dt>Monitor: Subscribe others</dt>
     <dd>&nbsp;</dd></dlentry>
+  <dlentry id="insights">
+    <dt>Insights</dt>
+    <dd>Insights no longer appear on Home page and Pinboard by default, unless feature is turned on for the cluster. See <a href="{{"/end-user/introduction/about-navigating-thoughtspot.html#insights" | prepend: site.baseurl}}">Finding your way around, Insights</a>.</dd></dlentry>  
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
     <dd>This release introduces a more human-readable syntax, in addition to support for expanded ThoughtSpot support for more artifacts.
@@ -103,13 +106,19 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <a href="{{"/data-integrate/dataflow/dataflow-google-cloud-storage.html" | prepend: site.baseurl}}">Google Cloud Storage</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd></dlentry>
   <dlentry id="embrace">
-    <dt>Embrace</dt>
-    <dd>
-    <ul>
-     <li id="teradata"><strong>Teradata</strong>
-     <br/>&nbsp;</li>
-     <li id="sap-hana"><strong>SAP HANA</strong>
-     <br/>&nbsp;</li></ul></dd></dlentry>
+    <dt>Embrace has new features and supports more data warehouses</dt>
+    <dd>In this release, Embrace includes the following new features:
+      <ul>
+        <li>Improved performance when creating or editing a connection.</li>
+        <li>Ability to remove columns in a connection.</li>
+        <li>Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.</li>
+        <li>A summary of tables/columns connected is now displayed as part of add/edit connection workflow.</li></ul>
+      <p>Starting with Release 6.2, ThoughtSpot Embrace connects to two more data warehouses:</p>
+      <ul>
+       <li id="teradata"><strong>Teradata</strong>
+        <br/>We certify Embrace with Teradata Vantage version 16.20 or later; see <a href="{{"/data-integrate/embrace/embrace-teradata.html" | prepend: site.baseurl}}">Teradata connections in Embrace</a></li>
+       <li id="sap-hana"><strong>SAP HANA</strong> <span class="label label-beta">Beta</span>
+        <br/>We certify Embrace with SAP HANA Version 2.0 or later; see <a href="{{"/data-integrate/embrace/embrace-hana.html" | prepend: site.baseurl}}">SAP HANA connections in Embrace</a></li></ul></dd></dlentry>
   <dlentry id="tsload">
     <dt>tsload connector for ETL tools</dt>   
     <dd>This release introduces a new option for loading data in bulk, called tsload connector. The tsload connector is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="https://docs.thoughtspot.com/6.2/admin/loading/load-with-service.html">Use the tsload connector to load data</a>.</dd></dlentry>
@@ -120,7 +129,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <dl id="6-2-it-ops-engineer">
   <dlentry id="amazon-linux-2">
     <dt>Amazon Linux 2 Deployment</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>This release of ThoughtSpot introduces deployment support for <a href="https://aws.amazon.com/amazon-linux-2/" target="_blank" >Amazon Linux 2</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{"/appliance/amazon-linux-2/al2-overview.html" | prepend: site.baseurl}}">Amazon Linux 2 Deployment Overview</a>.</dd></dlentry>
   <dlentry id="admin-portal">
     <dt>Admin Portal</dt>
     <dd>&nbsp;</dd></dlentry>
@@ -128,23 +137,6 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dt>In-memory data compression</dt>
     <dd>&nbsp;</dd></dlentry>
 </dl>    
-
-
-### Amazon Linux 2
-
-This release of ThoughtSpot introduces deployment support for [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank"}. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the [Amazon Linux 2 Deployment Overview]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html).
-
-### Embrace supports more data warehouses and new features
-
-Embrace now supports the following data warehouses:
-- Teradata (Vantage version 16.20 or later)
-- SAP HANA (version 2.0 or later) <span class="label label-beta">Beta</span>
-
-Embrace includes the following new features:
-- Improved performance when creating or editing a connection.
-- Ability to remove columns in a connection.
-- Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.
-- A summary of tables/columns connected is now displayed as part of add/edit connection workflow.
 
 ### Charts and tables with a very large number of data values
 

@@ -5,15 +5,13 @@ summary: "Use SearchIQ to do a natural language search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-**SearchIQ is in Beta.**
+SearchIQ is in <span class="label label-beta">Beta</span>.
 
 {% include note.html content="SearchIQ is turned off by default.ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
 
 To search using SearchIQ, follow these steps:
 
 1. Click the ThoughtSpot search bar on the homepage or select **Search** from the top menu.
-
-   ![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
 
 2. Click the SearchIQ toggle button to go into SearchIQ mode.
 

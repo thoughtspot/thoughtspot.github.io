@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify an Embrace SAP HANA connection in the following ways:
+You can modify an Embrace SAP HANA <span class="label label-beta">Beta</span> connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
 - Remove a column

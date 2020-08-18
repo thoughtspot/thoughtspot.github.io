@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Embrace is enabled, you can add a connection to an SAP HANA database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
+Once ThoughtSpot Embrace is enabled, you can add a connection to an SAP HANA <span class="label label-beta">Beta</span> database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
 To add a new connection to SAP HANA:
 

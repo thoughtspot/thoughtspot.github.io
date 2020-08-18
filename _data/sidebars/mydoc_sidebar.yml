@@ -1736,6 +1736,9 @@ entries:
     - levelTwoTitle: Snowflake
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-snowflake.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-snowflake-add.html
         output: web,embraceGd
@@ -1757,9 +1760,12 @@ entries:
         - title: Tutorials
           url: /data-integrate/embrace/embrace-snowflake-tutorial.html
           output: web,embraceGd
-    - levelTwoTitle: Redshift
+    - levelTwoTitle: Amazon Redshift
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-redshift.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-redshift-add.html
         output: web,embraceGd
@@ -1772,9 +1778,12 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-redshift-reference.html
         output: web,embraceGd
-    - levelTwoTitle: BigQuery
+    - levelTwoTitle: Google BigQuery
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-gbq.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-gbq-add.html
         output: web,embraceGd
@@ -1784,9 +1793,12 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-gbq-reference.html
         output: web,embraceGd
-    - levelTwoTitle: Synapse
+    - levelTwoTitle: Azure Synapse
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-synapse.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-synapse-add.html
         output: web,embraceGd
@@ -1799,6 +1811,9 @@ entries:
     - levelTwoTitle: Teradata
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-teradata.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-teradata-add.html
         output: web,embraceGd
@@ -1811,6 +1826,9 @@ entries:
     - levelTwoTitle: SAP HANA
       output: web,embraceGd
       levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-hana.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-hana-add.html
         output: web,embraceGd

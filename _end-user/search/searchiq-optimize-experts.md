@@ -5,7 +5,7 @@ summary: "It is useful to identify experts who can help with SearchIQ."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-**SearchIQ is in Beta.**
+SearchIQ is in <span class="label label-beta">Beta</span>.
 
 {% include note.html content="SearchIQ is turned off by default. ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
 

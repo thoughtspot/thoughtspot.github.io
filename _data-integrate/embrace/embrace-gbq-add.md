@@ -1,5 +1,5 @@
 ---
-title: [Add a BigQuery connection]
+title: [Add a Google BigQuery connection]
 last_updated: 1/30/2020
 toc: true
 sidebar: mydoc_sidebar

@@ -6,10 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 <div class="alert alert-info" role="alert">
- <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is in Beta</strong></p>
+ <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is <span class="label label-beta">Beta</span></strong></p>
  <ul type="square">
   <li>SearchIQ is only available in English.</li>
-  <li>The feature is off by default; to enable it, contact <a href="mailto:support@thoughtspot.com?subject=SearchIQ%20Reguest&body=I%20want%20to%20try%20SearchIQ">ThoughtSpot Support</a>.</li>
+  <li>SerchIQ is in <span class="label label-beta">Beta</span>, and off by default; to enable it, contact <a href="mailto:support@thoughtspot.com?subject=SearchIQ%20Reguest&body=I%20want%20to%20try%20SearchIQ">ThoughtSpot Support</a>.</li>
   <li>You must have the <strong>Can use experimental features</strong> permission.</li>
 </ul>
 </div>
