@@ -1,5 +1,5 @@
 ---
-title: [Google BigQuery connections in Embrace]
+title: [Google BigQuery overview]
 last_updated: 08/15/2020
 toc: true
 sidebar: mydoc_sidebar

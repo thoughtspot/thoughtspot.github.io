@@ -132,22 +132,24 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <a href="{{"/data-integrate/dataflow/dataflow-google-cloud-storage.html" | prepend: site.baseurl}}">Google Cloud Storage</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd></dlentry>
   <dlentry id="embrace">
-    <dt>Embrace has new features and supports more data warehouses</dt>
-    <dd>In this release, Embrace includes the following new features:
+    <dt>Embrace</dt>
+    <dd>In this release, Embrace supports two new data warehouses, and includes new features.
+    <p>New data warehouses:</p>
       <ul>
-        <li>Improved performance when creating or editing a connection.</li>
-        <li>Ability to remove columns in a connection.</li>
+      <li id="teradata"><strong>Teradata</strong>
+       <br/>Teradata Vantage version 16.20 or later is required. For more information, see <a href="{{"/data-integrate/embrace/embrace-teradata.html" | prepend: site.baseurl}}">Teradata overview</a>.</li><br>
+      <li id="sap-hana"><strong>SAP HANA</strong> <span class="label label-beta">Beta</span>
+       <br/>SAP HANA version 2.0 or later is required. For more information, see <a href="{{"/data-integrate/embrace/embrace-hana.html" | prepend: site.baseurl}}">SAP HANA overview</a>.</li></ul>
+      <p>New features:</p>
+      <ul>
+        <li>Ability to remove columns from a connection.</li>
         <li>Actual SQL is displayed in the query visualizer. This allows analysts to check the actual external database query so they can easily validate the output.</li>
-        <li>A summary of tables/columns connected is now displayed as part of add/edit connection workflow.</li></ul>
-      <p>Starting with Release 6.2, ThoughtSpot Embrace connects to two more data warehouses:</p>
-      <ul>
-       <li id="teradata"><strong>Teradata</strong>
-        <br/>We certify Embrace with Teradata Vantage version 16.20 or later; see <a href="{{"/data-integrate/embrace/embrace-teradata.html" | prepend: site.baseurl}}">Teradata connections in Embrace</a></li>
-       <li id="sap-hana"><strong>SAP HANA</strong> <span class="label label-beta">Beta</span>
-        <br/>We certify Embrace with SAP HANA Version 2.0 or later; see <a href="{{"/data-integrate/embrace/embrace-hana.html" | prepend: site.baseurl}}">SAP HANA connections in Embrace</a></li></ul></dd></dlentry>
+        <li>A summary of connected tables/columns is displayed in the add/edit connection workflow.</li>
+        <li>Improved performance when creating or editing a connection.</li></ul>
+       </dd></dlentry>
   <dlentry id="tsload">
-    <dt>tsload connector for ETL tools</dt>   
-    <dd>This release introduces a new option for loading data in bulk, called tsload connector. The tsload connector is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="{{"/admin/loading/load-with-tsload.html" | prepend: site.baseurl}}">Use the tsload connector to load data</a>.</dd></dlentry>
+    <dt>tsload connector</dt>   
+    <dd>This release introduces a new option for loading data in bulk, called tsload connector. It is a collection of APIs that allow you to directly, and more quickly load your data into the ThoughtSpot Falcon database. For more information, see <a href="{{"/admin/loading/load-with-tsload.html" | prepend: site.baseurl}}">Use the tsload connector to load data</a>.</dd></dlentry>
 </dl>
 
 ### For the IT Ops Engineer
