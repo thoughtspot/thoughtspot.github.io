@@ -701,7 +701,7 @@ entries:
           url: /admin/loading/load-with-script.html
           output: web,admBk
         - title: Use the tsload service
-          url: /admin/loading/load-with-service.html
+          url: /admin/loading/load-with-tsload.html
           output: web,admBk
       - levelThreeTitle: Delete a data source
         output: web,admBk
@@ -2381,6 +2381,9 @@ entries:
       output: web,drgBk
     - title: Node failure
       url: /disaster-recovery/node-failure.html
+      output: web,drgBk
+    - title: HA and resilience
+      url: /disaster-recovery/ha-resilience.html
       output: web,drgBk
     - levelTwoTitle: Cluster replacement
       output: web,drgBk
