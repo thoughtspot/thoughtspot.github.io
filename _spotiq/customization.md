@@ -102,7 +102,6 @@ You can always include columns that interest you in your analysis.
   </tr>
 </table>
 
-
 ## Remove known date outliers
 
 Your data may contain known outliers. For example, you are in the middle of a quarter and only want to analyze the previous quarter. Anything from the present quarter could contain an outlier.
