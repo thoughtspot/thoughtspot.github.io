@@ -1,5 +1,5 @@
 ---
-title: [Snowflake connections in Embrace]
+title: [Snowflake overview]
 last_updated: 08/15/2020
 toc: true
 sidebar: mydoc_sidebar

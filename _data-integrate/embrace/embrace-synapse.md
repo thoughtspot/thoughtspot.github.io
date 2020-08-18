@@ -1,5 +1,5 @@
 ---
-title: [Azure Synapse connections in Embrace]
+title: [Azure Synapse overview]
 last_updated: 08/15/2020
 toc: true
 sidebar: mydoc_sidebar
