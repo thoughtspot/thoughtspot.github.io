@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on online clusters that use RHEL]
 summary: "Install ThoughtSpot on RHEL online clusters"
-last_updated: 6/10/2020
+last_updated: 8/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -204,6 +204,7 @@ Refer to the ThoughtSpot documentation for the detailed steps to install the Tho
 
 Follow these general steps to install ThoughtSpot on the prepared hosts:
 
+1. Connect to the host as an admin user.
 1. Download the release artifact from the ThoughtSpot file sharing system.
 2. Upload the release artifact to the first host.
 3. Run the `tscli cluster create` command. This script prompts for user input.
