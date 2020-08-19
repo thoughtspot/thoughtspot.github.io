@@ -103,7 +103,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dd>Updates to Answer Explorer in 6.2 allow users to add their own filters, comparisons, and measures and attributes to a visualization while in Explore mode. See <a href="{{ site.baseurl }}/end-user/pinboards/answer-explorer.html">Answer Explorer</a> for more information.</dd></dlentry>
   <dlentry id="mobile-android">
     <dt>Mobile for Android</dt>
-    <dd>&nbsp;</dd></dlentry>
+    <dd>In time for this release, you can download ThoughtSpot app for Android OS from the PlayStore. See <a href="{{ site.baseurl }}/admin/mobile/notes-mobile.html">ThoughtSpot Mobile release notes</a> and <a href="{{ site.baseurl }}/admin/mobile/use-mobile.html">ThoughtSpot Mobile overview</a>.</dd></dlentry>
 </dl>
 
 ### For the Data Engineer
