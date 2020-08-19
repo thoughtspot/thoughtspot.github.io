@@ -96,13 +96,13 @@ These are the issues we fixed in ThoughtSpot Release 6.2.
 
 - Row-level security is not reflected with search tokens and Explore suggestions.
 
-- Unauthorized access to additional internal endpoints.
+- Unauthorized access to endpoints in UI.
 
 - Old version of the UI appears for some users, even though the cluster was upgraded to new version.
 
 - Global filter on Pinboard doesn't work.
 
-- Users can still access **Data > Tables**, even though the Data tab is hidden from UI.
+- Users can still access **Data > Tables** page, even though the Data tab is hidden from UI.
 
 - The time required to execute the TQL delete command increases exponentially, until it no longer works.
 
