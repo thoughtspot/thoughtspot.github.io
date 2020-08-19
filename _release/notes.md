@@ -63,9 +63,13 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
           <strong>The ‘not in’ keyword</strong>
           <br/>&nbsp;</li></ul>
     </dd></dlentry>
-  <dlentry id="subscribe-others">
-    <dt>Monitor: Subscribe others</dt>
-    <dd>&nbsp;</dd></dlentry>
+  <dlentry id="monitor">
+    <dt>Monitor<span class="label label-beta">Beta</span></dt>
+    <dd>
+      <ul>
+        <li id="subscribe-others">
+          <strong>Subscribe others</strong>: To drive adoption of Pinboards, analysts can now subscribe business users to receive daily email notification for the relevant metrics. See <a href="{{"/spotiq/monitor-headlines.html#subscribe-others" | prepend: site.baseurl}}">Subscribe others</a>.</li>
+       <li id="monitor-ux"><strong>UI enhancements</strong>: We made several improvements to the Monitor and Follow features, optimizing the workflow.</li></ul></dd></dlentry>
   <dlentry id="insights">
     <dt>Insights</dt>
     <dd>Insights no longer appear on Home page and Pinboard by default, unless that feature is turned on for the cluster. See <a href="{{"/end-user/introduction/about-navigating-thoughtspot.html#insights" | prepend: site.baseurl}}">Finding your way around, Insights</a>.</dd></dlentry>  
