@@ -94,9 +94,33 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 These are the issues we fixed in ThoughtSpot Release 6.2.
 
-- TBD.
+- Row-level security is not reflected with search tokens and Explore suggestions.
 
-- TBD.
+- Unauthorized access to service URLs in the ThoughtSpot Web UI.
+
+- Old version of the ThoughtSpot Web UI appears for some users, even though the cluster was upgraded to new version.
+
+- Global filter on Pinboard in the ThoughtSpot Web UI doesn't work.
+
+- Users can still access **Data > Tables** page, even though the Data tab is hidden from ThoughtSpot Web UI.
+
+- The time required to execute the TQL delete command increases exponentially, until it no longer works.
+
+- PDF export from a Pinboard in the ThoughtSpot Web UI doesn't work.
+
+- The sender's email in notifications is using the default `no-reply@customer.thoughtspot.com ` instead of the `from-email` configured using `tscli smtp`, or the user's email who shares the Pinboard.
+
+- Regional German names for states in Geo Maps are not allowed.
+
+- CVE-2020-1938 vulnerability affecting Tomcat versions.
+
+- ThoughtSpot Web UI displays the date shifted by one day in version 80 of the Google Chrome browser.
+
+- Version 80 of the Google Chrome browser is not supported by the ThoughtSpot Web app, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.
+
+- ThoughtSpot Web App does not work on on a version later than 5.3 of the Microsoft Edge browser.
+
+- Pinboards with 25 or more visualizations do not work properly.
 
 <a id="6-1-1"></a>
 ## 6.1.1 Fixed issues
