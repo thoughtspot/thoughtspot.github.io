@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields of an SAP HANA <span class="label label-beta">Beta</span> connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
+Here is a list of the fields of an SAP HANA connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
 
 <dl id="embrace-HANA-ref">
   <dlentry id="embrace-HANA-ref-connection-name">
