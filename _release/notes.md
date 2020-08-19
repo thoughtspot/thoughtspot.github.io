@@ -133,7 +133,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, Embrace supports two new data warehouses, and includes new features.
+    <dd>In this release, Embrace supports two new data warehouses and includes new features.
     <p>New data warehouses:</p>
       <ul>
       <li id="teradata"><strong>Teradata</strong>
