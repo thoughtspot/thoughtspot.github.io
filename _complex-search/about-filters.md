@@ -90,3 +90,10 @@ Consider a table with a filter that is used in a worksheet. When a search uses t
 ## Worksheet filters
 
 A worksheet filter gets applied every time that worksheet is used. This means that for any search involving a filtered worksheet, all worksheet filters are applied before the search is submitted. So results are always filtered, even if the specific terms searched do not include the column(s) that are filtered.
+
+### Use aggregate formulas as Worksheet filters
+Starting in ThoughtSpot release 6.2, you can use an aggregate formula as a Worksheet filter. This is useful when, for example, you only want your results to show a measure when the related attribute is greater than some number, or vice versa. You may only want to see `sales` when the `unique customer count` is greater than 1, or you may only want to see a `customer` if the associated `sales` is greater than 0. Rather than add that formula to every search, you can create a filter at the Worksheet level.
+
+To add an aggregated formula to a Worksheet, follow these steps:
+1. [Create an aggregate formula in a Worksheet]({{ site.baseurl }}/admin/worksheets/create-formula.html)
+2. [Add the formula to Worksheet as a filter]({{ site.baseurl }}/admin/worksheets/create-ws-filter.html), and specify conditions in which it should apply.

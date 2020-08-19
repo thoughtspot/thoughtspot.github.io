@@ -83,6 +83,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     </ul>
     </dd>
   </dlentry>
+  <dlentry id="aggregate-formulas">
+    <dt>Aggregate formulas as Worksheet filters</dt>
+    <dd>You can now use an aggregate formula as a Worksheet filter. See <a href="{{ site.baseurl }}/complex-search/aggregation-formulas.html#aggregate-filter">Use aggregate formulas as Worksheet filters</a>.</dd></dlentry>
 </dl>    
 
 ### For the Business User

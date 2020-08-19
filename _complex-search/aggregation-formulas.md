@@ -1,7 +1,7 @@
 ---
 title: [Overview of aggregate formulas]
 summary: Learn about aggregate formulas.
-last_updated: 11/15/2019
+last_updated: 8/19/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -105,3 +105,11 @@ rows, and then divides that by the total of sales for all rows, returning an
 average gross margin:
 
  ![]({{ site.baseurl }}/images/formula_gross_margin_sum.png "Aggregated search with a corrected division formula")
+
+{: id="aggregate-filter"}
+## Use aggregate formulas as Worksheet filters
+Starting in ThoughtSpot release 6.2, you can use an aggregate formula as a Worksheet filter. This is useful when, for example, you only want your results to show a measure when the related attribute is greater than some number, or vice versa. You may only want to see `sales` when the `unique customer count` is greater than 1, or you may only want to see a `customer` if the associated `sales` is greater than 0. Rather than add that formula to every search, you can create a filter at the Worksheet level.
+
+To add an aggregated formula to a Worksheet, follow these steps:
+1. [Create an aggregate formula in a Worksheet]({{ site.baseurl }}/admin/worksheets/create-formula.html)
+2. [Add the formula to Worksheet as a filter]({{ site.baseurl }}/admin/worksheets/create-ws-filter.html), and specify conditions in which it should apply.
