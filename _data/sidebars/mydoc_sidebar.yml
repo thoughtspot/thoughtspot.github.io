@@ -1045,8 +1045,11 @@ entries:
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
-      - title: System pinboards
+      - title: System Pinboards
         url: /admin/system-monitor/monitor-pinboards.html
+        output: web,admBk
+      - title: Falcon monitoring Pinboards
+        url: /admin/system-monitor/falcon-monitor.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
