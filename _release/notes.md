@@ -22,7 +22,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 
 ### For the  Analyst
 
-<dl id='6-2-analyst'>
+<dl id="6-2-analyst">
   <dlentry id="geomaps">
     <dt>Geomaps</dt>
     <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for these new locales:
@@ -58,7 +58,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
       <ul>
         <li id="top">
           <strong>The nested ‘top’ keyword</strong>
-          <br/>&nbsp;</li>
+          <br/>The new keyword phrase, <a href="{{"/reference/keywords.html#top-n-by" | prepend: site.baseurl}}">top <em>n</em> <em>measure1</em> by <em>attribute</em> | <em>measure2</em></a> enables you to search the top n results by an attribute or a secondary measure.</li>
         <li id="not-in">
           <strong>The ‘not in’ keyword</strong>
           <br/>&nbsp;</li></ul>
