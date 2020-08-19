@@ -51,6 +51,7 @@ You can always activate **Getting Started** again. To show the Getting Started s
 Click on the **Getting Started** sidebar to expand it and see the **Learning Resources** available to you. **Getting Started** contains information for new users on ThoughtSpot's main features, such as **Answers** and **Pinboards**. It also includes a **Navigation Overview**, which walks you through the options on ThoughtSpot's top menu bar.
 
 <!--
+Hold off on removing these links
 Commenting out after discussion with Roza and Adi. Will probably delete. If kept, ensure only one version of pictures remains (markdown or html)
 * [Navigation Overview]({{ site.baseurl }}/end-user/introduction/getting-started.html#navigation-overview)
 * [Your First Search]({{ site.baseurl }}/end-user/introduction/getting-started.html#your-first-search)

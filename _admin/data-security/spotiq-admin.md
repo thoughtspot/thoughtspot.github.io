@@ -5,11 +5,14 @@ last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
 SpotIQ is a feature in ThoughtSpot that automatically generates insights into
 system data. The feature works on all the data in your system, search queries,
-saved answers, and pinboards. Because SpotIQ uses the same data security model
+saved Answers, and Pinboards. Because SpotIQ uses the same data security model
 as other data in the system, there is no need to build a new schema or security
 model to support it.
+
+{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
 
 SpotIQ automatically generates insights into data when a user requests them.
 These requests can be run immediately or users can schedule regular analysis.

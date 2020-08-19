@@ -47,7 +47,7 @@ home page you can see a search bar, and several areas that show activity in Thou
   <tr id="insights">
     <th>Did you know?</th>
     <td><img src="{{ "/images/home-spotiq.png "| prepend: site.baseurl  }}" /></td>
-    <td>Contains auto analysis results from SpotIQ. Off by default. After turned on, it is visible only to users that have the SpotIQ privilege.</td>
+    <td>Contains auto analysis results from SpotIQ. Off by default. After you turn on insights, they are visible only to users that have the SpotIQ privilege.</td>
   </tr>
   </tbody>
 </table>
