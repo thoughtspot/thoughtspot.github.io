@@ -188,6 +188,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
   <dlentry  id="in-memory-data-compression">
     <dt>In-memory data compression</dt>
     <dd>ThoughtSpot release 6.2 includes improvements to in-memory data compression. These improvements lower your RAM requirements and reduce the number of VMs you need for in-memory data, when deploying on a cloud platform. In release 6.2, ThoughtSpot added two new compression algorithms to the Dictionary compression that ThoughtSpot already supports. ThoughtSpot now supports <strong>LZ4</strong>, for <code>INT</code>, <code>BIGINT</code>, <code>DOUBLE</code>, and <code>FLOAT</code> data types, and <strong>RLE</strong>, for strings. See <a href="{{ site.baseurl }}/admin/architecture/data-compression.html">In-memory data compression</a> for more information. </dd></dlentry>
+  <dlentry  id="falcon-monitor">
+    <dt>Falcon monitoring Pinboards</dt>
+    <dd>In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators. Use the Falcon monitoring system Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, and varz metrics. You can use these Pinboards for proactive monitoring, or, with help from <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>, for debugging. See <a href="{{ site.baseurl }}/admin/system-monitor/falcon-monitor.html">Falcon monitoring Pinboards</a> for more information. </dd></dlentry>
 </dl>    
 
 {: id="beta-program"}
