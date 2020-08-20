@@ -11,7 +11,7 @@ is only visible to administrators. Tables imported from a Web browser are visibl
 to administrators and the user who uploaded it. Administrators and owners can
 share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.
 
-When you share a table, you can share the entire table, or specific columns.
+When you share a table, you can share the entire table, or specific columns. For column level security, share only specific columns.
 
 ## Permissive or strict sharing
 
