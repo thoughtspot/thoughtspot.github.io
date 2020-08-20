@@ -1,17 +1,17 @@
 ---
-title: [Falcon monitoring Pinboards]
-last_updated: 8/19/2020
-summary: "Use the Falcon monitoring system Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, and varz metrics."
+title: [Falcon Monitor Pinboards]
+last_updated: 8/20/2020
+summary: "Use the Falcon Monitor Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, system stats, and varz metrics."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators.
+In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, that are available to system administrators.
 
-Falcon is ThoughtSpot's in-memory database. Falcon monitoring functionality pushes different kinds of metrics to Falcon system tables every fifteen minutes. These system tables, when updated, update the 4 new Pinboards that you can use to monitor Falcon's health. You can see these Pinboards from the **Pinboards** page, by searching for **Falcon**:
+Falcon is ThoughtSpot's in-memory database. Falcon monitoring functionality pushes different kinds of metrics to Falcon system tables every fifteen minutes. These system tables, when updated, update the 5 new Pinboards that you can use to monitor Falcon's health. You can see these Pinboards from the **Pinboards** page, by searching for **360_Overview**:
 
 ![Falcon Pinboards on the Pinboards page]({{ site.baseurl }}/images/falcon-pinboards.png "Falcon Pinboards on the Pinboards page")
 
-The 4 new database monitoring Pinboards are: [Falcon_360_Overview](#falcon_360_overview), [Falcon_Query_360_Overview](#falcon_query_360_overview), [Falcon_Dataload_360_Overview](#falcon_dataload_360_overview), and [Falcon_Varz_360_Overview](#falcon_varz_360_overview).
+The 5 new database monitoring Pinboards are: [Falcon_360_Overview](#falcon_360_overview), [Falcon_Query_360_Overview](#falcon_query_360_overview), [Falcon_Dataload_360_Overview](#falcon_dataload_360_overview),  [Falcon_Varz_360_Overview](#falcon_varz_360_overview), and [System_Stats_360_Overview](#system_stats_360_overview)
 
 You can use these Pinboards for proactive monitoring, or, with help from [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html), for debugging.
 
@@ -39,3 +39,9 @@ This Pinboard provides information about Falcon data loads based on traces. Visu
 This Pinboard provides information about Falcon services based on metrics in VarZ format. Visualizations include **Falcon Worker Execution Metrics**, **Falcon Query Runtime (Average and Max)**, **Falcon Worker Memory Manager**, **Daily Data Load Statistics**, **Falcon Compiler Cache Daily Usage**, and so on.
 
 ![Falcon_Varz_360_Overview Pinboard]({{ site.baseurl }}/images/falcon-varz-360-pinboard.png "Falcon_Varz_360_Overview Pinboard")
+
+{: id="system_stats_360_overview"}
+## System_Stats_360_Overview
+This Pinboard provides system stats information such as memory usage, CPU usage, and load average. Visualizations include **Memory Utilization**, **CPU Utilization (System, Idle, User)**, **Loadavg (current/total scheduling entities)**, **Memory (Free)**, **Netstat connections**, and so on.
+
+![System_Stats_360_Overview Pinboard]({{ site.baseurl }}/images/system-stats-360-pinboard.png "System_Stats_360_Overview Pinboard")
