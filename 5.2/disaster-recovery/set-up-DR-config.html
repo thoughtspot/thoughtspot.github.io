@@ -125,11 +125,11 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/disaster-recovery/set-up-DR-config.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-11T12:05:14-07:00" />
+<meta property="article:published_time" content="2020-08-20T11:57:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/disaster-recovery/set-up-DR-config.html"},"url":"https://docs.thoughtspot.com/5.2/disaster-recovery/set-up-DR-config.html","headline":"[“Configure disaster recovery”]","dateModified":"2020-08-11T12:05:14-07:00","datePublished":"2020-08-11T12:05:14-07:00","description":"Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/disaster-recovery/set-up-DR-config.html"},"url":"https://docs.thoughtspot.com/5.2/disaster-recovery/set-up-DR-config.html","headline":"[“Configure disaster recovery”]","dateModified":"2020-08-20T11:57:07-07:00","datePublished":"2020-08-20T11:57:07-07:00","description":"Disaster recovery setup configures periodic backups from the primary to a shared, mirrored storage volume. If the primary cluster fails, then a secondary cluster can take over its operations after a small manual intervention.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -400,7 +400,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /disaster-recovery/set-up-DR-config.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is disaster-recovery.</li>
@@ -421,12 +421,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/disaster-recovery/set-up-DR-config.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/disaster-recovery/set-up-DR-config.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/disaster-recovery/set-up-DR-config.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/6.1/disaster-recovery/set-up-DR-config.html</li>
+<li class="small-sidebar-link">newURL is /6.2/disaster-recovery/set-up-DR-config.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.2/6.2/disaster-recovery/set-up-DR-config.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3260,7 +3260,7 @@ state from the primary to the secondary sever. If you configure daily backups,
 any metadata or data loaded/created after the last backup is not included in
 restore.</p>
 
-<h2 id="prerequisite">Prerequisite</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 
 <p>Both primary and secondary appliances must use a shared storage volume. You can
 use an NAS or Samba volume for your share. If you choose NAS, keep in mind that
@@ -3268,7 +3268,7 @@ too slow a volume potentially break backups or significantly slow restore
 performance. The following are good guidelines for choosing storage:</p>
 
 <ul>
-  <li>Provision dedicated a storage volume for periodic backups.</li>
+  <li>Provision a dedicated storage volume for periodic backups.</li>
   <li>Do not use the backup volume for loading data or any other purposes. If backups fill up this storage, other components will suffer.</li>
   <li>To ensure better supportability and continuity in case local hard disks go bad, the shared storage volume should be network based.</li>
 </ul>
@@ -3301,7 +3301,7 @@ volume. To find out, use the <code class="highlighter-rouge">telnet</code> comma
 <h2 id="configure-and-test-your-shared-volume">Configure and test your shared volume</h2>
 
 <p>Your shared volume should have a minimum of 15GB free and at least 20GB for a
-full backup. Do the following to configure and mount the shared volume.</p>
+full backup. To configure and mount the shared volume on the primary and mirror appliances, complete the following steps:</p>
 
 <ol>
   <li>
@@ -3314,7 +3314,7 @@ full backup. Do the following to configure and mount the shared volume.</p>
 recovery plan.</p>
   </li>
   <li>
-    <p>Create a directory to act as your  _<mount_point>_.</mount_point></p>
+    <p>Create a directory to act as your <em>mount_point</em>.</p>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
 </code></pre></div>    </div>
@@ -3326,9 +3326,9 @@ recovery plan.</p>
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli nas</code> subcommand to create a NAS is mount on all of the cluster nodes.</p>
+    <p>Use the <code class="highlighter-rouge">tscli nas</code> subcommand to create a NAS mount on all of the cluster nodes. Run <code class="highlighter-rouge">tscli nas mount-nfs</code> or <code class="highlighter-rouge">tscli nas mount-cifs</code>.</p>
 
-    <p>Use the command-line help or the documentation to view all the <a href="/5.2/reference/tscli-command-ref.html#nas">nas subcommand</a> options. Below are some samples to help you:</p>
+    <p>Use the command-line help (<code class="highlighter-rouge">tscli nas -h</code>) or the documentation to view all the <a href="/5.2/reference/tscli-command-ref.html#nas">nas subcommand options</a>. Below are some samples to help you:</p>
 
     <table>
 <tr>
@@ -3348,14 +3348,13 @@ recovery plan.</p>
 </tr>
 </table>
   </li>
-  <li>Log in to the target machine.</li>
+  <li>Log into the target machine.</li>
   <li>
-    <p>Ensure that the target machine is not running a ThoughtSpot cluster.</p>
+    <p>Ensure that the target machine is running a ThoughtSpot cluster. Note that the clusters on the primary and target machines do not need to be on the same ThoughtSpot version.</p>
 
-    <p>If a cluster is running on the target machine, contact please contact
-ThoughtSpot Support to delete the cluster.</p>
+    <p>If a cluster is not running on the target machine, <a href="/5.2/appliance/contact.html">contact
+ThoughtSpot Support</a> to create a cluster.</p>
   </li>
-  <li>Ensure you have the <code class="highlighter-rouge">tscli</code> command on the target appliance.</li>
   <li>
     <p>Repeat steps 3-5 on the target machine.</p>
 
@@ -3479,7 +3478,7 @@ instance into the primary.</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 11, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 20, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!--   -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
