@@ -4,6 +4,7 @@ last_updated: 4/24/2020
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
