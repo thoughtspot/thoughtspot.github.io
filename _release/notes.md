@@ -88,6 +88,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
   <dlentry id="aggregate-formulas">
     <dt>Aggregate formulas as Worksheet filters</dt>
     <dd>You can now use an aggregate formula as a Worksheet filter. See <a href="{{ site.baseurl }}/complex-search/aggregation-formulas.html#aggregate-filter">Use aggregate formulas as Worksheet filters</a>.</dd></dlentry>
+  <dlentry id="formula-parser">
+    <dt>Formula Parser Improvements</dt>
+    <dd>ThoughtSpot 6.2 includes improvements to the latency of the formula parser. Complex formulas that took over 45 seconds to parse are now parsed in 150 milliseconds — a 300x improvement. Latency no longer increases exponentially with the depth of the formula nesting, no matter how complex the formula is.</dd></dlentry>
 </dl>    
 
 ### For the Business User
