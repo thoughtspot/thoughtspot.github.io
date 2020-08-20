@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /app-integrate/reference/public-api-reference.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is app-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/app-integrate/reference/public-api-reference.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/app-integrate/reference/public-api-reference.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/app-integrate/reference/public-api-reference.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/app-integrate/reference/public-api-reference.html</li>
+<li class="small-sidebar-link">newURL is /6.2/app-integrate/reference/public-api-reference.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/app-integrate/reference/public-api-reference.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2903,7 +2903,7 @@ $('#toc').on('click', 'a', function() {
     <tr>
       <td>pagenumber</td>
       <td>-1</td>
-      <td>PageNumber. Alternate way to set offset. This is <code class="highlighter-rouge">1-based indexingOffset = (pageNumber - 1) * batchSize</code></td>
+      <td>PageNumber. Alternate way to set offset. This is <code class="language-plaintext highlighter-rouge">1-based indexingOffset = (pageNumber - 1) * batchSize</code></td>
       <td>query</td>
       <td>integer</td>
     </tr>
@@ -2935,27 +2935,27 @@ $('#toc').on('click', 'a', function() {
 
 <p>Curl</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT'
 </code></pre></div></div>
 
 <p>Request URL</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&amp;pagenumber=-1&amp;offset=-1&amp;formattype=COMPACT
 </code></pre></div></div>
 
 <p>Response Body</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>no content
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>no content
 </code></pre></div></div>
 
 <p>Response Code</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>400
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>400
 </code></pre></div></div>
 
 <p>Response Headers</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "2ff9d2e4-c928-4192-8250-8450de264ab7",
   "x-callosum-trace-id": "2e551b8d-d3f4-4cf1-af90-a49bb246ad92",
   "date": "Sun, 19 Feb 2017 03:39:41 GMT",
@@ -3011,22 +3011,22 @@ $('#toc').on('click', 'a', function() {
 
 <p>Curl</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/metadata/listvizheaders'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/metadata/listvizheaders'
 </code></pre></div></div>
 
 <p>Request URL</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/metadata/listvizheaders
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/metadata/listvizheaders
 </code></pre></div></div>
 
 <p>Response Body</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[]
 </code></pre></div></div>
 
 <p>Response Code</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <p>Response Headers</p>
@@ -3045,7 +3045,7 @@ $('#toc').on('click', 'a', function() {
   <li>title</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "6f10c360-1dc8-4469-8d7d-41c7eab4d883",
   "x-callosum-trace-id": "70d91ca9-7278-4926-8161-bec75bfe3c5e",
   "date": "Sun, 19 Feb 2017 03:19:17 GMT",
@@ -3137,17 +3137,17 @@ $('#toc').on('click', 'a', function() {
 
 <p>Curl</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://dogfood/callosum/v1/tspublic/v1/user/sync'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://dogfood/callosum/v1/tspublic/v1/user/sync'
 </code></pre></div></div>
 
 <p>Request URL</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/user/sync
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/user/sync
 </code></pre></div></div>
 
 <p>Response Object Format</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   'usersAdded': ['username1','username2'],
   'usersDeleted': ['username3'],
   'usersUpdated': ['username4'],
@@ -3159,12 +3159,12 @@ $('#toc').on('click', 'a', function() {
 
 <p>Response Code</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>415
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>415
 </code></pre></div></div>
 
 <p>Response Headers</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "645499d1-d0cf-4b3b-bbdc-4296abb9a326",
   "x-callosum-trace-id": "19f7ad7d-226a-4e88-a301-405f85125959",
   "date": "Sun, 19 Feb 2017 03:55:52 GMT",
@@ -3194,36 +3194,36 @@ $('#toc').on('click', 'a', function() {
 
     <ul>
       <li>
-        <p><code class="highlighter-rouge">name*</code>: String to represent the name of the principal.</p>
+        <p><code class="language-plaintext highlighter-rouge">name*</code>: String to represent the name of the principal.</p>
 
         <p>This field, in conjunction with whether the object is a user or group, is used to identify a user/group. Consequently, this field is required to be unique (unique for users and groups separately. I.e. you can have user “x” and group “x”).</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">displayName*</code>: String to represent the display name of the principal.</p>
+        <p><code class="language-plaintext highlighter-rouge">displayName*</code>: String to represent the display name of the principal.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">description</code>: String to describe the principal.</p>
+        <p><code class="language-plaintext highlighter-rouge">description</code>: String to describe the principal.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">mail</code>: String to represent the email address of the user. This field should be populated only in case of user not group. It is ignored in the case of groups.</p>
+        <p><code class="language-plaintext highlighter-rouge">mail</code>: String to represent the email address of the user. This field should be populated only in case of user not group. It is ignored in the case of groups.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">principalTypeEnum*</code>: The value of this field should be one of the following:</p>
+        <p><code class="language-plaintext highlighter-rouge">principalTypeEnum*</code>: The value of this field should be one of the following:</p>
 
         <ul>
           <li>
-            <p><code class="highlighter-rouge">LOCAL_USER</code>: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.</p>
+            <p><code class="language-plaintext highlighter-rouge">LOCAL_USER</code>: User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.</p>
           </li>
           <li>
-            <p><code class="highlighter-rouge">LOCAL_GROUP</code>: Groups created in the ThoughtSpot system.</p>
+            <p><code class="language-plaintext highlighter-rouge">LOCAL_GROUP</code>: Groups created in the ThoughtSpot system.</p>
           </li>
         </ul>
       </li>
       <li>
-        <p><code class="highlighter-rouge">password</code>: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.</p>
+        <p><code class="language-plaintext highlighter-rouge">password</code>: String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">groupNames</code>: List of group names that a principal belongs to directly. Groups and users can belong to other groups.</p>
+        <p><code class="language-plaintext highlighter-rouge">groupNames</code>: List of group names that a principal belongs to directly. Groups and users can belong to other groups.</p>
       </li>
     </ul>
   </li>
@@ -3239,17 +3239,17 @@ $('#toc').on('click', 'a', function() {
 
 <p>Curl</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/user/list'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://dogfood/callosum/v1/tspublic/v1/user/list'
 </code></pre></div></div>
 
 <p>Request URL</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/user/list
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dogfood/callosum/v1/tspublic/v1/user/list
 </code></pre></div></div>
 
 <p>Response Body format</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "name": "Group 1",
     "displayName": "Group Display Name 1",
@@ -3269,7 +3269,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Response Body example</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "name": "Sales Executives",
     "displayName": "Sales Executives",
@@ -3322,12 +3322,12 @@ $('#toc').on('click', 'a', function() {
 
 <p>Response Code</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <p>Response Headers</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "1be6e07b-b7aa-4531-8597-8852760757f0",
   "x-callosum-trace-id": "e92c54ca-d5f1-44a6-ab8e-f6871bb0da8b",
   "date": "Sun, 19 Feb 2017 04:14:13 GMT",
@@ -3348,13 +3348,13 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="public-name-session">Public name: session</h2>
 
-<p>This object has two POST calls, one for <code class="highlighter-rouge">login</code> and one for <code class="highlighter-rouge">logout</code>.</p>
+<p>This object has two POST calls, one for <code class="language-plaintext highlighter-rouge">login</code> and one for <code class="language-plaintext highlighter-rouge">logout</code>.</p>
 
 <h3 id="post-tspublicv1sessionlogin">POST /tspublic/v1/session/login</h3>
 
-<p>This call takes a <code class="highlighter-rouge">APPLICATION_FORM_URLENCODED</code> payload containing a
-<code class="highlighter-rouge">username</code>, a <code class="highlighter-rouge">password</code>, and an optional <code class="highlighter-rouge">rememberme</code> flag. If you do not
-supply the optional flag, the system uses the default <code class="highlighter-rouge">false</code> value.</p>
+<p>This call takes a <code class="language-plaintext highlighter-rouge">APPLICATION_FORM_URLENCODED</code> payload containing a
+<code class="language-plaintext highlighter-rouge">username</code>, a <code class="language-plaintext highlighter-rouge">password</code>, and an optional <code class="language-plaintext highlighter-rouge">rememberme</code> flag. If you do not
+supply the optional flag, the system uses the default <code class="language-plaintext highlighter-rouge">false</code> value.</p>
 
 <p><strong>Inputs</strong></p>
 
@@ -3367,16 +3367,16 @@ supply the optional flag, the system uses the default <code class="highlighter-r
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">username</code></td>
+      <td><code class="language-plaintext highlighter-rouge">username</code></td>
       <td>Username of the user to log in as.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">password</code></td>
+      <td><code class="language-plaintext highlighter-rouge">password</code></td>
       <td>Password of the user to log in as.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">rememberme</code></td>
-      <td>A flag indicating if the user session needs to be remembered. Defaults to <code class="highlighter-rouge">false</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">rememberme</code></td>
+      <td>A flag indicating if the user session needs to be remembered. Defaults to <code class="language-plaintext highlighter-rouge">false</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -3436,7 +3436,7 @@ supply the optional flag, the system uses the default <code class="highlighter-r
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/reference/public-api-reference.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/reference/public-api-reference.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3459,7 +3459,7 @@ supply the optional flag, the system uses the default <code class="highlighter-r
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

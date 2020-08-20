@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/loading/about-data-type-conversion.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/loading/about-data-type-conversion.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/about-data-type-conversion.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/loading/about-data-type-conversion.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/loading/about-data-type-conversion.html</li>
+<li class="small-sidebar-link">newURL is /6.2/admin/loading/about-data-type-conversion.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/admin/loading/about-data-type-conversion.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2869,14 +2869,14 @@ the errors. You can start TQL in allow_unsafe mode to continue with the data
 conversion, at your own risk, of course! To start TQL in unsafe mode, issue this
 command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql --allow_unsafe
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql --allow_unsafe
 </code></pre></div></div>
 
 <p>Multiple columns of a single table can be converted using a single TQL command.
 The behavior is transactional. So for example, you would issue a command like
 this example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE products
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE products
    MODIFY COLUMN product_id int,
    MODIFY COLUMN supplier VARCHAR(4);
 </code></pre></div></div>
@@ -2924,7 +2924,7 @@ were changed to a varchar column).</p>
 
 <p>For the example, first create a table with a timestamp stored as a VARCHAR:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE fruit_sales
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE fruit_sales
    (time_of_sale VARCHAR(32));
 
 INSERT INTO fruit_sales
@@ -2933,41 +2933,41 @@ INSERT INTO fruit_sales
 
 <p>Now, convert the column from a VARCHAR to DATETIME, using the format %Y-%m-%d %H:%M:%S:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE fruit_sales
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE fruit_sales
    MODIFY COLUMN time_of_sale DATETIME
    [parsinghint="%Y-%m-%d %H:%M:%S"]
 </code></pre></div></div>
 
 <p>Finally, convert the column back to VARCHAR:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE fruit_sales
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE fruit_sales
    MODIFY COLUMN time_of_sale VARCHAR(32);
 </code></pre></div></div>
 
 <h2 id="boolean-to-string-conversions">Boolean to string conversions</h2>
 
-<p>Boolean to string conversions have format strings, too. You’ll use <code class="highlighter-rouge">parsinghint</code>
+<p>Boolean to string conversions have format strings, too. You’ll use <code class="language-plaintext highlighter-rouge">parsinghint</code>
 as you do for date and time conversions. You can choose among these approaches:</p>
 
 <ul>
   <li>
     <p>Option 1: Specify string values for both true and false. Any non-matching values get converted to null. In this example, “100” gets converted to true, and “0” gets converted to false. “-1” gets converted to null.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
    MODIFY COLUMN s bool [parsinghint="100_0"];
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Option 2: Specify a string value for true. Any non-matching value gets converted to false. In this example, “100” gets converted to true, “-1” and “0” get converted to false.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
    MODIFY COLUMN s bool [parsinghint="100_"];
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Option 3: Specify a string value for false. Any non-matching value get converted to true. In this example, “-1” and “100” get converted to true, and “0” gets converted to false.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
    MODIFY COLUMN s bool [parsinghint="_0"];
 </code></pre></div>    </div>
   </li>
@@ -2977,13 +2977,13 @@ as you do for date and time conversions. You can choose among these approaches:<
 
 <p>When converting from a string to a boolean, you must specify a string for true and false. By default, a string to boolean conversion generates “true” for true, “false” for false.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
    MODIFY COLUMN b varchar(32);
 </code></pre></div></div>
 
 <p>But you may override the default strings that get generated by using parsinghint, as in this example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE db
    MODIFY COLUMN b varchar(32) [parsinghint="tr_fa"];
 </code></pre></div></div>
 
@@ -3002,13 +3002,13 @@ as you do for date and time conversions. You can choose among these approaches:<
   <li>
     <p>Issue the command to change the data type using this syntax:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;table&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;table&gt;
       MODIFY COLUMN &lt;column&gt; &lt;new_data_type&gt;;
 </code></pre></div>    </div>
 
     <p>For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ALTER TABLE fact100
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ALTER TABLE fact100
     MODIFY COLUMN product_id int;
 </code></pre></div>    </div>
   </li>
@@ -3019,7 +3019,7 @@ as you do for date and time conversions. You can choose among these approaches:<
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/about-data-type-conversion.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/about-data-type-conversion.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3046,7 +3046,7 @@ as you do for date and time conversions. You can choose among these approaches:<
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

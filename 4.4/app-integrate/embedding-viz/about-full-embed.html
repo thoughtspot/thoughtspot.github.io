@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /app-integrate/embedding-viz/about-full-embed.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is app-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/app-integrate/embedding-viz/about-full-embed.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/app-integrate/embedding-viz/about-full-embed.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/app-integrate/embedding-viz/about-full-embed.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/app-integrate/embedding-viz/about-full-embed.html</li>
+<li class="small-sidebar-link">newURL is /6.2/app-integrate/embedding-viz/about-full-embed.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/app-integrate/embedding-viz/about-full-embed.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2879,73 +2879,73 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="demo-code-for-sample-full-embed-app-thoughtspotblinkappembedhtml">Demo code for sample full embed app (thoughtspot/blink/app/embed.html)</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">style=</span><span class="s">"height: 100%; width: 100%"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!doctype html&gt;
+&lt;html lang="en" style="height: 100%; width: 100%"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"/&gt;
+&lt;meta name="viewport" content="width=device-width"&gt;
+&lt;meta charset="utf-8"&gt;
 
-<span class="nt">&lt;title&gt;</span>ThoughtSpot Embed App<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"api/api.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-<span class="kd">function</span> <span class="nx">updateIframeUrl</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
-<span class="kd">var</span> <span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">homepage</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/</span><span class="dl">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">search</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/answer</span><span class="dl">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">answerList</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/answers</span><span class="dl">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">pinboardList</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/pinboards</span><span class="dl">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">iframeUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">/?embedApp=true#/data/tables</span><span class="dl">"</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">ts-embed</span><span class="dl">'</span><span class="p">).</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">src</span><span class="dl">'</span><span class="p">,</span> <span class="nx">iframeUrl</span><span class="p">);</span>
-<span class="p">}</span>
+&lt;title&gt;ThoughtSpot Embed App&lt;/title&gt;
+&lt;script type="text/javascript" src="api/api.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+function updateIframeUrl(id) {
+var iframeUrl = "/?embedApp=true#/";
+if (id === 'homepage') {
+iframeUrl = "/?embedApp=true#/";
+} else if (id === 'search') {
+iframeUrl = "/?embedApp=true#/answer";
+} else if (id === 'answerList') {
+iframeUrl = "/?embedApp=true#/answers";
+} else if (id === 'pinboardList') {
+iframeUrl = "/?embedApp=true#/pinboards";
+} else if (id === 'data') {
+iframeUrl = "/?embedApp=true#/data/tables";
+}
+document.getElementById('ts-embed').setAttribute('src', iframeUrl);
+}
 
-<span class="kd">function</span> <span class="nx">onCallback</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="nb">window</span><span class="p">.</span><span class="nx">thoughtspot</span><span class="p">.</span><span class="nx">subscribeToAlerts</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://localhost:8000</span><span class="dl">"</span><span class="p">,</span> <span class="nx">onCallback</span><span class="p">);</span>
+function onCallback(event) {
+console.log(event.data);
+}
+window.thoughtspot.subscribeToAlerts("http://localhost:8000", onCallback);
 
-<span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">"height: 100%; width: 100%"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"updateIframeUrl('homepage')"</span><span class="nt">&gt;</span>Homepage<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"updateIframeUrl('search')"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"updateIframeUrl('answerList')"</span><span class="nt">&gt;</span>Answer list<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"updateIframeUrl('pinboardList')"</span><span class="nt">&gt;</span>Pinboard list<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"updateIframeUrl('data')"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/button&gt;</span>
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body style="height: 100%; width: 100%"&gt;
+&lt;button onclick="updateIframeUrl('homepage')"&gt;Homepage&lt;/button&gt;
+&lt;button onclick="updateIframeUrl('search')"&gt;Search&lt;/button&gt;
+&lt;button onclick="updateIframeUrl('answerList')"&gt;Answer list&lt;/button&gt;
+&lt;button onclick="updateIframeUrl('pinboardList')"&gt;Pinboard list&lt;/button&gt;
+&lt;button onclick="updateIframeUrl('data')"&gt;Data&lt;/button&gt;
 
-<span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">"ts-embed"</span> <span class="na">src=</span><span class="s">"/?embedApp=true#/"</span> <span class="na">height=</span><span class="s">"80%"</span> <span class="na">width=</span><span class="s">"80%"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+&lt;iframe id="ts-embed" src="/?embedApp=true#/" height="80%" width="80%"&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div></div>
 
-<p>The function <code class="highlighter-rouge">updateIframeUrl(id)</code> reflects the logic to change the src URL of the iframe when you click on different navigation buttons.</p>
+<p>The function <code class="language-plaintext highlighter-rouge">updateIframeUrl(id)</code> reflects the logic to change the src URL of the iframe when you click on different navigation buttons.</p>
 
 <h2 id="configure-thoughtspot-navigation-bar">Configure ThoughtSpot navigation bar</h2>
 
 <p>To hide the primary navigation, configure this:</p>
 
 <ul>
-  <li>Make sure the app is in an <code class="highlighter-rouge">&lt;iframe/&gt;</code> .</li>
-  <li>Set the <code class="highlighter-rouge">embedApp</code> flag as true. This flag determines if the application is embedded.</li>
-  <li>Set the <code class="highlighter-rouge">primaryNavHidden</code> flag as true (the default). This flag determines navigation
+  <li>Make sure the app is in an <code class="language-plaintext highlighter-rouge">&lt;iframe/&gt;</code> .</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">embedApp</code> flag as true. This flag determines if the application is embedded.</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">primaryNavHidden</code> flag as true (the default). This flag determines navigation
 visibility.</li>
 </ul>
 
-<p>If either flag is <code class="highlighter-rouge">false</code>, the primary navigation will appear.</p>
+<p>If either flag is <code class="language-plaintext highlighter-rouge">false</code>, the primary navigation will appear.</p>
 
 <h2 id="additional-notes">Additional notes</h2>
 
 <p>Here are some additional notes about the full embed feature:</p>
 
 <ul>
-  <li>You can call <code class="highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/answer</code> and use that to access the search functionality.</li>
-  <li>You can call <code class="highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/pinboards</code> and use that to access saved pinboards.</li>
+  <li>You can call <code class="language-plaintext highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/answer</code> and use that to access the search functionality.</li>
+  <li>You can call <code class="language-plaintext highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/pinboards</code> and use that to access saved pinboards.</li>
   <li>ThoughtSpot can disable error messages within the ThoughtSpot iFrame and provide APIs to you to access those messages, and display them in your UI appropriately. This is done by suppressing error messages in the UI, and passing their details along to window.postMessage function, which your parent app can listen to. Hidden messages can be viewed in the console logs. Contact ThoughtSpot Support if you would like to enable this feature.</li>
   <li>You can use SAML for authentication against ThoughtSpot within the iFrame.</li>
   <li>ThoughtSpot can hide the top navigation within the ThoughtSpot app. Contact ThoughtSpot Support to request this modification.</li>
@@ -2957,7 +2957,7 @@ visibility.</li>
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/embedding-viz/about-full-embed.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/embedding-viz/about-full-embed.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2980,7 +2980,7 @@ visibility.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /release/fixed.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is release.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/release/fixed.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/release/fixed.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/release/fixed.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/release/fixed.html</li>
+<li class="small-sidebar-link">newURL is /6.2/release/fixed.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/release/fixed.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2835,7 +2835,7 @@ var ss360Config = {
 
 <ul>
   <li>
-    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="highlighter-rouge">group_max</code> function.</p>
+    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="language-plaintext highlighter-rouge">group_max</code> function.</p>
   </li>
   <li>
     <p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
@@ -2856,7 +2856,7 @@ var ss360Config = {
     <p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
   </li>
   <li>
-    <p>Creating a formula on <code class="highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
+    <p>Creating a formula on <code class="language-plaintext highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
   </li>
   <li>
     <p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
@@ -2877,13 +2877,13 @@ var ss360Config = {
     <p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
   </li>
   <li>
-    <p>Using <code class="highlighter-rouge">safe_divide</code> and <code class="highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
+    <p>Using <code class="language-plaintext highlighter-rouge">safe_divide</code> and <code class="language-plaintext highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
   </li>
   <li>
     <p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
   </li>
   <li>
-    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
+    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="language-plaintext highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
   </li>
   <li>
     <p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
@@ -2895,7 +2895,7 @@ var ss360Config = {
     <p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
   </li>
   <li>
-    <p>Resolved an issue with a chasm trap that used <code class="highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
+    <p>Resolved an issue with a chasm trap that used <code class="language-plaintext highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="language-plaintext highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
   </li>
   <li>
     <p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
@@ -2916,7 +2916,7 @@ var ss360Config = {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_release/fixed.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_release/fixed.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2939,7 +2939,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 04/08/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

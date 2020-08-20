@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /release/notes.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is release.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/release/notes.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/release/notes.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/release/notes.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/release/notes.html</li>
+<li class="small-sidebar-link">newURL is /6.2/release/notes.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/release/notes.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2851,19 +2851,19 @@ var ss360Config = {
 <p>If you add the privilege <strong>Has administration privileges</strong> to a group, note that all users in that group will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and row-level security (RLS) does not apply to them. If you want to enable users to bypass row-level security, add them to a group with <strong>Can Administer RLS</strong> privileges.</p>
 
 <h4><a name="Checkclustercommandadded"></a>Check cluster command added</h4>
-<p>The <code class="highlighter-rouge">tscli cluster check</code> command was added to check the status of all or specific nodes in a cluster.</p>
+<p>The <code class="language-plaintext highlighter-rouge">tscli cluster check</code> command was added to check the status of all or specific nodes in a cluster.</p>
 
 <h4><a name="Servicelogsstoredtodisk"></a>Service logs stored to disk</h4>
 <p>Service logs are now stored to disk. This ensures better protection against service logs from exceeding the SSD on a node and impacting a node.</p>
 
 <h4><a name="Thetsclinasmountcifscommandrequiresapassword"></a>The tscli nas mount-cifs command requires a password</h4>
-<p>Now the <code class="highlighter-rouge">tscli nas mount-cifs</code> command prompts for a password if you do not supply one.</p>
+<p>Now the <code class="language-plaintext highlighter-rouge">tscli nas mount-cifs</code> command prompts for a password if you do not supply one.</p>
 
 <h4><a name="SankeyChart"></a>Sankey Chart</h4>
 <p>A new type of chart, the Sankey diagram, is now available. This chart displays a flow diagram that illustrates transfers of flows within a system.</p>
 
 <h4><a name="Newimprovedicons"></a>New improved icons</h4>
-<p>In this release, the search <strong>?</strong> (question mark) icon was replaced with an <strong>i</strong> (letter “i”). The team has redesigned the caret-down and <strong>x</strong> (clear-all) icon. Finally, the wand icon is removed from keywords in the <strong>Search</strong> dropdown. Instead, the identifier <code class="highlighter-rouge">keyword</code> appears beneath each keyword.</p>
+<p>In this release, the search <strong>?</strong> (question mark) icon was replaced with an <strong>i</strong> (letter “i”). The team has redesigned the caret-down and <strong>x</strong> (clear-all) icon. Finally, the wand icon is removed from keywords in the <strong>Search</strong> dropdown. Instead, the identifier <code class="language-plaintext highlighter-rouge">keyword</code> appears beneath each keyword.</p>
 
 <p><img src="/4.4/images/notes/image-2017-10-11-14-14-52-672.png " /></p>
 
@@ -2877,11 +2877,11 @@ var ss360Config = {
 <p>Users with the <strong>Can Administer RLS</strong> privilege can bypass row-level security (RLS) rules. By default this privilege is enabled. You can configure your installation to disable it.</p>
 
 <h4><a name="Reversebooleantofilter"></a>Reverse of boolean to filter conversion</h4>
-<p>ThoughtSpot introduced a feature in <strong>3.4</strong> which implicitly converted boolean columns to filters when a user searched. For example, <code class="highlighter-rouge">product isRed = true</code> became <code class="highlighter-rouge">product isRed</code>. This behavior meant that the <code class="highlighter-rouge">product</code> column was not added to the table or chart result.</p>
+<p>ThoughtSpot introduced a feature in <strong>3.4</strong> which implicitly converted boolean columns to filters when a user searched. For example, <code class="language-plaintext highlighter-rouge">product isRed = true</code> became <code class="language-plaintext highlighter-rouge">product isRed</code>. This behavior meant that the <code class="language-plaintext highlighter-rouge">product</code> column was not added to the table or chart result.</p>
 
-<p>Users were confused by this implicit behavior. This feature was reverted <strong>4.3</strong>. Now, boolean columns are treated like any other columns in the query. Meaning they remain <code class="highlighter-rouge">product isRed = true</code> and are not converted. The column also appears in the search results.</p>
+<p>Users were confused by this implicit behavior. This feature was reverted <strong>4.3</strong>. Now, boolean columns are treated like any other columns in the query. Meaning they remain <code class="language-plaintext highlighter-rouge">product isRed = true</code> and are not converted. The column also appears in the search results.</p>
 
-<p>When you upgrade a 3.4 through 4.2 installation to 4.3 or newer, tables or charts created in the 3.4 through 4.2, that contained these booleans are upgraded using <code class="highlighter-rouge">product isRed = true</code> so that users are not surprised by additional columns suddenly appearing in their saved answers.</p>
+<p>When you upgrade a 3.4 through 4.2 installation to 4.3 or newer, tables or charts created in the 3.4 through 4.2, that contained these booleans are upgraded using <code class="language-plaintext highlighter-rouge">product isRed = true</code> so that users are not surprised by additional columns suddenly appearing in their saved answers.</p>
 
 <h4><a name="ImprovementsinRAMDiskrecovery"></a>Improvements in RAMDisk recovery</h4>
 <p>This release includes improvements in the speed and performance of RAMDisk recovery.</p>
@@ -2892,10 +2892,10 @@ var ss360Config = {
 <p>For existing customers upgrading to 4.4 this feature is disabled. You must work with ThoughtSpot Support and Customer support to dentify answers and pinboards that are impacted should this feature be enabled. Your ThoughtSpot customer service representative or ThoughtSpot Support can help you to identify, mitigate, and resolve any impacted data. Once these impacts are resolved, they can enable the feature for you.</p>
 
 <h4><a name="Improvementstoconcatfunction"></a>Improvements to concat function</h4>
-<p>The <code class="highlighter-rouge">concat</code> function now allows users to concatenate multiple strings rather than single strings.</p>
+<p>The <code class="language-plaintext highlighter-rouge">concat</code> function now allows users to concatenate multiple strings rather than single strings.</p>
 
 <h4><a name="Primarykeydropscheckdependencies"></a>Primary key drops check dependencies</h4>
-<p>Dropping a primary key can impact downstream objects such as worksheets and pinboards. When dropping a primary key, TQL now checks for dependencies and issues a warning. Users must override with the <code class="highlighter-rouge">--allow_unsafe</code> flag.</p>
+<p>Dropping a primary key can impact downstream objects such as worksheets and pinboards. When dropping a primary key, TQL now checks for dependencies and issues a warning. Users must override with the <code class="language-plaintext highlighter-rouge">--allow_unsafe</code> flag.</p>
 
 <h4><a name="TooltipfunctionalityintheSchemaVisualizer"></a>Tooltip functionality in the Schema Visualizer</h4>
 <p>A tooltip function was introduced into the <strong>Table</strong> list for the <strong>Schema Visualizer</strong>. This tooltip shows information about the underlying table.</p>
@@ -2941,7 +2941,7 @@ var ss360Config = {
 <p>This feature has limitations. It is not possible to join multiple tables in the worksheet and a single table in a single relationship. Nor is it possible to join between a formula column in a worksheet and another table.</p>
 
 <h4><a name="Gettingaclusterconfiguration"></a>Getting a cluster configuration</h4>
-<p>When using <code class="highlighter-rouge">tscli cluster get-config</code> to get cluster information, the system can run into situations where it cannot make a connection across the network. When this happens, the command returns an error but continues to work.</p>
+<p>When using <code class="language-plaintext highlighter-rouge">tscli cluster get-config</code> to get cluster information, the system can run into situations where it cannot make a connection across the network. When this happens, the command returns an error but continues to work.</p>
 
 <h4><a name="ODBCextract%2Ftransform%2Floadimprovements"></a>ODBC extract/transform/load improvements</h4>
 <p>By default, ThoughtSpot takes a permissive approach to datatype compatibility<br /> between source and target in ODBC. As much as possible ThoughtSpot automatically<br /> converts incoming “compatible” input data to the desired ThoughtSpot target<br /> datatype. Flags were added that allow you to tune this behavior and make it stricter. At installation time, your customer support engineer can assist you in<br /> configuring a stricter load behavior.</p>
@@ -2958,21 +2958,21 @@ var ss360Config = {
 <p><img src="/4.4/images/notes/image-2017-10-12-14-24-08-298.png " /></p>
 
 <h4><a name="APItotransferownershipofobjects"></a>API to transfer ownership of objects</h4>
-<p>The new <code class="highlighter-rouge">POST /tspublic/v1/user/transfer/ownership</code> API was added. It allows the transfer ownership of all objects from one user to another. You must transfer all of a user’s objects. This mehtod takes two query parameters of type String.</p>
+<p>The new <code class="language-plaintext highlighter-rouge">POST /tspublic/v1/user/transfer/ownership</code> API was added. It allows the transfer ownership of all objects from one user to another. You must transfer all of a user’s objects. This mehtod takes two query parameters of type String.</p>
 
 <ul>
-  <li><strong><code class="highlighter-rouge">fromUserName</code></strong> Name of a user from whom the ownership needs to be transferred.</li>
-  <li><strong><code class="highlighter-rouge">toUserName</code></strong> Name of a user to whom the ownership needs to be transferred.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">fromUserName</code></strong> Name of a user from whom the ownership needs to be transferred.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">toUserName</code></strong> Name of a user to whom the ownership needs to be transferred.</li>
 </ul>
 
-<p>It returns a <code class="highlighter-rouge">200</code> status if ownership of all objects are successfully transferred. It returns a status of <code class="highlighter-rouge">400</code> if either the <code class="highlighter-rouge">fromName</code> and <code class="highlighter-rouge">toName</code> is invalid or for given username there is no user present.</p>
+<p>It returns a <code class="language-plaintext highlighter-rouge">200</code> status if ownership of all objects are successfully transferred. It returns a status of <code class="language-plaintext highlighter-rouge">400</code> if either the <code class="language-plaintext highlighter-rouge">fromName</code> and <code class="language-plaintext highlighter-rouge">toName</code> is invalid or for given username there is no user present.</p>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_release/notes.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_release/notes.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2995,7 +2995,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 04/08/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
