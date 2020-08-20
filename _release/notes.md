@@ -20,7 +20,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
 
-### For the  Analyst
+### For the Analyst
 
 <dl id="6-2-analyst">
   <dlentry id="geomaps">
@@ -31,7 +31,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
           <li><strong>Portugal</strong>: District, Municipality, Postcode</li>
           <li><strong>Italy</strong>: Improved regional name support</li>
         </ul>
-          </dd></dlentry>
+          </dd><dd><strong>Geomaps overview</strong>
+          <br>
+<script src="https://fast.wistia.com/embed/medias/u7prltvp9w.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_u7prltvp9w popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="table-config">
     <dt>Table configuration</dt>
     <dd>This release introduces a more intuitive way to configure your tables, including these new features:
@@ -64,7 +66,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
           <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li></ul>
     </dd></dlentry>
   <dlentry id="monitor">
-    <dt>Monitor<span class="label label-beta">Beta</span></dt>
+    <dt>Monitor <span class="label label-beta">Beta</span></dt>
     <dd>
       <ul>
         <li id="subscribe-others">
@@ -103,7 +105,11 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     </dd></dlentry>
   <dlentry id="answer-explorer">
     <dt>Answer Explorer v2</dt>
-    <dd>Updates to Answer Explorer in 6.2 introduce a cleaner user interface and allow users to add their own filters, comparisons, measures, and attributes to a visualization while in Explore mode. See <a href="{{ site.baseurl }}/end-user/pinboards/answer-explorer.html">Answer Explorer</a> for more information.</dd></dlentry>
+    <dd>Updates to Answer Explorer in 6.2 introduce a cleaner user interface and allow users to add their own filters, comparisons, measures, and attributes to a visualization while in Explore mode. See <a href="{{ site.baseurl }}/end-user/pinboards/answer-explorer.html">Answer Explorer</a> for more information.</dd>
+    <dd><strong>Answer Explorer overview</strong>
+    <br>
+    <script src="https://fast.wistia.com/embed/medias/e69konui8y.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_e69konui8y popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd>
+    </dlentry>
   <dlentry id="mobile-android">
     <dt>Mobile for Android</dt>
     <dd>In time for this release, you can download ThoughtSpot app for Android OS from the PlayStore. See <a href="{{ site.baseurl }}/admin/mobile/notes-mobile.html">ThoughtSpot Mobile release notes</a> and <a href="{{ site.baseurl }}/admin/mobile/use-mobile.html">ThoughtSpot Mobile overview</a>.</dd></dlentry>
@@ -137,7 +143,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <a href="{{"/data-integrate/dataflow/dataflow-azure-blob-storage.html" | prepend: site.baseurl}}">Azure Blob Storage</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-flat-files.html" | prepend: site.baseurl}}">Flat Files</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-google-cloud-storage.html" | prepend: site.baseurl}}">Google Cloud Storage</a>,
-<a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd></dlentry>
+<a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd><dd><strong>DataFlow overview</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/0850igo7wv.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_0850igo7wv popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
     <dd>In this release, Embrace supports two new data warehouses and includes new features.
@@ -184,7 +192,9 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
       <li><a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">View System Alerts Pinboard</a></li>
       <li><a href="{{ site.baseurl }}/admin/admin-portal/available-update.html">Monitor available cluster updates</a></li>
     </ul>
-    </dd></dlentry>
+    </dd><dd><strong>Admin Portal overview</strong>
+    <br>
+    <script src="https://fast.wistia.com/embed/medias/ic9rg4gru8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ic9rg4gru8 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry  id="in-memory-data-compression">
     <dt>In-memory data compression</dt>
     <dd>ThoughtSpot release 6.2 includes improvements to in-memory data compression. These improvements lower your RAM requirements and reduce the number of VMs you need for in-memory data, when deploying on a cloud platform. In release 6.2, ThoughtSpot added two new compression algorithms to the Dictionary compression that ThoughtSpot already supports. ThoughtSpot now supports <strong>LZ4</strong>, for <code>INT</code>, <code>BIGINT</code>, <code>DOUBLE</code>, and <code>FLOAT</code> data types, and <strong>RLE</strong>, for strings. See <a href="{{ site.baseurl }}/admin/architecture/data-compression.html">In-memory data compression</a> for more information. </dd></dlentry>
