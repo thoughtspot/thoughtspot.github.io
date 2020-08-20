@@ -2,7 +2,7 @@
 
 You can set up the relay host for SMTP from the Administration Portal.
 
-{% include note.html content="If you would like to use a custom port, rather than the default, port 25, you must configure SMTP using <code>tscli</code>." %}
+{% include note.html content="If you would like to use a custom port, rather than the default, port 25, you must configure SMTP using <code>tscli</code>, by running <code>tscli smtp set-relayhost &lt;IP_address&gt;:&lt;custom_port&gt;</code>." %}
 
 ### Set up relay host
 Navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **SMTP** from the side navigation bar that appears.
