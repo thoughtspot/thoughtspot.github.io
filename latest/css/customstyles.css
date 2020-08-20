@@ -887,6 +887,36 @@ a[data-toggle="tooltip"] {
     text-decoration:none;
 }
 
+/* special tooltip code for copy to clipboard - start */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+// position tooltip
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+/* special tooltip code for copy to clipboard -  */
+
 .seriesNext, .seriesContext {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1220,8 +1250,8 @@ span.label.label-primary {
 /* begin beta label */
 
 .label-beta {
-    background-color: #f4bb00;
-    color: #0e1e24;
+    background-color: #4E55FD;
+    color: #FFFFFF;
     margin-left: 2px;
     position: relative;
     top: -1px;
@@ -1331,6 +1361,40 @@ div.content {
 
 button.btn.btn-default.btn-lg.modalButton1 {
     margin-left: -20px;
+}
+
+/* copy to clipboard button - start */
+
+.btn-copy {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    display: inline;
+    float: right;
+    position: relative;
+    top: 50px;
+}
+
+.btn-copy:active {
+    outline: 0;
+    border: 0;
+}
+
+.copy-img {
+    width: 50px;
+    height: 50px;
+    content:url("/images/copy-outline.svg") no-repeat;
+}
+
+.copy-img:active {
+    content:url("/images/copy.svg") no-repeat;
+}
+
+/* copy to clipboard button - end */
+
+button.data-clipboard-text {
+    margin-left: -20px;
+    margin-top:-5px;
 }
 
 div.box.box1 {
@@ -1457,7 +1521,7 @@ img.inline {
     display: inline;
 }
 
-/* Begin copy code block css */
+/* copy to clipboard style - start */
 
 .copy-code-container {
   display: flex;
@@ -1488,7 +1552,7 @@ img.inline {
         width: 1em;
     }
 
-    /* This class will be toggled via JavaScript */
+    // This class will be toggled via JavaScript
     &.copied {
         &::before {
             content: "Copied!";
@@ -1500,7 +1564,8 @@ img.inline {
     }
 }
 
-/* end copy code block css */
+/* copy to clipboard style - end */
+
 
 
 /* BEGIN Localized keywords CSS */

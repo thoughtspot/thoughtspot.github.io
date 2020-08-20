@@ -17,8 +17,3 @@ const copyCode = (clickEvent) => {
 document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
   copyCodeButton.addEventListener('click', copyCode);
 });
-
-copyCodeButton.classList.add('copied');
-  setTimeout(() => {
-    copyCodeButton.classList.remove('copied');
-}, 2000);
