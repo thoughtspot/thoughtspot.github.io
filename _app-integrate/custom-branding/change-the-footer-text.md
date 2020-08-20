@@ -19,6 +19,8 @@ company-specific message.
 You can change the footer text to reflect your company's message. To change the
 footer text:
 
+1. Navigate to the Style Customization by clicking **Admin > Style Customization** from the top navigation bar. If the Style Customization page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+
 1. Click the text box under **Footer text**.
 2. Enter your new text message.
 
