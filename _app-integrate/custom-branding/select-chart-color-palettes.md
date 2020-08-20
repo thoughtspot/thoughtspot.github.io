@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 Although it is suggested that you stick with the default settings, it is possible to create your own appealing color palettes if done correctly.
 
 To select the chart color palettes:
-1. Navigate to the **Style Customization** page by selecting **Admin > Style Customization**. If the Style Customization option is not available, [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
+1. Navigate to the **Style Customization** page by selecting **Admin > Style Customization**. If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
