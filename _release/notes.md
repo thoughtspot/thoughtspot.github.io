@@ -11,7 +11,6 @@ ThoughtSpot version 6.2 is now available. These release notes include informatio
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
 * [6.2 New Features](#6-2-new)
-* [Early Access Programs](#early-access)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 
