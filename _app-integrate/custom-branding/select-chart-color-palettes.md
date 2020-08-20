@@ -9,6 +9,8 @@ You can change the color palettes that are used to create your charts. Although 
 
 To select the chart color palettes:
 
+1. Navigate to the Style Customization by clicking **Admin > Style Customization** from the top navigation bar. If the Style Customization page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
      ![Chart color palettes]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
