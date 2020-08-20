@@ -225,8 +225,8 @@ Please contact us if you are interested in participating in the <a href="mailto:
 If you are running one of the following versions, you can upgrade to the 6.2 release
 directly:
 
-* 5.3.x to 6.2
 * 6.0.x to 6.2
+* 6.1.x to 6.2
 
 This includes any hotfixes or customer patches on these branches.
 
