@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 To upload your own default and wide application logos:
 
-1. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/?showOnboarding=false&customBrandingEnabled=true#/admin/settings/style-customization`.
+1. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/admin/settings/style-customization`. If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
 
 1. Click the default icon under **Application Logo (Default)** to browse for and select your own default logo.
 
