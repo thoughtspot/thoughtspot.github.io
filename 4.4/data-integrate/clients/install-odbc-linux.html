@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /data-integrate/clients/install-odbc-linux.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/data-integrate/clients/install-odbc-linux.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/data-integrate/clients/install-odbc-linux.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/data-integrate/clients/install-odbc-linux.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/data-integrate/clients/install-odbc-linux.html</li>
+<li class="small-sidebar-link">newURL is /6.2/data-integrate/clients/install-odbc-linux.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/data-integrate/clients/install-odbc-linux.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2871,18 +2871,18 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Create a file on your Linux workstation called /etc/simbaclient.ini and add the following text to it:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
  ErrorMessagesPath=&lt;path_to_error_messages_directory&gt;
 </code></pre></div>    </div>
   </li>
   <li>Obtain the ODBC driver:
     <ol>
       <li>Navigate to the Downloads page in the Help Center to download the ODBC driver.</li>
-      <li>Click <strong>ODBC Driver for Linux</strong> to download the file <code class="highlighter-rouge">ThoughtSpot_linux_odbc_&lt;version&gt;.tar.gz</code>.</li>
+      <li>Click <strong>ODBC Driver for Linux</strong> to download the file <code class="language-plaintext highlighter-rouge">ThoughtSpot_linux_odbc_&lt;version&gt;.tar.gz</code>.</li>
       <li>
         <p>Unzip and untar the file:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_linux_odbc_&lt;version&gt;.tar.gz
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_linux_odbc_&lt;version&gt;.tar.gz
 
  tar -xvf ThoughtSpot_linux_odbc_&lt;version&gt;.tar
 </code></pre></div>        </div>
@@ -2890,31 +2890,31 @@ $('#toc').on('click', 'a', function() {
     </ol>
   </li>
   <li>
-    <p>Copy the library files from the Lib directory to a safe location on your Linux machine and add the corresponding path to the <code class="highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
+    <p>Copy the library files from the Lib directory to a safe location on your Linux machine and add the corresponding path to the <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
 
     <p>For 32-bit users, the library files are located in the directory:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /linux/Lib/Linux_x86
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /linux/Lib/Linux_x86
 </code></pre></div>    </div>
 
     <p>For 64-bit users, the library is located at:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /linux/Lib/Linux_x8664
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /linux/Lib/Linux_x8664
 </code></pre></div>    </div>
   </li>
-  <li>Open the file <code class="highlighter-rouge">/linux/Setup/odbc.ini</code> in the editor of your choice.</li>
-  <li>Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the <code class="highlighter-rouge">Description</code>.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/linux/Setup/odbc.ini</code> in the editor of your choice.</li>
+  <li>Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the <code class="language-plaintext highlighter-rouge">Description</code>.</li>
   <li>
-    <p>Find the line below it that begins with <code class="highlighter-rouge">ServerList</code> and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.</p>
+    <p>Find the line below it that begins with <code class="language-plaintext highlighter-rouge">ServerList</code> and replace 127.0.0.1 with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.</p>
 
-    <p>Leave the port number as 12345. The syntax for <code class="highlighter-rouge">ServerList</code> is:</p>
+    <p>Leave the port number as 12345. The syntax for <code class="language-plaintext highlighter-rouge">ServerList</code> is:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
 </code></pre></div>    </div>
 
     <p>For example, for the 64-bit ODBC driver:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot]
  Description = ThoughtSpot 64-bit ODBC Driver
  Driver = ThoughtSpot
  **ServerList = 192.168.2.249 12345, 192.168.2.148 12345, 192.168.2.247 12345**
@@ -2928,15 +2928,15 @@ $('#toc').on('click', 'a', function() {
  SCHEMA = # Set the default schema to connect to
 </code></pre></div>    </div>
 
-    <p>If you need to obtain the IP addresses of the nodes in the cluster, you can run the command <code class="highlighter-rouge">tscli node ls</code> from the Linux shell on the ThoughtSpot instance.</p>
+    <p>If you need to obtain the IP addresses of the nodes in the cluster, you can run the command <code class="language-plaintext highlighter-rouge">tscli node ls</code> from the Linux shell on the ThoughtSpot instance.</p>
   </li>
-  <li>Open the file <code class="highlighter-rouge">/linux/Setup/odbcinst.ini</code> in the editor of your choice.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/linux/Setup/odbcinst.ini</code> in the editor of your choice.</li>
   <li>
-    <p>Update the line that starts with <code class="highlighter-rouge">Driver</code> to have the path to the file <code class="highlighter-rouge">libSimbaClient.so</code></p>
+    <p>Update the line that starts with <code class="language-plaintext highlighter-rouge">Driver</code> to have the path to the file <code class="language-plaintext highlighter-rouge">libSimbaClient.so</code></p>
 
     <p>Use the path where you copied the library files. For example, for the 64-bit ODBC driver:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
  APILevel            = 1
  ConnectFunctions    = YYY
  Description         = ThoughtSpot 64bit ODBC driver
@@ -2953,7 +2953,7 @@ $('#toc').on('click', 'a', function() {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/install-odbc-linux.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/install-odbc-linux.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2976,7 +2976,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

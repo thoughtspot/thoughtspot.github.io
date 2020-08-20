@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/troubleshooting/formula-date-problem.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/troubleshooting/formula-date-problem.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/admin/troubleshooting/formula-date-problem.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/troubleshooting/formula-date-problem.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/troubleshooting/formula-date-problem.html</li>
+<li class="small-sidebar-link">newURL is /6.2/admin/troubleshooting/formula-date-problem.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/admin/troubleshooting/formula-date-problem.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2864,14 +2864,14 @@ $('#toc').on('click', 'a', function() {
 
 <p>Suppose you have created a worksheet that contains a formula called “weekday” defined as:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>day_of_week(date)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>day_of_week(date)
 </code></pre></div></div>
 
 <p>The output of that formula is the day of the week (Monday, Tuesday, etc.) returned as a text string (VARCHAR, ATTRIBUTE).</p>
 
 <p>Then suppose you create an answer using the worksheet as a source. And in the answer, you create another formula on top of the formula column in the worksheet. This formula is supposed to return the day of the week that is two days after the given day of the week:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>weekday + 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>weekday + 2
 </code></pre></div></div>
 
 <p>In this case, you have effectively created a formula on top of another formula. This works fine, so long as the data types in the worksheet formula can work in the answer formula. If not, you may not be able to save the answer, or open it once it has been saved. Here, the second formula you created does not work, because it is invalid. It is trying to subtract a number from a text string.</p>
@@ -2906,7 +2906,7 @@ $('#toc').on('click', 'a', function() {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/troubleshooting/formula-date-problem.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/troubleshooting/formula-date-problem.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2929,7 +2929,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

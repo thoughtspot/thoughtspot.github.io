@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/loading/datatypes.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/loading/datatypes.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/datatypes.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/loading/datatypes.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/loading/datatypes.html</li>
+<li class="small-sidebar-link">newURL is /6.2/admin/loading/datatypes.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/admin/loading/datatypes.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2875,37 +2875,37 @@ $('#toc').on('click', 'a', function() {
   <tbody>
     <tr>
       <td>Character</td>
-      <td><code class="highlighter-rouge">VARCHAR(*n*)</code></td>
-      <td>Specify the maximum number of characters, as in <code class="highlighter-rouge">VARCHAR(255)</code>. The size limit is 1GB for <code class="highlighter-rouge">VARCHAR</code> values.</td>
+      <td><code class="language-plaintext highlighter-rouge">VARCHAR(*n*)</code></td>
+      <td>Specify the maximum number of characters, as in <code class="language-plaintext highlighter-rouge">VARCHAR(255)</code>. The size limit is 1GB for <code class="language-plaintext highlighter-rouge">VARCHAR</code> values.</td>
     </tr>
     <tr>
       <td>Floating point</td>
-      <td><code class="highlighter-rouge">DOUBLE</code> or <code class="highlighter-rouge">FLOAT</code></td>
-      <td><code class="highlighter-rouge">DOUBLE</code> is recommended.</td>
+      <td><code class="language-plaintext highlighter-rouge">DOUBLE</code> or <code class="language-plaintext highlighter-rouge">FLOAT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DOUBLE</code> is recommended.</td>
     </tr>
     <tr>
       <td>Boolean</td>
-      <td><code class="highlighter-rouge">BOOL</code></td>
-      <td>Can be <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">BOOL</code></td>
+      <td>Can be <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>.</td>
     </tr>
     <tr>
       <td>Integer</td>
-      <td><code class="highlighter-rouge">INT</code> or <code class="highlighter-rouge">BIGINT</code></td>
-      <td><code class="highlighter-rouge">INT</code> holds 32 bits. <code class="highlighter-rouge">BIGINT</code> holds 64 bits.</td>
+      <td><code class="language-plaintext highlighter-rouge">INT</code> or <code class="language-plaintext highlighter-rouge">BIGINT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">INT</code> holds 32 bits. <code class="language-plaintext highlighter-rouge">BIGINT</code> holds 64 bits.</td>
     </tr>
     <tr>
       <td>Date or time</td>
-      <td><code class="highlighter-rouge">DATE</code>,  <code class="highlighter-rouge">DATETIME</code>, <code class="highlighter-rouge">TIMESTAMP</code>, <code class="highlighter-rouge">TIME</code></td>
-      <td><code class="highlighter-rouge">DATETIME</code>, <code class="highlighter-rouge">TIMESTAMP</code>, and <code class="highlighter-rouge">TIME</code> are stored at the granularity of seconds. <code class="highlighter-rouge">TIMESTAMP</code> is identical to <code class="highlighter-rouge">DATETIME</code>, but is included for syntax compatibility.</td>
+      <td><code class="language-plaintext highlighter-rouge">DATE</code>,  <code class="language-plaintext highlighter-rouge">DATETIME</code>, <code class="language-plaintext highlighter-rouge">TIMESTAMP</code>, <code class="language-plaintext highlighter-rouge">TIME</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DATETIME</code>, <code class="language-plaintext highlighter-rouge">TIMESTAMP</code>, and <code class="language-plaintext highlighter-rouge">TIME</code> are stored at the granularity of seconds. <code class="language-plaintext highlighter-rouge">TIMESTAMP</code> is identical to <code class="language-plaintext highlighter-rouge">DATETIME</code>, but is included for syntax compatibility.</td>
     </tr>
   </tbody>
 </table>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> There is a 1GB limitation on the number of characters for <code class="highlighter-rouge">VARCHAR</code>. If you have any <code class="highlighter-rouge">VARCHAR</code> data that exceeds this limit, the entire load will fail.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> There is a 1GB limitation on the number of characters for <code class="language-plaintext highlighter-rouge">VARCHAR</code>. If you have any <code class="language-plaintext highlighter-rouge">VARCHAR</code> data that exceeds this limit, the entire load will fail.</div>
 
 <h2 id="geographical-data-types">Geographical data types</h2>
 
-<p>For geographical data types, use VARCHAR. For latitude and longitude, you can use either <code class="highlighter-rouge">VARCHAR</code> or <code class="highlighter-rouge">DOUBLE</code>. After loading the data, designate it as a geographical data type when you <a href="/4.4/admin/data-modeling/edit-model-file.html#">Edit the system-wide data model</a>. Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.</p>
+<p>For geographical data types, use VARCHAR. For latitude and longitude, you can use either <code class="language-plaintext highlighter-rouge">VARCHAR</code> or <code class="language-plaintext highlighter-rouge">DOUBLE</code>. After loading the data, designate it as a geographical data type when you <a href="/4.4/admin/data-modeling/edit-model-file.html#">Edit the system-wide data model</a>. Wherever abbreviations or codes are used, they are the same as what the USPS (United States Postal Service) recognizes.</p>
 
 <p>These data types can be designated as geographical data, which enables them to be visualized using the Geo chart types:</p>
 
@@ -2914,53 +2914,53 @@ $('#toc').on('click', 'a', function() {
     <ul>
       <li>United States
         <ul>
-          <li><code class="highlighter-rouge">long name</code>: United States</li>
-          <li><code class="highlighter-rouge">name_sort</code>: United States of America</li>
-          <li><code class="highlighter-rouge">abbreviation</code>: U.S.A.</li>
-          <li><code class="highlighter-rouge">adm0_a3</code>: USA</li>
-          <li><code class="highlighter-rouge">adm0_a3_is</code>: USA</li>
-          <li><code class="highlighter-rouge">adm0_a3_us</code>: USA</li>
-          <li><code class="highlighter-rouge">admin</code>: United States of America</li>
-          <li><code class="highlighter-rouge">brk_a3</code>: USA</li>
-          <li><code class="highlighter-rouge">brk_name</code>: United States</li>
-          <li><code class="highlighter-rouge">formal_en</code>: United States of America</li>
-          <li><code class="highlighter-rouge">iso_a2</code>: US</li>
-          <li><code class="highlighter-rouge">iso_a3</code>: USA</li>
-          <li><code class="highlighter-rouge">iso_n3</code>: 840</li>
+          <li><code class="language-plaintext highlighter-rouge">long name</code>: United States</li>
+          <li><code class="language-plaintext highlighter-rouge">name_sort</code>: United States of America</li>
+          <li><code class="language-plaintext highlighter-rouge">abbreviation</code>: U.S.A.</li>
+          <li><code class="language-plaintext highlighter-rouge">adm0_a3</code>: USA</li>
+          <li><code class="language-plaintext highlighter-rouge">adm0_a3_is</code>: USA</li>
+          <li><code class="language-plaintext highlighter-rouge">adm0_a3_us</code>: USA</li>
+          <li><code class="language-plaintext highlighter-rouge">admin</code>: United States of America</li>
+          <li><code class="language-plaintext highlighter-rouge">brk_a3</code>: USA</li>
+          <li><code class="language-plaintext highlighter-rouge">brk_name</code>: United States</li>
+          <li><code class="language-plaintext highlighter-rouge">formal_en</code>: United States of America</li>
+          <li><code class="language-plaintext highlighter-rouge">iso_a2</code>: US</li>
+          <li><code class="language-plaintext highlighter-rouge">iso_a3</code>: USA</li>
+          <li><code class="language-plaintext highlighter-rouge">iso_n3</code>: 840</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">COUNTY</code> for counties in the United States, for example:
+  <li><code class="language-plaintext highlighter-rouge">COUNTY</code> for counties in the United States, for example:
     <ul>
       <li>santa clara county</li>
       <li>pike county, ohio</li>
       <li>pike county, OH</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">STATE_PROVINCE</code> for states in the United States, for example:
+  <li><code class="language-plaintext highlighter-rouge">STATE_PROVINCE</code> for states in the United States, for example:
     <ul>
-      <li><code class="highlighter-rouge">name</code>: California</li>
-      <li><code class="highlighter-rouge">US Postal Service abbreviation</code>: CA</li>
+      <li><code class="language-plaintext highlighter-rouge">name</code>: California</li>
+      <li><code class="language-plaintext highlighter-rouge">US Postal Service abbreviation</code>: CA</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">LATITUDE</code> which must be used with <code class="highlighter-rouge">LONGITUDE</code>, for example:
+  <li><code class="language-plaintext highlighter-rouge">LATITUDE</code> which must be used with <code class="language-plaintext highlighter-rouge">LONGITUDE</code>, for example:
     <ul>
       <li>37.421023</li>
       <li>1.282911</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">LONGITUDE</code> which must be used with <code class="highlighter-rouge">LATITUDE</code>
+  <li><code class="language-plaintext highlighter-rouge">LONGITUDE</code> which must be used with <code class="language-plaintext highlighter-rouge">LATITUDE</code>
     <ul>
       <li>122.142103</li>
       <li>103.848865</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">ZIP_CODE</code> for zip codes and zip codes +4 in the United States
+  <li><code class="language-plaintext highlighter-rouge">ZIP_CODE</code> for zip codes and zip codes +4 in the United States
     <ul>
-      <li><code class="highlighter-rouge">po_name</code>: MT MEADOWS AREA</li>
-      <li><code class="highlighter-rouge">ZIP</code>: “00012”</li>
-      <li><code class="highlighter-rouge">zip2</code>: 12</li>
+      <li><code class="language-plaintext highlighter-rouge">po_name</code>: MT MEADOWS AREA</li>
+      <li><code class="language-plaintext highlighter-rouge">ZIP</code>: “00012”</li>
+      <li><code class="language-plaintext highlighter-rouge">zip2</code>: 12</li>
     </ul>
   </li>
   <li>Other Sub-nation Regions which are administrative regions found in countries other than the United States, for example:
@@ -2978,7 +2978,7 @@ $('#toc').on('click', 'a', function() {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/datatypes.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/datatypes.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3009,7 +3009,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

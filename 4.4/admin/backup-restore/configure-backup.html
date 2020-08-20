@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/backup-restore/configure-backup.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/backup-restore/configure-backup.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/admin/backup-restore/configure-backup.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/backup-restore/configure-backup.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/backup-restore/configure-backup.html</li>
+<li class="small-sidebar-link">newURL is /6.2/admin/backup-restore/configure-backup.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/admin/backup-restore/configure-backup.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2862,7 +2862,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>The format for a policy includes the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: "name_for_backup"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: "name_for_backup"
 param {
     mode: FULL | DATALESS | LIGHTWEIGHT
     type: STANDALONE
@@ -2888,7 +2888,7 @@ storage_type: NAS | LOCAL
 
 <p>Before creating a policy, make sure you have read <a href="how-to-create-a-schedule.html">Understand backup/snapshot
 schedules</a> for information on configuring a
-<code class="highlighter-rouge">schedule</code> element. In addition, you must specify:</p>
+<code class="language-plaintext highlighter-rouge">schedule</code> element. In addition, you must specify:</p>
 
 <table>
   <thead>
@@ -2899,29 +2899,29 @@ schedules</a> for information on configuring a
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">mode</code></td>
-      <td>The backup mode. <code class="highlighter-rouge">FULL</code> backups are necessary for restoring a cluster. See <a href="backup-modes.html">Work with backups</a> for details on each backup mode.</td>
+      <td><code class="language-plaintext highlighter-rouge">mode</code></td>
+      <td>The backup mode. <code class="language-plaintext highlighter-rouge">FULL</code> backups are necessary for restoring a cluster. See <a href="backup-modes.html">Work with backups</a> for details on each backup mode.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">type</code></td>
-      <td>Currently, only <code class="highlighter-rouge">STANDALONE</code> is supported.</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>Currently, only <code class="language-plaintext highlighter-rouge">STANDALONE</code> is supported.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">directory</code></td>
+      <td><code class="language-plaintext highlighter-rouge">directory</code></td>
       <td>The location on the disk to place the backup.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">storage_type</code></td>
-      <td>The type of storage you are using. <code class="highlighter-rouge">NAS</code> storage is recommended for <code class="highlighter-rouge">FULL</code> backups.</td>
+      <td><code class="language-plaintext highlighter-rouge">storage_type</code></td>
+      <td>The type of storage you are using. <code class="language-plaintext highlighter-rouge">NAS</code> storage is recommended for <code class="language-plaintext highlighter-rouge">FULL</code> backups.</td>
     </tr>
   </tbody>
 </table>
 
 <p>Backups cannot start when another backup is still running. So, choose a
-reasonable frequency for the mode in you policy. For example, a <code class="highlighter-rouge">FULL</code> backup
-takes longer than a <code class="highlighter-rouge">DATALESS</code> backup. Consider the load on the system when
+reasonable frequency for the mode in you policy. For example, a <code class="language-plaintext highlighter-rouge">FULL</code> backup
+takes longer than a <code class="language-plaintext highlighter-rouge">DATALESS</code> backup. Consider the load on the system when
 configuring. Do not backup up when the system would experience a heavy load. For
-example, you may want to take <code class="highlighter-rouge">FULL</code> backups late in the evening or on weekends.</p>
+example, you may want to take <code class="language-plaintext highlighter-rouge">FULL</code> backups late in the evening or on weekends.</p>
 
 <p>The retention system deletes the oldest stored backup and the corresponding
 snapshot on a first-in first-out basis (FIFO). The deletion takes places
@@ -2937,21 +2937,21 @@ taking a backup.</p>
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
-    <p>Find a directory with enough disk space to support the <code class="highlighter-rouge">retention_policy number</code> you configure.</p>
+    <p>Find a directory with enough disk space to support the <code class="language-plaintext highlighter-rouge">retention_policy number</code> you configure.</p>
 
-    <p>You can use <code class="highlighter-rouge">df -h</code> to see free disk space and <code class="highlighter-rouge">tscli snapshot ls</code> to view existing snapshots and their size on disk.</p>
+    <p>You can use <code class="language-plaintext highlighter-rouge">df -h</code> to see free disk space and <code class="language-plaintext highlighter-rouge">tscli snapshot ls</code> to view existing snapshots and their size on disk.</p>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli backup-policy create</code> command.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli backup-policy create</code> command.</p>
 
-    <p>The command opens a <code class="highlighter-rouge">vi</code> editor for you to configure the backup policy.</p>
+    <p>The command opens a <code class="language-plaintext highlighter-rouge">vi</code> editor for you to configure the backup policy.</p>
   </li>
   <li>
     <p>Write and save the file to store your configuration.</p>
 
-    <p>By default, newly created policies are automatically enabled. To disable a policy, use the <code class="highlighter-rouge">tscli backup-policy disable</code> command.</p>
+    <p>By default, newly created policies are automatically enabled. To disable a policy, use the <code class="language-plaintext highlighter-rouge">tscli backup-policy disable</code> command.</p>
   </li>
-  <li>Verify the policy using the <code class="highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</li>
+  <li>Verify the policy using the <code class="language-plaintext highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</li>
 </ol>
 
 <p>The following table lists some additional backup commands you can use.</p>
@@ -2966,34 +2966,34 @@ taking a backup.</p>
   <tbody>
     <tr>
       <td>List present backup policies.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy ls</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy ls</code></td>
     </tr>
     <tr>
       <td>Show a backup policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy show &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy show &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Check the status of a policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy status &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy status &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Change an existing policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy update &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy update &lt;name&gt;</code></td>
     </tr>
     <tr>
       <td>Disable or enable an existing policy.</td>
-      <td><code class="highlighter-rouge">tscli backup-policy disable</code> or <code class="highlighter-rouge">enable</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy disable</code> or <code class="language-plaintext highlighter-rouge">enable</code></td>
     </tr>
     <tr>
       <td>Delete a policy</td>
-      <td><code class="highlighter-rouge">tscli backup-policy delete &lt;name&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tscli backup-policy delete &lt;name&gt;</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>Finally, you can time a <code class="highlighter-rouge">crontab</code> job with your periodic backup configuration to
-move a backup to longer term storage. Simply create a <code class="highlighter-rouge">crontab</code> job that moves
-the backup to a location outside of the <code class="highlighter-rouge">directory</code> defined in the periodic
+<p>Finally, you can time a <code class="language-plaintext highlighter-rouge">crontab</code> job with your periodic backup configuration to
+move a backup to longer term storage. Simply create a <code class="language-plaintext highlighter-rouge">crontab</code> job that moves
+the backup to a location outside of the <code class="language-plaintext highlighter-rouge">directory</code> defined in the periodic
 schedule.</p>
 
   <div class="tags">
@@ -3001,7 +3001,7 @@ schedule.</p>
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/backup-restore/configure-backup.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/backup-restore/configure-backup.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3024,7 +3024,7 @@ schedule.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

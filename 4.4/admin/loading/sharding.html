@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/loading/sharding.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/admin/loading/sharding.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/sharding.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/admin/loading/sharding.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/admin/loading/sharding.html</li>
+<li class="small-sidebar-link">newURL is /6.2/admin/loading/sharding.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/admin/loading/sharding.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2884,14 +2884,14 @@ dimension table is known as <em>co-sharding</em>.</p>
 <p>Sharding is a type partitioning and is sometimes called <em>Horizontal
 partitioning</em>. The term sharding is particular to situations where data is
 distributed not only among tables but across nodes in a system. To create a
-sharded table add the add <code class="highlighter-rouge">PARTITION BY HASH ( )</code> clause to your <code class="highlighter-rouge">CREATE TABLE</code>
+sharded table add the add <code class="language-plaintext highlighter-rouge">PARTITION BY HASH ( )</code> clause to your <code class="language-plaintext highlighter-rouge">CREATE TABLE</code>
 statement.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE ...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE ...
 ...PARTITION BY HASH (96) KEY ("customer_id");
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">HASH</code> parameter determines the number of shards and the <code class="highlighter-rouge">KEY</code> parameter the
+<p>The <code class="language-plaintext highlighter-rouge">HASH</code> parameter determines the number of shards and the <code class="language-plaintext highlighter-rouge">KEY</code> parameter the
 sharding key. The recommended number of shards depends upon the number of nodes
 in your cluster:</p>
 
@@ -2942,14 +2942,14 @@ in your cluster:</p>
   </tbody>
 </table>
 
-<p>If you omit the <code class="highlighter-rouge">PARTION BY HASH</code> statement or if the <code class="highlighter-rouge">HASH</code> parameter is 1
+<p>If you omit the <code class="language-plaintext highlighter-rouge">PARTION BY HASH</code> statement or if the <code class="language-plaintext highlighter-rouge">HASH</code> parameter is 1
 (one), the table is unsharded. This also means the table physically exists in
 its entirety on each node.</p>
 
 <p>If you want to use the primary key for sharding, specify that the table
-is to be partitioned by <code class="highlighter-rouge">HASH</code> on the primary key, as in this example:</p>
+is to be partitioned by <code class="language-plaintext highlighter-rouge">HASH</code> on the primary key, as in this example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE "supplier" (
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE "supplier" (
   "s_suppkey" BIGINT,
   "s_name" VARCHAR(255),
   "s_address" VARCHAR(255),
@@ -2960,9 +2960,9 @@ is to be partitioned by <code class="highlighter-rouge">HASH</code> on the prima
 </code></pre></div></div>
 
 <p>The system does not use primary keys as sharding keys by default. If you specify
-the <code class="highlighter-rouge">PARTION BY HASH</code> statement with a <code class="highlighter-rouge">HASH</code> greater than 1 (one) <em>but omit the
-<code class="highlighter-rouge">KEY</code> parameter</em> ThoughtSpot shards the table randomly. This is not recommended;
-avoid this by always ensuring you specify the <code class="highlighter-rouge">KEY</code> parameter with a HASH
+the <code class="language-plaintext highlighter-rouge">PARTION BY HASH</code> statement with a <code class="language-plaintext highlighter-rouge">HASH</code> greater than 1 (one) <em>but omit the
+<code class="language-plaintext highlighter-rouge">KEY</code> parameter</em> ThoughtSpot shards the table randomly. This is not recommended;
+avoid this by always ensuring you specify the <code class="language-plaintext highlighter-rouge">KEY</code> parameter with a HASH
 greater than 1 (one).</p>
 
 <h2 id="how-to-choose-a-shard-key">How to choose a shard key</h2>
@@ -2976,7 +2976,7 @@ the number of shards and the size of any single shard.</p>
 number of rows with each value in that column). This value is typically part of
 the primary key, but it can include other columns. For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE "sales_fact"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE "sales_fact"
   ("saleid" int,
   "locationid" int,
   "vendorid" int,
@@ -2989,7 +2989,7 @@ PARTITION BY HASH(96)
 KEY ("saleid");
 </code></pre></div></div>
 
-<p>Notice the shard key contains the <code class="highlighter-rouge">saleid</code> value that is also part of the
+<p>Notice the shard key contains the <code class="language-plaintext highlighter-rouge">saleid</code> value that is also part of the
 primary key. When creating a shard key use these guidelines.</p>
 
 <ul>
@@ -3006,29 +3006,29 @@ use the same shard key.</p>
     <p>This guideline ensures better join performance. So, for example, if you have two tables
 and the primary keys are:</p>
 
-    <p><code class="highlighter-rouge">PRIMARY KEY("saleid,vendorid")</code> on A
-<code class="highlighter-rouge">PRIMARY KEY("saleid,custerid")</code> on B</p>
+    <p><code class="language-plaintext highlighter-rouge">PRIMARY KEY("saleid,vendorid")</code> on A
+<code class="language-plaintext highlighter-rouge">PRIMARY KEY("saleid,custerid")</code> on B</p>
 
-    <p>You should use <code class="highlighter-rouge">saleid</code> for your shared key when you shard both table A and B.</p>
+    <p>You should use <code class="language-plaintext highlighter-rouge">saleid</code> for your shared key when you shard both table A and B.</p>
   </li>
   <li>
     <p>Choose a shard key so that the data is distributed well across the keys.</p>
 
     <p>For example, suppose the table you want to shard has a primary key made up of
-<code class="highlighter-rouge">saleid</code>,<code class="highlighter-rouge">custid</code>,and <code class="highlighter-rouge">locationid</code>. If you have 10K sales but 400 locations,
-and 2000 customers, you would not want to use the <code class="highlighter-rouge">locationid</code> in your shard
+<code class="language-plaintext highlighter-rouge">saleid</code>,<code class="language-plaintext highlighter-rouge">custid</code>,and <code class="language-plaintext highlighter-rouge">locationid</code>. If you have 10K sales but 400 locations,
+and 2000 customers, you would not want to use the <code class="language-plaintext highlighter-rouge">locationid</code> in your shard
 key if 5k sales were concentrated in just 2 locations. The result would be
 data in fewer shards and degrade your performance. Instead, your shard
-key may be <code class="highlighter-rouge">custid</code>,and <code class="highlighter-rouge">locationid</code>.</p>
+key may be <code class="language-plaintext highlighter-rouge">custid</code>,and <code class="language-plaintext highlighter-rouge">locationid</code>.</p>
   </li>
   <li>
     <p>Choose a shard key that results in a wide variety of keys.</p>
 
     <p>For example, suppose the table you want to shard has a primary key made up of
-<code class="highlighter-rouge">saleid</code>,<code class="highlighter-rouge">productid</code>,and <code class="highlighter-rouge">locationid</code>. Suppose the table has  10K sales, 40
+<code class="language-plaintext highlighter-rouge">saleid</code>,<code class="language-plaintext highlighter-rouge">productid</code>,and <code class="language-plaintext highlighter-rouge">locationid</code>. Suppose the table has  10K sales, 40
 locations, and 200 products. If the sales are evenly distributed across
-locations you would not want to use the <code class="highlighter-rouge">locationid</code> in your shard key.
-Instead, <code class="highlighter-rouge">saleid</code> and <code class="highlighter-rouge">productid</code> would be the better choice as it results in
+locations you would not want to use the <code class="language-plaintext highlighter-rouge">locationid</code> in your shard key.
+Instead, <code class="language-plaintext highlighter-rouge">saleid</code> and <code class="language-plaintext highlighter-rouge">productid</code> would be the better choice as it results in
 a wider variety of keys.</p>
   </li>
 </ul>
@@ -3063,10 +3063,10 @@ dimension tables use the same columns. Specifically, the tables must:</p>
 for you. Co-sharded tables are always joined on the sharding key. Data skew can
 develop if a very large proportion of the rows have the same sharding key.</p>
 
-<p>This example shows the <code class="highlighter-rouge">CREATE TABLE</code> statements that meet the criteria for
+<p>This example shows the <code class="language-plaintext highlighter-rouge">CREATE TABLE</code> statements that meet the criteria for
 sharding both a fact table and its dimension table:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE products_dim (
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; CREATE TABLE products_dim (
   "id" int,
   "prod_name" varchar(30),
   "prod_desc" varchar(100),
@@ -3103,7 +3103,7 @@ ThoughtSpot recommends that you use a common shard key for two fact tables.</p>
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/sharding.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_admin/loading/sharding.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3126,7 +3126,7 @@ ThoughtSpot recommends that you use a common shard key for two fact tables.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

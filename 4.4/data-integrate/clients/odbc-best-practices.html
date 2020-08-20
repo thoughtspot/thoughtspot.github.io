@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /data-integrate/clients/odbc-best-practices.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/data-integrate/clients/odbc-best-practices.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/data-integrate/clients/odbc-best-practices.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/data-integrate/clients/odbc-best-practices.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/data-integrate/clients/odbc-best-practices.html</li>
+<li class="small-sidebar-link">newURL is /6.2/data-integrate/clients/odbc-best-practices.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/data-integrate/clients/odbc-best-practices.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2868,13 +2868,13 @@ $('#toc').on('click', 'a', function() {
     <p>After setting up the initial load and ensuring that it works, you may find that there are persistent problems with the incremental load using ODBC. You can enable ODBC logs and send them to ThoughtSpot Support for further investigation.</p>
   </li>
   <li>
-    <p>You should create the parameterized SQL statement outside of ODBC. Using this method, the SQL statement can be sent to ThoughtSpot in batches by the ODBC driver, so you only have to update the memory itself. ETL tools have this implemented already (end users shouldn’t have to actually write the <code class="highlighter-rouge">INSERT</code> statement). But as a developer, you may be writing code that leverages the ODBC driver, so this tip can help you write your SQL for the best performance with the driver.</p>
+    <p>You should create the parameterized SQL statement outside of ODBC. Using this method, the SQL statement can be sent to ThoughtSpot in batches by the ODBC driver, so you only have to update the memory itself. ETL tools have this implemented already (end users shouldn’t have to actually write the <code class="language-plaintext highlighter-rouge">INSERT</code> statement). But as a developer, you may be writing code that leverages the ODBC driver, so this tip can help you write your SQL for the best performance with the driver.</p>
   </li>
   <li>
     <p>Data can be loaded into a table through multiple parallel connections. This can be achieved by splitting the input data into multiple parts, and loading those individual parts through multiple parallel connections. The parallel loading can be used even while loading to a single table or multiple tables at the same time.</p>
   </li>
   <li>
-    <p>When doing an incremental data load, note that the same <code class="highlighter-rouge">UPSERT</code> behavior that occurs via TQL will apply. This means that if you import a row whose primary key matches to an existing row, the existing row will be updated with the new values.</p>
+    <p>When doing an incremental data load, note that the same <code class="language-plaintext highlighter-rouge">UPSERT</code> behavior that occurs via TQL will apply. This means that if you import a row whose primary key matches to an existing row, the existing row will be updated with the new values.</p>
   </li>
 </ul>
 
@@ -2883,7 +2883,7 @@ $('#toc').on('click', 'a', function() {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/odbc-best-practices.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/odbc-best-practices.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2906,7 +2906,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

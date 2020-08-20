@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /advanced-search/formulas/date-formulas.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is advanced-search.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/advanced-search/formulas/date-formulas.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/advanced-search/formulas/date-formulas.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/advanced-search/formulas/date-formulas.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/advanced-search/formulas/date-formulas.html</li>
+<li class="small-sidebar-link">newURL is /6.2/advanced-search/formulas/date-formulas.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/advanced-search/formulas/date-formulas.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3052,8 +3052,8 @@ var ss360Config = {
 <p>The following example shows you how to create formulas that you can use to compare data from this week to last week.</p>
 
 <ul>
-  <li>The formula for this week is: <code class="highlighter-rouge">week ( today () ) - week (date)</code></li>
-  <li>The formula for last week is: <code class="highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
+  <li>The formula for this week is: <code class="language-plaintext highlighter-rouge">week ( today () ) - week (date)</code></li>
+  <li>The formula for last week is: <code class="language-plaintext highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
 </ul>
 
 <h3 id="example-2">Example 2</h3>
@@ -3061,9 +3061,9 @@ var ss360Config = {
 <p>The following example shows you how to calculate the percent increase from the last date period to this period in terms of revenue.</p>
 
 <ol>
-  <li>Create the formula: <code class="highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
-  <li>Then create the formula: <code class="highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
-  <li>Use <a href="/4.4/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
+  <li>Create the formula: <code class="language-plaintext highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
+  <li>Then create the formula: <code class="language-plaintext highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
+  <li>Use <a href="/4.4/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="language-plaintext highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
 </ol>
 
   <div class="tags">
@@ -3071,7 +3071,7 @@ var ss360Config = {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_advanced-search/formulas/date-formulas.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_advanced-search/formulas/date-formulas.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -3094,7 +3094,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

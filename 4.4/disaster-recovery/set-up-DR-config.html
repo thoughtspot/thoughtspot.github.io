@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /disaster-recovery/set-up-DR-config.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is disaster-recovery.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/disaster-recovery/set-up-DR-config.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/disaster-recovery/set-up-DR-config.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/disaster-recovery/set-up-DR-config.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/disaster-recovery/set-up-DR-config.html</li>
+<li class="small-sidebar-link">newURL is /6.2/disaster-recovery/set-up-DR-config.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/disaster-recovery/set-up-DR-config.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2867,7 +2867,7 @@ $('#toc').on('click', 'a', function() {
   <li>Log in to the primary appliance, and set it up to take periodic backups and write them to the shared backup directory (in a SAN or shared NFS-mounted drive):</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
 $ tscli backup set-periodic --at &lt;hour1,hour2,...&gt; --directory &lt;shared_backup_directory&gt; [--num_backups &lt;num_backups&gt;]
 ```
 
@@ -2879,11 +2879,11 @@ $ tscli backup set-periodic --at 01,17 --directory /mnt/thoughtspot_backups --nu
 </code></pre></div></div>
 
 <ol>
-  <li>Run <code class="highlighter-rouge">tscli backup periodic-config</code> to check whether the periodic backup is set correctly.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">tscli backup periodic-config</code> to check whether the periodic backup is set correctly.</li>
   <li>Designate the mirror appliance cluster to act as a mirror:</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
 $ tscli backup start-mirror &lt;shared_backup_directory&gt; &lt;mirror_node1_IP,mirror_node2_IP,...&gt; &lt;mirror_cluster_name&gt; &lt;mirror_cluster_id&gt;
 ```
 
@@ -2898,7 +2898,7 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
   <li>
     <p>It may take some time for the cluster to begin acting as a mirror. Issue the command to verify that the cluster has started running in mirror mode:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup mirror-status
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup mirror-status
 </code></pre></div>    </div>
 
     <p>You can use this command in the future to check whether the mirror cluster is up to date.</p>
@@ -2910,7 +2910,7 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_disaster-recovery/set-up-DR-config.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_disaster-recovery/set-up-DR-config.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2933,7 +2933,7 @@ $ tscli backup start-mirror /mnt/thoughtspot_backups 192.168.2.111, 192.168.2.11
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

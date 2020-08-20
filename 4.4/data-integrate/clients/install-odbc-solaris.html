@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /data-integrate/clients/install-odbc-solaris.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/data-integrate/clients/install-odbc-solaris.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/data-integrate/clients/install-odbc-solaris.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/data-integrate/clients/install-odbc-solaris.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/data-integrate/clients/install-odbc-solaris.html</li>
+<li class="small-sidebar-link">newURL is /6.2/data-integrate/clients/install-odbc-solaris.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/data-integrate/clients/install-odbc-solaris.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2869,20 +2869,20 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li>
-    <p>Create a file on your Solaris workstation called <code class="highlighter-rouge">/etc/simbaclient.ini</code> and add the following text to it:</p>
+    <p>Create a file on your Solaris workstation called <code class="language-plaintext highlighter-rouge">/etc/simbaclient.ini</code> and add the following text to it:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
  ErrorMessagesPath=&lt;path_to_error_messages_directory&gt;
 </code></pre></div>    </div>
   </li>
   <li>Obtain the ODBC driver:
     <ol>
       <li>Navigate to the Downloads page in the Help Center to download the ODBC driver.</li>
-      <li>Click <strong>ODBC Driver for Solaris</strong> to download the file <code class="highlighter-rouge">ThoughtSpot_solaris_sparc_odbc_&lt;version&gt;.tar.gz</code>.</li>
+      <li>Click <strong>ODBC Driver for Solaris</strong> to download the file <code class="language-plaintext highlighter-rouge">ThoughtSpot_solaris_sparc_odbc_&lt;version&gt;.tar.gz</code>.</li>
       <li>
         <p>Unzip and untar the file:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_solaris_sparc_odbc_&lt;version&gt;.tar.gz
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_solaris_sparc_odbc_&lt;version&gt;.tar.gz
 
  tar -xvf ThoughtSpot_solaris_sparc_odbc_&lt;version&gt;.tar
 </code></pre></div>        </div>
@@ -2891,29 +2891,29 @@ $('#toc').on('click', 'a', function() {
   </li>
   <li>Copy the library files from the Lib directory to a safe location on your Solaris machine.</li>
   <li>
-    <p>Add the corresponding path to the <code class="highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
+    <p>Add the corresponding path to the <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
 
     <p>For 32-bit users, the library files are located in the directory:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /solaris_sparc/Lib/Solaris_sparc_gcc
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /solaris_sparc/Lib/Solaris_sparc_gcc
 </code></pre></div>    </div>
 
     <p>For 64-bit users, the library is located at:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /solaris_sparc/Lib/Solaris_sparc64_gcc
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /solaris_sparc/Lib/Solaris_sparc64_gcc
 </code></pre></div>    </div>
   </li>
-  <li>Open the file <code class="highlighter-rouge">/solaris_sparc/Setup/odbc.ini</code> in the editor of your choice.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/solaris_sparc/Setup/odbc.ini</code> in the editor of your choice.</li>
   <li>
-    <p>Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the <code class="highlighter-rouge">Description</code>.
-Find the line below it that begins with <code class="highlighter-rouge">ServerList</code>, and replace <code class="highlighter-rouge">127.0.0.1</code> with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as <code class="highlighter-rouge">12345</code>. The syntax for <code class="highlighter-rouge">ServerList</code> is:</p>
+    <p>Find the section for the type of Linux you are using (32-bit or 64-bit), by looking at the <code class="language-plaintext highlighter-rouge">Description</code>.
+Find the line below it that begins with <code class="language-plaintext highlighter-rouge">ServerList</code>, and replace <code class="language-plaintext highlighter-rouge">127.0.0.1</code> with a comma separated list of the IP addresses of each node on the ThoughtSpot instance. Leave the port number as <code class="language-plaintext highlighter-rouge">12345</code>. The syntax for <code class="language-plaintext highlighter-rouge">ServerList</code> is:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
 </code></pre></div>    </div>
 
     <p>For example, for the 64-bit ODBC driver:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot_x64]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot_x64]
  Description         = ThoughtSpot 64-bit ODBC Driver
  Driver              = ThoughtSpot(x64)
  **ServerList = 192.168.2.249 12345, 192.168.2.148 12345, 192.168.2.247 12345**
@@ -2927,15 +2927,15 @@ Find the line below it that begins with <code class="highlighter-rouge">ServerLi
  SCHEMA              =   # Set the default schema to connect to
 </code></pre></div>    </div>
 
-    <p>If you need to obtain the IP addresses of the nodes in the cluster, you can run the command <code class="highlighter-rouge">tscli node ls</code> from the Linux shell on the ThoughtSpot instance.</p>
+    <p>If you need to obtain the IP addresses of the nodes in the cluster, you can run the command <code class="language-plaintext highlighter-rouge">tscli node ls</code> from the Linux shell on the ThoughtSpot instance.</p>
   </li>
-  <li>Open the file <code class="highlighter-rouge">/solaris_sparc/Setup/odbcinst.ini</code> in the editor of your choice.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/solaris_sparc/Setup/odbcinst.ini</code> in the editor of your choice.</li>
   <li>
-    <p>Update the the line that starts with <code class="highlighter-rouge">Driver</code> to have the path to the file <code class="highlighter-rouge">libSimbaClient.so</code></p>
+    <p>Update the the line that starts with <code class="language-plaintext highlighter-rouge">Driver</code> to have the path to the file <code class="language-plaintext highlighter-rouge">libSimbaClient.so</code></p>
 
     <p>Use the path where you copied the library files. For example, for the 64-bit ODBC driver:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
  APILevel            = 1
  ConnectFunctions    = YYY
  Description         = ThoughtSpot 64bit ODBC driver
@@ -2954,7 +2954,7 @@ Find the line below it that begins with <code class="highlighter-rouge">ServerLi
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/install-odbc-solaris.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_data-integrate/clients/install-odbc-solaris.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2977,7 +2977,7 @@ Find the line below it that begins with <code class="highlighter-rouge">ServerLi
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>

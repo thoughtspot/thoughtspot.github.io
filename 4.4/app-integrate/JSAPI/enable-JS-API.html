@@ -158,7 +158,7 @@ var ss360Config = {
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -319,7 +319,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /app-integrate/JSAPI/enable-JS-API.html.</li>
-         <li class="small-sidebar-link">Current version is 6.1.</li>
+         <li class="small-sidebar-link">Current version is 6.2.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is app-integrate.</li>
@@ -340,12 +340,12 @@ var ss360Config = {
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.1/app-integrate/JSAPI/enable-JS-API.html">Switch to version 6.1 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/6.2/app-integrate/JSAPI/enable-JS-API.html">Switch to version 6.2 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.1/app-integrate/JSAPI/enable-JS-API.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.1/app-integrate/JSAPI/enable-JS-API.html</li>
+<li class="small-sidebar-link">newURL is /6.2/app-integrate/JSAPI/enable-JS-API.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/4.4/6.2/app-integrate/JSAPI/enable-JS-API.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2858,32 +2858,32 @@ $('#toc').on('click', 'a', function() {
 
   <p>This procedure shows how to include the ThoughtSpot JavaScript API (JS API) in your web page, and then use it to authenticate to ThoughtSpot.</p>
 
-<p>Your web page needs to authenticate by calling <code class="highlighter-rouge">window.thoughtspot.initialize</code> and waiting for the <code class="highlighter-rouge">onInitializationCallback</code> to be called before embedding any ThoughtSpot visualizations or making any ThoughtSpot REST API calls.</p>
+<p>Your web page needs to authenticate by calling <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> and waiting for the <code class="language-plaintext highlighter-rouge">onInitializationCallback</code> to be called before embedding any ThoughtSpot visualizations or making any ThoughtSpot REST API calls.</p>
 
-<p>If your ThoughtSpot system is configured for Single Sign On (SSO), the JS API call <code class="highlighter-rouge">window.thoughtspot.initialize</code> can cause the entire Web page to be re-directed to your Identity Provider (IDP). This implies that you may not execute any of your application logic before <code class="highlighter-rouge">window.thoughtspot.initialize</code> has called your callback, because any possible redirection could interfere with your application logic. The recommended way of achieving this is to:</p>
+<p>If your ThoughtSpot system is configured for Single Sign On (SSO), the JS API call <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> can cause the entire Web page to be re-directed to your Identity Provider (IDP). This implies that you may not execute any of your application logic before <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> has called your callback, because any possible redirection could interfere with your application logic. The recommended way of achieving this is to:</p>
 
 <ol>
-  <li>Place the JS API in the <code class="highlighter-rouge">&lt;head&gt;</code> section of the HTML on your Web page.</li>
+  <li>Place the JS API in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section of the HTML on your Web page.</li>
   <li>Ensure that the JS API script tag is the first script to be loaded in the page.</li>
-  <li>Ensure that you don’t embed any static ThoughtSpot visualizations in your HTML. In other words, you should generate the ThoughtSpot visualizations dynamically after <code class="highlighter-rouge">window.thoughtspot.initialize</code> has called your callback.</li>
+  <li>Ensure that you don’t embed any static ThoughtSpot visualizations in your HTML. In other words, you should generate the ThoughtSpot visualizations dynamically after <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> has called your callback.</li>
 </ol>
 
-<p>Note that <code class="highlighter-rouge">onAuthenticationExpiredCallback</code> is only available if you have at least one ThoughtSpot visualization iframe in your web page.</p>
+<p>Note that <code class="language-plaintext highlighter-rouge">onAuthenticationExpiredCallback</code> is only available if you have at least one ThoughtSpot visualization iframe in your web page.</p>
 
 <p>To enable the JS API:</p>
 
 <ol>
   <li>Navigate to the Downloads page in the Help Center to download the ThoughtSpot JS API JavaScript file.</li>
   <li>
-    <p>Include the ThoughtSpot JS API JavaScript file into your web page using an HTML include script like this in the <code class="highlighter-rouge">&lt;head&gt;</code> section:</p>
+    <p>Include the ThoughtSpot JS API JavaScript file into your web page using an HTML include script like this in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript” src=”&lt;protocol&gt;&lt;your.thoughtspot.domain&gt;/js/api/api.min.js”&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript” src=”&lt;protocol&gt;&lt;your.thoughtspot.domain&gt;/js/api/api.min.js”&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>From your application code, authenticate to ThoughtSpot using a call to the JavaScript method <code class="highlighter-rouge">window.thoughtspot.initialize(onInitializationCallback, onAuthenticationExpiredCallback, &lt;Hostname_or_IP&gt;)</code> For example:</p>
+    <p>From your application code, authenticate to ThoughtSpot using a call to the JavaScript method <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize(onInitializationCallback, onAuthenticationExpiredCallback, &lt;Hostname_or_IP&gt;)</code> For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript”&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript”&gt;
      thoughtspotHost = &lt;hostname_or_ip_w/o_http&gt;
      function setUpThoughtSpotAPI() {
          window.thoughtspot.initialize(
@@ -2916,13 +2916,13 @@ $('#toc').on('click', 'a', function() {
       <li>
         <p>Issue the command to set the domains that will be allowed to access ThoughtSpot using the JS API using this syntax:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> echo "https?://(localhost|.*:443)" | tscli --adv config set
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> echo "https?://(localhost|.*:443)" | tscli --adv config set
       --key "/config/nginx/corshosts"
 </code></pre></div>        </div>
 
         <p>When supplying an IP address, you have to escape the dots with a triple backslash (\) as shown in this example:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ echo "https?://(localhost|10\\\.77\\\.20\\\.87:443)"
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ echo "https?://(localhost|10\\\.77\\\.20\\\.87:443)"
         | tscli --adv config set --key "/config/nginx/corshosts"
 </code></pre></div>        </div>
 
@@ -2936,7 +2936,7 @@ $('#toc').on('click', 'a', function() {
     <p>Test your Web page or application.
   If your the page no longer works, check the JavaScript console on your Web browser. If you see this error message, it means that the CORS cross domain setting on nginix was not completed correctly:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> No 'Access-Control-Allow-Origin' header is present on the requested resource.
 </code></pre></div>    </div>
 
     <p>If this happens, go back to the step in this procedure where you set up CORS.</p>
@@ -2948,7 +2948,7 @@ $('#toc').on('click', 'a', function() {
       
         
 
-        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/JSAPI/enable-JS-API.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <!-- <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/4.4/_app-integrate/JSAPI/enable-JS-API.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -2971,7 +2971,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: May 20, 2020 <br />
+        Generated: Aug 20, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.4/images/company_logo.png" alt="Company logo"/></p>
