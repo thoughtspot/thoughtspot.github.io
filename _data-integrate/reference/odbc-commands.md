@@ -64,24 +64,17 @@ These SQL commands are supported for ODBC and JDBC:
     ```
     ALTER TABLE "sales" ADD CONSTRAINT PRIMARY KEY ("PO_number");
     ```
-* `ALTER TABLE <table> DROP CONSTRAINT [FOREIGN KEY | RELATIONSHIP] <name>;`
+* `ALTER TABLE <table> DROP [CONSTRAINT | RELATIONSHIP] <name>;`
 
     Drops the named foreign key or relationship between two tables. For example:
 
     ```
-    ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";
+    ALTER TABLE "sales_fact" DROP CONSTRAINT "FK_PO_number";
     ```
 
     ```
     ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";
     ```
-* `ALTER TABLE <table> DROP [CONSTRAINT FOREIGN KEY [<table_name>] | RELATIONSHIP [WITH <table_name>];``
-
-    You must use this syntax when dropping relationships between tables created before ThoughtSpot version 3.2. This is because relationships could not be named in older versions.
-
-    Drops the foreign key or relationship between two tables where you cannot reference it by relationship name. If the relationship was created without a name, use:
-    - the name of the referenced table, for a foreign key.
-    - the name of the related table, for a relationship.
 
 * `ALTER TABLE <table> [SET DIMENSION | SET FACT [PARTITION BY
 HASH [(<shards>)] [KEY(<column>)]]]`
