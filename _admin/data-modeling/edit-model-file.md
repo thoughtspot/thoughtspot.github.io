@@ -8,9 +8,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you load data, ThoughtSpot uses defaults for data modeling metadata. You
+When you load data, ThoughtSpot uses defaults for data modeling metadata. You can
 change these defaults using the data modeling file if you have access to the
-**ADMIN > Data Management** page. Editing this file allows you to
+**Data > Settings > Business Data Model** page. Editing this file allows you to
 view and edit all the system data columns. When you (or
 your users) add new data to your system, this file changes as it expands to
 accommodate new data columns.
