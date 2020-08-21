@@ -203,7 +203,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
   <dlentry  id="falcon-monitor">
     <dt>Falcon monitoring Pinboards</dt>
     <dd>In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators. Use the Falcon monitoring system Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, and varz metrics. You can use these Pinboards for proactive monitoring, or, with help from <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>, for debugging. See <a href="{{ site.baseurl }}/admin/system-monitor/falcon-monitor.html">Falcon monitoring Pinboards</a> for more information. </dd></dlentry>
-  <dlentry  id="falcon-monitor">
+  <dlentry  id="use-agreement">
     <dt>In-app acceptance of ThoughtSpot's use agreement</dt>
     <dd>You can now sign ThoughtSpot's end-user use agreement from the application itself. Even if you previously signed a paper copy of the use agreement, an admin <strong><em>must</em></strong> sign the agreement in the application, within 30 days of your upgrade to release 6.2. See <a href="{{ site.baseurl }}/admin/setup/use-agreement.html">ThoughtSpot use agreement</a> for more information. </dd></dlentry>
 </dl>    
