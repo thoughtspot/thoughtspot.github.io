@@ -574,6 +574,9 @@ entries:
       - title: Test connectivity between nodes
         url: /admin/setup/test-network.html
         output: web,admBk
+      - title: ThoughtSpot use agreement
+        url: /admin/setup/use-agreement.html
+        output: web,admBk
       - title: Set the relay host for SMTP
         url: /admin/setup/set-up-relay-host.html
         output: web,admBk
