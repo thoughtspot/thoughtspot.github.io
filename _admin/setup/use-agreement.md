@@ -11,7 +11,7 @@ Prior to ThoughtSpot release 6.2, administrators signed a paper use agreement to
 
 ## Use agreement notifications
 
-When you upgrade your cluster to 6.2, or when there is a new version of the use agreement, you receive notifications about the use agreement. Administrators receive the following notification, which allows them to accept the use agreement:
+When you upgrade your cluster to 6.2, or when there is a new version of the use agreement later, you receive notifications about the use agreement. You do not receive notifications about the use agreement with every software upgrade, just with upgrades that include changes to the use agreement. Administrators receive the following notification, which allows them to accept the use agreement:
 
 ![Administrator notification]({{ site.baseurl }}/images/use-agreement-admin-warning.png "Administrator notification")
 
@@ -23,7 +23,7 @@ One administrator for each cluster must accept this agreement within 30 days of 
 
 ![Administrator notification - no access]({{ site.baseurl }}/images/use-agreement-admin-no-access.png "Administrator notification - no access")
 
-If an administrator does not sign the agreement within 30 days of upgrading the cluster to 6.2, users receive the following notification when they try to use ThoughtSpot. The notification tells them to ask their administrator to accept the use agreement to allow them to continue using ThoughtSpot:
+If an administrator does not sign the agreement within 30 days of upgrading the cluster to 6.2, non-admin users receive the following notification when they try to use ThoughtSpot. The notification tells them to ask their administrator to accept the use agreement to allow them to continue using ThoughtSpot:
 
 ![User notification - no access]({{ site.baseurl }}/images/use-agreement-user-no-access.png "User notification - no access")
 
@@ -38,7 +38,7 @@ To accept the use agreement, follow these steps. You do not need internet access
 
 2. Read the use agreement in full before accepting. You can view a copy of the agreement at [ThoughtSpot Legal](https://www.thoughtspot.com/legal){:target="_blank"}.
 
-3. If your ThoughtSpot account does not have an associated email, you must enter your email before you can sign the agreement. If your ThoughtSpot account has an associated email, you do not need to enter it in this window.
+3. If your ThoughtSpot account does not have an associated email, you must enter your email before you can sign the agreement. If your ThoughtSpot account has an associated email, you do not need to enter it in this window. The email text box does not appear if you already have an email associated with your account.
 
     ![Enter your email]({{ site.baseurl }}/images/use-agreement-accept-email.png "Enter your email")
 
