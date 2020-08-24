@@ -125,11 +125,11 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/reference/sql-cli-commands.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-20T11:57:07-07:00" />
+<meta property="article:published_time" content="2020-08-24T13:24:57-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/sql-cli-commands.html"},"url":"https://docs.thoughtspot.com/5.2/reference/sql-cli-commands.html","headline":"[“TQL reference”]","dateModified":"2020-08-20T11:57:07-07:00","datePublished":"2020-08-20T11:57:07-07:00","description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/reference/sql-cli-commands.html"},"url":"https://docs.thoughtspot.com/5.2/reference/sql-cli-commands.html","headline":"[“TQL reference”]","dateModified":"2020-08-24T13:24:57-07:00","datePublished":"2020-08-24T13:24:57-07:00","description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -322,7 +322,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3237,7 +3237,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    12 minutes
+    11 minutes
   
 </span>
  -->
@@ -3565,42 +3565,12 @@ nickname';</code></p>
    </tr>
    <tr>
       <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT [FOREIGN KEY| RELATIONSHIP]
+         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT | RELATIONSHIP]
        &lt;name&gt;;</code></p>
       </td>
       <td><p>Drops the named foreign key or relationship between two tables. For example:</p>
-         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";</code></p>
+         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT "FK_PO_number";</code></p>
         <p><code>ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";</code></p>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT FOREIGN KEY
-         [&lt;table_name&gt;] | RELATIONSHIP [WITH &lt;table_name&gt;];</code></p>
-      </td>
-      <td>
-         You must use this syntax when dropping relationships between tables created
-         before ThoughtSpot version 3.2. This is because relationships could not be named
-         in older versions.
-         <div>
-            Drops the foreign key or relationship between two tables
-            where you cannot reference it by relationship name. If the relationship was
-            created without a name, use:
-            <ul class="ul" id="reference_cbc_fx4_j4__ul_qzq_wyn_cv">
-               <li>the name of the referenced table, for a foreign key.</li>
-               <li>the name of the related table, for a relationship.</li>
-            </ul>
-         </div>
-         <p>If you drop a foreign key without specifying the referenced table,
-            all foreign keys from the table you are altering will be dropped.
-         </p>
-         <p>Examples:</p>
-         <p><code>ALTER TABLE "shipments" DROP CONSTRAINT FOREIGN KEY "orders";</code></p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP WITH "retail_sales";</code></p>
-         <p>Drops all relationships that have wholesale_buys as a source.</p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP;</code></p>
-          <p>Drops all foreign keys from wholesale_buys. </p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP CONSTRAINT FOREIGN KEY;</code></p>
       </td>
    </tr>
    <tr>
@@ -3914,7 +3884,7 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 20, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
