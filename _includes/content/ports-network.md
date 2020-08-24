@@ -101,6 +101,12 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |12345|TCP|Simba|bidirectional|ThoughtSpot Support|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
 |2049|TCP|NFS: In case one needs to mount NFS share on TS node. |bidirectional|ThoughtSpot Support|All nodes|Port used by NFS.|
 |123|UDP|NTP service|bidirectional|ThoughtSpot Support|All nodes|Port used by NTP service.|
+|9000|TCP|server startup|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
+|9001|TCP|server shutdown|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
+|9002|TCP|message|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
+|9003|TCP|Metadata|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
+|9005|TCP|agent services start|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
+|9010|TCP|agent services stop|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|
