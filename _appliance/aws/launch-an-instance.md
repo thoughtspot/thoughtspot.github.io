@@ -67,8 +67,7 @@ To install and launch ThoughtSpot, you must have the following:
 
     | Release Number | AMI Name | AMI ID | Region |
     | --- | --- | --- | --- |
-    | 6.1 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
-
+    | 6.2 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
 
     {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
 
