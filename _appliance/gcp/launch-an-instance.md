@@ -129,7 +129,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     | 6.0.2 | thoughtspot-image-20191029-9ff82de0a41-prod |
     | 6.0.3 | thoughtspot-image-20200307-812f10fafca-prod |
     | 6.0.4 | thoughtspot-image-20200307-812f10fafca-prod |
-
+    | 6.1 | thoughtspot-image-20200307-812f10fafca-prod |
 
     {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, select the latest one by looking at the dates of creation. Each image will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches. Contact ThoughtSpot Support if you are unsure which image to use." %}
 
