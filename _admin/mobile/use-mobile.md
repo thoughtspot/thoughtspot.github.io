@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
-Version 1.4 is now available with improved network status messaging, visualization descriptions, and more.
+Version 1.5 is now available with improved number formatting for data labels in charts, grouping of axes, axis renaming, and better performance.
 
 For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html).
 
