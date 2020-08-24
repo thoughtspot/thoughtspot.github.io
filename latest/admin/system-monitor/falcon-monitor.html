@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Use the Falcon monitoring system Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, and varz m..."> -->
+<!-- <meta name="description" content="Use the Falcon Monitor Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, system stats, and va..."> -->
 <meta name="keywords" content=",  ">
-<title>Falcon monitoring Pinboards | ThoughtSpot</title>
+<title>Falcon Monitor Pinboards | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Falcon monitoring Pinboards”] | thoughtspot.github.io</title>
+<title>[“Falcon Monitor Pinboards”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“Falcon monitoring Pinboards”]" />
+<meta property="og:title" content="[“Falcon Monitor Pinboards”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators." />
-<meta property="og:description" content="In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators." />
+<meta name="description" content="In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, that are available to system administrators." />
+<meta property="og:description" content="In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, that are available to system administrators." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-20T13:19:19-07:00" />
+<meta property="article:published_time" content="2020-08-24T12:10:01-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Falcon monitoring Pinboards”]" />
+<meta property="twitter:title" content="[“Falcon Monitor Pinboards”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"dateModified":"2020-08-20T13:19:19-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html"},"url":"https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html","description":"In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators.","headline":"[“Falcon monitoring Pinboards”]","@type":"BlogPosting","datePublished":"2020-08-20T13:19:19-07:00","@context":"https://schema.org"}</script>
+{"dateModified":"2020-08-24T12:10:01-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html"},"url":"https://docs.thoughtspot.com/latest/admin/system-monitor/falcon-monitor.html","description":"In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, that are available to system administrators.","headline":"[“Falcon Monitor Pinboards”]","@type":"BlogPosting","datePublished":"2020-08-24T12:10:01-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1685,6 +1685,12 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/latest/admin/setup/test-network.html">Test connectivity between nodes</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/admin/setup/use-agreement.html">ThoughtSpot use agreement</a></li>
                       
                    
                 
@@ -5223,7 +5229,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Falcon monitoring Pinboards</h1>
+   <h1 class="post-title-main">Falcon Monitor Pinboards</h1>
 </div>
 
 
@@ -5233,7 +5239,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Use the Falcon monitoring system Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, and varz metrics.</div>
+    <div class="summary">Use the Falcon Monitor Pinboards for an overview of Falcon, ThoughtSpot's in-memory database, and its health, based on query, data load, system stats, and varz metrics.</div>
    
 
     
@@ -5277,13 +5283,13 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>In ThoughtSpot release 6.2, there are 4 new Pinboards, based on Falcon metrics, that are available to system administrators.</p>
+  <p>In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, that are available to system administrators.</p>
 
-<p>Falcon is ThoughtSpot’s in-memory database. Falcon monitoring functionality pushes different kinds of metrics to Falcon system tables every fifteen minutes. These system tables, when updated, update the 4 new Pinboards that you can use to monitor Falcon’s health. You can see these Pinboards from the <strong>Pinboards</strong> page, by searching for <strong>Falcon</strong>:</p>
+<p>Falcon is ThoughtSpot’s in-memory database. Falcon monitoring functionality pushes different kinds of metrics to Falcon system tables every fifteen minutes. These system tables, when updated, update the 5 new Pinboards that you can use to monitor Falcon’s health. You can see these Pinboards from the <strong>Pinboards</strong> page, by searching for <strong>360_Overview</strong>:</p>
 
 <p><img src="/latest/images/falcon-pinboards.png" alt="Falcon Pinboards on the Pinboards page" title="Falcon Pinboards on the Pinboards page" /></p>
 
-<p>The 4 new database monitoring Pinboards are: <a href="#falcon_360_overview">Falcon_360_Overview</a>, <a href="#falcon_query_360_overview">Falcon_Query_360_Overview</a>, <a href="#falcon_dataload_360_overview">Falcon_Dataload_360_Overview</a>, and <a href="#falcon_varz_360_overview">Falcon_Varz_360_Overview</a>.</p>
+<p>The 5 new database monitoring Pinboards are: <a href="#falcon_360_overview">Falcon_360_Overview</a>, <a href="#falcon_query_360_overview">Falcon_Query_360_Overview</a>, <a href="#falcon_dataload_360_overview">Falcon_Dataload_360_Overview</a>,  <a href="#falcon_varz_360_overview">Falcon_Varz_360_Overview</a>, and <a href="#system_stats_360_overview">System_Stats_360_Overview</a></p>
 
 <p>You can use these Pinboards for proactive monitoring, or, with help from <a href="/latest/appliance/contact.html">ThoughtSpot Support</a>, for debugging.</p>
 
@@ -5306,6 +5312,11 @@ $('#toc').on('click', 'a', function() {
 <p>This Pinboard provides information about Falcon services based on metrics in VarZ format. Visualizations include <strong>Falcon Worker Execution Metrics</strong>, <strong>Falcon Query Runtime (Average and Max)</strong>, <strong>Falcon Worker Memory Manager</strong>, <strong>Daily Data Load Statistics</strong>, <strong>Falcon Compiler Cache Daily Usage</strong>, and so on.</p>
 
 <p><img src="/latest/images/falcon-varz-360-pinboard.png" alt="Falcon_Varz_360_Overview Pinboard" title="Falcon_Varz_360_Overview Pinboard" /></p>
+
+<h2 id="system_stats_360_overview">System_Stats_360_Overview</h2>
+<p>This Pinboard provides system stats information such as memory usage, CPU usage, and load average. Visualizations include <strong>Memory Utilization</strong>, <strong>CPU Utilization (System, Idle, User)</strong>, <strong>Loadavg (current/total scheduling entities)</strong>, <strong>Memory (Free)</strong>, <strong>Netstat connections</strong>, and so on.</p>
+
+<p><img src="/latest/images/system-stats-360-pinboard.png" alt="System_Stats_360_Overview Pinboard" title="System_Stats_360_Overview Pinboard" /></p>
 
   <div class="tags">
     <div style="float:right;">
@@ -5332,9 +5343,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 20, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 8/19/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 8/20/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
       <script>
