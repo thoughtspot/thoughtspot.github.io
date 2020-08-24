@@ -12,7 +12,7 @@ fixed issues from the previous releases, and any known issues.
 ## 1.5 New Features and Functionality
 - Support for ThoughtSpot 6.0 features including improved number formatting for data labels on the chart marks (bars, bubbles, lines) and axes.
 - Grouping of axes, and axis renaming.
-- Improved performance
+- Improved performance.
 
 {: id="1-4-1-fixed"}
 ## 1.4.1 Fixed Issues
