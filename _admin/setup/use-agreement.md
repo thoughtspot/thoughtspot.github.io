@@ -1,11 +1,11 @@
 ---
-title: [ThoughtSpot use agreement]
+title: [In-app acceptance of ThoughtSpot's use agreement]
 last_updated: 8/21/2020
-summary: "An administrator must sign the ThoughtSpot use agreement to allow users to continue using the application."
+summary: "An administrator must sign the ThoughtSpot use agreement in the application to allow users to continue using the application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Prior to ThoughtSpot release 6.2, administrators signed a paper use agreement to allow their users to use ThoughtSpot. Starting with release 6.2, you can sign the use agreement from the application itself. You can view a copy of this agreement at [ThoughtSpot Legal](https://www.thoughtspot.com/legal){:target="_blank"}.
+Prior to ThoughtSpot release 6.2, administrators signed a paper use agreement to allow their users to use ThoughtSpot. Starting with release 6.2, you can easily sign the use agreement from the application itself. You can view a copy of this agreement at [ThoughtSpot Legal](https://www.thoughtspot.com/legal){:target="_blank"}.
 
 {% include note.html content="Even if you previously signed a paper copy of the use agreement, an admin <strong><em>must</em></strong> sign the agreement in the application, within 30 days of your upgrade to release 6.2 or later." %}
 
@@ -28,9 +28,9 @@ If an administrator does not sign the agreement within 30 days of upgrading the 
 ![User notification - no access]({{ site.baseurl }}/images/use-agreement-user-no-access.png "User notification - no access")
 
 ## Accept the use agreement
-Only administrators can accept the use agreement. Only one administrator needs to accept the use agreement for each cluster.
+Only administrators can accept the use agreement. Only one administrator needs to accept the use agreement for each cluster. Note that you must sign an agreement for each of your clusters.
 
-To accept the use agreement, follow these steps.
+To accept the use agreement, follow these steps. You do not need internet access to sign the agreement, since it is bundled with the application software.
 
 1. Ensure that you have administrator privileges.
 
