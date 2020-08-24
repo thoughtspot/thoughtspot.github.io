@@ -8,6 +8,12 @@ permalink: /:collection/:path.html
 ThoughtSpot mobile 1.4.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+{: id="1-5-new"}
+## 1.5 New Features and Functionality
+- Support for ThoughtSpot 6.0 features including improved number formatting for data labels on the chart marks (bars, bubbles, lines) and axes.
+- Grouping of axes, and axis renaming.
+- Improved performance.
+
 {: id="1-4-1-fixed"}
 ## 1.4.1 Fixed Issues
 
