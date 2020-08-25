@@ -22,18 +22,6 @@ permalink: /:collection/:path.html
 
 If your company maintains large sources of data externally, you can use ThoughtSpot DataFlow to easily ingest just the relevant information, and then query that data and use ThoughtSpot's analysis and visualization features. And after you configure scheduled refresh, your analysis visuals are always current.
 
-## Port requirements for DataFlow
-
-To use DataFlow, the following ports must be open on your network:
-- 9000
-- 9001
-- 9002
-- 9003
-- 9005
-- 9010
-
-For more information, see [Required ports for inbound and outbound cluster access]({{ site.baseurl }}/appliance/firewall-ports.html#required-ports-for-inbound-and-outbound-cluster-access).
-
 See
 - [Key features]({{ site.baseurl }}/data-integrate/dataflow/dataflow-key-features.html)
 - [How DataFlow works]({{ site.baseurl }}/data-integrate/dataflow/dataflow-workflow.html)
