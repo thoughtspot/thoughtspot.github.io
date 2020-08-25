@@ -22,7 +22,7 @@ Ensure that you have the following items, information, and understanding of poli
 | &#10063; | VGA Monitor and USB keyboard |
 | &#10063; | 10G connection: You need one SFP+ for each node for the switch side, and one SFP+ for each node for the appliance side. |
 | &#10063; | Networking information: IP addresses for data & management NICs, for up to 2 DNS servers, up to 4 NTP servers and for the default gateway. Ensure that you configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers. You also need to know the timezone for your cluster. Typically, your timezone is where most of the people who will use the product are. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} so that you have a quick reference before beginning the install process. Ask your network administrator if you need help filling out the site survey. |
-| &#10063; | [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html), to determine the ports you need to have open for your cluster. |
+| &#10063; | [Network policies]({{ site.baseurl }}/appliance/ports.html), to determine the ports you need to have open for your cluster. |
 
 ## Review hardware requirements
 Next, [review hardware requirements]({{ site.baseurl }}/appliance/hardware/hardware-requirements-smc.html).

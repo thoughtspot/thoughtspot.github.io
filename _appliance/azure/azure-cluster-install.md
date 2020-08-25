@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 Before you can install your ThoughtSpot clusters in Azure, complete these prerequisites.
 1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
+3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.
 4. **Configure nodes** Refer to [Configure ThoughtSpot nodes in Azure]({{ site.baseurl }}/appliance/azure/installing-azure.html) to configure your nodes.
 
 {: id="cluster-install"}

@@ -15,7 +15,7 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 1. **Download the OVF** Download the [Open Virtualization Format](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/) (OVF) file.
 1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) to create and launch your instance.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
+3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.
 
 {: id="configure-nodes"}
 ## Configure Nodes

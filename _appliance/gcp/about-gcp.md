@@ -16,7 +16,7 @@ for your ThoughtSpot deployment. See the [GCP Firewall Rules](https://cloud.goog
 article for configuration details.
 
 You can find more information about appropriate network policies for your
-ThoughtSpot deployment in the [network ports reference]({{ site.baseurl}}/appliance/firewall-ports.html#).
+ThoughtSpot deployment in the [network ports reference]({{ site.baseurl}}/appliance/ports.html#).
 
 ## A little about GCP
 

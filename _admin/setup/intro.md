@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-In ThoughtSpot, both physical appliances and virtual machines ship with a base OS image. ThoughtSpot Support then helps you to install, and subsequently update the software. Note the exception of RHEL installations, where the customer provides the OS image themselves, and uses a slightly different installation protocol. 
+In ThoughtSpot, both physical appliances and virtual machines ship with a base OS image. ThoughtSpot Support then helps you to install, and subsequently update the software. Note the exception of RHEL installations, where the customer provides the OS image themselves, and uses a slightly different installation protocol.
 
 The ThoughtSpot Support team contacts all clients to schedule updates as we release new versions of ThoughtSpot. To schedule upgrades to patch releases that support your use cases, work with our Customer Success team.
 
@@ -52,6 +52,6 @@ The following tasks are also available:
 * [Integrate LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html)
 * [Set up monitoring]({{ site.baseurl }}/admin/setup/set-up-monitoring.html)
 * [Configure support services]({{ site.baseurl }}/admin/setup/work-with-ts-support.html)
-* [Network ports]({{ site.baseurl }}/admin/setup/firewall-ports.html)
+* [Network ports]({{ site.baseurl }}/appliance/ports.html)
 * [Configure load balancing and proxies]({{ site.baseurl }}/admin/setup/about-load-balancer-configuration.html)
 * [Customize look and feel]({{ site.baseurl }}/admin/setup/customize-style.html)

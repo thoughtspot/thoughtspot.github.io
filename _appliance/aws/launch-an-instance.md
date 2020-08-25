@@ -54,7 +54,7 @@ To install and launch ThoughtSpot, you must have the following:
 
 | &#10063; | An AWS Virtual Private Cloud (VPC). An AWS VPC is a virtual network specifically for your AWS account. It exists in all availability zones in your region, but you can specify a local zone for even lower latency. For more details, see [VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html){:target="_blank"} in Amazon's AWS documentation. |
 | &#10063; | A ThoughtSpot AMI. For details, see [Choose VM instances](#ami). |
-| &#10063;| AWS security groups. For required open ports, see [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html). |
+| &#10063;| AWS security groups. For required open ports, see [Network Policies]({{ site.baseurl }}/appliance/ports.html). |
 | &#10063; | AWS VM instances. For instance type recommendations, see [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types). |
 | &#10063;| EBS volumes for data storage. |
 | &#10063; | (Optional) If deploying with S3 persistent storage, you need one S3 bucket for each ThoughtSpot cluster. |  
@@ -176,7 +176,7 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
     {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check ThoughtSpot's Network policies documentation to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
 
-    Refer to [network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+    Refer to [network policies]({{ site.baseurl }}/appliance/ports.html).
 
 12.  Click **Review and Launch**.
 

@@ -547,7 +547,7 @@ entries:
         url: /admin/setup/work-with-ts-support.html
         output: web,admBk
       - title: Network policies
-        url: /admin/setup/firewall-ports.html
+        url: /appliance/ports.html
         output: web,admBk
       - title: Configure load balancing and proxies
         url: /admin/setup/about-load-balancer-configuration.html
@@ -1157,7 +1157,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instAWS
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
@@ -1190,7 +1190,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instAzure
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instAzure
 # -- end of PDF for Azure section
 # -- Uncomment out this section ONLY when generating a PDF for GCP
@@ -1222,7 +1222,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instGCP
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instGCP
 # -- end of PDF for GCP section
 # -- Uncomment out this section ONLY when generating a PDF for VMware
@@ -1254,7 +1254,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instVMware
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instVMware
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
@@ -1295,7 +1295,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instDell
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instDell
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
@@ -1336,7 +1336,7 @@ entries:
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instSMC
 #    - title: Network policies
-#      url: /appliance/firewall-ports.html
+#      url: /appliance/ports.html
 #      output: web,appQs,instSMC
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
@@ -1484,7 +1484,7 @@ entries:
           url: /appliance/vmware/vmware-cluster-install.html
           output: web,appQs,instVMware
     - title: Network policies
-      url: /appliance/firewall-ports.html
+      url: /appliance/ports.html
       output: web,appQs
     - title: Contact support
       url: /appliance/contact.html
@@ -1721,7 +1721,7 @@ entries:
       output: web,refGd
       levelTwoItems:
       - title: Network Policies
-        url: /appliance/firewall-ports.html
+        url: /appliance/ports.html
         output: web,refGd
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html

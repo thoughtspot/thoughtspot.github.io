@@ -1,6 +1,5 @@
 ---
 title: [Supported hardware]
-
 last_updated: tbd
 summary: "Required and provided installation hardware."
 sidebar: mydoc_sidebar
@@ -20,7 +19,7 @@ includes up to 4 nodes and can hold up to 1TB of data. This can be scaled out.
 
 Before you can access ThoughtSpot, you need a network connection.
 
-Refer to [Network Ports]({{ site.baseurl }}/admin/setup/firewall-ports.html) in
+Refer to [Network Ports]({{ site.baseurl }}/appliance/ports.html) in
 the Administrator's Guide to see which ports must remain open to outside traffic
 for handling certain network requests and for inter-cluster communication. The
 [Administrator's Guide]({{ site.baseurl}}/admin/intro.html) also provides
