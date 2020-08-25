@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Here are some recommendations when working with DataFlow."> -->
+<!-- <meta name="description" content="Here are some requirements and recommendations when working with DataFlow."> -->
 <meta name="keywords" content=",  ">
-<title>DataFlow best practices | ThoughtSpot</title>
+<title>DataFlow best practices and guidelines | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“DataFlow best practices”] | thoughtspot.github.io</title>
+<title>[“DataFlow best practices and guidelines”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="[“DataFlow best practices”]" />
+<meta property="og:title" content="[“DataFlow best practices and guidelines”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
-<meta property="og:description" content="Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
+<meta name="description" content="You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
+<meta property="og:description" content="You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-24T13:41:21-07:00" />
+<meta property="article:published_time" content="2020-08-25T12:03:21-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“DataFlow best practices”]" />
+<meta property="twitter:title" content="[“DataFlow best practices and guidelines”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"dateModified":"2020-08-24T13:41:21-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html"},"url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html","description":"Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source.","headline":"[“DataFlow best practices”]","@type":"BlogPosting","datePublished":"2020-08-24T13:41:21-07:00","@context":"https://schema.org"}</script>
+{"dateModified":"2020-08-25T12:03:21-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html"},"url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html","description":"You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source.","headline":"[“DataFlow best practices and guidelines”]","@type":"BlogPosting","datePublished":"2020-08-25T12:03:21-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1789,7 +1789,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/admin/setup/firewall-ports.html">Network policies</a></li>
+                          <li><a href="/6.2/appliance/ports.html">Network ports</a></li>
                       
                    
                 
@@ -3541,7 +3541,7 @@ $(document).ready(function(){
             
               
                 
-                  <li><a href="/6.2/appliance/firewall-ports.html">Network policies</a></li>
+                  <li><a href="/6.2/appliance/ports.html">Network ports</a></li>
                 
               
             
@@ -3832,7 +3832,7 @@ $(document).ready(function(){
             
               
                 
-                  <li class="active"><a href="/6.2/data-integrate/dataflow/dataflow-best-practices.html">DataFlow best practices</a></li>
+                  <li class="active"><a href="/6.2/data-integrate/dataflow/dataflow-best-practices.html">Guidelines and best practices</a></li>
                 
               
             
@@ -5145,7 +5145,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/appliance/firewall-ports.html">Network Policies</a></li>
+                          <li><a href="/6.2/appliance/ports.html">Network ports</a></li>
                       
                    
                 
@@ -5229,7 +5229,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">DataFlow best practices</h1>
+   <h1 class="post-title-main">DataFlow best practices and guidelines</h1>
 </div>
 
 
@@ -5255,7 +5255,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Here are some recommendations when working with DataFlow.</div>
+    <div class="summary">Here are some requirements and recommendations when working with DataFlow.</div>
    
 
     
@@ -5300,6 +5300,7 @@ $('#toc').on('click', 'a', function() {
     
 
   <ul>
+  <li>You must open port 9000. See <a href="/6.2/appliance/ports.html">Network ports</a>.</li>
   <li>Allocate minimum disk space of approximately 5 GB in the <code>/etc/thoughtspot/</code> directory.</li>
   <li>Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source.</li>
 </ul>
@@ -5329,9 +5330,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 25, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 08/03/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 08/24/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
       <script>
