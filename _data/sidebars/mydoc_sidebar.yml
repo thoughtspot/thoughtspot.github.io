@@ -84,6 +84,9 @@ entries:
       - title: Analyst onboarding
         url: /admin/ts-cloud/analyst-onboarding.html
         output: web
+      - title: Invite others to ThoughtSpot
+        url: /admin/ts-cloud/analyst-invite-others.html
+        output: web
       - title: Connect to data
         url: /admin/ts-cloud/connect-data.html
         output: web
@@ -1077,6 +1080,9 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
+    - title: Contact ThoughtSpot Support
+      url: /admin/misc/contact.html
+      output: web,admBk
   - sectiontitle: Embrace Snowflake Partner Connect
     output: web,embraceGd
     sectionitems:
