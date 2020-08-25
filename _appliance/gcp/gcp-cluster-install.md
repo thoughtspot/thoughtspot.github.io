@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 Before you can install your ThoughtSpot clusters in GCP, complete these prerequisites.
 1. **Review configuration options** Refer to [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up ThoughtSpot in GCP]({{ site.baseurl }}/appliance/gcp/launch-an-instance.html) to create and launch your instance.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.
+3. **Review required ports** Refer to [Network ports]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.
 4. **Configure nodes** Refer to [Configure ThoughtSpot nodes in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html) to configure your nodes.
 
 {: id="cluster-install"}

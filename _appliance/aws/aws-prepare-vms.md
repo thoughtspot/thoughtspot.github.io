@@ -30,7 +30,7 @@ When the setup is complete, you can load data into ThoughtSpot for search analyt
 {: id="network-ports"}
 ## Open the required network ports
 
- If you have not already opened the required network ports, see [Network policies]({{ site.baseurl }}/appliance/ports.html) to determine which ports to open.
+ If you have not already opened the required network ports, see [Network ports]({{ site.baseurl }}/appliance/ports.html) to determine which ports to open.
 
 ## Install Cluster
 Next, you must configure your nodes and install your cluster. Follow the steps in [Installing AWS]({{ site.baseurl }}/appliance/aws/installing-aws.html).

@@ -619,7 +619,7 @@ entries:
       - title: Configure support services
         url: /admin/setup/work-with-ts-support.html
         output: web,admBk
-      - title: Network policies
+      - title: Network ports
         url: /appliance/ports.html
         output: web,admBk
       - title: Configure load balancing and proxies
@@ -1268,7 +1268,7 @@ entries:
 #    - title: Cloud overview
 #      url: /appliance/cloud.html
 #      output: web,appQs,instAWS
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,instAWS
 #    - title: Contact ThoughtSpot support
@@ -1310,7 +1310,7 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instAzure
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,instAzure
 #    - title: Cloud overview
@@ -1354,7 +1354,7 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instGCP
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,instGCP
 #    - title: Cloud overview
@@ -1398,7 +1398,7 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instVMware
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,instVMware
 #    - title: Cloud overview
@@ -1454,7 +1454,7 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,pdf
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,pdf
 #    - title: Cable reference
@@ -1507,7 +1507,7 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instSMC
-#    - title: Network policies
+#    - title: Network ports
 #      url: /appliance/ports.html
 #      output: web,appQs,instSMC
 #    - title: Cable reference
@@ -1724,7 +1724,7 @@ entries:
         - title: Install ThoughtSpot clusters in VMware
           url: /appliance/vmware/vmware-cluster-install.html
           output: web,appQs,instVMware
-    - title: Network policies
+    - title: Network ports
       url: /appliance/ports.html
       output: web,appQs
     - title: Contact support
@@ -1857,7 +1857,7 @@ entries:
     - title: DataFlow home page
       url: /data-integrate/dataflow/dataflow-home.html
       output: web,dataflowGD
-    - title: DataFlow best practices
+    - title: DataFlow guidelines, best practices
       url: /data-integrate/dataflow/dataflow-best-practices.html
       output: web,dataflowGD
     - levelTwoTitle: Database Connections
@@ -2454,7 +2454,7 @@ entries:
       - title: Cable reference
         url: /appliance/hardware/cable-networking.html
         output: web,appQs,pdf,instSMC
-      - title: Network Policies
+      - title: Network ports
         url: /appliance/ports.html
         output: web,refGd
       - title: The nodes.config file

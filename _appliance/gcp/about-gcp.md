@@ -15,7 +15,7 @@ You must set up the appropriate Firewall Rules in your GCP environment
 for your ThoughtSpot deployment. See the [GCP Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)
 article for configuration details.
 
-You can find more information about appropriate network policies for your
+You can find more information about appropriate Network ports for your
 ThoughtSpot deployment in the [network ports reference]({{ site.baseurl}}/appliance/ports.html#).
 
 ## A little about GCP

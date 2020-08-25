@@ -1,5 +1,5 @@
 ---
-title: [Network policies]
+title: [Network ports]
 last_updated: 8/26/2020
 summary: "Note the list of ports, both required and optional, for regular operations of ThoughtSpot."
 sidebar: mydoc_sidebar
