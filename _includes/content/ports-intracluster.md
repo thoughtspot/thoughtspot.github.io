@@ -1,7 +1,4 @@
-
-This reference lists the potential ports to open when setting up your security group.
-
-### Required ports for intracluster operation
+## Ports for intracluster network operations
 
 Static ports are used for communication between services within the cluster. ThoughtSpot recommends that you open all ports within a cluster. This not required, but it will ensure that cluster communication works properly if additional ports are used in a future software release.
 
@@ -88,41 +85,3 @@ If your organization does not allow you to open all ports, make sure you open th
 |8008|TCP|Video recorder|bidirectional|All nodes|All nodes|Services|
 |9090|TCP|Timely|bidirectional|All nodes|All nodes|Services|
 ||ICMPv4|Used for health check of cluster nodes|bidirectional|All nodes|All nodes|Services|
-
-### Required ports for inbound and outbound cluster access
-
-ThoughtSpot uses static ports for inbound and outbound access to the cluster.
-
-|Port|Protocol|Service Name|Direction|Source|Dest.|Description|
-|----|--------|------------|---------|------|-----|-----------|
-|22|SCP|SSH|bidirectional|ThoughtSpot Support|All nodes|Secure shell access.|
-|80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
-|443|HTTPS|HTTPS|bidirectional|ThoughtSpot Support|All nodes|Secure HTTP.|
-|12345|TCP|Simba|bidirectional|ThoughtSpot Support|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
-|2049|TCP|NFS: In case one needs to mount NFS share on TS node. |bidirectional|ThoughtSpot Support|All nodes|Port used by NFS.|
-|123|UDP|NTP service|bidirectional|ThoughtSpot Support|All nodes|Port used by NTP service.|
-|9000|TCP|server startup|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-|9001|TCP|server shutdown|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-|9002|TCP|message|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-|9003|TCP|Metadata|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-|9005|TCP|agent services start|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-|9010|TCP|agent services stop|bidirectional|ThoughtSpot Support|All nodes|Port used by DataFlow service|  
-
-|Port|Protocol|Service Name|Direction|Source|Destination|Description|
-|----|--------|------------|---------|------|-----------|-----------|
-  |443|TCP|HTTPS|outbound|All nodes|208.83.110.20 |For transferring files to thoughtspot.egnyte.com.|
-|443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
-|443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
-|25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support. <br> On ThoughtSpot release 6.1.1 or later, on on release 6.0.5, you can specify a custom port to connect to the relay host, instead of port 25. Refer to <a href="{{ site.baseurl }}/admin/setup/set-up-relay-host.html">Set the relay host for SMTP</a>. |
-|389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
-
-
-### Required ports for IPMI (Intelligent Platform Management Interface)
-
-ThoughtSpot uses static ports for out-of-band IPMI communications between the cluster and ThoughtSpot support.
-
-|Port|Protocol|Service Name|Direction|Source|Dest.|Description|
-|----|--------|------------|---------|------|-----|-----------|
-|80|HTTP|HTTP|bidirectional|ThoughtSpot Support|All nodes|Hypertext Transfer Protocol for website traffic.|
-|443|TCP|S-HTTP|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|
-|623|UDP|Serial-over-LAN|bidirectional|ThoughtSpot Support|All nodes|IPMI GUI and for HTML5-based IPMI console access.|

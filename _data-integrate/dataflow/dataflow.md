@@ -38,6 +38,6 @@ See
 - [Key features]({{ site.baseurl }}/data-integrate/dataflow/dataflow-key-features.html)
 - [How DataFlow works]({{ site.baseurl }}/data-integrate/dataflow/dataflow-workflow.html)
 - [DataFlow Home page]({{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html)
-- [Best practices]({{ site.baseurl }}/data-integrate/dataflow/dataflow-best-practices.html)
+- [Best practices and guidelines]({{ site.baseurl }}/data-integrate/dataflow/dataflow-best-practices.html)
 - Supported [databases]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databases.html), [filesystems]({{ site.baseurl }}/data-integrate/dataflow/dataflow-filesystems.html), and [applications]({{ site.baseurl }}/data-integrate/dataflow/dataflow-applications.html)
 - [DataFlow administration]({{ site.baseurl }}/data-integrate/dataflow/dataflow-administration.html), in particular [managing users]({{ site.baseurl }}/data-integrate/dataflow/dataflow-user-management.html) and [configuring email service]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mail-setup.html)

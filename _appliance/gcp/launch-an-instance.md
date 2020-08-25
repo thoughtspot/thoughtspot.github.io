@@ -190,7 +190,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
 {: id="port-requirements"}
 ### Minimum required ports
-Open the following ports between the User/ETL server and ThoughtSpot nodes. This ensures that the ThoughtSpot processes do not get blocked. Refer to [network policies]({{ site.baseurl }}/admin/setup/firewall-ports.html#required-ports-for-cluster-communication) for more information on what ports to open for intracluster operation, so that your clusters can communicate.
+Open the following ports between the User/ETL server and ThoughtSpot nodes. This ensures that the ThoughtSpot processes do not get blocked. Refer to [Network ports]({{ site.baseurl }}/appliance/ports.html#required-ports-for-cluster-communication) for more information on what ports to open for intracluster operation, so that your clusters can communicate.
 
    The minimum ports needed are:
 

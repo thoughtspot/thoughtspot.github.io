@@ -14,7 +14,7 @@ you can use multiple nodes together in a single instance.
 
 The security group setting of your ThoughtSpot instance in Azure is up to you. You
 can find more information about which ports to open in the [network ports
-reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
+reference]({{ site.baseurl }}/appliance/ports.html#).
 
 ## A little about Azure
 

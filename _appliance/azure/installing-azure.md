@@ -14,7 +14,7 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
 3. **Change the admin password** Refer to [Prepare for starting up ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html#prepare-for-startup) to learn how to log into your VM with the private key, and change the admin password. You must change the admin password on first login, or you will not be able to log back into your VMs.
-3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
+3. **Review required ports** Refer to [Network ports]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.
 
 {: id="configure-nodes"}
 ## Configure Nodes

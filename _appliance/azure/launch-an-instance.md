@@ -114,7 +114,7 @@ Open the following ports between the User/ETL server and ThoughtSpot nodes. This
 
    {% include note.html content="Nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot requires that these ports be accessible between nodes within a cluster.  Use your discretion about whether to restrict public access or not for all nodes and all ports." %}
 
-   Refer to [network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for more information.
+   Refer to [Network ports]({{ site.baseurl }}/appliance/ports.html) for more information.
 
 {: id="prepare-for-startup"}
 ### Prepare for starting up ThoughtSpot
