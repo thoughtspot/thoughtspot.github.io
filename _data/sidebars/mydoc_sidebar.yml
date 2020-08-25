@@ -1857,7 +1857,7 @@ entries:
     - title: DataFlow home page
       url: /data-integrate/dataflow/dataflow-home.html
       output: web,dataflowGD
-    - title: DataFlow guidelines, best practices
+    - title: Guidelines and best practices
       url: /data-integrate/dataflow/dataflow-best-practices.html
       output: web,dataflowGD
     - levelTwoTitle: Database Connections
