@@ -14,6 +14,8 @@ fixed issues from the previous releases, and any known issues.
 - Grouping of axes, and axis renaming.
 - Improved performance.
 
+{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
+
 
 {: id="1-4-new"}
 ## 1.4 New Features and Functionality
