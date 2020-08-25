@@ -19,6 +19,8 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
 
+{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
+
 ### For the Analyst
 
 <dl id="6-2-analyst">
