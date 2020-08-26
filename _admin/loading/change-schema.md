@@ -1,7 +1,7 @@
 ---
 title: [How to change a schema]
-last_updated: tbd
-summary: "After you've created a schema and loaded data, you may find yourself wishing you'd set things up a little differently. You can make changes to the schema, such as changing the primary key, relationships to other tables, and sharding."
+last_updated:  08/26/2020
+summary: "After creating the schema and loading data, you may have to change your set up. You can alter the schema by changing the primary key, relationships between tables, and table sharding."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,7 +16,7 @@ Use this procedure to change the primary key for a table. But use it with cautio
 
 You can change the primary key of a table without having to `TRUNCATE` it first and reload the data. However, changing the primary key could result in data deletion. This is because of the upsert behavior which is applied when multiple rows have the same primary key. This is very important to understand ahead of time, if you are considering changing to a primary key for which values are not unique.
 
-To change the primary key, first remove any existing primary key, and then define a new one (if any). You do not have to truncate the tables to do this operation beginning in version 3.2. Any dependent objects (pinboards or worksheets) will remain intact.
+To change the primary key, first remove any existing primary key, and then define the new key. If you no longer want the table to have a primary key, just remove the existing key. Any dependent objects, like Pinboards or Worksheets, remain intact.
 
 To change the primary key of a table:
 
@@ -30,7 +30,8 @@ To change the primary key of a table:
          PRIMARY KEY;
     ```
 
-    Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the `--allow_unsafe` flag.
+    Dropping a primary key can impact existing Worksheets, Answers, and Pinboards. The system warns you if dropping a primary key impacts other objects.
+[//]: # (To continue, use the `--allow_unsafe` flag.)
 
 4. Add a new primary key, if desired:
 
@@ -40,8 +41,8 @@ To change the primary key of a table:
          PRIMARY KEY ("owner_id");
     ```
 
-5. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
-6. Delete the snapshot you created earlier using the command:
+5. Test that any dependent objects (Pinboards, Worksheets, and so on) are still working correctly.
+6. Delete the snapshot you created earlier:
 
     ```
     tscli snapshot delete <name>
@@ -60,7 +61,9 @@ To change the relationship between tables:
 3. Issue the command to drop the existing relationship
 
    Before dropping a relationship TQL checks for and then warns of any dependent
-   objects. To continue with the drop any way, use the `--allow_unsafe` flag.
+   objects.
+[//]: # (To continue with the drop any way, use the `--allow_unsafe` flag.)
+
    The following examples illustrate several different types of drop operations.
 
     Drop a foreign key by name, if it was given a name when it was defined:
@@ -97,7 +100,7 @@ To change the relationship between tables:
     ```
 
 4. Define a new relationship, if you want to, using `ALTER TABLE...ADD CONSTRAINT...`
-5. Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.
+5. Test that any dependent objects (pinboards, worksheets, etc.) perform correctly.
 6. Delete the snapshot you created earlier using the command:
 
     ```

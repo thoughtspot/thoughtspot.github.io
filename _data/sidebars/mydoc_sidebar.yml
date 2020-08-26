@@ -676,13 +676,13 @@ entries:
         - title: Connect with TQL and create a schema
           url: /admin/loading/prep-schema-for-load.html
           output: web,admBk
-        - title: How to write a SQL script
+        - title: Create a schema in SQL
           url: /admin/loading/create-schema-with-script.html
           output: web,admBk
-        - title: Schema creation examples
+        - title: Examples of schema creation
           url: /admin/loading/create-schema-example.html
           output: web,admBk
-        - title: Upload an SQL script
+        - title: Upload a SQL script
           url: /admin/loading/upload-sql-script.html
           output: web,admBk
       - levelThreeTitle: Change the schema

@@ -1,25 +1,22 @@
 ---
-title: [How to write a SQL script]
-
-
-last_updated: tbd
+title: [Creating a schema using SQL]
+last_updated: 08/26/2020
 summary: "Using a SQL script to create your schema is a recommended best practice. This makes it easier to adjust the schema definitions and recreate the schema quickly, if needed."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The schema creation script is a text file that contains all the SQL commands to create your schema. Comments should be enclosed in the comment tags /\* and \*/.
+The script for creating a schema is a text file that contains all the SQL commands to create your schema. Use the comment tags /\* and \*/ to document your script.
 
-Enclose all object names (schema, table, and column) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters (any character other than alphanumeric or _ ), must be surrounded by double quotes. If you see the error message "Error parsing SQL. Check SQL input.", you should check for object names without double quotes in your script.
+Enclose all object names (schema, table, and column) in double quotes, and any column values in single quotes. Use double quotes for object names that are also reserved words in SQL, or that contain special characters. Special characters are all characters other than letters, numbers, or the underscore (_). If you get the error message "Error parsing SQL. Check SQL input.", check your script for object names without double quotes.
 
-If you are working in a schema other than the default schema, object names must be fully qualified, as in `"<schema_name>"."<object_name>"`.
+If you are working in a schema other than the default schema, object names must be fully qualified: `"<schema_name>"."<object_name>"`.
 
-If your schema includes constraints to define relationships between tables (foreign key, or the `RELATIONSHIP` syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the `ADD CONSTRAINT` syntax. This makes it easier to troubleshoot the script and make changes.
+If your schema includes constraints to define relationships between tables, such as primary key and foreign key definitions, or the <code>RELATIONSHIP</code> syntax, we recommend that you first create all the tables, and then add the relationships between the tables using the <code>ADD CONSTRAINT</code> syntax. This approach makes it easier to troubleshoot the script and make subsequent changes.
 
-If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you must decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:
+[//]: # (If TQL is run using the flag `--allow_unsafe`, your statements will always execute without this warning. Note that when running TQL from a script, you must decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:)
+[//]: # (``` cat safest_script_ever.sql | tql --allow_unsafe ```)
 
-```
-cat safest_script_ever.sql | tql --allow_unsafe
-```
+
 
 1. Open a new file in a text editor.
 2. Type in the command to create the database, if it does not already exist:
