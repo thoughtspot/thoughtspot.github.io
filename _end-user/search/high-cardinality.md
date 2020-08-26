@@ -16,7 +16,7 @@ Column summaries are not available for tables with more than 1000 rows.
 
 ## High cardinality charts
 
-ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, up to 35,000, you see a horizontal scroll bar at the bottom.
+ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, you see a horizontal scroll bar at the bottom. The new default maximum number of data points is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of data points on a chart, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ![High cardinality chart with scroll bar]({{ site.baseurl }}/images/cardinality-chart-scroll-bar.png "High cardinality chart with scroll bar")
 
