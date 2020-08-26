@@ -108,11 +108,9 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 3. Click **Answers**, **Pinboards**, or **Data** on the top navigation bar, depending on the objects you want to migrate.
 
-4. To upload a Worksheet, click the More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import Worksheet TSL**.
+4. To upload a Worksheet or View, click the More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import TSL**.
 
-    ![Create worksheet from file]({{ site.baseurl }}/images/worksheet-create-from-file.png "Create worksheet from file")
-
-5. To upload a View, click More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import View TSL**.
+    ![Import Worksheet or View TSL]({{ site.baseurl }}/images/scriptability-cloud-worksheet-view-import.png "Import Worksheet or View TSL")
 
 5. To upload a Pinboard or Answer, click the **Import** button in the upper-right side of the screen.   
 
