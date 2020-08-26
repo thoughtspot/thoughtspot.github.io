@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ 'css/customstyles.css' | absolute_url }}">
 <link rel="stylesheet" href="{{ 'css/boxshadowproperties.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ 'css/expand.css' | absolute_url }}">
 <!-- most color styles are extracted out to here -->
 <link rel="stylesheet" href="{{ 'css/theme-new-brand.css' | absolute_url }}">
 
@@ -31,6 +32,73 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="{{ "js/toc.js" | absolute_url }}"></script>
 <script src="{{ "js/customscripts.js" | absolute_url }}"></script>
+
+<!-- begin feedback form code -->
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+  });
+});
+</script>
+<!-- js smoothScroll for scrolling to bottom of page -->
+<script>
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+</script>
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+  margin-right: 10px;
+}
+
+#panel {
+  display: none;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#flop").click(function(){
+    $("#panel").slideUp("slow");
+  });
+});
+</script>
+<style>
+#panel, #flop {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+}
+
+#panel {
+  padding: 5px;
+}
+</style>
+<!-- end feedback form code -->
 
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | absolute_url }}">
 

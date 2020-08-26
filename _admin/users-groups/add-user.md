@@ -52,7 +52,7 @@ This procedure shows how to creating a user manually. When you create a user, yo
       </tr>
       <tr>
         <th>Sharing visibility</th>
-        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHARABLE</b>,
         this user is an option in the <b>Share</b> dialog.</td>
       </tr>
       <tr>

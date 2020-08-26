@@ -20,6 +20,8 @@ To set up a relay host:
     $ tscli smtp set-relayhost <IP_address>
     ```
 
+    ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
+
 3. Verify your settings:
 
     ```
@@ -30,10 +32,12 @@ To set up a relay host:
 
 ## Configure an email to receive alerts
 
-ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts are sent. You should add an email to receive alerts by issuing:
+ThoughtSpot sends alerts to the email address specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
+
+{% include note.html content="Add the ThoughtSpot Support alert email, <code>prod-alerts@thoughtspot.com</code>, to allow ThoughtSpot Support to receive alerts. ThoughtSpot Support monitors these alerts to ensure your cluster's health. Do not add this email to POC or demo environments." %}
 
 ```
-$ tscli monitoring set-config --email <your_email>
+$ tscli monitoring set-config --email <prod-alerts@thoughtspot.com>,<your_email>
 ```
 
 To send to multiple emails, provide a comma-separated list with no spaces.

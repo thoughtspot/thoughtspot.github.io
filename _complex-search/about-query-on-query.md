@@ -37,6 +37,9 @@ Here are the high-level steps for creating and using views:
 
 - When creating views, keep in mind the sizing recommendations for worksheets, for the final worksheet that you plan to use in modeling you data.
 
+- Only users with the [**Can administrate ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
+worksheet size.
+
 - To be able to join a view with a base table, your installation must be configured to allow this. The view cannot have more than 5 tables, and the number of rows in the view cannot exceed 10 million rows.
 
 - The order of the objects being linked (joined) matters, because joins are directional. The table or view with the foreign key must be in the the first (left) position. The table or view with the primary key must be in the second (right) position.

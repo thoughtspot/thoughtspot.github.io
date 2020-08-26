@@ -16,7 +16,7 @@ The DataPush API makes the data available to the external application formatted 
 
 ## Create an Custom Action
 
-To create a Custom Action, you must have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
+To create a Custom Action, you must have the [**Can administrate ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
 Use this procedure to create an Custom Action in ThoughtSpot:
 
@@ -36,7 +36,7 @@ Use this procedure to create an Custom Action in ThoughtSpot:
 
    ![]({{ site.baseurl }}/images/create_custom_action.png)
 
-5. Now when a user is viewing a search result, they'll have the option to use the Custom Action you created. To initiate the action, they'll click the ellipses icon 
+5. Now when a user is viewing a search result, they'll have the option to use the Custom Action you created. To initiate the action, they'll click the ellipses icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Your Action Name**. You'll notice a **Custom** tag next to your action name to indicate that this is something custom built, and not a ThoughtSpot action.
 
    ![]({{ site.baseurl }}/images/initiate_custom_action.png)

@@ -24,7 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,ansible, backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,sssd,ssl,storage,support,tokenauthentication}
+           {access,alert,ansible, backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,sssd,ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -125,7 +125,7 @@ Use this subcommand to do the following:
         Take backup through orion master. (default: True)
 
 * `tscli backup delete *`name`*` Deletes the named backup.
-* `tscli backup ls` List all backups taken by the system.
+* `tscli backup ls` List all backups taken by the system. Note that this command only shows periodic backups, and not manual backups.
 * `tscli backup restore` Restore cluster using backup.
 
 
@@ -151,33 +151,48 @@ Use this subcommand to do the following:
 
 ### callhome
 
+Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.
+
 ```
-tscli callhome [-h] {disable,enable,generate-bundle} ...
+tscli callhome [-h] {disable,enable,generate-bundle}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
 
-* `tscli callhome disable` Turns off the periodic call home feature.
-* `tscli callhome enable --customer_name` *`customer_name`*`
+<dl>
+<dlentry>
+  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+  <dd>
+    <p>Enables the callhome feature.</p>
+    <p>This feature is enabled by default.</p>
+    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+    </dd></dlentry>
 
-    Enables the "call home" feature, which sends usage statistics to ThoughtSpot
-    This feature is enabled by default.
+  <dlentry>
+    <dt><code>tscli callhome disable</code></dt>
+    <dd>Turns off the callhome feature.</dd></dlentry>
 
-    The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
-
-* `tscli callhome generate-bundle`   --d *`directory`* `--since` *`DAYS`*
-
-   * `--d D` Dest folder where tar file will be created. (default: None)
-   * ` --since`  *`DAYS`*
-
-      Grab callhome data from this time window in the past. Should be a human
-      readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1
-      day). (default: None) Generates a tar file of the cluster metrics and
-      writes it to the specified directory where  *`DAYS`* is how far back you'd
-      like to generate the tar file from in days. For example, `30`. If this
-      parameter is not specified, the command will collect the stats from the
-      last `7` days by default.
-
+  <dlentry>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
+      <dl>
+        <dlentry>
+          <dt><code>--d <em>D</em></code></dt>
+          <dd><p>Destination folder for the tar file.</p>
+            <p>There is no default setting.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--since <em>SINCE</em></code></dt>
+          <dd>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+            <p>This option generates a <code>tar</code> file of the cluster metrics and
+      writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
+            </dlentry>
+            </dl>
+            </dd>
+  </dlentry>
+</dl>
 
 ### cassandra
 
@@ -739,8 +754,8 @@ This subcommand has the following actions:
 * `tscli scheduled-pinboards enable [-h]` Enables scheduled pinboards, which is disabled in prod clusters by default.
 
 {% include note.html content="When you enable scheduled pinboards, you should
-also configure a whitelist of intended email domains. Contact ThoughtSpot
-Support for help configuring a whitelist." %}
+also configure a list of intended email domains. Contact ThoughtSpot
+Support for help configuring this list." %}
 
 ###  smtp
 
@@ -763,6 +778,7 @@ This subcommand takes supports the following actions:
 * `tscli smtp set-relayhost [-h] [--force FORCE] relayhost` Sets the Relay Host for SMTP (email) sent from the cluster.
 
   * `--force` *`FORCE`*  Set even if relay host is not accessible. (default: `False`)
+  *  ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
 
 * `tscli smtp set-saslcredentials` Sets SASL credentials and enables SMTP AUTH
 
@@ -836,21 +852,6 @@ This subcommand supports the following actions:
 
    *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
 
-
-### spot
-
-```
-tscli spot [-h] {enable} ...
-```
-
-Enables Spot integration.  This subcommand supports the following actions:
-
-`tscli spot enable [-h] --token ` *`TOKEN`* `--thoughtspot_url` *`THOUGHTSPOT_URL`* `[--cache_timeout` *`CACHE_TIMEOUT`* `]`
-
-
-* `--token ` *`TOKEN`*  Slack authroization token for Spot bot. This is required. You receive this token when your Slack administrator adds the Spot application.
-* `--thoughtspot_url` *`THOUGHTSPOT_URL`* URL for the ThoughtSpot application. This is required.
-* `--cache_timeout` *`CACHE_TIMEOUT`*  Internal cache timeout (default: `60000`)
 
 ### ssl
 
