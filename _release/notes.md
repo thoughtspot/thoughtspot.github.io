@@ -53,8 +53,10 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
       <ul>
         <li>Your search in table form can now have more than 1000 rows.</li>
         <li>Your charts now come with a horizontal scroll bar, to support up to 35,000 data points.</li>
-        <li>You can have up to 250 distinct legend items on a chart.</li></ul>
-      <p>See <a href="{{"/end-user/search/high-cardinality.html" | prepend: site.baseurl}}">Charts and tables with a very large number of data values</a>.</p></dd></dlentry>
+        <li>You can have up to 250 distinct legend items on a chart.</li>
+        </ul>
+        </dd><dd><strong>High cardinality overview</strong><br>
+<script src="https://fast.wistia.com/embed/medias/q9jggoxmjy.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_q9jggoxmjy popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span><p>See <a href="{{ site.baseurl }}/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a>.</p></dd></dlentry>
   <dlentry id="keywords">
     <dt>New search keywords</dt>
     <dd>
@@ -145,7 +147,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 <a href="{{"/data-integrate/dataflow/dataflow-splice-machine.html" | prepend: site.baseurl}}">Splice Machine</a>, and
 <a href="{{"/data-integrate/dataflow/dataflow-teradata.html" | prepend: site.baseurl}}">Teradata</a>), file systems (<a href="{{"/data-integrate/dataflow/dataflow-amazon-s3.html" | prepend: site.baseurl}}">Amazon S3</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-azure-blob-storage.html" | prepend: site.baseurl}}">Azure Blob Storage</a>,
-<a href="{{"/data-integrate/dataflow/dataflow-flat-files.html" | prepend: site.baseurl}}">Flat Files</a>,
+<a href="{{"/data-integrate/dataflow/dataflow-files.html" | prepend: site.baseurl}}">Flat Files</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-google-cloud-storage.html" | prepend: site.baseurl}}">Google Cloud Storage</a>,
 <a href="{{"/data-integrate/dataflow/dataflow-hdfs.html" | prepend: site.baseurl}}">HDFS</a>), and one application, <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a>.</dd><dd><strong>DataFlow overview</strong>
 <br>
