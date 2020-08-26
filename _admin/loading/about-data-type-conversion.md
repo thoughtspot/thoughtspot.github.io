@@ -1,8 +1,6 @@
 ---
 title: [Convert column data type]
-
-
-last_updated: tbd
+last_updated: 08/26/2020
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,20 +9,14 @@ There are some details you should be aware of when doing a data type conversion.
 
 ## Data type conversion behavior
 
-When converting from one data type to another, any values that can not be
-converted will be set to NULL. If errors occur during data type conversion, the
-operation is aborted. However, you may choose to force the conversion despite
-the errors. You can start TQL in allow_unsafe mode to continue with the data
-conversion, at your own risk, of course! To start TQL in unsafe mode, issue this
-command:
+When converting from one data type to another, ThoughtSpot sets any values that it cannot convert to `NULL`. If errors occur during data type conversion, the
+operation terminates.
 
-```
-tql --allow_unsafe
-```
+[//]: # (However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:)
+[//]: # (``` tql --allow_unsafe ```)
 
 Multiple columns of a single table can be converted using a single TQL command.
-The behavior is transactional. So for example, you would issue a command like
-this example:
+The behavior is transactional. So for example, you would issue the following command:
 
 ```
 ALTER TABLE products
@@ -32,7 +24,7 @@ ALTER TABLE products
    MODIFY COLUMN supplier VARCHAR(4);
 ```
 
-Also note that changing data type has implications on the primary key and
+Note that changing data type has implications on the primary key and
 sharding enforcement. For example, changing the data type of a column that is
 part of the sharding key would lead to a redistribution of data. Then imagine
 that the sharding key column contained the text values `00100`, `0100`, and
