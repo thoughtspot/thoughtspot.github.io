@@ -2,22 +2,18 @@
 title: ["5.2 Release Notes"]
 toc: false
 keywords: "release notes"
-last_updated: May 2019
+last_updated: 04/09/20
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## What's in the Release Notes
+ThoughtSpot version 5.2.3 is now available. These release notes include information about new and enhanced features.
 
-ThoughtSpot version 5.2.3 is now available. These release notes include information about new features,
-fixed issues from previous releases, and any known issues.
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [5.2.3 Fixed Issues](#523-fixed)
-* [5.2.2 Fixed Issues](#522-fixed)
-* [5.2.1 Fixed Issues](#521-fixed)
+* [Supported Upgrade Paths](#supported-upgrade-paths)
+* [Mobile App](#mobile-app)
 * [5.2 New Features](#52-new)
-* [5.2 Fixed Issues](#52-fixed)
-* [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
@@ -27,7 +23,7 @@ directly:
 * 5.0.x to 5.2.3
 * 5.1.x to 5.2.3
 
-(This includes any hotfixes or customer patches on these branches.)
+This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.2.3 release.
@@ -38,69 +34,10 @@ ThoughtSpot mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO)
 
 For more information, see [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
 
-{: id="523-fixed"}
-## 5.2.3 Fixed Issues
-
-An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.
-
-A problem where certain types of joins do not work when row-level security is used is now fixed.
-
-An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
-
-A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
-
-An issue where syncing users using the public API does not work is now fixed.
-
-A problem where Canadian postal codes do not appear on maps is now fixed.
-
-{: id="522-fixed"}
-## 5.2.2 Fixed Issues
-
-An issue where PDFs downloaded from a Pinboard are poorly formatted is now fixed.
-
-An occasional problem where the login process is slow has been fixed.
-
-An issue where the filter dialog box freezes when opened from a Pinboard, or the filter icon in the left panel is now fixed.
-
-Previously, when the `unique_count_if` aggregate function was used in both the numerator and denominator of a division formula in a search query, it caused only the numerator value to be returned. This problem is now fixed.
-
-A problem where the `unique_count_if` aggregate function does not parse an expression is now fixed.
-
-{: id="521-fixed"}
-## 5.2.1 Fixed Issues
-
-An issue where column tooltips do not display last-updated information is now fixed.
-
-An error that occurs when attempting to save changes to the title of a visualization is now fixed.
-
-An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.
-
-Reliability of the filter dialog when opened from a Pinboard or the left panel has been improved.
-
-An issue with a NAS mount disconnecting during restore of a cluster is now fixed.
-
-A problem where tables in a Google Chrome tab become misaligned is now fixed.
-
-Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.
-
-An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.
-
-The database manager memory limit has been increased to 16 GB to improve performance.
-
-An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.
-
-A problem with date filters in the Japanese locale is now fixed.
-
-An issue with refreshing materialization of views is now fixed.
-
-Occasional slow navigation between the Answer and Pinboard pages has been fixed.
-
-A problem where scheduled Pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.
-
-Embedded Pinboards no longer occasionally display a Pin button.
-
 {: id="52-new"}
 ## 5.2 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [5.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-2).
 
 ### ThoughtSpot mobile beta
 
@@ -159,24 +96,3 @@ ThoughtSpot now supports seven new languages, available in the Profile page:
 ### One-to-one joins in worksheets
 
 When editing joins within a worksheet, you can now specify a join cardinality of One to One, as well as Many to One.
-
-{: id="52-fixed"}
-## 5.2 Fixed Issues
-
-Table user experience improvements:
-* The column header is now left-aligned.
-* Column widths can be made very narrow.
-
-Chart user experience improvements:
-* When sorting by date on the x-axis, the date format no longer changes and the axis no longer disappears.
-* You can now sort using a sort field that is not in your chart.
-
-{: id="notes-for-older-versions"}
-## Notes from older versions
-
-* [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
-* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
-* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
-* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)
-* [4.2 Release Notes](/4.2/pdf/ThoughtSpot_Release_Notes_4.2.2.pdf)
-* [3.5 Release Notes](/3.5/pdf/ThoughtSpot_Release_Notes_3.5.7.pdf)
