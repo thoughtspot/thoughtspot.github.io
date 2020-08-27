@@ -32,6 +32,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 
 

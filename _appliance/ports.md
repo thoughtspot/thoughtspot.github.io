@@ -2,6 +2,7 @@
 title: [Network ports]
 last_updated: 8/26/2020
 summary: "Note the list of ports, both required and optional, for regular operations of ThoughtSpot."
+redirect_from: "/admin/setup/firewall-ports.html"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
