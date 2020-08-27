@@ -67,7 +67,8 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
         <li id="not-in">
           <strong>The ‘not in’ keyword</strong>
           <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li></ul>
-    </dd></dlentry>
+          </dd><dd><strong>Search keywords overview</strong><br>
+<script src="https://fast.wistia.com/embed/medias/0m74x2bszt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_0m74x2bszt popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="monitor">
     <dt>Monitor <span class="label label-beta">Beta</span></dt>
     <dd>
