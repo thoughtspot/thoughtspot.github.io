@@ -158,22 +158,6 @@ The following ciphers are currently supported:
 |     compressors:
 |       NULL
 |_  least strength: strong
-|   AESv
-|    ciphers:
-|       AES128-SHA256 - High
-|       AES256-SHA256 - High
-|       AES128-SHA - High
-|       AES256-SHA - High
-|     compressors:
-|       NULL
-|_  least strength: High
-|   DHEv
-|     ciphers:
-|       DHE-RSA-AES128-SHA - High
-|       DHE-RSA-AES256-SHA - High
-|     compressors:
-|       NULL
-|_  least strength: High
 ```
 
 The cipher string would be as follows:
@@ -186,7 +170,8 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-You must ensure that your load balancer supports these ciphers.
+
+You must ensure that your load balancer supports these ciphers. If your load balancer cannot support these ciphers, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="admin-portal"}
 {% include content/admin-portal/ssl-configure.md %}
