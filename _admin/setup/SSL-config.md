@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 6/15/2020
+last_updated: 8/27/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -158,6 +158,22 @@ The following ciphers are currently supported:
 |     compressors:
 |       NULL
 |_  least strength: strong
+|   AESv
+|    ciphers:
+|       AES128-SHA256 - High
+|       AES256-SHA256 - High
+|       AES128-SHA - High
+|       AES256-SHA - High
+|     compressors:
+|       NULL
+|_  least strength: High
+|   DHEv
+|     ciphers:
+|       DHE-RSA-AES128-SHA - High
+|       DHE-RSA-AES256-SHA - High
+|     compressors:
+|       NULL
+|_  least strength: High
 ```
 
 The cipher string would be as follows:
