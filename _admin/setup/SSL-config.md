@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 6/15/2020
+last_updated: 8/27/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -160,7 +160,7 @@ The following ciphers are currently supported:
 |_  least strength: strong
 ```
 
-The cipher string would be as follows:-
+The cipher string would be as follows:
 
 ```
 EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
@@ -170,7 +170,8 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-You must ensure that your load balancer supports these ciphers.
+
+You must ensure that your load balancer supports these ciphers. If your load balancer cannot support these ciphers, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="ssl-configure-test"}
 ## Test the SSL certificate
