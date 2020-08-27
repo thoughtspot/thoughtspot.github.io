@@ -410,7 +410,7 @@ This subcommand has the following options:
 <dt><code>directory</code></dt>
 <dd>The location on the disk to place the backup. You specify an existing directory path, but the folder (the last part of the path: <code>home/admin/folder</code>) must not already exist. ThoughtSpot creates the folder when it runs a backup.</dd></dlentry>
 <dlentry>
-<dt><code>storage_type {NAS,local}</code></dt>
+<dt><code>storage_type {NAS,local,S3}</code></dt>
 <dd>The type of storage you are using. <code>NAS</code> storage is recommended for <code>FULL</code> backups.</dd></dlentry>
 <dlentry>
 <dt><code>--config <em>CONFIG</em></code></dt>
