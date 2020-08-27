@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-last_updated: 7/27/2020
+last_updated: 8/27/2020
 summary: Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot.
 toc: true
 sidebar: mydoc_sidebar
@@ -119,7 +119,8 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-You must ensure that your load balancer supports these ciphers.
+    
+You must ensure that your load balancer supports these ciphers. If your load balancer cannot support these ciphers, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="ssl-configure-test"}
 ## Test the SSL certificate
