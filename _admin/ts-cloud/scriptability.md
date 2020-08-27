@@ -45,7 +45,7 @@ To export multiple objects at a time, follow these steps:
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
 
-    ![The top navigation bar]({{ site.baseurl }}/images/scriptability-cloud-nav.png "The top navigation bar")
+    ![The top navigation bar]({{ site.baseurl }}/images/nav-bar-no-spotiq.png "The top navigation bar")
 
 2. Hover over the objects you want to export, and click the empty checkboxes that appear.
 
@@ -81,9 +81,9 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 4. Select **Update from TSL**.
 
-   Here, we are uploading the edited *Sales* worksheet.
+   Here, we are uploading the edited *New WS* worksheet.
 
-   ![Start Worksheet update from file]({{ site.baseurl }}/images/worksheet-update-from-file.png "Start Worksheet update from file")
+   ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")
 
 5. In the **Import** interface, click **Select .tsl file to upload**.
 
@@ -91,11 +91,11 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 6. In your file system, find and select the `TSL` file.
 
-8. If you constructed the file correctly, the **Import** interface displays an *Update successful* message.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message.
 
 9. Click **Done**.
 
-   ![Go to updated Worksheet]({{ site.baseurl }}/images/worksheet-update-success.png "Go to updated Worksheet")
+   ![Go to updated Worksheet]({{ site.baseurl }}/images/scriptability-worksheet-update-success.png "Go to updated Worksheet")
 
 ## Migrate an object
 To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps:
@@ -108,13 +108,11 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 3. Click **Answers**, **Pinboards**, or **Data** on the top navigation bar, depending on the objects you want to migrate.
 
-4. To upload a Worksheet, click the More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import Worksheet TSL**.
+4. To upload a Worksheet or View, click the More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import TSL**.
 
-    ![Create worksheet from file]({{ site.baseurl }}/images/worksheet-create-from-file.png "Create worksheet from file")
+    ![Import Worksheet or View TSL]({{ site.baseurl }}/images/scriptability-cloud-worksheet-view-import.png "Import Worksheet or View TSL")
 
-5. To upload a View, click More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import View TSL**.
-
-5. To upload a Pinboard or Answer, click the **Import** button in the upper-right side of the screen.   
+5. To upload a Pinboard or Answer, click the **Import TSL** button in the upper-right side of the screen.   
 
     ![Import a Pinboard or Answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Pinboard or Answer")
 
@@ -124,7 +122,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 6. In your file system, find and select the `TSL` file. The file uploads automatically.
 
-8. If you constructed the file correctly, the **Import** interface displays an *Upload successful* message.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message.
 
 9. To examine the new object, click **Done**.
 
