@@ -8,11 +8,11 @@ permalink: /:collection/:path.html
 ---
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-A periodic backup uses the same steps as creating a backup manually. However, you do not have to specify a snapshot name. The system uses the most recent snapshot. You can backup to a local file system or [mount a NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) to hold the backup. A NAS file system is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+A periodic backup uses the same steps as creating a backup manually. However, you do not have to specify a snapshot name. The system uses the most recent snapshot. You can backup to a local file system, [mount a NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) to hold the backup, or [back up to an S3 bucket]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html). A NAS file system is recommended. Make sure you have adequate space to store the number of backups you want to archive.
 
 ## Default policy format
 
-This is the format for a backup policy. Note that the command populates several parameters with their defaults. The default `mode` is `FULL`, the `type` is `STANDALONE`, and the `storage_type` is `NAS`. You can change the `mode` and `storage_type`, and you must specify a `directory` and a `name`. 
+This is the format for a backup policy. Note that the command populates several parameters with their defaults. The default `mode` is `FULL`, the `type` is `STANDALONE`, and the `storage_type` is `NAS`. You can change the `mode` and `storage_type`, and you must specify a `directory` and a `name`.
 
 ```
 name: "name_for_backup"
@@ -36,8 +36,12 @@ schedule {
   offset_minutes_from_sunday_midnight: integer
 }
 directory: "NAME"
-storage_type: NAS | LOCAL  
+storage_type: NAS | LOCAL | S3
+enabled: true (you only need this parameter if your storage_type is S3)
+bucket_name: <your-S3-bucket-name> (you only need this parameter if your storage_type is S3)
 ```
+
+{% include note.html content="To periodically back up your cluster to an S3 bucket, specify <code>S3</code> for the <code>storage_type</code>, and include the <code>enabled</code> and <code>bucket_name</code> parameters." %}
 
 ## Before you begin
 Before creating a policy, make sure you have read [Understand backup/snapshot
@@ -57,7 +61,7 @@ schedules](how-to-create-a-schedule.html) for information on configuring a
 Backups cannot start when another backup is still running. Choose a
 reasonable frequency for the backup mode in your policy. For example, a `FULL` backup
 takes longer than a `DATALESS` backup. Consider the load on the system when
-configuring. Do not backup up when the system would experience a heavy load. For
+configuring. Do not back up when the system would experience a heavy load. For
 example, you may want to take `FULL` backups late in the evening or on weekends.
 
 The retention system deletes the oldest stored backup and the corresponding

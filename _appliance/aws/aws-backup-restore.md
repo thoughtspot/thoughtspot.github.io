@@ -8,8 +8,10 @@ permalink: /:collection/:path.html
 It is recommended to use a bucket in the same region as your cluster. By doing this, you avoid additional cross-region data transfer costs.
 
 ## Backing up to an Amazon S3 bucket
+You can back up your cluster to an S3 bucket either [manually](#manual-backup) or [periodically](#periodic-backup).
 
-To back up your cluster to an S3 bucket, use the ThoughtSpot tscli:
+{: id="manual-backup"}
+To manually back up your cluster to an S3 bucket, use the ThoughtSpot tscli:
 
 1. Log in to the Linux shell of your cluster using SSH.
     ```
@@ -23,6 +25,51 @@ To back up your cluster to an S3 bucket, use the ThoughtSpot tscli:
     ```
     $ tscli backup create --storage_type=cloud snapshot_1 my_backup001 --bucket_name=my_bucket
     ```
+
+{: id="periodic-backup"}
+To periodically back up your cluster to an S3 bucket using a backup policy, use the ThoughtSpot tscli:
+
+1. Log in to the Linux shell of your cluster using SSH.
+    ```
+    $ ssh admin@<cluster-IP>
+    ```
+
+2. Run the backup policy command:
+    ```
+    $ tscli backup-policy create
+    ```
+
+3. The command opens a `vi` editor you can use to configure the backup policy, which has the following syntax:
+
+    ```
+    name: <backup-name>
+    param {
+      mode: [FULL | LIGHT | DATALESS]
+      type: STANDALONE
+    }
+    schedule {
+      period {
+        number: <number-in-integer-format>
+        unit: [MINUTE | HOUR | DAY]
+      }
+      retention_policy {
+        bucket {
+          time {
+            number: <number-in-integer-format>
+            unit: [MINUTE | HOUR | DAY]
+          }
+          capacity: <number-in-integer-format>
+        }
+      }
+      offset_minutes_from_sunday_midnight: <number-in-integer-format>
+    }
+    directory: <directory-name>
+    storage_type: S3
+    enabled: true
+    bucket_name: <your-S3-bucket-name>
+    ```
+
+    You must specify `S3` for the `storage_type`. Refer to [Configure periodic backups]({{ site.baseurl }}/admin/backup-restore/configure-backup.html) for more information.
 
 ## Restoring from an Amazon S3 bucket
 
