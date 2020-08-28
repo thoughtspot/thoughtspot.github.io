@@ -14,7 +14,7 @@ To reduce the total amount of data and rows of data, we recommend the following 
 
 - Limit the data range to the relevant years or months.
 - Combine long and narrow tables into wider tables whenever possible.
-
+<p>[embed label="for administrators"]</p>
 ## Data Boundaries
 
 Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
@@ -25,7 +25,7 @@ Contact ThoughtSpot support for guidance on boundaries for the following:
 - Total number of rows across all tables
 - Many-to-Many (Generic join cardinality)
 - Load frequency
-
+<p>[/embed]</p>
 ## Worksheet Boundaries
 
 Worksheets must have less than 1000 columns. For aggregated worksheets, follow these guidelines:
