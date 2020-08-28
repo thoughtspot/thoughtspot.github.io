@@ -30,7 +30,7 @@ To re-brand the interface:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/admin/settings/style-customization`.
+2. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
 
      ![Style Customization menu]({{ site.baseurl }}/images/style-customization-menu.png "Style Customization menu")
 
