@@ -1,6 +1,6 @@
 ---
 title: [How the worksheet join rule works]
-last_updated: 11/18/2019
+last_updated: 8/31/2020
 summary: "The worksheet join rule specifies when to apply joins when searching on a worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,6 +25,29 @@ the worksheet depends on which tables are part of the search. The worksheet acts
 like a materialized view. This means that it contains the results of a defined
 query in the form of a table. So if a particular dimension table is left out of
 the search, its joins are not applied.
+
+## Apply progressive joins
+
+To specify how the Worksheet should apply joins, follow these steps:
+
+1. Navigate to the Worksheet you would like to edit.
+
+2. Select **Edit Worksheet** in the top right corner.
+
+    ![Edit Worksheet]({{ site.baseurl }}/images/worksheet-edit.png "Edit Worksheet")
+
+    If you do not see this option, you may not have editing privileges on this Worksheet. Request edit access from your administrator, or the owner of the Worksheet.
+
+3. Click the + button to add sources and specify join application, or to specify how to apply joins on the Worksheet's existing sources.
+
+    ![Choose sources]({{ site.baseurl }}/images/worksheet-choose-sources.png "Choose sources")
+
+4. Select the sources you want to specify join application for.
+
+5. Scroll down to the bottom of the **Choose sources** modal, and under **Choose the worksheet join rule**, select either **apply joins progressively** or **apply all joins**.
+
+    ![Apply joins progressively or apply all joins]({{ site.baseurl }}/images/worksheet-apply-joins.png "Apply joins progressively or apply all joins")
+
 
 ## Rule-Based Row Level Security (RLS) with worksheets
 
