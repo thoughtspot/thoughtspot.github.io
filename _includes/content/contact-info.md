@@ -4,7 +4,7 @@ You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket
 
 If you encounter a technical issue, file a support ticket using the Support Portal ticket filing system at:
 
-[http://support.thoughtspot.com/](http://support.thoughtspot.com/)
+[https://community.thoughtspot.com/customers/s/contactsupport/](https://community.thoughtspot.com/customers/s/contactsupport/)
 
 Please provide as much detail as possible about your issue, to help us resolve it quickly.
 
