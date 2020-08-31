@@ -114,9 +114,9 @@ $(document).ready(function(){
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Run prebuilt R scripts on answers”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Run prebuilt R scripts on answers”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges." />
@@ -125,11 +125,12 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/end-user/r-scripts/run-prebuilt-r-scripts.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-24T14:59:20-07:00" />
+<meta property="article:published_time" content="2020-08-31T16:40:03-07:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Run prebuilt R scripts on answers”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/end-user/r-scripts/run-prebuilt-r-scripts.html"},"url":"https://docs.thoughtspot.com/5.2/end-user/r-scripts/run-prebuilt-r-scripts.html","headline":"[“Run prebuilt R scripts on answers”]","dateModified":"2020-08-24T14:59:20-07:00","datePublished":"2020-08-24T14:59:20-07:00","description":"If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.2/end-user/r-scripts/run-prebuilt-r-scripts.html","headline":"[“Run prebuilt R scripts on answers”]","dateModified":"2020-08-31T16:40:03-07:00","datePublished":"2020-08-31T16:40:03-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/end-user/r-scripts/run-prebuilt-r-scripts.html"},"description":"If you have R privileges on your ThoughtSpot instance, you can run R analyses on search results, and save and share the resulting visualization with others. The users you share visualizations with do not need R privileges.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3157,6 +3158,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.2/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.2/release/downloads.html">Downloads</a></li>
                 
               
@@ -3284,7 +3291,7 @@ ThoughtSpot provided script.</p>
  scripts, the comment at the top of the script provides guidance on what
  columns to select.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # NOTE: Only two columns are needed for this analysis.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # NOTE: Only two columns are needed for this analysis.
  # The first column should represent some date column
  # and the second should be some numeric measure column.
 </code></pre></div>    </div>
@@ -3294,7 +3301,7 @@ ThoughtSpot provided script.</p>
  to produce graphical output, as indicated by a line like this at the end of the
  scripts.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> png(#output_file#, width=1000);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> png(#output_file#, width=1000);
  print(img);
 </code></pre></div>    </div>
   </li>
@@ -3333,7 +3340,7 @@ his full presentation on Custom R Scripts and demo at
 in the Community.</p>
 
 <p>Consider this script, found on this website of <a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations - The Master List (With Full R Code)</a>. A direct link to this script is <a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Diverging%20Bars">here</a>.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
 theme_set(theme_bw())  
 
 # Data Prep
@@ -3358,13 +3365,13 @@ ggplot(mtcars, aes(x=`car name`, y=mpg_z, label=mpg_z)) +
 <p>You can modify the script above to support the phone sales use case discussed in
 the webinar.</p>
 
-<p>In this script, <code class="highlighter-rouge">mtcars</code> is replaced with references to our phone sales
-(<code class="highlighter-rouge">df$Sales</code>) and <code class="highlighter-rouge">car name</code> is replaced with <code class="highlighter-rouge">Device Name</code> both from the column
+<p>In this script, <code class="language-plaintext highlighter-rouge">mtcars</code> is replaced with references to our phone sales
+(<code class="language-plaintext highlighter-rouge">df$Sales</code>) and <code class="language-plaintext highlighter-rouge">car name</code> is replaced with <code class="language-plaintext highlighter-rouge">Device Name</code> both from the column
 data in the search example used in the webinar demo. The script uses the
-ThoughtSpot <em>data frame</em> object (<code class="highlighter-rouge">df</code>), and adds two lines at the end to specify
-output type as a <code class="highlighter-rouge">png</code> image.</p>
+ThoughtSpot <em>data frame</em> object (<code class="language-plaintext highlighter-rouge">df</code>), and adds two lines at the end to specify
+output type as a <code class="language-plaintext highlighter-rouge">png</code> image.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(ggplot2)
 theme_set(theme_bw())  
 
 # Data Prep
@@ -3419,7 +3426,7 @@ print(img)
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 31, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>

@@ -114,9 +114,9 @@ $(document).ready(function(){
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Filter on null, blank, or empty values”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Filter on null, blank, or empty values”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what’s really going on with these types of values, and to get the filtering behavior you want." />
@@ -125,11 +125,12 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/complex-search/about-filters-for-null.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-24T14:59:20-07:00" />
+<meta property="article:published_time" content="2020-08-31T16:40:03-07:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Filter on null, blank, or empty values”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/complex-search/about-filters-for-null.html"},"url":"https://docs.thoughtspot.com/5.2/complex-search/about-filters-for-null.html","headline":"[“Filter on null, blank, or empty values”]","dateModified":"2020-08-24T14:59:20-07:00","datePublished":"2020-08-24T14:59:20-07:00","description":"Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what’s really going on with these types of values, and to get the filtering behavior you want.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.2/complex-search/about-filters-for-null.html","headline":"[“Filter on null, blank, or empty values”]","dateModified":"2020-08-31T16:40:03-07:00","datePublished":"2020-08-31T16:40:03-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/complex-search/about-filters-for-null.html"},"description":"Filtering on null, blank, or empty values can be tricky if your data contains both of these. You can use this method to see what’s really going on with these types of values, and to get the filtering behavior you want.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3157,6 +3158,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.2/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.2/release/downloads.html">Downloads</a></li>
                 
               
@@ -3265,9 +3272,9 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="to-show-null-and-blank-values-differently">To show NULL and blank values differently</h2>
 
-<p>If you need to differentiate between NULL and blank values, you can <a href="how-to-add-formula.html#">Add a formula</a> to make them appear differently in charts and tables. In this example, we’ll use <code class="highlighter-rouge">&lt;text_column&gt;</code> to refer to the text column which contains both NULL and blank values:</p>
+<p>If you need to differentiate between NULL and blank values, you can <a href="how-to-add-formula.html#">Add a formula</a> to make them appear differently in charts and tables. In this example, we’ll use <code class="language-plaintext highlighter-rouge">&lt;text_column&gt;</code> to refer to the text column which contains both NULL and blank values:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then if ( isnull ( &lt;text_column&gt; ) ) then 'null' else 'empty' else &lt;text_column&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then if ( isnull ( &lt;text_column&gt; ) ) then 'null' else 'empty' else &lt;text_column&gt;
 </code></pre></div></div>
 
 <p>This formula will show “null” where the value contained in the column is actually NULL. When the value is blank or empty, it will show up as “empty”.</p>
@@ -3276,7 +3283,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you want to keep the same display format for NULL and blank values, but be able to filter on both using “{blank}”, your <a href="how-to-add-formula.html#">formula</a> will be slightly different. You can use a formula like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then null else &lt;text_column&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ( strlen ( &lt;text_column&gt; ) = 0 ) then null else &lt;text_column&gt;
 </code></pre></div></div>
 
 <p>Use the filter you created instead of the original text column in your search to get the result you desire.</p>
@@ -3319,7 +3326,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 31, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>

@@ -114,9 +114,9 @@ $(document).ready(function(){
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“Work with snapshots”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Work with snapshots”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own." />
@@ -125,11 +125,12 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/backup-restore/overview-snapshot.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-24T14:59:20-07:00" />
+<meta property="article:published_time" content="2020-08-31T16:40:03-07:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“Work with snapshots”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/backup-restore/overview-snapshot.html"},"url":"https://docs.thoughtspot.com/5.2/admin/backup-restore/overview-snapshot.html","headline":"[“Work with snapshots”]","dateModified":"2020-08-24T14:59:20-07:00","datePublished":"2020-08-24T14:59:20-07:00","description":"In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.2/admin/backup-restore/overview-snapshot.html","headline":"[“Work with snapshots”]","dateModified":"2020-08-31T16:40:03-07:00","datePublished":"2020-08-31T16:40:03-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/backup-restore/overview-snapshot.html"},"description":"In this section, you learn how to work with the default snapshot configuration that is enabled on ever cluster and how to take manual snapshots of your own.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3157,6 +3158,12 @@ var ss360Config = {
             
               
                 
+                  <li><a href="/5.2/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/5.2/release/downloads.html">Downloads</a></li>
                 
               
@@ -3274,13 +3281,13 @@ instead, contact ThoughtSpot Support.</p>
   <li>
     <p>Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;name&gt; &lt;reason&gt; &lt;ttl&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;name&gt; &lt;reason&gt; &lt;ttl&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Check that the snapshot was created:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3291,11 +3298,11 @@ instead, contact ThoughtSpot Support.</p>
 snapshots of your cluster. This section explains how to learn more about the
 periodic snapshots in your cluster.</p>
 
-<p>The default snapshot policy is enabled for every cluster. You can use the <code class="highlighter-rouge">tscli
+<p>The default snapshot policy is enabled for every cluster. You can use the <code class="language-plaintext highlighter-rouge">tscli
 snapshot-policy show</code> command to display the current policy for periodic
 snapshots.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 [admin@dogfood1 ~]$ tscli snapshot-policy show
 schedule {
   period {
@@ -3345,14 +3352,14 @@ detailed information about understanding the schedule, see <a href="how-to-creat
 backup/snapshot schedules</a>.</p>
 
 <p>You shouldn’t change this default policy unless instructed to by support. If you
-have to adjust it for some reason, you can use, <code class="highlighter-rouge">tscli snapshot-policy update</code>
+have to adjust it for some reason, you can use, <code class="language-plaintext highlighter-rouge">tscli snapshot-policy update</code>
 command. This opens the current policy in an editor. Your policy should never
 retain more than 20 snapshots at any point in time. Exceeding this number can
 impact cluster performance.</p>
 
 <p>You cannot delete the snapshot policy. However, you can disable the policy by
-executing the<code class="highlighter-rouge">tscli snapshot-policy disable</code> command. And you can re-enable it
-by running, <code class="highlighter-rouge">tscli snapshot-policy enable</code>.</p>
+executing the<code class="language-plaintext highlighter-rouge">tscli snapshot-policy disable</code> command. And you can re-enable it
+by running, <code class="language-plaintext highlighter-rouge">tscli snapshot-policy enable</code>.</p>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Backups rely on the snapshot system. For this
 reason, you should never disable the periodic snapshot system. For example, if
@@ -3364,7 +3371,7 @@ together.</div>
 
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="highlighter-rouge">tscli snapshot-policy show</code> to view the policy.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy show</code> to view the policy.</li>
 </ol>
 
   <div class="tags">
@@ -3399,7 +3406,7 @@ together.</div>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 31, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
