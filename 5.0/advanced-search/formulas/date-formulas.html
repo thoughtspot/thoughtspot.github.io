@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3383,8 +3383,8 @@ formulas.</p>
 <p>The following example shows you how to create formulas that you can use to compare data from this week to last week.</p>
 
 <ul>
-  <li>The formula for this week is: <code class="highlighter-rouge">week ( today () ) - week (date)</code></li>
-  <li>The formula for last week is: <code class="highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
+  <li>The formula for this week is: <code class="language-plaintext highlighter-rouge">week ( today () ) - week (date)</code></li>
+  <li>The formula for last week is: <code class="language-plaintext highlighter-rouge">diff_days ( week ( today ) ) , week ( date ) )</code></li>
 </ul>
 
 <h3 id="example-2">Example 2</h3>
@@ -3392,39 +3392,39 @@ formulas.</p>
 <p>The following example shows you how to calculate the percent increase from the last date period to this period in terms of revenue.</p>
 
 <ol>
-  <li>Create the formula: <code class="highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
-  <li>Then create the formula: <code class="highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
-  <li>Use <a href="/5.0/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
+  <li>Create the formula: <code class="language-plaintext highlighter-rouge">this week revenue = sum ( if ( this week ) then revenue else 0 )</code></li>
+  <li>Then create the formula: <code class="language-plaintext highlighter-rouge">last week revenue = sum ( if (last week ) then revenue else 0 )</code></li>
+  <li>Use <a href="/5.0/complex-search/about-nested-formulas.html#">nested formulas</a> to calculate the percent increase by creating a parent formula: <code class="language-plaintext highlighter-rouge">percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100</code></li>
 </ol>
 
 <h2 id="fiscal-and-gregorian-calendars">Fiscal and Gregorian calendars</h2>
 
-<p>For the following date formulas, you can further specify either <code class="highlighter-rouge">fiscal</code> or
-Gregorian <code class="highlighter-rouge">calendar</code> on which to base date calculations. (If you do not specify a
+<p>For the following date formulas, you can further specify either <code class="language-plaintext highlighter-rouge">fiscal</code> or
+Gregorian <code class="language-plaintext highlighter-rouge">calendar</code> on which to base date calculations. (If you do not specify a
 calendar type, the formula will default to standard Gregorian, with the year
 starting in January.)</p>
 
 <ul>
-  <li><code class="highlighter-rouge">day_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">day_number_of_year</code></li>
-  <li><code class="highlighter-rouge">month_number</code></li>
-  <li><code class="highlighter-rouge">month_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">quarter_number</code></li>
-  <li><code class="highlighter-rouge">start_of_quarter</code></li>
-  <li><code class="highlighter-rouge">start_of_year</code></li>
-  <li><code class="highlighter-rouge">week_number_of_quarter</code></li>
-  <li><code class="highlighter-rouge">week_number_of_year</code></li>
-  <li><code class="highlighter-rouge">year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">day_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">day_number_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">month_number</code></li>
+  <li><code class="language-plaintext highlighter-rouge">month_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">quarter_number</code></li>
+  <li><code class="language-plaintext highlighter-rouge">start_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">start_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">week_number_of_quarter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">week_number_of_year</code></li>
+  <li><code class="language-plaintext highlighter-rouge">year</code></li>
 </ul>
 
 <p>Your ThoughtSpot administrator and ThoughtSpot Support can
 <a href="/5.0/admin/setup/set-custom-calendar.html#">set up a fiscal calendar year</a>
-to start on any month. If the <code class="highlighter-rouge">fiscal</code> year is not explicitly configured in the system,
-<code class="highlighter-rouge">fiscal</code> defaults to January, the same as the Gregorian <code class="highlighter-rouge">calendar</code>.</p>
+to start on any month. If the <code class="language-plaintext highlighter-rouge">fiscal</code> year is not explicitly configured in the system,
+<code class="language-plaintext highlighter-rouge">fiscal</code> defaults to January, the same as the Gregorian <code class="language-plaintext highlighter-rouge">calendar</code>.</p>
 
-<p>For example, the formula <code class="highlighter-rouge">month_number_of_quarter (05/01/2014)</code> would return <code class="highlighter-rouge">2</code>
+<p>For example, the formula <code class="language-plaintext highlighter-rouge">month_number_of_quarter (05/01/2014)</code> would return <code class="language-plaintext highlighter-rouge">2</code>
 based on the default Gregorian calendar, whereas the formula
-<code class="highlighter-rouge">month_number_of_quarter (05/01/2014, 'fiscal')</code> would return <code class="highlighter-rouge">1</code> if your
+<code class="language-plaintext highlighter-rouge">month_number_of_quarter (05/01/2014, 'fiscal')</code> would return <code class="language-plaintext highlighter-rouge">1</code> if your
 administrator has configured the fiscal calendar to start at May.</p>
 
 <h2 id="related-information">Related information</h2>
@@ -3473,7 +3473,7 @@ administrator has configured the fiscal calendar to start at May.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3182,7 +3182,7 @@ performance. The following are good guidelines for choosing storage:</p>
 
 <p>Thoughtspot supports shared storage by mounting NFS or CIFS/Samba based volumes.
 Before you begin, make sure you know if the shared volume is Samba or NAS
-volume. To find out, use the <code class="highlighter-rouge">telnet</code> command.</p>
+volume. To find out, use the <code class="language-plaintext highlighter-rouge">telnet</code> command.</p>
 
 <table>
   <tr>
@@ -3223,19 +3223,19 @@ recovery plan.</p>
   <li>
     <p>Create a directory to act as your <em>mount_point</em>.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir &lt;mount_point&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Set the directory owner to <code class="highlighter-rouge">admin</code>.</p>
+    <p>Set the directory owner to <code class="language-plaintext highlighter-rouge">admin</code>.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R admin:admin &lt;mount_point&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R admin:admin &lt;mount_point&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli nas</code> subcommand to create a NAS mount on all of the cluster nodes. Run <code class="highlighter-rouge">tscli nas mount-nfs</code> or <code class="highlighter-rouge">tscli nas mount-cifs</code>.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli nas</code> subcommand to create a NAS mount on all of the cluster nodes. Run <code class="language-plaintext highlighter-rouge">tscli nas mount-nfs</code> or <code class="language-plaintext highlighter-rouge">tscli nas mount-cifs</code>.</p>
 
-    <p>Use the command-line help (<code class="highlighter-rouge">tscli nas -h</code>) or the documentation to view all the <a href="/5.0/reference/tscli-command-ref.html#nas">nas subcommand options</a>. Below are some samples to help you:</p>
+    <p>Use the command-line help (<code class="language-plaintext highlighter-rouge">tscli nas -h</code>) or the documentation to view all the <a href="/5.0/reference/tscli-command-ref.html#nas">nas subcommand options</a>. Below are some samples to help you:</p>
 
     <table>
 <tr>
@@ -3270,15 +3270,15 @@ shared volume. The configuration of the mount point should be identical on
 both machines.</p>
   </li>
   <li>
-    <p>Test the configuration by creating a file as the <code class="highlighter-rouge">admin</code> user.</p>
+    <p>Test the configuration by creating a file as the <code class="language-plaintext highlighter-rouge">admin</code> user.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Return to the primary server and make sure you can edit the file.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch &lt;mount_point&gt;/testfile
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3288,9 +3288,9 @@ both machines.</p>
 <ol>
   <li>If you haven’t already done so, SSH into the primary server.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli backup-policy create</code> command.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli backup-policy create</code> command.</p>
 
-    <p>The command opens a <code class="highlighter-rouge">vi</code> editor for you to configure the backup policy. Make
+    <p>The command opens a <code class="language-plaintext highlighter-rouge">vi</code> editor for you to configure the backup policy. Make
 sure your policy points to the NAS mount in the primary appliance.</p>
 
     <p>When choosing times and frequencies for periodic backups, you should choose a
@@ -3307,21 +3307,21 @@ see <a href="/5.0/admin/backup-restore/configure-backup.html">Configure periodic
     <p>By default, newly created policies are automatically enabled.</p>
   </li>
   <li>
-    <p>Verify the policy using the <code class="highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</p>
+    <p>Verify the policy using the <code class="language-plaintext highlighter-rouge">tscli backup periodic-config &lt;name&gt;</code> command.</p>
 
-    <p>Use the <code class="highlighter-rouge">&lt;name&gt;</code> from the policy you created in the previous step.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">&lt;name&gt;</code> from the policy you created in the previous step.</p>
   </li>
   <li>SSH into the secondary recovery appliance.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli dr-mirror</code> subcommand to start the mirror cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror start
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror start
 </code></pre></div>    </div>
   </li>
   <li>Verify that the cluster has started running in mirror mode</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli dr-mirror status
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli dr-mirror status
 </code></pre></div></div>
 
 <p>It may take some time for the cluster to begin acting as a mirror.</p>
@@ -3341,19 +3341,19 @@ instance into the primary.</p>
   <li>
     <p>Stop the mirror cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror stop
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror stop
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Verify the mirror has stopped.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror status
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror status
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Start the new primary cluster.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster start
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster start
 </code></pre></div>    </div>
   </li>
   <li>Deploy a new mirror.</li>
@@ -3384,7 +3384,7 @@ instance into the primary.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

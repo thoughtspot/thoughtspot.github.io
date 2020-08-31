@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3157,15 +3157,15 @@ $('#toc').on('click', 'a', function() {
 
 <p>For a pinboard, you’ll append the ID of your pinboard as a parameter, like this example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3
 </code></pre></div></div>
 
 <p>To retrieve data from a specific visualization within a pinboard, you would append the ID number of the visualization using the vizid parameter:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&amp;vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;thoughtspot_server&gt;/callosum/v1/tspublic/v1/pinboarddata?id=7752fa9e-db22-415e-bf34-e082c4bc41c3&amp;vizid=%5B1e99d70f-c1dc-4a52-9980-cfd4d14ba6d6%5D
 </code></pre></div></div>
 
-<p><strong>Remember:</strong> You must add brackets around the vizid parameter. The URL encoding for open bracket is <code class="highlighter-rouge">%5B</code>, and the URL encoding for close bracket is <code class="highlighter-rouge">%5D</code>.</p>
+<p><strong>Remember:</strong> You must add brackets around the vizid parameter. The URL encoding for open bracket is <code class="language-plaintext highlighter-rouge">%5B</code>, and the URL encoding for close bracket is <code class="language-plaintext highlighter-rouge">%5D</code>.</p>
 
 <h2 id="object-format-for-returned-data">Object Format for Returned Data</h2>
 
@@ -3175,7 +3175,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you make a call to a specific viz on a pinboard, it will return just one object. The JSON object format for the data that is returned from ThoughtSpot is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 vizId1 : {
          name: “Viz name”,
          :[[2-d array of data values], [], [] …..[]],
@@ -3194,10 +3194,10 @@ vizId2 : {
   <li>An array of column headers.</li>
   <li>An array of data.</li>
   <li>The name given to the specific viz.</li>
-  <li>And a sampling ratio. The sampling ratio tells you the percentage of total data returned. <code class="highlighter-rouge">1</code> would mean all data in the viz was returned in the API call.</li>
+  <li>And a sampling ratio. The sampling ratio tells you the percentage of total data returned. <code class="language-plaintext highlighter-rouge">1</code> would mean all data in the viz was returned in the API call.</li>
 </ol>
 
-<p>The <code class="highlighter-rouge">columnNames</code> array contains a list of all column headers. And the <code class="highlighter-rouge">data</code> array contains a list of other arrays. Each sub array represents a new row of data.</p>
+<p>The <code class="language-plaintext highlighter-rouge">columnNames</code> array contains a list of all column headers. And the <code class="language-plaintext highlighter-rouge">data</code> array contains a list of other arrays. Each sub array represents a new row of data.</p>
 
 <p><img src="/5.0/images/columnnames_and_data_arrays.png" alt="" title="columnNames and data arrays" /></p>
 
@@ -3207,7 +3207,7 @@ vizId2 : {
 
 <p>The following example shows a JavaScript function that calls the REST API, gets the results back, and retrieves a single value from the JSON results:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Generates headline by making a data API call.
  *
  * @param void
@@ -3271,7 +3271,7 @@ function generateHeadline(filters) {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

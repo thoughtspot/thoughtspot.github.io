@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3164,7 +3164,7 @@ which could increase the time it takes to build the table.</p>
 fix it. To improve data loading speed, run the following command to find the
 number of tables that are building and their names</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster status --mode table
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster status --mode table
 </code></pre></div></div>
 
 <p>You may notice that a few small tables are taking up a lot of time to be built.
@@ -3173,7 +3173,7 @@ also the chance it could be due to a high data version issue. To determine if
 this is a high data version issue, check the size of the table by running the
 following command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'show statistics for server;' | tql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'show statistics for server;' | tql
 </code></pre></div></div>
 
 <p>If there is a large number of rows in the table, go on to shard the table. If
@@ -3181,7 +3181,7 @@ the table has a small number of rows, then the slow loading speed is caused by a
 high data version issue, and you do not have to shard the table. Use the compact
 table functionality to trim the table down to its actual size:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql&gt; compact table &lt;table name&gt;;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tql&gt; compact table &lt;table name&gt;;
 </code></pre></div></div>
 
   <div class="tags">
@@ -3208,7 +3208,7 @@ table functionality to trim the table down to its actual size:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

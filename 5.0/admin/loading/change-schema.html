@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3161,7 +3161,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Use this procedure to change the primary key for a table. But use it with caution, particularly if you are changing to a primary key for which values are not unique.</p>
 
-<p>You can change the primary key of a table without having to <code class="highlighter-rouge">TRUNCATE</code> it first and reload the data. However, changing the primary key could result in data deletion. This is because of the upsert behavior which is applied when multiple rows have the same primary key. This is very important to understand ahead of time, if you are considering changing to a primary key for which values are not unique.</p>
+<p>You can change the primary key of a table without having to <code class="language-plaintext highlighter-rouge">TRUNCATE</code> it first and reload the data. However, changing the primary key could result in data deletion. This is because of the upsert behavior which is applied when multiple rows have the same primary key. This is very important to understand ahead of time, if you are considering changing to a primary key for which values are not unique.</p>
 
 <p>To change the primary key, first remove any existing primary key, and then define a new one (if any). You do not need to truncate the tables to do this operation beginning in version 3.2. Any dependent objects (pinboards or worksheets) will remain intact.</p>
 
@@ -3173,17 +3173,18 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Drop the existing primary key (if any), by issuing a command like this example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       DROP CONSTRAINT
       PRIMARY KEY;
 </code></pre></div>    </div>
 
-    <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.</p>
+    <p>Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects.
+[//]: # (To continue, use the <code class="language-plaintext highlighter-rouge">--allow_unsafe</code> flag.)</p>
   </li>
   <li>
     <p>Add a new primary key, if desired:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "cart"
       ADD CONSTRAINT
       PRIMARY KEY ("owner_id");
 </code></pre></div>    </div>
@@ -3192,7 +3193,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3212,12 +3213,13 @@ $('#toc').on('click', 'a', function() {
     <p>Issue the command to drop the existing relationship</p>
 
     <p>Before dropping a relationship TQL checks for and then warns of any dependent
-objects. To continue with the drop any way, use the <code class="highlighter-rouge">--allow_unsafe</code> flag.
+objects.
+[//]: # (To continue with the drop any way, use the <code class="language-plaintext highlighter-rouge">--allow_unsafe</code> flag.)
 The following examples illustrate several different types of drop operations.</p>
 
     <p>Drop a foreign key by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE
       "sales_fact"
       DROP CONSTRAINT
       "FK_PO_number";
@@ -3225,31 +3227,31 @@ The following examples illustrate several different types of drop operations.</p
 
     <p>Drop a relationship by name, if it was given a name when it was defined:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
  TQL&gt; ALTER TABLE "fruit_dim"
       DROP RELATIONSHIP "REL_dates";
 </code></pre></div>    </div>
 
     <p>Drop the foreign key relationship explicitly, if it doesn’t have a name, by referencing the two tables that are joined. This drops all foreign keys between the two tables:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "shipments"
       DROP CONSTRAINT
       FOREIGN KEY "orders";
 </code></pre></div>    </div>
 
     <p>Drop all generic relationships between two tables:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE "wholesale_buys"
       DROP RELATIONSHIP
       WITH "retail_sales";
 </code></pre></div>    </div>
   </li>
-  <li>Define a new relationship, if you want to, using <code class="highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
+  <li>Define a new relationship, if you want to, using <code class="language-plaintext highlighter-rouge">ALTER TABLE...ADD CONSTRAINT...</code></li>
   <li>Test that any dependent objects (pinboards, worksheets, etc.) are still working correctly.</li>
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3276,7 +3278,7 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Issue the command to change the sharding using this syntax:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE &lt;table&gt;
      [SET DIMENSION | SET FACT
      [PARTITION BY HASH
      [(&lt;shards&gt;)]
@@ -3289,14 +3291,14 @@ The following examples illustrate several different types of drop operations.</p
       <li>
         <p>To make a sharded table into a dimension table (replicated on every node), use:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "products"
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "products"
    SET DIMENSION;
 </code></pre></div>        </div>
       </li>
       <li>
         <p>To make a dimension table into a sharded (fact) table or change the number of shards, use:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "sales"
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE "sales"
    SET FACT PARTITION BY HASH (96)
    KEY ("productID");
 </code></pre></div>        </div>
@@ -3307,7 +3309,7 @@ The following examples illustrate several different types of drop operations.</p
   <li>
     <p>Delete the snapshot you created earlier using the command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli snapshot delete &lt;name&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3343,7 +3345,7 @@ The following examples illustrate several different types of drop operations.</p
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

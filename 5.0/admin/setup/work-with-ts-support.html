@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3170,7 +3170,7 @@ can be granted and revoked easily, so you can enable it for a troubleshooting
 session, and then disable it again. Before doing this procedure, make sure your
 company’s security policies allow reverse tunneling.</p>
 
-<p>Before you can do this procedure, your networking team needs to open port <code class="highlighter-rouge">22</code>
+<p>Before you can do this procedure, your networking team needs to open port <code class="language-plaintext highlighter-rouge">22</code>
 in your firewall outgoing rules.</p>
 
 <p>To enable remote support:</p>
@@ -3187,27 +3187,27 @@ in your firewall outgoing rules.</p>
  first time. After that, this setting persists when you start and stop the
  remote tunnel.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-remote --addr tunnelrelay.thoughtspot.com
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-remote --addr tunnelrelay.thoughtspot.com
  --user ubuntu
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Test that the setting is configured:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-remote
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-remote
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Enable the remote tunnel:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support start-remote
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support start-remote
 </code></pre></div>    </div>
   </li>
   <li><a href="/5.0/admin/misc/contact.html#">Contact ThoughtSpot</a> and test the setup with your ThoughtSpot Support contact.</li>
   <li>
     <p>After your remote session with ThoughtSpot Support, turn the remote tunnel off, until you need to use it again:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support stop-remote
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support stop-remote
 </code></pre></div>    </div>
 
     <p>You can repeat the steps to start and stop the remote tunnel as needed for future support operations.</p>
@@ -3215,7 +3215,7 @@ in your firewall outgoing rules.</p>
   <li>
     <p>Ensure that the remote tunnel is disabled:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-remote
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-remote
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3244,10 +3244,10 @@ command line when uploading or downloading a file.</p>
   <li>
     <p>Issue the command to configure the file server:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli fileserver configure --user &lt;user_name&gt; [--password &lt;password&gt;]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli fileserver configure --user &lt;user_name&gt; [--password &lt;password&gt;]
 </code></pre></div>    </div>
 
-    <p>If you do not supply the <code class="highlighter-rouge">--password</code> parameter, you are prompted to enter it.</p>
+    <p>If you do not supply the <code class="language-plaintext highlighter-rouge">--password</code> parameter, you are prompted to enter it.</p>
   </li>
 </ol>
 
@@ -3264,11 +3264,11 @@ rest on the server.</p>
 by doing the following:</p>
 
 <ol>
-  <li>Log in to the ThoughtSpot server as <code class="highlighter-rouge">admin</code> user.</li>
+  <li>Log in to the ThoughtSpot server as <code class="language-plaintext highlighter-rouge">admin</code> user.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">tscli</code> command to disable.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">tscli</code> command to disable.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli callhome disable
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli callhome disable
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3285,21 +3285,21 @@ support contact should have an available email and phone number.</p>
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
-    <p>Issue the <code class="highlighter-rouge">tscli</code> command to set the email address:</p>
+    <p>Issue the <code class="language-plaintext highlighter-rouge">tscli</code> command to set the email address:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-admin-email &lt;email_address&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-admin-email &lt;email_address&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Issue the <code class="highlighter-rouge">tscli</code> command to set the phone number:</p>
+    <p>Issue the <code class="language-plaintext highlighter-rouge">tscli</code> command to set the phone number:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-admin-phone &lt;phone_number&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-admin-phone &lt;phone_number&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>If you need to reset both of these to the default (ThoughtSpot Support), issue:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support rm-admin-email
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support rm-admin-email
  $ tscli support rm-admin-phone
 </code></pre></div>    </div>
   </li>
@@ -3320,26 +3320,26 @@ the custom feedback contact, do the following:</p>
   <li>
     <p>To set the feedback email address, do the following:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-feedback-email &lt;email_address&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support set-feedback-email &lt;email_address&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Verify the email address was set:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-feedback-email
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli support show-feedback-email
 </code></pre></div>    </div>
   </li>
 </ol>
 
 <p>If you need to reset the email to the default (ThoughtSpot support), issue:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli support rm-feedback-email
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli support rm-feedback-email
 </code></pre></div></div>
 
 <p>You can also choose not to send feedback out of your system at all by doing the
 following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli support set-feedback-email ' '
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli support set-feedback-email ' '
 </code></pre></div></div>
 
 <h2 id="how-users-find-your-companys-support-contact">How users find your company’s support contact</h2>
@@ -3399,7 +3399,7 @@ will see it:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

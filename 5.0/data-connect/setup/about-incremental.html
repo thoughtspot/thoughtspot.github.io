@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3162,13 +3162,13 @@ was modified.</p>
 <p>If your source data has such a timestamp, then you can use the following filters:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">modifiedDate &gt; $LastRunDate</code></li>
-  <li><code class="highlighter-rouge">modifiedTime &gt; $LastRunTime</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifiedDate &gt; $LastRunDate</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifiedTime &gt; $LastRunTime</code></li>
 </ul>
 
-<p>The <code class="highlighter-rouge">$LastRunDate</code> and <code class="highlighter-rouge">$LastRunTime</code> filters are correctly updated at runtime
-to reflect the date/time of the last successful job run.  Both <code class="highlighter-rouge">$LastRunDate</code>
-and <code class="highlighter-rouge">$LastRunTime</code> are in GMT, they cannot be reconfigured. `</p>
+<p>The <code class="language-plaintext highlighter-rouge">$LastRunDate</code> and <code class="language-plaintext highlighter-rouge">$LastRunTime</code> filters are correctly updated at runtime
+to reflect the date/time of the last successful job run.  Both <code class="language-plaintext highlighter-rouge">$LastRunDate</code>
+and <code class="language-plaintext highlighter-rouge">$LastRunTime</code> are in GMT, they cannot be reconfigured. `</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you are loading data with datetime values and
 the values’ timezones are anything other than GMT, the data is loaded at
@@ -3180,13 +3180,13 @@ a way to identify the modified rows. Even if the source does not have this
 capability, you may still be able to do an incremental load.</p>
 
 <p>As long as a primary key exists on the target ThoughtSpot table, the data will
-be loaded using an <code class="highlighter-rouge">upsert</code>. This means that for a given row being loaded, if
+be loaded using an <code class="language-plaintext highlighter-rouge">upsert</code>. This means that for a given row being loaded, if
 the primary key already exists in the target table, that row is updated with the
 data in the new row. If a row with that primary key does not exist, the new row
 will be inserted. This is how ThoughtSpot handles data loads into a table that
 already contains rows, and it is the equivalent to an incremental load.</p>
 
-<p>If you are relying on the <code class="highlighter-rouge">upsert</code> method, you’ll want to run a <code class="highlighter-rouge">COMPACT TABLE</code>
+<p>If you are relying on the <code class="language-plaintext highlighter-rouge">upsert</code> method, you’ll want to run a <code class="language-plaintext highlighter-rouge">COMPACT TABLE</code>
 command in ThoughtSpot SQL Command Line (TQL) to reduce the size of the table at
 intervals (usually weekly).</p>
 
@@ -3218,7 +3218,7 @@ and ensures that old data, which may not be valuable, is not taking up memory.</
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

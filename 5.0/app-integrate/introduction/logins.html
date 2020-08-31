@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3185,7 +3185,7 @@ $('#toc').on('click', 'a', function() {
   </tr>
 </table>
 <p>&nbsp;</p>
-<p>Both the <code class="highlighter-rouge">admin</code> and <code class="highlighter-rouge">thoughtspot</code> user can SSH into the appliance. Once on the
+<p>Both the <code class="language-plaintext highlighter-rouge">admin</code> and <code class="language-plaintext highlighter-rouge">thoughtspot</code> user can SSH into the appliance. Once on the
 appliance, either user can do any of the following:</p>
 
 <ul>
@@ -3194,23 +3194,23 @@ appliance, either user can do any of the following:</p>
   <li><a href="/5.0/admin/loading/use-data-importer.html">tsload</a></li>
 </ul>
 
-<p>The <code class="highlighter-rouge">thoughtspot</code> user is restricted to <code class="highlighter-rouge">tscli</code> commands that do not require
-<code class="highlighter-rouge">sudo</code> or root privileges.</p>
+<p>The <code class="language-plaintext highlighter-rouge">thoughtspot</code> user is restricted to <code class="language-plaintext highlighter-rouge">tscli</code> commands that do not require
+<code class="language-plaintext highlighter-rouge">sudo</code> or root privileges.</p>
 
 <h2 id="ssh-to-the-appliance">SSH to the appliance</h2>
 
 <p>To perform basic administration such as checking network connectivity, starting and stopping services, and setting up email, log in remotely as the Linux administrator user “admin”. To log in with SSH from any machine, you can use the command shell or a utility like Putty.</p>
 
-<p>In the following procedure, replace <code class="highlighter-rouge">&lt;hostname_or_IP&gt;</code> with the hostname or IP address of a node in ThoughtSpot. The default SSH port (22) will be used.</p>
+<p>In the following procedure, replace <code class="language-plaintext highlighter-rouge">&lt;hostname_or_IP&gt;</code> with the hostname or IP address of a node in ThoughtSpot. The default SSH port (22) will be used.</p>
 
 <ol>
   <li>Log in to a client machine and open a command prompt.</li>
   <li>Issue the SSH command, specifying the IP address or hostname of the ThoughtSpot instance:
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ssh admin@&lt;hostname_or_IP&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ssh admin@&lt;hostname_or_IP&gt;
 </code></pre></div>    </div>
   </li>
   <li>Enter the password for the admin user.<br />
- ThoughtSpot provides a default password for both the <code class="highlighter-rouge">admin</code> and <code class="highlighter-rouge">thoughtspot</code> shell users. ThoughtSpot recommends that you change the passwords for both these users on first login. Follow your company’s policies on password security.</li>
+ ThoughtSpot provides a default password for both the <code class="language-plaintext highlighter-rouge">admin</code> and <code class="language-plaintext highlighter-rouge">thoughtspot</code> shell users. ThoughtSpot recommends that you change the passwords for both these users on first login. Follow your company’s policies on password security.</li>
 </ol>
 
 <h2 id="log-in-to-the-thoughtspot-application">Log in to the ThoughtSpot application</h2>
@@ -3264,7 +3264,7 @@ or UI issues when using IE.</div>
 <p>To log in to ThoughtSpot from a browser:</p>
 
 <ol>
-  <li>Open the browser and type in the Web address for ThoughtSpot: <code class="highlighter-rouge">http://&lt;hostname_or_IP&gt;</code></li>
+  <li>Open the browser and type in the Web address for ThoughtSpot: <code class="language-plaintext highlighter-rouge">http://&lt;hostname_or_IP&gt;</code></li>
   <li>Enter your username and password and click <strong>Enter Now</strong>.</li>
 </ol>
 
@@ -3293,7 +3293,7 @@ or UI issues when using IE.</div>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

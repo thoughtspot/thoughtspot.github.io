@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3237,13 +3237,13 @@ these keywords less frequently than others.</p>
 <p>You can use these new keywords in combination with the existing data keywords which are:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">Detailed</code></li>
-  <li><code class="highlighter-rouge">Hourly</code></li>
-  <li><code class="highlighter-rouge">Daily</code></li>
-  <li><code class="highlighter-rouge">Weekly</code></li>
-  <li><code class="highlighter-rouge">Monthly</code></li>
-  <li><code class="highlighter-rouge">Quarterly</code></li>
-  <li><code class="highlighter-rouge">Yearly</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Detailed</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Hourly</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Daily</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Weekly</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Monthly</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Quarterly</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Yearly</code></li>
 </ul>
 
 <h2 id="examples-of-time-series-analysis">Examples of time series analysis</h2>
@@ -3261,7 +3261,7 @@ line chart showing the aspect as it rises and falls over time.</p>
 
 <p>You can also add a relative date filter for example,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>total revenue quarterly yearly by year month(commit date) &gt;= 01/01/1995
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>total revenue quarterly yearly by year month(commit date) &gt;= 01/01/1995
 month(commit date) before 01/01/1998
 </code></pre></div></div>
 
@@ -3270,8 +3270,8 @@ month(commit date) before 01/01/1998
 <p><img src="/5.0/images/time-example3.png" alt="" title="Period Analysis Example" /></p>
 
 <p>The child date time attribute is on the X-axis and the parent in the legend. For
-example, if you search <code class="highlighter-rouge">revenue month yearly</code> the child, <code class="highlighter-rouge">monthly</code>, appears on
-the x-axis and the parent, <code class="highlighter-rouge">yearly</code>, in the legend.</p>
+example, if you search <code class="language-plaintext highlighter-rouge">revenue month yearly</code> the child, <code class="language-plaintext highlighter-rouge">monthly</code>, appears on
+the x-axis and the parent, <code class="language-plaintext highlighter-rouge">yearly</code>, in the legend.</p>
 
 <h2 id="granularity-for-date-filters">Granularity for date filters</h2>
 
@@ -3279,18 +3279,18 @@ the x-axis and the parent, <code class="highlighter-rouge">yearly</code>, in the
 query. The ability to specify two bucket granularities such as “hour of day” or
 “week of year” are two examples. The syntax of this type of query is</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>small_bucket of big_bucket [INTEGER_CONDITION]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>small_bucket of big_bucket [INTEGER_CONDITION]
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">INTEGER_CONDITION</code> is optional but it must be an integer.  For example, this
+<p>The <code class="language-plaintext highlighter-rouge">INTEGER_CONDITION</code> is optional but it must be an integer.  For example, this
 query is valid:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>revenue by day of week &lt;= 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>revenue by day of week &lt;= 2
 </code></pre></div></div>
 
 <p>This query is invalid:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>revenue by day of week = Tuesday
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>revenue by day of week = Tuesday
 </code></pre></div></div>
 
 <p>You can specify one or more granular filters.</p>
@@ -3299,12 +3299,12 @@ query is valid:</p>
 
 <ul>
   <li>The system-defined fiscal rules are respected.  This
-means, for example, if the fiscal year begins in February, <code class="highlighter-rouge">month of year = 2</code>
+means, for example, if the fiscal year begins in February, <code class="language-plaintext highlighter-rouge">month of year = 2</code>
 matches dates in March.</li>
-  <li>Fiscal shorthands such as <code class="highlighter-rouge">Q1</code>, <code class="highlighter-rouge">Q2</code> and so on are not
-supported, so <code class="highlighter-rouge">day of week = d1</code> is not valid.</li>
-  <li><code class="highlighter-rouge">INTEGER_CONDITION</code> with <code class="highlighter-rouge">=</code> or <code class="highlighter-rouge">!=</code> accept a list of filter values, so, <code class="highlighter-rouge">day of week = 1 2 3</code> is valid.</li>
-  <li><code class="highlighter-rouge">INTEGER_CONDITION</code> with <code class="highlighter-rouge">=</code> or <code class="highlighter-rouge">!=</code> require legal values, so <code class="highlighter-rouge">day of week &gt;</code> accepts any integer on the right hand side while <code class="highlighter-rouge">day of week =</code> requires a value in the legal <code class="highlighter-rouge">1-7</code> range.</li>
+  <li>Fiscal shorthands such as <code class="language-plaintext highlighter-rouge">Q1</code>, <code class="language-plaintext highlighter-rouge">Q2</code> and so on are not
+supported, so <code class="language-plaintext highlighter-rouge">day of week = d1</code> is not valid.</li>
+  <li><code class="language-plaintext highlighter-rouge">INTEGER_CONDITION</code> with <code class="language-plaintext highlighter-rouge">=</code> or <code class="language-plaintext highlighter-rouge">!=</code> accept a list of filter values, so, <code class="language-plaintext highlighter-rouge">day of week = 1 2 3</code> is valid.</li>
+  <li><code class="language-plaintext highlighter-rouge">INTEGER_CONDITION</code> with <code class="language-plaintext highlighter-rouge">=</code> or <code class="language-plaintext highlighter-rouge">!=</code> require legal values, so <code class="language-plaintext highlighter-rouge">day of week &gt;</code> accepts any integer on the right hand side while <code class="language-plaintext highlighter-rouge">day of week =</code> requires a value in the legal <code class="language-plaintext highlighter-rouge">1-7</code> range.</li>
   <li>Simple date filters allow you to use edit the filter through the answer to refine your search, adding a a hierarchical date filter in the search bar disables this ability.</li>
 </ul>
 
@@ -3343,7 +3343,7 @@ supported, so <code class="highlighter-rouge">day of week = d1</code> is not val
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

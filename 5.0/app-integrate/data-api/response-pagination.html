@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3132,9 +3132,9 @@ var ss360Config = {
 
 <p>To paginate results in your API response, you’ll need to add new parameters to the query:</p>
 
-<p><code class="highlighter-rouge">PageSize</code> determines the number of rows to be included.</p>
+<p><code class="language-plaintext highlighter-rouge">PageSize</code> determines the number of rows to be included.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "pagesize",
     "description": PageSize: The number of rows.",
     "defaultValue": "-1",
@@ -3142,9 +3142,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">Offset</code> determines the starting point.</p>
+<p><code class="language-plaintext highlighter-rouge">Offset</code> determines the starting point.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "offset",
     "description": Offset: The starting point",
     "defaultValue": "-1",
@@ -3152,9 +3152,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">PageNumber</code> is an alternate way to determine the offset. You must make a call with <code class="highlighter-rouge">pageNumber = 1</code> first. Then you can access any page. Calling with <code class="highlighter-rouge">pageNumber != 1</code> as the initial call will fail. <code class="highlighter-rouge">pageNumber = 0</code> is not a valid value.</p>
+<p><code class="language-plaintext highlighter-rouge">PageNumber</code> is an alternate way to determine the offset. You must make a call with <code class="language-plaintext highlighter-rouge">pageNumber = 1</code> first. Then you can access any page. Calling with <code class="language-plaintext highlighter-rouge">pageNumber != 1</code> as the initial call will fail. <code class="language-plaintext highlighter-rouge">pageNumber = 0</code> is not a valid value.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "pagenumber",
     "description": PageNumber: This is an alternate way to set offset. This is 1-based
                    indexing. Offset = (pageNumber - 1) * pageSize.
@@ -3163,9 +3163,9 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">FormatType</code> is the JSON format type.</p>
+<p><code class="language-plaintext highlighter-rouge">FormatType</code> is the JSON format type.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "formattype",
     "description": FormatType: This sets the JSON format type. Values that are allowed are
                    FULL and COMPACT.
@@ -3174,13 +3174,13 @@ var ss360Config = {
 }
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="highlighter-rouge">FULL</code> is formatted like this: <code class="highlighter-rouge">{'col1': 1 'col2': 'a'}</code></p>
+<p><code class="language-plaintext highlighter-rouge">COMPACT</code> is the default type, and is formatted as follows: <code class="language-plaintext highlighter-rouge">['col1', 'col2'] [1, 'a']</code>. While <code class="language-plaintext highlighter-rouge">FULL</code> is formatted like this: <code class="language-plaintext highlighter-rouge">{'col1': 1 'col2': 'a'}</code></p>
 
 <h2 id="example">Example</h2>
 
 <p>The following example shows ThoughtSpot data that is being populated in a table:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
  * Sample response for Page-1.
  */
 {
@@ -3225,7 +3225,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
