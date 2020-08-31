@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3159,12 +3159,12 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>URL to connect to Active Directory.</p>
 
-    <p>For example, <code class="highlighter-rouge">ldap://192.168.2.48:389</code></p>
+    <p>For example, <code class="language-plaintext highlighter-rouge">ldap://192.168.2.48:389</code></p>
   </li>
   <li>
     <p>Default LDAP domain.</p>
 
-    <p>The default domain is the domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple domains, you can still designate one of them as the default. Users belonging to a non-default domain will have to explicitly qualify their username when they log in, for example: <code class="highlighter-rouge">username@ldap1.thoughtspot.com</code>.</p>
+    <p>The default domain is the domain under which users who want to be authenticated against Active Directory reside. When a user logs in with a username, the default domain is added to the username before sending it to the LDAP server. If users reside in multiple domains, you can still designate one of them as the default. Users belonging to a non-default domain will have to explicitly qualify their username when they log in, for example: <code class="language-plaintext highlighter-rouge">username@ldap1.thoughtspot.com</code>.</p>
   </li>
   <li>
     <p>Whether you will use SSL.</p>
@@ -3181,7 +3181,7 @@ $('#toc').on('click', 'a', function() {
 
     <p>If you choose ‘yes’ for this, when a user is authenticated against LDAP, if that user does not exist in ThoughtSpot, then the user is automatically created. When users are created in this way, their passwords exist only in LDAP and are not stored in ThoughtSpot.</p>
 
-    <p>In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against LDAP or against ThoughtSpot’s internal authentication. If you choose ‘no’ for this, users who will authenticate against LDAP have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="highlighter-rouge">username@ldap1.thoughtspot.com</code>.</p>
+    <p>In order to log in to ThoughtSpot, the user has to exist in ThoughtSpot independent of whether that user is authenticated against LDAP or against ThoughtSpot’s internal authentication. If you choose ‘no’ for this, users who will authenticate against LDAP have to be manually created with a dummy password as a placeholder in ThoughtSpot before they can log in. The username you specify when creating the LDAP authenticated user manually in ThoughtSpot has to be domain qualified, for example: <code class="language-plaintext highlighter-rouge">username@ldap1.thoughtspot.com</code>.</p>
   </li>
   <li>
     <p>Also use ThoughtSpot internal authentication?</p>
@@ -3190,20 +3190,20 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ul>
 
-<p>You do not need to create a user called <code class="highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="highlighter-rouge">tsadmin</code>. To configure LDAP:</p>
+<p>You do not need to create a user called <code class="language-plaintext highlighter-rouge">tsadmin</code> on your LDAP server. Internal authentication can be used for <code class="language-plaintext highlighter-rouge">tsadmin</code>. To configure LDAP:</p>
 
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Run the command to configure LDAP:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap configure
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap configure
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Answer the prompts using the information you collected. For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Choose the LDAP protocol:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Choose the LDAP protocol:
  [1] Active Directory
  Option number: 1
 
@@ -3226,7 +3226,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>If you want to remove the LDAP configuration, issue:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap purge-configuration
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ldap purge-configuration
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3266,7 +3266,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

@@ -3243,26 +3243,26 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li><strong>Enabling IPSec</strong>: Run following command on any ThoughtSpot node after cluster has been configured and right built has been deployed:
-<code class="highlighter-rouge"># tscli ipsec enable</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec enable</code>.</li>
   <li><strong>Disabling IPSec</strong>: Run following command on any node of the cluster:
-<code class="highlighter-rouge"># tscli ipsec disable</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec disable</code>.</li>
   <li><strong>Checking status of IPSec</strong>: Run following command on any node of the cluster
-<code class="highlighter-rouge"># tscli ipsec status</code>.</li>
+<code class="language-plaintext highlighter-rouge"># tscli ipsec status</code>.</li>
   <li>IPSec configuration and settings are NOT persistent across cluster backup/restore and will have to be re-enabled.</li>
   <li><strong>Adding a node in an IPSec enabled cluster</strong>: IPSec settings are automatically configured across nodes as a nodes get added to a ThoughtSpot cluster that has IPSec enabled.</li>
   <li><strong>Removing a node in IPSec enabled cluster</strong>: IPSec settings are not impacted when nodes get removed from a ThoughtSpot cluster that has IPSec enabled. If any failure occurs during node removal, IPSec would need to re-enabled by using the following command:
-<code class="highlighter-rouge">tscli ipsec enable</code>.</li>
+<code class="language-plaintext highlighter-rouge">tscli ipsec enable</code>.</li>
   <li>
     <p><strong>Manually enable/disable IPSec on a single node(if any IPSec related failure occurs on that node)</strong>: <br />
 Manually enable and start strongSwan: <br />
-    <code class="highlighter-rouge">sudo systemctl enable strongswan</code> <br />
-    <code class="highlighter-rouge">sudo systemctl start strongswan</code></p>
+    <code class="language-plaintext highlighter-rouge">sudo systemctl enable strongswan</code> <br />
+    <code class="language-plaintext highlighter-rouge">sudo systemctl start strongswan</code></p>
 
     <p>Manually stop and disable strongSwan: <br />
-    <code class="highlighter-rouge">sudo systemctl stop strongswan</code> <br />
-    <code class="highlighter-rouge">sudo systemctl disable strongswan</code></p>
+    <code class="language-plaintext highlighter-rouge">sudo systemctl stop strongswan</code> <br />
+    <code class="language-plaintext highlighter-rouge">sudo systemctl disable strongswan</code></p>
 
-    <p>Note: You can check  <code class="highlighter-rouge">/etc/strongswan/ipsec.conf</code> and <code class="highlighter-rouge">/etc/strongswan/ipsec.secrets</code> on each node to verify that they are consistent across all nodes.</p>
+    <p>Note: You can check  <code class="language-plaintext highlighter-rouge">/etc/strongswan/ipsec.conf</code> and <code class="language-plaintext highlighter-rouge">/etc/strongswan/ipsec.secrets</code> on each node to verify that they are consistent across all nodes.</p>
   </li>
 </ol>
 
@@ -3303,7 +3303,7 @@ Manually enable and start strongSwan: <br />
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

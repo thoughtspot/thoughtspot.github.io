@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3164,7 +3164,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Issue the setup command, providing the IP address of the relay host:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp set-relayhost &lt;IP_address&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp set-relayhost &lt;IP_address&gt;
 </code></pre></div>    </div>
 
     <p>ThoughtSpot uses port 25 to connect to the relay host. If port 25 is blocked in your environment, <a href="/5.0/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
@@ -3172,7 +3172,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Verify your settings:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp show-relayhost
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp show-relayhost
 </code></pre></div>    </div>
   </li>
   <li>Verify that email is working.</li>
@@ -3184,7 +3184,7 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Add the ThoughtSpot Support alert email, <code>prod-alerts@thoughtspot.com</code>, to allow ThoughtSpot Support to receive alerts. ThoughtSpot Support monitors these alerts to ensure your cluster’s health. Do not add this email to POC or demo environments.</div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli monitoring set-config --email &lt;prod-alerts@thoughtspot.com&gt;,&lt;your_email&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli monitoring set-config --email &lt;prod-alerts@thoughtspot.com&gt;,&lt;your_email&gt;
 </code></pre></div></div>
 
 <p>To send to multiple emails, provide a comma-separated list with no spaces.</p>
@@ -3198,7 +3198,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Try sending an email to yourself by issuing:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo | mail -s Hello &lt;your_email&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo | mail -s Hello &lt;your_email&gt;
 </code></pre></div>    </div>
   </li>
   <li>If you receive the email at the address(es) you supplied, email is working correctly.</li>
@@ -3235,7 +3235,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

@@ -3226,15 +3226,6 @@ $('#toc').on('click', 'a', function() {
 consequences with a prompt asking if you’d like to proceed. This should make you
 feel safe issuing TQL commands, even commands like dropping a table.</p>
 
-<p>If TQL is run using the flag <code class="highlighter-rouge">--allow_unsafe</code>, your statements will always
-execute without this warning. Note that when running TQL from a script, you will
-need to decide what behavior you want if the script contains changes that affect
-dependent objects. If you want the script to run even if objects with
-dependencies are affected, run it using this flag, for example:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat safest_script_ever.sql | tql --allow_unsafe
-</code></pre></div></div>
-
 <p>If you do not run the script using the flag, it will fail if any of its commands
 might cause problems with dependent objects.</p>
 
@@ -3256,7 +3247,7 @@ might cause problems with dependent objects.</p>
 
 <p>When issuing one of the above commands, you will see a warning message similar to this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE table1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQL&gt; ALTER TABLE table1
      DROP CONSTRAINT PRIMARY KEY;
 
 WARNING: This operation will break the Foreign Key relationship “products”
@@ -3289,7 +3280,7 @@ Do you wish to proceed? (yes/no).
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

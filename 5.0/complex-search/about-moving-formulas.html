@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3161,7 +3161,7 @@ averages are to the actual data points.</p>
 <p>Each of the moving formula accepts a measure, two integers to define the window,
 and one or more optional attributes.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>formula (measure,integer,integer,[attribute,attribute,...])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>formula (measure,integer,integer,[attribute,attribute,...])
 </code></pre></div></div>
 
 <p>Only the measure and integer values are required. If you supply both required
@@ -3174,54 +3174,54 @@ best meets your use case.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">moving_average</code>, for example <code class="highlighter-rouge">moving_average (revenue, 2, 1, customer region)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_average</code>, for example <code class="language-plaintext highlighter-rouge">moving_average (revenue, 2, 1, customer region)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the average of the measure over the given window.
 The attributes are the ordering columns used to compute the moving average.
-The window is (<code class="highlighter-rouge">current - Num1...Current + Num2</code>) with both end points being
-included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To
+The window is (<code class="language-plaintext highlighter-rouge">current - Num1...Current + Num2</code>) with both end points being
+included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
 see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
+the example <code class="language-plaintext highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_max</code>, for example <code class="highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_max</code>, for example <code class="language-plaintext highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the maximum of the measure over the given window.
 The attributes are the ordering columns used to compute the moving maximum.
 The window is (current - Num1…Current + Num2) with both end points being
-included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To
+included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
 see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="highlighter-rouge">moving_max(sales, 1, -1, date)</code>.</p>
+the example <code class="language-plaintext highlighter-rouge">moving_max(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_min</code>, for example <code class="highlighter-rouge">moving_min (defects, 3, 1, product)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_min</code>, for example <code class="language-plaintext highlighter-rouge">moving_min (defects, 3, 1, product)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and
   one or more attributes. Returns the minimum of the measure over the given
   window. The attributes are the ordering columns used to compute the moving
   minimum. The window is (current - Num1…Current + Num2) with both end
-  points being included in the window. For example, <code class="highlighter-rouge">1,1</code> will have a window
+  points being included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window
   size of 3. To see periods in the past, use a negative number for the second
-  endpoint, as in the example <code class="highlighter-rouge">moving_min(sales, 1, -1, date)</code>.</p>
+  endpoint, as in the example <code class="language-plaintext highlighter-rouge">moving_min(sales, 1, -1, date)</code>.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">moving_sum</code>, for example <code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></p>
+    <p><code class="language-plaintext highlighter-rouge">moving_sum</code>, for example <code class="language-plaintext highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the sum of the measure over the given window. The
 attributes are the ordering columns used to compute the moving sum. The window
 is (current - Num1…Current + Num2) with both end points being included in
-the window. For example, <code class="highlighter-rouge">1,1</code> will have a window size of 3. To see periods in
+the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To see periods in
 the past, use a negative number for the second endpoint, as in the example
-<code class="highlighter-rouge">moving_sum(sales, 1, -1, date)</code>.</p>
+<code class="language-plaintext highlighter-rouge">moving_sum(sales, 1, -1, date)</code>.</p>
   </li>
 </ul>
 
 <h2 id="calculate-a-moving-average">Calculate a moving average</h2>
 
-<p>This example  demonstrates using the <code class="highlighter-rouge">moving_average</code> formula. To use the moving function in a search:</p>
+<p>This example  demonstrates using the <code class="language-plaintext highlighter-rouge">moving_average</code> formula. To use the moving function in a search:</p>
 
 <ol>
   <li>
@@ -3286,7 +3286,7 @@ the past, use a negative number for the second endpoint, as in the example
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

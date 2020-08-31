@@ -3288,7 +3288,7 @@ $('#toc').on('click', 'a', function() {
     <p>Usage-based indexing of search has been improved.</p>
   </li>
   <li>
-    <p>A problem where the <code class="highlighter-rouge">tscli ssl rm-cert</code> command was used to remove a cert, but did not revert it back to the default cert is now fixed.</p>
+    <p>A problem where the <code class="language-plaintext highlighter-rouge">tscli ssl rm-cert</code> command was used to remove a cert, but did not revert it back to the default cert is now fixed.</p>
   </li>
   <li>
     <p>When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.</p>
@@ -3329,7 +3329,7 @@ $('#toc').on('click', 'a', function() {
     <p>When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.</p>
   </li>
   <li>
-    <p>Permissions issues with <code class="highlighter-rouge">tsload</code> and <code class="highlighter-rouge">tql</code> are now fixed, so the <strong>thoughtspot</strong> user can load data.</p>
+    <p>Permissions issues with <code class="language-plaintext highlighter-rouge">tsload</code> and <code class="language-plaintext highlighter-rouge">tql</code> are now fixed, so the <strong>thoughtspot</strong> user can load data.</p>
   </li>
   <li>
     <p>Database stability has been improved.</p>
@@ -3402,7 +3402,7 @@ $('#toc').on('click', 'a', function() {
     <p>Changes to metadata result in rebuilding the search index, even though the data has not changed.</p>
   </li>
   <li>
-    <p>A search returns an unexpected answer, because the last aggregation performed during execution was doing a <code class="highlighter-rouge">MIN()</code> rather than a <code class="highlighter-rouge">SUM()</code>.</p>
+    <p>A search returns an unexpected answer, because the last aggregation performed during execution was doing a <code class="language-plaintext highlighter-rouge">MIN()</code> rather than a <code class="language-plaintext highlighter-rouge">SUM()</code>.</p>
   </li>
   <li>
     <p>Timeouts cause a cluster crash in some cases when a right outer join was used.</p>
@@ -3681,7 +3681,7 @@ $('#toc').on('click', 'a', function() {
 
 <ul>
   <li>
-    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="highlighter-rouge">group_max</code> function.</p>
+    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="language-plaintext highlighter-rouge">group_max</code> function.</p>
   </li>
   <li>
     <p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
@@ -3702,7 +3702,7 @@ $('#toc').on('click', 'a', function() {
     <p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
   </li>
   <li>
-    <p>Creating a formula on <code class="highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
+    <p>Creating a formula on <code class="language-plaintext highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
   </li>
   <li>
     <p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
@@ -3723,13 +3723,13 @@ $('#toc').on('click', 'a', function() {
     <p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
   </li>
   <li>
-    <p>Using <code class="highlighter-rouge">safe_divide</code> and <code class="highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
+    <p>Using <code class="language-plaintext highlighter-rouge">safe_divide</code> and <code class="language-plaintext highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
   </li>
   <li>
     <p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
   </li>
   <li>
-    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
+    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="language-plaintext highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
   </li>
   <li>
     <p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
@@ -3741,7 +3741,7 @@ $('#toc').on('click', 'a', function() {
     <p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
   </li>
   <li>
-    <p>Resolved an issue with a chasm trap that used <code class="highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
+    <p>Resolved an issue with a chasm trap that used <code class="language-plaintext highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="language-plaintext highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
   </li>
   <li>
     <p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
@@ -3781,7 +3781,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 04/09/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

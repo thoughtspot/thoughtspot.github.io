@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3158,9 +3158,9 @@ $('#toc').on('click', 'a', function() {
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
-    <p>Issue the <code class="highlighter-rouge">tscli</code> command to set up monitoring:</p>
+    <p>Issue the <code class="language-plaintext highlighter-rouge">tscli</code> command to set up monitoring:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli monitoring set-config
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli monitoring set-config
     --email &lt;email&gt;
     --heartbeat_interval &lt;heartbeat_interval&gt;
     --report_interval &lt;report_interval&gt;
@@ -3170,25 +3170,25 @@ $('#toc').on('click', 'a', function() {
 
     <ul>
       <li>
-        <p><code class="highlighter-rouge">--email &lt;email&gt;</code> is a comma separated list (no spaces) of email addresses where the cluster will send monitoring information.</p>
+        <p><code class="language-plaintext highlighter-rouge">--email &lt;email&gt;</code> is a comma separated list (no spaces) of email addresses where the cluster will send monitoring information.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">--heartbeat_interval &lt;heartbeat_interval&gt;</code> is the heartbeat email generation interval in seconds. Must be greater than 0.</p>
+        <p><code class="language-plaintext highlighter-rouge">--heartbeat_interval &lt;heartbeat_interval&gt;</code> is the heartbeat email generation interval in seconds. Must be greater than 0.</p>
       </li>
       <li>
-        <p><code class="highlighter-rouge">--report_interval &lt;report_interval&gt;</code> sets the cluster report email generation interval in seconds. Must be greater than 0.</p>
+        <p><code class="language-plaintext highlighter-rouge">--report_interval &lt;report_interval&gt;</code> sets the cluster report email generation interval in seconds. Must be greater than 0.</p>
       </li>
     </ul>
   </li>
   <li>
     <p>To view your settings and verify that they have been applied, issue:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli monitoring show-config
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli monitoring show-config
 </code></pre></div>    </div>
 
     <p>You should see information like:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Monitoring Configuration:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Monitoring Configuration:
 
    Alert Email: dev-alerts@thoughtspot.com
 
@@ -3232,7 +3232,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3177,13 +3177,13 @@ instead, contact ThoughtSpot Support.</p>
   <li>
     <p>Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;name&gt; &lt;reason&gt; &lt;ttl&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot create &lt;name&gt; &lt;reason&gt; &lt;ttl&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Check that the snapshot was created:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3194,11 +3194,11 @@ instead, contact ThoughtSpot Support.</p>
 snapshots of your cluster. This section explains how to learn more about the
 periodic snapshots in your cluster.</p>
 
-<p>The default snapshot policy is enabled for every cluster. You can use the <code class="highlighter-rouge">tscli
+<p>The default snapshot policy is enabled for every cluster. You can use the <code class="language-plaintext highlighter-rouge">tscli
 snapshot-policy show</code> command to display the current policy for periodic
 snapshots.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 [admin@dogfood1 ~]$ tscli snapshot-policy show
 schedule {
   period {
@@ -3248,14 +3248,14 @@ detailed information about understanding the schedule, see <a href="how-to-creat
 backup/snapshot schedules</a>.</p>
 
 <p>You shouldn’t change this default policy unless instructed to by support. If you
-have to adjust it for some reason, you can use, <code class="highlighter-rouge">tscli snapshot-policy update</code>
+have to adjust it for some reason, you can use, <code class="language-plaintext highlighter-rouge">tscli snapshot-policy update</code>
 command. This opens the current policy in an editor. Your policy should never
 retain more than 20 snapshots at any point in time. Exceeding this number can
 impact cluster performance.</p>
 
 <p>You cannot delete the snapshot policy. However, you can disable the policy by
-executing the<code class="highlighter-rouge">tscli snapshot-policy disable</code> command. And you can re-enable it
-by running, <code class="highlighter-rouge">tscli snapshot-policy enable</code>.</p>
+executing the<code class="language-plaintext highlighter-rouge">tscli snapshot-policy disable</code> command. And you can re-enable it
+by running, <code class="language-plaintext highlighter-rouge">tscli snapshot-policy enable</code>.</p>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Backups rely on the snapshot system. For this
 reason, you should never disable the periodic snapshot system. For example, if
@@ -3267,7 +3267,7 @@ together.</div>
 
 <ol>
   <li>Log in to the Linux shell using SSH.</li>
-  <li>Enter <code class="highlighter-rouge">tscli snapshot-policy show</code> to view the policy.</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">tscli snapshot-policy show</code> to view the policy.</li>
 </ol>
 
   <div class="tags">
@@ -3301,7 +3301,7 @@ together.</div>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

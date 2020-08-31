@@ -3230,7 +3230,7 @@ $('#toc').on('click', 'a', function() {
     <p>Create a manual snapshot or find a snapshot you want to use.
 To find a snapshot you want to back up use the following command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli snapshot ls
 
  ---------------------------------------------------------------------------
 
@@ -3250,9 +3250,9 @@ To find a snapshot you want to back up use the following command:</p>
   <li>
     <p>Make sure you have enough room on the target disk.</p>
 
-    <p>In addition to the size of the snapshot, you will need 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the <code class="highlighter-rouge">df</code> command to check disk size.</p>
+    <p>In addition to the size of the snapshot, you will need 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the <code class="language-plaintext highlighter-rouge">df</code> command to check disk size.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ df -h
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ df -h
 </code></pre></div>    </div>
   </li>
   <li>
@@ -3260,7 +3260,7 @@ To find a snapshot you want to back up use the following command:</p>
 
     <p>Choose the <a href="/5.1/admin/backup-restore/backup-modes.html#">mode of backup</a> you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create [-h]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create [-h]
      [--mode {full|light|dataless}]
      [--type {full}]
      [--base snapshot_name&gt;]
@@ -3268,8 +3268,8 @@ To find a snapshot you want to back up use the following command:</p>
       &lt;name&gt; &lt;directory&gt;
 </code></pre></div>    </div>
 
-    <p>Here is a sample <code class="highlighter-rouge">tscli backup create</code> command:</p>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create --mode dataless &lt;my_snapshot&gt; &lt;directory_path&gt;
+    <p>Here is a sample <code class="language-plaintext highlighter-rouge">tscli backup create</code> command:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli backup create --mode dataless &lt;my_snapshot&gt; &lt;directory_path&gt;
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -3298,7 +3298,7 @@ To find a snapshot you want to back up use the following command:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

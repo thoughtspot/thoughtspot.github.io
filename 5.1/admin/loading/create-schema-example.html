@@ -3226,18 +3226,18 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="simple-schema-creation-example">Simple schema creation example</h2>
 
-<p>The example creates a database (<code class="highlighter-rouge">tpch</code>) with two tables (<code class="highlighter-rouge">customer</code>, <code class="highlighter-rouge">transaction</code>). The example does not create a schema explicitly. So it will use the default schema (falcon_default_schema).</p>
+<p>The example creates a database (<code class="language-plaintext highlighter-rouge">tpch</code>) with two tables (<code class="language-plaintext highlighter-rouge">customer</code>, <code class="language-plaintext highlighter-rouge">transaction</code>). The example does not create a schema explicitly. So it will use the default schema (falcon_default_schema).</p>
 
 <p>In this example:</p>
 
 <ul>
-  <li>The table <code class="highlighter-rouge">customer</code> has a primary key called customer_id. The table <code class="highlighter-rouge">customer_transactions</code> has a primary key called transaction_id.</li>
-  <li>The <code class="highlighter-rouge">customer</code> table is unsharded.</li>
-  <li>The <code class="highlighter-rouge">customer_transactions</code> table is sharded into 96 shards using the <code class="highlighter-rouge">transaction_id</code> column.</li>
-  <li>Both tables have referential integrity on <code class="highlighter-rouge">customer_id</code>.</li>
+  <li>The table <code class="language-plaintext highlighter-rouge">customer</code> has a primary key called customer_id. The table <code class="language-plaintext highlighter-rouge">customer_transactions</code> has a primary key called transaction_id.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">customer</code> table is unsharded.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">customer_transactions</code> table is sharded into 96 shards using the <code class="language-plaintext highlighter-rouge">transaction_id</code> column.</li>
+  <li>Both tables have referential integrity on <code class="language-plaintext highlighter-rouge">customer_id</code>.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$tql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$tql
 
 
 TQL&gt; CREATE DATABASE tpch;
@@ -3284,7 +3284,7 @@ TQL&gt; CREATE TABLE customer_transactions (
 
 <p>The example uses a custom schema called sample_schema to hold the tables. Because of this, every table reference has to be schema qualified.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tql
 
 
 TQL&gt; CREATE DATABASE "sample_db";
@@ -3401,7 +3401,7 @@ TQL&gt; CREATE TABLE "sample_schema"."lineorder" (
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

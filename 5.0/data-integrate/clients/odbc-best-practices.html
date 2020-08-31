@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3132,7 +3132,7 @@ var ss360Config = {
 
 <ul>
   <li>
-    <p>When setting up ODBC for the first time, begin by using the ThoughtSpot <code class="highlighter-rouge">tsload</code>
+    <p>When setting up ODBC for the first time, begin by using the ThoughtSpot <code class="language-plaintext highlighter-rouge">tsload</code>
 for the initial data loads. This allows you to do more in-depth troubleshooting
 on any initial loading issues.  Once initial loads are working properly, then
 switch to ODBC to do incremental loads.</p>
@@ -3141,7 +3141,7 @@ switch to ODBC to do incremental loads.</p>
     <p>You should create the parameterized SQL statement outside of ODBC. Using this
 method, the SQL statement can be sent to ThoughtSpot in batches by the ODBC
 driver, so you only have to update the memory itself. ETL tools have this
-implemented already (end users shouldn’t have to actually write the <code class="highlighter-rouge">INSERT</code>
+implemented already (end users shouldn’t have to actually write the <code class="language-plaintext highlighter-rouge">INSERT</code>
 statement). But as a developer, you may be writing code that leverages the ODBC
 driver, so this tip can help you write your SQL for the best performance with
 the driver.</p>
@@ -3154,7 +3154,7 @@ loading even while loading to a single table or multiple tables at the same
 time.</p>
   </li>
   <li>
-    <p>When doing an incremental data load, note that the same <code class="highlighter-rouge">UPSERT</code> behavior that
+    <p>When doing an incremental data load, note that the same <code class="language-plaintext highlighter-rouge">UPSERT</code> behavior that
 occurs via TQL will apply. This means that if you import a row whose primary key
 matches to an existing row, the existing row will be updated with the new
 values.</p>
@@ -3200,7 +3200,7 @@ values.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

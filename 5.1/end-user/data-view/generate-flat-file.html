@@ -3247,7 +3247,7 @@ The exact procedure you use will depend on the source application.</li>
   <li>
     <p>Extract each table you wish to import into ThoughtSpot as a CSV file.</p>
 
-    <p>The column delimiter should be a <code class="highlighter-rouge">,</code> (comma), <code class="highlighter-rouge">|</code> (pipe), or tab.</p>
+    <p>The column delimiter should be a <code class="language-plaintext highlighter-rouge">,</code> (comma), <code class="language-plaintext highlighter-rouge">|</code> (pipe), or tab.</p>
   </li>
 </ol>
 
@@ -3260,18 +3260,18 @@ The file also contains fields optionally enclosed with double quotes. Use these 
 
 <ul>
   <li>If the CSV contains column headers, they must match the column names in the database exactly.</li>
-  <li>Often a <code class="highlighter-rouge">|</code> (pipe) or tab is used as the delimiter, because it may be less likely to occur within the data values.</li>
-  <li>When a field contains a double quote, it must be escaped with the character specified in the escape character argument in <code class="highlighter-rouge">tsload</code>.</li>
+  <li>Often a <code class="language-plaintext highlighter-rouge">|</code> (pipe) or tab is used as the delimiter, because it may be less likely to occur within the data values.</li>
+  <li>When a field contains a double quote, it must be escaped with the character specified in the escape character argument in <code class="language-plaintext highlighter-rouge">tsload</code>.</li>
   <li>When a field contains the delimiter, the field must be enclosed in double quotes.</li>
 </ul>
 
 <p>ThoughtSpot supports a wide range of <a href="/5.1/reference/date-formats-for-loading.html#">date and timestamp formats</a> in the CSV file. Blank values in user uploaded CSV files are interpreted as NULL values. These include the values (case insensitive):</p>
 
 <ul>
-  <li><code class="highlighter-rouge">NULL</code></li>
-  <li><code class="highlighter-rouge">\N</code></li>
-  <li><code class="highlighter-rouge">NA</code></li>
-  <li><code class="highlighter-rouge">N/A</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NULL</code></li>
+  <li><code class="language-plaintext highlighter-rouge">\N</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NA</code></li>
+  <li><code class="language-plaintext highlighter-rouge">N/A</code></li>
   <li>[space]</li>
 </ul>
 
@@ -3332,7 +3332,7 @@ in the upper right corner, and select <strong>Upload Data</strong>.</p>
 
 <h2 id="troubleshoot-uploads">Troubleshoot uploads</h2>
 
-<p>Boolean data must use <code class="highlighter-rouge">TRUE</code>/<code class="highlighter-rouge">FALSE</code> values. Other values such as <code class="highlighter-rouge">Y</code>/<code class="highlighter-rouge">N</code> are not supported.</p>
+<p>Boolean data must use <code class="language-plaintext highlighter-rouge">TRUE</code>/<code class="language-plaintext highlighter-rouge">FALSE</code> values. Other values such as <code class="language-plaintext highlighter-rouge">Y</code>/<code class="language-plaintext highlighter-rouge">N</code> are not supported.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3369,7 +3369,7 @@ in the upper right corner, and select <strong>Upload Data</strong>.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

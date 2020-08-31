@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3145,7 +3145,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time: 
   
   
-    12 minutes
+    11 minutes
   
 </span>
 
@@ -3161,19 +3161,19 @@ load.</p>
 interface</a> in the Linux
 shell.</p>
 
-<p>Use  <code class="highlighter-rouge">--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
+<p>Use  <code class="language-plaintext highlighter-rouge">--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
 result rows returned by a query. For example:</p>
 
-<p><code class="highlighter-rouge">$ tql --query_results_apply_top_row_count 100</code></p>
+<p><code class="language-plaintext highlighter-rouge">$ tql --query_results_apply_top_row_count 100</code></p>
 
 <p>As a best practice, you should enclose object names (database, schema, table,
 and column) in double quotes, and column values in single quotes.
  When referring to objects using fully qualified object names, the syntax is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"database"."schema"."table"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"database"."schema"."table"
 </code></pre></div></div>
 
-<p>To get help on SQL when using TQL,  enter <code class="highlighter-rouge">help</code> on the command line.</p>
+<p>To get help on SQL when using TQL,  enter <code class="language-plaintext highlighter-rouge">help</code> on the command line.</p>
 
 <p>You can use TQL to view and modify schemas and data in tables. Remember to add a
 semicolon after each command. Commands are not case sensitive but are
@@ -3472,42 +3472,12 @@ nickname';</code></p>
    </tr>
    <tr>
       <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT [FOREIGN KEY| RELATIONSHIP]
+         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT | RELATIONSHIP]
        &lt;name&gt;;</code></p>
       </td>
       <td><p>Drops the named foreign key or relationship between two tables. For example:</p>
-         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";</code></p>
+         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT "FK_PO_number";</code></p>
         <p><code>ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";</code></p>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT FOREIGN KEY
-         [&lt;table_name&gt;] | RELATIONSHIP [WITH &lt;table_name&gt;];</code></p>
-      </td>
-      <td>
-         You must use this syntax when dropping relationships between tables created
-         before ThoughtSpot version 3.2. This is because relationships could not be named
-         in older versions.
-         <div>
-            Drops the foreign key or relationship between two tables
-            where you cannot reference it by relationship name. If the relationship was
-            created without a name, use:
-            <ul class="ul" id="reference_cbc_fx4_j4__ul_qzq_wyn_cv">
-               <li>the name of the referenced table, for a foreign key.</li>
-               <li>the name of the related table, for a relationship.</li>
-            </ul>
-         </div>
-         <p>If you drop a foreign key without specifying the referenced table,
-            all foreign keys from the table you are altering will be dropped.
-         </p>
-         <p>Examples:</p>
-         <p><code>ALTER TABLE "shipments" DROP CONSTRAINT FOREIGN KEY "orders";</code></p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP WITH "retail_sales";</code></p>
-         <p>Drops all relationships that have wholesale_buys as a source.</p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP;</code></p>
-          <p>Drops all foreign keys from wholesale_buys. </p>
-         <p><code>ALTER TABLE "wholesale_buys" DROP CONSTRAINT FOREIGN KEY;</code></p>
       </td>
    </tr>
    <tr>
@@ -3820,7 +3790,7 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>

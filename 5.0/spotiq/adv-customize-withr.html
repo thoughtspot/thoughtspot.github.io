@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -3177,29 +3177,29 @@ install the package on your behalf.</p>
 the cluster’s R service. The system expects each script have a well-defined
 structure which is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
 &lt;Fill script body&gt;
 ####COLUMN BINDINGS (ONE PER LINE)####
 &lt;Fill column bindings here&gt;
 </code></pre></div></div>
 
 <p>The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. ThoughtSpot expects for each <code class="highlighter-rouge">.param</code><em>n</em> in R your script must
+in the R script. ThoughtSpot expects for each <code class="language-plaintext highlighter-rouge">.param</code><em>n</em> in R your script must
 provide a corresponding binding. The following pseudo code illustrates an R
 script in a form suitable for ThoughtSpot:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>####R SCRIPT####
 df &lt;- data.frame(.param0,.param1, ...);
 ...
 write.csv(..., file=#output_file#, ...);
 </code></pre></div></div>
 
-<p>Notice that <code class="highlighter-rouge">.param0</code> refers to first column in column binding and <code class="highlighter-rouge">.param1</code>
-refers to the second.  Should you need a third binding, you would use  <code class="highlighter-rouge">.param2</code>
+<p>Notice that <code class="language-plaintext highlighter-rouge">.param0</code> refers to first column in column binding and <code class="language-plaintext highlighter-rouge">.param1</code>
+refers to the second.  Should you need a third binding, you would use  <code class="language-plaintext highlighter-rouge">.param2</code>
 and so forth.</p>
 
 <p>The output of the script is either PNG or CSV. This example script uses
-<code class="highlighter-rouge">#output_csv#</code> to emit data in a CSV (tabular) format. Use <code class="highlighter-rouge">#output_png#</code> to
+<code class="language-plaintext highlighter-rouge">#output_csv#</code> to emit data in a CSV (tabular) format. Use <code class="language-plaintext highlighter-rouge">#output_png#</code> to
 emit data in PNG format.</p>
 
 <p>Presently, error reporting is limited for R scripts in SpotIQ. You should
@@ -3217,7 +3217,7 @@ column and a zip code column.</p>
   <li>Use <strong>Choose Sources</strong> to locate a source with sales and zip code data.
 This example uses <strong>Phone Sales</strong> data.</li>
   <li>
-    <p>Enter <code class="highlighter-rouge">sales store zip code</code> in the search bar.</p>
+    <p>Enter <code class="language-plaintext highlighter-rouge">sales store zip code</code> in the search bar.</p>
 
     <p>If your source contains the proper data, you should see something similar to
 the following:</p>
@@ -3243,7 +3243,7 @@ the <strong>Refine Parameters</strong> field.</p>
   <li>
     <p>Enter this sample script in the field.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ####R SCRIPT####
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ####R SCRIPT####
  library(ggplot2)
  set.seed(20)
  df &lt;- data.frame(.param0, .param1)
@@ -3255,11 +3255,11 @@ the <strong>Refine Parameters</strong> field.</p>
  Sales
  Zip Code
 </code></pre></div>    </div>
-    <p>This script binds <code class="highlighter-rouge">.param0</code> to <code class="highlighter-rouge">Sales</code> and <code class="highlighter-rouge">.param1</code> to the <code class="highlighter-rouge">Store Zip Code</code>
+    <p>This script binds <code class="language-plaintext highlighter-rouge">.param0</code> to <code class="language-plaintext highlighter-rouge">Sales</code> and <code class="language-plaintext highlighter-rouge">.param1</code> to the <code class="language-plaintext highlighter-rouge">Store Zip Code</code>
  column.</p>
 
     <p>You can see from the script that the output should be PNG
- (<code class="highlighter-rouge">#output_png#</code>).</p>
+ (<code class="language-plaintext highlighter-rouge">#output_png#</code>).</p>
   </li>
   <li>
     <p>Check your work.</p>
@@ -3289,7 +3289,7 @@ the <strong>Refine Parameters</strong> field.</p>
 
 <p>You can run another R script directly on this result to get CSV results. Try this on your own. Here is the script to give you CSV output:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>###R SCRIPT####
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>###R SCRIPT####
 set.seed(20);
 df &lt;- data.frame(.param0,.param1);
 cluster &lt;- kmeans(df[1:2], 3, nstart = 20);
@@ -3350,7 +3350,7 @@ write.csv(df, file=#output_file#, row.names=FALSE);
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
