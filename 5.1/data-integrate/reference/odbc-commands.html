@@ -3227,7 +3227,7 @@ software that uses a ThoughtSpot ODBC driver, use this reference of supported
 commands. This reference is intended for developers using other tools (ETL,
 etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot displays <code class="highlighter-rouge">VARCHAR</code> fields using lower case, regardless of what the original casing of your loaded data is.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot displays <code class="language-plaintext highlighter-rouge">VARCHAR</code> fields using lower case, regardless of what the original casing of your loaded data is.</div>
 
 <h2 id="odbc">ODBC</h2>
 
@@ -3235,42 +3235,42 @@ etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">CREATE TABLE</code></p>
+    <p><code class="language-plaintext highlighter-rouge">CREATE TABLE</code></p>
 
     <p>Creates a table with the specified column definitions and constraints. The table is replicated on each node.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  CREATE TABLE country_dim (id_number int, country varchar, CONSTRAINT PRIMARY KEY (id_number));
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  CREATE TABLE country_dim (id_number int, country varchar, CONSTRAINT PRIMARY KEY (id_number));
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">INSERT</code></p>
+    <p><code class="language-plaintext highlighter-rouge">INSERT</code></p>
 
     <p>Creates placeholders in the table to receive the data.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  INSERT INTO TABLE country_dim (?, ?);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  INSERT INTO TABLE country_dim (?, ?);
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">DELETE FROM &lt;table&gt;</code></p>
+    <p><code class="language-plaintext highlighter-rouge">DELETE FROM &lt;table&gt;</code></p>
 
-    <p>Deletes <code class="highlighter-rouge">ALL</code> rows from the specified table. Use the <code class="highlighter-rouge">WHERE</code> clause to specify only certain rows to be deleted. Example: You could remove all data for sales before a certain date to free up space in ThoughtSpot.</p>
+    <p>Deletes <code class="language-plaintext highlighter-rouge">ALL</code> rows from the specified table. Use the <code class="language-plaintext highlighter-rouge">WHERE</code> clause to specify only certain rows to be deleted. Example: You could remove all data for sales before a certain date to free up space in ThoughtSpot.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DELETE FROM country_dim;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DELETE FROM country_dim;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p><code class="highlighter-rouge">SELECT &lt;cols_or_expression&gt; FROM &lt;table_list&gt; [WHERE &lt;predicates&gt;] [GROUP BY &lt;expressions&gt;]</code><code class="highlighter-rouge">[ORDER BY &lt;expressions&gt;]</code></p>
+    <p><code class="language-plaintext highlighter-rouge">SELECT &lt;cols_or_expression&gt; FROM &lt;table_list&gt; [WHERE &lt;predicates&gt;] [GROUP BY &lt;expressions&gt;]</code><code class="language-plaintext highlighter-rouge">[ORDER BY &lt;expressions&gt;]</code></p>
 
     <p>Fetches the specified set of table data.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SELECT id_number, country FROM country_dim WHERE id_number &gt; 200;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SELECT id_number, country FROM country_dim WHERE id_number &gt; 200;
 </code></pre></div>    </div>
   </li>
 </ul>
 
 <h2 id="jdbc">JDBC</h2>
 
-<p><code class="highlighter-rouge">TRUNCATE</code> is not supported. Instead, use <code class="highlighter-rouge">DELETE FROM TABLE</code> which is
+<p><code class="language-plaintext highlighter-rouge">TRUNCATE</code> is not supported. Instead, use <code class="language-plaintext highlighter-rouge">DELETE FROM TABLE</code> which is
 functionally equivalent to “truncate table” in terms of table compression and so
 forth.</p>
 
@@ -3298,7 +3298,7 @@ forth.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

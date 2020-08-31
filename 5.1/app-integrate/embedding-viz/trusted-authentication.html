@@ -3232,7 +3232,7 @@ authenticated server.</p>
   <li>
     <p>Enable trusted authentication and generate an authenticate token.  (service secret)  – used to identify the server to ThoughtSpot.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [admin@ourthoughtspot ~]$ tscli tokenauthentication enable
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [admin@ourthoughtspot ~]$ tscli tokenauthentication enable
 
  Token generated. Copy the GUID in the box.
 
@@ -3250,7 +3250,7 @@ knowledge of them.  At any point in time, your installation can have a single
 authentication token. Repeated calls to enable overwrite the existing token and
 return a new one. To disable a token and not overwrite it:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli tokenauthentication disable
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli tokenauthentication disable
 </code></pre></div></div>
 
 <p>Once generated, tokens do not expire.</p>
@@ -3265,16 +3265,16 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <ul>
       <li>if the requestor is itself authenticated with your server</li>
-      <li>which user (<code class="highlighter-rouge">username</code>) is making the request</li>
+      <li>which user (<code class="language-plaintext highlighter-rouge">username</code>) is making the request</li>
       <li>what is being requested, an object, page, or the entire ThoughtSpot application</li>
     </ul>
 
-    <p>It is also important the the <code class="highlighter-rouge">username</code> is a match for a <code class="highlighter-rouge">username</code> on the ThoughtSpot application.</p>
+    <p>It is also important the the <code class="language-plaintext highlighter-rouge">username</code> is a match for a <code class="language-plaintext highlighter-rouge">username</code> on the ThoughtSpot application.</p>
   </li>
   <li>
     <p>The trusted web server requests a authentication token on the user’s behalf from ThoughtSpot.</p>
 
-    <p><code class="highlighter-rouge">POST https://&lt;thoughtspot&gt;/callosum/v1/session/auth/token</code></p>
+    <p><code class="language-plaintext highlighter-rouge">POST https://&lt;thoughtspot&gt;/callosum/v1/session/auth/token</code></p>
 
     <p>This post takes the following parameters:</p>
 
@@ -3312,7 +3312,7 @@ return a new one. To disable a token and not overwrite it:</p>
 
     <p>For example, if the customer was requesting a specific object:</p>
 
-    <p><code class="highlighter-rouge">https://THOUGHTSPOT_URL/?authtoken=TOKEN_VALUE/#/embed/viz/REPORTBOOK_ID/ID</code></p>
+    <p><code class="language-plaintext highlighter-rouge">https://THOUGHTSPOT_URL/?authtoken=TOKEN_VALUE/#/embed/viz/REPORTBOOK_ID/ID</code></p>
 
     <p>If you are using ThoughtSpot embed with objects or pages, you must request
  reauthenticate requests for each new object.</p>
@@ -3343,7 +3343,7 @@ return a new one. To disable a token and not overwrite it:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

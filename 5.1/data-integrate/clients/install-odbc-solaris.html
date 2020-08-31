@@ -3237,7 +3237,7 @@ driver is certified on Solaris Sparc 10.</p>
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
+  <li>SSH as <code class="language-plaintext highlighter-rouge">admin</code> or the <code class="language-plaintext highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -3246,7 +3246,7 @@ intend to connect your server to.</p>
 </code></pre></div>    </div>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
-  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
+  <li>Verify that the <code class="language-plaintext highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
   <li>Exit or close the shell.</li>
 </ol>
 
@@ -3270,24 +3270,24 @@ location.</p>
   <li>
     <p>Unzip the zip file:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_Solaris_odbc_&lt;version&gt;.tar.gz
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gunzip ThoughtSpot_Solaris_odbc_&lt;version&gt;.tar.gz
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Extract the contents of the <code class="highlighter-rouge">tar</code> file.</p>
+    <p>Extract the contents of the <code class="language-plaintext highlighter-rouge">tar</code> file.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tar -xvf ThoughtSpot_Solaris_odbc_&lt;version&gt;.tar
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tar -xvf ThoughtSpot_Solaris_odbc_&lt;version&gt;.tar
 </code></pre></div>    </div>
 
-    <p>This extracts a subdirectory called <code class="highlighter-rouge">Solaris</code> into the current directory.</p>
+    <p>This extracts a subdirectory called <code class="language-plaintext highlighter-rouge">Solaris</code> into the current directory.</p>
   </li>
   <li>
-    <p>Take a moment to examine the contents of the new <code class="highlighter-rouge">solaris_sparc</code> directory.</p>
+    <p>Take a moment to examine the contents of the new <code class="language-plaintext highlighter-rouge">solaris_sparc</code> directory.</p>
 
     <p>The structure contains a version for GNU Compiler Collection (gcc) and no GCC. Beneath these two subdirectories have identical subdirectories that suppor 32 or 64 bit Sparc. The subdirectories include a Simba client library, supporting libraries, error messages, and
  setup files.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /gcc:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /gcc:
      /Bin:
         /Solaris_sparc64_gcc:
            libSimbaClient.so
@@ -3321,13 +3321,13 @@ location.</p>
    ...  same as gcc structure ...
 </code></pre></div>    </div>
 
-    <p>The <code class="highlighter-rouge">Solaris/Setup</code> directory contains the key ODBC configuration files and
+    <p>The <code class="language-plaintext highlighter-rouge">Solaris/Setup</code> directory contains the key ODBC configuration files and
  sample Simba client configurations you’ll use later in this procedure.</p>
   </li>
   <li>
     <p>You need to know your workstation architecture to continue, confirm  your workstation’s architecture.</p>
 
-    <p>You can use the <code class="highlighter-rouge">arch</code> or the <code class="highlighter-rouge">uname</code> command or both.</p>
+    <p>You can use the <code class="language-plaintext highlighter-rouge">arch</code> or the <code class="language-plaintext highlighter-rouge">uname</code> command or both.</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>isainfo
  amd64 i386
@@ -3352,11 +3352,11 @@ procedures where references are made to the unixODBC tools.</p>
   <li>
     <p>Search for the unixODBC tools on your system.</p>
 
-    <p>The <a href="https://www.opencsw.org/package/unixodbc/"><code class="highlighter-rouge">pkgadd</code> package manager</a>
+    <p>The <a href="https://www.opencsw.org/package/unixodbc/"><code class="language-plaintext highlighter-rouge">pkgadd</code> package manager</a>
 searches for software already installed or available on your system or from
 the configured repositories.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pkgadd -d http://get.opencsw.org/now
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pkgadd -d http://get.opencsw.org/now
  /opt/csw/bin/pkgutil -U
 </code></pre></div>    </div>
 
@@ -3365,7 +3365,7 @@ the configured repositories.</p>
   <li>
     <p>Install the appropriate package for your architecture.</p>
 
-    <p>In this case the command installs the tools for a 64-bit architecture. A 32-bit package needs the  <code class="highlighter-rouge">unixODBC.i686</code> package.</p>
+    <p>In this case the command installs the tools for a 64-bit architecture. A 32-bit package needs the  <code class="language-plaintext highlighter-rouge">unixODBC.i686</code> package.</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /opt/csw/bin/pkgutil <span class="nt">-y</span> <span class="nt">-i</span> unixodbc
 </code></pre></div>    </div>
@@ -3384,7 +3384,7 @@ the configured repositories.</p>
 
 <ol>
   <li>
-    <p>Copy the library for your architecture from the <code class="highlighter-rouge">Lib</code> directory on your Solaris machine.</p>
+    <p>Copy the library for your architecture from the <code class="language-plaintext highlighter-rouge">Lib</code> directory on your Solaris machine.</p>
 
     <table>
       <thead>
@@ -3395,72 +3395,72 @@ the configured repositories.</p>
       </thead>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">/solaris_sparc/gcc/Lib/Solaris_sparc/</code></td>
+          <td><code class="language-plaintext highlighter-rouge">/solaris_sparc/gcc/Lib/Solaris_sparc/</code></td>
           <td>32-bit</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">/solaris_sparc/gcc/Lib/Solaris_sparc64/</code></td>
+          <td><code class="language-plaintext highlighter-rouge">/solaris_sparc/gcc/Lib/Solaris_sparc64/</code></td>
           <td>64-bit</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">/solaris_sparc/no_gcc/Lib/Solaris_sparc/</code></td>
+          <td><code class="language-plaintext highlighter-rouge">/solaris_sparc/no_gcc/Lib/Solaris_sparc/</code></td>
           <td>32-bit</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">/solaris_sparc/no_gcc/Lib/Solaris_sparc64/</code></td>
+          <td><code class="language-plaintext highlighter-rouge">/solaris_sparc/no_gcc/Lib/Solaris_sparc64/</code></td>
           <td>64-bit</td>
         </tr>
       </tbody>
     </table>
   </li>
   <li>
-    <p>Add the location’s path to the <code class="highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
+    <p>Add the location’s path to the <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> environment variable.</p>
 
-    <p>For example if your architecture is 64-bit and you keep the library in your <code class="highlighter-rouge">home</code> directory:</p>
+    <p>For example if your architecture is 64-bit and you keep the library in your <code class="language-plaintext highlighter-rouge">home</code> directory:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LD_LIBRARY_PATH=~/solaris_sparc/no_gcc/Lib/Solaris_sparc64/
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LD_LIBRARY_PATH=~/solaris_sparc/no_gcc/Lib/Solaris_sparc64/
 export LD_LIBRARY_PATH
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">echo</code> command to verify the path was added correctly.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">echo</code> command to verify the path was added correctly.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $LD_LIBRARY_PATH
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $LD_LIBRARY_PATH
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Copy the <code class="highlighter-rouge">odbc.ini</code> file to the <code class="highlighter-rouge">/etc</code> directory.</p>
+    <p>Copy the <code class="language-plaintext highlighter-rouge">odbc.ini</code> file to the <code class="language-plaintext highlighter-rouge">/etc</code> directory.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp ~/solaris_sparc/no_gcc/Setup/odbc.ini  /etc
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp ~/solaris_sparc/no_gcc/Setup/odbc.ini  /etc
 </code></pre></div>    </div>
 
-    <p>If you have trouble making the copy, use the <code class="highlighter-rouge">sudo</code> command to make the move.</p>
+    <p>If you have trouble making the copy, use the <code class="language-plaintext highlighter-rouge">sudo</code> command to make the move.</p>
   </li>
   <li>
-    <p>Copy the <code class="highlighter-rouge">odbcinst.ini</code> file to the <code class="highlighter-rouge">/etc</code> directory.</p>
+    <p>Copy the <code class="language-plaintext highlighter-rouge">odbcinst.ini</code> file to the <code class="language-plaintext highlighter-rouge">/etc</code> directory.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cp ~/solaris_sparc/no_gcc/Setupodbcinst.ini  /etc
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Copy the hidden <code class="highlighter-rouge">.simba.quickstart.ini </code> file to the <code class="highlighter-rouge">/etc</code> directory, renaming it in the process to <code class="highlighter-rouge">simbaclient.ini</code>.</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cp ~/solaris_sparc/no_gcc/Setup/simbaclient.ini  /etc/simbaclient.ini
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cp ~/solaris_sparc/no_gcc/Setupodbcinst.ini  /etc
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Update your environment with the <code class="highlighter-rouge">ODBCSYSINI</code> and <code class="highlighter-rouge">ODBCINI</code> variables.</p>
+    <p>Copy the hidden <code class="language-plaintext highlighter-rouge">.simba.quickstart.ini </code> file to the <code class="language-plaintext highlighter-rouge">/etc</code> directory, renaming it in the process to <code class="language-plaintext highlighter-rouge">simbaclient.ini</code>.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ODBCSYSINI=/etc/
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cp ~/solaris_sparc/no_gcc/Setup/simbaclient.ini  /etc/simbaclient.ini
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Update your environment with the <code class="language-plaintext highlighter-rouge">ODBCSYSINI</code> and <code class="language-plaintext highlighter-rouge">ODBCINI</code> variables.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ODBCSYSINI=/etc/
  $ export ODBCSYSINI
  $ ODBCINI=/etc/odbc.ini
  $ export ODBCINI
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use the <code class="highlighter-rouge">/usr/bin/odbcinst</code> command to confirm your settings:</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">/usr/bin/odbcinst</code> command to confirm your settings:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ /opt/csw/bin/odbcinst -j
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ /opt/csw/bin/odbcinst -j
  unixODBC 2.3.1
  DRIVERS............: /etc/opt/csw/odbcinst.ini
  SYSTEM DATA SOURCES: /etc/opt/csw/odbc.ini
@@ -3478,36 +3478,36 @@ export LD_LIBRARY_PATH
 <p>When you are ready, follow this procedure to configure the driver.</p>
 
 <ol>
-  <li>Edit the <code class="highlighter-rouge">/etc/simbaclient.ini</code> file with your favorite editor.</li>
+  <li>Edit the <code class="language-plaintext highlighter-rouge">/etc/simbaclient.ini</code> file with your favorite editor.</li>
   <li>
-    <p>Change the <code class="highlighter-rouge">ErrorMessagesPath</code> property to point to the location where you unzipped the client.</p>
+    <p>Change the <code class="language-plaintext highlighter-rouge">ErrorMessagesPath</code> property to point to the location where you unzipped the client.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Driver]
  ErrorMessagesPath=&lt;path_to_error_messages_directory&gt;
 </code></pre></div>    </div>
   </li>
-  <li>Save and close the <code class="highlighter-rouge">/etc/simbaclient.ini</code> file.</li>
+  <li>Save and close the <code class="language-plaintext highlighter-rouge">/etc/simbaclient.ini</code> file.</li>
 </ol>
 
 <h2 id="edit-the-odbcinstini-file">Edit the odbcinst.ini file</h2>
 
-<p>The <code class="highlighter-rouge">odbcinst.ini</code> file is a registry and configuration file for ODBC drivers.
+<p>The <code class="language-plaintext highlighter-rouge">odbcinst.ini</code> file is a registry and configuration file for ODBC drivers.
 Depending on your workstation architecture, you configure the 32-bit or 64-bit
 driver.</p>
 
 <ol>
-  <li>Open the file <code class="highlighter-rouge">/etc/odbcinst.ini</code> in your favorite editor.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/etc/odbcinst.ini</code> in your favorite editor.</li>
   <li>
     <p>Comment out the driver that you don’t need.</p>
 
     <p>For example, if you are using 64-bit, comment out 32-bit.</p>
   </li>
   <li>
-    <p>Edit the <code class="highlighter-rouge">Driver</code>  line so that it contains the path to the file <code class="highlighter-rouge">libSimbaClient.so</code></p>
+    <p>Edit the <code class="language-plaintext highlighter-rouge">Driver</code>  line so that it contains the path to the file <code class="language-plaintext highlighter-rouge">libSimbaClient.so</code></p>
 
     <p>Use the path where you copied the library files. For example, for the 64-bit ODBC driver:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot(x64)]
  APILevel            = 1
  ConnectFunctions    = YYY
  Description         = ThoughtSpot 64bit ODBC driver
@@ -3517,11 +3517,11 @@ driver.</p>
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Make sure the remaining driver is named <code class="highlighter-rouge">ThoughtSpot</code> without any special characters.</p>
+    <p>Make sure the remaining driver is named <code class="language-plaintext highlighter-rouge">ThoughtSpot</code> without any special characters.</p>
 
     <p>When you are done, you should see something similar to the following:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #[ThoughtSpot]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #[ThoughtSpot]
  #APILevel            = 1
  #ConnectFunctions    = YYY
  #Description         = ThoughtSpot 32bit ODBC driver
@@ -3538,43 +3538,43 @@ driver.</p>
  SQLLevel            = 1
 </code></pre></div>    </div>
   </li>
-  <li>Save and close the <code class="highlighter-rouge">/etc/odbcinst.ini</code> file.</li>
+  <li>Save and close the <code class="language-plaintext highlighter-rouge">/etc/odbcinst.ini</code> file.</li>
 </ol>
 
 <h2 id="edit-the-odbcini-file">Edit the odbc.ini file</h2>
 
-<p>The <code class="highlighter-rouge">odbc.ini</code> file is a registry and configuration file for ODBC DSNs (Data
+<p>The <code class="language-plaintext highlighter-rouge">odbc.ini</code> file is a registry and configuration file for ODBC DSNs (Data
  Source Names). This file relies on the drivers registered in the
- <code class="highlighter-rouge">/etc/odbcinst.ini</code> file. Depending on your workstation architecture, you
+ <code class="language-plaintext highlighter-rouge">/etc/odbcinst.ini</code> file. Depending on your workstation architecture, you
  configure the 32-bit or 64-bit driver.</p>
 
 <ol>
-  <li>Open the file <code class="highlighter-rouge">/etc/odbc.ini</code> in the editor of your choice.</li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">/etc/odbc.ini</code> in the editor of your choice.</li>
   <li>
     <p>Comment out the configuration that you don’t need.</p>
 
     <p>For example, if you are using 64-bit, comment out 32-bit.</p>
   </li>
-  <li>Locate the <code class="highlighter-rouge">Description</code> section for the type of Solaris you are using (32-bit or 64-bit).</li>
-  <li>Locate the line that begins with <code class="highlighter-rouge">ServerList</code>.</li>
+  <li>Locate the <code class="language-plaintext highlighter-rouge">Description</code> section for the type of Solaris you are using (32-bit or 64-bit).</li>
+  <li>Locate the line that begins with <code class="language-plaintext highlighter-rouge">ServerList</code>.</li>
   <li>
-    <p>Replace <code class="highlighter-rouge">127.0.0.1</code> with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.</p>
+    <p>Replace <code class="language-plaintext highlighter-rouge">127.0.0.1</code> with a comma separated list of the IP addresses of each node on the ThoughtSpot instance.</p>
 
-    <p>The syntax for the <code class="highlighter-rouge">ServerList</code> is:</p>
+    <p>The syntax for the <code class="language-plaintext highlighter-rouge">ServerList</code> is:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ServerList = &lt;node1_IP&gt; 12345, &lt;node2_IP&gt; 12345 [, &lt;node3_IP&gt; 12345, ...]
 </code></pre></div>    </div>
 
     <p>If you need to obtain the IP addresses of the ThoughtSpot cluster nodes, run
- the command <code class="highlighter-rouge">tscli node ls</code> from a Solaris shell on a ThoughtSpot appliance.</p>
+ the command <code class="language-plaintext highlighter-rouge">tscli node ls</code> from a Solaris shell on a ThoughtSpot appliance.</p>
   </li>
   <li>
-    <p>Do not edit the port number, leave it as <code class="highlighter-rouge">12345</code>.</p>
+    <p>Do not edit the port number, leave it as <code class="language-plaintext highlighter-rouge">12345</code>.</p>
 
     <p>When you are done, your entry will look similar to the following (this
  example is for the 64-bit ODBC driver):</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [ThoughtSpot]
  Description = ThoughtSpot 64-bit ODBC Driver
  Driver = ThoughtSpot
  ServerList =  172.18.231.17 12345
@@ -3588,7 +3588,7 @@ driver.</p>
  SCHEMA = # Set the default schema to connect to
 </code></pre></div>    </div>
   </li>
-  <li>Save and close the <code class="highlighter-rouge">odbc.ini</code> file.</li>
+  <li>Save and close the <code class="language-plaintext highlighter-rouge">odbc.ini</code> file.</li>
 </ol>
 
 <h2 id="test-your-odbc-connection">Test your ODBC connection</h2>
@@ -3604,11 +3604,11 @@ to login into the ThoughtSpot application.</li>
   <li>Confirm the user’s privileges by going to the <strong>Data</strong> tab.</li>
   <li>Go back to your workstation’s terminal shell.</li>
   <li>
-    <p>Use the <code class="highlighter-rouge">/opt/csw/bin</code> and confirm you can connect.</p>
+    <p>Use the <code class="language-plaintext highlighter-rouge">/opt/csw/bin</code> and confirm you can connect.</p>
 
-    <p>Specify the <code class="highlighter-rouge">ThoughtSpot</code> DSN:</p>
+    <p>Specify the <code class="language-plaintext highlighter-rouge">ThoughtSpot</code> DSN:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /opt/csw/bin/isql -v ThoughtSpot tsadmin adminpwd
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /opt/csw/bin/isql -v ThoughtSpot tsadmin adminpwd
  +---------------------------------------+
  | Connected!                            |
  |                                       |
@@ -3648,7 +3648,7 @@ to login into the ThoughtSpot application.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

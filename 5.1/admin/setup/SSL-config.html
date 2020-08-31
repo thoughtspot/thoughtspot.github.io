@@ -3216,7 +3216,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span>-->
 
@@ -3232,7 +3232,7 @@ $('#toc').on('click', 'a', function() {
 <ul>
   <li>Check with your IT department to see if they already have an SSL certificate you can use.</li>
   <li>If not, you will need to obtain the certificate from an issuing authority.</li>
-  <li>Alternatively, you may disable SSL if you don’t want the security it provides by using the command <code class="highlighter-rouge">tscli ssl off</code>.</li>
+  <li>Alternatively, you may disable SSL if you don’t want the security it provides by using the command <code class="language-plaintext highlighter-rouge">tscli ssl off</code>.</li>
 </ul>
 
 <p>There are many SSL vendors to choose from. Check with your existing Web hosting provider first, to see if they can provide the certificate for you.</p>
@@ -3249,27 +3249,27 @@ $('#toc').on('click', 'a', function() {
   <li>The Certificate Signing Request. You can generate a CSR in several ways. Most often, you generate a CSR and a new private key <a href="#csr-new-private-key">at the same time</a>. If you already have a private key, <a href="#csr-existing-private-key">use it to generate a CSR</a>.</li>
 </ul>
 
-<p><strong><em>NOTE:</em></strong> Do not use a passphrase while creating the cert. Invoke the command, <code class="highlighter-rouge">openssl rsa -check -in pk.key</code> to verify if you’re prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.</p>
+<p><strong><em>NOTE:</em></strong> Do not use a passphrase while creating the cert. Invoke the command, <code class="language-plaintext highlighter-rouge">openssl rsa -check -in pk.key</code> to verify if you’re prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.</p>
 
 <p>When you generate a Certificate Signing Request, you handle sensitive data. Therefore, ThoughtSpot recommends that its customers generate their own CSRs.</p>
 
 <p id="csr-new-private-key">Follow these steps to generate a CSR and a private key. You need a computer you can run Linux commands on, and a recent version of <em>openssl</em>.</p>
 
 <ol>
-  <li><code class="highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+  <li><code class="language-plaintext highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
 </code></pre></div>    </div>
   </li>
   <li>Run the command to generate a CSR and private key pair:
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -newkey rsa:2048 -nodes -out csr.pem -keyout pk.key[-subj "/key1=value1/key2=value with space/"]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -newkey rsa:2048 -nodes -out csr.pem -keyout pk.key[-subj "/key1=value1/key2=value with space/"]
 </code></pre></div>    </div>
 
     <p>Note the following parameters:</p>
     <ul>
       <li>ThoughtSpot supports a 2048 or 4096 bit key.</li>
-      <li><code class="highlighter-rouge">subj</code>: a common subject. Logically equivalent to the <code class="highlighter-rouge">-dname</code> property of <em>keytool</em>. Alternatively, you can skip this flag, and <code class="highlighter-rouge">openssl</code> prompts you to enter this information interactively.</li>
-      <li>Optionally, run <code class="highlighter-rouge">add-multivalue-rdn</code> to allow multiple values to be set for the same key.</li>
-      <li>Run <code class="highlighter-rouge">man req</code> for more details.</li>
+      <li><code class="language-plaintext highlighter-rouge">subj</code>: a common subject. Logically equivalent to the <code class="language-plaintext highlighter-rouge">-dname</code> property of <em>keytool</em>. Alternatively, you can skip this flag, and <code class="language-plaintext highlighter-rouge">openssl</code> prompts you to enter this information interactively.</li>
+      <li>Optionally, run <code class="language-plaintext highlighter-rouge">add-multivalue-rdn</code> to allow multiple values to be set for the same key.</li>
+      <li>Run <code class="language-plaintext highlighter-rouge">man req</code> for more details.</li>
     </ul>
   </li>
 </ol>
@@ -3277,12 +3277,12 @@ $('#toc').on('click', 'a', function() {
 <p id="csr-existing-private-key">If you already have a private key, you can use it to generate a CSR. Follow these steps to generate a CSR with an existing private key:</p>
 
 <ol>
-  <li><code class="highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
+  <li><code class="language-plaintext highlighter-rouge">ssh</code> into one of your ThoughtSpot nodes.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;node_IP&gt;
 </code></pre></div>    </div>
   </li>
   <li>Run the command to generate a CSR and private key pair:
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -key &lt;private_key_file&gt; -nodes -out csr.pem[-subj "/key1=value1/key2=value with space/"]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> openssl req -new -key &lt;private_key_file&gt; -nodes -out csr.pem[-subj "/key1=value1/key2=value with space/"]
 </code></pre></div>    </div>
 
     <p>Specify the existing private key file. Refer to the parameters listed above.</p>
@@ -3296,26 +3296,26 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Copy the certificate and key files to ThoughtSpot:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ scp &lt;key&gt; &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ scp &lt;key&gt; &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Change directories to where you copied the certificate:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Issue the <code class="highlighter-rouge">tscli</code> command to install the certificate:</p>
+    <p>Issue the <code class="language-plaintext highlighter-rouge">tscli</code> command to install the certificate:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ssl add-cert &lt;key&gt; &lt;certificate&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ssl add-cert &lt;key&gt; &lt;certificate&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>To test that the certificate was installed correctly, <a href="logins.html#log-in-to-the-thoughtspot-application">Log in to the ThoughtSpot application</a>.</p>
 
-    <p>You should see that the application’s URL begins with <code class="highlighter-rouge">https://</code>.</p>
+    <p>You should see that the application’s URL begins with <code class="language-plaintext highlighter-rouge">https://</code>.</p>
   </li>
 </ol>
 
@@ -3333,7 +3333,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Issue the following command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl set-min-version 1.2
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl set-min-version 1.2
 </code></pre></div>    </div>
 
     <p>This will block all usage of older versions.</p>
@@ -3369,7 +3369,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

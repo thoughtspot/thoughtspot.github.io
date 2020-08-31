@@ -3223,26 +3223,26 @@ $('#toc').on('click', 'a', function() {
   <p>If your ThoughtSpot system is configured for Security Assertion Markup Language
 (SAML) you can enable Single Sign On (SSO) for your embed application.</p>
 
-<p>Place the JS API library in the <code class="highlighter-rouge">&lt;head&gt;</code> section of the HTML on your Web page.
+<p>Place the JS API library in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section of the HTML on your Web page.
 Ensure that the JS API script tag is the first script loaded in the page. You can see examples of this</p>
 
 <h2 id="authenticate-when-the-window-is-initialized">Authenticate when the window is initialized</h2>
 
-<p>Your web page needs to authenticate by calling <code class="highlighter-rouge">window.thoughtspot.initialize</code>
-and waiting for the <code class="highlighter-rouge">onInitializationCallback</code> to be called before embedding any
+<p>Your web page needs to authenticate by calling <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code>
+and waiting for the <code class="language-plaintext highlighter-rouge">onInitializationCallback</code> to be called before embedding any
 ThoughtSpot visualizations or making any ThoughtSpot REST API calls.</p>
 
-<p>The JS API call <code class="highlighter-rouge">window.thoughtspot.initialize</code> can cause the entire Web page to
+<p>The JS API call <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> can cause the entire Web page to
 be re-directed to your Identity Provider (IDP). This order implies that you may not
-execute any of your application logic before <code class="highlighter-rouge">window.thoughtspot.initialize</code> has
+execute any of your application logic before <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> has
 called your callback.</p>
 
 <p>Any redirection could interfere with your application logic. So, don’t embed any
 static ThoughtSpot visualizations in your HTML. In other words, you should
 generate the ThoughtSpot visualizations dynamically after
-<code class="highlighter-rouge">window.thoughtspot.initialize</code> has called your callback.</p>
+<code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> has called your callback.</p>
 
-<p>The <code class="highlighter-rouge">onAuthExpiration</code> is only available if you have at least one ThoughtSpot
+<p>The <code class="language-plaintext highlighter-rouge">onAuthExpiration</code> is only available if you have at least one ThoughtSpot
 visualization iframe in your web page.</p>
 
 <h2 id="example-of-code-flow">Example of code flow</h2>
@@ -3252,20 +3252,20 @@ visualization iframe in your web page.</p>
 <ol>
   <li><a href="/5.1/release/downloads.html" target="_blank">Download</a> the ThoughtSpot JavaScript library.</li>
   <li>
-    <p>Include the library file into your web page’s <code class="highlighter-rouge">&lt;head&gt;</code> section:</p>
+    <p>Include the library file into your web page’s <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;head&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;head&gt;
  &lt;script type=”text/javascript” src=”&lt;protocol&gt;&lt;your.thoughtspot.domain&gt;/js/api/api.min.js”&gt;
  ...
  &lt;/head&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>From your application code, authenticate to ThoughtSpot by calling to the <code class="highlighter-rouge">window.thoughtspot.initialize</code> method.</p>
+    <p>From your application code, authenticate to ThoughtSpot by calling to the <code class="language-plaintext highlighter-rouge">window.thoughtspot.initialize</code> method.</p>
 
     <p>For example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript”&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;script type=”text/javascript”&gt;
      thoughtspotHost = &lt;hostname_or_ip_w/o_http&gt;
      function setUpThoughtSpotAPI() {
          window.thoughtspot.initialize(
@@ -3295,7 +3295,7 @@ visualization iframe in your web page.</p>
   <li>
     <p>Work with ThoughtSpot support to enable CORS between your client application domain and the ThoughtSpot domain.</p>
 
-    <p>When this value is changed, the <code class="highlighter-rouge">nginx</code> service is restarted automatically to reflect the change.</p>
+    <p>When this value is changed, the <code class="language-plaintext highlighter-rouge">nginx</code> service is restarted automatically to reflect the change.</p>
   </li>
 </ol>
 
@@ -3327,7 +3327,7 @@ ThoughtSpot and display it within your Web page or application.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

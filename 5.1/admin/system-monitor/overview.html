@@ -3214,7 +3214,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    11 minutes
+    12 minutes
   
 </span>-->
 
@@ -3267,9 +3267,9 @@ which may be more or less.</p>
 <p>This summary includes the <strong>LAST SNAPSHOT TIME</strong> it reflects whether regular
 snapshots of your cluster are collected. This value should update regularly in
 real time. If you do not see it change or empty, you should check your cluster
-snapshot policy using the <code class="highlighter-rouge">tscli</code> command:</p>
+snapshot policy using the <code class="language-plaintext highlighter-rouge">tscli</code> command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli snapshot-policy show
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tscli snapshot-policy show
 schedule {
   period {
     number: 1
@@ -3298,7 +3298,7 @@ enabled: false
 
 <p>You can see this policy is disabled, which is a problem. Production clusters
 should enable the default snapshot policy. When you show or enable the snapshot
-policy, you’ll see your <code class="highlighter-rouge">tscli</code> command reflected in the <strong>Configuration
+policy, you’ll see your <code class="language-plaintext highlighter-rouge">tscli</code> command reflected in the <strong>Configuration
 Events</strong> panel on this same page.</p>
 
 <h2 id="relational-data-cache">Relational Data Cache</h2>
@@ -3366,66 +3366,66 @@ Worksheet data is not included.</p>
 
 <p>Displays critical and warning alerts. This includes when an alert was generated
 and from which service and machine. Administrators can get a custom report by
-issuing a <code class="highlighter-rouge">tscli alert list</code> on the appliance:</p>
+issuing a <code class="language-plaintext highlighter-rouge">tscli alert list</code> on the appliance:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli alert list --since 4w
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli alert list --since 4w
 </code></pre></div></div>
 
 <p>The critical alerts you can encounter in this display are the following:</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">TASK_FLAPPING</code></p>
+    <p><code class="language-plaintext highlighter-rouge">TASK_FLAPPING</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">Task {{.Service}}.{{.Task}} terminated {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">Task {{.Service}}.{{.Task}} terminated {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
 
     <p>This alert is raised when a task is crashing repeatedly. The service is evaluted across the whole cluster. So, if a service crashes 5 times in a day across all nodes in the cluster, this alert is generated.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">OREO_TERMINATED</code></p>
+    <p><code class="language-plaintext highlighter-rouge">OREO_TERMINATED</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">Oreo terminated on machine {{.Machine}}</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">Oreo terminated on machine {{.Machine}}</code></p>
 
     <p>This alert is raised when the Oreo daemon on a machine terminates due to an error. This typically happens due to an error accessing Zookeeper, HDFS, or a hardware issue.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">HDFS_DISK_SPACE</code></p>
+    <p><code class="language-plaintext highlighter-rouge">HDFS_DISK_SPACE</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">HDFS has less than {{.Perc}}% space free</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">HDFS has less than {{.Perc}}% space free</code></p>
 
     <p>Raised when a HDFS cluster is low on total available disk space.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">ZK_INACCESSIBLE</code></p>
+    <p><code class="language-plaintext highlighter-rouge">ZK_INACCESSIBLE</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">Zookeeper is not accessible</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">Zookeeper is not accessible</code></p>
 
     <p>Raised when Zookeeper is inaccessible.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">PERIODIC_BACKUP_FLAPPING</code></p>
+    <p><code class="language-plaintext highlighter-rouge">PERIODIC_BACKUP_FLAPPING</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">Periodic backup failed {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">Periodic backup failed {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
 
     <p>This alert is raised when a periodic backup failed repeatedly.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">PERIODIC_SNAPSHOT_FLAPPING</code></p>
+    <p><code class="language-plaintext highlighter-rouge">PERIODIC_SNAPSHOT_FLAPPING</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">Periodic snapshot failed {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">Periodic snapshot failed {{._actual_num_occurrences}} times in last {{._earliest_duration_str}}</code></p>
 
     <p>This alert is raised when periodic snapshot failed repeatedly.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">APPLICATION_INVALID_STATE_EXTERNAL</code></p>
+    <p><code class="language-plaintext highlighter-rouge">APPLICATION_INVALID_STATE_EXTERNAL</code></p>
 
-    <p><strong>Msg</strong>: <code class="highlighter-rouge">{{.Service}}.{{.Task}} on {{.Machine}} at location {{.Location}}</code></p>
+    <p><strong>Msg</strong>: <code class="language-plaintext highlighter-rouge">{{.Service}}.{{.Task}} on {{.Machine}} at location {{.Location}}</code></p>
 
     <p>Raised when Application raises invalid state alert.</p>
   </li>
 </ul>
 
-<p>The possible alert types are <code class="highlighter-rouge">CRITICAL</code>, <code class="highlighter-rouge">WARNING</code>, <code class="highlighter-rouge">ERROR</code>, and <code class="highlighter-rouge">INFO</code>. For a
+<p>The possible alert types are <code class="language-plaintext highlighter-rouge">CRITICAL</code>, <code class="language-plaintext highlighter-rouge">WARNING</code>, <code class="language-plaintext highlighter-rouge">ERROR</code>, and <code class="language-plaintext highlighter-rouge">INFO</code>. For a
 full reference, see the <a href="/5.1/reference/alerts-reference.html#">Alert code reference</a>.</p>
 
 <h2 id="space-utilization">Space Utilization</h2>
@@ -3445,7 +3445,7 @@ capacity.</p>
 
 <p>The query for this answer is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>day of timestamp
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>day of timestamp
 total capacity (gb)
 total used space (gb)
 daily
@@ -3454,7 +3454,7 @@ total capacity (gb) &gt; 0
 total used space (gb) &gt; 0
 </code></pre></div></div>
 
-<p>The chart relies on the <code class="highlighter-rouge">TS: Internal Table Wise Capacity WS</code> worksheet. It
+<p>The chart relies on the <code class="language-plaintext highlighter-rouge">TS: Internal Table Wise Capacity WS</code> worksheet. It
 tracks  total used space, which consists of raw uncompressed data, including
 replication.</p>
 
@@ -3464,13 +3464,13 @@ replication.</p>
 
 <p>The query for this answer is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>monthly
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>monthly
 last 4 months this month
 active users
 user != {null}
 </code></pre></div></div>
 
-<p>This query relies on the <code class="highlighter-rouge">TS: BI server</code> worksheet.</p>
+<p>This query relies on the <code class="language-plaintext highlighter-rouge">TS: BI server</code> worksheet.</p>
 
 <h2 id="monthly-ad-hoc-searches">Monthly Ad-hoc Searches</h2>
 
@@ -3491,13 +3491,13 @@ query.</p>
 
 <p>The query for this answer is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ad-hoc search
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ad-hoc search
 user action = 'answer_pinboard_context' 'answer_saved' 'answer_unsaved'
 monthly
 last 4 months this month
 </code></pre></div></div>
 
-<p>This answer relies on data from the <code class="highlighter-rouge">TS: BI Server</code> worksheet.</p>
+<p>This answer relies on data from the <code class="language-plaintext highlighter-rouge">TS: BI Server</code> worksheet.</p>
 
 <h2 id="monthly-pinboard-views">Monthly Pinboard Views</h2>
 
@@ -3521,13 +3521,13 @@ considered pinboard views:</p>
 
 <p>The query underlying this answer is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pinboard views
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pinboard views
 user action = 'pinboard_embed_view' 'pinboard_tspublic_no_runtime_filter' 'pinboard_tspublic_runtime_filter' 'pinboard_view'
 monthly
 last 4 months this month
 </code></pre></div></div>
 
-<p>The query uses the <code class="highlighter-rouge">TS: BI Server</code> data source.</p>
+<p>The query uses the <code class="language-plaintext highlighter-rouge">TS: BI Server</code> data source.</p>
 
 <h2 id="top-users-last-month">Top Users Last Month</h2>
 
@@ -3637,14 +3637,14 @@ the users performed in the last 30 days. The possible user actions include:</p>
 
 <p>The query underlying this answer is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top 10
 ranked by user actions
 user action != 'invalid'
 user != {null}
 user
 last 30 days today
 </code></pre></div></div>
-<p>The query uses the <code class="highlighter-rouge">TS: BI Server</code> data source.</p>
+<p>The query uses the <code class="language-plaintext highlighter-rouge">TS: BI Server</code> data source.</p>
 
 <h2 id="top-pinboards-last-month">Top Pinboards Last Month</h2>
 
@@ -3659,7 +3659,7 @@ performed in the last 30 days. The possible user actions include:</p>
 
 <p>The query underlying this answer is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top 10
 ranked by pinboard views
 user action = 'pinboard_embed_view' 'pinboard_tspublic_no_runtime_filter' 'pinboard_tspublic_runtime_filter' 'pinboard_view'
 pinboard != {null}
@@ -3667,7 +3667,7 @@ pinboard
 last 30 days today
 
 </code></pre></div></div>
-<p>The query uses the <code class="highlighter-rouge">TS: BI Server</code> data source.</p>
+<p>The query uses the <code class="language-plaintext highlighter-rouge">TS: BI Server</code> data source.</p>
 
 <h2 id="configuration-events">Configuration Events</h2>
 
@@ -3702,10 +3702,10 @@ system. This panel displays configuration events related to:</p>
     </table>
 
 <p>For a more detailed list, including the user that issued a command, you can use
-the <code class="highlighter-rouge">tscli event list</code> command. Administrators can <code class="highlighter-rouge">ssh</code> into the cluster and
+the <code class="language-plaintext highlighter-rouge">tscli event list</code> command. Administrators can <code class="language-plaintext highlighter-rouge">ssh</code> into the cluster and
 specify a time period or even a type of command to include.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[admin@testsystem ~]$ tscli event list --since 3d
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[admin@testsystem ~]$ tscli event list --since 3d
 +-------------------------------+-----------------------+----------------------------+
 |             DATE              |       USER            |           SUMMARY          |
 +-------------------------------+-----------------------+----------------------------+
@@ -3728,7 +3728,7 @@ some way, should use the new boards and remove any dependencies.</p>
 
 <h2 id="related-information">Related information</h2>
 
-<p><a href="/5.1/reference/tscli-command-ref.html#logs"><code class="highlighter-rouge">tscli logs</code> command</a></p>
+<p><a href="/5.1/reference/tscli-command-ref.html#logs"><code class="language-plaintext highlighter-rouge">tscli logs</code> command</a></p>
 
   <div class="tags">
     <div style="float:right;">
@@ -3761,7 +3761,7 @@ some way, should use the new boards and remove any dependencies.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
