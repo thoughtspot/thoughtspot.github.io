@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ## Using the tscli cluster create command
 To install your appliance, you must install the cluster using the release tarball (estimated time 1 hour).
 1. **Download the release tarball** Download the release tarball from the download link sent by ThoughtSpot Support.<br>
-Refer to your welcome letter to find a link to download the release tarball. If you do not have a download link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release tarball.  
+Refer to your welcome letter to find a link to download the release tarball. If you do not have a download link, open a support ticket with [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to access the release tarball.  
 2.  **Copy the release tarball** In your Terminal (Apple) or using [Winscp](https://winscp.net/eng/index.php) (Windows application), copy the downloaded release tarball to `/home/admin/` and run the cluster installer as shown below.<br>
 Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/<file-name>`. Note the following parameters:<br>
 * `release-number` is the version of ThoughtSpot you have on your cluster, such as `6.0` or `5.3`. `release-number` is of the form `0.0.tar.gz`.
