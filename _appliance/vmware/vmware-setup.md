@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: 3/3/2020
+last_updated: 9/1/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -31,9 +31,13 @@ for a sandbox environment but is insufficient for a production environment. You 
    cores (for a physical host with n cores) to fully take advantage of computing
    power of the physical host. Extra cores help performance.
 
-   You should aim to allocate 490 GB or more RAM.
+   You must allocate 500 GB or more RAM for each VM.
 
-2. Create datastores for all solid-state drive (SSD) and hard drive devices.
+2. As a best practice, and for better performance, ThoughtSpot recommends that you install the operating system on a solid-state drive, or SSD. For data storage, you can use solid-state drives, local hard drives, or storage as a network (SAN) drives.
+
+3. Ensure that you do not enable the [VMware DRS workload manager](https://www.vmware.com/products/vsphere/drs-dpm.html){:target="_blank"}. It may cause outages for your ThoughtSpot servers. Your VMware administrator must disable VMware DRS.
+
+4. Install [VMware tools](https://my.vmware.com/web/vmware/downloads/details?downloadGroup=VMTOOLS1106&productId=974){:target="_blank"} on each virtual machine, to increase hardware speed and performance.
 
 3. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
 
@@ -51,15 +55,17 @@ for a sandbox environment but is insufficient for a production environment. You 
 
    ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
 
-3. Choose the OVF template and click **Next**.
+4. Select **Creation type > deploy a virtual machine from an OVF or OVA**. Click **Next**.
 
-   The system prompts you to select a storage.
+3. Upload the ThoughtSpot OVF and click **Next**.
+
+   The system prompts you to select storage.
 
 4. Choose the SSD as the destination and click **Next**.
 
    The system displays the **Deployment Options** dialog.
 
-5. Enter the options and click **Next**.
+5. Specify the settings in the table below and click **Next**.
 
     | Setting                    | Value                                             |
     |----------------------------|---------------------------------------------------|
@@ -77,7 +83,7 @@ for a sandbox environment but is insufficient for a production environment. You 
 
    ![]({{ site.baseurl }}/images/vmware-loading.png "OVF Loading")
 
-8. Make sure that VM is powered off.
+8. Make sure that the VM is powered off.
 
 
 ## Add hard disks to the VM
@@ -140,7 +146,7 @@ additional, larger capacity disks.
 
 5. Save your changes.
 6. Repeat steps 1-5 to create more hard disks.
-7. Power on the VM
+7. Power on the VM.
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
     ```
@@ -151,6 +157,6 @@ additional, larger capacity disks.
 
 There is no network at this point on your VMs. As a prerequisite:
 
-1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
+1. Verify that Network Adapter type is set to VMware vmxnet3 (Highly recommended).
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
