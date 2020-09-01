@@ -153,4 +153,4 @@ There is no network at this point on your VMs. As a prerequisite:
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
 
-Once done, go to the <a href="https://community.thoughtspot.com/customers/s/contactsupport">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
+Once done, go to the <a href="http://thoughtspot.com/support-request">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
