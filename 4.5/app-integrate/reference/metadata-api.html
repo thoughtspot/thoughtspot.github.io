@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2795,23 +2795,23 @@ $('#toc').on('click', 'a', function() {
 <h3 id="http-status-code">HTTP Status Code</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">200</code> Gets the visualization headers.</li>
+  <li><code class="language-plaintext highlighter-rouge">200</code> Gets the visualization headers.</li>
 </ul>
 
 <h3 id="request-url">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders
 </code></pre></div></div>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot'
     'https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listobjectheaders?category=ALL&amp;sort=DEFAULT&amp;offset=-1'
 </code></pre></div></div>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "id": "6715f768-8930-4180-9a3d-1efdbfaa8e7f",
     "name": "Headline Pinboard",
@@ -2862,12 +2862,12 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="response-code">Response Code</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <h3 id="response-headers">Response Headers</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-trace-id": "c8008291-c074-45cf-b88a-371253166b5b",
   "date": "Tue, 27 Mar 2018 17:38:54 GMT",
   "content-encoding": "gzip",
@@ -2917,18 +2917,18 @@ the given pinboard.</p>
 <h3 id="http-status-code-1">HTTP Status Code</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">200</code> Gets the visualization headers.</li>
-  <li><code class="highlighter-rouge">400</code> Invalid pinboard GUID.</li>
+  <li><code class="language-plaintext highlighter-rouge">200</code> Gets the visualization headers.</li>
+  <li><code class="language-plaintext highlighter-rouge">400</code> Invalid pinboard GUID.</li>
 </ul>
 
 <h3 id="request-url-1">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listvizheaders
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/metadata/listvizheaders
 </code></pre></div></div>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'http://172.18.231.12:8088/callosum/v1/tspublic/v1/metadata/listvizheaders?id=327f4d60-c502-43b0-b1d4-c73df5031a2e'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'http://172.18.231.12:8088/callosum/v1/tspublic/v1/metadata/listvizheaders?id=327f4d60-c502-43b0-b1d4-c73df5031a2e'
 </code></pre></div></div>
 
 <h3 id="response-body">Response Body</h3>
@@ -2936,20 +2936,20 @@ the given pinboard.</p>
 <p>An array where each response has these first class citizens:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">size</code> (String enumeration)</li>
-  <li><code class="highlighter-rouge">vizType</code> (String enumeration)</li>
-  <li><code class="highlighter-rouge">id</code> (GUID)</li>
-  <li><code class="highlighter-rouge">name</code> (String)</li>
-  <li><code class="highlighter-rouge">author</code> (GUID)</li>
-  <li><code class="highlighter-rouge">created</code> (Epoch)</li>
-  <li><code class="highlighter-rouge">modified</code> (Epoch)</li>
-  <li><code class="highlighter-rouge">modifiedBy</code> (GUID)</li>
-  <li><code class="highlighter-rouge">owner</code> (GUID)</li>
+  <li><code class="language-plaintext highlighter-rouge">size</code> (String enumeration)</li>
+  <li><code class="language-plaintext highlighter-rouge">vizType</code> (String enumeration)</li>
+  <li><code class="language-plaintext highlighter-rouge">id</code> (GUID)</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code> (String)</li>
+  <li><code class="language-plaintext highlighter-rouge">author</code> (GUID)</li>
+  <li><code class="language-plaintext highlighter-rouge">created</code> (Epoch)</li>
+  <li><code class="language-plaintext highlighter-rouge">modified</code> (Epoch)</li>
+  <li><code class="language-plaintext highlighter-rouge">modifiedBy</code> (GUID)</li>
+  <li><code class="language-plaintext highlighter-rouge">owner</code> (GUID)</li>
 </ul>
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "size": "m",
     "vizType": "CHART",
@@ -2988,12 +2988,12 @@ the given pinboard.</p>
 
 <h3 id="response-code-1">Response Code</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <h3 id="response-headers-1">Response Headers</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-trace-id": "c0c84945-be03-414c-80c3-47b1b0949803",
   "date": "Tue, 27 Mar 2018 17:46:47 GMT",
   "content-encoding": "gzip",
@@ -3037,7 +3037,7 @@ the given pinboard.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

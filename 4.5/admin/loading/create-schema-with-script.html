@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2698,13 +2698,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>Enclose all object names (schema, table, and column) in double quotes and any column values in single quotes in your scripts. Object names that are also reserved words in SQL, or that contain special characters (any character other than alphanumeric or _ ), must be surrounded by double quotes. If you see the error message “Error parsing SQL. Check SQL input.”, you should check for object names without double quotes in your script.</p>
 
-<p>If you are working in a schema other than the default schema, object names must be fully qualified, as in <code class="highlighter-rouge">"&lt;schema_name&gt;"."&lt;object_name&gt;"</code>.</p>
+<p>If you are working in a schema other than the default schema, object names must be fully qualified, as in <code class="language-plaintext highlighter-rouge">"&lt;schema_name&gt;"."&lt;object_name&gt;"</code>.</p>
 
-<p>If your schema includes constraints to define relationships between tables (foreign key, or the <code class="highlighter-rouge">RELATIONSHIP</code> syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the <code class="highlighter-rouge">ADD CONSTRAINT</code> syntax. This makes it easier to troubleshoot the script and make changes.</p>
+<p>If your schema includes constraints to define relationships between tables (foreign key, or the <code class="language-plaintext highlighter-rouge">RELATIONSHIP</code> syntax), it is recommended that your script first creates all the tables, and then at the end, creates the relationships between them using the <code class="language-plaintext highlighter-rouge">ADD CONSTRAINT</code> syntax. This makes it easier to troubleshoot the script and make changes.</p>
 
-<p>If TQL is run using the flag <code class="highlighter-rouge">--allow_unsafe</code>, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:</p>
+<p>If TQL is run using the flag <code class="language-plaintext highlighter-rouge">--allow_unsafe</code>, your statements will always execute without this warning. Note that when running TQL from a script, you will need to decide what behavior you want if the script contains changes that affect dependent objects. If you want the script to run even if objects with dependencies are affected, run it using this flag, for example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat safest_script_ever.sql | tql --allow_unsafe
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat safest_script_ever.sql | tql --allow_unsafe
 </code></pre></div></div>
 
 <ol>
@@ -2712,18 +2712,18 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Type in the command to create the database, if it does not already exist:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> CREATE database &lt;db_name&gt;;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> CREATE database &lt;db_name&gt;;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Type in the command to specify the database to use:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> USE database &lt;db_name&gt;;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> USE database &lt;db_name&gt;;
 </code></pre></div>    </div>
   </li>
   <li>Type in the command to create the schema, if you don’t want to use the default schema:</li>
   <li>Type in each of the CREATE TABLE statements, with its column definitions, primary key constraints, and sharding specification (if any).</li>
-  <li>At the end of your script, optionally type in the <code class="highlighter-rouge">ALTER TABLE</code> statements to add foreign keys to use in joining the tables.</li>
+  <li>At the end of your script, optionally type in the <code class="language-plaintext highlighter-rouge">ALTER TABLE</code> statements to add foreign keys to use in joining the tables.</li>
   <li>Save the file.</li>
   <li>
     <p>Run the script using one of these methods:</p>
@@ -2731,7 +2731,7 @@ $('#toc').on('click', 'a', function() {
     <ul>
       <li><a href="upload-sql-script.html#">Import a schema (use the SQL editor)</a>.</li>
       <li><a href="/4.5/admin/setup/logins.html#ssh-to-the-appliance">Log in to the shell</a>, copy your script to your ThoughtSpot instance using scp, and pipe it to TQL:
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cat create-schema.sql | tql
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cat create-schema.sql | tql
 </code></pre></div>        </div>
       </li>
     </ul>
@@ -2773,7 +2773,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

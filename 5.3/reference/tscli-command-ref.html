@@ -46,9 +46,9 @@
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
 
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“tscli command reference”] | thoughtspot.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“tscli command reference”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The command returns 0 on success, and a non-zero exit codes on failure. The tscli command logs errors to the stderr directory." />
@@ -57,11 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-24T15:05:21-07:00" />
+<meta property="article:published_time" content="2020-08-31T17:25:47-07:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[“tscli command reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/reference/tscli-command-ref.html"},"url":"https://docs.thoughtspot.com/5.3/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2020-08-24T15:05:21-07:00","datePublished":"2020-08-24T15:05:21-07:00","description":"The command returns 0 on success, and a non-zero exit codes on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.3/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2020-08-31T17:25:47-07:00","datePublished":"2020-08-31T17:25:47-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit codes on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3285,12 +3286,12 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The command returns <code class="highlighter-rouge">0</code> on success, and a non-zero exit codes on failure.
-The <code class="highlighter-rouge">tscli</code> command logs errors to the <code class="highlighter-rouge">stderr</code> directory.</p>
+  <p>The command returns <code class="language-plaintext highlighter-rouge">0</code> on success, and a non-zero exit codes on failure.
+The <code class="language-plaintext highlighter-rouge">tscli</code> command logs errors to the <code class="language-plaintext highlighter-rouge">stderr</code> directory.</p>
 
 <h2 id="tscli-command">How to use the tscli command</h2>
 
-<p>The <code class="highlighter-rouge">tscli</code> command has the following syntax:</p>
+<p>The <code class="language-plaintext highlighter-rouge">tscli</code> command has the following syntax:</p>
 
 <pre>
 tscli [-h]
@@ -3311,21 +3312,21 @@ tscli [-h]
        tokenauthentication}
 </pre>
 
-<p>The <code class="highlighter-rouge">tscli</code> command has several subcommands, such as <code class="highlighter-rouge">alert</code>, <code class="highlighter-rouge">backup</code>, and so on.</p>
+<p>The <code class="language-plaintext highlighter-rouge">tscli</code> command has several subcommands, such as <code class="language-plaintext highlighter-rouge">alert</code>, <code class="language-plaintext highlighter-rouge">backup</code>, and so on.</p>
 
 <p>Issue subcommands using the following format:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand]
 </code></pre></div></div>
 
-<p>Subcommands have their own additional options and actions, such as <code class="highlighter-rouge">tscli backup
-create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
+<p>Subcommands have their own additional options and actions, such as <code class="language-plaintext highlighter-rouge">tscli backup
+create</code> or <code class="language-plaintext highlighter-rouge">tscli backup delete</code>.</p>
 
 <p>Each subcommand may have several options.</p>
 
-<p>To view help for a subcommand, type <code class="highlighter-rouge">-h</code> for the subcommand option:</p>
+<p>To view help for a subcommand, type <code class="language-plaintext highlighter-rouge">-h</code> for the subcommand option:</p>
 
-<div id="tscli-subcommands" class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand] -h
+<div id="tscli-subcommands" class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli [subcommand] -h
 </code></pre></div></div>
 <h2 id="tscli-subcommands">tscli subcommands</h2>
 
@@ -3333,7 +3334,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-access">access</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli access [-h] {list}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli access [-h] {list}
 </code></pre></div></div>
 
 <p>This subcommand has the following option:</p>
@@ -3347,7 +3348,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-alert">alert</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli alert [-h] {count,info,list,off,on,refresh,silence,status,unsilence}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3391,7 +3392,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-ansible">ansible</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli ansible [-h] {checkout,commit} [--local]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tscli ansible [-h] {checkout,commit} [--local]
 </code></pre></div></div>
 
 <p>Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.</p>
@@ -3405,7 +3406,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-backup">backup</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,restore}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,restore}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3465,7 +3466,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-backup-policy">backup-policy</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup-policy [-h] {create,delete,disable,enable,ls,show,status,update}
 </code></pre></div></div>
 
 <p>Manages the backup policy.</p>
@@ -3510,7 +3511,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <p>Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli callhome [-h] {disable,enable,generate-bundle}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3552,7 +3553,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-cassandra">cassandra</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cassandra [-h] {backup,restore}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cassandra [-h] {backup,restore}
 </code></pre></div></div>
 
 <p>Backs up cassandra.</p>
@@ -3570,7 +3571,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-cluster">cluster</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,
                     reinstall-os,report,restore,resume-reinstall-os,
                     resume-update,set-config,set-min-resource-spec,
                     show-resource-spec,start,status,stop,update,
@@ -3656,7 +3657,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-command">command</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli command [-h] {run}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli command [-h] {run}
 </code></pre></div></div>
 
 <p>Command to run on all nodes.</p>
@@ -3695,7 +3696,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-dr-mirror">dr-mirror</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror [-h] {start,status,stop}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli dr-mirror [-h] {start,status,stop}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3714,7 +3715,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="etl">etl</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3794,7 +3795,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 </dl>
 
 <h3 id="event">event</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli event [-h] {list}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli event [-h] {list}
 </code></pre></div></div>
 <p>This subcommand and its options manage event notifications.</p>
 
@@ -3846,7 +3847,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-feature">feature</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli feature [-h] {get-all-config}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli feature [-h] {get-all-config}
 </code></pre></div></div>
 <p>This subcommand has the following option:</p>
 
@@ -3858,7 +3859,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-fileserver">fileserver</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli fileserver [-h] {configure,download-release,purge-config,show-config,upload}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3915,7 +3916,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-firewall">firewall</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 </code></pre></div></div>
 <p>This subcommand has the following options:</p>
 
@@ -3949,7 +3950,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-hdfs">hdfs</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli hdfs [-h] {leave-safemode}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli hdfs [-h] {leave-safemode}
 </code></pre></div></div>
 
 <p>This subcommand has the following option:</p>
@@ -3962,7 +3963,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-ispec">ipsec</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ipsec [-h] {disable,enable,status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ipsec [-h] {disable,enable,status}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -3981,7 +3982,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-ldap">ldap</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ldap [-h] {add-cert,configure,purge-configuration}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ldap [-h] {add-cert,configure,purge-configuration}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4004,7 +4005,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-logs">logs</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli logs [-h] {collect,runcmd}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli logs [-h] {collect,runcmd}
 </code></pre></div></div>
 
 <p>Manages the logging behavior.</p>
@@ -4137,7 +4138,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-tiles">map-tiles</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli map-tiles [-h] {disable,enable,status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli map-tiles [-h] {disable,enable,status}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4182,7 +4183,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-monitoring">monitoring</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli monitoring [-h] {set-config,show-config}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli monitoring [-h] {set-config,show-config}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4229,7 +4230,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-nas">nas</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli nas [-h] {ls,mount-cifs,mount-nfs,unmount}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4346,7 +4347,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-node">node</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4407,7 +4408,7 @@ create</code> or <code class="highlighter-rouge">tscli backup delete</code>.</p>
 
 <h3 id="tscli-onboarding">onboarding</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli onboarding [-h] {configure,purge-configuration}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli onboarding [-h] {configure,purge-configuration}
 </code></pre></div></div>
 
 <p>Onboarding helps application administrators to bulk update user information.
@@ -4443,7 +4444,7 @@ In particular, it configures various in-app email options.</p>
 
 <h3 id="tscli-patch">patch</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli patch [-h] {apply,ls,resume-apply,resume-rollback,rollback}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4511,7 +4512,7 @@ In particular, it configures various in-app email options.</p>
 
 <h3 id="tscli-rpackage">rpackage</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli rpackage [-h] {add,delete,list}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli rpackage [-h] {add,delete,list}
 </code></pre></div></div>
 
 <p>Manages R packages available to SpotIQ.</p>
@@ -4562,7 +4563,7 @@ In particular, it configures various in-app email options.</p>
 
 <h3 id="tscli-saml">saml</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli saml [-h] {configure,purge-configuration}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli saml [-h] {configure,purge-configuration}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4580,7 +4581,7 @@ In particular, it configures various in-app email options.</p>
 
 <h3 id="tscli-scheduled-pinboards">scheduled-pinboards</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli scheduled-pinboards [-h] {disable,enable}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli scheduled-pinboards [-h] {disable,enable}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4600,7 +4601,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-smtp">smtp</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4667,7 +4668,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-snapshot">snapshot</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot [-h] {backup,create,delete,ls,pin,restore,unpin,update-ttl}
 </code></pre></div></div>
 
 <p>To learn more about snapshots and backups, see the <a href="/5.3/admin/backup-restore/choose-strategy.html">Understand the backup strategies</a> documentation.</p>
@@ -4765,7 +4766,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-snapshot-policy">snapshot-policy</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot-policy [-h] {disable,enable,show,update}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli snapshot-policy [-h] {disable,enable,show,update}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4794,7 +4795,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-ssl">ssl</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 </code></pre></div></div>
 <p>This subcommand manages the SSL configuration.</p>
 
@@ -4854,7 +4855,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-sssd">sssd</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd {enable, disable, set-sudo-group, clear-sudo-group}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli sssd {enable, disable, set-sudo-group, clear-sudo-group}
 </code></pre></div></div>
 
 <p>This subcommand uses system security services daemon (SSSD), and has the following options:</p>
@@ -4889,7 +4890,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-storage">storage</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli storage [-h] {gc,df}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli storage [-h] {gc,df}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -4946,7 +4947,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-support">support</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli support [-h]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli support [-h]
    {bundle, restart-remote, rm-admin-email, rm-admin-phone, rm-feedback-email,
     set-admin-email, set-admin-phone, set-debug-ui-password, set-feedback-email,
     set-remote, show-admin-email, show-admin-phone, show-feedback-email,
@@ -5098,7 +5099,7 @@ Support for help on how to configure this list.</div>
 
 <h3 id="tscli-tokenauthentication">tokenauthentication</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cli tokenauthentication [-h] {disable,enable}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli cli tokenauthentication [-h] {disable,enable}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -5137,7 +5138,7 @@ Support for help on how to configure this list.</div>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 24, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 10/17/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>

@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2678,14 +2678,14 @@ set distance on the geo charts.</p>
 <p>The proximity keywords are:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">near</code></li>
+  <li><code class="language-plaintext highlighter-rouge">near</code></li>
   <li>
     <table>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">near…within n miles</code></td>
-          <td><code class="highlighter-rouge">km</code></td>
-          <td><code class="highlighter-rouge">meters</code></td>
+          <td><code class="language-plaintext highlighter-rouge">near…within n miles</code></td>
+          <td><code class="language-plaintext highlighter-rouge">km</code></td>
+          <td><code class="language-plaintext highlighter-rouge">meters</code></td>
         </tr>
       </tbody>
     </table>
@@ -2694,9 +2694,9 @@ set distance on the geo charts.</p>
     <table>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">farther than n miles</code></td>
-          <td><code class="highlighter-rouge">km</code></td>
-          <td><code class="highlighter-rouge">meters from</code></td>
+          <td><code class="language-plaintext highlighter-rouge">farther than n miles</code></td>
+          <td><code class="language-plaintext highlighter-rouge">km</code></td>
+          <td><code class="language-plaintext highlighter-rouge">meters from</code></td>
         </tr>
       </tbody>
     </table>
@@ -2712,18 +2712,18 @@ instances of a geotype column that falls within the parameters. These keywords
 are limited to 33 latitude/longitude pairs. They work on duplicate counties.
 Finally, you can filter on them. Some examples of valid searches are:</p>
 
-<p><code class="highlighter-rouge">landings</code> <em><code class="highlighter-rouge">latitude longitude city</code></em> <code class="highlighter-rouge">near tokyo</code></p>
+<p><code class="language-plaintext highlighter-rouge">landings</code> <em><code class="language-plaintext highlighter-rouge">latitude longitude city</code></em> <code class="language-plaintext highlighter-rouge">near tokyo</code></p>
 
-<p><code class="highlighter-rouge">landings</code> <em><code class="highlighter-rouge">latitude longitude city</code></em> <code class="highlighter-rouge">near tokyo within 50 miles</code></p>
+<p><code class="language-plaintext highlighter-rouge">landings</code> <em><code class="language-plaintext highlighter-rouge">latitude longitude city</code></em> <code class="language-plaintext highlighter-rouge">near tokyo within 50 miles</code></p>
 
 <p>You can bracket your search only with actual values found in the data.  So
- “longitude between <code class="highlighter-rouge">-125.000000</code> and <code class="highlighter-rouge">-115.316670</code> worked for me, but not
- <code class="highlighter-rouge">longitude between -125 and -115</code>.</p>
+ “longitude between <code class="language-plaintext highlighter-rouge">-125.000000</code> and <code class="language-plaintext highlighter-rouge">-115.316670</code> worked for me, but not
+ <code class="language-plaintext highlighter-rouge">longitude between -125 and -115</code>.</p>
 
 <h3 id="proximity-search-configuration-requirements">Proximity search configuration requirements</h3>
 
 <p>All your data must be in the same set. The worksheet or one of the tables must
-contain a column of type <code class="highlighter-rouge">longitude</code> and a column of type <code class="highlighter-rouge">latitude</code>. The
+contain a column of type <code class="language-plaintext highlighter-rouge">longitude</code> and a column of type <code class="language-plaintext highlighter-rouge">latitude</code>. The
 latitude and longitude data have to be on the same base tables for the feature
 to work. You can’t, for instance, have a dimension table with all your cities
 and their associated geo coordinates and join to it from your fact table and
@@ -2756,7 +2756,7 @@ appropriate GeoType.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

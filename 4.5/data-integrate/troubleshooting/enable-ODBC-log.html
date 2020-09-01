@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2703,20 +2703,20 @@ enable logging for ODBC on the workstation you use for connecting to ThoughtSpot
 </ul>
 
 <p>On both workstation and servers, the verbosity of the log is controlled by the
-<code class="highlighter-rouge">LogLevel</code> property. This property can be one of the following:</p>
+<code class="language-plaintext highlighter-rouge">LogLevel</code> property. This property can be one of the following:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">0</code> or <code class="highlighter-rouge">LOG_OFF</code>: no logging occurs</li>
-  <li><code class="highlighter-rouge">1</code> or <code class="highlighter-rouge">LOG_FATAL</code>: only log fatal errors</li>
-  <li><code class="highlighter-rouge">2</code> or <code class="highlighter-rouge">LOG_ERROR</code>: log all errors</li>
-  <li><code class="highlighter-rouge">3</code> or <code class="highlighter-rouge">LOG_WARNING</code>: log all errors and warnings</li>
-  <li><code class="highlighter-rouge">4</code> or <code class="highlighter-rouge">LOG_INFO</code>: log all errors, warnings, and informational messages</li>
-  <li><code class="highlighter-rouge">5</code> or <code class="highlighter-rouge">LOG_DEBUG</code>: log method entry and exit points and parameter values for debugging</li>
-  <li><code class="highlighter-rouge">6</code> or <code class="highlighter-rouge">LOG_TRACE</code>: log all method entry points</li>
+  <li><code class="language-plaintext highlighter-rouge">0</code> or <code class="language-plaintext highlighter-rouge">LOG_OFF</code>: no logging occurs</li>
+  <li><code class="language-plaintext highlighter-rouge">1</code> or <code class="language-plaintext highlighter-rouge">LOG_FATAL</code>: only log fatal errors</li>
+  <li><code class="language-plaintext highlighter-rouge">2</code> or <code class="language-plaintext highlighter-rouge">LOG_ERROR</code>: log all errors</li>
+  <li><code class="language-plaintext highlighter-rouge">3</code> or <code class="language-plaintext highlighter-rouge">LOG_WARNING</code>: log all errors and warnings</li>
+  <li><code class="language-plaintext highlighter-rouge">4</code> or <code class="language-plaintext highlighter-rouge">LOG_INFO</code>: log all errors, warnings, and informational messages</li>
+  <li><code class="language-plaintext highlighter-rouge">5</code> or <code class="language-plaintext highlighter-rouge">LOG_DEBUG</code>: log method entry and exit points and parameter values for debugging</li>
+  <li><code class="language-plaintext highlighter-rouge">6</code> or <code class="language-plaintext highlighter-rouge">LOG_TRACE</code>: log all method entry points</li>
 </ul>
 
 <p>Larger values include the information from lessor values. For example, if you
-set <code class="highlighter-rouge">3</code> or <code class="highlighter-rouge">LOG_WARNING</code>, you log all warnings <em>and</em> all errors.</p>
+set <code class="language-plaintext highlighter-rouge">3</code> or <code class="language-plaintext highlighter-rouge">LOG_WARNING</code>, you log all warnings <em>and</em> all errors.</p>
 
 <h2 id="enable-odbc-logs-on-a-windows-workstation">Enable ODBC logs on a Windows workstation</h2>
 
@@ -2756,24 +2756,24 @@ set <code class="highlighter-rouge">3</code> or <code class="highlighter-rouge">
 <ol>
   <li>Navigate to the directory where you installed ODBC.</li>
   <li>
-    <p>Open the <code class="highlighter-rouge">odbc.ini</code> file in a text editor.</p>
+    <p>Open the <code class="language-plaintext highlighter-rouge">odbc.ini</code> file in a text editor.</p>
 
     <p>This file is the registry and configuration file for ODBC.</p>
   </li>
-  <li>Locate the <code class="highlighter-rouge">LogLevel</code> and <code class="highlighter-rouge">LogPath</code> properties.</li>
+  <li>Locate the <code class="language-plaintext highlighter-rouge">LogLevel</code> and <code class="language-plaintext highlighter-rouge">LogPath</code> properties.</li>
   <li>Uncomment the properties.</li>
   <li>
-    <p>Enter a value for  the <code class="highlighter-rouge">LogLevel</code> the.</p>
+    <p>Enter a value for  the <code class="language-plaintext highlighter-rouge">LogLevel</code> the.</p>
 
     <p>Acceptable values are from 1 to 6 with 6 being the most verbose.</p>
   </li>
   <li>
-    <p>Enter the fully qualified path for the  <code class="highlighter-rouge">LogPath</code> values.</p>
+    <p>Enter the fully qualified path for the  <code class="language-plaintext highlighter-rouge">LogPath</code> values.</p>
 
     <p>The log will be written here.  Your file will look similar to the following:
 Example for Linux 64-bit:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ThoughtSpot]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ThoughtSpot]
 Description = ThoughtSpot 64-bit ODBC Driver
 Driver = ThoughtSpot
 ServerList =  172.18.231.17 12345
@@ -2799,9 +2799,9 @@ following to procedure on every ThoughtSpot node running the Simba service.</p>
 <ol>
   <li>SSH into the ThoughtSpot node.</li>
   <li>
-    <p>Edit the <code class="highlighter-rouge">/etc/thoughtspot/simba.ini</code> file.</p>
+    <p>Edit the <code class="language-plaintext highlighter-rouge">/etc/thoughtspot/simba.ini</code> file.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ...
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ...
  [Driver]
 
  ## Note that this default DriverManagerEncoding of UTF-32 is for iODBC. unixODBC uses UTF-16 by default.
@@ -2818,14 +2818,14 @@ following to procedure on every ThoughtSpot node running the Simba service.</p>
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Uncomment the <code class="highlighter-rouge">LogLevel</code> setting.</p>
+    <p>Uncomment the <code class="language-plaintext highlighter-rouge">LogLevel</code> setting.</p>
 
-    <p>The <code class="highlighter-rouge">LogLevel</code> is the level of logging to capture (0-6).</p>
+    <p>The <code class="language-plaintext highlighter-rouge">LogLevel</code> is the level of logging to capture (0-6).</p>
   </li>
   <li>
-    <p>Set <code class="highlighter-rouge">LogPath</code> to a directory to save the logs.</p>
+    <p>Set <code class="language-plaintext highlighter-rouge">LogPath</code> to a directory to save the logs.</p>
 
-    <p>The <code class="highlighter-rouge">LogPath</code> is the fully qualified path where ThoughtSpot should write the logs.</p>
+    <p>The <code class="language-plaintext highlighter-rouge">LogPath</code> is the fully qualified path where ThoughtSpot should write the logs.</p>
   </li>
   <li>
     <p>Work with ThoughtSpot Support to restart the Simba serivce.</p>
@@ -2865,7 +2865,7 @@ following to procedure on every ThoughtSpot node running the Simba service.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!--   -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

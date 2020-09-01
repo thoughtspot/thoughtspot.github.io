@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2719,30 +2719,30 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Launch TQL.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tql
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Designate the database you’ll be working in:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; use &lt;database_name&gt;;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; use &lt;database_name&gt;;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Find the name of the table you want to change.You can use the TQL command <code class="highlighter-rouge">SHOW TABLES;</code> to see a list of tables.</p>
+    <p>Find the name of the table you want to change.You can use the TQL command <code class="language-plaintext highlighter-rouge">SHOW TABLES;</code> to see a list of tables.</p>
 
-    <p>To see the current sharding on the table, use <code class="highlighter-rouge">SCRIPT TABLE &lt;table_name&gt;;</code></p>
+    <p>To see the current sharding on the table, use <code class="language-plaintext highlighter-rouge">SCRIPT TABLE &lt;table_name&gt;;</code></p>
   </li>
   <li>
     <p>Issue the command to change the data type of a column using this syntax:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;schema&gt;.&lt;table&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE &lt;schema&gt;.&lt;table&gt;
       MODIFY COLUMN &lt;column&gt; &lt;new_data_type&gt;;
 </code></pre></div>    </div>
 
     <p>For example, to change “account_id” with data type INT to data type VARCHAR:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE foodmart.account
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; ALTER TABLE foodmart.account
       ADD COLUMN account_id VARCHAR(10)
       DEFAULT '';
 </code></pre></div>    </div>
@@ -2750,14 +2750,14 @@ $('#toc').on('click', 'a', function() {
     <p>You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.</p>
   </li>
   <li>
-    <p>Run the <code class="highlighter-rouge">SCRIPT TABLE</code> command to get the new DDL to create the table.</p>
+    <p>Run the <code class="language-plaintext highlighter-rouge">SCRIPT TABLE</code> command to get the new DDL to create the table.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; SCRIPT TABLE &lt;table&gt;;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> TQL&gt; SCRIPT TABLE &lt;table&gt;;
 </code></pre></div>    </div>
 
     <p>Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR(&lt;number) column definitions with VARCHAR(0), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.</p>
   </li>
-  <li><a href="/4.5/data-connect/setup/adding-data-source.html#">Create a new data source.</a>Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the <code class="highlighter-rouge">SCRIPT TABLE</code> command.</li>
+  <li><a href="/4.5/data-connect/setup/adding-data-source.html#">Create a new data source.</a>Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the <code class="language-plaintext highlighter-rouge">SCRIPT TABLE</code> command.</li>
   <li>Run the data load and verify that everything is working as it should be.</li>
   <li>If the old data source was running as a recurring load, <a href="stop-scheduled-job.html">stop it from running</a>.</li>
 </ol>
@@ -2786,7 +2786,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

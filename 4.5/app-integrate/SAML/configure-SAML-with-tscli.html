@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2694,7 +2694,7 @@ $('#toc').on('click', 'a', function() {
 
   <p>ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate
 users. You can set up SAML through the shell on the ThoughtSpot instance using a
-<code class="highlighter-rouge">tscli</code> based configurator.</p>
+<code class="language-plaintext highlighter-rouge">tscli</code> based configurator.</p>
 
 <p>Before configuring SAML, you will need this information:</p>
 
@@ -2705,11 +2705,11 @@ users. You can set up SAML through the shell on the ThoughtSpot instance using a
   <li>
     <p>Unique service name that is used as the unique key by IDP to identify the client.</p>
 
-    <p>It should be in the following format: <code class="highlighter-rouge">urn:thoughtspot:callosum:saml</code></p>
+    <p>It should be in the following format: <code class="language-plaintext highlighter-rouge">urn:thoughtspot:callosum:saml</code></p>
   </li>
   <li>Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. It is usually set to 86400.</li>
-  <li>The absolute path to the <code class="highlighter-rouge">idp-meta.xml</code> file. This is needed so that the configuration persists over upgrades.</li>
-  <li>This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate <code class="highlighter-rouge">tsadmin</code>, so set it to true if you do not know what it does.</li>
+  <li>The absolute path to the <code class="language-plaintext highlighter-rouge">idp-meta.xml</code> file. This is needed so that the configuration persists over upgrades.</li>
+  <li>This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate <code class="language-plaintext highlighter-rouge">tsadmin</code>, so set it to true if you do not know what it does.</li>
 </ul>
 
 <p>Use this procedure to set up SAML on ThoughtSpot for user authentication. Note
@@ -2721,7 +2721,7 @@ reapply it if you update to a newer release of ThoughtSpot.</p>
   <li>
     <p>Execute the command to launch the interactive SAML configuration:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli saml configure
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli saml configure
 </code></pre></div>    </div>
   </li>
   <li>Complete the configurator prompts with the information you gathered above.</li>
@@ -2753,7 +2753,7 @@ It should now show the Single Sign On option.</li>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

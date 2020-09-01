@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2702,12 +2702,12 @@ Standard formulas act on individual rows and returns one result per row.
 Standard formulas use functions like:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">add</code></li>
-  <li><code class="highlighter-rouge">subtract</code></li>
-  <li><code class="highlighter-rouge">multiply</code></li>
-  <li><code class="highlighter-rouge">divide</code></li>
-  <li><code class="highlighter-rouge">contains</code></li>
-  <li><code class="highlighter-rouge">if...then...else</code></li>
+  <li><code class="language-plaintext highlighter-rouge">add</code></li>
+  <li><code class="language-plaintext highlighter-rouge">subtract</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multiply</code></li>
+  <li><code class="language-plaintext highlighter-rouge">divide</code></li>
+  <li><code class="language-plaintext highlighter-rouge">contains</code></li>
+  <li><code class="language-plaintext highlighter-rouge">if...then...else</code></li>
 </ul>
 
 <p>Aggregation formulas combine rows together and returns a single result for a
@@ -2715,10 +2715,10 @@ group of rows. Aggregation formulas use functions, some examples of functions
 you find in aggregation formulas are:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">average</code></li>
-  <li><code class="highlighter-rouge">cumulative_sum</code></li>
-  <li><code class="highlighter-rouge">moving_average</code></li>
-  <li><code class="highlighter-rouge">stddev</code> (standard deviation)</li>
+  <li><code class="language-plaintext highlighter-rouge">average</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cumulative_sum</code></li>
+  <li><code class="language-plaintext highlighter-rouge">moving_average</code></li>
+  <li><code class="language-plaintext highlighter-rouge">stddev</code> (standard deviation)</li>
 </ul>
 
 <p>You can tell which formulas are aggregation formulas by looking at the function
@@ -2757,12 +2757,12 @@ the column header of the search result.</p>
 
 <p>For example, this search would typically return a sum of total sales by department:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum sales department
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum sales department
 </code></pre></div></div>
 
 <p>This search would return an average of sales by month:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>average sales monthly
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>average sales monthly
 </code></pre></div></div>
 
 <p>When you’re using division in your formula, and the search is aggregated like
@@ -2772,7 +2772,7 @@ expect. This is best understood by using a real world example.</p>
 <p>Suppose you want to calculate the gross margin by department for a grocery
 store. The formula for gross margin is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>profit / sales
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>profit / sales
 </code></pre></div></div>
 
 <p>But if you use that as your formula, you won’t get the expected calculation.
@@ -2784,7 +2784,7 @@ results do not look like gross margin values, which should be between 0 and 1.</
 
 <p>Instead, you’d need to use a formula that uses the order of operations you want:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum (profit) / sum (sales)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum (profit) / sum (sales)
 </code></pre></div></div>
 
 <p>Now the result is as expected, because the formula totals the profits for all
@@ -2817,7 +2817,7 @@ average gross margin:</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

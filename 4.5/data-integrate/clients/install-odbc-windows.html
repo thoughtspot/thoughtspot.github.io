@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2704,8 +2704,8 @@ the same machine where you plan to run your ETL activities.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>These instructions include directions to use the <code class="highlighter-rouge">ssh</code> command. Make sure your
-Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making <code class="highlighter-rouge">ssh</code>
+<p>These instructions include directions to use the <code class="language-plaintext highlighter-rouge">ssh</code> command. Make sure your
+Windows workstation is equipped with a tool <a href="https://www.putty.org/">such as Putty</a> for making <code class="language-plaintext highlighter-rouge">ssh</code>
 connections to your ThoughtSpot server.</p>
 
 <p>The ODBC driver for Windows requires Visual C++ Redistributable for Visual
@@ -2726,7 +2726,7 @@ it isn’t already installed.</p>
 intend to connect your server to.</p>
 
 <ol>
-  <li>SSH as <code class="highlighter-rouge">admin</code> or the <code class="highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
+  <li>SSH as <code class="language-plaintext highlighter-rouge">admin</code> or the <code class="language-plaintext highlighter-rouge">thoughtspot</code> user to your ThoughtSpot node.</li>
   <li>
     <p>Verify the node IP(s).</p>
 
@@ -2735,7 +2735,7 @@ intend to connect your server to.</p>
 </code></pre></div>    </div>
   </li>
   <li>Make a note of each IP; there may be more than one.</li>
-  <li>Verify that the <code class="highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
+  <li>Verify that the <code class="language-plaintext highlighter-rouge">simba_server</code> is running, if it isn’t, work with ThoughtSpot Support to start it.</li>
   <li>Exit or close the shell.</li>
 </ol>
 
@@ -2804,7 +2804,7 @@ the driver.</p>
     <p><img src="/4.5/images/windows_ODBC_install.png" alt="" title="Allow the ODBC Installer to run" /></p>
   </li>
   <li>
-    <p>Select <code class="highlighter-rouge">YES</code> to continue.</p>
+    <p>Select <code class="language-plaintext highlighter-rouge">YES</code> to continue.</p>
 
     <p>A confirmation message appears when the installation is complete.</p>
 
@@ -2863,15 +2863,15 @@ privileges on the application.</p>
       </thead>
       <tbody>
         <tr>
-          <td><code class="highlighter-rouge">SCHEMA</code></td>
-          <td><code class="highlighter-rouge">falcon_default_schema</code> is the default</td>
+          <td><code class="language-plaintext highlighter-rouge">SCHEMA</code></td>
+          <td><code class="language-plaintext highlighter-rouge">falcon_default_schema</code> is the default</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">UID</code></td>
+          <td><code class="language-plaintext highlighter-rouge">UID</code></td>
           <td>The username of a user with data management privilege.</td>
         </tr>
         <tr>
-          <td><code class="highlighter-rouge">PWD</code></td>
+          <td><code class="language-plaintext highlighter-rouge">PWD</code></td>
           <td>The password for the username you specify.</td>
         </tr>
       </tbody>
@@ -2883,7 +2883,7 @@ privileges on the application.</p>
  schema is not present, the ODBC driver returns an error that says the schema
  could not be found.</p>
 
-    <p>Similarly, adding the <code class="highlighter-rouge">UID</code> and <code class="highlighter-rouge">PWD</code> properties are not required. If you
+    <p>Similarly, adding the <code class="language-plaintext highlighter-rouge">UID</code> and <code class="language-plaintext highlighter-rouge">PWD</code> properties are not required. If you
  don’t add them, you are prompted to supply them each time you connect.</p>
 
     <p>When you are done, your options should look similar to the following:</p>
@@ -2934,7 +2934,7 @@ privileges on the application.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

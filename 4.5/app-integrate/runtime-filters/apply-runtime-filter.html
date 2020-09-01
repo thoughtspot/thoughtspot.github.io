@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2712,7 +2712,7 @@ The format for the runtime filter is:
       <li>
         <p>For Embedding a pinboard:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;/
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;/
 ?**col1=&lt;column_name\&gt;&amp;op1=&lt;operator\&gt;&amp;val1=&lt;value\&gt;**
 #/pinboard/&lt;pinboard_id&gt;
 </code></pre></div>        </div>
@@ -2720,7 +2720,7 @@ The format for the runtime filter is:
       <li>
         <p>For Embedding a visualization:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;/
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;/
 ?**col1=&lt;column_name\&gt;&amp;op1=&lt;operator\&gt;&amp;val1=&lt;value\&gt;**
 #/pinboard/&lt;pinboard_id&gt;/&lt;visualization_id&gt;
 </code></pre></div>        </div>
@@ -2728,7 +2728,7 @@ The format for the runtime filter is:
       <li>
         <p>For the REST API with a pinboard:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;
 /callosum/v1/tspublic/v1/pinboarddata
 ?id=&lt;pinboard_id&gt;
 &amp;**col1=&lt;column_name\&gt;&amp;op1=&lt;operator\&gt;&amp;val1=&lt;value\&gt;**
@@ -2737,7 +2737,7 @@ The format for the runtime filter is:
       <li>
         <p>For the REST API with a visualization:</p>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://&lt;thoughtspot_server&gt;:&lt;port&gt;
 /callosum/v1/tspublic/v1/pinboarddata
 ?id=&lt;pinboard_id&gt;&amp;vizid=%5B&lt;visualization_id&gt;%5D
 &amp;**col1=&lt;column_name\&gt;&amp;op1=&lt;operator\&gt;&amp;val1=&lt;value\&gt;**
@@ -2746,22 +2746,22 @@ The format for the runtime filter is:
     </ul>
   </li>
   <li>
-    <p>To add additional filters on a particular column, you can specify multiple values by separating them with <code class="highlighter-rouge">&amp;</code> (ampersand) as in the example:</p>
+    <p>To add additional filters on a particular column, you can specify multiple values by separating them with <code class="language-plaintext highlighter-rouge">&amp;</code> (ampersand) as in the example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> val1=foo&amp;val1=bar
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> val1=foo&amp;val1=bar
 </code></pre></div>    </div>
 
-    <p>You can also use the <code class="highlighter-rouge">IN</code> operator for multiple values, as shown in this example:</p>
+    <p>You can also use the <code class="language-plaintext highlighter-rouge">IN</code> operator for multiple values, as shown in this example:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> col1=&lt;column_name&gt;&amp;op1=IN&amp;val1=&lt;value&gt;&amp;val1=&lt;value&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> col1=&lt;column_name&gt;&amp;op1=IN&amp;val1=&lt;value&gt;&amp;val1=&lt;value&gt;
 </code></pre></div>    </div>
   </li>
-  <li>Add additional filters by incrementing the number at the end of each parameter in the <strong>Runtime Filter</strong> for each filter you want to add, for example, <code class="highlighter-rouge">col2</code>, <code class="highlighter-rouge">op2</code>, <code class="highlighter-rouge">val2</code> and so on.</li>
+  <li>Add additional filters by incrementing the number at the end of each parameter in the <strong>Runtime Filter</strong> for each filter you want to add, for example, <code class="language-plaintext highlighter-rouge">col2</code>, <code class="language-plaintext highlighter-rouge">op2</code>, <code class="language-plaintext highlighter-rouge">val2</code> and so on.</li>
 </ol>
 
 <p>This example passes multiple variables to a single column as well as multiple columns. It shows that data values are returned as epoch.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  col1=region&amp;op1=IN&amp;val1=midwest&amp;val1=south&amp;val1=northeast
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  col1=region&amp;op1=IN&amp;val1=midwest&amp;val1=south&amp;val1=northeast
   &amp;col2=date&amp;op2=BET&amp;val2=&lt;epoch_start&gt;&amp;val2=&lt;epoch_end&gt;
 </code></pre></div></div>
 
@@ -2789,7 +2789,7 @@ The format for the runtime filter is:
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
