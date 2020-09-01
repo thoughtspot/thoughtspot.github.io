@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-01T10:28:55-07:00" />
+<meta property="article:published_time" content="2020-09-01T14:57:56-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up ThoughtSpot in Azure”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up ThoughtSpot in Azure”]","url":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html","dateModified":"2020-09-01T10:28:55-07:00","datePublished":"2020-09-01T10:28:55-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html"},"description":"About the ThoughtSpot image","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Set up ThoughtSpot in Azure”]","url":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html","dateModified":"2020-09-01T14:57:56-07:00","datePublished":"2020-09-01T14:57:56-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/azure/launch-an-instance.html"},"description":"About the ThoughtSpot image","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5294,7 +5294,7 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
 <p>Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact
 <a href="/latest/appliance/contact.html">ThoughtSpot Support</a>.</p>
 
-<p>This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot’s CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. On release 6.0.5, you can run ThoughtSpot on an RHEL 7.7 or 7.8 image. To install ThoughtSpot using RHEL, refer to the <a href="/latest/appliance/rhel/rhel.html">RHEL deployment guide</a>.</p>
+<p>This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot’s CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. On release 6.0.5 and later, you can run ThoughtSpot on an RHEL 7.7 or 7.8 image. To install ThoughtSpot using RHEL, refer to the <a href="/latest/appliance/rhel/rhel.html">RHEL deployment guide</a>.</p>
 
 <h2 id="set-up-thoughtspot-in-azure">Set up ThoughtSpot in Azure</h2>
 
@@ -5319,21 +5319,17 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
   <li>
     <p>Log in to the Azure portal.</p>
 
-    <p>In a browser, go to <a href="https://portal.azure.com/#home">https://portal.azure.com/#home</a>, and log in to your Azure account.</p>
+    <p>In a browser, go to <a href="https://portal.azure.com/#home">https://portal.azure.com/#home</a>, and log into your Azure account.</p>
   </li>
   <li>
     <p>On the Azure portal homepage, hover over <strong>Virtual machines</strong>, and click <strong>Create</strong>.</p>
 
-    <p><img src="/latest/images/azure-createvm.png" alt="Create a virtual machine" title="Create a virtual machine" />
- <!--<figure><img class="docimage" src="/images/azure-createvm.png" title="Create a virtual machine" alt="Hover over Virtual machines and click create." /> <figcaption>Create a virtual machine</figcaption></figure>
---></p>
+    <p><img src="/latest/images/azure-createvm.png" alt="Create a virtual machine" title="Create a virtual machine" /></p>
   </li>
   <li>
     <p>Specify information under <strong>Basics</strong>.<br /></p>
 
-    <p><img src="/latest/images/azure-basicsettings.png" alt="Specify information under Basics" title="Specify information under Basics" />
- <!--<figure><img class="docimage" src="/images/azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." /> <figcaption>Specify information under Basics</figcaption></figure>
---></p>
+    <p><img src="/latest/images/azure-basicsettings.png" alt="Specify information under Basics" title="Specify information under Basics" /></p>
 
     <table>
       <tbody>
@@ -5363,11 +5359,11 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
         </tr>
         <tr>
           <td><strong>7</strong></td>
-          <td>Select <strong>SSH public key</strong> and specify a username.</td>
+          <td>Select <strong>SSH public key</strong> and specify a username. Note that this user is necessary for Azure VM creation, but the user does not exist in ThoughtSpot. You cannot log into ThoughtSpot, or <code class="language-plaintext highlighter-rouge">ssh</code> into the command line, with this user.</td>
         </tr>
         <tr>
           <td><strong>8</strong></td>
-          <td>Enter your SSH public key. <a href="/latest/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line.</td>
+          <td>Enter an SSH public key. You can choose <strong>use existing public key</strong> or <strong>generate new key pair</strong>, or <a href="/latest/appliance/contact.html">contact ThoughtSpot support</a> to obtain a public key. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line. This public key is necessary for Azure VM creation, but is not necessary at any later point.</td>
         </tr>
         <tr>
           <td><strong>9</strong></td>
@@ -5383,9 +5379,7 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
   <li>
     <p>Specify information under <strong>Disks</strong>.</p>
 
-    <p><img src="/latest/images/azure-disks.png" alt="Specify disk information" title="Specify disk information" />
- <!--<figure><img class="docimage" src="/images/azure-disks.png" title="Specify disk information" alt="In the Disks menu, choose a disk type, add data disks, and select managed disks" /> <figcaption>Specify disk information</figcaption></figure>
---></p>
+    <p><img src="/latest/images/azure-disks.png" alt="Specify disk information" title="Specify disk information" /></p>
 
     <table>
       <tbody>
@@ -5411,9 +5405,7 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
   <li>
     <p>Specify information under <strong>Networking</strong>.</p>
 
-    <p><img src="/latest/images/azure-networking.png" alt="Specify networking information" title="Specify networking information" />
- <!--<figure><img class="docimage" src="/images/azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" /> <figcaption>Specify networking information</figcaption></figure>
---></p>
+    <p><img src="/latest/images/azure-networking.png" alt="Specify networking information" title="Specify networking information" /></p>
 
     <table>
       <tbody>
@@ -5491,7 +5483,7 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
 
 <h3 id="prepare-for-startup">Prepare for starting up ThoughtSpot</h3>
 
-<p><em>Prerequisite</em>: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.</p>
+<p><em>Prerequisite</em>: To log into the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.</p>
 
 <ol>
   <li>
@@ -5504,16 +5496,15 @@ learn about the latest version of the ThoughtSpot Virtual Machine.</p>
   </li>
   <li>
     <p>In a terminal application, connect to the VM through SSH.</p>
+
+    <p>Log in as the admin user, using the private key that your ThoughtSpot contact sent you.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh -i &lt;path_to_private_key&gt; admin@&lt;public_VM_IP&gt;
+</code></pre></div>    </div>
+    <!--
+<div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If the SSH key is not accepted or lost, you can reset it by going to <strong>Reset password</strong> under <strong>Support + troubleshooting</strong> on the Azure Virtual Machine page. You can only do this before deploying the cluster.</div>
+-->
   </li>
-</ol>
-
-<p>Log in as the user specified in the previous steps and use the private key that belongs to the public key specified for that user.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ ssh -i &lt;path_to_private_key&gt; &lt;the_user_specified_when_created_the_vm&gt;@&lt;public_VM_IP&gt;
-</code></pre></div></div>
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If the SSH key is not accepted or lost, it can be reset by going to Reset password under Support + troubleshooting on the Azure Virtual Machine page. Please note this only works before the cluster had been deployed.</div>
-
-<ol>
   <li>
     <p>Update the password for both the <code class="language-plaintext highlighter-rouge">admin</code> and the <code class="language-plaintext highlighter-rouge">thoughtspot</code> users.<br />
   The command prompts you to type in a new password, and then to confirm the password.</p>
@@ -5582,41 +5573,41 @@ that will be part of the ThoughtSpot cluster.</p>
   </li>
 </ol>
 
-<h3 id="create-network-support-settings">Create network support settings</h3>
+<!--
+### Create network support settings
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All changes in this section must be re-applied each
+<div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All changes in this section must be re-applied each
 time after a cluster is created or updated. If these changes are not present, a
 reboot of the VMs will not have network access. So when updating these files,
 keep a backup to copy after any subsequent cluster creation or update.</div>
 
-<ol>
-  <li>SSH into one of your VMs, using the new password you created for the <em>admin</em> user in step two of <a href="#prepare-for-startup">Prepare for starting up ThoughtSpot</a>.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh admin@&lt;VM-IP&gt;
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Update the VM’s hostname:</p>
+1. SSH into one of your VMs, using the new password you created for the *admin* user in step two of [Prepare for starting up ThoughtSpot](#prepare-for-startup).
+```
+    ssh admin@<VM-IP>
+```
+2. Update the VM's hostname:
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo hostnamectl set-hostname &lt;HOSTNAME&gt;
-</code></pre></div>    </div>
+   ```
+   $ sudo hostnamectl set-hostname <HOSTNAME>
+   ```
 
-    <p>If you are using a static name, you can issue:</p>
+   If you are using a static name, you can issue:
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo hostnamectl set-hostname &lt;HOSTNAME&gt; --static
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Create <code class="language-plaintext highlighter-rouge">/etc/sysconfig/network-scripts/ifcfg-eth0</code>:</p>
+   ```
+   sudo hostnamectl set-hostname <HOSTNAME> --static
+   ```
+3. Create `/etc/sysconfig/network-scripts/ifcfg-eth0`:
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo sh -c 'echo "DEVICE=eth0" &gt; /etc/sysconfig/network-scripts/ifcfg-eth0'
-</code></pre></div>    </div>
-  </li>
-  <li>Modify permissions for <code class="language-plaintext highlighter-rouge">/etc/sysconfig/network-scripts/ifcfg-eth0</code>. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
-</code></pre></div>    </div>
-  </li>
-  <li>Repeat this process (steps 1 through 4) for each node.</li>
-</ol>
+   ```
+$ sudo sh -c 'echo "DEVICE=eth0" > /etc/sysconfig/network-scripts/ifcfg-eth0'
+   ```
+
+3. Modify permissions for `/etc/sysconfig/network-scripts/ifcfg-eth0`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.
+    ```
+    $ sudo chmod 644 /etc/sysconfig/network-scripts/ifcfg-eth0
+    ```
+4. Repeat this process (steps 1 through 4) for each node.
+-->
 
   <div class="tags">
     <div style="float:right;">
@@ -5645,7 +5636,7 @@ keep a backup to copy after any subsequent cluster creation or update.</div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
         Generated: Sep 1, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 5/13/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 9/1/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
